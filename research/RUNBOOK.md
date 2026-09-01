@@ -249,8 +249,17 @@ how research feeds them.
 python3 research/tools/check.py --overlap research/findings/<id>/<batch>.json
 ```
 
-It prints every resolved finding whose wording substantially repeats the
-historical record, hook or narrative already on its target page. Two statements
+It runs two scans. **By wording** — every resolved finding whose text
+substantially repeats the historical record, hook or narrative already on its
+target page. **By name and date** — every finding crediting a practitioner the
+page already credits within two years, from another source. The second exists
+because the first compares phrasing and two sources rarely phrase a credit the
+same way: volume D–F of the professionals biographies had 20 duplicates caught
+by wording and **35 more caught only by name and date**, nearly all of them a
+prolific builder's houses already documented one by one by the neighbourhood
+survey devoted to that builder. A source organised by architect or builder will
+overlap a neighbourhood survey of the same person almost completely, and the
+neighbourhood survey usually says more. Two statements
 cover the same buildings often enough that a citywide batch will land on parcels
 a neighbouring survey has already documented. Read each line and decide *before*
 writing: decline the duplicate, or trim it to the part that is new. Doing this
@@ -338,11 +347,20 @@ assessor and EAS give the parcel and say so in `resolution.method`.
   name the component that could carry the fact instead. Usually one can.
 - **Never name the source in the page body.** "The newsletter says…", "a survey
   records…", "according to the archive" — all wrong. The Sources footer is the
-  attribution. The one documented exception is
+  attribution. The trap is not a deliberate citation but a **hedge carried over
+  in your own voice** — *the volume gives no year*, *the survey records it as
+  demolished* — which reads on the page as the source talking about itself.
+  State the fact ("Since demolished"), or drop the hedge and let
+  `date_precision` carry it. `check.py` warns on the phrasing it can recognise;
+  grep your own descriptions for the source's noun before you commit. The one documented exception is
   [sources/celebrity-residence-guides.md](sources/celebrity-residence-guides.md),
   whose claims are attributed in the body precisely because they're weak.
 - **Facts, not wording.** Re-express; never reproduce the source's sentences or
   their structure.
+- **An undated credit is not automatically a decline.** `building.architect`,
+  `building.builder` and `building.developer` hold a credit with no year, and a
+  page can say who built it without claiming when. Decline only where no spec
+  row fits either.
 - **Privacy binds at publication too.** Buildings, contractors, architects,
   firms, and historical figures already published with dates. Not residents,
   occupants or owners.

@@ -5,6 +5,7 @@ The parcels on Pacific Avenue documented here so far, from the city's address, a
 ## Documented so far
 
 - [1419](1419/) — A 1914 garage, with a seismic retrofit permitted in 1993.
+- [1469–1475](1469/) — A 1921 store building, with garage work permitted in 2012.
 - [1544](1544/) — A 1925 5-unit apartment building, with a seismic retrofit permitted in 2000.
 - [1560](1560/) — A 1922 industrial building, with a seismic retrofit permitted in 2005.
 - [1618](1618/) — A 1925 3-unit building with a ground-floor store, with a seismic retrofit permitted in 1994.

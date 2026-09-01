@@ -4,6 +4,7 @@ The parcels on Francisco Street documented here so far, from the city's address,
 
 ## Documented so far
 
+- [800](800/) — A 1938 single-family house, with an addition permitted in 1985.
 - [898](898/) — A 1914 corner house with a $1.5m addition still unfinished; tied to Nicolas Cage.
 - [1080](1080/) — A 1955 9-unit apartment building, with a seismic retrofit permitted in 2024.
 - [1150](1150/) — A 1900 school building, with permit records from 2000 to 2003.

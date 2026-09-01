@@ -21,6 +21,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Merced Avenue](merced-avenue/) — 1 building, built 1922; 1 in the Forest Hill Historic District.
 - [Miraloma Drive](miraloma-drive/) — 1 building, built 1957.
 - [Miramar Avenue](miramar-avenue/) — 1 building, built 1932.
+- [Monterey Boulevard](monterey-boulevard/) — 1 building, built 1925; 1 in the St. Francis Wood Historic District.
 - [Saint Francis Boulevard](saint-francis-boulevard/) — 1 building, built 1948; 1 in the St. Francis Wood Historic District.
 - [San Anselmo Avenue](san-anselmo-avenue/) — 1 building, built 1942; 1 in the St. Francis Wood Historic District.
 - [San Leandro Way](san-leandro-way/) — 1 building, built 1923; 1 in the St. Francis Wood Historic District.

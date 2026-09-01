@@ -10,6 +10,7 @@ The parcels on 47th Avenue documented here so far, from the city's address, asse
 - [1444](1444/) — A 1950 single-family house, with deck work permitted in 1990.
 - [1468](1468/) — A 1900 single-family house, with reroofing permitted in 2021.
 - [1495](1495/) — A 1947 single-family house, with window replacement permitted in 2024.
+- [1594](1594/) — A 1944 single-family house, with dry-rot repair permitted in 1986.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

@@ -11,6 +11,8 @@ The parcels on 46th Avenue documented here so far, from the city's address, asse
 - [1700](1700/) — A 1941 single-family house, with reroofing permitted in 2007.
 - [1706](1706/) — A 1941 single-family house, with reroofing permitted in 1995.
 - [1778](1778/) — A 1950 single-family house, with facade work permitted in 1987.
+- [1987](1987/) — A 1944 single-family house, with facade work permitted in 1986.
+- [1995](1995/) — A 1944 single-family house, with permit records from 1993 to 1999.
 - [2190](2190/) — A 1939 single-family house, with deck work permitted in 2019.
 - [2643](2643/) — A 1946 single-family house, with a bathroom remodel permitted in 2020.
 - [2690](2690/) — A 1937 hotel, with fire repair permitted in 2019.

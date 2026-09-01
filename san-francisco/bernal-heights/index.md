@@ -10,6 +10,7 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [Cortland Avenue](cortland-avenue/) — 1 building, built 1910.
 - [Crescent Avenue](crescent-avenue/) — 1 building, built 1900.
 - [Franconia Street](franconia-street/) — 2 buildings, built 1964–1965.
+- [Highland Avenue](highland-avenue/) — 1 building, built 1915.
 - [Justin Drive](justin-drive/) — 1 building; 1 in the Midcentury Recreation Historic District (Discontiguous).
 - [Manchester Street](manchester-street/) — 1 building, built 1981.
 - [Mission Street](mission-street/) — 2 buildings, built 1916–1918.

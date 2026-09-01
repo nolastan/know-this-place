@@ -13,6 +13,8 @@ that study area, as an example of the Second Bay Tradition.
 - [24th Street](24th-street/) — 1 building, built 1900; 1 in the Diamond & Elizabeth Streets Historic District.
 - [28th Street](28th-street/) — 2 buildings, built 1900–1910.
 - [29th Street](29th-street/) — 1 building, built 1916.
+- [Amber Drive](amber-drive/) — 3 buildings, built 1963; 3 in the Diamond Heights Historic District.
+- [Cameo Way](cameo-way/) — 1 building, built 1968; 1 in the Diamond Heights Historic District.
 - [Castro Street](castro-street/) — 1 building, built 1973.
 - [Cesar Chavez Street](cesar-chavez-street/) — 1 building, built 1966.
 - [Church Street](church-street/) — 1 building, built 1914.

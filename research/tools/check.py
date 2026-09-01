@@ -56,10 +56,21 @@ SCHEMA_PATH = ROOT / "schema" / "finding.schema.json"
 EXAMPLE = ROOT / "schema" / "example-findings.json"
 
 errors: list[str] = []
+warnings: list[str] = []
 
 
 def err(where, msg: str) -> None:
     errors.append(f"{where}: {msg}")
+
+
+def warn(where, msg: str) -> None:
+    """A defect worth surfacing that must not block an unrelated run.
+
+    Reserved for rules added after a lot of files already broke them: the rule
+    is right, the backlog is real, and failing every run until someone sweeps
+    hundreds of old entries would only get the check deleted.
+    """
+    warnings.append(f"{where}: {msg}")
 
 
 # --------------------------------------------------------------------------- #
@@ -185,6 +196,17 @@ def check_findings_file(path: Path, schema: dict, ids: set[str]) -> dict | None:
     return data if isinstance(data, dict) else None
 
 
+# The source talking about itself, in a field that becomes page prose. Matches
+# "the volume records", "this statement dates", "the survey gives" and friends —
+# a determiner, one of the source nouns, and a reporting verb.
+SOURCE_VOICE = re.compile(
+    r"\b(?:the|this|its|a)\s+(?:same\s+)?"
+    r"(?:volume|statement|survey|report|archive|newsletter|document|guide|nomination|inventory)\b"
+    r"[^.]{0,40}?\b(?:says?|said|states?|records?|recorded|gives?|dates?|notes?|lists?|"
+    r"describes?|identifies|credits?|calls?|marks?|reports?|mentions?|shows?|holds?|"
+    r"attributes?|according)\b", re.I)
+
+
 def check_rules(rel: Path, data: dict) -> None:
     """Cross-field rules the schema can't state."""
     seen: set[str] = set()
@@ -251,6 +273,20 @@ def check_rules(rel: Path, data: dict) -> None:
                 paths_by_apn.setdefault(apn, {}).setdefault(path, str(fid))
         elif status in ("unresolved", "rejected") and not res.get("note") and not res.get("method"):
             err(str(rel), f"{fid}: {status} findings must say why (resolution.note or .method)")
+
+        # A page's Sources footer is the attribution; the body never names the
+        # archive it came from. The trap is not a deliberate citation but a
+        # hedge carried over in the extractor's voice — "the volume gives no
+        # year", "the survey records it as demolished" — which reads on the
+        # page as the source talking about itself. One run wrote 50 of these
+        # before a grep caught them. State the fact, or drop the hedge and let
+        # date_precision carry it.
+        desc = f.get("description") or ""
+        if SOURCE_VOICE.search(desc):
+            warn(str(rel), f"{fid}: description names its own source "
+                          f"({SOURCE_VOICE.search(desc).group(0)!r}) — a page body "
+                          f"never says where the fact came from; the Sources "
+                          f"footer is the attribution. State the fact instead.")
 
         if pub_status == "published":
             any_published = True
@@ -416,13 +452,34 @@ def _words(text: str) -> set[str]:
     return {w for w in re.findall(r"[a-z']{4,}", text.lower())} - STOPWORDS
 
 
-def overlap(path: Path) -> None:
-    """Report resolved findings whose wording the target page already carries.
+def _people(text: str) -> set[str]:
+    """Surnames and firm words in a credit, for matching a person across sources."""
+    return {w for w in re.findall(r"[A-Z][A-Za-z'\u2019&.-]{3,}", text or "")
+            if w.lower() not in STOPWORDS}
 
-    Compares each finding against the page's other historical_record entries
-    (its own source excluded) plus any hook and narrative prose. The threshold
-    is deliberately low: this prints candidates for a human decision, and a
-    false positive costs one glance while a miss costs a duplicated fact.
+
+def _year(value) -> int | None:
+    m = re.search(r"\b(1[89]\d\d|20\d\d)\b", str(value or ""))
+    return int(m.group(1)) if m else None
+
+
+def overlap(path: Path) -> None:
+    """Report resolved findings the target page already carries.
+
+    Two scans, because they catch different duplicates:
+
+    * **wording** — content-word overlap against the page's other
+      historical_record entries (its own source excluded) plus hook and
+      narrative prose. The threshold is deliberately low: this prints
+      candidates for a human decision, and a false positive costs one glance
+      while a miss costs a duplicated fact.
+    * **name and date** — the practitioner named in ``extra`` plus a year
+      within two of an entry already on the page from another source. Wording
+      overlap misses these whenever the two sources phrase the same credit
+      differently, which they usually do. A citywide source organised by
+      architect or builder overlaps a neighbourhood survey of the same person
+      almost completely; volume D-F of the professionals biographies had 20
+      duplicates flagged by wording and 35 more flagged only by this scan.
     """
     repo = ROOT.parent
     try:
@@ -432,7 +489,11 @@ def overlap(path: Path) -> None:
         return
 
     source_id = data.get("source_id", "")
-    hits, checked, missing = [], 0, 0
+    # A page records the source by the id it cites, not the register id, so the
+    # only reliable way to tell "the page already had this" from "this batch just
+    # wrote it" is the text of the batch's own findings.
+    ours = {f.get("description", "") for f in data.get("findings", [])}
+    hits, name_hits, checked, missing = [], [], 0, 0
     for finding in data.get("findings", []):
         res = finding.get("resolution") or {}
         if res.get("status") != "resolved" or not res.get("path"):
@@ -450,6 +511,25 @@ def overlap(path: Path) -> None:
             missing += 1
             continue
         checked += 1
+
+        # scan two: the same person, credited at the same date, from another source
+        who = (finding.get("extra") or {}).get("architect_as_recorded")
+        names = _people(who)
+        mine_year = _year(finding.get("date"))
+        if names and mine_year:
+            for entry in doc.get("historical_record", []):
+                if entry.get("source") in (source_id, data.get("batch")):
+                    continue
+                if entry.get("description", "") in ours:
+                    continue
+                their_year = _year(entry.get("date"))
+                if their_year is None or abs(their_year - mine_year) > 2:
+                    continue
+                if names & _people(entry.get("description", "")):
+                    name_hits.append((finding.get("id", "?"), res["path"], who,
+                                      entry.get("source", "?")))
+                    break
+
         mine = _words(finding.get("description", ""))
         if not mine:
             continue
@@ -458,7 +538,7 @@ def overlap(path: Path) -> None:
             # An entry this batch wrote is not evidence the page already had it.
             if entry.get("source") in (source_id, data.get("batch")):
                 continue
-            if entry.get("description") == finding.get("description"):
+            if entry.get("description", "") in ours:
                 continue
             theirs |= _words(entry.get("description", ""))
         for key in ("hook", "narrative"):
@@ -474,13 +554,22 @@ def overlap(path: Path) -> None:
     hits.sort(reverse=True)
     print(f"overlap: {checked} resolved finding(s) checked against their pages"
           + (f", {missing} page(s) not on disk yet" if missing else ""))
-    if not hits:
+    if not hits and not name_hits:
         print("  none — no finding repeats what its page already says.")
         return
-    print(f"  {len(hits)} finding(s) may repeat what the page already carries:")
-    for share, fid, page_path, text in hits:
-        print(f"    {share:.0%}  {fid}  {page_path}")
-        print(f"          {text}...")
+    if hits:
+        print(f"  by wording — {len(hits)} finding(s) may repeat what the page already carries:")
+        for share, fid, page_path, text in hits:
+            print(f"    {share:.0%}  {fid}  {page_path}")
+            print(f"          {text}...")
+    flagged = {h[1] for h in hits}
+    only_names = [n for n in name_hits if n[0] not in flagged]
+    if only_names:
+        print(f"  by name and date — {len(only_names)} more finding(s) credit someone "
+              f"the page already credits within two years:")
+        for fid, page_path, who, other in only_names:
+            print(f"    {fid}  {page_path}")
+            print(f"          {who} — already on the page from {other}")
     print("  Read each one: decline it, or trim it to the part that is new.")
 
 
@@ -519,6 +608,19 @@ def main() -> int:
 
     if args.overlap:
         overlap(args.overlap)
+        print()
+
+    if warnings:
+        by_file: dict[str, int] = {}
+        for w in warnings:
+            by_file[w.split(":", 1)[0]] = by_file.get(w.split(":", 1)[0], 0) + 1
+        print(f"{len(warnings)} warning(s) — descriptions that name their own "
+              f"source, in {len(by_file)} file(s). A page body never says where "
+              f"the fact came from; the Sources footer is the attribution. These "
+              f"predate the rule and are a sweep, not a blocker — see the open "
+              f"issue. Fix any in the file you are working on.")
+        for name, count in sorted(by_file.items(), key=lambda kv: -kv[1]):
+            print(f"  {count:>4}  {name}")
         print()
 
     if errors:

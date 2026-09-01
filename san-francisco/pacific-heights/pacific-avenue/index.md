@@ -26,9 +26,13 @@ The parcels on Pacific Avenue documented here so far, from the city's address, a
 - [2810](2810/) — A 1910 single-family house in the Pacific Heights Historic District, with reroofing permitted in 1992.
 - [2829](2829/) — A 1914 single-family house in the Pacific Heights Historic District, with a kitchen and bathroom remodel permitted in 2026.
 - [2830](2830/) — A 1910 single-family house in the Pacific Heights Historic District, with window replacement permitted in 2010.
+- [2870](2870/) — A 1951 single-family house in the Raycliff Terrace Historic District, with an addition permitted in 2004.
+- [2950](2950/) — A 1907 single-family house in the Pacific Heights Historic District, with an addition permitted in 2014.
 - [2974](2974/) — A 1917 single-family house in the Pacific Heights Historic District, with a seismic retrofit permitted in 2016.
 - [3015](3015/) — A 1912 single-family house in the Pacific Heights Historic District, with foundation work permitted in 2025.
+- [3020](3020/) — A 1900 single-family house in the Pacific Heights Historic District, with a rear addition permitted in 1998.
 - [3052](3052/) — An assessor class: vacant lot in the Pacific Heights Historic District, with deck work permitted in 2006.
+- [3074](3074/) — A 1952 single-family house in the Pacific Heights Historic District, with a vertical addition permitted in 2017.
 - [3090](3090/) — A 1929 single-family house in the Pacific Heights Historic District, with a rear addition permitted in 1998.
 
 Pages are generated from the DataSF datasets listed in each page's

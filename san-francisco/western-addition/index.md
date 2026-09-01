@@ -7,6 +7,7 @@ A large central district west of Van Ness that largely survived the 1906 fire, m
 - [Buchanan Street](buchanan-street/) — 1 building, built 1935.
 - [Bush Street](bush-street/) — 5 buildings, built 1916–1930.
 - [California Street](california-street/) — 1 building, built 1921.
+- [Cleary Court](cleary-court/) — 1 building, built 1963.
 - [Divisadero Street](divisadero-street/) — 1 building, built 1914.
 - [Eddy Street](eddy-street/) — 2 buildings, built 1900–1996.
 - [Fillmore Street](fillmore-street/) — 1 building, built 1911.

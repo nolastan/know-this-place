@@ -14,6 +14,7 @@ A steep district above North Beach and the waterfront, known for its cable-car g
 - [Francisco Street](francisco-street/) — A 1914 corner house beside the Powell–Hyde cable car line; tied to Nicolas Cage.
 - [Green Street](green-street/) — 1 building, built 1950.
 - [Greenwich Street](greenwich-street/) — 1 building, built 1912.
+- [Hyde Street](hyde-street/) — 1 building, built 1908.
 - [Jackson Street](jackson-street/) — 1 building, built 1914.
 - [Jones Street](jones-street/) — 1 building, built 1908; 1 in the Russian Hill-Macondray Lane Historic District.
 - [Larkin Street](larkin-street/) — 2 buildings, built 1907–1914.
@@ -21,6 +22,7 @@ A steep district above North Beach and the waterfront, known for its cable-car g
 - [Lombard Street](lombard-street/) — 2 buildings, built 1909–2018; 1 in the Lombard Street Historic District.
 - [Macondray Lane](macondray-lane/) — 1 building, built 1900; 1 in the Russian Hill-Macondray Lane Historic District.
 - [Mason Street](mason-street/) — 2 buildings, built 1908–1911.
+- [Montclair Terrace](montclair-terrace/) — 1 building, built 1938.
 - [North Point Street](north-point-street/) — 1 building, built 1978.
 - [Pacific Avenue](pacific-avenue/) — 5 buildings, built 1914–2014.
 - [Polk Street](polk-street/) — 1 building, built 1924.

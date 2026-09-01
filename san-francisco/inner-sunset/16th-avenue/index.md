@@ -12,6 +12,7 @@ The parcels on 16th Avenue documented here so far, from the city's address, asse
 - [1469](1469/) — A 1919 Craftsman, designed by Gustav Stahlberg.
 - [1472](1472/) — A 1916-1917 building, built by Edward E. Manseau.
 - [1484](1484/) — A 1916-1917 building, built by Edward E. Manseau.
+- [1570](1570/) — A 1939 single-family house, with reroofing permitted in 2009.
 - [1766](1766/) — A 1939 single-family house, with a bathroom remodel permitted in 2022.
 - [1832](1832/) — A 1932 single-family house, with garage work permitted in 2020.
 

@@ -11,13 +11,16 @@ The neighborhood at the east end of Golden Gate Park, at the centre of San Franc
 - [Buena Vista Avenue West](buena-vista-avenue-west/) — The house the city names the Floyd Spreckels Mansion, tied to Jack London and Danny Glover.
 - [Carl Street](carl-street/) — 1 building, built 1900; 1 in the Cole Valley Historic District.
 - [Carmelita Street](carmelita-street/) — 1 building, built 1900; 1 in the Duboce Park Historic District.
+- [Central Avenue](central-avenue/) — 1 building, built 1905.
 - [Clayton Street](clayton-street/) — 1 building, built 1900; 1 in the Panhandle Historic District.
 - [Cole Street](cole-street/) — A two-flat 1903 building linked to Charles Manson in 1967.
 - [Divisadero Street](divisadero-street/) — 1 building, built 1885.
 - [Haight Street](haight-street/) — Flats over a store of 1900, inside the Counterculture Historic District.
 - [Lyon Street](lyon-street/) — Two buildings facing the Panhandle, both named for Janis Joplin by the same guide.
+- [Masonic Avenue](masonic-avenue/) — 2 buildings, built 1903–1906; 2 in the Ashbury Heights Historic District.
 - [Oak Street](oak-street/) — 1 building, built 1900.
 - [Page Street](page-street/) — 1 building, built 1900; 1 in the Buena Vista North Historic District.
+- [Potomac Street](potomac-street/) — 1 building, built 1900; 1 in the Duboce Park Historic District.
 - [Scott Street](scott-street/) — 1 building, built 1900.
 - [Stanyan Street](stanyan-street/) — 1 building, built 1911; 1 in the Panhandle Historic District.
 - [Steiner Street](steiner-street/) — 1 building, built 1900; 1 in the Duboce Park Historic District.

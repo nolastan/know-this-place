@@ -5,6 +5,7 @@ A district on the rise between the Richmond and the Panhandle, around the Univer
 ## Streets documented so far
 
 - [Anza Street](anza-street/) — 1 building, built 1906.
+- [Baker Street](baker-street/) — 1 building, built 1904; 1 in the NOPA Historic District.
 - [Balboa Street](balboa-street/) — 1 building, built 1984.
 - [Beaumont Avenue](beaumont-avenue/) — 1 building, built 1936.
 - [Fulton Street](fulton-street/) — A nineteen-room 1904 house facing Golden Gate Park, bought by Jefferson Airplane in 1968.

@@ -5,6 +5,7 @@ The parcels on Union Street documented here so far, from the city's address, ass
 ## Documented so far
 
 - [55](55/) — A 1900 office building in the Northeast Waterfront Historic District, with stair work permitted in 2000.
+- [265–289](265/) — A 1900 4-unit apartment building in the Telegraph Hill Historic District, with reroofing permitted in 2007.
 - [293](293/) — A 1900 single-family house in the Telegraph Hill Historic District, with garage work permitted in 1999.
 - [351–353](351/) — A 1907 two-flat, with reroofing permitted in 2014.
 - [357](357/) — A 1907 single-family house, with deck work permitted in 2020.
