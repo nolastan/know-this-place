@@ -1452,6 +1452,12 @@ def historical_items(rec: dict, indent: str) -> list:
         key = date_key(when)
         if re.fullmatch(r"\d{4}-\d{2}-\d{2}", when or ""):
             when = long_date(when)
+        # A source that knows the month but not the day — a directory issue, a
+        # water-service record read to the month — writes `1896-10`, and until
+        # this branch existed the rail printed that string raw beside a
+        # "August 24, 1896" formatted from the line above it.
+        elif re.fullmatch(r"\d{4}-\d{2}", when or ""):
+            when = MONTHS_LONG[int(when[5:7]) - 1] + " " + when[:4]
         items.append((key,
             f'{indent}  <li class="vtl-item">\n'
             f'{indent}    <div class="vtl-date">{esc(when)}</div>\n'
