@@ -56,21 +56,36 @@ SCHEMA_PATH = ROOT / "schema" / "finding.schema.json"
 EXAMPLE = ROOT / "schema" / "example-findings.json"
 
 errors: list[str] = []
-warnings: list[str] = []
+warnings: list[tuple[str, str]] = []
 
 
 def err(where, msg: str) -> None:
     errors.append(f"{where}: {msg}")
 
 
-def warn(where, msg: str) -> None:
+# One line per warning kind, printed as the heading over that kind's file
+# counts. A second kind arrived the moment a second rule landed after the
+# files did, so the heading cannot stay hardcoded to the first.
+WARN_KINDS = {
+    "source-voice": ("descriptions that name their own source. A page body never says "
+                     "where the fact came from; the Sources footer is the attribution. "
+                     "These predate the rule and are a sweep, not a blocker — see the "
+                     "open issue. Fix any in the file you are working on."),
+    "undated-timeline": ("published findings with no date at all. A page's timeline is "
+                         "ordered by date and renders a dateless entry as a row reading "
+                         "\"unknown\"; an undated credit belongs in a spec row instead. "
+                         "These predate the rule and are a sweep, not a blocker."),
+}
+
+
+def warn(where, msg: str, kind: str = "source-voice") -> None:
     """A defect worth surfacing that must not block an unrelated run.
 
     Reserved for rules added after a lot of files already broke them: the rule
     is right, the backlog is real, and failing every run until someone sweeps
     hundreds of old entries would only get the check deleted.
     """
-    warnings.append(f"{where}: {msg}")
+    warnings.append((kind, f"{where}: {msg}"))
 
 
 # --------------------------------------------------------------------------- #
@@ -303,6 +318,22 @@ def check_rules(rel: Path, data: dict) -> None:
                 err(str(rel), f"{fid}: published but resolution.status is {status!r}")
             if not pub.get("pr"):
                 err(str(rel), f"{fid}: published findings need publish.pr")
+            # A page's timeline is ordered by date, and an entry with no date
+            # renders a row that literally reads "unknown" above the 1930s. An
+            # undated credit still has somewhere to go — building.architect,
+            # .builder, .developer and .name all carry one without a year — so
+            # a published undated finding must say which spec row took it. The
+            # Modern Architecture statement wrote 92 of these into timelines
+            # before a render caught them.
+            if str(f.get("date") or "").strip().lower() in (
+                    "", "unknown", "undated", "undated in the source",
+                    "n.d.", "n. d.", "no date", "none"):
+                note = (pub.get("note") or "").lower()
+                if "spec row" not in note:
+                    warn(str(rel), f"{fid}: published with no date at all "
+                                   f"({f.get('date')!r}) — an undated credit belongs in a "
+                                   f"spec row: say which one took it in publish.note, or "
+                                   f"decline the finding.", "undated-timeline")
 
     for apn, paths in sorted(paths_by_apn.items()):
         if len(paths) > 1:
@@ -647,17 +678,17 @@ def main() -> int:
         print()
 
     if warnings:
-        by_file: dict[str, int] = {}
-        for w in warnings:
-            by_file[w.split(":", 1)[0]] = by_file.get(w.split(":", 1)[0], 0) + 1
-        print(f"{len(warnings)} warning(s) — descriptions that name their own "
-              f"source, in {len(by_file)} file(s). A page body never says where "
-              f"the fact came from; the Sources footer is the attribution. These "
-              f"predate the rule and are a sweep, not a blocker — see the open "
-              f"issue. Fix any in the file you are working on.")
-        for name, count in sorted(by_file.items(), key=lambda kv: -kv[1]):
-            print(f"  {count:>4}  {name}")
-        print()
+        for kind, blurb in WARN_KINDS.items():
+            rows = [w for k, w in warnings if k == kind]
+            if not rows:
+                continue
+            by_file: dict[str, int] = {}
+            for w in rows:
+                by_file[w.split(":", 1)[0]] = by_file.get(w.split(":", 1)[0], 0) + 1
+            print(f"{len(rows)} warning(s) in {len(by_file)} file(s) — {blurb}")
+            for name, count in sorted(by_file.items(), key=lambda kv: -kv[1]):
+                print(f"  {count:>4}  {name}")
+            print()
 
     if errors:
         print(f"{len(errors)} problem(s):", file=sys.stderr)
