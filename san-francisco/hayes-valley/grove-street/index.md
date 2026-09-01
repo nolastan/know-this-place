@@ -12,6 +12,7 @@ The parcels on Grove Street documented here so far, from the city's address, ass
 - [612–694](612/) — A 1975 building, with reroofing permitted in 2026.
 - [940](940/) — An 1895 single-family house in the Alamo Square Historic District, with garage work permitted in 2014.
 - [1336](1336/) — A 1900 garage in the NOPA Historic District, with a seismic retrofit permitted in 2001.
+- [1443](1443/) — A 1900 building in the San Francisco 1952 Firehouse Bond Act Thematic District (Discontiguous), with a seismic retrofit permitted in 2019.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

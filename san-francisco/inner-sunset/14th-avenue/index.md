@@ -6,6 +6,7 @@ The parcels on 14th Avenue documented here so far, from the city's address, asse
 
 - [1227](1227/) — A 1907 Tudor half-timbering, built by George Barker.
 - [1281](1281/) — A building Stick-Eastlake.
+- [1301](1301/) — A 1958 16-unit apartment building, with a seismic retrofit permitted in 2015.
 - [1320–1330](1320/) — A 1923 building, designed by Frank and Will D. Shea.
 - [1324](1324/) — A 1919 building, designed by Will D. Shea and Henry A. Minton.
 - [1358](1358/) — A 1913 Craftsman, designed by Theodore W. Lenzen.

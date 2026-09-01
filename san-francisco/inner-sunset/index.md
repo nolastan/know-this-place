@@ -19,6 +19,7 @@ The blocks between Golden Gate Park and Mount Sutro, laid out along the Muni N-J
 - [24th Avenue](24th-avenue/) — 4 buildings, built 1911–1950.
 - [Arguello Boulevard](arguello-boulevard/) — 1 building, built 1913.
 - [Belgrave Avenue](belgrave-avenue/) — 1 building, built 1972.
+- [Carl Street](carl-street/) — 1 building, built 1962.
 - [Clarendon Avenue](clarendon-avenue/) — 1 building, built 1956.
 - [Cragmont Avenue](cragmont-avenue/) — 1 building, built 1934.
 - [Edgewood Avenue](edgewood-avenue/) — 1 building, built 1986.
@@ -42,6 +43,9 @@ The blocks between Golden Gate Park and Mount Sutro, laid out along the Muni N-J
 - [Second Avenue](2nd-avenue/) — 4 buildings, built 1908–1923.
 - [Seventh Avenue](7th-avenue/) — 13 buildings, built 1900–1925.
 - [Sixth Avenue](6th-avenue/) — 28 buildings, built 1900–1916.
+- [Stanyan Street](stanyan-street/) — 1 building; 1 in the San Francisco 1952 Firehouse Bond Act Thematic District (Discontiguous).
 - [Third Avenue](3rd-avenue/) — 8 buildings, built 1909–1961.
+- [Twin Peaks Boulevard](twin-peaks-boulevard/) — 1 building, built 1950.
 - [Ventura Avenue](ventura-avenue/) — 1 building, built 1927; 1 in the Forest Hill Historic District.
+- [Villa Terrace](villa-terrace/) — 1 building, built 1951.
 - [Warren Drive](warren-drive/) — 2 buildings, built 1961.

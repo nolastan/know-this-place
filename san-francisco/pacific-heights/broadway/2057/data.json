@@ -1,0 +1,91 @@
+{
+  "address": "2057 Broadway, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/broadway/2057/",
+  "apn": "0579034",
+  "block": "0579",
+  "lot": "034",
+  "eas_baseid": "449459",
+  "coordinates": {
+    "lat": 37.794485,
+    "lng": -122.430853
+  },
+  "parcel": {
+    "year_built": 1948,
+    "units": 1,
+    "rooms": 5,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "building_area_sqft": 1468,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "NA",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "0000 2057 BROADWAY              0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 296243,
+    "assessed_improvement_value": 160551
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1948",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201602048809",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-02-04",
+      "status_date": "2016-02-17",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "perform repairs per termite report#67229 item#3a dry rot repair at rear of house. n/a for maher.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8403802",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-04-10",
+      "status_date": "1985-10-02",
+      "estimated_cost": 40000,
+      "description": "family solarium r. c. ground level 1st & 2nd level decks",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BROADWAY&street_type=&address_number=2057",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0579034&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0579&lot=034",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0579034",
+      "retrieved": "2026-09-01"
+    }
+  ],
+  "building": {}
+}

@@ -19,10 +19,12 @@ Diamond and Chenery and evaluated eight of them in detail.
 - [Brompton Avenue](brompton-avenue/) — 10 buildings, built 1908–1963.
 - [Chenery Street](chenery-street/) — 16 buildings, built 1900–1951; 5 in the Glen Park Center Historic District.
 - [Congo Street](congo-street/) — 1 building, built 1917.
+- [Diamond Heights Boulevard](diamond-heights-boulevard/) — 1 building, built 1964.
 - [Diamond Street](diamond-street/) — 5 buildings, built 1916–1951; 2 in the Glen Park Center Historic District.
 - [Digby Street](digby-street/) — 1 building.
 - [Elk Street](elk-street/) — 1 building.
 - [Everson Street](everson-street/) — 1 building, built 1963.
+- [Gold Mine Drive](gold-mine-drive/) — 1 building, built 1963.
 - [Joost Avenue](joost-avenue/) — 2 buildings, built 1910–1926.
 - [Laidley Street](laidley-street/) — 1 building, built 1900.
 - [Lippard Avenue](lippard-avenue/) — 1 building.
@@ -30,4 +32,5 @@ Diamond and Chenery and evaluated eight of them in detail.
 - [Milton Street](milton-street/) — 2 buildings, built 1908–1925.
 - [Monterey Boulevard](monterey-boulevard/) — 1 building, built 1900.
 - [Portola Drive](portola-drive/) — 1 building.
+- [Turquoise Way](turquoise-way/) — 3 buildings, built 1962–1964; 3 in the Diamond Heights Historic District.
 - [Wilder Street](wilder-street/) — 3 buildings, built 1938–1954.

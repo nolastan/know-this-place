@@ -4,6 +4,7 @@ The parcels on Sacramento Street documented here so far, from the city's address
 
 ## Documented so far
 
+- [1921](1921/) — A 1900 single-family house, with window replacement permitted in 2025.
 - [2055](2055/) — A 1975 86-unit apartment building, with reroofing permitted in 2014.
 - [2101](2101/) — A 1925 24-unit apartment building, with reroofing permitted in 1996.
 - [2135](2135/) — A 1900 36-unit apartment building, with a seismic retrofit permitted in 1998.

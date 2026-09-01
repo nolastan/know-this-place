@@ -16,6 +16,7 @@ The parcels on Battery Street documented here so far, from the city's address, a
 - [701](701/) — A 1907 store building, with reroofing permitted in 2014.
 - [901–911](901/) — A 1923 office building in the Northeast Waterfront Historic District, with an addition permitted in 2020.
 - [945](945/) — A 1911 office building in the Northeast Waterfront Historic District, with a seismic retrofit permitted in 1998.
+- [950](950/) — A 1932 store building in the Northeast Waterfront Historic District, with reroofing permitted in 2020.
 - [1015](1015/) — A 1943 store building in the Northeast Waterfront Historic District, with reroofing permitted in 2007.
 - [1025](1025/) — A 1911 store building in the Northeast Waterfront Historic District, with reroofing permitted in 2006.
 - [1051–1075](1051/) — A 1914 office building in the Northeast Waterfront Historic District, with reroofing permitted in 2011.

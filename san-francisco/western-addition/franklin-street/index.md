@@ -4,6 +4,7 @@ The parcels on Franklin Street documented here so far, from the city's address, 
 
 ## Documented so far
 
+- [950](950/) — A 1931 54-unit apartment building, with an accessory dwelling unit permitted in 2022.
 - [1001–1031](1001/) — A 1965 124-unit apartment building, with facade work permitted in 2018.
 - [1030](1030/) — A 1921 23-unit apartment building, with a seismic retrofit permitted in 2002.
 - [1187](1187/) — A 1967 church, with plumbing work permitted in 2007.

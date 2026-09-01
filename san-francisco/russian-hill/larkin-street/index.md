@@ -20,6 +20,7 @@ The parcels on Larkin Street documented here so far, from the city's address, as
 - [2609–2611](2609/) — A 1900 three-flat, with a kitchen and bathroom remodel permitted in 2023.
 - [2615](2615/) — A 1914 single-family house, with stair work permitted in 2022.
 - [2621](2621/) — A 1922 single-family house, with stair work permitted in 2008.
+- [2745](2745/) — A 1951 single-family house, with a kitchen and bathroom remodel permitted in 2002.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

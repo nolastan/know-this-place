@@ -5,6 +5,7 @@ The parcels on Chestnut Street documented here so far, from the city's address, 
 ## Documented so far
 
 - [199](199/) — A 1930 building, with a kitchen and bathroom remodel permitted in 2024.
+- [233–235](233/) — A 1940 4-unit apartment building, with facade work permitted in 2018.
 - [273](273/) — A 1904 single-family house, with an addition permitted in 2008.
 - [301–303](301/) — A 1909 single-family house, with a kitchen and bathroom remodel permitted in 1996.
 - [327–329](327/) — A 1907 two-flat, with garage work permitted in 2023.

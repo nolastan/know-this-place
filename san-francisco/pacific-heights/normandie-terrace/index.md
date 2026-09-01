@@ -4,6 +4,7 @@ The parcels on Normandie Terrace documented here so far, from the city's address
 
 ## Documented so far
 
+- [10](10/) — A 1953 single-family house in the Normandie Terrace Historic District, with window replacement permitted in 2017.
 - [44](44/) — A 1940 single-family house in the Normandie Terrace Historic District, with window replacement permitted in 2012.
 
 Pages are generated from the DataSF datasets listed in each page's

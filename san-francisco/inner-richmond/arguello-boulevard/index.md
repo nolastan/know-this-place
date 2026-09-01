@@ -4,6 +4,7 @@ The parcels on Arguello Boulevard documented here so far, from the city's addres
 
 ## Documented so far
 
+- [15](15/) — A 1911 single-family house in the Presidio Terrace Historic District, with a seismic retrofit permitted in 2014.
 - [354–356](354/) — A 1918 two-flat, with a seismic retrofit permitted in 2002.
 - [366–368](366/) — A 1917 three-flat, with window replacement permitted in 2007.
 - [370–372](370/) — A 1917 two-flat, with facade work permitted in 2019.

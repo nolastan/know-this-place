@@ -1,0 +1,150 @@
+{
+  "address": "25 Mclaren Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/seacliff/mclaren-avenue/25/",
+  "apn": "1330008G",
+  "block": "1330",
+  "lot": "008G",
+  "eas_baseid": "300413",
+  "coordinates": {
+    "lat": 37.786091,
+    "lng": -122.488932
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "lot_area_sqft": 4800,
+    "building_area_sqft": 2690,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Sea Cliff",
+    "analysis_neighborhood": "Seacliff",
+    "property_location_raw": "0000 0025 MCLAREN             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 292846,
+    "assessed_improvement_value": 346762
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Sea Cliff Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1913–1935",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200811076138",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-11-07",
+      "status_date": "2009-01-16",
+      "estimated_cost": 400,
+      "revised_cost": 400,
+      "description": "remove solar water heater at roof. additional permits may be required.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200810174452",
+      "type": "otc alterations permit",
+      "status": "reinstated",
+      "filed": "2008-10-17",
+      "status_date": "2008-11-07",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9305580",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-04-07",
+      "status_date": "1993-06-24",
+      "estimated_cost": 3800,
+      "description": "installation auto/fire sprinkler system to protect bsmt fl",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9212165",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-07-24",
+      "status_date": "1993-07-15",
+      "estimated_cost": 10000,
+      "revised_cost": 15000,
+      "description": "vertical addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8704010",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-03-30",
+      "status_date": "1988-10-17",
+      "estimated_cost": 6400,
+      "description": "vertical addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8506769",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1985-06-26",
+      "status_date": "1986-01-08",
+      "estimated_cost": 7400,
+      "description": "ats solar system on roof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MCLAREN&street_type=AVE&address_number=25",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1330008G&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1330&lot=008G",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1330008G",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.48893212713448%2037.786090758549115)%27)",
+      "retrieved": "2026-09-01"
+    }
+  ],
+  "building": {}
+}

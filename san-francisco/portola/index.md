@@ -10,3 +10,4 @@ A hillside residential district in the city's south-east, between McLaren Park a
 - [Silver Avenue](silver-avenue/) — 1 building, built 1927.
 - [University Street](university-street/) — 1 building, built 1932.
 - [Wayland Street](wayland-street/) — 1 building, built 2004.
+- [Woolsey Street](woolsey-street/) — 1 building, built 1961.

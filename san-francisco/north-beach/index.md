@@ -7,6 +7,7 @@ and the upper reaches of Grant Avenue, which was formerly Dupont Street.
 
 - [Alta Street](alta-street/) — 1 building, built 1900; 1 in the Telegraph Hill Historic District.
 - [Bannan Place](bannan-place/) — 4 buildings, built 1906–1909; 4 in the Upper Grant Avenue Historic District.
+- [Bay Street](bay-street/) — 1 building, built 1970.
 - [Bellair Place](bellair-place/) — 1 building, built 1906.
 - [Bob Kaufman Alley](bob-kaufman-alley/) — 2 buildings, built 1907–1915; 2 in the Upper Grant Avenue Historic District.
 - [Broadway](broadway/) — 14 buildings, built 1900–1921; 6 in the Jackson Square Historic District Extension.
@@ -29,6 +30,7 @@ and the upper reaches of Grant Avenue, which was formerly Dupont Street.
 - [Medau Place](medau-place/) — 1 building, built 1909; 1 in the Upper Grant Avenue Historic District.
 - [Montgomery Street](montgomery-street/) — 3 buildings, built 1907–1912; 1 in the Southeast Telegraph Hill Historic District.
 - [Nobles Alley](nobles-alley/) — 2 buildings, built 1900–1906; 2 in the Upper Grant Avenue Historic District.
+- [North Point Street](north-point-street/) — 1 building, built 1958.
 - [Nottingham Place](nottingham-place/) — 4 buildings, built 1907–1912; 4 in the Jackson Square Historic District Extension.
 - [Osgood Place](osgood-place/) — 3 buildings, built 1900–1912; 3 in the Jackson Square Historic District Extension.
 - [Pfeiffer Street](pfeiffer-street/) — 1 building, built 1956.

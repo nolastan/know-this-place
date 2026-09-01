@@ -4,6 +4,7 @@ The parcels on 22nd Avenue documented here so far, from the city's address, asse
 
 ## Documented so far
 
+- [366–370](366/) — A 1949 12-unit apartment building, with reroofing permitted in 2010.
 - [573](573/) — A 1915 single-family house, with a kitchen remodel permitted in 1995.
 
 Pages are generated from the DataSF datasets listed in each page's

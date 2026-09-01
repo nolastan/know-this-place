@@ -1,0 +1,147 @@
+{
+  "address": "148 Jordan Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/jordan-avenue/148/",
+  "apn": "1063036",
+  "block": "1063",
+  "lot": "036",
+  "eas_baseid": "294104",
+  "coordinates": {
+    "lat": 37.782697,
+    "lng": -122.45638
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 3996,
+    "building_area_sqft": 2420,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Jordan Park/Laurel Heights",
+    "analysis_neighborhood": "Presidio Heights",
+    "property_location_raw": "0000 0148 JORDAN              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 938294,
+    "assessed_improvement_value": 562968,
+    "last_sale_date": "1989-03-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Jordan Park Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1900–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201204178488",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-04-17",
+      "status_date": "2012-08-31",
+      "estimated_cost": 12500,
+      "revised_cost": 25000,
+      "description": "convert 270 sqft of unheated basement storage to heated storage, remodel 2 bathrooms @ the 2nd story. replace 4 windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200502185773",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-02-18",
+      "status_date": "2005-03-11",
+      "estimated_cost": 15150,
+      "revised_cost": 15150,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9717296",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1997-09-05",
+      "status_date": "1998-01-22",
+      "estimated_cost": 12000,
+      "description": "replace front exterior stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8906517",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-04-20",
+      "status_date": "1990-08-29",
+      "estimated_cost": 75000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JORDAN&street_type=AVE&address_number=148",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1063036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1063&lot=036",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1063036",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.45637993208315%2037.78269676854197)%27)",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "modern-architecture-context-statement",
+      "name": "Mary Brown, San Francisco Planning Department, San Francisco Modern Architecture and Landscape Design 1935-1970 Historic Context Statement, adopted 12 January 2011",
+      "query": "http://sfplanninggis.org/docs/Historical_Context_Statements/Modern%20Architecture%20Context%20adopted%20Jan%202011.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Modern Architecture and Landscape Design Context Statement, adopted 2011",
+      "retrieved": "2026-09-01"
+    }
+  ],
+  "building": {},
+  "historical_record": [
+    {
+      "date": "1970",
+      "kind": "landscape design",
+      "description": "A residential garden laid out in 1970 by the landscape architect Thomas D. Church, who designed more than 150 gardens in San Francisco and is widely counted the founder of Modern California landscape design.",
+      "source": "modern-architecture-context-statement"
+    }
+  ]
+}

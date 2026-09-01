@@ -21,6 +21,7 @@ A steep district above North Beach and the waterfront, known for its cable-car g
 - [Larkin Street](larkin-street/) — 2 buildings, built 1907–1914.
 - [Leavenworth Street](leavenworth-street/) — 1 building, built 1907.
 - [Lombard Street](lombard-street/) — 2 buildings, built 1909–2018; 1 in the Lombard Street Historic District.
+- [Lurmont Terrace](lurmont-terrace/) — 1 building, built 1957.
 - [Macondray Lane](macondray-lane/) — 1 building, built 1900; 1 in the Russian Hill-Macondray Lane Historic District.
 - [Mason Street](mason-street/) — 2 buildings, built 1908–1911.
 - [Montclair Terrace](montclair-terrace/) — 1 building, built 1938.

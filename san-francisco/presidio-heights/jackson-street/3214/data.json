@@ -1,0 +1,168 @@
+{
+  "address": "3214 Jackson Street, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/jackson-street/3214/",
+  "apn": "0973007",
+  "block": "0973",
+  "lot": "007",
+  "eas_baseid": "291700",
+  "coordinates": {
+    "lat": 37.791016,
+    "lng": -122.448135
+  },
+  "parcel": {
+    "year_built": 1932,
+    "units": 1,
+    "stories": 3,
+    "rooms": 12,
+    "bathrooms": 4,
+    "bedrooms": 3,
+    "lot_area_sqft": 3524.24,
+    "building_area_sqft": 4370,
+    "lot_depth_ft": 27.69,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Presidio Heights",
+    "analysis_neighborhood": "Presidio Heights",
+    "property_location_raw": "0000 3214 JACKSON             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1543205,
+    "assessed_improvement_value": 696499
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1932",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Presidio Heights Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1890–1930",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201804136300",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-04-13",
+      "status_date": "2019-02-25",
+      "estimated_cost": 1000,
+      "revised_cost": 38163,
+      "description": "replace finishes in master bedroom and bathroom. replace windows at master bedroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201509036131",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-09-03",
+      "status_date": "2015-09-03",
+      "estimated_cost": 11100,
+      "revised_cost": 11100,
+      "description": "voluntary foundation sill plate anchorage. n/a for maher.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201108122338",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-08-12",
+      "status_date": "2012-02-01",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "remodel of existing kitchen, replacing doors & drawers in existing cabinets. change recessed cans to confirm title 24. no structural changes. replace existing plumbing fixture in same locations. (n) lighting to comply w/cec 150(k).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8602952",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1986-03-18",
+      "status_date": "1986-08-18",
+      "estimated_cost": 400,
+      "description": "light fix alteration work under progess under appl. 8513944",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8513944",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-12-10",
+      "status_date": "1987-01-06",
+      "estimated_cost": 30000,
+      "description": "small addition on 2nd floor, new kitchen & master bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8510975",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-10-01",
+      "status_date": "1987-01-06",
+      "estimated_cost": 7500,
+      "description": "remodel kitchen",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JACKSON&street_type=ST&address_number=3214",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0973007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0973&lot=007",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0973007",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44813499468496%2037.79101556433546)%27)",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "modern-architecture-context-statement",
+      "name": "Mary Brown, San Francisco Planning Department, San Francisco Modern Architecture and Landscape Design 1935-1970 Historic Context Statement, adopted 12 January 2011",
+      "query": "http://sfplanninggis.org/docs/Historical_Context_Statements/Modern%20Architecture%20Context%20adopted%20Jan%202011.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Modern Architecture and Landscape Design Context Statement, adopted 2011",
+      "retrieved": "2026-09-01"
+    }
+  ],
+  "building": {},
+  "historical_record": [
+    {
+      "date": "1971",
+      "kind": "landscape design",
+      "description": "A residential garden laid out in 1971 by the landscape architect Thomas D. Church, who designed more than 150 gardens in San Francisco and is widely counted the founder of Modern California landscape design.",
+      "source": "modern-architecture-context-statement"
+    }
+  ]
+}

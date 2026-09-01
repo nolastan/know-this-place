@@ -4,6 +4,7 @@ The parcels on Green Street documented here so far, from the city's address, ass
 
 ## Documented so far
 
+- [980](980/) — A 1954 6-unit apartment building in the Russian Hill-Macondray Lane Historic District, with stair work permitted in 2004.
 - [1000](1000/) — A 1950 62-unit apartment building, with window replacement permitted in 2011.
 - [1088](1088/) — A 1908 single-family house, with reroofing permitted in 2001.
 - [1101](1101/) — A 1930 building, with a kitchen and bathroom remodel permitted in 2010.

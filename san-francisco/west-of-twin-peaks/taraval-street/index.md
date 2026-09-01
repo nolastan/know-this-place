@@ -5,6 +5,7 @@ The parcels on Taraval Street documented here so far, from the city's address, a
 ## Documented so far
 
 - [20](20/) — A 1923 single-family house in the Forest Hill Historic District, with a bathroom remodel permitted in 2016.
+- [321](321/) — A 1926 church, with electrical work permitted in 2003.
 - [601](601/) — A 1950 building, with reroofing permitted in 2002.
 - [648–650](648/) — A 1950 2-unit building with a ground-floor store, with reroofing permitted in 2015.
 - [800](800/) — A 1937 store building, with a kitchen remodel permitted in 2024.

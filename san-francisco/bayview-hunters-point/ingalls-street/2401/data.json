@@ -1,0 +1,104 @@
+{
+  "address": "2401 Ingalls Street, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/ingalls-street/2401/",
+  "apn": "4851023",
+  "block": "4851",
+  "lot": "023",
+  "eas_baseid": "372939",
+  "coordinates": {
+    "lat": 37.723592,
+    "lng": -122.388483
+  },
+  "parcel": {
+    "year_built": 1964,
+    "units": 3,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 2,
+    "lot_area_sqft": 30755,
+    "building_area_sqft": 10000,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "S",
+    "zoning": "M1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 2401 INGALLS             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1013373,
+    "assessed_improvement_value": 249177,
+    "last_sale_date": "1995-08-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1964",
+    "survey_name": "NEW MISSION IRON WORKS",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202607024513",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2026-07-02",
+      "status_date": "2026-07-02",
+      "estimated_cost": 10000,
+      "revised_cost": 0,
+      "description": "interior soft demo of existing office space within recycling center due to fire damage. tenant improvement will be done on separate pemrit to comply with nov#202650332. clean up only.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=INGALLS&street_type=ST&address_number=2401",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4851023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4851&lot=023",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4851023",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "modern-architecture-context-statement",
+      "name": "Mary Brown, San Francisco Planning Department, San Francisco Modern Architecture and Landscape Design 1935-1970 Historic Context Statement, adopted 12 January 2011",
+      "query": "http://sfplanninggis.org/docs/Historical_Context_Statements/Modern%20Architecture%20Context%20adopted%20Jan%202011.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Modern Architecture and Landscape Design Context Statement, adopted 2011",
+      "retrieved": "2026-09-01"
+    }
+  ],
+  "building": {
+    "architect": "J.J. van der Ploeg",
+    "completed": 1964
+  },
+  "historical_record": [
+    {
+      "date": "1964",
+      "kind": "construction",
+      "description": "An industrial building of 1964 by J.J. van der Ploeg.",
+      "source": "modern-architecture-context-statement"
+    }
+  ]
+}

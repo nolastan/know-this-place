@@ -1,0 +1,145 @@
+{
+  "address": "2411 Pacific Avenue, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/pacific-avenue/2411/",
+  "apn": "0587025",
+  "block": "0587",
+  "lot": "025",
+  "eas_baseid": "285835",
+  "coordinates": {
+    "lat": 37.793007,
+    "lng": -122.435271
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 3192.25,
+    "building_area_sqft": 2865,
+    "lot_depth_ft": 27.69,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "0000 2411 PACIFIC             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 679871,
+    "assessed_improvement_value": 908702,
+    "last_sale_date": "1994-05-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202111172579",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-11-17",
+      "status_date": "2022-12-02",
+      "estimated_cost": 1500,
+      "revised_cost": 3000,
+      "description": "revision to permit #202109077840. remove kitchen partition wall. move bathroom partition wall. add door for coat closet.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202109077840",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-09-07",
+      "status_date": "2022-12-02",
+      "estimated_cost": 120000,
+      "revised_cost": 120000,
+      "description": "remodel kitchen approx. 200 sf, new countertops, cabinets, appliances, upgrade electrical. remodel 2nd fl bathroom approx. 50 sf, new fixtures & shower surround, upgrade electrical. replace in-kind. lighting comply with cec 150.0 (k)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201901281367",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-01-28",
+      "status_date": "2019-10-08",
+      "estimated_cost": 70000,
+      "revised_cost": 70000,
+      "description": "remodel 3 bathroom after water damage. upgrade electrical at area of proposed work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201804025243",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-04-02",
+      "status_date": "2018-05-02",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9713222",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-07-16",
+      "status_date": "1998-08-31",
+      "estimated_cost": 2000,
+      "description": "deck repair on front",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9408488",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-05-27",
+      "status_date": "1994-09-27",
+      "estimated_cost": 4300,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 12,
+    "range": "1994–2021",
+    "shown_on_page": 6,
+    "note": "6 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PACIFIC&street_type=AVE&address_number=2411",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0587025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0587&lot=025",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0587025",
+      "retrieved": "2026-09-01"
+    }
+  ],
+  "building": {}
+}

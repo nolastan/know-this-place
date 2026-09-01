@@ -9,6 +9,7 @@ The parcels on Lombard Street documented here so far, from the city's address, a
 - [948–950](948/) — A 2018 single-family house, with an addition permitted in 2002.
 - [1025](1025/) — A building divided into six condominium units, each its own parcel on block 0071.
 - [1047–1049](1047/) — A 1948 two-flat in the Lombard Street Historic District, with an addition permitted in 2016.
+- [1070](1070/) — A 1939 single-family house in the Lombard Street Historic District, with window replacement permitted in 2008.
 - [1083](1083/) — A 1909 6-unit apartment building in the Lombard Street Historic District, with reroofing permitted in 2013.
 - [1208](1208/) — A 1927 building, with reroofing permitted in 2020.
 - [1210–1212](1210/) — A 1900 two-flat, with a rear addition permitted in 2016.

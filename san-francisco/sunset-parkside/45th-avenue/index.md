@@ -5,6 +5,7 @@ The parcels on 45th Avenue documented here so far, from the city's address, asse
 ## Documented so far
 
 - [1224](1224/) — A 1908 4-unit apartment building, with stair work permitted in 2017.
+- [1348](1348/) — A 1900 building in the San Francisco 1952 Firehouse Bond Act Thematic District (Discontiguous), with deck work permitted in 2016.
 - [1364](1364/) — A 1950 single-family house, with a kitchen remodel permitted in 1997.
 - [1368](1368/) — A 1950 single-family house, with window replacement permitted in 2011.
 - [1525](1525/) — A 1950 single-family house, with stair work permitted in 1985.

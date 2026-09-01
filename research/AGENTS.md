@@ -199,6 +199,17 @@ live in the dossiers. **Add to this list** whenever a run discovers something a
 future run would otherwise repeat — that is what makes this module improve
 rather than just accumulate.
 
+- **An undated finding needs a spec row, not a timeline entry.** A page's
+  timeline is ordered by date, so an entry whose date is `unknown` renders a row
+  reading *unknown* above the 1930s. `building.architect`, `.builder`,
+  `.developer` and `.name` all carry a credit with no year; nothing carries an
+  undated garden, storefront detail or occupancy. **Decide which spec row will
+  take an undated finding before you publish it, and decline it if none will** —
+  the renderer will not stop you writing it into the timeline. The Modern
+  Architecture statement wrote 92 of these before a render caught them, and the
+  same defect was live on two pages from an earlier batch. `check.py` now warns
+  on it, and the backlog is issue #206.
+
 - **In a born-digital PDF, a footnote marker manufactures street addresses.**
   `pdftotext` renders a superscript reference number inline, so a marker that
   falls at the end of a sentence runs straight into the next one and reads as a
