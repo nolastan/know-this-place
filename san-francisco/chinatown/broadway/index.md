@@ -17,6 +17,7 @@ The parcels on Broadway documented here so far, from the city's address, assesso
 - [705–715](705/) — A 1909 hotel, with a kitchen remodel permitted in 2024.
 - [734–740](734/) — A 1910 hotel, with reroofing permitted in 1996.
 - [754–762](754/) — A 1913 hotel, with a seismic retrofit permitted in 2016.
+- [827–831](827/) — A 1938 office building, with a kitchen remodel permitted in 2000.
 - [840](840/) — A 1900 school building, with permit records from 1993 to 2002.
 
 Pages are generated from the DataSF datasets listed in each page's

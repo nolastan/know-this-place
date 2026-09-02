@@ -36,6 +36,7 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [Brady Street](brady-street/) — 3 buildings, built 1906–1912; 1 in the Market Street Masonry Historic District.
 - [Brannan Street](brannan-street/) — 1 building, built 1917.
 - [Brosnan Street](brosnan-street/) — 8 buildings, built 1900–1936.
+- [Brunswick Street](brunswick-street/) — 1 building, built 1906.
 - [Bryant Street](bryant-street/) — 196 buildings, built 1890–2023; 28 in the East Mission Florida-to-Hampshire Streets Historic District.
 - [Caledonia Street](caledonia-street/) — 1 building, built 1908.
 - [Camp Street](camp-street/) — 7 buildings, built 1907–1932; 6 in the 16th and Valencia Streets Post-Fire Historic District.

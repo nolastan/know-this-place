@@ -37,8 +37,10 @@ The parcels on Howard Street documented here so far, from the city's address, as
 - [1025](1025/) — A 1939 office building, with foundation work permitted in 2000.
 - [1035](1035/) — A 1930 assessor class: vacant lot in the Western SOMA Light Industrial and Residential Historic District, with facade work permitted in 2026.
 - [1040–1042](1040/) — A 1914 9-unit apartment building, with a bathroom remodel permitted in 1985.
+- [1098](1098/) — A 1991 store building, with permit records from 2007 to 2021.
 - [1137–1139](1137/) — A 1924 office building in the Western SOMA Light Industrial and Residential Historic District, with a kitchen remodel permitted in 2018.
 - [1144](1144/) — A 1921 industrial building in the Western SOMA Light Industrial and Residential Historic District, with permit records from 1982 to 2019.
+- [1154–1158](1154/) — A 1924 store building in the SoMa LGBTQ Historic District, with reroofing permitted in 2005.
 - [1160](1160/) — A 1924 office building in the Western SOMA Light Industrial and Residential Historic District, with plumbing work permitted in 2026.
 - [1173–1175](1173/) — A 1922 industrial building in the Western SOMA Light Industrial and Residential Historic District, with a seismic retrofit permitted in 1995.
 - [1201](1201/) — A 1917 industrial building in the Western SOMA Light Industrial and Residential Historic District, with facade work permitted in 2001.

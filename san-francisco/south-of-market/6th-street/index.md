@@ -28,6 +28,7 @@ The parcels on Sixth Street documented here so far, from the city's address, ass
 - [185–193](185/) — A 1907 7-unit apartment building in the Sixth Street Lodging House Historic District, with plumbing work permitted in 2010.
 - [201–211](201/) — A 1907 hotel in the Sixth Street Lodging House Historic District, with a seismic retrofit permitted in 1991.
 - [219–221](219/) — A 1908 hotel in the Sixth Street Lodging House Historic District, with stair work permitted in 1989.
+- [220–224](220/) — A 1914 6-unit apartment building in the SoMa LGBTQ Historic District, with foundation work permitted in 2003.
 - [225–231](225/) — A 1939 industrial building in the SoMa LGBTQ Historic District, with a bathroom remodel permitted in 2013.
 - [241–243](241/) — A 1995 140-unit apartment building in the SoMa LGBTQ Historic District, with a kitchen and bathroom remodel permitted in 2016.
 - [251](251/) — A 1946 industrial building, with reroofing permitted in 2009.
@@ -37,6 +38,7 @@ The parcels on Sixth Street documented here so far, from the city's address, ass
 - [277](277/) — An assessor class: parking lot.
 - [279](279/) — An assessor class: vacant lot, with one permit record from 1986.
 - [301](301/) — A 1955 assessor class: parking lot, with permit records from 1988 to 2025.
+- [334–336](334/) — A 2006 store building, with stair work permitted in 2005.
 - [345](345/) — An apartment building, with an accessory dwelling unit permitted in 2022.
 - [363](363/) — An apartment building, with garage work permitted in 2017.
 - [377–399](377/) — A 1972 building, with a seismic retrofit permitted in 2024.
