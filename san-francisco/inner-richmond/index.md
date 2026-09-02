@@ -7,6 +7,7 @@ The city's Inner Richmond analysis neighborhood, between Golden Gate Park and th
 - [10th Avenue](10th-avenue/) — 4 buildings, built 1908–1913.
 - [11th Avenue](11th-avenue/) — 4 buildings, built 1906–1912; 2 in the Richmond Heights Historic District.
 - [12th Avenue](12th-avenue/) — 1 building, built 1923.
+- [3rd Avenue](3rd-avenue/) — 1 building, built 1907.
 - [6th Avenue](6th-avenue/) — 2 buildings, built 1900–1906.
 - [7th Avenue](7th-avenue/) — 3 buildings, built 1900–1910.
 - [8th Avenue](8th-avenue/) — 2 buildings, built 1904–1909.
@@ -25,4 +26,3 @@ The city's Inner Richmond analysis neighborhood, between Golden Gate Park and th
 - [Lake Street](lake-street/) — 1 building, built 1981.
 - [Presidio Terrace](presidio-terrace/) — 8 buildings, built 1906–2010; 8 in the Presidio Terrace Historic District.
 - [Second Avenue](2nd-avenue/) — 3 buildings, built 1900.
-- [Third Avenue](3rd-avenue/) — 1 building, built 1907.

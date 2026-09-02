@@ -11,6 +11,7 @@ The parcels on Filbert Street documented here so far, from the city's address, a
 - [882–884](882/) — A 1908 two-flat, with a bathroom remodel permitted in 2024.
 - [940](940/) — A 1900 school building.
 - [1066–1070](1066/) — A 1909 three-flat, with an accessory dwelling unit permitted in 2025.
+- [1101](1101/) — A 1917 4-unit apartment building, with window replacement permitted in 2018.
 - [1136–1140](1136/) — A 1914 4-unit apartment building, with reroofing permitted in 1996.
 
 Pages are generated from the DataSF datasets listed in each page's

@@ -25,6 +25,7 @@ Every residential parcel on Bartlett Street that the city's address, assessor an
 - [277](277/) — A 1900 single-family house, with reroofing permitted in 1994.
 - [283–289](283/) — A 1926 4-unit apartment building, with reroofing permitted in 2025.
 - [295](295/) — A 1924 5-unit apartment building, with reroofing permitted in 2005.
+- [300](300/) — A 1900 building, with an addition permitted in 2021.
 - [306–308](306/) — A 1902 6-unit tic building, with a seismic retrofit permitted in 2016.
 - [312](312/) — A 1919 single-family house, with stair work permitted in 2011.
 - [318](318/) — A 1900 two dwellings on one parcel, with reroofing permitted in 2025.

@@ -32,3 +32,4 @@ A steep district above North Beach and the waterfront, known for its cable-car g
 - [Union Street](union-street/) — 9 buildings, built 1906–1912.
 - [Vallejo Street](vallejo-street/) — 2 buildings, built 1911–2004.
 - [Van Ness Avenue](van-ness-avenue/) — 9 buildings, built 1909–1922.
+- [Washington Street](washington-street/) — 1 building, built 1922.

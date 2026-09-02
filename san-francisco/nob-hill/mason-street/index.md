@@ -13,6 +13,7 @@ The parcels on Mason Street documented here so far, from the city's address, ass
 - [950–990](950/) — A 1962 hotel, with reroofing permitted in 1984.
 - [1000](1000/) — A 1926 53-unit apartment building, with plumbing work permitted in 1998.
 - [1248–1262](1248/) — A 1912 9-unit building with a ground-floor store, with reroofing permitted in 1996.
+- [1483](1483/) — A building, with reroofing permitted in 2009.
 - [1501–1515](1501/) — A 1907 10-unit building with a ground-floor store.
 - [1657–1659](1657/) — A 1907 two-flat, with deck work permitted in 2022.
 

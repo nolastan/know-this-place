@@ -10,6 +10,8 @@ The parcels on Montgomery Street documented here so far, from the city's address
 - [180](180/) — A 1978 office building, with an addition permitted in 2008.
 - [200–232](200/) — A 1900 office building, with plumbing work permitted in 2023.
 - [201–265](201/) — A 1927 office building, with stair work permitted in 2025.
+- [300](300/) — A 1918 office building, with plumbing work permitted in 2018.
+- [315](315/) — A 1921 office building, with an addition permitted in 2026.
 - [400](400/) — The Kohl Building of 1901, an Article 10 landmark on the site of one of Samuel Brannan's two 1853 Montgomery Street buildings.
 - [417–425](417/) — A 1936 office building, with plumbing work permitted in 2019.
 - [420](420/) — A 1959 office tower on the site of one of Samuel Brannan's two 1853 Montgomery Street buildings.

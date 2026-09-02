@@ -1074,3 +1074,20 @@ The mechanics:
   when the fact is about the building the parcel now carries**; otherwise keep
   the timeline entry, give it the kind `site history`, and leave the spec row
   alone.
+- **A specific later roll year is still not proof, so the building's own name is
+  the second half of the test.** Volume J–L refined the rule above: a major
+  alteration re-dates a parcel, so 225 Bush Street — the Standard Oil Building of
+  1922, extant and well known — carries a roll year of 1948 and tripped the
+  demolition caution anyway. **State the caution only where the record gives a
+  bare address**; where the source names the building (a hotel, a theatre, a
+  named office block), the name is evidence that the building described is the
+  one standing, and an ordinary construction-date disagreement is the honest
+  form. Two of that volume's four candidates moved that way.
+- **A second architect on a building the page already credits is an addition,
+  not a duplicate — and neither overlap scan will tell you so.** The name-and-date
+  scan compares the *same* name, so a different collaborator never matches; the
+  wording scan scores these low because the sentences share only the building.
+  Temple Emanu-El's page credited John Bakewell Jr. and the professionals
+  biographies credit G. Albert Lansburgh for the same 1926 building; both are
+  right, because he was the associate. Publish alongside and let neither credit
+  adjudicate the other.
