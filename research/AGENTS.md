@@ -199,6 +199,17 @@ live in the dossiers. **Add to this list** whenever a run discovers something a
 future run would otherwise repeat — that is what makes this module improve
 rather than just accumulate.
 
+- **A report that reads the page cannot tell your work from the last run's.**
+  `check.py --report` counted a page's current `unknowns` and
+  `building.completed_conflict` as the batch's own, so a digitalsf batch that
+  stated no conflicts at all opened its PR claiming five conflicts and four
+  disputed dates — all of them written months earlier by the context-statement
+  runs that had already documented those same buildings. The columns now
+  subtract what the page held before this batch's commits touched it, the way
+  *Pages created* and *Pages edited* already did. **Any per-batch count taken
+  from a page's current state is wrong on a page two sources have touched**, and
+  the more thoroughly the site is documented the more often that is every page.
+
 - **A `description` warning is not a page defect until you check the page.** The
   source-voice sweep looked like 571 descriptions to rewrite and 571 pages to
   re-render. It was 571 descriptions and **69 pages**: the rest were either
