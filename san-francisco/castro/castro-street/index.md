@@ -163,6 +163,7 @@ Castro Street gives the neighborhood its name. Its commercial heart sits around 
 - [744](744/) — An 1896 two-flat Victorian with a four-decade permit record.
 - [746](746/) — An 1896 historic resource with a $750,000 remodel application under review.
 - [748](748/) — A 1900 three-unit building, in the same ownership since 1987.
+- [757](757/) — A 1908 building, with a bathroom remodel permitted in 2005.
 - [767](767/) — An 1895 single-family house, with a rear addition permitted in 2002.
 - [781–783](781/) — A 1906 two-flat, with foundation work permitted in 2002.
 - [785](785/) — A 1904 single-family house, with reroofing permitted in 1999.

@@ -21,6 +21,7 @@ A central district west of Civic Center, taking in the eastern edge of Alamo Squ
 - [Lily Street](lily-street/) — 1 building, built 1946; 1 in the Hayes Valley Residential Historic District.
 - [Linden Street](linden-street/) — 2 buildings, built 1924–1971; 2 in the Hayes Valley Residential Historic District.
 - [Market Street](market-street/) — 5 buildings, built 1900–1931; 1 in the Hayes Valley Residential Historic District.
+- [Mcallister Street](mcallister-street/) — 1 building, built 1900.
 - [Oak Street](oak-street/) — 1 building, built 2008.
 - [Octavia Street](octavia-street/) — 3 buildings, built 1946; 3 in the Hayes Valley Residential Historic District.
 - [Page Street](page-street/) — 3 buildings, built 1900–1924; 3 in the Hayes Valley Residential Historic District.

@@ -26,10 +26,12 @@ The parcels on Pacific Avenue documented here so far, from the city's address, a
 - [628–630](628/) — A 1907 hotel in the Chinatown Historic District, with a seismic retrofit permitted in 1998.
 - [638–644](638/) — A 1912 hotel in the Chinatown Historic District, with a seismic retrofit permitted in 1997.
 - [648–656](648/) — A 1911 hotel in the Chinatown Historic District, with reroofing permitted in 2005.
+- [655](655/) — A 1950 57-unit apartment building, with window replacement permitted in 2010.
 - [711–799](711/) — A 1950 117-unit apartment building, with a rear addition permitted in 2015.
 - [750–754](750/) — A 1907 hotel, with a seismic retrofit permitted in 1999.
 - [821–823](821/) — A 1907 2-unit building with a ground-floor store, with a seismic retrofit permitted in 1996.
 - [822–856](822/) — A 1962 200-unit apartment building, with a rear addition permitted in 2015.
+- [895](895/) — A 1950 60-unit apartment building, with window replacement permitted in 2010.
 - [923–927](923/) — A 1916 3-unit building with a ground-floor store, with an accessory dwelling unit permitted in 2020.
 - [990](990/) — A 1969 garage, with a seismic retrofit permitted in 2015.
 

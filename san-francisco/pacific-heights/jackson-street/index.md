@@ -7,6 +7,7 @@ The parcels on Jackson Street documented here so far, from the city's address, a
 - [1823](1823/) — A 1906 single-family house, with garage work permitted in 2009.
 - [1830](1830/) — An apartment building, with a kitchen and bathroom remodel permitted in 2024.
 - [1860](1860/) — A 1924 17-unit apartment building, with reroofing permitted in 2026.
+- [1925](1925/) — A 1912 building, with reroofing permitted in 2018.
 - [1950](1950/) — A 1925 building, with a seismic retrofit permitted in 2019.
 - [2020](2020/) — A 1902 single-family house, with a rear addition permitted in 1990.
 - [2090](2090/) — An 1896 single-family house, with an addition permitted in 2001.

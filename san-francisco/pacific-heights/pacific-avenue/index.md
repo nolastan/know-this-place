@@ -4,10 +4,12 @@ The parcels on Pacific Avenue documented here so far, from the city's address, a
 
 ## Documented so far
 
+- [1750](1750/) — A 1904 9-unit apartment building, with a seismic retrofit permitted in 2017.
 - [1780–1782](1780/) — A 1900 5-unit apartment building, with stair work permitted in 2015.
 - [1800](1800/) — A 1960 72-unit apartment building, with a kitchen and bathroom remodel permitted in 2026.
 - [1837](1837/) — A 1917 store building, with reroofing permitted in 2003.
 - [1895](1895/) — A five-story building of 1931 whose 29 apartments are held as 29 separate condominium parcels.
+- [1964](1964/) — A 1902 6-unit apartment building, with a kitchen and bathroom remodel permitted in 2024.
 - [2060](2060/) — A 1950 24-unit apartment building, with a seismic retrofit permitted in 2017.
 - [2070](2070/) — A 1927 29-unit apartment building, with reroofing permitted in 2024.
 - [2101](2101/) — A 1930 31-unit apartment building, with reroofing permitted in 2024.

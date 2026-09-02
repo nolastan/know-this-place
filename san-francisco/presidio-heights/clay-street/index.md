@@ -5,6 +5,7 @@ The parcels on Clay Street documented here so far, from the city's address, asse
 ## Documented so far
 
 - [3301](3301/) — A 1929 31-unit apartment building, with deck work permitted in 2017.
+- [3337](3337/) — A 1923 6-unit apartment building, with reroofing permitted in 2009.
 - [3346](3346/) — A 1900 single-family house in the Presidio Heights Historic District, with deck work permitted in 2012.
 - [3362](3362/) — An 1898 single-family house in the Presidio Heights Historic District, with a rear addition permitted in 2016.
 - [3401](3401/) — A 1931 32-unit apartment building, with a kitchen and bathroom remodel permitted in 2026.

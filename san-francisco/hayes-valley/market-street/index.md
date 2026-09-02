@@ -6,6 +6,7 @@ The parcels on Market Street documented here so far, from the city's address, as
 
 - [1540](1540/) — A building, with foundation work permitted in 2016.
 - [1576](1576/) — A 1907 assessor class: vacant lot, with permit records from 1981 to 2011.
+- [1580–1598](1580/) — A 1917 72-unit apartment building in the Market Street Masonry Historic District, with a seismic retrofit permitted in 2025.
 - [1632](1632/) — A 1911 store building, with a bathroom remodel permitted in 2009.
 - [1666–1668](1666/) — A 1913 hotel in the Market Street Masonry Historic District, with reroofing permitted in 2023.
 - [1670–1680](1670/) — A 1923 42-unit apartment building in the Market Street Masonry Historic District, with an addition permitted in 2000.

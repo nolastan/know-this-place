@@ -1049,3 +1049,45 @@ The mechanics:
   designation") and let the Sources footer say who. The one place a source may
   be named is `.unknowns`, where a disagreement cannot be stated without saying
   who disagrees — and there it needs its full name, not "the statement".
+
+- **The assessor's `year_built` of 1900 is a bucket, not a date, and a reverse
+  date check that forgets this calls extant buildings demolished.** Volume A–C
+  established a cheap and valuable check: a finding whose roll year falls *more
+  than fifteen years after* the source's date is usually about a building that
+  no longer stands, and thirteen pages carry that caution. Run mechanically over
+  volume G–I it fired twenty times and was wrong seventeen of them — every
+  Charles Hinkel house of 1883 on Broderick and Pine, and the Havens Mansion of
+  1884, a designated city landmark, all of which the roll dates 1900. **1900 is
+  21% of every roll year on this site** (3,090 of 14,505 pages) and 60% of all
+  pre-1907 ones; 1910 is another 3%. They are where the assessor files
+  "nineteenth century" and "before the fire". So: apply the check only where the
+  roll year is a *specific* later year — 1986 for the 1907 Italian American Bank
+  site, 2019 for the demolished Jack Tar Hotel, both of which it caught
+  correctly — and treat a roll year of 1900 or 1910 as an ordinary
+  construction-date disagreement instead.
+- **The same check governs whether the credit may become a spec row.** Where the
+  building really is a later one, writing the source's architect into
+  `building.architect` misattributes the building standing there now: Hertzka &
+  Knowles went onto 1101 Van Ness, whose building dates from 2019, and Lawrence
+  Halprin onto 10–50 United Nations Plaza, a 1936 federal building whose plaza
+  he laid out and whose architect the page already named. **Set the spec row only
+  when the fact is about the building the parcel now carries**; otherwise keep
+  the timeline entry, give it the kind `site history`, and leave the spec row
+  alone.
+- **A specific later roll year is still not proof, so the building's own name is
+  the second half of the test.** Volume J–L refined the rule above: a major
+  alteration re-dates a parcel, so 225 Bush Street — the Standard Oil Building of
+  1922, extant and well known — carries a roll year of 1948 and tripped the
+  demolition caution anyway. **State the caution only where the record gives a
+  bare address**; where the source names the building (a hotel, a theatre, a
+  named office block), the name is evidence that the building described is the
+  one standing, and an ordinary construction-date disagreement is the honest
+  form. Two of that volume's four candidates moved that way.
+- **A second architect on a building the page already credits is an addition,
+  not a duplicate — and neither overlap scan will tell you so.** The name-and-date
+  scan compares the *same* name, so a different collaborator never matches; the
+  wording scan scores these low because the sentences share only the building.
+  Temple Emanu-El's page credited John Bakewell Jr. and the professionals
+  biographies credit G. Albert Lansburgh for the same 1926 building; both are
+  right, because he was the associate. Publish alongside and let neither credit
+  adjudicate the other.

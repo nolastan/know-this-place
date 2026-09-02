@@ -7,6 +7,7 @@ The parcels on Third Avenue documented here so far, from the city's address, ass
 - [1200](1200/) — A 1909 shingled Craftsman, built by Cox Brothers.
 - [1214](1214/) — A 1909 Craftsman/English Arts and Crafts blend, built by Cox Brothers.
 - [1279](1279/) — A 1908 Tudor half-timbering, designed by John Cotter Pelton.
+- [1284–1286](1284/) — A 1908 two-flat, with garage work permitted in 2014.
 - [1308–1362](1308/) — A 1912 building, built by Michael C. Rench.
 - [1319](1319/) — A 1911 building, built by Michael C. Rench.
 - [1337](1337/) — A 1912 Craftsman, designed by Weismann and Son.

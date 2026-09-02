@@ -4,6 +4,7 @@ The parcels on Geary Street documented here so far, from the city's address, ass
 
 ## Documented so far
 
+- [301–323](301/) — A 1908 office building in the Kearny-Market-Mason-Sutter Conservation District, with reroofing permitted in 2007.
 - [366–370](366/) — A 1917 store building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 1996.
 - [400](400/) — A 1916 store building in the Kearny-Market-Mason-Sutter Conservation District, with a kitchen and bathroom remodel permitted in 2021.
 - [418–432](418/) — A 1911 hotel in the Kearny-Market-Mason-Sutter Conservation District, with plumbing work permitted in 2003.

@@ -14,6 +14,8 @@ The parcels on Washington Street documented here so far, from the city's address
 - [2310](2310/) — A 1917 single-family house, with a bathroom remodel permitted in 2010.
 - [2461](2461/) — A 1900 2-unit apartment building, with a bathroom remodel permitted in 2023.
 - [2885](2885/) — A 1900 single-family house, with garage work permitted in 2000.
+- [2957–2961](2957/) — An 1895 6-unit apartment building, with a kitchen and bathroom remodel permitted in 2002.
+- [2965](2965/) — An 1898 single-family house, with reroofing permitted in 2024.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

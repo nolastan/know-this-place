@@ -12,6 +12,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Casitas Avenue](casitas-avenue/) — 1 building, built 1953.
 - [Castenada Avenue](castenada-avenue/) — 1 building, built 1929; 1 in the Forest Hill Historic District.
 - [Edgehill Way](edgehill-way/) — 1 building, built 1970.
+- [El Verano Way](el-verano-way/) — 1 building, built 1926.
 - [Frida Kahlo Way](frida-kahlo-way/) — 1 building.
 - [Funston Avenue](funston-avenue/) — 1 building, built 1936.
 - [Junipero Serra Boulevard](junipero-serra-boulevard/) — 1 building, built 1920; 1 in the St. Francis Wood Historic District.

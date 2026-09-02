@@ -36,6 +36,7 @@ The parcels on Mission Street documented here so far, from the city's address, a
 - [1375–1385](1375/) — A 1925 office building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 1989.
 - [1390–1398](1390/) — A 136-unit apartment building, with window replacement permitted in 2010.
 - [1401–1415](1401/) — A 2016 122-unit apartment building, with reroofing permitted in 2015.
+- [1453](1453/) — A 1913 office building, with deck work permitted in 2025.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

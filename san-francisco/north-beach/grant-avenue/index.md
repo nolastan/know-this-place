@@ -74,6 +74,7 @@ The parcels on Grant Avenue documented here so far, from the city's address, ass
 - [1615–1633](1615/) — A 1908 16-unit apartment building in the Upper Grant Avenue Historic District, with deck work permitted in 2015.
 - [1630](1630/) — A 1938 three-flat, with reroofing permitted in 2009.
 - [1640–1644](1640/) — Three flats of 1907 on the Dupont Street site where the First Colored Baptist Church built its first church in 1854.
+- [1721–1725](1721/) — A 1913 4-unit apartment building, with a kitchen and bathroom remodel permitted in 2008.
 - [1831](1831/) — A 1965 8-unit apartment building, with window replacement permitted in 2010.
 
 Pages are generated from the DataSF datasets listed in each page's

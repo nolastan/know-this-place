@@ -1,0 +1,112 @@
+{
+  "address": "30 Digby Street, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/digby-street/30/",
+  "apn": "7541014",
+  "block": "7541",
+  "lot": "014",
+  "eas_baseid": "421037",
+  "coordinates": {
+    "lat": 37.739352,
+    "lng": -122.432022
+  },
+  "parcel": {
+    "year_built": 1965,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "lot_area_sqft": 4521,
+    "building_area_sqft": 3217,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Glen Park",
+    "analysis_neighborhood": "Glen Park",
+    "property_location_raw": "0000 0030 DIGBY               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 46862,
+    "assessed_improvement_value": 188498
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1965",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201307010900",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-07-01",
+      "status_date": "2013-08-05",
+      "estimated_cost": 9800,
+      "revised_cost": 9800,
+      "description": "repair dry rot wood deck in court yard. replace in kind. around three hunder sq ft. less than 50%",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200508311734",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-08-31",
+      "status_date": "2007-03-22",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DIGBY&street_type=ST&address_number=30",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7541014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7541&lot=014",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7541014",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume J–L), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=804fff9eac94b0734e9f266d1cb0f0a250f209d0b21e9fd8088d42d0fe938ee1&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-09-01"
+    }
+  ],
+  "building": {
+    "architect": "Roger Yuen Lee"
+  },
+  "historical_record": [
+    {
+      "date": "1965",
+      "kind": "construction",
+      "description": "Designed by Roger Yuen Lee, a leading post-war proponent of the Second Bay Tradition, noted for the grace and clarity of his post-and-beam residential work.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ]
+}

@@ -14,6 +14,7 @@ The parcels on Stockton Street documented here so far, from the city's address, 
 - [417](417/) — A 1907 hotel in the Kearny-Market-Mason-Sutter Conservation District, with stair work permitted in 2018.
 - [423–439](423/) — A 1911 78-unit apartment building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 1991.
 - [441–447](441/) — A 1923 office building in the Kearny-Market-Mason-Sutter Conservation District, with a vertical addition permitted in 2000.
+- [530](530/) — A 1923 46-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with garage work permitted in 2019.
 - [600](600/) — A 1908 hotel, with a kitchen remodel permitted in 2011.
 - [800–810](800/) — A 1911 23-unit apartment building in the Chinatown Historic District, with a seismic retrofit permitted in 1995.
 - [805–815](805/) — A 1915 hotel in the Chinatown Historic District, with a seismic retrofit permitted in 2000.

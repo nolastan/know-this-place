@@ -19,6 +19,7 @@ The parcels on Broadway documented here so far, from the city's address, assesso
 - [2020](2020/) — A 1920 single-family house, with a kitchen remodel permitted in 2006.
 - [2057](2057/) — A 1948 building, with dry-rot repair permitted in 2016.
 - [2090](2090/) — A 1936 39-unit apartment building, with a kitchen and bathroom remodel permitted in 1985.
+- [2201](2201/) — A 1915 school building, with a seismic retrofit permitted in 2016.
 - [2307](2307/) — A 1900 single-family house, with stair work permitted in 2006.
 - [2310](2310/) — A 1927 single-family house, with a rear addition permitted in 2006.
 - [2361](2361/) — A 1914 single-family house, with a rear addition permitted in 1996.
