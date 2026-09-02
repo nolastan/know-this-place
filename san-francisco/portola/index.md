@@ -4,6 +4,7 @@ A hillside residential district in the city's south-east, between McLaren Park a
 
 ## Streets documented so far
 
+- [Cambridge Street](cambridge-street/) — 1 building, built 1951.
 - [Felton Street](felton-street/) — 1 building.
 - [Girard Street](girard-street/) — 1 building.
 - [Hamilton Street](hamilton-street/) — 1 building, built 1915.

@@ -7,6 +7,7 @@ The parcels on Ocean Avenue documented here so far, from the city's address, ass
 - [1051](1051/) — A 1962 store building, with reroofing permitted in 2007.
 - [1298](1298/) — A 1948 building, with a rear addition permitted in 2002.
 - [1345](1345/) — Ingleside Presbyterian Church, designed by developer Joseph Leonard after a 1920 fire destroyed its predecessor.
+- [1637–1649](1637/) — A 1927 bank building, with reroofing permitted in 2012.
 - [1831–1835](1831/) — The earliest extant structure on Ocean Avenue, built 1900.
 
 Pages are generated from the DataSF datasets listed in each page's

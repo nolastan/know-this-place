@@ -4,6 +4,7 @@ The parcels on Beach Street documented here so far, from the city's address, ass
 
 ## Documented so far
 
+- [725–737](725/) — A 1948 store building, with reroofing permitted in 2024.
 - [900](900/) — An assessor class: vacant lot in the Aquatic Park Historic District.
 
 Pages are generated from the DataSF datasets listed in each page's

@@ -11,6 +11,7 @@ The parcels on Oak Street documented here so far, from the city's address, asses
 - [221](221/) — A 1906 industrial building in the Hayes Valley Residential Historic District, with a kitchen and bathroom remodel permitted in 2014.
 - [248–250](248/) — A 1900 garage in the Hayes Valley Residential Historic District, with a bathroom remodel permitted in 2018.
 - [463–467](463/) — An 1875 two-flat in the Hayes Valley Residential Historic District, with a bathroom remodel permitted in 2004.
+- [607–619](607/) — A 1906 6-unit building in the Hayes Valley Residential Historic District, with an accessory dwelling unit permitted in 2026.
 - [660](660/) — A 1936 church in the Hayes Valley Residential Historic District, with stair work permitted in 2018.
 - [1138–1140](1138/) — A 1900 office building in the Buena Vista North Historic District, with a rear addition permitted in 1990.
 - [1152](1152/) — A 1900 building in the Buena Vista North Historic District, with window replacement permitted in 2002.

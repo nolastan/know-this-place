@@ -21,6 +21,7 @@ A low-lying district on filled ground along the northern waterfront, largely bui
 - [Francisco Street](francisco-street/) — 5 buildings, built 1923–1926; 1 in the Marina Corporation Residential Historic District Extension.
 - [Gough Street](gough-street/) — 1 building, built 1900.
 - [Green Street](green-street/) — 1 building, built 1916; 1 in the Pacific Heights Historic District.
+- [Greenwich Street](greenwich-street/) — 1 building, built 1900.
 - [Jefferson Street](jefferson-street/) — 3 buildings, built 1930–1937.
 - [Laguna Street](laguna-street/) — 1 building, built 1924.
 - [Lombard Street](lombard-street/) — 1 building, built 1960.

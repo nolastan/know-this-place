@@ -4,6 +4,7 @@ The parcels on Baker Street documented here so far, from the city's address, ass
 
 ## Documented so far
 
+- [2021–2023](2021/) — A 1903 two-flat, with reroofing permitted in 2005.
 - [2201](2201/) — A 1904 two-flat, with window replacement permitted in 2008.
 - [2511](2511/) — A 1906 single-family house in the Pacific Heights Historic District, with foundation work permitted in 2017.
 

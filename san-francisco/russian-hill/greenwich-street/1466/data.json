@@ -1,0 +1,110 @@
+{
+  "address": "1466 Greenwich Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/greenwich-street/1466/",
+  "apn": "0502005F",
+  "block": "0502",
+  "lot": "005F",
+  "eas_baseid": "283612",
+  "coordinates": {
+    "lat": 37.800719,
+    "lng": -122.423827
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 1,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 4,
+    "lot_area_sqft": 6525,
+    "building_area_sqft": 3560,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Russian Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "1468 1466 GREENWICH           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 544238,
+    "assessed_improvement_value": 435366
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9620058",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-10-17",
+      "status_date": "1996-10-21",
+      "estimated_cost": 500,
+      "description": "revision to pa#9520090",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9520090",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1995-11-28",
+      "status_date": "1996-10-21",
+      "estimated_cost": 30000,
+      "description": "reconvert 1466 & 1468 greenwich into 2 unit bldg.add rms etc",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GREENWICH&street_type=ST&address_number=1466",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0502005F&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0502&lot=005F",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0502005F",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume P–R), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=37da3dd1abd97d61cd23d20a163f6d99f76a7aaf67f04eddf11f919d978aa651&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1920s",
+      "kind": "construction",
+      "description": "A house built by Joseph Pasqualetti of the American Concrete Company for himself.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ],
+  "building": {
+    "builder": "Joseph Anthony Pasqualetti"
+  }
+}

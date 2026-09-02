@@ -10,6 +10,7 @@ The parcels on Buchanan Street documented here so far, from the city's address, 
 - [2250](2250/) — A 1955 19-unit apartment building, with garage work permitted in 2020.
 - [2333](2333/) — A 1972 building, with reroofing permitted in 2019.
 - [2400](2400/) — A 1937 25-unit apartment building, with reroofing permitted in 2006.
+- [2705](2705/) — A 1905 two-flat, with garage work permitted in 2005.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

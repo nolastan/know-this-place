@@ -1,0 +1,180 @@
+{
+  "address": "400 38th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/38th-avenue/400/",
+  "apn": "1468018A",
+  "block": "1468",
+  "lot": "018A",
+  "eas_baseid": "305030",
+  "coordinates": {
+    "lat": 37.781178,
+    "lng": -122.4986
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2335,
+    "lot_depth_ft": 75,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Outer Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0400 38TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 819898,
+    "assessed_improvement_value": 546591,
+    "last_sale_date": "2001-07-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201911157379",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-11-15",
+      "status_date": "2019-11-19",
+      "estimated_cost": 5500,
+      "revised_cost": 5500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201401136105",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-01-13",
+      "status_date": "2014-01-13",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "replace 5 wood shingle hung window sashes with custom wood inserts, indentical style, low-e double pane glass.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201308154484",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-08-15",
+      "status_date": "2013-08-15",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "sash replacement for one 60\"x72\" double hung window. changing wood double pane for existing wood single pan. exact same style and size.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200507147533",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-07-14",
+      "status_date": "2006-03-01",
+      "estimated_cost": 72500,
+      "revised_cost": 72500,
+      "description": "replace (e) kitchen cabinets, fixtures, appliances, lighting, finishes. replace (e) hall bath fixtur",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200507016699",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2005-07-01",
+      "status_date": "2024-11-04",
+      "estimated_cost": 72500,
+      "revised_cost": 72500,
+      "description": "replace (e) kitchen cabinetrs, fixtures, appliances, lighting, finishes. replace (e) hall bath fixtu",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200309164843",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-09-16",
+      "status_date": "2003-10-07",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200208133887",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-08-13",
+      "status_date": "2003-01-09",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "remodel bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8612822",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-10-14",
+      "status_date": "1986-11-17",
+      "estimated_cost": 1000,
+      "description": "replace dry rotted restucco, wall section",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=38TH&street_type=AVE&address_number=400",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1468018A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1468&lot=018A",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1468018A",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume M–O), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=819c20a033e71980c63a96c7fcf1503b3292220b4408abf97897f8fc58c05144&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1916",
+      "kind": "construction",
+      "description": "Designed by architect Ida McCain for the S. A. Born Building Company in Lincoln Manor.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ],
+  "building": {
+    "architect": "Ida McCain",
+    "completed_conflict": "The assessor's roll gives 1912; this address is recorded as built 1916."
+  }
+}

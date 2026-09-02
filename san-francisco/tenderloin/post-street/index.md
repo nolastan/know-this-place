@@ -38,10 +38,12 @@ The parcels on Post Street documented here so far, from the city's address, asse
 - [1003](1003/) — A 1912 12-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with a seismic retrofit permitted in 1998.
 - [1010](1010/) — A 1907 hotel in the Lower Nob Hill Apartment Hotel Historic District, with a seismic retrofit permitted in 2003.
 - [1020](1020/) — A 1915 42-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with a kitchen and bathroom remodel permitted in 2005.
+- [1025](1025/) — A 1914 27-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with an accessory dwelling unit permitted in 2020.
 - [1030](1030/) — A 1913 64-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with reroofing permitted in 2024.
 - [1031](1031/) — A 1915 office building in the Lower Nob Hill Apartment Hotel Historic District, with reroofing permitted in 1989.
 - [1045](1045/) — A 1915 9-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with a kitchen and bathroom remodel permitted in 2021.
 - [1050](1050/) — A 1911 40-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with a kitchen and bathroom remodel permitted in 2021.
+- [1051](1051/) — A 1914 28-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with window replacement permitted in 2009.
 - [1055](1055/) — A 1919 garage in the Lower Nob Hill Apartment Hotel Historic District, with a seismic retrofit permitted in 2003.
 - [1070](1070/) — A 1911 6-unit tic building in the Lower Nob Hill Apartment Hotel Historic District, with window replacement permitted in 2014.
 - [1080](1080/) — A 1915 15-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with a seismic retrofit permitted in 2000.

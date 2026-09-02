@@ -6,6 +6,7 @@ The parcels on Haight Street documented here so far, from the city's address, as
 
 - [836–840](836/) — A 1906 three-flat, with a bathroom remodel permitted in 2024.
 - [944–948](944/) — An 1895 three-flat in the Buena Vista North Historic District, with permit records from 1983 to 1997.
+- [1080](1080/) — A 1900 single-family house in the Buena Vista North Historic District, with a rear addition permitted in 1996.
 - [1128](1128/) — An 1890 building in the Buena Vista North Historic District, with window replacement permitted in 2022.
 - [1250](1250/) — A 1914 40-unit apartment building in the Buena Vista North Historic District, with reroofing permitted in 2020.
 - [1367–1371](1367/) — A 1900 3-unit building with a ground-floor store in the Haight Ashbury Counterculture Historic District, with a kitchen remodel permitted in 2019.

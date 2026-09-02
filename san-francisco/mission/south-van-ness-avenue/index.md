@@ -69,6 +69,7 @@ Every residential parcel on South Van Ness Avenue that the city's address, asses
 - [696–698](696/) — A 1910 two-flat, with a kitchen remodel permitted in 2004.
 - [697](697/) — A 1931 4-unit building with a ground-floor store, with garage work permitted in 2008.
 - [716](716/) — A 1903 3-unit apartment building in the Capp and Howard Streets Mid-Block Fire Line Historic District.
+- [722](722/) — A 1925 school building, with a bathroom remodel permitted in 2018.
 - [731–733](731/) — A 1906 8-unit apartment building, with facade work permitted in 2018.
 - [736](736/) — A 1900 single-family house, with an addition permitted in 2016.
 - [754](754/) — A 1900 single-family house, with foundation work permitted in 2018.

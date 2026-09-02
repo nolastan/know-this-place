@@ -4,6 +4,7 @@ The parcels on Cameo Way documented here so far, from the city's address, assess
 
 ## Documented so far
 
+- [7](7/) — A 1964 single-family house in the Diamond Heights Historic District, with window replacement permitted in 2025.
 - [70](70/) — A 1968 single-family house in the Diamond Heights Historic District, with garage work permitted in 2008.
 
 Pages are generated from the DataSF datasets listed in each page's

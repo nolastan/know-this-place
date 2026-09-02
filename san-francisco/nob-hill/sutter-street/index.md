@@ -15,6 +15,7 @@ The parcels on Sutter Street documented here so far, from the city's address, as
 - [620–630](620/) — A 1918 hotel in the Kearny-Market-Mason-Sutter Conservation District, with stair work permitted in 1989.
 - [635](635/) — A 1911 hotel in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 2007.
 - [640–650](640/) — A 1916 building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 2006.
+- [680–688](680/) — A 1918 29-unit apartment building in the Kearny-Market-Mason-Sutter Conservation District, with window replacement permitted in 2020.
 - [700–716](700/) — A 1918 55-unit apartment building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 1998.
 - [707–709](707/) — A 1920 store building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 2006.
 - [726–750](726/) — A building in the Lower Nob Hill Apartment Hotel Historic District, with a seismic retrofit permitted in 2007.
@@ -32,6 +33,7 @@ The parcels on Sutter Street documented here so far, from the city's address, as
 - [952](952/) — A 1910 59-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with a kitchen and bathroom remodel permitted in 1987.
 - [970–972](970/) — A 1909 hotel in the Lower Nob Hill Apartment Hotel Historic District, with a seismic retrofit permitted in 1995.
 - [974–980](974/) — A 1908 6-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with a seismic retrofit permitted in 1993.
+- [979](979/) — A 1913 24-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with reroofing permitted in 2013.
 - [1006–1008](1006/) — A 1907 2-unit building with a ground-floor store in the Lower Nob Hill Apartment Hotel Historic District, with fire repair permitted in 2015.
 - [1025](1025/) — A 1913 19-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with an addition permitted in 2020.
 - [1034](1034/) — A 1909 12-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with a seismic retrofit permitted in 1993.

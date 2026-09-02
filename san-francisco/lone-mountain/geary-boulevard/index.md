@@ -4,6 +4,7 @@ The parcels on Geary Boulevard documented here so far, from the city's address, 
 
 ## Documented so far
 
+- [2675](2675/) — A 1961 shopping center, with a rear addition permitted in 2017.
 - [2761](2761/) — A 1999 store building, with electrical work permitted in 2000.
 - [3040](3040/) — A 1925 store building, with a seismic retrofit permitted in 2001.
 - [3245](3245/) — A 1947 store building, with reroofing permitted in 2001.

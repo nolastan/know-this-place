@@ -1,0 +1,123 @@
+{
+  "address": "1399 Plymouth Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/west-of-twin-peaks/plymouth-avenue/1399/",
+  "apn": "3177001",
+  "block": "3177",
+  "lot": "001",
+  "eas_baseid": "356070",
+  "coordinates": {
+    "lat": 37.727449,
+    "lng": -122.456796
+  },
+  "parcel": {
+    "year_built": 1918,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 5135,
+    "building_area_sqft": 1545,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Westwood Park",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 1399 PLYMOUTH            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 36705,
+    "assessed_improvement_value": 39929
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1918",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202504285326",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2025-04-28",
+      "status_date": "2025-04-28",
+      "estimated_cost": 19500,
+      "revised_cost": 19500,
+      "description": "to comply with nov 202310516 repair storm water piping that is defective. repair defective drainage piping. repair defective water piping",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202310027858",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-10-02",
+      "status_date": "2023-10-02",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "demo permit. demo/remove plaster due to water damage. board up all exterior openings, broken windows if window works, garage door fully closed and secured",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209129526",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-09-12",
+      "status_date": "2012-10-22",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to comply with nov #201084630 order of abatement issued to repair (e) kids playhouse, less than 100 sq.ft. and reconstruct 30' of fence less than 6' in height.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PLYMOUTH&street_type=AVE&address_number=1399",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3177001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3177&lot=001",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3177001",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume M–O), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=819c20a033e71980c63a96c7fcf1503b3292220b4408abf97897f8fc58c05144&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1918",
+      "kind": "construction",
+      "description": "Designed by architect Ida McCain.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ],
+  "building": {
+    "architect": "Ida McCain"
+  }
+}

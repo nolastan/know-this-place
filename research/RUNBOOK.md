@@ -368,6 +368,18 @@ assessor and EAS give the parcel and say so in `resolution.method`.
   with prose. A dated fact joins the page's one timeline in date order; it never
   opens a second rail.
 
+**Then check that the writes actually landed.**
+
+```bash
+python3 research/tools/check.py --landed research/findings/<id>/<batch>.json
+```
+
+A page that already names the same practitioner under another spelling makes an
+`if not already set` write a no-op, and the finding is marked published anyway.
+`--landed` reports every published finding whose page carries neither its
+description nor a spec row naming anyone it records. Each one is a decline, or a
+description trimmed to the part the page lacked with `publish.note` saying so.
+
 ### Mark the findings file in the same commit that edits the pages
 
 Every entry you touched gets `publish.status` set to `"published"` with its PR

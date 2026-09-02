@@ -4,8 +4,10 @@ The parcels on Union Street documented here so far, from the city's address, ass
 
 ## Documented so far
 
+- [1550](1550/) — A 1922 garage, with reroofing permitted in 2025.
 - [1666–1670](1666/) — A 1950 store building, with a kitchen and bathroom remodel permitted in 2014.
 - [1686–1694](1686/) — A 1950 store building, with an addition permitted in 1983.
+- [1782](1782/) — A 1900 store building, with a kitchen remodel permitted in 2023.
 - [1836–1846](1836/) — A 1900 store building, with electrical work permitted in 2012.
 - [1837–1845](1837/) — A 1906 7-unit building with a ground-floor store, with plumbing work permitted in 2017.
 - [1847–1849](1847/) — A 1900 store building, with a bathroom remodel permitted in 2010.
