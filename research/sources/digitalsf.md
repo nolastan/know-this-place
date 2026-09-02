@@ -322,7 +322,7 @@ more sensitive rather than less.
 
 - **Verified:** 2026-09-02 (read, resolved and published **SFH 371, the San
   Francisco Redevelopment Agency Records**, whole: 2,421 records → 421 findings
-  → 117 on a parcel → **116 published on 103 pages**, 51 of them seeded for it,
+  → 117 on a parcel → **116 published on 103 pages** in #214, 51 of them seeded for it,
   1 declined. 49 name the building then standing — mostly Tenderloin residential
   hotels, plus the Japantown YWCA, the Miyako Hotel, Woolf House Apartments and
   the Western Addition Solar House. Findings:
