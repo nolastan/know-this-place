@@ -1,0 +1,161 @@
+{
+  "address": "35 Amber Drive, San Francisco, CA 94131",
+  "path": "/san-francisco/noe-valley/amber-drive/35/",
+  "apn": "7514037",
+  "block": "7514",
+  "lot": "037",
+  "eas_baseid": "420372",
+  "coordinates": {
+    "lat": 37.745869,
+    "lng": -122.444088
+  },
+  "parcel": {
+    "year_built": 1964,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3184,
+    "building_area_sqft": 1785,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Diamond Heights",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 0035 AMBER               DR0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 861994,
+    "assessed_improvement_value": 327566,
+    "last_sale_date": "2023-10-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1964",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Diamond Heights Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1962–1965",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202509195751",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-09-19",
+      "status_date": "2025-12-04",
+      "estimated_cost": 31900,
+      "revised_cost": 31900,
+      "description": "reroofing- no hot works",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201708094330",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-08-09",
+      "status_date": "2018-01-31",
+      "estimated_cost": 32000,
+      "revised_cost": 32000,
+      "description": "revision to pa 2016-0224-0353 - structural changes on the roof, switch proposed location of sink and shower in master bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201602240353",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-02-24",
+      "status_date": "2018-01-31",
+      "estimated_cost": 50000,
+      "revised_cost": 76000,
+      "description": "the work consistes of: remodeling 2 bedrooms and 1 bathroom and the addition of 1 bedroom within (e) envelope. add skylight not visible from street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201402259278",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-02-25",
+      "status_date": "2014-12-11",
+      "estimated_cost": 18300,
+      "revised_cost": 18300,
+      "description": "replace glazing at entry. bedroom replace with alumnim sectional window in kind. u-factor .32",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9515433",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-09-19",
+      "status_date": "1995-09-26",
+      "estimated_cost": 6500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=AMBER&street_type=DR&address_number=35",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7514037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7514&lot=037",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7514037",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44408752774962%2037.74586860461408)%27)",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume M–O), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=819c20a033e71980c63a96c7fcf1503b3292220b4408abf97897f8fc58c05144&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1964",
+      "kind": "construction",
+      "description": "A residence designed by architect Gaylord “Gregory” Mull, who worked on the Diamond Heights Redevelopment Project.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ],
+  "building": {
+    "architect": "Gaylord L. (Gregory) Mull"
+  }
+}

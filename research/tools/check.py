@@ -5,6 +5,7 @@
     python3 research/tools/check.py --stats    # ...and print the yield so far
     python3 research/tools/check.py --report <findings-file>   # the PR body's table
     python3 research/tools/check.py --overlap <findings-file>  # facts the pages already carry
+    python3 research/tools/check.py --landed  <findings-file>  # published entries that changed nothing
 
 What it checks:
   * every dossier in research/sources/ has a row in research/SOURCES.md, and
@@ -706,6 +707,78 @@ def overlap(path: Path) -> None:
     print("  Read each one: decline it, or trim it to the part that is new.")
 
 
+def landed(path: Path) -> None:
+    """After publishing: did every "published" finding change its page?
+
+    "Published" is a claim about a page, and the cheapest way for it to be
+    false is a page that already held the same credit under a slightly
+    different spelling. The write guard sees a value, does nothing, and the
+    finding is marked published anyway — indistinguishable, afterwards, from a
+    fact that landed. One run produced four of these before a hand check found
+    them; the fix in every case is to decline the finding, or to trim the
+    description to the part the page lacked and say so in publish.note.
+
+    Deliberately not part of the always-on rule pass: most published findings
+    across the repo land as structured data — a historic_survey panel, a spec
+    row, a conflict sentence — rather than as their own description, so a
+    global version of this rule reports thousands of false positives and gets
+    ignored. Run it on the one file you just published.
+    """
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        err(str(path), f"--landed could not read the file: {exc}")
+        return
+
+    checked = missing = 0
+    noop: list[tuple[str, str, str]] = []
+    for finding in data.get("findings", []):
+        pub = finding.get("publish") or {}
+        if pub.get("status") != "published":
+            continue
+        res = finding.get("resolution") or {}
+        rel = (res.get("path") or "").strip("/")
+        if not rel:
+            continue
+        page = ROOT.parent / rel / "data.json"
+        if not page.exists():
+            missing += 1
+            continue
+        try:
+            doc = json.loads(page.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            missing += 1
+            continue
+        checked += 1
+
+        desc = (finding.get("description") or "").strip()
+        if desc and desc in json.dumps(doc, ensure_ascii=False):
+            continue
+        recorded = {str(v).strip() for k, v in (finding.get("extra") or {}).items()
+                    if k.endswith("_as_recorded") and v}
+        spec = {str(v).strip() for k, v in (doc.get("building") or {}).items()
+                if k in ("architect", "builder", "developer", "name")}
+        if recorded & spec:
+            continue
+        note = (pub.get("note") or "").lower()
+        if any(w in note for w in ("spec row", "survey block", "re-worded",
+                                   "reworded", "trimmed", "rewritten")):
+            continue
+        noop.append((finding.get("id", "?"), res.get("path", "?"), desc[:70]))
+
+    print(f"landed: {checked} published finding(s) checked against their pages"
+          + (f", {missing} page(s) not on disk" if missing else ""))
+    if not noop:
+        print("  every published finding left its description or a spec row on its page.")
+        return
+    print(f"  {len(noop)} finding(s) marked published left nothing on the page:")
+    for fid, page_path, text in noop:
+        print(f"    {fid}  {page_path}")
+        print(f"          {text}...")
+    print("  Decline each one, or trim its description to the part the page "
+          "lacked and say so in publish.note.")
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--stats", action="store_true", help="print the yield so far")
@@ -713,6 +786,8 @@ def main() -> int:
                     help="print one batch by neighborhood, as the PR body's table")
     ap.add_argument("--overlap", type=Path, metavar="FINDINGS",
                     help="report findings whose target page already says the same thing")
+    ap.add_argument("--landed", type=Path, metavar="FINDINGS",
+                    help="after publishing: report published findings that changed nothing")
     args = ap.parse_args()
 
     schema = json.loads(SCHEMA_PATH.read_text(encoding="utf-8"))
@@ -741,6 +816,10 @@ def main() -> int:
 
     if args.overlap:
         overlap(args.overlap)
+        print()
+
+    if args.landed:
+        landed(args.landed)
         print()
 
     if warnings:

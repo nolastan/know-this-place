@@ -12,6 +12,7 @@ The parcels on Sacramento Street documented here so far, from the city's address
 - [2201](2201/) — A 1928 condominium building whose 24 apartments are held as 24 separate parcels, four to a floor.
 - [2212](2212/) — A 1900 single-family house, with a kitchen remodel permitted in 1997.
 - [2224](2224/) — A 1900 single-family house, with garage work permitted in 2014.
+- [2230](2230/) — A 1900 15-unit apartment building, with reroofing permitted in 2003.
 - [2323](2323/) — A 1965 building, with a kitchen remodel permitted in 2024.
 - [2395](2395/) — A 1912 office building, with reroofing permitted in 2012.
 - [2409](2409/) — A 1900 3-unit apartment building, with reroofing permitted in 2025.

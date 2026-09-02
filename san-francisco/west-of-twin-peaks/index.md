@@ -11,10 +11,13 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [9th Avenue](9th-avenue/) — 1 building, built 1954; 1 in the Forest Hill Historic District.
 - [Casitas Avenue](casitas-avenue/) — 1 building, built 1953.
 - [Castenada Avenue](castenada-avenue/) — 1 building, built 1929; 1 in the Forest Hill Historic District.
+- [Darien Way](darien-way/) — 1 building; 1 in the Balboa Terrace Historic District.
 - [Edgehill Way](edgehill-way/) — 1 building, built 1970.
 - [El Verano Way](el-verano-way/) — 1 building, built 1926.
+- [Faxon Avenue](faxon-avenue/) — 1 building, built 1918.
 - [Frida Kahlo Way](frida-kahlo-way/) — 1 building.
 - [Funston Avenue](funston-avenue/) — 1 building, built 1936.
+- [Juanita Way](juanita-way/) — 1 building, built 1927.
 - [Junipero Serra Boulevard](junipero-serra-boulevard/) — 1 building, built 1920; 1 in the St. Francis Wood Historic District.
 - [Laguna Honda Boulevard](laguna-honda-boulevard/) — 1 building, built 1937; 1 in the Laguna Honda Historic District.
 - [Lansdale Avenue](lansdale-avenue/) — 2 buildings, built 1935–1936.
@@ -29,6 +32,8 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Molimo Drive](molimo-drive/) — 1 building, built 1949.
 - [Monterey Boulevard](monterey-boulevard/) — 1 building, built 1925; 1 in the St. Francis Wood Historic District.
 - [Ocean Avenue](ocean-avenue/) — 1 building, built 1922; 1 in the Ingleside Terrace Historic District.
+- [Pacheco Street](pacheco-street/) — 1 building, built 1917; 1 in the Forest Hill Historic District.
+- [Plymouth Avenue](plymouth-avenue/) — 1 building, built 1918.
 - [Portola Drive](portola-drive/) — 1 building, built 1955.
 - [Saint Francis Boulevard](saint-francis-boulevard/) — 1 building, built 1948; 1 in the St. Francis Wood Historic District.
 - [San Andreas Way](san-andreas-way/) — 1 building, built 1941; 1 in the St. Francis Wood Historic District.
@@ -39,11 +44,16 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [San Rafael Way](san-rafael-way/) — 1 building, built 1935; 1 in the St. Francis Wood Historic District.
 - [Santa Ana Avenue](santa-ana-avenue/) — 1 building, built 1949; 1 in the St. Francis Wood Historic District.
 - [Santa Clara Avenue](santa-clara-avenue/) — 1 building, built 1938; 1 in the St. Francis Wood Historic District.
+- [Santa Monica Way](santa-monica-way/) — 1 building, built 1918; 1 in the St. Francis Wood Historic District.
 - [Santa Paula Avenue](santa-paula-avenue/) — 1 building, built 1923; 1 in the St. Francis Wood Historic District.
+- [Sotelo Avenue](sotelo-avenue/) — 1 building, built 1914; 1 in the Forest Hill Historic District.
 - [Stonecrest Drive](stonecrest-drive/) — 2 buildings, built 1939–1941.
 - [Taraval Street](taraval-street/) — 3 buildings, built 1950.
 - [Teresita Boulevard](teresita-boulevard/) — 1 building, built 1951.
+- [Terrace Drive](terrace-drive/) — 1 building, built 1937; 1 in the St. Francis Wood Historic District.
 - [Ulloa Street](ulloa-street/) — 1 building, built 1938.
 - [West Portal Avenue](west-portal-avenue/) — 2 buildings, built 1935–1992.
+- [Westwood Drive](westwood-drive/) — 2 buildings, built 1917–1922.
 - [Winston Drive](winston-drive/) — 1 building, built 1900.
 - [Woodside Avenue](woodside-avenue/) — 1 building.
+- [Yerba Buena Avenue](yerba-buena-avenue/) — 1 building, built 1928; 1 in the St. Francis Wood Historic District.

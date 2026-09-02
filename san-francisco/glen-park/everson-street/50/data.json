@@ -1,0 +1,141 @@
+{
+  "address": "50 Everson Street, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/everson-street/50/",
+  "apn": "7542038",
+  "block": "7542",
+  "lot": "038",
+  "eas_baseid": "421064",
+  "coordinates": {
+    "lat": 37.738761,
+    "lng": -122.430032
+  },
+  "parcel": {
+    "year_built": 1981,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 3,
+    "lot_area_sqft": 11670,
+    "building_area_sqft": 2100,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Glen Park",
+    "analysis_neighborhood": "Glen Park",
+    "property_location_raw": "0000 0050 EVERSON             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 163242,
+    "assessed_improvement_value": 443926
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1981",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9907792",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-04-22",
+      "status_date": "2000-01-05",
+      "estimated_cost": 5500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9904160",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-03-04",
+      "status_date": "2000-01-19",
+      "estimated_cost": 6000,
+      "description": "repair only,contact inspc before proceeding w/const&sidewalk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9707663",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-04-29",
+      "status_date": "1997-07-07",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9705589",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-03-27",
+      "status_date": "1998-06-25",
+      "estimated_cost": 6000,
+      "description": "repair wooden decks on front of bldg & dryrot by front door",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9014345",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-07-20",
+      "status_date": "1990-12-24",
+      "estimated_cost": 3600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EVERSON&street_type=ST&address_number=50",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7542038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7542&lot=038",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7542038",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume P–R), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=37da3dd1abd97d61cd23d20a163f6d99f76a7aaf67f04eddf11f919d978aa651&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1980",
+      "kind": "construction",
+      "description": "Designed by architect Stephen Allen Roake.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ],
+  "building": {
+    "architect": "Stephen Allen Roake",
+    "completed_conflict": "The assessor's roll gives 1981; this address is recorded as built 1980."
+  }
+}

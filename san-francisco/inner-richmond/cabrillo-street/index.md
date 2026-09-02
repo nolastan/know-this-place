@@ -4,6 +4,7 @@ The parcels on Cabrillo Street documented here so far, from the city's address, 
 
 ## Documented so far
 
+- [435–437](435/) — A 1912 two-flat, with stair work permitted in 2019.
 - [525](525/) — A 1907 single-family house, with a kitchen and bathroom remodel permitted in 2002.
 - [856](856/) — A 1903 church, with window replacement permitted in 2014.
 

@@ -6,6 +6,7 @@ The parcels on Fillmore Street documented here so far, from the city's address, 
 
 - [55](55/) — A 1957 office building, with reroofing permitted in 2002.
 - [554](554/) — A 1900 church in the Hayes Valley Residential Historic District, with a seismic retrofit permitted in 2020.
+- [561–575](561/) — A 1904 8-unit building with a ground-floor store in the Alamo Square Historic District Extension, with reroofing permitted in 2007.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

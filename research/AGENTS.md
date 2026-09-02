@@ -199,6 +199,28 @@ live in the dossiers. **Add to this list** whenever a run discovers something a
 future run would otherwise repeat — that is what makes this module improve
 rather than just accumulate.
 
+- **"Published" is a claim about a page, and it can be false silently.** A
+  publisher that sets `building.architect` only if the field is empty does
+  nothing when the page already names the same person under another spelling —
+  "Chris McKeon" against "Christopher Dennis McKeon" — and the finding is marked
+  published anyway. Four entries in one run said published and had changed
+  nothing. **After writing the pages and before closing the books, run
+  `python3 research/tools/check.py --landed <findings-file>`**: it reports every
+  published finding whose page carries neither its description nor a spec row
+  naming anyone it records. Each one is a decline, or a description trimmed to
+  the part the page lacked with `publish.note` saying so.
+
+- **`--overlap`'s wording percentage is not the signal — the page is.** The
+  score compares content words, so a one-line credit scores about the same
+  against a page that already says exactly that as against a page that says
+  nothing of the kind: "Designed by architect Louis Mastropasqua" scored 50% in
+  both cases. Sorting by score and reading the top of the list misses the 40%
+  duplicates and wastes time on the 60% originals. Dump each flagged page's
+  existing `historical_record`, `building` and `sources` in one pass and decide
+  from that — on a citywide batch over a well-surveyed neighbourhood it is the
+  difference between 98 correct declines and a page that says the same thing
+  twice.
+
 - **A PDF's thin text layer is not the document's yield.** `pdftotext` returned
   841 lines from the 2004 sexual-identity subcultures statement and none of them
   were its two densest pages: both appendices are scanned images, and between

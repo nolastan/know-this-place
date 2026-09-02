@@ -5,6 +5,7 @@ The parcels on Turquoise Way documented here so far, from the city's address, as
 ## Documented so far
 
 - [44](44/) — A 1962 single-family house in the Diamond Heights Historic District, with window replacement permitted in 2000.
+- [48](48/) — A 1962 single-family house in the Diamond Heights Historic District, with window replacement permitted in 2011.
 - [52](52/) — A 1962 single-family house in the Diamond Heights Historic District, with reroofing permitted in 2025.
 - [88](88/) — A 1964 single-family house in the Diamond Heights Historic District, with deck work permitted in 2022.
 - [104](104/) — A 1962 single-family house in the Diamond Heights Historic District, with a kitchen remodel permitted in 1993.

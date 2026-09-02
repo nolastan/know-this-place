@@ -10,6 +10,7 @@ The parcels on Golden Gate Avenue documented here so far, from the city's addres
 - [133](133/) — A church in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 1999.
 - [134](134/) — A 1917 store building in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 2003.
 - [150](150/) — A 1912 building in the Uptown Tenderloin Historic District, with a kitchen remodel permitted in 2014.
+- [175](175/) — An 1899 church in the Uptown Tenderloin Historic District, with permit records from 2008 to 2026.
 - [177–191](177/) — A 1916 store building in the Uptown Tenderloin Historic District, with a kitchen and bathroom remodel permitted in 1984.
 - [240](240/) — A 1907 office building in the Uptown Tenderloin Historic District, with fire repair permitted in 1986.
 - [241–243](241/) — A 1916 store building in the Uptown Tenderloin Historic District, with permit records from 1989 to 2003.

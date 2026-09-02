@@ -103,6 +103,7 @@ second deliverable of every run, alongside the facts. See
 python3 research/tools/check.py [--stats]           # run before every commit
 python3 research/tools/check.py --report <findings-file>   # the PR body's table
 python3 research/tools/check.py --overlap <findings-file>  # facts the pages already carry
+python3 research/tools/check.py --landed <findings-file>   # published entries that changed nothing
 python3 research/tools/resolve_eas.py fetch|report|apply <findings-file>
 python3 scripts/validate.py                         # any run that touched a page
 python3 scripts/seed_pages.py seed-list --manifest research/manifests/<f>.json

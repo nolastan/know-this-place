@@ -5,6 +5,7 @@ The parcels on Baker Street documented here so far, from the city's address, ass
 ## Documented so far
 
 - [405](405/) — A 1904 single-family house in the NOPA Historic District, with a kitchen remodel permitted in 2002.
+- [543–555](543/) — A 1928 2-unit building in the NOPA Historic District, with reroofing permitted in 2020.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

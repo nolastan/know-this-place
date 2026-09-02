@@ -42,3 +42,4 @@ The city's Outer Richmond analysis neighborhood, running west from Park Presidio
 - [Geary Boulevard](geary-boulevard/) — 1 building, built 1919.
 - [La Playa](la-playa/) — 1 building, built 1984.
 - [Lake Street](lake-street/) — 1 building, built 1922.
+- [Shore View Avenue](shore-view-avenue/) — 1 building, built 1916.

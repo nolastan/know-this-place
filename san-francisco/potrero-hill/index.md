@@ -15,6 +15,7 @@ opened here in 1905.
 - [19th Street](19th-street/) — 1 building, built 1907.
 - [20th Street](20th-street/) — 2 buildings, built 1900–1950.
 - [22nd Street](22nd-street/) — 1 building, built 1915.
+- [25th Street](25th-street/) — 1 building, built 2006.
 - [Arkansas Street](arkansas-street/) — 1 building, built 1950; 1 in the Midcentury Recreation Historic District (Discontiguous).
 - [Carolina Street](carolina-street/) — 1 building, built 1985.
 - [Connecticut Street](connecticut-street/) — 2 buildings, built 1900–1906.

@@ -7,6 +7,8 @@ The parcels on Jackson Street documented here so far, from the city's address, a
 - [3108](3108/) — A 1916 single-family house, with a seismic retrofit permitted in 2014.
 - [3157](3157/) — A 1904 single-family house in the Presidio Heights Historic District Extension, with a rear addition permitted in 2021.
 - [3214](3214/) — A 1932 single-family house in the Presidio Heights Historic District, with an addition permitted in 1985.
+- [3320](3320/) — A 1900 single-family house in the Presidio Heights Historic District, with stair work permitted in 2000.
+- [3349–3351](3349/) — A 1908 2-unit tic building in the Presidio Heights Historic District, with a kitchen and bathroom remodel permitted in 2022.
 - [3410](3410/) — A 1923 single-family house in the Presidio Heights Historic District, with garage work permitted in 2011.
 - [3494](3494/) — A 1908 single-family house in the Presidio Heights Historic District, with a seismic retrofit permitted in 2012.
 - [3500](3500/) — A 1906 single-family house in the Presidio Heights Historic District, with an addition permitted in 2019.

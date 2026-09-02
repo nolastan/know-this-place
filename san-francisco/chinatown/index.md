@@ -4,6 +4,7 @@ The oldest Chinese community in North America, on the slopes above Portsmouth Sq
 
 ## Streets documented so far
 
+- [Battery Street](battery-street/) — 1 building, built 1989.
 - [Beckett Street](beckett-street/) — 2 buildings, built 1908–1922; 2 in the Chinatown Historic District.
 - [Broadway](broadway/) — 4 buildings, built 1907; 4 in the Jackson Square Historic District Extension.
 - [Clay Street](clay-street/) — 1 building, built 1900.
@@ -22,6 +23,7 @@ The oldest Chinese community in North America, on the slopes above Portsmouth Sq
 - [Pacific Avenue](pacific-avenue/) — 3 buildings, built 1950–1969.
 - [Powell Street](powell-street/) — 11 buildings, built 1907–1980; 1 in the Washington Square Historic District.
 - [Ross Alley](ross-alley/) — 2 buildings, built 1907–1908; 2 in the Chinatown Historic District.
+- [Sacramento Street](sacramento-street/) — 1 building, built 1908.
 - [Sansome Street](sansome-street/) — 2 buildings, built 1927–1930; 1 in the Jackson Square Historic District.
 - [Spofford Street](spofford-street/) — 5 buildings, built 1906–1908; 5 in the Chinatown Historic District.
 - [Stockton Street](stockton-street/) — 1 building, built 1911; 1 in the Chinatown Historic District.

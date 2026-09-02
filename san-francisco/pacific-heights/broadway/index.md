@@ -27,8 +27,11 @@ The parcels on Broadway documented here so far, from the city's address, assesso
 - [2400](2400/) — A 1906 single-family house in the Pacific Heights Historic District, with a bathroom remodel permitted in 2007.
 - [2423](2423/) — A 1906 single-family house, with plumbing work permitted in 2021.
 - [2470](2470/) — A 1910 single-family house in the Pacific Heights Historic District, with garage work permitted in 2016.
+- [2476–2478](2476/) — A 1917 single-family house in the Pacific Heights Historic District, with a seismic retrofit permitted in 2014.
+- [2480](2480/) — A 1907 single-family house in the Pacific Heights Historic District, with a rear addition permitted in 2000.
 - [2505](2505/) — A 1910 single-family house in the Pacific Heights Historic District, with garage work permitted in 2014.
 - [2512](2512/) — A 1966 single-family house in the Pacific Heights Historic District, with garage work permitted in 2013.
+- [2513](2513/) — A 1900 single-family house in the Pacific Heights Historic District, with foundation work permitted in 2026.
 - [2519](2519/) — A 1937 single-family house in the Pacific Heights Historic District, with facade work permitted in 2021.
 - [2550](2550/) — A 1908 single-family house in the Pacific Heights Historic District, with reroofing permitted in 1994.
 - [2574](2574/) — A 1932 single-family house in the Pacific Heights Historic District, with a rear addition permitted in 1992.

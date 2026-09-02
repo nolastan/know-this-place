@@ -95,6 +95,7 @@ Every residential parcel on 23rd Street that the city's address, assessor and pe
 - [3233–3235](3233/) — A 1924 two-flat, with a kitchen and bathroom remodel permitted in 2020.
 - [3241–3247](3241/) — A 1920 6-unit apartment building, with a seismic retrofit permitted in 2017.
 - [3254–3264](3254/) — A 1923 10-unit apartment building, with window replacement permitted in 2020.
+- [3261](3261/) — A 1900 church, with an addition permitted in 1986.
 - [3270–3274](3270/) — A 1913 6-unit apartment building, with a seismic retrofit permitted in 2018.
 - [3321–3325](3321/) — An 1890 3-unit tic building in the 23rd Street Shops and Rowhouses Historic District, with a kitchen and bathroom remodel permitted in 2019.
 - [3326](3326/) — A 1900 single-family house in the 23rd Street Shops and Rowhouses Historic District, with a seismic retrofit permitted in 2015.

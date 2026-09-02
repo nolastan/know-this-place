@@ -4,6 +4,7 @@ The parcels on Amber Drive documented here so far, from the city's address, asse
 
 ## Documented so far
 
+- [35](35/) — A 1964 single-family house in the Diamond Heights Historic District, with an addition permitted in 2016.
 - [166](166/) — A 1962 single-family house in the Diamond Heights Historic District, with reroofing permitted in 2019.
 - [242](242/) — A 1962 single-family house in the Diamond Heights Historic District, with reroofing permitted in 1990.
 - [311](311/) — A 1963 single-family house in the Diamond Heights Historic District, with facade work permitted in 2017.

@@ -8,6 +8,8 @@ The parcels on 29th Avenue documented here so far, from the city's address, asse
 - [1935](1935/) — A 1939 single-family house.
 - [2075](2075/) — A 1939 single-family house, with a kitchen and bathroom remodel permitted in 2024.
 - [2083](2083/) — A 1939 single-family house, with a bathroom remodel permitted in 2025.
+- [2132](2132/) — A 1939 single-family house, with one permit record from 1999.
+- [2144](2144/) — A 1939 single-family house, with one permit record from 1996.
 - [2163](2163/) — A 1936 single-family house in the Rivera Heights Historic District, with reroofing permitted in 2004.
 - [2214](2214/) — A 1937 single-family house, with permit records from 1989 to 2000.
 - [2257](2257/) — A 1926 single-family house, with window replacement permitted in 2025.

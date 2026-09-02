@@ -14,6 +14,7 @@ The parcels on Vallejo Street documented here so far, from the city's address, a
 - [2419](2419/) — A 1904 single-family house, with a kitchen and bathroom remodel permitted in 1989.
 - [2430](2430/) — A 1905 single-family house, with a rear addition permitted in 2013.
 - [2440](2440/) — A 1921 single-family house, with an addition permitted in 2012.
+- [2530](2530/) — A 1925 single-family house in the Pacific Heights Historic District, with reroofing permitted in 2009.
 - [2636](2636/) — A 1900 single-family house in the Pacific Heights Historic District, with deck work permitted in 2013.
 - [2720](2720/) — A 1910 single-family house in the Pacific Heights Historic District, with deck work permitted in 2018.
 - [2730](2730/) — A 1910 single-family house in the Pacific Heights Historic District, with deck work permitted in 2015.

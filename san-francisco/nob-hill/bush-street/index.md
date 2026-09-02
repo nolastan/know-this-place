@@ -11,6 +11,7 @@ The parcels on Bush Street documented here so far, from the city's address, asse
 - [845](845/) — A 1915 hotel in the Lower Nob Hill Apartment Hotel Historic District, with deck work permitted in 1985.
 - [846](846/) — A 1917 32-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with fire repair permitted in 1989.
 - [850–856](850/) — A 1922 store building in the Lower Nob Hill Apartment Hotel Historic District, with a bathroom remodel permitted in 1987.
+- [863](863/) — A 1911 hotel in the Lower Nob Hill Apartment Hotel Historic District, with a bathroom remodel permitted in 2017.
 - [875](875/) — A 1921 26-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with reroofing permitted in 2011.
 - [878–884](878/) — A 1917 18-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with fire repair permitted in 1995.
 - [883–895](883/) — A 1923 70-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with a bathroom remodel permitted in 2022.

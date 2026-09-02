@@ -13,6 +13,7 @@ The parcels on 10th Avenue documented here so far, from the city's address, asse
 - [438–440](438/) — A 1916 three-flat, with a kitchen remodel permitted in 2001.
 - [594](594/) — A 1910 single-family house in the Richmond Heights Historic District, with deck work permitted in 2007.
 - [738](738/) — A 1912 single-family house in the Inner Richmond Nelson Historic District, with a rear addition permitted in 2017.
+- [798](798/) — A 1910 single-family house in the Inner Richmond Nelson Historic District, with a kitchen remodel permitted in 2008.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

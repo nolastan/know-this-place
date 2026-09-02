@@ -28,6 +28,7 @@ Every residential parcel on 16th Street that the city's address, assessor and pe
 - [3000](3000/) — A 1910 bank building, with stair work permitted in 2015.
 - [3024–3030](3024/) — A 1909 store building, with stair work permitted in 2000.
 - [3032–3036](3032/) — A 1907 hotel, with fire repair permitted in 2022.
+- [3040–3052](3040/) — A 1909 hotel, with a seismic retrofit permitted in 1995.
 - [3043](3043/) — A 1986 28-unit apartment building.
 - [3055–3061](3055/) — A 1909 hotel, with a kitchen remodel permitted in 2022.
 - [3065–3069](3065/) — A 1909 three-flat, with stair work permitted in 2016.
