@@ -5,6 +5,7 @@ The parcels on Pine Street documented here so far, from the city's address, asse
 ## Documented so far
 
 - [1525](1525/) — A 1937 store building, with foundation work permitted in 2015.
+- [1836](1836/) — A 1906 single-family house, with foundation work permitted in 2011.
 - [1844–1848](1844/) — A 1900 2-unit apartment building, with a rear addition permitted in 1991.
 - [1881](1881/) — A 1937 church in the Japantown Community & Cultural Historic District, with reroofing permitted in 2017.
 - [1911](1911/) — A school building in the Japantown Community & Cultural Historic District, with a kitchen remodel permitted in 2019.

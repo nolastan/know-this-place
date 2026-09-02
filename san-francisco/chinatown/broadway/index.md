@@ -11,6 +11,7 @@ The parcels on Broadway documented here so far, from the city's address, assesso
 - [601–619](601/) — A 1913 hotel in the Chinatown Historic District, with a vertical addition permitted in 1996.
 - [637–641](637/) — A 1907 hotel, with reroofing permitted in 1994.
 - [644](644/) — A 1985 store building, with stair work permitted in 2015.
+- [660](660/) — A 1963 hotel, with stair work permitted in 2014.
 - [673–675](673/) — A 1911 store building, with reroofing permitted in 2022.
 - [679–681](679/) — A 1907 store building, with an addition permitted in 2021.
 - [683–691](683/) — A 1907 hotel, with reroofing permitted in 2004.

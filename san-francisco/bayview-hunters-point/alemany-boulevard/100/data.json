@@ -1,0 +1,101 @@
+{
+  "address": "100 Alemany Boulevard, San Francisco, CA 94110",
+  "path": "/san-francisco/bayview-hunters-point/alemany-boulevard/100/",
+  "apn": "5733A001",
+  "block": "5733A",
+  "lot": "001",
+  "eas_baseid": "505785",
+  "coordinates": {
+    "lat": 37.735935,
+    "lng": -122.409598
+  },
+  "parcel": {
+    "year_built": 1950,
+    "stories": 1,
+    "lot_area_sqft": 5925,
+    "use": "Commercial Misc",
+    "property_class": "GARAGE",
+    "construction_type_code": "D",
+    "zoning": "NCS",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Bernal Heights",
+    "property_location_raw": "0000 0100 ALEMANY             BL0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1950",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M1235427",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-01-28",
+      "status_date": "2025-02-05",
+      "revised_cost": 419,
+      "description": "per pa #202501148297, add address to apn 5733a/001 for 100 alemany blvd per pim.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202501148297",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-01-14",
+      "status_date": "2025-05-01",
+      "estimated_cost": 85000,
+      "revised_cost": 85000,
+      "description": "100 alemany bl: alemany farmers market - administration building only - reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALEMANY&street_type=BLVD&address_number=100",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5733A001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5733A&lot=001",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5733A001",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "counterculture-context-statement",
+      "name": "Donna Graves for San Francisco Heritage, Citywide Historic Context Statement for Counterculture (1965–1975), San Francisco Planning Department, adopted 17 July 2024",
+      "query": "https://citypln-m-extnl.sfgov.org/external/link.ashx?Action=Download&ObjectVersion=-1&vault=%7bA4A7DACD-B0DC-4322-BD29-F6F07103C6E0%7d&objectGUID=%7bDC6FBAEE-1976-4521-BA57-B785DA6A3139%7d&fileGUID=%7b61B489B3-3380-49E7-BA11-48C7C2C80301%7d",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "retrieved": "2026-09-01"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1969",
+      "kind": "site history",
+      "description": "The Alemany Farmers' Market, set up by the city at the end of the Second World War, was an important source of cheap fresh produce for the communal food co-ops, whose members pressed local growers towards organic methods.",
+      "source": "counterculture-context-statement"
+    }
+  ]
+}

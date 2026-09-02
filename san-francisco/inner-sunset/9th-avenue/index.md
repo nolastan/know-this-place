@@ -34,6 +34,7 @@ The parcels on Ninth Avenue documented here so far, from the city's address, ass
 - [1456](1456/) — A 1906 three-flat, with deck work permitted in 2006.
 - [1457](1457/) — A 1907 2-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2020.
 - [1459–1461](1459/) — A 1899-1900 late Queen Anne, built by R. J. Pavert.
+- [1465](1465/) — A 1908 single-family house, with a bathroom remodel permitted in 2011.
 - [1481–1483](1481/) — A 1902 shingled cottage, built by Arthur E. Johnson.
 - [1485–1487](1485/) — A 1900 late Queen Anne, built by R. J. Pavert.
 - [1500–1506](1500/) — A building with no recorded construction year.
