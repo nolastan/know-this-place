@@ -19,6 +19,8 @@ The parcels on 31st Avenue documented here so far, from the city's address, asse
 - [1681](1681/) — A 1932 single-family house in the Picturesque Period Revival Tracts Historic District, with one permit record from 2012.
 - [1687](1687/) — A 1932 single-family house in the Picturesque Period Revival Tracts Historic District, with window replacement permitted in 2019.
 - [1767](1767/) — A 1940 single-family house, with deck work permitted in 2018.
+- [2127](2127/) — A 1939 single-family house, with reroofing permitted in 2011.
+- [2143](2143/) — A 1939 single-family house, with garage work permitted in 2011.
 - [2390–2394](2390/) — A 1977 14-unit building with a ground-floor store, with a seismic retrofit permitted in 2017.
 - [2566](2566/) — A 1908 single-family house, with reroofing permitted in 2003.
 - [2570](2570/) — A 1906 single-family house, with a kitchen and bathroom remodel permitted in 2022.

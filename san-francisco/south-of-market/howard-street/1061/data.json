@@ -1,0 +1,145 @@
+{
+  "address": "1061 Howard Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/howard-street/1061/",
+  "apn": "3731072",
+  "block": "3731",
+  "lot": "072",
+  "eas_baseid": "365433",
+  "coordinates": {
+    "lat": 37.778402,
+    "lng": -122.408391
+  },
+  "parcel": {
+    "year_built": 1925,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 4,
+    "lot_area_sqft": 6512,
+    "building_area_sqft": 7765,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "SLR",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "1063 1061 HOWARD              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2410957,
+    "assessed_improvement_value": 602731,
+    "last_sale_date": "2000-11-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Western SOMA Light Industrial and Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1936",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "M15404",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-01-30",
+      "status_date": "2002-01-30",
+      "revised_cost": 80000,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200011145616",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-11-14",
+      "status_date": "2001-09-27",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200010203675",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-10-20",
+      "status_date": "2001-10-10",
+      "estimated_cost": 80000,
+      "revised_cost": 80000,
+      "description": "modify the front entrance to comply with h/c requirement. install two new h/c toilet rm. level (e)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9110351",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-06-14",
+      "status_date": "1992-02-03",
+      "estimated_cost": 3800,
+      "description": "parapet reinforcing as per plan",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HOWARD&street_type=ST&address_number=1061",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3731072&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3731&lot=072",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3731072",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40839089509262%2037.778401574398906)%27)",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume V–Z), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=2c8863b8cbd143e02858494de6865a67321b2a33effe8b9c9dac8ccf3193d4a3&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1935",
+      "kind": "alteration",
+      "description": "Altered by builder George Wagner of the Wagner Construction Company.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ],
+  "building": {}
+}

@@ -25,6 +25,7 @@ The parcels on Leavenworth Street documented here so far, from the city's addres
 - [930](930/) — A 1911 12-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with a seismic retrofit permitted in 1999.
 - [1201–1219](1201/) — A 1908 16-unit apartment building, with a seismic retrofit permitted in 2016.
 - [1300](1300/) — A 1914 10-unit apartment building, with a kitchen and bathroom remodel permitted in 2009.
+- [1400](1400/) — A 1924 12-unit apartment building in the San Francisco Cable Car Historic District, with a kitchen remodel permitted in 2002.
 - [1418](1418/) — A 1907 11-unit apartment building, with a kitchen and bathroom remodel permitted in 2026.
 
 Pages are generated from the DataSF datasets listed in each page's

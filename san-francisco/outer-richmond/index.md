@@ -26,6 +26,7 @@ The city's Outer Richmond analysis neighborhood, running west from Park Presidio
 - [33rd Avenue](33rd-avenue/) — 2 buildings, built 1939–1949.
 - [34th Avenue](34th-avenue/) — 1 building, built 1900.
 - [35th Avenue](35th-avenue/) — 2 buildings, built 1911–1987.
+- [36th Avenue](36th-avenue/) — 1 building, built 1962.
 - [37th Avenue](37th-avenue/) — 4 buildings, built 1914–1925.
 - [38th Avenue](38th-avenue/) — 1 building.
 - [40th Avenue](40th-avenue/) — 1 building, built 1924.
@@ -42,4 +43,5 @@ The city's Outer Richmond analysis neighborhood, running west from Park Presidio
 - [Geary Boulevard](geary-boulevard/) — 1 building, built 1919.
 - [La Playa](la-playa/) — 1 building, built 1984.
 - [Lake Street](lake-street/) — 1 building, built 1922.
+- [Point Lobos Avenue](point-lobos-avenue/) — 1 building, built 1900.
 - [Shore View Avenue](shore-view-avenue/) — 1 building, built 1916.

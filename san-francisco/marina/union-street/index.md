@@ -31,6 +31,7 @@ The parcels on Union Street documented here so far, from the city's address, ass
 - [2526](2526/) — A 1902 single-family house in the Cow Hollow First Bay Tradition Historic District, with chimney work permitted in 1995.
 - [2651](2651/) — A 1965 building in the Cow Hollow First Bay Tradition Historic District, with a kitchen remodel permitted in 1989.
 - [2653](2653/) — A 1965 building in the Cow Hollow First Bay Tradition Historic District, with window replacement permitted in 2022.
+- [2728](2728/) — A 1910 2-unit apartment building in the Cow Hollow First Bay Tradition Historic District, with a dormer permitted in 2020.
 - [2730](2730/) — A 1919 single-family house in the Cow Hollow First Bay Tradition Historic District, with a bathroom remodel permitted in 2011.
 - [2827](2827/) — A 1914 single-family house in the Cow Hollow First Bay Tradition Historic District, with a rear addition permitted in 1988.
 

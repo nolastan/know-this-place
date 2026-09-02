@@ -206,6 +206,7 @@ Every residential parcel on Guerrero Street that the city's address, assessor an
 - [1044–1048](1044/) — A 1907 three-flat, with a kitchen remodel permitted in 2011.
 - [1050–1054](1050/) — A 1902 three-flat, with a kitchen and bathroom remodel permitted in 2003.
 - [1056–1058](1056/) — A 1900 two-flat, with foundation work permitted in 2008.
+- [1066–1068](1066/) — A 2010 building, with permit records from 2007 to 2009.
 - [1076](1076/) — A 1904 single-family house, with an addition permitted in 2012.
 - [1105–1109](1105/) — A 1908 6-unit apartment building in the Horner's Addition East Historic District, with one permit record from 2022.
 - [1116–1120](1116/) — A 1904 three-flat, with stair work permitted in 2008.

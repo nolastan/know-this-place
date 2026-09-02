@@ -18,6 +18,7 @@ The parcels on Clay Street documented here so far, from the city's address, asse
 - [3934](3934/) — A 1914 building in the Presidio Heights Historic District, with a kitchen and bathroom remodel permitted in 2019.
 - [3945](3945/) — A 1912 single-family house in the Presidio Heights Historic District, with reroofing permitted in 2017.
 - [3962](3962/) — A 1900 single-family house in the Presidio Heights Historic District, with garage work permitted in 2021.
+- [3980](3980/) — A 1912 single-family house in the Presidio Heights Historic District, with an addition permitted in 2011.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

@@ -17,7 +17,12 @@ The parcels on 32nd Avenue documented here so far, from the city's address, asse
 - [1690](1690/) — A 1937 single-family house in the Mediterranean Revival Tracts Historic District, with reroofing permitted in 2015.
 - [2129](2129/) — A 1938 single-family house, with garage work permitted in 2015.
 - [2137](2137/) — A 1938 single-family house, with a bathroom remodel permitted in 1996.
+- [2150](2150/) — A 1936 single-family house in the Picturesque Period Revival Tracts Historic District, with window replacement permitted in 1989.
+- [2154](2154/) — A 1936 single-family house in the Picturesque Period Revival Tracts Historic District, with reroofing permitted in 2011.
+- [2158](2158/) — A 1935 single-family house in the Picturesque Period Revival Tracts Historic District.
+- [2162](2162/) — A 1935 single-family house in the Picturesque Period Revival Tracts Historic District, with a bathroom remodel permitted in 2019.
 - [2166](2166/) — A 1935 single-family house in the Picturesque Period Revival Tracts Historic District, with reroofing permitted in 2019.
+- [2170](2170/) — A 1935 single-family house in the Picturesque Period Revival Tracts Historic District, with a kitchen and bathroom remodel permitted in 2009.
 - [2191](2191/) — A 1933 single-family house in the Picturesque Period Revival Tracts Historic District, with a bathroom remodel permitted in 2023.
 - [2211](2211/) — A 1931 single-family house, with garage work permitted in 2010.
 - [2219](2219/) — A 1933 single-family house, with reroofing permitted in 1990.

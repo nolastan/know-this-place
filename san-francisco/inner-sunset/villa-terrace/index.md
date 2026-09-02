@@ -4,6 +4,7 @@ The parcels on Villa Terrace documented here so far, from the city's address, as
 
 ## Documented so far
 
+- [1](1/) — A 1982 single-family house, with an addition permitted in 2005.
 - [65](65/) — A 1951 single-family house, with a kitchen remodel permitted in 2005.
 
 Pages are generated from the DataSF datasets listed in each page's

@@ -10,6 +10,7 @@ The parcels on Clement Street documented here so far, from the city's address, a
 - [2032–2036](2032/) — A 2017 3-unit apartment building, with garage work permitted in 2010.
 - [2227–2229](2227/) — A 1906 2-unit building with a ground-floor store, with reroofing permitted in 2002.
 - [2415–2419](2415/) — A 1900 4-unit building with a ground-floor store, with stair work permitted in 2015.
+- [3115–3117](3115/) — A 1908 3-unit building with a ground-floor store, with permit records from 1982 to 2024.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

@@ -12,6 +12,7 @@ The parcels on Turk Street documented here so far, from the city's address, asse
 - [130–132](130/) — A 1923 store building in the Uptown Tenderloin Historic District, with garage work permitted in 2006.
 - [133–145](133/) — A 1922 store building in the Uptown Tenderloin Historic District, with permit records from 1990 to 2002.
 - [140](140/) — A 1907 hotel in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 2001.
+- [150–152](150/) — A 1922 garage in the Uptown Tenderloin Historic District, with reroofing permitted in 1992.
 - [162–166](162/) — A 1906 hotel in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 2001.
 - [180–194](180/) — A 1926 134-unit apartment building in the Uptown Tenderloin Historic District, with a kitchen remodel permitted in 2003.
 - [240–242](240/) — A 2008 113-unit apartment building in the Uptown Tenderloin Historic District, with electrical work permitted in 2026.

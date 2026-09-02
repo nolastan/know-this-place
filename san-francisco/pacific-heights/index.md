@@ -35,3 +35,4 @@ An affluent district on the ridge north of Japantown, known for large houses and
 - [Van Ness Avenue](van-ness-avenue/) — 6 buildings, built 1917–1988.
 - [Washington Street](washington-street/) — The Spreckels Mansion, an Article 10 individual landmark.
 - [Webster Street](webster-street/) — 1 building, built 1905.
+- [Wilmot Street](wilmot-street/) — 1 building, built 1905.

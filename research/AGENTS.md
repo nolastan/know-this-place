@@ -585,6 +585,55 @@ rather than just accumulate.
   just wrote, and test against the raw permit text rather than the tool's own
   flags.*
 
+- **"Rejected, not resolved" for a demolished building cannot be automated, and
+  trying it showed why.** The rule is right and the tooling gap was real, so a
+  run taught `resolve_eas.py` to reject any finding whose record marks the
+  building gone — then ran it over every findings file in the repo before
+  trusting it. A regex over any `*_as_recorded` field would have rejected
+  **fourteen correctly published findings**, because the thing that came down is
+  usually not this building: the *first* St. Francis Hotel of 1904, one academic
+  building of a campus, "demolished except for vertical sign", "largely destroyed
+  in the Great 1906 Earthquake". Narrowing to a bare marker in
+  `status_as_recorded` still rejected the **Swedenborgian Church**, which two
+  volumes of the professionals biographies mark demolished and which stands,
+  landmarked, at 3200 Washington Street. So the tool raises and the person
+  decides: `report` now prints every demolition marking in its own section,
+  split into stated-plainly and mentioned-in-passing, and `decide()` changes
+  nothing. *Before wiring a rule into a tool, run it over every findings file in
+  the repo and read what it would have changed — a rule that is right about the
+  general case can be wrong about a source that is wrong about itself.*
+
+- **A source can name a well-known institution and give the address of a
+  different building of the same name.** A citywide biography credits Gilbert
+  Stanley Underwood with "US Mint, 88 5th Street, 1935-1937". 88 Fifth Street is
+  the **Old Mint of 1874** by Alfred B. Mullet — extant, landmarked, already a
+  page here — and the Mint Underwood supervised in the 1930s is a different
+  building elsewhere in the city. EAS matched, the parcel was live, the roll year
+  agreed with nothing in particular, and no check in the pipeline objected: the
+  address is real, it is simply not this building's. **When a finding names an
+  institution rather than a street number alone, ask whether that institution was
+  at that address on that date** — an institution that moved takes its name with
+  it, and every downstream tool knows only that the number exists.
+
+- **When a building has been moved, the fact belongs to the parcel it stands on
+  now.** The Englander House was built at 807 Franklin Street in 1880 and rolled
+  to 635 Fulton Street in February 2021; the source prints both addresses. The
+  construction credit was published at 635 Fulton with the original address
+  stated in the sentence, because publishing at 807 Franklin would hang an 1880
+  house on whatever occupies that lot today. This is the Russian Hill
+  "site of today's #N" rule inverted, and it has the same shape: *the parcel that
+  carries the building wins over the parcel that carries the old number.*
+
+- **A locator computed by searching a quoted span silently falls back to page 1.**
+  A generator that finds each finding's page by looking its `raw.text` up in the
+  extracted pages returns nothing when the quoted sentence wrapped a line break,
+  and a naive `hits[0] if hits else 1` writes `p. 1` into the citation — ten of
+  them in one run, on a source where page 1 is the cover. Nothing downstream
+  checks a locator, and a wrong page is exactly the "citation resolves" defect
+  step 5 exists to catch. *Normalize whitespace before the lookup, fall back to a
+  short distinctive key such as the address rather than to a constant, and fail
+  loudly when no page matches.*
+
 - **A month-precision date printed raw on 68 pages, unnoticed.** The timeline
   formatted a full ISO date into "August 24, 1896" and left everything else
   alone, so a source that knows the month but not the day — a directory issue,

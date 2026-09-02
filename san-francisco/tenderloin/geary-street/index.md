@@ -12,6 +12,7 @@ The parcels on Geary Street documented here so far, from the city's address, ass
 - [468](468/) — A 1920 hotel in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 2002.
 - [490–498](490/) — A 1912 hotel in the Kearny-Market-Mason-Sutter Conservation District, with an addition permitted in 1985.
 - [491–499](491/) — A 1913 hotel in the Kearny-Market-Mason-Sutter Conservation District, with reroofing permitted in 2018.
+- [550](550/) — A 1929 hotel in the Uptown Tenderloin Historic District, with a bathroom remodel permitted in 2002.
 - [580–598](580/) — A 1913 hotel, with plumbing work permitted in 2014.
 - [600–606](600/) — A 1908 35-unit apartment building, with a kitchen and bathroom remodel permitted in 2024.
 - [608–610](608/) — A 1907 hotel, with a bathroom remodel permitted in 2024.
