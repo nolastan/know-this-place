@@ -213,8 +213,11 @@ def addresses_in(text: str, streets: set[str], pages: dict) -> list[dict]:
         if key in seen or bare in seen:
             # The same address, once with its street type and once without.
             for row in out:
-                if row["as_written"].lower() == bare and not row["page"]:
-                    row.update(as_written=written, page=pages.get(key))
+                if row["as_written"].lower() == bare:
+                    # Show the typed form the article used; keep the page the
+                    # untyped pass already found.
+                    row["as_written"] = written
+                    row["page"] = row["page"] or pages.get(key)
             continue
         seen.add(key)
         out.append({

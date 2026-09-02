@@ -129,6 +129,7 @@ Every residential parcel on Mission Street that the city's address, assessor and
 - [2748–2756](2748/) — A 1927 store building, with electrical work permitted in 2025.
 - [2790–2798](2790/) — A 1917 store building, with stair work permitted in 2021.
 - [2800](2800/) — A 1906 store building, with one permit record from 2003.
+- [2831](2831/) — A 1987 store building, with a kitchen remodel permitted in 1985.
 - [2840–2844](2840/) — A 1900 4-unit building with a ground-floor store, with reroofing permitted in 1993.
 - [2843–2849](2843/) — A 1904 6-unit apartment building, with dry-rot repair permitted in 2011.
 - [2852–2854](2852/) — A 1916 6-unit apartment building, with a vertical addition permitted in 2017.
