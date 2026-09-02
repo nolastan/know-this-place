@@ -1,0 +1,85 @@
+{
+  "source_id": "the-registry",
+  "batch": "2026-09-02",
+  "read_on": "2026-09-02",
+  "notes": "Two items queued, both read. Both are behind the subscription wall after the lede.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 2,
+    "mentions": 2,
+    "remaining": "Nothing outstanding on this batch.",
+    "note": "Both articles cut off mid-sentence at the paywall. One states its whole fact in the headline and the visible lede and is extracted on that basis, as 520 Geary was on 2026-08-16; the other does not."
+  },
+  "findings": [
+    {
+      "id": "2026-09-02-0001",
+      "date": "2026-09-02",
+      "date_precision": "day",
+      "kind": "sale",
+      "address_as_written": "146 Geary St.",
+      "street_number": "146",
+      "street_name": "GEARY",
+      "street_type": "ST",
+      "description": "Thor Equities bought this four-storey Union Square building for $20.5 million. The visible lede describes it as anchored by Bang & Olufsen's West Coast flagship; the buyer and the price are in the headline. The date of the transaction is behind the paywall, so the entry takes the article's date.",
+      "extra": {
+        "buyer": "Thor Equities",
+        "price_usd": 20500000,
+        "storeys_reported": 4,
+        "anchor_tenant": "Bang & Olufsen"
+      },
+      "citation": {
+        "label": "The Registry, “Thor Equities Buys San Francisco’s 146 Geary St. for $20.5MM, Doubling Down in Union Square,” 2 September 2026",
+        "url": "https://news.theregistrysf.com/thor-equities-buys-san-franciscos-146-geary-st-for-20-5mm-doubling-down-in-union-square/",
+        "locator": "headline and lede; the rest is behind a subscription wall"
+      },
+      "raw": {
+        "text": "A four-story Union Square building anchored by Bang & Olufsen's West Coast flagship has ch[anged hands]"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0309007",
+        "path": "/san-francisco/union-square/geary-street/146/",
+        "eas_address": "146 GEARY ST",
+        "method": "EAS exact match on 146 GEARY ST → parcel 0309007; sf-parcels has blklot 0309007 active, 146–146 GEARY; the 2025 roll records it as commercial retail, built 1907.",
+        "checked_on": "2026-09-02"
+      },
+      "publish": {
+        "status": "published",
+        "note": "The page already existed. Extracted from the headline and the visible lede, as 520 Geary was on 2026-08-16; the rest of the article is behind the subscription wall."
+      }
+    },
+    {
+      "id": "2026-09-02-0002",
+      "date": "2026-09-02",
+      "date_precision": "day",
+      "kind": "litigation",
+      "address_as_written": "600 Montgomery Street",
+      "street_number": "600",
+      "street_name": "MONTGOMERY",
+      "street_type": "ST",
+      "description": "Recorded so the hit is not read again. Deutsche Finance Group has sued the German pension fund BVK over a $2 billion US portfolio the headline says is anchored by the Transamerica Pyramid. The article stops mid-sentence at the paywall before it reaches the building, and the address hit at 600 Montgomery sits in the paywall notice rather than in the reporting.",
+      "citation": {
+        "label": "The Registry, “Deutsche Finance Sues BVK Over $2 Billion U.S. Portfolio Anchored by San Francisco’s 750,000 SQFT Transamerica Pyramid,” 2 September 2026",
+        "url": "https://news.theregistrysf.com/deutsche-finance-sues-bvk-over-2-billion-u-s-portfolio-anchored-by-san-franciscos-750000-sqft-transamerica-pyramid/",
+        "locator": "headline; the article cuts off at the paywall"
+      },
+      "raw": {
+        "text": "Deutsche Finance Group and its American subsidiary have hauled Germany's largest public pensio[n fund]"
+      },
+      "confidence": "low",
+      "publish": {
+        "status": "declined",
+        "note": "The same call as 499 Illinois Street on 2026-08-30: the paywall cuts in mid-sentence and the address hit sits on the cut rather than inside the story, so we cannot say from this source what the suit has to do with 600 Montgomery Street. A dispute between two investors over a portfolio is also not yet a fact about the building, whatever the outcome turns out to be."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0207032",
+        "path": "/san-francisco/chinatown/montgomery-street/600/",
+        "eas_address": "600 MONTGOMERY ST",
+        "method": "EAS exact match on 600 MONTGOMERY ST → parcel 0207032; sf-parcels has blklot 0207032 active, 600–600 MONTGOMERY; the 2025 roll records it as commercial office, built 1971.",
+        "checked_on": "2026-09-02"
+      }
+    }
+  ]
+}
