@@ -391,12 +391,19 @@ SF_PLACES = [
 # Street types as a headline writes them.
 STREET_TYPE = (r"(?:Street|St\.|Avenue|Ave\.?|Boulevard|Blvd\.?|Road|Rd\.?|Way|Place|Pl\.?|"
                r"Drive|Dr\.?|Terrace|Lane|Ln\.?|Alley|Court|Ct\.?|Plaza|Row|Steps|Stairway|Circle)")
+# A street type may end in a literal full stop, and `\b` after one can never
+# match: the dot is not a word character, so a boundary there needs a word
+# character next — and "St." is followed by a comma or a space every time. That
+# quietly cost every abbreviated address in the corpus. `(?!\w)` is the
+# boundary that was meant, and it still refuses "Avenues" and "Wayne".
+STREET_TYPE_END = r"(?!\w)"
 NUMBERED_ADDRESS = re.compile(
     r"\b(\d{1,5})[A-Za-z]?\s+((?:[A-Z][A-Za-z'\.]+|\d{1,3}(?:st|nd|rd|th))"
-    r"(?:\s+[A-Z][A-Za-z'\.]+){0,2})\s+" + STREET_TYPE + r"\b")
+    r"(?:\s+[A-Z][A-Za-z'\.]+){0,2})\s+" + STREET_TYPE + STREET_TYPE_END)
 NAMED_STREET = re.compile(
     r"\b((?:[A-Z][A-Za-z'\.]+|\d{1,3}(?:st|nd|rd|th))(?:\s+[A-Z][A-Za-z'\.]+){0,1})\s+"
-    + STREET_TYPE + r"\b")
+    + STREET_TYPE + STREET_TYPE_END)
+STREET_TYPE_NEXT = re.compile(STREET_TYPE + STREET_TYPE_END)
 
 # Story shapes that hang on a building. These are the ones that carry a street
 # number in the body even when the headline only names the business.
@@ -520,6 +527,10 @@ def bare_addresses(text: str, streets: set[str]):
             continue
         rest = text[m.end():m.end() + 40].lstrip()
         continues = bool(re.match(r"[A-Z][a-z]", rest))
+        if continues and STREET_TYPE_NEXT.match(rest):
+            # The capitalized word it runs into is the street type. "1825
+            # Mission St." is an address on a four-digit block, not a year.
+            continues = False
         if 1500 <= int(number) <= 2100 and continues:
             continue
         yield number, name, m
