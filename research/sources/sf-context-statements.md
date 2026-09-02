@@ -163,7 +163,7 @@ document you are about to mine.
   - Damon Scott for the Friends of 1800, *Sexing the City: The Development of
     Sexual Identity Based Subcultures in San Francisco, 1933–1979*, historic
     context statement, adopted 2004 (23 pp.), source id
-    `sexual-identity-context-statement`. Issue #64. Not in the M-Files vault: a
+    `sexual-identity-context-statement`. Issue #64, PR #209. Not in the M-Files vault: a
     plain PDF at
     `https://sfplanning.s3.amazonaws.com/archives/documents/6691-Sexual%20Identity%201933-1979.pdf`,
     which is both the fetch URL and the citation. Its own title page and PDF
@@ -173,12 +173,12 @@ document you are about to mine.
   - Donna Graves for San Francisco Heritage, *Citywide Historic Context
     Statement for Counterculture (1965–1975)*, Context: Cultural, adopted
     17 July 2024 (133 pp.), source id `counterculture-context-statement`. Issue
-    #68. Same M-Files vault, but served by the `link.ashx` download form rather
+    #68, PR #209. Same M-Files vault, but served by the `link.ashx` download form rather
     than a REST content path, and the download is 64 MB — `curl -o` to a file,
     not through a pipe. See "The counterculture statement" below.
   - San Francisco Planning Department, *LGBTQ+ Cultural Heritage Strategy*,
     August 2020 (56 pp.), source id — none; **nothing in it is citable at
-    address level.** Issue #65. Same M-Files vault, REST content path built
+    address level.** Issue #65, PR #209. Same M-Files vault, REST content path built
     from the `accesskey` on
     `https://sfplanning.org/project/lgbtq-cultural-heritage-strategy` —
     `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/c931015757ae47d251d562fee88c5dfa619620530829b1eb9e140440b375ac87/content`.
