@@ -104,6 +104,7 @@ line up.
 | Sanborn fire insurance maps | Building footprint, material, use and street number, by block, across decades. Not text-searchable anywhere. | LoC Sanborn collection, 40 SF volumes 1886–1950s. Images only — no OCR to mine | 2026-08-15 |
 | Pacific Coast Architecture Database (PCAD) | Per-building records: address, construction and demolition dates, architect, contractor, sourced narrative. | pcad.lib.washington.edu — but see the note: it ranks **first** for address queries, so it is a cross-check, not a target | 2026-08-15 |
 | California Digital Newspaper Collection (CDNC) | Holds *Daily Alta California* 1849–1891, filling the whole pre-1890 gap `loc-newspapers` leaves. | **Blocked** — the search endpoint sits behind a Cloudflare challenge | 2026-08-15 |
+| ~~Sunnyside History Project~~ | ~~A neighbourhood historian's archive of Sunnyside, a district the site has almost nothing on — house-by-house posts with build dates, architects and street numbers.~~ | **Retired — the operator has opted out of AI use.** `sunnysidehistory.org/robots.txt` carries an "AI Scrape Protect" block that names `anthropic-ai`, `ClaudeBot`, `ClaudeResearchBot`, `AnthropicBot`, `Claude-User` and `Claude-SearchBot` under `Disallow: /`, and every page repeats it in markup (`<meta name="robots" content="noai, nosummary, DisallowAITraining">`). Unblocking this is a person writing to the site and asking — see #203. | ~~2026-09-02~~ |
 | ~~McCord's Edwards Abstract from Records (1900–1931)~~ | ~~Abstracts of recorded property transfers, parcel by parcel.~~ | **Retired** — the entries are metes-and-bounds with no street number (`N Haight 131-6 W Gough W 27-6 x N 20`), the parties are individuals and barred by the privacy limits, and the OCR of the tabular pages is unusable. The only numbered addresses in a sampled 9 MB volume are the abstract company's own offices at 318 Pine and 210 Montgomery. | ~~2026-08-21~~ |
 | ~~*Tenant Times* (SF Tenants Union, 1979–1996)~~ | ~~Buildings named in eviction and rent-control coverage.~~ | **Retired** — 40 issues on the Internet Archive (`tenanttimes`); a sampled 1981 issue carries **no numbered street address at all**, and what the paper is about is the people in the buildings, which the privacy limits bar. | ~~2026-08-21~~ |
 | ~~SF Weekly archive~~ | ~~Alt-weekly coverage and listings at venue addresses.~~ | **Retired** — 451 issues on the Internet Archive (`sfweeklyarchive`), but the run starts in 2013 and SF Weekly is fully indexed on the open web. Low search-invisibility over a period the site can source elsewhere. | ~~2026-08-21~~ |
@@ -133,6 +134,35 @@ collection search (`mediatype:collection AND title:"San Francisco"`) returns
 One entry per lead marked `hold` above — what the triage pass actually found,
 with the sampled example that proves it carries numbered addresses with dates.
 Delete an entry when its lead is promoted; the dossier takes over from there.
+
+**Sunnyside History Project** (`sunnysidehistory.org`). Real, and on the four
+judgements it would rank high: a single-neighbourhood archive built by a local
+historian, covering a district with almost no coverage on this site, and the
+kind of per-house writing that carries a street number and a build year.
+
+It is retired anyway, and not on its merits. The site operator has posted an
+explicit opt-out for AI agents in both places an operator can post one:
+
+- `robots.txt` carries an **AI Scrape Protect** block — 50-odd user agents under
+  a single `Disallow: /`, including `anthropic-ai`, `ClaudeBot`,
+  `ClaudeResearchBot`, `AnthropicBot`, `Claude-User` and `Claude-SearchBot`.
+  General crawlers are still allowed, so this is a targeted refusal of exactly
+  the use this module would be making, not a blanket no-crawl.
+- Every page repeats it in markup: `<meta name="robots" content="noai,
+  nosummary, DisallowAITraining">`, plus `gptbot: disallow` and `noimageai`.
+
+Under "Corpora on disk" in [AGENTS.md](AGENTS.md) that is a limit to honour, and
+it binds the news module as well as this one: polling the site's feed is the
+same automated consumption by the same agent. **No corpus was fetched and no
+feed was added.** Three requests were made in total — `robots.txt`, the
+homepage, and the sitemap index — to establish the policy, which is what read
+it.
+
+What would unblock it is a person asking the operator for permission. That is
+#203, kept open and labelled `needs-human`. Nothing here should be revisited by
+an agent until that answer exists: the next pass will otherwise re-derive the
+opt-out from scratch and, worse, may not notice it, because `robots.txt` says
+`Allow: /` to `User-agent: *` sixty lines above the block that names us.
 
 **San Francisco environmental review documents.** The San Francisco Public
 Library's Internet Archive collection (`sanfranciscopubliclibrary`, 14,664

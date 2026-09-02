@@ -227,8 +227,12 @@ SOURCE_VOICE = re.compile(
 # Revival" names no source and still reads on the page as the document talking
 # about its own figures — there is no illustration on the page. It slipped past
 # the pattern above four times in one run because it needs no noun at all.
+# "photographed as an example of the neighbourhood's flats" is the same slip and
+# was not caught: it survived the first sweep in nine descriptions because the
+# verb list here was written from the four that happened to be in front of it.
 SOURCE_VOICE_PASSIVE = re.compile(
-    r"\b(?:illustrated|pictured|depicted|reproduced)\s+(?:above|below|here|opposite)?\s*as\b"
+    r"\b(?:illustrated|pictured|depicted|reproduced|photographed)\s+"
+    r"(?:above|below|here|opposite)?\s*as\b"
     r"|\bgiven\s+as\s+an\s+example\b|\bcaptioned\b", re.I)
 
 

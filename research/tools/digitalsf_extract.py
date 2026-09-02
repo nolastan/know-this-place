@@ -515,10 +515,51 @@ def business_names(title: str, address_span: str,
 
 
 # --------------------------------------------------------------------------- #
+# What a photograph in a collection *is*
+#
+# The description has to say who made the record and why, because that is the
+# fact the catalogue carries and it differs completely per collection: SFP 23
+# is the Assessor-Recorder photographing a building in order to tax it, SFP 22
+# is one commercial photographer's plate negatives, SFP 78 is a community
+# collecting project. Getting this from a hardcoded sentence — which is what
+# this tool did until the second collection was read — attributes every
+# photograph in the archive to the Assessor-Recorder.
+#
+# So: one entry per collection, added when that collection is read, and an
+# unknown collection is a hard stop rather than a default. A wrong attribution
+# on a page is far more expensive than an error message here.
+#
+# `{at}` is "at" or "at the location it records as"; `{display}` the address as
+# written; `{when}` the date phrase. Say what the record is, not where it is
+# held — the Sources footer is the attribution (RUNBOOK.md, "Rules that catch
+# publishers out").
+# --------------------------------------------------------------------------- #
+
+COLLECTION_VOICE = {
+    "SFP 23": ("The San Francisco Office of the Assessor-Recorder photographed "
+               "the property {at} {display} for tax assessment {when}."),
+}
+
+
+def voice_for(collection: str) -> str:
+    try:
+        return COLLECTION_VOICE[collection]
+    except KeyError:
+        sys.exit(
+            f"no description template for {collection!r}.\n"
+            "Add one to COLLECTION_VOICE in this file first: it says what a\n"
+            "photograph in this collection is and who made it, and there is no\n"
+            "safe default — falling back on another collection's sentence\n"
+            "attributes the whole batch to the wrong body. Known collections:\n"
+            + "".join(f"  {k}\n" for k in sorted(COLLECTION_VOICE)))
+
+
+# --------------------------------------------------------------------------- #
 # Building the findings
 # --------------------------------------------------------------------------- #
 
 def build(collection: str, batch: str):
+    voice = voice_for(collection)
     rows = list(records(collection))
     if not rows:
         sys.exit(f"no records matching {collection!r} under {CORPUS} — "
@@ -645,10 +686,8 @@ def build(collection: str, batch: str):
             when = f"in {date['date']}"
         else:
             when = f"at a date the archivist gives as {date['as_recorded']!r}"
-        subject = "at" if not unnumbered else "at the location it records as"
-        description = (f"The San Francisco Office of the Assessor-Recorder "
-                       f"photographed the property {subject} {display} for tax "
-                       f"assessment {when}.")
+        at = "at" if not unnumbered else "at the location it records as"
+        description = voice.format(at=at, display=display, when=when)
         if kept:
             description += (" The record names " + oxford(kept)
                             + " at the address.")
