@@ -12,6 +12,7 @@ The parcels on Sutter Street documented here so far, from the city's address, as
 - [1600–1610](1600/) — A 1918 22-unit apartment building, with reroofing permitted in 2001.
 - [1688](1688/) — A 1962 12-unit apartment building, with a kitchen and bathroom remodel permitted in 2017.
 - [1700](1700/) — A 1975 church, with a kitchen remodel permitted in 2017.
+- [1750](1750/) — A 1975 23-unit apartment building, with reroofing permitted in 2016.
 - [1830](1830/) — A 1932 office building, with an addition permitted in 2014.
 - [1840–1844](1840/) — An assessor class: vacant lot, with plumbing work permitted in 2024.
 - [1852](1852/) — A 1987 flats building, with an addition permitted in 1989.

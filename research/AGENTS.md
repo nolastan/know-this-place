@@ -199,6 +199,32 @@ live in the dossiers. **Add to this list** whenever a run discovers something a
 future run would otherwise repeat — that is what makes this module improve
 rather than just accumulate.
 
+- **A report that reads the page cannot tell your work from the last run's.**
+  `check.py --report` counted a page's current `unknowns` and
+  `building.completed_conflict` as the batch's own, so a digitalsf batch that
+  stated no conflicts at all opened its PR claiming five conflicts and four
+  disputed dates — all of them written months earlier by the context-statement
+  runs that had already documented those same buildings. The columns now
+  subtract what the page held before this batch's commits touched it, the way
+  *Pages created* and *Pages edited* already did. **Any per-batch count taken
+  from a page's current state is wrong on a page two sources have touched**, and
+  the more thoroughly the site is documented the more often that is every page.
+
+- **A `description` warning is not a page defect until you check the page.** The
+  source-voice sweep looked like 571 descriptions to rewrite and 571 pages to
+  re-render. It was 571 descriptions and **69 pages**: the rest were either
+  declined, or published into a *structured component* rather than prose — the
+  1990 UMB batch put all 343 of its into `historic_survey`, so its wording never
+  reached a page at all. **Size a description sweep by grepping the target pages
+  for the offending sentence, not by counting the warnings.** The two numbers
+  differed by eight-fold here, and the difference is the whole cost of the job.
+- **A phrasing check only catches the shapes its author had in front of them.**
+  `SOURCE_VOICE_PASSIVE` listed *illustrated, pictured, depicted, reproduced* and
+  missed *photographed as an example of the neighbourhood's flats* — nine
+  descriptions, published, that read exactly like the four it did catch. When you
+  fix a new shape of a known slip, **add it to the pattern in the same commit**,
+  or the next run rediscovers it by eye.
+
 - **"Published" is a claim about a page, and it can be false silently.** A
   publisher that sets `building.architect` only if the field is empty does
   nothing when the page already names the same person under another spelling —

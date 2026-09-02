@@ -1,0 +1,124 @@
+{
+  "address": "908 Steiner Street, San Francisco, CA 94117",
+  "path": "/san-francisco/western-addition/steiner-street/908/",
+  "apn": "0779017",
+  "block": "0779",
+  "lot": "017",
+  "eas_baseid": "288361",
+  "coordinates": {
+    "lat": 37.777961,
+    "lng": -122.433003
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 7,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 8,
+    "lot_area_sqft": 2712.5,
+    "building_area_sqft": 3600,
+    "lot_depth_ft": 8.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-4",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Western Addition",
+    "analysis_neighborhood": "Western Addition",
+    "property_location_raw": "0000 0908 STEINER             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 822893,
+    "assessed_improvement_value": 822893,
+    "last_sale_date": "2009-09-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Alamo Square Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1890–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201307303079",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-07-30",
+      "status_date": "2013-07-30",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "all work in basement - plywood added to existing exterior walls, repair raise floor plywood approx 200 sq ft basement, insulate basement.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9321034",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-11-30",
+      "status_date": "1994-09-26",
+      "estimated_cost": 2180,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=STEINER&street_type=ST&address_number=908",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0779017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0779&lot=017",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0779017",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43300340847075%2037.77796111916461)%27)",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "digitalsf-115350",
+      "name": "908 Steiner Street, 1960. San Francisco Redevelopment Agency Records (SFH 371), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/115350",
+      "label": "Redevelopment Agency Records (SFH 371), San Francisco Public Library",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1960",
+      "kind": "photograph",
+      "description": "The Redevelopment Agency photographed the property.",
+      "source": "digitalsf-115350"
+    }
+  ]
+}

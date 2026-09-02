@@ -455,8 +455,8 @@ def split_fragments(tail: str) -> list[str]:
     return parts
 
 
-def business_names(title: str, address_span: str,
-                   streets: list[str]) -> tuple[list[str], list[str]]:
+def business_names(title: str, address_span: str, streets: list[str],
+                   policy: str = "") -> tuple[list[str], list[str]]:
     """Split a title's tail into (firm names kept, fragments dropped).
 
     Default is to keep: a fragment left over after the address is removed is
@@ -510,8 +510,139 @@ def business_names(title: str, address_span: str,
                                      and not TRADING_TAIL.search(part)):
             dropped.append(part)
             continue
+        if policy == "named-buildings-only" and not is_named_building(part):
+            dropped.append(part)
+            continue
         kept.append(part)
     return kept, dropped
+
+
+# --------------------------------------------------------------------------- #
+# What a photograph in a collection *is*
+#
+# The description has to say who made the record and why, because that is the
+# fact the catalogue carries and it differs completely per collection: SFP 23
+# is the Assessor-Recorder photographing a building in order to tax it, SFP 22
+# is one commercial photographer's plate negatives, SFP 78 is a community
+# collecting project. Getting this from a hardcoded sentence — which is what
+# this tool did until the second collection was read — attributes every
+# photograph in the archive to the Assessor-Recorder.
+#
+# So: one entry per collection, added when that collection is read, and an
+# unknown collection is a hard stop rather than a default. A wrong attribution
+# on a page is far more expensive than an error message here.
+#
+# `{at}` is "at" or "at the location it records as"; `{display}` the address as
+# written; `{when}` the date phrase. Say what the record is, not where it is
+# held — the Sources footer is the attribution (RUNBOOK.md, "Rules that catch
+# publishers out").
+# --------------------------------------------------------------------------- #
+
+COLLECTION_VOICE = {
+    "SFP 23": ("The San Francisco Office of the Assessor-Recorder photographed "
+               "the property {at} {display} for tax assessment {when}."),
+    # Agency photography of the redevelopment project areas. Much of what it
+    # shows was cleared soon afterwards, so the date is doing real work here:
+    # it is often the last record of a building at that number.
+    "SFH 371": ("The San Francisco Redevelopment Agency photographed the "
+                "property {at} {display} {when}."),
+}
+
+
+# How much of a title's tail is a business name at all.
+#
+# SFP 23 titles are "address, shop sign" and the default — keep the leftover
+# fragment unless something says it is a person — is right for them. SFH 371's
+# are narrative captions: "1249 Scott Street home on dolly being pulled by
+# bulldozer". Run the default over those and 140 "firm names" come back, of
+# which most are caption prose ("home on dolly", "under construction",
+# "Adjacent") and four name individuals at public ceremonies, which the privacy
+# limits bar outright.
+#
+# So a caption collection uses `named-buildings-only`: keep a fragment only if
+# every word is capitalized, it carries no digits, and one of its capitalized
+# words is a building noun. That keeps Miyako Hotel, Woolf House Apartments and
+# St. Patrick's Catholic Church; it drops every person and every fragment of
+# caption. It also drops real names buried in lowercase prose ("Japantown
+# bakery Benkyodo Company"), and that trade is deliberate — under "The evidence
+# bar" scarcity raises the bar, and a false keep here is a privacy failure.
+COLLECTION_NAME_POLICY = {
+    "SFH 371": "named-buildings-only",
+}
+
+BUILDING_NOUN = {
+    "hotel", "apartment", "apartments", "house", "church", "school", "market",
+    "garage", "company", "galleria", "ywca", "ymca", "theatre", "theater",
+    "hall", "club", "restaurant", "cafe", "bakery", "hardware", "store",
+    "stores", "center", "centre", "building", "buildings", "tower", "inn",
+    "library", "temple", "mission", "bank", "works", "plant", "factory",
+    "warehouse", "terrace", "court", "plaza", "commons", "mall", "cathedral",
+    "synagogue", "hospital", "laundry", "cleaners", "pharmacy", "tavern",
+}
+SMALL_WORD = {"of", "the", "at", "and", "in", "on", "for", "de", "la", "du",
+              "des", "von", "van", "&", "-"}
+
+
+# A record whose subject is a person, with no street number in it, is a
+# photograph of people rather than of a place. It can never become a page fact
+# — no number, no page — so keeping it buys nothing and carries named
+# individuals into the repository, which "Privacy — hard limits" in the root
+# AGENTS.md bars at extraction time, not at publication. Detected by a MARC 600
+# personal-name subject or a personal title in the caption. Records that *do*
+# carry a street number are unaffected: their address is the fact, and the
+# name filter already keeps people out of `named_in_record`.
+PERSON_MARKER = re.compile(
+    r"\b(?:Mayor|Supervisor|Commissioner|Reverend|Rev\.|Miss|Mr\.|Mrs\.|Ms\.|"
+    r"Dr\.)\s+[A-Z]", re.I)
+
+
+def people_not_a_place(title: str, fields) -> bool:
+    return bool(every(fields, "600", "a")) or bool(PERSON_MARKER.search(title))
+
+
+# An event at a building is not the building's name.
+EVENT_TAIL = re.compile(r"\b(?:ceremony|opening|meeting|dedication|groundbreaking)$", re.I)
+
+
+def is_named_building(part: str) -> bool:
+    """A proper name for a building, not a scrap of caption and not a person."""
+    tokens = part.replace("&", " & ").split()
+    if not tokens or any(any(c.isdigit() for c in tok) for tok in tokens):
+        return False
+    if EVENT_TAIL.search(part.strip().rstrip(".")):
+        return False
+    # Removing the address from the middle of a fragment leaves two joining
+    # words back to back — "Building at 3rd and Howard" becomes "Building at
+    # and Howard" — which is a cross street, not a name.
+    lowered = [w.strip(".,").lower() for w in tokens]
+    if any(a in SMALL_WORD and b in SMALL_WORD
+           for a, b in zip(lowered, lowered[1:])):
+        return False
+    has_noun = False
+    for tok in tokens:
+        word = tok.strip(".,")
+        if not word:
+            continue
+        if word.lower() in SMALL_WORD:
+            continue
+        if not word[0].isupper():
+            return False
+        if word.lower().rstrip("'s") in BUILDING_NOUN or word.lower() in BUILDING_NOUN:
+            has_noun = True
+    return has_noun
+
+
+def voice_for(collection: str) -> str:
+    try:
+        return COLLECTION_VOICE[collection]
+    except KeyError:
+        sys.exit(
+            f"no description template for {collection!r}.\n"
+            "Add one to COLLECTION_VOICE in this file first: it says what a\n"
+            "photograph in this collection is and who made it, and there is no\n"
+            "safe default — falling back on another collection's sentence\n"
+            "attributes the whole batch to the wrong body. Known collections:\n"
+            + "".join(f"  {k}\n" for k in sorted(COLLECTION_VOICE)))
 
 
 # --------------------------------------------------------------------------- #
@@ -519,6 +650,8 @@ def business_names(title: str, address_span: str,
 # --------------------------------------------------------------------------- #
 
 def build(collection: str, batch: str):
+    voice = voice_for(collection)
+    policy = COLLECTION_NAME_POLICY.get(collection, "")
     rows = list(records(collection))
     if not rows:
         sys.exit(f"no records matching {collection!r} under {CORPUS} — "
@@ -544,8 +677,19 @@ def build(collection: str, batch: str):
 
         from_title = address_from_title(title)
         from_note = address_from_note(notes["address_note"]) if notes["address_note"] else None
+        # "Miss Chinatown 1967 Marilyn Lew" parses as number 1967 on a street
+        # called Marilyn Lew. The dossier's rule for this is that a street
+        # number equal to the record's own year is not an address; with no
+        # street type stated there is nothing else holding it up.
+        if (from_title and not from_title["street_type"]
+                and from_title["number"] == year_of(date)):
+            tally["street number is the record's year, not an address"] += 1
+            from_title = None
         addr = from_title or from_note
         unnumbered = ""
+        if not addr and people_not_a_place(title, f):
+            tally["people, not a place — skipped"] += 1
+            continue
         if not addr:
             tally["no street number"] += 1
             if notes["block"]:
@@ -584,7 +728,7 @@ def build(collection: str, batch: str):
         streets.append(addr["street_name"])
         if from_note:
             streets.append(from_note["street_name"])
-        kept, dropped = business_names(title, addr["as_written"], streets)
+        kept, dropped = business_names(title, addr["as_written"], streets, policy)
         kept_names += kept
         dropped_names += dropped
 
@@ -616,6 +760,8 @@ def build(collection: str, batch: str):
             extra["assessor_block_as_recorded"] = notes["block"]
         if notes["box"]:
             extra["archive_box"] = notes["box"]
+        if first(f, "490", "a"):
+            extra["archival_series"] = first(f, "490", "a")
         if first(f, "852", "c"):
             extra["shelf"] = first(f, "852", "c")
         if first(f, "300", "a"):
@@ -645,10 +791,8 @@ def build(collection: str, batch: str):
             when = f"in {date['date']}"
         else:
             when = f"at a date the archivist gives as {date['as_recorded']!r}"
-        subject = "at" if not unnumbered else "at the location it records as"
-        description = (f"The San Francisco Office of the Assessor-Recorder "
-                       f"photographed the property {subject} {display} for tax "
-                       f"assessment {when}.")
+        at = "at" if not unnumbered else "at the location it records as"
+        description = voice.format(at=at, display=display, when=when)
         if kept:
             description += (" The record names " + oxford(kept)
                             + " at the address.")

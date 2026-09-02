@@ -5,7 +5,13 @@ The parcels on Sutter Street documented here so far, from the city's address, as
 ## Documented so far
 
 - [1765](1765/) — A 1975 office building, with reroofing permitted in 2002.
+- [1771–1777](1771/) — A 1900 4-unit apartment building, with a bathroom remodel permitted in 2011.
+- [1781–1787](1781/) — A 1900 4-unit apartment building, with deck work permitted in 2015.
 - [1809](1809/) — A 1900 single-family house, with reroofing permitted in 1998.
+- [1811](1811/) — A 1900 single-family house, with foundation work permitted in 2009.
+- [1813–1815](1813/) — An 1876 building, with a bathroom remodel permitted in 2005.
+- [1821–1825](1821/) — A 1900 3-unit building with a ground-floor store, with a kitchen remodel permitted in 2015.
+- [1881](1881/) — A 1974 42-unit apartment building, with a kitchen and bathroom remodel permitted in 2025.
 - [1901–1945](1901/) — A 1978 72-unit apartment building, with window replacement permitted in 2026.
 - [1961–1969](1961/) — A 1900 12-unit building with a ground-floor store, with a kitchen remodel permitted in 2011.
 - [2135](2135/) — A 1906 church, with a seismic retrofit permitted in 2006.

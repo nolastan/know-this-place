@@ -227,8 +227,12 @@ SOURCE_VOICE = re.compile(
 # Revival" names no source and still reads on the page as the document talking
 # about its own figures — there is no illustration on the page. It slipped past
 # the pattern above four times in one run because it needs no noun at all.
+# "photographed as an example of the neighbourhood's flats" is the same slip and
+# was not caught: it survived the first sweep in nine descriptions because the
+# verb list here was written from the four that happened to be in front of it.
 SOURCE_VOICE_PASSIVE = re.compile(
-    r"\b(?:illustrated|pictured|depicted|reproduced)\s+(?:above|below|here|opposite)?\s*as\b"
+    r"\b(?:illustrated|pictured|depicted|reproduced|photographed)\s+"
+    r"(?:above|below|here|opposite)?\s*as\b"
     r"|\bgiven\s+as\s+an\s+example\b|\bcaptioned\b", re.I)
 
 
@@ -407,6 +411,24 @@ def stats(files: list[Path]) -> None:
               "declined.")
 
 
+def _page_before_batch(rel: str, batch_commits: set[str]) -> dict:
+    """The page's data.json as it stood before this batch's commits touched it."""
+    import subprocess
+    log = subprocess.run(["git", "log", "--format=%H", "--", rel],
+                         cwd=ROOT.parent, capture_output=True, text=True).stdout.split()
+    mine = [c for c in log if c in batch_commits]
+    if not mine:
+        return {}
+    blob = subprocess.run(["git", "show", f"{mine[-1]}^:{rel}"],
+                          cwd=ROOT.parent, capture_output=True, text=True)
+    if blob.returncode != 0:
+        return {}
+    try:
+        return json.loads(blob.stdout)
+    except json.JSONDecodeError:
+        return {}
+
+
 def report(path: Path) -> None:
     """One batch by neighborhood directory, in the PR body's Markdown.
 
@@ -455,14 +477,26 @@ def report(path: Path) -> None:
             ["git", "log", "--diff-filter=A", "--format=%H", "--", rel],
             cwd=ROOT.parent, capture_output=True, text=True).stdout.split()
         # Not committed yet, or added by one of this batch's own commits.
-        (created if not added or added[-1] in batch_commits else edited)[area] += 1
+        is_new = not added or added[-1] in batch_commits
+        (created if is_new else edited)[area] += 1
         try:
             page = json.loads((ROOT.parent / rel).read_text(encoding="utf-8"))
         except (OSError, json.JSONDecodeError):
             continue
-        conflicts[area] += len(page.get("unknowns") or [])
-        if ((page.get("building") or {}).get("completed_conflict")):
-            dates[area] += 1
+        # Count what THIS batch stated, not what the page happens to hold. A
+        # page other runs have already documented usually carries their
+        # conflicts too, and counting those credited one digitalsf batch with
+        # five conflicts and four disputed dates it had not written a word of.
+        # For a page the batch created, everything on it is the batch's; for a
+        # page it edited, subtract what was there before it touched it.
+        before_unknowns, before_dates = 0, 0
+        if not is_new:
+            prev = _page_before_batch(rel, batch_commits)
+            before_unknowns = len(prev.get("unknowns") or [])
+            before_dates = 1 if (prev.get("building") or {}).get("completed_conflict") else 0
+        conflicts[area] += max(0, len(page.get("unknowns") or []) - before_unknowns)
+        now_dates = 1 if (page.get("building") or {}).get("completed_conflict") else 0
+        dates[area] += max(0, now_dates - before_dates)
 
     areas = sorted(set(created) | set(edited) | set(facts) | set(declined),
                    key=lambda a: (-(created[a] + edited[a]), a))
@@ -751,8 +785,21 @@ def landed(path: Path) -> None:
             continue
         checked += 1
 
+        blob = json.dumps(doc, ensure_ascii=False)
+
         desc = (finding.get("description") or "").strip()
-        if desc and desc in json.dumps(doc, ensure_ascii=False):
+        if desc and desc in blob:
+            continue
+        # The page citing this finding's own record is proof the write landed,
+        # and it is a better signal than matching text: a publisher is supposed
+        # to trim the description for the page — the timeline already shows the
+        # date and the page is the address — so a source whose house style is a
+        # short page sentence fails the text test on every single entry. Both
+        # digitalsf batches did: 885 of 885 and 116 of 116 reported as no-ops,
+        # every one of them actually on its page. A check that cries wolf on a
+        # whole source teaches the next run to skip it.
+        cite = ((finding.get("citation") or {}).get("url") or "").strip()
+        if cite and cite in blob:
             continue
         recorded = {str(v).strip() for k, v in (finding.get("extra") or {}).items()
                     if k.endswith("_as_recorded") and v}
