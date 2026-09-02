@@ -507,6 +507,29 @@ def _year(value) -> int | None:
     return int(m.group(1)) if m else None
 
 
+def _proper_names(extra) -> set[str]:
+    """Business, organisation and building names a finding names in ``extra``.
+
+    These are the handles a page already uses when it carries the same fact from
+    another source. A leading article is dropped because sources disagree about
+    it, and anything under five characters is dropped because it produces
+    matches on ordinary words.
+    """
+    if not isinstance(extra, dict):
+        return set()
+    out: set[str] = set()
+    for key in ("business_name", "organisation", "building_name", "also_known_as"):
+        raw = extra.get(key)
+        if not isinstance(raw, str):
+            continue
+        for part in re.split(r"[;/]| and later ", raw):
+            name = part.strip().strip(".,")
+            name = re.sub(r"^(the|a|an)\s+", "", name, flags=re.I).strip()
+            if len(name) >= 5:
+                out.add(name)
+    return out
+
+
 def overlap(path: Path) -> None:
     """Report resolved findings the target page already carries.
 
@@ -524,6 +547,15 @@ def overlap(path: Path) -> None:
       architect or builder overlaps a neighbourhood survey of the same person
       almost completely; volume D-F of the professionals biographies had 20
       duplicates flagged by wording and 35 more flagged only by this scan.
+    * **the proper name** — a business, organisation or building named in
+      ``extra`` that already appears, verbatim, in prose the page carries from
+      another source. Undated and date-independent, which is the point: a venue
+      moves, a survey and a thematic statement give it different years, and both
+      the wording scan and the name-and-date scan let it through. The 2004
+      sexual-identity subcultures statement had 21 findings flagged by wording
+      and 28 flagged by name, most of them not in the first set — nearly its
+      whole Appendix C, which is the same list of North Beach bars the North
+      Beach survey had already published.
     * **the roll year** — a finding dated exactly the parcel's
       ``year_built`` whose fact is not the building going up. Every page
       already prints the assessor's year in its "Built NNNN" tag, so such a
@@ -548,7 +580,7 @@ def overlap(path: Path) -> None:
     # only reliable way to tell "the page already had this" from "this batch just
     # wrote it" is the text of the batch's own findings.
     ours = {f.get("description", "") for f in data.get("findings", [])}
-    hits, name_hits, roll_hits, checked, missing = [], [], [], 0, 0
+    hits, name_hits, roll_hits, proper_hits, checked, missing = [], [], [], [], 0, 0
     for finding in data.get("findings", []):
         res = finding.get("resolution") or {}
         if res.get("status") != "resolved" or not res.get("path"):
@@ -595,6 +627,29 @@ def overlap(path: Path) -> None:
                                       entry.get("source", "?")))
                     break
 
+        # scan four: the same named business, organisation or building, already
+        # on the page from another source. See the docstring.
+        wanted = _proper_names(finding.get("extra"))
+        if wanted:
+            for entry in doc.get("historical_record", []):
+                if entry.get("source") in (source_id, data.get("batch")):
+                    continue
+                if entry.get("description", "") in ours:
+                    continue
+                low = entry.get("description", "").lower()
+                found = sorted(n for n in wanted if n.lower() in low)
+                if found:
+                    proper_hits.append((finding.get("id", "?"), res["path"],
+                                        found[0], entry.get("source", "?")))
+                    break
+            else:
+                prose = " ".join(doc[k] for k in ("hook", "narrative")
+                                if isinstance(doc.get(k), str)).lower()
+                found = sorted(n for n in wanted if n.lower() in prose)
+                if found:
+                    proper_hits.append((finding.get("id", "?"), res["path"],
+                                        found[0], "the page's own prose"))
+
         mine = _words(finding.get("description", ""))
         if not mine:
             continue
@@ -619,7 +674,7 @@ def overlap(path: Path) -> None:
     hits.sort(reverse=True)
     print(f"overlap: {checked} resolved finding(s) checked against their pages"
           + (f", {missing} page(s) not on disk yet" if missing else ""))
-    if not hits and not name_hits and not roll_hits:
+    if not hits and not name_hits and not roll_hits and not proper_hits:
         print("  none — no finding repeats what its page already says.")
         return
     if hits:
@@ -633,6 +688,13 @@ def overlap(path: Path) -> None:
         print(f"  by name and date — {len(only_names)} more finding(s) credit someone "
               f"the page already credits within two years:")
         for fid, page_path, who, other in only_names:
+            print(f"    {fid}  {page_path}")
+            print(f"          {who} — already on the page from {other}")
+    only_proper = [n for n in proper_hits if n[0] not in flagged]
+    if only_proper:
+        print(f"  by name — {len(only_proper)} more finding(s) name a business, "
+              f"organisation or building the page already names:")
+        for fid, page_path, who, other in only_proper:
             print(f"    {fid}  {page_path}")
             print(f"          {who} — already on the page from {other}")
     if roll_hits:

@@ -1537,10 +1537,22 @@ def main() -> int:
           + (f"; {len(conflicts)} new conflict(s) recorded" if conflicts else ""))
 
     if args.command == "apply":
+        # A finding the reader has already rejected is not the tool's to
+        # reconsider. The reasons a run rejects by hand are ones the joins
+        # cannot see — the source itself says the building is demolished, the
+        # address is outside San Francisco, the record names no number at all —
+        # and overwriting them with "unresolved" loses the reason and invites
+        # the next run to try again. Every other status is recomputed.
+        kept = 0
         for f in data["findings"]:
+            if (f.get("resolution") or {}).get("status") == "rejected":
+                kept += 1
+                continue
             f["resolution"] = decisions[f["id"]]
             if f["id"] in conflicts and not f.get("conflict"):
                 f["conflict"] = conflicts[f["id"]]
+        if kept:
+            print(f"  left {kept} finding(s) already marked rejected untouched")
         args.findings.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n",
                                  encoding="utf-8")
         print(f"wrote {args.findings}")
