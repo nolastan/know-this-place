@@ -6,6 +6,7 @@ The parcels on Clementina Street documented here so far, from the city's address
 
 - [316](316/) — An assessor class: vacant lot.
 - [317–321](317/) — A 1984 91-unit apartment building, with window replacement permitted in 2018.
+- [320–330](320/) — A 1971 276-unit apartment building, with reroofing permitted in 2001.
 - [360–368](360/) — A 1949 office building, with reroofing permitted in 1999.
 - [363](363/) — A 1957 industrial building, with reroofing permitted in 1995.
 - [379–381](379/) — A 1911 three-flat, with facade work permitted in 1998.

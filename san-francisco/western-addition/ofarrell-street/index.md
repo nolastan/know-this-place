@@ -5,6 +5,7 @@ The parcels on Ofarrell Street documented here so far, from the city's address, 
 ## Documented so far
 
 - [1501](1501/) — A 1900 school building.
+- [2040–2060](2040/) — A 1963 140-unit apartment building, with facade work permitted in 2026.
 - [2139](2139/) — A 2011 21-unit apartment building, with permit records from 1985 to 2011.
 
 Pages are generated from the DataSF datasets listed in each page's

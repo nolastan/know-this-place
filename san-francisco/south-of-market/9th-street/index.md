@@ -6,6 +6,7 @@ The residential parcels on Ninth Street documented here so far, from the city's 
 
 - [55–59](55/) — Thirteen glass pianos hang over Ninth Street, milled from the 1939 Transbay Terminal.
 - [66](66/) — A 2011 apartment building, with reroofing permitted in 2025.
+- [77–83](77/) — A 1912 62-unit apartment building, with a bathroom remodel permitted in 2017.
 - [93–99](93/) — A 1911 hotel, with a seismic retrofit permitted in 2001.
 - [116](116/) — A 1926 store building in the Western SOMA Light Industrial and Residential Historic District, with stair work permitted in 1998.
 - [121](121/) — A 2011 store building in the Western SOMA Light Industrial and Residential Historic District, with a seismic retrofit permitted in 2001.

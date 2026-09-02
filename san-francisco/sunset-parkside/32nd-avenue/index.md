@@ -11,6 +11,7 @@ The parcels on 32nd Avenue documented here so far, from the city's address, asse
 - [1470](1470/) — A 1939 single-family house, with window replacement permitted in 2024.
 - [1479](1479/) — A 1938 single-family house, with reroofing permitted in 2000.
 - [1531](1531/) — A 1935 single-family house in the Picturesque Period Revival Tracts Historic District, with reroofing permitted in 1995.
+- [1546](1546/) — A 1931 single-family house, with a kitchen and bathroom remodel permitted in 2019.
 - [1554](1554/) — A 1931 single-family house, with reroofing permitted in 2015.
 - [1590](1590/) — A 1931 single-family house, with one permit record from 1998.
 - [1667](1667/) — A 1935 single-family house, with a kitchen remodel permitted in 2019.

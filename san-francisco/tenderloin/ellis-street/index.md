@@ -5,6 +5,7 @@ The parcels on Ellis Street documented here so far, from the city's address, ass
 ## Documented so far
 
 - [24–34](24/) — A 1907 store building in the Kearny-Market-Mason-Sutter Conservation District, with stair work permitted in 2007.
+- [119–139](119/) — A 1907 hotel in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 2007.
 - [140](140/) — The site of Jonathan Kittredge's Carpenter Gothic house of 1855, under a hotel of 1908.
 - [201–229](201/) — A 1910 hotel in the Uptown Tenderloin Historic District, with an addition permitted in 2018.
 - [275](275/) — A 1963 store building in the Uptown Tenderloin Historic District, with reroofing permitted in 1995.
@@ -26,7 +27,9 @@ The parcels on Ellis Street documented here so far, from the city's address, ass
 - [463–465](463/) — A 1913 hotel in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 1995.
 - [468–488](468/) — A 1908 hotel in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 2008.
 - [471](471/) — A 1913 12-unit apartment building in the Uptown Tenderloin Historic District, with permit records from 1983 to 2024.
+- [473](473/) — A 1926 hotel in the Uptown Tenderloin Historic District, with window replacement permitted in 2009.
 - [500–516](500/) — A 1910 38-unit apartment building in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 1997.
+- [517–519](517/) — An assessor class: parking lot in the Uptown Tenderloin Historic District, with fire repair permitted in 2013.
 - [518–530](518/) — A 1915 36-unit apartment building in the Uptown Tenderloin Historic District, with permit records from 1982 to 1989.
 - [606](606/) — A 1907 single-family house in the Uptown Tenderloin Historic District, with a kitchen and bathroom remodel permitted in 2019.
 - [615–629](615/) — A 1909 12-unit apartment building in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 1998.

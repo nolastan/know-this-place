@@ -755,8 +755,21 @@ def landed(path: Path) -> None:
             continue
         checked += 1
 
+        blob = json.dumps(doc, ensure_ascii=False)
+
         desc = (finding.get("description") or "").strip()
-        if desc and desc in json.dumps(doc, ensure_ascii=False):
+        if desc and desc in blob:
+            continue
+        # The page citing this finding's own record is proof the write landed,
+        # and it is a better signal than matching text: a publisher is supposed
+        # to trim the description for the page — the timeline already shows the
+        # date and the page is the address — so a source whose house style is a
+        # short page sentence fails the text test on every single entry. Both
+        # digitalsf batches did: 885 of 885 and 116 of 116 reported as no-ops,
+        # every one of them actually on its page. A check that cries wolf on a
+        # whole source teaches the next run to skip it.
+        cite = ((finding.get("citation") or {}).get("url") or "").strip()
+        if cite and cite in blob:
             continue
         recorded = {str(v).strip() for k, v in (finding.get("extra") or {}).items()
                     if k.endswith("_as_recorded") and v}

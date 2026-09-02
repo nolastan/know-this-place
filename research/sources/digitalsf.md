@@ -5,7 +5,7 @@
 >
 > - **Kind:** catalogued digital archive (photographs, city records, scanned documents) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** harvested in full — 59,601 unique records. One of 44 collections extracted and resolved: **SFP 23, read whole — 1,165 records, 1,122 findings, 923 resolved to a parcel**.
+> - **Coverage:** harvested in full — 59,601 unique records. Two of 44 collections read whole: **SFP 23** (1,165 records, 1,122 findings, 923 resolved, 919 published) and **SFH 371** (2,421 records, 421 findings, 117 resolved, 116 published on 103 pages).
 > - **Local corpus:** `research/corpora/digitalsf/` (453 MB; `state.json` records the OAI resumption token per set)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -136,14 +136,26 @@ The candidate counts below are the title-only figures from
 SFP 23 was listed at 593 and produced 1,122 findings once the `500$a` address
 note was read too. Size a session on the profile; expect more.
 
-| candidates | collection |
+Counted over the **complete** harvest on 2026-09-02, reading the `500$a`
+address note as well as the title — which is what `digitalsf_extract.py` does,
+and roughly double what the title-only profile reports:
+
+| addressed records | collection |
 |---|---|
-| 852 | San Francisco Subjects Photograph Collection (SFP 162) |
-| 593 | **San Francisco Office of Assessor-Recorder Photographs (SFP 23) — done: 1,122 findings** |
-| 210 | San Francisco Redevelopment Agency Records (SFH 371) |
-| 151 | Tenderloin Times Photograph Archives (SFP 130) |
-| 95 | Willard E. Worden Glass Plate Negatives (SFP 22) |
-| 50 | James E. Gordon Color Slides of San Francisco Murals (SFP 173) |
+| 1,505 | San Francisco Subjects Photograph Collection (SFP 162) — 34,738 records; too big for one session, split it by decade |
+| 1,128 | **Office of Assessor-Recorder Photographs (SFP 23) — done: 1,122 findings, 919 published** |
+| 251 | **Redevelopment Agency Records (SFH 371) — done: 421 findings, 116 published** |
+| 186 | Tenderloin Times Photograph Archives (SFP 130) |
+| 151 | Judi Iranyi Photographs of the Tenderloin (SFP 179) |
+| 103 | Willard E. Worden Glass Plate Negatives (SFP 22) |
+| 70 | James A. Martin Color Slides of San Francisco (SFP 169) |
+| 70 | Robert Durden Color Slide Collection (SFP 42) |
+| 60 | Lee Sims Photographs of Tenants and Owners in Opposition to Redevelopment (SFP 125) |
+| 54 | James E. Gordon Color Slide Collection of San Francisco Murals (SFP 90) |
+
+An earlier version of this table listed the murals collection as **SFP 173**.
+There is no SFP 173 in the harvest; the murals are **SFP 90**, and SFP 169 is
+the Martin slides. Match on the `524$a` string, not on a remembered number.
 
 **SFP 23 is done** — read whole on 2026-08-15, and it was the right one to
 start with. The Office of Assessor-Recorder photographed properties *for
@@ -307,6 +319,67 @@ more sensitive rather than less.
   count the next are SFP 162 (852), SFH 371 (210) and SFP 130 (151). Re-run the
   harvester to pick up records added since; it resumes from the stored token
   rather than re-downloading.
+
+- **Verified:** 2026-09-02 (read, resolved and published **SFH 371, the San
+  Francisco Redevelopment Agency Records**, whole: 2,421 records → 421 findings
+  → 117 on a parcel → **116 published on 103 pages**, 51 of them seeded for it,
+  1 declined. 49 name the building then standing — mostly Tenderloin residential
+  hotels, plus the Japantown YWCA, the Miyako Hotel, Woolf House Apartments and
+  the Western Addition Solar House. Findings:
+  [`../findings/digitalsf/sfh-371.json`](../findings/digitalsf/sfh-371.json).
+
+  **The corpus is gitignored, so a fresh worktree starts with no `state.json`
+  and the whole `Photographs` set has to come down again** — 578 pages, 70
+  minutes at the required 5-second delay, and it cannot be parallelized. Budget
+  it as the first hour of any digitalsf run, or work in a checkout that already
+  has the corpus.
+
+  Three things this collection taught that SFP 23 could not, all of them now
+  enforced in [`../tools/digitalsf_extract.py`](../tools/digitalsf_extract.py):
+
+  - **A caption collection is not a signage collection, and the name filter has
+    to know which it is.** SFP 23 titles are "address, shop sign", so the
+    extractor's default — keep the leftover fragment unless something says it is
+    a person — is right for them. SFH 371 titles are narrative: "1249 Scott
+    Street home on dolly being pulled by bulldozer". Run the default over those
+    and it returns 140 "firm names", most of them caption prose ("home on
+    dolly", "under construction", "Adjacent") and four of them **individuals at
+    public ceremonies**, which the privacy limits bar outright. Hence
+    `COLLECTION_NAME_POLICY`: this collection keeps a fragment only if every
+    word is capitalized, it carries no digits and one capitalized word is a
+    building noun. That drops the people and the prose and keeps 56 real
+    building names. It also loses names buried in lowercase caption ("Japantown
+    bakery Benkyodo Company"), which is the right trade — a false keep here is a
+    privacy failure, a false drop is one missing name.
+  - **Records that photograph people, not places, should not become findings at
+    all.** 234 of 2,421 have a MARC `600` personal-name subject or a personal
+    title in the caption *and* no street number. With no number they can never
+    become a page, so keeping them as unresolved findings buys nothing and
+    carries named individuals into the repository. Skipped outright.
+  - **The year-as-street-number trap is live here.** "Miss Chinatown 1967
+    Marilyn Lew" parses as number 1967 on a street called Marilyn Lew. The
+    cautions above already record the rule — a street number equal to the
+    record's own year is not an address — but only `digitalsf_profile.py`
+    enforced it; the extractor now does too.
+
+  A fourth thing, not specific to this source: **the description the extractor
+  writes is not the sentence that goes on the page.** The publisher trims it —
+  the timeline already carries the date and the page is the address — so
+  "The San Francisco Redevelopment Agency photographed the property at 1830
+  Sutter Street in 1975-08" becomes "The Redevelopment Agency photographed the
+  property, then the Japantown YWCA." That convention is why `check.py
+  --landed` reported 116 of 116 here and 885 of 885 for SFP 23 as no-ops when
+  every one was on its page; the check now also accepts the page citing the
+  finding's own record URL, which is stronger evidence than matching text.
+
+  What did not resolve, and why it is the interesting half: 257 records give no
+  street number, **33 name an address EAS no longer holds because the building
+  was cleared**, 6 name something the register does not treat as a street
+  (Embarcadero Center, One Maritime Plaza, One Jackson Place, Ridgeview Terrace,
+  Verona, and a "W 24th Street" that looks like a cataloguing error), 5 are
+  ranges now split across parcels, 3 are condominiums. Those 33 are the most
+  valuable records in the collection and the one class the evidence bar will not
+  let onto a page.)
 
 - **Verified:** 2026-08-16 (published SFP 23: 919 of the 923 resolved findings
   onto 882 pages in #117, 720 of them seeded from
