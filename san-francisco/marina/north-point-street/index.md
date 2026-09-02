@@ -6,6 +6,7 @@ The parcels on North Point Street documented here so far, from the city's addres
 
 - [2125](2125/) — A 1926 single-family house, with reroofing permitted in 2002.
 - [2173](2173/) — A 1926 single-family house, with reroofing permitted in 2020.
+- [2225](2225/) — A 1928 building, with a kitchen remodel permitted in 1984.
 - [2250](2250/) — A 1928 7-unit apartment building, with a seismic retrofit permitted in 2017.
 
 Pages are generated from the DataSF datasets listed in each page's

@@ -6,6 +6,7 @@ The parcels on Greenwich Street documented here so far, from the city's address,
 
 - [300–302](300/) — A 1923 store building, with a kitchen remodel permitted in 2021.
 - [427–431](427/) — A 1907 5-unit apartment building, with deck work permitted in 1999.
+- [439](439/) — A 1979 building, with facade work permitted in 2006.
 - [455–463](455/) — A 1907 8-unit apartment building, with a kitchen and bathroom remodel permitted in 2022.
 - [465–469](465/) — A 1907 three-flat, with stair work permitted in 1998.
 - [471–475](471/) — A 1907 four-flat, with a bathroom remodel permitted in 2009.

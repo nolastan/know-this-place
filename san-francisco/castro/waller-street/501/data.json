@@ -1,0 +1,170 @@
+{
+  "address": "501–505 Waller Street, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/waller-street/501/",
+  "apn": "0866001",
+  "block": "0866",
+  "lot": "001",
+  "eas_baseid": "424749",
+  "coordinates": {
+    "lat": 37.77081,
+    "lng": -122.432039
+  },
+  "address_range": "501–505",
+  "street_numbers_on_parcel": [
+    "501",
+    "503",
+    "505"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 4,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 3,
+    "lot_area_sqft": 3706,
+    "building_area_sqft": 5416,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Haight Ashbury",
+    "property_location_raw": "0505 0501 WALLER              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 39466,
+    "assessed_improvement_value": 42248
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "survey_name": "501-505 Waller St",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Duboce Park Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1896–1913",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202209283361",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-09-28",
+      "status_date": "2022-09-28",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201211274864",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-11-27",
+      "status_date": "2012-11-27",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "remodel kitchen & bathroom in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201005182656",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-05-18",
+      "status_date": "2010-08-10",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "remove water damaged plaster with type x 5/8 dry wall, taped, painted, two units",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8907096",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-04-27",
+      "status_date": "1989-10-10",
+      "estimated_cost": 8800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8502134",
+      "type": "sign - erect",
+      "status": "cancelled",
+      "filed": "1985-03-04",
+      "status_date": "1985-04-01",
+      "estimated_cost": 1,
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "1985–2022",
+    "shown_on_page": 5,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=WALLER&street_type=ST&address_number=501",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0866001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0866&lot=001",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0866001",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43203916280686%2037.77080991484769)%27)",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume S–U), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=6aa134fedbfb505f9869a41577817ec47d73aaaa886903d8430aea3b05cef0cc&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1901-1909",
+      "kind": "construction",
+      "description": "Built by G. L. Sweeney.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ],
+  "building": {
+    "builder": "G. L. Sweeney"
+  }
+}

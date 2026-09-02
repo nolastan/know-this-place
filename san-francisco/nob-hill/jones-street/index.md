@@ -17,6 +17,7 @@ The parcels on Jones Street documented here so far, from the city's address, ass
 - [1330](1330/) — A 1954 37-unit apartment building, with reroofing permitted in 2025.
 - [1424](1424/) — A 1915 7-unit apartment building, with a seismic retrofit permitted in 2015.
 - [1457](1457/) — A 1914 7-unit apartment building, with a seismic retrofit permitted in 2015.
+- [1730](1730/) — A 1913 apartment building in the Russian Hill-Vallejo Street Crest Historic District, with a seismic retrofit permitted in 2017.
 - [1821](1821/) — A 1916 single-family house, with reroofing permitted in 2023.
 
 Pages are generated from the DataSF datasets listed in each page's

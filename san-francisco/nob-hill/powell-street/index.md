@@ -15,6 +15,7 @@ The parcels on Powell Street documented here so far, from the city's address, as
 - [222](222/) — A 1906 store building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 2001.
 - [226–230](226/) — A 1910 store building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 1997.
 - [301–345](301/) — A 1904 hotel in the Kearny-Market-Mason-Sutter Conservation District, with facade work permitted in 1991.
+- [432–462](432/) — A 1930 hotel in the Kearny-Market-Mason-Sutter Conservation District, with a kitchen remodel permitted in 2021.
 - [433](433/) — A 1914 hotel in the Kearny-Market-Mason-Sutter Conservation District, with window replacement permitted in 1985.
 - [535](535/) — A 1911 store building in the Lower Nob Hill Apartment Hotel Historic District, with reroofing permitted in 2015.
 - [540](540/) — A 1909 school building in the Kearny-Market-Mason-Sutter Conservation District, with reroofing permitted in 2011.

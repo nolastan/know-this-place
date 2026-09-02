@@ -4,7 +4,9 @@ The parcels on Junipero Serra Boulevard documented here so far, from the city's 
 
 ## Documented so far
 
+- [140](140/) — A 1939 single-family house, with window replacement permitted in 2026.
 - [200](200/) — A 1936 single-family house, with deck work permitted in 2001.
+- [530](530/) — A 1939 single-family house, with reroofing permitted in 2025.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

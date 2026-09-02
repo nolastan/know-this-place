@@ -12,6 +12,7 @@ that neighborhood.
 - [California Street](california-street/) — 1 building, built 1910.
 - [Clay Street](clay-street/) — 1 building, built 1914.
 - [Commercial Street](commercial-street/) — 1 building, built 1985; 1 in the Commercial-Leidesdorff Conservation District.
+- [Florence Street](florence-street/) — 2 buildings, built 1913; 2 in the Russian Hill-Vallejo Street Crest Historic District.
 - [Glover Street](glover-street/) — 1 building, built 1981.
 - [Green Street](green-street/) — 1 building, built 1900; 1 in the Russian Hill-Paris Block Architectural Historic District.
 - [Hyde Street](hyde-street/) — 1 building, built 1911.

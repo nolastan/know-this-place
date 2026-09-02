@@ -6,6 +6,7 @@ The parcels on 19th Avenue documented here so far, from the city's address, asse
 
 - [1226](1226/) — A 1900 building, designed by Cunningham Brothers.
 - [1370](1370/) — A ca. 1926.
+- [1601](1601/) — A 2002 120-unit building, with an addition permitted in 2000.
 - [1754](1754/) — A 1940 single-family house, with reroofing permitted in 2003.
 
 Pages are generated from the DataSF datasets listed in each page's

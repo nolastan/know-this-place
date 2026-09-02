@@ -11,6 +11,7 @@ The parcels on Beach Street documented here so far, from the city's address, ass
 - [1900](1900/) — A 1936 18-unit apartment building in the Marina Corporation Residential Historic District, with a seismic retrofit permitted in 1993.
 - [1990](1990/) — A 1930 12-unit apartment building in the Marina Corporation Residential Historic District, with reroofing permitted in 2016.
 - [2150](2150/) — An eight-room 1937 house, recorded as Joe DiMaggio's home during his marriage to Marilyn Monroe.
+- [2235](2235/) — A 1929 building, with garage work permitted in 1990.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

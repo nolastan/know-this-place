@@ -925,9 +925,54 @@ def block_check(city: City, f: dict, parcel: str) -> tuple:
             f"({parcel_block}).", False)
 
 
+# A source that marks its own building demolished outranks the resolver, which
+# knows only that the number exists today — see AGENTS.md, "A demolished building
+# is `rejected`, not `resolved`." The tool raises these; it does not decide them.
+# Two passes over every findings file in the repo settled that. A regex over any
+# field mentioning demolition would have rejected fourteen correctly published
+# findings, because the demolished thing is often not this building: the *first*
+# St. Francis Hotel of 1904, one academic building of a campus, "demolished
+# except for vertical sign", "largely destroyed in the Great 1906 Earthquake".
+# Narrowing to a bare marker in `status_as_recorded` still gets the Swedenborgian
+# Church wrong — two volumes mark it demolished and it stands, landmarked, at
+# 3200 Washington Street. A source can be mistaken about its own building, and
+# only a person can tell. So `report` prints these loudly and the judgement stays
+# where the runbook puts it.
+BARE_DEMOLITION = re.compile(
+    r"^\s*(?:demolished|destroyed|razed|not extant|no longer extant)"
+    r"(?:\s+(?:in\s+)?\d{4})?\s*$", re.I)
+DEMOLITION_MENTIONED = re.compile(
+    r"\b(?:demolish|destroyed|razed|no longer stand|not extant|since gone)", re.I)
+
+
+def demolished_as_recorded(f: dict) -> str | None:
+    """The source's own bare marking that this building is gone, or None.
+
+    Only `extra.status_as_recorded` counts, and only when it is the marker and
+    nothing else. A sentence that merely mentions demolition is a judgement call,
+    not a fact the tool may act on; `demolition_mentioned` surfaces those.
+    """
+    status = (f.get("extra") or {}).get("status_as_recorded")
+    if isinstance(status, str) and BARE_DEMOLITION.match(status):
+        return status.strip()
+    return None
+
+
+def demolition_mentioned(f: dict) -> tuple[str, str] | None:
+    """A field recording that something here came down, for `report` to raise."""
+    if demolished_as_recorded(f):
+        return None
+    for key, value in (f.get("extra") or {}).items():
+        if key.endswith("_as_recorded") and isinstance(value, str) \
+                and DEMOLITION_MENTIONED.search(value):
+            return key, value
+    return None
+
+
 def decide(city: City, f: dict, today: str) -> dict:
     """One finding → one resolution. No adjudication: ties go unresolved."""
     extra = f.get("extra") or {}
+
     recorded_name, recorded_type = f.get("street_name"), f.get("street_type")
     number, recorded_range = f.get("street_number"), extra.get("address_range_as_recorded")
     note_addr = parse_address(extra.get("address_note_as_recorded"))
@@ -1531,6 +1576,36 @@ def main() -> int:
             if checks["block"]:
                 print("  Read every 'another block' line before applying: on a scanned "
                       "source most are a lost digit, and the rest are the record's own error.")
+            print()
+
+        # The record saying its own building is gone. Not decided here: two
+        # passes over the repo's findings showed the marking is wrong or
+        # about a different building often enough that only a person can call
+        # it. See the note above BARE_DEMOLITION.
+        gone, mentioned = [], []
+        for f in data["findings"]:
+            r = decisions[f["id"]]
+            if r["status"] == "rejected":
+                continue
+            marker = demolished_as_recorded(f)
+            if marker:
+                gone.append((f["id"], f["address_as_written"][:40], marker, r["status"]))
+            else:
+                hit = demolition_mentioned(f)
+                if hit:
+                    mentioned.append((f["id"], f["address_as_written"][:40], hit[1][:60]))
+        if gone or mentioned:
+            print(f"The record marks a building gone: {len(gone)} stated plainly, "
+                  f"{len(mentioned)} mentioned in passing.")
+            for fid, addr, marker, status in gone:
+                print(f"  marked        {fid}  {addr:<42} \u201c{marker}\u201d  ({status})")
+            for fid, addr, text in mentioned:
+                print(f"  mentioned     {fid}  {addr:<42} \u201c{text}\u201d")
+            print("  A demolished building is rejected, not resolved: its number usually still "
+                  "resolves to a\n  live parcel, and publishing there hangs the fact on whatever "
+                  "stands now. But check each one\n  \u2014 the thing that came down is often a "
+                  "predecessor or one building of a group, and a source\n  can simply be wrong "
+                  "(two volumes mark the Swedenborgian Church demolished; it stands).")
             print()
     print(f"{sum(tally.values())} findings: " +
           ", ".join(f"{n} {s}" for s, n in tally.most_common())
