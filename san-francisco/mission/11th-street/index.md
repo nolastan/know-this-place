@@ -12,11 +12,13 @@ Every residential parcel on 11th Street that the city's address, assessor and pe
 - [224–226](224/) — A 1923 industrial building in the Western SOMA Light Industrial and Residential Historic District, with a vertical addition permitted in 2007.
 - [230](230/) — A 1912 15-unit apartment building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 2012.
 - [238–254](238/) — A 1907 18-unit apartment building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 1999.
+- [278–280](278/) — A 1929 store building in the SoMa LGBTQ Historic District, with reroofing permitted in 2011.
 - [314](314/) — A 1924 industrial building in the Western SOMA Light Industrial and Residential Historic District, with window replacement permitted in 2011.
 - [319–321](319/) — A 1907 industrial building in the Western SOMA Light Industrial and Residential Historic District, with a vertical addition permitted in 1999.
 - [333](333/) — A 1907 industrial building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 1986.
 - [340](340/) — A building in the Western SOMA Light Industrial and Residential Historic District, with stair work permitted in 2026.
 - [354–356](354/) — A 1906 three-flat, with a rear addition permitted in 2013.
+- [375](375/) — An industrial building, with reroofing permitted in 1998.
 - [398](398/) — A 1916 industrial building, with a seismic retrofit permitted in 2000.
 
 Pages are generated from the DataSF datasets listed in each page's

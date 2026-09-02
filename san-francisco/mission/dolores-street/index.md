@@ -55,6 +55,7 @@ Every residential parcel on Dolores Street that the city's address, assessor and
 - [465](465/) — A 1914 13-unit apartment building in the Inner Mission Boulevards and Alleys Reconstruction Historic District, with a kitchen and bathroom remodel permitted in 2025.
 - [469–479](469/) — A 1910 10-unit apartment building in the Inner Mission Boulevards and Alleys Reconstruction Historic District, with a seismic retrofit permitted in 2023.
 - [487–491](487/) — A 1908 8-unit apartment building in the Inner Mission Boulevards and Alleys Reconstruction Historic District, with a seismic retrofit permitted in 2016.
+- [501–503](501/) — A 1906 office building in the Inner Mission Boulevards and Alleys Reconstruction Historic District, with garage work permitted in 1982.
 - [513–517](513/) — A 1905 6-unit apartment building in the Inner Mission Boulevards and Alleys Reconstruction Historic District, with a seismic retrofit permitted in 2015.
 - [519–523](519/) — A 1904 3-unit tic building in the Inner Mission Boulevards and Alleys Reconstruction Historic District, with a kitchen and bathroom remodel permitted in 2013.
 - [527](527/) — A 1913 6-unit apartment building in the Inner Mission Boulevards and Alleys Reconstruction Historic District, with a seismic retrofit permitted in 2018.

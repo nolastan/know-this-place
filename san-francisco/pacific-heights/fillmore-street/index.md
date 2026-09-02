@@ -26,6 +26,7 @@ The parcels on Fillmore Street documented here so far, from the city's address, 
 - [2500](2500/) — A 1932 5-unit apartment building, with a seismic retrofit permitted in 2018.
 - [2515](2515/) — A 1980 church, with a seismic retrofit permitted in 2001.
 - [2943–2947](2943/) — A 1900 three-flat, with reroofing permitted in 2003.
+- [3138](3138/) — A 1900 store building, with an addition permitted in 2016.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

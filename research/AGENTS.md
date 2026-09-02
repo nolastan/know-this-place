@@ -199,6 +199,32 @@ live in the dossiers. **Add to this list** whenever a run discovers something a
 future run would otherwise repeat — that is what makes this module improve
 rather than just accumulate.
 
+- **A PDF's thin text layer is not the document's yield.** `pdftotext` returned
+  841 lines from the 2004 sexual-identity subcultures statement and none of them
+  were its two densest pages: both appendices are scanned images, and between
+  them they carried 160 of the document's 188 findings. Nothing warns you — the
+  appendix heading extracts, the table under it does not. **Run `pdfimages
+  -list` over any page whose extracted text looks like a heading with nothing
+  after it**, and read the image with `pdftoppm -r 400 -png -x -y -W -H` to crop
+  a column at a time. A thin extraction is a hypothesis about the document, not
+  a fact about it.
+
+- **A demolished building is `rejected`, not `resolved`.** Its street number
+  usually still resolves to a live parcel, and publishing against that parcel
+  hangs the fact on whatever was built afterwards. Where a source marks its own
+  addresses — the counterculture statement marks nearly every one `(extant)` or
+  `(demolished)` — that marking outranks the resolver, which knows only that the
+  number exists today. 18 of that document's 100 addresses were rejected this
+  way, and every one of them would otherwise have become a page.
+
+- **Read the table of contents before planning the read.** A *strategy* is not a
+  *survey*, whatever list it is published on. The LGBTQ+ Cultural Heritage
+  Strategy sits on SF Planning's completed historic-context-statements page, ran
+  56 pages, and contains exactly one street number — in a photo credit. Chapters
+  named for goals and recommended actions mean a policy document and near-zero
+  yield; chapters named for property types, periods or a study area mean a
+  resource document. Two minutes on the contents page sizes the run correctly.
+
 - **An undated finding needs a spec row, not a timeline entry.** A page's
   timeline is ordered by date, so an entry whose date is `unknown` renders a row
   reading *unknown* above the 1930s. `building.architect`, `.builder`,

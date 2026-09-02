@@ -4,6 +4,7 @@ The parcels on Broderick Street documented here so far, from the city's address,
 
 ## Documented so far
 
+- [1711](1711/) — A 1900 single-family house, with a rear addition permitted in 2008.
 - [1715](1715/) — A 1900 single-family house, with a seismic retrofit permitted in 1990.
 
 Pages are generated from the DataSF datasets listed in each page's

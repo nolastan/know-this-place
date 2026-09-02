@@ -4,6 +4,7 @@ Every residential parcel on Duboce Avenue that the city's address, assessor and 
 
 ## Documented so far
 
+- [402–412](402/) — A 1908 9-unit apartment building, with a kitchen and bathroom remodel permitted in 2016.
 - [425–429](425/) — A 1905 three-flat in the Duboce Triangle Historic District, with a seismic retrofit permitted in 2017.
 - [437–441](437/) — An 1890 4-unit building with a ground-floor store in the Duboce Triangle Historic District, with plumbing work permitted in 2025.
 - [451–455](451/) — A 1900 three-flat in the Duboce Triangle Historic District, with reroofing permitted in 1991.

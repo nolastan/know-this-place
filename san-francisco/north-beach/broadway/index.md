@@ -13,6 +13,7 @@ The parcels on Broadway documented here so far, from the city's address, assesso
 - [381–391](381/) — A 1909 hotel in the Jackson Square Historic District Extension, with plumbing work permitted in 2013.
 - [400–406](400/) — A 1907 hotel, with a seismic retrofit permitted in 2017.
 - [401–407](401/) — A 1907 hotel in the Jackson Square Historic District Extension, with a seismic retrofit permitted in 2003.
+- [426–430](426/) — A 1909 14-unit apartment building, with a seismic retrofit permitted in 2017.
 - [435–443](435/) — A 1919 store building in the Jackson Square Historic District Extension, with a seismic retrofit permitted in 1998.
 - [438–448](438/) — A 1915 hotel, with a seismic retrofit permitted in 2015.
 - [490–498](490/) — A 1900 hotel, with an addition permitted in 2007.

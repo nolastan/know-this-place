@@ -5,6 +5,7 @@ The parcels on Scott Street documented here so far, from the city's address, ass
 ## Documented so far
 
 - [1100–1198](1100/) — A 1956 209-unit apartment building, with an addition permitted in 2015.
+- [1207–1209](1207/) — A 1987 building, with a kitchen remodel permitted in 2006.
 - [1430](1430/) — A 1900 school building, with one permit record from 2002.
 
 Pages are generated from the DataSF datasets listed in each page's

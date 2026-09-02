@@ -15,6 +15,7 @@ Every residential parcel on 12th Street that the city's address, assessor and pe
 - [332–334](332/) — A 1909 two-flat in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 1993.
 - [338–340](338/) — A 1907 flats building in the Western SOMA Light Industrial and Residential Historic District, with foundation work permitted in 1993.
 - [365–367](365/) — A 1907 two-flat in the SoMa LGBTQ Historic District, with a rear addition permitted in 2019.
+- [396–398](396/) — A 1906 store building in the SoMa LGBTQ Historic District, with reroofing permitted in 2020.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.
