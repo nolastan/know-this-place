@@ -1,0 +1,149 @@
+{
+  "address": "98 Saint Francis Boulevard, San Francisco, CA 94127",
+  "path": "/san-francisco/west-of-twin-peaks/saint-francis-boulevard/98/",
+  "apn": "3099001",
+  "block": "3099",
+  "lot": "001",
+  "eas_baseid": "484387",
+  "coordinates": {
+    "lat": 37.734535,
+    "lng": -122.469909
+  },
+  "parcel": {
+    "year_built": 1930,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "lot_area_sqft": 5793,
+    "building_area_sqft": 3769,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "St. Francis Wood",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0098 SAINT FRANCIS       BL0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 606779,
+    "assessed_improvement_value": 754148,
+    "last_sale_date": "1992-08-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1930",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "St. Francis Wood Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1912–1954",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201406168436",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-06-16",
+      "status_date": "2014-07-09",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200707247650",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-07-24",
+      "status_date": "2007-12-04",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "remove stucco where there are cracks on back corner of house. install double layer on black paper & wire mesh & 2 coats of plaster to match the (e) stucco area above 15' x 6'.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9512422",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-08-07",
+      "status_date": "1995-11-14",
+      "estimated_cost": 18000,
+      "description": "kitchen & bathroom remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9003437",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-02-21",
+      "status_date": "1990-08-21",
+      "estimated_cost": 14500,
+      "description": "stairway lift installed under sfbc approval # 14200 m 37 3b",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAINT%20FRANCIS&street_type=BLVD&address_number=98",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3099001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3099&lot=001",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3099001",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.46990948859764%2037.73453471082214)%27)",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume G–I), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=b4fed2f0ee80387415081f76f9f657d25c12a1398210899a92a9222f03506e7a&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-09-01"
+    }
+  ],
+  "building": {
+    "architect": "Lester W. Hurd",
+    "completed_conflict": "The assessor's roll gives 1930; this address is recorded as built 1929-1930."
+  },
+  "historical_record": [
+    {
+      "date": "1929-1930",
+      "kind": "construction",
+      "description": "Designed by Masten & Hurd, the partnership of Charles Masten and Lester W. Hurd, who together designed ninety-nine houses in St. Francis Wood.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ]
+}

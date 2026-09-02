@@ -6,6 +6,7 @@ The parcels on 40th Avenue documented here so far, from the city's address, asse
 
 - [1339](1339/) — A 1950 single-family house, with reroofing permitted in 1992.
 - [1538](1538/) — A 1939 single-family house, with reroofing permitted in 1998.
+- [1662](1662/) — A 1938 single-family house, with facade work permitted in 2025.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

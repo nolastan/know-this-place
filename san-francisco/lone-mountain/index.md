@@ -13,3 +13,5 @@ A district on the rise between the Richmond and the Panhandle, around the Univer
 - [Golden Gate Avenue](golden-gate-avenue/) — First A.M.E. Zion Church, built in 1960, whose landmark designation the city initiated in 2026.
 - [Loraine Court](loraine-court/) — 1 building, built 1900.
 - [McAllister Street](mcallister-street/) — 1 building, built 1900.
+- [Stanyan Street](stanyan-street/) — 1 building.
+- [Vega Street](vega-street/) — 1 building.

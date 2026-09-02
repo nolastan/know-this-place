@@ -9,6 +9,7 @@ The parcels on Presidio Terrace documented here so far, from the city's address,
 - [5](5/) — A 1908 single-family house in the Presidio Terrace Historic District, with a kitchen and bathroom remodel permitted in 2024.
 - [6](6/) — A 1911 single-family house in the Presidio Terrace Historic District, with foundation work permitted in 2009.
 - [8](8/) — A 1911 building in the Presidio Terrace Historic District, with an addition permitted in 2000.
+- [15](15/) — A 1906 single-family house in the Presidio Terrace Historic District, with deck work permitted in 2021.
 - [17](17/) — A 2010 single-family house in the Presidio Terrace Historic District, with garage work permitted in 2008.
 - [21](21/) — A 1911 single-family house in the Presidio Terrace Historic District, with a kitchen and bathroom remodel permitted in 2024.
 - [27](27/) — A 1909 single-family house in the Presidio Terrace Historic District, with garage work permitted in 2017.

@@ -5,6 +5,7 @@ The parcels on Powell Street documented here so far, from the city's address, as
 ## Documented so far
 
 - [1016–1020](1016/) — A 1907 three-flat, with a kitchen and bathroom remodel permitted in 2008.
+- [1022](1022/) — A 1908 building, with a kitchen and bathroom remodel permitted in 2012.
 - [1024–1034](1024/) — A 1908 6-unit apartment building, with a seismic retrofit permitted in 1997.
 - [1100–1104](1100/) — A 1910 hotel, with a seismic retrofit permitted in 2002.
 - [1106](1106/) — A 1909 single-family house, with reroofing permitted in 2024.

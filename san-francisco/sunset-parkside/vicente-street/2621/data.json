@@ -1,0 +1,112 @@
+{
+  "address": "2621 Vicente Street, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/vicente-street/2621/",
+  "apn": "2459054",
+  "block": "2459",
+  "lot": "054",
+  "eas_baseid": "340112",
+  "coordinates": {
+    "lat": 37.738204,
+    "lng": -122.49515
+  },
+  "parcel": {
+    "year_built": 1940,
+    "units": 1,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1900,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2621 VICENTE             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 121876,
+    "assessed_improvement_value": 349109
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1940",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9222263S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-12-30",
+      "status_date": "1994-07-20",
+      "estimated_cost": 97530,
+      "description": "horizontal",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9017093",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-08-24",
+      "status_date": "1990-09-20",
+      "estimated_cost": 3000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VICENTE&street_type=ST&address_number=2621",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2459054&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2459&lot=054",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2459054",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume G–I), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=b4fed2f0ee80387415081f76f9f657d25c12a1398210899a92a9222f03506e7a&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-09-01"
+    }
+  ],
+  "building": {
+    "builder": "R. F. Galli, Inc. (Galli Construction Co.)",
+    "completed_conflict": "The assessor's roll gives 1940; this address is recorded as built 1941."
+  },
+  "historical_record": [
+    {
+      "date": "1941",
+      "kind": "construction",
+      "description": "Built by R. F. Galli, Inc., the Sunset and Parkside building firm, and marketed as the Vicente model.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ]
+}
