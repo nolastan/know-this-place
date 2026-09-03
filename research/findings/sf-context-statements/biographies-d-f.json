@@ -714,19 +714,13 @@
       },
       "confidence": "high",
       "resolution": {
-        "status": "resolved",
-        "apn": "0113023",
-        "path": "/san-francisco/north-beach/union-street/265/",
-        "eas_address": "265 UNION ST",
-        "method": "EAS exact match on 265 UNION ST → parcel 0113023; sf-parcels has blklot 0113023 active, 287–289 UNION; the 2025 roll records it as multi-family residential, built 1900. EAS puts 265, 287, 289 UNION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 265. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls. The address carries no parcel number in EAS; the active parcel its coordinates fall in is 0113023.",
-        "checked_on": "2026-08-31",
-        "note": "No page at this path yet; the parcel is the publisher's to seed."
+        "status": "unresolved",
+        "note": "sf-eas-addresses holds 265 UNION ST with coordinates and no parcel number, and the point falls in 0113023, whose own range in sf-parcels is 287–289 UNION, which EAS's own records put at 287 and 289, and which the assessor files as 287–289 Union Street. On the odd side 265 sits on the block below, between 151 (parcel 0112001) and the start of block 113 at 287. Placing here credited Gardner A. Dailey on the 0113023 page and seeded that page under 265 Union Street, an address the parcel does not carry; the credit has been removed and the page corrected to 287–289 Union Street. Resolving it needs the parcel that actually carries 265."
       },
       "street_type": "ST",
       "conflict": "This building's context statement dates the work 1961; the assessor's roll records the parcel as built 1900.",
       "publish": {
-        "status": "published",
-        "pr": "https://github.com/nolastan/know-this-place/pull/196"
+        "status": "pending"
       }
     },
     {
