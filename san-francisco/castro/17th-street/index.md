@@ -160,7 +160,7 @@ Every residential parcel on 17th Street that the city's address, assessor and pe
 - [4454](4454/) — A 1927 single-family house, with a kitchen remodel permitted in 2024.
 - [4458](4458/) — A 1900 single-family house, with deck work permitted in 2000.
 - [4462](4462/) — A 1907 single-family house, with reroofing permitted in 1995.
-- [4465](4465/) — A 1961 6-unit apartment building, with a seismic retrofit permitted in 2018.
+- [4465](4465/) — The Belle-V Apartments of 1961, on the corner where Mars Street meets 17th.
 - [4466](4466/) — A 1958 single-family house, with facade work permitted in 2006.
 - [4470–4472](4470/) — A 1971 three-flat, with a kitchen remodel permitted in 2012.
 - [4475](4475/) — A 1951 single-family house, with an addition permitted in 2001.

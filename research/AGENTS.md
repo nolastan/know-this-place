@@ -361,6 +361,33 @@ rather than just accumulate.
   way and caught it in `git status`, not in `validate.py`. **Render the page
   paths you edited, one by one.**
 
+- **`--landed` reads `data.json`, and a page can hold a key the renderer does
+  not know.** The Corbett Heights tree has a `building_history` object on eight
+  Mars Street pages; those pages are hand-written HTML in
+  `scripts/render-backlog.txt`, which is the only reason their events are
+  visible. Writing that key onto a *rendered* page puts the fact in `data.json`,
+  passes `--landed`, passes `validate.py`, and shows a reader nothing — six
+  pages in one run. **After rendering, grep the rendered `index.html` for a
+  phrase from each fact you wrote.** A key that is right on one page in a
+  neighborhood is not thereby right on the next one.
+
+- **A condominium hides behind a single EAS row.** The resolver defers a
+  condominium stack, but it used to let one through when EAS carried the
+  address on exactly one parcel — no siblings, therefore no stack. 655 Corbett
+  Avenue is a 39-unit building of 1964 with one EAS row, and it seeded a page
+  for flat 105. The roll knew all along: `property_location` ends in the unit
+  designation, `AV0105`, where a whole parcel ends in `0000`. `resolve_eas.py`
+  now reads that suffix and declines. **Twenty-nine published pages are still
+  one flat rather than a building** — see the issue for the cleanup.
+
+- **An archive that paginates by recency has no stable batch unit.** The
+  Corbett Heights Neighbors newsletter shows ten or eleven issues to a page,
+  newest first, so an issue slides from page 1 to page 2 as new ones appear.
+  One run recorded its coverage as "page 1 of 5"; two months later the run that
+  took "page 2" re-read the January 2026 issue and had to decline four facts
+  already on pages. **Record coverage as a range of the source's own dates, and
+  name batches the same way.**
+
 - **"Published" is a claim about a page, and it can be false silently.** A
   publisher that sets `building.architect` only if the field is empty does
   nothing when the page already names the same person under another spelling —

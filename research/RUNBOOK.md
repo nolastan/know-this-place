@@ -470,7 +470,7 @@ That prints the table ready to paste. Its columns:
 | **Facts published** | findings that reached a page; more than one can land on the same page |
 | **Conflicts stated** | sentences written to a page's `.unknowns` — the source disagreeing with itself or the assessor, left unadjudicated |
 | **Dates disputed** | pages where the source's construction year disagrees with the assessor's, in `building.completed_conflict` |
-| **Resolved, no page** | resolved to a parcel that cannot carry a page — a condominium, a retired parcel, a parcel off the secured roll |
+| **Declined** | resolved to a parcel and then not published — a duplicate of what the page already carries, an undated claim with no component to hold it, a fact a better source states first |
 
 **Only findings that reached a parcel can be in it**, because the neighborhood
 is a property of the parcel and nothing else. Unresolved and rejected findings

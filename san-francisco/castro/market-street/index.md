@@ -65,7 +65,7 @@ Every residential parcel on Market Street that the city's address, assessor and 
 - [2727](2727/) — A 1965 18-unit apartment building, with a seismic retrofit permitted in 2015.
 - [2775](2775/) — A 1962 32-unit apartment building, with garage work permitted in 2019.
 - [2808–2810](2808/) — A 1922 1-unit apartment building, with garage work permitted in 2012.
-- [3000](3000/) — An 1890 2-unit building with a ground-floor store, with foundation work permitted in 2001.
+- [3000](3000/) — Addressed 2 Merritt Street until upper Market Street swallowed the block, and the corner a stray fair balloon landed on in 1894.
 - [3001–3003](3001/) — An 1886 4-unit building with a ground-floor store, with garage work permitted in 2004.
 - [3005–3007](3005/) — A 1900 two-flat, with facade work permitted in 2024.
 - [3006](3006/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2005.

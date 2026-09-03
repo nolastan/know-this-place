@@ -108,7 +108,26 @@ examples found while seeding:
   in the record; its story belongs on the surviving buildings nearby
   (`danvers-street/56/`, `danvers-street/60/`) and the Danvers Street hub.
 - **2 Mars Street** — appears in a 1925 photograph, but no such address exists
-  in EAS today; Mars begins at 4.
+  in EAS today; Mars begins at 4. The site is the corner parcel 2654001, which
+  the city addresses **4465 17th Street**: the Belle-V Apartments of 1961, whose
+  build year on the roll matches the one the newsletter gives. The newsletter
+  itself hedges the corner as "2 (?) Mars or 4465 17th".
+- **The 3000 block of Market Street was Merritt Street.** Upper Market Street
+  was cut through in the 1920s and Merritt was eliminated; the north side of the
+  block, 3000 to 3094, carries the numbers that replaced it. Two pairs are
+  stated in the record: **2 Merritt is 3000–3002 Market** (the corner at Hattie,
+  built 1890) and **4 Merritt is 3004 Market** — except that no 3004 exists in
+  EAS, which runs 3000, 3006, 3008, 3012, so that one resolves to nothing.
+
+## `building_history` is on hand-written pages only
+
+Several pages in this tree carry a `building_history` object instead of
+`historical_record` — 4, 11, 33, 46, 52, 56, 64 and 75 Mars Street. **The
+renderer does not know that key.** Those pages are in
+`scripts/render-backlog.txt` with hand-written HTML, which is the only reason
+their events appear at all. Writing `building_history` onto any other page puts
+the fact in `data.json` and nowhere a reader can see it, and `validate.py` will
+not say so. A dated fact on a rendered page goes in `historical_record`.
 
 ## Contributed memoirs: take the building, leave the people
 

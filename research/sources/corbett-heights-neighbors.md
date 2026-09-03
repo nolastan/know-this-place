@@ -5,7 +5,7 @@
 >
 > - **Kind:** newsletter archive · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** Page 1 of 5 combed through September 2026; pages 2–5 (38 issues) untouched.
+> - **Coverage:** 32 of the archive's 50 issues read — everything from January 2025 to September 2026. The 18 issues of 2024 and earlier are untouched.
 > - **Local corpus:** `research/corpora/corbett-heights-neighbors/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -66,6 +66,36 @@
     hundred and gains more with each seeding run, so freezing its list was the
     worse trade and the brewery went onto the surviving building's page
     instead. **Weigh the hub route by how big the hub is.**
+  - **Archive page numbers are not a stable batch unit.** The archive
+    paginates by recency, ten or eleven issues to a page, so an issue slides
+    from page 1 to page 2 as new ones are published. The January 2026 issue was
+    read as part of "page 1" and came back as part of "page 2" two months
+    later, and four of its facts had to be declined as already published.
+    **Batch by issue date, and check the newest unread date, not the page.**
+  - **The masthead's volume number is wrong twice.** September and October 2025
+    print "Vol. VI"; the run of volumes either side makes them Vol. VII. Cite
+    the volume as printed and let the publication date carry the identification.
+  - **The 1976 assessor block photographs are a recurring feature and are
+    mostly captions.** A street number and the make of a car parked outside it
+    — 68 of the 96 numbered-address mentions across ten issues. Extract one
+    only where the caption states something about the *building*: "destroyed by
+    fire October 20, 2016", "formerly Wilt Chamberlain's home", "demonished".
+  - **The historical article, not the feature, is where the yield is.** One
+    researched piece — April 2025 on 310 Corbett Avenue — produced an
+    architect, a dated set of plans, a fire, a repair permit and eight years of
+    ownership. The photograph lists produced two facts in ten issues.
+  - **A renumbering the newsletter states itself is still worth a cross-check.**
+    It converts 2 Merritt Street to 3000–3002 Market and 4 Merritt to 3004
+    Market. The first checks out — EAS has 3000 MARKET ST on the corner
+    parcel at Hattie, built 1890, four years before the 1894 event. The second
+    resolves to nothing: EAS has no 3004, the block face runs 3000, 3006, 3008,
+    3012.
+  - **2 Mars Street is 4465 17th Street.** The neighborhood AGENTS.md recorded
+    that no 2 Mars exists; the corner parcel 2654001 is the Belle-V Apartments,
+    and the roll's 1961 matches the build year the January 2026 issue gives.
+  - **655 Corbett Avenue cannot have a page.** It is a 39-unit condominium of
+    1964 and EAS carries the number on one parcel only, which is unit 105. The
+    resolver used to read that as the building; it no longer does.
   - **A worked 1909 renumbering pair:** 77 Clara Avenue is today's **81 Ord
     Street** (August 2026 issue), alongside the 110 Clara → 110 Ord and
     1200 Ashbury → 1200 Clayton pairs already in
@@ -75,12 +105,20 @@
     writes "1937" once in a sentence about the lot's dimensions. Take the
     date the article argues for and record the slip in the finding rather
     than on the page.
-- **Coverage so far:** the archive holds 50 issues across 5 pages. All twelve
-  issues on **page 1** (Dec 2025 – Sep 2026) have now been combed; pages 2–5
-  (38 issues) are untouched. The August and September 2026 issues were read
-  into `findings/corbett-heights-neighbors/vol-viii-no-8.json` and
-  `vol-viii-no-9.json` — 34 findings, 20 resolved, 16 published across 7 pages.
-  Page 1 still holds unwritten material on Hattie Street and upper Clayton —
-  see issue #3.
-- **Verified:** 2026-09-01 (page 1 of the archive, Dec 2025 – Sep 2026; the
-  August and September 2026 issues read in full and published)
+- **Coverage so far:** the archive holds 50 issues. **32 have now been read**
+  — every issue from January 2025 to September 2026 — in three passes:
+  the August and September 2026 issues (`vol-viii-no-8`, `vol-viii-no-9`, 34
+  findings, 20 resolved, 16 published on 7 pages); the ten issues of June 2025
+  to January 2026 (`archive-page-2`, 22 findings, 19 resolved, 9 published on 7
+  pages, and ten declined because the earlier pass had already read the January
+  2026 issue); and the ten of January to May 2025 (`archive-page-3`, 36
+  findings, 32 resolved, 31 published on 26 pages). **What remains is 2024 and earlier, 18
+  issues on the last two archive pages** — and the February 2025 issue names
+  three of them as substantial: March/April 2024 on Denis Kearney of the
+  Workingman's Party, who lived on the stretch of Ord Street that is now the
+  Saturn Street Stairway; June 2024 on the grocery at 4499 17th Street and Raisa
+  Gorbachev's visit to it; and August 2024 on Ruth Asawa's Saturn Street
+  residence. Take those first.
+
+- **Verified:** 2026-09-03 (twenty more issues read in full, January 2025 through
+  January 2026, into `archive-page-2.json` and `archive-page-3.json`)

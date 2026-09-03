@@ -666,6 +666,13 @@ def parcel_note(city: City, parcel: str) -> str:
     return "; ".join(bits)
 
 
+# The assessor's `property_location` is fixed width: four characters of "to"
+# number, four of "from" number, twenty of street name and two of street type,
+# and then the unit designation. `0000` there means the whole parcel; anything
+# else — `0105`, `1903`, `01/2` — means one unit of a stack.
+UNIT_AT = 32
+
+
 def condo_warning(city: City, parcel: str, name: str = "", stype: str = "",
                   matched: list = None) -> str | None:
     """A condominium APN is a unit, not a building — the directory contract's trap.
@@ -675,11 +682,20 @@ def condo_warning(city: City, parcel: str, name: str = "", stype: str = "",
     also lands on old single-address parcels that were condominium-mapped at some
     point and never split. Where EAS holds the recorded numbers on exactly this
     one parcel, there is no stack to defer and the parcel is the building.
+
+    **That escape hatch has its own trap**, and 655 Corbett Avenue is the worked
+    example: a 39-unit condominium of 1964 whose number EAS carries on one parcel
+    only, so the sibling test found no stack and let it through as a building. The
+    roll knew: `property_location` ends in the unit designation, `AV0105`, one flat
+    of the thirty-nine. A whole parcel ends in `0000`. So the hatch closes whenever
+    the roll names a unit, and the stack is deferred whether or not EAS lists it.
     """
     roll = city.roll.get(parcel) or {}
     if "condominium" not in (roll.get("property_class_code_definition") or "").lower():
         return None
-    if name and matched:
+    unit = (roll.get("property_location") or "")[UNIT_AT:].strip()
+    names_a_unit = bool(unit) and unit.strip("0") != ""
+    if name and matched and not names_a_unit:
         siblings = set()
         for n in matched:
             for r in city.rows_for(name, stype, n):
@@ -688,6 +704,13 @@ def condo_warning(city: City, parcel: str, name: str = "", stype: str = "",
                     siblings.add(apn)
         if siblings and siblings <= {parcel}:
             return None
+    if names_a_unit:
+        area = (roll.get("lot_area") or "").strip()
+        return ("the 2025 roll classes this parcel as a Condominium"
+                + (" with zero lot area" if area in ("0", "0.0") else "")
+                + f" and gives its location as unit {unit} of the building, which is a "
+                  "flat and not the building — the root AGENTS.md directory contract "
+                  "defers these until the building's own parcels are established")
     area = (roll.get("lot_area") or "").strip()
     return ("the 2025 roll classes this parcel as a Condominium"
             + (" with zero lot area" if area in ("0", "0.0") else "")
@@ -1545,7 +1568,12 @@ def build_manifest(city: City, data: dict) -> list:
         # let the seeder honour the check that had the evidence.
         roll_row = city.roll.get(apn) or {}
         if "condominium" in (roll_row.get("property_class_code_definition") or "").lower():
-            entry["sole_parcel_for_address"] = True
+            # Only for a whole parcel. A roll row naming a unit never reaches
+            # here — condo_warning declines it — and must never be waved past
+            # the seeder's own check either.
+            unit = (roll_row.get("property_location") or "")[UNIT_AT:].strip()
+            if not unit or unit.strip("0") == "":
+                entry["sole_parcel_for_address"] = True
         if pick:
             if pick.get("latitude"):
                 entry["lat"] = float(pick["latitude"])

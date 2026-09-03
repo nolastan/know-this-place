@@ -4,7 +4,7 @@ Every residential parcel on Uranus Terrace that the city's address, assessor and
 
 ## Documented so far
 
-- [1–11](1/) — A 1900 4-unit building with a ground-floor store, with foundation work permitted in 2013.
+- [1–11](1/) — A flat-and-store corner of 1900 whose grocery has outlasted every other on the hill.
 - [17](17/) — A 1900 single-family house, with a rear addition permitted in 2015.
 - [21–25](21/) — A 1904 two-flat, with a bathroom remodel permitted in 2007.
 - [26](26/) — A 1916 single-family house, with window replacement permitted in 2024.

@@ -14,7 +14,7 @@ Every residential parcel on Upper Terrace that the city's address, assessor and 
 - [143](143/) — A 1919 single-family house, with garage work permitted in 2012.
 - [147](147/) — A 1956 single-family house, with reroofing permitted in 2025.
 - [151](151/) — A 1911 single-family house, with garage work permitted in 2024.
-- [153](153/) — A 1914 single-family house, with a kitchen and bathroom remodel permitted in 2019.
+- [153](153/) — Home of P. H. McCarthy, mayor of San Francisco and founder of the Building Trades Council, from 1915.
 - [169](169/) — A 1929 single-family house, with a kitchen and bathroom remodel permitted in 2016.
 - [175](175/) — A 1929 single-family house, with a rear addition permitted in 2000.
 - [187](187/) — A 1915 single-family house, with a dormer permitted in 1990.

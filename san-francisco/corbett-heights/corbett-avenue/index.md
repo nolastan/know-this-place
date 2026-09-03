@@ -21,6 +21,7 @@ The spine of Corbett Heights, climbing from Market Street toward Twin Peaks. The
 - [242](242/) — A 1900 single-family house, with a rear addition permitted in 1990.
 - [246](246/) — A 1904 single-family house, with plumbing work permitted in 2015.
 - [301–303](301/) — A year old when the earthquake came; it stands above the 1906 refugee camp in the photograph of it.
+- [310](310/) — A 1962 house of no right angles, repaired after a fire by Wilt Chamberlain, who owned it until 1975.
 - [328](328/) — On the skyline in the 1906 photograph, and on the hill in a 1909 view of a corner that no longer exists.
 - [349](349/) — Caught mid-construction in 1909, its pyramid roof up and nothing else finished.
 - [350–352](350/) — A 1900 two-flat, with foundation work permitted in 1998.
