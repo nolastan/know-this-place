@@ -327,7 +327,7 @@ more sensitive rather than less.
 
 - **Verified:** 2026-09-02 (read, resolved and published **SFP 162, the San
   Francisco Subjects Photograph Collection**, whole: 34,738 records → 1,186
-  findings → 662 on a parcel → **545 published on 481 pages** in #000, 235 of
+  findings → 662 on a parcel → **545 published on 481 pages** in #215, 235 of
   them seeded for it, 117 declined. Findings:
   [`../findings/digitalsf/sfp-162.json`](../findings/digitalsf/sfp-162.json).
   183 of the published entries name the building or business the caption names —
