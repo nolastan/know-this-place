@@ -615,6 +615,23 @@ def overlap(path: Path) -> None:
     # only reliable way to tell "the page already had this" from "this batch just
     # wrote it" is the text of the batch's own findings.
     ours = {f.get("description", "") for f in data.get("findings", [])}
+
+    def is_ours(entry: dict) -> bool:
+        """Did this batch write this entry?
+
+        Matching on the description text alone is not enough: a publisher
+        trims the address and the date out of a finding's sentence before it
+        goes on the page, so "Willard E. Worden photographed the property at
+        710 Victoria Street in 1912" is stored as "…photographed the house."
+        and every entry the batch had just written came back as a duplicate of
+        itself — 60 of them in one run. Where a source cites per item, the
+        page's source id is the register id with the item appended
+        (`digitalsf-8325`), so the prefix is the reliable test.
+        """
+        src = entry.get("source") or ""
+        return (src in (source_id, data.get("batch"))
+                or (bool(source_id) and src.startswith(source_id + "-"))
+                or entry.get("description", "") in ours)
     hits, name_hits, roll_hits, proper_hits, checked, missing = [], [], [], [], 0, 0
     for finding in data.get("findings", []):
         res = finding.get("resolution") or {}
@@ -650,9 +667,7 @@ def overlap(path: Path) -> None:
         names = _people(who)
         if names and mine_year:
             for entry in doc.get("historical_record", []):
-                if entry.get("source") in (source_id, data.get("batch")):
-                    continue
-                if entry.get("description", "") in ours:
+                if is_ours(entry):
                     continue
                 their_year = _year(entry.get("date"))
                 if their_year is None or abs(their_year - mine_year) > 2:
@@ -667,9 +682,7 @@ def overlap(path: Path) -> None:
         wanted = _proper_names(finding.get("extra"))
         if wanted:
             for entry in doc.get("historical_record", []):
-                if entry.get("source") in (source_id, data.get("batch")):
-                    continue
-                if entry.get("description", "") in ours:
+                if is_ours(entry):
                     continue
                 low = entry.get("description", "").lower()
                 found = sorted(n for n in wanted if n.lower() in low)
@@ -691,9 +704,7 @@ def overlap(path: Path) -> None:
         theirs: set[str] = set()
         for entry in doc.get("historical_record", []):
             # An entry this batch wrote is not evidence the page already had it.
-            if entry.get("source") in (source_id, data.get("batch")):
-                continue
-            if entry.get("description", "") in ours:
+            if is_ours(entry):
                 continue
             theirs |= _words(entry.get("description", ""))
         for key in ("hook", "narrative"):

@@ -12,10 +12,14 @@ Court.
 - [Broadmoor Drive](broadmoor-drive/) — 2 buildings, built 1941–1942.
 - [Cedro Avenue](cedro-avenue/) — 1 building, built 1912; 1 in the Ingleside Terrace Historic District.
 - [Cerritos Avenue](cerritos-avenue/) — 1 building, built 1912; 1 in the Ingleside Terrace Historic District.
+- [De Soto Street](de-soto-street/) — 8 buildings, built 1912–1914; 8 in the Ingleside Terrace Historic District.
 - [Garfield Street](garfield-street/) — 1 building, built 1937.
+- [Head Street](head-street/) — 1 building, built 1913; 1 in the Ingleside Terrace Historic District.
 - [Junipero Serra Boulevard](junipero-serra-boulevard/) — 1 building, built 1936.
+- [Mercedes Way](mercedes-way/) — 4 buildings, built 1912–1914; 4 in the Ingleside Terrace Historic District.
 - [Moncada Way](moncada-way/) — 1 building, built 1912; 1 in the Ingleside Terrace Historic District.
 - [Ocean Avenue](ocean-avenue/) — 4 buildings, built 1917–1933; 1 in the Ingleside Terrace Historic District.
+- [Paloma Avenue](paloma-avenue/) — 4 buildings, built 1912–1914; 4 in the Ingleside Terrace Historic District.
 - [Urbano Drive](urbano-drive/) — 1 building, built 1927; 1 in the Ingleside Terrace Historic District.
 - [Victoria Street](victoria-street/) — 5 buildings, built 1912–1927; 5 in the Ingleside Terrace Historic District.
 - [Westwood Drive](westwood-drive/) — 1 building, built 1924.

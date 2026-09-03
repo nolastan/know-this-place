@@ -1405,6 +1405,23 @@ def build_manifest(city: City, data: dict) -> list:
         eas_name, stype, _ = city.normalize(name, f.get("street_type"))
         eas_name = eas_name or name
         rows = [r for r in city.by_parcel.get(apn, []) + city.by_effective.get(apn, [])]
+        # A building that has been readdressed resolves onto a street the
+        # finding never names — the Worden plate headed "299 Moncada Way" whose
+        # own note says the address is now 101 Paloma Avenue, and every other
+        # "site of today's #N" record. The path already carries the new street;
+        # taking the name from the finding leaves the entry's `street_name`
+        # disagreeing with its `street_slug`, which matches no EAS row on the
+        # parcel, so the entry gets no coordinates and the seeder dies on a
+        # KeyError. The resolution's own `eas_address` is the address that was
+        # actually placed, so ask the parcel's rows which one it is.
+        landed = next((r for r in rows
+                       if eas_label(r.get("street_name") or "",
+                                    r.get("street_type"),
+                                    (r.get("address_number") or "").upper())
+                       == (res.get("eas_address") or "")), None)
+        if landed and (landed.get("street_name") or "") != eas_name:
+            eas_name = landed.get("street_name") or eas_name
+            stype = landed.get("street_type") or ""
         same = [r for r in rows if (r.get("street_name") or "") == eas_name]
         stype = stype or next((r.get("street_type") for r in same), "") or ""
         # The path already carries the parcel's lowest number, and it is worked

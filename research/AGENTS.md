@@ -1200,6 +1200,86 @@ The mechanics:
   named office block), the name is evidence that the building described is the
   one standing, and an ordinary construction-date disagreement is the honest
   form. Two of that volume's four candidates moved that way.
+- **Size a batch on what its addressed half is *about*, not on how many rows
+  it has.** DigitalSF's dossier ordered its 44 collections by addressed-record
+  count and named the largest untouched one as the next batch. Its 184
+  addressed captions turned out to be a neighbourhood newspaper's photographs of
+  the people of the Tenderloin — **177 of 184 carry a personal-name shape, 82
+  name someone in a role**, most of them tenants in rent strikes and evictions,
+  and most of them alive. The name filter keeps all of that off a page, but
+  `raw.text` carries the caption verbatim into a committed findings file, which
+  is naming an occupant in the repository — the thing the privacy limits bar *at
+  extraction time*. **A collection can be the largest, the best documented and
+  the wrong one to read.** Check what the addressed captions say before
+  budgeting a session on the count, and where the answer is people, that is a
+  decision for a person and not a batch.
+
+- **A caption's own district heading reads as a building name.** Every Worden
+  plate ends "in Ingleside Terraces", `terrace` is a building noun, and the
+  named-buildings filter kept the *district* as the building's name on sixty
+  pages. The fix was not a stop-list: the record already carries its
+  `650$a Districts--Ingleside Terraces` heading, exactly as it carries the
+  `Streets--` headings the filter was already given to recognise a bare street
+  name. *When a filter needs to know that a phrase is a place, ask the record
+  before writing the phrase down — a catalogue that indexes by place has already
+  told you.*
+
+- **A tool that builds a page's identity from the finding rather than from the
+  resolution breaks on every readdressed building.** `resolve_eas.py manifest`
+  took `street_name` and `street_type` from the finding — the address as
+  recorded — while taking the slug from `resolution.path`. For the Worden plate
+  headed "299 Moncada Way" whose note says the address is now 101 Paloma Avenue,
+  that produced a manifest entry reading `street_slug: paloma-avenue` with
+  `street_name: MONCADA`, which matches no EAS row on the parcel, so the entry
+  got no coordinates and `seed_pages.py` died on a bare `KeyError: 'lat'`. The
+  resolution's `eas_address` is the address that was actually placed. *Anything
+  downstream of a resolution should read the resolution, not the finding it came
+  from — they agree on every ordinary record and disagree on exactly the ones
+  the module has a rule about.*
+
+- **A duplicate check that recognises your own writes by their wording will not
+  recognise them.** `check.py --overlap` excluded a page entry when its text
+  matched a finding's `description` — but a publisher trims the address and the
+  date out of that sentence before it goes on the page, so "Willard E. Worden
+  photographed the property at 710 Victoria Street in 1912" is stored as
+  "…photographed the house." and **all sixty** of a batch's own entries came
+  back as duplicates of themselves, burying the four real flags underneath. The
+  reliable key is the source id: where a source cites per item, the page's id is
+  the register id with the item appended (`digitalsf-8325`), so the prefix test
+  works. *Same shape as the idempotency lesson above, in the checking tool
+  rather than the publishing one — anything that asks "did the page already say
+  this?" has to be able to tell your own writes apart, and text is not how.*
+
+- **A pattern keyed on capitalization is a claim about the source's house
+  style, and sources do not keep to one.** The DigitalSF extractor matched a
+  street name as capitalized tokens, so "743 Washington street" — which is how
+  that catalogue writes an address about a third of the time — parsed as *743
+  Washington*. It cost three different things at once, which is why it went
+  unnoticed through a whole published batch: the finding recorded
+  `street_type_not_stated` about a record that stated it, the orphaned "street"
+  left in the caption failed the name filter's all-capitalized test and took the
+  building's name down with it, and the resolution method said "the record
+  states no street type" — which sent a 12th Street address to the
+  Street-or-Avenue tie-break for want of a word the record had printed.
+  *Before trusting a case-sensitive pattern, grep the corpus for the lower-case
+  form of what it is looking for and count.*
+
+- **A filter that drops on positive evidence still has to be told what the
+  evidence looks like from both ends.** The same extractor's
+  `named-buildings-only` policy — every word capitalized, one of them a building
+  noun — is the right trade for a caption collection, because a false keep is a
+  privacy failure. What it lost was names the caption *frames*: "Main entrance
+  to the Marines' Memorial Club", "Courtyard at the San Francisco Art
+  Institute", "Bank of Canton located at …". Widening the prefix list at the
+  front, stripping the trailing participle at the back, and completing eight
+  noun families recovered 42 names on 53 findings with nothing lost — because
+  none of those edits touched the policy, only what reaches it. **The one
+  proposed widening that was rejected is the shape to remember:** "home" would
+  have kept fourteen funeral homes and also "Home of Charles Berta" and "Home of
+  Katherine Modesti". *A head noun that reads as a building in a firm's name and
+  as a dwelling in a resident's is not safe as a bare noun, whatever the ratio —
+  and the ratio is what makes it tempting.*
+
 - **A second architect on a building the page already credits is an addition,
   not a duplicate — and neither overlap scan will tell you so.** The name-and-date
   scan compares the *same* name, so a different collaborator never matches; the

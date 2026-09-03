@@ -1,0 +1,123 @@
+{
+  "address": "15 Cerritos Avenue, San Francisco, CA 94127",
+  "path": "/san-francisco/ingleside-terraces/cerritos-avenue/15/",
+  "apn": "6913003",
+  "block": "6913",
+  "lot": "003",
+  "eas_baseid": "408378",
+  "coordinates": {
+    "lat": 37.726698,
+    "lng": -122.46684
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 7087,
+    "building_area_sqft": 2166,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Ingleside Terrace",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0015 CERRITOS            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 424888,
+    "assessed_improvement_value": 234526,
+    "last_sale_date": "1990-05-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Ingleside Terrace Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1910–1930",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "9111703",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-07-03",
+      "status_date": "1991-09-30",
+      "estimated_cost": 300,
+      "description": "construct new curb cut to widen existing driveway exit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9017148S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-08-28",
+      "status_date": "1994-01-04",
+      "estimated_cost": 15000,
+      "revised_cost": 32000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CERRITOS&street_type=AVE&address_number=15",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6913003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6913&lot=003",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6913003",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.46683985832793%2037.72669757833621)%27)",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "digitalsf-8252",
+      "name": "15 Cerritos Avenue, between 1912 and 1915. Willard E. Worden Glass Plate Negatives (SFP 22), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/8252",
+      "label": "Willard E. Worden Glass Plate Negatives (SFP 22), San Francisco Public Library",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "between 1912 and 1915",
+      "kind": "photograph",
+      "description": "Willard E. Worden photographed the house.",
+      "source": "digitalsf-8252"
+    }
+  ]
+}
