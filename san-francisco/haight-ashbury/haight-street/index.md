@@ -27,6 +27,7 @@ The parcels on Haight Street documented here so far, from the city's address, as
 - [1768–1772](1768/) — A 1900 2-unit building with a ground-floor store in the Haight Ashbury Counterculture Historic District, with a bathroom remodel permitted in 2017.
 - [1778–1784](1778/) — A 1912 store building in the Haight Ashbury Counterculture Historic District, with reroofing permitted in 2016.
 - [1795–1797](1795/) — A 1904 14-unit apartment building, with a seismic retrofit permitted in 2018.
+- [1800–1818](1800/) — A 1939 store building, with reroofing permitted in 2012.
 - [1801](1801/) — A 1914 store building, with a rear addition permitted in 1992.
 - [1835–1855](1835/) — A 1950 store building, with a seismic retrofit permitted in 2026.
 

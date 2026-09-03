@@ -1,123 +1,136 @@
 {
-  "address": "1666–1670 Union Street, San Francisco, CA 94123",
-  "path": "/san-francisco/marina/union-street/1666/",
-  "apn": "0528009D",
-  "block": "0528",
-  "lot": "009D",
-  "eas_baseid": "284352",
-  "coordinates": {
-    "lat": 37.798447,
-    "lng": -122.426794
+ "address": "1666–1670 Union Street, San Francisco, CA 94123",
+ "path": "/san-francisco/marina/union-street/1666/",
+ "apn": "0528009D",
+ "block": "0528",
+ "lot": "009D",
+ "eas_baseid": "284352",
+ "coordinates": {
+  "lat": 37.798447,
+  "lng": -122.426794
+ },
+ "address_range": "1666–1670",
+ "street_numbers_on_parcel": [
+  "1666",
+  "1668",
+  "1670"
+ ],
+ "parcel": {
+  "year_built": 1950,
+  "units": 5,
+  "stories": 2,
+  "rooms": 12,
+  "bathrooms": 4,
+  "lot_area_sqft": 2809,
+  "building_area_sqft": 3020,
+  "use": "Commercial Retail",
+  "property_class": "Commercial Stores",
+  "construction_type_code": "D",
+  "zoning": "UNION",
+  "supervisor_district": 2,
+  "assessor_neighborhood": "Cow Hollow",
+  "analysis_neighborhood": "Marina",
+  "property_location_raw": "1670 1666 UNION               ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 488599,
+  "assessed_improvement_value": 570036
+ },
+ "historic_status": {
+  "ceqa_status_code": "B",
+  "ceqa_status_code_article_10_11": "B",
+  "ceqa_status_label": "Unevaluated",
+  "reason": "No evaluation and 45 years or older",
+  "yearbuilt": "1950",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "permits": [
+  {
+   "number": "201404022310",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "2014-04-02",
+   "status_date": "2014-07-09",
+   "estimated_cost": 8000,
+   "revised_cost": 8000,
+   "description": "tile shower/flooring/drywall replacement in bathroom & kitchen only. no changes to door or windows under this permit. work to be done in one unit",
+   "source": "sf-building-permits"
   },
-  "address_range": "1666–1670",
-  "street_numbers_on_parcel": [
-    "1666",
-    "1668",
-    "1670"
-  ],
-  "parcel": {
-    "year_built": 1950,
-    "units": 5,
-    "stories": 2,
-    "rooms": 12,
-    "bathrooms": 4,
-    "lot_area_sqft": 2809,
-    "building_area_sqft": 3020,
-    "use": "Commercial Retail",
-    "property_class": "Commercial Stores",
-    "construction_type_code": "D",
-    "zoning": "UNION",
-    "supervisor_district": 2,
-    "assessor_neighborhood": "Cow Hollow",
-    "analysis_neighborhood": "Marina",
-    "property_location_raw": "1670 1666 UNION               ST0000"
+  {
+   "number": "9909560",
+   "type": "otc alterations permit",
+   "status": "expired",
+   "filed": "1999-05-14",
+   "status_date": "1999-11-14",
+   "estimated_cost": 6800,
+   "description": "reroofing",
+   "source": "sf-building-permits"
   },
-  "assessment": {
-    "roll_year": 2025,
-    "assessed_land_value": 488599,
-    "assessed_improvement_value": 570036
+  {
+   "number": "9006598",
+   "type": "sign - erect",
+   "status": "expired",
+   "filed": "1990-04-06",
+   "status_date": "1991-03-21",
+   "estimated_cost": 260,
+   "description": "sign",
+   "source": "sf-building-permits"
+  }
+ ],
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=UNION&street_type=ST&address_number=1666",
+   "retrieved": "2026-08-16"
   },
-  "historic_status": {
-    "ceqa_status_code": "B",
-    "ceqa_status_code_article_10_11": "B",
-    "ceqa_status_label": "Unevaluated",
-    "reason": "No evaluation and 45 years or older",
-    "yearbuilt": "1950",
-    "in_article_10_11_historic_district": false,
-    "source": "sf-planning"
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0528009D&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-08-16"
   },
-  "permits": [
-    {
-      "number": "201404022310",
-      "type": "otc alterations permit",
-      "status": "complete",
-      "filed": "2014-04-02",
-      "status_date": "2014-07-09",
-      "estimated_cost": 8000,
-      "revised_cost": 8000,
-      "description": "tile shower/flooring/drywall replacement in bathroom & kitchen only. no changes to door or windows under this permit. work to be done in one unit",
-      "source": "sf-building-permits"
-    },
-    {
-      "number": "9909560",
-      "type": "otc alterations permit",
-      "status": "expired",
-      "filed": "1999-05-14",
-      "status_date": "1999-11-14",
-      "estimated_cost": 6800,
-      "description": "reroofing",
-      "source": "sf-building-permits"
-    },
-    {
-      "number": "9006598",
-      "type": "sign - erect",
-      "status": "expired",
-      "filed": "1990-04-06",
-      "status_date": "1991-03-21",
-      "estimated_cost": 260,
-      "description": "sign",
-      "source": "sf-building-permits"
-    }
-  ],
-  "sources": [
-    {
-      "id": "sf-eas-addresses",
-      "name": "SF Enterprise Addressing System via DataSF",
-      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=UNION&street_type=ST&address_number=1666",
-      "retrieved": "2026-08-16"
-    },
-    {
-      "id": "sf-assessor-roll",
-      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
-      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0528009D&$order=closed_roll_year%20DESC&$limit=1",
-      "retrieved": "2026-08-16"
-    },
-    {
-      "id": "sf-building-permits",
-      "name": "SF Dept. of Building Inspection via DataSF",
-      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0528&lot=009D",
-      "retrieved": "2026-08-16"
-    },
-    {
-      "id": "sf-planning",
-      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
-      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0528009D",
-      "retrieved": "2026-08-16"
-    },
-    {
-      "id": "digitalsf-54581",
-      "name": "1666-1668 Union Street, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
-      "query": "https://digitalsf.org/record/54581",
-      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
-      "retrieved": "2026-08-15"
-    }
-  ],
-  "historical_record": [
-    {
-      "date": "1951-06-13",
-      "kind": "photograph",
-      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment. Theodore School of Music was at the address.",
-      "source": "digitalsf-54581"
-    }
-  ]
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0528&lot=009D",
+   "retrieved": "2026-08-16"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0528009D",
+   "retrieved": "2026-08-16"
+  },
+  {
+   "id": "digitalsf-54581",
+   "name": "1666-1668 Union Street, 1951. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+   "query": "https://digitalsf.org/record/54581",
+   "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+   "retrieved": "2026-08-15"
+  },
+  {
+   "id": "digitalsf-8850",
+   "name": "1666 Union Street, 1958. Robert Durden Color Slide Collection (SFP 42), San Francisco History Center, San Francisco Public Library.",
+   "query": "https://digitalsf.org/record/8850",
+   "label": "Robert Durden Color Slide Collection (SFP 42), San Francisco Public Library",
+   "retrieved": "2026-09-02"
+  }
+ ],
+ "historical_record": [
+  {
+   "date": "1951-06-13",
+   "kind": "photograph",
+   "description": "The Office of the Assessor-Recorder photographed the property for tax assessment. Theodore School of Music was at the address.",
+   "source": "digitalsf-54581"
+  },
+  {
+   "date": "1958-12",
+   "kind": "photograph",
+   "description": "Robert Durden photographed the property, showing Theodore School of Music.",
+   "source": "digitalsf-8850"
+  }
+ ]
 }

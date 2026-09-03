@@ -25,8 +25,10 @@ The parcels on Sixth Street documented here so far, from the city's address, ass
 - [139–149](139/) — A 1909 hotel in the Sixth Street Lodging House Historic District, with fire repair permitted in 2005.
 - [151–155](151/) — A 1925 store building in the Sixth Street Lodging House Historic District, with foundation work permitted in 2011.
 - [157–161](157/) — A 1907 hotel in the SoMa LGBTQ Historic District, with a seismic retrofit permitted in 1994.
+- [162–170](162/) — A 1908 hotel in the Sixth Street Lodging House Historic District, with a seismic retrofit permitted in 2018.
 - [169–183](169/) — A 1912 hotel in the Sixth Street Lodging House Historic District, with plumbing work permitted in 2007.
 - [172–180](172/) — A 1913 76-unit apartment building in the Sixth Street Lodging House Historic District, with reroofing permitted in 2026.
+- [184](184/) — A 1907 50-unit apartment building in the Sixth Street Lodging House Historic District, with stair work permitted in 1987.
 - [185–193](185/) — A 1907 7-unit apartment building in the Sixth Street Lodging House Historic District, with plumbing work permitted in 2010.
 - [201–211](201/) — A 1907 hotel in the Sixth Street Lodging House Historic District, with a seismic retrofit permitted in 1991.
 - [219–221](219/) — A 1908 hotel in the Sixth Street Lodging House Historic District, with stair work permitted in 1989.

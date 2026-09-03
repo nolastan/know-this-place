@@ -199,6 +199,56 @@ live in the dossiers. **Add to this list** whenever a run discovers something a
 future run would otherwise repeat — that is what makes this module improve
 rather than just accumulate.
 
+- **A field shared by many records is about the batch, not the record.** The
+  Lee Sims photographs carry a `500$a` "Photographer's notes" that reads like a
+  per-item address — *160 October 1970, 700 block Howard Street, Jim's General
+  Merchandise, 789 Howard; Imperial Hotel; Panama Hotel* — and **385 of its 431
+  instances are on a note shared by more than one record**, because it describes
+  a 36-frame roll and is attached to all 36 frames. Read per-record it puts every
+  building on the roll at every other one's address. The same shape turns up as a
+  folder title in an archive, a header row repeated down a scanned table, and a
+  volume-level note in a finding aid. **Before using any metadata field as an
+  address, count its distinct values against the record count.** Roughly one
+  per record means someone wrote it about that item; far fewer means it belongs
+  to the roll, the folder or the accession.
+
+- **A modern geocode attached to an old record locates the camera, not the
+  subject.** SFP 169's donor appended a street address to 549 of 918 slides —
+  *"SF Opera House from Franklin. 406 Franklin St"*, *"Elevated View Opera House
+  & War Memorial. 1390 Market St"* — and those name the viewpoint, not the
+  building in the frame. Where the same note also states a number in its own
+  prose the two disagree about as often as they agree: 2324 against 2330
+  Chestnut, 230 against 250 Brannan, 581 against 553 Buckingham. It is the most
+  seductive shape this module meets, because a geocode always resolves: it is
+  well-formed, it is current, and EAS confirms it. **Treating it as the address
+  would have produced about 300 confidently wrong findings in a collection whose
+  honest yield is 21.** The rule that survives: a coordinate or address supplied
+  *by the digitizer* is provenance about the scan, and only a number stated by
+  the record's own describer is a claim about a building.
+
+- **A quoted title, a model number and a background landmark all parse as street
+  addresses.** `"200 Years of Resistance" on Uganda Liquors` yielded *200 Years
+  Street*; *Sikorsky HH-52A Seaguard* yielded *52A Seaguard*; *"a construction
+  crane in the middle of the street. 555 Market in background"* put a photograph
+  of Market Street on a skyscraper's page. Each is the same failure as the
+  footnote-marker trap already recorded below — **a number next to a capitalised
+  word is not an address, it is a shape** — and each is cheap to guard once
+  named: strip quoted spans the way parentheses are stripped, refuse a number
+  whose left-hand neighbour is a hyphen, and check for a qualifier **after** the
+  number as well as before it.
+
+- **Privacy binds on `raw.text`, which is committed, not only on the page.** A
+  collection can be a buildings source and a privacy problem at once: SFP 125's
+  addressed half names South of Market hotels by street number, and one of the
+  same captions reads *"[name withheld] room in Daton Hotel, 175 3rd Street,
+  personal items atop dresser next to sink"*. The publication filters never see
+  it, because it never reaches a page — and it is in the repository anyway.
+  Redact the record's own personal-name subject headings out of the quoted span
+  when the finding is written, and refuse to carry a free-text archival note
+  into the findings file at all where that note is a donor's or a photographer's
+  prose about who is in the frame. The citation URL is a better audit trail than
+  a verbatim caption, and it carries nobody.
+
 - **A pre-1909 address that resolves cleanly is the module's most convincing
   wrong answer.** The 1909 renumbering moved street numbers across much of the
   city, and an EAS join cannot see it: the number exists today, it sits on a
@@ -301,8 +351,8 @@ rather than just accumulate.
   take an undated finding before you publish it, and decline it if none will** —
   the renderer will not stop you writing it into the timeline. The Modern
   Architecture statement wrote 92 of these before a render caught them, and the
-  same defect was live on two pages from an earlier batch. `check.py` now warns
-  on it, and the backlog is issue #206.
+  same defect was live on two pages from an earlier batch. `check.py` now fails
+  the run on it; the backlog it was raised against has been swept.
 
 - **In a born-digital PDF, a footnote marker manufactures street addresses.**
   `pdftotext` renders a superscript reference number inline, so a marker that

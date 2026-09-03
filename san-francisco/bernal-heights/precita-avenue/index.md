@@ -4,6 +4,7 @@ The parcels on Precita Avenue documented here so far, from the city's address, a
 
 ## Documented so far
 
+- [189–191](189/) — A 1900 single-family house, with window replacement permitted in 1994.
 - [270](270/) — A 1904 single-family house, with fire repair permitted in 1993.
 - [286–288 Precita Avenue](286/) — Four units of 1905 on a 1,875 sq ft lot, with a permit record that opens on a 1984 fire; a 1974 Patty Hearst address.
 

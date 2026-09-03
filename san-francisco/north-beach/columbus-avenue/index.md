@@ -16,6 +16,7 @@ The parcels on Columbus Avenue documented here so far, from the city's address, 
 - [532](532/) — A 1915 store building, with a kitchen remodel permitted in 2022.
 - [552–566](552/) — A 1909 flat and apartment building on one parcel in the Washington Square Historic District, with a kitchen and bathroom remodel permitted in 2014.
 - [716–722](716/) — A 1907 12-unit building with a ground-floor store, with a rear addition permitted in 1988.
+- [750–760](750/) — A 1909 8-unit building with a ground-floor store, with facade work permitted in 2006.
 - [801–803](801/) — A 1933 3-unit building with a ground-floor store, with foundation work permitted in 2003.
 - [1040](1040/) — A 1950 store building, with reroofing permitted in 1987.
 - [1050](1050/) — A 1961 12-unit apartment building, with fire repair permitted in 2015.

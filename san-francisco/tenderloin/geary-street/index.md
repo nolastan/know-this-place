@@ -32,6 +32,7 @@ The parcels on Geary Street documented here so far, from the city's address, ass
 - [807–815](807/) — A 1926 hotel in the Uptown Tenderloin Historic District, with reroofing permitted in 2006.
 - [846–854](846/) — A 1922 26-unit apartment building in the Uptown Tenderloin Historic District, with a kitchen remodel permitted in 2014.
 - [860](860/) — A 1913 41-unit apartment building in the Uptown Tenderloin Historic District, with reroofing permitted in 2025.
+- [869–887](869/) — A 1922 store building in the Uptown Tenderloin Historic District, with reroofing permitted in 1991.
 - [882–886](882/) — A 1916 3-unit building with a ground-floor store in the Uptown Tenderloin Historic District, with stair work permitted in 2012.
 - [890](890/) — A 1916 27-unit apartment building in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 2001.
 - [900–924](900/) — A 1909 hotel in the Uptown Tenderloin Historic District, with fire repair permitted in 1999.
