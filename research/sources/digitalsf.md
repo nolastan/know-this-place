@@ -165,8 +165,7 @@ building at 237 Leavenworth Street". The name filter keeps every one of those
 off a page, but `raw.text` carries the caption verbatim into a committed
 findings file, and these are living people in rent strikes and evictions. SFP
 179 is the same collection shape. **Neither is a batch until someone decides
-what a findings file may hold about a named tenant** — see the issue filed with
-this run. SFP 22, 42, 90 and 125 are about buildings and are the ones to take
+what a findings file may hold about a named tenant** — see #217. SFP 22, 42, 90 and 125 are about buildings and are the ones to take
 meanwhile.
 
 An earlier version of this table listed the murals collection as **SFP 173**.
@@ -343,7 +342,7 @@ more sensitive rather than less.
 
 - **Verified:** 2026-09-02 (read, resolved and published **SFP 22, the Willard
   E. Worden Glass Plate Negatives**, whole: 433 records → 77 findings → 72 on a
-  parcel → **60 published on 59 pages** in #217, 50 of them seeded for it, 12
+  parcel → **60 published on 59 pages** in #218, 50 of them seeded for it, 12
   declined. Findings:
   [`../findings/digitalsf/sfp-22.json`](../findings/digitalsf/sfp-22.json).
 
@@ -439,7 +438,7 @@ more sensitive rather than less.
     Ludlum Steel Corporation" — stripped now by `CAPTION_PREFIX`, and a fragment
     that is nothing but a building noun ("Building", "House") is dropped. The
     first pass over this collection left three shapes of framing behind, which
-    #217 fixed and which are worth knowing before reading the next caption
+    #218 fixed and which are worth knowing before reading the next caption
     collection:
 
     - **A part of the building in front of the name** — "Main entrance to the
