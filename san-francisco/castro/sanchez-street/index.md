@@ -35,6 +35,7 @@ Every residential parcel on Sanchez Street that the city's address, assessor and
 - [135](135/) — SFFD Station No. 6, built 1948 — the first fire station in Duboce Triangle.
 - [145–147](145/) — A 1940 two-flat, with facade work permitted in 2008.
 - [150–154](150/) — A 1904 6-unit apartment building in the Duboce Triangle Historic District, with a kitchen and bathroom remodel permitted in 2019.
+- [151](151/) — A 1940 building, with a bathroom remodel permitted in 2019.
 - [156–160](156/) — A 1901 5-unit apartment building in the Duboce Triangle Historic District, with a seismic retrofit permitted in 2016.
 - [201–207](201/) — A 1906 7-unit apartment building in the Upper Market Street Commercial Historic District, with plumbing work permitted in 2012.
 - [209](209/) — A 1905 6-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2020.
@@ -53,6 +54,7 @@ Every residential parcel on Sanchez Street that the city's address, assessor and
 - [287](287/) — A 1924 6-unit apartment building, with a seismic retrofit permitted in 2017.
 - [295](295/) — A 1917 single-family house, with a rear addition permitted in 2013.
 - [310–312](310/) — A 1900 single-family house, with a vertical addition permitted in 2005.
+- [315–317](315/) — An 1885 6-unit apartment building with a ground-floor store, with stair work permitted in 2017.
 - [320](320/) — A 1905 two-flat, with one permit record from 2011.
 - [325](325/) — Everett Middle School, built in the 1920s to John Reid, Jr.'s eclectic Spanish Revival design.
 - [328–332](328/) — A 1905 5-unit apartment building, with a seismic retrofit permitted in 2013.

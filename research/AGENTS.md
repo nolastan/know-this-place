@@ -199,6 +199,29 @@ live in the dossiers. **Add to this list** whenever a run discovers something a
 future run would otherwise repeat — that is what makes this module improve
 rather than just accumulate.
 
+- **Identical extraction output across many files means you extracted a
+  wrapper, not the documents.** 43 of SF Planning's 81 DPR 523 survey PDFs are
+  **Adobe PDF Packages**: the outer PDF is a one-page "install Adobe Reader"
+  notice and the real documents are *embedded files* inside it. `pdftotext`
+  returned the same 621 characters for all 43, and a bulk pass that only counted
+  bytes would have recorded 43 documents read and nothing found. `pdfdetach
+  -list` / `-save` got 553 per-address forms out of them. The general rule is
+  cheap and catches this whole family — a portfolio, a redirect page, a
+  cookie wall, a "your download will begin shortly" shell: **after any bulk text
+  extraction, count the distinct outputs.** If N files produced far fewer than N
+  distinct texts, you have not read the corpus.
+
+- **A finding's `date` is the date of the *fact*; the renumbering question is
+  about the date of the *address*.** They are usually the same and for a modern
+  survey of an old building they are a century apart. The Market & Octavia DPR
+  forms were written in 2006, in 2006's street numbers, about buildings put up
+  in the 1880s — and `resolve_eas.py`'s pre-1910 guard refused 200 of 473 of
+  them for a renumbering that had already happened long before the surveyor
+  wrote the address down. When a source's addresses are contemporary with the
+  *reading* rather than the *event*, say so before resolving, and check the
+  guard's exemption applies. The fix was to exempt records that print their own
+  assessor block and lot, which is the guard's own stated condition.
+
 - **A field shared by many records is about the batch, not the record.** The
   Lee Sims photographs carry a `500$a` "Photographer's notes" that reads like a
   per-item address — *160 October 1970, 700 block Howard Street, Jim's General

@@ -23,6 +23,7 @@ Every residential parcel on 16th Street that the city's address, assessor and pe
 - [3427](3427/) — A 1900 single-family house, with electrical work permitted in 2004.
 - [3430–3434](3430/) — A 1902 three-flat, with reroofing permitted in 1997.
 - [3436–3438](3436/) — A 1902 5-unit apartment building, with a kitchen and bathroom remodel permitted in 2020.
+- [3450–3452](3450/) — A 1983 16-unit apartment building with a ground-floor store, with an addition permitted in 2019.
 - [3460](3460/) — A 1908 4-unit apartment building, with deck work permitted in 2021.
 - [3466–3470](3466/) — A 1900 two-flat, with an accessory dwelling unit permitted in 2022.
 - [3475](3475/) — A 1912 16-unit apartment building, with a seismic retrofit permitted in 2019.

@@ -5,8 +5,9 @@
 >
 > - **Kind:** PDF reports (SF Planning) · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 44 documents read and listed below; the rest are one open GitHub
->   issue each. The biographies collection is finished — all eight volumes read.
+> - **Coverage:** 44 documents plus the 81-PDF DPR 523 survey-forms page read and
+>   listed below; the rest are one open GitHub issue each. The biographies
+>   collection is finished — all eight volumes read.
 > - **Local corpus:** `research/corpora/sf-context-statements/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -5410,3 +5411,99 @@ appendices restart their own numbering.
   addresses again. Coverage note: this document is read in full and nothing in
   it is outstanding; the addresses for its subject are in the 2015 LGBTQ context
   statement and the 2004 sexual-identity subcultures statement, both mined.)
+
+## The DPR 523 survey forms
+
+SF Planning publishes a page of **DPR 523 survey forms** —
+<https://sfplanning.org/historic-preservation-survey-forms-dpr523> — that is not
+the context-statement listing and is not linked from it. 81 PDFs in three
+sections: the Automotive Support Structures Survey (29), the Market & Octavia
+Augmentation Survey and its Hayes Valley district forms (7), and 45 more under a
+heading of "Other" which are the rest of the Market & Octavia survey area,
+batched by street and number range. Read in full on 2026-09-03 as batches
+`market-octavia-survey-forms` and `van-ness-auto-row-forms`.
+
+**This is the answer to issue #115.** The Market & Octavia Historic Resources
+Survey — the per-property record the 2007 context statement was written to
+accompany, and which that statement does not carry — is public, and it is here.
+It was not on the context-statement listing page, not in the S3 archive and not
+in the M-Files vault; the three places the issue said to try were all wrong.
+What found it was a web search naming "DPR 523", which returned a form at
+`sfplanninggis.org/docs/DPRForms/0808018.pdf` and the survey-forms page itself.
+
+### The access trap: the forms are inside PDF Packages
+
+**43 of the 81 PDFs are Adobe PDF Packages.** The outer PDF is one page reading
+"Multiple files are bound together in this PDF Package"; the forms are
+**embedded files** inside it. `pdftotext` extracts the shell and reports one
+page — the same 621 characters, 43 times, which is what a bulk text extraction
+will silently produce if nobody looks at the output. `pdfdetach` gets them out:
+
+```bash
+pdfdetach -list Waller_52-201.pdf          # 3 embedded files
+pdfdetach -save 1 -o "201 Waller St AB.pdf" Waller_52-201.pdf
+```
+
+553 embedded forms plus 30 standalone ones. The embedded filenames carry the
+address ("201 Waller St AB.pdf"), so the package is its own index. Every form
+has a clean born-digital text layer — no OCR damage anywhere in the set.
+
+### What a form gives
+
+- The address, and the **assessor's block and lot outright** (`0869-001`, or in
+  Kostura's forms `Block 715, lots 14 thru 69`).
+- A construction date **with the source it came from** — most often "SF
+  Assessors Office", sometimes a building permit, a published building notice,
+  a Sanborn map or a city directory. Where the source is the assessor, the date
+  is the roll's date and adds nothing the page did not have.
+- A California Historical Resource status code.
+- On the A+B forms: architectural style, and often an architect, a builder and
+  a dated construction history. Kostura's forms are the richest — John Galen
+  Howard, Weeks and Day, G. A. Lansburgh, Frederick H. Meyer, George
+  Applegarth — and give the building's first automobile occupant as its
+  historic name.
+- The **276 Hayes Valley district forms are Primary Records only** — no B
+  record, so no style and no architect, just address, parcel, year and code.
+
+**P7 is "Owner and Address", with a name on nearly every form.** It was not
+extracted and must not be. Nothing else on the form is a private individual.
+
+### Cautions
+
+- **Two surveys, two authors, two citations.** Page & Turnbull did the Market &
+  Octavia fieldwork in 2006 and Kelley & VerPlanck wrote its 2010 evaluations;
+  William Kostura did the Van Ness Auto Row forms in 2009–2010 and his forms
+  name his own report as their citation. Tell them apart by the recorder, not
+  by the section of the listing page they sit under.
+- **The date on a form is the building's, not the address's.** These are 2006
+  addresses for 1880s buildings, which broke `resolve_eas.py`'s renumbering
+  guard until it was narrowed — see the note in that tool.
+- **Eleven parcels carry two forms.** Five are the same form twice in one
+  package; six are two buildings that are one parcel today, and they disagree
+  on year, style and status code. Both facts are kept, one panel each. Merging
+  them adjudicates a conflict, which this module does not do.
+- **`B5. Architectural Style` is often blank**, and a naive capture takes the
+  label of the next field instead. A style is never the name of a DPR field.
+- **A form's parcel can be retired.** 155 Hayes Street prints 0814/015, which is
+  gone; its site is 0814A001, 150 Van Ness Avenue, a 423-unit building the
+  assessor dates to 2018. Check the recorded parcel is still active before
+  publishing a 19th-century fact to it.
+- **`Van Ness Auto Row Context revised June 2010.pdf` and
+  `MO_Context_Final_202007.pdf` on this page are the two adopted context
+  statements**, already read as `van-ness-auto-row` and `market-octavia-hcs`.
+  `archives.sfplanning.org/documents/682-MO_Context_Final_202007.pdf` and
+  `.../5298-MO_Context_Final_202007.pdf` are the same 137-page 2007 statement
+  again under two more numbers. Don't re-read any of them.
+
+- **Verified:** 2026-09-03 (all 81 PDFs on the survey-forms page fetched and all
+  583 per-address forms read in full: 473 Market & Octavia findings, 110 Van
+  Ness Auto Row. 479 resolved, 472 published on 460 pages, 260 of which were
+  seeded by this run. Coverage note: the per-address forms are finished. Three
+  **district-level** records were read and not extracted, because they describe
+  a district rather than a numbered address — the Hayes Valley Residential
+  Historic District 523D form, its 523L update, and the Pine 1644-1670 district
+  record. Each lists its contributors by address and is worth a separate pass.
+  Also unextracted: the dated alterations in the 111 forms that carry a
+  `B6. Construction History`, which are held in the findings files as
+  `construction_history_as_recorded` and would need re-expressing one at a time
+  rather than templating.)

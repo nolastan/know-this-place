@@ -37,6 +37,7 @@ Every residential parcel on 15th Street that the city's address, assessor and pe
 - [2124–2126](2124/) — A 1900 two-flat, with reroofing permitted in 2015.
 - [2136](2136/) — A 1902 single-family house, with facade work permitted in 1991.
 - [2142](2142/) — A 1902 single-family house, with reroofing permitted in 2013.
+- [2146](2146/) — A 1900 building, with reroofing permitted in 2024.
 - [2156–2162](2156/) — A 1905 two-flat in the Duboce Triangle Historic District, with a kitchen and bathroom remodel permitted in 2008.
 - [2160](2160/) — A 1905 two-flat in the Duboce Triangle Historic District, with foundation work permitted in 1999.
 - [2161–2163](2161/) — A 1900 three-flat in the Duboce Triangle Historic District, with foundation work permitted in 2018.

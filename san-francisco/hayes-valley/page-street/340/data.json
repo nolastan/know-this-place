@@ -1,0 +1,170 @@
+{
+  "address": "340 Page Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/page-street/340/",
+  "apn": "0840004",
+  "block": "0840",
+  "lot": "004",
+  "eas_baseid": "289246",
+  "coordinates": {
+    "lat": 37.773835,
+    "lng": -122.426436
+  },
+  "parcel": {
+    "year_built": 1937,
+    "units": 20,
+    "stories": 3,
+    "rooms": 63,
+    "bathrooms": 20,
+    "lot_area_sqft": 6599,
+    "building_area_sqft": 16800,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Hayes Valley",
+    "property_location_raw": "0000 0340 PAGE                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 235630,
+    "assessed_improvement_value": 471301,
+    "assessed_fixtures_value": 19000
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1937",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Hayes Valley Residential Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1860–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202406184690",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2024-06-26",
+      "status_date": "2025-02-05",
+      "estimated_cost": 58073,
+      "revised_cost": 83700,
+      "description": "demo (e) facp due to system obsolescense as per cal state fire marshall information bulletin dated 09/04/2008.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201004200589",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-04-20",
+      "status_date": "2010-07-12",
+      "estimated_cost": 100,
+      "revised_cost": 100,
+      "description": "one unit - modify cabinets in kitchen to fit a refrigerator. minor wall repair, no lighting work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200511168343",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-11-16",
+      "status_date": "2005-11-16",
+      "estimated_cost": 28000,
+      "revised_cost": 28000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9822729",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1998-11-04",
+      "status_date": "1999-10-13",
+      "estimated_cost": 3000,
+      "description": "iron gate w/buzzers at entrance",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9506850",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-05-10",
+      "status_date": "1996-02-09",
+      "estimated_cost": 14000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8202198",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1982-03-24",
+      "status_date": "1982-06-29",
+      "estimated_cost": 2000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 8,
+    "range": "1982–2024",
+    "shown_on_page": 6,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PAGE&street_type=ST&address_number=340",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0840004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0840&lot=004",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0840004",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42643604533056%2037.773835139095745)%27)",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "market-octavia-survey-forms",
+      "name": "Page & Turnbull for the San Francisco Planning Department, Market & Octavia Augmentation Survey, DPR 523 survey forms, fieldwork 2006, evaluations by Kelley & VerPlanck 2010",
+      "query": "https://sfplanning.org/sites/default/files/documents/preserv/DPRforms/HV%20Post%201920.pdf",
+      "listing": "https://sfplanning.org/historic-preservation-survey-forms-dpr523",
+      "label": "Market & Octavia Survey DPR 523 form, 2006–2010",
+      "retrieved": "2026-09-03"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Market & Octavia Survey (2006–2010)",
+      "source": "market-octavia-survey-forms",
+      "year_built_as_surveyed": "1937"
+    }
+  ]
+}

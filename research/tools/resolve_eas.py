@@ -1033,11 +1033,36 @@ YEAR_IN_DATE = re.compile(r"(1[6-9]\d\d|20\d\d)")
 
 
 def renumbering_guard(f: dict, res: dict) -> dict:
-    """Refuse a pre-1910 address resolved on the EAS join alone."""
+    """Refuse a pre-1910 address resolved on the EAS join alone.
+
+    "On the join alone" is the whole condition, and a record that prints its own
+    assessor block and lot has not been resolved that way — it named the parcel,
+    and the join only agreed. Those are exempt.
+
+    This matters because `date` is the date of the *fact*, not the date the
+    address was written, and for a modern survey of an old building the two are
+    a century apart: the Market & Octavia DPR forms were written in 2006, in
+    2006's street numbers, about buildings put up in the 1880s. Without the
+    exemption the guard refused 200 of 473 of them for a renumbering that had
+    already happened a century before the surveyor wrote the address down.
+
+    Measured over every findings file in the repo before it was wired in: all 41
+    fires that existed at the time were on records that print no block and lot,
+    so none of them changed. The exemption only reaches records that hand over
+    the parcel themselves.
+    """
     if res.get("status") != "resolved":
         return res
     m = YEAR_IN_DATE.search(f.get("date") or "")
     if not m or int(m.group(1)) >= RENUMBERING_YEAR:
+        return res
+    if recorded_parcel_check(f, res.get("apn") or "") == "match":
+        res = dict(res)
+        res["method"] = (res.get("method", "") + " The record prints assessor block "
+                         f"{(f.get('extra') or {}).get('assessor_block_as_recorded')} lot "
+                         f"{(f.get('extra') or {}).get('assessor_lot_as_recorded')}, which is "
+                         "this parcel, so the pre-1910 date is the building's and not the "
+                         "address's — the renumbering guard does not apply.").strip()
         return res
     return {"status": "unresolved", "checked_on": res.get("checked_on"),
             "method": res.get("method", ""),

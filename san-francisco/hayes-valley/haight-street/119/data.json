@@ -1,0 +1,164 @@
+{
+  "address": "119 Haight Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/haight-street/119/",
+  "apn": "0856021",
+  "block": "0856",
+  "lot": "021",
+  "eas_baseid": "289628",
+  "coordinates": {
+    "lat": 37.772598,
+    "lng": -122.424333
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 30,
+    "stories": 3,
+    "rooms": 67,
+    "bathrooms": 32,
+    "bedrooms": 30,
+    "lot_area_sqft": 5156.25,
+    "building_area_sqft": 13150,
+    "lot_depth_ft": 37.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Hayes Valley",
+    "property_location_raw": "0000 0119 HAIGHT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 359438,
+    "assessed_improvement_value": 1432854,
+    "assessed_fixtures_value": 2238
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Hayes Valley Residential Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1860–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202608277278",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2026-08-27",
+      "status_date": "2026-08-27",
+      "estimated_cost": 25000,
+      "revised_cost": 60000,
+      "description": "one unit in-kind kitchen remodel. in-kind bathroom remodel with tub to shower pan.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202308083968",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-08-08",
+      "status_date": "2024-04-23",
+      "estimated_cost": 98000,
+      "revised_cost": 98000,
+      "description": "repair and replace building siding. install new vinyl windows to replace existing. same size, same location, max u-factor 0.30. 114 total windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201609097353",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-09-09",
+      "status_date": "2016-09-27",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "remove and replace retaining wall @ rear in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201608114778",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-08-11",
+      "status_date": "2017-03-06",
+      "estimated_cost": 160000,
+      "revised_cost": 160000,
+      "description": "soft story retrofit per sfbc chapter 34b engineering criteria 2012 iebc appendix a-4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9506527",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-05-04",
+      "status_date": "1996-02-09",
+      "estimated_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 10,
+    "range": "1995–2026",
+    "shown_on_page": 5,
+    "note": "5 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAIGHT&street_type=ST&address_number=119",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0856021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0856&lot=021",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0856021",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42433263409615%2037.77259751215064)%27)",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "market-octavia-survey-forms",
+      "name": "Page & Turnbull for the San Francisco Planning Department, Market & Octavia Augmentation Survey, DPR 523 survey forms, fieldwork 2006, evaluations by Kelley & VerPlanck 2010",
+      "query": "https://sfplanning.org/sites/default/files/documents/preserv/DPRforms/HV%20Conttributory%20New.pdf",
+      "listing": "https://sfplanning.org/historic-preservation-survey-forms-dpr523",
+      "label": "Market & Octavia Survey DPR 523 form, 2006–2010",
+      "retrieved": "2026-09-03"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Market & Octavia Survey (2006–2010)",
+      "source": "market-octavia-survey-forms",
+      "year_built_as_surveyed": "1910"
+    }
+  ]
+}
