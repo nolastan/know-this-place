@@ -1,0 +1,548 @@
+{
+  "source_id": "digitalsf",
+  "batch": "sfp-84",
+  "read_on": "2026-09-03",
+  "notes": "The Marilyn Blaisdell Photograph Collection read whole — 483 catalogue records. Blaisdell was a collector and dealer, not a photographer, so the collection is an assembled miscellany of historical San Francisco views bought in from many studios, and the description sentence names no maker.\n\n459 of the 483 records give no street number and are skipped per `COLLECTION_UNNUMBERED_POLICY`: bay views, parades, cable cars, the Cliff House, the 1906 fire seen from a hill. 13 findings came out of the rest.\n\n**Eight candidates were the collection's own plate numbers** and are now guarded against. Blaisdell's stereographs are titled with their serial at the head — \"877 A view of San Francisco Bay looking south from Yerba Buena Island\", \"3022 Ferry-boat entering Oakland slip\", \"1704 Mission Church, Mission Dolores\", \"320. Visit of French Admiral Cloue and staff\" — and all fourteen title-initial numbers in the collection are plate numbers while every genuine address is mid-caption. `COLLECTION_PLATE_NUMBERS` strips a title-initial number for this collection alone; 779 titles corpus-wide open with a real street number, so it cannot be a general rule. A ninth was a clock time: \"at 1:00 P. M.\" yielded *00 P. M*, now refused by the colon before the number.\n\n**12 of the 13 findings are unresolved, and almost all of them for the right reason.** The collection's addressed half is 1880s–1914, so `resolve_eas.py` refuses anything dated before 1910 on the 1909 renumbering rule — 412 Sacramento Street (1899), 25 Geary Street (1904), 810 Montgomery (1906), 1613 Stockton Street (1908), 320 Market Street (c. 1907–08), 690 Market Street (c. 1889–94), 1822 Eddy Street (1906), 19 Oak Street (1906) and three plates of 747 Baker Street in the weeks after the fire. Several of those match EAS cleanly, which is exactly what makes them dangerous. The one resolution is 101 Waverly Place, 1914, past the cutoff.\n\n**Privacy: this collection files its people in `700$a`, not `600$a`, and the redactor could not see them.** Seven plates of 747 Baker Street name the household that photographed its own house after the earthquake, catalogued as `700 $e Photographer`. A name written into a caption is a person in the frame whatever the record credits them for elsewhere, and \"…home at 747 Baker Street\" is a sentence about who lived at a street number. `redact()` now reads both fields; the guard against taking a building or a street with them is that a bare surname is left alone when the next word says it is a place (\"Canterbury Hotel\", \"747 Baker Street\").\n\nOne record loses a fact the extractor cannot take: \"L. Lerda Wine Cellar at 814 and European Hotel at 810 Montgomery between Jackson and Pacific Streets\" gives two businesses at two numbers, and only 810 is recorded. Neither number is in EAS today, so nothing was published either way.",
+  "coverage": {
+    "unit": "catalogue records",
+    "examined": 483,
+    "mentions": 18,
+    "remaining": "Nothing. SFP 84 is fully read.",
+    "note": "Read every record in the collection: 483 unique catalogue records, 24 of which parse a street number in the title. Eight of those are the collection's own plate numbers and one a clock time, all now refused at extraction; 13 findings remain over 13 distinct addresses. 1 resolved and published; 12 unresolved, of which 11 are refused by the pre-1910 renumbering rule and 1 is a condominium today."
+  },
+  "findings": [
+    {
+      "id": "sfp-84-0001",
+      "date": "1899",
+      "date_precision": "year",
+      "kind": "photograph",
+      "address_as_written": "412 Sacramento Street",
+      "street_number": "412",
+      "street_name": "SACRAMENTO",
+      "street_type": "ST",
+      "description": "Photographed at 412 Sacramento Street in 1899. The record names Caswell and Company building at the address.",
+      "extra": {
+        "date_as_recorded": "1899",
+        "medium": "1 negative : glass plate",
+        "named_in_record": [
+          "Caswell and Company building"
+        ],
+        "subject_headings": [
+          "Coffee",
+          "Spices",
+          "Tea"
+        ]
+      },
+      "citation": {
+        "label": "412 Sacramento Street, 1899. Marilyn Blaisdell Photograph Collection (SFP 84), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/55359",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0541.xml",
+        "locator": "record 55359"
+      },
+      "raw": {
+        "text": "Caswell and Company building at 412 Sacramento Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-03",
+        "method": "No record in sf-eas-addresses for 412 SACRAMENTO ST.",
+        "note": "The address does not exist today, so there is no page it can go on. EAS has no address near it on this street either. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+      },
+      "publish": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "sfp-84-0002",
+      "date": "1904",
+      "date_precision": "year",
+      "kind": "photograph",
+      "address_as_written": "25 Geary Street",
+      "street_number": "25",
+      "street_name": "GEARY",
+      "street_type": "ST",
+      "description": "Photographed at 25 Geary Street in 1904.",
+      "extra": {
+        "date_as_recorded": "1904",
+        "medium": "1 negative : glass plate",
+        "subject_headings": [
+          "Bars (Drinking establishments)",
+          "Shoe shiners"
+        ]
+      },
+      "citation": {
+        "label": "25 Geary Street, 1904. Marilyn Blaisdell Photograph Collection (SFP 84), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/55373",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0541.xml",
+        "locator": "record 55373"
+      },
+      "raw": {
+        "text": "The Manhattan Bar at 25 Geary Street with shoe shine stand"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-03",
+        "method": "No record in sf-eas-addresses for 25 GEARY ST.",
+        "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 10, 11, 12, 14, 18, 23. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+      },
+      "publish": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "sfp-84-0003",
+      "date": "1914-11-11",
+      "date_precision": "day",
+      "kind": "photograph",
+      "address_as_written": "101 Waverly Place",
+      "street_number": "101",
+      "street_name": "WAVERLY",
+      "street_type": "PL",
+      "description": "Photographed at 101 Waverly Place on 1914-11-11.",
+      "extra": {
+        "date_as_recorded": "1914-11-11",
+        "medium": "1 negative : glass plate",
+        "subject_headings": [
+          "Catholic converts",
+          "Priests"
+        ]
+      },
+      "citation": {
+        "label": "101 Waverly Place, 1914. Marilyn Blaisdell Photograph Collection (SFP 84), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/55404",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0541.xml",
+        "locator": "record 55404"
+      },
+      "raw": {
+        "text": "Catholic Chinese Convert Club portrait at 101 Waverly Place"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0210008",
+        "path": "/san-francisco/financial-district/clay-street/818/",
+        "eas_address": "101 WAVERLY PL",
+        "method": "EAS exact match on 101 WAVERLY PL → parcel 0210008; sf-parcels has blklot 0210008 active, 818–818 CLAY; the 2025 roll records it as commercial retail, built 1907. EAS puts 101, 103, 105 WAVERLY PL on that parcel, so per the directory contract the fact belongs on one page at the lowest, 101.",
+        "checked_on": "2026-09-03"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Timeline entry. The page is the parcel's, filed at 818 Clay Street; the photograph is of 101 Waverly Place, which EAS puts on the same parcel, so the description keeps the number the plate was made at. The 2025 roll dates the building 1907, seven years before the photograph, so the building described is the one standing.",
+        "pr": "223"
+      }
+    },
+    {
+      "id": "sfp-84-0004",
+      "date": "1914-11-11",
+      "date_precision": "day",
+      "kind": "photograph",
+      "address_as_written": "107 Waverly Place",
+      "street_number": "107",
+      "street_name": "WAVERLY",
+      "street_type": "PL",
+      "description": "Photographed at 107 Waverly Place on 1914-11-11.",
+      "extra": {
+        "date_as_recorded": "1914-11-11",
+        "medium": "1 negative : glass plate",
+        "subject_headings": [
+          "Evening and continuation schools",
+          "Priests"
+        ]
+      },
+      "citation": {
+        "label": "107 Waverly Place, 1914. Marilyn Blaisdell Photograph Collection (SFP 84), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/55405",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0541.xml",
+        "locator": "record 55405"
+      },
+      "raw": {
+        "text": "Catholic Chinese night school at 107 Waverly Place with Father Bradley"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-03",
+        "method": "No record in sf-eas-addresses for 107 WAVERLY PL.",
+        "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 100, 101, 103, 105, 106, 108. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+      },
+      "publish": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "sfp-84-0005",
+      "date": "1906-11",
+      "date_precision": "month",
+      "kind": "photograph",
+      "address_as_written": "810 Montgomery",
+      "street_number": "810",
+      "street_name": "MONTGOMERY",
+      "description": "Photographed at 810 Montgomery in 1906-11.",
+      "extra": {
+        "street_type_not_stated": true,
+        "date_as_recorded": "1906-11",
+        "medium": "1 negative : glass plate",
+        "subject_headings": [
+          "Hotels",
+          "Liquor industry"
+        ]
+      },
+      "citation": {
+        "label": "810 Montgomery, 1906. Marilyn Blaisdell Photograph Collection (SFP 84), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/55413",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0541.xml",
+        "locator": "record 55413"
+      },
+      "raw": {
+        "text": "L. Lerda Wine Cellar at 814 and European Hotel at 810 Montgomery between Jackson and Pacific Streets"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-03",
+        "method": "No record in sf-eas-addresses for 810 MONTGOMERY ST.",
+        "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 800, 801, 802, 804, 807, 809. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+      },
+      "publish": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "sfp-84-0006",
+      "date": "1908-11-21",
+      "date_precision": "day",
+      "kind": "photograph",
+      "address_as_written": "1613 Stockton Street",
+      "street_number": "1613",
+      "street_name": "STOCKTON",
+      "street_type": "ST",
+      "description": "Photographed at 1613 Stockton Street on 1908-11-21.",
+      "extra": {
+        "date_as_recorded": "1908-11-21",
+        "medium": "1 negative : glass plate",
+        "subject_headings": [
+          "Restaurants",
+          "Weddings"
+        ]
+      },
+      "citation": {
+        "label": "1613 Stockton Street, 1908. Marilyn Blaisdell Photograph Collection (SFP 84), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/55429",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0541.xml",
+        "locator": "record 55429"
+      },
+      "raw": {
+        "text": "Wedding party at New Frank's Restaurant 1613 Stockton Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-03",
+        "method": "No record in sf-eas-addresses for 1613 STOCKTON ST.",
+        "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 1600, 1606, 1610, 1612, 1620, 1630. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+      },
+      "publish": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "sfp-84-0007",
+      "date": "circa 1907 to 1908",
+      "date_precision": "circa",
+      "kind": "photograph",
+      "address_as_written": "320 Market Street",
+      "street_number": "320",
+      "street_name": "MARKET",
+      "street_type": "ST",
+      "description": "Photographed at 320 Market Street circa 1907 to 1908. The record names Sherwood Building at the address.",
+      "extra": {
+        "date_as_recorded": "circa 1907 to 1908",
+        "fuzzy_date_flag": true,
+        "shelf": "Box 2, Market St. at Pine",
+        "medium": "1 negative : glass plate",
+        "named_in_record": [
+          "Sherwood Building"
+        ],
+        "subject_headings": [
+          "Buildings",
+          "Storefronts"
+        ]
+      },
+      "citation": {
+        "label": "320 Market Street, circa 1907 to 1908. Marilyn Blaisdell Photograph Collection (SFP 84), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/55516",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0542.xml",
+        "locator": "record 55516, Box 2, Market St. at Pine"
+      },
+      "raw": {
+        "text": "Sherwood Building on 320 Market Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-03",
+        "method": "No record in sf-eas-addresses for 320 MARKET ST.",
+        "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 333. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+      },
+      "publish": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "sfp-84-0008",
+      "date": "1906",
+      "date_precision": "year",
+      "kind": "photograph",
+      "address_as_written": "1822 Eddy Street",
+      "street_number": "1822",
+      "street_name": "EDDY",
+      "street_type": "ST",
+      "description": "Photographed at 1822 Eddy Street in 1906.",
+      "extra": {
+        "date_as_recorded": "1906",
+        "shelf": "Box 3, Quake",
+        "medium": "1 negative : glass plate",
+        "subject_headings": [
+          "Church buildings",
+          "San Francisco Earthquake and Fire, Calif., 1906"
+        ]
+      },
+      "citation": {
+        "label": "1822 Eddy Street, 1906. Marilyn Blaisdell Photograph Collection (SFP 84), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/55566",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0543.xml",
+        "locator": "record 55566, Box 3, Quake"
+      },
+      "raw": {
+        "text": "Remains of Holy Cross Church at 1822 Eddy Street after earthquake"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-03",
+        "method": "EAS exact match on 1822 EDDY ST → parcel 1127008; sf-parcels has blklot 1127008 active, 1822–1822 EDDY; the 2025 roll records it as commercial misc, built 1900.",
+        "note": "Dated 1906, before the 1909 renumbering, and the record gives no cross street, block face or lot dimension to check the number against. EAS holds 1822 EDDY today, but a pre-1909 number is not today's number until a cross-street check says so — see 'The renumbering traps' in research/RUNBOOK.md. Resolve it by hand if the source supplies the check material."
+      },
+      "publish": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "sfp-84-0009",
+      "date": "circa 1889 to 1894",
+      "date_precision": "circa",
+      "kind": "photograph",
+      "address_as_written": "690 Market Street",
+      "street_number": "690",
+      "street_name": "MARKET",
+      "street_type": "ST",
+      "description": "Photographed at 690 Market Street circa 1889 to 1894. The record names Chronicle Building at the address.",
+      "extra": {
+        "date_as_recorded": "circa 1889 to 1894",
+        "fuzzy_date_flag": true,
+        "shelf": "SFP 84. Album 26.",
+        "medium": "1 photographic print : b&w",
+        "named_in_record": [
+          "Chronicle Building"
+        ],
+        "corporate_subject_headings": [
+          "San Francisco Chronicle (Firm)"
+        ],
+        "subject_headings": [
+          "Buildings",
+          "Cable cars (Streetcars)",
+          "Streets"
+        ]
+      },
+      "citation": {
+        "label": "690 Market Street, circa 1889 to 1894. Marilyn Blaisdell Photograph Collection (SFP 84), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/55586",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0543.xml",
+        "locator": "record 55586, SFP 84. Album 26."
+      },
+      "raw": {
+        "text": "Chronicle Building at 690 Market Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-03",
+        "method": "sf-eas-addresses has 690 MARKET ST but it does not join to one parcel. 690 MARKET ST's coordinates fall in 20 active parcels (0311078, 0311105, 0311049, 0311059…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
+        "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+      },
+      "publish": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "sfp-84-0010",
+      "date": "1906-05-13",
+      "date_precision": "day",
+      "kind": "photograph",
+      "address_as_written": "747 Baker Street",
+      "street_number": "747",
+      "street_name": "BAKER",
+      "street_type": "ST",
+      "description": "Photographed at 747 Baker Street on 1906-05-13.",
+      "extra": {
+        "date_as_recorded": "1906-05-13",
+        "medium": "1 negative : b&w",
+        "subject_headings": [
+          "Hammers",
+          "San Francisco Earthquake and Fire, Calif., 1906",
+          "Sidewalks",
+          "Streets"
+        ]
+      },
+      "citation": {
+        "label": "747 Baker Street, 1906. Marilyn Blaisdell Photograph Collection (SFP 84), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/55673",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0544.xml",
+        "locator": "record 55673"
+      },
+      "raw": {
+        "text": "[name withheld] sitting on sidewalk taking hammer to can at 747 Baker Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-03",
+        "method": "EAS exact match on 747 BAKER ST → parcel 1158003; sf-parcels has blklot 1158003 active, 743–747 BAKER; the 2025 roll records it as multi-family residential, built 1904. EAS puts 743, 745, 747 BAKER ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 743.",
+        "note": "Dated 1906-05-13, before the 1909 renumbering, and the record gives no cross street, block face or lot dimension to check the number against. EAS holds 747 BAKER today, but a pre-1909 number is not today's number until a cross-street check says so — see 'The renumbering traps' in research/RUNBOOK.md. Resolve it by hand if the source supplies the check material."
+      },
+      "publish": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "sfp-84-0011",
+      "date": "1906-05-31",
+      "date_precision": "day",
+      "kind": "photograph",
+      "address_as_written": "747 Baker Street",
+      "street_number": "747",
+      "street_name": "BAKER",
+      "street_type": "ST",
+      "description": "Photographed at 747 Baker Street on 1906-05-31.",
+      "extra": {
+        "date_as_recorded": "1906-05-31",
+        "medium": "1 negative : b&w",
+        "subject_headings": [
+          "Housing",
+          "San Francisco Earthquake and Fire, Calif., 1906",
+          "Sidewalks",
+          "Streets"
+        ],
+        "additional_records": [
+          "https://digitalsf.org/record/55721",
+          "https://digitalsf.org/record/55722",
+          "https://digitalsf.org/record/55723"
+        ]
+      },
+      "citation": {
+        "label": "747 Baker Street, 1906. Marilyn Blaisdell Photograph Collection (SFP 84), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/55674",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0544.xml",
+        "locator": "record 55674"
+      },
+      "raw": {
+        "text": "Sidewalk kitchen in front of [name withheld] home at 747 Baker Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-03",
+        "method": "EAS exact match on 747 BAKER ST → parcel 1158003; sf-parcels has blklot 1158003 active, 743–747 BAKER; the 2025 roll records it as multi-family residential, built 1904. EAS puts 743, 745, 747 BAKER ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 743.",
+        "note": "Dated 1906-05-31, before the 1909 renumbering, and the record gives no cross street, block face or lot dimension to check the number against. EAS holds 747 BAKER today, but a pre-1909 number is not today's number until a cross-street check says so — see 'The renumbering traps' in research/RUNBOOK.md. Resolve it by hand if the source supplies the check material."
+      },
+      "publish": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "sfp-84-0012",
+      "date": "1906-03",
+      "date_precision": "month",
+      "kind": "photograph",
+      "address_as_written": "747 Baker Street",
+      "street_number": "747",
+      "street_name": "BAKER",
+      "street_type": "ST",
+      "description": "Photographed at 747 Baker Street in 1906-03.",
+      "extra": {
+        "date_as_recorded": "1906-03",
+        "medium": "1 negative : b&w",
+        "subject_headings": [
+          "Housing",
+          "Industrial chimneys"
+        ],
+        "additional_records": [
+          "https://digitalsf.org/record/55720"
+        ]
+      },
+      "citation": {
+        "label": "747 Baker Street, 1906. Marilyn Blaisdell Photograph Collection (SFP 84), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/55719",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0544.xml",
+        "locator": "record 55719"
+      },
+      "raw": {
+        "text": "View west-south-west from 747 Baker Street window before earthquake with Mount Davidson in background"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-03",
+        "method": "EAS exact match on 747 BAKER ST → parcel 1158003; sf-parcels has blklot 1158003 active, 743–747 BAKER; the 2025 roll records it as multi-family residential, built 1904. EAS puts 743, 745, 747 BAKER ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 743.",
+        "note": "Dated 1906-03, before the 1909 renumbering, and the record gives no cross street, block face or lot dimension to check the number against. EAS holds 747 BAKER today, but a pre-1909 number is not today's number until a cross-street check says so — see 'The renumbering traps' in research/RUNBOOK.md. Resolve it by hand if the source supplies the check material."
+      },
+      "publish": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "sfp-84-0013",
+      "date": "1906",
+      "date_precision": "year",
+      "kind": "photograph",
+      "address_as_written": "19 Oak Street",
+      "street_number": "19",
+      "street_name": "OAK",
+      "street_type": "ST",
+      "description": "Photographed at 19 Oak Street in 1906.",
+      "extra": {
+        "date_as_recorded": "1906",
+        "medium": "1 negative : glass plate",
+        "subject_headings": [
+          "Coffee roasting industry",
+          "Rubble",
+          "San Francisco Earthquake and Fire, Calif., 1906"
+        ],
+        "additional_records": [
+          "https://digitalsf.org/record/55727"
+        ]
+      },
+      "citation": {
+        "label": "19 Oak Street, 1906. Marilyn Blaisdell Photograph Collection (SFP 84), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/55725",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0544.xml",
+        "locator": "record 55725"
+      },
+      "raw": {
+        "text": "Burmester Ceylon Tea Co. reopening signs on rubble and debris behind their building at 19 Oak Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-03",
+        "method": "No record in sf-eas-addresses for 19 OAK ST.",
+        "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 11. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+      },
+      "publish": {
+        "status": "pending"
+      }
+    }
+  ]
+}

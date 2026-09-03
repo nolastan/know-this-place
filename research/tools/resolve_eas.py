@@ -1632,6 +1632,46 @@ def main() -> int:
                       "source most are a lost digit, and the rest are the record's own error.")
             print()
 
+        # A resolution the point made, on a parcel that says it does not carry
+        # the number. Raised, never decided: measured over every findings file
+        # in the repo this fires on 61 of 582 point-placed resolutions, and
+        # most of those are right — sf-parcels' `from_address_num` /
+        # `to_address_num` is routinely narrower than the EAS numbers the
+        # parcel actually holds ("2861 24th Street" on a parcel stated
+        # 2863–2869, "243-245 8th Avenue" on one stated 245–245). What is
+        # worth a human's eye is the wide range that excludes the number
+        # outright — 1458 Kirkwood Avenue on a parcel stated 1470–1498, which
+        # is the neighbour.
+        outside = []
+        for f in data["findings"]:
+            r = decisions[f["id"]]
+            if r["status"] != "resolved" or "coordinates fall in is" not in \
+                    (r.get("method") or ""):
+                continue
+            parcel = (city.parcels or {}).get(r.get("apn") or "") or {}
+            lo, hi = parcel.get("from_address_num"), parcel.get("to_address_num")
+            num = num_key(re.match(r"\d+", f.get("street_number") or "")
+                          .group(0)) if re.match(r"\d+", f.get("street_number") or "") else None
+            if not (lo and hi and num is not None):
+                continue
+            if (parcel.get("street_name") or "") != (f.get("street_name") or ""):
+                continue
+            if num_key(lo) <= num <= num_key(hi):
+                continue
+            gap = min(abs(num[0] - num_key(lo)[0]), abs(num[0] - num_key(hi)[0]))
+            outside.append((f["id"], f["address_as_written"][:34], r["apn"],
+                            f"{lo}\u2013{hi} {parcel.get('street_name','')}", gap))
+        if outside:
+            print(f"Placed by point, on a parcel whose own range excludes the "
+                  f"number: {len(outside)}.")
+            for fid, addr, apn, rng, gap in sorted(outside, key=lambda x: -x[4]):
+                print(f"  {gap:>4} off      {fid}  {addr:<36} {apn} states {rng}")
+            print("  EAS address points sit centimetres from a boundary, so a point can land in "
+                  "the\n  neighbour. Read the widest gaps: a parcel stating a single number is "
+                  "usually just an\n  incomplete field, one stating a wide span that excludes "
+                  "the number is usually next door.")
+            print()
+
         # The record saying its own building is gone. Not decided here: two
         # passes over the repo's findings showed the marking is wrong or
         # about a different building often enough that only a person can call

@@ -1,0 +1,99 @@
+{
+  "address": "426 Detroit Street, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/detroit-street/426/",
+  "apn": "3118027",
+  "block": "3118",
+  "lot": "027",
+  "eas_baseid": "354523",
+  "coordinates": {
+    "lat": 37.731114,
+    "lng": -122.444095
+  },
+  "parcel": {
+    "year_built": 1947,
+    "units": 1,
+    "stories": 1,
+    "rooms": 3,
+    "bathrooms": 1,
+    "bedrooms": 1,
+    "lot_area_sqft": 1498,
+    "building_area_sqft": 900,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Sunnyside",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0426 DETROIT             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 709208,
+    "assessed_improvement_value": 303944,
+    "last_sale_date": "2021-03-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1947",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201412173957",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-12-17",
+      "status_date": "2015-02-13",
+      "estimated_cost": 4200,
+      "revised_cost": 9240,
+      "description": "replace (e) electrical to 16 gauge romex, 7 switches, 13 receptacles, 1 dishwasher, 1 garbage disposal, 1 range, 1 hydro massage tub, 3 smoke detectors, 14 lights, add tub drain and shower valve supply line with copper pipe. add bathroom vanity supply line with copper pipe. kitchen remodel - no str.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DETROIT&street_type=ST&address_number=426",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3118027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3118&lot=027",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3118027",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "digitalsf-6927",
+      "name": "426 Detroit Street, 1941. San Francisco Department of Public Works Bureau of Engineering Photograph Records (SFP 26), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/6927",
+      "label": "Bureau of Engineering Photograph Records (SFP 26), San Francisco Public Library",
+      "retrieved": "2026-09-03"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1941-10-23",
+      "kind": "photograph",
+      "description": "The Bureau of Engineering photographed the property's southern line.",
+      "source": "digitalsf-6927"
+    }
+  ]
+}
