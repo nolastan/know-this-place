@@ -7,9 +7,12 @@ The parcels on Victoria Street documented here so far, from the city's address, 
 - [462](462/) — A 1945 single-family house.
 - [710](710/) — Built 1912, one of three 1912 houses on this block of Victoria Street.
 - [720–720A](720/) — Built 1927, one of two 1927 houses on this block of Victoria Street.
+- [727](727/) — A 1913 single-family house in the Ingleside Terrace Historic District, with reroofing permitted in 1995.
 - [730](730/) — Built 1912, one of three 1912 houses on this block of Victoria Street.
+- [737–739](737/) — A 1913 two dwellings on one parcel in the Ingleside Terrace Historic District, with garage work permitted in 2019.
 - [740](740/) — Built 1927, one of two 1927 houses on this block of Victoria Street.
 - [744](744/) — Built 1912, one of three 1912 houses on this block of Victoria Street.
+- [760](760/) — A 1912 single-family house in the Ingleside Terrace Historic District, with reroofing permitted in 2017.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

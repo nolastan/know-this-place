@@ -1,0 +1,174 @@
+{
+  "address": "10 Urbano Drive, San Francisco, CA 94127",
+  "path": "/san-francisco/ingleside-terraces/urbano-drive/10/",
+  "apn": "6915007",
+  "block": "6915",
+  "lot": "007",
+  "eas_baseid": "408439",
+  "coordinates": {
+    "lat": 37.724559,
+    "lng": -122.462979
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 4,
+    "lot_area_sqft": 5292,
+    "building_area_sqft": 1500,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Ingleside Terrace",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0010 URBANO              DR0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 580046,
+    "assessed_improvement_value": 406389,
+    "last_sale_date": "1999-07-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Ingleside Terrace Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1910–1930",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202210033632",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-10-03",
+      "status_date": "2022-10-24",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "reroofing: 12 squares pitch, 6 squares low slope. owens corning shingle and polyglass mod bit. roof garage and gutters.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201206223232",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-06-22",
+      "status_date": "2013-03-20",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "enlarge (e) deck & stairs, new concrete footings for deck posts, demolish wooden bench",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9405060",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-03-29",
+      "status_date": "1994-07-29",
+      "estimated_cost": 5000,
+      "description": "renewal of application 9122813s",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9200609",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "1992-01-14",
+      "status_date": "1992-02-12",
+      "estimated_cost": 20000,
+      "description": "reframe existing rear deck to support new rm addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9122813S",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1991-12-02",
+      "status_date": "1992-08-25",
+      "estimated_cost": 10000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8404686",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1984-05-02",
+      "status_date": "1984-11-26",
+      "estimated_cost": 25000,
+      "description": "add family room and deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8302351",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-03-23",
+      "status_date": "1983-04-29",
+      "estimated_cost": 5500,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=URBANO&street_type=DR&address_number=10",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6915007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6915&lot=007",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6915007",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.46297883967645%2037.72455863821385)%27)",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "digitalsf-8347",
+      "name": "10 Urbano Drive, 1912. Willard E. Worden Glass Plate Negatives (SFP 22), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/8347",
+      "label": "Willard E. Worden Glass Plate Negatives (SFP 22), San Francisco Public Library",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912",
+      "kind": "photograph",
+      "description": "Willard E. Worden photographed the house.",
+      "source": "digitalsf-8347"
+    }
+  ]
+}

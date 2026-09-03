@@ -5,7 +5,7 @@
 >
 > - **Kind:** catalogued digital archive (photographs, city records, scanned documents) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** harvested in full — 59,601 unique records. Three of 44 collections read whole: **SFP 23** (1,165 records, 1,122 findings, 923 resolved, 919 published), **SFH 371** (2,421 records, 421 findings, 117 resolved, 116 published on 103 pages) and **SFP 162** (34,738 records, 1,186 findings, 662 resolved, 545 published on 481 pages).
+> - **Coverage:** harvested in full — 59,601 unique records. Four of 44 collections read whole: **SFP 23** (1,165 records, 1,122 findings, 923 resolved, 919 published), **SFH 371** (2,421 records, 421 findings, 117 resolved, 116 published on 103 pages), **SFP 162** (34,738 records, 1,186 findings, 662 resolved, 545 published on 481 pages) and **SFP 22** (433 records, 77 findings, 72 resolved, 60 published on 59 pages).
 > - **Local corpus:** `research/corpora/digitalsf/` (453 MB; `state.json` records the OAI resumption token per set)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -145,13 +145,29 @@ and roughly double what the title-only profile reports:
 | 1,435 | **San Francisco Subjects Photograph Collection (SFP 162) — done: 1,186 findings, 545 published.** One session, not the three the decade split assumed |
 | 1,128 | **Office of Assessor-Recorder Photographs (SFP 23) — done: 1,122 findings, 919 published** |
 | 251 | **Redevelopment Agency Records (SFH 371) — done: 421 findings, 116 published** |
-| 186 | Tenderloin Times Photograph Archives (SFP 130) — the next batch |
-| 151 | Judi Iranyi Photographs of the Tenderloin (SFP 179) |
-| 103 | Willard E. Worden Glass Plate Negatives (SFP 22) |
+| 186 | Tenderloin Times Photograph Archives (SFP 130) — **needs a decision first, see below** |
+| 151 | Judi Iranyi Photographs of the Tenderloin (SFP 179) — the same question |
+| 103 | **Willard E. Worden Glass Plate Negatives (SFP 22) — done: 77 findings, 60 published on 59 pages** |
 | 70 | James A. Martin Color Slides of San Francisco (SFP 169) |
 | 70 | Robert Durden Color Slide Collection (SFP 42) |
 | 60 | Lee Sims Photographs of Tenants and Owners in Opposition to Redevelopment (SFP 125) |
 | 54 | James E. Gordon Color Slide Collection of San Francisco Murals (SFP 90) |
+
+**Size a batch on what the addressed half is *about*, not only on how many
+records it has.** This table was ordered by addressed-record count and told the
+next run to take SFP 130. Its 184 addressed captions are a neighbourhood
+newspaper's photographs of the people of the Tenderloin: **177 of the 184 carry
+a personal-name shape and 82 name a person in a role** — "250 Taylor Street
+tenant Mike Buscauage pointing out damage to shower the landlord refuses to
+repair", "Lao family moving out of their apartment at 355 Eddy Street due to
+rent increases", "Tenderloin resident Nguyen Quoc Doanh standing outside
+building at 237 Leavenworth Street". The name filter keeps every one of those
+off a page, but `raw.text` carries the caption verbatim into a committed
+findings file, and these are living people in rent strikes and evictions. SFP
+179 is the same collection shape. **Neither is a batch until someone decides
+what a findings file may hold about a named tenant** — see the issue filed with
+this run. SFP 22, 42, 90 and 125 are about buildings and are the ones to take
+meanwhile.
 
 An earlier version of this table listed the murals collection as **SFP 173**.
 There is no SFP 173 in the harvest; the murals are **SFP 90**, and SFP 169 is
@@ -324,6 +340,53 @@ more sensitive rather than less.
   count the next are SFP 162 (852), SFH 371 (210) and SFP 130 (151). Re-run the
   harvester to pick up records added since; it resumes from the stored token
   rather than re-downloading.
+
+- **Verified:** 2026-09-02 (read, resolved and published **SFP 22, the Willard
+  E. Worden Glass Plate Negatives**, whole: 433 records → 77 findings → 72 on a
+  parcel → **60 published on 59 pages** in #217, 50 of them seeded for it, 12
+  declined. Findings:
+  [`../findings/digitalsf/sfp-22.json`](../findings/digitalsf/sfp-22.json).
+
+  It is the first collection here that is a **developer's record of a tract
+  going up**: Worden photographed Ingleside Terraces and Jordan Park house by
+  house between 1911 and 1915, and four plates catch a house still under
+  construction. Four things this collection taught:
+
+  - **Every one of its 433 records is `No Copyright – United States`** — the
+    only untouched collection in the table that is, and worth taking first for
+    that alone.
+  - **The caption tail is the owner about as often as it is anything.**
+    "Residence of Mrs. Henrietta Lehe, 15 Cerritos Avenue", "Residence of Dr.
+    Authur G White, 760 Victoria Street" — 21 of them, all dropped by
+    `named-buildings-only`, which keeps **no** name at all in this collection.
+    That is the correct outcome, not a failure of the filter: Worden was
+    photographing houses, and the only names in the captions are the people who
+    owned them.
+  - **A caption's district heading reads as a building name.** Every plate ends
+    "in Ingleside Terraces", `terrace` is a `BUILDING_NOUN`, and the filter kept
+    "Ingleside Terraces" as the building on sixty pages until `business_names`
+    was given the record's own `650$a Districts--` headings the way it was
+    already given its `Streets--` ones.
+  - **The archivist's `500$a` note carries the readdressing.** The plate headed
+    "299 Moncada Way" adds "Now the address is 101 Paloma Avenue", and 299
+    Moncada Way has no EAS record at all — the Russian Hill "site of today's #N"
+    rule, arriving from a photo archive rather than a survey. Resolved on the
+    number the record gives for today.
+
+  **Twenty of the sixty published findings are dated the year the assessor says
+  the house went up**, which `--overlap`'s roll-year scan flags and which is
+  here the fact rather than the defect: the photographs *are* of the tract being
+  finished. Each says so in its publish note.
+
+  Two tool defects surfaced and are fixed: `resolve_eas.py manifest` built a
+  seeded page's street identity from the finding's recorded street rather than
+  the resolution's `eas_address`, so the readdressed corner house produced a
+  manifest entry reading `street_slug: paloma-avenue` with `street_name:
+  MONCADA`, no coordinates and a `KeyError` in the seeder; and
+  `check.py --overlap` reported all 60 of this batch's own entries as duplicates
+  of themselves, because it recognised the batch's writes by description text
+  and the publisher trims the address out of a description before it goes on a
+  page. It now matches on the source-id prefix.)
 
 - **Verified:** 2026-09-02 (re-read **SFP 162** with the caption name filter
   fixed, per issue #216. The extractor learned three things — a lower-case

@@ -258,6 +258,9 @@ NOT_A_STREET_NAME = {
     "ENGINE", "ENGINE COMPANY", "FIRE HOUSE", "FIREHOUSE", "TRUCK COMPANY",
     "STREETCAR", "STREET CAR", "CLUB", "RESTAURANT", "THEATRE RESTAURANT",
     "P.M", "A.M", "B.C", "STAR", "LINE",
+    # "3 Residences 236 & 222 Moncada Way, 90 Cedro Avenue" counts the houses
+    # in the frame before it gives any of their addresses.
+    "RESIDENCE", "RESIDENCES", "HOUSES", "VIEWS",
 }
 
 
@@ -500,7 +503,8 @@ def split_fragments(tail: str) -> list[str]:
 
 
 def business_names(title: str, address_span: str, streets: list[str],
-                   policy: str = "") -> tuple[list[str], list[str]]:
+                   policy: str = "", districts: list[str] | None = None
+                   ) -> tuple[list[str], list[str]]:
     """Split a title's tail into (firm names kept, fragments dropped).
 
     Default is to keep: a fragment left over after the address is removed is
@@ -508,13 +512,18 @@ def business_names(title: str, address_span: str, streets: list[str],
     worth having. Drop on positive evidence — a credential, a curated personal
     name, another address, a cross street, a bare descriptor. `streets` is the
     record's own `Streets--<name>` headings, which is how a bare "Mission" or
-    "Balboa" left behind by the address match gets recognized as a street.
+    "Balboa" left behind by the address match gets recognized as a street;
+    `districts` is its `Districts--<name>` headings, which does the same for a
+    neighbourhood. Worden captions end "in Ingleside Terraces" on every plate,
+    and `terrace` is a building noun, so without this the district is kept as
+    the building's name on sixty pages.
     """
     tail = PARENTHETICAL.sub(" ", title)
     if address_span and address_span in tail:
         tail = tail.replace(address_span, " ")
     tail = re.sub(r"\s+", " ", tail).strip(" ,.-")
     bare_streets = {s.lower().rstrip(".") for s in streets if s}
+    bare_places = {d.lower().rstrip(".") for d in (districts or []) if d}
 
     kept: list[str] = []
     dropped: list[str] = []
@@ -539,6 +548,12 @@ def business_names(title: str, address_span: str, streets: list[str],
                 kept[-1] = f"{kept[-1]}, {part}"
             continue
         low = part.lower().rstrip(".")
+        # "Residence in Ingleside Terraces" minus the address is the district
+        # the record is already indexed under, not a building.
+        if bare_places and re.sub(r"^(?:\w+\s+)*?in\s+", "", low) in bare_places:
+            continue
+        if low in bare_places:
+            continue
         # "Washington & Montgomery" is a corner, not a firm — every side of it
         # is one of the streets this record is indexed under.
         sides = [s.strip() for s in re.split(r"\s*&\s*|\s+and\s+", part) if s.strip()]
@@ -598,6 +613,12 @@ COLLECTION_VOICE = {
     # body that made these pictures and the sentence must not name one. What is
     # true of every record is that a dated photograph of the address survives.
     "SFP 162": ("Photographed {at} {display} {when}."),
+    # One commercial photographer's glass plates. Worden was hired to
+    # photograph the Ingleside Terraces and Jordan Park residence parks as they
+    # were built, so the collection is a dated, house-by-house record and the
+    # photographer is the fact the catalogue carries about who made it.
+    "SFP 22": ("Willard E. Worden photographed the property {at} {display} "
+               "{when}."),
 }
 
 
@@ -634,6 +655,11 @@ COLLECTION_VOICE = {
 # for a subject file, where the unnumbered majority is not about buildings at all.
 COLLECTION_UNNUMBERED_POLICY = {
     "SFP 162": "skip-unnumbered",
+    # Same shape as SFP 162 for the same reason: 330 of SFP 22's 433 records
+    # give no street number, and they are the photographer's miscellany — Camp
+    # McCoy, Y.M.C.A. portraits, views across Brisbane, "Ingleside Terraces
+    # residence interior" with no way to know which house. Not buildings.
+    "SFP 22": "skip-unnumbered",
 }
 
 COLLECTION_NAME_POLICY = {
@@ -642,6 +668,10 @@ COLLECTION_NAME_POLICY = {
     # — "Man standing in front of Malvina Coffee Shop in North Beach" — so the
     # same policy applies for the same reason.
     "SFP 162": "named-buildings-only",
+    # "Residence of Mrs. Henrietta Lehe, 15 Cerritos Avenue" — the tail of a
+    # Worden caption is the owner about as often as it is anything, and owners
+    # are barred outright.
+    "SFP 22": "named-buildings-only",
 }
 
 BUILDING_NOUN = {
@@ -845,7 +875,10 @@ def build(collection: str, batch: str):
         streets.append(addr["street_name"])
         if from_note:
             streets.append(from_note["street_name"])
-        kept, dropped = business_names(title, addr["as_written"], streets, policy)
+        districts = [re.sub(r"\.$", "", v[len("Districts--"):])
+                     for v in every(f, "650", "a") if v.startswith("Districts--")]
+        kept, dropped = business_names(title, addr["as_written"], streets, policy,
+                                       districts)
         kept_names += kept
         dropped_names += dropped
 
