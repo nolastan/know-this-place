@@ -295,6 +295,49 @@ rather than just accumulate.
   fix a new shape of a known slip, **add it to the pattern in the same commit**,
   or the next run rediscovers it by eye.
 
+- **A parcel's page is not always at a number the finding names, and both the
+  resolver and the publisher can get this wrong in opposite directions.** The
+  site keeps one page per parcel, at the number the assessor files it under, so
+  a corner building addressed on two streets has its page on whichever street
+  the assessor chose. `resolve_eas.py` forms `resolution.path` from the
+  finding's own number, which is right until the page turns out to live at the
+  other address. **28 SFP 23 findings said `published` with a path no page has
+  ever occupied** — every one had actually landed, on the parcel's page one
+  street over — and **eight UMB findings were declined outright with "no page
+  was seeded for it"** while that same page sat there the whole time. The
+  question to ask is never "is there a page at this path" but "does this parcel
+  have a page"; `check.py` now asks it, and fails a published finding whose
+  path has no `data.json`, naming the page the APN does have.
+
+- **A point-placed address is settled by the block's number line, not by the
+  parcel's range field.** Where EAS carries no parcel for an address the
+  resolver places it by point, and EAS points sit centimetres from a boundary.
+  The available test used to be sf-parcels' `from_address_num`/`to_address_num`,
+  which fires on 61 of 582 point placements and is wrong about 46 of them,
+  because that field is routinely narrower than the numbers a parcel holds.
+  Reading all 61 found the test that held every time: **another parcel holding
+  a number between the address and the parcel the point chose.** Nothing in
+  between, 35 of 35 correct; something in between, 13 of 13 the neighbour or
+  further. It is blind on a stretch EAS joins no parcel to, and `report` says
+  so rather than reporting a clean bill.
+
+- **A wrong placement can seed a page under an address its parcel does not
+  carry.** `seed_pages.py` takes the manifest's lowest number as the page's
+  own, so a point that landed on the wrong parcel does not just misfile a fact
+  — it can name a building. Parcel 0113023 is 287–289 Union Street to EAS and
+  to the assessor, and had a page titled *265–289 Union Street* because one
+  finding placed 265 there. **When you retract a placement, check whether the
+  page it created is the parcel's own address**, and correct the page, not only
+  the finding.
+
+- **`seed_pages.py render <neighborhood>` sweeps the render backlog.** 969
+  pages are grandfathered in `scripts/render-backlog.txt` because their HTML
+  still carries hand-written prose the renderer would drop, and rendering a
+  whole neighborhood to re-render your own two pages rewrites them too — this
+  run silently replaced a hand-written description on 1640 Grant Avenue that
+  way and caught it in `git status`, not in `validate.py`. **Render the page
+  paths you edited, one by one.**
+
 - **"Published" is a claim about a page, and it can be false silently.** A
   publisher that sets `building.architect` only if the field is empty does
   nothing when the page already names the same person under another spelling —
