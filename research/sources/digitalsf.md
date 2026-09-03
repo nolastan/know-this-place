@@ -452,7 +452,8 @@ records carry one; exactly one of those also carries a street number.
   **1,678 records carry no `524$a` at all, and 37 of them are addressed.** The
   batch unit is the collection named in `524$a`, so a run keyed on that string
   can never reach them. They need a batch of their own, keyed on something else
-  — `982$a` carries a collection name on many of them.
+  — `982$a` carries a collection name on many of them, `092$a` the SFP/SFH
+  number. Issue #220.
 
 - **Verified:** 2026-09-02 (read, resolved and published **the four small
   buildings collections in one run** — SFP 42, SFP 90, SFP 125 and SFP 169:
