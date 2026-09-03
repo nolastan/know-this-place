@@ -1200,6 +1200,36 @@ The mechanics:
   named office block), the name is evidence that the building described is the
   one standing, and an ordinary construction-date disagreement is the honest
   form. Two of that volume's four candidates moved that way.
+- **A pattern keyed on capitalization is a claim about the source's house
+  style, and sources do not keep to one.** The DigitalSF extractor matched a
+  street name as capitalized tokens, so "743 Washington street" — which is how
+  that catalogue writes an address about a third of the time — parsed as *743
+  Washington*. It cost three different things at once, which is why it went
+  unnoticed through a whole published batch: the finding recorded
+  `street_type_not_stated` about a record that stated it, the orphaned "street"
+  left in the caption failed the name filter's all-capitalized test and took the
+  building's name down with it, and the resolution method said "the record
+  states no street type" — which sent a 12th Street address to the
+  Street-or-Avenue tie-break for want of a word the record had printed.
+  *Before trusting a case-sensitive pattern, grep the corpus for the lower-case
+  form of what it is looking for and count.*
+
+- **A filter that drops on positive evidence still has to be told what the
+  evidence looks like from both ends.** The same extractor's
+  `named-buildings-only` policy — every word capitalized, one of them a building
+  noun — is the right trade for a caption collection, because a false keep is a
+  privacy failure. What it lost was names the caption *frames*: "Main entrance
+  to the Marines' Memorial Club", "Courtyard at the San Francisco Art
+  Institute", "Bank of Canton located at …". Widening the prefix list at the
+  front, stripping the trailing participle at the back, and completing eight
+  noun families recovered 42 names on 53 findings with nothing lost — because
+  none of those edits touched the policy, only what reaches it. **The one
+  proposed widening that was rejected is the shape to remember:** "home" would
+  have kept fourteen funeral homes and also "Home of Charles Berta" and "Home of
+  Katherine Modesti". *A head noun that reads as a building in a firm's name and
+  as a dwelling in a resident's is not safe as a bare noun, whatever the ratio —
+  and the ratio is what makes it tempting.*
+
 - **A second architect on a building the page already credits is an addition,
   not a duplicate — and neither overlap scan will tell you so.** The name-and-date
   scan compares the *same* name, so a different collaborator never matches; the

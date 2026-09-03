@@ -166,14 +166,29 @@ WORD_ORDINAL = {
     "twenty-third": 23, "twenty-fourth": 24, "twenty-fifth": 25,
 }
 SUFFIX = {1: "ST", 2: "ND", 3: "RD"}
+# The spelled-out type words, as opposed to the abbreviations in the same map.
+FULL_TYPE_WORD = {
+    "street", "avenue", "boulevard", "way", "court", "terrace", "place",
+    "drive", "lane", "alley", "road", "highway", "stairway", "walk", "circle",
+    "plaza", "row", "path", "steps",
+}
 
 # "1377 Fulton", "2929-2931 24th Street", "547-547A Castro Street", "7 7th Ave".
 # Four name tokens, because "415 El Camino Del Mar" needs them, and the
 # lowercase particles because the same street is also filed "El Camino del Mar".
 NAME_TOKEN = r"(?:[A-Z][A-Za-z'./]*|\d{1,2}(?:st|nd|rd|th)|del|de|la|van|von)"
+# The catalogue writes the street type in lower case about as often as not —
+# "743 Washington street", "3281 16th st." — and a name token keyed on a
+# capital letter cannot see it. That costs twice over: the finding records
+# `street_type_not_stated` about a record that stated it, and the orphaned
+# "street" left behind in the title blocks the caption name filter, which
+# requires every word of a fragment to be capitalized. So the type is matched
+# in its own right, in lower case, as an optional last token.
+LOWER_TYPE = "(?:%s)" % "|".join(
+    sorted(TYPE_ABBR, key=len, reverse=True))
 TITLE_ADDR = re.compile(
     rf"\b(\d{{1,5}}[A-Za-z]?(?:\s*-\s*\d{{1,5}}[A-Za-z]?)?)\s+"
-    rf"({NAME_TOKEN}(?:\s+{NAME_TOKEN}){{0,3}})\b")
+    rf"({NAME_TOKEN}(?:\s+{NAME_TOKEN}){{0,3}}\b(?:\s+{LOWER_TYPE}\b\.?)?)")
 
 # `Address. Box 3; Mission, 3232-3234.`  `Address. Box 1, Cortland 415.`
 # `Address. Fulton, 1377.`               `Address. Box 4; 2900-2904, 24th st.`
@@ -274,6 +289,11 @@ def address_from_title(title: str) -> dict | None:
         return None
     if not stype and name.upper() in NOT_A_STREET_NAME:
         return None
+    # "429 Montgomery street." keeps a full stop that is the end of the
+    # catalogue's sentence, not part of the address, and it reaches the page in
+    # the middle of one. An abbreviation's own period ("16th st.") stays.
+    if tokens[-1].endswith(".") and tokens[-1].rstrip(".").lower() in FULL_TYPE_WORD:
+        tokens[-1] = tokens[-1].rstrip(".")
     as_written = f"{number} {' '.join(tokens)}"
     if qualifier:
         as_written = f"{qualifier.group(0).strip()} {as_written}"
@@ -420,6 +440,12 @@ LEADING_JOIN = re.compile(
 # The same words at the end, once the address they introduced has been removed:
 # "Residence at 531 College Avenue" leaves "Residence at".
 TRAILING_JOIN = re.compile(r"\s+(?:at|and|on|in|of|to|now)$", re.I)
+# "Bank of Canton located at 743 Washington street" and "Cadillac Hotel located
+# at 380 Eddy street" leave the participle behind once the address goes. It is
+# the caption placing the building, not part of what the building is called —
+# and left on, it fails the all-capitalized test and takes the name with it.
+TRAILING_LOCATIVE = re.compile(
+    r"\s+(?:located|situated|shown|pictured|seen)$", re.I)
 CORP_SUFFIX = re.compile(r"^(?:inc|inc\.|ltd|ltd\.|co|co\.|corp|corp\.)$", re.I)
 GENERIC = {
     "business", "businesses", "residence", "residences", "apartments",
@@ -498,9 +524,10 @@ def business_names(title: str, address_span: str, streets: list[str],
         # 3rd Street" — so trim until the fragment stops shrinking.
         part = part.strip(" ,.-&")
         while True:
-            trimmed = TRAILING_JOIN.sub(
-                "", TRAILING_CROSS.sub(
-                    "", LEADING_JOIN.sub("", part))).strip(" ,.-&")
+            trimmed = TRAILING_LOCATIVE.sub(
+                "", TRAILING_JOIN.sub(
+                    "", TRAILING_CROSS.sub(
+                        "", LEADING_JOIN.sub("", part)))).strip(" ,.-&")
             if trimmed == part:
                 break
             part = trimmed
@@ -626,6 +653,12 @@ BUILDING_NOUN = {
     "warehouse", "terrace", "court", "plaza", "commons", "mall", "cathedral",
     "corporation",
     "synagogue", "hospital", "laundry", "cleaners", "pharmacy", "tavern",
+    # Each of these completes a family already in the list rather than opening
+    # a new one: institute and society sit with library and temple, brewery
+    # with plant and factory, bar and saloon with tavern, cafeteria with cafe,
+    # mortuary with cleaners, bookstore with store.
+    "institute", "society", "brewery", "saloon", "bar", "mortuary",
+    "cafeteria", "bookstore",
 }
 SMALL_WORD = {"of", "the", "at", "and", "in", "on", "for", "de", "la", "du",
               "des", "von", "van", "&", "-"}
@@ -655,9 +688,24 @@ EVENT_TAIL = re.compile(r"\b(?:ceremony|opening|meeting|dedication|groundbreakin
 # Restaurant" and "Former North Beach Branch Library" are the caption's framing,
 # not part of what the building is called; left on, they reach the page as the
 # archive describing its own photograph.
+# The second shape is the same framing with a *part of the building* in front
+# of it — "Main entrance to the Marines' Memorial Club", "Courtyard at the San
+# Francisco Art Institute", "Lobby of the Hotel Turpin". None of these words is
+# a BUILDING_NOUN, so stripping them can never take a name's own head noun.
+CAPTION_PART = (
+    r"entrances?|courtyard|lobby|lobbies|views?|facades?|doors?|doorway|"
+    r"floors?|porch|steps|stairway|staircase|details?|signs?|roof|windows?|"
+    r"yard|garden|driveway|corridor|hallway|basement|interiors?|exteriors?")
+CAPTION_PART_QUALIFIER = (
+    r"Main|Front|Rear|Side|Back|Aerial|Exterior|Interior|Modern|Upper|Lower|"
+    r"First|Second|Third|Fourth|Ground|Top|Close|Partial|Corner|Original|"
+    r"New|Old|North|South|East|West|Northwest|Northeast|Southwest|Southeast")
 CAPTION_PREFIX = re.compile(
     r"^(?:Exterior|Interior|Front|Rear|Side|View|Views|Construction|"
     r"Demolition|Remodeling|Renovation|Warehouse|Site)\s+of\s+(?:the\s+)?"
+    rf"|^(?:(?:{CAPTION_PART_QUALIFIER})\s+)?(?:{CAPTION_PART})\s+"
+    r"(?:on\s+top\s+of|in\s+front\s+of|of|at|to|on|in|inside|outside)"
+    r"\s+(?:the\s+)?"
     r"|^(?:Former|Old|New)\s+(?=[A-Z])", re.I)
 
 
