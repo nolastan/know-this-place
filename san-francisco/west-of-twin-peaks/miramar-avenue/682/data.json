@@ -1,0 +1,131 @@
+{
+  "address": "682 Miramar Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/west-of-twin-peaks/miramar-avenue/682/",
+  "apn": "3164028",
+  "block": "3164",
+  "lot": "028",
+  "eas_baseid": "355862",
+  "coordinates": {
+    "lat": 37.729181,
+    "lng": -122.457913
+  },
+  "parcel": {
+    "year_built": 1918,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 3798,
+    "building_area_sqft": 1702,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Westwood Park",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0682 MIRAMAR             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 78983,
+    "assessed_improvement_value": 91921
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1918",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202606304293",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2026-08-27",
+      "status_date": "2026-08-27",
+      "estimated_cost": 1000000,
+      "description": "full interior remodel for bathrooms, kitchen & living spaces. excavation of (e) basement to add more habitable space. replace windows throughout project. add skylight. remove deck.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202607235434",
+      "type": "additions alterations or repairs",
+      "status": "triage",
+      "filed": "2026-07-23",
+      "status_date": "2026-07-23",
+      "estimated_cost": 500000,
+      "description": "covert (e) detached garage into adu. work to be performed within (e) walls, change roof structure from flat to shed within (e) envelop. no addition or extension.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201608165077",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-08-16",
+      "status_date": "2017-01-30",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "repair stucco chimney in-kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201309278003",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-09-27",
+      "status_date": "2013-11-26",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "kitchen remodeling install new cabinets and countertop, bathroom remodeling, new vanity, tile, all work will be close on the 1st flr, lighting shall comply with t-24",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MIRAMAR&street_type=AVE&address_number=682",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3164028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3164&lot=028",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3164028",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "digitalsf-53459",
+      "name": "682 Miramar Avenue, not before 1917. San Francisco Subjects Photograph Collection (SFP 162), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/53459",
+      "label": "San Francisco Subjects Photograph Collection (SFP 162), San Francisco Public Library",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "not before 1917",
+      "kind": "photograph",
+      "description": "Photographed.",
+      "source": "digitalsf-53459"
+    }
+  ],
+  "unknowns": {
+    "rebuilt-since-photograph": "The assessor dates the building to 1918, after this photograph was taken."
+  }
+}

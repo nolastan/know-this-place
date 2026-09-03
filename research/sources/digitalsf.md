@@ -5,7 +5,7 @@
 >
 > - **Kind:** catalogued digital archive (photographs, city records, scanned documents) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** harvested in full — 59,601 unique records. Two of 44 collections read whole: **SFP 23** (1,165 records, 1,122 findings, 923 resolved, 919 published) and **SFH 371** (2,421 records, 421 findings, 117 resolved, 116 published on 103 pages).
+> - **Coverage:** harvested in full — 59,601 unique records. Three of 44 collections read whole: **SFP 23** (1,165 records, 1,122 findings, 923 resolved, 919 published), **SFH 371** (2,421 records, 421 findings, 117 resolved, 116 published on 103 pages) and **SFP 162** (34,738 records, 1,186 findings, 662 resolved, 545 published on 481 pages).
 > - **Local corpus:** `research/corpora/digitalsf/` (453 MB; `state.json` records the OAI resumption token per set)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -142,10 +142,10 @@ and roughly double what the title-only profile reports:
 
 | addressed records | collection |
 |---|---|
-| 1,505 | San Francisco Subjects Photograph Collection (SFP 162) — 34,738 records; too big for one session, split it by decade |
+| 1,435 | **San Francisco Subjects Photograph Collection (SFP 162) — done: 1,186 findings, 545 published.** One session, not the three the decade split assumed |
 | 1,128 | **Office of Assessor-Recorder Photographs (SFP 23) — done: 1,122 findings, 919 published** |
 | 251 | **Redevelopment Agency Records (SFH 371) — done: 421 findings, 116 published** |
-| 186 | Tenderloin Times Photograph Archives (SFP 130) |
+| 186 | Tenderloin Times Photograph Archives (SFP 130) — the next batch |
 | 151 | Judi Iranyi Photographs of the Tenderloin (SFP 179) |
 | 103 | Willard E. Worden Glass Plate Negatives (SFP 22) |
 | 70 | James A. Martin Color Slides of San Francisco (SFP 169) |
@@ -162,8 +162,13 @@ start with. The Office of Assessor-Recorder photographed properties *for
 assessment*, so the collection is a per-building record by construction: 1,128
 of its 1,165 records give a street number, a hit rate no other source here
 comes near. Findings: [`../findings/digitalsf/sfp-23.json`](../findings/digitalsf/sfp-23.json).
-The two largest remaining collections are too big for one session; split them
-by decade.
+**Size a batch on the addressed records, not the record count.** SFP 162 is the
+largest collection here — 34,738 records — and this dossier told the next run to
+split it by decade on that basis. It was wrong: 1,435 of those records carry a
+street number, the extractor reads the other 33,303 in five seconds, and the
+whole collection went from harvest to published pages in one session. What costs
+a session is the *addressed* half — the EAS join, the seeding, the page writes —
+so a collection is one batch until that number passes about fifteen hundred.
 
 ### Cautions
 
@@ -319,6 +324,85 @@ more sensitive rather than less.
   count the next are SFP 162 (852), SFH 371 (210) and SFP 130 (151). Re-run the
   harvester to pick up records added since; it resumes from the stored token
   rather than re-downloading.
+
+- **Verified:** 2026-09-02 (read, resolved and published **SFP 162, the San
+  Francisco Subjects Photograph Collection**, whole: 34,738 records → 1,186
+  findings → 662 on a parcel → **545 published on 481 pages** in #000, 235 of
+  them seeded for it, 117 declined. Findings:
+  [`../findings/digitalsf/sfp-162.json`](../findings/digitalsf/sfp-162.json).
+  183 of the published entries name the building or business the caption names —
+  the Castro and Grand and Granada theatres, the Hobart and Russ and Underwood
+  buildings, forty-odd churches, the branch libraries.
+
+  This is the first collection here that is **not** a survey of buildings. It is
+  the library's general subject file, and four things follow from that:
+
+  - **A subject file's unnumbered records are not about buildings at all**, so
+    keeping them as unresolved findings buys nothing. 31,988 of 34,738 records
+    give no street number, and the earlier default — keep every one as a stub so
+    the haystack is not re-read — would have written a 9,000-entry findings file
+    saying "the record names no street number" about a photograph of Stow Lake.
+    `COLLECTION_UNNUMBERED_POLICY` in
+    [`../tools/digitalsf_extract.py`](../tools/digitalsf_extract.py) now takes
+    that per collection; the coverage block records the whole read either way.
+  - **There is no one body that made these photographs**, so the description
+    cannot name one. SFP 23 says "The San Francisco Office of the
+    Assessor-Recorder photographed the property"; SFP 162 can only say
+    "Photographed", plus the building where the caption names one. The
+    `COLLECTION_VOICE` guard that refuses to run without a template for the
+    collection is what made this a decision rather than an accident.
+  - **Caption prose parses as addresses.** "23 April", "2 Engine", "1 Fire
+    House", "32 Streetcar", "365 Club" — a month, a fire company, a numbered
+    vehicle, a venue named for its street number. 37 of them, on top of the 70
+    the year-as-street-number rule already caught. `NOT_A_STREET_NAME` in the
+    extractor holds the list; extend it from `--report` on the next narrative
+    collection rather than rediscovering it.
+  - **Caption framing sticks to the building's name.** "Exterior of Ernie's
+    Restaurant", "Former North Beach Branch Library", "Warehouse of Allegheny
+    Ludlum Steel Corporation" — stripped now by `CAPTION_PREFIX`, and a fragment
+    that is nothing but a building noun ("Building", "House") is dropped. What
+    the `named-buildings-only` policy still loses is a name buried in lowercase
+    caption: "Main entrance to the Marines' Memorial Club" and "Courtyard at the
+    San Francisco Art Institute" both published without their building's name.
+    That is the documented trade — a false keep is a privacy failure — but the
+    fix is a wider prefix list, not a looser policy.
+
+  **The expensive lesson was the 1909 renumbering, and it was caught in the
+  audit rather than the resolver.** 42 findings dated before 1910 resolved on a
+  clean EAS join: the number exists today, on a parcel, and nothing in the join
+  can see that the numbering changed underneath it. Checked against the roll,
+  **36 of the 42 sat on a parcel whose building the assessor dates *after* the
+  photograph** — 760 Mission Street, photographed in 1867, on a parcel built in
+  1989; 315 Montgomery, 1865, on one built in 1921; 120 Kearny, 1880, on one
+  built in 1980. All 42 were pulled back to `unresolved`, taken off their pages
+  and their 15 pages deleted. [`../tools/resolve_eas.py`](../tools/resolve_eas.py)
+  now refuses any pre-1910 address outright and says what would unblock it, so
+  the refusal is the tool's rather than the auditor's. SFP 23 and SFH 371 were
+  checked for the same trap and have none.
+
+  Two smaller ones. **A street alias must not collapse a post-direction.**
+  `--alias 'BUENA VISTA WEST=BUENA VISTA'` looked like the Douglas/Douglass case
+  and is not: EAS keeps the WEST in `address`, not in `street_name`, so the
+  alias filed 737 Buena Vista Avenue West on Buena Vista Avenue — where the site
+  already had a second page for the same building under another parcel, which is
+  the duplicate in #201. The finding is declined and left for a person. And **a page in
+  `scripts/render-backlog.txt` may have no timeline at all** — 420 Montgomery
+  Street carries a permit history, 737 Buena Vista Avenue West carries none —
+  in which case a photograph row has nowhere to sit and the finding is a
+  decline, not a hand-edit. 1 Montgomery Street did have one, and its row and
+  source were added to the HTML by hand.
+
+  **The roll dates the building later than the photograph on 57 pages**, the
+  same finding SFP 23 reported on 45. Each carries the SFP 23 wording in
+  `.unknowns` — "The assessor dates the building to 1988, after this photograph
+  was taken" — so a Built tag does not sit unexplained beside an older
+  photograph.
+
+  **The Photographs set alone holds every SFP 162 record**, so the `city`,
+  `sfhistory` and `lgbtq` sets — harvested in this run to complete the
+  repository — added nothing to this batch. A fresh worktree gitignores the
+  corpus, but another worktree on the same machine usually has it: `cp -Rc` off
+  it is a copy-on-write clone and saves the 70-minute `Photographs` harvest.)
 
 - **Verified:** 2026-09-02 (read, resolved and published **SFH 371, the San
   Francisco Redevelopment Agency Records**, whole: 2,421 records → 421 findings

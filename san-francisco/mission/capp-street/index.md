@@ -178,6 +178,7 @@ Every residential parcel on Capp Street that the city's address, assessor and pe
 - [1026–1028](1026/) — A 1904 two dwellings on one parcel, with an accessory dwelling unit permitted in 2021.
 - [1040–1042](1040/) — A 1979 two-flat, with reroofing permitted in 1996.
 - [1044–1046](1044/) — A 1900 two-flat, with reroofing permitted in 2011.
+- [1045](1045/) — A 1947 office building, with a kitchen and bathroom remodel permitted in 2019.
 - [1048–1050](1048/) — An 1898 4-unit apartment building, with a kitchen and bathroom remodel permitted in 1987.
 - [1049–1055](1049/) — A 1900 2-unit building with a ground-floor store, with fire repair permitted in 1990.
 - [1052–1058](1052/) — A 1900 two-flat, with a bathroom remodel permitted in 1991.

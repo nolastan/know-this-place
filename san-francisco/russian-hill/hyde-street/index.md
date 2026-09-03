@@ -6,7 +6,9 @@ The parcels on Hyde Street documented here so far, from the city's address, asse
 
 - [1401–1405](1401/) — A 1908 four-flat, with window replacement permitted in 2024.
 - [2452](2452/) — A 1937 building, with deck work permitted in 2018.
+- [2454](2454/) — A 1914 church, with a seismic retrofit permitted in 2016.
 - [2626](2626/) — A 1900 single-family house, with a seismic retrofit permitted in 2009.
+- [2728–2748](2728/) — A 1956 office building, with a rear addition permitted in 1988.
 - [2761–2765](2761/) — A 1911 7-unit apartment building, with a kitchen remodel permitted in 2020.
 
 Pages are generated from the DataSF datasets listed in each page's

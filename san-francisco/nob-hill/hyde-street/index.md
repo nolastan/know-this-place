@@ -21,6 +21,7 @@ The parcels on Hyde Street documented here so far, from the city's address, asse
 - [900](900/) — A 1968 building, with reroofing permitted in 1992.
 - [935](935/) — A 1922 16-unit apartment building, with permit records from 1988 to 2025.
 - [1005](1005/) — A 1915 22-unit apartment building, with a seismic retrofit permitted in 2001.
+- [1030–1032](1030/) — A 1908 5-unit apartment building, with a seismic retrofit permitted in 2011.
 - [1269](1269/) — A 1908 church, with reroofing permitted in 2023.
 - [1369](1369/) — A 1911 82-unit apartment building, with a seismic retrofit permitted in 1994.
 - [1438–1442](1438/) — A 1911 7-unit apartment building, with a seismic retrofit permitted in 2015.

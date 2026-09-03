@@ -1,0 +1,132 @@
+{
+  "address": "315 Duncan Street, San Francisco, CA 94131",
+  "path": "/san-francisco/noe-valley/duncan-street/315/",
+  "apn": "6601038",
+  "block": "6601",
+  "lot": "038",
+  "eas_baseid": "403542",
+  "coordinates": {
+    "lat": 37.745804,
+    "lng": -122.427722
+  },
+  "parcel": {
+    "year_built": 1967,
+    "units": 8,
+    "stories": 2,
+    "rooms": 32,
+    "bathrooms": 8,
+    "lot_area_sqft": 6268,
+    "building_area_sqft": 7980,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 0315 DUNCAN              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 194743,
+    "assessed_improvement_value": 419679
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1967",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202208261341",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-08-26",
+      "status_date": "2023-10-30",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "replace (e) fire alarm system with new to comply with sffc 1103.7.6.1: install new fire alarm panel and wireless communicator, 3 smokes, 3 pulls, 10 new low freq horn/strobes in hallways and all sleeping areas.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201611173015",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2016-11-17",
+      "status_date": "2018-06-25",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "compliance with mandatory seismic retrofit program. sfbc chapter 34b p807",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200908124664",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-08-12",
+      "status_date": "2009-10-27",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "remove 1 aluminum windows and replace it w/ vinyl at the rear of build, dry-rot repair at the rear of build in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9514696",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-09-11",
+      "status_date": "1997-06-25",
+      "estimated_cost": 7500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DUNCAN&street_type=ST&address_number=315",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6601038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6601&lot=038",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6601038",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "digitalsf-46967",
+      "name": "315 Duncan Street, 1964. San Francisco Subjects Photograph Collection (SFP 162), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/46967",
+      "label": "San Francisco Subjects Photograph Collection (SFP 162), San Francisco Public Library",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1964-06-20",
+      "kind": "photograph",
+      "description": "Photographed.",
+      "source": "digitalsf-46967"
+    }
+  ],
+  "unknowns": {
+    "rebuilt-since-photograph": "The assessor dates the building to 1967, after this photograph was taken."
+  }
+}

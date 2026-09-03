@@ -18,7 +18,9 @@ The parcels on Montgomery Street documented here so far, from the city's address
 - [420](420/) — A 1959 office tower on the site of one of Samuel Brannan's two 1853 Montgomery Street buildings.
 - [451–465](451/) — A 1907 office building, with a seismic retrofit permitted in 1993.
 - [456–460](456/) — A 1986 office building with a sunken plaza, one of the Downtown Plan's public open spaces.
+- [520](520/) — A 1920 store building in the Commercial-Leidesdorff Conservation District, with stair work permitted in 2013.
 - [540–550](540/) — A 1931 office building in the Commercial-Leidesdorff Conservation District, with plumbing work permitted in 2015.
+- [1228](1228/) — A 1929 6-unit apartment building, with a bathroom remodel permitted in 2007.
 - [1254–1262](1254/) — A 1900 6-unit apartment building in the Telegraph Hill Historic District, with deck work permitted in 1988.
 
 Pages are generated from the DataSF datasets listed in each page's

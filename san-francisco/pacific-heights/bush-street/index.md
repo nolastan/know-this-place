@@ -18,6 +18,7 @@ The parcels on Bush Street documented here so far, from the city's address, asse
 - [2061–2067](2061/) — A 1904 4-unit apartment building, with reroofing permitted in 2020.
 - [2142–2144](2142/) — A 1900 4-unit apartment building, with a kitchen and bathroom remodel permitted in 2007.
 - [2240–2250](2240/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2025.
+- [2390](2390/) — A 1928 school building, with reroofing permitted in 2023.
 - [2401–2405](2401/) — A 1916 garage, with reroofing permitted in 1995.
 - [2503–2505](2503/) — A 1900 2-unit building with a ground-floor store, with foundation work permitted in 2013.
 - [2520](2520/) — A 1910 church, with a seismic retrofit permitted in 1999.

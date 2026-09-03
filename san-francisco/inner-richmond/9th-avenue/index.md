@@ -10,6 +10,7 @@ The parcels on Ninth Avenue documented here so far, from the city's address, ass
 - [139–141](139/) — A 1921 two-flat, with garage work permitted in 2025.
 - [147–149](147/) — A 1921 two-flat, with reroofing permitted in 2019.
 - [351](351/) — A 1924 building, with a seismic retrofit permitted in 2006.
+- [389](389/) — An office building, with electrical work permitted in 2008.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

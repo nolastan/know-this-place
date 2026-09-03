@@ -12,6 +12,7 @@ San Francisco's south-eastern quarter, settled from the 1860s as the industrial 
 - [Carroll Avenue](carroll-avenue/) — 1 building, built 2016.
 - [Earl Street](earl-street/) — 1 building, built 1947.
 - [Evans Avenue](evans-avenue/) — 1 building, built 1978.
+- [Fitzgerald Avenue](fitzgerald-avenue/) — 1 building, built 1962.
 - [Gilman Avenue](gilman-avenue/) — 1 building, built 1925.
 - [Griffith Street](griffith-street/) — 1 building, built 1930; 1 in the India Basin Scow Schooner Boatyard Vernacular Cultural Landscape.
 - [Hawes Street](hawes-street/) — 2 buildings, built 1942–1972.
@@ -39,6 +40,7 @@ San Francisco's south-eastern quarter, settled from the 1860s as the industrial 
 - [Phelps Street](phelps-street/) — 1 building.
 - [Pomona Street](pomona-street/) — 1 building, built 1910.
 - [Quesada Avenue](quesada-avenue/) — 5 buildings, built 1900–1922.
+- [Rankin Street](rankin-street/) — 1 building, built 1962.
 - [Revere Avenue](revere-avenue/) — 1 building, built 1900.
 - [San Bruno Avenue](san-bruno-avenue/) — 1 building, built 1906.
 - [Selby Street](selby-street/) — 1 building, built 1951.

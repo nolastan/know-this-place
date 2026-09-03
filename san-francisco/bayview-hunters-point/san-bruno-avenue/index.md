@@ -6,6 +6,7 @@ The parcels on San Bruno Avenue documented here so far, from the city's address,
 
 - [2360](2360/) — An 1895 6-unit apartment building, with plumbing work permitted in 2004.
 - [2434–2448](2434/) — A 1906 office building, with a rear addition permitted in 1989.
+- [2450](2450/) — A 1940 office building, with plumbing work permitted in 2009.
 - [2574](2574/) — A 2010 office building, with plumbing work permitted in 2015.
 
 Pages are generated from the DataSF datasets listed in each page's

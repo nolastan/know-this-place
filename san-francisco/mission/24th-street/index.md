@@ -146,6 +146,7 @@ Every residential parcel on 24th Street that the city's address, assessor and pe
 - [3675](3675/) — A 1959 7-unit apartment building, with an addition permitted in 2022.
 - [3681–3683](3681/) — An 1890 two-flat, with a kitchen remodel permitted in 1999.
 - [3685](3685/) — A 1900 2-unit tic building, with facade work permitted in 2001.
+- [3969](3969/) — A 1900 store building, with an addition permitted in 1987.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

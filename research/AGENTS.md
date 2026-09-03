@@ -199,6 +199,26 @@ live in the dossiers. **Add to this list** whenever a run discovers something a
 future run would otherwise repeat — that is what makes this module improve
 rather than just accumulate.
 
+- **A pre-1909 address that resolves cleanly is the module's most convincing
+  wrong answer.** The 1909 renumbering moved street numbers across much of the
+  city, and an EAS join cannot see it: the number exists today, it sits on a
+  parcel, and the resolver reports a clean match for a building that may be a
+  block away or a century newer. SFP 162 published 42 such findings before the
+  audit caught them, and **36 of the 42 sat on a parcel whose building the
+  assessor dates after the photograph** — one by 122 years. The cheap test is
+  the roll: a photograph older than the building under it is a resolution to
+  distrust, whatever the join said. `resolve_eas.py` now refuses any address
+  dated before 1910 and says what would unblock it — a cross street, a block
+  face, a lot dimension — so the refusal is mechanical rather than a thing the
+  next auditor has to think of.
+
+- **An alias maps a street's name, never its direction.** `--alias
+  DOUGLAS=DOUGLASS` is a spelling; `--alias 'BUENA VISTA WEST=BUENA VISTA'` is
+  not. EAS keeps a post-direction in `address` rather than in `street_name`, so
+  collapsing it files the finding on the wrong street and seeds a second page
+  for a building that already has one. Check what EAS actually holds in each
+  field before inventing an alias.
+
 - **A report that reads the page cannot tell your work from the last run's.**
   `check.py --report` counted a page's current `unknowns` and
   `building.completed_conflict` as the batch's own, so a digitalsf batch that

@@ -4,6 +4,7 @@ The parcels on Powell Street documented here so far, from the city's address, as
 
 ## Documented so far
 
+- [17–33](17/) — A hotel in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 2014.
 - [45–49](45/) — A 1909 hotel in the Kearny-Market-Mason-Sutter Conservation District, with facade work permitted in 2013.
 - [57–71](57/) — A 1907 store building in the Kearny-Market-Mason-Sutter Conservation District, with stair work permitted in 2016.
 - [101](101/) — A 1909 hotel in the Kearny-Market-Mason-Sutter Conservation District, with plumbing work permitted in 2013.
@@ -24,6 +25,7 @@ The parcels on Powell Street documented here so far, from the city's address, as
 - [800](800/) — A 1909 2-unit building, with reroofing permitted in 2012.
 - [900](900/) — A 1909 14-unit apartment building, with a kitchen and bathroom remodel permitted in 2000.
 - [920](920/) — A 1913 single-family house, with a bathroom remodel permitted in 2009.
+- [926](926/) — A 1922 16-unit apartment building, with permit records from 1982 to 2025.
 - [952](952/) — A 1913 21-unit apartment building, with reroofing permitted in 2006.
 
 Pages are generated from the DataSF datasets listed in each page's

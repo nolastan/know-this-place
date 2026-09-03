@@ -4,6 +4,7 @@ The parcels on Minnesota Street documented here so far, from the city's address,
 
 ## Documented so far
 
+- [555](555/) — A 1947 industrial building, with reroofing permitted in 2025.
 - [601](601/) — A 1937 store building, with stair work permitted in 1986.
 - [602](602/) — An apartment building, with permit records from 1992 to 2026.
 - [914](914/) — A corner building of 1906 that the 2001 Dogpatch survey records as the home of Dugan's Liquors.

@@ -15,6 +15,7 @@ The parcels on Seacliff Avenue documented here so far, from the city's address, 
 - [250](250/) — A 1929 single-family house in the Sea Cliff Historic District, with a rear addition permitted in 1999.
 - [290](290/) — A 1921 single-family house in the Sea Cliff Historic District, with garage work permitted in 2012.
 - [300](300/) — A 1938 single-family house in the Sea Cliff Historic District, with a kitchen and bathroom remodel permitted in 2004.
+- [330](330/) — A 1929 single-family house in the Sea Cliff Historic District, with garage work permitted in 2010.
 - [455](455/) — A 1939 building in the Sea Cliff Historic District, with reroofing permitted in 2004.
 
 Pages are generated from the DataSF datasets listed in each page's

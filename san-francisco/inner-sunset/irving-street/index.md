@@ -43,6 +43,7 @@ The parcels on Irving Street documented here so far, from the city's address, as
 - [2101](2101/) — A 1936 store building, with stair work permitted in 1992.
 - [2215–2225](2215/) — A 1924 store building, with reroofing permitted in 2023.
 - [2415–2425](2415/) — A 1950 store building, with reroofing permitted in 1998.
+- [2520–2550](2520/) — A building, with permit records from 2000 to 2022.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

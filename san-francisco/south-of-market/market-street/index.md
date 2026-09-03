@@ -10,6 +10,8 @@ The parcels on Market Street documented here so far, from the city's address, as
 - [721](721/) — A 1907 office building, with electrical work permitted in 2007.
 - [725–731](725/) — A 1908 office building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 1997.
 - [735](735/) — A 1907 office building in the Kearny-Market-Mason-Sutter Conservation District, with reroofing permitted in 1998.
+- [744](744/) — A 1910 bank building in the Kearny-Market-Mason-Sutter Conservation District, with facade work permitted in 2012.
+- [747](747/) — A building, with plumbing work permitted in 2015.
 - [757](757/) — A hotel, with reroofing permitted in 2017.
 - [765–781](765/) — A 1989 hotel, with plumbing work permitted in 2018.
 - [785](785/) — A 1907 office building in the Kearny-Market-Mason-Sutter Conservation District, with an addition permitted in 2019.
@@ -17,6 +19,8 @@ The parcels on Market Street documented here so far, from the city's address, as
 - [800–830](800/) — A 1908 store building in the Kearny-Market-Mason-Sutter Conservation District, with facade work permitted in 2008.
 - [801–815](801/) — A 1999 hotel in the Kearny-Market-Mason-Sutter Conservation District, with reroofing permitted in 2016.
 - [825–833](825/) — A 1908 office building in the Kearny-Market-Mason-Sutter Conservation District, with facade work permitted in 1994.
+- [838](838/) — A 1930 store building in the Kearny-Market-Mason-Sutter Conservation District, with stair work permitted in 2012.
+- [844–846](844/) — A 1908 store building in the Kearny-Market-Mason-Sutter Conservation District, with plumbing work permitted in 2010.
 - [845](845/) — The 2006 shopping centre built behind the Emporium's 1896 facade and glass dome.
 - [865–885](865/) — A 1908 shopping center in the Kearny-Market-Mason-Sutter Conservation District, with plumbing work permitted in 2015.
 - [870–898](870/) — A 1907 office building in the Kearny-Market-Mason-Sutter Conservation District, with facade work permitted in 1993.
@@ -47,8 +51,10 @@ The parcels on Market Street documented here so far, from the city's address, as
 - [1100–1112](1100/) — A 1909 hotel in the Market Street Theatre and Loft Historic District, with reroofing permitted in 2013.
 - [1101–1105](1101/) — A 1909 10-unit building in the Market Street Theatre and Loft Historic District, with facade work permitted in 2012.
 - [1115–1119](1115/) — A 1920 office building, with window replacement permitted in 2023.
+- [1127](1127/) — A 1917 theater in the San Francisco Neighborhood Movie Theater Historic District (Discontiguous), with a seismic retrofit permitted in 2012.
 - [1133–1139](1133/) — A 1906 hotel, with facade work permitted in 2021.
 - [1145](1145/) — A 1990 office building, with reroofing permitted in 2005.
+- [1182–1192](1182/) — A 1925 office building in the Civic Center Historic District, with electrical work permitted in 2022.
 - [1200](1200/) — A 1908 store building in the Civic Center Historic District, with a seismic retrofit permitted in 1984.
 - [1210–1218](1210/) — A 1907 store building in the Civic Center Historic District, with facade work permitted in 1995.
 - [1215–1231](1215/) — A 1911 hotel, with a bathroom remodel permitted in 2002.

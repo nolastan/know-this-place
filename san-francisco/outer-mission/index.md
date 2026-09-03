@@ -5,7 +5,9 @@ A residential district south of the Mission proper, built up in the first decade
 ## Streets documented so far
 
 - [Alemany Boulevard](alemany-boulevard/) — 1 building, built 1938.
+- [Capistrano Avenue](capistrano-avenue/) — 1 building, built 1925.
 - [Cayuga Avenue](cayuga-avenue/) — 1 building, built 1880.
+- [Delano Avenue](delano-avenue/) — 1 building, built 1913.
 - [Harrington Street](harrington-street/) — A 1908 house recorded as Jerry Garcia's home with his grandparents after 1947.
 - [Mission Street](mission-street/) — 1 building, built 1963.
 - [Oneida Avenue](oneida-avenue/) — 1 building.

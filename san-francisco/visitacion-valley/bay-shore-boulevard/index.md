@@ -4,6 +4,7 @@ The parcels on Bay Shore Boulevard documented here so far, from the city's addre
 
 ## Documented so far
 
+- [2201](2201/) — A 1948 7-unit building, with a seismic retrofit permitted in 2015.
 - [2550](2550/) — A 1955 building, with permit records from 2010 to 2023.
 - [2598](2598/) — A 1930 building, with reroofing permitted in 1991.
 

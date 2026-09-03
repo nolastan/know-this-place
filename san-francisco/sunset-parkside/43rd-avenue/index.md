@@ -4,6 +4,7 @@ The parcels on 43rd Avenue documented here so far, from the city's address, asse
 
 ## Documented so far
 
+- [1399](1399/) — A 1900 church, with reroofing permitted in 2006.
 - [1400](1400/) — A 1950 single-family house, with an addition permitted in 2013.
 - [1406](1406/) — A 1950 single-family house, with a kitchen and bathroom remodel permitted in 2012.
 - [1410](1410/) — A 1950 single-family house, with window replacement permitted in 2004.

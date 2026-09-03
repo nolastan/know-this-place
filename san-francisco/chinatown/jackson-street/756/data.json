@@ -1,0 +1,167 @@
+{
+  "address": "756–758 Jackson Street, San Francisco, CA 94133",
+  "path": "/san-francisco/chinatown/jackson-street/756/",
+  "apn": "0178009",
+  "block": "0178",
+  "lot": "009",
+  "eas_baseid": "458144",
+  "coordinates": {
+    "lat": 37.796158,
+    "lng": -122.407659
+  },
+  "address_range": "756–758",
+  "street_numbers_on_parcel": [
+    "756",
+    "758"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 11,
+    "stories": 3,
+    "rooms": 35,
+    "bathrooms": 13,
+    "lot_area_sqft": 4726,
+    "building_area_sqft": 13306,
+    "basement_area_sqft": 1975,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "C",
+    "zoning": "CRNC",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Financial District North",
+    "analysis_neighborhood": "Chinatown",
+    "property_location_raw": "0000 0758 JACKSON             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 149239,
+    "assessed_improvement_value": 1282490
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Chinatown Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1930/1938",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202205204703",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-05-20",
+      "status_date": "2023-04-07",
+      "estimated_cost": 23400,
+      "revised_cost": 23400,
+      "description": "upgrade existing fire alarm system to comply with sffc section 1103.7.6.1.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201411131364",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-11-13",
+      "status_date": "2015-01-23",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "one unit: correction of pa# 201407292430 for construction type from type ii to type iii.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201407292430",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-07-29",
+      "status_date": "2014-09-17",
+      "estimated_cost": 95000,
+      "revised_cost": 95000,
+      "description": "interior remodel of one unit. convert 5 room apt to 3 room apt by creating a single space for kitchen, dining, living room. the bathroom is remodeled. new elec, plumb. sheetrock walls and ceiling. new hardwood floor. all windows replace with double glazing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200410187101",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-10-18",
+      "status_date": "2004-12-17",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "add storefront to (e)retail sotre,upgrade toilet room & add hand rail to (e)stair to comply with ada",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8300518",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-01-18",
+      "status_date": "1986-03-04",
+      "estimated_cost": 9900,
+      "description": "parapet bracing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "1983–2022",
+    "shown_on_page": 5,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JACKSON&street_type=ST&address_number=756",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0178009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0178&lot=009",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0178009",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40765880356773%2037.79615824047596)%27)",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "digitalsf-18827",
+      "name": "756 Jackson Street, 1964. San Francisco Subjects Photograph Collection (SFP 162), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/18827",
+      "label": "San Francisco Subjects Photograph Collection (SFP 162), San Francisco Public Library",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1964-06-19",
+      "kind": "photograph",
+      "description": "Photographed, showing the Grandview Theater.",
+      "source": "digitalsf-18827"
+    }
+  ]
+}

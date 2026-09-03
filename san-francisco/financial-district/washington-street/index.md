@@ -10,6 +10,7 @@ The parcels on Washington Street documented here so far, from the city's address
 - [535](535/) — Redwood Park: half an acre of coast redwoods at the foot of the Transamerica Pyramid.
 - [584](584/) — A 1900 office building in the Jackson Square Historic District, with a kitchen remodel permitted in 2007.
 - [636–640](636/) — A 1907 7-unit apartment building, with foundation work permitted in 2009.
+- [720](720/) — A 1964 church in the Chinatown Historic District, with reroofing permitted in 2008.
 - [727](727/) — A 1906 5-unit building with a ground-floor store in the Chinatown Historic District, with a seismic retrofit permitted in 1994.
 - [737–739](737/) — A 1906 store building in the Chinatown Historic District, with a seismic retrofit permitted in 2000.
 - [740–742](740/) — A 1907 store building in the Chinatown Historic District, with reroofing permitted in 2015.
@@ -28,6 +29,7 @@ The parcels on Washington Street documented here so far, from the city's address
 - [868–878](868/) — A 1907 hotel in the Chinatown Historic District, with a seismic retrofit permitted in 1996.
 - [920](920/) — A 1910 church in the Chinatown Historic District, with a rear addition permitted in 1989.
 - [940](940/) — A 1911 church in the Chinatown Historic District, with a seismic retrofit permitted in 2012.
+- [954](954/) — A 1900 school building in the Chinatown Historic District, with permit records from 1992 to 2009.
 - [962](962/) — A 1911 3-unit apartment building, with reroofing permitted in 2004.
 
 Pages are generated from the DataSF datasets listed in each page's

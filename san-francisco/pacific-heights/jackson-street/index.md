@@ -14,11 +14,13 @@ The parcels on Jackson Street documented here so far, from the city's address, a
 - [2020](2020/) — A 1902 single-family house, with a rear addition permitted in 1990.
 - [2090](2090/) — An 1896 single-family house, with an addition permitted in 2001.
 - [2100](2100/) — A 1923 10-unit apartment building, with an addition permitted in 2026.
+- [2123](2123/) — A 1939 building, with a kitchen remodel permitted in 1993.
 - [2340–2360](2340/) — A 1900 school building, with permit records from 1995 to 2011.
 - [2501–2599](2501/) — An assessor class: vacant lot, with window replacement permitted in 2007.
 - [2518](2518/) — A 1900 single-family house, with foundation work permitted in 2022.
 - [2570](2570/) — A 1924 single-family house, with a rear addition permitted in 2013.
 - [2600](2600/) — A 1900 single-family house, with an addition permitted in 1996.
+- [2610](2610/) — A 1957 single-family house, with a rear addition permitted in 2005.
 - [2622](2622/) — A 1900 single-family house, with a kitchen remodel permitted in 2014.
 - [2700–2750](2700/) — A 1956 school building, with an addition permitted in 2012.
 - [2820](2820/) — A 1900 single-family house, with a bathroom remodel permitted in 2025.

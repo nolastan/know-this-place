@@ -8,6 +8,7 @@ The parcels on Sacramento Street documented here so far, from the city's address
 - [560](560/) — A 1909 office building in the Commercial-Leidesdorff Conservation District, with electrical work permitted in 2009.
 - [576](576/) — A 1907 office building in the Commercial-Leidesdorff Conservation District, with reroofing permitted in 2004.
 - [615](615/) — A 1907 store building, with stair work permitted in 1996.
+- [624](624/) — An office building, with permit records from 1984 to 1995.
 - [648–656](648/) — A 1909 office building, with a seismic retrofit permitted in 2019.
 - [666–668](666/) — A 1910 store building, with a seismic retrofit permitted in 1998.
 - [672–674](672/) — A 1907 hotel, with a seismic retrofit permitted in 1998.
@@ -16,6 +17,7 @@ The parcels on Sacramento Street documented here so far, from the city's address
 - [706–710](706/) — A 1906 8-unit apartment building in the Chinatown Historic District, with a seismic retrofit permitted in 2000.
 - [716–722](716/) — A 1915 store building in the Chinatown Historic District, with reroofing permitted in 2017.
 - [746–762](746/) — A 1908 25-unit apartment building in the Chinatown Historic District, with reroofing permitted in 2018.
+- [755](755/) — A 1925 school building in the Chinatown Historic District, with permit records from 1994 to 2016.
 - [766–782](766/) — A 1906 6-unit apartment building in the Chinatown Historic District, with a rear addition permitted in 1997.
 - [771–773](771/) — A 1907 3-unit apartment building in the Chinatown Historic District, with window replacement permitted in 2025.
 - [775–777](775/) — A 1907 6-unit apartment building in the Chinatown Historic District, with a kitchen and bathroom remodel permitted in 2023.

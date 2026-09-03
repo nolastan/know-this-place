@@ -4,6 +4,7 @@ The parcels on Post Street documented here so far, from the city's address, asse
 
 ## Documented so far
 
+- [1450](1450/) — A 1992 building, with an addition permitted in 2013.
 - [1601–1625](1601/) — A 1968 hotel, with a kitchen remodel permitted in 1985.
 - [1632–1638](1632/) — A 1958 2-unit building with a ground-floor store, with a bathroom remodel permitted in 2019.
 - [1640](1640/) — A 1976 store building, with a kitchen remodel permitted in 2004.
@@ -15,6 +16,7 @@ The parcels on Post Street documented here so far, from the city's address, asse
 - [1737](1737/) — A 1968 store building, with reroofing permitted in 2015.
 - [1746](1746/) — A 2009 store building, with plumbing work permitted in 2009.
 - [1865–1881](1865/) — A 1967 theater, with reroofing permitted in 2011.
+- [1949](1949/) — A 1921 store building, with one permit record from 1996.
 - [1975](1975/) — A 2001 church, with facade work permitted in 2012.
 - [2233](2233/) — A 1961 office building, with reroofing permitted in 2024.
 

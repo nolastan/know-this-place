@@ -7,10 +7,13 @@ The parcels on Ashbury Street documented here so far, from the city's address, a
 - [459](459/) — A 1900 single-family house in the Panhandle Historic District, with a kitchen and bathroom remodel permitted in 2007.
 - [461](461/) — A 1900 two-flat in the Panhandle Historic District, with garage work permitted in 2006.
 - [600–614](600/) — A 1907 10-unit building with a ground-floor store in the Haight Ashbury Counterculture Historic District, with a seismic retrofit permitted in 2017.
+- [624](624/) — A 1906 building, with a seismic retrofit permitted in 2012.
 - [635](635/) — An eight-unit 1905 apartment building, one of three addresses guides attach to Janis Joplin.
 - [710](710/) — A two-unit 1900 building named by published guides as the Grateful Dead's late-1960s house.
 - [715](715/) — A 1903 single-family house, with foundation work permitted in 2023.
+- [826](826/) — A 1910 single-family house in the Ashbury Heights Historic District, with reroofing permitted in 1992.
 - [900](900/) — A 1908 4-unit apartment building in the Ashbury Heights Historic District, with a kitchen and bathroom remodel permitted in 2007.
+- [1019](1019/) — A 1908 10-unit apartment building, with a seismic retrofit permitted in 2017.
 - [1040](1040/) — A 1962 9-unit apartment building, with a seismic retrofit permitted in 2020.
 
 Pages are generated from the DataSF datasets listed in each page's

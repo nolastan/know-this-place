@@ -28,6 +28,7 @@ A low-lying district on filled ground along the northern waterfront, largely bui
 - [Lyon Street](lyon-street/) — 1 building, built 1900; 1 in the Presidio of San Francisco Historic District.
 - [Mallorca Way](mallorca-way/) — 1 building, built 1950; 1 in the Marina Corporation Residential Historic District.
 - [Marina Boulevard](marina-boulevard/) — 1 building, built 1938.
+- [Moraga Avenue](moraga-avenue/) — 1 building; 1 in the Presidio of San Francisco Historic District.
 - [North Point Street](north-point-street/) — 3 buildings, built 1926–1928.
 - [Octavia Street](octavia-street/) — 2 buildings, built 1924–1926.
 - [Pierce Street](pierce-street/) — 4 buildings, built 1912–1936; 2 in the Marina Corporation Residential Historic District.

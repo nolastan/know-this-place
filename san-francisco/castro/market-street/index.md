@@ -14,6 +14,7 @@ Every residential parcel on Market Street that the city's address, assessor and 
 - [2124–2126](2124/) — A 1908 5-unit apartment building in the Upper Market Street Commercial Historic District, with facade work permitted in 2009.
 - [2128–2130](2128/) — A 1938 13-unit apartment building in the Upper Market Street Commercial Historic District, with a kitchen and bathroom remodel permitted in 2023.
 - [2134–2140](2134/) — A 1900 three-flat in the Upper Market Street Commercial Historic District, with reroofing permitted in 1992.
+- [2135](2135/) — A 1946 building in the Upper Market Street Commercial Historic District, with reroofing permitted in 1997.
 - [2141](2141/) — A 1923 store building in the Upper Market Street Commercial Historic District, with reroofing permitted in 2025.
 - [2145](2145/) — A 1949 store building in the Upper Market Street Commercial Historic District, with reroofing permitted in 2025.
 - [2148–2150](2148/) — A 1907 three-flat in the Upper Market Street Commercial Historic District, with electrical work permitted in 2008.

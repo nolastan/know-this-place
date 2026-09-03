@@ -62,6 +62,7 @@ The parcels on Bryant Street documented here so far, from the city's address, as
 - [781–785](781/) — A 1922 industrial building, with reroofing permitted in 2001.
 - [790](790/) — A 1939 industrial building, with a seismic retrofit permitted in 1996.
 - [797–799](797/) — A 1928 industrial building, with a seismic retrofit permitted in 2003.
+- [850](850/) — An assessor class: vacant lot, with a kitchen remodel permitted in 2019.
 - [915](915/) — A 1924 industrial building, with permit records from 1982 to 2025.
 - [917](917/) — A 1924 2-unit building with a ground-floor store, with garage work permitted in 1996.
 - [925](925/) — A 1963 warehouse, with garage work permitted in 2022.
