@@ -738,6 +738,35 @@ rather than just accumulate.
   date, the second saying less. Four Parkside findings were declined for this.
   *Before publishing a source with both parts, group the resolved findings by
   parcel and read every page that gets more than one.*
+- **A read whose resolve step is blocked must still land on `main`.** The South
+  of Market statement was read cover to cover — 118 pages, 155 cited findings —
+  in a session whose network policy blocked `data.sfgov.org`, so nothing could
+  be resolved. The PR was opened, published nothing, and was closed unmerged
+  an hour later; the whole read sat on an abandoned branch for a week, invisible
+  to `check.py --stats`, which counts open loops only among findings files that
+  are *on disk*. The next run found it only by reading a closed PR's comment.
+  *A blocked run's findings file is the expensive half of the work. Merge it,
+  even with every entry `unresolved` — a stranded branch is indistinguishable
+  from work nobody has started.* And check `data.sfgov.org` answers before
+  planning a run; one `curl` decides whether the run can finish.
+- **The renumbering guard is a refusal, not a verdict, and the assessor usually
+  settles it.** For a modern survey of old buildings the guard fires on the
+  whole pre-1910 stock — 47 of the South of Market statement's findings — because
+  its only exemption is a record that prints its own block and lot, and a
+  narrative statement prints neither. The check it names but cannot make is
+  already in the fetched roll: compare the record's date to
+  `year_property_built` on the parcel the join chose. On that batch 22 agreed
+  within three years, most of them exactly, and were resolved by hand; the rest
+  were off by 10 to 124 years and stayed unresolved, including an 1854 mansion
+  on a parcel the assessor dates to 1922 — the exact error the guard exists to
+  catch. The guard now prints the comparison in its note. *When a tool refuses,
+  ask what evidence would change its mind and whether you already have it.*
+- **A resolution you make by hand needs `by_hand: true`, or `apply` eats it.**
+  `resolve_eas.py apply` recomputes every entry that is not `rejected`, so a
+  hand judgement the guard's own note invited would silently revert to
+  `unresolved` on the next run — work that looks done and then isn't. `apply`
+  now also preserves `resolution.by_hand`; set it whenever you overrule or
+  supplement the tool.
 - **`seed_pages.py names` goes quiet once the pages exist.** It only inspects
   parcels still marked seedable, so running it after `seed-list` — which is when
   the root AGENTS.md's instruction reads most naturally — reports zero

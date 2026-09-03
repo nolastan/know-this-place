@@ -184,7 +184,12 @@ unresolved finding that gets this wrong.
 
 It declines rather than guesses: no EAS record, a range now split across
 parcels the record does not choose between, a condominium's worth of parcels on one point, or two recorded
-addresses that are both real all come back `unresolved`. **`report` before
+addresses that are both real all come back `unresolved`. **A resolution you
+then make by hand must carry `"by_hand": true`** — `apply` recomputes
+everything else, so an unmarked hand judgement reverts to `unresolved` the next
+time anyone runs it. The pre-1910 refusals are the common case: the guard now
+prints the assessor's `year_property_built` for the parcel the join chose
+against the record's own date, which is usually enough to decide. **`report` before
 `apply`, and read every conflict it prints** — the tool does the lookups, you do
 the judgement. A street the source spells its own way is mapped onto EAS's
 spelling where squashing punctuation finds it, and otherwise needs an explicit

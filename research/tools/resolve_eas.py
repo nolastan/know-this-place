@@ -1032,7 +1032,7 @@ RENUMBERING_YEAR = 1910
 YEAR_IN_DATE = re.compile(r"(1[6-9]\d\d|20\d\d)")
 
 
-def renumbering_guard(f: dict, res: dict) -> dict:
+def renumbering_guard(f: dict, res: dict, city: "City" = None) -> dict:
     """Refuse a pre-1910 address resolved on the EAS join alone.
 
     "On the join alone" is the whole condition, and a record that prints its own
@@ -1064,6 +1064,32 @@ def renumbering_guard(f: dict, res: dict) -> dict:
                          "this parcel, so the pre-1910 date is the building's and not the "
                          "address's — the renumbering guard does not apply.").strip()
         return res
+    # The refusal is right, but on its own it is a dead end: it names the check
+    # that would settle the number without saying what the check says. The
+    # assessor's year_property_built for the parcel the join chose is already
+    # fetched, and comparing it to the record's own date is exactly the test
+    # that caught the SFP 162 errors this guard was built from — a 1854 mansion
+    # on a parcel the assessor dates to 1922 is not the same building, and a
+    # 1907 hotel on a parcel dated 1907 is. Reporting it turns a dead end into
+    # a judgement the publisher can make. It still decides nothing: a match is
+    # evidence for the number, not proof, and the status stays unresolved.
+    built = ""
+    if city is not None:
+        yb = ((city.roll.get(res.get("apn") or "") or {}).get("year_property_built") or "")
+        try:
+            yb = int(yb)
+        except (TypeError, ValueError):
+            yb = 0
+        if yb > 0:
+            gap = abs(yb - int(m.group(1)))
+            built = (f" The assessor dates the building on the parcel it would have "
+                     f"resolved to ({res.get('apn')}) to {yb}, {gap} year(s) from the "
+                     f"{m.group(1)} recorded here"
+                     + (" — close enough that the modern number probably does carry this "
+                        "building, which is the check that would settle it."
+                        if gap <= 3 else
+                        " — far enough apart that the number probably points at a later "
+                        "building on the lot."))
     return {"status": "unresolved", "checked_on": res.get("checked_on"),
             "method": res.get("method", ""),
             "note": (f"Dated {f.get('date')}, before the 1909 renumbering, and the record "
@@ -1072,7 +1098,8 @@ def renumbering_guard(f: dict, res: dict) -> dict:
                      f"{f.get('street_number')} {f.get('street_name')} today, but a "
                      f"pre-1909 number is not today's number until a cross-street check "
                      f"says so — see 'The renumbering traps' in research/RUNBOOK.md. "
-                     f"Resolve it by hand if the source supplies the check material.")}
+                     f"Resolve it by hand if the source supplies the check material."
+                     + built)}
 
 
 def decide(city: City, f: dict, today: str) -> dict:
@@ -1329,7 +1356,7 @@ def decide(city: City, f: dict, today: str) -> dict:
             if loose else "")
     clause, agrees = block_check(city, f, parcel)
     res["method"] += clause + spelling
-    res = renumbering_guard(f, res)
+    res = renumbering_guard(f, res, city)
     if not agrees and res["status"] == "resolved" and not f.get("conflict"):
         # An address EAS matches exactly, against a block number that says
         # somewhere else. Per RUNBOOK.md a contradiction like this is not
@@ -1805,16 +1832,29 @@ def main() -> int:
         # address is outside San Francisco, the record names no number at all —
         # and overwriting them with "unresolved" loses the reason and invites
         # the next run to try again. Every other status is recomputed.
-        kept = 0
+        # The same goes for a resolution a reader made by hand. The renumbering
+        # guard's own note invites one ("Resolve it by hand if the source
+        # supplies the check material"), and until this was here, taking that
+        # invitation and re-running `apply` silently threw the judgement away
+        # and put the entry back to unresolved — the work looked done, then
+        # quietly wasn't. A resolution marked `by_hand` is kept whatever its
+        # status; drop the marker to hand the entry back to the tool.
+        kept = held = 0
         for f in data["findings"]:
-            if (f.get("resolution") or {}).get("status") == "rejected":
+            res = f.get("resolution") or {}
+            if res.get("status") == "rejected":
                 kept += 1
+                continue
+            if res.get("by_hand"):
+                held += 1
                 continue
             f["resolution"] = decisions[f["id"]]
             if f["id"] in conflicts and not f.get("conflict"):
                 f["conflict"] = conflicts[f["id"]]
         if kept:
             print(f"  left {kept} finding(s) already marked rejected untouched")
+        if held:
+            print(f"  left {held} finding(s) resolved by hand untouched")
         args.findings.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n",
                                  encoding="utf-8")
         print(f"wrote {args.findings}")

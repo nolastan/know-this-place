@@ -10,6 +10,7 @@ The parcels on Brannan Street documented here so far, from the city's address, a
 - [415](415/) — A 1923 industrial building in the Clyde and Crooks Historic District, with stair work permitted in 2002.
 - [425–427](425/) — A 1924 industrial building in the Clyde and Crooks Historic District, with an addition permitted in 2016.
 - [426](426/) — A 1926 hotel, with plumbing work permitted in 2017.
+- [434](434/) — A 1929 office building, with window replacement permitted in 2000.
 - [435](435/) — A 1910 industrial building in the Clyde and Crooks Historic District, with electrical work permitted in 2013.
 - [444–448](444/) — A 1924 industrial building, with a kitchen and bathroom remodel permitted in 2026.
 - [454–458](454/) — A 1923 industrial building, with facade work permitted in 2011.

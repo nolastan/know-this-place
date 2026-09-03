@@ -17,8 +17,10 @@ The residential parcels on Ninth Street documented here so far, from the city's 
 - [170](170/) — A 1934 industrial building in the Western SOMA Light Industrial and Residential Historic District, with facade work permitted in 2018.
 - [190](190/) — A 1929 office building in the Western SOMA Light Industrial and Residential Historic District, with an addition permitted in 2021.
 - [201–205](201/) — A 1907 hotel in the Western SOMA Light Industrial and Residential Historic District, with a seismic retrofit permitted in 2019.
+- [234](234/) — A 1925 2-unit apartment building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 2011.
 - [235–239](235/) — An assessor class: vacant lot in the Western SOMA Light Industrial and Residential Historic District, with stair work permitted in 2008.
 - [255](255/) — A 1924 building in the Western SOMA Light Industrial and Residential Historic District, with window replacement permitted in 2013.
+- [271–275](271/) — A 1917 store building in the Western SOMA Light Industrial and Residential Historic District, with a kitchen and bathroom remodel permitted in 2019.
 - [272](272/) — A 1944 24-unit apartment building in the Western SOMA Light Industrial and Residential Historic District, with a kitchen and bathroom remodel permitted in 2023.
 - [282–294](282/) — A 1916 27-unit apartment building with a ground-floor store in the SoMa LGBTQ Historic District, with a seismic retrofit permitted in 1996.
 - [367](367/) — A 1930 industrial building in the SoMa LGBTQ Historic District, with stair work permitted in 2004.

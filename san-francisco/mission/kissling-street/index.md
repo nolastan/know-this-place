@@ -4,6 +4,7 @@ Every residential parcel on Kissling Street that the city's address, assessor an
 
 ## Documented so far
 
+- [62](62/) — A 1906 single-family house in the Western SOMA Light Industrial and Residential Historic District, with a bathroom remodel permitted in 2019.
 - [107–119](107/) — A 1907 7-unit apartment building in the Western SOMA Light Industrial and Residential Historic District, with stair work permitted in 1994.
 - [123–133](123/) — A 1923 two-flat in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 1995.
 - [138](138/) — A 1906 single-family house in the Western SOMA Light Industrial and Residential Historic District, with one permit record from 2006.
