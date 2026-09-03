@@ -1330,6 +1330,68 @@ The mechanics:
   as a dwelling in a resident's is not safe as a bare noun, whatever the ratio —
   and the ratio is what makes it tempting.*
 
+- **A word boundary is not a decade boundary, and the field you avoided is
+  still the one you fall back to.** The DigitalSF extractor was written to read
+  `260$c` precisely because `269$a` collapses a range to its first year — and
+  it then failed on `\b(19\d\d)\b` against "1920s", where the trailing "s" is a
+  word character and kills the boundary. Every decade date therefore fell
+  through to the `269$a` fallback and was written as `date_precision: year`.
+  The worst case is the one with no digits at all: `260$c` "19--" means "some
+  time in the twentieth century" and `269$a` answers **1900**, which is also
+  the assessor's bucket for "nineteenth century" — so the fabricated year is
+  the single year this project is least equipped to recognise as fabricated.
+  731 records read "19--"; over 2,100 carried a decade; **24 had reached
+  published pages** before anyone looked. *A fallback is only as safe as the
+  test that decides not to use it — write one input of every shape the source
+  actually prints through the parser and read the output, rather than trusting
+  the branch you were careful about.*
+
+- **A creator credit does not make a name in a caption something other than a
+  person in the frame.** DigitalSF's redactor read `600$a`, which is where a
+  catalogue is supposed to put the people a photograph is *about*. SFP 84
+  leaves `600` empty and files "Winchell, Ezra & Winchell, Led F." under
+  `700$a` with `$e Photographer` — the family photographed their own house in
+  the weeks after the 1906 fire — so seven captions naming a household at 747
+  Baker Street went into a committed findings file untouched. The module's rule
+  that a photographer may be credited is about *crediting the maker*; it says
+  nothing about a caption that puts a name at a street number, which is the
+  resident information the privacy limits bar outright. *Read every field the
+  record files a person in, not the field the standard says it should use* —
+  14,535 of that corpus's 22,360 `700` fields carry no role at all. The guard
+  that stops the widening eating the evidence is worth copying: **a bare
+  surname is left alone when the next word says it is a place**, which keeps
+  "Canterbury Hotel" against a `700$a` of "Canterbury, Alan J." and keeps a
+  street named for someone.
+
+- **Measure a rule over the whole repo before wiring it in — and be willing to
+  leave it out.** A point-placed resolution put 1458 Kirkwood Avenue on a
+  parcel that states its own range as 1470–1498 Kirkwood: the address has no
+  parcel number in EAS, and EAS points sit centimetres from a boundary, so the
+  point landed in the neighbour. The obvious fix is to refuse any point
+  placement whose parcel's stated range excludes the number. Run over every
+  findings file in the repo that rule fires on **61 of 582** point-placed
+  resolutions and **most of them are correct**, because `sf-parcels`'
+  `from_address_num`/`to_address_num` is routinely narrower than the EAS
+  numbers the parcel actually holds — "2861 24th Street" on a parcel stated
+  2863–2869, "243-245 8th Avenue" on one stated 245–245. So the tool raises and
+  prints how far outside the number falls, and a person decides: a parcel
+  stating a single number is an incomplete field, one stating a wide span that
+  excludes the number is usually next door. *Same shape as the demolition rule
+  above, reached the same way — by running it before trusting it.*
+
+- **A batch that can yield nothing is still worth defining precisely, and the
+  definition is usually not the one the symptom suggests.** DigitalSF's batch
+  unit is the citation string in `524$a`, so 1,678 records carrying none were
+  invisible to every run — filed as one open question about "the records with
+  no citation field". They are not a collection: `982$a` splits all 1,678 into
+  six digital series, five of which are not photograph catalogues at all
+  (newspaper *issues*, Sanborn atlas plates, five Book Arts items), and the
+  whole set states no address in any field. All 37 of the candidates that made
+  it an issue are false positives — 23 of them the atlas's own publisher
+  imprint, "115 Broadway, New York". *When a group is defined by a missing
+  field, find the field that is present before planning the read; the answer to
+  "what are these?" is usually a different question's answer.*
+
 - **A second architect on a building the page already credits is an addition,
   not a duplicate — and neither overlap scan will tell you so.** The name-and-date
   scan compares the *same* name, so a different collaborator never matches; the

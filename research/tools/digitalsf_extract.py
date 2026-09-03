@@ -7,6 +7,8 @@
 The first argument matches against `524$a`, which is the preferred citation and
 also the batch unit for this source — see research/sources/digitalsf.md. The
 second names the output file, `research/findings/digitalsf/<batch>.json`.
+`--key 982` matches the digital series in `982$a` instead, which is the only
+way to reach the 1,678 records that carry no `524$a` at all.
 `--report` prints the coverage counts and the address strings it kept and
 dropped, without writing anything; that is the pass you read before committing.
 
@@ -53,11 +55,18 @@ RECORD_URL = "https://digitalsf.org/record/{}"
 # Reading the corpus
 # --------------------------------------------------------------------------- #
 
-def records(collection: str):
+def records(collection: str, key: str = "524"):
     """Yield {id, oai, page, fields} for each unique record in one collection.
 
     Deduplicates on the OAI identifier: the sets overlap, so a record reached
     through `Photographs` is usually also in `city` and `sfhistory`.
+
+    `key` is the MARC tag whose `$a` names the batch. It is `524` — the
+    preferred citation — for every catalogued collection, and that is the batch
+    unit this source is organised on. **1,678 records carry no `524$a` at
+    all**, so a run keyed on the citation string can never reach them; those
+    are selected on `982$a`, which names the digital series instead. See the
+    Coverage note in research/sources/digitalsf.md.
     """
     seen: set[str] = set()
     for page in sorted(glob.glob(str(CORPUS / "*" / "page-*.xml"))):
@@ -79,7 +88,7 @@ def records(collection: str):
             for f in mrc.iter(M + "datafield"):
                 fields.setdefault(f.get("tag"), []).append(
                     [(s.get("code"), (s.text or "").strip()) for s in f])
-            if collection not in first(fields, "524", "a"):
+            if collection not in first(fields, key, "a"):
                 continue
             cf = mrc.find(f"{M}controlfield[@tag='001']")
             yield {"id": (cf.text or "") if cf is not None else "",
@@ -113,7 +122,13 @@ ISO_DAY = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 ISO_MONTH = re.compile(r"^\d{4}-\d{2}$")
 ISO_YEAR = re.compile(r"^\d{4}$")
 BETWEEN = re.compile(r"^(?:between\s+)?(\d{4})\s*(?:and|to|-)\s*(\d{4})$", re.I)
-YEAR_IN = re.compile(r"\b(1[89]\d\d|20[0-2]\d)\b")
+# A decade's trailing "s" is a word character, so `\b1920\b` does not match
+# inside "1920s" and every decade date fell through to the 269$a fallback
+# below — as a *firm year*. The decade is matched in its own right.
+YEAR_IN = re.compile(r"\b(1[89]\d\d|20[0-2]\d)s?\b")
+DECADE_PHRASE = re.compile(
+    r"^(circa|probably|possibly|about)?\s*"
+    r"(\d{4}s(?:\s*[-–]\s*\d{4}s)?)$", re.I)
 
 
 def read_date(fields) -> dict:
@@ -136,6 +151,16 @@ def read_date(fields) -> dict:
                        range=[int(m.group(1)), int(m.group(2))])
         elif YEAR_IN.search(raw):
             out.update(date=raw, precision="circa")
+        elif raw:
+            # `260$c` said something and it names no year: "19--", "18--",
+            # "undated", "n.d.". 269$a still carries a four-digit number for
+            # these — 1900 for "19--", on 731 records — and it is the
+            # catalogue's own floor value for an unspecified century, not a
+            # date anybody recorded. Taking it writes a year the archivist
+            # never claimed, and 1900 is the one year this project is least
+            # able to tell from a real one. See the `269$a` caution in
+            # research/sources/digitalsf.md.
+            out.update(date=raw, precision="unknown")
         elif ISO_YEAR.match(fallback):
             out.update(date=fallback, precision="year")
         else:
@@ -194,9 +219,24 @@ NAME_TOKEN = r"(?:[A-Z][A-Za-z'./]*|\d{1,2}(?:st|nd|rd|th)|del|de|la|van|von)"
 # in its own right, in lower case, as an optional last token.
 LOWER_TYPE = "(?:%s)" % "|".join(
     sorted(TYPE_ABBR, key=len, reverse=True))
+# A run of buildings is printed with a word between the two numbers — "610 to
+# 624 Anza Street", "648 thru 622 Jerrold Avenue", "Piers 21 through 17". A
+# pattern that only knows the hyphen matches the *second* number and files the
+# photograph on it, silently losing the first: three Cook Street findings came
+# back on 94 and 73, which are the abbreviated high ends of 194 and 173. It is
+# matched here so both numbers are seen; `build` then writes one finding each,
+# per "A row of buildings is not a range" in research/AGENTS.md.
+TITLE_RUN = r"(?:\s+(?:to|thru|through)\s+\d{1,5}[A-Za-z]?)?"
 TITLE_ADDR = re.compile(
-    rf"\b(\d{{1,5}}[A-Za-z]?(?:\s*-\s*\d{{1,5}}[A-Za-z]?)?)\s+"
+    rf"\b(\d{{1,5}}[A-Za-z]?(?:\s*-\s*\d{{1,5}}[A-Za-z]?)?{TITLE_RUN})\s+"
     rf"({NAME_TOKEN}(?:\s+{NAME_TOKEN}){{0,3}}\b(?:\s+{LOWER_TYPE}\b\.?)?)")
+RUN_SPLIT = re.compile(r"^(\d{1,5}[A-Za-z]?)\s+(?:to|thru|through)\s+"
+                       r"(\d{1,5}[A-Za-z]?)$", re.I)
+
+# A number introduced by "No." or "#" is the thing's own serial, not a street
+# number: "Pumping Station No. 2", "Chinese San Francisco No. 9", "Ridgepoint
+# No. 2 Elementary School", "Lantern Slide No. 55 A". 140 titles corpus-wide.
+SERIAL_BEFORE = re.compile(r"(?:\bNos?\.?|#)\s*$", re.I)
 
 # `Address. Box 3; Mission, 3232-3234.`  `Address. Box 1, Cortland 415.`
 # `Address. Fulton, 1377.`               `Address. Box 4; 2900-2904, 24th st.`
@@ -301,7 +341,8 @@ NOT_A_STREET_NAME = {
 }
 
 
-def address_from_title(title: str, year_guard: bool = False) -> dict | None:
+def address_from_title(title: str, year_guard: bool = False,
+                      plate_numbers: bool = False) -> dict | None:
     """The first exact street number in a title. A block is not an address.
 
     Parentheses hold a second address rather than this one — "4001-4005, Judah
@@ -310,12 +351,28 @@ def address_from_title(title: str, year_guard: bool = False) -> dict | None:
     title = QUOTED_SPAN.sub(" ", PARENTHETICAL.sub(" ", title))
     if BLOCK_PHRASE.search(title):
         return None
+    # A collection that numbers its plates prints that number where an address
+    # would go. All 14 of SFP 84's title-initial numbers are stereograph
+    # numbers — "877 A view of San Francisco Bay", "1704 Mission Church,
+    # Mission Dolores", "3022 Ferry-boat entering Oakland slip" — and none of
+    # its real addresses is title-initial; they are all mid-caption ("Caswell
+    # and Company building at 412 Sacramento Street"). It is a per-collection
+    # switch because 779 titles corpus-wide open with a genuine street number.
+    if plate_numbers:
+        title = re.sub(r"^\s*\d{1,5}\.?\s+", " ", title)
     for m in TITLE_ADDR.finditer(title):
         # "Sikorsky HH-52A Seaguard", "Coast Guard HC-130B Hercules",
         # "Grumman HU-16 Albatross": the number is the tail of a hyphenated
         # model designation, and the word after it is the model's name. The
         # word boundary the pattern anchors on sits inside the designation.
-        if m.start() and title[m.start() - 1] == "-":
+        #
+        # A colon before it is a clock time, and the minutes read as a number
+        # over a street: "at 1:00 P. M." yields *00 P. M*, and the meridiem is
+        # on NOT_A_STREET_NAME in a spelling that a caption writing "P. M."
+        # does not match.
+        if m.start() and title[m.start() - 1] in "-:":
+            continue
+        if SERIAL_BEFORE.search(title[:m.start()]):
             continue
         break
     else:
@@ -323,6 +380,11 @@ def address_from_title(title: str, year_guard: bool = False) -> dict | None:
     if m is None:
         return None
     number, rest = m.group(1), m.group(2)
+    second = ""
+    run = RUN_SPLIT.match(number)
+    if run:
+        number, second = run.group(1), complete_high_end(run.group(1),
+                                                         run.group(2))
     qualifier = (QUALIFIED.search(title[:m.start()])
                  or QUALIFIED_AFTER.match(title[m.end():]))
     # Trim trailing words that belong to the next clause rather than the street
@@ -373,8 +435,27 @@ def address_from_title(title: str, year_guard: bool = False) -> dict | None:
         phrase = qualifier.group(0).strip(" ,")
         as_written = (f"{as_written} {phrase}" if QUALIFIED_AFTER.match(phrase)
                       else f"{phrase} {as_written}")
-    return {"as_written": as_written, "number": number, "street_name": name,
-            "street_type": stype, "qualified": bool(qualifier)}
+    out = {"as_written": as_written, "number": number, "street_name": name,
+           "street_type": stype, "qualified": bool(qualifier)}
+    if second:
+        out["second_number"] = second
+        out["printed_as"] = f"{run.group(1)} {m.group(0)[len(run.group(1)):].strip()}"
+    return out
+
+
+def complete_high_end(low: str, high: str) -> str:
+    """('183', '94') -> '194'. A survey drops the digits that do not change.
+
+    Same rule `resolve_eas.py` applies to a hyphenated range: "1843-47" means
+    1843 to 1847. Here it is the Bureau of Engineering writing "183 to 94 Cook
+    Street" for 183 to 194, and reading 94 literally files the photograph on a
+    number a block away — or on nothing at all.
+    """
+    lo, hi = re.sub(r"\D", "", low), re.sub(r"\D", "", high)
+    if not lo or not hi or len(hi) >= len(lo):
+        return high
+    filled = lo[:len(lo) - len(hi)] + hi
+    return filled if int(filled) >= int(lo) else high
 
 
 def address_from_note(note: str) -> dict | None:
@@ -811,6 +892,28 @@ COLLECTION_VOICE = {
     # caution in research/sources/digitalsf.md before trusting those notes.
     "SFP 169": ("James A. Martin photographed the property {at} {display} "
                 "{when}."),
+    # The Bureau of Engineering's own record of the public works it built and
+    # the streets it cut — a city department photographing its own projects,
+    # so the department is the fact the catalogue carries about who made it.
+    "SFP 26": ("The San Francisco Department of Public Works Bureau of "
+               "Engineering photographed the property {at} {display} {when}."),
+    # A dealer's assembled collection of historical San Francisco photographs,
+    # 1860s-1910s, bought in from many photographers and studios. Blaisdell
+    # collected it; she did not take it, so naming her as the photographer
+    # would be false of every record. Same sentence as SFP 162, for the same
+    # reason: what is true of every record is that a dated photograph of the
+    # address survives.
+    "SFP 84": ("Photographed {at} {display} {when}."),
+    # One photographer's negatives of the Western Addition in 1964, made for
+    # the neighbourhood's own block clubs in the year before redevelopment
+    # reached those blocks.
+    "SFP 103": ("Michael Brailove photographed the property {at} {display} "
+                "{when}."),
+    # The school district's own photographs of its schools. Like SFP 23 it is
+    # an institution photographing its own property, so the district is what
+    # the catalogue knows about who made the picture.
+    "SFH 3": ("The San Francisco Unified School District photographed the "
+              "property {at} {display} {when}."),
 }
 
 
@@ -861,6 +964,23 @@ COLLECTION_UNNUMBERED_POLICY = {
     "SFP 42": "skip-unnumbered",
     "SFP 90": "skip-unnumbered",
     "SFP 169": "skip-unnumbered",
+    # SFP 26 and SFH 3 are institutional collections of the same shape as the
+    # subject file: 968 of SFP 26's 984 records are sewer trenches, pump
+    # houses and street grading located by intersection, and 1,582 of SFH 3's
+    # 1,603 name a school and nothing else. Neither unnumbered majority can
+    # carry a page, and together they would put 2,550 stubs in two files.
+    "SFP 26": "skip-unnumbered",
+    "SFH 3": "skip-unnumbered",
+    # SFP 84 is a collector's miscellany — bay views, parades, cable cars,
+    # Cliff House, the 1906 fire seen from a hill. 455 of 483 records give no
+    # number and almost none of them is about a building.
+    "SFP 84": "skip-unnumbered",
+    # SFP 103 is 51 records of one 1964 assignment in the Western Addition.
+    # Its unnumbered half is block-club meetings and street corners — "Laguna
+    # and Redwood Street and Block Club putting up sign after clean up",
+    # "Twin boys standing in front of door" — which locate no building and are
+    # captions about children besides.
+    "SFP 103": "skip-unnumbered",
     # SFP 125 keeps its unnumbered records: unlike the others it photographs
     # one clearance area over eight months, so "Buildings on the 700 block of
     # Howard before being demolished" is a real record of a block that no
@@ -899,6 +1019,12 @@ COLLECTION_NOTE_POLICY = {
 # — with the geocode kept beside it and a conflict recorded when they differ.
 COLLECTION_DONOR_ADDRESS = {"SFP 169"}
 
+# Collections that number their own plates, where a title-initial number is
+# that serial and never a street number. See the comment in
+# `address_from_title`; SFP 84's fourteen are all stereograph numbers and its
+# genuine addresses are all mid-caption.
+COLLECTION_PLATE_NUMBERS = {"SFP 84"}
+
 COLLECTION_NAME_POLICY = {
     "SFH 371": "named-buildings-only",
     # Subject-file titles are narrative captions in the same way SFH 371's are
@@ -921,6 +1047,29 @@ COLLECTION_NAME_POLICY = {
     # and an address — "Vanessi's, 498 Broadway", "Star Classics, 425 Hayes" —
     # and almost none of those names contains a building noun, so the strict
     # policy would throw away the whole point of the collection.
+    #
+    # SFP 84's captions are narrative and its people are the ones the privacy
+    # limits are hardest about: "Ezra Winchell sitting on sidewalk taking
+    # hammer to can at 747 Baker Street", "Led Winchell residence at 747 Baker
+    # Street" — householders photographed outside their own homes after the
+    # fire, and only three records in the collection carry a `600$a` heading
+    # for redaction to work from.
+    "SFP 84": "named-buildings-only",
+    # SFP 103's are the same shape from 1964: "Children playing at 1884 Sutter
+    # Street", "Two people sitting at voter registration table". Its buildings
+    # are named — Freedom House, the Temple Theater, the Paradise Inn — and
+    # the strict policy keeps exactly those.
+    "SFP 103": "named-buildings-only",
+    # SFH 3's captions describe classrooms: "Two children playing hopscotch in
+    # the playground at Gough School for the Deaf", "Dr. V. A. Becker,
+    # Supervisor of the Physically Handicapped". The schools are the buildings
+    # and `school` is a building noun, so the strict policy keeps the school
+    # and drops the staff and the children.
+    "SFH 3": "named-buildings-only",
+    # SFP 26's are a survey clerk's: "1458 Kirkwood Avenue and Mendell Street
+    # southeast corner". Nothing in an addressed title is a firm name, and the
+    # unaddressed ones photograph men at work in a trench.
+    "SFP 26": "named-buildings-only",
 }
 
 BUILDING_NOUN = {
@@ -1015,7 +1164,20 @@ def is_named_building(part: str) -> bool:
     return has_noun and distinguishing
 
 
+def settings_key(collection: str) -> str:
+    """The key the per-collection tables are filed under.
+
+    A collection id appears in `524$a` inside parentheses — "…records (SFH 3),
+    San Francisco History Center…" — and a bare `SFH 3` also matches SFH 371
+    and SFH 391 as a substring, so selecting that collection means passing
+    `"(SFH 3)"`. The tables below are keyed on the id itself, so the
+    parentheses come off before they are read.
+    """
+    return collection.strip("() ")
+
+
 def voice_for(collection: str) -> str:
+    collection = settings_key(collection)
     try:
         return COLLECTION_VOICE[collection]
     except KeyError:
@@ -1032,17 +1194,41 @@ def voice_for(collection: str) -> str:
 # Building the findings
 # --------------------------------------------------------------------------- #
 
-def build(collection: str, batch: str):
+def expand_runs(rows, plate_numbers: bool):
+    """Yield (record, forced_number) — twice for a record printing a run.
+
+    "610 to 624 Anza Street" is a Bureau of Engineering photograph of a stretch
+    of street, not one building with a two-number address, so it becomes two
+    findings on the two numbers the caption actually prints. The buildings
+    between them are real and their numbers are an inference; see "A row of
+    buildings is not a range" in research/AGENTS.md.
+    """
+    for rec in rows:
+        f = rec["fields"]
+        title = " ".join(v for v in (first(f, "245", "a"),
+                                     first(f, "245", "b")) if v)
+        addr = address_from_title(title, plate_numbers=plate_numbers)
+        second = (addr or {}).get("second_number")
+        if second and second != addr["number"]:
+            yield rec, addr["number"]
+            yield rec, second
+        else:
+            yield rec, ""
+
+
+def build(collection: str, batch: str, key: str = "524"):
     voice = voice_for(collection)
-    policy = COLLECTION_NAME_POLICY.get(collection, "")
-    skip_unnumbered = (COLLECTION_UNNUMBERED_POLICY.get(collection)
+    settings = settings_key(collection)
+    policy = COLLECTION_NAME_POLICY.get(settings, "")
+    skip_unnumbered = (COLLECTION_UNNUMBERED_POLICY.get(settings)
                        == "skip-unnumbered")
-    drop_notes = COLLECTION_NOTE_POLICY.get(collection) == "drop"
-    read_donor = collection in COLLECTION_DONOR_ADDRESS
-    rows = list(records(collection))
+    drop_notes = COLLECTION_NOTE_POLICY.get(settings) == "drop"
+    read_donor = settings in COLLECTION_DONOR_ADDRESS
+    plate_numbers = settings in COLLECTION_PLATE_NUMBERS
+    rows = list(records(collection, key))
     if not rows:
-        sys.exit(f"no records matching {collection!r} under {CORPUS} — "
-                 "run digitalsf_harvest.py first")
+        sys.exit(f"no records matching {collection!r} in {key}$a under "
+                 f"{CORPUS} — run digitalsf_harvest.py first")
 
     tally = collections.Counter()
     dropped_names: list[str] = []
@@ -1050,7 +1236,8 @@ def build(collection: str, batch: str):
     entries: dict[tuple, dict] = {}
     order: list[tuple] = []
 
-    for rec in sorted(rows, key=lambda r: int(r["id"] or 0)):
+    for rec, forced in expand_runs(sorted(rows, key=lambda r: int(r["id"] or 0)),
+                                   plate_numbers):
         f = rec["fields"]
         title = " ".join(v for v in (first(f, "245", "a"), first(f, "245", "b")) if v)
         notes = read_notes(f)
@@ -1062,7 +1249,22 @@ def build(collection: str, batch: str):
         if date["precision"] == "circa" and not date["fuzzy_flag"]:
             tally["imprecise but unflagged"] += 1
 
-        from_title = address_from_title(title)
+        citation = citation_of(f)
+        if not citation:
+            # No preferred citation and no series to build one from. The
+            # evidence bar wants a citation precise enough for a reader to
+            # check, so the record cannot produce a finding at all.
+            tally["no citation the record can support — skipped"] += 1
+            continue
+
+        from_title = address_from_title(title, plate_numbers=plate_numbers)
+        if forced and from_title:
+            # This record prints a run of numbers and is being read once per
+            # number — see expand_runs. `printed_as` keeps the source's own
+            # words on both findings.
+            from_title = dict(from_title, number=forced, as_written=re.sub(
+                r"^\d[\dA-Za-z]*", forced, from_title["as_written"], count=1))
+            tally["one of a run of street numbers"] += 1
         from_note = address_from_note(notes["address_note"]) if notes["address_note"] else None
         geocode = ""
         if read_donor and notes["donor_note"]:
@@ -1174,6 +1376,8 @@ def build(collection: str, batch: str):
             extra["archive_box"] = notes["box"]
         if first(f, "490", "a"):
             extra["archival_series"] = first(f, "490", "a")
+        if from_title and from_title.get("printed_as"):
+            extra["address_as_printed"] = from_title["printed_as"]
         if first(f, "852", "c"):
             extra["shelf"] = first(f, "852", "c")
         if first(f, "300", "a"):
@@ -1223,6 +1427,14 @@ def build(collection: str, batch: str):
             # it as the phrase rather than framing it as something a cataloguer
             # said. A page body never names where a fact came from.
             when = date["as_recorded"]
+            # A bare decade is the exception: "Photographed at 152 Church
+            # Street 1930s" is not a sentence. `date_precision` carries the
+            # hedge, so "circa" is dropped where "the 1950s" already says it.
+            dec = DECADE_PHRASE.match(when)
+            if dec:
+                hedge = (dec.group(1) or "").lower()
+                when = (f"in the {dec.group(2)}" if hedge in ("", "circa")
+                        else f"{hedge} in the {dec.group(2)}")
         at = "at" if not unnumbered else "at the location it records as"
         description = re.sub(r"\s+([.,])", r"\1",
                              voice.format(at=at, display=display, when=when))
@@ -1243,13 +1455,12 @@ def build(collection: str, batch: str):
             "description": description,
             "extra": extra,
             "citation": {
-                "label": (f"{display}, {year_of(date)}. "
-                          + first(f, "524", "a").replace("[Identification of item], ", "")),
+                "label": f"{display}, {year_of(date)}. {citation}",
                 "url": RECORD_URL.format(rec["id"]),
                 "corpus_path": rec["page"],
                 "locator": locator(rec, notes, first(f, "852", "c")),
             },
-            "raw": {"text": raw_span(title, notes, every(f, "600", "a"))},
+            "raw": {"text": raw_span(title, notes, personal_names(f))},
             "confidence": ("low" if unnumbered
                            else confidence(date, conflict, from_title, from_note)),
             "resolution": {
@@ -1314,6 +1525,28 @@ def year_of(date: dict) -> str:
     return date["as_recorded"] or "undated"
 
 
+def citation_of(f) -> str:
+    """The archive's own citation for one record, or one built to the same shape.
+
+    `524$a` is the preferred citation and is printed verbatim wherever it
+    exists. 1,678 records carry none — the newspaper runs, the Sanborn atlas
+    page images, the PUC water-system photographs — and for those the record
+    still names its digital series in `982$a` (or `791$t`) and its holding
+    centre in `692$a`, which is the same three-part shape the `524$a` strings
+    use. A record naming neither gets no citation and `build` drops it, because
+    "the archive" is not a citation.
+    """
+    preferred = first(f, "524", "a")
+    if preferred:
+        return preferred.replace("[Identification of item], ", "")
+    series = first(f, "982", "a") or first(f, "791", "t")
+    if not series:
+        return ""
+    centre = first(f, "692", "a")
+    return ", ".join(x for x in (series, centre,
+                                 "San Francisco Public Library") if x) + "."
+
+
 def locator(rec, notes, shelf) -> str:
     bits = [f"record {rec['id']}"]
     if notes["box"]:
@@ -1325,8 +1558,49 @@ def locator(rec, notes, shelf) -> str:
     return ", ".join(bits)
 
 
+# A surname alone is also a street and a building: "747 Baker Street" with a
+# `700$a` of "Baker, …" on the record, "Canterbury Hotel, 750 Sutter Street"
+# with "Canterbury, Alan J.". Redacting those would take the address out of the
+# evidence and the building's name off the page, so a bare surname is left
+# alone wherever the next word says it is a place.
+PLACE_AFTER = re.compile(
+    r"^\W*(?:%s)\b" % "|".join(sorted(
+        set(list(FULL_TYPE_WORD) + ["st", "ave", "av", "blvd", "dr", "ln",
+                                    "ct", "pl", "rd", "ter", "cir", "hwy"])
+        | {"hotel", "building", "house", "club", "school", "hall", "theatre",
+           "theater", "company", "market", "church", "apartments", "tower",
+           "park", "square", "center", "centre", "bar", "cafe", "inn"},
+        key=len, reverse=True)), re.I)
+
+
+def personal_names(fields) -> list[str]:
+    """Every personal name the record files, from `600$a` and `700$a`.
+
+    `600` is where a catalogue is *supposed* to put the people a photograph is
+    about, and for SFP 23 and SFP 169 it is. SFP 84 leaves it empty and files
+    the family whose house this is under `700$a` — "Winchell, Ezra & Winchell,
+    Led F." — with `$e Photographer`, because they took the pictures of their
+    own home after the fire. The role does not settle it: a name written into
+    the caption is a person in the frame whatever the record credits them for
+    elsewhere, and "Led Winchell home at 747 Baker Street" is a sentence about
+    who lived at a street number. 14,535 of the corpus's 22,360 `700` fields
+    carry no role at all.
+
+    A corporate body has no comma — but its *qualifier* does: "San Francisco
+    Redevelopment Agency (San Francisco, Calif.)" tested comma-first and had
+    the agency's name struck out of a caption. The qualifier comes off before
+    the test. Two people can share one subfield joined by an ampersand.
+    """
+    out = []
+    for raw in every(fields, "600", "a") + every(fields, "700", "a"):
+        for part in re.split(r"\s*&\s*", raw):
+            if "," in re.sub(r"\s*\([^)]*\)\s*$", "", part):
+                out.append(part.strip())
+    return out
+
+
 def redact(span: str, subjects: list[str]) -> str:
-    """Take the record's own `600$a` personal names out of the quoted span.
+    """Take the record's own personal names out of the quoted span.
 
     `raw.text` is the shortest passage that justifies the extraction, and it is
     committed. In a caption collection that passage is often "Lee Washington's
@@ -1357,12 +1631,19 @@ def redact(span: str, subjects: list[str]) -> str:
             # the heading and the caption, so a full stop matches an optional
             # one.
             pattern = re.escape(form).replace("\\.", r"\.?")
-            span = re.sub(rf"(?<!\w){pattern}(?!\w)(?:'s)?", "[name withheld]",
-                          span, flags=re.I)
+            bare = form == parts[0] if len(parts) == 2 else False
+            span = re.sub(
+                rf"(?<!\w){pattern}(?!\w)(?:'s)?",
+                lambda m: (m.group(0) if bare and PLACE_AFTER.match(
+                    span[m.end():]) else "[name withheld]"),
+                span, flags=re.I)
     # Redacting a name in two passes ("Edward T", then "Mancuso") can leave an
     # orphaned initial's full stop between the two markers.
-    return re.sub(r"\[name withheld\](?:[\s.]*\[name withheld\])*\s*",
-                  "[name withheld] ", span).strip()
+    span = re.sub(r"\[name withheld\](?:[\s.]*\[name withheld\])*\s*",
+                  "[name withheld] ", span)
+    # The marker replaces a name that ended a clause, so the space the
+    # rejoining adds lands in front of the comma: "Officer [name withheld] ,".
+    return re.sub(r"\s+([,.;])", r"\1", span).strip()
 
 
 def raw_span(title: str, notes: dict, subjects: list[str] | None = None) -> str:
@@ -1400,10 +1681,12 @@ def main(argv: list[str]) -> int:
         sys.exit(__doc__.split("\n\n")[1].strip())
     collection, batch = argv[0], argv[1]
     report = "--report" in argv
+    key = "982" if "--key" in argv and argv[argv.index("--key") + 1] == "982" \
+        else "524"
     read_on = next((a for a in argv if re.fullmatch(r"\d{4}-\d{2}-\d{2}", a)),
                    datetime.date.today().isoformat())
 
-    rows, findings, tally, kept, dropped = build(collection, batch)
+    rows, findings, tally, kept, dropped = build(collection, batch, key)
 
     if report:
         for k, v in tally.most_common():

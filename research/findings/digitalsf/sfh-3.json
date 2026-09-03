@@ -1,0 +1,159 @@
+{
+  "source_id": "digitalsf",
+  "batch": "sfh-3",
+  "read_on": "2026-09-03",
+  "notes": "The San Francisco Unified School District records read whole — 1,603 catalogue records. Selected on `\"(SFH 3)\"` rather than `\"SFH 3\"`: the bare string is a substring of SFH 371 and SFH 391 and pulls in 2,488 records of two other collections.\n\n1,538 records give no street number and are skipped. The district photographed its schools by name — Alamo, Agassiz, Anza, Drew, Lincoln, Smith Hall — and a school's name is not an address. 3 findings over 2 addresses came out of the rest, and neither reached a page.\n\n**Four candidates were a school's own serial**: \"Ridgepoint No. 1 School\", \"Ridgepoint No. 2 Elementary School\", \"Ridgepoint No. 3 School\". A number introduced by \"No.\" or \"#\" is the thing's serial, not a street number, and the guard now covers 140 titles corpus-wide, including SFP 26's \"Pumping Station No. 2\" and the PUC collection's lantern-slide numbers.\n\n**Both resolved findings are undated and were declined for it.** Two photographs of Adams School at 750 Eddy Street: one carries `260$c` \"19--\", which is the catalogue saying \"some time in the twentieth century\", and one carries \"undated\". Neither has a spec row that can hold it — `building.name` would claim the building the parcel now carries is Adams School, and the 2025 roll records it as commercial retail — and the timeline orders by date and would print a row reading *unknown*. The third, 1945 Washington Street (the Gough School for the Deaf), is a condominium in sf-parcels today: twenty active parcels on the address's point, one per unit, none of them the building.\n\nThis is the first batch where the `260$c` \"19--\" shape mattered, and reading it is what surfaced the date defect described in the dossier: `269$a` reports **1900** for \"19--\" on 731 records corpus-wide, and the extractor was promoting that to a firm year.",
+  "coverage": {
+    "unit": "catalogue records",
+    "examined": 1603,
+    "mentions": 14,
+    "remaining": "Nothing. SFH 3 is fully read.",
+    "note": "Read every record in the collection: 1,603 unique catalogue records, 14 of which parse a street number in the title. Four of those are a school's own serial number, now refused at extraction; 3 findings remain over 2 distinct addresses. 2 resolved and both declined as undated with no spec row to hold them; 1 unresolved as a condominium. Nothing published."
+  },
+  "findings": [
+    {
+      "id": "sfh-3-0001",
+      "date": "19--",
+      "date_precision": "unknown",
+      "kind": "photograph",
+      "address_as_written": "750 Eddy Street",
+      "street_number": "750",
+      "street_name": "EDDY",
+      "street_type": "ST",
+      "description": "The San Francisco Unified School District photographed the property at 750 Eddy Street. The record names Adams School at the address.",
+      "extra": {
+        "date_as_recorded": "19--",
+        "archival_series": "Photographs",
+        "medium": "1 photographic print : b&w",
+        "named_in_record": [
+          "Adams School"
+        ],
+        "subject_headings": [
+          "Schools--Elementary--Adams."
+        ],
+        "additional_records": [
+          "https://digitalsf.org/record/41125"
+        ]
+      },
+      "citation": {
+        "label": "750 Eddy Street, 19--. San Francisco Unified School District records (SFH 3), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/41124",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0398.xml",
+        "locator": "record 41124"
+      },
+      "raw": {
+        "text": "Adams School, 750 Eddy Street"
+      },
+      "confidence": "low",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0739004",
+        "path": "/san-francisco/tenderloin/eddy-street/750/",
+        "eas_address": "750 EDDY ST",
+        "method": "EAS exact match on 750 EDDY ST → parcel 0739004; sf-parcels has blklot 0739004 active, 750–750 EDDY; the 2025 roll records it as commercial retail, built 1900.",
+        "checked_on": "2026-09-03"
+      },
+      "publish": {
+        "status": "declined",
+        "note": "The record gives no date — `260$c` reads \"19--\", which is the catalogue saying \"some time in the twentieth century\" — and no spec row on the page can carry it. `building.name` would claim the building the parcel now carries is Adams School, and the 2025 roll records it as commercial retail; the timeline orders by date and would render this as a row reading unknown. Recorded here rather than published."
+      }
+    },
+    {
+      "id": "sfh-3-0002",
+      "date": "undated",
+      "date_precision": "unknown",
+      "kind": "photograph",
+      "address_as_written": "750 Eddy Street",
+      "street_number": "750",
+      "street_name": "EDDY",
+      "street_type": "ST",
+      "description": "The San Francisco Unified School District photographed the property at 750 Eddy Street. The record names Adams School at the address.",
+      "extra": {
+        "date_as_recorded": "undated",
+        "archival_series": "Photographs",
+        "medium": "1 photographic print : b&w",
+        "named_in_record": [
+          "Adams School"
+        ],
+        "subject_headings": [
+          "Schools--Elementary--Adams."
+        ]
+      },
+      "citation": {
+        "label": "750 Eddy Street, undated. San Francisco Unified School District records (SFH 3), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/41126",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0398.xml",
+        "locator": "record 41126"
+      },
+      "raw": {
+        "text": "Adams School, 750 Eddy Street"
+      },
+      "confidence": "low",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0739004",
+        "path": "/san-francisco/tenderloin/eddy-street/750/",
+        "eas_address": "750 EDDY ST",
+        "method": "EAS exact match on 750 EDDY ST → parcel 0739004; sf-parcels has blklot 0739004 active, 750–750 EDDY; the 2025 roll records it as commercial retail, built 1900.",
+        "checked_on": "2026-09-03"
+      },
+      "publish": {
+        "status": "declined",
+        "note": "The same photograph of the same address as sfp-84's sibling entry sfh-3-0001, and undated for the same reason. Declined on the same grounds."
+      }
+    },
+    {
+      "id": "sfh-3-0003",
+      "date": "undated",
+      "date_precision": "unknown",
+      "kind": "photograph",
+      "address_as_written": "1945 Washington Street",
+      "street_number": "1945",
+      "street_name": "WASHINGTON",
+      "street_type": "ST",
+      "description": "The San Francisco Unified School District photographed the property at 1945 Washington Street.",
+      "extra": {
+        "date_as_recorded": "undated",
+        "archival_series": "Photographs",
+        "medium": "1 photographic print : b&w",
+        "subject_headings": [
+          "Schools--Elementary--Gough."
+        ],
+        "named_in_record": [
+          "Gough School"
+        ],
+        "additional_records": [
+          "https://digitalsf.org/record/41380",
+          "https://digitalsf.org/record/41381",
+          "https://digitalsf.org/record/41382",
+          "https://digitalsf.org/record/41383",
+          "https://digitalsf.org/record/41384",
+          "https://digitalsf.org/record/41385",
+          "https://digitalsf.org/record/41386",
+          "https://digitalsf.org/record/41387",
+          "https://digitalsf.org/record/41388",
+          "https://digitalsf.org/record/41390"
+        ]
+      },
+      "citation": {
+        "label": "1945 Washington Street, undated. San Francisco Unified School District records (SFH 3), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/41379",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0401.xml",
+        "locator": "record 41379"
+      },
+      "raw": {
+        "text": "Two children playing hopscotch in the playground at Gough School for the Deaf at 1945 Washington Street"
+      },
+      "confidence": "low",
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-03",
+        "method": "sf-eas-addresses has 1945 WASHINGTON ST but it does not join to one parcel. 1945 WASHINGTON ST's coordinates fall in 20 active parcels (0617085, 0617092, 0617068, 0617087…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
+        "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+      },
+      "publish": {
+        "status": "pending"
+      }
+    }
+  ]
+}

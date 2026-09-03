@@ -1,0 +1,773 @@
+{
+  "source_id": "digitalsf",
+  "batch": "sfp-26",
+  "read_on": "2026-09-03",
+  "notes": "The Department of Public Works Bureau of Engineering Photograph Records read whole — 984 catalogue records, all `No Copyright – United States`. 946 give no street number and are skipped: sewer trenches, pump houses, water towers, street grading and reservoir work, located by intersection rather than by number. 20 addressed records became 17 findings.\n\n**Five findings exist because the Bureau writes a run of buildings with a word between the numbers.** \"610 to 624 Anza Street\", \"183 to 94 Cook Street\", \"169 to 73 Cook Street\", \"170 to 196 Cook Street\" — a pattern that knows only the hyphen matched the *second* number and filed the photograph on it, silently losing the first, and on the Cook Street rows that second number was an abbreviated high end read literally: 94 for 194, 73 for 173. Each run is now read as the two numbers the caption prints, one finding each, per \"A row of buildings is not a range\" in research/AGENTS.md, with the short high end filled in from the low. `extra.address_as_printed` keeps the caption's own words on both.\n\n**12 resolved, and 5 of those were declined on the roll year.** The Bureau photographed these properties in 1935–1942 and five of the parcels carry something much newer: 624 Anza Street (roll 1972), 170 Cook Street (1987), 1515 3rd Street (2021), 230 Dolores Street (1960), and 1648–1650 3rd Street, which resolves onto a Mission Bay superblock the assessor files as 555 Mission Bay Boulevard and which carries 1450, 1560, 1650 and 1750 3rd Street on one lot. Seven were published.\n\n**One resolution was wrong and the tool now raises the shape.** 1458 Kirkwood Avenue is in EAS with coordinates and no parcel number, and the one active parcel its point falls in states its own range as 1470–1498 Kirkwood — it is the neighbour. `resolve_eas.py report` now prints every point-placed resolution whose parcel's stated range excludes the number, sorted by how far outside it falls. It raises rather than decides: measured over every findings file in the repo the test fires on 61 of 582 point-placed resolutions and most of those are correct, because sf-parcels' `from_address_num`/`to_address_num` is routinely narrower than the EAS numbers a parcel actually holds.\n\nThe remaining four unresolved are addresses EAS no longer has (194 and 196 Cook Street, 433 Seventh Avenue), one that EAS holds without a parcel join (610 Anza Street), and one condominium (173 Cook Street).",
+  "coverage": {
+    "unit": "catalogue records",
+    "examined": 988,
+    "mentions": 20,
+    "remaining": "Nothing. SFP 26 is fully read.",
+    "note": "Read every record in the collection: 984 unique catalogue records, 20 of which give a street number, becoming 17 findings over 17 distinct addresses once the four \"N to M Street\" runs are split into one finding per printed number. 12 resolved, 7 published on 6 pages seeded for them, 5 declined on a roll year decades after the photograph. 5 unresolved: three addresses EAS no longer holds, one EAS holds without a parcel join, one condominium."
+  },
+  "findings": [
+    {
+      "id": "sfp-26-0001",
+      "date": "1940-09-20",
+      "date_precision": "day",
+      "kind": "photograph",
+      "address_as_written": "1458 Kirkwood Avenue",
+      "street_number": "1458",
+      "street_name": "KIRKWOOD",
+      "street_type": "AVE",
+      "description": "The San Francisco Department of Public Works Bureau of Engineering photographed the property at 1458 Kirkwood Avenue on 1940-09-20.",
+      "extra": {
+        "date_as_recorded": "1940-09-20",
+        "shelf": "Box 7",
+        "medium": "1 negative : film",
+        "corporate_subject_headings": [
+          "San Francisco Department of Public Works (San Francisco, Calif.)"
+        ],
+        "subject_headings": [
+          "Streets"
+        ],
+        "additional_records": [
+          "https://digitalsf.org/record/6722",
+          "https://digitalsf.org/record/6723"
+        ]
+      },
+      "citation": {
+        "label": "1458 Kirkwood Avenue, 1940. San Francisco Department of Public Works Bureau of Engineering Photograph Records (SFP 26), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/6719",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0056.xml",
+        "locator": "record 6719, Box 7"
+      },
+      "raw": {
+        "text": "1458 Kirkwood Avenue and Mendell Street southeast corner"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "unresolved",
+        "note": "sf-eas-addresses holds 1458 KIRKWOOD AVE with coordinates but no parcel number, and the one active parcel its point falls in is 4710015, whose own range in sf-parcels is 1470–1498 KIRKWOOD and whose 2025 roll row reads \"1476 1470 KIRKWOOD AV\". The parcel states that it does not carry 1458, so the point has landed in the neighbour — EAS address points sit centimetres from a parcel boundary. Placing here would put a 1940 photograph of 1458 Kirkwood Avenue on the page for 1470–1498. Resolving it needs the parcel that actually carries 1458."
+      },
+      "publish": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "sfp-26-0002",
+      "date": "1941-01-27",
+      "date_precision": "day",
+      "kind": "photograph",
+      "address_as_written": "610 Anza Street",
+      "street_number": "610",
+      "street_name": "ANZA",
+      "street_type": "ST",
+      "description": "The San Francisco Department of Public Works Bureau of Engineering photographed the property at 610 Anza Street on 1941-01-27.",
+      "extra": {
+        "date_as_recorded": "1941-01-27",
+        "address_as_printed": "610 to 624 Anza Street",
+        "shelf": "Box 8",
+        "medium": "1 negative : film",
+        "corporate_subject_headings": [
+          "San Francisco Department of Public Works (San Francisco, Calif.)"
+        ],
+        "subject_headings": [
+          "Streets"
+        ]
+      },
+      "citation": {
+        "label": "610 Anza Street, 1941. San Francisco Department of Public Works Bureau of Engineering Photograph Records (SFP 26), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/6790",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0057.xml",
+        "locator": "record 6790, Box 8"
+      },
+      "raw": {
+        "text": "610 to 624 Anza Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-03",
+        "method": "sf-eas-addresses has 610 ANZA ST but it does not join to one parcel.",
+        "note": "The address exists but cannot be joined to a parcel, so there is no page to put it on. EAS leaves addresses unparcelled for rear units, vacated lots and addresses in flux; a later pass may find one."
+      },
+      "publish": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "sfp-26-0003",
+      "date": "1941-01-27",
+      "date_precision": "day",
+      "kind": "photograph",
+      "address_as_written": "624 Anza Street",
+      "street_number": "624",
+      "street_name": "ANZA",
+      "street_type": "ST",
+      "description": "The San Francisco Department of Public Works Bureau of Engineering photographed the property at 624 Anza Street on 1941-01-27.",
+      "extra": {
+        "date_as_recorded": "1941-01-27",
+        "address_as_printed": "610 to 624 Anza Street",
+        "shelf": "Box 8",
+        "medium": "1 negative : film",
+        "corporate_subject_headings": [
+          "San Francisco Department of Public Works (San Francisco, Calif.)"
+        ],
+        "subject_headings": [
+          "Streets"
+        ]
+      },
+      "citation": {
+        "label": "624 Anza Street, 1941. San Francisco Department of Public Works Bureau of Engineering Photograph Records (SFP 26), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/6790",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0057.xml",
+        "locator": "record 6790, Box 8"
+      },
+      "raw": {
+        "text": "610 to 624 Anza Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1087012",
+        "path": "/san-francisco/lone-mountain/anza-street/624/",
+        "eas_address": "624 ANZA ST",
+        "method": "EAS exact match on 624 ANZA ST → parcel 1087012; sf-parcels has blklot 1087012 active, 624–624 ANZA; the 2025 roll records it as multi-family residential, built 1972.",
+        "checked_on": "2026-09-03",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "declined",
+        "note": "The 2025 roll dates the building on parcel 1087012 to 1972 — thirty-one years after this photograph, and a specific year rather than the assessor's 1900 bucket. The building the Bureau photographed at 624 Anza Street is not the one standing there, so the fact has no page to go on."
+      }
+    },
+    {
+      "id": "sfp-26-0004",
+      "date": "1941-01-27",
+      "date_precision": "day",
+      "kind": "photograph",
+      "address_as_written": "183 Cook Street",
+      "street_number": "183",
+      "street_name": "COOK",
+      "street_type": "ST",
+      "description": "The San Francisco Department of Public Works Bureau of Engineering photographed the property at 183 Cook Street on 1941-01-27.",
+      "extra": {
+        "date_as_recorded": "1941-01-27",
+        "address_as_printed": "183 to 94 Cook Street",
+        "shelf": "Box 8",
+        "medium": "1 negative : film",
+        "corporate_subject_headings": [
+          "San Francisco Department of Public Works (San Francisco, Calif.)"
+        ],
+        "subject_headings": [
+          "Streets"
+        ]
+      },
+      "citation": {
+        "label": "183 Cook Street, 1941. San Francisco Department of Public Works Bureau of Engineering Photograph Records (SFP 26), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/6795",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0057.xml",
+        "locator": "record 6795, Box 8"
+      },
+      "raw": {
+        "text": "183 to 94 Cook Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1088011",
+        "path": "/san-francisco/lone-mountain/cook-street/183/",
+        "eas_address": "183 COOK ST",
+        "method": "EAS exact match on 183 COOK ST → parcel 1088011; sf-parcels has blklot 1088011 active, 183–183 COOK; the 2025 roll records it as single family residential, built 1901.",
+        "checked_on": "2026-09-03",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "Timeline entry. The 2025 roll dates the building 1901, forty years before the photograph.",
+        "pr": "#221"
+      }
+    },
+    {
+      "id": "sfp-26-0005",
+      "date": "1941-01-27",
+      "date_precision": "day",
+      "kind": "photograph",
+      "address_as_written": "194 Cook Street",
+      "street_number": "194",
+      "street_name": "COOK",
+      "street_type": "ST",
+      "description": "The San Francisco Department of Public Works Bureau of Engineering photographed the property at 194 Cook Street on 1941-01-27.",
+      "extra": {
+        "date_as_recorded": "1941-01-27",
+        "address_as_printed": "183 to 94 Cook Street",
+        "shelf": "Box 8",
+        "medium": "1 negative : film",
+        "corporate_subject_headings": [
+          "San Francisco Department of Public Works (San Francisco, Calif.)"
+        ],
+        "subject_headings": [
+          "Streets"
+        ]
+      },
+      "citation": {
+        "label": "194 Cook Street, 1941. San Francisco Department of Public Works Bureau of Engineering Photograph Records (SFP 26), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/6795",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0057.xml",
+        "locator": "record 6795, Box 8"
+      },
+      "raw": {
+        "text": "183 to 94 Cook Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-03",
+        "method": "No record in sf-eas-addresses for 194 COOK ST.",
+        "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 174, 176, 177, 179, 183, 184. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+      },
+      "publish": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "sfp-26-0006",
+      "date": "1941-01-27",
+      "date_precision": "day",
+      "kind": "photograph",
+      "address_as_written": "169 Cook Street",
+      "street_number": "169",
+      "street_name": "COOK",
+      "street_type": "ST",
+      "description": "The San Francisco Department of Public Works Bureau of Engineering photographed the property at 169 Cook Street on 1941-01-27.",
+      "extra": {
+        "date_as_recorded": "1941-01-27",
+        "address_as_printed": "169 to 73 Cook Street",
+        "shelf": "Box 8",
+        "medium": "1 negative : film",
+        "corporate_subject_headings": [
+          "San Francisco Department of Public Works (San Francisco, Calif.)"
+        ],
+        "subject_headings": [
+          "Streets"
+        ]
+      },
+      "citation": {
+        "label": "169 Cook Street, 1941. San Francisco Department of Public Works Bureau of Engineering Photograph Records (SFP 26), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/6796",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0057.xml",
+        "locator": "record 6796, Box 8"
+      },
+      "raw": {
+        "text": "169 to 73 Cook Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1088008",
+        "path": "/san-francisco/lone-mountain/cook-street/167/",
+        "eas_address": "167 COOK ST",
+        "method": "EAS exact match on 169 COOK ST → parcel 1088008; sf-parcels has blklot 1088008 active, 167–169 COOK; the 2025 roll records it as multi-family residential, built 1926. EAS puts 167, 169 COOK ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 167.",
+        "checked_on": "2026-09-03",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "Timeline entry, on the page at the parcel's lowest number (167) as the directory contract requires. The 2025 roll dates the building 1926.",
+        "pr": "#221"
+      }
+    },
+    {
+      "id": "sfp-26-0007",
+      "date": "1941-01-27",
+      "date_precision": "day",
+      "kind": "photograph",
+      "address_as_written": "173 Cook Street",
+      "street_number": "173",
+      "street_name": "COOK",
+      "street_type": "ST",
+      "description": "The San Francisco Department of Public Works Bureau of Engineering photographed the property at 173 Cook Street on 1941-01-27.",
+      "extra": {
+        "date_as_recorded": "1941-01-27",
+        "address_as_printed": "169 to 73 Cook Street",
+        "shelf": "Box 8",
+        "medium": "1 negative : film",
+        "corporate_subject_headings": [
+          "San Francisco Department of Public Works (San Francisco, Calif.)"
+        ],
+        "subject_headings": [
+          "Streets"
+        ]
+      },
+      "citation": {
+        "label": "173 Cook Street, 1941. San Francisco Department of Public Works Bureau of Engineering Photograph Records (SFP 26), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/6796",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0057.xml",
+        "locator": "record 6796, Box 8"
+      },
+      "raw": {
+        "text": "169 to 73 Cook Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-03",
+        "method": "sf-eas-addresses has 173 COOK ST but it does not join to one parcel. 173 COOK ST's coordinates fall in 2 active parcels (1088078, 1088079), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
+        "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+      },
+      "publish": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "sfp-26-0008",
+      "date": "1941-01-27",
+      "date_precision": "day",
+      "kind": "photograph",
+      "address_as_written": "170 Cook Street",
+      "street_number": "170",
+      "street_name": "COOK",
+      "street_type": "ST",
+      "description": "The San Francisco Department of Public Works Bureau of Engineering photographed the property at 170 Cook Street on 1941-01-27.",
+      "extra": {
+        "date_as_recorded": "1941-01-27",
+        "address_as_printed": "170 to 196 Cook Street",
+        "shelf": "Box 8",
+        "medium": "1 negative : film",
+        "corporate_subject_headings": [
+          "San Francisco Department of Public Works (San Francisco, Calif.)"
+        ],
+        "subject_headings": [
+          "Streets"
+        ]
+      },
+      "citation": {
+        "label": "170 Cook Street, 1941. San Francisco Department of Public Works Bureau of Engineering Photograph Records (SFP 26), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/6797",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0057.xml",
+        "locator": "record 6797, Box 8"
+      },
+      "raw": {
+        "text": "170 to 196 Cook Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1089018",
+        "path": "/san-francisco/lone-mountain/cook-street/170/",
+        "eas_address": "170 COOK ST",
+        "method": "EAS exact match on 170 COOK ST → parcel 1089018; sf-parcels has blklot 1089018 active, 170–170 COOK; the 2025 roll records it as multi-family residential, built 1987.",
+        "checked_on": "2026-09-03",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "declined",
+        "note": "The 2025 roll dates the building on parcel 1089018 to 1987, forty-six years after this photograph. The 1941 building at 170 Cook Street is gone."
+      }
+    },
+    {
+      "id": "sfp-26-0009",
+      "date": "1941-01-27",
+      "date_precision": "day",
+      "kind": "photograph",
+      "address_as_written": "196 Cook Street",
+      "street_number": "196",
+      "street_name": "COOK",
+      "street_type": "ST",
+      "description": "The San Francisco Department of Public Works Bureau of Engineering photographed the property at 196 Cook Street on 1941-01-27.",
+      "extra": {
+        "date_as_recorded": "1941-01-27",
+        "address_as_printed": "170 to 196 Cook Street",
+        "shelf": "Box 8",
+        "medium": "1 negative : film",
+        "corporate_subject_headings": [
+          "San Francisco Department of Public Works (San Francisco, Calif.)"
+        ],
+        "subject_headings": [
+          "Streets"
+        ]
+      },
+      "citation": {
+        "label": "196 Cook Street, 1941. San Francisco Department of Public Works Bureau of Engineering Photograph Records (SFP 26), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/6797",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0057.xml",
+        "locator": "record 6797, Box 8"
+      },
+      "raw": {
+        "text": "170 to 196 Cook Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-03",
+        "method": "No record in sf-eas-addresses for 196 COOK ST.",
+        "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 176, 177, 179, 183, 184, 186. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+      },
+      "publish": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "sfp-26-0010",
+      "date": "1941-02-17",
+      "date_precision": "day",
+      "kind": "photograph",
+      "address_as_written": "1648 - 50 3rd Street",
+      "street_name": "03RD",
+      "street_type": "ST",
+      "description": "The San Francisco Department of Public Works Bureau of Engineering photographed the property at 1648 - 50 3rd Street on 1941-02-17.",
+      "extra": {
+        "address_range_as_recorded": "1648-50",
+        "date_as_recorded": "1941-02-17",
+        "shelf": "Box 8",
+        "medium": "1 negative : film",
+        "corporate_subject_headings": [
+          "San Francisco Department of Public Works (San Francisco, Calif.)"
+        ],
+        "subject_headings": [
+          "Streets"
+        ]
+      },
+      "citation": {
+        "label": "1648 - 50 3rd Street, 1941. San Francisco Department of Public Works Bureau of Engineering Photograph Records (SFP 26), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/6814",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0057.xml",
+        "locator": "record 6814, Box 8"
+      },
+      "raw": {
+        "text": "1648 - 50 3rd Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "8711509",
+        "path": "/san-francisco/dogpatch/3rd-street/1450/",
+        "eas_address": "1450 03RD ST",
+        "method": "Recorded range 1648-50 03RD ST; EAS matches 1650 on this street → parcel 8711509; sf-parcels has blklot 8711509 active; the 2025 roll records it as commercial office. The assessor files the parcel as 555 MISSION BAY BL. EAS puts 1450, 1560, 1650, 1750 03RD ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1450. EAS files the address under parcel 8711007, which sf-parcels reports retired; the active parcel its coordinates fall in is 8711509. EAS has no record for 1648 on this street.",
+        "checked_on": "2026-09-03",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "declined",
+        "note": "Resolved onto parcel 8711509, which the assessor files as 555 Mission Bay Boulevard, records as commercial office, and which carries 1450, 1560, 1650 and 1750 03RD ST together — a Mission Bay superblock built long after 1941. EAS has no 1648 at all. Publishing here would hang a 1941 photograph of two industrial addresses on a building that replaced the whole block."
+      }
+    },
+    {
+      "id": "sfp-26-0011",
+      "date": "1941-02-17",
+      "date_precision": "day",
+      "kind": "photograph",
+      "address_as_written": "1515 3rd Street",
+      "street_number": "1515",
+      "street_name": "03RD",
+      "street_type": "ST",
+      "description": "The San Francisco Department of Public Works Bureau of Engineering photographed the property at 1515 3rd Street on 1941-02-17.",
+      "extra": {
+        "date_as_recorded": "1941-02-17",
+        "shelf": "Box 8",
+        "medium": "1 negative : film",
+        "corporate_subject_headings": [
+          "San Francisco Department of Public Works (San Francisco, Calif.)"
+        ],
+        "subject_headings": [
+          "Streets"
+        ]
+      },
+      "citation": {
+        "label": "1515 3rd Street, 1941. San Francisco Department of Public Works Bureau of Engineering Photograph Records (SFP 26), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/6815",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0057.xml",
+        "locator": "record 6815, Box 8"
+      },
+      "raw": {
+        "text": "1515 3rd Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "8721029",
+        "path": "/san-francisco/dogpatch/3rd-street/1515/",
+        "eas_address": "1515 03RD ST",
+        "method": "EAS exact match on 1515 03RD ST → parcel 8721029; sf-parcels has blklot 8721029 active, 1509–1519 03RD; the 2025 roll records it as commercial office, built 2021. EAS files the address under parcel 8721012, which sf-parcels reports retired; the active parcel its coordinates fall in is 8721029.",
+        "checked_on": "2026-09-03",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "declined",
+        "note": "The 2025 roll dates the building on parcel 8721029 to 2021, eighty years after this photograph. The 1941 building at 1515 3rd Street is gone."
+      }
+    },
+    {
+      "id": "sfp-26-0012",
+      "date": "1941-10-16",
+      "date_precision": "day",
+      "kind": "photograph",
+      "address_as_written": "396 Urbano Drive",
+      "street_number": "396",
+      "street_name": "URBANO",
+      "street_type": "DR",
+      "description": "The San Francisco Department of Public Works Bureau of Engineering photographed the property at 396 Urbano Drive on 1941-10-16.",
+      "extra": {
+        "date_as_recorded": "1941-10-16",
+        "shelf": "Box 8",
+        "medium": "1 negative : film",
+        "corporate_subject_headings": [
+          "San Francisco Department of Public Works (San Francisco, Calif.)"
+        ],
+        "subject_headings": [
+          "Streets"
+        ],
+        "additional_records": [
+          "https://digitalsf.org/record/6921"
+        ]
+      },
+      "citation": {
+        "label": "396 Urbano Drive, 1941. San Francisco Department of Public Works Bureau of Engineering Photograph Records (SFP 26), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/6920",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0058.xml",
+        "locator": "record 6920, Box 8"
+      },
+      "raw": {
+        "text": "396 Urbano Drive"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "6912012",
+        "path": "/san-francisco/ingleside-terraces/urbano-drive/396/",
+        "eas_address": "396 URBANO DR",
+        "method": "EAS exact match on 396 URBANO DR → parcel 6912012; sf-parcels has blklot 6912012 active, 396–396 URBANO; the 2025 roll records it as single family residential, built 1918.",
+        "checked_on": "2026-09-03",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "Timeline entry. The 2025 roll dates the building 1918.",
+        "pr": "#221"
+      }
+    },
+    {
+      "id": "sfp-26-0013",
+      "date": "1941-10-23",
+      "date_precision": "day",
+      "kind": "photograph",
+      "address_as_written": "426 Detroit Street",
+      "street_number": "426",
+      "street_name": "DETROIT",
+      "street_type": "ST",
+      "description": "The San Francisco Department of Public Works Bureau of Engineering photographed the property at 426 Detroit Street on 1941-10-23.",
+      "extra": {
+        "date_as_recorded": "1941-10-23",
+        "shelf": "Box 8",
+        "medium": "1 negative : film",
+        "corporate_subject_headings": [
+          "San Francisco Department of Public Works (San Francisco, Calif.)"
+        ],
+        "subject_headings": [
+          "Trenches"
+        ]
+      },
+      "citation": {
+        "label": "426 Detroit Street, 1941. San Francisco Department of Public Works Bureau of Engineering Photograph Records (SFP 26), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/6927",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0058.xml",
+        "locator": "record 6927, Box 8"
+      },
+      "raw": {
+        "text": "426 Detroit Street southern property line"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3118027",
+        "path": "/san-francisco/glen-park/detroit-street/426/",
+        "eas_address": "426 DETROIT ST",
+        "method": "EAS exact match on 426 DETROIT ST → parcel 3118027; sf-parcels has blklot 3118027 active, 426–426 DETROIT; the 2025 roll records it as single family residential, built 1947.",
+        "checked_on": "2026-09-03",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "Timeline entry, worded as the caption does — a property line, not a building. The 2025 roll dates the house on this parcel to 1947, six years after the photograph, so what the Bureau photographed was the lot rather than the house standing there now. Six years is inside the roll's own slack, so this is recorded rather than stated as a disagreement.",
+        "pr": "#221"
+      }
+    },
+    {
+      "id": "sfp-26-0014",
+      "date": "1941-10-23",
+      "date_precision": "day",
+      "kind": "photograph",
+      "address_as_written": "375 Monterey Boulevard",
+      "street_number": "375",
+      "street_name": "MONTEREY",
+      "street_type": "BLVD",
+      "description": "The San Francisco Department of Public Works Bureau of Engineering photographed the property at 375 Monterey Boulevard on 1941-10-23.",
+      "extra": {
+        "date_as_recorded": "1941-10-23",
+        "shelf": "Box 8",
+        "medium": "1 negative : film",
+        "corporate_subject_headings": [
+          "San Francisco Department of Public Works (San Francisco, Calif.)"
+        ],
+        "subject_headings": [
+          "Vacant lands"
+        ]
+      },
+      "citation": {
+        "label": "375 Monterey Boulevard, 1941. San Francisco Department of Public Works Bureau of Engineering Photograph Records (SFP 26), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/6928",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0058.xml",
+        "locator": "record 6928, Box 8"
+      },
+      "raw": {
+        "text": "375 Monterey Boulevard southwest corner"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3118033",
+        "path": "/san-francisco/glen-park/monterey-boulevard/375/",
+        "eas_address": "375 MONTEREY BLVD",
+        "method": "EAS exact match on 375 MONTEREY BLVD → parcel 3118033; sf-parcels has blklot 3118033 active, 375–375 MONTEREY; the 2025 roll records it as single family residential, built 1927.",
+        "checked_on": "2026-09-03",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "Timeline entry. The 2025 roll dates the building 1927.",
+        "pr": "#221"
+      }
+    },
+    {
+      "id": "sfp-26-0015",
+      "date": "1941-11-06",
+      "date_precision": "day",
+      "kind": "photograph",
+      "address_as_written": "78 Gladys Street",
+      "street_number": "78",
+      "street_name": "GLADYS",
+      "street_type": "ST",
+      "description": "The San Francisco Department of Public Works Bureau of Engineering photographed the property at 78 Gladys Street on 1941-11-06.",
+      "extra": {
+        "date_as_recorded": "1941-11-06",
+        "shelf": "Box 8",
+        "medium": "1 negative : film",
+        "corporate_subject_headings": [
+          "San Francisco Department of Public Works (San Francisco, Calif.)"
+        ],
+        "subject_headings": [
+          "Streets"
+        ]
+      },
+      "citation": {
+        "label": "78 Gladys Street, 1941. San Francisco Department of Public Works Bureau of Engineering Photograph Records (SFP 26), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/6932",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0058.xml",
+        "locator": "record 6932, Box 8"
+      },
+      "raw": {
+        "text": "78 Gladys Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "5712018",
+        "path": "/san-francisco/bernal-heights/gladys-street/78/",
+        "eas_address": "78 GLADYS ST",
+        "method": "EAS exact match on 78 GLADYS ST → parcel 5712018; sf-parcels has blklot 5712018 active, 78–78 GLADYS; the 2025 roll records it as single family residential, built 1907.",
+        "checked_on": "2026-09-03",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "Timeline entry. The 2025 roll dates the building 1907.",
+        "pr": "#221"
+      }
+    },
+    {
+      "id": "sfp-26-0016",
+      "date": "1942-11-23",
+      "date_precision": "day",
+      "kind": "photograph",
+      "address_as_written": "230 Dolores Street",
+      "street_number": "230",
+      "street_name": "DOLORES",
+      "street_type": "ST",
+      "description": "The San Francisco Department of Public Works Bureau of Engineering photographed the property at 230 Dolores Street on 1942-11-23.",
+      "extra": {
+        "date_as_recorded": "1942-11-23",
+        "shelf": "Box 9",
+        "medium": "1 negative : film",
+        "corporate_subject_headings": [
+          "San Francisco Department of Public Works (San Francisco, Calif.)"
+        ],
+        "subject_headings": [
+          "Streets"
+        ]
+      },
+      "citation": {
+        "label": "230 Dolores Street, 1942. San Francisco Department of Public Works Bureau of Engineering Photograph Records (SFP 26), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/7127",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0060.xml",
+        "locator": "record 7127, Box 9"
+      },
+      "raw": {
+        "text": "230 Dolores Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3557004",
+        "path": "/san-francisco/castro/dolores-street/230/",
+        "eas_address": "230 DOLORES ST",
+        "method": "EAS exact match on 230 DOLORES ST → parcel 3557004; sf-parcels has blklot 3557004 active, 230–230 DOLORES; the 2025 roll records it as multi-family residential, built 1960.",
+        "checked_on": "2026-09-03"
+      },
+      "publish": {
+        "status": "declined",
+        "note": "The 2025 roll dates the building on parcel 3557004 to 1960, eighteen years after this photograph and a specific year rather than the assessor's 1900 bucket. The 1942 building at 230 Dolores Street is not the one standing there."
+      }
+    },
+    {
+      "id": "sfp-26-0017",
+      "date": "1935-02-18",
+      "date_precision": "day",
+      "kind": "photograph",
+      "address_as_written": "433 Seventh Avenue",
+      "street_number": "433",
+      "street_name": "07TH",
+      "street_type": "AVE",
+      "description": "The San Francisco Department of Public Works Bureau of Engineering photographed the property at 433 Seventh Avenue on 1935-02-18.",
+      "extra": {
+        "date_as_recorded": "1935-02-18",
+        "medium": "1 negative : glass plate",
+        "corporate_subject_headings": [
+          "San Francisco Department of Public Works (San Francisco, Calif.)"
+        ],
+        "subject_headings": [
+          "Laundries"
+        ]
+      },
+      "citation": {
+        "label": "433 Seventh Avenue, 1935. San Francisco Department of Public Works Bureau of Engineering Photograph Records (SFP 26), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/7251",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0062.xml",
+        "locator": "record 7251"
+      },
+      "raw": {
+        "text": "433 Seventh Avenue"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-03",
+        "method": "No record in sf-eas-addresses for 433 07TH AVE.",
+        "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 415, 417, 419, 420, 421, 426. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+      },
+      "publish": {
+        "status": "pending"
+      }
+    }
+  ]
+}

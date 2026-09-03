@@ -1,0 +1,134 @@
+{
+  "address": "396 Urbano Drive, San Francisco, CA 94127",
+  "path": "/san-francisco/ingleside-terraces/urbano-drive/396/",
+  "apn": "6912012",
+  "block": "6912",
+  "lot": "012",
+  "eas_baseid": "408356",
+  "coordinates": {
+    "lat": 37.724856,
+    "lng": -122.470372
+  },
+  "parcel": {
+    "year_built": 1918,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 1,
+    "bedrooms": 4,
+    "lot_area_sqft": 7496,
+    "building_area_sqft": 2040,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Ingleside Terrace",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0396 URBANO              DR0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 520092,
+    "assessed_improvement_value": 143877,
+    "last_sale_date": "1992-09-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1918",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Ingleside Terrace Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1910–1930",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200510216280",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-10-21",
+      "status_date": "2005-10-21",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "master bathrm remodel: remove existinsg fixtures, tile and lath plaster, replac3 w/new fisxtures, dry wall and finishes, replace in kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9920768",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-10-01",
+      "status_date": "2001-01-05",
+      "estimated_cost": 20000,
+      "description": "replace beams & posts in basement-replace roof, remove stuco",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9906124",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-03-31",
+      "status_date": "1999-12-28",
+      "estimated_cost": 10000,
+      "description": "remove existing foundation and slab and replace w/ new slab",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=URBANO&street_type=DR&address_number=396",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6912012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6912&lot=012",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6912012",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.47037190615026%2037.72485615329547)%27)",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "digitalsf-6920",
+      "name": "396 Urbano Drive, 1941. San Francisco Department of Public Works Bureau of Engineering Photograph Records (SFP 26), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/6920",
+      "label": "Bureau of Engineering Photograph Records (SFP 26), San Francisco Public Library",
+      "retrieved": "2026-09-03"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1941-10-16",
+      "kind": "photograph",
+      "description": "The Bureau of Engineering photographed the property.",
+      "source": "digitalsf-6920"
+    }
+  ]
+}
