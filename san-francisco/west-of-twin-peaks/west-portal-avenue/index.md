@@ -8,8 +8,10 @@ The parcels on West Portal Avenue documented here so far, from the city's addres
 - [59–61](59/) — A 1923 store building, with reroofing permitted in 2006.
 - [75–85](75/) — A 1925 theater in the San Francisco Neighborhood Movie Theater Historic District (Discontiguous), with reroofing permitted in 1996.
 - [98](98/) — A 1975 bank building, with electrical work permitted in 2011.
+- [130](130/) — A 1931 bank building in the West Portal Park Historic District, with reroofing permitted in 1990.
 - [160–170](160/) — A 1935 store building in the West Portal Park Historic District, with a kitchen remodel permitted in 2014.
 - [220–226](220/) — A 1938 store building in the West Portal Park Historic District, with reroofing permitted in 2017.
+- [240–244](240/) — A 1938 store building in the West Portal Park Historic District, with reroofing permitted in 2022.
 - [254–262](254/) — A 1925 10-unit apartment building in the West Portal Park Historic District, with a seismic retrofit permitted in 2017.
 - [311–317](311/) — A 1946 store building, with reroofing permitted in 2022.
 - [377](377/) — A 1935 office building, with reroofing permitted in 2023.

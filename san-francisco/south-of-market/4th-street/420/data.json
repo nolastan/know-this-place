@@ -1,0 +1,78 @@
+{
+  "address": "420 4th Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/4th-street/420/",
+  "apn": "3761063",
+  "block": "3761",
+  "lot": "063",
+  "eas_baseid": "495394",
+  "coordinates": {
+    "lat": 37.780394,
+    "lng": -122.399436
+  },
+  "parcel": {
+    "year_built": 1900,
+    "lot_area_sqft": 98500,
+    "use": "Government",
+    "property_class": "Vacant Lot Gov",
+    "construction_type_code": "NA",
+    "zoning": "P",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Yerba Buena",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0299 0200 PERRY               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=04TH&street_type=ST&address_number=420",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3761063&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3761&lot=063",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3761063",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "digitalsf-34889",
+      "name": "400-430 4th Street, 1937. San Francisco Subjects Photograph Collection (SFP 162), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/34889",
+      "label": "San Francisco Subjects Photograph Collection (SFP 162), San Francisco Public Library",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1937-10-08",
+      "kind": "photograph",
+      "description": "Photographed.",
+      "source": "digitalsf-34889"
+    }
+  ]
+}

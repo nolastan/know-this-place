@@ -39,6 +39,7 @@ Every residential parcel on Dolores Street that the city's address, assessor and
 - [742](742/) — A 1900 single-family house, with a kitchen remodel permitted in 2009.
 - [750](750/) — A 1954 single-family house, with window replacement permitted in 2014.
 - [760–762](760/) — A 1900 two-flat, with a kitchen and bathroom remodel permitted in 2019.
+- [770](770/) — A 1900 church, with reroofing permitted in 2020.
 - [780–782](780/) — A 1901 three-flat, with a kitchen remodel permitted in 2006.
 - [784–788](784/) — A 1900 5-unit apartment building, with a seismic retrofit permitted in 2018.
 

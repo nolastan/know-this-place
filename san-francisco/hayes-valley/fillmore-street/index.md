@@ -5,6 +5,7 @@ The parcels on Fillmore Street documented here so far, from the city's address, 
 ## Documented so far
 
 - [55](55/) — A 1957 office building, with reroofing permitted in 2002.
+- [323–329](323/) — A 1930 three-flat, with a rear addition permitted in 2018.
 - [546–548](546/) — A 1907 church in the Hayes Valley Residential Historic District, with a seismic retrofit permitted in 2011.
 - [554](554/) — A 1900 church in the Hayes Valley Residential Historic District, with a seismic retrofit permitted in 2020.
 - [557](557/) — A 1900 6-unit tic building, with facade work permitted in 2020.

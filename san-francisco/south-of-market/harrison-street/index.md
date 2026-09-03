@@ -40,6 +40,7 @@ The parcels on Harrison Street documented here so far, from the city's address, 
 - [986](986/) — A 1926 garage, with reroofing permitted in 2012.
 - [991](991/) — A 1945 industrial building, with reroofing permitted in 2004.
 - [993–995](993/) — A 1912 hotel in the SoMa LGBTQ Historic District, with window replacement permitted in 2013.
+- [1098](1098/) — A 1924 office building in the Western SOMA Light Industrial and Residential Historic District, with a seismic retrofit permitted in 2018.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

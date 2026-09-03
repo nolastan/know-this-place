@@ -230,6 +230,22 @@ def split_number(number: str) -> tuple[str, str]:
     return ("", n) if "-" in n else (n, "")
 
 
+# A caption's own words that parse as "<number> <street name>" and are not
+# addresses. Curated from `--report` over SFP 162, where a subject file's prose
+# supplies them by the dozen: a date ("23 April"), a fire company ("2 Engine",
+# "1 Fire House"), a numbered vehicle ("32 Streetcar"), and a venue named for
+# its street number ("365 Club" is the nightclub at 365 Market). The dossier's
+# existing guard — a street number equal to the record's own year — catches a
+# different half of the same problem; this is the half with no year in it.
+NOT_A_STREET_NAME = {
+    "JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST",
+    "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER",
+    "ENGINE", "ENGINE COMPANY", "FIRE HOUSE", "FIREHOUSE", "TRUCK COMPANY",
+    "STREETCAR", "STREET CAR", "CLUB", "RESTAURANT", "THEATRE RESTAURANT",
+    "P.M", "A.M", "B.C", "STAR", "LINE",
+}
+
+
 def address_from_title(title: str) -> dict | None:
     """The first exact street number in a title. A block is not an address.
 
@@ -255,6 +271,8 @@ def address_from_title(title: str) -> dict | None:
     # Mar" is the exception the third slot exists for, and it has no type).
     name, stype = normalize_street(" ".join(tokens))
     if not name:
+        return None
+    if not stype and name.upper() in NOT_A_STREET_NAME:
         return None
     as_written = f"{number} {' '.join(tokens)}"
     if qualifier:
@@ -478,11 +496,11 @@ def business_names(title: str, address_span: str, streets: list[str],
         # Removing the address can leave two joins stacked up — "Corner of
         # 16th Street and 3rd Street" minus "16th Street" is "Corner of and
         # 3rd Street" — so trim until the fragment stops shrinking.
-        part = part.strip(" ,.-")
+        part = part.strip(" ,.-&")
         while True:
             trimmed = TRAILING_JOIN.sub(
                 "", TRAILING_CROSS.sub(
-                    "", LEADING_JOIN.sub("", part))).strip(" ,.-")
+                    "", LEADING_JOIN.sub("", part))).strip(" ,.-&")
             if trimmed == part:
                 break
             part = trimmed
@@ -510,9 +528,11 @@ def business_names(title: str, address_span: str, streets: list[str],
                                      and not TRADING_TAIL.search(part)):
             dropped.append(part)
             continue
-        if policy == "named-buildings-only" and not is_named_building(part):
-            dropped.append(part)
-            continue
+        if policy == "named-buildings-only":
+            if not is_named_building(part):
+                dropped.append(part)
+                continue
+            part = CAPTION_PREFIX.sub("", part).strip(" ,.&-")
         kept.append(part)
     return kept, dropped
 
@@ -546,6 +566,11 @@ COLLECTION_VOICE = {
     # it is often the last record of a building at that number.
     "SFH 371": ("The San Francisco Redevelopment Agency photographed the "
                 "property {at} {display} {when}."),
+    # The History Center's own subject file: an artificial collection assembled
+    # folder by folder from many photographers and donors, so there is no one
+    # body that made these pictures and the sentence must not name one. What is
+    # true of every record is that a dated photograph of the address survives.
+    "SFP 162": ("Photographed {at} {display} {when}."),
 }
 
 
@@ -566,8 +591,30 @@ COLLECTION_VOICE = {
 # caption. It also drops real names buried in lowercase prose ("Japantown
 # bakery Benkyodo Company"), and that trade is deliberate — under "The evidence
 # bar" scarcity raises the bar, and a false keep here is a privacy failure.
+# Whether a record that gives no street number is worth keeping as an
+# unresolved finding.
+#
+# The default is to keep it: SFH 371 is 2,421 records photographing a handful of
+# project areas, its unnumbered captions locate real buildings that were about
+# to be cleared, and 170 stubs are a cheap record of a haystack already searched.
+#
+# SFP 162 is the opposite shape. It is the History Center's general subject file
+# — 34,738 records of parades, ferries, wildflowers and mayors, of which 1,435
+# carry a street number. Keeping the rest produces 9,000 findings that say "the
+# record names no street number" about a photograph of Stow Lake, in a file the
+# next agent has to read past. The coverage block already records that the whole
+# collection was examined, which is the thing worth keeping. So: `skip-unnumbered`
+# for a subject file, where the unnumbered majority is not about buildings at all.
+COLLECTION_UNNUMBERED_POLICY = {
+    "SFP 162": "skip-unnumbered",
+}
+
 COLLECTION_NAME_POLICY = {
     "SFH 371": "named-buildings-only",
+    # Subject-file titles are narrative captions in the same way SFH 371's are
+    # — "Man standing in front of Malvina Coffee Shop in North Beach" — so the
+    # same policy applies for the same reason.
+    "SFP 162": "named-buildings-only",
 }
 
 BUILDING_NOUN = {
@@ -577,6 +624,7 @@ BUILDING_NOUN = {
     "stores", "center", "centre", "building", "buildings", "tower", "inn",
     "library", "temple", "mission", "bank", "works", "plant", "factory",
     "warehouse", "terrace", "court", "plaza", "commons", "mall", "cathedral",
+    "corporation",
     "synagogue", "hospital", "laundry", "cleaners", "pharmacy", "tavern",
 }
 SMALL_WORD = {"of", "the", "at", "and", "in", "on", "for", "de", "la", "du",
@@ -603,9 +651,19 @@ def people_not_a_place(title: str, fields) -> bool:
 # An event at a building is not the building's name.
 EVENT_TAIL = re.compile(r"\b(?:ceremony|opening|meeting|dedication|groundbreaking)$", re.I)
 
+# What a subject-file caption puts in front of the name. "Exterior of Ernie's
+# Restaurant" and "Former North Beach Branch Library" are the caption's framing,
+# not part of what the building is called; left on, they reach the page as the
+# archive describing its own photograph.
+CAPTION_PREFIX = re.compile(
+    r"^(?:Exterior|Interior|Front|Rear|Side|View|Views|Construction|"
+    r"Demolition|Remodeling|Renovation|Warehouse|Site)\s+of\s+(?:the\s+)?"
+    r"|^(?:Former|Old|New)\s+(?=[A-Z])", re.I)
+
 
 def is_named_building(part: str) -> bool:
     """A proper name for a building, not a scrap of caption and not a person."""
+    part = CAPTION_PREFIX.sub("", part).strip(" ,.&-")
     tokens = part.replace("&", " & ").split()
     if not tokens or any(any(c.isdigit() for c in tok) for tok in tokens):
         return False
@@ -619,6 +677,7 @@ def is_named_building(part: str) -> bool:
            for a, b in zip(lowered, lowered[1:])):
         return False
     has_noun = False
+    distinguishing = False
     for tok in tokens:
         word = tok.strip(".,")
         if not word:
@@ -629,7 +688,12 @@ def is_named_building(part: str) -> bool:
             return False
         if word.lower().rstrip("'s") in BUILDING_NOUN or word.lower() in BUILDING_NOUN:
             has_noun = True
-    return has_noun
+        else:
+            distinguishing = True
+    # "Building", "House", "Public Library" name no particular one. A fragment
+    # with nothing but the noun in it is the caption's common noun, and on a
+    # page it says only that the address had a building on it.
+    return has_noun and distinguishing
 
 
 def voice_for(collection: str) -> str:
@@ -652,6 +716,8 @@ def voice_for(collection: str) -> str:
 def build(collection: str, batch: str):
     voice = voice_for(collection)
     policy = COLLECTION_NAME_POLICY.get(collection, "")
+    skip_unnumbered = (COLLECTION_UNNUMBERED_POLICY.get(collection)
+                       == "skip-unnumbered")
     rows = list(records(collection))
     if not rows:
         sys.exit(f"no records matching {collection!r} under {CORPUS} — "
@@ -694,6 +760,9 @@ def build(collection: str, batch: str):
             tally["no street number"] += 1
             if notes["block"]:
                 tally["  ...but an assessor block"] += 1
+            if skip_unnumbered and not notes["block"]:
+                tally["  ...and skipped, per COLLECTION_UNNUMBERED_POLICY"] += 1
+                continue
             fallback = location_without_number(title, notes)
             unnumbered = fallback["why"]
             addr = {"as_written": fallback["as_written"], "number": "",
@@ -789,10 +858,19 @@ def build(collection: str, batch: str):
             when = f"on {date['date']}"
         elif date["precision"] in ("month", "year"):
             when = f"in {date['date']}"
+        elif date["precision"] == "unknown":
+            # "at a date the archivist gives as 'undated'" says nothing, and it
+            # says it in the archive's voice. `date_precision` carries this.
+            when = ""
         else:
-            when = f"at a date the archivist gives as {date['as_recorded']!r}"
+            # The catalogue's own hedge reads as plain English on its own —
+            # "circa 1862", "between 1943 and 1958", "not before 1968" — so use
+            # it as the phrase rather than framing it as something a cataloguer
+            # said. A page body never names where a fact came from.
+            when = date["as_recorded"]
         at = "at" if not unnumbered else "at the location it records as"
-        description = voice.format(at=at, display=display, when=when)
+        description = re.sub(r"\s+([.,])", r"\1",
+                             voice.format(at=at, display=display, when=when))
         if kept:
             description += (" The record names " + oxford(kept)
                             + " at the address.")
@@ -938,7 +1016,10 @@ def main(argv: list[str]) -> int:
     coverage = {
         "unit": "catalogue records",
         "examined": tally["records"],
-        "mentions": tally["records"] - tally["no street number"],
+        # A record skipped as a photograph of people never reached the address
+        # test, so it is not a mention either.
+        "mentions": (tally["records"] - tally["no street number"]
+                     - tally["people, not a place — skipped"]),
         "remaining": existing.get("coverage", {}).get("remaining", ""),
         "note": existing.get("coverage", {}).get("note", ""),
     }

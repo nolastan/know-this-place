@@ -4,6 +4,7 @@ Every residential parcel on Cesar Chavez Street that the city's address, assesso
 
 ## Documented so far
 
+- [1750](1750/) — A 1985 warehouse, with a kitchen remodel permitted in 2019.
 - [1900–2190](1900/) — A 1942 industrial building, with reroofing permitted in 2020.
 - [2850](2850/) — A 1922 single-family house, with garage work permitted in 2014.
 - [2854](2854/) — A 1923 single-family house, with reroofing permitted in 1993.

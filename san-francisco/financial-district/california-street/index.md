@@ -16,11 +16,13 @@ The parcels on California Street documented here so far, from the city's address
 - [220–230](220/) — A 1913 office building in the Front-California Conservation District, with window replacement permitted in 2006.
 - [235–259](235/) — A 1958 office building, with plumbing work permitted in 2013.
 - [240–242](240/) — A 1909 store building in the Front-California Conservation District, with fire repair permitted in 2009.
+- [311–325](311/) — A 1910 office building, with electrical work permitted in 2015.
 - [345](345/) — A 1987 office building, with plumbing work permitted in 2023.
 - [350–370](350/) — A 1976 office building, with stair work permitted in 2016.
 - [400–410](400/) — A 1907 bank building, with reroofing permitted in 2012.
 - [401–425](401/) — A 1968 office building, with electrical work permitted in 2010.
 - [430–444](430/) — A 1968 office building, with reroofing permitted in 2012.
+- [433–441](433/) — A 1913 office building, with plumbing work permitted in 2023.
 - [530–550](530/) — A 1960 office building, with an addition permitted in 2006.
 - [555](555/) — The 1969 Bank of America tower; its plaza sculpture is the one called the Banker's Heart.
 - [580](580/) — A 1984 office building, with electrical work permitted in 2016.

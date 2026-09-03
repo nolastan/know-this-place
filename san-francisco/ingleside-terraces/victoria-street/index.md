@@ -4,6 +4,7 @@ The parcels on Victoria Street documented here so far, from the city's address, 
 
 ## Documented so far
 
+- [462](462/) — A 1945 single-family house.
 - [710](710/) — Built 1912, one of three 1912 houses on this block of Victoria Street.
 - [720–720A](720/) — Built 1927, one of two 1927 houses on this block of Victoria Street.
 - [730](730/) — Built 1912, one of three 1912 houses on this block of Victoria Street.

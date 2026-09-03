@@ -969,6 +969,42 @@ def demolition_mentioned(f: dict) -> tuple[str, str] | None:
     return None
 
 
+# The 1909 renumbering changed street numbers across much of the city, and a
+# plain EAS join cannot see it: the number exists today, on a parcel, and the
+# join reports a clean resolution for a building that may be a block away or a
+# century newer. RUNBOOK.md's rule is that a pre-1909 number is not today's
+# number until EAS *and a cross-street check* agree, and this tool only does the
+# first. So it declines, and says what would unblock it — a cross street, a
+# block face, a lot dimension — which a publisher can act on by resolving the
+# entry by hand.
+#
+# Measured on SFP 162, where 42 findings dated before 1910 resolved on the join
+# alone: 36 of them landed on a parcel whose building the assessor dates *after*
+# the photograph, by as much as 122 years (760 Mission Street, 1867, on a
+# parcel built in 1989). The check that caught it is not in this tool; the
+# refusal is.
+RENUMBERING_YEAR = 1910
+YEAR_IN_DATE = re.compile(r"(1[6-9]\d\d|20\d\d)")
+
+
+def renumbering_guard(f: dict, res: dict) -> dict:
+    """Refuse a pre-1910 address resolved on the EAS join alone."""
+    if res.get("status") != "resolved":
+        return res
+    m = YEAR_IN_DATE.search(f.get("date") or "")
+    if not m or int(m.group(1)) >= RENUMBERING_YEAR:
+        return res
+    return {"status": "unresolved", "checked_on": res.get("checked_on"),
+            "method": res.get("method", ""),
+            "note": (f"Dated {f.get('date')}, before the 1909 renumbering, and the record "
+                     f"gives no cross street, block face or lot dimension to check the "
+                     f"number against. EAS holds "
+                     f"{f.get('street_number')} {f.get('street_name')} today, but a "
+                     f"pre-1909 number is not today's number until a cross-street check "
+                     f"says so — see 'The renumbering traps' in research/RUNBOOK.md. "
+                     f"Resolve it by hand if the source supplies the check material.")}
+
+
 def decide(city: City, f: dict, today: str) -> dict:
     """One finding → one resolution. No adjudication: ties go unresolved."""
     extra = f.get("extra") or {}
@@ -1223,6 +1259,7 @@ def decide(city: City, f: dict, today: str) -> dict:
             if loose else "")
     clause, agrees = block_check(city, f, parcel)
     res["method"] += clause + spelling
+    res = renumbering_guard(f, res)
     if not agrees and res["status"] == "resolved" and not f.get("conflict"):
         # An address EAS matches exactly, against a block number that says
         # somewhere else. Per RUNBOOK.md a contradiction like this is not

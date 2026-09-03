@@ -20,7 +20,12 @@ The parcels on Fell Street documented here so far, from the city's address, asse
 - [1213–1215](1213/) — A 1909 garage, with a seismic retrofit permitted in 2002.
 - [1530](1530/) — A 2000 1-unit apartment building in the NOPA Historic District, with reroofing permitted in 2014.
 - [1550](1550/) — An 1880 single-family house in the NOPA Historic District, with reroofing permitted in 2009.
+- [1588](1588/) — A 1900 4-unit apartment building in the NOPA Historic District, with reroofing permitted in 2019.
+- [1786–1790](1786/) — A 1909 four-flat in the Panhandle Historic District, with reroofing permitted in 2021.
 - [1826–1830](1826/) — A 1906 three-flat in the Panhandle Historic District, with an addition permitted in 2009.
+- [1832–1836](1832/) — A 1909 three-flat in the Panhandle Historic District, with a kitchen and bathroom remodel permitted in 2012.
+- [1852](1852/) — A 1902 7-unit apartment building in the Panhandle Historic District, with a seismic retrofit permitted in 2015.
+- [1994–1998](1994/) — A 1906 hotel in the Panhandle Historic District, with a seismic retrofit permitted in 2017.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

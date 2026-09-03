@@ -15,6 +15,7 @@ The parcels on Hayes Street documented here so far, from the city's address, ass
 - [575–579](575/) — A 1900 4-unit building with a ground-floor store in the Hayes Valley Residential Historic District, with deck work permitted in 2007.
 - [615](615/) — An 1890 single-family house in the Hayes Valley Residential Historic District, with an addition permitted in 2020.
 - [742–744](742/) — An 1890 building in the Hayes Valley Residential Historic District, with foundation work permitted in 2008.
+- [818](818/) — A 1900 three-flat, with reroofing permitted in 2022.
 - [840–842](840/) — A 1906 12-unit apartment building, with a kitchen remodel permitted in 1988.
 - [890](890/) — A 1900 church, with stair work permitted in 2010.
 - [1339–1343](1339/) — A 1900 three-flat in the NOPA Historic District, with reroofing permitted in 1997.

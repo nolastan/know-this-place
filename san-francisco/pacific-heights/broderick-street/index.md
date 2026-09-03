@@ -14,6 +14,7 @@ The parcels on Broderick Street documented here so far, from the city's address,
 - [1717](1717/) — A 1900 single-family house, with an addition permitted in 2022.
 - [1719](1719/) — A 1900 single-family house, with deck work permitted in 2009.
 - [1902](1902/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2005.
+- [1916](1916/) — A 1900 single-family house, with a kitchen remodel permitted in 2014.
 - [2201](2201/) — A 1900 two-flat, with reroofing permitted in 2019.
 
 Pages are generated from the DataSF datasets listed in each page's

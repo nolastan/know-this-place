@@ -4,6 +4,7 @@ The parcels on Market Street documented here so far, from the city's address, as
 
 ## Documented so far
 
+- [1500](1500/) — A building, with facade work permitted in 1997.
 - [1540](1540/) — A building, with foundation work permitted in 2016.
 - [1576](1576/) — A 1907 assessor class: vacant lot, with permit records from 1981 to 2011.
 - [1580–1598](1580/) — A 1917 72-unit apartment building in the Market Street Masonry Historic District, with a seismic retrofit permitted in 2025.
@@ -15,6 +16,7 @@ The parcels on Market Street documented here so far, from the city's address, as
 - [1896](1896/) — A 1900 8-unit apartment building, with a kitchen and bathroom remodel permitted in 2021.
 - [1900–1920](1900/) — A 1931 65-unit apartment building in the SF State Teachers College Vicinity Apartments Historic District, with a kitchen remodel permitted in 2019.
 - [1942–1950](1942/) — A 1936 store building, with stair work permitted in 2000.
+- [1975](1975/) — A 1922 store building, with stair work permitted in 2006.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

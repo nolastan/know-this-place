@@ -5,6 +5,7 @@ The parcels on 29th Avenue documented here so far, from the city's address, asse
 ## Documented so far
 
 - [1330](1330/) — A 1925 single-family house.
+- [1750](1750/) — A 1958 church, with reroofing permitted in 2020.
 - [1935](1935/) — A 1939 single-family house.
 - [2075](2075/) — A 1939 single-family house, with a kitchen and bathroom remodel permitted in 2024.
 - [2083](2083/) — A 1939 single-family house, with a bathroom remodel permitted in 2025.

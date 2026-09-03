@@ -4,6 +4,7 @@ Every residential parcel on Harrison Street that the city's address, assessor an
 
 ## Documented so far
 
+- [1275](1275/) — A 1936 office building in the Western SOMA Light Industrial and Residential Historic District, with a bathroom remodel permitted in 2012.
 - [1350–1354](1350/) — A 1907 2-unit building with a ground-floor store in the SoMa LGBTQ Historic District, with facade work permitted in 1988.
 - [1351–1355](1351/) — A 1907 3-unit building with a ground-floor store in the SoMa LGBTQ Historic District, with a kitchen and bathroom remodel permitted in 2007.
 - [1617–1651](1617/) — A 1950 industrial building, with plumbing work permitted in 2004.

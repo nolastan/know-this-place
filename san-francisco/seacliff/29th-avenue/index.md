@@ -4,6 +4,7 @@ The parcels on 29th Avenue documented here so far, from the city's address, asse
 
 ## Documented so far
 
+- [237](237/) — A 1919 single-family house, with a kitchen remodel permitted in 2020.
 - [262](262/) — A 1919 single-family house, with a kitchen and bathroom remodel permitted in 1989.
 
 Pages are generated from the DataSF datasets listed in each page's

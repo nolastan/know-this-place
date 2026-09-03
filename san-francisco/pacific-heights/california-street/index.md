@@ -14,10 +14,15 @@ The parcels on California Street documented here so far, from the city's address
 - [2055](2055/) — A 1927 16-unit apartment building, with reroofing permitted in 2008.
 - [2065](2065/) — A 1927 16-unit apartment building, with window replacement permitted in 2000.
 - [2075](2075/) — A 1927 16-unit apartment building, with a kitchen remodel permitted in 2021.
+- [2150](2150/) — A 1900 building in the San Francisco 1952 Firehouse Bond Act Thematic District (Discontiguous), with a seismic retrofit permitted in 1993.
 - [2199](2199/) — A 1900 10-unit apartment building, with a kitchen remodel permitted in 2017.
+- [2202](2202/) — A 1900 16-unit apartment building, with reroofing permitted in 1996.
 - [2262–2266](2262/) — A 1904 church, with a seismic retrofit permitted in 2007.
 - [2401–2417](2401/) — A 1905 10-unit apartment building in the Upper Fillmore Neighborhood Commercial Historic District, with a vertical addition permitted in 1996.
+- [2438–2442](2438/) — A 1900 three-flat, with a kitchen and bathroom remodel permitted in 2016.
 - [2470](2470/) — A 1900 garage, with permit records from 1985 to 1991.
+- [2603](2603/) — A 1900 single-family house, with foundation work permitted in 1999.
+- [2609–2619](2609/) — A 1900 3-unit apartment building, with garage work permitted in 2025.
 - [2659–2661](2659/) — A 1907 16-unit apartment building, with a kitchen and bathroom remodel permitted in 2017.
 - [2704–2708](2704/) — A 1961 building, with window replacement permitted in 2009.
 - [2710](2710/) — A 1911 building, with a kitchen remodel permitted in 2022.

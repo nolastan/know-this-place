@@ -10,16 +10,20 @@ The parcels on Haight Street documented here so far, from the city's address, as
 - [1128](1128/) — An 1890 building in the Buena Vista North Historic District, with window replacement permitted in 2022.
 - [1250](1250/) — A 1914 40-unit apartment building in the Buena Vista North Historic District, with reroofing permitted in 2020.
 - [1367–1371](1367/) — A 1900 3-unit building with a ground-floor store in the Haight Ashbury Counterculture Historic District, with a kitchen remodel permitted in 2019.
+- [1373–1377](1373/) — A 1902 3-unit building with a ground-floor store in the Haight Ashbury Counterculture Historic District, with permit records from 2018 to 2019.
 - [1426–1428](1426/) — A 1900 2-unit building with a ground-floor store in the Haight Ashbury Counterculture Historic District, with electrical work permitted in 2026.
 - [1437–1445](1437/) — A 1906 5-unit building with a ground-floor store in the Haight Ashbury Counterculture Historic District, with an addition permitted in 1999.
 - [1444–1454](1444/) — A 1906 5-unit building with a ground-floor store in the Haight Ashbury Counterculture Historic District, with deck work permitted in 1984.
+- [1462–1466](1462/) — A 1908 6-unit building with a ground-floor store in the Haight Ashbury Counterculture Historic District, with a seismic retrofit permitted in 2014.
 - [1500–1512](1500/) — A 1910 store building in the Haight Ashbury Counterculture Historic District, with reroofing permitted in 2019.
 - [1524–1528 Haight Street](1524/) — Flats over a store of 1900 in the Counterculture Historic District, tied — disputedly — to Jimi Hendrix.
 - [1535–1541](1535/) — A 1907 4-unit building with a ground-floor store in the Haight Ashbury Counterculture Historic District, with a kitchen remodel permitted in 2012.
 - [1542](1542/) — A 1927 store building in the Haight Ashbury Counterculture Historic District, with fire repair permitted in 1997.
 - [1601–1621](1601/) — A 1904 store building in the Haight Ashbury Counterculture Historic District, with window replacement permitted in 2010.
 - [1677–1681](1677/) — A 1906 three-flat in the Haight Ashbury Counterculture Historic District, with a seismic retrofit permitted in 2017.
+- [1701–1715](1701/) — A 1907 22-unit apartment building in the Haight Ashbury Counterculture Historic District, with reroofing permitted in 2023.
 - [1721–1737](1721/) — A 1910 theater, with a kitchen remodel permitted in 2012.
+- [1726–1748](1726/) — A building in the Haight Ashbury Counterculture Historic District, with window replacement permitted in 1990.
 - [1768–1772](1768/) — A 1900 2-unit building with a ground-floor store in the Haight Ashbury Counterculture Historic District, with a bathroom remodel permitted in 2017.
 - [1778–1784](1778/) — A 1912 store building in the Haight Ashbury Counterculture Historic District, with reroofing permitted in 2016.
 - [1795–1797](1795/) — A 1904 14-unit apartment building, with a seismic retrofit permitted in 2018.

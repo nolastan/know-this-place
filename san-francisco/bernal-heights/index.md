@@ -11,6 +11,7 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [Crescent Avenue](crescent-avenue/) — 1 building, built 1900.
 - [Ellsworth Street](ellsworth-street/) — 1 building, built 1956.
 - [Franconia Street](franconia-street/) — 2 buildings, built 1964–1965.
+- [Genebern Way](genebern-way/) — 1 building, built 1925.
 - [Highland Avenue](highland-avenue/) — 1 building, built 1915.
 - [Justin Drive](justin-drive/) — 1 building; 1 in the Midcentury Recreation Historic District (Discontiguous).
 - [Manchester Street](manchester-street/) — 1 building, built 1981.

@@ -1,0 +1,131 @@
+{
+  "address": "87 Tingley Street, San Francisco, CA 94112",
+  "path": "/san-francisco/mission/tingley-street/87/",
+  "apn": "6799022",
+  "block": "6799",
+  "lot": "022",
+  "eas_baseid": "407987",
+  "coordinates": {
+    "lat": 37.72893,
+    "lng": -122.433728
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1996,
+    "basement_area_sqft": 493,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Mission Terrace",
+    "analysis_neighborhood": "Outer Mission",
+    "property_location_raw": "0000 0087 TINGLEY             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 76175,
+    "assessed_improvement_value": 380998
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201810223776",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-10-22",
+      "status_date": "2018-11-06",
+      "estimated_cost": 10300,
+      "revised_cost": 10300,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200401123795",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-01-12",
+      "status_date": "2004-03-29",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew for 200012087540 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200012087540",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2000-12-08",
+      "status_date": "2001-11-14",
+      "estimated_cost": 120000,
+      "revised_cost": 120000,
+      "description": "add a family room, 2 bedrooms & a bath. on 2 levels at rear of house.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8813786",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-09-14",
+      "status_date": "1989-02-16",
+      "estimated_cost": 3000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TINGLEY&street_type=ST&address_number=87",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6799022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6799&lot=022",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6799022",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "digitalsf-33831",
+      "name": "87 Tingley, 1954. San Francisco Subjects Photograph Collection (SFP 162), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/33831",
+      "label": "San Francisco Subjects Photograph Collection (SFP 162), San Francisco Public Library",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1954-04-09",
+      "kind": "photograph",
+      "description": "Photographed.",
+      "source": "digitalsf-33831"
+    }
+  ]
+}

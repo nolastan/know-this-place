@@ -5,6 +5,7 @@ The parcels on 44th Avenue documented here so far, from the city's address, asse
 ## Documented so far
 
 - [1482](1482/) — A 1946 single-family house, with fire repair permitted in 2024.
+- [1717–1775](1717/) — A 1951 school building, with one permit record from 2001.
 - [2111](2111/) — A 1941 single-family house, with reroofing permitted in 1992.
 - [2163](2163/) — A 1941 single-family house, with a rear addition permitted in 2004.
 - [2191](2191/) — A 1941 single-family house, with facade work permitted in 2012.

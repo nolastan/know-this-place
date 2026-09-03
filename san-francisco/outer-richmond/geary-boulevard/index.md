@@ -10,6 +10,7 @@ The parcels on Geary Boulevard documented here so far, from the city's address, 
 - [6210](6210/) — A 1965 church, with garage work permitted in 2019.
 - [6231](6231/) — A 1991 office building, with stair work permitted in 1990.
 - [6300–6312](6300/) — A 1922 20-unit apartment building, with plumbing work permitted in 2023.
+- [6600](6600/) — A 1975 9-unit apartment building, with a seismic retrofit permitted in 2015.
 - [7328](7328/) — A 1919 single-family house, with foundation work permitted in 2012.
 - [7555](7555/) — A 1962 18-unit apartment building, with a seismic retrofit permitted in 2020.
 

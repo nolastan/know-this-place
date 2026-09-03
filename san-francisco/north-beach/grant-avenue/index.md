@@ -27,6 +27,7 @@ The parcels on Grant Avenue documented here so far, from the city's address, ass
 - [952–966](952/) — A 1906 store building in the Chinatown Historic District, with foundation work permitted in 2011.
 - [953–957](953/) — A 1907 7-unit building with a ground-floor store in the Chinatown Historic District, with a seismic retrofit permitted in 1995.
 - [1024–1026](1024/) — A 1908 3-unit building with a ground-floor store in the Chinatown Historic District, with a seismic retrofit permitted in 1994.
+- [1040–1042](1040/) — A 1959 office building in the Chinatown Historic District, with plumbing work permitted in 2009.
 - [1044–1046](1044/) — A 1907 3-unit building with a ground-floor store in the Chinatown Historic District, with reroofing permitted in 2000.
 - [1101–1105](1101/) — A 1906 5-unit apartment building in the Chinatown Historic District, with a seismic retrofit permitted in 2000.
 - [1109](1109/) — A 1907 store building in the Chinatown Historic District, with a seismic retrofit permitted in 1999.

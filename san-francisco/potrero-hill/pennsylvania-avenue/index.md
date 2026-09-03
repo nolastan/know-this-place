@@ -5,6 +5,7 @@ The parcels on Pennsylvania Avenue documented here so far, from the city's addre
 ## Documented so far
 
 - [150](150/) — A 1942 industrial building, with a bathroom remodel permitted in 2008.
+- [300](300/) — A 1900 single-family house, with reroofing permitted in 1995.
 - [301](301/) — A 1906 office building, with window replacement permitted in 1984.
 - [328](328/) — A 1960 10-unit apartment building, with an addition permitted in 2019.
 - [331](331/) — A 1916 building, with a rear addition permitted in 2015.

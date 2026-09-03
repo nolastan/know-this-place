@@ -15,6 +15,7 @@ The parcels on Sansome Street documented here so far, from the city's address, a
 - [343–345](343/) — A 1991 office building, with a rear addition permitted in 1985.
 - [401–405](401/) — A 1906 office building in the Commercial-Leidesdorff Conservation District, with a seismic retrofit permitted in 1993.
 - [407–411](407/) — A 1909 office building in the Commercial-Leidesdorff Conservation District, with a seismic retrofit permitted in 1991.
+- [415–429](415/) — A 1908 office building in the Commercial-Leidesdorff Conservation District, with a kitchen and bathroom remodel permitted in 2008.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

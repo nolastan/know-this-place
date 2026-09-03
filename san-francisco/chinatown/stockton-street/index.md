@@ -9,6 +9,7 @@ The parcels on Stockton Street documented here so far, from the city's address, 
 - [100–130](100/) — A 1974 office building in the Kearny-Market-Mason-Sutter Conservation District, with an addition permitted in 2018.
 - [150](150/) — A department store in the Kearny-Market-Mason-Sutter Conservation District, with reroofing permitted in 2008.
 - [200–212](200/) — A 1987 store building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 2008.
+- [216](216/) — A 1909 store building in the Kearny-Market-Mason-Sutter Conservation District, with stair work permitted in 2000.
 - [218–222](218/) — A 1908 3-unit building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 1985.
 - [345](345/) — A 1972 hotel in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 2013.
 - [417](417/) — A 1907 hotel in the Kearny-Market-Mason-Sutter Conservation District, with stair work permitted in 2018.

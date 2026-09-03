@@ -4,6 +4,7 @@ The parcels on Vallejo Street documented here so far, from the city's address, a
 
 ## Documented so far
 
+- [100](100/) — A 1900 office building in the Northeast Waterfront Historic District, with a kitchen remodel permitted in 2021.
 - [245](245/) — A 1900 office building in the Northeast Waterfront Historic District, with a seismic retrofit permitted in 2003.
 - [407](407/) — A 1906 single-family house, with deck work permitted in 2019.
 - [471–477](471/) — A 1906 8-unit apartment building, with a kitchen and bathroom remodel permitted in 2019.

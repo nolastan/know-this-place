@@ -43,6 +43,7 @@ Every residential parcel on Mission Street that the city's address, assessor and
 - [1939–1943](1939/) — A 1908 hotel, with plumbing work permitted in 2023.
 - [1945–1947](1945/) — A 1900 3-unit building with a ground-floor store, with fire repair permitted in 1996.
 - [1950–1954](1950/) — An apartment building, with a bathroom remodel permitted in 2015.
+- [1968–1984](1968/) — A 1924 office building, with a seismic retrofit permitted in 2002.
 - [1979](1979/) — A 1909 20-unit building, with facade work permitted in 2011.
 - [2001–2017](2001/) — A 1916 store building, with window replacement permitted in 2006.
 - [2023–2045](2023/) — A 1981 132-unit apartment building, with facade work permitted in 2016.
@@ -112,10 +113,13 @@ Every residential parcel on Mission Street that the city's address, assessor and
 - [2525–2529](2525/) — A 1925 assessor class: vacant lot, with permit records from 1982 to 2012.
 - [2550](2550/) — A 1907 theater in the San Francisco Neighborhood Movie Theater Historic District (Discontiguous), with a kitchen remodel permitted in 2013.
 - [2555–2557](2555/) — A 1912 theater, with a bathroom remodel permitted in 2023.
+- [2565](2565/) — A 1906 store building, with a kitchen remodel permitted in 1998.
+- [2577–2581](2577/) — A 1906 store building, with reroofing permitted in 1999.
 - [2589–2595](2589/) — A 1926 store building, with facade work permitted in 2009.
 - [2600](2600/) — A 1920 store building, with reroofing permitted in 2000.
 - [2601](2601/) — A 1962 office building, with a bathroom remodel permitted in 2003.
 - [2619–2629](2619/) — A 1904 38-unit apartment building, with stair work permitted in 2022.
+- [2620–2622](2620/) — A 1907 office building, with reroofing permitted in 1994.
 - [2637–2645](2637/) — A 1904 11-unit apartment building, with a kitchen and bathroom remodel permitted in 2017.
 - [2647–2653](2647/) — A 1900 24-unit apartment building, with a seismic retrofit permitted in 2017.
 - [2663–2665](2663/) — A 1940 theater in the San Francisco Neighborhood Movie Theater Historic District (Discontiguous), with plumbing work permitted in 2009.
@@ -164,11 +168,13 @@ Every residential parcel on Mission Street that the city's address, assessor and
 - [3468–3470](3468/) — A 1904 5-unit building with a ground-floor store, with a seismic retrofit permitted in 2021.
 - [3743](3743/) — A 1926 industrial building, with permit records from 1992 to 2023.
 - [3771](3771/) — A 1912 store building, with a rear addition permitted in 1991.
+- [4080](4080/) — A 1954 building, with reroofing permitted in 1995.
 - [4352](4352/) — A 1916 store building, with reroofing permitted in 2008.
 - [4430–4434](4430/) — A 1924 store building, with reroofing permitted in 2019.
 - [4490–4492](4490/) — A 1918 2-unit building with a ground-floor store, with an addition permitted in 2019.
 - [4494](4494/) — A 1910 store building, with one permit record from 2026.
 - [4531](4531/) — A 1900 2-unit building with a ground-floor store, with reroofing permitted in 1997.
+- [4535–4537](4535/) — A 1923 3-unit building with a ground-floor store, with reroofing permitted in 1994.
 - [4600](4600/) — A 1928 store building, with a rear addition permitted in 1997.
 - [4631](4631/) — A 1922 store building, with plumbing work permitted in 2006.
 - [4680–4690](4680/) — A 1949 store building, with deck work permitted in 2017.

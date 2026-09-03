@@ -34,6 +34,7 @@ The parcels on Pacific Avenue documented here so far, from the city's address, a
 - [895](895/) — A 1950 60-unit apartment building, with window replacement permitted in 2010.
 - [923–927](923/) — A 1916 3-unit building with a ground-floor store, with an accessory dwelling unit permitted in 2020.
 - [990](990/) — A 1969 garage, with a seismic retrofit permitted in 2015.
+- [1062–1064](1062/) — A 1900 four-flat, with reroofing permitted in 2011.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

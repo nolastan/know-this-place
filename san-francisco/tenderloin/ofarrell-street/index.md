@@ -4,6 +4,7 @@ The parcels on Ofarrell Street documented here so far, from the city's address, 
 
 ## Documented so far
 
+- [111](111/) — A 1989 store building in the Kearny-Market-Mason-Sutter Conservation District, with electrical work permitted in 2010.
 - [165](165/) — A 1908 office building in the Kearny-Market-Mason-Sutter Conservation District, with a kitchen remodel permitted in 2015.
 - [180–190](180/) — A 1910 hotel in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 2000.
 - [201–219](201/) — A 1907 building in the Kearny-Market-Mason-Sutter Conservation District, with stair work permitted in 2005.
@@ -16,6 +17,7 @@ The parcels on Ofarrell Street documented here so far, from the city's address, 
 - [433–445](433/) — A 1907 hotel in the Uptown Tenderloin Historic District, with a kitchen and bathroom remodel permitted in 2016.
 - [434–436](434/) — A 1910 office building in the Uptown Tenderloin Historic District, with plumbing work permitted in 2002.
 - [438](438/) — A 1910 hotel in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 1995.
+- [450–478](450/) — A 1923 church in the Uptown Tenderloin Historic District, with deck work permitted in 2010.
 - [474–480](474/) — A 1913 store building in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 2002.
 - [498](498/) — A 1908 hotel in the Uptown Tenderloin Historic District, with reroofing permitted in 1986.
 - [516](516/) — A 1912 hotel in the Uptown Tenderloin Historic District, with window replacement permitted in 2015.

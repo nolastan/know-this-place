@@ -12,6 +12,7 @@ The parcels on Tennessee Street documented here so far, from the city's address,
 - [760](760/) — A 1956 industrial building the 2001 Dogpatch survey counted a non-contributor to the proposed historic district.
 - [780](780/) — A 1955 industrial building the 2001 Dogpatch survey counted a non-contributor to the proposed historic district.
 - [790](790/) — A 1954 industrial building the 2001 Dogpatch survey counted a non-contributor to the proposed historic district.
+- [888–890](888/) — A 1953 industrial building in the Dogpatch Historic District, with facade work permitted in 2019.
 - [909](909/) — Fire Station No. 16, a brick firehouse of 1925 by City Architect John Reid, Jr.
 - [970](970/) — The Taylor Machine Shop, a Streamline Moderne industrial building of 1935 on the corner of Minnesota Street.
 - [991](991/) — A 1933 industrial building, remodeled as live-work and counted a non-contributor by the 2001 Dogpatch survey.

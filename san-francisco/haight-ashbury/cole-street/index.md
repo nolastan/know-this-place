@@ -4,6 +4,7 @@ The parcels on Cole Street documented here so far, from the city's address, asse
 
 ## Documented so far
 
+- [400–410](400/) — A 1900 7-unit apartment building in the Panhandle Historic District, with a kitchen and bathroom remodel permitted in 2010.
 - [401–411](401/) — A 1907 8-unit apartment building in the Panhandle Historic District, with a kitchen and bathroom remodel permitted in 2016.
 - [636–638 Cole Street](636/) — A two-flat 1903 building whose front parapet came off as an emergency hazard in 1996; linked to Charles Manson in 1967.
 - [840–844](840/) — A 1910 4-unit apartment building in the Cole Valley Historic District, with electrical work permitted in 2016.

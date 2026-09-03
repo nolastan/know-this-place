@@ -4,23 +4,38 @@ Every residential parcel on 14th Street that the city's address, assessor and pe
 
 ## Documented so far
 
+- [25](25/) — A 1924 industrial building, with a seismic retrofit permitted in 2005.
+- [41](41/) — A 1953 industrial building, with reroofing permitted in 2008.
 - [64–66](64/) — A 1907 2-unit building with a ground-floor store, with a bathroom remodel permitted in 2009.
+- [70](70/) — A 1945 industrial building, with a seismic retrofit permitted in 2007.
 - [74–76](74/) — A 1919 building, with garage work permitted in 2017.
+- [75](75/) — A 1927 industrial building, with an addition permitted in 2016.
+- [81](81/) — A 1906 industrial building.
+- [82](82/) — A 1915 store building, with an addition permitted in 2026.
 - [85](85/) — A 1914 6-unit apartment building, with fire repair permitted in 1984.
+- [150](150/) — A 1900 assessor class: parking lot, with electrical work permitted in 2025.
 - [155](155/) — A 1975 building with a ground-floor store, with window replacement permitted in 2005.
+- [160–162](160/) — A 1955 warehouse, with a kitchen remodel permitted in 1992.
+- [164](164/) — A 1923 industrial building, with fire repair permitted in 2026.
 - [171–173](171/) — A 1913 industrial building, with reroofing permitted in 2002.
+- [174](174/) — A 1927 industrial building, with window replacement permitted in 2015.
 - [177](177/) — A 1907 4-unit apartment building, with deck work permitted in 2013.
 - [181–199](181/) — A 1909 16-unit apartment building, with a seismic retrofit permitted in 2018.
 - [212](212/) — A 1909 three-flat.
 - [215–217](215/) — A 1906 hotel, with a seismic retrofit permitted in 2017.
 - [221–225](221/) — A 1908 three-flat, with stair work permitted in 2006.
+- [224](224/) — A 1965 building, with reroofing permitted in 2023.
 - [233–237](233/) — A 1907 4-unit apartment building, with a kitchen remodel permitted in 2016.
 - [245–249](245/) — A 1906 6-unit apartment building, with fire repair permitted in 1991.
+- [250–252](250/) — A 1923 industrial building, with permit records from 1991 to 2008.
+- [256](256/) — A 1943 industrial building, with one permit record from 2010.
 - [257–261](257/) — A 1908 6-unit apartment building, with a seismic retrofit permitted in 2016.
 - [266–270](266/) — A 1924 building, with a kitchen and bathroom remodel permitted in 2006.
 - [277–285](277/) — A 1907 22-unit apartment building, with reroofing permitted in 2003.
+- [280](280/) — An industrial building, with a bathroom remodel permitted in 2017.
 - [290–292](290/) — A 1907 9-unit apartment building, with a bathroom remodel permitted in 2011.
 - [320–326](320/) — A 1908 17-unit apartment building in the Woodward St. Romeo Flats Reconstruction Historic District, with an accessory dwelling unit permitted in 2026.
+- [344](344/) — A building, with permit records from 2007 to 2020.
 - [361](361/) — A 1924 20-unit apartment building, with a seismic retrofit permitted in 2017.
 - [375](375/) — A 1925 16-unit apartment building, with window replacement permitted in 2022.
 - [420](420/) — A 1925 10-unit apartment building, with a seismic retrofit permitted in 2015.
@@ -30,6 +45,7 @@ Every residential parcel on 14th Street that the city's address, assessor and pe
 - [439–441](439/) — A 1910 three-flat, with a kitchen and bathroom remodel permitted in 2007.
 - [443–447](443/) — A 1910 three-flat, with permit records from 1979 to 2015.
 - [446–450](446/) — A 1907 three-flat, with a kitchen remodel permitted in 2019.
+- [449](449/) — A 1907 church, with a kitchen and bathroom remodel permitted in 2015.
 - [453–455](453/) — A 1911 6-unit apartment building, with deck work permitted in 1988.
 - [454](454/) — A 1908 two-flat, with an addition permitted in 2025.
 - [456](456/) — A 1926 9-unit apartment building, with fire repair permitted in 2007.

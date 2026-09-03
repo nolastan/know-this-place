@@ -35,6 +35,7 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [Bird Street](bird-street/) — 4 buildings, built 1900–1966.
 - [Brady Street](brady-street/) — 3 buildings, built 1906–1912; 1 in the Market Street Masonry Historic District.
 - [Brannan Street](brannan-street/) — 1 building, built 1917.
+- [Brazil Avenue](brazil-avenue/) — 1 building, built 1907.
 - [Brosnan Street](brosnan-street/) — 8 buildings, built 1900–1936.
 - [Brunswick Street](brunswick-street/) — 1 building, built 1906.
 - [Bryant Street](bryant-street/) — 196 buildings, built 1890–2023; 28 in the East Mission Florida-to-Hampshire Streets Historic District.
@@ -65,6 +66,7 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [Gough Street](gough-street/) — 6 buildings, built 1906–1947.
 - [Guerrero Street](guerrero-street/) — 276 buildings, built 1873–1989; 37 in the Liberty Hill Historic District.
 - [Hampshire Street](hampshire-street/) — 197 buildings, built 1878–2012; 14 in the Hampshire Street False-Front Historic District.
+- [Hanover Street](hanover-street/) — 1 building, built 1926.
 - [Harrison Street](harrison-street/) — 119 buildings, built 1870–2019; 24 in the South Mission Avenues and Alleys Historic District.
 - [Hidalgo Terrace](hidalgo-terrace/) — 12 buildings, built 1919–1925; 12 in the Hidalgo Terrace Historic District.
 - [Hill Street](hill-street/) — 28 buildings, built 1880–1989; 28 in the Liberty Hill Historic District.
@@ -93,6 +95,7 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [Missouri Street](missouri-street/) — 1 building, built 1922.
 - [Natoma Street](natoma-street/) — 25 buildings, built 1906–1990; 7 in the Western SOMA Light Industrial and Residential Historic District.
 - [Oakwood Street](oakwood-street/) — 20 buildings, built 1900–1988; 1 in the Inner Mission Boulevards and Alleys Reconstruction Historic District.
+- [Ocean Avenue](ocean-avenue/) — 1 building, built 1922.
 - [Orange Alley](orange-alley/) — 1 building, built 1900.
 - [Otis Street](otis-street/) — 6 buildings, built 1909–1926; 1 in the SoMa LGBTQ Historic District.
 - [Pearl Street](pearl-street/) — 17 buildings, built 1906–1926; 15 in the Elgin Park-Pearl Street Reconstruction Historic District.
@@ -111,6 +114,7 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [Spencer Street](spencer-street/) — 1 building, built 1904.
 - [Stevenson Street](stevenson-street/) — 9 buildings, built 1906–1926; 9 in the Jessie-McCoppin-Stevenson Streets Reconstruction Historic District.
 - [Sycamore Street](sycamore-street/) — 14 buildings, built 1906–1928; 11 in the Sycamore Street Reconstruction Historic District.
+- [Tingley Street](tingley-street/) — 1 building, built 1907.
 - [Treat Avenue](treat-avenue/) — 105 buildings, built 1880–1982; 16 in the South Mission Avenues and Alleys Historic District.
 - [Treat Way](treat-way/) — 1 building.
 - [Utah Street](utah-street/) — 72 buildings, built 1890–1978.

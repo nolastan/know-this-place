@@ -20,6 +20,7 @@ The parcels on Geary Boulevard documented here so far, from the city's address, 
 - [5340–5350](5340/) — A 1922 store building, with window replacement permitted in 1992.
 - [5421–5423](5421/) — A 1916 2-unit building with a ground-floor store, with deck work permitted in 2014.
 - [5430–5498](5430/) — A 1916 15-unit building with a ground-floor store, with reroofing permitted in 2008.
+- [5500](5500/) — A 1925 bank building, with reroofing permitted in 2024.
 - [5521–5525](5521/) — A 1923 5-unit building with a ground-floor store, with reroofing permitted in 2017.
 - [5536–5540](5536/) — A 1913 4-unit building with a ground-floor store, with a bathroom remodel permitted in 2011.
 - [5542–5550](5542/) — A 1928 store building, with electrical work permitted in 1989.

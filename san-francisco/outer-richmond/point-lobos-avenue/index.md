@@ -4,6 +4,7 @@ The parcels on Point Lobos Avenue documented here so far, from the city's addres
 
 ## Documented so far
 
+- [25](25/) — A 1996 store building, with reroofing permitted in 1990.
 - [1004](1004/) — A 1900 assessor class: vacant lot.
 
 Pages are generated from the DataSF datasets listed in each page's

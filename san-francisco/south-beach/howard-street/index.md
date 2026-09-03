@@ -4,6 +4,7 @@ The parcels on Howard Street documented here so far, from the city's address, as
 
 ## Documented so far
 
+- [101](101/) — A 1968 office building, with an addition permitted in 2014.
 - [120](120/) — A 1973 office building, with a vertical addition permitted in 2006.
 - [180–182](180/) — A 1981 office building, with reroofing permitted in 2013.
 

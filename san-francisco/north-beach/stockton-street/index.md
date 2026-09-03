@@ -12,6 +12,7 @@ The parcels on Stockton Street documented here so far, from the city's address, 
 - [1700–1704](1700/) — A 1915 5-unit building with a ground-floor store in the Washington Square Historic District, with reroofing permitted in 1994.
 - [1701–1715](1701/) — A 1900 7-unit building with a ground-floor store in the Washington Square Historic District, with reroofing permitted in 1995.
 - [1736](1736/) — A 1907 office building, with reroofing permitted in 2002.
+- [1814](1814/) — A 1900 building, with reroofing permitted in 2012.
 - [1864–1866](1864/) — A 1916 two-flat, with deck work permitted in 2013.
 - [1916–1918](1916/) — A 1940 two-flat, with reroofing permitted in 2004.
 - [1922–1924](1922/) — A 1940 two-flat, with window replacement permitted in 2019.

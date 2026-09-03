@@ -17,6 +17,8 @@ The parcels on Turk Street documented here so far, from the city's address, asse
 - [180–194](180/) — A 1926 134-unit apartment building in the Uptown Tenderloin Historic District, with a kitchen remodel permitted in 2003.
 - [240–242](240/) — A 2008 113-unit apartment building in the Uptown Tenderloin Historic District, with electrical work permitted in 2026.
 - [270–272](270/) — A 1927 86-unit apartment building in the Uptown Tenderloin Historic District, with an accessory dwelling unit permitted in 2017.
+- [323–333](323/) — A 1921 apartment building in the Uptown Tenderloin Historic District, with reroofing permitted in 2013.
+- [350–354](350/) — A 1964 362-unit apartment building in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 2019.
 - [351](351/) — A 1928 231-unit apartment building in the Uptown Tenderloin Historic District, with window replacement permitted in 2020.
 - [416–422](416/) — A 1907 28-unit apartment building in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 1999.
 - [433](433/) — A 1907 office building in the Uptown Tenderloin Historic District, with stair work permitted in 2005.

@@ -4,6 +4,8 @@ The parcels on Sutter Street documented here so far, from the city's address, as
 
 ## Documented so far
 
+- [111](111/) — A 1926 office building, with a seismic retrofit permitted in 2000.
+- [130–150](130/) — A 1917 store building, with plumbing work permitted in 2015.
 - [154–180](154/) — A 1987 office building, with a seismic retrofit permitted in 2000.
 - [165](165/) — Crocker Galleria, whose barrel-vaulted arcade answers Milan's Galleria Vittorio Emanuele II.
 - [209–211](209/) — A 1907 office building in the Kearny-Market-Mason-Sutter Conservation District, with plumbing work permitted in 2012.

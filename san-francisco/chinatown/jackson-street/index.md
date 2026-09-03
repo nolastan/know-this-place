@@ -18,6 +18,7 @@ The parcels on Jackson Street documented here so far, from the city's address, a
 - [604–620](604/) — A 1912 store building in the Chinatown Historic District, with a seismic retrofit permitted in 1997.
 - [614](614/) — A 1907 store building in the Chinatown Historic District, with a seismic retrofit permitted in 1997.
 - [615–617](615/) — A 1907 5-unit building with a ground-floor store in the Chinatown Historic District, with a kitchen remodel permitted in 2018.
+- [626–636](626/) — A 1925 theater in the Chinatown Historic District, with reroofing permitted in 2013.
 - [627–629](627/) — A 1911 hotel in the Chinatown Historic District, with facade work permitted in 2018.
 - [631–641](631/) — A 1907 14-unit apartment building in the Chinatown Historic District, with a kitchen remodel permitted in 1989.
 - [640–648](640/) — A 1908 12-unit apartment building in the Chinatown Historic District, with a kitchen remodel permitted in 1989.
@@ -36,9 +37,11 @@ The parcels on Jackson Street documented here so far, from the city's address, a
 - [741–743](741/) — A 1907 store building in the Chinatown Historic District, with reroofing permitted in 1995.
 - [748–752](748/) — A 1908 21-unit apartment building in the Chinatown Historic District, with reroofing permitted in 2017.
 - [749–757](749/) — An apartment building in the Chinatown Historic District, with a seismic retrofit permitted in 1998.
+- [756–758](756/) — A 1907 store building in the Chinatown Historic District, with a kitchen and bathroom remodel permitted in 2014.
 - [759–777](759/) — A 1907 16-unit apartment building in the Chinatown Historic District, with foundation work permitted in 2007.
 - [768–772](768/) — A 1908 store building in the Chinatown Historic District, with a seismic retrofit permitted in 1997.
 - [821–823](821/) — A 1912 5-unit apartment building in the Chinatown Historic District, with stair work permitted in 2014.
+- [831–845](831/) — A 2016 9-unit building, with foundation work permitted in 2013.
 - [840–846](840/) — A 1910 hotel, with a seismic retrofit permitted in 1996.
 - [855–865](855/) — A 1958 church, with stair work permitted in 2008.
 - [864–872](864/) — A 1927 39-unit apartment building, with a seismic retrofit permitted in 1999.

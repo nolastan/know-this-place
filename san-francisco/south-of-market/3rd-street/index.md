@@ -6,6 +6,7 @@ The parcels on Third Street documented here so far, from the city's address, ass
 
 - [50](50/) — A 1983 hotel, with plumbing work permitted in 2020.
 - [300–350](300/) — A 1990 garage, with reroofing permitted in 2007.
+- [345](345/) — A 1987 411-unit apartment building, with a kitchen remodel permitted in 2017.
 - [360–370](360/) — A 1976 office building, with stair work permitted in 2012.
 - [400–402](400/) — A 1941 assessor class: parking lot, with permit records from 2010 to 2021.
 - [428](428/) — A 1917 industrial building, with a seismic retrofit permitted in 2001.

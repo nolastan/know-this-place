@@ -1,0 +1,140 @@
+{
+  "address": "1900 Pacific Avenue, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/pacific-avenue/1900/",
+  "apn": "0577018",
+  "block": "0577",
+  "lot": "018",
+  "eas_baseid": "285622",
+  "coordinates": {
+    "lat": 37.794659,
+    "lng": -122.426907
+  },
+  "parcel": {
+    "year_built": 1970,
+    "units": 1,
+    "stories": 2,
+    "rooms": 19,
+    "bathrooms": 4,
+    "lot_area_sqft": 19327,
+    "building_area_sqft": 15978,
+    "use": "Commercial Misc",
+    "property_class": "Churches,Convents,Rectories",
+    "construction_type_code": "C",
+    "zoning": "RH-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "0000 1900 PACIFIC             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 793155,
+    "assessed_improvement_value": 2459238
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1970",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201907155935",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-07-15",
+      "status_date": "2019-07-15",
+      "estimated_cost": 152293,
+      "revised_cost": 152000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9721392",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-10-24",
+      "status_date": "2000-01-12",
+      "estimated_cost": 19500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9222408",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1993-01-04",
+      "status_date": "1995-05-31",
+      "estimated_cost": 1300,
+      "description": "ansul system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9215346",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1992-09-08",
+      "status_date": "1993-03-10",
+      "estimated_cost": 2500,
+      "description": "revise 9112694- interior remodel & new elevator, vent system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9112694",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1991-07-18",
+      "status_date": "1994-01-14",
+      "estimated_cost": 375000,
+      "description": "renovate toilets to conform to handicap standards.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PACIFIC&street_type=AVE&address_number=1900",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0577018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0577&lot=018",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0577018",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "digitalsf-33674",
+      "name": "1900 Pacific Avenue, 1960. San Francisco Subjects Photograph Collection (SFP 162), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/33674",
+      "label": "San Francisco Subjects Photograph Collection (SFP 162), San Francisco Public Library",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1960",
+      "kind": "photograph",
+      "description": "Photographed.",
+      "source": "digitalsf-33674"
+    }
+  ],
+  "unknowns": {
+    "rebuilt-since-photograph": "The assessor dates the building to 1970, after this photograph was taken."
+  }
+}

@@ -16,12 +16,14 @@ The parcels on Fillmore Street documented here so far, from the city's address, 
 - [2035–2047](2035/) — A 1926 store building in the Upper Fillmore Neighborhood Commercial Historic District, with stair work permitted in 2016.
 - [2049](2049/) — A 1932 store building in the Upper Fillmore Neighborhood Commercial Historic District, with deck work permitted in 2006.
 - [2050–2066](2050/) — A 1924 18-unit apartment building in the Upper Fillmore Neighborhood Commercial Historic District, with electrical work permitted in 2022.
+- [2100](2100/) — A 1915 bank building in the Upper Fillmore Neighborhood Commercial Historic District, with an addition permitted in 2015.
 - [2101–2117](2101/) — A 1911 52-unit apartment building in the Upper Fillmore Neighborhood Commercial Historic District, with a bathroom remodel permitted in 2023.
 - [2181–2197](2181/) — A 1900 store building in the Upper Fillmore Neighborhood Commercial Historic District, with a bathroom remodel permitted in 2016.
 - [2201](2201/) — A 1913 18-unit apartment building in the Upper Fillmore Neighborhood Commercial Historic District, with a seismic retrofit permitted in 1995.
 - [2220–2222](2220/) — A 1900 3-unit building with a ground-floor store in the Upper Fillmore Neighborhood Commercial Historic District, with a bathroom remodel permitted in 2026.
 - [2226](2226/) — A 1900 store building in the Upper Fillmore Neighborhood Commercial Historic District, with a seismic retrofit permitted in 1994.
 - [2250–2252](2250/) — A 1906 office building in the Upper Fillmore Neighborhood Commercial Historic District, with plumbing work permitted in 2022.
+- [2261](2261/) — A 1913 theater in the San Francisco Neighborhood Movie Theater Historic District (Discontiguous), with a seismic retrofit permitted in 2026.
 - [2318](2318/) — A 1986 store building, with permit records from 1983 to 2023.
 - [2434–2438](2434/) — A 1926 4-unit apartment building in the Upper Fillmore Neighborhood Commercial Historic District, with reroofing permitted in 1994.
 - [2500](2500/) — A 1932 5-unit apartment building, with a seismic retrofit permitted in 2018.

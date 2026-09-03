@@ -8,6 +8,7 @@ The parcels on Polk Street documented here so far, from the city's address, asse
 - [1203](1203/) — A 1907 store building, with stair work permitted in 2002.
 - [1211–1215](1211/) — A 1907 3-unit apartment building, with a seismic retrofit permitted in 1995.
 - [1217–1221](1217/) — A 1906 store building, with reroofing permitted in 2022.
+- [1233](1233/) — A hotel, with window replacement permitted in 2005.
 - [1237–1239](1237/) — A 1907 store building, with a kitchen remodel permitted in 2005.
 - [1245–1247](1245/) — A 1907 2-unit building with a ground-floor store, with a seismic retrofit permitted in 1993.
 - [1255–1259](1255/) — A 1907 hotel, with facade work permitted in 2025.

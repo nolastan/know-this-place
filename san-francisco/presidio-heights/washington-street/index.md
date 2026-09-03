@@ -24,6 +24,7 @@ The parcels on Washington Street documented here so far, from the city's address
 - [3760](3760/) — A 1926 single-family house in the Presidio Heights Historic District, with an addition permitted in 2018.
 - [3778](3778/) — A 1950 single-family house in the Presidio Heights Historic District, with reroofing permitted in 2004.
 - [3799](3799/) — A 1927 single-family house in the Presidio Heights Historic District, with garage work permitted in 2000.
+- [3800](3800/) — A 1904 single-family house in the Presidio Heights Historic District, with a kitchen remodel permitted in 2019.
 - [3820](3820/) — A 1904 single-family house in the Presidio Heights Historic District, with stair work permitted in 1997.
 - [3903](3903/) — A 1922 single-family house in the Presidio Heights Historic District, with foundation work permitted in 2018.
 - [3935](3935/) — A 1927 single-family house in the Presidio Heights Historic District, with facade work permitted in 2019.

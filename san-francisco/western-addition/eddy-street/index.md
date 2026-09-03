@@ -7,7 +7,9 @@ The parcels on Eddy Street documented here so far, from the city's address, asse
 - [951](951/) — A 1900 26-unit apartment building, with reroofing permitted in 2015.
 - [1400](1400/) — A 1996 1-unit apartment building, with permit records from 1992 to 1995.
 - [1624–1690](1624/) — A 1900 building, with a kitchen and bathroom remodel permitted in 2010.
+- [1800](1800/) — A 1988 5-unit apartment building, with a rear addition permitted in 1986.
 - [1820](1820/) — A 1900 church, with a kitchen remodel permitted in 2007.
+- [1840](1840/) — An 1874 single-family house, with a rear addition permitted in 1990.
 - [1989](1989/) — A 1980 building, with facade work permitted in 2023.
 
 Pages are generated from the DataSF datasets listed in each page's

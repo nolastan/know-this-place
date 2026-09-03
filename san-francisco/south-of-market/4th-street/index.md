@@ -21,6 +21,7 @@ The parcels on Fourth Street documented here so far, from the city's address, as
 - [370](370/) — A 1924 industrial building, with a seismic retrofit permitted in 2007.
 - [390](390/) — A 1924 industrial building, with window replacement permitted in 2024.
 - [401–425](401/) — An assessor class: vacant lot in the SoMa LGBTQ Historic District, with foundation work permitted in 2010.
+- [420](420/) — A 1900 assessor class: vacant lot.
 - [475](475/) — A 1924 industrial building, with a seismic retrofit permitted in 1991.
 - [500–504](500/) — A 1908 hotel, with a seismic retrofit permitted in 2019.
 - [508–514](508/) — A 1925 store building, with plumbing work permitted in 2016.

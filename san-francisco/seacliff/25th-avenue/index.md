@@ -4,6 +4,7 @@ The parcels on 25th Avenue documented here so far, from the city's address, asse
 
 ## Documented so far
 
+- [50](50/) — A 1913 single-family house in the Sea Cliff Historic District, with an addition permitted in 2005.
 - [70](70/) — A 1924 single-family house in the Sea Cliff Historic District, with a seismic retrofit permitted in 2025.
 
 Pages are generated from the DataSF datasets listed in each page's
