@@ -5,6 +5,7 @@ The parcels on Langton Street documented here so far, from the city's address, a
 ## Documented so far
 
 - [74](74/) — A 1908 industrial building in the Western SOMA Light Industrial and Residential Historic District, with a bathroom remodel permitted in 2011.
+- [110](110/) — A 1906 two-flat, with reroofing permitted in 1987.
 - [343](343/) — A 1975 industrial building, with a seismic retrofit permitted in 2015.
 - [360](360/) — A 1928 industrial building, with stair work permitted in 1999.
 

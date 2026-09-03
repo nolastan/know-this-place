@@ -15,6 +15,7 @@ The wide blocks west of Fourth Street, between Market and Harrison. Coverage her
 - [Clara Street](clara-street/) — 29 buildings, built 1906–1991.
 - [Clementina Street](clementina-street/) — 16 buildings, built 1909–2008.
 - [Clyde Street](clyde-street/) — 4 buildings, built 1923; 4 in the Clyde and Crooks Historic District.
+- [Columbia Square Street](columbia-square-street/) — 1 building, built 1921.
 - [Converse Street](converse-street/) — 1 building, built 1924.
 - [Decatur Street](decatur-street/) — 5 buildings, built 1900–1918.
 - [Division Street](division-street/) — 1 building, built 1924.
@@ -45,6 +46,7 @@ The wide blocks west of Fourth Street, between Market and Harrison. Coverage her
 - [Ninth Street](9th-street/) — 2 buildings, built 2011–2014.
 - [Oak Grove Street](oak-grove-street/) — 5 buildings, built 1926–1988.
 - [Perry Street](perry-street/) — 1 building.
+- [Rausch Street](rausch-street/) — 1 building, built 1914; 1 in the Western SOMA Light Industrial and Residential Historic District.
 - [Ritch Street](ritch-street/) — 8 buildings, built 1902–1955; 5 in the Clyde and Crooks Historic District.
 - [Rizal Street](rizal-street/) — 3 buildings, built 1979–1982.
 - [Rodgers Street](rodgers-street/) — 1 building, built 1914; 1 in the Western SOMA Light Industrial and Residential Historic District.

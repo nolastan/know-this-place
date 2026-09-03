@@ -15,7 +15,11 @@ The parcels on Minna Street documented here so far, from the city's address, ass
 - [481](481/) — A 1912 hotel, with a seismic retrofit permitted in 1995.
 - [535–539](535/) — A 2000 26-unit apartment building, with window replacement permitted in 1998.
 - [551](551/) — A 1946 office building, with plumbing work permitted in 2011.
+- [653](653/) — A 1915 three-flat in the Western SOMA Light Industrial and Residential Historic District, with a seismic retrofit permitted in 2010.
 - [672](672/) — A 1910 12-unit apartment building, with permit records from 1988 to 1996.
+- [679–681](679/) — A 1916 two-flat in the Western SOMA Light Industrial and Residential Historic District, with window replacement permitted in 1991.
+- [747–751](747/) — A 1907 4-unit apartment building in the Western SOMA Light Industrial and Residential Historic District, with fire repair permitted in 2025.
+- [775–795](775/) — A 1906 11-unit apartment building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 1991.
 - [909–911](909/) — A 1909 industrial building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 1992.
 - [973](973/) — A 1938 industrial building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 1991.
 

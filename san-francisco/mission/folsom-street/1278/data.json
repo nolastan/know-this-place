@@ -1,0 +1,128 @@
+{
+  "address": "1278–1282 Folsom Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/folsom-street/1278/",
+  "apn": "3729020",
+  "block": "3729",
+  "lot": "020",
+  "eas_baseid": "456426",
+  "coordinates": {
+    "lat": 37.774202,
+    "lng": -122.411485
+  },
+  "address_range": "1278–1282",
+  "street_numbers_on_parcel": [
+    "1278",
+    "1282"
+  ],
+  "parcel": {
+    "year_built": 1923,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "lot_area_sqft": 4500,
+    "building_area_sqft": 5829,
+    "lot_depth_ft": 90,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "SLR",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "1282 1278 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 327552,
+    "assessed_improvement_value": 102428
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Western SOMA Light Industrial and Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1936",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "9708458",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-05-09",
+      "status_date": "1997-05-29",
+      "estimated_cost": 21450,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9618146",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-09-26",
+      "status_date": "1997-04-29",
+      "estimated_cost": 21450,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=1278",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3729020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3729&lot=020",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3729020",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41148496135072%2037.77420221887099)%27)",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "south-of-market-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, prepared for Page & Turnbull, Inc., South of Market Area Historic Context Statement, FINAL, 30 June 2009, adopted 2011",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/372-SOMA_Historic_Context_Statement_06-30-2009.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "South of Market Area Historic Context Statement, adopted 2011",
+      "retrieved": "2026-09-03"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1923",
+      "kind": "construction",
+      "description": "Designed by architect James H. Hjul, built on speculation for the Helbing Company.",
+      "source": "south-of-market-context-statement",
+      "date_precision": "year"
+    }
+  ]
+}

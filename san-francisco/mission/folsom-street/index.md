@@ -8,6 +8,8 @@ Every residential parcel on Folsom Street that the city's address, assessor and 
 - [1246](1246/) — A 1916 industrial building in the Western SOMA Light Industrial and Residential Historic District, with permit records from 1983 to 2014.
 - [1250](1250/) — A 1923 office building in the SoMa LGBTQ Historic District, with deck work permitted in 2003.
 - [1257](1257/) — A 1923 industrial building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 1997.
+- [1275](1275/) — A 1936 industrial building in the Western SOMA Light Industrial and Residential Historic District, with facade work permitted in 2020.
+- [1278–1282](1278/) — A 1923 industrial building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 1997.
 - [1346](1346/) — A 2005 98-unit apartment building in the Western SOMA Light Industrial and Residential Historic District, with a seismic retrofit permitted in 2001.
 - [1347–1349](1347/) — A flats building in the SoMa LGBTQ Historic District, with plumbing work permitted in 1994.
 - [1365–1369](1365/) — A 1907 three-flat in the SoMa LGBTQ Historic District, with electrical work permitted in 2008.

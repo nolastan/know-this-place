@@ -14,6 +14,7 @@ The parcels on Howard Street documented here so far, from the city's address, as
 - [855](855/) — A 1922 store building, with a kitchen remodel permitted in 1996.
 - [861–899](861/) — A 1920 office building with ground-floor retail, with an addition permitted in 2010.
 - [888](888/) — A 2008 hotel, with window replacement permitted in 2017.
+- [915–921](915/) — A 2023 204-unit apartment building, with stair work permitted in 1993.
 - [925](925/) — A 1906 3-unit building with a ground-floor store, with deck work permitted in 2021.
 - [927](927/) — A 1923 industrial building, with reroofing permitted in 2021.
 - [933–935](933/) — A 1907 industrial building, with a kitchen and bathroom remodel permitted in 2024.
@@ -38,6 +39,7 @@ The parcels on Howard Street documented here so far, from the city's address, as
 - [1035](1035/) — A 1930 assessor class: vacant lot in the Western SOMA Light Industrial and Residential Historic District, with facade work permitted in 2026.
 - [1040–1042](1040/) — A 1914 9-unit apartment building, with a bathroom remodel permitted in 1985.
 - [1061](1061/) — A 1925 industrial building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 2000.
+- [1069–1073](1069/) — A 1927 industrial building in the Western SOMA Light Industrial and Residential Historic District, with window replacement permitted in 1998.
 - [1098](1098/) — A 1991 store building, with permit records from 2007 to 2021.
 - [1137–1139](1137/) — A 1924 office building in the Western SOMA Light Industrial and Residential Historic District, with a kitchen remodel permitted in 2018.
 - [1144](1144/) — A 1921 industrial building in the Western SOMA Light Industrial and Residential Historic District, with permit records from 1982 to 2019.
@@ -51,6 +53,7 @@ The parcels on Howard Street documented here so far, from the city's address, as
 - [1350](1350/) — A 1923 industrial building in the Western SOMA Light Industrial and Residential Historic District, with electrical work permitted in 2021.
 - [1380](1380/) — A 1928 industrial building in the Western SOMA Light Industrial and Residential Historic District, with a bathroom remodel permitted in 2008.
 - [1401](1401/) — A 1913 office building in the Western SOMA Light Industrial and Residential Historic District, with window replacement permitted in 2016.
+- [1415](1415/) — A 1908 school building in the Western SOMA Light Industrial and Residential Historic District, with a seismic retrofit permitted in 2016.
 - [1419](1419/) — A 1902 church in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 2014.
 - [1434–1436](1434/) — A 1924 industrial building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 2006.
 - [1450](1450/) — A 1900 industrial building in the Western SOMA Light Industrial and Residential Historic District, with fire repair permitted in 1991.

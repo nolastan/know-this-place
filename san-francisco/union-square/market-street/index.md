@@ -5,6 +5,7 @@ The parcels on Market Street documented here so far, from the city's address, as
 ## Documented so far
 
 - [720](720/) — A 1990 office building in the Kearny-Market-Mason-Sutter Conservation District, with electrical work permitted in 2013.
+- [722–742](722/) — A 1912 office building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 2007.
 - [750–780](750/) — A 1908 office building in the Kearny-Market-Mason-Sutter Conservation District, with stair work permitted in 2018.
 
 Pages are generated from the DataSF datasets listed in each page's

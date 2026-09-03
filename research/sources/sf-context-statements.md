@@ -5,7 +5,7 @@
 >
 > - **Kind:** PDF reports (SF Planning) · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 44 documents plus the 81-PDF DPR 523 survey-forms page read and
+> - **Coverage:** 45 documents plus the 81-PDF DPR 523 survey-forms page read and
 >   listed below; the rest are one open GitHub issue each. The biographies
 >   collection is finished — all eight volumes read.
 > - **Local corpus:** `research/corpora/sf-context-statements/`
@@ -21,9 +21,9 @@ document you are about to mine.
 
 | | |
 |---|---|
-| **Read in full** | 44 documents — listed under "Read into the repo so far" below, each with its own notes section. **The count is the length of that list**, checked on 2026-09-02. The biographies collection is **one entry for eight PDFs**, so finishing it — volumes S–U and V–Z on 2026-09-02 — did not change it. If you add a document, add it to the list and count the list. |
-| **Findings files** | 43: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 552 published on 351 pages, 1 declined, 77 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved) [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved) [`transit-center-district-survey`](../findings/sf-context-statements/transit-center-district-survey.json) (316 findings, 211 published on 123 pages, 50 declined, 55 unresolved) [`showplace-square-survey`](../findings/sf-context-statements/showplace-square-survey.json) (941 findings, 576 published on 314 pages, 247 declined, 118 unresolved) [`sunset-builders-hcs`](../findings/sf-context-statements/sunset-builders-hcs.json) (158 findings, 143 published on 143 pages, 1 declined, 14 unresolved) [`ppie-marina-hcs`](../findings/sf-context-statements/ppie-marina-hcs.json) (109 findings, 86 published on 86 pages, 2 declined, 21 unresolved) and [`earthquake-shacks`](../findings/sf-context-statements/earthquake-shacks.json) (11 findings, 5 published on 5 pages, 1 declined, 5 unresolved) and [`neighborhood-commercial-hcs`](../findings/sf-context-statements/neighborhood-commercial-hcs.json) (99 findings, 76 published on 75 pages, 7 declined, 16 unresolved) and [`large-apartment-hcs`](../findings/sf-context-statements/large-apartment-hcs.json) (89 findings, 58 published on 52 pages, 14 declined, 17 unresolved) and [`flats-small-apartments-hcs`](../findings/sf-context-statements/flats-small-apartments-hcs.json) (72 findings, 52 published on 52 pages, 1 declined, 19 unresolved). and [`umb-survey`](../findings/sf-context-statements/umb-survey.json) (200 findings, 159 published on 159 pages, 8 declined, 33 unresolved) and [`umb-survey-ratings`](../findings/sf-context-statements/umb-survey-ratings.json) (1,902 findings, 1,451 published on 1,433 pages, 50 declined, 401 unresolved) and [`new-deal-hcs`](../findings/sf-context-statements/new-deal-hcs.json) (138 findings, 99 published on 76 pages, 2 declined, 37 unresolved, 3 rejected) and [`african-american-hcs`](../findings/sf-context-statements/african-american-hcs.json) (248 findings, 180 published on 174 pages, 5 declined, 64 unresolved) and [`lgbtq-hcs`](../findings/sf-context-statements/lgbtq-hcs.json) (382 findings, 289 published on 280 pages, 18 declined, 75 unresolved) and [`russian-american-hcs`](../findings/sf-context-statements/russian-american-hcs.json) (365 findings, 177 published on 162 pages, 22 declined, 166 unresolved). and [`victorian-era-styles`](../findings/sf-context-statements/victorian-era-styles.json) (45 findings, 37 published on 37 pages, 6 declined, 2 unresolved) and [`progressive-era-styles`](../findings/sf-context-statements/progressive-era-styles.json) (69 findings, 63 published on 62 pages, 1 declined, 4 unresolved, 1 rejected) and [`early-settlement-era-styles`](../findings/sf-context-statements/early-settlement-era-styles.json) (32 findings, 29 published on 28 pages, 1 declined, 1 unresolved, 1 rejected) and [`modernistic-styles`](../findings/sf-context-statements/modernistic-styles.json) (25 findings, 20 published on 20 pages, 3 declined, 2 unresolved) and [`modern-postmodern-styles`](../findings/sf-context-statements/modern-postmodern-styles.json) (224 findings, 182 published on 177 pages, 7 declined, 35 unresolved) and [`biographies-a-c`](../findings/sf-context-statements/biographies-a-c.json) (412 findings, 317 published on 312 pages, 36 declined, 59 unresolved) and [`biographies-d-f`](../findings/sf-context-statements/biographies-d-f.json) (208 findings, 137 published on 137 pages, 53 declined, 18 unresolved). and [`early-residential-development`](../findings/sf-context-statements/early-residential-development.json) (26 findings, 18 published on 18 pages, 8 declined, 0 unresolved). and [`soma-filipino-heritage`](../findings/sf-context-statements/soma-filipino-heritage.json) (120 findings, 71 published on 62 pages, 16 declined, 33 unresolved) and [`clubs-social-halls`](../findings/sf-context-statements/clubs-social-halls.json) (53 findings, 38 published on 41 pages, 7 declined, 8 unresolved) and [`modern-architecture-landscape`](../findings/sf-context-statements/modern-architecture-landscape.json) (466 findings, 273 published on 268 pages, 144 declined, 49 unresolved). and [`sexual-identity-subcultures`](../findings/sf-context-statements/sexual-identity-subcultures.json) (188 findings, 114 published on 63 pages, 34 declined, 39 unresolved, 1 rejected) and [`counterculture-hcs`](../findings/sf-context-statements/counterculture-hcs.json) (111 findings, 72 published on 71 pages, 7 declined, 12 unresolved, 20 rejected) and [`lgbtq-heritage-strategy`](../findings/sf-context-statements/lgbtq-heritage-strategy.json) (0 findings — a policy document with no address-level content). and [`biographies-g-i`](../findings/sf-context-statements/biographies-g-i.json) (176 findings, 115 published on 115 pages, 30 declined, 31 unresolved). and [`biographies-j-l`](../findings/sf-context-statements/biographies-j-l.json) (125 findings, 91 published on 90 pages, 14 declined, 20 unresolved). and [`biographies-m-o`](../findings/sf-context-statements/biographies-m-o.json) (247 findings, 158 published on 157 pages, 54 declined, 35 unresolved). and [`biographies-p-r`](../findings/sf-context-statements/biographies-p-r.json) (223 findings, 126 published on 125 pages, 61 declined, 36 unresolved). and [`biographies-s-u`](../findings/sf-context-statements/biographies-s-u.json) (152 findings, 75 published on 74 pages, 35 declined, 39 unresolved, 3 rejected). and [`biographies-v-z`](../findings/sf-context-statements/biographies-v-z.json) (96 findings, 43 published on 43 pages, 39 declined, 13 unresolved, 1 rejected). All forty-three loops closed. |
-| **Remaining** | 2 adopted statements — the South of Market statement (#59, `needs-human`) and the Market & Octavia survey (#115, still to acquire). That is the whole queue: **the eight-volume professionals biographies collection is finished**, so nothing in this source can be started without a person. Search open issues for `sf-context-statements`. |
+| **Read in full** | 45 documents — listed under "Read into the repo so far" below, each with its own notes section. **The count is the length of that list**, checked on 2026-09-02. The biographies collection is **one entry for eight PDFs**, so finishing it — volumes S–U and V–Z on 2026-09-02 — did not change it. If you add a document, add it to the list and count the list. |
+| **Findings files** | 44: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 552 published on 351 pages, 1 declined, 77 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved) [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved) [`transit-center-district-survey`](../findings/sf-context-statements/transit-center-district-survey.json) (316 findings, 211 published on 123 pages, 50 declined, 55 unresolved) [`showplace-square-survey`](../findings/sf-context-statements/showplace-square-survey.json) (941 findings, 576 published on 314 pages, 247 declined, 118 unresolved) [`sunset-builders-hcs`](../findings/sf-context-statements/sunset-builders-hcs.json) (158 findings, 143 published on 143 pages, 1 declined, 14 unresolved) [`ppie-marina-hcs`](../findings/sf-context-statements/ppie-marina-hcs.json) (109 findings, 86 published on 86 pages, 2 declined, 21 unresolved) and [`earthquake-shacks`](../findings/sf-context-statements/earthquake-shacks.json) (11 findings, 5 published on 5 pages, 1 declined, 5 unresolved) and [`neighborhood-commercial-hcs`](../findings/sf-context-statements/neighborhood-commercial-hcs.json) (99 findings, 76 published on 75 pages, 7 declined, 16 unresolved) and [`large-apartment-hcs`](../findings/sf-context-statements/large-apartment-hcs.json) (89 findings, 58 published on 52 pages, 14 declined, 17 unresolved) and [`flats-small-apartments-hcs`](../findings/sf-context-statements/flats-small-apartments-hcs.json) (72 findings, 52 published on 52 pages, 1 declined, 19 unresolved). and [`umb-survey`](../findings/sf-context-statements/umb-survey.json) (200 findings, 159 published on 159 pages, 8 declined, 33 unresolved) and [`umb-survey-ratings`](../findings/sf-context-statements/umb-survey-ratings.json) (1,902 findings, 1,451 published on 1,433 pages, 50 declined, 401 unresolved) and [`new-deal-hcs`](../findings/sf-context-statements/new-deal-hcs.json) (138 findings, 99 published on 76 pages, 2 declined, 37 unresolved, 3 rejected) and [`african-american-hcs`](../findings/sf-context-statements/african-american-hcs.json) (248 findings, 180 published on 174 pages, 5 declined, 64 unresolved) and [`lgbtq-hcs`](../findings/sf-context-statements/lgbtq-hcs.json) (382 findings, 289 published on 280 pages, 18 declined, 75 unresolved) and [`russian-american-hcs`](../findings/sf-context-statements/russian-american-hcs.json) (365 findings, 177 published on 162 pages, 22 declined, 166 unresolved). and [`victorian-era-styles`](../findings/sf-context-statements/victorian-era-styles.json) (45 findings, 37 published on 37 pages, 6 declined, 2 unresolved) and [`progressive-era-styles`](../findings/sf-context-statements/progressive-era-styles.json) (69 findings, 63 published on 62 pages, 1 declined, 4 unresolved, 1 rejected) and [`early-settlement-era-styles`](../findings/sf-context-statements/early-settlement-era-styles.json) (32 findings, 29 published on 28 pages, 1 declined, 1 unresolved, 1 rejected) and [`modernistic-styles`](../findings/sf-context-statements/modernistic-styles.json) (25 findings, 20 published on 20 pages, 3 declined, 2 unresolved) and [`modern-postmodern-styles`](../findings/sf-context-statements/modern-postmodern-styles.json) (224 findings, 182 published on 177 pages, 7 declined, 35 unresolved) and [`biographies-a-c`](../findings/sf-context-statements/biographies-a-c.json) (412 findings, 317 published on 312 pages, 36 declined, 59 unresolved) and [`biographies-d-f`](../findings/sf-context-statements/biographies-d-f.json) (208 findings, 137 published on 137 pages, 53 declined, 18 unresolved). and [`early-residential-development`](../findings/sf-context-statements/early-residential-development.json) (26 findings, 18 published on 18 pages, 8 declined, 0 unresolved). and [`soma-filipino-heritage`](../findings/sf-context-statements/soma-filipino-heritage.json) (120 findings, 71 published on 62 pages, 16 declined, 33 unresolved) and [`clubs-social-halls`](../findings/sf-context-statements/clubs-social-halls.json) (53 findings, 38 published on 41 pages, 7 declined, 8 unresolved) and [`modern-architecture-landscape`](../findings/sf-context-statements/modern-architecture-landscape.json) (466 findings, 273 published on 268 pages, 144 declined, 49 unresolved). and [`sexual-identity-subcultures`](../findings/sf-context-statements/sexual-identity-subcultures.json) (188 findings, 114 published on 63 pages, 34 declined, 39 unresolved, 1 rejected) and [`counterculture-hcs`](../findings/sf-context-statements/counterculture-hcs.json) (111 findings, 72 published on 71 pages, 7 declined, 12 unresolved, 20 rejected) and [`lgbtq-heritage-strategy`](../findings/sf-context-statements/lgbtq-heritage-strategy.json) (0 findings — a policy document with no address-level content). and [`biographies-g-i`](../findings/sf-context-statements/biographies-g-i.json) (176 findings, 115 published on 115 pages, 30 declined, 31 unresolved). and [`biographies-j-l`](../findings/sf-context-statements/biographies-j-l.json) (125 findings, 91 published on 90 pages, 14 declined, 20 unresolved). and [`biographies-m-o`](../findings/sf-context-statements/biographies-m-o.json) (247 findings, 158 published on 157 pages, 54 declined, 35 unresolved). and [`biographies-p-r`](../findings/sf-context-statements/biographies-p-r.json) (223 findings, 126 published on 125 pages, 61 declined, 36 unresolved). and [`biographies-s-u`](../findings/sf-context-statements/biographies-s-u.json) (152 findings, 75 published on 74 pages, 35 declined, 39 unresolved, 3 rejected). and [`biographies-v-z`](../findings/sf-context-statements/biographies-v-z.json) (96 findings, 43 published on 43 pages, 39 declined, 13 unresolved, 1 rejected). and [`south-of-market-hcs`](../findings/sf-context-statements/south-of-market-hcs.json) (155 findings, 103 published on 96 pages, 14 declined, 38 unresolved). All forty-four loops closed. |
+| **Remaining** | 1 adopted statement — the Market & Octavia survey (#115, still to acquire). The South of Market statement is **done**: read 2026-08-25, resolved and published 2026-09-03. What is left across the source is acquisition, not reading: #115's survey, and the South of Market Area Plan Survey's 1,128 DPR 523 forms this statement cites as "attached" but does not contain. Search open issues for `sf-context-statements`. |
 | **Batch unit** | one statement = one run. Most are 60–260 pages and go end to end in a session; take a second one if the first finishes early. |
 | **Reading order** | the earlier statements each taught something the next one needed. The two under "Traps that apply to every statement" below are the ones nobody should re-learn. |
 
@@ -655,6 +655,248 @@ document you are about to mine.
     Planning & Preservation Professionals biographies" below along with the
     one-liner that extracts them from the landing page. Department staff work
     with no named consultant, so cite the Planning Department.
+  - Kelley & VerPlanck Historical Resources Consulting, *Bayview-Hunters Point
+    Area B Survey: Town Center Activity Node — Historic Context Statement*,
+    prepared for the San Francisco Redevelopment Agency, adopted February 11,
+    2010 (197 pp.), source id `bvhp-area-b-context-statement`.
+  - San Francisco Planning Department (Jonathan Lammers, project manager),
+    *Central SoMa Historic Context Statement & Historic Resource Survey*,
+    adopted by the Historic Preservation Commission March 16, 2016, Motion No.
+    0277, Case No. 2011.1356E (115 pp.), source id
+    `central-soma-context-statement`. The survey adopted with it — the
+    property information catalog and the survey results table, which are in
+    the hearing packet rather than the statement — is cited separately as
+    `central-soma-survey`
+    (`https://sfplanning.s3.amazonaws.com/commissions/hpcpackets/Central%20SoMa.pdf`,
+    548 pp.). See "The Central SoMa statement" below.
+  - San Francisco Planning Department, *Central Waterfront Cultural Resources
+    Survey: Summary Report and Draft Context Statement*, prepared with the
+    Central Waterfront Survey Advisory Committee, San Francisco Architectural
+    Heritage, the Dogpatch Neighborhood Association and Page & Turnbull,
+    Architects, October 2000 – October 2001, adopted 2001 (43 pp.), source id
+    `central-waterfront-context-statement`. Listed on the SF Planning page as
+    "Central Waterfront Survey and Context Statement (Adopted 2001)". See
+    "The Central Waterfront statement" below.
+  - Michael R. Corbett, *Corbett Heights, San Francisco (Western Part of
+    Eureka Valley) Historic Context Statement*, prepared for Corbett Heights
+    Neighbors and funded by the Historic Preservation Fund Committee, adopted
+    by the Historic Preservation Commission 16 August 2017, Motion No. 0314,
+    Case No. 2015-006003SRV (261 pp.), source id
+    `corbett-heights-context-statement`. The PDF is served from
+    `default.sfplanning.org`, not the S3 archive:
+    `http://default.sfplanning.org/Preservation/CorbettHeightsHCS/hp_corbett_hcs_HCS_FINAL-081617.pdf`
+    (there is a May 2017 draft alongside it — take the FINAL). See "The
+    Corbett Heights statement" below.
+  - Christopher VerPlanck, *Dogpatch Historic District Survey* (description of
+    the neighborhood, context statement, illustrations and survey forms),
+    September 2001, adopted 2001 (35 pp.), source id
+    `dogpatch-context-statement`. Listed on the SF Planning page as "Dogpatch
+    Historic Context Statement (Adopted 2001)". It is **not** on the S3
+    archive; SF Planning serves it from an M-Files vault, and the
+    `SharedLinks.aspx` URL returns an HTML shell, not the PDF. The file itself
+    is at the REST path that page's script names —
+    `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/3e8b29b9c2a36962ffa191a884c1aabb534f7de60b3808d9f8d7bfd966aa6d57/content`
+    — while the `SharedLinks.aspx` form is what a page cites. See "The Dogpatch
+    survey" below.
+  - Christopher VerPlanck (VerPlanck Historic Preservation Consulting), *Duboce
+    Triangle Historic Context Statement*, prepared for the Duboce Triangle
+    Neighborhood Association, dated August 26, 2022, adopted 2022 (181 pp.),
+    source id `duboce-triangle-context-statement`. The PDF is on the S3 archive
+    at
+    `https://sfplanning.s3.amazonaws.com/default/files/Preservation/DuboceTriangleHCS/preserv_duboce_triangleHCS-draft.pdf`.
+    The cover and every page header read **DRAFT**, and the SF Planning listing
+    page carries it under "Duboce Triangle Historic Context Statement (Adopted
+    2022)"; there is no non-draft file. Cite it as adopted 2022 and say the file
+    is the draft. See "The Duboce Triangle statement" below.
+  - Elaine B. Stiles, *Eureka Valley Historic Context Statement*, prepared for
+    the Eureka Valley Neighborhood Association with the San Francisco Historic
+    Preservation Fund Committee and the Planning Department, adopted by the
+    Historic Preservation Commission December 20, 2017 (260 pp.), source id
+    `eureka-valley-context-statement`. The PDF is served from
+    `default.sfplanning.org`, not the S3 archive:
+    `http://default.sfplanning.org/Preservation/EurekaValleyHCS/hp_eureka_valley_hcs_HCS_FINAL-122017.pdf`
+    (there is an April 2017 review draft alongside it — take the FINAL). **The
+    cover of the FINAL carries the adoption line, but every page header still
+    reads "DRAFT ‐ Eureka Valley Historic Context Statement / May 2017."** Cite
+    it as adopted 2017. See "The Eureka Valley statement" below.
+  - Carey & Co., Inc., *Historic Resources Evaluation: Glen Park Community
+    Plan*, prepared for PBS&J, dated December 21, 2010, adopted 2011 (118 pp.),
+    source id `glen-park-context-statement`. **It is not titled a context
+    statement** — it is the CEQA historic resources evaluation for the Glen
+    Park Community Plan EIR, containing a context statement as one of its four
+    tasks — and SF Planning lists it as "Glen Park Historic Context Statement
+    (Adopted 2011)". SF Planning serves it from the same M-Files vault as the
+    Dogpatch survey, so the `SharedLinks.aspx` URL returns an HTML shell; the
+    file itself is at the REST path
+    `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/e21915779d1b8ac21bb5023f7b6d453afaec3018897014eb32cd699ef9af3fc3/content`
+    while the `SharedLinks.aspx` form is what a page cites. See "The Glen Park
+    evaluation" below.
+  - Kelley & VerPlanck Historical Resources Consulting (Tim Kelley and
+    Christopher VerPlanck), *India Basin Survey, San Francisco, California —
+    Final Report*, prepared for the Bayview Historical Society, dated May 1,
+    2008, adopted 2008 (120 pp.), source id `india-basin-context-statement`.
+    Listed on the SF Planning page as "India Basin Survey and Context Statement
+    (Adopted 2008)". It is on the S3 archive at
+    `https://sfplanning.s3.amazonaws.com/archives/documents/4049-Final_India%20Basin_05.01.08.pdf`.
+    Same consultants as the Bayview-Hunters Point Area B statement two years
+    later, and the two overlap on the three India Basin buildings that already
+    had pages here. See "The India Basin survey" below.
+  - San Francisco Planning Department, *Inner Mission North 1853-1943 Context
+    Statement* (62 pp., dated on its own title page "October 2001 – September
+    2005"; SF Planning's listing page files it as adopted 2004), source id
+    `inner-mission-north-context-statement`. Prepared under a series of
+    Certified Local Government grants documenting the northern Mission in
+    three successive survey areas (2001–02, 2003–04, 2005–06). Served from the
+    same M-Files vault as the Dogpatch survey and the Glen Park evaluation, so
+    the `SharedLinks.aspx` URL again returns an HTML shell; unlike those two,
+    the REST content URL's hash *is* the page's own `accesskey` —
+    `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/ef5726f8f01317048294fa4befc3151c63c7d0f43ec4a26cbf5c21877a313274/content`
+    — confirmed from the `SharedLinks.aspx` page's own markup rather than
+    assumed. See "The Inner Mission North statement" below.
+  - William Kostura, *The Inner Sunset: A Historic Context Statement*,
+    prepared for the San Francisco Office of Economic and Workforce
+    Development, the Historic Preservation Fund Committee, and Inner Sunset
+    Park Neighbors, adopted 2024 (238 pp.), source id
+    `inner-sunset-context-statement`. Served from the same M-Files vault as
+    Dogpatch, Glen Park and Inner Mission North, so the `SharedLinks.aspx`
+    URL again returns an HTML shell; the REST content hash is once more the
+    page's own `accesskey` —
+    `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/9971e8675ef958ced768dcf473ae90d4f57de4db30ba58a6056473462e5f67da/content`
+    — confirmed from the `SharedLinks.aspx` page's own markup. See "The Inner
+    Sunset statement" below.
+  - Richard Brandi and Woody LaBounty (Western Neighborhoods Project), *San
+    Francisco's Ocean View, Merced Heights, and Ingleside (OMI) Neighborhoods,
+    1862-1959: A Historical Context Statement*, prepared for the San Francisco
+    Historic Preservation Fund Committee, adopted January 2010 (64 pp.),
+    source id `omi-context-statement`. Served from the same M-Files vault as
+    Dogpatch, Glen Park, Inner Mission North and Inner Sunset, so the
+    `SharedLinks.aspx` URL again returns an HTML shell; the REST content hash
+    is once more the page's own `accesskey` —
+    `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/2d0ca8733f531763d1037c5664cf0854ee05d0a478351f4393e05b76d660539c/content`
+    — confirmed from the `SharedLinks.aspx` page's own markup. See "The OMI
+    statement" below.
+  - Page & Turnbull, Inc., *Historic Context Statement: Market and Octavia
+    Neighborhood Plan Area, San Francisco, California*, endorsed by the
+    Landmarks Preservation Advisory Board 19 December 2007 (136 pp.), source id
+    `market-octavia-context-statement`. On the S3 archive at
+    `https://sfplanning.s3.amazonaws.com/archives/documents/4688-M%26O_Context-LPAB121907.pdf`.
+    Every page footer reads "Draft Endorsed by Landmarks Preservation Advisory
+    Board on December 19, 2007"; the SF Planning listing page carries it as
+    "Market Octavia Plan Area Historic Context Statement (Adopted 2007)" and
+    there is no non-draft file. Cite it as adopted 2007. Its Industrial
+    Employment sub-context is separately authored — the PDF's own metadata
+    names Timothy Kelley of Workplace History Organization — and the two
+    appendices that matter come from it. See "The Market & Octavia statement"
+    below.
+  - San Francisco Planning Department, with Roland-Nawi Associates (2007),
+    Carey & Company (2009) and consultants Katherine Petrin and Shayne E.
+    Watson (2014–16), *Mission Dolores Neighborhood Historic Context
+    Statement*, prepared for the Mission Dolores Neighborhood Association,
+    adopted July 20, 2022 (104 pp.), source id
+    `mission-dolores-context-statement`. Served from the same M-Files vault as
+    Dogpatch, Glen Park, Inner Mission North, Inner Sunset and OMI, so the
+    `SharedLinks.aspx` URL again returns an HTML shell; the REST content hash
+    is once more the page's own `accesskey` —
+    `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/e312738442fad29bcb74b96538b857ca1a6e1bedd359bbfc0de2d4a255a1b7ae/content`
+    — confirmed from the `SharedLinks.aspx` page's own markup. See "The Mission
+    Dolores statement" below.
+  - William Kostura, *Van Ness Auto Row Support Structures: A Survey of
+    Automobile-Related Buildings along the Van Ness Avenue Corridor*, prepared
+    for the San Francisco Department of City Planning, adopted 2010 (73 pp.),
+    source id `van-ness-auto-row-context-statement`. SF Planning lists it as
+    "Van Ness Auto Row Support Structures (Adopted 2010)" and serves it from
+    its own site, not the S3 archive or the M-Files vault, at
+    `https://sfplanning.org/sites/default/files/documents/preserv/DPRforms/Van%20Ness%20Auto%20Row%20Context%20revised%20June%202010.pdf`
+    — a plain fetch, no shell. Same author as the Inner Sunset statement. See
+    "The Van Ness Auto Row survey" below.
+  - Tim Kelley, *Origins of the Seven San Francisco Carnegie Branch Libraries
+    1901-1921*, the context statement inside the January 2001 landmark
+    nomination of the Carnegie branch libraries (43 pp.), source id
+    `carnegie-libraries-context-statement`. On the S3 archive at
+    `https://sfplanning.s3.amazonaws.com/archives/documents/774-Carnegie.pdf`.
+    SF Planning lists it as "Carnegie Branch Libraries of San Francisco
+    (Adopted 2001)". See "The Carnegie branch libraries nomination" below.
+  - Michael R. Corbett, with a 2019 updated survey and evaluation by Katherine
+    T. Petrin and Shayne E. Watson, *North Beach, San Francisco Historic
+    Context Statement*, prepared for the Northeast San Francisco Conservancy,
+    dated 31 January 2018 with revisions as of 8 October 2020, adopted 2022
+    (269 pp.), source id `north-beach-context-statement`. SF Planning serves it
+    from the S3 archive as a plain fetch, no vault shell:
+    `https://sfplanning.s3.amazonaws.com/default/files/Preservation/hcs_north_beach.pdf`.
+    It updates and supplements the 1982 North Beach Survey (Bloomfield, Kortum
+    and Olmsted), which the Board of Supervisors adopted in 1999 and whose 212
+    listed resources it reprints as Appendix B. See "The North Beach statement"
+    below.
+  - Donna Graves and Page & Turnbull, Inc., *San Francisco Japantown Historic
+    Context Statement*, prepared for the San Francisco Planning Department as
+    part of the Japantown Better Neighborhood Plan, May 2009 (112 pp.), source
+    id `japantown-context-statement`. Served from the same M-Files vault as
+    Dogpatch, Glen Park, Inner Mission North, Inner Sunset, OMI and Mission
+    Dolores, and the REST content hash is once more the page's own `accesskey` —
+    `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/cdea4663bca8a535d9838ce5da267e475c7aab3aa11603092015f6c92a81de15/content`
+    — confirmed from the `SharedLinks.aspx` page's own markup. **SF Planning
+    lists it as "Japantown Historic Context Statement (Revised 2011)" and serves
+    the May 2009 file under that label**; the PDF's own metadata reads
+    `Japantown Context Statement_FINAL 5-09.doc` and every page header reads
+    "Final Draft". A separate, earlier "Japantown Draft Historic Context
+    Statement" (April 2008) sits on the S3 archive at
+    `https://sfplanning.s3.amazonaws.com/archives/documents/1862-San%20Francisco%20Japantown%20Better%20Neighborhood%20Plan%20Historic%20Context%204.11.08.pdf`
+    and is **not** what the adopted listing points at. See "The Japantown
+    statement" below.
+  - William Kostura, *The West Slope of Russian Hill: A Historical Context and
+    Inventory of Historic Resources for Residential Buildings around Lombard and
+    Larkin Streets*, prepared for the Russian Hill Historic Resources Inventory
+    Committee of the Northeast San Francisco Conservancy and funded by the David
+    L. Klein, Jr. Foundation, 2006, revised 2009 (60 pp.), source id
+    `russian-hill-context-statement`. SF Planning lists it as "Russian Hill
+    Historic Context Statement (Adopted 2009)". Served from the same M-Files
+    vault as Dogpatch, Glen Park, Inner Mission North, Inner Sunset, OMI,
+    Mission Dolores and Japantown, and the REST content hash is once more the
+    page's own `accesskey` —
+    `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/9512011f20332fb5a06a66154d79cd3439701dbf664afb9f6e58f39ad205d0f4/content`
+    — confirmed from the `SharedLinks.aspx` page's own markup. Same author as
+    the Inner Sunset statement and the Van Ness Auto Row survey. See "The
+    Russian Hill statement" below.
+  - Richard Brandi and Woody LaBounty (Western Neighborhoods Project),
+    *San Francisco's Parkside District: 1905-1957 — A Historical Context
+    Statement*, produced for the Mayor's Office of Economic and Workforce
+    Development, March 2008, adopted 2008 (58 pp.), source id
+    `parkside-context-statement`. SF Planning lists it as "San Francisco's
+    Parkside District: A Historic Context Statement, 1905-1957 (Adopted 2008)".
+    It is on the S3 archive and needs no vault dance — a plain fetch of
+    `https://sfplanning.s3.amazonaws.com/archives/documents/4976-parkside-statement%20march%202008.pdf`
+    returns the PDF, and it is born-digital InDesign, so `pdftotext -layout`
+    gives clean text with no OCR damage anywhere. See "The Parkside statement"
+    below.
+  - William Kostura, architectural historian, with Kelley & VerPlanck LLC,
+    *Historic Context Statement of the Oceanside: A Neighborhood of the Sunset
+    District, San Francisco*, commissioned by SPEAK (Sunset Parkside Education
+    and Action Committee) and funded by the Wallace Alexander Gerbode
+    Foundation, the Historic Preservation Fund Committee and San Francisco
+    Beautiful, May 2007, updated March 2010 (28 pp.), source id
+    `oceanside-context-statement`. SF Planning lists it as "Historic Context
+    Statement of the Oceanside: A Neighborhood of the Sunset District, San
+    Francisco (Adopted 2012)". Served from the same M-Files vault as Dogpatch,
+    Glen Park, Inner Mission North, Inner Sunset, OMI, Mission Dolores,
+    Japantown and Russian Hill, and the REST content hash is again the page's
+    own `accesskey` —
+    `https://citypln-m-extnl.sfgov.org/REST/sharedlinks/%7ba4a7dacd-b0dc-4322-bd29-f6f07103c6e0%7d/b36ba92f20d231a0ee387f5dd551d1f2837730f658bd0a0888d5eb7b6842e9c8/content`
+    — confirmed from the `SharedLinks.aspx` page's own markup. Same author as
+    the Inner Sunset statement, the Van Ness Auto Row survey and the Russian
+    Hill statement. See "The Oceanside statement" below.
+  - Kelley & VerPlanck Historical Resources Consulting, LLC, prepared for Page
+    & Turnbull, Inc., *South of Market Area Historic Context Statement*,
+    FINAL, June 30, 2009 (118 pp.), source id `south-of-market-hcs`. SF
+    Planning lists it as "South of Market Area Historic Context Statement
+    (Adopted 2011)". On the S3 archive at
+    `https://sfplanning.s3.amazonaws.com/archives/documents/372-SOMA_Historic_Context_Statement_06-30-2009.pdf`
+    — a plain fetch, no vault shell. Carries no appendix inventory table of
+    its own; its per-property DPR 523 A/B/D forms from Page & Turnbull's own
+    "South of Market Area Plan Survey" (1,128 properties surveyed, 165 with
+    523B forms) are referenced throughout as "attached" but are not in this
+    PDF and were not located — a separate acquire pass, the same shape as
+    issue #115 for the Market & Octavia survey, would be a much larger yield.
+    See "The South of Market statement" below.
 - **Shape of the yield.** Two very different parts, and both are worth the
   pass:
   - **Appendix A, Table 1** is a per-property inventory — 159 rows carrying an
@@ -2153,6 +2395,84 @@ later and wider record, and it is the one to read first.
   data dated May 2011, adopted 2011`. Page source id `showplace-square-survey`;
   pages cite the SF Planning landing page, which links all six files, and each
   finding's locator names the file and page it came from.
+
+**The South of Market statement carries no appendix inventory at all, and its
+address-level material is denser than any statement in this set except North
+Beach and Central SoMa.** Like Duboce Triangle and Eureka Valley it is
+narrative from end to end — historic context chapters, an architects and
+builders chapter, and a property-types chapter — but unlike those, almost
+every one of its worked examples cites a specific street number, because the
+118 pages cover a district Page & Turnbull surveyed intensively (1,128
+properties) rather than reconnaissance-level. 188 candidate numbered-address
+mentions were found by a regex sweep; 155 became findings after discarding
+intersections with no number, undated mentions with nothing else to check,
+and addresses outside the South of Market Area named only as an architect's
+other work.
+
+- **The real inventory is a separate, uncollected document.** The
+  recommendations chapter says outright that "Industrial properties that
+  appear individually eligible…are identified in the attached DPR 523 B forms
+  prepared by Page & Turnbull as part of the South of Market Area Plan
+  Survey" — three times, for residential, industrial and commercial
+  properties alike. That survey (1,128 DPR 523A primary records, 165 523B
+  forms, 4 523D district forms) is not bound into this PDF and was not found
+  on the SF Planning site during this pass. It is the same shape as issue
+  #115's Market & Octavia survey and would be a substantially larger yield
+  than the statement itself — a good acquire-pass lead, not attempted this
+  run.
+- **The architects-and-builders chapter is the richest single section in this
+  set.** Six architects and builders (Frederick H. Meyer, the O'Brien
+  Brothers, George Wagner, Joseph A. Pasqualetti, James H. Hjul, H.C. Baumann)
+  each get a named-building list with a date apiece — 40-plus addresses from
+  one chapter. Cross-reference against the property-types chapter before
+  treating two mentions as independent: several of these same buildings
+  reappear there as type examples.
+- **The statement contradicts itself on street numbers more than most in this
+  set, and Holy Trinity Greek Orthodox Church is the worst of it.** The same
+  building (built 1903, destroyed 1906, rebuilt and rededicated 1909, now St.
+  Michael's Ukrainian Orthodox Church) is given as "335 7th Street," "345 7th
+  Street" and "735 7th Street" in three different passages. Recorded as one
+  finding under the fullest passage (735, with the rebuilding cost and
+  rededication date), with the other two forms named in `conflict` — treating
+  three descriptions of one dedication as three separate buildings would have
+  been the wrong kind of thoroughness.
+- **George Wagner's own list disagrees with the architects-and-builders
+  narrative on one date.** 1019-1021 Mission Street is "the garage…(1915)" in
+  the 1914-1919 architects section and "1019-1021 Mission Street (1922)" in
+  Wagner's own later list. Both dates are on the finding as a stated
+  `conflict`, not adjudicated.
+- **A person can be named twice for the same building without it being a
+  duplicate.** 938 Howard Street is credited to the O'Brien Brothers as
+  architect in one chapter and to developer Louis R. Lurie in another — both
+  are the same 1922 building, not two facts to publish separately. Merged
+  into one finding with both people in `extra`.
+- **Read in one session, resolved in another, and the gap nearly cost the
+  whole read.** The 2026-08-25 pass read all 118 pages and wrote all 155
+  findings, then hit a session network policy that blocked `data.sfgov.org`
+  outright, so nothing could be resolved and PR #161 was closed unmerged with
+  the findings stranded on an abandoned branch. They were recovered from that
+  branch a week later and published. **A read whose resolve step cannot run is
+  still worth committing — but land it on `main`, not on a branch that gets
+  closed**, or the next session has no way to know the reading was already
+  paid for. Check `data.sfgov.org` is reachable before starting a run; it costs
+  one `curl` and it is the thing that decides whether a run can finish.
+- **The renumbering guard refuses this statement's whole reconstruction era,
+  and the assessor settles it.** A 2009 survey writes 2009's street numbers
+  about buildings put up in 1906–09, so the guard — which exempts only records
+  that print their own block and lot — declined 47 findings. Comparing each
+  one's date to the assessor's `year_property_built` for the parcel the join
+  chose separated them cleanly: 22 agreed within three years (most exactly:
+  1907 on a parcel the assessor dates 1907) and were resolved by hand, and the
+  rest disagreed by 10 to 124 years and stayed unresolved — 620 Folsom Street's
+  1854 Parrott mansion sits on a parcel built in 1922, which is exactly the
+  error the guard exists to catch. The guard now prints that comparison in its
+  refusal note, so the next run is handed the check instead of computing it.
+  **Mark a hand resolution `by_hand`** or the next `apply` recomputes it away.
+- **Citation label:** `Kelley & VerPlanck Historical Resources Consulting,
+  prepared for Page & Turnbull, Inc., South of Market Area Historic Context
+  Statement, FINAL, June 30, 2009; SF Planning lists it as adopted 2011`. Page
+  source id `south-of-market-hcs`; the S3 URL is both the citation and the
+  fetch — a plain fetch, no vault shell.
 
 ## Verification log
 
@@ -5507,3 +5827,18 @@ extracted and must not be. Nothing else on the form is a private individual.
   `B6. Construction History`, which are held in the findings files as
   `construction_history_as_recorded` and would need re-expressing one at a time
   rather than templating.)
+
+- **Verified:** 2026-09-03 (South of Market Area statement: the 118-page read
+  done on 2026-08-25 recovered from the abandoned branch of the closed PR #161
+  and taken to publication. 155 findings, 117 resolved, 103 published on 96
+  pages, 14 declined, 38 unresolved. Coverage note: the statement itself is
+  finished — read cover to cover, nothing left in it. What it points at is not
+  collected: the South of Market Area Plan Survey's DPR 523 forms (1,128
+  properties, 165 with 523B forms, 4 district 523D forms), cited throughout as
+  "attached" and absent from the PDF. That is an acquire pass, the same shape
+  as #115, and a much larger yield than the statement. Learned: 22 of the 47
+  findings the renumbering guard declined were confirmed by the assessor's
+  `year_property_built` agreeing with the statement's date to within three
+  years; the guard now reports that comparison rather than leaving the
+  publisher to compute it, and `apply` now keeps a `by_hand` resolution instead
+  of recomputing it away.)
