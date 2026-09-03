@@ -569,6 +569,25 @@ records carry one; exactly one of those also carries a street number.
   `citation_of()` does this, and refuses a record that names neither rather
   than citing "the archive".
 
+- **Verified:** 2026-09-03 (audit run, no new material read. Corrected **28 SFP
+  23 findings that said `published` with no page at their path** (issue #221)
+  and **two SFP 23 placements the block's number line refuses** (issue #222).
+
+  **A corner parcel's page is not at the number the resolver formed the path
+  from.** The site keeps one page per parcel, at the number the assessor files
+  it under, and every one of the 28 had in fact been published — on the
+  parcel's page one street over, at an address the finding never names. 700
+  Montgomery is on the Washington Street page, 568 Sacramento on the Commercial
+  Street one, 2034 Filbert on Pixley. Only `resolution.path` was wrong.
+  `resolve_eas.py` already prefers an existing page when one exists, so this is
+  residue from resolutions written before those pages were seeded; `check.py`
+  now fails on it rather than leaving it to an audit.
+
+  **Two placements were the neighbour**: 1435 17th Street sat on 1401–1423, a
+  parcel short of the block face's end, and its photograph had been folded into
+  the combined entry on that page (digitalsf-54653 is out of it); 1762 Great
+  Highway sat on 1758 with 1760 in between. Both are now `unresolved`.)
+
 - **Verified:** 2026-09-03 (read, resolved and published **the four
   institutional collections in one run** — SFP 26, SFP 84, SFP 103 and SFH 3 —
   and closed the **no-`524$a`** batch that issue #220 raised. 4,799 catalogue
