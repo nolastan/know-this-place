@@ -11,7 +11,6 @@ The parcels on Market Street documented here so far, from the city's address, as
 - [725–731](725/) — A 1908 office building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 1997.
 - [735](735/) — A 1907 office building in the Kearny-Market-Mason-Sutter Conservation District, with reroofing permitted in 1998.
 - [744](744/) — A 1910 bank building in the Kearny-Market-Mason-Sutter Conservation District, with facade work permitted in 2012.
-- [747](747/) — A building, with plumbing work permitted in 2015.
 - [757](757/) — A hotel, with reroofing permitted in 2017.
 - [765–781](765/) — A 1989 hotel, with plumbing work permitted in 2018.
 - [785](785/) — A 1907 office building in the Kearny-Market-Mason-Sutter Conservation District, with an addition permitted in 2019.
@@ -41,6 +40,7 @@ The parcels on Market Street documented here so far, from the city's address, as
 - [1011](1011/) — A 1909 store building in the Market Street Theatre and Loft Historic District, with electrical work permitted in 2019.
 - [1017–1019](1017/) — A 1909 office building in the Market Street Theatre and Loft Historic District, with stair work permitted in 2013.
 - [1025–1029](1025/) — A store building in the Market Street Theatre and Loft Historic District, with an addition permitted in 2001.
+- [1028–1056](1028/) — A 2022 197-unit apartment building in the Market Street Theatre and Loft Historic District, with a seismic retrofit permitted in 2008.
 - [1041–1045](1041/) — A 1907 office building in the Market Street Theatre and Loft Historic District, with reroofing permitted in 1996.
 - [1049–1051](1049/) — A 1907 store building in the Market Street Theatre and Loft Historic District, with a seismic retrofit permitted in 1995.
 - [1053–1055](1053/) — A 1908 store building in the Market Street Theatre and Loft Historic District, with permit records from 2001 to 2018.
@@ -53,6 +53,7 @@ The parcels on Market Street documented here so far, from the city's address, as
 - [1115–1119](1115/) — A 1920 office building, with window replacement permitted in 2023.
 - [1127](1127/) — A 1917 theater in the San Francisco Neighborhood Movie Theater Historic District (Discontiguous), with a seismic retrofit permitted in 2012.
 - [1133–1139](1133/) — A 1906 hotel, with facade work permitted in 2021.
+- [1141](1141/) — A 1990 office building, with one permit record from 1983.
 - [1145](1145/) — A 1990 office building, with reroofing permitted in 2005.
 - [1182–1192](1182/) — A 1925 office building in the Civic Center Historic District, with electrical work permitted in 2022.
 - [1200](1200/) — A 1908 store building in the Civic Center Historic District, with a seismic retrofit permitted in 1984.

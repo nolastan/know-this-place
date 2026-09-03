@@ -4,6 +4,7 @@ The parcels on Fulton Street documented here so far, from the city's address, as
 
 ## Documented so far
 
+- [327–333](327/) — A building, with a kitchen and bathroom remodel permitted in 2021.
 - [443](443/) — A 1992 building in the Hayes Valley Residential Historic District, with a bathroom remodel permitted in 2015.
 - [457](457/) — A 1992 building in the Hayes Valley Residential Historic District, with a bathroom remodel permitted in 2023.
 - [495–497](495/) — A 1909 office building in the Hayes Valley Residential Historic District, with stair work permitted in 2019.

@@ -156,6 +156,11 @@ TYPE_ABBR = {
     "road": "RD", "rd": "RD", "highway": "HWY", "hwy": "HWY",
     "stairway": "STWY", "walk": "WALK", "circle": "CIR", "plaza": "PLZ",
     "row": "ROW", "path": "PATH", "steps": "STPS",
+    # EAS files Clinton Park as street_name CLINTON, street_type PARK, and
+    # `seed_pages.STREET_TYPE_WORD` — which this map was copied from — has
+    # carried "PARK" all along. Without it "2 Clinton Park" comes back as a
+    # street the city does not have.
+    "park": "PARK",
 }
 WORD_ORDINAL = {
     "first": 1, "second": 2, "third": 3, "fourth": 4, "fifth": 5, "sixth": 6,
@@ -166,11 +171,14 @@ WORD_ORDINAL = {
     "twenty-third": 23, "twenty-fourth": 24, "twenty-fifth": 25,
 }
 SUFFIX = {1: "ST", 2: "ND", 3: "RD"}
+# Abbreviations that belong to a street's name rather than ending a sentence.
+NAME_ABBREV = {"st", "mt", "ft", "dr", "mrs", "mr", "ms", "ave", "av", "blvd",
+               "ln", "ct", "pl", "rd", "ter", "cir", "hwy", "aly"}
 # The spelled-out type words, as opposed to the abbreviations in the same map.
 FULL_TYPE_WORD = {
     "street", "avenue", "boulevard", "way", "court", "terrace", "place",
     "drive", "lane", "alley", "road", "highway", "stairway", "walk", "circle",
-    "plaza", "row", "path", "steps",
+    "plaza", "row", "path", "steps", "park",
 }
 
 # "1377 Fulton", "2929-2931 24th Street", "547-547A Castro Street", "7 7th Ave".
@@ -197,6 +205,17 @@ BLOCK_NOTE = re.compile(
     r"^\s*(?:SFP\s*\d+\.?\s*)?Block\.?\s*(?:Box\s*#?\s*([\w]+)\s*[;,])?\s*"
     r"Block\s*#?\s*(\d+)", re.I)
 BOX_PREFIX = re.compile(r"^\s*Box\s*#?\s*([\w]+)\s*[;,]\s*", re.I)
+DONOR_NOTE = re.compile(r"^\s*Donor's metadata notes:\s*(.*)$", re.I)
+# The tail the donor appended: a street address, then optionally a city, a
+# state and a ZIP, each in its own comma-separated slot. Peeled off from the
+# end rather than matched in one pattern, because the slots are optional in
+# every combination and the street itself can be numbered ("2500 16th St"),
+# which is what a `\d+\s+[A-Z]` shape misses.
+DONOR_TAIL_ZIP = re.compile(r"^\d{5}(?:-\d{4})?$")
+DONOR_TAIL_PLACE = re.compile(r"^(?:CA|California|[A-Z][A-Za-z' .]{2,30})$")
+DONOR_TAIL_ADDRESS = re.compile(
+    rf"^\d{{1,5}}[A-Za-z]?(?:\s*-\s*\d{{1,5}}[A-Za-z]?)?\s+"
+    rf"{NAME_TOKEN}(?:\s+{NAME_TOKEN}){{0,3}}\.?$")
 NUMBERISH = r"\d{1,5}[A-Za-z]?(?:\s*-\s*\d{1,5}[A-Za-z]?)?"
 NOTE_STREET_FIRST = re.compile(rf"^(.*?)[;,]?\s*({NUMBERISH})$")
 NOTE_NUMBER_FIRST = re.compile(rf"^({NUMBERISH})\s*[;,]\s*(.+)$")
@@ -207,7 +226,15 @@ BLOCK_PHRASE = re.compile(r"\b\d{1,5}\s+block\b", re.I)
 # finding is worth keeping — but it does not get a `street_number`.
 QUALIFIED = re.compile(
     r"((?:south|north|east|west|rear|front|corner|opposite|near)\s+of|near|"
-    r"opposite)\s+$", re.I)
+    r"opposite|(?:taken|photographed|shot|seen|view)\s+from|"
+    r"towards?|across\s+from)\s+$", re.I)
+# The same thing said after the number instead of before it. The BART
+# construction slides are photographs of Market Street with a tower named for
+# scale — "a construction crane with auger in the middle of the street. 555
+# Market in background" — and the building is not what the record shows.
+QUALIFIED_AFTER = re.compile(
+    r"^\s*,?\s*(?:in\s+(?:the\s+)?(?:background|distance)|"
+    r"in\s+the\s+rear|behind)\b", re.I)
 
 
 def normalize_street(name: str) -> tuple[str, str]:
@@ -236,6 +263,8 @@ def normalize_street(name: str) -> tuple[str, str]:
             out.append(f"{int(m.group(1)):02d}{m.group(2).upper()}")
             continue
         out.append(token.upper())
+    if out:
+        out[-1] = out[-1].rstrip(".")
     return " ".join(out), stype
 
 
@@ -261,26 +290,57 @@ NOT_A_STREET_NAME = {
     # "3 Residences 236 & 222 Moncada Way, 90 Cedro Avenue" counts the houses
     # in the frame before it gives any of their addresses.
     "RESIDENCE", "RESIDENCES", "HOUSES", "VIEWS",
+    # "4 Mile House Restaurant at 3rd and Yosemite" — the restaurant is named
+    # for its distance from the city, and the distance parses as a number.
+    "MILE HOUSE RESTAURANT", "MILE HOUSE",
+    # Aircraft and machinery in a photograph carry a model number and a name,
+    # and the pair reads exactly like an address: "Beechcraft 35 Bonanza",
+    # "John Deere 93 Series A crawler tractor". The hyphenated designations
+    # are caught by their hyphen; these are not hyphenated.
+    "BONANZA", "SERIES A", "SERIES", "ALBATROSS", "HERCULES", "SEAGUARD",
 }
 
 
-def address_from_title(title: str) -> dict | None:
+def address_from_title(title: str, year_guard: bool = False) -> dict | None:
     """The first exact street number in a title. A block is not an address.
 
     Parentheses hold a second address rather than this one — "4001-4005, Judah
     (1411 45th Ave.)" is on Judah — so they come out before the match.
     """
-    title = PARENTHETICAL.sub(" ", title)
+    title = QUOTED_SPAN.sub(" ", PARENTHETICAL.sub(" ", title))
     if BLOCK_PHRASE.search(title):
         return None
-    m = TITLE_ADDR.search(title)
-    if not m:
+    for m in TITLE_ADDR.finditer(title):
+        # "Sikorsky HH-52A Seaguard", "Coast Guard HC-130B Hercules",
+        # "Grumman HU-16 Albatross": the number is the tail of a hyphenated
+        # model designation, and the word after it is the model's name. The
+        # word boundary the pattern anchors on sits inside the designation.
+        if m.start() and title[m.start() - 1] == "-":
+            continue
+        break
+    else:
+        return None
+    if m is None:
         return None
     number, rest = m.group(1), m.group(2)
-    qualifier = QUALIFIED.search(title[:m.start()])
+    qualifier = (QUALIFIED.search(title[:m.start()])
+                 or QUALIFIED_AFTER.match(title[m.end():]))
     # Trim trailing words that belong to the next clause rather than the street
     # name: "800 Irving Street at 9th Avenue" and "1231 9th Avenue, B&E Deli".
     tokens = rest.split()
+    # A full stop inside the matched span ends the catalogue's sentence, and
+    # the capitalized word after it starts a new one: "949 Grant Avenue. Signs
+    # for various products in the window" and "520 Montgomery. Fire apparatus
+    # parked in the street" are each an address followed by prose. What a
+    # sentence-ending stop is not is a name's own abbreviation — "St. Francis
+    # Way", "Mt. Vernon Avenue", "Mayor Edwin M. Lee Avenue" — so those, and
+    # bare initials, carry on.
+    for i, tok in enumerate(tokens):
+        stem = tok[:-1]
+        if (tok.endswith(".") and len(stem) > 1
+                and stem.lower() not in NAME_ABBREV):
+            tokens = tokens[:i + 1]
+            break
     while tokens and tokens[-1].lower() in ("at", "and", "on", "in", "rear", "the"):
         tokens.pop()
     if not tokens:
@@ -292,14 +352,27 @@ def address_from_title(title: str) -> dict | None:
         return None
     if not stype and name.upper() in NOT_A_STREET_NAME:
         return None
+    # "1958 Bell 47G-2 N977B Helicopter" is a year and a make, not an address.
+    # The standing guard only catches a number equal to *this* record's year,
+    # and a caption is free to date something else. But the same shape is a
+    # real address about as often — "House of Prime Rib, 1906 Van Ness" — so
+    # refusing it outright costs more than it saves. It is refused only where
+    # the text is a donor's or photographer's free prose rather than a
+    # catalogued "<name>, <address>" title, which is where the equipment
+    # captions live.
+    if year_guard and not stype and re.fullmatch(r"1[89]\d\d|20[0-2]\d", number):
+        return None
     # "429 Montgomery street." keeps a full stop that is the end of the
     # catalogue's sentence, not part of the address, and it reaches the page in
     # the middle of one. An abbreviation's own period ("16th st.") stays.
-    if tokens[-1].endswith(".") and tokens[-1].rstrip(".").lower() in FULL_TYPE_WORD:
+    if (tokens[-1].endswith(".")
+            and tokens[-1].rstrip(".").lower() not in NAME_ABBREV):
         tokens[-1] = tokens[-1].rstrip(".")
     as_written = f"{number} {' '.join(tokens)}"
     if qualifier:
-        as_written = f"{qualifier.group(0).strip()} {as_written}"
+        phrase = qualifier.group(0).strip(" ,")
+        as_written = (f"{as_written} {phrase}" if QUALIFIED_AFTER.match(phrase)
+                      else f"{phrase} {as_written}")
     return {"as_written": as_written, "number": number, "street_name": name,
             "street_type": stype, "qualified": bool(qualifier)}
 
@@ -331,6 +404,42 @@ def address_from_note(note: str) -> dict | None:
         return None
     return {"as_written": f"{number} {street}", "number": number,
             "street_name": name, "street_type": stype, "qualified": False}
+
+
+def split_donor_note(note: str) -> tuple[str, str]:
+    """(the descriptive half, the geocode the donor appended).
+
+    The geocode is peeled off the end: a ZIP, then a state or city, then the
+    street address itself, each optional. Anything left is what the donor said
+    about the photograph.
+    """
+    slots = [c.strip() for c in re.split(r"\s*[.,]\s*", note) if c.strip()]
+    tail: list[str] = []
+    while slots and (DONOR_TAIL_ZIP.match(slots[-1])
+                     or DONOR_TAIL_PLACE.match(slots[-1])):
+        tail.insert(0, slots.pop())
+    if not (slots and DONOR_TAIL_ADDRESS.match(slots[-1])):
+        return note, ""
+    tail.insert(0, slots.pop())
+    # Everything before the address slot, in the note's own words. Rebuilt from
+    # the note rather than from `slots` so the descriptive half keeps its
+    # punctuation for address_from_title to read.
+    cut = note.rfind(tail[0])
+    return note[:cut].rstrip(" .,"), ", ".join(tail)
+
+
+def address_from_donor_note(note: str) -> tuple[dict | None, str]:
+    """(the address the donor states in the descriptive half, the geocode).
+
+    When no geocode can be peeled off the end, the note is **not** parsed for
+    an address at all: without the split there is no way to tell the donor
+    naming what the photograph shows from the donor geocoding where it was
+    taken, and COLLECTION_DONOR_ADDRESS says why the second is not an address.
+    """
+    descriptive, geocode = split_donor_note(note)
+    if not geocode:
+        return None, ""
+    return address_from_title(descriptive, year_guard=True), geocode
 
 
 SINGLE_STREET = re.compile(
@@ -369,8 +478,13 @@ def location_without_number(title: str, notes: dict) -> dict:
 
 def read_notes(fields) -> dict:
     """Pull the address note, the assessor block and the box out of 500$a."""
-    out = {"address_note": "", "block": "", "box": "", "other": []}
+    out = {"address_note": "", "block": "", "box": "", "donor_note": "",
+           "other": []}
     for note in every(fields, "500", "a"):
+        m = DONOR_NOTE.match(note)
+        if m:
+            out["donor_note"] = m.group(1).strip()
+            continue
         m = BLOCK_NOTE.match(note)
         if m:
             out["box"] = out["box"] or (m.group(1) or "")
@@ -437,9 +551,32 @@ CROSS_STREET = re.compile(
 COMPASS_CORNER = re.compile(
     r"\b(?:north|south|east|west|northwest|northeast|southwest|southeast)"
     r"\s+corner\b", re.I)
+# The title of the work, in quotes, in front of what it is on: `"200 Years of
+# Resistance" on Uganda Liquors exterior`. Without this the quoted half is
+# split off at the comma and the rest reads as a firm called " of Resistance".
+QUOTED_WORK = re.compile(r'^"[^"]*"\s*(?:on|at|in)?\s*', re.I)
+# "Phoenix Imports building mural", "French-American International School
+# mural" — the caption saying what is on the building, not part of its name.
+MURAL_TAIL = re.compile(r"\s+(?:building\s+)?murals?$", re.I)
+# Who is standing in the frame, in front of the building the caption is about:
+# "Two people outside of Bernal Heights Branch Library". The people are barred
+# anyway; what this rescues is the building behind them.
+PEOPLE_FRAME = re.compile(
+    r"^(?:\w+\s+){0,3}?(?:people|persons?|man|men|woman|women|child|children|"
+    r"crowd|customers|shoppers|pedestrians)\b[^,]*?\s+(?:of|from)\s+(?:the\s+)?",
+    re.I)
+
+# A fragment can only be a location once it starts this way, whatever follows.
+LOCATIONAL_JOIN = re.compile(
+    r"^(?:near|corner\s+of|[NSEW]{1,2}\s+corner\s+of|"
+    r"(?:north|south|east|west|northwest|northeast|southwest|southeast)"
+    r"\s+(?:corner\s+)?of)\s+", re.I)
 LEADING_JOIN = re.compile(
-    r"^(?:at|and|on|in|of|to|the\s+rear\s+of|rear\s+of|south\s+of|north\s+of|"
-    r"east\s+of|west\s+of|corner\s+of|[NSEW]{1,2}\s+corner\s+of)\s+", re.I)
+    r"^(?:at|and|on|in|of|to|near|the\s+rear\s+of|rear\s+of|south\s+of|north\s+of|"
+    r"east\s+of|west\s+of|corner\s+of|[NSEW]{1,2}\s+corner\s+of)\s+"
+    # The article after the join word goes with it. On its own the article
+    # stays: a firm's "The" is part of its name — "The Knittery".
+    r"(?:the\s+)?", re.I)
 # The same words at the end, once the address they introduced has been removed:
 # "Residence at 531 College Avenue" leaves "Residence at".
 TRAILING_JOIN = re.compile(r"\s+(?:at|and|on|in|of|to|now)$", re.I)
@@ -449,6 +586,25 @@ TRAILING_JOIN = re.compile(r"\s+(?:at|and|on|in|of|to|now)$", re.I)
 # and left on, it fails the all-capitalized test and takes the name with it.
 TRAILING_LOCATIVE = re.compile(
     r"\s+(?:located|situated|shown|pictured|seen)$", re.I)
+CAPTION_PART = (
+    r"entrances?|courtyard|lobby|lobbies|views?|facades?|doors?|doorway|"
+    r"floors?|porch|steps|stairway|staircase|details?|signs?|roof|windows?|"
+    r"yard|garden|driveway|corridor|hallway|basement|interiors?|exteriors?")
+CAPTION_PART_QUALIFIER = (
+    r"Main|Front|Rear|Side|Back|Aerial|Exterior|Interior|Modern|Upper|Lower|"
+    r"First|Second|Third|Fourth|Ground|Top|Close|Partial|Corner|Original|"
+    r"New|Old|North|South|East|West|Northwest|Northeast|Southwest|Southeast")
+
+# What the caption says happened to the building, left stranded when the
+# address between it and the name is removed: "Gump's at 250 Post Street closed"
+# becomes "Gump's at closed". Trimmed here, the join word behind it goes too.
+TRAILING_STATE = re.compile(
+    r"\s+(?:closed|vacant|demolished|razed|burned|remodeled|"
+    r"(?:being\s+|prior\s+to\s+|before\s+)?demolition|under\s+construction)$", re.I)
+# The part of the building the caption framed, at the end instead of the front:
+# "Grand Theater entrance", "Hillsdale Hotel front windows". CAPTION_PART holds
+# no building noun, so this can never take a name's own head word.
+TRAILING_PART = re.compile(rf"\s+(?:{CAPTION_PART_QUALIFIER}\s+)?(?:{CAPTION_PART})$", re.I)
 CORP_SUFFIX = re.compile(r"^(?:inc|inc\.|ltd|ltd\.|co|co\.|corp|corp\.)$", re.I)
 GENERIC = {
     "business", "businesses", "residence", "residences", "apartments",
@@ -460,6 +616,12 @@ GENERIC = {
     "liqour store", "liquor store", "variety store", "sheet metal works",
     "automotive service", "automotive electricians", "industrial surgery",
     "ballet school", "shopping center", "station j", "d.c", "apartments at",
+    # Left behind by a caption rather than naming anything: a common noun for
+    # the structure, or a phrase describing the frame.
+    "garage", "mural", "murals", "street view", "building corner", "and",
+    "exterior", "interior", "hotel", "hotels", "building", "buildings",
+    "storefront", "storefronts", "sign", "signs", "contact sheet",
+    "mural on medical building", "medical building",
 }
 
 
@@ -469,6 +631,9 @@ GENERIC = {
 ABBREV = re.compile(r"(?:\b[A-Z]|\b(?:Dr|Mr|Mrs|Mme|St|Jr|Sr|Co|No|Inc|Bros|"
                     r"Mfg|Ave|Blvd|Corp|Ltd|Chas|Wm|Geo|Thos|Jas))$")
 PARENTHETICAL = re.compile(r"\s*\([^)]*\)")
+# Quotation marks hold the title of the work in the photograph, not an address:
+# `"200 Years of Resistance" on Uganda Liquors` yielded 200 Years Street.
+QUOTED_SPAN = re.compile(r'\s*"[^"]*"')
 TRAILING_CROSS = re.compile(
     r"\s+(?:at|and|on)\s+(?:\d{1,3}(?:st|nd|rd|th)\s+)?"
     r"(?:[A-Z][A-Za-z'.]+\s+){0,2}"
@@ -532,11 +697,16 @@ def business_names(title: str, address_span: str, streets: list[str],
         # 16th Street and 3rd Street" minus "16th Street" is "Corner of and
         # 3rd Street" — so trim until the fragment stops shrinking.
         part = part.strip(" ,.-&")
+        if LOCATIONAL_JOIN.match(part):
+            continue
         while True:
-            trimmed = TRAILING_LOCATIVE.sub(
-                "", TRAILING_JOIN.sub(
-                    "", TRAILING_CROSS.sub(
-                        "", LEADING_JOIN.sub("", part)))).strip(" ,.-&")
+            trimmed = part
+            for pattern in (QUOTED_WORK, PEOPLE_FRAME, LEADING_JOIN,
+                            CAPTION_PREFIX, TRAILING_CROSS, TRAILING_STATE,
+                            MURAL_TAIL, TRAILING_PART, TRAILING_LOCATIVE,
+                            TRAILING_JOIN):
+                trimmed = pattern.sub("", trimmed)
+            trimmed = trimmed.strip(" ,.-&")
             if trimmed == part:
                 break
             part = trimmed
@@ -619,6 +789,28 @@ COLLECTION_VOICE = {
     # photographer is the fact the catalogue carries about who made it.
     "SFP 22": ("Willard E. Worden photographed the property {at} {display} "
                "{when}."),
+    # One enthusiast's colour slides of the city's streets, 1955-1990, filed by
+    # street on the photographer's own contact sheets. A slide is a dated
+    # record that the building at the number was standing and looked a
+    # particular way; the photographer is what the catalogue knows about who
+    # made it.
+    "SFP 42": ("Robert Durden photographed the property {at} {display} "
+               "{when}."),
+    # A single-subject collection: every record is a mural, photographed in
+    # 1981-84 as street art was being surveyed. The address is where the mural
+    # was, so the mural — not the building — is the fact the record carries,
+    # and saying "photographed the property" would misdescribe every entry.
+    "SFP 90": ("A mural {at} {display} was photographed {when}."),
+    # One photographer's documentation of the South of Market residential
+    # hotels during the Yerba Buena clearances. Most of what it shows was
+    # demolished within a few years, so the date is the fact: it is often the
+    # last picture of a building at that number.
+    "SFP 125": ("Lee Sims photographed the property {at} {display} {when}."),
+    # An amateur's colour slides of the city in 1965-67, given to the library
+    # with the donor's own notes. Same shape as SFP 42 — see the donor-note
+    # caution in research/sources/digitalsf.md before trusting those notes.
+    "SFP 169": ("James A. Martin photographed the property {at} {display} "
+                "{when}."),
 }
 
 
@@ -660,7 +852,52 @@ COLLECTION_UNNUMBERED_POLICY = {
     # McCoy, Y.M.C.A. portraits, views across Brisbane, "Ingleside Terraces
     # residence interior" with no way to know which house. Not buildings.
     "SFP 22": "skip-unnumbered",
+    # Three more photographer's collections of the same shape. Their unnumbered
+    # majority is street views and intersections — "Steiner street near Alamo",
+    # "Mural at Fillmore Street near Sutter Street", "View of Twin Peaks from
+    # Forest Hill" — which locate a corner, not a building, and can never carry
+    # a page. 218 of SFP 42's 288 records, 232 of SFP 90's 285 and 848 of SFP
+    # 169's 918.
+    "SFP 42": "skip-unnumbered",
+    "SFP 90": "skip-unnumbered",
+    "SFP 169": "skip-unnumbered",
+    # SFP 125 keeps its unnumbered records: unlike the others it photographs
+    # one clearance area over eight months, so "Buildings on the 700 block of
+    # Howard before being demolished" is a real record of a block that no
+    # longer exists — the SFH 371 case.
 }
+
+# Whether the leftover `500$a` notes go into the finding as `record_notes`.
+#
+# For most collections they are archival housekeeping — "Sheet: S.F.
+# Streets-Steiner", "See SFP22-0125", a landmark designation — and worth
+# keeping for the auditor. For two of them they are a photographer's or a
+# donor's free prose about who is in the frame: "214, Lee Wash room Daton
+# Hot.", "Doris Martin & son", "Reverend Fumio Matsui (in white robes)". None
+# of that can ever become a page fact, the record page is one click from
+# `citation.url` if an auditor wants it, and "Privacy — hard limits" in the
+# root AGENTS.md binds at extraction time — so it does not enter the
+# repository at all.
+COLLECTION_NOTE_POLICY = {
+    "SFP 125": "drop",
+    "SFP 169": "drop",
+}
+
+# Collections whose `500$a` note carries a second address worth reading, and
+# how to read it. SFP 169's donor wrote a note per slide ending in a modern,
+# geocoded street address — "SPCA - Animal Shelter, 16th & Alabama, front
+# lobby. 2500 16th St, 94103" — and that trailing address is **where the
+# camera was or roughly what the frame shows**, not a statement about a
+# building. Measured over the collection: 411 of 918 records end that way, and
+# on the ones where the donor also named a number in the descriptive half the
+# two disagree about as often as they agree — 2324 against 2330 Chestnut, 230
+# against 250 Brannan, 581 against 553 Buckingham. Several of the rest are
+# plainly a viewpoint: "SF Opera House from Franklin. 406 Franklin St".
+#
+# So the geocode is never the address. What is read is the number the donor
+# states in the descriptive half — the donor saying what the photograph is of
+# — with the geocode kept beside it and a conflict recorded when they differ.
+COLLECTION_DONOR_ADDRESS = {"SFP 169"}
 
 COLLECTION_NAME_POLICY = {
     "SFH 371": "named-buildings-only",
@@ -672,6 +909,18 @@ COLLECTION_NAME_POLICY = {
     # Worden caption is the owner about as often as it is anything, and owners
     # are barred outright.
     "SFP 22": "named-buildings-only",
+    # SFP 125's addressed titles are "<building>, <number> <street>, <what the
+    # frame shows>" — the SFP 23 shape — but its unnumbered ones are narrative
+    # captions full of people at meetings and in their own rooms. The strict
+    # policy is what keeps those out.
+    "SFP 125": "named-buildings-only",
+    # SFP 169's are captions too: "Person in SF SPCA doorway holding dog on
+    # leash", "Martin family in courtyard of Legion of Honor".
+    "SFP 169": "named-buildings-only",
+    # SFP 42 and SFP 90 are deliberately *not* here. Their titles are a name
+    # and an address — "Vanessi's, 498 Broadway", "Star Classics, 425 Hayes" —
+    # and almost none of those names contains a building noun, so the strict
+    # policy would throw away the whole point of the collection.
 }
 
 BUILDING_NOUN = {
@@ -722,21 +971,13 @@ EVENT_TAIL = re.compile(r"\b(?:ceremony|opening|meeting|dedication|groundbreakin
 # of it — "Main entrance to the Marines' Memorial Club", "Courtyard at the San
 # Francisco Art Institute", "Lobby of the Hotel Turpin". None of these words is
 # a BUILDING_NOUN, so stripping them can never take a name's own head noun.
-CAPTION_PART = (
-    r"entrances?|courtyard|lobby|lobbies|views?|facades?|doors?|doorway|"
-    r"floors?|porch|steps|stairway|staircase|details?|signs?|roof|windows?|"
-    r"yard|garden|driveway|corridor|hallway|basement|interiors?|exteriors?")
-CAPTION_PART_QUALIFIER = (
-    r"Main|Front|Rear|Side|Back|Aerial|Exterior|Interior|Modern|Upper|Lower|"
-    r"First|Second|Third|Fourth|Ground|Top|Close|Partial|Corner|Original|"
-    r"New|Old|North|South|East|West|Northwest|Northeast|Southwest|Southeast")
 CAPTION_PREFIX = re.compile(
     r"^(?:Exterior|Interior|Front|Rear|Side|View|Views|Construction|"
     r"Demolition|Remodeling|Renovation|Warehouse|Site)\s+of\s+(?:the\s+)?"
     rf"|^(?:(?:{CAPTION_PART_QUALIFIER})\s+)?(?:{CAPTION_PART})\s+"
     r"(?:on\s+top\s+of|in\s+front\s+of|of|at|to|on|in|inside|outside)"
     r"\s+(?:the\s+)?"
-    r"|^(?:Former|Old|New)\s+(?=[A-Z])", re.I)
+    r"|^(?:Former|Formerly|Old|Vacant|Abandoned)\s+(?=[A-Z])", re.I)
 
 
 def is_named_building(part: str) -> bool:
@@ -762,12 +1003,12 @@ def is_named_building(part: str) -> bool:
             continue
         if word.lower() in SMALL_WORD:
             continue
-        if not word[0].isupper():
-            return False
         if word.lower().rstrip("'s") in BUILDING_NOUN or word.lower() in BUILDING_NOUN:
             has_noun = True
-        else:
-            distinguishing = True
+            continue
+        if not word[0].isupper():
+            return False
+        distinguishing = True
     # "Building", "House", "Public Library" name no particular one. A fragment
     # with nothing but the noun in it is the caption's common noun, and on a
     # page it says only that the address had a building on it.
@@ -796,6 +1037,8 @@ def build(collection: str, batch: str):
     policy = COLLECTION_NAME_POLICY.get(collection, "")
     skip_unnumbered = (COLLECTION_UNNUMBERED_POLICY.get(collection)
                        == "skip-unnumbered")
+    drop_notes = COLLECTION_NOTE_POLICY.get(collection) == "drop"
+    read_donor = collection in COLLECTION_DONOR_ADDRESS
     rows = list(records(collection))
     if not rows:
         sys.exit(f"no records matching {collection!r} under {CORPUS} — "
@@ -821,6 +1064,14 @@ def build(collection: str, batch: str):
 
         from_title = address_from_title(title)
         from_note = address_from_note(notes["address_note"]) if notes["address_note"] else None
+        geocode = ""
+        if read_donor and notes["donor_note"]:
+            from_donor, geocode = address_from_donor_note(notes["donor_note"])
+            if from_donor and not from_note:
+                from_note = from_donor
+                tally["address from the donor's own note"] += 1
+            if geocode:
+                tally["donor geocode present"] += 1
         # "Miss Chinatown 1967 Marilyn Lew" parses as number 1967 on a street
         # called Marilyn Lew. The dossier's rule for this is that a street
         # number equal to the record's own year is not an address; with no
@@ -869,6 +1120,17 @@ def build(collection: str, batch: str):
             tally["address note only"] += 1
         if conflict:
             tally["title/note disagree"] += 1
+        # The geocode is not an address (see COLLECTION_DONOR_ADDRESS), but a
+        # geocode that names a different building from the address taken is
+        # worth stating rather than silently dropping.
+        if geocode and not unnumbered and addr.get("number"):
+            geo_num = re.match(r"\s*(\d{1,5})", geocode)
+            if geo_num and geo_num.group(1) != addr["number"].split("-")[0]:
+                note = (f"The donor's note gives the address as "
+                        f"{addr['as_written']!r} and geocodes the slide to "
+                        f"{geocode!r}. The two are not the same building.")
+                conflict = f"{conflict} {note}".strip()
+                tally["donor geocode names another building"] += 1
 
         streets = [re.sub(r"\.$", "", v[len("Streets--"):])
                    for v in every(f, "650", "a") if v.startswith("Streets--")]
@@ -918,6 +1180,16 @@ def build(collection: str, batch: str):
             extra["medium"] = first(f, "300", "a")
         if kept:
             extra["named_in_record"] = list(dict.fromkeys(kept))
+        # A `700 $e mural artist` is the catalogue crediting the person who
+        # made the work at that address — the same class of fact as an
+        # architect, and allowed by "Privacy — hard limits" in the root
+        # AGENTS.md for exactly that reason. It is the only creator role this
+        # archive states, so nothing else is read out of 700.
+        artists = [d.get("a") for d in (dict(i) for i in f.get("700", []))
+                   if (d.get("e") or "").lower().startswith("mural artist")
+                   and d.get("a")]
+        if artists:
+            extra["mural_artist"] = sorted(set(artists))
         corporate = [v for v in every(f, "610", "a")
                      if "Assessor-Recorder" not in v]
         if corporate:
@@ -927,7 +1199,9 @@ def build(collection: str, batch: str):
                    and not v.startswith("Tax assessment")]
         if topical:
             extra["subject_headings"] = sorted(set(topical))
-        if notes["other"]:
+        if geocode:
+            extra["donor_geocode_as_recorded"] = geocode
+        if notes["other"] and not drop_notes:
             extra["record_notes"] = notes["other"]
         # Only worth recording when it says something the title didn't.
         if (from_note and from_title
@@ -955,6 +1229,10 @@ def build(collection: str, batch: str):
         if kept:
             description += (" The record names " + oxford(kept)
                             + " at the address.")
+        if extra.get("mural_artist"):
+            description += (" The mural is credited to "
+                            + oxford([flip_name(a)
+                                      for a in extra["mural_artist"]]) + ".")
 
         entry = {
             "id": "",  # numbered after the whole batch is grouped
@@ -971,7 +1249,7 @@ def build(collection: str, batch: str):
                 "corpus_path": rec["page"],
                 "locator": locator(rec, notes, first(f, "852", "c")),
             },
-            "raw": {"text": raw_span(title, notes)},
+            "raw": {"text": raw_span(title, notes, every(f, "600", "a"))},
             "confidence": ("low" if unnumbered
                            else confidence(date, conflict, from_title, from_note)),
             "resolution": {
@@ -1011,6 +1289,14 @@ def build(collection: str, batch: str):
     return rows, findings, tally, kept_names, dropped_names
 
 
+def flip_name(name: str) -> str:
+    """'Weems, Jane' -> 'Jane Weems'. MARC files a name surname-first."""
+    if "," not in name:
+        return name.strip()
+    last, first = name.split(",", 1)
+    return f"{first.strip()} {last.strip()}".strip()
+
+
 def oxford(items: list[str]) -> str:
     if len(items) == 1:
         return items[0]
@@ -1039,8 +1325,48 @@ def locator(rec, notes, shelf) -> str:
     return ", ".join(bits)
 
 
-def raw_span(title: str, notes: dict) -> str:
-    span = title
+def redact(span: str, subjects: list[str]) -> str:
+    """Take the record's own `600$a` personal names out of the quoted span.
+
+    `raw.text` is the shortest passage that justifies the extraction, and it is
+    committed. In a caption collection that passage is often "Lee Washington's
+    room in Daton Hotel, 175 3rd Street" — the building is the finding, the
+    resident is barred by "Privacy — hard limits" in the root AGENTS.md, and
+    the bar applies when the finding is written, not when a page is. What is
+    left still justifies the address, the date and the building's name.
+    """
+    for subject in subjects:
+        # A heading carries the person's dates in parentheses or after a comma
+        # — "Mancuso, Edward T. (1901-1985)" — and they are not part of any
+        # name a caption will use.
+        subject = re.sub(r"\s*\([^)]*\)\s*$", "", subject)
+        subject = re.sub(r",\s*\d{4}\s*-\s*\d{0,4}\.?$", "", subject)
+        parts = [p.strip(" .,") for p in subject.split(",")]
+        forms = [subject.strip(" .")]
+        if len(parts) == 2:
+            # Surname and forenames both, and the flipped form: MARC files
+            # "Mancuso, Edward T." and the caption writes "Public Defender
+            # Edward T. Mancuso", so redacting only the whole string as filed
+            # leaves the forename standing.
+            forms += [f"{parts[1]} {parts[0]}", parts[0], parts[1]]
+        for form in sorted(set(f for f in forms if len(f) > 2), key=len,
+                           reverse=True):
+            # `\b` cannot anchor a form that ends in an initial's full stop
+            # ("Edward T."), so the boundary is a look-around on word
+            # characters instead. Initials also vary in punctuation between
+            # the heading and the caption, so a full stop matches an optional
+            # one.
+            pattern = re.escape(form).replace("\\.", r"\.?")
+            span = re.sub(rf"(?<!\w){pattern}(?!\w)(?:'s)?", "[name withheld]",
+                          span, flags=re.I)
+    # Redacting a name in two passes ("Edward T", then "Mancuso") can leave an
+    # orphaned initial's full stop between the two markers.
+    return re.sub(r"\[name withheld\](?:[\s.]*\[name withheld\])*\s*",
+                  "[name withheld] ", span).strip()
+
+
+def raw_span(title: str, notes: dict, subjects: list[str] | None = None) -> str:
+    span = redact(title, subjects or [])
     if notes["address_note"]:
         span += f" | 500$a: Address. {notes['address_note']}"
     if notes["block"]:

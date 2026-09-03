@@ -6,6 +6,7 @@ The parcels on Green Street documented here so far, from the city's address, ass
 
 - [1943–1945](1943/) — A 1924 single-family house, with deck work permitted in 2012.
 - [1949–1951](1949/) — A 1900 7-unit apartment building, with facade work permitted in 1999.
+- [1950–1960](1950/) — An 1875 11-unit apartment building, with a rear addition permitted in 2001.
 - [1966–1968](1966/) — A 1901 two-flat, with deck work permitted in 2021.
 - [2320](2320/) — A 1903 church, with reroofing permitted in 1998.
 - [2411](2411/) — A 1925 single-family house, with a kitchen remodel permitted in 2019.

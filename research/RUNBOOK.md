@@ -351,7 +351,7 @@ assessor and EAS give the parcel and say so in `resolution.method`.
   in your own voice** — *the volume gives no year*, *the survey records it as
   demolished* — which reads on the page as the source talking about itself.
   State the fact ("Since demolished"), or drop the hedge and let
-  `date_precision` carry it. `check.py` warns on the phrasing it can recognise;
+  `date_precision` carry it. `check.py` fails on the phrasing it can recognise;
   grep your own descriptions for the source's noun before you commit. The one documented exception is
   [sources/celebrity-residence-guides.md](sources/celebrity-residence-guides.md),
   whose claims are attributed in the body precisely because they're weak.

@@ -57,37 +57,10 @@ SCHEMA_PATH = ROOT / "schema" / "finding.schema.json"
 EXAMPLE = ROOT / "schema" / "example-findings.json"
 
 errors: list[str] = []
-warnings: list[tuple[str, str]] = []
 
 
 def err(where, msg: str) -> None:
     errors.append(f"{where}: {msg}")
-
-
-# One line per warning kind, printed as the heading over that kind's file
-# counts. A second kind arrived the moment a second rule landed after the
-# files did, so the heading cannot stay hardcoded to the first.
-WARN_KINDS = {
-    "source-voice": ("descriptions that name their own source. A page body never says "
-                     "where the fact came from; the Sources footer is the attribution. "
-                     "These predate the rule and are a sweep, not a blocker — see the "
-                     "open issue. Fix any in the file you are working on."),
-    "undated-timeline": ("published findings with no date at all. A page's timeline is "
-                         "ordered by date and renders a dateless entry as a row reading "
-                         "\"unknown\"; an undated fact belongs in a spec row or the "
-                         "survey block instead, and publish.note must say which took it. "
-                         "These predate the rule and are a sweep, not a blocker."),
-}
-
-
-def warn(where, msg: str, kind: str = "source-voice") -> None:
-    """A defect worth surfacing that must not block an unrelated run.
-
-    Reserved for rules added after a lot of files already broke them: the rule
-    is right, the backlog is real, and failing every run until someone sweeps
-    hundreds of old entries would only get the check deleted.
-    """
-    warnings.append((kind, f"{where}: {msg}"))
 
 
 # --------------------------------------------------------------------------- #
@@ -313,7 +286,7 @@ def check_rules(rel: Path, data: dict) -> None:
         desc = f.get("description") or ""
         hit = SOURCE_VOICE.search(desc) or SOURCE_VOICE_PASSIVE.search(desc)
         if hit:
-            warn(str(rel), f"{fid}: description names its own source "
+            err(str(rel), f"{fid}: description names its own source "
                           f"({hit.group(0)!r}) — a page body "
                           f"never says where the fact came from; the Sources "
                           f"footer is the attribution. State the fact instead.")
@@ -338,11 +311,10 @@ def check_rules(rel: Path, data: dict) -> None:
                     "n.d.", "n. d.", "no date", "none"):
                 note = (pub.get("note") or "").lower()
                 if not any(w in note for w in ("spec row", "survey block")):
-                    warn(str(rel), f"{fid}: published with no date at all "
-                                   f"({f.get('date')!r}) — an undated fact belongs in a "
-                                   f"spec row or the survey block: say which one took "
-                                   f"it in publish.note, or decline the finding.",
-                         "undated-timeline")
+                    err(str(rel), f"{fid}: published with no date at all "
+                                  f"({f.get('date')!r}) — an undated fact belongs in a "
+                                  f"spec row or the survey block: say which one took "
+                                  f"it in publish.note, or decline the finding.")
 
     for apn, paths in sorted(paths_by_apn.items()):
         if len(paths) > 1:
@@ -879,19 +851,6 @@ def main() -> int:
     if args.landed:
         landed(args.landed)
         print()
-
-    if warnings:
-        for kind, blurb in WARN_KINDS.items():
-            rows = [w for k, w in warnings if k == kind]
-            if not rows:
-                continue
-            by_file: dict[str, int] = {}
-            for w in rows:
-                by_file[w.split(":", 1)[0]] = by_file.get(w.split(":", 1)[0], 0) + 1
-            print(f"{len(rows)} warning(s) in {len(by_file)} file(s) — {blurb}")
-            for name, count in sorted(by_file.items(), key=lambda kv: -kv[1]):
-                print(f"  {count:>4}  {name}")
-            print()
 
     if errors:
         print(f"{len(errors)} problem(s):", file=sys.stderr)

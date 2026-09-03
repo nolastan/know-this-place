@@ -88,7 +88,10 @@ Every residential parcel on 26th Street that the city's address, assessor and pe
 - [3772–3774](3772/) — A 1908 2-unit tic building, with a kitchen and bathroom remodel permitted in 2015.
 - [3776](3776/) — A 1910 flats building, with a rear addition permitted in 1989.
 - [3782](3782/) — A 1918 two-flat, with one permit record from 2016.
+- [4220](4220/) — A 1900 single-family house, with facade work permitted in 1996.
 - [4222](4222/) — A 1910 single-family house, with foundation work permitted in 1988.
+- [4224](4224/) — A 1910 single-family house, with a kitchen and bathroom remodel permitted in 2019.
+- [4229](4229/) — A 1900 single-family house, with a rear addition permitted in 2014.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

@@ -17,6 +17,8 @@ The parcels on Townsend Street documented here so far, from the city's address, 
 - [424](424/) — A 1936 industrial building in the Bluxome Townsend Historic District, with plumbing work permitted in 2017.
 - [460](460/) — A 1915 industrial building in the Bluxome Townsend Historic District, with plumbing work permitted in 2021.
 - [466–472](466/) — A 1920 industrial building in the Bluxome Townsend Historic District, with a seismic retrofit permitted in 2000.
+- [516](516/) — A 2019 office building, with a seismic retrofit permitted in 1990.
+- [600–648](600/) — A 1989 office building, with plumbing work permitted in 2006.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.
