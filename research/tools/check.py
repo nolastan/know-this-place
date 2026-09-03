@@ -14,6 +14,10 @@ What it checks:
     research/schema/finding.schema.json;
   * the cross-field rules the schema can't express (a resolved finding needs a
     parcel and a method; a published one needs to be resolved first);
+  * that every published finding has a page at the path it records — a parcel
+    addressed on two streets keeps one page, at the number the assessor files
+    it under, so a path formed from the finding's own number can name a
+    directory that never gets created;
   * the publish loop: once anything in a file is published, every resolved
     finding in it must carry a publish decision. PR #114 published 425 findings
     and marked none of them, and nobody could then tell finished work from
@@ -46,6 +50,7 @@ additionalProperties, items, enum, pattern, and local $ref.
 from __future__ import annotations
 
 import argparse
+import functools
 import json
 import re
 import sys
@@ -209,6 +214,52 @@ SOURCE_VOICE_PASSIVE = re.compile(
     r"|\bgiven\s+as\s+an\s+example\b|\bcaptioned\b", re.I)
 
 
+@functools.lru_cache(maxsize=1)
+def pages_by_apn() -> dict:
+    """Every address page on disk, keyed by the parcel it documents.
+
+    Reading 15,000 files is not free, so nothing calls this until a finding has
+    already failed the cheap test — a `resolution.path` with no `data.json`
+    under it. Then it answers the only question worth asking next: does the
+    parcel have a page somewhere else?
+    """
+    out: dict[str, str] = {}
+    for p in (ROOT.parent / "san-francisco").glob("*/*/*/data.json"):
+        try:
+            d = json.loads(p.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        apn = d.get("apn")
+        if apn and apn not in out:
+            out[apn] = d.get("path") or "/" + str(p.relative_to(ROOT.parent).parent) + "/"
+    return out
+
+
+def missing_page(res: dict) -> str | None:
+    """Why a resolution's path has no page, phrased for the run that has to fix it.
+
+    A parcel addressed on two streets keeps its single page at the number the
+    assessor files it under, and `resolve_eas.py` forms a path from the
+    finding's own number — so a resolution written before the page existed can
+    name a directory that will never be created. The publisher then writes the
+    fact onto the page the parcel does have and the findings file still points
+    at the phantom. 28 sfp-23 findings sat like that, and eight umb-survey
+    findings were declined outright with "no page was seeded for it" while the
+    parcel's page had been sitting one street over the whole time.
+    """
+    rel = (res.get("path") or "").strip("/")
+    if not rel or (ROOT.parent / rel / "data.json").exists():
+        return None
+    elsewhere = pages_by_apn().get(res.get("apn"))
+    if elsewhere:
+        return (f"no page at resolution.path {res.get('path')!r}, but parcel "
+                f"{res.get('apn')} is documented at {elsewhere} — one parcel is "
+                f"one page, so record that path")
+    return (f"no page at resolution.path {res.get('path')!r} and parcel "
+            f"{res.get('apn')} has no page anywhere — seed it, or decline the "
+            f"finding with the reason (no roll row, or a condominium APN)")
+
+
 def check_rules(rel: Path, data: dict) -> None:
     """Cross-field rules the schema can't state."""
     seen: set[str] = set()
@@ -297,6 +348,11 @@ def check_rules(rel: Path, data: dict) -> None:
                 err(str(rel), f"{fid}: published but resolution.status is {status!r}")
             if not pub.get("pr"):
                 err(str(rel), f"{fid}: published findings need publish.pr")
+            # "Published" is a claim about a page, and the cheapest way for it
+            # to be false is for the page never to have existed.
+            why = missing_page(res)
+            if why:
+                err(str(rel), f"{fid}: published, {why}")
             # A page's timeline is ordered by date, and an entry with no date
             # renders a row that literally reads "unknown" above the 1930s. An
             # undated fact still has two homes that carry no year by design:
@@ -747,7 +803,8 @@ def landed(path: Path) -> None:
         err(str(path), f"--landed could not read the file: {exc}")
         return
 
-    checked = missing = 0
+    checked = 0
+    missing: list[tuple[str, str]] = []
     noop: list[tuple[str, str, str]] = []
     for finding in data.get("findings", []):
         pub = finding.get("publish") or {}
@@ -758,13 +815,15 @@ def landed(path: Path) -> None:
         if not rel:
             continue
         page = ROOT.parent / rel / "data.json"
-        if not page.exists():
-            missing += 1
+        why = missing_page(res)
+        if why:
+            missing.append((finding.get("id", "?"), why))
             continue
         try:
             doc = json.loads(page.read_text(encoding="utf-8"))
         except (OSError, json.JSONDecodeError):
-            missing += 1
+            missing.append((finding.get("id", "?"),
+                            f"{res.get('path')} could not be read"))
             continue
         checked += 1
 
@@ -797,7 +856,13 @@ def landed(path: Path) -> None:
         noop.append((finding.get("id", "?"), res.get("path", "?"), desc[:70]))
 
     print(f"landed: {checked} published finding(s) checked against their pages"
-          + (f", {missing} page(s) not on disk" if missing else ""))
+          + (f", {len(missing)} with no page on disk" if missing else ""))
+    # A published finding whose page does not exist never landed at all, and a
+    # bare count of them reads as a rounding error rather than as the failure it
+    # is. `check.py` fails the run on these too; naming them here saves the run
+    # a second pass to find out which.
+    for fid, why in missing:
+        print(f"    {fid}  {why}")
     if not noop:
         print("  every published finding left its description or a spec row on its page.")
         return
