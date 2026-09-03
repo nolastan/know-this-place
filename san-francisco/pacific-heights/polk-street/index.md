@@ -4,6 +4,7 @@ The parcels on Polk Street documented here so far, from the city's address, asse
 
 ## Documented so far
 
+- [1942–1998](1942/) — A 2013 44-unit apartment building, with a kitchen remodel permitted in 2014.
 - [2032–2064](2032/) — A 1907 hotel, with a seismic retrofit permitted in 2019.
 - [2101–2127](2101/) — A 1904 store building, with a kitchen remodel permitted in 2025.
 - [2139–2141](2139/) — A 1933 store building, with electrical work permitted in 1993.

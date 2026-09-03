@@ -4,6 +4,7 @@ The parcels on Waller Street documented here so far, from the city's address, as
 
 ## Documented so far
 
+- [371](371/) — A 1900 10-unit apartment building in the Hayes Valley Residential Historic District, with a seismic retrofit permitted in 2016.
 - [479](479/) — A 1919 single-family house, with permit records from 1982 to 1994.
 - [501–505](501/) — A 1900 4-unit building with a ground-floor store in the Duboce Park Historic District, with reroofing permitted in 2022.
 - [533–537](533/) — A 1900 three-flat in the Duboce Park Historic District, with reroofing permitted in 2022.

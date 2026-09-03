@@ -13,6 +13,7 @@ Every residential parcel on Church Street that the city's address, assessor and 
 - [158](158/) — Built in 1973 as a Bank of America branch, and for many years Blockbuster Video.
 - [172](172/) — Built in 1965 for Brown's Furniture Store, on the site of a three-storey rooming house.
 - [178–180](178/) — A 1938 5-unit apartment building, with fire repair permitted in 2024.
+- [194–198](194/) — A 1900 store building, with reroofing permitted in 2011.
 - [210–228](210/) — A 1920 24-unit apartment building in the Upper Market Street Commercial Historic District, with plumbing work permitted in 2019.
 - [215–219](215/) — A 1905 3-unit building with a ground-floor store, with an addition permitted in 2001.
 - [221–225](221/) — A 1906 3-unit building with a ground-floor store, with dry-rot repair permitted in 2012.

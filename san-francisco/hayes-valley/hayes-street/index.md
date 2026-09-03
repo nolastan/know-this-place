@@ -16,6 +16,18 @@ The parcels on Hayes Street documented here so far, from the city's address, ass
 - [511–529](511/) — A 1911 store building in the Hayes Valley Residential Historic District, with window replacement permitted in 2021.
 - [575–579](575/) — A 1900 4-unit building with a ground-floor store in the Hayes Valley Residential Historic District, with deck work permitted in 2007.
 - [615](615/) — An 1890 single-family house in the Hayes Valley Residential Historic District, with an addition permitted in 2020.
+- [616–622](616/) — A 1900 6-unit apartment building in the Hayes Valley Residential Historic District, with a kitchen and bathroom remodel permitted in 2019.
+- [626–628](626/) — A 1900 two-flat in the Hayes Valley Residential Historic District, with reroofing permitted in 1993.
+- [632–634](632/) — A 2-unit building in the Hayes Valley Residential Historic District, with window replacement permitted in 2013.
+- [633–639](633/) — A 1900 6-unit building with a ground-floor store in the Hayes Valley Residential Historic District, with foundation work permitted in 1999.
+- [641–645](641/) — A 1906 7-unit building in the Hayes Valley Residential Historic District, with a kitchen and bathroom remodel permitted in 2014.
+- [644–648](644/) — A 1900 three-flat in the Hayes Valley Residential Historic District, with a vertical addition permitted in 1984.
+- [650–652](650/) — A 1900 two-flat in the Hayes Valley Residential Historic District, with stair work permitted in 2016.
+- [656](656/) — A 1982 building in the Hayes Valley Residential Historic District, with a bathroom remodel permitted in 2025.
+- [662–664](662/) — An 1873 four-flat in the Hayes Valley Residential Historic District, with reroofing permitted in 2000.
+- [672–676](672/) — A 1900 three-flat in the Hayes Valley Residential Historic District, with reroofing permitted in 1988.
+- [680–684](680/) — An 1885 three-flat in the Hayes Valley Residential Historic District, with a kitchen remodel permitted in 2017.
+- [686–690](686/) — An 1885 three-flat in the Hayes Valley Residential Historic District, with a kitchen remodel permitted in 2021.
 - [742–744](742/) — An 1890 building in the Hayes Valley Residential Historic District, with foundation work permitted in 2008.
 - [840–842](840/) — A 1906 12-unit apartment building, with a kitchen remodel permitted in 1988.
 - [890](890/) — A 1900 church, with stair work permitted in 2010.

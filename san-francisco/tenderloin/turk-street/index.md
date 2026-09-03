@@ -27,6 +27,8 @@ The parcels on Turk Street documented here so far, from the city's address, asse
 - [500–520](500/) — A 2022 110-unit apartment building, with foundation work permitted in 2020.
 - [550](550/) — A 1924 garage, with plumbing work permitted in 2010.
 - [640](640/) — A 1909 46-unit apartment building, with a seismic retrofit permitted in 2000.
+- [801](801/) — A 1953 office building, with permit records from 2000 to 2018.
+- [835](835/) — A 1930 hotel, with stair work permitted in 2025.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

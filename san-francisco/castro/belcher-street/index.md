@@ -11,6 +11,8 @@ Every residential parcel on Belcher Street that the city's address, assessor and
 - [28–30](28/) — A 1900 single-family house, with fire repair permitted in 1998.
 - [29–35](29/) — A 1900 4-unit apartment building, with deck work permitted in 2003.
 - [34](34/) — A 1973 6-unit apartment building, with a seismic retrofit permitted in 2021.
+- [43](43/) — A 1908 building, with stair work permitted in 2002.
+- [45](45/) — A 1924 building, with an addition permitted in 2006.
 - [50](50/) — Built in 1936 for the First Finnish Evangelical Lutheran Church; a daycare since 1977.
 - [67–69](67/) — A 1919 two dwellings on one parcel, with reroofing permitted in 2017.
 - [70–72](70/) — A 1906 5-unit apartment building in the Duboce Triangle Historic District, with facade work permitted in 2025.

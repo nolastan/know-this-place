@@ -17,6 +17,8 @@ A central district west of Civic Center, taking in the eastern edge of Alamo Squ
 - [Haight Street](haight-street/) — 1 building, built 1952.
 - [Hayes Street](hayes-street/) — 1 building, built 1911; 1 in the Hayes Valley Residential Historic District.
 - [Hermann Street](hermann-street/) — 1 building, built 1900.
+- [Hickory Street](hickory-street/) — 7 buildings, built 1890–1922; 7 in the Hayes Valley Residential Historic District.
+- [Ivy Street](ivy-street/) — 8 buildings, built 1890–1937; 8 in the Hayes Valley Residential Historic District.
 - [Laguna Street](laguna-street/) — 1 building, built 1890; 1 in the Hayes Valley Residential Historic District.
 - [Laussat Street](laussat-street/) — 1 building, built 1990; 1 in the Lower Haight Victorian Era Historic District.
 - [Lily Street](lily-street/) — 1 building, built 1946; 1 in the Hayes Valley Residential Historic District.
@@ -26,6 +28,7 @@ A central district west of Civic Center, taking in the eastern edge of Alamo Squ
 - [Oak Street](oak-street/) — 1 building, built 2008.
 - [Octavia Street](octavia-street/) — 3 buildings, built 1946; 3 in the Hayes Valley Residential Historic District.
 - [Page Street](page-street/) — 3 buildings, built 1900–1924; 3 in the Hayes Valley Residential Historic District.
+- [Rose Street](rose-street/) — 2 buildings, built 1900–1952; 2 in the Hayes Valley Residential Historic District.
 - [Steiner Street](steiner-street/) — One of the Alamo Square Painted Ladies of Postcard Row; Alice Walker's home until 1996.
 - [Van Ness Avenue](van-ness-avenue/) — 2 buildings, built 1900–1911; 1 in the Civic Center Historic District.
 - [Waller Street](waller-street/) — 1 building, built 1931; 1 in the Hayes Valley Residential Historic District.

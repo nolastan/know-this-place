@@ -4,6 +4,7 @@ The parcels on Grace Street documented here so far, from the city's address, ass
 
 ## Documented so far
 
+- [49](49/) — A 1907 single-family house in the Western SOMA Light Industrial and Residential Historic District, with an addition permitted in 2013.
 - [66](66/) — A 1900 office building in the Western SOMA Light Industrial and Residential Historic District, with plumbing work permitted in 2008.
 
 Pages are generated from the DataSF datasets listed in each page's

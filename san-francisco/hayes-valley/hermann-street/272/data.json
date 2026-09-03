@@ -1,0 +1,163 @@
+{
+  "address": "272–276 Hermann Street, San Francisco, CA 94117",
+  "path": "/san-francisco/hayes-valley/hermann-street/272/",
+  "apn": "0868016",
+  "block": "0868",
+  "lot": "016",
+  "eas_baseid": "443080",
+  "coordinates": {
+    "lat": 37.77048,
+    "lng": -122.429672
+  },
+  "address_range": "272–276",
+  "street_numbers_on_parcel": [
+    "272",
+    "274",
+    "276"
+  ],
+  "parcel": {
+    "year_built": 1890,
+    "units": 3,
+    "stories": 3,
+    "rooms": 16,
+    "bathrooms": 3,
+    "bedrooms": 7,
+    "lot_area_sqft": 1625,
+    "building_area_sqft": 3750,
+    "lot_depth_ft": 65,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Hayes Valley",
+    "property_location_raw": "0276 0274 HERMANN             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1671402,
+    "assessed_improvement_value": 716315,
+    "last_sale_date": "2021-10-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1890",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Hayes Valley Residential Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1860–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202306019071",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-06-01",
+      "status_date": "2024-04-23",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "replace 3 (street facing) windows. visible from street. like for like, no framing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200603207066",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-03-20",
+      "status_date": "2006-09-01",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "repair (e) bathroom due to leak inceiling area. remove finishes on walls/ceiling/floor. insulate exterior wall. install new gypsum to walls and ceiling, tile to tub/shower walls and vinyl on floor. paint. no structural waor. one unit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9615694",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-08-22",
+      "status_date": "1996-09-26",
+      "estimated_cost": 9950,
+      "description": "repair dry rot",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8923834",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-12-05",
+      "status_date": "1990-02-07",
+      "estimated_cost": 3000,
+      "description": "remove & replace cabinets & counters in the kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8208289",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-10-08",
+      "status_date": "1983-08-30",
+      "estimated_cost": 10000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HERMANN&street_type=ST&address_number=272",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0868016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0868&lot=016",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0868016",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42967219008571%2037.770479905117156)%27)",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "market-octavia-survey-forms",
+      "name": "Page & Turnbull for the San Francisco Planning Department, Market & Octavia Augmentation Survey, DPR 523 survey forms, fieldwork 2006, evaluations by Kelley & VerPlanck 2010",
+      "query": "https://sfplanning.org/sites/default/files/documents/preserv/DPRforms/HV%20Cont%20pre%20existing.pdf",
+      "listing": "https://sfplanning.org/historic-preservation-survey-forms-dpr523",
+      "label": "Market & Octavia Survey DPR 523 form, 2006–2010",
+      "retrieved": "2026-09-03"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Market & Octavia Survey (2006–2010)",
+      "source": "market-octavia-survey-forms",
+      "proposed_status_code": "2D2",
+      "status_code_meaning": "A contributor to a district determined eligible for the National Register through the Section 106 process.",
+      "year_built_as_surveyed": "1890"
+    }
+  ]
+}

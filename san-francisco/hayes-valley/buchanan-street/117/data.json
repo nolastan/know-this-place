@@ -1,0 +1,126 @@
+{
+  "address": "117–119 Buchanan Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/buchanan-street/117/",
+  "apn": "0869008",
+  "block": "0869",
+  "lot": "008",
+  "eas_baseid": "493031",
+  "coordinates": {
+    "lat": 37.770927,
+    "lng": -122.427112
+  },
+  "address_range": "117–119",
+  "street_numbers_on_parcel": [
+    "117",
+    "119"
+  ],
+  "parcel": {
+    "year_built": 1922,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2205,
+    "building_area_sqft": 2940,
+    "lot_depth_ft": 90,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Hayes Valley",
+    "property_location_raw": "0119 0117 BUCHANAN            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1201662,
+    "assessed_improvement_value": 514998,
+    "last_sale_date": "2023-02-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Hayes Valley Residential Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1860–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201903044329",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-03-04",
+      "status_date": "2019-03-04",
+      "estimated_cost": 17860,
+      "revised_cost": 18000,
+      "description": "tear off. apply 3 ply modified bitument one ply torch down roof system. no framing will be removed.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2003–2019",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BUCHANAN&street_type=ST&address_number=117",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0869008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0869&lot=008",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0869008",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42711249754016%2037.770926958252005)%27)",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "market-octavia-survey-forms",
+      "name": "Page & Turnbull for the San Francisco Planning Department, Market & Octavia Augmentation Survey, DPR 523 survey forms, fieldwork 2006, evaluations by Kelley & VerPlanck 2010",
+      "query": "https://sfplanning.org/sites/default/files/documents/preserv/DPRforms/HV%20Post%201920.pdf",
+      "listing": "https://sfplanning.org/historic-preservation-survey-forms-dpr523",
+      "label": "Market & Octavia Survey DPR 523 form, 2006–2010",
+      "retrieved": "2026-09-03"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Market & Octavia Survey (2006–2010)",
+      "source": "market-octavia-survey-forms",
+      "year_built_as_surveyed": "1922"
+    }
+  ]
+}

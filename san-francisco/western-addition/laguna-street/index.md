@@ -4,6 +4,7 @@ The parcels on Laguna Street documented here so far, from the city's address, as
 
 ## Documented so far
 
+- [700](700/) — A 1928 31-unit apartment building in the Hayes Valley Residential Historic District, with a seismic retrofit permitted in 2016.
 - [916](916/) — A 1973 church, with reroofing permitted in 2008.
 - [970](970/) — Bethel A.M.E. Church, whose congregation met in a refitted Scott Street carpenter shop before buying on Powell Street in 1862.
 - [1016](1016/) — A 1900 assessor class: vacant lot, with electrical work permitted in 2026.

@@ -1,0 +1,143 @@
+{
+  "address": "561–567 Fell Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/fell-street/561/",
+  "apn": "0830022",
+  "block": "0830",
+  "lot": "022",
+  "eas_baseid": "289105",
+  "coordinates": {
+    "lat": 37.775295,
+    "lng": -122.427043
+  },
+  "address_range": "561–567",
+  "street_numbers_on_parcel": [
+    "561",
+    "563",
+    "565",
+    "567"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 4,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 2055,
+    "building_area_sqft": 3150,
+    "lot_depth_ft": 68.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Hayes Valley",
+    "property_location_raw": "0567 0561 FELL                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1393828,
+    "assessed_improvement_value": 732716,
+    "last_sale_date": "2018-02-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Hayes Valley Residential Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1860–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202002245161",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-02-24",
+      "status_date": "2020-08-14",
+      "estimated_cost": 45000,
+      "revised_cost": 75000,
+      "description": "remodel/relocate kitchen, bathroom, new bathroom & convert kitchen to study",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201807305826",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-07-30",
+      "status_date": "2019-01-17",
+      "estimated_cost": 18000,
+      "revised_cost": 46000,
+      "description": "at 3rd fl, remodel (e) one unit fell st, included remodeling kitchen, bathroom and add new study room/not a bedroom, not to be used for sleeping purposes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8609640",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-08-07",
+      "status_date": "1987-01-02",
+      "estimated_cost": 500,
+      "description": "repair stairs & porch",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FELL&street_type=ST&address_number=561",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0830022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0830&lot=022",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0830022",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42704273751237%2037.77529487381356)%27)",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "market-octavia-survey-forms",
+      "name": "Page & Turnbull for the San Francisco Planning Department, Market & Octavia Augmentation Survey, DPR 523 survey forms, fieldwork 2006, evaluations by Kelley & VerPlanck 2010",
+      "query": "https://sfplanning.org/sites/default/files/documents/preserv/DPRforms/HV%20pre%201920%20Non%20Contributory.pdf",
+      "listing": "https://sfplanning.org/historic-preservation-survey-forms-dpr523",
+      "label": "Market & Octavia Survey DPR 523 form, 2006–2010",
+      "retrieved": "2026-09-03"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Market & Octavia Survey (2006–2010)",
+      "source": "market-octavia-survey-forms",
+      "year_built_as_surveyed": "1900"
+    }
+  ]
+}
