@@ -1,0 +1,289 @@
+# Hayes Valley Residential Historic District
+
+The buildings documented here so far inside the Hayes Valley Residential Historic District, and the streets it runs through.
+
+## Streets
+
+- [Buchanan Street](/san-francisco/hayes-valley/buchanan-street/) — 20 documented buildings inside the district.
+- [Fell Street](/san-francisco/hayes-valley/fell-street/) — 18 documented buildings inside the district.
+- [Fillmore Street](/san-francisco/hayes-valley/fillmore-street/) — 7 documented buildings inside the district.
+- [Franklin Street](/san-francisco/hayes-valley/franklin-street/) — 2 documented buildings inside the district.
+- [Fulton Street](/san-francisco/hayes-valley/fulton-street/) — 3 documented buildings inside the district.
+- [Germania Street](/san-francisco/hayes-valley/germania-street/) — 10 documented buildings inside the district.
+- [Gough Street](/san-francisco/hayes-valley/gough-street/) — 8 documented buildings inside the district.
+- [Grove Street](/san-francisco/hayes-valley/grove-street/) — 16 documented buildings inside the district.
+- [Haight Street](/san-francisco/hayes-valley/haight-street/) — 12 documented buildings inside the district.
+- [Hayes Street](/san-francisco/hayes-valley/hayes-street/) — 25 documented buildings inside the district.
+- [Hermann Street](/san-francisco/hayes-valley/hermann-street/) — 12 documented buildings inside the district.
+- [Hickory Street](/san-francisco/hayes-valley/hickory-street/) — 7 documented buildings inside the district.
+- [Ivy Street](/san-francisco/hayes-valley/ivy-street/) — 8 documented buildings inside the district.
+- [Laguna Street, Hayes Valley](/san-francisco/hayes-valley/laguna-street/) — 5 documented buildings inside the district.
+- [Laguna Street, Western Addition](/san-francisco/western-addition/laguna-street/) — 1 documented building inside the district.
+- [Laussat Street](/san-francisco/hayes-valley/laussat-street/) — 5 documented buildings inside the district.
+- [Lily Street](/san-francisco/hayes-valley/lily-street/) — 12 documented buildings inside the district.
+- [Linden Street](/san-francisco/hayes-valley/linden-street/) — 6 documented buildings inside the district.
+- [Market Street](/san-francisco/hayes-valley/market-street/) — 1 documented building inside the district.
+- [Oak Street](/san-francisco/hayes-valley/oak-street/) — 20 documented buildings inside the district.
+- [Octavia Street](/san-francisco/hayes-valley/octavia-street/) — 7 documented buildings inside the district.
+- [Page Street](/san-francisco/hayes-valley/page-street/) — 20 documented buildings inside the district.
+- [Rose Street](/san-francisco/hayes-valley/rose-street/) — 2 documented buildings inside the district.
+- [Waller Street, Castro / Eureka Valley](/san-francisco/castro/waller-street/) — 1 documented building inside the district.
+- [Waller Street, Hayes Valley](/san-francisco/hayes-valley/waller-street/) — 13 documented buildings inside the district.
+- [Webster Street](/san-francisco/hayes-valley/webster-street/) — 9 documented buildings inside the district.
+
+## Buildings
+
+- [117–119 Buchanan Street](/san-francisco/hayes-valley/buchanan-street/117/) — A 1922 two-flat, with reroofing permitted in 2019.
+- [133 Buchanan Street](/san-francisco/hayes-valley/buchanan-street/133/) — A 1922 4-unit apartment building, with a seismic retrofit permitted in 2007.
+- [135 Buchanan Street](/san-francisco/hayes-valley/buchanan-street/135/) — A 1913 building, with window replacement permitted in 2015.
+- [141 Buchanan Street](/san-francisco/hayes-valley/buchanan-street/141/) — A 1900 building, with reroofing permitted in 2018.
+- [149–153 Buchanan Street](/san-francisco/hayes-valley/buchanan-street/149/) — A 1911 three-flat, with a kitchen remodel permitted in 2015.
+- [155 Buchanan Street](/san-francisco/hayes-valley/buchanan-street/155/) — A 1917 3-unit apartment building, with garage work permitted in 2014.
+- [201–203 Buchanan Street](/san-francisco/hayes-valley/buchanan-street/201/) — An 1878 single-family house, with chimney work permitted in 2011.
+- [405 Buchanan Street](/san-francisco/hayes-valley/buchanan-street/405/) — A 1900 single-family house, with an addition permitted in 2025.
+- [406–408 Buchanan Street](/san-francisco/hayes-valley/buchanan-street/406/) — A 1900 two-flat, with garage work permitted in 2013.
+- [415 Buchanan Street](/san-francisco/hayes-valley/buchanan-street/415/) — A 1900 27-unit apartment building, with a kitchen and bathroom remodel permitted in 2022.
+- [420 Buchanan Street](/san-francisco/hayes-valley/buchanan-street/420/) — An 1895 single-family house, with a bathroom remodel permitted in 2024.
+- [432 Buchanan Street](/san-francisco/hayes-valley/buchanan-street/432/) — A 1900 two-flat, with garage work permitted in 2026.
+- [500 Buchanan Street](/san-francisco/hayes-valley/buchanan-street/500/) — A 1923 13-unit apartment building, with window replacement permitted in 2022.
+- [520 Buchanan Street](/san-francisco/hayes-valley/buchanan-street/520/) — A 1924 19-unit apartment building, with a seismic retrofit permitted in 2016.
+- [530–534 Buchanan Street](/san-francisco/hayes-valley/buchanan-street/530/) — A 1908 3-unit building with a ground-floor store, with reroofing permitted in 2021.
+- [550 Buchanan Street](/san-francisco/hayes-valley/buchanan-street/550/) — A 1913 6-unit apartment building, with a seismic retrofit permitted in 2015.
+- [610 Buchanan Street](/san-francisco/hayes-valley/buchanan-street/610/) — An 1889 building, with a kitchen and bathroom remodel permitted in 2023.
+- [622 Buchanan Street](/san-francisco/hayes-valley/buchanan-street/622/) — A 1900 three-flat, with reroofing permitted in 2024.
+- [724–726 Buchanan Street](/san-francisco/hayes-valley/buchanan-street/724/) — An 1890 two-flat, with fire repair permitted in 1985.
+- [745 Buchanan Street](/san-francisco/hayes-valley/buchanan-street/745/) — A 1924 building, with a kitchen remodel permitted in 2021.
+- [340 Fell Street](/san-francisco/hayes-valley/fell-street/340/) — A 1923 garage, with electrical work permitted in 2022.
+- [474–478 Fell Street](/san-francisco/hayes-valley/fell-street/474/) — A 1900 5-unit apartment building, with a rear addition permitted in 2018.
+- [516 Fell Street](/san-francisco/hayes-valley/fell-street/516/) — A 1925 8-unit apartment building, with a seismic retrofit permitted in 2017.
+- [522 Fell Street](/san-francisco/hayes-valley/fell-street/522/) — A 1900 6-unit apartment building, with foundation work permitted in 2004.
+- [525 Fell Street](/san-francisco/hayes-valley/fell-street/525/) — A 1900 single-family house.
+- [528–530 Fell Street](/san-francisco/hayes-valley/fell-street/528/) — An 1890 6-unit apartment building, with a seismic retrofit permitted in 2017.
+- [529–531 Fell Street](/san-francisco/hayes-valley/fell-street/529/) — An 1890 two-flat, with reroofing permitted in 1992.
+- [535–537 Fell Street](/san-francisco/hayes-valley/fell-street/535/) — A 1900 two-flat, with a seismic retrofit permitted in 2018.
+- [536 Fell Street](/san-francisco/hayes-valley/fell-street/536/) — A 2005 building, with one permit record from 2004.
+- [549 Fell Street](/san-francisco/hayes-valley/fell-street/549/) — A 1900 12-unit apartment building, with a seismic retrofit permitted in 2016.
+- [550 Fell Street](/san-francisco/hayes-valley/fell-street/550/) — A 1900 15-unit apartment building, with plumbing work permitted in 2000.
+- [555–557 Fell Street](/san-francisco/hayes-valley/fell-street/555/) — A 1900 two-flat, with reroofing permitted in 2024.
+- [556–558 Fell Street](/san-francisco/hayes-valley/fell-street/556/) — An 1890 4-unit apartment building, with window replacement permitted in 1991.
+- [559 Fell Street](/san-francisco/hayes-valley/fell-street/559/) — A 1910 single-family house, with a seismic retrofit permitted in 2002.
+- [561–567 Fell Street](/san-francisco/hayes-valley/fell-street/561/) — A 1900 4-unit apartment building, with a kitchen and bathroom remodel permitted in 2020.
+- [566 Fell Street](/san-francisco/hayes-valley/fell-street/566/) — A 1925 16-unit apartment building, with a seismic retrofit permitted in 2017.
+- [571 Fell Street](/san-francisco/hayes-valley/fell-street/571/) — A 1900 three-flat, with stair work permitted in 1999.
+- [591 Fell Street](/san-francisco/hayes-valley/fell-street/591/) — An 1890 single-family house, with a rear addition permitted in 1993.
+- [112 Fillmore Street](/san-francisco/hayes-valley/fillmore-street/112/) — A 1900 single-family house, with reroofing permitted in 2004.
+- [118–122 Fillmore Street](/san-francisco/hayes-valley/fillmore-street/118/) — A 1900 three-flat, with reroofing permitted in 2010.
+- [124–128 Fillmore Street](/san-francisco/hayes-valley/fillmore-street/124/) — A 1902 four-flat, with garage work permitted in 2008.
+- [136–146 Fillmore Street](/san-francisco/hayes-valley/fillmore-street/136/) — A 1911 9-unit apartment building, with a seismic retrofit permitted in 2016.
+- [148–152 Fillmore Street](/san-francisco/hayes-valley/fillmore-street/148/) — A 1900 4-unit apartment building, with a kitchen and bathroom remodel permitted in 2025.
+- [546–548 Fillmore Street](/san-francisco/hayes-valley/fillmore-street/546/) — A 1907 church, with a seismic retrofit permitted in 2011.
+- [554 Fillmore Street](/san-francisco/hayes-valley/fillmore-street/554/) — A 1900 church, with a seismic retrofit permitted in 2020.
+- [331–333 Franklin Street](/san-francisco/hayes-valley/franklin-street/331/) — A 1908 office building, with reroofing permitted in 1990.
+- [345 Franklin Street](/san-francisco/hayes-valley/franklin-street/345/) — A 1909 office building, with window replacement permitted in 2004.
+- [443 Fulton Street](/san-francisco/hayes-valley/fulton-street/443/) — A 1992 building, with a bathroom remodel permitted in 2015.
+- [457 Fulton Street](/san-francisco/hayes-valley/fulton-street/457/) — A 1992 building, with a bathroom remodel permitted in 2023.
+- [495–497 Fulton Street](/san-francisco/hayes-valley/fulton-street/495/) — A 1909 office building, with stair work permitted in 2019.
+- [20 Germania Street](/san-francisco/hayes-valley/germania-street/20/) — A 1900 single-family house, with garage work permitted in 2009.
+- [25 Germania Street](/san-francisco/hayes-valley/germania-street/25/) — A 1900 single-family house, with a bathroom remodel permitted in 2001.
+- [27 Germania Street](/san-francisco/hayes-valley/germania-street/27/) — An 1892 single-family house, with reroofing permitted in 1996.
+- [34–36 Germania Street](/san-francisco/hayes-valley/germania-street/34/) — An 1895 two-flat, with stair work permitted in 2007.
+- [40–44 Germania Street](/san-francisco/hayes-valley/germania-street/40/) — A 1900 three-flat, with reroofing permitted in 1991.
+- [43–45 Germania Street](/san-francisco/hayes-valley/germania-street/43/) — A 1900 two-flat, with stair work permitted in 1998.
+- [46–50 Germania Street](/san-francisco/hayes-valley/germania-street/46/) — A 1900 three-flat, with reroofing permitted in 1991.
+- [47–49 Germania Street](/san-francisco/hayes-valley/germania-street/47/) — A 1900 two-flat, with facade work permitted in 1991.
+- [70 Germania Street](/san-francisco/hayes-valley/germania-street/70/) — A 1900 two-flat, with reroofing permitted in 2002.
+- [74–76 Germania Street](/san-francisco/hayes-valley/germania-street/74/) — A 1900 two-flat, with reroofing permitted in 2002.
+- [101 Gough Street](/san-francisco/hayes-valley/gough-street/101/) — A 1912 51-unit apartment building, with plumbing work permitted in 2025.
+- [115 Gough Street](/san-francisco/hayes-valley/gough-street/115/) — A 1925 41-unit apartment building, with reroofing permitted in 2017.
+- [130–152 Gough Street](/san-francisco/hayes-valley/gough-street/130/) — A 1900 12-unit apartment building, with a seismic retrofit permitted in 2017.
+- [131–135 Gough Street](/san-francisco/hayes-valley/gough-street/131/) — A 1906 hotel, with a kitchen remodel permitted in 2009.
+- [141–145 Gough Street](/san-francisco/hayes-valley/gough-street/141/) — A 1913 10-unit apartment building, with a seismic retrofit permitted in 2016.
+- [149–151 Gough Street](/san-francisco/hayes-valley/gough-street/149/) — A 1920 2-unit building with a ground-floor store, with reroofing permitted in 2001.
+- [182–198 Gough Street](/san-francisco/hayes-valley/gough-street/182/) — A 1911 store building, with a bathroom remodel permitted in 2009.
+- [199 Gough Street](/san-francisco/hayes-valley/gough-street/199/) — A 1907 4-unit apartment building, with a kitchen and bathroom remodel permitted in 2025.
+- [335 Grove Street](/san-francisco/hayes-valley/grove-street/335/) — A 1908 10-unit apartment building, with foundation work permitted in 2017.
+- [351 Grove Street](/san-francisco/hayes-valley/grove-street/351/) — A 1929 15-unit apartment building, with a seismic retrofit permitted in 2016.
+- [355–357 Grove Street](/san-francisco/hayes-valley/grove-street/355/) — A 1916 14-unit apartment building, with a seismic retrofit permitted in 2018.
+- [361–365 Grove Street](/san-francisco/hayes-valley/grove-street/361/) — A 1908 6-unit building, with reroofing permitted in 1990.
+- [434 Grove Street](/san-francisco/hayes-valley/grove-street/434/) — A 1941 single-family house, with reroofing permitted in 1999.
+- [501–503 Grove Street](/san-francisco/hayes-valley/grove-street/501/) — A 1924 10-unit apartment building, with an accessory dwelling unit permitted in 2020.
+- [506 Grove Street](/san-francisco/hayes-valley/grove-street/506/) — A 1927 19-unit apartment building, with a seismic retrofit permitted in 2015.
+- [519–521 Grove Street](/san-francisco/hayes-valley/grove-street/519/) — A 1900 two-flat, with a kitchen and bathroom remodel permitted in 2012.
+- [525 Grove Street](/san-francisco/hayes-valley/grove-street/525/) — A 1926 5-unit apartment building, with garage work permitted in 2002.
+- [530 Grove Street](/san-francisco/hayes-valley/grove-street/530/) — A 1900 10-unit apartment building, with a seismic retrofit permitted in 2000.
+- [531 Grove Street](/san-francisco/hayes-valley/grove-street/531/) — An 1880 two-flat, with deck work permitted in 2006.
+- [551 Grove Street](/san-francisco/hayes-valley/grove-street/551/) — An 1890 building, with fire repair permitted in 2006.
+- [554 Grove Street](/san-francisco/hayes-valley/grove-street/554/) — A 1941 single-family house, with a kitchen and bathroom remodel permitted in 2011.
+- [555–557 Grove Street](/san-francisco/hayes-valley/grove-street/555/) — A 1900 6-unit building, with facade work permitted in 2025.
+- [565–567 Grove Street](/san-francisco/hayes-valley/grove-street/565/) — A building, with foundation work permitted in 2004.
+- [583 Grove Street](/san-francisco/hayes-valley/grove-street/583/) — A 1900 two-flat.
+- [119 Haight Street](/san-francisco/hayes-valley/haight-street/119/) — A 1910 30-unit apartment building, with a seismic retrofit permitted in 2016.
+- [140 Haight Street](/san-francisco/hayes-valley/haight-street/140/) — A 1905 12-unit apartment building, with a kitchen and bathroom remodel permitted in 2022.
+- [150 Haight Street](/san-francisco/hayes-valley/haight-street/150/) — A 1927 42-unit apartment building, with window replacement permitted in 2018.
+- [155 Haight Street](/san-francisco/hayes-valley/haight-street/155/) — A 1963 33-unit apartment building, with a kitchen and bathroom remodel permitted in 2022.
+- [160 Haight Street](/san-francisco/hayes-valley/haight-street/160/) — An 1895 single-family house, with a kitchen and bathroom remodel permitted in 1986.
+- [185 Haight Street](/san-francisco/hayes-valley/haight-street/185/) — A 1900 single-family house, with deck work permitted in 2018.
+- [188 Haight Street](/san-francisco/hayes-valley/haight-street/188/) — An 1883 single-family house, with an addition permitted in 2014.
+- [198 Haight Street](/san-francisco/hayes-valley/haight-street/198/) — An 1895 single-family house, with a seismic retrofit permitted in 2014.
+- [333 Haight Street](/san-francisco/hayes-valley/haight-street/333/) — A 1961 4-unit tic building, with a kitchen and bathroom remodel permitted in 2022.
+- [365–369 Haight Street](/san-francisco/hayes-valley/haight-street/365/) — A 1900 four-flat, with a kitchen and bathroom remodel permitted in 1991.
+- [395–399 Haight Street](/san-francisco/hayes-valley/haight-street/395/) — An 1890 four-flat, with window replacement permitted in 2018.
+- [401–411 Haight Street](/san-francisco/hayes-valley/haight-street/401/) — A 1906 11-unit building with a ground-floor store, with a seismic retrofit permitted in 2018.
+- [327–331 Hayes Street](/san-francisco/hayes-valley/hayes-street/327/) — A 1900 3-unit building with a ground-floor store, with plumbing work permitted in 2019.
+- [355–357 Hayes Street](/san-francisco/hayes-valley/hayes-street/355/) — A 1925 office building, with deck work permitted in 2013.
+- [361 Hayes Street](/san-francisco/hayes-valley/hayes-street/361/) — A 1920 industrial building.
+- [364 Hayes Street](/san-francisco/hayes-valley/hayes-street/364/) — A 1920 store building, with a seismic retrofit permitted in 1994.
+- [381–395 Hayes Street](/san-francisco/hayes-valley/hayes-street/381/) — A 1911 32-unit apartment building, with a kitchen remodel permitted in 2015.
+- [424 Hayes Street](/san-francisco/hayes-valley/hayes-street/424/) — A 1916 3-unit apartment building, with foundation work permitted in 2008.
+- [425–427 Hayes Street](/san-francisco/hayes-valley/hayes-street/425/) — A 1906 store building, with reroofing permitted in 2026.
+- [482–488 Hayes Street](/san-francisco/hayes-valley/hayes-street/482/) — A 1910 6-unit building with a ground-floor store, with a bathroom remodel permitted in 2016.
+- [500–516 Hayes Street](/san-francisco/hayes-valley/hayes-street/500/) — A 1900 20-unit apartment building, with a seismic retrofit permitted in 2018.
+- [511–529 Hayes Street](/san-francisco/hayes-valley/hayes-street/511/) — A 1911 store building, with window replacement permitted in 2021.
+- [575–579 Hayes Street](/san-francisco/hayes-valley/hayes-street/575/) — A 1900 4-unit building with a ground-floor store, with deck work permitted in 2007.
+- [615 Hayes Street](/san-francisco/hayes-valley/hayes-street/615/) — An 1890 single-family house, with an addition permitted in 2020.
+- [616–622 Hayes Street](/san-francisco/hayes-valley/hayes-street/616/) — A 1900 6-unit apartment building, with a kitchen and bathroom remodel permitted in 2019.
+- [626–628 Hayes Street](/san-francisco/hayes-valley/hayes-street/626/) — A 1900 two-flat, with reroofing permitted in 1993.
+- [632–634 Hayes Street](/san-francisco/hayes-valley/hayes-street/632/) — A 2-unit building, with window replacement permitted in 2013.
+- [633–639 Hayes Street](/san-francisco/hayes-valley/hayes-street/633/) — A 1900 6-unit building with a ground-floor store, with foundation work permitted in 1999.
+- [641–645 Hayes Street](/san-francisco/hayes-valley/hayes-street/641/) — A 1906 7-unit building, with a kitchen and bathroom remodel permitted in 2014.
+- [644–648 Hayes Street](/san-francisco/hayes-valley/hayes-street/644/) — A 1900 three-flat, with a vertical addition permitted in 1984.
+- [650–652 Hayes Street](/san-francisco/hayes-valley/hayes-street/650/) — A 1900 two-flat, with stair work permitted in 2016.
+- [656 Hayes Street](/san-francisco/hayes-valley/hayes-street/656/) — A 1982 building, with a bathroom remodel permitted in 2025.
+- [662–664 Hayes Street](/san-francisco/hayes-valley/hayes-street/662/) — An 1873 four-flat, with reroofing permitted in 2000.
+- [672–676 Hayes Street](/san-francisco/hayes-valley/hayes-street/672/) — A 1900 three-flat, with reroofing permitted in 1988.
+- [680–684 Hayes Street](/san-francisco/hayes-valley/hayes-street/680/) — An 1885 three-flat, with a kitchen remodel permitted in 2017.
+- [686–690 Hayes Street](/san-francisco/hayes-valley/hayes-street/686/) — An 1885 three-flat, with a kitchen remodel permitted in 2021.
+- [742–744 Hayes Street](/san-francisco/hayes-valley/hayes-street/742/) — An 1890 building, with foundation work permitted in 2008.
+- [122–124 Hermann Street](/san-francisco/hayes-valley/hermann-street/122/) — A 1900 two-flat, with reroofing permitted in 2004.
+- [128 Hermann Street](/san-francisco/hayes-valley/hermann-street/128/) — An 1886 single-family house, with reroofing permitted in 2010.
+- [138 Hermann Street](/san-francisco/hayes-valley/hermann-street/138/) — A 1900 9-unit apartment building, with a seismic retrofit permitted in 2017.
+- [140–142 Hermann Street](/san-francisco/hayes-valley/hermann-street/140/) — An 1896 two-flat, with a rear addition permitted in 2006.
+- [144–148 Hermann Street](/san-francisco/hayes-valley/hermann-street/144/) — A 1900 5-unit apartment building, with facade work permitted in 2001.
+- [152 Hermann Street](/san-francisco/hayes-valley/hermann-street/152/) — A 1900 two-flat, with one permit record from 2024.
+- [156–166 Hermann Street](/san-francisco/hayes-valley/hermann-street/156/) — A 1910 7-unit apartment building, with a seismic retrofit permitted in 2017.
+- [236–238 Hermann Street](/san-francisco/hayes-valley/hermann-street/236/) — A 1925 two-flat, with reroofing permitted in 2006.
+- [244 Hermann Street](/san-francisco/hayes-valley/hermann-street/244/) — A 1947 4-unit apartment building, with reroofing permitted in 2012.
+- [252 Hermann Street](/san-francisco/hayes-valley/hermann-street/252/) — A 1925 single-family house, with window replacement permitted in 2006.
+- [266 Hermann Street](/san-francisco/hayes-valley/hermann-street/266/) — A 1900 two-flat, with a kitchen remodel permitted in 2025.
+- [272–276 Hermann Street](/san-francisco/hayes-valley/hermann-street/272/) — An 1890 three-flat, with dry-rot repair permitted in 1996.
+- [421–425 Hickory Street](/san-francisco/hayes-valley/hickory-street/421/) — A 1900 three-flat.
+- [427–431 Hickory Street](/san-francisco/hayes-valley/hickory-street/427/) — A 1900 6-unit building, with window replacement permitted in 2020.
+- [430 Hickory Street](/san-francisco/hayes-valley/hickory-street/430/) — A 1922 single-family house, with reroofing permitted in 1993.
+- [441–447 Hickory Street](/san-francisco/hayes-valley/hickory-street/441/) — A 1912 4-unit apartment building, with stair work permitted in 2006.
+- [464 Hickory Street](/san-francisco/hayes-valley/hickory-street/464/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2008.
+- [468–470 Hickory Street](/san-francisco/hayes-valley/hickory-street/468/) — A 1900 two-flat, with reroofing permitted in 2023.
+- [477 Hickory Street](/san-francisco/hayes-valley/hickory-street/477/) — An 1890 single-family house, with a rear addition permitted in 1992.
+- [376 Ivy Street](/san-francisco/hayes-valley/ivy-street/376/) — A 1937 single-family house, with garage work permitted in 2009.
+- [424 Ivy Street](/san-francisco/hayes-valley/ivy-street/424/) — A 1922 single-family house, with reroofing permitted in 1996.
+- [535–537 Ivy Street](/san-francisco/hayes-valley/ivy-street/535/) — A two-flat, with facade work permitted in 2008.
+- [551–555 Ivy Street](/san-francisco/hayes-valley/ivy-street/551/) — A 1909 3-unit tic building, with a kitchen and bathroom remodel permitted in 2009.
+- [557–559 Ivy Street](/san-francisco/hayes-valley/ivy-street/557/) — A 1924 two-flat, with a kitchen remodel permitted in 2008.
+- [565–567 Ivy Street](/san-francisco/hayes-valley/ivy-street/565/) — A 1908 two-flat, with a kitchen and bathroom remodel permitted in 1989.
+- [575–579 Ivy Street](/san-francisco/hayes-valley/ivy-street/575/) — A 1900 three-flat, with deck work permitted in 2021.
+- [581 Ivy Street](/san-francisco/hayes-valley/ivy-street/581/) — An 1890 single-family house, with a seismic retrofit permitted in 2022.
+- [100 Laguna Street](/san-francisco/hayes-valley/laguna-street/100/) — A 1912 24-unit apartment building, with a seismic retrofit permitted in 2018.
+- [124–130 Laguna Street](/san-francisco/hayes-valley/laguna-street/124/) — A 1900 7-unit apartment building, with window replacement permitted in 2015.
+- [202 Laguna Street](/san-francisco/hayes-valley/laguna-street/202/) — A 1900 single-family house, with foundation work permitted in 2018.
+- [251 Laguna Street](/san-francisco/hayes-valley/laguna-street/251/) — An 1890 single-family house, with a bathroom remodel permitted in 2000.
+- [253–263 Laguna Street](/san-francisco/hayes-valley/laguna-street/253/) — A 1908 6-unit apartment building, with garage work permitted in 2000.
+- [700 Laguna Street](/san-francisco/western-addition/laguna-street/700/) — A 1928 31-unit apartment building, with a seismic retrofit permitted in 2016.
+- [3 Laussat Street](/san-francisco/hayes-valley/laussat-street/3/) — A 1924 single-family house, with stair work permitted in 2014.
+- [11 Laussat Street](/san-francisco/hayes-valley/laussat-street/11/) — A building, with one permit record from 2005.
+- [61 Laussat Street](/san-francisco/hayes-valley/laussat-street/61/) — A 1900 single-family house, with a bathroom remodel permitted in 2009.
+- [64–66 Laussat Street](/san-francisco/hayes-valley/laussat-street/64/) — A 1900 two-flat, with plumbing work permitted in 1998.
+- [65–67 Laussat Street](/san-francisco/hayes-valley/laussat-street/65/) — A 1900 two-flat, with an accessory dwelling unit permitted in 2022.
+- [219 Lily Street](/san-francisco/hayes-valley/lily-street/219/) — A 1946 2-unit tic building, with a bathroom remodel permitted in 2026.
+- [231–235 Lily Street](/san-francisco/hayes-valley/lily-street/231/) — A 1909 4-unit apartment building, with reroofing permitted in 2010.
+- [281–291 Lily Street](/san-francisco/hayes-valley/lily-street/281/) — A 1900 5-unit apartment building, with a kitchen and bathroom remodel permitted in 2022.
+- [289 Lily Street](/san-francisco/hayes-valley/lily-street/289/) — A 1900 two-flat, with reroofing permitted in 2019.
+- [308 Lily Street](/san-francisco/hayes-valley/lily-street/308/) — An 1890 two-flat, with a bathroom remodel permitted in 2022.
+- [310 Lily Street](/san-francisco/hayes-valley/lily-street/310/) — A 1900 two-flat, with reroofing permitted in 2024.
+- [312 Lily Street](/san-francisco/hayes-valley/lily-street/312/) — A 1900 two-flat, with a rear addition permitted in 1990.
+- [320 Lily Street](/san-francisco/hayes-valley/lily-street/320/) — A 1900 single-family house, with reroofing permitted in 1994.
+- [368 Lily Street](/san-francisco/hayes-valley/lily-street/368/) — A 1900 single-family house, with deck work permitted in 2021.
+- [380–388 Lily Street](/san-francisco/hayes-valley/lily-street/380/) — An 1895 two-flat, with window replacement permitted in 2021.
+- [386 Lily Street](/san-francisco/hayes-valley/lily-street/386/) — A 1900 two-flat.
+- [452–454 Lily Street](/san-francisco/hayes-valley/lily-street/452/) — A 1900 two-flat, with an addition permitted in 2019.
+- [333 Linden Street](/san-francisco/hayes-valley/linden-street/333/) — A 1971 industrial building, with facade work permitted in 2017.
+- [425–431 Linden Street](/san-francisco/hayes-valley/linden-street/425/) — A 1925 four-flat, with a kitchen and bathroom remodel permitted in 2023.
+- [450 Linden Street](/san-francisco/hayes-valley/linden-street/450/) — A 1924 industrial building, with a seismic retrofit permitted in 1996.
+- [541–547 Linden Street](/san-francisco/hayes-valley/linden-street/541/) — An 1895 4-unit apartment building, with fire repair permitted in 1998.
+- [555–557 Linden Street](/san-francisco/hayes-valley/linden-street/555/) — An 1890 two-flat, with facade work permitted in 2003.
+- [565 Linden Street](/san-francisco/hayes-valley/linden-street/565/) — A 1931 single-family house, with a bathroom remodel permitted in 2005.
+- [1800–1814 Market Street](/san-francisco/hayes-valley/market-street/1800/) — A 1900 office building, with a vertical addition permitted in 1999.
+- [221 Oak Street](/san-francisco/hayes-valley/oak-street/221/) — A 1906 industrial building, with a kitchen and bathroom remodel permitted in 2014.
+- [248–250 Oak Street](/san-francisco/hayes-valley/oak-street/248/) — A 1900 garage, with a bathroom remodel permitted in 2018.
+- [265 Oak Street](/san-francisco/hayes-valley/oak-street/265/) — A 1959 5-unit apartment building, with one permit record from 2019.
+- [381–383 Oak Street](/san-francisco/hayes-valley/oak-street/381/) — An 1885 building, with a kitchen and bathroom remodel permitted in 2017.
+- [409 Oak Street](/san-francisco/hayes-valley/oak-street/409/) — A 1941 single-family house, with a bathroom remodel permitted in 2015.
+- [427–429 Oak Street](/san-francisco/hayes-valley/oak-street/427/) — An 1880 two-flat, with foundation work permitted in 2016.
+- [435–437 Oak Street](/san-francisco/hayes-valley/oak-street/435/) — A 1900 two-flat, with a kitchen and bathroom remodel permitted in 2016.
+- [436 Oak Street](/san-francisco/hayes-valley/oak-street/436/) — A 1900 single-family house, with garage work permitted in 1984.
+- [452 Oak Street](/san-francisco/hayes-valley/oak-street/452/) — A 1900 12-unit apartment building, with a seismic retrofit permitted in 2017.
+- [461 Oak Street](/san-francisco/hayes-valley/oak-street/461/) — An apartment building, with a seismic retrofit permitted in 2013.
+- [463–467 Oak Street](/san-francisco/hayes-valley/oak-street/463/) — An 1875 two-flat, with a bathroom remodel permitted in 2004.
+- [477–479 Oak Street](/san-francisco/hayes-valley/oak-street/477/) — A 1900 two-flat, with a kitchen and bathroom remodel permitted in 2019.
+- [483–485 Oak Street](/san-francisco/hayes-valley/oak-street/483/) — An 1890 2-unit apartment building, with foundation work permitted in 2022.
+- [484 Oak Street](/san-francisco/hayes-valley/oak-street/484/) — A 1900 single-family house, with reroofing permitted in 2005.
+- [501 Oak Street](/san-francisco/hayes-valley/oak-street/501/) — A 1961 7-unit apartment building, with a seismic retrofit permitted in 2015.
+- [505–509 Oak Street](/san-francisco/hayes-valley/oak-street/505/) — A 1900 three-flat, with a seismic retrofit permitted in 2017.
+- [545–547 Oak Street](/san-francisco/hayes-valley/oak-street/545/) — A 1900 three-flat, with a kitchen and bathroom remodel permitted in 2016.
+- [551 Oak Street](/san-francisco/hayes-valley/oak-street/551/) — A 1900 building, with a kitchen and bathroom remodel permitted in 1991.
+- [607–619 Oak Street](/san-francisco/hayes-valley/oak-street/607/) — A 1906 6-unit building, with an accessory dwelling unit permitted in 2026.
+- [660 Oak Street](/san-francisco/hayes-valley/oak-street/660/) — A 1936 church, with stair work permitted in 2018.
+- [209–211 Octavia Street](/san-francisco/hayes-valley/octavia-street/209/) — A 1946 two-flat, with reroofing permitted in 1995.
+- [215–217 Octavia Street](/san-francisco/hayes-valley/octavia-street/215/) — A 1946 two-flat, with a kitchen and bathroom remodel permitted in 2014.
+- [221 Octavia Street](/san-francisco/hayes-valley/octavia-street/221/) — A 1946 building, with a seismic retrofit permitted in 2013.
+- [431 Octavia Street](/san-francisco/hayes-valley/octavia-street/431/) — A 1926 15-unit apartment building, with a seismic retrofit permitted in 2016.
+- [615–617 Octavia Street](/san-francisco/hayes-valley/octavia-street/615/) — A 1900 two-flat, with a kitchen and bathroom remodel permitted in 2023.
+- [636 Octavia Street](/san-francisco/hayes-valley/octavia-street/636/) — A 1927 9-unit apartment building, with garage work permitted in 2016.
+- [640 Octavia Street](/san-francisco/hayes-valley/octavia-street/640/) — A 1923 4-unit apartment building, with reroofing permitted in 2023.
+- [66 Page Street](/san-francisco/hayes-valley/page-street/66/) — A 1924 industrial building, with a seismic retrofit permitted in 2008.
+- [140 Page Street](/san-francisco/hayes-valley/page-street/140/) — A 1925 9-unit apartment building, with an addition permitted in 2020.
+- [240 Page Street](/san-francisco/hayes-valley/page-street/240/) — A 1909 church, with a seismic retrofit permitted in 2019.
+- [241–247 Page Street](/san-francisco/hayes-valley/page-street/241/) — A 1900 9-unit apartment building, with a seismic retrofit permitted in 2016.
+- [248–250 Page Street](/san-francisco/hayes-valley/page-street/248/) — A 1925 20-unit apartment building, with an accessory dwelling unit permitted in 2017.
+- [254 Page Street](/san-francisco/hayes-valley/page-street/254/) — An 1885 building, with a kitchen and bathroom remodel permitted in 2023.
+- [260 Page Street](/san-francisco/hayes-valley/page-street/260/) — A 1926 11-unit apartment building, with a seismic retrofit permitted in 2014.
+- [265 Page Street](/san-francisco/hayes-valley/page-street/265/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2026.
+- [290–292 Page Street](/san-francisco/hayes-valley/page-street/290/) — An 1890 three-flat, with reroofing permitted in 2017.
+- [294 Page Street](/san-francisco/hayes-valley/page-street/294/) — A 1900 single-family house, with window replacement permitted in 2017.
+- [300 Page Street](/san-francisco/hayes-valley/page-street/300/) — A 1922 church, with reroofing permitted in 2005.
+- [308–310 Page Street](/san-francisco/hayes-valley/page-street/308/) — A 1900 two-flat, with stair work permitted in 1997.
+- [331–333 Page Street](/san-francisco/hayes-valley/page-street/331/) — A 1900 4-unit apartment building, with a kitchen and bathroom remodel permitted in 1998.
+- [340 Page Street](/san-francisco/hayes-valley/page-street/340/) — A 1937 20-unit apartment building, with reroofing permitted in 2005.
+- [350 Page Street](/san-francisco/hayes-valley/page-street/350/) — A 1900 two-flat, with reroofing permitted in 2021.
+- [364 Page Street](/san-francisco/hayes-valley/page-street/364/) — A 1929 22-unit apartment building, with a seismic retrofit permitted in 2015.
+- [380 Page Street](/san-francisco/hayes-valley/page-street/380/) — A 1923 6-unit apartment building, with a seismic retrofit permitted in 2017.
+- [384–388 Page Street](/san-francisco/hayes-valley/page-street/384/) — A 1900 9-unit building, with reroofing permitted in 2020.
+- [390 Page Street](/san-francisco/hayes-valley/page-street/390/) — A 1900 2-unit apartment building, with reroofing permitted in 1993.
+- [400–426 Page Street](/san-francisco/hayes-valley/page-street/400/) — A 1928 25-unit apartment building, with garage work permitted in 2020.
+- [277–279 Rose Street](/san-francisco/hayes-valley/rose-street/277/) — A 1952 two-flat, with window replacement permitted in 2023.
+- [281–287 Rose Street](/san-francisco/hayes-valley/rose-street/281/) — A 1900 4-unit apartment building, with reroofing permitted in 1994.
+- [371 Waller Street](/san-francisco/castro/waller-street/371/) — A 1900 10-unit apartment building, with a seismic retrofit permitted in 2016.
+- [22–52 Waller Street](/san-francisco/hayes-valley/waller-street/22/) — A 1909 church, with deck work permitted in 2009.
+- [67 Waller Street](/san-francisco/hayes-valley/waller-street/67/) — A 1910 building, with foundation work permitted in 2014.
+- [73 Waller Street](/san-francisco/hayes-valley/waller-street/73/) — An 1890 building, with reroofing permitted in 2015.
+- [80 Waller Street](/san-francisco/hayes-valley/waller-street/80/) — An 1890 building, with a kitchen and bathroom remodel permitted in 2018.
+- [201 Waller Street](/san-francisco/hayes-valley/waller-street/201/) — A 1931 6-unit apartment building, with a kitchen and bathroom remodel permitted in 2024.
+- [210 Waller Street](/san-francisco/hayes-valley/waller-street/210/) — A 1900 two-flat, with reroofing permitted in 1991.
+- [216 Waller Street](/san-francisco/hayes-valley/waller-street/216/) — A building, with a kitchen remodel permitted in 2010.
+- [222 Waller Street](/san-francisco/hayes-valley/waller-street/222/) — A 1900 single-family house, with a kitchen remodel permitted in 2021.
+- [224–230 Waller Street](/san-francisco/hayes-valley/waller-street/224/) — A 1900 four-flat, with stair work permitted in 2008.
+- [231 Waller Street](/san-francisco/hayes-valley/waller-street/231/) — A 1920 single-family house, with an addition permitted in 2012.
+- [252 Waller Street](/san-francisco/hayes-valley/waller-street/252/) — A 1900 building, with reroofing permitted in 1998.
+- [272 Waller Street](/san-francisco/hayes-valley/waller-street/272/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2002.
+- [307–311 Waller Street](/san-francisco/hayes-valley/waller-street/307/) — A 1900 three-flat, with deck work permitted in 2011.
+- [67–69 Webster Street](/san-francisco/hayes-valley/webster-street/67/) — A 1900 two-flat, with reroofing permitted in 1998.
+- [70–72 Webster Street](/san-francisco/hayes-valley/webster-street/70/) — A 1900 two-flat, with garage work permitted in 2016.
+- [74–78 Webster Street](/san-francisco/hayes-valley/webster-street/74/) — A 1900 three-flat, with a kitchen and bathroom remodel permitted in 2022.
+- [82–84 Webster Street](/san-francisco/hayes-valley/webster-street/82/) — A 1900 two-flat, with a kitchen and bathroom remodel permitted in 2001.
+- [86 Webster Street](/san-francisco/hayes-valley/webster-street/86/) — An 1890 single-family house, with a bathroom remodel permitted in 2020.
+- [88–90 Webster Street](/san-francisco/hayes-valley/webster-street/88/) — A 1900 two-flat, with foundation work permitted in 1999.
+- [92–98 Webster Street](/san-francisco/hayes-valley/webster-street/92/) — A 1900 4-unit apartment building, with reroofing permitted in 1992.
+- [97–99 Webster Street](/san-francisco/hayes-valley/webster-street/97/) — A 1900 2-unit building with a ground-floor store, with a rear addition permitted in 1986.
+- [380 Webster Street](/san-francisco/hayes-valley/webster-street/380/) — An assessor class: vacant lot.
+
+The district record is the city's; the buildings beneath it are
+generated from the DataSF datasets listed in each page's Sources
+footer, and are corrected by hand as readers write in.

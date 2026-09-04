@@ -1,0 +1,171 @@
+# Shotwell Street Historic District
+
+The buildings documented here so far inside the Shotwell Street Historic District, and the streets it runs through.
+
+## Streets
+
+- [20th Street](/san-francisco/mission/20th-street/) — 1 documented building inside the district.
+- [21st Street](/san-francisco/mission/21st-street/) — 5 documented buildings inside the district.
+- [22nd Street](/san-francisco/mission/22nd-street/) — 3 documented buildings inside the district.
+- [23rd Street](/san-francisco/mission/23rd-street/) — 3 documented buildings inside the district.
+- [24th Street](/san-francisco/mission/24th-street/) — 6 documented buildings inside the district.
+- [25th Street](/san-francisco/mission/25th-street/) — 7 documented buildings inside the district.
+- [Folsom Street](/san-francisco/mission/folsom-street/) — 14 documented buildings inside the district.
+- [Horace Street](/san-francisco/mission/horace-street/) — 1 documented building inside the district.
+- [Shotwell Street](/san-francisco/mission/shotwell-street/) — 91 documented buildings inside the district.
+- [South Van Ness Avenue](/san-francisco/mission/south-van-ness-avenue/) — 17 documented buildings inside the district.
+
+## Buildings
+
+- [3339–3345 20th Street](/san-francisco/mission/20th-street/3339/) — An 1885 4-unit apartment building, with a seismic retrofit permitted in 2010.
+- [3023 21st Street](/san-francisco/mission/21st-street/3023/) — A 1900 3-unit apartment building, with reroofing permitted in 1992.
+- [3025 21st Street](/san-francisco/mission/21st-street/3025/) — An 1880 7-unit apartment building, with an accessory dwelling unit permitted in 2019.
+- [3057 21st Street](/san-francisco/mission/21st-street/3057/) — A 1963 4-unit apartment building, with a seismic retrofit permitted in 2019.
+- [3061 21st Street](/san-francisco/mission/21st-street/3061/) — A 1963 4-unit apartment building.
+- [3074–3088 21st Street](/san-francisco/mission/21st-street/3074/) — A 1900 7-unit apartment building, with a seismic retrofit permitted in 2016.
+- [3050–3060 22nd Street](/san-francisco/mission/22nd-street/3050/) — A 1908 6-unit apartment building, with a seismic retrofit permitted in 2017.
+- [3062 22nd Street](/san-francisco/mission/22nd-street/3062/) — A 1908 three-flat, with one permit record from 2009.
+- [3068–3084 22nd Street](/san-francisco/mission/22nd-street/3068/) — A 1900 9-unit apartment building, with a seismic retrofit permitted in 2014.
+- [3132–3134 23rd Street](/san-francisco/mission/23rd-street/3132/) — A 1900 three-flat, with a kitchen and bathroom remodel permitted in 2020.
+- [3141–3145 23rd Street](/san-francisco/mission/23rd-street/3141/) — A 1900 3-unit building with a ground-floor store, with plumbing work permitted in 1998.
+- [3151–3155 23rd Street](/san-francisco/mission/23rd-street/3151/) — An 1880 4-unit building with a ground-floor store, with foundation work permitted in 1985.
+- [3138–3146 24th Street](/san-francisco/mission/24th-street/3138/) — An 1885 9-unit building with a ground-floor store, with a kitchen remodel permitted in 1996.
+- [3150–3152 24th Street](/san-francisco/mission/24th-street/3150/) — An 1890 4-unit building with a ground-floor store, with a kitchen remodel permitted in 2004.
+- [3151–3153 24th Street](/san-francisco/mission/24th-street/3151/) — A 1900 4-unit building with a ground-floor store, with a bathroom remodel permitted in 1992.
+- [3155 24th Street](/san-francisco/mission/24th-street/3155/) — A 1900 four-flat, with dry-rot repair permitted in 2006.
+- [3159–3163 24th Street](/san-francisco/mission/24th-street/3159/) — A 1900 three-flat, with permit records from 2006 to 2022.
+- [3165–3169 24th Street](/san-francisco/mission/24th-street/3165/) — A 1900 three-flat, with a kitchen and bathroom remodel permitted in 2019.
+- [3250–3252 25th Street](/san-francisco/mission/25th-street/3250/) — A 1900 three-flat, with foundation work permitted in 2005.
+- [3254 25th Street](/san-francisco/mission/25th-street/3254/) — A 1900 single-family house, with reroofing permitted in 1994.
+- [3258 25th Street](/san-francisco/mission/25th-street/3258/) — A 1900 single-family house, with deck work permitted in 2021.
+- [3262 25th Street](/san-francisco/mission/25th-street/3262/) — A 1900 single-family house, with garage work permitted in 2024.
+- [3267–3273 25th Street](/san-francisco/mission/25th-street/3267/) — A 1915 4-unit apartment building, with reroofing permitted in 1997.
+- [3270 25th Street](/san-francisco/mission/25th-street/3270/) — A 1900 single-family house, with a rear addition permitted in 1989.
+- [3272 25th Street](/san-francisco/mission/25th-street/3272/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2016.
+- [2500–2510 Folsom Street](/san-francisco/mission/folsom-street/2500/) — A 1900 10-unit building with a ground-floor store, with an addition permitted in 2017.
+- [2512–2516 Folsom Street](/san-francisco/mission/folsom-street/2512/) — A 1900 three-flat, with stair work permitted in 2004.
+- [2520 Folsom Street](/san-francisco/mission/folsom-street/2520/) — A 1978 two-flat.
+- [2528–2532 Folsom Street](/san-francisco/mission/folsom-street/2528/) — A 1978 three-flat, with garage work permitted in 2006.
+- [2534 Folsom Street](/san-francisco/mission/folsom-street/2534/) — A 1904 single-family house, with garage work permitted in 2019.
+- [2540–2542 Folsom Street](/san-francisco/mission/folsom-street/2540/) — A 1908 two-flat, with reroofing permitted in 1999.
+- [2546–2548 Folsom Street](/san-francisco/mission/folsom-street/2546/) — A 1900 2-unit tic building, with garage work permitted in 2004.
+- [2550–2552 Folsom Street](/san-francisco/mission/folsom-street/2550/) — An 1880 two-flat, with a kitchen remodel permitted in 2017.
+- [2906 Folsom Street](/san-francisco/mission/folsom-street/2906/) — A 1900 4-unit apartment building, with a vertical addition permitted in 2014.
+- [2908 Folsom Street](/san-francisco/mission/folsom-street/2908/) — A 1900 4-unit apartment building, with one permit record from 2011.
+- [2918 Folsom Street](/san-francisco/mission/folsom-street/2918/) — A 1900 single-family house.
+- [2924 Folsom Street](/san-francisco/mission/folsom-street/2924/) — A 1900 single-family house.
+- [2928 Folsom Street](/san-francisco/mission/folsom-street/2928/) — A 1900 single-family house, with reroofing permitted in 2004.
+- [2934 Folsom Street](/san-francisco/mission/folsom-street/2934/) — A 1900 two dwellings on one parcel, with window replacement permitted in 2014.
+- [1 Horace Street](/san-francisco/mission/horace-street/1/) — A 1937 single-family house, with garage work permitted in 2014.
+- [607 Shotwell Street](/san-francisco/mission/shotwell-street/607/) — A 1900 4-unit tic building, with a kitchen and bathroom remodel permitted in 2019.
+- [618 Shotwell Street](/san-francisco/mission/shotwell-street/618/) — A 1900 three-flat, with reroofing permitted in 2021.
+- [625–629 Shotwell Street](/san-francisco/mission/shotwell-street/625/) — A 1900 5-unit apartment building, with reroofing permitted in 1994.
+- [626–628 Shotwell Street](/san-francisco/mission/shotwell-street/626/) — A 1900 7-unit apartment building, with a seismic retrofit permitted in 2019.
+- [631 Shotwell Street](/san-francisco/mission/shotwell-street/631/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2021.
+- [632–634 Shotwell Street](/san-francisco/mission/shotwell-street/632/) — A 1915 three-flat, with a rear addition permitted in 1989.
+- [635 Shotwell Street](/san-francisco/mission/shotwell-street/635/) — A 1900 two-flat, with window replacement permitted in 2015.
+- [639 Shotwell Street](/san-francisco/mission/shotwell-street/639/) — A 1900 3-unit tic building, with foundation work permitted in 1999.
+- [640–642 Shotwell Street](/san-francisco/mission/shotwell-street/640/) — A 1900 2-unit tic building, with an addition permitted in 2009.
+- [643–645 Shotwell Street](/san-francisco/mission/shotwell-street/643/) — An 1895 three-flat, with reroofing permitted in 1991.
+- [647 Shotwell Street](/san-francisco/mission/shotwell-street/647/) — A 1924 3-unit apartment building, with reroofing permitted in 2019.
+- [651–657 Shotwell Street](/san-francisco/mission/shotwell-street/651/) — A 1900 4-unit apartment building, with reroofing permitted in 2016.
+- [671–673 Shotwell Street](/san-francisco/mission/shotwell-street/671/) — A 1900 three-flat, with deck work permitted in 2021.
+- [680–682 Shotwell Street](/san-francisco/mission/shotwell-street/680/) — A 1900 2-unit apartment building, with a vertical addition permitted in 1989.
+- [688–692 Shotwell Street](/san-francisco/mission/shotwell-street/688/) — A 1900 three-flat, with stair work permitted in 2008.
+- [694 Shotwell Street](/san-francisco/mission/shotwell-street/694/) — A 1900 5-unit apartment building, with a bathroom remodel permitted in 1992.
+- [700 Shotwell Street](/san-francisco/mission/shotwell-street/700/) — A 1963 4-unit apartment building, with one permit record from 2007.
+- [701 Shotwell Street](/san-francisco/mission/shotwell-street/701/) — An 1880 two-flat, with reroofing permitted in 2015.
+- [703 Shotwell Street](/san-francisco/mission/shotwell-street/703/) — A 1900 three-flat, with plumbing work permitted in 2013.
+- [705 Shotwell Street](/san-francisco/mission/shotwell-street/705/) — A 1900 two-flat, with a bathroom remodel permitted in 1986.
+- [707 Shotwell Street](/san-francisco/mission/shotwell-street/707/) — An 1885 two-flat, with reroofing permitted in 2015.
+- [709 Shotwell Street](/san-francisco/mission/shotwell-street/709/) — A 1900 two-flat, with a bathroom remodel permitted in 2023.
+- [711 Shotwell Street](/san-francisco/mission/shotwell-street/711/) — A 1900 single-family house, with an addition permitted in 2007.
+- [712–716 Shotwell Street](/san-francisco/mission/shotwell-street/712/) — A 1927 4-unit apartment building, with a kitchen and bathroom remodel permitted in 2014.
+- [715 Shotwell Street](/san-francisco/mission/shotwell-street/715/) — A 1900 single-family house, with one permit record from 2008.
+- [718–720 Shotwell Street](/san-francisco/mission/shotwell-street/718/) — A 1900 3-unit apartment building, with reroofing permitted in 2002.
+- [719–721 Shotwell Street](/san-francisco/mission/shotwell-street/719/) — An 1880 3-unit apartment building, with foundation work permitted in 1999.
+- [722 Shotwell Street](/san-francisco/mission/shotwell-street/722/) — A 1900 11-unit apartment building, with a seismic retrofit permitted in 2016.
+- [723–725 Shotwell Street](/san-francisco/mission/shotwell-street/723/) — An 1890 two-flat, with foundation work permitted in 2006.
+- [727 Shotwell Street](/san-francisco/mission/shotwell-street/727/) — An 1880 single-family house, with a rear addition permitted in 2000.
+- [729 Shotwell Street](/san-francisco/mission/shotwell-street/729/) — A 1900 single-family house, with fire repair permitted in 2005.
+- [731 Shotwell Street](/san-francisco/mission/shotwell-street/731/) — A 1900 single-family house, with foundation work permitted in 1991.
+- [733 Shotwell Street](/san-francisco/mission/shotwell-street/733/) — A 1900 two-flat, with window replacement permitted in 2003.
+- [740 Shotwell Street](/san-francisco/mission/shotwell-street/740/) — A 1900 two-flat, with a rear addition permitted in 2019.
+- [741 Shotwell Street](/san-francisco/mission/shotwell-street/741/) — A 1960 single-family house, with reroofing permitted in 2004.
+- [746 Shotwell Street](/san-francisco/mission/shotwell-street/746/) — A 1927 single-family house, with a kitchen remodel permitted in 2020.
+- [747 Shotwell Street](/san-francisco/mission/shotwell-street/747/) — A 1900 single-family house, with one permit record from 2019.
+- [754 Shotwell Street](/san-francisco/mission/shotwell-street/754/) — A 1900 two-flat, with a kitchen and bathroom remodel permitted in 2023.
+- [760–762 Shotwell Street](/san-francisco/mission/shotwell-street/760/) — An 1875 3-unit apartment building, with a bathroom remodel permitted in 1990.
+- [764 Shotwell Street](/san-francisco/mission/shotwell-street/764/) — A 1900 three-flat, with a rear addition permitted in 1987.
+- [770 Shotwell Street](/san-francisco/mission/shotwell-street/770/) — A 1900 3-unit apartment building, with reroofing permitted in 2024.
+- [772–774 Shotwell Street](/san-francisco/mission/shotwell-street/772/) — A 1900 4-unit apartment building, with foundation work permitted in 2004.
+- [778–788 Shotwell Street](/san-francisco/mission/shotwell-street/778/) — A 1908 6-unit apartment building, with a seismic retrofit permitted in 2018.
+- [790 Shotwell Street](/san-francisco/mission/shotwell-street/790/) — A 1900 single-family house.
+- [806 Shotwell Street](/san-francisco/mission/shotwell-street/806/) — A 1900 single-family house.
+- [814 Shotwell Street](/san-francisco/mission/shotwell-street/814/) — A 1900 two-flat, with foundation work permitted in 2009.
+- [816 Shotwell Street](/san-francisco/mission/shotwell-street/816/) — A 1900 four-flat, with an addition permitted in 2019.
+- [822 Shotwell Street](/san-francisco/mission/shotwell-street/822/) — A 1915 two-flat, with one permit record from 2008.
+- [824 Shotwell Street](/san-francisco/mission/shotwell-street/824/) — A 1916 single-family house, with an accessory dwelling unit permitted in 2025.
+- [830–832 Shotwell Street](/san-francisco/mission/shotwell-street/830/) — A 1922 two-flat, with foundation work permitted in 2019.
+- [840–844 Shotwell Street](/san-francisco/mission/shotwell-street/840/) — A 1905 6-unit apartment building, with an accessory dwelling unit permitted in 2016.
+- [846 Shotwell Street](/san-francisco/mission/shotwell-street/846/) — A 1900 5-unit apartment building, with foundation work permitted in 2020.
+- [854–856 Shotwell Street](/san-francisco/mission/shotwell-street/854/) — A 1900 three-flat, with a bathroom remodel permitted in 2009.
+- [858 Shotwell Street](/san-francisco/mission/shotwell-street/858/) — A 1900 single-family house, with reroofing permitted in 2006.
+- [862 Shotwell Street](/san-francisco/mission/shotwell-street/862/) — A 1900 5-unit apartment building, with a seismic retrofit permitted in 2026.
+- [868 Shotwell Street](/san-francisco/mission/shotwell-street/868/) — A 1904 5-unit apartment building, with one permit record from 1992.
+- [869–873 Shotwell Street](/san-francisco/mission/shotwell-street/869/) — A 1900 three-flat, with reroofing permitted in 1996.
+- [870–874 Shotwell Street](/san-francisco/mission/shotwell-street/870/) — A 1908 3-unit tic building, with a kitchen and bathroom remodel permitted in 2013.
+- [875 Shotwell Street](/san-francisco/mission/shotwell-street/875/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2015.
+- [877 Shotwell Street](/san-francisco/mission/shotwell-street/877/) — A 1904 two-flat, with reroofing permitted in 2002.
+- [879–881 Shotwell Street](/san-francisco/mission/shotwell-street/879/) — A 1904 two-flat, with permit records from 2002 to 2025.
+- [880–890 Shotwell Street](/san-francisco/mission/shotwell-street/880/) — A 1900 6-unit apartment building, with a kitchen remodel permitted in 1986.
+- [908 Shotwell Street](/san-francisco/mission/shotwell-street/908/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2015.
+- [910 Shotwell Street](/san-francisco/mission/shotwell-street/910/) — An 1875 two-flat, with foundation work permitted in 2026.
+- [932 Shotwell Street](/san-francisco/mission/shotwell-street/932/) — A 1900 3-unit apartment building, with window replacement permitted in 2013.
+- [934 Shotwell Street](/san-francisco/mission/shotwell-street/934/) — A 1900 single-family house, with stair work permitted in 2008.
+- [938 Shotwell Street](/san-francisco/mission/shotwell-street/938/) — A 1900 two-flat, with deck work permitted in 2007.
+- [981 Shotwell Street](/san-francisco/mission/shotwell-street/981/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2018.
+- [1003–1007 Shotwell Street](/san-francisco/mission/shotwell-street/1003/) — A 1916 5-unit building with a ground-floor store, with reroofing permitted in 2018.
+- [1010 Shotwell Street](/san-francisco/mission/shotwell-street/1010/) — A 1900 single-family house, with reroofing permitted in 1997.
+- [1011 Shotwell Street](/san-francisco/mission/shotwell-street/1011/) — A 1900 4-unit tic building, with a seismic retrofit permitted in 2018.
+- [1012 Shotwell Street](/san-francisco/mission/shotwell-street/1012/) — A 1900 three-flat, with a kitchen and bathroom remodel permitted in 2020.
+- [1013 Shotwell Street](/san-francisco/mission/shotwell-street/1013/) — A 1900 three-flat, with reroofing permitted in 1990.
+- [1014 Shotwell Street](/san-francisco/mission/shotwell-street/1014/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2005.
+- [1016–1018 Shotwell Street](/san-francisco/mission/shotwell-street/1016/) — A 1900 6-unit apartment building, with reroofing permitted in 2002.
+- [1020 Shotwell Street](/san-francisco/mission/shotwell-street/1020/) — A 1900 two-flat, with reroofing permitted in 1998.
+- [1022 Shotwell Street](/san-francisco/mission/shotwell-street/1022/) — A 1900 4-unit apartment building, with reroofing permitted in 1993.
+- [1024 Shotwell Street](/san-francisco/mission/shotwell-street/1024/) — A 1900 two-flat, with fire repair permitted in 1991.
+- [1026 Shotwell Street](/san-francisco/mission/shotwell-street/1026/) — A 1900 three-flat, with window replacement permitted in 2022.
+- [1064–1066 Shotwell Street](/san-francisco/mission/shotwell-street/1064/) — A 1909 two-flat, with garage work permitted in 2004.
+- [1070–1072 Shotwell Street](/san-francisco/mission/shotwell-street/1070/) — A 1900 two-flat, with reroofing permitted in 2017.
+- [1074 Shotwell Street](/san-francisco/mission/shotwell-street/1074/) — A 1900 single-family house, with window replacement permitted in 2010.
+- [1080 Shotwell Street](/san-francisco/mission/shotwell-street/1080/) — A 1900 4-unit apartment building, with a seismic retrofit permitted in 2014.
+- [1084–1086 Shotwell Street](/san-francisco/mission/shotwell-street/1084/) — A 1900 two-flat, with window replacement permitted in 2025.
+- [1087–1089 Shotwell Street](/san-francisco/mission/shotwell-street/1087/) — A 1912 three-flat, with a rear addition permitted in 1988.
+- [1100–1102 Shotwell Street](/san-francisco/mission/shotwell-street/1100/) — A 1900 two-flat, with a kitchen and bathroom remodel permitted in 2024.
+- [1105 Shotwell Street](/san-francisco/mission/shotwell-street/1105/) — A 1900 single-family house, with reroofing permitted in 1997.
+- [1112–1120 Shotwell Street](/san-francisco/mission/shotwell-street/1112/) — A 1907 7-unit apartment building, with an accessory dwelling unit permitted in 2020.
+- [1115 Shotwell Street](/san-francisco/mission/shotwell-street/1115/) — A 1900 single-family house, with reroofing permitted in 1997.
+- [1119 Shotwell Street](/san-francisco/mission/shotwell-street/1119/) — A 1900 7-unit apartment building, with a seismic retrofit permitted in 2017.
+- [1125 Shotwell Street](/san-francisco/mission/shotwell-street/1125/) — A 1900 single-family house, with window replacement permitted in 2005.
+- [901–905 South Van Ness Avenue](/san-francisco/mission/south-van-ness-avenue/901/) — A 1900 6-unit building with a ground-floor store, with a kitchen remodel permitted in 2015.
+- [915 South Van Ness Avenue](/san-francisco/mission/south-van-ness-avenue/915/) — A 1900 two-flat.
+- [919 South Van Ness Avenue](/san-francisco/mission/south-van-ness-avenue/919/) — A 1900 single-family house, with reroofing permitted in 2019.
+- [925–927 South Van Ness Avenue](/san-francisco/mission/south-van-ness-avenue/925/) — A 1900 two-flat, with stair work permitted in 2005.
+- [931 South Van Ness Avenue](/san-francisco/mission/south-van-ness-avenue/931/) — A 1900 single-family house, with a rear addition permitted in 1993.
+- [937 South Van Ness Avenue](/san-francisco/mission/south-van-ness-avenue/937/) — An 1875 single-family house, with reroofing permitted in 1990.
+- [955–957 South Van Ness Avenue](/san-francisco/mission/south-van-ness-avenue/955/) — A 1900 2-unit tic building, with garage work permitted in 2012.
+- [959 South Van Ness Avenue](/san-francisco/mission/south-van-ness-avenue/959/) — A 1900 single-family house, with reroofing permitted in 2008.
+- [965 South Van Ness Avenue](/san-francisco/mission/south-van-ness-avenue/965/) — A 1908 two-flat, with foundation work permitted in 2000.
+- [971–975 South Van Ness Avenue](/san-francisco/mission/south-van-ness-avenue/971/) — An 1885 4-unit apartment building, with a rear addition permitted in 1986.
+- [977–981 South Van Ness Avenue](/san-francisco/mission/south-van-ness-avenue/977/) — A 1900 three-flat, with a rear addition permitted in 1986.
+- [989 South Van Ness Avenue](/san-francisco/mission/south-van-ness-avenue/989/) — A 1900 4-unit apartment building, with facade work permitted in 2025.
+- [993 South Van Ness Avenue](/san-francisco/mission/south-van-ness-avenue/993/) — A 1900 3-unit apartment building, with a kitchen and bathroom remodel permitted in 2022.
+- [1001–1005 South Van Ness Avenue](/san-francisco/mission/south-van-ness-avenue/1001/) — An 1890 5-unit apartment building, with a kitchen remodel permitted in 2025.
+- [1009–1011 South Van Ness Avenue](/san-francisco/mission/south-van-ness-avenue/1009/) — A 1900 three-flat, with a kitchen and bathroom remodel permitted in 2025.
+- [1015–1017 South Van Ness Avenue](/san-francisco/mission/south-van-ness-avenue/1015/) — A 1900 two-flat, with foundation work permitted in 2018.
+- [1245 South Van Ness Avenue](/san-francisco/mission/south-van-ness-avenue/1245/) — A 1959 store building, with reroofing permitted in 1999.
+
+The district record is the city's; the buildings beneath it are
+generated from the DataSF datasets listed in each page's Sources
+footer, and are corrected by hand as readers write in.

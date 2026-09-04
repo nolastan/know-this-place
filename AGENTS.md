@@ -14,10 +14,10 @@ Wikipedia, so accuracy, sourcing, and restraint matter more than completeness.
    `data.json` with `python3 scripts/seed_pages.py render <path>`, in the same
    commit as the `data.json` change. `validate.py` enforces this — it fails if
    any page's HTML is not exactly what the renderer produces. (Hub pages —
-   city/neighborhood/street
-   indexes — have no `data.json`. Their prose lives in their `index.md`; the
-   list of places beneath them is generated from those pages' `data.json`,
-   each contributing its own `hook` line.)
+   city/neighborhood/street indexes, and the historic-district pages — have no
+   `data.json`. Their prose lives in their `index.md`; the list of places
+   beneath them is generated from those pages' `data.json`, each contributing
+   its own `hook` line.)
 2. **Never state a fact in two files.** A fact belongs in `data.json` once.
    `index.html` renders it but is generated, so it is not a second source; do
    not hand-edit a figure into the HTML that isn't in `data.json`. This is the
@@ -97,7 +97,33 @@ san-francisco/                        city
         data.json                     structured facts + prose + sources
         index.html                    generated page
         assets/                       openly licensed media only (optional)
+  historic-districts/                 the one page type off the tree
+    index.md / index.html             the index of districts
+    liberty-hill/                     one historic district
+      index.md / index.html
 ```
+
+- **Historic districts are the fourth page type, and the only one that isn't
+  part of the containment tree.** A district page lists the documented
+  buildings standing inside it and the streets it runs through, and carries
+  the district's own record — period of significance, register standing, local
+  designation — from the city's survey. It sits at **city** level, not under a
+  neighborhood, because a great many of them are not contained by one: the
+  Chinatown Historic District runs through five neighborhood directories and
+  Kearny-Market-Mason-Sutter through six.
+  - **They are generated, never hand-listed**:
+    `python3 scripts/seed_pages.py districts` reads every address page's
+    `historic_district` and `also_in_districts` and rewrites the hubs, keeping
+    each one's hand-written lead the way `hubs` keeps a street's. Re-run it
+    whenever pages are added or removed; `validate.py` fails until it is
+    current, in both directions — a district page missing from its hub, and a
+    hub whose district no longer has buildings here.
+  - **A district needs five documented buildings to get a page.** Below that
+    the list says nothing the one or two pages carrying it don't already say,
+    and a page that thin is a doorway rather than an entry. Those buildings
+    keep their district panel; it just has nowhere to link. **Facets with no
+    record of their own behind them — decade, zoning, property class — are not
+    pages and are not to be added.**
 
 - **One page per building — which means one page per parcel, not per street
   number.** Units are documented within their building's page, never as
@@ -120,8 +146,9 @@ san-francisco/                        city
   bare number (`4127`, `4127a` for lettered addresses). The canonical address
   list is the EAS dataset in DATA-SOURCES.md — don't create pages for
   addresses that aren't in it.
-- Hub pages (`index.md`/`index.html` at city, neighborhood, and street level)
-  list and link what's beneath them. Keep them current when adding pages.
+- Hub pages (`index.md`/`index.html` at city, neighborhood, street and
+  historic-district level) list and link what's beneath them. Keep them
+  current when adding pages.
 
 ## Page lifecycle
 
@@ -170,6 +197,7 @@ at a time:
 python3 scripts/seed_pages.py plan --neighborhood "Castro/Upper Market"
 python3 scripts/seed_pages.py seed --neighborhood "Castro/Upper Market" \
                                    --city san-francisco --area castro
+python3 scripts/seed_pages.py districts
 python3 scripts/build_sitemap.py
 python3 scripts/build_map_index.py
 python3 scripts/build_link_index.py
@@ -233,11 +261,12 @@ follows from it:
    (a "Sources" section, a "The street itself" write-up) is left untouched
    entirely — the command reports it as skipped rather than clobbering it, and
    its list has to be updated by hand from then on.
-6. If pages were added or removed, run `python3 scripts/build_sitemap.py`,
-   `python3 scripts/build_map_index.py` and
-   `python3 scripts/build_link_index.py` (the sitemap, the homepage map
-   and each page's list of nearby pages are all derived indexes;
-   `validate.py` fails until all three are current).
+6. If pages were added or removed — or if a page's `historic_district`
+   changed — run `python3 scripts/seed_pages.py districts`,
+   `python3 scripts/build_sitemap.py`, `python3 scripts/build_map_index.py`
+   and `python3 scripts/build_link_index.py` (the district hubs, the sitemap,
+   the homepage map and each page's list of nearby pages are all derived
+   indexes; `validate.py` fails until all four are current).
 7. **Put the page on the homepage if it is interesting.** The `.place-cards`
    grid in the root `index.html` holds six featured addresses. (The grid
    above it, `.place-cards.news-cards`, is a different list on a different rule

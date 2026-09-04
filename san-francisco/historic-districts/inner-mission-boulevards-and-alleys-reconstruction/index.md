@@ -1,0 +1,164 @@
+# Inner Mission Boulevards and Alleys Reconstruction Historic District
+
+The buildings documented here so far inside the Inner Mission Boulevards and Alleys Reconstruction Historic District, and the streets it runs through.
+
+## Streets
+
+- [18th Street](/san-francisco/mission/18th-street/) — 14 documented buildings inside the district.
+- [19th Street](/san-francisco/mission/19th-street/) — 14 documented buildings inside the district.
+- [20th Street](/san-francisco/mission/20th-street/) — 12 documented buildings inside the district.
+- [Cumberland Street](/san-francisco/mission/cumberland-street/) — 22 documented buildings inside the district.
+- [Cunningham Place](/san-francisco/mission/cunningham-place/) — 1 documented building inside the district.
+- [Dolores Street](/san-francisco/mission/dolores-street/) — 23 documented buildings inside the district.
+- [Guerrero Street](/san-francisco/mission/guerrero-street/) — 19 documented buildings inside the district.
+- [Lapidge Street](/san-francisco/mission/lapidge-street/) — 18 documented buildings inside the district.
+- [Linda Street](/san-francisco/mission/linda-street/) — 17 documented buildings inside the district.
+- [Oakwood Street](/san-francisco/mission/oakwood-street/) — 1 documented building inside the district.
+
+## Buildings
+
+- [3541–3543 18th Street](/san-francisco/mission/18th-street/3541/) — A 1906 2-unit building, with a seismic retrofit permitted in 1995.
+- [3565–3569 18th Street](/san-francisco/mission/18th-street/3565/) — A 1910 three-flat, with a seismic retrofit permitted in 2018.
+- [3568–3570 18th Street](/san-francisco/mission/18th-street/3568/) — A 1913 three-flat, with a kitchen and bathroom remodel permitted in 2021.
+- [3572–3576 18th Street](/san-francisco/mission/18th-street/3572/) — A 1905 6-unit apartment building, with a seismic retrofit permitted in 2017.
+- [3573–3575 18th Street](/san-francisco/mission/18th-street/3573/) — A 1909 2-unit building with a ground-floor store, with reroofing permitted in 1988.
+- [3577 18th Street](/san-francisco/mission/18th-street/3577/) — A 1909 two-flat, with reroofing permitted in 2024.
+- [3578–3580 18th Street](/san-francisco/mission/18th-street/3578/) — A 1905 6-unit apartment building, with window replacement permitted in 2005.
+- [3582–3586 18th Street](/san-francisco/mission/18th-street/3582/) — A 1905 6-unit apartment building, with stair work permitted in 1989.
+- [3585–3595 18th Street](/san-francisco/mission/18th-street/3585/) — A 1911 6-unit apartment building, with reroofing permitted in 1990.
+- [3588–3592 18th Street](/san-francisco/mission/18th-street/3588/) — A 1914 4-unit apartment building, with reroofing permitted in 2007.
+- [3659–3663 18th Street](/san-francisco/mission/18th-street/3659/) — A 1907 6-unit apartment building, with a seismic retrofit permitted in 2016.
+- [3665–3669 18th Street](/san-francisco/mission/18th-street/3665/) — A 1904 5-unit apartment building, with a seismic retrofit permitted in 2018.
+- [3681–3683 18th Street](/san-francisco/mission/18th-street/3681/) — A 1907 single-family house, with a seismic retrofit permitted in 2001.
+- [3682–3696 18th Street](/san-francisco/mission/18th-street/3682/) — A 1904 13-unit apartment building, with a bathroom remodel permitted in 2026.
+- [3517–3521 19th Street](/san-francisco/mission/19th-street/3517/) — A 1907 3-unit tic building, with a kitchen remodel permitted in 2015.
+- [3518–3522 19th Street](/san-francisco/mission/19th-street/3518/) — A 1910 4-unit apartment building, with reroofing permitted in 2023.
+- [3524–3526 19th Street](/san-francisco/mission/19th-street/3524/) — A 2002 single-family house, with a kitchen and bathroom remodel permitted in 2022.
+- [3535 19th Street](/san-francisco/mission/19th-street/3535/) — A 1908 4-unit apartment building, with reroofing permitted in 1989.
+- [3579 19th Street](/san-francisco/mission/19th-street/3579/) — A 1912 6-unit apartment building, with a seismic retrofit permitted in 2014.
+- [3585–3589 19th Street](/san-francisco/mission/19th-street/3585/) — A 1907 6-unit building with a ground-floor store, with a seismic retrofit permitted in 2018.
+- [3631–3633 19th Street](/san-francisco/mission/19th-street/3631/) — A 1907 three-flat, with facade work permitted in 2017.
+- [3635 19th Street](/san-francisco/mission/19th-street/3635/) — A 1915 two-flat, with reroofing permitted in 2002.
+- [3643–3645 19th Street](/san-francisco/mission/19th-street/3643/) — A 1908 two-flat, with a vertical addition permitted in 2013.
+- [3647–3651 19th Street](/san-francisco/mission/19th-street/3647/) — A 1913 three-flat, with a kitchen and bathroom remodel permitted in 2025.
+- [3661 19th Street](/san-francisco/mission/19th-street/3661/) — A 1964 12-unit apartment building, with electrical work permitted in 2023.
+- [3663–3665 19th Street](/san-francisco/mission/19th-street/3663/) — A 1908 three-flat, with a dormer permitted in 2020.
+- [3673–3675 19th Street](/san-francisco/mission/19th-street/3673/) — A 1908 5-unit apartment building, with foundation work permitted in 2013.
+- [3677–3679 19th Street](/san-francisco/mission/19th-street/3677/) — A 1908 4-unit apartment building, with reroofing permitted in 2012.
+- [3686–3698 20th Street](/san-francisco/mission/20th-street/3686/) — A 1906 9-unit building with a ground-floor store, with a seismic retrofit permitted in 2017.
+- [3716–3720 20th Street](/san-francisco/mission/20th-street/3716/) — A 1906 two-flat, with a rear addition permitted in 2025.
+- [3722–3724 20th Street](/san-francisco/mission/20th-street/3722/) — A 1930 two-flat, with a kitchen and bathroom remodel permitted in 2021.
+- [3726–3730 20th Street](/san-francisco/mission/20th-street/3726/) — A 1910 three-flat, with stair work permitted in 2001.
+- [3736–3738 20th Street](/san-francisco/mission/20th-street/3736/) — A 1907 three-flat, with stair work permitted in 2021.
+- [3740–3744 20th Street](/san-francisco/mission/20th-street/3740/) — A 1908 three-flat, with reroofing permitted in 1999.
+- [3746 20th Street](/san-francisco/mission/20th-street/3746/) — A 1907 single-family house, with one permit record from 1994.
+- [3756 20th Street](/san-francisco/mission/20th-street/3756/) — A 1952 4-unit apartment building, with reroofing permitted in 2010.
+- [3758–3762 20th Street](/san-francisco/mission/20th-street/3758/) — A 1909 three-flat, with a bathroom remodel permitted in 2010.
+- [3764 20th Street](/san-francisco/mission/20th-street/3764/) — A 1986 3-unit apartment building, with garage work permitted in 2010.
+- [3766–3768 20th Street](/san-francisco/mission/20th-street/3766/) — A 1907 two-flat, with reroofing permitted in 2010.
+- [3784–3786 20th Street](/san-francisco/mission/20th-street/3784/) — A 1908 two-flat, with garage work permitted in 2006.
+- [9–11 Cumberland Street](/san-francisco/mission/cumberland-street/9/) — A 1908 two-flat, with reroofing permitted in 2001.
+- [10 Cumberland Street](/san-francisco/mission/cumberland-street/10/) — A 1914 single-family house, with deck work permitted in 2011.
+- [14 Cumberland Street](/san-francisco/mission/cumberland-street/14/) — A 1914 5-unit apartment building, with reroofing permitted in 2015.
+- [19 Cumberland Street](/san-francisco/mission/cumberland-street/19/) — A 1926 4-unit apartment building, with a kitchen remodel permitted in 2002.
+- [20–24 Cumberland Street](/san-francisco/mission/cumberland-street/20/) — A 1911 6-unit apartment building, with a seismic retrofit permitted in 2016.
+- [26–28 Cumberland Street](/san-francisco/mission/cumberland-street/26/) — A 1907 three-flat, with foundation work permitted in 2013.
+- [30–32 Cumberland Street](/san-francisco/mission/cumberland-street/30/) — A 1907 three-flat, with stair work permitted in 1984.
+- [41 Cumberland Street](/san-francisco/mission/cumberland-street/41/) — A 1922 single-family house, with a rear addition permitted in 2008.
+- [44 Cumberland Street](/san-francisco/mission/cumberland-street/44/) — A 1915 single-family house, with a kitchen and bathroom remodel permitted in 2013.
+- [48 Cumberland Street](/san-francisco/mission/cumberland-street/48/) — A 1922 single-family house, with window replacement permitted in 2012.
+- [49 Cumberland Street](/san-francisco/mission/cumberland-street/49/) — A 1906 1-unit apartment building, with deck work permitted in 2009.
+- [53–57 Cumberland Street](/san-francisco/mission/cumberland-street/53/) — A 1909 three-flat, with a kitchen and bathroom remodel permitted in 2008.
+- [56 Cumberland Street](/san-francisco/mission/cumberland-street/56/) — A 1907 single-family house, with a rear addition permitted in 2021.
+- [59–61 Cumberland Street](/san-francisco/mission/cumberland-street/59/) — A 1908 two-flat, with window replacement permitted in 2021.
+- [64–66 Cumberland Street](/san-francisco/mission/cumberland-street/64/) — A 1927 2-unit tic building, with stair work permitted in 2017.
+- [68 Cumberland Street](/san-francisco/mission/cumberland-street/68/) — A 1931 two-flat, with reroofing permitted in 2003.
+- [69 Cumberland Street](/san-francisco/mission/cumberland-street/69/) — A 1906 single-family house, with reroofing permitted in 2025.
+- [71–73 Cumberland Street](/san-francisco/mission/cumberland-street/71/) — A 1907 three-flat, with foundation work permitted in 2016.
+- [72 Cumberland Street](/san-francisco/mission/cumberland-street/72/) — A 1932 two-flat, with foundation work permitted in 1990.
+- [76–78 Cumberland Street](/san-francisco/mission/cumberland-street/76/) — A 1933 three-flat, with a kitchen remodel permitted in 2012.
+- [88 Cumberland Street](/san-francisco/mission/cumberland-street/88/) — A 1924 4-unit apartment building, with reroofing permitted in 2023.
+- [90 Cumberland Street](/san-francisco/mission/cumberland-street/90/) — A 1925 5-unit apartment building, with a seismic retrofit permitted in 2017.
+- [36 Cunningham Place](/san-francisco/mission/cunningham-place/36/) — A 1905 single-family house, with reroofing permitted in 2013.
+- [465 Dolores Street](/san-francisco/mission/dolores-street/465/) — A 1914 13-unit apartment building, with a kitchen and bathroom remodel permitted in 2025.
+- [469–479 Dolores Street](/san-francisco/mission/dolores-street/469/) — A 1910 10-unit apartment building, with a seismic retrofit permitted in 2023.
+- [487–491 Dolores Street](/san-francisco/mission/dolores-street/487/) — A 1908 8-unit apartment building, with a seismic retrofit permitted in 2016.
+- [501–503 Dolores Street](/san-francisco/mission/dolores-street/501/) — A 1906 office building, with garage work permitted in 1982.
+- [513–517 Dolores Street](/san-francisco/mission/dolores-street/513/) — A 1905 6-unit apartment building, with a seismic retrofit permitted in 2015.
+- [519–523 Dolores Street](/san-francisco/mission/dolores-street/519/) — A 1904 3-unit tic building, with a kitchen and bathroom remodel permitted in 2013.
+- [527 Dolores Street](/san-francisco/mission/dolores-street/527/) — A 1913 6-unit apartment building, with a seismic retrofit permitted in 2018.
+- [531–535 Dolores Street](/san-francisco/mission/dolores-street/531/) — A 1923 4-unit apartment building, with a kitchen and bathroom remodel permitted in 2017.
+- [537–541 Dolores Street](/san-francisco/mission/dolores-street/537/) — A 1925 4-unit apartment building, with a kitchen and bathroom remodel permitted in 2017.
+- [547 Dolores Street](/san-francisco/mission/dolores-street/547/) — A 1922 6-unit apartment building, with a seismic retrofit permitted in 2015.
+- [561–563 Dolores Street](/san-francisco/mission/dolores-street/561/) — A 1909 two-flat, with reroofing permitted in 2015.
+- [565–569 Dolores Street](/san-francisco/mission/dolores-street/565/) — A 1909 6-unit apartment building, with a seismic retrofit permitted in 2018.
+- [571–573 Dolores Street](/san-francisco/mission/dolores-street/571/) — A 1909 three-flat, with window replacement permitted in 2003.
+- [581–583 Dolores Street](/san-francisco/mission/dolores-street/581/) — A 1906 3-unit apartment building, with a seismic retrofit permitted in 2001.
+- [585–587 Dolores Street](/san-francisco/mission/dolores-street/585/) — A 1907 6-unit apartment building, with garage work permitted in 2021.
+- [589–591 Dolores Street](/san-francisco/mission/dolores-street/589/) — A 1907 9-unit apartment building, with a seismic retrofit permitted in 2016.
+- [595–599 Dolores Street](/san-francisco/mission/dolores-street/595/) — A 1900 15-unit apartment building, with reroofing permitted in 1995.
+- [601 Dolores Street](/san-francisco/mission/dolores-street/601/) — The Norwegian Lutheran Church, which moved here from South of Market in the 1930s.
+- [651 Dolores Street](/san-francisco/mission/dolores-street/651/) — A 1915 building, with a seismic retrofit permitted in 2013.
+- [675 Dolores Street](/san-francisco/mission/dolores-street/675/) — A 1912 12-unit apartment building, with reroofing permitted in 2023.
+- [683–685 Dolores Street](/san-francisco/mission/dolores-street/683/) — A 1908 two-flat, with a kitchen remodel permitted in 1989.
+- [689–691 Dolores Street](/san-francisco/mission/dolores-street/689/) — A 1925 two-flat, with a kitchen and bathroom remodel permitted in 1984.
+- [695–697 Dolores Street](/san-francisco/mission/dolores-street/695/) — A 1909 two-flat, with garage work permitted in 2017.
+- [589 Guerrero Street](/san-francisco/mission/guerrero-street/589/) — A 1906 single-family house, with a rear addition permitted in 1990.
+- [591–599 Guerrero Street](/san-francisco/mission/guerrero-street/591/) — A 1913 10-unit apartment building, with a seismic retrofit permitted in 2018.
+- [711–715 Guerrero Street](/san-francisco/mission/guerrero-street/711/) — A 1907 6-unit apartment building, with a seismic retrofit permitted in 2017.
+- [718–722 Guerrero Street](/san-francisco/mission/guerrero-street/718/) — A 1914 three-flat, with a kitchen and bathroom remodel permitted in 2012.
+- [727–729 Guerrero Street](/san-francisco/mission/guerrero-street/727/) — A 1908 three-flat, with stair work permitted in 2013.
+- [736–738 Guerrero Street](/san-francisco/mission/guerrero-street/736/) — A 1913 2-unit tic building, with a kitchen and bathroom remodel permitted in 2005.
+- [737–739 Guerrero Street](/san-francisco/mission/guerrero-street/737/) — A 1907 two-flat, with a seismic retrofit permitted in 2022.
+- [741–745 Guerrero Street](/san-francisco/mission/guerrero-street/741/) — A 1911 three-flat, with reroofing permitted in 2020.
+- [744 Guerrero Street](/san-francisco/mission/guerrero-street/744/) — A 1914 12-unit apartment building, with a seismic retrofit permitted in 2017.
+- [749 Guerrero Street](/san-francisco/mission/guerrero-street/749/) — A 1909 single-family house, with a rear addition permitted in 1988.
+- [750 Guerrero Street](/san-francisco/mission/guerrero-street/750/) — A 1908 12-unit apartment building, with fire repair permitted in 2010.
+- [753 Guerrero Street](/san-francisco/mission/guerrero-street/753/) — A 1927 single-family house, with reroofing permitted in 2021.
+- [757–759 Guerrero Street](/san-francisco/mission/guerrero-street/757/) — A 1907 three-flat, with reroofing permitted in 2011.
+- [761–765 Guerrero Street](/san-francisco/mission/guerrero-street/761/) — A 1909 6-unit apartment building, with a seismic retrofit permitted in 2017.
+- [771 Guerrero Street](/san-francisco/mission/guerrero-street/771/) — A 1925 7-unit apartment building, with a seismic retrofit permitted in 2017.
+- [772–774 Guerrero Street](/san-francisco/mission/guerrero-street/772/) — A 1915 two-flat, with a kitchen and bathroom remodel permitted in 2019.
+- [775 Guerrero Street](/san-francisco/mission/guerrero-street/775/) — A 1925 7-unit apartment building, with a seismic retrofit permitted in 2015.
+- [779–783 Guerrero Street](/san-francisco/mission/guerrero-street/779/) — A 1906 6-unit apartment building, with a kitchen remodel permitted in 2020.
+- [785–789 Guerrero Street](/san-francisco/mission/guerrero-street/785/) — A 1909 three-flat, with reroofing permitted in 1998.
+- [18 Lapidge Street](/san-francisco/mission/lapidge-street/18/) — A 1909 single-family house, with facade work permitted in 2010.
+- [24 Lapidge Street](/san-francisco/mission/lapidge-street/24/) — A 1906 single-family house, with one permit record from 1993.
+- [28–30 Lapidge Street](/san-francisco/mission/lapidge-street/28/) — A 1924 two-flat, with a bathroom remodel permitted in 2026.
+- [29 Lapidge Street](/san-francisco/mission/lapidge-street/29/) — A 1914 7-unit apartment building, with a kitchen and bathroom remodel permitted in 2022.
+- [33–37 Lapidge Street](/san-francisco/mission/lapidge-street/33/) — A 1907 4-unit apartment building, with reroofing permitted in 1993.
+- [34 Lapidge Street](/san-francisco/mission/lapidge-street/34/) — A 1910 two-flat, with deck work permitted in 2012.
+- [39–41 Lapidge Street](/san-francisco/mission/lapidge-street/39/) — A 1907 three-flat, with garage work permitted in 1990.
+- [40 Lapidge Street](/san-francisco/mission/lapidge-street/40/) — A 1924 single-family house, with a rear addition permitted in 2011.
+- [42 Lapidge Street](/san-francisco/mission/lapidge-street/42/) — A 1993 two-flat, with reroofing permitted in 2012.
+- [43–45 Lapidge Street](/san-francisco/mission/lapidge-street/43/) — A 1906 two-flat, with a kitchen and bathroom remodel permitted in 2013.
+- [46–50 Lapidge Street](/san-francisco/mission/lapidge-street/46/) — A 1906 three-flat, with fire repair permitted in 1989.
+- [47–49 Lapidge Street](/san-francisco/mission/lapidge-street/47/) — A 1907 two-flat, with deck work permitted in 2005.
+- [54 Lapidge Street](/san-francisco/mission/lapidge-street/54/) — A 1920 single-family house, with a kitchen remodel permitted in 2007.
+- [58 Lapidge Street](/san-francisco/mission/lapidge-street/58/) — A 1900 single-family house, with a dormer permitted in 2018.
+- [59 Lapidge Street](/san-francisco/mission/lapidge-street/59/) — A 1906 two-flat, with reroofing permitted in 2009.
+- [62 Lapidge Street](/san-francisco/mission/lapidge-street/62/) — A 1906 three-flat, with one permit record from 2015.
+- [63–67 Lapidge Street](/san-francisco/mission/lapidge-street/63/) — A 1910 6-unit apartment building, with a seismic retrofit permitted in 2015.
+- [69–73 Lapidge Street](/san-francisco/mission/lapidge-street/69/) — A 1907 6-unit apartment building, with a seismic retrofit permitted in 2017.
+- [15–19 Linda Street](/san-francisco/mission/linda-street/15/) — A 1910 6-unit building, with reroofing permitted in 1988.
+- [16 Linda Street](/san-francisco/mission/linda-street/16/) — A 1924 6-unit apartment building, with a seismic retrofit permitted in 2014.
+- [23–33 Linda Street](/san-francisco/mission/linda-street/23/) — A 1912 6-unit apartment building, with dry-rot repair permitted in 2015.
+- [24–30 Linda Street](/san-francisco/mission/linda-street/24/) — A 1910 4-unit apartment building, with garage work permitted in 2021.
+- [39 Linda Street](/san-francisco/mission/linda-street/39/) — A 1910 single-family house, with window replacement permitted in 2014.
+- [48 Linda Street](/san-francisco/mission/linda-street/48/) — A 1900 single-family house, with foundation work permitted in 2006.
+- [110–112 Linda Street](/san-francisco/mission/linda-street/110/) — A 4-unit apartment building, with an addition permitted in 2017.
+- [114–116 Linda Street](/san-francisco/mission/linda-street/114/) — A 1911 two-flat, with a kitchen and bathroom remodel permitted in 2021.
+- [130–134 Linda Street](/san-francisco/mission/linda-street/130/) — A 1908 4-unit apartment building, with a kitchen and bathroom remodel permitted in 1999.
+- [136 Linda Street](/san-francisco/mission/linda-street/136/) — A 1907 three-flat.
+- [140–144 Linda Street](/san-francisco/mission/linda-street/140/) — A 1908 6-unit building, with reroofing permitted in 2022.
+- [146 Linda Street](/san-francisco/mission/linda-street/146/) — A 1906 single-family house.
+- [154–156 Linda Street](/san-francisco/mission/linda-street/154/) — A 1907 4-unit apartment building, with stair work permitted in 2005.
+- [164–168 Linda Street](/san-francisco/mission/linda-street/164/) — A 1906 6-unit apartment building, with a bathroom remodel permitted in 2009.
+- [170 Linda Street](/san-francisco/mission/linda-street/170/) — A 1907 single-family house, with a kitchen remodel permitted in 1988.
+- [172–182 Linda Street](/san-francisco/mission/linda-street/172/) — A 1907 6-unit apartment building, with a bathroom remodel permitted in 2024.
+- [184 Linda Street](/san-francisco/mission/linda-street/184/) — A 1907 single-family house, with foundation work permitted in 2007.
+- [12 Oakwood Street](/san-francisco/mission/oakwood-street/12/) — A 1908 6-unit apartment building, with stair work permitted in 2006.
+
+The district record is the city's; the buildings beneath it are
+generated from the DataSF datasets listed in each page's Sources
+footer, and are corrected by hand as readers write in.

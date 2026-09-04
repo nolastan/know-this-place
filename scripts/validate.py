@@ -15,6 +15,7 @@ counted and printed on every run.
 Run from anywhere: python3 scripts/validate.py
                    python3 scripts/validate.py --prune-render-backlog
 """
+import collections
 import html
 import json
 import os
@@ -59,6 +60,12 @@ errors: list[str] = []
 opted_out: list[str] = []
 backlogged: list[str] = []
 backlog_stale: list[str] = []
+
+# Filled in as the address pages are read, and checked once at the end:
+# district name -> the pages that say they stand inside it. Gathering it here
+# rather than re-walking the tree costs nothing — every data.json is already
+# parsed for the parity check.
+district_pages: dict = collections.defaultdict(set)
 
 
 def err(path: Path, msg: str) -> None:
@@ -261,6 +268,9 @@ def check_address_dir(page_dir: Path, on_disk: str) -> None:
                 if not isinstance(s, dict) or not s.get(key):
                     err(data_path, f'sources[{i}] missing "{key}"')
 
+    for name in seed_pages.districts_named(data):
+        district_pages[name].add("/" + page_dir.relative_to(ROOT).as_posix() + "/")
+
     check_narrative(data_path, data)
     check_render_parity(page_dir, data, on_disk)
 
@@ -408,6 +418,54 @@ def check_hub_sync(dir_path: Path) -> None:
                          f"regenerate with scripts/seed_pages.py hubs")
 
 
+def check_district_hubs() -> None:
+    """Every district hub lists every page inside it, and no hub outlives its district.
+
+    `check_hub_covers_children` read one level up. A district hub is derived
+    from the pages that name the district, exactly as the sitemap and the map
+    index are derived from the tree — so a hub whose list has gone stale in
+    both its files is invisible to everything else here, and the fix is always
+    to re-run the generator rather than to edit a list by hand.
+
+    A district under `DISTRICT_MIN_PAGES` has no hub by design and is not
+    checked; see `seed_pages.DISTRICT_MIN_PAGES` for why that floor exists.
+    """
+    hubs = ROOT / "san-francisco" / seed_pages.DISTRICTS_DIR
+    if not hubs.exists():
+        return
+    earned = {seed_pages.district_slug(name): (name, paths)
+              for name, paths in district_pages.items()
+              if len(paths) >= seed_pages.DISTRICT_MIN_PAGES}
+
+    for slug, (name, paths) in sorted(earned.items()):
+        md = hubs / slug / "index.md"
+        if not md.exists():
+            err(md, f"{len(paths)} page(s) stand in the {name}, which has no hub "
+                    f"— run scripts/seed_pages.py districts")
+            continue
+        listed = set(hub_md_items(md.read_text(encoding="utf-8")))
+        missing = sorted(paths - listed)
+        if missing:
+            err(md, f"{len(missing)} page(s) in this district are not in its list "
+                    f"(starting {missing[0]}) — a reader browsing the district "
+                    f"can't reach them; run scripts/seed_pages.py districts")
+
+    for hub_dir in sorted(hubs.iterdir()):
+        if hub_dir.is_dir() and hub_dir.name not in earned:
+            err(hub_dir / "index.md",
+                f"no district with {seed_pages.DISTRICT_MIN_PAGES} or more "
+                f"documented buildings maps here any more — delete the directory")
+
+    index_md = hubs / "index.md"
+    if index_md.exists():
+        listed = {h.rstrip("/") for h in hub_md_items(index_md.read_text(encoding="utf-8"))}
+        absent = sorted(set(earned) - listed)
+        if absent:
+            err(index_md, f"{len(absent)} district(s) with a hub are not on this "
+                          f"index ({', '.join(absent[:5])}) — run "
+                          f"scripts/seed_pages.py districts")
+
+
 def check_narrative(data_path: Path, data: dict) -> None:
     """Light shape check for the narrative field (all prose lives here)."""
     narrative = data.get("narrative")
@@ -449,6 +507,8 @@ def main() -> int:
             # content edit, not a build-contract check.
             check_hub_sync(html_path.parent)
             check_hub_covers_children(html_path.parent)
+
+    check_district_hubs()
 
     # The icon links every page carries have to resolve to something.
     for icon in ("favicon.ico", "apple-touch-icon.png", "shared/icon.svg",
