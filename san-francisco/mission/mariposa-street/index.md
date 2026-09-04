@@ -17,6 +17,10 @@ Every residential parcel on Mariposa Street that the city's address, assessor an
 - [2365](2365/) — A 1991 2-unit apartment building, with reroofing permitted in 2022.
 - [2375](2375/) — A 1991 2-unit apartment building, with permit records from 1985 to 1990.
 - [2424](2424/) — A 1936 building, with stair work permitted in 2025.
+- [2440](2440/) — An industrial building, with plumbing work permitted in 2021.
+- [2505](2505/) — A 1923 industrial building, with stair work permitted in 2021.
+- [2601](2601/) — A 1989 industrial building, with a seismic retrofit permitted in 2018.
+- [2885](2885/) — An industrial building, with plumbing work permitted in 2025.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

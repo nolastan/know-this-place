@@ -11,15 +11,26 @@ The parcels on Second Street documented here so far, from the city's address, as
 - [55](55/) — A 2002 office building, with plumbing work permitted in 2001.
 - [58–62](58/) — A 1906 store building in the New Montgomery-Mission-Second Street Conservation District, with a kitchen remodel permitted in 2018.
 - [70](70/) — A 1907 store building in the New Montgomery-Mission-Second Street Conservation District, with a seismic retrofit permitted in 1996.
+- [71–99](71/) — An 1898 office building in the New Montgomery-Mission-Second Street Conservation District, with garage work permitted in 2017.
 - [76–78](76/) — A 1908 office building in the New Montgomery-Mission-Second Street Conservation District, with a seismic retrofit permitted in 2001.
 - [82–88](82/) — A 1907 store building in the New Montgomery-Mission-Second Street Conservation District, with stair work permitted in 2011.
 - [90–92](90/) — A 1906 store building in the New Montgomery-Mission-Second Street Conservation District, with a bathroom remodel permitted in 2018.
 - [101](101/) — A 2000 office building in the New Montgomery-Mission-Second Street Conservation District, with stair work permitted in 2019.
 - [120–124](120/) — A 1907 industrial building in the New Montgomery-Mission-Second Street Conservation District, with a seismic retrofit permitted in 1990.
+- [121–123](121/) — A 1907 office building in the New Montgomery-Mission-Second Street Conservation District, with plumbing work permitted in 2006.
 - [132–142](132/) — A 1907 office building in the New Montgomery-Mission-Second Street Conservation District, with a kitchen remodel permitted in 2022.
+- [133](133/) — A 1906 store building in the New Montgomery-Mission-Second Street Conservation District, with a seismic retrofit permitted in 2015.
+- [141–145](141/) — A 1907 office building in the New Montgomery-Mission-Second Street Conservation District, with electrical work permitted in 2012.
 - [144](144/) — A 1908 office building in the New Montgomery-Mission-Second Street Conservation District, with window replacement permitted in 2017.
+- [149](149/) — A 1907 store building in the New Montgomery-Mission-Second Street Conservation District, with a seismic retrofit permitted in 2001.
+- [163](163/) — A 1906 office building in the New Montgomery-Mission-Second Street Conservation District, with a kitchen remodel permitted in 2005.
+- [165–171](165/) — A 1912 office building in the New Montgomery-Mission-Second Street Conservation District, with reroofing permitted in 2015.
 - [176](176/) — A 1900 assessor class: parking lot in the New Montgomery-Mission-Second Street Conservation District, with one permit record from 2019.
+- [181](181/) — A 1911 office building in the New Montgomery-Mission-Second Street Conservation District, with fire repair permitted in 1989.
 - [182–198](182/) — A 1909 office building in the New Montgomery-Mission-Second Street Conservation District, with a kitchen and bathroom remodel permitted in 2014.
+- [191](191/) — A 1906 store building in the New Montgomery-Mission-Second Street Conservation District, with facade work permitted in 1988.
+- [205–215](205/) — A 1906 office building, with stair work permitted in 1984.
+- [217](217/) — A 1912 office building, with stair work permitted in 1985.
 - [222](222/) — Three Frank Stella works, bought for $1 million to discharge the building's 1% art requirement.
 - [235](235/) — A 2001 office building, with plumbing work permitted in 2016.
 - [240](240/) — A 1957 office building, with reroofing permitted in 1996.

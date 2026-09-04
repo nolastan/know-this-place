@@ -5,6 +5,7 @@ The parcels on Texas Street documented here so far, from the city's address, ass
 ## Documented so far
 
 - [126](126/) — A 1900 single-family house, with foundation work permitted in 2003.
+- [165](165/) — A 1996 store building, with reroofing permitted in 2023.
 - [424](424/) — A 1909 single-family house, with an accessory dwelling unit permitted in 2023.
 
 Pages are generated from the DataSF datasets listed in each page's

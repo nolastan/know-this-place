@@ -4,6 +4,7 @@ Every residential parcel on San Bruno Avenue that the city's address, assessor a
 
 ## Documented so far
 
+- [220–298](220/) — A 1920 assessor class: parking lot, with window replacement permitted in 1987.
 - [424](424/) — A 1925 single-family house, with reroofing permitted in 1998.
 - [430](430/) — A 1925 single-family house, with garage work permitted in 2003.
 - [436](436/) — A 1926 single-family house, with reroofing permitted in 2002.
@@ -59,6 +60,8 @@ Every residential parcel on San Bruno Avenue that the city's address, assessor a
 - [1419](1419/) — A 1900 single-family house, with an addition permitted in 1999.
 - [1421](1421/) — A 1907 single-family house.
 - [1423](1423/) — A 1900 single-family house.
+- [1435](1435/) — A 1961 industrial building, with window replacement permitted in 2025.
+- [1462](1462/) — A 1900 industrial building, with reroofing permitted in 2012.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

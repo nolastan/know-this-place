@@ -11,16 +11,29 @@ Every residential parcel on 18th Street that the city's address, assessor and pe
 - [2419](2419/) — A 1912 single-family house, with a bathroom remodel permitted in 2014.
 - [2421](2421/) — A 1912 single-family house, with a kitchen and bathroom remodel permitted in 2005.
 - [2441](2441/) — A 1912 single-family house, with garage work permitted in 2003.
+- [2500](2500/) — A 1925 industrial building, with reroofing permitted in 2000.
+- [2530](2530/) — A 1924 industrial building, with reroofing permitted in 1990.
+- [2535](2535/) — A 1900 assessor class: parking lot, with reroofing permitted in 2012.
 - [2601–2603](2601/) — A 1904 two-flat, with a kitchen remodel permitted in 2019.
 - [2621–2623](2621/) — A 1900 three-flat, with stair work permitted in 1998.
 - [2635](2635/) — A 1900 single-family house, with foundation work permitted in 2013.
+- [2650](2650/) — A 1931 industrial building, with stair work permitted in 2000.
+- [2900](2900/) — A 1924 industrial building, with a kitchen and bathroom remodel permitted in 2015.
 - [3008–3010](3008/) — A 1900 two-flat, with reroofing permitted in 2010.
+- [3014](3014/) — A 1965 garage.
+- [3100](3100/) — A store building, with electrical work permitted in 2003.
+- [3101–3149](3101/) — An assessor class: vacant lot, with electrical work permitted in 2020.
+- [3150](3150/) — An industrial building, with a kitchen remodel permitted in 2007.
+- [3175](3175/) — A 1947 office building, with window replacement permitted in 2019.
+- [3180–3198](3180/) — A 1900 office building, with stair work permitted in 2013.
 - [3214–3216](3214/) — A 1900 two-flat, with a kitchen remodel permitted in 2003.
 - [3220–3222](3220/) — An 1876 three-flat, with a kitchen and bathroom remodel permitted in 2016.
 - [3226](3226/) — A 1900 two-flat, with an accessory dwelling unit permitted in 2025.
 - [3230–3232](3230/) — A 1900 two-flat, with a kitchen and bathroom remodel permitted in 2011.
+- [3235](3235/) — A 1900 industrial building, with reroofing permitted in 2007.
 - [3236–3242](3236/) — A 1904 4-unit apartment building, with a kitchen and bathroom remodel permitted in 1985.
 - [3246–3248](3246/) — A 1900 two-flat, with fire repair permitted in 2010.
+- [3251](3251/) — A 2008 office building, with reroofing permitted in 2025.
 - [3340–3342](3340/) — A 1912 four-flat, with garage work permitted in 2014.
 - [3341–3347](3341/) — A 1907 10-unit apartment building, with a seismic retrofit permitted in 2015.
 - [3344–3348](3344/) — A 1911 four-flat, with reroofing permitted in 2011.

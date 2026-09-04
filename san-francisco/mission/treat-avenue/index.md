@@ -5,7 +5,11 @@ Every residential parcel on Treat Avenue that the city's address, assessor and p
 ## Documented so far
 
 - [300](300/) — A 1908 industrial building, with facade work permitted in 2018.
+- [350](350/) — A 1944 industrial building, with reroofing permitted in 2016.
 - [394–398](394/) — A 1941 industrial building, with window replacement permitted in 2014.
+- [438](438/) — A 1947 industrial building, with a kitchen remodel permitted in 2018.
+- [600](600/) — A 1962 industrial building, with window replacement permitted in 2021.
+- [630](630/) — A 1920 industrial building, with one permit record from 2010.
 - [705](705/) — A 1900 three-flat, with reroofing permitted in 1999.
 - [709–711](709/) — A 1982 two-flat, with reroofing permitted in 2000.
 - [717–719](717/) — A 1900 three-flat, with a kitchen and bathroom remodel permitted in 2013.
