@@ -42,9 +42,9 @@ Wikipedia, so accuracy, sourcing, and restraint matter more than completeness.
 6. **No new tooling.** No frameworks, build systems, package manifests, or
    dependencies. The stack is: files, one stylesheet, one dependency-free
    enhancement script (`shared/site.js`, progressive-enhancement web components
-   only — see [shared/AGENTS.md](shared/AGENTS.md)), and three stdlib-only
+   only — see [shared/AGENTS.md](shared/AGENTS.md)), and five stdlib-only
    Python scripts (`seed_pages.py`, `validate.py`, `build_sitemap.py`,
-   `build_map_index.py`). Every
+   `build_map_index.py`, `build_link_index.py`). Every
    page must render completely from its HTML alone.
 7. **Seed pages with the script, not by hand.** Writing a page's HTML by hand
    costs a great deal for a page whose every fact comes from an API. Use
@@ -172,6 +172,7 @@ python3 scripts/seed_pages.py seed --neighborhood "Castro/Upper Market" \
                                    --city san-francisco --area castro
 python3 scripts/build_sitemap.py
 python3 scripts/build_map_index.py
+python3 scripts/build_link_index.py
 python3 scripts/validate.py
 ```
 
@@ -232,9 +233,11 @@ follows from it:
    (a "Sources" section, a "The street itself" write-up) is left untouched
    entirely — the command reports it as skipped rather than clobbering it, and
    its list has to be updated by hand from then on.
-6. If pages were added or removed, run `python3 scripts/build_sitemap.py`
-   and `python3 scripts/build_map_index.py` (the sitemap and the homepage
-   map are both derived indexes; `validate.py` fails until both are current).
+6. If pages were added or removed, run `python3 scripts/build_sitemap.py`,
+   `python3 scripts/build_map_index.py` and
+   `python3 scripts/build_link_index.py` (the sitemap, the homepage map
+   and each page's list of nearby pages are all derived indexes;
+   `validate.py` fails until all three are current).
 7. **Put the page on the homepage if it is interesting.** The `.place-cards`
    grid in the root `index.html` holds six featured addresses. (The grid
    above it, `.place-cards.news-cards`, is a different list on a different rule

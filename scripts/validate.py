@@ -490,6 +490,35 @@ def main() -> int:
                     err(html_path, "not in shared/addresses.geojson — "
                                    "run scripts/build_map_index.py")
 
+    # And every address should have its neighbors in the link index. Same
+    # contract again — but this one is checked in both directions, because a
+    # path in the index that no longer exists becomes a dangling link the
+    # moment the renderer starts printing them.
+    nearby = ROOT / "shared" / "nearby.json"
+    if nearby.exists():
+        try:
+            indexed = json.loads(nearby.read_text(encoding="utf-8"))["paths"]
+        except (json.JSONDecodeError, KeyError, TypeError) as e:
+            err(nearby, f"invalid link index — run scripts/build_link_index.py ({e})")
+            indexed = None
+        if indexed is not None:
+            known = set(indexed)
+            for html_path in html_pages:
+                if not ADDRESS_DIR.match(html_path.parent.name):
+                    continue
+                rel_dir = "/" + html_path.parent.relative_to(ROOT).as_posix() + "/"
+                if rel_dir not in known:
+                    err(html_path, "not in shared/nearby.json — "
+                                   "run scripts/build_link_index.py")
+            # Reported as one error, not one per stale entry: a neighborhood
+            # moved or removed would otherwise print hundreds of lines that all
+            # have the same one-command fix.
+            gone = [q for q in indexed
+                    if not (ROOT / q.strip("/") / "index.html").exists()]
+            if gone:
+                err(nearby, f"{len(gone)} indexed page(s) no longer exist, "
+                            f"starting {gone[0]} — run scripts/build_link_index.py")
+
     # Entries in the backlog that no longer belong there. Reported as one
     # error, not one per page: the file is 1,010 lines long today and the sweep
     # that empties it would otherwise print a thousand identical complaints.
