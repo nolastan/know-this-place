@@ -4,6 +4,7 @@ The parcels on Castro Street documented here so far, from the city's address, as
 
 ## Documented so far
 
+- [1116](1116/) — Ruth Asawa's house from 1962.
 - [1320–1324](1320/) — A 1900 2-unit building with a ground-floor store, with deck work permitted in 2007.
 - [2031–2037](2031/) — A 1973 32-unit apartment building, with deck work permitted in 2017.
 - [2123](2123/) — A 1912 single-family house, with foundation work permitted in 2010.

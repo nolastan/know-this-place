@@ -28,6 +28,7 @@ the street rebuilding of the 1920s.
 - [32 Mars Street](32/) — Built in 1925 on a lot photographs show open four years earlier.
 - [33–37 Mars Street](33/) — Three units on one parcel, standing in 1921 and greatly altered since.
 - [41–43 Mars Street](41/) — A two-unit building the assessor dates to 1890, in a photograph of about 1921.
+- [42 Mars Street](42/) — The large peak-roofed house on Mars Street, with a cottage behind it in 1941.
 - [46–48 Mars Street](46/) — A house with a rear cottage, in photographs of 1895 and 1906.
 - [52 Mars Street](52/) — Photographed in 1895, 1906 and 1912, and greatly altered after the street was rebuilt.
 - [56 Mars Street](56/) — In photographs of 1895, 1906 and 1912; assessed by Planning and found not to be a historical resource.

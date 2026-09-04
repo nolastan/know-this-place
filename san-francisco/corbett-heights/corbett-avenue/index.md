@@ -5,9 +5,11 @@ The spine of Corbett Heights, climbing from Market Street toward Twin Peaks. The
 ## Documented so far
 
 - [100–102](100/) — Post-war infill of 1953, on a lot created by dividing the old Cassin parcel at Ord and Corbett.
+- [104–106](104/) — Built in 1961 on the site of the Cassin family's cottage.
 - [119](119/) — A 1900 single-family house, with reroofing permitted in 2024.
 - [123–125](123/) — A 1937 Spanish Mediterranean house, built for $4,000 by the contractor Arthur Quinn with no architect.
 - [127](127/) — Its neighbour, permitted four months earlier at $4,500 for the musician Jack Schubel.
+- [131](131/) — A corner shopfront that has held a grocery, a dry cleaner's and a sewing studio.
 - [161–163](161/) — A 1900 three-flat, with facade work permitted in 2018.
 - [166](166/) — A 1910 single-family house, with garage work permitted in 2024.
 - [173–175](173/) — An 1890 three-flat, with reroofing permitted in 2011.

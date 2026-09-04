@@ -199,6 +199,30 @@ live in the dossiers. **Add to this list** whenever a run discovers something a
 future run would otherwise repeat — that is what makes this module improve
 rather than just accumulate.
 
+- **A published fact with no findings file is invisible to every count this
+  module keeps.** Ten pages were carrying facts from six Corbett Heights
+  newsletter issues while the dossier, the register and `check.py --stats` all
+  recorded those issues as unread — the pass that published them wrote no
+  findings file, so nothing on disk connected the pages to the source. The next
+  run re-read the issues, re-extracted sixteen facts that were already on their
+  pages, and only caught it because `--overlap` flagged three of them by
+  wording. **The findings file is not paperwork for the pages; it is the only
+  record that the reading happened.** A run that publishes without writing one
+  has spent a session and left the module believing the work is still to do.
+  Before extracting from any batch, grep `san-francisco` for its citation
+  label — a source that has published before may already have reached the
+  pages you are about to write.
+
+- **A page's dated entries cite a source by an id into the page's own `sources`
+  array, and nothing was checking that the id resolves.** A publishing pass that
+  mints per-issue ids (`corbett-heights-neighbors-jun26`) for a source the page
+  already cited can rename an id out from under an existing entry, or drop the
+  entry the existing record depended on. The citation then renders as nothing
+  and `validate.py` still passes, because the HTML is exactly what the renderer
+  produces from the broken `data.json`. `check.py --landed` now fails on it.
+  **When a page already cites a source you are adding to, reuse the id it has
+  and give the new issue a suffix — never reassign the bare id.**
+
 - **Identical extraction output across many files means you extracted a
   wrapper, not the documents.** 43 of SF Planning's 81 DPR 523 survey PDFs are
   **Adobe PDF Packages**: the outer PDF is a one-page "install Adobe Reader"

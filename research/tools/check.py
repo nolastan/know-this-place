@@ -784,6 +784,30 @@ def overlap(path: Path) -> None:
     print("  Read each one: decline it, or trim it to the part that is new.")
 
 
+def _uncited_sources(doc: dict) -> set[str]:
+    """Source ids a page's dated entries cite that the page never declares.
+
+    A page carries the source of every dated entry as an id into its own
+    `sources` array, and the renderer prints whatever that id resolves to. When
+    it resolves to nothing the entry silently loses its citation, which is the
+    one defect on these pages that a reader cannot see and `validate.py` does
+    not test — the HTML still matches what the renderer produces from the
+    broken data.json. It happens when a run mints per-issue ids for a source a
+    page already cited: one publishing pass here left two pages citing ids it
+    had renamed out from under them, and dropped the entry a third page's
+    existing record depended on. Cheap to test, and it belongs next to
+    --landed because that is the pass that walks exactly the pages a batch just
+    wrote.
+    """
+    declared = {s.get("id") for s in (doc.get("sources") or []) if isinstance(s, dict)}
+    cited = set()
+    for key in ("historical_record", "timeline"):
+        for entry in (doc.get(key) or []):
+            if isinstance(entry, dict) and entry.get("source"):
+                cited.add(entry["source"])
+    return {c for c in cited if c not in declared}
+
+
 def landed(path: Path) -> None:
     """After publishing: did every "published" finding change its page?
 
@@ -810,6 +834,7 @@ def landed(path: Path) -> None:
     checked = 0
     missing: list[tuple[str, str]] = []
     noop: list[tuple[str, str, str]] = []
+    dangling: set[tuple[str, str]] = set()
     for finding in data.get("findings", []):
         pub = finding.get("publish") or {}
         if pub.get("status") != "published":
@@ -830,6 +855,8 @@ def landed(path: Path) -> None:
                             f"{res.get('path')} could not be read"))
             continue
         checked += 1
+        for sid in _uncited_sources(doc):
+            dangling.add((res.get("path", "?"), sid))
 
         blob = json.dumps(doc, ensure_ascii=False)
 
@@ -867,6 +894,10 @@ def landed(path: Path) -> None:
     # a second pass to find out which.
     for fid, why in missing:
         print(f"    {fid}  {why}")
+    for page_path, sid in sorted(dangling):
+        err(page_path, f"a dated entry cites source id {sid!r}, which the page's "
+                       f"sources array does not declare — the citation renders as "
+                       f"nothing, so add the source entry or repoint the record")
     if not noop:
         print("  every published finding left its description or a spec row on its page.")
         return
