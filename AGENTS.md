@@ -36,7 +36,8 @@ Wikipedia, so accuracy, sourcing, and restraint matter more than completeness.
    source's access notes, cautions and citation label live, under the same
    `id` a page cites.
 5. **Scope discipline.** Touch only the pages your task concerns, plus hub
-   pages (street/neighborhood indexes) and `sitemap.xml` when adding pages.
+   pages (street/neighborhood indexes) and the sitemap (`sitemap.xml` and
+   `sitemaps/`, both generated) when adding pages.
    Never restructure shared styling, tooling, or workflows unless a human
    explicitly asks for that.
 6. **No new tooling.** No frameworks, build systems, package manifests, or
