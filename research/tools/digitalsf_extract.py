@@ -1278,6 +1278,20 @@ CAPTION_PREFIX = re.compile(
     r"|^(?:Former|Formerly|Old|Vacant|Abandoned)\s+(?=[A-Z])", re.I)
 
 
+# A word that is capitalized only because the caption begins with it, and that
+# describes the building rather than naming it. Kept as a closed list, not a
+# part-of-speech test: measured over every findings file in the repository,
+# 234 candidate names are a bare adjective plus a BUILDING_NOUN and 232 of them
+# are real — "Grand Theater", "Ideal Bar", "Imperial Hotel", "Sunset Market",
+# "White Cleaners". Only "Large house" and "Residencial building" are the
+# caption describing what it photographed, and only a closed list separates
+# them. See "measure a rule before wiring it" in research/AGENTS.md.
+GENERIC_QUALIFIER = {
+    "large", "small", "residential", "residencial", "commercial",
+    "industrial", "vacant", "abandoned", "empty", "unidentified", "unnamed",
+}
+
+
 def is_named_building(part: str) -> bool:
     """A proper name for a building, not a scrap of caption and not a person."""
     part = CAPTION_PREFIX.sub("", part).strip(" ,.&-")
@@ -1306,10 +1320,13 @@ def is_named_building(part: str) -> bool:
             continue
         if not word[0].isupper():
             return False
-        distinguishing = True
+        if word.lower() not in GENERIC_QUALIFIER:
+            distinguishing = True
     # "Building", "House", "Public Library" name no particular one. A fragment
     # with nothing but the noun in it is the caption's common noun, and on a
-    # page it says only that the address had a building on it.
+    # page it says only that the address had a building on it. Neither does one
+    # with nothing but a GENERIC_QUALIFIER in front of the noun: "Large house"
+    # is the archivist describing the photograph, not the house's name.
     return has_noun and distinguishing
 
 
@@ -1637,7 +1654,8 @@ def build(selectors: list[str], batch: str, key: str = "524"):
                 "corpus_path": rec["page"],
                 "locator": locator(rec, notes, first(f, "852", "c")),
             },
-            "raw": {"text": raw_span(title, notes, personal_names(f))},
+            "raw": {"text": raw_span(title, notes, personal_names(f),
+                                     every(f, "610", "a") + every(f, "650", "a"))},
             "confidence": ("low" if unnumbered
                            else confidence(date, conflict, from_title, from_note)),
             "resolution": {
@@ -1784,6 +1802,62 @@ def personal_names(fields) -> list[str]:
     return out
 
 
+# A person the catalogue indexed nowhere. `redact` can only reach a name that
+# is in the record's own 600/700 headings, and a caption often names someone
+# the cataloguer never made a heading for — the chairs of a 1946 fundraising
+# drive, the guest of honour at a 1947 party, a consul and his wife. This is
+# the one shape that is narrow enough to act on: a courtesy title or a rank in
+# front of a capitalised run. It cannot match a bare "Eagle Market", and the
+# two exemptions below cover the firms that do wear one.
+#
+# Measured over every `raw.text` in every digitalsf findings file: 53 spans
+# match, 49 are people — including "in the home of Mr. and Mrs. Ferdinand Smith
+# at 825 Francisco Street", a resident named at their address in a *published*
+# finding — and the other 4 are firms, all four exempted. Applied to the whole
+# repository the same rule would be wrong: it fires on "Dr. Carlton B. Goodlett
+# Place" (a street), "Miss Smith's Tea Room" and "Mr. S Leather" (businesses),
+# and on the civic figures a context statement exists to document. `redact` is
+# only ever called on this source, and that is what keeps it safe.
+HONORIFIC = (r"Mr|Mrs|Ms|Miss|Dr|Capt|Sgt|Lt|Col|Gen|Rev|Reverend|Prof|Msgr|"
+             r"Fr|Sister|Father|Judge|Monsignor")
+# "Mr. and Mrs. Ferdinand Smith" is one name wearing two titles; without the
+# bridge the first title is left stranded in front of the marker.
+# `(?:[A-Z]\.){1,4}` is the unspaced initial run — the catalogue writes both
+# "Dr. P. Crudo" and "Dr. F.S. Crudo" in one caption, and only one of them has
+# a space to split on. The generational suffix keeps its full stop when a word
+# runs straight into it ("Jr.discussing" is in the corpus verbatim), so the
+# marker never swallows the start of the next word.
+HONORIFIC_NAME = re.compile(
+    rf"\b(?:{HONORIFIC})\.?\s+(?:and\s+(?:{HONORIFIC})\.?\s+)?"
+    rf"(?:(?:(?:[A-Z]\.){{1,4}}|[A-Z][A-Za-z'’-]*\.?)\s+){{0,3}}"
+    rf"(?!(?:Jr|Sr|II|III)\b)[A-Z][A-Za-z'’-]+"
+    rf"(?:,?\s+(?:Jr|Sr|II|III)\b\.?(?!\w))?")
+HONORIFIC_HEAD = re.compile(rf"^(?:{HONORIFIC})\.?\s+(?:and\s+(?:{HONORIFIC})\.?\s+)?")
+
+
+def redact_honorifics(span: str, headings: list[str]) -> str:
+    """Strike a courtesy title plus the name after it, unless it is a firm.
+
+    Two exemptions, both measured: what follows the title reads as a firm name
+    ("Dr. Pepper Bottling Company", "Mrs. Biggs Bakery"), or the record's own
+    610/650 headings already file it as one — "Businesses--Andrews Diamond
+    Palace." is the catalogue saying "Col. Andrews Diamond Palace" is a shop.
+    """
+    filed = " | ".join(headings).lower()
+
+    def sub(m):
+        name = HONORIFIC_HEAD.sub("", m.group(0))
+        if is_named_building(name):
+            return m.group(0)
+        if name and name.lower() in filed:
+            return m.group(0)
+        return "[name withheld]"
+
+    # One marker per person: a caption listing three people should still read
+    # as three, so adjacent markers are not collapsed.
+    return HONORIFIC_NAME.sub(sub, span)
+
+
 def redact(span: str, subjects: list[str]) -> str:
     """Take the record's own personal names out of the quoted span.
 
@@ -1831,8 +1905,9 @@ def redact(span: str, subjects: list[str]) -> str:
     return re.sub(r"\s+([,.;])", r"\1", span).strip()
 
 
-def raw_span(title: str, notes: dict, subjects: list[str] | None = None) -> str:
-    span = redact(title, subjects or [])
+def raw_span(title: str, notes: dict, subjects: list[str] | None = None,
+             headings: list[str] | None = None) -> str:
+    span = redact_honorifics(redact(title, subjects or []), headings or [])
     if notes["address_note"]:
         span += f" | 500$a: Address. {notes['address_note']}"
     if notes["block"]:

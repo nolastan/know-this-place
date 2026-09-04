@@ -411,6 +411,46 @@ so a collection is one batch until that number passes about fifteen hundred.
 - **`fuzzy date` means what it says.** A record flagged in `907` is an
   archivist's estimate. Carry the flag through to the finding rather than
   silently promoting it to a firm year.
+- **A name change in the extractor is a correction pass over what already
+  shipped, and it is bigger than the one record that showed it.** Adding
+  `Ruins of` to `CAPTION_PREFIX` was filed (#247) as recovering five building
+  names in SFP 162. Re-running the extractor over that collection and diffing
+  on `citation.url` — **not** on the finding id, which is positional and moves
+  the moment a record is added or dropped — showed **93**: every caption-prefix
+  and name-filter fix landed since the collection was read, not just the one the
+  issue noticed. 44 of them were on published pages. So: when a name rule
+  changes, re-run the affected batches and diff, rather than patching the
+  records the issue happens to list. Merge the diff into the committed file
+  (`extra.named_in_record` and the `The record names …` sentence only) — never
+  regenerate it, or 1,186 hand-checked resolutions and 545 publish decisions go
+  with it.
+
+- **The same re-run also drops findings, and that is usually right.** Fifteen
+  SFP 162 entries the current extractor no longer produces: thirteen are the
+  people filter working — "ARTISTIC HOMES OF CALIFORNIA — Residence of Mr. W.
+  MAYO NEWHALL, No. 1206 Post Street" is a person's house, and "4 P.M. Aug",
+  "886 Cliff House" and "214 Carl Saxsenmeir" were never addresses — and two
+  are the same address now folded onto a sibling record. All fifteen were
+  unresolved, so nothing published depended on them.
+
+- **A capitalized word is not a proper noun, and `is_named_building` used to
+  assume it was.** "Large house at 3905 Clay Street" and "Residencial building
+  in 907 Pine street" passed the filter — a BUILDING_NOUN plus one capitalized
+  word is all it asked for — and the first of them reached a published page as
+  a building's name. `GENERIC_QUALIFIER` is the fix, and it is a **closed list**
+  for a measured reason: 234 stored names are an adjective plus a building noun
+  and 232 of them are real ("Grand Theater", "Ideal Bar", "Imperial Hotel",
+  "Sunset Market", "White Cleaners"), so no part-of-speech test separates them.
+  Measured over every name in every findings file in the repository, the rule
+  flips **2 of 1,001** — exactly the two above.
+
+- **Two known regressions in the current name/address parse**, both found by
+  that diff, both on entries no page carries. `Park View Hotel, 102 South Park`
+  now parses the street as `SOUTH` + type `PARK` where the hand-checked entry
+  has `SOUTH PARK` and no type; and `View from 624 Ashbury Street of three
+  children…` keeps `View from` inside `address_as_written`. Don't adopt a
+  re-run's address fields wholesale for this collection — take the names.
+
 - **This overlaps the *SF Redevelopment Agency property summaries* lead — check
   before extracting.** That lead is in the leads table of
   [../SOURCES.md](../SOURCES.md); it has no source id yet because it has not
@@ -515,13 +555,50 @@ not when a page is. Two mechanisms, both now in the extractor:
   by reading `--report`'s notes before writing the file, not after.
   The record page is one click from `citation.url` if an auditor wants the
   original.
-- **The redactor only reaches a name the catalogue indexed.** Four tail records
-  keep a personal name in `raw.text` because the caption names someone the
-  catalogue put in no `600`/`700` heading — civic figures at public events in
-  1945–1964, all long dead and none of them a resident, occupant or owner, and
-  `raw.text` never reaches a page. It is still a gap, and widening the redactor
-  to a general capitalized-name detector would eat firm names ("Eagle Market",
-  "Shadows Restaurant") and place names, so it is filed rather than bodged.
+- **A courtesy title is the one name shape narrow enough to redact blind.**
+  `redact` can only reach a name the catalogue filed in a `600`/`700` heading,
+  and captions name people the cataloguer indexed nowhere (#248).
+  `redact_honorifics` closes most of that: a courtesy title or a rank —
+  `Mr.`/`Mrs.`/`Miss`/`Dr.`/`Capt.`/`Rev.`/`Judge` and their siblings — in
+  front of a capitalised run, with `Mr. and Mrs. X` bridged as one name.
+
+  **What it caught, measured over every `raw.text` in every digitalsf findings
+  file: 53 spans, 49 of them people.** Not four edge cases — 30 in SFP 162
+  alone, and most of them the sharpest shape the privacy limits exist for:
+  "ARTISTIC HOMES OF CALIFORNIA, Residence of Mr. WILLIAM HAAS, 2007 Franklin
+  Street", "Residence of Mrs. Henrietta Lehe, 15 Cerritos Avenue", "1736
+  Fitzgerald street, scene of the shooting of Mrs. Angela Archie", and — in a
+  **published** finding — "in the home of Mr. and Mrs. Ferdinand Smith at 825
+  Francisco Street". A named resident at their own street number, committed.
+
+  **Two exemptions, both measured, and between them they take the false
+  positive rate to zero on this source.** What follows the title reads as a
+  firm under `is_named_building` ("Dr. Pepper Bottling Company", "Mrs. Biggs
+  Bakery"); or the record's own `610`/`650` headings already file it as one —
+  `Businesses--Andrews Diamond Palace.` is the catalogue saying "Col. Andrews
+  Diamond Palace" is a shop, not a colonel.
+
+  **It is safe here because `redact` is only ever called on this source, and it
+  would be wrong almost anywhere else.** Run the same rule over the whole
+  repository and it fires on "Dr. Carlton B. Goodlett Place" (a street), "Miss
+  Smith's Tea Room" and "Mr. S Leather" (businesses), "Dr. William L. Cobb
+  Elementary School" (a building), and on Dr. Tom Waddell, Dr. Arthur H.
+  Coleman and Reverend Frederick Douglas Haynes — the civic figures the
+  African American and LGBTQ context statements exist to document. **Don't
+  lift it into `sf-context-statements`.**
+
+  What it still cannot reach is a bare name with no title: "Lloyd W.
+  Dinkelspiel", "William Chester", "Revels Cayton" survive, and a general
+  capitalised-name detector would eat "Eagle Market" and "Shadows Restaurant",
+  so that half stays open deliberately.
+
+- **A name can sit outside `raw.text`.** `2786 Diamond Street. Mrs. Evers` was
+  the *street name* of a finding — the caption's second sentence parsed as part
+  of the address, so the owner's name reached `address_as_written`,
+  `description` and `citation.label`, none of which the redactor looks at.
+  Sweep those three fields as well as `raw.text` when a name rule changes; it
+  was the only one in the source, and taking it out also made the finding
+  resolvable for the first time (Glen Park, 2784 Diamond Street, published).
 
 **A mural artist is a creator credit, and the only one this archive states.**
 `700 $e mural artist` names the person who made the work at that address — the
@@ -611,6 +688,33 @@ records carry one; exactly one of those also carries a street number.
   Collection, San Francisco History Center, San Francisco Public Library."
   `citation_of()` does this, and refuses a record that names neither rather
   than citing "the archive".
+
+- **Verified:** 2026-09-04 (correction pass over SFP 162 and a redaction pass
+  over the whole source; no new material read. Closed #247 and #248, both of
+  which turned out to be several times the size they were filed at.
+
+  **#247 said five recovered building names; re-running the extractor over SFP
+  162 and diffing on `citation.url` showed 93**, 44 of them on published pages,
+  because every caption-prefix and name-filter fix landed since the collection
+  was read had gone unapplied to it. 42 timeline rows on 38 pages went from
+  "Photographed." to naming the building. Two of the 93 were not names at all —
+  "Large house", "Residencial building" — and `GENERIC_QUALIFIER` now catches
+  them; measured over every name in every findings file, that rule flips 2 of
+  1,001. The re-run also **drops** 15 SFP 162 entries, and 13 of those are the
+  people filter working on "ARTISTIC HOMES OF CALIFORNIA — Residence of Mr. W.
+  MAYO NEWHALL, No. 1206 Post Street".
+
+  **#248 said four leaked names in the tail; the honorific rule finds 53 spans
+  across the source and 49 are people** — 30 in SFP 162, including a named
+  resident at their own street number in a published finding. One name was
+  outside `raw.text` altogether, in `address_as_written` and `citation.label`,
+  and taking it out made that finding resolvable for the first time: the Glen
+  Park Nickelodeon, 1926, is now on 2784 Diamond Street.
+
+  What both have in common is the lesson: **when a name rule changes, re-run
+  the affected batches and diff, rather than patching the records the issue
+  happens to list** — and diff on `citation.url`, because the finding id is
+  positional and moves.)
 
 - **Verified:** 2026-09-04 (read, resolved and published **the tail — 36
   collections in one batch**, everything in the archive that holds an addressed
