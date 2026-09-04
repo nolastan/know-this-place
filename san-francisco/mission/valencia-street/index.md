@@ -21,7 +21,6 @@ Every residential parcel on Valencia Street that the city's address, assessor an
 - [400](400/) — A 1910 1-unit building with a ground-floor store, with a seismic retrofit permitted in 2003.
 - [412](412/) — A 1906 industrial building, with a rear addition permitted in 1989.
 - [418–422](418/) — A 1908 hotel, with a vertical addition permitted in 1997.
-- [423](423/) — An assessor class: vacant lot, with a rear addition permitted in 2003.
 - [440](440/) — A 1994 59-unit apartment building, with garage work permitted in 1992.
 - [443–447](443/) — A 1906 hotel, with a seismic retrofit permitted in 2017.
 - [461–467](461/) — A 1910 industrial building, with reroofing permitted in 2017.

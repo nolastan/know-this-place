@@ -18,7 +18,6 @@ The parcels on Bush Street documented here so far, from the city's address, asse
 - [425](425/) — A 1908 office building in the Kearny-Market-Mason-Sutter Conservation District, with reroofing permitted in 2016.
 - [429–431](429/) — A 1908 30-unit apartment building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 2000.
 - [430–444](430/) — An office building in the Kearny-Market-Mason-Sutter Conservation District, with window replacement permitted in 2015.
-- [445](445/) — A 1905 office condominium in the Kearny-Market-Mason-Sutter Conservation District, with reroofing permitted in 2022.
 - [453–455](453/) — A 1906 store building in the Kearny-Market-Mason-Sutter Conservation District, with permit records from 1993 to 2023.
 - [460](460/) — A 1915 office building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 1999.
 - [461–463](461/) — A 1907 office building in the Kearny-Market-Mason-Sutter Conservation District, with a bathroom remodel permitted in 2013.

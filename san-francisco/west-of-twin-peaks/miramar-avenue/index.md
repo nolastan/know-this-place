@@ -5,7 +5,6 @@ The parcels on Miramar Avenue documented here so far, from the city's address, a
 ## Documented so far
 
 - [600](600/) — A 1923 single-family house, with facade work permitted in 2019.
-- [623](623/) — A 1919 single-family house, with a rear addition permitted in 1991.
 - [652](652/) — A 1919 single-family house, with reroofing permitted in 2026.
 - [676](676/) — A 1917 single-family house, with a rear addition permitted in 1992.
 - [682](682/) — A 1918 single-family house, with deck work permitted in 2026.
