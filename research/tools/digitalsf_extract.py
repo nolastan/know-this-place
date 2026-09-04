@@ -1278,6 +1278,20 @@ CAPTION_PREFIX = re.compile(
     r"|^(?:Former|Formerly|Old|Vacant|Abandoned)\s+(?=[A-Z])", re.I)
 
 
+# A word that is capitalized only because the caption begins with it, and that
+# describes the building rather than naming it. Kept as a closed list, not a
+# part-of-speech test: measured over every findings file in the repository,
+# 234 candidate names are a bare adjective plus a BUILDING_NOUN and 232 of them
+# are real — "Grand Theater", "Ideal Bar", "Imperial Hotel", "Sunset Market",
+# "White Cleaners". Only "Large house" and "Residencial building" are the
+# caption describing what it photographed, and only a closed list separates
+# them. See "measure a rule before wiring it" in research/AGENTS.md.
+GENERIC_QUALIFIER = {
+    "large", "small", "residential", "residencial", "commercial",
+    "industrial", "vacant", "abandoned", "empty", "unidentified", "unnamed",
+}
+
+
 def is_named_building(part: str) -> bool:
     """A proper name for a building, not a scrap of caption and not a person."""
     part = CAPTION_PREFIX.sub("", part).strip(" ,.&-")
@@ -1306,10 +1320,13 @@ def is_named_building(part: str) -> bool:
             continue
         if not word[0].isupper():
             return False
-        distinguishing = True
+        if word.lower() not in GENERIC_QUALIFIER:
+            distinguishing = True
     # "Building", "House", "Public Library" name no particular one. A fragment
     # with nothing but the noun in it is the caption's common noun, and on a
-    # page it says only that the address had a building on it.
+    # page it says only that the address had a building on it. Neither does one
+    # with nothing but a GENERIC_QUALIFIER in front of the noun: "Large house"
+    # is the archivist describing the photograph, not the house's name.
     return has_noun and distinguishing
 
 

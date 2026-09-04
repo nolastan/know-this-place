@@ -411,6 +411,46 @@ so a collection is one batch until that number passes about fifteen hundred.
 - **`fuzzy date` means what it says.** A record flagged in `907` is an
   archivist's estimate. Carry the flag through to the finding rather than
   silently promoting it to a firm year.
+- **A name change in the extractor is a correction pass over what already
+  shipped, and it is bigger than the one record that showed it.** Adding
+  `Ruins of` to `CAPTION_PREFIX` was filed (#247) as recovering five building
+  names in SFP 162. Re-running the extractor over that collection and diffing
+  on `citation.url` — **not** on the finding id, which is positional and moves
+  the moment a record is added or dropped — showed **93**: every caption-prefix
+  and name-filter fix landed since the collection was read, not just the one the
+  issue noticed. 44 of them were on published pages. So: when a name rule
+  changes, re-run the affected batches and diff, rather than patching the
+  records the issue happens to list. Merge the diff into the committed file
+  (`extra.named_in_record` and the `The record names …` sentence only) — never
+  regenerate it, or 1,186 hand-checked resolutions and 545 publish decisions go
+  with it.
+
+- **The same re-run also drops findings, and that is usually right.** Fifteen
+  SFP 162 entries the current extractor no longer produces: thirteen are the
+  people filter working — "ARTISTIC HOMES OF CALIFORNIA — Residence of Mr. W.
+  MAYO NEWHALL, No. 1206 Post Street" is a person's house, and "4 P.M. Aug",
+  "886 Cliff House" and "214 Carl Saxsenmeir" were never addresses — and two
+  are the same address now folded onto a sibling record. All fifteen were
+  unresolved, so nothing published depended on them.
+
+- **A capitalized word is not a proper noun, and `is_named_building` used to
+  assume it was.** "Large house at 3905 Clay Street" and "Residencial building
+  in 907 Pine street" passed the filter — a BUILDING_NOUN plus one capitalized
+  word is all it asked for — and the first of them reached a published page as
+  a building's name. `GENERIC_QUALIFIER` is the fix, and it is a **closed list**
+  for a measured reason: 234 stored names are an adjective plus a building noun
+  and 232 of them are real ("Grand Theater", "Ideal Bar", "Imperial Hotel",
+  "Sunset Market", "White Cleaners"), so no part-of-speech test separates them.
+  Measured over every name in every findings file in the repository, the rule
+  flips **2 of 1,001** — exactly the two above.
+
+- **Two known regressions in the current name/address parse**, both found by
+  that diff, both on entries no page carries. `Park View Hotel, 102 South Park`
+  now parses the street as `SOUTH` + type `PARK` where the hand-checked entry
+  has `SOUTH PARK` and no type; and `View from 624 Ashbury Street of three
+  children…` keeps `View from` inside `address_as_written`. Don't adopt a
+  re-run's address fields wholesale for this collection — take the names.
+
 - **This overlaps the *SF Redevelopment Agency property summaries* lead — check
   before extracting.** That lead is in the leads table of
   [../SOURCES.md](../SOURCES.md); it has no source id yet because it has not
