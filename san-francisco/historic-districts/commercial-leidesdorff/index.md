@@ -7,7 +7,8 @@ The buildings documented here so far inside the Commercial-Leidesdorff Conservat
 - [Clay Street](/san-francisco/financial-district/clay-street/) — 3 documented buildings inside the district.
 - [Commercial Street, Financial District](/san-francisco/financial-district/commercial-street/) — 4 documented buildings inside the district.
 - [Commercial Street, Nob Hill](/san-francisco/nob-hill/commercial-street/) — 1 documented building inside the district.
-- [Montgomery Street](/san-francisco/financial-district/montgomery-street/) — 2 documented buildings inside the district.
+- [Leidesdorff Street](/san-francisco/financial-district/leidesdorff-street/) — 1 documented building inside the district.
+- [Montgomery Street](/san-francisco/financial-district/montgomery-street/) — 4 documented buildings inside the district.
 - [Sacramento Street](/san-francisco/nob-hill/sacramento-street/) — 2 documented buildings inside the district.
 - [Sansome Street](/san-francisco/financial-district/sansome-street/) — 3 documented buildings inside the district.
 
@@ -21,8 +22,11 @@ The buildings documented here so far inside the Commercial-Leidesdorff Conservat
 - [554–556 Commercial Street](/san-francisco/financial-district/commercial-street/554/) — A 1908 office building, with a seismic retrofit permitted in 2025.
 - [564–566 Commercial Street](/san-francisco/financial-district/commercial-street/564/) — A 1907 store building, with a bathroom remodel permitted in 2023.
 - [565 Commercial Street](/san-francisco/nob-hill/commercial-street/565/) — A 1985 office building, with plumbing work permitted in 2019.
+- [222 Leidesdorff Street](/san-francisco/financial-district/leidesdorff-street/222/) — A 1925 assessor class: vacant lot, with reroofing permitted in 2026.
+- [500 Montgomery Street](/san-francisco/financial-district/montgomery-street/500/) — A 1918 office building, with electrical work permitted in 2017.
 - [520 Montgomery Street](/san-francisco/financial-district/montgomery-street/520/) — A 1920 store building, with stair work permitted in 2013.
 - [540–550 Montgomery Street](/san-francisco/financial-district/montgomery-street/540/) — A 1931 office building, with plumbing work permitted in 2015.
+- [552 Montgomery Street](/san-francisco/financial-district/montgomery-street/552/) — A 1908 office building, with plumbing work permitted in 2015.
 - [560 Sacramento Street](/san-francisco/nob-hill/sacramento-street/560/) — A 1909 office building, with electrical work permitted in 2009.
 - [576 Sacramento Street](/san-francisco/nob-hill/sacramento-street/576/) — A 1907 office building, with reroofing permitted in 2004.
 - [401–405 Sansome Street](/san-francisco/financial-district/sansome-street/401/) — A 1906 office building, with a seismic retrofit permitted in 1993.

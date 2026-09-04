@@ -51,10 +51,12 @@ The parcels on Market Street documented here so far, from the city's address, as
 - [1100–1112](1100/) — A 1909 hotel in the Market Street Theatre and Loft Historic District, with reroofing permitted in 2013.
 - [1101–1105](1101/) — A 1909 10-unit building in the Market Street Theatre and Loft Historic District, with facade work permitted in 2012.
 - [1115–1119](1115/) — A 1920 office building, with window replacement permitted in 2023.
+- [1125](1125/) — A building, with foundation work permitted in 2019.
 - [1127](1127/) — A 1917 theater in the San Francisco Neighborhood Movie Theater Historic District (Discontiguous), with a seismic retrofit permitted in 2012.
 - [1133–1139](1133/) — A 1906 hotel, with facade work permitted in 2021.
 - [1141](1141/) — A 1990 office building, with one permit record from 1983.
 - [1145](1145/) — A 1990 office building, with reroofing permitted in 2005.
+- [1170](1170/) — A 1983 office building in the Civic Center Historic District, with plumbing work permitted in 2010.
 - [1182–1192](1182/) — A 1925 office building in the Civic Center Historic District, with electrical work permitted in 2022.
 - [1200](1200/) — A 1908 store building in the Civic Center Historic District, with a seismic retrofit permitted in 1984.
 - [1210–1218](1210/) — A 1907 store building in the Civic Center Historic District, with facade work permitted in 1995.

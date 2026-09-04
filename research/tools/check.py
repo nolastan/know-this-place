@@ -605,6 +605,27 @@ _GONE_FRAME = re.compile(
     re.I)
 
 
+def _cited_source_ids(source_id: str, findings: list) -> set:
+    """The source ids this batch's own entries can appear under on a page.
+
+    A source that cites per item writes `<register id>-<item>` onto the page —
+    `digitalsf-8325`, `sf-environmental-review-333californiaoff5198sanf`. The
+    item part comes out of the citation, so the ids one batch can have written
+    are enumerable, and matching on the register-id prefix instead sweeps in
+    every other batch of the same source. That is a miss, not a false positive:
+    the whole point of --overlap is to catch a fact the page already carries.
+    """
+    ids = {source_id} if source_id else set()
+    for finding in findings:
+        cite = finding.get("citation") or {}
+        for raw in (cite.get("url", ""), cite.get("corpus_path", ""), cite.get("locator", "")):
+            for token in re.split(r"[\s/]+", str(raw)):
+                token = token.strip().removesuffix(".txt").removesuffix(".json")
+                if token and re.fullmatch(r"[A-Za-z0-9._-]{4,}", token):
+                    ids.add(f"{source_id}-{token}")
+    return ids
+
+
 def overlap(path: Path) -> None:
     """Report resolved findings the target page already carries.
 
@@ -668,6 +689,7 @@ def overlap(path: Path) -> None:
     # only reliable way to tell "the page already had this" from "this batch just
     # wrote it" is the text of the batch's own findings.
     ours = {f.get("description", "") for f in data.get("findings", [])}
+    our_source_ids = _cited_source_ids(source_id, data.get("findings", []))
 
     def is_ours(entry: dict) -> bool:
         """Did this batch write this entry?
@@ -679,11 +701,18 @@ def overlap(path: Path) -> None:
         and every entry the batch had just written came back as a duplicate of
         itself — 60 of them in one run. Where a source cites per item, the
         page's source id is the register id with the item appended
-        (`digitalsf-8325`), so the prefix is the reliable test.
+        (`digitalsf-8325`), so the id is the reliable test.
+
+        The prefix alone is not, though: `sf-environmental-review-<item>`
+        matches every batch this source has ever published, so a later batch
+        that re-reads a building an earlier one already documented came back
+        clean. 216 Pine Street and the Charleston Building were both already on
+        their pages, cited per document, when this batch re-extracted them.
+        So the test is the set of item ids *this file* cites, not the prefix.
         """
         src = entry.get("source") or ""
         return (src in (source_id, data.get("batch"))
-                or (bool(source_id) and src.startswith(source_id + "-"))
+                or src in our_source_ids
                 or entry.get("description", "") in ours)
     hits, name_hits, roll_hits, proper_hits, checked, missing = [], [], [], [], 0, 0
     gone_hits: list[tuple] = []

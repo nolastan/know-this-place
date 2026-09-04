@@ -10,8 +10,9 @@ The buildings documented here so far inside the Chinatown Historic District, and
 - [California Street](/san-francisco/financial-district/california-street/) — 4 documented buildings inside the district.
 - [Clay Street](/san-francisco/financial-district/clay-street/) — 22 documented buildings inside the district.
 - [Columbus Avenue](/san-francisco/chinatown/columbus-avenue/) — 1 documented building inside the district.
-- [Commercial Street](/san-francisco/financial-district/commercial-street/) — 8 documented buildings inside the district.
-- [Grant Avenue, Chinatown](/san-francisco/chinatown/grant-avenue/) — 3 documented buildings inside the district.
+- [Commercial Street, Chinatown](/san-francisco/chinatown/commercial-street/) — 1 documented building inside the district.
+- [Commercial Street, Financial District](/san-francisco/financial-district/commercial-street/) — 8 documented buildings inside the district.
+- [Grant Avenue, Chinatown](/san-francisco/chinatown/grant-avenue/) — 4 documented buildings inside the district.
 - [Grant Avenue, Financial District](/san-francisco/financial-district/grant-avenue/) — 15 documented buildings inside the district.
 - [Grant Avenue, North Beach](/san-francisco/north-beach/grant-avenue/) — 31 documented buildings inside the district.
 - [Jackson Street](/san-francisco/chinatown/jackson-street/) — 28 documented buildings inside the district.
@@ -66,6 +67,7 @@ The buildings documented here so far inside the Chinatown Historic District, and
 - [857 Clay Street](/san-francisco/financial-district/clay-street/857/) — A 1913 hotel, with a kitchen remodel permitted in 1992.
 - [910–914 Clay Street](/san-francisco/financial-district/clay-street/910/) — A 1907 6-unit apartment building, with a seismic retrofit permitted in 1995.
 - [571 Columbus Avenue](/san-francisco/chinatown/columbus-avenue/571/) — A 1907 store building, with a seismic retrofit permitted in 2001.
+- [653 Commercial Street](/san-francisco/chinatown/commercial-street/653/) — A 1923 2-unit building, with a kitchen remodel permitted in 2018.
 - [642 Commercial Street](/san-francisco/financial-district/commercial-street/642/) — An assessor class: vacant lot, with permit records from 1982 to 1990.
 - [667–671 Commercial Street](/san-francisco/financial-district/commercial-street/667/) — A 1907 7-unit apartment building, with a kitchen remodel permitted in 1984.
 - [673–675 Commercial Street](/san-francisco/financial-district/commercial-street/673/) — A 1907 single-family house, with a seismic retrofit permitted in 2001.
@@ -172,6 +174,7 @@ The buildings documented here so far inside the Chinatown Historic District, and
 - [22–24 Ross Alley](/san-francisco/chinatown/ross-alley/22/) — A 1907 5-unit apartment building, with reroofing permitted in 1998.
 - [41–53 Ross Alley](/san-francisco/chinatown/ross-alley/41/) — A 1908 hotel, with reroofing permitted in 2012.
 - [8–14 Ross Alley](/san-francisco/north-beach/ross-alley/8/) — A 1906 10-unit apartment building, with a seismic retrofit permitted in 1995.
+- [654–781 Sacramento Street](/san-francisco/chinatown/grant-avenue/654/) — A 1907 hotel, with reroofing permitted in 2022.
 - [688–690 Sacramento Street](/san-francisco/nob-hill/sacramento-street/688/) — A 1916 2-unit building with a ground-floor store, with a seismic retrofit permitted in 1997.
 - [696 Sacramento Street](/san-francisco/nob-hill/sacramento-street/696/) — A 1909 store building, with a kitchen remodel permitted in 2026.
 - [706–710 Sacramento Street](/san-francisco/nob-hill/sacramento-street/706/) — A 1906 8-unit apartment building, with a seismic retrofit permitted in 2000.

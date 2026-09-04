@@ -17,13 +17,13 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Buena Vista North Historic District](buena-vista-north/) — Eligible for the California Register, significant 1870–1915; 21 buildings documented on 7 streets.
 - [Capp and Howard Streets Mid-Block Fire Line Historic District](capp-and-howard-streets-mid-block-fire-line/) — Eligible for the California and National Registers, significant 1865–1909; 5 buildings documented on 2 streets.
 - [Castro & Liberty Streets Historic District](castro-and-liberty-streets/) — Eligible for the California Register, significant 1897–1906; 47 buildings documented on 3 streets.
-- [Chinatown Historic District](chinatown/) — Eligible for the California and National Registers, significant 1906–1930/1938; 233 buildings documented on 28 streets.
+- [Chinatown Historic District](chinatown/) — Eligible for the California and National Registers, significant 1906–1930/1938; 235 buildings documented on 29 streets.
 - [Chula-Abbey Early Residential District](chula-abbey/) — An Article 10 city landmark district, significant 1865–1912; 38 buildings documented on 5 streets.
 - [Chula-Dolores-17th Fire Survivors and Reconstruction Historic District](chula-dolores-17th-fire-survivors-and-reconstruction/) — Eligible for the California Register, significant 1865–1880; 1907–1912; 39 buildings documented on 5 streets.
-- [Civic Center Historic District](civic-center/) — An Article 10 city landmark district, significant 1913–1951; 24 buildings documented on 10 streets.
+- [Civic Center Historic District](civic-center/) — An Article 10 city landmark district, significant 1913–1951; 25 buildings documented on 10 streets.
 - [Clyde and Crooks Historic District](clyde-and-crooks/) — An Article 10 city landmark district, significant 1906–1935; 18 buildings documented on 6 streets.
 - [Cole Valley Historic District](cole-valley/) — Eligible for the California Register, significant 1900–1915; 14 buildings documented on 5 streets.
-- [Commercial-Leidesdorff Conservation District](commercial-leidesdorff/) — An Article 11 conservation district; 15 buildings documented on 6 streets.
+- [Commercial-Leidesdorff Conservation District](commercial-leidesdorff/) — An Article 11 conservation district; 18 buildings documented on 7 streets.
 - [Cow Hollow First Bay Tradition Historic District](cow-hollow-first-bay-tradition/) — Eligible for the California Register, significant 1888–1914; 39 buildings documented on 9 streets.
 - [Diamond Heights Historic District](diamond-heights/) — Eligible for the California Register, significant 1962–1965; 22 buildings documented on 5 streets.
 - [Dogpatch Historic District](dogpatch/) — An Article 10 city landmark district, significant 1867–1945; 68 buildings documented on 6 streets.
@@ -73,7 +73,7 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Mission Miracle Mile at 17th Street Historic District](mission-miracle-mile-at-17th-street/) — Eligible for the California Register, significant 1906–1924; 1925–1960; 18 buildings documented on 2 streets.
 - [NOPA Historic District](nopa/) — Eligible for the California Register, significant 1870s–1910s; 20 buildings documented on 10 streets.
 - [New Montgomery-Mission-Second Street Conservation District](new-montgomery-mission-second-street/) — An Article 11 conservation district, significant 1906–1929; 70 buildings documented on 12 streets.
-- [Northeast Waterfront Historic District](northeast-waterfront/) — An Article 10 city landmark district, significant [Unofficial] 1848–1960s; 16 buildings documented on 8 streets.
+- [Northeast Waterfront Historic District](northeast-waterfront/) — An Article 10 city landmark district, significant [Unofficial] 1848–1960s; 17 buildings documented on 8 streets.
 - [Olsen's Queen Anne Cottages Historic District](olsen-s-queen-anne-cottages/) — Eligible for the California Register, significant 1893; 7 buildings documented on one street.
 - [Pacific Heights Historic District](pacific-heights/) — Eligible for the California Register, significant 1895–1930; 88 buildings documented on 12 streets.
 - [Panhandle Historic District](panhandle/) — Eligible for the California Register, significant 1870–1915; 26 buildings documented on 8 streets.

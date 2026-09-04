@@ -5,7 +5,7 @@
 >
 > - **Kind:** PDF reports · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 37 of 172 address-titled documents read; 181 findings, 106 resolved.
+> - **Coverage:** 56 of 172 address-titled documents read; 291 findings, 183 resolved, 160 published.
 > - **Local corpus:** `research/corpora/sf-environmental-review/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -170,6 +170,47 @@
     105 Montgomery is 0288006 on block 288, and the California Pacific Building
     survives there as its own parcel.
 
+  - **The block and lot a report prints belong to its own site, and attaching
+    them to a vicinity finding turns the resolver's parcel check into noise.**
+    Every one of these documents states the project's assessor block, and the
+    same document then rates twenty buildings around the block that are on
+    other blocks entirely. Carrying the project's block onto those findings made
+    `report` print two "another block" lines and three re-lottings that were
+    nothing of the kind, and would have buried a real OCR error if there had
+    been one. Put the printed parcel on a finding only where the record prints
+    it *for that building* — which downtown means the project site, the rare
+    rating table that prints block and lot per row, and nothing else.
+
+  - **Several parcels can be one building, and the assessor says so by filing
+    them all at one address.** The 505 Montgomery tower stands on seven lots of
+    block 227 and the 100 First tower on six lots of block 3721; every one of
+    those parcels is active, carries its demolished predecessor's street number
+    in EAS, and comes off the roll with **no build year and no storeys**, filed
+    at 505 Montgomery Street and 100 First Street respectively. Resolving each
+    finding onto its own parcel and seeding from the manifest would have made
+    eleven pages for two towers. The tell is the roll's `property_location`
+    against the parcel's own number, and the two lots on block 227 that do
+    *not* match it — 0227011 (640 Sacramento, built 1907) and 0227027 (653
+    Commercial, built 1923) — are exactly the two buildings the project kept.
+
+  - **A scrambled site table is readable when the document restates it in
+    prose, and these documents always do.** The 100 First Street and 505
+    Montgomery Street reports both print their site buildings and their
+    construction dates as two detached heaps in the text layer, and both walk
+    the same list again, building by building with the year in parentheses, in
+    the impacts chapter. Read the prose and use the table only to confirm the
+    count. Where the roll can be checked afterwards it has agreed every time:
+    the 521 Mission garage's 1952, 640 Sacramento's 1907 and 653 Commercial's
+    1923 are all the roll's years too.
+
+  - **The pre-1910 guard fires on a third of a downtown batch and is wrong
+    about all of it.** These are 1980s surveys of buildings then standing, so
+    the address is the surveyor's, not a number carried over from before 1909,
+    and the renumbering question does not arise. Ten findings were refused this
+    way and nine were resolved by hand on the roll year, the record's own block
+    and lot, or both; the tenth was a genuine duplicate. Say so in the method
+    rather than leaving them unresolved.
+
   - **The nineteenth-century material is pre-renumbering.** 2222 23rd Street's
     "History of the Site" quotes an 1884 gazetteer placing the San Francisco
     Pioneer Varnish Works on "Sonoma Street, between Twenty-third and
@@ -215,7 +256,7 @@
 
   On a page, name the report and the year and link the Internet Archive item.
 
-- **Coverage:** 37 documents read whole, all from the **address-titled** set.
+- **Coverage:** 56 documents read whole, all from the **address-titled** set.
   The first sixteen were deliberately outside downtown — 61 findings, 29 resolved
   onto 13 pages; 1055 Stockton yielded nothing, its EIR saying neither building
   on the site was on any list of historical, architectural or cultural interest
@@ -226,10 +267,19 @@
   California Street, a vacant site whose neighbours are all named without street
   numbers; 71 Stevenson Street, a final initial study that defers historic
   buildings to the EIR; 135 Main Street, whose only usable fact is a demolition
-  it records at 101 Mission Street). **Remaining: 135 address-titled documents**
-  — the 1983–2011 downtown and South of Market projects, plus the finals and
-  supplements of projects whose drafts are read — and the ~617 titled by project
-  or area rather than address, which have not been assessed at all.
+  it records at 101 Mission Street). The third batch is **the downtown and South
+  of Market projects of 1983–1991**: 19 documents, one per project — 110 findings,
+  77 resolved, 59 published on 44 pages, 11 of them seeded by that run. Two of
+  the 19 were near-empty: 600 Harrison Street is a surface parking lot whose
+  initial study found historic resources insignificant, and 101 Second Street
+  gives its three site buildings a Heritage rating and neither a name nor a date.
+  Its richest documents are 505 Montgomery Street and 100 First Street, which
+  between them date thirteen demolished buildings, and 343 Sansome Street, which
+  gives the 1908 Howard and Galloway building and its 1929 Crown Zellerbach
+  remodelling by Sam Hyman and Abe Appleton. **Remaining: 116 address-titled
+  documents** — the 1995–2011 downtown and South of Market projects, plus the
+  finals and supplements of projects whose drafts are read — and the ~617 titled
+  by project or area rather than address, which have not been assessed at all.
 
 - **Verified:** 2026-09-04 (two runs on the same day. The first promoted the row
   from the leads table and mined the outside-downtown batch: 16 documents, 61
@@ -252,3 +302,16 @@
   the page of the tower that replaced the building they describe; and the
   **pre-1910 renumbering guard is overridden by the record's own block and lot**,
   not by the street number.)
+
+  **2026-09-04**, third run: the 1983–1991 downtown and South of Market projects,
+  19 documents, 110 findings, 77 resolved, 59 published on 44 pages. What it
+  learned: **a report's printed block and lot belong to its own site**, so
+  attaching them to the twenty buildings it rates around the block turns the
+  resolver's parcel check into noise; **several parcels can be one building**,
+  and the roll says which by filing them all at one address with no build year,
+  which is what separates the two buildings the 505 Montgomery project kept from
+  the seven lots of the tower; **a scrambled site table is readable because these
+  documents restate it in prose**, building by building, in their impacts
+  chapter; and **the pre-1910 guard is wrong about a modern survey of old
+  buildings** — it refused ten findings here and nine were resolved by hand on
+  the roll year and the record's own parcel.)

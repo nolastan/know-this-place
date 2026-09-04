@@ -17,12 +17,15 @@ The parcels on Montgomery Street documented here so far, from the city's address
 - [300](300/) — A 1918 office building, with plumbing work permitted in 2018.
 - [315](315/) — A 1921 office building, with an addition permitted in 2026.
 - [400](400/) — The Kohl Building of 1901, an Article 10 landmark on the site of one of Samuel Brannan's two 1853 Montgomery Street buildings.
+- [405](405/) — A 1926 hotel, with a seismic retrofit permitted in 2000.
 - [417–425](417/) — A 1936 office building, with plumbing work permitted in 2019.
 - [420](420/) — A 1959 office tower on the site of one of Samuel Brannan's two 1853 Montgomery Street buildings.
 - [451–465](451/) — A 1907 office building, with a seismic retrofit permitted in 1993.
 - [456–460](456/) — A 1986 office building with a sunken plaza, one of the Downtown Plan's public open spaces.
+- [500](500/) — A 1918 office building in the Commercial-Leidesdorff Conservation District, with electrical work permitted in 2017.
 - [520](520/) — A 1920 store building in the Commercial-Leidesdorff Conservation District, with stair work permitted in 2013.
 - [540–550](540/) — A 1931 office building in the Commercial-Leidesdorff Conservation District, with plumbing work permitted in 2015.
+- [552](552/) — A 1908 office building in the Commercial-Leidesdorff Conservation District, with plumbing work permitted in 2015.
 - [1228](1228/) — A 1929 6-unit apartment building, with a bathroom remodel permitted in 2007.
 - [1254–1262](1254/) — A 1900 6-unit apartment building in the Telegraph Hill Historic District, with deck work permitted in 1988.
 

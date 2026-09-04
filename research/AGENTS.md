@@ -1584,6 +1584,43 @@ The mechanics:
   field, find the field that is present before planning the read; the answer to
   "what are these?" is usually a different question's answer.*
 
+- **A duplicate check that recognises "our own writes" by the source-id prefix
+  cannot see the source's own earlier batches.** `check.py --overlap` excluded
+  every page entry whose source started with the register id, which is right for
+  the batch's own per-item citations (`digitalsf-8325`) and wrong for every
+  other batch of a source that cites per document. 216 Pine Street and the
+  Charleston Building were already on their pages, cited as
+  `sf-environmental-review-333californiaoff5198sanf` and
+  `sf-environmental-review-222kearnystreetd1119sanf`, and both came back clean
+  against a batch that had just re-extracted them. The fix is to enumerate the
+  item ids **this file** cites rather than matching the prefix; the shape to
+  remember is that *the second batch of a source is the likeliest place to
+  duplicate it*, and the check built to stop duplicates was blind to exactly
+  that case. Neither wording nor name-and-date caught them either, so this is
+  still a decision a person makes by reading the page.
+
+- **Several parcels can be one building, and the assessor says so.** A tower
+  built on an assembled block keeps its lots: the 505 Montgomery tower stands on
+  seven parcels of block 227 and 100 First Street on six of block 3721. Every
+  one is active, every one still carries a demolished predecessor's street
+  number in EAS, and the resolver places and the manifest seeds each of them —
+  eleven pages for two buildings. The roll is what distinguishes them: an
+  assemblage lot comes off it with **no build year, no storeys, and a
+  `property_location` naming a different street number**, and the two lots on
+  block 227 that carry their own year (1907 and 1923) are exactly the two
+  buildings the project kept. **Before seeding from a manifest, group its
+  parcels by the roll's `property_location` and collapse the ones that share
+  it.**
+
+- **The block and lot a record prints belong to what the record is about, and
+  attaching them more widely poisons the only check that tests a finished
+  resolution.** The dossier's own instruction — put the printed parcel on every
+  finding — was read as "on every finding *from* that document", so a project's
+  block went onto the twenty buildings it merely rates around the block.
+  `report` then printed two "another block" lines and three re-lottings that
+  were artefacts, which is worse than printing nothing: the scan exists so that
+  a real OCR digit stands out, and noise is how a real one gets missed.
+
 - **A second architect on a building the page already credits is an addition,
   not a duplicate — and neither overlap scan will tell you so.** The name-and-date
   scan compares the *same* name, so a different collaborator never matches; the

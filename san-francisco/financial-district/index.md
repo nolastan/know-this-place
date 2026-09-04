@@ -14,6 +14,7 @@ The office district north of Market Street, in the city's Financial District/Sou
 - [Drumm Street](drumm-street/) — 1 building, built 1912.
 - [Front Street](front-street/) — 1 building.
 - [Grant Avenue](grant-avenue/) — 1 building, built 1913; 1 in the Chinatown Historic District.
+- [Leidesdorff Street](leidesdorff-street/) — 1 building, built 1925; 1 in the Commercial-Leidesdorff Conservation District.
 - [Market Street](market-street/) — 1 building, built 1981.
 - [Merchant Street](merchant-street/) — 1 building, built 1922; 1 in the Chinatown Historic District.
 - [Mission Street](mission-street/) — 1 building, built 1922; 1 in the New Montgomery-Mission-Second Street Conservation District.
