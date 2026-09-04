@@ -283,6 +283,40 @@ def street_hub_hook_overrides(dir_path: Path) -> dict:
     return out
 
 
+def check_hub_covers_children(dir_path: Path) -> None:
+    """Every page beneath a street hub must be listed in that hub's index.md.
+
+    `check_hub_sync` is the same contract read the other way: it compares the
+    hub's two files against each other, which catches a list that drifted in
+    one of them but not a list that is stale in both. That is the case here —
+    a page seeded under a street after the hub was last built is in the
+    sitemap and reachable by URL, yet a reader browsing the street never sees
+    it. AGENTS.md's directory contract makes the hub the way in ("Hub pages
+    ... list and link what's beneath them. Keep them current when adding
+    pages"), so an unlisted page is a broken site, not a cosmetic gap — the
+    mirror of a hub link that points at a page which isn't there.
+
+    Only street hubs are checked: a directory with at least one data.json
+    child, per `street_hub_hook_overrides`. A hub whose own index.md carries
+    hand-written sections is one `write_street_hub` refuses to rebuild, but
+    the requirement is the same either way — the list is then updated by hand.
+    """
+    md_path = dir_path / "index.md"
+    if not md_path.exists():
+        return
+    children = sorted(d.name for d in dir_path.iterdir()
+                      if d.is_dir() and (d / "data.json").exists())
+    if not children:
+        return  # a neighborhood or city hub; its children are hubs, not pages
+    listed = {href.rstrip("/") for href in hub_md_items(md_path.read_text(encoding="utf-8"))}
+    missing = [c for c in children if c not in listed]
+    if missing:
+        err(md_path, f"{len(missing)} page(s) beneath this hub are not in its "
+                     f"list ({', '.join(missing)}) — a reader browsing the "
+                     f"street can't reach them; rebuild with "
+                     f"scripts/seed_pages.py hubs")
+
+
 def check_hub_sync(dir_path: Path) -> None:
     """A hub page's index.md and index.html must show the same list.
 
@@ -368,6 +402,7 @@ def main() -> int:
             # hand-authored prose in both files; keeping them in sync is a
             # content edit, not a build-contract check.
             check_hub_sync(html_path.parent)
+            check_hub_covers_children(html_path.parent)
 
     # The icon links every page carries have to resolve to something.
     for icon in ("favicon.ico", "apple-touch-icon.png", "shared/icon.svg",

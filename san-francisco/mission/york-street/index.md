@@ -4,6 +4,10 @@ Every residential parcel on York Street that the city's address, assessor and pe
 
 ## Documented so far
 
+- [501](501/) — A 1954 industrial building, with a seismic retrofit permitted in 1997.
+- [517–525](517/) — A 1936 industrial building, with reroofing permitted in 2013.
+- [570–590](570/) — A 1918 store building, with window replacement permitted in 2014.
+- [600](600/) — A 1992 store building, with a kitchen remodel permitted in 2010.
 - [613](613/) — A 1900 3-unit building with a ground-floor store, with reroofing permitted in 2002.
 - [615](615/) — A 1900 two-flat, with window replacement permitted in 2010.
 - [617](617/) — A 1900 single-family house, with a bathroom remodel permitted in 2024.

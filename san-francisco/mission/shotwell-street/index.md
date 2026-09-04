@@ -38,7 +38,11 @@ Every residential parcel on Shotwell Street that the city's address, assessor an
 - [376](376/) — A 1900 school building, with permit records from 2019 to 2025.
 - [379–381](379/) — A 1900 4-unit apartment building, with reroofing permitted in 1992.
 - [385](385/) — A 1900 three-flat, with stair work permitted in 1997.
+- [430–454](430/) — A 1918 industrial building, with stair work permitted in 2020.
+- [434](434/) — A 1918 industrial building, with plumbing work permitted in 2024.
+- [438](438/) — A 1918 industrial building, with an addition permitted in 2020.
 - [502–504](502/) — A 1909 4-unit apartment building, with reroofing permitted in 1989.
+- [505](505/) — An assessor class: vacant lot in the San Francisco 1952 Firehouse Bond Act Thematic District (Discontiguous), with a kitchen and bathroom remodel permitted in 2017.
 - [506–508](506/) — A 1904 4-unit apartment building, with reroofing permitted in 2024.
 - [512–516](512/) — A 1900 4-unit apartment building, with stair work permitted in 2002.
 - [522](522/) — A 1904 1-unit apartment building, with permit records from 2001 to 2002.
