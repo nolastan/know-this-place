@@ -555,13 +555,50 @@ not when a page is. Two mechanisms, both now in the extractor:
   by reading `--report`'s notes before writing the file, not after.
   The record page is one click from `citation.url` if an auditor wants the
   original.
-- **The redactor only reaches a name the catalogue indexed.** Four tail records
-  keep a personal name in `raw.text` because the caption names someone the
-  catalogue put in no `600`/`700` heading — civic figures at public events in
-  1945–1964, all long dead and none of them a resident, occupant or owner, and
-  `raw.text` never reaches a page. It is still a gap, and widening the redactor
-  to a general capitalized-name detector would eat firm names ("Eagle Market",
-  "Shadows Restaurant") and place names, so it is filed rather than bodged.
+- **A courtesy title is the one name shape narrow enough to redact blind.**
+  `redact` can only reach a name the catalogue filed in a `600`/`700` heading,
+  and captions name people the cataloguer indexed nowhere (#248).
+  `redact_honorifics` closes most of that: a courtesy title or a rank —
+  `Mr.`/`Mrs.`/`Miss`/`Dr.`/`Capt.`/`Rev.`/`Judge` and their siblings — in
+  front of a capitalised run, with `Mr. and Mrs. X` bridged as one name.
+
+  **What it caught, measured over every `raw.text` in every digitalsf findings
+  file: 53 spans, 49 of them people.** Not four edge cases — 30 in SFP 162
+  alone, and most of them the sharpest shape the privacy limits exist for:
+  "ARTISTIC HOMES OF CALIFORNIA, Residence of Mr. WILLIAM HAAS, 2007 Franklin
+  Street", "Residence of Mrs. Henrietta Lehe, 15 Cerritos Avenue", "1736
+  Fitzgerald street, scene of the shooting of Mrs. Angela Archie", and — in a
+  **published** finding — "in the home of Mr. and Mrs. Ferdinand Smith at 825
+  Francisco Street". A named resident at their own street number, committed.
+
+  **Two exemptions, both measured, and between them they take the false
+  positive rate to zero on this source.** What follows the title reads as a
+  firm under `is_named_building` ("Dr. Pepper Bottling Company", "Mrs. Biggs
+  Bakery"); or the record's own `610`/`650` headings already file it as one —
+  `Businesses--Andrews Diamond Palace.` is the catalogue saying "Col. Andrews
+  Diamond Palace" is a shop, not a colonel.
+
+  **It is safe here because `redact` is only ever called on this source, and it
+  would be wrong almost anywhere else.** Run the same rule over the whole
+  repository and it fires on "Dr. Carlton B. Goodlett Place" (a street), "Miss
+  Smith's Tea Room" and "Mr. S Leather" (businesses), "Dr. William L. Cobb
+  Elementary School" (a building), and on Dr. Tom Waddell, Dr. Arthur H.
+  Coleman and Reverend Frederick Douglas Haynes — the civic figures the
+  African American and LGBTQ context statements exist to document. **Don't
+  lift it into `sf-context-statements`.**
+
+  What it still cannot reach is a bare name with no title: "Lloyd W.
+  Dinkelspiel", "William Chester", "Revels Cayton" survive, and a general
+  capitalised-name detector would eat "Eagle Market" and "Shadows Restaurant",
+  so that half stays open deliberately.
+
+- **A name can sit outside `raw.text`.** `2786 Diamond Street. Mrs. Evers` was
+  the *street name* of a finding — the caption's second sentence parsed as part
+  of the address, so the owner's name reached `address_as_written`,
+  `description` and `citation.label`, none of which the redactor looks at.
+  Sweep those three fields as well as `raw.text` when a name rule changes; it
+  was the only one in the source, and taking it out also made the finding
+  resolvable for the first time (Glen Park, 2784 Diamond Street, published).
 
 **A mural artist is a creator credit, and the only one this archive states.**
 `700 $e mural artist` names the person who made the work at that address — the
