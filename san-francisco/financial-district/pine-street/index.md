@@ -7,8 +7,10 @@ The parcels on Pine Street documented here so far, from the city's address, asse
 - [100–102](100/) — A 1971 office building, with electrical work permitted in 2015.
 - [101–111](101/) — A 1963 office building, with electrical work permitted in 2024.
 - [140–160](140/) — A 1956 office building, with window replacement permitted in 1987.
+- [200–216](200/) — A 1907 office building, with stair work permitted in 1989.
 - [201–221](201/) — A 1908 office building, with stair work permitted in 2023.
 - [235](235/) — A 1991 office building, with plumbing work permitted in 2018.
+- [301](301/) — A 1909 office building in the Pine-Sansome Conservation District, with stair work permitted in 2004.
 - [330–332](330/) — A 1912 office building in the Pine-Sansome Conservation District, with plumbing work permitted in 2019.
 - [340–344](340/) — A 1928 office building in the Pine-Sansome Conservation District, with facade work permitted in 2012.
 - [369](369/) — A 1918 office building in the Pine-Sansome Conservation District, with foundation work permitted in 2015.

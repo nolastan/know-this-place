@@ -597,6 +597,14 @@ def _proper_names(extra) -> set[str]:
     return out
 
 
+_GONE_EXEMPT = {"site history", "demolition"}
+_GONE_FRAME = re.compile(
+    r"\b(stood|until|then on|then standing|formerly|demolish\w*|razed|replaced|"
+    r"took its place|came down|cleared|no longer|previously|gone|survived|had been|"
+    r"kept when|retained)\b",
+    re.I)
+
+
 def overlap(path: Path) -> None:
     """Report resolved findings the target page already carries.
 
@@ -623,6 +631,19 @@ def overlap(path: Path) -> None:
       and 28 flagged by name, most of them not in the first set — nearly its
       whole Appendix C, which is the same list of North Beach bars the North
       Beach survey had already published.
+    * **the replacement building** — a finding whose fact predates the
+      parcel's ``year_built`` by more than four years and whose sentence never
+      says the thing it describes is gone. Most facts worth publishing about a
+      demolished building land on the page of whatever replaced it, and a
+      sentence written flat then reads as a description of the building
+      standing there now: "the Robins Building was built to the design of T.
+      Paterson Ross" on a page the assessor dates 1987. The fix is a frame —
+      *stood here until*, *then on the corner*, *a building then standing
+      here* — not a decline; the fact is usually the best thing on the page.
+      The 1975-1982 downtown environmental reports needed it eleven times in
+      one batch, because a tower's EIR is mostly a description of what the
+      tower removed. Kinds that already say it (``site history``,
+      ``demolition``) are exempt.
     * **the roll year** — a finding dated exactly the parcel's
       ``year_built`` whose fact is not the building going up. Every page
       already prints the assessor's year in its "Built NNNN" tag, so such a
@@ -665,6 +686,7 @@ def overlap(path: Path) -> None:
                 or (bool(source_id) and src.startswith(source_id + "-"))
                 or entry.get("description", "") in ours)
     hits, name_hits, roll_hits, proper_hits, checked, missing = [], [], [], [], 0, 0
+    gone_hits: list[tuple] = []
     for finding in data.get("findings", []):
         res = finding.get("resolution") or {}
         if res.get("status") != "resolved" or not res.get("path"):
@@ -692,6 +714,15 @@ def overlap(path: Path) -> None:
                 and finding.get("kind") not in ("construction", "building contract")):
             roll_hits.append((finding.get("id", "?"), res["path"], built,
                               finding.get("kind", "?"),
+                              finding.get("description", "")[:70]))
+
+        # scan five: the fact predates the building on the parcel today, and the
+        # sentence never says so. See the docstring — the fix is a frame, not a
+        # decline.
+        if (built and mine_year and built - mine_year > 4
+                and finding.get("kind") not in _GONE_EXEMPT
+                and not _GONE_FRAME.search(finding.get("description", ""))):
+            gone_hits.append((finding.get("id", "?"), res["path"], mine_year, built,
                               finding.get("description", "")[:70]))
 
         # scan two: the same person, credited at the same date, from another source
@@ -752,7 +783,7 @@ def overlap(path: Path) -> None:
     hits.sort(reverse=True)
     print(f"overlap: {checked} resolved finding(s) checked against their pages"
           + (f", {missing} page(s) not on disk yet" if missing else ""))
-    if not hits and not name_hits and not roll_hits and not proper_hits:
+    if not hits and not name_hits and not roll_hits and not proper_hits and not gone_hits:
         print("  none — no finding repeats what its page already says.")
         return
     if hits:
@@ -781,6 +812,14 @@ def overlap(path: Path) -> None:
         for fid, page_path, built, kind, text in roll_hits:
             print(f"    {fid}  {page_path}  ({kind}, roll built {built})")
             print(f"          {text}...")
+    if gone_hits:
+        print(f"  by the replacement building — {len(gone_hits)} finding(s) predate the "
+              f"building the assessor says is on the parcel, and do not say so:")
+        for fid, page_path, mine_year, built, text in gone_hits:
+            print(f"    {fid}  {page_path}  (fact {mine_year}, roll built {built})")
+            print(f"          {text}...")
+        print("        These want a frame — \"stood here until\", \"then on the corner\" —"
+              " not a decline.")
     print("  Read each one: decline it, or trim it to the part that is new.")
 
 

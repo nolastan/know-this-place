@@ -199,6 +199,39 @@ live in the dossiers. **Add to this list** whenever a run discovers something a
 future run would otherwise repeat — that is what makes this module improve
 rather than just accumulate.
 
+- **Most facts about a demolished building land on the page of the thing that
+  replaced it, and a flat sentence then describes the wrong building.** A
+  finding resolves on a street number, and the number outlives the building. Say
+  "the Robins Building was built to the design of T. Paterson Ross" on a parcel
+  the assessor dates 1987 and the page has just told a reader that the 1987
+  tower is a 1907 brick building. The check is one comparison — the parcel's
+  `year_built` against the fact's date — and the fix is a frame, not a decline:
+  *stood here until*, *then on the corner*, *a building then standing here*.
+  These are usually the best facts a page has, because a building that is gone
+  is exactly what a reader cannot find anywhere else. `check.py --overlap` now
+  runs the comparison as its fifth scan; measured across every findings file on
+  disk it flags 612 of 9,080 published findings, so it is a real backlog and not
+  a quirk of one source.
+
+- **A table in a scanned report is worth taking only if its columns survived the
+  OCR with their rows.** Three reports in one batch printed the same downtown
+  survey as a table of address, building name and rating. Two came through
+  aligned; the third dumped its rating columns into the text layer in a heap
+  after the names, and three of its apparent alignments were wrong when checked
+  against the two that were right. **Read the names and numbers off a scrambled
+  table and refuse its values** — a name tied to a street number is legible even
+  when the row is not, and it is often the part no other source supplies. The
+  tell is cheap: find one row whose value you can verify elsewhere, and check it.
+
+- **A proposal in a source is not an event.** Environmental reports, permits,
+  planning applications and rezonings all describe what is *about to* happen, in
+  the future tense, and the tense is the whole difference. A demolition
+  described as a plan is a **site-history** finding dated to the year the record
+  saw the building standing; it becomes a demolition finding only when some
+  record states it in the past tense. The corroboration can come from a
+  neighbouring project's later report, which is how three of this module's
+  demolitions were confirmed.
+
 - **A batch is a unit of reading, not a unit of the source's own filing.** The
   DigitalSF archive ends in a long tail: 36 catalogued collections holding
   between one and nineteen addressed records each. Read as the archive files

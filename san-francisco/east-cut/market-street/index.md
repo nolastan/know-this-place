@@ -12,6 +12,7 @@ The parcels on Market Street documented here so far, from the city's address, as
 - [525](525/) — A 1973 office building, with plumbing work permitted in 2024.
 - [540–548](540/) — A 1913 office building, with reroofing permitted in 2020.
 - [555](555/) — A 1964 office building, with deck work permitted in 2015.
+- [575](575/) — A 1975 office building, with electrical work permitted in 2020.
 - [581–585](581/) — A 1907 office building, with a seismic retrofit permitted in 1996.
 - [582–590](582/) — A 1922 office building, with plumbing work permitted in 2016.
 - [595](595/) — A 1978 office building, with plumbing work permitted in 2009.

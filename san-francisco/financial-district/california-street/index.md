@@ -19,6 +19,7 @@ The parcels on California Street documented here so far, from the city's address
 - [311–325](311/) — A 1910 office building, with electrical work permitted in 2015.
 - [345](345/) — A 1987 office building, with plumbing work permitted in 2023.
 - [350–370](350/) — A 1976 office building, with stair work permitted in 2016.
+- [351](351/) — A 1920 office building, with a seismic retrofit permitted in 2014.
 - [400–410](400/) — A 1907 bank building, with reroofing permitted in 2012.
 - [401–425](401/) — A 1968 office building, with electrical work permitted in 2010.
 - [430–444](430/) — A 1968 office building, with reroofing permitted in 2012.

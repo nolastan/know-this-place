@@ -7,7 +7,10 @@ The parcels on Montgomery Street documented here so far, from the city's address
 - [1](1/) — The Crocker Bank Building of 1908, an Article 10 landmark, at the address where Japanese merchants took a store in 1871.
 - [44](44/) — A 1966 office building, with electrical work permitted in 2017.
 - [100–124](100/) — A 1955 office building, with reroofing permitted in 2006.
+- [101–145](101/) — A 1984 office building, with plumbing work permitted in 2023.
+- [105](105/) — A 1910 office building, with electrical work permitted in 2015.
 - [130](130/) — A 1930 office building, with reroofing permitted in 1988.
+- [149–155](149/) — A 1921 office building, with plumbing work permitted in 2023.
 - [180](180/) — A 1978 office building, with an addition permitted in 2008.
 - [200–232](200/) — A 1900 office building, with plumbing work permitted in 2023.
 - [201–265](201/) — A 1927 office building, with stair work permitted in 2025.

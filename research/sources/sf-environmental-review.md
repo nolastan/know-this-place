@@ -5,7 +5,7 @@
 >
 > - **Kind:** PDF reports · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 16 of 172 address-titled documents read; 61 findings, 29 resolved.
+> - **Coverage:** 37 of 172 address-titled documents read; 181 findings, 106 resolved.
 > - **Local corpus:** `research/corpora/sf-environmental-review/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -25,7 +25,8 @@
   longer there, written while they still were. And it **states the assessor's
   block and lot outright**, which every other source has to be joined to EAS to
   get. 15 of the 16 documents in the first batch print the block; 11 print the
-  lot as well.
+  lot as well, and two documents in the downtown batch print block *and* lot
+  for every building in a table, their own site included.
 
   The address-level facts sit in three places, and they are the same three in
   every document: **"Project Site"** and **"Environmental Setting"** (what is
@@ -82,7 +83,7 @@
     what generated the reports, so the address-titled set is heavily Financial
     District, South of Market and Rincon Hill. The first batch was deliberately
     picked to be everything *but* that, which is why it is spread over fourteen
-    neighbourhoods; the 156 unread ones are not.
+    neighbourhoods; the unread ones are not.
   - **A converted industrial complex is a condominium now, and the directory
     contract refuses it.** The two richest documents in the first batch — 900
     Minnesota Street (the Schilling Wine Cellars) and 55 Laguna Street (the San
@@ -118,6 +119,56 @@
     printed-parcel comparison skips them silently and the check never runs; and
     where the title address and the stated block disagree, the finding is
     unresolved.
+
+  - **The downtown reports are a rating index, not a building history.** The
+    first batch was neighbourhood reports, where the yield is construction dates
+    and architects. The 1975-1982 downtown reports are different in kind: their
+    historic-resources chapters exist to say which buildings a tower would harm,
+    so what they carry is **survey ratings for every building on and around the
+    block, by street number, often with the assessor's block and lot beside it**.
+    The 333 Bush initial study prints an eighteen-row table of block, lot,
+    address, 1976 city inventory code and 1979 Heritage grade; the 222 Kearny
+    DEIR prints twenty-four rows of address, building name and both ratings. Two
+    thirds of this batch's findings came out of tables like those, and the
+    building **name** attached to each number is the part no other source in the
+    register supplies.
+  - **A table is worth taking only if it survives its own OCR.** The same figure
+    in the 101 Montgomery FEIR lists the same buildings, and its rating columns
+    are dumped into the text layer detached from their rows — twenty ratings in a
+    heap after the names. The tell is a spot check against a document that got
+    the table right: three of its apparent alignments were wrong. **Read the
+    names and the numbers off a scrambled table; do not read the values.** Where
+    the only thing a row survives with is a marker meaning "of architectural
+    importance", it is not worth a page.
+  - **A demolition in a draft EIR is a proposal, not an event.** Every one of
+    these reports describes buildings it is about to remove, in the future tense.
+    A demolition finding needs a record that states it in the past tense — the
+    101 California building "was demolished in 1974 after a destructive fire",
+    the 201 Spear structure on lot 16 "was demolished in 1979", the 101 Mission
+    brick building "has been demolished" in a *neighbouring* project's 1981
+    report. Everything else is a **site-history** finding dated to the year the
+    report saw the building standing.
+  - **Check the parcel's build year against the fact's date before writing the
+    description.** Two thirds of this batch resolved onto parcels the assessor
+    dates *after* the fact — a 1907 building's page is a 1987 tower's page. A
+    fact written flat ("the Robins Building was built to the design of T.
+    Paterson Ross") then reads as a description of the building standing there
+    now. Every one of them needs the frame: *stood here until*, *then on the
+    corner*, *a building then standing here*. The check is one comparison per
+    finding and it caught eleven in this batch.
+  - **Resolve past the pre-1910 renumbering guard with the block and lot, not
+    the number.** Four findings dated 1851-1907 were refused by the guard and
+    resolved by hand on what the record itself supplies: the stated assessor
+    block and lot (505 Sansome, 201 Spear), the stated corner (201 Spear again),
+    or the roll agreeing with the record's own construction year (216 Pine, where
+    the assessor also says 1907). The guard is right to refuse them; the record
+    is what overrides it.
+  - **`resolve_eas.py` refuses a number EAS puts on parcel 1300001.** That parcel
+    is not a city block — it carries 101 through 106 Montgomery together — and
+    its presence makes a clean single-parcel address look like an ambiguous one.
+    Where the record names a block, the candidate on that block is the answer:
+    105 Montgomery is 0288006 on block 288, and the California Pacific Building
+    survives there as its own parcel.
 
   - **The nineteenth-century material is pre-renumbering.** 2222 23rd Street's
     "History of the Site" quotes an 1884 gazetteer placing the San Francisco
@@ -164,21 +215,40 @@
 
   On a page, name the report and the year and link the Internet Archive item.
 
-- **Coverage:** 16 documents read whole, all sixteen from the **address-titled**
-  set and all deliberately outside downtown. 61 findings, 29 resolved onto 13
-  pages. 1055 Stockton was read and yielded nothing — its EIR says neither
-  building on the site was on any list of historical, architectural or cultural
-  interest, and gives no construction date for either. **Remaining: 156
-  address-titled documents** (predominantly downtown and South of Market office
-  towers, 1975–2011) and the ~617 titled by project or area rather than address,
-  which have not been assessed at all.
+- **Coverage:** 37 documents read whole, all from the **address-titled** set.
+  The first sixteen were deliberately outside downtown — 61 findings, 29 resolved
+  onto 13 pages; 1055 Stockton yielded nothing, its EIR saying neither building
+  on the site was on any list of historical, architectural or cultural interest
+  and giving no construction date for either. The second batch is **the earliest
+  downtown reports, 1975–1982**: 21 documents, one per project, the draft where a
+  project has a draft and a final — 120 findings, 78 resolved, 73 published on 52
+  pages, 17 of them seeded by that run. Three of the 21 yielded nothing (750
+  California Street, a vacant site whose neighbours are all named without street
+  numbers; 71 Stevenson Street, a final initial study that defers historic
+  buildings to the EIR; 135 Main Street, whose only usable fact is a demolition
+  it records at 101 Mission Street). **Remaining: 135 address-titled documents**
+  — the 1983–2011 downtown and South of Market projects, plus the finals and
+  supplements of projects whose drafts are read — and the ~617 titled by project
+  or area rather than address, which have not been assessed at all.
 
-- **Verified:** 2026-09-04 (promoted from the leads table and first batch mined
-  in one run: 16 documents read, 61 findings, 29 resolved, 21 published on 13
-  pages. What the run learned: **the assessor's block and lot come free from
-  this source**, which no other registered source gives; **the batch unit is the
-  project, not the document**, because draft and final restate each other;
-  **condominium conversion is the dominant refusal**, and it hits precisely the
-  best-documented sites; and **the reports contradict themselves between chapter
-  and summary**, so the chapter citing the permit or the survey is the one to
-  take.)
+- **Verified:** 2026-09-04 (two runs on the same day. The first promoted the row
+  from the leads table and mined the outside-downtown batch: 16 documents, 61
+  findings, 29 resolved, 21 published on 13 pages. What it learned: **the
+  assessor's block and lot come free from this source**, which no other
+  registered source gives; **the batch unit is the project, not the document**,
+  because draft and final restate each other; **condominium conversion is the
+  dominant refusal**, and it hits precisely the best-documented sites; and **the
+  reports contradict themselves between chapter and summary**, so the chapter
+  citing the permit or the survey is the one to take.
+
+  The second run read the earliest downtown reports, 1975–1982: 21 documents,
+  120 findings, 78 resolved, 73 published on 52 pages. What it learned: downtown
+  reports are **rating indexes** rather than building histories, and their tables
+  of address, name and survey grade are the yield — but **only where the OCR kept
+  the table's columns with its rows**; a **demolition in a draft EIR is a
+  proposal**, so it is a site-history finding until a later record states it in
+  the past tense; **the parcel's build year has to be compared with the fact's
+  date before the description is written**, because most of these facts land on
+  the page of the tower that replaced the building they describe; and the
+  **pre-1910 renumbering guard is overridden by the record's own block and lot**,
+  not by the street number.)
