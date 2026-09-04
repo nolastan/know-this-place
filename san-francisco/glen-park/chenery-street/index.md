@@ -9,6 +9,7 @@ The parcels on Chenery Street documented here so far, from the city's address, a
 - [590–598](590/) — A 1933 single-family house, with a kitchen remodel permitted in 2013.
 - [601](601/) — A 1927 two-flat, with a kitchen and bathroom remodel permitted in 2014.
 - [605](605/) — A 1927 store building, with reroofing permitted in 1997.
+- [653](653/) — A 1912 store building, with reroofing permitted in 2003.
 - [657](657/) — A dairyman's shingled cottage of 1872, the oldest extant building in Glen Park.
 - [664–666](664/) — A 1917 2-unit building with a ground-floor store in the Glen Park Center Historic District, with electrical work permitted in 2012.
 - [670–672](670/) — A 1917 3-unit building with a ground-floor store in the Glen Park Center Historic District, with deck work permitted in 2000.

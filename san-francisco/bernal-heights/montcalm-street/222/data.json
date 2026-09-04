@@ -1,0 +1,130 @@
+{
+  "address": "222 Montcalm Street, San Francisco, CA 94110",
+  "path": "/san-francisco/bernal-heights/montcalm-street/222/",
+  "apn": "5538007",
+  "block": "5538",
+  "lot": "007",
+  "eas_baseid": "379891",
+  "coordinates": {
+    "lat": 37.745926,
+    "lng": -122.408474
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 5248,
+    "building_area_sqft": 1071,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Bernal Heights",
+    "property_location_raw": "0000 0222 MONTCALM            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 25840,
+    "assessed_improvement_value": 222182
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "survey_name": "Refugee Shack",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201207023941",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-07-02",
+      "status_date": "2012-07-09",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to appl #2011.08.04.1769 - addition will not be constructed, horizontal extension reduced to new stair landing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201108041769",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2011-08-04",
+      "status_date": "2012-01-25",
+      "estimated_cost": 150000,
+      "revised_cost": 200000,
+      "description": "general remodel, horizontal addition @ west side. add bathroom at lower level provide improved stair to downstairs, improve undeveloped habitable space on downstairs.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200812098109",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-12-09",
+      "status_date": "2009-11-23",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "installation of complete endless pool system at side yard, 4x5 equip room at rear, concrete slab and 2' retaining wall. 110 v circ pump, natural gas heater, pvc plumb in/out lines.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9811930",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-06-25",
+      "status_date": "1999-03-02",
+      "estimated_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MONTCALM&street_type=ST&address_number=222",
+      "retrieved": "2026-09-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5538007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5538&lot=007",
+      "retrieved": "2026-09-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5538007",
+      "retrieved": "2026-09-04"
+    },
+    {
+      "id": "digitalsf-4494",
+      "name": "222 Montcalm Street, circa 1980s. Society for the Preservation and Appreciation of San Francisco Refugee Shacks Collection (SFH 9), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/4494",
+      "label": "Society for the Preservation and Appreciation of San Francisco Refugee Shacks Collection (SFH 9), San Francisco Public Library",
+      "retrieved": "2026-09-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "circa 1980s",
+      "kind": "photograph",
+      "description": "Photographed as an earthquake refugee shack.",
+      "source": "digitalsf-4494"
+    }
+  ]
+}

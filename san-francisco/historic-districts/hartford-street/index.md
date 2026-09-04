@@ -5,13 +5,14 @@ The buildings documented here so far inside the Hartford Street Historic Distric
 ## Streets
 
 - [17th Street](/san-francisco/castro/17th-street/) — 1 documented building inside the district.
-- [18th Street](/san-francisco/castro/18th-street/) — 1 documented building inside the district.
+- [18th Street](/san-francisco/castro/18th-street/) — 2 documented buildings inside the district.
 - [Hartford Street](/san-francisco/castro/hartford-street/) — 21 documented buildings inside the district.
 
 ## Buildings
 
 - [3951–3959 17th Street](/san-francisco/castro/17th-street/3951/) — A 1910 28-unit apartment building, with a seismic retrofit permitted in 2015.
 - [4040–4044 18th Street](/san-francisco/castro/18th-street/4040/) — A 1906 3-unit tic building, with a kitchen and bathroom remodel permitted in 2023.
+- [4052 18th Street](/san-francisco/castro/18th-street/4052/) — A 1901 building, with a seismic retrofit permitted in 2022.
 - [19 Hartford Street](/san-francisco/castro/hartford-street/19/) — A 1901 house reroofed twice in September 2019, three weeks apart.
 - [20 Hartford Street](/san-francisco/castro/hartford-street/20/) — A 1901 house with a 1989 horizontal-addition permit that expired.
 - [24 Hartford Street](/san-francisco/castro/hartford-street/24/) — A 1900 house remodelled 2015–2020 with a new foundation and reconfigured upper floors.

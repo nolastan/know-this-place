@@ -6,6 +6,7 @@ The buildings documented here so far inside the Lower Nob Hill Apartment Hotel H
 
 - [Bush Street, Financial District](/san-francisco/financial-district/bush-street/) — 18 documented buildings inside the district.
 - [Bush Street, Nob Hill](/san-francisco/nob-hill/bush-street/) — 33 documented buildings inside the district.
+- [Cosmo Place](/san-francisco/nob-hill/cosmo-place/) — 1 documented building inside the district.
 - [Dashiell Hammett Street](/san-francisco/financial-district/dashiell-hammett-street/) — 2 documented buildings inside the district.
 - [Geary Street](/san-francisco/tenderloin/geary-street/) — 1 documented building inside the district.
 - [Hyde Street](/san-francisco/nob-hill/hyde-street/) — 10 documented buildings inside the district.
@@ -77,6 +78,7 @@ The buildings documented here so far inside the Lower Nob Hill Apartment Hotel H
 - [1171 Bush Street](/san-francisco/nob-hill/bush-street/1171/) — A 1919 13-unit apartment building, with reroofing permitted in 1997.
 - [1207 Bush Street](/san-francisco/nob-hill/bush-street/1207/) — A 1911 13-unit apartment building, with a seismic retrofit permitted in 1995.
 - [1209 Bush Street](/san-francisco/nob-hill/bush-street/1209/) — A 1915 23-unit apartment building, with reroofing permitted in 1996.
+- [20 Cosmo Place](/san-francisco/nob-hill/cosmo-place/20/) — A 1921 store building, with a rear addition permitted in 1997.
 - [20 Dashiell Hammett Street](/san-francisco/financial-district/dashiell-hammett-street/20/) — A 1912 22-unit apartment building, with reroofing permitted in 2005.
 - [27 Dashiell Hammett Street](/san-francisco/financial-district/dashiell-hammett-street/27/) — A 1912 hotel, with an addition permitted in 2017.
 - [650 Geary Street](/san-francisco/tenderloin/geary-street/650/) — A 1917 theater, with reroofing permitted in 2018.

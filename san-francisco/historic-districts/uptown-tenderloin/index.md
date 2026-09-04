@@ -18,7 +18,7 @@ The buildings documented here so far inside the Uptown Tenderloin Historic Distr
 - [Leavenworth Street, Tenderloin](/san-francisco/tenderloin/leavenworth-street/) — 5 documented buildings inside the district.
 - [Mason Street](/san-francisco/tenderloin/mason-street/) — 2 documented buildings inside the district.
 - [Mcallister Street](/san-francisco/tenderloin/mcallister-street/) — 1 documented building inside the district.
-- [Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/) — 28 documented buildings inside the district.
+- [Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/) — 29 documented buildings inside the district.
 - [Taylor Street](/san-francisco/tenderloin/taylor-street/) — 7 documented buildings inside the district.
 - [Turk Street](/san-francisco/tenderloin/turk-street/) — 20 documented buildings inside the district.
 
@@ -205,6 +205,7 @@ The buildings documented here so far inside the Uptown Tenderloin Historic Distr
 - [525 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/525/) — A 1911 26-unit apartment building, with a seismic retrofit permitted in 1992.
 - [545 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/545/) — A 1910 79-unit apartment building, with fire repair permitted in 1995.
 - [550 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/550/) — A 1924 garage, with foundation work permitted in 2022.
+- [555 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/555/) — A 1924 41-unit apartment building, with a seismic retrofit permitted in 2016.
 - [570–572 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/570/) — A 1907 hotel, with a kitchen remodel permitted in 2014.
 - [579 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/579/) — A 1907 hotel, with reroofing permitted in 1990.
 - [580 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/580/) — A 1911 hotel, with reroofing permitted in 2026.

@@ -229,7 +229,12 @@ spelling where squashing punctuation finds it, and otherwise needs an explicit
   streets, or leave it unresolved. The table is in
   [sources/loc-newspapers.md](sources/loc-newspapers.md).
 - **Pure renames carry their numbers over:** Lexington Avenue → Lexington
-  Street, Army Street → Cesar Chavez, Clara → Ord, Dupont → Grant.
+  Street, Army Street → Cesar Chavez, Clara → Ord, Dupont → Grant. **The number
+  carrying over is not the building surviving.** Four 1903 Dupont Street
+  addresses came back with no EAS record at all on Grant Avenue — the block
+  faces kept their numbering and lost those particular lots, to the 1903 plague
+  clearances and the 1906 fire. Alias the street, then read what EAS says; a
+  rename that resolves to nothing is a `rejected` finding, not a bad alias.
 - **Streets that no longer exist** (Falcon Street, expunged by the Market Street
   extension) resolve to nothing. `rejected`, with the note saying where the
   story belongs instead.

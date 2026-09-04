@@ -1,0 +1,173 @@
+{
+  "address": "2701 Lincoln Way, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/lincoln-way/2701/",
+  "apn": "1722001",
+  "block": "1722",
+  "lot": "001",
+  "eas_baseid": "315070",
+  "coordinates": {
+    "lat": 37.764776,
+    "lng": -122.487213
+  },
+  "parcel": {
+    "year_built": 1916,
+    "units": 1,
+    "stories": 3,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 8999,
+    "building_area_sqft": 3300,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2701 LINCOLN             WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2485955,
+    "assessed_improvement_value": 1065409,
+    "last_sale_date": "2015-07-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1916",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Parkway Terrace Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1915–1926",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202205134239",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2022-05-13",
+      "status_date": "2025-03-13",
+      "estimated_cost": 3000,
+      "revised_cost": 8000,
+      "description": "(n) 4' 6\" patio at rear yard. 5' away from property line.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202110070078",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-10-07",
+      "status_date": "2021-12-10",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "remodel 2 full bathroom at 3rd floor. in kind. ea bathroom has (1) shower, (1) vanity, (1) toilet.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201703161658",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-03-16",
+      "status_date": "2017-11-09",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace stucco at front of house",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201610170503",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-10-17",
+      "status_date": "2017-11-09",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "replace 250 sq.ft. stucco at rear building. repair 40 sq.ft. dry rot at rear building. not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201509015835",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-09-01",
+      "status_date": "2016-02-03",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "no property line windows. replace 10 windows at rear bldg. upgrade new electric work & change 4 new toilets. replace new water heater. comply complaint#201230981. repaint the outside house. no work ground floor except electrical.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9618719",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-10-01",
+      "status_date": "1998-04-13",
+      "estimated_cost": 4500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 9,
+    "range": "1996–2022",
+    "shown_on_page": 6,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LINCOLN&street_type=WAY&address_number=2701",
+      "retrieved": "2026-09-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1722001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1722&lot=001",
+      "retrieved": "2026-09-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1722001",
+      "retrieved": "2026-09-04"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.48721331214863%2037.76477613646664)%27)",
+      "retrieved": "2026-09-04"
+    },
+    {
+      "id": "digitalsf-10461",
+      "name": "2701 Lincoln Way, 1950. Maxine Gonong Papers (SFH 59), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/10461",
+      "label": "Maxine Gonong Papers (SFH 59), San Francisco Public Library",
+      "retrieved": "2026-09-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1950-07-04",
+      "kind": "photograph",
+      "description": "Photographed.",
+      "source": "digitalsf-10461"
+    }
+  ]
+}

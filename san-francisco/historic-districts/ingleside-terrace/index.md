@@ -4,6 +4,7 @@ The buildings documented here so far inside the Ingleside Terrace Historic Distr
 
 ## Streets
 
+- [Ashton Avenue](/san-francisco/oceanview-merced-ingleside/ashton-avenue/) — 1 documented building inside the district.
 - [Borica Street](/san-francisco/ingleside-terraces/borica-street/) — 1 documented building inside the district.
 - [Cedro Avenue](/san-francisco/ingleside-terraces/cedro-avenue/) — 4 documented buildings inside the district.
 - [Cerritos Avenue](/san-francisco/ingleside-terraces/cerritos-avenue/) — 8 documented buildings inside the district.
@@ -19,6 +20,7 @@ The buildings documented here so far inside the Ingleside Terrace Historic Distr
 
 ## Buildings
 
+- [385–391 Ashton Avenue](/san-francisco/oceanview-merced-ingleside/ashton-avenue/385/) — A 1925 store building, with a kitchen and bathroom remodel permitted in 2019.
 - [85 Borica Street](/san-francisco/ingleside-terraces/borica-street/85/) — Illustrated in the OMI Historic Context Statement (2010) as an example of Ingleside Terraces single-family building stock.
 - [60 Cedro Avenue](/san-francisco/ingleside-terraces/cedro-avenue/60/) — A 1912 single-family house, with foundation work permitted in 2022.
 - [70 Cedro Avenue](/san-francisco/ingleside-terraces/cedro-avenue/70/) — A 1912 single-family house, with one permit record from 1999.

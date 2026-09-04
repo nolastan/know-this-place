@@ -5,6 +5,7 @@ The buildings documented here so far inside the Kearny-Market-Mason-Sutter Conse
 ## Streets
 
 - [Bush Street](/san-francisco/financial-district/bush-street/) — 12 documented buildings inside the district.
+- [Cosmo Place](/san-francisco/nob-hill/cosmo-place/) — 1 documented building inside the district.
 - [Ellis Street](/san-francisco/tenderloin/ellis-street/) — 3 documented buildings inside the district.
 - [Fifth Street](/san-francisco/south-of-market/5th-street/) — 3 documented buildings inside the district.
 - [Geary Street, Tenderloin](/san-francisco/tenderloin/geary-street/) — 9 documented buildings inside the district.
@@ -42,6 +43,7 @@ The buildings documented here so far inside the Kearny-Market-Mason-Sutter Conse
 - [507 Bush Street](/san-francisco/financial-district/bush-street/507/) — A 1907 hotel, with stair work permitted in 2007.
 - [566 Bush Street](/san-francisco/financial-district/bush-street/566/) — A 1907 church, with a seismic retrofit permitted in 1995.
 - [625 Bush Street](/san-francisco/financial-district/bush-street/625/) — A 1910 66-unit apartment building, with reroofing permitted in 1998.
+- [20 Cosmo Place](/san-francisco/nob-hill/cosmo-place/20/) — A 1921 store building, with a rear addition permitted in 1997.
 - [24–34 Ellis Street](/san-francisco/tenderloin/ellis-street/24/) — A 1907 store building, with stair work permitted in 2007.
 - [119–139 Ellis Street](/san-francisco/tenderloin/ellis-street/119/) — A 1907 hotel, with a seismic retrofit permitted in 2007.
 - [140 Ellis Street](/san-francisco/tenderloin/ellis-street/140/) — The site of Jonathan Kittredge's Carpenter Gothic house of 1855, under a hotel of 1908.

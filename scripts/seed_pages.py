@@ -1421,7 +1421,11 @@ def historical_items(rec: dict, indent: str) -> list:
         cited = e.get("source")
         cited = [s for s in (cited if isinstance(cited, list) else [cited]) if s]
         meta = labels.get(cited[0], cited[0]) if cited else ""
-        photo = e.get("kind") == "photograph"
+        # An item-level record in an image catalogue: the citation is one
+        # record with its own URL, so the label is a link to it. A
+        # postcard is the same shape as a photograph here — a catalogued
+        # item, not a document a page cites a passage of.
+        photo = e.get("kind") in ("photograph", "postcard")
         if len(cited) > 1:
             # Shared label once, then one link per record — the shape a permit
             # item already uses, a span of context followed by its links.
