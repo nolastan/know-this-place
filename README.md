@@ -114,10 +114,15 @@ scripts/
                               exist yet, from the DataSF APIs
   permit_redactions.json      Names stripped from permit text before it's saved
   validate.py                 CI contract checks (stdlib only)
-  build_sitemap.py            Regenerates sitemap.xml
+  build_sitemap.py            Regenerates sitemap.xml (a sitemap index)
+                              and sitemaps/ — one child per neighborhood
   build_map_index.py          Regenerates shared/addresses.geojson
   build_link_index.py         Regenerates shared/nearby.json — each
                               page's nearby pages, for lateral links
+sitemap.xml                   A sitemap index, not a URL list — generated
+sitemaps/<neighborhood>.xml   One child sitemap per neighborhood, plus
+                              hubs.xml and historic-districts.xml, so Search
+                              Console reports coverage per neighborhood
 .github/
   ISSUE_TEMPLATE/page-feedback.yml
   workflows/{feedback-agent,refresh,validate}.yml
@@ -144,6 +149,11 @@ scripts/
       watch the account's monthly request count as coverage grows
 - [ ] Verify each endpoint in [DATA-SOURCES.md](DATA-SOURCES.md) with a live
       query and fill in its `Verified:` date
+- [ ] Verify the property in **Google Search Console** and submit
+      `sitemap.xml`. It is a sitemap index, so submitting it registers all 43
+      children; Search Console then reports coverage per child, which is the
+      only per-neighborhood indexation number the site has. Resubmit only if
+      the entry point ever moves — new children are picked up from the index
 - [ ] Create the two labels the research module files issues against:
       `research` and `needs-human` (same trap as `page-feedback` — GitHub
       silently drops labels that don't exist). Older issues also carry

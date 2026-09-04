@@ -50,8 +50,8 @@ gh pr list --state open --base main --limit 50 --json number,headRefName \
 - **A `news/` PR is open** → check out its branch, merge `origin/main` in, and
   continue there. Pushing updates that PR; do not open a second one. Resolve any
   merge conflict yourself — generated files (`sitemap.xml`,
-  `shared/addresses.geojson`, hub `index.html`/`index.md`) are rebuilt, never
-  hand-merged: take main's side and re-run the build scripts.
+  `sitemaps/`, `shared/addresses.geojson`, hub `index.html`/`index.md`) are
+  rebuilt, never hand-merged: take main's side and re-run the build scripts.
 - **None is open** → branch `news/$(date -u +%F)` off `main`. If that name
   already exists on the remote from a cycle closed unmerged, suffix it.
 
