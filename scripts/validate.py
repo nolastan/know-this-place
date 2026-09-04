@@ -17,6 +17,7 @@ Run from anywhere: python3 scripts/validate.py
 """
 import html
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -126,6 +127,50 @@ def check_html(html_path: Path, html: str, is_address: bool) -> None:
             err(html_path, "address page missing prefilled feedback link")
         if "google.com/maps/embed" in html and "streetview?key=&" in html:
             err(html_path, "street view iframe has an empty API key")
+
+
+# Cache for check_internal_links: a resolved target path -> does it exist.
+# The sweep resolves ~185,000 hrefs across the site and they collapse onto far
+# fewer targets (every street hub links the same neighborhood, every address
+# page the same stylesheet), so the stat calls are the part worth not repeating.
+_link_targets: dict = {}
+
+
+def check_internal_links(html_path: Path, html_text: str) -> None:
+    """Every internal href on a page must resolve to a file on disk.
+
+    The one failure mode of generated cross-linking: a hub lists a building
+    whose page was never created, or a page moves and the index that points at
+    it isn't rebuilt. Both render as a live link to a 404, which nothing else
+    here would notice. Same contract as the sitemap and addresses.geojson
+    checks above — these lists are derived, so a failure means re-running the
+    script that builds the index (`seed_pages.py hubs` for a hub's list), not
+    hand-editing the HTML.
+
+    Both href forms on the site are resolved: absolute ("/san-francisco/…/",
+    what a breadcrumb and a cross-reference use) and relative ("2262/", what a
+    hub's list of children uses). A directory href must hold an index.html; an
+    href naming a file must be that file.
+    """
+    for raw in re.findall(r'href="([^"]*)"', html_text):
+        href = html.unescape(raw).split("#")[0].split("?")[0]
+        # Off-site (http:, mailto:, //cdn…) and pure fragments aren't ours.
+        if not href or href.startswith("//") or ":" in href.split("/")[0]:
+            continue
+        base = ROOT if href.startswith("/") else html_path.parent
+        target = Path(os.path.normpath(base / href.lstrip("/")))
+        if not target.suffix:
+            target = target / "index.html"
+        rel = os.path.relpath(target, ROOT)
+        if rel.startswith(".."):
+            # Enough "../" to climb past the repo root. Whatever it finds on
+            # this disk, the deployed site has nothing above ROOT to serve.
+            err(html_path, f"internal link '{raw}' resolves outside the site root")
+            continue
+        if target not in _link_targets:
+            _link_targets[target] = target.exists()
+        if not _link_targets[target]:
+            err(html_path, f"dangling internal link '{raw}' — nothing at {rel}")
 
 
 def check_render_parity(page_dir: Path, data: dict, on_disk: str) -> None:
@@ -358,6 +403,7 @@ def main() -> int:
         text = html_path.read_text(encoding="utf-8")
         is_address = bool(ADDRESS_DIR.match(html_path.parent.name))
         check_html(html_path, text, is_address)
+        check_internal_links(html_path, text)
         if is_address:
             check_address_dir(html_path.parent, text)
         elif html_path.parent != content:
