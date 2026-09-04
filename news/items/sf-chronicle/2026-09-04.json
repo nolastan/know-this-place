@@ -1,0 +1,161 @@
+{
+  "source_id": "sf-chronicle",
+  "batch": "2026-09-04",
+  "read_on": "2026-09-04",
+  "notes": "Three items queued, all three read. Two of them are the same article — the feed is a Bluesky account and it posted the Konstin obituary twice, under two bit.ly shortlinks that land on the same story.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 3,
+    "mentions": 2,
+    "remaining": "Nothing outstanding on this batch.",
+    "note": "This feed's titles are teaser sentences and its links are bit.ly shortlinks, so both headline and article URL were read off the article itself, per news/AGENTS.md. The obituary produced the false hit \"100 Bay\" from a photo caption dated in the byline block, and 63 Ellis Street is John's Grill's own address."
+  },
+  "findings": [
+    {
+      "id": "2026-09-04-0001",
+      "date": "2026-09-03",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "One Market Plaza",
+      "street_number": "1",
+      "street_name": "MARKET",
+      "street_type": "ST",
+      "description": "Disney has signed a 76,000-square-foot lease at One Market Plaza, the 1.6-million-square-foot waterfront office complex, according to multiple sources the outlet confirmed the deal with; it follows the complex losing an anchor lease from Google last year, and departures by Visa and Autodesk ahead of expiring leases. The owner, Elecor Properties, announced 150,000 square feet of new leases over the summer. Elecor is an office platform created after Rithm Capital acquired the previous owner, Paramount Group, in 2025. The article names the complex only as \"One Market Plaza\" and \"One Market\" and prints no street number; the street number recorded here is that name's own, and the resolution below is what tests it against EAS.",
+      "extra": {
+        "tenant": "Disney",
+        "square_feet": 76000,
+        "complex_square_feet": 1600000,
+        "owner": "Elecor Properties",
+        "former_owner": "Paramount Group",
+        "owner_parent": "Rithm Capital",
+        "summer_2026_new_leases_sqft": 150000,
+        "departed_tenants": [
+          "Google",
+          "Visa",
+          "Autodesk"
+        ],
+        "citywide_office_vacancy_q2_2026": "29.2%"
+      },
+      "citation": {
+        "label": "San Francisco Chronicle, “Exclusive: This S.F. office complex lost Google. Now it’s landing Disney,” 3 September 2026",
+        "url": "https://www.sfchronicle.com/realestate/article/disney-google-office-lease-22416611.php",
+        "locator": "opening paragraphs"
+      },
+      "raw": {
+        "text": "The 1.6 million-square-foot office complex at San Francisco's waterfront, which last year lost a major lease from anchor tenant Google, has signed Disney to a 76,000-square-foot lease."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3713006",
+        "path": "/san-francisco/south-beach/market-street/1/",
+        "eas_address": "1 MARKET ST",
+        "method": "EAS exact match on 1 MARKET ST → parcel 3713006; sf-parcels has blklot 3713006 active, 1–1 MARKET; the 2025 roll records it as commercial office, built 1917.",
+        "checked_on": "2026-09-04"
+      }
+    },
+    {
+      "id": "2026-09-04-0002",
+      "date": "2026-09-03",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "300 Mission St.",
+      "street_number": "300",
+      "street_name": "MISSION",
+      "street_type": "ST",
+      "description": "Recorded so the hit is not read again. The same article reports that this 660,000-square-foot tower, also owned by Elecor Properties, has brought its occupancy close to 87% after leasing 120,000 square feet across four floors to Hinge Health, on a lease running through 2037 with a five-year renewal option.",
+      "extra": {
+        "tenant": "Hinge Health",
+        "square_feet": 120000,
+        "floors": 4,
+        "building_square_feet": 660000,
+        "occupancy_reported": "close to 87%",
+        "lease_through": 2037,
+        "owner": "Elecor Properties"
+      },
+      "citation": {
+        "label": "San Francisco Chronicle, “Exclusive: This S.F. office complex lost Google. Now it’s landing Disney,” 3 September 2026",
+        "url": "https://www.sfchronicle.com/realestate/article/disney-google-office-lease-22416611.php",
+        "locator": "closing paragraphs"
+      },
+      "raw": {
+        "text": "Another building in its portfolio, the 660,000-square-foot tower at 300 Mission St., is bumping its occupancy close to 87% after forging a new lease Hinge Health."
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "The fact is solid and the address is unambiguous, but the entry is the headline and this headline is about One Market Plaza losing Google and landing Disney. Hanging it on 300 Mission's timeline would tell a reader something untrue about this tower. The Hinge Health lease is real news for this building and it needs its own story before it earns an entry; the facts are kept here so a later run that finds one does not have to re-establish them."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3710018",
+        "path": "/san-francisco/east-cut/beale-street/50/",
+        "eas_address": "300 MISSION ST",
+        "method": "EAS exact match on 300 MISSION ST → parcel 3710018; sf-parcels has blklot 3710018 active, 50–80 BEALE; the 2025 roll records it as commercial office, built 1967. EAS puts 300, 308, 310, 320 MISSION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 300.",
+        "checked_on": "2026-09-04"
+      }
+    },
+    {
+      "id": "2026-09-04-0003",
+      "date": "2026-09-03",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "525 Market St.",
+      "street_number": "525",
+      "street_name": "MARKET",
+      "street_type": "ST",
+      "description": "Recorded so the hit is not read again. The article names this tower once, as the current home base Disney is leaving: its lease there expires in 2027.",
+      "citation": {
+        "label": "San Francisco Chronicle, “Exclusive: This S.F. office complex lost Google. Now it’s landing Disney,” 3 September 2026",
+        "url": "https://www.sfchronicle.com/realestate/article/disney-google-office-lease-22416611.php",
+        "locator": "second paragraph"
+      },
+      "raw": {
+        "text": "Disney, which is facing a 2027 lease expiration for its current homebase at 525 Market St."
+      },
+      "confidence": "medium",
+      "publish": {
+        "status": "declined",
+        "note": "A passing mention of where a tenant is moving from, in a story about the building it is moving to. The headline is about One Market Plaza and says nothing about this tower, and a lease expiring in 2027 is not yet an event. This page already exists, which is not a reason to write to it."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3708056",
+        "path": "/san-francisco/east-cut/market-street/525/",
+        "eas_address": "525 MARKET ST",
+        "method": "EAS exact match on 525 MARKET ST → parcel 3708056; sf-parcels has blklot 3708056 active, 525–525 MARKET; the 2025 roll records it as commercial office, built 1973.",
+        "checked_on": "2026-09-04"
+      }
+    },
+    {
+      "id": "2026-09-04-0004",
+      "date": "2026-09-03",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "63 Ellis St.",
+      "street_number": "63",
+      "street_name": "ELLIS",
+      "street_type": "ST",
+      "description": "Recorded so the hit is not read again. John's Grill, at this address, is named in an obituary of a member of the family that has run it for three generations. The article establishes nothing about the building.",
+      "citation": {
+        "label": "San Francisco Chronicle, “Sydna Konstin, third-generation owner of John’s Grill in San Francisco, dies at 41,” 3 September 2026",
+        "url": "https://www.sfchronicle.com/food/restaurants/article/sydna-konstin-johns-grill-22416852.php",
+        "locator": "biographical section"
+      },
+      "confidence": "medium",
+      "publish": {
+        "status": "declined",
+        "note": "Declined twice over. news/AGENTS.md: \"A story about a person that mentions a building is not a building story. An obituary that names the tower someone developed belongs on no page.\" And the headline, which is the only text of theirs a page would carry, names a private individual and her age — the root AGENTS.md forbids that outright and there is no rewriting past it, because we do not write the entry. The feed carried this article twice under two shortlinks; both are declined here, and no source id was minted for either."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0329006",
+        "path": "/san-francisco/tenderloin/ellis-street/61/",
+        "eas_address": "61 ELLIS ST",
+        "method": "EAS exact match on 63 ELLIS ST → parcel 0329006; sf-parcels has blklot 0329006 active, 61–63 ELLIS; the 2025 roll records it as commercial retail, built 1910. EAS puts 61, 63 ELLIS ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 61.",
+        "checked_on": "2026-09-04",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      }
+    }
+  ]
+}
