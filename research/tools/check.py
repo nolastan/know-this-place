@@ -528,8 +528,12 @@ def report(path: Path) -> None:
 
     areas = sorted(set(created) | set(edited) | set(facts) | set(declined),
                    key=lambda a: (-(created[a] + edited[a]), a))
+    # The last column counts findings that reached a parcel and were then
+    # declined — a duplicate, an undated claim, a fact a better source already
+    # carries. It was headed "Resolved, no page", which named a different thing
+    # (a parcel that cannot carry a page) and was never what it counted.
     cols = ("Pages created", "Pages edited", "Facts published",
-            "Conflicts stated", "Dates disputed", "Resolved, no page")
+            "Conflicts stated", "Dates disputed", "Declined")
     print(f"| Neighborhood | {' | '.join(cols)} |")
     print("|---" + "|---:" * len(cols) + "|")
     counters = (created, edited, facts, conflicts, dates, declined)
