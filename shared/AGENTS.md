@@ -510,6 +510,21 @@ only points.
 </section>
 ```
 
+A **street hub** carries the same block, headed "Nearby streets" and listing up
+to six other streets in its neighborhood with a building count on the pill.
+That one needs no committed index — a street hub is already built from the
+whole directory beneath it, so `seed_pages.nearby_streets_html` reads the
+neighborhood off the tree. It is a fact about the neighborhood, not about one
+street: after seeding, `seed_pages.py hubs --area NAME` is what brings the
+neighbors' lists level, the way `build_link_index.py` catches
+`shared/nearby.json` up.
+
+The absence of `<br><span class="hook">` matters on a hub and not only as
+style. `validate.hub_html_items` reads a hub's generated list back out of
+exactly that pairing and `check_hub_sync` then demands the same item in the
+hub's `index.md`; keeping the nearby block off the pattern is what lets
+`index.md` stay a person's prose.
+
 ### Icons — `.ic .ic-NAME`
 `<span class="ic ic-calendar"></span>`; sized in `em`, colored by surrounding
 text. Available: `ic-calendar` `ic-home` `ic-layers` `ic-plan` `ic-lot`
