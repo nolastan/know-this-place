@@ -57,8 +57,27 @@ Verify before asserting any of this about a specific building.
   Street was named for his daughter.
 - **Street numbers changed in 1909**, and some streets were renamed. An
   address given in a pre-1909 source often does not correspond to today's
-  number — 1200 Ashbury became 1200 Clayton, 110 Clara became 110 Ord. Always
-  check today's number against the EAS dataset before creating a page.
+  number. Always check today's number against the EAS dataset before creating
+  a page. The pairs the record states for itself, so far:
+
+  | Then | Now |
+  |---|---|
+  | 1200 Ashbury | 1200 Clayton Street |
+  | 34 Clara Avenue | 18 Ord Street |
+  | 56 Clara Avenue | 80 Ord Street |
+  | 77 Clara Avenue | 81 Ord Street |
+  | 110 Clara Avenue | 110 Ord — no such address today |
+  | 104–106–108 Clara | 104–106–108 Ord Street |
+
+- **Hattie Street was renumbered separately, between 1905 and 1913–14**, and
+  not in 1909: 7 became 17, 11 became 25–27, 15–15½ became 29–31, and 17
+  became 35. A pre-1913 Hattie number is a different building from the one
+  that carries it now — the 1897 chimney fire "at 17 Hattie" is on the parcel
+  the city calls 35 Hattie today.
+- **Two stairways were streets first.** Jupiter Street became the Vulcan
+  Stairway, Serpentine Place became Saturn Street and then the Saturn
+  Stairway, and Mono Street is now Al's Park. A number on any of them is a
+  number on ground the city took: none of the three can carry a page.
 - Much of the housing is early-20th-century, with post-war infill on the
   upper slopes.
 
@@ -78,6 +97,10 @@ Worked examples in this tree:
 | 52 Mars, 56 Mars | 1900 | standing c. 1895 |
 | 328 Corbett | 1908 | standing April 1906 |
 | 349 Corbett | 1900 | under construction 1909 |
+| 70 Douglass | 2009 | standing in an early-1880s photograph |
+| 80 Ord | 1900 | occupied from 1884 |
+| 104–108 Ord | 1900 | 1885, and half of it 1908 |
+| 401 Castro | 1901 | 1883, per the landmark case report |
 
 Round years (1900, 1890) in the assessor roll are placeholders as often as
 they are facts — treat them as the weaker evidence, and say in `.unknowns`
@@ -101,8 +124,14 @@ history on the surviving building's page or the street hub instead. Two
 examples found while seeding:
 
 - **110 Ord Street** — the Cassin cottage. Ord runs 7–91 today; no 110 exists.
-- **1200 Clayton Street** — the 1909 Stoddart building was replaced; the
-  address is now thirteen condominium parcels built in 1986.
+- **1200 Clayton Street** — the 1909 building was replaced; the address is now
+  thirteen condominium parcels, and EAS carries `1200 CLAYTON ST` with no
+  parcel number at all. It is the most documented corner in the newsletter's
+  whole archive — a 1906 contract, a 1909 permit by Rainey and Phillips, four
+  alterations, the Georgian Apartments, demolition before 1950, a filling
+  station of 1953 and the condominiums of 1985 — and **none of it can go on a
+  page.** Eight findings sit unresolved for it in
+  `research/findings/corbett-heights-neighbors/issues-2026-02-to-2026-07.json`.
 - **Anything on Falcon Street** — Falcon was expunged by the Market Street
   extension. Fred G. Horner's grocery and saloon at **2 Falcon Street** recurs
   in the record; its story belongs on the surviving buildings nearby

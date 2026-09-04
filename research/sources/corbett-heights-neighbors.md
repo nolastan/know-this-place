@@ -3,9 +3,9 @@
 > **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · register:
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id `corbett-heights-neighbors`.
 >
-> - **Kind:** newsletter archive · **Tier:** secondary · **Status:** open
+> - **Kind:** newsletter archive · **Tier:** secondary · **Status:** done
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 32 of the archive's 50 issues read — everything from January 2025 to September 2026. The 18 issues of 2024 and earlier are untouched.
+> - **Coverage:** all 50 issues in the archive read, November 2023 to September 2026. The source is exhausted until the association publishes again.
 > - **Local corpus:** `research/corpora/corbett-heights-neighbors/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -66,6 +66,19 @@
     hundred and gains more with each seeding run, so freezing its list was the
     worse trade and the brewery went onto the surviving building's page
     instead. **Weigh the hub route by how big the hub is.**
+  - **The archive holds 50 issues and the run of them is unbroken.** Five
+    pages of ten, newest first, November 2023 to September 2026. Twenty of the
+    fifty are one-page meeting, election, parking and party notices with no
+    historical content at all; the yield is entirely in the thirty monthly
+    *Neighborhood News* issues, and inside those it is entirely in the one
+    researched history article each carries.
+  - **A page can carry this source and no findings file record it.** Ten pages
+    were already citing the February to July 2026 issues when this source was
+    still recorded as unread from February 2026 back — the pass that published
+    them wrote no findings file, so the dossier, the register and
+    `check.py --stats` all counted those issues as unread and the next run
+    re-extracted 16 facts that were already on their pages. Before extracting
+    from an issue, grep `san-francisco` for its citation label.
   - **Archive page numbers are not a stable batch unit.** The archive
     paginates by recency, ten or eleven issues to a page, so an issue slides
     from page 1 to page 2 as new ones are published. The January 2026 issue was
@@ -96,6 +109,29 @@
   - **655 Corbett Avenue cannot have a page.** It is a 39-unit condominium of
     1964 and EAS carries the number on one parcel only, which is unit 105. The
     resolver used to read that as the building; it no longer does.
+  - **The best article in the archive lands on nothing.** The February 2026
+    block history of 1200 Clayton is the densest researched piece the
+    newsletter has published — a 1906 building contract, a 1909 permit by
+    Rainey and Phillips, four alterations, twenty-five rooms as the Georgian
+    Apartments, demolition before 1950, a Shell station of 1953 and thirteen
+    condominiums in 1985 — and the address is a condominium today, so EAS
+    carries it with no parcel number and not one of the eight facts can reach
+    a page. **Check the star address against EAS before planning the run
+    around it**; it is the second time in this source (after the 111–121
+    Douglass brewery) that the article's subject is the one address that
+    cannot have a page.
+  - **The newsletter corrects itself, and the correction can be a year
+    later.** The June 2024 story on the 4499 17th Street market says the Ryan
+    family built the apartment house at 4521 17th Street; the February 2026
+    issue retracts it — they owned the land and probably built at Mars and
+    17th instead. It also disagrees with itself on dates in passing: 1894 and
+    1895 for the same grocery's opening, south-east and south-west for the
+    same corner. **Read the later issues before publishing from an earlier
+    one**, and put the disagreement in `.unknowns` rather than choosing.
+  - **Hattie Street renumbered between 1905 and 1913–14, not in 1909.** The
+    June 2026 issue prints the table: 7 → 17, 11 → 25–27, 15–15½ → 29–31,
+    17 → 35. A pre-1913 Hattie number is a different building from the one
+    that carries it now.
   - **A worked 1909 renumbering pair:** 77 Clara Avenue is today's **81 Ord
     Street** (August 2026 issue), alongside the 110 Clara → 110 Ord and
     1200 Ashbury → 1200 Clayton pairs already in
@@ -105,20 +141,28 @@
     writes "1937" once in a sentence about the lot's dimensions. Take the
     date the article argues for and record the slip in the finding rather
     than on the page.
-- **Coverage so far:** the archive holds 50 issues. **32 have now been read**
-  — every issue from January 2025 to September 2026 — in three passes:
-  the August and September 2026 issues (`vol-viii-no-8`, `vol-viii-no-9`, 34
-  findings, 20 resolved, 16 published on 7 pages); the ten issues of June 2025
-  to January 2026 (`archive-page-2`, 22 findings, 19 resolved, 9 published on 7
-  pages, and ten declined because the earlier pass had already read the January
-  2026 issue); and the ten of January to May 2025 (`archive-page-3`, 36
-  findings, 32 resolved, 31 published on 26 pages). **What remains is 2024 and earlier, 18
-  issues on the last two archive pages** — and the February 2025 issue names
-  three of them as substantial: March/April 2024 on Denis Kearney of the
-  Workingman's Party, who lived on the stretch of Ord Street that is now the
-  Saturn Street Stairway; June 2024 on the grocery at 4499 17th Street and Raisa
-  Gorbachev's visit to it; and August 2024 on Ruth Asawa's Saturn Street
-  residence. Take those first.
+- **Coverage so far:** the archive holds 50 issues and **all 50 have been
+  read**, November 2023 to September 2026, in five passes: the August and
+  September 2026 issues (`vol-viii-no-8`, `vol-viii-no-9`, 34 findings, 20
+  resolved, 16 published on 7 pages); the ten issues of June 2025 to January
+  2026 (`archive-page-2`, 22 findings, 19 resolved, 9 published on 7 pages);
+  the ten of January to May 2025 (`archive-page-3`, 36 findings, 32 resolved,
+  31 published on 26 pages); the eight of February to July 2026 that the
+  page-based batching had skipped (`issues-2026-02-to-2026-07`, 56 findings, 43
+  resolved, 27 published on 20 pages, 16 declined as already carried by pages
+  an unrecorded pass had written from the same issues); and the twenty of
+  November 2023 to December 2024 (`issues-2023-11-to-2024-12`, 49 findings, 37
+  resolved, 32 published on 25 pages). **Nothing remains to read** until the
+  association publishes another issue; the archive gains roughly one a month.
 
-- **Verified:** 2026-09-03 (twenty more issues read in full, January 2025 through
+- **Verified:** 2026-09-03 (twenty issues read in full, January 2025 through
   January 2026, into `archive-page-2.json` and `archive-page-3.json`)
+- **Verified:** 2026-09-03 (the last twenty-eight issues read in full — the
+  eight of February to July 2026 and the twenty of November 2023 to December
+  2024. The three articles the February 2025 issue pointed back to all yielded:
+  March and April 2024 on Denis Kearney's burned house, now the Saturn
+  Stairway; June 2024 on the 4499 17th Street grocery and Raisa Gorbachev's
+  1990 visit; August 2024 on Ruth Asawa at 21 Saturn Street. The densest
+  articles in the whole archive are here — February 2026 on block 2655, whose
+  subject cannot have a page, and May 2026 on 104–108 Ord Street, which alone
+  produced eleven published entries)

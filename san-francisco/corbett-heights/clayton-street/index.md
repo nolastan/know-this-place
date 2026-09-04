@@ -7,6 +7,7 @@ The parcels on Clayton Street documented here so far, from the city's address, a
 - [897](897/) — A 1900 single-family house in the Cole Valley Historic District, with window replacement permitted in 2025.
 - [910](910/) — A 1906 single-family house in the Cole Valley Historic District, with a bathroom remodel permitted in 2014.
 - [1222](1222/) — A 1958 36-unit apartment building, with a seismic retrofit permitted in 2016.
+- [1230](1230/) — A house of about 1890 stood here for seventy years; this one replaced it at the end of the 1950s.
 - [1234](1234/) — An assessor class: vacant lot in the Auxiliary Water Supply System (Discontiguous).
 - [1262](1262/) — A 1907 single-family house, with a kitchen and bathroom remodel permitted in 2000.
 - [1278](1278/) — An 1895 single-family house, with an addition permitted in 2011.
