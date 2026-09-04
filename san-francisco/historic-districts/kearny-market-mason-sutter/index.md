@@ -11,7 +11,7 @@ The buildings documented here so far inside the Kearny-Market-Mason-Sutter Conse
 - [Geary Street, Tenderloin](/san-francisco/tenderloin/geary-street/) — 9 documented buildings inside the district.
 - [Geary Street, Union Square](/san-francisco/union-square/geary-street/) — 15 documented buildings inside the district.
 - [Grant Avenue](/san-francisco/financial-district/grant-avenue/) — 11 documented buildings inside the district.
-- [Kearny Street](/san-francisco/union-square/kearny-street/) — 21 documented buildings inside the district.
+- [Kearny Street](/san-francisco/union-square/kearny-street/) — 24 documented buildings inside the district.
 - [Maiden Lane](/san-francisco/union-square/maiden-lane/) — 4 documented buildings inside the district.
 - [Market Street, South of Market](/san-francisco/south-of-market/market-street/) — 16 documented buildings inside the district.
 - [Market Street, Union Square](/san-francisco/union-square/market-street/) — 3 documented buildings inside the district.
@@ -25,7 +25,7 @@ The buildings documented here so far inside the Kearny-Market-Mason-Sutter Conse
 - [Post Street, Union Square](/san-francisco/union-square/post-street/) — 3 documented buildings inside the district.
 - [Powell Street](/san-francisco/nob-hill/powell-street/) — 15 documented buildings inside the district.
 - [Stockton Street](/san-francisco/chinatown/stockton-street/) — 11 documented buildings inside the district.
-- [Sutter Street, Financial District](/san-francisco/financial-district/sutter-street/) — 17 documented buildings inside the district.
+- [Sutter Street, Financial District](/san-francisco/financial-district/sutter-street/) — 18 documented buildings inside the district.
 - [Sutter Street, Nob Hill](/san-francisco/nob-hill/sutter-street/) — 14 documented buildings inside the district.
 - [Taylor Street](/san-francisco/tenderloin/taylor-street/) — 4 documented buildings inside the district.
 
@@ -97,10 +97,13 @@ The buildings documented here so far inside the Kearny-Market-Mason-Sutter Conse
 - [209–211 Kearny Street](/san-francisco/union-square/kearny-street/209/) — A 1907 store building, with a seismic retrofit permitted in 2000.
 - [215–217 Kearny Street](/san-francisco/union-square/kearny-street/215/) — A 1907 store building, with a kitchen remodel permitted in 2004.
 - [219–225 Kearny Street](/san-francisco/union-square/kearny-street/219/) — A 1907 office building, with a seismic retrofit permitted in 1996.
+- [222–226 Kearny Street](/san-francisco/union-square/kearny-street/222/) — A 1987 office building, with reroofing permitted in 2019.
 - [227–231 Kearny Street](/san-francisco/union-square/kearny-street/227/) — A 1908 store building, with a seismic retrofit permitted in 2001.
+- [240–244 Kearny Street](/san-francisco/union-square/kearny-street/240/) — A 1906 office building, with a kitchen remodel permitted in 2016.
 - [243–245 Kearny Street](/san-francisco/union-square/kearny-street/243/) — A 1908 office building, with a seismic retrofit permitted in 1995.
 - [246–250 Kearny Street](/san-francisco/union-square/kearny-street/246/) — A 1908 hotel, with a kitchen and bathroom remodel permitted in 2011.
 - [251–259 Kearny Street](/san-francisco/union-square/kearny-street/251/) — A 1908 office building, with plumbing work permitted in 2011.
+- [260 Kearny Street](/san-francisco/union-square/kearny-street/260/) — A 1908 office building, with a seismic retrofit permitted in 2003.
 - [301–311 Kearny Street](/san-francisco/union-square/kearny-street/301/) — A 1910 store building, with a seismic retrofit permitted in 2001.
 - [315–319 Kearny Street](/san-francisco/union-square/kearny-street/315/) — A 1907 store building, with a seismic retrofit permitted in 2001.
 - [325–329 Kearny Street](/san-francisco/union-square/kearny-street/325/) — A 1907 store building, with stair work permitted in 2018.
@@ -193,6 +196,7 @@ The buildings documented here so far inside the Kearny-Market-Mason-Sutter Conse
 - [209–211 Sutter Street](/san-francisco/financial-district/sutter-street/209/) — A 1907 office building, with plumbing work permitted in 2012.
 - [246–250 Sutter Street](/san-francisco/financial-district/sutter-street/246/) — A 1909 office building, with a seismic retrofit permitted in 1986.
 - [255–271 Sutter Street](/san-francisco/financial-district/sutter-street/255/) — A 1908 store building, with facade work permitted in 2024.
+- [256–262 Sutter Street](/san-francisco/financial-district/sutter-street/256/) — A 1911 office building, with plumbing work permitted in 2013.
 - [266–270 Sutter Street](/san-francisco/financial-district/sutter-street/266/) — A 1908 store building, with foundation work permitted in 2018.
 - [272 Sutter Street](/san-francisco/financial-district/sutter-street/272/) — A 2021 store building, with a seismic retrofit permitted in 1998.
 - [301–303 Sutter Street](/san-francisco/financial-district/sutter-street/301/) — A 1907 office building, with stair work permitted in 2006.

@@ -13,6 +13,7 @@ The parcels on Bush Street documented here so far, from the city's address, asse
 - [333](333/) — A 1987 office building, with a seismic retrofit permitted in 2011.
 - [348–350](348/) — A 2018 office building, with stair work permitted in 2018.
 - [364](364/) — A 1907 store building in the Kearny-Belden Conservation District, with a kitchen remodel permitted in 2017.
+- [380–382](380/) — A 1913 hotel in the Kearny-Belden Conservation District, with a kitchen remodel permitted in 1996.
 - [381–383](381/) — A 1907 office building in the Kearny-Market-Mason-Sutter Conservation District, with reroofing permitted in 2020.
 - [410](410/) — A 1915 school building in the Kearny-Market-Mason-Sutter Conservation District, with reroofing permitted in 2009.
 - [425](425/) — A 1908 office building in the Kearny-Market-Mason-Sutter Conservation District, with reroofing permitted in 2016.

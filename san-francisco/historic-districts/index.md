@@ -56,8 +56,8 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Jessie-McCoppin-Stevenson Streets Reconstruction Historic District](jessie-mccoppin-stevenson-streets-reconstruction/) — Eligible for the California Register, significant 1906–1912; 17 buildings documented on 3 streets.
 - [Jordan Park Historic District](jordan-park/) — Eligible for the California Register, significant 1900–1920; 19 buildings documented on 5 streets.
 - [Juri Street Historic District](juri-street/) — Eligible for the California Register, significant 1890–1895; 8 buildings documented on 2 streets.
-- [Kearny-Belden Conservation District](kearny-belden/) — An Article 11 conservation district; 6 buildings documented on 3 streets.
-- [Kearny-Market-Mason-Sutter Conservation District](kearny-market-mason-sutter/) — An Article 11 conservation district; 194 buildings documented on 24 streets.
+- [Kearny-Belden Conservation District](kearny-belden/) — An Article 11 conservation district; 7 buildings documented on 3 streets.
+- [Kearny-Market-Mason-Sutter Conservation District](kearny-market-mason-sutter/) — An Article 11 conservation district; 198 buildings documented on 24 streets.
 - [Lexington and San Carlos Streets Reconstruction Historic District](lexington-and-san-carlos-streets-reconstruction/) — Eligible for the California Register, significant 1906–1915; 44 buildings documented on 4 streets.
 - [Liberty Hill Historic District](liberty-hill/) — An Article 10 city landmark district, significant 1860s–1906; 252 buildings documented on 9 streets.
 - [Liberty Street Historic District](liberty-street/) — Listed on the California and National Registers, significant 1867–1911; 40 buildings documented on 2 streets.
@@ -73,12 +73,12 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Mission Miracle Mile at 17th Street Historic District](mission-miracle-mile-at-17th-street/) — Eligible for the California Register, significant 1906–1924; 1925–1960; 18 buildings documented on 2 streets.
 - [NOPA Historic District](nopa/) — Eligible for the California Register, significant 1870s–1910s; 20 buildings documented on 10 streets.
 - [New Montgomery-Mission-Second Street Conservation District](new-montgomery-mission-second-street/) — An Article 11 conservation district, significant 1906–1929; 70 buildings documented on 12 streets.
-- [Northeast Waterfront Historic District](northeast-waterfront/) — An Article 10 city landmark district, significant [Unofficial] 1848–1960s; 15 buildings documented on 7 streets.
+- [Northeast Waterfront Historic District](northeast-waterfront/) — An Article 10 city landmark district, significant [Unofficial] 1848–1960s; 16 buildings documented on 8 streets.
 - [Olsen's Queen Anne Cottages Historic District](olsen-s-queen-anne-cottages/) — Eligible for the California Register, significant 1893; 7 buildings documented on one street.
 - [Pacific Heights Historic District](pacific-heights/) — Eligible for the California Register, significant 1895–1930; 88 buildings documented on 12 streets.
 - [Panhandle Historic District](panhandle/) — Eligible for the California Register, significant 1870–1915; 26 buildings documented on 8 streets.
 - [Picturesque Period Revival Tracts Historic District](picturesque-period-revival-tracts/) — Eligible for the California and National Registers, significant 1931–1938; 86 buildings documented on 8 streets.
-- [Pine-Sansome Conservation District](pine-sansome/) — An Article 11 conservation district; 7 buildings documented on 2 streets.
+- [Pine-Sansome Conservation District](pine-sansome/) — An Article 11 conservation district; 8 buildings documented on 2 streets.
 - [Powell Street Shops Historic District](powell-street-shops/) — Eligible for the California Register, significant 1906–1924; 7 buildings documented on 2 streets.
 - [Presidio Heights Historic District](presidio-heights/) — Eligible for the California Register, significant 1890–1930; 61 buildings documented on 9 streets.
 - [Presidio Terrace Historic District](presidio-terrace/) — Eligible for the California Register, significant 1905–1915; 12 buildings documented on 2 streets.

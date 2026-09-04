@@ -4,13 +4,16 @@ The parcels on Sutter Street documented here so far, from the city's address, as
 
 ## Documented so far
 
+- [108–110](108/) — A 1906 office building, with facade work permitted in 2020.
 - [111](111/) — A 1926 office building, with a seismic retrofit permitted in 2000.
+- [126](126/) — A 1907 store building, with a kitchen and bathroom remodel permitted in 2013.
 - [130–150](130/) — A 1917 store building, with plumbing work permitted in 2015.
 - [154–180](154/) — A 1987 office building, with a seismic retrofit permitted in 2000.
 - [165](165/) — Crocker Galleria, whose barrel-vaulted arcade answers Milan's Galleria Vittorio Emanuele II.
 - [209–211](209/) — A 1907 office building in the Kearny-Market-Mason-Sutter Conservation District, with plumbing work permitted in 2012.
 - [246–250](246/) — A 1909 office building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 1986.
 - [255–271](255/) — A 1908 store building in the Kearny-Market-Mason-Sutter Conservation District, with facade work permitted in 2024.
+- [256–262](256/) — A 1911 office building in the Kearny-Market-Mason-Sutter Conservation District, with plumbing work permitted in 2013.
 - [266–270](266/) — A 1908 store building in the Kearny-Market-Mason-Sutter Conservation District, with foundation work permitted in 2018.
 - [272](272/) — A 2021 store building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 1998.
 - [301–303](301/) — A 1907 office building in the Kearny-Market-Mason-Sutter Conservation District, with stair work permitted in 2006.

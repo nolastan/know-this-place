@@ -4,6 +4,7 @@ The parcels on Green Street documented here so far, from the city's address, ass
 
 ## Documented so far
 
+- [200](200/) — A 1923 industrial building in the Northeast Waterfront Historic District, with reroofing permitted in 2025.
 - [310](310/) — A 2001 single-family house, with deck work permitted in 2020.
 - [359](359/) — A 1954 12-unit apartment building, with a seismic retrofit permitted in 2018.
 - [363–365](363/) — A 1907 single-family house, with an addition permitted in 2005.

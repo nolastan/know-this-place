@@ -8,6 +8,7 @@ The parcels on Sansome Street documented here so far, from the city's address, a
 - [100–130](100/) — A 1908 office building, with plumbing work permitted in 2000.
 - [140–142](140/) — A 1908 office building, with reroofing permitted in 1997.
 - [155](155/) — A 1929 office building in the Pine-Sansome Conservation District, with stair work permitted in 2004.
+- [160–180](160/) — A 1965 office building, with permit records from 1981 to 2023.
 - [200–206](200/) — A 1927 office building in the Pine-Sansome Conservation District, with an addition permitted in 2020.
 - [217–221](217/) — A 1908 office building in the Pine-Sansome Conservation District, with electrical work permitted in 2012.
 - [222–238](222/) — A 1987 hotel, with plumbing work permitted in 2023.
