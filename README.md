@@ -113,6 +113,8 @@ scripts/
   validate.py                 CI contract checks (stdlib only)
   build_sitemap.py            Regenerates sitemap.xml
   build_map_index.py          Regenerates shared/addresses.geojson
+  build_link_index.py         Regenerates shared/nearby.json — each
+                              page's nearby pages, for lateral links
 .github/
   ISSUE_TEMPLATE/page-feedback.yml
   workflows/{feedback-agent,refresh,validate}.yml
@@ -153,6 +155,7 @@ python3 scripts/seed_pages.py seed --neighborhood "Castro/Upper Market" \
                                    --city san-francisco --area castro
 python3 scripts/build_sitemap.py
 python3 scripts/build_map_index.py
+python3 scripts/build_link_index.py
 python3 scripts/validate.py
 ```
 
