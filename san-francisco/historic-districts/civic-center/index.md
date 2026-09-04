@@ -7,7 +7,7 @@ The buildings documented here so far inside the Civic Center Historic District, 
 - [Dr Carlton B Goodlett Place](/san-francisco/tenderloin/dr-carlton-b-goodlett-place/) — 1 documented building inside the district.
 - [Grove Street](/san-francisco/tenderloin/grove-street/) — 3 documented buildings inside the district.
 - [Larkin Street](/san-francisco/nob-hill/larkin-street/) — 2 documented buildings inside the district.
-- [Market Street](/san-francisco/south-of-market/market-street/) — 9 documented buildings inside the district.
+- [Market Street](/san-francisco/south-of-market/market-street/) — 10 documented buildings inside the district.
 - [Mcallister Street, Tenderloin](/san-francisco/tenderloin/mcallister-street/) — 3 documented buildings inside the district.
 - [Mcallister Street, Western Addition](/san-francisco/western-addition/mcallister-street/) — 1 documented building inside the district.
 - [United Nations Plaza](/san-francisco/tenderloin/united-nations-plaza/) — 1 documented building inside the district.
@@ -23,6 +23,7 @@ The buildings documented here so far inside the Civic Center Historic District, 
 - [165 Grove Street](/san-francisco/tenderloin/grove-street/165/) — An assessor class: vacant lot, with permit records from 1982 to 2025.
 - [100 Larkin Street](/san-francisco/nob-hill/larkin-street/100/) — A 1900 building, with reroofing permitted in 2025.
 - [200 Larkin Street](/san-francisco/nob-hill/larkin-street/200/) — A 1944 building, with an addition permitted in 2017.
+- [1170 Market Street](/san-francisco/south-of-market/market-street/1170/) — A 1983 office building, with plumbing work permitted in 2010.
 - [1182–1192 Market Street](/san-francisco/south-of-market/market-street/1182/) — A 1925 office building, with electrical work permitted in 2022.
 - [1200 Market Street](/san-francisco/south-of-market/market-street/1200/) — A 1908 store building, with a seismic retrofit permitted in 1984.
 - [1210–1218 Market Street](/san-francisco/south-of-market/market-street/1210/) — A 1907 store building, with facade work permitted in 1995.

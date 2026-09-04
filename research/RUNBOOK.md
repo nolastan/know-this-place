@@ -153,7 +153,13 @@ python3 research/tools/resolve_eas.py manifest research/findings/<id>/<batch>.js
 
 `manifest` writes `research/manifests/<batch>.json` — the resolved parcels that
 have no page yet, in the shape `seed_pages.py seed-list` reads. Run it after
-`apply`; step 4 seeds from it.
+`apply`; step 4 seeds from it. **Group its parcels by the roll's
+`property_location` before seeding**: a tower on an assembled block keeps its
+lots, each still carrying a demolished predecessor's number in EAS, and each
+comes off the roll with no build year, no storeys and the tower's address. One
+downtown batch would have seeded eleven pages for two buildings that way. The
+lots that carry their own year are the buildings the project kept, and those do
+want pages.
 
 Add **`--area-from-nhood`** to `report`, `apply` and `manifest` together when
 the site has few or no pages on the streets in the batch. Without it the
@@ -173,7 +179,12 @@ it separates a *re-lotting* since the record was written (same block, ordinary)
 from *another block* (usually a digit a scan lost, sometimes the record's own
 error). **On any source read from a scan, put the printed block and lot on every
 finding and read every "another block" line** — that is what stops an OCR digit
-becoming a page.
+becoming a page. Put it only where the record prints it *for that building*,
+though: a survey or an environmental report states its own site's parcel and
+then rates twenty buildings on other blocks, and carrying the site's parcel onto
+those makes the scan print re-lottings and block crossings that are artefacts.
+Noise here is worse than silence, because the scan exists so a real lost digit
+stands out.
 
 **A range goes in `extra.address_range_as_recorded`, never in `street_number`.**
 The resolver reads the range from that field and looks `street_number` up

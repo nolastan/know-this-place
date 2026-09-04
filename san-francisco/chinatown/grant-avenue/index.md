@@ -5,6 +5,7 @@ The parcels on Grant Avenue documented here so far, from the city's address, ass
 ## Documented so far
 
 - [615–625](615/) — A 1907 store building in the Chinatown Historic District, with plumbing work permitted in 2019.
+- [654–781](654/) — A 1907 hotel in the Chinatown Historic District, with reroofing permitted in 2022.
 - [701–711](701/) — A 1906 store building in the Chinatown Historic District, with a seismic retrofit permitted in 2001.
 - [838](838/) — A 1966 store building in the Chinatown Historic District, with a kitchen remodel permitted in 2021.
 

@@ -9,6 +9,7 @@ The oldest Chinese community in North America, on the slopes above Portsmouth Sq
 - [Broadway](broadway/) — 4 buildings, built 1907; 4 in the Jackson Square Historic District Extension.
 - [Clay Street](clay-street/) — 1 building, built 1900.
 - [Columbus Avenue](columbus-avenue/) — 17 buildings, built 1907–1915; 2 in the Jackson Square Historic District.
+- [Commercial Street](commercial-street/) — 1 building, built 1923; 1 in the Chinatown Historic District.
 - [Filbert Street](filbert-street/) — 2 buildings, built 1907–1982.
 - [Front Street](front-street/) — 1 building, built 1910.
 - [Gold Street](gold-street/) — 1 building, built 1900; 1 in the Jackson Square Historic District.
