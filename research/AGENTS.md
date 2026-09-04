@@ -199,6 +199,18 @@ live in the dossiers. **Add to this list** whenever a run discovers something a
 future run would otherwise repeat — that is what makes this module improve
 rather than just accumulate.
 
+- **A batch is a unit of reading, not a unit of the source's own filing.** The
+  DigitalSF archive ends in a long tail: 36 catalogued collections holding
+  between one and nineteen addressed records each. Read as the archive files
+  them, that is 36 findings files, 36 register lines and 36 dossier entries for
+  188 candidate addresses, and a queue no session would ever choose to start.
+  Read as one batch it is a single afternoon. **When the next unit the source
+  names is far smaller than a session, take the whole remainder instead** — and
+  where the tool assumed one unit per run, make it take a set. The cost of that
+  change was one function argument; the cost of not making it was a source that
+  could never be finished. The same shape will turn up wherever a source has a
+  head of large units and a tail of tiny ones.
+
 - **A published fact with no findings file is invisible to every count this
   module keeps.** Ten pages were carrying facts from six Corbett Heights
   newsletter issues while the dossier, the register and `check.py --stats` all

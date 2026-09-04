@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Turn one DigitalSF archival collection into a findings file.
+"""Turn one or more DigitalSF archival collections into a findings file.
 
     python3 research/tools/digitalsf_extract.py "SFP 23" sfp-23
     python3 research/tools/digitalsf_extract.py "SFP 23" sfp-23 --report
+    python3 research/tools/digitalsf_extract.py "(SFH 61),(SFP 83)" tail
 
 The first argument matches against `524$a`, which is the preferred citation and
 also the batch unit for this source — see research/sources/digitalsf.md. The
@@ -11,6 +12,14 @@ second names the output file, `research/findings/digitalsf/<batch>.json`.
 way to reach the 1,678 records that carry no `524$a` at all.
 `--report` prints the coverage counts and the address strings it kept and
 dropped, without writing anything; that is the pass you read before committing.
+
+**A batch may be several collections.** Comma-separate the selectors and every
+per-collection setting below — the description template, the name policy, the
+unnumbered policy — is resolved per record from the collection that record
+matched, not once for the run. That is what makes the long tail readable: 36
+of DigitalSF's collections hold between one and nineteen addressed records
+each, and one findings file per collection would be 36 files, 36 register
+lines and 36 dossier entries for 188 candidate addresses.
 
 What it reads out of each MARC record, and why:
 
@@ -55,8 +64,12 @@ RECORD_URL = "https://digitalsf.org/record/{}"
 # Reading the corpus
 # --------------------------------------------------------------------------- #
 
-def records(collection: str, key: str = "524"):
-    """Yield {id, oai, page, fields} for each unique record in one collection.
+def records(selectors: list[str], key: str = "524"):
+    """Yield {id, oai, page, fields, collection} per unique record selected.
+
+    `selectors` are matched as substrings of the record's `key$a`; a record is
+    yielded once, tagged with the first selector that matched it, so a batch
+    spanning several collections still knows which one each record came from.
 
     Deduplicates on the OAI identifier: the sets overlap, so a record reached
     through `Photographs` is usually also in `city` and `sfhistory`.
@@ -88,12 +101,15 @@ def records(collection: str, key: str = "524"):
             for f in mrc.iter(M + "datafield"):
                 fields.setdefault(f.get("tag"), []).append(
                     [(s.get("code"), (s.text or "").strip()) for s in f])
-            if collection not in first(fields, key, "a"):
+            cited = first(fields, key, "a")
+            matched = next((sel for sel in selectors if sel in cited), None)
+            if matched is None:
                 continue
             cf = mrc.find(f"{M}controlfield[@tag='001']")
             yield {"id": (cf.text or "") if cf is not None else "",
                    "oai": oai,
                    "page": str(pathlib.Path(page).relative_to(ROOT.parent)),
+                   "collection": matched,
                    "fields": fields}
 
 
@@ -1072,6 +1088,133 @@ COLLECTION_NAME_POLICY = {
     "SFP 26": "named-buildings-only",
 }
 
+# The kind of record, where it is not a photograph. Free-form in the schema;
+# only two collections in the archive need it.
+COLLECTION_KIND = {
+    "SFP 21": "postcard",
+    "SFH 730": "poster",
+}
+
+
+# --------------------------------------------------------------------------- #
+# The tail — 36 collections of one to nineteen addressed records each
+#
+# Everything left in the archive after the twelve collections read on their
+# own, minus the three blocked on #217. Each is far too small to be a batch,
+# and together they are one: 188 candidate addresses over 12,657 records.
+#
+# All 36 take the same two policies, and both are the conservative choice:
+#
+#   `skip-unnumbered`, because the unnumbered majority of every one of them is
+#   portraits, parades, streetcars and street corners rather than buildings.
+#   Keeping it would put 12,000 stubs in one file.
+#
+#   `named-buildings-only`, because these are caption collections and their
+#   captions are almost entirely about people — bar customers, marchers,
+#   volunteers, a mayor at a party, a photographer's own household. "A false
+#   keep here is a privacy failure", and at this size a name the strict filter
+#   drops can be judged by hand at publication instead. That trade is only
+#   affordable *because* the batch is small; do not carry it to a big one.
+#
+# What differs per collection is the sentence, which has to say what the
+# record is and who made it. Where the catalogue names one photographer the
+# sentence names them; where the collection is an assembled or donated one
+# with no single maker it says only that a dated photograph survives — the
+# SFP 162 sentence, for the SFP 162 reason.
+# --------------------------------------------------------------------------- #
+
+_ANONYMOUS = "Photographed {at} {display} {when}."
+
+TAIL_VOICE = {
+    # The Police Department's own photography: glass plates of the 1906 ruins,
+    # traffic collisions, and the Bureau of Special Services' surveillance of
+    # bars and bookstores in the 1960s.
+    "SFH 61": ("The San Francisco Police Department photographed the property "
+               "{at} {display} {when}."),
+    # Shades of San Francisco is a community collecting project — six
+    # neighbourhood sets, every picture lent by a resident and copied. No one
+    # body made them, so the sentence must not name one.
+    "SFP 78": _ANONYMOUS,
+    "SFP 155": ("Judi Iranyi photographed the property {at} {display} "
+                "{when}."),
+    "GLC 78": _ANONYMOUS,
+    # The Board of Health's 1903 survey of Chinatown facades, made during the
+    # plague campaign that demolished 160 buildings between March and October
+    # of that year. The department is the fact the catalogue carries.
+    "SFP 83": ("The San Francisco Board of Health photographed the building "
+               "{at} {display} {when}."),
+    "GLC 131": _ANONYMOUS,
+    # The Junior League's Historic Sites Committee photographed buildings
+    # across the city in 1964-65 while compiling its architectural survey. Ten
+    # of ten records are one building at one number, which is the densest
+    # addressed collection in the archive.
+    "SFH 611": ("The Junior League of San Francisco's Historic Sites "
+                "Committee photographed the property {at} {display} {when}."),
+    "SFP 160": ("Robert Dawson photographed the property {at} {display} "
+                "{when}."),
+    "SFP 148": ("Leslie Sheraton photographed the property {at} {display} "
+                "{when}."),
+    # Published picture postcards, not somebody's photograph, and the date is
+    # the card's.
+    "SFP 21": "A picture postcard pictured {display} {when}.",
+    # A newspaper's photo morgue: the file the paper kept of its own pictures.
+    "SFP 39": ("The San Francisco News-Call Bulletin photographed {display} "
+               "{when}."),
+    "SFP 38": _ANONYMOUS,
+    "SFH 78": _ANONYMOUS,
+    "SFH 36": _ANONYMOUS,
+    "GLC 35": _ANONYMOUS,
+    "SFP 159": ("The United States Naval Station at Treasure Island "
+                "photographed the property {at} {display} {when}."),
+    "SFH 79": ("The San Francisco Sheriff's Department photographed the "
+               "property {at} {display} {when}."),
+    "GLC 174": _ANONYMOUS,
+    "SFH 59": _ANONYMOUS,
+    "GLC 203": _ANONYMOUS,
+    "GLC 94": _ANONYMOUS,
+    "SFP 164": ("Claudio Beagarie photographed the property {at} {display} "
+                "{when}."),
+    "GLC 118": _ANONYMOUS,
+    "SFH 675": _ANONYMOUS,
+    "GLC 66": _ANONYMOUS,
+    # The society collected these shacks' pictures; it did not take them.
+    "SFH 9": _ANONYMOUS,
+    "SFP 40": ("D. H. Wulzen photographed the property {at} {display} "
+               "{when}."),
+    "SFP 55": ("Edward Stanton photographed the property {at} {display} "
+               "{when}."),
+    "SFP 131": _ANONYMOUS,
+    "SFP 135": _ANONYMOUS,
+    "SFH 75": ("The San Francisco Society for the Prevention of Cruelty to "
+               "Animals photographed the property {at} {display} {when}."),
+    "SFP 100": ("Ray M. Mann, Jr. photographed the property {at} {display} "
+                "{when}."),
+    "SFP 157": ("Darius Aidala photographed the property {at} {display} "
+                "{when}."),
+    "SFP 166": ("Phiz Mezey photographed the property {at} {display} "
+                "{when}."),
+    "GLC 76": _ANONYMOUS,
+    "SFH 730": "A poster pictured {display} {when}.",
+}
+
+COLLECTION_VOICE.update(TAIL_VOICE)
+for _collection in TAIL_VOICE:
+    COLLECTION_NAME_POLICY.setdefault(_collection, "named-buildings-only")
+    COLLECTION_UNNUMBERED_POLICY.setdefault(_collection, "skip-unnumbered")
+    # And a third, added after reading the batch's `record_notes` by eye. In
+    # these collections the archivist's `500$a` is not housekeeping: it is a
+    # donor's memoir of their own family, a police case note, or a newspaper's
+    # copy, and every kind of it names people. A crime victim with her home
+    # apartment number ("EVELYN POWERS… Victim. 1900 Vallejo St. apt. #204"),
+    # the children at a blackboard, a donor's parents and their hotel, the
+    # party to a 1941 collision and his street address. "Privacy — hard
+    # limits" binds at extraction time, none of it can ever become a page
+    # fact, and `citation.url` is one click from the record for an auditor —
+    # so it does not enter the repository at all. Same rule as SFP 125 and
+    # SFP 169 above, applied to the whole tail because the donor-description
+    # shape is what these collections are made of.
+    COLLECTION_NOTE_POLICY.setdefault(_collection, "drop")
+
 BUILDING_NOUN = {
     "hotel", "apartment", "apartments", "house", "church", "school", "market",
     "garage", "company", "galleria", "ywca", "ymca", "theatre", "theater",
@@ -1121,8 +1264,14 @@ EVENT_TAIL = re.compile(r"\b(?:ceremony|opening|meeting|dedication|groundbreakin
 # Francisco Art Institute", "Lobby of the Hotel Turpin". None of these words is
 # a BUILDING_NOUN, so stripping them can never take a name's own head noun.
 CAPTION_PREFIX = re.compile(
+    # "Ruins" belongs with the rest of them: the 1906 caption shape is "Ruins
+    # of the Orpheum Theatre at 119 O'Farrell Street", and without it the
+    # theatre's name is thrown away with the caption. Measured over every
+    # findings file: it recovers six building names in SFP 162 — the Dana
+    # Building, the El Monterey and Warren Apartments, the Orpheum Theatre and
+    # the Schloss Crockery Company — and removes none anywhere.
     r"^(?:Exterior|Interior|Front|Rear|Side|View|Views|Construction|"
-    r"Demolition|Remodeling|Renovation|Warehouse|Site)\s+of\s+(?:the\s+)?"
+    r"Demolition|Remodeling|Renovation|Warehouse|Site|Ruins)\s+of\s+(?:the\s+)?"
     rf"|^(?:(?:{CAPTION_PART_QUALIFIER})\s+)?(?:{CAPTION_PART})\s+"
     r"(?:on\s+top\s+of|in\s+front\s+of|of|at|to|on|in|inside|outside)"
     r"\s+(?:the\s+)?"
@@ -1194,7 +1343,7 @@ def voice_for(collection: str) -> str:
 # Building the findings
 # --------------------------------------------------------------------------- #
 
-def expand_runs(rows, plate_numbers: bool):
+def expand_runs(rows, plate_numbers_for):
     """Yield (record, forced_number) — twice for a record printing a run.
 
     "610 to 624 Anza Street" is a Bureau of Engineering photograph of a stretch
@@ -1202,12 +1351,16 @@ def expand_runs(rows, plate_numbers: bool):
     findings on the two numbers the caption actually prints. The buildings
     between them are real and their numbers are an inference; see "A row of
     buildings is not a range" in research/AGENTS.md.
+
+    `plate_numbers_for` is called with the record's own collection, because a
+    batch may span collections that answer that question differently.
     """
     for rec in rows:
         f = rec["fields"]
         title = " ".join(v for v in (first(f, "245", "a"),
                                      first(f, "245", "b")) if v)
-        addr = address_from_title(title, plate_numbers=plate_numbers)
+        addr = address_from_title(title,
+                                  plate_numbers=plate_numbers_for(rec))
         second = (addr or {}).get("second_number")
         if second and second != addr["number"]:
             yield rec, addr["number"]
@@ -1216,19 +1369,22 @@ def expand_runs(rows, plate_numbers: bool):
             yield rec, ""
 
 
-def build(collection: str, batch: str, key: str = "524"):
-    voice = voice_for(collection)
-    settings = settings_key(collection)
-    policy = COLLECTION_NAME_POLICY.get(settings, "")
-    skip_unnumbered = (COLLECTION_UNNUMBERED_POLICY.get(settings)
-                       == "skip-unnumbered")
-    drop_notes = COLLECTION_NOTE_POLICY.get(settings) == "drop"
-    read_donor = settings in COLLECTION_DONOR_ADDRESS
-    plate_numbers = settings in COLLECTION_PLATE_NUMBERS
-    rows = list(records(collection, key))
+def build(selectors: list[str], batch: str, key: str = "524"):
+    # Every collection in the batch must have a description template before a
+    # single record is read: a run that dies half way through leaves nothing
+    # behind, and the sentence is the thing there is no safe default for.
+    for sel in selectors:
+        voice_for(sel)
+    rows = list(records(selectors, key))
     if not rows:
-        sys.exit(f"no records matching {collection!r} in {key}$a under "
+        sys.exit(f"no records matching {selectors!r} in {key}$a under "
                  f"{CORPUS} — run digitalsf_harvest.py first")
+    unseen = sorted(set(selectors) - {r["collection"] for r in rows})
+    if unseen:
+        print(f"  ! no records matched: {', '.join(unseen)}", file=sys.stderr)
+
+    def plate_numbers_for(rec):
+        return settings_key(rec["collection"]) in COLLECTION_PLATE_NUMBERS
 
     tally = collections.Counter()
     dropped_names: list[str] = []
@@ -1237,12 +1393,24 @@ def build(collection: str, batch: str, key: str = "524"):
     order: list[tuple] = []
 
     for rec, forced in expand_runs(sorted(rows, key=lambda r: int(r["id"] or 0)),
-                                   plate_numbers):
+                                   plate_numbers_for):
         f = rec["fields"]
+        settings = settings_key(rec["collection"])
+        voice = COLLECTION_VOICE[settings]
+        policy = COLLECTION_NAME_POLICY.get(settings, "")
+        skip_unnumbered = (COLLECTION_UNNUMBERED_POLICY.get(settings)
+                           == "skip-unnumbered")
+        drop_notes = COLLECTION_NOTE_POLICY.get(settings) == "drop"
+        read_donor = settings in COLLECTION_DONOR_ADDRESS
+        plate_numbers = settings in COLLECTION_PLATE_NUMBERS
         title = " ".join(v for v in (first(f, "245", "a"), first(f, "245", "b")) if v)
         notes = read_notes(f)
         date = read_date(f)
         tally["records"] += 1
+        if len(selectors) > 1:
+            # A batch spanning collections is unreadable as one number: the
+            # report has to say which collection each count came from.
+            tally[f"records in {settings}"] += 1
         tally[f"precision:{date['precision']}"] += 1
         if date["fuzzy_flag"]:
             tally["fuzzy flag"] += 1
@@ -1278,8 +1446,17 @@ def build(collection: str, batch: str, key: str = "524"):
         # called Marilyn Lew. The dossier's rule for this is that a street
         # number equal to the record's own year is not an address; with no
         # street type stated there is nothing else holding it up.
+        #
+        # The comparison is against **every** four-digit year the date carries,
+        # not the one `year_of` prints. `year_of` returns the archivist's whole
+        # phrase for an imprecise date — "not before 1906", "between 1985 and
+        # 1987" — which equals no street number ever, so the guard used to miss
+        # exactly the records whose captions name the year in words: "Damage at
+        # 1st Street and Harrison from 1906 Earthquake and Fire". Widening it
+        # takes out 28 more candidates across the tail collections and changes
+        # nothing in any findings file already committed.
         if (from_title and not from_title["street_type"]
-                and from_title["number"] == year_of(date)):
+                and from_title["number"] in years_of(date)):
             tally["street number is the record's year, not an address"] += 1
             from_title = None
         addr = from_title or from_note
@@ -1450,7 +1627,7 @@ def build(collection: str, batch: str, key: str = "524"):
             "id": "",  # numbered after the whole batch is grouped
             "date": date["date"],
             "date_precision": date["precision"],
-            "kind": "photograph",
+            "kind": COLLECTION_KIND.get(settings, "photograph"),
             "address_as_written": display,
             "description": description,
             "extra": extra,
@@ -1490,6 +1667,8 @@ def build(collection: str, batch: str, key: str = "524"):
         e = entries[key]
         recs = e.pop("_records")
         e["id"] = f"{batch}-{i:04d}"
+        if len(selectors) > 1:
+            tally[f"findings in {settings_key(recs[0]['collection'])}"] += 1
         if len(recs) > 1:
             e["extra"]["additional_records"] = [RECORD_URL.format(r["id"])
                                                 for r in recs[1:]]
@@ -1514,6 +1693,12 @@ def oxford(items: list[str]) -> str:
     if len(items) == 2:
         return f"{items[0]} and {items[1]}"
     return ", ".join(items[:-1]) + f" and {items[-1]}"
+
+
+def years_of(date: dict) -> set:
+    """Every four-digit year the record's own date names, in any form."""
+    return set(YEAR_IN.findall(f"{date.get('as_recorded', '')} "
+                               f"{date.get('date', '')}"))
 
 
 def year_of(date: dict) -> str:
@@ -1679,14 +1864,15 @@ def reorder(entry: dict) -> dict:
 def main(argv: list[str]) -> int:
     if len(argv) < 2:
         sys.exit(__doc__.split("\n\n")[1].strip())
-    collection, batch = argv[0], argv[1]
+    selectors = [c.strip() for c in argv[0].split(",") if c.strip()]
+    batch = argv[1]
     report = "--report" in argv
     key = "982" if "--key" in argv and argv[argv.index("--key") + 1] == "982" \
         else "524"
     read_on = next((a for a in argv if re.fullmatch(r"\d{4}-\d{2}-\d{2}", a)),
                    datetime.date.today().isoformat())
 
-    rows, findings, tally, kept, dropped = build(collection, batch, key)
+    rows, findings, tally, kept, dropped = build(selectors, batch, key)
 
     if report:
         for k, v in tally.most_common():

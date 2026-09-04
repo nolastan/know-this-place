@@ -79,6 +79,7 @@ Every residential parcel on 18th Street that the city's address, assessor and pe
 - [4040–4044](4040/) — A 1906 3-unit tic building in the Hartford Street Historic District, with a kitchen and bathroom remodel permitted in 2023.
 - [4047–4049](4047/) — A 1904 4-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with reroofing permitted in 1996.
 - [4051–4053](4051/) — A 1920 3-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with electrical work permitted in 2017.
+- [4052](4052/) — A 1901 building in the Hartford Street Historic District, with a seismic retrofit permitted in 2022.
 - [4055–4059](4055/) — A 1946 3-unit apartment building in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with a kitchen and bathroom remodel permitted in 2025.
 - [4058–4060](4058/) — A 1901 2-unit building with a ground-floor store, with a kitchen remodel permitted in 2013.
 - [4061–4063](4061/) — A 1900 2-unit building with a ground-floor store in the Eureka Valley Commercial & Castro Village LGBTQ+ Historic District, with a kitchen and bathroom remodel permitted in 2025.

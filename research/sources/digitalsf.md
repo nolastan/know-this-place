@@ -153,7 +153,7 @@ and roughly double what the title-only profile reports:
 | 51 | **James E. Gordon Color Slide Collection of San Francisco Murals (SFP 90) — done: 14 findings, 11 resolved** |
 | 43 | **James A. Martin Color Slides of San Francisco (SFP 169) — done: 39 findings, 21 resolved** |
 | 30 | San Francisco Portrait Photograph Collection (SFP 136) — a *portrait* collection; expect the SFP 130 question |
-| 28 | San Francisco Police Department Records (SFH 61) |
+| 28 | **San Francisco Police Department Records (SFH 61) — done in the `tail` batch: 14 findings, 4 published.** Its addressed half is the 1906 ruins and the Bureau of Special Services' 1960s surveillance of bars |
 | 28 | **Marilyn Blaisdell Photograph Collection (SFP 84) — done: 13 findings, 1 published.** A collector's miscellany, 1880s–1914, so eleven of twelve misses are the pre-1910 renumbering rule |
 | 22 | **Michael Brailove Photographic Negatives (SFP 103) — done: 7 findings, 3 resolved, 0 published.** The densest thing left, and every address is a Western Addition building the A-2 clearances took |
 | 21 | **San Francisco Unified School District records (SFH 3) — done: 3 findings, 2 resolved, 0 published.** Select on `"(SFH 3)"`; the bare string also matches SFH 371 and SFH 391 |
@@ -186,10 +186,17 @@ are now done; the next such run is SFP 84, SFP 103, SFH 3 and SFP 26 together.
 **The four institutional collections are done, and the next run has no
 buildings batch left.** SFP 26, SFP 84, SFP 103 and SFH 3 were read together on
 2026-09-03 and yielded 40 findings and 8 published pages between them, on 3,121
-catalogue records. What remains untouched in the table above is SFP 130 and SFP
-179 (blocked on #217), SFP 136 (a portrait collection, so the same question) and
-SFH 61 (Police Department Records, 28 addressed — the last collection here that
-is plausibly about buildings). Nothing else reaches ten addressed records.
+catalogue records.
+
+**And then there was no batch left at all.** Everything below SFP 26 in this
+table, plus the thirty-odd collections too small to have a row in it, was read
+on 2026-09-04 as the single `tail` batch — 36 collections, 7,261 records, 45
+published pages. The only rows here still untouched are SFP 130, SFP 179 and
+SFP 136, all three blocked on #217. **The densest thing the tail turned up was
+not in this table**, because the table is ordered by addressed-record count and
+it has only ten records: SFH 611, the Junior League of San Francisco's *Here
+Today* building research files, where ten of ten records are one building at
+one street number, photographed in 1964-65.
 
 **SFP 125 was on that list and half belongs on the other one.** Its *addressed*
 half is unambiguously buildings — 60 records naming South of Market residential
@@ -386,6 +393,17 @@ so a collection is one batch until that number passes about fifteen hundred.
   free prose, where the equipment captions live, and not to a catalogued
   "<name>, <address>" title.
 
+  **The standing guard was reading the wrong field, and the tail is where it
+  showed.** It compared the number against `year_of(date)`, which returns the
+  archivist's whole phrase for an imprecise date — "not before 1906", "between
+  1985 and 1987" — and a phrase equals no street number ever. So the guard
+  fired on "1966 Bayview-Hunters Point riots" dated `1966-09` and missed
+  "Damage at 1st Street and Harrison from 1906 Earthquake and Fire" dated "not
+  before 1906". It now compares against **every** four-digit year the date
+  carries, which takes out 28 more candidates across the tail and, measured
+  over every findings file in the repository, changes nothing already
+  committed.
+
 - **Sets overlap.** Deduplicate on the OAI identifier or you will double-count
   the Hormel and Shades material, which sits in `Photographs` and `lgbtq` both.
 - **A block is not an address.** "900 block of Valencia Street" is the
@@ -485,10 +503,25 @@ not when a page is. Two mechanisms, both now in the extractor:
   `500$a` notes into `extra.record_notes` for SFP 125 and SFP 169, whose notes
   are a photographer's and a donor's free prose about who is in the frame
   ("214, Lee Wash room Daton Hot.", "Doris Martin & son", "Reverend Fumio
-  Matsui (in white robes)"). Other collections keep them, because there they
-  are archival housekeeping — "Sheet: S.F. Streets - Hayes", "See SFP22-0125".
+  Matsui (in white robes)"), **and for all 36 tail collections**, where the same
+  turned out to be true in every register the note can be written in. A donor's
+  memoir of their own family ("Donor's mother Suwa… donor's father"), a police
+  case note with a robbery victim's name and home apartment number ("EVELYN
+  POWERS… Victim. 1900 Vallejo St. apt. #204"), the party to a 1941 collision
+  with his street address, and a newspaper's copy naming the children at a
+  blackboard. Two of the biggest collections in the archive keep their notes,
+  because there they are archival housekeeping — "Sheet: S.F. Streets - Hayes",
+  "See SFP22-0125". **The default is wrong for a caption collection**: judge it
+  by reading `--report`'s notes before writing the file, not after.
   The record page is one click from `citation.url` if an auditor wants the
   original.
+- **The redactor only reaches a name the catalogue indexed.** Four tail records
+  keep a personal name in `raw.text` because the caption names someone the
+  catalogue put in no `600`/`700` heading — civic figures at public events in
+  1945–1964, all long dead and none of them a resident, occupant or owner, and
+  `raw.text` never reaches a page. It is still a gap, and widening the redactor
+  to a general capitalized-name detector would eat firm names ("Eagle Market",
+  "Shadows Restaurant") and place names, so it is filed rather than bodged.
 
 **A mural artist is a creator credit, and the only one this archive states.**
 `700 $e mural artist` names the person who made the work at that address — the
@@ -513,21 +546,31 @@ records carry one; exactly one of those also carries a street number.
   `Photographs` 57,647 · `sfhistory` 7,987 · `city` 6,867 · `lgbtq` 2,727 ·
   `basc` 10, before deduplication.
 
-  **Eight collections of 44 have been read, resolved and published** — the
-  four large ones (SFP 23, SFP 162, SFH 371, SFP 22) and the four small
-  buildings collections taken together in one run (SFP 42, SFP 90, SFP 125,
-  SFP 169). The table under "Batch unit" says what each yielded. Re-run the
+  **Every collection in the archive that holds an addressed record has now been
+  read, except the three blocked on #217.** Twelve were read on their own —
+  SFP 23, SFP 162, SFH 371, SFP 22, then SFP 42, SFP 90, SFP 125 and SFP 169
+  together, then SFP 26, SFP 84, SFP 103 and SFH 3 together — and the
+  remaining **36 were read as one batch, `tail`**: 7,261 records, 188 candidate
+  addresses, 137 findings, 45 published on 45 pages. What is left in the
+  archive is SFP 130 (184 addressed), SFP 179 (151) and SFP 136 (30), all three
+  blocked on #217, and 128 collections that carry no addressed record at all.
+  The table under "Batch unit" says what each yielded. Re-run the
   harvester to pick up records added since; it resumes from the stored token
   rather than re-downloading.
 
-  **What is left is small, and two of the three biggest pieces need a person.**
-  Ranked by addressed records: SFP 130 (184) and SFP 179 (151) are the
-  Tenderloin tenant collections blocked on #217; then SFP 136 (30, a *portrait*
-  collection), SFH 61 (28, Police Department Records), SFP 84 (28, Marilyn
-  Blaisdell), SFP 103 (22 of only 51 records, the densest thing left), SFH 3
-  (21, school district) and SFP 26 (16, DPW Bureau of Engineering). Nothing else
-  reaches ten. **Taken together SFP 84, SFP 103, SFH 3 and SFP 26 are about
-  buildings and are one run**, the way SFP 42/90/125/169 were.
+  **What is left needs a person.** SFP 130 (184 addressed) and SFP 179 (151)
+  are the Tenderloin tenant collections blocked on #217, and SFP 136 (30) is a
+  *portrait* collection that raises the same question. Nothing else in the
+  archive carries an addressed record: a corpus-wide address pass over all
+  59,902 records finds no candidate in any other unread collection.
+
+  **The tail was one batch, and that is the shape to reuse.** 36 collections
+  holding one to nineteen addressed records each are not 36 batches; reading
+  them separately would have been 36 findings files, 36 register lines and 36
+  dossier entries for 188 candidates. `digitalsf_extract.py` now takes a
+  comma-separated list and resolves the description template and all three
+  policies per record, so a set of collections is a batch whenever they are
+  too small to be batches on their own.
 
   **The 1,678 records with no `524$a` are read and closed** (issue #220).
   `digitalsf_extract.py --key 982` reaches them, and `982$a` groups all 1,678
@@ -569,6 +612,28 @@ records carry one; exactly one of those also carries a street number.
   `citation_of()` does this, and refuses a record that names neither rather
   than citing "the archive".
 
+- **Verified:** 2026-09-04 (read, resolved and published **the tail — 36
+  collections in one batch**, everything in the archive that holds an addressed
+  record except the three blocked on #217. 7,261 catalogue records → 188
+  candidate addresses → 137 findings over 116 distinct addresses → 73 resolved,
+  33 unresolved, 31 rejected → **45 published on 45 pages, 18 of them seeded by
+  this run**; 28 declined. Three things this batch taught the tool. **The
+  archivist's note is a privacy problem in a caption collection**, not
+  housekeeping — a robbery victim's home apartment number, a donor's parents,
+  the children at a blackboard — so all 36 take `drop`. **The year guard was
+  reading the printed date phrase rather than the years in it** and missed
+  every caption that names the year in words; widened, it removes 28 candidates
+  and changes nothing already committed. And **`Ruins of` belongs in
+  `CAPTION_PREFIX`** with `Exterior of` and `View of`: it recovers five real
+  building names in SFP 162 that were being thrown away with the caption. Two
+  things it taught about the city. **Dupont Street is today's Grant Avenue and
+  the numbers carry over, but the buildings do not** — EAS holds no 1011, 1013,
+  1017 or 714 Grant Avenue, and the Board of Health album photographs Chinatown
+  facades in 1903, the year its own campaign demolished 160 buildings there.
+  And **EAS files Buena Vista Avenue East and West under one `street_name`**
+  with the direction in `address`, so `--alias "BUENA VISTA AVENUE W=BUENA
+  VISTA"` resolves 737 correctly only because 737 is unique across both sides —
+  check that before reusing it)
 - **Verified:** 2026-09-03 (audit run, no new material read. Corrected **28 SFP
   23 findings that said `published` with no page at their path** (issue #221)
   and **two SFP 23 placements the block's number line refuses** (issue #222).

@@ -149,6 +149,7 @@ Every residential parcel on Potrero Avenue that the city's address, assessor and
 - [1350–1356](1350/) — A 1927 8-unit apartment building, with a seismic retrofit permitted in 2016.
 - [1358–1364](1358/) — A 1927 8-unit apartment building, with deck work permitted in 2008.
 - [1366](1366/) — A 1927 single-family house.
+- [1493–1499](1493/) — A 1963 industrial building, with a bathroom remodel permitted in 2024.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.
