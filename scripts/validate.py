@@ -38,9 +38,6 @@ CONFIG = json.loads((ROOT / "shared" / "site-config.json").read_text())
 SITE = CONFIG["site_url"].rstrip("/")
 REPO = CONFIG["repo_url"].rstrip("/")
 
-# See the file's own header for what it is and why it can only shrink.
-BACKLOG_PATH = ROOT / "scripts" / "render-backlog.txt"
-
 # Site icons, on every page for the same reason the stylesheet is: they are
 # shared chrome, not page content. `shared/icon.svg` is the source of truth for
 # the mark; favicon.ico and apple-touch-icon.png are derived from it.
@@ -72,14 +69,11 @@ def err(path: Path, msg: str) -> None:
     errors.append(f"{path.relative_to(ROOT)}: {msg}")
 
 
-def load_backlog() -> set:
-    if not BACKLOG_PATH.exists():
-        return set()
-    return {ln.strip() for ln in BACKLOG_PATH.read_text(encoding="utf-8").splitlines()
-            if ln.strip() and not ln.lstrip().startswith("#")}
-
-
-BACKLOG = load_backlog()
+# See the file's own header for what it is and why it can only shrink. Read
+# through seed_pages so the checker that excuses these pages from parity and
+# the renderer that refuses to overwrite them agree on the list by construction.
+BACKLOG_PATH = seed_pages.RENDER_BACKLOG_PATH
+BACKLOG = seed_pages.load_render_backlog()
 
 
 def check_html(html_path: Path, html: str, is_address: bool) -> None:

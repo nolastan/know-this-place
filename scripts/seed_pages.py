@@ -41,6 +41,7 @@ from __future__ import annotations
 
 import argparse
 import collections
+import functools
 import html
 import json
 import math
@@ -1830,6 +1831,42 @@ def district_record(rec: dict) -> dict:
     return out
 
 
+@functools.lru_cache(maxsize=None)
+def _district_hubs(city_slug: str) -> frozenset:
+    """The district slugs that have a hub page in this city, read off the tree.
+
+    Which districts earned a hub is a fact about the whole city — the
+    threshold is `DISTRICT_MIN_PAGES` documented buildings — so it cannot be
+    computed from one page's `data.json`. Reading the built directory back is
+    how the renderer stays incapable of emitting a link to a district hub that
+    was held back, which `validate.check_internal_links` would fail on anyway.
+    `seed_pages.py districts` writes these; this only ever reads them.
+    """
+    d = ROOT / city_slug / DISTRICTS_DIR
+    if not d.is_dir():
+        return frozenset()
+    return frozenset(x.name for x in d.iterdir() if (x / "index.html").is_file())
+
+
+def district_href(rec: dict, name: str) -> str | None:
+    """The hub for this district, or None where the district has no hub.
+
+    A district under the threshold keeps its panel and simply has nowhere to
+    link — the panel states the standing either way, and only the name stops
+    being a link.
+    """
+    city_slug = rec["path"].strip("/").split("/")[0]
+    slug = district_slug(name)
+    return (f"/{city_slug}/{DISTRICTS_DIR}/{slug}/"
+            if slug in _district_hubs(city_slug) else None)
+
+
+def district_link(rec: dict, name: str, text: str) -> str:
+    """`text` as a link to the district's hub, or as plain text without one."""
+    href = district_href(rec, name)
+    return f'<a href="{esca(href)}">{esc(text)}</a>' if href else esc(text)
+
+
 def district_panel_html(rec: dict, indent: str) -> str:
     d = district_record(rec)
     if not d:
@@ -1838,7 +1875,7 @@ def district_panel_html(rec: dict, indent: str) -> str:
     out = [f'{indent}<section class="panel panel-district">',
            f'{indent}  <p class="district-kind">'
            f'{esc(district_eyebrow(d, kind))}</p>',
-           f'{indent}  <h3>{esc(name)}</h3>']
+           f'{indent}  <h3>{district_link(rec, d["name"], name)}</h3>']
     # The survey records a literal "N/A" for districts it never dated. A
     # dateline reading "Significant N/A" is worse than no dateline.
     pos = (d.get("period_of_significance") or "").strip()
@@ -1858,8 +1895,75 @@ def district_panel_html(rec: dict, indent: str) -> str:
     # note until the layout has an answer for them.
     for other in rec.get("also_in_districts", []):
         out.append(f'{indent}  <p class="district-also">Also within '
-                   f'{esc(other["name"])}</p>')
+                   f'{district_link(rec, other["name"], other["name"])}</p>')
     out.append(f'{indent}</section>')
+    return "\n".join(out) + "\n"
+
+
+# --------------------------------------------------------------------------
+# Nearby
+# --------------------------------------------------------------------------
+# `render_html` is a pure function of one page's `data.json`, so it cannot know
+# what stands next door. `scripts/build_link_index.py` works that out for the
+# whole city ahead of time and this reads it back — the same arrangement the
+# homepage map has with `shared/addresses.geojson`.
+#
+# The index carries paths and titles and deliberately no hooks, so a page's
+# HTML changes when a page is added or removed nearby and not every time a
+# neighbor's prose is edited. See that script's docstring for the rest.
+NEARBY_INDEX = ROOT / "shared" / "nearby.json"
+
+# The relationship in the reader's terms. This is the context a hook would have
+# supplied, and the reason the index doesn't have to carry one.
+NEARBY_LABEL = {"street": "Same street",
+                "block": "Same block",
+                "corner": "Around the corner"}
+
+
+@functools.lru_cache(maxsize=1)
+def _nearby_index() -> dict:
+    """page path -> ((href, title, relationship), ...), read once per process.
+
+    A missing or unreadable index is not an error: the page renders without a
+    Nearby block rather than failing. That is what lets a page seeded before
+    `build_link_index.py` next runs still render — it simply has no neighbors
+    to show until the index catches up with it.
+    """
+    try:
+        raw = json.loads(NEARBY_INDEX.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    paths, titles = raw["paths"], raw["titles"]
+    return {path: tuple((paths[j], titles[j], cls) for j, cls in near)
+            for path, near in zip(paths, raw["near"]) if near}
+
+
+def nearby_html(rec: dict, indent: str) -> str:
+    """The lateral links: the places a reader standing here could walk to.
+
+    Ordered as the index stores them — up and down the street first, then the
+    rest of the block, then around the corner — which is widening circles from
+    the doorstep rather than a ranking.
+
+    Note what this markup is not: an `<a>` followed by `<br>` and a
+    `span.hook`. That pairing is what `validate.hub_html_items` reads a hub's
+    generated list back out of, and `check_hub_sync` then requires the same
+    item in the hub's `index.md`. The check skips address directories, so this
+    block would be safe either way; staying off the pattern means it cannot
+    break that check even if the markup is later reused on a hub.
+    """
+    entries = _nearby_index().get(rec["path"])
+    if not entries:
+        return ""
+    out = [f'{indent}<section class="nearby">',
+           f'{indent}  <div class="section-head"><span class="ic ic-pin"></span>'
+           f'<h2>Nearby</h2></div>',
+           f'{indent}  <ul class="place-list">']
+    for href, title, cls in entries:
+        out.append(f'{indent}    <li><a href="{esca(href)}">{esc(title)}</a>\n'
+                   f'{indent}      <span class="pill pill-muted">'
+                   f'{esc(NEARBY_LABEL.get(cls, cls))}</span></li>')
+    out += [f'{indent}  </ul>', f'{indent}</section>']
     return "\n".join(out) + "\n"
 
 
@@ -1956,6 +2060,70 @@ def sources_html(rec: dict) -> str:
     return "\n".join(items)
 
 
+# --------------------------------------------------------------------------
+# Structured data
+# --------------------------------------------------------------------------
+# The site's whole shape is a containment hierarchy — city, neighborhood,
+# street, building — and until these blocks landed none of it was declared. A
+# `BreadcrumbList` is what puts the trail, rather than a bare URL, under a
+# result for a page four levels deep, and it states the same values the
+# breadcrumb `<nav>` already renders, in the form a crawler reads.
+#
+# `validate.check_html` permits any number of `application/ld+json` tags and
+# rejects only other scripts, so a page may carry several of these.
+def ld_block(obj, indent: str = "  ") -> str:
+    """One `<script type="application/ld+json">`, indented into the page."""
+    return (f'{indent}<script type="application/ld+json">\n'
+            + indent_block(json.dumps(obj, indent=2, ensure_ascii=False), indent)
+            + f'\n{indent}</script>')
+
+
+def breadcrumb_ld(crumbs: list) -> dict:
+    """`[(name, href or None), ...]` from the top down, current page last.
+
+    The current page carries no `item`: it is where the reader already is, and
+    schema.org treats the final crumb's URL as optional for exactly that
+    reason. Every crumb above it is absolute, because the consumer is a
+    crawler that may have the page out of its directory context.
+    """
+    items = []
+    for i, (name, href) in enumerate(crumbs):
+        item = {"@type": "ListItem", "position": i + 1, "name": name}
+        if href:
+            item["item"] = f"{SITE}{href}"
+        items.append(item)
+    return {"@context": "https://schema.org", "@type": "BreadcrumbList",
+            "itemListElement": items}
+
+
+def collection_ld(path: str, name: str, desc: str, items: list) -> dict:
+    """A hub, as the collection it is: `CollectionPage` wrapping an `ItemList`.
+
+    `items` is `[(name, href), ...]` in the order the page lists them, and the
+    positions are that order — a hub's list is sorted (by number up a street,
+    by street across a neighborhood), so the sequence is information rather
+    than an accident of the walk. Only URLs go in the list: the hook beside
+    each entry is this page's own summary of another page, and repeating it
+    here would be the same sentence in a second place.
+    """
+    return {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "url": f"{SITE}{path}",
+        "name": name,
+        "description": desc,
+        "mainEntity": {
+            "@type": "ItemList",
+            "numberOfItems": len(items),
+            "itemListOrder": "https://schema.org/ItemListOrderAscending",
+            "itemListElement": [
+                {"@type": "ListItem", "position": i + 1, "name": label,
+                 "url": f"{SITE}{href}"}
+                for i, (label, href) in enumerate(items)],
+        },
+    }
+
+
 def render_html(rec: dict) -> str:
     title = page_title(rec)
     desc = meta_description(rec)
@@ -2011,6 +2179,12 @@ def render_html(rec: dict) -> str:
         "geo": {"@type": "GeoCoordinates", "latitude": lat, "longitude": lng},
         "description": desc,
     }
+    crumbs_ld = breadcrumb_ld([
+        (city_name, f"/{city_slug}/"),
+        (area_name, f"/{city_slug}/{area_slug}/"),
+        (street_name, f"/{city_slug}/{area_slug}/{street_slug_}/"),
+        (crumb_number, None),
+    ])
 
     return f"""<!doctype html>
 <html lang="en">
@@ -2023,9 +2197,8 @@ def render_html(rec: dict) -> str:
 {ICON_LINKS}
   <link rel="stylesheet" href="/shared/site.css">
   <script type="module" src="/shared/site.js"></script>
-  <script type="application/ld+json">
-{indent_block(json.dumps(ld, indent=2, ensure_ascii=False), "  ")}
-  </script>
+{ld_block(ld)}
+{ld_block(crumbs_ld)}
 </head>
 <body>
 <header class="site-header">
@@ -2070,7 +2243,7 @@ def render_html(rec: dict) -> str:
 
 {lead_html}{stats_html(rec)}
 {body}
-{unknowns_html(rec)}</main>
+{nearby_html(rec, "  ")}{unknowns_html(rec)}</main>
 
 <footer class="site-footer">
   <section class="sources">
@@ -2528,6 +2701,12 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
 {ICON_LINKS}
   <link rel="stylesheet" href="/shared/site.css">
   <script type="module" src="/shared/site.js"></script>
+{ld_block(breadcrumb_ld([(city_name, f"/{ctx['city']}/"),
+                         (area_name, f"/{ctx['city']}/{ctx['area']}/"),
+                         (disp, None)]))}
+{ld_block(collection_ld(path, disp, desc,
+                        [(title, f"{path}{href}/")
+                         for _n, href, title, _hook in entries]))}
 </head>
 <body>
 <header class="site-header">
@@ -2664,8 +2843,39 @@ def write_neighborhood_hub(area_dir: Path, ctx: dict) -> int:
             lambda m: m.group(1) + block + m.group(3), text, flags=re.S)
         if not n:
             raise SystemExit(f"{html_path}: no '{NEIGHBORHOOD_SECTION}' list to replace")
-        html_path.write_text(new, encoding="utf-8")
+        html_path.write_text(neighborhood_ld(new, area_dir, streets),
+                             encoding="utf-8")
     return len(streets)
+
+
+# Everything from the shared enhancement script to the end of the head. A
+# neighborhood hub is otherwise a human's prose that this file only patches, so
+# its structured data is rewritten wholesale in the one region no hand-written
+# content occupies — replacing the region rather than inserting into it is what
+# makes a second `hubs` run leave the page alone.
+HUB_HEAD_LD = re.compile(
+    r'(<script type="module" src="/shared/site\.js"></script>)'
+    r'.*?(\n</head>)', re.S)
+
+
+def neighborhood_ld(text: str, area_dir: Path, streets: list) -> str:
+    """Put the hub's `BreadcrumbList` and `ItemList` in its `<head>`."""
+    city_slug, area_slug = area_dir.parent.name, area_dir.name
+    path = f"/{city_slug}/{area_slug}/"
+    city_name = " ".join(w.capitalize() for w in city_slug.split("-"))
+    disp = area_display(path)
+    m = re.search(r'<meta name="description" content="([^"]*)"', text)
+    desc = html.unescape(m.group(1)) if m else disp
+    blocks = "\n".join(ld_block(obj) for obj in (
+        breadcrumb_ld([(city_name, f"/{city_slug}/"), (disp, None)]),
+        collection_ld(path, disp, desc,
+                      [(street_disp, f"{path}{slug}/")
+                       for slug, street_disp, _n, _hook in streets])))
+    out, n = HUB_HEAD_LD.subn(lambda m: f"{m.group(1)}\n{blocks}{m.group(2)}", text)
+    if not n:
+        raise SystemExit(f"{area_dir / 'index.html'}: no <head> to put "
+                         f"structured data in")
+    return out
 
 
 # --------------------------------------------------------------------------
@@ -2872,7 +3082,7 @@ def district_hook(d: dict, n_pages: int, n_streets: int) -> str:
 
 
 def hub_shell(path: str, title: str, desc: str, crumbs: str, main_html: str,
-              sources: str, feedback_title: str) -> str:
+              sources: str, feedback_title: str, ld: list = None) -> str:
     """The shared page chrome for the two historic-district page types.
 
     The skeleton in shared/AGENTS.md, written once because these two writers
@@ -2880,6 +3090,7 @@ def hub_shell(path: str, title: str, desc: str, crumbs: str, main_html: str,
     keep their own copy — routing them through here would re-render every hub
     on the site for no change a reader could see.
     """
+    ld_blocks = "".join("\n" + ld_block(obj) for obj in ld or ())
     sources_block = ""
     if sources:
         sources_block = ('  <section class="sources">\n    <h2>Sources</h2>\n'
@@ -2894,7 +3105,7 @@ def hub_shell(path: str, title: str, desc: str, crumbs: str, main_html: str,
   <link rel="canonical" href="{SITE}{path}">
 {ICON_LINKS}
   <link rel="stylesheet" href="/shared/site.css">
-  <script type="module" src="/shared/site.js"></script>
+  <script type="module" src="/shared/site.js"></script>{ld_blocks}
 </head>
 <body>
 <header class="site-header">
@@ -3111,7 +3322,16 @@ def write_district_hub(dist_dir: Path, name: str, members: list) -> bool:
               f'    <span aria-current="page">{esc(short)}</span>')
     (dist_dir / "index.html").write_text(
         hub_shell(path, f"{name}, San Francisco", desc, crumbs, main_html,
-                  district_sources_html(name, members), name),
+                  district_sources_html(name, members), name,
+                  ld=[breadcrumb_ld([
+                          ("San Francisco", "/san-francisco/"),
+                          (DISTRICTS_TITLE, f"/san-francisco/{DISTRICTS_DIR}/"),
+                          (short, None)]),
+                      # The buildings, not the streets: the streets list above
+                      # them is a way into the same set, and declaring both
+                      # would state one collection twice.
+                      collection_ld(path, name, desc,
+                                    [(m["title"], m["path"]) for m in members])]),
         encoding="utf-8")
     return True
 
@@ -3174,7 +3394,13 @@ def write_districts_index(index_dir: Path, listed: list, held_back: int) -> bool
     (index_dir / "index.html").write_text(
         hub_shell(f"/san-francisco/{DISTRICTS_DIR}/",
                   f"{DISTRICTS_TITLE}, San Francisco", desc, crumbs, main_html,
-                  "", f"{DISTRICTS_TITLE}, San Francisco"),
+                  "", f"{DISTRICTS_TITLE}, San Francisco",
+                  ld=[breadcrumb_ld([("San Francisco", "/san-francisco/"),
+                                     (DISTRICTS_TITLE, None)]),
+                      collection_ld(f"/san-francisco/{DISTRICTS_DIR}/",
+                                    DISTRICTS_TITLE, desc,
+                                    [(label, f"/san-francisco/{DISTRICTS_DIR}/{href}")
+                                     for href, label, _hook in items])]),
         encoding="utf-8")
     return True
 
@@ -3341,6 +3567,30 @@ def cmd_seed(args) -> int:
 # write into a directory that has a page, and `render` refuses to invent one
 # where there is no `data.json`.
 # --------------------------------------------------------------------------
+RENDER_BACKLOG_PATH = ROOT / "scripts" / "render-backlog.txt"
+
+
+def load_render_backlog() -> set:
+    """The page directories `scripts/render-backlog.txt` grandfathers.
+
+    That file lists pages whose committed `index.html` predates the parity
+    check and is not what the renderer produces — hand-written prose, mostly,
+    including the site's only address-to-address links written before there
+    was an index to generate them from. `validate.py` reads it to excuse those
+    pages from parity; `cmd_render` reads it to refuse to overwrite them,
+    which is the half that was missing. Rendering one is how the drift gets
+    destroyed rather than resolved, so it takes `--include-backlogged` and a
+    person who has looked at the diff (issue #147's sweep).
+
+    Returns paths relative to the repo root, as the file stores them.
+    """
+    if not RENDER_BACKLOG_PATH.exists():
+        return set()
+    return {ln.strip()
+            for ln in RENDER_BACKLOG_PATH.read_text(encoding="utf-8").splitlines()
+            if ln.strip() and not ln.lstrip().startswith("#")}
+
+
 def renders(rec: dict) -> bool:
     """Whether this page's `index.html` is generated from its `data.json`.
 
@@ -3392,9 +3642,14 @@ def cmd_render(args) -> int:
         print(f"no address pages under {', '.join(args.path)}", file=sys.stderr)
         return 1
 
+    backlog = set() if args.include_backlogged else load_render_backlog()
     rewritten, current, opted_out, failed = 0, 0, 0, 0
+    held_back = []
     for page_dir in dirs:
         rel = page_dir.relative_to(ROOT).as_posix()
+        if rel in backlog:
+            held_back.append(rel)
+            continue
         try:
             rec = json.loads((page_dir / "data.json").read_text(encoding="utf-8"))
         except json.JSONDecodeError as e:
@@ -3425,7 +3680,17 @@ def cmd_render(args) -> int:
     verb = "would rewrite" if args.dry_run else "rewrote"
     print(f"{len(dirs)} page(s): {verb} {rewritten}, left {current} already "
           f"current, skipped {opted_out} opted out of rendering"
+          + (f", held back {len(held_back)} backlogged" if held_back else "")
           + (f", FAILED on {failed}" if failed else ""))
+    if held_back:
+        print(f"{len(held_back)} page(s) held back — scripts/render-backlog.txt "
+              f"grandfathers HTML the renderer cannot reproduce, and rendering "
+              f"one overwrites prose no data.json holds. Read the diff first, "
+              f"then re-run with --include-backlogged:")
+        for rel in held_back[:10]:
+            print(f"  {rel}")
+        if len(held_back) > 10:
+            print(f"  … and {len(held_back) - 10} more")
     if opted_out:
         print(f'{opted_out} page(s) carry "rendered": false and no longer track '
               f"site-wide design changes")
@@ -3707,6 +3972,10 @@ def main() -> int:
                         "every address page beneath it is re-rendered")
     p.add_argument("--dry-run", action="store_true",
                    help="list the pages that would change without writing them")
+    p.add_argument("--include-backlogged", action="store_true",
+                   help="also render the pages scripts/render-backlog.txt "
+                        "grandfathers, overwriting hand-written HTML the "
+                        "renderer cannot reproduce (issue #147's sweep)")
     p.set_defaults(fn=cmd_render)
 
     p = sub.add_parser("names", help="list permit descriptions that may name a person or firm")
