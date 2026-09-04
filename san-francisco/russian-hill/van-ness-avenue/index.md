@@ -16,7 +16,6 @@ The parcels on Van Ness Avenue documented here so far, from the city's address, 
 - [2100](2100/) — A 1919 store building, with reroofing permitted in 2025.
 - [2101–2107](2101/) — A 1910 office building, with a seismic retrofit permitted in 1997.
 - [2240](2240/) — A 1923 4-unit apartment building, with reroofing permitted in 2005.
-- [2420–2424](2420/) — A 1914 hotel, with a seismic retrofit permitted in 2018.
 - [2750](2750/) — A 1977 bank building, with plumbing work permitted in 2009.
 
 Pages are generated from the DataSF datasets listed in each page's
