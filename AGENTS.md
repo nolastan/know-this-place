@@ -498,6 +498,18 @@ pattern, and always include `address` and non-empty `sources`:
 }
 ```
 
+**A `sources` entry's `id` is the registered source id, optionally with a
+per-item suffix.** `research/SOURCES.md` owns the ids and they are permanent;
+where one source has many separately citable items, the page cites
+`<registered-id>-<item>` and puts the item's own title in `name` —
+`digitalsf-46970` for one catalogue record, `argonaut-vol31-no2-winter2021-montesano`
+for one article, `corbett-heights-neighbors-apr` for one newsletter issue. 1,742
+pages use the digitalsf form. **It is a convention, not a bug**: a run that
+"corrects" these to the bare id breaks the link between a footer line and the
+thing it cites, and `check.py --overlap` already reads the prefix to tell a
+source's own entries from another's. The bare registered id is right when the
+page cites the source once.
+
 **`permits` is what the page shows; `permit_summary` says what exists.** For an
 ordinary building they are the same thing and there is no summary. A downtown
 office tower is not ordinary: DBI holds 3,102 permits for 1 Market Street, one
