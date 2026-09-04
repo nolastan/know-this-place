@@ -142,17 +142,17 @@
     date the article argues for and record the slip in the finding rather
     than on the page.
 - **Coverage so far:** the archive holds 50 issues and **all 50 have been
-  read**, November 2023 to September 2026, in five passes: the August and
+  read**, November 2023 to September 2026, in five passes — 197 findings, 151 resolved, 115 published on 65 distinct pages: the August and
   September 2026 issues (`vol-viii-no-8`, `vol-viii-no-9`, 34 findings, 20
   resolved, 16 published on 7 pages); the ten issues of June 2025 to January
   2026 (`archive-page-2`, 22 findings, 19 resolved, 9 published on 7 pages);
   the ten of January to May 2025 (`archive-page-3`, 36 findings, 32 resolved,
   31 published on 26 pages); the eight of February to July 2026 that the
   page-based batching had skipped (`issues-2026-02-to-2026-07`, 56 findings, 43
-  resolved, 27 published on 20 pages, 16 declined as already carried by pages
+  resolved, 27 published on 15 distinct pages, 16 declined as already carried by pages
   an unrecorded pass had written from the same issues); and the twenty of
   November 2023 to December 2024 (`issues-2023-11-to-2024-12`, 49 findings, 37
-  resolved, 32 published on 25 pages). **Nothing remains to read** until the
+  resolved, 32 published on 15 distinct pages). **Nothing remains to read** until the
   association publishes another issue; the archive gains roughly one a month.
 
 - **Verified:** 2026-09-03 (twenty issues read in full, January 2025 through
