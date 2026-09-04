@@ -378,7 +378,8 @@ rather than just accumulate.
   for flat 105. The roll knew all along: `property_location` ends in the unit
   designation, `AV0105`, where a whole parcel ends in `0000`. `resolve_eas.py`
   now reads that suffix and declines. **Twenty-nine published pages are still
-  one flat rather than a building** — see the issue for the cleanup.
+  one flat rather than a building**, and whether those buildings can have a page
+  at all is a directory-contract question for a person: #228.
 
 - **An archive that paginates by recency has no stable batch unit.** The
   Corbett Heights Neighbors newsletter shows ten or eleven issues to a page,
