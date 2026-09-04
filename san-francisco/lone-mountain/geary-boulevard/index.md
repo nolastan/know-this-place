@@ -9,6 +9,7 @@ The parcels on Geary Boulevard documented here so far, from the city's address, 
 - [2761](2761/) — A 1999 store building, with electrical work permitted in 2000.
 - [3040](3040/) — A 1925 store building, with a seismic retrofit permitted in 2001.
 - [3245](3245/) — A 1947 store building, with reroofing permitted in 2001.
+- [3300–3304](3300/) — A 1909 3-unit building with a ground-floor store, with fire repair permitted in 2019.
 - [3355](3355/) — A 1952 store building, with reroofing permitted in 1994.
 - [3400–3420](3400/) — A 1915 office building in the Jordan Park Historic District, with reroofing permitted in 2002.
 - [3401](3401/) — A 1900 3-unit building with a ground-floor store, with a bathroom remodel permitted in 2017.
