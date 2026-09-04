@@ -376,3 +376,15 @@ ktp-figure { position: relative; }
 .place-list { list-style: none; padding: 0; }
 .place-list li { padding: 0.5rem 0; border-bottom: 1px solid var(--rule); }
 .place-list .hook { color: var(--muted); font-size: 0.95rem; }
+
+/* ============================================================= nearby */
+/* The lateral links out of an address page, built from shared/nearby.json.
+   Chrome rather than content: it sits between the building's own material and
+   the "not yet documented" note, so it reads quieter than a hub's list — two
+   columns of bare addresses, each with the relationship on a muted pill, and
+   none of the hook lines a hub carries. */
+.nearby { margin: 2rem 0; max-width: var(--wide); }
+.nearby .place-list { columns: 2; column-gap: 2.5rem; }
+.nearby .place-list li { display: flex; align-items: baseline; justify-content: space-between; gap: 0.75rem; break-inside: avoid; }
+.nearby .pill { flex: 0 0 auto; }
+@media (max-width: 720px) { .nearby .place-list { columns: 1; } }

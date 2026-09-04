@@ -94,7 +94,8 @@ UPPERCASE = from this page's `data.json` / `shared/site-config.json`.
   <link rel="manifest" href="/shared/site.webmanifest">
   <link rel="stylesheet" href="/shared/site.css">
   <script type="module" src="/shared/site.js"></script>   <!-- enhancement layer -->
-  <script type="application/ld+json"> { … "@type":"Place" … } </script>  <!-- see below -->
+  <script type="application/ld+json"> { … "@type":"Place" … } </script>          <!-- see below -->
+  <script type="application/ld+json"> { … "@type":"BreadcrumbList" … } </script>  <!-- see below -->
 </head>
 <body>
 <header class="site-header">
@@ -107,7 +108,15 @@ UPPERCASE = from this page's `data.json` / `shared/site-config.json`.
 </html>
 ```
 
-JSON-LD (`Place` with `PostalAddress` + `GeoCoordinates`), the `<footer>`
+Every page declares its structured data. An address page carries two blocks:
+`Place` (with `PostalAddress` + `GeoCoordinates`) and a `BreadcrumbList`
+restating the crumbs the breadcrumb `<nav>` already shows — that is what puts
+a trail rather than a bare URL under a search result for a page four levels
+down. Hub pages carry a `BreadcrumbList` and a `CollectionPage` wrapping an
+`ItemList` of what they list. `validate.py` permits any number of
+`application/ld+json` tags and rejects every other script.
+
+The JSON-LD, the `<footer>`
 sources/feedback/colophon, and the **FEEDBACK_URL** are identical on every page
 — `render_html` writes them from `data.json` and `shared/site-config.json`, so
 there is nothing to copy. `validate.py` enforces canonical, description,
@@ -139,7 +148,8 @@ stat band and timeline. A workable default spine:
    `.section-head`, the `.vtl` follows it directly: **no `.prose` between
    them.**
 6. Prose sections (`.section-head` + `.prose`) only where there's a real story.
-7. `.unknowns` — what's missing, feeding the feedback link.
+7. `.nearby` — the lateral links, written by the renderer, never by hand.
+8. `.unknowns` — what's missing, feeding the feedback link.
 
 ---
 
@@ -479,6 +489,25 @@ into the feedback link:
   <p>Not yet documented: the architect and builder, the early residents.
   <a href="FEEDBACK_URL">Submit an update</a></p>
 </div>
+```
+
+### Nearby — `.nearby`
+The lateral links out of an address page: the documented buildings up and down
+the street, on the same assessor block, and around the corner. **Generated,
+never hand-written** — `render_html` builds it from `shared/nearby.json`, which
+`scripts/build_link_index.py` derives from the whole tree, so a page's own
+`data.json` has no say in it. Two columns on a wide viewport, one on a narrow
+one; the relationship rides on a `.pill.pill-muted` at the right of each row,
+and there are no `.hook` lines — a hub's list summarises its children, this one
+only points.
+```html
+<section class="nearby">
+  <div class="section-head"><span class="ic ic-pin"></span><h2>Nearby</h2></div>
+  <ul class="place-list">
+    <li><a href="/san-francisco/mission/bryant-street/2262/">2262 Bryant Street</a>
+      <span class="pill pill-muted">Same block</span></li>
+  </ul>
+</section>
 ```
 
 ### Icons — `.ic .ic-NAME`

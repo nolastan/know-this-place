@@ -180,6 +180,13 @@ asserts that every page's `index.html` is exactly what the renderer produces,
 so a hand edit to the HTML fails CI rather than quietly becoming a second
 source of truth.
 
+It is safe on a wider path in the other sense too: `render` holds back every
+page listed in `scripts/render-backlog.txt` and names the ones it skipped.
+Those are pages whose committed HTML predates the parity check and is not what
+the renderer produces — hand-written prose, mostly — so rendering one destroys
+the drift instead of resolving it. Overwriting them is the render sweep's job
+and takes `--include-backlogged` plus a person who has read the diff.
+
 A page whose HTML genuinely has to be maintained by hand sets `"rendered":
 false` in its `data.json`; `render` then skips it and `validate.py` skips its
 parity check. **Treat that as close to never.** An opted-out page stops picking
