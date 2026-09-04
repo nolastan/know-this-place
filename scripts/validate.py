@@ -512,15 +512,37 @@ def main() -> int:
             err(ROOT / icon, "site icon missing — every page links to it")
 
     # Every page should be reachable through the sitemap once one exists.
+    # sitemap.xml is an index now, so the URLs live one level down, in the
+    # per-neighborhood children it points at; a page missing from all of them
+    # is a page Google is never told about.
     sitemap = ROOT / "sitemap.xml"
     if sitemap.exists():
-        sitemap_text = sitemap.read_text(encoding="utf-8")
+        index_text = sitemap.read_text(encoding="utf-8")
+        children = [ROOT / rel.lstrip("/") for rel in
+                    re.findall(rf"<loc>{re.escape(SITE)}(/\S+?\.xml)</loc>", index_text)]
+        listed = set()
+        for child in children:
+            if not child.exists():
+                err(child, "listed in sitemap.xml but missing — "
+                           "run scripts/build_sitemap.py")
+                continue
+            listed |= set(re.findall(rf"<loc>{re.escape(SITE)}(\S*?)</loc>",
+                                     child.read_text(encoding="utf-8")))
         for html_path in html_pages:
             rel_dir = "/" + html_path.parent.relative_to(ROOT).as_posix() + "/"
             if html_path.parent == ROOT:
                 rel_dir = "/"
-            if f"<loc>{SITE}{rel_dir}</loc>" not in sitemap_text:
-                err(html_path, "not in sitemap.xml — run scripts/build_sitemap.py")
+            if rel_dir not in listed:
+                err(html_path, "not in the sitemap — run scripts/build_sitemap.py")
+        # And nothing in the sitemap that has stopped existing: a submitted
+        # URL that 404s is a crawl error Search Console reports against the
+        # sitemap it came from, which is the report this split exists to make
+        # readable. One error, not one per URL — the fix is the same command.
+        gone = sorted(u for u in listed
+                      if u != "/" and not (ROOT / u.strip("/") / "index.html").exists())
+        if gone:
+            err(sitemap, f"{len(gone)} sitemap URL(s) no longer exist, starting "
+                         f"{gone[0]} — run scripts/build_sitemap.py")
 
     # And every address should be a dot on the homepage map. Same contract as
     # the sitemap: the index is derived, so a new page just means re-running

@@ -1848,23 +1848,35 @@ def _district_hubs(city_slug: str) -> frozenset:
     return frozenset(x.name for x in d.iterdir() if (x / "index.html").is_file())
 
 
-def district_href(rec: dict, name: str) -> str | None:
+def district_hub_href(city_slug: str, name: str) -> str | None:
     """The hub for this district, or None where the district has no hub.
 
     A district under the threshold keeps its panel and simply has nowhere to
     link — the panel states the standing either way, and only the name stops
     being a link.
+
+    Takes the city slug rather than a record so hub pages, which have no
+    `data.json` of their own, can resolve the same link an address page does.
     """
-    city_slug = rec["path"].strip("/").split("/")[0]
     slug = district_slug(name)
     return (f"/{city_slug}/{DISTRICTS_DIR}/{slug}/"
             if slug in _district_hubs(city_slug) else None)
 
 
-def district_link(rec: dict, name: str, text: str) -> str:
+def district_href(rec: dict, name: str) -> str | None:
+    """`district_hub_href` for the city this page sits in."""
+    return district_hub_href(rec["path"].strip("/").split("/")[0], name)
+
+
+def district_hub_link(city_slug: str, name: str, text: str) -> str:
     """`text` as a link to the district's hub, or as plain text without one."""
-    href = district_href(rec, name)
+    href = district_hub_href(city_slug, name)
     return f'<a href="{esca(href)}">{esc(text)}</a>' if href else esc(text)
+
+
+def district_link(rec: dict, name: str, text: str) -> str:
+    """`district_hub_link` for the city this page sits in."""
+    return district_hub_link(rec["path"].strip("/").split("/")[0], name, text)
 
 
 def district_panel_html(rec: dict, indent: str) -> str:
@@ -2577,12 +2589,126 @@ def hook_for(rec: dict, with_district: bool = True) -> str:
     return f"{head}."
 
 
+# --------------------------------------------------------------------------
+# Nearby streets
+# --------------------------------------------------------------------------
+# The street-hub counterpart to `nearby_html`. Address pages get their lateral
+# links from `shared/nearby.json` because `render_html` sees one `data.json`
+# and nothing else; a street hub is already built from the whole directory
+# beneath it, and its neighbors are one level up, so this reads the
+# neighborhood off the tree instead of needing a committed index.
+NEARBY_STREET_MAX = 6
+
+
+@functools.lru_cache(maxsize=8)
+def _street_geometry(area_dir: str) -> dict:
+    """slug -> (display, count, (lat, lng) centroid, ((lat, lng), ...)).
+
+    One pass over a neighborhood, cached, because `write_street_hub` is called
+    once per street and every call wants the same answer. Streets with no
+    documented building, and buildings with no coordinates, are left out —
+    a street that contributes nothing to the geometry can't be ranked against
+    and can't be ranked.
+    """
+    out = {}
+    for street_dir in sorted(Path(area_dir).iterdir()):
+        if not street_dir.is_dir():
+            continue
+        recs = []
+        for d in sorted(street_dir.iterdir(), key=lambda x: num_key(x.name)):
+            f = d / "data.json"
+            if d.is_dir() and f.exists():
+                recs.append(json.loads(f.read_text(encoding="utf-8")))
+        if not recs:
+            continue
+        pts = tuple((c["lat"], c["lng"]) for c in
+                    (r.get("coordinates") or {} for r in recs)
+                    if c.get("lat") is not None and c.get("lng") is not None)
+        if not pts:
+            continue
+        # The display name comes off an address on the street, not off the
+        # slug — the same choice `write_street_hub` makes for its own <h1>, so
+        # a link's text matches the page it lands on.
+        disp = page_title(recs[0]).split(" ", 1)[1]
+        centroid = (sum(p[0] for p in pts) / len(pts),
+                    sum(p[1] for p in pts) / len(pts))
+        out[street_dir.name] = (disp, len(recs), centroid, pts)
+    return out
+
+
+@functools.lru_cache(maxsize=8)
+def _nearby_streets(area_dir: str) -> dict:
+    """slug -> ((slug, display, count), ...), nearest first, capped.
+
+    Distance between two streets is the shorter of "how far is A's centre from
+    the nearest building on B" and the same measured the other way. Centre to
+    centre would be cheaper but reads badly on a long street: Mission Street's
+    centroid sits in the middle of the neighborhood, so a centre-to-centre
+    ranking would hide it from every street near the edges that it in fact
+    runs straight past. Taking the nearer of the two measurements keeps the
+    *distance* symmetric while letting a long street be near everything it
+    actually passes; the cap is still one-sided, so a street on a crowded
+    corner can appear on a quiet street's list without returning the favour.
+
+    Cost is streets x buildings per neighborhood, about 1.2M distance
+    calculations for the whole city, all of it inside one cached pass.
+    """
+    geom = _street_geometry(area_dir)
+    slugs = sorted(geom)
+    reach = {}  # (a, b) -> distance from a's centroid to b's nearest building
+    for a in slugs:
+        lat, lng = geom[a][2]
+        for b in slugs:
+            if b != a:
+                reach[(a, b)] = min(_metres(lat, lng, y, x) for y, x in geom[b][3])
+    out = {}
+    for a in slugs:
+        ranked = sorted(((min(reach[(a, b)], reach[(b, a)]), b) for b in slugs
+                         if b != a))[:NEARBY_STREET_MAX]
+        if ranked:
+            out[a] = tuple((b, geom[b][0], geom[b][1]) for _d, b in ranked)
+    return out
+
+
+def nearby_streets_html(street_dir: Path, ctx: dict, indent: str) -> str:
+    """The streets a reader standing on this one could walk to.
+
+    Deliberately not the `<a>…</a><br><span class="hook">` pairing:
+    `validate.hub_html_items` reads a hub's generated list back out of exactly
+    that markup and `check_hub_sync` then demands the same item in the hub's
+    `index.md`. Street hubs *are* hub-synced, so a nearby list written that way
+    would either fail the check or force generated content into the file that
+    exists to hold a person's prose. Staying off the pattern keeps `index.md`
+    for prose — the same choice `nearby_html` makes on address pages.
+    """
+    entries = _nearby_streets(str(street_dir.parent)).get(street_dir.name)
+    if not entries:
+        return ""
+    out = [f'{indent}<section class="nearby">',
+           f'{indent}  <div class="section-head"><span class="ic ic-pin"></span>'
+           f'<h2>Nearby streets</h2></div>',
+           f'{indent}  <ul class="place-list">']
+    for slug, disp, count in entries:
+        out.append(
+            f'{indent}    <li><a href="/{ctx["city"]}/{ctx["area"]}/{slug}/">'
+            f'{esc(disp)}</a>\n{indent}      <span class="pill pill-muted">'
+            f'{count:,} {"building" if count == 1 else "buildings"}'
+            f'</span></li>')
+    out += [f'{indent}  </ul>', f'{indent}</section>']
+    return "\n".join(out) + "\n"
+
+
 def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
     """Rebuild a street's index.md + index.html from the pages beneath it.
 
     Returns False (and leaves both files untouched) if the existing index.md
     has hand-written sections the generator doesn't know how to preserve —
     see `street_hub_extra_sections`.
+
+    The "Nearby streets" list is a fact about the whole neighborhood, so
+    rebuilding one street hub after seeding leaves its neighbors' lists a page
+    behind — `hubs` over the neighborhood is what brings them level, the same
+    way `build_link_index.py` catches `shared/nearby.json` up to new pages.
     """
     extra = street_hub_extra_sections(street_dir)
     if extra:
@@ -2670,7 +2796,8 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
     if districts:
         rows = "\n".join(
             f'          <div class="spec"><span class="ic ic-permit"></span>'
-            f'<span class="spec-k">{esc(name)}</span>'
+            f'<span class="spec-k">'
+            f'{district_hub_link(ctx["city"], name, name)}</span>'
             f'<span class="spec-v">{count:,}</span></div>'
             for name, count in districts.most_common())
         aside += (f'      <section class="panel">\n'
@@ -2689,6 +2816,7 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
     if aside:
         cols_open = '  <div class="cols">\n    <div class="main">\n'
         cols_close = f'    </div>\n\n    <aside class="aside">\n{aside}    </aside>\n  </div>\n'
+    nearby = nearby_streets_html(street_dir, ctx, "  ")
 
     html_out = f"""<!doctype html>
 <html lang="en">
@@ -2730,7 +2858,7 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
       <ul class="place-list">
 {list_html}
       </ul>
-{cols_close}</main>
+{cols_close}{nearby}</main>
 
 <footer class="site-footer">
   <p class="feedback-cta">

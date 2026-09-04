@@ -100,7 +100,7 @@ jobs:
 
             You are on branch ${{ steps.branch.outputs.branch }}, already
             checked out. ${{ steps.branch.outputs.pr && format('It belongs to OPEN PR #{0}, left by an earlier run — its cursors, queue files and items files are the ones you are continuing, and pushing to this branch updates that PR rather than opening a second one.', steps.branch.outputs.pr) || 'No news PR was open, so this branch is new off main and you will open the PR at the end.' }}
-            ${{ steps.branch.outputs.merge_conflict && 'NOTE: merging main into this branch conflicted and was aborted. Resolve it yourself before committing — `git merge origin/main`, fix the conflicts, and say so in the PR. Generated files (sitemap.xml, shared/addresses.geojson, hub index.html/index.md) are rebuilt, never hand-merged: take main side and re-run the build scripts.' || '' }}
+            ${{ steps.branch.outputs.merge_conflict && 'NOTE: merging main into this branch conflicted and was aborted. Resolve it yourself before committing — `git merge origin/main`, fix the conflicts, and say so in the PR. Generated files (sitemap.xml, sitemaps/, shared/addresses.geojson, hub index.html/index.md) are rebuilt, never hand-merged: take main side and re-run the build scripts.' || '' }}
 
             The poll has already run and written today's queue to
             news/queue/<date>.json, advancing the cursors. Your job is the
