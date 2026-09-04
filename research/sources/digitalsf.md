@@ -689,6 +689,33 @@ records carry one; exactly one of those also carries a street number.
   `citation_of()` does this, and refuses a record that names neither rather
   than citing "the archive".
 
+- **Verified:** 2026-09-04 (correction pass over SFP 162 and a redaction pass
+  over the whole source; no new material read. Closed #247 and #248, both of
+  which turned out to be several times the size they were filed at.
+
+  **#247 said five recovered building names; re-running the extractor over SFP
+  162 and diffing on `citation.url` showed 93**, 44 of them on published pages,
+  because every caption-prefix and name-filter fix landed since the collection
+  was read had gone unapplied to it. 42 timeline rows on 38 pages went from
+  "Photographed." to naming the building. Two of the 93 were not names at all —
+  "Large house", "Residencial building" — and `GENERIC_QUALIFIER` now catches
+  them; measured over every name in every findings file, that rule flips 2 of
+  1,001. The re-run also **drops** 15 SFP 162 entries, and 13 of those are the
+  people filter working on "ARTISTIC HOMES OF CALIFORNIA — Residence of Mr. W.
+  MAYO NEWHALL, No. 1206 Post Street".
+
+  **#248 said four leaked names in the tail; the honorific rule finds 53 spans
+  across the source and 49 are people** — 30 in SFP 162, including a named
+  resident at their own street number in a published finding. One name was
+  outside `raw.text` altogether, in `address_as_written` and `citation.label`,
+  and taking it out made that finding resolvable for the first time: the Glen
+  Park Nickelodeon, 1926, is now on 2784 Diamond Street.
+
+  What both have in common is the lesson: **when a name rule changes, re-run
+  the affected batches and diff, rather than patching the records the issue
+  happens to list** — and diff on `citation.url`, because the finding id is
+  positional and moves.)
+
 - **Verified:** 2026-09-04 (read, resolved and published **the tail — 36
   collections in one batch**, everything in the archive that holds an addressed
   record except the three blocked on #217. 7,261 catalogue records → 188
