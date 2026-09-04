@@ -1,0 +1,118 @@
+# Historic districts
+
+The historic districts San Francisco's surveys have drawn, and the buildings documented inside each one. A district page lists every building here that stands within it, and the streets it runs through.
+
+## Districts documented so far
+
+- [16th and Valencia Streets Post-Fire Historic District](16th-and-valencia-streets-post-fire/) — Eligible for the California and National Registers, significant 1906–1926; 54 buildings documented on 5 streets.
+- [19th and Noe Historic District](19th-and-noe/) — Eligible for the California Register, significant 1905–1906; 11 buildings documented on one street.
+- [23rd Street Shops and Rowhouses Historic District](23rd-street-shops-and-rowhouses/) — Eligible for the California Register, significant 1873–1895; 21 buildings documented on 2 streets.
+- [Alabama Street Pioneers Historic District](alabama-street-pioneers/) — Eligible for the California Register, significant 1865–1884; 18 buildings documented on 2 streets.
+- [Alamo Square Historic District](alamo-square/) — An Article 10 city landmark district, significant 1890–1915; 22 buildings documented on 7 streets.
+- [Alert Alley Early Residential Historic District](alert-alley-early-residential/) — Eligible for the California Register, significant 1890–1910; 18 buildings documented on 4 streets.
+- [Alphonso Harrington 42nd Avenue Historic District](alphonso-harrington-42nd-avenue/) — Eligible for the California Register, significant 1910–1913; 15 buildings documented on one street.
+- [Ashbury Heights Historic District](ashbury-heights/) — Eligible for the California Register, significant 1890–1912; 5 buildings documented on 2 streets.
+- [Baker Street Historic District](baker-street/) — Eligible for the California Register, significant 1926–1940; 10 buildings documented on 2 streets.
+- [Bluxome Townsend Historic District](bluxome-townsend/) — Eligible for the California and National Registers, significant 1912–1936; 8 buildings documented on 3 streets.
+- [Buena Vista North Historic District](buena-vista-north/) — Eligible for the California Register, significant 1870–1915; 21 buildings documented on 7 streets.
+- [Capp and Howard Streets Mid-Block Fire Line Historic District](capp-and-howard-streets-mid-block-fire-line/) — Eligible for the California and National Registers, significant 1865–1909; 5 buildings documented on 2 streets.
+- [Castro & Liberty Streets Historic District](castro-and-liberty-streets/) — Eligible for the California Register, significant 1897–1906; 47 buildings documented on 3 streets.
+- [Chinatown Historic District](chinatown/) — Eligible for the California and National Registers, significant 1906–1930/1938; 233 buildings documented on 28 streets.
+- [Chula-Abbey Early Residential District](chula-abbey/) — An Article 10 city landmark district, significant 1865–1912; 38 buildings documented on 5 streets.
+- [Chula-Dolores-17th Fire Survivors and Reconstruction Historic District](chula-dolores-17th-fire-survivors-and-reconstruction/) — Eligible for the California Register, significant 1865–1880; 1907–1912; 39 buildings documented on 5 streets.
+- [Civic Center Historic District](civic-center/) — An Article 10 city landmark district, significant 1913–1951; 24 buildings documented on 10 streets.
+- [Clyde and Crooks Historic District](clyde-and-crooks/) — An Article 10 city landmark district, significant 1906–1935; 18 buildings documented on 6 streets.
+- [Cole Valley Historic District](cole-valley/) — Eligible for the California Register, significant 1900–1915; 14 buildings documented on 5 streets.
+- [Commercial-Leidesdorff Conservation District](commercial-leidesdorff/) — An Article 11 conservation district; 15 buildings documented on 6 streets.
+- [Cow Hollow First Bay Tradition Historic District](cow-hollow-first-bay-tradition/) — Eligible for the California Register, significant 1888–1914; 39 buildings documented on 9 streets.
+- [Diamond Heights Historic District](diamond-heights/) — Eligible for the California Register, significant 1962–1965; 22 buildings documented on 5 streets.
+- [Dogpatch Historic District](dogpatch/) — An Article 10 city landmark district, significant 1867–1945; 68 buildings documented on 6 streets.
+- [Duboce Park Historic District](duboce-park/) — An Article 10 city landmark district, significant 1896–1913; 11 buildings documented on 4 streets.
+- [Duboce Triangle Historic District](duboce-triangle/) — Eligible for the California Register, significant ca 1870–ca 1920; 167 buildings documented on 9 streets.
+- [Duboce Triangle Historic District Extension](duboce-triangle-extension/) — Eligible for the California Register; 178 buildings documented on 8 streets.
+- [East Mission Florida-to-Hampshire Streets Historic District](east-mission-florida-to-hampshire-streets/) — Eligible for the California Register, significant 1885–1908; 89 buildings documented on 5 streets.
+- [Elgin Park-Pearl Street Reconstruction Historic District](elgin-park-pearl-street-reconstruction/) — Eligible for the California Register, significant 1906–1913; 34 buildings documented on 4 streets.
+- [Eureka Valley Commercial & Castro Village LGBTQ+ Historic District](eureka-valley-commercial-and-castro-village-lgbtq/) — Eligible for the California Register, significant 1879–1932; 1963–1980; 71 buildings documented on 4 streets.
+- [Fair Oaks Street Historic District](fair-oaks-street/) — Eligible for the California Register, significant 1870s–1910s; 49 buildings documented on 4 streets.
+- [Forest Hill Historic District](forest-hill/) — Eligible for the California Register, significant 1912–1939; 20 buildings documented on 11 streets.
+- [Front-California Conservation District](front-california/) — An Article 11 conservation district; 10 buildings documented on 4 streets.
+- [Gardner Dailey/Telegraph Hill Historic District](gardner-dailey-telegraph-hill/) — Eligible for the California Register, significant 1936–1959; 5 buildings documented on 3 streets.
+- [Glen Park Center Historic District](glen-park-center/) — Eligible for the California Register, significant 1897–1929; 7 buildings documented on 2 streets.
+- [Gottlieb Knopf Block Historic District](gottlieb-knopf-block/) — Eligible for the California Register, significant 1889–1892, 1920–1940; 35 buildings documented on 4 streets.
+- [Guerrero Street Fire Line Historic District](guerrero-street-fire-line/) — Eligible for the California and National Registers, significant 1870–1906; 12 buildings documented on 3 streets.
+- [Haight Ashbury Counterculture Historic District](haight-ashbury-counterculture/) — Eligible for the California Register, significant 1966–1975; 19 buildings documented on 4 streets.
+- [Hampshire Street False-Front Historic District](hampshire-street-false-front/) — Eligible for the California Register, significant 1885–1895; 14 buildings documented on one street.
+- [Hartford Street Historic District](hartford-street/) — Eligible for the California Register, significant 1900–1902; 24 buildings documented on 3 streets.
+- [Hayes Valley Commercial Historic District](hayes-valley-commercial/) — Eligible for the California Register, significant ca 1855–1929; 15 buildings documented on 4 streets.
+- [Hayes Valley Residential Historic District](hayes-valley-residential/) — Listed on the California Register, significant 1860–1920; 250 buildings documented on 26 streets.
+- [Hidalgo Terrace Historic District](hidalgo-terrace/) — Eligible for the California Register, significant 1914–1930; 14 buildings documented on 2 streets.
+- [Horner's Addition East Historic District](horner-s-addition-east/) — Eligible for the California and National Registers, significant 1865–1905; 74 buildings documented on 6 streets.
+- [India Basin Scow Schooner Boatyard Vernacular Cultural Landscape](india-basin-scow-schooner-boatyard-vernacular-cultural-landscape/) — Eligible for the California Register, significant 1875–1936; 5 buildings documented on 3 streets.
+- [Ingleside Terrace Historic District](ingleside-terrace/) — Eligible for the California Register, significant 1910–1930; 54 buildings documented on 13 streets.
+- [Inner Mission Boulevards and Alleys Reconstruction Historic District](inner-mission-boulevards-and-alleys-reconstruction/) — Eligible for the California Register, significant 1906–1917; 141 buildings documented on 10 streets.
+- [Jackson Square Historic District](jackson-square/) — An Article 10 city landmark district, significant 1850–1911; 45 buildings documented on 10 streets.
+- [Jackson Square Historic District Extension](jackson-square-extension/) — Eligible for the California and National Registers, significant 1865–1920; 22 buildings documented on 6 streets.
+- [Japantown Community & Cultural Historic District](japantown-community-and-cultural/) — Eligible for the California and National Registers, significant 1906–1960; 16 buildings documented on 6 streets.
+- [Jessie-McCoppin-Stevenson Streets Reconstruction Historic District](jessie-mccoppin-stevenson-streets-reconstruction/) — Eligible for the California Register, significant 1906–1912; 17 buildings documented on 3 streets.
+- [Jordan Park Historic District](jordan-park/) — Eligible for the California Register, significant 1900–1920; 19 buildings documented on 5 streets.
+- [Juri Street Historic District](juri-street/) — Eligible for the California Register, significant 1890–1895; 8 buildings documented on 2 streets.
+- [Kearny-Belden Conservation District](kearny-belden/) — An Article 11 conservation district; 6 buildings documented on 3 streets.
+- [Kearny-Market-Mason-Sutter Conservation District](kearny-market-mason-sutter/) — An Article 11 conservation district; 194 buildings documented on 24 streets.
+- [Lexington and San Carlos Streets Reconstruction Historic District](lexington-and-san-carlos-streets-reconstruction/) — Eligible for the California Register, significant 1906–1915; 44 buildings documented on 4 streets.
+- [Liberty Hill Historic District](liberty-hill/) — An Article 10 city landmark district, significant 1860s–1906; 252 buildings documented on 9 streets.
+- [Liberty Street Historic District](liberty-street/) — Listed on the California and National Registers, significant 1867–1911; 40 buildings documented on 2 streets.
+- [Lower Nob Hill Apartment Hotel Historic District](lower-nob-hill-apartment-hotel/) — Listed on the California and National Registers, significant 1906–1940; 183 buildings documented on 20 streets.
+- [Marina Corporation Residential Historic District](marina-corporation-residential/) — Eligible for the California Register, significant 1922–1939; 33 buildings documented on 11 streets.
+- [Marina Historic District](marina/) — Eligible for the California Register, significant 1930–1940; 11 buildings documented on 5 streets.
+- [Market Street Masonry Historic District](market-street-masonry/) — An Article 10 city landmark district, significant 1911–1925; 8 buildings documented on 4 streets.
+- [Market Street Theatre and Loft Historic District](market-street-theatre-and-loft/) — Listed on the California and National Registers, significant 1889–1930; 22 buildings documented on 6 streets.
+- [Mediterranean Revival Tracts Historic District](mediterranean-revival-tracts/) — Eligible for the California and National Registers, significant 1927–1938; 8 buildings documented on 4 streets.
+- [Midcentury Recreation Historic District (Discontiguous)](midcentury-recreation-discontiguous/) — Eligible for the California Register, significant 1947–1961; 10 buildings documented on 10 streets.
+- [Mint-Mission Conservation District](mint-mission/) — An Article 11 conservation district; 19 buildings documented on 6 streets.
+- [Mission Miracle Mile 19th to 20th Streets Historic District](mission-miracle-mile-19th-to-20th-streets/) — Eligible for the California Register, significant 1906–1927; 1925–1960; 8 buildings documented on one street.
+- [Mission Miracle Mile at 17th Street Historic District](mission-miracle-mile-at-17th-street/) — Eligible for the California Register, significant 1906–1924; 1925–1960; 18 buildings documented on 2 streets.
+- [NOPA Historic District](nopa/) — Eligible for the California Register, significant 1870s–1910s; 20 buildings documented on 10 streets.
+- [New Montgomery-Mission-Second Street Conservation District](new-montgomery-mission-second-street/) — An Article 11 conservation district, significant 1906–1929; 70 buildings documented on 12 streets.
+- [Northeast Waterfront Historic District](northeast-waterfront/) — An Article 10 city landmark district, significant [Unofficial] 1848–1960s; 15 buildings documented on 7 streets.
+- [Olsen's Queen Anne Cottages Historic District](olsen-s-queen-anne-cottages/) — Eligible for the California Register, significant 1893; 7 buildings documented on one street.
+- [Pacific Heights Historic District](pacific-heights/) — Eligible for the California Register, significant 1895–1930; 88 buildings documented on 12 streets.
+- [Panhandle Historic District](panhandle/) — Eligible for the California Register, significant 1870–1915; 26 buildings documented on 8 streets.
+- [Picturesque Period Revival Tracts Historic District](picturesque-period-revival-tracts/) — Eligible for the California and National Registers, significant 1931–1938; 86 buildings documented on 8 streets.
+- [Pine-Sansome Conservation District](pine-sansome/) — An Article 11 conservation district; 7 buildings documented on 2 streets.
+- [Powell Street Shops Historic District](powell-street-shops/) — Eligible for the California Register, significant 1906–1924; 7 buildings documented on 2 streets.
+- [Presidio Heights Historic District](presidio-heights/) — Eligible for the California Register, significant 1890–1930; 61 buildings documented on 9 streets.
+- [Presidio Terrace Historic District](presidio-terrace/) — Eligible for the California Register, significant 1905–1915; 12 buildings documented on 2 streets.
+- [Ramona Street Historic District](ramona-street/) — Eligible for the California and National Registers, significant 1911–1923; 26 buildings documented on 3 streets.
+- [Raycliff Terrace Historic District](raycliff-terrace/) — Eligible for the California Register, significant 1941–1951; 5 buildings documented on 2 streets.
+- [Russian Hill-Vallejo Street Crest Historic District](russian-hill-vallejo-street-crest/) — Listed on the California and National Registers, significant 1888–1941; 7 buildings documented on 6 streets.
+- [San Francisco 1952 Firehouse Bond Act Thematic District (Discontiguous)](san-francisco-1952-firehouse-bond-act-thematic-district-discontiguous/) — Eligible for the California Register, significant 1952–1961; 10 buildings documented on 10 streets.
+- [San Francisco Civic Center National Historic Landmark District](san-francisco-civic-center-national-historic-landmark-district/) — Listed on the California and National Registers, significant 1913–1951 (I believe this is the POS for the NHL; the NR listing has a POS of 1800–1974, an unusually long range that the CLI attributes to different standards for identfying POS's at the time of the NR nomination (1978)); 5 buildings documented on 4 streets.
+- [San Francisco Neighborhood Movie Theater Historic District (Discontiguous)](san-francisco-neighborhood-movie-theater-discontiguous/) — Eligible for the California and National Registers, significant 1906–1945; 15 buildings documented on 12 streets.
+- [Sea Cliff Historic District](sea-cliff/) — Eligible for the California Register, significant 1913–1935; 29 buildings documented on 8 streets.
+- [Second and Howard Streets Historic District](second-and-howard-streets/) — Listed on the California and National Registers, significant 1906–1912; 22 buildings documented on 4 streets.
+- [Shotwell Street Historic District](shotwell-street/) — Eligible for the California and National Registers, significant 1865–1905; 148 buildings documented on 10 streets.
+- [Showplace Square Heavy Timber and Steel-frame Brick Warehouse and Factory Historic District](showplace-square-heavy-timber-and-steel-frame-brick-warehouse-and-factory/) — Eligible for the California Register, significant 1893–1929; 13 buildings documented on 8 streets.
+- [Sixth Street Lodging House Historic District](sixth-street-lodging-house/) — Eligible for the California and National Registers, significant 1870–1947; 30 buildings documented on 3 streets.
+- [SoMa LGBTQ Historic District](soma-lgbtq/) — Eligible for the California Register, significant ca.1950s–ca.1990s; 56 buildings documented on 25 streets.
+- [South End Historic District](south-end/) — An Article 10 city landmark district, significant 1867–1935; 36 buildings documented on 12 streets.
+- [South End Historic District Addition](south-end-addition/) — Eligible for the California and National Registers, significant 1906–1935; 17 buildings documented on 6 streets.
+- [South Mission Avenues and Alleys Historic District](south-mission-avenues-and-alleys/) — Eligible for the California Register, significant 1885–1914; 88 buildings documented on 8 streets.
+- [South Park Historic District](south-park/) — Eligible for the California and National Registers, significant 1854–1935; 32 buildings documented on one street.
+- [South Van Ness Avenue-Shotwell-Folsom Streets Historic District](south-van-ness-avenue-shotwell-folsom-streets/) — Eligible for the California and National Registers, significant 1870–1906; 21 buildings documented on 4 streets.
+- [St. Francis Wood Historic District](st-francis-wood/) — Listed on the California and National Registers, significant 1912–1954; 20 buildings documented on 14 streets.
+- [Sycamore Street Reconstruction Historic District](sycamore-street-reconstruction/) — Eligible for the California Register, significant 1906–1917; 16 buildings documented on 4 streets.
+- [Telegraph Hill Historic District](telegraph-hill/) — An Article 10 city landmark district; 13 buildings documented on 7 streets.
+- [Third Street Industrial District](third-street/) — Eligible for the California Register, significant 1900–1948 / 1872–1958; 5 buildings documented on one street.
+- [Upper Fillmore Neighborhood Commercial Historic District](upper-fillmore-neighborhood-commercial/) — Eligible for the California Register, significant 1865–1905; 1906–1929; 14 buildings documented on 2 streets.
+- [Upper Grant Avenue Historic District](upper-grant-avenue/) — Eligible for the California Register, significant 1906–1925; 111 buildings documented on 11 streets.
+- [Upper Market Street Commercial Historic District](upper-market-street-commercial/) — Eligible for the California Register, significant 1886–1958; 1970–1979; 29 buildings documented on 3 streets.
+- [Upper Market Street Commercial Historic District Extension](upper-market-street-commercial-extension/) — Eligible for the California Register, significant 1886–1958; 1970–1979; 14 buildings documented on one street.
+- [Uptown Tenderloin Historic District](uptown-tenderloin/) — Listed on the California and National Registers, significant 1906–1957; 225 buildings documented on 17 streets.
+- [Vicente Street Historic District](vicente-street/) — Eligible for the California Register, significant 1931; 9 buildings documented on one street.
+- [Von Schroeder-Welsh Block Historic District](von-schroeder-welsh-block/) — Eligible for the California Register, significant 1889–1895; 25 buildings documented on 2 streets.
+- [Washington Square Historic District](washington-square/) — Eligible for the California Register, significant 1906–1939; 16 buildings documented on 7 streets.
+- [West Portal Park Historic District](west-portal-park/) — Eligible for the California Register, significant 1916–1928 / 1917–1929; 5 buildings documented on one street.
+- [Western SOMA Light Industrial and Residential Historic District](western-soma-light-industrial-and-residential/) — Eligible for the California and National Registers, significant 1906–1936; 224 buildings documented on 35 streets.
+- [Woodward St. Romeo Flats Reconstruction Historic District](woodward-st-romeo-flats-reconstruction/) — Eligible for the California Register, significant 1906–1912; 24 buildings documented on 3 streets.
+
+47 further districts named on the pages here hold fewer than 5 documented buildings, and have no page yet.

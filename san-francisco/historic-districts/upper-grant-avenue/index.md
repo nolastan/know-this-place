@@ -1,0 +1,135 @@
+# Upper Grant Avenue Historic District
+
+The buildings documented here so far inside the Upper Grant Avenue Historic District, and the streets it runs through.
+
+## Streets
+
+- [Bannan Place](/san-francisco/north-beach/bannan-place/) — 4 documented buildings inside the district.
+- [Bob Kaufman Alley](/san-francisco/north-beach/bob-kaufman-alley/) — 2 documented buildings inside the district.
+- [Filbert Street](/san-francisco/north-beach/filbert-street/) — 8 documented buildings inside the district.
+- [Grant Avenue](/san-francisco/north-beach/grant-avenue/) — 38 documented buildings inside the district.
+- [Green Street](/san-francisco/north-beach/green-street/) — 9 documented buildings inside the district.
+- [Jasper Place](/san-francisco/north-beach/jasper-place/) — 18 documented buildings inside the district.
+- [Medau Place](/san-francisco/north-beach/medau-place/) — 1 documented building inside the district.
+- [Nobles Alley](/san-francisco/north-beach/nobles-alley/) — 2 documented buildings inside the district.
+- [Union Street](/san-francisco/north-beach/union-street/) — 14 documented buildings inside the district.
+- [Vallejo Street](/san-francisco/north-beach/vallejo-street/) — 2 documented buildings inside the district.
+- [Varennes Street](/san-francisco/north-beach/varennes-street/) — 13 documented buildings inside the district.
+
+## Buildings
+
+- [15 Bannan Place](/san-francisco/north-beach/bannan-place/15/) — A 1909 two-flat, with one permit record from 1986.
+- [19–29 Bannan Place](/san-francisco/north-beach/bannan-place/19/) — A 1908 6-unit apartment building.
+- [31 Bannan Place](/san-francisco/north-beach/bannan-place/31/) — A 1906 three-flat, with reroofing permitted in 1993.
+- [37–41 Bannan Place](/san-francisco/north-beach/bannan-place/37/) — A 1907 three-flat, with a kitchen and bathroom remodel permitted in 2023.
+- [10–22 Bob Kaufman Alley](/san-francisco/north-beach/bob-kaufman-alley/10/) — A 1907 5-unit apartment building.
+- [28–38 Bob Kaufman Alley](/san-francisco/north-beach/bob-kaufman-alley/28/) — A 1915 6-unit apartment building, with a seismic retrofit permitted in 2015.
+- [443–445 Filbert Street](/san-francisco/north-beach/filbert-street/443/) — A 1907 two-flat, with foundation work permitted in 2010.
+- [449–455 Filbert Street](/san-francisco/north-beach/filbert-street/449/) — A 1906 6-unit apartment building, with a seismic retrofit permitted in 2018.
+- [501–505 Filbert Street](/san-francisco/north-beach/filbert-street/501/) — A 1925 garage, with reroofing permitted in 2019.
+- [519–521 Filbert Street](/san-francisco/north-beach/filbert-street/519/) — A 1907 two-flat, with reroofing permitted in 2021.
+- [525–535 Filbert Street](/san-francisco/north-beach/filbert-street/525/) — A 1908 6-unit apartment building, with garage work permitted in 2012.
+- [537–547 Filbert Street](/san-francisco/north-beach/filbert-street/537/) — A 1912 5-unit apartment building, with reroofing permitted in 2003.
+- [551–555 Filbert Street](/san-francisco/north-beach/filbert-street/551/) — A 1910 4-unit tic building, with garage work permitted in 2008.
+- [552–556 Filbert Street](/san-francisco/north-beach/filbert-street/552/) — A 1923 5-unit building, with a kitchen and bathroom remodel permitted in 2013.
+- [1224 Grant Avenue](/san-francisco/north-beach/grant-avenue/1224/) — A 1907 2-unit building with a ground-floor store, with reroofing permitted in 2003.
+- [1226–1230 Grant Avenue](/san-francisco/north-beach/grant-avenue/1226/) — A 1907 hotel, with a seismic retrofit permitted in 2018.
+- [1232 Grant Avenue](/san-francisco/north-beach/grant-avenue/1232/) — A 1900 hotel, with fire repair permitted in 1994.
+- [1234–1268 Grant Avenue](/san-francisco/north-beach/grant-avenue/1234/) — A 1906 store building, with an addition permitted in 1987.
+- [1300–1326 Grant Avenue](/san-francisco/north-beach/grant-avenue/1300/) — A 1907 14-unit building with a ground-floor store, with reroofing permitted in 2007.
+- [1317–1321 Grant Avenue](/san-francisco/north-beach/grant-avenue/1317/) — A 1908 3-unit building with a ground-floor store, with reroofing permitted in 2007.
+- [1327–1329 Grant Avenue](/san-francisco/north-beach/grant-avenue/1327/) — A 1907 hotel, with a seismic retrofit permitted in 2017.
+- [1331–1335 Grant Avenue](/san-francisco/north-beach/grant-avenue/1331/) — A 1907 5-unit building with a ground-floor store, with facade work permitted in 2019.
+- [1336–1348 Grant Avenue](/san-francisco/north-beach/grant-avenue/1336/) — A 1907 12-unit building with a ground-floor store, with a seismic retrofit permitted in 2017.
+- [1337–1339 Grant Avenue](/san-francisco/north-beach/grant-avenue/1337/) — A 1912 store building, with reroofing permitted in 1994.
+- [1345–1361 Grant Avenue](/san-francisco/north-beach/grant-avenue/1345/) — A 1907 11-unit apartment building, with a seismic retrofit permitted in 2016.
+- [1350–1398 Grant Avenue](/san-francisco/north-beach/grant-avenue/1350/) — A 1907 12-unit building with a ground-floor store, with a seismic retrofit permitted in 2022.
+- [1363–1371 Grant Avenue](/san-francisco/north-beach/grant-avenue/1363/) — A 1906 8-unit building with a ground-floor store, with a bathroom remodel permitted in 2023.
+- [1400–1424 Grant Avenue](/san-francisco/north-beach/grant-avenue/1400/) — A 1907 44-unit apartment building, with a kitchen and bathroom remodel permitted in 1988.
+- [1401–1411 Grant Avenue](/san-francisco/north-beach/grant-avenue/1401/) — A 1906 6-unit building with a ground-floor store, with plumbing work permitted in 2022.
+- [1415–1417 Grant Avenue](/san-francisco/north-beach/grant-avenue/1415/) — A 1910 3-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 1997.
+- [1427–1431 Grant Avenue](/san-francisco/north-beach/grant-avenue/1427/) — A 1907 3-unit building with a ground-floor store, with reroofing permitted in 2024.
+- [1434–1438 Grant Avenue](/san-francisco/north-beach/grant-avenue/1434/) — A 1913 11-unit apartment building, with reroofing permitted in 1984.
+- [1435–1449 Grant Avenue](/san-francisco/north-beach/grant-avenue/1435/) — A 1907 2-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2004.
+- [1441–1443 Grant Avenue](/san-francisco/north-beach/grant-avenue/1441/) — A 1915 3-unit building with a ground-floor store, with a kitchen remodel permitted in 2005.
+- [1445–1451 Grant Avenue](/san-francisco/north-beach/grant-avenue/1445/) — A 1913 5-unit building with a ground-floor store, with permit records from 1982 to 2020.
+- [1450–1462 Grant Avenue](/san-francisco/north-beach/grant-avenue/1450/) — A 1909 5-unit apartment building, with window replacement permitted in 2005.
+- [1453–1459 Grant Avenue](/san-francisco/north-beach/grant-avenue/1453/) — A 1907 6-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2022.
+- [1461–1465 Grant Avenue](/san-francisco/north-beach/grant-avenue/1461/) — A 1906 4-unit building with a ground-floor store, with window replacement permitted in 2003.
+- [1499 Grant Avenue](/san-francisco/north-beach/grant-avenue/1499/) — A 1906 8-unit apartment building, with a seismic retrofit permitted in 2018.
+- [1500 Grant Avenue](/san-francisco/north-beach/grant-avenue/1500/) — A 1907 three-flat, with reroofing permitted in 2009.
+- [1501–1503 Grant Avenue](/san-francisco/north-beach/grant-avenue/1501/) — A 1917 store building, with a seismic retrofit permitted in 2001.
+- [1508–1512 Grant Avenue](/san-francisco/north-beach/grant-avenue/1508/) — A 1912 6-unit building with a ground-floor store, with plumbing work permitted in 2011.
+- [1519–1523 Grant Avenue](/san-francisco/north-beach/grant-avenue/1519/) — A 1912 3-unit building with a ground-floor store, with reroofing permitted in 2005.
+- [1525–1529 Grant Avenue](/san-francisco/north-beach/grant-avenue/1525/) — A 1911 hotel, with a seismic retrofit permitted in 2020.
+- [1528–1532 Grant Avenue](/san-francisco/north-beach/grant-avenue/1528/) — A 1904 three-flat, with window replacement permitted in 2003.
+- [1534–1538 Grant Avenue](/san-francisco/north-beach/grant-avenue/1534/) — A 1906 three-flat, with stair work permitted in 1987.
+- [1539–1545 Grant Avenue](/san-francisco/north-beach/grant-avenue/1539/) — A 1906 6-unit apartment building, with a seismic retrofit permitted in 2021.
+- [1544 Grant Avenue](/san-francisco/north-beach/grant-avenue/1544/) — A 1906 store building, with a kitchen remodel permitted in 2008.
+- [1546–1550 Grant Avenue](/san-francisco/north-beach/grant-avenue/1546/) — A 1905 5-unit apartment building, with a bathroom remodel permitted in 2007.
+- [1552–1556 Grant Avenue](/san-francisco/north-beach/grant-avenue/1552/) — A 1907 three-flat, with stair work permitted in 2020.
+- [1558–1562 Grant Avenue](/san-francisco/north-beach/grant-avenue/1558/) — A 1904 5-unit building with a ground-floor store, with one permit record from 1982.
+- [1615–1633 Grant Avenue](/san-francisco/north-beach/grant-avenue/1615/) — A 1908 16-unit apartment building, with deck work permitted in 2015.
+- [450 Green Street](/san-francisco/north-beach/green-street/450/) — A 1907 4-unit apartment building, with an accessory dwelling unit permitted in 2025.
+- [510–512 Green Street](/san-francisco/north-beach/green-street/510/) — A 1910 3-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2009.
+- [516–524 Green Street](/san-francisco/north-beach/green-street/516/) — A 1907 6-unit building with a ground-floor store, with a kitchen remodel permitted in 2022.
+- [517–523 Green Street](/san-francisco/north-beach/green-street/517/) — A 1907 hotel, with a kitchen remodel permitted in 1991.
+- [526–528 Green Street](/san-francisco/north-beach/green-street/526/) — A 1908 5-unit building with a ground-floor store, with fire repair permitted in 2003.
+- [535–555 Green Street](/san-francisco/north-beach/green-street/535/) — A 1948 store building, with permit records from 1991 to 2019.
+- [538–542 Green Street](/san-francisco/north-beach/green-street/538/) — A 1913 3-unit building with a ground-floor store, with a seismic retrofit permitted in 2015.
+- [544–548 Green Street](/san-francisco/north-beach/green-street/544/) — A 1907 7-unit apartment building, with reroofing permitted in 2012.
+- [545 Green Street](/san-francisco/north-beach/green-street/545/) — A 1908 6-unit apartment building, with one permit record from 2020.
+- [19–23 Jasper Place](/san-francisco/north-beach/jasper-place/19/) — A 1909 three-flat, with a bathroom remodel permitted in 2017.
+- [24–46 Jasper Place](/san-francisco/north-beach/jasper-place/24/) — A 1906 9-unit apartment building, with a seismic retrofit permitted in 2017.
+- [25–29 Jasper Place](/san-francisco/north-beach/jasper-place/25/) — A 1908 three-flat, with a kitchen and bathroom remodel permitted in 2013.
+- [31–35 Jasper Place](/san-francisco/north-beach/jasper-place/31/) — A 1911 three-flat.
+- [36–40 Jasper Place](/san-francisco/north-beach/jasper-place/36/) — A 1913 three-flat, with reroofing permitted in 1997.
+- [37–41 Jasper Place](/san-francisco/north-beach/jasper-place/37/) — A 1911 three-flat, with reroofing permitted in 1995.
+- [42–44 Jasper Place](/san-francisco/north-beach/jasper-place/42/) — A 1900 3-unit apartment building, with an addition permitted in 2020.
+- [43–47 Jasper Place](/san-francisco/north-beach/jasper-place/43/) — A 1910 three-flat, with foundation work permitted in 2019.
+- [49–53 Jasper Place](/san-francisco/north-beach/jasper-place/49/) — A 1908 three-flat, with a bathroom remodel permitted in 2023.
+- [114–120 Jasper Place](/san-francisco/north-beach/jasper-place/114/) — A 1907 6-unit apartment building, with a seismic retrofit permitted in 2018.
+- [122–132 Jasper Place](/san-francisco/north-beach/jasper-place/122/) — A 1911 6-unit apartment building, with an addition permitted in 2025.
+- [127–129 Jasper Place](/san-francisco/north-beach/jasper-place/127/) — A 1907 two-flat, with deck work permitted in 2003.
+- [131–137 Jasper Place](/san-francisco/north-beach/jasper-place/131/) — A 1907 4-unit apartment building, with stair work permitted in 2022.
+- [134–136 Jasper Place](/san-francisco/north-beach/jasper-place/134/) — A 1911 two-flat, with one permit record from 2008.
+- [139–145 Jasper Place](/san-francisco/north-beach/jasper-place/139/) — A 1907 4-unit apartment building, with a kitchen remodel permitted in 2019.
+- [140–148 Jasper Place](/san-francisco/north-beach/jasper-place/140/) — A 1911 two-flat, with a vertical addition permitted in 2014.
+- [149–153 Jasper Place](/san-francisco/north-beach/jasper-place/149/) — A 1907 6-unit apartment building, with a seismic retrofit permitted in 2017.
+- [152–162 Jasper Place](/san-francisco/north-beach/jasper-place/152/) — A 1907 6-unit apartment building, with foundation work permitted in 2017.
+- [51–61 Medau Place](/san-francisco/north-beach/medau-place/51/) — A 1909 18-unit apartment building, with a seismic retrofit permitted in 2016.
+- [2 Nobles Alley](/san-francisco/north-beach/nobles-alley/2/) — A 1906 single-family house, with a kitchen and bathroom remodel permitted in 2009.
+- [15 Nobles Alley](/san-francisco/north-beach/nobles-alley/15/) — A 1900 6-unit apartment building, with a kitchen and bathroom remodel permitted in 2018.
+- [442 Union Street](/san-francisco/north-beach/union-street/442/) — A 1907 5-unit apartment building, with a seismic retrofit permitted in 2016.
+- [453–463 Union Street](/san-francisco/north-beach/union-street/453/) — A 1910 7-unit apartment building, with a seismic retrofit permitted in 2017.
+- [465–467 Union Street](/san-francisco/north-beach/union-street/465/) — A 1913 5-unit apartment building, with reroofing permitted in 1993.
+- [469–475 Union Street](/san-francisco/north-beach/union-street/469/) — A 1913 5-unit apartment building, with a seismic retrofit permitted in 2015.
+- [478–482 Union Street](/san-francisco/north-beach/union-street/478/) — A 1923 5-unit building with a ground-floor store, with a kitchen remodel permitted in 2020.
+- [524 Union Street](/san-francisco/north-beach/union-street/524/) — A 1908 store building, with deck work permitted in 2017.
+- [539–543 Union Street](/san-francisco/north-beach/union-street/539/) — A 1909 6-unit apartment building, with reroofing permitted in 1999.
+- [544–548 Union Street](/san-francisco/north-beach/union-street/544/) — A 1909 3-unit building with a ground-floor store, with reroofing permitted in 2002.
+- [547–551 Union Street](/san-francisco/north-beach/union-street/547/) — A 1908 three-flat, with a kitchen and bathroom remodel permitted in 2018.
+- [550–556 Union Street](/san-francisco/north-beach/union-street/550/) — A 1916 6-unit apartment building, with dry-rot repair permitted in 2014.
+- [555–559 Union Street](/san-francisco/north-beach/union-street/555/) — A 1908 5-unit apartment building, with a seismic retrofit permitted in 2019.
+- [558–562 Union Street](/san-francisco/north-beach/union-street/558/) — A 1916 6-unit apartment building, with window replacement permitted in 2005.
+- [561–565 Union Street](/san-francisco/north-beach/union-street/561/) — A 1914 4-unit apartment building, with a kitchen remodel permitted in 2025.
+- [567–577 Union Street](/san-francisco/north-beach/union-street/567/) — A 1910 6-unit apartment building, with a kitchen and bathroom remodel permitted in 2008.
+- [601–609 Vallejo Street](/san-francisco/north-beach/vallejo-street/601/) — A 1908 hotel, with window replacement permitted in 2017.
+- [610 Vallejo Street](/san-francisco/north-beach/vallejo-street/610/) — A 1908 church, with a seismic retrofit permitted in 2006.
+- [7 Varennes Street](/san-francisco/north-beach/varennes-street/7/) — A 1908 6-unit apartment building.
+- [20–24 Varennes Street](/san-francisco/north-beach/varennes-street/20/) — A 1914 three-flat.
+- [23–25 Varennes Street](/san-francisco/north-beach/varennes-street/23/) — A 1906 three-flat, with reroofing permitted in 2008.
+- [26–30 Varennes Street](/san-francisco/north-beach/varennes-street/26/) — A 1907 three-flat, with dry-rot repair permitted in 1988.
+- [32–40 Varennes Street](/san-francisco/north-beach/varennes-street/32/) — A 1906 6-unit tic building, with garage work permitted in 2008.
+- [37 Varennes Street](/san-francisco/north-beach/varennes-street/37/) — A 1908 three-flat.
+- [42–44 Varennes Street](/san-francisco/north-beach/varennes-street/42/) — A 1907 three-flat, with a kitchen remodel permitted in 2018.
+- [46–50 Varennes Street](/san-francisco/north-beach/varennes-street/46/) — A 1906 three-flat, with stair work permitted in 2005.
+- [49–59 Varennes Street](/san-francisco/north-beach/varennes-street/49/) — A 1906 three-flat, with reroofing permitted in 2007.
+- [120–124 Varennes Street](/san-francisco/north-beach/varennes-street/120/) — A 1904 two-flat, with garage work permitted in 2019.
+- [126–128 Varennes Street](/san-francisco/north-beach/varennes-street/126/) — A 1903 two-flat, with a kitchen remodel permitted in 2004.
+- [140–148 Varennes Street](/san-francisco/north-beach/varennes-street/140/) — A 1906 5-unit apartment building, with stair work permitted in 2021.
+- [152–158 Varennes Street](/san-francisco/north-beach/varennes-street/152/) — A 1907 4-unit apartment building, with a kitchen and bathroom remodel permitted in 1994.
+
+The district record is the city's; the buildings beneath it are
+generated from the DataSF datasets listed in each page's Sources
+footer, and are corrected by hand as readers write in.

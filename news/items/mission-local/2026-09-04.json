@@ -1,0 +1,78 @@
+{
+  "source_id": "mission-local",
+  "batch": "2026-09-04",
+  "read_on": "2026-09-04",
+  "notes": "Two items queued, both read.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 2,
+    "mentions": 1,
+    "remaining": "Nothing outstanding on this batch.",
+    "note": "The OpenGov contract story named no street address. The drug-free housing story named two, both recorded below and both declined."
+  },
+  "findings": [
+    {
+      "id": "2026-09-04-0001",
+      "date": "2026-09-03",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1174 Folsom St.",
+      "street_number": "1174",
+      "street_name": "FOLSOM",
+      "street_type": "ST",
+      "description": "Recorded so the hit is not read again. A story on two drug-free housing bills describes this as the city's only drug-free permanent supportive housing site, with 42 units, and notes it offers no programming aimed at substance-use disorder.",
+      "citation": {
+        "label": "Mission Local, “Both California and San Francisco passed drug-free housing bills. How would they coexist?,” 3 September 2026",
+        "url": "https://missionlocal.org/2026/09/california-san-francisco-drug-free-housing-bills-haney-dorsey/",
+        "locator": "“Local efforts to prioritize sober environments”"
+      },
+      "raw": {
+        "text": "There is currently only one permanent supportive housing site with 42 units at 1174 Folsom St. that is drug-free"
+      },
+      "confidence": "medium",
+      "publish": {
+        "status": "declined",
+        "note": "The entry is the headline, and this headline is about two bills and how they would interact — it says nothing about this building, and in ten years a page carrying it would be carrying a question about pending legislation. The building is named here as an illustration of a policy point, which is the passing mention news/AGENTS.md declines. That it is the city's only drug-free supportive housing site is a fact about a program's footprint, and one that a signature or a budget could make untrue within the year."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3730409",
+        "path": "/san-francisco/south-of-market/folsom-street/1174/",
+        "eas_address": "1174 FOLSOM ST",
+        "method": "EAS exact match on 1174 FOLSOM ST → parcel 3730409; sf-parcels has blklot 3730409 active, 1174–1174 FOLSOM; the 2025 roll records it as commercial retail. EAS files the address under parcel 3730023, which sf-parcels reports retired; the active parcel its coordinates fall in is 3730409.",
+        "checked_on": "2026-09-04",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      }
+    },
+    {
+      "id": "2026-09-04-0002",
+      "date": "2026-09-03",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "42 Otis St.",
+      "street_number": "42",
+      "street_name": "OTIS",
+      "street_type": "ST",
+      "description": "Recorded so the hit is not read again. The same story describes this as a permanent supportive housing site in South of Market for transitional-aged youth, currently housing 22 formerly homeless people aged 18 to 24, managed by the non-profit Five Keys, with case managers on site. It is also the building photographed for the story's lead graphic.",
+      "citation": {
+        "label": "Mission Local, “Both California and San Francisco passed drug-free housing bills. How would they coexist?,” 3 September 2026",
+        "url": "https://missionlocal.org/2026/09/california-san-francisco-drug-free-housing-bills-haney-dorsey/",
+        "locator": "lead graphic caption and mid-article section"
+      },
+      "raw": {
+        "text": "Staff and tenants at a transitional-aged youth site at 42 Otis St. say the on-site programming is paramount."
+      },
+      "confidence": "medium",
+      "publish": {
+        "status": "declined",
+        "note": "Declined for the same reason as 1174 Folsom, and more firmly. The building is the backdrop of the story's photograph — the exact example news/AGENTS.md gives of a mention that gives a page nothing — and the passage about it is a profile of the residents: a named tenant, her age, her disability, her housing history. Nothing in that may reach a page, and what is left once it is removed is a headline about legislation. Neither the count of residents nor their ages is recorded above."
+      },
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-04",
+        "method": "sf-eas-addresses has 42 OTIS ST but it does not join to one parcel. 42 OTIS ST's coordinates fall in 20 active parcels (3505080, 3505055, 3505075, 3505076…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
+        "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+      }
+    }
+  ]
+}

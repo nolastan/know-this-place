@@ -315,6 +315,7 @@ not exactly what the renderer produces from it. A conflict from step 3 goes in
 
 ```bash
 python3 scripts/seed_pages.py seed-list --manifest research/manifests/<file>.json
+python3 scripts/seed_pages.py districts
 python3 scripts/build_sitemap.py
 python3 scripts/build_map_index.py
 python3 scripts/build_link_index.py

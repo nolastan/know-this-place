@@ -1,0 +1,272 @@
+# Western SOMA Light Industrial and Residential Historic District
+
+The buildings documented here so far inside the Western SOMA Light Industrial and Residential Historic District, and the streets it runs through.
+
+## Streets
+
+- [10Th Street](/san-francisco/south-of-market/10th-street/) — 13 documented buildings inside the district.
+- [11Th Street, Mission](/san-francisco/mission/11th-street/) — 12 documented buildings inside the district.
+- [11Th Street, South of Market](/san-francisco/south-of-market/11th-street/) — 5 documented buildings inside the district.
+- [12th Street](/san-francisco/mission/12th-street/) — 5 documented buildings inside the district.
+- [7th Street](/san-francisco/south-of-market/7th-street/) — 10 documented buildings inside the district.
+- [8th Street](/san-francisco/south-of-market/8th-street/) — 9 documented buildings inside the district.
+- [9Th Street](/san-francisco/south-of-market/9th-street/) — 19 documented buildings inside the district.
+- [Bernice Street](/san-francisco/mission/bernice-street/) — 2 documented buildings inside the district.
+- [Clementina Street](/san-francisco/south-of-market/clementina-street/) — 2 documented buildings inside the district.
+- [Dore Street](/san-francisco/south-of-market/dore-street/) — 2 documented buildings inside the district.
+- [Folsom Street, Mission](/san-francisco/mission/folsom-street/) — 25 documented buildings inside the district.
+- [Folsom Street, South of Market](/san-francisco/south-of-market/folsom-street/) — 8 documented buildings inside the district.
+- [Grace Street](/san-francisco/south-of-market/grace-street/) — 2 documented buildings inside the district.
+- [Harrison Street, Mission](/san-francisco/mission/harrison-street/) — 2 documented buildings inside the district.
+- [Harrison Street, South of Market](/san-francisco/south-of-market/harrison-street/) — 1 documented building inside the district.
+- [Heron Street](/san-francisco/south-of-market/heron-street/) — 1 documented building inside the district.
+- [Howard Street, Mission](/san-francisco/mission/howard-street/) — 14 documented buildings inside the district.
+- [Howard Street, South of Market](/san-francisco/south-of-market/howard-street/) — 23 documented buildings inside the district.
+- [Isis Street](/san-francisco/mission/isis-street/) — 4 documented buildings inside the district.
+- [Kissling Street](/san-francisco/mission/kissling-street/) — 4 documented buildings inside the district.
+- [Lafayette Street](/san-francisco/mission/lafayette-street/) — 10 documented buildings inside the district.
+- [Langton Street](/san-francisco/south-of-market/langton-street/) — 1 documented building inside the district.
+- [Minna Street, Mission](/san-francisco/mission/minna-street/) — 6 documented buildings inside the district.
+- [Minna Street, South of Market](/san-francisco/south-of-market/minna-street/) — 6 documented buildings inside the district.
+- [Mission Street, Mission](/san-francisco/mission/mission-street/) — 4 documented buildings inside the district.
+- [Mission Street, South of Market](/san-francisco/south-of-market/mission-street/) — 2 documented buildings inside the district.
+- [Natoma Street, Mission](/san-francisco/mission/natoma-street/) — 7 documented buildings inside the district.
+- [Natoma Street, South of Market](/san-francisco/south-of-market/natoma-street/) — 11 documented buildings inside the district.
+- [Rausch Street](/san-francisco/south-of-market/rausch-street/) — 1 documented building inside the district.
+- [Rodgers Street](/san-francisco/south-of-market/rodgers-street/) — 1 documented building inside the district.
+- [Russ Street](/san-francisco/south-of-market/russ-street/) — 2 documented buildings inside the district.
+- [Sheridan Street](/san-francisco/mission/sheridan-street/) — 3 documented buildings inside the district.
+- [Sumner Street](/san-francisco/south-of-market/sumner-street/) — 1 documented building inside the district.
+- [Tehama Street](/san-francisco/south-of-market/tehama-street/) — 3 documented buildings inside the district.
+- [Washburn Street](/san-francisco/south-of-market/washburn-street/) — 3 documented buildings inside the district.
+
+## Buildings
+
+- [113–115 10Th Street](/san-francisco/south-of-market/10th-street/113/) — A 1924 office building, with reroofing permitted in 1999.
+- [123–131 10Th Street](/san-francisco/south-of-market/10th-street/123/) — A 1929 office building, with stair work permitted in 2000.
+- [134–140 10Th Street](/san-francisco/south-of-market/10th-street/134/) — A 1923 industrial building, with reroofing permitted in 2018.
+- [135–141 10Th Street](/san-francisco/south-of-market/10th-street/135/) — A 1925 industrial building, with a seismic retrofit permitted in 2000.
+- [147–149 10Th Street](/san-francisco/south-of-market/10th-street/147/) — A 1924 industrial building, with fire repair permitted in 1987.
+- [151 10Th Street](/san-francisco/south-of-market/10th-street/151/) — A 1924 office building, with window replacement permitted in 2011.
+- [160 10Th Street](/san-francisco/south-of-market/10th-street/160/) — A 1924 industrial building, with a seismic retrofit permitted in 2018.
+- [170–190 10Th Street](/san-francisco/south-of-market/10th-street/170/) — A 1924 office building, with a seismic retrofit permitted in 1987.
+- [275 10th Street](/san-francisco/south-of-market/10th-street/275/) — A 2009 148-unit apartment building, with electrical work permitted in 2021.
+- [291 10th Street](/san-francisco/south-of-market/10th-street/291/) — A 1909 office building, with a kitchen remodel permitted in 2004.
+- [315–319 10th Street](/san-francisco/south-of-market/10th-street/315/) — A 1908 three-flat, with garage work permitted in 2025.
+- [335–339 10th Street](/san-francisco/south-of-market/10th-street/335/) — A 1909 6-unit apartment building, with a kitchen remodel permitted in 2016.
+- [347–353 10th Street](/san-francisco/south-of-market/10th-street/347/) — A 1908 two-flat, with a rear addition permitted in 2022.
+- [120 11Th Street](/san-francisco/mission/11th-street/120/) — A 1924 industrial building, with garage work permitted in 2007.
+- [140 11Th Street](/san-francisco/mission/11th-street/140/) — A 1907 industrial building, with reroofing permitted in 1994.
+- [146 11Th Street](/san-francisco/mission/11th-street/146/) — A 1914 industrial building, with garage work permitted in 1992.
+- [158 11Th Street](/san-francisco/mission/11th-street/158/) — A 1923 store building, with window replacement permitted in 2014.
+- [145 11Th Street](/san-francisco/south-of-market/11th-street/145/) — A 1919 store building, with window replacement permitted in 1998.
+- [147 11Th Street](/san-francisco/south-of-market/11th-street/147/) — A 1919 industrial building, with permit records from 1990 to 1994.
+- [161–167 11Th Street](/san-francisco/south-of-market/11th-street/161/) — A 1930 industrial building, with window replacement permitted in 2004.
+- [201–207 11th Street](/san-francisco/mission/11th-street/201/) — A 1920 industrial building, with reroofing permitted in 1985.
+- [224–226 11th Street](/san-francisco/mission/11th-street/224/) — A 1923 industrial building, with a vertical addition permitted in 2007.
+- [230 11th Street](/san-francisco/mission/11th-street/230/) — A 1912 15-unit apartment building, with reroofing permitted in 2012.
+- [238–254 11th Street](/san-francisco/mission/11th-street/238/) — A 1907 18-unit apartment building, with reroofing permitted in 1999.
+- [314 11th Street](/san-francisco/mission/11th-street/314/) — A 1924 industrial building, with window replacement permitted in 2011.
+- [319–321 11th Street](/san-francisco/mission/11th-street/319/) — A 1907 industrial building, with a vertical addition permitted in 1999.
+- [333 11th Street](/san-francisco/mission/11th-street/333/) — A 1907 industrial building, with reroofing permitted in 1986.
+- [340 11th Street](/san-francisco/mission/11th-street/340/) — A building, with stair work permitted in 2026.
+- [141 11th Street](/san-francisco/south-of-market/11th-street/141/) — A 1931 office building, with a seismic retrofit permitted in 1999.
+- [169–179 11th Street](/san-francisco/south-of-market/11th-street/169/) — A 1923 office building, with reroofing permitted in 2007.
+- [288–294 12th Street](/san-francisco/mission/12th-street/288/) — A 1908 6-unit apartment building, with facade work permitted in 2003.
+- [320–324 12th Street](/san-francisco/mission/12th-street/320/) — A 1907 three-flat, with stair work permitted in 2007.
+- [332–334 12th Street](/san-francisco/mission/12th-street/332/) — A 1909 two-flat, with reroofing permitted in 1993.
+- [338–340 12th Street](/san-francisco/mission/12th-street/338/) — A 1907 flats building, with foundation work permitted in 1993.
+- [396–398 12th Street](/san-francisco/mission/12th-street/396/) — A 1906 store building, with reroofing permitted in 2020.
+- [112–114 7th Street](/san-francisco/south-of-market/7th-street/112/) — A 1911 hotel, with garage work permitted in 2013.
+- [150–154 7th Street](/san-francisco/south-of-market/7th-street/150/) — A 1920 store building, with facade work permitted in 2022.
+- [227–229 7th Street](/san-francisco/south-of-market/7th-street/227/) — A 2010 store building, with an addition permitted in 2010.
+- [230–234 7th Street](/san-francisco/south-of-market/7th-street/230/) — A 2021 store building, with a vertical addition permitted in 2018.
+- [262 7th Street](/san-francisco/south-of-market/7th-street/262/) — A 1945 industrial building, with plumbing work permitted in 2006.
+- [273–285 7th Street](/san-francisco/south-of-market/7th-street/273/) — A 1928 industrial building, with plumbing work permitted in 2001.
+- [280 7th Street](/san-francisco/south-of-market/7th-street/280/) — A 1906 building, with reroofing permitted in 2008.
+- [310 7th Street](/san-francisco/south-of-market/7th-street/310/) — A 1922 industrial building, with reroofing permitted in 1995.
+- [384 7th Street](/san-francisco/south-of-market/7th-street/384/) — A 1923 industrial building, with facade work permitted in 1990.
+- [398 7th Street](/san-francisco/south-of-market/7th-street/398/) — A 1900 store building, with reroofing permitted in 1994.
+- [111–117 8th Street](/san-francisco/south-of-market/8th-street/111/) — A 1900 assessor class: vacant lot, with a seismic retrofit permitted in 2001.
+- [120–130 8th Street](/san-francisco/south-of-market/8th-street/120/) — A 1925 industrial building, with reroofing permitted in 2013.
+- [135–139 8th Street](/san-francisco/south-of-market/8th-street/135/) — A 1909 7-unit apartment building, with reroofing permitted in 1989.
+- [143 8th Street](/san-francisco/south-of-market/8th-street/143/) — A 1939 office building, with deck work permitted in 2012.
+- [156–164 8th Street](/san-francisco/south-of-market/8th-street/156/) — A 1911 13-unit apartment building, with a kitchen remodel permitted in 2022.
+- [201 8th Street](/san-francisco/south-of-market/8th-street/201/) — A 1900 industrial building, with a kitchen remodel permitted in 1986.
+- [230–236 8th Street](/san-francisco/south-of-market/8th-street/230/) — A 1906 office building, with window replacement permitted in 2019.
+- [260 8th Street](/san-francisco/south-of-market/8th-street/260/) — A 1921 industrial building, with reroofing permitted in 2019.
+- [470–488 8th Street](/san-francisco/south-of-market/8th-street/470/) — A 1923 industrial building, with reroofing permitted in 1996.
+- [116 9Th Street](/san-francisco/south-of-market/9th-street/116/) — A 1926 store building, with stair work permitted in 1998.
+- [122 9Th Street](/san-francisco/south-of-market/9th-street/122/) — A 1924 office building, with a rear addition permitted in 1993.
+- [140–142 9Th Street](/san-francisco/south-of-market/9th-street/140/) — A 1933 apartment building with a ground-floor store, with a seismic retrofit permitted in 2011.
+- [170 9Th Street](/san-francisco/south-of-market/9th-street/170/) — A 1934 industrial building, with facade work permitted in 2018.
+- [190 9Th Street](/san-francisco/south-of-market/9th-street/190/) — A 1929 office building, with an addition permitted in 2021.
+- [121 9th Street](/san-francisco/south-of-market/9th-street/121/) — A 2011 store building, with a seismic retrofit permitted in 2001.
+- [149–155 9th Street](/san-francisco/south-of-market/9th-street/149/) — A 1923 office building, with reroofing permitted in 2019.
+- [150–160 9th Street](/san-francisco/south-of-market/9th-street/150/) — A 1908 hotel, with a seismic retrofit permitted in 2020.
+- [201–205 9th Street](/san-francisco/south-of-market/9th-street/201/) — A 1907 hotel, with a seismic retrofit permitted in 2019.
+- [234 9th Street](/san-francisco/south-of-market/9th-street/234/) — A 1925 2-unit apartment building, with reroofing permitted in 2011.
+- [235–239 9th Street](/san-francisco/south-of-market/9th-street/235/) — An assessor class: vacant lot, with stair work permitted in 2008.
+- [255 9th Street](/san-francisco/south-of-market/9th-street/255/) — A 1924 building, with window replacement permitted in 2013.
+- [271–275 9th Street](/san-francisco/south-of-market/9th-street/271/) — A 1917 store building, with a kitchen and bathroom remodel permitted in 2019.
+- [272 9th Street](/san-francisco/south-of-market/9th-street/272/) — A 1944 24-unit apartment building, with a kitchen and bathroom remodel permitted in 2023.
+- [282–294 9th Street](/san-francisco/south-of-market/9th-street/282/) — A 1916 27-unit apartment building with a ground-floor store, with a seismic retrofit permitted in 1996.
+- [367 9th Street](/san-francisco/south-of-market/9th-street/367/) — A 1930 industrial building, with stair work permitted in 2004.
+- [393–395 9th Street](/san-francisco/south-of-market/9th-street/393/) — A 1908 store building, with window replacement permitted in 1988.
+- [397–399 9th Street](/san-francisco/south-of-market/9th-street/397/) — A 1906 store building, with reroofing permitted in 1989.
+- [450 9th Street](/san-francisco/south-of-market/9th-street/450/) — A 1926 office building, with reroofing permitted in 2004.
+- [22 Bernice Street](/san-francisco/mission/bernice-street/22/) — A 1907 single-family house, with a rear addition permitted in 2004.
+- [30 Bernice Street](/san-francisco/mission/bernice-street/30/) — A 1911 single-family house, with fire repair permitted in 1990.
+- [744–746 Clementina Street](/san-francisco/south-of-market/clementina-street/744/) — A 1909 6-unit apartment building, with a kitchen and bathroom remodel permitted in 2011.
+- [762–768 Clementina Street](/san-francisco/south-of-market/clementina-street/762/) — A 1927 industrial building, with reroofing permitted in 1983.
+- [43 Dore Street](/san-francisco/south-of-market/dore-street/43/) — A 1924 2-unit building, with permit records from 1982 to 2018.
+- [45 Dore Street](/san-francisco/south-of-market/dore-street/45/) — A 1923 building, with permit records from 1990 to 1995.
+- [1221–1225 Folsom Street](/san-francisco/mission/folsom-street/1221/) — A 1909 3-unit building with a ground-floor store, with fire repair permitted in 1991.
+- [1246 Folsom Street](/san-francisco/mission/folsom-street/1246/) — A 1916 industrial building, with permit records from 1983 to 2014.
+- [1250 Folsom Street](/san-francisco/mission/folsom-street/1250/) — A 1923 office building, with deck work permitted in 2003.
+- [1257 Folsom Street](/san-francisco/mission/folsom-street/1257/) — A 1923 industrial building, with reroofing permitted in 1997.
+- [1275 Folsom Street](/san-francisco/mission/folsom-street/1275/) — A 1936 industrial building, with facade work permitted in 2020.
+- [1278–1282 Folsom Street](/san-francisco/mission/folsom-street/1278/) — A 1923 industrial building, with reroofing permitted in 1997.
+- [1346 Folsom Street](/san-francisco/mission/folsom-street/1346/) — A 2005 98-unit apartment building, with a seismic retrofit permitted in 2001.
+- [1347–1349 Folsom Street](/san-francisco/mission/folsom-street/1347/) — A flats building, with plumbing work permitted in 1994.
+- [1365–1369 Folsom Street](/san-francisco/mission/folsom-street/1365/) — A 1907 three-flat, with electrical work permitted in 2008.
+- [1379 Folsom Street](/san-francisco/mission/folsom-street/1379/) — A 1921 industrial building, with reroofing permitted in 1991.
+- [1415 Folsom Street](/san-francisco/mission/folsom-street/1415/) — A 1913 industrial building, with reroofing permitted in 2012.
+- [1455 Folsom Street](/san-francisco/mission/folsom-street/1455/) — A 1919 industrial building, with a seismic retrofit permitted in 2004.
+- [1480 Folsom Street](/san-francisco/mission/folsom-street/1480/) — A 1916 industrial building, with reroofing permitted in 1993.
+- [1501 Folsom Street](/san-francisco/mission/folsom-street/1501/) — A 1929 store building, with deck work permitted in 2022.
+- [1527–1535 Folsom Street](/san-francisco/mission/folsom-street/1527/) — A 1906 building, with deck work permitted in 2010.
+- [1545 Folsom Street](/san-francisco/mission/folsom-street/1545/) — A 1906 two-flat, with reroofing permitted in 2010.
+- [1582–1590 Folsom Street](/san-francisco/mission/folsom-street/1582/) — A 1916 14-unit apartment building, with a seismic retrofit permitted in 1989.
+- [1608–1612 Folsom Street](/san-francisco/mission/folsom-street/1608/) — A 1914 three-flat, with window replacement permitted in 1999.
+- [1615–1617 Folsom Street](/san-francisco/mission/folsom-street/1615/) — A 1907 two-flat, with reroofing permitted in 1996.
+- [1621–1623 Folsom Street](/san-francisco/mission/folsom-street/1621/) — A 1906 two-flat, with foundation work permitted in 2009.
+- [1625–1629 Folsom Street](/san-francisco/mission/folsom-street/1625/) — A 1907 three-flat, with one permit record from 2012.
+- [1626–1628 Folsom Street](/san-francisco/mission/folsom-street/1626/) — A 1906 3-unit building with a ground-floor store, with a kitchen remodel permitted in 2017.
+- [1631–1637 Folsom Street](/san-francisco/mission/folsom-street/1631/) — A 1912 4-unit apartment building, with reroofing permitted in 1988.
+- [1645 Folsom Street](/san-francisco/mission/folsom-street/1645/) — A 1909 12-unit apartment building, with facade work permitted in 2006.
+- [1689–1693 Folsom Street](/san-francisco/mission/folsom-street/1689/) — A 1906 three-flat, with stair work permitted in 2009.
+- [1062 Folsom Street](/san-francisco/south-of-market/folsom-street/1062/) — A 1911 industrial building, with reroofing permitted in 2007.
+- [1080–1084 Folsom Street](/san-francisco/south-of-market/folsom-street/1080/) — A 1906 hotel, with a seismic retrofit permitted in 2018.
+- [1091 Folsom Street](/san-francisco/south-of-market/folsom-street/1091/) — A 1944 warehouse, with permit records from 2000 to 2005.
+- [1099 Folsom Street](/san-francisco/south-of-market/folsom-street/1099/) — A 1909 office building, with reroofing permitted in 1995.
+- [1122 Folsom Street](/san-francisco/south-of-market/folsom-street/1122/) — A 1923 store building, with fire repair permitted in 1994.
+- [1175 Folsom Street](/san-francisco/south-of-market/folsom-street/1175/) — A 1928 industrial building, with plumbing work permitted in 1994.
+- [1188–1190 Folsom Street](/san-francisco/south-of-market/folsom-street/1188/) — A 1914 hotel, with a bathroom remodel permitted in 2013.
+- [1359 Folsom Street](/san-francisco/south-of-market/folsom-street/1359/) — A 1925 industrial building, with a kitchen and bathroom remodel permitted in 2012.
+- [49 Grace Street](/san-francisco/south-of-market/grace-street/49/) — A 1907 single-family house, with an addition permitted in 2013.
+- [66 Grace Street](/san-francisco/south-of-market/grace-street/66/) — A 1900 office building, with plumbing work permitted in 2008.
+- [1170–1180 Harrison Street](/san-francisco/mission/harrison-street/1170/) — A 1912 office building, with an addition permitted in 2016.
+- [1275 Harrison Street](/san-francisco/mission/harrison-street/1275/) — A 1936 office building, with a bathroom remodel permitted in 2012.
+- [1098 Harrison Street](/san-francisco/south-of-market/harrison-street/1098/) — A 1924 office building, with a seismic retrofit permitted in 2018.
+- [7 Heron Street](/san-francisco/south-of-market/heron-street/7/) — A 1900 office building, with reroofing permitted in 2012.
+- [1208 Howard Street](/san-francisco/mission/howard-street/1208/) — A 1923 industrial building, with reroofing permitted in 2023.
+- [1500–1510 Howard Street](/san-francisco/mission/howard-street/1500/) — A 1930 store building, with reroofing permitted in 2005.
+- [1521–1523 Howard Street](/san-francisco/mission/howard-street/1521/) — A 1913 two-flat, with a kitchen and bathroom remodel permitted in 2016.
+- [1522 Howard Street](/san-francisco/mission/howard-street/1522/) — A 1916 7-unit apartment building, with an accessory dwelling unit permitted in 2020.
+- [1530 Howard Street](/san-francisco/mission/howard-street/1530/) — A 1907 industrial building.
+- [1532 Howard Street](/san-francisco/mission/howard-street/1532/) — A 2019 15-unit apartment building, with reroofing permitted in 2000.
+- [1544–1548 Howard Street](/san-francisco/mission/howard-street/1544/) — A 1907 three-flat, with reroofing permitted in 2006.
+- [1550–1554 Howard Street](/san-francisco/mission/howard-street/1550/) — A 1907 34-unit apartment building, with a seismic retrofit permitted in 2019.
+- [1556 Howard Street](/san-francisco/mission/howard-street/1556/) — A 1913 three-flat, with a kitchen and bathroom remodel permitted in 2002.
+- [1558–1560 Howard Street](/san-francisco/mission/howard-street/1558/) — A 1913 6-unit apartment building, with fire repair permitted in 1985.
+- [1566 Howard Street](/san-francisco/mission/howard-street/1566/) — A 1924 industrial building, with reroofing permitted in 2020.
+- [1570–1574 Howard Street](/san-francisco/mission/howard-street/1570/) — A 1906 three-flat, with facade work permitted in 1995.
+- [1597–1599 Howard Street](/san-francisco/mission/howard-street/1597/) — A 1926 industrial building, with a vertical addition permitted in 1998.
+- [1601–1617 Howard Street](/san-francisco/mission/howard-street/1601/) — A 1906 15-unit apartment building, with window replacement permitted in 1998.
+- [1035 Howard Street](/san-francisco/south-of-market/howard-street/1035/) — A 1930 assessor class: vacant lot, with facade work permitted in 2026.
+- [1061 Howard Street](/san-francisco/south-of-market/howard-street/1061/) — A 1925 industrial building, with reroofing permitted in 2000.
+- [1069–1073 Howard Street](/san-francisco/south-of-market/howard-street/1069/) — A 1927 industrial building, with window replacement permitted in 1998.
+- [1137–1139 Howard Street](/san-francisco/south-of-market/howard-street/1137/) — A 1924 office building, with a kitchen remodel permitted in 2018.
+- [1144 Howard Street](/san-francisco/south-of-market/howard-street/1144/) — A 1921 industrial building, with permit records from 1982 to 2019.
+- [1154–1158 Howard Street](/san-francisco/south-of-market/howard-street/1154/) — A 1924 store building, with reroofing permitted in 2005.
+- [1160 Howard Street](/san-francisco/south-of-market/howard-street/1160/) — A 1924 office building, with plumbing work permitted in 2026.
+- [1173–1175 Howard Street](/san-francisco/south-of-market/howard-street/1173/) — A 1922 industrial building, with a seismic retrofit permitted in 1995.
+- [1201 Howard Street](/san-francisco/south-of-market/howard-street/1201/) — A 1917 industrial building, with facade work permitted in 2001.
+- [1301–1315 Howard Street](/san-francisco/south-of-market/howard-street/1301/) — A 1915 industrial building, with plumbing work permitted in 2014.
+- [1325–1331 Howard Street](/san-francisco/south-of-market/howard-street/1325/) — A 1919 industrial building, with a seismic retrofit permitted in 1998.
+- [1330 Howard Street](/san-francisco/south-of-market/howard-street/1330/) — A 1924 industrial building, with deck work permitted in 2019.
+- [1350 Howard Street](/san-francisco/south-of-market/howard-street/1350/) — A 1923 industrial building, with electrical work permitted in 2021.
+- [1380 Howard Street](/san-francisco/south-of-market/howard-street/1380/) — A 1928 industrial building, with a bathroom remodel permitted in 2008.
+- [1401 Howard Street](/san-francisco/south-of-market/howard-street/1401/) — A 1913 office building, with window replacement permitted in 2016.
+- [1415 Howard Street](/san-francisco/south-of-market/howard-street/1415/) — A 1908 school building, with a seismic retrofit permitted in 2016.
+- [1419 Howard Street](/san-francisco/south-of-market/howard-street/1419/) — A 1902 church, with reroofing permitted in 2014.
+- [1434–1436 Howard Street](/san-francisco/south-of-market/howard-street/1434/) — A 1924 industrial building, with reroofing permitted in 2006.
+- [1450 Howard Street](/san-francisco/south-of-market/howard-street/1450/) — A 1900 industrial building, with fire repair permitted in 1991.
+- [1458 Howard Street](/san-francisco/south-of-market/howard-street/1458/) — A 1966 store building, with stair work permitted in 2015.
+- [1470 Howard Street](/san-francisco/south-of-market/howard-street/1470/) — A 1956 industrial building, with reroofing permitted in 2025.
+- [1480 Howard Street](/san-francisco/south-of-market/howard-street/1480/) — A 1927 industrial building, with one permit record from 1989.
+- [1488–1490 Howard Street](/san-francisco/south-of-market/howard-street/1488/) — A 1939 industrial building, with reroofing permitted in 2020.
+- [2–14 Isis Street](/san-francisco/mission/isis-street/2/) — A 1914 9-unit apartment building, with a seismic retrofit permitted in 2016.
+- [26–32 Isis Street](/san-francisco/mission/isis-street/26/) — A 1913 4-unit apartment building, with window replacement permitted in 1999.
+- [27–37 Isis Street](/san-francisco/mission/isis-street/27/) — A 1906 9-unit apartment building, with stair work permitted in 2000.
+- [52 Isis Street](/san-francisco/mission/isis-street/52/) — A 1907 single-family house, with reroofing permitted in 2010.
+- [62 Kissling Street](/san-francisco/mission/kissling-street/62/) — A 1906 single-family house, with a bathroom remodel permitted in 2019.
+- [107–119 Kissling Street](/san-francisco/mission/kissling-street/107/) — A 1907 7-unit apartment building, with stair work permitted in 1994.
+- [123–133 Kissling Street](/san-francisco/mission/kissling-street/123/) — A 1923 two-flat, with reroofing permitted in 1995.
+- [138 Kissling Street](/san-francisco/mission/kissling-street/138/) — A 1906 single-family house, with one permit record from 2006.
+- [15 Lafayette Street](/san-francisco/mission/lafayette-street/15/) — A 1942 industrial building, with permit records from 1995 to 2019.
+- [33–43 Lafayette Street](/san-francisco/mission/lafayette-street/33/) — A 1913 12-unit apartment building, with an addition permitted in 2013.
+- [47–49 Lafayette Street](/san-francisco/mission/lafayette-street/47/) — A 1907 three-flat, with reroofing permitted in 2020.
+- [48–58 Lafayette Street](/san-francisco/mission/lafayette-street/48/) — A 1912 6-unit apartment building, with a kitchen and bathroom remodel permitted in 2018.
+- [55 Lafayette Street](/san-francisco/mission/lafayette-street/55/) — A 1946 industrial building, with foundation work permitted in 2000.
+- [64 Lafayette Street](/san-francisco/mission/lafayette-street/64/) — A 1908 three-flat, with permit records from 2007 to 2017.
+- [66 Lafayette Street](/san-francisco/mission/lafayette-street/66/) — A 1906 single-family house, with reroofing permitted in 2025.
+- [81 Lafayette Street](/san-francisco/mission/lafayette-street/81/) — A 1947 industrial building, with a bathroom remodel permitted in 2015.
+- [83 Lafayette Street](/san-francisco/mission/lafayette-street/83/) — A 1993 building, with facade work permitted in 2010.
+- [97 Lafayette Street](/san-francisco/mission/lafayette-street/97/) — A 1923 6-unit apartment building, with a seismic retrofit permitted in 2017.
+- [74 Langton Street](/san-francisco/south-of-market/langton-street/74/) — A 1908 industrial building, with a bathroom remodel permitted in 2011.
+- [1016–1020 Minna Street](/san-francisco/mission/minna-street/1016/) — A 1910 6-unit apartment building, with a seismic retrofit permitted in 2020.
+- [1033 Minna Street](/san-francisco/mission/minna-street/1033/) — A 1924 single-family house, with foundation work permitted in 2001.
+- [1035 Minna Street](/san-francisco/mission/minna-street/1035/) — A 1924 single-family house, with one permit record from 2001.
+- [1037 Minna Street](/san-francisco/mission/minna-street/1037/) — A 1924 single-family house.
+- [1039 Minna Street](/san-francisco/mission/minna-street/1039/) — A 1924 single-family house, with foundation work permitted in 2001.
+- [1041 Minna Street](/san-francisco/mission/minna-street/1041/) — A 1924 single-family house.
+- [653 Minna Street](/san-francisco/south-of-market/minna-street/653/) — A 1915 three-flat, with a seismic retrofit permitted in 2010.
+- [679–681 Minna Street](/san-francisco/south-of-market/minna-street/679/) — A 1916 two-flat, with window replacement permitted in 1991.
+- [747–751 Minna Street](/san-francisco/south-of-market/minna-street/747/) — A 1907 4-unit apartment building, with fire repair permitted in 2025.
+- [775–795 Minna Street](/san-francisco/south-of-market/minna-street/775/) — A 1906 11-unit apartment building, with reroofing permitted in 1991.
+- [909–911 Minna Street](/san-francisco/south-of-market/minna-street/909/) — A 1909 industrial building, with reroofing permitted in 1992.
+- [973 Minna Street](/san-francisco/south-of-market/minna-street/973/) — A 1938 industrial building, with reroofing permitted in 1991.
+- [1513 Mission Street](/san-francisco/mission/mission-street/1513/) — A 1930 industrial building, with a kitchen and bathroom remodel permitted in 2015.
+- [1517 Mission Street](/san-francisco/mission/mission-street/1517/) — A 1927 industrial building, with permit records from 1989 to 1995.
+- [1519–1535 Mission Street](/san-francisco/mission/mission-street/1519/) — A 1923 industrial building, with a seismic retrofit permitted in 1990.
+- [1543 Mission Street](/san-francisco/mission/mission-street/1543/) — A 1927 industrial building, with reroofing permitted in 1990.
+- [1091–1099 Mission Street](/san-francisco/south-of-market/mission-street/1091/) — A 1912 hotel, with window replacement permitted in 2010.
+- [1375–1385 Mission Street](/san-francisco/south-of-market/mission-street/1375/) — A 1925 office building, with reroofing permitted in 1989.
+- [1016–1020 Natoma Street](/san-francisco/mission/natoma-street/1016/) — A 1909 three-flat, with stair work permitted in 2000.
+- [1023–1025 Natoma Street](/san-francisco/mission/natoma-street/1023/) — A 1907 two-flat, with a kitchen and bathroom remodel permitted in 2002.
+- [1034–1036 Natoma Street](/san-francisco/mission/natoma-street/1034/) — A 1907 two-flat, with foundation work permitted in 2005.
+- [1035 Natoma Street](/san-francisco/mission/natoma-street/1035/) — A 1906 single-family house, with a bathroom remodel permitted in 2023.
+- [1040 Natoma Street](/san-francisco/mission/natoma-street/1040/) — A 1912 single-family house, with foundation work permitted in 2000.
+- [1077–1087 Natoma Street](/san-francisco/mission/natoma-street/1077/) — A 1907 6-unit apartment building, with a seismic retrofit permitted in 2017.
+- [1084–1094 Natoma Street](/san-francisco/mission/natoma-street/1084/) — A 1907 6-unit apartment building, with a seismic retrofit permitted in 2017.
+- [644–648 Natoma Street](/san-francisco/south-of-market/natoma-street/644/) — A 1907 9-unit apartment building, with a seismic retrofit permitted in 2017.
+- [705 Natoma Street](/san-francisco/south-of-market/natoma-street/705/) — A 1994 hotel, with a kitchen and bathroom remodel permitted in 2015.
+- [916–920 Natoma Street](/san-francisco/south-of-market/natoma-street/916/) — A 1919 industrial building, with reroofing permitted in 1991.
+- [926 Natoma Street](/san-francisco/south-of-market/natoma-street/926/) — A 1924 office building, with one permit record from 1981.
+- [935 Natoma Street](/san-francisco/south-of-market/natoma-street/935/) — A 1947 industrial building, with reroofing permitted in 1999.
+- [955 Natoma Street](/san-francisco/south-of-market/natoma-street/955/) — A 1947 single-family house, with a vertical addition permitted in 2013.
+- [956–960 Natoma Street](/san-francisco/south-of-market/natoma-street/956/) — A 1913 two-flat, with garage work permitted in 1992.
+- [959 Natoma Street](/san-francisco/south-of-market/natoma-street/959/) — A 1924 industrial building, with reroofing permitted in 1999.
+- [964 Natoma Street](/san-francisco/south-of-market/natoma-street/964/) — A 1937 industrial building, with reroofing permitted in 1991.
+- [965 Natoma Street](/san-francisco/south-of-market/natoma-street/965/) — A 1906 single-family house, with reroofing permitted in 2010.
+- [969 Natoma Street](/san-francisco/south-of-market/natoma-street/969/) — A 1906 industrial building, with foundation work permitted in 1992.
+- [12–18 Rausch Street](/san-francisco/south-of-market/rausch-street/12/) — A 1914 18-unit apartment building, with fire repair permitted in 1987.
+- [10–58 Rodgers Street](/san-francisco/south-of-market/rodgers-street/10/) — A 1914 industrial building, with reroofing permitted in 2004.
+- [146–150 Russ Street](/san-francisco/south-of-market/russ-street/146/) — A 1909 6-unit apartment building, with a seismic retrofit permitted in 2016.
+- [160–164 Russ Street](/san-francisco/south-of-market/russ-street/160/) — A 1923 3-unit apartment building with a ground-floor store, with deck work permitted in 2012.
+- [41–45 Sheridan Street](/san-francisco/mission/sheridan-street/41/) — A 2004 single-family house, with a seismic retrofit permitted in 2000.
+- [44 Sheridan Street](/san-francisco/mission/sheridan-street/44/) — A 1922 single-family house, with reroofing permitted in 2025.
+- [55 Sheridan Street](/san-francisco/mission/sheridan-street/55/) — A 2007 single-family house, with an addition permitted in 2002.
+- [1 Sumner Street](/san-francisco/south-of-market/sumner-street/1/) — A 1991 building, with window replacement permitted in 1991.
+- [718 Tehama Street](/san-francisco/south-of-market/tehama-street/718/) — A 1935 industrial building, with an addition permitted in 2002.
+- [735 Tehama Street](/san-francisco/south-of-market/tehama-street/735/) — A 1911 building, with a kitchen remodel permitted in 2009.
+- [741 Tehama Street](/san-francisco/south-of-market/tehama-street/741/) — A 1906 single-family house, with window replacement permitted in 1996.
+- [10 Washburn Street](/san-francisco/south-of-market/washburn-street/10/) — A 1924 industrial building, with reroofing permitted in 2003.
+- [14–16 Washburn Street](/san-francisco/south-of-market/washburn-street/14/) — A 1906 two-flat, with fire repair permitted in 2010.
+- [42 Washburn Street](/san-francisco/south-of-market/washburn-street/42/) — A 1906 hotel, with facade work permitted in 2018.
+
+The district record is the city's; the buildings beneath it are
+generated from the DataSF datasets listed in each page's Sources
+footer, and are corrected by hand as readers write in.

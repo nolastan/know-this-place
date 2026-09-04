@@ -1,0 +1,274 @@
+# Chinatown Historic District
+
+The buildings documented here so far inside the Chinatown Historic District, and the streets it runs through.
+
+## Streets
+
+- [Beckett Street](/san-francisco/chinatown/beckett-street/) — 2 documented buildings inside the district.
+- [Broadway](/san-francisco/chinatown/broadway/) — 1 documented building inside the district.
+- [Bush Street](/san-francisco/financial-district/bush-street/) — 1 documented building inside the district.
+- [California Street](/san-francisco/financial-district/california-street/) — 4 documented buildings inside the district.
+- [Clay Street](/san-francisco/financial-district/clay-street/) — 22 documented buildings inside the district.
+- [Columbus Avenue](/san-francisco/chinatown/columbus-avenue/) — 1 documented building inside the district.
+- [Commercial Street](/san-francisco/financial-district/commercial-street/) — 8 documented buildings inside the district.
+- [Grant Avenue, Chinatown](/san-francisco/chinatown/grant-avenue/) — 3 documented buildings inside the district.
+- [Grant Avenue, Financial District](/san-francisco/financial-district/grant-avenue/) — 15 documented buildings inside the district.
+- [Grant Avenue, North Beach](/san-francisco/north-beach/grant-avenue/) — 31 documented buildings inside the district.
+- [Jackson Street](/san-francisco/chinatown/jackson-street/) — 28 documented buildings inside the district.
+- [Kearny Street, Chinatown](/san-francisco/chinatown/kearny-street/) — 4 documented buildings inside the district.
+- [Kearny Street, Union Square](/san-francisco/union-square/kearny-street/) — 9 documented buildings inside the district.
+- [Merchant Street](/san-francisco/financial-district/merchant-street/) — 1 documented building inside the district.
+- [Pacific Avenue](/san-francisco/chinatown/pacific-avenue/) — 3 documented buildings inside the district.
+- [Pine Street](/san-francisco/financial-district/pine-street/) — 1 documented building inside the district.
+- [Ross Alley, Chinatown](/san-francisco/chinatown/ross-alley/) — 2 documented buildings inside the district.
+- [Ross Alley, North Beach](/san-francisco/north-beach/ross-alley/) — 1 documented building inside the district.
+- [Sacramento Street](/san-francisco/nob-hill/sacramento-street/) — 13 documented buildings inside the district.
+- [Spofford Street, Chinatown](/san-francisco/chinatown/spofford-street/) — 5 documented buildings inside the district.
+- [Spofford Street, North Beach](/san-francisco/north-beach/spofford-street/) — 3 documented buildings inside the district.
+- [Stockton Street](/san-francisco/chinatown/stockton-street/) — 30 documented buildings inside the district.
+- [Vinton Court](/san-francisco/financial-district/vinton-court/) — 1 documented building inside the district.
+- [Walter U Lum Place](/san-francisco/north-beach/walter-u-lum-place/) — 2 documented buildings inside the district.
+- [Washington Street](/san-francisco/financial-district/washington-street/) — 20 documented buildings inside the district.
+- [Waverly Place, Chinatown](/san-francisco/chinatown/waverly-place/) — 3 documented buildings inside the district.
+- [Waverly Place, North Beach](/san-francisco/north-beach/waverly-place/) — 16 documented buildings inside the district.
+- [Wentworth Place](/san-francisco/north-beach/wentworth-place/) — 3 documented buildings inside the district.
+
+## Buildings
+
+- [4–12 Beckett Street](/san-francisco/chinatown/beckett-street/4/) — A 1908 10-unit apartment building, with a seismic retrofit permitted in 1996.
+- [20–28 Beckett Street](/san-francisco/chinatown/beckett-street/20/) — A 1922 12-unit apartment building, with reroofing permitted in 1996.
+- [601–619 Broadway](/san-francisco/chinatown/broadway/601/) — A 1913 hotel, with a vertical addition permitted in 1996.
+- [500–510 Bush Street](/san-francisco/financial-district/bush-street/500/) — A 1912 hotel, with a kitchen remodel permitted in 2021.
+- [660 California Street](/san-francisco/financial-district/california-street/660/) — A 1966 church, with a seismic retrofit permitted in 1998.
+- [675 California Street](/san-francisco/financial-district/california-street/675/) — A 1958 office building, with an addition permitted in 1989.
+- [717–719 California Street](/san-francisco/financial-district/california-street/717/) — An office building, with reroofing permitted in 2025.
+- [718 California Street](/san-francisco/financial-district/california-street/718/) — A 1907 store building, with a kitchen remodel permitted in 2018.
+- [634–640 Clay Street](/san-francisco/financial-district/clay-street/634/) — A 1912 hotel, with reroofing permitted in 2004.
+- [635–639 Clay Street](/san-francisco/financial-district/clay-street/635/) — A 1907 store building, with a seismic retrofit permitted in 1995.
+- [667–669 Clay Street](/san-francisco/financial-district/clay-street/667/) — A 1906 store building, with a seismic retrofit permitted in 2000.
+- [671–677 Clay Street](/san-francisco/financial-district/clay-street/671/) — A 1907 store building, with a bathroom remodel permitted in 2026.
+- [679–681 Clay Street](/san-francisco/financial-district/clay-street/679/) — A 1909 hotel, with a kitchen remodel permitted in 2015.
+- [683–685 Clay Street](/san-francisco/financial-district/clay-street/683/) — A 1908 2-unit building with a ground-floor store, with a seismic retrofit permitted in 2000.
+- [689 Clay Street](/san-francisco/financial-district/clay-street/689/) — A 1906 store building, with a seismic retrofit permitted in 1991.
+- [709–721 Clay Street](/san-francisco/financial-district/clay-street/709/) — A 1912 hotel, with an addition permitted in 2015.
+- [729–733 Clay Street](/san-francisco/financial-district/clay-street/729/) — A 1909 hotel, with a seismic retrofit permitted in 2004.
+- [735–739 Clay Street](/san-francisco/financial-district/clay-street/735/) — A 1907 3-unit building with a ground-floor store, with a seismic retrofit permitted in 2001.
+- [745–747 Clay Street](/san-francisco/financial-district/clay-street/745/) — A 1910 3-unit building, with permit records from 1985 to 1994.
+- [757–761 Clay Street](/san-francisco/financial-district/clay-street/757/) — A 1907 hotel, with a seismic retrofit permitted in 1994.
+- [771–783 Clay Street](/san-francisco/financial-district/clay-street/771/) — A 1907 hotel, with dry-rot repair permitted in 1988.
+- [802–806 Clay Street](/san-francisco/financial-district/clay-street/802/) — A 1907 18-unit apartment building, with a seismic retrofit permitted in 1998.
+- [817–825 Clay Street](/san-francisco/financial-district/clay-street/817/) — A 1908 hotel, with a seismic retrofit permitted in 1994.
+- [818 Clay Street](/san-francisco/financial-district/clay-street/818/) — A 1907 store building, with electrical work permitted in 2012.
+- [820 Clay Street](/san-francisco/financial-district/clay-street/820/) — A 1907 7-unit apartment building, with a seismic retrofit permitted in 2000.
+- [837–841 Clay Street](/san-francisco/financial-district/clay-street/837/) — A 1908 7-unit apartment building, with a seismic retrofit permitted in 1996.
+- [843–855 Clay Street](/san-francisco/financial-district/clay-street/843/) — A 1908 29-unit apartment building, with foundation work permitted in 2001.
+- [852–854 Clay Street](/san-francisco/financial-district/clay-street/852/) — A 1907 hotel, with a seismic retrofit permitted in 1994.
+- [857 Clay Street](/san-francisco/financial-district/clay-street/857/) — A 1913 hotel, with a kitchen remodel permitted in 1992.
+- [910–914 Clay Street](/san-francisco/financial-district/clay-street/910/) — A 1907 6-unit apartment building, with a seismic retrofit permitted in 1995.
+- [571 Columbus Avenue](/san-francisco/chinatown/columbus-avenue/571/) — A 1907 store building, with a seismic retrofit permitted in 2001.
+- [642 Commercial Street](/san-francisco/financial-district/commercial-street/642/) — An assessor class: vacant lot, with permit records from 1982 to 1990.
+- [667–671 Commercial Street](/san-francisco/financial-district/commercial-street/667/) — A 1907 7-unit apartment building, with a kitchen remodel permitted in 1984.
+- [673–675 Commercial Street](/san-francisco/financial-district/commercial-street/673/) — A 1907 single-family house, with a seismic retrofit permitted in 2001.
+- [681–683 Commercial Street](/san-francisco/financial-district/commercial-street/681/) — A 1908 2-unit building with a ground-floor store, with a seismic retrofit permitted in 1995.
+- [685 Commercial Street](/san-francisco/financial-district/commercial-street/685/) — A 1907 store building, with plumbing work permitted in 2006.
+- [708–712 Commercial Street](/san-francisco/financial-district/commercial-street/708/) — A 1907 office building, with stair work permitted in 2010.
+- [715 Commercial Street](/san-francisco/financial-district/commercial-street/715/) — A 1907 two-flat, with a seismic retrofit permitted in 2011.
+- [731–749 Commercial Street](/san-francisco/financial-district/commercial-street/731/) — A 1907 10-unit building with a ground-floor store, with a kitchen remodel permitted in 2001.
+- [615–625 Grant Avenue](/san-francisco/chinatown/grant-avenue/615/) — A 1907 store building, with plumbing work permitted in 2019.
+- [701–711 Grant Avenue](/san-francisco/chinatown/grant-avenue/701/) — A 1906 store building, with a seismic retrofit permitted in 2001.
+- [838 Grant Avenue](/san-francisco/chinatown/grant-avenue/838/) — A 1966 store building, with a kitchen remodel permitted in 2021.
+- [400–414 Grant Avenue](/san-francisco/financial-district/grant-avenue/400/) — A 1913 store building, with a seismic retrofit permitted in 1997.
+- [417–419 Grant Avenue](/san-francisco/financial-district/grant-avenue/417/) — A 1910 3-unit building with a ground-floor store, with a seismic retrofit permitted in 2000.
+- [420 Grant Avenue](/san-francisco/financial-district/grant-avenue/420/) — A 1914 store building, with a seismic retrofit permitted in 2000.
+- [450–480 Grant Avenue](/san-francisco/financial-district/grant-avenue/450/) — A 1921 store building, with a kitchen and bathroom remodel permitted in 2019.
+- [500 Grant Avenue](/san-francisco/financial-district/grant-avenue/500/) — A 1910 5-unit building with a ground-floor store, with reroofing permitted in 2016.
+- [506–510 Grant Avenue](/san-francisco/financial-district/grant-avenue/506/) — A 1909 3-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2024.
+- [512–520 Grant Avenue](/san-francisco/financial-district/grant-avenue/512/) — A 1908 store building, with stair work permitted in 2020.
+- [522 Grant Avenue](/san-francisco/financial-district/grant-avenue/522/) — A 1910 store building, with a seismic retrofit permitted in 2001.
+- [523–527 Grant Avenue](/san-francisco/financial-district/grant-avenue/523/) — A 1911 store building, with a seismic retrofit permitted in 1992.
+- [528–532 Grant Avenue](/san-francisco/financial-district/grant-avenue/528/) — A 1910 store building, with a seismic retrofit permitted in 2001.
+- [531–545 Grant Avenue](/san-francisco/financial-district/grant-avenue/531/) — A 1906 20-unit apartment building, with reroofing permitted in 1996.
+- [540–542 Grant Avenue](/san-francisco/financial-district/grant-avenue/540/) — A 1906 3-unit building with a ground-floor store, with a seismic retrofit permitted in 1997.
+- [544–546 Grant Avenue](/san-francisco/financial-district/grant-avenue/544/) — A 1906 3-unit building with a ground-floor store, with reroofing permitted in 1984.
+- [550–552 Grant Avenue](/san-francisco/financial-district/grant-avenue/550/) — A 1921 2-unit building with a ground-floor store, with a seismic retrofit permitted in 2001.
+- [558–560 Grant Avenue](/san-francisco/financial-district/grant-avenue/558/) — A 1906 3-unit building with a ground-floor store, with a seismic retrofit permitted in 2001.
+- [562–574 Grant Avenue](/san-francisco/north-beach/grant-avenue/562/) — A 1909 store building, with a seismic retrofit permitted in 2003.
+- [700–720 Grant Avenue](/san-francisco/north-beach/grant-avenue/700/) — A 1906 store building, with a seismic retrofit permitted in 1996.
+- [725–731 Grant Avenue](/san-francisco/north-beach/grant-avenue/725/) — A 1907 store building, with a kitchen remodel permitted in 2017.
+- [800–804 Grant Avenue](/san-francisco/north-beach/grant-avenue/800/) — A 1906 7-unit building, with reroofing permitted in 2024.
+- [808–814 Grant Avenue](/san-francisco/north-beach/grant-avenue/808/) — A 1907 20-unit apartment building, with reroofing permitted in 2015.
+- [815–829 Grant Avenue](/san-francisco/north-beach/grant-avenue/815/) — A 1907 store building, with a seismic retrofit permitted in 2001.
+- [824–832 Grant Avenue](/san-francisco/north-beach/grant-avenue/824/) — A 1908 hotel, with a seismic retrofit permitted in 1996.
+- [831–843 Grant Avenue](/san-francisco/north-beach/grant-avenue/831/) — A 1908 store building, with a bathroom remodel permitted in 2010.
+- [848 Grant Avenue](/san-francisco/north-beach/grant-avenue/848/) — A 1906 store building, with window replacement permitted in 1987.
+- [850 Grant Avenue](/san-francisco/north-beach/grant-avenue/850/) — A 1906 store building, with a kitchen remodel permitted in 1999.
+- [854–864 Grant Avenue](/san-francisco/north-beach/grant-avenue/854/) — A 1906 office building, with a seismic retrofit permitted in 1994.
+- [857–867 Grant Avenue](/san-francisco/north-beach/grant-avenue/857/) — A 1907 hotel, with a seismic retrofit permitted in 1995.
+- [900–916 Grant Avenue](/san-francisco/north-beach/grant-avenue/900/) — A 1908 hotel, with a kitchen and bathroom remodel permitted in 2018.
+- [911–915 Grant Avenue](/san-francisco/north-beach/grant-avenue/911/) — A 1919 store building, with a seismic retrofit permitted in 2001.
+- [924–932 Grant Avenue](/san-francisco/north-beach/grant-avenue/924/) — A 1906 hotel, with a seismic retrofit permitted in 1997.
+- [933–939 Grant Avenue](/san-francisco/north-beach/grant-avenue/933/) — A 1907 hotel, with stair work permitted in 2009.
+- [941–943 Grant Avenue](/san-francisco/north-beach/grant-avenue/941/) — A 1907 store building, with a seismic retrofit permitted in 2000.
+- [942–950 Grant Avenue](/san-francisco/north-beach/grant-avenue/942/) — A 1907 store building, with stair work permitted in 2020.
+- [945–947 Grant Avenue](/san-francisco/north-beach/grant-avenue/945/) — A 1908 store building, with reroofing permitted in 2010.
+- [949–951 Grant Avenue](/san-francisco/north-beach/grant-avenue/949/) — A 1907 store building, with a seismic retrofit permitted in 1993.
+- [952–966 Grant Avenue](/san-francisco/north-beach/grant-avenue/952/) — A 1906 store building, with foundation work permitted in 2011.
+- [953–957 Grant Avenue](/san-francisco/north-beach/grant-avenue/953/) — A 1907 7-unit building with a ground-floor store, with a seismic retrofit permitted in 1995.
+- [1024–1026 Grant Avenue](/san-francisco/north-beach/grant-avenue/1024/) — A 1908 3-unit building with a ground-floor store, with a seismic retrofit permitted in 1994.
+- [1040–1042 Grant Avenue](/san-francisco/north-beach/grant-avenue/1040/) — A 1959 office building, with plumbing work permitted in 2009.
+- [1044–1046 Grant Avenue](/san-francisco/north-beach/grant-avenue/1044/) — A 1907 3-unit building with a ground-floor store, with reroofing permitted in 2000.
+- [1101–1105 Grant Avenue](/san-francisco/north-beach/grant-avenue/1101/) — A 1906 5-unit apartment building, with a seismic retrofit permitted in 2000.
+- [1109 Grant Avenue](/san-francisco/north-beach/grant-avenue/1109/) — A 1907 store building, with a seismic retrofit permitted in 1999.
+- [1110–1118 Grant Avenue](/san-francisco/north-beach/grant-avenue/1110/) — A 1911 store building, with a seismic retrofit permitted in 2004.
+- [1122–1128 Grant Avenue](/san-francisco/north-beach/grant-avenue/1122/) — A 1911 store building, with a seismic retrofit permitted in 1998.
+- [1134–1138 Grant Avenue](/san-francisco/north-beach/grant-avenue/1134/) — A 1911 hotel, with reroofing permitted in 1998.
+- [1142 Grant Avenue](/san-francisco/north-beach/grant-avenue/1142/) — A 1912 3-unit building with a ground-floor store, with a seismic retrofit permitted in 1994.
+- [602–606 Jackson Street](/san-francisco/chinatown/jackson-street/602/) — A 1909 hotel, with electrical work permitted in 2011.
+- [603–609 Jackson Street](/san-francisco/chinatown/jackson-street/603/) — A 1906 7-unit apartment building, with plumbing work permitted in 2009.
+- [604–620 Jackson Street](/san-francisco/chinatown/jackson-street/604/) — A 1912 store building, with a seismic retrofit permitted in 1997.
+- [614 Jackson Street](/san-francisco/chinatown/jackson-street/614/) — A 1907 store building, with a seismic retrofit permitted in 1997.
+- [615–617 Jackson Street](/san-francisco/chinatown/jackson-street/615/) — A 1907 5-unit building with a ground-floor store, with a kitchen remodel permitted in 2018.
+- [626–636 Jackson Street](/san-francisco/chinatown/jackson-street/626/) — A 1925 theater, with reroofing permitted in 2013.
+- [627–629 Jackson Street](/san-francisco/chinatown/jackson-street/627/) — A 1911 hotel, with facade work permitted in 2018.
+- [631–641 Jackson Street](/san-francisco/chinatown/jackson-street/631/) — A 1907 14-unit apartment building, with a kitchen remodel permitted in 1989.
+- [640–648 Jackson Street](/san-francisco/chinatown/jackson-street/640/) — A 1908 12-unit apartment building, with a kitchen remodel permitted in 1989.
+- [647–649 Jackson Street](/san-francisco/chinatown/jackson-street/647/) — A 1908 store building, with a vertical addition permitted in 1997.
+- [650–654 Jackson Street](/san-francisco/chinatown/jackson-street/650/) — A 1908 6-unit building with a ground-floor store, with a seismic retrofit permitted in 1998.
+- [655–657 Jackson Street](/san-francisco/chinatown/jackson-street/655/) — A 1907 store building, with reroofing permitted in 1998.
+- [656–658 Jackson Street](/san-francisco/chinatown/jackson-street/656/) — A 1907 building, with reroofing permitted in 2025.
+- [660–666 Jackson Street](/san-francisco/chinatown/jackson-street/660/) — A 1910 5-unit building with a ground-floor store, with a seismic retrofit permitted in 1994.
+- [675–677 Jackson Street](/san-francisco/chinatown/jackson-street/675/) — A 1905 store building, with a kitchen remodel permitted in 2023.
+- [706–714 Jackson Street](/san-francisco/chinatown/jackson-street/706/) — A 1907 hotel, with a seismic retrofit permitted in 1993.
+- [716–722 Jackson Street](/san-francisco/chinatown/jackson-street/716/) — A 1908 store building, with a seismic retrofit permitted in 2000.
+- [724–728 Jackson Street](/san-francisco/chinatown/jackson-street/724/) — A 1907 10-unit building with a ground-floor store, with stair work permitted in 2012.
+- [730–734 Jackson Street](/san-francisco/chinatown/jackson-street/730/) — A 1908 14-unit apartment building, with a seismic retrofit permitted in 1996.
+- [735–737 Jackson Street](/san-francisco/chinatown/jackson-street/735/) — A 1907 store building, with a vertical addition permitted in 1992.
+- [740–742 Jackson Street](/san-francisco/chinatown/jackson-street/740/) — A 1907 11-unit apartment building, with a seismic retrofit permitted in 1997.
+- [741–743 Jackson Street](/san-francisco/chinatown/jackson-street/741/) — A 1907 store building, with reroofing permitted in 1995.
+- [748–752 Jackson Street](/san-francisco/chinatown/jackson-street/748/) — A 1908 21-unit apartment building, with reroofing permitted in 2017.
+- [749–757 Jackson Street](/san-francisco/chinatown/jackson-street/749/) — An apartment building, with a seismic retrofit permitted in 1998.
+- [756–758 Jackson Street](/san-francisco/chinatown/jackson-street/756/) — A 1907 store building, with a kitchen and bathroom remodel permitted in 2014.
+- [759–777 Jackson Street](/san-francisco/chinatown/jackson-street/759/) — A 1907 16-unit apartment building, with foundation work permitted in 2007.
+- [768–772 Jackson Street](/san-francisco/chinatown/jackson-street/768/) — A 1908 store building, with a seismic retrofit permitted in 1997.
+- [821–823 Jackson Street](/san-francisco/chinatown/jackson-street/821/) — A 1912 5-unit apartment building, with stair work permitted in 2014.
+- [801–809 Kearny Street](/san-francisco/chinatown/kearny-street/801/) — A 1908 3-unit building with a ground-floor store, with a kitchen remodel permitted in 2010.
+- [825 Kearny Street](/san-francisco/chinatown/kearny-street/825/) — A 1911 church, with foundation work permitted in 2019.
+- [833–839 Kearny Street](/san-francisco/chinatown/kearny-street/833/) — A 1913 hotel, with a seismic retrofit permitted in 1994.
+- [847–849 Kearny Street](/san-francisco/chinatown/kearny-street/847/) — A 1906 3-unit building with a ground-floor store, with foundation work permitted in 2001.
+- [601 Kearny Street](/san-francisco/union-square/kearny-street/601/) — A 1907 office building, with a seismic retrofit permitted in 2000.
+- [605–611 Kearny Street](/san-francisco/union-square/kearny-street/605/) — A 1908 store building, with a seismic retrofit permitted in 2002.
+- [610–612 Kearny Street](/san-francisco/union-square/kearny-street/610/) — A 1908 store building, with a seismic retrofit permitted in 1997.
+- [615–617 Kearny Street](/san-francisco/union-square/kearny-street/615/) — A 1908 4-unit building with a ground-floor store, with a seismic retrofit permitted in 2000.
+- [619–621 Kearny Street](/san-francisco/union-square/kearny-street/619/) — A 1992 store building, with reroofing permitted in 1992.
+- [630–632 Kearny Street](/san-francisco/union-square/kearny-street/630/) — A 1908 store building, with reroofing permitted in 2001.
+- [638–648 Kearny Street](/san-francisco/union-square/kearny-street/638/) — A 1907 hotel, with a seismic retrofit permitted in 1993.
+- [652–660 Kearny Street](/san-francisco/union-square/kearny-street/652/) — A 1906 2-unit building, with deck work permitted in 2023.
+- [712–716 Kearny Street](/san-francisco/union-square/kearny-street/712/) — A 1907 hotel, with a seismic retrofit permitted in 1994.
+- [659 Merchant Street](/san-francisco/financial-district/merchant-street/659/) — A 1922 store building, with facade work permitted in 2020.
+- [628–630 Pacific Avenue](/san-francisco/chinatown/pacific-avenue/628/) — A 1907 hotel, with a seismic retrofit permitted in 1998.
+- [638–644 Pacific Avenue](/san-francisco/chinatown/pacific-avenue/638/) — A 1912 hotel, with a seismic retrofit permitted in 1997.
+- [648–656 Pacific Avenue](/san-francisco/chinatown/pacific-avenue/648/) — A 1911 hotel, with reroofing permitted in 2005.
+- [614 Pine Street](/san-francisco/financial-district/pine-street/614/) — A 1908 hotel, with a seismic retrofit permitted in 1995.
+- [22–24 Ross Alley](/san-francisco/chinatown/ross-alley/22/) — A 1907 5-unit apartment building, with reroofing permitted in 1998.
+- [41–53 Ross Alley](/san-francisco/chinatown/ross-alley/41/) — A 1908 hotel, with reroofing permitted in 2012.
+- [8–14 Ross Alley](/san-francisco/north-beach/ross-alley/8/) — A 1906 10-unit apartment building, with a seismic retrofit permitted in 1995.
+- [688–690 Sacramento Street](/san-francisco/nob-hill/sacramento-street/688/) — A 1916 2-unit building with a ground-floor store, with a seismic retrofit permitted in 1997.
+- [696 Sacramento Street](/san-francisco/nob-hill/sacramento-street/696/) — A 1909 store building, with a kitchen remodel permitted in 2026.
+- [706–710 Sacramento Street](/san-francisco/nob-hill/sacramento-street/706/) — A 1906 8-unit apartment building, with a seismic retrofit permitted in 2000.
+- [716–722 Sacramento Street](/san-francisco/nob-hill/sacramento-street/716/) — A 1915 store building, with reroofing permitted in 2017.
+- [746–762 Sacramento Street](/san-francisco/nob-hill/sacramento-street/746/) — A 1908 25-unit apartment building, with reroofing permitted in 2018.
+- [755 Sacramento Street](/san-francisco/nob-hill/sacramento-street/755/) — A 1925 school building, with permit records from 1994 to 2016.
+- [766–782 Sacramento Street](/san-francisco/nob-hill/sacramento-street/766/) — A 1906 6-unit apartment building, with a rear addition permitted in 1997.
+- [771–773 Sacramento Street](/san-francisco/nob-hill/sacramento-street/771/) — A 1907 3-unit apartment building, with window replacement permitted in 2025.
+- [775–777 Sacramento Street](/san-francisco/nob-hill/sacramento-street/775/) — A 1907 6-unit apartment building, with a kitchen and bathroom remodel permitted in 2023.
+- [816 Sacramento Street](/san-francisco/nob-hill/sacramento-street/816/) — A 1908 10-unit apartment building, with a seismic retrofit permitted in 1997.
+- [855 Sacramento Street](/san-francisco/nob-hill/sacramento-street/855/) — A 1925 building, with a kitchen remodel permitted in 2010.
+- [875 Sacramento Street](/san-francisco/nob-hill/sacramento-street/875/) — A 1926 18-unit apartment building, with a kitchen and bathroom remodel permitted in 2009.
+- [883 Sacramento Street](/san-francisco/nob-hill/sacramento-street/883/) — A 1907 3-unit apartment building, with a seismic retrofit permitted in 2000.
+- [4 Spofford Street](/san-francisco/chinatown/spofford-street/4/) — A 1908 hotel, with a seismic retrofit permitted in 1993.
+- [31–37 Spofford Street](/san-francisco/chinatown/spofford-street/31/) — A 1907 hotel, with reroofing permitted in 1991.
+- [39–49 Spofford Street](/san-francisco/chinatown/spofford-street/39/) — A 1907 hotel, with a seismic retrofit permitted in 1998.
+- [44–54 Spofford Street](/san-francisco/chinatown/spofford-street/44/) — A 1907 hotel, with reroofing permitted in 2012.
+- [48–50 Spofford Street](/san-francisco/chinatown/spofford-street/48/) — A 1906 hotel, with reroofing permitted in 2009.
+- [22–30 Spofford Street](/san-francisco/north-beach/spofford-street/22/) — A 1908 hotel, with a seismic retrofit permitted in 2000.
+- [32–34 Spofford Street](/san-francisco/north-beach/spofford-street/32/) — A 1907 11-unit apartment building, with a seismic retrofit permitted in 2002.
+- [36–60 Spofford Street](/san-francisco/north-beach/spofford-street/36/) — A 1907 9-unit apartment building, with a seismic retrofit permitted in 1994.
+- [800–810 Stockton Street](/san-francisco/chinatown/stockton-street/800/) — A 1911 23-unit apartment building, with a seismic retrofit permitted in 1995.
+- [805–815 Stockton Street](/san-francisco/chinatown/stockton-street/805/) — A 1915 hotel, with a seismic retrofit permitted in 2000.
+- [827–829 Stockton Street](/san-francisco/chinatown/stockton-street/827/) — A 1914 school building, with a seismic retrofit permitted in 1995.
+- [830–848 Stockton Street](/san-francisco/chinatown/stockton-street/830/) — A 1915 18-unit apartment building, with a seismic retrofit permitted in 1992.
+- [843 Stockton Street](/san-francisco/chinatown/stockton-street/843/) — A 1908 school building, with a seismic retrofit permitted in 1995.
+- [850–898 Stockton Street](/san-francisco/chinatown/stockton-street/850/) — A 1910 hotel, with a kitchen remodel permitted in 2019.
+- [865 Stockton Street](/san-francisco/chinatown/stockton-street/865/) — A 1977 store building, with one permit record from 2004.
+- [900–930 Stockton Street](/san-francisco/chinatown/stockton-street/900/) — A 1909 school building, with a seismic retrofit permitted in 1999.
+- [901–907 Stockton Street](/san-francisco/chinatown/stockton-street/901/) — A 1907 8-unit apartment building, with a seismic retrofit permitted in 2002.
+- [913–917 Stockton Street](/san-francisco/chinatown/stockton-street/913/) — A 1908 store building, with reroofing permitted in 2009.
+- [933–949 Stockton Street](/san-francisco/chinatown/stockton-street/933/) — A 1906 assessor class: vacant lot, with an addition permitted in 2016.
+- [946 Stockton Street](/san-francisco/chinatown/stockton-street/946/) — A condominium building whose 72 apartments are held as 72 separate parcels on block 0210A.
+- [1000–1032 Stockton Street](/san-francisco/chinatown/stockton-street/1000/) — A 1907 store building, with reroofing permitted in 2001.
+- [1013–1017 Stockton Street](/san-francisco/chinatown/stockton-street/1013/) — A 1910 hotel, with facade work permitted in 2001.
+- [1019–1027 Stockton Street](/san-francisco/chinatown/stockton-street/1019/) — A 1913 34-unit apartment building, with reroofing permitted in 2021.
+- [1034–1038 Stockton Street](/san-francisco/chinatown/stockton-street/1034/) — A 1910 hotel, with fire repair permitted in 2010.
+- [1035–1055 Stockton Street](/san-francisco/chinatown/stockton-street/1035/) — A 1908 hotel, with a kitchen remodel permitted in 2026.
+- [1040–1044 Stockton Street](/san-francisco/chinatown/stockton-street/1040/) — A 1920 16-unit apartment building, with a kitchen and bathroom remodel permitted in 2024.
+- [1060–1064 Stockton Street](/san-francisco/chinatown/stockton-street/1060/) — A 1908 14-unit apartment building, with reroofing permitted in 2011.
+- [1074–1088 Stockton Street](/san-francisco/chinatown/stockton-street/1074/) — A 1907 hotel, with a seismic retrofit permitted in 2004.
+- [1100–1104 Stockton Street](/san-francisco/chinatown/stockton-street/1100/) — A 1908 store building, with a seismic retrofit permitted in 1995.
+- [1101–1105 Stockton Street](/san-francisco/chinatown/stockton-street/1101/) — A 1910 three-flat, with reroofing permitted in 2009.
+- [1106–1112 Stockton Street](/san-francisco/chinatown/stockton-street/1106/) — A 1908 store building, with window replacement permitted in 2025.
+- [1115–1121 Stockton Street](/san-francisco/chinatown/stockton-street/1115/) — A 1911 11-unit apartment building, with a seismic retrofit permitted in 1995.
+- [1116–1122 Stockton Street](/san-francisco/chinatown/stockton-street/1116/) — A 1910 7-unit building with a ground-floor store, with a seismic retrofit permitted in 1995.
+- [1123–1125 Stockton Street](/san-francisco/chinatown/stockton-street/1123/) — A 1910 6-unit apartment building, with a seismic retrofit permitted in 1994.
+- [1129–1131 Stockton Street](/san-francisco/chinatown/stockton-street/1129/) — A 1908 4-unit apartment building, with a seismic retrofit permitted in 1995.
+- [1135–1139 Stockton Street](/san-francisco/chinatown/stockton-street/1135/) — A 1917 2-unit building with a ground-floor store, with window replacement permitted in 2024.
+- [1141–1145 Stockton Street](/san-francisco/chinatown/stockton-street/1141/) — A 1906 8-unit apartment building, with a seismic retrofit permitted in 2001.
+- [1151–1153 Stockton Street](/san-francisco/chinatown/stockton-street/1151/) — A 1907 2-unit building with a ground-floor store, with a seismic retrofit permitted in 2000.
+- [20–24 Vinton Court](/san-francisco/financial-district/vinton-court/20/) — A 1923 3-unit apartment building, with reroofing permitted in 2008.
+- [17–19 Walter U Lum Place](/san-francisco/north-beach/walter-u-lum-place/17/) — A 1913 store building, with a bathroom remodel permitted in 2016.
+- [21 Walter U Lum Place](/san-francisco/north-beach/walter-u-lum-place/21/) — A 1907 church, with a seismic retrofit permitted in 1997.
+- [720 Washington Street](/san-francisco/financial-district/washington-street/720/) — A 1964 church, with reroofing permitted in 2008.
+- [727 Washington Street](/san-francisco/financial-district/washington-street/727/) — A 1906 5-unit building with a ground-floor store, with a seismic retrofit permitted in 1994.
+- [737–739 Washington Street](/san-francisco/financial-district/washington-street/737/) — A 1906 store building, with a seismic retrofit permitted in 2000.
+- [740–742 Washington Street](/san-francisco/financial-district/washington-street/740/) — A 1907 store building, with reroofing permitted in 2015.
+- [743 Washington Street](/san-francisco/financial-district/washington-street/743/) — A 1909 bank building, with reroofing permitted in 2024.
+- [744 Washington Street](/san-francisco/financial-district/washington-street/744/) — A 1907 store building, with a seismic retrofit permitted in 1994.
+- [746–750 Washington Street](/san-francisco/financial-district/washington-street/746/) — A 1906 store building, with a seismic retrofit permitted in 2000.
+- [802–808 Washington Street](/san-francisco/financial-district/washington-street/802/) — A 1906 store building, with plumbing work permitted in 2004.
+- [816–822 Washington Street](/san-francisco/financial-district/washington-street/816/) — A 1907 store building, with a seismic retrofit permitted in 1996.
+- [824–826 Washington Street](/san-francisco/financial-district/washington-street/824/) — A 1910 hotel, with reroofing permitted in 1988.
+- [833 Washington Street](/san-francisco/financial-district/washington-street/833/) — A 1906 three-flat, with electrical work permitted in 1997.
+- [834–840 Washington Street](/san-francisco/financial-district/washington-street/834/) — A 1920 store building, with a seismic retrofit permitted in 1995.
+- [835–841 Washington Street](/san-francisco/financial-district/washington-street/835/) — A 1906 5-unit building with a ground-floor store, with a seismic retrofit permitted in 1993.
+- [842–848 Washington Street](/san-francisco/financial-district/washington-street/842/) — A 1907 8-unit apartment building, with a seismic retrofit permitted in 2000.
+- [852–864 Washington Street](/san-francisco/financial-district/washington-street/852/) — A 1907 31-unit apartment building, with a seismic retrofit permitted in 1994.
+- [855–857 Washington Street](/san-francisco/financial-district/washington-street/855/) — A 1906 2-unit building with a ground-floor store, with a seismic retrofit permitted in 2001.
+- [868–878 Washington Street](/san-francisco/financial-district/washington-street/868/) — A 1907 hotel, with a seismic retrofit permitted in 1996.
+- [920 Washington Street](/san-francisco/financial-district/washington-street/920/) — A 1910 church, with a rear addition permitted in 1989.
+- [940 Washington Street](/san-francisco/financial-district/washington-street/940/) — A 1911 church, with a seismic retrofit permitted in 2012.
+- [954 Washington Street](/san-francisco/financial-district/washington-street/954/) — A 1900 school building, with permit records from 1992 to 2009.
+- [29–35 Waverly Place](/san-francisco/chinatown/waverly-place/29/) — A 1911 3-unit building, with a seismic retrofit permitted in 1997.
+- [37–39 Waverly Place](/san-francisco/chinatown/waverly-place/37/) — A 1911 5-unit apartment building, with a kitchen and bathroom remodel permitted in 2018.
+- [41–45 Waverly Place](/san-francisco/chinatown/waverly-place/41/) — A 1907 hotel, with a seismic retrofit permitted in 1998.
+- [1–15 Waverly Place](/san-francisco/north-beach/waverly-place/1/) — A 1908 church, with window replacement permitted in 2025.
+- [16 Waverly Place](/san-francisco/north-beach/waverly-place/16/) — A 1907 3-unit building with a ground-floor store, with window replacement permitted in 1988.
+- [18–20 Waverly Place](/san-francisco/north-beach/waverly-place/18/) — A 1907 5-unit apartment building, with a seismic retrofit permitted in 1999.
+- [53–61 Waverly Place](/san-francisco/north-beach/waverly-place/53/) — A 1907 office building, with a seismic retrofit permitted in 1996.
+- [100–108 Waverly Place](/san-francisco/north-beach/waverly-place/100/) — A 1906 4-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2025.
+- [109–115 Waverly Place](/san-francisco/north-beach/waverly-place/109/) — A 1907 store building, with a seismic retrofit permitted in 1999.
+- [112–118 Waverly Place](/san-francisco/north-beach/waverly-place/112/) — A 1906 9-unit apartment building, with a seismic retrofit permitted in 1995.
+- [117–123 Waverly Place](/san-francisco/north-beach/waverly-place/117/) — A 1907 office building, with a seismic retrofit permitted in 2001.
+- [124–132 Waverly Place](/san-francisco/north-beach/waverly-place/124/) — A 1907 hotel, with reroofing permitted in 2001.
+- [125–129 Waverly Place](/san-francisco/north-beach/waverly-place/125/) — A 1911 2-unit building, with a seismic retrofit permitted in 1993.
+- [131 Waverly Place](/san-francisco/north-beach/waverly-place/131/) — A 1907 store building, with stair work permitted in 2005.
+- [133–141 Waverly Place](/san-francisco/north-beach/waverly-place/133/) — A 1909 3-unit building, with stair work permitted in 2005.
+- [138–142 Waverly Place](/san-francisco/north-beach/waverly-place/138/) — A 1910 3-unit building, with a seismic retrofit permitted in 1993.
+- [143–147 Waverly Place](/san-francisco/north-beach/waverly-place/143/) — A 1906 5-unit building with a ground-floor store, with a seismic retrofit permitted in 1996.
+- [146–150 Waverly Place](/san-francisco/north-beach/waverly-place/146/) — A 1907 office building, with a seismic retrofit permitted in 2001.
+- [151–155 Waverly Place](/san-francisco/north-beach/waverly-place/151/) — A 1906 4-unit building with a ground-floor store, with a seismic retrofit permitted in 1995.
+- [15–17 Wentworth Place](/san-francisco/north-beach/wentworth-place/15/) — A 1907 two-flat, with a seismic retrofit permitted in 1992.
+- [19 Wentworth Place](/san-francisco/north-beach/wentworth-place/19/) — A 1907 three-flat, with permit records from 1984 to 2002.
+- [20–36 Wentworth Place](/san-francisco/north-beach/wentworth-place/20/) — A 1907 hotel, with a seismic retrofit permitted in 2001.
+
+The district record is the city's; the buildings beneath it are
+generated from the DataSF datasets listed in each page's Sources
+footer, and are corrected by hand as readers write in.
