@@ -1,0 +1,254 @@
+# Uptown Tenderloin Historic District
+
+The buildings documented here so far inside the Uptown Tenderloin Historic District, and the streets it runs through.
+
+## Streets
+
+- [Eddy Street](/san-francisco/tenderloin/eddy-street/) — 26 documented buildings inside the district.
+- [Ellis Street](/san-francisco/tenderloin/ellis-street/) — 40 documented buildings inside the district.
+- [Geary Street, Tenderloin](/san-francisco/tenderloin/geary-street/) — 25 documented buildings inside the district.
+- [Geary Street, Union Square](/san-francisco/union-square/geary-street/) — 3 documented buildings inside the district.
+- [Golden Gate Avenue](/san-francisco/tenderloin/golden-gate-avenue/) — 16 documented buildings inside the district.
+- [Hyde Street, Nob Hill](/san-francisco/nob-hill/hyde-street/) — 4 documented buildings inside the district.
+- [Hyde Street, Tenderloin](/san-francisco/tenderloin/hyde-street/) — 13 documented buildings inside the district.
+- [Jones Street, Nob Hill](/san-francisco/nob-hill/jones-street/) — 1 documented building inside the district.
+- [Jones Street, Tenderloin](/san-francisco/tenderloin/jones-street/) — 13 documented buildings inside the district.
+- [Larkin Street](/san-francisco/nob-hill/larkin-street/) — 12 documented buildings inside the district.
+- [Leavenworth Street, Nob Hill](/san-francisco/nob-hill/leavenworth-street/) — 8 documented buildings inside the district.
+- [Leavenworth Street, Tenderloin](/san-francisco/tenderloin/leavenworth-street/) — 5 documented buildings inside the district.
+- [Mason Street](/san-francisco/tenderloin/mason-street/) — 2 documented buildings inside the district.
+- [Mcallister Street](/san-francisco/tenderloin/mcallister-street/) — 1 documented building inside the district.
+- [Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/) — 28 documented buildings inside the district.
+- [Taylor Street](/san-francisco/tenderloin/taylor-street/) — 7 documented buildings inside the district.
+- [Turk Street](/san-francisco/tenderloin/turk-street/) — 20 documented buildings inside the district.
+
+## Buildings
+
+- [110 Eddy Street](/san-francisco/tenderloin/eddy-street/110/) — A 1914 hotel, with a kitchen remodel permitted in 2016.
+- [128–132 Eddy Street](/san-francisco/tenderloin/eddy-street/128/) — A 1907 4-unit apartment building, with a bathroom remodel permitted in 2021.
+- [141–145 Eddy Street](/san-francisco/tenderloin/eddy-street/141/) — A 1907 hotel, with an addition permitted in 2017.
+- [156–166 Eddy Street](/san-francisco/tenderloin/eddy-street/156/) — A 1908 hotel, with stair work permitted in 1985.
+- [163–181 Eddy Street](/san-francisco/tenderloin/eddy-street/163/) — A 1911 store building, with a kitchen remodel permitted in 2012.
+- [200–216 Eddy Street](/san-francisco/tenderloin/eddy-street/200/) — A 1911 hotel, with a seismic retrofit permitted in 2020.
+- [230–232 Eddy Street](/san-francisco/tenderloin/eddy-street/230/) — A 1927 hotel, with reroofing permitted in 2001.
+- [233–235 Eddy Street](/san-francisco/tenderloin/eddy-street/233/) — A 1906 hotel, with plumbing work permitted in 2006.
+- [234–238 Eddy Street](/san-francisco/tenderloin/eddy-street/234/) — A 1909 hotel, with a seismic retrofit permitted in 1998.
+- [265 Eddy Street](/san-francisco/tenderloin/eddy-street/265/) — A 1924 garage, with permit records from 2012 to 2016.
+- [302–308 Eddy Street](/san-francisco/tenderloin/eddy-street/302/) — A 1983 73-unit apartment building, with permit records from 1973 to 2024.
+- [340 Eddy Street](/san-francisco/tenderloin/eddy-street/340/) — A 1911 83-unit apartment building, with reroofing permitted in 2004.
+- [364 Eddy Street](/san-francisco/tenderloin/eddy-street/364/) — A 1909 hotel, with a seismic retrofit permitted in 1995.
+- [366–398 Eddy Street](/san-francisco/tenderloin/eddy-street/366/) — A 1908 hotel, with stair work permitted in 2025.
+- [375 Eddy Street](/san-francisco/tenderloin/eddy-street/375/) — A 1916 37-unit apartment building, with reroofing permitted in 1991.
+- [385–387 Eddy Street](/san-francisco/tenderloin/eddy-street/385/) — A 1909 hotel, with a seismic retrofit permitted in 2019.
+- [393–399 Eddy Street](/san-francisco/tenderloin/eddy-street/393/) — A 1907 hotel, with a kitchen remodel permitted in 2009.
+- [401–411 Eddy Street](/san-francisco/tenderloin/eddy-street/401/) — A 1907 hotel, with a seismic retrofit permitted in 2001.
+- [410 Eddy Street](/san-francisco/tenderloin/eddy-street/410/) — A 1907 hotel, with reroofing permitted in 2004.
+- [438–440 Eddy Street](/san-francisco/tenderloin/eddy-street/438/) — A 1909 hotel, with reroofing permitted in 2002.
+- [466 Eddy Street](/san-francisco/tenderloin/eddy-street/466/) — A 1900 store building, with garage work permitted in 2014.
+- [484–490 Eddy Street](/san-francisco/tenderloin/eddy-street/484/) — A 1910 three-flat, with reroofing permitted in 1990.
+- [493–499 Eddy Street](/san-francisco/tenderloin/eddy-street/493/) — A 1907 hotel, with a seismic retrofit permitted in 1995.
+- [555 Eddy Street](/san-francisco/tenderloin/eddy-street/555/) — A 1910 39-unit apartment building, with reroofing permitted in 2014.
+- [640–642 Eddy Street](/san-francisco/tenderloin/eddy-street/640/) — A 1907 32-unit apartment building, with a seismic retrofit permitted in 1999.
+- [670–678 Eddy Street](/san-francisco/tenderloin/eddy-street/670/) — A 1907 hotel, with an addition permitted in 2025.
+- [201–229 Ellis Street](/san-francisco/tenderloin/ellis-street/201/) — A 1910 hotel, with an addition permitted in 2018.
+- [275 Ellis Street](/san-francisco/tenderloin/ellis-street/275/) — A 1963 store building, with reroofing permitted in 1995.
+- [281–285 Ellis Street](/san-francisco/tenderloin/ellis-street/281/) — A 1922 store building, with a kitchen and bathroom remodel permitted in 2008.
+- [330 Ellis Street](/san-francisco/tenderloin/ellis-street/330/) — A 1930 office building, with window replacement permitted in 2005.
+- [350 Ellis Street](/san-francisco/tenderloin/ellis-street/350/) — A 1970 96-unit apartment building, with an addition permitted in 2015.
+- [355–357 Ellis Street](/san-francisco/tenderloin/ellis-street/355/) — A 1907 hotel, with a seismic retrofit permitted in 1995.
+- [369 Ellis Street](/san-francisco/tenderloin/ellis-street/369/) — A 1924 building, with reroofing permitted in 1989.
+- [373–377 Ellis Street](/san-francisco/tenderloin/ellis-street/373/) — A 1910 hotel, with a seismic retrofit permitted in 2004.
+- [379 Ellis Street](/san-francisco/tenderloin/ellis-street/379/) — A 1921 store building, with a bathroom remodel permitted in 1994.
+- [380–386 Ellis Street](/san-francisco/tenderloin/ellis-street/380/) — A 1919 assessor class: vacant lot, with a seismic retrofit permitted in 2002.
+- [387–397 Ellis Street](/san-francisco/tenderloin/ellis-street/387/) — A 1913 hotel, with reroofing permitted in 2012.
+- [401–421 Ellis Street](/san-francisco/tenderloin/ellis-street/401/) — A 1907 23-unit apartment building, with a seismic retrofit permitted in 1999.
+- [424 Ellis Street](/san-francisco/tenderloin/ellis-street/424/) — A 1915 62-unit apartment building, with a kitchen and bathroom remodel permitted in 2023.
+- [425–433 Ellis Street](/san-francisco/tenderloin/ellis-street/425/) — A 1911 hotel, with a seismic retrofit permitted in 1995.
+- [440 Ellis Street](/san-francisco/tenderloin/ellis-street/440/) — A 1938 office building, with reroofing permitted in 1989.
+- [441 Ellis Street](/san-francisco/tenderloin/ellis-street/441/) — A 1915 81-unit apartment building, with a kitchen remodel permitted in 2001.
+- [450 Ellis Street](/san-francisco/tenderloin/ellis-street/450/) — A 1909 31-unit apartment building, with a seismic retrofit permitted in 2000.
+- [455–457 Ellis Street](/san-francisco/tenderloin/ellis-street/455/) — A 1911 10-unit apartment building, with a seismic retrofit permitted in 2000.
+- [463–465 Ellis Street](/san-francisco/tenderloin/ellis-street/463/) — A 1913 hotel, with a seismic retrofit permitted in 1995.
+- [468–488 Ellis Street](/san-francisco/tenderloin/ellis-street/468/) — A 1908 hotel, with a seismic retrofit permitted in 2008.
+- [471 Ellis Street](/san-francisco/tenderloin/ellis-street/471/) — A 1913 12-unit apartment building, with permit records from 1983 to 2024.
+- [473 Ellis Street](/san-francisco/tenderloin/ellis-street/473/) — A 1926 hotel, with window replacement permitted in 2009.
+- [500–516 Ellis Street](/san-francisco/tenderloin/ellis-street/500/) — A 1910 38-unit apartment building, with a seismic retrofit permitted in 1997.
+- [517–519 Ellis Street](/san-francisco/tenderloin/ellis-street/517/) — An assessor class: parking lot, with fire repair permitted in 2013.
+- [518–530 Ellis Street](/san-francisco/tenderloin/ellis-street/518/) — A 1915 36-unit apartment building, with permit records from 1982 to 1989.
+- [565–567 Ellis Street](/san-francisco/tenderloin/ellis-street/565/) — A 1922 15-unit apartment building, with facade work permitted in 2026.
+- [606 Ellis Street](/san-francisco/tenderloin/ellis-street/606/) — A 1907 single-family house, with a kitchen and bathroom remodel permitted in 2019.
+- [615–629 Ellis Street](/san-francisco/tenderloin/ellis-street/615/) — A 1909 12-unit apartment building, with a seismic retrofit permitted in 1998.
+- [628–630 Ellis Street](/san-francisco/tenderloin/ellis-street/628/) — A 1907 3-unit building with a ground-floor store, with a seismic retrofit permitted in 2004.
+- [632 Ellis Street](/san-francisco/tenderloin/ellis-street/632/) — A 1920 garage, with a seismic retrofit permitted in 2000.
+- [646 Ellis Street](/san-francisco/tenderloin/ellis-street/646/) — A 1908 10-unit apartment building, with a seismic retrofit permitted in 2000.
+- [669 Ellis Street](/san-francisco/tenderloin/ellis-street/669/) — A 1909 14-unit apartment building, with a seismic retrofit permitted in 2002.
+- [677 Ellis Street](/san-francisco/tenderloin/ellis-street/677/) — A 1908 14-unit apartment building, with a kitchen and bathroom remodel permitted in 2017.
+- [681–687 Ellis Street](/san-francisco/tenderloin/ellis-street/681/) — A 1927 hotel, with reroofing permitted in 2000.
+- [684 Ellis Street](/san-francisco/tenderloin/ellis-street/684/) — A 1913 84-unit apartment building, with reroofing permitted in 2007.
+- [706–710 Ellis Street](/san-francisco/tenderloin/ellis-street/706/) — A 1908 hotel, with a seismic retrofit permitted in 2001.
+- [735 Ellis Street](/san-francisco/tenderloin/ellis-street/735/) — A 1909 26-unit apartment building, with foundation work permitted in 2001.
+- [747 Ellis Street](/san-francisco/tenderloin/ellis-street/747/) — A 1910 14-unit apartment building, with a seismic retrofit permitted in 2000.
+- [751 Ellis Street](/san-francisco/tenderloin/ellis-street/751/) — A 1920 garage, with reroofing permitted in 1997.
+- [765 Ellis Street](/san-francisco/tenderloin/ellis-street/765/) — A 1913 15-unit apartment building, with a seismic retrofit permitted in 1998.
+- [550 Geary Street](/san-francisco/tenderloin/geary-street/550/) — A 1929 hotel, with a bathroom remodel permitted in 2002.
+- [673 Geary Street](/san-francisco/tenderloin/geary-street/673/) — A 1916 store building, with facade work permitted in 2012.
+- [679–689 Geary Street](/san-francisco/tenderloin/geary-street/679/) — A 1916 43-unit apartment building, with a kitchen remodel permitted in 2024.
+- [701–715 Geary Street](/san-francisco/tenderloin/geary-street/701/) — A 1917 39-unit apartment building, with a kitchen remodel permitted in 2024.
+- [725–727 Geary Street](/san-francisco/tenderloin/geary-street/725/) — A 1907 hotel, with a seismic retrofit permitted in 1998.
+- [735 Geary Street](/san-francisco/tenderloin/geary-street/735/) — A 1922 21-unit apartment building, with a seismic retrofit permitted in 1998.
+- [746 Geary Street](/san-francisco/tenderloin/geary-street/746/) — A 1917 26-unit apartment building, with reroofing permitted in 1984.
+- [747 Geary Street](/san-francisco/tenderloin/geary-street/747/) — A 1922 21-unit apartment building, with a seismic retrofit permitted in 1998.
+- [765 Geary Street](/san-francisco/tenderloin/geary-street/765/) — A 1911 48-unit apartment building, with stair work permitted in 2017.
+- [775 Geary Street](/san-francisco/tenderloin/geary-street/775/) — A 1923 36-unit apartment building, with an accessory dwelling unit permitted in 2016.
+- [795 Geary Street](/san-francisco/tenderloin/geary-street/795/) — A 1912 48-unit apartment building, with reroofing permitted in 1998.
+- [807–815 Geary Street](/san-francisco/tenderloin/geary-street/807/) — A 1926 hotel, with reroofing permitted in 2006.
+- [846–854 Geary Street](/san-francisco/tenderloin/geary-street/846/) — A 1922 26-unit apartment building, with a kitchen remodel permitted in 2014.
+- [860 Geary Street](/san-francisco/tenderloin/geary-street/860/) — A 1913 41-unit apartment building, with reroofing permitted in 2025.
+- [869–887 Geary Street](/san-francisco/tenderloin/geary-street/869/) — A 1922 store building, with reroofing permitted in 1991.
+- [882–886 Geary Street](/san-francisco/tenderloin/geary-street/882/) — A 1916 3-unit building with a ground-floor store, with stair work permitted in 2012.
+- [890 Geary Street](/san-francisco/tenderloin/geary-street/890/) — A 1916 27-unit apartment building, with a seismic retrofit permitted in 2001.
+- [900–924 Geary Street](/san-francisco/tenderloin/geary-street/900/) — A 1909 hotel, with fire repair permitted in 1999.
+- [901–909 Geary Street](/san-francisco/tenderloin/geary-street/901/) — A 1914 hotel, with an addition permitted in 2025.
+- [925 Geary Street](/san-francisco/tenderloin/geary-street/925/) — A 1913 48-unit apartment building, with a seismic retrofit permitted in 1997.
+- [936–940 Geary Street](/san-francisco/tenderloin/geary-street/936/) — A 1923 32-unit apartment building, with a kitchen and bathroom remodel permitted in 2022.
+- [937–941 Geary Street](/san-francisco/tenderloin/geary-street/937/) — A 1920 store building, with a seismic retrofit permitted in 1997.
+- [943–947 Geary Street](/san-francisco/tenderloin/geary-street/943/) — A 1914 12-unit apartment building, with a seismic retrofit permitted in 1998.
+- [946 Geary Street](/san-francisco/tenderloin/geary-street/946/) — A 1916 10-unit apartment building, with a seismic retrofit permitted in 2000.
+- [965 Geary Street](/san-francisco/tenderloin/geary-street/965/) — A 1912 44-unit apartment building, with reroofing permitted in 2000.
+- [501–507 Geary Street](/san-francisco/union-square/geary-street/501/) — A 1907 hotel, with stair work permitted in 2014.
+- [516–528 Geary Street](/san-francisco/union-square/geary-street/516/) — A 1923 88-unit apartment building, with a kitchen remodel permitted in 2019.
+- [549–561 Geary Street](/san-francisco/union-square/geary-street/549/) — A 1918 store building, with a seismic retrofit permitted in 2002.
+- [48–50 Golden Gate Avenue](/san-francisco/tenderloin/golden-gate-avenue/48/) — A 1911 77-unit apartment building, with a kitchen and bathroom remodel permitted in 2014.
+- [64 Golden Gate Avenue](/san-francisco/tenderloin/golden-gate-avenue/64/) — A 1910 store building, with reroofing permitted in 2020.
+- [86–98 Golden Gate Avenue](/san-francisco/tenderloin/golden-gate-avenue/86/) — A 1918 store building, with reroofing permitted in 2020.
+- [133 Golden Gate Avenue](/san-francisco/tenderloin/golden-gate-avenue/133/) — A church, with a seismic retrofit permitted in 1999.
+- [134 Golden Gate Avenue](/san-francisco/tenderloin/golden-gate-avenue/134/) — A 1917 store building, with a seismic retrofit permitted in 2003.
+- [150 Golden Gate Avenue](/san-francisco/tenderloin/golden-gate-avenue/150/) — A 1912 building, with a kitchen remodel permitted in 2014.
+- [175 Golden Gate Avenue](/san-francisco/tenderloin/golden-gate-avenue/175/) — An 1899 church, with permit records from 2008 to 2026.
+- [177–191 Golden Gate Avenue](/san-francisco/tenderloin/golden-gate-avenue/177/) — A 1916 store building, with a kitchen and bathroom remodel permitted in 1984.
+- [201–215 Golden Gate Avenue](/san-francisco/tenderloin/golden-gate-avenue/201/) — A 1920 office building, with reroofing permitted in 2013.
+- [210–220 Golden Gate Avenue](/san-francisco/tenderloin/golden-gate-avenue/210/) — A 1909 hotel, with facade work permitted in 2000.
+- [240 Golden Gate Avenue](/san-francisco/tenderloin/golden-gate-avenue/240/) — A 1907 office building, with fire repair permitted in 1986.
+- [241–243 Golden Gate Avenue](/san-francisco/tenderloin/golden-gate-avenue/241/) — A 1916 store building, with permit records from 1989 to 2003.
+- [248–250 Golden Gate Avenue](/san-francisco/tenderloin/golden-gate-avenue/248/) — A 1911 hotel, with a seismic retrofit permitted in 2001.
+- [255 Golden Gate Avenue](/san-francisco/tenderloin/golden-gate-avenue/255/) — A 1916 store building, with stair work permitted in 2012.
+- [276–284 Golden Gate Avenue](/san-francisco/tenderloin/golden-gate-avenue/276/) — A 1913 hotel, with facade work permitted in 2017.
+- [366–390 Golden Gate Avenue](/san-francisco/tenderloin/golden-gate-avenue/366/) — A 1911 111-unit apartment building, with electrical work permitted in 1985.
+- [611–619 Hyde Street](/san-francisco/nob-hill/hyde-street/611/) — A 1916 26-unit apartment building, with a seismic retrofit permitted in 1999.
+- [628–632 Hyde Street](/san-francisco/nob-hill/hyde-street/628/) — A 1907 7-unit apartment building, with a seismic retrofit permitted in 1994.
+- [639 Hyde Street](/san-francisco/nob-hill/hyde-street/639/) — A 1910 store building, with a rear addition permitted in 1988.
+- [645 Hyde Street](/san-francisco/nob-hill/hyde-street/645/) — A 1907 single-family house, with reroofing permitted in 1998.
+- [125 Hyde Street](/san-francisco/tenderloin/hyde-street/125/) — A 1931 store building, with reroofing permitted in 2019.
+- [135–145 Hyde Street](/san-francisco/tenderloin/hyde-street/135/) — A 1920 garage, with a seismic retrofit permitted in 1996.
+- [222–228 Hyde Street](/san-francisco/tenderloin/hyde-street/222/) — A 1911 4-unit building with a ground-floor store, with plumbing work permitted in 2001.
+- [240 Hyde Street](/san-francisco/tenderloin/hyde-street/240/) — A 1929 hotel, with reroofing permitted in 2026.
+- [245–257 Hyde Street](/san-francisco/tenderloin/hyde-street/245/) — An office building, with one permit record from 2019.
+- [300–302 Hyde Street](/san-francisco/tenderloin/hyde-street/300/) — A 1917 19-unit apartment building, with reroofing permitted in 2018.
+- [334 Hyde Street](/san-francisco/tenderloin/hyde-street/334/) — A 1915 12-unit apartment building, with a seismic retrofit permitted in 2001.
+- [359 Hyde Street](/san-francisco/tenderloin/hyde-street/359/) — A 1916 48-unit apartment building, with stair work permitted in 2019.
+- [440 Hyde Street](/san-francisco/tenderloin/hyde-street/440/) — A 1916 16-unit apartment building, with a kitchen remodel permitted in 2013.
+- [451 Hyde Street](/san-francisco/tenderloin/hyde-street/451/) — A 1909 7-unit apartment building, with a seismic retrofit permitted in 2001.
+- [525 Hyde Street](/san-francisco/tenderloin/hyde-street/525/) — A 1914 14-unit apartment building, with electrical work permitted in 2020.
+- [545–555 Hyde Street](/san-francisco/tenderloin/hyde-street/545/) — A 1911 15-unit apartment building, with a seismic retrofit permitted in 2004.
+- [625 Hyde Street](/san-francisco/tenderloin/hyde-street/625/) — A 1920 7-unit apartment building, with a vertical addition permitted in 2016.
+- [536–544 Jones Street](/san-francisco/nob-hill/jones-street/536/) — A 1926 hotel, with fire repair permitted in 1991.
+- [39–41 Jones Street](/san-francisco/tenderloin/jones-street/39/) — A 1907 hotel, with a seismic retrofit permitted in 2003.
+- [118 Jones Street](/san-francisco/tenderloin/jones-street/118/) — A 1922 store building, with a rear addition permitted in 2000.
+- [132–140 Jones Street](/san-francisco/tenderloin/jones-street/132/) — A 1924 hotel, with window replacement permitted in 1996.
+- [205 Jones Street](/san-francisco/tenderloin/jones-street/205/) — A 1924 52-unit apartment building, with a kitchen remodel permitted in 1995.
+- [219–233 Jones Street](/san-francisco/tenderloin/jones-street/219/) — A 1925 20-unit apartment building, with foundation work permitted in 2006.
+- [226–230 Jones Street](/san-francisco/tenderloin/jones-street/226/) — A 1924 office building, with stair work permitted in 2007.
+- [240–288 Jones Street](/san-francisco/tenderloin/jones-street/240/) — A 1925 hotel, with reroofing permitted in 1991.
+- [241 Jones Street](/san-francisco/tenderloin/jones-street/241/) — A 1928 hotel, with foundation work permitted in 2006.
+- [415 Jones Street](/san-francisco/tenderloin/jones-street/415/) — A 1912 69-unit apartment building, with reroofing permitted in 2023.
+- [420 Jones Street](/san-francisco/tenderloin/jones-street/420/) — A 1907 hotel, with a seismic retrofit permitted in 2001.
+- [431–439 Jones Street](/san-francisco/tenderloin/jones-street/431/) — A 1910 hotel, with reroofing permitted in 2018.
+- [450 Jones Street](/san-francisco/tenderloin/jones-street/450/) — A 1910 60-unit apartment building, with a seismic retrofit permitted in 2001.
+- [511–515 Jones Street](/san-francisco/tenderloin/jones-street/511/) — A 1913 hotel, with reroofing permitted in 2003.
+- [452–460 Larkin Street](/san-francisco/nob-hill/larkin-street/452/) — A 1911 14-unit apartment building, with a kitchen remodel permitted in 2026.
+- [500–514 Larkin Street](/san-francisco/nob-hill/larkin-street/500/) — A 1912 54-unit apartment building, with a bathroom remodel permitted in 2021.
+- [601–603 Larkin Street](/san-francisco/nob-hill/larkin-street/601/) — A 1907 2-unit building with a ground-floor store, with a seismic retrofit permitted in 2000.
+- [607–611 Larkin Street](/san-francisco/nob-hill/larkin-street/607/) — A 1911 store building, with a seismic retrofit permitted in 2001.
+- [664–672 Larkin Street](/san-francisco/nob-hill/larkin-street/664/) — A 1906 hotel, with a kitchen and bathroom remodel permitted in 2013.
+- [724 Larkin Street](/san-francisco/nob-hill/larkin-street/724/) — A 1916 store building, with a seismic retrofit permitted in 2000.
+- [730 Larkin Street](/san-francisco/nob-hill/larkin-street/730/) — A 1913 store building, with reroofing permitted in 2018.
+- [731–743 Larkin Street](/san-francisco/nob-hill/larkin-street/731/) — A 1917 store building, with electrical work permitted in 2015.
+- [734–738 Larkin Street](/san-francisco/nob-hill/larkin-street/734/) — A 1909 20-unit apartment building, with a seismic retrofit permitted in 2002.
+- [744–748 Larkin Street](/san-francisco/nob-hill/larkin-street/744/) — A 1910 store building, with reroofing permitted in 2008.
+- [800–808 Larkin Street](/san-francisco/nob-hill/larkin-street/800/) — A 1914 hotel, with plumbing work permitted in 2010.
+- [926–932 Larkin Street](/san-francisco/nob-hill/larkin-street/926/) — A 1916 11-unit apartment building, with a seismic retrofit permitted in 2002.
+- [317 Leavenworth Street](/san-francisco/nob-hill/leavenworth-street/317/) — A 1910 hotel, with a kitchen remodel permitted in 2015.
+- [325 Leavenworth Street](/san-francisco/nob-hill/leavenworth-street/325/) — A 1907 hotel, with a seismic retrofit permitted in 2001.
+- [335 Leavenworth Street](/san-francisco/nob-hill/leavenworth-street/335/) — A 1907 hotel, with a seismic retrofit permitted in 2001.
+- [345 Leavenworth Street](/san-francisco/nob-hill/leavenworth-street/345/) — A 1919 31-unit apartment building, with a seismic retrofit permitted in 2001.
+- [391 Leavenworth Street](/san-francisco/nob-hill/leavenworth-street/391/) — A 1907 hotel, with a seismic retrofit permitted in 1992.
+- [434 Leavenworth Street](/san-francisco/nob-hill/leavenworth-street/434/) — A 1911 59-unit apartment building, with a kitchen and bathroom remodel permitted in 2021.
+- [540 Leavenworth Street](/san-francisco/nob-hill/leavenworth-street/540/) — A 1914 44-unit apartment building, with a kitchen and bathroom remodel permitted in 2013.
+- [550 Leavenworth Street](/san-francisco/nob-hill/leavenworth-street/550/) — A 1915 26-unit apartment building, with fire repair permitted in 2011.
+- [60 Leavenworth Street](/san-francisco/tenderloin/leavenworth-street/60/) — A 1923 28-unit apartment building, with fire repair permitted in 2025.
+- [151–161 Leavenworth Street](/san-francisco/tenderloin/leavenworth-street/151/) — A 1907 hotel, with a seismic retrofit permitted in 1999.
+- [201–225 Leavenworth Street](/san-francisco/tenderloin/leavenworth-street/201/) — A 1914 hotel, with fire repair permitted in 1991.
+- [236–238 Leavenworth Street](/san-francisco/tenderloin/leavenworth-street/236/) — A 1914 16-unit apartment building, with fire repair permitted in 2002.
+- [245 Leavenworth Street](/san-francisco/tenderloin/leavenworth-street/245/) — A 1910 49-unit apartment building, with a seismic retrofit permitted in 2002.
+- [34–38 Mason Street](/san-francisco/tenderloin/mason-street/34/) — A 1907 store building, with plumbing work permitted in 2012.
+- [48–56 Mason Street](/san-francisco/tenderloin/mason-street/48/) — A 1908 hotel, with plumbing work permitted in 2012.
+- [136–154 Mcallister Street](/san-francisco/tenderloin/mcallister-street/136/) — A 1910 114-unit apartment building, with fire repair permitted in 2022.
+- [401–411 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/401/) — A 1910 hotel, with stair work permitted in 2016.
+- [415–421 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/415/) — A 1908 hotel, with a bathroom remodel permitted in 2018.
+- [433–445 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/433/) — A 1907 hotel, with a kitchen and bathroom remodel permitted in 2016.
+- [434–436 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/434/) — A 1910 office building, with plumbing work permitted in 2002.
+- [438 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/438/) — A 1910 hotel, with a seismic retrofit permitted in 1995.
+- [450–478 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/450/) — A 1923 church, with deck work permitted in 2010.
+- [474–480 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/474/) — A 1913 store building, with a seismic retrofit permitted in 2002.
+- [498 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/498/) — A 1908 hotel, with reroofing permitted in 1986.
+- [516 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/516/) — A 1912 hotel, with window replacement permitted in 2015.
+- [525 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/525/) — A 1911 26-unit apartment building, with a seismic retrofit permitted in 1992.
+- [545 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/545/) — A 1910 79-unit apartment building, with fire repair permitted in 1995.
+- [550 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/550/) — A 1924 garage, with foundation work permitted in 2022.
+- [570–572 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/570/) — A 1907 hotel, with a kitchen remodel permitted in 2014.
+- [579 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/579/) — A 1907 hotel, with reroofing permitted in 1990.
+- [580 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/580/) — A 1911 hotel, with reroofing permitted in 2026.
+- [587–593 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/587/) — A 1914 2-unit building with a ground-floor store, with a seismic retrofit permitted in 2001.
+- [620–626 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/620/) — A 1909 hotel, with a seismic retrofit permitted in 2001.
+- [641 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/641/) — A 1907 97-unit apartment building, with a seismic retrofit permitted in 2001.
+- [646 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/646/) — A 1915 11-unit apartment building, with a seismic retrofit permitted in 2001.
+- [656 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/656/) — A 1916 17-unit apartment building, with fire repair permitted in 2023.
+- [683–699 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/683/) — A 1916 38-unit apartment building, with a seismic retrofit permitted in 2002.
+- [700 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/700/) — A 1911 38-unit apartment building, with a seismic retrofit permitted in 1998.
+- [730 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/730/) — A 1923 23-unit apartment building, with reroofing permitted in 2023.
+- [750 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/750/) — A 1913 48-unit apartment building, with an accessory dwelling unit permitted in 2016.
+- [770 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/770/) — A 1914 hotel, with a seismic retrofit permitted in 1998.
+- [791–793 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/791/) — A 1908 7-unit apartment building, with a seismic retrofit permitted in 2000.
+- [835 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/835/) — A 1996 hotel, with window replacement permitted in 2021.
+- [859 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/859/) — A 1907 store building, with reroofing permitted in 2017.
+- [101–121 Taylor Street](/san-francisco/tenderloin/taylor-street/101/) — A 1907 hotel, with plumbing work permitted in 1986.
+- [108–120 Taylor Street](/san-francisco/tenderloin/taylor-street/108/) — A 1907 hotel, with stair work permitted in 2015.
+- [136–142 Taylor Street](/san-francisco/tenderloin/taylor-street/136/) — A 1908 office building, with a seismic retrofit permitted in 2001.
+- [225 Taylor Street](/san-francisco/tenderloin/taylor-street/225/) — A 1910 24-unit apartment building, with reroofing permitted in 2023.
+- [345 Taylor Street](/san-francisco/tenderloin/taylor-street/345/) — A 1926 hotel, with plumbing work permitted in 2016.
+- [405–415 Taylor Street](/san-francisco/tenderloin/taylor-street/405/) — A 1912 garage, with reroofing permitted in 2009.
+- [501 Taylor Street](/san-francisco/tenderloin/taylor-street/501/) — A 1920 81-unit apartment building, with reroofing permitted in 2013.
+- [34–48 Turk Street](/san-francisco/tenderloin/turk-street/34/) — A 1909 hotel, with reroofing permitted in 1992.
+- [50–52 Turk Street](/san-francisco/tenderloin/turk-street/50/) — A 1914 42-unit apartment building, with a kitchen remodel permitted in 2008.
+- [66–74 Turk Street](/san-francisco/tenderloin/turk-street/66/) — A 1907 hotel, with a seismic retrofit permitted in 2003.
+- [101–105 Turk Street](/san-francisco/tenderloin/turk-street/101/) — A 1906 116-unit apartment building, with a kitchen remodel permitted in 2015.
+- [124–126 Turk Street](/san-francisco/tenderloin/turk-street/124/) — A 1907 hotel, with a seismic retrofit permitted in 2000.
+- [130–132 Turk Street](/san-francisco/tenderloin/turk-street/130/) — A 1923 store building, with garage work permitted in 2006.
+- [133–145 Turk Street](/san-francisco/tenderloin/turk-street/133/) — A 1922 store building, with permit records from 1990 to 2002.
+- [140 Turk Street](/san-francisco/tenderloin/turk-street/140/) — A 1907 hotel, with a seismic retrofit permitted in 2001.
+- [150–152 Turk Street](/san-francisco/tenderloin/turk-street/150/) — A 1922 garage, with reroofing permitted in 1992.
+- [162–166 Turk Street](/san-francisco/tenderloin/turk-street/162/) — A 1906 hotel, with a seismic retrofit permitted in 2001.
+- [180–194 Turk Street](/san-francisco/tenderloin/turk-street/180/) — A 1926 134-unit apartment building, with a kitchen remodel permitted in 2003.
+- [240–242 Turk Street](/san-francisco/tenderloin/turk-street/240/) — A 2008 113-unit apartment building, with electrical work permitted in 2026.
+- [270–272 Turk Street](/san-francisco/tenderloin/turk-street/270/) — A 1927 86-unit apartment building, with an accessory dwelling unit permitted in 2017.
+- [323–333 Turk Street](/san-francisco/tenderloin/turk-street/323/) — A 1921 apartment building, with reroofing permitted in 2013.
+- [350–354 Turk Street](/san-francisco/tenderloin/turk-street/350/) — A 1964 362-unit apartment building, with a seismic retrofit permitted in 2019.
+- [351 Turk Street](/san-francisco/tenderloin/turk-street/351/) — A 1928 231-unit apartment building, with window replacement permitted in 2020.
+- [416–422 Turk Street](/san-francisco/tenderloin/turk-street/416/) — A 1907 28-unit apartment building, with a seismic retrofit permitted in 1999.
+- [433 Turk Street](/san-francisco/tenderloin/turk-street/433/) — A 1907 office building, with stair work permitted in 2005.
+- [449–459 Turk Street](/san-francisco/tenderloin/turk-street/449/) — A 1907 hotel, with window replacement permitted in 2023.
+- [468–476 Turk Street](/san-francisco/tenderloin/turk-street/468/) — A 1921 store building, with window replacement permitted in 1996.
+
+The district record is the city's; the buildings beneath it are
+generated from the DataSF datasets listed in each page's Sources
+footer, and are corrected by hand as readers write in.

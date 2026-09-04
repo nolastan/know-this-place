@@ -1,0 +1,229 @@
+# Kearny-Market-Mason-Sutter Conservation District
+
+The buildings documented here so far inside the Kearny-Market-Mason-Sutter Conservation District, and the streets it runs through.
+
+## Streets
+
+- [Bush Street](/san-francisco/financial-district/bush-street/) — 12 documented buildings inside the district.
+- [Ellis Street](/san-francisco/tenderloin/ellis-street/) — 3 documented buildings inside the district.
+- [Fifth Street](/san-francisco/south-of-market/5th-street/) — 3 documented buildings inside the district.
+- [Geary Street, Tenderloin](/san-francisco/tenderloin/geary-street/) — 9 documented buildings inside the district.
+- [Geary Street, Union Square](/san-francisco/union-square/geary-street/) — 15 documented buildings inside the district.
+- [Grant Avenue](/san-francisco/financial-district/grant-avenue/) — 11 documented buildings inside the district.
+- [Kearny Street](/san-francisco/union-square/kearny-street/) — 21 documented buildings inside the district.
+- [Maiden Lane](/san-francisco/union-square/maiden-lane/) — 4 documented buildings inside the district.
+- [Market Street, South of Market](/san-francisco/south-of-market/market-street/) — 16 documented buildings inside the district.
+- [Market Street, Union Square](/san-francisco/union-square/market-street/) — 3 documented buildings inside the district.
+- [Mason Street, Nob Hill](/san-francisco/nob-hill/mason-street/) — 1 documented building inside the district.
+- [Mason Street, Tenderloin](/san-francisco/tenderloin/mason-street/) — 6 documented buildings inside the district.
+- [Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/) — 7 documented buildings inside the district.
+- [Pine Street](/san-francisco/financial-district/pine-street/) — 1 documented building inside the district.
+- [Post Street, Financial District](/san-francisco/financial-district/post-street/) — 10 documented buildings inside the district.
+- [Post Street, Nob Hill](/san-francisco/nob-hill/post-street/) — 1 documented building inside the district.
+- [Post Street, Tenderloin](/san-francisco/tenderloin/post-street/) — 6 documented buildings inside the district.
+- [Post Street, Union Square](/san-francisco/union-square/post-street/) — 3 documented buildings inside the district.
+- [Powell Street](/san-francisco/nob-hill/powell-street/) — 15 documented buildings inside the district.
+- [Stockton Street](/san-francisco/chinatown/stockton-street/) — 11 documented buildings inside the district.
+- [Sutter Street, Financial District](/san-francisco/financial-district/sutter-street/) — 17 documented buildings inside the district.
+- [Sutter Street, Nob Hill](/san-francisco/nob-hill/sutter-street/) — 14 documented buildings inside the district.
+- [Taylor Street](/san-francisco/tenderloin/taylor-street/) — 4 documented buildings inside the district.
+
+## Buildings
+
+- [381–383 Bush Street](/san-francisco/financial-district/bush-street/381/) — A 1907 office building, with reroofing permitted in 2020.
+- [410 Bush Street](/san-francisco/financial-district/bush-street/410/) — A 1915 school building, with reroofing permitted in 2009.
+- [425 Bush Street](/san-francisco/financial-district/bush-street/425/) — A 1908 office building, with reroofing permitted in 2016.
+- [429–431 Bush Street](/san-francisco/financial-district/bush-street/429/) — A 1908 30-unit apartment building, with a seismic retrofit permitted in 2000.
+- [430–444 Bush Street](/san-francisco/financial-district/bush-street/430/) — An office building, with window replacement permitted in 2015.
+- [453–455 Bush Street](/san-francisco/financial-district/bush-street/453/) — A 1906 store building, with permit records from 1993 to 2023.
+- [460 Bush Street](/san-francisco/financial-district/bush-street/460/) — A 1915 office building, with a seismic retrofit permitted in 1999.
+- [461–463 Bush Street](/san-francisco/financial-district/bush-street/461/) — A 1907 office building, with a bathroom remodel permitted in 2013.
+- [466 Bush Street](/san-francisco/financial-district/bush-street/466/) — The third LEED-certified hotel in the United States, and the first in California.
+- [507 Bush Street](/san-francisco/financial-district/bush-street/507/) — A 1907 hotel, with stair work permitted in 2007.
+- [566 Bush Street](/san-francisco/financial-district/bush-street/566/) — A 1907 church, with a seismic retrofit permitted in 1995.
+- [625 Bush Street](/san-francisco/financial-district/bush-street/625/) — A 1910 66-unit apartment building, with reroofing permitted in 1998.
+- [24–34 Ellis Street](/san-francisco/tenderloin/ellis-street/24/) — A 1907 store building, with stair work permitted in 2007.
+- [119–139 Ellis Street](/san-francisco/tenderloin/ellis-street/119/) — A 1907 hotel, with a seismic retrofit permitted in 2007.
+- [140 Ellis Street](/san-francisco/tenderloin/ellis-street/140/) — The site of Jonathan Kittredge's Carpenter Gothic house of 1855, under a hotel of 1908.
+- [55 Fifth Street](/san-francisco/south-of-market/5th-street/55/) — A 1913 hotel, with reroofing permitted in 1985.
+- [67 Fifth Street](/san-francisco/south-of-market/5th-street/67/) — A 1923 hotel, with a bathroom remodel permitted in 2021.
+- [85–99 Fifth Street](/san-francisco/south-of-market/5th-street/85/) — A 1923 hotel, with window replacement permitted in 1996.
+- [301–323 Geary Street](/san-francisco/tenderloin/geary-street/301/) — A 1908 office building, with reroofing permitted in 2007.
+- [366–370 Geary Street](/san-francisco/tenderloin/geary-street/366/) — A 1917 store building, with a seismic retrofit permitted in 1996.
+- [400 Geary Street](/san-francisco/tenderloin/geary-street/400/) — A 1916 store building, with a kitchen and bathroom remodel permitted in 2021.
+- [418–432 Geary Street](/san-francisco/tenderloin/geary-street/418/) — A 1911 hotel, with plumbing work permitted in 2003.
+- [436–442 Geary Street](/san-francisco/tenderloin/geary-street/436/) — A 1912 hotel, with an addition permitted in 2015.
+- [445 Geary Street](/san-francisco/tenderloin/geary-street/445/) — A 1922 theater, with stair work permitted in 2015.
+- [468 Geary Street](/san-francisco/tenderloin/geary-street/468/) — A 1920 hotel, with a seismic retrofit permitted in 2002.
+- [490–498 Geary Street](/san-francisco/tenderloin/geary-street/490/) — A 1912 hotel, with an addition permitted in 1985.
+- [491–499 Geary Street](/san-francisco/tenderloin/geary-street/491/) — A 1913 hotel, with reroofing permitted in 2018.
+- [18 Geary Street](/san-francisco/union-square/geary-street/18/) — A 1907 store building, with facade work permitted in 2016.
+- [28–36 Geary Street](/san-francisco/union-square/geary-street/28/) — A 1908 office building, with stair work permitted in 2013.
+- [46 Geary Street](/san-francisco/union-square/geary-street/46/) — A 1907 store building, with facade work permitted in 2008.
+- [54 Geary Street](/san-francisco/union-square/geary-street/54/) — A 1907 store building, with a seismic retrofit permitted in 1995.
+- [58–66 Geary Street](/san-francisco/union-square/geary-street/58/) — A 1906 hotel, with plumbing work permitted in 2013.
+- [70–80 Geary Street](/san-francisco/union-square/geary-street/70/) — A 1920 store building, with a seismic retrofit permitted in 2002.
+- [101–109 Geary Street](/san-francisco/union-square/geary-street/101/) — A 1907 store building, with facade work permitted in 2016.
+- [110–130 Geary Street](/san-francisco/union-square/geary-street/110/) — A 1984 store building, with stair work permitted in 2021.
+- [132–140 Geary Street](/san-francisco/union-square/geary-street/132/) — A 1908 office building with ground-floor retail, with plumbing work permitted in 2010.
+- [146 Geary Street](/san-francisco/union-square/geary-street/146/) — A 1907 store building, with a seismic retrofit permitted in 2005.
+- [152 Geary Street](/san-francisco/union-square/geary-street/152/) — A 1907 store building, with a seismic retrofit permitted in 2005.
+- [235–239 Geary Street](/san-francisco/union-square/geary-street/235/) — A department store, with facade work permitted in 2018.
+- [285–295 Geary Street](/san-francisco/union-square/geary-street/285/) — A 1907 office building with ground-floor retail, with a seismic retrofit permitted in 2003.
+- [333–337 Geary Street](/san-francisco/union-square/geary-street/333/) — A 1916 store building, with reroofing permitted in 2010.
+- [501–507 Geary Street](/san-francisco/union-square/geary-street/501/) — A 1907 hotel, with stair work permitted in 2014.
+- [39–41 Grant Avenue](/san-francisco/financial-district/grant-avenue/39/) — A 1909 store building, with a seismic retrofit permitted in 2007.
+- [45 Grant Avenue](/san-francisco/financial-district/grant-avenue/45/) — A 1909 store building, with facade work permitted in 2003.
+- [51–55 Grant Avenue](/san-francisco/financial-district/grant-avenue/51/) — A 1909 store building, with a seismic retrofit permitted in 1991.
+- [164–166 Grant Avenue](/san-francisco/financial-district/grant-avenue/164/) — A 1908 store building, with a seismic retrofit permitted in 1997.
+- [220–288 Grant Avenue](/san-francisco/financial-district/grant-avenue/220/) — A 1908 office building, with a seismic retrofit permitted in 1990.
+- [231–233 Grant Avenue](/san-francisco/financial-district/grant-avenue/231/) — A 1907 office building, with stair work permitted in 2010.
+- [239 Grant Avenue](/san-francisco/financial-district/grant-avenue/239/) — A 1908 office building, with a seismic retrofit permitted in 2001.
+- [249–253 Grant Avenue](/san-francisco/financial-district/grant-avenue/249/) — A 1907 store building, with a seismic retrofit permitted in 2000.
+- [255–257 Grant Avenue](/san-francisco/financial-district/grant-avenue/255/) — A 1907 store building, with a seismic retrofit permitted in 2000.
+- [321–323 Grant Avenue](/san-francisco/financial-district/grant-avenue/321/) — A 1910 hotel, with reroofing permitted in 2005.
+- [334–352 Grant Avenue](/san-francisco/financial-district/grant-avenue/334/) — A 1912 hotel, with window replacement permitted in 2017.
+- [1 Kearny Street](/san-francisco/union-square/kearny-street/1/) — An office building, with an addition permitted in 2006.
+- [25–35 Kearny Street](/san-francisco/union-square/kearny-street/25/) — A 1909 office building, with plumbing work permitted in 2020.
+- [45–47 Kearny Street](/san-francisco/union-square/kearny-street/45/) — A 1907 office building, with stair work permitted in 2014.
+- [49 Kearny Street](/san-francisco/union-square/kearny-street/49/) — A 1908 store building, with stair work permitted in 2006.
+- [101 Kearny Street](/san-francisco/union-square/kearny-street/101/) — A 1909 office building, with plumbing work permitted in 2009.
+- [138–152 Kearny Street](/san-francisco/union-square/kearny-street/138/) — A 1911 hotel, with deck work permitted in 2018.
+- [141 Kearny Street](/san-francisco/union-square/kearny-street/141/) — A 1909 store building, with reroofing permitted in 2011.
+- [200–220 Kearny Street](/san-francisco/union-square/kearny-street/200/) — A 1908 office building, with electrical work permitted in 1986.
+- [201 Kearny Street](/san-francisco/union-square/kearny-street/201/) — A 1910 office building, with facade work permitted in 2016.
+- [209–211 Kearny Street](/san-francisco/union-square/kearny-street/209/) — A 1907 store building, with a seismic retrofit permitted in 2000.
+- [215–217 Kearny Street](/san-francisco/union-square/kearny-street/215/) — A 1907 store building, with a kitchen remodel permitted in 2004.
+- [219–225 Kearny Street](/san-francisco/union-square/kearny-street/219/) — A 1907 office building, with a seismic retrofit permitted in 1996.
+- [227–231 Kearny Street](/san-francisco/union-square/kearny-street/227/) — A 1908 store building, with a seismic retrofit permitted in 2001.
+- [243–245 Kearny Street](/san-francisco/union-square/kearny-street/243/) — A 1908 office building, with a seismic retrofit permitted in 1995.
+- [246–250 Kearny Street](/san-francisco/union-square/kearny-street/246/) — A 1908 hotel, with a kitchen and bathroom remodel permitted in 2011.
+- [251–259 Kearny Street](/san-francisco/union-square/kearny-street/251/) — A 1908 office building, with plumbing work permitted in 2011.
+- [301–311 Kearny Street](/san-francisco/union-square/kearny-street/301/) — A 1910 store building, with a seismic retrofit permitted in 2001.
+- [315–319 Kearny Street](/san-francisco/union-square/kearny-street/315/) — A 1907 store building, with a seismic retrofit permitted in 2001.
+- [325–329 Kearny Street](/san-francisco/union-square/kearny-street/325/) — A 1907 store building, with stair work permitted in 2018.
+- [333–341 Kearny Street](/san-francisco/union-square/kearny-street/333/) — A 1907 office building, with a kitchen remodel permitted in 2009.
+- [343–359 Kearny Street](/san-francisco/union-square/kearny-street/343/) — A 1907 office building, with an addition permitted in 2018.
+- [69 Maiden Lane](/san-francisco/union-square/maiden-lane/69/) — A 1920 store building, with deck work permitted in 2015.
+- [118–120 Maiden Lane](/san-francisco/union-square/maiden-lane/118/) — A 2001 store building, with window replacement permitted in 2025.
+- [134 Maiden Lane](/san-francisco/union-square/maiden-lane/134/) — A 1910 store building, with stair work permitted in 2008.
+- [140 Maiden Lane](/san-francisco/union-square/maiden-lane/140/) — A 1909 store building, with facade work permitted in 2026.
+- [725–731 Market Street](/san-francisco/south-of-market/market-street/725/) — A 1908 office building, with a seismic retrofit permitted in 1997.
+- [735 Market Street](/san-francisco/south-of-market/market-street/735/) — A 1907 office building, with reroofing permitted in 1998.
+- [744 Market Street](/san-francisco/south-of-market/market-street/744/) — A 1910 bank building, with facade work permitted in 2012.
+- [785 Market Street](/san-francisco/south-of-market/market-street/785/) — A 1907 office building, with an addition permitted in 2019.
+- [799 Market Street](/san-francisco/south-of-market/market-street/799/) — A 1968 office building with ground-floor retail, with a seismic retrofit permitted in 1984.
+- [800–830 Market Street](/san-francisco/south-of-market/market-street/800/) — A 1908 store building, with facade work permitted in 2008.
+- [801–815 Market Street](/san-francisco/south-of-market/market-street/801/) — A 1999 hotel, with reroofing permitted in 2016.
+- [825–833 Market Street](/san-francisco/south-of-market/market-street/825/) — A 1908 office building, with facade work permitted in 1994.
+- [838 Market Street](/san-francisco/south-of-market/market-street/838/) — A 1930 store building, with stair work permitted in 2012.
+- [844–846 Market Street](/san-francisco/south-of-market/market-street/844/) — A 1908 store building, with plumbing work permitted in 2010.
+- [845 Market Street](/san-francisco/south-of-market/market-street/845/) — The 2006 shopping centre built behind the Emporium's 1896 facade and glass dome.
+- [865–885 Market Street](/san-francisco/south-of-market/market-street/865/) — A 1908 shopping center, with plumbing work permitted in 2015.
+- [870–898 Market Street](/san-francisco/south-of-market/market-street/870/) — A 1907 office building, with facade work permitted in 1993.
+- [901 Market Street](/san-francisco/south-of-market/market-street/901/) — A 1912 office building, with plumbing work permitted in 2013.
+- [934–936 Market Street](/san-francisco/south-of-market/market-street/934/) — A 1974 store building, with reroofing permitted in 2025.
+- [944–948 Market Street](/san-francisco/south-of-market/market-street/944/) — A 1907 office building, with electrical work permitted in 1984.
+- [720 Market Street](/san-francisco/union-square/market-street/720/) — A 1990 office building, with electrical work permitted in 2013.
+- [722–742 Market Street](/san-francisco/union-square/market-street/722/) — A 1912 office building, with a seismic retrofit permitted in 2007.
+- [750–780 Market Street](/san-francisco/union-square/market-street/750/) — A 1908 office building, with stair work permitted in 2018.
+- [542 Mason Street](/san-francisco/nob-hill/mason-street/542/) — A 1914 32-unit apartment building, with reroofing permitted in 2011.
+- [34–38 Mason Street](/san-francisco/tenderloin/mason-street/34/) — A 1907 store building, with plumbing work permitted in 2012.
+- [48–56 Mason Street](/san-francisco/tenderloin/mason-street/48/) — A 1908 hotel, with plumbing work permitted in 2012.
+- [300–330 Mason Street](/san-francisco/tenderloin/mason-street/300/) — A 1908 hotel, with facade work permitted in 2025.
+- [301–325 Mason Street](/san-francisco/tenderloin/mason-street/301/) — A 1955 garage, with a kitchen remodel permitted in 2016.
+- [333 Mason Street](/san-francisco/tenderloin/mason-street/333/) — A 1909 theater, with a seismic retrofit permitted in 1993.
+- [414–430 Mason Street](/san-francisco/tenderloin/mason-street/414/) — A 1911 2-unit building, with a kitchen remodel permitted in 1998.
+- [111 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/111/) — A 1989 store building, with electrical work permitted in 2010.
+- [165 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/165/) — A 1908 office building, with a kitchen remodel permitted in 2015.
+- [180–190 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/180/) — A 1910 hotel, with a seismic retrofit permitted in 2000.
+- [201–219 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/201/) — A 1907 building, with stair work permitted in 2005.
+- [238–242 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/238/) — A 1914 hotel, with reroofing permitted in 2010.
+- [250–260 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/250/) — A 1965 hotel, with reroofing permitted in 2007.
+- [270–272 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/270/) — A 1909 store building, with a kitchen remodel permitted in 2017.
+- [555 Pine Street](/san-francisco/financial-district/pine-street/555/) — An office building, with electrical work permitted in 2017.
+- [126–130 Post Street](/san-francisco/financial-district/post-street/126/) — A 1909 store building, with plumbing work permitted in 2021.
+- [135 Post Street](/san-francisco/financial-district/post-street/135/) — A 1908 store building, with a seismic retrofit permitted in 1994.
+- [150 Post Street](/san-francisco/financial-district/post-street/150/) — A 1908 office building, with stair work permitted in 2015.
+- [200–210 Post Street](/san-francisco/financial-district/post-street/200/) — A 1905 office building, with window replacement permitted in 2015.
+- [201–209 Post Street](/san-francisco/financial-district/post-street/201/) — A 1909 store building, with stair work permitted in 2016.
+- [220–222 Post Street](/san-francisco/financial-district/post-street/220/) — A 1907 store building, with a seismic retrofit permitted in 1996.
+- [228–240 Post Street](/san-francisco/financial-district/post-street/228/) — A 1909 store building, with a seismic retrofit permitted in 1990.
+- [246–250 Post Street](/san-francisco/financial-district/post-street/246/) — A 1908 store building, with a seismic retrofit permitted in 1994.
+- [275–299 Post Street](/san-francisco/financial-district/post-street/275/) — A 1909 office building, with electrical work permitted in 2023.
+- [278–290 Post Street](/san-francisco/financial-district/post-street/278/) — A 1910 store building, with a seismic retrofit permitted in 1994.
+- [524 Post Street](/san-francisco/nob-hill/post-street/524/) — A 1912 building, with a rear addition permitted in 2004.
+- [491 Post Street](/san-francisco/tenderloin/post-street/491/) — A 1913 school building, with reroofing permitted in 2011.
+- [501 Post Street](/san-francisco/tenderloin/post-street/501/) — A hotel, with plumbing work permitted in 2017.
+- [545 Post Street](/san-francisco/tenderloin/post-street/545/) — A 1913 hotel, with a kitchen remodel permitted in 2015.
+- [600–612 Post Street](/san-francisco/tenderloin/post-street/600/) — A 1914 hotel, with reroofing permitted in 1993.
+- [620 Post Street](/san-francisco/tenderloin/post-street/620/) — A 1910 hotel, with plumbing work permitted in 2004.
+- [624 Post Street](/san-francisco/tenderloin/post-street/624/) — A 1907 hotel, with reroofing permitted in 1993.
+- [350–360 Post Street](/san-francisco/union-square/post-street/350/) — A 1972 office building, with plumbing work permitted in 2012.
+- [400 Post Street](/san-francisco/union-square/post-street/400/) — A 1909 store building, with a vertical addition permitted in 1990.
+- [450–456 Post Street](/san-francisco/union-square/post-street/450/) — A 1924 building, with a kitchen remodel permitted in 1996.
+- [17–33 Powell Street](/san-francisco/nob-hill/powell-street/17/) — A hotel, with a seismic retrofit permitted in 2014.
+- [45–49 Powell Street](/san-francisco/nob-hill/powell-street/45/) — A 1909 hotel, with facade work permitted in 2013.
+- [57–71 Powell Street](/san-francisco/nob-hill/powell-street/57/) — A 1907 store building, with stair work permitted in 2016.
+- [101 Powell Street](/san-francisco/nob-hill/powell-street/101/) — A 1909 hotel, with plumbing work permitted in 2013.
+- [111–133 Powell Street](/san-francisco/nob-hill/powell-street/111/) — A 1910 store building, with facade work permitted in 2012.
+- [135–149 Powell Street](/san-francisco/nob-hill/powell-street/135/) — A 1909 store building, with a seismic retrofit permitted in 2011.
+- [151–161 Powell Street](/san-francisco/nob-hill/powell-street/151/) — A 1909 hotel, with plumbing work permitted in 2014.
+- [200–214 Powell Street](/san-francisco/nob-hill/powell-street/200/) — A 1933 store building, with facade work permitted in 2007.
+- [207–217 Powell Street](/san-francisco/nob-hill/powell-street/207/) — A 1906 store building, with stair work permitted in 2006.
+- [222 Powell Street](/san-francisco/nob-hill/powell-street/222/) — A 1906 store building, with a seismic retrofit permitted in 2001.
+- [226–230 Powell Street](/san-francisco/nob-hill/powell-street/226/) — A 1910 store building, with a seismic retrofit permitted in 1997.
+- [301–345 Powell Street](/san-francisco/nob-hill/powell-street/301/) — A 1904 hotel, with facade work permitted in 1991.
+- [432–462 Powell Street](/san-francisco/nob-hill/powell-street/432/) — A 1930 hotel, with a kitchen remodel permitted in 2021.
+- [433 Powell Street](/san-francisco/nob-hill/powell-street/433/) — A 1914 hotel, with window replacement permitted in 1985.
+- [540 Powell Street](/san-francisco/nob-hill/powell-street/540/) — A 1909 school building, with reroofing permitted in 2011.
+- [2–30 Stockton Street](/san-francisco/chinatown/stockton-street/2/) — A 1907 store building, with a vertical addition permitted in 2023.
+- [46–48 Stockton Street](/san-francisco/chinatown/stockton-street/46/) — A 1909 department store, with reroofing permitted in 2021.
+- [100–130 Stockton Street](/san-francisco/chinatown/stockton-street/100/) — A 1974 office building, with an addition permitted in 2018.
+- [150 Stockton Street](/san-francisco/chinatown/stockton-street/150/) — A department store, with reroofing permitted in 2008.
+- [200–212 Stockton Street](/san-francisco/chinatown/stockton-street/200/) — A 1987 store building, with a seismic retrofit permitted in 2008.
+- [216 Stockton Street](/san-francisco/chinatown/stockton-street/216/) — A 1909 store building, with stair work permitted in 2000.
+- [218–222 Stockton Street](/san-francisco/chinatown/stockton-street/218/) — A 1908 3-unit building, with a seismic retrofit permitted in 1985.
+- [345 Stockton Street](/san-francisco/chinatown/stockton-street/345/) — A 1972 hotel, with a seismic retrofit permitted in 2013.
+- [417 Stockton Street](/san-francisco/chinatown/stockton-street/417/) — A 1907 hotel, with stair work permitted in 2018.
+- [423–439 Stockton Street](/san-francisco/chinatown/stockton-street/423/) — A 1911 78-unit apartment building, with a seismic retrofit permitted in 1991.
+- [441–447 Stockton Street](/san-francisco/chinatown/stockton-street/441/) — A 1923 office building, with a vertical addition permitted in 2000.
+- [209–211 Sutter Street](/san-francisco/financial-district/sutter-street/209/) — A 1907 office building, with plumbing work permitted in 2012.
+- [246–250 Sutter Street](/san-francisco/financial-district/sutter-street/246/) — A 1909 office building, with a seismic retrofit permitted in 1986.
+- [255–271 Sutter Street](/san-francisco/financial-district/sutter-street/255/) — A 1908 store building, with facade work permitted in 2024.
+- [266–270 Sutter Street](/san-francisco/financial-district/sutter-street/266/) — A 1908 store building, with foundation work permitted in 2018.
+- [272 Sutter Street](/san-francisco/financial-district/sutter-street/272/) — A 2021 store building, with a seismic retrofit permitted in 1998.
+- [301–303 Sutter Street](/san-francisco/financial-district/sutter-street/301/) — A 1907 office building, with stair work permitted in 2006.
+- [312–314 Sutter Street](/san-francisco/financial-district/sutter-street/312/) — A 1909 office building, with electrical work permitted in 2010.
+- [315–317 Sutter Street](/san-francisco/financial-district/sutter-street/315/) — A 1909 store building, with a seismic retrofit permitted in 2001.
+- [323–333 Sutter Street](/san-francisco/financial-district/sutter-street/323/) — A 1909 hotel, with reroofing permitted in 2002.
+- [355–369 Sutter Street](/san-francisco/financial-district/sutter-street/355/) — A 1910 store building, with electrical work permitted in 2014.
+- [371–375 Sutter Street](/san-francisco/financial-district/sutter-street/371/) — A 1907 store building, with stair work permitted in 2011.
+- [400–414 Sutter Street](/san-francisco/financial-district/sutter-street/400/) — A 1907 store building, with stair work permitted in 2005.
+- [418–432 Sutter Street](/san-francisco/financial-district/sutter-street/418/) — A 1909 store building, with reroofing permitted in 1991.
+- [431 Sutter Street](/san-francisco/financial-district/sutter-street/431/) — A 1909 store building, with reroofing permitted in 2008.
+- [441–443 Sutter Street](/san-francisco/financial-district/sutter-street/441/) — A 1909 store building, with an addition permitted in 2013.
+- [445–447 Sutter Street](/san-francisco/financial-district/sutter-street/445/) — A 1916 building, with a seismic retrofit permitted in 2001.
+- [450–464 Sutter Street](/san-francisco/financial-district/sutter-street/450/) — Timothy Pflueger's Medical-Dental Building of 1929.
+- [532–536 Sutter Street](/san-francisco/nob-hill/sutter-street/532/) — A 1910 store building, with an addition permitted in 1997.
+- [540 Sutter Street](/san-francisco/nob-hill/sutter-street/540/) — A 1916 store building, with fire repair permitted in 2009.
+- [547–555 Sutter Street](/san-francisco/nob-hill/sutter-street/547/) — A 1922 office building, with a bathroom remodel permitted in 2001.
+- [550–560 Sutter Street](/san-francisco/nob-hill/sutter-street/550/) — A 1909 store building, with electrical work permitted in 1984.
+- [562–570 Sutter Street](/san-francisco/nob-hill/sutter-street/562/) — A 1907 hotel, with a seismic retrofit permitted in 2001.
+- [590 Sutter Street](/san-francisco/nob-hill/sutter-street/590/) — A 1919 22-unit apartment building, with window replacement permitted in 2008.
+- [595 Sutter Street](/san-francisco/nob-hill/sutter-street/595/) — A 1919 building, with reroofing permitted in 1998.
+- [601–609 Sutter Street](/san-francisco/nob-hill/sutter-street/601/) — A 1927 building, with electrical work permitted in 2007.
+- [620–630 Sutter Street](/san-francisco/nob-hill/sutter-street/620/) — A 1918 hotel, with stair work permitted in 1989.
+- [635 Sutter Street](/san-francisco/nob-hill/sutter-street/635/) — A 1911 hotel, with a seismic retrofit permitted in 2007.
+- [640–650 Sutter Street](/san-francisco/nob-hill/sutter-street/640/) — A 1916 building, with a seismic retrofit permitted in 2006.
+- [680–688 Sutter Street](/san-francisco/nob-hill/sutter-street/680/) — A 1918 29-unit apartment building, with window replacement permitted in 2020.
+- [700–716 Sutter Street](/san-francisco/nob-hill/sutter-street/700/) — A 1918 55-unit apartment building, with a seismic retrofit permitted in 1998.
+- [707–709 Sutter Street](/san-francisco/nob-hill/sutter-street/707/) — A 1920 store building, with a seismic retrofit permitted in 2006.
+- [400–420 Taylor Street](/san-francisco/tenderloin/taylor-street/400/) — A 1942 office building, with an addition permitted in 2019.
+- [405–415 Taylor Street](/san-francisco/tenderloin/taylor-street/405/) — A 1912 garage, with reroofing permitted in 2009.
+- [624 Taylor Street](/san-francisco/tenderloin/taylor-street/624/) — A 1934 2-unit building, with a kitchen remodel permitted in 2006.
+- [627 Taylor Street](/san-francisco/tenderloin/taylor-street/627/) — A 1914 39-unit apartment building, with electrical work permitted in 2014.
+
+The district record is the city's; the buildings beneath it are
+generated from the DataSF datasets listed in each page's Sources
+footer, and are corrected by hand as readers write in.

@@ -53,3 +53,11 @@ Downtown coverage begins with the buildings named in two city inventories — th
 privately owned public open spaces the Downtown Plan requires, and the artworks
 the 1% art program pays for — which is why those pages are offices and hotels
 rather than the residential buildings the rest of the site documents.
+
+## Historic districts
+
+The city's surveys have drawn historic districts across many of the
+neighborhoods above, and a district rarely keeps to one of them.
+[The districts documented here](historic-districts/) are listed on their own,
+each page carrying the buildings inside the district and the streets it runs
+through.

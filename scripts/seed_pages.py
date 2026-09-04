@@ -2318,21 +2318,24 @@ KNOWN_STREET_HUB_SECTIONS = (re.compile(r"documented so far$", re.I),
                              re.compile(r"^not yet covered$", re.I))
 
 
-def street_hub_extra_sections(street_dir: Path) -> list:
-    """H2 section headings in an existing street hub that the generator didn't write.
+def hub_extra_sections(hub_dir: Path, known) -> list:
+    """H2 section headings in an existing hub that its generator didn't write.
 
     A hand-edited hub can grow sections a plain lead+list template has no room
     for — "The street itself", "Sources" — see `AGENTS.md`'s note that an
-    existing page "is only ever edited by hand." `write_street_hub` has no way
-    to merge those back in, so it must detect them and refuse to overwrite
-    rather than silently deleting them.
+    existing page "is only ever edited by hand." A hub writer has no way to
+    merge those back in, so it must detect them and refuse to overwrite rather
+    than silently deleting them.
     """
-    md = street_dir / "index.md"
+    md = hub_dir / "index.md"
     if not md.exists():
         return []
     headings = re.findall(r"^## (.+)$", md.read_text(encoding="utf-8"), re.M)
-    return [h for h in headings
-            if not any(pat.search(h) for pat in KNOWN_STREET_HUB_SECTIONS)]
+    return [h for h in headings if not any(pat.search(h) for pat in known)]
+
+
+def street_hub_extra_sections(street_dir: Path) -> list:
+    return hub_extra_sections(street_dir, KNOWN_STREET_HUB_SECTIONS)
 
 
 def hub_lead(street_dir, fallback: str) -> str:
@@ -2365,7 +2368,13 @@ def hub_lead(street_dir, fallback: str) -> str:
     return " ".join(para) if para else fallback
 
 
-def hook_for(rec: dict) -> str:
+def hook_for(rec: dict, with_district: bool = True) -> str:
+    """The page's one-line description for a hub's list.
+
+    `with_district` is off on a historic-district hub, where naming the
+    district on every line would repeat the page's own headline — and would
+    name the *wrong* district for a building that stands in two.
+    """
     # A hand-written hook in data.json always wins over a generated one.
     if rec.get("hook"):
         return rec["hook"]
@@ -2374,7 +2383,7 @@ def hook_for(rec: dict) -> str:
     btype = building_type(p.get("property_class"), p.get("units")).lower()
     article = article_for(year, btype).capitalize()
     head = f"{article} {year} {btype}" if year else f"{article} {btype}"
-    dist = district_of(rec).get("name")
+    dist = district_of(rec).get("name") if with_district else None
     if dist:
         head += f" in the {dist}"
     wp = work_phrase(rec.get("permits", []))
@@ -2653,6 +2662,517 @@ def write_neighborhood_hub(area_dir: Path, ctx: dict) -> int:
             raise SystemExit(f"{html_path}: no '{NEIGHBORHOOD_SECTION}' list to replace")
         html_path.write_text(new, encoding="utf-8")
     return len(streets)
+
+
+# --------------------------------------------------------------------------
+# Historic-district hubs
+# --------------------------------------------------------------------------
+# The fourth page type, and the only aggregation on this site that isn't the
+# containment tree. A historic district is a real subject with a record of its
+# own — the city's surveys drew its boundary, dated its period of significance
+# and set down its standing on the registers — which is what separates it from
+# a facet. Decade, zoning and property-class lists have no such record behind
+# them and are deliberately not built.
+#
+# They sit at city level rather than under a neighborhood because a district is
+# not contained by one: the Chinatown Historic District runs through five
+# neighborhood directories and Kearny-Market-Mason-Sutter through six.
+DISTRICTS_DIR = "historic-districts"
+DISTRICTS_TITLE = "Historic districts"
+
+# Below this a district's list says nothing the one or two pages carrying it
+# don't already say, and a list that thin is a doorway page rather than an
+# encyclopedia entry. Those pages keep their district panel; it just has
+# nowhere to link.
+DISTRICT_MIN_PAGES = 5
+
+DISTRICT_DATASET_URL = "https://data.sfgov.org/resource/63x5-g3m4.json"
+
+# Read off the *name*, not off `split_district_name`'s lifted type phrase,
+# which lowercases it. Six districts in the data are an Extension sharing a
+# base name with the district they extend, so dropping the qualifier would put
+# two districts at one URL.
+DISTRICT_QUALIFIER = re.compile(r"\s+(Extension|Addition|\(Discontiguous\))$")
+
+
+def slugify(text: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", text.lower().replace("&", " and ")).strip("-")
+
+
+def district_short_name(name: str) -> str:
+    """"Duboce Triangle Historic District Extension" -> "Duboce Triangle Extension".
+
+    The parent directory already says these are historic districts, so the slug
+    and the breadcrumb drop the type phrase and keep the qualifier.
+    """
+    base, _kind = split_district_name(name)
+    if base == name:
+        return name          # no type phrase to lift; the name is all there is
+    m = DISTRICT_QUALIFIER.search(name)
+    return f"{base} {m.group(1)}" if m else base
+
+
+def district_slug(name: str) -> str:
+    return slugify(district_short_name(name))
+
+
+DISTRICT_FIELDS = ("california_register_status", "national_register_status",
+                   "article_10_11_status", "local_landmark_protection",
+                   "period_of_significance")
+
+
+def merge_district_records(name: str, records: list) -> dict:
+    """One district record out of the many copies of it the pages carry.
+
+    Three districts disagree with themselves. The survey holds two rows over
+    the same ground under one name — one carrying an Article 10 designation,
+    the other a register listing — and only some parcels fall inside the second
+    row's boundary. `merge_districts` already takes the stronger status where
+    both rows cover one parcel, so what is left here is a real split in the
+    data rather than a merge bug.
+
+    The hub reports what the pages beneath it report: the majority value, ties
+    broken toward the stronger standing and then alphabetically so a rebuild is
+    deterministic. Taking the strongest value outright would put the hub in
+    contradiction with twenty-three of the twenty-four pages it lists.
+    """
+    out = {"name": name}
+    for key in DISTRICT_FIELDS:
+        vals = [r[key] for r in records if r.get(key) not in (None, "")]
+        if not vals:
+            continue
+        counts = collections.Counter(vals)
+        out[key] = max(counts, key=lambda v: (counts[v],
+                                              -STANDING_RANK[standing_tier(str(v))],
+                                              str(v)))
+    return out
+
+
+def districts_named(rec: dict) -> dict:
+    """Every district this page stands in: name -> the record it carries for it.
+
+    Both memberships count. A parcel inside overlapping districts headlines one
+    under `historic_district` and records the rest under `also_in_districts`;
+    to a district those are the same fact, and reading only the headline would
+    lose seven districts outright — every one of the forty buildings in the
+    Liberty Street Historic District headlines Liberty Hill instead.
+
+    `validate.py` calls this too, so the hub and the check that the hub is
+    current read membership by one rule rather than two.
+    """
+    found: dict = {}
+    primary = district_record(rec)
+    if primary.get("name"):
+        found[primary["name"]] = primary
+    for other in rec.get("also_in_districts") or []:
+        if other.get("name") and other["name"] not in found:
+            found[other["name"]] = other
+    return found
+
+
+def district_memberships(city_dir: Path) -> dict:
+    """district name -> [(page_dir, rec, its district record)] across the city."""
+    out: dict = collections.defaultdict(list)
+    for data_path in sorted(city_dir.rglob("data.json")):
+        page_dir = data_path.parent
+        if not ADDRESS_DIR.match(page_dir.name):
+            continue
+        try:
+            rec = json.loads(data_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            print(f"  {data_path}: invalid JSON — skipped", file=sys.stderr)
+            continue
+        for name, d in districts_named(rec).items():
+            out[name].append((page_dir, rec, d))
+    return out
+
+
+def district_members(pages: list) -> list:
+    """One row per building on a district hub, in the order the page lists them.
+
+    Grouped by street and then by number, which is how a reader walks a
+    district; ordering by number alone would interleave four streets.
+    """
+    rows = []
+    for page_dir, rec, d in pages:
+        street_dir = page_dir.parent
+        rows.append({
+            "path": "/" + page_dir.relative_to(ROOT).as_posix() + "/",
+            "title": page_title(rec),
+            # The district is the whole page here, so the hook doesn't repeat
+            # it — and a building in two districts would otherwise name the
+            # other one on this hub's list.
+            "hook": hook_for(rec, with_district=False),
+            "street_path": "/" + street_dir.relative_to(ROOT).as_posix() + "/",
+            "street": page_title(rec).split(" ", 1)[-1],
+            "area_path": "/" + street_dir.parent.relative_to(ROOT).as_posix() + "/",
+            "number": page_dir.name,
+            "year_built": (rec.get("parcel") or {}).get("year_built"),
+            # What DBI holds, not what the page shows — same rule as a street
+            # hub's permit tile.
+            "permits": ((rec.get("permit_summary") or {}).get("count_on_file")
+                        or len(rec.get("permits", []))),
+            "sources": rec.get("sources", []),
+            "record": d,
+        })
+    rows.sort(key=lambda r: (r["street"], r["street_path"], num_key(r["number"])))
+    return rows
+
+
+def area_display(area_path: str) -> str:
+    """A neighborhood's own name for itself, off the h1 of its hub.
+
+    The slug can't be reversed into it — "castro" is filed as "Castro / Eureka
+    Valley" and "lone-mountain" as "Lone Mountain / USF".
+    """
+    md = ROOT / area_path.strip("/") / "index.md"
+    if md.exists():
+        for line in md.read_text(encoding="utf-8").splitlines():
+            if line.startswith("# "):
+                return line[2:].strip()
+    return " ".join(w.capitalize()
+                    for w in area_path.strip("/").split("/")[-1].split("-"))
+
+
+def district_standing_clause(d: dict) -> str:
+    """The one thing about a district's paperwork worth putting on a hub line.
+
+    A local designation outranks a register for the same reason it outranks the
+    name's own type in the panel eyebrow: it is what the district *is*.
+    """
+    a = d.get("article_10_11_status") or ""
+    if a.startswith("Article 10"):
+        return "An Article 10 city landmark district"
+    if a.startswith("Article 11"):
+        return "An Article 11 conservation district"
+    rows = standing_rows(d)
+    return rows[0][1] if rows else ""
+
+
+def district_hook(d: dict, n_pages: int, n_streets: int) -> str:
+    """A district's line on the index — standing, dates, and how much is here.
+
+    Deliberately not where the district is: naming neighborhoods would put an
+    article in front of half of them and not the other half ("in the Mission",
+    "in Hayes Valley"), and the district's own page carries that list.
+    """
+    streets = "one street" if n_streets == 1 else f"{n_streets:,} streets"
+    where = f"{n_pages:,} buildings documented on {streets}"
+    clause = district_standing_clause(d)
+    pos = (d.get("period_of_significance") or "").strip()
+    if clause and pos and pos.upper() != "N/A":
+        return f"{clause}, significant {pos}; {where}."
+    if clause:
+        return f"{clause}; {where}."
+    return f"{where.capitalize()}."
+
+
+def hub_shell(path: str, title: str, desc: str, crumbs: str, main_html: str,
+              sources: str, feedback_title: str) -> str:
+    """The shared page chrome for the two historic-district page types.
+
+    The skeleton in shared/AGENTS.md, written once because these two writers
+    produce it identically. The street and neighborhood hubs predate this and
+    keep their own copy — routing them through here would re-render every hub
+    on the site for no change a reader could see.
+    """
+    sources_block = ""
+    if sources:
+        sources_block = ('  <section class="sources">\n    <h2>Sources</h2>\n'
+                         f'    <ul>\n{sources}\n    </ul>\n  </section>\n')
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{esc(title)} — Know This Place</title>
+  <meta name="description" content="{esca(desc)}">
+  <link rel="canonical" href="{SITE}{path}">
+{ICON_LINKS}
+  <link rel="stylesheet" href="/shared/site.css">
+  <script type="module" src="/shared/site.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="wordmark" href="/">Know This Place</a>
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+{crumbs}
+  </nav>
+</header>
+
+<main>
+{main_html}</main>
+
+<footer class="site-footer">
+{sources_block}  <p class="feedback-cta">
+    <a href="{feedback_url(feedback_title, path)}">Request an edit</a>
+  </p>
+  <p class="colophon">Part of <a href="/">Know This Place</a>, a community
+  encyclopedia of the built environment. Facts are cited; pages are reviewed
+  by people. <a href="{REPO}">Source</a>.</p>
+</footer>
+</body>
+</html>
+"""
+
+
+def stat_tiles_html(tiles: list, indent: str) -> str:
+    return "\n".join(
+        f'{indent}<div class="stat"><span class="ic {i}"></span>'
+        f'<span class="stat-val">{v}</span>'
+        f'<span class="stat-label">{esc(label)}</span></div>'
+        for i, v, label in tiles)
+
+
+def place_list_html(items: list, indent: str) -> str:
+    """The list markup every hub uses — and the markup `validate.check_hub_sync`
+    reads back, so each line written here has a matching bullet in index.md."""
+    return "\n".join(
+        f'{indent}<li><a href="{esca(href)}">{esc(label)}</a><br>\n'
+        f'{indent}  <span class="hook">{esc(hook)}</span></li>'
+        for href, label, hook in items)
+
+
+def district_sources_html(name: str, members: list) -> str:
+    """The footer for a district hub: the survey the district record comes from.
+
+    The counts and the date span are read off the pages listed on the page,
+    each of which carries its own footer — the same way a street hub cites
+    nothing of its own. What this page states that they don't is the district's
+    record, and that is this one dataset. The query is the district's own row
+    by name rather than the point-intersect query a parcel page ran; the
+    retrieval date is the most recent one across the pages listed here.
+    """
+    seen = collections.Counter()
+    names: dict = {}
+    retrieved: dict = collections.defaultdict(list)
+    for m in members:
+        for s in m["sources"]:
+            if s.get("id") in ("sf-historic-districts", "sf-planning"):
+                seen[s["id"]] += 1
+                names.setdefault(s["id"], s.get("name") or s["id"])
+                if s.get("retrieved"):
+                    retrieved[s["id"]].append(s["retrieved"])
+    if "sf-historic-districts" in seen:
+        sid = "sf-historic-districts"
+    elif seen:
+        sid = seen.most_common(1)[0][0]
+    else:
+        return ""
+    query = f"{DISTRICT_DATASET_URL}?name_1={urllib.parse.quote(name, safe='')}"
+    rec = {"sources": [{"id": sid, "name": names[sid], "query": query,
+                        "retrieved": max(retrieved[sid]) if retrieved[sid] else None}]}
+    return sources_html(rec)
+
+
+KNOWN_DISTRICT_HUB_SECTIONS = (re.compile(r"^streets$", re.I),
+                               re.compile(r"^buildings$", re.I))
+KNOWN_DISTRICT_INDEX_SECTIONS = (re.compile(r"^districts documented so far$", re.I),)
+
+
+def write_district_hub(dist_dir: Path, name: str, members: list) -> bool:
+    """Write one district's index.md + index.html. False if it refused to.
+
+    It refuses for the reason `write_street_hub` does: a hub that has grown
+    sections this template has no room for is a person's page from then on, and
+    the generator has no way to merge them back in.
+    """
+    extra = hub_extra_sections(dist_dir, KNOWN_DISTRICT_HUB_SECTIONS)
+    if extra:
+        print(f"  {dist_dir}: skipping — hand-written section(s) "
+              f"{', '.join(extra)} beyond the generated template; "
+              f"update the lists by hand instead", file=sys.stderr)
+        return False
+
+    d = merge_district_records(name, [m["record"] for m in members])
+    short = district_short_name(name)
+    path = f"/san-francisco/{DISTRICTS_DIR}/{district_slug(name)}/"
+
+    streets: dict = {}
+    for m in members:
+        s = streets.setdefault(m["street_path"], {"name": m["street"], "n": 0,
+                                                  "area": m["area_path"]})
+        s["n"] += 1
+    areas = collections.Counter(m["area_path"] for m in members)
+
+    years = sorted(m["year_built"] for m in members if m["year_built"])
+    n_permits = sum(m["permits"] for m in members)
+
+    tiles = [("ic-home", f"{len(members):,}", "Buildings documented")]
+    if years:
+        span = (f"{years[0]}<small>–{years[-1]}</small>" if years[0] != years[-1]
+                else f"{years[0]}")
+        tiles.append(("ic-calendar", span, "Construction dates"))
+    tiles.append(("ic-pin", f"{len(streets):,}", "Streets"))
+    tiles.append(("ic-permit", f"{n_permits:,}", "Permit records"))
+
+    lead = hub_lead(dist_dir,
+                    f"The buildings documented here so far inside the {name}, "
+                    f"and the streets it runs through.")
+
+    # A street name is not unique across the city: a district spanning two
+    # neighborhoods can hold two different Market Streets. Say which, but only
+    # where it is actually ambiguous.
+    repeated = {n for n, c in collections.Counter(
+        s["name"] for s in streets.values()).items() if c > 1}
+    street_items = []
+    for href in sorted(streets, key=lambda h: (streets[h]["name"], h)):
+        s = streets[href]
+        label = (f"{s['name']}, {area_display(s['area'])}"
+                 if s["name"] in repeated else s["name"])
+        street_items.append((href, label,
+                             f"{s['n']:,} documented building"
+                             f"{'' if s['n'] == 1 else 's'} inside the district."))
+    building_items = [(m["path"], m["title"], m["hook"]) for m in members]
+
+    md = [f"# {name}", "", lead, "", "## Streets", ""]
+    md += [f"- [{label}]({href}) — {hook}" for href, label, hook in street_items]
+    md += ["", "## Buildings", ""]
+    md += [f"- [{label}]({href}) — {hook}" for href, label, hook in building_items]
+    md += ["", "The district record is the city's; the buildings beneath it are",
+           "generated from the DataSF datasets listed in each page's Sources",
+           "footer, and are corrected by hand as readers write in.", ""]
+    (dist_dir / "index.md").write_text("\n".join(md), encoding="utf-8")
+
+    # Identity, so tags rather than tiles (shared/AGENTS.md): what kind of
+    # district it is, and when it mattered. Its standing on the registers is a
+    # separate question and takes the `.standing` list below.
+    tags = [("ic-plan", district_eyebrow(d, split_district_name(name)[1]))]
+    pos = (d.get("period_of_significance") or "").strip()
+    if pos and pos.upper() != "N/A":
+        tags.append(("ic-calendar", f"Significant {pos}"))
+    tags_block = "\n".join(f'    <li class="tag"><span class="ic {i}"></span>'
+                           f'{esc(label)}</li>' for i, label in tags)
+
+    aside = ""
+    rows = standing_rows(d)
+    if rows:
+        lines = []
+        for tier, sentence in rows:
+            cls = ' class="is-none"' if tier == "none" else ""
+            lines.append(f'          <li{cls}><span class="ic '
+                         f'{STANDING_ICON[tier]}"></span>{esc(sentence)}</li>')
+        aside += ('      <section class="panel">\n'
+                  '        <h3>Designation</h3>\n'
+                  '        <ul class="standing">\n'
+                  + "\n".join(lines) + '\n        </ul>\n'
+                  '      </section>\n')
+    area_rows = "\n".join(
+        f'          <div class="spec"><span class="ic ic-pin"></span>'
+        f'<span class="spec-k"><a href="{esca(href)}">{esc(area_display(href))}</a>'
+        f'</span><span class="spec-v">{n:,}</span></div>'
+        for href, n in sorted(areas.items(), key=lambda kv: (-kv[1], kv[0])))
+    aside += ('      <section class="panel">\n'
+              '        <h3>Neighborhoods</h3>\n'
+              f'        <dl class="speclist">\n{area_rows}\n        </dl>\n'
+              '      </section>\n')
+
+    main_html = f"""  <h1>{esc(name)}</h1>
+  <ul class="tags">
+{tags_block}
+  </ul>
+
+  <p class="lead">{esc(lead)}</p>
+
+  <div class="stats">
+{stat_tiles_html(tiles, "    ")}
+  </div>
+
+  <div class="cols">
+    <div class="main">
+      <div class="section-head"><span class="ic ic-pin"></span><h2>Streets</h2></div>
+      <ul class="place-list">
+{place_list_html(street_items, "        ")}
+      </ul>
+
+      <div class="section-head"><span class="ic ic-home"></span><h2>Buildings</h2></div>
+      <ul class="place-list">
+{place_list_html(building_items, "        ")}
+      </ul>
+    </div>
+
+    <aside class="aside">
+{aside}    </aside>
+  </div>
+"""
+
+    n_streets = len(streets)
+    desc = (f"{name}, San Francisco: {len(members):,} documented building"
+            f"{'' if len(members) == 1 else 's'} on "
+            f"{'one street' if n_streets == 1 else f'{n_streets:,} streets'}, "
+            f"with construction dates, permits and the district's register "
+            f"standing, fully cited.")
+    crumbs = ('    <a href="/san-francisco/">San Francisco</a>\n'
+              f'    <a href="/san-francisco/{DISTRICTS_DIR}/">{DISTRICTS_TITLE}</a>\n'
+              f'    <span aria-current="page">{esc(short)}</span>')
+    (dist_dir / "index.html").write_text(
+        hub_shell(path, f"{name}, San Francisco", desc, crumbs, main_html,
+                  district_sources_html(name, members), name),
+        encoding="utf-8")
+    return True
+
+
+def write_districts_index(index_dir: Path, listed: list, held_back: int) -> bool:
+    """The index at /san-francisco/historic-districts/.
+
+    `listed` is (name, merged record, buildings, streets, area paths) per
+    district that earned a page, in the order the index shows them.
+    """
+    extra = hub_extra_sections(index_dir, KNOWN_DISTRICT_INDEX_SECTIONS)
+    if extra:
+        print(f"  {index_dir}: skipping — hand-written section(s) "
+              f"{', '.join(extra)} beyond the generated template; "
+              f"update the list by hand instead", file=sys.stderr)
+        return False
+
+    items = [(f"{district_slug(name)}/", name, district_hook(d, n_pages, n_streets))
+             for name, d, n_pages, n_streets, _areas in listed]
+    n_buildings = sum(n for _name, _d, n, _s, _a in listed)
+    n_areas = len({a for *_head, areas in listed for a in areas})
+
+    lead = hub_lead(index_dir,
+                    "The historic districts San Francisco's surveys have drawn, "
+                    "and the buildings documented inside each one. A district "
+                    "page lists every building here that stands within it, and "
+                    "the streets it runs through.")
+    held = (f"{held_back:,} further district{'' if held_back == 1 else 's'} named "
+            f"on the pages here hold fewer than {DISTRICT_MIN_PAGES} documented "
+            f"buildings, and have no page yet.")
+
+    md = [f"# {DISTRICTS_TITLE}", "", lead, "", "## Districts documented so far", ""]
+    md += [f"- [{label}]({href}) — {hook}" for href, label, hook in items]
+    md += ["", held, ""]
+    (index_dir / "index.md").write_text("\n".join(md), encoding="utf-8")
+
+    tiles = [("ic-plan", f"{len(items):,}", "Districts"),
+             ("ic-home", f"{n_buildings:,}", "Buildings documented"),
+             ("ic-pin", f"{n_areas:,}", "Neighborhoods")]
+    main_html = f"""  <h1>{DISTRICTS_TITLE}</h1>
+  <p class="lead">{esc(lead)}</p>
+
+  <div class="stats">
+{stat_tiles_html(tiles, "    ")}
+  </div>
+
+  <div class="section-head"><span class="ic ic-plan"></span><h2>Districts documented so far</h2></div>
+  <ul class="place-list">
+{place_list_html(items, "    ")}
+  </ul>
+
+  <p>{esc(held)}</p>
+"""
+    desc = (f"The {len(items):,} San Francisco historic districts with buildings "
+            f"documented on Know This Place: {n_buildings:,} buildings across "
+            f"{n_areas:,} neighborhoods, with register standing and periods of "
+            f"significance, fully cited.")
+    crumbs = ('    <a href="/san-francisco/">San Francisco</a>\n'
+              f'    <span aria-current="page">{DISTRICTS_TITLE}</span>')
+    (index_dir / "index.html").write_text(
+        hub_shell(f"/san-francisco/{DISTRICTS_DIR}/",
+                  f"{DISTRICTS_TITLE}, San Francisco", desc, crumbs, main_html,
+                  "", f"{DISTRICTS_TITLE}, San Francisco"),
+        encoding="utf-8")
+    return True
 
 
 # --------------------------------------------------------------------------
@@ -3065,6 +3585,60 @@ def cmd_seed_list(args) -> int:
     return 0
 
 
+def cmd_districts(args) -> int:
+    """Rebuild the historic-district hubs from the pages that name a district.
+
+    A derived index, like the sitemap and the map: it holds nothing of its own
+    beyond a hand-written lead, so re-running it after pages are added or
+    removed is always safe and always the fix when it has gone stale.
+    """
+    city_dir = ROOT / args.city
+    memberships = district_memberships(city_dir)
+    index_dir = city_dir / DISTRICTS_DIR
+    index_dir.mkdir(parents=True, exist_ok=True)
+
+    earned, held_back, by_slug = [], 0, {}
+    for name in sorted(memberships):
+        if len(memberships[name]) < args.min_pages:
+            held_back += 1
+            continue
+        slug = district_slug(name)
+        if slug in by_slug:
+            raise SystemExit(f"two districts share the slug '{slug}': "
+                             f"{by_slug[slug]!r} and {name!r} — "
+                             f"district_short_name needs to tell them apart")
+        by_slug[slug] = name
+        earned.append(name)
+
+    written, skipped, listed = 0, 0, []
+    for name in earned:
+        members = district_members(memberships[name])
+        dist_dir = index_dir / district_slug(name)
+        dist_dir.mkdir(parents=True, exist_ok=True)
+        if write_district_hub(dist_dir, name, members):
+            written += 1
+        else:
+            skipped += 1
+        # A hub the writer refused to touch is still a district with a page,
+        # so it keeps its line on the index.
+        listed.append((name,
+                       merge_district_records(name, [m["record"] for m in members]),
+                       len(members),
+                       len({m["street_path"] for m in members}),
+                       {m["area_path"] for m in members}))
+    write_districts_index(index_dir, listed, held_back)
+
+    for stale in sorted(index_dir.iterdir()):
+        if stale.is_dir() and stale.name not in by_slug:
+            print(f"  {stale}: no district with {args.min_pages} or more "
+                  f"documented buildings maps here any more — remove it by hand",
+                  file=sys.stderr)
+    print(f"wrote {written} district hub(s); left {skipped} untouched "
+          f"(hand-written sections); held back {held_back} district(s) under "
+          f"{args.min_pages} documented building(s)")
+    return 0
+
+
 def cmd_hubs(args) -> int:
     ctx = make_ctx(args, {"roll_year": args.roll_year, "historic": [], "districts": []})
     area_dir = ROOT / args.city / args.area
@@ -3140,6 +3714,14 @@ def main() -> int:
     common(p, neighborhood_required=False)
     p.add_argument("--roll-year", type=int, default=2025)
     p.set_defaults(fn=cmd_hubs)
+
+    p = sub.add_parser("districts",
+                       help="rebuild the historic-district hub pages from the "
+                            "address pages that name a district")
+    p.add_argument("--city", default="san-francisco")
+    p.add_argument("--min-pages", type=int, default=DISTRICT_MIN_PAGES,
+                   help="a district with fewer documented buildings gets no page")
+    p.set_defaults(fn=cmd_districts)
 
     args = ap.parse_args()
     return args.fn(args)

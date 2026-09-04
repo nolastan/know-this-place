@@ -1,0 +1,199 @@
+# Duboce Triangle Historic District Extension
+
+The buildings documented here so far inside the Duboce Triangle Historic District Extension, and the streets it runs through.
+
+## Streets
+
+- [14th Street](/san-francisco/castro/14th-street/) — 11 documented buildings inside the district.
+- [15th Street](/san-francisco/castro/15th-street/) — 24 documented buildings inside the district.
+- [16th Street](/san-francisco/castro/16th-street/) — 21 documented buildings inside the district.
+- [Beaver Street](/san-francisco/castro/beaver-street/) — 23 documented buildings inside the district.
+- [Castro Street](/san-francisco/castro/castro-street/) — 53 documented buildings inside the district.
+- [Henry Street](/san-francisco/castro/henry-street/) — 23 documented buildings inside the district.
+- [Noe Street](/san-francisco/castro/noe-street/) — 22 documented buildings inside the district.
+- [States Street](/san-francisco/castro/states-street/) — 1 documented building inside the district.
+
+## Buildings
+
+- [903–905 14th Street](/san-francisco/castro/14th-street/903/) — A 1900 two-flat, with stair work permitted in 1988.
+- [923 14th Street](/san-francisco/castro/14th-street/923/) — A 1900 single-family house, with reroofing permitted in 2000.
+- [927–929 14th Street](/san-francisco/castro/14th-street/927/) — A 1903 three-flat, with reroofing permitted in 2000.
+- [941 14th Street](/san-francisco/castro/14th-street/941/) — A 1912 2-unit apartment building, with foundation work permitted in 2018.
+- [945 14th Street](/san-francisco/castro/14th-street/945/) — A 1920 single-family house, with a kitchen and bathroom remodel permitted in 2007.
+- [963 14th Street](/san-francisco/castro/14th-street/963/) — A 1900 single-family house, with a vertical addition permitted in 2011.
+- [967 14th Street](/san-francisco/castro/14th-street/967/) — A 1924 single-family house, with deck work permitted in 2009.
+- [973 14th Street](/san-francisco/castro/14th-street/973/) — A 1903 3-unit tic building, with a kitchen remodel permitted in 1995.
+- [975 14th Street](/san-francisco/castro/14th-street/975/) — An 1899 2-unit apartment building, with a vertical addition permitted in 1998.
+- [977–979 14th Street](/san-francisco/castro/14th-street/977/) — A 1958 two-flat, with window replacement permitted in 1988.
+- [981–987 14th Street](/san-francisco/castro/14th-street/981/) — A 1906 4-unit apartment building, with a kitchen and bathroom remodel permitted in 2026.
+- [2200–2208 15th Street](/san-francisco/castro/15th-street/2200/) — A 1900 4-unit building with a ground-floor store, with window replacement permitted in 2013.
+- [2209–2219 15th Street](/san-francisco/castro/15th-street/2209/) — A 1900 4-unit apartment building, with a kitchen and bathroom remodel permitted in 2024.
+- [2221 15th Street](/san-francisco/castro/15th-street/2221/) — A 1900 single-family house, with reroofing permitted in 2022.
+- [2226 15th Street](/san-francisco/castro/15th-street/2226/) — A 1902 single-family house, with reroofing permitted in 2018.
+- [2235 15th Street](/san-francisco/castro/15th-street/2235/) — A 1900 single-family house, with reroofing permitted in 2009.
+- [2238–2240 15th Street](/san-francisco/castro/15th-street/2238/) — A 1902 three-flat, with a kitchen and bathroom remodel permitted in 2022.
+- [2239 15th Street](/san-francisco/castro/15th-street/2239/) — A 1905 two-flat, with stair work permitted in 1994.
+- [2258–2260 15th Street](/san-francisco/castro/15th-street/2258/) — A 1901 three-flat, with deck work permitted in 2011.
+- [2262–2264 15th Street](/san-francisco/castro/15th-street/2262/) — A 1907 two-flat, with garage work permitted in 1997.
+- [2267–2269 15th Street](/san-francisco/castro/15th-street/2267/) — A 1924 two-flat, with a kitchen and bathroom remodel permitted in 2015.
+- [2268 15th Street](/san-francisco/castro/15th-street/2268/) — A 1903 single-family house, with foundation work permitted in 2002.
+- [2271–2273 15th Street](/san-francisco/castro/15th-street/2271/) — A 1922 two-flat, with reroofing permitted in 2022.
+- [2272–2276 15th Street](/san-francisco/castro/15th-street/2272/) — A 1904 three-flat, with reroofing permitted in 1995.
+- [2275 15th Street](/san-francisco/castro/15th-street/2275/) — A 1924 two-flat, with a bathroom remodel permitted in 2025.
+- [2278 15th Street](/san-francisco/castro/15th-street/2278/) — A 1961 6-unit apartment building, with a kitchen remodel permitted in 2016.
+- [2279–2281 15th Street](/san-francisco/castro/15th-street/2279/) — A 1908 4-unit apartment building, with a kitchen and bathroom remodel permitted in 2010.
+- [2280 15th Street](/san-francisco/castro/15th-street/2280/) — A 1910 3-unit tic building, with a rear addition permitted in 2018.
+- [2283 15th Street](/san-francisco/castro/15th-street/2283/) — A 1908 two-flat.
+- [2286–2288 15th Street](/san-francisco/castro/15th-street/2286/) — A 1910 three-flat, with a seismic retrofit permitted in 2020.
+- [2289 15th Street](/san-francisco/castro/15th-street/2289/) — A 1900 two-flat, with foundation work permitted in 2014.
+- [2290–2292 15th Street](/san-francisco/castro/15th-street/2290/) — A 1904 three-flat, with one permit record from 2016.
+- [2294–2298 15th Street](/san-francisco/castro/15th-street/2294/) — A 1902 4-unit apartment building, with facade work permitted in 1988.
+- [2295 15th Street](/san-francisco/castro/15th-street/2295/) — A 1900 single-family house, with garage work permitted in 2000.
+- [2301 15th Street](/san-francisco/castro/15th-street/2301/) — A 1928 12-unit apartment building, with a seismic retrofit permitted in 2016.
+- [3618–3620 16th Street](/san-francisco/castro/16th-street/3618/) — A 1900 two-flat, with window replacement permitted in 2011.
+- [3622–3626 16th Street](/san-francisco/castro/16th-street/3622/) — A 1900 5-unit apartment building, with fire repair permitted in 2011.
+- [3628 16th Street](/san-francisco/castro/16th-street/3628/) — A 1900 two-flat, with a kitchen and bathroom remodel permitted in 2003.
+- [3632–3634 16th Street](/san-francisco/castro/16th-street/3632/) — A 1906 4-unit apartment building, with reroofing permitted in 2015.
+- [3633–3635 16th Street](/san-francisco/castro/16th-street/3633/) — A 1949 two-flat, with a kitchen and bathroom remodel permitted in 2021.
+- [3636–3640 16th Street](/san-francisco/castro/16th-street/3636/) — A 1905 6-unit apartment building, with reroofing permitted in 2014.
+- [3639–3645 16th Street](/san-francisco/castro/16th-street/3639/) — A 1917 4-unit apartment building, with dry-rot repair permitted in 2025.
+- [3646 16th Street](/san-francisco/castro/16th-street/3646/) — A 1900 1-unit apartment building, with a kitchen and bathroom remodel permitted in 2016.
+- [3650–3656 16th Street](/san-francisco/castro/16th-street/3650/) — A 1900 single-family house, with a rear addition permitted in 1989.
+- [3651 16th Street](/san-francisco/castro/16th-street/3651/) — A 1900 3-unit apartment building, with window replacement permitted in 2001.
+- [3653–3655 16th Street](/san-francisco/castro/16th-street/3653/) — A 1900 2-unit apartment building, with reroofing permitted in 2007.
+- [3654 16th Street](/san-francisco/castro/16th-street/3654/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2018.
+- [3658 16th Street](/san-francisco/castro/16th-street/3658/) — A 1900 single-family house, with a rear addition permitted in 1989.
+- [3660–3664 16th Street](/san-francisco/castro/16th-street/3660/) — A 1900 three-flat, with facade work permitted in 2022.
+- [3661–3671 16th Street](/san-francisco/castro/16th-street/3661/) — A 1905 24-unit apartment building, with foundation work permitted in 2008.
+- [3673 16th Street](/san-francisco/castro/16th-street/3673/) — A 1900 two-flat, with foundation work permitted in 2016.
+- [3674 16th Street](/san-francisco/castro/16th-street/3674/) — An 1890 5-unit apartment building, with a kitchen and bathroom remodel permitted in 2017.
+- [3678–3680 16th Street](/san-francisco/castro/16th-street/3678/) — A 1900 3-unit tic building, with garage work permitted in 2019.
+- [3679–3681 16th Street](/san-francisco/castro/16th-street/3679/) — A 1900 two-flat, with a kitchen remodel permitted in 1988.
+- [3700 16th Street](/san-francisco/castro/16th-street/3700/) — A 1959 8-unit apartment building, with a seismic retrofit permitted in 2017.
+- [3701–3709 16th Street](/san-francisco/castro/16th-street/3701/) — A 1907 6-unit apartment building, with reroofing permitted in 1991.
+- [6–8 Beaver Street](/san-francisco/castro/beaver-street/6/) — A 1900 two-flat, with a kitchen and bathroom remodel permitted in 2005.
+- [7 Beaver Street](/san-francisco/castro/beaver-street/7/) — A 1900 single-family house, with reroofing permitted in 1993.
+- [9 Beaver Street](/san-francisco/castro/beaver-street/9/) — A 1900 single-family house, with an addition permitted in 2009.
+- [15–17 Beaver Street](/san-francisco/castro/beaver-street/15/) — A 1900 two-flat, with window replacement permitted in 2002.
+- [18 Beaver Street](/san-francisco/castro/beaver-street/18/) — An 1890 single-family house, with an addition permitted in 2004.
+- [19 Beaver Street](/san-francisco/castro/beaver-street/19/) — A 1900 three-flat, with a kitchen remodel permitted in 2005.
+- [20 Beaver Street](/san-francisco/castro/beaver-street/20/) — A 1991 two dwellings on one parcel, with a kitchen and bathroom remodel permitted in 2017.
+- [21 Beaver Street](/san-francisco/castro/beaver-street/21/) — A 1900 single-family house, with a rear addition permitted in 2011.
+- [22 Beaver Street](/san-francisco/castro/beaver-street/22/) — The Benedict-Gieling House, City Landmark No. 284 — the last Duboce Triangle villa left with its garden.
+- [23 Beaver Street](/san-francisco/castro/beaver-street/23/) — A 1900 single-family house, with foundation work permitted in 2010.
+- [46–48 Beaver Street](/san-francisco/castro/beaver-street/46/) — A 1926 two-flat, with plumbing work permitted in 2012.
+- [51 Beaver Street](/san-francisco/castro/beaver-street/51/) — A 1902 single-family house, with an addition permitted in 2014.
+- [52 Beaver Street](/san-francisco/castro/beaver-street/52/) — A 1932 two-flat, with a kitchen and bathroom remodel permitted in 2013.
+- [55–57 Beaver Street](/san-francisco/castro/beaver-street/55/) — A 1900 two-flat, with reroofing permitted in 1997.
+- [59 Beaver Street](/san-francisco/castro/beaver-street/59/) — A 1900 single-family house, with one permit record from 2020.
+- [60–62 Beaver Street](/san-francisco/castro/beaver-street/60/) — A 1916 two-flat, with window replacement permitted in 2018.
+- [64–66 Beaver Street](/san-francisco/castro/beaver-street/64/) — A 1916 two-flat, with garage work permitted in 2019.
+- [65 Beaver Street](/san-francisco/castro/beaver-street/65/) — A 1900 two-flat, with deck work permitted in 2012.
+- [68–70 Beaver Street](/san-francisco/castro/beaver-street/68/) — A 1917 two-flat, with window replacement permitted in 2024.
+- [69 Beaver Street](/san-francisco/castro/beaver-street/69/) — An 1892 single-family house, with foundation work permitted in 2008.
+- [74 Beaver Street](/san-francisco/castro/beaver-street/74/) — A 1900 single-family house, with a rear addition permitted in 1991.
+- [80–82 Beaver Street](/san-francisco/castro/beaver-street/80/) — A 1900 two-flat, with window replacement permitted in 2025.
+- [111–117 Beaver Street](/san-francisco/castro/beaver-street/111/) — A 1949 4-unit apartment building, with stair work permitted in 2002.
+- [101–109 Castro Street](/san-francisco/castro/castro-street/101/) — A 1908 6-unit apartment building, with a kitchen and bathroom remodel permitted in 2024.
+- [111 Castro Street](/san-francisco/castro/castro-street/111/) — A 1900 single-family house, with window replacement permitted in 2023.
+- [117 Castro Street](/san-francisco/castro/castro-street/117/) — A 1916 single-family house, with a kitchen remodel permitted in 2004.
+- [125 Castro Street](/san-francisco/castro/castro-street/125/) — A 1900 two-flat, with reroofing permitted in 1997.
+- [149 Castro Street](/san-francisco/castro/castro-street/149/) — A 1900 6-unit apartment building, with a seismic retrofit permitted in 2017.
+- [150 Castro Street](/san-francisco/castro/castro-street/150/) — A 1900 single-family house, with a bathroom remodel permitted in 2014.
+- [158 Castro Street](/san-francisco/castro/castro-street/158/) — A 1905 single-family house, with dry-rot repair permitted in 1991.
+- [160–162 Castro Street](/san-francisco/castro/castro-street/160/) — A 1904 two-flat, with a kitchen remodel permitted in 2003.
+- [161–167 Castro Street](/san-francisco/castro/castro-street/161/) — A 1900 8-unit tic building, with deck work permitted in 2008.
+- [169–171 Castro Street](/san-francisco/castro/castro-street/169/) — A 1903 two-flat, with deck work permitted in 2011.
+- [172–174 Castro Street](/san-francisco/castro/castro-street/172/) — A 1906 4-unit apartment building, with a seismic retrofit permitted in 2018.
+- [175 Castro Street](/san-francisco/castro/castro-street/175/) — A 1954 4-unit apartment building, with reroofing permitted in 2016.
+- [176 Castro Street](/san-francisco/castro/castro-street/176/) — A 1905 two-flat, with a rear addition permitted in 1988.
+- [179–189 Castro Street](/san-francisco/castro/castro-street/179/) — A 1906 6-unit apartment building, with an addition permitted in 2016.
+- [182–186 Castro Street](/san-francisco/castro/castro-street/182/) — A 1900 three-flat, with stair work permitted in 1990.
+- [190 Castro Street](/san-francisco/castro/castro-street/190/) — A 1928 3-unit apartment building, with a kitchen and bathroom remodel permitted in 2018.
+- [198 Castro Street](/san-francisco/castro/castro-street/198/) — A 1900 apartment building, with garage work permitted in 2004.
+- [201–205 Castro Street](/san-francisco/castro/castro-street/201/) — A 1900 5-unit apartment building, with reroofing permitted in 2002.
+- [207 Castro Street](/san-francisco/castro/castro-street/207/) — A 1900 single-family house, with deck work permitted in 2000.
+- [218–220 Castro Street](/san-francisco/castro/castro-street/218/) — A 1927 two-flat, with a seismic retrofit permitted in 2017.
+- [225–227 Castro Street](/san-francisco/castro/castro-street/225/) — A 1921 4-unit apartment building, with a kitchen and bathroom remodel permitted in 2018.
+- [230 Castro Street](/san-francisco/castro/castro-street/230/) — A 1937 6-unit apartment building, with an accessory dwelling unit permitted in 2026.
+- [235 Castro Street](/san-francisco/castro/castro-street/235/) — A 1900 single-family house, with reroofing permitted in 2017.
+- [238–240 Castro Street](/san-francisco/castro/castro-street/238/) — A 1910 three-flat, with a seismic retrofit permitted in 2022.
+- [239 Castro Street](/san-francisco/castro/castro-street/239/) — A 1908 single-family house, with deck work permitted in 2018.
+- [245 Castro Street](/san-francisco/castro/castro-street/245/) — A 1900 single-family house, with foundation work permitted in 2009.
+- [250 Castro Street](/san-francisco/castro/castro-street/250/) — A 1953 8-unit apartment building, with a seismic retrofit permitted in 2016.
+- [251–255 Castro Street](/san-francisco/castro/castro-street/251/) — A 1911 4-unit apartment building, with a kitchen and bathroom remodel permitted in 2019.
+- [252–256 Castro Street](/san-francisco/castro/castro-street/252/) — A 1904 three-flat, with window replacement permitted in 2015.
+- [257 Castro Street](/san-francisco/castro/castro-street/257/) — A 1910 single-family house, with a bathroom remodel permitted in 2013.
+- [260 Castro Street](/san-francisco/castro/castro-street/260/) — A 1927 single-family house, with an addition permitted in 2015.
+- [262–264 Castro Street](/san-francisco/castro/castro-street/262/) — A 1906 single-family house, with an addition permitted in 2020.
+- [263 Castro Street](/san-francisco/castro/castro-street/263/) — A 1900 single-family house, with reroofing permitted in 2007.
+- [265 Castro Street](/san-francisco/castro/castro-street/265/) — A 1906 single-family house, with foundation work permitted in 2021.
+- [270–272 Castro Street](/san-francisco/castro/castro-street/270/) — A 1928 two-flat, with a rear addition permitted in 2019.
+- [271–273 Castro Street](/san-francisco/castro/castro-street/271/) — A 1900 4-unit apartment building, with reroofing permitted in 2016.
+- [275–279 Castro Street](/san-francisco/castro/castro-street/275/) — A 1955 4-unit apartment building, with garage work permitted in 2020.
+- [276 Castro Street](/san-francisco/castro/castro-street/276/) — An 1898 3-unit apartment building, with reroofing permitted in 1996.
+- [281–283 Castro Street](/san-francisco/castro/castro-street/281/) — A 1900 two-flat, with a kitchen and bathroom remodel permitted in 2022.
+- [282 Castro Street](/san-francisco/castro/castro-street/282/) — A 1973 5-unit apartment building, with a seismic retrofit permitted in 2016.
+- [289–299 Castro Street](/san-francisco/castro/castro-street/289/) — A 1902 10-unit apartment building, with an accessory dwelling unit permitted in 2020.
+- [300 Castro Street](/san-francisco/castro/castro-street/300/) — A 1900 2-unit tic building, with stair work permitted in 2016.
+- [311 Castro Street](/san-francisco/castro/castro-street/311/) — A 1900 single-family house, with reroofing permitted in 1995.
+- [313 Castro Street](/san-francisco/castro/castro-street/313/) — A 1900 2-unit apartment building, with a kitchen and bathroom remodel permitted in 2017.
+- [314 Castro Street](/san-francisco/castro/castro-street/314/) — A 1922 single-family house, with reroofing permitted in 2007.
+- [315 Castro Street](/san-francisco/castro/castro-street/315/) — A 1900 two-flat, with facade work permitted in 2008.
+- [316–318 Castro Street](/san-francisco/castro/castro-street/316/) — A 1977 two-flat, with permit records from 2018 to 2025.
+- [317 Castro Street](/san-francisco/castro/castro-street/317/) — A 1905 two-flat, with a kitchen and bathroom remodel permitted in 1994.
+- [321–323 Castro Street](/san-francisco/castro/castro-street/321/) — A 1905 two-flat, with a bathroom remodel permitted in 2019.
+- [324 Castro Street](/san-francisco/castro/castro-street/324/) — A 1900 two-flat.
+- [325–375 Castro Street](/san-francisco/castro/castro-street/325/) — A 1900 5-unit apartment building, with a bathroom remodel permitted in 2006.
+- [328–332 Castro Street](/san-francisco/castro/castro-street/328/) — A 1927 5-unit apartment building, with a kitchen and bathroom remodel permitted in 2024.
+- [360 Castro Street](/san-francisco/castro/castro-street/360/) — A 1954 6-unit apartment building, with a seismic retrofit permitted in 2017.
+- [115–121 Henry Street](/san-francisco/castro/henry-street/115/) — A 1904 7-unit apartment building, with a seismic retrofit permitted in 2017.
+- [122–124 Henry Street](/san-francisco/castro/henry-street/122/) — A 1910 two-flat, with a rear addition permitted in 2007.
+- [123 Henry Street](/san-francisco/castro/henry-street/123/) — A 1925 two-flat.
+- [126–128 Henry Street](/san-francisco/castro/henry-street/126/) — A 1933 three-flat, with a bathroom remodel permitted in 2019.
+- [129 Henry Street](/san-francisco/castro/henry-street/129/) — A 1902 two-flat, with a rear addition permitted in 1997.
+- [132–134 Henry Street](/san-francisco/castro/henry-street/132/) — A 1902 two-flat, with reroofing permitted in 2023.
+- [133 Henry Street](/san-francisco/castro/henry-street/133/) — A 1903 single-family house, with a seismic retrofit permitted in 2024.
+- [136–138 Henry Street](/san-francisco/castro/henry-street/136/) — A 1900 2-unit apartment building, with a kitchen and bathroom remodel permitted in 2007.
+- [145–147 Henry Street](/san-francisco/castro/henry-street/145/) — A 1904 5-unit apartment building, with a seismic retrofit permitted in 2016.
+- [146 Henry Street](/san-francisco/castro/henry-street/146/) — A 1902 single-family house, with foundation work permitted in 2024.
+- [149–151 Henry Street](/san-francisco/castro/henry-street/149/) — A 1904 3-unit apartment building, with a kitchen and bathroom remodel permitted in 2015.
+- [150–152 Henry Street](/san-francisco/castro/henry-street/150/) — A 1908 two-flat, with an addition permitted in 2014.
+- [153–155 Henry Street](/san-francisco/castro/henry-street/153/) — A 1904 two-flat, with stair work permitted in 2003.
+- [156 Henry Street](/san-francisco/castro/henry-street/156/) — A 1901 single-family house, with reroofing permitted in 2008.
+- [157–161 Henry Street](/san-francisco/castro/henry-street/157/) — A 1908 10-unit apartment building, with a seismic retrofit permitted in 2016.
+- [158–162 Henry Street](/san-francisco/castro/henry-street/158/) — A 1908 three-flat, with a kitchen and bathroom remodel permitted in 2012.
+- [164–166 Henry Street](/san-francisco/castro/henry-street/164/) — A 1900 two-flat, with reroofing permitted in 2007.
+- [165 Henry Street](/san-francisco/castro/henry-street/165/) — A 1903 single-family house, with garage work permitted in 2020.
+- [168–170 Henry Street](/san-francisco/castro/henry-street/168/) — A 1904 two-flat, with deck work permitted in 2004.
+- [169–171 Henry Street](/san-francisco/castro/henry-street/169/) — A 1904 4-unit apartment building, with a bathroom remodel permitted in 2000.
+- [174 Henry Street](/san-francisco/castro/henry-street/174/) — A 1900 single-family house, with reroofing permitted in 2001.
+- [183–185 Henry Street](/san-francisco/castro/henry-street/183/) — A 1909 two-flat, with foundation work permitted in 1999.
+- [191–197 Henry Street](/san-francisco/castro/henry-street/191/) — A 1900 7-unit apartment building, with a seismic retrofit permitted in 2017.
+- [106–112 Noe Street](/san-francisco/castro/noe-street/106/) — A 1924 4-unit tic building, with a kitchen remodel permitted in 2022.
+- [114–124 Noe Street](/san-francisco/castro/noe-street/114/) — A 1906 6-unit apartment building, with an accessory dwelling unit permitted in 2019.
+- [130 Noe Street](/san-francisco/castro/noe-street/130/) — A 1900 two-flat, with reroofing permitted in 2018.
+- [136–144 Noe Street](/san-francisco/castro/noe-street/136/) — A 1900 9-unit apartment building, with a kitchen and bathroom remodel permitted in 2016.
+- [150–154 Noe Street](/san-francisco/castro/noe-street/150/) — A 1900 three-flat, with foundation work permitted in 2021.
+- [160–162 Noe Street](/san-francisco/castro/noe-street/160/) — A 1907 two-flat, with deck work permitted in 2019.
+- [168–170 Noe Street](/san-francisco/castro/noe-street/168/) — A 1902 4-unit apartment building, with reroofing permitted in 2005.
+- [184–186 Noe Street](/san-francisco/castro/noe-street/184/) — A 1902 4-unit apartment building, with garage work permitted in 2014.
+- [200 Noe Street](/san-francisco/castro/noe-street/200/) — A 1904 3-unit building with a ground-floor store, with foundation work permitted in 2025.
+- [206–208 Noe Street](/san-francisco/castro/noe-street/206/) — A 1923 three-flat, with a vertical addition permitted in 2018.
+- [210–212 Noe Street](/san-francisco/castro/noe-street/210/) — A 1905 two-flat, with a bathroom remodel permitted in 2020.
+- [218–220 Noe Street](/san-francisco/castro/noe-street/218/) — A 1900 two-flat, with reroofing permitted in 1990.
+- [224–226 Noe Street](/san-francisco/castro/noe-street/224/) — A 1904 3-unit apartment building, with reroofing permitted in 2023.
+- [228–230 Noe Street](/san-francisco/castro/noe-street/228/) — A 1902 two-flat, with reroofing permitted in 1993.
+- [234–236 Noe Street](/san-francisco/castro/noe-street/234/) — A 1900 two-flat, with reroofing permitted in 2007.
+- [238–248 Noe Street](/san-francisco/castro/noe-street/238/) — A 1905 6-unit apartment building, with one permit record from 2014.
+- [258–260 Noe Street](/san-francisco/castro/noe-street/258/) — A 1900 two-flat, with facade work permitted in 2019.
+- [262–266 Noe Street](/san-francisco/castro/noe-street/262/) — A 1900 3-unit building with a ground-floor store, with reroofing permitted in 1994.
+- [270 Noe Street](/san-francisco/castro/noe-street/270/) — A 1900 two-flat.
+- [276–278 Noe Street](/san-francisco/castro/noe-street/276/) — A 1900 two-flat, with reroofing permitted in 2003.
+- [280–284 Noe Street](/san-francisco/castro/noe-street/280/) — A 1900 two-flat, with facade work permitted in 1989.
+- [286–288 Noe Street](/san-francisco/castro/noe-street/286/) — A 1937 mixed-use building on the first block of Noe Street; home to La Méditerranée.
+- [1–7 States Street](/san-francisco/castro/states-street/1/) — A 1908 7-unit apartment building, with a seismic retrofit permitted in 2017.
+
+The district record is the city's; the buildings beneath it are
+generated from the DataSF datasets listed in each page's Sources
+footer, and are corrected by hand as readers write in.

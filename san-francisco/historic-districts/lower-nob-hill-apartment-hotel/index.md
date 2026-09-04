@@ -1,0 +1,214 @@
+# Lower Nob Hill Apartment Hotel Historic District
+
+The buildings documented here so far inside the Lower Nob Hill Apartment Hotel Historic District, and the streets it runs through.
+
+## Streets
+
+- [Bush Street, Financial District](/san-francisco/financial-district/bush-street/) — 18 documented buildings inside the district.
+- [Bush Street, Nob Hill](/san-francisco/nob-hill/bush-street/) — 33 documented buildings inside the district.
+- [Dashiell Hammett Street](/san-francisco/financial-district/dashiell-hammett-street/) — 2 documented buildings inside the district.
+- [Geary Street](/san-francisco/tenderloin/geary-street/) — 1 documented building inside the district.
+- [Hyde Street](/san-francisco/nob-hill/hyde-street/) — 10 documented buildings inside the district.
+- [Jones Street, Nob Hill](/san-francisco/nob-hill/jones-street/) — 7 documented buildings inside the district.
+- [Jones Street, Tenderloin](/san-francisco/tenderloin/jones-street/) — 1 documented building inside the district.
+- [Larkin Street](/san-francisco/nob-hill/larkin-street/) — 5 documented buildings inside the district.
+- [Leavenworth Street](/san-francisco/nob-hill/leavenworth-street/) — 11 documented buildings inside the district.
+- [Mason Street](/san-francisco/nob-hill/mason-street/) — 4 documented buildings inside the district.
+- [Meacham Place](/san-francisco/tenderloin/meacham-place/) — 1 documented building inside the district.
+- [Pine Street](/san-francisco/financial-district/pine-street/) — 2 documented buildings inside the district.
+- [Polk Street](/san-francisco/tenderloin/polk-street/) — 1 documented building inside the district.
+- [Post Street, Nob Hill](/san-francisco/nob-hill/post-street/) — 1 documented building inside the district.
+- [Post Street, Tenderloin](/san-francisco/tenderloin/post-street/) — 41 documented buildings inside the district.
+- [Powell Street](/san-francisco/nob-hill/powell-street/) — 3 documented buildings inside the district.
+- [Stockton Street](/san-francisco/chinatown/stockton-street/) — 4 documented buildings inside the district.
+- [Sutter Street](/san-francisco/nob-hill/sutter-street/) — 30 documented buildings inside the district.
+- [Taylor Street](/san-francisco/tenderloin/taylor-street/) — 7 documented buildings inside the district.
+
+## Buildings
+
+- [586–598 Bush Street](/san-francisco/financial-district/bush-street/586/) — A 1908 building, with reroofing permitted in 2010.
+- [618 Bush Street](/san-francisco/financial-district/bush-street/618/) — A 1914 37-unit apartment building, with a kitchen and bathroom remodel permitted in 2015.
+- [624–630 Bush Street](/san-francisco/financial-district/bush-street/624/) — A 1914 27-unit apartment building, with a kitchen and bathroom remodel permitted in 2010.
+- [625 Bush Street](/san-francisco/financial-district/bush-street/625/) — A 1910 66-unit apartment building, with reroofing permitted in 1998.
+- [645 Bush Street](/san-francisco/financial-district/bush-street/645/) — A 1911 52-unit apartment building, with a seismic retrofit permitted in 1993.
+- [660 Bush Street](/san-francisco/financial-district/bush-street/660/) — A 1910 40-unit apartment building, with a seismic retrofit permitted in 2004.
+- [663–665 Bush Street](/san-francisco/financial-district/bush-street/663/) — A 2000 hotel, with an addition permitted in 2006.
+- [698 Bush Street](/san-francisco/financial-district/bush-street/698/) — A 1907 45-unit apartment building, with a seismic retrofit permitted in 2001.
+- [722–730 Bush Street](/san-francisco/financial-district/bush-street/722/) — A 1915 19-unit apartment building, with a seismic retrofit permitted in 2004.
+- [729 Bush Street](/san-francisco/financial-district/bush-street/729/) — A 1911 store building, with an addition permitted in 2022.
+- [734 Bush Street](/san-francisco/financial-district/bush-street/734/) — A 1911 47-unit apartment building, with a kitchen and bathroom remodel permitted in 2006.
+- [753 Bush Street](/san-francisco/financial-district/bush-street/753/) — A 1911 hotel, with window replacement permitted in 2010.
+- [755 Bush Street](/san-francisco/financial-district/bush-street/755/) — A 1916 28-unit apartment building, with a seismic retrofit permitted in 1996.
+- [767–771 Bush Street](/san-francisco/financial-district/bush-street/767/) — A 1921 store building, with a kitchen remodel permitted in 2023.
+- [776 Bush Street](/san-francisco/financial-district/bush-street/776/) — A 1911 61-unit apartment building, with plumbing work permitted in 2008.
+- [786 Bush Street](/san-francisco/financial-district/bush-street/786/) — A 1911 13-unit apartment building, with stair work permitted in 2010.
+- [800 Bush Street](/san-francisco/financial-district/bush-street/800/) — A 1914 31-unit apartment building, with a seismic retrofit permitted in 2024.
+- [801–811 Bush Street](/san-francisco/financial-district/bush-street/801/) — A 1916 50-unit apartment building, with a seismic retrofit permitted in 2024.
+- [815 Bush Street](/san-francisco/nob-hill/bush-street/815/) — A 1912 7-unit apartment building, with reroofing permitted in 1998.
+- [825 Bush Street](/san-francisco/nob-hill/bush-street/825/) — A 1907 43-unit apartment building, with a seismic retrofit permitted in 1998.
+- [834 Bush Street](/san-francisco/nob-hill/bush-street/834/) — A 1923 20-unit apartment building, with permit records from 1990 to 2020.
+- [835 Bush Street](/san-francisco/nob-hill/bush-street/835/) — A 1922 26-unit apartment building, with a seismic retrofit permitted in 1998.
+- [845 Bush Street](/san-francisco/nob-hill/bush-street/845/) — A 1915 hotel, with deck work permitted in 1985.
+- [846 Bush Street](/san-francisco/nob-hill/bush-street/846/) — A 1917 32-unit apartment building, with fire repair permitted in 1989.
+- [850–856 Bush Street](/san-francisco/nob-hill/bush-street/850/) — A 1922 store building, with a bathroom remodel permitted in 1987.
+- [863 Bush Street](/san-francisco/nob-hill/bush-street/863/) — A 1911 hotel, with a bathroom remodel permitted in 2017.
+- [875 Bush Street](/san-francisco/nob-hill/bush-street/875/) — A 1921 26-unit apartment building, with reroofing permitted in 2011.
+- [878–884 Bush Street](/san-francisco/nob-hill/bush-street/878/) — A 1917 18-unit apartment building, with fire repair permitted in 1995.
+- [883–895 Bush Street](/san-francisco/nob-hill/bush-street/883/) — A 1923 70-unit apartment building, with a bathroom remodel permitted in 2022.
+- [955 Bush Street](/san-francisco/nob-hill/bush-street/955/) — A 1916 35-unit apartment building, with permit records from 1994 to 2020.
+- [972 Bush Street](/san-francisco/nob-hill/bush-street/972/) — A 1913 28-unit apartment building, with deck work permitted in 2013.
+- [975–985 Bush Street](/san-francisco/nob-hill/bush-street/975/) — A 1927 hotel, with facade work permitted in 2009.
+- [980–998 Bush Street](/san-francisco/nob-hill/bush-street/980/) — A 1910 73-unit apartment building, with a kitchen remodel permitted in 2019.
+- [999 Bush Street](/san-francisco/nob-hill/bush-street/999/) — A 1910 35-unit apartment building, with dry-rot repair permitted in 1986.
+- [1000–1010 Bush Street](/san-francisco/nob-hill/bush-street/1000/) — A 1907 hotel, with a bathroom remodel permitted in 2015.
+- [1018–1020 Bush Street](/san-francisco/nob-hill/bush-street/1018/) — A 1910 13-unit apartment building, with a seismic retrofit permitted in 2003.
+- [1025 Bush Street](/san-francisco/nob-hill/bush-street/1025/) — A 1915 9-unit apartment building, with a seismic retrofit permitted in 2003.
+- [1035 Bush Street](/san-francisco/nob-hill/bush-street/1035/) — A 1915 16-unit apartment building, with a kitchen and bathroom remodel permitted in 2011.
+- [1073 Bush Street](/san-francisco/nob-hill/bush-street/1073/) — A 1911 11-unit apartment building, with reroofing permitted in 2001.
+- [1080 Bush Street](/san-francisco/nob-hill/bush-street/1080/) — A 1913 55-unit apartment building, with a seismic retrofit permitted in 1998.
+- [1091 Bush Street](/san-francisco/nob-hill/bush-street/1091/) — A 1910 99-unit apartment building, with reroofing permitted in 1994.
+- [1094 Bush Street](/san-francisco/nob-hill/bush-street/1094/) — A 1912 24-unit apartment building, with a seismic retrofit permitted in 2001.
+- [1105 Bush Street](/san-francisco/nob-hill/bush-street/1105/) — A 1911 46-unit apartment building, with a seismic retrofit permitted in 1996.
+- [1106 Bush Street](/san-francisco/nob-hill/bush-street/1106/) — A 1914 42-unit apartment building, with a kitchen remodel permitted in 2017.
+- [1121 Bush Street](/san-francisco/nob-hill/bush-street/1121/) — A 1922 17-unit apartment building, with a seismic retrofit permitted in 2001.
+- [1135 Bush Street](/san-francisco/nob-hill/bush-street/1135/) — A 1913 16-unit apartment building, with a seismic retrofit permitted in 1997.
+- [1137 Bush Street](/san-francisco/nob-hill/bush-street/1137/) — A 1915 8-unit apartment building, with a seismic retrofit permitted in 1998.
+- [1153 Bush Street](/san-francisco/nob-hill/bush-street/1153/) — A 1911 hotel, with a seismic retrofit permitted in 2003.
+- [1171 Bush Street](/san-francisco/nob-hill/bush-street/1171/) — A 1919 13-unit apartment building, with reroofing permitted in 1997.
+- [1207 Bush Street](/san-francisco/nob-hill/bush-street/1207/) — A 1911 13-unit apartment building, with a seismic retrofit permitted in 1995.
+- [1209 Bush Street](/san-francisco/nob-hill/bush-street/1209/) — A 1915 23-unit apartment building, with reroofing permitted in 1996.
+- [20 Dashiell Hammett Street](/san-francisco/financial-district/dashiell-hammett-street/20/) — A 1912 22-unit apartment building, with reroofing permitted in 2005.
+- [27 Dashiell Hammett Street](/san-francisco/financial-district/dashiell-hammett-street/27/) — A 1912 hotel, with an addition permitted in 2017.
+- [650 Geary Street](/san-francisco/tenderloin/geary-street/650/) — A 1917 theater, with reroofing permitted in 2018.
+- [636 Hyde Street](/san-francisco/nob-hill/hyde-street/636/) — A 1917 7-unit apartment building, with a kitchen and bathroom remodel permitted in 2023.
+- [642 Hyde Street](/san-francisco/nob-hill/hyde-street/642/) — A 1917 6-unit apartment building, with fire repair permitted in 2015.
+- [647 Hyde Street](/san-francisco/nob-hill/hyde-street/647/) — A 1907 single-family house, with a kitchen and bathroom remodel permitted in 2019.
+- [655 Hyde Street](/san-francisco/nob-hill/hyde-street/655/) — A 1913 14-unit apartment building, with facade work permitted in 1994.
+- [717 Hyde Street](/san-francisco/nob-hill/hyde-street/717/) — A 1911 7-unit apartment building, with reroofing permitted in 2003.
+- [729 Hyde Street](/san-francisco/nob-hill/hyde-street/729/) — A 1910 11-unit apartment building, with a seismic retrofit permitted in 2003.
+- [740–746 Hyde Street](/san-francisco/nob-hill/hyde-street/740/) — A 1911 four-flat, with window replacement permitted in 2017.
+- [824 Hyde Street](/san-francisco/nob-hill/hyde-street/824/) — A 2020 15-unit apartment building, with foundation work permitted in 2019.
+- [845 Hyde Street](/san-francisco/nob-hill/hyde-street/845/) — A 1919 16-unit apartment building, with a seismic retrofit permitted in 1994.
+- [897–899 Hyde Street](/san-francisco/nob-hill/hyde-street/897/) — A 1908 office building, with a seismic retrofit permitted in 1993.
+- [642 Jones Street](/san-francisco/nob-hill/jones-street/642/) — A 1911 hotel, with a bathroom remodel permitted in 2009.
+- [649 Jones Street](/san-francisco/nob-hill/jones-street/649/) — A 1912 hotel, with a seismic retrofit permitted in 1999.
+- [720 Jones Street](/san-francisco/nob-hill/jones-street/720/) — A 1911 42-unit apartment building, with a kitchen and bathroom remodel permitted in 2019.
+- [801 Jones Street](/san-francisco/nob-hill/jones-street/801/) — A 1918 60-unit apartment building, with a seismic retrofit permitted in 1998.
+- [810 Jones Street](/san-francisco/nob-hill/jones-street/810/) — A 1916 21-unit apartment building, with a seismic retrofit permitted in 2002.
+- [825–841 Jones Street](/san-francisco/nob-hill/jones-street/825/) — A 1919 18-unit apartment building, with stair work permitted in 2017.
+- [833 Jones Street](/san-francisco/nob-hill/jones-street/833/) — A 1920 16-unit apartment building, with reroofing permitted in 2021.
+- [620 Jones Street](/san-francisco/tenderloin/jones-street/620/) — A 1929 167-unit apartment building, with a bathroom remodel permitted in 2007.
+- [945 Larkin Street](/san-francisco/nob-hill/larkin-street/945/) — A 1916 20-unit apartment building, with a seismic retrofit permitted in 2000.
+- [1005 Larkin Street](/san-francisco/nob-hill/larkin-street/1005/) — A 1907 32-unit apartment building, with a kitchen and bathroom remodel permitted in 2016.
+- [1030 Larkin Street](/san-francisco/nob-hill/larkin-street/1030/) — A 1919 16-unit apartment building, with an accessory dwelling unit permitted in 2021.
+- [1038–1098 Larkin Street](/san-francisco/nob-hill/larkin-street/1038/) — A 1907 hotel, with a kitchen and bathroom remodel permitted in 2001.
+- [1144 Larkin Street](/san-francisco/nob-hill/larkin-street/1144/) — A 1911 16-unit apartment building, with a seismic retrofit permitted in 1998.
+- [622–626 Leavenworth Street](/san-francisco/nob-hill/leavenworth-street/622/) — A 1910 three-flat, with a seismic retrofit permitted in 1999.
+- [711 Leavenworth Street](/san-francisco/nob-hill/leavenworth-street/711/) — A 1916 35-unit apartment building, with reroofing permitted in 2012.
+- [715–717 Leavenworth Street](/san-francisco/nob-hill/leavenworth-street/715/) — A 1916 13-unit apartment building, with a seismic retrofit permitted in 2003.
+- [724 Leavenworth Street](/san-francisco/nob-hill/leavenworth-street/724/) — A 1909 14-unit apartment building, with reroofing permitted in 2011.
+- [725 Leavenworth Street](/san-francisco/nob-hill/leavenworth-street/725/) — A 1916 8-unit apartment building, with reroofing permitted in 2013.
+- [736 Leavenworth Street](/san-francisco/nob-hill/leavenworth-street/736/) — A 1914 9-unit apartment building, with a seismic retrofit permitted in 1997.
+- [808 Leavenworth Street](/san-francisco/nob-hill/leavenworth-street/808/) — A 1923 35-unit apartment building, with a kitchen and bathroom remodel permitted in 2007.
+- [821 Leavenworth Street](/san-francisco/nob-hill/leavenworth-street/821/) — A 1916 19-unit apartment building, with reroofing permitted in 1995.
+- [827–829 Leavenworth Street](/san-francisco/nob-hill/leavenworth-street/827/) — A 1925 12-unit apartment building.
+- [925 Leavenworth Street](/san-francisco/nob-hill/leavenworth-street/925/) — A 1922 16-unit apartment building, with reroofing permitted in 2025.
+- [930 Leavenworth Street](/san-francisco/nob-hill/leavenworth-street/930/) — A 1911 12-unit apartment building, with a seismic retrofit permitted in 1999.
+- [635–639 Mason Street](/san-francisco/nob-hill/mason-street/635/) — A 1907 four-flat, with fire repair permitted in 1997.
+- [696 Mason Street](/san-francisco/nob-hill/mason-street/696/) — A 1912 46-unit apartment building, with a seismic retrofit permitted in 2004.
+- [700 Mason Street](/san-francisco/nob-hill/mason-street/700/) — A 1911 9-unit apartment building, with reroofing permitted in 1999.
+- [714–718 Mason Street](/san-francisco/nob-hill/mason-street/714/) — A 1909 three-flat, with stair work permitted in 1997.
+- [3 Meacham Place](/san-francisco/tenderloin/meacham-place/3/) — A 1900 office building, with a rear addition permitted in 2006.
+- [679 Pine Street](/san-francisco/financial-district/pine-street/679/) — A 1910 9-unit apartment building, with a seismic retrofit permitted in 2000.
+- [701 Pine Street](/san-francisco/financial-district/pine-street/701/) — A 1926 44-unit apartment building, with facade work permitted in 2008.
+- [1030–1042 Polk Street](/san-francisco/tenderloin/polk-street/1030/) — A 1906 42-unit apartment building, with a seismic retrofit permitted in 2000.
+- [1038–1044 Post Street](/san-francisco/nob-hill/post-street/1038/) — A 1946 store building, with a kitchen remodel permitted in 2009.
+- [600–612 Post Street](/san-francisco/tenderloin/post-street/600/) — A 1914 hotel, with reroofing permitted in 1993.
+- [620 Post Street](/san-francisco/tenderloin/post-street/620/) — A 1910 hotel, with plumbing work permitted in 2004.
+- [624 Post Street](/san-francisco/tenderloin/post-street/624/) — A 1907 hotel, with reroofing permitted in 1993.
+- [639–643 Post Street](/san-francisco/tenderloin/post-street/639/) — A 1914 hotel, with an addition permitted in 1991.
+- [675 Post Street](/san-francisco/tenderloin/post-street/675/) — A 1919 garage, with window replacement permitted in 1999.
+- [691 Post Street](/san-francisco/tenderloin/post-street/691/) — A 1913 36-unit apartment building, with a kitchen and bathroom remodel permitted in 2024.
+- [698 Post Street](/san-francisco/tenderloin/post-street/698/) — A 1907 hotel, with a kitchen remodel permitted in 2017.
+- [701 Post Street](/san-francisco/tenderloin/post-street/701/) — A 1910 hotel, with a seismic retrofit permitted in 1997.
+- [711 Post Street](/san-francisco/tenderloin/post-street/711/) — A 1907 hotel, with a seismic retrofit permitted in 1995.
+- [726–728 Post Street](/san-francisco/tenderloin/post-street/726/) — A 1911 store building, with a kitchen remodel permitted in 2000.
+- [775 Post Street](/san-francisco/tenderloin/post-street/775/) — A 1913 80-unit apartment building, with a seismic retrofit permitted in 1997.
+- [798 Post Street](/san-francisco/tenderloin/post-street/798/) — A 1913 45-unit apartment building, with a seismic retrofit permitted in 2021.
+- [820 Post Street](/san-francisco/tenderloin/post-street/820/) — A 1919 store building, with a seismic retrofit permitted in 2003.
+- [825 Post Street](/san-francisco/tenderloin/post-street/825/) — A 1913 114-unit apartment building, with an addition permitted in 2014.
+- [830 Post Street](/san-francisco/tenderloin/post-street/830/) — A 1917 16-unit apartment building, with foundation work permitted in 1988.
+- [851 Post Street](/san-francisco/tenderloin/post-street/851/) — A 1919 22-unit apartment building, with a seismic retrofit permitted in 1997.
+- [865 Post Street](/san-francisco/tenderloin/post-street/865/) — A 1919 store building, with a seismic retrofit permitted in 2002.
+- [880 Post Street](/san-francisco/tenderloin/post-street/880/) — A 1919 garage, with a seismic retrofit permitted in 2001.
+- [881–895 Post Street](/san-francisco/tenderloin/post-street/881/) — A 1917 52-unit apartment building, with a kitchen and bathroom remodel permitted in 2014.
+- [900–908 Post Street](/san-francisco/tenderloin/post-street/900/) — A 1907 hotel, with a bathroom remodel permitted in 2020.
+- [919–925 Post Street](/san-francisco/tenderloin/post-street/919/) — A 1920 three-flat, with stair work permitted in 2012.
+- [922 Post Street](/san-francisco/tenderloin/post-street/922/) — A 1914 36-unit apartment building, with window replacement permitted in 2017.
+- [927 Post Street](/san-francisco/tenderloin/post-street/927/) — A 1919 garage, with a kitchen remodel permitted in 2013.
+- [940 Post Street](/san-francisco/tenderloin/post-street/940/) — A 1912 35-unit apartment building, with a seismic retrofit permitted in 1996.
+- [956 Post Street](/san-francisco/tenderloin/post-street/956/) — A 1915 32-unit apartment building, with reroofing permitted in 2005.
+- [970 Post Street](/san-francisco/tenderloin/post-street/970/) — A 1910 29-unit apartment building, with a seismic retrofit permitted in 2004.
+- [982–984 Post Street](/san-francisco/tenderloin/post-street/982/) — A 1907 57-unit apartment building, with a kitchen remodel permitted in 2015.
+- [1003 Post Street](/san-francisco/tenderloin/post-street/1003/) — A 1912 12-unit apartment building, with a seismic retrofit permitted in 1998.
+- [1010 Post Street](/san-francisco/tenderloin/post-street/1010/) — A 1907 hotel, with a seismic retrofit permitted in 2003.
+- [1020 Post Street](/san-francisco/tenderloin/post-street/1020/) — A 1915 42-unit apartment building, with a kitchen and bathroom remodel permitted in 2005.
+- [1025 Post Street](/san-francisco/tenderloin/post-street/1025/) — A 1914 27-unit apartment building, with an accessory dwelling unit permitted in 2020.
+- [1030 Post Street](/san-francisco/tenderloin/post-street/1030/) — A 1913 64-unit apartment building, with reroofing permitted in 2024.
+- [1031 Post Street](/san-francisco/tenderloin/post-street/1031/) — A 1915 office building, with reroofing permitted in 1989.
+- [1045 Post Street](/san-francisco/tenderloin/post-street/1045/) — A 1915 9-unit apartment building, with a kitchen and bathroom remodel permitted in 2021.
+- [1050 Post Street](/san-francisco/tenderloin/post-street/1050/) — A 1911 40-unit apartment building, with a kitchen and bathroom remodel permitted in 2021.
+- [1051 Post Street](/san-francisco/tenderloin/post-street/1051/) — A 1914 28-unit apartment building, with window replacement permitted in 2009.
+- [1055 Post Street](/san-francisco/tenderloin/post-street/1055/) — A 1919 garage, with a seismic retrofit permitted in 2003.
+- [1070 Post Street](/san-francisco/tenderloin/post-street/1070/) — A 1911 6-unit tic building, with window replacement permitted in 2014.
+- [1080 Post Street](/san-francisco/tenderloin/post-street/1080/) — A 1915 15-unit apartment building, with a seismic retrofit permitted in 2000.
+- [1082 Post Street](/san-francisco/tenderloin/post-street/1082/) — A 1915 19-unit apartment building, with fire repair permitted in 1985.
+- [1086–1092 Post Street](/san-francisco/tenderloin/post-street/1086/) — A 1917 55-unit apartment building, with a seismic retrofit permitted in 1997.
+- [535 Powell Street](/san-francisco/nob-hill/powell-street/535/) — A 1911 store building, with reroofing permitted in 2015.
+- [545 Powell Street](/san-francisco/nob-hill/powell-street/545/) — A 1909 building, with a seismic retrofit permitted in 1998.
+- [550–560 Powell Street](/san-francisco/nob-hill/powell-street/550/) — A 1911 29-unit apartment building, with reroofing permitted in 1987.
+- [417 Stockton Street](/san-francisco/chinatown/stockton-street/417/) — A 1907 hotel, with stair work permitted in 2018.
+- [423–439 Stockton Street](/san-francisco/chinatown/stockton-street/423/) — A 1911 78-unit apartment building, with a seismic retrofit permitted in 1991.
+- [441–447 Stockton Street](/san-francisco/chinatown/stockton-street/441/) — A 1923 office building, with a vertical addition permitted in 2000.
+- [530 Stockton Street](/san-francisco/chinatown/stockton-street/530/) — A 1923 46-unit apartment building, with garage work permitted in 2019.
+- [590 Sutter Street](/san-francisco/nob-hill/sutter-street/590/) — A 1919 22-unit apartment building, with window replacement permitted in 2008.
+- [680–688 Sutter Street](/san-francisco/nob-hill/sutter-street/680/) — A 1918 29-unit apartment building, with window replacement permitted in 2020.
+- [700–716 Sutter Street](/san-francisco/nob-hill/sutter-street/700/) — A 1918 55-unit apartment building, with a seismic retrofit permitted in 1998.
+- [707–709 Sutter Street](/san-francisco/nob-hill/sutter-street/707/) — A 1920 store building, with a seismic retrofit permitted in 2006.
+- [726–750 Sutter Street](/san-francisco/nob-hill/sutter-street/726/) — A building, with a seismic retrofit permitted in 2007.
+- [745 Sutter Street](/san-francisco/nob-hill/sutter-street/745/) — A 1919 25-unit apartment building, with reroofing permitted in 2010.
+- [765 Sutter Street](/san-francisco/nob-hill/sutter-street/765/) — A 1918 24-unit apartment building, with a seismic retrofit permitted in 1995.
+- [766 Sutter Street](/san-francisco/nob-hill/sutter-street/766/) — A 1910 51-unit apartment building, with a seismic retrofit permitted in 1995.
+- [775–777 Sutter Street](/san-francisco/nob-hill/sutter-street/775/) — A 1915 store building, with fire repair permitted in 2002.
+- [801 Sutter Street](/san-francisco/nob-hill/sutter-street/801/) — A 1911 54-unit apartment building, with a kitchen remodel permitted in 2025.
+- [830 Sutter Street](/san-francisco/nob-hill/sutter-street/830/) — A 1919 16-unit apartment building, with a seismic retrofit permitted in 2003.
+- [861 Sutter Street](/san-francisco/nob-hill/sutter-street/861/) — A 1913 60-unit apartment building, with a kitchen remodel permitted in 2019.
+- [871 Sutter Street](/san-francisco/nob-hill/sutter-street/871/) — A 1916 store building, with a seismic retrofit permitted in 2003.
+- [873–877 Sutter Street](/san-francisco/nob-hill/sutter-street/873/) — A 1909 4-unit building with a ground-floor store, with a seismic retrofit permitted in 2003.
+- [919 Sutter Street](/san-francisco/nob-hill/sutter-street/919/) — A 1921 26-unit apartment building, with a seismic retrofit permitted in 1993.
+- [940 Sutter Street](/san-francisco/nob-hill/sutter-street/940/) — A 1925 hotel, with a bathroom remodel permitted in 2007.
+- [952 Sutter Street](/san-francisco/nob-hill/sutter-street/952/) — A 1910 59-unit apartment building, with a kitchen and bathroom remodel permitted in 1987.
+- [970–972 Sutter Street](/san-francisco/nob-hill/sutter-street/970/) — A 1909 hotel, with a seismic retrofit permitted in 1995.
+- [974–980 Sutter Street](/san-francisco/nob-hill/sutter-street/974/) — A 1908 6-unit apartment building, with a seismic retrofit permitted in 1993.
+- [979 Sutter Street](/san-francisco/nob-hill/sutter-street/979/) — A 1913 24-unit apartment building, with reroofing permitted in 2013.
+- [1006–1008 Sutter Street](/san-francisco/nob-hill/sutter-street/1006/) — A 1907 2-unit building with a ground-floor store, with fire repair permitted in 2015.
+- [1025 Sutter Street](/san-francisco/nob-hill/sutter-street/1025/) — A 1913 19-unit apartment building, with an addition permitted in 2020.
+- [1034 Sutter Street](/san-francisco/nob-hill/sutter-street/1034/) — A 1909 12-unit apartment building, with a seismic retrofit permitted in 1993.
+- [1040 Sutter Street](/san-francisco/nob-hill/sutter-street/1040/) — A 1924 47-unit apartment building, with an accessory dwelling unit permitted in 2017.
+- [1045–1051 Sutter Street](/san-francisco/nob-hill/sutter-street/1045/) — A 1909 store building, with a seismic retrofit permitted in 2001.
+- [1100–1104 Sutter Street](/san-francisco/nob-hill/sutter-street/1100/) — A 1907 hotel, with a seismic retrofit permitted in 1997.
+- [1114 Sutter Street](/san-francisco/nob-hill/sutter-street/1114/) — A 1909 37-unit apartment building, with reroofing permitted in 2006.
+- [1122–1128 Sutter Street](/san-francisco/nob-hill/sutter-street/1122/) — A 1910 15-unit apartment building, with a seismic retrofit permitted in 2003.
+- [1136–1144 Sutter Street](/san-francisco/nob-hill/sutter-street/1136/) — A 1911 49-unit apartment building, with a seismic retrofit permitted in 1997.
+- [1150–1156 Sutter Street](/san-francisco/nob-hill/sutter-street/1150/) — A 1907 office building, with plumbing work permitted in 2001.
+- [551–555 Taylor Street](/san-francisco/tenderloin/taylor-street/551/) — A 1922 35-unit apartment building, with a bathroom remodel permitted in 2026.
+- [627 Taylor Street](/san-francisco/tenderloin/taylor-street/627/) — A 1914 39-unit apartment building, with electrical work permitted in 2014.
+- [710–722 Taylor Street](/san-francisco/tenderloin/taylor-street/710/) — A 1913 7-unit apartment building, with a seismic retrofit permitted in 2002.
+- [728 Taylor Street](/san-francisco/tenderloin/taylor-street/728/) — A 1913 7-unit apartment building, with a seismic retrofit permitted in 2003.
+- [735 Taylor Street](/san-francisco/tenderloin/taylor-street/735/) — A 1915 61-unit apartment building, with facade work permitted in 2023.
+- [740 Taylor Street](/san-francisco/tenderloin/taylor-street/740/) — A 1918 store building, with a seismic retrofit permitted in 2003.
+- [749 Taylor Street](/san-francisco/tenderloin/taylor-street/749/) — A 1909 hotel, with a bathroom remodel permitted in 2013.
+
+The district record is the city's; the buildings beneath it are
+generated from the DataSF datasets listed in each page's Sources
+footer, and are corrected by hand as readers write in.
