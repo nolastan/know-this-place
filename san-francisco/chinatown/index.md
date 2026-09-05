@@ -34,3 +34,21 @@ The oldest Chinese community in North America, on the slopes above Portsmouth Sq
 - [Vallejo Street](vallejo-street/) — 4 buildings, built 1906–1932.
 - [Waverly Place](waverly-place/) — 3 buildings, built 1907–1911; 3 in the Chinatown Historic District.
 - [Winter Place](winter-place/) — 1 building, built 1912.
+
+## Historic districts here
+
+- [Chinatown Historic District](../historic-districts/chinatown/)
+- [Jackson Square Historic District](../historic-districts/jackson-square/)
+- [Jackson Square Historic District Extension](../historic-districts/jackson-square-extension/)
+- [Kearny-Market-Mason-Sutter Conservation District](../historic-districts/kearny-market-mason-sutter/)
+- [Lower Nob Hill Apartment Hotel Historic District](../historic-districts/lower-nob-hill-apartment-hotel/)
+- [San Francisco Neighborhood Movie Theater Historic District (Discontiguous)](../historic-districts/san-francisco-neighborhood-movie-theater-discontiguous/)
+- [Washington Square Historic District](../historic-districts/washington-square/)
+
+## Adjacent neighborhoods
+
+[The Financial District](../financial-district/) begins east across Kearny
+Street and [North Beach](../north-beach/) north along Grant Avenue and
+Columbus. [Nob Hill](../nob-hill/) rises west up the grade with [Russian
+Hill](../russian-hill/) beyond it, and [Union Square](../union-square/)
+holds the retail blocks south of Bush Street.

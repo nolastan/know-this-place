@@ -17,3 +17,15 @@ A district on the rise between the Richmond and the Panhandle, around the Univer
 - [Stanyan Street](stanyan-street/) — 1 building.
 - [Turk Boulevard](turk-boulevard/) — 1 building.
 - [Vega Street](vega-street/) — 1 building.
+
+## Historic districts here
+
+- [Jordan Park Historic District](../historic-districts/jordan-park/)
+- [NOPA Historic District](../historic-districts/nopa/)
+
+## Adjacent neighborhoods
+
+[Presidio Heights](../presidio-heights/) adjoins north-west and [the Inner
+Richmond](../inner-richmond/) west across Arguello Boulevard. [The Western
+Addition](../western-addition/) begins east of Masonic Avenue, and [Hayes
+Valley](../hayes-valley/) lies south-east beyond the Panhandle.

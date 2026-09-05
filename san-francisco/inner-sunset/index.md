@@ -49,3 +49,19 @@ The blocks between Golden Gate Park and Mount Sutro, laid out along the Muni N-J
 - [Ventura Avenue](ventura-avenue/) — 1 building, built 1927; 1 in the Forest Hill Historic District.
 - [Villa Terrace](villa-terrace/) — 1 building, built 1951.
 - [Warren Drive](warren-drive/) — 2 buildings, built 1961.
+
+## Historic districts here
+
+- [Cole Valley Historic District](../historic-districts/cole-valley/)
+- [Forest Hill Historic District](../historic-districts/forest-hill/)
+- [Midcentury Recreation Historic District (Discontiguous)](../historic-districts/midcentury-recreation-discontiguous/)
+- [San Francisco 1952 Firehouse Bond Act Thematic District (Discontiguous)](../historic-districts/san-francisco-1952-firehouse-bond-act-thematic-district-discontiguous/)
+
+## Adjacent neighborhoods
+
+Golden Gate Park closes these blocks to the north. [Sunset /
+Parkside](../sunset-parkside/) continues west through the avenues and [West
+of Twin Peaks](../west-of-twin-peaks/) lies south beyond Laguna Honda. East
+over Mount Sutro and the Twin Peaks ridge are [Haight
+Ashbury](../haight-ashbury/), [Corbett Heights](../corbett-heights/) and
+[the Castro](../castro/).

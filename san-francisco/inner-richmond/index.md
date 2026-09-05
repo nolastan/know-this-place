@@ -26,3 +26,16 @@ The city's Inner Richmond analysis neighborhood, between Golden Gate Park and th
 - [Lake Street](lake-street/) — 1 building, built 1981.
 - [Presidio Terrace](presidio-terrace/) — 8 buildings, built 1906–2010; 8 in the Presidio Terrace Historic District.
 - [Second Avenue](2nd-avenue/) — 3 buildings, built 1900.
+
+## Historic districts here
+
+- [Midcentury Recreation Historic District (Discontiguous)](../historic-districts/midcentury-recreation-discontiguous/)
+- [Presidio Terrace Historic District](../historic-districts/presidio-terrace/)
+
+## Adjacent neighborhoods
+
+Golden Gate Park is the southern boundary and the Presidio the northern one.
+[The Outer Richmond](../outer-richmond/) continues west from Park Presidio
+Boulevard, with [Seacliff](../seacliff/) on the bluffs beyond it. [Presidio
+Heights](../presidio-heights/) adjoins north-east and [Lone Mountain /
+USF](../lone-mountain/) is east across Arguello Boulevard.

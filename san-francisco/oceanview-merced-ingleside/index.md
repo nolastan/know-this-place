@@ -30,3 +30,14 @@ Merced Heights, the ridge between them, was mostly built after World War II.
 - [Sagamore Street](sagamore-street/) — 1 building, built 1890.
 - [Summit Street](summit-street/) — 1 building, built 1936.
 
+## Historic districts here
+
+- [Ingleside Terrace Historic District](../historic-districts/ingleside-terrace/)
+
+## Adjacent neighborhoods
+
+[The Outer Mission](../outer-mission/) adjoins south-east across Interstate
+280 and [Lakeshore](../lakeshore/) west around Lake Merced. North across
+Ocean Avenue are [West of Twin Peaks](../west-of-twin-peaks/) and the
+[Ingleside Terraces](../ingleside-terraces/) tract, which took the Ingleside
+name from the racetrack that stood on it.

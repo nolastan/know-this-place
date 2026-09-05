@@ -32,3 +32,16 @@ Ord, Hattie, Danvers, Mars, Romain and Museum Way.
   Neighborhood News, Vol. VIII (Jan–Jul 2026) —
   <https://corbettneighbors.optin.com/newsletter/awlist6655060>
   (retrieved 2026-07-22)
+
+## Historic districts here
+
+- [Cole Valley Historic District](../historic-districts/cole-valley/)
+- [Midcentury Recreation Historic District (Discontiguous)](../historic-districts/midcentury-recreation-discontiguous/)
+
+## Adjacent neighborhoods
+
+[The Castro](../castro/) lies downhill to the south-east; the two share the
+city's Castro/Upper Market boundary, which local histories divide at this
+hillside. [Haight Ashbury](../haight-ashbury/) is north, reached by Clayton
+and Ashbury Streets, and [the Inner Sunset](../inner-sunset/) west over the
+Twin Peaks ridge.

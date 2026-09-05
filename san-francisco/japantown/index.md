@@ -14,3 +14,9 @@ The city's Japantown analysis neighborhood, the blocks around Post and Buchanan 
 - [Scott Street](scott-street/) — 1 building, built 1900.
 - [Steiner Street](steiner-street/) — 1 building, built 1964.
 - [Sutter Street](sutter-street/) — 1 building, built 1975.
+
+## Adjacent neighborhoods
+
+These blocks were cut out of [the Western Addition](../western-addition/),
+which surrounds them east and south; [Pacific Heights](../pacific-heights/)
+climbs the ridge north of Post Street.

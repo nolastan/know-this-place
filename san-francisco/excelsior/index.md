@@ -13,3 +13,10 @@ A working-class residential district in the city's south-east, laid out in the e
 - [Ney Street](ney-street/) — 1 building, built 1900.
 - [Russia Avenue](russia-avenue/) — 1 building, built 1915.
 - [Silver Avenue](silver-avenue/) — 1 building, built 1922.
+
+## Adjacent neighborhoods
+
+[The Outer Mission](../outer-mission/) adjoins west along Mission Street and
+[Bernal Heights](../bernal-heights/) north-west beyond Alemany Boulevard.
+[Portola](../portola/) is north-east across the ridge, and [Visitacion
+Valley](../visitacion-valley/) south-east on the far side of McLaren Park.

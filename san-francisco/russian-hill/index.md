@@ -33,3 +33,17 @@ A steep district above North Beach and the waterfront, known for its cable-car g
 - [Vallejo Street](vallejo-street/) — 2 buildings, built 1911–2004.
 - [Van Ness Avenue](van-ness-avenue/) — 9 buildings, built 1909–1922.
 - [Washington Street](washington-street/) — 1 building, built 1922.
+
+## Historic districts here
+
+- [Russian Hill-Vallejo Street Crest Historic District](../historic-districts/russian-hill-vallejo-street-crest/)
+- [San Francisco 1952 Firehouse Bond Act Thematic District (Discontiguous)](../historic-districts/san-francisco-1952-firehouse-bond-act-thematic-district-discontiguous/)
+- [San Francisco Neighborhood Movie Theater Historic District (Discontiguous)](../historic-districts/san-francisco-neighborhood-movie-theater-discontiguous/)
+
+## Adjacent neighborhoods
+
+[North Beach](../north-beach/) is east down the Vallejo Street grade and
+[Chinatown](../chinatown/) south-east beyond Broadway. [Nob
+Hill](../nob-hill/) adjoins south, [the Marina](../marina/) north-west along
+the waterfront, and [Pacific Heights](../pacific-heights/) west across Van
+Ness Avenue.

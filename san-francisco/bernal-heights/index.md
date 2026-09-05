@@ -29,3 +29,16 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [Rutledge Street](rutledge-street/) — 1 building, built 1973.
 - [Shotwell Street](shotwell-street/) — 1 building.
 - [Virginia Avenue](virginia-avenue/) — 1 building, built 1910.
+
+## Historic districts here
+
+- [Midcentury Recreation Historic District (Discontiguous)](../historic-districts/midcentury-recreation-discontiguous/)
+
+## Adjacent neighborhoods
+
+The hill has a neighborhood on every side. [The Mission](../mission/)
+adjoins north across Cesar Chavez Street, [Noe Valley](../noe-valley/)
+north-west and [Glen Park](../glen-park/) west across San Jose Avenue. South
+of Alemany Boulevard are [the Outer Mission](../outer-mission/) and
+[Portola](../portola/), and [Bayview Hunters
+Point](../bayview-hunters-point/) begins east of Bayshore Boulevard.

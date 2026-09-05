@@ -37,3 +37,15 @@ Diamond and Chenery and evaluated eight of them in detail.
 - [Portola Drive](portola-drive/) — 1 building.
 - [Turquoise Way](turquoise-way/) — 3 buildings, built 1962–1964; 3 in the Diamond Heights Historic District.
 - [Wilder Street](wilder-street/) — 3 buildings, built 1938–1954.
+
+## Historic districts here
+
+- [Diamond Heights Historic District](../historic-districts/diamond-heights/)
+- [Glen Park Center Historic District](../historic-districts/glen-park-center/)
+
+## Adjacent neighborhoods
+
+[Noe Valley](../noe-valley/) is north over the ridge, [Bernal
+Heights](../bernal-heights/) east across San Jose Avenue, and [the Outer
+Mission](../outer-mission/) south beyond the Interstate 280 interchange.
+[West of Twin Peaks](../west-of-twin-peaks/) begins west of Glen Canyon.

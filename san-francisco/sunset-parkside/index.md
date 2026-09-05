@@ -58,3 +58,18 @@ The city's Sunset/Parkside analysis neighborhood — the avenues laid out across
 - [Ulloa Street](ulloa-street/) — 2 buildings, built 1917–1926.
 - [Vicente Street](vicente-street/) — 1 building, built 1950.
 - [Wawona Street](wawona-street/) — 3 buildings, built 1950.
+
+## Historic districts here
+
+- [Alphonso Harrington 42nd Avenue Historic District](../historic-districts/alphonso-harrington-42nd-avenue/)
+- [Mediterranean Revival Tracts Historic District](../historic-districts/mediterranean-revival-tracts/)
+- [Picturesque Period Revival Tracts Historic District](../historic-districts/picturesque-period-revival-tracts/)
+- [San Francisco 1952 Firehouse Bond Act Thematic District (Discontiguous)](../historic-districts/san-francisco-1952-firehouse-bond-act-thematic-district-discontiguous/)
+- [Vicente Street Historic District](../historic-districts/vicente-street/)
+
+## Adjacent neighborhoods
+
+Golden Gate Park closes the avenues to the north and Ocean Beach to the
+west. [The Inner Sunset](../inner-sunset/) adjoins north-east, [West of Twin
+Peaks](../west-of-twin-peaks/) east beyond Portola Drive, and
+[Lakeshore](../lakeshore/) south across Sloat Boulevard.

@@ -22,3 +22,14 @@ An affluent residential enclave on the bluffs above the Golden Gate, laid out fr
 - [Mclaren Avenue](mclaren-avenue/) — 1 building, built 1924; 1 in the Sea Cliff Historic District.
 - [Seacliff Avenue](seacliff-avenue/) — 3 buildings, built 1914–1916; 3 in the Sea Cliff Historic District.
 - [West Clay Street](west-clay-street/) — 1 building, built 1912.
+
+## Historic districts here
+
+- [Sea Cliff Historic District](../historic-districts/sea-cliff/)
+
+## Adjacent neighborhoods
+
+The Presidio adjoins east and Lincoln Park west, with the Golden Gate below
+the bluffs to the north. [The Outer Richmond](../outer-richmond/) begins
+south-east of the enclave, and [the Inner Richmond](../inner-richmond/) lies
+beyond it.

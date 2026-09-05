@@ -26,3 +26,22 @@ The neighborhood at the east end of Golden Gate Park, at the centre of San Franc
 - [Stanyan Street](stanyan-street/) — 1 building, built 1911; 1 in the Panhandle Historic District.
 - [Steiner Street](steiner-street/) — 1 building, built 1900; 1 in the Duboce Park Historic District.
 - [Waller Street](waller-street/) — 1 building, built 1904.
+
+## Historic districts here
+
+- [Ashbury Heights Historic District](../historic-districts/ashbury-heights/)
+- [Buena Vista North Historic District](../historic-districts/buena-vista-north/)
+- [Cole Valley Historic District](../historic-districts/cole-valley/)
+- [Duboce Park Historic District](../historic-districts/duboce-park/)
+- [Haight Ashbury Counterculture Historic District](../historic-districts/haight-ashbury-counterculture/)
+- [NOPA Historic District](../historic-districts/nopa/)
+- [Panhandle Historic District](../historic-districts/panhandle/)
+- [San Francisco Neighborhood Movie Theater Historic District (Discontiguous)](../historic-districts/san-francisco-neighborhood-movie-theater-discontiguous/)
+
+## Adjacent neighborhoods
+
+Golden Gate Park closes these blocks to the west and the Panhandle runs
+along the north. [Hayes Valley](../hayes-valley/) is east beyond Divisadero
+Street, [the Castro](../castro/) south-east across Buena Vista Park,
+[Corbett Heights](../corbett-heights/) south up Clayton and Ashbury Streets,
+and [the Inner Sunset](../inner-sunset/) south-west over Mount Sutro.

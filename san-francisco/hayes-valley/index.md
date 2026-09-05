@@ -33,3 +33,24 @@ A central district west of Civic Center, taking in the eastern edge of Alamo Squ
 - [Van Ness Avenue](van-ness-avenue/) — 2 buildings, built 1900–1911; 1 in the Civic Center Historic District.
 - [Waller Street](waller-street/) — 1 building, built 1931; 1 in the Hayes Valley Residential Historic District.
 - [Webster Street](webster-street/) — 1 building; 1 in the Hayes Valley Residential Historic District.
+
+## Historic districts here
+
+- [Alamo Square Historic District](../historic-districts/alamo-square/)
+- [Buena Vista North Historic District](../historic-districts/buena-vista-north/)
+- [Civic Center Historic District](../historic-districts/civic-center/)
+- [Hayes Valley Commercial Historic District](../historic-districts/hayes-valley-commercial/)
+- [Hayes Valley Residential Historic District](../historic-districts/hayes-valley-residential/)
+- [Market Street Masonry Historic District](../historic-districts/market-street-masonry/)
+- [NOPA Historic District](../historic-districts/nopa/)
+- [Panhandle Historic District](../historic-districts/panhandle/)
+- [San Francisco 1952 Firehouse Bond Act Thematic District (Discontiguous)](../historic-districts/san-francisco-1952-firehouse-bond-act-thematic-district-discontiguous/)
+
+## Adjacent neighborhoods
+
+[The Western Addition](../western-addition/) adjoins north-west and [the
+Tenderloin](../tenderloin/) east across Van Ness Avenue. [The
+Mission](../mission/) begins south-east over Market Street, [the
+Castro](../castro/) further west along it, [Haight
+Ashbury](../haight-ashbury/) west past Divisadero Street, and [Lone Mountain
+/ USF](../lone-mountain/) north-west beyond the Panhandle.

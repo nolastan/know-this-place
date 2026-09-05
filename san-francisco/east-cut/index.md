@@ -29,3 +29,19 @@ The blocks between Market and Folsom around First, Second and Fremont Streets �
 - [Stillman Street](stillman-street/) — 8 buildings, built 1906–1944.
 - [Sutter Street](sutter-street/) — 2 buildings, built 1907–1922.
 - [Third Street](3rd-street/) — 14 buildings, built 1900–1999; 1 in the SoMa LGBTQ Historic District.
+
+## Historic districts here
+
+- [New Montgomery-Mission-Second Street Conservation District](../historic-districts/new-montgomery-mission-second-street/)
+- [Second and Howard Streets Historic District](../historic-districts/second-and-howard-streets/)
+- [SoMa LGBTQ Historic District](../historic-districts/soma-lgbtq/)
+- [South End Historic District](../historic-districts/south-end/)
+- [South Park Historic District](../historic-districts/south-park/)
+
+## Adjacent neighborhoods
+
+Market Street separates these blocks from [the Financial
+District](../financial-district/) to the north. [South of
+Market](../south-of-market/) lies west and [South Beach](../south-beach/)
+south towards the ballpark. This site files the three separately; the city's
+own boundary counts them as one Financial District/South Beach neighborhood.

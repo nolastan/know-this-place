@@ -30,3 +30,16 @@ opened here in 1905.
 - [Texas Street](texas-street/) — 2 buildings, built 1900–1909.
 - [Vermont Street](vermont-street/) — 1 building, built 1900.
 - [Wisconsin Street](wisconsin-street/) — 7 buildings, built 1900–1968.
+
+## Historic districts here
+
+- [Dogpatch Historic District](../historic-districts/dogpatch/)
+- [Midcentury Recreation Historic District (Discontiguous)](../historic-districts/midcentury-recreation-discontiguous/)
+
+## Adjacent neighborhoods
+
+[Dogpatch](../dogpatch/) is the flat ground east across Interstate 280; the
+two together make up the city's Potrero Hill analysis neighborhood. [The
+Mission](../mission/) lies west across Potrero Avenue, [Mission
+Bay](../mission-bay/) north-west beyond Mariposa Street, and [Bayview
+Hunters Point](../bayview-hunters-point/) south across Islais Creek.

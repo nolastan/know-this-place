@@ -45,3 +45,14 @@ The city's Outer Richmond analysis neighborhood, running west from Park Presidio
 - [Lake Street](lake-street/) — 1 building, built 1922.
 - [Point Lobos Avenue](point-lobos-avenue/) — 1 building, built 1900.
 - [Shore View Avenue](shore-view-avenue/) — 1 building, built 1916.
+
+## Historic districts here
+
+- [Midcentury Recreation Historic District (Discontiguous)](../historic-districts/midcentury-recreation-discontiguous/)
+
+## Adjacent neighborhoods
+
+Ocean Beach closes the avenues to the west, Golden Gate Park to the south,
+and Lincoln Park and Land's End to the north-west. [Seacliff](../seacliff/)
+adjoins north-east above the bluffs, and [the Inner
+Richmond](../inner-richmond/) continues east from Park Presidio Boulevard.
