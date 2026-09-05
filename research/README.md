@@ -62,6 +62,7 @@ research/
   TRIAGE.md          What a prospecting pass found, one entry per held lead
   sources/<id>.md    One dossier per source: access, cautions, coverage log
   findings/          The chain of custody, one JSON file per batch
+  findings/INDEX.md  What each batch covers — read this, never the files
   schema/            The findings JSON schema
   manifests/         Parcel lists produced here, consumed by seed_pages.py
   templates/         Dossier skeleton and GitHub issue bodies
@@ -76,10 +77,20 @@ research/
 ```bash
 python3 research/tools/check.py          # register ↔ dossiers, findings ↔ schema
 python3 research/tools/check.py --stats  # the dashboard: yield and open loops
+python3 research/tools/check.py --index  # rebuild findings/INDEX.md (it's derived)
 ```
 
 `--stats` is the one place to look for where things stand. Its `open` column —
 resolved findings nobody has published or declined — is the module's to-do list.
+
+The findings files are tens of megabytes and the largest is past what a context
+window holds, so **nothing reads one**. [findings/INDEX.md](findings/INDEX.md)
+says what each batch covers, and two commands get entries out of one:
+
+```bash
+python3 research/tools/check.py --peek research/findings/<id>/<batch>.json
+python3 research/tools/check.py --find "1377 Fulton"
+```
 
 Agents working in Claude Code have a `/research` skill
 ([../.claude/skills/research/SKILL.md](../.claude/skills/research/SKILL.md)):

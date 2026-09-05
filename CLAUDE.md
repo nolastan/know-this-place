@@ -15,7 +15,7 @@ read front to back. Start with the row that matches the task.
 | editing an address page | [AGENTS.md](AGENTS.md) + the neighborhood's `AGENTS.md` + [shared/AGENTS.md](shared/AGENTS.md) | [REFERENCE.md](REFERENCE.md), [shared/BLOCKS.md](shared/BLOCKS.md) |
 | creating pages in bulk | [AGENTS.md](AGENTS.md) | [REFERENCE.md → Seeding](REFERENCE.md#seeding-a-new-area) |
 | querying city data | — | [DATA-SOURCES.md](DATA-SOURCES.md) |
-| mining a source | [research/AGENTS.md](research/AGENTS.md) | [research/RUNBOOK.md](research/RUNBOOK.md), [research/LESSONS.md](research/LESSONS.md) |
+| mining a source | [research/AGENTS.md](research/AGENTS.md) | [research/RUNBOOK.md](research/RUNBOOK.md), [research/LESSONS.md](research/LESSONS.md), [research/findings/INDEX.md](research/findings/INDEX.md) |
 | finding a new source | [research/AGENTS.md](research/AGENTS.md) | [research/SOURCES.md](research/SOURCES.md), [research/TRIAGE.md](research/TRIAGE.md) |
 | running the news pipeline | [news/AGENTS.md](news/AGENTS.md) | [news/PIPELINE.md](news/PIPELINE.md) |
 | changing the CSS or the renderer | [shared/AGENTS.md](shared/AGENTS.md) | [shared/BLOCKS.md](shared/BLOCKS.md) |
