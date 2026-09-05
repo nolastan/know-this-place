@@ -1,6 +1,7 @@
 # celebrity-residence-guides — Notable-resident claims (tertiary)
 
-> **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · register:
+> **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · traps:
+> [../LESSONS.md](../LESSONS.md) · register:
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id `celebrity-residence-guides`.
 >
 > - **Kind:** web guides · **Tier:** tertiary · **Status:** done

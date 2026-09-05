@@ -994,7 +994,7 @@ def block_check(city: City, f: dict, parcel: str) -> tuple:
 
 
 # A source that marks its own building demolished outranks the resolver, which
-# knows only that the number exists today — see AGENTS.md, "A demolished building
+# knows only that the number exists today — see research/LESSONS.md, "A demolished building
 # is `rejected`, not `resolved`." The tool raises these; it does not decide them.
 # Two passes over every findings file in the repo settled that. A regex over any
 # field mentioning demolition would have rejected fourteen correctly published

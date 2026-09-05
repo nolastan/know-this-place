@@ -96,7 +96,9 @@ jobs:
           prompt: |
             You are the news agent for knowthis.place. Read news/AGENTS.md
             first — it is the rulebook — then the root AGENTS.md (privacy) and
-            shared/AGENTS.md (the HTML contract).
+            shared/AGENTS.md (the page contract). The working detail for each
+            stage is in news/PIPELINE.md: read the section for the stage you
+            are on, not the file.
 
             You are on branch ${{ steps.branch.outputs.branch }}, already
             checked out. ${{ steps.branch.outputs.pr && format('It belongs to OPEN PR #{0}, left by an earlier run — its cursors, queue files and items files are the ones you are continuing, and pushing to this branch updates that PR rather than opening a second one.', steps.branch.outputs.pr) || 'No news PR was open, so this branch is new off main and you will open the PR at the end.' }}
@@ -143,7 +145,7 @@ jobs:
             5. Resolve it:
                `python3 research/tools/resolve_eas.py apply news/items/<feed>/<date>.json`
             6. For any finding that resolved to a parcel with NO page, seed the
-               page — per news/AGENTS.md → "No page yet? Seed it". Write the
+               page — per news/PIPELINE.md → "No page yet? Seed it". Write the
                parcels into research/manifests/news-<today's date>.json, taking
                the numbers and the lead street number from each finding's
                `resolution.method` (the resolver unions the addresses reached
@@ -161,8 +163,8 @@ jobs:
             7. Add the timeline entry to each page's data.json —
                `historical_record` with date, kind, headline, outlet, url and
                source — then `python3 scripts/seed_pages.py render <path>` to
-               regenerate index.html from it, per news/AGENTS.md → "Putting it
-               on the page". Never edit index.html. The entry is the
+               regenerate index.html from it, per news/AGENTS.md → "What an
+               entry is". Never edit index.html. The entry is the
                headline in italics and the outlet as the link, and NOTHING
                ELSE: no sentence of your own summarizing the story, and never
                an edited headline. Record in each finding's `publish.note`

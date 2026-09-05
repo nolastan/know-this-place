@@ -53,6 +53,31 @@ an app token (header `X-App-Token`) lifts throttling if we ever need it.
 
 ---
 
+## What you are looking for
+
+Each section below is self-contained. **Read the row you need, not the file.**
+
+| To find | dataset |
+|---|---|
+| whether an address exists at all, and its parcel | [`sf-eas-addresses`](#sf-eas-addresses--addresses-enterprise-addressing-system) |
+| year built, units, rooms, areas, assessed value | [`sf-assessor-roll`](#sf-assessor-roll--assessor-historical-secured-property-tax-rolls) |
+| what work was done, when, and what it cost | [`sf-building-permits`](#sf-building-permits--building-permits) |
+| zoning, land use, and the historic-resource code | [`sf-planning`](#sf-planning--parcels-zoning-historic-resources) |
+| a parcel's geometry, and its retired APNs | [`sf-parcels`](#sf-parcels--parcels-active-and-retired) |
+| a downtown building's public plaza or terrace | [`sf-popos`](#sf-popos--privately-owned-public-open-spaces) |
+| art the 1% requirement put on a parcel | [`sf-public-art`](#sf-public-art--public-art-1-art-program) |
+| which historic district an address stands in | [`sf-historic-districts`](#sf-historic-districts--historic-district-boundaries) |
+| a period photograph | [`historical-imagery`](#historical-imagery--opensfhistory--wikimedia-commons) |
+| the Street View still on a page | [`streetview`](#streetview--google-maps-embed-api-live-embed-only) |
+| a survey form's own assessment of a building | [`sf-dpr-forms`](#sf-dpr-forms--historic-resource-survey-forms-primary) |
+| anything in an archive, book, newspaper or newsletter | [research/SOURCES.md](research/SOURCES.md) |
+
+The first five are the ones `seed_pages.py` joins to make a page. What each
+section still can't tell you is in [Known gaps](#known-gaps); adding a source
+here is [Adding a source](#adding-a-source).
+
+---
+
 ## sf-eas-addresses — Addresses (Enterprise Addressing System)
 
 - **What:** The city's canonical address registry: every address, its APN,
@@ -318,7 +343,7 @@ an app token (header `X-App-Token`) lifts throttling if we ever need it.
 ## streetview — Google Maps Embed API (live embed only)
 
 - **What:** Present-day imagery for every page via a live Street View embed.
-- **How:** iframe snippet in [shared/AGENTS.md](shared/AGENTS.md), using
+- **How:** the `<ktp-streetview>` block in [shared/BLOCKS.md](shared/BLOCKS.md), using
   `maps_embed_key` from `shared/site-config.json` and coordinates from
   `data.json`. Free at any volume in embed form.
 - **Do not test, validate, or preview the embed. Ever.** `maps_embed_key` is
@@ -327,7 +352,7 @@ an app token (header `X-App-Token`) lifts throttling if we ever need it.
   A failed embed in local preview is the key working as configured — it is not
   a bug, there is nothing to diagnose, and confirming it costs tokens to
   re-learn a fact this file already states. Author the `<ktp-streetview>`
-  placeholder from `shared/AGENTS.md`, and move on. The only thing to check is
+  placeholder from `shared/BLOCKS.md`, and move on. The only thing to check is
   that `location="LAT,LNG"` matches `coordinates` in `data.json`.
 - **Hard rule:** **Never download, screenshot, or commit Street View imagery
   into `assets/`** — that violates Google's terms. Live embed only.

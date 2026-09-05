@@ -10,7 +10,7 @@ article, strips it to text, finds every street address in it, and says which of
 them the site already has a page for. What it prints is **evidence for a
 reader**, not copy for a page — the sentence around a hit is there so the next
 step can judge what the story actually says about the building, in our own
-words. See [../AGENTS.md](../AGENTS.md) → "Reading an article".
+words. See [../PIPELINE.md](../PIPELINE.md) → "Reading an article".
 
 Whether a page exists is reported, not ranked on: an address with no page is a
 page the publishing stage seeds. `--only-pages` is for narrowing a backlog by
@@ -318,7 +318,7 @@ def report(url: str, title: str, feed: str, streets: set[str], pages: dict,
     print(f"  {url}")
     # Printed only when the feed got it wrong, so a run over well-behaved feeds
     # looks exactly as it did before. When they do print, these lines are what
-    # the citation must be built from — see ../AGENTS.md, "Reading an article":
+    # the citation must be built from — see ../PIPELINE.md, "Reading an article":
     # the headline is published verbatim and the link is the attribution, so
     # neither may come from a social post about the story. `og:title` appears
     # only when the outlet's share copy says something else; it is shown so the
@@ -374,7 +374,7 @@ def main() -> int:
         if i < len(items):
             time.sleep(1)  # be a polite client
     # Both halves are work: the ones with pages are edits, the rest are parcels
-    # to seed. AGENTS.md → "No page yet? Seed it".
+    # to seed. PIPELINE.md → "No page yet? Seed it".
     print(f"\n{len(items)} article(s) read; {found} address hit(s), "
           f"{landed} on a page that already exists.")
     return 0

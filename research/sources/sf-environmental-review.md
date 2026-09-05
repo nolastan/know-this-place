@@ -1,6 +1,7 @@
 # sf-environmental-review — SF Planning environmental review documents (primary)
 
-> **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · register:
+> **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · traps:
+> [../LESSONS.md](../LESSONS.md) · register:
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id `sf-environmental-review`.
 >
 > - **Kind:** PDF reports · **Tier:** primary · **Status:** open

@@ -1,6 +1,7 @@
 # sf-context-statements — SF Planning historic context statements (secondary)
 
-> **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · register:
+> **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · traps:
+> [../LESSONS.md](../LESSONS.md) · register:
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id `sf-context-statements`.
 >
 > - **Kind:** PDF reports (SF Planning) · **Tier:** secondary · **Status:** open
@@ -113,8 +114,7 @@ document you are about to mine.
   mentions — because it is illustrated, and every figure caption gives an
   address, a style, a landmark number and a year. But only the landmarks'
   years are researched; the rest are the assessor's roll figure, printed
-  without a word to say so. See "What we've learned the hard way" in
-  [../AGENTS.md](../AGENTS.md).
+  without a word to say so. See [../LESSONS.md](../LESSONS.md).
 
 - **A styles statement's date is the date of the work it describes, not the
   parcel's construction year.** 74 of the 182 facts published from the Modern &
@@ -4033,7 +4033,7 @@ and they sit in three places, in ascending order of quality.
   *dated fact only to the span of the agency*. Fifty-nine findings in this batch
   were first written with a year that the document does not state anywhere, and
   every one had to be corrected to `1935–1941` before publication. See the
-  cross-cutting note in [../AGENTS.md](../AGENTS.md#what-weve-learned-the-hard-way).
+  cross-cutting note in [../LESSONS.md](../LESSONS.md).
 - **The per-building narratives are the good material.** Every PWA school, the
   three federal buildings and the five housing projects get one to three pages
   with the architects named, the phases dated and the cost given: Marina Junior
@@ -4225,7 +4225,7 @@ and they sit in three places, in ascending order of quality.
 - **Cautions:**
   - **Footnote markers manufacture addresses.** The single most expensive trap
     in this document, and the reason the run scanned for it explicitly. See
-    [../AGENTS.md](../AGENTS.md#what-weve-learned-the-hard-way). The eleven
+    [../LESSONS.md](../LESSONS.md). The eleven
     phantoms here were 537 Fifth Street, 539 Market Street, 545 Turk Street, 908,
     909 and 911 Polk Street, 1054 Eighteenth Street, 1251 A Valencia Street, and
     91, 649 and 673 (Supreme Court and Tommy's Place references). *545 Turk
@@ -4328,7 +4328,7 @@ above. Printed page = PDF page − 1.
   is the table's own heading — Appendix A's subtitle says "1920s-1940s",
   Appendix B's says "ca 1940s-present" with a note that every unmarked entry is
   post-World War II. Sixty-nine findings in this run were first written with a
-  decade nobody had stated. See AGENTS.md → "What we've learned the hard way".
+  decade nobody had stated. See [../LESSONS.md](../LESSONS.md).
 - **The statement tells you, twice and in terms, which of its addresses cannot
   become pages.** "All addresses/buildings listed in the area of O'Farrell and
   Fillmore or Webster streets are no longer extant due to the extensive
@@ -4673,7 +4673,7 @@ above; fetch the REST content path. Printed page = PDF page.
   significance for that style ends in 1885. 725 Castro Street's roll
   `year_built` is 1900, which settles it. The landmarks' years are researched
   and are evidence. This run published the style attributions and dropped the
-  1900s; the general lesson is in [../AGENTS.md](../AGENTS.md).
+  1900s; the general lesson is in [../LESSONS.md](../LESSONS.md).
 - **Four of its printed ranges are rows of separate houses**, not one
   building's two-number address: 1104-1118 Tennessee, 725-733 Castro, 905-911
   Minnesota and 710-718 Steiner (the Painted Ladies, six houses). Only the two
@@ -5224,7 +5224,7 @@ and the figure captions add perhaps a tenth as much.
   so on a builders' volume run `--overlap` **before** deciding what to write,
   not after.
 - **The reverse date check needs a floor, and 1900 is it.** See "What we've
-  learned the hard way" in [../AGENTS.md](../AGENTS.md): the roll's 1900 is
+  learned the hard way" in [../LESSONS.md](../LESSONS.md): the roll's 1900 is
   where the assessor files the nineteenth century, 21% of every page on the
   site, so a mechanical "roll year more than fifteen years later" test called
   seventeen extant buildings demolished — the whole Hinkel row and a designated

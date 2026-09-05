@@ -9,17 +9,23 @@ description: Work inside this repo's research module (research/) — the pipelin
 addresses. The rest of the repo **presents** them. This skill is the door into
 that module.
 
-The module's own documents are the authority. There are two:
+The module's own documents are the authority. There are three:
 
 1. **[research/AGENTS.md](../../../research/AGENTS.md)** — the rulebook: the
-   goal, the search-invisibility bias, the evidence bar, the statuses, the
-   lessons that already cost something.
+   goal, the search-invisibility bias, the evidence bar, the statuses. Short on
+   purpose; read it whole.
 2. **[research/RUNBOOK.md](../../../research/RUNBOOK.md)** — the procedure, step
-   by step. Read it when you're about to do the work.
+   by step. Read the step you're on when you're about to do the work.
+3. **[research/LESSONS.md](../../../research/LESSONS.md)** — 147 traps that have
+   already cost a session or a correction. **Grep it, never read it whole** —
+   search for what you're about to do (`--overlap`, `condominium`, `privacy
+   filter`, `renumber`, `pdftotext`, `manifest`) before the step, and again when
+   a step surprises you.
 
 Plus the root [AGENTS.md](../../../AGENTS.md), whose privacy limits and evidence
-rules bind here without exception — read the whole thing if you may touch a page
-under `san-francisco/`.
+rules bind here without exception — read it if you may touch a page under
+`san-francisco/`, along with [REFERENCE.md](../../../REFERENCE.md) for the
+`data.json` schema.
 
 Then get the current state:
 
@@ -28,7 +34,8 @@ python3 research/tools/check.py --stats   # the dashboard: read, found, resolved
 python3 research/tools/check.py           # register ↔ dossiers, findings ↔ schema
 ```
 
-and skim `research/SOURCES.md` — the register plus the leads table.
+and skim `research/SOURCES.md` — the register plus the leads table. A lead's
+triage note, if it has one, is in `research/TRIAGE.md`.
 
 ## Do a whole run
 
@@ -89,8 +96,8 @@ second deliverable of every run, alongside the facts. See
 [AGENTS.md → This module improves itself](../../../research/AGENTS.md#this-module-improves-itself).
 
 - **Record what you learned** — source-specific in the dossier's cautions and
-  `Verified:` line, cross-cutting in AGENTS.md's "What we've learned the hard
-  way". A trap you hit and didn't write down gets paid for again.
+  `Verified:` line, cross-cutting in [LESSONS.md](../../../research/LESSONS.md).
+  A trap you hit and didn't write down gets paid for again.
 - **Fix the gap you tripped over**, in the same PR as the work. A missing schema
   field, a check `check.py` should have caught, a runbook step that doesn't match
   what runs actually do.
