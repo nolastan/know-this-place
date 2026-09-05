@@ -349,6 +349,13 @@ The seeder only creates pages that don't exist, and it knows nothing about the
 source — the facts still have to be added to those pages afterwards. Seeding is
 the scaffold, not the research.
 
+**Run `check.py --overlap` again after `seed-list`.** The scan compares findings
+against pages on disk, so on this route it saw nothing for every page the run was
+about to create — and a seeded page is not blank: it arrives carrying whatever
+the citywide surveys already say about that parcel. One batch wrote four
+construction dates onto four new pages that already named and dated the same four
+buildings from a neighbourhood survey.
+
 Two things bite when adding those facts in bulk:
 
 - **The parcel decides the page, not the path.** A corner building the source

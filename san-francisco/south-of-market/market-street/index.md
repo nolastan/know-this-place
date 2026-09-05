@@ -30,6 +30,7 @@ The parcels on Market Street documented here so far, from the city's address, as
 - [931](931/) — A 1907 store building, with permit records from 1998 to 2013.
 - [934–936](934/) — A 1974 store building in the Kearny-Market-Mason-Sutter Conservation District, with reroofing permitted in 2025.
 - [944–948](944/) — A 1907 office building in the Kearny-Market-Mason-Sutter Conservation District, with electrical work permitted in 1984.
+- [945](945/) — A 2017 store building, with plumbing work permitted in 2022.
 - [969](969/) — A 1909 store building, with a kitchen remodel permitted in 2019.
 - [973](973/) — A 1904 69-unit apartment building, with an addition permitted in 2005.
 - [976](976/) — A 1910 theater, with permit records from 1982 to 2014.

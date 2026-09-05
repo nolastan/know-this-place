@@ -5,6 +5,7 @@ The parcels on Stanyan Street documented here so far, from the city's address, a
 ## Documented so far
 
 - [624](624/) — A 1911 garage in the Panhandle Historic District, with a seismic retrofit permitted in 2002.
+- [690](690/) — A 1961 assessor class: parking lot, with reroofing permitted in 2010.
 - [730](730/) — A 1975 assessor class: vacant lot, with plumbing work permitted in 2022.
 - [750](750/) — A 1907 hotel, with reroofing permitted in 2014.
 

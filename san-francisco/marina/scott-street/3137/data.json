@@ -1,0 +1,128 @@
+{
+  "address": "3137–3139 Scott Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/scott-street/3137/",
+  "apn": "0937002",
+  "block": "0937",
+  "lot": "002",
+  "eas_baseid": "469780",
+  "coordinates": {
+    "lat": 37.798822,
+    "lng": -122.441191
+  },
+  "address_range": "3137–3139",
+  "street_numbers_on_parcel": [
+    "3137",
+    "3139"
+  ],
+  "parcel": {
+    "year_built": 1925,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "bedrooms": 6,
+    "lot_area_sqft": 2440,
+    "building_area_sqft": 3934,
+    "lot_depth_ft": 97.6,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Cow Hollow",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "3139 3137 SCOTT               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 332182,
+    "assessed_improvement_value": 346110
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200911171420",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-11-17",
+      "status_date": "2010-11-09",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "dryrot repair work only. no structural. rooftop deck. 10 x12, replace in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200509233759",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-09-23",
+      "status_date": "2009-09-10",
+      "estimated_cost": 31700,
+      "revised_cost": 31700,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9105366",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-04-02",
+      "status_date": "1991-04-18",
+      "estimated_cost": 7350,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SCOTT&street_type=ST&address_number=3137",
+      "retrieved": "2026-09-05"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0937002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0937&lot=002",
+      "retrieved": "2026-09-05"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0937002",
+      "retrieved": "2026-09-05"
+    },
+    {
+      "id": "sf-environmental-review-preliminarymitig2520sanf",
+      "name": "San Francisco Planning Department, 3155 Scott Street: Preliminary Mitigated Negative Declaration, Case No. 2010.0420E, 2011",
+      "query": "https://archive.org/details/preliminarymitig2520sanf",
+      "label": "3155 Scott Street preliminary mitigated negative declaration, SF Planning Dept., 2011",
+      "retrieved": "2026-09-05"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925",
+      "kind": "construction",
+      "description": "A two-storey residential building of 1925.",
+      "source": "sf-environmental-review-preliminarymitig2520sanf"
+    }
+  ],
+  "building": {
+    "completed": 1925
+  }
+}

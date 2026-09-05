@@ -36,6 +36,7 @@ Every residential parcel on Mission Street that the city's address, assessor and
 - [1845](1845/) — A 1916 12-unit apartment building, with a seismic retrofit permitted in 2017.
 - [1863–1867](1863/) — A 2023 39-unit apartment building in the SoMa LGBTQ Historic District, with permit records from 2000 to 2023.
 - [1885](1885/) — A 1925 office building, with a kitchen and bathroom remodel permitted in 2015.
+- [1905–1911](1905/) — A 2007 store building, with electrical work permitted in 2007.
 - [1906–1910](1906/) — A 1906 hotel, with a bathroom remodel permitted in 2013.
 - [1912–1922](1912/) — A 1907 7-unit apartment building, with a seismic retrofit permitted in 2015.
 - [1917–1919](1917/) — A 1900 1-unit apartment building with a ground-floor store, with garage work permitted in 2014.

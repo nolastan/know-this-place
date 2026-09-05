@@ -4,6 +4,7 @@ The parcels on Geneva Avenue documented here so far, from the city's address, as
 
 ## Documented so far
 
+- [965–985](965/) — A 1928 13-unit apartment building, with an addition permitted in 2003.
 - [1155](1155/) — A 1928 3-unit building with a ground-floor store, with reroofing permitted in 2017.
 - [1196](1196/) — A 1922 3-unit building with a ground-floor store, with a kitchen remodel permitted in 2001.
 
