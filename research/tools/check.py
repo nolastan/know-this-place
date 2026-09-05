@@ -6,6 +6,9 @@
     python3 research/tools/check.py --report <findings-file>   # the PR body's table
     python3 research/tools/check.py --overlap <findings-file>  # facts the pages already carry
     python3 research/tools/check.py --landed  <findings-file>  # published entries that changed nothing
+    python3 research/tools/check.py --index                    # rebuild findings/INDEX.md
+    python3 research/tools/check.py --peek   <findings-file>   # what a batch is, without reading it
+    python3 research/tools/check.py --find "1377 Fulton"       # entries matching words, corpus-wide
 
 What it checks:
   * every dossier in research/sources/ has a row in research/SOURCES.md, and
@@ -30,6 +33,14 @@ with no publish decision — work already paid for and not yet on a page.
 a run's PR body carries (RUNBOOK.md, "Close the books"). Only findings that
 reached a parcel appear in it, because the parcel is what carries a
 neighborhood; the unresolved and rejected ones are counted underneath it.
+
+--index, --peek and --find exist so that nobody opens a findings file. The
+directory is ~30 MB and its largest file is past what a context window holds,
+so an agent that reads one to reach three entries has spent its session. --index
+regenerates findings/INDEX.md, which says what every batch covers; a default run
+fails while it is stale, the same contract the sitemap has on the website side.
+--peek prints one batch's header, coverage and a spread sample of its entries;
+--find matches words across every findings file at once and prints a line each.
 
 --overlap answers the question step 4 has to ask before it writes anything:
 does the page already say this? Two statements routinely cover the same
@@ -977,6 +988,402 @@ def landed(path: Path) -> None:
           "lacked and say so in publish.note.")
 
 
+# --------------------------------------------------------------------------- #
+# The index — so nobody has to open a findings file to find out what is in it
+# --------------------------------------------------------------------------- #
+
+INDEX_PATH = ROOT / "findings" / "INDEX.md"
+MANIFESTS = ROOT / "manifests"
+
+# The fields --find searches. Address and description are what a question is
+# normally phrased in; the resolution fields are here because half the time the
+# question arrives as a page path or an APN, from an issue or a PR body.
+HAYSTACK = ("id", "date", "address_as_written", "street_number", "street_name",
+            "street_type", "description")
+
+
+# `date` is free text by schema, and the corpus uses that latitude: beside
+# ISO dates it holds "c. 1870", "unknown", and one bare "187". So the span is
+# read with a pattern and bounded, rather than by slicing four characters off
+# the front — that turned "187" into the year 187 and printed a batch as
+# "187–1984".
+YEAR = re.compile(r"\b(1[5-9]\d\d|20\d\d)\b")
+
+
+def _span(findings: list) -> str:
+    """The years a batch's findings cover — the first thing you want to know."""
+    years = []
+    for f in findings:
+        m = YEAR.search(f.get("date") or "")
+        if m:
+            years.append(int(m.group(1)))
+    if not years:
+        return "—"
+    lo, hi = min(years), max(years)
+    return str(lo) if lo == hi else f"{lo}–{hi}"
+
+
+def _size(n: int) -> str:
+    if n >= 1048576:
+        return f"{n / 1048576:.1f} MB"
+    # Not rounded down to "0 KB": several manifests are a few hundred bytes,
+    # and a size column that reads zero looks like a broken file.
+    return f"{max(1, round(n / 1024))} KB"
+
+
+def _tokens(n: int) -> str:
+    """Bytes as the round number of tokens they cost to read. ~4 bytes each."""
+    t = n / 4
+    return f"{t / 1e6:.1f}M" if t >= 1e6 else f"{t / 1e3:.0f}k"
+
+
+def _thousands(n: int) -> str:
+    return f"{n:,}"
+
+
+def _wrap(text: str) -> str:
+    """Generated prose wrapped like the hand-written Markdown around it."""
+    import textwrap
+    return "\n".join(textwrap.wrap(text, width=76, break_long_words=False,
+                                   break_on_hyphens=False))
+
+
+def _areas(findings: list):
+    """Neighborhood directories the batch's resolved parcels sit in.
+
+    `resolution.path` is a site path — /san-francisco/<area>/<street>/<n>/ —
+    so the neighborhood is its second segment. It is the coverage axis that
+    matters here: the question an agent brings to these files is almost always
+    "has anything been read about this part of the city", and a street list
+    would be hundreds of names where this is a handful.
+    """
+    import collections
+    out = collections.Counter()
+    for f in findings:
+        path = (f.get("resolution") or {}).get("path")
+        if not path:
+            continue
+        parts = path.strip("/").split("/")
+        if len(parts) > 1:
+            out[parts[1]] += 1
+    return out
+
+
+def _index_rows(docs: list) -> list[dict]:
+    rows = []
+    for path, data in docs:
+        findings = data.get("findings") or []
+        rows.append(dict(
+            rel=f"{path.parent.name}/{path.name}",
+            n=len(findings),
+            size=path.stat().st_size,
+            span=_span(findings),
+            resolved=sum(1 for f in findings
+                         if (f.get("resolution") or {}).get("status") == "resolved"),
+            published=sum(1 for f in findings
+                          if (f.get("publish") or {}).get("status") == "published"),
+            areas=_areas(findings),
+        ))
+    return rows
+
+
+def _manifest_rows() -> list[dict]:
+    import collections
+    rows = []
+    for path in sorted(MANIFESTS.glob("*.json")):
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        if not isinstance(data, list):
+            continue
+        areas = collections.Counter(
+            p["area"] for p in data if isinstance(p, dict) and p.get("area"))
+        rows.append(dict(name=path.name, n=len(data),
+                         size=path.stat().st_size, areas=areas))
+    return rows
+
+
+def build_index(docs: list) -> str:
+    """The Markdown of findings/INDEX.md.
+
+    Everything here is derived, so the file can be regenerated and never hand
+    edited — same contract as the sitemap and the map index on the website
+    side. It exists because the alternative is an agent reading a findings file
+    to find out whether it is worth reading: the corpus is 30 MB, and the
+    largest single file is past what a context window holds.
+    """
+    rows = _index_rows(docs)
+    manifests = _manifest_rows()
+    total_bytes = sum(r["size"] for r in rows)
+    total_findings = sum(r["n"] for r in rows)
+    biggest = max(rows, key=lambda r: r["size"]) if rows else None
+
+    out = []
+    w = out.append
+    w("# What is in the findings files")
+    w("")
+    w("<!-- Generated by `python3 research/tools/check.py --index`. Do not edit by")
+    w("     hand: `check.py` fails when this file and the findings disagree. -->")
+    w("")
+    w(f"{len(rows)} files, {_size(total_bytes)}, "
+      f"{_thousands(total_findings)} findings.")
+    if biggest:
+        w("")
+        w(_wrap(
+            f"**Never read one whole.** The largest, `{biggest['rel']}`, is "
+            f"{_size(biggest['size'])} — about {_tokens(biggest['size'])} "
+            f"tokens, more than a context window holds. The directory as a "
+            f"whole is around {_tokens(total_bytes)} tokens, and an agent that "
+            f"opens one of these files has usually spent its session to reach "
+            f"three entries."))
+    w("")
+    w("This file is the cheap way in. The table says what each batch covers;")
+    w("the commands below get entries out without the file entering the context.")
+    w("")
+    w("## Getting entries out")
+    w("")
+    w("```bash")
+    w("# what a batch is, what it covered, and a sample of its entries")
+    w("python3 research/tools/check.py --peek research/findings/<id>/<batch>.json")
+    w("")
+    w("# every entry matching some words, across every file (or one of them)")
+    w("python3 research/tools/check.py --find \"1377 Fulton\"")
+    w("python3 research/tools/check.py --find Fulton --in research/findings/digitalsf/sfp-23.json")
+    w("```")
+    w("")
+    w("For anything those two don't answer, query the file rather than opening")
+    w("it — `jq` on the entries, never `cat` on the file:")
+    w("")
+    w("```bash")
+    w("jq '.findings[] | select(.street_name == \"FULTON\") | {id, address_as_written, description}' <file>")
+    w("jq '[.findings[] | select(.resolution.status == \"unresolved\")] | length' <file>")
+    w("jq -r '.findings[] | select(.publish.status == \"published\") | .resolution.path' <file> | sort -u")
+    w("```")
+    w("")
+    w("## The shape, once")
+    w("")
+    w("Every file is the same object, so it is written down here rather than")
+    w("discovered by reading one:")
+    w("")
+    w("```")
+    w("{ source_id, batch, read_on, notes, coverage: { unit, examined, remaining,")
+    w("  mentions, note }, findings: [ … ] }")
+    w("```")
+    w("")
+    w("An entry, with the share of the "
+      f"{_thousands(total_findings)} that carry each key:")
+    w("")
+    import collections
+    field_use = collections.Counter()
+    for _, data in docs:
+        for f in data.get("findings") or []:
+            field_use.update(f.keys())
+    w("| key | on |")
+    w("|---|---:|")
+    for key, count in sorted(field_use.items(), key=lambda kv: (-kv[1], kv[0])):
+        share = 100 * count / total_findings if total_findings else 0
+        w(f"| `{key}` | {share:.0f}% |")
+    w("")
+    w("`resolution` is `{status, apn, path, eas_address, method, checked_on, note}`")
+    w("and `publish` is `{status, pr, note}`. Every field and its rules:")
+    w("[../schema/finding.schema.json](../schema/finding.schema.json).")
+    w("")
+    w("## The batches")
+    w("")
+    w("`Areas` is the neighborhood directories the batch's resolved parcels")
+    w("sit in — the three it touched most, and how many in all.")
+    w("")
+    w("| Batch | Entries | Size | Years | Resolved | Published | Areas |")
+    w("|---|---:|---:|---|---:|---:|---|")
+    for r in rows:
+        top = ", ".join(f"`{a}`" for a, _ in r["areas"].most_common(3))
+        rest = len(r["areas"]) - 3
+        if rest > 0:
+            top += f" +{rest}"
+        w(f"| `{r['rel']}` | {_thousands(r['n'])} | {_size(r['size'])} | "
+          f"{r['span']} | {_thousands(r['resolved'])} | "
+          f"{_thousands(r['published'])} | {top or '—'} |")
+    w("")
+    if manifests:
+        w("## Manifests")
+        w("")
+        w("`research/manifests/*.json` are flat parcel lists for")
+        w("`scripts/seed_pages.py seed-list` — no prose, nothing to read. They")
+        w("are listed so their size is visible before anyone opens one.")
+        w("")
+        w("| Manifest | Parcels | Size | Areas |")
+        w("|---|---:|---:|---|")
+        for m in manifests:
+            top = ", ".join(f"`{a}`" for a, _ in m["areas"].most_common(3))
+            rest = len(m["areas"]) - 3
+            if rest > 0:
+                top += f" +{rest}"
+            w(f"| `{m['name']}` | {_thousands(m['n'])} | {_size(m['size'])} | "
+              f"{top or '—'} |")
+        w("")
+    return "\n".join(out) + "\n"
+
+
+def check_index(docs: list) -> None:
+    """A stale index is worse than none: it is read and believed.
+
+    Silent while anything else has already failed: a file that would not parse
+    is missing from `docs`, so the index rebuilt from them would differ for a
+    reason that has nothing to do with the index, and reporting that alongside
+    the real error sends the reader to the wrong file.
+    """
+    if errors:
+        return
+    want = build_index(docs)
+    rel = INDEX_PATH.relative_to(ROOT.parent)
+    if not INDEX_PATH.exists():
+        err(str(rel), "missing — run python3 research/tools/check.py --index")
+        return
+    if INDEX_PATH.read_text(encoding="utf-8") != want:
+        err(str(rel), "out of date — run python3 research/tools/check.py --index")
+
+
+def a_findings_file(path: Path) -> Path | None:
+    """`path` if it is a findings file, else a guess and a message.
+
+    Batch names get typed from an issue or a PR body without their directory,
+    and `resolution.path` — the other path a run has to hand — is a site path
+    that names no file at all. Both are cheap to recognise, and a suggestion
+    costs one line where a traceback costs a round trip.
+    """
+    if path.is_file():
+        return path
+    stem = path.stem or path.name
+    near = [f for f in findings_files() if f.stem == stem or f.name == path.name]
+    print(f"no findings file at {path}")
+    if near:
+        print("Did you mean:")
+        for f in near:
+            print(f"  {f.relative_to(ROOT.parent)}")
+    else:
+        print("The list of them is in research/findings/INDEX.md.")
+    return None
+
+
+def peek(path: Path, sample: int) -> None:
+    """A findings file's header, its coverage, and a few of its entries.
+
+    The sample is spread across the file rather than taken off the front: a
+    batch is written in the order it was read, so the first N entries are
+    routinely N views of one street and say nothing about the rest.
+    """
+    import collections
+
+    data = json.loads(path.read_text(encoding="utf-8"))
+    findings = data.get("findings") or []
+    print(f"{path} — {_size(path.stat().st_size)}, "
+          f"{_thousands(len(findings))} entries")
+    print(f"source_id {data.get('source_id')!r}  batch {data.get('batch')!r}  "
+          f"read_on {data.get('read_on')}")
+
+    cov = data.get("coverage") or {}
+    if cov:
+        print()
+        print(f"Coverage: examined {cov.get('examined')} {cov.get('unit', '')}"
+              f", {cov.get('mentions')} mention(s)")
+        for label in ("remaining", "note"):
+            if cov.get(label):
+                print(f"  {label}: {cov[label]}")
+
+    res = collections.Counter((f.get("resolution") or {}).get("status", "—")
+                              for f in findings)
+    pub = collections.Counter((f.get("publish") or {}).get("status", "none")
+                              for f in findings)
+    kinds = collections.Counter(f.get("kind") for f in findings)
+    print()
+    print(f"Years {_span(findings)}   resolution: "
+          + ", ".join(f"{n} {s}" for s, n in res.most_common()))
+    print(f"Kinds: " + ", ".join(f"{n} {k}" for k, n in kinds.most_common(6))
+          + f"   publish: " + ", ".join(f"{n} {s}" for s, n in pub.most_common()))
+    areas = _areas(findings)
+    if areas:
+        print("Areas: " + ", ".join(f"{a} ({n})" for a, n in areas.most_common(8))
+              + (f", +{len(areas) - 8} more" if len(areas) > 8 else ""))
+
+    notes = data.get("notes")
+    if notes:
+        print()
+        print("Notes:")
+        text = notes if len(notes) <= 1500 else notes[:1500] + \
+            f"\n  … truncated; {len(notes):,} characters in .notes"
+        for line in text.splitlines():
+            print(f"  {line}".rstrip())
+
+    if findings and sample > 0:
+        step = max(1, len(findings) // sample)
+        shown = findings[::step][:sample]
+        print()
+        print(f"{len(shown)} of {_thousands(len(findings))} entries, spread "
+              f"across the file:")
+        for f in shown:
+            print()
+            print(json.dumps(f, indent=1, ensure_ascii=False))
+        print()
+        print("Everything else: --find, or jq. See research/findings/INDEX.md.")
+
+
+def find(text: str, only: Path | None, limit: int) -> None:
+    """Entries matching every word of `text`, one line each.
+
+    All words rather than the phrase, because the question arrives as an
+    address the way a person writes it ("1377 Fulton") and the file holds it
+    split across `street_number` and `street_name`, or spelled with a street
+    type the asker left off.
+    """
+    terms = [t.lower() for t in text.split()]
+    if not terms:
+        print("--find needs something to look for.")
+        return
+
+    paths = [only] if only else findings_files()
+    hits, scanned = [], 0
+    for path in paths:
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        for f in data.get("findings") or []:
+            scanned += 1
+            res = f.get("resolution") or {}
+            hay = " ".join(str(f.get(k, "")) for k in HAYSTACK)
+            hay += " " + " ".join(str(res.get(k, ""))
+                                  for k in ("apn", "path", "eas_address"))
+            hay += " " + str((f.get("citation") or {}).get("label", ""))
+            hay = hay.lower()
+            if all(t in hay for t in terms):
+                hits.append((path, f))
+
+    where = only.name if only else f"{len(paths)} file(s)"
+    print(f"{len(hits)} of {_thousands(scanned)} entries in {where} match "
+          f"{text!r}.")
+    if not hits or limit <= 0:
+        return
+    print()
+    for path, f in hits[:limit]:
+        res = f.get("resolution") or {}
+        pub = (f.get("publish") or {}).get("status")
+        state = res.get("path") or res.get("status", "unresolved")
+        if pub:
+            state += f" [{pub}]"
+        print(f"{path.parent.name}/{path.stem}  {f.get('id')}  "
+              f"{f.get('date') or '—'}  {f.get('address_as_written')}")
+        print(f"    {state}")
+        desc = f.get("description") or ""
+        print(f"    {desc[:160]}{'…' if len(desc) > 160 else ''}")
+    if len(hits) > limit:
+        print()
+        print(f"… {len(hits) - limit} more. Narrow the search, or raise --n.")
+    print()
+    print("Whole entries: --peek the file, or "
+          "jq '.findings[] | select(.id == \"…\")'.")
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--stats", action="store_true", help="print the yield so far")
@@ -986,15 +1393,47 @@ def main() -> int:
                     help="report findings whose target page already says the same thing")
     ap.add_argument("--landed", type=Path, metavar="FINDINGS",
                     help="after publishing: report published findings that changed nothing")
+    ap.add_argument("--index", action="store_true",
+                    help="rebuild research/findings/INDEX.md")
+    ap.add_argument("--peek", type=Path, metavar="FINDINGS",
+                    help="a file's header, coverage and a sample of its entries")
+    ap.add_argument("--find", metavar="WORDS",
+                    help="entries matching every word, one line each")
+    ap.add_argument("--in", dest="within", type=Path, metavar="FINDINGS",
+                    help="limit --find to one file")
+    ap.add_argument("-n", type=int, default=None, metavar="N",
+                    help="how many entries --peek samples (default 3) or --find "
+                         "prints (default 40); 0 for counts only")
     args = ap.parse_args()
+
+    # --peek and --find answer a question about one file; they are the cheap
+    # alternative to opening it, so they must not first spend a second
+    # validating the other 71.
+    if args.peek:
+        path = a_findings_file(args.peek)
+        if path is None:
+            return 1
+        peek(path, 3 if args.n is None else args.n)
+        return 0
+    if args.find:
+        within = None
+        if args.within:
+            within = a_findings_file(args.within)
+            if within is None:
+                return 1
+        find(args.find, within, 40 if args.n is None else args.n)
+        return 0
 
     schema = json.loads(SCHEMA_PATH.read_text(encoding="utf-8"))
     ids = registered_ids()
     check_register(ids)
 
     files = findings_files()
+    docs = []
     for path in files:
-        check_findings_file(path, schema, ids)
+        data = check_findings_file(path, schema, ids)
+        if data is not None:
+            docs.append((path, data))
 
     # The example is documentation, so it has to stay valid; it is exempt from
     # the registered-directory rule because it lives under schema/.
@@ -1003,6 +1442,13 @@ def main() -> int:
         validate(example, schema, schema, "$",
                  lambda p, m: err(str(EXAMPLE.relative_to(ROOT.parent)), f"{p}: {m}"))
         check_rules(EXAMPLE.relative_to(ROOT.parent), example)
+
+    if args.index:
+        INDEX_PATH.write_text(build_index(docs), encoding="utf-8")
+        print(f"wrote {INDEX_PATH.relative_to(ROOT.parent)} — "
+              f"{len(docs)} batch(es)")
+    else:
+        check_index(docs)
 
     if args.stats:
         stats(files)
