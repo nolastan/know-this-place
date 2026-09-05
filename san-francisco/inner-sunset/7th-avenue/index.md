@@ -12,6 +12,7 @@ The parcels on Seventh Avenue documented here so far, from the city's address, a
 - [1279](1279/) — A 1909-1913 Mission Revival parapet with Craftsman brackets, built by Eugene B. Hallett.
 - [1280–1282](1280/) — A 1905 Tudor half-timbering, built by Building Construction Company.
 - [1288–1290](1288/) — A 1905 Tudor half-timbering, built by Building Construction Company.
+- [1315](1315/) — A 2009 store building, with facade work permitted in 2015.
 - [1341](1341/) — A 1925-1926 Spanish Colonial Revival, designed by Arthur H. Klahn.
 - [1382](1382/) — A 1909-1910 building, built by Cox Brothers.
 - [1416](1416/) — A 1910 Craftsman, designed by Theodore W. Lenzen.

@@ -6,6 +6,7 @@ The parcels on Scott Street documented here so far, from the city's address, ass
 
 - [2800](2800/) — A 1905 building in the Pacific Heights Historic District, with a seismic retrofit permitted in 2014.
 - [2856](2856/) — A three-story building of 1926 divided into six condominium units.
+- [3137–3139](3137/) — A 1925 two-flat, with reroofing permitted in 2005.
 - [3241–3249](3241/) — A 1914 5-unit apartment building, with reroofing permitted in 1995.
 - [3251](3251/) — A 1915 store building, with reroofing permitted in 2019.
 - [3321–3323](3321/) — A 1924 three-flat, with a kitchen and bathroom remodel permitted in 2014.

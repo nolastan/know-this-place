@@ -29,3 +29,4 @@ opened here in 1905.
 - [Rhode Island Street](rhode-island-street/) — 1 building, built 1910.
 - [Texas Street](texas-street/) — 2 buildings, built 1900–1909.
 - [Vermont Street](vermont-street/) — 1 building, built 1900.
+- [Wisconsin Street](wisconsin-street/) — 7 buildings, built 1900–1968.

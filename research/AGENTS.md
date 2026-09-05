@@ -199,6 +199,17 @@ live in the dossiers. **Add to this list** whenever a run discovers something a
 future run would otherwise repeat — that is what makes this module improve
 rather than just accumulate.
 
+- **`--overlap` is blind to the pages the same run is about to seed, and a
+  seeded page is not a blank one.** The scan compares findings against pages *on
+  disk*, so on a route-B run — where the resolver's manifest feeds `seed-list` —
+  every new page reports clean, and then `seed_pages.py` fills it with whatever
+  the citywide surveys already say about that parcel. One batch wrote four
+  construction dates onto four freshly seeded pages that had arrived carrying the
+  same building names and years from a neighbourhood survey. **Run
+  `check.py --overlap` twice: once before you decide what to write, and again
+  after `seed-list` has created the pages.** The second run is the one that sees
+  the duplicates.
+
 - **Most facts about a demolished building land on the page of the thing that
   replaced it, and a flat sentence then describes the wrong building.** A
   finding resolves on a street number, and the number outlives the building. Say

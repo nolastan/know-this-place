@@ -16,6 +16,7 @@ The parcels on Van Ness Avenue documented here so far, from the city's address, 
 - [1355–1395](1355/) — A 1916 store building, with facade work permitted in 2011.
 - [1415](1415/) — A 1900 garage, with garage work permitted in 2000.
 - [1455–1477](1455/) — A 1997 250-unit apartment building, with window replacement permitted in 2001.
+- [1501](1501/) — A 1966 building, with electrical work permitted in 2026.
 - [1595](1595/) — A 1913 store building, with facade work permitted in 2007.
 
 Pages are generated from the DataSF datasets listed in each page's

@@ -29,6 +29,7 @@ The parcels on Mission Street documented here so far, from the city's address, a
 - [1019–1021](1019/) — A 1915 industrial building, with a bathroom remodel permitted in 2010.
 - [1026–1028](1026/) — A 1907 store building, with reroofing permitted in 2006.
 - [1091–1099](1091/) — A 1912 hotel in the Western SOMA Light Industrial and Residential Historic District, with window replacement permitted in 2010.
+- [1270](1270/) — A 1975 store building, with an addition permitted in 2019.
 - [1321](1321/) — San Francisco's first micro-unit building; its wind-driven facade sculpture cost $379,860.
 - [1337](1337/) — A 1913 industrial building, with a vertical addition permitted in 2017.
 - [1338](1338/) — A 1923 office building, with a seismic retrofit permitted in 1998.

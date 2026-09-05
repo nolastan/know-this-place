@@ -6,8 +6,9 @@
 > - **Kind:** PDF reports · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
 > - **Coverage:** all 172 address-titled documents read, in 93 projects, plus the 36 named
->   single-site projects of 1974–1982 from the project-titled set; 497 findings, 322 resolved,
->   271 published. All ~617 project-titled documents are grouped and sampled in the triage note below.
+>   single-site projects of 1974–1982 and the 58 projects whose titles carry a street address later
+>   than first position, both from the project-titled set; 606 findings, 396 resolved, 344 published.
+>   All ~617 project-titled documents are grouped and sampled in the triage note below.
 > - **Local corpus:** `research/corpora/sf-environmental-review/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -233,7 +234,7 @@
     | group | docs | carries street numbers? | sampled evidence |
     |---|---|---|---|
     | **Named single-site projects** — one tower, hotel, store or apartment block, titled after the developer's project rather than its address ("One Sansome", "Daon Building", "Russ Tower", "Neiman-Marcus department store") | **162** in 93 projects | **Yes, densely.** The same document as the address-titled downtown reports. | The Russ Tower DEIR dates and credits 350, 334–340 and 344–346 Bush Street; the One Sansome DEIR dates the Holbrook Building at 58 Sutter Street to 1912 and names MacDonald and Applegarth. **Batch `named-sites-1974-1982` read 36 of these.** |
-    | **Titles carrying a street address, but not in first position** — "Case No. 2003.0273E : 46 Geary Street", "Draft EIR : 1634-1690 Pine Street", "Francisco Place : office/condominiums, 530 Chestnut Street" | **50** | **Yes.** Single-site documents the leading-digit filter missed; the 1998–2013 ones append a consultant's historic resource evaluation. | The titles name the buildings outright. Not yet read — this is the next batch to take. |
+    | **Titles carrying a street address, but not in first position** — "Case No. 2003.0273E : 46 Geary Street", "Draft EIR : 1634-1690 Pine Street", "Francisco Place : office/condominiums, 530 Chestnut Street" | **50** by title shape, **58 projects** once the match is widened past `Street` to every street type | **Yes.** Single-site documents the leading-digit filter missed; the 1998–2013 ones append a consultant's historic resource evaluation. | The titles name the buildings outright. **Batch `address-in-title` read all 58.** |
     | **Institutional campuses** — hospitals, museums, libraries, schools, churches | **77** | **Yes, but few buildings each.** A campus document describes two or three buildings and restates them hundreds of times. | The 1992 Main Library FEIR carries 387 numbered-address mentions and nearly all are 100 Larkin Street and 45 Hyde Street; the 1998 Asian Art Museum DSEIR is the same two buildings, and records that 45 Hyde Street was demolished in November 1997. |
     | **Area and policy plans** — Mission Bay, Yerba Buena Center, the Downtown Plan, Rincon Hill, South of Market, Eastern Neighborhoods, the Housing Element, planning code amendments | **130** | **Mostly no.** They describe by street, block face and project name. | The 1,068 KB Downtown Plan DEIR yields **18** numbered-address mentions and the only building among them is 522/528 Howard Street, the plan's own case-study site; the rest are the department's own office address and figure captions. The South of Market plan tabulates development sites by cross street ("First & Harrison"). The exception is a redevelopment plan naming a surviving building outright: Rincon Point–South Beach names the Oriental Warehouse at 650–622 First Street. |
     | **Procedural notices** — notices of preparation, notices that an EIR is required, notices of availability | **96** | **Redundant.** A notice restates its own project's address and nothing else, and the project usually has a full document in the collection. | The 2008 CityPlace NOP names 935–939, 941–945 and 947–965 Market Street; the 2009 CityPlace DEIR names the same buildings *and dates them*. Read the DEIR. |
@@ -285,6 +286,74 @@
     resolver had formed from the roll's address. **Run `seed-list` before writing
     the facts** and take its "already documented at" lines as corrections to the
     findings' paths.
+
+  - **A `--overlap` run cannot see the pages the same run is about to seed, and a
+    seeded page arrives already carrying other sources' facts.** All four of the
+    First Street buildings this batch dated — the Marwedel, Langley and Michaels,
+    Neustadter Bros. and Brandenstein Buildings — came back from the seeder with
+    the Transit Center District Survey's own *"Built as the Marwedel Building"*
+    line already on the page, so the batch's construction dates were duplicates
+    before they were written. `--overlap` had reported them clean, because the
+    pages did not exist when it ran. **Run `--overlap` a second time after
+    `seed-list`**, and read the new pages' `historical_record` before writing to
+    them; the four entries were rewritten as the one thing the survey had not
+    said — that the four buildings are the First and Mission Historic District,
+    and that all four stood on one project site.
+
+  - **A whole batch of a source can be lost to a filter on the wrong half of the
+    title.** The catalogue group this dossier calls "titles carrying a street
+    address, but not in first position" was counted at 50 by matching `<number>
+    <name> Street`. Widening the street-type alternation to Avenue, Boulevard,
+    Place, Way and the rest found **58 projects**, and the extra eight include
+    2800 Sloat Boulevard, 1315-1327 Seventh Avenue, 1645 Pacific Avenue, 965
+    Geneva Avenue and 3711 Nineteenth Avenue — the only non-downtown material in
+    the group. Count a group twice before believing its size.
+
+  - **Fifteen of this group's projects were already read under a leading-digit
+    title, and the catalogue says so.** 201 Folsom, 300 Spear, 300 Howard, 301
+    Mission, 350 Mission, 375 Fremont, 55 Ninth, 524 Howard, 562 Mission, 50 Oak,
+    901 Market, 1234 Howard, 1299 Sansome, 255 Seventh and 3575 Geary each have a
+    sibling document whose title begins with the same number. **Match every
+    project's address against the whole catalogue before fetching**, not just
+    against `state.json`: the sibling is often a different document id for the
+    same project, and the earlier batch read the draft while this group holds the
+    notice. The one project that survives the check is 222 Second Street, whose
+    1986–88 documents and whose 2010 office project are two projects on one site
+    twenty-two years apart.
+
+  - **The condominium refusal is now the single largest cause of unresolved
+    findings in this source, and it correlates with the document being worth
+    reading.** Eighteen of this batch's 35 refusals are condominiums: 1601 Larkin
+    (the First Methodist Church site), 425 First (the Union Oil Company
+    Building), 200 Dolores (the Ebenezer parsonage), 530 and 520 Chestnut (the
+    Bauer & Schweitzer malt house), 900 North Point (Ghirardelli Square), 706
+    Mission (the Aronson Building), 845 Montgomery, 1299 Bush, 2558 Mission,
+    1645 Pacific, 450 Frederick, 75 Howard, 1490 Ocean, 2898 Sloat and 1020
+    Vallejo. The pattern from the first batch holds citywide: **a project that
+    generated an environmental review is usually a project that turned the site
+    into condominiums**, so the buildings this source documents best are the ones
+    the directory contract cannot give a page.
+
+  - **Five demolished buildings can leave no page at all when the tower that
+    replaced them is a condominium.** Block 647's 1634, 1650, 1656, 1660 and 1670
+    Pine Street — a row of 1912–1917 Auto Row buildings, three by Heiman and
+    Schwartz — merged into master parcel 0647007, which is retired, and the only
+    active non-residential parcels on the site are two ground-floor retail units
+    of the 2016 building at 1682 and 1690 Pine Street. **A retail unit is not the
+    site of the building it replaced**, so the merged-parcel rule does not reach
+    here and the five stay unresolved. The corner losses the same report records
+    at 1690 Pine Street and 1501 Van Ness Avenue do resolve, because those are the
+    same corners under the same numbers.
+
+  - **The Russian Hill crest is filed under `nob-hill` by the assessor and under
+    both directories by the site.** Parcels on block 150 and block 127 — 1000 and
+    1020 Broadway, 1013-1017, 1023, 1034 and 1036 Vallejo Street, 1629 and 1637
+    Taylor Street — carry `assessor_neighborhood: Russian Hill` and
+    `analysis_neighborhood: Nob Hill`, and the site already has 1000 Vallejo in
+    `nob-hill` and 1001 Vallejo in `russian-hill`. `--area-from-nhood` follows the
+    analysis neighborhood, which puts this batch's eight crest pages with 1000
+    Vallejo and with 1037 and 1045 Broadway. The split predates this run; see
+    issue #201.
 
 - **People:** These reports name project sponsors, property owners and the
   neighbours who wrote comment letters, and all of that is barred by "Privacy —
@@ -415,15 +484,52 @@
   interior) and the Bank of Tokyo (the Alaska Commercial Building of 1909 by Meyers
   and Ward). Ten of its 36 yielded nothing, nine of them from 1974–1977, before the
   historic-resources chapter existed.
-  **Remaining: 581 of the 617 project-titled documents, grouped and sampled in the
+  The sixth batch is the **projects whose titles carry a street address later than
+  first position**: 58 projects, one document each — 109 findings, 74 resolved, 73
+  published on 55 pages, 31 of them seeded by that run. Fifteen more projects in
+  that catalogue group were dropped unread because an earlier batch had already
+  read the same project under a leading-digit title, and two as pre-1978. Nine of
+  the 58 yielded nothing: 1036 Mission Street, 1080 Sutter Street, 1415 Mission
+  Street, 1840 Washington Street, the India Basin notice for 700 and 900 Innes
+  Avenue, the 2200 block of Funston Avenue, 2700-2750 Jackson Street, 701 Lombard
+  Street and 5600 Third Street. Its richest documents are 1634-1690 Pine Street
+  (five Auto Row buildings of 1912–1917, three of them by Heiman and Schwartz for
+  L. A. Meyers), the 50 First Street project (the Marwedel, Langley and Michaels,
+  Neustadter Bros. and Brandenstein Buildings, 1907–1917, the whole of the First
+  and Mission Historic District), CityPlace at 935-965 Market Street (the Pantages
+  Theater, a Paff & Baur front of 1909 and John Galen Howard's 1901 Empress
+  Theater, which Sid Grauman took in 1917 and renamed The Strand), One Rincon Hill
+  (Lewis P. Hobart's Union Oil Company Building of 1940-41 with MacDonald & Kahn,
+  and Ralph N. Kerr's 1953-55 clock tower), 1000 Broadway (the first house on
+  Russian Hill, built 1853 by the contractor Charles Homer and demolished in 1910,
+  and the Worcester, Polk, Farr and Morgan houses around it) and 46 Geary Street
+  (two buildings of 1906-07 by Meyer and O'Brien and by Bliss and Faville, welded
+  into one behind Ward Thomas's 1956 curtain wall).
+
+  **Remaining: 523 of the 617 project-titled documents, grouped and sampled in the
   triage note above — 18 more named single-site projects of 1983–1987 and 39 of
-  1988–2005, the 50 documents whose titles carry a street address but not in first
-  position, 77 institutional campus projects, 130 area and policy plans, 67
+  1988–2005, 77 institutional campus projects, 130 area and policy plans, 67
   transportation and airport documents, 96 procedural notices and 35 documents
   about places outside San Francisco — and the finals and supplements of projects
   whose drafts are read.**
 
-- **Verified:** 2026-09-04 (two runs on the same day. The first promoted the row
+- **Verified:** 2026-09-05, sixth run: the 58 projects whose titles carry a street
+  address later than first position, one document each — 109 findings, 74
+  resolved, 73 published on 55 pages. What it learned: **the group's size was
+  wrong because the filter that measured it was**, and widening the street-type
+  match past `Street` turned 50 documents into 58 projects and added all the
+  non-downtown material in the group; **fifteen of its projects had already been
+  read under a leading-digit title**, which only a match of every project's
+  address against the whole catalogue catches; **`--overlap` cannot see the pages
+  the same run is about to seed**, so a seeded page's existing facts have to be
+  read again after `seed-list` (four First Street construction dates were
+  duplicates of the Transit Center District Survey before they were written); and
+  **the condominium refusal is now this source's largest single cause of
+  unresolved findings**, 18 of 35 here, because a project that generated an
+  environmental review is usually a project that turned the site into
+  condominiums.
+
+  **2026-09-04** (two runs on the same day. The first promoted the row
   from the leads table and mined the outside-downtown batch: 16 documents, 61
   findings, 29 resolved, 21 published on 13 pages. What it learned: **the
   assessor's block and lot come free from this source**, which no other

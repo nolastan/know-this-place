@@ -84,7 +84,7 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Presidio Terrace Historic District](presidio-terrace/) — Eligible for the California Register, significant 1905–1915; 12 buildings documented on 2 streets.
 - [Ramona Street Historic District](ramona-street/) — Eligible for the California and National Registers, significant 1911–1923; 26 buildings documented on 3 streets.
 - [Raycliff Terrace Historic District](raycliff-terrace/) — Eligible for the California Register, significant 1941–1951; 5 buildings documented on 2 streets.
-- [Russian Hill-Vallejo Street Crest Historic District](russian-hill-vallejo-street-crest/) — Listed on the California and National Registers, significant 1888–1941; 7 buildings documented on 6 streets.
+- [Russian Hill-Vallejo Street Crest Historic District](russian-hill-vallejo-street-crest/) — Listed on the California and National Registers, significant 1888–1941; 15 buildings documented on 7 streets.
 - [San Francisco 1952 Firehouse Bond Act Thematic District (Discontiguous)](san-francisco-1952-firehouse-bond-act-thematic-district-discontiguous/) — Eligible for the California Register, significant 1952–1961; 10 buildings documented on 10 streets.
 - [San Francisco Civic Center National Historic Landmark District](san-francisco-civic-center-national-historic-landmark-district/) — Listed on the California and National Registers, significant 1913–1951 (I believe this is the POS for the NHL; the NR listing has a POS of 1800–1974, an unusually long range that the CLI attributes to different standards for identfying POS's at the time of the NR nomination (1978)); 5 buildings documented on 4 streets.
 - [San Francisco Neighborhood Movie Theater Historic District (Discontiguous)](san-francisco-neighborhood-movie-theater-discontiguous/) — Eligible for the California and National Registers, significant 1906–1945; 15 buildings documented on 12 streets.
@@ -115,4 +115,4 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Western SOMA Light Industrial and Residential Historic District](western-soma-light-industrial-and-residential/) — Eligible for the California and National Registers, significant 1906–1936; 228 buildings documented on 35 streets.
 - [Woodward St. Romeo Flats Reconstruction Historic District](woodward-st-romeo-flats-reconstruction/) — Eligible for the California Register, significant 1906–1912; 24 buildings documented on 3 streets.
 
-47 further districts named on the pages here hold fewer than 5 documented buildings, and have no page yet.
+48 further districts named on the pages here hold fewer than 5 documented buildings, and have no page yet.
