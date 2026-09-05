@@ -232,6 +232,20 @@ rather than just accumulate.
   neighbouring project's later report, which is how three of this module's
   demolitions were confirmed.
 
+- **A catalogue filter is a claim about the source, and nobody checks it after
+  the first run.** The 789 environmental review documents were split into "titled
+  by street address" and "titled by project or area" on one rule — does the title
+  begin with a digit — and four batches then treated the 172 as the whole of the
+  addressed material. They were about half of it. **162** documents describe
+  exactly one site in exactly the same way and are titled after the developer's
+  project (*Russ Tower*, *One Sansome*, *Neiman-Marcus department store*), and
+  **50** more print the address in the middle of the title (*Case No. 2003.0273E :
+  46 Geary Street*). The filter had become a description of the source, and the
+  best unread material in the collection was sitting on the far side of it.
+  **Before a second batch, run the opposite of your filter over the catalogue and
+  read fifty of the titles it returns.** It costs one regular expression; here it
+  found 212 documents of the kind already being mined.
+
 - **A batch is a unit of reading, not a unit of the source's own filing.** The
   DigitalSF archive ends in a long tail: 36 catalogued collections holding
   between one and nineteen addressed records each. Read as the archive files
