@@ -146,14 +146,14 @@ and roughly double what the title-only profile reports:
 | 1,435 | **San Francisco Subjects Photograph Collection (SFP 162) — done: 1,186 findings, 545 published.** One session, not the three the decade split assumed |
 | 1,128 | **Office of Assessor-Recorder Photographs (SFP 23) — done: 1,122 findings, 919 published** |
 | 251 | **Redevelopment Agency Records (SFH 371) — done: 421 findings, 116 published** |
-| 186 | Tenderloin Times Photograph Archives (SFP 130) — **needs a decision first, see below** |
-| 151 | Judi Iranyi Photographs of the Tenderloin (SFP 179) — the same question |
+| 186 | **Tenderloin Times Photograph Archives (SFP 130) — not a batch. Skipped, and it stays skipped (#217).** Its addressed half is a newspaper's reporting on named living tenants at their own street numbers; see People below |
+| 151 | **Judi Iranyi Photographs of the Tenderloin (SFP 179) — a batch after all (#217).** The count is wrong: **100 of the 151 are the phrase "4 Corner Friday"** read as street number 4. The real 52 are storefronts, and their people are unnamed. Ordered here on the uncorrected count; the row moves when the guard lands |
 | 103 | **Willard E. Worden Glass Plate Negatives (SFP 22) — done: 77 findings, 60 published on 59 pages** |
 | 67 | **Robert Durden Color Slide Collection (SFP 42) — done: 58 findings, 56 resolved** |
 | 60 | **Lee Sims Photographs of Tenants and Owners in Opposition to Redevelopment (SFP 125) — done: 36 findings, 11 resolved** |
 | 51 | **James E. Gordon Color Slide Collection of San Francisco Murals (SFP 90) — done: 14 findings, 11 resolved** |
 | 43 | **James A. Martin Color Slides of San Francisco (SFP 169) — done: 39 findings, 21 resolved** |
-| 30 | San Francisco Portrait Photograph Collection (SFP 136) — a *portrait* collection; expect the SFP 130 question |
+| 30 | San Francisco Portrait Photograph Collection (SFP 136) — **still unread, and the reason is an assumption nobody has checked**: that a *portrait* collection raises the SFP 130 question. SFP 179 was written off the same way and was wrong. Measure its 30 addressed captions before deciding |
 | 28 | **San Francisco Police Department Records (SFH 61) — done in the `tail` batch: 14 findings, 4 published.** Its addressed half is the 1906 ruins and the Bureau of Special Services' 1960s surveillance of bars |
 | 28 | **Marilyn Blaisdell Photograph Collection (SFP 84) — done: 13 findings, 1 published.** A collector's miscellany, 1880s–1914, so eleven of twelve misses are the pre-1910 renumbering rule |
 | 22 | **Michael Brailove Photographic Negatives (SFP 103) — done: 7 findings, 3 resolved, 0 published.** The densest thing left, and every address is a Western Addition building the A-2 clearances took |
@@ -173,16 +173,42 @@ records it has.** This table was ordered by addressed-record count and told the
 next run to take SFP 130. Its 184 addressed captions are a neighbourhood
 newspaper's photographs of the people of the Tenderloin: **177 of the 184 carry
 a personal-name shape and 82 name a person in a role** — "250 Taylor Street
-tenant Mike Buscauage pointing out damage to shower the landlord refuses to
+tenant [name withheld] pointing out damage to shower the landlord refuses to
 repair", "Lao family moving out of their apartment at 355 Eddy Street due to
-rent increases", "Tenderloin resident Nguyen Quoc Doanh standing outside
-building at 237 Leavenworth Street". The name filter keeps every one of those
+rent increases", "Tenderloin resident [name withheld] standing outside building
+at 237 Leavenworth Street". (Withheld here, not in the source. This paragraph
+quoted both names in full until #217; a dossier is as committed as a findings
+file.) The name filter keeps every one of those
 off a page, but `raw.text` carries the caption verbatim into a committed
-findings file, and these are living people in rent strikes and evictions. SFP
-179 is the same collection shape. **Neither is a batch until someone decides
-what a findings file may hold about a named tenant** — see #217. SFP 22, 42,
+findings file, and these are living people in rent strikes and evictions. **SFP
+130 is not a batch and will not become one** (#217): redaction leaves the
+sentence minus the name, which is still a household's eviction at a street
+number, so the collection is skipped rather than mechanised around. What that
+gives up is real and worth naming — the Palace Theatre at 53 Turk, the Lyric
+Hotel at 140 Jones, Powell West at 111 Mason, Newman's Gym at 124 Leavenworth,
+the Hibernia Bank as the Tenderloin police station at 1 Jones, the former KGO
+building at 277 Golden Gate, and three fires (57 Taylor, 376 Ellis, 820
+O'Farrell) — and none of it is the only record of its building. SFP 22, 42,
 90, 125 and 169 were the buildings collections to take meanwhile, and all five
 are now done; the next such run is SFP 84, SFP 103, SFH 3 and SFP 26 together.
+
+**SFP 179 was written off with it and should not have been.** The dossier
+called it "the same collection shape" on subject matter alone, and the addressed
+half says otherwise. **100 of its 151 addressed records are the phrase "4 Corner
+Friday"**, whose `4` the extractor reads as a street number — the same class of
+false address as the plate numbers and clock times already guarded, and a guard
+the SFP 179 run has to add first. The **52** that remain are storefronts:
+Daldas Grocery at 200 Eddy, Radman's Produce Market at 201 Turk, El Castillito
+Taqueria at 250 Golden Gate, Kim Huang Cafe at 325 Leavenworth, Em's Barber
+Shop at 342 Jones, Angkor Laundromat at 353 Eddy, Hamlin Hotel at 385 Eddy,
+Amigo's Market at 500 Ellis, Hotel Essex at 684 Ellis, Kelly Cullen Community
+at 220 Golden Gate. Where a person is in frame the caption does not name them —
+"Tenderloin barber standing in doorway of Eddy Barber Shop at 330 Eddy Street",
+"Barista behind the counter of Cafecito at 406 Ellis Street", "Five restaurant
+staff members pose for photo outside Yemen Kitchen at 219 Jones Street" — and
+the limit bars naming, not photographing. One of the 52 carries a name, and it
+is a forename. **It reads under the three policies already in the extractor**,
+with no `raw.text` policy and nothing new but the guard.
 
 **The four institutional collections are done, and the next run has no
 buildings batch left.** SFP 26, SFP 84, SFP 103 and SFH 3 were read together on
@@ -193,11 +219,12 @@ catalogue records.
 table, plus the thirty-odd collections too small to have a row in it, was read
 on 2026-09-04 as the single `tail` batch — 36 collections, 7,261 records, 45
 published pages. The only rows here still untouched are SFP 130, SFP 179 and
-SFP 136, all three blocked on #217. **The densest thing the tail turned up was
-not in this table**, because the table is ordered by addressed-record count and
-it has only ten records: SFH 611, the Junior League of San Francisco's *Here
-Today* building research files, where ten of ten records are one building at
-one street number, photographed in 1964-65.
+SFP 136. #217 has since closed SFP 130 unread, cleared SFP 179 as the next
+batch, and left SFP 136 undecided and unmeasured. **The densest thing the tail
+turned up was not in this table**, because the table is ordered by
+addressed-record count and it has only ten records: SFH 611, the Junior
+League of San Francisco's *Here Today* building research files, where ten of
+ten records are one building at one street number, photographed in 1964-65.
 
 **SFP 125 was on that list and half belongs on the other one.** Its *addressed*
 half is unambiguously buildings — 60 records naming South of Market residential
@@ -556,6 +583,20 @@ not when a page is. Two mechanisms, both now in the extractor:
   by reading `--report`'s notes before writing the file, not after.
   The record page is one click from `citation.url` if an auditor wants the
   original.
+- **Both mechanisms have a limit, and SFP 130 is where it is** (#217, decided
+  2026-09-05). They work because the name is *incidental* to what the caption
+  says: take "Lee Washington" out of "Lee Washington's room in Daton Hotel, 175
+  3rd Street" and a hotel, a number and a date survive. Take the name out of
+  "250 Taylor Street tenant [name withheld] pointing out damage to shower the
+  landlord refuses to repair" and what survives is still one household's
+  dispute at one street number. **Where the caption is the person, no
+  `raw.text` policy makes the collection readable, and the answer is to skip
+  it** rather than build the policy. That was the decision on SFP 130; there is
+  deliberately no `COLLECTION_RAW_POLICY` in the extractor.
+- **Decide it per collection, on the addressed half, measured.** The same issue
+  had SFP 179 down as SFP 130's twin, and reading it showed two thirds of its
+  addressed count was a false address and the rest were shopfronts with
+  unnamed people in them. Subject matter is not the test; the captions are.
 - **A courtesy title is the one name shape narrow enough to redact blind.**
   `redact` can only reach a name the catalogue filed in a `600`/`700` heading,
   and captions name people the cataloguer indexed nowhere (#248).
@@ -630,17 +671,22 @@ records carry one; exactly one of those also carries a street number.
   together, then SFP 26, SFP 84, SFP 103 and SFH 3 together — and the
   remaining **36 were read as one batch, `tail`**: 7,261 records, 188 candidate
   addresses, 137 findings, 45 published on 45 pages. What is left in the
-  archive is SFP 130 (184 addressed), SFP 179 (151) and SFP 136 (30), all three
-  blocked on #217, and 128 collections that carry no addressed record at all.
+  archive is SFP 130 (184 addressed), **skipped for good under #217**; SFP 179
+  (151 reported, 52 real), **cleared to read by the same issue**; SFP 136 (30),
+  still undecided and needing its captions measured rather than assumed; and
+  128 collections that carry no addressed record at all.
   The table under "Batch unit" says what each yielded. Re-run the
   harvester to pick up records added since; it resumes from the stored token
   rather than re-downloading.
 
-  **What is left needs a person.** SFP 130 (184 addressed) and SFP 179 (151)
-  are the Tenderloin tenant collections blocked on #217, and SFP 136 (30) is a
-  *portrait* collection that raises the same question. Nothing else in the
-  archive carries an addressed record: a corpus-wide address pass over all
-  59,902 records finds no candidate in any other unread collection.
+  **What is left, after #217.** SFP 130 (184 addressed) is **closed unread**:
+  its captions are named living tenants and no redaction survives that. SFP 179
+  is **the next batch** — 151 reported, 52 real once "4 Corner Friday" stops
+  parsing as an address, and those 52 are Tenderloin storefronts. SFP 136 (30)
+  is a *portrait* collection assumed to raise the SFP 130 question and never
+  measured; measure it. Nothing else in the archive carries an addressed
+  record: a corpus-wide address pass over all 59,902 records finds no candidate
+  in any other unread collection.
 
   **The tail was one batch, and that is the shape to reuse.** 36 collections
   holding one to nineteen addressed records each are not 36 batches; reading
@@ -854,8 +900,9 @@ records carry one; exactly one of those also carries a street number.
     photograph on a skyscraper's page.
   - **`raw.text` carries people into the repository even when the page never
     sees them.** SFP 125 is a buildings collection *and* a privacy problem;
-    both are handled at extraction, and #217 is still the open question for SFP
-    130 and SFP 179.
+    both are handled at extraction. #217 settled the harder case the same way
+    it was asked: SFP 130 is skipped because redaction leaves the household,
+    and SFP 179 turned out not to be that case at all.
   - **The extractor's street-type map had drifted from the site's.** It was
     missing `PARK`, which `scripts/seed_pages.py` has carried all along, so
     "2 Clinton Park" came back as a street the city does not have. EAS files it
