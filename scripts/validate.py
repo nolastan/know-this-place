@@ -26,9 +26,9 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 # The renderer *is* the contract for an address page's index.html, so the
 # checker has to be able to run it. Both scripts are stdlib-only siblings and
-# seed_pages does no network on import. `scripts/__pycache__/` is tracked in
-# git for now, so importing it would otherwise leave a modified file behind on
-# every run.
+# seed_pages does no network on import. Importing it would otherwise write
+# `scripts/__pycache__/` into the working tree; the bytecode is gitignored, but
+# a check that reads the repo should not leave files in it either way.
 sys.dont_write_bytecode = True
 import seed_pages  # noqa: E402
 from seed_pages import ADDRESS_DIR  # noqa: E402  — an address dir: 123, 123a
