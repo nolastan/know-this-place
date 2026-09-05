@@ -204,14 +204,14 @@ are [REFERENCE.md → Writing pages](REFERENCE.md#writing-pages--the-examples).
   it's identity) or a `.speclist` row (if it's a detail). A `.section-head` +
   prose is earned only by several related facts or an actual narrative.
 - **Never state a fact twice.** A structured fact renders in exactly one place.
-  If the tags say "Built 1896," there is no year-built tile; if the sidebar
-  chart details assessed value, it isn't also a tile. Prose never re-narrates a
+  If the timeline opens "1896 · Built," there is no year-built tag or tile; if
+  the sidebar chart details assessed value, it isn't also a tile. Prose never re-narrates a
   structured fact — and that catches adjectives as readily as sentences.
 - **The Sources footer is the attribution; prose never narrates sourcing.** No
   "according to…", no "the source states…". The only exception is a genuine
   contradiction between sources: describe it plainly, don't adjudicate it.
-- **No permit-history introduction.** The timeline *is* the record; never
-  precede it with a paragraph counting the permits or characterizing them.
+- **Nothing introduces the timeline** — no heading over it, and no paragraph
+  counting the permits or characterizing them. The rail *is* the record.
 - **No editorial voice, and no interpretation.** State facts; don't
   characterize them or explain what a figure means. Undocumented gaps go
   plainly in `.unknowns`.

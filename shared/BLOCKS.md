@@ -93,9 +93,7 @@ leans on the stat band and timeline. The default spine:
    carry. **Dropped entirely** when the blocks already say everything.
 4. `.stats` — the numbers every building has, as tiles (not sentences).
 5. `.cols` — main narrative/timeline on the left, `.aside` panels on the right.
-   **One `.vtl` per page**, holding every dated entry. Where it keeps a
-   `.section-head`, the `.vtl` follows it directly: **no `.prose` between
-   them.**
+   **One `.vtl` per page**, holding every dated entry, and no heading over it.
 6. Prose sections (`.section-head` + `.prose`) only where there's a real story.
 7. `.nearby` — the lateral links, written by the renderer, never by hand.
 8. `.unknowns` — what's missing, feeding the feedback link.
@@ -117,8 +115,8 @@ band, and its media slot holds the `.media-lift` card that overlaps it — see
     <h1>744 Castro Street</h1>
     <p class="sub">Eureka Valley · San Francisco, CA 94114</p>
     <ul class="tags">
-      <li class="tag"><span class="ic ic-calendar"></span>Built 1896</li>
       <li class="tag"><span class="ic ic-home"></span>Two-flat Victorian</li>
+      <li class="tag"><span class="ic ic-layers"></span>2 stories</li>
     </ul>
   </div>
   <!-- media slot: see "Media" -->
@@ -129,8 +127,9 @@ band, and its media slot holds the `.media-lift` card that overlaps it — see
 The dashboard KPI row: one tile per measurement. Big value in sans, small
 label, an icon. Compact big numbers (`$2.67M`, `2,266`); put units in `<small>`.
 **Never duplicate a fact that's already a tag or lives in another block.**
-Categorical identity (year built, building type, stories, zoning, district)
-belongs in the `.tags`; the stat band is for *measurements* not shown there
+Categorical identity (building type, stories, zoning, district) belongs in the
+`.tags`, and the year built opens the timeline; the stat band is for
+*measurements* not shown there
 (building area, lot area, room count). If a number is detailed elsewhere (e.g.
 assessed value, which the sidebar chart owns), don't also make it a tile.
 ```html
@@ -144,7 +143,7 @@ assessed value, which the sidebar chart owns), don't also make it a tile.
 ### Section header — `.section-head`
 Icon + title + trailing hairline. Opens each major section.
 ```html
-<div class="section-head"><span class="ic ic-clock"></span><h2>Permit history</h2></div>
+<div class="section-head"><span class="ic ic-plan"></span><h2>Public art</h2></div>
 ```
 
 ### Two-column region — `.cols` + `.aside`
@@ -174,11 +173,10 @@ order, because to a reader they are one sequence: things that happened here. Two
 rails made the reader restart the clock halfway down the page. `validate.py`
 fails a page carrying more than one `.vtl`.
 
-**A heading only when the rail is nothing but permits.** Then it keeps
-`<div class="section-head"><span class="ic ic-clock"></span><h2>Permit
-history</h2></div>`, which describes all of it. A rail holding anything else has
-no accurate heading to give it and needs none — its layout says what it is — so
-it drops the `.section-head` and carries the name for screen readers instead:
+**No heading, ever.** The rail carried a "Permit history" one while permits
+were the only thing it could hold; a timeline is self-evident on sight, and
+nothing that describes the whole of one is worth a line of the page. It carries
+the name for screen readers instead:
 ```html
 <ol class="vtl" aria-label="Timeline">
   <li class="vtl-item">
@@ -220,9 +218,23 @@ Dates are whatever the record knew — `Aug 2005`,
 `April 18, 1906`, `1912`, `circa 1885`, `1930s`, `pre-1906`; a vaguer date sorts
 before a precise one in the same year, and a `pre-`/`before` hedge before that.
 
-Where the rail does keep a `.section-head`, it follows it immediately —
-**never introduce it with a paragraph.** Counts, totals, date spans and statuses are all in the items;
-a lead-in restates them and adds commentary. If some filings are deliberately
+**The rail opens with the building itself.** `parcel.year_built` is the first
+item — bare, with no meta row, because the assessor's roll is already in the
+Sources footer:
+```html
+<li class="vtl-item">
+  <div class="vtl-date">1896</div>
+  <p class="vtl-desc">Built.</p>
+</li>
+```
+It reads `Current structure built.` only where the record shows the parcel was
+cleared first: a whole building demolished on a permit filed before that year
+and not cancelled, withdrawn or expired. Anything *else* dated earlier — a
+design attributed in 1895 under a build year of 1900 — is this building, and
+saying otherwise would be a claim no source made.
+
+**Never introduce the rail with a paragraph.** Counts, totals, date spans and
+statuses are all in the items; a lead-in restates them and adds commentary. If some filings are deliberately
 excluded (street-space permits at a nominal $1, or the duplicates DBI files
 under each street number of a shared parcel), disclose that *after* the rail,
 in one line — `<p class="prose"><small>Two $1 street-space permits are
