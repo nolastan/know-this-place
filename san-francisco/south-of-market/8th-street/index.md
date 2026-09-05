@@ -10,6 +10,7 @@ The parcels on 8th Street documented here so far, from the city's address, asses
 - [135–139](135/) — A 1909 7-unit apartment building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 1989.
 - [143](143/) — A 1939 office building in the Western SOMA Light Industrial and Residential Historic District, with deck work permitted in 2012.
 - [156–164](156/) — A 1911 13-unit apartment building in the SoMa LGBTQ Historic District, with a kitchen remodel permitted in 2022.
+- [165](165/) — A 2002 apartment building in the Western SOMA Light Industrial and Residential Historic District, with a bathroom remodel permitted in 1998.
 - [201](201/) — A 1900 industrial building in the SoMa LGBTQ Historic District, with a kitchen remodel permitted in 1986.
 - [230–236](230/) — A 1906 office building in the Western SOMA Light Industrial and Residential Historic District, with window replacement permitted in 2019.
 - [260](260/) — A 1921 industrial building in the Western SOMA Light Industrial and Residential Historic District, with reroofing permitted in 2019.

@@ -9,6 +9,7 @@ The parcels on Post Street documented here so far, from the city's address, asse
 - [126–130](126/) — A 1909 store building in the Kearny-Market-Mason-Sutter Conservation District, with plumbing work permitted in 2021.
 - [135](135/) — A 1908 store building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 1994.
 - [150](150/) — A 1908 office building in the Kearny-Market-Mason-Sutter Conservation District, with stair work permitted in 2015.
+- [185](185/) — A 1907 office building with ground-floor retail in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 2005.
 - [200–210](200/) — A 1905 office building in the Kearny-Market-Mason-Sutter Conservation District, with window replacement permitted in 2015.
 - [201–209](201/) — A 1909 store building in the Kearny-Market-Mason-Sutter Conservation District, with stair work permitted in 2016.
 - [220–222](220/) — A 1907 store building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 1996.

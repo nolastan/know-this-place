@@ -1621,6 +1621,45 @@ The mechanics:
   were artefacts, which is worse than printing nothing: the scan exists so that
   a real OCR digit stands out, and noise is how a real one gets missed.
 
+- **Seeding a page restages every neighbour's "nearby" list, and nothing
+  re-renders them.** `seed_pages.py seed-list` writes the new pages and rebuilds
+  the street hubs, and stops there — but the renderer puts a *Same block* list
+  into every page near the new one, and those pages' `index.html` files are now
+  stale. Twelve new pages in one run left **67 pages the run never touched**
+  failing `validate.py`, with a diff of exactly one line each. It reads like a
+  disaster and is a one-command fix, but only if you know it is coming: the
+  instinct on seeing sixty-seven unexplained failures is to look for what the run
+  broke. *After any bulk seed, run `validate.py`, feed the paths it names back to
+  `seed_pages.py render`, and read one diff to confirm the change is only the
+  neighbour list.*
+
+- **From about 2000 a planning document stops doing the research and starts
+  appending it.** The environmental reviews of the 1970s and 1980s describe
+  buildings in their own chapters; the ones after about 2000 bind in the
+  consultant's report whole — a Page & Turnbull historic resource evaluation, a
+  McGrew Architecture report, a Carey & Co. Section 106 review — and summarise it
+  in two paragraphs at the front. **The appendix is the document.** Carey & Co.'s
+  survey in the back of the 275 10th Street EIR dates twenty-nine properties from
+  the permits on microfilm, one construction year, architect or builder and
+  occupancy history each; the EIR's own chapters repeat about a fifth of it, and
+  contradict it twice — naming a different owner and a different architect, and
+  swapping two of three buildings' dates in the initial study. *Read to the end of
+  the appendices, and where the front and the back disagree, the back is the one
+  that read the permit.*
+
+- **A street number the city has retired is usually still on the map under the
+  parcel that swallowed it.** Half of one batch's unresolved findings were
+  numbers EAS no longer holds, and for a project's own site buildings almost all
+  of them came back with one query: the report names the lots, the lots were
+  merged for the project, and the merged parcel kept one of the old numbers. 246
+  and 250 Front Street are 248 Front Street; 64 and 72 Dore Street are 275 10th
+  Street; 70 Oak Street is 50 Oak Street; 562–572 and 554–560 Mission Street are
+  both 560 Mission Street. The resolver cannot see this, because it looks the
+  number up and finds nothing. *Before accepting "the address does not exist
+  today" on a finding about a project's own site, look up the other numbers the
+  same record names and see whether they land on one parcel.* The vicinity
+  buildings a report merely mentions are the ones that genuinely die.
+
 - **A second architect on a building the page already credits is an addition,
   not a duplicate — and neither overlap scan will tell you so.** The name-and-date
   scan compares the *same* name, so a different collaborator never matches; the

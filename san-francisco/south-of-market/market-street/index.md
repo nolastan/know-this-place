@@ -57,6 +57,7 @@ The parcels on Market Street documented here so far, from the city's address, as
 - [1141](1141/) — A 1990 office building, with one permit record from 1983.
 - [1145](1145/) — A 1990 office building, with reroofing permitted in 2005.
 - [1170](1170/) — A 1983 office building in the Civic Center Historic District, with plumbing work permitted in 2010.
+- [1177](1177/) — A 2021 502-unit apartment building.
 - [1182–1192](1182/) — A 1925 office building in the Civic Center Historic District, with electrical work permitted in 2022.
 - [1200](1200/) — A 1908 store building in the Civic Center Historic District, with a seismic retrofit permitted in 1984.
 - [1210–1218](1210/) — A 1907 store building in the Civic Center Historic District, with facade work permitted in 1995.

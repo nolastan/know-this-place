@@ -35,7 +35,7 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Eureka Valley Commercial & Castro Village LGBTQ+ Historic District](eureka-valley-commercial-and-castro-village-lgbtq/) — Eligible for the California Register, significant 1879–1932; 1963–1980; 71 buildings documented on 4 streets.
 - [Fair Oaks Street Historic District](fair-oaks-street/) — Eligible for the California Register, significant 1870s–1910s; 49 buildings documented on 4 streets.
 - [Forest Hill Historic District](forest-hill/) — Eligible for the California Register, significant 1912–1939; 20 buildings documented on 11 streets.
-- [Front-California Conservation District](front-california/) — An Article 11 conservation district; 10 buildings documented on 4 streets.
+- [Front-California Conservation District](front-california/) — An Article 11 conservation district; 12 buildings documented on 4 streets.
 - [Gardner Dailey/Telegraph Hill Historic District](gardner-dailey-telegraph-hill/) — Eligible for the California Register, significant 1936–1959; 5 buildings documented on 3 streets.
 - [Glen Park Center Historic District](glen-park-center/) — Eligible for the California Register, significant 1897–1929; 7 buildings documented on 2 streets.
 - [Gottlieb Knopf Block Historic District](gottlieb-knopf-block/) — Eligible for the California Register, significant 1889–1892, 1920–1940; 35 buildings documented on 4 streets.
@@ -57,7 +57,7 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Jordan Park Historic District](jordan-park/) — Eligible for the California Register, significant 1900–1920; 19 buildings documented on 5 streets.
 - [Juri Street Historic District](juri-street/) — Eligible for the California Register, significant 1890–1895; 8 buildings documented on 2 streets.
 - [Kearny-Belden Conservation District](kearny-belden/) — An Article 11 conservation district; 7 buildings documented on 3 streets.
-- [Kearny-Market-Mason-Sutter Conservation District](kearny-market-mason-sutter/) — An Article 11 conservation district; 198 buildings documented on 24 streets.
+- [Kearny-Market-Mason-Sutter Conservation District](kearny-market-mason-sutter/) — An Article 11 conservation district; 199 buildings documented on 24 streets.
 - [Lexington and San Carlos Streets Reconstruction Historic District](lexington-and-san-carlos-streets-reconstruction/) — Eligible for the California Register, significant 1906–1915; 44 buildings documented on 4 streets.
 - [Liberty Hill Historic District](liberty-hill/) — An Article 10 city landmark district, significant 1860s–1906; 252 buildings documented on 9 streets.
 - [Liberty Street Historic District](liberty-street/) — Listed on the California and National Registers, significant 1867–1911; 40 buildings documented on 2 streets.
@@ -112,7 +112,7 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Von Schroeder-Welsh Block Historic District](von-schroeder-welsh-block/) — Eligible for the California Register, significant 1889–1895; 25 buildings documented on 2 streets.
 - [Washington Square Historic District](washington-square/) — Eligible for the California Register, significant 1906–1939; 16 buildings documented on 7 streets.
 - [West Portal Park Historic District](west-portal-park/) — Eligible for the California Register, significant 1916–1928 / 1917–1929; 5 buildings documented on one street.
-- [Western SOMA Light Industrial and Residential Historic District](western-soma-light-industrial-and-residential/) — Eligible for the California and National Registers, significant 1906–1936; 224 buildings documented on 35 streets.
+- [Western SOMA Light Industrial and Residential Historic District](western-soma-light-industrial-and-residential/) — Eligible for the California and National Registers, significant 1906–1936; 228 buildings documented on 35 streets.
 - [Woodward St. Romeo Flats Reconstruction Historic District](woodward-st-romeo-flats-reconstruction/) — Eligible for the California Register, significant 1906–1912; 24 buildings documented on 3 streets.
 
 47 further districts named on the pages here hold fewer than 5 documented buildings, and have no page yet.
