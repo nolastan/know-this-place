@@ -5058,8 +5058,9 @@
     "note": "Parcel taken from the survey's own block and lot, not from EAS's current address point."
    },
    "publish": {
-    "status": "declined",
-    "note": "the page is one scripts/render-backlog.txt grandfathers — the renderer crashes on it, because one of its sources is a print journal article with no URL — so a data.json edit there would never reach the HTML; the facts have to be put on that page by hand"
+    "status": "published",
+    "note": "building.name — the assessor's 1922 year_built already renders the timeline's \"Built.\" entry",
+    "pr": "https://github.com/nolastan/know-this-place/pull/TBD"
    }
   },
   {
@@ -5099,8 +5100,9 @@
     "note": "Parcel taken from the survey's own block and lot, not from EAS's current address point."
    },
    "publish": {
-    "status": "declined",
-    "note": "the page is one scripts/render-backlog.txt grandfathers — the renderer crashes on it, because one of its sources is a print journal article with no URL — so a data.json edit there would never reach the HTML; the facts have to be put on that page by hand"
+    "status": "published",
+    "note": "historic_survey panel",
+    "pr": "https://github.com/nolastan/know-this-place/pull/TBD"
    }
   },
   {
@@ -9197,10 +9199,18 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-24",
-    "method": "EAS exact match on 680 MISSION ST → parcel 3707063; sf-parcels has blklot 3707063 active, 71–71 03RD; the 2025 roll records it as multi-family residential, built 2002. EAS puts 678, 680, 686, 688 MISSION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 678. EAS files the address under parcel 3707023, which sf-parcels reports retired; the active parcel its coordinates fall in is 3707063. The record's assessor block 3707 matches the parcel's block.",
-    "note": "Resolves to parcel 3707063, the 2002 tower whose roll address is 680 Mission Street. Its lowest EAS number is 678 Mission Street, but this site's page at 678 Mission Street is the neighbouring parcel 3707021 — which the assessor now addresses 666 Mission Street — so filing here would put the fact on the wrong building. Parcel 3707063 has no page of its own; where it should sit is a presentation call."
+    "status": "resolved",
+    "checked_on": "2026-09-05",
+    "method": "EAS exact match on 680 MISSION ST → parcel 3707063; sf-parcels has blklot 3707063 active, 71–71 03RD; the 2025 roll records it as multi-family residential, built 2002. EAS puts 678, 680, 686, 688 MISSION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 678. EAS files the address under parcel 3707023, which sf-parcels reports retired; the active parcel its coordinates fall in is 3707063. The record's assessor block 3707 matches the parcel's block. Resolved by hand for issue #163: EAS gives 678 MISSION ST no parcel at all, so it never enters the lowest-number rule for 3707063; the parcel's own EAS numbers are 680, 686 and 688 (still filed under its predecessor 3707023, retired 2002-04-15), and the 2025 roll addresses it 680 MISSION ST. The page is at the lowest of those, 680.",
+    "note": "Parcel 3707063 had no page; issue #163 settled where it should sit and the page was seeded at 680 Mission Street.",
+    "apn": "3707063",
+    "path": "/san-francisco/financial-district/mission-street/680/",
+    "eas_address": "680 MISSION ST"
+   },
+   "publish": {
+    "status": "published",
+    "note": "building.name and building.completed — the assessor's year_built already renders the timeline's \"Built.\" entry, so the survey's new fact is the name",
+    "pr": "https://github.com/nolastan/know-this-place/pull/TBD"
    }
   },
   {
@@ -11690,10 +11700,18 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-24",
-    "method": "EAS exact match on 680 MISSION ST → parcel 3707063; sf-parcels has blklot 3707063 active, 71–71 03RD; the 2025 roll records it as multi-family residential, built 2002. EAS puts 678, 680, 686, 688 MISSION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 678. EAS files the address under parcel 3707023, which sf-parcels reports retired; the active parcel its coordinates fall in is 3707063.",
-    "note": "Resolves to parcel 3707063, the 2002 tower whose roll address is 680 Mission Street. Its lowest EAS number is 678 Mission Street, but this site's page at 678 Mission Street is the neighbouring parcel 3707021 — which the assessor now addresses 666 Mission Street — so filing here would put the fact on the wrong building. Parcel 3707063 has no page of its own; where it should sit is a presentation call."
+    "status": "resolved",
+    "checked_on": "2026-09-05",
+    "method": "EAS exact match on 680 MISSION ST → parcel 3707063; sf-parcels has blklot 3707063 active, 71–71 03RD; the 2025 roll records it as multi-family residential, built 2002. EAS puts 678, 680, 686, 688 MISSION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 678. EAS files the address under parcel 3707023, which sf-parcels reports retired; the active parcel its coordinates fall in is 3707063. Resolved by hand for issue #163: EAS gives 678 MISSION ST no parcel at all, so it never enters the lowest-number rule for 3707063; the parcel's own EAS numbers are 680, 686 and 688 (still filed under its predecessor 3707023, retired 2002-04-15), and the 2025 roll addresses it 680 MISSION ST. The page is at the lowest of those, 680.",
+    "note": "Parcel 3707063 had no page; issue #163 settled where it should sit and the page was seeded at 680 Mission Street.",
+    "apn": "3707063",
+    "path": "/san-francisco/financial-district/mission-street/680/",
+    "eas_address": "680 MISSION ST"
+   },
+   "publish": {
+    "status": "published",
+    "note": "timeline entry",
+    "pr": "https://github.com/nolastan/know-this-place/pull/TBD"
    }
   },
   {
