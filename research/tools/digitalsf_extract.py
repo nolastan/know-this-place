@@ -349,12 +349,36 @@ NOT_A_STREET_NAME = {
     # "4 Mile House Restaurant at 3rd and Yosemite" — the restaurant is named
     # for its distance from the city, and the distance parses as a number.
     "MILE HOUSE RESTAURANT", "MILE HOUSE",
+    # The sharper version of that: an organisation named after a street number
+    # it is not at. 826 Valencia's Tenderloin writing centre is at 180 Golden
+    # Gate Avenue, and "826 Valencia Writing Center at 180 Golden Gate Avenue"
+    # resolves to the wrong street entirely unless the name is refused —
+    # the extractor takes the *first* address it can parse. 13 records in SFP
+    # 179; corpus-wide the only other typeless VALENCIA name is "VALENCIA"
+    # itself, which this does not touch.
+    "VALENCIA WRITING CENTER",
     # Aircraft and machinery in a photograph carry a model number and a name,
     # and the pair reads exactly like an address: "Beechcraft 35 Bonanza",
     # "John Deere 93 Series A crawler tractor". The hyphenated designations
     # are caught by their hyphen; these are not hyphenated.
     "BONANZA", "SERIES A", "SERIES", "ALBATROSS", "HERCULES", "SEAGUARD",
 }
+
+# The same thing as NOT_A_STREET_NAME, matched on the front of the name because
+# the tail is whatever the caption ran into next.
+#
+# "4 Corner Friday" is a weekly street event at Golden Gate and Leavenworth,
+# and its "4" reads as a house number on every record that names it. It is
+# **two thirds of SFP 179's apparent address count**: 100 of its 151 addressed
+# records, in three spellings the exact-match set cannot hold — "CORNER
+# FRIDAY" (94), "CORNER FRIDAYS" (4), and "CORNER FRIDAY LEAVENWORTH" (2),
+# that last one a caption that dropped the "at" before its cross streets.
+#
+# Measured before it was wired, both ways round. Over all 57,467 harvested
+# records, the only typeless street names beginning "CORNER" are those three,
+# all of them in SFP 179; over every findings file in the repository, no
+# committed finding is touched.
+NOT_A_STREET_PREFIX = ("CORNER FRIDAY",)
 
 
 def address_from_title(title: str, year_guard: bool = False,
@@ -428,7 +452,8 @@ def address_from_title(title: str, year_guard: bool = False,
     name, stype = normalize_street(" ".join(tokens))
     if not name:
         return None
-    if not stype and name.upper() in NOT_A_STREET_NAME:
+    if not stype and (name.upper() in NOT_A_STREET_NAME
+                      or name.upper().startswith(NOT_A_STREET_PREFIX)):
         return None
     # "1958 Bell 47G-2 N977B Helicopter" is a year and a make, not an address.
     # The standing guard only catches a number equal to *this* record's year,
@@ -903,6 +928,12 @@ COLLECTION_VOICE = {
     # demolished within a few years, so the date is the fact: it is often the
     # last picture of a building at that number.
     "SFP 125": ("Lee Sims photographed the property {at} {display} {when}."),
+    # A social worker's photographs of her own neighbourhood, 2014-2016 — the
+    # newest material in the archive by two decades. The addressed half is
+    # shopfronts, so a record is a dated statement that a named business was
+    # trading at that number, which is exactly what SFP 42's sentence says.
+    "SFP 179": ("Judi Iranyi photographed the property {at} {display} "
+                "{when}."),
     # An amateur's colour slides of the city in 1965-67, given to the library
     # with the donor's own notes. Same shape as SFP 42 — see the donor-note
     # caution in research/sources/digitalsf.md before trusting those notes.
@@ -980,6 +1011,10 @@ COLLECTION_UNNUMBERED_POLICY = {
     "SFP 42": "skip-unnumbered",
     "SFP 90": "skip-unnumbered",
     "SFP 169": "skip-unnumbered",
+    # SFP 179's unnumbered majority is the neighbourhood's street life — a
+    # weekly event at a crossing, people in a park, a mural on a corner — and
+    # it is also where its people are. 376 of its 528 records.
+    "SFP 179": "skip-unnumbered",
     # SFP 26 and SFH 3 are institutional collections of the same shape as the
     # subject file: 968 of SFP 26's 984 records are sewer trenches, pump
     # houses and street grading located by intersection, and 1,582 of SFH 3's
@@ -1017,6 +1052,10 @@ COLLECTION_UNNUMBERED_POLICY = {
 COLLECTION_NOTE_POLICY = {
     "SFP 125": "drop",
     "SFP 169": "drop",
+    # SFP 179 takes the conservative default the tail settled on. It is a
+    # photographer's own collection of a neighbourhood she worked in, which is
+    # the register a `500$a` note is a memoir in.
+    "SFP 179": "drop",
 }
 
 # Collections whose `500$a` note carries a second address worth reading, and
@@ -1086,6 +1125,13 @@ COLLECTION_NAME_POLICY = {
     # southeast corner". Nothing in an addressed title is a firm name, and the
     # unaddressed ones photograph men at work in a trench.
     "SFP 26": "named-buildings-only",
+    # SFP 179's titles are captions — "Barista behind the counter of Cafecito
+    # at 406 Ellis Street" — so the strict policy applies for the usual
+    # reason. It costs more here than anywhere else, because the caption's
+    # subject genuinely *is* the shop about two thirds of the time; the names
+    # it drops are put back by hand at publication, the way the tail batch
+    # did, and the batch is 52 records so that is affordable.
+    "SFP 179": "named-buildings-only",
 }
 
 # The kind of record, where it is not a photograph. Free-form in the schema;

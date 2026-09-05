@@ -1435,3 +1435,51 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   biographies credit G. Albert Lansburgh for the same 1926 building; both are
   right, because he was the associate. Publish alongside and let neither credit
   adjudicate the other.
+
+- **A collection's subject is a claim about the whole of it; its *addressed*
+  half can be a different collection entirely — so measure that half before
+  writing one off.** SFP 179 sat unread for weeks because a dossier called it
+  "the same collection shape" as a neighbouring collection of named tenants,
+  on subject matter alone. Read, its 51 addressed records are shopfronts —
+  "Daldas Grocery at 200 Eddy Street", "Angkor Laundromat at 353 Eddy Street" —
+  and where a person is in the frame the caption does not name them: "Barista
+  behind the counter of Cafecito at 406 Ellis Street". Exactly one caption in
+  528 names anybody at a number. *The privacy limit bars **naming** a person,
+  not photographing one, and "photographs of people" is not a finding until
+  someone has read the records that carry an address.*
+
+- **A recurring event, product or programme name that opens with a number will
+  read as a street address on every record that mentions it, and one of them
+  can be most of a collection.** "4 Corner Friday", a weekly street event at a
+  Tenderloin crossing, was **100 of SFP 179's 151 apparent addresses** — two
+  thirds of the collection's entire reported yield, and enough to make it look
+  three times the size it is. It appeared in three spellings, so an exact-match
+  refusal list could not hold it. *When a collection's address count looks
+  surprisingly high for its size, group the parsed street names before
+  extracting: a name repeated dozens of times is a phrase, not a street.*
+
+- **An organisation named after a street number is rarely at that number, and
+  refusing the name is only half the fix.** "826 Valencia Writing Center at 180
+  Golden Gate Avenue" is one caption naming two numbers, and the extractor
+  takes the first one it can parse. Refusing "VALENCIA WRITING CENTER" stops
+  the wrong address reaching a page — but the parser gives up on a refused name
+  rather than trying the next match, so the *right* address does not appear
+  either, and the record silently leaves the batch. A fall-through was written
+  and **measured before wiring: 29 records change corpus-wide and 27 are
+  regressions**, because cutting the title at the match loses the caption's own
+  leading qualifier and "Rear of 80 Clara Street" becomes "80 Clara Street".
+  *Check what a new refusal does to the records it fires on, not only to the
+  ones it saves — and enter the one address by hand rather than rewriting
+  shared control flow at the end of a run.* Compare "4 Mile House Restaurant".
+
+- **A point-in-polygon placement that skips a parcel is a conflict, not a
+  result.** EAS files no parcel number on some addresses, and the resolver
+  falls back to the parcel the coordinates land in. That is right when the
+  parcel is the immediate neighbour with an incomplete range field — 289 Eddy
+  against a parcel stating 291-299 — and wrong when another parcel holds a
+  number *in between*: 353 Eddy was placed in a parcel whose own range is
+  365-365, with 0338021 (355 Eddy) sitting between the two. *Read the block's
+  number line before accepting a by-point placement, and where the point and
+  the line disagree, leave the finding unresolved with both recorded. The tool
+  prints the count of these; it cannot make the judgement.*
+

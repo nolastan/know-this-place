@@ -1,0 +1,1397 @@
+{
+  "source_id": "digitalsf",
+  "batch": "sfp-179",
+  "read_on": "2026-09-05",
+  "notes": "Judi Iranyi Photographs of the Tenderloin (SFP 179) — 528 records, and the **newest material in the archive by two decades**: every one is dated \"between 2014 to 2016\", so every finding here is `circa` over a three-year range and none of them can ever be sharper.\n\n**This collection was read because #217 decided it was not what the dossier said it was.** It had been written off with SFP 130 as a Tenderloin tenant collection whose captions name living people. Measured, its addressed half is shopfronts — Daldas Grocery at 200 Eddy, Radman's Produce Market at 201 Turk, Angkor Laundromat at 353 Eddy, Hotel Essex at 684 Ellis — and where a person is in the frame the caption does not name them: \"Barista behind the counter of Cafecito at 406 Ellis Street\", \"Tenderloin barber standing in doorway of Eddy Barber Shop\". The limit bars naming a person, not photographing one. Exactly one caption in the collection names anybody at a number, by forename, and it is withheld in `raw.text` by hand — `redact` cannot reach it, because the cataloguer filed no personal subject heading and it wears no honorific.\n\n**Two thirds of its reported address count was one phrase.** \"4 Corner Friday\" is a weekly street event at Golden Gate and Leavenworth, and its \"4\" parses as a house number on all 100 records that name it — in three spellings, so `NOT_A_STREET_PREFIX` matches the front of the name rather than the whole of it. Measured both ways before it was wired: over 57,467 harvested records the only typeless street names beginning \"CORNER\" are those three, all here; over every findings file in the repository, nothing committed moves. The collection's real addressed count is 51, not 151.\n\n**An organisation named after a street number it is not at.** 826 Valencia's Tenderloin writing centre is at 180 Golden Gate Avenue, and the extractor takes the *first* number it can parse, so \"826 Valencia Writing Center at 180 Golden Gate Avenue\" resolved to Valencia Street. Refusing the name in `NOT_A_STREET_NAME` stops the wrong address but does not reach the right one — `address_from_title` gives up on a refused name rather than trying the next match — so sfp-179-0029 is entered by hand. A fall-through variant was written and measured: it changes 29 records corpus-wide and 27 of those are regressions, because cutting the title at the match loses the caption's own qualifier and \"Rear of 80 Clara Street\" becomes \"80 Clara Street\". Not wired.\n\n**One placement was demoted by hand.** EAS holds 353 EDDY ST but files no parcel on it, so it was placed by point, in 0338020 — a parcel whose own range is 365-365 and with 0338021 (355 Eddy) numerically in between. The point and the block's number line disagree and that is recorded, not adjudicated. 289 Eddy is the same shape and was kept: it is the immediate neighbour of 291 with no parcel in between, which is the ordinary incomplete-range case.\n\n**`named-buildings-only` kept 6 names and dropped 25**, and most of the 25 are real businesses — Daldas Grocery, Angkor Laundromat, El Castillito Taqueria, Em's Barber Shop, Casbah Cafe, Downtown Grocery, All Stars Donuts & Burgers, Yemen Kitchen, De Marillac Academy, Faithful Fools, the Kelly Cullen Community. They are put back by hand at publication, one page at a time, which is the tail batch's trade and is affordable at 51 records. The strict filter is what keeps \"Supervisor Jane Kim speaking to others\" and the barbers and baristas out.\n\n**Two pages already carried a 1966 photograph of the same building** — the Hotel Essex at 684 Ellis and the Hotel Hamlin at 385 Eddy, both from SFH 371. `--overlap` flagged them at 36% on wording. Both were kept and worded as continuity: the hotel still trading under that name half a century later is the fact the second photograph adds.",
+  "coverage": {
+    "unit": "catalogue records",
+    "examined": 528,
+    "mentions": 38,
+    "remaining": "Nothing in SFP 179; all 528 records read. What is left in the archive is SFP 136 (30 addressed), undecided and unmeasured under #217, and SFP 130 (184), closed unread by the same issue.",
+    "note": "528 catalogue records, every one read. 487 give no street number and are skipped per COLLECTION_UNNUMBERED_POLICY — the neighbourhood's street life, which is also where the collection's people are. 3 are photographs of people and never reached the address test. 38 candidate addresses became 28 findings over 28 distinct addresses, 10 duplicate records folded in; a 29th was added by hand for 180 Golden Gate Avenue. 25 resolved, 4 unresolved, 0 rejected. 25 published on 24 pages, 9 of them seeded by this run. The 100 \"4 Corner Friday\" records never became candidates."
+  },
+  "findings": [
+    {
+      "id": "sfp-179-0001",
+      "date": "between 2014 to 2016",
+      "date_precision": "circa",
+      "kind": "photograph",
+      "address_as_written": "290 Golden Gate Avenue",
+      "street_number": "290",
+      "street_name": "GOLDEN GATE",
+      "street_type": "AVE",
+      "description": "Judi Iranyi photographed the property at 290 Golden Gate Avenue between 2014 to 2016.",
+      "extra": {
+        "date_as_recorded": "between 2014 to 2016",
+        "date_range": [
+          2014,
+          2016
+        ],
+        "medium": "1 photograph : digital, TIFF file, color",
+        "subject_headings": [
+          "Baby strollers",
+          "Restaurants",
+          "Streets"
+        ]
+      },
+      "citation": {
+        "label": "290 Golden Gate Avenue, between 2014 to 2016. Judi Iranyi Photographs of the Tenderloin (SFP 179), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/115935",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0565.xml",
+        "locator": "record 115935"
+      },
+      "raw": {
+        "text": "People with stroller standing outside All Stars Donuts & Burgers at 290 Golden Gate Avenue"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0345009",
+        "path": "/san-francisco/tenderloin/golden-gate-avenue/288/",
+        "eas_address": "288 GOLDEN GATE AVE",
+        "method": "EAS exact match on 290 GOLDEN GATE AVE → parcel 0345009; sf-parcels has blklot 0345009 active, 288–290 GOLDEN GATE; the 2025 roll records it as commercial hotel, built 1913. The assessor files the parcel as 112–120 HYDE ST. EAS puts 288, 290 GOLDEN GATE AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 288.",
+        "checked_on": "2026-09-05",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "270"
+      }
+    },
+    {
+      "id": "sfp-179-0002",
+      "date": "between 2014 to 2016",
+      "date_precision": "circa",
+      "kind": "photograph",
+      "address_as_written": "191 Golden Gate Avenue",
+      "street_number": "191",
+      "street_name": "GOLDEN GATE",
+      "street_type": "AVE",
+      "description": "Judi Iranyi photographed the property at 191 Golden Gate Avenue between 2014 to 2016.",
+      "extra": {
+        "date_as_recorded": "between 2014 to 2016",
+        "date_range": [
+          2014,
+          2016
+        ],
+        "medium": "1 photograph : digital, TIFF file, color",
+        "subject_headings": [
+          "Buildings",
+          "Mural painting and decoration",
+          "Streets"
+        ]
+      },
+      "citation": {
+        "label": "191 Golden Gate Avenue, between 2014 to 2016. Judi Iranyi Photographs of the Tenderloin (SFP 179), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/115942",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0565.xml",
+        "locator": "record 115942"
+      },
+      "raw": {
+        "text": "\"The Gift You Take is Equal to the Gift You Make\" mural at 191 Golden Gate Avenue on Leavenworth Street side of building"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0349010A",
+        "path": "/san-francisco/tenderloin/golden-gate-avenue/177/",
+        "eas_address": "177 GOLDEN GATE AVE",
+        "method": "EAS exact match on 191 GOLDEN GATE AVE → parcel 0349010A; sf-parcels has blklot 0349010A active, 177–191 GOLDEN GATE; the 2025 roll records it as commercial retail, built 1916. EAS puts 177, 183, 187, 191 GOLDEN GATE AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 177.",
+        "checked_on": "2026-09-05"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "270"
+      }
+    },
+    {
+      "id": "sfp-179-0003",
+      "date": "between 2014 to 2016",
+      "date_precision": "circa",
+      "kind": "photograph",
+      "address_as_written": "175 Golden Gate Avenue",
+      "street_number": "175",
+      "street_name": "GOLDEN GATE",
+      "street_type": "AVE",
+      "description": "Judi Iranyi photographed the property at 175 Golden Gate Avenue between 2014 to 2016.",
+      "extra": {
+        "date_as_recorded": "between 2014 to 2016",
+        "date_range": [
+          2014,
+          2016
+        ],
+        "medium": "1 photograph : digital, TIFF file, color",
+        "subject_headings": [
+          "Catholic elementary schools",
+          "Streets"
+        ],
+        "additional_records": [
+          "https://digitalsf.org/record/116158",
+          "https://digitalsf.org/record/116171"
+        ]
+      },
+      "citation": {
+        "label": "175 Golden Gate Avenue, between 2014 to 2016. Judi Iranyi Photographs of the Tenderloin (SFP 179), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/116057",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0566.xml",
+        "locator": "record 116057"
+      },
+      "raw": {
+        "text": "De Marillac Academy at 175 Golden Gate Avenue"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0349011",
+        "path": "/san-francisco/tenderloin/golden-gate-avenue/175/",
+        "eas_address": "175 GOLDEN GATE AVE",
+        "method": "EAS exact match on 175 GOLDEN GATE AVE → parcel 0349011; sf-parcels has blklot 0349011 active, 175–175 GOLDEN GATE; the 2025 roll records it as commercial misc, built 1899.",
+        "checked_on": "2026-09-05"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "270"
+      }
+    },
+    {
+      "id": "sfp-179-0004",
+      "date": "between 2014 to 2016",
+      "date_precision": "circa",
+      "kind": "photograph",
+      "address_as_written": "406 Ellis Street",
+      "street_number": "406",
+      "street_name": "ELLIS",
+      "street_type": "ST",
+      "description": "Judi Iranyi photographed the property at 406 Ellis Street between 2014 to 2016.",
+      "extra": {
+        "date_as_recorded": "between 2014 to 2016",
+        "date_range": [
+          2014,
+          2016
+        ],
+        "medium": "1 photograph : digital, TIFF file, color",
+        "subject_headings": [
+          "Baristas",
+          "Coffee shops"
+        ],
+        "additional_records": [
+          "https://digitalsf.org/record/116105"
+        ]
+      },
+      "citation": {
+        "label": "406 Ellis Street, between 2014 to 2016. Judi Iranyi Photographs of the Tenderloin (SFP 179), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/116093",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0567.xml",
+        "locator": "record 116093"
+      },
+      "raw": {
+        "text": "Barista behind the counter making a beverage at Cafecito at 406 Ellis Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-05",
+        "method": "No record in sf-eas-addresses for 406 ELLIS ST.",
+        "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 386, 387, 391, 397, 398, 401. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+      },
+      "publish": {
+        "status": "declined",
+        "note": "Unresolved: no parcel, so no page to carry it."
+      }
+    },
+    {
+      "id": "sfp-179-0005",
+      "date": "between 2014 to 2016",
+      "date_precision": "circa",
+      "kind": "photograph",
+      "address_as_written": "219 Jones Street",
+      "street_number": "219",
+      "street_name": "JONES",
+      "street_type": "ST",
+      "description": "Judi Iranyi photographed the property at 219 Jones Street between 2014 to 2016.",
+      "extra": {
+        "date_as_recorded": "between 2014 to 2016",
+        "date_range": [
+          2014,
+          2016
+        ],
+        "medium": "1 photograph : digital, TIFF file, color",
+        "subject_headings": [
+          "Portraits, Group",
+          "Restaurants"
+        ]
+      },
+      "citation": {
+        "label": "219 Jones Street, between 2014 to 2016. Judi Iranyi Photographs of the Tenderloin (SFP 179), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/116094",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0567.xml",
+        "locator": "record 116094"
+      },
+      "raw": {
+        "text": "Five restaurant staff members pose for photo outside Yemen Kitchen at 219 Jones Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0338002",
+        "path": "/san-francisco/tenderloin/jones-street/219/",
+        "eas_address": "219 JONES ST",
+        "method": "EAS exact match on 219 JONES ST → parcel 0338002; sf-parcels has blklot 0338002 active, 219–233 JONES; the 2025 roll records it as multi-family residential, built 1925. EAS puts 219, 225, 233 JONES ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 219.",
+        "checked_on": "2026-09-05"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "270"
+      }
+    },
+    {
+      "id": "sfp-179-0006",
+      "date": "between 2014 to 2016",
+      "date_precision": "circa",
+      "kind": "photograph",
+      "address_as_written": "295 Eddy Street",
+      "street_number": "295",
+      "street_name": "EDDY",
+      "street_type": "ST",
+      "description": "Judi Iranyi photographed the property at 295 Eddy Street between 2014 to 2016.",
+      "extra": {
+        "date_as_recorded": "between 2014 to 2016",
+        "date_range": [
+          2014,
+          2016
+        ],
+        "medium": "1 photograph : digital, TIFF file, color",
+        "subject_headings": [
+          "Restaurants"
+        ],
+        "additional_records": [
+          "https://digitalsf.org/record/116096",
+          "https://digitalsf.org/record/116100"
+        ]
+      },
+      "citation": {
+        "label": "295 Eddy Street, between 2014 to 2016. Judi Iranyi Photographs of the Tenderloin (SFP 179), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/116095",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0567.xml",
+        "locator": "record 116095"
+      },
+      "raw": {
+        "text": "Person standing in front of dessert counter in Casbah Cafe at 295 Eddy Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0339014",
+        "path": "/san-francisco/tenderloin/jones-street/240/",
+        "eas_address": "289 EDDY ST",
+        "method": "EAS exact match on 295 EDDY ST → parcel 0339014; sf-parcels has blklot 0339014 active, 291–299 EDDY; the 2025 roll records it as commercial hotel, built 1925. The assessor files the parcel as 240 JONES ST. EAS puts 289, 291, 295, 299 EDDY ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 289.",
+        "checked_on": "2026-09-05"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "270"
+      }
+    },
+    {
+      "id": "sfp-179-0007",
+      "date": "between 2014 to 2016",
+      "date_precision": "circa",
+      "kind": "photograph",
+      "address_as_written": "330 Eddy Street",
+      "street_number": "330",
+      "street_name": "EDDY",
+      "street_type": "ST",
+      "description": "Judi Iranyi photographed the property at 330 Eddy Street between 2014 to 2016.",
+      "extra": {
+        "date_as_recorded": "between 2014 to 2016",
+        "date_range": [
+          2014,
+          2016
+        ],
+        "medium": "1 photograph : digital, TIFF file, color",
+        "subject_headings": [
+          "Barbers",
+          "Barbershops"
+        ],
+        "additional_records": [
+          "https://digitalsf.org/record/116098"
+        ]
+      },
+      "citation": {
+        "label": "330 Eddy Street, between 2014 to 2016. Judi Iranyi Photographs of the Tenderloin (SFP 179), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/116097",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0567.xml",
+        "locator": "record 116097"
+      },
+      "raw": {
+        "text": "Tenderloin barber standing behind barber chair inside of Eddy Barber Shop at 330 Eddy Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0333007",
+        "path": "/san-francisco/tenderloin/eddy-street/322/",
+        "eas_address": "322 EDDY ST",
+        "method": "EAS exact match on 330 EDDY ST → parcel 0333007; sf-parcels has blklot 0333007 active, 322–330 EDDY; the 2025 roll records it as multi-family residential, built 1923. EAS puts 322, 326, 330 EDDY ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 322.",
+        "checked_on": "2026-09-05",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "270"
+      }
+    },
+    {
+      "id": "sfp-179-0008",
+      "date": "between 2014 to 2016",
+      "date_precision": "circa",
+      "kind": "photograph",
+      "address_as_written": "201 Turk Street",
+      "street_number": "201",
+      "street_name": "TURK",
+      "street_type": "ST",
+      "description": "Judi Iranyi photographed the property at 201 Turk Street between 2014 to 2016. The record names Radman's Produce Market at the address.",
+      "extra": {
+        "date_as_recorded": "between 2014 to 2016",
+        "date_range": [
+          2014,
+          2016
+        ],
+        "medium": "1 photograph : digital, TIFF file, color",
+        "named_in_record": [
+          "Radman's Produce Market"
+        ],
+        "subject_headings": [
+          "Grocery trade",
+          "Storefronts"
+        ]
+      },
+      "citation": {
+        "label": "201 Turk Street, between 2014 to 2016. Judi Iranyi Photographs of the Tenderloin (SFP 179), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/116101",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0567.xml",
+        "locator": "record 116101"
+      },
+      "raw": {
+        "text": "Radman's Produce Market at 201 Turk Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0344010",
+        "path": "/san-francisco/tenderloin/turk-street/201/",
+        "eas_address": "201 TURK ST",
+        "method": "EAS exact match on 201 TURK ST → parcel 0344010; sf-parcels has blklot 0344010 active, 175–175 JONES; the 2025 roll records it as multi-family residential, built 1993. EAS puts 201, 255, 259 TURK ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 201.",
+        "checked_on": "2026-09-05",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "270"
+      }
+    },
+    {
+      "id": "sfp-179-0009",
+      "date": "between 2014 to 2016",
+      "date_precision": "circa",
+      "kind": "photograph",
+      "address_as_written": "289 Eddy Street",
+      "street_number": "289",
+      "street_name": "EDDY",
+      "street_type": "ST",
+      "description": "Judi Iranyi photographed the property at 289 Eddy Street between 2014 to 2016.",
+      "extra": {
+        "date_as_recorded": "between 2014 to 2016",
+        "date_range": [
+          2014,
+          2016
+        ],
+        "medium": "1 photograph : digital, TIFF file, color",
+        "subject_headings": [
+          "Grocery trade"
+        ]
+      },
+      "citation": {
+        "label": "289 Eddy Street, between 2014 to 2016. Judi Iranyi Photographs of the Tenderloin (SFP 179), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/116104",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0567.xml",
+        "locator": "record 116104"
+      },
+      "raw": {
+        "text": "Tenderloin grocer in front of Downtown Grocery at 289 Eddy Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0339014",
+        "path": "/san-francisco/tenderloin/jones-street/240/",
+        "eas_address": "289 EDDY ST",
+        "method": "EAS exact match on 289 EDDY ST → parcel 0339014; sf-parcels has blklot 0339014 active, 291–299 EDDY; the 2025 roll records it as commercial hotel, built 1925. The assessor files the parcel as 240 JONES ST. EAS puts 289, 291, 295, 299 EDDY ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 289. The address carries no parcel number in EAS; the active parcel its coordinates fall in is 0339014.",
+        "checked_on": "2026-09-05"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "270"
+      }
+    },
+    {
+      "id": "sfp-179-0010",
+      "date": "between 2014 to 2016",
+      "date_precision": "circa",
+      "kind": "photograph",
+      "address_as_written": "243-247 Golden Gate Avenue",
+      "street_name": "GOLDEN GATE",
+      "street_type": "AVE",
+      "description": "Judi Iranyi photographed the property at 243-247 Golden Gate Avenue between 2014 to 2016.",
+      "extra": {
+        "address_range_as_recorded": "243-247",
+        "date_as_recorded": "between 2014 to 2016",
+        "date_range": [
+          2014,
+          2016
+        ],
+        "medium": "1 photograph : digital, TIFF file, color",
+        "subject_headings": [
+          "Buildings",
+          "Streets"
+        ]
+      },
+      "citation": {
+        "label": "243-247 Golden Gate Avenue, between 2014 to 2016. Judi Iranyi Photographs of the Tenderloin (SFP 179), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/116150",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0567.xml",
+        "locator": "record 116150"
+      },
+      "raw": {
+        "text": "243-247 Golden Gate Avenue"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-05",
+        "method": "the recorded range 243-247 on GOLDEN GATE AVE spans more than one parcel in sf-eas-addresses today: 0348022A (247), 0348024 (243).",
+        "note": "The numbers the record gives are on different parcels now, so the record cannot be placed on one page without deciding which — which the record does not say."
+      },
+      "publish": {
+        "status": "declined",
+        "note": "Unresolved: no parcel, so no page to carry it."
+      }
+    },
+    {
+      "id": "sfp-179-0011",
+      "date": "between 2014 to 2016",
+      "date_precision": "circa",
+      "kind": "photograph",
+      "address_as_written": "136 Taylor Street",
+      "street_number": "136",
+      "street_name": "TAYLOR",
+      "street_type": "ST",
+      "description": "Judi Iranyi photographed the property at 136 Taylor Street between 2014 to 2016.",
+      "extra": {
+        "date_as_recorded": "between 2014 to 2016",
+        "date_range": [
+          2014,
+          2016
+        ],
+        "medium": "1 photograph : digital, TIFF file, color",
+        "subject_headings": [
+          "Buildings",
+          "Streets"
+        ]
+      },
+      "citation": {
+        "label": "136 Taylor Street, between 2014 to 2016. Judi Iranyi Photographs of the Tenderloin (SFP 179), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/116151",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0567.xml",
+        "locator": "record 116151"
+      },
+      "raw": {
+        "text": "View of building top at 136 Taylor Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0340014",
+        "path": "/san-francisco/tenderloin/taylor-street/136/",
+        "eas_address": "136 TAYLOR ST",
+        "method": "EAS exact match on 136 TAYLOR ST → parcel 0340014; sf-parcels has blklot 0340014 active, 136–142 TAYLOR; the 2025 roll records it as commercial office, built 1908. EAS puts 136, 142 TAYLOR ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 136.",
+        "checked_on": "2026-09-05"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "270"
+      }
+    },
+    {
+      "id": "sfp-179-0012",
+      "date": "between 2014 to 2016",
+      "date_precision": "circa",
+      "kind": "photograph",
+      "address_as_written": "201 Golden Gate Avenue",
+      "street_number": "201",
+      "street_name": "GOLDEN GATE",
+      "street_type": "AVE",
+      "description": "Judi Iranyi photographed the property at 201 Golden Gate Avenue between 2014 to 2016.",
+      "extra": {
+        "date_as_recorded": "between 2014 to 2016",
+        "date_range": [
+          2014,
+          2016
+        ],
+        "medium": "1 photograph : digital, TIFF file, color",
+        "subject_headings": [
+          "Buildings",
+          "Streets"
+        ]
+      },
+      "citation": {
+        "label": "201 Golden Gate Avenue, between 2014 to 2016. Judi Iranyi Photographs of the Tenderloin (SFP 179), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/116160",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0567.xml",
+        "locator": "record 116160"
+      },
+      "raw": {
+        "text": "Building at 201 Golden Gate Avenue and Leavenworth Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0348026",
+        "path": "/san-francisco/tenderloin/golden-gate-avenue/201/",
+        "eas_address": "201 GOLDEN GATE AVE",
+        "method": "EAS exact match on 201 GOLDEN GATE AVE → parcel 0348026; sf-parcels has blklot 0348026 active, 201–215 GOLDEN GATE; the 2025 roll records it as commercial office, built 1920. EAS puts 201, 209, 215 GOLDEN GATE AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 201.",
+        "checked_on": "2026-09-05"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "270"
+      }
+    },
+    {
+      "id": "sfp-179-0013",
+      "date": "between 2014 to 2016",
+      "date_precision": "circa",
+      "kind": "photograph",
+      "address_as_written": "342 Jones Street",
+      "street_number": "342",
+      "street_name": "JONES",
+      "street_type": "ST",
+      "description": "Judi Iranyi photographed the property at 342 Jones Street between 2014 to 2016.",
+      "extra": {
+        "date_as_recorded": "between 2014 to 2016",
+        "date_range": [
+          2014,
+          2016
+        ],
+        "medium": "1 photograph : digital, TIFF file, color",
+        "subject_headings": [
+          "Barbershops",
+          "Streets"
+        ]
+      },
+      "citation": {
+        "label": "342 Jones Street, between 2014 to 2016. Judi Iranyi Photographs of the Tenderloin (SFP 179), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/116163",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0567.xml",
+        "locator": "record 116163"
+      },
+      "raw": {
+        "text": "Em's Barber Shop at 342 Jones Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-05",
+        "method": "No record in sf-eas-addresses for 342 JONES ST.",
+        "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 333, 335, 337, 344, 345, 359. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+      },
+      "publish": {
+        "status": "declined",
+        "note": "Unresolved: no parcel, so no page to carry it."
+      }
+    },
+    {
+      "id": "sfp-179-0014",
+      "date": "between 2014 to 2016",
+      "date_precision": "circa",
+      "kind": "photograph",
+      "address_as_written": "290 Turk Street",
+      "street_number": "290",
+      "street_name": "TURK",
+      "street_type": "ST",
+      "description": "Judi Iranyi photographed the property at 290 Turk Street between 2014 to 2016.",
+      "extra": {
+        "date_as_recorded": "between 2014 to 2016",
+        "date_range": [
+          2014,
+          2016
+        ],
+        "medium": "1 photograph : digital, TIFF file, color",
+        "subject_headings": [
+          "Buildings",
+          "Community organization",
+          "Nonprofit organizations",
+          "Streets"
+        ]
+      },
+      "citation": {
+        "label": "290 Turk Street, between 2014 to 2016. Judi Iranyi Photographs of the Tenderloin (SFP 179), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/116164",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0567.xml",
+        "locator": "record 116164"
+      },
+      "raw": {
+        "text": "Hospitality House Youth Mural by unhoused teens at 290 Turk Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0338012",
+        "path": "/san-francisco/tenderloin/turk-street/280/",
+        "eas_address": "280 TURK ST",
+        "method": "EAS exact match on 290 TURK ST → parcel 0338012; sf-parcels has blklot 0338012 active, 280–290 TURK; the 2025 roll records it as commercial office, built 1921. EAS puts 280, 288, 290 TURK ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 280.",
+        "checked_on": "2026-09-05",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "270"
+      }
+    },
+    {
+      "id": "sfp-179-0015",
+      "date": "between 2014 to 2016",
+      "date_precision": "circa",
+      "kind": "photograph",
+      "address_as_written": "500 Ellis Street",
+      "street_number": "500",
+      "street_name": "ELLIS",
+      "street_type": "ST",
+      "description": "Judi Iranyi photographed the property at 500 Ellis Street between 2014 to 2016. The record names Amigo's Market at the address.",
+      "extra": {
+        "date_as_recorded": "between 2014 to 2016",
+        "date_range": [
+          2014,
+          2016
+        ],
+        "medium": "1 photograph : digital, TIFF file, color",
+        "named_in_record": [
+          "Amigo's Market"
+        ],
+        "subject_headings": [
+          "Buildings",
+          "Grocery trade",
+          "Storefronts",
+          "Streets"
+        ]
+      },
+      "citation": {
+        "label": "500 Ellis Street, between 2014 to 2016. Judi Iranyi Photographs of the Tenderloin (SFP 179), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/116165",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0567.xml",
+        "locator": "record 116165"
+      },
+      "raw": {
+        "text": "Amigo's Market at 500 Ellis Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0322003",
+        "path": "/san-francisco/tenderloin/ellis-street/500/",
+        "eas_address": "500 ELLIS ST",
+        "method": "EAS exact match on 500 ELLIS ST → parcel 0322003; sf-parcels has blklot 0322003 active, 500–516 ELLIS; the 2025 roll records it as multi-family residential, built 1910. EAS puts 500, 508, 512, 516 ELLIS ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 500.",
+        "checked_on": "2026-09-05"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "270"
+      }
+    },
+    {
+      "id": "sfp-179-0016",
+      "date": "between 2014 to 2016",
+      "date_precision": "circa",
+      "kind": "photograph",
+      "address_as_written": "499 Ellis Street",
+      "street_number": "499",
+      "street_name": "ELLIS",
+      "street_type": "ST",
+      "description": "Judi Iranyi photographed the property at 499 Ellis Street between 2014 to 2016.",
+      "extra": {
+        "date_as_recorded": "between 2014 to 2016",
+        "date_range": [
+          2014,
+          2016
+        ],
+        "medium": "1 photograph : digital, TIFF file, color",
+        "subject_headings": [
+          "Buildings",
+          "Restaurants",
+          "Streets"
+        ]
+      },
+      "citation": {
+        "label": "499 Ellis Street, between 2014 to 2016. Judi Iranyi Photographs of the Tenderloin (SFP 179), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/116166",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0567.xml",
+        "locator": "record 116166"
+      },
+      "raw": {
+        "text": "Taqueria at 499 Ellis Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0333015",
+        "path": "/san-francisco/tenderloin/ellis-street/479/",
+        "eas_address": "479 ELLIS ST",
+        "method": "EAS exact match on 499 ELLIS ST → parcel 0333015; sf-parcels has blklot 0333015 active, 479–499 ELLIS; the 2025 roll records it as commercial retail, built 1922. EAS puts 479, 483, 491, 495, 499 ELLIS ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 479.",
+        "checked_on": "2026-09-05",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "270"
+      }
+    },
+    {
+      "id": "sfp-179-0017",
+      "date": "between 2014 to 2016",
+      "date_precision": "circa",
+      "kind": "photograph",
+      "address_as_written": "385 Eddy Street",
+      "street_number": "385",
+      "street_name": "EDDY",
+      "street_type": "ST",
+      "description": "Judi Iranyi photographed the property at 385 Eddy Street between 2014 to 2016. The record names Hamlin Hotel at the address.",
+      "extra": {
+        "date_as_recorded": "between 2014 to 2016",
+        "date_range": [
+          2014,
+          2016
+        ],
+        "medium": "1 photograph : digital, TIFF file, color",
+        "named_in_record": [
+          "Hamlin Hotel"
+        ],
+        "subject_headings": [
+          "Single-room occupancy hotels",
+          "Streets"
+        ]
+      },
+      "citation": {
+        "label": "385 Eddy Street, between 2014 to 2016. Judi Iranyi Photographs of the Tenderloin (SFP 179), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/116167",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0567.xml",
+        "locator": "record 116167"
+      },
+      "raw": {
+        "text": "Hamlin Hotel at 385 Eddy Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0338018",
+        "path": "/san-francisco/tenderloin/eddy-street/385/",
+        "eas_address": "385 EDDY ST",
+        "method": "EAS exact match on 385 EDDY ST → parcel 0338018; sf-parcels has blklot 0338018 active, 385–387 EDDY; the 2025 roll records it as commercial hotel, built 1909. EAS puts 385, 387 EDDY ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 385.",
+        "checked_on": "2026-09-05"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "270"
+      }
+    },
+    {
+      "id": "sfp-179-0018",
+      "date": "between 2014 to 2016",
+      "date_precision": "circa",
+      "kind": "photograph",
+      "address_as_written": "353 Eddy Street",
+      "street_number": "353",
+      "street_name": "EDDY",
+      "street_type": "ST",
+      "description": "Judi Iranyi photographed the property at 353 Eddy Street between 2014 to 2016.",
+      "extra": {
+        "date_as_recorded": "between 2014 to 2016",
+        "date_range": [
+          2014,
+          2016
+        ],
+        "medium": "1 photograph : digital, TIFF file, color",
+        "subject_headings": [
+          "Buildings",
+          "Self-service laundries",
+          "Streets"
+        ]
+      },
+      "citation": {
+        "label": "353 Eddy Street, between 2014 to 2016. Judi Iranyi Photographs of the Tenderloin (SFP 179), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/116168",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0567.xml",
+        "locator": "record 116168"
+      },
+      "raw": {
+        "text": "Angkor Laundromat at 353 Eddy Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-05",
+        "by_hand": true,
+        "method": "EAS holds 353 EDDY ST but files no parcel number on it, so resolve_eas.py placed it by point, in 0338020. That parcel's own range is 365-365 EDDY, and 0338021 holds 355 — a parcel numerically between 353 and the one the point chose. The odd side of the block runs 345/347 (0338021A), 355 (0338021), 365 (0338020), 375 (0338019), so 353 should sit two parcels below where the point put it.",
+        "note": "Demoted from the tool's placement by hand. The point and the block's number line disagree, and per \"Never reconcile a conflict silently\" in the evidence bar that is recorded rather than adjudicated. Angkor Laundromat at 353 Eddy Street stays here until someone reads the parcel map."
+      },
+      "publish": {
+        "status": "declined",
+        "note": "Unresolved: no parcel, so no page to carry it."
+      }
+    },
+    {
+      "id": "sfp-179-0019",
+      "date": "between 2014 to 2016",
+      "date_precision": "circa",
+      "kind": "photograph",
+      "address_as_written": "450 Eddy Street",
+      "street_number": "450",
+      "street_name": "EDDY",
+      "street_type": "ST",
+      "description": "Judi Iranyi photographed the property at 450 Eddy Street between 2014 to 2016.",
+      "extra": {
+        "date_as_recorded": "between 2014 to 2016",
+        "date_range": [
+          2014,
+          2016
+        ],
+        "medium": "1 photograph : digital, TIFF file, color",
+        "subject_headings": [
+          "Apartments",
+          "Fire escapes",
+          "Windows"
+        ]
+      },
+      "citation": {
+        "label": "450 Eddy Street, between 2014 to 2016. Judi Iranyi Photographs of the Tenderloin (SFP 179), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/116169",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0567.xml",
+        "locator": "record 116169"
+      },
+      "raw": {
+        "text": "450 Eddy Street with clothes hanging from top floor windows and fire escape"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0334010",
+        "path": "/san-francisco/tenderloin/eddy-street/446/",
+        "eas_address": "446 EDDY ST",
+        "method": "EAS exact match on 450 EDDY ST → parcel 0334010; sf-parcels has blklot 0334010 active, 446–450 EDDY; the 2025 roll records it as multi-family residential, built 1923. EAS puts 446, 450 EDDY ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 446.",
+        "checked_on": "2026-09-05",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "270"
+      }
+    },
+    {
+      "id": "sfp-179-0020",
+      "date": "between 2014 to 2016",
+      "date_precision": "circa",
+      "kind": "photograph",
+      "address_as_written": "220 Golden Gate Avenue",
+      "street_number": "220",
+      "street_name": "GOLDEN GATE",
+      "street_type": "AVE",
+      "description": "Judi Iranyi photographed the property at 220 Golden Gate Avenue between 2014 to 2016.",
+      "extra": {
+        "date_as_recorded": "between 2014 to 2016",
+        "date_range": [
+          2014,
+          2016
+        ],
+        "medium": "1 photograph : digital, TIFF file, color",
+        "subject_headings": [
+          "Buildings",
+          "Single-room occupancy hotels",
+          "Streets"
+        ]
+      },
+      "citation": {
+        "label": "220 Golden Gate Avenue, between 2014 to 2016. Judi Iranyi Photographs of the Tenderloin (SFP 179), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/116170",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0567.xml",
+        "locator": "record 116170"
+      },
+      "raw": {
+        "text": "Kelly Cullen Community at 220 Golden Gate Avenue"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0345031",
+        "path": "/san-francisco/tenderloin/golden-gate-avenue/210/",
+        "eas_address": "210 GOLDEN GATE AVE",
+        "method": "EAS exact match on 220 GOLDEN GATE AVE → parcel 0345031; sf-parcels has blklot 0345031 active, 210–220 GOLDEN GATE; the 2025 roll records it as commercial hotel, built 1909. EAS puts 210, 220 GOLDEN GATE AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 210.",
+        "checked_on": "2026-09-05"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "270"
+      }
+    },
+    {
+      "id": "sfp-179-0021",
+      "date": "between 2014 to 2016",
+      "date_precision": "circa",
+      "kind": "photograph",
+      "address_as_written": "200 Eddy Street",
+      "street_number": "200",
+      "street_name": "EDDY",
+      "street_type": "ST",
+      "description": "Judi Iranyi photographed the property at 200 Eddy Street between 2014 to 2016.",
+      "extra": {
+        "date_as_recorded": "between 2014 to 2016",
+        "date_range": [
+          2014,
+          2016
+        ],
+        "medium": "1 photograph : digital, TIFF file, color",
+        "subject_headings": [
+          "Buildings",
+          "Grocery trade",
+          "Storefronts",
+          "Streets"
+        ]
+      },
+      "citation": {
+        "label": "200 Eddy Street, between 2014 to 2016. Judi Iranyi Photographs of the Tenderloin (SFP 179), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/116172",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0567.xml",
+        "locator": "record 116172"
+      },
+      "raw": {
+        "text": "Daldas Grocery at 200 Eddy Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0332003",
+        "path": "/san-francisco/tenderloin/eddy-street/200/",
+        "eas_address": "200 EDDY ST",
+        "method": "EAS exact match on 200 EDDY ST → parcel 0332003; sf-parcels has blklot 0332003 active, 200–216 EDDY; the 2025 roll records it as commercial hotel, built 1911. EAS puts 200, 202, 208, 212, 216 EDDY ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 200.",
+        "checked_on": "2026-09-05"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "270"
+      }
+    },
+    {
+      "id": "sfp-179-0022",
+      "date": "between 2014 to 2016",
+      "date_precision": "circa",
+      "kind": "photograph",
+      "address_as_written": "250 Golden Gate Avenue",
+      "street_number": "250",
+      "street_name": "GOLDEN GATE",
+      "street_type": "AVE",
+      "description": "Judi Iranyi photographed the property at 250 Golden Gate Avenue between 2014 to 2016.",
+      "extra": {
+        "date_as_recorded": "between 2014 to 2016",
+        "date_range": [
+          2014,
+          2016
+        ],
+        "medium": "1 photograph : digital, TIFF file, color",
+        "subject_headings": [
+          "Buildings",
+          "Restaurants",
+          "Streets"
+        ]
+      },
+      "citation": {
+        "label": "250 Golden Gate Avenue, between 2014 to 2016. Judi Iranyi Photographs of the Tenderloin (SFP 179), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/116173",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0567.xml",
+        "locator": "record 116173"
+      },
+      "raw": {
+        "text": "El Castillito Taqueria at 250 Golden Gate Avenue"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0345006",
+        "path": "/san-francisco/tenderloin/golden-gate-avenue/248/",
+        "eas_address": "248 GOLDEN GATE AVE",
+        "method": "EAS exact match on 250 GOLDEN GATE AVE → parcel 0345006; sf-parcels has blklot 0345006 active, 248–250 GOLDEN GATE; the 2025 roll records it as commercial hotel, built 1911. EAS puts 248, 250 GOLDEN GATE AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 248.",
+        "checked_on": "2026-09-05"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "270"
+      }
+    },
+    {
+      "id": "sfp-179-0023",
+      "date": "between 2014 to 2016",
+      "date_precision": "circa",
+      "kind": "photograph",
+      "address_as_written": "684 Ellis Street",
+      "street_number": "684",
+      "street_name": "ELLIS",
+      "street_type": "ST",
+      "description": "Judi Iranyi photographed the property at 684 Ellis Street between 2014 to 2016. The record names Hotel Essex at the address.",
+      "extra": {
+        "date_as_recorded": "between 2014 to 2016",
+        "date_range": [
+          2014,
+          2016
+        ],
+        "medium": "1 photograph : digital, TIFF file, color",
+        "named_in_record": [
+          "Hotel Essex"
+        ],
+        "subject_headings": [
+          "Museums",
+          "Single-room occupancy hotels",
+          "Streets"
+        ]
+      },
+      "citation": {
+        "label": "684 Ellis Street, between 2014 to 2016. Judi Iranyi Photographs of the Tenderloin (SFP 179), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/116175",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0567.xml",
+        "locator": "record 116175"
+      },
+      "raw": {
+        "text": "Hotel Essex at 684 Ellis Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0321020",
+        "path": "/san-francisco/tenderloin/ellis-street/684/",
+        "eas_address": "684 ELLIS ST",
+        "method": "EAS exact match on 684 ELLIS ST → parcel 0321020; sf-parcels has blklot 0321020 active, 684–684 ELLIS; the 2025 roll records it as multi-family residential, built 1913.",
+        "checked_on": "2026-09-05"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "270"
+      }
+    },
+    {
+      "id": "sfp-179-0024",
+      "date": "between 2014 to 2016",
+      "date_precision": "circa",
+      "kind": "photograph",
+      "address_as_written": "340 Eddy Street",
+      "street_number": "340",
+      "street_name": "EDDY",
+      "street_type": "ST",
+      "description": "Judi Iranyi photographed the property at 340 Eddy Street between 2014 to 2016. The record names Indochinese Housing Development Corporation at the address.",
+      "extra": {
+        "date_as_recorded": "between 2014 to 2016",
+        "date_range": [
+          2014,
+          2016
+        ],
+        "medium": "1 photograph : digital, TIFF file, color",
+        "named_in_record": [
+          "Indochinese Housing Development Corporation"
+        ],
+        "corporate_subject_headings": [
+          "Indochinese Housing Development Corporation"
+        ],
+        "subject_headings": [
+          "Buildings",
+          "Community organization",
+          "Nonprofit organizations",
+          "Streets"
+        ]
+      },
+      "citation": {
+        "label": "340 Eddy Street, between 2014 to 2016. Judi Iranyi Photographs of the Tenderloin (SFP 179), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/116176",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0567.xml",
+        "locator": "record 116176"
+      },
+      "raw": {
+        "text": "Indochinese Housing Development Corporation at 340 Eddy Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0333009",
+        "path": "/san-francisco/tenderloin/eddy-street/340/",
+        "eas_address": "340 EDDY ST",
+        "method": "EAS exact match on 340 EDDY ST → parcel 0333009; sf-parcels has blklot 0333009 active, 340–340 EDDY; the 2025 roll records it as multi-family residential, built 1911.",
+        "checked_on": "2026-09-05"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "270"
+      }
+    },
+    {
+      "id": "sfp-179-0025",
+      "date": "between 2014 to 2016",
+      "date_precision": "circa",
+      "kind": "photograph",
+      "address_as_written": "325 Leavenworth Street",
+      "street_number": "325",
+      "street_name": "LEAVENWORTH",
+      "street_type": "ST",
+      "description": "Judi Iranyi photographed the property at 325 Leavenworth Street between 2014 to 2016. The record names Kim Huang Cafe at the address.",
+      "extra": {
+        "date_as_recorded": "between 2014 to 2016",
+        "date_range": [
+          2014,
+          2016
+        ],
+        "medium": "1 photograph : digital, TIFF file, color",
+        "named_in_record": [
+          "Kim Huang Cafe"
+        ],
+        "subject_headings": [
+          "Apartments",
+          "Restaurants",
+          "Streets"
+        ]
+      },
+      "citation": {
+        "label": "325 Leavenworth Street, between 2014 to 2016. Judi Iranyi Photographs of the Tenderloin (SFP 179), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/116177",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0567.xml",
+        "locator": "record 116177"
+      },
+      "raw": {
+        "text": "Kim Huang Cafe at 325 Leavenworth Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0334004",
+        "path": "/san-francisco/nob-hill/leavenworth-street/325/",
+        "eas_address": "325 LEAVENWORTH ST",
+        "method": "EAS exact match on 325 LEAVENWORTH ST → parcel 0334004; sf-parcels has blklot 0334004 active, 325–325 LEAVENWORTH; the 2025 roll records it as commercial hotel, built 1907.",
+        "checked_on": "2026-09-05"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "270"
+      }
+    },
+    {
+      "id": "sfp-179-0026",
+      "date": "between 2014 to 2016",
+      "date_precision": "circa",
+      "kind": "photograph",
+      "address_as_written": "56 Mason Street",
+      "street_number": "56",
+      "street_name": "MASON",
+      "street_type": "ST",
+      "description": "Judi Iranyi photographed the property at 56 Mason Street between 2014 to 2016.",
+      "extra": {
+        "date_as_recorded": "between 2014 to 2016",
+        "date_range": [
+          2014,
+          2016
+        ],
+        "medium": "1 photograph : digital, TIFF file, color",
+        "corporate_subject_headings": [
+          "Academy of Art University"
+        ],
+        "subject_headings": [
+          "Buildings",
+          "Mural painting and decoration",
+          "Streets"
+        ],
+        "additional_records": [
+          "https://digitalsf.org/record/116180",
+          "https://digitalsf.org/record/116181"
+        ]
+      },
+      "citation": {
+        "label": "56 Mason Street, between 2014 to 2016. Judi Iranyi Photographs of the Tenderloin (SFP 179), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/116179",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0567.xml",
+        "locator": "record 116179"
+      },
+      "raw": {
+        "text": "\"The Breakers Cafe\" mural By Academy of Art University students at 56 Mason Street"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0341008",
+        "path": "/san-francisco/tenderloin/mason-street/48/",
+        "eas_address": "48 MASON ST",
+        "method": "EAS exact match on 56 MASON ST → parcel 0341008; sf-parcels has blklot 0341008 active, 83–83 EDDY; the 2025 roll records it as commercial hotel, built 1908. EAS puts 48, 50, 52, 56 MASON ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 48.",
+        "checked_on": "2026-09-05"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "270"
+      }
+    },
+    {
+      "id": "sfp-179-0027",
+      "date": "between 2014 to 2016",
+      "date_precision": "circa",
+      "kind": "photograph",
+      "address_as_written": "611 Jones Street",
+      "street_number": "611",
+      "street_name": "JONES",
+      "street_type": "ST",
+      "description": "Judi Iranyi photographed the property at 611 Jones Street between 2014 to 2016.",
+      "extra": {
+        "date_as_recorded": "between 2014 to 2016",
+        "date_range": [
+          2014,
+          2016
+        ],
+        "medium": "1 photograph : digital, TIFF file, color",
+        "subject_headings": [
+          "Housing",
+          "Streets"
+        ],
+        "additional_records": [
+          "https://digitalsf.org/record/116183"
+        ]
+      },
+      "citation": {
+        "label": "611 Jones Street, between 2014 to 2016. Judi Iranyi Photographs of the Tenderloin (SFP 179), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/116182",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0567.xml",
+        "locator": "record 116182"
+      },
+      "raw": {
+        "text": "611 Jones Street front door"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0304003",
+        "path": "/san-francisco/nob-hill/jones-street/611/",
+        "eas_address": "611 JONES ST",
+        "method": "EAS exact match on 611 JONES ST → parcel 0304003; sf-parcels has blklot 0304003 active, 611–611 JONES; the 2025 roll records it as single family residential, built 1908.",
+        "checked_on": "2026-09-05",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "270"
+      }
+    },
+    {
+      "id": "sfp-179-0028",
+      "date": "between 2014 to 2016",
+      "date_precision": "circa",
+      "kind": "photograph",
+      "address_as_written": "234 Hyde Street",
+      "street_number": "234",
+      "street_name": "HYDE",
+      "street_type": "ST",
+      "description": "Judi Iranyi photographed the property at 234 Hyde Street between 2014 to 2016.",
+      "extra": {
+        "date_as_recorded": "between 2014 to 2016",
+        "date_range": [
+          2014,
+          2016
+        ],
+        "medium": "1 photograph : digital, TIFF file, color",
+        "subject_headings": [
+          "Nonprofit organizations",
+          "Portraits"
+        ],
+        "additional_records": [
+          "https://digitalsf.org/record/116324"
+        ]
+      },
+      "citation": {
+        "label": "234 Hyde Street, between 2014 to 2016. Judi Iranyi Photographs of the Tenderloin (SFP 179), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/116323",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0569.xml",
+        "locator": "record 116323"
+      },
+      "raw": {
+        "text": "[name withheld] standing inside Faithful Fools at 234 Hyde Street",
+        "note": "Forename withheld here, not in the source. The caption names a person inside the building at this number and the catalogue files no personal subject heading for them, so neither `redact` nor `redact_honorifics` reaches it. Re-running the extractor reinstates the name; redo this."
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0337013",
+        "path": "/san-francisco/tenderloin/hyde-street/230/",
+        "eas_address": "230 HYDE ST",
+        "method": "EAS exact match on 234 HYDE ST → parcel 0337013; sf-parcels has blklot 0337013 active, 230–234 HYDE; the 2025 roll records it as commercial office, built 1931. EAS puts 230, 234 HYDE ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 230.",
+        "checked_on": "2026-09-05",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "270"
+      }
+    },
+    {
+      "id": "sfp-179-0029",
+      "date": "between 2014 to 2016",
+      "date_precision": "circa",
+      "kind": "photograph",
+      "address_as_written": "180 Golden Gate Avenue",
+      "street_number": "180",
+      "street_name": "GOLDEN GATE",
+      "street_type": "AVE",
+      "description": "Judi Iranyi photographed the property at 180 Golden Gate Avenue between 2014 to 2016.",
+      "extra": {
+        "date_as_recorded": "between 2014 to 2016",
+        "date_range": [
+          2014,
+          2016
+        ],
+        "medium": "1 photograph : digital, TIFF file, color",
+        "subject_headings": [
+          "Buildings",
+          "Nonprofit organizations",
+          "Streets",
+          "Writing centers"
+        ],
+        "additional_records": [
+          "https://digitalsf.org/record/116157",
+          "https://digitalsf.org/record/116161"
+        ],
+        "named_in_record": [
+          "826 Valencia"
+        ]
+      },
+      "citation": {
+        "label": "180 Golden Gate Avenue, between 2014 to 2016. Judi Iranyi Photographs of the Tenderloin (SFP 179), San Francisco History Center, San Francisco Public Library.",
+        "url": "https://digitalsf.org/record/115945",
+        "corpus_path": "research/corpora/digitalsf/Photographs/page-0565.xml",
+        "locator": "record 115945"
+      },
+      "raw": {
+        "text": "826 Valencia Writing Center at 180 Golden Gate Avenue",
+        "note": "Added by hand. The extractor takes the first street number it can parse and here that is the organisation's own name — 826 Valencia is named for its Valencia Street flagship and this is its Tenderloin writing centre. \"VALENCIA WRITING CENTER\" is refused in NOT_A_STREET_NAME so the wrong address never reaches a finding, but the parser does not fall through to the second number, so the right one is put in here. Ten further records photograph the same ribbon cutting and give no number."
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0344005",
+        "path": "/san-francisco/tenderloin/golden-gate-avenue/166/",
+        "eas_address": "166 GOLDEN GATE AVE",
+        "method": "EAS exact match on 180 GOLDEN GATE AVE → parcel 0344005; sf-parcels has blklot 0344005 active, 166–180 GOLDEN GATE; the 2025 roll records it as commercial retail, built 1908. EAS puts 166, 168, 172, 180 GOLDEN GATE AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 166.",
+        "checked_on": "2026-09-05",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "270"
+      }
+    }
+  ]
+}

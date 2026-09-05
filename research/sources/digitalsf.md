@@ -147,7 +147,7 @@ and roughly double what the title-only profile reports:
 | 1,128 | **Office of Assessor-Recorder Photographs (SFP 23) — done: 1,122 findings, 919 published** |
 | 251 | **Redevelopment Agency Records (SFH 371) — done: 421 findings, 116 published** |
 | 186 | **Tenderloin Times Photograph Archives (SFP 130) — not a batch. Skipped, and it stays skipped (#217).** Its addressed half is a newspaper's reporting on named living tenants at their own street numbers; see People below |
-| 151 | **Judi Iranyi Photographs of the Tenderloin (SFP 179) — a batch after all (#217).** The count is wrong: **100 of the 151 are the phrase "4 Corner Friday"** read as street number 4. The real 52 are storefronts, and their people are unnamed. Ordered here on the uncorrected count; the row moves when the guard lands |
+| 51 | **Judi Iranyi Photographs of the Tenderloin (SFP 179) — done: 29 findings, 25 published on 24 pages.** The 151 this row used to claim was **100 records of "4 Corner Friday"** read as street number 4; the guard is in, and 51 is the true count. Read under #217 after the dossier had written it off as SFP 130's twin |
 | 103 | **Willard E. Worden Glass Plate Negatives (SFP 22) — done: 77 findings, 60 published on 59 pages** |
 | 67 | **Robert Durden Color Slide Collection (SFP 42) — done: 58 findings, 56 resolved** |
 | 60 | **Lee Sims Photographs of Tenants and Owners in Opposition to Redevelopment (SFP 125) — done: 36 findings, 11 resolved** |
@@ -207,8 +207,11 @@ at 220 Golden Gate. Where a person is in frame the caption does not name them �
 "Barista behind the counter of Cafecito at 406 Ellis Street", "Five restaurant
 staff members pose for photo outside Yemen Kitchen at 219 Jones Street" — and
 the limit bars naming, not photographing. One of the 52 carries a name, and it
-is a forename. **It reads under the three policies already in the extractor**,
-with no `raw.text` policy and nothing new but the guard.
+is a forename. **It read under the three policies already in the extractor**, with no
+`raw.text` policy and nothing new but the guard: 528 records → 29 findings →
+25 published on 24 pages, 9 seeded for it. One caption in 528 names anybody at
+a number, by forename, and it is withheld by hand. See the 2026-09-05
+`Verified:` entry.
 
 **The four institutional collections are done, and the next run has no
 buildings batch left.** SFP 26, SFP 84, SFP 103 and SFH 3 were read together on
@@ -219,8 +222,8 @@ catalogue records.
 table, plus the thirty-odd collections too small to have a row in it, was read
 on 2026-09-04 as the single `tail` batch — 36 collections, 7,261 records, 45
 published pages. The only rows here still untouched are SFP 130, SFP 179 and
-SFP 136. #217 has since closed SFP 130 unread, cleared SFP 179 as the next
-batch, and left SFP 136 undecided and unmeasured. **The densest thing the tail
+SFP 136. #217 has since closed SFP 130 unread and left SFP 136 undecided and
+unmeasured; SFP 179 was cleared by the same issue and read on 2026-09-05. **The densest thing the tail
 turned up was not in this table**, because the table is ordered by
 addressed-record count and it has only ten records: SFH 611, the Junior
 League of San Francisco's *Here Today* building research files, where ten of
@@ -671,20 +674,21 @@ records carry one; exactly one of those also carries a street number.
   together, then SFP 26, SFP 84, SFP 103 and SFH 3 together — and the
   remaining **36 were read as one batch, `tail`**: 7,261 records, 188 candidate
   addresses, 137 findings, 45 published on 45 pages. What is left in the
-  archive is SFP 130 (184 addressed), **skipped for good under #217**; SFP 179
-  (151 reported, 52 real), **cleared to read by the same issue**; SFP 136 (30),
-  still undecided and needing its captions measured rather than assumed; and
-  128 collections that carry no addressed record at all.
+  archive is SFP 130 (184 addressed), **skipped for good under #217**; SFP 136
+  (30), still undecided and needing its captions measured rather than assumed;
+  and 128 collections that carry no addressed record at all. SFP 179 (151
+  reported, 51 real) was cleared by the same issue and is done.
   The table under "Batch unit" says what each yielded. Re-run the
   harvester to pick up records added since; it resumes from the stored token
   rather than re-downloading.
 
   **What is left, after #217.** SFP 130 (184 addressed) is **closed unread**:
   its captions are named living tenants and no redaction survives that. SFP 179
-  is **the next batch** — 151 reported, 52 real once "4 Corner Friday" stops
-  parsing as an address, and those 52 are Tenderloin storefronts. SFP 136 (30)
-  is a *portrait* collection assumed to raise the SFP 130 question and never
-  measured; measure it. Nothing else in the archive carries an addressed
+  is **done** — 151 reported, 51 real once "4 Corner Friday" stopped parsing as
+  an address, 25 of them published. **SFP 136 (30) is the only unread
+  collection in the archive that holds an addressed record**: a *portrait*
+  collection assumed to raise the SFP 130 question and never measured. Measure
+  it. Nothing else in the archive carries an addressed
   record: a corpus-wide address pass over all 59,902 records finds no candidate
   in any other unread collection.
 
@@ -735,6 +739,49 @@ records carry one; exactly one of those also carries a street number.
   Collection, San Francisco History Center, San Francisco Public Library."
   `citation_of()` does this, and refuses a record that names neither rather
   than citing "the archive".
+
+- **Verified:** 2026-09-05 (read, resolved and published **SFP 179, the Judi
+  Iranyi Photographs of the Tenderloin**, whole: 528 records → 29 findings →
+  25 resolved → **25 published on 24 pages**, 9 of them seeded for it.
+  Findings:
+  [`../findings/digitalsf/sfp-179.json`](../findings/digitalsf/sfp-179.json).
+
+  It was read because **#217 decided the dossier had misclassified it**, and
+  the four things it taught are all about that:
+
+  - **A collection's subject is not its addressed half.** This table put SFP
+    179 next to SFP 130 as "the same collection shape" — a Tenderloin
+    collection full of people — and blocked both. Its addressed records are
+    shopfronts, and where a person is in the frame the caption does not name
+    them: "Barista behind the counter of Cafecito at 406 Ellis Street". One
+    caption in 528 names anybody at a number, by forename. **Measure the
+    addressed records before writing a collection off.**
+  - **An event name ate two thirds of its address count.** "4 Corner Friday"
+    is a weekly street event at Golden Gate and Leavenworth, and its "4" is a
+    house number to `address_from_title` on all 100 records that name it —
+    in three spellings, which is why `NOT_A_STREET_PREFIX` matches the front
+    of a name rather than the whole of it. The real count is **51, not 151**.
+  - **An organisation named for a street number it is not at.** 826 Valencia's
+    Tenderloin writing centre is at 180 Golden Gate Avenue. Refusing
+    "VALENCIA WRITING CENTER" stops the wrong address; it does not produce the
+    right one, because `address_from_title` gives up on a refused name instead
+    of trying the next match in the caption. A fall-through was written and
+    **measured before wiring: 29 records change corpus-wide and 27 are
+    regressions**, because cutting the title at the match loses the caption's
+    qualifier — "Rear of 80 Clara Street" becomes "80 Clara Street". Not
+    wired; the one address is entered by hand.
+  - **The newest material in the archive, and it is all `circa`.** Every one of
+    the 528 is dated "between 2014 to 2016", so no finding here can ever be
+    sharper than a three-year range — and several of the businesses are
+    presumably still trading. That is a building fact, not a privacy one:
+    "take the building, the business, the architect and the photographer".
+
+  One placement was demoted by hand. EAS holds 353 EDDY ST and files no parcel
+  on it, so it was placed by point in 0338020 — whose own range is 365-365,
+  with 0338021 (355 Eddy) numerically in between. Recorded as a conflict rather
+  than adjudicated. 289 Eddy is the same shape and was kept, because it is the
+  immediate neighbour of 291 with nothing in between, which is the ordinary
+  incomplete-range case.)
 
 - **Verified:** 2026-09-04 (correction pass over SFP 162 and a redaction pass
   over the whole source; no new material read. Closed #247 and #248, both of

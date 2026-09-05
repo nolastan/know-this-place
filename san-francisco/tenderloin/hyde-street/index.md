@@ -7,6 +7,7 @@ The parcels on Hyde Street documented here so far, from the city's address, asse
 - [125](125/) — A 1931 store building in the Uptown Tenderloin Historic District, with reroofing permitted in 2019.
 - [135–145](135/) — A 1920 garage in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 1996.
 - [222–228](222/) — A 1911 4-unit building with a ground-floor store in the Uptown Tenderloin Historic District, with plumbing work permitted in 2001.
+- [230–234](230/) — A 1931 office building in the Uptown Tenderloin Historic District, with deck work permitted in 1994.
 - [240](240/) — A 1929 hotel in the Uptown Tenderloin Historic District, with reroofing permitted in 2026.
 - [245–257](245/) — An office building in the Uptown Tenderloin Historic District, with one permit record from 2019.
 - [300–302](300/) — A 1917 19-unit apartment building in the Uptown Tenderloin Historic District, with reroofing permitted in 2018.
