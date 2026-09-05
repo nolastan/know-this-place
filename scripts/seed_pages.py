@@ -1722,6 +1722,16 @@ def glance_panel_html(rec: dict, indent: str) -> str:
         rows.append(("ic-value", "Assessed fixtures", f"${a['assessed_fixtures_value']:,}"))
     if a.get("last_sale_date"):
         rows.append(("ic-value", "Last sale", long_date(a["last_sale_date"])))
+    # A property-tax exemption is the roll's own explanation for an assessment
+    # that otherwise reads oddly — a church, a school, a nonprofit's building.
+    # Six pages carried the key with nowhere to render it. `exemption` is the
+    # roll's `exemption_code_definition` ("Welfare", "Church"); the amount is
+    # its `misc_exemption_value`, shown alongside when a page has it.
+    exemption = a.get("exemption")
+    if exemption:
+        val = a.get("exemption_value")
+        rows.append(("ic-value", "Tax exemption",
+                     f"{exemption} — ${val:,}" if val else str(exemption)))
     hs = rec.get("historic_status") or {}
     code = (hs.get("ceqa_status_code") or "").strip()
     if code:
