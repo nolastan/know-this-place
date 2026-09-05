@@ -761,6 +761,14 @@ records carry one; exactly one of those also carries a street number.
     house number to `address_from_title` on all 100 records that name it —
     in three spellings, which is why `NOT_A_STREET_PREFIX` matches the front
     of a name rather than the whole of it. The real count is **51, not 151**.
+    The guard was measured over the 57,467 records in the `Photographs` set —
+    96% of the harvest, and the only set holding SFP 179 — plus every findings
+    file in the repository, where nothing committed moves. The four other sets
+    were unreachable: the complete five-set harvest was in a worktree that has
+    since been cleaned up, and only the `Photographs` copy survives. Both
+    guards only ever *remove* an address, so the exposure is a record in an
+    unscanned set the guard would also have caught, not a wrong address on a
+    page.
   - **An organisation named for a street number it is not at.** 826 Valencia's
     Tenderloin writing centre is at 180 Golden Gate Avenue. Refusing
     "VALENCIA WRITING CENTER" stops the wrong address; it does not produce the
