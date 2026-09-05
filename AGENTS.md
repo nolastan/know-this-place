@@ -150,6 +150,17 @@ san-francisco/                        city
 - Hub pages (`index.md`/`index.html` at city, neighborhood, street and
   historic-district level) list and link what's beneath them. Keep them
   current when adding pages.
+  - **A neighborhood hub also links sideways, and those two sections are
+    hand-maintained.** "Historic districts here" lists every district with a
+    hub that holds a documented building in this neighborhood; "Adjacent
+    neighborhoods" is a sentence or two naming the ones it borders, per the
+    city's Analysis Neighborhoods boundary file. `write_neighborhood_hub`
+    rewrites only the street list and does not know about either, so nothing
+    regenerates them: when a neighborhood's first page in a new district lands,
+    add the district to that hub by hand, in `index.md` and `index.html` both.
+    Neither section uses the `<a>…</a><br><span class="hook">` pairing, which
+    is what keeps `validate.py`'s `check_hub_sync` out of them — so the two
+    files agreeing is on you.
 
 ## Page lifecycle
 

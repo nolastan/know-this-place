@@ -12,3 +12,10 @@ A hillside residential district in the city's south-east, between McLaren Park a
 - [University Street](university-street/) — 1 building, built 1932.
 - [Wayland Street](wayland-street/) — 1 building, built 2004.
 - [Woolsey Street](woolsey-street/) — 1 building, built 1961.
+
+## Adjacent neighborhoods
+
+[Bernal Heights](../bernal-heights/) is north-west across Highway 101 and
+[Bayview Hunters Point](../bayview-hunters-point/) east beyond Bayshore
+Boulevard. [The Excelsior](../excelsior/) adjoins west over the ridge, and
+[Visitacion Valley](../visitacion-valley/) lies south past McLaren Park.

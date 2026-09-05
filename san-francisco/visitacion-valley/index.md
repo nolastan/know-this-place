@@ -8,3 +8,10 @@ The city's Visitacion Valley analysis neighborhood, in the south-eastern corner 
 - [Leland Avenue](leland-avenue/) — 1 building.
 - [Raymond Avenue](raymond-avenue/) — 1 building, built 1940.
 - [Schwerin Street](schwerin-street/) — 1 building, built 1939.
+
+## Adjacent neighborhoods
+
+McLaren Park closes the valley to the west, with [the
+Excelsior](../excelsior/) beyond it. [Portola](../portola/) adjoins
+north-east and [Bayview Hunters Point](../bayview-hunters-point/) east
+across Bayshore Boulevard; the San Mateo County line is the southern edge.

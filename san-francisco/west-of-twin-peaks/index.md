@@ -57,3 +57,21 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Winston Drive](winston-drive/) — 1 building, built 1900.
 - [Woodside Avenue](woodside-avenue/) — 1 building.
 - [Yerba Buena Avenue](yerba-buena-avenue/) — 1 building, built 1928; 1 in the St. Francis Wood Historic District.
+
+## Historic districts here
+
+- [Forest Hill Historic District](../historic-districts/forest-hill/)
+- [Ingleside Terrace Historic District](../historic-districts/ingleside-terrace/)
+- [San Francisco Neighborhood Movie Theater Historic District (Discontiguous)](../historic-districts/san-francisco-neighborhood-movie-theater-discontiguous/)
+- [St. Francis Wood Historic District](../historic-districts/st-francis-wood/)
+- [West Portal Park Historic District](../historic-districts/west-portal-park/)
+
+## Adjacent neighborhoods
+
+The residence parks run from the Twin Peaks ridge down to Ocean Avenue. [The
+Inner Sunset](../inner-sunset/) adjoins north and [Sunset /
+Parkside](../sunset-parkside/) west, [Glen Park](../glen-park/) east across
+Glen Canyon, and [the Outer Mission](../outer-mission/) and [Oceanview /
+Merced / Ingleside](../oceanview-merced-ingleside/) south. [Ingleside
+Terraces](../ingleside-terraces/), one of the tracts inside this boundary,
+is filed on its own here.

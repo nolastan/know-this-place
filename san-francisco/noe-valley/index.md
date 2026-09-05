@@ -28,3 +28,15 @@ that study area, as an example of the Second Bay Tradition.
 - [Turquoise Way](turquoise-way/) — 1 building, built 1962; 1 in the Diamond Heights Historic District.
 - [Valley Street](valley-street/) — 1 building, built 1900.
 - [Vicksburg Street](vicksburg-street/) — 1 building, built 1900.
+
+## Historic districts here
+
+- [Diamond Heights Historic District](../historic-districts/diamond-heights/)
+- [San Francisco 1952 Firehouse Bond Act Thematic District (Discontiguous)](../historic-districts/san-francisco-1952-firehouse-bond-act-thematic-district-discontiguous/)
+
+## Adjacent neighborhoods
+
+[The Castro](../castro/) is north over the ridge and [the
+Mission](../mission/) north-east across Dolores Street. [Bernal
+Heights](../bernal-heights/) lies east beyond San Jose Avenue and [Glen
+Park](../glen-park/) south around the head of the valley.

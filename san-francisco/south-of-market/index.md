@@ -63,3 +63,27 @@ The wide blocks west of Fourth Street, between Market and Harrison. Coverage her
 - [Washburn Street](washburn-street/) — 2 buildings, built 1906–1924; 2 in the Western SOMA Light Industrial and Residential Historic District.
 - [Welsh Street](welsh-street/) — 5 buildings, built 1906–1986.
 - [Zoe Street](zoe-street/) — 4 buildings, built 1907–2024.
+
+## Historic districts here
+
+- [Bluxome Townsend Historic District](../historic-districts/bluxome-townsend/)
+- [Civic Center Historic District](../historic-districts/civic-center/)
+- [Clyde and Crooks Historic District](../historic-districts/clyde-and-crooks/)
+- [Kearny-Market-Mason-Sutter Conservation District](../historic-districts/kearny-market-mason-sutter/)
+- [Market Street Theatre and Loft Historic District](../historic-districts/market-street-theatre-and-loft/)
+- [Mint-Mission Conservation District](../historic-districts/mint-mission/)
+- [San Francisco Neighborhood Movie Theater Historic District (Discontiguous)](../historic-districts/san-francisco-neighborhood-movie-theater-discontiguous/)
+- [Sixth Street Lodging House Historic District](../historic-districts/sixth-street-lodging-house/)
+- [SoMa LGBTQ Historic District](../historic-districts/soma-lgbtq/)
+- [South End Historic District](../historic-districts/south-end/)
+- [South End Historic District Addition](../historic-districts/south-end-addition/)
+- [Western SOMA Light Industrial and Residential Historic District](../historic-districts/western-soma-light-industrial-and-residential/)
+
+## Adjacent neighborhoods
+
+Market Street is the northern boundary, with [Union
+Square](../union-square/) and [the East Cut](../east-cut/) on the other side
+of it and [the Tenderloin](../tenderloin/) north-west. [The
+Mission](../mission/) begins south-west beyond Division Street, and [South
+Beach](../south-beach/) and [Mission Bay](../mission-bay/) lie south-east
+towards the water.

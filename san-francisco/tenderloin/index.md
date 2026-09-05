@@ -26,3 +26,20 @@ The flat blocks west of Union Square, in the city's Tenderloin analysis neighbor
 - [Turk Street](turk-street/) — 2 buildings, built 1924–2022.
 - [United Nations Plaza](united-nations-plaza/) — 1 building, built 1982; 1 in the Civic Center Historic District.
 - [Van Ness Avenue](van-ness-avenue/) — 1 building.
+
+## Historic districts here
+
+- [Civic Center Historic District](../historic-districts/civic-center/)
+- [Kearny-Market-Mason-Sutter Conservation District](../historic-districts/kearny-market-mason-sutter/)
+- [Lower Nob Hill Apartment Hotel Historic District](../historic-districts/lower-nob-hill-apartment-hotel/)
+- [Market Street Theatre and Loft Historic District](../historic-districts/market-street-theatre-and-loft/)
+- [San Francisco Civic Center National Historic Landmark District](../historic-districts/san-francisco-civic-center-national-historic-landmark-district/)
+- [Uptown Tenderloin Historic District](../historic-districts/uptown-tenderloin/)
+
+## Adjacent neighborhoods
+
+[Union Square](../union-square/) adjoins north-east and [Nob
+Hill](../nob-hill/) north up the grade from Bush Street. [South of
+Market](../south-of-market/) is south-east across Market Street, [Hayes
+Valley](../hayes-valley/) west beyond Van Ness Avenue, and [the Western
+Addition](../western-addition/) north-west.

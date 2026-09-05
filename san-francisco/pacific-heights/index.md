@@ -36,3 +36,22 @@ An affluent district on the ridge north of Japantown, known for large houses and
 - [Washington Street](washington-street/) — The Spreckels Mansion, an Article 10 individual landmark.
 - [Webster Street](webster-street/) — 1 building, built 1905.
 - [Wilmot Street](wilmot-street/) — 1 building, built 1905.
+
+## Historic districts here
+
+- [Cow Hollow First Bay Tradition Historic District](../historic-districts/cow-hollow-first-bay-tradition/)
+- [Japantown Community & Cultural Historic District](../historic-districts/japantown-community-and-cultural/)
+- [Pacific Heights Historic District](../historic-districts/pacific-heights/)
+- [Raycliff Terrace Historic District](../historic-districts/raycliff-terrace/)
+- [San Francisco 1952 Firehouse Bond Act Thematic District (Discontiguous)](../historic-districts/san-francisco-1952-firehouse-bond-act-thematic-district-discontiguous/)
+- [San Francisco Neighborhood Movie Theater Historic District (Discontiguous)](../historic-districts/san-francisco-neighborhood-movie-theater-discontiguous/)
+- [Upper Fillmore Neighborhood Commercial Historic District](../historic-districts/upper-fillmore-neighborhood-commercial/)
+
+## Adjacent neighborhoods
+
+[The Marina](../marina/) lies below the north slope and [Russian
+Hill](../russian-hill/) east beyond Van Ness Avenue, with [Nob
+Hill](../nob-hill/) past that. [Japantown](../japantown/) and [the Western
+Addition](../western-addition/) adjoin south of Post and Geary, and
+[Presidio Heights](../presidio-heights/) continues west across Presidio
+Avenue.

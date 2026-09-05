@@ -36,3 +36,24 @@ that neighborhood.
 - [Vallejo Street](vallejo-street/) — 1 building, built 1957; 1 in the Russian Hill-Vallejo Street Crest Historic District.
 - [Van Ness Avenue](van-ness-avenue/) — 8 buildings, built 1911–1919.
 - [Washington Street](washington-street/) — 2 buildings, built 1915.
+
+## Historic districts here
+
+- [Chinatown Historic District](../historic-districts/chinatown/)
+- [Civic Center Historic District](../historic-districts/civic-center/)
+- [Commercial-Leidesdorff Conservation District](../historic-districts/commercial-leidesdorff/)
+- [Front-California Conservation District](../historic-districts/front-california/)
+- [Kearny-Market-Mason-Sutter Conservation District](../historic-districts/kearny-market-mason-sutter/)
+- [Lower Nob Hill Apartment Hotel Historic District](../historic-districts/lower-nob-hill-apartment-hotel/)
+- [Russian Hill-Vallejo Street Crest Historic District](../historic-districts/russian-hill-vallejo-street-crest/)
+- [San Francisco Civic Center National Historic Landmark District](../historic-districts/san-francisco-civic-center-national-historic-landmark-district/)
+- [Uptown Tenderloin Historic District](../historic-districts/uptown-tenderloin/)
+
+## Adjacent neighborhoods
+
+[Chinatown](../chinatown/) is east down the grade and [Russian
+Hill](../russian-hill/) north across Broadway. [Union
+Square](../union-square/) and [the Financial
+District](../financial-district/) lie south-east and east below the hill,
+[the Tenderloin](../tenderloin/) south beyond Bush Street, and [the Western
+Addition](../western-addition/) west past Van Ness Avenue.

@@ -119,3 +119,32 @@ the city's own records. Condominium parcels are held back until the building
 each unit belongs to can be established, and parcels missing from the roll are
 skipped. What the pages don't yet carry is the history — architects, builders,
 who lived there — and that arrives one building at a time.
+
+## Historic districts here
+
+- [19th and Noe Historic District](../historic-districts/19th-and-noe/)
+- [Alert Alley Early Residential Historic District](../historic-districts/alert-alley-early-residential/)
+- [Castro & Liberty Streets Historic District](../historic-districts/castro-and-liberty-streets/)
+- [Chula-Abbey Early Residential District](../historic-districts/chula-abbey/)
+- [Chula-Dolores-17th Fire Survivors and Reconstruction Historic District](../historic-districts/chula-dolores-17th-fire-survivors-and-reconstruction/)
+- [Cole Valley Historic District](../historic-districts/cole-valley/)
+- [Duboce Park Historic District](../historic-districts/duboce-park/)
+- [Duboce Triangle Historic District](../historic-districts/duboce-triangle/)
+- [Duboce Triangle Historic District Extension](../historic-districts/duboce-triangle-extension/)
+- [Eureka Valley Commercial & Castro Village LGBTQ+ Historic District](../historic-districts/eureka-valley-commercial-and-castro-village-lgbtq/)
+- [Haight Ashbury Counterculture Historic District](../historic-districts/haight-ashbury-counterculture/)
+- [Hartford Street Historic District](../historic-districts/hartford-street/)
+- [Hayes Valley Residential Historic District](../historic-districts/hayes-valley-residential/)
+- [San Francisco Neighborhood Movie Theater Historic District (Discontiguous)](../historic-districts/san-francisco-neighborhood-movie-theater-discontiguous/)
+- [Upper Market Street Commercial Historic District](../historic-districts/upper-market-street-commercial/)
+- [Upper Market Street Commercial Historic District Extension](../historic-districts/upper-market-street-commercial-extension/)
+
+## Adjacent neighborhoods
+
+[The Mission](../mission/) adjoins east across Dolores and Church Streets,
+[Noe Valley](../noe-valley/) south over the ridge, and [Hayes
+Valley](../hayes-valley/) north-east where Duboce Triangle meets Market
+Street. [Haight Ashbury](../haight-ashbury/) is north across Buena Vista
+Park. West the ground climbs through [Corbett Heights](../corbett-heights/)
+— inside the same city boundary, filed separately here — to Twin Peaks, with
+[the Inner Sunset](../inner-sunset/) on the far slope.

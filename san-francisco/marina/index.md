@@ -40,3 +40,19 @@ A low-lying district on filled ground along the northern waterfront, largely bui
 - [Van Ness Avenue](van-ness-avenue/) — 1 building, built 1929.
 - [Webster Street](webster-street/) — 1 building, built 1900.
 - [Yacht Road](yacht-road/) — 1 building, built 1929.
+
+## Historic districts here
+
+- [Baker Street Historic District](../historic-districts/baker-street/)
+- [Cow Hollow First Bay Tradition Historic District](../historic-districts/cow-hollow-first-bay-tradition/)
+- [Marina Corporation Residential Historic District](../historic-districts/marina-corporation-residential/)
+- [Marina Historic District](../historic-districts/marina/)
+- [Midcentury Recreation Historic District (Discontiguous)](../historic-districts/midcentury-recreation-discontiguous/)
+- [Pacific Heights Historic District](../historic-districts/pacific-heights/)
+- [San Francisco Neighborhood Movie Theater Historic District (Discontiguous)](../historic-districts/san-francisco-neighborhood-movie-theater-discontiguous/)
+
+## Adjacent neighborhoods
+
+The bay closes these blocks to the north and the Presidio to the west.
+[Pacific Heights](../pacific-heights/) rises south up the slope from Union
+Street, and [Russian Hill](../russian-hill/) is east beyond Van Ness Avenue.

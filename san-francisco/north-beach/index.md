@@ -47,3 +47,22 @@ and the upper reaches of Grant Avenue, which was formerly Dupont Street.
 - [Walter U Lum Place](walter-u-lum-place/) — 2 buildings, built 1907–1913; 2 in the Chinatown Historic District.
 - [Waverly Place](waverly-place/) — 16 buildings, built 1906–1911; 16 in the Chinatown Historic District.
 - [Wentworth Place](wentworth-place/) — 3 buildings, built 1907; 3 in the Chinatown Historic District.
+
+## Historic districts here
+
+- [Chinatown Historic District](../historic-districts/chinatown/)
+- [Gardner Dailey/Telegraph Hill Historic District](../historic-districts/gardner-dailey-telegraph-hill/)
+- [Jackson Square Historic District](../historic-districts/jackson-square/)
+- [Jackson Square Historic District Extension](../historic-districts/jackson-square-extension/)
+- [Northeast Waterfront Historic District](../historic-districts/northeast-waterfront/)
+- [Powell Street Shops Historic District](../historic-districts/powell-street-shops/)
+- [Telegraph Hill Historic District](../historic-districts/telegraph-hill/)
+- [Upper Grant Avenue Historic District](../historic-districts/upper-grant-avenue/)
+- [Washington Square Historic District](../historic-districts/washington-square/)
+
+## Adjacent neighborhoods
+
+[Chinatown](../chinatown/) adjoins south along Grant Avenue and Broadway and
+[the Financial District](../financial-district/) south-east below Telegraph
+Hill. [Russian Hill](../russian-hill/) rises south-west up the Vallejo
+Street grade.

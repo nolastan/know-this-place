@@ -18,3 +18,15 @@ A former industrial and warehouse district along the bay south of Market, much o
 - [The Embarcadero](the-embarcadero/) — 2 buildings, built 1896–1984; 1 in the Port of San Francisco Embarcadero Historic District.
 - [Third Street](3rd-street/) — A 1920 bank building marking the site of Jack London's 1876 birthplace.
 - [Townsend Street](townsend-street/) — 6 buildings, built 1900–1922; 6 in the South End Historic District.
+
+## Historic districts here
+
+- [South End Historic District](../historic-districts/south-end/)
+
+## Adjacent neighborhoods
+
+[The East Cut](../east-cut/) adjoins north and [the Financial
+District](../financial-district/) further north along the Embarcadero — this
+site files the three separately, though the city's own boundary counts them
+as one neighborhood. [South of Market](../south-of-market/) is west and
+[Mission Bay](../mission-bay/) south past the ballpark.

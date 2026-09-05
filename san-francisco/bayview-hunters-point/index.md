@@ -52,3 +52,17 @@ San Francisco's south-eastern quarter, settled from the 1860s as the industrial 
 - [Venus Street](venus-street/) — 1 building, built 1941.
 - [Whitney Young Circle](whitney-young-circle/) — 1 building.
 - [Yosemite Avenue](yosemite-avenue/) — 1 building, built 1915.
+
+## Historic districts here
+
+- [India Basin Scow Schooner Boatyard Vernacular Cultural Landscape](../historic-districts/india-basin-scow-schooner-boatyard-vernacular-cultural-landscape/)
+- [San Francisco 1952 Firehouse Bond Act Thematic District (Discontiguous)](../historic-districts/san-francisco-1952-firehouse-bond-act-thematic-district-discontiguous/)
+
+## Adjacent neighborhoods
+
+Islais Creek is the northern boundary: across it are
+[Dogpatch](../dogpatch/) on the flat ground and [Potrero
+Hill](../potrero-hill/) above it. [Bernal Heights](../bernal-heights/) and
+[Portola](../portola/) sit north-west and west beyond Bayshore Boulevard,
+and [Visitacion Valley](../visitacion-valley/) continues south-west to the
+county line.

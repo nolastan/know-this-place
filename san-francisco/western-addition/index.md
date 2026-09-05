@@ -30,3 +30,19 @@ A large central district west of Van Ness that largely survived the 1906 fire, m
 - [Turk Street](turk-street/) — 1 building, built 1977.
 - [Van Ness Avenue](van-ness-avenue/) — 10 buildings, built 1900–2019.
 - [Willow Street](willow-street/) — 1 building, built 1931.
+
+## Historic districts here
+
+- [Alamo Square Historic District](../historic-districts/alamo-square/)
+- [Civic Center Historic District](../historic-districts/civic-center/)
+- [Hayes Valley Residential Historic District](../historic-districts/hayes-valley-residential/)
+- [NOPA Historic District](../historic-districts/nopa/)
+
+## Adjacent neighborhoods
+
+[Japantown](../japantown/) is cut out of these blocks around Post and
+Buchanan Streets. [Pacific Heights](../pacific-heights/) rises north beyond
+Geary Boulevard, [Lone Mountain / USF](../lone-mountain/) lies west past
+Masonic Avenue, [Hayes Valley](../hayes-valley/) south, and [the
+Tenderloin](../tenderloin/) and [Nob Hill](../nob-hill/) east across Van
+Ness Avenue.

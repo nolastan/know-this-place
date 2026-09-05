@@ -24,3 +24,15 @@ Court.
 - [Victoria Street](victoria-street/) — 5 buildings, built 1912–1927; 5 in the Ingleside Terrace Historic District.
 - [Westwood Drive](westwood-drive/) — 1 building, built 1924.
 
+## Historic districts here
+
+- [Ingleside Terrace Historic District](../historic-districts/ingleside-terrace/)
+
+## Adjacent neighborhoods
+
+The tract sits inside the city's West of Twin Peaks boundary, and [the rest
+of that neighborhood](../west-of-twin-peaks/) surrounds it north and east.
+[Oceanview / Merced / Ingleside](../oceanview-merced-ingleside/) — which
+carries the Ingleside name from the same racetrack, not from this tract —
+lies south across Ocean Avenue, and [Lakeshore](../lakeshore/) west beyond
+Junipero Serra Boulevard.

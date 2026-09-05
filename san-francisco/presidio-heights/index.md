@@ -32,3 +32,17 @@ The city's Presidio Heights analysis neighborhood, on the ridge between the Pres
 - [Walnut Street](walnut-street/) — 1 building, built 1906; 1 in the Presidio Heights Historic District.
 - [Washington Street](washington-street/) — 3 buildings, built 1906–1950; 3 in the Presidio Heights Historic District.
 - [Wood Street](wood-street/) — 1 building, built 1952.
+
+## Historic districts here
+
+- [Jordan Park Historic District](../historic-districts/jordan-park/)
+- [Midcentury Recreation Historic District (Discontiguous)](../historic-districts/midcentury-recreation-discontiguous/)
+- [Presidio Heights Historic District](../historic-districts/presidio-heights/)
+- [San Francisco 1952 Firehouse Bond Act Thematic District (Discontiguous)](../historic-districts/san-francisco-1952-firehouse-bond-act-thematic-district-discontiguous/)
+
+## Adjacent neighborhoods
+
+The Presidio is the northern boundary. [Pacific
+Heights](../pacific-heights/) continues east from Presidio Avenue, [Lone
+Mountain / USF](../lone-mountain/) lies south-east, and [the Inner
+Richmond](../inner-richmond/) west and south-west across Arguello Boulevard.

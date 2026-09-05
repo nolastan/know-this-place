@@ -37,3 +37,15 @@ Northeast Mission Historic Resource Survey, adopted in 2011.
 - [Townsend Street](townsend-street/) — 2 buildings, built 2002–2008.
 - [Vermont Street](vermont-street/) — 5 buildings, built 1970–1998.
 - [Wisconsin Street](wisconsin-street/) — 2 buildings, built 1916–1971.
+
+## Historic districts here
+
+- [Showplace Square Heavy Timber and Steel-frame Brick Warehouse and Factory Historic District](../historic-districts/showplace-square-heavy-timber-and-steel-frame-brick-warehouse-and-factory/)
+
+## Adjacent neighborhoods
+
+[South of Market](../south-of-market/) adjoins north-west across Division
+Street and [South Beach](../south-beach/) north along the water. [Potrero
+Hill](../potrero-hill/) rises south-west beyond Mariposa Street, with
+[Dogpatch](../dogpatch/) on the flat ground below it, and [the
+Mission](../mission/) is west across Potrero Avenue.

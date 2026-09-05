@@ -17,3 +17,15 @@ A residential district south of the Mission proper, built up in the first decade
 - [San Jose Avenue](san-jose-avenue/) — The San Francisco and San Mateo Railway's 1901 Geneva car barn, a San Francisco landmark since 1985.
 - [Santa Rosa Avenue](santa-rosa-avenue/) — 1 building, built 1952.
 - [Sergeant John V Young Street](sergeant-john-v-young-street/) — The Ingleside police station, built 1909-1910 on land ceded from Balboa Park.
+
+## Historic districts here
+
+- [Midcentury Recreation Historic District (Discontiguous)](../historic-districts/midcentury-recreation-discontiguous/)
+
+## Adjacent neighborhoods
+
+[The Excelsior](../excelsior/) adjoins east along Mission Street and [Bernal
+Heights](../bernal-heights/) north-east beyond Alemany Boulevard. [Glen
+Park](../glen-park/) is north past the Interstate 280 interchange, [West of
+Twin Peaks](../west-of-twin-peaks/) north-west above it, and [Oceanview /
+Merced / Ingleside](../oceanview-merced-ingleside/) west across the freeway.

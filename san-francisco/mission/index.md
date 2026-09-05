@@ -124,3 +124,49 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [Wiese Street](wiese-street/) — 1 building, built 2000.
 - [Woodward Street](woodward-street/) — 20 buildings, built 1906–2018; 20 in the Woodward St. Romeo Flats Reconstruction Historic District.
 - [York Street](york-street/) — 184 buildings, built 1880–1999; 23 in the East Mission Florida-to-Hampshire Streets Historic District.
+
+## Historic districts here
+
+- [16th and Valencia Streets Post-Fire Historic District](../historic-districts/16th-and-valencia-streets-post-fire/)
+- [23rd Street Shops and Rowhouses Historic District](../historic-districts/23rd-street-shops-and-rowhouses/)
+- [Alabama Street Pioneers Historic District](../historic-districts/alabama-street-pioneers/)
+- [Capp and Howard Streets Mid-Block Fire Line Historic District](../historic-districts/capp-and-howard-streets-mid-block-fire-line/)
+- [East Mission Florida-to-Hampshire Streets Historic District](../historic-districts/east-mission-florida-to-hampshire-streets/)
+- [Elgin Park-Pearl Street Reconstruction Historic District](../historic-districts/elgin-park-pearl-street-reconstruction/)
+- [Fair Oaks Street Historic District](../historic-districts/fair-oaks-street/)
+- [Gottlieb Knopf Block Historic District](../historic-districts/gottlieb-knopf-block/)
+- [Guerrero Street Fire Line Historic District](../historic-districts/guerrero-street-fire-line/)
+- [Hampshire Street False-Front Historic District](../historic-districts/hampshire-street-false-front/)
+- [Hidalgo Terrace Historic District](../historic-districts/hidalgo-terrace/)
+- [Horner's Addition East Historic District](../historic-districts/horner-s-addition-east/)
+- [Inner Mission Boulevards and Alleys Reconstruction Historic District](../historic-districts/inner-mission-boulevards-and-alleys-reconstruction/)
+- [Jessie-McCoppin-Stevenson Streets Reconstruction Historic District](../historic-districts/jessie-mccoppin-stevenson-streets-reconstruction/)
+- [Juri Street Historic District](../historic-districts/juri-street/)
+- [Lexington and San Carlos Streets Reconstruction Historic District](../historic-districts/lexington-and-san-carlos-streets-reconstruction/)
+- [Liberty Hill Historic District](../historic-districts/liberty-hill/)
+- [Liberty Street Historic District](../historic-districts/liberty-street/)
+- [Market Street Masonry Historic District](../historic-districts/market-street-masonry/)
+- [Mission Miracle Mile 19th to 20th Streets Historic District](../historic-districts/mission-miracle-mile-19th-to-20th-streets/)
+- [Mission Miracle Mile at 17th Street Historic District](../historic-districts/mission-miracle-mile-at-17th-street/)
+- [Olsen's Queen Anne Cottages Historic District](../historic-districts/olsen-s-queen-anne-cottages/)
+- [Ramona Street Historic District](../historic-districts/ramona-street/)
+- [San Francisco 1952 Firehouse Bond Act Thematic District (Discontiguous)](../historic-districts/san-francisco-1952-firehouse-bond-act-thematic-district-discontiguous/)
+- [San Francisco Neighborhood Movie Theater Historic District (Discontiguous)](../historic-districts/san-francisco-neighborhood-movie-theater-discontiguous/)
+- [Shotwell Street Historic District](../historic-districts/shotwell-street/)
+- [Showplace Square Heavy Timber and Steel-frame Brick Warehouse and Factory Historic District](../historic-districts/showplace-square-heavy-timber-and-steel-frame-brick-warehouse-and-factory/)
+- [SoMa LGBTQ Historic District](../historic-districts/soma-lgbtq/)
+- [South Mission Avenues and Alleys Historic District](../historic-districts/south-mission-avenues-and-alleys/)
+- [South Van Ness Avenue-Shotwell-Folsom Streets Historic District](../historic-districts/south-van-ness-avenue-shotwell-folsom-streets/)
+- [Sycamore Street Reconstruction Historic District](../historic-districts/sycamore-street-reconstruction/)
+- [Von Schroeder-Welsh Block Historic District](../historic-districts/von-schroeder-welsh-block/)
+- [Western SOMA Light Industrial and Residential Historic District](../historic-districts/western-soma-light-industrial-and-residential/)
+- [Woodward St. Romeo Flats Reconstruction Historic District](../historic-districts/woodward-st-romeo-flats-reconstruction/)
+
+## Adjacent neighborhoods
+
+[The Castro](../castro/) adjoins west across Dolores and Church Streets,
+[Noe Valley](../noe-valley/) south-west over the hill, and [Bernal
+Heights](../bernal-heights/) south beyond Cesar Chavez Street. [Potrero
+Hill](../potrero-hill/) is east across Potrero Avenue, [South of
+Market](../south-of-market/) north-east past Division Street, and [Hayes
+Valley](../hayes-valley/) north-west across Market Street.
