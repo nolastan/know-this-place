@@ -1,6 +1,7 @@
 # digitalsf — DigitalSF, San Francisco Public Library (primary)
 
-> **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · register:
+> **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · traps:
+> [../LESSONS.md](../LESSONS.md) · register:
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id `digitalsf`.
 >
 > - **Kind:** catalogued digital archive (photographs, city records, scanned documents) · **Tier:** primary · **Status:** open
@@ -382,7 +383,7 @@ so a collection is one batch until that number passes about fifteen hundred.
   end read literally: 94 for 194, 73 for 173, neither of which EAS holds.
   Eleven titles corpus-wide. The extractor now reads the whole construct, fills
   the short high end in from the low, and emits **one finding per printed
-  number** per "A row of buildings is not a range" in ../AGENTS.md, keeping the
+  number** per "A row of buildings is not a range" in ../LESSONS.md, keeping the
   caption's own words in `extra.address_as_printed`.
 
 - **A year-shaped number with no street type is a year about half the time.**

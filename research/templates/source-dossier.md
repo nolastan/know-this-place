@@ -1,6 +1,7 @@
 # <source-id> — <Short title> (<primary|secondary|tertiary>)
 
-> **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · register:
+> **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · traps:
+> [../LESSONS.md](../LESSONS.md) · register:
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id `<source-id>`.
 >
 > - **Kind:** <newspaper OCR | book | journal | newsletter | PDF report | directory | photo archive> · **Tier:** <secondary> · **Status:** <open|done|blocked|reference>

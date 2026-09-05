@@ -1,6 +1,7 @@
 # spur-popos-guide — SPUR, *Secrets of San Francisco* (secondary)
 
-> **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · register:
+> **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · traps:
+> [../LESSONS.md](../LESSONS.md) · register:
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id `spur-popos-guide`.
 >
 > - **Kind:** PDF field guide · **Tier:** secondary · **Status:** done

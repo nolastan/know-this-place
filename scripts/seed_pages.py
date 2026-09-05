@@ -3213,7 +3213,7 @@ def hub_shell(path: str, title: str, desc: str, crumbs: str, main_html: str,
               sources: str, feedback_title: str, ld: list = None) -> str:
     """The shared page chrome for the two historic-district page types.
 
-    The skeleton in shared/AGENTS.md, written once because these two writers
+    The skeleton in shared/BLOCKS.md, written once because these two writers
     produce it identically. The street and neighborhood hubs predate this and
     keep their own copy — routing them through here would re-render every hub
     on the site for no change a reader could see.

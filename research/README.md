@@ -9,12 +9,13 @@ everything here is about **finding it** — reading newspaper archives, mining
 survey PDFs, combing newsletters, and turning what turns up into verified,
 sourced facts a page can carry.
 
-Two documents run it:
+Three documents run it:
 
 - **[AGENTS.md](AGENTS.md)** — the rulebook. Why the module exists, what a run
-  is, the evidence bar, the statuses, and the lessons that already cost
-  something.
+  is, the evidence bar, the statuses. Short on purpose; read it whole.
 - **[RUNBOOK.md](RUNBOOK.md)** — the procedure, step by step.
+- **[LESSONS.md](LESSONS.md)** — 147 traps that already cost a session or a
+  correction. A register to grep before a step, never to read front to back.
 
 ## What we're looking for
 
@@ -52,11 +53,13 @@ has its own half of the runbook.
 
 ```
 research/
-  AGENTS.md          The rulebook: goal, the run, evidence bar, statuses, lessons
+  AGENTS.md          The rulebook: goal, the run, evidence bar, statuses
   RUNBOOK.md         The procedure: both kinds of run, step by step
+  LESSONS.md         The traps, one bullet each — grep, don't read
   README.md          This file
   SOURCES.md         The register — every source, its status and its yield —
-                     plus the leads table and the triage notes
+                     plus the leads table
+  TRIAGE.md          What a prospecting pass found, one entry per held lead
   sources/<id>.md    One dossier per source: access, cautions, coverage log
   findings/          The chain of custody, one JSON file per batch
   schema/            The findings JSON schema

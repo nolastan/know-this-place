@@ -15,7 +15,7 @@ dated entry on the timeline, and the **facts about the building** — architect,
 builder, developer, the year it was finished — which fill the page's own fields
 and are attributed from the Sources footer. Filing the headline and dropping
 the architect throws away the half a page is actually for. AGENTS.md →
-"Putting it on the page" has the limits, and the sharpest is that the `building`
+"What an entry is" has the limits, and the sharpest is that the `building`
 block describes the building that stands there: a proposal's design team does
 not go on the page of the parking lot it would replace.
 
@@ -27,7 +27,9 @@ pages are about buildings.
 
 ```
 news/
-  AGENTS.md           The rulebook: pipeline, cursors, the screen, privacy
+  AGENTS.md           The rulebook: what an entry is, privacy, the pipeline map
+  PIPELINE.md         The working detail per stage: cursors, the screen,
+                      reading an article, the markup, the items schema
   README.md           This file
   feeds.json          The register — one row per source, and why it behaves as it does
   state/cursors.json  What each feed has already been considered up to
@@ -54,9 +56,9 @@ python3 news/tools/check.py --stats                      # yield so far
 
 Then, for anything worth keeping: write it into `news/items/<feed>/<date>.json`,
 resolve it with the research module's resolver, seed the parcel if it has no
-page yet, publish it as a timeline entry per [AGENTS.md](AGENTS.md) → "Putting
-it on the page", and put its card on the homepage's **In the news** grid per
-[AGENTS.md](AGENTS.md) → "The homepage carries the newest six". The grid holds
+page yet, publish it as a timeline entry per [AGENTS.md](AGENTS.md) → "What an
+entry is", and put its card on the homepage's **In the news** grid per
+[PIPELINE.md](PIPELINE.md) → "The homepage grid". The grid holds
 the six newest entries on the site, and a story filed on a page nobody has a
 reason to open yet is a story nobody reads.
 

@@ -8,6 +8,23 @@ disk, facts extracted, addresses resolved, pages published, work checked, books
 closed. Not one stage. Not one handoff. The whole chain, for as much material
 as a session can hold.
 
+**Read the step you are on.** A mining run walks 1–6 in order; a prospecting
+run is a different document from "A prospecting run" down.
+
+| Step | section |
+|---|---|
+| — | [Sizing a run](#sizing-a-run) · [Picking the run](#picking-the-run) |
+| 1 | [Get the material readable](#1-get-the-material-readable) — and the [access traps](#access-traps-this-project-has-already-paid-for) |
+| 2 | [Read it — findings out](#2-read-it--findings-out) |
+| 3 | [Place it — an address becomes a parcel](#3-place-it--an-address-becomes-a-parcel), incl. [the renumbering traps](#the-renumbering-traps) |
+| 4 | [Publish it](#4-publish-it) — and [the rules that catch publishers out](#rules-that-catch-publishers-out) |
+| 5 | [Check it](#5-check-it) |
+| 6 | [Close the books](#6-close-the-books) — and [the PR body](#the-pr-body) |
+| prospecting | [Judge a source on four things](#judge-a-source-on-four-things-in-this-order) · [Two gears](#two-gears--picking-the-wrong-one-wastes-the-run) |
+
+Traps a step has already cost someone are in
+[LESSONS.md](LESSONS.md) — grep it before a step, not after.
+
 ## Sizing a run
 
 **Take more, not less.** A session should end with a source measurably further
@@ -31,7 +48,7 @@ The only reasons to stop short of publishing:
 
 **Never stop at "resolved."** A findings file full of resolved entries that
 nobody published is the single most expensive state this module can be left in
-— see [What we've learned the hard way](AGENTS.md#what-weve-learned-the-hard-way).
+— see [LESSONS.md](LESSONS.md).
 
 ## Picking the run
 
@@ -428,7 +445,7 @@ Every entry you touched gets `publish.status` set to `"published"` with its PR
 number, or `"declined"` with a reason. **An entry left unmarked will be
 re-published by the next run**, and telling "not done yet" from "done but
 unrecorded" costs a full verification pass. This has happened; see
-[AGENTS.md → What we've learned the hard way](AGENTS.md#what-weve-learned-the-hard-way).
+[LESSONS.md](LESSONS.md).
 `check.py` now fails the run if a file has published entries and resolved ones
 with no decision recorded. It also fails when two findings headed for a page
 resolve to the same parcel under different paths — the corner-lot case, where
@@ -553,7 +570,7 @@ a source with no natural batch boundary can be excellent and still unstartable.
 effort. Per lead: the four judgements above, one sampled example proving it
 carries numbered addresses with dates, and a dated verdict in the **Leads**
 table's `triaged` column with its evidence under
-[SOURCES.md → Triage notes](SOURCES.md#triage-notes). No dossier, no issue.
+[TRIAGE.md](TRIAGE.md). No dossier, no issue.
 Rejected leads are struck through in place with the reason, so nobody spends a
 run rediscovering them. *Thirteen dossiers written before knowing which three
 are worth mining is thirteen sessions spent to learn what three would have told

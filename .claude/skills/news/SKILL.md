@@ -15,13 +15,17 @@ schedule against the Anthropic API.
 them.** Read them first, in this order:
 
 1. **[news/AGENTS.md](../../../news/AGENTS.md)** — the rulebook: the pipeline,
-   the cursors, the screen, the ten-year test, privacy, what a timeline entry
-   is and is not, the homepage grid.
-2. **[AGENTS.md](../../../AGENTS.md)** (root) — the privacy limits, which bind
+   the ten-year test, privacy, what a timeline entry is and is not. Read it
+   whole; it is short.
+2. **[news/PIPELINE.md](../../../news/PIPELINE.md)** — the working detail per
+   stage: cursors, the screen, reading an article, the markup an entry becomes,
+   the homepage card, the items-file schema. **Read the section for the stage
+   you are on**, not the file.
+3. **[AGENTS.md](../../../AGENTS.md)** (root) — the privacy limits, which bind
    hardest here because a news story is mostly about people.
-3. **[research/AGENTS.md](../../../research/AGENTS.md)** — the evidence bar and
+4. **[research/AGENTS.md](../../../research/AGENTS.md)** — the evidence bar and
    the findings schema, reused by this module unchanged.
-4. **[shared/AGENTS.md](../../../shared/AGENTS.md)** — the HTML contract, if you
+5. **[shared/AGENTS.md](../../../shared/AGENTS.md)** — the page contract, if you
    will touch a page.
 
 Then get the current state, which is the first thing to do in any run:

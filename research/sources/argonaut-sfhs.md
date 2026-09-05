@@ -1,6 +1,7 @@
 # argonaut-sfhs — *The Argonaut*, journal of the SF Historical Society (secondary)
 
-> **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · register:
+> **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · traps:
+> [../LESSONS.md](../LESSONS.md) · register:
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id `argonaut-sfhs`.
 >
 > - **Kind:** journal (print, per-article PDFs) · **Tier:** secondary · **Status:** open

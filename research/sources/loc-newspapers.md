@@ -1,6 +1,7 @@
 # loc-newspapers — Historic newspapers, Chronicling America (secondary)
 
-> **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · register:
+> **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · traps:
+> [../LESSONS.md](../LESSONS.md) · register:
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id `loc-newspapers`.
 >
 > - **Kind:** newspaper OCR corpus · **Tier:** secondary · **Status:** open

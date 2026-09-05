@@ -241,7 +241,7 @@ LOWER_TYPE = "(?:%s)" % "|".join(
 # photograph on it, silently losing the first: three Cook Street findings came
 # back on 94 and 73, which are the abbreviated high ends of 194 and 173. It is
 # matched here so both numbers are seen; `build` then writes one finding each,
-# per "A row of buildings is not a range" in research/AGENTS.md.
+# per "A row of buildings is not a range" in research/LESSONS.md.
 TITLE_RUN = r"(?:\s+(?:to|thru|through)\s+\d{1,5}[A-Za-z]?)?"
 TITLE_ADDR = re.compile(
     rf"\b(\d{{1,5}}[A-Za-z]?(?:\s*-\s*\d{{1,5}}[A-Za-z]?)?{TITLE_RUN})\s+"
@@ -1285,7 +1285,7 @@ CAPTION_PREFIX = re.compile(
 # are real — "Grand Theater", "Ideal Bar", "Imperial Hotel", "Sunset Market",
 # "White Cleaners". Only "Large house" and "Residencial building" are the
 # caption describing what it photographed, and only a closed list separates
-# them. See "measure a rule before wiring it" in research/AGENTS.md.
+# them. See "measure a rule before wiring it" in research/LESSONS.md.
 GENERIC_QUALIFIER = {
     "large", "small", "residential", "residencial", "commercial",
     "industrial", "vacant", "abandoned", "empty", "unidentified", "unnamed",
@@ -1367,7 +1367,7 @@ def expand_runs(rows, plate_numbers_for):
     of street, not one building with a two-number address, so it becomes two
     findings on the two numbers the caption actually prints. The buildings
     between them are real and their numbers are an inference; see "A row of
-    buildings is not a range" in research/AGENTS.md.
+    buildings is not a range" in research/LESSONS.md.
 
     `plate_numbers_for` is called with the record's own collection, because a
     batch may span collections that answer that question differently.
