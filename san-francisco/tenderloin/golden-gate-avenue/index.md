@@ -26,6 +26,7 @@ The parcels on Golden Gate Avenue documented here so far, from the city's addres
 - [387–397](387/) — A garage, with permit records from 2009 to 2018.
 - [450](450/) — A 1900 office building, with permit records from 2005 to 2017.
 - [500](500/) — A 1910 office building, with a seismic retrofit permitted in 2002.
+- [525](525/) — A 2011 office building, with foundation work permitted in 2012.
 - [530](530/) — A 1911 office building, with reroofing permitted in 2004.
 - [536–544](536/) — A 1911 store building, with a seismic retrofit permitted in 2001.
 - [550–552](550/) — A 1915 building, with permit records from 1983 to 2010.

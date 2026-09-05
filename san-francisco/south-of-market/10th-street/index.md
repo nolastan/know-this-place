@@ -13,6 +13,8 @@ The parcels on 10Th Street documented here so far, from the city's address, asse
 - [151](151/) — A 1924 office building in the Western SOMA Light Industrial and Residential Historic District, with window replacement permitted in 2011.
 - [160](160/) — A 1924 industrial building in the Western SOMA Light Industrial and Residential Historic District, with a seismic retrofit permitted in 2018.
 - [170–190](170/) — A 1924 office building in the Western SOMA Light Industrial and Residential Historic District, with a seismic retrofit permitted in 1987.
+- [250–260](250/) — A 2020 school building in the Western SOMA Light Industrial and Residential Historic District, with stair work permitted in 2012.
+- [255–265](255/) — A 1932 industrial building in the Western SOMA Light Industrial and Residential Historic District, with stair work permitted in 2001.
 - [275](275/) — A 2009 148-unit apartment building in the Western SOMA Light Industrial and Residential Historic District, with electrical work permitted in 2021.
 - [291](291/) — A 1909 office building in the Western SOMA Light Industrial and Residential Historic District, with a kitchen remodel permitted in 2004.
 - [315–319](315/) — A 1908 three-flat in the SoMa LGBTQ Historic District, with garage work permitted in 2025.

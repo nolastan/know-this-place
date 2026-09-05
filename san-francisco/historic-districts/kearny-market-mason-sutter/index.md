@@ -19,7 +19,7 @@ The buildings documented here so far inside the Kearny-Market-Mason-Sutter Conse
 - [Mason Street, Tenderloin](/san-francisco/tenderloin/mason-street/) — 6 documented buildings inside the district.
 - [Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/) — 7 documented buildings inside the district.
 - [Pine Street](/san-francisco/financial-district/pine-street/) — 1 documented building inside the district.
-- [Post Street, Financial District](/san-francisco/financial-district/post-street/) — 10 documented buildings inside the district.
+- [Post Street, Financial District](/san-francisco/financial-district/post-street/) — 11 documented buildings inside the district.
 - [Post Street, Nob Hill](/san-francisco/nob-hill/post-street/) — 1 documented building inside the district.
 - [Post Street, Tenderloin](/san-francisco/tenderloin/post-street/) — 6 documented buildings inside the district.
 - [Post Street, Union Square](/san-francisco/union-square/post-street/) — 3 documented buildings inside the district.
@@ -150,6 +150,7 @@ The buildings documented here so far inside the Kearny-Market-Mason-Sutter Conse
 - [126–130 Post Street](/san-francisco/financial-district/post-street/126/) — A 1909 store building, with plumbing work permitted in 2021.
 - [135 Post Street](/san-francisco/financial-district/post-street/135/) — A 1908 store building, with a seismic retrofit permitted in 1994.
 - [150 Post Street](/san-francisco/financial-district/post-street/150/) — A 1908 office building, with stair work permitted in 2015.
+- [185 Post Street](/san-francisco/financial-district/post-street/185/) — A 1907 office building with ground-floor retail, with a seismic retrofit permitted in 2005.
 - [200–210 Post Street](/san-francisco/financial-district/post-street/200/) — A 1905 office building, with window replacement permitted in 2015.
 - [201–209 Post Street](/san-francisco/financial-district/post-street/201/) — A 1909 store building, with stair work permitted in 2016.
 - [220–222 Post Street](/san-francisco/financial-district/post-street/220/) — A 1907 store building, with a seismic retrofit permitted in 1996.

@@ -4,6 +4,8 @@ The parcels on Fremont Street documented here so far, from the city's address, a
 
 ## Documented so far
 
+- [45](45/) — A 1978 office building, with stair work permitted in 2019.
+- [50](50/) — A building, with stair work permitted in 2012.
 - [147](147/) — An assessor class: vacant lot.
 - [181](181/) — A 2018 office building, with stair work permitted in 2018.
 - [193](193/) — A building, with permit records from 1982 to 2000.

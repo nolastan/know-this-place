@@ -333,6 +333,18 @@ python3 scripts/build_link_index.py
 python3 scripts/validate.py
 ```
 
+**`validate.py` will now fail on pages the run never touched, and that is
+expected.** Each page carries a *Same block* list of its neighbours, so a new
+page makes every nearby page's `index.html` stale by one line. Twelve new pages
+left 67 such failures in one run. Feed the paths `validate.py` names straight
+back to `render`, and read one diff to confirm the change is only the neighbour
+list:
+
+```bash
+python3 scripts/validate.py 2>&1 | grep "does not match" | sed 's/.*render //' | sort -u > /tmp/stale.txt
+cat /tmp/stale.txt | xargs -n 60 python3 scripts/seed_pages.py render
+```
+
 The seeder only creates pages that don't exist, and it knows nothing about the
 source — the facts still have to be added to those pages afterwards. Seeding is
 the scaffold, not the research.

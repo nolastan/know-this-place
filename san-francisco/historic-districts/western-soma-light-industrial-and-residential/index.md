@@ -4,18 +4,18 @@ The buildings documented here so far inside the Western SOMA Light Industrial an
 
 ## Streets
 
-- [10Th Street](/san-francisco/south-of-market/10th-street/) — 13 documented buildings inside the district.
+- [10Th Street](/san-francisco/south-of-market/10th-street/) — 15 documented buildings inside the district.
 - [11Th Street, Mission](/san-francisco/mission/11th-street/) — 12 documented buildings inside the district.
 - [11Th Street, South of Market](/san-francisco/south-of-market/11th-street/) — 5 documented buildings inside the district.
 - [12th Street](/san-francisco/mission/12th-street/) — 5 documented buildings inside the district.
 - [7th Street](/san-francisco/south-of-market/7th-street/) — 10 documented buildings inside the district.
-- [8th Street](/san-francisco/south-of-market/8th-street/) — 9 documented buildings inside the district.
+- [8th Street](/san-francisco/south-of-market/8th-street/) — 10 documented buildings inside the district.
 - [9Th Street](/san-francisco/south-of-market/9th-street/) — 19 documented buildings inside the district.
 - [Bernice Street](/san-francisco/mission/bernice-street/) — 2 documented buildings inside the district.
 - [Clementina Street](/san-francisco/south-of-market/clementina-street/) — 2 documented buildings inside the district.
 - [Dore Street](/san-francisco/south-of-market/dore-street/) — 2 documented buildings inside the district.
 - [Folsom Street, Mission](/san-francisco/mission/folsom-street/) — 25 documented buildings inside the district.
-- [Folsom Street, South of Market](/san-francisco/south-of-market/folsom-street/) — 8 documented buildings inside the district.
+- [Folsom Street, South of Market](/san-francisco/south-of-market/folsom-street/) — 9 documented buildings inside the district.
 - [Grace Street](/san-francisco/south-of-market/grace-street/) — 2 documented buildings inside the district.
 - [Harrison Street, Mission](/san-francisco/mission/harrison-street/) — 2 documented buildings inside the district.
 - [Harrison Street, South of Market](/san-francisco/south-of-market/harrison-street/) — 1 documented building inside the district.
@@ -50,6 +50,8 @@ The buildings documented here so far inside the Western SOMA Light Industrial an
 - [151 10Th Street](/san-francisco/south-of-market/10th-street/151/) — A 1924 office building, with window replacement permitted in 2011.
 - [160 10Th Street](/san-francisco/south-of-market/10th-street/160/) — A 1924 industrial building, with a seismic retrofit permitted in 2018.
 - [170–190 10Th Street](/san-francisco/south-of-market/10th-street/170/) — A 1924 office building, with a seismic retrofit permitted in 1987.
+- [250–260 10th Street](/san-francisco/south-of-market/10th-street/250/) — A 2020 school building, with stair work permitted in 2012.
+- [255–265 10th Street](/san-francisco/south-of-market/10th-street/255/) — A 1932 industrial building, with stair work permitted in 2001.
 - [275 10th Street](/san-francisco/south-of-market/10th-street/275/) — A 2009 148-unit apartment building, with electrical work permitted in 2021.
 - [291 10th Street](/san-francisco/south-of-market/10th-street/291/) — A 1909 office building, with a kitchen remodel permitted in 2004.
 - [315–319 10th Street](/san-francisco/south-of-market/10th-street/315/) — A 1908 three-flat, with garage work permitted in 2025.
@@ -92,6 +94,7 @@ The buildings documented here so far inside the Western SOMA Light Industrial an
 - [135–139 8th Street](/san-francisco/south-of-market/8th-street/135/) — A 1909 7-unit apartment building, with reroofing permitted in 1989.
 - [143 8th Street](/san-francisco/south-of-market/8th-street/143/) — A 1939 office building, with deck work permitted in 2012.
 - [156–164 8th Street](/san-francisco/south-of-market/8th-street/156/) — A 1911 13-unit apartment building, with a kitchen remodel permitted in 2022.
+- [165 8th Street](/san-francisco/south-of-market/8th-street/165/) — A 2002 apartment building, with a bathroom remodel permitted in 1998.
 - [201 8th Street](/san-francisco/south-of-market/8th-street/201/) — A 1900 industrial building, with a kitchen remodel permitted in 1986.
 - [230–236 8th Street](/san-francisco/south-of-market/8th-street/230/) — A 1906 office building, with window replacement permitted in 2019.
 - [260 8th Street](/san-francisco/south-of-market/8th-street/260/) — A 1921 industrial building, with reroofing permitted in 2019.
@@ -154,6 +157,7 @@ The buildings documented here so far inside the Western SOMA Light Industrial an
 - [1175 Folsom Street](/san-francisco/south-of-market/folsom-street/1175/) — A 1928 industrial building, with plumbing work permitted in 1994.
 - [1188–1190 Folsom Street](/san-francisco/south-of-market/folsom-street/1188/) — A 1914 hotel, with a bathroom remodel permitted in 2013.
 - [1359 Folsom Street](/san-francisco/south-of-market/folsom-street/1359/) — A 1925 industrial building, with a kitchen and bathroom remodel permitted in 2012.
+- [1400–1450 Folsom Street](/san-francisco/south-of-market/folsom-street/1400/) — A 1924 industrial building, with a seismic retrofit permitted in 2006.
 - [49 Grace Street](/san-francisco/south-of-market/grace-street/49/) — A 1907 single-family house, with an addition permitted in 2013.
 - [66 Grace Street](/san-francisco/south-of-market/grace-street/66/) — A 1900 office building, with plumbing work permitted in 2008.
 - [1170–1180 Harrison Street](/san-francisco/mission/harrison-street/1170/) — A 1912 office building, with an addition permitted in 2016.

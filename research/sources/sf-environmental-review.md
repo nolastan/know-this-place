@@ -5,7 +5,7 @@
 >
 > - **Kind:** PDF reports · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 56 of 172 address-titled documents read; 291 findings, 183 resolved, 160 published.
+> - **Coverage:** all 172 address-titled documents read, in 93 projects; 438 findings, 279 resolved, 232 published.
 > - **Local corpus:** `research/corpora/sf-environmental-review/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -256,7 +256,58 @@
 
   On a page, name the report and the year and link the Internet Archive item.
 
-- **Coverage:** 56 documents read whole, all from the **address-titled** set.
+  - **The consultant's report bound into the back of an environmental review is
+    where the dates are.** From about 2000 the Planning Department stopped
+    describing buildings itself and started appending the historian's own work: a
+    Page & Turnbull historic resource evaluation, a McGrew Architecture report, a
+    Carey & Co. Section 106 review. Those appendices are the densest part of the
+    document by a wide margin — Carey & Co.'s twenty-nine-property survey in the
+    275 10th Street EIR gives a construction year, an architect or builder and an
+    occupancy history for each, taken from the building permits on microfilm, and
+    the EIR's own chapters repeat perhaps a fifth of it. **Read to the end of the
+    appendices**; the summary chapters are a table of contents for them.
+  - **The appended report and the chapter that summarises it disagree, and the
+    appendix is the one that did the research.** The 275 10th Street EIR's own
+    setting chapter says the building was commissioned by John Cassaretto for the
+    G & H Price Pump and Engine Company; the Section 106 review it appends names
+    the architect E. A. Neumarkel and the owner as G. W. Price, from the original
+    permit. Its initial study then swaps two of the three site buildings' dates.
+    This is the "the summary is the least reliable part" caution above, one layer
+    further in: **the chapter that cites the permit or the survey wins, and from
+    2000 on that chapter is usually in the appendices.**
+  - **A project site that is a surface parking lot yields nothing, and the report
+    says so on its first page.** Six of the thirty-seven projects in the
+    1995–2011 batch — 631 Folsom, 888 Howard, 55 Ninth, 201 Folsom, 300 Spear and
+    both 450 Rhode Island projects — sit on cleared ground, and their initial
+    studies never come back to buildings. The tell is in the project description:
+    "currently occupied by a surface parking lot".
+  - **Two projects prepared together share one report's text.** 201 Folsom Street
+    and 300 Spear Street were the two halves of one requested rezoning, and their
+    2002 draft EIRs repeat each other's setting chapters almost word for word.
+    Read one, note the other as read, and record the findings once.
+  - **The buildings a report describes are mostly gone, and the assessor says
+    which — but not all of them are.** Twenty-four of the fourth batch's findings
+    landed on a parcel the roll dates after the fact, and the split is even: some
+    are demolitions (248 Front, 560 Mission, 350 Fremont, 275 10th, 340 Mission,
+    250 10th, 227 7th) and some are rehabilitations of the very building described
+    (21 Clarence Place, 1000 Van Ness, 50 Oak). The report itself distinguishes
+    them — a project that *converts* a building says so in its project
+    description — so read that before choosing between "stood here until" and an
+    ordinary construction date with the roll year stated as a disagreement.
+  - **A retired street number resolves through the project's own merged parcel,
+    not through the street.** Half of the fourth batch's unresolved findings are
+    numbers EAS no longer holds, and for a project's own site buildings the answer
+    is usually one query away: the report names the lots, the lots merged, and the
+    merged parcel keeps one of the old numbers. 246 and 250 Front Street are 248
+    Front Street; 64 and 72 Dore Street are 275 10th Street; 70 Oak Street is 50
+    Oak Street; 562–572 and 554–560 Mission Street are both 560 Mission Street.
+    The vicinity buildings are the ones that genuinely die.
+  - **The Klockars blacksmith shop is 443 Folsom Street, not 449.** Two reports in
+    this source give City Landmark No. 149 at 449 Folsom Street, which EAS does
+    not hold; the parcel next door at 443 Folsom Street is active, industrial and
+    dated 1913 by the roll against the landmark's 1912.
+
+- **Coverage:** all 172 address-titled documents read, in 93 distinct projects.
   The first sixteen were deliberately outside downtown — 61 findings, 29 resolved
   onto 13 pages; 1055 Stockton yielded nothing, its EIR saying neither building
   on the site was on any list of historical, architectural or cultural interest
@@ -276,10 +327,21 @@
   Its richest documents are 505 Montgomery Street and 100 First Street, which
   between them date thirteen demolished buildings, and 343 Sansome Street, which
   gives the 1908 Howard and Galloway building and its 1929 Crown Zellerbach
-  remodelling by Sam Hyman and Abe Appleton. **Remaining: 116 address-titled
-  documents** — the 1995–2011 downtown and South of Market projects, plus the
-  finals and supplements of projects whose drafts are read — and the ~617 titled
-  by project or area rather than address, which have not been assessed at all.
+  remodelling by Sam Hyman and Abe Appleton. The fourth batch is **the address-titled projects of
+  1995–2011**: 37 documents, one per project — 147 findings, 96 resolved, 72
+  published on 43 pages, 12 of them seeded by that run. It finishes the
+  address-titled set. Six of its 37 projects yielded nothing, all surface parking
+  lots or cleared sites: 631 Folsom Street, 888 Howard Street, 55 Ninth Street,
+  201 Folsom Street, 300 Spear Street and both 450 Rhode Island Street projects.
+  Its richest documents are the ones that append a consultant's report — 275 10th
+  Street, whose Carey & Co. Section 106 review dates twenty-nine properties around
+  the block of Tenth Street between Howard and Folsom; 178 Townsend Street, whose
+  building history walks the California Electric Light Company's Station B from
+  its 1888 commission to Percy & Hamilton through to the 1995 demolition of its
+  150-foot smokestack; and 949 Market Street, which dates the Empress Theater to
+  the day it opened. **Remaining: the ~617 documents titled by project or area
+  rather than by address, which have not been assessed at all, and the finals and
+  supplements of projects whose drafts are read.**
 
 - **Verified:** 2026-09-04 (two runs on the same day. The first promoted the row
   from the leads table and mined the outside-downtown batch: 16 documents, 61
@@ -315,3 +377,15 @@
   chapter; and **the pre-1910 guard is wrong about a modern survey of old
   buildings** — it refused ten findings here and nine were resolved by hand on
   the roll year and the record's own parcel.)
+
+  **2026-09-04**, fourth run: the address-titled projects of 1995–2011, 37
+  documents, 147 findings, 96 resolved, 72 published on 43 pages. It finishes the
+  address-titled set. What it learned: **the historian's report bound into the
+  appendices is where the dates are** from about 2000 onward, and it outranks the
+  chapter that summarises it; **a surface-lot project yields nothing**, and its
+  initial study says so on page one; **two projects prepared for one rezoning
+  share a report**, so 300 Spear Street's findings are 201 Folsom Street's; **a
+  retired street number usually resolves through the project's own merged
+  parcel** rather than dying on the street; and **the roll's later year is a
+  demolition on some of these parcels and a conversion on others**, which the
+  project description itself distinguishes.
