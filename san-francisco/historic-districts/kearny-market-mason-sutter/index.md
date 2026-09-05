@@ -22,7 +22,7 @@ The buildings documented here so far inside the Kearny-Market-Mason-Sutter Conse
 - [Post Street, Financial District](/san-francisco/financial-district/post-street/) — 11 documented buildings inside the district.
 - [Post Street, Nob Hill](/san-francisco/nob-hill/post-street/) — 1 documented building inside the district.
 - [Post Street, Tenderloin](/san-francisco/tenderloin/post-street/) — 6 documented buildings inside the district.
-- [Post Street, Union Square](/san-francisco/union-square/post-street/) — 3 documented buildings inside the district.
+- [Post Street, Union Square](/san-francisco/union-square/post-street/) — 4 documented buildings inside the district.
 - [Powell Street](/san-francisco/nob-hill/powell-street/) — 15 documented buildings inside the district.
 - [Stockton Street](/san-francisco/chinatown/stockton-street/) — 11 documented buildings inside the district.
 - [Sutter Street, Financial District](/san-francisco/financial-district/sutter-street/) — 18 documented buildings inside the district.
@@ -166,6 +166,7 @@ The buildings documented here so far inside the Kearny-Market-Mason-Sutter Conse
 - [620 Post Street](/san-francisco/tenderloin/post-street/620/) — A 1910 hotel, with plumbing work permitted in 2004.
 - [624 Post Street](/san-francisco/tenderloin/post-street/624/) — A 1907 hotel, with reroofing permitted in 1993.
 - [350–360 Post Street](/san-francisco/union-square/post-street/350/) — A 1972 office building, with plumbing work permitted in 2012.
+- [384–398 Post Street](/san-francisco/union-square/post-street/384/) — A 1980 store building, with electrical work permitted in 2019.
 - [400 Post Street](/san-francisco/union-square/post-street/400/) — A 1909 store building, with a vertical addition permitted in 1990.
 - [450–456 Post Street](/san-francisco/union-square/post-street/450/) — A 1924 building, with a kitchen remodel permitted in 1996.
 - [17–33 Powell Street](/san-francisco/nob-hill/powell-street/17/) — A hotel, with a seismic retrofit permitted in 2014.

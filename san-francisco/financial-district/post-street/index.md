@@ -6,6 +6,7 @@ The parcels on Post Street documented here so far, from the city's address, asse
 
 - [57–65](57/) — The Mechanics' Institute, on the lot the Institute bought in 1866; the building on it now is an Article 10 landmark.
 - [68–80](68/) — A 1982 office building, with a bathroom remodel permitted in 1987.
+- [98](98/) — A 1980 office building, with permit records from 1979 to 2019.
 - [126–130](126/) — A 1909 store building in the Kearny-Market-Mason-Sutter Conservation District, with plumbing work permitted in 2021.
 - [135](135/) — A 1908 store building in the Kearny-Market-Mason-Sutter Conservation District, with a seismic retrofit permitted in 1994.
 - [150](150/) — A 1908 office building in the Kearny-Market-Mason-Sutter Conservation District, with stair work permitted in 2015.

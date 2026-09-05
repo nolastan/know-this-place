@@ -5,7 +5,9 @@
 >
 > - **Kind:** PDF reports · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** all 172 address-titled documents read, in 93 projects; 438 findings, 279 resolved, 232 published.
+> - **Coverage:** all 172 address-titled documents read, in 93 projects, plus the 36 named
+>   single-site projects of 1974–1982 from the project-titled set; 497 findings, 322 resolved,
+>   271 published. All ~617 project-titled documents are grouped and sampled in the triage note below.
 > - **Local corpus:** `research/corpora/sf-environmental-review/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -223,6 +225,67 @@
     than one place in the document; these reports repeat themselves constantly,
     and that redundancy is what makes them readable at all.
 
+  - **Triage of the 617 project-titled documents.** The catalogue query above
+    returns 789 items. 172 have a street number at the front of the title and are
+    read; the other 617 fall into eight groups, and the group predicts the yield
+    far better than the size does. Sampled 2026-09-05.
+
+    | group | docs | carries street numbers? | sampled evidence |
+    |---|---|---|---|
+    | **Named single-site projects** — one tower, hotel, store or apartment block, titled after the developer's project rather than its address ("One Sansome", "Daon Building", "Russ Tower", "Neiman-Marcus department store") | **162** in 93 projects | **Yes, densely.** The same document as the address-titled downtown reports. | The Russ Tower DEIR dates and credits 350, 334–340 and 344–346 Bush Street; the One Sansome DEIR dates the Holbrook Building at 58 Sutter Street to 1912 and names MacDonald and Applegarth. **Batch `named-sites-1974-1982` read 36 of these.** |
+    | **Titles carrying a street address, but not in first position** — "Case No. 2003.0273E : 46 Geary Street", "Draft EIR : 1634-1690 Pine Street", "Francisco Place : office/condominiums, 530 Chestnut Street" | **50** | **Yes.** Single-site documents the leading-digit filter missed; the 1998–2013 ones append a consultant's historic resource evaluation. | The titles name the buildings outright. Not yet read — this is the next batch to take. |
+    | **Institutional campuses** — hospitals, museums, libraries, schools, churches | **77** | **Yes, but few buildings each.** A campus document describes two or three buildings and restates them hundreds of times. | The 1992 Main Library FEIR carries 387 numbered-address mentions and nearly all are 100 Larkin Street and 45 Hyde Street; the 1998 Asian Art Museum DSEIR is the same two buildings, and records that 45 Hyde Street was demolished in November 1997. |
+    | **Area and policy plans** — Mission Bay, Yerba Buena Center, the Downtown Plan, Rincon Hill, South of Market, Eastern Neighborhoods, the Housing Element, planning code amendments | **130** | **Mostly no.** They describe by street, block face and project name. | The 1,068 KB Downtown Plan DEIR yields **18** numbered-address mentions and the only building among them is 522/528 Howard Street, the plan's own case-study site; the rest are the department's own office address and figure captions. The South of Market plan tabulates development sites by cross street ("First & Harrison"). The exception is a redevelopment plan naming a surviving building outright: Rincon Point–South Beach names the Oriental Warehouse at 650–622 First Street. |
+    | **Procedural notices** — notices of preparation, notices that an EIR is required, notices of availability | **96** | **Redundant.** A notice restates its own project's address and nothing else, and the project usually has a full document in the collection. | The 2008 CityPlace NOP names 935–939, 941–945 and 947–965 Market Street; the 2009 CityPlace DEIR names the same buildings *and dates them*. Read the DEIR. |
+    | **Transportation corridors** — Third Street light rail, Caltrain downtown extension, Van Ness BRT, the bicycle plan, the Embarcadero Freeway | **30** | **No.** Stations and cross streets. | The Third Street LRT DEIS/DEIR's 286 apparent mentions are table-of-contents artefacts and agency addresses. |
+    | **Airport** — SFO master plan and expansion, BART–SFO extension | **37** | **No, and outside the city.** | The 1992 SFO master plan FEIR: 34 mentions in 1.4 MB, none of them a San Francisco building. |
+    | **Outside San Francisco** — Calaveras Dam, Lower Crystal Springs, Hetch Hetchy, San Andreas Pipeline, the Larkspur and Sausalito ferry terminals, Novato, Oakland Harbor | **35** | **No.** Not San Francisco addresses at all. | The Calaveras Dam DEIR: 19 mentions in 1.7 MB, all in Alameda and Santa Clara counties. |
+
+    **Size predicts nothing here.** The two largest documents in the collection are
+    Mission Bay and the Downtown Plan, and both are area plans that name almost no
+    street numbers, while the 500 KB Russ Tower DEIR dates five buildings and
+    credits four architects.
+
+  - **A filter on the shape of a title is a filter on the source, and this one
+    silently dropped a third of it.** The address-titled set was defined as "the
+    title begins with a digit", and four batches carried that definition as though
+    it were a property of the documents. It is not: **162** documents describe
+    exactly one site in exactly the same way and are titled after the developer's
+    project (*Russ Tower*, *Pan Magna Plaza*, *Welsh Commons*), and **50** more
+    print the address in the middle of the title (*Case No. 2003.0273E : 46 Geary
+    Street*). **Before treating a catalogue filter as a description of a source,
+    check what falls outside it** — the check here was one regular expression over
+    617 titles, and it found the best unread material in the collection.
+
+  - **The pre-1978 reports predate the historic-resources chapter.** CEQA's
+    architectural-resources requirement had not yet produced the chapter this
+    source is mined for, and a 1974–1977 report answers the question in one
+    sentence: nothing on the site is in *Here Today* or on the Board of
+    Supervisors' landmark list. Nine of the ten empty documents in the 1974–1982
+    batch are from those four years. **Start a batch of this source at 1978**, and
+    read the earlier ones only for an appendix — the 1975 Bank of Tokyo DEIR is
+    the exception precisely because it binds in a Heritage-commissioned history of
+    the Alaska Commercial Building as its Appendix B.
+
+  - **A merged downtown parcel keeps one of its old street numbers, and the block
+    the report prints is what finds it.** Thirteen of the 1974–1982 batch's
+    findings came back "the address does not exist today" and every one resolved
+    on the record's own printed block: block 3712's buildings are 101 Market
+    Street, block 289's are 1 Sansome Street, block 227's Old Sub-Treasury is 555
+    Montgomery Street, block 3749's are 303 Second Street, block 313's City of
+    Paris is 150 Stockton Street, block 238's Alaska Commercial Building is 350
+    California Street. The project description states the block in the first two
+    pages; read it before the historic-resources chapter.
+
+  - **The seeder knows which parcel already has a page, and it is not always the
+    path the resolver formed.** 46 Kearny Street resolved to parcel 0311007, whose
+    page `seed-list` reported as already documented at
+    `/san-francisco/union-square/kearny-street/30/` — a different street number and
+    a different neighborhood from the `/financial-district/kearny-street/88/` the
+    resolver had formed from the roll's address. **Run `seed-list` before writing
+    the facts** and take its "already documented at" lines as corrections to the
+    findings' paths.
+
 - **People:** These reports name project sponsors, property owners and the
   neighbours who wrote comment letters, and all of that is barred by "Privacy —
   hard limits" in the root [AGENTS.md](../../AGENTS.md). Take the **architect,
@@ -339,9 +402,26 @@
   building history walks the California Electric Light Company's Station B from
   its 1888 commission to Percy & Hamilton through to the 1995 demolition of its
   150-foot smokestack; and 949 Market Street, which dates the Empress Theater to
-  the day it opened. **Remaining: the ~617 documents titled by project or area
-  rather than by address, which have not been assessed at all, and the finals and
-  supplements of projects whose drafts are read.**
+  the day it opened. The fifth batch is the **named single-site projects of
+  1974–1982**: 36 documents, one per project — 59 findings, 43 resolved, 39
+  published on 20 pages, 2 of them seeded by that run. It is the first batch out of
+  the project-titled set, and its richest documents are One Sansome (the Holbrook
+  Building of 1912 by MacDonald and Applegarth), the Bank of Canton headquarters
+  (the first U.S. Branch Mint of 1849 and the Sub-Treasury of 1875–77 on the same
+  spot), Russ Tower (the Mining Exchange Building of 1923 by Miller & Pflueger and
+  two demolished neighbours by T. Paterson Ross and S. Heiman), the Daon Building
+  (280 Battery Street by Lewis P. Hobart, 1908, and two by B. G. McDougall),
+  Neiman-Marcus (the City of Paris building of 1896 and its 1909 Bakewell and Brown
+  interior) and the Bank of Tokyo (the Alaska Commercial Building of 1909 by Meyers
+  and Ward). Ten of its 36 yielded nothing, nine of them from 1974–1977, before the
+  historic-resources chapter existed.
+  **Remaining: 581 of the 617 project-titled documents, grouped and sampled in the
+  triage note above — 18 more named single-site projects of 1983–1987 and 39 of
+  1988–2005, the 50 documents whose titles carry a street address but not in first
+  position, 77 institutional campus projects, 130 area and policy plans, 67
+  transportation and airport documents, 96 procedural notices and 35 documents
+  about places outside San Francisco — and the finals and supplements of projects
+  whose drafts are read.**
 
 - **Verified:** 2026-09-04 (two runs on the same day. The first promoted the row
   from the leads table and mined the outside-downtown batch: 16 documents, 61
@@ -389,3 +469,20 @@
   parcel** rather than dying on the street; and **the roll's later year is a
   demolition on some of these parcels and a conversion on others**, which the
   project description itself distinguishes.
+
+  **2026-09-05**, fifth run: the triage of all 617 project-titled documents, and
+  the first batch out of it — the named single-site projects of 1974–1982, 36
+  documents, 59 findings, 43 resolved, 39 published on 20 pages. What it learned:
+  **the filter that defined the address-titled set was a filter on title shape and
+  not on the documents**, and 212 single-site reports fall outside it, 162 named
+  after the developer's project and 50 printing their address later in the title;
+  **the group predicts the yield and the size does not**, so a thousand-page area
+  plan gives eighteen numbered mentions and a five-hundred-kilobyte single-site
+  DEIR gives five dated buildings and four architects; **the pre-1978 reports
+  predate the historic-resources chapter** and answer the question in a sentence,
+  which is where nine of this batch's ten empty documents come from; **a merged
+  downtown parcel keeps one of its old street numbers**, so thirteen findings the
+  resolver refused for having no EAS record resolved on the block the report
+  prints on its own first pages; and **`seed-list` corrects a path the resolver
+  formed**, which is how 46 Kearny Street's fact reached the page its parcel
+  actually has.)
