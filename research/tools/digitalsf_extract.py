@@ -1100,7 +1100,7 @@ COLLECTION_KIND = {
 # The tail — 36 collections of one to nineteen addressed records each
 #
 # Everything left in the archive after the twelve collections read on their
-# own, minus the three blocked on #217. Each is far too small to be a batch,
+# own, minus the three #217 held back. Each is far too small to be a batch,
 # and together they are one: 188 candidate addresses over 12,657 records.
 #
 # All 36 take the same two policies, and both are the conservative choice:

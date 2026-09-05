@@ -209,6 +209,19 @@ OCR text and asked to find the address-level information in it:
   [AGENTS.md](../AGENTS.md). The size of the input is not a reason to loosen
   that, and the low yield of a pass is never a reason to make up the difference
   with people.
+- **When the source's sentence *is* the person, skip the source.** The limit
+  binds when the finding is written, and the finding carries the sentence
+  verbatim. Redacting the name is enough where the name is incidental — an
+  address, a date and a building survive it. It is not enough where nothing
+  survives it but a household at a street number, and there the answer is to
+  leave the material alone, not to build a redaction that makes it publishable.
+  Worked example and decision: digitalsf's SFP 130, in that dossier under
+  People (#217).
+- **That is a judgement about the addressed records, so measure them.** Two
+  collections with the same subject are not the same problem, and the limit
+  bars **naming** a person, not photographing one. SFP 179 was written off as
+  SFP 130's twin on subject matter and turned out to be shopfronts with unnamed
+  people in them.
 
 ## The evidence bar
 
