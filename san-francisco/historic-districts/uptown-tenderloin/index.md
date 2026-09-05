@@ -4,13 +4,13 @@ The buildings documented here so far inside the Uptown Tenderloin Historic Distr
 
 ## Streets
 
-- [Eddy Street](/san-francisco/tenderloin/eddy-street/) — 26 documented buildings inside the district.
-- [Ellis Street](/san-francisco/tenderloin/ellis-street/) — 40 documented buildings inside the district.
+- [Eddy Street](/san-francisco/tenderloin/eddy-street/) — 28 documented buildings inside the district.
+- [Ellis Street](/san-francisco/tenderloin/ellis-street/) — 41 documented buildings inside the district.
 - [Geary Street, Tenderloin](/san-francisco/tenderloin/geary-street/) — 25 documented buildings inside the district.
 - [Geary Street, Union Square](/san-francisco/union-square/geary-street/) — 3 documented buildings inside the district.
-- [Golden Gate Avenue](/san-francisco/tenderloin/golden-gate-avenue/) — 16 documented buildings inside the district.
+- [Golden Gate Avenue](/san-francisco/tenderloin/golden-gate-avenue/) — 18 documented buildings inside the district.
 - [Hyde Street, Nob Hill](/san-francisco/nob-hill/hyde-street/) — 4 documented buildings inside the district.
-- [Hyde Street, Tenderloin](/san-francisco/tenderloin/hyde-street/) — 13 documented buildings inside the district.
+- [Hyde Street, Tenderloin](/san-francisco/tenderloin/hyde-street/) — 14 documented buildings inside the district.
 - [Jones Street, Nob Hill](/san-francisco/nob-hill/jones-street/) — 1 documented building inside the district.
 - [Jones Street, Tenderloin](/san-francisco/tenderloin/jones-street/) — 13 documented buildings inside the district.
 - [Larkin Street](/san-francisco/nob-hill/larkin-street/) — 12 documented buildings inside the district.
@@ -20,7 +20,7 @@ The buildings documented here so far inside the Uptown Tenderloin Historic Distr
 - [Mcallister Street](/san-francisco/tenderloin/mcallister-street/) — 1 documented building inside the district.
 - [Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/) — 29 documented buildings inside the district.
 - [Taylor Street](/san-francisco/tenderloin/taylor-street/) — 7 documented buildings inside the district.
-- [Turk Street](/san-francisco/tenderloin/turk-street/) — 20 documented buildings inside the district.
+- [Turk Street](/san-francisco/tenderloin/turk-street/) — 22 documented buildings inside the district.
 
 ## Buildings
 
@@ -35,6 +35,7 @@ The buildings documented here so far inside the Uptown Tenderloin Historic Distr
 - [234–238 Eddy Street](/san-francisco/tenderloin/eddy-street/234/) — A 1909 hotel, with a seismic retrofit permitted in 1998.
 - [265 Eddy Street](/san-francisco/tenderloin/eddy-street/265/) — A 1924 garage, with permit records from 2012 to 2016.
 - [302–308 Eddy Street](/san-francisco/tenderloin/eddy-street/302/) — A 1983 73-unit apartment building, with permit records from 1973 to 2024.
+- [322–330 Eddy Street](/san-francisco/tenderloin/eddy-street/322/) — A 1923 24-unit apartment building, with permit records from 1982 to 2014.
 - [340 Eddy Street](/san-francisco/tenderloin/eddy-street/340/) — A 1911 83-unit apartment building, with reroofing permitted in 2004.
 - [364 Eddy Street](/san-francisco/tenderloin/eddy-street/364/) — A 1909 hotel, with a seismic retrofit permitted in 1995.
 - [366–398 Eddy Street](/san-francisco/tenderloin/eddy-street/366/) — A 1908 hotel, with stair work permitted in 2025.
@@ -44,6 +45,7 @@ The buildings documented here so far inside the Uptown Tenderloin Historic Distr
 - [401–411 Eddy Street](/san-francisco/tenderloin/eddy-street/401/) — A 1907 hotel, with a seismic retrofit permitted in 2001.
 - [410 Eddy Street](/san-francisco/tenderloin/eddy-street/410/) — A 1907 hotel, with reroofing permitted in 2004.
 - [438–440 Eddy Street](/san-francisco/tenderloin/eddy-street/438/) — A 1909 hotel, with reroofing permitted in 2002.
+- [446–450 Eddy Street](/san-francisco/tenderloin/eddy-street/446/) — A 1923 16-unit apartment building, with stair work permitted in 2018.
 - [466 Eddy Street](/san-francisco/tenderloin/eddy-street/466/) — A 1900 store building, with garage work permitted in 2014.
 - [484–490 Eddy Street](/san-francisco/tenderloin/eddy-street/484/) — A 1910 three-flat, with reroofing permitted in 1990.
 - [493–499 Eddy Street](/san-francisco/tenderloin/eddy-street/493/) — A 1907 hotel, with a seismic retrofit permitted in 1995.
@@ -72,6 +74,7 @@ The buildings documented here so far inside the Uptown Tenderloin Historic Distr
 - [468–488 Ellis Street](/san-francisco/tenderloin/ellis-street/468/) — A 1908 hotel, with a seismic retrofit permitted in 2008.
 - [471 Ellis Street](/san-francisco/tenderloin/ellis-street/471/) — A 1913 12-unit apartment building, with permit records from 1983 to 2024.
 - [473 Ellis Street](/san-francisco/tenderloin/ellis-street/473/) — A 1926 hotel, with window replacement permitted in 2009.
+- [479–499 Ellis Street](/san-francisco/tenderloin/ellis-street/479/) — A 1922 store building, with facade work permitted in 2017.
 - [500–516 Ellis Street](/san-francisco/tenderloin/ellis-street/500/) — A 1910 38-unit apartment building, with a seismic retrofit permitted in 1997.
 - [517–519 Ellis Street](/san-francisco/tenderloin/ellis-street/517/) — An assessor class: parking lot, with fire repair permitted in 2013.
 - [518–530 Ellis Street](/san-francisco/tenderloin/ellis-street/518/) — A 1915 36-unit apartment building, with permit records from 1982 to 1989.
@@ -124,6 +127,7 @@ The buildings documented here so far inside the Uptown Tenderloin Historic Distr
 - [133 Golden Gate Avenue](/san-francisco/tenderloin/golden-gate-avenue/133/) — A church, with a seismic retrofit permitted in 1999.
 - [134 Golden Gate Avenue](/san-francisco/tenderloin/golden-gate-avenue/134/) — A 1917 store building, with a seismic retrofit permitted in 2003.
 - [150 Golden Gate Avenue](/san-francisco/tenderloin/golden-gate-avenue/150/) — A 1912 building, with a kitchen remodel permitted in 2014.
+- [166–180 Golden Gate Avenue](/san-francisco/tenderloin/golden-gate-avenue/166/) — A 1908 store building, with window replacement permitted in 2015.
 - [175 Golden Gate Avenue](/san-francisco/tenderloin/golden-gate-avenue/175/) — An 1899 church, with permit records from 2008 to 2026.
 - [177–191 Golden Gate Avenue](/san-francisco/tenderloin/golden-gate-avenue/177/) — A 1916 store building, with a kitchen and bathroom remodel permitted in 1984.
 - [201–215 Golden Gate Avenue](/san-francisco/tenderloin/golden-gate-avenue/201/) — A 1920 office building, with reroofing permitted in 2013.
@@ -133,6 +137,7 @@ The buildings documented here so far inside the Uptown Tenderloin Historic Distr
 - [248–250 Golden Gate Avenue](/san-francisco/tenderloin/golden-gate-avenue/248/) — A 1911 hotel, with a seismic retrofit permitted in 2001.
 - [255 Golden Gate Avenue](/san-francisco/tenderloin/golden-gate-avenue/255/) — A 1916 store building, with stair work permitted in 2012.
 - [276–284 Golden Gate Avenue](/san-francisco/tenderloin/golden-gate-avenue/276/) — A 1913 hotel, with facade work permitted in 2017.
+- [288–290 Golden Gate Avenue](/san-francisco/tenderloin/golden-gate-avenue/288/) — A 1913 hotel, with fire repair permitted in 2024.
 - [366–390 Golden Gate Avenue](/san-francisco/tenderloin/golden-gate-avenue/366/) — A 1911 111-unit apartment building, with electrical work permitted in 1985.
 - [611–619 Hyde Street](/san-francisco/nob-hill/hyde-street/611/) — A 1916 26-unit apartment building, with a seismic retrofit permitted in 1999.
 - [628–632 Hyde Street](/san-francisco/nob-hill/hyde-street/628/) — A 1907 7-unit apartment building, with a seismic retrofit permitted in 1994.
@@ -141,6 +146,7 @@ The buildings documented here so far inside the Uptown Tenderloin Historic Distr
 - [125 Hyde Street](/san-francisco/tenderloin/hyde-street/125/) — A 1931 store building, with reroofing permitted in 2019.
 - [135–145 Hyde Street](/san-francisco/tenderloin/hyde-street/135/) — A 1920 garage, with a seismic retrofit permitted in 1996.
 - [222–228 Hyde Street](/san-francisco/tenderloin/hyde-street/222/) — A 1911 4-unit building with a ground-floor store, with plumbing work permitted in 2001.
+- [230–234 Hyde Street](/san-francisco/tenderloin/hyde-street/230/) — A 1931 office building, with deck work permitted in 1994.
 - [240 Hyde Street](/san-francisco/tenderloin/hyde-street/240/) — A 1929 hotel, with reroofing permitted in 2026.
 - [245–257 Hyde Street](/san-francisco/tenderloin/hyde-street/245/) — An office building, with one permit record from 2019.
 - [300–302 Hyde Street](/san-francisco/tenderloin/hyde-street/300/) — A 1917 19-unit apartment building, with reroofing permitted in 2018.
@@ -240,8 +246,10 @@ The buildings documented here so far inside the Uptown Tenderloin Historic Distr
 - [150–152 Turk Street](/san-francisco/tenderloin/turk-street/150/) — A 1922 garage, with reroofing permitted in 1992.
 - [162–166 Turk Street](/san-francisco/tenderloin/turk-street/162/) — A 1906 hotel, with a seismic retrofit permitted in 2001.
 - [180–194 Turk Street](/san-francisco/tenderloin/turk-street/180/) — A 1926 134-unit apartment building, with a kitchen remodel permitted in 2003.
+- [201–259 Turk Street](/san-francisco/tenderloin/turk-street/201/) — A 1993 175-unit apartment building, with reroofing permitted in 2012.
 - [240–242 Turk Street](/san-francisco/tenderloin/turk-street/240/) — A 2008 113-unit apartment building, with electrical work permitted in 2026.
 - [270–272 Turk Street](/san-francisco/tenderloin/turk-street/270/) — A 1927 86-unit apartment building, with an accessory dwelling unit permitted in 2017.
+- [280–290 Turk Street](/san-francisco/tenderloin/turk-street/280/) — A 1921 office building, with reroofing permitted in 2018.
 - [323–333 Turk Street](/san-francisco/tenderloin/turk-street/323/) — A 1921 apartment building, with reroofing permitted in 2013.
 - [350–354 Turk Street](/san-francisco/tenderloin/turk-street/350/) — A 1964 362-unit apartment building, with a seismic retrofit permitted in 2019.
 - [351 Turk Street](/san-francisco/tenderloin/turk-street/351/) — A 1928 231-unit apartment building, with window replacement permitted in 2020.

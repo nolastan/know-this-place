@@ -107,7 +107,7 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Upper Grant Avenue Historic District](upper-grant-avenue/) — Eligible for the California Register, significant 1906–1925; 111 buildings documented on 11 streets.
 - [Upper Market Street Commercial Historic District](upper-market-street-commercial/) — Eligible for the California Register, significant 1886–1958; 1970–1979; 29 buildings documented on 3 streets.
 - [Upper Market Street Commercial Historic District Extension](upper-market-street-commercial-extension/) — Eligible for the California Register, significant 1886–1958; 1970–1979; 14 buildings documented on one street.
-- [Uptown Tenderloin Historic District](uptown-tenderloin/) — Listed on the California and National Registers, significant 1906–1957; 225 buildings documented on 17 streets.
+- [Uptown Tenderloin Historic District](uptown-tenderloin/) — Listed on the California and National Registers, significant 1906–1957; 233 buildings documented on 17 streets.
 - [Vicente Street Historic District](vicente-street/) — Eligible for the California Register, significant 1931; 9 buildings documented on one street.
 - [Von Schroeder-Welsh Block Historic District](von-schroeder-welsh-block/) — Eligible for the California Register, significant 1889–1895; 25 buildings documented on 2 streets.
 - [Washington Square Historic District](washington-square/) — Eligible for the California Register, significant 1906–1939; 16 buildings documented on 7 streets.

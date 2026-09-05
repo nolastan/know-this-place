@@ -159,6 +159,10 @@
               "type": "string",
               "description": "Shortest span that justifies the extraction."
             },
+            "note": {
+              "type": "string",
+              "description": "Why this span is not what the source literally says: a name redacted out of it, or a span entered by hand because the extractor could not reach it. `text` is the audit trail, so an auditor has to be told where it was altered and whether re-running the tool would undo that."
+            },
             "ocr_uncertain": {
               "type": "boolean"
             }
