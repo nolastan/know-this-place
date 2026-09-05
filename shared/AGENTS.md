@@ -61,8 +61,9 @@ new CSS.
 - **One `.vtl` per page**, holding every dated entry, oldest first.
   `validate.py` fails a page carrying more than one.
 - **Never state a fact twice.** A structured fact renders in exactly one block.
-  Categorical identity (year built, building type, stories, zoning, district)
-  belongs in `.tags`; the stat band is for *measurements* not shown there. If a
+  Categorical identity (building type, stories, zoning, district) belongs in
+  `.tags`; the year built is dated, so it opens the `.vtl` instead; the stat
+  band is for *measurements* not shown there. If a
   number is detailed elsewhere — assessed value, which the sidebar chart owns —
   it is not also a tile.
 
@@ -73,7 +74,8 @@ Where a new fact goes. Full markup for each is in [BLOCKS.md](BLOCKS.md).
 | `data.json` | renders as | for |
 |---|---|---|
 | `address`, `coordinates` | `.hero` `<h1>` + `.sub`, `<ktp-map>`, `<ktp-streetview>` | identity and the locator band |
-| `parcel`, `historic_status` | `.tags` in the hero | categorical identity — year built, type, stories, zoning |
+| `parcel`, `historic_status` | `.tags` in the hero | categorical identity — type, stories, zoning, district |
+| `parcel.year_built` | the first `.vtl` item | the year the building went up, on the rail with everything else dated |
 | `parcel`, `assessment` | `.stats` / `.stat` tiles | measurements: building area, lot area, rooms |
 | `assessment` land/improvement split | `.stack` inside `<ktp-figure>` | one total split in two, both parts labeled |
 | `permits` | `.vtl` items, each with a `.pill` status and a `.cost` tier | the dated record of work |

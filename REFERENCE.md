@@ -358,7 +358,7 @@ The rules are in [AGENTS.md → Writing pages](AGENTS.md#writing-pages). These
 are the worked cases behind them, kept because each one cost a correction.
 
 **Never state a fact twice — this catches adjectives as readily as sentences.**
-A tag reading "Built 1908" forbids "a house **of 1908**" in the lead; a "7 ·
+A timeline opening "1908 · Built" forbids "a house **of 1908**" in the lead; a "7 ·
 Rooms" tile forbids "a **seven-room** house." Read the finished lead against
 the tags, the tiles and the spec list word by word and cut every phrase one of
 them already carries. What survives is usually one clause — that clause is the

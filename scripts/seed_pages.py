@@ -1192,8 +1192,8 @@ def meta_description(rec: dict) -> str:
 def tags_html(rec: dict) -> str:
     p = rec.get("parcel", {})
     out = []
-    if p.get("year_built"):
-        out.append(("ic-calendar", f"Built {p['year_built']}"))
+    # No year built here: it is a dated fact, so it opens the timeline instead
+    # (see `built_item`).
     out.append(("ic-home", building_type(p.get("property_class"), p.get("units"))))
     if p.get("stories"):
         s = p["stories"]
@@ -1303,28 +1303,71 @@ def permit_items(rec: dict, indent: str) -> tuple:
     return items, disclosure
 
 
+DEMOLITION = re.compile(r"\bdemoli", re.I)
+# Work inside or beside a building that stayed up: "interior demolition",
+# "demolish non-bearing partitions", "demolish storage shed".
+PARTIAL_DEMOLITION = re.compile(r"interior|non-? ?structural|partition|\bshed\b|partial", re.I)
+
+
+def built_item(rec: dict, indent: str) -> list:
+    """The assessor's year built, as the entry the rest of the timeline hangs off.
+
+    It was a "Built 1896" tag in the hero until issue #132: a dated fact
+    standing outside the one sequence a reader reads dates in, which left every
+    rail starting at whichever permit DBI happened to keep.
+
+    "Current structure built" only where the record shows the parcel was
+    cleared first — a whole building demolished on a permit filed before the
+    assessor's year and not cancelled, withdrawn or expired. That is the sole
+    signal this reads, deliberately: 1,484 pages carry something dated earlier
+    than their build year, and on all but a fraction of them it is this
+    building's own design or construction, attributed a few years before the
+    roll's rounded year ("Designed by Ernest Coxhead", 1895, under a build year
+    of 1900). Calling that a previous structure would be a claim no source
+    made. 162 pages meet the demolition test.
+    """
+    year = (rec.get("parcel") or {}).get("year_built")
+    if not year:
+        return []
+    replaced = any(
+        date_key(p.get("filed"))[0] < int(year)
+        and DEMOLITION.search(p.get("description") or "")
+        and not PARTIAL_DEMOLITION.search(p.get("description") or "")
+        # A demolition that was cancelled, withdrawn or expired is a plan, not
+        # a cleared lot — the rail mutes those items for the same reason.
+        and not PILL.get(p.get("status", ""), ("", "", "", False))[3]
+        for p in rec.get("permits") or [])
+    return [((int(year), 0, 0),
+             f'{indent}  <li class="vtl-item">\n'
+             f'{indent}    <div class="vtl-date">{year}</div>\n'
+             f'{indent}    <p class="vtl-desc">'
+             f'{"Current structure built." if replaced else "Built."}</p>\n'
+             f'{indent}  </li>')]
+
+
 def timeline_html(rec: dict, indent: str) -> str:
     """The page's one timeline: every dated entry on a single rail, oldest first.
 
-    Permits and historical records are the same kind of thing to a reader —
-    something that happened here on a date — so they share one `.vtl` and
-    interleave by date rather than sitting in two rails that each restart the
-    clock. The rail is only introduced by a heading when it holds nothing but
-    permits and "Permit history" therefore describes all of it; a mixed
-    timeline needs no heading (its layout says what it is) and carries the
-    label for screen readers instead.
+    The year the building went up, its permits and its historical records are
+    the same kind of thing to a reader — something that happened here on a date
+    — so they share one `.vtl` and interleave by date rather than sitting in
+    two rails that each restart the clock.
+
+    No heading. The rail carried a "Permit history" one while it could hold
+    nothing else, and it is neither true now (every page with a build year
+    opens with it) nor needed: a timeline is self-evident on sight. The name
+    stays for screen readers, on `aria-label`.
     """
+    built = built_item(rec, indent)
     permits, disclosure = permit_items(rec, indent)
     earlier = historical_items(rec, indent)
-    if not (permits or earlier):
+    if not (built or permits or earlier):
         return ""
-    items = [html for _, html in sorted(permits + earlier, key=lambda e: e[0])]
-    head = ""
-    if not earlier:
-        head = (f'{indent}<div class="section-head"><span class="ic ic-clock"></span>'
-                f'<h2>Permit history</h2></div>\n')
-    rail = ('<ol class="vtl">' if head else '<ol class="vtl" aria-label="Timeline">')
-    return (head + f'{indent}{rail}\n' + "\n".join(items)
+    # `sorted` is stable and `built` leads the list, so the building's own year
+    # comes before anything else the same year — a permit filed in the month it
+    # was finished, a photograph dated to the year.
+    items = [html for _, html in sorted(built + permits + earlier, key=lambda e: e[0])]
+    return (f'{indent}<ol class="vtl" aria-label="Timeline">\n' + "\n".join(items)
             + f"\n{indent}</ol>\n" + disclosure)
 
 
@@ -1640,8 +1683,8 @@ def glance_panel_html(rec: dict, indent: str) -> str:
     # Researched identity: the name the building goes by, who designed it, who
     # built it. Single facts, so spec rows — never a paragraph each.
     # A published completion year that matches the assessor's is the same fact
-    # twice — the "Built 1988" tag already carries it. Show the row only when
-    # the two disagree, and `unknowns` says so alongside.
+    # twice — the timeline's "Built" entry already carries it. Show the row only
+    # when the two disagree, and `unknowns` says so alongside.
     completed = b.get("completed")
     if completed and str(completed) == str(p.get("year_built")):
         completed = None
@@ -2159,8 +2202,11 @@ def render_html(rec: dict) -> str:
     has_panels = bool(value_panel_html(rec, "") or glance_panel_html(rec, "")
                       or district_panel_html(rec, "") or open_space_panel_html(rec, "")
                       or survey_panel_html(rec, ""))
-    has_main = bool(public_art_html(rec, "") or timeline_html(rec, "")
-                    or narrative_html(rec, "")[1])
+    # A rail holding nothing but the building's own year is not a column: it
+    # would put one dot beside a full stack of panels. Those pages keep
+    # stacking full width, as they did when the year was a tag in the hero.
+    has_main = bool(public_art_html(rec, "") or narrative_html(rec, "")[1]
+                    or timeline_html(rec, "").count('<li class="vtl-item"') > 1)
     use_cols = has_panels and has_main
     ind = "      " if use_cols else "  "
     panels = (open_space_panel_html(rec, ind) + value_panel_html(rec, ind)
