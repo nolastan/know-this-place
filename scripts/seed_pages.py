@@ -832,6 +832,97 @@ def generalize_units(text: str | None) -> str | None:
     return UNIT_REF.sub(_generic_unit, text) if text else text
 
 
+# In a hotel — and above all in a residential hotel or SRO, where the room is
+# the home — a room number is a dwelling identifier exactly as an apartment
+# number is, and AGENTS.md bars both. DBI writes them constantly: "repair fire
+# damage to room #227 & 204" (240 Jones, the Roosevelt).
+#
+# The rewrite is confined to parcels the assessor's roll files as a hotel,
+# because that gate is what separates a dwelling identifier from a room named
+# by its function. Measured over every published data.json, a "room <number>"
+# pattern matches 111 pages; on the 55 that are not hotels it is almost
+# always a building description a page should keep — "storage room #1 (aka
+# media room)" in a Castro house, "exam room #3" in a clinic, "operating rooms
+# 1,2,3,4,6" in a hospital, "living room #1 - #3" in a flat. Widening past the
+# roll's own classification would rewrite those, so it isn't done here; the
+# apartment buildings whose "room #63" really is a dwelling are left for a
+# person to decide, one page at a time.
+HOTEL_USE = "Commercial Hotel"
+# The narrowings, each one something the hotel corpus actually contains:
+#   * a room type named right before the keyword is a room, not a home. Every
+#     word here precedes a numbered room somewhere in the DBI export; "bath"
+#     is deliberately absent, because inside a hotel "bth rms 201-205" and
+#     "bathrms in & adj to rms 120, 220 & 320" number the guest rooms.
+ROOM_TYPE_WORD = {
+    "bed", "boiler", "break", "breakout", "class", "computer", "conference",
+    "dining", "display", "elec", "electrical", "engine", "exam", "fam",
+    "family", "furnace", "game", "jacuzzi", "laundry", "liv", "living",
+    "locker", "machine", "massage", "mech", "mechanical", "media", "meeting",
+    "mud", "music", "office", "operating", "piano", "powder", "pump",
+    "purpose", "rest", "sauna", "server", "service", "shower", "steam",
+    "stock", "storage", "storge", "study", "studio", "sun", "supply", "tool",
+    "training", "treatment", "utility", "wash",
+}
+#   * a qualifier that says "dwelling" is absorbed into the replacement rather
+#     than left in front of it, so "hotel rooms 806 and 807" becomes "two
+#     hotel rooms" and not "hotel two rooms".
+DWELLING_WORD = {"guest", "guess", "hotel", "sleeping"}
+#   * a number that measures is not a number that identifies: "tool room 69 sq
+#     ft" is an area, "room 12' x 15'" is a dimension, and a list can run
+#     straight into one ("rms 113,114,115,116,117,118, 720 sq ft").
+_NOT_MEASURE = (r"(?!\s*(?:sqft|sq|sf|s\.\s?f|feet|ft|square)\b)"
+                r"(?!\s*['\"])")
+#   * DBI hyphenates room numbers, as a range ("rooms 100-121") and as a list
+#     ("bth rms 201-205-302-303-304-305"), a shape it never uses for units.
+#     The hyphen must join two numbers: before a word it is a dash ("room
+#     #248-close partition wall"), and before "/f" it marks a floor ("room
+#     6-2/f", which is room 6 on the second floor, not rooms 6 through 2).
+_ROOM_NUM = (_UNIT_NUM + _NOT_MEASURE +
+             r"(?:\s*-\s*" + _UNIT_NUM + _NOT_MEASURE + r"(?!/))*")
+_ROOM_RUN = (_ROOM_NUM + r"(?:" + _SEP + r"#?\s*" + _ROOM_NUM +
+             r"|\s+#?" + _ROOM_NUM + r"(?![./]))*")
+# No lettered branch, unlike UNIT_REF: the hotel corpus holds no "room a", and
+# a bare letter after "room" is likelier one of DBI's abbreviations. The
+# abbreviation may carry its own period ("rm. 248-close partition wall",
+# "rm.#206"); the spelled-out word may not, except in front of "#", because
+# "room." otherwise ends a sentence and the number after it opens the next one
+# ("powder room. 338 sq ft of new habitable space") — the mistake that makes
+# generalize_units non-idempotent (#250).
+ROOM_REF = re.compile(
+    r"(?:\b(?P<qual>[a-z]+)\s+)?\b(?:rms?\.?|rooms?(?:\.(?=\s*#))?)"
+    r"\s*(?:#\s*:?\s*)?(?P<desig>" + _ROOM_RUN + r")", re.I)
+# Counts are spelled out, never written as digits, so that the rewrite can
+# never produce text it would rewrite again: "toilet rooms guest room 501,505,
+# ..." ends "... rooms sixteen guest rooms", where a digit would have left a
+# fresh "rooms 16" for the next pass to eat. A run longer than this table
+# drops to the bare plural for the same reason; the longest in the corpus is
+# 19, so that branch is unreached today.
+ROOM_COUNT_WORD = COUNT_WORD | {
+    11: "eleven", 12: "twelve", 13: "thirteen", 14: "fourteen",
+    15: "fifteen", 16: "sixteen", 17: "seventeen", 18: "eighteen",
+    19: "nineteen", 20: "twenty"}
+
+
+def _generic_room(m) -> str:
+    qual = m.group("qual") or ""
+    if qual.lower() in ROOM_TYPE_WORD:
+        return m.group(0)
+    if qual.lower() in DWELLING_WORD:
+        lead, kind = "", f"{qual.lower()} room"
+    else:
+        lead, kind = (f"{qual} " if qual else ""), "room"
+    desig = m.group("desig")
+    n = 0 if "-" in desig else len(re.findall(_UNIT_NUM, desig))
+    if n == 0 or n not in ROOM_COUNT_WORD:
+        return f"{lead}{kind}s"
+    return lead + (f"one {kind}" if n == 1 else f"{ROOM_COUNT_WORD[n]} {kind}s")
+
+
+def generalize_rooms(text: str | None, *, hotel: bool) -> str | None:
+    """Genericize room numbers, but only on a hotel parcel — see HOTEL_USE."""
+    return ROOM_REF.sub(_generic_room, text) if text and hotel else text
+
+
 def redact(text: str | None) -> str | None:
     """Remove any name on the redaction list, then tidy the wreckage.
 
@@ -1092,6 +1183,7 @@ def build_record(parcel: dict, ctx: dict) -> dict:
             rec["also_in_districts"] = [as_record(e) for e in hits[1:]]
 
     permits = []
+    is_hotel = p.get("use") == HOTEL_USE
     for r in parcel["permits"]:
         entry = {
             "number": r.get("permit_number"),
@@ -1101,7 +1193,8 @@ def build_record(parcel: dict, ctx: dict) -> dict:
             "status_date": ymd(r.get("status_date")),
             "estimated_cost": num(r.get("estimated_cost")),
             "revised_cost": num(r.get("revised_cost")),
-            "description": redact(generalize_units(r.get("description"))),
+            "description": redact(generalize_rooms(
+                generalize_units(r.get("description")), hotel=is_hotel)),
             "source": "sf-building-permits",
         }
         permits.append({k: v for k, v in entry.items() if v not in (None, "")})
