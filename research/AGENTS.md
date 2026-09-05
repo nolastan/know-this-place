@@ -86,11 +86,51 @@ no "the archive shows…" sentences.
 - **`findings/<id>/<batch>.json`** — the chain of custody for every fact, from
   the passage it came from to the page it landed on. Rules:
   [findings/README.md](findings/README.md) and
-  [schema/finding.schema.json](schema/finding.schema.json).
+  [schema/finding.schema.json](schema/finding.schema.json). **Never read one
+  whole** — see below.
 - **`manifests/*.json`** — parcel lists for `scripts/seed_pages.py seed-list`,
   when a source names enough buildings with no pages to be worth seeding in
   bulk.
 - **GitHub issues** — the queue between runs and between agents and humans.
+
+## Never read a findings file whole
+
+These files are the module's accumulated output, and they long ago outgrew
+being read. The whole of `findings/` is tens of megabytes; the largest single
+file is past what a context window holds, so opening it does not cost a lot of
+the session — it costs all of it, and returns nothing. An agent reaching for
+one of these almost always wants a handful of entries out of thousands.
+
+**[findings/INDEX.md](findings/INDEX.md) is the way in.** It is generated, it
+is small, and it says what every batch covers — entries, years, neighborhoods,
+how much is resolved and published — so the question "is this file worth
+querying, and how" is answered without opening anything.
+
+To get entries out, query; never `cat`, never `Read` without a range:
+
+```bash
+python3 research/tools/check.py --peek research/findings/<id>/<batch>.json
+python3 research/tools/check.py --find "1377 Fulton"
+jq '.findings[] | select(.street_name == "FULTON") | {id, description}' <file>
+```
+
+`--peek` gives a batch's header, its coverage note and a spread sample of its
+entries; `--find` matches words across every findings file at once. The same
+goes for `manifests/` — flat parcel lists with nothing in them to read, listed
+with their sizes at the bottom of INDEX.md.
+
+Writing is a different matter: a run appends to its own findings file with
+`resolve_eas.py` and an editor, not by loading it into the context.
+
+**INDEX.md is derived**, like the sitemap and the map index on the website
+side. Regenerate it in the same commit as any findings change:
+
+```bash
+python3 research/tools/check.py --index
+```
+
+`check.py` fails while it is stale — a stale index is worse than none, because
+it gets believed.
 
 ## Statuses — the whole vocabulary
 

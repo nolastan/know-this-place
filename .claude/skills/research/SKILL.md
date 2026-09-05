@@ -111,6 +111,9 @@ python3 research/tools/check.py [--stats]           # run before every commit
 python3 research/tools/check.py --report <findings-file>   # the PR body's table
 python3 research/tools/check.py --overlap <findings-file>  # facts the pages already carry
 python3 research/tools/check.py --landed <findings-file>   # published entries that changed nothing
+python3 research/tools/check.py --index             # rebuild findings/INDEX.md (derived)
+python3 research/tools/check.py --peek <findings-file>     # what a batch is, without reading it
+python3 research/tools/check.py --find "1377 Fulton"       # matching entries, corpus-wide
 python3 research/tools/resolve_eas.py fetch|report|apply <findings-file>
 python3 scripts/validate.py                         # any run that touched a page
 python3 scripts/seed_pages.py seed-list --manifest research/manifests/<f>.json
@@ -118,6 +121,13 @@ python3 scripts/seed_pages.py seed-list --manifest research/manifests/<f>.json
 
 `report` before `apply`, and read every conflict it prints — the tool does the
 lookups, you do the judgement.
+
+**Never open a findings file.** They run to megabytes and the largest is past
+what a context window holds, so reading one to reach a handful of entries costs
+the session and returns nothing. `research/findings/INDEX.md` says what every
+batch covers; `--peek`, `--find` and `jq` get entries out. Regenerate the index
+with `--index` in the same commit as any findings change — `check.py` fails
+while it is stale.
 
 ## Before you stop
 

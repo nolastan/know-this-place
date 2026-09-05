@@ -147,6 +147,13 @@ example: [findings/README.md](findings/README.md).
 Name the batch after the citable unit that was read: `sn85066387-1895.json`,
 `japantown-hcs.json`, `vol-31-no-2.json`.
 
+**Don't open an existing findings file to see how it's done** — take the shape
+from the schema and the worked example, both small, and a real batch from
+`check.py --peek`. The files in `findings/` run to megabytes; what each one
+holds is in [findings/INDEX.md](findings/INDEX.md), and
+`research/AGENTS.md` → "Never read a findings file whole" says how to get
+entries out of one.
+
 ## 3. Place it — an address becomes a parcel
 
 **Most of the mistakes this project can make live in this step**, so the bias is
@@ -493,10 +500,13 @@ Leave all of this true:
 - **An issue** for what you didn't finish, using
   [templates/issues.md](templates/issues.md). Search open issues for the source
   id first.
+- **The findings index** ([findings/INDEX.md](findings/INDEX.md)) — derived
+  from the findings files, so it is stale the moment a run writes one.
 - **Clean checks**, then a commit on a branch — never `main` — whose message and
   PR body carry the run's counts:
 
 ```bash
+python3 research/tools/check.py --index    # findings/INDEX.md is derived
 python3 research/tools/check.py
 python3 scripts/validate.py        # if a page was touched
 ```
