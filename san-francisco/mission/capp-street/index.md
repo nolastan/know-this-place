@@ -39,6 +39,7 @@ Every residential parcel on Capp Street that the city's address, assessor and pe
 - [340](340/) — A 1989 3-unit apartment building, with reroofing permitted in 2010.
 - [342](342/) — A 1907 single-family house, with a rear addition permitted in 1988.
 - [345](345/) — A 1900 two-flat, with facade work permitted in 1989.
+- [350–362](350/) — A 1911 2-unit building, with reroofing permitted in 2002.
 - [351](351/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2022.
 - [355–359](355/) — A 1930 4-unit apartment building, with an accessory dwelling unit permitted in 2020.
 - [361](361/) — A 1983 single-family house, with one permit record from 1982.

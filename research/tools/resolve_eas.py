@@ -1073,11 +1073,46 @@ def renumbering_guard(f: dict, res: dict, city: "City" = None) -> dict:
     fires that existed at the time were on records that print no block and lot,
     so none of them changed. The exemption only reaches records that hand over
     the parcel themselves.
+
+    There is a second exemption for the same reason, `extra.record_date`: the
+    year the record was written. Where that is 1910 or later the number in it is
+    a modern number by construction, whatever the fact's own date, and the guard
+    does not apply. It is opt-in, so it changed nothing already committed (0 of
+    15,230 findings carried the field when it was added). The first source to
+    use it is `nrhp-nominations`, whose 1970s forms date buildings to the 1850s.
     """
     if res.get("status") != "resolved":
         return res
     m = YEAR_IN_DATE.search(f.get("date") or "")
     if not m or int(m.group(1)) >= RENUMBERING_YEAR:
+        return res
+    # A second exemption, on the same principle as the block-and-lot one and
+    # reached far more often: **the record itself was written after the
+    # renumbering.** The guard exists for a number written down *while* the old
+    # numbering was in force — an 1895 newspaper giving 1895's number for an
+    # 1895 fire. It has nothing to say about a 1976 National Register nomination
+    # giving 1976's number for an 1880 house, and refusing that costs the fact
+    # for no reason: the address in the document is already today's address.
+    #
+    # It is opt-in and explicit — `extra.record_date`, the year the source was
+    # written, which the extractor sets only where the source states it — so no
+    # committed finding changes (measured: 0 of 15,230 carry the field). The
+    # assessor's year comparison is still printed into the method, because the
+    # guard's *other* error mode survives this exemption: a modern number can
+    # point at a later building on the same lot, and the reader needs to see
+    # that gap even when the number itself is not in doubt.
+    rec = str((f.get("extra") or {}).get("record_date") or "")
+    rm = YEAR_IN_DATE.search(rec)
+    if rm and int(rm.group(1)) >= RENUMBERING_YEAR:
+        res = dict(res)
+        yb = ""
+        if city is not None:
+            yb = ((city.roll.get(res.get("apn") or "") or {}).get("year_property_built") or "")
+        res["method"] = (res.get("method", "") + f" The record was written in {rm.group(1)}, "
+                         f"after the 1909 renumbering, so the number it gives is a modern "
+                         f"number and the renumbering guard does not apply"
+                         + (f"; the assessor dates the building on this parcel to {yb}."
+                            if yb else ".")).strip()
         return res
     if recorded_parcel_check(f, res.get("apn") or "") == "match":
         res = dict(res)

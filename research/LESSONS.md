@@ -1626,3 +1626,58 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   SFP 130 and only SFP 130. *Measure the addressed records before writing a
   collection off; the count that matters is not how many records name a person
   but how many name a person **and** a number.*
+
+- **The renumbering guard is about when the *record* was written, not when the
+  *fact* happened.** `resolve_eas.py` declines a pre-1910 date resolved on the
+  EAS join alone, and it is right to: an 1895 newspaper giving 1895's number for
+  an 1895 fire needs a cross-street check before that number means anything
+  today. It is wrong for a modern document about an old building — a 1976
+  National Register nomination giving 1976's number for an 1880 house — where
+  the address is already today's address and the guard costs the fact for
+  nothing. It refused 20 of one 54-document batch. *Set `extra.record_date` to
+  the year the source was written; the tool skips the guard where that is 1910
+  or later and still prints the assessor's year for the parcel into the method,
+  because the guard's other error mode — a modern number pointing at a later
+  building on the same lot — survives the exemption.* The block-and-lot
+  exemption already in the tool is the same principle for records that hand over
+  the parcel.
+
+- **A listing's address and the building's address are not always the same
+  thing, and a moved building is where they part.** Nine of the ten San
+  Francisco National Register listings certified 8 March 1973 are Western
+  Addition Victorians the Redevelopment Agency bought and physically moved
+  rather than demolish; the NPS index carries the address they were moved *to*
+  and the nomination's own "street and number" is where they stood when it was
+  written, months earlier. Both are real, and they are two facts on two
+  different parcels — the one the house left, and the one it arrived at. *Read
+  the document's own header rather than trusting the index the batch was planned
+  from, and where they disagree, record both.* The destination block and lot the
+  form states is an intention, not a record: two of these name the same lot for
+  two different houses.
+
+- **A survey or nomination that dates a building by its water connection is
+  giving you a proxy, and it usually knows it.** The 1973 Western Addition
+  nominations all rest on "the San Francisco Water Department records show this
+  building as being connected to the water system in ⟨year⟩", and several then
+  quote the Junior League's *Here Today* giving a different year — 1884 against
+  1875, 1876 against "late 1880's". *That is a conflict to record, not a range
+  to average, and the water year is when the house got water rather than when it
+  was finished. Say what the source says and set `conflict`.*
+
+- **The assessor's `year_property_built` of 1900 is a placeholder, and the
+  overlap scan cannot tell it from a real replacement.** Eight facts in one
+  batch tripped "predates the building the assessor says is on the parcel", and
+  every one of them was the roll giving a flat 1900 for a Victorian the
+  nomination dates to the 1850s–80s. *Record the disagreement in the page's
+  `.unknowns` and publish; do not reframe the fact as being about a demolished
+  building on the strength of a 1900. The flag still earns its keep — in the
+  same batch it caught 848 Kearny, where the roll's 2005 is real and the
+  International Hotel is genuinely gone.*
+
+- **Seeding pages rewrites the neighbours, and `validate.py` will fail until you
+  render them too.** Six new pages left 34 unrelated `index.html` files stale,
+  because each carries a "nearby places" list that now names a page that did not
+  exist. They are not in `scripts/render-backlog.txt` and nothing warns you.
+  *After `seed-list`, run `validate.py`, feed its "run: … render ⟨path⟩" lines
+  back to `seed_pages.py render`, and expect a diff several times larger than
+  the pages you actually wrote to.*

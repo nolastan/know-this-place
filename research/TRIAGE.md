@@ -42,19 +42,6 @@ an agent until that answer exists: the next pass will otherwise re-derive the
 opt-out from scratch and, worse, may not notice it, because `robots.txt` says
 `Allow: /` to `User-agent: *` sixty lines above the block that names us.
 
-**National Register nomination forms.** 166 San Francisco listings, 135 of them
-with a numbered street address. The NPS map service
-(`mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/0`,
-query `City='San Francisco'`) returns reference number, resource name, address
-and certification date in one call — that is the index. The nomination PDF is
-then at `npgallery.nps.gov/NRHP/GetAsset/NRHP/<refnum>_text`, and all three
-sampled (73000441, 78000757, 71000183) returned a PDF with a usable OCR text
-layer. Federal work product, public domain. **Sampled:** the Civic Center
-district nomination (78000757, 85K characters of text) names 99 Grove Street,
-355 and 450 McAllister Street, 45 Hyde Street and 200 Larkin Street among
-others; the 1973 form 73000441 gives 762 Fulton Street. One nomination is one
-batch, which makes this the most startable thing on the list.
-
 **SF neighborhood newspapers, 1956–2026.** The original lead named five papers
 and pointed at each one's own website; that is the wrong access path. The right
 one is a single Internet Archive collection, `sanfrancisconewspapers`, holding
