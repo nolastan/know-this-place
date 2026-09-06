@@ -1531,4 +1531,10 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   faults it travels with — **the report's argument** ("would have made it the
   first San Francisco landmark deliberately pulled down"), which is a
   counterfactual about a proposal and not a fact about the building, and **the
-  date restated in the prose** that the timeline label already shows.
+  date restated in the prose** that the timeline label already shows ("Designated a
+  San Francisco landmark as the Geneva Office Building **in 1985**", on an entry
+  dated 1985). Both are now `check.py --overlap` scans — *by its own date* — so the
+  next batch is told before it publishes rather than after a reader finds it. The
+  restatement is not this module's alone: **953 of the site's 7,764 timeline entries
+  do it**, across almost every context-statement batch, and clearing them is its own
+  sweep.

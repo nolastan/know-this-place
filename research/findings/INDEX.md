@@ -116,7 +116,7 @@ sit in — the three it touched most, and how many in all.
 | `sf-context-statements/flats-small-apartments-hcs.json` | 72 | 153 KB | 1915–1975 | 53 | 52 | `marina`, `inner-sunset`, `russian-hill` +15 |
 | `sf-context-statements/japantown-hcs.json` | 125 | 242 KB | 1852–2009 | 83 | 83 | `pacific-heights`, `japantown`, `western-addition` +1 |
 | `sf-context-statements/large-apartment-hcs.json` | 89 | 199 KB | 1905–2024 | 72 | 58 | `pacific-heights`, `russian-hill`, `nob-hill` +12 |
-| `sf-context-statements/lgbtq-hcs.json` | 382 | 615 KB | 1872–2016 | 307 | 289 | `castro`, `mission`, `tenderloin` +24 |
+| `sf-context-statements/lgbtq-hcs.json` | 382 | 617 KB | 1872–2016 | 307 | 289 | `castro`, `mission`, `tenderloin` +24 |
 | `sf-context-statements/lgbtq-heritage-strategy.json` | 0 | 2 KB | — | 0 | 0 | — |
 | `sf-context-statements/market-octavia-hcs.json` | 496 | 886 KB | 1875–2007 | 425 | 425 | `mission`, `south-of-market`, `castro` +4 |
 | `sf-context-statements/market-octavia-survey-forms.json` | 473 | 1.0 MB | 1870–2010 | 385 | 378 | `hayes-valley`, `mission`, `castro` +3 |
@@ -135,7 +135,7 @@ sit in — the three it touched most, and how many in all.
 | `sf-context-statements/russian-hill-hcs.json` | 109 | 255 KB | 1857–2006 | 67 | 57 | `russian-hill`, `pacific-heights`, `nob-hill` +5 |
 | `sf-context-statements/sexual-identity-subcultures.json` | 188 | 347 KB | 1929–1993 | 148 | 114 | `south-of-market`, `mission`, `north-beach` +7 |
 | `sf-context-statements/showplace-square-survey.json` | 941 | 1.8 MB | 1867–2011 | 823 | 576 | `mission`, `mission-bay`, `south-of-market` +1 |
-| `sf-context-statements/soma-filipino-heritage.json` | 153 | 279 KB | 1900–2011 | 111 | 68 | `south-of-market`, `east-cut`, `chinatown` +11 |
+| `sf-context-statements/soma-filipino-heritage.json` | 153 | 280 KB | 1900–2011 | 111 | 68 | `south-of-market`, `east-cut`, `chinatown` +11 |
 | `sf-context-statements/south-of-market-hcs.json` | 155 | 274 KB | 1853–2008 | 117 | 103 | `south-of-market`, `east-cut`, `mission` +3 |
 | `sf-context-statements/sunset-builders-hcs.json` | 158 | 327 KB | 1896–1968 | 144 | 143 | `sunset-parkside`, `inner-sunset`, `west-of-twin-peaks` +5 |
 | `sf-context-statements/transit-center-district-survey.json` | 316 | 602 KB | 1853–2008 | 263 | 215 | `east-cut`, `south-of-market`, `financial-district` +1 |
