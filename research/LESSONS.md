@@ -1515,3 +1515,20 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   Francisco and 81-83 Vandewater; 1623 and 1629 Pine). *Before rendering, count
   identical descriptions per page and merge them into one entry that names both
   numbers, marking the sibling's `publish.note`.*
+
+- **An entry belongs to one date, and everything else in it is on the page under
+  a date it did not happen.** A finding is written from a passage, and a passage
+  in an environmental review walks a building through eighty years in four
+  sentences — so the description arrives carrying a designation, a rating, a fire
+  and a demolition under whichever year the extractor chose. On the page that
+  becomes a timeline item dated 1986 that ends in 1998, which is simply false in
+  the reader's eye. The Geneva Office Building shipped with eight items covering
+  nineteen dated events; the corrected page has thirteen items, each one thing
+  that happened on the date beside it. *Before publishing, list the years in each
+  description and compare them with the entry's own `date`: two or more foreign
+  years means the finding is really several findings, and the split belongs in
+  the findings file, not just on the page.* The same pass catches the two other
+  faults it travels with — **the report's argument** ("would have made it the
+  first San Francisco landmark deliberately pulled down"), which is a
+  counterfactual about a proposal and not a fact about the building, and **the
+  date restated in the prose** that the timeline label already shows.

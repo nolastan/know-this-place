@@ -8,8 +8,8 @@
 > - **Search-invisibility:** high — see the register for what that rates.
 > - **Coverage:** all 172 address-titled documents read, in 93 projects, plus the whole named
 >   single-site group of the project-titled set — 36 projects of 1974–1982, 36 of 1979–2005 — and the
->   58 projects whose titles carry a street address later than first position; 719 findings, 470
->   resolved, 415 published.
+>   58 projects whose titles carry a street address later than first position; 747 findings, 498
+>   resolved, 442 published.
 >   All ~617 project-titled documents are grouped and sampled in the triage note below.
 > - **Local corpus:** `research/corpora/sf-environmental-review/`
 >
@@ -559,8 +559,8 @@
   into one behind Ward Thomas's 1956 curtain wall).
 
   The seventh batch finishes the named single-site group: the **projects of
-  1979-2005 titled by project name**, 36 documents, one per project — 113
-  findings, 74 resolved, 71 published on 53 pages, 25 of them seeded by that run.
+  1979-2005 titled by project name**, 36 documents, one per project — 141
+  findings, 102 resolved, 98 published on 53 pages, 25 of them seeded by that run.
   Ten of the 36 yielded nothing: Underwater World at Pier 39, the 300 Ulloa Street
   residential care facility, the Bridgemont High School site subdivision, Natoma
   Mews, Pacific Center, the Pacific Exchange, the Post Street Medical Center, the
@@ -582,8 +582,8 @@
   whose drafts are read.**
 
 - **Verified:** 2026-09-05, seventh run: the rest of the named single-site group — 36
-  projects of 1979-2005 titled by project name, one document each — 113 findings, 74
-  resolved, 71 published on 53 pages, 25 of them seeded. What it learned: **a commercial
+  projects of 1979-2005 titled by project name, one document each — 141 findings, 102
+  resolved, 98 published on 53 pages, 25 of them seeded. What it learned: **a commercial
   condominium refuses as hard as a residential one**, and the parcel with no roll row is
   the master rather than a missing record, which is why the Emporium site's thirteen
   dated buildings reached no page at all; **a project site of more than one block cannot
@@ -594,7 +594,10 @@
   document's and not the project's**, so a project-named study can be the sibling of one
   an earlier batch read under a street number with no word in common; and **seeding a page
   rewrites its neighbours**, so `validate.py` fails on pages the run never opened until
-  every page it names is rendered.
+  every page it names is rendered. It also learned the hard way, after review, that **an
+  entry belongs to one date**: this source's passages walk a building through decades in a
+  sentence, and the first pass shipped timeline items dated 1986 that ran on into 1998. The
+  batch was split from 113 findings into 141 so that each page item is one dated event.
 
   **2026-09-05**, sixth run: the 58 projects whose titles carry a street
   address later than first position, one document each — 109 findings, 74
