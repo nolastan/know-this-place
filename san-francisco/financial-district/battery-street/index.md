@@ -12,6 +12,7 @@ The parcels on Battery Street documented here so far, from the city's address, a
 - [301–325](301/) — George Kelham's 1924 Federal Reserve Bank, a city landmark since 1983.
 - [425](425/) — Where the hull of an 1840 Gold Rush storeship, dug up in 2001, was set into the sidewalk.
 - [447](447/) — A 1907 office building, with deck work permitted in 2010.
+- [555](555/) — A 1900 office building, with one permit record from 2000.
 - [600](600/) — An office building, with an addition permitted in 2022.
 - [603–615](603/) — A 1907 office building, with plumbing work permitted in 2023.
 - [617–633](617/) — A 1906 office building, with facade work permitted in 2017.

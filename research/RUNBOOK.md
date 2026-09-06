@@ -210,6 +210,17 @@ those makes the scan print re-lottings and block crossings that are artefacts.
 Noise here is worse than silence, because the scan exists so a real lost digit
 stands out.
 
+**`extra.record_date` is the year the *record* was written, and it turns off the
+renumbering guard.** The guard refuses a pre-1910 date resolved on the EAS join
+alone, which is right for a source writing an address down while the old
+numbering was in force and wrong for a modern document about an old building —
+a 1976 National Register nomination gives 1976's number for an 1880 house, and
+without the field the guard refuses it for a renumbering that had already
+happened. Set it wherever the source states when it was written; the method then
+says so, and still prints the assessor's year for the parcel, because a modern
+number can still point at a later building on the lot. It is opt-in, so leaving
+it off is exactly the old behaviour.
+
 **A range goes in `extra.address_range_as_recorded`, never in `street_number`.**
 The resolver reads the range from that field and looks `street_number` up
 literally, so `"street_number": "809-811"` comes back "EAS has no address near
@@ -320,6 +331,12 @@ commit**:
 ```bash
 python3 scripts/seed_pages.py render <path to the page, street or area>
 ```
+
+**Seeding pages leaves the neighbours stale.** Every page carries a "nearby
+places" list, so a new page changes the HTML of pages nobody edited — six new
+pages left 34 unrelated `index.html` files failing `validate.py`, none of them
+in `scripts/render-backlog.txt`. Run `validate.py` after `seed-list` and feed
+its "run: … render ⟨path⟩" lines straight back to `render`.
 
 **`render` takes a repo-relative path, and a finding's `resolution.path` is
 not one.** Findings store the site path — `/san-francisco/nob-hill/...` — and

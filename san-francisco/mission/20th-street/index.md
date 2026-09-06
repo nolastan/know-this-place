@@ -33,6 +33,7 @@ Every residential parcel on 20th Street that the city's address, assessor and pe
 - [3001–3005](3001/) — A 1900 3-unit tic building, with a bathroom remodel permitted in 2016.
 - [3007](3007/) — A 1964 3-unit apartment building, with reroofing permitted in 2023.
 - [3017](3017/) — A 1900 three-flat, with foundation work permitted in 2026.
+- [3101](3101/) — A 1928 industrial building, with reroofing permitted in 2026.
 - [3130](3130/) — A 1949 industrial building, with window replacement permitted in 2013.
 - [3223](3223/) — A 1900 single-family house, with reroofing permitted in 2021.
 - [3225–3227](3225/) — A 1900 two-flat, with garage work permitted in 2016.
