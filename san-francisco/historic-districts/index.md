@@ -20,7 +20,7 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Chinatown Historic District](chinatown/) — Eligible for the California and National Registers, significant 1906–1930/1938; 235 buildings documented on 29 streets.
 - [Chula-Abbey Early Residential District](chula-abbey/) — An Article 10 city landmark district, significant 1865–1912; 38 buildings documented on 5 streets.
 - [Chula-Dolores-17th Fire Survivors and Reconstruction Historic District](chula-dolores-17th-fire-survivors-and-reconstruction/) — Eligible for the California Register, significant 1865–1880; 1907–1912; 39 buildings documented on 5 streets.
-- [Civic Center Historic District](civic-center/) — An Article 10 city landmark district, significant 1913–1951; 25 buildings documented on 10 streets.
+- [Civic Center Historic District](civic-center/) — An Article 10 city landmark district, significant 1913–1951; 28 buildings documented on 10 streets.
 - [Clyde and Crooks Historic District](clyde-and-crooks/) — An Article 10 city landmark district, significant 1906–1935; 18 buildings documented on 6 streets.
 - [Cole Valley Historic District](cole-valley/) — Eligible for the California Register, significant 1900–1915; 14 buildings documented on 5 streets.
 - [Commercial-Leidesdorff Conservation District](commercial-leidesdorff/) — An Article 11 conservation district; 18 buildings documented on 7 streets.
@@ -57,11 +57,11 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Jordan Park Historic District](jordan-park/) — Eligible for the California Register, significant 1900–1920; 19 buildings documented on 5 streets.
 - [Juri Street Historic District](juri-street/) — Eligible for the California Register, significant 1890–1895; 8 buildings documented on 2 streets.
 - [Kearny-Belden Conservation District](kearny-belden/) — An Article 11 conservation district; 7 buildings documented on 3 streets.
-- [Kearny-Market-Mason-Sutter Conservation District](kearny-market-mason-sutter/) — An Article 11 conservation district; 200 buildings documented on 24 streets.
+- [Kearny-Market-Mason-Sutter Conservation District](kearny-market-mason-sutter/) — An Article 11 conservation district; 202 buildings documented on 24 streets.
 - [Lexington and San Carlos Streets Reconstruction Historic District](lexington-and-san-carlos-streets-reconstruction/) — Eligible for the California Register, significant 1906–1915; 44 buildings documented on 4 streets.
 - [Liberty Hill Historic District](liberty-hill/) — An Article 10 city landmark district, significant 1860s–1906; 252 buildings documented on 9 streets.
 - [Liberty Street Historic District](liberty-street/) — Listed on the California and National Registers, significant 1867–1911; 40 buildings documented on 2 streets.
-- [Lower Nob Hill Apartment Hotel Historic District](lower-nob-hill-apartment-hotel/) — Listed on the California and National Registers, significant 1906–1940; 183 buildings documented on 20 streets.
+- [Lower Nob Hill Apartment Hotel Historic District](lower-nob-hill-apartment-hotel/) — Listed on the California and National Registers, significant 1906–1940; 184 buildings documented on 20 streets.
 - [Marina Corporation Residential Historic District](marina-corporation-residential/) — Eligible for the California Register, significant 1922–1939; 33 buildings documented on 11 streets.
 - [Marina Historic District](marina/) — Eligible for the California Register, significant 1930–1940; 11 buildings documented on 5 streets.
 - [Market Street Masonry Historic District](market-street-masonry/) — An Article 10 city landmark district, significant 1911–1925; 8 buildings documented on 4 streets.
@@ -107,7 +107,7 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Upper Grant Avenue Historic District](upper-grant-avenue/) — Eligible for the California Register, significant 1906–1925; 111 buildings documented on 11 streets.
 - [Upper Market Street Commercial Historic District](upper-market-street-commercial/) — Eligible for the California Register, significant 1886–1958; 1970–1979; 29 buildings documented on 3 streets.
 - [Upper Market Street Commercial Historic District Extension](upper-market-street-commercial-extension/) — Eligible for the California Register, significant 1886–1958; 1970–1979; 14 buildings documented on one street.
-- [Uptown Tenderloin Historic District](uptown-tenderloin/) — Listed on the California and National Registers, significant 1906–1957; 233 buildings documented on 17 streets.
+- [Uptown Tenderloin Historic District](uptown-tenderloin/) — Listed on the California and National Registers, significant 1906–1957; 234 buildings documented on 17 streets.
 - [Vicente Street Historic District](vicente-street/) — Eligible for the California Register, significant 1931; 9 buildings documented on one street.
 - [Von Schroeder-Welsh Block Historic District](von-schroeder-welsh-block/) — Eligible for the California Register, significant 1889–1895; 25 buildings documented on 2 streets.
 - [Washington Square Historic District](washington-square/) — Eligible for the California Register, significant 1906–1939; 16 buildings documented on 7 streets.

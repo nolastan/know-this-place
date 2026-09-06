@@ -19,6 +19,7 @@ The parcels on Hyde Street documented here so far, from the city's address, asse
 - [845](845/) — A 1919 16-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with a seismic retrofit permitted in 1994.
 - [897–899](897/) — A 1908 office building in the Lower Nob Hill Apartment Hotel Historic District, with a seismic retrofit permitted in 1993.
 - [900](900/) — A 1968 building, with reroofing permitted in 1992.
+- [901–909](901/) — A 1926 office building, with a seismic retrofit permitted in 1995.
 - [935](935/) — A 1922 16-unit apartment building, with permit records from 1988 to 2025.
 - [1005](1005/) — A 1915 22-unit apartment building, with a seismic retrofit permitted in 2001.
 - [1018–1026](1018/) — A 1911 8-unit apartment building, with reroofing permitted in 2002.

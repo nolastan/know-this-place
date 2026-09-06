@@ -4,6 +4,8 @@ The parcels on Mariposa Street documented here so far, from the city's address, 
 
 ## Documented so far
 
+- [770](770/) — An assessor class: vacant lot, with one permit record from 2006.
+- [880](880/) — A garage, with foundation work permitted in 2008.
 - [935](935/) — An industrial building, with permit records from 2016 to 2021.
 - [1000](1000/) — A 1947 industrial building, with deck work permitted in 2002.
 - [1040](1040/) — A 1946 industrial building, with facade work permitted in 2014.

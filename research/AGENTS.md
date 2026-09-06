@@ -249,7 +249,7 @@ they never reach a page.
 
 ## What we've learned the hard way
 
-147 cross-cutting lessons that each cost a session or a correction live in
+158 cross-cutting lessons that each cost a session or a correction live in
 **[LESSONS.md](LESSONS.md)** — traps in the resolver, the privacy filters, PDF
 tables, OCR, manifests, condominiums, renumbering, duplicate detection.
 

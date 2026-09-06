@@ -36,6 +36,7 @@ The parcels on Bush Street documented here so far, from the city's address, asse
 - [1137](1137/) — A 1915 8-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with a seismic retrofit permitted in 1998.
 - [1153](1153/) — A 1911 hotel in the Lower Nob Hill Apartment Hotel Historic District, with a seismic retrofit permitted in 2003.
 - [1171](1171/) — A 1919 13-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with reroofing permitted in 1997.
+- [1199](1199/) — A 1991 office building in the Lower Nob Hill Apartment Hotel Historic District, with permit records from 1985 to 2025.
 - [1207](1207/) — A 1911 13-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with a seismic retrofit permitted in 1995.
 - [1209](1209/) — A 1915 23-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with reroofing permitted in 1996.
 - [1240](1240/) — A 1914 16-unit apartment building, with a seismic retrofit permitted in 1999.
