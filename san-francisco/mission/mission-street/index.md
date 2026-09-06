@@ -96,6 +96,7 @@ Every residential parcel on Mission Street that the city's address, assessor and
 - [2360–2366](2360/) — A 1926 15-unit apartment building in the Mission Miracle Mile 19th to 20th Streets Historic District, with reroofing permitted in 1993.
 - [2374](2374/) — A 1915 store building in the Mission Miracle Mile 19th to 20th Streets Historic District, with a seismic retrofit permitted in 2018.
 - [2386–2388](2386/) — A 1907 two-flat in the Mission Miracle Mile 19th to 20th Streets Historic District, with reroofing permitted in 1989.
+- [2389](2389/) — A 1928 store building, with a kitchen remodel permitted in 1984.
 - [2390](2390/) — A 1927 store building in the Mission Miracle Mile 19th to 20th Streets Historic District, with reroofing permitted in 2023.
 - [2391–2393](2391/) — A 1900 3-unit building with a ground-floor store, with reroofing permitted in 2024.
 - [2397–2399](2397/) — A 7-unit building with a ground-floor store, with foundation work permitted in 2019.
