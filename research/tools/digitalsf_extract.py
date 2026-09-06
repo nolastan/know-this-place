@@ -380,6 +380,10 @@ NOT_A_STREET_NAME = {
 # committed finding is touched.
 NOT_A_STREET_PREFIX = ("CORNER FRIDAY",)
 
+# The left-hand side of a match, when the "street number" is really the tail of
+# a comma-grouped figure. See the guard in `address_from_title`.
+THOUSANDS_TAIL = re.compile(r"\d,$")
+
 
 def address_from_title(title: str, year_guard: bool = False,
                       plate_numbers: bool = False) -> dict | None:
@@ -411,6 +415,16 @@ def address_from_title(title: str, year_guard: bool = False,
         # on NOT_A_STREET_NAME in a spelling that a caption writing "P. M."
         # does not match.
         if m.start() and title[m.start() - 1] in "-:":
+            continue
+        # A comma with a digit on its left is a thousands separator, and what
+        # follows it is the tail of one number, not a street number: "leader of
+        # 75,000 West Coast Longshoremen" yields *000 West Coast Longshoremen*
+        # and "20,000 Leagues Under the Sea" yields *000 Leagues Under*. A
+        # comma with a space or a letter on its left is the ordinary caption
+        # punctuation before a real address ("Miyako Hotel, 1625 Post"), so the
+        # digit is the whole of the test. Measured over every findings file:
+        # four entries corpus-wide, all of them junk, none resolved.
+        if THOUSANDS_TAIL.search(title[:m.start()]):
             continue
         if SERIAL_BEFORE.search(title[:m.start()]):
             continue
@@ -961,6 +975,13 @@ COLLECTION_VOICE = {
     # the catalogue knows about who made the picture.
     "SFH 3": ("The San Francisco Unified School District photographed the "
               "property {at} {display} {when}."),
+    # The History Center's portrait file: a folder per public figure, filled
+    # from press agencies, studio photographers and the paper's own morgue, so
+    # no one body made these and the sentence must not name one. Read under
+    # #217 to answer a question the dossier had left open — see the SFP 130
+    # entry there. What it turned out to be is in the dossier: 2,664 records
+    # of people, of which three name a street number at all.
+    "SFP 136": ("Photographed {at} {display} {when}."),
 }
 
 
@@ -1015,6 +1036,11 @@ COLLECTION_UNNUMBERED_POLICY = {
     # weekly event at a crossing, people in a park, a mural on a corner — and
     # it is also where its people are. 376 of its 528 records.
     "SFP 179": "skip-unnumbered",
+    # SFP 136 is a portrait collection and the extreme case of the subject
+    # file's shape: 2,661 of its 2,664 records carry no street number, and
+    # every one of them is a named person. `people_not_a_place` would drop
+    # most of them anyway; this drops the rest.
+    "SFP 136": "skip-unnumbered",
     # SFP 26 and SFH 3 are institutional collections of the same shape as the
     # subject file: 968 of SFP 26's 984 records are sewer trenches, pump
     # houses and street grading located by intersection, and 1,582 of SFH 3's
@@ -1056,6 +1082,9 @@ COLLECTION_NOTE_POLICY = {
     # photographer's own collection of a neighbourhood she worked in, which is
     # the register a `500$a` note is a memoir in.
     "SFP 179": "drop",
+    # SFP 136's `500$a` is a press agency's newscopy, which names everyone in
+    # the frame and often a third party besides. Same rule, same reason.
+    "SFP 136": "drop",
 }
 
 # Collections whose `500$a` note carries a second address worth reading, and
@@ -1132,6 +1161,9 @@ COLLECTION_NAME_POLICY = {
     # it drops are put back by hand at publication, the way the tail batch
     # did, and the batch is 52 records so that is affordable.
     "SFP 179": "named-buildings-only",
+    # SFP 136's titles are captions built around a person's name, so the
+    # strict policy is the only safe one here.
+    "SFP 136": "named-buildings-only",
 }
 
 # The kind of record, where it is not a photograph. Free-form in the schema;

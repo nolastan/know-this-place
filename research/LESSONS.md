@@ -1580,3 +1580,49 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   `seed-list`, compare each row's street against the roll's `property_location`
   and fix the row where they disagree; the roll's is the address the assessor
   files the parcel under.*
+
+- **A caption's own numbers parse as addresses, and the year guard only fires
+  when no street type follows.** The standing rule — a street number equal to
+  the record's own year is not an address — is conditioned on the parse finding
+  no street type, so it misses every case where the caption's next word happens
+  to be one. A fundraising drive named for its year is the pure form: "1949
+  Career Drive" in a record dated 1949-03-16 parses as number 1949 on Career
+  Drive, and so does "1944 War Fund Drive". *Relaxing the condition was measured
+  over every findings file before being wired in, and rejected: it removes four
+  junk entries and two real published addresses — 1977 Bush Street in a 1977
+  photograph, 2011 Folsom Street in a 2011 survey — where number and date
+  genuinely coincide. Leave it. Step 3 refuses the junk for free, because there
+  is no street in EAS called Career or War Fund, and an unresolved finding costs
+  nothing while a lost page costs a page.*
+
+- **A thousands separator is not a street number, and the test is the digit left
+  of the comma.** "leader of 75,000 West Coast Longshoremen" yields *000 West
+  Coast Longshoremen*; "20,000 Leagues Under the Sea" yields *000 Leagues
+  Under*. Refusing every comma before a number would refuse the ordinary caption
+  punctuation that precedes most real addresses ("Miyako Hotel, 1625 Post"), so
+  the guard is `\d,` immediately left of the match and nothing else. *Four
+  entries corpus-wide, all junk, none resolved — which is the point: measure the
+  rule over `findings/` before wiring it, and a rule that changes nothing
+  published is a rule you can add without a re-run.*
+
+- **`digitalsf_extract.py` does not merge, so re-running a batch wipes its
+  resolutions and publish marks.** It writes the findings file from the corpus
+  every time. That makes a fixed extractor rule un-backportable: the three stale
+  entries a new guard would have caught in `sfp-162.json` and `tail.json` stay
+  where they are, correctly marked unresolved and rejected, because cleaning
+  them up would cost every resolution and publish status in two large files.
+  *Fix the extractor for the next batch, note the stale entries in the dossier,
+  and leave the committed files alone.*
+
+- **A collection's subject is not its addressed half, and the privacy limit is
+  about the sentence rather than the shelf label.** Two DigitalSF collections
+  were written off unread on subject matter and both were misjudged: SFP 179
+  because it photographs a neighbourhood's people (its addressed records are
+  shopfronts) and SFP 136 because it is a *portrait* collection (its three
+  addressed captions are public figures at public buildings, all dead half a
+  century, all already in published sources). What actually triggers the limit
+  is a caption naming a living person and the home they live in, where striking
+  the name leaves a household at a street number and nothing else — which is
+  SFP 130 and only SFP 130. *Measure the addressed records before writing a
+  collection off; the count that matters is not how many records name a person
+  but how many name a person **and** a number.*
