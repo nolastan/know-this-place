@@ -5,7 +5,7 @@ The buildings documented here so far inside the Lower Nob Hill Apartment Hotel H
 ## Streets
 
 - [Bush Street, Financial District](/san-francisco/financial-district/bush-street/) — 18 documented buildings inside the district.
-- [Bush Street, Nob Hill](/san-francisco/nob-hill/bush-street/) — 33 documented buildings inside the district.
+- [Bush Street, Nob Hill](/san-francisco/nob-hill/bush-street/) — 34 documented buildings inside the district.
 - [Cosmo Place](/san-francisco/nob-hill/cosmo-place/) — 1 documented building inside the district.
 - [Dashiell Hammett Street](/san-francisco/financial-district/dashiell-hammett-street/) — 2 documented buildings inside the district.
 - [Geary Street](/san-francisco/tenderloin/geary-street/) — 1 documented building inside the district.
@@ -76,6 +76,7 @@ The buildings documented here so far inside the Lower Nob Hill Apartment Hotel H
 - [1137 Bush Street](/san-francisco/nob-hill/bush-street/1137/) — A 1915 8-unit apartment building, with a seismic retrofit permitted in 1998.
 - [1153 Bush Street](/san-francisco/nob-hill/bush-street/1153/) — A 1911 hotel, with a seismic retrofit permitted in 2003.
 - [1171 Bush Street](/san-francisco/nob-hill/bush-street/1171/) — A 1919 13-unit apartment building, with reroofing permitted in 1997.
+- [1199 Bush Street](/san-francisco/nob-hill/bush-street/1199/) — A 1991 office building, with permit records from 1985 to 2025.
 - [1207 Bush Street](/san-francisco/nob-hill/bush-street/1207/) — A 1911 13-unit apartment building, with a seismic retrofit permitted in 1995.
 - [1209 Bush Street](/san-francisco/nob-hill/bush-street/1209/) — A 1915 23-unit apartment building, with reroofing permitted in 1996.
 - [20 Cosmo Place](/san-francisco/nob-hill/cosmo-place/20/) — A 1921 store building, with a rear addition permitted in 1997.

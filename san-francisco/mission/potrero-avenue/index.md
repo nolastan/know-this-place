@@ -81,6 +81,7 @@ Every residential parcel on Potrero Avenue that the city's address, assessor and
 - [868](868/) — A 1925 single-family house, with deck work permitted in 2016.
 - [878–882](878/) — A 1900 three-flat, with a kitchen and bathroom remodel permitted in 2010.
 - [886](886/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2019.
+- [887–955](887/) — A 1935 building in the SF General Hospital Historic District, with electrical work permitted in 1996.
 - [900](900/) — A 1975 8-unit apartment building, with a kitchen and bathroom remodel permitted in 2018.
 - [908](908/) — A 1907 two-flat, with foundation work permitted in 2024.
 - [912–914](912/) — A 1906 three-flat, with an addition permitted in 2005.

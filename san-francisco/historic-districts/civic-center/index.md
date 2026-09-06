@@ -8,7 +8,7 @@ The buildings documented here so far inside the Civic Center Historic District, 
 - [Grove Street](/san-francisco/tenderloin/grove-street/) — 3 documented buildings inside the district.
 - [Larkin Street](/san-francisco/nob-hill/larkin-street/) — 2 documented buildings inside the district.
 - [Market Street](/san-francisco/south-of-market/market-street/) — 10 documented buildings inside the district.
-- [Mcallister Street, Tenderloin](/san-francisco/tenderloin/mcallister-street/) — 3 documented buildings inside the district.
+- [Mcallister Street, Tenderloin](/san-francisco/tenderloin/mcallister-street/) — 6 documented buildings inside the district.
 - [Mcallister Street, Western Addition](/san-francisco/western-addition/mcallister-street/) — 1 documented building inside the district.
 - [United Nations Plaza](/san-francisco/tenderloin/united-nations-plaza/) — 1 documented building inside the district.
 - [Van Ness Avenue, Hayes Valley](/san-francisco/hayes-valley/van-ness-avenue/) — 2 documented buildings inside the district.
@@ -35,7 +35,10 @@ The buildings documented here so far inside the Civic Center Historic District, 
 - [1278–1298 Market Street](/san-francisco/south-of-market/market-street/1278/) — A 1907 hotel, with window replacement permitted in 2015.
 - [77–79 Mcallister Street](/san-francisco/tenderloin/mcallister-street/77/) — A 1906 store building, with an addition permitted in 2007.
 - [350 Mcallister Street](/san-francisco/tenderloin/mcallister-street/350/) — A 1959 office building, with plumbing work permitted in 2010.
+- [400 Mcallister Street](/san-francisco/tenderloin/mcallister-street/400/) — A 1930 office building, with electrical work permitted in 2023.
+- [450 Mcallister Street](/san-francisco/tenderloin/mcallister-street/450/) — A 1931 office building, with foundation work permitted in 1994.
 - [456 Mcallister Street](/san-francisco/tenderloin/mcallister-street/456/) — A 1913 office building, with foundation work permitted in 1994.
+- [460 Mcallister Street](/san-francisco/tenderloin/mcallister-street/460/) — A 1900 office building, with foundation work permitted in 1994.
 - [580 Mcallister Street](/san-francisco/western-addition/mcallister-street/580/) — A 1912 72-unit apartment building, with reroofing permitted in 1997.
 - [10–50 United Nations Plaza](/san-francisco/tenderloin/united-nations-plaza/10/) — A 1982 office building, with reroofing permitted in 2022.
 - [135 Van Ness Avenue](/san-francisco/hayes-valley/van-ness-avenue/135/) — A 1900 office building, with permit records from 2000 to 2020.

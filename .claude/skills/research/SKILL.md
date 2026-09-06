@@ -16,7 +16,7 @@ The module's own documents are the authority. There are three:
    purpose; read it whole.
 2. **[research/RUNBOOK.md](../../../research/RUNBOOK.md)** — the procedure, step
    by step. Read the step you're on when you're about to do the work.
-3. **[research/LESSONS.md](../../../research/LESSONS.md)** — 147 traps that have
+3. **[research/LESSONS.md](../../../research/LESSONS.md)** — 158 traps that have
    already cost a session or a correction. **Grep it, never read it whole** —
    search for what you're about to do (`--overlap`, `condominium`, `privacy
    filter`, `renumber`, `pdftotext`, `manifest`) before the step, and again when

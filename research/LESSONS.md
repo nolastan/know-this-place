@@ -1538,3 +1538,45 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   restatement is not this module's alone: **953 of the site's 7,764 timeline entries
   do it**, across almost every context-statement batch, and clearing them is its own
   sweep.
+
+- **A campus is one parcel, and Golden Gate Park is one of them.** An
+  institutional environmental review names its buildings, not their street
+  numbers — Moffitt Hospital, Clarendon Hall, Simson African Hall, the Cathedral
+  House — and the resolver has nothing to look up. What decides whether the batch
+  resolves is one question: **does the report print an assessor block and lot, and
+  is that block a single parcel?** Where it is, every building on the campus
+  resolves onto the campus's own page and the whole institution gets a
+  chronology: Laguna Honda (2842/7), Grace Cathedral's close (246/1), the Zoo
+  (1 Zoo Road) and Golden Gate Park (1700/1, which is the de Young at 75
+  Hagiwara Tea Garden Drive, the Academy of Sciences at 55 Music Concourse Drive
+  and the Music Concourse together, and whose page on this site is 6101–6701
+  Fulton Street). Where the block is many lots — the UCSF Parnassus campus, the
+  University of San Francisco's block 1144 — nothing resolves and the findings
+  stay unresolved, however well documented the buildings are. *Check the block
+  against `sf-parcels` before deciding a campus batch is unresolvable: the park
+  looked hopeless because EAS has no street called Academy Drive, and the block
+  and lot the report printed on its own cover resolved all twenty findings.*
+
+- **An environmental review's distribution list is a page of street numbers and
+  not one of them is a fact.** Every one of these documents ends with the
+  agencies, libraries, newspapers and neighbours it was mailed to, at their own
+  addresses, and an extractor that keys on "a number followed by a street name"
+  harvests forty of them per document — the Foundation for San Francisco's
+  Architectural Heritage at 2007 Franklin Street appears in nearly every report
+  in the source. Worse, the neighbours on that list are private individuals at
+  their home addresses, which the privacy limits bar outright. *Key the extractor
+  on a construction verb near a year — built, constructed, erected, designed by,
+  demolished, opened — and not on the address; the address is what you look up
+  afterwards.*
+
+- **A parcel with two street frontages seeds under whichever street the finding
+  happened to name.** `resolve_eas.py manifest` takes the street from the finding,
+  so parcel 0766002 — the Civic Center courthouse block, which EAS holds as both
+  400 McAllister Street and 401 Polk Street — produced a manifest row with
+  `street_display: Polk Street` under `street_slug: mcallister-street`, and
+  `seed-list` built a page titled "400–401 Polk Street" at
+  `/tenderloin/mcallister-street/400/`. Nothing fails: `validate.py` passes, and
+  the page contradicts itself in the breadcrumb. *After `manifest` and before
+  `seed-list`, compare each row's street against the roll's `property_location`
+  and fix the row where they disagree; the roll's is the address the assessor
+  files the parcel under.*

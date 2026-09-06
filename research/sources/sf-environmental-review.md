@@ -7,9 +7,9 @@
 > - **Kind:** PDF reports · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
 > - **Coverage:** all 172 address-titled documents read, in 93 projects, plus the whole named
->   single-site group of the project-titled set — 36 projects of 1974–1982, 36 of 1979–2005 — and the
->   58 projects whose titles carry a street address later than first position; 747 findings, 498
->   resolved, 442 published.
+>   single-site group of the project-titled set — 36 projects of 1974–1982, 36 of 1979–2005 — the
+>   58 projects whose titles carry a street address later than first position, and the 38 documents
+>   of the institutional-campus group; 916 findings, 637 resolved, 571 published.
 >   All ~617 project-titled documents are grouped and sampled in the triage note below.
 > - **Local corpus:** `research/corpora/sf-environmental-review/`
 >
@@ -407,6 +407,58 @@
     Vallejo and with 1037 and 1045 Broadway. The split predates this run; see
     issue #201.
 
+  - **An institutional campus resolves on its block and lot or not at all.** These
+    documents name buildings, not numbers — Moffitt Hospital, Clarendon Hall, the
+    Cathedral House, Simson African Hall — and the street number the resolver needs
+    appears nowhere in them. What decides the batch is whether the report prints an
+    assessor block and lot *and* that block is a single parcel. Where it is, the whole
+    institution's chronology lands on one page: Laguna Honda (2842/7, eleven items from
+    the 1867 Alms House to the 1957 shop), Grace Cathedral's close (246/1, eight),
+    the Zoo (1 Zoo Road, nine) and **Golden Gate Park, which is Block 1700 Lot 1** —
+    one parcel carrying the de Young at 75 Hagiwara Tea Garden Drive, the Academy of
+    Sciences at 55 Music Concourse Drive and the Music Concourse itself, and whose page
+    on this site is 6101–6701 Fulton Street. Where the block is many lots — UCSF's
+    Parnassus Heights, the University of San Francisco's block 1144 — nothing resolves,
+    and eleven well-documented buildings stayed unresolved for want of a number.
+  - **EAS does not hold the street the report names, and the block and lot rescue it.**
+    The Academy's own project address is 55 Academy Drive and the de Young's is 75 South
+    Tea Garden Drive; neither street exists in EAS, and `resolve_eas.py` refuses the
+    whole group with "no EAS street". EAS holds 55 MUSIC CONCOURSE DR and 75 HAGIWARA
+    TEA GARDEN DR instead, both on parcel 1700001 — which is the parcel the reports
+    print on their own covers. **Check the printed block against `sf-parcels` before
+    writing a campus batch off**; twenty findings turned on it here.
+  - **The distribution list is forty street numbers and none of them is a fact.** Every
+    report ends with the agencies, libraries, newspapers and neighbours it was mailed to,
+    at their own addresses — the Foundation for San Francisco's Architectural Heritage at
+    2007 Franklin Street is in nearly every document in this source — and the neighbours
+    are private individuals at home, whom the privacy limits bar outright. An extractor
+    keyed on "number + street name" finds the mailing list and little else in a campus
+    document. Key it on a construction verb near a year and look the address up
+    afterwards.
+  - **A parcel with two street frontages seeds under the wrong one.** Parcel 0766002,
+    the Civic Center courthouse block, is 400 McAllister Street to the assessor and 401
+    Polk Street to EAS. `manifest` took the street from the finding, and `seed-list`
+    built a page titled "400–401 Polk Street" at `/tenderloin/mcallister-street/400/`
+    — a page that contradicts its own breadcrumb, and `validate.py` passes it. Compare
+    each manifest row's street against the roll's `property_location` before seeding.
+  - **This source disagrees with the context statements about construction dates, and
+    the disagreement is the finding.** Five of this batch's facts were already on their
+    pages from a survey with a different year: the Cadillac Hotel (1907 in the
+    architects' biographies, 1909 here), the Kaiser Foundation Hospital (1953 / 1954),
+    the Cathedral School for Boys (1965 / 1966), the old Main Library (1916 / 1917) and
+    the California State Building, where this source disagrees with *itself* — 1922 in
+    the State's own report, 1923 in its cultural resources chapter, 1926 in the Main
+    Library and Courts Building reports. Each was declined as a duplicate and the
+    disagreement written into the page's `.unknowns` instead. **Two sources with two
+    years is not a duplicate to drop silently.**
+  - **The campus parcel's roll year is one building of many, so `--overlap`'s
+    replacement-building warning fires on facts that are not about a replaced
+    building at all.** Twenty-three of this batch's findings predate the roll year of a
+    parcel that carries a whole campus. The frame those need is not "stood here until"
+    but the building's own name — "Clarendon Hall was built on the Laguna Honda campus" —
+    and the warning stays lit afterwards. Read each one; do not rewrite them all into
+    demolitions.
+
 - **People:** These reports name project sponsors, property owners and the
   neighbours who wrote comment letters, and all of that is barred by "Privacy —
   hard limits" in the root [AGENTS.md](../../AGENTS.md). Take the **architect,
@@ -575,13 +627,58 @@
   Marcus expansion and the Church Street Apartments study of the Daphne Funeral
   Home, whose commission Frank Lloyd Wright lost to A. Quincy Jones.
 
-  **Remaining: 487 of the 617 project-titled documents, grouped and sampled in the
-  triage note above — 77 institutional campus projects, 130 area and policy plans, 67
-  transportation and airport documents, 96 procedural notices and 35 documents
-  about places outside San Francisco — and the finals and supplements of projects
-  whose drafts are read.**
 
-- **Verified:** 2026-09-05, seventh run: the rest of the named single-site group — 36
+  The eighth batch is the **institutional-campus group**: hospitals, universities,
+  museums, libraries, churches, the zoo and the civic buildings around them — 38
+  documents in 35 projects, one document per project except the Main Library, whose
+  final EIR was read with its draft. 169 findings, 139 resolved, 129 published on 37
+  pages, 17 of them seeded by that run. The triage note called this group "yes, but few
+  buildings each", and that is right about the documents and wrong about the yield: a
+  campus document restates two or three buildings hundreds of times, but a campus is
+  also a single parcel, so the whole institution's chronology lands on one page. Its
+  richest documents are the Laguna Honda Hospital replacement EIR (the Alms House of
+  1867, the 1907–08 concrete infirmary, Newton Tharp's Clarendon Hall of 1908 and John
+  Reid, Jr.'s Main Hospital Building of 1926 with its wings of 1928, 1930 and 1935),
+  the Grace Cathedral close alterations EIR (the Crocker mansion of 1876, the fence of
+  about 1877 that survived 1906, Lewis Hobart's Cathedral House of 1912 and Diocesan
+  House of 1935, and the cathedral itself begun in 1928 and finished in 1964), the
+  California Academy of Sciences EIR of 2003 and the de Young EIR of 2000 — which
+  between them date twelve buildings and name nine architects inside Golden Gate Park —
+  the State of California's Civic Center complex EIR (Bliss & Faville's State Building
+  of 1922, won in a competition held between August 1916 and February 1917, and the
+  Yerba Buena Cemetery that was on the block until the mid-1860s), the Courts Building
+  EIR (three buildings on the courthouse block, 1906 to 1932, with Norman R. Coulter's
+  1912 truck showroom among them) and the UCSF long range development plan amendment,
+  whose Carey & Company evaluation dates the Hellman Building of 1914, the Nathaniel
+  Gray funeral home of 1918 and Erich Mendelsohn's Maimonides Hospital. Eight of the 38
+  documents yielded nothing usable: St. Mary's Medical Office Building, the Masonic
+  Temple addition, the Ralph K. Davies Medical Center development plan, the two 2007
+  and 2009 notices of preparation, the USF mitigated negative declaration notice, and
+  the Grace Cathedral expansion initial study.
+
+  **Remaining: 449 of the 617 project-titled documents, grouped and sampled in the
+  triage note above — 130 area and policy plans, 67 transportation and airport
+  documents, 96 procedural notices and 35 documents about places outside San
+  Francisco; the institutional-campus group is finished — and the finals and
+  supplements of projects whose drafts are read.**
+
+- **Verified:** 2026-09-06, eighth run: the institutional-campus group — 38 documents in
+  35 projects — 169 findings, 139 resolved, 129 published on 37 pages, 17 of them seeded.
+  What it learned: **an institutional campus resolves on its block and lot or not at
+  all**, because these documents name buildings and never their street numbers, and the
+  block decides — Laguna Honda, Grace Cathedral's close, the Zoo and the whole of Golden
+  Gate Park are each one parcel and each got one chronology, while UCSF's Parnassus
+  Heights and the University of San Francisco's block are many lots and got nothing;
+  **EAS does not hold the streets these reports name**, so 55 Academy Drive and 75 South
+  Tea Garden Drive are dead ends and the printed block 1700/1 is what places twenty
+  findings; **the distribution list at the back is forty street numbers and no facts**,
+  and the neighbours on it are private individuals the privacy limits bar; **a parcel
+  with two frontages seeds under the wrong street** unless the manifest row is checked
+  against the roll's `property_location`; and **this source disagrees with the context
+  statements, and with itself, about construction dates**, which put five conflicts into
+  five pages' `.unknowns` rather than five duplicate timeline rows on the pages.
+
+  **2026-09-05**, seventh run: the rest of the named single-site group — 36
   projects of 1979-2005 titled by project name, one document each — 141 findings, 102
   resolved, 98 published on 53 pages, 25 of them seeded. What it learned: **a commercial
   condominium refuses as hard as a residential one**, and the parcel with no roll row is

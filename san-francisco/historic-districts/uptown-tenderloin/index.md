@@ -17,7 +17,7 @@ The buildings documented here so far inside the Uptown Tenderloin Historic Distr
 - [Leavenworth Street, Nob Hill](/san-francisco/nob-hill/leavenworth-street/) — 8 documented buildings inside the district.
 - [Leavenworth Street, Tenderloin](/san-francisco/tenderloin/leavenworth-street/) — 5 documented buildings inside the district.
 - [Mason Street](/san-francisco/tenderloin/mason-street/) — 2 documented buildings inside the district.
-- [Mcallister Street](/san-francisco/tenderloin/mcallister-street/) — 1 documented building inside the district.
+- [Mcallister Street](/san-francisco/tenderloin/mcallister-street/) — 2 documented buildings inside the district.
 - [Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/) — 29 documented buildings inside the district.
 - [Taylor Street](/san-francisco/tenderloin/taylor-street/) — 7 documented buildings inside the district.
 - [Turk Street](/san-francisco/tenderloin/turk-street/) — 22 documented buildings inside the district.
@@ -198,6 +198,7 @@ The buildings documented here so far inside the Uptown Tenderloin Historic Distr
 - [245 Leavenworth Street](/san-francisco/tenderloin/leavenworth-street/245/) — A 1910 49-unit apartment building, with a seismic retrofit permitted in 2002.
 - [34–38 Mason Street](/san-francisco/tenderloin/mason-street/34/) — A 1907 store building, with plumbing work permitted in 2012.
 - [48–56 Mason Street](/san-francisco/tenderloin/mason-street/48/) — A 1908 hotel, with plumbing work permitted in 2012.
+- [100 Mcallister Street](/san-francisco/tenderloin/mcallister-street/100/) — A 1929 apartment building with a ground-floor store, with reroofing permitted in 1993.
 - [136–154 Mcallister Street](/san-francisco/tenderloin/mcallister-street/136/) — A 1910 114-unit apartment building, with fire repair permitted in 2022.
 - [401–411 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/401/) — A 1910 hotel, with stair work permitted in 2016.
 - [415–421 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/415/) — A 1908 hotel, with a bathroom remodel permitted in 2018.
