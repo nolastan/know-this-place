@@ -4,9 +4,9 @@
 > [../LESSONS.md](../LESSONS.md) · register:
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id `digitalsf`.
 >
-> - **Kind:** catalogued digital archive (photographs, city records, scanned documents) · **Tier:** primary · **Status:** open
+> - **Kind:** catalogued digital archive (photographs, city records, scanned documents) · **Tier:** primary · **Status:** done
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** harvested in full — 59,601 unique records. Twelve of 44 collections read whole, plus the 1,678 records that carry no `524$a`: **SFP 23** (1,165 records, 1,122 findings, 923 resolved, 919 published), **SFH 371** (2,421 records, 421 findings, 117 resolved, 116 published on 103 pages), **SFP 162** (34,738 records, 1,186 findings, 662 resolved, 545 published on 481 pages), **SFP 22** (433 records, 77 findings, 72 resolved, 60 published on 59 pages), the four small buildings collections read together — **SFP 42** (288 records, 58 findings, 56 resolved), **SFP 90** (285 → 14 → 11), **SFP 125** (253 → 36 → 11) and **SFP 169** (918 → 39 → 21), 99 published on 88 pages — and the four institutional collections read together: **SFP 26** (984 records, 17 findings, 12 resolved, 7 published on 6 pages), **SFP 84** (483 → 13 → 1 → 1), **SFP 103** (51 → 7 → 3 → 0) and **SFH 3** (1,603 → 3 → 2 → 0). The **no-`524$a`** batch is 1,678 records and zero findings.
+> - **Coverage:** harvested in full — 59,601 unique records. Twelve of 44 collections read whole, plus the 1,678 records that carry no `524$a`: **SFP 23** (1,165 records, 1,122 findings, 923 resolved, 919 published), **SFH 371** (2,421 records, 421 findings, 117 resolved, 116 published on 103 pages), **SFP 162** (34,738 records, 1,186 findings, 662 resolved, 545 published on 481 pages), **SFP 22** (433 records, 77 findings, 72 resolved, 60 published on 59 pages), the four small buildings collections read together — **SFP 42** (288 records, 58 findings, 56 resolved), **SFP 90** (285 → 14 → 11), **SFP 125** (253 → 36 → 11) and **SFP 169** (918 → 39 → 21), 99 published on 88 pages — and the four institutional collections read together: **SFP 26** (984 records, 17 findings, 12 resolved, 7 published on 6 pages), **SFP 84** (483 → 13 → 1 → 1), **SFP 103** (51 → 7 → 3 → 0) and **SFH 3** (1,603 → 3 → 2 → 0). The **no-`524$a`** batch is 1,678 records and zero findings. The remaining 36 collections were read together as the `tail` batch (7,261 records, 137 findings, 45 published on 45 pages), and the last two written off unread were cleared by #217 and read: **SFP 179** (528 → 29 → 25 → 25 on 24 pages) and **SFP 136** (2,664 → 10 → 2 → 2 on 2 pages). **Every collection in the archive that holds an addressed record has now been read except SFP 130, which #217 closed for good.** What would reopen this source is re-running the harvester for records catalogued since 2026-09-04; it resumes from the stored token rather than re-downloading.
 > - **Local corpus:** `research/corpora/digitalsf/` (453 MB; `state.json` records the OAI resumption token per set)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -153,7 +153,7 @@ and roughly double what the title-only profile reports:
 | 60 | **Lee Sims Photographs of Tenants and Owners in Opposition to Redevelopment (SFP 125) — done: 36 findings, 11 resolved** |
 | 51 | **James E. Gordon Color Slide Collection of San Francisco Murals (SFP 90) — done: 14 findings, 11 resolved** |
 | 43 | **James A. Martin Color Slides of San Francisco (SFP 169) — done: 39 findings, 21 resolved** |
-| 30 | San Francisco Portrait Photograph Collection (SFP 136) — **still unread, and the reason is an assumption nobody has checked**: that a *portrait* collection raises the SFP 130 question. SFP 179 was written off the same way and was wrong. Measure its 30 addressed captions before deciding |
+| 30 | **San Francisco Portrait Photograph Collection (SFP 136) — done: 2,664 records, 10 candidates, 3 real addresses, 2 published on 2 pages.** The assumption was wrong in both directions. It is not SFP 130 — its addressed captions are public figures at public buildings, not tenants at home — and the "30 addressed" was seven of a caption's own numbers ("1949 Career Drive" is a fundraising drive) on top of three real ones |
 | 28 | **San Francisco Police Department Records (SFH 61) — done in the `tail` batch: 14 findings, 4 published.** Its addressed half is the 1906 ruins and the Bureau of Special Services' 1960s surveillance of bars |
 | 28 | **Marilyn Blaisdell Photograph Collection (SFP 84) — done: 13 findings, 1 published.** A collector's miscellany, 1880s–1914, so eleven of twelve misses are the pre-1910 renumbering rule |
 | 22 | **Michael Brailove Photographic Negatives (SFP 103) — done: 7 findings, 3 resolved, 0 published.** The densest thing left, and every address is a Western Addition building the A-2 clearances took |
@@ -221,9 +221,10 @@ catalogue records.
 **And then there was no batch left at all.** Everything below SFP 26 in this
 table, plus the thirty-odd collections too small to have a row in it, was read
 on 2026-09-04 as the single `tail` batch — 36 collections, 7,261 records, 45
-published pages. The only rows here still untouched are SFP 130, SFP 179 and
-SFP 136. #217 has since closed SFP 130 unread and left SFP 136 undecided and
-unmeasured; SFP 179 was cleared by the same issue and read on 2026-09-05. **The densest thing the tail
+published pages. The only rows here still untouched were SFP 130, SFP 179 and
+SFP 136. #217 closed SFP 130 unread and left SFP 136 undecided and
+unmeasured; SFP 179 was cleared by the same issue and read on 2026-09-05, and
+SFP 136 was read on 2026-09-06. **Nothing addressed is unread now.** **The densest thing the tail
 turned up was not in this table**, because the table is ordered by
 addressed-record count and it has only ten records: SFH 611, the Junior
 League of San Francisco's *Here Today* building research files, where ten of
@@ -669,28 +670,42 @@ records carry one; exactly one of those also carries a street number.
   `basc` 10, before deduplication.
 
   **Every collection in the archive that holds an addressed record has now been
-  read, except the three blocked on #217.** Twelve were read on their own —
+  read.** Twelve were read on their own —
   SFP 23, SFP 162, SFH 371, SFP 22, then SFP 42, SFP 90, SFP 125 and SFP 169
   together, then SFP 26, SFP 84, SFP 103 and SFH 3 together — and the
   remaining **36 were read as one batch, `tail`**: 7,261 records, 188 candidate
   addresses, 137 findings, 45 published on 45 pages. What is left in the
-  archive is SFP 130 (184 addressed), **skipped for good under #217**; SFP 136
-  (30), still undecided and needing its captions measured rather than assumed;
-  and 128 collections that carry no addressed record at all. SFP 179 (151
-  reported, 51 real) was cleared by the same issue and is done.
+  archive is SFP 130 (184 addressed), **skipped for good under #217**, and 128
+  collections that carry no addressed record at all. SFP 179 (151 reported, 51
+  real) and SFP 136 (30 reported, 3 real) were both cleared by the same issue
+  and both are done.
   The table under "Batch unit" says what each yielded. Re-run the
   harvester to pick up records added since; it resumes from the stored token
   rather than re-downloading.
 
-  **What is left, after #217.** SFP 130 (184 addressed) is **closed unread**:
-  its captions are named living tenants and no redaction survives that. SFP 179
-  is **done** — 151 reported, 51 real once "4 Corner Friday" stopped parsing as
-  an address, 25 of them published. **SFP 136 (30) is the only unread
-  collection in the archive that holds an addressed record**: a *portrait*
-  collection assumed to raise the SFP 130 question and never measured. Measure
-  it. Nothing else in the archive carries an addressed
-  record: a corpus-wide address pass over all 59,902 records finds no candidate
-  in any other unread collection.
+  **What is left, after #217: nothing but SFP 130.** SFP 130 (184 addressed) is
+  **closed unread**: its captions are named living tenants and no redaction
+  survives that. SFP 179 is **done** — 151 reported, 51 real once "4 Corner
+  Friday" stopped parsing as an address, 25 of them published. SFP 136 is
+  **done** — 30 reported, 3 real once the caption's own numbers stopped parsing
+  as addresses, 2 of them published. Nothing else in the archive carries an
+  addressed record: a corpus-wide address pass over all 59,902 records finds no
+  candidate in any other unread collection.
+
+  **#217's assumption was wrong twice, and the correction is worth stating
+  once.** Two collections were written off unread on subject matter — SFP 179
+  because it photographs a neighbourhood's people, SFP 136 because it
+  photographs public figures — and both turned out to be a different problem
+  from SFP 130. What SFP 130 has that neither of them has is *tenants at home*:
+  a caption naming a living person and the apartment they live in, where
+  striking the name leaves a household at a street number and nothing else.
+  SFP 136's three addressed captions are a union leader in his own offices, a
+  film comedian on a car showroom's forecourt and a philanthropist in the house
+  she is famous for — each half a century dead, each already in published
+  sources, each permitted by name under the root AGENTS.md. **The rule that
+  falls out of it: the privacy limit is about what the sentence is, not what
+  the collection is about, so measure the addressed records rather than reading
+  the collection's title.**
 
   **The tail was one batch, and that is the shape to reuse.** 36 collections
   holding one to nineteen addressed records each are not 36 batches; reading
@@ -739,6 +754,51 @@ records carry one; exactly one of those also carries a street number.
   Collection, San Francisco History Center, San Francisco Public Library."
   `citation_of()` does this, and refuses a record that names neither rather
   than citing "the archive".
+
+- **Verified:** 2026-09-06 (read, resolved and published **SFP 136, the San
+  Francisco Portrait Photograph Collection**, whole: 2,664 records → 10
+  findings → 2 resolved → **2 published on 2 pages**, none seeded. Findings:
+  [`../findings/digitalsf/sfp-136.json`](../findings/digitalsf/sfp-136.json).
+  With this batch **every collection in the archive that holds an addressed
+  record has been read**, save SFP 130, which #217 closed for good.
+
+  It was read for the same reason SFP 179 was — #217 left it written off on an
+  assumption about its subject rather than a measurement of its captions — and
+  it taught three things:
+
+  - **The privacy limit is about the sentence, not the collection.** A portrait
+    collection is people from end to end: 2,615 of 2,664 records are a named
+    person and no place at all, and `people_not_a_place` drops every one of
+    them before a finding exists. What survives is three captions that put a
+    public figure at a public building — a union leader in his own offices at
+    150 Golden Gate Avenue, a film comedian in front of the Van Ness Avenue
+    auto row, a philanthropist in the Pacific Heights house she is famous for.
+    All three are half a century dead and already in published sources, so the
+    root AGENTS.md permits them by name. **SFP 130 is not "a collection about
+    people"; it is captions about living tenants at their own front doors, and
+    that is a narrower thing than the shelf label.**
+  - **Seven of its "30 addressed records" were the caption's own numbers.** A
+    fundraising drive named for its year parses exactly like an address —
+    "1949 Career Drive", "1944 War Fund Drive" — and so do "1956 Lewyt", "1960
+    Olympic", "1939 Golden Gate International Exposition" and "Highway 36
+    Association". The standing guard (a street number equal to the record's own
+    year) misses all of them because it only fires when no street type follows,
+    and "Drive" is a street type. **Relaxing that condition was measured over
+    every findings file and rejected**: it would take out four junk entries and
+    two real published addresses, 1977 Bush Street and 2011 Folsom Street,
+    where the number and the date genuinely coincide. Step 3 already refuses
+    the junk — there is no street called Career or War Fund — so the noise
+    costs nothing and the relaxation would cost two pages.
+  - **A thousands separator was reading as a street number, and that one was
+    worth fixing.** "leader of 75,000 West Coast Longshoremen" yielded *000
+    West Coast Longshoremen*. The guard is a digit immediately left of the
+    comma, which is what separates it from the ordinary caption comma before a
+    real address ("Miyako Hotel, 1625 Post"). Measured corpus-wide first: four
+    entries, all junk, none resolved, so nothing committed changes. Three of
+    them are still in `sfp-162.json` and `tail.json` as unresolved and
+    rejected entries — the extractor does not merge, so re-running those
+    batches would wipe their resolutions and publish marks to clean up four
+    entries that already say the right thing.)
 
 - **Verified:** 2026-09-05 (read, resolved and published **SFP 179, the Judi
   Iranyi Photographs of the Tenderloin**, whole: 528 records → 29 findings →
