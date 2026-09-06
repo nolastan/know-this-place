@@ -159,6 +159,13 @@ someone else's reporting.
   that is empty; do not revise one a person or another source already filled.
   An article that contradicts a field already on the page is an `unknowns`
   line, not an edit.
+- **One event, one entry, and the entry it collides with is usually already
+  published.** Two outlets on one morning is the easy case; a filing written up
+  again a week later is the one that gets through, because the earlier entry
+  went up in an earlier run and nothing in today's queue argues with it. Read
+  what the page already carries before writing to it — `read.py` prints it — and
+  decline the second account, naming in its note the entry that carries the
+  event.
 - **Never edit a headline** — not to trim it, not to fix its capitalization,
   not to drop the outlet's brand from the end. A quoted headline that has been
   altered is no longer a citation. If a headline is unusable, the entry is

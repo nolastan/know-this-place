@@ -78,6 +78,15 @@ their stories are about somewhere else.
 - **Richmond is not in the elsewhere list.** The Richmond District is San
   Francisco and Richmond is the East Bay; dropping every "Richmond" would cost
   a whole district's coverage. Let the other signals decide.
+- **A page's title may be a range, and a story never prints one.** `page_index`
+  reads the map's index, where a parcel spanning numbers is titled "75–85 West
+  Portal Avenue" — so a lookup for the number an article actually prints, 85,
+  used to find nothing. Both endpoints are now registered against the page as
+  well (endpoints only: the numbers between them are not all real addresses).
+  This fed the screen too, through `street_vocabulary`: 48 street names reached
+  it from nowhere else, because every page on those streets is a ranged address,
+  so the screen had been reading stories about Cole, Clipper and Davis Streets
+  as stories about streets the site does not cover.
 - A story on a **bay-area** feed that names an address but not the city is
   queued anyway, with the doubt written into the reason. Confirming the city is
   the reader's first job.
@@ -128,6 +137,24 @@ copy.**
   out](#rules-that-catch-publishers-out). `--only-pages` narrows a read when you are
   triaging a long backlog by hand; it is not the default and it is not the
   order to work in.
+- **The duplicate is usually already on the page, not elsewhere in the queue.**
+  "One event, one entry" reads like a rule about two outlets in one morning, and
+  that is its easy case. The expensive case is a filing covered again a week
+  later: the earlier entry was published by an earlier run, so nothing in
+  today's queue contradicts the second story and the page looks like a fresh
+  target. So `read.py` prints, under each address that already has a page, the
+  news entries that page carries — `already on the page: <date> <outlet> —
+  <headline>`. Read those lines before extracting. If one of them is the same
+  event, decline today's story and say in its note which entry carries it; the
+  detail the second account adds belongs in the finding's `extra`, not in a
+  second line on the timeline.
+
+  This is measured, not hypothetical. The run of 2026-09-06 carried six
+  publishable candidates and three of them were duplicates of entries the site
+  had published between 24 August and 1 September — The Registry's West Portal
+  and Marina stories and WhatNow's JETSET Pilates story. All three had been
+  written onto pages before the check was made by hand.
+
 - **A paywall that cuts off after the lede is not a source you can extract
   from.** Record what you could read and mark the item unpublished with the
   reason. The Registry and the Chronicle both do this.
