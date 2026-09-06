@@ -28,11 +28,20 @@
   - **Carry the source's own hedges and conflicts through.** Where the guide
     flags a claim as disputed, or two addresses compete for the same story,
     say so on both pages and cross-link them — never silently pick a winner.
-  - One claim is **one `.tag` or one `.speclist` row**, per the writing
-    rules. A notable resident does not earn a prose section.
-  - Never state a residency as fact in `data.json`; nest it under a
-    `notable_residents` array whose entries each carry `"source"` and, where
-    the guide hedges, `"disputed": true`.
+  - **Put the claim where the renderer will show it.** A dated claim is one
+    `historical_record` entry (`kind: "occupancy"`, or `"event"` for the SLA
+    addresses), which lands on the page's one timeline and names the guide in
+    the item's meta row — that is the body attribution. An undated one is a
+    one-sentence `narrative.lead`. A notable resident never earns a prose
+    section.
+  - **`notable_residents` renders nothing.** The early pages that show a
+    resident in a `.speclist` row do it in hand-written HTML that
+    `scripts/render-backlog.txt` grandfathers; on any page the renderer owns,
+    a claim parked in `notable_residents`, `notable_events` or
+    `filming_location` is invisible — the page cites the guide in its footer
+    and states no fact from it. That was issue #174. Keep the guide's own
+    hedges (`disputed`, a competing address, a figure that disagrees with the
+    assessor) in the entry's `description`, not in a key nothing reads.
 - **Privacy — the binding constraint.** The root AGENTS.md bars naming or
   alluding to **current** residents, publicly available or not. These guides
   routinely name people who still live at the address, often in the present
@@ -41,5 +50,8 @@
   without naming anyone. Only past residency — dated, or stated in the past
   tense about someone who has plainly moved on or died — may be named.
 - **Citation label:** name the guide and its title, and link the page.
-- **Verified:** 2026-07-23 (26 San Francisco addresses listed; all but one
-  resolve in EAS)
+- **Verified:** 2026-09-05 (re-read whole for issue #174; unchanged since the
+  2026-07-23 pass — 26 San Francisco addresses listed, all but one resolve in
+  EAS. Every address it names now has its claim on the page, except the two
+  where the guide's claim is present-tense occupancy and the omission is
+  recorded in `.unknowns` instead.)
