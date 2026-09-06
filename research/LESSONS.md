@@ -1483,3 +1483,35 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   the line disagree, leave the finding unresolved with both recorded. The tool
   prints the count of these; it cannot make the judgement.*
 
+
+- **A commercial condominium refuses exactly as a residential one does, and the
+  tell is a parcel with no roll row.** The directory contract defers
+  condominiums because each unit has its own parcel and none of them is the
+  building — and that is as true of a shopping centre split into retail, office,
+  cinema and department-store parcels as of a block of flats. On the Emporium
+  block, EAS files 835 and 845 Market Street under 3705049, which has no 2025
+  roll row at all; the building sits under 3705050, 3705051, 3705052, 3705055
+  and 3705056, each a "Shopping Center" or "Commercial Department Stores" parcel
+  of the same address. *A parcel with no roll row is a master, not a mistake:
+  look for its splits before deciding the address is simply gone.* This cost the
+  richest single document of a batch — thirteen buildings with dates, architects
+  and builders, none of which could reach a page.
+
+- **Seeding a page rewrites its neighbours, so `validate.py` fails on pages the
+  run never touched.** Every address page lists the pages near it, so a new page
+  changes the rendered HTML of every page within its radius. A run that renders
+  only what it edited then fails the build with a list of unfamiliar addresses
+  that looks like corruption and is not. *Render every page `validate.py` names,
+  not only the ones you edited:* pipe its output through
+  `grep -o "render san-francisco/[^ ]*"` and re-render the lot. In one batch 25
+  new pages made 60 pages need rendering, 35 of them nobody had opened.
+
+- **Two findings on one parcel carrying the same sentence make one page item,
+  and nothing checks it.** `check.py` catches a parcel resolved to two different
+  paths, because that breaks the directory contract. It does not catch two
+  findings that resolve to the *same* path and then write the same sentence
+  twice — which is exactly what a survey list does when it records a corner
+  building under both its street numbers (25 and 31-35 Water Street; 480-482
+  Francisco and 81-83 Vandewater; 1623 and 1629 Pine). *Before rendering, count
+  identical descriptions per page and merge them into one entry that names both
+  numbers, marking the sibling's `publish.note`.*

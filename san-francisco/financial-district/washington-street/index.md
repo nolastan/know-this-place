@@ -6,6 +6,7 @@ The parcels on Washington Street documented here so far, from the city's address
 
 - [425](425/) — A 1907 hotel, with reroofing permitted in 1996.
 - [439–445](439/) — A 1907 hotel, with a seismic retrofit permitted in 2013.
+- [517–519](517/) — A 1911 office building, with plumbing work permitted in 2024.
 - [520–550](520/) — A 1940 office building in the Jackson Square Historic District, with a kitchen remodel permitted in 2017.
 - [535](535/) — Redwood Park: half an acre of coast redwoods at the foot of the Transamerica Pyramid.
 - [584](584/) — A 1900 office building in the Jackson Square Historic District, with a kitchen remodel permitted in 2007.

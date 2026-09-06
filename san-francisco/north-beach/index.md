@@ -43,8 +43,10 @@ and the upper reaches of Grant Avenue, which was formerly Dupont Street.
 - [Telegraph Hill Boulevard](telegraph-hill-boulevard/) — 3 buildings, built 1936–1940; 3 in the Gardner Dailey/Telegraph Hill Historic District.
 - [Union Street](union-street/) — 1 building, built 1900; 1 in the Telegraph Hill Historic District.
 - [Vallejo Street](vallejo-street/) — 8 buildings, built 1906–1955; 2 in the Upper Grant Avenue Historic District.
+- [Vandewater Street](vandewater-street/) — 1 building, built 1914.
 - [Varennes Street](varennes-street/) — 13 buildings, built 1903–1914; 13 in the Upper Grant Avenue Historic District.
 - [Walter U Lum Place](walter-u-lum-place/) — 2 buildings, built 1907–1913; 2 in the Chinatown Historic District.
+- [Water Street](water-street/) — 4 buildings, built 1906–1907.
 - [Waverly Place](waverly-place/) — 16 buildings, built 1906–1911; 16 in the Chinatown Historic District.
 - [Wentworth Place](wentworth-place/) — 3 buildings, built 1907; 3 in the Chinatown Historic District.
 

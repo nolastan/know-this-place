@@ -6,9 +6,10 @@
 >
 > - **Kind:** PDF reports · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** all 172 address-titled documents read, in 93 projects, plus the 36 named
->   single-site projects of 1974–1982 and the 58 projects whose titles carry a street address later
->   than first position, both from the project-titled set; 606 findings, 396 resolved, 344 published.
+> - **Coverage:** all 172 address-titled documents read, in 93 projects, plus the whole named
+>   single-site group of the project-titled set — 36 projects of 1974–1982, 36 of 1979–2005 — and the
+>   58 projects whose titles carry a street address later than first position; 719 findings, 470
+>   resolved, 415 published.
 >   All ~617 project-titled documents are grouped and sampled in the triage note below.
 > - **Local corpus:** `research/corpora/sf-environmental-review/`
 >
@@ -226,6 +227,56 @@
     Dolores Street DEIR is scrambled beyond reading. Search for the fact in more
     than one place in the document; these reports repeat themselves constantly,
     and that redundancy is what makes them readable at all.
+
+  - **A commercial condominium refuses as hard as a residential one, and it took
+    the best document in the register with it.** The Emporium site EIR dates
+    thirteen buildings on and around Jessie Street — the 1896 Parrott Building by
+    Albert Pissis and its 1908 rebuilding behind the surviving Market Street
+    facade, the 1916 annex, the 1933 Marking Building, the 1910 Red Cross
+    Building, the 1913 Del Mar Hotel by MacDonald and MacDonald, the 1911
+    Milwaukee Furniture Building, the 1907 American Type Foundry Building — with
+    an architect or a builder for most of them. **Not one of them reached a
+    page.** EAS files 835 and 845 Market Street under parcel 3705049, which has
+    no roll row at all; the block is now 3705050, 3705051, 3705052, 3705055 and
+    3705056, separate retail, office, cinema and department-store parcels of one
+    address. The Jessie and Mission Street numbers no longer exist in EAS, and
+    the parcel they would resolve onto is the same condominium. Expect this on
+    any downtown block a shopping centre took.
+
+  - **A multi-block project site states four assessor blocks and never says which
+    building is on which.** The First and Howard Streets project describes
+    nineteen buildings across blocks 3720, 3736, 3737 and 3721, and names three
+    of them with dates and architects — the 1917 N. H. Cook Belting Company
+    building by Ward and Blohme at 401 Howard, the 1925 Philadelphia Storage
+    Battery Company building by Ashley and Evers at 218 Fremont, and 231 First,
+    rebuilt after 1906 as the Thomson Machine Works on the site of the Selby Shot
+    Works. All three numbers are gone from EAS, and the "put the record's stated
+    block on every finding" rule cannot help, because the record states four.
+    **A project site of more than one block cannot resolve its demolished
+    buildings unless the report assigns each one to an area**; leave them
+    unresolved rather than guessing the corner.
+
+  - **A survey report bound into a housing project's appendix is a rating index
+    for a whole neighbourhood.** The North Beach Hope VI EIR's appendix
+    summarises a Historic Architecture Survey Report that evaluated **105
+    properties** on DPR 523 forms across Francisco, Mason, Taylor, Water,
+    Vandewater and Powell Streets, naming six of them for their builders — the
+    Domenico Garibaldi and Antone Trapani and Mario Canepa flats, A. Larocca and
+    Sons' wholesale seafood, the Robert Boardman Howard and Adeline Kent studios
+    — and listing twenty-five more as contributors to a potential historic
+    district. That one appendix produced 24 of this batch's published facts and
+    18 of its 25 new pages, from a document titled after a public-housing
+    project. **A HOPE VI or redevelopment EIR is a neighbourhood survey wearing a
+    project's name.**
+
+  - **The catalogue's year is the document's, not the project's, and a
+    project-named document can be a sibling of one already read under a street
+    number.** The 1991 initial study titled *Episcopal Homes Foundation San
+    Francisco Towers* and the 1992 draft EIR titled *1661 Pine Street residential
+    life care facility* are the same project on the same block; the earlier batch
+    read the second under the leading-digit filter. Matching titles against
+    `state.json` does not catch it, because the two share no words. **Match the
+    project's block, not its title.**
 
   - **Triage of the 617 project-titled documents.** The catalogue query above
     returns 789 items. 172 have a street number at the front of the title and are
@@ -507,14 +558,45 @@
   (two buildings of 1906-07 by Meyer and O'Brien and by Bliss and Faville, welded
   into one behind Ward Thomas's 1956 curtain wall).
 
-  **Remaining: 523 of the 617 project-titled documents, grouped and sampled in the
-  triage note above — 18 more named single-site projects of 1983–1987 and 39 of
-  1988–2005, 77 institutional campus projects, 130 area and policy plans, 67
+  The seventh batch finishes the named single-site group: the **projects of
+  1979-2005 titled by project name**, 36 documents, one per project — 113
+  findings, 74 resolved, 71 published on 53 pages, 25 of them seeded by that run.
+  Ten of the 36 yielded nothing: Underwater World at Pier 39, the 300 Ulloa Street
+  residential care facility, the Bridgemont High School site subdivision, Natoma
+  Mews, Pacific Center, the Pacific Exchange, the Post Street Medical Center, the
+  Pan-Med medical office building, the Pier 70 heliport and Butterfly Discovery
+  Park — vacant sites, park and pier projects, campus additions, or buildings the
+  report itself found unrated. Its richest documents are the Emporium site
+  expansion (thirteen dated buildings, none of which could be placed), the Geneva
+  Office Building demolition project (City Landmark No. 180, documented from its
+  groundbreaking on 15 July 1900 through the 1906 collapse of its north wall to
+  its closure after Loma Prieta - eight published facts on one page), the North
+  Beach Hope VI survey appendix, First and Howard, Brannan Square, the Neiman
+  Marcus expansion and the Church Street Apartments study of the Daphne Funeral
+  Home, whose commission Frank Lloyd Wright lost to A. Quincy Jones.
+
+  **Remaining: 487 of the 617 project-titled documents, grouped and sampled in the
+  triage note above — 77 institutional campus projects, 130 area and policy plans, 67
   transportation and airport documents, 96 procedural notices and 35 documents
   about places outside San Francisco — and the finals and supplements of projects
   whose drafts are read.**
 
-- **Verified:** 2026-09-05, sixth run: the 58 projects whose titles carry a street
+- **Verified:** 2026-09-05, seventh run: the rest of the named single-site group — 36
+  projects of 1979-2005 titled by project name, one document each — 113 findings, 74
+  resolved, 71 published on 53 pages, 25 of them seeded. What it learned: **a commercial
+  condominium refuses as hard as a residential one**, and the parcel with no roll row is
+  the master rather than a missing record, which is why the Emporium site's thirteen
+  dated buildings reached no page at all; **a project site of more than one block cannot
+  place its demolished buildings**, because the report states four assessor blocks and
+  never says which building stood on which; **a HOPE VI or redevelopment EIR is a
+  neighbourhood survey wearing a project's name**, and the North Beach Hope VI appendix's
+  105-property evaluation gave this batch most of its pages; **the catalogue's year is the
+  document's and not the project's**, so a project-named study can be the sibling of one
+  an earlier batch read under a street number with no word in common; and **seeding a page
+  rewrites its neighbours**, so `validate.py` fails on pages the run never opened until
+  every page it names is rendered.
+
+  **2026-09-05**, sixth run: the 58 projects whose titles carry a street
   address later than first position, one document each — 109 findings, 74
   resolved, 73 published on 55 pages. What it learned: **the group's size was
   wrong because the filter that measured it was**, and widening the street-type
