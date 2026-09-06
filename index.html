@@ -396,24 +396,40 @@ async function init() {
   mapboxgl.accessToken = token;
   const dark = matchMedia("(prefers-color-scheme: dark)");
 
+  /* The opening frame is four landmarks, not a zoom number: Fisherman's Wharf
+     at the north, the Great Highway at the west, the Ferry Building at the
+     east, Bernal Heights at the south. Mapbox picks the tightest zoom that
+     keeps all four inside whatever viewport it was handed, so the guarantee
+     holds at any window size. A fixed center and zoom held it only at the one
+     size it was tuned for — the map is 100svh full-bleed, so a narrower window
+     crops inward from the edges and below roughly 1024px wide the Outer Sunset
+     slid off the left. The box's aspect is 1.32, wider than it is tall, so a
+     desktop window binds on height and buys east-west margin for free, while a
+     phone binds on width and buys north-south. */
+  const home = [[-122.5105, 37.7395], [-122.3937, 37.8095]];
+
   const map = new mapboxgl.Map({
     container: shell,
     style: styleFor(dark.matches),
-    /* Centered north and west of the city's centroid. North because at this
-       zoom a centroid framing crops the waterfront, and Fisherman's Wharf is
-       the landmark that tells a stranger which city they're looking at; west
-       so the frame still reaches the Great Highway and the Outer Sunset
-       avenues. The north bound sits out in the bay so that framing isn't
-       clamped back down. Both offsets are pushed no further than they have to
-       be: every notch north drops another slice of the Bayview dots below the
-       fold, and each notch west trades the Bayview's eastern edge for beach.
-       The zoom is capped by the same tension — past ~13 the frame can hold the
-       Outer Sunset or the Mission's dot cluster, but not both. */
-    center: [-122.4520, 37.7820],
-    zoom: 12.75,
+    bounds: home,
+    fitBoundsOptions: { padding: 24 },
     minZoom: 10,
-    maxBounds: [[-122.60, 37.68], [-122.30, 37.88]],   // San Francisco
   });
+
+  /* Panning is fenced to San Francisco, but the fence has to contain the
+     opening frame or Mapbox quietly clamps the camera and the fit never
+     happens — on a phone the frame reaches latitude 37.66..37.89, which busts
+     the city box at both ends, and the failure looks like nothing at all: no
+     error, the camera simply isn't where it was asked to be. So rather than
+     guess a box wide enough for every viewport shape, fence to the frame the
+     reader was actually given, widened to the whole city. Read off the canvas
+     corners rather than getBounds(), which reports the frame inside the
+     fitBounds padding while the clamp is applied to the full canvas. */
+  const canvas = map.getCanvas();
+  const frame = new mapboxgl.LngLatBounds(
+    map.unproject([0, canvas.clientHeight]), map.unproject([canvas.clientWidth, 0]));
+  map.setMaxBounds(frame.extend([[-122.60, 37.68], [-122.30, 37.88]]));   // San Francisco
+
   map.addControl(new mapboxgl.NavigationControl({ showCompass: false }), "top-right");
   map.on("style.load", () => addAddresses(map));
   map.on("load", () => placeholder?.remove());
