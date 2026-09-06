@@ -1483,3 +1483,58 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   the line disagree, leave the finding unresolved with both recorded. The tool
   prints the count of these; it cannot make the judgement.*
 
+
+- **A commercial condominium refuses exactly as a residential one does, and the
+  tell is a parcel with no roll row.** The directory contract defers
+  condominiums because each unit has its own parcel and none of them is the
+  building — and that is as true of a shopping centre split into retail, office,
+  cinema and department-store parcels as of a block of flats. On the Emporium
+  block, EAS files 835 and 845 Market Street under 3705049, which has no 2025
+  roll row at all; the building sits under 3705050, 3705051, 3705052, 3705055
+  and 3705056, each a "Shopping Center" or "Commercial Department Stores" parcel
+  of the same address. *A parcel with no roll row is a master, not a mistake:
+  look for its splits before deciding the address is simply gone.* This cost the
+  richest single document of a batch — thirteen buildings with dates, architects
+  and builders, none of which could reach a page.
+
+- **Seeding a page rewrites its neighbours, so `validate.py` fails on pages the
+  run never touched.** Every address page lists the pages near it, so a new page
+  changes the rendered HTML of every page within its radius. A run that renders
+  only what it edited then fails the build with a list of unfamiliar addresses
+  that looks like corruption and is not. *Render every page `validate.py` names,
+  not only the ones you edited:* pipe its output through
+  `grep -o "render san-francisco/[^ ]*"` and re-render the lot. In one batch 25
+  new pages made 60 pages need rendering, 35 of them nobody had opened.
+
+- **Two findings on one parcel carrying the same sentence make one page item,
+  and nothing checks it.** `check.py` catches a parcel resolved to two different
+  paths, because that breaks the directory contract. It does not catch two
+  findings that resolve to the *same* path and then write the same sentence
+  twice — which is exactly what a survey list does when it records a corner
+  building under both its street numbers (25 and 31-35 Water Street; 480-482
+  Francisco and 81-83 Vandewater; 1623 and 1629 Pine). *Before rendering, count
+  identical descriptions per page and merge them into one entry that names both
+  numbers, marking the sibling's `publish.note`.*
+
+- **An entry belongs to one date, and everything else in it is on the page under
+  a date it did not happen.** A finding is written from a passage, and a passage
+  in an environmental review walks a building through eighty years in four
+  sentences — so the description arrives carrying a designation, a rating, a fire
+  and a demolition under whichever year the extractor chose. On the page that
+  becomes a timeline item dated 1986 that ends in 1998, which is simply false in
+  the reader's eye. The Geneva Office Building shipped with eight items covering
+  nineteen dated events; the corrected page has thirteen items, each one thing
+  that happened on the date beside it. *Before publishing, list the years in each
+  description and compare them with the entry's own `date`: two or more foreign
+  years means the finding is really several findings, and the split belongs in
+  the findings file, not just on the page.* The same pass catches the two other
+  faults it travels with — **the report's argument** ("would have made it the
+  first San Francisco landmark deliberately pulled down"), which is a
+  counterfactual about a proposal and not a fact about the building, and **the
+  date restated in the prose** that the timeline label already shows ("Designated a
+  San Francisco landmark as the Geneva Office Building **in 1985**", on an entry
+  dated 1985). Both are now `check.py --overlap` scans — *by its own date* — so the
+  next batch is told before it publishes rather than after a reader finds it. The
+  restatement is not this module's alone: **953 of the site's 7,764 timeline entries
+  do it**, across almost every context-statement batch, and clearing them is its own
+  sweep.

@@ -4,6 +4,7 @@ The parcels on Francisco Street documented here so far, from the city's address,
 
 ## Documented so far
 
+- [679–685](679/) — A 1909 7-unit apartment building, with a seismic retrofit permitted in 2016.
 - [800](800/) — A 1938 single-family house, with an addition permitted in 1985.
 - [807](807/) — A 1902 single-family house, with deck work permitted in 2013.
 - [825](825/) — A 1900 single-family house, with garage work permitted in 2025.

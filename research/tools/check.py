@@ -608,6 +608,11 @@ def _proper_names(extra) -> set[str]:
     return out
 
 
+_YEARS = re.compile(r"\b(?:1[89]|20)\d\d\b")
+# A year the prose states as the date of the thing the entry is about — the
+# timeline label already shows it. A year inside a range ("1912 to 1914") or
+# named as a different event's date is not this.
+_YEAR_AGAIN = re.compile(r"\b(?:in|of|from|since|by|during|dated)\s+((?:1[89]|20)\d\d)\b")
 _GONE_EXEMPT = {"site history", "demolition"}
 _GONE_FRAME = re.compile(
     r"\b(stood|until|then on|then standing|formerly|demolish\w*|razed|replaced|"
@@ -727,6 +732,8 @@ def overlap(path: Path) -> None:
                 or entry.get("description", "") in ours)
     hits, name_hits, roll_hits, proper_hits, checked, missing = [], [], [], [], 0, 0
     gone_hits: list[tuple] = []
+    date_hits: list = []
+    bundle_hits: list = []
     for finding in data.get("findings", []):
         res = finding.get("resolution") or {}
         if res.get("status") != "resolved" or not res.get("path"):
@@ -801,6 +808,22 @@ def overlap(path: Path) -> None:
                     proper_hits.append((finding.get("id", "?"), res["path"],
                                         found[0], "the page's own prose"))
 
+        # scan five: the entry's own date, said twice or not its own. A finding is
+        # written from a passage, and a passage walks a building through decades in
+        # a sentence — so the description arrives carrying years that belong to
+        # other events, under whichever date the extractor chose, and often
+        # restating that date in the prose the timeline label already shows.
+        desc = finding.get("description", "")
+        own = set(_YEARS.findall(str(finding.get("date", ""))))
+        said = _YEARS.findall(desc)
+        if own and any(y in own for y in _YEAR_AGAIN.findall(desc)):
+            date_hits.append((finding.get("id", "?"), res["path"],
+                              sorted(own)[0], desc[:70]))
+        foreign = sorted({y for y in said if y not in own})
+        if len(foreign) >= 2:
+            bundle_hits.append((finding.get("id", "?"), res["path"],
+                                finding.get("date", "?"), foreign, desc[:70]))
+
         mine = _words(finding.get("description", ""))
         if not mine:
             continue
@@ -823,7 +846,8 @@ def overlap(path: Path) -> None:
     hits.sort(reverse=True)
     print(f"overlap: {checked} resolved finding(s) checked against their pages"
           + (f", {missing} page(s) not on disk yet" if missing else ""))
-    if not hits and not name_hits and not roll_hits and not proper_hits and not gone_hits:
+    if (not hits and not name_hits and not roll_hits and not proper_hits
+            and not gone_hits and not date_hits and not bundle_hits):
         print("  none — no finding repeats what its page already says.")
         return
     if hits:
@@ -860,6 +884,20 @@ def overlap(path: Path) -> None:
             print(f"          {text}...")
         print("        These want a frame — \"stood here until\", \"then on the corner\" —"
               " not a decline.")
+    if bundle_hits:
+        print(f"  by its own date — {len(bundle_hits)} finding(s) carry two or more years "
+              f"that are not the entry's date:")
+        for fid, page_path, date, foreign, text in bundle_hits:
+            print(f"    {fid}  {page_path}  (dated {date}, also {', '.join(foreign)})")
+            print(f"          {text}...")
+        print("        An entry belongs to one date. Two or more foreign years usually"
+              " means this is several findings; split it.")
+    if date_hits:
+        print(f"  by its own date — {len(date_hits)} finding(s) restate the year the "
+              f"timeline label already shows:")
+        for fid, page_path, year, text in date_hits:
+            print(f"    {fid}  {page_path}  ({year})")
+            print(f"          {text}...")
     print("  Read each one: decline it, or trim it to the part that is new.")
 
 

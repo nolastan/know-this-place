@@ -94,7 +94,7 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Showplace Square Heavy Timber and Steel-frame Brick Warehouse and Factory Historic District](showplace-square-heavy-timber-and-steel-frame-brick-warehouse-and-factory/) — Eligible for the California Register, significant 1893–1929; 13 buildings documented on 8 streets.
 - [Sixth Street Lodging House Historic District](sixth-street-lodging-house/) — Eligible for the California and National Registers, significant 1870–1947; 30 buildings documented on 3 streets.
 - [SoMa LGBTQ Historic District](soma-lgbtq/) — Eligible for the California Register, significant ca.1950s–ca.1990s; 56 buildings documented on 25 streets.
-- [South End Historic District](south-end/) — An Article 10 city landmark district, significant 1867–1935; 36 buildings documented on 12 streets.
+- [South End Historic District](south-end/) — An Article 10 city landmark district, significant 1867–1935; 37 buildings documented on 12 streets.
 - [South End Historic District Addition](south-end-addition/) — Eligible for the California and National Registers, significant 1906–1935; 17 buildings documented on 6 streets.
 - [South Mission Avenues and Alleys Historic District](south-mission-avenues-and-alleys/) — Eligible for the California Register, significant 1885–1914; 88 buildings documented on 8 streets.
 - [South Park Historic District](south-park/) — Eligible for the California and National Registers, significant 1854–1935; 32 buildings documented on one street.

@@ -15,7 +15,7 @@ The buildings documented here so far inside the South End Historic District, and
 - [Second Street](/san-francisco/east-cut/2nd-street/) — 4 documented buildings inside the district.
 - [Third Street, South Beach](/san-francisco/south-beach/3rd-street/) — 5 documented buildings inside the district.
 - [Third Street, South of Market](/san-francisco/south-of-market/3rd-street/) — 1 documented building inside the district.
-- [Townsend Street](/san-francisco/south-beach/townsend-street/) — 7 documented buildings inside the district.
+- [Townsend Street](/san-francisco/south-beach/townsend-street/) — 8 documented buildings inside the district.
 
 ## Buildings
 
@@ -50,6 +50,7 @@ The buildings documented here so far inside the South End Historic District, and
 - [640 Third Street](/san-francisco/south-of-market/3rd-street/640/) — An assessor class: vacant lot, with one permit record from 1985.
 - [64 Townsend Street](/san-francisco/south-beach/townsend-street/64/) — A 1904 store building, with a seismic retrofit permitted in 2000.
 - [100 Townsend Street](/san-francisco/south-beach/townsend-street/100/) — A 1900 building, with reroofing permitted in 2013.
+- [123–131 Townsend Street](/san-francisco/south-beach/townsend-street/123/) — A 1903 office building, with plumbing work permitted in 2014.
 - [130 Townsend Street](/san-francisco/south-beach/townsend-street/130/) — A 1900 office building, with a vertical addition permitted in 2021.
 - [136 Townsend Street](/san-francisco/south-beach/townsend-street/136/) — A 1902 industrial building, with reroofing permitted in 1998.
 - [144 Townsend Street](/san-francisco/south-beach/townsend-street/144/) — A 1922 office building, with stair work permitted in 2015.
