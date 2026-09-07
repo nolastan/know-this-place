@@ -1681,3 +1681,46 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   *After `seed-list`, run `validate.py`, feed its "run: … render ⟨path⟩" lines
   back to `seed_pages.py render`, and expect a diff several times larger than
   the pages you actually wrote to.*
+
+- **A recorded range that splits across two parcels is not always a dead end:
+  the assessor's own `year_property_built` can choose between them.** The
+  resolver declines a range whose numbers sit on different parcels today,
+  because picking one would be adjudicating. But where the record dates *two*
+  buildings and the roll dates two parcels, the record has already chosen. St
+  Joseph's Church nominates 1401–1415 Howard Street, which is 3517039 and
+  3517040 today; the nomination gives a church of 1913–14 and a parish hall and
+  rectory of 1906, and the 2025 roll gives 3517039 a build year of 1913 on
+  25,867 sq ft and 3517040 a build year of 1908 on 11,375. *Two dates against
+  two parcels is a match, not a guess — resolve by hand with `"by_hand": true`
+  and put the arithmetic in `method`. One date against two parcels is still a
+  decline.*
+
+- **A modern document can still give a street number the city does not have,
+  and the fix is to identify the building rather than repair the number.** The
+  1978 San Francisco Civic Center nomination addresses the War Memorial Opera
+  House as 309 Van Ness Avenue and the Veterans Building as 459; EAS holds
+  neither, and holds 301 and 401 on one parcel whose sf-parcels range is
+  301–401. `extra.record_date` turns off the renumbering guard for documents
+  like this, which is right, but it does not make the number correct. *Where a
+  document names a building and states the block it occupies, that is the check
+  material — resolve on the name and the block, say so in `method`, and never
+  quietly slide 309 to 301 as if it were a typo.*
+
+- **A corner building addressed on both its frontages needs the second one in
+  `extra.address_note_as_recorded`, or the resolver never looks.** The Pioneer
+  Trunk Factory nomination is titled "2185–99 Folsom Street and 3180 18th
+  Street". EAS has dropped every number in the Folsom range and holds 3180 18TH
+  ST on a live parcel, and the resolver returned "no record" without a hint
+  that the document had given a second address. The field existed but only fired
+  where a finding also carried a `conflict`, which is the digitalsf case it was
+  written for. *`resolve_eas.py` now reports the second address on every
+  no-EAS-record decline, naming the parcel it lands on and leaving the
+  by-hand call to the reader. Put the source's other frontage in that field
+  whenever it states one.*
+
+- **`urllib` against npgallery.nps.gov runs at about three minutes a document
+  and `curl` at about one second.** Same host, same files, same machine: a
+  42-document batch that should take three minutes was on course for two hours
+  before the difference was measured. *On any bulk fetch, time one document with
+  `curl` before writing a Python fetch loop around `urllib.request`, and if the
+  gap is that size, shell out.*

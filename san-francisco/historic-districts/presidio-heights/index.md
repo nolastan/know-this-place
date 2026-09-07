@@ -12,7 +12,7 @@ The buildings documented here so far inside the Presidio Heights Historic Distri
 - [Locust Street](/san-francisco/presidio-heights/locust-street/) — 2 documented buildings inside the district.
 - [Pacific Avenue](/san-francisco/presidio-heights/pacific-avenue/) — 4 documented buildings inside the district.
 - [Walnut Street](/san-francisco/presidio-heights/walnut-street/) — 1 documented building inside the district.
-- [Washington Street](/san-francisco/presidio-heights/washington-street/) — 24 documented buildings inside the district.
+- [Washington Street](/san-francisco/presidio-heights/washington-street/) — 25 documented buildings inside the district.
 
 ## Buildings
 
@@ -73,6 +73,7 @@ The buildings documented here so far inside the Presidio Heights Historic Distri
 - [3760 Washington Street](/san-francisco/presidio-heights/washington-street/3760/) — A 1926 single-family house, with an addition permitted in 2018.
 - [3778 Washington Street](/san-francisco/presidio-heights/washington-street/3778/) — A 1950 single-family house, with reroofing permitted in 2004.
 - [3799 Washington Street](/san-francisco/presidio-heights/washington-street/3799/) — A 1927 single-family house, with garage work permitted in 2000.
+- [3800 Washington Street](/san-francisco/presidio-heights/washington-street/3800/) — A 1904 single-family house, with a kitchen remodel permitted in 2019.
 - [3820 Washington Street](/san-francisco/presidio-heights/washington-street/3820/) — A 1904 single-family house, with stair work permitted in 1997.
 - [3903 Washington Street](/san-francisco/presidio-heights/washington-street/3903/) — A 1922 single-family house, with foundation work permitted in 2018.
 - [3935 Washington Street](/san-francisco/presidio-heights/washington-street/3935/) — A 1927 single-family house, with facade work permitted in 2019.

@@ -9,6 +9,8 @@ The parcels on Vallejo Street documented here so far, from the city's address, a
 - [1750](1750/) — A 1931 40-unit apartment building, with a seismic retrofit permitted in 1995.
 - [1835](1835/) — A 1929 48-unit apartment building, with a kitchen and bathroom remodel permitted in 2023.
 - [1900](1900/) — A 1927 29-unit apartment building, with reroofing permitted in 2021.
+- [2121](2121/) — A 1900 single-family house, with foundation work permitted in 1993.
+- [2127](2127/) — A 1900 2-unit apartment building, with stair work permitted in 2013.
 - [2129](2129/) — A school building, with a seismic retrofit permitted in 2017.
 - [2375](2375/) — A 1900 single-family house, with one permit record from 1997.
 - [2400](2400/) — A 1906 single-family house, with garage work permitted in 2012.
