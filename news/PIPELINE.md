@@ -301,7 +301,7 @@ nothing else; the markup here is what to expect, not what to type:
   legitimate to go.
 - **A seeded page's own data may contradict the story that prompted it.** The
   roll described 2740 McAllister as a one-storey house built 1900 five years
-  after it was demolished. That is an `.unknowns` line, not something to
+  after it was demolished. That is an `unknowns` sentence, not something to
   quietly drop from either side. Keep such a note only while the page still
   shows the claim it contradicts — usually in the headline itself.
 - **The page is only half of it.** The same headline goes on the homepage's

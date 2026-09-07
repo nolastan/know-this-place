@@ -305,7 +305,7 @@ URL. Worked example:
     for this source that fires constantly: the roll gives 1900 for the Octagon
     House (1861), the Feusier Octagon House (1857), the Stadtmuller House
     (1880) and the Atherton House (1881). Each is recorded as a conflict in the
-    page's `.unknowns` rather than adjudicated, which is what the rule requires
+    page's `unknowns` rather than adjudicated, which is what the rule requires
     and also the honest reading — the assessor's 1900 is a placeholder, but
     saying so would be adjudicating.
   - **A "status index" lead can be a document source.** This was ranked first on

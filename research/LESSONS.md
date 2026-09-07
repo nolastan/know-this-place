@@ -509,7 +509,7 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   printed `"290 Lombard Street" against "None"` into eighteen resolution
   methods. Most conflicts are a source disagreeing with itself about a *date*
   or a *name*; those resolve normally and the disagreement is the page's
-  `.unknowns` to carry. The branch now runs only when a second address is
+  `unknowns` to carry. The branch now runs only when a second address is
   actually recorded.
 - **A page the generator will not render is a hand-authored page.** Publishing
   in bulk means calling `seed_pages.render_html` over pages the run did not
@@ -601,7 +601,7 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   A construction date published on those pages would describe a building that is
   gone. *Compare the assessor's year built with the source's on every finding,
   and where the roll year postdates the source, state both years and let the
-  page's `.unknowns` carry the disagreement — never assert a demolition the
+  page's `unknowns` carry the disagreement — never assert a demolition the
   source does not record.*
 - **Two surveys of the same buildings do not fit in one page.** The Transit
   Center survey area sits inside the Central SoMa survey area, which this repo
@@ -655,8 +655,9 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
 - **A note that only exists in `data.json` is not on the page.** Findings runs
   have been writing conflicts into an `unknowns` key since Market & Octavia, and
   `seed_pages.py`'s renderer never read it — the disagreements reached the repo
-  and stopped there. The renderer now states them above the "Not yet
-  documented" line. *When you invent a key, check that something renders it.*
+  and stopped there. The renderer reads it now, and since issue #118 states
+  them on the line closing the timeline. *When you invent a key, check that
+  something renders it.*
 - **The natural way to write up an inventory finding is the one thing the design
   contract forbids.** A source that says nothing about a building except that it
   is on a list invites the sentence "Picked out by a 2007 walking survey as a
@@ -907,7 +908,7 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   run it in reverse afterwards** — findings whose roll year falls *long after*
   the source's date are the ones on a parcel that has since been rebuilt, where
   "Designed by X" is a claim about a building that is no longer there. State
-  that disagreement in `.unknowns`; never adjudicate it, and never let it become
+  that disagreement in `unknowns`; never adjudicate it, and never let it become
   a silent assertion about the standing building.
 
 - **A publishing script is not idempotent unless you make it so.** A second run
@@ -967,7 +968,7 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   be replaced.** The Transit Center lesson said to compare the roll year with
   the source's on every finding; the unreinforced-masonry survey says how to
   read the answer. A roll year a few years off is a dating disagreement and
-  belongs in `.unknowns`. A roll year *decades* later — 1913 against 2022, 1907
+  belongs in `unknowns`. A roll year *decades* later — 1913 against 2022, 1907
   against 2001 — is not a disagreement at all: the building the source
   described is gone, and publishing its architect and date would describe
   something that does not exist. Seven of that survey's parcels were declined
@@ -1000,7 +1001,7 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   becomes a `completed_conflict` asserting a disagreement that does not exist, and the
   resolver cannot catch it because the address is perfectly good. Two findings were
   corrected after the publication review for this. *Before writing a year into
-  `building.completed` or `.unknowns`, ask what the sentence is dating.*
+  `building.completed` or `unknowns`, ask what the sentence is dating.*
 - **`--area-from-nhood` is a per-finding judgement, not a per-batch switch.**
   On a citywide theme the batch lands on six streets in six parts of the city,
   and the two rules disagree in both directions. The switch was right for
@@ -1173,7 +1174,7 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   like accuracy. It isn't: state it impersonally ("Identified in 2024 as
   eligible for local landmark, California Register or National Register
   designation") and let the Sources footer say who. The one place a source may
-  be named is `.unknowns`, where a disagreement cannot be stated without saying
+  be named is `unknowns`, where a disagreement cannot be stated without saying
   who disagrees — and there it needs its full name, not "the statement".
 
 - **The assessor's `year_built` of 1900 is a bucket, not a date, and a reverse
@@ -1669,7 +1670,7 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   batch tripped "predates the building the assessor says is on the parcel", and
   every one of them was the roll giving a flat 1900 for a Victorian the
   nomination dates to the 1850s–80s. *Record the disagreement in the page's
-  `.unknowns` and publish; do not reframe the fact as being about a demolished
+  `unknowns` and publish; do not reframe the fact as being about a demolished
   building on the strength of a 1900. The flag still earns its keep — in the
   same batch it caught 848 Kearny, where the roll's 2005 is real and the
   International Hotel is genuinely gone.*

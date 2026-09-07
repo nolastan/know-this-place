@@ -92,7 +92,7 @@ a street number, which is the whole constraint:
   reading, and never take a number from OCR alone if the page turns on it.
 - **A mention that predates the assessor's `year_property_built` is not proof
   the assessor is wrong** — the building may have been replaced. Record the
-  dated fact, name the disagreement in `.unknowns`, and don't adjudicate it
+  dated fact, name the disagreement in `unknowns`, and don't adjudicate it
   (the same rule as the Corbett Heights photographs).
 - **People.** These columns are full of names — householders in want-ads,
   the dead in funeral notices, tenants in fire reports. Per the root

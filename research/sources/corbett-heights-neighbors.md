@@ -39,7 +39,7 @@
   - **Photograph dates contradict the assessor.** The newsletter dates
     buildings from photographs; the assessor's `year_property_built` often
     disagrees, in both directions. Record both and name the conflict in the
-    page's `.unknowns` — never reconcile them silently.
+    page's `unknowns` — never reconcile them silently.
   - **Buildings were moved.** At least one (11 Mars, from Falcon Street) was
     relocated, so a construction date may belong to a different site.
   - **Living people.** Some issues are personal memoirs naming family
@@ -128,7 +128,7 @@
     17th instead. It also disagrees with itself on dates in passing: 1894 and
     1895 for the same grocery's opening, south-east and south-west for the
     same corner. **Read the later issues before publishing from an earlier
-    one**, and put the disagreement in `.unknowns` rather than choosing.
+    one**, and put the disagreement in `unknowns` rather than choosing.
   - **Hattie Street renumbered between 1905 and 1913–14, not in 1909.** The
     June 2026 issue prints the table: 7 → 17, 11 → 25–27, 15–15½ → 29–31,
     17 → 35. A pre-1913 Hattie number is a different building from the one

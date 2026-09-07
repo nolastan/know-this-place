@@ -449,7 +449,7 @@
     the California State Building, where this source disagrees with *itself* — 1922 in
     the State's own report, 1923 in its cultural resources chapter, 1926 in the Main
     Library and Courts Building reports. Each was declined as a duplicate and the
-    disagreement written into the page's `.unknowns` instead. **Two sources with two
+    disagreement written into the page's `unknowns` instead. **Two sources with two
     years is not a duplicate to drop silently.**
   - **The campus parcel's roll year is one building of many, so `--overlap`'s
     replacement-building warning fires on facts that are not about a replaced
@@ -676,7 +676,7 @@
   with two frontages seeds under the wrong street** unless the manifest row is checked
   against the roll's `property_location`; and **this source disagrees with the context
   statements, and with itself, about construction dates**, which put five conflicts into
-  five pages' `.unknowns` rather than five duplicate timeline rows on the pages.
+  five pages' `unknowns` rather than five duplicate timeline rows on the pages.
 
   **2026-09-05**, seventh run: the rest of the named single-site group — 36
   projects of 1979-2005 titled by project name, one document each — 141 findings, 102

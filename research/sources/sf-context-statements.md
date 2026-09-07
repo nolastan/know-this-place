@@ -53,7 +53,7 @@ document you are about to mine.
   and says so; 265 Union Street got through it that way and the assessor's own
   `property_location` — 287–289 Union — is what caught it.
 - **A statement contradicts itself often enough to plan for it.** State the
-  disagreement on the page's `.unknowns`; never adjudicate.
+  disagreement in the page's `unknowns`; never adjudicate.
 - **Condominium parcels take out a large slice of any Mission-area
   inventory** — 31 of the Market & Octavia addresses and 5 of the 18
   individually eligible Mission Dolores properties.
@@ -1076,7 +1076,7 @@ each other often enough that the disagreements are half the yield:
   - **Its dates run ahead of the assessor's, and the roll's 1900 is a
     placeholder.** Where the two disagree the page shows the roll in the
     `Built …` tag and the report's date as `building.completed`, with the
-    conflict named in `.unknowns`.
+    conflict named in `unknowns`.
   - **Condominium conversion has eaten a lot of this area.** Fifteen of the
     parcels the report names are now condominium APNs the roll gives 0 lot
     area, so AGENTS.md holds them back — including three of the buildings the
@@ -1104,7 +1104,7 @@ DPR 523B forms it cites in its own footnotes are still elsewhere.
     roll's 1900 is a placeholder.** Of the 60 parcels documented here, 23 carry
     a dated conflict. Where the two disagree the page shows the roll in the
     `Built …` tag and the survey's date as `building.completed`, with the
-    conflict named in `.unknowns`.
+    conflict named in `unknowns`.
   - **Its printed ranges do not always match a parcel.** "800-04 22nd Street"
     spans two parcels (800–802 and 804–806) and both pages say so; "760-790
     Tennessee" spans three; "1103-05 Tennessee" and "1105-07 Tennessee" are the
@@ -2087,7 +2087,7 @@ a twenty-one-page appendix of resident biographies.
   entirely for that reason. Take a number only where it reads cleanly or a
   second mention confirms it.
 - **It contradicts itself on addresses five times**, all recorded on the pages'
-  `.unknowns` and none adjudicated: the 1926 house is 2505-2507 Larkin twice and
+  `unknowns` and none adjudicated: the 1926 house is 2505-2507 Larkin twice and
   2507 Larkin three times; the 1904-1905 flats are 1257-1259 Lombard three times
   and 1257-1261 twice, and 1261 is the separate 1876 house behind them; the 1908
   flats are 1263-1267 Lombard three times and 1263-1267 *Larkin* once, and the
@@ -2219,7 +2219,7 @@ scattered through the prose rather than tabulated.
 - **Note 45 contradicts the sentence it is attached to.** The text calls the
   Lodge at 1300-1304 La Playa demolished; its own footnote says the building was
   converted to apartments, doubled in size before 1929, and still stands. Stated
-  on the page's `.unknowns`, unadjudicated.
+  on the page's `unknowns`, unadjudicated.
 - **Half the buildings this report calls extant have numbers EAS no longer
   carries.** 1315 48th Avenue ("extant—converted to a dwelling"), 4131 Kirkham
   ("extant but heavily remodeled") and 1534 Great Highway ("extant but heavily
@@ -2285,7 +2285,7 @@ tables. Four places carry them, and the citation locator should say which.
   later than 2008, the building the survey described is not the one standing.
   Three parcels here are in that state (645 Howard Street, 652 Mission Street,
   350 Mission Street); the honest treatment is to state both years and let the
-  page's `.unknowns` carry the disagreement, never to assert a demolition the
+  page's `unknowns` carry the disagreement, never to assert a demolition the
   report does not record.
 - **It contradicts itself often, and mostly about addresses.** The Marine
   Electric Company Building is 195-97 Fremont Street in the narrative and
@@ -3133,7 +3133,7 @@ next run.
   (4), `western-addition` (2), `south-of-market` (1) and `marina` (1) — the
   spread comes from the architect biographies, not the study area. Ten
   findings carry a conflict; the six on published findings are stated on their
-  pages' `.unknowns`, and nineteen construction dates disagree with the assessor
+  pages' `unknowns`, and nineteen construction dates disagree with the assessor
   in `building.completed_conflict`. None adjudicated.
   Not documented, and why: **the historical Larkin and Polk numbers** the report
   prints for demolished buildings are historical and were repointed at the
@@ -3188,7 +3188,7 @@ next run.
   `san-francisco/sunset-parkside/` and one under
   `san-francisco/west-of-twin-peaks/` (800 Taraval Street, a corner parcel the
   assessor addresses as 2399 18th Avenue). **One conflict is stated** in a
-  page's `.unknowns` — the 1920 deed conditions at 2516 23rd Avenue requiring a
+  page's `unknowns` — the 1920 deed conditions at 2516 23rd Avenue requiring a
   $2,500 house against a construction permit valuing it at $1,500 — and **49
   construction dates disagree with the assessor**, all in
   `building.completed_conflict` and none adjudicated; 41 of those are 1908
@@ -3236,7 +3236,7 @@ next run.
   Sunset west of 37th Avenue. **20 resolve to a parcel**, on 19 distinct parcels,
   and **all 20 are published on 19 new pages**, every one under
   `san-francisco/sunset-parkside/`. **One conflict is stated** in a page's
-  `.unknowns` — the Lodge at 1300-1304 La Playa, which the text calls demolished
+  `unknowns` — the Lodge at 1300-1304 La Playa, which the text calls demolished
   and its own footnote says still stands — and **three construction dates
   disagree with the assessor**, in `building.completed_conflict`, unadjudicated.
   **Twelve findings stay unresolved**: five have no EAS record (1315 48th Avenue,
@@ -3279,7 +3279,7 @@ next run.
   1854 house on Rincon Hill — 620 Folsom Street is a live address on a 1922
   office building today, so the lookup matches cleanly and means nothing. **17 construction dates disagree with the assessor** and are stated
   unadjudicated in `building.completed_conflict`; **8 more disagreements the
-  report has with itself** are in the pages' `.unknowns`. Never candidates, and
+  report has with itself** are in the pages' `unknowns`. Never candidates, and
   so not recorded: 10 parking-lot and vacant-parcel rows with no building and no
   date, the 42 rows the ratings table marks "(Demo)", four buildings the
   narrative gives only by corner, and four given a number but no date. What the
@@ -3368,7 +3368,7 @@ Cautions specific to it:
   territory in the text did not clearly cover the block.
 - **The statement disagrees with itself once**, on 1746 35th Avenue: 1941 in
   the model-home table, 1940 in the Colonial Revival caption. Stated on the
-  page's `.unknowns`, unadjudicated.
+  page's `unknowns`, unadjudicated.
 - **The builders' own houses are in scope and their buyers are not.** The
   document names six merchant builders' residences with directory date ranges,
   which the root AGENTS.md permits as individuals from the historical record.
@@ -3395,7 +3395,7 @@ Cautions specific to it:
   one construction date disagrees with the assessor — 320 Judah, dated 1932
   here and 1940 on the roll, which is the addition year. Four occupancy facts
   sit on parcels the roll dates after the fact (1500 Judah 1959, 948 Taraval
-  1956, 200 Casitas 1953, 2049 Irving 1950); each says so in `.unknowns` rather
+  1956, 200 Casitas 1953, 2049 Irving 1950); each says so in `unknowns` rather
   than pretending the building is the same one. Never candidates, and so not
   recorded: about twenty block-level references with no street number, and
   eight addresses that appear only as a private person's home. What it taught,
@@ -3607,7 +3607,7 @@ architect or builder, a style, or all three.
   publication review for exactly this — 2215 Irving Street and the Graysons store at
   160-170 West Portal Avenue, where a Gruen & Krummeck shopfront of about 1943 was first
   recorded as the building's construction. *Ask what the sentence dates before writing a
-  year into `building.completed` or a conflict into `.unknowns`.*
+  year into `building.completed` or a conflict into `unknowns`.*
 - **Five of its addresses are on parcels rebuilt since.** The roll dates the buildings at
   770 McAllister to 1974, 2750 19th Street to 2023, 1306 Fulton to 1989, 2034 Clement to
   2017 and 5620 Geary to 1994 — so the 1940s shopfront makers and the 1942 Sherry's store
@@ -3722,7 +3722,7 @@ themselves, nearly every one carries an architect, a build year or both.
   harder case: the Russian Hill statement names Meussdorffer as the architect of the
   Lafayette Apartments and calls it Classical Revival, while this statement says the
   architect is unknown and the style Beaux-Arts. Both readings are on the page's
-  `.unknowns`, unadjudicated. 1400 Geary Boulevard is a third: Brutalist in the 2009
+  `unknowns`, unadjudicated. 1400 Geary Boulevard is a third: Brutalist in the 2009
   Japantown survey, Late Modern here.
 - **A large development with no street number is the single biggest category of loss, and
   it is not counted anywhere.** Parkmerced, Stonestown, Golden Gateway, Diamond Heights
@@ -3966,7 +3966,7 @@ architectural period, so its buildings are scattered from Seacliff to Bayview.
 - **It disagrees with a sibling statement about a name.** 557–561 Castro Street
   is the Hecker Garage in the 2017 Eureka Valley statement and the Meeker Garage
   here, with the design credited to Charles V. Hecker. Both are on the page's
-  `.unknowns`; neither was adjudicated.
+  `unknowns`; neither was adjudicated.
 - **Verified:** 2026-08-29 (Unreinforced masonry survey, appendix table: read all
   **51 pages** of "UMBs and Historic Ratings by Study Area" — every row of all
   eleven study areas, from Downtown (347 rows) and NoMa/Civic Center (310) to the
@@ -4243,7 +4243,7 @@ and they sit in three places, in ascending order of quality.
     `check.py --overlap` before publishing.**
   - **The statement gives the Club Turkish Baths / Bulldog Baths two addresses**
     — 132 Turk Street (p. 85) and 182 Turk Street (p. 88) — and they are
-    different parcels. Both pages carry the disagreement in `.unknowns`.
+    different parcels. Both pages carry the disagreement in `unknowns`.
   - **Buildings it calls not extant are numerous** and were not made into
     findings, with two exceptions: 330 Grove Street and 399 4th Street, whose
     *sites* the evaluation framework names as potentially significant for
@@ -4435,7 +4435,7 @@ entry above; fetch the REST content path. Printed page = PDF page.
   (1882 in the list and the caption, 1878 in the Carpenter Gothic narrative) and
   the Old Mint at 88 Fifth Street (1874 in the list and the Fig. 1 caption,
   circa 1869 in the Greek Revival statement of significance). All three are
-  stated on the pages' `.unknowns`, unadjudicated. **The Nightengale House is
+  stated on the pages' `unknowns`, unadjudicated. **The Nightengale House is
   the useful one: the roll says 1878, agreeing with the narrative against the
   landmark list** — the reverse of the Progressive Era pattern, where the
   caption was the roll leaking in. So the caption-versus-narrative split does
@@ -4692,7 +4692,7 @@ above; fetch the REST content path. Printed page = PDF page.
   right — the decline is a record that they were looked at.*
 - **It contradicts itself once,** about the Feusier Octagon House at 1067 Green
   Street: the narrative says 1856, the caption to Fig. 35 says 1858. Stated on
-  the page's `.unknowns`, unadjudicated.
+  the page's `unknowns`, unadjudicated.
 - **The Bayview Opera House is here under its old address.** The statement
   gives 1601 Newcomb Avenue, which EAS no longer holds; the city addresses the
   building 4701-4705 Third Street, and this repo's page already carried 1601
@@ -4725,7 +4725,7 @@ above; fetch the REST content path. Printed page = PDF page.
   a parcel that has no roll row and so cannot have a page. Two never reached a
   parcel: 200-202 Fair Oaks, a condominium, and the Harrison Street block face
   with no street number. Four dating disagreements with the assessor are stated
-  on pages and one internal contradiction on `.unknowns`. Coverage note: this
+  on pages and one internal contradiction on `unknowns`. Coverage note: this
   document is read in full and nothing in it is outstanding. It names four
   sibling documents as related SF Survey themes — The 1906 Earthquake &
   Reconstruction, Early Residential Development (1848-1880), Streetcar
@@ -4861,7 +4861,7 @@ and the figure captions add perhaps a tenth as much.
   published findings have a roll year *more than fifteen years after* the
   source's date — the fact is about a building that no longer stands on the
   parcel. Three the volume already calls demolished. The other thirteen were
-  published with the disagreement stated in `.unknowns`, never adjudicated,
+  published with the disagreement stated in `unknowns`, never adjudicated,
   because "Designed by X" on a page whose building went up forty years later is
   a claim the source does not make. **This check is cheap and it is the one that
   catches a wrong page.**
@@ -5078,7 +5078,7 @@ and the figure captions add perhaps a tenth as much.
   Zanolini in 1916 in V–Z. 2701 Van Ness Avenue is Herman C. Baumann in 1929 in
   an earlier volume and Douglas D. Stone in 1930 in S–U. 2166 32nd Avenue is the
   Golden Gate Investment Company in one volume and Samuel Young with Charles O.
-  Clausen in another. All four were stated in the page's `.unknowns` and none
+  Clausen in another. All four were stated in the page's `unknowns` and none
   adjudicated. *Eight volumes written entry by entry will disagree with each
   other; the disagreement is the page's to carry.*
 - **An entry's undated list is a decline list.** Enid Sales's fourteen Western
@@ -5128,7 +5128,7 @@ and the figure captions add perhaps a tenth as much.
   (Lansburgh 1908 vs Pissis 1896) and Temple Emanu-El, which now carries
   Bakewell, Lansburgh and Maybeck from three different volumes. Each was
   published as a short "also credited to…" entry with the disagreement stated in
-  `.unknowns`, never adjudicated. **The Van Ness auto showroom is the collection
+  `unknowns`, never adjudicated. **The Van Ness auto showroom is the collection
   disagreeing with itself in one run:** Maybeck's entry dates it 1926 and Powers
   and Ahnden's 1927, for the same building.
 - **An undated piece of *work* now has nowhere to go, and that is a decline.**
@@ -5556,7 +5556,7 @@ appendices restart their own numbering.
   Cowell House, the Darling House, 2870 Pacific Avenue, 3095 Pacific Avenue),
   and occasionally with two architects. **Read the appendices against the
   narrative before writing a year to a page**, and put the disagreement in
-  `.unknowns` rather than choosing.
+  `unknowns` rather than choosing.
 - **Its overlap is with the architect biographies, not with a neighbourhood
   survey.** The `architecture-preservation-professionals-biographies` collection
   covers many of the same practitioners, and where both name the same architect

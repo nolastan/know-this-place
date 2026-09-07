@@ -1231,7 +1231,7 @@ def decide(city: City, f: dict, today: str) -> dict:
     # A `conflict` is only this branch's business when the record states a
     # second address to compare. Findings whose conflict is a date or a name —
     # a survey that dates the same building twice — resolve normally; the
-    # disagreement is the page's `.unknowns` to carry, not the resolver's.
+    # disagreement is the page's `unknowns` to carry, not the resolver's.
     address_conflict = bool(f.get("conflict")) and note_addr is not None
     note_hit = None
     if address_conflict:

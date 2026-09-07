@@ -158,7 +158,7 @@ someone else's reporting.
 - **Enriching an existing page is editing someone else's work.** Fill a field
   that is empty; do not revise one a person or another source already filled.
   An article that contradicts a field already on the page is an `unknowns`
-  line, not an edit.
+  sentence, not an edit.
 - **One event, one entry, and the entry it collides with is usually already
   published.** Two outlets on one morning is the easy case; a filing written up
   again a week later is the one that gets through, because the earlier entry

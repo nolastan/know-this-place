@@ -189,7 +189,7 @@ are [REFERENCE.md → Writing pages](REFERENCE.md#writing-pages--the-examples).
 
 - **Prose is the last resort.** Write a sentence only when no other element can
   carry it — a tag, a stat tile, a spec row, a timeline entry, a chart, the
-  `.unknowns` block, or the Sources footer. Name the component that could hold
+  line that closes the timeline, or the Sources footer. Name the component that could hold
   it instead; if one can, use it and delete the sentence. A page finished with
   no prose at all is a good page, not a thin one.
 - **Show data, don't narrate it.** Numbers go in stat tiles, dated facts on the
@@ -213,8 +213,9 @@ are [REFERENCE.md → Writing pages](REFERENCE.md#writing-pages--the-examples).
 - **Nothing introduces the timeline** — no heading over it, and no paragraph
   counting the permits or characterizing them. The rail *is* the record.
 - **No editorial voice, and no interpretation.** State facts; don't
-  characterize them or explain what a figure means. Undocumented gaps go
-  plainly in `.unknowns`.
+  characterize them or explain what a figure means. A page does not list what
+  it fails to document; a *disagreement* between sources is stated plainly, and
+  it goes in `unknowns`, which renders on the line closing the timeline.
 - **No cross-page superlatives.** Never rank a building against the site, the
   neighborhood or the street — those are claims about *coverage*, they go stale
   silently, and a reader can't verify them.

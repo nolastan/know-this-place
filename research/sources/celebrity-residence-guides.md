@@ -46,7 +46,7 @@
   alluding to **current** residents, publicly available or not. These guides
   routinely name people who still live at the address, often in the present
   tense ("when he's in town"). **Omit any claim phrased as present or
-  ongoing occupancy**, and record the omission in the page's `.unknowns`
+  ongoing occupancy**, and record the omission in the page's `unknowns`
   without naming anyone. Only past residency — dated, or stated in the past
   tense about someone who has plainly moved on or died — may be named.
 - **Citation label:** name the guide and its title, and link the page.
@@ -54,4 +54,4 @@
   2026-07-23 pass — 26 San Francisco addresses listed, all but one resolve in
   EAS. Every address it names now has its claim on the page, except the two
   where the guide's claim is present-tense occupancy and the omission is
-  recorded in `.unknowns` instead.)
+  recorded in `unknowns` instead.)

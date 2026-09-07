@@ -1199,7 +1199,7 @@ records carry one; exactly one of those also carries a street number.
 
   **The roll dates the building later than the photograph on 57 pages**, the
   same finding SFP 23 reported on 45. Each carries the SFP 23 wording in
-  `.unknowns` — "The assessor dates the building to 1988, after this photograph
+  `unknowns` — "The assessor dates the building to 1988, after this photograph
   was taken" — so a Built tag does not sit unexplained beside an older
   photograph.
 
@@ -1276,7 +1276,7 @@ records carry one; exactly one of those also carries a street number.
   and seven new neighborhood directories with them. Each fact is one
   `historical_record` entry on the page's single timeline, cited to the record's
   own `524$a`; the circa dates publish the archivist's phrase and the 14
-  conflicts went into `.unknowns` unadjudicated. Learned two things worth
+  conflicts went into `unknowns` unadjudicated. Learned two things worth
   carrying to the next collection. **EAS's stale `parcel_number` bites the
   publisher as well as the resolver** — 15 of the 723 parcels are filed in EAS
   under a retired APN, so a manifest built by looking EAS up on the active
