@@ -2013,13 +2013,15 @@ def glance_panel_html(rec: dict, indent: str) -> str:
         rows.append(("ic-value", "Assessed fixtures", f"${a['assessed_fixtures_value']:,}"))
     if a.get("last_sale_date"):
         rows.append(("ic-value", "Last sale", long_date(a["last_sale_date"])))
-    hs = rec.get("historic_status") or {}
-    code = (hs.get("ceqa_status_code") or "").strip()
-    if code:
-        rows.append(("ic-permit", "Historic status", f"CEQA {code} — {CEQA_LABEL.get(code, '')}"))
-    # The tag in the hero says the building is an Article 10 landmark; this
-    # says which one. Name and ordinance number are the designation's own
-    # identifiers, and neither is anywhere else on the page.
+    # No historic status row: the hero tag already states it in words, and the
+    # row's only addition is the raw CEQA code letter — a citation, which means
+    # nothing to a reader on its own. Same reasoning as the district panel's
+    # article number. The code stays in data.json; it just isn't printed.
+    #
+    # `city_landmark` is the exception, and for the same reason the status row
+    # is gone: the hero tag says the building is an Article 10 landmark, and
+    # this says *which* one. The name and the ordinance number are the
+    # designation's own identifiers, and neither is anywhere else on the page.
     cl = rec.get("city_landmark") or {}
     if cl.get("name"):
         num = cl.get("number")
