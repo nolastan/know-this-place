@@ -14,7 +14,7 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Ashbury Heights Historic District](ashbury-heights/) — Eligible for the California Register, significant 1890–1912; 5 buildings documented on 2 streets.
 - [Baker Street Historic District](baker-street/) — Eligible for the California Register, significant 1926–1940; 10 buildings documented on 2 streets.
 - [Bluxome Townsend Historic District](bluxome-townsend/) — Eligible for the California and National Registers, significant 1912–1936; 8 buildings documented on 3 streets.
-- [Buena Vista North Historic District](buena-vista-north/) — Eligible for the California Register, significant 1870–1915; 21 buildings documented on 7 streets.
+- [Buena Vista North Historic District](buena-vista-north/) — Eligible for the California Register, significant 1870–1915; 23 buildings documented on 7 streets.
 - [Capp and Howard Streets Mid-Block Fire Line Historic District](capp-and-howard-streets-mid-block-fire-line/) — Eligible for the California and National Registers, significant 1865–1909; 5 buildings documented on 2 streets.
 - [Castro & Liberty Streets Historic District](castro-and-liberty-streets/) — Eligible for the California Register, significant 1897–1906; 47 buildings documented on 3 streets.
 - [Chinatown Historic District](chinatown/) — Eligible for the California and National Registers, significant 1906–1930/1938; 235 buildings documented on 29 streets.

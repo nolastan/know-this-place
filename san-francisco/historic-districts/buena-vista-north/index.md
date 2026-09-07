@@ -7,7 +7,7 @@ The buildings documented here so far inside the Buena Vista North Historic Distr
 - [Broderick Street](/san-francisco/haight-ashbury/broderick-street/) — 1 documented building inside the district.
 - [Divisadero Street](/san-francisco/haight-ashbury/divisadero-street/) — 5 documented buildings inside the district.
 - [Haight Street](/san-francisco/haight-ashbury/haight-street/) — 4 documented buildings inside the district.
-- [Lyon Street](/san-francisco/haight-ashbury/lyon-street/) — 1 documented building inside the district.
+- [Lyon Street](/san-francisco/haight-ashbury/lyon-street/) — 3 documented buildings inside the district.
 - [Oak Street, Haight Ashbury](/san-francisco/haight-ashbury/oak-street/) — 4 documented buildings inside the district.
 - [Oak Street, Hayes Valley](/san-francisco/hayes-valley/oak-street/) — 2 documented buildings inside the district.
 - [Page Street](/san-francisco/haight-ashbury/page-street/) — 4 documented buildings inside the district.
@@ -25,6 +25,8 @@ The buildings documented here so far inside the Buena Vista North Historic Distr
 - [1128 Haight Street](/san-francisco/haight-ashbury/haight-street/1128/) — An 1890 building, with window replacement permitted in 2022.
 - [1250 Haight Street](/san-francisco/haight-ashbury/haight-street/1250/) — A 1914 40-unit apartment building, with reroofing permitted in 2020.
 - [10 Lyon Street](/san-francisco/haight-ashbury/lyon-street/10/) — A 1900 18-unit apartment building, with foundation work permitted in 2012.
+- [112 Lyon Street](/san-francisco/haight-ashbury/lyon-street/112/) — An 1900 house, the guide's alternative Joplin address, with a rear addition tried three times.
+- [122 Lyon Street](/san-francisco/haight-ashbury/lyon-street/122/) — A five-apartment 1900 building facing the Panhandle; the best-supported of three Joplin addresses.
 - [1111 Oak Street](/san-francisco/haight-ashbury/oak-street/1111/) — An 1875 office building, with reroofing permitted in 2021.
 - [1153 Oak Street](/san-francisco/haight-ashbury/oak-street/1153/) — An 1885 office building, with dry-rot repair permitted in 1998.
 - [1321 Oak Street](/san-francisco/haight-ashbury/oak-street/1321/) — A 1906 church, with reroofing permitted in 2000.

@@ -1285,6 +1285,15 @@ def meta_description(rec: dict) -> str:
 def tags_html(rec: dict) -> str:
     p = rec.get("parcel", {})
     out = []
+    # The name the city's survey files this building under, where a page
+    # records one — identity, and the first thing to say. Deliberately the
+    # top-level key only: `historic_status.survey_name` carries a name on
+    # 1,795 seeded pages that have never shown one, and putting a tag on all
+    # of them is a decision about the corpus, not a renderer gap. Flagged on
+    # issue #145 for a human.
+    named = rec.get("survey_name") or rec.get("planning_name")
+    if named:
+        out.append(("ic-pin", named))
     # No year built here: it is a dated fact, so it opens the timeline instead
     # (see `built_item`).
     out.append(("ic-home", building_type(p.get("property_class"), p.get("units"))))
@@ -1350,7 +1359,10 @@ def permit_items(rec: dict, indent: str) -> tuple:
     permits = rec.get("permits", [])
     # Pages written before `permit_summary` existed still carry their nominal
     # $1 street-space filings in `permits`; drop those here as before.
-    note = (rec.get("permit_summary") or {}).get("note")
+    # `permits_note` is the same sentence under an older spelling, on the 18
+    # pages that were hand-written before the seeder had a key for it. One
+    # slot, either spelling — issue #148 settles which one survives.
+    note = (rec.get("permit_summary") or {}).get("note") or rec.get("permits_note")
     shown, omitted = [], 0
     for p in permits:
         cost = p.get("estimated_cost") or p.get("revised_cost") or 0
@@ -1403,6 +1415,9 @@ DEMOLITION = re.compile(r"\bdemoli", re.I)
 PARTIAL_DEMOLITION = re.compile(r"interior|non-? ?structural|partition|\bshed\b|partial", re.I)
 
 
+BUILT_EVENT = re.compile(r"\b(built|completed)\b", re.I)
+
+
 def built_item(rec: dict, indent: str) -> list:
     """The assessor's year built, as the entry the rest of the timeline hangs off.
 
@@ -1422,6 +1437,18 @@ def built_item(rec: dict, indent: str) -> list:
     """
     year = (rec.get("parcel") or {}).get("year_built")
     if not year:
+        return []
+    # A source that says the building was finished, in the year the assessor
+    # gives, has already opened the rail — and it says more than "Built." does,
+    # naming the contractor who finished it. Stand down rather than print the
+    # same year twice, the way the "Completed" spec row already does when it
+    # matches the roll. Three of the 39 `building_history` events match; the
+    # test is deliberately the completion words and the year together, so an
+    # event that merely shares the year ("Lot created by subdividing the Cassin
+    # parcel", 1953) leaves the entry standing.
+    if any(date_key(e["date"])[0] == int(year)
+           and BUILT_EVENT.search(e["description"] or "")
+           for e in building_history_entries(rec)):
         return []
     replaced = any(
         date_key(p.get("filed"))[0] < int(year)
@@ -1499,8 +1526,13 @@ def timeline_html(rec: dict, indent: str) -> str:
     # 20 pages, and the old block printed it twice. One line makes the repeat
     # obvious, so drop it here rather than reconciling the two keys.
     said, seen = [], set()
-    for t in [disclosure, *dating_conflicts(rec), *(rec.get("unknowns") or [])]:
-        t = str(t).strip()
+    # `open_questions` and `building_history.conflict` are `unknowns` under
+    # other spellings, on one page and five: a disagreement in the record,
+    # stated and left unadjudicated. Same slot, same line.
+    for t in [disclosure, *dating_conflicts(rec),
+              (rec.get("building_history") or {}).get("conflict"),
+              *(rec.get("unknowns") or []), *(rec.get("open_questions") or [])]:
+        t = str(t).strip() if t else ""
         if t and t not in seen:
             seen.add(t)
             said.append(t)
@@ -1570,6 +1602,33 @@ def narrative_html(rec: dict, indent: str) -> tuple:
     return lead, "\n".join(out)
 
 
+def building_history_entries(rec: dict) -> list:
+    """`building_history.events` in `historical_record` shape.
+
+    Seventeen Corbett Heights pages record their dated history under
+    `building_history` — one source for the block, then a list of
+    `{date, event}` — where the rest of the corpus writes
+    `historical_record`'s `{date, description, source}`. It is the same kind
+    of fact in the same slot, so it renders through the same timeline block
+    rather than opening a second rail; issue #148 settles the spelling.
+
+    `approximate` is this key's way of writing the hedge `historical_record`
+    puts in the date string itself ("circa 1899"), so it becomes one. All
+    seven events carrying it give a bare year, which is the only form a "c."
+    prefix reads correctly on.
+    """
+    bh = rec.get("building_history") or {}
+    out = []
+    for e in bh.get("events") or []:
+        when = str(e.get("date") or "").strip()
+        if e.get("approximate") and re.fullmatch(r"\d{4}", when):
+            when = f"c. {when}"
+        out.append({"date": when,
+                    "description": e.get("event") or "",
+                    "source": e.get("source") or bh.get("source")})
+    return out
+
+
 def historical_items(rec: dict, indent: str) -> list:
     """`historical_record` as `(date_key, html)` items for the page's timeline.
 
@@ -1585,7 +1644,7 @@ def historical_items(rec: dict, indent: str) -> list:
     with the address it was filed under. Never one item per record: a reader
     scanning the rail should not meet the same date twice.
     """
-    entries = rec.get("historical_record") or []
+    entries = (rec.get("historical_record") or []) + building_history_entries(rec)
     if not entries:
         return []
     # `label` is the short form a timeline entry cites; the full citation is in
@@ -1815,10 +1874,70 @@ def public_art_html(rec: dict, indent: str) -> str:
             + f'\n{indent}</ul>\n')
 
 
+def with_note(value, note) -> str | None:
+    """A spec row's value and the sentence qualifying it, in one row.
+
+    `building_history` records "an architect was engaged, not named" and "the
+    same contractor also built 100-102 Corbett Avenue" as `architect_note` and
+    `contractor_note` beside the field they qualify — sometimes instead of it,
+    where the record names no one. Neither is a fact that earns a label of its
+    own, and neither is a disagreement, so neither belongs on the line closing
+    the timeline: they ride in the row they qualify, or become it.
+    """
+    parts = [str(x).strip() for x in (value, note) if x]
+    return " — ".join(parts) or None
+
+
+def narrative_text(rec: dict) -> str:
+    """Every word of the page's own prose, run together.
+
+    Used to ask whether a structured fact is already stated in a sentence, so
+    the block carrying it can stand down rather than say it twice.
+    """
+    n = rec.get("narrative") or {}
+    bits = [n.get("lead") or "", n.get("community_note") or ""]
+    for sec in n.get("sections") or []:
+        bits += [sec.get("heading") or "", sec.get("body") or ""]
+    return " ".join(bits)
+
+
+def residents_panel_html(rec: dict, indent: str) -> str:
+    """`notable_residents` — documented past residents, one spec row each.
+
+    The name is the row's key and the period its value; a claim the source
+    gives no dates for says so rather than leaving the row half empty. The
+    `detail` behind each claim is not repeated here — the Sources footer
+    carries the citation, and a page with more to say says it in `narrative`.
+
+    Which is why a resident the page's own prose already names is skipped.
+    Seventeen of the eighteen pages carrying this key were written before the
+    panel existed and put the person in their `lead`; rendering both would
+    state the fact twice, which the page contract forbids. Only 737 Buena
+    Vista Avenue West, whose lead names nobody, has a panel to render — and
+    the check was run over all eighteen to confirm the split is that clean.
+    """
+    prose = narrative_text(rec)
+    rows = [r for r in (rec.get("notable_residents") or [])
+            if r.get("name") and r["name"] not in prose]
+    if not rows:
+        return ""
+    body = "\n".join(
+        f'{indent}    <div class="spec"><span class="ic ic-home"></span>'
+        f'<span class="spec-k">{esc(r["name"])}</span>'
+        f'<span class="spec-v">{esc(r.get("period") or "Undated")}</span></div>'
+        for r in rows)
+    return (f'{indent}<section class="panel">\n'
+            f'{indent}  <h3>Notable residents</h3>\n'
+            f'{indent}  <dl class="speclist">\n{body}\n{indent}  </dl>\n'
+            f'{indent}</section>\n')
+
+
 def glance_panel_html(rec: dict, indent: str) -> str:
+    title = page_title(rec)
     p = rec.get("parcel", {})
     a = rec.get("assessment", {})
     b = rec.get("building") or {}
+    bh = rec.get("building_history") or {}
     rows = []
     # Researched identity: the name the building goes by, who designed it, who
     # built it. Single facts, so spec rows — never a paragraph each.
@@ -1830,15 +1949,31 @@ def glance_panel_html(rec: dict, indent: str) -> str:
         completed = None
     for icon, key, val in (("ic-home", "Known as", b.get("name")),
                            ("ic-home", "Formerly", b.get("former_name")),
-                           ("ic-ruler", "Architect", b.get("architect")),
+                           ("ic-ruler", "Architect",
+                            with_note(b.get("architect") or bh.get("architect"),
+                                      bh.get("architect_note"))),
                            # A named builder with no named architect is the
                            # normal case for a 19th-century workers' cottage —
                            # the carpenter who put it up is who the record has.
-                           ("ic-ruler", "Builder", b.get("builder")),
+                           # `building_history.contractor` is the same person
+                           # under the word the permit record uses.
+                           ("ic-ruler", "Builder",
+                            with_note(b.get("builder") or bh.get("contractor"),
+                                      bh.get("contractor_note"))),
                            ("ic-plan", "Developer", b.get("developer")),
-                           ("ic-calendar", "Completed", completed)):
+                           ("ic-calendar", "Completed", completed),
+                           ("ic-calendar", "First owner", bh.get("first_owner")),
+                           # A house that arrived on a lorry: where it stood
+                           # before is identity, not a dated event — the move
+                           # itself is already an entry on the rail.
+                           ("ic-pin", "Moved from", bh.get("relocated_from"))):
         if val:
             rows.append((icon, key, val))
+    # The cost the builder gave when the work was permitted. Two spellings,
+    # one figure; it is not the assessed value and never enters the chart.
+    build_cost = bh.get("estimated_cost_usd") or bh.get("build_cost_usd")
+    if build_cost:
+        rows.append(("ic-value", "Cost when built", f"${int(build_cost):,}"))
     ctype = CONSTRUCTION.get(p.get("construction_type_code"))
     if ctype:
         rows.append(("ic-plan", "Construction", ctype))
@@ -1849,9 +1984,25 @@ def glance_panel_html(rec: dict, indent: str) -> str:
         # strings, and a bare join dies on the first int.
         rows.append(("ic-home", "Street numbers",
                      ", ".join(str(n) for n in rec["street_numbers_on_parcel"])))
-    if rec.get("also_addressed"):
+    # Three spellings of one list: `also_addressed` is the seeder's,
+    # `aliases` and `also_known_as` are what four hand-written pages used
+    # before it existed. Every value is another address this parcel answers
+    # to, so they share the row rather than each earning a label.
+    also = list(rec.get("also_addressed") or []) + list(rec.get("aliases") or [])
+    if rec.get("also_known_as"):
+        also.append(rec["also_known_as"])
+    if also:
         rows.append(("ic-pin", "Also addressed",
-                     ", ".join(alias_display(x) for x in rec["also_addressed"])))
+                     ", ".join(alias_display(x) for x in also)))
+    stair = rec.get("adjoining_public_stair") or {}
+    if stair.get("name"):
+        # A public stair running up the side of the parcel is the building's
+        # own fact, and what it is worth saying is where it goes — which is
+        # the street at its far end, not the one this page is already on.
+        far = [x for x in (stair.get("connects") or [])
+               if x.lower() not in title.lower()]
+        rows.append(("ic-pin", "Adjoining stair",
+                     ", to ".join([stair["name"], *far[:1]])))
     # Only when the building-type tag doesn't already carry the count
     # ("12-unit apartment building", "Two-flat") — never state a fact twice.
     units = p.get("units")
@@ -1866,6 +2017,16 @@ def glance_panel_html(rec: dict, indent: str) -> str:
     # row's only addition is the raw CEQA code letter — a citation, which means
     # nothing to a reader on its own. Same reasoning as the district panel's
     # article number. The code stays in data.json; it just isn't printed.
+    #
+    # `city_landmark` is the exception, and for the same reason the status row
+    # is gone: the hero tag says the building is an Article 10 landmark, and
+    # this says *which* one. The name and the ordinance number are the
+    # designation's own identifiers, and neither is anywhere else on the page.
+    cl = rec.get("city_landmark") or {}
+    if cl.get("name"):
+        num = cl.get("number")
+        rows.append(("ic-check", "City landmark",
+                     f"{cl['name']} — No. {num}" if num else cl["name"]))
     if not rec.get("permits"):
         rows.append(("ic-clock", "Permits on file", "None"))
     if not rows:
@@ -2088,7 +2249,7 @@ def district_panel_html(rec: dict, indent: str) -> str:
     # Overlapping districts have no home in the headline — a second district
     # would want a second name at the same size. They trail the panel as a
     # note until the layout has an answer for them.
-    for other in rec.get("also_in_districts", []):
+    for other in overlapping_districts(rec):
         out.append(f'{indent}  <p class="district-also">Also within '
                    f'{district_link(rec, other["name"], other["name"])}</p>')
     out.append(f'{indent}</section>')
@@ -2173,10 +2334,17 @@ def sources_html(rec: dict) -> str:
     A source need not have a URL. Two pages cite a printed journal article read
     off paper, and a citation with nowhere to link is still a citation — it just
     prints without the link rather than crashing the render.
+
+    `cites` names the passage or item within a source that the page rests on —
+    which photograph in a newsletter, which entry in a directory. Forty-two
+    sources across thirty-four pages carry one, and without it their footer
+    line cites a whole newsletter for a fact found in one paragraph of it.
     """
     items = []
     for s in rec.get("sources", []):
         name = SOURCE_FOOTER_NAME.get(s["id"], lambda n: n)(s["name"]).replace(" — ", ", ")
+        if s.get("cites"):
+            name = f'{name}, citing {s["cites"]}'
         retrieved = s.get("retrieved")
         if s.get("query") and retrieved:
             tail = (f'\n        <a href="{esca(s["query"])}">'
@@ -2275,7 +2443,7 @@ def render_html(rec: dict) -> str:
     # there. Only a page that is nothing but panels stacks them full width.
     has_panels = bool(value_panel_html(rec, "") or glance_panel_html(rec, "")
                       or district_panel_html(rec, "") or open_space_panel_html(rec, "")
-                      or survey_panel_html(rec, ""))
+                      or survey_panel_html(rec, "") or residents_panel_html(rec, ""))
     # A rail holding nothing but the building's own year is not a column: it
     # would put one dot beside a full stack of panels. Those pages keep
     # stacking full width, as they did when the year was a tag in the hero.
@@ -2284,8 +2452,8 @@ def render_html(rec: dict) -> str:
     use_cols = has_panels and has_main
     ind = "      " if use_cols else "  "
     panels = (open_space_panel_html(rec, ind) + value_panel_html(rec, ind)
-              + glance_panel_html(rec, ind) + survey_panel_html(rec, ind)
-              + district_panel_html(rec, ind))
+              + glance_panel_html(rec, ind) + residents_panel_html(rec, ind)
+              + survey_panel_html(rec, ind) + district_panel_html(rec, ind))
     art = public_art_html(rec, ind)
     timeline = timeline_html(rec, ind)
     lead_html, sections = narrative_html(rec, ind)
@@ -2594,11 +2762,28 @@ def district_of(rec: dict) -> dict:
     """The page's historic district, whichever shape it's recorded in.
 
     Generated pages put it at the top level; some earlier hand-authored pages
-    nest it under `historic_status.district`.
+    nest it under `historic_status.district`, and two put every district the
+    parcel stands in — the panel's and the overlaps both — in one
+    `historic_districts` list, whose first entry is the one the panel names.
     """
     return (rec.get("historic_district")
             or (rec.get("historic_status") or {}).get("district")
+            or next(iter(rec.get("historic_districts") or []), None)
             or {})
+
+
+def overlapping_districts(rec: dict) -> list:
+    """The districts this parcel stands in beyond the one the panel names.
+
+    `historic_districts` is one list of all of them, so its overlaps are
+    everything after the entry `district_of` took; `also_in_districts` is the
+    seeder's spelling and holds only the overlaps to begin with.
+    """
+    if rec.get("also_in_districts"):
+        return rec["also_in_districts"]
+    if rec.get("historic_district") or (rec.get("historic_status") or {}).get("district"):
+        return []
+    return (rec.get("historic_districts") or [])[1:]
 
 
 def range_label(address_range) -> str:
