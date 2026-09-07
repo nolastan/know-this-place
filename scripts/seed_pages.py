@@ -1384,7 +1384,16 @@ def permit_items(rec: dict, indent: str) -> tuple:
         css, icon, word, muted = PILL.get(p.get("status", ""),
                                           ("pill-warn", "ic-clock",
                                            (p.get("status") or "Filed").capitalize(), False))
-        desc = clean_description(p.get("description")) or \
+        # `description` is DBI's own words and stays that way — it is what the
+        # `sf-building-permits` citation vouches for, and the redaction pass
+        # and the unit-generalizer both read it. `description_edited` is the
+        # sentence a person wrote after reading the filing against the rest of
+        # the record, and it carries what the raw text cannot: that this was
+        # the only part of a project ever carried through, that the matching
+        # filing for the next flat was cancelled. Where it exists it wins;
+        # `clean_description` is the mechanical fallback, not the editor.
+        desc = p.get("description_edited") or \
+            clean_description(p.get("description")) or \
             f"{(p.get('type') or 'Permit').capitalize()}."
         cost = p.get("estimated_cost")
         if cost in (None, ""):
@@ -1716,6 +1725,26 @@ def historical_items(rec: dict, indent: str) -> list:
     return items
 
 
+# What the California Historical Resource Status Codes the surveys actually use
+# mean, in the wording the pages that carried these rows by hand already used.
+# Only the codes the corpus contains are here: an unlisted code renders bare
+# rather than guessing, which is the same thing the hand-written pages did with
+# 6L and 6Z.
+CR_STATUS_MEANING = {
+    "3CS": "may be eligible for the California Register",
+    "3S": "potential National Register or City Landmark",
+}
+
+
+def cr_status(code) -> str | None:
+    """A California Register status code, expanded where we know the wording."""
+    if not code:
+        return None
+    code = str(code).strip()
+    meaning = CR_STATUS_MEANING.get(code)
+    return f"{code} — {meaning}" if meaning else code
+
+
 def survey_panel_html(rec: dict, indent: str) -> str:
     """`historic_survey` — what the historic resources surveys found here.
 
@@ -1745,7 +1774,12 @@ def one_survey_panel_html(s: dict, indent: str) -> str:
             # is the point of the page's citation — it belongs in a row, not
             # buried in the note under it.
             ("ic-permit", "Survey finding", s.get("finding")),
-            ("ic-permit", "Status code", s.get("proposed_status_code")),
+            # `cr_status_code` is the Bayview Area B survey's spelling of the
+            # same fact. The 156 pages carrying it use it *instead* of
+            # `proposed_status_code` — never alongside — so one row serves
+            # both, and the panel heading already names which survey said it.
+            ("ic-permit", "Status code",
+             s.get("proposed_status_code") or cr_status(s.get("cr_status_code"))),
             ("ic-permit", "Prior status code", s.get("prior_status_code")),
             ("ic-plan", "Article 11 rating", s.get("proposed_article11_rating")),
             ("ic-plan", "Current Article 11 rating", s.get("current_article11_rating")),
@@ -1768,8 +1802,17 @@ def one_survey_panel_html(s: dict, indent: str) -> str:
             ("ic-pin", "Parcel as surveyed", s.get("apn_as_surveyed"))):
         if val:
             rows.append((icon, key, str(val)))
-    for key, val in (("Here Today (1968)", s.get("here_today_page")),
-                     ("1976 architectural survey", s.get("dcp_1976_survey")),
+    # `prior_surveys` is the Area B survey's spelling for what the surveys
+    # before it had said. Two of its ratings are deliberately not rows: the
+    # survey gives no scale for the Carey & Company or UMB numbers, says so in
+    # `rating_note`, and the pages written by hand showed neither.
+    prior = s.get("prior_surveys") or {}
+    dcp_1976 = s.get("dcp_1976_survey")
+    if not dcp_1976 and prior.get("survey_1976_rating") is not None:
+        dcp_1976 = f"rated {prior['survey_1976_rating']} of 5"
+    for key, val in (("Here Today (1968)",
+                      s.get("here_today_page") or prior.get("here_today")),
+                     ("1976 architectural survey", dcp_1976),
                      ("Unreinforced masonry survey", s.get("umb_survey")),
                      ("Heritage rating", s.get("heritage_rating")),
                      ("Earlier survey", s.get("prior_survey"))):
@@ -1780,7 +1823,7 @@ def one_survey_panel_html(s: dict, indent: str) -> str:
     meaning = s.get("status_code_meaning")
     if meaning and not meaning.endswith("."):
         meaning += "."
-    footnote = " ".join(x for x in (meaning, s.get("note")) if x)
+    footnote = " ".join(x for x in (meaning, s.get("cr_status_note"), s.get("note")) if x)
     # Some surveys record nothing codeable about a building and still say
     # something worth keeping — that its address was numbered differently when
     # it went up, or that the report contradicts itself about which building
@@ -2339,12 +2382,22 @@ def sources_html(rec: dict) -> str:
     which photograph in a newsletter, which entry in a directory. Forty-two
     sources across thirty-four pages carry one, and without it their footer
     line cites a whole newsletter for a fact found in one paragraph of it.
+
+    `supports` is the other half of that: not where in the source the fact is,
+    but which of the page's claims rests on it. A tourist guide listing where
+    musicians once lived backs one sentence of a page built otherwise from city
+    records, and saying so is the difference between citing it for that claim
+    and appearing to cite it for the parcel. It leads the line, where a reader
+    scanning the list sees it before deciding how much weight the source
+    carries.
     """
     items = []
     for s in rec.get("sources", []):
         name = SOURCE_FOOTER_NAME.get(s["id"], lambda n: n)(s["name"]).replace(" — ", ", ")
         if s.get("cites"):
             name = f'{name}, citing {s["cites"]}'
+        if s.get("supports"):
+            name = f'{s["supports"]} — {name}'
         retrieved = s.get("retrieved")
         if s.get("query") and retrieved:
             tail = (f'\n        <a href="{esca(s["query"])}">'
@@ -2434,7 +2487,12 @@ def render_html(rec: dict) -> str:
     # reverse-engineer a slug.
     street_name = title.split(" ", 1)[1]
     sub_line = AREA_SUB.get((city_slug, area_slug), area_name)
-    crumb_number = rec.get("address_range") or number
+    # `address_range` comes in two shapes — the "100–102" string `build_record`
+    # writes, and the {low, high, …} object a hand-edited page may carry. The
+    # crumb and the JSON-LD both read it, so both go through `range_label`;
+    # without it a dict's Python repr lands in the breadcrumb and the
+    # BreadcrumbList name.
+    crumb_number = range_label(rec.get("address_range")) or number
     street_addr_plain = title.replace("–", "-")
 
     # Panels belong beside the main column whenever there is a main column for

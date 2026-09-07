@@ -45,7 +45,9 @@ pattern, and always include `address` and non-empty `sources`:
   ],
   "permits": [
     { "number": "...", "filed": "1998-04-02", "status": "complete",
-      "description": "...", "source": "sf-building-permits" }
+      "description": "DBI's own words, verbatim.",
+      "description_edited": "Optional. The sentence the page shows instead.",
+      "source": "sf-building-permits" }
   ],
   "permit_summary": {
     "count_on_file": 3102, "range": "1981–2026", "shown_on_page": 25,
@@ -68,6 +70,8 @@ pattern, and always include `address` and non-empty `sources`:
   "sources": [
     { "id": "sf-building-permits",
       "name": "SF Building Permits (DataSF)",
+      "supports": "Optional. Which claim on the page rests on this source.",
+      "cites": "Optional. Which passage within the source the page rests on.",
       "query": "https://data.sfgov.org/resource/....json?...",
       "retrieved": "2026-07-21" }
   ]
@@ -86,6 +90,31 @@ line *below* the timeline, never above it. The DBI query in `sources` still
 returns all of them, which is what makes the subset honest rather than a
 silent edit. Never write a figure into that note that isn't computed from the
 data you kept.
+
+### `description` vs `description_edited`
+
+**`description` is DBI's words; `description_edited` is ours.** The renderer
+shows the edit where there is one and falls back to running `description`
+through the mechanical cleaner where there is not. Keep them both: the raw
+text is what the `sf-building-permits` citation vouches for, and the redaction
+pass and the unit-generalizer read it, so overwriting it would make the page's
+own record unverifiable.
+
+Write an edit only where reading the filing against the rest of the record
+says something the filing alone does not — that this was the only part of a
+project ever carried through, that the matching filing for the next flat was
+cancelled, that a proper noun the cleaner lowercased is a street name. Do not
+write one to restyle a sentence the cleaner already renders correctly.
+
+### `supports` vs `cites`
+
+Both narrow a citation, from opposite ends. **`cites` says where in the source
+the fact is** — which photograph in a newsletter, which entry in a directory.
+**`supports` says which of the page's claims rests on the source**, and leads
+the footer line. A tourist guide listing where musicians once lived backs one
+sentence of a page otherwise built from city records; `"supports":
+"Notable-resident claim"` is the difference between citing it for that claim
+and appearing to cite it for the parcel.
 
 ### `hook`
 
