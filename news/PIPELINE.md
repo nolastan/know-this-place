@@ -265,6 +265,7 @@ nothing else; the markup here is what to expect, not what to type:
   python3 scripts/build_sitemap.py
   python3 scripts/build_map_index.py
   python3 scripts/build_link_index.py
+  python3 research/tools/check.py --index
   python3 scripts/validate.py
   ```
 
@@ -284,6 +285,14 @@ nothing else; the markup here is what to expect, not what to type:
   `street_slug` against `resolution.apn` and `resolution.path`.
   `research/manifests/news-2026-08-16.json` is the worked example: 350 Bay
   Street resolves to a page at 300 Bay Street.
+- **Seeding writes a manifest, and the manifest is indexed.**
+  `research/findings/INDEX.md` tabulates `research/manifests/*.json` as well as
+  the findings files, so every news run that seeds a page leaves it stale.
+  `research/tools/check.py` fails on that and **CI runs it** — a run that
+  checked only `news/tools/check.py` and `scripts/validate.py` passes locally
+  and fails on the pull request. Rebuild it with
+  `python3 research/tools/check.py --index` alongside the other derived
+  indexes.
 - **A parcel the seeder refuses is not a page to force.** It skips condominium
   units and parcels with no row on the current roll, and prints the reason for
   each. That is the site's rule about what may be a page, and it outranks the

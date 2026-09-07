@@ -69,6 +69,7 @@ python3 scripts/seed_pages.py districts
 python3 scripts/build_sitemap.py
 python3 scripts/build_map_index.py
 python3 scripts/build_link_index.py
+python3 research/tools/check.py --index
 python3 scripts/validate.py
 ```
 
