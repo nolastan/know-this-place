@@ -1,0 +1,77 @@
+{
+  "source_id": "whatnow-sf",
+  "batch": "2026-09-06",
+  "read_on": "2026-09-06",
+  "notes": "Two items queued from the 2026-09-06 poll, both read.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 2,
+    "mentions": 2,
+    "remaining": "none"
+  },
+  "findings": [
+    {
+      "id": "2026-09-06-wn-0001",
+      "date": "2026-09-05",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "4071 18th Street",
+      "street_number": "4071",
+      "street_name": "18TH",
+      "street_type": "ST",
+      "description": "JETSET Pilates has proposed a studio in the storefront at 4071 18th Street in the Castro, a space of roughly 2,110 square feet that was occupied by AHF Pharmacy and has been vacant since 2020. Construction is expected to begin soon and the studio to open in January 2027. The franchisee is named in the story and is a private individual, not a developer, so is not recorded here.",
+      "extra": {
+        "proposed_tenant": "JETSET Pilates",
+        "storefront_sqft": 2110,
+        "previous_tenant": "AHF Pharmacy",
+        "vacant_since": 2020,
+        "planned_opening": "January 2027"
+      },
+      "citation": {
+        "label": "WhatNow San Francisco, “JETSET Pilates Proposes Castro Studio At Former Pharmacy,” 5 September 2026",
+        "url": "https://whatnow.com/san-francisco/retail/jetset-pilates-proposes-castro-studio-at-former-pharmacy/",
+        "locator": "first two paragraphs"
+      },
+      "raw": {
+        "text": "JETSET Pilates has proposed opening a new studio in San Francisco's Castro neighborhood at 4071 18th Street , a former pharmacy space that has been vacant since 2020. … The approximately 2,110-square-foot storefront was previously occupied by AHF Pharmacy."
+      },
+      "confidence": "high",
+      "note": "The same article says the franchisee also holds the franchise planned for 1868 Lombard Street. That is a second address in a single passing clause, with nothing established about that building; it is not extracted.",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3583118",
+        "path": "/san-francisco/castro/18th-street/4071/",
+        "eas_address": "4071 18TH ST",
+        "method": "EAS exact match on 4071 18TH ST → parcel 3583118; sf-parcels has blklot 3583118 active, 4071–4071 18TH; the 2025 roll records it as commercial retail, built 2005. EAS files the address under parcel 3583075, which sf-parcels reports retired; the active parcel its coordinates fall in is 3583118.",
+        "checked_on": "2026-09-06"
+      },
+      "publish": {
+        "status": "declined",
+        "note": "One event, one entry. /san-francisco/castro/18th-street/4071/ already carries Hoodline's 'Miami-Based Pilates Studio Jetset Pilates Proposes Opening in Former Castro Pharmacy Space' of 24 August 2026, which is the same proposal. The square footage, the AHF Pharmacy tenancy and the January 2027 opening date are kept here as the fuller record."
+      }
+    },
+    {
+      "id": "2026-09-06-wn-0002",
+      "date": "2026-09-05",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "8970 Central Avenue",
+      "description": "A Black Rock Coffee Bar planned for 8970 Central Avenue in Montclair, opening late September 2026.",
+      "citation": {
+        "label": "WhatNow San Francisco, “Black Rock Coffee Bar Slated for Montclair,” 5 September 2026",
+        "url": "https://whatnow.com/san-francisco/restaurants/black-rock-coffee-bar-slated-for-montclair/"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Out of area. Montclair is in Oakland; this feed's San Francisco edition carries East Bay items. Central Avenue matched because the site's street index has one."
+      },
+      "resolution": {
+        "status": "rejected",
+        "checked_on": "2026-09-06",
+        "method": "Not resolved: the finding is declined, so no parcel is sought.",
+        "by_hand": true
+      }
+    }
+  ]
+}

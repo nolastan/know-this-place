@@ -107,6 +107,7 @@ python3 scripts/seed_pages.py seed-list --manifest research/manifests/news-<date
 python3 scripts/build_sitemap.py
 python3 scripts/build_map_index.py
 python3 scripts/build_link_index.py
+python3 research/tools/check.py --index
 python3 scripts/seed_pages.py render <path to the page>
 python3 news/tools/check.py && python3 scripts/validate.py
 ```
@@ -191,7 +192,11 @@ that changes what a page looks like**.
 ## Before you stop
 
 - Every finding carries its decision, in the same commit that edits the pages.
-- `python3 news/tools/check.py` and `python3 scripts/validate.py` both clean.
+- `python3 news/tools/check.py`, `python3 research/tools/check.py` and
+  `python3 scripts/validate.py` all clean. **CI runs the research check too**,
+  and seeding a page writes a manifest that stales
+  `research/findings/INDEX.md` — rebuild it with
+  `python3 research/tools/check.py --index`.
 - `git diff` read through, and every change is a real fact about a building.
 - The homepage grid holds six cards and the newest are the six.
 - The PR lists every page touched and seeded, every story used, and the run's
