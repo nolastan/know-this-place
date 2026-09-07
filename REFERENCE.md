@@ -29,6 +29,7 @@ pattern, and always include `address` and non-empty `sources`:
   "address": "123 Example Street, San Francisco, CA 94114",
   "path": "/san-francisco/castro/example-street/123/",
   "hook": "One concrete sentence, under 22 words, for the street hub's list. No superlatives.",
+  "sub_area": "Optional. Overrides the neighborhood line under the address.",
   "apn": "0000-000",
   "coordinates": { "lat": 37.0, "lng": -122.0 },
   "parcel": { "year_built": 1904, "land_use": "...", "units": 2 },
@@ -45,7 +46,9 @@ pattern, and always include `address` and non-empty `sources`:
   ],
   "permits": [
     { "number": "...", "filed": "1998-04-02", "status": "complete",
-      "description": "...", "source": "sf-building-permits" }
+      "description": "DBI's own words, verbatim.",
+      "description_edited": "Optional. The sentence the page shows instead.",
+      "source": "sf-building-permits" }
   ],
   "permit_summary": {
     "count_on_file": 3102, "range": "1981–2026", "shown_on_page": 25,
@@ -68,6 +71,8 @@ pattern, and always include `address` and non-empty `sources`:
   "sources": [
     { "id": "sf-building-permits",
       "name": "SF Building Permits (DataSF)",
+      "supports": "Optional. Which claim on the page rests on this source.",
+      "cites": "Optional. Which passage within the source the page rests on.",
       "query": "https://data.sfgov.org/resource/....json?...",
       "retrieved": "2026-07-21" }
   ]
@@ -86,6 +91,31 @@ line *below* the timeline, never above it. The DBI query in `sources` still
 returns all of them, which is what makes the subset honest rather than a
 silent edit. Never write a figure into that note that isn't computed from the
 data you kept.
+
+### `description` vs `description_edited`
+
+**`description` is DBI's words; `description_edited` is ours.** The renderer
+shows the edit where there is one and falls back to running `description`
+through the mechanical cleaner where there is not. Keep them both: the raw
+text is what the `sf-building-permits` citation vouches for, and the redaction
+pass and the unit-generalizer read it, so overwriting it would make the page's
+own record unverifiable.
+
+Write an edit only where reading the filing against the rest of the record
+says something the filing alone does not — that this was the only part of a
+project ever carried through, that the matching filing for the next flat was
+cancelled, that a proper noun the cleaner lowercased is a street name. Do not
+write one to restyle a sentence the cleaner already renders correctly.
+
+### `supports` vs `cites`
+
+Both narrow a citation, from opposite ends. **`cites` says where in the source
+the fact is** — which photograph in a newsletter, which entry in a directory.
+**`supports` says which of the page's claims rests on the source**, and leads
+the footer line. A tourist guide listing where musicians once lived backs one
+sentence of a page otherwise built from city records; `"supports":
+"Notable-resident claim"` is the difference between citing it for that claim
+and appearing to cite it for the parcel.
 
 ### `hook`
 
@@ -290,14 +320,19 @@ never invents a page. Pages carry no marker saying who wrote them, because
 there is nothing to decide — the facts are yours to edit either way, and the
 HTML is never yours to edit at all.
 
-### The render backlog
+### The render backlog, and why there isn't one
 
-`render` holds back every page listed in `scripts/render-backlog.txt` and names
-the ones it skipped. Those are pages whose committed HTML predates the parity
-check and is not what the renderer produces — hand-written prose, mostly — so
-rendering one destroys the drift instead of resolving it. Overwriting them is
-the render sweep's job and takes `--include-backlogged` plus a person who has
-read the diff.
+`scripts/render-backlog.txt` used to grandfather 968 pages whose committed HTML
+the renderer could not reproduce. The sweep emptied it and the file is gone, so
+`render` now holds nothing back and `validate.py` checks parity on every page.
+`--include-backlogged` remains a no-op flag for the same reason.
+
+What the sweep taught is worth keeping: **on the pages that had drifted, most of
+what the renderer "could not reproduce" was content sitting in `data.json` under
+a key nothing read.** Before concluding a page needs hand-maintained HTML, grep
+its `data.json` for the fact you think is stranded — it was there 25 times out of
+the 119 the sweep first looked like it would delete, and the fix each time was a
+row in the renderer, not an exemption.
 
 ### `"rendered": false`
 

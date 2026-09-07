@@ -34,6 +34,37 @@
     "description": "235 Valencia Street, San Francisco: a 1924 building — permits, assessment and historic status from city records, fully cited."
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "San Francisco",
+        "item": "https://knowthis.place/san-francisco/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Mission",
+        "item": "https://knowthis.place/san-francisco/mission/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Valencia Street",
+        "item": "https://knowthis.place/san-francisco/mission/valencia-street/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "235"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 <header class="site-header">
@@ -62,7 +93,6 @@
       <h1>235 Valencia Street</h1>
       <p class="sub">Mission · San Francisco, CA 94103</p>
       <ul class="tags">
-        <li class="tag"><span class="ic ic-calendar"></span>Built 1924</li>
         <li class="tag"><span class="ic ic-home"></span>Building</li>
         <li class="tag"><span class="ic ic-layers"></span>1 story</li>
         <li class="tag"><span class="ic ic-plan"></span>Zoned CM</li>
@@ -89,8 +119,11 @@
 
   <div class="cols">
     <div class="main">
-      <div class="section-head"><span class="ic ic-clock"></span><h2>Permit history</h2></div>
-      <ol class="vtl">
+      <ol class="vtl" aria-label="Timeline">
+        <li class="vtl-item">
+          <div class="vtl-date">1924</div>
+          <p class="vtl-desc">Built.</p>
+        </li>
         <li class="vtl-item">
           <div class="vtl-date">May 1989</div>
           <p class="vtl-desc">Constructing office space, repairing concrete floors.</p>
@@ -220,23 +253,39 @@
       <section class="panel">
         <h3>At a glance</h3>
         <dl class="speclist">
+          <div class="spec"><span class="ic ic-ruler"></span><span class="spec-k">Architect</span><span class="spec-v">Arthur Stephenson Bugbee</span></div>
           <div class="spec"><span class="ic ic-pin"></span><span class="spec-k">Parcel</span><span class="spec-v">Block 3532, Lot 019B</span></div>
           <div class="spec"><span class="ic ic-value"></span><span class="spec-k">Last sale</span><span class="spec-v">October 14, 2015</span></div>
-          <div class="spec"><span class="ic ic-permit"></span><span class="spec-k">Historic status</span><span class="spec-v">CEQA C — not a historical resource</span></div>
-          <div class="spec"><span class="ic ic-ruler"></span><span class="spec-k">Architect</span><span class="spec-v">Arthur Stephenson Bugbee</span></div>
         </dl>
       </section>
       <section class="panel">
         <h3>Inner Mission North Context Statement, adopted 2004</h3>
-        <dl class="speclist">
-          <div class="spec"><span class="ic ic-plan"></span><span class="spec-k">District</span><span class="spec-v">Inner Mission Commercial Corridor</span></div>
-          <div class="spec"><span class="ic ic-permit"></span><span class="spec-k">Survey finding</span><span class="spec-v">Non-contributor</span></div>
-        </dl>
         <p class="prose"><small>Non-contributor to the Inner Mission Commercial Corridor locally significant area (235 Valencia St). Formerly called the 16th Street Commercial Corridor. Criterion C: San Francisco's largest concentration of residential-over-commercial and small-scale commercial buildings, spanning both pre-1906 and post-disaster construction, dated c. 1870s–1931.</small></p>
       </section>
     </aside>
   </div>
 
+  <section class="nearby">
+    <div class="section-head"><span class="ic ic-pin"></span><h2>Nearby</h2></div>
+    <ul class="place-list">
+      <li><a href="/san-francisco/mission/valencia-street/225/">225 Valencia Street</a>
+        <span class="pill pill-muted">Same street</span></li>
+      <li><a href="/san-francisco/mission/valencia-street/250/">250 Valencia Street</a>
+        <span class="pill pill-muted">Same street</span></li>
+      <li><a href="/san-francisco/mission/duboce-avenue/69/">69–75 Duboce Avenue</a>
+        <span class="pill pill-muted">Same block</span></li>
+      <li><a href="/san-francisco/mission/valencia-street/207/">207–215 Valencia Street</a>
+        <span class="pill pill-muted">Same block</span></li>
+      <li><a href="/san-francisco/mission/stevenson-street/1441/">1441–1449 Stevenson Street</a>
+        <span class="pill pill-muted">Same block</span></li>
+      <li><a href="/san-francisco/mission/clinton-park/2/">2 Clinton Park</a>
+        <span class="pill pill-muted">Same block</span></li>
+      <li><a href="/san-francisco/mission/clinton-park/108/">108–112 Clinton Park</a>
+        <span class="pill pill-muted">Around the corner</span></li>
+      <li><a href="/san-francisco/mission/clinton-park/116/">116–118 Clinton Park</a>
+        <span class="pill pill-muted">Around the corner</span></li>
+    </ul>
+  </section>
 </main>
 
 <footer class="site-footer">

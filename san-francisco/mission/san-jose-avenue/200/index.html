@@ -34,6 +34,37 @@
     "description": "200 San Jose Avenue, San Francisco: a 1900 single-family house in the Horner's Addition East Historic District — permits, assessment and historic status from city records, fully cited."
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "San Francisco",
+        "item": "https://knowthis.place/san-francisco/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Mission",
+        "item": "https://knowthis.place/san-francisco/mission/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "San Jose Avenue",
+        "item": "https://knowthis.place/san-francisco/mission/san-jose-avenue/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "200"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 <header class="site-header">
@@ -62,7 +93,6 @@
       <h1>200 San Jose Avenue</h1>
       <p class="sub">Mission · San Francisco, CA 94110</p>
       <ul class="tags">
-        <li class="tag"><span class="ic ic-calendar"></span>Built 1900</li>
         <li class="tag"><span class="ic ic-home"></span>Single-family house</li>
         <li class="tag"><span class="ic ic-layers"></span>2 stories</li>
         <li class="tag"><span class="ic ic-plan"></span>Zoned RH-3</li>
@@ -91,11 +121,15 @@
     <div class="main">
       <ol class="vtl" aria-label="Timeline">
         <li class="vtl-item">
-          <div class="vtl-date">Nov 17, 1895</div>
+          <div class="vtl-date">November 17, 1895</div>
           <p class="vtl-desc">Chimney fire at the residence here; the alarm came from box 274 at 12:19 and the damage amounted to $200.</p>
           <div class="vtl-meta">
-            <a href="https://chroniclingamerica.loc.gov/lccn/sn85066387/1895-11-18/ed-1/seq-7/">The San Francisco Call, Nov 18, 1895</a>
+            <span>The San Francisco Call, 18 November 1895, p. 7 — “The Fire Bell”</span>
           </div>
+        </li>
+        <li class="vtl-item">
+          <div class="vtl-date">1900</div>
+          <p class="vtl-desc">Built.</p>
         </li>
         <li class="vtl-item is-muted">
           <div class="vtl-date">Oct 1987</div>
@@ -206,7 +240,7 @@
           </div>
         </li>
       </ol>
-      <p class="prose"><small>7 nominal $1 street-space permits are omitted. The assessor gives 1900 as the year built, but a residence stood at this address in November 1895.</small></p>
+      <p class="prose"><small>7 nominal $1 street-space permits are omitted. The assessor gives 1900, but a residence stood at this address in November 1895.</small></p>
     </div>
 
     <aside class="aside">
@@ -229,12 +263,11 @@
           <div class="spec"><span class="ic ic-plan"></span><span class="spec-k">Construction</span><span class="spec-v">Wood frame</span></div>
           <div class="spec"><span class="ic ic-pin"></span><span class="spec-k">Parcel</span><span class="spec-v">Block 6513, Lot 001</span></div>
           <div class="spec"><span class="ic ic-value"></span><span class="spec-k">Last sale</span><span class="spec-v">October 8, 2021</span></div>
-          <div class="spec"><span class="ic ic-permit"></span><span class="spec-k">Historic status</span><span class="spec-v">CEQA A — historic resource</span></div>
         </dl>
       </section>
       <section class="panel panel-district">
         <p class="district-kind">Historic district</p>
-        <h3>Horner's Addition East</h3>
+        <h3><a href="/san-francisco/historic-districts/horner-s-addition-east/">Horner's Addition East</a></h3>
         <p class="district-dateline">Significant 1865–1905</p>
         <ul class="standing">
           <li><span class="ic ic-eligible"></span>Eligible for the California and National Registers</li>
@@ -244,6 +277,27 @@
     </aside>
   </div>
 
+  <section class="nearby">
+    <div class="section-head"><span class="ic ic-pin"></span><h2>Nearby</h2></div>
+    <ul class="place-list">
+      <li><a href="/san-francisco/mission/san-jose-avenue/170/">170 San Jose Avenue</a>
+        <span class="pill pill-muted">Same street</span></li>
+      <li><a href="/san-francisco/mission/san-jose-avenue/207/">207–211 San Jose Avenue</a>
+        <span class="pill pill-muted">Same street</span></li>
+      <li><a href="/san-francisco/mission/san-jose-avenue/210/">210 San Jose Avenue</a>
+        <span class="pill pill-muted">Same block</span></li>
+      <li><a href="/san-francisco/mission/san-jose-avenue/216/">216 San Jose Avenue</a>
+        <span class="pill pill-muted">Same block</span></li>
+      <li><a href="/san-francisco/mission/24th-street/3525/">3525–3529 24th Street</a>
+        <span class="pill pill-muted">Same block</span></li>
+      <li><a href="/san-francisco/mission/san-jose-avenue/220/">220 San Jose Avenue</a>
+        <span class="pill pill-muted">Same block</span></li>
+      <li><a href="/san-francisco/mission/24th-street/3506/">3506–3508 24th Street</a>
+        <span class="pill pill-muted">Around the corner</span></li>
+      <li><a href="/san-francisco/mission/24th-street/3514/">3514 24th Street</a>
+        <span class="pill pill-muted">Around the corner</span></li>
+    </ul>
+  </section>
 </main>
 
 <footer class="site-footer">
@@ -260,8 +314,8 @@
         <a href="https://data.sfgov.org/resource/3tsw-4idn.json?apn=6513001">retrieved 2026-07-31</a></li>
       <li>SF Planning Department, Historic Districts via DataSF —
         <a href="https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4218485849599%2037.75189799192006)%27)">retrieved 2026-07-31</a></li>
-      <li><i>The San Francisco Call</i>, 18 November 1895, p. 7 — “The Fire Bell” —
-        <a href="https://chroniclingamerica.loc.gov/lccn/sn85066387/1895-11-18/ed-1/seq-7/">Chronicling America, Library of Congress</a></li>
+      <li>The San Francisco Call, 18 November 1895, p. 7, “The Fire Bell” —
+        <a href="https://chroniclingamerica.loc.gov/lccn/sn85066387/1895-11-18/ed-1/seq-7/">retrieved 2026-08-05</a></li>
     </ul>
   </section>
   <p class="feedback-cta">

@@ -34,6 +34,37 @@
     "description": "16 Ford Street, San Francisco: a 1900 3-unit tic building — permits, assessment and historic status from city records, fully cited."
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "San Francisco",
+        "item": "https://knowthis.place/san-francisco/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Castro",
+        "item": "https://knowthis.place/san-francisco/castro/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Ford Street",
+        "item": "https://knowthis.place/san-francisco/castro/ford-street/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "16"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 <header class="site-header">
@@ -62,7 +93,6 @@
       <h1>16 Ford Street</h1>
       <p class="sub">Castro (Eureka Valley) · San Francisco, CA 94114</p>
       <ul class="tags">
-        <li class="tag"><span class="ic ic-calendar"></span>Built 1900</li>
         <li class="tag"><span class="ic ic-home"></span>3-unit TIC building</li>
         <li class="tag"><span class="ic ic-layers"></span>1 story</li>
         <li class="tag"><span class="ic ic-plan"></span>Zoned RH-2</li>
@@ -91,17 +121,21 @@
     <div class="main">
       <ol class="vtl" aria-label="Timeline">
         <li class="vtl-item">
-          <div class="vtl-date">Mar 1895</div>
+          <div class="vtl-date">March 9, 1895</div>
           <p class="vtl-desc">Sold for $2,000; the parcel given as 25 × 114 feet.</p>
           <div class="vtl-meta">
-            <a href="https://chroniclingamerica.loc.gov/lccn/sn85066387/1895-03-09/ed-1/seq-10/">The San Francisco Call, Mar 9, 1895</a>
+            <span>The San Francisco Call, 9 March 1895, p. 10 — real-estate sales</span>
           </div>
         </li>
         <li class="vtl-item">
-          <div class="vtl-date">Aug 1900</div>
-          <p class="vtl-desc">Documented as a private residence.</p>
+          <div class="vtl-date">1900</div>
+          <p class="vtl-desc">Built.</p>
+        </li>
+        <li class="vtl-item">
+          <div class="vtl-date">August 18, 1900</div>
+          <p class="vtl-desc">Documented as a private residence. Cross streets: between Noe and Sanchez, Seventeenth and Eighteenth.</p>
           <div class="vtl-meta">
-            <a href="https://chroniclingamerica.loc.gov/lccn/sn85066387/1900-08-18/ed-1/seq-13/">The San Francisco Call, Aug 18, 1900</a>
+            <span>The San Francisco Call, 18 August 1900, p. 13 — funeral notice</span>
           </div>
         </li>
         <li class="vtl-item is-muted">
@@ -195,7 +229,7 @@
           </div>
         </li>
       </ol>
-      <p class="prose"><small>1 nominal $1 street-space permit is omitted. The March 1895 sale notice does not say whether a building stood on the lot at the time.</small></p>
+      <p class="prose"><small>1 nominal $1 street-space permit is omitted. The March 1895 sale notice gives no indication whether a building stood on the lot at the time.</small></p>
     </div>
 
     <aside class="aside">
@@ -218,12 +252,32 @@
           <div class="spec"><span class="ic ic-plan"></span><span class="spec-k">Construction</span><span class="spec-v">Wood frame</span></div>
           <div class="spec"><span class="ic ic-pin"></span><span class="spec-k">Parcel</span><span class="spec-v">Block 3581, Lot 054</span></div>
           <div class="spec"><span class="ic ic-value"></span><span class="spec-k">Last sale</span><span class="spec-v">February 18, 2005</span></div>
-          <div class="spec"><span class="ic ic-permit"></span><span class="spec-k">Historic status</span><span class="spec-v">CEQA B — unevaluated</span></div>
         </dl>
       </section>
     </aside>
   </div>
 
+  <section class="nearby">
+    <div class="section-head"><span class="ic ic-pin"></span><h2>Nearby</h2></div>
+    <ul class="place-list">
+      <li><a href="/san-francisco/castro/ford-street/14/">14 Ford Street</a>
+        <span class="pill pill-muted">Same street</span></li>
+      <li><a href="/san-francisco/castro/ford-street/17/">17–19 Ford Street</a>
+        <span class="pill pill-muted">Same street</span></li>
+      <li><a href="/san-francisco/castro/ford-street/18/">18 Ford Street</a>
+        <span class="pill pill-muted">Same block</span></li>
+      <li><a href="/san-francisco/castro/ford-street/12/">12 Ford Street</a>
+        <span class="pill pill-muted">Same block</span></li>
+      <li><a href="/san-francisco/castro/ford-street/20/">20 Ford Street</a>
+        <span class="pill pill-muted">Same block</span></li>
+      <li><a href="/san-francisco/castro/ford-street/10/">10 Ford Street</a>
+        <span class="pill pill-muted">Same block</span></li>
+      <li><a href="/san-francisco/castro/17th-street/3836/">3836 17th Street</a>
+        <span class="pill pill-muted">Around the corner</span></li>
+      <li><a href="/san-francisco/castro/17th-street/3828/">3828–3830 17th Street</a>
+        <span class="pill pill-muted">Around the corner</span></li>
+    </ul>
+  </section>
 </main>
 
 <footer class="site-footer">
@@ -238,10 +292,10 @@
         <a href="https://data.sfgov.org/resource/i98e-djp9.json?block=3581&amp;lot=054">retrieved 2026-07-28</a></li>
       <li>SF Planning Department, Historic Resource Status by Parcel via DataSF —
         <a href="https://data.sfgov.org/resource/3tsw-4idn.json?apn=3581054">retrieved 2026-07-28</a></li>
-      <li><i>The San Francisco Call</i>, 18 August 1900, p. 13 — funeral notice —
-        <a href="https://chroniclingamerica.loc.gov/lccn/sn85066387/1900-08-18/ed-1/seq-13/">Chronicling America, Library of Congress</a></li>
-      <li><i>The San Francisco Call</i>, 9 March 1895, p. 10 — real-estate sales —
-        <a href="https://chroniclingamerica.loc.gov/lccn/sn85066387/1895-03-09/ed-1/seq-10/">Chronicling America, Library of Congress</a></li>
+      <li>The San Francisco Call, 18 August 1900, p. 13, funeral notice —
+        <a href="https://chroniclingamerica.loc.gov/lccn/sn85066387/1900-08-18/ed-1/seq-13/">retrieved 2026-08-04</a></li>
+      <li>The San Francisco Call, 9 March 1895, p. 10, real-estate sales —
+        <a href="https://chroniclingamerica.loc.gov/lccn/sn85066387/1895-03-09/ed-1/seq-10/">retrieved 2026-08-04</a></li>
     </ul>
   </section>
   <p class="feedback-cta">

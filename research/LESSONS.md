@@ -1117,6 +1117,9 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   what stands between that page and a bulk sweep. *After fixing a render crash,
   read the diff before you trust the page: a loud failure is safer than a silent
   rewrite, and the page may need `"rendered": false` rather than a fix.*
+  (Resolved by the #147 sweep: the breadcrumb goes through `range_label` now,
+  and the backlog is empty and gone. The lesson holds; the example no longer
+  reproduces.)
 - **A multi-column key list reads correctly in `pdftotext`'s raw order and
   wrongly under `-layout`.** The Russian American statement's two appendix maps
   are keyed to three-column lists of numbered entries. `-layout` reconstructs
@@ -1156,6 +1159,10 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   `data.json` key for any of the three, so the fix is to keep the hand-written
   file. *Before rendering a batch, intersect its page list with the backlog, and
   read `git diff` on every page in both.*
+  (Resolved: `cmd_render` reads the backlog, and the #147 sweep then emptied it
+  — 2727 Pierce keeps its Casebolt House tag and its omitted-permits note under
+  the renderer. The general rule survives the backlog that prompted it: read
+  `git diff` on a bulk render before trusting it.)
 - **A privacy filter's tidy-up only handles the name at the end of a clause.**
   `redact()` dropped a dangling connective before punctuation, so "correct acc
   violation-repair by mr. mcabe instructions" became "…repair by instructions"
