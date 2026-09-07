@@ -603,12 +603,35 @@ def screen(item: dict, feed: dict, streets: set[str]) -> tuple[str, str]:
 # --------------------------------------------------------------------------- #
 
 def page_index() -> dict[str, str]:
-    """Every published address → its path, from the map's own index."""
+    """Every published address → its path, from the map's own index.
+
+    A parcel spanning several street numbers is titled as a range — "75–85 West
+    Portal Avenue" — and an article prints one number out of it, so the range
+    alone answers no lookup an article can make. Each endpoint is registered
+    against the same page as well. Endpoints only: the numbers between them are
+    not all real, and claiming them would put a story on a building that does
+    not exist. The real title still wins where the two collide.
+
+    This is not cosmetic. Some streets are published entirely as ranges, so
+    before the endpoints were registered they contributed no name at all to
+    `street_vocabulary` below — the screen read a story about Cole Street as a
+    story about a street the site has never heard of.
+    """
     if not GEOJSON.exists():
         return {}
     data = json.loads(GEOJSON.read_text(encoding="utf-8"))
-    return {f["properties"]["t"].lower(): f["properties"]["p"]
-            for f in data.get("features", []) if f.get("properties")}
+    titles, endpoints = {}, {}
+    for f in data.get("features", []):
+        props = f.get("properties")
+        if not props:
+            continue
+        title = props["t"].lower()
+        titles[title] = props["p"]
+        m = re.match(r"^(\d+[a-z]?)[\u2013-](\d+[a-z]?)\s+(.*)$", title)
+        if m:
+            for number in (m.group(1), m.group(2)):
+                endpoints.setdefault(f"{number} {m.group(3)}", props["p"])
+    return {**endpoints, **titles}
 
 
 def street_vocabulary(pages: dict[str, str]) -> set[str]:

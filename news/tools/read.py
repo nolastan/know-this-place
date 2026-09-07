@@ -303,6 +303,27 @@ def same_text(a: str, b: str) -> bool:
             == " ".join(b.translate(squash).lower().split()))
 
 
+def news_already_on(path: str) -> list[str]:
+    """The news entries a page already carries, newest first.
+
+    A story is routinely the second or third outlet to cover one filing, and
+    the earlier one may have been published by a run days ago — the duplicate
+    the module's "one event, one entry" rule forbids is therefore usually
+    already on the page rather than elsewhere in today's queue. Printing what
+    the page holds is what makes that visible while the article is being read,
+    instead of after an entry has been written.
+    """
+    data = REPO / path.strip("/") / "data.json"
+    try:
+        page = json.loads(data.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return []
+    entries = [e for e in page.get("historical_record", []) if e.get("outlet")]
+    entries.sort(key=lambda e: e.get("date") or "", reverse=True)
+    return [f"{e.get('date', '?')}  {e['outlet']} — {e.get('headline', '')}"
+            for e in entries]
+
+
 def report(url: str, title: str, feed: str, streets: set[str], pages: dict,
            only_pages: bool) -> tuple[int, int]:
     """(addresses found, of which already have a page)."""
@@ -337,6 +358,8 @@ def report(url: str, title: str, feed: str, streets: set[str], pages: dict,
                               if h["on_a_site_street"] else "(no page)")
         print(f"  • {h['as_written']:<28} {where}   @{h['at']}% in")
         print(f"      {h['evidence'][:200]}")
+        for carried in news_already_on(h["page"]) if h["page"] else []:
+            print(f"      already on the page: {carried[:150]}")
     return len(hits), len(with_pages)
 
 

@@ -69,12 +69,18 @@ python3 scripts/seed_pages.py districts
 python3 scripts/build_sitemap.py
 python3 scripts/build_map_index.py
 python3 scripts/build_link_index.py
+python3 research/tools/check.py --index
 python3 scripts/validate.py
 ```
 
 `read.py` marks which addresses already have pages. That is information, not a
 work order: an address with no page is a page to create, and `--only-pages`
 exists to narrow a long backlog by hand, not to decide which stories matter.
+
+Under an address that has a page, it also lists the news entries that page
+already carries. Read those before extracting: the duplicate that "one event,
+one entry" forbids is usually an entry an earlier run published days ago, not a
+second story in today's queue.
 
 It also prints a `headline:` and an `article:` line when the feed's own title
 and link disagree with the article's — which is what a social feed always does,
