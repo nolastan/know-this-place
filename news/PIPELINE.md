@@ -288,7 +288,7 @@ nothing else; the markup here is what to expect, not what to type:
 - **Seeding writes a manifest, and the manifest is indexed.**
   `research/findings/INDEX.md` tabulates `research/manifests/*.json` as well as
   the findings files, so every news run that seeds a page leaves it stale.
-  `research/tools/check.py` fails on that and **CI runs it** — a run that
+  `research/tools/check.py` fails on that, and CI runs it — so a run that
   checked only `news/tools/check.py` and `scripts/validate.py` passes locally
   and fails on the pull request. Rebuild it with
   `python3 research/tools/check.py --index` alongside the other derived

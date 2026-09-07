@@ -193,9 +193,9 @@ that changes what a page looks like**.
 
 - Every finding carries its decision, in the same commit that edits the pages.
 - `python3 news/tools/check.py`, `python3 research/tools/check.py` and
-  `python3 scripts/validate.py` all clean. **CI runs the research check too**,
-  and seeding a page writes a manifest that stales
-  `research/findings/INDEX.md` — rebuild it with
+  `python3 scripts/validate.py` all clean. **CI runs all three**, so a failure
+  here is a failure on the pull request. Seeding a page writes a manifest that
+  stales `research/findings/INDEX.md` — rebuild it with
   `python3 research/tools/check.py --index`.
 - `git diff` read through, and every change is a real fact about a building.
 - The homepage grid holds six cards and the newest are the six.
