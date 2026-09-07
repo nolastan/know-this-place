@@ -6,7 +6,7 @@
 >
 > - **Kind:** PDF reports (federal nomination forms) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — the listings are indexed everywhere; the forms are not. A search for a street number returns the Wikipedia list entry and the NPS map pin, never the paragraph inside the PDF that dates the building and names its architect.
-> - **Coverage:** 54 of 165 San Francisco listings read — every one certified before 1980. 56 findings, 30 resolved, 25 published on 21 pages, 6 of them seeded.
+> - **Coverage:** 96 of 165 San Francisco listings read — every one certified before 1990, plus the Civic Center district the index omits. 133 findings, 98 resolved, 78 published on 34 pages, 10 of them seeded.
 > - **Local corpus:** `research/corpora/nrhp-nominations/` (one PDF and one `.txt` per reference number, plus `index-san-francisco.json` and `state.json`)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -67,9 +67,11 @@ batch without fetching a document.
   only in the envelope query, with every attribute blank. *Treat the index as
   the batch planner, not as the enumeration; a listing you know of and cannot
   find in it is still fetchable by reference number.*
-- Fetch the PDFs at 2–3 seconds apart and extract with `pdftotext -layout`.
-  53 of the 54 in the first batch had a usable text layer. Whole batch: about
-  three minutes.
+- Fetch the PDFs at 2–3 seconds apart **with `curl`** and extract with
+  `pdftotext -layout`. 53 of the 54 in the first batch and 41 of the 42 in the
+  second had a usable text layer. A 42-document batch takes about three
+  minutes this way and about two hours through `urllib.request` — see the
+  caution below.
 - `WebFetch` is no use here, as it is for every PDF source in this register.
   Fetch the bytes.
 
@@ -144,6 +146,41 @@ hope for — a dated move with the trade press quoted:
   House's dates the Mish House. Those are real facts about *other* parcels and
   they are second-hand here; take them from the nomination that is about them.
 
+- **A district nomination is a per-property inventory, and that is the whole
+  reason to read one.** Six of the listings in this source are districts, and
+  five of those six were written by Anne Bloomfield in a single regular format:
+  a numbered appendix entry per building giving `Type, ADDRESS: YEAR, style,
+  storeys, description`, then a paragraph naming the architect and contractor,
+  then the citation. 83001230 (Liberty Street) has about fifty of them.
+  Everything after the address in that line is publishable and everything about
+  the first owner in the paragraph is not. The one district read so far,
+  78000757 (Civic Center), is the exception in shape — no appendix, a prose
+  walk through eleven buildings with a date in each heading and a street number
+  in each first line — and it is also the exception in access, being in neither
+  the city nor the county index query.
+
+- **A district nomination will not give every building a number, and City Hall
+  is the worked example.** 78000757 describes City Hall by the block it
+  occupies — Polk, McAllister, Van Ness, Grove — and never prints a street
+  number for it anywhere in 99,000 characters, so no finding was written for
+  the building the district is named after. Ten of its eleven structures do
+  carry a number.
+
+- **The nomination's own numbers can be superseded, `record_date`
+  notwithstanding.** 78000757 addresses the War Memorial Opera House as 309 Van
+  Ness Avenue and the Veterans Building as 459; EAS has neither, and holds 301
+  and 401 on one parcel. `extra.record_date` correctly stops the renumbering
+  guard from refusing a 1978 document, but it does not make 1978's number
+  current. Resolve on the building's name and its stated block, mark it
+  `"by_hand": true`, and put the arithmetic in `method`.
+
+- **`urllib` is unusably slow against npgallery and `curl` is not.** The same
+  fetch that takes about three minutes per document through
+  `urllib.request.urlopen` takes about one second through `curl`. The 1966-1979
+  batch's "about three minutes for 54 documents" was a `curl`-speed figure; a
+  Python loop written for the 1980s batch was on course for two hours before
+  the difference was measured.
+
 ### People
 
 Nominations name people constantly, and most of them are **owners**, which the
@@ -172,19 +209,65 @@ URL. Worked example:
 
 ### Coverage
 
-- **Read:** all 54 San Francisco listings certified before 1980, plus the
-  Civic Center district (78000757) fetched but not read.
-  [`../findings/nrhp-nominations/listed-1966-1979.json`](../findings/nrhp-nominations/listed-1966-1979.json)
-- **Not read:** 111 listings certified 1980 or later — 1980-1989 (42),
-  1990-1999 (17), 2000-2009 (22), 2010-2015 (15), 2016-2023 (15) — plus
-  78000757 and the untextured 77000334. **The next batch is 78000757**, a
-  district nomination naming buildings across the Civic Center, and then the
-  1980s group, which is the largest and uses the 10-900 form with its
-  `SPECIFIC DATES` / `BUILDER/ARCHITECT` pair.
+- **Read:** all 54 San Francisco listings certified before 1980
+  ([`listed-1966-1979.json`](../findings/nrhp-nominations/listed-1966-1979.json)),
+  the San Francisco Civic Center district nomination of 1978
+  ([`civic-center-district.json`](../findings/nrhp-nominations/civic-center-district.json)),
+  and the 37 single-building nominations among the 42 listings certified
+  1980-1989
+  ([`listed-1980-1989.json`](../findings/nrhp-nominations/listed-1980-1989.json)).
+- **Not read, and this is the queue in order:**
+  1. **The five district nominations of 1982-1989** — 82000983 Bush
+     Street-Cottage Row, 83001230 Liberty Street, 87002286 Russian
+     Hill-Macondray Lane, 87002288 Russian Hill-Paris Block, 87002289 Russian
+     Hill-Vallejo Street Crest and 89000319 Southern Pacific Company Hospital.
+     All six PDFs are fetched and extracted. **This is the richest unread
+     material in the source** and it is a different kind of document from the
+     rest — see "A district nomination is a per-property inventory" below.
+  2. **69 listings certified 1990 or later** — 1990-1999 (17), 2000-2009 (22),
+     2010-2015 (15), 2016-2023 (15).
+  3. **77000334** (Mills Building and Tower) and **01000281** (Maritime
+     National Historic Site, Fort Mason), whose PDFs have no text layer, and
+     **100008228**, whose `_text` path serves a PNG placeholder.
 - **A caution for the post-2016 group before anyone plans it:** the nine-digit
   reference numbers do **not** serve a PDF at the `_text` path — 100008228 (the
   Timothy L. Pflueger House) returns a 1.6 KB PNG placeholder. Those documents
   need a different route, and finding it is part of that batch.
+
+- **Verified:** 2026-09-06 (second run. Read the Civic Center district
+  nomination (78000757) and the 37 single-building nominations among the 42
+  listings certified 1980-1989 — 38 documents, 77 findings, 71 resolved, 53
+  published on 34 pages, 10 of them seeded by this run. The five district
+  nominations in the same date range are fetched, extracted and unread; they
+  are the next batch and the reason for the new caution above about what a
+  district nomination is.
+
+  What this run learned, beyond the cautions above:
+
+  - **The era-as-batch rule from the first run held, and the form is why.**
+    Every 1980s listing is on the 10-900 form and 33 of the 37 single-building
+    ones fill in both `SPECIFIC DATES` and `BUILDER/ARCHITECT`. Two documents
+    give no street number at all — 86000207, addressed by the block it stands
+    on, and 01000281 at Fort Mason — and one vessel, 86000089, is not a
+    building.
+  - **Splitting the districts out of the era was the right call and should be
+    the default.** A single-building nomination is two or three findings; one
+    of Bloomfield's districts is fifty. Mixing them makes a batch whose size
+    nobody can estimate from its name.
+  - **The declines are the measure of how well the site already covers this
+    source's subjects.** 18 of the 71 resolved findings were declined as
+    duplicates, almost all of them a construction date and an architect a
+    citywide context statement had already put on the page. What survived was
+    the second layer: dated alterations, opening dates, costs, contractors, and
+    the two events of national record in the Civic Center — the signing of the
+    United Nations Charter and of the peace treaty with Japan — which no source
+    already on those pages carried.
+  - **Nine conflicts were recorded and none adjudicated**, four of them a
+    disagreement with the assessor's 1900 placeholder and the rest genuine
+    disagreements between this source and a Planning Department document: 1915
+    against 1916-17 for the State Building competition, 1956 against 1951 for
+    the remodelling of the Supreme Court room, 1922 against 1923 for the Paige
+    Motor Car Company extension, and 1906 against 1913 for St Joseph's rectory.)
 
 - **Verified:** 2026-09-06 (promoted from the leads table, where it had been
   triaged on 2026-08-15 and left, and read end to end in the same run. Read 54

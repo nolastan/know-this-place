@@ -4,6 +4,7 @@ The parcels on Great Highway documented here so far, from the city's address, as
 
 ## Documented so far
 
+- [1622–1626](1622/) — A 1908 three-flat, with window replacement permitted in 2024.
 - [1632–1634](1632/) — A 1908 2-unit apartment building.
 - [1648–1650](1648/) — A two dwellings on one parcel, with a kitchen and bathroom remodel permitted in 2002.
 - [1754](1754/) — A 1908 single-family house, with an addition permitted in 2003.

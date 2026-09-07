@@ -10,6 +10,10 @@ The parcels on Clay Street documented here so far, from the city's address, asse
 - [1850](1850/) — A 1927 20-unit apartment building, with garage work permitted in 2001.
 - [1950](1950/) — A 1930 25-unit apartment building, with window replacement permitted in 2005.
 - [2255](2255/) — A 1935 building, with a kitchen remodel permitted in 2024.
+- [2503](2503/) — A 1900 single-family house, with a seismic retrofit permitted in 2007.
+- [2524](2524/) — An 1880 single-family house, with a rear addition permitted in 2000.
+- [2530](2530/) — A 1900 single-family house, with a bathroom remodel permitted in 2003.
+- [2536](2536/) — A 1900 single-family house, with a seismic retrofit permitted in 2014.
 - [2727](2727/) — A 1910 5-unit apartment building, with a seismic retrofit permitted in 2023.
 - [2853–2857](2853/) — A 1904 three-flat, with garage work permitted in 1993.
 - [3101](3101/) — A 1924 building, with reroofing permitted in 2025.

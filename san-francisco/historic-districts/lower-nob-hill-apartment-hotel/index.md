@@ -22,7 +22,7 @@ The buildings documented here so far inside the Lower Nob Hill Apartment Hotel H
 - [Post Street, Tenderloin](/san-francisco/tenderloin/post-street/) — 41 documented buildings inside the district.
 - [Powell Street](/san-francisco/nob-hill/powell-street/) — 3 documented buildings inside the district.
 - [Stockton Street](/san-francisco/chinatown/stockton-street/) — 4 documented buildings inside the district.
-- [Sutter Street](/san-francisco/nob-hill/sutter-street/) — 30 documented buildings inside the district.
+- [Sutter Street](/san-francisco/nob-hill/sutter-street/) — 31 documented buildings inside the district.
 - [Taylor Street](/san-francisco/tenderloin/taylor-street/) — 7 documented buildings inside the district.
 
 ## Buildings
@@ -194,6 +194,7 @@ The buildings documented here so far inside the Lower Nob Hill Apartment Hotel H
 - [970–972 Sutter Street](/san-francisco/nob-hill/sutter-street/970/) — A 1909 hotel, with a seismic retrofit permitted in 1995.
 - [974–980 Sutter Street](/san-francisco/nob-hill/sutter-street/974/) — A 1908 6-unit apartment building, with a seismic retrofit permitted in 1993.
 - [979 Sutter Street](/san-francisco/nob-hill/sutter-street/979/) — A 1913 24-unit apartment building, with reroofing permitted in 2013.
+- [999 Sutter Street](/san-francisco/nob-hill/sutter-street/999/) — A 1911 office building, with garage work permitted in 2009.
 - [1006–1008 Sutter Street](/san-francisco/nob-hill/sutter-street/1006/) — A 1907 2-unit building with a ground-floor store, with fire repair permitted in 2015.
 - [1025 Sutter Street](/san-francisco/nob-hill/sutter-street/1025/) — A 1913 19-unit apartment building, with an addition permitted in 2020.
 - [1034 Sutter Street](/san-francisco/nob-hill/sutter-street/1034/) — A 1909 12-unit apartment building, with a seismic retrofit permitted in 1993.

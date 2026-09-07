@@ -20,7 +20,7 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Chinatown Historic District](chinatown/) — Eligible for the California and National Registers, significant 1906–1930/1938; 235 buildings documented on 29 streets.
 - [Chula-Abbey Early Residential District](chula-abbey/) — An Article 10 city landmark district, significant 1865–1912; 38 buildings documented on 5 streets.
 - [Chula-Dolores-17th Fire Survivors and Reconstruction Historic District](chula-dolores-17th-fire-survivors-and-reconstruction/) — Eligible for the California Register, significant 1865–1880; 1907–1912; 39 buildings documented on 5 streets.
-- [Civic Center Historic District](civic-center/) — An Article 10 city landmark district, significant 1913–1951; 28 buildings documented on 10 streets.
+- [Civic Center Historic District](civic-center/) — An Article 10 city landmark district, significant 1913–1951; 29 buildings documented on 10 streets.
 - [Clyde and Crooks Historic District](clyde-and-crooks/) — An Article 10 city landmark district, significant 1906–1935; 18 buildings documented on 6 streets.
 - [Cole Valley Historic District](cole-valley/) — Eligible for the California Register, significant 1900–1915; 14 buildings documented on 5 streets.
 - [Commercial-Leidesdorff Conservation District](commercial-leidesdorff/) — An Article 11 conservation district; 18 buildings documented on 7 streets.
@@ -61,7 +61,7 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Lexington and San Carlos Streets Reconstruction Historic District](lexington-and-san-carlos-streets-reconstruction/) — Eligible for the California Register, significant 1906–1915; 44 buildings documented on 4 streets.
 - [Liberty Hill Historic District](liberty-hill/) — An Article 10 city landmark district, significant 1860s–1906; 252 buildings documented on 9 streets.
 - [Liberty Street Historic District](liberty-street/) — Listed on the California and National Registers, significant 1867–1911; 40 buildings documented on 2 streets.
-- [Lower Nob Hill Apartment Hotel Historic District](lower-nob-hill-apartment-hotel/) — Listed on the California and National Registers, significant 1906–1940; 184 buildings documented on 20 streets.
+- [Lower Nob Hill Apartment Hotel Historic District](lower-nob-hill-apartment-hotel/) — Listed on the California and National Registers, significant 1906–1940; 185 buildings documented on 20 streets.
 - [Marina Corporation Residential Historic District](marina-corporation-residential/) — Eligible for the California Register, significant 1922–1939; 33 buildings documented on 11 streets.
 - [Marina Historic District](marina/) — Eligible for the California Register, significant 1930–1940; 11 buildings documented on 5 streets.
 - [Market Street Masonry Historic District](market-street-masonry/) — An Article 10 city landmark district, significant 1911–1925; 8 buildings documented on 4 streets.
@@ -80,13 +80,13 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Picturesque Period Revival Tracts Historic District](picturesque-period-revival-tracts/) — Eligible for the California and National Registers, significant 1931–1938; 86 buildings documented on 8 streets.
 - [Pine-Sansome Conservation District](pine-sansome/) — An Article 11 conservation district; 8 buildings documented on 2 streets.
 - [Powell Street Shops Historic District](powell-street-shops/) — Eligible for the California Register, significant 1906–1924; 7 buildings documented on 2 streets.
-- [Presidio Heights Historic District](presidio-heights/) — Eligible for the California Register, significant 1890–1930; 61 buildings documented on 9 streets.
+- [Presidio Heights Historic District](presidio-heights/) — Eligible for the California Register, significant 1890–1930; 62 buildings documented on 9 streets.
 - [Presidio Terrace Historic District](presidio-terrace/) — Eligible for the California Register, significant 1905–1915; 12 buildings documented on 2 streets.
 - [Ramona Street Historic District](ramona-street/) — Eligible for the California and National Registers, significant 1911–1923; 26 buildings documented on 3 streets.
 - [Raycliff Terrace Historic District](raycliff-terrace/) — Eligible for the California Register, significant 1941–1951; 5 buildings documented on 2 streets.
 - [Russian Hill-Vallejo Street Crest Historic District](russian-hill-vallejo-street-crest/) — Listed on the California and National Registers, significant 1888–1941; 15 buildings documented on 7 streets.
 - [San Francisco 1952 Firehouse Bond Act Thematic District (Discontiguous)](san-francisco-1952-firehouse-bond-act-thematic-district-discontiguous/) — Eligible for the California Register, significant 1952–1961; 10 buildings documented on 10 streets.
-- [San Francisco Civic Center National Historic Landmark District](san-francisco-civic-center-national-historic-landmark-district/) — Listed on the California and National Registers, significant 1913–1951 (I believe this is the POS for the NHL; the NR listing has a POS of 1800–1974, an unusually long range that the CLI attributes to different standards for identfying POS's at the time of the NR nomination (1978)); 5 buildings documented on 4 streets.
+- [San Francisco Civic Center National Historic Landmark District](san-francisco-civic-center-national-historic-landmark-district/) — Listed on the California and National Registers, significant 1913–1951 (I believe this is the POS for the NHL; the NR listing has a POS of 1800–1974, an unusually long range that the CLI attributes to different standards for identfying POS's at the time of the NR nomination (1978)); 6 buildings documented on 5 streets.
 - [San Francisco Neighborhood Movie Theater Historic District (Discontiguous)](san-francisco-neighborhood-movie-theater-discontiguous/) — Eligible for the California and National Registers, significant 1906–1945; 15 buildings documented on 12 streets.
 - [Sea Cliff Historic District](sea-cliff/) — Eligible for the California Register, significant 1913–1935; 29 buildings documented on 8 streets.
 - [Second and Howard Streets Historic District](second-and-howard-streets/) — Listed on the California and National Registers, significant 1906–1912; 22 buildings documented on 4 streets.

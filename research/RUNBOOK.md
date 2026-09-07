@@ -221,6 +221,13 @@ says so, and still prints the assessor's year for the parcel, because a modern
 number can still point at a later building on the lot. It is opt-in, so leaving
 it off is exactly the old behaviour.
 
+**A second address the record states goes in `extra.address_note_as_recorded`** —
+a corner building the source gives on both its frontages, or an archivist's note
+disagreeing with a catalogue title. Where the primary lookup finds no EAS record
+at all, the tool now looks the second one up too and says which parcel it lands
+on, leaving the by-hand call to you. It does not resolve on it: deciding the two
+addresses are the same building is a reading of the record, not a join.
+
 **A range goes in `extra.address_range_as_recorded`, never in `street_number`.**
 The resolver reads the range from that field and looks `street_number` up
 literally, so `"street_number": "809-811"` comes back "EAS has no address near

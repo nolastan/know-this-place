@@ -1335,13 +1335,38 @@ def decide(city: City, f: dict, today: str) -> dict:
                               "page to put it on. EAS leaves addresses unparcelled for rear units, "
                               "vacated lots and addresses in flux; a later pass may find one.")
                              + blk)}
+        # A record that states a second address — a corner building the source
+        # gives on both its frontages, an archivist's note — gets that address
+        # looked up too, and the lookup is reported. It is only reported: the
+        # tool does not resolve on it, because deciding that the second address
+        # is the same building is a reading of the record. Without this the
+        # second frontage is invisible, and one corner factory sat unresolved
+        # on a Folsom Street range EAS had dropped while its 18th Street
+        # number was live on a parcel all along.
+        second = ""
+        if note_addr and note_addr.get("street_name"):
+            n_name, n_type, _ = city.normalize(note_addr["street_name"], note_addr["street_type"])
+            n_numbers = note_addr["numbers"]
+            if len(n_numbers) == 2 and all(x.isdigit() for x in n_numbers):
+                n_numbers = expand_range(*n_numbers)
+            hit = resolve_numbers(city, n_name, n_type, n_numbers) if n_name else {"parcels": {}}
+            quoted = extra.get("address_note_as_recorded")
+            if hit["parcels"]:
+                listed = ", ".join(f"{p} ({', '.join(ns)})" for p, ns in sorted(hit["parcels"].items()))
+                second = (f" The record also states \"{quoted}\", and sf-eas-addresses does hold "
+                          f"that address, on {listed}. Whether it is the same building is a "
+                          f"reading of the record, so resolve it by hand with "
+                          f"\"by_hand\": true if it is.")
+            else:
+                second = (f" The record also states \"{quoted}\", and sf-eas-addresses has no "
+                          f"record for that either.")
         return {"status": "unresolved", "checked_on": today,
                 "method": (f"No record in sf-eas-addresses for {label}"
                            + (f" (checked {', '.join(title_numbers[:8])}"
                               f"{'…' if len(title_numbers) > 8 else ''})"
                               if title_kind == "range" else "") + "." + spelling),
                 "note": ("The address does not exist today, so there is no page it can go on."
-                         + where + blk +
+                         + where + blk + second +
                          " Per \"The evidence bar\" in research/AGENTS.md this is a street-hub "
                          "fact: a dated record of a building at a number the city no longer has.")}
 
