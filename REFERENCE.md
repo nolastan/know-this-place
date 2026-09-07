@@ -29,6 +29,7 @@ pattern, and always include `address` and non-empty `sources`:
   "address": "123 Example Street, San Francisco, CA 94114",
   "path": "/san-francisco/castro/example-street/123/",
   "hook": "One concrete sentence, under 22 words, for the street hub's list. No superlatives.",
+  "sub_area": "Optional. Overrides the neighborhood line under the address.",
   "apn": "0000-000",
   "coordinates": { "lat": 37.0, "lng": -122.0 },
   "parcel": { "year_built": 1904, "land_use": "...", "units": 2 },
@@ -319,14 +320,19 @@ never invents a page. Pages carry no marker saying who wrote them, because
 there is nothing to decide — the facts are yours to edit either way, and the
 HTML is never yours to edit at all.
 
-### The render backlog
+### The render backlog, and why there isn't one
 
-`render` holds back every page listed in `scripts/render-backlog.txt` and names
-the ones it skipped. Those are pages whose committed HTML predates the parity
-check and is not what the renderer produces — hand-written prose, mostly — so
-rendering one destroys the drift instead of resolving it. Overwriting them is
-the render sweep's job and takes `--include-backlogged` plus a person who has
-read the diff.
+`scripts/render-backlog.txt` used to grandfather 968 pages whose committed HTML
+the renderer could not reproduce. The sweep emptied it and the file is gone, so
+`render` now holds nothing back and `validate.py` checks parity on every page.
+`--include-backlogged` remains a no-op flag for the same reason.
+
+What the sweep taught is worth keeping: **on the pages that had drifted, most of
+what the renderer "could not reproduce" was content sitting in `data.json` under
+a key nothing read.** Before concluding a page needs hand-maintained HTML, grep
+its `data.json` for the fact you think is stranded — it was there 25 times out of
+the 119 the sweep first looked like it would delete, and the fix each time was a
+row in the renderer, not an exemption.
 
 ### `"rendered": false`
 

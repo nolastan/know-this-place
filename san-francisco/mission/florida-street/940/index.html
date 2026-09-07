@@ -34,6 +34,37 @@
     "description": "940 Florida Street, San Francisco: a 1900 single-family house — assessment and historic status from city records, fully cited."
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "San Francisco",
+        "item": "https://knowthis.place/san-francisco/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Mission",
+        "item": "https://knowthis.place/san-francisco/mission/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Florida Street",
+        "item": "https://knowthis.place/san-francisco/mission/florida-street/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "940"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 <header class="site-header">
@@ -62,7 +93,6 @@
       <h1>940 Florida Street</h1>
       <p class="sub">Mission · San Francisco, CA 94110</p>
       <ul class="tags">
-        <li class="tag"><span class="ic ic-calendar"></span>Built 1900</li>
         <li class="tag"><span class="ic ic-home"></span>Single-family house</li>
         <li class="tag"><span class="ic ic-layers"></span>1 story</li>
         <li class="tag"><span class="ic ic-plan"></span>Zoned RH-2</li>
@@ -87,8 +117,14 @@
     <div class="stat"><span class="ic ic-home"></span><span class="stat-val">5</span><span class="stat-label">Rooms · 1 bath</span></div>
   </div>
 
-  <section class="panel">
-    <h3>Assessed value · 2025 roll</h3>
+  <ol class="vtl" aria-label="Timeline">
+    <li class="vtl-item">
+      <div class="vtl-date">1900</div>
+      <p class="vtl-desc">Built.</p>
+    </li>
+  </ol>
+
+  <section>
     <ktp-figure>
       <div class="stack" role="group" aria-label="Assessed value breakdown">
         <div class="stack-seg seg-cool" style="width:45.8%" tabindex="0" data-tip="Land · $119,464 · 45.8%" aria-label="Land, $119,464, 45.8 percent"></div>
@@ -106,11 +142,31 @@
     <dl class="speclist">
       <div class="spec"><span class="ic ic-plan"></span><span class="spec-k">Construction</span><span class="spec-v">Wood frame</span></div>
       <div class="spec"><span class="ic ic-pin"></span><span class="spec-k">Parcel</span><span class="spec-v">Block 4146, Lot 007</span></div>
-      <div class="spec"><span class="ic ic-permit"></span><span class="spec-k">Historic status</span><span class="spec-v">CEQA C — not a historical resource</span></div>
       <div class="spec"><span class="ic ic-clock"></span><span class="spec-k">Permits on file</span><span class="spec-v">None</span></div>
     </dl>
   </section>
 
+  <section class="nearby">
+    <div class="section-head"><span class="ic ic-pin"></span><h2>Nearby</h2></div>
+    <ul class="place-list">
+      <li><a href="/san-francisco/mission/florida-street/932/">932 Florida Street</a>
+        <span class="pill pill-muted">Same street</span></li>
+      <li><a href="/san-francisco/mission/florida-street/944/">944 Florida Street</a>
+        <span class="pill pill-muted">Same street</span></li>
+      <li><a href="/san-francisco/mission/florida-street/930/">930 Florida Street</a>
+        <span class="pill pill-muted">Same block</span></li>
+      <li><a href="/san-francisco/mission/florida-street/950/">950 Florida Street</a>
+        <span class="pill pill-muted">Same block</span></li>
+      <li><a href="/san-francisco/mission/florida-street/924/">924 Florida Street</a>
+        <span class="pill pill-muted">Same block</span></li>
+      <li><a href="/san-francisco/mission/florida-street/954/">954 Florida Street</a>
+        <span class="pill pill-muted">Same block</span></li>
+      <li><a href="/san-francisco/mission/21st-street/2775/">2775 21st Street</a>
+        <span class="pill pill-muted">Around the corner</span></li>
+      <li><a href="/san-francisco/mission/21st-street/2773/">2773 21st Street</a>
+        <span class="pill pill-muted">Around the corner</span></li>
+    </ul>
+  </section>
 </main>
 
 <footer class="site-footer">

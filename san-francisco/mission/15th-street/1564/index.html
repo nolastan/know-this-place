@@ -34,6 +34,37 @@
     "description": "1564 15th Street, San Francisco: a 1928 4-unit apartment building — permits, assessment and historic status from city records, fully cited."
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "San Francisco",
+        "item": "https://knowthis.place/san-francisco/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Mission",
+        "item": "https://knowthis.place/san-francisco/mission/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "15th Street",
+        "item": "https://knowthis.place/san-francisco/mission/15th-street/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "1564"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 <header class="site-header">
@@ -62,7 +93,6 @@
       <h1>1564 15th Street</h1>
       <p class="sub">Mission · San Francisco, CA 94103</p>
       <ul class="tags">
-        <li class="tag"><span class="ic ic-calendar"></span>Built 1928</li>
         <li class="tag"><span class="ic ic-home"></span>4-unit apartment building</li>
         <li class="tag"><span class="ic ic-layers"></span>2 stories</li>
         <li class="tag"><span class="ic ic-plan"></span>Zoned CM</li>
@@ -87,57 +117,70 @@
     <div class="stat"><span class="ic ic-home"></span><span class="stat-val">12</span><span class="stat-label">Rooms · 4 baths</span></div>
   </div>
 
-  <div class="cols">
-    <div class="main">
-      <div class="section-head"><span class="ic ic-clock"></span><h2>Permit history</h2></div>
-      <ol class="vtl">
-        <li class="vtl-item is-muted">
-          <div class="vtl-date">Sep 1997</div>
-          <p class="vtl-desc">Reroofing.</p>
-          <div class="vtl-meta">
-            <span class="pill pill-muted"><span class="ic ic-help"></span>Expired</span>
-            <a href="https://dbiweb02.sfgov.org/dbipts/default.aspx?page=Permit&amp;PermitNumber=9719017">Permit 9719017</a>
-            <span class="cost" data-tier="1" aria-label="Estimated cost under $5,000"><b>$</b><b>$</b><b>$</b></span>
-            <span class="cost-amt">$4,000</span>
-          </div>
-        </li>
-      </ol>
-    </div>
+  <ol class="vtl" aria-label="Timeline">
+    <li class="vtl-item">
+      <div class="vtl-date">1928</div>
+      <p class="vtl-desc">Built.</p>
+    </li>
+    <li class="vtl-item is-muted">
+      <div class="vtl-date">Sep 1997</div>
+      <p class="vtl-desc">Reroofing.</p>
+      <div class="vtl-meta">
+        <span class="pill pill-muted"><span class="ic ic-help"></span>Expired</span>
+        <a href="https://dbiweb02.sfgov.org/dbipts/default.aspx?page=Permit&amp;PermitNumber=9719017">Permit 9719017</a>
+        <span class="cost" data-tier="1" aria-label="Estimated cost under $5,000"><b>$</b><b>$</b><b>$</b></span>
+        <span class="cost-amt">$4,000</span>
+      </div>
+    </li>
+  </ol>
 
-    <aside class="aside">
-      <section>
-        <ktp-figure>
-          <div class="stack" role="group" aria-label="Assessed value breakdown">
-            <div class="stack-seg seg-cool" style="width:58.0%" tabindex="0" data-tip="Land · $361,168 · 58.0%" aria-label="Land, $361,168, 58.0 percent"></div>
-            <div class="stack-seg seg-warm" style="width:42.0%" tabindex="0" data-tip="Improvements · $261,266 · 42.0%" aria-label="Improvements, $261,266, 42.0 percent"></div>
-          </div>
-          <div class="legend">
-            <span class="legend-item"><span class="swatch seg-cool"></span><span>Land</span>&nbsp;<b>$361,168</b></span>
-            <span class="legend-item"><span class="swatch seg-warm"></span><span>Improvements</span>&nbsp;<b>$261,266</b></span>
-          </div>
-          <div class="legend" style="margin-top:.5rem"><span class="legend-item"><span>Total assessed</span>&nbsp;<b>$622,434</b></span></div>
-        </ktp-figure>
-      </section>
-      <section class="panel">
-        <h3>At a glance</h3>
-        <dl class="speclist">
-          <div class="spec"><span class="ic ic-plan"></span><span class="spec-k">Construction</span><span class="spec-v">Wood frame</span></div>
-          <div class="spec"><span class="ic ic-pin"></span><span class="spec-k">Parcel</span><span class="spec-v">Block 3548, Lot 027</span></div>
-          <div class="spec"><span class="ic ic-value"></span><span class="spec-k">Last sale</span><span class="spec-v">May 11, 2000</span></div>
-          <div class="spec"><span class="ic ic-permit"></span><span class="spec-k">Historic status</span><span class="spec-v">CEQA C — not a historical resource</span></div>
-        </dl>
-      </section>
-      <section class="panel">
-        <h3>Inner Mission North Context Statement, adopted 2004</h3>
-        <dl class="speclist">
-          <div class="spec"><span class="ic ic-plan"></span><span class="spec-k">District</span><span class="spec-v">Inner Mission Commercial Corridor</span></div>
-          <div class="spec"><span class="ic ic-permit"></span><span class="spec-k">Survey finding</span><span class="spec-v">Non-contributor</span></div>
-        </dl>
-        <p class="prose"><small>Non-contributor to the Inner Mission Commercial Corridor locally significant area (1564 15th St). Formerly called the 16th Street Commercial Corridor. Criterion C: San Francisco's largest concentration of residential-over-commercial and small-scale commercial buildings, spanning both pre-1906 and post-disaster construction, dated c. 1870s–1931.</small></p>
-      </section>
-    </aside>
-  </div>
+  <section>
+    <ktp-figure>
+      <div class="stack" role="group" aria-label="Assessed value breakdown">
+        <div class="stack-seg seg-cool" style="width:58.0%" tabindex="0" data-tip="Land · $361,168 · 58.0%" aria-label="Land, $361,168, 58.0 percent"></div>
+        <div class="stack-seg seg-warm" style="width:42.0%" tabindex="0" data-tip="Improvements · $261,266 · 42.0%" aria-label="Improvements, $261,266, 42.0 percent"></div>
+      </div>
+      <div class="legend">
+        <span class="legend-item"><span class="swatch seg-cool"></span><span>Land</span>&nbsp;<b>$361,168</b></span>
+        <span class="legend-item"><span class="swatch seg-warm"></span><span>Improvements</span>&nbsp;<b>$261,266</b></span>
+      </div>
+      <div class="legend" style="margin-top:.5rem"><span class="legend-item"><span>Total assessed</span>&nbsp;<b>$622,434</b></span></div>
+    </ktp-figure>
+  </section>
+  <section class="panel">
+    <h3>At a glance</h3>
+    <dl class="speclist">
+      <div class="spec"><span class="ic ic-plan"></span><span class="spec-k">Construction</span><span class="spec-v">Wood frame</span></div>
+      <div class="spec"><span class="ic ic-pin"></span><span class="spec-k">Parcel</span><span class="spec-v">Block 3548, Lot 027</span></div>
+      <div class="spec"><span class="ic ic-value"></span><span class="spec-k">Last sale</span><span class="spec-v">May 11, 2000</span></div>
+    </dl>
+  </section>
+  <section class="panel">
+    <h3>Inner Mission North Context Statement, adopted 2004</h3>
+    <p class="prose"><small>Non-contributor to the Inner Mission Commercial Corridor locally significant area (1564 15th St). Formerly called the 16th Street Commercial Corridor. Criterion C: San Francisco's largest concentration of residential-over-commercial and small-scale commercial buildings, spanning both pre-1906 and post-disaster construction, dated c. 1870s–1931.</small></p>
+  </section>
 
+  <section class="nearby">
+    <div class="section-head"><span class="ic ic-pin"></span><h2>Nearby</h2></div>
+    <ul class="place-list">
+      <li><a href="/san-francisco/mission/15th-street/1548/">1548 15th Street</a>
+        <span class="pill pill-muted">Same street</span></li>
+      <li><a href="/san-francisco/mission/15th-street/1637/">1637 15th Street</a>
+        <span class="pill pill-muted">Same street</span></li>
+      <li><a href="/san-francisco/mission/minna-street/1397/">1397 Minna Street</a>
+        <span class="pill pill-muted">Same block</span></li>
+      <li><a href="/san-francisco/mission/minna-street/1381/">1381–1385 Minna Street</a>
+        <span class="pill pill-muted">Same block</span></li>
+      <li><a href="/san-francisco/mission/15th-street/1544/">1544–1546 15th Street</a>
+        <span class="pill pill-muted">Same block</span></li>
+      <li><a href="/san-francisco/mission/minna-street/1371/">1371–1379 Minna Street</a>
+        <span class="pill pill-muted">Same block</span></li>
+      <li><a href="/san-francisco/mission/mission-street/1905/">1905–1911 Mission Street</a>
+        <span class="pill pill-muted">Around the corner</span></li>
+      <li><a href="/san-francisco/mission/capp-street/17/">17–21 Capp Street</a>
+        <span class="pill pill-muted">Around the corner</span></li>
+    </ul>
+  </section>
 </main>
 
 <footer class="site-footer">

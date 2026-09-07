@@ -1367,7 +1367,13 @@ def permit_items(rec: dict, indent: str) -> tuple:
     for p in permits:
         cost = p.get("estimated_cost") or p.get("revised_cost") or 0
         desc = (p.get("description") or "").lower()
-        if not note and cost <= 1 and re.search(r"street space|sidewalk", desc):
+        # A permit somebody wrote a sentence for is one they decided belongs on
+        # the page, so the nominal-filing filter lets it through. Without that,
+        # a $1 revision to a garage permit that happens to say "minor sidewalk
+        # encroachment" is dropped as a street-space filing, which is what it
+        # is not.
+        if (not note and cost <= 1 and not p.get("description_edited")
+                and re.search(r"street space|sidewalk", desc)):
             omitted += 1
             continue
         shown.append(p)
@@ -1538,8 +1544,16 @@ def timeline_html(rec: dict, indent: str) -> str:
     # `open_questions` and `building_history.conflict` are `unknowns` under
     # other spellings, on one page and five: a disagreement in the record,
     # stated and left unadjudicated. Same slot, same line.
+    #
+    # So are `parcel.note` and `assessment.note`, on 47 pages and 19: "the
+    # assessor reports 0 stories for this parcel — a data gap, not a
+    # measurement", "the most recent roll carrying this parcel is 2018, not
+    # 2025". Each says how far to trust a figure the page prints, which is the
+    # one thing this line is for, and no key read them.
     for t in [disclosure, *dating_conflicts(rec),
               (rec.get("building_history") or {}).get("conflict"),
+              (rec.get("parcel") or {}).get("note"),
+              (rec.get("assessment") or {}).get("note"),
               *(rec.get("unknowns") or []), *(rec.get("open_questions") or [])]:
         t = str(t).strip() if t else ""
         if t and t not in seen:
@@ -1691,6 +1705,16 @@ def historical_items(rec: dict, indent: str) -> list:
             row = (f'{indent}      <a href="{esca(href)}">{esc(meta)}</a>\n' if href
                    else f'{indent}      <span>{esc(meta)}</span>\n')
         desc = esc(e.get("description", ""))
+        # What the record stated about the site beyond the fact itself — the lot
+        # as the contract gave it, the corner it named. REFERENCE.md has always
+        # listed these as legitimate entry keys and nothing rendered them, so a
+        # contract's own dimensions reached no reader. Ten entries carry one.
+        for label, key in (("Site as recorded", "site_as_recorded"),
+                           ("Lot as recorded", "lot_as_recorded"),
+                           ("Cross streets", "cross_streets")):
+            val = e.get(key)
+            if val:
+                desc += f" {esc(label)}: {esc(str(val).rstrip('.'))}."
         # A news entry is the article's headline, the outlet and the date, and
         # nothing else: we never restate a living outlet's reporting in our own
         # words, so it carries `headline`/`outlet`/`url` in place of a
@@ -1736,6 +1760,21 @@ CR_STATUS_MEANING = {
 }
 
 
+def survey_entry_description(s: dict) -> str | None:
+    """What a survey's inventory rows call the building, deduplicated.
+
+    A survey that reached two structures on one parcel — a church and its
+    rectory — has a row for each, and both descriptions belong. A survey that
+    listed the same building twice under two street numbers has one.
+    """
+    seen = []
+    for e in s.get("entries") or []:
+        d = (e or {}).get("description")
+        if d and d not in seen:
+            seen.append(d)
+    return "; ".join(seen) or None
+
+
 def cr_status(code) -> str | None:
     """A California Register status code, expanded where we know the wording."""
     if not code:
@@ -1774,6 +1813,12 @@ def one_survey_panel_html(s: dict, indent: str) -> str:
             # is the point of the page's citation — it belongs in a row, not
             # buried in the note under it.
             ("ic-permit", "Survey finding", s.get("finding")),
+            # How the survey itself described the building — "Classical Revival
+            # mixed-use commercial and residential building". It sits in
+            # `entries`, the survey's own inventory rows, which the panel
+            # otherwise has no reason to open: everything else in a row is the
+            # address and APN the survey used, and those have rows already.
+            ("ic-home", "Described as", survey_entry_description(s)),
             # `cr_status_code` is the Bayview Area B survey's spelling of the
             # same fact. The 156 pages carrying it use it *instead* of
             # `proposed_status_code` — never alongside — so one row serves
@@ -2486,7 +2531,14 @@ def render_html(rec: dict) -> str:
     # The street name comes off the address itself, so rendering never has to
     # reverse-engineer a slug.
     street_name = title.split(" ", 1)[1]
-    sub_line = AREA_SUB.get((city_slug, area_slug), area_name)
+    # The line under the address names the neighborhood the page is filed
+    # under. `sub_area` overrides it for a building that sits in a smaller
+    # named place a reader would recognise first — Telegraph Hill inside North
+    # Beach, Jackson Square inside Chinatown, Alamo Square inside Hayes
+    # Valley. `AREA_SUB` cannot say it: it is keyed by directory, and these are
+    # true of some pages in the directory and not others.
+    sub_line = (rec.get("sub_area")
+                or AREA_SUB.get((city_slug, area_slug), area_name))
     # `address_range` comes in two shapes — the "100–102" string `build_record`
     # writes, and the {low, high, …} object a hand-edited page may carry. The
     # crumb and the JSON-LD both read it, so both go through `range_label`;

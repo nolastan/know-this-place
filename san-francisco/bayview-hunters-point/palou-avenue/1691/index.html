@@ -34,6 +34,37 @@
     "description": "1691 Palou Avenue, San Francisco: an 1890 single-family house — permits, assessment and historic status from city records, fully cited."
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "San Francisco",
+        "item": "https://knowthis.place/san-francisco/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Bayview Hunters Point",
+        "item": "https://knowthis.place/san-francisco/bayview-hunters-point/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Palou Avenue",
+        "item": "https://knowthis.place/san-francisco/bayview-hunters-point/palou-avenue/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "1691"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 <header class="site-header">
@@ -62,13 +93,11 @@
       <h1>1691 Palou Avenue</h1>
       <p class="sub">Bayview Hunters Point · San Francisco, CA 94124</p>
       <ul class="tags">
-        <li class="tag"><span class="ic ic-calendar"></span>Built 1890</li>
         <li class="tag"><span class="ic ic-home"></span>Single-family house</li>
         <li class="tag"><span class="ic ic-layers"></span>2 stories</li>
         <li class="tag"><span class="ic ic-plan"></span>Zoned RH-2</li>
         <li class="tag"><span class="ic ic-pin"></span>District 10</li>
         <li class="tag"><span class="ic ic-permit"></span>Historic status: unevaluated</li>
-        <li class="tag"><span class="ic ic-ruler"></span>Italianate dwelling</li>
       </ul>
     </div>
     <ktp-streetview location="37.734726,-122.392762" label="1691 Palou Avenue">
@@ -90,8 +119,11 @@
 
   <div class="cols">
     <div class="main">
-      <div class="section-head"><span class="ic ic-clock"></span><h2>Permit history</h2></div>
-      <ol class="vtl">
+      <ol class="vtl" aria-label="Timeline">
+        <li class="vtl-item">
+          <div class="vtl-date">1890</div>
+          <p class="vtl-desc">Built.</p>
+        </li>
         <li class="vtl-item">
           <div class="vtl-date">Jul 2005</div>
           <p class="vtl-desc">To comply with nov 200559621, re frame selveral rear walls, roof floor joists etc.</p>
@@ -155,13 +187,40 @@
           <div class="spec"><span class="ic ic-plan"></span><span class="spec-k">Construction</span><span class="spec-v">Wood frame</span></div>
           <div class="spec"><span class="ic ic-pin"></span><span class="spec-k">Parcel</span><span class="spec-v">Block 5327, Lot 032</span></div>
           <div class="spec"><span class="ic ic-value"></span><span class="spec-k">Last sale</span><span class="spec-v">December 15, 2010</span></div>
-          <div class="spec"><span class="ic ic-permit"></span><span class="spec-k">Historic status</span><span class="spec-v">CEQA B — unevaluated</span></div>
-          <div class="spec"><span class="ic ic-permit"></span><span class="spec-k">Area B survey (2010)</span><span class="spec-v">3CS — may be eligible for the California Register</span></div>
         </dl>
+      </section>
+      <section class="panel">
+        <h3>Bayview-Hunters Point Area B Survey, Town Center Activity Node</h3>
+        <dl class="speclist">
+          <div class="spec"><span class="ic ic-home"></span><span class="spec-k">Described as</span><span class="spec-v">Italianate dwelling</span></div>
+          <div class="spec"><span class="ic ic-permit"></span><span class="spec-k">Status code</span><span class="spec-v">3CS — may be eligible for the California Register</span></div>
+        </dl>
+        <p class="prose"><small>Assigned on architectural criteria alone; the survey records it as provisional pending further research.</small></p>
       </section>
     </aside>
   </div>
 
+  <section class="nearby">
+    <div class="section-head"><span class="ic ic-pin"></span><h2>Nearby</h2></div>
+    <ul class="place-list">
+      <li><a href="/san-francisco/bayview-hunters-point/palou-avenue/1687/">1687 Palou Avenue</a>
+        <span class="pill pill-muted">Same street</span></li>
+      <li><a href="/san-francisco/bayview-hunters-point/palou-avenue/1730/">1730 Palou Avenue</a>
+        <span class="pill pill-muted">Same street</span></li>
+      <li><a href="/san-francisco/bayview-hunters-point/palou-avenue/1675/">1675–1677 Palou Avenue</a>
+        <span class="pill pill-muted">Same block</span></li>
+      <li><a href="/san-francisco/bayview-hunters-point/palou-avenue/1669/">1669 Palou Avenue</a>
+        <span class="pill pill-muted">Same block</span></li>
+      <li><a href="/san-francisco/bayview-hunters-point/quesada-avenue/1770/">1770 Quesada Avenue</a>
+        <span class="pill pill-muted">Same block</span></li>
+      <li><a href="/san-francisco/bayview-hunters-point/palou-avenue/1661/">1661 Palou Avenue</a>
+        <span class="pill pill-muted">Same block</span></li>
+      <li><a href="/san-francisco/bayview-hunters-point/newhall-street/1540/">1540 Newhall Street</a>
+        <span class="pill pill-muted">Around the corner</span></li>
+      <li><a href="/san-francisco/bayview-hunters-point/newhall-street/1440/">1440 Newhall Street</a>
+        <span class="pill pill-muted">Around the corner</span></li>
+    </ul>
+  </section>
 </main>
 
 <footer class="site-footer">
@@ -176,7 +235,7 @@
         <a href="https://data.sfgov.org/resource/i98e-djp9.json?block=5327&amp;lot=032">retrieved 2026-08-11</a></li>
       <li>SF Planning Department, Historic Resource Status by Parcel via DataSF —
         <a href="https://data.sfgov.org/resource/3tsw-4idn.json?apn=5327032">retrieved 2026-08-11</a></li>
-      <li>Kelley &amp; VerPlanck, Bayview-Hunters Point Area B Survey historic context statement, adopted February 11, 2010 —
+      <li>Kelley &amp; VerPlanck Historical Resources Consulting, Bayview-Hunters Point Area B Survey: Town Center Activity Node, Historic Context Statement, prepared for the San Francisco Redevelopment Agency, adopted February 11, 2010 —
         <a href="https://sfplanning.org/project/sf-histories-historic-context-statements#completed">retrieved 2026-08-11</a></li>
     </ul>
   </section>

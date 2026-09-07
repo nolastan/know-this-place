@@ -34,6 +34,37 @@
     "description": "2130 Third Street, San Francisco: a 1947 office building — permits, assessment and historic status from city records, fully cited."
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "San Francisco",
+        "item": "https://knowthis.place/san-francisco/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Dogpatch",
+        "item": "https://knowthis.place/san-francisco/dogpatch/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Third Street",
+        "item": "https://knowthis.place/san-francisco/dogpatch/3rd-street/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "2130"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 <header class="site-header">
@@ -62,7 +93,6 @@
       <h1>2130 Third Street</h1>
       <p class="sub">Dogpatch · San Francisco, CA 94107</p>
       <ul class="tags">
-        <li class="tag"><span class="ic ic-calendar"></span>Built 1947</li>
         <li class="tag"><span class="ic ic-home"></span>Office building</li>
         <li class="tag"><span class="ic ic-layers"></span>3 stories</li>
         <li class="tag"><span class="ic ic-plan"></span>Zoned UMU</li>
@@ -88,8 +118,11 @@
 
   <div class="cols">
     <div class="main">
-      <div class="section-head"><span class="ic ic-clock"></span><h2>Permit history</h2></div>
-      <ol class="vtl">
+      <ol class="vtl" aria-label="Timeline">
+        <li class="vtl-item">
+          <div class="vtl-date">1947</div>
+          <p class="vtl-desc">Built.</p>
+        </li>
         <li class="vtl-item">
           <div class="vtl-date">Jul 2008</div>
           <p class="vtl-desc">Removal of exterior sign per sq ft planning notice of violation case# 9610. see attached photo.</p>
@@ -167,8 +200,7 @@
         <h3>At a glance</h3>
         <dl class="speclist">
           <div class="spec"><span class="ic ic-pin"></span><span class="spec-k">Parcel</span><span class="spec-v">Block 4044, Lot 052</span></div>
-          <div class="spec"><span class="ic ic-pin"></span><span class="spec-k">Also addressed</span><span class="spec-v">601 18Th St, 675 18Th St, 729 Tennessee St</span></div>
-          <div class="spec"><span class="ic ic-permit"></span><span class="spec-k">Historic status</span><span class="spec-v">CEQA C — not a historical resource</span></div>
+          <div class="spec"><span class="ic ic-pin"></span><span class="spec-k">Also addressed</span><span class="spec-v">601 18th Street, 675 18th Street, 729 Tennessee Street</span></div>
         </dl>
       </section>
       <section class="panel">
@@ -181,6 +213,21 @@
     </aside>
   </div>
 
+  <section class="nearby">
+    <div class="section-head"><span class="ic ic-pin"></span><h2>Nearby</h2></div>
+    <ul class="place-list">
+      <li><a href="/san-francisco/potrero-hill/3rd-street/1900/">1900 3rd Street</a>
+        <span class="pill pill-muted">Same street</span></li>
+      <li><a href="/san-francisco/dogpatch/3rd-street/2225/">2225–2265 3rd Street</a>
+        <span class="pill pill-muted">Same street</span></li>
+      <li><a href="/san-francisco/dogpatch/tennessee-street/704/">704 Tennessee Street</a>
+        <span class="pill pill-muted">Around the corner</span></li>
+      <li><a href="/san-francisco/dogpatch/tennessee-street/730/">730–732 Tennessee Street</a>
+        <span class="pill pill-muted">Around the corner</span></li>
+      <li><a href="/san-francisco/dogpatch/18th-street/707/">707 18th Street</a>
+        <span class="pill pill-muted">Around the corner</span></li>
+    </ul>
+  </section>
 </main>
 
 <footer class="site-footer">

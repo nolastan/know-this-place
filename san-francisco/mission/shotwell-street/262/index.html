@@ -34,6 +34,37 @@
     "description": "262 Shotwell Street, San Francisco: a 1910 single-family house — permits, assessment and historic status from city records, fully cited."
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "San Francisco",
+        "item": "https://knowthis.place/san-francisco/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Mission",
+        "item": "https://knowthis.place/san-francisco/mission/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Shotwell Street",
+        "item": "https://knowthis.place/san-francisco/mission/shotwell-street/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "262"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 <header class="site-header">
@@ -62,7 +93,6 @@
       <h1>262 Shotwell Street</h1>
       <p class="sub">Mission · San Francisco, CA 94110</p>
       <ul class="tags">
-        <li class="tag"><span class="ic ic-calendar"></span>Built 1910</li>
         <li class="tag"><span class="ic ic-home"></span>Single-family house</li>
         <li class="tag"><span class="ic ic-layers"></span>1 story</li>
         <li class="tag"><span class="ic ic-plan"></span>Zoned M1</li>
@@ -87,57 +117,70 @@
     <div class="stat"><span class="ic ic-home"></span><span class="stat-val">5</span><span class="stat-label">Rooms · 2 bed, 1 bath</span></div>
   </div>
 
-  <div class="cols">
-    <div class="main">
-      <div class="section-head"><span class="ic ic-clock"></span><h2>Permit history</h2></div>
-      <ol class="vtl">
-        <li class="vtl-item is-muted">
-          <div class="vtl-date">Feb 1982</div>
-          <p class="vtl-desc">Additions alterations or repairs.</p>
-          <div class="vtl-meta">
-            <span class="pill pill-muted"><span class="ic ic-help"></span>Cancelled</span>
-            <a href="https://dbiweb02.sfgov.org/dbipts/default.aspx?page=Permit&amp;PermitNumber=8201253">Permit 8201253</a>
-            <span class="cost" data-tier="1" aria-label="Estimated cost under $5,000"><b>$</b><b>$</b><b>$</b></span>
-            <span class="cost-amt">$1,000</span>
-          </div>
-        </li>
-      </ol>
-    </div>
+  <ol class="vtl" aria-label="Timeline">
+    <li class="vtl-item">
+      <div class="vtl-date">1910</div>
+      <p class="vtl-desc">Built.</p>
+    </li>
+    <li class="vtl-item is-muted">
+      <div class="vtl-date">Feb 1982</div>
+      <p class="vtl-desc">Additions alterations or repairs.</p>
+      <div class="vtl-meta">
+        <span class="pill pill-muted"><span class="ic ic-help"></span>Cancelled</span>
+        <a href="https://dbiweb02.sfgov.org/dbipts/default.aspx?page=Permit&amp;PermitNumber=8201253">Permit 8201253</a>
+        <span class="cost" data-tier="1" aria-label="Estimated cost under $5,000"><b>$</b><b>$</b><b>$</b></span>
+        <span class="cost-amt">$1,000</span>
+      </div>
+    </li>
+  </ol>
 
-    <aside class="aside">
-      <section>
-        <ktp-figure>
-          <div class="stack" role="group" aria-label="Assessed value breakdown">
-            <div class="stack-seg seg-cool" style="width:70.0%" tabindex="0" data-tip="Land · $1,163,820 · 70.0%" aria-label="Land, $1,163,820, 70.0 percent"></div>
-            <div class="stack-seg seg-warm" style="width:30.0%" tabindex="0" data-tip="Improvements · $498,780 · 30.0%" aria-label="Improvements, $498,780, 30.0 percent"></div>
-          </div>
-          <div class="legend">
-            <span class="legend-item"><span class="swatch seg-cool"></span><span>Land</span>&nbsp;<b>$1,163,820</b></span>
-            <span class="legend-item"><span class="swatch seg-warm"></span><span>Improvements</span>&nbsp;<b>$498,780</b></span>
-          </div>
-          <div class="legend" style="margin-top:.5rem"><span class="legend-item"><span>Total assessed</span>&nbsp;<b>$1,662,600</b></span></div>
-        </ktp-figure>
-      </section>
-      <section class="panel">
-        <h3>At a glance</h3>
-        <dl class="speclist">
-          <div class="spec"><span class="ic ic-plan"></span><span class="spec-k">Construction</span><span class="spec-v">Wood frame</span></div>
-          <div class="spec"><span class="ic ic-pin"></span><span class="spec-k">Parcel</span><span class="spec-v">Block 3571, Lot 004C</span></div>
-          <div class="spec"><span class="ic ic-value"></span><span class="spec-k">Last sale</span><span class="spec-v">April 5, 2024</span></div>
-          <div class="spec"><span class="ic ic-permit"></span><span class="spec-k">Historic status</span><span class="spec-v">CEQA C — not a historical resource</span></div>
-        </dl>
-      </section>
-      <section class="panel">
-        <h3>Inner Mission North Context Statement, adopted 2004</h3>
-        <dl class="speclist">
-          <div class="spec"><span class="ic ic-plan"></span><span class="spec-k">District</span><span class="spec-v">Mission Reconstruction District</span></div>
-          <div class="spec"><span class="ic ic-permit"></span><span class="spec-k">Survey finding</span><span class="spec-v">Contributor</span></div>
-        </dl>
-        <p class="prose"><small>Contributor to the Mission Reconstruction District locally significant area (262 Shotwell). Criterion C: the survey's proposed district for the northern Mission's rebuilding after the 1906 earthquake and fire, period of significance May 1906–1913, predominantly Classical Revival, Edwardian and Mission Revival in wood frame construction.</small></p>
-      </section>
-    </aside>
-  </div>
+  <section>
+    <ktp-figure>
+      <div class="stack" role="group" aria-label="Assessed value breakdown">
+        <div class="stack-seg seg-cool" style="width:70.0%" tabindex="0" data-tip="Land · $1,163,820 · 70.0%" aria-label="Land, $1,163,820, 70.0 percent"></div>
+        <div class="stack-seg seg-warm" style="width:30.0%" tabindex="0" data-tip="Improvements · $498,780 · 30.0%" aria-label="Improvements, $498,780, 30.0 percent"></div>
+      </div>
+      <div class="legend">
+        <span class="legend-item"><span class="swatch seg-cool"></span><span>Land</span>&nbsp;<b>$1,163,820</b></span>
+        <span class="legend-item"><span class="swatch seg-warm"></span><span>Improvements</span>&nbsp;<b>$498,780</b></span>
+      </div>
+      <div class="legend" style="margin-top:.5rem"><span class="legend-item"><span>Total assessed</span>&nbsp;<b>$1,662,600</b></span></div>
+    </ktp-figure>
+  </section>
+  <section class="panel">
+    <h3>At a glance</h3>
+    <dl class="speclist">
+      <div class="spec"><span class="ic ic-plan"></span><span class="spec-k">Construction</span><span class="spec-v">Wood frame</span></div>
+      <div class="spec"><span class="ic ic-pin"></span><span class="spec-k">Parcel</span><span class="spec-v">Block 3571, Lot 004C</span></div>
+      <div class="spec"><span class="ic ic-value"></span><span class="spec-k">Last sale</span><span class="spec-v">April 5, 2024</span></div>
+    </dl>
+  </section>
+  <section class="panel">
+    <h3>Inner Mission North Context Statement, adopted 2004</h3>
+    <p class="prose"><small>Contributor to the Mission Reconstruction District locally significant area (262 Shotwell). Criterion C: the survey's proposed district for the northern Mission's rebuilding after the 1906 earthquake and fire, period of significance May 1906–1913, predominantly Classical Revival, Edwardian and Mission Revival in wood frame construction.</small></p>
+  </section>
 
+  <section class="nearby">
+    <div class="section-head"><span class="ic ic-pin"></span><h2>Nearby</h2></div>
+    <ul class="place-list">
+      <li><a href="/san-francisco/mission/shotwell-street/168/">168 Shotwell Street</a>
+        <span class="pill pill-muted">Same street</span></li>
+      <li><a href="/san-francisco/mission/shotwell-street/306/">306 Shotwell Street</a>
+        <span class="pill pill-muted">Same street</span></li>
+      <li><a href="/san-francisco/mission/south-van-ness-avenue/573/">573 South Van Ness Avenue</a>
+        <span class="pill pill-muted">Same block</span></li>
+      <li><a href="/san-francisco/mission/17th-street/3178/">3178 17th Street</a>
+        <span class="pill pill-muted">Same block</span></li>
+      <li><a href="/san-francisco/mission/folsom-street/2014/">2014–2030 Folsom Street</a>
+        <span class="pill pill-muted">Same block</span></li>
+      <li><a href="/san-francisco/mission/folsom-street/2050/">2050–2070 Folsom Street</a>
+        <span class="pill pill-muted">Same block</span></li>
+      <li><a href="/san-francisco/mission/17th-street/3151/">3151–3157 17th Street</a>
+        <span class="pill pill-muted">Around the corner</span></li>
+      <li><a href="/san-francisco/mission/south-van-ness-avenue/601/">601–603 South Van Ness Avenue</a>
+        <span class="pill pill-muted">Around the corner</span></li>
+    </ul>
+  </section>
 </main>
 
 <footer class="site-footer">
