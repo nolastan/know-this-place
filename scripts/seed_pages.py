@@ -1862,10 +1862,10 @@ def glance_panel_html(rec: dict, indent: str) -> str:
         rows.append(("ic-value", "Assessed fixtures", f"${a['assessed_fixtures_value']:,}"))
     if a.get("last_sale_date"):
         rows.append(("ic-value", "Last sale", long_date(a["last_sale_date"])))
-    hs = rec.get("historic_status") or {}
-    code = (hs.get("ceqa_status_code") or "").strip()
-    if code:
-        rows.append(("ic-permit", "Historic status", f"CEQA {code} — {CEQA_LABEL.get(code, '')}"))
+    # No historic status row: the hero tag already states it in words, and the
+    # row's only addition is the raw CEQA code letter — a citation, which means
+    # nothing to a reader on its own. Same reasoning as the district panel's
+    # article number. The code stays in data.json; it just isn't printed.
     if not rec.get("permits"):
         rows.append(("ic-clock", "Permits on file", "None"))
     if not rows:
