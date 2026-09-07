@@ -388,8 +388,8 @@ it in one small line *below* the timeline — never in a lead-in paragraph.
 record is the quiet kind," "the record is silent on…," "hints at a longer
 story." Cut inference dressed as fact — "a base this low is the signature of a
 parcel held since before Proposition 13," "unusually for this block," "a
-measure of the building." Undocumented gaps are listed plainly in the
-`.unknowns` block. A data *anomaly* may be stated where it changes how the page
+measure of the building." A page does not list what it has failed to document.
+A data *anomaly* may be stated where it changes how the page
 reads (the roll reports land and improvements at the same figure, so no split
 is charted) — that is a note on the data, not a reading of it.
 

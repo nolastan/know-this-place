@@ -239,7 +239,8 @@ they never reach a page.
   The full trap list is in [RUNBOOK.md](RUNBOOK.md#the-renumbering-traps).
 - **Never reconcile a conflict silently.** A source that contradicts the
   assessor, or another source, is recorded as a conflict and named in the page's
-  `.unknowns`. Adjudicating is not research; it is invention.
+  `unknowns`, which renders on the line closing the timeline. Adjudicating is
+  not research; it is invention.
 - **Cite what you actually read.** The issue, page and date of a newspaper; the
   section of a book; the volume, number and article of a journal; the page of a
   PDF report. "The archive" is not a citation.

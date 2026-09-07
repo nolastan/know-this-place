@@ -87,8 +87,9 @@ The neighborhood's history writing dates buildings from photographs, and the
 assessor's `year_property_built` frequently contradicts them. Both are on the
 record; **neither gets quietly dropped.** Put the assessor's date in the
 `Built …` tag (it is the structured field the rest of the page is built from),
-put the photograph in the timeline, and name the disagreement plainly in the
-`.unknowns` block. Do not average them, pick a favourite, or write "about".
+put the photograph in the timeline, and name the disagreement plainly in
+`unknowns`, which renders on the line closing that timeline. Do not average
+them, pick a favourite, or write "about".
 Worked examples in this tree:
 
 | Page | Assessor | Photograph |
@@ -103,7 +104,7 @@ Worked examples in this tree:
 | 401 Castro | 1901 | 1883, per the landmark case report |
 
 Round years (1900, 1890) in the assessor roll are placeholders as often as
-they are facts — treat them as the weaker evidence, and say in `.unknowns`
+they are facts — treat them as the weaker evidence, and say in `unknowns`
 that the date has not been checked against a permit.
 
 ## Buildings here were moved

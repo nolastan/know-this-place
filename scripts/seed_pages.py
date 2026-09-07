@@ -1342,8 +1342,10 @@ def permit_items(rec: dict, indent: str) -> tuple:
     """(items, disclosure) — the permit half of the timeline.
 
     Each item is a `(date_key, html)` pair so it can be interleaved with the
-    historical entries; `disclosure` is the line about filings deliberately
-    left out, which belongs under the finished rail.
+    historical entries; `disclosure` is the sentence about filings deliberately
+    left out. It comes back as text rather than markup because `timeline_html`
+    runs it together with the record notes from `unknowns` into the single line
+    under the finished rail.
     """
     permits = rec.get("permits", [])
     # Pages written before `permit_summary` existed still carry their nominal
@@ -1359,11 +1361,10 @@ def permit_items(rec: dict, indent: str) -> tuple:
         shown.append(p)
     disclosure = ""
     if note:
-        disclosure = f'{indent}<p class="prose"><small>{esc(note)}</small></p>\n'
+        disclosure = note
     elif omitted:
         word = "permit is" if omitted == 1 else "permits are"
-        disclosure = (f'{indent}<p class="prose"><small>{omitted} nominal $1 '
-                      f'street-space {word} omitted.</small></p>\n')
+        disclosure = f"{omitted} nominal $1 street-space {word} omitted."
     if not shown:
         return [], ""
     items = []
@@ -1438,6 +1439,31 @@ def built_item(rec: dict, indent: str) -> list:
              f'{indent}  </li>')]
 
 
+def dating_conflicts(rec: dict) -> list:
+    """Disagreements about the building's date, read off the data itself.
+
+    These rendered inside the old `.unknowns` block and are the part of it
+    worth keeping: the generic "Not yet documented:" listing was boilerplate,
+    but a roll that contradicts Planning — or itself — is a fact the page has
+    to state. They read as dating notes, so they close the timeline with the
+    rest of its caveats rather than sitting in a box at the foot of the page.
+    """
+    p = rec.get("parcel") or {}
+    hs = rec.get("historic_status") or {}
+    out = []
+    hy, ry = hs.get("yearbuilt"), p.get("year_built")
+    if hy and ry and str(hy) != str(ry):
+        out.append(f"The assessor dates the building to {ry}; Planning's "
+                   f"historic resource survey records {hy}.")
+    if "vacant lot" in (p.get("property_class") or "").lower() and ry:
+        out.append(f"The roll classes this parcel as a vacant lot and also "
+                   f"gives it a build year of {ry}.")
+    conflict = (rec.get("building") or {}).get("completed_conflict")
+    if conflict:
+        out.append(str(conflict).strip())
+    return out
+
+
 def timeline_html(rec: dict, indent: str) -> str:
     """The page's one timeline: every dated entry on a single rail, oldest first.
 
@@ -1450,6 +1476,15 @@ def timeline_html(rec: dict, indent: str) -> str:
     nothing else, and it is neither true now (every page with a build year
     opens with it) nor needed: a timeline is self-evident on sight. The name
     stays for screen readers, on `aria-label`.
+
+    One line closes the rail, and it is where the page admits what the rail
+    cannot show: the filings left out, then the dating conflicts read off the
+    data, then every disagreement `unknowns` records. All of it used to sit in
+    a `.unknowns` box at the foot of the page, under a generic listing of what
+    the page did not know; issue #118 deleted the listing and moved what was
+    left against the dates it disputes. No page is stranded by the move —
+    every one of the 480 carrying the key, and of the 921 with a derived
+    conflict, has a timeline.
     """
     built = built_item(rec, indent)
     permits, disclosure = permit_items(rec, indent)
@@ -1460,8 +1495,20 @@ def timeline_html(rec: dict, indent: str) -> str:
     # comes before anything else the same year — a permit filed in the month it
     # was finished, a photograph dated to the year.
     items = [html for _, html in sorted(built + permits + earlier, key=lambda e: e[0])]
+    # A conflict reached `building.completed_conflict` and `unknowns` both on
+    # 20 pages, and the old block printed it twice. One line makes the repeat
+    # obvious, so drop it here rather than reconciling the two keys.
+    said, seen = [], set()
+    for t in [disclosure, *dating_conflicts(rec), *(rec.get("unknowns") or [])]:
+        t = str(t).strip()
+        if t and t not in seen:
+            seen.add(t)
+            said.append(t)
+    said = " ".join(said)
+    tail = (f'{indent}<p class="prose"><small>{esc(said)}</small></p>\n'
+            if said else "")
     return (f'{indent}<ol class="vtl" aria-label="Timeline">\n' + "\n".join(items)
-            + f"\n{indent}</ol>\n" + disclosure)
+            + f"\n{indent}</ol>\n" + tail)
 
 
 def value_panel_html(rec: dict, indent: str) -> str:
@@ -2115,72 +2162,6 @@ def nearby_html(rec: dict, indent: str) -> str:
     return "\n".join(out) + "\n"
 
 
-def unknowns_html(rec: dict) -> str:
-    p = rec.get("parcel", {})
-    a = rec.get("assessment", {})
-    # "The early residents" is only a gap on a building that has residents, and
-    # the architect is only a gap while the page doesn't name one.
-    residential = (p.get("use") or "") in (
-        "Single Family Residential", "Multi-Family Residential")
-    b = rec.get("building") or {}
-    missing = []
-    if not b.get("architect"):
-        # "and builder" only while the builder is genuinely undocumented — a
-        # page that names the carpenter who built the house must not go on
-        # listing the builder as a gap.
-        missing.append("the architect" if b.get("builder")
-                       else "the architect and builder")
-    elif not b.get("developer"):
-        missing.append("the developer")
-    missing.append("the early residents" if residential else "the early tenants")
-    if any(not w.get("installed") for w in rec.get("public_art") or []):
-        missing.append("when each artwork was installed")
-    if any(not s.get("designer") for s in rec.get("public_open_space") or []):
-        missing.append("who designed the open space")
-    if not a.get("last_sale_date"):
-        missing.append("the date of the last recorded sale")
-    # The roll leaves `year_built` empty on city-owned and exempt parcels. That
-    # is a gap only while nothing else on the page dates the building — once a
-    # source gives a completion year, listing it as undocumented contradicts the
-    # "Completed" row two blocks up.
-    if not p.get("year_built") and not b.get("completed"):
-        missing.insert(0, "the year the building went up")
-    # One gap left is the normal case on a well-documented page, and the
-    # join above turns it into a dangling "Not yet documented: and the early
-    # tenants." It stayed hidden while every page had at least two gaps —
-    # "the architect and builder" was always one of them — and surfaced the
-    # first time a run filled in both.
-    listing = (missing[0] if len(missing) == 1
-               else ", ".join(missing[:-1]) + f" and {missing[-1]}")
-    note = ""
-    hs = rec.get("historic_status") or {}
-    hy, ry = hs.get("yearbuilt"), p.get("year_built")
-    if hy and ry and str(hy) != str(ry):
-        note = (f" The assessor dates the building to {ry}; Planning's historic "
-                f"resource survey records {hy}.")
-    if "vacant lot" in (p.get("property_class") or "").lower() and ry:
-        note += (f" The roll classes this parcel as a vacant lot and also gives "
-                 f"it a build year of {ry}.")
-    conflict = (rec.get("building") or {}).get("completed_conflict")
-    if conflict:
-        note += f" {conflict}"
-    # `unknowns` is where a run records a disagreement it must not adjudicate —
-    # a source against the assessor, or a source against itself. It is written
-    # into data.json, so it has to render from there; a note that lives only in
-    # the JSON is a fact the page does not state. Both shapes in the repo are
-    # read: a list of sentences, and a dict keyed by a slug.
-    stated = rec.get("unknowns") or []
-    if isinstance(stated, dict):
-        stated = list(stated.values())
-    said = " ".join(str(s).strip() for s in stated if str(s).strip())
-    url = feedback_url(page_title(rec), rec["path"])
-    return ('  <div class="unknowns">\n'
-            '    <span class="ic ic-help"></span>\n'
-            f'    <p>{said + " " if said else ""}Not yet documented: {listing}.{note}\n'
-            f'    <a href="{url}">Submit an update</a></p>\n'
-            '  </div>\n')
-
-
 SOURCE_FOOTER_NAME = {
     "sf-assessor-roll": lambda n: n.replace(" (", ", ").replace(")", ""),
 }
@@ -2394,7 +2375,7 @@ def render_html(rec: dict) -> str:
 
 {lead_html}{stats_html(rec)}
 {body}
-{nearby_html(rec, "  ")}{unknowns_html(rec)}</main>
+{nearby_html(rec, "  ")}</main>
 
 <footer class="site-footer">
   <section class="sources">

@@ -96,7 +96,6 @@ leans on the stat band and timeline. The default spine:
    **One `.vtl` per page**, holding every dated entry, and no heading over it.
 6. Prose sections (`.section-head` + `.prose`) only where there's a real story.
 7. `.nearby` — the lateral links, written by the renderer, never by hand.
-8. `.unknowns` — what's missing, feeding the feedback link.
 
 ---
 
@@ -234,11 +233,27 @@ design attributed in 1895 under a build year of 1900 — is this building, and
 saying otherwise would be a claim no source made.
 
 **Never introduce the rail with a paragraph.** Counts, totals, date spans and
-statuses are all in the items; a lead-in restates them and adds commentary. If some filings are deliberately
-excluded (street-space permits at a nominal $1, or the duplicates DBI files
-under each street number of a shared parcel), disclose that *after* the rail,
-in one line — `<p class="prose"><small>Two $1 street-space permits are
-omitted.</small></p>` — never above it.
+statuses are all in the items; a lead-in restates them and adds commentary.
+
+**One line closes the rail, and it is the page's only caveat.** Everything the
+rail cannot show goes there, in this order, run together as one `<small>`:
+
+1. filings deliberately excluded — street-space permits at a nominal $1, or the
+   duplicates DBI files under each street number of a shared parcel;
+2. dating conflicts the renderer reads off the data — the roll against
+   Planning's survey, a parcel classed a vacant lot that also carries a build
+   year, `building.completed_conflict`;
+3. every sentence in `unknowns` — a source against the assessor, a source
+   against itself, an open question the record leaves.
+
+```html
+<p class="prose"><small>Two $1 street-space permits are omitted. The assessor
+dates the building to 1988, after this photograph was taken.</small></p>
+```
+
+Never above the rail, and never as a second paragraph: one line, or none. This
+is where the retired `.unknowns` block's contents went (issue #118) — the notes
+dispute dates, so they belong against the dates.
 
 Link every permit to its DBI record (see DATA-SOURCES.md → sf-building-permits
 for the URL pattern). Status pills: `.pill-ok` (complete), `.pill-warn`
@@ -441,16 +456,15 @@ not. `<h3>` is the space's own name from the inventory; the rows are a plain
 The inventory's `year` is the year of the **requirement**, not an opening date —
 label that row "Required from", and never render it as when the space opened.
 
-### Notes — `.community-note` and `.unknowns`
+### Notes — `.community-note`
 `.community-note` wraps clearly-attributed unverified contributions (auto-
-labeled by CSS). `.unknowns` is the "what we don't know yet" block that leads
-into the feedback link:
-```html
-<div class="unknowns"><span class="ic ic-help"></span>
-  <p>Not yet documented: the architect and builder, the early residents.
-  <a href="FEEDBACK_URL">Submit an update</a></p>
-</div>
-```
+labeled by CSS).
+
+A `.unknowns` block used to close every address page with a generic listing of
+what the page had not documented. Issue #118 deleted it: the listing was
+boilerplate on all 15,956 pages, and the real notes it carried — a source
+against the assessor, a source against itself — moved to the line that closes
+the timeline, against the dates they dispute. See "Timeline" above.
 
 ### Nearby — `.nearby`
 The lateral links out of an address page: the documented buildings up and down

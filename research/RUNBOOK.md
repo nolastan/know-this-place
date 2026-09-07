@@ -297,7 +297,7 @@ spelling where squashing punctuation finds it, and otherwise needs an explicit
 A finding that contradicts the assessor's `year_property_built`, or another
 source, is **not** a resolution problem. Resolve the address, keep both claims,
 and set `conflict` on the finding so step 4 records the disagreement in the
-page's `.unknowns`. Never adjudicate, never average, never quietly prefer the
+page's `unknowns`. Never adjudicate, never average, never quietly prefer the
 newer source.
 
 ## 4. Publish it
@@ -367,7 +367,8 @@ cat /tmp/pages.txt | xargs -n 60 python3 scripts/seed_pages.py render
 
 `data.json` is the only file you write; `validate.py` fails if `index.html` is
 not exactly what the renderer produces from it. A conflict from step 3 goes in
-`.unknowns`, stated plainly and left unadjudicated.
+`unknowns` — a flat list of sentences, rendered on the line that closes the
+timeline — stated plainly and left unadjudicated.
 
 **Route B — the source names many buildings with no pages.** Generate
 `manifests/<batch>.json` with `resolve_eas.py manifest` (above), then:
@@ -556,7 +557,7 @@ That prints the table ready to paste. Its columns:
 | **Pages created** | pages this batch's own commits added |
 | **Pages edited** | pages that already existed and gained a fact |
 | **Facts published** | findings that reached a page; more than one can land on the same page |
-| **Conflicts stated** | sentences written to a page's `.unknowns` — the source disagreeing with itself or the assessor, left unadjudicated |
+| **Conflicts stated** | sentences written to a page's `unknowns` — the source disagreeing with itself or the assessor, left unadjudicated |
 | **Dates disputed** | pages where the source's construction year disagrees with the assessor's, in `building.completed_conflict` |
 | **Declined** | resolved to a parcel and then not published — a duplicate of what the page already carries, an undated claim with no component to hold it, a fact a better source states first |
 
