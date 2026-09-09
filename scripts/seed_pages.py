@@ -645,6 +645,19 @@ PILL = {  # DBI status -> (css class, icon, word, muted item?)
     "disapproved": ("pill-muted", "ic-help", "Disapproved", True),
     "revoked": ("pill-muted", "ic-help", "Revoked", True),
 }
+# A permit the city never let happen is not a thing that happened here. Expired
+# and cancelled filings were a quarter of every item on the rail (35,698 of
+# 156,000), each one costing a reader a date, a status and a sentence to learn
+# that nothing was built — so the timeline drops them and the line under the
+# rail counts them (issue #285). The other dead statuses stay: `withdrawn`,
+# `suspend`, `disapproved` and `revoked` are 2,000 filings across the corpus,
+# rare enough to be interesting when one appears.
+PERMIT_OMIT = {"expired", "cancelled"}
+# `complete` is the status of 87,892 of the permits on file — more than half of
+# them — and a badge every second item wears tells a reader nothing. The pill
+# lane is for the exception: issued, filed, withdrawn. A finished permit says so
+# by having no badge at all.
+PILL_IMPLIED = {"complete"}
 MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
           "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 MONTHS_LONG = ["January", "February", "March", "April", "May", "June", "July",
@@ -1347,6 +1360,41 @@ def stats_html(rec: dict) -> str:
     return f'  <div class="stats">\n{body}\n  </div>\n'
 
 
+def dead_permit_phrase(dropped: dict) -> tuple[str, int]:
+    """"4 expired or cancelled permits", with the count, or ("", 0) for none.
+
+    Names the statuses the page actually dropped, not the pair it filters on: a
+    reader told "expired or cancelled" about two filings that both expired has
+    been handed a possibility where the record holds a fact.
+    """
+    n = sum(dropped.values())
+    if not n:
+        return "", 0
+    kinds = " or ".join(w for w in ("expired", "cancelled") if dropped.get(w))
+    return f"{n} {kinds} {'permit' if n == 1 else 'permits'}", n
+
+
+def omission_phrase(nominal: int, dropped: dict) -> str:
+    """The one sentence for filings the rail leaves out, however many kinds.
+
+    BLOCKS.md gives the line under the rail one job first — the filings
+    deliberately excluded — and a page can exclude on two grounds at once: a
+    nominal $1 street-space filing and a permit that expired. Two sentences for
+    that is two sentences saying "omitted", so they share one.
+    """
+    parts = []
+    if nominal:
+        parts.append(f"{nominal} nominal $1 street-space "
+                     f"{'permit' if nominal == 1 else 'permits'}")
+    dead, n = dead_permit_phrase(dropped)
+    if dead:
+        parts.append(dead)
+    if not parts:
+        return ""
+    return (" and ".join(parts)
+            + (" is omitted." if nominal + n == 1 else " are omitted."))
+
+
 def permit_items(rec: dict, indent: str) -> tuple:
     """(items, disclosure) — the permit half of the timeline.
 
@@ -1355,6 +1403,13 @@ def permit_items(rec: dict, indent: str) -> tuple:
     left out. It comes back as text rather than markup because `timeline_html`
     runs it together with the record notes from `unknowns` into the single line
     under the finished rail.
+
+    The item leads with its date and the record's own particulars — status,
+    permit number, cost — on one line, and gives the second line to what the
+    work was (issue #285). A permit's meta row was three chips under a
+    sentence, which cost every item a third line of rail for facts a reader
+    scanning for *what happened here* skips; beside the date they read as the
+    dateline's own footnotes, and the sentence stands alone.
     """
     permits = rec.get("permits", [])
     # Pages written before `permit_summary` existed still carry their nominal
@@ -1363,10 +1418,11 @@ def permit_items(rec: dict, indent: str) -> tuple:
     # pages that were hand-written before the seeder had a key for it. One
     # slot, either spelling — issue #148 settles which one survives.
     note = (rec.get("permit_summary") or {}).get("note") or rec.get("permits_note")
-    shown, omitted = [], 0
+    shown, omitted, dropped = [], 0, {}
     for p in permits:
         cost = p.get("estimated_cost") or p.get("revised_cost") or 0
         desc = (p.get("description") or "").lower()
+        status = (p.get("status") or "").strip().lower()
         # A permit somebody wrote a sentence for is one they decided belongs on
         # the page, so the nominal-filing filter lets it through. Without that,
         # a $1 revision to a garage permit that happens to say "minor sidewalk
@@ -1376,15 +1432,29 @@ def permit_items(rec: dict, indent: str) -> tuple:
                 and re.search(r"street space|sidewalk", desc)):
             omitted += 1
             continue
+        # An expired or cancelled filing describes work the city never let
+        # happen. No `description_edited` exception here, unlike the filter
+        # above: that one reads a sentence and can misjudge it, while DBI's
+        # status is the record itself, so a hand-polished description of work
+        # that never happened is still work that never happened.
+        if status in PERMIT_OMIT:
+            dropped[status] = dropped.get(status, 0) + 1
+            continue
         shown.append(p)
-    disclosure = ""
     if note:
-        disclosure = note
-    elif omitted:
-        word = "permit is" if omitted == 1 else "permits are"
-        disclosure = f"{omitted} nominal $1 street-space {word} omitted."
+        # `permit_summary.note` is a stored sentence that already accounts for
+        # what the timeline leaves out, so the dropped filings join it as a
+        # second clause rather than a second "…are omitted."
+        dead, n = dead_permit_phrase(dropped)
+        disclosure = note + (f" {dead} {'is' if n == 1 else 'are'} not shown."
+                             if dead else "")
+    else:
+        disclosure = omission_phrase(omitted, dropped)
     if not shown:
-        return [], ""
+        # No items, but the count of what was left out still belongs under the
+        # rail: on 333 pages every permit on file expired or was cancelled, and
+        # a page that simply shows no permit record is claiming DBI holds none.
+        return [], disclosure
     items = []
     for p in shown:
         css, icon, word, muted = PILL.get(p.get("status", ""),
@@ -1404,22 +1474,29 @@ def permit_items(rec: dict, indent: str) -> tuple:
         cost = p.get("estimated_cost")
         if cost in (None, ""):
             cost = p.get("revised_cost")
-        meta = [f'{indent}      <span class="pill {css}">'
-                f'<span class="ic {icon}"></span>{esc(word)}</span>',
-                f'{indent}      <a href="https://dbiweb02.sfgov.org/dbipts/default.aspx'
-                f'?page=Permit&amp;PermitNumber={esca(p["number"])}">'
-                f'Permit {esc(p["number"])}</a>']
+        meta = []
+        if (p.get("status") or "").strip().lower() not in PILL_IMPLIED:
+            # A pill only where the status is not the one every other permit
+            # has; `PILL` is still read for the muted flag either way.
+            meta.append(f'{indent}        <span class="pill {css}">'
+                        f'<span class="ic {icon}"></span>{esc(word)}</span>')
+        meta.append(f'{indent}        <a href="https://dbiweb02.sfgov.org/dbipts/default.aspx'
+                    f'?page=Permit&amp;PermitNumber={esca(p["number"])}">'
+                    f'Permit {esc(p["number"])}</a>')
         if cost:
             tier = cost_tier(float(cost))
-            meta.append(f'{indent}      <span class="cost" data-tier="{tier}" '
+            meta.append(f'{indent}        <span class="cost" data-tier="{tier}" '
                         f'aria-label="{TIER_LABEL[tier]}"><b>$</b><b>$</b><b>$</b></span>')
-            meta.append(f'{indent}      <span class="cost-amt">${int(float(cost)):,}</span>')
+            meta.append(f'{indent}        <span class="cost-amt">${int(float(cost)):,}</span>')
         items.append((date_key(p.get("filed")),
             f'{indent}  <li class="vtl-item{" is-muted" if muted else ""}">\n'
-            f'{indent}    <div class="vtl-date">{month_year(p.get("filed"))}</div>\n'
-            f'{indent}    <p class="vtl-desc">{esc(desc)}</p>\n'
-            f'{indent}    <div class="vtl-meta">\n' + "\n".join(meta) + "\n"
+            f'{indent}    <div class="vtl-head">\n'
+            f'{indent}      <div class="vtl-date">{month_year(p.get("filed"))}</div>\n'
+            f'{indent}      <div class="vtl-meta">\n'
+            + "\n".join(meta) + "\n"
+            f'{indent}      </div>\n'
             f'{indent}    </div>\n'
+            f'{indent}    <p class="vtl-desc">{esc(desc)}</p>\n'
             f'{indent}  </li>'))
     return items, disclosure
 
@@ -1531,8 +1608,6 @@ def timeline_html(rec: dict, indent: str) -> str:
     built = built_item(rec, indent)
     permits, disclosure = permit_items(rec, indent)
     earlier = historical_items(rec, indent)
-    if not (built or permits or earlier):
-        return ""
     # `sorted` is stable and `built` leads the list, so the building's own year
     # comes before anything else the same year — a permit filed in the month it
     # was finished, a photograph dated to the year.
@@ -1562,6 +1637,13 @@ def timeline_html(rec: dict, indent: str) -> str:
     said = " ".join(said)
     tail = (f'{indent}<p class="prose"><small>{esc(said)}</small></p>\n'
             if said else "")
+    # The line can outlive the rail. Three pages hold nothing datable and a
+    # permit record made entirely of filings the timeline leaves out — a
+    # nominal $1 street space, a permit that expired — and a page that prints
+    # neither the rail nor the line says DBI holds nothing, which is the one
+    # thing it must not say.
+    if not items:
+        return tail
     return (f'{indent}<ol class="vtl" aria-label="Timeline">\n' + "\n".join(items)
             + f"\n{indent}</ol>\n" + tail)
 
