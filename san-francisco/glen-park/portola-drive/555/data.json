@@ -1,6 +1,7 @@
 {
   "address": "555 Portola Drive, San Francisco, CA 94131",
   "path": "/san-francisco/glen-park/portola-drive/555/",
+  "hook": "A 1972 Brutalist school campus built as McAteer High School, now the Ruth Asawa San Francisco School of the Arts.",
   "apn": "7560003",
   "block": "7560",
   "lot": "003",
@@ -31,31 +32,93 @@
     "in_article_10_11_historic_district": false,
     "source": "sf-planning"
   },
+  "building": {
+    "name": "Ruth Asawa San Francisco School of the Arts",
+    "former_name": "J. Eugene McAteer High School",
+    "architect": "Reid & Tarics"
+  },
+  "historic_survey": [
+    {
+      "survey": "Modern & Postmodern Architectural Styles Historic Context Statement (2024)",
+      "source": "modern-postmodern-styles-context-statement",
+      "style": "Brutalism",
+      "year_built_as_surveyed": "1972"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1974",
+      "kind": "use",
+      "description": "McAteer High School enrolled 1,700 students on this campus, against a stated capacity of 2,569.",
+      "source": "sf-environmental-review-draftenvironment1974sanf"
+    },
+    {
+      "date": "1981",
+      "kind": "occupancy",
+      "description": "The School of the Arts was established here as part of McAteer High School, and taught on the campus for ten years.",
+      "source": "sf-environmental-review-schoolofartsmast1199sanf"
+    },
+    {
+      "date": "1991",
+      "kind": "occupancy",
+      "description": "The School of the Arts became a separate high school, ending its first ten years on this campus; by December 1997 it was housed in a surplus elementary school on Font Street.",
+      "source": "sf-environmental-review-schoolofartsmast1199sanf"
+    },
+    {
+      "date": "2002-11-13",
+      "kind": "occupancy",
+      "description": "J. Eugene McAteer High School closed.",
+      "source": "cde-school-directory"
+    },
+    {
+      "date": "2003",
+      "kind": "occupancy",
+      "description": "The School of the Arts was again housed in buildings on this campus. A district plan to move it to 135 Van Ness Avenue had completed environmental review but was unfunded, and no relocation was planned in the near term.",
+      "source": "sf-environmental-review-50oakstreetsanfr1020sanf"
+    },
+    {
+      "date": "2009-08-24",
+      "kind": "occupancy",
+      "description": "The Academy — San Francisco @ McAteer opened here as a second high school on the campus.",
+      "source": "cde-school-directory"
+    },
+    {
+      "date": "2026-06-10",
+      "kind": "occupancy",
+      "description": "The Academy — San Francisco @ McAteer closed, leaving the School of the Arts as the only school recorded at this address.",
+      "source": "cde-school-directory"
+    }
+  ],
   "permits": [],
+  "unknowns": [
+    "The assessor's roll classes the parcel as a vacant lot in public use and records no year built; Planning's Modern and Postmodern context statement dates the building to 1972.",
+    "The state's school directory gives McAteer High School an opening date of 1 July 1980, and the school was already enrolling students at this address in 1974."
+  ],
   "sources": [
     {
       "id": "sf-eas-addresses",
       "name": "SF Enterprise Addressing System via DataSF",
-      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PORTOLA&street_type=DR&address_number=555",
-      "retrieved": "2026-08-31"
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?parcel_number=7560003",
+      "retrieved": "2026-09-08"
     },
     {
       "id": "sf-assessor-roll",
       "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
       "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7560003&$order=closed_roll_year%20DESC&$limit=1",
-      "retrieved": "2026-08-31"
+      "retrieved": "2026-09-08"
     },
     {
       "id": "sf-building-permits",
       "name": "SF Dept. of Building Inspection via DataSF",
+      "supports": "That no building permit is on file for this parcel",
       "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7560&lot=003",
-      "retrieved": "2026-08-31"
+      "retrieved": "2026-09-08"
     },
     {
       "id": "sf-planning",
       "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
       "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7560003",
-      "retrieved": "2026-08-31"
+      "retrieved": "2026-09-08"
     },
     {
       "id": "modern-postmodern-styles-context-statement",
@@ -63,21 +126,49 @@
       "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=12bf7fd7aa07e2b779e0afc717eb0d789b9ba378bf6e80f7f8a1ce30cdc8946f&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
       "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
       "label": "Modern & Postmodern Architectural Styles Historic Context Statement, adopted 2024",
+      "cites": "p. 101, \"McAteer High School (555 Portola Drive, 1972, Reid & Tarics)\"",
       "retrieved": "2026-08-31"
-    }
-  ],
-  "historic_survey": [
+    },
     {
-      "survey": "Modern & Postmodern Architectural Styles Historic Context Statement (2024)",
-      "source": "modern-postmodern-styles-context-statement",
-      "style": "Brutalism",
-      "year_built_as_surveyed": "1972",
-      "architect_as_surveyed": "Reid & Tarics",
-      "note": "McAteer High School by Reid & Tarics, one of the district's Brutalist school buildings."
+      "id": "sf-environmental-review-draftenvironment1974sanf",
+      "name": "San Francisco Department of City Planning, Draft Environmental Impact Report: Golden Gate Heights Residential Development, EE 74:72, 1974",
+      "label": "Golden Gate Heights Draft EIR, 1974",
+      "cites": "School facilities table, from a 30 May 1974 interview with the San Francisco Unified School District",
+      "query": "https://archive.org/details/draftenvironment1974sanf",
+      "retrieved": "2026-09-08"
+    },
+    {
+      "id": "sf-environmental-review-schoolofartsmast1199sanf",
+      "name": "San Francisco Unified School District, School of the Arts Master Plan: Draft Environmental Impact Report, December 1, 1997",
+      "label": "School of the Arts Master Plan Draft EIR, 1997",
+      "cites": "Project description, on the school's founding and its first ten years at McAteer High School",
+      "query": "https://archive.org/details/schoolofartsmast1199sanf",
+      "retrieved": "2026-09-08"
+    },
+    {
+      "id": "sf-environmental-review-50oakstreetsanfr1020sanf",
+      "name": "San Francisco Planning Department, 50 Oak Street — San Francisco Conservatory of Music: Final Environmental Impact Report, Case No. 2001.0862E, certified April 10, 2003",
+      "label": "50 Oak Street Final EIR, 2003",
+      "cites": "Response to comment on parking, on the School of the Arts and the unfunded move to 135 Van Ness Avenue",
+      "query": "https://archive.org/details/50oakstreetsanfr1020sanf",
+      "retrieved": "2026-09-08"
+    },
+    {
+      "id": "cde-school-directory",
+      "name": "California Department of Education, California School Directory",
+      "label": "California School Directory",
+      "supports": "The schools recorded at this address, and their opening and closing dates",
+      "cites": "Records for McAteer (J. Eugene) High, CDS 38684783830072; Asawa (Ruth) SF Sch of the Arts, 38684783830387; and Academy (The) — SF @McAteer, 38684780119958",
+      "query": "https://www.cde.ca.gov/SchoolDirectory/details?cdscode=38684783830072",
+      "retrieved": "2026-09-08"
+    },
+    {
+      "id": "sfusd-school-page",
+      "name": "San Francisco Unified School District, Ruth Asawa San Francisco School of the Arts",
+      "label": "SFUSD school page",
+      "supports": "The school's official name at this address",
+      "query": "https://www.sfusd.edu/school/ruth-asawa-san-francisco-school-arts",
+      "retrieved": "2026-09-08"
     }
-  ],
-  "building": {
-    "name": "McAteer High School",
-    "architect": "Reid & Tarics"
-  }
+  ]
 }
