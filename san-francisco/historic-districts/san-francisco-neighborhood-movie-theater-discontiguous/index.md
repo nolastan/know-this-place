@@ -5,6 +5,7 @@ The buildings documented here so far inside the San Francisco Neighborhood Movie
 ## Streets
 
 - [16th Street](/san-francisco/mission/16th-street/) — 2 documented buildings inside the district.
+- [24th Street](/san-francisco/mission/24th-street/) — 1 documented building inside the district.
 - [Castro Street](/san-francisco/castro/castro-street/) — 1 documented building inside the district.
 - [Chestnut Street](/san-francisco/marina/chestnut-street/) — 1 documented building inside the district.
 - [Divisadero Street](/san-francisco/haight-ashbury/divisadero-street/) — 1 documented building inside the district.
@@ -21,6 +22,7 @@ The buildings documented here so far inside the San Francisco Neighborhood Movie
 
 - [2961 16th Street](/san-francisco/mission/16th-street/2961/) — A 1907 theater, with a seismic retrofit permitted in 1998.
 - [3117 16th Street](/san-francisco/mission/16th-street/3117/) — A 1913 theater, with a bathroom remodel permitted in 2020.
+- [2761–2791 24th Street](/san-francisco/mission/24th-street/2761/) — A 1926 theater, with an addition permitted in 2008.
 - [429–431 Castro Street](/san-francisco/castro/castro-street/429/) — A 1922 theater, with an addition permitted in 2024.
 - [2336–2346 Chestnut Street](/san-francisco/marina/chestnut-street/2336/) — A 1937 theater, with a bathroom remodel permitted in 2024.
 - [608 Divisadero Street](/san-francisco/haight-ashbury/divisadero-street/608/) — A 1926 store building, with a bathroom remodel permitted in 2018.
