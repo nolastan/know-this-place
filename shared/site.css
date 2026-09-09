@@ -25,9 +25,6 @@
   --warm-soft: #efdcd3;   /* warm track / tint */
   --cool-soft: #d8e5f2;   /* cool tint */
 
-  /* cost tiers ($ / $$ / $$$) — one warm family, rising intensity */
-  --cost-lo: #bf8a5e;  --cost-mid: #b5601f;  --cost-hi: #8a3b2a;
-
   /* status */
   --ok: #2f7d32;    --ok-bg: #e4efe2;
   --warn: #9a6400;  --warn-bg: #f3ebd8;
@@ -54,7 +51,6 @@
     --cool: #3d8fc9;
     --warm-soft: #3a2a23;
     --cool-soft: #1e2c3a;
-    --cost-lo: #8f6f52;  --cost-mid: #c07a45;  --cost-hi: #e0946f;
     --ok: #5cba63;    --ok-bg: #1e2a1d;
     --warn: #d0a24a;  --warn-bg: #2a2416;
     /* a black shadow disappears on a dark ground — deepen it to keep the
@@ -216,25 +212,45 @@ main > .panel + .panel { margin-top: 1.25rem; }
 .vtl-item.is-muted .vtl-date { color: var(--muted); }
 .vtl-desc { margin: 0.15rem 0 0; }
 .vtl-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin-top: 0.4rem; font-family: var(--sans); font-size: 0.8rem; color: var(--muted); }
+/* A permit's own particulars — status, number, cost — ride on the dateline
+   instead of under the sentence, so an item is two lines rather than three.
+   Baseline, not centre: the date and the pill's word sit on one line of type. */
+.vtl-head { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 0.55rem; row-gap: 0.2rem; }
+.vtl-head .vtl-meta { margin-top: 0; }
+/* The meta lane is a demoted one — it says where the record is, not what
+   happened — so its links carry no accent; the accent is the dateline's. */
+.vtl-meta a { color: inherit; }
+.vtl-meta a:hover { color: var(--accent); }
 
 /* status pill */
 .pill { display: inline-flex; align-items: center; gap: 0.3rem; font-family: var(--sans); font-size: 0.72rem; font-weight: 700; padding: 0.18rem 0.5rem; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.04em; }
 .pill .ic { font-size: 0.85rem; }
+/* `pill-ok` renders nowhere at present: `complete` was its only status and the
+   rail stopped badging that one (issue #285). The status vocabulary still maps
+   to it, so it stays. */
 .pill-ok { color: var(--ok); background: var(--ok-bg); }
 .pill-warn { color: var(--warn); background: var(--warn-bg); }
 .pill-muted { color: var(--muted); background: var(--rule); }
+/* On the rail the pill is the exception, not a label: a badge only appears
+   where a permit is something other than complete, and one chip with a filled
+   ground shouted louder than the dateline it sits beside. Icon and word only —
+   the colour still separates issued from withdrawn. (The `.nearby` badges keep
+   their container: there every row carries one, so it reads as a lane.) */
+.vtl-meta .pill { background: none; padding: 0; }
 
 /* ============================================================= cost tier & charts */
-/* dollar-tier indicator: $ / $$ / $$$ at rising hue intensity. Reads as
-   magnitude at a glance without looking like a progress bar. */
-.cost { font-family: var(--sans); font-weight: 800; font-size: 0.95rem; letter-spacing: 0.5px; white-space: nowrap; }
+/* dollar-tier indicator: $ / $$ / $$$. Reads as magnitude at a glance without
+   looking like a progress bar.
+   The tier is the count of lit glyphs against three, which is a channel of its
+   own; it used to be a rising warm hue as well, and at tier 3 that hue *was*
+   the accent, so a rail of expensive permits read as a field of brick. The
+   meta lane's own ink for the lit glyphs, hairline for the rest — same ramp,
+   one channel, and the row reads in one tone. */
+.cost { font-family: var(--sans); font-weight: 800; font-size: 0.85rem; letter-spacing: 0.5px; white-space: nowrap; }
 .cost b { color: var(--rule); font-weight: 800; }
-.cost[data-tier="1"] { --c: var(--cost-lo); }
-.cost[data-tier="2"] { --c: var(--cost-mid); }
-.cost[data-tier="3"] { --c: var(--cost-hi); }
 .cost[data-tier="1"] b:nth-child(1),
 .cost[data-tier="2"] b:nth-child(-n+2),
-.cost[data-tier="3"] b:nth-child(-n+3) { color: var(--c); }
+.cost[data-tier="3"] b:nth-child(-n+3) { color: var(--muted); }
 .cost-amt { font-family: var(--sans); font-size: 0.8rem; color: var(--muted); font-variant-numeric: tabular-nums; }
 
 /* stacked part-to-whole bar (two categories) */

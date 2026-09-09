@@ -22,4 +22,15 @@ fills it.
 
 ---
 
-*Empty.*
+- `2026-09-08` **Permit timeline items, tightened (issue #285)** — nothing covers
+  what a documented indicator becomes when the decision removes its colour
+  channel: the `.cost` tier is specified as "a rising warm hue", the issue took
+  the hue away, and "never introduce new colours" leaves lit-glyph count on ink
+  as the only move. Guessed the meta row's own `--muted` for the lit glyphs so
+  the row reads in one tone.
+- `2026-09-08` **Permit timeline items, tightened (issue #285)** — BLOCKS.md
+  names two kinds of deliberately excluded filing for the line under the rail
+  ($1 street-space, DBI duplicates) and no rule for a third; guessed that a
+  status the render drops wholesale is the same kind of admission, counted in
+  the same line, and that a stored `permit_summary.note` takes the second
+  clause rather than a second sentence.

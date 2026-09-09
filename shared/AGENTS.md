@@ -78,7 +78,7 @@ Where a new fact goes. Full markup for each is in [BLOCKS.md](BLOCKS.md).
 | `parcel.year_built` | the first `.vtl` item | the year the building went up, on the rail with everything else dated |
 | `parcel`, `assessment` | `.stats` / `.stat` tiles | measurements: building area, lot area, rooms |
 | `assessment` land/improvement split | `.stack` inside `<ktp-figure>` | one total split in two, both parts labeled |
-| `permits` | `.vtl` items, each with a `.pill` status and a `.cost` tier | the dated record of work |
+| `permits` | `.vtl` items, each a `.vtl-head` (date, status `.pill`, record link, `.cost` tier) over the description | the dated record of work |
 | `permit_summary` | one line *below* the `.vtl` | what the timeline left out, and why |
 | `historical_record` | `.vtl` items, interleaved by date | dated facts from historical sources and from news |
 | `survey_name` | a `.tag` in the hero | the name the city's survey files the building under |

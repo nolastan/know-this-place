@@ -162,9 +162,16 @@ uppercase kicker.
 ```
 
 ### Visual timeline — `.vtl`
-A rail with dots; each item has a date, description, and a meta row (status
-pill, a link to the record, a cost tier). Add `is-muted` to an item for
-expired/withdrawn records.
+A rail with dots; each item has a date, a description, and a meta row (status
+pill, a link to the record, a cost tier). Add `is-muted` to an item for a
+withdrawn or revoked record.
+
+**A permit's meta row rides on its dateline, in a `.vtl-head`.** Status, permit
+number and cost are the record's own particulars, not the event, and under the
+sentence they cost every permit a third line of rail. Beside the date they read
+as the dateline's footnotes and the item is two lines (issue #285). A
+historical entry keeps the meta row underneath: its citation is a sentence-long
+label, not three chips, and it belongs after the fact it supports.
 
 **One timeline per page, oldest entry first.** Everything dated shares the one
 rail — permits, a fire, a building contract, a photograph — interleaved in date
@@ -179,14 +186,16 @@ the name for screen readers instead:
 ```html
 <ol class="vtl" aria-label="Timeline">
   <li class="vtl-item">
-    <div class="vtl-date">Aug 2005</div>
-    <p class="vtl-desc">Kitchen remodel — cabinets, counter, five windows.</p>
-    <div class="vtl-meta">
-      <span class="pill pill-ok"><span class="ic ic-check"></span>Complete</span>
-      <a href="https://dbiweb02.sfgov.org/dbipts/default.aspx?page=Permit&amp;PermitNumber=200508261366">Permit 200508261366</a>
-      <span class="cost" data-tier="3" aria-label="Estimated cost over $25,000"><b>$</b><b>$</b><b>$</b></span>
-      <span class="cost-amt">$26,822</span>
+    <div class="vtl-head">
+      <div class="vtl-date">Aug 2005</div>
+      <div class="vtl-meta">
+        <span class="pill pill-warn"><span class="ic ic-clock"></span>Issued</span>
+        <a href="https://dbiweb02.sfgov.org/dbipts/default.aspx?page=Permit&amp;PermitNumber=200508261366">Permit 200508261366</a>
+        <span class="cost" data-tier="3" aria-label="Estimated cost over $25,000"><b>$</b><b>$</b><b>$</b></span>
+        <span class="cost-amt">$26,822</span>
+      </div>
     </div>
+    <p class="vtl-desc">Kitchen remodel — cabinets, counter, five windows.</p>
   </li>
 </ol>
 ```
@@ -246,6 +255,10 @@ rail cannot show goes there, in this order, run together as one `<small>`:
 3. every sentence in `unknowns` — a source against the assessor, a source
    against itself, an open question the record leaves.
 
+The line can outlive the rail: on a page holding nothing datable and a permit
+record made entirely of omitted filings, it renders alone, because a page
+printing neither says DBI holds nothing.
+
 ```html
 <p class="prose"><small>Two $1 street-space permits are omitted. The assessor
 dates the building to 1988, after this photograph was taken.</small></p>
@@ -256,15 +269,30 @@ is where the retired `.unknowns` block's contents went (issue #118) — the note
 dispute dates, so they belong against the dates.
 
 Link every permit to its DBI record (see DATA-SOURCES.md → sf-building-permits
-for the URL pattern). Status pills: `.pill-ok` (complete), `.pill-warn`
-(open/issued/in progress), `.pill-muted` (expired/withdrawn). **A pill always
-carries an icon + word** — never color alone.
+for the URL pattern). Status pills: `.pill-warn` (open/issued/in progress),
+`.pill-muted` (withdrawn/revoked). **A pill always carries an icon + word** —
+never color alone; on the rail it drops its filled ground and is icon and word
+only, because it appears on the exception rather than on every item.
+
+**Which permits reach the rail, and which badge they wear** (issue #285):
+
+- **Expired and cancelled filings never appear.** They were a quarter of every
+  item on the corpus's rails, each one a date and a sentence for work the city
+  never let happen. They are counted in the line under the rail instead.
+- **A complete permit wears no badge.** More than half of all filings are
+  complete, and a badge every second item wears carries nothing; the empty
+  status lane *is* the statement. Every other status still shows its pill.
+- **The meta row carries no accent** — not on the permit link, not on the cost
+  glyphs. The dateline is where a timeline item spends its accent.
 
 ### Cost tier — `.cost` ($ / $$ / $$$)
 Communicates a dollar magnitude at a glance *without* a bar (bars read as
-progress meters, which money isn't). Three `$` glyphs; `data-tier` colors the
-first N in a rising warm hue. Show the exact amount beside it in `.cost-amt`,
-and give the element an `aria-label`. Tiers for permit cost:
+progress meters, which money isn't). Three `$` glyphs; `data-tier` lights the
+first N and leaves the rest at hairline. The lit glyphs take the meta row's own
+ink, not a hue: the tier is the count, and the rising warm ramp it used to
+carry topped out at the accent, which made a rail of costly permits a field of
+brick. Show the exact amount beside it in `.cost-amt`, and give the element an
+`aria-label`. Tiers for permit cost:
 `$` under $5k · `$$` $5k–$25k · `$$$` over $25k.
 ```html
 <span class="cost" data-tier="2" aria-label="Estimated cost $5,000 to $25,000"><b>$</b><b>$</b><b>$</b></span>
