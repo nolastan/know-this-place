@@ -26,7 +26,7 @@ The buildings documented here so far inside the Kearny-Market-Mason-Sutter Conse
 - [Powell Street](/san-francisco/nob-hill/powell-street/) — 15 documented buildings inside the district.
 - [Stockton Street](/san-francisco/chinatown/stockton-street/) — 11 documented buildings inside the district.
 - [Sutter Street, Financial District](/san-francisco/financial-district/sutter-street/) — 18 documented buildings inside the district.
-- [Sutter Street, Nob Hill](/san-francisco/nob-hill/sutter-street/) — 14 documented buildings inside the district.
+- [Sutter Street, Nob Hill](/san-francisco/nob-hill/sutter-street/) — 15 documented buildings inside the district.
 - [Taylor Street](/san-francisco/tenderloin/taylor-street/) — 4 documented buildings inside the district.
 
 ## Buildings
@@ -215,6 +215,7 @@ The buildings documented here so far inside the Kearny-Market-Mason-Sutter Conse
 - [441–443 Sutter Street](/san-francisco/financial-district/sutter-street/441/) — A 1909 store building, with an addition permitted in 2013.
 - [445–447 Sutter Street](/san-francisco/financial-district/sutter-street/445/) — A 1916 building, with a seismic retrofit permitted in 2001.
 - [450–464 Sutter Street](/san-francisco/financial-district/sutter-street/450/) — Timothy Pflueger's Medical-Dental Building of 1929.
+- [524 Sutter Street](/san-francisco/nob-hill/sutter-street/524/) — A 1914 hotel, with window replacement permitted in 2019.
 - [532–536 Sutter Street](/san-francisco/nob-hill/sutter-street/532/) — A 1910 store building, with an addition permitted in 1997.
 - [540 Sutter Street](/san-francisco/nob-hill/sutter-street/540/) — A 1916 store building, with fire repair permitted in 2009.
 - [547–555 Sutter Street](/san-francisco/nob-hill/sutter-street/547/) — A 1922 office building, with a bathroom remodel permitted in 2001.

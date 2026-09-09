@@ -257,6 +257,7 @@ are listed so their size is visible before anyone opens one.
 | `south-of-market-hcs.json` | 32 | 12 KB | `south-of-market`, `mission`, `union-square` +1 |
 | `sunset-builders-hcs.json` | 131 | 51 KB | `sunset-parkside`, `west-of-twin-peaks`, `inner-sunset` +5 |
 | `tail.json` | 18 | 7 KB | `nob-hill`, `oceanview-merced-ingleside`, `bernal-heights` +9 |
+| `theater-venues.json` | 4 | 2 KB | `tenderloin`, `mission`, `nob-hill` |
 | `transit-center-district-survey.json` | 61 | 22 KB | `east-cut`, `south-of-market`, `south-beach` +1 |
 | `umb-survey-ratings.json` | 1,020 | 380 KB | `tenderloin`, `nob-hill`, `financial-district` +28 |
 | `umb-survey.json` | 99 | 37 KB | `pacific-heights`, `mission`, `chinatown` +17 |

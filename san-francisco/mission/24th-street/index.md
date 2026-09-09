@@ -32,6 +32,7 @@ Every residential parcel on 24th Street that the city's address, assessor and pe
 - [2724–2736](2724/) — A 1900 8-unit building with a ground-floor store, with fire repair permitted in 2015.
 - [2750](2750/) — A 1908 2-unit building with a ground-floor store, with permit records from 1981 to 2010.
 - [2758–2760](2758/) — A 1900 2-unit building with a ground-floor store, with permit records from 1989 to 2017.
+- [2761–2791](2761/) — A 1926 theater in the San Francisco Neighborhood Movie Theater Historic District (Discontiguous), with an addition permitted in 2008.
 - [2762–2764](2762/) — A 1900 two-flat, with facade work permitted in 1989.
 - [2782–2786](2782/) — A 1900 4-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2017.
 - [2790–2794](2790/) — A 1906 6-unit building with a ground-floor store, with a kitchen remodel permitted in 1989.

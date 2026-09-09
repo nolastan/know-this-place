@@ -20,7 +20,7 @@ The buildings documented here so far inside the Uptown Tenderloin Historic Distr
 - [Mcallister Street](/san-francisco/tenderloin/mcallister-street/) — 2 documented buildings inside the district.
 - [Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/) — 29 documented buildings inside the district.
 - [Taylor Street](/san-francisco/tenderloin/taylor-street/) — 7 documented buildings inside the district.
-- [Turk Street](/san-francisco/tenderloin/turk-street/) — 22 documented buildings inside the district.
+- [Turk Street](/san-francisco/tenderloin/turk-street/) — 23 documented buildings inside the district.
 
 ## Buildings
 
@@ -239,6 +239,7 @@ The buildings documented here so far inside the Uptown Tenderloin Historic Distr
 - [34–48 Turk Street](/san-francisco/tenderloin/turk-street/34/) — A 1909 hotel, with reroofing permitted in 1992.
 - [50–52 Turk Street](/san-francisco/tenderloin/turk-street/50/) — A 1914 42-unit apartment building, with a kitchen remodel permitted in 2008.
 - [66–74 Turk Street](/san-francisco/tenderloin/turk-street/66/) — A 1907 hotel, with a seismic retrofit permitted in 2003.
+- [76–80 Turk Street](/san-francisco/tenderloin/turk-street/76/) — A 1922 store building, with reroofing permitted in 2000.
 - [101–105 Turk Street](/san-francisco/tenderloin/turk-street/101/) — A 1906 116-unit apartment building, with a kitchen remodel permitted in 2015.
 - [124–126 Turk Street](/san-francisco/tenderloin/turk-street/124/) — A 1907 hotel, with a seismic retrofit permitted in 2000.
 - [130–132 Turk Street](/san-francisco/tenderloin/turk-street/130/) — A 1923 store building, with garage work permitted in 2006.

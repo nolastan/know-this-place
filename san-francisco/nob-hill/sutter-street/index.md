@@ -4,6 +4,7 @@ The parcels on Sutter Street documented here so far, from the city's address, as
 
 ## Documented so far
 
+- [524](524/) — A 1914 hotel in the Kearny-Market-Mason-Sutter Conservation District, with window replacement permitted in 2019.
 - [532–536](532/) — A 1910 store building in the Kearny-Market-Mason-Sutter Conservation District, with an addition permitted in 1997.
 - [540](540/) — A 1916 store building in the Kearny-Market-Mason-Sutter Conservation District, with fire repair permitted in 2009.
 - [547–555](547/) — A 1922 office building in the Kearny-Market-Mason-Sutter Conservation District, with a bathroom remodel permitted in 2001.
