@@ -136,7 +136,11 @@ def api_get(dataset: str, params: dict, timeout: int = 120, budget: int = 300,
     fetch hangs forever. Reading in chunks against a wall-clock deadline turns
     that into an ordinary retryable failure.
     """
-    url = f"https://data.sfgov.org/resource/{dataset}.json?" + urllib.parse.urlencode(params)
+    # DataSF moved to data.sf.gov. The old host still 301s a bare `?$limit=`,
+    # but its edge answers 403 to anything carrying a `$select` or `$where` —
+    # i.e. every query this script makes. Fetch from the new host; the citation
+    # URLs written into data.json are a separate migration.
+    url = f"https://data.sf.gov/resource/{dataset}.json?" + urllib.parse.urlencode(params)
     for attempt in range(tries):
         try:
             deadline = time.time() + budget
