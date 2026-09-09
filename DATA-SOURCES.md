@@ -372,6 +372,12 @@ here is [Adding a source](#adding-a-source).
   building was "completed in 1983"). Record both.
 - **Citation label:** "State of California DPR 523 form for <address>, via SF
   Planning"
+- **Verified:** 2026-09-09 (3 of the 14 theatre parcels of issue #302 have a
+  form: 4266036 → 2761 24th Street, "Brava Theater", Page & Turnbull for the
+  Eastern Neighborhoods Mission Survey, 2007; 3589108 → 777 Valencia Street,
+  Tudor Revival, 2006; 3969001 → 475–499 Alabama Street, American Can Co. The
+  other eleven 404. **A 404 body is 1,245 bytes of HTML, not an empty file** —
+  check the status code, not the size.)
 - **Verified:** 2026-08-06 (apn 3708097 → 25 Jessie Street / One Ecker Square,
   Jorge de Quesada, 1982–83)
 
