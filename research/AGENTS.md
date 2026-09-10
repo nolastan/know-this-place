@@ -28,13 +28,28 @@ this site for. So the module has a bias, and it is not subtle:
 > transcripts, permit ledgers, city directories. The harder a source is to
 > search from outside, the more a page built on it is worth.
 
-Two corollaries agents get wrong often enough to be worth stating:
+Three corollaries agents get wrong often enough to be worth stating:
 
 - **Low yield is fine and expected.** A scanned book that produces four citable
   facts about four addresses is a **win**. See "Mining a corpus" below.
 - **A big, easy, already-indexed dataset is not automatically the better
   target.** It usually loses to a small obscure one on the only axis that
   matters here.
+- **The bias ranks sources. It does not rule any of them out.** It says which
+  source to reach for *first*, not which facts are allowed onto a page, and
+  reading it as a prohibition is the more expensive mistake of the two. Where
+  nothing search-invisible carries the fact, an indexed source that does is the
+  right source and it is not a lesser one: a theatre's opening night, the film
+  it opened with, its renamings and the date it closed as a cinema are in a
+  specialist database and on the venue's own site, and in no city dataset and no
+  archive here. Skipping them leaves the page emptier without making it any more
+  original — and a reader searching that address still finds nothing of ours.
+  **Reach for the invisible source first; take the visible one when it is what
+  holds the fact; cite both the same way, and register the visible one in
+  [SOURCES.md](SOURCES.md) like any other.** What the bias actually forbids is
+  *stopping* at the easy source — publishing what the first page of results
+  says and never opening the nomination, the survey form or the newspaper run
+  that says more.
 
 ## The unit of work is a run, not a stage
 
