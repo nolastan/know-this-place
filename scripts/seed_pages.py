@@ -1543,8 +1543,8 @@ def built_item(rec: dict, indent: str) -> list:
     # subdividing the Cassin parcel", 1953) leaves the entry standing.
     #
     # This reads every dated entry the rail carries, under both spellings:
-    # three of the 39 `building_history` events match, and 871 of the 8,028
-    # `historical_record` entries, across 862 pages. Seven of those 862 stand
+    # three of the 39 `building_history` events match, and 872 of the 8,032
+    # `historical_record` entries, across 863 pages. Seven of those 863 stand
     # the entry down on a completion that is not this building's — the branch
     # library further along Taraval, a garage next door at 1960 Washington, the
     # neighbourhood platted out around the parcel — and on four of them no
