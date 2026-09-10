@@ -1534,13 +1534,23 @@ def built_item(rec: dict, indent: str) -> list:
     # gives, has already opened the rail — and it says more than "Built." does,
     # naming the contractor who finished it. Stand down rather than print the
     # same year twice, the way the "Completed" spec row already does when it
-    # matches the roll. Three of the 39 `building_history` events match; the
-    # test is deliberately the completion words and the year together, so an
-    # event that merely shares the year ("Lot created by subdividing the Cassin
-    # parcel", 1953) leaves the entry standing.
-    if any(date_key(e["date"])[0] == int(year)
-           and BUILT_EVENT.search(e["description"] or "")
-           for e in building_history_entries(rec)):
+    # matches the roll. The test is deliberately the completion words and the
+    # year together, so an entry that merely shares the year ("Lot created by
+    # subdividing the Cassin parcel", 1953) leaves the entry standing.
+    #
+    # This reads every dated entry the rail carries, under both spellings:
+    # three of the 39 `building_history` events match, and 871 of the 8,028
+    # `historical_record` entries, across 862 pages. Seven of those 862 stand
+    # the entry down on a completion that is not this building's — the branch
+    # library further along Taraval, a garage next door at 1960 Washington, the
+    # neighbourhood platted out around the parcel — and on four of them no
+    # other same-year entry says the building went up. That is the price of one
+    # regex reading prose; the seven are listed on this change's PR, and the
+    # fix for them is a sentence in their `data.json`, not a narrower test
+    # here, which would only stand the entry down on fewer real completions.
+    if any(date_key(e.get("date"))[0] == int(year)
+           and BUILT_EVENT.search(e.get("description") or "")
+           for e in history_entries(rec)):
         return []
     replaced = any(
         date_key(p.get("filed"))[0] < int(year)
@@ -1734,6 +1744,18 @@ def building_history_entries(rec: dict) -> list:
     return out
 
 
+def history_entries(rec: dict) -> list:
+    """Every dated historical entry the page carries, in one list.
+
+    `historical_record` and `building_history` are the same fact in the same
+    slot under two spellings, and the timeline already reads both. Anything
+    else that has to reason about what the rail is *about* — whether a source
+    has already dated the building's completion, say — has to read both too,
+    or it answers for the seventeen Corbett Heights pages and no others.
+    """
+    return (rec.get("historical_record") or []) + building_history_entries(rec)
+
+
 def historical_items(rec: dict, indent: str) -> list:
     """`historical_record` as `(date_key, html)` items for the page's timeline.
 
@@ -1749,7 +1771,7 @@ def historical_items(rec: dict, indent: str) -> list:
     with the address it was filed under. Never one item per record: a reader
     scanning the rail should not meet the same date twice.
     """
-    entries = (rec.get("historical_record") or []) + building_history_entries(rec)
+    entries = history_entries(rec)
     if not entries:
         return []
     # `label` is the short form a timeline entry cites; the full citation is in
