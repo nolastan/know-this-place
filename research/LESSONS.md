@@ -1732,3 +1732,25 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   before the difference was measured. *On any bulk fetch, time one document with
   `curl` before writing a Python fetch loop around `urllib.request`, and if the
   gap is that size, shell out.*
+
+- **A survey's block-and-lot column can be OCR'd wrong, and the neighbouring
+  rows are the free check.** The Uptown Tenderloin nomination's inventory prints
+  `540/11` for 76–80 Turk Street, and block 0540 is in the Western Addition with
+  no Turk Street frontage at all — the digit is a misread of 340. What settled it
+  was reading four rows either side: 34–48, 50, 62–64, 66–74 and 76–80 carry lots
+  7, 8, 9, 10 and 11, the first row prints its block as `340/7` correctly, and
+  the assessor's APNs for the published pages at those numbers are 0340007,
+  0340008, 0340010 and 0340011. *An inventory is a sequence, so never resolve a
+  single row's block and lot on its own — read its neighbours and check the run
+  against the parcels the site already has. One row in isolation cannot tell a
+  misread digit from a genuinely different block.*
+
+- **Never guess a National Register reference number from the certification
+  year.** 08001407 is the Uptown Tenderloin Historic District; 08000209, which
+  is what guessing an early-2008 listing produces, is a real document that
+  downloads with HTTP 200 and 154 pages of nomination for Johnston's Inn in
+  Paris, Kentucky. Nothing about the fetch fails, and the PDF's own title
+  metadata is the only quick tell. *Take every refnum from the NPS index query,
+  and check the property name on page 1 before extracting anything — the
+  dossier already says the index is the batch planner, and this is the second
+  reason.*

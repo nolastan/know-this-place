@@ -224,15 +224,50 @@ URL. Worked example:
      All six PDFs are fetched and extracted. **This is the richest unread
      material in the source** and it is a different kind of document from the
      rest — see "A district nomination is a per-property inventory" below.
-  2. **69 listings certified 1990 or later** — 1990-1999 (17), 2000-2009 (22),
-     2010-2015 (15), 2016-2023 (15).
+  2. **68 listings certified 1990 or later** — 1990-1999 (17), 2000-2009 (21),
+     2010-2015 (15), 2016-2023 (15). The Uptown Tenderloin Historic District
+     (08001407, listed 5 February 2009) is out of that count: it is fetched and
+     extracted, and one row of its inventory is read in
+     [`uptown-tenderloin-district.json`](../findings/nrhp-nominations/uptown-tenderloin-district.json).
+     **The rest of that inventory — roughly 400 properties over 33 blocks — is
+     the largest single piece of unread material in this source.**
   3. **77000334** (Mills Building and Tower) and **01000281** (Maritime
      National Historic Site, Fort Mason), whose PDFs have no text layer, and
      **100008228**, whose `_text` path serves a PNG placeholder.
+- **Never guess a reference number.** 08001407 is the Uptown Tenderloin
+  Historic District. 08000209 — a plausible guess for an early-2008 San
+  Francisco listing — downloads with HTTP 200 and serves 154 pages of nomination
+  for Johnston's Inn in Paris, Kentucky. The fetch succeeds, `pdftotext`
+  succeeds, and the only quick tell is the PDF's own title metadata. Take the
+  refnum from the index query and read the property name on page 1 before
+  extracting.
+- **A district inventory's block-and-lot column is OCR, and its neighbours are
+  the check.** The Uptown Tenderloin inventory prints `540/11` for 76-80 Turk
+  Street; block 0540 is in the Western Addition and has no Turk Street frontage.
+  The five consecutive rows 34-48, 50, 62-64, 66-74 and 76-80 carry lots 7, 8,
+  9, 10 and 11, the first prints its block correctly as `340/7`, and the
+  assessor's APNs for the site's published pages at those numbers are 0340007,
+  0340008, 0340010 and 0340011. Resolve an inventory row against its neighbours
+  and against the parcels the site already holds, never on its own.
 - **A caution for the post-2016 group before anyone plans it:** the nine-digit
   reference numbers do **not** serve a PDF at the `_text` path — 100008228 (the
   Timothy L. Pflueger House) returns a 1.6 KB PNG placeholder. Those documents
   need a different route, and finding it is part of that batch.
+
+- **Verified:** 2026-09-09 (third run, targeted. Fetched the Uptown Tenderloin
+  Historic District nomination (08001407) and read its section 7 inventory only
+  for the theatre addresses named in issue #302 — one row of roughly four
+  hundred. One of the fifteen theatre parcels in that issue falls inside the
+  district: 76-80 Turk Street, recorded as the Gaiety Theater, stores and a loft
+  converted to a theatre in 1922 by the architect Earl B. Bertz. 2 findings, 2
+  resolved, 1 published; the second is an alteration the nomination dates only
+  as "after 1990s", declined because the page's one timeline is date-ordered.
+  The document's remaining ~400 inventory rows are unread and are filed as
+  issue #304. Three further theatre buildings were seen while searching it and are
+  named in #304: 814-820 Larkin Street, 35-65 Mason Street and 156 Eddy
+  Street. Both new cautions above — the guessed reference number and the OCR'd
+  block column — cost this run time and are the reason it is worth a Verified
+  line of its own.)
 
 - **Verified:** 2026-09-06 (second run. Read the Civic Center district
   nomination (78000757) and the 37 single-building nominations among the 42

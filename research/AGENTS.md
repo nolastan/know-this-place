@@ -123,7 +123,9 @@ Writing is a different matter: a run appends to its own findings file with
 `resolve_eas.py` and an editor, not by loading it into the context.
 
 **INDEX.md is derived**, like the sitemap and the map index on the website
-side. Regenerate it in the same commit as any findings change:
+side. Regenerate it in the same commit as any change under `findings/` **or
+`manifests/`** — the index lists both, so adding a manifest alone makes it
+stale, and `scripts/validate.py` does not check the research module:
 
 ```bash
 python3 research/tools/check.py --index

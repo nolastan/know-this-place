@@ -57,7 +57,7 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Jordan Park Historic District](jordan-park/) — Eligible for the California Register, significant 1900–1920; 19 buildings documented on 5 streets.
 - [Juri Street Historic District](juri-street/) — Eligible for the California Register, significant 1890–1895; 8 buildings documented on 2 streets.
 - [Kearny-Belden Conservation District](kearny-belden/) — An Article 11 conservation district; 7 buildings documented on 3 streets.
-- [Kearny-Market-Mason-Sutter Conservation District](kearny-market-mason-sutter/) — An Article 11 conservation district; 202 buildings documented on 24 streets.
+- [Kearny-Market-Mason-Sutter Conservation District](kearny-market-mason-sutter/) — An Article 11 conservation district; 203 buildings documented on 24 streets.
 - [Lexington and San Carlos Streets Reconstruction Historic District](lexington-and-san-carlos-streets-reconstruction/) — Eligible for the California Register, significant 1906–1915; 44 buildings documented on 4 streets.
 - [Liberty Hill Historic District](liberty-hill/) — An Article 10 city landmark district, significant 1860s–1906; 252 buildings documented on 9 streets.
 - [Liberty Street Historic District](liberty-street/) — Listed on the California and National Registers, significant 1867–1911; 40 buildings documented on 2 streets.
@@ -87,7 +87,7 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Russian Hill-Vallejo Street Crest Historic District](russian-hill-vallejo-street-crest/) — Listed on the California and National Registers, significant 1888–1941; 15 buildings documented on 7 streets.
 - [San Francisco 1952 Firehouse Bond Act Thematic District (Discontiguous)](san-francisco-1952-firehouse-bond-act-thematic-district-discontiguous/) — Eligible for the California Register, significant 1952–1961; 10 buildings documented on 10 streets.
 - [San Francisco Civic Center National Historic Landmark District](san-francisco-civic-center-national-historic-landmark-district/) — Listed on the California and National Registers, significant 1913–1951 (I believe this is the POS for the NHL; the NR listing has a POS of 1800–1974, an unusually long range that the CLI attributes to different standards for identfying POS's at the time of the NR nomination (1978)); 6 buildings documented on 5 streets.
-- [San Francisco Neighborhood Movie Theater Historic District (Discontiguous)](san-francisco-neighborhood-movie-theater-discontiguous/) — Eligible for the California and National Registers, significant 1906–1945; 15 buildings documented on 12 streets.
+- [San Francisco Neighborhood Movie Theater Historic District (Discontiguous)](san-francisco-neighborhood-movie-theater-discontiguous/) — Eligible for the California and National Registers, significant 1906–1945; 16 buildings documented on 13 streets.
 - [Sea Cliff Historic District](sea-cliff/) — Eligible for the California Register, significant 1913–1935; 29 buildings documented on 8 streets.
 - [Second and Howard Streets Historic District](second-and-howard-streets/) — Listed on the California and National Registers, significant 1906–1912; 22 buildings documented on 4 streets.
 - [Shotwell Street Historic District](shotwell-street/) — Eligible for the California and National Registers, significant 1865–1905; 148 buildings documented on 10 streets.
@@ -107,7 +107,7 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Upper Grant Avenue Historic District](upper-grant-avenue/) — Eligible for the California Register, significant 1906–1925; 111 buildings documented on 11 streets.
 - [Upper Market Street Commercial Historic District](upper-market-street-commercial/) — Eligible for the California Register, significant 1886–1958; 1970–1979; 29 buildings documented on 3 streets.
 - [Upper Market Street Commercial Historic District Extension](upper-market-street-commercial-extension/) — Eligible for the California Register, significant 1886–1958; 1970–1979; 14 buildings documented on one street.
-- [Uptown Tenderloin Historic District](uptown-tenderloin/) — Listed on the California and National Registers, significant 1906–1957; 234 buildings documented on 17 streets.
+- [Uptown Tenderloin Historic District](uptown-tenderloin/) — Listed on the California and National Registers, significant 1906–1957; 235 buildings documented on 17 streets.
 - [Vicente Street Historic District](vicente-street/) — Eligible for the California Register, significant 1931; 9 buildings documented on one street.
 - [Von Schroeder-Welsh Block Historic District](von-schroeder-welsh-block/) — Eligible for the California Register, significant 1889–1895; 25 buildings documented on 2 streets.
 - [Washington Square Historic District](washington-square/) — Eligible for the California Register, significant 1906–1939; 16 buildings documented on 7 streets.
