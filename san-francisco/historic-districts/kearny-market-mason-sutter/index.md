@@ -17,7 +17,7 @@ The buildings documented here so far inside the Kearny-Market-Mason-Sutter Conse
 - [Market Street, Union Square](/san-francisco/union-square/market-street/) — 3 documented buildings inside the district.
 - [Mason Street, Nob Hill](/san-francisco/nob-hill/mason-street/) — 1 documented building inside the district.
 - [Mason Street, Tenderloin](/san-francisco/tenderloin/mason-street/) — 6 documented buildings inside the district.
-- [Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/) — 7 documented buildings inside the district.
+- [O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/) — 7 documented buildings inside the district.
 - [Pine Street](/san-francisco/financial-district/pine-street/) — 1 documented building inside the district.
 - [Post Street, Financial District](/san-francisco/financial-district/post-street/) — 12 documented buildings inside the district.
 - [Post Street, Nob Hill](/san-francisco/nob-hill/post-street/) — 1 documented building inside the district.
@@ -139,13 +139,13 @@ The buildings documented here so far inside the Kearny-Market-Mason-Sutter Conse
 - [301–325 Mason Street](/san-francisco/tenderloin/mason-street/301/) — A 1955 garage, with a kitchen remodel permitted in 2016.
 - [333 Mason Street](/san-francisco/tenderloin/mason-street/333/) — A 1909 theater, with a seismic retrofit permitted in 1993.
 - [414–430 Mason Street](/san-francisco/tenderloin/mason-street/414/) — A 1911 2-unit building, with a kitchen remodel permitted in 1998.
-- [111 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/111/) — A 1989 store building, with electrical work permitted in 2010.
-- [165 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/165/) — A 1908 office building, with a kitchen remodel permitted in 2015.
-- [180–190 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/180/) — A 1910 hotel, with a seismic retrofit permitted in 2000.
-- [201–219 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/201/) — A 1907 building, with stair work permitted in 2005.
-- [238–242 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/238/) — A 1914 hotel, with reroofing permitted in 2010.
-- [250–260 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/250/) — A 1965 hotel, with reroofing permitted in 2007.
-- [270–272 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/270/) — A 1909 store building, with a kitchen remodel permitted in 2017.
+- [111 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/111/) — A 1989 store building, with electrical work permitted in 2010.
+- [165 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/165/) — A 1908 office building, with a kitchen remodel permitted in 2015.
+- [180–190 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/180/) — A 1910 hotel, with a seismic retrofit permitted in 2000.
+- [201–219 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/201/) — A 1907 building, with stair work permitted in 2005.
+- [238–242 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/238/) — A 1914 hotel, with reroofing permitted in 2010.
+- [250–260 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/250/) — A 1965 hotel, with reroofing permitted in 2007.
+- [270–272 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/270/) — A 1909 store building, with a kitchen remodel permitted in 2017.
 - [555 Pine Street](/san-francisco/financial-district/pine-street/555/) — An office building, with electrical work permitted in 2017.
 - [126–130 Post Street](/san-francisco/financial-district/post-street/126/) — A 1909 store building, with plumbing work permitted in 2021.
 - [135 Post Street](/san-francisco/financial-district/post-street/135/) — A 1908 store building, with a seismic retrofit permitted in 1994.
