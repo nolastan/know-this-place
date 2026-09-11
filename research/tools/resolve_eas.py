@@ -119,7 +119,7 @@ def api_get(dataset: str, params: dict, timeout: int = 120, budget: int = 300,
     urllib's timeout is per-read, so a response that trickles never fires it and
     the process hangs. Read in chunks against a wall clock instead.
     """
-    url = f"https://data.sfgov.org/resource/{dataset}.json?" + urllib.parse.urlencode(params)
+    url = f"https://data.sf.gov/resource/{dataset}.json?" + urllib.parse.urlencode(params)
     for attempt in range(tries):
         try:
             deadline = time.time() + budget
