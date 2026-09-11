@@ -1,6 +1,6 @@
-# Mccoppin Street
+# McCoppin Street
 
-Every residential parcel on Mccoppin Street that the city's address, assessor and permit records describe.
+Every residential parcel on McCoppin Street that the city's address, assessor and permit records describe.
 
 ## Documented so far
 

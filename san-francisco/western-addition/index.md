@@ -20,7 +20,7 @@ A large central district west of Van Ness that largely survived the 1906 fire, m
 - [Golden Gate Avenue](golden-gate-avenue/) — A 1926 apartment building named among the 1974 Patty Hearst addresses.
 - [Gough Street](gough-street/) — 1 building, built 1968.
 - [Laguna Street](laguna-street/) — Bethel A.M.E. Church, built in 1969 for a congregation meeting in San Francisco since the 1850s.
-- [Mcallister Street](mcallister-street/) — The Third Baptist Church complex, San Francisco Landmark No. 275.
+- [McAllister Street](mcallister-street/) — The Third Baptist Church complex, San Francisco Landmark No. 275.
 - [O'Farrell Street](ofarrell-street/) — 1 building, built 1900.
 - [Pierce Street](pierce-street/) — 1 building, built 1923; 1 in the Alamo Square Historic District.
 - [Pine Street](pine-street/) — 1 building, built 1925.

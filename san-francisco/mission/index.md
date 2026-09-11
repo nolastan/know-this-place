@@ -89,7 +89,7 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [Lucky Street](lucky-street/) — 17 buildings, built 1890–1998; 13 in the South Mission Avenues and Alleys Historic District.
 - [Mariposa Street](mariposa-street/) — 11 buildings, built 1908–1991.
 - [Market Street](market-street/) — 1 building, built 1979.
-- [Mccoppin Street](mccoppin-street/) — 4 buildings, built 1907–1996; 3 in the Jessie-McCoppin-Stevenson Streets Reconstruction Historic District.
+- [McCoppin Street](mccoppin-street/) — 4 buildings, built 1907–1996; 3 in the Jessie-McCoppin-Stevenson Streets Reconstruction Historic District.
 - [Minna Street](minna-street/) — 17 buildings, built 1906–1938; 6 in the Western SOMA Light Industrial and Residential Historic District.
 - [Mission Street](mission-street/) — 77 buildings, built 1885–2023; 7 in the Mission Miracle Mile at 17th Street Historic District.
 - [Missouri Street](missouri-street/) — 1 building, built 1922.

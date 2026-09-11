@@ -10,7 +10,7 @@ The buildings documented here so far inside the Sea Cliff Historic District, and
 - [28th Avenue](/san-francisco/seacliff/28th-avenue/) — 1 documented building inside the district.
 - [El Camino Del Mar](/san-francisco/seacliff/el-camino-del-mar/) — 5 documented buildings inside the district.
 - [Lake Street](/san-francisco/seacliff/lake-street/) — 1 documented building inside the district.
-- [Mclaren Avenue](/san-francisco/seacliff/mclaren-avenue/) — 3 documented buildings inside the district.
+- [McLaren Avenue](/san-francisco/seacliff/mclaren-avenue/) — 3 documented buildings inside the district.
 - [Seacliff Avenue](/san-francisco/seacliff/seacliff-avenue/) — 13 documented buildings inside the district.
 
 ## Buildings
@@ -28,9 +28,9 @@ The buildings documented here so far inside the Sea Cliff Historic District, and
 - [570 El Camino Del Mar](/san-francisco/seacliff/el-camino-del-mar/570/) — A 1930 single-family house, with garage work permitted in 2019.
 - [711 El Camino Del Mar](/san-francisco/seacliff/el-camino-del-mar/711/) — A 1970 single-family house, with reroofing permitted in 1996.
 - [2825 Lake Street](/san-francisco/seacliff/lake-street/2825/) — A 1921 single-family house, with a rear addition permitted in 2010.
-- [25 Mclaren Avenue](/san-francisco/seacliff/mclaren-avenue/25/) — A 1923 single-family house, with a vertical addition permitted in 1992.
-- [60 Mclaren Avenue](/san-francisco/seacliff/mclaren-avenue/60/) — A 1934 single-family house, with a kitchen and bathroom remodel permitted in 2008.
-- [80 Mclaren Avenue](/san-francisco/seacliff/mclaren-avenue/80/) — A 1924 single-family house, with a seismic retrofit permitted in 2016.
+- [25 McLaren Avenue](/san-francisco/seacliff/mclaren-avenue/25/) — A 1923 single-family house, with a vertical addition permitted in 1992.
+- [60 McLaren Avenue](/san-francisco/seacliff/mclaren-avenue/60/) — A 1934 single-family house, with a kitchen and bathroom remodel permitted in 2008.
+- [80 McLaren Avenue](/san-francisco/seacliff/mclaren-avenue/80/) — A 1924 single-family house, with a seismic retrofit permitted in 2016.
 - [4 Seacliff Avenue](/san-francisco/seacliff/seacliff-avenue/4/) — A 1956 single-family house, with an accessory dwelling unit permitted in 2021.
 - [8 Seacliff Avenue](/san-francisco/seacliff/seacliff-avenue/8/) — A 1914 single-family house, with a kitchen and bathroom remodel permitted in 2024.
 - [25 Seacliff Avenue](/san-francisco/seacliff/seacliff-avenue/25/) — A 1916 single-family house, with facade work permitted in 1988.

@@ -13,7 +13,7 @@ The buildings documented here so far inside the NOPA Historic District, and the 
 - [Grove Street](/san-francisco/hayes-valley/grove-street/) — 2 documented buildings inside the district.
 - [Hayes Street](/san-francisco/hayes-valley/hayes-street/) — 2 documented buildings inside the district.
 - [Lyon Street](/san-francisco/haight-ashbury/lyon-street/) — 1 documented building inside the district.
-- [Mcallister Street](/san-francisco/western-addition/mcallister-street/) — 1 documented building inside the district.
+- [McAllister Street](/san-francisco/western-addition/mcallister-street/) — 1 documented building inside the district.
 
 ## Buildings
 
@@ -36,7 +36,7 @@ The buildings documented here so far inside the NOPA Historic District, and the 
 - [1339–1343 Hayes Street](/san-francisco/hayes-valley/hayes-street/1339/) — A 1900 three-flat, with reroofing permitted in 1997.
 - [1534 Hayes Street](/san-francisco/hayes-valley/hayes-street/1534/) — A 1910 6-unit apartment building, with a seismic retrofit permitted in 2017.
 - [301 Lyon Street](/san-francisco/haight-ashbury/lyon-street/301/) — A 1902 church, with garage work permitted in 2023.
-- [1733 Mcallister Street](/san-francisco/western-addition/mcallister-street/1733/) — A 1914 8-unit apartment building, with a seismic retrofit permitted in 2017.
+- [1733 McAllister Street](/san-francisco/western-addition/mcallister-street/1733/) — A 1914 8-unit apartment building, with a seismic retrofit permitted in 2017.
 
 The district record is the city's; the buildings beneath it are
 generated from the DataSF datasets listed in each page's Sources
