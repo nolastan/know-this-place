@@ -8,6 +8,7 @@ The parcels on Golden Gate Avenue documented here so far, from the city's addres
 - [55–75](55/) — A 2020 305-unit apartment building in the Market Street Theatre and Loft Historic District, with permit records from 1990 to 2026.
 - [64](64/) — A 1910 store building in the Uptown Tenderloin Historic District, with reroofing permitted in 2020.
 - [86–98](86/) — A 1918 store building in the Uptown Tenderloin Historic District, with reroofing permitted in 2020.
+- [121](121/) — A 2014 store building in the Uptown Tenderloin Historic District, with a kitchen remodel permitted in 2010.
 - [133](133/) — A church in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 1999.
 - [134](134/) — A 1917 store building in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 2003.
 - [150](150/) — A 1912 building in the Uptown Tenderloin Historic District, with a kitchen remodel permitted in 2014.
@@ -18,6 +19,7 @@ The parcels on Golden Gate Avenue documented here so far, from the city's addres
 - [210–220](210/) — A 1909 hotel in the Uptown Tenderloin Historic District, with facade work permitted in 2000.
 - [240](240/) — A 1907 office building in the Uptown Tenderloin Historic District, with fire repair permitted in 1986.
 - [241–243](241/) — A 1916 store building in the Uptown Tenderloin Historic District, with permit records from 1989 to 2003.
+- [247](247/) — A 1911 store building in the Uptown Tenderloin Historic District, with reroofing permitted in 2008.
 - [248–250](248/) — A 1911 hotel in the Uptown Tenderloin Historic District, with a seismic retrofit permitted in 2001.
 - [255](255/) — A 1916 store building in the Uptown Tenderloin Historic District, with stair work permitted in 2012.
 - [276–284](276/) — A 1913 hotel in the Uptown Tenderloin Historic District, with facade work permitted in 2017.

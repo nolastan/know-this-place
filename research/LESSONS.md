@@ -1754,3 +1754,83 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   and check the property name on page 1 before extracting anything — the
   dossier already says the index is the batch planner, and this is the second
   reason.*
+
+- **A scanned inventory's block column fails systematically, not randomly, and
+  that is what makes it safe to resolve around.** The Uptown Tenderloin
+  inventory's 85 block mismatches were one substitution repeated: a leading 3
+  read as 5 (`531`→0331, `524`→0324, `503`→0303), or dropped entirely (`52/3`→
+  0352), or read as `H` in "31" (`H7`→317, `H9`→319) or as `$` (`$21`→321), with
+  `!` and `l` for 1 and `O` for 0 in the lot. Resolving on the EAS address join
+  and checking the printed block afterwards explained **84 of 85**. *Audit the
+  whole set mechanically — single-character misread, or dropped leading digit —
+  and read only the residue by hand. The one that did not fit was the document's
+  own filing error (800-806 O'Farrell printed `520/14`, and parcel 0520014 is
+  1780 Filbert Street in the Marina), and it stood out precisely because every
+  other mismatch had a rule.*
+
+- **A findings file's `conflict` entries are not automatically a page's
+  `unknowns`.** The resolver recorded 73 conflicts on this batch and every one
+  said the same thing — the record is filed under block 531, the address
+  resolves to 0331009. Those are the OCR artefact above, not a disagreement in
+  the historical record, and writing 73 of them onto pages would have presented
+  a scanning fault to readers as something the sources disagree about. *Sort
+  conflicts by what they are about before publishing them: a date the assessor
+  disputes belongs in `unknowns`; a block-column transcription mismatch is
+  bookkeeping and belongs only in the findings file.*
+
+- **Re-extracting a PDF with `pdftotext -layout` proves nothing when the text is
+  already `-layout`.** A whole class of damage here looked like collapsed
+  columns, so the PDF was re-extracted to compare — and came back byte-identical
+  (6,737 lines, 451,531 characters). The damage was in the scan's OCR, not in
+  the extraction. *Diff the re-extraction against the committed `.txt` before
+  planning any work around "bad extraction"; if they match, the text is as good
+  as it gets and the fix is a resolver rule, not a re-fetch.*
+
+- **In an inventory that lists a building's later names, a parenthesised name is
+  a later name and the year is when that name was current.** 134-144 Eddy Street
+  is dated 1907 and its first listed name is "Langham Hotel (1911)"; 71 of 477
+  rows lead with a dated name. Writing "built as the Langham Hotel" would assert
+  something the row does not say. *Only an undated leading name may be published
+  as what a building was built as; a dated one is a later name and goes in
+  `extra`, not into the sentence.*
+
+- **The free prose after an inventory row's structured fields is where the
+  people are, and a keyword privacy filter will not see them.** These rows end
+  with sentences like "Jessie Hayman ran a house of prostitution here from 1912
+  to 1917" and "Former tenant: Frank Capra, film director, 1921" — no "owner",
+  no "resident", nothing a role-word filter matches. An extractor that ran to
+  the end of the clause put both names into draft findings. *Cut an alterations
+  or use clause at its first sentence boundary, and audit the output a second
+  way: list every capitalised word-pair in the finished descriptions that a
+  credit word did not introduce. In this batch that scan returned 40 pairs, 38
+  of them building names and styles and exactly 2 people.*
+
+- **Pulling a dated event out of a clause without removing it from that clause
+  publishes the same event twice.** "Machine shop 1920 converted to garage by
+  1929" became both a construction sentence still carrying the conversion and a
+  separate 1929 alteration entry — the generic-beside-specific duplicate, on
+  eight pages, and the overlap scan is what caught it. *When an embedded event
+  becomes its own entry, strip its phrase from the clause it came from, and
+  compare the two year-free — the captured phrase carries the year and the
+  clause may not, so an exact-substring strip silently misses.*
+
+- **A batch that names several notable dead residents is a presentation
+  decision, not a research one.** Twelve rows here name Dashiell Hammett, Frank
+  Capra, Fritz Leiber, Sally Stanford, Miriam Allen de Ford and two women the
+  nomination itself cites to a published history. The root `AGENTS.md` admits
+  "notable past residents already covered by published sources" and
+  `notable_residents` exists to carry them; this module's rulebook says leave
+  residents and occupants. Both readings are defensible. *Take none of them in
+  the run, say so in the dossier with the names listed, and let a person decide
+  — publishing seven residents on an ambiguity is not a call to make inside a
+  450-fact batch.*
+
+- **Census the credited names before publishing them, because OCR damage hides
+  in the singletons.** Grouping this batch's 228 distinct credits and matching
+  every one-off against the repeated spellings surfaced `Albert W. Burgen` for
+  Burgren, `H.C. Bauman` for Baumann, `Roussaeau & Rousseau` and `Rousseau &
+  Rosseau` — each wrong once and right several times in the same document. *Fix
+  only where the document itself spells it correctly elsewhere, leave
+  punctuation variants alone, and leave a genuine ambiguity alone too: "Alfred
+  W. Burgren" against "Albert W. Burgren" is two first names for one surname and
+  choosing between them would be adjudicating.*

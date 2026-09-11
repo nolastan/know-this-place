@@ -1,0 +1,141 @@
+{
+  "address": "720 Ofarrell Street, San Francisco, CA 94109",
+  "path": "/san-francisco/tenderloin/ofarrell-street/720/",
+  "apn": "0320008",
+  "block": "0320",
+  "lot": "008",
+  "eas_baseid": "281627",
+  "coordinates": {
+    "lat": 37.78557,
+    "lng": -122.416753
+  },
+  "parcel": {
+    "year_built": 1930,
+    "units": 2,
+    "stories": 1,
+    "rooms": 1,
+    "bathrooms": 2,
+    "lot_area_sqft": 3092,
+    "building_area_sqft": 2750,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "C",
+    "zoning": "RC-4",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Downtown",
+    "analysis_neighborhood": "Tenderloin",
+    "property_location_raw": "0000 0720 O'FARRELL           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 90624,
+    "assessed_improvement_value": 16469
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1930",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Uptown Tenderloin Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1957",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "9209014",
+      "type": "additions alterations or repairs",
+      "status": "disapproved",
+      "filed": "1992-06-03",
+      "status_date": "1999-12-28",
+      "estimated_cost": 21000,
+      "description": "erect paint spray booth with duct",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9207038",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-04-30",
+      "status_date": "1992-06-23",
+      "estimated_cost": 1200,
+      "description": "remove nonconforming shed in back of bldg.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9206310",
+      "type": "wall or painted sign",
+      "status": "expired",
+      "filed": "1992-04-17",
+      "status_date": "1992-08-24",
+      "revised_cost": 200,
+      "description": "painted or non structural sign",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8915199",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-08-21",
+      "status_date": "1990-07-26",
+      "estimated_cost": 1000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=OFARRELL&street_type=ST&address_number=720",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0320008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0320&lot=008",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0320008",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41675281206079%2037.78556963450901)%27)",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "nrhp-08001407",
+      "name": "National Register of Historic Places nomination, Uptown Tenderloin Historic District (reference number 08001407), National Park Service.",
+      "query": "https://npgallery.nps.gov/NRHP/GetAsset/NRHP/08001407_text",
+      "label": "National Register of Historic Places nomination, National Park Service",
+      "retrieved": "2026-09-11"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1930",
+      "kind": "construction",
+      "description": "Built as stores, built by the builder John Scale. One storey, reinforced concrete structure, one-part commercial composition, Renaissance/Baroque ornamentation.",
+      "source": "nrhp-08001407"
+    }
+  ]
+}

@@ -5,6 +5,7 @@ The residential parcels on Mason Street documented here so far, from the city's 
 ## Documented so far
 
 - [34–38](34/) — A 1907 store building in the Kearny-Market-Mason-Sutter Conservation District, with plumbing work permitted in 2012.
+- [39–45](39/) — A hotel in the Uptown Tenderloin Historic District, with permit records from 1987 to 2004.
 - [48–56](48/) — A 1908 hotel in the Kearny-Market-Mason-Sutter Conservation District, with plumbing work permitted in 2012.
 - [115](115/) — A 1907 store building, with a seismic retrofit permitted in 2005.
 - [125](125/) — Affordable family housing whose Mason Street facade carries Mildred Howard's text piece.
