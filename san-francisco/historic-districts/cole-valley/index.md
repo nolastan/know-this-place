@@ -4,7 +4,7 @@ The buildings documented here so far inside the Cole Valley Historic District, a
 
 ## Streets
 
-- [Carl Street](/san-francisco/haight-ashbury/carl-street/) — 3 documented buildings inside the district.
+- [Carl Street](/san-francisco/haight-ashbury/carl-street/) — 4 documented buildings inside the district.
 - [Clayton Street](/san-francisco/corbett-heights/clayton-street/) — 2 documented buildings inside the district.
 - [Cole Street](/san-francisco/haight-ashbury/cole-street/) — 6 documented buildings inside the district.
 - [Grattan Street](/san-francisco/castro/grattan-street/) — 1 documented building inside the district.
@@ -14,6 +14,7 @@ The buildings documented here so far inside the Cole Valley Historic District, a
 
 - [37–39 Carl Street](/san-francisco/haight-ashbury/carl-street/37/) — A 1906 two-flat, with reroofing permitted in 1999.
 - [48–52 Carl Street](/san-francisco/haight-ashbury/carl-street/48/) — A 1900 three-flat, with reroofing permitted in 2004.
+- [84–98 Carl Street](/san-francisco/haight-ashbury/carl-street/84/) — A 1909 6-unit apartment building, with a seismic retrofit permitted in 2016.
 - [199 Carl Street](/san-francisco/haight-ashbury/carl-street/199/) — A 1900 single-family house, with window replacement permitted in 2025.
 - [897 Clayton Street](/san-francisco/corbett-heights/clayton-street/897/) — A 1900 single-family house, with window replacement permitted in 2025.
 - [910 Clayton Street](/san-francisco/corbett-heights/clayton-street/910/) — A 1906 single-family house, with a bathroom remodel permitted in 2014.

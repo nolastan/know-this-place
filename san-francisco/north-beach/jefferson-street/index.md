@@ -4,6 +4,7 @@ The parcels on Jefferson Street documented here so far, from the city's address,
 
 ## Documented so far
 
+- [145](145/) — A store building, with facade work permitted in 1997.
 - [175](175/) — A 1966 store building, with a kitchen remodel permitted in 2013.
 
 Pages are generated from the DataSF datasets listed in each page's

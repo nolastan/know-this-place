@@ -6,6 +6,7 @@ The parcels on Carl Street documented here so far, from the city's address, asse
 
 - [37–39](37/) — A 1906 two-flat in the Cole Valley Historic District, with reroofing permitted in 1999.
 - [48–52](48/) — A 1900 three-flat in the Cole Valley Historic District, with reroofing permitted in 2004.
+- [84–98](84/) — A 1909 6-unit apartment building in the Cole Valley Historic District, with a seismic retrofit permitted in 2016.
 - [199](199/) — A 1900 single-family house in the Cole Valley Historic District, with window replacement permitted in 2025.
 
 Pages are generated from the DataSF datasets listed in each page's

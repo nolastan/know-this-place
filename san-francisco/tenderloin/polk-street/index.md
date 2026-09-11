@@ -13,6 +13,7 @@ The parcels on Polk Street documented here so far, from the city's address, asse
 - [731–749](731/) — A 1908 hotel, with fire repair permitted in 1995.
 - [843](843/) — A 1919 garage, with reroofing permitted in 2016.
 - [845](845/) — A 1919 garage, with a seismic retrofit permitted in 2000.
+- [901](901/) — A 1998 theater, with window replacement permitted in 2017.
 - [1001](1001/) — A 1913 1-unit apartment building, with reroofing permitted in 2022.
 - [1030–1042](1030/) — A 1906 42-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with a seismic retrofit permitted in 2000.
 - [1033–1037](1033/) — A building with a ground-floor store in the Lower Nob Hill Apartment Hotel Historic District - Addition, with garage work permitted in 1998.

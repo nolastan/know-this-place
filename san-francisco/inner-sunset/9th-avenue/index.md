@@ -15,8 +15,10 @@ The parcels on Ninth Avenue documented here so far, from the city's address, ass
 - [1246–1248](1246/) — A 1908 building, designed by William C. Gilligan.
 - [1260–1262](1260/) — A 1905 building, built by T. Sullivan.
 - [1267–1269](1267/) — A 1900 Queen Anne, built by Alphonso Harrington.
+- [1281–1283](1281/) — A 1904 2-unit building with a ground-floor store, with a rear addition permitted in 2007.
 - [1307–1317](1307/) — A 1912-1913 building, designed by Louis M. Weismann and Son.
 - [1323–1325](1323/) — A 1902 late restrained Queen Anne, built by Stuart S. Reed.
+- [1326](1326/) — A 1924 store building, with a kitchen remodel permitted in 2025.
 - [1329–1331](1329/) — A 1899 building, designed by Charles J. Colley.
 - [1330–1332](1330/) — A 1907 building.
 - [1333–1335](1333/) — A 1911 Classical Revival, designed by Theodore W. Lenzen.
@@ -25,6 +27,7 @@ The parcels on Ninth Avenue documented here so far, from the city's address, ass
 - [1350–1352](1350/) — A 1909 2-unit building with a ground-floor store, with reroofing permitted in 2025.
 - [1366–1368](1366/) — A 1914 Craftsman, designed by Theodore W. Lenzen.
 - [1385–1399](1385/) — A 1927 building, designed by William G. Merchant.
+- [1386–1388](1386/) — A 1923 5-unit building with a ground-floor store, with a rear addition permitted in 1990.
 - [1407–1411](1407/) — A 1914 building, designed by Charles A. Haber.
 - [1417–1419](1417/) — A 1904 3-unit apartment building, with deck work permitted in 2007.
 - [1420](1420/) — A 1902 building, built by Alphonso Harrington.

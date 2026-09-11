@@ -105,6 +105,7 @@ Every residential parcel on Mission Street that the city's address, assessor and
 - [2419–2429](2419/) — A 1904 12-unit building with a ground-floor store, with reroofing permitted in 2022.
 - [2422–2426](2422/) — A 1904 10-unit apartment building, with a seismic retrofit permitted in 2013.
 - [2431–2437](2431/) — A 1910 store building, with a seismic retrofit permitted in 2003.
+- [2434–2438](2434/) — A 1900 hotel, with a kitchen remodel permitted in 2015.
 - [2465](2465/) — A 1911 theater, with facade work permitted in 2017.
 - [2471](2471/) — An 1885 4-unit building with a ground-floor store, with electrical work permitted in 2007.
 - [2475](2475/) — A 1900 2-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2001.
@@ -171,6 +172,7 @@ Every residential parcel on Mission Street that the city's address, assessor and
 - [3743](3743/) — A 1926 industrial building, with permit records from 1992 to 2023.
 - [3771](3771/) — A 1912 store building, with a rear addition permitted in 1991.
 - [4080](4080/) — A 1954 building, with reroofing permitted in 1995.
+- [4285](4285/) — A 2001 store building, with a kitchen remodel permitted in 2017.
 - [4352](4352/) — A 1916 store building, with reroofing permitted in 2008.
 - [4430–4434](4430/) — A 1924 store building, with reroofing permitted in 2019.
 - [4490–4492](4490/) — A 1918 2-unit building with a ground-floor store, with an addition permitted in 2019.

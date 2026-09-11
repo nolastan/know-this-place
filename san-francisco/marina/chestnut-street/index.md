@@ -12,6 +12,7 @@ The parcels on Chestnut Street documented here so far, from the city's address, 
 - [2078–2080](2078/) — A 1933 store building, with a kitchen and bathroom remodel permitted in 2013.
 - [2124–2132](2124/) — A 1932 store building, with plumbing work permitted in 2017.
 - [2150–2156](2150/) — A 1931 store building, with a bathroom remodel permitted in 2024.
+- [2201–2223](2201/) — A 1927 store building, with facade work permitted in 2022.
 - [2229–2231](2229/) — A 1914 store building, with a kitchen remodel permitted in 2008.
 - [2234–2248](2234/) — A 1934 store building, with a kitchen remodel permitted in 2014.
 - [2241–2245](2241/) — A 1915 5-unit building with a ground-floor store, with an addition permitted in 2012.

@@ -12,6 +12,7 @@ The parcels on Taraval Street documented here so far, from the city's address, a
 - [1100–1102](1100/) — A 1933 store building, with fire repair permitted in 1994.
 - [1101–1123](1101/) — A 1927 store building, with a kitchen remodel permitted in 2017.
 - [1131–1155](1131/) — A 1924 store building, with a kitchen remodel permitted in 2021.
+- [1150](1150/) — A 1971 store building, with reroofing permitted in 1985.
 - [1200](1200/) — An assessor class: vacant lot, with a seismic retrofit permitted in 2008.
 - [1409](1409/) — A 1912 store building, with a kitchen and bathroom remodel permitted in 2024.
 - [1420](1420/) — A 1907 single-family house, with permit records from 1982 to 2018.

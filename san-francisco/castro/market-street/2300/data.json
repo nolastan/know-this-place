@@ -924,6 +924,27 @@
       "name": "SF Planning Department — Historic Districts via DataSF",
       "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43379706248535%2037.76399238903938)%27)",
       "retrieved": "2026-07-28"
+    },
+    {
+      "id": "bites",
+      "name": "Bites, merchant directory",
+      "supports": "Current occupant",
+      "query": "https://withbites.com/merchants",
+      "retrieved": "2026-09-11"
+    }
+  ],
+  "occupants": [
+    {
+      "name": "Super Duper Burgers",
+      "cuisines": [
+        "American",
+        "Fast Food"
+      ],
+      "opening_hours": [
+        "Su,Mo,Tu,We,Th,Fr,Sa 10:30-22:00"
+      ],
+      "listed_address": "2304 Market Street",
+      "source": "bites"
     }
   ]
 }

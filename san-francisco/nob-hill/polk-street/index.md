@@ -15,6 +15,7 @@ The parcels on Polk Street documented here so far, from the city's address, asse
 - [1301–1327](1301/) — A 1907 73-unit apartment building, with a seismic retrofit permitted in 2004.
 - [1306](1306/) — A 2008 church, with reroofing permitted in 1988.
 - [1343–1351](1343/) — A 1914 store building, with a bathroom remodel permitted in 1990.
+- [1352–1356](1352/) — A 1912 hotel, with a kitchen remodel permitted in 2008.
 - [1400](1400/) — A 1920 store building, with reroofing permitted in 2013.
 - [1410–1412](1410/) — A 1909 4-unit building with a ground-floor store, with stair work permitted in 2011.
 - [1411–1431](1411/) — A 1909 store building, with a bathroom remodel permitted in 2018.

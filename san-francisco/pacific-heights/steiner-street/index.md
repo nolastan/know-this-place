@@ -13,6 +13,7 @@ The parcels on Steiner Street documented here so far, from the city's address, a
 - [2756](2756/) — A 1911 single-family house, with deck work permitted in 1989.
 - [3031](3031/) — A 1907 10-unit apartment building, with reroofing permitted in 1994.
 - [3315–3317](3315/) — A 1926 16-unit apartment building, with a seismic retrofit permitted in 2017.
+- [3336–3340](3336/) — A 1908 2-unit building with a ground-floor store, with a vertical addition permitted in 2008.
 - [3337–3339](3337/) — A 1925 5-unit apartment building, with a kitchen and bathroom remodel permitted in 2022.
 
 Pages are generated from the DataSF datasets listed in each page's

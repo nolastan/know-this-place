@@ -7,6 +7,7 @@ The buildings documented here so far inside the Sixth Street Lodging House Histo
 - [6th Street](/san-francisco/south-of-market/6th-street/) — 28 documented buildings inside the district.
 - [Mission Street](/san-francisco/south-of-market/mission-street/) — 1 documented building inside the district.
 - [Natoma Street](/san-francisco/south-of-market/natoma-street/) — 1 documented building inside the district.
+- [Stevenson Street](/san-francisco/south-of-market/stevenson-street/) — 1 documented building inside the district.
 
 ## Buildings
 
@@ -40,6 +41,7 @@ The buildings documented here so far inside the Sixth Street Lodging House Histo
 - [185–193 Sixth Street](/san-francisco/south-of-market/6th-street/185/) — A 1907 7-unit apartment building, with plumbing work permitted in 2010.
 - [201–211 Sixth Street](/san-francisco/south-of-market/6th-street/201/) — A 1907 hotel, with a seismic retrofit permitted in 1991.
 - [219–221 Sixth Street](/san-francisco/south-of-market/6th-street/219/) — A 1908 hotel, with stair work permitted in 1989.
+- [510 Stevenson Street](/san-francisco/south-of-market/stevenson-street/510/) — A 1912 hotel, with reroofing permitted in 2021.
 
 The district record is the city's; the buildings beneath it are
 generated from the DataSF datasets listed in each page's Sources

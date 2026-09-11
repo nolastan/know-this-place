@@ -29,6 +29,7 @@ The parcels on Sutter Street documented here so far, from the city's address, as
 - [861](861/) — A 1913 60-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with a kitchen remodel permitted in 2019.
 - [871](871/) — A 1916 store building in the Lower Nob Hill Apartment Hotel Historic District, with a seismic retrofit permitted in 2003.
 - [873–877](873/) — A 1909 4-unit building with a ground-floor store in the Lower Nob Hill Apartment Hotel Historic District, with a seismic retrofit permitted in 2003.
+- [880–886](880/) — A 1926 49-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with a kitchen remodel permitted in 2026.
 - [919](919/) — A 1921 26-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with a seismic retrofit permitted in 1993.
 - [940](940/) — A 1925 hotel in the Lower Nob Hill Apartment Hotel Historic District, with a bathroom remodel permitted in 2007.
 - [952](952/) — A 1910 59-unit apartment building in the Lower Nob Hill Apartment Hotel Historic District, with a kitchen and bathroom remodel permitted in 1987.

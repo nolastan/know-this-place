@@ -178,6 +178,7 @@ are listed so their size is visible before anyone opens one.
 | `biographies-p-r.json` | 49 | 19 KB | `pacific-heights`, `chinatown`, `marina` +15 |
 | `biographies-s-u.json` | 52 | 21 KB | `sunset-parkside`, `presidio-heights`, `pacific-heights` +17 |
 | `biographies-v-z.json` | 26 | 10 KB | `sunset-parkside`, `west-of-twin-peaks`, `nob-hill` +11 |
+| `bites-2026-09-11.json` | 45 | 17 KB | `inner-richmond`, `marina`, `pacific-heights` +18 |
 | `bvhp-area-b-context-statement.json` | 190 | 75 KB | `bayview-hunters-point` |
 | `carnegie-libraries-context-statement.json` | 1 | 1 KB | `mission` |
 | `central-soma-context-statement.json` | 755 | 291 KB | `south-of-market`, `east-cut`, `south-beach` |

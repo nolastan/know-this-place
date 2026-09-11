@@ -8,6 +8,8 @@ The parcels on Clement Street documented here so far, from the city's address, a
 - [120–124](120/) — A 1904 5-unit building with a ground-floor store, with an accessory dwelling unit permitted in 2018.
 - [121–125](121/) — A 1904 3-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2018.
 - [127–129](127/) — A 1900 3-unit building with a ground-floor store, with foundation work permitted in 2004.
+- [225–229](225/) — A 1908 3-unit building with a ground-floor store, with reroofing permitted in 2014.
+- [309–311](309/) — A 1900 2-unit building with a ground-floor store, with a bathroom remodel permitted in 2007.
 - [336–340](336/) — A 1907 store building, with a kitchen and bathroom remodel permitted in 2008.
 - [400](400/) — A 1913 store building, with a seismic retrofit permitted in 1999.
 - [406–408](406/) — A 1902 4-unit building with a ground-floor store, with reroofing permitted in 2025.

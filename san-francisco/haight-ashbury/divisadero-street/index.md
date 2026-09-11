@@ -17,6 +17,7 @@ The parcels on Divisadero Street documented here so far, from the city's address
 - [600–604](600/) — A 1922 12-unit apartment building, with plumbing work permitted in 2014.
 - [608](608/) — A 1926 store building in the San Francisco Neighborhood Movie Theater Historic District (Discontiguous), with a bathroom remodel permitted in 2018.
 - [628](628/) — A 1926 store building, with reroofing permitted in 2022.
+- [661](661/) — A 1915 store building in the NOPA Historic District, with a bathroom remodel permitted in 2008.
 - [717](717/) — A 1913 garage in the NOPA Historic District, with a seismic retrofit permitted in 1997.
 - [846–848](846/) — A 1900 2-unit building, with a bathroom remodel permitted in 1989.
 - [1042](1042/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2019.
