@@ -2146,11 +2146,11 @@ DAY_SHORT = ("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun")
 
 
 def clock(hhmm: str) -> str:
-    """"17:30" → "5:30 pm"; "12:00" → "12 pm"."""
+    """"17:30" → "5:30pm"; "12:00" → "12pm"."""
     h, m = int(hhmm[:2]), hhmm[3:5]
     suffix = "am" if h < 12 or h == 24 else "pm"
     h = h % 12 or 12
-    return f"{h}{'' if m == '00' else ':' + m} {suffix}"
+    return f"{h}{'' if m == '00' else ':' + m}{suffix}"
 
 
 def day_runs(days: set) -> list:
@@ -2233,6 +2233,10 @@ def occupant_panel_html(rec: dict, indent: str) -> str:
         listed = o.get("listed_address")
         if listed and listed not in here:
             specs.append(("ic-pin", "Listed at", esc(listed)))
+        # A condominium building's page is the building's, so a merchant in one
+        # of its units says which.
+        if o.get("unit"):
+            specs.append(("ic-home", "Unit", esc(o["unit"])))
         # Each shift is its own span so a narrow column breaks a split day
         # between its shifts, never inside "11:30 am–3 pm".
         specs += [("ic-clock", k, ", ".join(f"<span>{esc(s)}</span>" for s in v))

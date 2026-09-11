@@ -500,7 +500,7 @@ panel closes with the date the listing was read and, when the source is in
     <h3>Burma Superstar</h3>
     <p class="occupant-kinds">Burmese · Asian</p>
     <dl class="speclist">
-      <div class="spec"><span class="ic ic-clock"></span><span class="spec-k">Fri, Sat</span><span class="spec-v">11:30 am–3 pm, 5:30 pm–10 pm</span></div>
+      <div class="spec"><span class="ic ic-clock"></span><span class="spec-k">Fri, Sat</span><span class="spec-v">11:30am–3pm, 5:30pm–10pm</span></div>
     </dl>
   </div>
   <p class="occupant-updated">Last updated September 11, 2026</p>

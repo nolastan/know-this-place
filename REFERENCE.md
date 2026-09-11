@@ -170,7 +170,9 @@ rendered as one "Current occupant" panel heading the aside. `name`, `cuisines`,
 `opening_hours` (schema.org strings, as the directory publishes them — the
 renderer formats them and marks the days not listed as closed),
 `listed_address` (the merchant's own door, shown only when it isn't the
-page's lead number) and `source`, matching an id in `sources`.
+page's lead number), `unit` (on a condominium building's page, the unit the
+merchant trades from — only where a city record ties the two together) and
+`source`, matching an id in `sources`.
 
 - **The panel's "Last updated" date is that source's `retrieved`.** Hours
   drift within days, so the date is on the panel as well as in the footer,
