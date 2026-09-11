@@ -17,7 +17,7 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Buena Vista North Historic District](buena-vista-north/) — Eligible for the California Register, significant 1870–1915; 23 buildings documented on 7 streets.
 - [Capp and Howard Streets Mid-Block Fire Line Historic District](capp-and-howard-streets-mid-block-fire-line/) — Eligible for the California and National Registers, significant 1865–1909; 5 buildings documented on 2 streets.
 - [Castro & Liberty Streets Historic District](castro-and-liberty-streets/) — Eligible for the California Register, significant 1897–1906; 47 buildings documented on 3 streets.
-- [Chinatown Historic District](chinatown/) — Eligible for the California and National Registers, significant 1906–1930/1938; 235 buildings documented on 29 streets.
+- [Chinatown Historic District](chinatown/) — Eligible for the California and National Registers, significant 1906–1930/1938; 236 buildings documented on 29 streets.
 - [Chula-Abbey Early Residential District](chula-abbey/) — An Article 10 city landmark district, significant 1865–1912; 38 buildings documented on 5 streets.
 - [Chula-Dolores-17th Fire Survivors and Reconstruction Historic District](chula-dolores-17th-fire-survivors-and-reconstruction/) — Eligible for the California Register, significant 1865–1880; 1907–1912; 39 buildings documented on 5 streets.
 - [Civic Center Historic District](civic-center/) — An Article 10 city landmark district, significant 1913–1951; 29 buildings documented on 10 streets.
@@ -43,8 +43,8 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Haight Ashbury Counterculture Historic District](haight-ashbury-counterculture/) — Eligible for the California Register, significant 1966–1975; 19 buildings documented on 4 streets.
 - [Hampshire Street False-Front Historic District](hampshire-street-false-front/) — Eligible for the California Register, significant 1885–1895; 14 buildings documented on one street.
 - [Hartford Street Historic District](hartford-street/) — Eligible for the California Register, significant 1900–1902; 24 buildings documented on 3 streets.
-- [Hayes Valley Commercial Historic District](hayes-valley-commercial/) — Eligible for the California Register, significant ca 1855–1929; 16 buildings documented on 4 streets.
-- [Hayes Valley Residential Historic District](hayes-valley-residential/) — Listed on the California Register, significant 1860–1920; 251 buildings documented on 26 streets.
+- [Hayes Valley Commercial Historic District](hayes-valley-commercial/) — Eligible for the California Register, significant ca 1855–1929; 17 buildings documented on 4 streets.
+- [Hayes Valley Residential Historic District](hayes-valley-residential/) — Listed on the California Register, significant 1860–1920; 252 buildings documented on 26 streets.
 - [Hidalgo Terrace Historic District](hidalgo-terrace/) — Eligible for the California Register, significant 1914–1930; 14 buildings documented on 2 streets.
 - [Horner's Addition East Historic District](horner-s-addition-east/) — Eligible for the California and National Registers, significant 1865–1905; 74 buildings documented on 6 streets.
 - [India Basin Scow Schooner Boatyard Vernacular Cultural Landscape](india-basin-scow-schooner-boatyard-vernacular-cultural-landscape/) — Eligible for the California Register, significant 1875–1936; 5 buildings documented on 3 streets.
@@ -112,7 +112,7 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Von Schroeder-Welsh Block Historic District](von-schroeder-welsh-block/) — Eligible for the California Register, significant 1889–1895; 25 buildings documented on 2 streets.
 - [Washington Square Historic District](washington-square/) — Eligible for the California Register, significant 1906–1939; 17 buildings documented on 7 streets.
 - [West Portal Park Historic District](west-portal-park/) — Eligible for the California Register, significant 1916–1928 / 1917–1929; 5 buildings documented on one street.
-- [Western SOMA Light Industrial and Residential Historic District](western-soma-light-industrial-and-residential/) — Eligible for the California and National Registers, significant 1906–1936; 228 buildings documented on 35 streets.
+- [Western SOMA Light Industrial and Residential Historic District](western-soma-light-industrial-and-residential/) — Eligible for the California and National Registers, significant 1906–1936; 229 buildings documented on 35 streets.
 - [Woodward St. Romeo Flats Reconstruction Historic District](woodward-st-romeo-flats-reconstruction/) — Eligible for the California Register, significant 1906–1912; 24 buildings documented on 3 streets.
 
 48 further districts named on the pages here hold fewer than 5 documented buildings, and have no page yet.

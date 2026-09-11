@@ -13,6 +13,7 @@ The parcels on Hayes Street documented here so far, from the city's address, ass
 - [406](406/) — A 1908 hotel in the Hayes Valley Residential Historic District, with reroofing permitted in 2019.
 - [424](424/) — A 1916 3-unit apartment building in the Hayes Valley Residential Historic District, with foundation work permitted in 2008.
 - [425–427](425/) — A 1906 store building in the Hayes Valley Residential Historic District, with reroofing permitted in 2026.
+- [450](450/) — A 2016 41-unit building in the Hayes Valley Residential Historic District, with an addition permitted in 2025.
 - [482–488](482/) — A 1910 6-unit building with a ground-floor store in the Hayes Valley Residential Historic District, with a bathroom remodel permitted in 2016.
 - [500–516](500/) — A 1900 20-unit apartment building in the Hayes Valley Residential Historic District, with a seismic retrofit permitted in 2018.
 - [511–529](511/) — A 1911 store building in the Hayes Valley Residential Historic District, with window replacement permitted in 2021.

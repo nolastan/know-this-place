@@ -17,7 +17,7 @@ The buildings documented here so far inside the Chinatown Historic District, and
 - [Grant Avenue, North Beach](/san-francisco/north-beach/grant-avenue/) — 31 documented buildings inside the district.
 - [Jackson Street](/san-francisco/chinatown/jackson-street/) — 28 documented buildings inside the district.
 - [Kearny Street, Chinatown](/san-francisco/chinatown/kearny-street/) — 4 documented buildings inside the district.
-- [Kearny Street, Union Square](/san-francisco/union-square/kearny-street/) — 9 documented buildings inside the district.
+- [Kearny Street, Union Square](/san-francisco/union-square/kearny-street/) — 10 documented buildings inside the district.
 - [Merchant Street](/san-francisco/financial-district/merchant-street/) — 1 documented building inside the district.
 - [Pacific Avenue](/san-francisco/chinatown/pacific-avenue/) — 3 documented buildings inside the district.
 - [Pine Street](/san-francisco/financial-district/pine-street/) — 1 documented building inside the district.
@@ -165,6 +165,7 @@ The buildings documented here so far inside the Chinatown Historic District, and
 - [630–632 Kearny Street](/san-francisco/union-square/kearny-street/630/) — A 1908 store building, with reroofing permitted in 2001.
 - [638–648 Kearny Street](/san-francisco/union-square/kearny-street/638/) — A 1907 hotel, with a seismic retrofit permitted in 1993.
 - [652–660 Kearny Street](/san-francisco/union-square/kearny-street/652/) — A 1906 2-unit building, with deck work permitted in 2023.
+- [700–710 Kearny Street](/san-francisco/union-square/kearny-street/700/) — A store building, with a kitchen and bathroom remodel permitted in 2019.
 - [712–716 Kearny Street](/san-francisco/union-square/kearny-street/712/) — A 1907 hotel, with a seismic retrofit permitted in 1994.
 - [659 Merchant Street](/san-francisco/financial-district/merchant-street/659/) — A 1922 store building, with facade work permitted in 2020.
 - [628–630 Pacific Avenue](/san-francisco/chinatown/pacific-avenue/628/) — A 1907 hotel, with a seismic retrofit permitted in 1998.
