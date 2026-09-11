@@ -1,6 +1,6 @@
-# Ofarrell Street
+# O'Farrell Street
 
-The parcels on Ofarrell Street documented here so far, from the city's address, assessor and permit records.
+The parcels on O'Farrell Street documented here so far, from the city's address, assessor and permit records.
 
 ## Documented so far
 

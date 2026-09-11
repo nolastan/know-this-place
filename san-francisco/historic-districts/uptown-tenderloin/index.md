@@ -21,7 +21,7 @@ The buildings documented here so far inside the Uptown Tenderloin Historic Distr
 - [Leavenworth Street, Tenderloin](/san-francisco/tenderloin/leavenworth-street/) — 18 documented buildings inside the district.
 - [Mason Street](/san-francisco/tenderloin/mason-street/) — 3 documented buildings inside the district.
 - [Mcallister Street](/san-francisco/tenderloin/mcallister-street/) — 4 documented buildings inside the district.
-- [Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/) — 62 documented buildings inside the district.
+- [O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/) — 62 documented buildings inside the district.
 - [Taylor Street](/san-francisco/tenderloin/taylor-street/) — 13 documented buildings inside the district.
 - [Turk Street](/san-francisco/tenderloin/turk-street/) — 45 documented buildings inside the district.
 
@@ -341,68 +341,68 @@ The buildings documented here so far inside the Uptown Tenderloin Historic Distr
 - [54–70 Mcallister Street](/san-francisco/tenderloin/mcallister-street/54/) — A 1986 100-unit apartment building, with reroofing permitted in 2017.
 - [100 Mcallister Street](/san-francisco/tenderloin/mcallister-street/100/) — A 1929 apartment building with a ground-floor store, with reroofing permitted in 1993.
 - [136–154 Mcallister Street](/san-francisco/tenderloin/mcallister-street/136/) — A 1910 114-unit apartment building, with fire repair permitted in 2022.
-- [401–411 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/401/) — A 1910 hotel, with stair work permitted in 2016.
-- [415–421 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/415/) — A 1908 hotel, with a bathroom remodel permitted in 2018.
-- [428–430 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/428/) — A 1913 17-unit apartment building, with fire repair permitted in 1994.
-- [433–445 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/433/) — A 1907 hotel, with a kitchen and bathroom remodel permitted in 2016.
-- [434–436 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/434/) — A 1910 office building, with plumbing work permitted in 2002.
-- [438 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/438/) — A 1910 hotel, with a seismic retrofit permitted in 1995.
-- [447–453 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/447/) — A 1912 31-unit apartment building, with a kitchen and bathroom remodel permitted in 2020.
-- [450–478 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/450/) — A 1923 church, with deck work permitted in 2010.
-- [474–480 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/474/) — A 1913 store building, with a seismic retrofit permitted in 2002.
-- [477–481 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/477/) — A 1986 101-unit apartment building, with a rear addition permitted in 2014.
-- [485 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/485/) — A 1922 store building, with reroofing permitted in 1994.
-- [498 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/498/) — A 1908 hotel, with reroofing permitted in 1986.
-- [501–509 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/501/) — A 1913 hotel, with electrical work permitted in 2020.
-- [515–517 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/515/) — A 1926 45-unit apartment building, with reroofing permitted in 2007.
-- [516 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/516/) — A 1912 hotel, with window replacement permitted in 2015.
-- [525 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/525/) — A 1911 26-unit apartment building, with a seismic retrofit permitted in 1992.
-- [540 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/540/) — A 1922 36-unit apartment building, with reroofing permitted in 2024.
-- [545 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/545/) — A 1910 79-unit apartment building, with fire repair permitted in 1995.
-- [550 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/550/) — A 1924 garage, with foundation work permitted in 2022.
-- [555 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/555/) — A 1924 41-unit apartment building, with a seismic retrofit permitted in 2016.
-- [570–572 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/570/) — A 1907 hotel, with a kitchen remodel permitted in 2014.
-- [573–577 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/573/) — A 1927 49-unit apartment building, with a kitchen and bathroom remodel permitted in 2016.
-- [579 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/579/) — A 1907 hotel, with reroofing permitted in 1990.
-- [580 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/580/) — A 1911 hotel, with reroofing permitted in 2026.
-- [587–593 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/587/) — A 1914 2-unit building with a ground-floor store, with a seismic retrofit permitted in 2001.
-- [595–599 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/595/) — A 1918 9-unit apartment building, with a seismic retrofit permitted in 2001.
-- [600–616 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/600/) — A 1916 hotel, with reroofing permitted in 1996.
-- [601–609 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/601/) — A 1928 82-unit apartment building, with fire repair permitted in 2013.
-- [620–626 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/620/) — A 1909 hotel, with a seismic retrofit permitted in 2001.
-- [628–630 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/628/) — A 1921 8-unit apartment building, with a kitchen and bathroom remodel permitted in 2016.
-- [631 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/631/) — A 1930 building, with an addition permitted in 2023.
-- [640 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/640/) — A 1924 garage, with permit records from 1987 to 2007.
-- [641 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/641/) — A 1907 97-unit apartment building, with a seismic retrofit permitted in 2001.
-- [646 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/646/) — A 1915 11-unit apartment building, with a seismic retrofit permitted in 2001.
-- [656 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/656/) — A 1916 17-unit apartment building, with fire repair permitted in 2023.
-- [666 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/666/) — A 1924 33-unit apartment building, with a kitchen and bathroom remodel permitted in 2019.
-- [667–669 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/667/) — A 1922 13-unit apartment building, with fire repair permitted in 1994.
-- [675 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/675/) — A 1938 25-unit apartment building, with window replacement permitted in 2020.
-- [683–699 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/683/) — A 1916 38-unit apartment building, with a seismic retrofit permitted in 2002.
-- [700 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/700/) — A 1911 38-unit apartment building, with a seismic retrofit permitted in 1998.
-- [701–709 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/701/) — A 1922 store building, with reroofing permitted in 1994.
-- [716 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/716/) — A 1923 10-unit apartment building, with permit records from 1973 to 2024.
-- [720 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/720/) — A 1930 store building, with reroofing permitted in 1989.
-- [725 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/725/) — A 1923 35-unit apartment building, with foundation work permitted in 2013.
-- [730 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/730/) — A 1923 23-unit apartment building, with reroofing permitted in 2023.
-- [735 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/735/) — A 1923 23-unit apartment building, with window replacement permitted in 2017.
-- [740 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/740/) — A 1922 garage, with reroofing permitted in 1991.
-- [741–745 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/741/) — A 1948 store building, with reroofing permitted in 1990.
-- [750 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/750/) — A 1913 48-unit apartment building, with an accessory dwelling unit permitted in 2016.
-- [753–755 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/753/) — A 1922 35-unit apartment building, with a kitchen and bathroom remodel permitted in 2012.
-- [765 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/765/) — A 1924 31-unit apartment building, with a kitchen and bathroom remodel permitted in 2006.
-- [770 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/770/) — A 1914 hotel, with a seismic retrofit permitted in 1998.
-- [771–775 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/771/) — A 1923 6-unit apartment building, with reroofing permitted in 1991.
-- [777–785 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/777/) — A 1927 32-unit apartment building, with a kitchen and bathroom remodel permitted in 2014.
-- [791–793 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/791/) — A 1908 7-unit apartment building, with a seismic retrofit permitted in 2000.
-- [800 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/800/) — A 1900 assessor class: vacant lot, with foundation work permitted in 2019.
-- [815 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/815/) — A 1914 44-unit apartment building, with window replacement permitted in 2020.
-- [820 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/820/) — A 1916 54-unit apartment building, with stair work permitted in 2022.
-- [835 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/835/) — A 1996 hotel, with window replacement permitted in 2021.
-- [845 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/845/) — A 1925 23-unit apartment building, with a bathroom remodel permitted in 2016.
-- [851 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/851/) — A 1908 27-unit apartment building, with window replacement permitted in 2016.
-- [859 Ofarrell Street](/san-francisco/tenderloin/ofarrell-street/859/) — A 1907 store building, with reroofing permitted in 2017.
+- [401–411 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/401/) — A 1910 hotel, with stair work permitted in 2016.
+- [415–421 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/415/) — A 1908 hotel, with a bathroom remodel permitted in 2018.
+- [428–430 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/428/) — A 1913 17-unit apartment building, with fire repair permitted in 1994.
+- [433–445 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/433/) — A 1907 hotel, with a kitchen and bathroom remodel permitted in 2016.
+- [434–436 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/434/) — A 1910 office building, with plumbing work permitted in 2002.
+- [438 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/438/) — A 1910 hotel, with a seismic retrofit permitted in 1995.
+- [447–453 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/447/) — A 1912 31-unit apartment building, with a kitchen and bathroom remodel permitted in 2020.
+- [450–478 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/450/) — A 1923 church, with deck work permitted in 2010.
+- [474–480 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/474/) — A 1913 store building, with a seismic retrofit permitted in 2002.
+- [477–481 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/477/) — A 1986 101-unit apartment building, with a rear addition permitted in 2014.
+- [485 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/485/) — A 1922 store building, with reroofing permitted in 1994.
+- [498 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/498/) — A 1908 hotel, with reroofing permitted in 1986.
+- [501–509 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/501/) — A 1913 hotel, with electrical work permitted in 2020.
+- [515–517 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/515/) — A 1926 45-unit apartment building, with reroofing permitted in 2007.
+- [516 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/516/) — A 1912 hotel, with window replacement permitted in 2015.
+- [525 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/525/) — A 1911 26-unit apartment building, with a seismic retrofit permitted in 1992.
+- [540 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/540/) — A 1922 36-unit apartment building, with reroofing permitted in 2024.
+- [545 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/545/) — A 1910 79-unit apartment building, with fire repair permitted in 1995.
+- [550 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/550/) — A 1924 garage, with foundation work permitted in 2022.
+- [555 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/555/) — A 1924 41-unit apartment building, with a seismic retrofit permitted in 2016.
+- [570–572 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/570/) — A 1907 hotel, with a kitchen remodel permitted in 2014.
+- [573–577 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/573/) — A 1927 49-unit apartment building, with a kitchen and bathroom remodel permitted in 2016.
+- [579 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/579/) — A 1907 hotel, with reroofing permitted in 1990.
+- [580 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/580/) — A 1911 hotel, with reroofing permitted in 2026.
+- [587–593 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/587/) — A 1914 2-unit building with a ground-floor store, with a seismic retrofit permitted in 2001.
+- [595–599 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/595/) — A 1918 9-unit apartment building, with a seismic retrofit permitted in 2001.
+- [600–616 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/600/) — A 1916 hotel, with reroofing permitted in 1996.
+- [601–609 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/601/) — A 1928 82-unit apartment building, with fire repair permitted in 2013.
+- [620–626 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/620/) — A 1909 hotel, with a seismic retrofit permitted in 2001.
+- [628–630 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/628/) — A 1921 8-unit apartment building, with a kitchen and bathroom remodel permitted in 2016.
+- [631 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/631/) — A 1930 building, with an addition permitted in 2023.
+- [640 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/640/) — A 1924 garage, with permit records from 1987 to 2007.
+- [641 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/641/) — A 1907 97-unit apartment building, with a seismic retrofit permitted in 2001.
+- [646 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/646/) — A 1915 11-unit apartment building, with a seismic retrofit permitted in 2001.
+- [656 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/656/) — A 1916 17-unit apartment building, with fire repair permitted in 2023.
+- [666 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/666/) — A 1924 33-unit apartment building, with a kitchen and bathroom remodel permitted in 2019.
+- [667–669 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/667/) — A 1922 13-unit apartment building, with fire repair permitted in 1994.
+- [675 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/675/) — A 1938 25-unit apartment building, with window replacement permitted in 2020.
+- [683–699 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/683/) — A 1916 38-unit apartment building, with a seismic retrofit permitted in 2002.
+- [700 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/700/) — A 1911 38-unit apartment building, with a seismic retrofit permitted in 1998.
+- [701–709 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/701/) — A 1922 store building, with reroofing permitted in 1994.
+- [716 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/716/) — A 1923 10-unit apartment building, with permit records from 1973 to 2024.
+- [720 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/720/) — A 1930 store building, with reroofing permitted in 1989.
+- [725 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/725/) — A 1923 35-unit apartment building, with foundation work permitted in 2013.
+- [730 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/730/) — A 1923 23-unit apartment building, with reroofing permitted in 2023.
+- [735 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/735/) — A 1923 23-unit apartment building, with window replacement permitted in 2017.
+- [740 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/740/) — A 1922 garage, with reroofing permitted in 1991.
+- [741–745 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/741/) — A 1948 store building, with reroofing permitted in 1990.
+- [750 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/750/) — A 1913 48-unit apartment building, with an accessory dwelling unit permitted in 2016.
+- [753–755 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/753/) — A 1922 35-unit apartment building, with a kitchen and bathroom remodel permitted in 2012.
+- [765 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/765/) — A 1924 31-unit apartment building, with a kitchen and bathroom remodel permitted in 2006.
+- [770 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/770/) — A 1914 hotel, with a seismic retrofit permitted in 1998.
+- [771–775 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/771/) — A 1923 6-unit apartment building, with reroofing permitted in 1991.
+- [777–785 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/777/) — A 1927 32-unit apartment building, with a kitchen and bathroom remodel permitted in 2014.
+- [791–793 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/791/) — A 1908 7-unit apartment building, with a seismic retrofit permitted in 2000.
+- [800 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/800/) — A 1900 assessor class: vacant lot, with foundation work permitted in 2019.
+- [815 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/815/) — A 1914 44-unit apartment building, with window replacement permitted in 2020.
+- [820 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/820/) — A 1916 54-unit apartment building, with stair work permitted in 2022.
+- [835 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/835/) — A 1996 hotel, with window replacement permitted in 2021.
+- [845 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/845/) — A 1925 23-unit apartment building, with a bathroom remodel permitted in 2016.
+- [851 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/851/) — A 1908 27-unit apartment building, with window replacement permitted in 2016.
+- [859 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/859/) — A 1907 store building, with reroofing permitted in 2017.
 - [101–121 Taylor Street](/san-francisco/tenderloin/taylor-street/101/) — A 1907 hotel, with plumbing work permitted in 1986.
 - [108–120 Taylor Street](/san-francisco/tenderloin/taylor-street/108/) — A 1907 hotel, with stair work permitted in 2015.
 - [136–142 Taylor Street](/san-francisco/tenderloin/taylor-street/136/) — A 1908 office building, with a seismic retrofit permitted in 2001.
