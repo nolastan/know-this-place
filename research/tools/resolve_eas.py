@@ -1539,9 +1539,14 @@ def recorded_addresses(f: dict, city: City = None) -> list:
 CODE_WORD = {code: word for word, code in ORDINAL_WORD.items()
              if "-" not in word and len(code) == 4}
 
-# EAS drops the apostrophe ("OFARRELL"); a copy of scripts/seed_pages.py's table.
-APOSTROPHE_NAME = {"OFARRELL": "O'Farrell", "OREILLY": "O'Reilly",
-                   "OSHAUGHNESSY": "O'Shaughnessy"}
+# EAS drops the apostrophe ("OFARRELL") and the Mc capital ("MCALLISTER");
+# a copy of scripts/seed_pages.py's table.
+NAME_SPELLING = {"OFARRELL": "O'Farrell", "OREILLY": "O'Reilly",
+                 "OSHAUGHNESSY": "O'Shaughnessy",
+                 "MACARTHUR": "MacArthur", "MCALLISTER": "McAllister",
+                 "MCCARTHY": "McCarthy", "MCCOPPIN": "McCoppin",
+                 "MCCORMICK": "McCormick", "MCDOWELL": "McDowell",
+                 "MCKINNON": "McKinnon", "MCLAREN": "McLaren", "MCLEA": "McLea"}
 
 
 def street_display(name: str, stype: str) -> str:
@@ -1552,8 +1557,8 @@ def street_display(name: str, stype: str) -> str:
         token = unpad(token)
         if re.fullmatch(r"\d+(ST|ND|RD|TH)", token.upper()):
             parts.append(token.lower())
-        elif token.upper() in APOSTROPHE_NAME:
-            parts.append(APOSTROPHE_NAME[token.upper()])
+        elif token.upper() in NAME_SPELLING:
+            parts.append(NAME_SPELLING[token.upper()])
         elif token.lower() == "the":
             parts.append("The")
         else:

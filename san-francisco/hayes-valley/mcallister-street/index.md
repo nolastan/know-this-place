@@ -1,6 +1,6 @@
-# Mcallister Street
+# McAllister Street
 
-The parcels on Mcallister Street documented here so far, from the city's address, assessor and permit records.
+The parcels on McAllister Street documented here so far, from the city's address, assessor and permit records.
 
 ## Documented so far
 

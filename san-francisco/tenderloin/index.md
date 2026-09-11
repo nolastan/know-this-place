@@ -20,7 +20,7 @@ The flat blocks west of Union Square, in the city's Tenderloin analysis neighbor
 - [Leavenworth Street](leavenworth-street/) — 4 buildings, built 1907–1923; 4 in the Uptown Tenderloin Historic District.
 - [Market Street](market-street/) — 1 building, built 1917.
 - [Mason Street](mason-street/) — 2 buildings, built 2009.
-- [Mcallister Street](mcallister-street/) — 2 buildings, built 1906–1910; 1 in the Uptown Tenderloin Historic District.
+- [McAllister Street](mcallister-street/) — 2 buildings, built 1906–1910; 1 in the Uptown Tenderloin Historic District.
 - [Meacham Place](meacham-place/) — 1 building, built 1900; 1 in the Lower Nob Hill Apartment Hotel Historic District.
 - [O'Farrell Street](ofarrell-street/) — 2 buildings, built 1907–1924; 1 in the Uptown Tenderloin Historic District.
 - [Polk Street](polk-street/) — 1 building, built 1912.

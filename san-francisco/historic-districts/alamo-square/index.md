@@ -25,9 +25,9 @@ The buildings documented here so far inside the Alamo Square Historic District, 
 - [1266–1270 Fulton Street](/san-francisco/western-addition/fulton-street/1266/) — A 1900 three-flat, with a kitchen and bathroom remodel permitted in 1993.
 - [930 Grove Street](/san-francisco/hayes-valley/grove-street/930/) — An 1885 13-unit apartment building, with garage work permitted in 2017.
 - [940 Grove Street](/san-francisco/hayes-valley/grove-street/940/) — An 1895 single-family house, with garage work permitted in 2014.
+- [1345–1349 McAllister Street](/san-francisco/western-addition/mcallister-street/1345/) — A 1900 6-unit apartment building, with foundation work permitted in 2012.
 - [1399 McAllister Street](/san-francisco/western-addition/mcallister-street/1399/) — The Third Baptist Church complex, home since 1952 of a congregation founded in 1852, and San Francisco Landmark No. 275.
-- [1345–1349 Mcallister Street](/san-francisco/western-addition/mcallister-street/1345/) — A 1900 6-unit apartment building, with foundation work permitted in 2012.
-- [1492 Mcallister Street](/san-francisco/western-addition/mcallister-street/1492/) — A 1900 5-unit apartment building, with reroofing permitted in 2004.
+- [1492 McAllister Street](/san-francisco/western-addition/mcallister-street/1492/) — A 1900 5-unit apartment building, with reroofing permitted in 2004.
 - [809–815 Pierce Street](/san-francisco/western-addition/pierce-street/809/) — A 1923 13-unit apartment building, with a seismic retrofit permitted in 2022.
 - [601–603 Steiner Street](/san-francisco/hayes-valley/steiner-street/601/) — A 1900 2-unit building, with a kitchen remodel permitted in 2016.
 - [710 Steiner Street](/san-francisco/hayes-valley/steiner-street/710/) — An 1898 single-family house, with a seismic retrofit permitted in 2013.

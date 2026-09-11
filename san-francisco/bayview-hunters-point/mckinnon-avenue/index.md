@@ -1,6 +1,6 @@
-# Mckinnon Avenue
+# McKinnon Avenue
 
-The parcels on Mckinnon Avenue documented here so far, from the city's address, assessor and permit records.
+The parcels on McKinnon Avenue documented here so far, from the city's address, assessor and permit records.
 
 ## Documented so far
 

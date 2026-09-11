@@ -401,11 +401,17 @@ ORDINAL_WORD = {"1ST": "First", "2ND": "Second", "3RD": "Third", "4TH": "Fourth"
                 "5TH": "Fifth", "6TH": "Sixth", "7TH": "Seventh", "8TH": "Eighth",
                 "9TH": "Ninth"}
 
-# EAS files street names without their apostrophe — O'Farrell Street is
-# "OFARRELL" — and capitalize() can't put it back. These are every name in
-# EAS's street list that lost one. research/tools/resolve_eas.py keeps a copy.
-APOSTROPHE_NAME = {"OFARRELL": "O'Farrell", "OREILLY": "O'Reilly",
-                   "OSHAUGHNESSY": "O'Shaughnessy"}
+# EAS files street names in capitals without their apostrophe — O'Farrell
+# Street is "OFARRELL", McAllister Street "MCALLISTER" — and capitalize() can't
+# put back either the apostrophe or the second capital. These are every name in
+# EAS's street list that needs one; Macalla, Macedonia and Macondray don't.
+# research/tools/resolve_eas.py keeps a copy.
+NAME_SPELLING = {"OFARRELL": "O'Farrell", "OREILLY": "O'Reilly",
+                 "OSHAUGHNESSY": "O'Shaughnessy",
+                 "MACARTHUR": "MacArthur", "MCALLISTER": "McAllister",
+                 "MCCARTHY": "McCarthy", "MCCOPPIN": "McCoppin",
+                 "MCCORMICK": "McCormick", "MCDOWELL": "McDowell",
+                 "MCKINNON": "McKinnon", "MCLAREN": "McLaren", "MCLEA": "McLea"}
 
 
 def unpad(token: str) -> str:
@@ -448,7 +454,7 @@ def street_display(name: str, stype: str) -> str:
     parts = []
     for token in (name or "").split():
         token = unpad(token)
-        spelled = ORDINAL_WORD.get(token.upper()) or APOSTROPHE_NAME.get(token.upper())
+        spelled = ORDINAL_WORD.get(token.upper()) or NAME_SPELLING.get(token.upper())
         if spelled:
             parts.append(spelled)
         else:

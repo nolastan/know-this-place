@@ -29,7 +29,7 @@ San Francisco's south-eastern quarter, settled from the 1860s as the industrial 
 - [Lane Street](lane-street/) — 2 buildings, built 1900–1908.
 - [Latona Street](latona-street/) — 1 building, built 1900.
 - [Le Conte Avenue](le-conte-avenue/) — 1 building, built 1930.
-- [Mckinnon Avenue](mckinnon-avenue/) — 18 buildings, built 1885–1923.
+- [McKinnon Avenue](mckinnon-avenue/) — 18 buildings, built 1885–1923.
 - [Mendell Street](mendell-street/) — 3 buildings, built 1908–1941.
 - [Middle Point Road](middle-point-road/) — 3 buildings, built 1930–1940.
 - [Newcomb Avenue](newcomb-avenue/) — 15 buildings, built 1890–1946.

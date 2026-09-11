@@ -20,7 +20,7 @@ The buildings documented here so far inside the Uptown Tenderloin Historic Distr
 - [Leavenworth Street, Nob Hill](/san-francisco/nob-hill/leavenworth-street/) — 8 documented buildings inside the district.
 - [Leavenworth Street, Tenderloin](/san-francisco/tenderloin/leavenworth-street/) — 18 documented buildings inside the district.
 - [Mason Street](/san-francisco/tenderloin/mason-street/) — 3 documented buildings inside the district.
-- [Mcallister Street](/san-francisco/tenderloin/mcallister-street/) — 4 documented buildings inside the district.
+- [McAllister Street](/san-francisco/tenderloin/mcallister-street/) — 4 documented buildings inside the district.
 - [O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/) — 62 documented buildings inside the district.
 - [Taylor Street](/san-francisco/tenderloin/taylor-street/) — 13 documented buildings inside the district.
 - [Turk Street](/san-francisco/tenderloin/turk-street/) — 45 documented buildings inside the district.
@@ -337,10 +337,10 @@ The buildings documented here so far inside the Uptown Tenderloin Historic Distr
 - [34–38 Mason Street](/san-francisco/tenderloin/mason-street/34/) — A 1907 store building, with plumbing work permitted in 2012.
 - [39–45 Mason Street](/san-francisco/tenderloin/mason-street/39/) — A hotel, with permit records from 1987 to 2004.
 - [48–56 Mason Street](/san-francisco/tenderloin/mason-street/48/) — A 1908 hotel, with plumbing work permitted in 2012.
-- [44 Mcallister Street](/san-francisco/tenderloin/mcallister-street/44/) — A 1923 hotel, with stair work permitted in 2009.
-- [54–70 Mcallister Street](/san-francisco/tenderloin/mcallister-street/54/) — A 1986 100-unit apartment building, with reroofing permitted in 2017.
-- [100 Mcallister Street](/san-francisco/tenderloin/mcallister-street/100/) — A 1929 apartment building with a ground-floor store, with reroofing permitted in 1993.
-- [136–154 Mcallister Street](/san-francisco/tenderloin/mcallister-street/136/) — A 1910 114-unit apartment building, with fire repair permitted in 2022.
+- [44 McAllister Street](/san-francisco/tenderloin/mcallister-street/44/) — A 1923 hotel, with stair work permitted in 2009.
+- [54–70 McAllister Street](/san-francisco/tenderloin/mcallister-street/54/) — A 1986 100-unit apartment building, with reroofing permitted in 2017.
+- [100 McAllister Street](/san-francisco/tenderloin/mcallister-street/100/) — A 1929 apartment building with a ground-floor store, with reroofing permitted in 1993.
+- [136–154 McAllister Street](/san-francisco/tenderloin/mcallister-street/136/) — A 1910 114-unit apartment building, with fire repair permitted in 2022.
 - [401–411 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/401/) — A 1910 hotel, with stair work permitted in 2016.
 - [415–421 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/415/) — A 1908 hotel, with a bathroom remodel permitted in 2018.
 - [428–430 O'Farrell Street](/san-francisco/tenderloin/ofarrell-street/428/) — A 1913 17-unit apartment building, with fire repair permitted in 1994.
