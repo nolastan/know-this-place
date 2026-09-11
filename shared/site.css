@@ -337,6 +337,52 @@ main > .panel + .panel { margin-top: 1.25rem; }
   color: var(--muted);
 }
 
+/* ============================================================= current occupant
+   The business trading from the building today, as an infobox heading the
+   aside. It borrows the district panel's grammar — muted eyebrow, the name as
+   the serif headline, what it is on a muted line beneath — and a speclist for
+   the hours. A shared kitchen lists several brands at one door, so a panel may
+   hold several .occupant groups, split by a hairline, with one "last updated"
+   line and one offer closing the lot. */
+.panel-occupant > .occupant-kind {
+  margin: 0 0 0.3rem;
+  font-family: var(--sans);
+  font-size: 0.69rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.occupant + .occupant { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--rule); }
+.occupant > h3 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  line-height: 1.2;
+  font-weight: 650;
+  color: var(--ink);
+}
+.occupant-kinds { margin: 0.25rem 0 0; font-family: var(--sans); font-size: 0.88rem; color: var(--muted); }
+.occupant > .speclist { margin: 0.8rem 0 0; }
+.occupant .spec-k, .occupant .spec-v span { white-space: nowrap; }
+.occupant-updated { margin: 0.9rem 0 0; font-family: var(--sans); font-size: 0.78rem; color: var(--muted); }
+/* The one call to action on an address page, so it gets the accent: a
+   full-width outlined button, with the referral disclosure beneath it. */
+.occupant-offer { margin: 0.9rem 0 0; font-family: var(--sans); }
+.occupant-offer a {
+  display: block;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  color: var(--accent);
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+.occupant-offer a:hover, .occupant-offer a:focus-visible { background: var(--note-bg); }
+.occupant-offer small { display: block; margin-top: 0.4rem; font-size: 0.75rem; color: var(--muted); }
+
 /* ============================================================= enhancement layer
    Custom elements (see shared/site.js) are progressive-enhancement wrappers.
    They must render as blocks even before/without their script. */

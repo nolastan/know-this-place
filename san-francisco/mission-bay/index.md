@@ -15,6 +15,7 @@ Northeast Mission Historic Resource Survey, adopted in 2011.
 - [15th Street](15th-street/) — 2 buildings, built 1910–1944.
 - [16th Street](16th-street/) — 10 buildings, built 1912–1990; 1 in the Showplace Square Heavy Timber and Steel-frame Brick Warehouse and Factory Historic District.
 - [17th Street](17th-street/) — 11 buildings, built 1907–1979.
+- [3rd Street](3rd-street/) — 1 building.
 - [7th Street](7th-street/) — 3 buildings, built 1905–1974.
 - [Alameda Street](alameda-street/) — 1 building, built 1948.
 - [Arkansas Street](arkansas-street/) — 2 buildings, built 1922–2018.

@@ -17,12 +17,12 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Buena Vista North Historic District](buena-vista-north/) — Eligible for the California Register, significant 1870–1915; 23 buildings documented on 7 streets.
 - [Capp and Howard Streets Mid-Block Fire Line Historic District](capp-and-howard-streets-mid-block-fire-line/) — Eligible for the California and National Registers, significant 1865–1909; 5 buildings documented on 2 streets.
 - [Castro & Liberty Streets Historic District](castro-and-liberty-streets/) — Eligible for the California Register, significant 1897–1906; 47 buildings documented on 3 streets.
-- [Chinatown Historic District](chinatown/) — Eligible for the California and National Registers, significant 1906–1930/1938; 235 buildings documented on 29 streets.
+- [Chinatown Historic District](chinatown/) — Eligible for the California and National Registers, significant 1906–1930/1938; 236 buildings documented on 29 streets.
 - [Chula-Abbey Early Residential District](chula-abbey/) — An Article 10 city landmark district, significant 1865–1912; 38 buildings documented on 5 streets.
 - [Chula-Dolores-17th Fire Survivors and Reconstruction Historic District](chula-dolores-17th-fire-survivors-and-reconstruction/) — Eligible for the California Register, significant 1865–1880; 1907–1912; 39 buildings documented on 5 streets.
 - [Civic Center Historic District](civic-center/) — An Article 10 city landmark district, significant 1913–1951; 29 buildings documented on 10 streets.
 - [Clyde and Crooks Historic District](clyde-and-crooks/) — An Article 10 city landmark district, significant 1906–1935; 18 buildings documented on 6 streets.
-- [Cole Valley Historic District](cole-valley/) — Eligible for the California Register, significant 1900–1915; 14 buildings documented on 5 streets.
+- [Cole Valley Historic District](cole-valley/) — Eligible for the California Register, significant 1900–1915; 15 buildings documented on 5 streets.
 - [Commercial-Leidesdorff Conservation District](commercial-leidesdorff/) — An Article 11 conservation district; 18 buildings documented on 7 streets.
 - [Cow Hollow First Bay Tradition Historic District](cow-hollow-first-bay-tradition/) — Eligible for the California Register, significant 1888–1914; 39 buildings documented on 9 streets.
 - [Diamond Heights Historic District](diamond-heights/) — Eligible for the California Register, significant 1962–1965; 22 buildings documented on 5 streets.
@@ -43,8 +43,8 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Haight Ashbury Counterculture Historic District](haight-ashbury-counterculture/) — Eligible for the California Register, significant 1966–1975; 19 buildings documented on 4 streets.
 - [Hampshire Street False-Front Historic District](hampshire-street-false-front/) — Eligible for the California Register, significant 1885–1895; 14 buildings documented on one street.
 - [Hartford Street Historic District](hartford-street/) — Eligible for the California Register, significant 1900–1902; 24 buildings documented on 3 streets.
-- [Hayes Valley Commercial Historic District](hayes-valley-commercial/) — Eligible for the California Register, significant ca 1855–1929; 15 buildings documented on 4 streets.
-- [Hayes Valley Residential Historic District](hayes-valley-residential/) — Listed on the California Register, significant 1860–1920; 250 buildings documented on 26 streets.
+- [Hayes Valley Commercial Historic District](hayes-valley-commercial/) — Eligible for the California Register, significant ca 1855–1929; 17 buildings documented on 4 streets.
+- [Hayes Valley Residential Historic District](hayes-valley-residential/) — Listed on the California Register, significant 1860–1920; 252 buildings documented on 26 streets.
 - [Hidalgo Terrace Historic District](hidalgo-terrace/) — Eligible for the California Register, significant 1914–1930; 14 buildings documented on 2 streets.
 - [Horner's Addition East Historic District](horner-s-addition-east/) — Eligible for the California and National Registers, significant 1865–1905; 74 buildings documented on 6 streets.
 - [India Basin Scow Schooner Boatyard Vernacular Cultural Landscape](india-basin-scow-schooner-boatyard-vernacular-cultural-landscape/) — Eligible for the California Register, significant 1875–1936; 5 buildings documented on 3 streets.
@@ -61,17 +61,17 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Lexington and San Carlos Streets Reconstruction Historic District](lexington-and-san-carlos-streets-reconstruction/) — Eligible for the California Register, significant 1906–1915; 44 buildings documented on 4 streets.
 - [Liberty Hill Historic District](liberty-hill/) — An Article 10 city landmark district, significant 1860s–1906; 252 buildings documented on 9 streets.
 - [Liberty Street Historic District](liberty-street/) — Listed on the California and National Registers, significant 1867–1911; 40 buildings documented on 2 streets.
-- [Lower Nob Hill Apartment Hotel Historic District](lower-nob-hill-apartment-hotel/) — Listed on the California and National Registers, significant 1906–1940; 185 buildings documented on 20 streets.
+- [Lower Nob Hill Apartment Hotel Historic District](lower-nob-hill-apartment-hotel/) — Listed on the California and National Registers, significant 1906–1940; 186 buildings documented on 20 streets.
 - [Marina Corporation Residential Historic District](marina-corporation-residential/) — Eligible for the California Register, significant 1922–1939; 33 buildings documented on 11 streets.
 - [Marina Historic District](marina/) — Eligible for the California Register, significant 1930–1940; 11 buildings documented on 5 streets.
 - [Market Street Masonry Historic District](market-street-masonry/) — An Article 10 city landmark district, significant 1911–1925; 8 buildings documented on 4 streets.
 - [Market Street Theatre and Loft Historic District](market-street-theatre-and-loft/) — Listed on the California and National Registers, significant 1889–1930; 22 buildings documented on 6 streets.
 - [Mediterranean Revival Tracts Historic District](mediterranean-revival-tracts/) — Eligible for the California and National Registers, significant 1927–1938; 8 buildings documented on 4 streets.
 - [Midcentury Recreation Historic District (Discontiguous)](midcentury-recreation-discontiguous/) — Eligible for the California Register, significant 1947–1961; 10 buildings documented on 10 streets.
-- [Mint-Mission Conservation District](mint-mission/) — An Article 11 conservation district; 19 buildings documented on 6 streets.
+- [Mint-Mission Conservation District](mint-mission/) — An Article 11 conservation district; 20 buildings documented on 6 streets.
 - [Mission Miracle Mile 19th to 20th Streets Historic District](mission-miracle-mile-19th-to-20th-streets/) — Eligible for the California Register, significant 1906–1927; 1925–1960; 8 buildings documented on one street.
 - [Mission Miracle Mile at 17th Street Historic District](mission-miracle-mile-at-17th-street/) — Eligible for the California Register, significant 1906–1924; 1925–1960; 18 buildings documented on 2 streets.
-- [NOPA Historic District](nopa/) — Eligible for the California Register, significant 1870s–1910s; 20 buildings documented on 10 streets.
+- [NOPA Historic District](nopa/) — Eligible for the California Register, significant 1870s–1910s; 21 buildings documented on 10 streets.
 - [New Montgomery-Mission-Second Street Conservation District](new-montgomery-mission-second-street/) — An Article 11 conservation district, significant 1906–1929; 70 buildings documented on 12 streets.
 - [Northeast Waterfront Historic District](northeast-waterfront/) — An Article 10 city landmark district, significant [Unofficial] 1848–1960s; 17 buildings documented on 8 streets.
 - [Olsen's Queen Anne Cottages Historic District](olsen-s-queen-anne-cottages/) — Eligible for the California Register, significant 1893; 7 buildings documented on one street.
@@ -92,7 +92,7 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Second and Howard Streets Historic District](second-and-howard-streets/) — Listed on the California and National Registers, significant 1906–1912; 22 buildings documented on 4 streets.
 - [Shotwell Street Historic District](shotwell-street/) — Eligible for the California and National Registers, significant 1865–1905; 148 buildings documented on 10 streets.
 - [Showplace Square Heavy Timber and Steel-frame Brick Warehouse and Factory Historic District](showplace-square-heavy-timber-and-steel-frame-brick-warehouse-and-factory/) — Eligible for the California Register, significant 1893–1929; 13 buildings documented on 8 streets.
-- [Sixth Street Lodging House Historic District](sixth-street-lodging-house/) — Eligible for the California and National Registers, significant 1870–1947; 30 buildings documented on 3 streets.
+- [Sixth Street Lodging House Historic District](sixth-street-lodging-house/) — Eligible for the California and National Registers, significant 1870–1947; 31 buildings documented on 4 streets.
 - [SoMa LGBTQ Historic District](soma-lgbtq/) — Eligible for the California Register, significant ca.1950s–ca.1990s; 56 buildings documented on 25 streets.
 - [South End Historic District](south-end/) — An Article 10 city landmark district, significant 1867–1935; 37 buildings documented on 12 streets.
 - [South End Historic District Addition](south-end-addition/) — Eligible for the California and National Registers, significant 1906–1935; 17 buildings documented on 6 streets.
@@ -110,9 +110,9 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Uptown Tenderloin Historic District](uptown-tenderloin/) — Listed on the California and National Registers, significant 1906–1957; 434 buildings documented on 20 streets.
 - [Vicente Street Historic District](vicente-street/) — Eligible for the California Register, significant 1931; 9 buildings documented on one street.
 - [Von Schroeder-Welsh Block Historic District](von-schroeder-welsh-block/) — Eligible for the California Register, significant 1889–1895; 25 buildings documented on 2 streets.
-- [Washington Square Historic District](washington-square/) — Eligible for the California Register, significant 1906–1939; 16 buildings documented on 7 streets.
+- [Washington Square Historic District](washington-square/) — Eligible for the California Register, significant 1906–1939; 17 buildings documented on 7 streets.
 - [West Portal Park Historic District](west-portal-park/) — Eligible for the California Register, significant 1916–1928 / 1917–1929; 5 buildings documented on one street.
-- [Western SOMA Light Industrial and Residential Historic District](western-soma-light-industrial-and-residential/) — Eligible for the California and National Registers, significant 1906–1936; 228 buildings documented on 35 streets.
+- [Western SOMA Light Industrial and Residential Historic District](western-soma-light-industrial-and-residential/) — Eligible for the California and National Registers, significant 1906–1936; 229 buildings documented on 35 streets.
 - [Woodward St. Romeo Flats Reconstruction Historic District](woodward-st-romeo-flats-reconstruction/) — Eligible for the California Register, significant 1906–1912; 24 buildings documented on 3 streets.
 
 48 further districts named on the pages here hold fewer than 5 documented buildings, and have no page yet.

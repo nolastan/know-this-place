@@ -24,6 +24,7 @@ The parcels on California Street documented here so far, from the city's address
 - [401–425](401/) — A 1968 office building, with electrical work permitted in 2010.
 - [430–444](430/) — A 1968 office building, with reroofing permitted in 2012.
 - [433–441](433/) — A 1913 office building, with plumbing work permitted in 2023.
+- [465](465/) — A 1903 office building, with stair work permitted in 2002.
 - [530–550](530/) — A 1960 office building, with an addition permitted in 2006.
 - [555](555/) — The 1969 Bank of America tower; its plaza sculpture is the one called the Banker's Heart.
 - [580](580/) — A 1984 office building, with electrical work permitted in 2016.

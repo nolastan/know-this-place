@@ -4,6 +4,7 @@ The parcels on Franklin Street documented here so far, from the city's address, 
 
 ## Documented so far
 
+- [1](1/) — A 2016 store building, with foundation work permitted in 2015.
 - [23](23/) — A 1910 12-unit apartment building, with a seismic retrofit permitted in 2015.
 - [41–47](41/) — A 1907 office building, with a seismic retrofit permitted in 2016.
 - [131](131/) — A 1909 office building, with an addition permitted in 1989.

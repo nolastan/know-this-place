@@ -34,3 +34,11 @@ fills it.
   status the render drops wholesale is the same kind of admission, counted in
   the same line, and that a stored `permit_summary.note` takes the second
   clause rather than a second sentence.
+- `2026-09-11` **Current occupant panel (issue #283)** — nothing covers an
+  outbound commercial call to action (a referral link) on an address page, or
+  how loud it may be; guessed a full-width outlined button in `--accent` with a
+  muted disclosure line beneath, as the one place on the page to spend the
+  accent. Nor is there a rule for weekly opening hours in a speclist; guessed
+  one row per run of days ("Tue–Thu", "Sat, Sun", "Daily"), 12-hour times,
+  days the listing omits as a "Closed" row, and a `--muted` "Last updated" line
+  under the last merchant.

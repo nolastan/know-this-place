@@ -8,7 +8,7 @@ The buildings documented here so far inside the Washington Square Historic Distr
 - [Filbert Street](/san-francisco/north-beach/filbert-street/) — 5 documented buildings inside the district.
 - [Powell Street](/san-francisco/chinatown/powell-street/) — 1 documented building inside the district.
 - [Stockton Street, Chinatown](/san-francisco/chinatown/stockton-street/) — 1 documented building inside the district.
-- [Stockton Street, North Beach](/san-francisco/north-beach/stockton-street/) — 4 documented buildings inside the district.
+- [Stockton Street, North Beach](/san-francisco/north-beach/stockton-street/) — 5 documented buildings inside the district.
 - [Union Street, Chinatown](/san-francisco/chinatown/union-street/) — 2 documented buildings inside the district.
 - [Union Street, North Beach](/san-francisco/north-beach/union-street/) — 2 documented buildings inside the district.
 
@@ -22,6 +22,7 @@ The buildings documented here so far inside the Washington Square Historic Distr
 - [700–704 Filbert Street](/san-francisco/north-beach/filbert-street/700/) — A 1907 27-unit apartment building, with a seismic retrofit permitted in 2017.
 - [1717 Powell Street](/san-francisco/chinatown/powell-street/1717/) — A 1914 store building, with a rear addition permitted in 1996.
 - [1600–1610 Stockton Street](/san-francisco/chinatown/stockton-street/1600/) — A 1927 office building, with reroofing permitted in 1990.
+- [1562–1570 Stockton Street](/san-francisco/north-beach/stockton-street/1562/) — A 1907 6-unit building with a ground-floor store, with a bathroom remodel permitted in 2009.
 - [1620–1630 Stockton Street](/san-francisco/north-beach/stockton-street/1620/) — A 1936 3-unit building, with an addition permitted in 2008.
 - [1640 Stockton Street](/san-francisco/north-beach/stockton-street/1640/) — A 1958 store building, with electrical work permitted in 1997.
 - [1700–1704 Stockton Street](/san-francisco/north-beach/stockton-street/1700/) — A 1915 5-unit building with a ground-floor store, with reroofing permitted in 1994.

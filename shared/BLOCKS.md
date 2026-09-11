@@ -484,6 +484,35 @@ not. `<h3>` is the space's own name from the inventory; the rows are a plain
 The inventory's `year` is the year of the **requirement**, not an opening date —
 label that row "Required from", and never render it as when the space opened.
 
+### Current occupant — `.panel-occupant`
+The businesses trading from the building today, from `occupants`, as an
+infobox at the **top** of the aside. **One panel per building, not per
+merchant**: a shared kitchen lists three brands at one door, and three panels
+would repeat one offer three times. The eyebrow is the district panel's; each
+merchant is an `.occupant` group — the name as a serif headline, cuisines on a
+muted line, a `.speclist` of hours — split from the next by a hairline. The
+panel closes with the date the listing was read and, when the source is in
+`REFERRALS`, one outlined offer button with its referral disclosure beneath.
+```html
+<section class="panel panel-occupant">
+  <p class="occupant-kind">Current occupant</p>
+  <div class="occupant">
+    <h3>Burma Superstar</h3>
+    <p class="occupant-kinds">Burmese · Asian</p>
+    <dl class="speclist">
+      <div class="spec"><span class="ic ic-clock"></span><span class="spec-k">Fri, Sat</span><span class="spec-v">11:30am–3pm, 5:30pm–10pm</span></div>
+    </dl>
+  </div>
+  <p class="occupant-updated">Last updated September 11, 2026</p>
+  <p class="occupant-offer"><a href="…" rel="sponsored noopener">Get $5 off your first Bites order</a>
+  <small>Referral link. It opens Bites, where you can search for this restaurant.</small></p>
+</section>
+```
+A `Listed at` row (`ic-pin`) appears only when the merchant's door is not the
+page's lead number — 115 on the 111–117 New Montgomery page, or a corner
+building's other street. The offer is `rel="sponsored"` and says plainly that
+it does not open the merchant's own menu.
+
 ### Notes — `.community-note`
 `.community-note` wraps clearly-attributed unverified contributions (auto-
 labeled by CSS).

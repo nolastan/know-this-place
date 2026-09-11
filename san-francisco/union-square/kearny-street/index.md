@@ -43,6 +43,7 @@ The parcels on Kearny Street documented here so far, from the city's address, as
 - [630–632](630/) — A 1908 store building in the Chinatown Historic District, with reroofing permitted in 2001.
 - [638–648](638/) — A 1907 hotel in the Chinatown Historic District, with a seismic retrofit permitted in 1993.
 - [652–660](652/) — A 1906 2-unit building in the Chinatown Historic District, with deck work permitted in 2023.
+- [700–710](700/) — A store building in the Chinatown Historic District, with a kitchen and bathroom remodel permitted in 2019.
 - [712–716](712/) — A 1907 hotel in the Chinatown Historic District, with a seismic retrofit permitted in 1994.
 
 Pages are generated from the DataSF datasets listed in each page's

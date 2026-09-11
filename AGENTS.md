@@ -55,6 +55,12 @@ These pages describe **buildings, not the people in them.**
 - Never name, describe, or allude to current residents or occupants — even if
   the information is publicly available. This includes owner names from
   assessor or permit records.
+- **A business is not a person.** A restaurant, shop or firm trading from the
+  building today may be named — that is the `occupants` key, fed by
+  [merchants/AGENTS.md](merchants/AGENTS.md) — and commercial property is as
+  much a page as a house. The people behind the business are not: never its
+  owners, staff or customers, and never a sole proprietor whose business name
+  is their own name.
 - **Permit descriptions are the usual leak.** DBI text sometimes names the
   owner, applicant, architect or contractor. The seeder strips every name
   listed in `scripts/permit_redactions.json` before writing `data.json`. When
@@ -178,6 +184,15 @@ Three of their rules bind you even when you are only editing a page:
 - **Privacy is under more pressure in news than anywhere else here**, because a
   news story is about people almost by definition. Take the building; leave the
   tenant, the owner, the victim and the accused.
+
+## Merchants
+
+**Merchants** ([merchants/AGENTS.md](merchants/AGENTS.md)) put the business
+trading from a building today on its page, from ordering-app and merchant
+directories, as the page's `occupants`. It uses the same resolver and the same
+manifests as the two source modules, and it is the only place a page states
+something as *current* — so its one rule beyond theirs is that the panel
+always says when the listing was read.
 
 ## Writing pages
 

@@ -6,7 +6,7 @@ The buildings documented here so far inside the Mint-Mission Conservation Distri
 
 - [Fifth Street](/san-francisco/south-of-market/5th-street/) — 1 documented building inside the district.
 - [Jessie Street](/san-francisco/south-of-market/jessie-street/) — 3 documented buildings inside the district.
-- [Mint Plaza](/san-francisco/south-of-market/mint-plaza/) — 2 documented buildings inside the district.
+- [Mint Plaza](/san-francisco/south-of-market/mint-plaza/) — 3 documented buildings inside the district.
 - [Mint Street](/san-francisco/south-of-market/mint-street/) — 1 documented building inside the district.
 - [Mission Street](/san-francisco/south-of-market/mission-street/) — 11 documented buildings inside the district.
 - [Stevenson Street](/san-francisco/south-of-market/stevenson-street/) — 1 documented building inside the district.
@@ -17,6 +17,7 @@ The buildings documented here so far inside the Mint-Mission Conservation Distri
 - [431 Jessie Street](/san-francisco/south-of-market/jessie-street/431/) — A 1912 industrial building, with plumbing work permitted in 2011.
 - [440–444 Jessie Street](/san-francisco/south-of-market/jessie-street/440/) — A 1924 industrial building, with plumbing work permitted in 2014.
 - [471 Jessie Street](/san-francisco/south-of-market/jessie-street/471/) — A 1912 industrial building, with a seismic retrofit permitted in 1999.
+- [8 Mint Plaza](/san-francisco/south-of-market/mint-plaza/8/) — A 1900 store building, with a kitchen remodel permitted in 2018.
 - [12 Mint Plaza](/san-francisco/south-of-market/mint-plaza/12/) — A 1919 bank building, with a seismic retrofit permitted in 1994.
 - [14–16 Mint Plaza](/san-francisco/south-of-market/mint-plaza/14/) — A 1907 office building, with a seismic retrofit permitted in 1998.
 - [66–90 Mint Street](/san-francisco/south-of-market/mint-street/66/) — A 1916 bank building, with fire repair permitted in 2005.

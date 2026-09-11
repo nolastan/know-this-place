@@ -43,6 +43,7 @@ Every residential parcel on Valencia Street that the city's address, assessor an
 - [623](623/) — A 1915 store building, with a seismic retrofit permitted in 2002.
 - [645–647](645/) — A 1915 3-unit apartment building with a ground-floor store, with an addition permitted in 2016.
 - [656–660](656/) — A 1906 four-flat, with foundation work permitted in 1996.
+- [659–665](659/) — A hotel, with fire repair permitted in 2000.
 - [662](662/) — An apartment building, with one permit record from 1995.
 - [666–668](666/) — An apartment building, with permit records from 1985 to 1995.
 - [670](670/) — An apartment building, with permit records from 1995 to 1998.

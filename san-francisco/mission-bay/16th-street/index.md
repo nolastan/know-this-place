@@ -4,6 +4,7 @@ The parcels on 16th Street documented here so far, from the city's address, asse
 
 ## Documented so far
 
+- [900](900/) — A 2016 store building, with permit records from 2015 to 2023.
 - [901–941](901/) — An industrial building, with a seismic retrofit permitted in 2020.
 - [1001](1001/) — A 1952 industrial building, with reroofing permitted in 2001.
 - [1079](1079/) — A 1990 industrial building, with permit records from 1986 to 1992.

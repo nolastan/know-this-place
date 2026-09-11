@@ -12,6 +12,7 @@ The office district north of Market Street, in the city's Financial District/Sou
 - [Dashiell Hammett Street](dashiell-hammett-street/) — 2 buildings, built 1912; 2 in the Lower Nob Hill Apartment Hotel Historic District.
 - [Davis Street](davis-street/) — 1 building, built 1927; 1 in the Northeast Waterfront Historic District.
 - [Drumm Street](drumm-street/) — 1 building, built 1912.
+- [Embarcadero Center](embarcadero-center/) — 1 building, built 1979.
 - [Front Street](front-street/) — 1 building.
 - [Grant Avenue](grant-avenue/) — 1 building, built 1913; 1 in the Chinatown Historic District.
 - [Leidesdorff Street](leidesdorff-street/) — 1 building, built 1925; 1 in the Commercial-Leidesdorff Conservation District.

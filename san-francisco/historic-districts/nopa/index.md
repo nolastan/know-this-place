@@ -6,7 +6,7 @@ The buildings documented here so far inside the NOPA Historic District, and the 
 
 - [Baker Street](/san-francisco/lone-mountain/baker-street/) — 3 documented buildings inside the district.
 - [Broderick Street](/san-francisco/haight-ashbury/broderick-street/) — 1 documented building inside the district.
-- [Divisadero Street](/san-francisco/haight-ashbury/divisadero-street/) — 2 documented buildings inside the district.
+- [Divisadero Street](/san-francisco/haight-ashbury/divisadero-street/) — 3 documented buildings inside the district.
 - [Fell Street](/san-francisco/hayes-valley/fell-street/) — 3 documented buildings inside the district.
 - [Fulton Street](/san-francisco/western-addition/fulton-street/) — 3 documented buildings inside the district.
 - [Golden Gate Avenue](/san-francisco/lone-mountain/golden-gate-avenue/) — 2 documented buildings inside the district.
@@ -22,6 +22,7 @@ The buildings documented here so far inside the NOPA Historic District, and the 
 - [543–555 Baker Street](/san-francisco/lone-mountain/baker-street/543/) — A 1928 2-unit building, with reroofing permitted in 2020.
 - [639–667 Broderick Street](/san-francisco/haight-ashbury/broderick-street/639/) — A 1900 two-flat, with reroofing permitted in 2003.
 - [503 Divisadero Street](/san-francisco/haight-ashbury/divisadero-street/503/) — A 1900 two-flat, with chimney work permitted in 2010.
+- [661 Divisadero Street](/san-francisco/haight-ashbury/divisadero-street/661/) — A 1915 store building, with a bathroom remodel permitted in 2008.
 - [717 Divisadero Street](/san-francisco/haight-ashbury/divisadero-street/717/) — A 1913 garage, with a seismic retrofit permitted in 1997.
 - [1530 Fell Street](/san-francisco/hayes-valley/fell-street/1530/) — A 2000 1-unit apartment building, with reroofing permitted in 2014.
 - [1550 Fell Street](/san-francisco/hayes-valley/fell-street/1550/) — An 1880 single-family house, with reroofing permitted in 2009.

@@ -14,7 +14,7 @@ The buildings documented here so far inside the Western SOMA Light Industrial an
 - [Bernice Street](/san-francisco/mission/bernice-street/) — 2 documented buildings inside the district.
 - [Clementina Street](/san-francisco/south-of-market/clementina-street/) — 2 documented buildings inside the district.
 - [Dore Street](/san-francisco/south-of-market/dore-street/) — 2 documented buildings inside the district.
-- [Folsom Street, Mission](/san-francisco/mission/folsom-street/) — 25 documented buildings inside the district.
+- [Folsom Street, Mission](/san-francisco/mission/folsom-street/) — 26 documented buildings inside the district.
 - [Folsom Street, South of Market](/san-francisco/south-of-market/folsom-street/) — 9 documented buildings inside the district.
 - [Grace Street](/san-francisco/south-of-market/grace-street/) — 2 documented buildings inside the district.
 - [Harrison Street, Mission](/san-francisco/mission/harrison-street/) — 2 documented buildings inside the district.
@@ -137,6 +137,7 @@ The buildings documented here so far inside the Western SOMA Light Industrial an
 - [1415 Folsom Street](/san-francisco/mission/folsom-street/1415/) — A 1913 industrial building, with reroofing permitted in 2012.
 - [1455 Folsom Street](/san-francisco/mission/folsom-street/1455/) — A 1919 industrial building, with a seismic retrofit permitted in 2004.
 - [1480 Folsom Street](/san-francisco/mission/folsom-street/1480/) — A 1916 industrial building, with reroofing permitted in 1993.
+- [1489 Folsom Street](/san-francisco/mission/folsom-street/1489/) — A 1907 8-unit building, with a rear addition permitted in 1992.
 - [1501 Folsom Street](/san-francisco/mission/folsom-street/1501/) — A 1929 store building, with deck work permitted in 2022.
 - [1527–1535 Folsom Street](/san-francisco/mission/folsom-street/1527/) — A 1906 building, with deck work permitted in 2010.
 - [1545 Folsom Street](/san-francisco/mission/folsom-street/1545/) — A 1906 two-flat, with reroofing permitted in 2010.

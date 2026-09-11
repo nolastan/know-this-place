@@ -1,0 +1,127 @@
+{
+  "address": "900 16th Street, San Francisco, CA 94107",
+  "path": "/san-francisco/mission-bay/16th-street/900/",
+  "apn": "3834003",
+  "block": "3834",
+  "lot": "003",
+  "eas_baseid": "489229",
+  "coordinates": {
+    "lat": 37.76664,
+    "lng": -122.395546
+  },
+  "parcel": {
+    "year_built": 2016,
+    "units": 6,
+    "stories": 1,
+    "building_area_sqft": 5914,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "NA",
+    "zoning": "UMU",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Mission Bay",
+    "property_location_raw": "0980 0900 16TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 776695,
+    "assessed_improvement_value": 5391255
+  },
+  "permits": [
+    {
+      "number": "202307121948",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-07-12",
+      "status_date": "2025-07-01",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "modifty (e) fire sprinkler system to accomodate new tenant layout. ref t.i. pa 202305057245.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202305057245",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2023-05-05",
+      "status_date": "2024-01-22",
+      "estimated_cost": 130289,
+      "revised_cost": 173360,
+      "description": "change of use to education. t.i., adding (2) restrooms, minor wall/door recongiruation.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201709016738",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-09-01",
+      "status_date": "2017-12-26",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "administrative permit to change address for new restaurant storefront frantage for pa #201707182280 from 1400 7th street to 900 16th street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M575630",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-04-03",
+      "status_date": "2017-03-03",
+      "revised_cost": 1044,
+      "description": "new addresses at new bldg 201112070227 to block 3834, lot 001 as; 900,920,930,940,950 16th street.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=16TH&street_type=ST&address_number=900",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "query": "https://data.sfgov.org/resource/acdm-wktn.json?%24where=blklot%3D%273834003%27",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3834003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3834&lot=003",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "bites",
+      "name": "Bites, merchant directory",
+      "supports": "Current occupant",
+      "query": "https://withbites.com/merchants",
+      "retrieved": "2026-09-11"
+    }
+  ],
+  "occupants": [
+    {
+      "name": "Mediterranean Aroma",
+      "cuisines": [
+        "Mediterranean",
+        "Wraps",
+        "Bowls"
+      ],
+      "opening_hours": [
+        "Mo,Tu,We,Th,Fr,Sa 11:00-20:00"
+      ],
+      "listed_address": "900 16th Street",
+      "source": "bites"
+    }
+  ],
+  "unknowns": [
+    "The city's address registry files 900 16th Street under parcel 3834001, which the city has retired; the assessor's roll now gives the address to this parcel, the retail lot of the building at 1400 7th Street."
+  ]
+}
