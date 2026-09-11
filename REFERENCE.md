@@ -225,8 +225,14 @@ pages.
 
 Directory names: lowercase, hyphens, no punctuation. Street numbers are the
 bare number (`4127`, `4127a` for lettered addresses). The canonical address
-list is the EAS dataset in [DATA-SOURCES.md](DATA-SOURCES.md) — don't create
-pages for addresses that aren't in it.
+list is the EAS dataset in [DATA-SOURCES.md](DATA-SOURCES.md), and a page's
+address comes from it wherever it can. **An address EAS lacks, or holds with no
+parcel, may still have a page** when a source puts something real there — a
+merchant directory's listing, say — and the page's `unknowns` says how the
+address and the city's records differ. Place it by the parcel the source's own
+coordinates fall on, file it under that parcel's page when one exists, and
+where no parcel carries it the page is the address with no parcel facts at all.
+A place outside the city never gets one.
 
 ### Historic districts
 

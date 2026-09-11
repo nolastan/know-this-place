@@ -8,7 +8,7 @@
     "examined": 786,
     "mentions": 121,
     "remaining": "The other 665 listings are outside San Francisco.",
-    "note": "104 resolved, 14 unresolved (condominiums, addresses EAS cannot join to a parcel, and the Ferry Building and Embarcadero Center, which EAS does not carry as streets), 3 rejected as South San Francisco listings filed under the city. 103 published; 1 declined as a duplicate listing."
+    "note": "118 resolved — 14 of them by hand: condominium buildings placed on the building's page, and addresses outside EAS or without a parcel placed by the parcel the listing's coordinates fall on — and 3 rejected as South San Francisco listings filed under the city. 117 published; 1 declined as a duplicate listing."
   },
   "findings": [
     {
@@ -94,14 +94,18 @@
       },
       "confidence": "high",
       "resolution": {
-        "status": "unresolved",
+        "status": "resolved",
         "checked_on": "2026-09-11",
-        "method": "sf-eas-addresses has 1198 MISSION ST but it does not join to one parcel. 1198 MISSION ST's coordinates fall in 20 active parcels (3702515, 3702612, 3702494, 3702584…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-        "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+        "by_hand": true,
+        "method": "EAS files 1198 MISSION ST under parcel 3702308, retired. Its point falls on active parcel 3702391 — 1190 Mission, a 22-story apartment building of 2013 on the 2025 roll — and on the 420 parcels of condominium map 3702392, none of them on the roll yet. The page is 3702391's.",
+        "note": "Placed by a person's decision (issue #283 follow-up): an address outside EAS or without a parcel may go on a page, with the difference noted on it. The resolver's own verdict was: The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names.",
+        "apn": "3702391",
+        "path": "/san-francisco/south-of-market/mission-street/1190/"
       },
       "publish": {
-        "status": "pending",
-        "note": "Still not on a page. The condominium map (3702392, 420 parcels) has no row on the 2025 assessor roll yet — the seeder's bar for any page — and the parcel EAS files the address under was last on the roll in 2015, before the building."
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/311",
+        "note": "An `occupants` entry on /san-francisco/south-of-market/mission-street/1190/. "
       }
     },
     {
@@ -1632,10 +1636,18 @@
       },
       "confidence": "high",
       "resolution": {
-        "status": "unresolved",
+        "status": "resolved",
         "checked_on": "2026-09-11",
-        "method": "sf-eas-addresses holds no street named FERRY BUILDING, under that spelling or any spelling of it, so the address cannot be looked up.",
-        "note": "The street the record names is not a street in the city's address registry today; the record may name a private way, a renamed street or a spelling this pass could not match."
+        "by_hand": true,
+        "method": "EAS has no street called Ferry Building, and the listing's coordinates and postal code (94518) are Concord's. SF Planning's historic resource record names parcel 9900274, 140 The Embarcadero, the Ferry Building.",
+        "note": "Placed by a person's decision (issue #283 follow-up): an address outside EAS or without a parcel may go on a page, with the difference noted on it. The resolver's own verdict was: The street the record names is not a street in the city's address registry today; the record may name a private way, a renamed street or a spelling this pass could not match.",
+        "apn": "9900274",
+        "path": "/san-francisco/south-beach/the-embarcadero/140/"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/311",
+        "note": "An `occupants` entry on /san-francisco/south-beach/the-embarcadero/140/. "
       }
     },
     {
@@ -2398,10 +2410,18 @@
       },
       "confidence": "high",
       "resolution": {
-        "status": "unresolved",
+        "status": "resolved",
         "checked_on": "2026-09-11",
-        "method": "sf-eas-addresses holds no street named EMBARCADERO CENTER, under that spelling or any spelling of it, so the address cannot be looked up.",
-        "note": "The street the record names is not a street in the city's address registry today; the record may name a private way, a renamed street or a spelling this pass could not match."
+        "by_hand": true,
+        "method": "EAS has no street called Embarcadero Center. The listing's own coordinates fall on active parcel 0233044, a 45-story office building of 1979 that the 2025 roll gives as 4 The Embarcadero.",
+        "note": "Placed by a person's decision (issue #283 follow-up): an address outside EAS or without a parcel may go on a page, with the difference noted on it. The resolver's own verdict was: The street the record names is not a street in the city's address registry today; the record may name a private way, a renamed street or a spelling this pass could not match.",
+        "apn": "0233044",
+        "path": "/san-francisco/financial-district/embarcadero-center/4/"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/311",
+        "note": "An `occupants` entry on /san-francisco/financial-district/embarcadero-center/4/. "
       }
     },
     {
@@ -2537,10 +2557,18 @@
       },
       "confidence": "high",
       "resolution": {
-        "status": "unresolved",
+        "status": "resolved",
         "checked_on": "2026-09-11",
-        "method": "sf-eas-addresses has 200 04TH ST but it does not join to one parcel.",
-        "note": "The address exists but cannot be joined to a parcel, so there is no page to put it on. EAS leaves addresses unparcelled for rear units, vacated lots and addresses in flux; a later pass may find one."
+        "by_hand": true,
+        "method": "EAS holds 200 04TH ST with no parcel, and neither its point nor the listing's falls inside one. Both lie within 17 m of condominium map 3733171 — the 1970 apartment building at 801 Howard and its retail units, one of them 230 4th Street — and of no other parcel.",
+        "note": "Placed by a person's decision (issue #283 follow-up): an address outside EAS or without a parcel may go on a page, with the difference noted on it. The resolver's own verdict was: The address exists but cannot be joined to a parcel, so there is no page to put it on. EAS leaves addresses unparcelled for rear units, vacated lots and addresses in flux; a later pass may find one.",
+        "apn": "3733171",
+        "path": "/san-francisco/south-of-market/4th-street/230/"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/311",
+        "note": "An `occupants` entry on /san-francisco/south-of-market/4th-street/230/. "
       }
     },
     {
@@ -2577,10 +2605,18 @@
       },
       "confidence": "high",
       "resolution": {
-        "status": "unresolved",
+        "status": "resolved",
         "checked_on": "2026-09-11",
-        "method": "sf-eas-addresses has 320 03RD ST but it does not join to one parcel.",
-        "note": "The address exists but cannot be joined to a parcel, so there is no page to put it on. EAS leaves addresses unparcelled for rear units, vacated lots and addresses in flux; a later pass may find one."
+        "by_hand": true,
+        "method": "EAS holds 320 03RD ST with no parcel. The listing's own coordinates fall on condominium map 3751175, 300 3rd Street.",
+        "note": "Placed by a person's decision (issue #283 follow-up): an address outside EAS or without a parcel may go on a page, with the difference noted on it. The resolver's own verdict was: The address exists but cannot be joined to a parcel, so there is no page to put it on. EAS leaves addresses unparcelled for rear units, vacated lots and addresses in flux; a later pass may find one.",
+        "apn": "3751175",
+        "path": "/san-francisco/south-of-market/3rd-street/300/"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/311",
+        "note": "An `occupants` entry on /san-francisco/south-of-market/3rd-street/300/. "
       }
     },
     {
@@ -2951,10 +2987,18 @@
       },
       "confidence": "high",
       "resolution": {
-        "status": "unresolved",
+        "status": "resolved",
         "checked_on": "2026-09-11",
-        "method": "No record in sf-eas-addresses for 60 MORRIS ST.",
-        "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 50. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+        "by_hand": true,
+        "method": "EAS has no 60 MORRIS ST (the nearest surviving number is 50). The listing's own coordinates fall on active parcel 3760027, 475–485 6th Street.",
+        "note": "Placed by a person's decision (issue #283 follow-up): an address outside EAS or without a parcel may go on a page, with the difference noted on it. The resolver's own verdict was: The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 50. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has.",
+        "apn": "3760027",
+        "path": "/san-francisco/south-of-market/6th-street/475/"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/311",
+        "note": "An `occupants` entry on /san-francisco/south-of-market/6th-street/475/. "
       }
     },
     {
@@ -3041,10 +3085,18 @@
       },
       "confidence": "high",
       "resolution": {
-        "status": "unresolved",
+        "status": "resolved",
         "checked_on": "2026-09-11",
-        "method": "sf-eas-addresses has 4528 MISSION ST but it does not join to one parcel.",
-        "note": "The address exists but cannot be joined to a parcel, so there is no page to put it on. EAS leaves addresses unparcelled for rear units, vacated lots and addresses in flux; a later pass may find one."
+        "by_hand": true,
+        "method": "EAS holds 4528 MISSION ST with no parcel. The listing's own coordinates fall on active parcel 3147003, 4524–4526 Mission; no parcel holds a number between 4526 and the next, 4534.",
+        "note": "Placed by a person's decision (issue #283 follow-up): an address outside EAS or without a parcel may go on a page, with the difference noted on it. The resolver's own verdict was: The address exists but cannot be joined to a parcel, so there is no page to put it on. EAS leaves addresses unparcelled for rear units, vacated lots and addresses in flux; a later pass may find one.",
+        "apn": "3147003",
+        "path": "/san-francisco/mission/mission-street/4524/"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/311",
+        "note": "An `occupants` entry on /san-francisco/mission/mission-street/4524/. "
       }
     },
     {
@@ -4012,14 +4064,18 @@
       },
       "confidence": "high",
       "resolution": {
-        "status": "unresolved",
+        "status": "resolved",
         "checked_on": "2026-09-11",
-        "method": "sf-eas-addresses has 900 16TH ST but it does not join to one parcel. 900 16TH ST's coordinates fall in 20 active parcels (3834018, 3834062, 3834051, 3834022…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-        "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+        "by_hand": true,
+        "method": "EAS files 900 16TH ST under parcel 3834001, retired. Its point falls on active parcel 3834003, which the 2025 roll gives as 900 16th Street (commercial stores, 2016), on map 3834002 with the apartments at 1400 7th Street, and on the 71 parcels of condominium map 3834004, not yet on the roll.",
+        "note": "Placed by a person's decision (issue #283 follow-up): an address outside EAS or without a parcel may go on a page, with the difference noted on it. The resolver's own verdict was: The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names.",
+        "apn": "3834003",
+        "path": "/san-francisco/mission-bay/16th-street/900/"
       },
       "publish": {
-        "status": "pending",
-        "note": "Still not on a page. The condominium map (3834004, 71 parcels) has no row on the 2025 assessor roll yet; the parcel it replaced was last on the roll in 2021, as 800 16th Street."
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/311",
+        "note": "An `occupants` entry on /san-francisco/mission-bay/16th-street/900/. "
       }
     },
     {
@@ -4743,10 +4799,18 @@
       },
       "confidence": "high",
       "resolution": {
-        "status": "unresolved",
+        "status": "resolved",
         "checked_on": "2026-09-11",
-        "method": "No record in sf-eas-addresses for 138 MASON ST.",
-        "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 120, 124, 125, 136, 140, 147. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+        "by_hand": true,
+        "method": "EAS has no 138 MASON ST (the nearest numbers are 136 and 140). The listing's own coordinates fall on active parcel 0330014, 136–140 Mason on the 2025 roll.",
+        "note": "Placed by a person's decision (issue #283 follow-up): an address outside EAS or without a parcel may go on a page, with the difference noted on it. The resolver's own verdict was: The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 120, 124, 125, 136, 140, 147. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has.",
+        "apn": "0330014",
+        "path": "/san-francisco/tenderloin/mason-street/136/"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/311",
+        "note": "An `occupants` entry on /san-francisco/tenderloin/mason-street/136/. "
       }
     },
     {
@@ -5376,14 +5440,18 @@
       },
       "confidence": "high",
       "resolution": {
-        "status": "unresolved",
+        "status": "resolved",
         "checked_on": "2026-09-11",
-        "method": "sf-eas-addresses has 151 WARRIORS WAY but it does not join to one parcel. 151 WARRIORS WAY's coordinates fall in 20 active parcels (8722038, 8722031, 8722029, 8722033…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-        "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+        "by_hand": true,
+        "method": "EAS files 151 WARRIORS WAY and 1655 03RD ST under parcel 8722023, retired; DBI files both numbers' permits under lot 023. The lot's successors on the 2025 roll are 8722063 (office) and 8722064 (commercial stores), both at 1655 3rd Street, on condominium map 8722025. The page is the building's, filed under the office lot, with 151 Warriors Way as its other address.",
+        "note": "Placed by a person's decision (issue #283 follow-up): an address outside EAS or without a parcel may go on a page, with the difference noted on it. The resolver's own verdict was: The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names.",
+        "path": "/san-francisco/mission-bay/3rd-street/1655/",
+        "apn": "8722063"
       },
       "publish": {
-        "status": "pending",
-        "note": "Still not on a page. Condominium map 8722025 is Chase Center's: an arena, retail units RU1–RU12, and two office towers at 1655 and 1725 Third Street — a complex of several buildings, not one, and no record says which retail unit this is."
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/311",
+        "note": "An `occupants` entry on /san-francisco/mission-bay/3rd-street/1655/. The building has one retail lot, 8722064, but no record says the restaurant is in it, so the entry names no unit."
       }
     },
     {

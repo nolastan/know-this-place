@@ -177,6 +177,7 @@ Every residential parcel on Mission Street that the city's address, assessor and
 - [4430–4434](4430/) — A 1924 store building, with reroofing permitted in 2019.
 - [4490–4492](4490/) — A 1918 2-unit building with a ground-floor store, with an addition permitted in 2019.
 - [4494](4494/) — A 1910 store building, with one permit record from 2026.
+- [4524–4526](4524/) — A 1904 2-unit building with a ground-floor store, with reroofing permitted in 2010.
 - [4531](4531/) — A 1900 2-unit building with a ground-floor store, with reroofing permitted in 1997.
 - [4535–4537](4535/) — A 1923 3-unit building with a ground-floor store, with reroofing permitted in 1994.
 - [4600](4600/) — A 1928 store building, with a rear addition permitted in 1997.

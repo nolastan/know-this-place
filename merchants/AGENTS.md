@@ -58,12 +58,24 @@ Directories still to add are the GitHub issues labelled `monetization`.
   Record the resolution with `by_hand: true`. Give the entry a `unit` only
   where a city record ties the merchant to one — 1489 Folsom's restaurant
   permits are all on unit 1 — never by picking one of several commercial
-  units. Two cases still stay off: a map with no row on the current roll
-  (built since), and a map that is several buildings (Chase Center's arena
-  and towers).
-- **Otherwise, a parcel the resolver or the seeder refuses is not a page to
-  force** — addresses EAS can't join to a parcel, streets outside the city.
-  The entry stays in the file with the reason, as in the news module.
+  units.
+- **Every San Francisco listing gets a page; nothing outside the city does.**
+  Where the resolver gives up — an address EAS lacks, one it holds with no
+  parcel, a parcel it files under that the city has retired — look up the
+  active parcel the listing's own coordinates (or EAS's point) fall on in
+  sf-parcels, and within a few metres when the point sits in the street. Put
+  the merchant on that parcel's page if one exists, seed one from it if not,
+  and add one `unknowns` line saying how the listing's address and the city's
+  records differ. A retired parcel's permits say where its numbers went: DBI
+  files 151 Warriors Way and 1655 3rd Street under the same lot, so the
+  merchant is on 1655 3rd Street's page. Where no parcel carries an address
+  at all, the page is the address with no parcel facts. Check the coordinates
+  before trusting them: Bites puts both its Ferry Building and Warriors Way
+  listings in Concord, and the Ferry Building is found by name in SF
+  Planning's historic resource record instead. Record each such resolution with `by_hand: true`.
+- **A listing outside the city stays off** — Bites files three South San
+  Francisco (94080) restaurants under the city. The entry stays in the file
+  with the reason, as in the news module.
 
 ## The file
 

@@ -9,6 +9,7 @@ The residential parcels on Mason Street documented here so far, from the city's 
 - [48–56](48/) — A 1908 hotel in the Kearny-Market-Mason-Sutter Conservation District, with plumbing work permitted in 2012.
 - [115](115/) — A 1907 store building, with a seismic retrofit permitted in 2005.
 - [125](125/) — Affordable family housing whose Mason Street facade carries Mildred Howard's text piece.
+- [136–140](136/) — A 1907 hotel, with an addition permitted in 2016.
 - [147–149](147/) — Supportive housing wrapped in a ceramic ribbon of open hands, from door to roof.
 - [222](222/) — A 1988 hotel, with a bathroom remodel permitted in 2020.
 - [300–330](300/) — A 1908 hotel in the Kearny-Market-Mason-Sutter Conservation District, with facade work permitted in 2025.
