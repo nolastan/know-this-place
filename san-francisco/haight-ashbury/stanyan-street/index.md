@@ -8,6 +8,7 @@ The parcels on Stanyan Street documented here so far, from the city's address, a
 - [690](690/) — A 1961 assessor class: parking lot, with reroofing permitted in 2010.
 - [730](730/) — A 1975 assessor class: vacant lot, with plumbing work permitted in 2022.
 - [750](750/) — A 1907 hotel, with reroofing permitted in 2014.
+- [772–780](772/) — A 1907 10-unit apartment building, with a seismic retrofit permitted in 2015.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

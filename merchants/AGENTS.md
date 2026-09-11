@@ -19,6 +19,7 @@ only place an offer lives.
 | id | Directory | Read from | Referral | Files |
 |---|---|---|---|---|
 | `bites` | Bites, merchant directory | `https://withbites.com/merchants` — the page's schema.org `ItemList`, every Bites merchant in the country, one `Restaurant` each | $5 off a first order; the link opens the app, not the merchant (no per-merchant deep link exists) | `bites/<date>.json` |
+| `momence` | Momence, class-booking hosts | Momence's host record (`https://momence.com/_api/primary/plugin/hosts/<id>`) confirms each host's name but lists no locations, so the addresses come from each studio's own location pages | Per host: one `REFERRALS` row per studio, keyed `momence-<studio>`, which is also the page's source id; the link opens that studio's sign-up | `momence/<date>.json` |
 
 Directories still to add are the GitHub issues labelled `monetization`.
 

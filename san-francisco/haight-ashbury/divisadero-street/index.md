@@ -5,6 +5,7 @@ The parcels on Divisadero Street documented here so far, from the city's address
 ## Documented so far
 
 - [280](280/) — An 1885 single-family house, with a kitchen and bathroom remodel permitted in 2016.
+- [286](286/) — A 1900 office building, with deck work permitted in 2008.
 - [289–293](289/) — An 1893 3-unit building with a ground-floor store in the Buena Vista North Historic District, with a kitchen and bathroom remodel permitted in 2015.
 - [301](301/) — A 1900 3-unit building with a ground-floor store in the Buena Vista North Historic District, with a kitchen and bathroom remodel permitted in 2017.
 - [305–319](305/) — A 1900 3-unit building with a ground-floor store in the Buena Vista North Historic District, with foundation work permitted in 2026.

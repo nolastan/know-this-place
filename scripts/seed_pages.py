@@ -2139,12 +2139,26 @@ def residents_panel_html(rec: dict, indent: str) -> str:
 # when the source it came from is listed here, so a merchant added later from a
 # directory with no referral programme never inherits one. Bites' link opens
 # the app, not the merchant's menu — there is no per-merchant deep link — so the
-# line under the button says so rather than implying one.
+# line under the button says so rather than implying one. A Momence referral is
+# per host, so each studio is its own source id, and its `note` says the link
+# opens that studio's sign-up rather than an app to search.
 REFERRALS = {
     "bites": {
         "url": "https://withbites.com/invite/5570dec6-e5a7-49f3-9d2c-fa4e12788c9d",
         "offer": "Get $5 off your first Bites order",
         "app": "Bites",
+    },
+    "momence-folk-yoga": {
+        "url": "https://momence.com/sign-up/member?hostId=35337&ref=f11db7945aa1e9ae718b1e8e6fa2c3f6",
+        "offer": "Get $10 in credit at Folk Yoga",
+        "app": "Momence",
+        "note": "Referral link. It opens Folk Yoga's sign-up page on Momence.",
+    },
+    "momence-haum-studios": {
+        "url": "https://momence.com/sign-up/member?hostId=5610&ref=1ffe67934a48391e4d94df8104c216fa",
+        "offer": "Get a free credit at HAUM Studios",
+        "app": "Momence",
+        "note": "Referral link. It opens HAUM Studios' sign-up page on Momence.",
     },
 }
 DAY_ABBR = ("Mo", "Tu", "We", "Th", "Fr", "Sa", "Su")
@@ -2271,11 +2285,12 @@ def occupant_panel_html(rec: dict, indent: str) -> str:
     for sid, listed in offers.items():
         ref = REFERRALS[sid]
         which = "this restaurant" if len(listed) == 1 else "these restaurants"
+        note = ref.get("note") or (f'Referral link. It opens {ref["app"]}, '
+                                   f'where you can search for {which}.')
         tail += (f'{indent}  <p class="occupant-offer">'
                  f'<a href="{esca(ref["url"])}" rel="sponsored noopener">'
                  f'{esc(ref["offer"])}</a>\n'
-                 f'{indent}  <small>Referral link. It opens {esc(ref["app"])}, '
-                 f'where you can search for {which}.</small></p>\n')
+                 f'{indent}  <small>{esc(note)}</small></p>\n')
     return (f'{indent}<section class="panel panel-occupant">\n'
             f'{indent}  <p class="occupant-kind">{kind}</p>\n'
             + "".join(blocks) + tail

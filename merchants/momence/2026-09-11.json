@@ -1,0 +1,203 @@
+{
+ "source_id": "momence",
+ "batch": "2026-09-11",
+ "read_on": "2026-09-11",
+ "notes": "The Momence hosts named in issue #298, each studio's locations read from its own site on 2026-09-11. Momence's public host record (https://momence.com/_api/primary/plugin/hosts/<id>) names host 35337 'Folk Yoga' and host 5610 'HAUM STUDIOS'; it lists no locations, so the addresses come from folksf.com/locations and haumstudios.com. Two fetches the same day agreed on every name and address. Hours are not taken: Richmond and both HAUM pages publish none, and the 20th St page's openingHoursSpecification names Monday three times, omits Tuesday and Thursday, and opens Sunday at '09:0:00'. The HAUM Mission page in the issue links the Haight-Ashbury page; its own page is /mission-studio. The issue's 94103 for 780 Stanyan is HAUM's 94117 on its own page. Each studio's referral offer lives in seed_pages.py REFERRALS under the page source id in extra.page_source_id.",
+ "coverage": {
+  "unit": "studio locations",
+  "examined": 5,
+  "mentions": 5,
+  "remaining": "None; both hosts' San Francisco locations are here."
+ },
+ "findings": [
+  {
+   "id": "2026-09-11-0001",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "286 Divisadero St",
+   "street_number": "286",
+   "street_name": "DIVISADERO",
+   "street_type": "ST",
+   "description": "Folk Yoga lists a studio at this address.",
+   "extra": {
+    "name": "Folk Yoga",
+    "name_as_listed": "Folk Yoga + Fitness",
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94117",
+    "momence_host_id": 35337,
+    "page_source_id": "momence-folk-yoga"
+   },
+   "citation": {
+    "label": "Folk Yoga, studio location page",
+    "url": "https://folksf.com/locations/nopa/",
+    "locator": "the page's schema.org ExerciseGym address"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "1238025",
+    "path": "/san-francisco/haight-ashbury/divisadero-street/286/",
+    "eas_address": "286 DIVISADERO ST",
+    "method": "EAS exact match on 286 DIVISADERO ST → parcel 1238025; sf-parcels has blklot 1238025 active, 286–286 DIVISADERO; the 2025 roll records it as commercial office, built 1900.",
+    "checked_on": "2026-09-11",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/haight-ashbury/divisadero-street/286/."
+   }
+  },
+  {
+   "id": "2026-09-11-0002",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "182 6th Ave",
+   "street_number": "182",
+   "street_name": "06TH",
+   "street_type": "AVE",
+   "description": "Folk Yoga lists a studio at this address.",
+   "extra": {
+    "name": "Folk Yoga",
+    "name_as_listed": "Folk Yoga + Fitness - Richmond",
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94118",
+    "momence_host_id": 35337,
+    "page_source_id": "momence-folk-yoga"
+   },
+   "citation": {
+    "label": "Folk Yoga, studio location page",
+    "url": "https://folksf.com/locations/richmond/",
+    "locator": "the page's schema.org ExerciseGym address"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "1365020",
+    "path": "/san-francisco/inner-richmond/6th-avenue/182/",
+    "eas_address": "182 06TH AVE",
+    "method": "EAS exact match on 182 06TH AVE → parcel 1365020; sf-parcels has blklot 1365020 active, 182–198 06TH; the 2025 roll records it as commercial misc, built 1907. The assessor files the parcel as 4350 CALIFORNIA ST. EAS puts 182, 196, 198 06TH AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 182.",
+    "checked_on": "2026-09-11",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/inner-richmond/6th-avenue/182/."
+   }
+  },
+  {
+   "id": "2026-09-11-0003",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "3315 20th St",
+   "street_number": "3315",
+   "street_name": "20TH",
+   "street_type": "ST",
+   "description": "Folk Yoga lists a studio at this address.",
+   "extra": {
+    "name": "Folk Yoga",
+    "name_as_listed": "Folk Yoga + Fitness - 20th in the Mission",
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94110",
+    "momence_host_id": 35337,
+    "page_source_id": "momence-folk-yoga"
+   },
+   "citation": {
+    "label": "Folk Yoga, studio location page",
+    "url": "https://folksf.com/locations/20th-st/",
+    "locator": "the page's schema.org ExerciseGym address"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3611001",
+    "path": "/san-francisco/mission/20th-street/3305/",
+    "eas_address": "3305 20TH ST",
+    "method": "EAS exact match on 3315 20TH ST → parcel 3611001; sf-parcels has blklot 3611001 active, 3305–3321 20TH; the 2025 roll records it as multi-family residential, built 1905. EAS puts 3305, 3307, 3309, 3311, 3313, 3315, 3317, 3319, 3321 20TH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 3305.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/mission/20th-street/3305/."
+   }
+  },
+  {
+   "id": "2026-09-11-0004",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "780 Stanyan St",
+   "street_number": "780",
+   "street_name": "STANYAN",
+   "street_type": "ST",
+   "description": "HAUM Studios lists a studio at this address.",
+   "extra": {
+    "name": "HAUM Studios",
+    "name_as_listed": "HAUM STUDIOS",
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94117",
+    "momence_host_id": 5610,
+    "page_source_id": "momence-haum-studios"
+   },
+   "citation": {
+    "label": "HAUM Studios, studio location page",
+    "url": "https://www.haumstudios.com/haight-ashbury-studio",
+    "locator": "the page's address block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "1250022",
+    "path": "/san-francisco/haight-ashbury/stanyan-street/772/",
+    "eas_address": "772 STANYAN ST",
+    "method": "EAS exact match on 780 STANYAN ST → parcel 1250022; sf-parcels has blklot 1250022 active, 772–780 STANYAN; the 2025 roll records it as multi-family residential, built 1907. EAS puts 772, 776, 780 STANYAN ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 772.",
+    "checked_on": "2026-09-11",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/haight-ashbury/stanyan-street/772/."
+   }
+  },
+  {
+   "id": "2026-09-11-0005",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "2973 16th St, 5th Floor",
+   "street_number": "2973",
+   "street_name": "16TH",
+   "street_type": "ST",
+   "description": "HAUM Studios lists a studio at this address.",
+   "extra": {
+    "name": "HAUM Studios",
+    "name_as_listed": "HAUM STUDIOS",
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94103",
+    "momence_host_id": 5610,
+    "page_source_id": "momence-haum-studios"
+   },
+   "citation": {
+    "label": "HAUM Studios, studio location page",
+    "url": "https://www.haumstudios.com/mission-studio",
+    "locator": "the page's address block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3570030",
+    "path": "/san-francisco/mission/16th-street/2973/",
+    "eas_address": "2973 16TH ST",
+    "method": "EAS exact match on 2973 16TH ST → parcel 3570030; sf-parcels has blklot 3570030 active, 2973–2973 16TH; the 2025 roll records it as commercial retail, built 1925.",
+    "checked_on": "2026-09-11",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/mission/16th-street/2973/."
+   }
+  }
+ ]
+}
