@@ -489,8 +489,8 @@ The businesses trading from the building today, from `occupants`, as an
 infobox at the **top** of the aside. **One panel per building, not per
 merchant**: a shared kitchen lists three brands at one door, and three panels
 would repeat one offer three times. The eyebrow is the district panel's; each
-merchant is an `.occupant` group — the name as a serif headline, cuisines on a
-muted line, a `.speclist` of hours — split from the next by a hairline. The
+merchant is an `.occupant` group — the name as a serif headline, its `kinds`
+(or `cuisines`, from a food directory) on a muted line, a `.speclist` of hours — split from the next by a hairline. The
 panel closes with the date the listing was read and, when the source is in
 `REFERRALS`, one outlined offer button with its referral disclosure beneath.
 ```html

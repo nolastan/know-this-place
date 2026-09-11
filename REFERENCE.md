@@ -166,7 +166,9 @@ own.
 ### `occupants`
 
 **The businesses trading from the building today**, one entry per merchant,
-rendered as one "Current occupant" panel heading the aside. `name`, `cuisines`,
+rendered as one "Current occupant" panel heading the aside. `name`, `kinds`
+(what the business is — "Yoga", "Fitness" — or `cuisines` where a food
+directory wrote them; both render as the muted line under the name),
 `opening_hours` (schema.org strings, as the directory publishes them — the
 renderer formats them and marks the days not listed as closed),
 `listed_address` (the merchant's own door, shown only when it isn't the

@@ -2265,7 +2265,10 @@ def occupant_panel_html(rec: dict, indent: str) -> str:
             f'{indent}      <div class="spec"><span class="ic {i}"></span>'
             f'<span class="spec-k">{esc(k)}</span>'
             f'<span class="spec-v">{v}</span></div>\n' for i, k, v in specs)
-        kinds = " · ".join(o.get("cuisines") or [])
+        # What the business is, on the muted line under its name. `kinds` is
+        # the general key — a yoga studio is not a cuisine — and `cuisines` is
+        # what the food directories write, kept as the fallback.
+        kinds = " · ".join(o.get("kinds") or o.get("cuisines") or [])
         blocks.append(
             f'{indent}  <div class="occupant">\n'
             f'{indent}    <h3>{esc(o["name"])}</h3>\n'

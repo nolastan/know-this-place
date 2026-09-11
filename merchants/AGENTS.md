@@ -85,8 +85,9 @@ directory, so `research/tools/resolve_eas.py` reads it unchanged: one entry per
 San Francisco listing, `address_as_written` verbatim, `street_number` /
 `street_name` / `street_type` parsed with the resolver's own
 `parse_address` (a "1/2" or a trailing suite letter dropped first), and
-`extra` holding what the page takes — `name`, `name_as_listed`, `cuisines`,
-`opening_hours`, `geo`, and the listing's own locality and postal code.
+`extra` holding what the page takes — `name`, `name_as_listed`, `kinds` or
+`cuisines`, `opening_hours`, `geo`, and the listing's own locality and postal
+code.
 `name` repairs the directory's title-casing (Bites writes "18Th St", "Kfc",
 "Ihop"); `name_as_listed` keeps its spelling. `publish` records which page
 each entry went on, or why it didn't.
