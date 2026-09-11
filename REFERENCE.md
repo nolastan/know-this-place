@@ -38,6 +38,11 @@ pattern, and always include `address` and non-empty `sources`:
       "hours": "Open at all times", "location": "...", "seating": "...",
       "source": "sf-popos" }
   ],
+  "occupants": [
+    { "name": "Burma Superstar", "cuisines": ["Burmese", "Asian"],
+      "opening_hours": ["Su 11:30-15:00,17:00-22:00", "Fr,Sa 11:30-15:00,17:30-22:00"],
+      "listed_address": "309 Clement Street", "source": "bites" }
+  ],
   "public_art": [
     { "title": "Moonrise Sculptures", "artist": "Ugo Rondinone",
       "type": "Sculpture", "medium": "aluminum", "location": "plaza",
@@ -157,6 +162,27 @@ own.
   `conflict` — alongside its own `events`. Leave it alone; if you find yourself
   wanting those scalars on a `historical_record` page, that is a schema
   decision for a human, not a new key.
+
+### `occupants`
+
+**The businesses trading from the building today**, one entry per merchant,
+rendered as one "Current occupant" panel heading the aside. `name`, `cuisines`,
+`opening_hours` (schema.org strings, as the directory publishes them — the
+renderer formats them and marks the days not listed as closed),
+`listed_address` (the merchant's own door, shown only when it isn't the
+page's lead number) and `source`, matching an id in `sources`.
+
+- **The panel's "Last updated" date is that source's `retrieved`.** Hours
+  drift within days, so the date is on the panel as well as in the footer,
+  and a refresh that re-reads the directory updates both by changing one field.
+- **A referral offer belongs to the source, not the entry.** The renderer's
+  `REFERRALS` table, keyed by source id, is the only place an offer lives; an
+  entry never carries a link of its own, so a merchant from a directory with no
+  referral programme never shows one.
+- **A business is not a person** — see "Privacy" in [AGENTS.md](AGENTS.md).
+  The merchant's name, never its owner's.
+- Where the entries come from, and how a directory is refreshed, is
+  [merchants/AGENTS.md](merchants/AGENTS.md).
 
 ### `narrative`
 

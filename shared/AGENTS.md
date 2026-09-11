@@ -84,6 +84,7 @@ Where a new fact goes. Full markup for each is in [BLOCKS.md](BLOCKS.md).
 | `survey_name` | a `.tag` in the hero | the name the city's survey files the building under |
 | secondary scalars (zoning, use) | `.speclist` rows | a detail that doesn't merit a tile |
 | `notable_residents` | a `.panel` of `.speclist` rows | documented past residents the page's prose doesn't already name |
+| `occupants` | `.panel-occupant`, heading the aside | the businesses trading from the building today — name, cuisines, hours, the date the listing was read, and a referral offer where the source has one |
 | `historic_district`, `also_in_districts` | `.panel-district` + `.standing` | the district's own record, not the building's |
 | `public_art` | `.section-head` + `.place-list` | 1% art on the parcel — main column |
 | `public_open_space` | one `.panel` per space | POPOS — aside |

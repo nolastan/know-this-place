@@ -2128,6 +2128,150 @@ def residents_panel_html(rec: dict, indent: str) -> str:
             f'{indent}</section>\n')
 
 
+# Ordering-app referral offers, keyed by the `source` id an `occupants` entry
+# cites. The offer is the source's, not the merchant's: an entry shows it only
+# when the source it came from is listed here, so a merchant added later from a
+# directory with no referral programme never inherits one. Bites' link opens
+# the app, not the merchant's menu — there is no per-merchant deep link — so the
+# line under the button says so rather than implying one.
+REFERRALS = {
+    "bites": {
+        "url": "https://withbites.com/invite/5570dec6-e5a7-49f3-9d2c-fa4e12788c9d",
+        "offer": "Get $5 off your first Bites order",
+        "app": "Bites",
+    },
+}
+DAY_ABBR = ("Mo", "Tu", "We", "Th", "Fr", "Sa", "Su")
+DAY_SHORT = ("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun")
+
+
+def clock(hhmm: str) -> str:
+    """"17:30" → "5:30 pm"; "12:00" → "12 pm"."""
+    h, m = int(hhmm[:2]), hhmm[3:5]
+    suffix = "am" if h < 12 or h == 24 else "pm"
+    h = h % 12 or 12
+    return f"{h}{'' if m == '00' else ':' + m} {suffix}"
+
+
+def day_runs(days: set) -> list:
+    """Day indices → runs of consecutive days, reading the week as a circle.
+
+    Starting just after a day the set lacks is what lets "Su,Mo,Tu,We,Th"
+    read as one run, Sun–Thu, rather than Mon–Thu plus a stray Sunday.
+    """
+    start = next(i for i in range(7) if i not in days) + 1
+    runs, run = [], []
+    for k in range(7):
+        i = (start + k) % 7
+        if i in days:
+            run.append(i)
+        elif run:
+            runs.append(run)
+            run = []
+    if run:
+        runs.append(run)
+    return runs
+
+
+def days_label(days: set) -> str:
+    if len(days) == 7:
+        return "Daily"
+    parts = []
+    for run in day_runs(days):
+        if len(run) >= 3:
+            parts.append(f"{DAY_SHORT[run[0]]}–{DAY_SHORT[run[-1]]}")
+        else:
+            parts.extend(DAY_SHORT[i] for i in run)
+    return ", ".join(parts)
+
+
+def hours_rows(spec: list) -> list:
+    """schema.org `openingHours` strings → (days, hours) rows, closed days last.
+
+    Bites writes "Mo,Tu,We,Th,Fr 10:45-20:15" and, for a split shift,
+    "Fr 11:45-14:45,16:45-21:30". A day the listing never names is closed, and
+    says so, so the reader is not left to notice which day is missing.
+    """
+    rows, seen = [], set()
+    for line in spec or []:
+        head, _, spans = line.partition(" ")
+        days = {DAY_ABBR.index(d) for d in head.split(",") if d in DAY_ABBR}
+        times = [s.split("-") for s in spans.split(",") if "-" in s]
+        if not days or not times:
+            continue
+        seen |= days
+        rows.append((days, [f"{clock(a)}–{clock(b)}" for a, b in times]))
+    rows.sort(key=lambda r: min(r[0]))
+    out = [(days_label(d), label) for d, label in rows]
+    closed = set(range(7)) - seen
+    if out and closed:
+        out.append((days_label(closed), ["Closed"]))
+    return out
+
+
+def occupant_panel_html(rec: dict, indent: str) -> str:
+    """`occupants` — the businesses trading from the building today.
+
+    One panel per building, not per merchant: a shared kitchen lists three
+    brands at one door, and three panels would repeat the same offer three
+    times. Each merchant is a name, its cuisines, and its hours; the panel
+    closes with the date the listing was read, since hours drift within days,
+    and with the referral offer when the source has one.
+    """
+    rows = [o for o in (rec.get("occupants") or []) if o.get("name")]
+    if not rows:
+        return ""
+    sources = {s["id"]: s for s in rec.get("sources") or []}
+    # A merchant at the page's own lead number needs no address row; one at
+    # 115 on the 111–117 New Montgomery page, or round the corner on another
+    # street, does — it says which door.
+    title = page_title(rec)
+    here = {title, re.sub(r"^(\d+\w*)–\S+", r"\1", title)}
+    blocks, dates, offers = [], set(), {}
+    for o in rows:
+        specs = []
+        listed = o.get("listed_address")
+        if listed and listed not in here:
+            specs.append(("ic-pin", "Listed at", esc(listed)))
+        # Each shift is its own span so a narrow column breaks a split day
+        # between its shifts, never inside "11:30 am–3 pm".
+        specs += [("ic-clock", k, ", ".join(f"<span>{esc(s)}</span>" for s in v))
+                  for k, v in hours_rows(o.get("opening_hours"))]
+        body = "".join(
+            f'{indent}      <div class="spec"><span class="ic {i}"></span>'
+            f'<span class="spec-k">{esc(k)}</span>'
+            f'<span class="spec-v">{v}</span></div>\n' for i, k, v in specs)
+        kinds = " · ".join(o.get("cuisines") or [])
+        blocks.append(
+            f'{indent}  <div class="occupant">\n'
+            f'{indent}    <h3>{esc(o["name"])}</h3>\n'
+            + (f'{indent}    <p class="occupant-kinds">{esc(kinds)}</p>\n' if kinds else "")
+            + (f'{indent}    <dl class="speclist">\n{body}{indent}    </dl>\n' if body else "")
+            + f'{indent}  </div>\n')
+        src = sources.get(o.get("source")) or {}
+        if src.get("retrieved"):
+            dates.add(src["retrieved"])
+        if o.get("source") in REFERRALS:
+            offers.setdefault(o["source"], []).append(o)
+    kind = "Current occupant" if len(rows) == 1 else "Current occupants"
+    tail = ""
+    if dates:
+        tail += (f'{indent}  <p class="occupant-updated">Last updated '
+                 f'{esc(long_date(max(dates)))}</p>\n')
+    for sid, listed in offers.items():
+        ref = REFERRALS[sid]
+        which = "this restaurant" if len(listed) == 1 else "these restaurants"
+        tail += (f'{indent}  <p class="occupant-offer">'
+                 f'<a href="{esca(ref["url"])}" rel="sponsored noopener">'
+                 f'{esc(ref["offer"])}</a>\n'
+                 f'{indent}  <small>Referral link. It opens {esc(ref["app"])}, '
+                 f'where you can search for {which}.</small></p>\n')
+    return (f'{indent}<section class="panel panel-occupant">\n'
+            f'{indent}  <p class="occupant-kind">{kind}</p>\n'
+            + "".join(blocks) + tail
+            + f'{indent}</section>\n')
+
+
 def glance_panel_html(rec: dict, indent: str) -> str:
     title = page_title(rec)
     p = rec.get("parcel", {})
@@ -2661,7 +2805,8 @@ def render_html(rec: dict) -> str:
     # there. Only a page that is nothing but panels stacks them full width.
     has_panels = bool(value_panel_html(rec, "") or glance_panel_html(rec, "")
                       or district_panel_html(rec, "") or open_space_panel_html(rec, "")
-                      or survey_panel_html(rec, "") or residents_panel_html(rec, ""))
+                      or survey_panel_html(rec, "") or residents_panel_html(rec, "")
+                      or occupant_panel_html(rec, ""))
     # A rail holding nothing but the building's own year is not a column: it
     # would put one dot beside a full stack of panels. Those pages keep
     # stacking full width, as they did when the year was a tag in the hero.
@@ -2669,7 +2814,10 @@ def render_html(rec: dict) -> str:
                     or timeline_html(rec, "").count('<li class="vtl-item"') > 1)
     use_cols = has_panels and has_main
     ind = "      " if use_cols else "  "
-    panels = (open_space_panel_html(rec, ind) + value_panel_html(rec, ind)
+    # What trades from the building today heads the aside, like an infobox:
+    # it is the one panel a passer-by opening the page is most likely after.
+    panels = (occupant_panel_html(rec, ind)
+              + open_space_panel_html(rec, ind) + value_panel_html(rec, ind)
               + glance_panel_html(rec, ind) + residents_panel_html(rec, ind)
               + survey_panel_html(rec, ind) + district_panel_html(rec, ind))
     art = public_art_html(rec, ind)
