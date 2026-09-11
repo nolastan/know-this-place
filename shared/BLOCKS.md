@@ -490,9 +490,11 @@ infobox at the **top** of the aside. **One panel per building, not per
 merchant**: a shared kitchen lists three brands at one door, and three panels
 would repeat one offer three times. The eyebrow is the district panel's; each
 merchant is an `.occupant` group — the name as a serif headline, its `kinds`
-(or `cuisines`, from a food directory) on a muted line, a `.speclist` of hours — split from the next by a hairline. The
-panel closes with the date the listing was read and, when the source is in
-`REFERRALS`, one outlined offer button with its referral disclosure beneath.
+(or `cuisines`, from a food directory) on a muted line, a `.speclist` of hours
+— split from the next by a hairline. The panel closes with the date the listing
+was read — only where it published hours, which is what that date is about —
+and, when the source is in `REFERRALS`, one outlined offer button, with a
+referral disclosure beneath it where the row carries one.
 ```html
 <section class="panel panel-occupant">
   <p class="occupant-kind">Current occupant</p>
@@ -510,8 +512,10 @@ panel closes with the date the listing was read and, when the source is in
 ```
 A `Listed at` row (`ic-pin`) appears only when the merchant's door is not the
 page's lead number — 115 on the 111–117 New Montgomery page, or a corner
-building's other street. The offer is `rel="sponsored"` and says plainly that
-it does not open the merchant's own menu.
+building's other street. The offer is `rel="sponsored"`. Bites' row adds a line
+saying plainly that the link does not open the merchant's own menu; a row whose
+link does reach the merchant — a Momence studio's sign-up — carries none, since
+the button already says where it goes.
 
 ### Notes — `.community-note`
 `.community-note` wraps clearly-attributed unverified contributions (auto-

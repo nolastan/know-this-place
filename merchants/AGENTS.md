@@ -33,10 +33,12 @@ Directories still to add are the GitHub issues labelled `monetization`.
   merchants between two fetches seconds apart — it is not a fact and never
   reaches a page. Ratings and menus describe the merchant rather than the
   building and are left out too.
-- **The panel says when the listing was read.** Hours drift within days (9 of
-  118 Bites merchants changed theirs in five days of September 2026), so the
-  panel prints "Last updated" from the source's `retrieved`, and a refresh
-  changes that one field.
+- **The panel says when the listing's hours were read.** Hours drift within
+  days (9 of 118 Bites merchants changed theirs in five days of September
+  2026), so the panel prints "Last updated" from the source's `retrieved`,
+  and a refresh changes that one field. The date belongs to the hours: an
+  entry that publishes none — a yoga studio listing only a class schedule —
+  omits the line rather than appearing to date the tenancy.
 - **A referral offer is the source's, not the merchant's.** Never put a link
   in an `occupants` entry. A directory gets an offer by a row in `REFERRALS`,
   added only when a human has supplied the link, and a merchant from any other

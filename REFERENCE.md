@@ -178,7 +178,8 @@ merchant trades from — only where a city record ties the two together) and
 
 - **The panel's "Last updated" date is that source's `retrieved`.** Hours
   drift within days, so the date is on the panel as well as in the footer,
-  and a refresh that re-reads the directory updates both by changing one field.
+  and a refresh that re-reads the directory updates both by changing one
+  field. It dates the hours, so an entry with none omits it.
 - **A referral offer belongs to the source, not the entry.** The renderer's
   `REFERRALS` table, keyed by source id, is the only place an offer lives; an
   entry never carries a link of its own, so a merchant from a directory with no
