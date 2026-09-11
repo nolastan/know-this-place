@@ -1,0 +1,175 @@
+{
+  "address": "2500 Mariposa Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/mariposa-street/2500/",
+  "apn": "3971001",
+  "block": "3971",
+  "lot": "001",
+  "eas_baseid": "366828",
+  "coordinates": {
+    "lat": 37.76328,
+    "lng": -122.408975
+  },
+  "parcel": {
+    "year_built": 1900,
+    "lot_area_sqft": 191999,
+    "use": "Industrial",
+    "property_class": "Industrial Gov",
+    "construction_type_code": "NA",
+    "zoning": "P",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2500 MARIPOSA            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Resource Evaluation Response, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202608196855",
+      "type": "demolitions",
+      "status": "filed",
+      "filed": "2026-09-08",
+      "status_date": "2026-09-08",
+      "estimated_cost": 4500000,
+      "description": "demolish a 2-story, type 1, auto repair buildging",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202608257106",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2026-08-25",
+      "status_date": "2026-08-25",
+      "estimated_cost": 100000,
+      "revised_cost": 0,
+      "description": "asbestos removal for building to be demolished under pa 202608196855 (ref pa 202411084679s)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202411084679",
+      "type": "new construction",
+      "status": "filed",
+      "filed": "2024-11-08",
+      "status_date": "2024-11-08",
+      "estimated_cost": 400000000,
+      "description": "priority process per ab004 - bldg#1 - erect a 4-story, type 1a, bus maintenance facility.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202311060243",
+      "type": "new construction",
+      "status": "withdrawn",
+      "filed": "2023-11-06",
+      "status_date": "2024-11-04",
+      "estimated_cost": 400000000,
+      "description": "priority process per ab004 - erect a 4-story, type 1a, bus maintenance facility.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202210134309",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-10-13",
+      "status_date": "2022-10-14",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "fire alarm ti: adding (1) cellular communicator to existing notifier nfs-640 fire alary system.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201612285974",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-12-28",
+      "status_date": "2020-05-22",
+      "estimated_cost": 291486,
+      "revised_cost": 291486,
+      "description": "demolish (e) fire alarm control units, devices and fire alarm cabling. provide new fire alarm control units and vesda system, devices and fire alarm cabling. per nfpa 72",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201510169984",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-10-16",
+      "status_date": "2016-03-28",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "install dis server.install 1 elctrical circuit with 4 gang receptical. install antennas and cables dc and fiber optic. new control station.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200202078692",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-02-07",
+      "status_date": "2002-06-07",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revise to app #200101230430 (correct occupancy classification)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200101230430",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2001-01-23",
+      "status_date": "2001-10-02",
+      "revised_cost": 348000,
+      "description": "convert(e)lockshop into electronics shop for testing of new eti trolley bus, ada upgrade in restrms",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARIPOSA&street_type=ST&address_number=2500",
+      "retrieved": "2026-09-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3971001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3971&lot=001",
+      "retrieved": "2026-09-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3971001",
+      "retrieved": "2026-09-10"
+    },
+    {
+      "id": "sfyimby-2026-09-10",
+      "name": "San Francisco YIMBY, “Demolition Permits Filed for 2500 Mariposa Street in San Francisco,” 10 September 2026",
+      "query": "https://sfyimby.com/2026/09/demolition-permits-filed-for-2500-mariposa-street-in-san-francisco.html",
+      "retrieved": "2026-09-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2026-09-10",
+      "kind": "development",
+      "headline": "Demolition Permits Filed for 2500 Mariposa Street in San Francisco",
+      "outlet": "San Francisco YIMBY",
+      "url": "https://sfyimby.com/2026/09/demolition-permits-filed-for-2500-mariposa-street-in-san-francisco.html",
+      "source": "sfyimby-2026-09-10"
+    }
+  ]
+}

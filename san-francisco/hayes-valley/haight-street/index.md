@@ -22,6 +22,7 @@ The parcels on Haight Street documented here so far, from the city's address, as
 - [398](398/) — A 1923 12-unit apartment building, with plumbing work permitted in 1988.
 - [401–411](401/) — A 1906 11-unit building with a ground-floor store in the Hayes Valley Residential Historic District, with a seismic retrofit permitted in 2018.
 - [544–546](544/) — A 1988 6-unit apartment building, with a kitchen and bathroom remodel permitted in 2014.
+- [680–682](680/) — An 1890 2-unit building with a ground-floor store, with a kitchen remodel permitted in 2020.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

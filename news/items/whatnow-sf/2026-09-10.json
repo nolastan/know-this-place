@@ -1,0 +1,47 @@
+{
+  "source_id": "whatnow-sf",
+  "batch": "2026-09-10",
+  "read_on": "2026-09-10",
+  "notes": "Two items queued from the 2026-09-10 poll, both read.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 2,
+    "mentions": 1,
+    "remaining": "none",
+    "note": "The Book Passage story names no street address; it is a move between stalls inside the Ferry Building marketplace."
+  },
+  "findings": [
+    {
+      "id": "2026-09-10-wn-0001",
+      "date": "2026-09-10",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "185 Sutter Street",
+      "street_number": "185",
+      "street_name": "SUTTER",
+      "street_type": "ST",
+      "description": "A lounge has opened on the mezzanine of Le Parc Bistrobar, the existing restaurant at 185 Sutter Street.",
+      "citation": {
+        "label": "What Now San Francisco, “Bar Antoine Lounge Now Open in San Francisco,” 10 September 2026",
+        "url": "https://whatnow.com/san-francisco/restaurants/bar-antoine-lounge-now-open-in-san-francisco/",
+        "locator": "article text"
+      },
+      "raw": {
+        "text": "Bar Antoine Lounge, located at 185 Sutter Street, is open Tuesday through Friday"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Fails the ten-year test: an existing restaurant adding a lounge within its own space is not a change of occupancy. Hoodline's rewrite, 2026-09-10-hl-0004, is declined on the same grounds."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0292009",
+        "path": "/san-francisco/union-square/kearny-street/138/",
+        "eas_address": "185 SUTTER ST",
+        "method": "EAS exact match on 185 SUTTER ST → parcel 0292009; sf-parcels has blklot 0292009 active, 138–152 KEARNY; the 2025 roll records it as commercial hotel, built 1911. EAS puts 185, 191, 195, 199 SUTTER ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 185.",
+        "checked_on": "2026-09-10"
+      }
+    }
+  ]
+}

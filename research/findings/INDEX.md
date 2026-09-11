@@ -234,6 +234,7 @@ are listed so their size is visible before anyone opens one.
 | `news-2026-09-02.json` | 3 | 1 KB | `mission`, `west-of-twin-peaks` |
 | `news-2026-09-04.json` | 1 | 1 KB | `lone-mountain` |
 | `news-2026-09-06.json` | 3 | 1 KB | `mission`, `outer-richmond`, `oceanview-merced-ingleside` |
+| `news-2026-09-10.json` | 3 | 1 KB | `chinatown`, `hayes-valley`, `mission` |
 | `north-beach-hcs.json` | 342 | 130 KB | `north-beach`, `chinatown`, `russian-hill` +3 |
 | `oceanside-hcs.json` | 19 | 7 KB | `sunset-parkside` |
 | `omi-context-statement.json` | 38 | 16 KB | `oceanview-merced-ingleside`, `ingleside-terraces`, `outer-mission` |

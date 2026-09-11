@@ -1,0 +1,87 @@
+{
+  "source_id": "mission-local",
+  "batch": "2026-09-10",
+  "read_on": "2026-09-10",
+  "notes": "Eleven items queued from the 2026-09-10 poll, all eleven read.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 11,
+    "mentions": 2,
+    "remaining": "none",
+    "note": "Nine articles named no street address; the District 6 candidate profile's one hit is a year run into a campaign slogan."
+  },
+  "findings": [
+    {
+      "id": "2026-09-10-ml-0001",
+      "date": "2026-09-10",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "2205 Mission St.",
+      "street_number": "2205",
+      "street_name": "MISSION",
+      "street_type": "ST",
+      "description": "The Mission Economic Development Agency's plan for owner-occupied educator housing on the long-vacant corner building at 2205 Mission Street (18th and Mission) is on pause. City emails show the project lost the federal and state funding it was counting on, the city declined to pay for demolition or holding costs, and neither side has a path forward. MEDA obtained a demolition permit in 2024 after giving up its plan to keep the Streamline Moderne facade. The project is stalled rather than built, so nothing goes into the building block.",
+      "extra": {
+        "sponsor": "Mission Economic Development Agency (MEDA)",
+        "city_loan_usd": 12000000,
+        "demolition_permit": "obtained 2024",
+        "status": "paused"
+      },
+      "citation": {
+        "label": "Mission Local, “S.F. teacher housing at 18th and Mission is on ice, emails show,” 10 September 2026",
+        "url": "https://missionlocal.org/2026/09/san-francisco-teacher-housing-meda-mission-district/",
+        "locator": "article text"
+      },
+      "raw": {
+        "text": "For nearly 20 years, the corner building at 18th and Mission has sat empty"
+      },
+      "confidence": "high",
+      "note": "City staff and MEDA employees quoted in the story are left out.",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3590035",
+        "path": "/san-francisco/mission/mission-street/2205/",
+        "eas_address": "2205 MISSION ST",
+        "method": "EAS exact match on 2205 MISSION ST → parcel 3590035; sf-parcels has blklot 3590035 active, 2205–2205 MISSION; the 2025 roll records it as miscellaneous/mixed-use, built 1919.",
+        "checked_on": "2026-09-10"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Published on the existing page /san-francisco/mission/mission-street/2205/ as mission-local-2026-09-10."
+      }
+    },
+    {
+      "id": "2026-09-10-ml-0002",
+      "date": "2026-09-09",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "741 30th Ave.",
+      "street_number": "741",
+      "street_name": "30TH",
+      "street_type": "AVE",
+      "description": "The school district, which owns the land at 741 30th Avenue leased to the Richmond Neighborhood Center, had planned to include it in a request for developer proposals, and dropped the plan after the nonprofit's campaign.",
+      "citation": {
+        "label": "Mission Local, “A Richmond nonprofit served neighbors for 46 years. SFUSD almost took away its land.,” 9 September 2026",
+        "url": "https://missionlocal.org/2026/09/sf-richmond-neighborhood-center-sfusd/",
+        "locator": "article text"
+      },
+      "raw": {
+        "text": "the San Francisco Unified School District, which owns the land at 741 30th Ave., planned to start soliciting developers"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Fails the ten-year test: the story is a redevelopment that did not happen, and the headline is about the nonprofit rather than the site."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "1614008",
+        "path": "/san-francisco/outer-richmond/30th-avenue/741/",
+        "eas_address": "741 30TH AVE",
+        "method": "EAS exact match on 741 30TH AVE → parcel 1614008; sf-parcels has blklot 1614008 active, 741–745 30TH; the 2025 roll records it as commercial misc, built 1928. The assessor files the parcel as 740 31ST AV. EAS puts 741, 745 30TH AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 741.",
+        "checked_on": "2026-09-10",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      }
+    }
+  ]
+}
