@@ -48,9 +48,22 @@ Directories still to add are the GitHub issues labelled `monetization`.
   exception is the same listing twice — one point, identical hours, one name a
   prefix of the other — which becomes one entry, the fuller name, with the
   other marked `publish.status: "declined"` and the reason.
-- **A parcel the resolver or the seeder refuses is not a page to force** —
-  condominiums, addresses EAS can't join to a parcel, streets outside the
-  city. The entry stays in the file with the reason, as in the news module.
+- **A merchant in a condominium goes on the building's page, never a
+  unit's.** The resolver refuses a condominium parcel, rightly; establish the
+  building's parcel set instead — every active parcel sharing one sf-parcels
+  `mapblklot` — and file one page under the map's key parcel, built with the
+  seeder's own `build_record` and then stripped of the roll's unit-scoped
+  figures (floor area, rooms, stories, the unit's assessment), with `units`
+  counted across the set and a `sf-assessor-roll-building` source citing it.
+  Record the resolution with `by_hand: true`. Give the entry a `unit` only
+  where a city record ties the merchant to one — 1489 Folsom's restaurant
+  permits are all on unit 1 — never by picking one of several commercial
+  units. Two cases still stay off: a map with no row on the current roll
+  (built since), and a map that is several buildings (Chase Center's arena
+  and towers).
+- **Otherwise, a parcel the resolver or the seeder refuses is not a page to
+  force** — addresses EAS can't join to a parcel, streets outside the city.
+  The entry stays in the file with the reason, as in the news module.
 
 ## The file
 
