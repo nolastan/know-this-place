@@ -1,0 +1,144 @@
+{
+  "address": "337 Hyde Street, San Francisco, CA 94109",
+  "path": "/san-francisco/tenderloin/hyde-street/337/",
+  "apn": "0335001B",
+  "block": "0335",
+  "lot": "001B",
+  "eas_baseid": "281835",
+  "coordinates": {
+    "lat": 37.783977,
+    "lng": -122.416334
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 18,
+    "stories": 4,
+    "rooms": 39,
+    "bathrooms": 18,
+    "lot_area_sqft": 3781,
+    "building_area_sqft": 10910,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "C",
+    "zoning": "RC-4",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Tenderloin",
+    "analysis_neighborhood": "Tenderloin",
+    "property_location_raw": "0000 0337 HYDE                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 298250,
+    "assessed_improvement_value": 346684
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Uptown Tenderloin Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1957",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201111148814",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-11-14",
+      "status_date": "2011-11-14",
+      "estimated_cost": 9400,
+      "revised_cost": 9400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8509568",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-08-30",
+      "status_date": "1986-03-04",
+      "estimated_cost": 7500,
+      "description": "parapet wall bracing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8209490",
+      "type": "additions alterations or repairs",
+      "status": "reinstated",
+      "filed": "1982-11-16",
+      "status_date": "1983-03-02",
+      "estimated_cost": 100,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8205851",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1982-08-03",
+      "status_date": "1986-03-04",
+      "estimated_cost": 20000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HYDE&street_type=ST&address_number=337",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0335001B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0335&lot=001B",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0335001B",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41633420159468%2037.783977342698115)%27)",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "nrhp-08001407",
+      "name": "National Register of Historic Places nomination, Uptown Tenderloin Historic District (reference number 08001407), National Park Service.",
+      "query": "https://npgallery.nps.gov/NRHP/GetAsset/NRHP/08001407_text",
+      "label": "National Register of Historic Places nomination, National Park Service",
+      "retrieved": "2026-09-11"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1920",
+      "kind": "construction",
+      "description": "Built as the Almar Court Apartments, apartment building with 18 2-room units, to the design of the architect Herman Barth. Four storeys over a basement, brick structure with galvanized iron bay windows, two-part vertical composition, late medieval English ornamentation.",
+      "source": "nrhp-08001407"
+    }
+  ],
+  "building": {
+    "architect": "Herman Barth",
+    "former_name": "Almar Court Apartments"
+  }
+}

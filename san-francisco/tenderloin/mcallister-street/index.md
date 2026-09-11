@@ -4,6 +4,8 @@ The parcels on Mcallister Street documented here so far, from the city's address
 
 ## Documented so far
 
+- [44](44/) — A 1923 hotel in the Uptown Tenderloin Historic District, with stair work permitted in 2009.
+- [54–70](54/) — A 1986 100-unit apartment building in the Uptown Tenderloin Historic District, with reroofing permitted in 2017.
 - [77–79](77/) — A 1906 store building in the Civic Center Historic District, with an addition permitted in 2007.
 - [100](100/) — A 1929 apartment building with a ground-floor store in the Uptown Tenderloin Historic District, with reroofing permitted in 1993.
 - [136–154](136/) — A 1910 114-unit apartment building in the Uptown Tenderloin Historic District, with fire repair permitted in 2022.

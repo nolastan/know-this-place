@@ -4,7 +4,9 @@ The flat blocks west of Union Square, in the city's Tenderloin analysis neighbor
 
 ## Streets documented so far
 
+- [Ada Court](ada-court/) — 1 building, built 1914; 1 in the Uptown Tenderloin Historic District.
 - [Derby Street](derby-street/) — 1 building, built 1912.
+- [Dodge Street](dodge-street/) — 1 building, built 1925; 1 in the Uptown Tenderloin Historic District.
 - [Dr Carlton B Goodlett Place](dr-carlton-b-goodlett-place/) — 1 building, built 1900; 1 in the Civic Center Historic District.
 - [Eddy Street](eddy-street/) — 4 buildings, built 1907–1956; 3 in the Uptown Tenderloin Historic District.
 - [Ellis Street](ellis-street/) — 1 building, built 1908; 1 in the Kearny-Market-Mason-Sutter Conservation District.
@@ -14,6 +16,7 @@ The flat blocks west of Union Square, in the city's Tenderloin analysis neighbor
 - [Hayes Street](hayes-street/) — 1 building, built 2018.
 - [Hyde Street](hyde-street/) — 1 building, built 1929; 1 in the Uptown Tenderloin Historic District.
 - [Jones Street](jones-street/) — 1 building, built 1922; 1 in the Uptown Tenderloin Historic District.
+- [Larkin Street](larkin-street/) — 11 buildings, built 1911–1927; 11 in the Uptown Tenderloin Historic District.
 - [Leavenworth Street](leavenworth-street/) — 4 buildings, built 1907–1923; 4 in the Uptown Tenderloin Historic District.
 - [Market Street](market-street/) — 1 building, built 1917.
 - [Mason Street](mason-street/) — 2 buildings, built 2009.

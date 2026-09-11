@@ -1,0 +1,174 @@
+{
+  "address": "701–709 Ofarrell Street, San Francisco, CA 94109",
+  "path": "/san-francisco/tenderloin/ofarrell-street/701/",
+  "apn": "0321001",
+  "block": "0321",
+  "lot": "001",
+  "eas_baseid": "454847",
+  "coordinates": {
+    "lat": 37.78522,
+    "lng": -122.416504
+  },
+  "address_range": "701–709",
+  "street_numbers_on_parcel": [
+    "701",
+    "709"
+  ],
+  "parcel": {
+    "year_built": 1922,
+    "units": 2,
+    "stories": 1,
+    "rooms": 2,
+    "bathrooms": 2,
+    "lot_area_sqft": 2186,
+    "building_area_sqft": 2175,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "C",
+    "zoning": "RC-4",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Tenderloin",
+    "analysis_neighborhood": "Tenderloin",
+    "property_location_raw": "0709 0701 O'FARRELL           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 830234,
+    "assessed_improvement_value": 355813,
+    "last_sale_date": "1997-03-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Uptown Tenderloin Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1957",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202307182391",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2023-07-18",
+      "status_date": "2023-07-18",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "technically infeasibility for abe ordinance 51-16. barrier removal as identified on plans per abe checklist compliance fomr. equivalent facilitation (if any) work as shown on plans. install door buzzer. abe 202205190893.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9400351",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-01-10",
+      "status_date": "1994-09-21",
+      "estimated_cost": 8800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9317305",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-10-05",
+      "status_date": "1994-09-15",
+      "estimated_cost": 1100,
+      "description": "install anvil hood & duct system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9308379",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1993-05-19",
+      "status_date": "1994-09-15",
+      "estimated_cost": 3000,
+      "description": "install premade hood and flue in take out restaurant",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9304561",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1993-03-19",
+      "status_date": "1993-09-26",
+      "estimated_cost": 15000,
+      "description": "enterprise zone,install counter hood,sink,floor tile",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8605440",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-05-09",
+      "status_date": "1986-05-30",
+      "estimated_cost": 5000,
+      "description": "reinforce parapet walls",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "1986–2023",
+    "shown_on_page": 6,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=OFARRELL&street_type=ST&address_number=701",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0321001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0321&lot=001",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0321001",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41650350486343%2037.785220245991894)%27)",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "nrhp-08001407",
+      "name": "National Register of Historic Places nomination, Uptown Tenderloin Historic District (reference number 08001407), National Park Service.",
+      "query": "https://npgallery.nps.gov/NRHP/GetAsset/NRHP/08001407_text",
+      "label": "National Register of Historic Places nomination, National Park Service",
+      "retrieved": "2026-09-11"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1922",
+      "kind": "construction",
+      "description": "Built as stores, engineered by James H. Hjul. One storey, reinforced concrete structure, one-part commercial composition, Spanish Colonial ornamentation.",
+      "source": "nrhp-08001407"
+    }
+  ]
+}

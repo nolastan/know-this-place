@@ -6,7 +6,7 @@
 >
 > - **Kind:** PDF reports (federal nomination forms) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — the listings are indexed everywhere; the forms are not. A search for a street number returns the Wikipedia list entry and the NPS map pin, never the paragraph inside the PDF that dates the building and names its architect.
-> - **Coverage:** 96 of 165 San Francisco listings read — every one certified before 1990, plus the Civic Center district the index omits. 133 findings, 98 resolved, 78 published on 34 pages, 10 of them seeded.
+> - **Coverage:** 96 of 165 San Francisco listings read — every one certified before 1990, plus the Civic Center district the index omits — and the Uptown Tenderloin Historic District inventory (08001407) read in full, all 477 rows. 618 findings, 564 resolved, 530 published.
 > - **Local corpus:** `research/corpora/nrhp-nominations/` (one PDF and one `.txt` per reference number, plus `index-san-francisco.json` and `state.json`)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -215,7 +215,10 @@ URL. Worked example:
   ([`civic-center-district.json`](../findings/nrhp-nominations/civic-center-district.json)),
   and the 37 single-building nominations among the 42 listings certified
   1980-1989
-  ([`listed-1980-1989.json`](../findings/nrhp-nominations/listed-1980-1989.json)).
+  ([`listed-1980-1989.json`](../findings/nrhp-nominations/listed-1980-1989.json)),
+  and the **Uptown Tenderloin Historic District nomination of 2008 (08001407) in
+  full** — its whole section 7 inventory, 477 rows across 33 blocks
+  ([`uptown-tenderloin-district.json`](../findings/nrhp-nominations/uptown-tenderloin-district.json)).
 - **Not read, and this is the queue in order:**
   1. **The five district nominations of 1982-1989** — 82000983 Bush
      Street-Cottage Row, 83001230 Liberty Street, 87002286 Russian
@@ -226,11 +229,11 @@ URL. Worked example:
      rest — see "A district nomination is a per-property inventory" below.
   2. **68 listings certified 1990 or later** — 1990-1999 (17), 2000-2009 (21),
      2010-2015 (15), 2016-2023 (15). The Uptown Tenderloin Historic District
-     (08001407, listed 5 February 2009) is out of that count: it is fetched and
-     extracted, and one row of its inventory is read in
+     (08001407, listed 5 February 2009) is out of that count and is now **read
+     in full** under #304 — all 477 inventory rows, in
      [`uptown-tenderloin-district.json`](../findings/nrhp-nominations/uptown-tenderloin-district.json).
-     **The rest of that inventory — roughly 400 properties over 33 blocks — is
-     the largest single piece of unread material in this source.**
+     With it read, the five district nominations of 1982-1989 are again the
+     richest unread material here.
   3. **77000334** (Mills Building and Tower) and **01000281** (Maritime
      National Historic Site, Fort Mason), whose PDFs have no text layer, and
      **100008228**, whose `_text` path serves a PNG placeholder.
@@ -253,6 +256,47 @@ URL. Worked example:
   reference numbers do **not** serve a PDF at the `_text` path — 100008228 (the
   Timothy L. Pflueger House) returns a 1.6 KB PNG placeholder. Those documents
   need a different route, and finding it is part of that batch.
+
+- **Verified:** 2026-09-11 (fourth run. Read the Uptown Tenderloin Historic
+  District inventory (08001407) in full under #304 — 477 rows, 480 findings, 463
+  resolved, 451 published across 414 pages, 194 of them created by this run's
+  seeding of 199 parcels. The densest single document in this source: 308 of its
+  findings name an architect.
+
+  What this run learned, beyond the cautions above:
+
+  - **The block column's OCR fails systematically, which is what makes it safe.**
+    85 rows disagreed with the parcel their address resolves to, and 84 were one
+    substitution: a leading 3 read as 5, dropped, or read as `H` in "31" or as
+    `$`. The 85th — 800-806 O'Farrell, printed `520/14` — is the document's own
+    filing error, and it stood out because parcel 0520014 is 1780 Filbert Street
+    in the Marina. Resolve on the EAS address join and audit the printed block
+    afterwards; the residue is the part to read by hand.
+  - **The 73 conflicts the resolver recorded are that artefact, not a
+    disagreement in the record**, so none of them was written to a page's
+    `unknowns`. The seven `unknowns` sentences this run did write are all the
+    other kind: the assessor's year against the nomination's.
+  - **A parenthesised name is a later name.** 71 rows lead with one, and the year
+    in the bracket is when that name was current — 134-144 Eddy Street is dated
+    1907 and its first name is "Langham Hotel (1911)".
+  - **People are in the prose tail, not the fields.** Twelve rows end with a
+    sentence naming a notable past resident: Dashiell Hammett at 620 Eddy Street
+    when he began writing, Frank Capra at 233-237 Eddy in 1921, Fritz Leiber at
+    807-815 Geary 1969-1977, Miriam Allen de Ford at 35-65 Mason 1936-1975, Sally
+    Stanford at 791-793 O'Farrell in 1931, and Jessie Hayman and Tessie Wall,
+    whom the nomination cites to Gentry 1964. **None was taken.** All are dead
+    and documented, which is the case the root AGENTS.md's `notable_residents`
+    carve-out is written for, while this module's rulebook and #304 both say to
+    leave residents — a real ambiguity, and publishing seven of them inside a
+    450-fact batch is not a call this run should make. It is the one piece of
+    08001407 deliberately left on the table, and it wants a person's decision.
+  - **Five seeded pages carry no fact from this document**: 555-561 Ellis, 54
+    McAllister, 131-153 Taylor, 421-425 Turk and 430-440 Turk, whose only finding
+    is dated "built after 1984" or "ca. 2000" and was declined for having no date
+    the timeline can order. They are ordinary DataSF pages, not empty ones.
+  - **`pdftotext -layout` is not a fix here.** The committed `.txt` was
+    re-extracted to test whether the collapsed columns were an extraction fault;
+    it came back byte-identical at 451,531 characters. The damage is in the scan.)
 
 - **Verified:** 2026-09-09 (third run, targeted. Fetched the Uptown Tenderloin
   Historic District nomination (08001407) and read its section 7 inventory only

@@ -27,7 +27,7 @@ The buildings documented here so far inside the Kearny-Market-Mason-Sutter Conse
 - [Stockton Street](/san-francisco/chinatown/stockton-street/) — 11 documented buildings inside the district.
 - [Sutter Street, Financial District](/san-francisco/financial-district/sutter-street/) — 18 documented buildings inside the district.
 - [Sutter Street, Nob Hill](/san-francisco/nob-hill/sutter-street/) — 15 documented buildings inside the district.
-- [Taylor Street](/san-francisco/tenderloin/taylor-street/) — 4 documented buildings inside the district.
+- [Taylor Street](/san-francisco/tenderloin/taylor-street/) — 5 documented buildings inside the district.
 
 ## Buildings
 
@@ -231,6 +231,7 @@ The buildings documented here so far inside the Kearny-Market-Mason-Sutter Conse
 - [700–716 Sutter Street](/san-francisco/nob-hill/sutter-street/700/) — A 1918 55-unit apartment building, with a seismic retrofit permitted in 1998.
 - [707–709 Sutter Street](/san-francisco/nob-hill/sutter-street/707/) — A 1920 store building, with a seismic retrofit permitted in 2006.
 - [400–420 Taylor Street](/san-francisco/tenderloin/taylor-street/400/) — A 1942 office building, with an addition permitted in 2019.
+- [401–403 Taylor Street](/san-francisco/tenderloin/taylor-street/401/) — A 1924 hotel, with reroofing permitted in 2009.
 - [405–415 Taylor Street](/san-francisco/tenderloin/taylor-street/405/) — A 1912 garage, with reroofing permitted in 2009.
 - [624 Taylor Street](/san-francisco/tenderloin/taylor-street/624/) — A 1934 2-unit building, with a kitchen remodel permitted in 2006.
 - [627 Taylor Street](/san-francisco/tenderloin/taylor-street/627/) — A 1914 39-unit apartment building, with electrical work permitted in 2014.
