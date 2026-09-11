@@ -25,6 +25,7 @@ Every residential parcel on 16th Street that the city's address, assessor and pe
 - [2940–2944](2940/) — A 1914 office building, with facade work permitted in 2018.
 - [2943–2947](2943/) — A 1921 10-unit apartment building, with a seismic retrofit permitted in 2017.
 - [2961](2961/) — A 1907 theater in the San Francisco Neighborhood Movie Theater Historic District (Discontiguous), with a seismic retrofit permitted in 1998.
+- [2973](2973/) — A 1925 store building, with a seismic retrofit permitted in 2000.
 - [3000](3000/) — A 1910 bank building, with stair work permitted in 2015.
 - [3024–3030](3024/) — A 1909 store building, with stair work permitted in 2000.
 - [3032–3036](3032/) — A 1907 hotel, with fire repair permitted in 2022.

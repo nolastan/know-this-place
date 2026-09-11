@@ -218,6 +218,7 @@ are listed so their size is visible before anyone opens one.
 | `modern-architecture-landscape.json` | 244 | 90 KB | `pacific-heights`, `presidio-heights`, `west-of-twin-peaks` +28 |
 | `modern-postmodern-styles.json` | 111 | 42 KB | `south-of-market`, `financial-district`, `chinatown` +26 |
 | `modernistic-styles.json` | 11 | 4 KB | `mission`, `sunset-parkside`, `north-beach` +5 |
+| `momence-2026-09-11.json` | 4 | 2 KB | `haight-ashbury`, `inner-richmond`, `mission` |
 | `named-sites-1974-1982.json` | 3 | 1 KB | `financial-district`, `union-square` |
 | `named-sites-1983-2005.json` | 25 | 9 KB | `north-beach`, `russian-hill`, `financial-district` +2 |
 | `neighborhood-commercial-hcs.json` | 64 | 24 KB | `mission`, `west-of-twin-peaks`, `pacific-heights` +19 |

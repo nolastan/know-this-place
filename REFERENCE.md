@@ -166,7 +166,9 @@ own.
 ### `occupants`
 
 **The businesses trading from the building today**, one entry per merchant,
-rendered as one "Current occupant" panel heading the aside. `name`, `cuisines`,
+rendered as one "Current occupant" panel heading the aside. `name`, `kinds`
+(what the business is — "Yoga", "Fitness" — or `cuisines` where a food
+directory wrote them; both render as the muted line under the name),
 `opening_hours` (schema.org strings, as the directory publishes them — the
 renderer formats them and marks the days not listed as closed),
 `listed_address` (the merchant's own door, shown only when it isn't the
@@ -176,7 +178,8 @@ merchant trades from — only where a city record ties the two together) and
 
 - **The panel's "Last updated" date is that source's `retrieved`.** Hours
   drift within days, so the date is on the panel as well as in the footer,
-  and a refresh that re-reads the directory updates both by changing one field.
+  and a refresh that re-reads the directory updates both by changing one
+  field. It dates the hours, so an entry with none omits it.
 - **A referral offer belongs to the source, not the entry.** The renderer's
   `REFERRALS` table, keyed by source id, is the only place an offer lives; an
   entry never carries a link of its own, so a merchant from a directory with no

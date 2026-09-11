@@ -2138,13 +2138,26 @@ def residents_panel_html(rec: dict, indent: str) -> str:
 # cites. The offer is the source's, not the merchant's: an entry shows it only
 # when the source it came from is listed here, so a merchant added later from a
 # directory with no referral programme never inherits one. Bites' link opens
-# the app, not the merchant's menu — there is no per-merchant deep link — so the
-# line under the button says so rather than implying one.
+# the app, not the merchant's menu — there is no per-merchant deep link — so its
+# `note` says so rather than implying one. A row without a `note` prints none: a
+# Momence referral is per host, so each studio is its own source id and its link
+# opens that studio's own sign-up, which the button already says.
 REFERRALS = {
     "bites": {
         "url": "https://withbites.com/invite/5570dec6-e5a7-49f3-9d2c-fa4e12788c9d",
         "offer": "Get $5 off your first Bites order",
         "app": "Bites",
+        "note": "Referral link. It opens Bites, where you can search for {which}.",
+    },
+    "momence-folk-yoga": {
+        "url": "https://momence.com/sign-up/member?hostId=35337&ref=f11db7945aa1e9ae718b1e8e6fa2c3f6",
+        "offer": "Get $10 credit at Folk Yoga",
+        "app": "Momence",
+    },
+    "momence-haum-studios": {
+        "url": "https://momence.com/sign-up/member?hostId=5610&ref=1ffe67934a48391e4d94df8104c216fa",
+        "offer": "Get a free credit at HAUM Studios",
+        "app": "Momence",
     },
 }
 DAY_ABBR = ("Mo", "Tu", "We", "Th", "Fr", "Sa", "Su")
@@ -2221,8 +2234,9 @@ def occupant_panel_html(rec: dict, indent: str) -> str:
     One panel per building, not per merchant: a shared kitchen lists three
     brands at one door, and three panels would repeat the same offer three
     times. Each merchant is a name, its cuisines, and its hours; the panel
-    closes with the date the listing was read, since hours drift within days,
-    and with the referral offer when the source has one.
+    closes with the date the listing was read — but only where it published
+    hours, since that date is theirs and hours drift within days — and with
+    the referral offer when the source has one.
     """
     rows = [o for o in (rec.get("occupants") or []) if o.get("name")]
     if not rows:
@@ -2245,13 +2259,17 @@ def occupant_panel_html(rec: dict, indent: str) -> str:
             specs.append(("ic-home", "Unit", esc(o["unit"])))
         # Each shift is its own span so a narrow column breaks a split day
         # between its shifts, never inside "11:30 am–3 pm".
+        hours = hours_rows(o.get("opening_hours"))
         specs += [("ic-clock", k, ", ".join(f"<span>{esc(s)}</span>" for s in v))
-                  for k, v in hours_rows(o.get("opening_hours"))]
+                  for k, v in hours]
         body = "".join(
             f'{indent}      <div class="spec"><span class="ic {i}"></span>'
             f'<span class="spec-k">{esc(k)}</span>'
             f'<span class="spec-v">{v}</span></div>\n' for i, k, v in specs)
-        kinds = " · ".join(o.get("cuisines") or [])
+        # What the business is, on the muted line under its name. `kinds` is
+        # the general key — a yoga studio is not a cuisine — and `cuisines` is
+        # what the food directories write, kept as the fallback.
+        kinds = " · ".join(o.get("kinds") or o.get("cuisines") or [])
         blocks.append(
             f'{indent}  <div class="occupant">\n'
             f'{indent}    <h3>{esc(o["name"])}</h3>\n'
@@ -2259,7 +2277,10 @@ def occupant_panel_html(rec: dict, indent: str) -> str:
             + (f'{indent}    <dl class="speclist">\n{body}{indent}    </dl>\n' if body else "")
             + f'{indent}  </div>\n')
         src = sources.get(o.get("source")) or {}
-        if src.get("retrieved"):
+        # The date is the hours' — it is on the panel because hours drift. An
+        # entry with none omits it: "Last updated" over a name and an address
+        # would read as a claim about the tenancy, which it is not.
+        if src.get("retrieved") and hours:
             dates.add(src["retrieved"])
         if o.get("source") in REFERRALS:
             offers.setdefault(o["source"], []).append(o)
@@ -2271,11 +2292,12 @@ def occupant_panel_html(rec: dict, indent: str) -> str:
     for sid, listed in offers.items():
         ref = REFERRALS[sid]
         which = "this restaurant" if len(listed) == 1 else "these restaurants"
+        note = ref.get("note", "").format(which=which)
         tail += (f'{indent}  <p class="occupant-offer">'
                  f'<a href="{esca(ref["url"])}" rel="sponsored noopener">'
-                 f'{esc(ref["offer"])}</a>\n'
-                 f'{indent}  <small>Referral link. It opens {esc(ref["app"])}, '
-                 f'where you can search for {which}.</small></p>\n')
+                 f'{esc(ref["offer"])}</a>'
+                 + (f'\n{indent}  <small>{esc(note)}</small>' if note else "")
+                 + '</p>\n')
     return (f'{indent}<section class="panel panel-occupant">\n'
             f'{indent}  <p class="occupant-kind">{kind}</p>\n'
             + "".join(blocks) + tail

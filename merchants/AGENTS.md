@@ -19,6 +19,7 @@ only place an offer lives.
 | id | Directory | Read from | Referral | Files |
 |---|---|---|---|---|
 | `bites` | Bites, merchant directory | `https://withbites.com/merchants` — the page's schema.org `ItemList`, every Bites merchant in the country, one `Restaurant` each | $5 off a first order; the link opens the app, not the merchant (no per-merchant deep link exists) | `bites/<date>.json` |
+| `momence` | Momence, class-booking hosts | Momence's host record (`https://momence.com/_api/primary/plugin/hosts/<id>`) confirms each host's name but lists no locations, so the addresses come from each studio's own location pages | Per host: one `REFERRALS` row per studio, keyed `momence-<studio>`, which is also the page's source id; the link opens that studio's sign-up | `momence/<date>.json` |
 
 Directories still to add are the GitHub issues labelled `monetization`.
 
@@ -32,10 +33,12 @@ Directories still to add are the GitHub issues labelled `monetization`.
   merchants between two fetches seconds apart — it is not a fact and never
   reaches a page. Ratings and menus describe the merchant rather than the
   building and are left out too.
-- **The panel says when the listing was read.** Hours drift within days (9 of
-  118 Bites merchants changed theirs in five days of September 2026), so the
-  panel prints "Last updated" from the source's `retrieved`, and a refresh
-  changes that one field.
+- **The panel says when the listing's hours were read.** Hours drift within
+  days (9 of 118 Bites merchants changed theirs in five days of September
+  2026), so the panel prints "Last updated" from the source's `retrieved`,
+  and a refresh changes that one field. The date belongs to the hours: an
+  entry that publishes none — a yoga studio listing only a class schedule —
+  omits the line rather than appearing to date the tenancy.
 - **A referral offer is the source's, not the merchant's.** Never put a link
   in an `occupants` entry. A directory gets an offer by a row in `REFERRALS`,
   added only when a human has supplied the link, and a merchant from any other
@@ -84,8 +87,9 @@ directory, so `research/tools/resolve_eas.py` reads it unchanged: one entry per
 San Francisco listing, `address_as_written` verbatim, `street_number` /
 `street_name` / `street_type` parsed with the resolver's own
 `parse_address` (a "1/2" or a trailing suite letter dropped first), and
-`extra` holding what the page takes — `name`, `name_as_listed`, `cuisines`,
-`opening_hours`, `geo`, and the listing's own locality and postal code.
+`extra` holding what the page takes — `name`, `name_as_listed`, `kinds` or
+`cuisines`, `opening_hours`, `geo`, and the listing's own locality and postal
+code.
 `name` repairs the directory's title-casing (Bites writes "18Th St", "Kfc",
 "Ihop"); `name_as_listed` keeps its spelling. `publish` records which page
 each entry went on, or why it didn't.
