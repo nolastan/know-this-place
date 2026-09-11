@@ -1539,6 +1539,10 @@ def recorded_addresses(f: dict, city: City = None) -> list:
 CODE_WORD = {code: word for word, code in ORDINAL_WORD.items()
              if "-" not in word and len(code) == 4}
 
+# EAS drops the apostrophe ("OFARRELL"); a copy of scripts/seed_pages.py's table.
+APOSTROPHE_NAME = {"OFARRELL": "O'Farrell", "OREILLY": "O'Reilly",
+                   "OSHAUGHNESSY": "O'Shaughnessy"}
+
 
 def street_display(name: str, stype: str) -> str:
     """"GRANT", "AVE" -> "Grant Avenue". Matches scripts/seed_pages.py."""
@@ -1548,6 +1552,8 @@ def street_display(name: str, stype: str) -> str:
         token = unpad(token)
         if re.fullmatch(r"\d+(ST|ND|RD|TH)", token.upper()):
             parts.append(token.lower())
+        elif token.upper() in APOSTROPHE_NAME:
+            parts.append(APOSTROPHE_NAME[token.upper()])
         elif token.lower() == "the":
             parts.append("The")
         else:

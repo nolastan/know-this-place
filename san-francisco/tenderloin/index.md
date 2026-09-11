@@ -22,7 +22,7 @@ The flat blocks west of Union Square, in the city's Tenderloin analysis neighbor
 - [Mason Street](mason-street/) — 2 buildings, built 2009.
 - [Mcallister Street](mcallister-street/) — 2 buildings, built 1906–1910; 1 in the Uptown Tenderloin Historic District.
 - [Meacham Place](meacham-place/) — 1 building, built 1900; 1 in the Lower Nob Hill Apartment Hotel Historic District.
-- [Ofarrell Street](ofarrell-street/) — 2 buildings, built 1907–1924; 1 in the Uptown Tenderloin Historic District.
+- [O'Farrell Street](ofarrell-street/) — 2 buildings, built 1907–1924; 1 in the Uptown Tenderloin Historic District.
 - [Polk Street](polk-street/) — 1 building, built 1912.
 - [Post Street](post-street/) — 6 buildings, built 1917–1920; 2 in the Lower Nob Hill Apartment Hotel Historic District.
 - [Taylor Street](taylor-street/) — 1 building, built 1910; 1 in the Uptown Tenderloin Historic District.
