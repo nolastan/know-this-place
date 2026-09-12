@@ -2191,12 +2191,12 @@ REFERRALS = {
         "app": "FITNESS SF",
     },
     "hoteltonight": {
+        # The issue said "Give $25 / Get $25"; the invite page itself says up
+        # to $50 back on a first booking, and the page is what the reader gets.
         "url": "https://www.hoteltonight.com/invite/SROSENTHAL7",
-        "offer": "Get $25 off at HotelTonight",
+        "offer": "Get up to $50 back on your first HotelTonight booking",
         "app": "HotelTonight",
-        "note": ("Referral link. It opens HotelTonight's invite, not this "
-                 "hotel's own listing, and HotelTonight's inventory changes "
-                 "daily."),
+        "note": "Referral link. Sign up and then search for this hotel.",
     },
     "insomniacookies": {
         "url": "https://insomniacookies.com/",
@@ -2331,7 +2331,7 @@ def occupant_panel_html(rec: dict, indent: str) -> str:
     # street, does — it says which door.
     title = page_title(rec)
     here = {title, re.sub(r"^(\d+\w*)–\S+", r"\1", title)}
-    blocks, dates, offers = [], set(), {}
+    heads, dates, offers = [], set(), {}
     for o in rows:
         specs = []
         listed = o.get("listed_address")
@@ -2354,12 +2354,11 @@ def occupant_panel_html(rec: dict, indent: str) -> str:
         # the general key — a yoga studio is not a cuisine — and `cuisines` is
         # what the food directories write, kept as the fallback.
         kinds = " · ".join(o.get("kinds") or o.get("cuisines") or [])
-        blocks.append(
+        heads.append(
             f'{indent}  <div class="occupant">\n'
             f'{indent}    <h3>{esc(o["name"])}</h3>\n'
             + (f'{indent}    <p class="occupant-kinds">{esc(kinds)}</p>\n' if kinds else "")
-            + (f'{indent}    <dl class="speclist">\n{body}{indent}    </dl>\n' if body else "")
-            + f'{indent}  </div>\n')
+            + (f'{indent}    <dl class="speclist">\n{body}{indent}    </dl>\n' if body else ""))
         src = sources.get(o.get("source")) or {}
         # The date is the hours' — it is on the panel because hours drift. An
         # entry with none omits it: "Last updated" over a name and an address
@@ -2372,43 +2371,73 @@ def occupant_panel_html(rec: dict, indent: str) -> str:
             if sid in REFERRALS:
                 offers.setdefault(sid, []).append(o)
     kind = "Current occupant" if len(rows) == 1 else "Current occupants"
+    # An offer only one of the businesses has earned belongs under that
+    # business, not at the foot of the panel. Two merchants over one stack of
+    # buttons say nothing about which is whose, and a reader skimming takes the
+    # name directly above a button to be its owner — which put Ritual's
+    # gelateria offer under Hotel Triton on the 334–352 Grant Avenue page. An
+    # offer several of them share still closes the panel, because a shared
+    # kitchen trading as three brands must not print one directory's button
+    # three times.
+    # One business on the panel disambiguates itself, and moving its offer up
+    # into the group would only push "Last updated" — which dates the hours —
+    # below the button, where it would read as the offer's date instead.
+    solo = ({sid for sid, listed in offers.items() if len(listed) == 1}
+            if len(rows) > 1 else set())
+    blocks = []
+    for o, head in zip(rows, heads):
+        mine = [sid for sid in [o.get("source"), *(o.get("also_listed_by") or [])]
+                if sid in solo]
+        blocks.append(head
+                      + "".join(offer_html(sid, offers[sid], indent + "    ")
+                                for sid in mine)
+                      + f'{indent}  </div>\n')
     tail = ""
     if dates:
         tail += (f'{indent}  <p class="occupant-updated">Last updated '
                  f'{esc(long_date(max(dates)))}</p>\n')
     for sid, listed in offers.items():
-        ref = REFERRALS[sid]
-        which = "this restaurant" if len(listed) == 1 else "these restaurants"
-        note = ref.get("note", "").format(which=which)
-        # An offer claimed with a code inverts the block. It is the code that
-        # earns the reader the offer, not the link, so the code takes the
-        # accent and the offer is stated inside its box, over it; the merchant's
-        # own address drops to an ordinary link beneath, labelled with the host
-        # so it says where it goes. The code is plain text in the HTML —
-        # <ktp-copy> only adds the click — because the reader who has no JS is
-        # the one typing it in.
-        code = ref.get("code")
-        if code:
-            host = urllib.parse.urlsplit(ref["url"]).netloc
-            host = host[4:] if host.startswith("www.") else host
-            tail += (f'{indent}  <p class="occupant-offer occupant-offer-code">\n'
-                     f'{indent}    <ktp-copy class="offer-code">'
-                     f'<span class="offer-code-claim">{esc(ref["offer"])}</span>'
-                     f'<code>{esc(code)}</code></ktp-copy>\n'
-                     f'{indent}    <a href="{esca(ref["url"])}" rel="sponsored noopener">'
-                     f'<span class="ic ic-link"></span>{esc(host)}</a>'
-                     + (f'\n{indent}    <small>{esc(note)}</small>' if note else "")
-                     + f'\n{indent}  </p>\n')
-        else:
-            tail += (f'{indent}  <p class="occupant-offer">'
-                     f'<a href="{esca(ref["url"])}" rel="sponsored noopener">'
-                     f'{esc(ref["offer"])}</a>'
-                     + (f'\n{indent}  <small>{esc(note)}</small>' if note else "")
-                     + '</p>\n')
+        if sid not in solo:
+            tail += offer_html(sid, listed, indent + "  ")
     return (f'{indent}<section class="panel panel-occupant">\n'
             f'{indent}  <p class="occupant-kind">{kind}</p>\n'
             + "".join(blocks) + tail
             + f'{indent}</section>\n')
+
+
+def offer_html(sid: str, listed: list, pad: str) -> str:
+    """One directory's referral block, at `pad`'s indent.
+
+    Rendered inside the `.occupant` group when the directory lists only that
+    one business, and at the foot of the panel when it lists several.
+    """
+    ref = REFERRALS[sid]
+    which = "this restaurant" if len(listed) == 1 else "these restaurants"
+    note = ref.get("note", "").format(which=which)
+    # An offer claimed with a code inverts the block. It is the code that
+    # earns the reader the offer, not the link, so the code takes the
+    # accent and the offer is stated inside its box, over it; the merchant's
+    # own address drops to an ordinary link beneath, labelled with the host
+    # so it says where it goes. The code is plain text in the HTML —
+    # <ktp-copy> only adds the click — because the reader who has no JS is
+    # the one typing it in.
+    code = ref.get("code")
+    if code:
+        host = urllib.parse.urlsplit(ref["url"]).netloc
+        host = host[4:] if host.startswith("www.") else host
+        return (f'{pad}<p class="occupant-offer occupant-offer-code">\n'
+                f'{pad}  <ktp-copy class="offer-code">'
+                f'<span class="offer-code-claim">{esc(ref["offer"])}</span>'
+                f'<code>{esc(code)}</code></ktp-copy>\n'
+                f'{pad}  <a href="{esca(ref["url"])}" rel="sponsored noopener">'
+                f'<span class="ic ic-link"></span>{esc(host)}</a>'
+                + (f'\n{pad}  <small>{esc(note)}</small>' if note else "")
+                + f'\n{pad}</p>\n')
+    return (f'{pad}<p class="occupant-offer">'
+            f'<a href="{esca(ref["url"])}" rel="sponsored noopener">'
+            f'{esc(ref["offer"])}</a>'
+            + (f'\n{pad}<small>{esc(note)}</small>' if note else "")
+            + '</p>\n')
 
 
 def glance_panel_html(rec: dict, indent: str) -> str:
