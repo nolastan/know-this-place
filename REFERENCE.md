@@ -180,7 +180,11 @@ ids that list the same business, each also in `sources`.
 - **The panel's "Last updated" date is that source's `retrieved`.** Hours
   drift within days, so the date is on the panel as well as in the footer,
   and a refresh that re-reads the directory updates both by changing one
-  field. It dates the hours, so an entry with none omits it.
+  field. It dates the hours, so an entry with none omits it — and on a panel
+  of several it sits with the entry whose hours it dates, unless every entry
+  shares one date, in which case the single line closes the panel. Likewise an
+  offer only one entry has earned renders under that entry. See
+  [shared/BLOCKS.md → Current occupant](shared/BLOCKS.md#current-occupant--panel-occupant).
 - **A referral offer belongs to the source, not the entry.** The renderer's
   `REFERRALS` table, keyed by source id, is the only place an offer lives; an
   entry never carries a link of its own, so a merchant from a directory with no

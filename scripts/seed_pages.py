@@ -2331,7 +2331,7 @@ def occupant_panel_html(rec: dict, indent: str) -> str:
     # street, does — it says which door.
     title = page_title(rec)
     here = {title, re.sub(r"^(\d+\w*)–\S+", r"\1", title)}
-    heads, dates, offers = [], set(), {}
+    heads, occ_dates, offers = [], [], {}
     for o in rows:
         specs = []
         listed = o.get("listed_address")
@@ -2363,8 +2363,7 @@ def occupant_panel_html(rec: dict, indent: str) -> str:
         # The date is the hours' — it is on the panel because hours drift. An
         # entry with none omits it: "Last updated" over a name and an address
         # would read as a claim about the tenancy, which it is not.
-        if src.get("retrieved") and hours:
-            dates.add(src["retrieved"])
+        occ_dates.append(src["retrieved"] if (src.get("retrieved") and hours) else None)
         # An offer belongs to a directory that lists the business, and a
         # business listed by two directories has earned both buttons.
         for sid in [o.get("source"), *(o.get("also_listed_by") or [])]:
@@ -2384,18 +2383,31 @@ def occupant_panel_html(rec: dict, indent: str) -> str:
     # below the button, where it would read as the offer's date instead.
     solo = ({sid for sid, listed in offers.items() if len(listed) == 1}
             if len(rows) > 1 else set())
+    # The date belongs to the hours it dates, so where it does not cover the
+    # whole panel it goes inside the group whose hours it describes. One
+    # "Last updated" closing a panel of two reads as the panel's own, and on
+    # the 334–352 Grant Avenue page it dated Amorino Gelato's hours while
+    # sitting under Hotel Triton, which publishes none at all. A date every
+    # business on the panel shares still closes it, so a shared kitchen's
+    # three brands do not print one read date three times.
+    dated = [d for d in occ_dates if d]
+    per_group = bool(dated) and len(rows) > 1 and (
+        len(dated) != len(rows) or len(set(dated)) > 1)
     blocks = []
-    for o, head in zip(rows, heads):
+    for o, head, when in zip(rows, heads, occ_dates):
         mine = [sid for sid in [o.get("source"), *(o.get("also_listed_by") or [])]
                 if sid in solo]
         blocks.append(head
+                      + (f'{indent}    <p class="occupant-updated">Last updated '
+                         f'{esc(long_date(when))}</p>\n'
+                         if per_group and when else "")
                       + "".join(offer_html(sid, offers[sid], indent + "    ")
                                 for sid in mine)
                       + f'{indent}  </div>\n')
     tail = ""
-    if dates:
+    if dated and not per_group:
         tail += (f'{indent}  <p class="occupant-updated">Last updated '
-                 f'{esc(long_date(max(dates)))}</p>\n')
+                 f'{esc(long_date(max(dated)))}</p>\n')
     for sid, listed in offers.items():
         if sid not in solo:
             tail += offer_html(sid, listed, indent + "  ")
