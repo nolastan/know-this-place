@@ -2143,11 +2143,31 @@ def residents_panel_html(rec: dict, indent: str) -> str:
 # Momence referral is per host, so each studio is its own source id and its link
 # opens that studio's own sign-up, which the button already says.
 REFERRALS = {
+    "away": {
+        "url": "https://referrals.awaytravel.com/away482479",
+        "offer": "Get $40 off at Away",
+        "app": "Away",
+    },
     "bites": {
         "url": "https://withbites.com/invite/5570dec6-e5a7-49f3-9d2c-fa4e12788c9d",
         "offer": "Get $5 off your first Bites order",
         "app": "Bites",
         "note": "Referral link. It opens Bites, where you can search for {which}.",
+    },
+    "bonobos": {
+        "url": "https://fbuy.io/bonobos/stanford",
+        "offer": "Get 25% off at Bonobos",
+        "app": "Bonobos",
+    },
+    "brooklinen": {
+        "url": "https://rwrd.io/k7ow0kp?c",
+        "offer": "Get $25 off at Brooklinen",
+        "app": "Brooklinen",
+    },
+    "casper": {
+        "url": "https://rwrd.io/ref_YUMLWET?c",
+        "offer": "Get 30% off at Casper",
+        "app": "Casper",
     },
     "fitnesssf": {
         "url": "https://join.fitnesssf.com/?m=0bcaa244-52f7-472f-806d-0e517436edb0",
@@ -2170,6 +2190,18 @@ REFERRALS = {
         "app": "Ritual",
         "note": ("Referral link. It opens Ritual's sign-up page, where you can search "
                  "for {which}. $5 is applied on signup and $5 after your first order."),
+    },
+    "vuori": {
+        "url": ("https://vuoriclothing.com/?utm_medium=EMAIL&utm_campaign=referral_program"
+                "&utm_source=loyalty&sref_id=1KISMQ4"
+                "&cref_id=7d34f858-f559-4074-be75-c6e17634c03f"),
+        "offer": "Get 20% off at Vuori",
+        "app": "Vuori",
+    },
+    "wework": {
+        "url": "https://refer.wework.com/i/nolastan",
+        "offer": "Get a month free on a 12-month WeWork membership",
+        "app": "WeWork",
     },
 }
 DAY_ABBR = ("Mo", "Tu", "We", "Th", "Fr", "Sa", "Su")

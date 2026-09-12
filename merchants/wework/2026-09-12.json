@@ -1,0 +1,313 @@
+{
+  "source_id": "wework",
+  "batch": "2026-09-12",
+  "read_on": "2026-09-12",
+  "notes": "WeWork's seven San Francisco workspaces, named in issue #323, read from each building page on 2026-09-12. https://www.wework.com/l/coworking-space/san-francisco--sf-bay-area--CA names seven locations and links a building page for each; the building page carries the address in a schema.org PostalAddress. Two reads on 2026-09-12 agreed on every address and every hours block. The list names three of the seven by their building's name rather than a number (Salesforce Tower, Two Embarcadero Center, 44 Montgomery); the street address is the building page's own. **No hours are published**: what each page gives is 'Staffed hours', Mon-Fri 8am-5pm at all seven, which is when the front desk is manned and not when a member can get in — publishing it as `opening_hours` would have the panel print every WeWork closed at the weekend. It is recorded in `extra` and stays off the page, so the entries carry no 'Last updated' line. The issue's JSON also gives a rating and a starting price per location; neither is a fact about the building and both are left out, as Bites' `priceRange` was. One link covers all seven — refer.wework.com/i/nolastan, which opens WeWork's own referral page offering 'One month free on a 12-month commitment', the issue's wording confirmed on the page itself — so there is one REFERRALS row, `wework`, and one source id for all seven pages.",
+  "coverage": {
+    "unit": "workspace locations",
+    "examined": 7,
+    "mentions": 7,
+    "remaining": "None; every San Francisco location WeWork lists is here."
+  },
+  "findings": [
+    {
+      "id": "2026-09-12-0001",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2 Embarcadero Center",
+      "street_number": "2",
+      "street_name": "EMBARCADERO CENTER",
+      "street_type": null,
+      "description": "WeWork lists a workspace at this address.",
+      "extra": {
+        "name": "WeWork",
+        "name_as_listed": "Two Embarcadero Center",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94111",
+        "kinds": [
+          "Coworking",
+          "Office space"
+        ],
+        "street_address_as_listed": "2 Embarcadero Center 8th Floor San Francisco, CA 94111",
+        "staffed_hours_as_listed": "Mon-Fri 8:00am - 5:00pm; Saturday and Sunday closed — staffed hours, not the workspace's own: a member's access is not what the page states",
+        "floor_as_listed": "8th Floor"
+      },
+      "citation": {
+        "label": "WeWork, Two Embarcadero Center building page",
+        "url": "https://www.wework.com/buildings/two-embarcadero-center--sf-bay-area--CA",
+        "locator": "the page's schema.org PostalAddress and its staffed-hours block"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0231023",
+        "path": "/san-francisco/financial-district/embarcadero-center/2/",
+        "by_hand": true,
+        "method": "By hand: sf-eas-addresses has no street named EMBARCADERO CENTER at all — the registry spells the waterfront street THE EMBARCADERO and holds no 2 THE EMBARCADERO either, filing parcel 0231023 under 201 CLAY ST, which sf-parcels confirms today: blklot 0231023 is active with mapblklot 0231023, 201–201 CLAY, in Financial District/South Beach — one parcel, not a condominium stack. The 2025 roll names it '0000 0002 THE EMBARCADERO', commercial office, built 1974, 35 stories. The FITNESS SF run of 2026-09-11 resolved the same address to the same parcel and the site's page for it is /san-francisco/financial-district/embarcadero-center/2/, so the WeWork workspace goes there.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/330",
+        "note": "An `occupants` entry on /san-francisco/financial-district/embarcadero-center/2/."
+      }
+    },
+    {
+      "id": "2026-09-12-0002",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "600 California Street",
+      "street_number": "600",
+      "street_name": "CALIFORNIA",
+      "street_type": "ST",
+      "description": "WeWork lists a workspace at this address.",
+      "extra": {
+        "name": "WeWork",
+        "name_as_listed": "600 California St",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94108",
+        "kinds": [
+          "Coworking",
+          "Office space"
+        ],
+        "street_address_as_listed": "600 California Street 11th Floor San Francisco, CA 94108",
+        "staffed_hours_as_listed": "Mon-Fri 8:00am - 5:00pm; Saturday and Sunday closed — staffed hours, not the workspace's own: a member's access is not what the page states",
+        "floor_as_listed": "11th Floor"
+      },
+      "citation": {
+        "label": "WeWork, 600 California St building page",
+        "url": "https://www.wework.com/buildings/600-california-st--sf-bay-area--CA",
+        "locator": "the page's schema.org PostalAddress and its staffed-hours block"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0241027",
+        "path": "/san-francisco/financial-district/california-street/600/",
+        "eas_address": "600 CALIFORNIA ST",
+        "method": "EAS exact match on 600 CALIFORNIA ST → parcel 0241027; sf-parcels has blklot 0241027 active, 600–628 CALIFORNIA; the 2025 roll records it as commercial office, built 1991. EAS puts 600, 628 CALIFORNIA ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 600.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/330",
+        "note": "An `occupants` entry on /san-francisco/financial-district/california-street/600/."
+      }
+    },
+    {
+      "id": "2026-09-12-0003",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "415 Mission Street",
+      "street_number": "415",
+      "street_name": "MISSION",
+      "street_type": "ST",
+      "description": "WeWork lists a workspace at this address.",
+      "extra": {
+        "name": "WeWork",
+        "name_as_listed": "Salesforce Tower",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94105",
+        "kinds": [
+          "Coworking",
+          "Office space"
+        ],
+        "street_address_as_listed": "415 Mission Street San Francisco, CA 94105",
+        "staffed_hours_as_listed": "Mon-Fri 8:00am - 5:00pm; Saturday and Sunday closed — staffed hours, not the workspace's own: a member's access is not what the page states"
+      },
+      "citation": {
+        "label": "WeWork, Salesforce Tower building page",
+        "url": "https://www.wework.com/buildings/salesforce-tower--sf-bay-area--CA",
+        "locator": "the page's schema.org PostalAddress and its staffed-hours block"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3720009",
+        "path": "/san-francisco/east-cut/mission-street/415/",
+        "eas_address": "415 MISSION ST",
+        "method": "EAS exact match on 415 MISSION ST → parcel 3720009; sf-parcels has blklot 3720009 active, 101–101 01ST; the 2025 roll records it as commercial office, built 2018.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/330",
+        "note": "An `occupants` entry on /san-francisco/east-cut/mission-street/415/."
+      }
+    },
+    {
+      "id": "2026-09-12-0004",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "201 Spear St",
+      "street_number": "201",
+      "street_name": "SPEAR",
+      "street_type": "ST",
+      "description": "WeWork lists a workspace at this address.",
+      "extra": {
+        "name": "WeWork",
+        "name_as_listed": "201 Spear St",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94105",
+        "kinds": [
+          "Coworking",
+          "Office space"
+        ],
+        "street_address_as_listed": "201 Spear St San Francisco, CA 94105",
+        "staffed_hours_as_listed": "Mon-Fri 8:00am - 5:00pm; Saturday and Sunday closed — staffed hours, not the workspace's own: a member's access is not what the page states"
+      },
+      "citation": {
+        "label": "WeWork, 201 Spear St building page",
+        "url": "https://www.wework.com/buildings/201-spear-st--sf-bay-area--CA",
+        "locator": "the page's schema.org PostalAddress and its staffed-hours block"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3741032",
+        "path": "/san-francisco/south-beach/spear-street/201/",
+        "eas_address": "201 SPEAR ST",
+        "method": "EAS exact match on 201 SPEAR ST → parcel 3741032; sf-parcels has blklot 3741032 active, 201–201 SPEAR; the 2025 roll records it as commercial office, built 1986.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/330",
+        "note": "An `occupants` entry on /san-francisco/south-beach/spear-street/201/."
+      }
+    },
+    {
+      "id": "2026-09-12-0005",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "44 Montgomery St",
+      "street_number": "44",
+      "street_name": "MONTGOMERY",
+      "street_type": "ST",
+      "description": "WeWork lists a workspace at this address.",
+      "extra": {
+        "name": "WeWork",
+        "name_as_listed": "44 Montgomery",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94104",
+        "kinds": [
+          "Coworking",
+          "Office space"
+        ],
+        "street_address_as_listed": "44 Montgomery St San Francisco, CA 94104",
+        "staffed_hours_as_listed": "Mon-Fri 8:00am - 5:00pm; Saturday and Sunday closed — staffed hours, not the workspace's own: a member's access is not what the page states"
+      },
+      "citation": {
+        "label": "WeWork, 44 Montgomery building page",
+        "url": "https://www.wework.com/buildings/44-montgomery--sf-bay-area--CA",
+        "locator": "the page's schema.org PostalAddress and its staffed-hours block"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0291012",
+        "path": "/san-francisco/financial-district/montgomery-street/44/",
+        "eas_address": "44 MONTGOMERY ST",
+        "method": "EAS exact match on 44 MONTGOMERY ST → parcel 0291012; sf-parcels has blklot 0291012 active, 44–44 MONTGOMERY; the 2025 roll records it as commercial office, built 1966.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/330",
+        "note": "An `occupants` entry on /san-francisco/financial-district/montgomery-street/44/."
+      }
+    },
+    {
+      "id": "2026-09-12-0006",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "650 California St.",
+      "street_number": "650",
+      "street_name": "CALIFORNIA",
+      "street_type": "ST",
+      "description": "WeWork lists a workspace at this address.",
+      "extra": {
+        "name": "WeWork",
+        "name_as_listed": "650 California St",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94108",
+        "kinds": [
+          "Coworking",
+          "Office space"
+        ],
+        "street_address_as_listed": "650 California St. Floor 7 San Francisco, CA 94108",
+        "staffed_hours_as_listed": "Mon-Fri 8:00am - 5:00pm; Saturday and Sunday closed — staffed hours, not the workspace's own: a member's access is not what the page states",
+        "floor_as_listed": "Floor 7"
+      },
+      "citation": {
+        "label": "WeWork, 650 California St building page",
+        "url": "https://www.wework.com/buildings/650-california-st--sf-bay-area--CA",
+        "locator": "the page's schema.org PostalAddress and its staffed-hours block"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0241025",
+        "path": "/san-francisco/financial-district/california-street/636/",
+        "eas_address": "636 CALIFORNIA ST",
+        "method": "EAS exact match on 650 CALIFORNIA ST → parcel 0241025; sf-parcels has blklot 0241025 active, 636–650 CALIFORNIA; the 2025 roll records it as commercial office, built 1963. EAS puts 636, 650 CALIFORNIA ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 636.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/330",
+        "note": "An `occupants` entry on /san-francisco/financial-district/california-street/636/."
+      }
+    },
+    {
+      "id": "2026-09-12-0007",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "535 Mission St",
+      "street_number": "535",
+      "street_name": "MISSION",
+      "street_type": "ST",
+      "description": "WeWork lists a workspace at this address.",
+      "extra": {
+        "name": "WeWork",
+        "name_as_listed": "535 Mission St",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94105",
+        "kinds": [
+          "Coworking",
+          "Office space"
+        ],
+        "street_address_as_listed": "535 Mission St 14th floor San Francisco, CA 94105",
+        "staffed_hours_as_listed": "Mon-Fri 8:00am - 5:00pm; Saturday and Sunday closed — staffed hours, not the workspace's own: a member's access is not what the page states",
+        "floor_as_listed": "14th floor"
+      },
+      "citation": {
+        "label": "WeWork, 535 Mission St building page",
+        "url": "https://www.wework.com/buildings/535-mission-st--sf-bay-area--CA",
+        "locator": "the page's schema.org PostalAddress and its staffed-hours block"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3721122",
+        "path": "/san-francisco/east-cut/mission-street/535/",
+        "eas_address": "535 MISSION ST",
+        "method": "EAS exact match on 535 MISSION ST → parcel 3721122; sf-parcels has blklot 3721122 active, 535–535 MISSION; the 2025 roll records it as commercial office, built 2014.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/330",
+        "note": "An `occupants` entry on /san-francisco/east-cut/mission-street/535/."
+      }
+    }
+  ]
+}

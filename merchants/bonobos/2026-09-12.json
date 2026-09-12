@@ -1,0 +1,106 @@
+{
+  "source_id": "bonobos",
+  "batch": "2026-09-12",
+  "read_on": "2026-09-12",
+  "notes": "Bonobos' two San Francisco Guideshops, named in issue #318, read from each store page on 2026-09-12. https://bonobos.com/locations links 47 store pages and two of them are in the city; each store page carries no schema.org LocalBusiness block, so the address and hours come from the Contentful blocks the page server-renders into its __NEXT_DATA__, which is what the visible page prints. Four fetches of both pages on 2026-09-11 and 2026-09-12 were identical. `name` is the brand, `name_as_listed` the page's own heading for the shop. A Guideshop is a fitting room rather than a stockroom — you try on and the order ships — but it is the business trading from the door, so it goes on the page as one. The issue gives the referral link and '25% off'; neither the link's landing page nor a public Bonobos page states the friend's discount, so the offer wording is the issue's, which is where a referral offer has to come from: only a person can join the programme. One link covers both shops — it opens Bonobos' own refer-a-friend page — so there is one REFERRALS row, `bonobos`, and one source id for both pages.",
+  "coverage": {
+    "unit": "store locations",
+    "examined": 47,
+    "mentions": 2,
+    "remaining": "None; both San Francisco Guideshops are here. The other 45 stores are outside the city."
+  },
+  "findings": [
+    {
+      "id": "2026-09-12-0001",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "55 Grant Avenue, Floor 2",
+      "street_number": "55",
+      "street_name": "GRANT",
+      "street_type": "AVE",
+      "description": "Bonobos lists a Guideshop at this address.",
+      "extra": {
+        "name": "Bonobos",
+        "name_as_listed": "Union Square, San Francisco",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94108",
+        "kinds": [
+          "Men's clothing"
+        ],
+        "opening_hours": [
+          "Mo,Tu,We,Th,Fr,Sa 11:00-19:00",
+          "Su 12:00-18:00"
+        ],
+        "floor_as_listed": "Floor 2"
+      },
+      "citation": {
+        "label": "Bonobos, Union Square, San Francisco store page",
+        "url": "https://bonobos.com/locations/s/union-square-san-francisco",
+        "locator": "the page's address and hours block"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0313003",
+        "path": "/san-francisco/financial-district/grant-avenue/51/",
+        "eas_address": "51 GRANT AVE",
+        "method": "EAS exact match on 55 GRANT AVE → parcel 0313003; sf-parcels has blklot 0313003 active, 51–55 GRANT; the 2025 roll records it as commercial retail, built 1909. EAS puts 51, 55 GRANT AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 51.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/330",
+        "note": "An `occupants` entry on /san-francisco/financial-district/grant-avenue/51/."
+      }
+    },
+    {
+      "id": "2026-09-12-0002",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1964 Union St.",
+      "street_number": "1964",
+      "street_name": "UNION",
+      "street_type": "ST",
+      "description": "Bonobos lists a Guideshop at this address.",
+      "extra": {
+        "name": "Bonobos",
+        "name_as_listed": "Cow Hollow, San Francisco",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94123",
+        "kinds": [
+          "Men's clothing"
+        ],
+        "opening_hours": [
+          "Mo,Tu,We,Th,Fr,Sa 11:00-19:00",
+          "Su 12:00-18:00"
+        ],
+        "geo": [
+          37.7978332,
+          -122.4316718
+        ]
+      },
+      "citation": {
+        "label": "Bonobos, Cow Hollow, San Francisco store page",
+        "url": "https://bonobos.com/locations/s/cow-hollow-san-francisco",
+        "locator": "the page's address and hours block"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0531011",
+        "path": "/san-francisco/marina/union-street/1964/",
+        "eas_address": "1964 UNION ST",
+        "method": "EAS exact match on 1964 UNION ST → parcel 0531011; sf-parcels has blklot 0531011 active, 1964–1966 UNION; the 2025 roll records it as multi-family residential, built 1924. EAS puts 1964, 1966 UNION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1964.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/330",
+        "note": "An `occupants` entry on /san-francisco/marina/union-street/1964/."
+      }
+    }
+  ]
+}
