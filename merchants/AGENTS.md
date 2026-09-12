@@ -25,6 +25,8 @@ lives.
 | `ritual` | Ritual, ordering app | `https://ritual.co/order?lat=&lon=` server-renders its nearby-merchant list into the page's `__NEXT_DATA__` — 36 listings at most, within 5 km, ranked by distance from the point — so a grid of points and a de-duplication by merchant id is what covers the city. Each listing's own page, `https://ritual.co/order<menuPath>`, carries the postal code, the weekly hours and the categories the list leaves out | $10 across the first orders; the link opens Ritual's sign-up page, not the merchant | `ritual/<date>.json` |
 
 Directories still to add are the GitHub issues labelled `monetization`.
+The "Add merchants" issue form asks for both halves below, so a ticket
+filed through it arrives workable.
 
 ## Before you start
 
