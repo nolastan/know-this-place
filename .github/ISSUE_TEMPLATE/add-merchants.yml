@@ -1,5 +1,5 @@
 name: Add merchants
-description: Put a directory's — or a chain's — San Francisco businesses on their buildings
+description: Put a business on its building's page — one shop, a chain, or a whole directory
 title: "Add "
 labels: ["monetization"]
 body:
@@ -7,20 +7,21 @@ body:
     attributes:
       value: |
         A building's page can name the business trading from it today, in a
-        "Current occupant" panel, with the directory's referral offer under it.
+        "Current occupant" panel, with its referral offer under it.
 
         A ticket is workable when it carries **both halves**: a referral link
-        with a real code in it, and a way to list the San Francisco locations.
-        With one half missing the issue gets labelled `needs-human` and stops
-        there — only a person can sign up for a referral programme, and a
-        guessed code publishes a dead link.
+        with a real code in it, and the San Francisco addresses — or a way to
+        list them. With one half missing the issue gets labelled `needs-human`
+        and stops there: only a person can sign up for a referral programme,
+        and a guessed code publishes a dead link.
   - type: input
     id: source
     attributes:
-      label: Who lists the businesses?
+      label: What are we adding?
       description: >-
-        The directory, ordering app, or chain whose locations these are.
-      placeholder: e.g. Bites, a merchant directory — or FITNESS SF, its own gyms
+        The name of the shop, chain, or directory whose San Francisco doors
+        these are. One shop is as workable as a hundred.
+      placeholder: e.g. Vuori — or Bites, a merchant directory
     validations:
       required: true
   - type: input
@@ -49,11 +50,11 @@ body:
     attributes:
       label: Is it one offer, or one per business?
       description: >-
-        One link covering everything listed (Bites, FITNESS SF), or a separate
-        link per merchant or host (Momence). This decides how the offer is
-        keyed, so it is worth getting right.
+        One link covering everything you are adding — a single shop, a chain
+        like FITNESS SF, a directory like Bites — or a separate link per
+        business, the way Momence works. This decides how the offer is keyed.
       options:
-        - One offer for everything listed
+        - One offer, covering everything added
         - One offer per business — a link each, listed below
         - Not sure
     validations:
@@ -73,20 +74,18 @@ body:
   - type: textarea
     id: listing
     attributes:
-      label: How can the San Francisco locations be listed?
+      label: Where are the San Francisco locations?
       description: >-
-        Whichever of these you have: an API or GraphQL endpoint (paste the URL
-        or query), a page carrying schema.org markup, or just the addresses
-        typed in. Hours and postal codes are worth having — the panel prints
-        the hours, and the postal code is what keeps South San Francisco off
-        the city's pages.
+        Whichever you have: the addresses typed in, an API or GraphQL endpoint
+        (paste the URL or query), or a page carrying schema.org markup. Hours
+        and postal codes are worth having — the panel prints the hours, and
+        the postal code is what keeps South San Francisco off the city's pages.
       placeholder: |
-        e.g. https://example.com/api/locations?city=san-francisco
+        e.g. 2301 Market Street, San Francisco, CA 94114 — Mon–Thu 5am–12am
 
-        or:
+        or, where there are many:
 
-        - 2301 Market Street, San Francisco, CA 94114 — Mon–Thu 5am–12am
-        - 1001 Brannan Street, San Francisco, CA 94103 — Mon–Thu 5am–12am
+        https://example.com/api/locations?city=san-francisco
     validations:
       required: true
   - type: textarea
