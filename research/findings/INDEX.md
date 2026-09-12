@@ -206,6 +206,7 @@ are listed so their size is visible before anyone opens one.
 | `fitnesssf-2026-09-11.json` | 4 | 1 KB | `financial-district`, `russian-hill`, `western-addition` +1 |
 | `flats-small-apartments-hcs.json` | 42 | 17 KB | `marina`, `russian-hill`, `nob-hill` +13 |
 | `glen-park-context-statement.json` | 44 | 17 KB | `glen-park` |
+| `hoteltonight-2026-09-12.json` | 12 | 4 KB | `south-of-market`, `pacific-heights`, `south-beach` +5 |
 | `india-basin-survey.json` | 40 | 16 KB | `bayview-hunters-point` |
 | `inner-mission-north-context-statement.json` | 102 | 39 KB | `mission` |
 | `inner-sunset-context-statement.json` | 315 | 119 KB | `inner-sunset` |

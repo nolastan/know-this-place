@@ -26,6 +26,8 @@ lives.
 | `casper` | Casper, mattresses and bedding (its own store finder) | `https://stores.casper.com/ca/sanfrancisco/` lists four stores in the city, but three are Mancini's Sleepworld — a stockist, not a Casper door — and only the Union Street shop is Casper's own; its page carries a schema.org `FurnitureStore` block | 30% off, on Casper's own sign-up | `casper/<date>.json` |
 | `crumbl` | Crumbl, cookie bakeries (its own site) | `https://crumblcookies.com/stores/ca/san-francisco-area` links four stores and one is in the city (the others are Berkeley, Foster City and Walnut Creek); the store page carries a schema.org `Bakery` block with the address, the coordinates and the opening hours | One link for the whole chain: joining Crumbl Rewards, on Crumbl's own app. The link opens the app at the invite, so its row carries a note; what the invited person gets beyond membership is stated on no public page, and the issue states only the referrer's five Crumbs | `crumbl/<date>.json` |
 | `fitnesssf` | FITNESS SF, gyms (its own site) | `https://www.fitnesssf.com/locations` names the nine gyms but carries no addresses or hours; each location page, `https://www.fitnesssf.com/location/<slug>`, prints both as plain text, with no schema.org markup and no coordinates | One link for the whole chain: a free month for the person joining, on FITNESS SF's own sign-up | `fitnesssf/<date>.json` |
+| `hoteltonight` | HotelTonight, hotel booking app — **the offer only**, never a page's `source` | `https://www.hoteltonight.com/s/san-francisco-ca` lists the hotels bookable in the city today, and each `/hotel/<slug>` page carries a schema.org `LodgingBusiness` with the street address (in JSON-LD; the visible page prints no address). The inventory rotates daily, so what the list gives is *this hotel is bookable today*, never *this hotel occupies this building*: that fact comes from the hotel's own site, one source id per hotel, and `hoteltonight` only ever joins the entry's `also_listed_by`. A hotel the list drops loses its button and keeps its panel | $25 off; the link opens the invite, not the hotel, so the row carries a `note` | `hoteltonight/<date>.json` |
+| `<hotel>` | Each hotel's own site — the `source` the HotelTonight entries actually publish under, one id per hotel (`hotel-zetta`, `castle-inn`, `marines-memorial`) | Whatever that hotel's own site states its address in: a schema.org `Hotel` block on about half of them, the footer or contact page on the rest. Where the hotel has no working site of its own, its brand's page for it serves instead — Hilton's for the four Hilton properties, Best Western's for the Cartwright, whose own domain redirects there. No hours: a hotel's front desk is not opening hours, so the entries publish none and the panel prints no "Last updated" | None. The offer is `hoteltonight`'s, and it reaches the panel through `also_listed_by` | `hoteltonight/<date>.json`, under `extra.page_source_id` |
 | `insomniacookies` | Insomnia Cookies, late-night cookie bakeries (its own site) | The store pages are a client-rendered shell, so the addresses come from the GraphQL API behind them: `POST https://api.insomniacookies.com/graphql` with `storeBySlug(where:{slug:$slug})`, run over the 378 `/store/<slug>` URLs in `https://insomniacookies.com/sitemap.xml`. It answers unauthenticated; `storeSearch` does not. Take **Retail Hours**, not Delivery Hours | 100 points, as a **code** the reader types in at sign-up — the row carries `code` as well as `url` | `insomniacookies/<date>.json` |
 | `momence` | Momence, class-booking hosts | Momence's host record (`https://momence.com/_api/primary/plugin/hosts/<id>`) confirms each host's name but lists no locations, so the addresses come from each studio's own location pages | Per host: one `REFERRALS` row per studio, keyed `momence-<studio>`, which is also the page's source id; the link opens that studio's sign-up | `momence/<date>.json` |
 | `ritual` | Ritual, ordering app | `https://ritual.co/order?lat=&lon=` server-renders its nearby-merchant list into the page's `__NEXT_DATA__` — 36 listings at most, within 5 km, ranked by distance from the point — so a grid of points and a de-duplication by merchant id is what covers the city. Each listing's own page, `https://ritual.co/order<menuPath>`, carries the postal code, the weekly hours and the categories the list leaves out | $10 across the first orders; the link opens Ritual's sign-up page, not the merchant | `ritual/<date>.json` |
@@ -67,9 +69,16 @@ the source ids:
   what does. Never fold a code into a query string the programme does not
   document, and never publish a code a human did not supply.
 
-A directory that is not a list of shops at all — HotelTonight's rotating hotel
-inventory, say — is not an `occupants` source, and needs a human's design
-decision before any page changes.
+- **A rotating list is an offer, not an occupancy.** HotelTonight's inventory
+  changes daily, so being on it says a hotel is bookable today, not that it
+  occupies the building — and an `occupants` refresh, which replaces a
+  source's entries wholesale, would take a merely-unbookable hotel off its
+  page. Issue #275 settled the shape: the occupancy comes from the merchant's
+  own site, one source id per merchant, and the rotating list joins
+  `also_listed_by`, where dropping it removes the button and leaves the panel.
+  Reach for this whenever the directory's listing and the tenancy are not the
+  same fact. Any other directory that is not a list of shops still needs a
+  human's design decision before any page changes.
 
 ## Rules
 

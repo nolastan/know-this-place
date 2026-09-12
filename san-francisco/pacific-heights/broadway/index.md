@@ -4,6 +4,7 @@ The parcels on Broadway documented here so far, from the city's address, assesso
 
 ## Documented so far
 
+- [1565](1565/) — A 1972 hotel, with a bathroom remodel permitted in 2003.
 - [1716–1720](1716/) — A 1940 two-flat, with deck work permitted in 2026.
 - [1751–1755](1751/) — An 1890 three-flat, with an addition permitted in 2003.
 - [1752–1754](1752/) — A 1906 single-family house, with a seismic retrofit permitted in 2012.

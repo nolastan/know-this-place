@@ -5,6 +5,7 @@ The parcels on Turk Street documented here so far, from the city's address, asse
 ## Documented so far
 
 - [2–16](2/) — A 1911 hotel in the Uptown Tenderloin Historic District, with reroofing permitted in 2022.
+- [33](33/) — A 2022 hotel, with permit records from 2021 to 2024.
 - [34–48](34/) — A 1909 hotel in the Uptown Tenderloin Historic District, with reroofing permitted in 1992.
 - [50–52](50/) — A 1914 42-unit apartment building in the Uptown Tenderloin Historic District, with a kitchen remodel permitted in 2008.
 - [62–64](62/) — A 1911 hotel in the Uptown Tenderloin Historic District, with a kitchen remodel permitted in 2006.

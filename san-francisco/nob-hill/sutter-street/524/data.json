@@ -355,6 +355,32 @@
       "name": "SF Planning Department — Historic Districts via DataSF",
       "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40917314394947%2037.78943848548418)%27)",
       "retrieved": "2026-09-08"
+    },
+    {
+      "id": "cartwright-hotel",
+      "name": "The Cartwright Hotel – Union Square, BW Premier Collection, hotel page on Best Western's site",
+      "supports": "Current occupant",
+      "query": "https://www.bestwestern.com/en_US/book/hotel-rooms.05738.html",
+      "retrieved": "2026-09-12"
+    },
+    {
+      "id": "hoteltonight",
+      "name": "HotelTonight, hotel booking app",
+      "supports": "Current occupant",
+      "query": "https://www.hoteltonight.com/s/san-francisco-ca",
+      "retrieved": "2026-09-12"
+    }
+  ],
+  "occupants": [
+    {
+      "name": "The Cartwright Hotel – Union Square",
+      "kinds": [
+        "Hotel"
+      ],
+      "source": "cartwright-hotel",
+      "also_listed_by": [
+        "hoteltonight"
+      ]
     }
   ]
 }

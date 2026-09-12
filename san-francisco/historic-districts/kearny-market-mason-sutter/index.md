@@ -4,6 +4,7 @@ The buildings documented here so far inside the Kearny-Market-Mason-Sutter Conse
 
 ## Streets
 
+- [4th Street](/san-francisco/south-of-market/4th-street/) — 1 documented building inside the district.
 - [Bush Street](/san-francisco/financial-district/bush-street/) — 12 documented buildings inside the district.
 - [Cosmo Place](/san-francisco/nob-hill/cosmo-place/) — 1 documented building inside the district.
 - [Ellis Street](/san-francisco/tenderloin/ellis-street/) — 3 documented buildings inside the district.
@@ -23,7 +24,7 @@ The buildings documented here so far inside the Kearny-Market-Mason-Sutter Conse
 - [Post Street, Nob Hill](/san-francisco/nob-hill/post-street/) — 1 documented building inside the district.
 - [Post Street, Tenderloin](/san-francisco/tenderloin/post-street/) — 7 documented buildings inside the district.
 - [Post Street, Union Square](/san-francisco/union-square/post-street/) — 4 documented buildings inside the district.
-- [Powell Street](/san-francisco/nob-hill/powell-street/) — 15 documented buildings inside the district.
+- [Powell Street](/san-francisco/nob-hill/powell-street/) — 16 documented buildings inside the district.
 - [Stockton Street](/san-francisco/chinatown/stockton-street/) — 11 documented buildings inside the district.
 - [Sutter Street, Financial District](/san-francisco/financial-district/sutter-street/) — 18 documented buildings inside the district.
 - [Sutter Street, Nob Hill](/san-francisco/nob-hill/sutter-street/) — 15 documented buildings inside the district.
@@ -31,6 +32,7 @@ The buildings documented here so far inside the Kearny-Market-Mason-Sutter Conse
 
 ## Buildings
 
+- [10–12 4th Street](/san-francisco/south-of-market/4th-street/10/) — An assessor class: vacant lot, with stair work permitted in 2020.
 - [381–383 Bush Street](/san-francisco/financial-district/bush-street/381/) — A 1907 office building, with reroofing permitted in 2020.
 - [410 Bush Street](/san-francisco/financial-district/bush-street/410/) — A 1915 school building, with reroofing permitted in 2009.
 - [425 Bush Street](/san-francisco/financial-district/bush-street/425/) — A 1908 office building, with reroofing permitted in 2016.
@@ -182,6 +184,7 @@ The buildings documented here so far inside the Kearny-Market-Mason-Sutter Conse
 - [207–217 Powell Street](/san-francisco/nob-hill/powell-street/207/) — A 1906 store building, with stair work permitted in 2006.
 - [222 Powell Street](/san-francisco/nob-hill/powell-street/222/) — A 1906 store building, with a seismic retrofit permitted in 2001.
 - [226–230 Powell Street](/san-francisco/nob-hill/powell-street/226/) — A 1910 store building, with a seismic retrofit permitted in 1997.
+- [236–242 Powell Street](/san-francisco/nob-hill/powell-street/236/) — A 1908 hotel, with facade work permitted in 1997.
 - [301–345 Powell Street](/san-francisco/nob-hill/powell-street/301/) — A 1904 hotel, with facade work permitted in 1991.
 - [432–462 Powell Street](/san-francisco/nob-hill/powell-street/432/) — A 1930 hotel, with a kitchen remodel permitted in 2021.
 - [433 Powell Street](/san-francisco/nob-hill/powell-street/433/) — A 1914 hotel, with window replacement permitted in 1985.

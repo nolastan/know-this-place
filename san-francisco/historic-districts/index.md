@@ -57,7 +57,7 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Jordan Park Historic District](jordan-park/) — Eligible for the California Register, significant 1900–1920; 19 buildings documented on 5 streets.
 - [Juri Street Historic District](juri-street/) — Eligible for the California Register, significant 1890–1895; 8 buildings documented on 2 streets.
 - [Kearny-Belden Conservation District](kearny-belden/) — An Article 11 conservation district; 7 buildings documented on 3 streets.
-- [Kearny-Market-Mason-Sutter Conservation District](kearny-market-mason-sutter/) — An Article 11 conservation district; 204 buildings documented on 24 streets.
+- [Kearny-Market-Mason-Sutter Conservation District](kearny-market-mason-sutter/) — An Article 11 conservation district; 206 buildings documented on 25 streets.
 - [Lexington and San Carlos Streets Reconstruction Historic District](lexington-and-san-carlos-streets-reconstruction/) — Eligible for the California Register, significant 1906–1915; 44 buildings documented on 4 streets.
 - [Liberty Hill Historic District](liberty-hill/) — An Article 10 city landmark district, significant 1860s–1906; 252 buildings documented on 9 streets.
 - [Liberty Street Historic District](liberty-street/) — Listed on the California and National Registers, significant 1867–1911; 40 buildings documented on 2 streets.
@@ -94,7 +94,7 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Showplace Square Heavy Timber and Steel-frame Brick Warehouse and Factory Historic District](showplace-square-heavy-timber-and-steel-frame-brick-warehouse-and-factory/) — Eligible for the California Register, significant 1893–1929; 13 buildings documented on 8 streets.
 - [Sixth Street Lodging House Historic District](sixth-street-lodging-house/) — Eligible for the California and National Registers, significant 1870–1947; 31 buildings documented on 4 streets.
 - [SoMa LGBTQ Historic District](soma-lgbtq/) — Eligible for the California Register, significant ca.1950s–ca.1990s; 56 buildings documented on 25 streets.
-- [South End Historic District](south-end/) — An Article 10 city landmark district, significant 1867–1935; 37 buildings documented on 12 streets.
+- [South End Historic District](south-end/) — An Article 10 city landmark district, significant 1867–1935; 38 buildings documented on 12 streets.
 - [South End Historic District Addition](south-end-addition/) — Eligible for the California and National Registers, significant 1906–1935; 17 buildings documented on 6 streets.
 - [South Mission Avenues and Alleys Historic District](south-mission-avenues-and-alleys/) — Eligible for the California Register, significant 1885–1914; 88 buildings documented on 8 streets.
 - [South Park Historic District](south-park/) — Eligible for the California and National Registers, significant 1854–1935; 32 buildings documented on one street.
@@ -112,7 +112,7 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Von Schroeder-Welsh Block Historic District](von-schroeder-welsh-block/) — Eligible for the California Register, significant 1889–1895; 25 buildings documented on 2 streets.
 - [Washington Square Historic District](washington-square/) — Eligible for the California Register, significant 1906–1939; 17 buildings documented on 7 streets.
 - [West Portal Park Historic District](west-portal-park/) — Eligible for the California Register, significant 1916–1928 / 1917–1929; 5 buildings documented on one street.
-- [Western SOMA Light Industrial and Residential Historic District](western-soma-light-industrial-and-residential/) — Eligible for the California and National Registers, significant 1906–1936; 229 buildings documented on 35 streets.
+- [Western SOMA Light Industrial and Residential Historic District](western-soma-light-industrial-and-residential/) — Eligible for the California and National Registers, significant 1906–1936; 230 buildings documented on 35 streets.
 - [Woodward St. Romeo Flats Reconstruction Historic District](woodward-st-romeo-flats-reconstruction/) — Eligible for the California Register, significant 1906–1912; 24 buildings documented on 3 streets.
 
 48 further districts named on the pages here hold fewer than 5 documented buildings, and have no page yet.

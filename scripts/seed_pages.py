@@ -2190,6 +2190,14 @@ REFERRALS = {
         "offer": "Get a free month at FITNESS SF",
         "app": "FITNESS SF",
     },
+    "hoteltonight": {
+        "url": "https://www.hoteltonight.com/invite/SROSENTHAL7",
+        "offer": "Get $25 off at HotelTonight",
+        "app": "HotelTonight",
+        "note": ("Referral link. It opens HotelTonight's invite, not this "
+                 "hotel's own listing, and HotelTonight's inventory changes "
+                 "daily."),
+    },
     "insomniacookies": {
         "url": "https://insomniacookies.com/",
         "offer": "Get 100 points at Insomnia Cookies",

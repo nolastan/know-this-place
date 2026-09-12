@@ -1,0 +1,1226 @@
+{
+ "source_id": "hoteltonight",
+ "batch": "2026-09-12",
+ "read_on": "2026-09-12",
+ "notes": "The thirty hotels named in issue #275, read on 2026-09-12. The issue's list and the offer credential are the human's half; this run confirmed every address against the hotel's own site, twice where the site answered a plain fetch (24 of 30) and once in a browser where it did not (Hotel 32One, Castle Inn and the four Hilton properties turn a curl away; the Cartwright's own domain redirects to Best Western's page for it). Both reads agreed on every name and address, and all thirty matched the issue's. HotelTonight's own San Francisco list, read the same day, carried 30 hotels: 29 of the issue's 30 plus FOUND Hotel Carlton, which the issue links as its example. The shape is the one issue #275 settled: a hotel's occupancy of its building is its own site's fact, under the per-hotel id in extra.page_source_id, and `hoteltonight` only joins `also_listed_by`, where the REFERRALS row puts the offer on the panel. That is why a hotel HotelTonight drops loses its button and keeps its panel. Hotels publish no opening hours, so every entry omits them and no panel prints a \"Last updated\" line. Marina Motel's site contradicts itself — its schema.org block says 2575 Lombard St and its contact line 2576 Lombard Street, which is the issue's and the one EAS carries; 2575 has no EAS record. FOUND Hotel Carlton is not here: it was not in the issue's list, and foundhotels.com's page for it 404s, so there is no own-site source for the occupancy. HotelTonight's own JSON-LD gives 1075 Sutter St, which a later run can start from once the hotel's site answers.",
+ "coverage": {
+  "unit": "hotels",
+  "examined": 30,
+  "mentions": 30,
+  "remaining": "FOUND Hotel Carlton, listed on the read date but absent from the issue and without a working site of its own; and The Barnes, whose page a refresh should seed if HotelTonight lists it again."
+ },
+ "findings": [
+  {
+   "id": "2026-09-12-0001",
+   "date": "2026-09-12",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "342 Grant Avenue",
+   "street_number": "342",
+   "street_name": "GRANT",
+   "street_type": "AVE",
+   "description": "Hotel Triton trades as a hotel at this address.",
+   "extra": {
+    "name": "Hotel Triton",
+    "name_as_listed": "Hotel Triton Union Square",
+    "locality_as_listed": "San Francisco",
+    "page_source_id": "hotel-triton",
+    "kinds": [
+     "Hotel"
+    ],
+    "listed_by_hoteltonight_on_read_date": true
+   },
+   "citation": {
+    "label": "Hotel Triton, hotel website",
+    "url": "https://www.hoteltriton.com",
+    "locator": "the page's schema.org Hotel address"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0287017",
+    "path": "/san-francisco/financial-district/grant-avenue/334/",
+    "eas_address": "334 GRANT AVE",
+    "method": "EAS exact match on 342 GRANT AVE → parcel 0287017; sf-parcels has blklot 0287017 active, 469–469 BUSH; the 2025 roll records it as commercial hotel, built 1912. EAS puts 334, 338, 342, 352 GRANT AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 334.",
+    "checked_on": "2026-09-12"
+   },
+   "publish": {
+    "status": "published",
+    "page": "/san-francisco/financial-district/grant-avenue/334/",
+    "note": "An `occupants` entry on /san-francisco/financial-district/grant-avenue/334/."
+   }
+  },
+  {
+   "id": "2026-09-12-0002",
+   "date": "2026-09-12",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "321 Grant Avenue",
+   "street_number": "321",
+   "street_name": "GRANT",
+   "street_type": "AVE",
+   "description": "Hotel 32One trades as a hotel at this address.",
+   "extra": {
+    "name": "Hotel 32One",
+    "name_as_listed": "Hotel 32One",
+    "locality_as_listed": "San Francisco",
+    "page_source_id": "hotel-32one",
+    "kinds": [
+     "Hotel"
+    ],
+    "listed_by_hoteltonight_on_read_date": true
+   },
+   "citation": {
+    "label": "Hotel 32One, hotel website",
+    "url": "https://www.hotel32one.com",
+    "locator": "the page's schema.org Hotel address"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0286003",
+    "path": "/san-francisco/financial-district/grant-avenue/321/",
+    "eas_address": "321 GRANT AVE",
+    "method": "EAS exact match on 321 GRANT AVE → parcel 0286003; sf-parcels has blklot 0286003 active, 321–323 GRANT; the 2025 roll records it as commercial hotel, built 1910. EAS puts 321, 323 GRANT AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 321.",
+    "checked_on": "2026-09-12"
+   },
+   "publish": {
+    "status": "published",
+    "page": "/san-francisco/financial-district/grant-avenue/321/",
+    "note": "An `occupants` entry on /san-francisco/financial-district/grant-avenue/321/."
+   }
+  },
+  {
+   "id": "2026-09-12-0003",
+   "date": "2026-09-12",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "1565 Broadway",
+   "street_number": "1565",
+   "street_name": "BROADWAY",
+   "street_type": null,
+   "description": "Castle Inn trades as a hotel at this address.",
+   "extra": {
+    "name": "Castle Inn",
+    "name_as_listed": "Castle Inn",
+    "locality_as_listed": "San Francisco",
+    "page_source_id": "castle-inn",
+    "kinds": [
+     "Hotel"
+    ],
+    "listed_by_hoteltonight_on_read_date": true
+   },
+   "citation": {
+    "label": "Castle Inn, hotel website",
+    "url": "https://www.castleinnsf.com",
+    "locator": "the “OUR LOCATION” address line"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0574027",
+    "path": "/san-francisco/pacific-heights/broadway/1565/",
+    "eas_address": "1565 BROADWAY",
+    "method": "EAS exact match on 1565 BROADWAY (neither the record nor EAS gives this street a type) → parcel 0574027; sf-parcels has blklot 0574027 active, 1565–1565 BROADWAY; the 2025 roll records it as commercial hotel, built 1972.",
+    "checked_on": "2026-09-12",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "page": "/san-francisco/pacific-heights/broadway/1565/",
+    "note": "An `occupants` entry on /san-francisco/pacific-heights/broadway/1565/."
+   }
+  },
+  {
+   "id": "2026-09-12-0004",
+   "date": "2026-09-12",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "845 Bush Street",
+   "street_number": "845",
+   "street_name": "BUSH",
+   "street_type": "ST",
+   "description": "White Swan Inn trades as a hotel at this address.",
+   "extra": {
+    "name": "White Swan Inn",
+    "name_as_listed": "White Swan Inn",
+    "locality_as_listed": "San Francisco",
+    "page_source_id": "white-swan-inn",
+    "kinds": [
+     "Hotel"
+    ],
+    "listed_by_hoteltonight_on_read_date": true
+   },
+   "citation": {
+    "label": "White Swan Inn, hotel website",
+    "url": "https://www.whiteswaninnsf.com",
+    "locator": "the address printed in the page footer"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0283018",
+    "path": "/san-francisco/nob-hill/bush-street/845/",
+    "eas_address": "845 BUSH ST",
+    "method": "EAS exact match on 845 BUSH ST → parcel 0283018; sf-parcels has blklot 0283018 active, 845–845 BUSH; the 2025 roll records it as commercial hotel, built 1915.",
+    "checked_on": "2026-09-12"
+   },
+   "publish": {
+    "status": "published",
+    "page": "/san-francisco/nob-hill/bush-street/845/",
+    "note": "An `occupants` entry on /san-francisco/nob-hill/bush-street/845/."
+   }
+  },
+  {
+   "id": "2026-09-12-0005",
+   "date": "2026-09-12",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "863 Bush Street",
+   "street_number": "863",
+   "street_name": "BUSH",
+   "street_type": "ST",
+   "description": "Petite Auberge trades as a hotel at this address.",
+   "extra": {
+    "name": "Petite Auberge",
+    "name_as_listed": "Petite Auberge",
+    "locality_as_listed": "San Francisco",
+    "page_source_id": "petite-auberge",
+    "kinds": [
+     "Hotel"
+    ],
+    "listed_by_hoteltonight_on_read_date": true
+   },
+   "citation": {
+    "label": "Petite Auberge, hotel website",
+    "url": "https://www.petiteaubergesf.com",
+    "locator": "the address printed in the page footer"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0283016",
+    "path": "/san-francisco/nob-hill/bush-street/863/",
+    "eas_address": "863 BUSH ST",
+    "method": "EAS exact match on 863 BUSH ST → parcel 0283016; sf-parcels has blklot 0283016 active, 863–863 BUSH; the 2025 roll records it as commercial hotel, built 1911.",
+    "checked_on": "2026-09-12"
+   },
+   "publish": {
+    "status": "published",
+    "page": "/san-francisco/nob-hill/bush-street/863/",
+    "note": "An `occupants` entry on /san-francisco/nob-hill/bush-street/863/."
+   }
+  },
+  {
+   "id": "2026-09-12-0006",
+   "date": "2026-09-12",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "2576 Lombard Street",
+   "street_number": "2576",
+   "street_name": "LOMBARD",
+   "street_type": "ST",
+   "description": "Marina Motel trades as a hotel at this address.",
+   "extra": {
+    "name": "Marina Motel",
+    "name_as_listed": "Marina Motel",
+    "locality_as_listed": "San Francisco",
+    "page_source_id": "marina-motel",
+    "kinds": [
+     "Hotel"
+    ],
+    "listed_by_hoteltonight_on_read_date": true
+   },
+   "citation": {
+    "label": "Marina Motel, hotel website",
+    "url": "https://www.marinamotel.com",
+    "locator": "the contact block's address line"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0935005",
+    "path": "/san-francisco/marina/lombard-street/2576/",
+    "eas_address": "2576 LOMBARD ST",
+    "method": "EAS exact match on 2576 LOMBARD ST → parcel 0935005; sf-parcels has blklot 0935005 active, 2576–2576 LOMBARD; the 2025 roll records it as commercial hotel, built 1940.",
+    "checked_on": "2026-09-12",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "page": "/san-francisco/marina/lombard-street/2576/",
+    "note": "An `occupants` entry on /san-francisco/marina/lombard-street/2576/."
+   }
+  },
+  {
+   "id": "2026-09-12-0007",
+   "date": "2026-09-12",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "425 North Point Street",
+   "street_number": "425",
+   "street_name": "NORTH POINT",
+   "street_type": "ST",
+   "description": "Hotel Zoe Fisherman's Wharf trades as a hotel at this address.",
+   "extra": {
+    "name": "Hotel Zoe Fisherman's Wharf",
+    "name_as_listed": "Hotel Zoe Fisherman's Wharf",
+    "locality_as_listed": "San Francisco",
+    "page_source_id": "hotel-zoe",
+    "kinds": [
+     "Hotel"
+    ],
+    "listed_by_hoteltonight_on_read_date": true
+   },
+   "citation": {
+    "label": "Hotel Zoe Fisherman's Wharf, hotel website",
+    "url": "https://www.hotelzoesf.com",
+    "locator": "the page's schema.org Hotel address"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0030001",
+    "path": "/san-francisco/north-beach/north-point-street/425/",
+    "eas_address": "425 NORTH POINT ST",
+    "method": "EAS exact match on 425 NORTH POINT ST → parcel 0030001; sf-parcels has blklot 0030001 active, 2445–2455 MASON; the 2025 roll records it as commercial hotel, built 1990.",
+    "checked_on": "2026-09-12",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "page": "/san-francisco/north-beach/north-point-street/425/",
+    "note": "An `occupants` entry on /san-francisco/north-beach/north-point-street/425/."
+   }
+  },
+  {
+   "id": "2026-09-12-0008",
+   "date": "2026-09-12",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "55 Fifth Street",
+   "street_number": "55",
+   "street_name": "05TH",
+   "street_type": "ST",
+   "description": "Hotel Zetta trades as a hotel at this address.",
+   "extra": {
+    "name": "Hotel Zetta",
+    "name_as_listed": "Hotel Zetta",
+    "locality_as_listed": "San Francisco",
+    "page_source_id": "hotel-zetta",
+    "kinds": [
+     "Hotel"
+    ],
+    "listed_by_hoteltonight_on_read_date": true
+   },
+   "citation": {
+    "label": "Hotel Zetta, hotel website",
+    "url": "https://www.zhotelssf.com/hotels/zetta",
+    "locator": "the page's schema.org Hotel address"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3705039",
+    "path": "/san-francisco/south-of-market/5th-street/55/",
+    "eas_address": "55 05TH ST",
+    "method": "EAS exact match on 55 05TH ST → parcel 3705039; sf-parcels has blklot 3705039 active, 55–55 05TH; the 2025 roll records it as commercial hotel, built 1913. The assessor files the parcel as 360 JESSIE ST.",
+    "checked_on": "2026-09-12"
+   },
+   "publish": {
+    "status": "published",
+    "page": "/san-francisco/south-of-market/5th-street/55/",
+    "note": "An `occupants` entry on /san-francisco/south-of-market/5th-street/55/."
+   }
+  },
+  {
+   "id": "2026-09-12-0009",
+   "date": "2026-09-12",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "545 Post Street",
+   "street_number": "545",
+   "street_name": "POST",
+   "street_type": "ST",
+   "description": "Hotel Zeppelin trades as a hotel at this address.",
+   "extra": {
+    "name": "Hotel Zeppelin",
+    "name_as_listed": "Hotel Zeppelin",
+    "locality_as_listed": "San Francisco",
+    "page_source_id": "hotel-zeppelin",
+    "kinds": [
+     "Hotel"
+    ],
+    "listed_by_hoteltonight_on_read_date": true
+   },
+   "citation": {
+    "label": "Hotel Zeppelin, hotel website",
+    "url": "https://www.zhotelssf.com/hotels/zeppelin",
+    "locator": "the page's schema.org Hotel address"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0306022",
+    "path": "/san-francisco/tenderloin/post-street/545/",
+    "eas_address": "545 POST ST",
+    "method": "EAS exact match on 545 POST ST → parcel 0306022; sf-parcels has blklot 0306022 active, 545–545 POST; the 2025 roll records it as commercial hotel, built 1913.",
+    "checked_on": "2026-09-12"
+   },
+   "publish": {
+    "status": "published",
+    "page": "/san-francisco/tenderloin/post-street/545/",
+    "note": "An `occupants` entry on /san-francisco/tenderloin/post-street/545/."
+   }
+  },
+  {
+   "id": "2026-09-12-0010",
+   "date": "2026-09-12",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "450 Post Street",
+   "street_number": "450",
+   "street_name": "POST",
+   "street_type": "ST",
+   "description": "Kensington Park Hotel trades as a hotel at this address.",
+   "extra": {
+    "name": "Kensington Park Hotel",
+    "name_as_listed": "Kensington Park Hotel",
+    "locality_as_listed": "San Francisco",
+    "page_source_id": "kensington-park-hotel",
+    "kinds": [
+     "Hotel"
+    ],
+    "listed_by_hoteltonight_on_read_date": true
+   },
+   "citation": {
+    "label": "Kensington Park Hotel, hotel website",
+    "url": "https://kensingtonparkhotel.com",
+    "locator": "the address printed in the page footer"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0296009",
+    "path": "/san-francisco/union-square/post-street/450/",
+    "eas_address": "450 POST ST",
+    "method": "EAS exact match on 450 POST ST → parcel 0296009; sf-parcels has blklot 0296009 active, 450–456 POST; the 2025 roll records it as commercial misc, built 1924. EAS puts 450, 452, 454, 456 POST ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 450.",
+    "checked_on": "2026-09-12"
+   },
+   "publish": {
+    "status": "published",
+    "page": "/san-francisco/union-square/post-street/450/",
+    "note": "An `occupants` entry on /san-francisco/union-square/post-street/450/."
+   }
+  },
+  {
+   "id": "2026-09-12-0011",
+   "date": "2026-09-12",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "165 Steuart Street",
+   "street_number": "165",
+   "street_name": "STEUART",
+   "street_type": "ST",
+   "description": "Harbor Court Hotel trades as a hotel at this address.",
+   "extra": {
+    "name": "Harbor Court Hotel",
+    "name_as_listed": "Harbor Court Hotel",
+    "locality_as_listed": "San Francisco",
+    "page_source_id": "harbor-court-hotel",
+    "kinds": [
+     "Hotel"
+    ],
+    "listed_by_hoteltonight_on_read_date": true
+   },
+   "citation": {
+    "label": "Harbor Court Hotel, hotel website",
+    "url": "https://www.harborcourthotel.com",
+    "locator": "the address printed in the page footer"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3715028",
+    "path": "/san-francisco/south-beach/steuart-street/161/",
+    "eas_address": "161 STEUART ST",
+    "method": "EAS exact match on 165 STEUART ST → parcel 3715028; sf-parcels has blklot 3715028 active, 161–165 STEUART; the 2025 roll records it as commercial misc. EAS puts 161, 165, 169 STEUART ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 161. EAS files the address under parcel 3715007, which sf-parcels reports retired; the active parcel its coordinates fall in is 3715028.",
+    "checked_on": "2026-09-12"
+   },
+   "publish": {
+    "status": "published",
+    "page": "/san-francisco/south-beach/steuart-street/161/",
+    "note": "An `occupants` entry on /san-francisco/south-beach/steuart-street/161/."
+   }
+  },
+  {
+   "id": "2026-09-12-0012",
+   "date": "2026-09-12",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "127 Ellis St",
+   "street_number": "127",
+   "street_name": "ELLIS",
+   "street_type": "ST",
+   "description": "Hotel Abri trades as a hotel at this address.",
+   "extra": {
+    "name": "Hotel Abri",
+    "name_as_listed": "Hotel Abri",
+    "locality_as_listed": "San Francisco",
+    "page_source_id": "hotel-abri",
+    "kinds": [
+     "Hotel"
+    ],
+    "listed_by_hoteltonight_on_read_date": true
+   },
+   "citation": {
+    "label": "Hotel Abri, hotel website",
+    "url": "https://www.hotelabrisf.com",
+    "locator": "the page's schema.org Hotel address"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0330023",
+    "path": "/san-francisco/tenderloin/ellis-street/119/",
+    "eas_address": "119 ELLIS ST",
+    "method": "EAS exact match on 127 ELLIS ST → parcel 0330023; sf-parcels has blklot 0330023 active, 119–139 ELLIS; the 2025 roll records it as commercial hotel, built 1907. EAS puts 119, 125, 127, 129, 139 ELLIS ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 119.",
+    "checked_on": "2026-09-12"
+   },
+   "publish": {
+    "status": "published",
+    "page": "/san-francisco/tenderloin/ellis-street/119/",
+    "note": "An `occupants` entry on /san-francisco/tenderloin/ellis-street/119/."
+   }
+  },
+  {
+   "id": "2026-09-12-0013",
+   "date": "2026-09-12",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "942 Mission Street",
+   "street_number": "942",
+   "street_name": "MISSION",
+   "street_type": "ST",
+   "description": "Hampton Inn San Francisco Downtown/Convention Center trades as a hotel at this address.",
+   "extra": {
+    "name": "Hampton Inn San Francisco Downtown/Convention Center",
+    "name_as_listed": "Hampton Inn SF Downtown/Convention Center",
+    "locality_as_listed": "San Francisco",
+    "page_source_id": "hampton-inn-downtown",
+    "kinds": [
+     "Hotel"
+    ],
+    "listed_by_hoteltonight_on_read_date": true
+   },
+   "citation": {
+    "label": "Hampton Inn San Francisco Downtown/Convention Center, hotel page on Hilton's site",
+    "url": "https://www.hilton.com/en/hotels/sfocchx-hampton-san-francisco-downtown-convention-center/",
+    "locator": "the address printed under the hotel name"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3704015",
+    "path": "/san-francisco/south-of-market/mission-street/942/",
+    "eas_address": "942 MISSION ST",
+    "method": "EAS exact match on 942 MISSION ST → parcel 3704015; sf-parcels has blklot 3704015 active, 942–946 MISSION; the 2025 roll records it as commercial hotel, built 2015. EAS puts 942, 946 MISSION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 942.",
+    "checked_on": "2026-09-12"
+   },
+   "publish": {
+    "status": "published",
+    "page": "/san-francisco/south-of-market/mission-street/942/",
+    "note": "An `occupants` entry on /san-francisco/south-of-market/mission-street/942/."
+   }
+  },
+  {
+   "id": "2026-09-12-0014",
+   "date": "2026-09-12",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "140 7th Street",
+   "street_number": "140",
+   "street_name": "07TH",
+   "street_type": "ST",
+   "description": "Hotel Fiona trades as a hotel at this address.",
+   "extra": {
+    "name": "Hotel Fiona",
+    "name_as_listed": "Hotel Fiona",
+    "locality_as_listed": "San Francisco",
+    "page_source_id": "hotel-fiona",
+    "kinds": [
+     "Hotel"
+    ],
+    "listed_by_hoteltonight_on_read_date": true
+   },
+   "citation": {
+    "label": "Hotel Fiona, hotel website",
+    "url": "https://www.hotelfionasf.com",
+    "locator": "the page's schema.org Hotel address"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3727002",
+    "path": "/san-francisco/south-of-market/7th-street/140/",
+    "eas_address": "140 07TH ST",
+    "method": "EAS exact match on 140 07TH ST → parcel 3727002; sf-parcels has blklot 3727002 active, 140–140 07TH; the 2025 roll records it as commercial hotel, built 1980.",
+    "checked_on": "2026-09-12",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "page": "/san-francisco/south-of-market/7th-street/140/",
+    "note": "An `occupants` entry on /san-francisco/south-of-market/7th-street/140/."
+   }
+  },
+  {
+   "id": "2026-09-12-0015",
+   "date": "2026-09-12",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "1100 Market Street (Entrance at 45 McAllister St)",
+   "street_number": "1100",
+   "street_name": "MARKET",
+   "street_type": "ST",
+   "description": "San Francisco Proper Hotel trades as a hotel at this address.",
+   "extra": {
+    "name": "San Francisco Proper Hotel",
+    "name_as_listed": "San Francisco Proper Hotel",
+    "locality_as_listed": "San Francisco",
+    "page_source_id": "sf-proper-hotel",
+    "kinds": [
+     "Hotel"
+    ],
+    "listed_by_hoteltonight_on_read_date": true
+   },
+   "citation": {
+    "label": "San Francisco Proper Hotel, hotel website",
+    "url": "https://www.properhotel.com/san-francisco/",
+    "locator": "the page's schema.org Hotel address"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0351001",
+    "path": "/san-francisco/south-of-market/market-street/1100/",
+    "eas_address": "1100 MARKET ST",
+    "method": "EAS exact match on 1100 MARKET ST → parcel 0351001; sf-parcels has blklot 0351001 active, 1100–1112 MARKET; the 2025 roll records it as commercial hotel, built 1909. EAS puts 1100, 1106, 1108, 1112 MARKET ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1100.",
+    "checked_on": "2026-09-12"
+   },
+   "publish": {
+    "status": "published",
+    "page": "/san-francisco/south-of-market/market-street/1100/",
+    "note": "An `occupants` entry on /san-francisco/south-of-market/market-street/1100/."
+   }
+  },
+  {
+   "id": "2026-09-12-0016",
+   "date": "2026-09-12",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "250 4th Street",
+   "street_number": "250",
+   "street_name": "04TH",
+   "street_type": "ST",
+   "description": "Canopy by Hilton San Francisco SoMa trades as a hotel at this address.",
+   "extra": {
+    "name": "Canopy by Hilton San Francisco SoMa",
+    "name_as_listed": "Canopy by Hilton SF SoMa",
+    "locality_as_listed": "San Francisco",
+    "page_source_id": "canopy-soma",
+    "kinds": [
+     "Hotel"
+    ],
+    "listed_by_hoteltonight_on_read_date": true
+   },
+   "citation": {
+    "label": "Canopy by Hilton San Francisco SoMa, hotel page on Hilton's site",
+    "url": "https://www.hilton.com/en/hotels/sfopypy-canopy-san-francisco-soma/",
+    "locator": "the address printed under the hotel name"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3733008",
+    "path": "/san-francisco/south-of-market/4th-street/250/",
+    "eas_address": "250 04TH ST",
+    "method": "EAS exact match on 250 04TH ST → parcel 3733008; sf-parcels has blklot 3733008 active, 250–250 04TH; the 2025 roll records it as commercial hotel, built 2019.",
+    "checked_on": "2026-09-12"
+   },
+   "publish": {
+    "status": "published",
+    "page": "/san-francisco/south-of-market/4th-street/250/",
+    "note": "An `occupants` entry on /san-francisco/south-of-market/4th-street/250/."
+   }
+  },
+  {
+   "id": "2026-09-12-0017",
+   "date": "2026-09-12",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "609 Sutter Street",
+   "street_number": "609",
+   "street_name": "SUTTER",
+   "street_type": "ST",
+   "description": "Marines' Memorial Club & Hotel trades as a hotel at this address.",
+   "extra": {
+    "name": "Marines' Memorial Club & Hotel",
+    "name_as_listed": "Marines' Memorial Club & Hotel",
+    "locality_as_listed": "San Francisco",
+    "page_source_id": "marines-memorial",
+    "kinds": [
+     "Hotel"
+    ],
+    "listed_by_hoteltonight_on_read_date": true
+   },
+   "citation": {
+    "label": "Marines' Memorial Club & Hotel, contact page",
+    "url": "https://marinesmemorial.org/contact-us/",
+    "locator": "the address printed on the contact page"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0297001",
+    "path": "/san-francisco/nob-hill/sutter-street/601/",
+    "eas_address": "601 SUTTER ST",
+    "method": "EAS exact match on 609 SUTTER ST → parcel 0297001; sf-parcels has blklot 0297001 active, 535–535 MASON; the 2025 roll records it as commercial misc, built 1927. EAS puts 601, 609 SUTTER ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 601.",
+    "checked_on": "2026-09-12"
+   },
+   "publish": {
+    "status": "published",
+    "page": "/san-francisco/nob-hill/sutter-street/601/",
+    "note": "An `occupants` entry on /san-francisco/nob-hill/sutter-street/601/."
+   }
+  },
+  {
+   "id": "2026-09-12-0018",
+   "date": "2026-09-12",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "121 7th Street",
+   "street_number": "121",
+   "street_name": "07TH",
+   "street_type": "ST",
+   "description": "SOMA House trades as a hotel at this address.",
+   "extra": {
+    "name": "SOMA House",
+    "name_as_listed": "SOMA House",
+    "locality_as_listed": "San Francisco",
+    "page_source_id": "soma-house",
+    "kinds": [
+     "Hotel"
+    ],
+    "listed_by_hoteltonight_on_read_date": true
+   },
+   "citation": {
+    "label": "SOMA House, hotel website",
+    "url": "https://www.somahousesf.com",
+    "locator": "the page's schema.org Hotel address"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3726114",
+    "path": "/san-francisco/south-of-market/7th-street/121/",
+    "eas_address": "121 07TH ST",
+    "method": "EAS exact match on 121 07TH ST → parcel 3726114; sf-parcels has blklot 3726114 active, 121–121 07TH; the 2025 roll records it as commercial hotel, built 1967.",
+    "checked_on": "2026-09-12",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "page": "/san-francisco/south-of-market/7th-street/121/",
+    "note": "An `occupants` entry on /san-francisco/south-of-market/7th-street/121/."
+   }
+  },
+  {
+   "id": "2026-09-12-0019",
+   "date": "2026-09-12",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "33 Turk St",
+   "street_number": "33",
+   "street_name": "TURK",
+   "street_type": "ST",
+   "description": "Timbri Hotel San Francisco, Curio Collection by Hilton trades as a hotel at this address.",
+   "extra": {
+    "name": "Timbri Hotel San Francisco, Curio Collection by Hilton",
+    "name_as_listed": "Timbri Hotel (Curio Collection by Hilton)",
+    "locality_as_listed": "San Francisco",
+    "page_source_id": "timbri-hotel",
+    "kinds": [
+     "Hotel"
+    ],
+    "listed_by_hoteltonight_on_read_date": true
+   },
+   "citation": {
+    "label": "Timbri Hotel San Francisco, hotel page on Hilton's site",
+    "url": "https://www.hilton.com/en/hotels/sfotlqq-timbri-hotel-san-francisco/",
+    "locator": "the address printed under the hotel name"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0342045",
+    "path": "/san-francisco/tenderloin/turk-street/33/",
+    "eas_address": "33 TURK ST",
+    "method": "EAS exact match on 33 TURK ST → parcel 0342045; sf-parcels has blklot 0342045 active, 970–970 MARKET; no row on the secured roll.",
+    "checked_on": "2026-09-12",
+    "note": "seed_pages.py skipped this parcel: it carries no 2025 roll row. The page was built by hand from its 2024 row — the assessor's own property_location there reads 33 TURK ST — and says so in `unknowns`.",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "page": "/san-francisco/tenderloin/turk-street/33/",
+    "note": "Page seeded by hand this run."
+   }
+  },
+  {
+   "id": "2026-09-12-0020",
+   "date": "2026-09-12",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "12 Fourth Street",
+   "street_number": "12",
+   "street_name": "04TH",
+   "street_type": "ST",
+   "description": "Hotel Zelos trades as a hotel at this address.",
+   "extra": {
+    "name": "Hotel Zelos",
+    "name_as_listed": "Hotel Zelos",
+    "locality_as_listed": "San Francisco",
+    "page_source_id": "hotel-zelos",
+    "kinds": [
+     "Hotel"
+    ],
+    "listed_by_hoteltonight_on_read_date": true
+   },
+   "citation": {
+    "label": "Hotel Zelos, hotel website",
+    "url": "https://www.zhotelssf.com/hotels/zelos",
+    "locator": "the page's schema.org Hotel address"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3705Z004",
+    "path": "/san-francisco/south-of-market/4th-street/12/",
+    "eas_address": "12 04TH ST",
+    "method": "EAS exact match on 12 04TH ST → parcel 3705Z004; sf-parcels has blklot 3705Z004 active, 10–26 04TH; the 2025 roll records it as miscellaneous/mixed-use. EAS puts 12, 22, 26 04TH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 12. EAS files the address under parcel 3705048, which sf-parcels reports retired; the active parcel its coordinates fall in is 3705Z004.",
+    "checked_on": "2026-09-12",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "page": "/san-francisco/south-of-market/4th-street/10/",
+    "note": "An `occupants` entry on /san-francisco/south-of-market/4th-street/10/."
+   }
+  },
+  {
+   "id": "2026-09-12-0021",
+   "date": "2026-09-12",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "624 Post Street",
+   "street_number": "624",
+   "street_name": "POST",
+   "street_type": "ST",
+   "description": "Andrews Hotel trades as a hotel at this address.",
+   "extra": {
+    "name": "Andrews Hotel",
+    "name_as_listed": "Andrews Hotel",
+    "locality_as_listed": "San Francisco",
+    "page_source_id": "andrews-hotel",
+    "kinds": [
+     "Hotel"
+    ],
+    "listed_by_hoteltonight_on_read_date": true
+   },
+   "citation": {
+    "label": "Andrews Hotel, hotel website",
+    "url": "https://www.andrewshotel.com",
+    "locator": "the address printed in the page footer"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0298008",
+    "path": "/san-francisco/tenderloin/post-street/624/",
+    "eas_address": "624 POST ST",
+    "method": "EAS exact match on 624 POST ST → parcel 0298008; sf-parcels has blklot 0298008 active, 624–624 POST; the 2025 roll records it as commercial hotel, built 1907.",
+    "checked_on": "2026-09-12"
+   },
+   "publish": {
+    "status": "published",
+    "page": "/san-francisco/tenderloin/post-street/624/",
+    "note": "An `occupants` entry on /san-francisco/tenderloin/post-street/624/."
+   }
+  },
+  {
+   "id": "2026-09-12-0022",
+   "date": "2026-09-12",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "2700 Jones Street",
+   "street_number": "2700",
+   "street_name": "JONES",
+   "street_type": "ST",
+   "description": "Kimpton Alton Hotel trades as a hotel at this address.",
+   "extra": {
+    "name": "Kimpton Alton Hotel",
+    "name_as_listed": "Kimpton Alton Fisherman's Wharf",
+    "locality_as_listed": "San Francisco",
+    "page_source_id": "kimpton-alton",
+    "kinds": [
+     "Hotel"
+    ],
+    "listed_by_hoteltonight_on_read_date": true
+   },
+   "citation": {
+    "label": "Kimpton Alton Hotel, hotel website",
+    "url": "https://www.altonhotelsf.com",
+    "locator": "the address printed in the page footer"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0022010",
+    "path": "/san-francisco/russian-hill/jones-street/2700/",
+    "eas_address": "2700 JONES ST",
+    "method": "EAS exact match on 2700 JONES ST → parcel 0022010; sf-parcels has blklot 0022010 active, 475–475 BEACH; the 2025 roll records it as commercial hotel, built 1983. The assessor files the parcel as 475 BEACH ST.",
+    "checked_on": "2026-09-12",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "page": "/san-francisco/russian-hill/jones-street/2700/",
+    "note": "An `occupants` entry on /san-francisco/russian-hill/jones-street/2700/."
+   }
+  },
+  {
+   "id": "2026-09-12-0023",
+   "date": "2026-09-12",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "155 Steuart Street",
+   "street_number": "155",
+   "street_name": "STEUART",
+   "street_type": "ST",
+   "description": "Hotel Griffon trades as a hotel at this address.",
+   "extra": {
+    "name": "Hotel Griffon",
+    "name_as_listed": "Hotel Griffon",
+    "locality_as_listed": "San Francisco",
+    "page_source_id": "hotel-griffon",
+    "kinds": [
+     "Hotel"
+    ],
+    "listed_by_hoteltonight_on_read_date": true
+   },
+   "citation": {
+    "label": "Hotel Griffon, hotel website",
+    "url": "https://www.hotelgriffon.com",
+    "locator": "the page's schema.org Hotel address"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3715006",
+    "path": "/san-francisco/south-beach/steuart-street/155/",
+    "eas_address": "155 STEUART ST",
+    "method": "EAS exact match on 155 STEUART ST → parcel 3715006; sf-parcels has blklot 3715006 active, 155–155 STEUART; the 2025 roll records it as commercial hotel, built 1906.",
+    "checked_on": "2026-09-12",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "page": "/san-francisco/south-beach/steuart-street/155/",
+    "note": "An `occupants` entry on /san-francisco/south-beach/steuart-street/155/."
+   }
+  },
+  {
+   "id": "2026-09-12-0024",
+   "date": "2026-09-12",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "138 King St",
+   "street_number": "138",
+   "street_name": "KING",
+   "street_type": "ST",
+   "description": "Hotel VIA trades as a hotel at this address.",
+   "extra": {
+    "name": "Hotel VIA",
+    "name_as_listed": "Hotel VIA San Francisco",
+    "locality_as_listed": "San Francisco",
+    "page_source_id": "hotel-via",
+    "kinds": [
+     "Hotel"
+    ],
+    "listed_by_hoteltonight_on_read_date": true
+   },
+   "citation": {
+    "label": "Hotel VIA, hotel website",
+    "url": "https://www.hotelviasf.com",
+    "locator": "the address printed in the page header and footer"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3794024",
+    "path": "/san-francisco/south-beach/king-street/136/",
+    "eas_address": "136 KING ST",
+    "method": "EAS exact match on 138 KING ST → parcel 3794024; sf-parcels has blklot 3794024 active, 136–138 KING; the 2025 roll records it as commercial hotel, built 2017. EAS puts 136, 138 KING ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 136.",
+    "checked_on": "2026-09-12",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "page": "/san-francisco/south-beach/king-street/136/",
+    "note": "An `occupants` entry on /san-francisco/south-beach/king-street/136/."
+   }
+  },
+  {
+   "id": "2026-09-12-0025",
+   "date": "2026-09-12",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "524 Sutter Street",
+   "street_number": "524",
+   "street_name": "SUTTER",
+   "street_type": "ST",
+   "description": "The Cartwright Hotel – Union Square trades as a hotel at this address.",
+   "extra": {
+    "name": "The Cartwright Hotel – Union Square",
+    "name_as_listed": "The Cartwright Hotel – Union Square",
+    "locality_as_listed": "San Francisco",
+    "page_source_id": "cartwright-hotel",
+    "kinds": [
+     "Hotel"
+    ],
+    "listed_by_hoteltonight_on_read_date": true
+   },
+   "citation": {
+    "label": "The Cartwright Hotel – Union Square, BW Premier Collection, hotel page on Best Western's site",
+    "url": "https://www.bestwestern.com/en_US/book/hotel-rooms.05738.html",
+    "locator": "the address printed under the hotel name"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0284006",
+    "path": "/san-francisco/nob-hill/sutter-street/524/",
+    "eas_address": "524 SUTTER ST",
+    "method": "EAS exact match on 524 SUTTER ST → parcel 0284006; sf-parcels has blklot 0284006 active, 524–524 SUTTER; the 2025 roll records it as commercial hotel, built 1914.",
+    "checked_on": "2026-09-12"
+   },
+   "publish": {
+    "status": "published",
+    "page": "/san-francisco/nob-hill/sutter-street/524/",
+    "note": "An `occupants` entry on /san-francisco/nob-hill/sutter-street/524/."
+   }
+  },
+  {
+   "id": "2026-09-12-0026",
+   "date": "2026-09-12",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "1800 Sutter St",
+   "street_number": "1800",
+   "street_name": "SUTTER",
+   "street_type": "ST",
+   "description": "Kimpton Hotel Enso trades as a hotel at this address.",
+   "extra": {
+    "name": "Kimpton Hotel Enso",
+    "name_as_listed": "Kimpton Hotel Enso",
+    "locality_as_listed": "San Francisco",
+    "page_source_id": "hotel-enso",
+    "kinds": [
+     "Hotel"
+    ],
+    "listed_by_hoteltonight_on_read_date": true
+   },
+   "citation": {
+    "label": "Kimpton Hotel Enso, hotel website",
+    "url": "https://www.ensohotelsf.com",
+    "locator": "the page's schema.org Hotel address"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0676072",
+    "path": "/san-francisco/pacific-heights/sutter-street/1800/",
+    "eas_address": "1800 SUTTER ST",
+    "method": "EAS exact match on 1800 SUTTER ST → parcel 0676072; sf-parcels has blklot 0676072 active, 1800–1800 SUTTER; the 2025 roll records it as commercial hotel, built 1975. EAS files the address under parcel 0676033, which sf-parcels reports retired; the active parcel its coordinates fall in is 0676072.",
+    "checked_on": "2026-09-12",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "page": "/san-francisco/pacific-heights/sutter-street/1800/",
+    "note": "An `occupants` entry on /san-francisco/pacific-heights/sutter-street/1800/."
+   }
+  },
+  {
+   "id": "2026-09-12-0027",
+   "date": "2026-09-12",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "501 Geary Street",
+   "street_number": "501",
+   "street_name": "GEARY",
+   "street_type": "ST",
+   "description": "The Marker Union Square trades as a hotel at this address.",
+   "extra": {
+    "name": "The Marker Union Square",
+    "name_as_listed": "The Marker Union Square",
+    "locality_as_listed": "San Francisco",
+    "page_source_id": "the-marker",
+    "kinds": [
+     "Hotel"
+    ],
+    "listed_by_hoteltonight_on_read_date": true
+   },
+   "citation": {
+    "label": "The Marker Union Square, hotel website",
+    "url": "https://www.themarkersf.com",
+    "locator": "the page's schema.org Hotel address"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0317001",
+    "path": "/san-francisco/union-square/geary-street/501/",
+    "eas_address": "501 GEARY ST",
+    "method": "EAS exact match on 501 GEARY ST → parcel 0317001; sf-parcels has blklot 0317001 active, 501–507 GEARY; the 2025 roll records it as commercial hotel, built 1907. EAS puts 501, 503, 505, 507 GEARY ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 501.",
+    "checked_on": "2026-09-12"
+   },
+   "publish": {
+    "status": "published",
+    "page": "/san-francisco/union-square/geary-street/501/",
+    "note": "An `occupants` entry on /san-francisco/union-square/geary-street/501/."
+   }
+  },
+  {
+   "id": "2026-09-12-0028",
+   "date": "2026-09-12",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "242 Powell St",
+   "street_number": "242",
+   "street_name": "POWELL",
+   "street_type": "ST",
+   "description": "Hotel Stratford trades as a hotel at this address.",
+   "extra": {
+    "name": "Hotel Stratford",
+    "name_as_listed": "Hotel Stratford",
+    "locality_as_listed": "San Francisco",
+    "page_source_id": "hotel-stratford",
+    "kinds": [
+     "Hotel"
+    ],
+    "listed_by_hoteltonight_on_read_date": true
+   },
+   "citation": {
+    "label": "Hotel Stratford, hotel website",
+    "url": "https://www.hotelstratford.com",
+    "locator": "the page's schema.org Hotel address"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0314010",
+    "path": "/san-francisco/nob-hill/powell-street/236/",
+    "eas_address": "236 POWELL ST",
+    "method": "EAS exact match on 242 POWELL ST → parcel 0314010; sf-parcels has blklot 0314010 active, 236–242 POWELL; the 2025 roll records it as commercial hotel, built 1908. EAS puts 236, 240, 242 POWELL ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 236.",
+    "checked_on": "2026-09-12",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "page": "/san-francisco/nob-hill/powell-street/236/",
+    "note": "An `occupants` entry on /san-francisco/nob-hill/powell-street/236/."
+   }
+  },
+  {
+   "id": "2026-09-12-0029",
+   "date": "2026-09-12",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "250 Beach St",
+   "street_number": "250",
+   "street_name": "BEACH",
+   "street_type": "ST",
+   "description": "Hotel Zephyr trades as a hotel at this address.",
+   "extra": {
+    "name": "Hotel Zephyr",
+    "name_as_listed": "Hotel Zephyr San Francisco",
+    "locality_as_listed": "San Francisco",
+    "page_source_id": "hotel-zephyr",
+    "kinds": [
+     "Hotel"
+    ],
+    "listed_by_hoteltonight_on_read_date": true
+   },
+   "citation": {
+    "label": "Hotel Zephyr, hotel website",
+    "url": "https://www.hotelzephyrsf.com",
+    "locator": "the address printed in the page footer"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "checked_on": "2026-09-12",
+    "method": "EAS files 250 BEACH ST under parcel 0014001, which sf-parcels marks retired. The point falls in 0014002 and 0014003, both active and both on map 0014002 — a two-parcel commercial condominium, the hotel on one and the retail on the other. The building's page is already filed under the map's key parcel 0014002 as 200 Beach Street, so the entry goes there with its own door as listed_address.",
+    "note": "Page already existed; nothing seeded.",
+    "apn": "0014002",
+    "path": "/san-francisco/north-beach/beach-street/200/",
+    "eas_address": "250 BEACH ST",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "page": "/san-francisco/north-beach/beach-street/200/",
+    "note": "An `occupants` entry beside the IHOP the page already carried; the panel now lists both businesses in the building."
+   }
+  },
+  {
+   "id": "2026-09-12-0030",
+   "date": "2026-09-12",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "225 Powell St",
+   "street_number": "225",
+   "street_name": "POWELL",
+   "street_type": "ST",
+   "description": "The Barnes San Francisco, Tapestry Collection by Hilton trades as a hotel at this address.",
+   "extra": {
+    "name": "The Barnes San Francisco, Tapestry Collection by Hilton",
+    "name_as_listed": "The Barnes SF (Tapestry Collection by Hilton)",
+    "locality_as_listed": "San Francisco",
+    "page_source_id": "the-barnes",
+    "kinds": [
+     "Hotel"
+    ],
+    "listed_by_hoteltonight_on_read_date": false
+   },
+   "citation": {
+    "label": "The Barnes San Francisco, hotel page on Hilton's site",
+    "url": "https://www.hilton.com/en/hotels/sfoonup-the-barnes-san-francisco/",
+    "locator": "the address printed under the hotel name"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-12",
+    "method": "sf-eas-addresses has 225 POWELL ST but it does not join to one parcel. 225 POWELL ST's coordinates fall in 4 active parcels (0315029, 0315028, 0315030, 0315031), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
+    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+   },
+   "publish": {
+    "status": "declined",
+    "reason": "HotelTonight did not list The Barnes on the read date, so the entry would earn no offer, and 225 Powell Street is a four-parcel condominium map (0315028) with no page yet — the by-hand building page merchants/AGENTS.md prescribes for a condominium is work this run would do for no offer. Its own site confirms the address, so a refresh that finds it relisted can seed the page and publish it."
+   }
+  }
+ ]
+}
