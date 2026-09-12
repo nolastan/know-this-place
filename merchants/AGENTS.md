@@ -60,10 +60,11 @@ the source ids:
   studio's own sign-up, so it carries none.
 - **An offer claimed with a code is a `code` on the row, not a doctored link.**
   Insomnia Cookies gives out a code and no link that carries it, so its row
-  holds both `url` and `code` and the panel prints the code to copy. Such a row
-  always carries a `note` as well, saying that nothing applies the code for the
-  reader and where they put it — a button that cannot claim the offer has to
-  say who does. Never fold a code into a query string the programme does not
+  holds both `url` and `code`. The panel then inverts: the code takes the
+  accent and states the offer, and the link drops beneath it, because it is the
+  code that earns the offer. Such a row always carries a `note` as well, saying
+  where the reader puts the code — an offer the button cannot claim has to say
+  what does. Never fold a code into a query string the programme does not
   document, and never publish a code a human did not supply.
 
 A directory that is not a list of shops at all — HotelTonight's rotating hotel

@@ -25,11 +25,15 @@ fills it.
 - `2026-09-12` **Referral offer claimed with a code (issue #278)** — the panel's
   call to action is specified as one outlined button, and nothing covers an
   offer the button cannot claim, where the reader has to carry a string away
-  with them. Guessed a dashed `--note-bg` chip under the button — muted "Code"
-  eyebrow, the code in a new `--mono`, `user-select: all` — with the Copy button
-  appended by script rather than rendered, so the affordance exists only where
-  it works. No rule for how a transient "Copied" state should read either;
-  guessed the button's own label for 2.5s plus a visually-hidden live region.
+  with them. Took the accent off the button and gave it to the code: the code
+  keeps the outlined box, states the offer over itself on a muted line, and is
+  set in a new `--mono`, while the merchant's link drops beneath it as an
+  ordinary underlined link labelled with its host. Nothing covers a whole
+  container as a click target either; guessed `role="button"` and the `ic-copy`
+  icon added by the script, so the pointer, the hover and the icon exist only
+  where the copy does. No rule for how a transient "Copied" state should read;
+  guessed the icon swapping to `ic-check` with the box's border going `--ok`
+  for 2.5s, plus a visually-hidden live region.
 - `2026-09-08` **Permit timeline items, tightened (issue #285)** — nothing covers
   what a documented indicator becomes when the decision removes its colour
   channel: the `.cost` tier is specified as "a rising warm hue", the issue took

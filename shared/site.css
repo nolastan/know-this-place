@@ -101,6 +101,7 @@ body {
 .ic-check    { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E"); }
 .ic-eligible { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='12' cy='12' r='9' stroke-dasharray='3.53 3.53'/%3E%3C/svg%3E"); }
 .ic-none     { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M5.64 5.64 18.36 18.36'/%3E%3C/svg%3E"); }
+.ic-copy     { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='8' y='8' width='14' height='14' rx='2'/%3E%3Cpath d='M4 16a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2'/%3E%3C/svg%3E"); }
 .ic-ruler    { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2.5 12 12 2.5 21.5 12 12 21.5z'/%3E%3Cpath d='m7 7.5 2 2M10 5l1.5 1.5M14.5 9.5l2 2M12 12l1.5 1.5'/%3E%3C/svg%3E"); }
 
 /* ============================================================= chrome */
@@ -370,9 +371,11 @@ main > .panel + .panel { margin-top: 1.25rem; }
 .occupant .spec-k, .occupant .spec-v span { white-space: nowrap; }
 .occupant-updated { margin: 0.9rem 0 0; font-family: var(--sans); font-size: 0.78rem; color: var(--muted); }
 /* The one call to action on an address page, so it gets the accent: a
-   full-width outlined button, with the referral disclosure beneath it. */
+   full-width outlined button, with the referral disclosure beneath it. An
+   offer claimed with a code is the exception, below — there the code is the
+   call to action and the link is only a link. */
 .occupant-offer { margin: 0.9rem 0 0; font-family: var(--sans); }
-.occupant-offer a {
+.occupant-offer:not(.occupant-offer-code) a {
   display: block;
   padding: 0.55rem 0.8rem;
   border: 1px solid var(--accent);
@@ -383,61 +386,66 @@ main > .panel + .panel { margin-top: 1.25rem; }
   text-align: center;
   text-decoration: none;
 }
-.occupant-offer a:hover, .occupant-offer a:focus-visible { background: var(--note-bg); }
+.occupant-offer:not(.occupant-offer-code) a:hover,
+.occupant-offer:not(.occupant-offer-code) a:focus-visible { background: var(--note-bg); }
 .occupant-offer small { display: block; margin-top: 0.4rem; font-size: 0.75rem; color: var(--muted); }
-/* A referral claimed with a code rather than a link. The code is the thing the
-   reader has to carry to the merchant, so it sits under the button as its own
-   object — a dashed chip, the code in mono so an l and a 1 are told apart. It
-   is ordinary text: the copy button is added by <ktp-copy> (site.js) and the
-   chip is a plain label until it is, which is why nothing here looks clickable
-   on its own. */
-.offer-code {
-  display: flex;
+/* A referral claimed with a code rather than a link. The code is what earns
+   the offer — the link only opens the shop — so the block inverts: the code
+   takes the accent and the box the button would have had, states the offer
+   over itself, and the merchant's address drops to an ordinary link beneath.
+   The whole box is the copy target, but only once <ktp-copy> (site.js) has
+   made it one: with no script there is no icon, no pointer and no hover, just
+   a code to read, which `user-select: all` still gives up in one click. */
+.occupant-offer-code a {
+  display: inline-flex;
   align-items: center;
-  gap: 0.55rem;
-  margin-top: 0.45rem;
-  padding: 0.4rem 0.7rem;
-  border: 1px dashed var(--rule);
-  border-radius: var(--radius);
-  background: var(--note-bg);
+  gap: 0.3rem;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  text-underline-offset: 0.15em;
 }
-.offer-code-k {
-  flex: 0 0 auto;
-  font-size: 0.66rem;
+.offer-code {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  column-gap: 0.7rem;
+  margin-top: 0.9rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+}
+.offer-code-claim {
+  grid-column: 1;
+  font-family: var(--sans);
+  font-size: 0.78rem;
   font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  line-height: 1.35;
   color: var(--muted);
 }
 .offer-code code {
-  flex: 1 1 auto;
-  min-width: 0;
+  grid-column: 1;
   overflow-wrap: anywhere;
   font-family: var(--mono);
-  font-size: 0.88rem;
+  font-size: 1.02rem;
   font-weight: 700;
-  color: var(--ink);
+  letter-spacing: 0.01em;
+  color: var(--accent);
   -webkit-user-select: all;
   user-select: all;   /* one click selects the whole code with no JS at all */
 }
-/* The button site.js appends. It exists only when the script ran, so it, and
-   not the chip, is what carries the affordance. */
-.offer-code button {
-  flex: 0 0 auto;
-  padding: 0.2rem 0.5rem;
-  border: 1px solid var(--rule);
-  border-radius: 999px;
-  background: var(--panel);
+/* Only the enhanced box is a control: the role is set by the script, so every
+   rule that promises a click hangs off it. */
+.offer-code[role="button"] { cursor: pointer; }
+.offer-code[role="button"]:hover, .offer-code[role="button"]:focus-visible { background: var(--note-bg); }
+.offer-code[role="button"] code { -webkit-user-select: text; user-select: text; }
+.offer-code > .ic {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  font-size: 1.2rem;
   color: var(--accent);
-  font-family: var(--sans);
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  cursor: pointer;
 }
-.offer-code button:hover, .offer-code button:focus-visible { border-color: var(--accent); }
-.offer-code button[data-copied] { color: var(--ok); border-color: var(--ok); }
+.offer-code[data-copied] { border-color: var(--ok); }
+.offer-code[data-copied] > .ic { color: var(--ok); }
 
 /* For text that exists only to be announced — a live region reporting the
    outcome of something the sighted reader can already see. Never for content. */

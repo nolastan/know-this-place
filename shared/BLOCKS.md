@@ -520,15 +520,25 @@ link does reach the merchant — a Momence studio's sign-up — carries none, si
 the button already says where it goes.
 
 An offer the reader claims with a **code** rather than a link that carries it
-prints the code under the button, in a `.offer-code` chip, and the disclosure
-line says who applies it — nobody. The code is text in the HTML: `<ktp-copy>`
-only appends the Copy button, so a reader with no JS still reads the code and
-`user-select: all` still hands it over in one click. Never put the code only in
-the link, and never render a Copy button into the markup.
+**inverts the block**, on `.occupant-offer.occupant-offer-code`. It is the code
+that earns the offer, not the link, so the code takes the accent and the box the
+button would have had — `.offer-code`, stating the offer over itself on a muted
+`.offer-code-claim` line — and the merchant's own address drops beneath it to an
+ordinary link labelled with its host. The disclosure line then says where the
+reader puts the code.
+
+The whole box is the copy target, but only once `<ktp-copy>` has made it one:
+the script adds the role, the `ic-copy` icon and (through them, in CSS) the
+pointer and the hover, so a reader whose script never ran is shown no
+affordance at all — just a code, which `user-select: all` still gives up in one
+click. Never put the code only in the link, and never render the icon or a Copy
+control into the markup.
 ```html
-<p class="occupant-offer"><a href="…" rel="sponsored noopener">Get 100 points at Insomnia Cookies</a>
-<ktp-copy class="offer-code"><span class="offer-code-k">Code</span><code>Stanft6246</code></ktp-copy>
-<small>Referral code. Nothing applies it for you — type it into the “Referral code (optional)” field when you create an Insomnia Cookies account.</small></p>
+<p class="occupant-offer occupant-offer-code">
+  <ktp-copy class="offer-code"><span class="offer-code-claim">Get 100 points at Insomnia Cookies</span><code>Stanft6246</code></ktp-copy>
+  <a href="…" rel="sponsored noopener"><span class="ic ic-link"></span>insomniacookies.com</a>
+  <small>Referral code. Type it into the “Referral code (optional)” field when you create an Insomnia Cookies account.</small>
+</p>
 ```
 
 ### Notes — `.community-note`
@@ -579,5 +589,5 @@ hub's `index.md`; keeping the nearby block off the pattern is what lets
 `<span class="ic ic-calendar"></span>`; sized in `em`, colored by surrounding
 text. Available: `ic-calendar` `ic-home` `ic-layers` `ic-plan` `ic-lot`
 `ic-value` `ic-permit` `ic-pin` `ic-clock` `ic-help` `ic-link` `ic-check`
-`ic-ruler`. `ic-lg` enlarges. **Only icons in this list exist.** Adding one is
+`ic-copy` `ic-ruler`. `ic-lg` enlarges. **Only icons in this list exist.** Adding one is
 a `site.css` change — see [AGENTS.md → Extending the system](AGENTS.md#extending-the-system).

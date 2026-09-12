@@ -183,23 +183,27 @@ customElements.define(
 );
 
 /* <ktp-copy class="offer-code">
-     <span class="offer-code-k">Code</span><code>Stanft6246</code>
+     <span class="offer-code-claim">Get 100 points at Insomnia Cookies</span>
+     <code>Stanft6246</code>
    </ktp-copy>
 
    A string the reader has to carry somewhere else — a referral code a merchant
-   makes you type in yourself — with a button that copies it.
+   makes you type in yourself — with the whole box as the copy target.
 
    The code is already the element's own text, so this reveals nothing: with no
-   JS the chip still prints it, and `user-select: all` still hands it over in
-   one click. The button is appended rather than rendered into the page for
-   exactly that reason — an affordance that only works when the script ran
-   should only exist when the script ran, so a reader with no JS is never
-   offered a dead button.
+   JS the box still prints it, and `user-select: all` still hands it over in one
+   click. Everything that promises a click — the role, the copy icon, the
+   pointer and hover that hang off the role in site.css — is added here rather
+   than rendered into the page, so a reader whose script never ran is never
+   shown an affordance that cannot work.
+
+   role="button" on a plain element is not a <button>: it takes its own
+   tabindex, and Enter and Space have to be wired by hand.
 
    The clipboard can refuse (an insecure origin, a permission the browser will
    not grant, a reader who has denied it). There is nothing to fall back to and
-   nothing worth an alert, so the button says so and the code stays selectable,
-   which is what it was before the button existed. */
+   nothing worth an alert, so the box selects the code instead and says so,
+   which is where it started. */
 customElements.define(
   "ktp-copy",
   class extends HTMLElement {
@@ -207,13 +211,9 @@ customElements.define(
       const code = this.querySelector("code");
       if (!code || !navigator.clipboard) return; // nothing to copy, or no way to
 
-      const button = document.createElement("button");
-      button.type = "button";
-      button.textContent = "Copy";
-      // The code is the button's own neighbour and visible, so the label needs
-      // to say which code rather than repeat it.
-      button.setAttribute("aria-label", "Copy the referral code");
-      this.appendChild(button);
+      const icon = document.createElement("span");
+      icon.className = "ic ic-copy";
+      this.appendChild(icon);
 
       // role="status" so the outcome is announced, not only shown.
       const said = document.createElement("span");
@@ -221,30 +221,39 @@ customElements.define(
       said.setAttribute("role", "status");
       this.appendChild(said);
 
+      this.setAttribute("role", "button");
+      this.tabIndex = 0;
+      this.setAttribute("aria-label", `Copy the referral code ${code.textContent.trim()}`);
+
       let revert;
-      button.addEventListener("click", async () => {
-        let label, spoken;
+      const copy = async () => {
+        let spoken;
         try {
           await navigator.clipboard.writeText(code.textContent.trim());
-          label = "Copied";
           spoken = "Referral code copied to the clipboard.";
-          button.dataset.copied = "";
+          icon.className = "ic ic-check";
+          this.dataset.copied = "";
         } catch {
           // Selecting it is the whole of the fallback: the reader copies it
-          // with their own keyboard, as they would have without the button.
+          // with their own keyboard, as they would have without the icon.
           getSelection()?.selectAllChildren(code);
-          label = "Selected";
           spoken = "Could not reach the clipboard. The code is selected — copy it yourself.";
-          delete button.dataset.copied;
+          delete this.dataset.copied;
         }
-        button.textContent = label;
         said.textContent = spoken;
         clearTimeout(revert);
         revert = setTimeout(() => {
-          button.textContent = "Copy";
+          icon.className = "ic ic-copy";
           said.textContent = "";
-          delete button.dataset.copied;
+          delete this.dataset.copied;
         }, 2500);
+      };
+
+      this.addEventListener("click", copy);
+      this.addEventListener("keydown", (e) => {
+        if (e.key !== "Enter" && e.key !== " ") return;
+        e.preventDefault(); // Space would scroll the page
+        copy();
       });
     }
   },
