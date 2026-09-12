@@ -1,0 +1,331 @@
+{
+ "source_id": "fitnesssf",
+ "batch": "2026-09-11",
+ "read_on": "2026-09-11",
+ "notes": "FITNESS SF's own locations, named in issue #320, read from each location page on 2026-09-11. https://www.fitnesssf.com/locations names nine gyms but carries no addresses or hours; each location page states both, and two fetches of all seven San Francisco pages the same day were byte-identical. The chain's two other locations are in Corte Madera and Oakland and stay off. The site titles each location 'SF CASTRO', 'SF SOMA' and so on and gives the brand as 'FITNESS SF' (its footer: 'FitnessSF / FITNESS SF is a brand of Jackovics Enterprises, Inc.'); `name` is the issue's spelling of the two together, `name_as_listed` the page's own title. No location page publishes coordinates or schema.org markup, so every address is resolved from the address it prints. The Polk gym is not open: its page says 'GYM OPENING October 2026' over 'Presale Office Now Open!', and the hours it publishes are the presale office's, so that entry's `kinds` says so and its page carries an `unknowns` line rather than reading as an open gym. One referral link covers the whole chain — join.fitnesssf.com with a member code, a free month for the person joining (https://www.fitnesssf.com/referral-program: 'Give a FREE Month, Get a FREE Month') — so there is one REFERRALS row, `fitnesssf`, and one source id for all seven pages.",
+ "coverage": {
+  "unit": "gym locations",
+  "examined": 9,
+  "mentions": 7,
+  "remaining": "None; every San Francisco location is here. The other two, Corte Madera (Marin) and Oakland, are outside the city."
+ },
+ "findings": [
+  {
+   "id": "2026-09-11-0001",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "2301 Market Street",
+   "street_number": "2301",
+   "street_name": "MARKET",
+   "street_type": "ST",
+   "description": "FITNESS SF lists a gym at this address.",
+   "extra": {
+    "name": "Fitness SF Castro",
+    "name_as_listed": "SF CASTRO",
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94114",
+    "kinds": [
+     "Gym",
+     "Fitness"
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th 05:00-24:00",
+     "Fr 05:00-23:00",
+     "Sa,Su 07:00-20:00"
+    ]
+   },
+   "citation": {
+    "label": "FITNESS SF, SF CASTRO location page",
+    "url": "https://www.fitnesssf.com/location/castro",
+    "locator": "the page's address and hours block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3563034",
+    "path": "/san-francisco/castro/market-street/2301/",
+    "eas_address": "2301 MARKET ST",
+    "method": "EAS exact match on 2301 MARKET ST → parcel 3563034; sf-parcels has blklot 3563034 active, 2301–2301 MARKET; the 2025 roll records it as commercial retail, built 1963.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/321",
+    "note": "An `occupants` entry on /san-francisco/castro/market-street/2301/."
+   }
+  },
+  {
+   "id": "2026-09-11-0002",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "2 Embarcadero Center",
+   "street_number": "2",
+   "street_name": "EMBARCADERO CENTER",
+   "street_type": null,
+   "description": "FITNESS SF lists a gym at this address.",
+   "extra": {
+    "name": "Fitness SF Embarcadero",
+    "name_as_listed": "SF EMBARCADERO",
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94111",
+    "kinds": [
+     "Gym",
+     "Fitness"
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr 05:00-21:00"
+    ]
+   },
+   "citation": {
+    "label": "FITNESS SF, SF EMBARCADERO location page",
+    "url": "https://www.fitnesssf.com/location/sf-embarcadero",
+    "locator": "the page's address and hours block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0231023",
+    "path": "/san-francisco/financial-district/embarcadero-center/2/",
+    "by_hand": true,
+    "method": "By hand: sf-eas-addresses has no street named EMBARCADERO CENTER at all — the registry spells the waterfront street THE EMBARCADERO and holds no 2 THE EMBARCADERO either, filing parcel 0231023 under 201 CLAY ST. The 2025 roll names the parcel '0000 0002 THE EMBARCADERO', commercial office, built 1974, 35 stories on a 75,625 sq ft lot, and sf-parcels has blklot 0231023 active with mapblklot 0231023 — one parcel, not a condominium stack. DBI confirms the tenancy on the parcel itself: permit 'fire alarm work for the fitness sf' on the 1st floor is filed at 2 Embarcadero Center under block 0231, lot 023. The page goes under the Embarcadero Center hub at the complex's own number, as 4 Embarcadero Center (parcel 0233044, which EAS files as 150 DRUMM ST) already is.",
+    "checked_on": "2026-09-11",
+    "note": "No page at this path yet; the parcel is the publisher's to seed. Its `unknowns` says how the listing's address and the city's records differ."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/321",
+    "note": "An `occupants` entry on /san-francisco/financial-district/embarcadero-center/2/, whose `unknowns` says the registry files the parcel as 201 Clay Street and the roll as 2 The Embarcadero."
+   }
+  },
+  {
+   "id": "2026-09-11-0003",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "1455 Fillmore Street",
+   "street_number": "1455",
+   "street_name": "FILLMORE",
+   "street_type": "ST",
+   "description": "FITNESS SF lists a gym at this address.",
+   "extra": {
+    "name": "Fitness SF Fillmore",
+    "name_as_listed": "SF FILLMORE",
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94115",
+    "kinds": [
+     "Gym",
+     "Fitness"
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th 05:00-24:00",
+     "Fr 05:00-23:00",
+     "Sa,Su 07:00-20:00"
+    ]
+   },
+   "citation": {
+    "label": "FITNESS SF, SF FILLMORE location page",
+    "url": "https://www.fitnesssf.com/location/fillmore",
+    "locator": "the page's address and hours block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0726021",
+    "path": "/san-francisco/western-addition/fillmore-street/1455/",
+    "eas_address": "1455 FILLMORE ST",
+    "method": "EAS exact match on 1455 FILLMORE ST → parcel 0726021; sf-parcels has blklot 0726021 active, 1455–1455 FILLMORE; the 2025 roll records it as multi-family residential, built 1993. The assessor files the parcel as 1410 STEINER ST.",
+    "checked_on": "2026-09-11",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/321",
+    "note": "An `occupants` entry on /san-francisco/western-addition/fillmore-street/1455/. The roll's one-unit `units` came off the seeded page and its `unknowns` says the roll states no figures for the Fillmore Center."
+   }
+  },
+  {
+   "id": "2026-09-11-0004",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "1 10th Street",
+   "street_number": "1",
+   "street_name": "10TH",
+   "street_type": "ST",
+   "description": "FITNESS SF lists a gym at this address.",
+   "extra": {
+    "name": "Fitness SF Mid Market",
+    "name_as_listed": "SF MID MARKET",
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94103",
+    "kinds": [
+     "Gym",
+     "Fitness"
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr 05:00-22:00",
+     "Sa,Su 07:00-20:00"
+    ]
+   },
+   "citation": {
+    "label": "FITNESS SF, SF MID MARKET location page",
+    "url": "https://www.fitnesssf.com/location/mid-market",
+    "locator": "the page's address and hours block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3508039",
+    "path": "/san-francisco/south-of-market/stevenson-street/875/",
+    "eas_address": "875 STEVENSON ST",
+    "by_hand": true,
+    "method": "By hand: sf-eas-addresses has no 1 10TH ST, and the only parcel carrying a 10th Street number below 40 is 3507041, 8–18 10TH ST, across the street. DBI places the gym instead: three permits naming 'fitness sf' — one for 'mechanical & electrical as part of expansion of fitness sf into adjacent space', two for ground-floor fire alarm work — are filed at 875 Stevenson St under block 3508, lot 039. sf-parcels has blklot 3508039 active, mapblklot 3508039, 875–875 STEVENSON; EAS holds 875 STEVENSON ST on it; the 2025 roll records it as commercial office, built 1975, 10 stories on a 39,650 sq ft lot. The parcel's southwest edge fronts 10th Street opposite 8–18 10TH ST, so '1 10th Street' is this building's door on that frontage, under a number the city's registry does not carry.",
+    "checked_on": "2026-09-11",
+    "note": "No page at this path yet; the parcel is the publisher's to seed. Its `unknowns` says how the listing's address and the city's records differ."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/321",
+    "note": "An `occupants` entry on /san-francisco/south-of-market/stevenson-street/875/, whose `unknowns` says the city's registry has no 1 10th Street and that DBI files the gym at 875 Stevenson Street."
+   }
+  },
+  {
+   "id": "2026-09-11-0005",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "1600 Jackson Street",
+   "street_number": "1600",
+   "street_name": "JACKSON",
+   "street_type": "ST",
+   "description": "FITNESS SF lists its Polk location at this address: a gym opening October 2026, with a presale office open there now.",
+   "extra": {
+    "name": "Fitness SF Polk",
+    "name_as_listed": "SF POLK",
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94109",
+    "kinds": [
+     "Presale office"
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr 09:00-19:00",
+     "Sa,Su 08:00-19:00"
+    ],
+    "status_as_listed": "GYM OPENING October 2026 / Presale Office Now Open!",
+    "hours_are": "the presale office's, not a gym's — the gym opens October 2026, so `kinds` says presale office"
+   },
+   "citation": {
+    "label": "FITNESS SF, SF POLK location page",
+    "url": "https://www.fitnesssf.com/location/sf-polk",
+    "locator": "the page's address and hours block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0595002",
+    "path": "/san-francisco/russian-hill/jackson-street/1600/",
+    "eas_address": "1600 JACKSON ST",
+    "method": "EAS exact match on 1600 JACKSON ST → parcel 0595002; sf-parcels has blklot 0595002 active, 1600–1604 JACKSON; the 2025 roll records it as commercial misc, built 1908. EAS puts 1600, 1604 JACKSON ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1600.",
+    "checked_on": "2026-09-11",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/321",
+    "note": "An `occupants` entry on /san-francisco/russian-hill/jackson-street/1600/ with `kinds` \"Presale office\" — the hours the site publishes are the presale office's — and an `unknowns` line giving the gym's October 2026 opening."
+   }
+  },
+  {
+   "id": "2026-09-11-0006",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "1001 Brannan Street",
+   "street_number": "1001",
+   "street_name": "BRANNAN",
+   "street_type": "ST",
+   "description": "FITNESS SF lists a gym at this address.",
+   "extra": {
+    "name": "Fitness SF SoMa",
+    "name_as_listed": "SF SOMA",
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94103",
+    "kinds": [
+     "Gym",
+     "Fitness"
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th 05:00-24:00",
+     "Fr 05:00-23:00",
+     "Sa,Su 07:00-20:00"
+    ]
+   },
+   "citation": {
+    "label": "FITNESS SF, SF SOMA location page",
+    "url": "https://www.fitnesssf.com/location/soma",
+    "locator": "the page's address and hours block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3527001",
+    "path": "/san-francisco/mission/brannan-street/1001/",
+    "eas_address": "1001 BRANNAN ST",
+    "method": "EAS exact match on 1001 BRANNAN ST → parcel 3527001; sf-parcels has blklot 3527001 active, 1001–1001 BRANNAN; the 2025 roll records it as industrial, built 1917.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/321",
+    "note": "An `occupants` entry on /san-francisco/mission/brannan-street/1001/."
+   }
+  },
+  {
+   "id": "2026-09-11-0007",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "425 Mission Street",
+   "street_number": "425",
+   "street_name": "MISSION",
+   "street_type": "ST",
+   "description": "FITNESS SF lists a gym at this address.",
+   "extra": {
+    "name": "Fitness SF Transbay",
+    "name_as_listed": "SF TRANSBAY",
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94105",
+    "kinds": [
+     "Gym",
+     "Fitness"
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr 05:00-22:00",
+     "Sa,Su 07:00-20:00"
+    ],
+    "entrance_as_listed": "Entrance at 1st & Minna"
+   },
+   "citation": {
+    "label": "FITNESS SF, SF TRANSBAY location page",
+    "url": "https://www.fitnesssf.com/location/sf-transbay",
+    "locator": "the page's address and hours block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3720010",
+    "path": "/san-francisco/east-cut/mission-street/425/",
+    "eas_address": "425 MISSION ST",
+    "method": "EAS exact match on 425 MISSION ST → parcel 3720010; sf-parcels has blklot 3720010 active, 425–425 MISSION; the 2025 roll records it as miscellaneous/mixed-use.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/321",
+    "note": "An `occupants` entry on /san-francisco/east-cut/mission-street/425/."
+   }
+  }
+ ]
+}

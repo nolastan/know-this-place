@@ -199,6 +199,7 @@ are listed so their size is visible before anyone opens one.
 | `early-settlement-era-styles.json` | 1 | 1 KB | `marina` |
 | `earthquake-shacks.json` | 5 | 2 KB | `bernal-heights`, `outer-richmond`, `inner-sunset` +1 |
 | `eureka-valley-context-statement.json` | 54 | 21 KB | `castro`, `mission`, `haight-ashbury` +3 |
+| `fitnesssf-2026-09-11.json` | 4 | 1 KB | `financial-district`, `russian-hill`, `western-addition` +1 |
 | `flats-small-apartments-hcs.json` | 42 | 17 KB | `marina`, `russian-hill`, `nob-hill` +13 |
 | `glen-park-context-statement.json` | 44 | 17 KB | `glen-park` |
 | `india-basin-survey.json` | 40 | 16 KB | `bayview-hunters-point` |

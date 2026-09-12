@@ -4,6 +4,7 @@ The parcels on Embarcadero Center documented here so far, from the city's addres
 
 ## Documented so far
 
+- [2](2/) — A 1974 office building, with electrical work permitted in 2008.
 - [4](4/) — A 1979 office building, with stair work permitted in 2019.
 
 Pages are generated from the DataSF datasets listed in each page's

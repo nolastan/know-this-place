@@ -11,14 +11,16 @@ unchanged. The key and its block are specified in
 
 ## Sources
 
-One row per directory. `id` is the id a page's `sources` entry and each
-`occupants` entry cite. **Referral** says whether the renderer's `REFERRALS`
-table carries an offer for it — that table, in `scripts/seed_pages.py`, is the
-only place an offer lives.
+One row per source — a directory, or a chain that lists its own doors. `id`
+is the id a page's `sources` entry and each `occupants` entry cite.
+**Referral** says whether the renderer's `REFERRALS` table carries an offer
+for it — that table, in `scripts/seed_pages.py`, is the only place an offer
+lives.
 
-| id | Directory | Read from | Referral | Files |
+| id | Source | Read from | Referral | Files |
 |---|---|---|---|---|
 | `bites` | Bites, merchant directory | `https://withbites.com/merchants` — the page's schema.org `ItemList`, every Bites merchant in the country, one `Restaurant` each | $5 off a first order; the link opens the app, not the merchant (no per-merchant deep link exists) | `bites/<date>.json` |
+| `fitnesssf` | FITNESS SF, gyms (its own site) | `https://www.fitnesssf.com/locations` names the nine gyms but carries no addresses or hours; each location page, `https://www.fitnesssf.com/location/<slug>`, prints both as plain text, with no schema.org markup and no coordinates | One link for the whole chain: a free month for the person joining, on FITNESS SF's own sign-up | `fitnesssf/<date>.json` |
 | `momence` | Momence, class-booking hosts | Momence's host record (`https://momence.com/_api/primary/plugin/hosts/<id>`) confirms each host's name but lists no locations, so the addresses come from each studio's own location pages | Per host: one `REFERRALS` row per studio, keyed `momence-<studio>`, which is also the page's source id; the link opens that studio's sign-up | `momence/<date>.json` |
 | `ritual` | Ritual, ordering app | `https://ritual.co/order?lat=&lon=` server-renders its nearby-merchant list into the page's `__NEXT_DATA__` — 36 listings at most, within 5 km, ranked by distance from the point — so a grid of points and a de-duplication by merchant id is what covers the city. Each listing's own page, `https://ritual.co/order<menuPath>`, carries the postal code, the weekly hours and the categories the list leaves out | $10 across the first orders; the link opens Ritual's sign-up page, not the merchant | `ritual/<date>.json` |
 
