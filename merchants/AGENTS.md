@@ -73,20 +73,29 @@ decision before any page changes.
   directory never shows one.
 - **Occupants describe today.** A refresh replaces a page's entries from that
   source wholesale: a merchant the directory no longer lists comes off the
-  page. It is not a timeline fact.
+  page. It is not a timeline fact. An entry two directories share survives a
+  refresh that drops one of them — take the dropped directory out of
+  `also_listed_by`, or, where it was the entry's `source`, rewrite the entry
+  from the directory that still lists it and move that one out of
+  `also_listed_by` into `source`. The entry only comes off when no directory
+  lists it any more.
 - **List what the directory lists.** A shared kitchen trading as three brands
   at one door is three entries; don't adjudicate which is "real". The
   exception is the same listing twice — one point, identical hours, one name a
   prefix of the other — which becomes one entry, the fuller name, with the
   other marked `publish.status: "declined"` and the reason.
-- **One business is one entry on a page, across directories too.** A merchant
-  trading from two directories — Mediterranean Aroma is on both Bites and
-  Ritual — would otherwise appear twice in one panel, under two offers, and
-  read as two businesses. The entry already published stands; the second is
-  marked `publish.status: "declined"` naming the page and the source that has
-  it, and that page gets no `sources` row for the second directory. Check for
-  this before writing: the run's own pages are not the only ones a directory
-  lands on.
+- **One business is one entry on a page, across directories too — but it
+  keeps every offer.** A merchant trading from two directories —
+  Mediterranean Aroma is on both Bites and Ritual — would otherwise appear
+  twice in one panel and read as two businesses. It stays one entry, and the
+  second directory joins it in `also_listed_by`, which puts that directory's
+  button on the panel beside the first's. The page gets a `sources` row for
+  both. The entry's own facts — `cuisines`, `opening_hours`,
+  `listed_address`, and the "Last updated" date under them — are `source`'s,
+  and `source` is **whichever directory was read most recently**; where two
+  reads share a date, the entry already on the page stands and the newcomer
+  only adds itself to `also_listed_by`. Check for this before writing: the
+  run's own new pages are not the only ones a directory lands on.
 - **A merchant in a condominium goes on the building's page, never a
   unit's.** The resolver refuses a condominium parcel, rightly; establish the
   building's parcel set instead — every active parcel sharing one sf-parcels

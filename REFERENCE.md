@@ -173,8 +173,9 @@ directory wrote them; both render as the muted line under the name),
 renderer formats them and marks the days not listed as closed),
 `listed_address` (the merchant's own door, shown only when it isn't the
 page's lead number), `unit` (on a condominium building's page, the unit the
-merchant trades from — only where a city record ties the two together) and
-`source`, matching an id in `sources`.
+merchant trades from — only where a city record ties the two together),
+`source`, matching an id in `sources`, and `also_listed_by`, the other source
+ids that list the same business, each also in `sources`.
 
 - **The panel's "Last updated" date is that source's `retrieved`.** Hours
   drift within days, so the date is on the panel as well as in the footer,
@@ -184,6 +185,11 @@ merchant trades from — only where a city record ties the two together) and
   `REFERRALS` table, keyed by source id, is the only place an offer lives; an
   entry never carries a link of its own, so a merchant from a directory with no
   referral programme never shows one.
+- **One business is one entry, whatever number of directories list it.** The
+  second directory goes in `also_listed_by` and its button joins the panel;
+  the entry's facts and its "Last updated" date are `source`'s, the most
+  recently read of them. Two entries for one business would read as two
+  businesses.
 - **A business is not a person** — see "Privacy" in [AGENTS.md](AGENTS.md).
   The merchant's name, never its owner's.
 - Where the entries come from, and how a directory is refreshed, is

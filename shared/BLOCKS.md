@@ -493,8 +493,10 @@ merchant is an `.occupant` group — the name as a serif headline, its `kinds`
 (or `cuisines`, from a food directory) on a muted line, a `.speclist` of hours
 — split from the next by a hairline. The panel closes with the date the listing
 was read — only where it published hours, which is what that date is about —
-and, when the source is in `REFERRALS`, one outlined offer button, with a
-referral disclosure beneath it where the row carries one.
+and an outlined offer button for each directory in `REFERRALS` that lists one
+of the merchants, with a referral disclosure beneath it where the row carries
+one. A business two directories list is one `.occupant` group with two buttons
+under it, never two groups.
 ```html
 <section class="panel panel-occupant">
   <p class="occupant-kind">Current occupant</p>
