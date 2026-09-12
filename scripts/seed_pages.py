@@ -2221,8 +2221,8 @@ REFERRALS = {
         "url": "https://order.ritual.co/join-your-friends?promo=STANFORD66377",
         "offer": "Get $10 towards your first Ritual orders",
         "app": "Ritual",
-        "note": ("Referral link. It opens Ritual's sign-up page, where you can search "
-                 "for {which}. $5 is applied on signup and $5 after your first order."),
+        "note": ("Referral link. Sign up and then search for {which}. "
+                 "$5 is applied on signup and $5 after your first order."),
     },
     "vuori": {
         "url": ("https://vuoriclothing.com/?utm_medium=EMAIL&utm_campaign=referral_program"
