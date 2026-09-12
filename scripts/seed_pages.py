@@ -2169,6 +2169,13 @@ REFERRALS = {
         "offer": "Get 30% off at Casper",
         "app": "Casper",
     },
+    "crumbl": {
+        "url": "https://cmbl.co/RZ6XAQU99O8G",
+        "offer": "Join Crumbl Rewards and earn Crumbs on every order",
+        "app": "Crumbl",
+        "note": ("Referral link. It opens the Crumbl app at the invite, not "
+                 "this bakery's own page."),
+    },
     "fitnesssf": {
         "url": "https://join.fitnesssf.com/?m=0bcaa244-52f7-472f-806d-0e517436edb0",
         "offer": "Get a free month at FITNESS SF",
