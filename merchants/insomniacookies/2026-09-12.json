@@ -1,0 +1,198 @@
+{
+  "source_id": "insomniacookies",
+  "batch": "2026-09-12",
+  "read_on": "2026-09-12",
+  "notes": "Insomnia Cookies' four San Francisco stores, named in issue #278, read on 2026-09-12. The store pages under https://insomniacookies.com/store/<slug> are a client-rendered shell that prints no address, so the listings come from the GraphQL API behind them — POST https://api.insomniacookies.com/graphql, `storeBySlug(where:{slug:$slug})` — which answers unauthenticated; `storeSearch`, the store finder's own query, does not. The sitemap's 378 store slugs were read twice on 2026-09-12 and the two reads agreed field for field; four stores give San Francisco as their city, the same four the issue lists, and the nearest other California store is in San Jose. The API publishes two sets of hours per store, Retail and Delivery; the panel takes Retail, the hours the shop is open, and the two differ by fifteen minutes at opening. The store record carries no category — `metaTitle`, `metaHeading` and `metaDescription` are empty or null on all four — so no entry publishes `kinds`: the one blurb that calls a store a bakery is the Kearny Street one, and applying that word to the other three would be ours rather than the directory's. The `blurb`, `storefrontImage` and delivery-range fields describe the merchant and its catchment rather than the building and stay off the pages. The issue's referral programme is a code, Stanft6246, entered by hand in the sign-up form's \"Referral code (optional)\" field — no link carries it — so the `insomniacookies` REFERRALS row holds both the code and Insomnia Cookies' own address, and the panel prints the code to copy beside the button. One REFERRALS row for the chain.",
+  "coverage": {
+    "unit": "store locations",
+    "examined": 378,
+    "mentions": 4,
+    "remaining": "None. Four of the 378 stores in the sitemap give San Francisco as their city; the other California stores are in Chico, Claremont, Davis, Irvine, Los Angeles (three), Sacramento, San Diego (two), San Jose, San Luis Obispo, Santa Barbara, Santa Cruz and South Lake Tahoe."
+  },
+  "findings": [
+    {
+      "id": "2026-09-12-0001",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "390 1st Street",
+      "street_number": "390",
+      "street_name": "01ST",
+      "street_type": "ST",
+      "description": "Insomnia Cookies lists a store at this address.",
+      "extra": {
+        "name": "Insomnia Cookies",
+        "name_as_listed": "SoMa/Rincon Hill SF",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94105",
+        "opening_hours": [
+          "Mo,Tu,We,Th,Fr 11:00-24:00",
+          "Sa,Su 12:00-24:00"
+        ],
+        "geo": [
+          37.7861059,
+          -122.3934899
+        ],
+        "store_slug": "sanfranciscorinconhill"
+      },
+      "citation": {
+        "label": "Insomnia Cookies, SoMa/Rincon Hill SF store page",
+        "url": "https://insomniacookies.com/store/sanfranciscorinconhill",
+        "locator": "the storeBySlug record the page renders from: its address and its Retail Hours"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3749058",
+        "path": "/san-francisco/east-cut/1st-street/386/",
+        "eas_address": "386 01ST ST",
+        "method": "EAS exact match on 390 01ST ST → parcel 3749058; sf-parcels has blklot 3749058 active, 386–390 01ST; the 2025 roll records it as multi-family residential. EAS puts 386, 390 01ST ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 386.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/east-cut/1st-street/386/, the page seeded for the parcel the store's number sits on; EAS puts 386 and 390 01ST ST on it, so the entry carries `listed_address` 390 1st Street."
+      }
+    },
+    {
+      "id": "2026-09-12-0002",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "362 Kearny Street",
+      "street_number": "362",
+      "street_name": "KEARNY",
+      "street_type": "ST",
+      "description": "Insomnia Cookies lists a store at this address.",
+      "extra": {
+        "name": "Insomnia Cookies",
+        "name_as_listed": "San Francisco, CA",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94108",
+        "opening_hours": [
+          "Mo,Tu,We,Th,Fr 11:00-24:00",
+          "Sa,Su 12:00-24:00"
+        ],
+        "geo": [
+          37.7916137,
+          -122.4040812
+        ],
+        "store_slug": "sanfrancisco"
+      },
+      "citation": {
+        "label": "Insomnia Cookies, San Francisco, CA store page",
+        "url": "https://insomniacookies.com/store/sanfrancisco",
+        "locator": "the storeBySlug record the page renders from: its address and its Retail Hours"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0269027",
+        "path": "/san-francisco/union-square/kearny-street/346/",
+        "eas_address": "346 KEARNY ST",
+        "method": "EAS exact match on 362 KEARNY ST → parcel 0269027; sf-parcels has blklot 0269027 active, 45–89 BELDEN; the 2025 roll records it as commercial retail, built 1908. EAS puts 346, 350, 356, 362 KEARNY ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 346.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on the existing /san-francisco/union-square/kearny-street/346/; EAS puts 346, 350, 356 and 362 KEARNY ST on the parcel, so the entry carries `listed_address` 362 Kearny Street."
+      }
+    },
+    {
+      "id": "2026-09-12-0003",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1215 4th Street",
+      "street_number": "1215",
+      "street_name": "04TH",
+      "street_type": "ST",
+      "description": "Insomnia Cookies lists a store at this address.",
+      "extra": {
+        "name": "Insomnia Cookies",
+        "name_as_listed": "Mission Bay SF",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94158",
+        "opening_hours": [
+          "Mo,Tu,We 11:00-24:00",
+          "Th,Fr 11:00-01:00",
+          "Sa 12:00-01:00",
+          "Su 12:00-24:00"
+        ],
+        "geo": [
+          37.7726108,
+          -122.3911611
+        ],
+        "store_slug": "missionbay"
+      },
+      "citation": {
+        "label": "Insomnia Cookies, Mission Bay SF store page",
+        "url": "https://insomniacookies.com/store/missionbay",
+        "locator": "the storeBySlug record the page renders from: its address and its Retail Hours"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "8711028",
+        "path": "/san-francisco/south-of-market/4th-street/1215/",
+        "eas_address": "1215 04TH ST",
+        "method": "EAS exact match on 1215 04TH ST → parcel 8711028; sf-parcels has blklot 8711028 active, 1201–1285 04TH; the 2025 roll records it as multi-family residential, built 2009. The assessor files the parcel as 555 MISSION ROCK ST. EAS puts 1215, 1225, 1235, 1245, 1265, 1275, 1285 04TH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1215.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/south-of-market/4th-street/1215/, seeded for the parcel; the store is at the page's own lead number. The assessor files the parcel as 555 Mission Rock Street, and the neighborhood directory files 4th Street under South of Market, so the store Insomnia Cookies calls Mission Bay is on a South of Market page."
+      }
+    },
+    {
+      "id": "2026-09-12-0004",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2 Varela Ave. Suite No. 2",
+      "street_number": "2",
+      "street_name": "VARELA",
+      "street_type": "AVE",
+      "description": "Insomnia Cookies lists a store at this address.",
+      "extra": {
+        "name": "Insomnia Cookies",
+        "name_as_listed": "SF State Campus",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94132",
+        "opening_hours": [
+          "Mo,Tu,We 11:00-01:00",
+          "Th,Fr 11:00-03:00",
+          "Sa 12:00-03:00",
+          "Su 12:00-01:00"
+        ],
+        "geo": [
+          37.7204075,
+          -122.4768375
+        ],
+        "store_slug": "sanfran",
+        "suite_as_listed": "Suite No. 2"
+      },
+      "citation": {
+        "label": "Insomnia Cookies, SF State Campus store page",
+        "url": "https://insomniacookies.com/store/sanfran",
+        "locator": "the storeBySlug record the page renders from: its address and its Retail Hours"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "7314001",
+        "path": "/san-francisco/lakeshore/varela-avenue/2/",
+        "eas_address": "2 VARELA AVE",
+        "method": "EAS exact match on 2 VARELA AVE → parcel 7314001; sf-parcels has blklot 7314001 active, 1–19 CARDENAS; the 2025 roll records it as multi-family residential, built 2020. EAS puts 2, 4, 6, 8 VARELA AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/lakeshore/varela-avenue/2/, seeded for the parcel; the store is at the page's own lead number. The listing's \"Suite No. 2\" is the directory's own, not a city record tying the store to a unit, so the entry carries no `unit`."
+      }
+    }
+  ]
+}

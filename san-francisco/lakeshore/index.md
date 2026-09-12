@@ -10,6 +10,7 @@ The city's Lakeshore analysis neighborhood, in the south-western corner of San F
 - [Harding Road](harding-road/) — 1 building; 1 in the Midcentury Recreation Historic District (Discontiguous).
 - [Holloway Avenue](holloway-avenue/) — 1 building.
 - [Ocean Avenue](ocean-avenue/) — 1 building, built 1941.
+- [Varela Avenue](varela-avenue/) — 1 building, built 2020; 1 in the Parkmerced Historic District.
 - [Winston Drive](winston-drive/) — 1 building.
 - [Zoo Road](zoo-road/) — 1 building.
 
