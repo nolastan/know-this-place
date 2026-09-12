@@ -182,6 +182,83 @@ customElements.define(
   },
 );
 
+/* <ktp-copy class="offer-code">
+     <span class="offer-code-claim">Get 100 points at Insomnia Cookies</span>
+     <code>Stanft6246</code>
+   </ktp-copy>
+
+   A string the reader has to carry somewhere else — a referral code a merchant
+   makes you type in yourself — with the whole box as the copy target.
+
+   The code is already the element's own text, so this reveals nothing: with no
+   JS the box still prints it, and `user-select: all` still hands it over in one
+   click. Everything that promises a click — the role, the copy icon, the
+   pointer and hover that hang off the role in site.css — is added here rather
+   than rendered into the page, so a reader whose script never ran is never
+   shown an affordance that cannot work.
+
+   role="button" on a plain element is not a <button>: it takes its own
+   tabindex, and Enter and Space have to be wired by hand.
+
+   The clipboard can refuse (an insecure origin, a permission the browser will
+   not grant, a reader who has denied it). There is nothing to fall back to and
+   nothing worth an alert, so the box selects the code instead and says so,
+   which is where it started. */
+customElements.define(
+  "ktp-copy",
+  class extends HTMLElement {
+    connectedCallback() {
+      const code = this.querySelector("code");
+      if (!code || !navigator.clipboard) return; // nothing to copy, or no way to
+
+      const icon = document.createElement("span");
+      icon.className = "ic ic-copy";
+      this.appendChild(icon);
+
+      // role="status" so the outcome is announced, not only shown.
+      const said = document.createElement("span");
+      said.className = "visually-hidden";
+      said.setAttribute("role", "status");
+      this.appendChild(said);
+
+      this.setAttribute("role", "button");
+      this.tabIndex = 0;
+      this.setAttribute("aria-label", `Copy the referral code ${code.textContent.trim()}`);
+
+      let revert;
+      const copy = async () => {
+        let spoken;
+        try {
+          await navigator.clipboard.writeText(code.textContent.trim());
+          spoken = "Referral code copied to the clipboard.";
+          icon.className = "ic ic-check";
+          this.dataset.copied = "";
+        } catch {
+          // Selecting it is the whole of the fallback: the reader copies it
+          // with their own keyboard, as they would have without the icon.
+          getSelection()?.selectAllChildren(code);
+          spoken = "Could not reach the clipboard. The code is selected — copy it yourself.";
+          delete this.dataset.copied;
+        }
+        said.textContent = spoken;
+        clearTimeout(revert);
+        revert = setTimeout(() => {
+          icon.className = "ic ic-copy";
+          said.textContent = "";
+          delete this.dataset.copied;
+        }, 2500);
+      };
+
+      this.addEventListener("click", copy);
+      this.addEventListener("keydown", (e) => {
+        if (e.key !== "Enter" && e.key !== " ") return;
+        e.preventDefault(); // Space would scroll the page
+        copy();
+      });
+    }
+  },
+);
+
 /* <ktp-figure> … a chart whose marks carry data-tip="…" … </ktp-figure>
 
    Adds the hover/focus tooltip layer to any chart. Marks that carry a

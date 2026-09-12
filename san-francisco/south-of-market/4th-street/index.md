@@ -33,6 +33,7 @@ The parcels on Fourth Street documented here so far, from the city's address, as
 - [620–648](620/) — A 1907 store building, with a kitchen remodel permitted in 2001.
 - [650–688](650/) — A 2003 store building, with a seismic retrofit permitted in 1997.
 - [655](655/) — A 1947 industrial building, with a kitchen and bathroom remodel permitted in 2009.
+- [1215–1285](1215/) — A 2009 193-unit apartment building, with electrical work permitted in 2013.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

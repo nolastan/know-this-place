@@ -2142,6 +2142,15 @@ def residents_panel_html(rec: dict, indent: str) -> str:
 # `note` says so rather than implying one. A row without a `note` prints none: a
 # Momence referral is per host, so each studio is its own source id and its link
 # opens that studio's own sign-up, which the button already says.
+#
+# `code` is the second shape an offer comes in. Some programmes — Insomnia
+# Cookies' — hand out a code rather than a link that carries it, and nothing
+# claims it for the reader: they type it into a field themselves. So the row
+# carries both, `code` for the string and `url` for the merchant's own address.
+# The block then inverts: the code is what earns the offer, so it takes the
+# accent and states the offer inside its own box, and the link drops to an
+# ordinary one beneath it. A row with a `code` always carries a `note` too,
+# because an offer nothing applies for the reader has to say who does.
 REFERRALS = {
     "away": {
         "url": "https://referrals.awaytravel.com/away482479",
@@ -2180,6 +2189,15 @@ REFERRALS = {
         "url": "https://join.fitnesssf.com/?m=0bcaa244-52f7-472f-806d-0e517436edb0",
         "offer": "Get a free month at FITNESS SF",
         "app": "FITNESS SF",
+    },
+    "insomniacookies": {
+        "url": "https://insomniacookies.com/",
+        "offer": "Get 100 points at Insomnia Cookies",
+        "app": "Insomnia Cookies",
+        "code": "Stanft6246",
+        "note": ("Referral code. Type it into the “Referral code "
+                 "(optional)” field when you create an Insomnia Cookies "
+                 "account."),
     },
     "momence-folk-yoga": {
         "url": "https://momence.com/sign-up/member?hostId=35337&ref=f11db7945aa1e9ae718b1e8e6fa2c3f6",
@@ -2287,7 +2305,9 @@ def occupant_panel_html(rec: dict, indent: str) -> str:
     times. Each merchant is a name, its cuisines, and its hours; the panel
     closes with the date the listing was read — but only where it published
     hours, since that date is theirs and hours drift within days — and with
-    the referral offer when the source has one.
+    the referral offer when the source has one. An offer whose programme hands
+    out a code rather than a link that carries it puts the code where the
+    button would be, stating the offer over it, to copy.
 
     One business is one entry even when two directories list it, so an entry
     also carries `also_listed_by`: the other directories that list it, whose
@@ -2352,11 +2372,31 @@ def occupant_panel_html(rec: dict, indent: str) -> str:
         ref = REFERRALS[sid]
         which = "this restaurant" if len(listed) == 1 else "these restaurants"
         note = ref.get("note", "").format(which=which)
-        tail += (f'{indent}  <p class="occupant-offer">'
-                 f'<a href="{esca(ref["url"])}" rel="sponsored noopener">'
-                 f'{esc(ref["offer"])}</a>'
-                 + (f'\n{indent}  <small>{esc(note)}</small>' if note else "")
-                 + '</p>\n')
+        # An offer claimed with a code inverts the block. It is the code that
+        # earns the reader the offer, not the link, so the code takes the
+        # accent and the offer is stated inside its box, over it; the merchant's
+        # own address drops to an ordinary link beneath, labelled with the host
+        # so it says where it goes. The code is plain text in the HTML —
+        # <ktp-copy> only adds the click — because the reader who has no JS is
+        # the one typing it in.
+        code = ref.get("code")
+        if code:
+            host = urllib.parse.urlsplit(ref["url"]).netloc
+            host = host[4:] if host.startswith("www.") else host
+            tail += (f'{indent}  <p class="occupant-offer occupant-offer-code">\n'
+                     f'{indent}    <ktp-copy class="offer-code">'
+                     f'<span class="offer-code-claim">{esc(ref["offer"])}</span>'
+                     f'<code>{esc(code)}</code></ktp-copy>\n'
+                     f'{indent}    <a href="{esca(ref["url"])}" rel="sponsored noopener">'
+                     f'<span class="ic ic-link"></span>{esc(host)}</a>'
+                     + (f'\n{indent}    <small>{esc(note)}</small>' if note else "")
+                     + f'\n{indent}  </p>\n')
+        else:
+            tail += (f'{indent}  <p class="occupant-offer">'
+                     f'<a href="{esca(ref["url"])}" rel="sponsored noopener">'
+                     f'{esc(ref["offer"])}</a>'
+                     + (f'\n{indent}  <small>{esc(note)}</small>' if note else "")
+                     + '</p>\n')
     return (f'{indent}<section class="panel panel-occupant">\n'
             f'{indent}  <p class="occupant-kind">{kind}</p>\n'
             + "".join(blocks) + tail

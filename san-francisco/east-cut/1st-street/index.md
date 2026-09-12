@@ -12,6 +12,7 @@ The parcels on 1st Street documented here so far, from the city's address, asses
 - [88](88/) — A 1907 office building, with electrical work permitted in 2026.
 - [100–104](100/) — A 1988 office building, with plumbing work permitted in 2022.
 - [234–246](234/) — A 1900 office building, with deck work permitted in 2015.
+- [386–390](386/) — An apartment building, with foundation work permitted in 2017.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

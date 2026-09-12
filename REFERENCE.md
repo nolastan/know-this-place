@@ -185,6 +185,12 @@ ids that list the same business, each also in `sources`.
   `REFERRALS` table, keyed by source id, is the only place an offer lives; an
   entry never carries a link of its own, so a merchant from a directory with no
   referral programme never shows one.
+- **An offer is a link, or a link and a code.** Where the programme hands out
+  a code that no link carries — Insomnia Cookies' — the row adds `code`, and
+  the block inverts: the code takes the accent and the box the button would
+  have had, states the offer inside it, and the merchant's address drops to an
+  ordinary link beneath, with the disclosure line saying where the code goes.
+  The code is never hidden inside the link, and never rendered only by script.
 - **One business is one entry, whatever number of directories list it.** The
   second directory goes in `also_listed_by` and its button joins the panel;
   the entry's facts and its "Last updated" date are `source`'s, the most
