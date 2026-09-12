@@ -202,12 +202,21 @@ main > .panel + .panel { margin-top: 1.25rem; }
 /* bottom margin matters: the last item drops its padding, so without it the
    timeline collides with whatever block follows (panels, a section, prose) */
 .vtl { position: relative; margin: 1.25rem 0 2rem; padding-left: 1.75rem; list-style: none; }
-.vtl::before { content: ""; position: absolute; left: 5px; top: 8px; bottom: 8px; width: 2px; background: var(--rule); }
+/* The rail and the nodes are one geometry, so read the next two rules
+   together. A node is 16px across — a 12px disc inside a 2px ring — and it
+   starts at the timeline's own left edge, so its centre is 8px in and the 2px
+   rail has to start at 7px to run through it. The ring is part of that width
+   because `*` never matched pseudo-elements: these ::before boxes are
+   content-box unless they say so themselves, which is how the rail came to be
+   measured against the 12px disc alone and drawn 2px left of every node
+   (#133). `box-sizing` and the 16px below spell the real width out so the
+   next reader can derive the 7px rather than round it back down. */
+.vtl::before { content: ""; position: absolute; left: 7px; top: 8px; bottom: 8px; width: 2px; background: var(--rule); }
 .vtl-item { position: relative; padding-bottom: 1.5rem; }
 .vtl-item:last-child { padding-bottom: 0; }
 .vtl-item::before {
   content: ""; position: absolute; left: -1.75rem; top: 4px;
-  width: 12px; height: 12px; border-radius: 50%;
+  box-sizing: border-box; width: 16px; height: 16px; border-radius: 50%;
   background: var(--paper); border: 2px solid var(--accent);
   box-shadow: 0 0 0 4px var(--paper);
 }
