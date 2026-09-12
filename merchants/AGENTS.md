@@ -19,10 +19,16 @@ lives.
 
 | id | Source | Read from | Referral | Files |
 |---|---|---|---|---|
+| `away` | Away, luggage (its own site) | `https://www.awaytravel.com/stores` names sixteen stores and one is in the city; its page, `https://www.awaytravel.com/pages/store/san-francisco-hayes-valley`, prints the address and hours as plain text, with no schema.org markup | $40 off, on Away's own referral page | `away/<date>.json` |
 | `bites` | Bites, merchant directory | `https://withbites.com/merchants` — the page's schema.org `ItemList`, every Bites merchant in the country, one `Restaurant` each | $5 off a first order; the link opens the app, not the merchant (no per-merchant deep link exists) | `bites/<date>.json` |
+| `bonobos` | Bonobos, men's clothing (its own site) | `https://bonobos.com/locations` links 47 store pages, two of them in the city; each store page carries no schema.org block, so the address and hours come from the Contentful blocks in its `__NEXT_DATA__`, which is what the page prints | 25% off, on Bonobos' own refer-a-friend page; the amount is the issue's, stated on no public page | `bonobos/<date>.json` |
+| `brooklinen` | Brooklinen, bedding (its own site) | `https://www.brooklinen.com/pages/our-stores` prints all nine stores' addresses and hours as plain text, with no schema.org markup and no category for the shop | $25 off, on Brooklinen's own rewards page | `brooklinen/<date>.json` |
+| `casper` | Casper, mattresses and bedding (its own store finder) | `https://stores.casper.com/ca/sanfrancisco/` lists four stores in the city, but three are Mancini's Sleepworld — a stockist, not a Casper door — and only the Union Street shop is Casper's own; its page carries a schema.org `FurnitureStore` block | 30% off, on Casper's own sign-up | `casper/<date>.json` |
 | `fitnesssf` | FITNESS SF, gyms (its own site) | `https://www.fitnesssf.com/locations` names the nine gyms but carries no addresses or hours; each location page, `https://www.fitnesssf.com/location/<slug>`, prints both as plain text, with no schema.org markup and no coordinates | One link for the whole chain: a free month for the person joining, on FITNESS SF's own sign-up | `fitnesssf/<date>.json` |
 | `momence` | Momence, class-booking hosts | Momence's host record (`https://momence.com/_api/primary/plugin/hosts/<id>`) confirms each host's name but lists no locations, so the addresses come from each studio's own location pages | Per host: one `REFERRALS` row per studio, keyed `momence-<studio>`, which is also the page's source id; the link opens that studio's sign-up | `momence/<date>.json` |
 | `ritual` | Ritual, ordering app | `https://ritual.co/order?lat=&lon=` server-renders its nearby-merchant list into the page's `__NEXT_DATA__` — 36 listings at most, within 5 km, ranked by distance from the point — so a grid of points and a de-duplication by merchant id is what covers the city. Each listing's own page, `https://ritual.co/order<menuPath>`, carries the postal code, the weekly hours and the categories the list leaves out | $10 across the first orders; the link opens Ritual's sign-up page, not the merchant | `ritual/<date>.json` |
+| `vuori` | Vuori, clothing (its own site) | `https://vuoriclothing.com/pages/stores` links 132 store pages, one of them in the city (the other San Francisco-named store is the Livermore outlet); the store page carries a schema.org `ClothingStore` block and prints the hours beside it | 20% off, on Vuori's own site | `vuori/<date>.json` |
+| `wework` | WeWork, coworking (its own site) | `https://www.wework.com/l/coworking-space/san-francisco--sf-bay-area--CA` names seven locations and links a building page for each, which carries the address in a schema.org `PostalAddress`. Cloudflare turns a plain fetch away, so the pages are read in a browser. **No opening hours**: what a page gives is staffed hours, which is not when a member can get in | A month free on a 12-month membership, on WeWork's own referral page | `wework/<date>.json` |
 
 Directories still to add are the GitHub issues labelled `monetization`.
 The "Add merchants" issue form asks for both halves below, so a ticket
@@ -71,6 +77,17 @@ decision before any page changes.
   and a refresh changes that one field. The date belongs to the hours: an
   entry that publishes none — a yoga studio listing only a class schedule —
   omits the line rather than appearing to date the tenancy.
+- **Hours the source does not call opening hours are not hours.** WeWork
+  publishes "Staffed hours" — when the front desk is manned, Mon–Fri, at every
+  San Francisco building — and a member's access is neither of those. Putting
+  them in `opening_hours` would have the panel print every WeWork closed at
+  the weekend, so they stay in `extra` and the entry publishes none, which
+  also takes its "Last updated" line off. Read the label, not the table.
+- **A brand's store finder lists other people's shops too.** Casper's names
+  four in San Francisco and three are Mancini's Sleepworld, a stockist; an
+  entry filed under `casper` would put Casper's referral button on another
+  business's page. Only the brand's own doors become entries, and the
+  stockists stay in the file marked `publish.status: "declined"`.
 - **A referral offer is the source's, not the merchant's.** Never put a link
   in an `occupants` entry. A directory gets an offer by a row in `REFERRALS`,
   added only when a human has supplied the link, and a merchant from any other
