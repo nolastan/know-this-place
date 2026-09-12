@@ -8,7 +8,7 @@ The buildings documented here so far inside the Western SOMA Light Industrial an
 - [11Th Street, Mission](/san-francisco/mission/11th-street/) — 12 documented buildings inside the district.
 - [11Th Street, South of Market](/san-francisco/south-of-market/11th-street/) — 5 documented buildings inside the district.
 - [12th Street](/san-francisco/mission/12th-street/) — 5 documented buildings inside the district.
-- [7th Street](/san-francisco/south-of-market/7th-street/) — 10 documented buildings inside the district.
+- [7th Street](/san-francisco/south-of-market/7th-street/) — 11 documented buildings inside the district.
 - [8th Street](/san-francisco/south-of-market/8th-street/) — 10 documented buildings inside the district.
 - [9Th Street](/san-francisco/south-of-market/9th-street/) — 19 documented buildings inside the district.
 - [Bernice Street](/san-francisco/mission/bernice-street/) — 2 documented buildings inside the district.
@@ -80,6 +80,7 @@ The buildings documented here so far inside the Western SOMA Light Industrial an
 - [338–340 12th Street](/san-francisco/mission/12th-street/338/) — A 1907 flats building, with foundation work permitted in 1993.
 - [396–398 12th Street](/san-francisco/mission/12th-street/396/) — A 1906 store building, with reroofing permitted in 2020.
 - [112–114 7th Street](/san-francisco/south-of-market/7th-street/112/) — A 1911 hotel, with garage work permitted in 2013.
+- [140 7th Street](/san-francisco/south-of-market/7th-street/140/) — A 1980 hotel, with reroofing permitted in 2015.
 - [150–154 7th Street](/san-francisco/south-of-market/7th-street/150/) — A 1920 store building, with facade work permitted in 2022.
 - [227–229 7th Street](/san-francisco/south-of-market/7th-street/227/) — A 2010 store building, with an addition permitted in 2010.
 - [230–234 7th Street](/san-francisco/south-of-market/7th-street/230/) — A 2021 store building, with a vertical addition permitted in 2018.

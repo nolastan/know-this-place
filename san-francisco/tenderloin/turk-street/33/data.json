@@ -1,0 +1,120 @@
+{
+  "address": "33 Turk Street, San Francisco, CA 94102",
+  "path": "/san-francisco/tenderloin/turk-street/33/",
+  "apn": "0342045",
+  "block": "0342",
+  "lot": "045",
+  "eas_baseid": "504551",
+  "coordinates": {
+    "lat": 37.783251,
+    "lng": -122.409654
+  },
+  "parcel": {
+    "year_built": 2022,
+    "units": 236,
+    "stories": 13,
+    "rooms": 236,
+    "building_area_sqft": 65412,
+    "use": "Commercial Hotel",
+    "property_class": "Hotel",
+    "construction_type_code": "NA",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Tenderloin",
+    "analysis_neighborhood": "Tenderloin",
+    "property_location_raw": "0000 0033 TURK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2024,
+    "assessed_land_value": 16215000,
+    "assessed_improvement_value": 91885000
+  },
+  "permits": [
+    {
+      "number": "202410022183",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-10-02",
+      "status_date": "2026-01-23",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "adding security gate at rear of buliding. (visible from street)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1225108",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-06-01",
+      "status_date": "2021-06-02",
+      "revised_cost": 439,
+      "description": "per owner's request, add address 33 turk st and 970 market street to apn 0342/045 for new building pa #201602089004s.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1225112",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-06-01",
+      "status_date": "2021-06-02",
+      "revised_cost": 439,
+      "description": "per new bldg pa #201602089004s, delete adresses; 964, 966, 968, 970, 972 market st from apn 0342/001.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "unknowns": [
+    "The assessor's most recent roll row for this parcel is the 2024 one, which addresses it as 33 Turk Street; the parcel is no longer on the secured roll, so the figures here are a year older than the rest of the site's.",
+    "sf-parcels gives this lot's address range as 970 Market Street and maps it into a block-wide condominium map (0342042), while the assessor's own property_location for it reads 33 Turk Street."
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TURK&street_type=ST&address_number=33",
+      "retrieved": "2026-09-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2024 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0342045&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0342&lot=045",
+      "retrieved": "2026-09-12"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "query": "https://data.sfgov.org/resource/acdm-wktn.json?blklot=0342045",
+      "retrieved": "2026-09-12"
+    },
+    {
+      "id": "timbri-hotel",
+      "name": "Timbri Hotel San Francisco, hotel page on Hilton's site",
+      "supports": "Current occupant",
+      "query": "https://www.hilton.com/en/hotels/sfotlqq-timbri-hotel-san-francisco/",
+      "retrieved": "2026-09-12"
+    },
+    {
+      "id": "hoteltonight",
+      "name": "HotelTonight, hotel booking app",
+      "supports": "Current occupant",
+      "query": "https://www.hoteltonight.com/s/san-francisco-ca",
+      "retrieved": "2026-09-12"
+    }
+  ],
+  "occupants": [
+    {
+      "name": "Timbri Hotel San Francisco, Curio Collection by Hilton",
+      "kinds": [
+        "Hotel"
+      ],
+      "source": "timbri-hotel",
+      "also_listed_by": [
+        "hoteltonight"
+      ]
+    }
+  ]
+}

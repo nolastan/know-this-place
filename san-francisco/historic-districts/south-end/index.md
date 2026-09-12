@@ -10,7 +10,7 @@ The buildings documented here so far inside the South End Historic District, and
 - [Bryant Street](/san-francisco/east-cut/bryant-street/) — 1 documented building inside the district.
 - [Clarence Place](/san-francisco/south-beach/clarence-place/) — 2 documented buildings inside the district.
 - [Jack London Alley](/san-francisco/east-cut/jack-london-alley/) — 1 documented building inside the district.
-- [King Street](/san-francisco/south-beach/king-street/) — 1 documented building inside the district.
+- [King Street](/san-francisco/south-beach/king-street/) — 2 documented buildings inside the district.
 - [Ritch Street](/san-francisco/south-of-market/ritch-street/) — 1 documented building inside the district.
 - [Second Street](/san-francisco/east-cut/2nd-street/) — 4 documented buildings inside the district.
 - [Third Street, South Beach](/san-francisco/south-beach/3rd-street/) — 5 documented buildings inside the district.
@@ -33,6 +33,7 @@ The buildings documented here so far inside the South End Historic District, and
 - [21 Clarence Place](/san-francisco/south-beach/clarence-place/21/) — A 2012 95-unit apartment building, with a vertical addition permitted in 2006.
 - [98 Jack London Alley](/san-francisco/east-cut/jack-london-alley/98/) — A 1929 industrial building, with plumbing work permitted in 2024.
 - [128 King Street](/san-francisco/south-beach/king-street/128/) — A 1913 store building, with window replacement permitted in 2000.
+- [136–138 King Street](/san-francisco/south-beach/king-street/136/) — A 2017 hotel, with a kitchen remodel permitted in 2017.
 - [335–355 Ritch Street](/san-francisco/south-of-market/ritch-street/335/) — A 1902 office building, with plumbing work permitted in 2023.
 - [500 Second Street](/san-francisco/east-cut/2nd-street/500/) — A 1919 industrial building, with electrical work permitted in 2020.
 - [512 Second Street](/san-francisco/east-cut/2nd-street/512/) — A 1909 industrial building, with a seismic retrofit permitted in 2001.

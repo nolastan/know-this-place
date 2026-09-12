@@ -491,11 +491,33 @@ merchant**: a shared kitchen lists three brands at one door, and three panels
 would repeat one offer three times. The eyebrow is the district panel's; each
 merchant is an `.occupant` group — the name as a serif headline, its `kinds`
 (or `cuisines`, from a food directory) on a muted line, a `.speclist` of hours
-— split from the next by a hairline. The panel closes with the date the listing
-was read — only where it published hours, which is what that date is about —
-and an outlined offer button for each directory in `REFERRALS` that lists one
-of the merchants, with a referral disclosure beneath it where the row carries
-one. A business two directories list is one `.occupant` group with two buttons
+— split from the next by a hairline. Each directory in `REFERRALS` that lists
+one of the merchants earns one outlined offer button, with a referral
+disclosure beneath it where the row carries one.
+
+**Where the button sits says whose offer it is.** On a panel listing more than
+one business, an offer only one of them has earned goes *inside* that
+business's `.occupant` group: a reader skimming takes the name directly above
+a button to be its owner, and a flat stack at the foot put Ritual's gelateria
+offer under Hotel Triton on the 334–352 Grant Avenue page. An offer several of
+them share still closes the panel — a shared kitchen trading as three brands
+must not print one directory's button three times — and a panel with a single
+business leaves its offer at the foot too, where nothing is ambiguous and
+moving it up would only push "Last updated" below the button.
+
+**The read date sits with the hours it dates**, by the same rule. It appears
+only where the listing published hours, which is what it is about, so a
+business publishing none carries none. Where every business on the panel is
+dated and dated alike, the one line closes the panel — a shared kitchen's
+three brands must not print one read date three times. Otherwise each dated
+group carries its own, above that group's offer: one line closing a panel of
+two reads as the panel's own, and on the 334–352 Grant Avenue page it dated
+Amorino Gelato's hours while sitting under a hotel that publishes none. Per
+group it is also the truer date — 1507 Sloat Boulevard showed one date for a
+Bites listing read on the 11th and a Crumbl one read on the 12th.
+
+The panel then closes with any offer not claimed by one group above.
+A business two directories list is one `.occupant` group with two buttons
 under it, never two groups.
 ```html
 <section class="panel panel-occupant">

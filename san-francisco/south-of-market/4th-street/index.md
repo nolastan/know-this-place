@@ -1,9 +1,10 @@
-# Fourth Street
+# 4th Street
 
 The parcels on Fourth Street documented here so far, from the city's address, assessor and permit records.
 
 ## Documented so far
 
+- [10–12](10/) — An assessor class: vacant lot in the Kearny-Market-Mason-Sutter Conservation District, with stair work permitted in 2020.
 - [54–68](54/) — A 1914 hotel, with window replacement permitted in 2001.
 - [70](70/) — A 1910 store building, with reroofing permitted in 2007.
 - [88](88/) — A school building, with window replacement permitted in 2026.
