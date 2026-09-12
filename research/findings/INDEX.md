@@ -245,6 +245,7 @@ are listed so their size is visible before anyone opens one.
 | `popos-public-art.json` | 83 | 32 KB | `east-cut`, `financial-district`, `south-beach` +4 |
 | `ppie-marina-hcs.json` | 85 | 31 KB | `marina`, `nob-hill`, `pacific-heights` |
 | `progressive-era-styles.json` | 36 | 13 KB | `pacific-heights`, `sunset-parkside`, `inner-richmond` +13 |
+| `ritual-2026-09-11.json` | 12 | 4 KB | `south-beach`, `chinatown`, `nob-hill` +7 |
 | `russian-american-hcs.json` | 136 | 51 KB | `inner-richmond`, `pacific-heights`, `outer-richmond` +16 |
 | `russian-hill-hcs.json` | 51 | 19 KB | `russian-hill`, `pacific-heights`, `nob-hill` +5 |
 | `sexual-identity-subcultures.json` | 30 | 11 KB | `south-of-market`, `mission`, `chinatown` |

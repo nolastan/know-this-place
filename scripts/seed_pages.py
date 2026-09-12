@@ -2159,6 +2159,13 @@ REFERRALS = {
         "offer": "Get a free credit at HAUM Studios",
         "app": "Momence",
     },
+    "ritual": {
+        "url": "https://order.ritual.co/join-your-friends?promo=STANFORD66377",
+        "offer": "Get $10 towards your first Ritual orders",
+        "app": "Ritual",
+        "note": ("Referral link. It opens Ritual's sign-up page, where you can search "
+                 "for {which}. $5 is applied on signup and $5 after your first order."),
+    },
 }
 DAY_ABBR = ("Mo", "Tu", "We", "Th", "Fr", "Sa", "Su")
 DAY_SHORT = ("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun")
@@ -2237,6 +2244,11 @@ def occupant_panel_html(rec: dict, indent: str) -> str:
     closes with the date the listing was read — but only where it published
     hours, since that date is theirs and hours drift within days — and with
     the referral offer when the source has one.
+
+    One business is one entry even when two directories list it, so an entry
+    also carries `also_listed_by`: the other directories that list it, whose
+    offers belong on the panel beside its own. The entry's facts, and the date
+    under them, are `source`'s alone — the most recently read of them.
     """
     rows = [o for o in (rec.get("occupants") or []) if o.get("name")]
     if not rows:
@@ -2282,8 +2294,11 @@ def occupant_panel_html(rec: dict, indent: str) -> str:
         # would read as a claim about the tenancy, which it is not.
         if src.get("retrieved") and hours:
             dates.add(src["retrieved"])
-        if o.get("source") in REFERRALS:
-            offers.setdefault(o["source"], []).append(o)
+        # An offer belongs to a directory that lists the business, and a
+        # business listed by two directories has earned both buttons.
+        for sid in [o.get("source"), *(o.get("also_listed_by") or [])]:
+            if sid in REFERRALS:
+                offers.setdefault(sid, []).append(o)
     kind = "Current occupant" if len(rows) == 1 else "Current occupants"
     tail = ""
     if dates:

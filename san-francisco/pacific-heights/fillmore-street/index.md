@@ -21,6 +21,7 @@ The parcels on Fillmore Street documented here so far, from the city's address, 
 - [2101–2117](2101/) — A 1911 52-unit apartment building in the Upper Fillmore Neighborhood Commercial Historic District, with a bathroom remodel permitted in 2023.
 - [2181–2197](2181/) — A 1900 store building in the Upper Fillmore Neighborhood Commercial Historic District, with a bathroom remodel permitted in 2016.
 - [2201](2201/) — A 1913 18-unit apartment building in the Upper Fillmore Neighborhood Commercial Historic District, with a seismic retrofit permitted in 1995.
+- [2213–2217](2213/) — A 1900 3-unit apartment building in the Upper Fillmore Neighborhood Commercial Historic District, with electrical work permitted in 2017.
 - [2220–2222](2220/) — A 1900 3-unit building with a ground-floor store in the Upper Fillmore Neighborhood Commercial Historic District, with a bathroom remodel permitted in 2026.
 - [2226](2226/) — A 1900 store building in the Upper Fillmore Neighborhood Commercial Historic District, with a seismic retrofit permitted in 1994.
 - [2250–2252](2250/) — A 1906 office building in the Upper Fillmore Neighborhood Commercial Historic District, with plumbing work permitted in 2022.

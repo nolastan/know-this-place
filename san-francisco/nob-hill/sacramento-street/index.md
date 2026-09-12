@@ -10,6 +10,7 @@ The parcels on Sacramento Street documented here so far, from the city's address
 - [615](615/) — A 1907 store building, with stair work permitted in 1996.
 - [624](624/) — An office building, with permit records from 1984 to 1995.
 - [648–656](648/) — A 1909 office building, with a seismic retrofit permitted in 2019.
+- [660](660/) — A 1907 office building in the Chinatown Historic District, with a bathroom remodel permitted in 2009.
 - [666–668](666/) — A 1910 store building, with a seismic retrofit permitted in 1998.
 - [672–674](672/) — A 1907 hotel, with a seismic retrofit permitted in 1998.
 - [688–690](688/) — A 1916 2-unit building with a ground-floor store in the Chinatown Historic District, with a seismic retrofit permitted in 1997.

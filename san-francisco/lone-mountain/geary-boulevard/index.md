@@ -17,6 +17,7 @@ The parcels on Geary Boulevard documented here so far, from the city's address, 
 - [3575–3595](3575/) — A 2011 building, with foundation work permitted in 2007.
 - [3700–3716](3700/) — A 1900 store building, with a seismic retrofit permitted in 1996.
 - [3800](3800/) — A 1921 store building, with a seismic retrofit permitted in 2010.
+- [3834–3840](3834/) — A 1907 12-unit apartment building, with a seismic retrofit permitted in 2018.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

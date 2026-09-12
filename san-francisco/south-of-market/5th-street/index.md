@@ -12,6 +12,7 @@ The parcels on Fifth Street documented here so far, from the city's address, ass
 - [155](155/) — A 1973 office building, with an addition permitted in 2011.
 - [194–198](194/) — A 1912 9-unit apartment building with a ground-floor store, with an addition permitted in 2021.
 - [252–260](252/) — An apartment building, with an addition permitted in 2013.
+- [270–280](270/) — An apartment building, with a kitchen remodel permitted in 2018.
 - [275](275/) — A 1965 office building, with stair work permitted in 2013.
 - [299](299/) — A 1998 2-unit apartment building, with a kitchen remodel permitted in 2008.
 - [300](300/) — A building, with reroofing permitted in 1999.

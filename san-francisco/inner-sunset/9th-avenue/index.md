@@ -13,6 +13,7 @@ The parcels on Ninth Avenue documented here so far, from the city's address, ass
 - [1237–1239](1237/) — A 1908 building, built by J. C. and R. E. Kelly.
 - [1242–1244](1242/) — A 1902 building, built by John Hagberg.
 - [1246–1248](1246/) — A 1908 building, designed by William C. Gilligan.
+- [1251–1255](1251/) — A 1904 3-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2020.
 - [1260–1262](1260/) — A 1905 building, built by T. Sullivan.
 - [1267–1269](1267/) — A 1900 Queen Anne, built by Alphonso Harrington.
 - [1281–1283](1281/) — A 1904 2-unit building with a ground-floor store, with a rear addition permitted in 2007.

@@ -5,7 +5,7 @@ The buildings documented here so far inside the Upper Fillmore Neighborhood Comm
 ## Streets
 
 - [California Street](/san-francisco/pacific-heights/california-street/) — 1 documented building inside the district.
-- [Fillmore Street](/san-francisco/pacific-heights/fillmore-street/) — 13 documented buildings inside the district.
+- [Fillmore Street](/san-francisco/pacific-heights/fillmore-street/) — 14 documented buildings inside the district.
 
 ## Buildings
 
@@ -18,6 +18,7 @@ The buildings documented here so far inside the Upper Fillmore Neighborhood Comm
 - [2101–2117 Fillmore Street](/san-francisco/pacific-heights/fillmore-street/2101/) — A 1911 52-unit apartment building, with a bathroom remodel permitted in 2023.
 - [2181–2197 Fillmore Street](/san-francisco/pacific-heights/fillmore-street/2181/) — A 1900 store building, with a bathroom remodel permitted in 2016.
 - [2201 Fillmore Street](/san-francisco/pacific-heights/fillmore-street/2201/) — A 1913 18-unit apartment building, with a seismic retrofit permitted in 1995.
+- [2213–2217 Fillmore Street](/san-francisco/pacific-heights/fillmore-street/2213/) — A 1900 3-unit apartment building, with electrical work permitted in 2017.
 - [2220–2222 Fillmore Street](/san-francisco/pacific-heights/fillmore-street/2220/) — A 1900 3-unit building with a ground-floor store, with a bathroom remodel permitted in 2026.
 - [2226 Fillmore Street](/san-francisco/pacific-heights/fillmore-street/2226/) — A 1900 store building, with a seismic retrofit permitted in 1994.
 - [2250–2252 Fillmore Street](/san-francisco/pacific-heights/fillmore-street/2250/) — A 1906 office building, with plumbing work permitted in 2022.

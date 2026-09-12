@@ -13,6 +13,7 @@ The parcels on Jackson Street documented here so far, from the city's address, a
 - [468–472](468/) — A 1900 store building in the Jackson Square Historic District, with a seismic retrofit permitted in 2020.
 - [530–532](530/) — A 1907 hotel in the Jackson Square Historic District, with window replacement permitted in 2026.
 - [531](531/) — A 1911 4-unit building with a ground-floor store, with a seismic retrofit permitted in 2001.
+- [533–535](533/) — A 1910 store building, with foundation work permitted in 1998.
 - [602–606](602/) — A 1909 hotel in the Chinatown Historic District, with electrical work permitted in 2011.
 - [603–609](603/) — A 1906 7-unit apartment building in the Chinatown Historic District, with plumbing work permitted in 2009.
 - [604–620](604/) — A 1912 store building in the Chinatown Historic District, with a seismic retrofit permitted in 1997.

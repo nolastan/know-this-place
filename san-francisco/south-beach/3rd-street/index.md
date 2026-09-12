@@ -9,6 +9,7 @@ The parcels on Third Street documented here so far, from the city's address, ass
 - [665](665/) — A 1916 office building in the South End Historic District, with plumbing work permitted in 1998.
 - [679–685](679/) — A 1906 industrial building in the South End Historic District, with a kitchen remodel permitted in 2005.
 - [689–699](689/) — A 1917 store building in the South End Historic District, with a seismic retrofit permitted in 2004.
+- [735–761](735/) — A 1900 store building, with foundation work permitted in 2000.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.
