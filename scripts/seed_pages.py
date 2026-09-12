@@ -2149,6 +2149,11 @@ REFERRALS = {
         "app": "Bites",
         "note": "Referral link. It opens Bites, where you can search for {which}.",
     },
+    "fitnesssf": {
+        "url": "https://join.fitnesssf.com/?m=0bcaa244-52f7-472f-806d-0e517436edb0",
+        "offer": "Get a free month at FITNESS SF",
+        "app": "FITNESS SF",
+    },
     "momence-folk-yoga": {
         "url": "https://momence.com/sign-up/member?hostId=35337&ref=f11db7945aa1e9ae718b1e8e6fa2c3f6",
         "offer": "Get $10 credit at Folk Yoga",
