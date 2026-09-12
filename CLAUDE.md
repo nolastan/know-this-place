@@ -18,7 +18,7 @@ read front to back. Start with the row that matches the task.
 | mining a source | [research/AGENTS.md](research/AGENTS.md) | [research/RUNBOOK.md](research/RUNBOOK.md), [research/LESSONS.md](research/LESSONS.md), [research/findings/INDEX.md](research/findings/INDEX.md) |
 | finding a new source | [research/AGENTS.md](research/AGENTS.md) | [research/SOURCES.md](research/SOURCES.md), [research/TRIAGE.md](research/TRIAGE.md) |
 | running the news pipeline | [news/AGENTS.md](news/AGENTS.md) | [news/PIPELINE.md](news/PIPELINE.md) |
-| adding merchants from a directory | [merchants/AGENTS.md](merchants/AGENTS.md) | [REFERENCE.md → occupants](REFERENCE.md#occupants) |
+| adding merchants to their buildings — a `monetization` issue | [merchants/AGENTS.md](merchants/AGENTS.md) | [REFERENCE.md → occupants](REFERENCE.md#occupants) |
 | changing the CSS or the renderer | [shared/AGENTS.md](shared/AGENTS.md) | [shared/BLOCKS.md](shared/BLOCKS.md) |
 | designing a module | [design/AGENTS.md](design/AGENTS.md) | `design/*` |
 
