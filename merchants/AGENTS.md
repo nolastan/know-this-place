@@ -23,6 +23,33 @@ only place an offer lives.
 
 Directories still to add are the GitHub issues labelled `monetization`.
 
+## Before you start
+
+A ticket is workable when it carries both halves: **a referral link with a real
+code** — not a `CODE` or `[REFERRAL CODE]` placeholder — and **a way to list the
+directory's San Francisco locations**, whether an API, a GraphQL query, a
+schema.org block on the merchant's own pages, or the addresses typed into the
+issue. Missing either half, label the issue `needs-human`, say which half is
+missing, and stop. Only a human can sign up for the programme, and a guessed
+code publishes a dead link.
+
+Settle the **shape of the offer** before writing anything, because it decides
+the source ids:
+
+- **One offer for the whole directory** — Bites. One `REFERRALS` row, one
+  source id, the same button on every merchant.
+- **One offer per merchant or host** — Momence. A `REFERRALS` row and a source
+  id per merchant, keyed `<directory>-<merchant>`. The findings file stays one
+  file under one `source_id`; `extra.page_source_id` records which row each
+  entry publishes under.
+- **A row carries a `note` only where its link does not reach the merchant.**
+  Bites' link opens the app, so its note says so; a Momence link opens that
+  studio's own sign-up, so it carries none.
+
+A directory that is not a list of shops at all — HotelTonight's rotating hotel
+inventory, say — is not an `occupants` source, and needs a human's design
+decision before any page changes.
+
 ## Rules
 
 - **The business, never the people.** A merchant's trading name is a fact
@@ -115,14 +142,30 @@ each entry went on, or why it didn't.
    day of the read. `listed_address` is the listing's own number on the
    page's own spelling of the street, or the other street for a corner
    building. Preserve each `data.json`'s indent (1 or 2 spaces).
-4. Render, rebuild the derived indexes, and validate:
+4. Rebuild the derived indexes **before** rendering — `render` writes each
+   page's Nearby list out of `shared/nearby.json`, so rendering first only
+   bakes in the stale one:
 
    ```bash
-   python3 scripts/seed_pages.py render <each page>
    python3 scripts/seed_pages.py districts
    python3 scripts/build_sitemap.py
    python3 scripts/build_map_index.py
    python3 scripts/build_link_index.py
    python3 research/tools/check.py --index
+   python3 scripts/seed_pages.py render <each page>
    python3 scripts/validate.py
    ```
+
+5. **Re-render the pages the new ones displaced.** Seeding shifts
+   `shared/nearby.json`, so neighbours' Nearby lists change and their HTML goes
+   stale — four new pages staled twenty of them, on streets the run never
+   touched. Render everything `validate.py` names, then validate again:
+
+   ```bash
+   python3 scripts/validate.py | sed -n 's/.*seed_pages.py render //p' | sort -u |
+       while read -r page; do python3 scripts/seed_pages.py render "$page"; done
+   python3 scripts/validate.py
+   ```
+
+   Check the output of each render rather than discarding it: a silent loop
+   here reports success while leaving every page stale.
