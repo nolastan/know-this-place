@@ -43,8 +43,8 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Haight Ashbury Counterculture Historic District](haight-ashbury-counterculture/) — Eligible for the California Register, significant 1966–1975; 19 buildings documented on 4 streets.
 - [Hampshire Street False-Front Historic District](hampshire-street-false-front/) — Eligible for the California Register, significant 1885–1895; 14 buildings documented on one street.
 - [Hartford Street Historic District](hartford-street/) — Eligible for the California Register, significant 1900–1902; 24 buildings documented on 3 streets.
-- [Hayes Valley Commercial Historic District](hayes-valley-commercial/) — Eligible for the California Register, significant ca 1855–1929; 17 buildings documented on 4 streets.
-- [Hayes Valley Residential Historic District](hayes-valley-residential/) — Listed on the California Register, significant 1860–1920; 252 buildings documented on 26 streets.
+- [Hayes Valley Commercial Historic District](hayes-valley-commercial/) — Eligible for the California Register, significant ca 1855–1929; 18 buildings documented on 4 streets.
+- [Hayes Valley Residential Historic District](hayes-valley-residential/) — Listed on the California Register, significant 1860–1920; 253 buildings documented on 26 streets.
 - [Hidalgo Terrace Historic District](hidalgo-terrace/) — Eligible for the California Register, significant 1914–1930; 14 buildings documented on 2 streets.
 - [Horner's Addition East Historic District](horner-s-addition-east/) — Eligible for the California and National Registers, significant 1865–1905; 74 buildings documented on 6 streets.
 - [India Basin Scow Schooner Boatyard Vernacular Cultural Landscape](india-basin-scow-schooner-boatyard-vernacular-cultural-landscape/) — Eligible for the California Register, significant 1875–1936; 5 buildings documented on 3 streets.

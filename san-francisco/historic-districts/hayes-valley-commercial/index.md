@@ -6,7 +6,7 @@ The buildings documented here so far inside the Hayes Valley Commercial Historic
 
 - [Fell Street](/san-francisco/hayes-valley/fell-street/) — 1 documented building inside the district.
 - [Grove Street](/san-francisco/hayes-valley/grove-street/) — 1 documented building inside the district.
-- [Hayes Street](/san-francisco/hayes-valley/hayes-street/) — 13 documented buildings inside the district.
+- [Hayes Street](/san-francisco/hayes-valley/hayes-street/) — 14 documented buildings inside the district.
 - [Linden Street](/san-francisco/hayes-valley/linden-street/) — 2 documented buildings inside the district.
 
 ## Buildings
@@ -17,6 +17,7 @@ The buildings documented here so far inside the Hayes Valley Commercial Historic
 - [355–357 Hayes Street](/san-francisco/hayes-valley/hayes-street/355/) — A 1925 office building, with deck work permitted in 2013.
 - [361 Hayes Street](/san-francisco/hayes-valley/hayes-street/361/) — A 1920 industrial building.
 - [364 Hayes Street](/san-francisco/hayes-valley/hayes-street/364/) — A 1920 store building, with a seismic retrofit permitted in 1994.
+- [371 Hayes Street](/san-francisco/hayes-valley/hayes-street/371/) — A 1963 store building, with facade work permitted in 2015.
 - [381–395 Hayes Street](/san-francisco/hayes-valley/hayes-street/381/) — A 1911 32-unit apartment building, with a kitchen remodel permitted in 2015.
 - [406 Hayes Street](/san-francisco/hayes-valley/hayes-street/406/) — A 1908 hotel, with reroofing permitted in 2019.
 - [424 Hayes Street](/san-francisco/hayes-valley/hayes-street/424/) — A 1916 3-unit apartment building, with foundation work permitted in 2008.

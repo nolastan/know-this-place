@@ -6,6 +6,7 @@ The parcels on Mission Street documented here so far, from the city's address, a
 
 - [201](201/) — A 1981 office building, with an addition permitted in 2025.
 - [340–350](340/) — A 2015 office building, with stair work permitted in 2016.
+- [415](415/) — A 2018 office building, with stair work permitted in 2018.
 - [425](425/) — An assessor class: vacant lot, with a vertical addition permitted in 2022.
 - [440–456](440/) — A 1920 office building, with electrical work permitted in 2013.
 - [512](512/) — An assessor class: vacant lot, with deck work permitted in 1998.

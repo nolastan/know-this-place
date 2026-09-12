@@ -1,0 +1,54 @@
+{
+  "source_id": "away",
+  "batch": "2026-09-12",
+  "read_on": "2026-09-12",
+  "notes": "Away's San Francisco store, named in issue #327, read from the store's own page on 2026-09-12. https://www.awaytravel.com/stores lists sixteen stores and one is in the city; its page prints the address and hours as plain text, with no schema.org markup and no coordinates. Four fetches on 2026-09-11 and 2026-09-12 were identical. `name` is the brand and `name_as_listed` the site's own name for the shop, which names the neighbourhood rather than the street. The issue gives the referral link and '$40 off'; Away's public pages state no amount — the link opens a 'Claim your Referral credit' page that names none — so the offer wording is the issue's, which is where a referral offer has to come from. One REFERRALS row, `away`, for the one shop.",
+  "coverage": {
+    "unit": "store locations",
+    "examined": 16,
+    "mentions": 1,
+    "remaining": "None; Away lists one San Francisco store. The other fifteen are outside the city."
+  },
+  "findings": [
+    {
+      "id": "2026-09-12-0001",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "371 Hayes St",
+      "street_number": "371",
+      "street_name": "HAYES",
+      "street_type": "ST",
+      "description": "Away lists a store at this address.",
+      "extra": {
+        "name": "Away",
+        "name_as_listed": "San Francisco: Hayes Valley",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94102",
+        "kinds": [
+          "Luggage"
+        ],
+        "opening_hours": [
+          "Mo,Tu,We,Th,Fr,Sa 11:00-18:00",
+          "Su 12:00-18:00"
+        ]
+      },
+      "citation": {
+        "label": "Away, San Francisco: Hayes Valley store page",
+        "url": "https://www.awaytravel.com/pages/store/san-francisco-hayes-valley",
+        "locator": "the page's Location & Hours block"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0816027",
+        "path": "/san-francisco/hayes-valley/hayes-street/371/",
+        "eas_address": "371 HAYES ST",
+        "method": "EAS exact match on 371 HAYES ST → parcel 0816027; sf-parcels has blklot 0816027 active, 371–371 HAYES; the 2025 roll records it as commercial retail, built 1963. Checked by hand because the roll's class for the parcel is 'Commercial Store Condo': sf-parcels puts six active parcels on map 0816027 — 371 and 369 HAYES ST and four at 270 LINDEN ST — so parcel 0816027 is one store condominium in the building, not the building. EAS files 371 HAYES ST on 0816027 and no other, and 0816027 is the map's key parcel, so the page stays at 371 Hayes Street; the roll's unit-scoped figures (floor area, rooms, the parcel's assessed values) are off it, with an `unknowns` line saying so, and the page cites all six parcels.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed.",
+        "by_hand": true
+      }
+    }
+  ]
+}
