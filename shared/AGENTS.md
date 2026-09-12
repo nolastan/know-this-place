@@ -142,6 +142,12 @@ wraps it. A page with JS disabled — or a search crawler — must see everythin
   becomes keyboard-focusable and shows that text on hover/focus. The values
   must still exist in the DOM (legend, `aria-label`); the tooltip only surfaces
   them at the mark.
+- **`<ktp-copy>`** — wraps a string the reader has to carry elsewhere (a
+  referral code) and appends a Copy button. The string is the element's own
+  `<code>` text, so nothing is revealed: with no JS the code is still printed
+  and still selectable in one click. The button is *appended*, never written
+  into the page — an affordance that needs the script must not exist without
+  it.
 
 Each swaps its own placeholder for an image once the matching key is in
 `site-config.json`, and leaves it standing when there is no key and when there

@@ -182,6 +182,74 @@ customElements.define(
   },
 );
 
+/* <ktp-copy class="offer-code">
+     <span class="offer-code-k">Code</span><code>Stanft6246</code>
+   </ktp-copy>
+
+   A string the reader has to carry somewhere else — a referral code a merchant
+   makes you type in yourself — with a button that copies it.
+
+   The code is already the element's own text, so this reveals nothing: with no
+   JS the chip still prints it, and `user-select: all` still hands it over in
+   one click. The button is appended rather than rendered into the page for
+   exactly that reason — an affordance that only works when the script ran
+   should only exist when the script ran, so a reader with no JS is never
+   offered a dead button.
+
+   The clipboard can refuse (an insecure origin, a permission the browser will
+   not grant, a reader who has denied it). There is nothing to fall back to and
+   nothing worth an alert, so the button says so and the code stays selectable,
+   which is what it was before the button existed. */
+customElements.define(
+  "ktp-copy",
+  class extends HTMLElement {
+    connectedCallback() {
+      const code = this.querySelector("code");
+      if (!code || !navigator.clipboard) return; // nothing to copy, or no way to
+
+      const button = document.createElement("button");
+      button.type = "button";
+      button.textContent = "Copy";
+      // The code is the button's own neighbour and visible, so the label needs
+      // to say which code rather than repeat it.
+      button.setAttribute("aria-label", "Copy the referral code");
+      this.appendChild(button);
+
+      // role="status" so the outcome is announced, not only shown.
+      const said = document.createElement("span");
+      said.className = "visually-hidden";
+      said.setAttribute("role", "status");
+      this.appendChild(said);
+
+      let revert;
+      button.addEventListener("click", async () => {
+        let label, spoken;
+        try {
+          await navigator.clipboard.writeText(code.textContent.trim());
+          label = "Copied";
+          spoken = "Referral code copied to the clipboard.";
+          button.dataset.copied = "";
+        } catch {
+          // Selecting it is the whole of the fallback: the reader copies it
+          // with their own keyboard, as they would have without the button.
+          getSelection()?.selectAllChildren(code);
+          label = "Selected";
+          spoken = "Could not reach the clipboard. The code is selected — copy it yourself.";
+          delete button.dataset.copied;
+        }
+        button.textContent = label;
+        said.textContent = spoken;
+        clearTimeout(revert);
+        revert = setTimeout(() => {
+          button.textContent = "Copy";
+          said.textContent = "";
+          delete button.dataset.copied;
+        }, 2500);
+      });
+    }
+  },
+);
+
 /* <ktp-figure> … a chart whose marks carry data-tip="…" … </ktp-figure>
 
    Adds the hover/focus tooltip layer to any chart. Marks that carry a

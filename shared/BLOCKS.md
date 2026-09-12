@@ -519,6 +519,18 @@ saying plainly that the link does not open the merchant's own menu; a row whose
 link does reach the merchant — a Momence studio's sign-up — carries none, since
 the button already says where it goes.
 
+An offer the reader claims with a **code** rather than a link that carries it
+prints the code under the button, in a `.offer-code` chip, and the disclosure
+line says who applies it — nobody. The code is text in the HTML: `<ktp-copy>`
+only appends the Copy button, so a reader with no JS still reads the code and
+`user-select: all` still hands it over in one click. Never put the code only in
+the link, and never render a Copy button into the markup.
+```html
+<p class="occupant-offer"><a href="…" rel="sponsored noopener">Get 100 points at Insomnia Cookies</a>
+<ktp-copy class="offer-code"><span class="offer-code-k">Code</span><code>Stanft6246</code></ktp-copy>
+<small>Referral code. Nothing applies it for you — type it into the “Referral code (optional)” field when you create an Insomnia Cookies account.</small></p>
+```
+
 ### Notes — `.community-note`
 `.community-note` wraps clearly-attributed unverified contributions (auto-
 labeled by CSS).

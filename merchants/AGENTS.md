@@ -26,6 +26,7 @@ lives.
 | `casper` | Casper, mattresses and bedding (its own store finder) | `https://stores.casper.com/ca/sanfrancisco/` lists four stores in the city, but three are Mancini's Sleepworld — a stockist, not a Casper door — and only the Union Street shop is Casper's own; its page carries a schema.org `FurnitureStore` block | 30% off, on Casper's own sign-up | `casper/<date>.json` |
 | `crumbl` | Crumbl, cookie bakeries (its own site) | `https://crumblcookies.com/stores/ca/san-francisco-area` links four stores and one is in the city (the others are Berkeley, Foster City and Walnut Creek); the store page carries a schema.org `Bakery` block with the address, the coordinates and the opening hours | One link for the whole chain: joining Crumbl Rewards, on Crumbl's own app. The link opens the app at the invite, so its row carries a note; what the invited person gets beyond membership is stated on no public page, and the issue states only the referrer's five Crumbs | `crumbl/<date>.json` |
 | `fitnesssf` | FITNESS SF, gyms (its own site) | `https://www.fitnesssf.com/locations` names the nine gyms but carries no addresses or hours; each location page, `https://www.fitnesssf.com/location/<slug>`, prints both as plain text, with no schema.org markup and no coordinates | One link for the whole chain: a free month for the person joining, on FITNESS SF's own sign-up | `fitnesssf/<date>.json` |
+| `insomniacookies` | Insomnia Cookies, late-night cookie bakeries (its own site) | The store pages are a client-rendered shell, so the addresses come from the GraphQL API behind them: `POST https://api.insomniacookies.com/graphql` with `storeBySlug(where:{slug:$slug})`, run over the 378 `/store/<slug>` URLs in `https://insomniacookies.com/sitemap.xml`. It answers unauthenticated; `storeSearch` does not. Take **Retail Hours**, not Delivery Hours | 100 points, as a **code** the reader types in at sign-up — the row carries `code` as well as `url` | `insomniacookies/<date>.json` |
 | `momence` | Momence, class-booking hosts | Momence's host record (`https://momence.com/_api/primary/plugin/hosts/<id>`) confirms each host's name but lists no locations, so the addresses come from each studio's own location pages | Per host: one `REFERRALS` row per studio, keyed `momence-<studio>`, which is also the page's source id; the link opens that studio's sign-up | `momence/<date>.json` |
 | `ritual` | Ritual, ordering app | `https://ritual.co/order?lat=&lon=` server-renders its nearby-merchant list into the page's `__NEXT_DATA__` — 36 listings at most, within 5 km, ranked by distance from the point — so a grid of points and a de-duplication by merchant id is what covers the city. Each listing's own page, `https://ritual.co/order<menuPath>`, carries the postal code, the weekly hours and the categories the list leaves out | $10 across the first orders; the link opens Ritual's sign-up page, not the merchant | `ritual/<date>.json` |
 | `vuori` | Vuori, clothing (its own site) | `https://vuoriclothing.com/pages/stores` links 132 store pages, one of them in the city (the other San Francisco-named store is the Livermore outlet); the store page carries a schema.org `ClothingStore` block and prints the hours beside it | 20% off, on Vuori's own site | `vuori/<date>.json` |
@@ -37,13 +38,13 @@ filed through it arrives workable.
 
 ## Before you start
 
-A ticket is workable when it carries both halves: **a referral link with a real
-code** — not a `CODE` or `[REFERRAL CODE]` placeholder — and **a way to list the
-directory's San Francisco locations**, whether an API, a GraphQL query, a
-schema.org block on the merchant's own pages, or the addresses typed into the
-issue. Missing either half, label the issue `needs-human`, say which half is
-missing, and stop. Only a human can sign up for the programme, and a guessed
-code publishes a dead link.
+A ticket is workable when it carries both halves: **a real referral credential**
+— a link with a real code in it, or a bare code, but never a `CODE` or
+`[REFERRAL CODE]` placeholder — and **a way to list the directory's San
+Francisco locations**, whether an API, a GraphQL query, a schema.org block on
+the merchant's own pages, or the addresses typed into the issue. Missing either
+half, label the issue `needs-human`, say which half is missing, and stop. Only a
+human can sign up for the programme, and a guessed code publishes a dead link.
 
 Settle the **shape of the offer** before writing anything, because it decides
 the source ids:
@@ -57,6 +58,13 @@ the source ids:
 - **A row carries a `note` only where its link does not reach the merchant.**
   Bites' link opens the app, so its note says so; a Momence link opens that
   studio's own sign-up, so it carries none.
+- **An offer claimed with a code is a `code` on the row, not a doctored link.**
+  Insomnia Cookies gives out a code and no link that carries it, so its row
+  holds both `url` and `code` and the panel prints the code to copy. Such a row
+  always carries a `note` as well, saying that nothing applies the code for the
+  reader and where they put it — a button that cannot claim the offer has to
+  say who does. Never fold a code into a query string the programme does not
+  document, and never publish a code a human did not supply.
 
 A directory that is not a list of shops at all — HotelTonight's rotating hotel
 inventory, say — is not an `occupants` source, and needs a human's design
