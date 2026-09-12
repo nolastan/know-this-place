@@ -17,7 +17,7 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Buena Vista North Historic District](buena-vista-north/) — Eligible for the California Register, significant 1870–1915; 23 buildings documented on 7 streets.
 - [Capp and Howard Streets Mid-Block Fire Line Historic District](capp-and-howard-streets-mid-block-fire-line/) — Eligible for the California and National Registers, significant 1865–1909; 5 buildings documented on 2 streets.
 - [Castro & Liberty Streets Historic District](castro-and-liberty-streets/) — Eligible for the California Register, significant 1897–1906; 47 buildings documented on 3 streets.
-- [Chinatown Historic District](chinatown/) — Eligible for the California and National Registers, significant 1906–1930/1938; 236 buildings documented on 29 streets.
+- [Chinatown Historic District](chinatown/) — Eligible for the California and National Registers, significant 1906–1930/1938; 237 buildings documented on 29 streets.
 - [Chula-Abbey Early Residential District](chula-abbey/) — An Article 10 city landmark district, significant 1865–1912; 38 buildings documented on 5 streets.
 - [Chula-Dolores-17th Fire Survivors and Reconstruction Historic District](chula-dolores-17th-fire-survivors-and-reconstruction/) — Eligible for the California Register, significant 1865–1880; 1907–1912; 39 buildings documented on 5 streets.
 - [Civic Center Historic District](civic-center/) — An Article 10 city landmark district, significant 1913–1951; 29 buildings documented on 10 streets.
@@ -103,7 +103,7 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Sycamore Street Reconstruction Historic District](sycamore-street-reconstruction/) — Eligible for the California Register, significant 1906–1917; 16 buildings documented on 4 streets.
 - [Telegraph Hill Historic District](telegraph-hill/) — An Article 10 city landmark district; 13 buildings documented on 7 streets.
 - [Third Street Industrial District](third-street/) — Eligible for the California Register, significant 1900–1948 / 1872–1958; 5 buildings documented on one street.
-- [Upper Fillmore Neighborhood Commercial Historic District](upper-fillmore-neighborhood-commercial/) — Eligible for the California Register, significant 1865–1905; 1906–1929; 14 buildings documented on 2 streets.
+- [Upper Fillmore Neighborhood Commercial Historic District](upper-fillmore-neighborhood-commercial/) — Eligible for the California Register, significant 1865–1905; 1906–1929; 15 buildings documented on 2 streets.
 - [Upper Grant Avenue Historic District](upper-grant-avenue/) — Eligible for the California Register, significant 1906–1925; 111 buildings documented on 11 streets.
 - [Upper Market Street Commercial Historic District](upper-market-street-commercial/) — Eligible for the California Register, significant 1886–1958; 1970–1979; 29 buildings documented on 3 streets.
 - [Upper Market Street Commercial Historic District Extension](upper-market-street-commercial-extension/) — Eligible for the California Register, significant 1886–1958; 1970–1979; 14 buildings documented on one street.

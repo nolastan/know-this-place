@@ -6,7 +6,9 @@ The parcels on King Street documented here so far, from the city's address, asse
 
 - [128](128/) — A 1913 store building in the South End Historic District, with window replacement permitted in 2000.
 - [160](160/) — A 2002 office building, with plumbing work permitted in 2018.
+- [170](170/) — A 2007 store building, with facade work permitted in 2014.
 - [207](207/) — A 2003 office condominium, with plumbing work permitted in 2018.
+- [215–227](215/) — A 2002 101-unit apartment building, with plumbing work permitted in 2016.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

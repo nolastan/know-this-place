@@ -23,7 +23,7 @@ The buildings documented here so far inside the Chinatown Historic District, and
 - [Pine Street](/san-francisco/financial-district/pine-street/) — 1 documented building inside the district.
 - [Ross Alley, Chinatown](/san-francisco/chinatown/ross-alley/) — 2 documented buildings inside the district.
 - [Ross Alley, North Beach](/san-francisco/north-beach/ross-alley/) — 1 documented building inside the district.
-- [Sacramento Street](/san-francisco/nob-hill/sacramento-street/) — 13 documented buildings inside the district.
+- [Sacramento Street](/san-francisco/nob-hill/sacramento-street/) — 14 documented buildings inside the district.
 - [Spofford Street, Chinatown](/san-francisco/chinatown/spofford-street/) — 5 documented buildings inside the district.
 - [Spofford Street, North Beach](/san-francisco/north-beach/spofford-street/) — 3 documented buildings inside the district.
 - [Stockton Street](/san-francisco/chinatown/stockton-street/) — 30 documented buildings inside the district.
@@ -176,6 +176,7 @@ The buildings documented here so far inside the Chinatown Historic District, and
 - [41–53 Ross Alley](/san-francisco/chinatown/ross-alley/41/) — A 1908 hotel, with reroofing permitted in 2012.
 - [8–14 Ross Alley](/san-francisco/north-beach/ross-alley/8/) — A 1906 10-unit apartment building, with a seismic retrofit permitted in 1995.
 - [654–781 Sacramento Street](/san-francisco/chinatown/grant-avenue/654/) — A 1907 hotel, with reroofing permitted in 2022.
+- [660 Sacramento Street](/san-francisco/nob-hill/sacramento-street/660/) — A 1907 office building, with a bathroom remodel permitted in 2009.
 - [688–690 Sacramento Street](/san-francisco/nob-hill/sacramento-street/688/) — A 1916 2-unit building with a ground-floor store, with a seismic retrofit permitted in 1997.
 - [696 Sacramento Street](/san-francisco/nob-hill/sacramento-street/696/) — A 1909 store building, with a kitchen remodel permitted in 2026.
 - [706–710 Sacramento Street](/san-francisco/nob-hill/sacramento-street/706/) — A 1906 8-unit apartment building, with a seismic retrofit permitted in 2000.

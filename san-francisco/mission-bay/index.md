@@ -33,6 +33,7 @@ Northeast Mission Historic Resource Survey, adopted in 2011.
 - [Mission Bay Boulevard](mission-bay-boulevard/) — 1 building, built 2017.
 - [Mississippi Street](mississippi-street/) — 2 buildings, built 1948–1949.
 - [Missouri Street](missouri-street/) — 1 building, built 1931.
+- [Owens Street](owens-street/) — 1 building.
 - [Rhode Island Street](rhode-island-street/) — 4 buildings, built 1924–1951.
 - [Terry A Francois Boulevard](terry-a-francois-boulevard/) — 1 building, built 1900.
 - [Townsend Street](townsend-street/) — 2 buildings, built 2002–2008.

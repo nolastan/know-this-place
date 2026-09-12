@@ -2159,6 +2159,13 @@ REFERRALS = {
         "offer": "Get a free credit at HAUM Studios",
         "app": "Momence",
     },
+    "ritual": {
+        "url": "https://order.ritual.co/join-your-friends?promo=STANFORD66377",
+        "offer": "Get $10 towards your first Ritual orders",
+        "app": "Ritual",
+        "note": ("Referral link. It opens Ritual's sign-up page, where you can search "
+                 "for {which}. $5 is applied on signup and $5 after your first order."),
+    },
 }
 DAY_ABBR = ("Mo", "Tu", "We", "Th", "Fr", "Sa", "Su")
 DAY_SHORT = ("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun")

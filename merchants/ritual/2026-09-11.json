@@ -1,0 +1,2540 @@
+{
+ "source_id": "ritual",
+ "batch": "2026-09-11",
+ "read_on": "2026-09-11",
+ "notes": "Read on 2026-09-11 for issue #276. https://ritual.co/order?lat=&lon= server-renders the nearby-merchant list into the page's __NEXT_DATA__ \u2014 up to 36 listings ranked by distance, within 5 km of the point \u2014 so one request does not cover the city. This is the union of a 1 km grid of 210 points over San Francisco (37.7045-37.8330 N, 122.5150-122.3570 W), de-duplicated by Ritual's merchant id. Coverage is checkable from the grid itself: 61 points came back full, and the furthest listing any full point returned sat at least 1,261 m away, further than the 707 m from any point in the city to the nearest grid node, so every listing within the grid was within reach of some point. Each merchant's own listing page carries what the list does not \u2014 postal code, the weekly opening hours, and its categories. Both were fetched twice, and the two reads agreed on every field of all 53 listings. Hours are Ritual's ordering hours rather than the shop's door hours, and the many :15 and :45 closing times are the app's last-order cutoffs. The list's `tags` are not taken: they disagree with the merchant record's own `categories` (the list tags Poke Life 'Poke, Healthy Eats' where its record says 'Healthy Eats', and tags one Joe & The Juice 'MarketingPromo'), so `cuisines` is the merchant record's `categories`. Ratings, promotions and pickup instructions describe the merchant rather than the building and are left out.",
+ "coverage": {
+  "unit": "merchant listings",
+  "examined": 53,
+  "mentions": 53,
+  "remaining": "None; every San Francisco listing Ritual returns for the grid is here.",
+  "note": "All 53 resolved \u2014 8 of them by hand: a number EAS files on two streets, two condominium buildings placed on the building's parcel, two listings that give a building's name instead of a street address, and two on Embarcadero Center, a street the city's address registry does not hold. 52 published; 1 declined, a business already on its page from another directory. 12 pages were seeded for it; the other 37 already existed."
+ },
+ "findings": [
+  {
+   "id": "2026-09-11-0001",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "1 California Street",
+   "description": "Ladle & Leaf is listed on Ritual at this address.",
+   "extra": {
+    "name": "Ladle & Leaf",
+    "name_as_listed": "Ladle & Leaf (California/Davis)",
+    "cuisines": [
+     "Soups",
+     "Bowls"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94111",
+    "geo": [
+     37.7933931,
+     -122.3967727
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr 10:00-14:00"
+    ],
+    "ritual_merchant_id": "efa504ed9b3f4e909aecd2c77debee95"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/ladle-leaf-california-davis-san-francisco/85ed",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "1",
+   "street_name": "CALIFORNIA",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0264004",
+    "path": "/san-francisco/financial-district/california-street/1/",
+    "eas_address": "1 CALIFORNIA ST",
+    "method": "EAS exact match on 1 CALIFORNIA ST \u2192 parcel 0264004; sf-parcels has blklot 0264004 active, 1\u20131 CALIFORNIA; the 2025 roll records it as commercial office, built 1969.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/financial-district/california-street/1/."
+   }
+  },
+  {
+   "id": "2026-09-11-0002",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "100 1st Street",
+   "description": "La Fromagerie is listed on Ritual at this address.",
+   "extra": {
+    "name": "La Fromagerie",
+    "name_as_listed": "La Fromagerie (Mission/1st)",
+    "cuisines": [
+     "Sandwiches",
+     "European"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94105",
+    "geo": [
+     37.789469,
+     -122.397738
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr 11:00-14:45"
+    ],
+    "ritual_merchant_id": "e21f837d35d44846b1181ca6d85e4210"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/la-fromagerie-mission-1st-san-francisco/2949",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "100",
+   "street_name": "01ST",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3721001",
+    "path": "/san-francisco/east-cut/1st-street/100/",
+    "eas_address": "100 01ST ST",
+    "method": "EAS exact match on 100 01ST ST \u2192 parcel 3721001; sf-parcels has blklot 3721001 active, 100\u2013104 01ST; the 2025 roll records it as commercial office, built 1988. EAS puts 100, 104 01ST ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 100.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/east-cut/1st-street/100/."
+   }
+  },
+  {
+   "id": "2026-09-11-0003",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "101 Montgomery St",
+   "description": "La Fromagerie is listed on Ritual at this address.",
+   "extra": {
+    "name": "La Fromagerie",
+    "name_as_listed": "La Fromagerie (101 Montgomery St)",
+    "cuisines": [
+     "Sandwiches",
+     "Salads"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94104",
+    "geo": [
+     37.790534,
+     -122.402419
+    ],
+    "opening_hours": [
+     "Mo,Th 09:00-17:00",
+     "Tu,We 10:00-17:45",
+     "Fr 09:00-14:30"
+    ],
+    "ritual_merchant_id": "dca6d34e69a84ea29533bef7e7bf7d2d"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/la-fromagerie-101-montgomery-st-san-francisco/f95a",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "101",
+   "street_name": "MONTGOMERY",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0288031",
+    "path": "/san-francisco/financial-district/montgomery-street/101/",
+    "eas_address": "101 MONTGOMERY ST",
+    "method": "EAS files the number 101 under two parcels, 0288031 on Montgomery and 1300001 on Amatury Loop in the Presidio, which is why the street-and-number lookup could not choose. The listing's own coordinates fall on active parcel 0288031, 101\u2013145 Montgomery, a 28-storey office building of 1984 on the 2025 roll. The page at that parcel is published.",
+    "checked_on": "2026-09-11",
+    "by_hand": true,
+    "note": "Placed by hand: the ambiguity is in EAS's numbering across two streets, not in the listing, and the listing's point settles it."
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/financial-district/montgomery-street/101/."
+   }
+  },
+  {
+   "id": "2026-09-11-0004",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "118 New Montgomery St",
+   "description": "Ayola is listed on Ritual at this address.",
+   "extra": {
+    "name": "Ayola",
+    "name_as_listed": "Ayola (New Montgomery/Minna)",
+    "cuisines": [
+     "Middle Eastern"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94105",
+    "geo": [
+     37.787104,
+     -122.400232
+    ],
+    "opening_hours": [
+     "Mo,Tu,Th,Fr 10:00-15:00",
+     "We 10:00-03:00"
+    ],
+    "ritual_merchant_id": "c2021c01fe254f30949eda369d0277d4"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/ayola-new-montgomery-minna-san-francisco/ca9a",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "118",
+   "street_name": "NEW MONTGOMERY",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3722071",
+    "path": "/san-francisco/east-cut/new-montgomery-street/100/",
+    "eas_address": "100 NEW MONTGOMERY ST",
+    "method": "EAS exact match on 118 NEW MONTGOMERY ST \u2192 parcel 3722071; sf-parcels has blklot 3722071 active, 138\u2013138 MINNA; the 2025 roll records it as commercial office, built 1901. EAS puts 100, 116, 118, 122, 126 NEW MONTGOMERY ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 100.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/east-cut/new-montgomery-street/100/."
+   }
+  },
+  {
+   "id": "2026-09-11-0005",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "123 2nd St",
+   "description": "North India is listed on Ritual at this address.",
+   "extra": {
+    "name": "North India",
+    "name_as_listed": "North India (2nd/Minna)",
+    "cuisines": [
+     "Indian"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94105",
+    "geo": [
+     37.78777,
+     -122.399231
+    ],
+    "opening_hours": [
+     "Su,Mo,Tu,We,Th,Fr,Sa 10:00-22:30"
+    ],
+    "ritual_merchant_id": "aa124e571157475fbf0ac28a32ff2b9c"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/north-india-2nd-minna-san-francisco/4871",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "123",
+   "street_name": "02ND",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3721071",
+    "path": "/san-francisco/east-cut/2nd-street/121/",
+    "eas_address": "121 02ND ST",
+    "method": "EAS exact match on 123 02ND ST \u2192 parcel 3721071; sf-parcels has blklot 3721071 active, 121\u2013123 02ND; the 2025 roll records it as commercial office, built 1907. EAS puts 121, 123 02ND ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 121.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/east-cut/2nd-street/121/."
+   }
+  },
+  {
+   "id": "2026-09-11-0006",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "123 2nd St San Francisco CA 94105",
+   "description": "The Grubbies is listed on Ritual at this address.",
+   "extra": {
+    "name": "The Grubbies",
+    "name_as_listed": "The Grubbies (2nd/Minna)",
+    "cuisines": [
+     "Japanese",
+     "Sushi"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94105",
+    "geo": [
+     37.787513,
+     -122.398955
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th 11:30-14:30",
+     "Fr 11:30-14:00"
+    ],
+    "ritual_merchant_id": "a4f9f769f02a42cfb3a93896123a26b0"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/the-grubbies-2nd-minna-san-francisco/a561",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "123",
+   "street_name": "02ND",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3721071",
+    "path": "/san-francisco/east-cut/2nd-street/121/",
+    "eas_address": "121 02ND ST",
+    "method": "EAS exact match on 123 02ND ST \u2192 parcel 3721071; sf-parcels has blklot 3721071 active, 121\u2013123 02ND; the 2025 roll records it as commercial office, built 1907. EAS puts 121, 123 02ND ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 121.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/east-cut/2nd-street/121/."
+   }
+  },
+  {
+   "id": "2026-09-11-0007",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "1233 Van Ness Avenue",
+   "description": "Wok Shop Cafe is listed on Ritual at this address.",
+   "extra": {
+    "name": "Wok Shop Cafe",
+    "name_as_listed": "Wok Shop Cafe (Van Ness/Sutter)",
+    "cuisines": [
+     "Chinese"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94109",
+    "geo": [
+     37.7871373,
+     -122.4219478
+    ],
+    "opening_hours": [
+     "Su 16:00-21:00",
+     "Mo,Tu,We,Th,Fr,Sa 11:00-21:00"
+    ],
+    "ritual_merchant_id": "46883ec94e5148d89b7cb91015c1f999"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/wok-shop-cafe-van-ness-sutter-san-francisco/ce23",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "1233",
+   "street_name": "VAN NESS",
+   "street_type": "AVE",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0690001A",
+    "path": "/san-francisco/western-addition/van-ness-avenue/1233/",
+    "eas_address": "1233 VAN NESS AVE",
+    "method": "EAS exact match on 1233 VAN NESS AVE \u2192 parcel 0690001A; sf-parcels has blklot 0690001A active, 1233\u20131237 VAN NESS; the 2025 roll records it as commercial retail, built 1913. EAS puts 1233, 1235, 1237 VAN NESS AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1233.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/western-addition/van-ness-avenue/1233/."
+   }
+  },
+  {
+   "id": "2026-09-11-0008",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "1253 9th Avenue",
+   "description": "Little Sweet is listed on Ritual at this address.",
+   "extra": {
+    "name": "Little Sweet",
+    "name_as_listed": "Little Sweet (9th/Irving)",
+    "cuisines": [
+     "Bubble Tea",
+     "Sweets"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94122",
+    "geo": [
+     37.7649409,
+     -122.46666
+    ],
+    "opening_hours": [
+     "Su,Mo,Tu,We,Th,Fr,Sa 11:00-21:45"
+    ],
+    "ritual_merchant_id": "1e0bd2aab8dc4fdcaaddab6119df7779"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/little-sweet-9th-irving-san-francisco/e96f",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "1253",
+   "street_name": "09TH",
+   "street_type": "AVE",
+   "resolution": {
+    "status": "resolved",
+    "apn": "1741010",
+    "path": "/san-francisco/inner-sunset/9th-avenue/1251/",
+    "eas_address": "1251 09TH AVE",
+    "method": "EAS exact match on 1253 09TH AVE \u2192 parcel 1741010; sf-parcels has blklot 1741010 active, 1251\u20131255 09TH; the 2025 roll records it as multi-family residential, built 1904. EAS puts 1251, 1253, 1255 09TH AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1251.",
+    "checked_on": "2026-09-11",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/inner-sunset/9th-avenue/1251/."
+   }
+  },
+  {
+   "id": "2026-09-11-0009",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "152 Kearny St",
+   "description": "Jamba Juice is listed on Ritual at this address.",
+   "extra": {
+    "name": "Jamba Juice",
+    "name_as_listed": "Jamba Juice (Kearny/Sutter)",
+    "cuisines": [
+     "Juices & Smoothies",
+     "Healthy Eats"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94108",
+    "geo": [
+     37.789688,
+     -122.403765
+    ],
+    "opening_hours": [
+     "Su 10:00-16:00",
+     "Mo,Tu,We,Th,Fr 07:30-17:30",
+     "Sa 09:00-17:00"
+    ],
+    "ritual_merchant_id": "c51fc4b587b649fcb9e5e80df19f8027"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/jamba-juice-kearny-sutter-san-francisco/2344",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "152",
+   "street_name": "KEARNY",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0292009",
+    "path": "/san-francisco/union-square/kearny-street/138/",
+    "eas_address": "138 KEARNY ST",
+    "method": "EAS exact match on 152 KEARNY ST \u2192 parcel 0292009; sf-parcels has blklot 0292009 active, 138\u2013152 KEARNY; the 2025 roll records it as commercial hotel, built 1911. The assessor files the parcel as 179 SUTTER ST. EAS puts 138, 150, 152 KEARNY ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 138.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/union-square/kearny-street/138/."
+   }
+  },
+  {
+   "id": "2026-09-11-0010",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "1655 Market Street",
+   "description": "Spice of America is listed on Ritual at this address.",
+   "extra": {
+    "name": "Spice of America",
+    "name_as_listed": "Spice of America (Market/Gough)",
+    "cuisines": [
+     "Indian"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94103",
+    "geo": [
+     37.773264,
+     -122.421369
+    ],
+    "opening_hours": [
+     "Su,Mo,Tu,We,Th,Fr,Sa 11:00-14:00,17:00-21:00"
+    ],
+    "ritual_merchant_id": "74380077d8d4436ca5f46e4cf6ce2d23"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/spice-of-america-market-gough-san-francisco/8acb",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "1655",
+   "street_name": "MARKET",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3504001",
+    "path": "/san-francisco/mission/brady-street/4/",
+    "eas_address": "1649 MARKET ST",
+    "method": "EAS exact match on 1655 MARKET ST \u2192 parcel 3504001; sf-parcels has blklot 3504001 active, 4\u201310 BRADY; the 2025 roll records it as multi-family residential, built 1912. EAS puts 1649, 1651, 1655 MARKET ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1649.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/mission/brady-street/4/."
+   }
+  },
+  {
+   "id": "2026-09-11-0011",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "1700 Owens St",
+   "description": "Poke Life is listed on Ritual at this address.",
+   "extra": {
+    "name": "Poke Life",
+    "name_as_listed": "Poke Life (16th/Owens)",
+    "cuisines": [
+     "Healthy Eats"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94158",
+    "geo": [
+     37.767081,
+     -122.393923
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr 11:00-14:45"
+    ],
+    "ritual_merchant_id": "cfb616f9e9be4cceb530573da45b7789"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/poke-life-16th-owens-san-francisco/d51b",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "1700",
+   "street_name": "OWENS",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "8709007",
+    "path": "/san-francisco/mission-bay/owens-street/1700/",
+    "eas_address": "1700 OWENS ST",
+    "method": "EAS exact match on 1700 OWENS ST \u2192 parcel 8709007; sf-parcels has blklot 8709007 active, 1700\u20131700 OWENS; the 2025 roll records it as commercial office.",
+    "checked_on": "2026-09-11",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/mission-bay/owens-street/1700/."
+   }
+  },
+  {
+   "id": "2026-09-11-0012",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "1737 Post Street",
+   "description": "Benihana is listed on Ritual at this address.",
+   "extra": {
+    "name": "Benihana",
+    "name_as_listed": "Benihana (Post/Webster)",
+    "cuisines": [
+     "Japanese",
+     "Seafood",
+     "Steak"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94115",
+    "geo": [
+     37.7852719,
+     -122.4291175
+    ],
+    "opening_hours": [
+     "Su,Mo,Tu,We,Th 10:30-22:00",
+     "Fr,Sa 10:30-23:00"
+    ],
+    "ritual_merchant_id": "f6f4a23db1d6450c88d77fd2efea31dd"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/benihana-post-webster-san-francisco/24ca",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "1737",
+   "street_name": "POST",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0700009",
+    "path": "/san-francisco/japantown/post-street/1737/",
+    "eas_address": "1737 POST ST",
+    "method": "EAS exact match on 1737 POST ST \u2192 parcel 0700009; sf-parcels has blklot 0700009 active, 1737\u20131737 POST; the 2025 roll records it as commercial retail, built 1968. The assessor files the parcel as 11 PEACE PZ.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/japantown/post-street/1737/."
+   }
+  },
+  {
+   "id": "2026-09-11-0013",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "177 Townsend Street",
+   "description": "Yummy Plate is listed on Ritual at this address.",
+   "extra": {
+    "name": "Yummy Plate",
+    "name_as_listed": "Yummy Plate (Townsend/3rd)",
+    "cuisines": [
+     "Mediterranean",
+     "Salads"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94107",
+    "geo": [
+     37.7791526,
+     -122.3919931
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr,Sa 08:00-14:00"
+    ],
+    "ritual_merchant_id": "d6f5237ec336428d89b3cf475bbe9833"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/yummy-plate-townsend-3rd-san-francisco/544a",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "177",
+   "street_name": "TOWNSEND",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3794077",
+    "path": "/san-francisco/south-beach/king-street/170/",
+    "eas_address": "177 TOWNSEND ST",
+    "method": "EAS files 177 TOWNSEND ST and 170 KING ST under parcel 3794004, which sf-parcels reports retired. The listing's point falls on condominium map 3794077, whose 202 active parcels the 2025 roll gives as 174 condominiums, 24 below-market-rate condominiums and 4 commercial store condominiums, all built 2007 and addressed 170 King Street or 177 Townsend Street. The building is filed under the map's key parcel, at the lowest number, 170 King.",
+    "checked_on": "2026-09-11",
+    "by_hand": true,
+    "note": "A condominium building, placed on its own page once the building's parcel set was established from sf-parcels' mapblklot, per the condominium rule in merchants/AGENTS.md. The resolver's own verdict was: The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/south-beach/king-street/170/."
+   }
+  },
+  {
+   "id": "2026-09-11-0014",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "2031 Chestnut Street",
+   "description": "Asian Box is listed on Ritual at this address.",
+   "extra": {
+    "name": "Asian Box",
+    "name_as_listed": "Asian Box (Chestnut/Fillmore)",
+    "cuisines": [
+     "Asian"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94123",
+    "geo": [
+     37.800631,
+     -122.436803
+    ],
+    "opening_hours": [
+     "Su 11:00-19:45",
+     "Mo,Tu,We,Th,Fr,Sa 11:00-20:45"
+    ],
+    "ritual_merchant_id": "fcff1befc36a435aac4b009baae1855e"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/asian-box-chestnut-fillmore-san-francisco/6347",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "2031",
+   "street_name": "CHESTNUT",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0491026",
+    "path": "/san-francisco/marina/chestnut-street/2031/",
+    "eas_address": "2031 CHESTNUT ST",
+    "method": "EAS exact match on 2031 CHESTNUT ST \u2192 parcel 0491026; sf-parcels has blklot 0491026 active, 2031\u20132031 CHESTNUT; the 2025 roll records it as commercial retail, built 1928.",
+    "checked_on": "2026-09-11",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/marina/chestnut-street/2031/."
+   }
+  },
+  {
+   "id": "2026-09-11-0015",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "218 Montgomery St",
+   "description": "Cafe Venue is listed on Ritual at this address.",
+   "extra": {
+    "name": "Cafe Venue",
+    "name_as_listed": "Cafe Venue (Montgomery/Bush)",
+    "cuisines": [
+     "Coffee",
+     "Sandwiches"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94104",
+    "geo": [
+     37.79119,
+     -122.402302
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr 06:30-13:45"
+    ],
+    "ritual_merchant_id": "b115ab56726448cba0013cc47dde8494"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/cafe-venue-montgomery-bush-san-francisco/5c81",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "218",
+   "street_name": "MONTGOMERY",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0268008",
+    "path": "/san-francisco/financial-district/montgomery-street/200/",
+    "eas_address": "200 MONTGOMERY ST",
+    "method": "EAS exact match on 218 MONTGOMERY ST \u2192 parcel 0268008; sf-parcels has blklot 0268008 active, 270\u2013276 BUSH; the 2025 roll records it as commercial office, built 1900. EAS puts 200, 216, 218, 220, 232 MONTGOMERY ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 200. The address carries no parcel number in EAS; the active parcel its coordinates fall in is 0268008.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/financial-district/montgomery-street/200/."
+   }
+  },
+  {
+   "id": "2026-09-11-0016",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "220 Bush St",
+   "description": "Freshroll is listed on Ritual at this address.",
+   "extra": {
+    "name": "Freshroll",
+    "name_as_listed": "Freshroll (Montgomery/Bush)",
+    "cuisines": [
+     "Vietnamese"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94104",
+    "geo": [
+     37.791199,
+     -122.40142
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr 11:00-14:30"
+    ],
+    "ritual_merchant_id": "783ef677e1cc41cbaf8b3f388902a659"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/freshroll-montgomery-bush-san-francisco/dc1f",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "220",
+   "street_name": "BUSH",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0268006",
+    "path": "/san-francisco/financial-district/bush-street/220/",
+    "eas_address": "220 BUSH ST",
+    "method": "EAS exact match on 220 BUSH ST \u2192 parcel 0268006; sf-parcels has blklot 0268006 active, 220\u2013220 BUSH; the 2025 roll records it as commercial office, built 1930.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/financial-district/bush-street/220/."
+   }
+  },
+  {
+   "id": "2026-09-11-0017",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "221 Main Street",
+   "description": "LBC Take Out is listed on Ritual at this address.",
+   "extra": {
+    "name": "LBC Take Out",
+    "name_as_listed": "LBC Take Out (Main/Howard)",
+    "cuisines": [
+     "Sandwiches",
+     "Coffee"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94105",
+    "geo": [
+     37.7903878,
+     -122.3922586
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr 07:30-13:45"
+    ],
+    "ritual_merchant_id": "7f70dd4b714c42253528073b695fb477"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/lbc-take-out-main-howard-san-francisco/2059",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "221",
+   "street_name": "MAIN",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3740034",
+    "path": "/san-francisco/south-beach/main-street/221/",
+    "eas_address": "221 MAIN ST",
+    "method": "EAS exact match on 221 MAIN ST \u2192 parcel 3740034; sf-parcels has blklot 3740034 active, 221\u2013221 MAIN; the 2025 roll records it as commercial office, built 1973.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/south-beach/main-street/221/."
+   }
+  },
+  {
+   "id": "2026-09-11-0018",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "221 Montgomery Street",
+   "description": "Ladle & Leaf is listed on Ritual at this address.",
+   "extra": {
+    "name": "Ladle & Leaf",
+    "name_as_listed": "Ladle & Leaf (Montgomery/Bush)",
+    "cuisines": [
+     "Bowls",
+     "Soups"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94104",
+    "geo": [
+     37.7912547,
+     -122.4026404
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr 10:00-14:00"
+    ],
+    "ritual_merchant_id": "0694c33ac1b24c1794ca352dd8c373f6"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/ladle-leaf-montgomery-bush-san-francisco/862a",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "221",
+   "street_name": "MONTGOMERY",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0269001",
+    "path": "/san-francisco/financial-district/montgomery-street/201/",
+    "eas_address": "201 MONTGOMERY ST",
+    "method": "EAS exact match on 221 MONTGOMERY ST \u2192 parcel 0269001; sf-parcels has blklot 0269001 active, 201\u2013265 MONTGOMERY; the 2025 roll records it as commercial office, built 1927. EAS puts 201, 217, 221, 235, 243, 265 MONTGOMERY ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 201.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/financial-district/montgomery-street/201/."
+   }
+  },
+  {
+   "id": "2026-09-11-0019",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "2213 Fillmore Street",
+   "description": "Joe & The Juice is listed on Ritual at this address.",
+   "extra": {
+    "name": "Joe & The Juice",
+    "name_as_listed": "Joe & The Juice (Fillmore/Sacramento)",
+    "cuisines": [
+     "Juices & Smoothies",
+     "Sandwiches"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94115",
+    "geo": [
+     37.7900864,
+     -122.4343235
+    ],
+    "opening_hours": [
+     "Su,Mo,Tu,We,Th,Fr 07:00-20:00",
+     "Sa 08:00-20:00"
+    ],
+    "ritual_merchant_id": "03ff1c20a71c466da9e649a8231033ee"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/joe-the-juice-fillmore-sacramento-san-francisco/d1d6",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "2213",
+   "street_name": "FILLMORE",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0630007",
+    "path": "/san-francisco/pacific-heights/fillmore-street/2213/",
+    "eas_address": "2213 FILLMORE ST",
+    "method": "EAS exact match on 2213 FILLMORE ST \u2192 parcel 0630007; sf-parcels has blklot 0630007 active, 2213\u20132217 FILLMORE; the 2025 roll records it as multi-family residential, built 1900. EAS puts 2213, 2217 FILLMORE ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2213.",
+    "checked_on": "2026-09-11",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/pacific-heights/fillmore-street/2213/."
+   }
+  },
+  {
+   "id": "2026-09-11-0020",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "227 King Street",
+   "description": "Happy King Pizza is listed on Ritual at this address.",
+   "extra": {
+    "name": "Happy King Pizza",
+    "name_as_listed": "Happy King Pizza (King/3rd)",
+    "cuisines": [
+     "Italian",
+     "Pizza"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94107",
+    "geo": [
+     37.7770381,
+     -122.3926348
+    ],
+    "opening_hours": [
+     "Su,Mo,Tu,We,Th,Fr,Sa 09:00-01:00"
+    ],
+    "ritual_merchant_id": "90cb212c5af047dfbac67c979384b72e"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/happy-king-pizza-king-3rd-san-francisco/3d20c1",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "227",
+   "street_name": "KING",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "8706003",
+    "path": "/san-francisco/south-beach/king-street/215/",
+    "eas_address": "215 KING ST",
+    "method": "EAS exact match on 227 KING ST \u2192 parcel 8706003; sf-parcels has blklot 8706003 active, 150\u2013152 BERRY; the 2025 roll records it as multi-family residential, built 2002. The assessor files the parcel as 150\u2013152 BERRY ST. EAS puts 215, 217, 219, 221, 223, 225, 227 KING ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 215.",
+    "checked_on": "2026-09-11",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/south-beach/king-street/215/."
+   }
+  },
+  {
+   "id": "2026-09-11-0021",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "275 Battery Street",
+   "description": "Ladle & Leaf is listed on Ritual at this address.",
+   "extra": {
+    "name": "Ladle & Leaf",
+    "name_as_listed": "Ladle & Leaf (Battery/Sacramento)",
+    "cuisines": [
+     "Bowls",
+     "Soups"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94111",
+    "geo": [
+     37.7938861,
+     -122.4002704
+    ],
+    "ritual_merchant_id": "97b842e1799144c59dca5f077f426fb6",
+    "listing_state": "MERCHANT_DOWN_MANUAL"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/ladle-leaf-battery-sacramento-san-francisco/a3b8",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "275",
+   "street_name": "BATTERY",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0238001",
+    "path": "/san-francisco/financial-district/battery-street/241/",
+    "eas_address": "241 BATTERY ST",
+    "method": "EAS exact match on 275 BATTERY ST \u2192 parcel 0238001; sf-parcels has blklot 0238001 active, 241\u2013275 BATTERY; the 2025 roll records it as commercial office, built 1989. EAS puts 241, 275 BATTERY ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 241.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/financial-district/battery-street/241/."
+   }
+  },
+  {
+   "id": "2026-09-11-0022",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "276 5th St",
+   "description": "Mr. East Kitchen is listed on Ritual at this address.",
+   "extra": {
+    "name": "Mr. East Kitchen",
+    "name_as_listed": "Mr. East Kitchen (Folsom/5th)",
+    "cuisines": [
+     "Vietnamese"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94103",
+    "geo": [
+     37.780357,
+     -122.403728
+    ],
+    "opening_hours": [
+     "Tu,We,Th,Fr,Sa 17:00-21:00"
+    ],
+    "ritual_merchant_id": "ca79d6a9499b4f1c9371facfcaba8132"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/mr-east-kitchen-folsom-5th-san-francisco/7121",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "276",
+   "street_name": "05TH",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3732271",
+    "path": "/san-francisco/south-of-market/5th-street/270/",
+    "eas_address": "276 05TH ST",
+    "method": "EAS files 270, 276 and 280 05TH ST under parcel 3732009, which sf-parcels reports retired. The listing's point falls on active parcel 3732271 \u2014 270\u2013280 5th Street, an apartment building of 15 units or more that the 2025 roll files as 900 Folsom Street \u2014 and on the 284 parcels of condominium map 3732272, none of them on the roll yet. The page is 3732271's.",
+    "checked_on": "2026-09-11",
+    "by_hand": true,
+    "note": "Placed by hand: the building's own parcel is on the roll and the condominium map over it is not, so the page is the building's, per the condominium rule in merchants/AGENTS.md. The resolver's own verdict was: The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/south-of-market/5th-street/270/."
+   }
+  },
+  {
+   "id": "2026-09-11-0023",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "2845 Mission Street",
+   "description": "Mi Yucatan is listed on Ritual at this address.",
+   "extra": {
+    "name": "Mi Yucatan",
+    "name_as_listed": "Mi Yucatan (24th/Mission)",
+    "cuisines": [
+     "Mexican",
+     "Breakfast"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94110",
+    "geo": [
+     37.751537,
+     -122.41814
+    ],
+    "opening_hours": [
+     "Su,Mo,Tu,We,Th,Fr,Sa 06:00-19:00"
+    ],
+    "ritual_merchant_id": "e357f094784146759f9a5941fa1bb9db"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/mi-yucatan-24th-mission-san-francisco/cbc5",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "2845",
+   "street_name": "MISSION",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "6517028",
+    "path": "/san-francisco/mission/mission-street/2843/",
+    "eas_address": "2843 MISSION ST",
+    "method": "EAS exact match on 2845 MISSION ST \u2192 parcel 6517028; sf-parcels has blklot 6517028 active, 2843\u20132849 MISSION; the 2025 roll records it as multi-family residential, built 1904. EAS puts 2843, 2845, 2847, 2849 MISSION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2843.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/mission/mission-street/2843/."
+   }
+  },
+  {
+   "id": "2026-09-11-0024",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "301 Howard St",
+   "description": "Joe & The Juice is listed on Ritual at this address.",
+   "extra": {
+    "name": "Joe & The Juice",
+    "name_as_listed": "Joe & The Juice (Howard/Beale)",
+    "cuisines": [
+     "Juices & Smoothies",
+     "Coffee"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94105",
+    "geo": [
+     37.789672,
+     -122.394279
+    ],
+    "opening_hours": [
+     "Su,Sa 08:00-18:45",
+     "Mo,Tu,We,Th,Fr 07:00-18:45"
+    ],
+    "ritual_merchant_id": "6dade991742047dca9cb52aa557a20da"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/joe-the-juice-howard-beale-san-francisco/508e",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "301",
+   "street_name": "HOWARD",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3738011",
+    "path": "/san-francisco/east-cut/howard-street/301/",
+    "eas_address": "301 HOWARD ST",
+    "method": "EAS exact match on 301 HOWARD ST \u2192 parcel 3738011; sf-parcels has blklot 3738011 active, 301\u2013315 HOWARD; the 2025 roll records it as commercial office, built 1987. EAS puts 301, 305, 315 HOWARD ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 301.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/east-cut/howard-street/301/."
+   }
+  },
+  {
+   "id": "2026-09-11-0025",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "3109 16th St",
+   "description": "Truly Mediterranean is listed on Ritual at this address.",
+   "extra": {
+    "name": "Truly Mediterranean",
+    "name_as_listed": "Truly Mediterranean (16th/Valencia)",
+    "cuisines": [
+     "Mediterranean",
+     "Wraps"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94103",
+    "geo": [
+     37.764788,
+     -122.42226
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th 11:00-21:45",
+     "Fr,Sa 11:00-23:45"
+    ],
+    "ritual_merchant_id": "ab495ff86de141598081be27509ac2a0"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/truly-mediterranean-16th-valencia-san-francisco/7259",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "3109",
+   "street_name": "16TH",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3568001",
+    "path": "/san-francisco/mission/16th-street/3105/",
+    "eas_address": "3105 16TH ST",
+    "method": "EAS exact match on 3109 16TH ST \u2192 parcel 3568001; sf-parcels has blklot 3568001 active, 3105\u20133111 16TH; the 2025 roll records it as commercial hotel, built 1907. EAS puts 3105, 3107, 3109, 3111 16TH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 3105.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/mission/16th-street/3105/."
+   }
+  },
+  {
+   "id": "2026-09-11-0026",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "3259 Mission Street",
+   "description": "Jasmine Tea House is listed on Ritual at this address.",
+   "extra": {
+    "name": "Jasmine Tea House",
+    "name_as_listed": "Jasmine Tea House (Mission/Fair)",
+    "cuisines": [
+     "Asian",
+     "Chinese"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94110",
+    "geo": [
+     37.7445769,
+     -122.4201142
+    ],
+    "opening_hours": [
+     "Su,Mo,Tu,Fr,Sa 11:00-21:15",
+     "We,Th 11:00-21:00"
+    ],
+    "ritual_merchant_id": "196beade704148919433a7e95f23fd2c"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/jasmine-tea-house-mission-fair-san-francisco/6014",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "3259",
+   "street_name": "MISSION",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "5615078",
+    "path": "/san-francisco/mission/mission-street/3259/",
+    "eas_address": "3259 MISSION ST",
+    "method": "EAS exact match on 3259 MISSION ST \u2192 parcel 5615078; sf-parcels has blklot 5615078 active, 3259\u20133261 MISSION; the 2025 roll records it as multi-family residential, built 1911. EAS puts 3259, 3261 MISSION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 3259.",
+    "checked_on": "2026-09-11",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/mission/mission-street/3259/."
+   }
+  },
+  {
+   "id": "2026-09-11-0027",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "327 Kearny St",
+   "description": "Ayola is listed on Ritual at this address.",
+   "extra": {
+    "name": "Ayola",
+    "name_as_listed": "Ayola (Kearny/Pine)",
+    "cuisines": [
+     "Middle Eastern",
+     "Wraps"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94108",
+    "geo": [
+     37.791134,
+     -122.404264
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr 10:00-14:45"
+    ],
+    "ritual_merchant_id": "bd10de3f179b44b0861414c7d85d9adf"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/ayola-kearny-pine-san-francisco/caa8",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "327",
+   "street_name": "KEARNY",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0270003",
+    "path": "/san-francisco/union-square/kearny-street/325/",
+    "eas_address": "325 KEARNY ST",
+    "method": "EAS exact match on 327 KEARNY ST \u2192 parcel 0270003; sf-parcels has blklot 0270003 active, 325\u2013329 KEARNY; the 2025 roll records it as commercial retail, built 1907. EAS puts 325, 327, 329 KEARNY ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 325.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/union-square/kearny-street/325/."
+   }
+  },
+  {
+   "id": "2026-09-11-0028",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "329 Kearny St",
+   "description": "Sababa is listed on Ritual at this address.",
+   "extra": {
+    "name": "Sababa",
+    "name_as_listed": "Sababa (Kearny/Pine)",
+    "cuisines": [
+     "Mediterranean"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94108",
+    "geo": [
+     37.791207,
+     -122.404278
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr 11:00-19:00"
+    ],
+    "ritual_merchant_id": "51c27049f7324b298514d11b3601487d"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/sababa-kearny-pine-san-francisco/fe39",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "329",
+   "street_name": "KEARNY",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0270003",
+    "path": "/san-francisco/union-square/kearny-street/325/",
+    "eas_address": "325 KEARNY ST",
+    "method": "EAS exact match on 329 KEARNY ST \u2192 parcel 0270003; sf-parcels has blklot 0270003 active, 325\u2013329 KEARNY; the 2025 roll records it as commercial retail, built 1907. EAS puts 325, 327, 329 KEARNY ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 325.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/union-square/kearny-street/325/."
+   }
+  },
+  {
+   "id": "2026-09-11-0029",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "338 Grant Avenue",
+   "description": "Amorino Gelato is listed on Ritual at this address.",
+   "extra": {
+    "name": "Amorino Gelato",
+    "name_as_listed": "Amorino Gelato (Grant/Bush)",
+    "cuisines": [
+     "Coffee",
+     "Sweets"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94108",
+    "geo": [
+     37.7902836,
+     -122.4054164
+    ],
+    "opening_hours": [
+     "Su,Fr,Sa 12:00-19:00",
+     "Mo,Tu,We,Th 12:00-18:00"
+    ],
+    "ritual_merchant_id": "1a3589a42b224f74b8e00c956c07e721"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/amorino-gelato-grant-bush-san-francisco/8d24",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "338",
+   "street_name": "GRANT",
+   "street_type": "AVE",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0287017",
+    "path": "/san-francisco/financial-district/grant-avenue/334/",
+    "eas_address": "334 GRANT AVE",
+    "method": "EAS exact match on 338 GRANT AVE \u2192 parcel 0287017; sf-parcels has blklot 0287017 active, 469\u2013469 BUSH; the 2025 roll records it as commercial hotel, built 1912. EAS puts 334, 338, 342, 352 GRANT AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 334.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/financial-district/grant-avenue/334/."
+   }
+  },
+  {
+   "id": "2026-09-11-0030",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "3771 Mission Street",
+   "description": "Cazuela Comida Mexicana is listed on Ritual at this address.",
+   "extra": {
+    "name": "Cazuela Comida Mexicana",
+    "name_as_listed": "Cazuela Comida Mexicana (Mission/Park)",
+    "cuisines": [
+     "Mexican",
+     "Latin American"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94110",
+    "geo": [
+     37.736318,
+     -122.4241449
+    ],
+    "opening_hours": [
+     "Su,Fr,Sa 07:00-21:00",
+     "Mo,Tu,We,Th 08:00-21:00"
+    ],
+    "ritual_merchant_id": "2a185b5ddf464c1188cddf558d667862"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/cazuela-comida-mexicana-mission-park-san-francisco/1d70",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "3771",
+   "street_name": "MISSION",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "5719018",
+    "path": "/san-francisco/mission/mission-street/3771/",
+    "eas_address": "3771 MISSION ST",
+    "method": "EAS exact match on 3771 MISSION ST \u2192 parcel 5719018; sf-parcels has blklot 5719018 active, 3771\u20133771 MISSION; the 2025 roll records it as commercial retail, built 1912.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/mission/mission-street/3771/."
+   }
+  },
+  {
+   "id": "2026-09-11-0031",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "3836 Geary Boulevard",
+   "description": "Little Sweet is listed on Ritual at this address.",
+   "extra": {
+    "name": "Little Sweet",
+    "name_as_listed": "Little Sweet (Geary/3rd)",
+    "cuisines": [
+     "Bubble Tea",
+     "Coffee"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94118",
+    "geo": [
+     37.7814126,
+     -122.4606499
+    ],
+    "opening_hours": [
+     "Su,Mo,Tu,We,Th,Fr,Sa 11:00-21:45"
+    ],
+    "ritual_merchant_id": "5fc262aa45bc4b96a3d650a9f9441d55"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/little-sweet-geary-3rd-san-francisco/2af3",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "3836",
+   "street_name": "GEARY",
+   "street_type": "BLVD",
+   "resolution": {
+    "status": "resolved",
+    "apn": "1434019",
+    "path": "/san-francisco/lone-mountain/geary-boulevard/3834/",
+    "eas_address": "3834 GEARY BLVD",
+    "method": "EAS exact match on 3836 GEARY BLVD \u2192 parcel 1434019; sf-parcels has blklot 1434019 active, 3834\u20133840 GEARY; the 2025 roll records it as multi-family residential, built 1907. EAS puts 3834, 3836, 3838, 3840 GEARY BLVD on that parcel, so per the directory contract the fact belongs on one page at the lowest, 3834.",
+    "checked_on": "2026-09-11",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/lone-mountain/geary-boulevard/3834/."
+   }
+  },
+  {
+   "id": "2026-09-11-0032",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "4 Embarcadero Center",
+   "description": "Stone Korean Kitchen is listed on Ritual at this address.",
+   "extra": {
+    "name": "Stone Korean Kitchen",
+    "name_as_listed": "Stone Korean Kitchen",
+    "cuisines": [
+     "Korean",
+     "Asian"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94111",
+    "geo": [
+     37.795445,
+     -122.395912
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th 11:00-14:30,16:30-19:30",
+     "Fr 11:00-14:30"
+    ],
+    "ritual_merchant_id": "80d35870775b42d89e0298a25f309aec"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/stone-korean-kitchen-4embarcaderocenter-san-francisco/681a",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "4",
+   "street_name": "EMBARCADERO CENTER",
+   "street_type": null,
+   "resolution": {
+    "status": "resolved",
+    "apn": "0233044",
+    "path": "/san-francisco/financial-district/embarcadero-center/4/",
+    "eas_address": "150 DRUMM ST",
+    "method": "EAS has no street called Embarcadero Center. The listing's own coordinates fall on active parcel 0233044, a 45-storey office building of 1979 that the 2025 roll gives as 4 The Embarcadero and EAS as 150 Drumm Street. The page at that parcel is published.",
+    "checked_on": "2026-09-11",
+    "by_hand": true,
+    "note": "Placed by hand: an address outside EAS may go on a page, with the difference noted on it. The same building was placed the same way in the Bites run. The resolver's own verdict was: The street the record names is not a street in the city's address registry today; the record may name a private way, a renamed street or a spelling this pass could not match."
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/financial-district/embarcadero-center/4/."
+   }
+  },
+  {
+   "id": "2026-09-11-0033",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "401 Sansome St",
+   "description": "Morning Brew Coffee & Tea is listed on Ritual at this address.",
+   "extra": {
+    "name": "Morning Brew Coffee & Tea",
+    "name_as_listed": "Morning Brew Coffee & Tea (Sansome/Sacramento)",
+    "cuisines": [
+     "Coffee",
+     "Baked Goods"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94111",
+    "geo": [
+     37.7940672,
+     -122.4014866
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr 07:00-15:00"
+    ],
+    "ritual_merchant_id": "a05818dbc7c24fb39c6fef154537ccd3"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/morning-brew-coffee-tea-sansome-sacramento-san-francisco/4694",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "401",
+   "street_name": "SANSOME",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0228004",
+    "path": "/san-francisco/financial-district/sansome-street/401/",
+    "eas_address": "401 SANSOME ST",
+    "method": "EAS exact match on 401 SANSOME ST \u2192 parcel 0228004; sf-parcels has blklot 0228004 active, 500\u2013512 SACRAMENTO; the 2025 roll records it as commercial office, built 1906. EAS puts 401, 403, 405 SANSOME ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 401.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/financial-district/sansome-street/401/."
+   }
+  },
+  {
+   "id": "2026-09-11-0034",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "424 Clay St",
+   "description": "Fish & Farm is listed on Ritual at this address.",
+   "extra": {
+    "name": "Fish & Farm",
+    "name_as_listed": "Fish & Farm (Clay/Battery)",
+    "cuisines": [
+     "American"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94111",
+    "geo": [
+     37.795032,
+     -122.40065
+    ],
+    "opening_hours": [
+     "Su,Mo 07:15-20:45",
+     "Tu,Th,Fr,Sa 07:00-20:45",
+     "We 07:00-21:30"
+    ],
+    "ritual_merchant_id": "5e54548580334ef9985915e8d2d3d3bf"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/fish-farm-clay-battery-san-francisco/f539",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "424",
+   "street_name": "CLAY",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0206025",
+    "path": "/san-francisco/financial-district/battery-street/425/",
+    "eas_address": "424 CLAY ST",
+    "method": "EAS exact match on 424 CLAY ST \u2192 parcel 0206025; sf-parcels has blklot 0206025 active, 425\u2013425 BATTERY; the 2025 roll records it as commercial hotel. The assessor files the parcel as 425 BATTERY ST.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/financial-district/battery-street/425/."
+   }
+  },
+  {
+   "id": "2026-09-11-0035",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "5 Embarcadero Center",
+   "description": "Sushi Kinta is listed on Ritual at this address.",
+   "extra": {
+    "name": "Sushi Kinta",
+    "name_as_listed": "Sushi Kinta",
+    "cuisines": [
+     "Sushi",
+     "Japanese"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94111",
+    "geo": [
+     37.7942169,
+     -122.3956663
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr 10:30-18:00",
+     "Sa 11:00-18:00"
+    ],
+    "ritual_merchant_id": "fb7f71abc8e3420bb4a76ce9ad60f638"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/sushi-kinta-5embarcaderocenter-san-francisco/2b27",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "5",
+   "street_name": "EMBARCADERO CENTER",
+   "street_type": null,
+   "resolution": {
+    "status": "resolved",
+    "apn": "0234017",
+    "path": "/san-francisco/south-beach/the-embarcadero/5/",
+    "eas_address": "5 THE EMBARCADERO",
+    "method": "EAS has no street called Embarcadero Center. The listing's own coordinates fall on active parcel 0234017, an 821-room hotel of 1972 that the 2025 roll gives as 5 The Embarcadero \u2014 the number EAS also holds on that parcel. The page at that parcel is published.",
+    "checked_on": "2026-09-11",
+    "by_hand": true,
+    "note": "Placed by hand: an address outside EAS may go on a page, with the difference noted on it. The resolver's own verdict was: The street the record names is not a street in the city's address registry today; the record may name a private way, a renamed street or a spelling this pass could not match."
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/south-beach/the-embarcadero/5/."
+   }
+  },
+  {
+   "id": "2026-09-11-0036",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "50 California Street",
+   "description": "Joe & The Juice is listed on Ritual at this address.",
+   "extra": {
+    "name": "Joe & The Juice",
+    "name_as_listed": "Joe & The Juice (Sacramento/Davis)",
+    "cuisines": [
+     "Juices & Smoothies"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94111",
+    "geo": [
+     37.793946,
+     -122.397465
+    ],
+    "opening_hours": [
+     "Su,Sa 09:00-17:00",
+     "Mo,Tu,We,Th,Fr 07:00-18:45"
+    ],
+    "ritual_merchant_id": "e3e4fb51f41d49ad9e85d8981e2bdab5"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/joe-the-juice-sacramento-davis-san-francisco/0598",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "50",
+   "street_name": "CALIFORNIA",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0235022",
+    "path": "/san-francisco/financial-district/california-street/50/",
+    "eas_address": "50 CALIFORNIA ST",
+    "method": "EAS exact match on 50 CALIFORNIA ST \u2192 parcel 0235022; sf-parcels has blklot 0235022 active, 50\u201352 CALIFORNIA; the 2025 roll records it as commercial office, built 1971. EAS puts 50, 52 CALIFORNIA ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 50.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/financial-district/california-street/50/."
+   }
+  },
+  {
+   "id": "2026-09-11-0037",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "500 Parnassus Avenue",
+   "description": "Ladle & Leaf is listed on Ritual at this address.",
+   "extra": {
+    "name": "Ladle & Leaf",
+    "name_as_listed": "Ladle & Leaf (Parnassus/3rd)",
+    "cuisines": [
+     "Salads",
+     "Sandwiches"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94131",
+    "geo": [
+     37.7634326,
+     -122.4587055
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr 10:00-16:00"
+    ],
+    "ritual_merchant_id": "f6b1566aee4344e496a95c55602e7e62"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/ladle-leaf-parnassus-3rd-san-francisco/e921",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "500",
+   "street_name": "PARNASSUS",
+   "street_type": "AVE",
+   "resolution": {
+    "status": "resolved",
+    "apn": "1757035",
+    "path": "/san-francisco/inner-sunset/3rd-avenue/1308/",
+    "eas_address": "500 PARNASSUS AVE",
+    "method": "EAS exact match on 500 PARNASSUS AVE \u2192 parcel 1757035; sf-parcels has blklot 1757035 active, 1308\u20131362 03RD; the 2025 roll records it as commercial misc, built 1961. The assessor files the parcel as 1308\u20131378 03RD AV. EAS puts 500, 530, 532 PARNASSUS AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 500.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/inner-sunset/3rd-avenue/1308/."
+   }
+  },
+  {
+   "id": "2026-09-11-0038",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "525 Market St",
+   "description": "Joe & The Juice is listed on Ritual at this address.",
+   "extra": {
+    "name": "Joe & The Juice",
+    "name_as_listed": "Joe & The Juice (1st/Market)",
+    "cuisines": [
+     "Juices & Smoothies",
+     "Coffee"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94105",
+    "geo": [
+     37.79055,
+     -122.399441
+    ],
+    "opening_hours": [
+     "Su,Mo,Tu,We,Th 08:00-16:15",
+     "Fr,Sa 08:00-17:15"
+    ],
+    "ritual_merchant_id": "9678421a9fa14dd0817dc9cce653d295"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/joe-the-juice-1st-market-san-francisco/1ee2",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "525",
+   "street_name": "MARKET",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3708056",
+    "path": "/san-francisco/east-cut/market-street/525/",
+    "eas_address": "525 MARKET ST",
+    "method": "EAS exact match on 525 MARKET ST \u2192 parcel 3708056; sf-parcels has blklot 3708056 active, 525\u2013525 MARKET; the 2025 roll records it as commercial office, built 1973.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/east-cut/market-street/525/."
+   }
+  },
+  {
+   "id": "2026-09-11-0039",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "533 Jackson St",
+   "description": "Raavi North Indian Cuisine is listed on Ritual at this address.",
+   "extra": {
+    "name": "Raavi North Indian Cuisine",
+    "name_as_listed": "Raavi North Indian Cuisine (Columbus/Jackson)",
+    "cuisines": [
+     "Indian"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94133",
+    "geo": [
+     37.796219,
+     -122.404538
+    ],
+    "opening_hours": [
+     "Su,Mo,Tu,We,Th,Fr,Sa 11:00-21:30"
+    ],
+    "ritual_merchant_id": "67db4c42185947849e568f9f872f7c64"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/raavi-north-indian-cuisine-columbus-jackson-san-francisco/83c7",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "533",
+   "street_name": "JACKSON",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0195014",
+    "path": "/san-francisco/chinatown/jackson-street/533/",
+    "eas_address": "533 JACKSON ST",
+    "method": "EAS exact match on 533 JACKSON ST \u2192 parcel 0195014; sf-parcels has blklot 0195014 active, 533\u2013535 JACKSON; the 2025 roll records it as commercial retail, built 1910. EAS puts 533, 535 JACKSON ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 533.",
+    "checked_on": "2026-09-11",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/chinatown/jackson-street/533/."
+   }
+  },
+  {
+   "id": "2026-09-11-0040",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "580 California Street",
+   "description": "Ladle & Leaf is listed on Ritual at this address.",
+   "extra": {
+    "name": "Ladle & Leaf",
+    "name_as_listed": "Ladle & Leaf (California/Kearny)",
+    "cuisines": [
+     "Bowls",
+     "Soups"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94104",
+    "geo": [
+     37.7927032,
+     -122.4041008
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr 10:00-14:00"
+    ],
+    "ritual_merchant_id": "9cb094c00c664fbf8423579f52baafd9"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/ladle-leaf-california-kearny-san-francisco/ff8d",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "580",
+   "street_name": "CALIFORNIA",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0240007",
+    "path": "/san-francisco/financial-district/california-street/580/",
+    "eas_address": "580 CALIFORNIA ST",
+    "method": "EAS exact match on 580 CALIFORNIA ST \u2192 parcel 0240007; sf-parcels has blklot 0240007 active, 580\u2013580 CALIFORNIA; the 2025 roll records it as commercial office, built 1984.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/financial-district/california-street/580/."
+   }
+  },
+  {
+   "id": "2026-09-11-0041",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "590 3rd Street",
+   "description": "Cafe Buenos Aires SF is listed on Ritual at this address.",
+   "extra": {
+    "name": "Cafe Buenos Aires SF",
+    "name_as_listed": "Cafe Buenos Aires SF (3rd/Brannan)",
+    "cuisines": [
+     "Coffee",
+     "Baked Goods"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94107",
+    "geo": [
+     37.7801842,
+     -122.3946466
+    ],
+    "opening_hours": [
+     "Su,Sa 08:00-14:00",
+     "Mo,Tu,We,Th,Fr 07:30-17:00"
+    ],
+    "ritual_merchant_id": "ae7f381ec5c84da8a2deabe238852693"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/cafe-buenos-aires-sf-3rd-brannan-san-francisco/13e6",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "590",
+   "street_name": "03RD",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3776114",
+    "path": "/san-francisco/south-of-market/brannan-street/400/",
+    "eas_address": "590 03RD ST",
+    "method": "EAS exact match on 590 03RD ST \u2192 parcel 3776114; sf-parcels has blklot 3776114 active, 590\u2013590 03RD; the 2025 roll records it as industrial, built 1905.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/south-of-market/brannan-street/400/."
+   }
+  },
+  {
+   "id": "2026-09-11-0042",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "636 2nd St",
+   "description": "SAJJ Mediterranean is listed on Ritual at this address.",
+   "extra": {
+    "name": "SAJJ Mediterranean",
+    "name_as_listed": "SAJJ Mediterranean (2nd/Brannan)",
+    "cuisines": [
+     "Mediterranean",
+     "Bowls"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94107",
+    "geo": [
+     37.781322,
+     -122.391692
+    ],
+    "opening_hours": [
+     "Su,Mo,Tu,We,Th,Fr,Sa 11:00-20:00"
+    ],
+    "ritual_merchant_id": "de70e5ea4bf94abdab93691c9bb236c2"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/sajj-mediterranean-2nd-brannan-san-francisco/6b8b",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "636",
+   "street_name": "02ND",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3788038",
+    "path": "/san-francisco/south-beach/2nd-street/634/",
+    "eas_address": "634 02ND ST",
+    "method": "EAS exact match on 636 02ND ST \u2192 parcel 3788038; sf-parcels has blklot 3788038 active, 634\u2013636 02ND; the 2025 roll records it as commercial office, built 1927. EAS puts 634, 636 02ND ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 634.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/south-beach/2nd-street/634/."
+   }
+  },
+  {
+   "id": "2026-09-11-0043",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "640 Sacramento Street",
+   "description": "Palio is listed on Ritual at this address.",
+   "extra": {
+    "name": "Palio",
+    "name_as_listed": "Palio (Sacramento/Montgomery)",
+    "cuisines": [
+     "Pizza",
+     "Italian"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94111",
+    "geo": [
+     37.7938689,
+     -122.4036744
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr 11:30-19:30",
+     "Sa 05:00-20:00"
+    ],
+    "ritual_merchant_id": "949aa89f2fbb4eb0835cc1860b728453"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/palio-sacramento-montgomery-san-francisco/c914",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "640",
+   "street_name": "SACRAMENTO",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0227011",
+    "path": "/san-francisco/chinatown/sacramento-street/640/",
+    "eas_address": "640 SACRAMENTO ST",
+    "method": "EAS exact match on 640 SACRAMENTO ST \u2192 parcel 0227011; sf-parcels has blklot 0227011 active, 637\u2013637 COMMERCIAL; the 2025 roll records it as commercial office, built 1907.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/chinatown/sacramento-street/640/."
+   }
+  },
+  {
+   "id": "2026-09-11-0044",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "660 Sacramento St Sl",
+   "description": "Tokyo Express Restaurant is listed on Ritual at this address.",
+   "extra": {
+    "name": "Tokyo Express Restaurant",
+    "name_as_listed": "Tokyo Express Restaurant (Sacramento/Spring)",
+    "cuisines": [
+     "Japanese",
+     "Sushi"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94111",
+    "geo": [
+     37.793752,
+     -122.403996
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr 10:00-14:45"
+    ],
+    "ritual_merchant_id": "7332d2dd1f8047aaa925e13b9dc429c2"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/tokyo-express-restaurant-sacramento-spring-san-francisco/0868",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "660",
+   "street_name": "SACRAMENTO",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0227014",
+    "path": "/san-francisco/nob-hill/sacramento-street/660/",
+    "eas_address": "660 SACRAMENTO ST",
+    "method": "EAS exact match on 660 SACRAMENTO ST \u2192 parcel 0227014; sf-parcels has blklot 0227014 active, 660\u2013660 SACRAMENTO; the 2025 roll records it as commercial office, built 1907.",
+    "checked_on": "2026-09-11",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/nob-hill/sacramento-street/660/."
+   }
+  },
+  {
+   "id": "2026-09-11-0045",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "667 Jackson St",
+   "description": "Golden Flower Restaurant is listed on Ritual at this address.",
+   "extra": {
+    "name": "Golden Flower Restaurant",
+    "name_as_listed": "Golden Flower Restaurant (Jackson/Grant)",
+    "cuisines": [
+     "Vietnamese"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94133",
+    "geo": [
+     37.795989,
+     -122.406298
+    ],
+    "opening_hours": [
+     "Su,Mo,Tu,We,Th,Fr,Sa 09:30-21:00"
+    ],
+    "ritual_merchant_id": "b60cc6cce4dd4647a18cb8fcd172ef21"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/golden-flower-restaurant-jackson-grant-san-francisco/917f",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "667",
+   "street_name": "JACKSON",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0194016",
+    "path": "/san-francisco/north-beach/grant-avenue/952/",
+    "eas_address": "667 JACKSON ST",
+    "method": "EAS exact match on 667 JACKSON ST \u2192 parcel 0194016; sf-parcels has blklot 0194016 active, 952\u2013966 GRANT; the 2025 roll records it as commercial retail, built 1906. The assessor files the parcel as 952 GRANT AV. EAS puts 667, 699 JACKSON ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 667. The address carries no parcel number in EAS; the active parcel its coordinates fall in is 0194016.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/north-beach/grant-avenue/952/."
+   }
+  },
+  {
+   "id": "2026-09-11-0046",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "737 3rd Street",
+   "description": "Zaika Indian Cuisine is listed on Ritual at this address.",
+   "extra": {
+    "name": "Zaika Indian Cuisine",
+    "name_as_listed": "Zaika Indian Cuisine (3rd/King)",
+    "cuisines": [
+     "Indian"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94107",
+    "geo": [
+     37.7786103,
+     -122.3921086
+    ],
+    "opening_hours": [
+     "Su,Mo,Tu,We 11:00-23:00",
+     "Th,Sa 11:00-02:00",
+     "Fr 09:00-02:00"
+    ],
+    "ritual_merchant_id": "ee6a4df978bc4e6183a1bb00368628d9"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/zaika-indian-cuisine-3rd-king-san-francisco/5a5d",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "737",
+   "street_name": "03RD",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3794005",
+    "path": "/san-francisco/south-beach/3rd-street/735/",
+    "eas_address": "735 03RD ST",
+    "method": "EAS exact match on 737 03RD ST \u2192 parcel 3794005; sf-parcels has blklot 3794005 active, 735\u2013761 03RD; the 2025 roll records it as commercial retail, built 1900. EAS puts 735, 737, 747, 761 03RD ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 735.",
+    "checked_on": "2026-09-11",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/south-beach/3rd-street/735/."
+   }
+  },
+  {
+   "id": "2026-09-11-0047",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "75 O'Farrell Street",
+   "description": "Little Sweet is listed on Ritual at this address.",
+   "extra": {
+    "name": "Little Sweet",
+    "name_as_listed": "LITTLE SWEET (O'Farrell/Stockton)",
+    "cuisines": [
+     "Bubble Tea",
+     "Tea"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94108",
+    "geo": [
+     37.7865949,
+     -122.4059295
+    ],
+    "opening_hours": [
+     "Su,Mo,Tu,We,Th,Fr,Sa 11:00-19:00"
+    ],
+    "ritual_merchant_id": "416090582d6e4b80a887f109b2049356"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/little-sweet-ofarrell-stockton-san-francisco/338d",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "75",
+   "street_name": "O'FARRELL",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0328001",
+    "path": "/san-francisco/union-square/market-street/750/",
+    "eas_address": "43 OFARRELL ST",
+    "method": "EAS exact match on 75 OFARRELL ST \u2192 parcel 0328001; sf-parcels has blklot 0328001 active, 750\u2013780 MARKET; the 2025 roll records it as commercial office, built 1908. The assessor files the parcel as 760 MARKET ST. EAS puts 43, 75 OFARRELL ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 43. The record spells the street O'FARRELL; EAS holds it as OFARRELL.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/union-square/market-street/750/."
+   }
+  },
+  {
+   "id": "2026-09-11-0048",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "88 Belden Place",
+   "description": "SAJJ Mediterranean is listed on Ritual at this address.",
+   "extra": {
+    "name": "SAJJ Mediterranean",
+    "name_as_listed": "SAJJ Mediterranean (Kearny/Pine)",
+    "cuisines": [
+     "Mediterranean",
+     "Healthy Eats"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94104",
+    "geo": [
+     37.791626,
+     -122.403783
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr 11:00-14:45"
+    ],
+    "ritual_merchant_id": "68cd701684f84ce5b5161c432eb2eff5"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/sajj-mediterranean-kearny-pine-san-francisco/e9df",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "88",
+   "street_name": "BELDEN",
+   "street_type": "PL",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0269020",
+    "path": "/san-francisco/financial-district/pine-street/483/",
+    "eas_address": "88 BELDEN ST",
+    "method": "EAS exact match on 88 BELDEN ST \u2192 parcel 0269020; sf-parcels has blklot 0269020 active, 88\u201388 BELDEN; the 2025 roll records it as commercial retail, built 1911. The assessor files the parcel as 485 PINE ST. EAS files this street as BELDEN ST, not PL.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/financial-district/pine-street/483/."
+   }
+  },
+  {
+   "id": "2026-09-11-0049",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "900 16th Street",
+   "description": "Mediterranean Aroma is listed on Ritual at this address.",
+   "extra": {
+    "name": "Mediterranean Aroma",
+    "name_as_listed": "Mediterranean Aroma (16th/7th)",
+    "cuisines": [
+     "Mediterranean",
+     "Wraps"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94107",
+    "geo": [
+     37.766666,
+     -122.395485
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr,Sa 11:00-20:00"
+    ],
+    "ritual_merchant_id": "4138ab863bab4b5884950f50ec5c2055"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/mediterranean-aroma-16th-7th-san-francisco/6916",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "900",
+   "street_name": "16TH",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3834003",
+    "path": "/san-francisco/mission-bay/16th-street/900/",
+    "eas_address": "900 16TH ST",
+    "method": "EAS files 900 16TH ST under parcel 3834001, retired. The listing's point falls on active parcel 3834003, which the 2025 roll gives as 900 16th Street, and on the parcels of condominium map 3834004, not yet on the roll. The page at 3834003 is published.",
+    "checked_on": "2026-09-11",
+    "by_hand": true,
+    "note": "Placed by hand: the building's own parcel is on the roll and the condominium map over it is not. The same building was placed the same way in the Bites run. The resolver's own verdict was: The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "Declined: 900 16th Street already carries Mediterranean Aroma as an `occupants` entry from Bites, read the same day. One business is one entry on a page, so the listing already published stands and this one does not go on beside it."
+   }
+  },
+  {
+   "id": "2026-09-11-0050",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "92 Charter Oak Avenue",
+   "description": "BobaBytes is listed on Ritual at this address.",
+   "extra": {
+    "name": "BobaBytes",
+    "name_as_listed": "BobaBytes (Charter Oak/Industrial)",
+    "cuisines": [
+     "Bubble Tea",
+     "Juices & Smoothies"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94124",
+    "geo": [
+     37.7368033,
+     -122.4049933
+    ],
+    "opening_hours": [
+     "Su 12:30-21:00",
+     "Tu,We,Th,Fr 10:30-21:00",
+     "Sa 11:30-21:00"
+    ],
+    "ritual_merchant_id": "506644d3714a45a4bf1fc2a0739be07c",
+    "listing_state": "MERCHANT_DOWN_MANUAL"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/bobabytes-charter-oak-industrial-san-francisco/43ec65",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "92",
+   "street_name": "CHARTER OAK",
+   "street_type": "AVE",
+   "resolution": {
+    "status": "resolved",
+    "apn": "5370057",
+    "path": "/san-francisco/bayview-hunters-point/charter-oak-avenue/90/",
+    "eas_address": "90 CHARTER OAK AVE",
+    "method": "EAS exact match on 92 CHARTER OAK AVE \u2192 parcel 5370057; sf-parcels has blklot 5370057 active, 90\u201392 CHARTER OAK; the 2025 roll records it as industrial, built 1956. EAS puts 90, 92 CHARTER OAK AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 90.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/bayview-hunters-point/charter-oak-avenue/90/."
+   }
+  },
+  {
+   "id": "2026-09-11-0051",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "941 Kearny Street",
+   "description": "Toppu Ramen & Dim Sum House is listed on Ritual at this address.",
+   "extra": {
+    "name": "Toppu Ramen & Dim Sum House",
+    "name_as_listed": "Toppu Ramen & Dim Sum House (Kearny/Columbus)",
+    "cuisines": [
+     "Japanese"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94133",
+    "geo": [
+     37.79668,
+     -122.405438
+    ],
+    "opening_hours": [
+     "Su,Mo,Tu,We,Th 11:00-21:45",
+     "Fr,Sa 11:00-22:45"
+    ],
+    "ritual_merchant_id": "8afba14bb1be484c976dca64b9896b82"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/toppu-ramen-dim-sum-house-kearny-columbus-san-francisco/6660",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "street_number": "941",
+   "street_name": "KEARNY",
+   "street_type": "ST",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0177001",
+    "path": "/san-francisco/chinatown/kearny-street/935/",
+    "eas_address": "935 KEARNY ST",
+    "method": "EAS exact match on 941 KEARNY ST \u2192 parcel 0177001; sf-parcels has blklot 0177001 active, 153\u2013155 COLUMBUS; the 2025 roll records it as commercial hotel, built 1907. The assessor files the parcel as 153 COLUMBUS AV. EAS puts 935, 937, 939, 941, 943, 945, 947, 949, 951 KEARNY ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 935.",
+    "checked_on": "2026-09-11"
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/chinatown/kearny-street/935/."
+   }
+  },
+  {
+   "id": "2026-09-11-0052",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "Ferry Building Marketplace",
+   "description": "Imperial Tea Court is listed on Ritual at this address.",
+   "extra": {
+    "name": "Imperial Tea Court",
+    "name_as_listed": "Imperial Tea Court",
+    "cuisines": [
+     "Chinese"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94111",
+    "geo": [
+     37.79528,
+     -122.393298
+    ],
+    "opening_hours": [
+     "Su,Mo,Tu,Th,Fr 10:00-17:00",
+     "Sa 08:00-17:00"
+    ],
+    "ritual_merchant_id": "6f339b4c78f84785b6a61ae772718fd9"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/imperial-tea-court-1-ferry-building-san-francisco/aca5",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "9900274",
+    "path": "/san-francisco/south-beach/the-embarcadero/140/",
+    "eas_address": "140 THE EMBARCADERO",
+    "method": "Ritual states no street number, only \"Ferry Building Marketplace\". The listing's coordinates fall on active parcel 9900275, the pier apron at 140 The Embarcadero; the Ferry Building itself is the neighbouring parcel 9900274, at the same address, which the 2025 roll gives as built 1896 and SF Planning's historic resource record names as the Ferry Building. The page at that parcel is published.",
+    "checked_on": "2026-09-11",
+    "by_hand": true,
+    "note": "Placed by hand: a listing without a street number may go on a page where the building it names is unambiguous. The Bites run placed its own Ferry Building listing on the same page. The resolver's own verdict was: The record states no street number, so there is nothing to look up in sf-eas-addresses."
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/south-beach/the-embarcadero/140/."
+   }
+  },
+  {
+   "id": "2026-09-11-0053",
+   "date": "2026-09-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "Russ Building",
+   "description": "Joe & The Juice is listed on Ritual at this address.",
+   "extra": {
+    "name": "Joe & The Juice",
+    "name_as_listed": "Joe & The Juice (Montgomery/Pine)",
+    "cuisines": [
+     "Juices & Smoothies",
+     "Coffee"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94104",
+    "geo": [
+     37.791719,
+     -122.402694
+    ],
+    "opening_hours": [
+     "Su,Sa 08:00-17:45",
+     "Mo,Tu,We,Th,Fr 07:00-17:45"
+    ],
+    "ritual_merchant_id": "a4509ac6e518460680d402e44e0206df"
+   },
+   "citation": {
+    "label": "Ritual, ordering app",
+    "url": "https://ritual.co/order/joe-the-juice-montgomery-pine-san-francisco/2492",
+    "locator": "the listing's own page, its __NEXT_DATA__ merchant record"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0269001",
+    "path": "/san-francisco/financial-district/montgomery-street/201/",
+    "eas_address": "235 MONTGOMERY ST",
+    "method": "Ritual states no street number, only \"Russ Building\". The listing's coordinates fall on active parcel 0269001, 201\u2013265 Montgomery, which the 2025 roll gives as 235 Montgomery Street, a 31-storey office building of 1927 \u2014 the Russ Building. The page at that parcel is published.",
+    "checked_on": "2026-09-11",
+    "by_hand": true,
+    "note": "Placed by hand: a listing without a street number may go on a page where the building it names is unambiguous. The resolver's own verdict was: The record states no street number, so there is nothing to look up in sf-eas-addresses."
+   },
+   "publish": {
+    "status": "published",
+    "note": "An `occupants` entry on /san-francisco/financial-district/montgomery-street/201/."
+   }
+  }
+ ]
+}

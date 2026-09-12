@@ -7,6 +7,7 @@ The parcels on Chestnut Street documented here so far, from the city's address, 
 - [1800–1890](1800/) — A 1900 assessor class: vacant lot in the Midcentury Recreation Historic District (Discontiguous), with a seismic retrofit permitted in 2006.
 - [1845](1845/) — A 1950 6-unit apartment building, with reroofing permitted in 2001.
 - [2024–2026](2024/) — A 1934 store building, with fire repair permitted in 1988.
+- [2031](2031/) — A 1928 store building, with a kitchen remodel permitted in 2007.
 - [2040](2040/) — A 1933 store building, with window replacement permitted in 2007.
 - [2066–2068](2066/) — A 1933 store building, with an addition permitted in 2023.
 - [2078–2080](2078/) — A 1933 store building, with a kitchen and bathroom remodel permitted in 2013.
