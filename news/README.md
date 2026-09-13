@@ -32,8 +32,10 @@ news/
                       reading an article, the markup, the items schema
   README.md           This file
   feeds.json          The register — one row per source, and why it behaves as it does
-  state/cursors.json  What each feed has already been considered up to
+  state/cursors.json  What each feed has been considered up to, and which
+                      archive windows have been walked
   queue/<date>.json   One poll run: what to read, what was skipped and why
+  queue/backfill-…    One archive window, named for the window rather than the day
   items/<feed>/*.json Findings files — the research schema, the research resolver
   tools/poll.py       Fetch, screen, queue, advance the cursors
   tools/read.py       Read queued articles; report the addresses in them
@@ -53,6 +55,20 @@ python3 news/tools/poll.py status                        # where the cursors sta
 python3 news/tools/read.py news/queue/2026-08-16.json
 python3 news/tools/check.py --stats                      # yield so far
 ```
+
+For anything published before the feeds reach — which is nearly everything —
+`backfill` lists one window out of an outlet's own archive and screens it
+exactly as the daily poll does:
+
+```bash
+python3 news/tools/poll.py backfill --since 2026-07-01 --until 2026-07-31 --feed sfyimby
+python3 news/tools/read.py news/queue/backfill-2026-07-01-to-2026-07-31.json
+```
+
+The window is capped at a month and a new one is refused while a backfill queue
+is still waiting. That is the batching rule, and the reason for it is in
+[PIPELINE.md](PIPELINE.md) → "Backfill": a month of the eight routed sources
+lists 2,558 stories and queues 538, and every queued one is read by hand.
 
 Then, for anything worth keeping: write it into `news/items/<feed>/<date>.json`,
 resolve it with the research module's resolver, seed the parcel if it has no
@@ -145,15 +161,45 @@ had already been queued from the Examiner's own section page, so nothing was
 lost. Re-run that audit whenever you change the screen; the traps it caught
 are now cases in `tools/test_screen.py`.
 
+## What is behind the feeds
+
+**An RSS feed is not an archive.** The open feeds carry between one and sixteen
+days — most of them two — so the daily poll sees about two days of news whatever
+`--backfill-days` is set to: the floor never binds, the feed does. Eight of the
+eleven polled sources publish their archive somewhere else, and `feeds.json`
+records the route into each one.
+
+| feed | route | listed in July 2026 | queued to read |
+|---|---|---|---|
+| sf-chronicle | Bluesky API, paged by cursor | 1,546 | 245 |
+| sf-standard | monthly sitemaps, back to 2021-01 | 269 | 52 |
+| the-registry | `?paged=N` | 248 | 64 |
+| sf-examiner | per-day sitemaps, listed by year | 186 | 49 |
+| mission-local | `?paged=N` | 150 | 60 |
+| sfyimby | `?paged=N`, back to Dec 2021 | 60 | 21 |
+| the-voice-sf | `?paged=N`, complete to Apr 2024 | 51 | 24 |
+| sf-examiner-social | Bluesky API, paged by cursor | 48 | 23 |
+
+Three have none. Hoodline answers 403 to its sitemap as it does to its article
+pages, What Now publishes no sitemap we can read and 404s on `?paged=N`, and
+SFist's is a single 17MB document of 50,000 URLs — a workable route, measured
+and not yet wired, because it costs the whole file per window. Those three are
+going-forward sources: a run that misses two days of them loses those stories.
+
+**sfyimby is where the addresses are.** It is development-only, its first
+`<category>` is the street address itself, and the rest name the architect,
+developer and contractor. The Chronicle's account is the opposite shape — a
+third of everything listed, and most of it national wire, sport and weather.
+
 ## Why the feeds are what they are
 
-Ten sources are registered; nine are polled. They divide into three shapes,
-and [feeds.json](feeds.json) records what each one does wrong:
+Twelve sources are registered; eleven are polled. They divide into three
+shapes, and [feeds.json](feeds.json) records what each one does wrong:
 
 - **Ordinary RSS** — Mission Local, Hoodline, SFist, The Registry, The
-  Standard, What Now. Hoodline and SFist syndicate the whole article in the
-  feed, which is how we read Hoodline at all: its article pages answer a
-  fetcher with 403.
+  Standard, What Now, SF YIMBY, The Voice. Hoodline and SFist syndicate the
+  whole article in the feed, which is how we read Hoodline at all: its article
+  pages answer a fetcher with 403.
 - **Bluesky accounts** — the Chronicle and the Examiner. These are posts, not
   articles: no title element at all, and the article link is the last URL in
   the post text, often a bit.ly.

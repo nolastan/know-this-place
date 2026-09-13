@@ -44,6 +44,7 @@ documented so far:
 - [Japantown](japantown/) — the blocks around Post and Buchanan Streets; two parcels photographed for tax assessment in 1961 and 1962
 - [Portola](portola/) — the hillside district between McLaren Park and Highway 101, settled around its market gardens and greenhouses; the 1932 University Mound Home and a 1927 Silver Avenue church, both surveyed in 1990 as unreinforced masonry
 - [Visitacion Valley](visitacion-valley/) — the south-eastern corner of the city between McLaren Park and the county line; two buildings on Bay Shore Boulevard
+- [Treasure Island](treasure-island/) — the man-made island built for the 1939 Golden Gate International Exposition, and Yerba Buena Island beside it; the first building finished in the island's redevelopment
 
 Several of these pages document addresses named in a published guide to notable
 San Francisco residences; residency claims are attributed to that guide and

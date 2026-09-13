@@ -88,6 +88,20 @@ python3 news/tools/poll.py poll          # fetch, screen, queue, advance cursors
 python3 news/tools/read.py news/queue/<date>.json
 ```
 
+The feeds reach two days back, so a poll is only ever today's news. Everything
+older is reached through the outlet's own archive, one bounded window at a time:
+
+```bash
+python3 news/tools/poll.py backfill --since 2026-07-01 --until 2026-07-31 --feed sfyimby
+python3 news/tools/read.py news/queue/backfill-2026-07-01-to-2026-07-31.json
+```
+
+The window is capped at a month and a second one is refused while a backfill
+queue is waiting — **drain it, then go again.** A backfilled story is published
+by exactly the route below; nothing about the rest of the run changes. `sfyimby`
+is the highest-yield source to point it at. See
+[news/PIPELINE.md → Backfill](../../../news/PIPELINE.md#backfill-the-archive-behind-the-feed).
+
 **Commit and push the moment the read is done, before publishing anything.**
 Polling and reading is the expensive, irreplaceable half — a run cut short after
 this point loses only judgement, one cut short before it loses the stories

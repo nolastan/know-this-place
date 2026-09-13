@@ -5,10 +5,11 @@
     python3 news/tools/check.py --stats    # ...and print the yield so far
 
 What it checks:
-  * feeds.json is well formed — unique ids, a known kind, an access flag, and a
-    link_pattern on every html feed;
-  * every cursor belongs to a registered feed, and every queue file's items name
-    one too;
+  * feeds.json is well formed — unique ids, a known kind, an access flag, a
+    link_pattern on every html feed, and a known route on every backfill block;
+  * every cursor belongs to a registered feed, every backfill window it records
+    runs forwards and names a route that still exists, and every queue file's
+    items name a registered feed too;
   * every items file sits under a registered feed id and validates against
     research/schema/finding.schema.json — the news module writes findings files,
     so it is checked against the same schema, by the same validator;
@@ -35,6 +36,7 @@ from check import check_rules, validate  # noqa: E402  — the research validato
 SCHEMA_PATH = RESEARCH / "schema" / "finding.schema.json"
 KINDS = {"rss", "bluesky", "html"}
 ACCESS = {"open", "needs-human", "blocked"}
+ROUTES = {"paged", "sitemap", "bluesky"}
 
 errors: list[str] = []
 
@@ -72,8 +74,41 @@ def check_feeds() -> dict[str, dict]:
         if not feed.get("note"):
             err("news/feeds.json", f"{fid}: no note — every feed records what it is "
                                    f"and how it misbehaves")
+        check_backfill(fid, feed)
         feeds[fid] = feed
     return feeds
+
+
+def check_backfill(fid: str, feed: dict) -> None:
+    """A feed's archive route, if it has one.
+
+    A feed with no `backfill` block is a going-forward source, which is a valid
+    and common state — but the reason has to be written down, because the next
+    person to look will otherwise try the routes again. The note is where it
+    goes, so an absent block is checked only for the route's shape, never for
+    its existence.
+    """
+    conf = feed.get("backfill")
+    if conf is None:
+        return
+    if not isinstance(conf, dict):
+        err("news/feeds.json", f"{fid}: backfill must be an object")
+        return
+    route = conf.get("route")
+    if route not in ROUTES:
+        err("news/feeds.json", f"{fid}: backfill route {route!r} is not one of "
+                               f"{sorted(ROUTES)}")
+    if route == "sitemap" and not conf.get("index"):
+        err("news/feeds.json", f"{fid}: a sitemap route needs an 'index' url")
+    if route == "paged" and feed.get("kind") != "rss":
+        err("news/feeds.json", f"{fid}: ?paged=N is an RSS affordance, and this "
+                               f"feed's kind is {feed.get('kind')!r}")
+    if not conf.get("note"):
+        err("news/feeds.json", f"{fid}: backfill needs a note — how deep the "
+                               f"archive goes, and what it costs to walk")
+    for key in conf:
+        if key not in ("route", "index", "actor", "note"):
+            err("news/feeds.json", f"{fid}: unknown backfill key {key!r}")
 
 
 def check_cursors(feeds: dict) -> None:
@@ -84,6 +119,18 @@ def check_cursors(feeds: dict) -> None:
     for fid, cursor in (data.get("feeds") or {}).items():
         if fid not in feeds:
             err("news/state/cursors.json", f"cursor for unregistered feed {fid!r}")
+        for w in ((cursor.get("backfill") or {}).get("windows") or []):
+            if not (w.get("from") and w.get("to")):
+                err("news/state/cursors.json",
+                    f"{fid}: a backfill window needs 'from' and 'to' — it is the "
+                    f"whole memory of what has been walked")
+            elif w["to"] < w["from"]:
+                err("news/state/cursors.json",
+                    f"{fid}: backfill window {w['from']}..{w['to']} runs backwards")
+            elif not feeds.get(fid, {}).get("backfill"):
+                err("news/state/cursors.json",
+                    f"{fid}: a window was walked but feeds.json has no backfill "
+                    f"block — the route that produced it is unrecorded")
         if cursor.get("url") and feeds.get(fid, {}).get("url") != cursor["url"]:
             err("news/state/cursors.json",
                 f"{fid}: the cursor's url is not the one in feeds.json — the feed "

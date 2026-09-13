@@ -55,7 +55,7 @@ cursors   which    what the     which      seed the page
 
 | Stage | Who | Reads | Writes |
 |---|---|---|---|
-| 1 poll | `tools/poll.py` | the registered feeds | `queue/<date>.json`, `state/cursors.json` |
+| 1 poll | `tools/poll.py` | the registered feeds, or one window of an outlet's archive | `queue/<date>.json`, `state/cursors.json` |
 | 2 read | an agent, with `tools/read.py` | the queued articles | nothing yet |
 | 3 extract | an agent | what it read | `items/<feed-id>/<batch>.json` |
 | 4 resolve | `research/tools/resolve_eas.py` | the items file | `resolution` in the same file |
@@ -73,13 +73,34 @@ python3 research/tools/resolve_eas.py apply news/items/<feed>/<batch>.json
 python3 scripts/seed_pages.py seed-list --manifest research/manifests/news-<batch>.json
 ```
 
+**A feed is not an archive, and the module has two ways of listing stories.**
+The open feeds carry between one and sixteen days, so the daily poll sees about
+two days of news whatever floor it is given — which means everything published
+before this module's first run is reachable only through the outlet's archive.
+`poll.py backfill --since <date> --until <date>` walks that archive by whichever
+route [feeds.json](feeds.json) records for the feed, and then screens and queues
+what it finds *exactly* as the daily poll does. It adds a way of listing and no
+new concepts; [PIPELINE.md → Backfill](PIPELINE.md#backfill-the-archive-behind-the-feed)
+has the routes and their traps.
+
+**A backfill is batched, and that is a rule rather than advice.** The crawling
+is cheap and the queue it fills is not: one month of the routed sources lists
+2,558 stories and queues 538, and every queued one is fetched and judged by
+hand at stage 2. A window is capped at a month, and a new one is refused while a
+backfill queue is still waiting to be read. Pick a window — one month, or one
+month of one feed — drain it, then go again. **Stopping with the window recorded
+and the queue drained is a finished piece of work**, however much archive
+remains.
+
 Two invariants the stages rest on, both detailed in
 [PIPELINE.md](PIPELINE.md):
 
 - **An item is considered once**, and considered means a verdict was recorded —
   read *or* skipped — not that anything was published. That memory is the
   cursor, and **a cursor is only true on the branch it was advanced on**, which
-  is why a run continues on the open `news/` PR rather than starting fresh.
+  is why a run continues on the open `news/` PR rather than starting fresh. A
+  backfill remembers a walked *window* rather than a list of ids, for the reason
+  PIPELINE.md gives; both halves of that memory bind both routes.
 - **The screen is deliberately asymmetric**: it skips only on a clear signal
   and queues on doubt, because a queued story costs a glance and a wrongly
   skipped one is invisible forever. Tuning it is expected.
@@ -190,7 +211,9 @@ where a reader will actually meet it. A run that published an entry and left the
 grid alone left the job half done.
 
 Six, ordered by the entry's date, one card per page, and every rule above
-applies to the card unchanged. **The `.place-cards` grid below it is not this
+applies to the card unchanged. **A backfilled entry is old by construction and
+usually sorts below all six**; leaving the grid alone is then the rule being
+followed, not a step skipped. **The `.place-cards` grid below it is not this
 module's** — featured addresses turn over by hand on the root
 [AGENTS.md](../AGENTS.md)'s criteria; never move a card between the two. The
 card's markup and the rest of the rules are in [PIPELINE.md → The homepage
@@ -219,6 +242,13 @@ to improve when the work fights the structure. Update
 [README.md](README.md), this file and [PIPELINE.md](PIPELINE.md) in the same
 commit, record *why* in the commit message, and leave the module easier to use
 than you found it.
+
+**Finding a feed's archive route is not one of them.** A `backfill` block is a
+fact about how an outlet publishes, discovered by probing what it already serves
+to crawlers under its own `robots.txt`; registering one is the same kind of work
+as recording that a feed needs a trailing slash. Adding the *feed* is still the
+human's call, and a route is only ever added to a feed already registered
+`access: open`.
 
 Two things need a human: **adding or un-blocking a feed** (it is a relationship
 with a publisher, and `access: needs-human` exists for that), and **anything

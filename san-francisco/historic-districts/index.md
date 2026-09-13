@@ -48,7 +48,7 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Hidalgo Terrace Historic District](hidalgo-terrace/) — Eligible for the California Register, significant 1914–1930; 14 buildings documented on 2 streets.
 - [Horner's Addition East Historic District](horner-s-addition-east/) — Eligible for the California and National Registers, significant 1865–1905; 74 buildings documented on 6 streets.
 - [India Basin Scow Schooner Boatyard Vernacular Cultural Landscape](india-basin-scow-schooner-boatyard-vernacular-cultural-landscape/) — Eligible for the California Register, significant 1875–1936; 5 buildings documented on 3 streets.
-- [Ingleside Terrace Historic District](ingleside-terrace/) — Eligible for the California Register, significant 1910–1930; 54 buildings documented on 13 streets.
+- [Ingleside Terrace Historic District](ingleside-terrace/) — Eligible for the California Register, significant 1910–1930; 55 buildings documented on 14 streets.
 - [Inner Mission Boulevards and Alleys Reconstruction Historic District](inner-mission-boulevards-and-alleys-reconstruction/) — Eligible for the California Register, significant 1906–1917; 141 buildings documented on 10 streets.
 - [Jackson Square Historic District](jackson-square/) — An Article 10 city landmark district, significant 1850–1911; 45 buildings documented on 10 streets.
 - [Jackson Square Historic District Extension](jackson-square-extension/) — Eligible for the California and National Registers, significant 1865–1920; 22 buildings documented on 6 streets.
@@ -115,4 +115,4 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Western SOMA Light Industrial and Residential Historic District](western-soma-light-industrial-and-residential/) — Eligible for the California and National Registers, significant 1906–1936; 231 buildings documented on 35 streets.
 - [Woodward St. Romeo Flats Reconstruction Historic District](woodward-st-romeo-flats-reconstruction/) — Eligible for the California Register, significant 1906–1912; 24 buildings documented on 3 streets.
 
-48 further districts named on the pages here hold fewer than 5 documented buildings, and have no page yet.
+49 further districts named on the pages here hold fewer than 5 documented buildings, and have no page yet.
