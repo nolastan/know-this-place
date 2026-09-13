@@ -1,8 +1,10 @@
 # Know This Place
 
 A public, static encyclopedia of the built environment: one page per building,
-in San Francisco so far. No framework, no build step, no dependencies — files, one
-stylesheet, one enhancement script, seven stdlib-only Python scripts.
+in San Francisco so far. No framework, no dependencies — files, one stylesheet,
+one enhancement script, eight stdlib-only Python scripts. The site is built
+from those files by `scripts/build_site.py` and published by Actions; the
+repository holds the sources, not the pages.
 
 ## Read the file for the job, not the whole tree
 
@@ -31,9 +33,10 @@ There are skills for the four modules: `/research`, `/news`, `/design`, `/ui`.
 Everything else is in [AGENTS.md](AGENTS.md). These four are the ones whose
 breach is expensive to undo:
 
-1. **`data.json` is the source of truth. `index.html` is generated.** Never
-   hand-edit an address page's HTML — change `data.json` and run
-   `python3 scripts/seed_pages.py render <path>` in the same commit.
+1. **`data.json` is the source of truth. `index.html` is generated and not
+   committed.** Never hand-edit an address page's HTML — change `data.json`
+   and run `python3 scripts/seed_pages.py render <path>`. The HTML is
+   gitignored, so a render leaves nothing in `git status`; that is correct.
    `validate.py` fails the build if the two disagree.
 2. **Every fact needs a source**, cited in `data.json`'s `sources` array with
    the query URL and retrieval date. Never invent, estimate, or extrapolate.
@@ -42,22 +45,26 @@ breach is expensive to undo:
    figures (architects, builders, documented past residents) may be named with
    citations. A business trading from the building is not a person: it may be
    named as the current occupant, but never its owners, staff or customers.
-4. **No new tooling.** No frameworks, build systems, package manifests or
-   dependencies, and every page must render completely from its HTML alone.
+4. **No new tooling.** No frameworks, no package manifests, no dependencies.
+   The build is `scripts/build_site.py` calling seven stdlib-only siblings,
+   and every page must still render completely from its HTML alone — nothing
+   the build produces needs JavaScript to be readable.
 
 ## Before you commit
 
 ```bash
-python3 scripts/validate.py
+python3 scripts/build_site.py && python3 scripts/validate.py
 ```
 
-Fix everything it flags. If pages were added or removed, run
-`seed_pages.py districts`, `build_sitemap.py`, `build_map_index.py`,
-`build_link_index.py` and `build_corpus_index.py` first — all five are
-derived indexes and `validate.py` fails until each is current. `build_stats.py`
-rebuilds the dashboard at `/stats/` from the same tree; it is derived too, but
-it carries ages in days, so it is stale by tomorrow and `validate.py` never
-fails on it.
+`build_site.py` runs every generator in the one order that works — hubs,
+districts, link index, render, map index, sitemap, corpus index, stats — in
+about a minute. Almost all of what it writes is gitignored, so the only things
+it can leave in `git status` are `corpus.jsonl` and a hub `index.md`; commit
+those. Then fix everything `validate.py` flags.
+
+To look at the result: `python3 scripts/build_site.py --serve` and open
+`http://localhost:8517`. That port, and no other — the map keys are restricted
+to it.
 
 Branch names are `feedback/issue-<N>`, `refresh/<YYYY-MM-DD>` or
 `seed/<area-slug>`. One concern per PR. Never push to `main`.

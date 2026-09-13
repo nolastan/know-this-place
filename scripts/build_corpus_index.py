@@ -10,6 +10,10 @@ source of truth; this file is a derived index and is never edited by hand.
 
 Run from anywhere: python3 scripts/build_corpus_index.py
 """
+# `str | None` in an annotation is a runtime expression before Python 3.10, and
+# macOS still ships 3.9 — without this the local build stops here.
+from __future__ import annotations
+
 import json
 import re
 import sys

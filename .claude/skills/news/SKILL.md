@@ -53,9 +53,10 @@ gh pr list --state open --base main --limit 50 --json number,headRefName \
 
 - **A `news/` PR is open** → check out its branch, merge `origin/main` in, and
   continue there. Pushing updates that PR; do not open a second one. Resolve any
-  merge conflict yourself — generated files (`sitemap.xml`,
-  `sitemaps/`, `shared/addresses.geojson`, hub `index.html`/`index.md`) are
-  rebuilt, never hand-merged: take main's side and re-run the build scripts.
+  merge conflict yourself. The site is not committed, so almost nothing
+  generated can conflict; the two that still can (`corpus.jsonl` and a hub
+  `index.md`) are rebuilt, never hand-merged — take main's side and re-run
+  `python3 scripts/build_site.py`.
 - **None is open** → branch `news/$(date -u +%F)` off `main`. If that name
   already exists on the remote from a cycle closed unmerged, suffix it.
 
@@ -118,10 +119,7 @@ put the entry on each page, and put its card on the homepage.
 ```bash
 python3 research/tools/resolve_eas.py apply news/items/<feed>/<date>.json
 python3 scripts/seed_pages.py seed-list --manifest research/manifests/news-<date>.json
-python3 scripts/build_sitemap.py
-python3 scripts/build_map_index.py
-python3 scripts/build_link_index.py
-python3 scripts/build_corpus_index.py
+python3 scripts/build_site.py
 python3 research/tools/check.py --index
 python3 scripts/seed_pages.py render <path to the page>
 python3 news/tools/check.py && python3 scripts/validate.py

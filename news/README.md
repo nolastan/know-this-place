@@ -81,11 +81,7 @@ reason to open yet is a story nobody reads.
 ```bash
 python3 research/tools/resolve_eas.py apply news/items/hoodline/2026-08-16.json
 python3 scripts/seed_pages.py seed-list --manifest research/manifests/news-2026-08-16.json
-python3 scripts/seed_pages.py districts
-python3 scripts/build_sitemap.py
-python3 scripts/build_map_index.py
-python3 scripts/build_link_index.py
-python3 scripts/build_corpus_index.py
+python3 scripts/build_site.py
 python3 research/tools/check.py --index
 python3 scripts/validate.py
 ```

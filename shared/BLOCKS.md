@@ -443,9 +443,9 @@ and stop there.
 **The map is the one exception**, and only from one place: `mapbox_token` is
 URL-restricted to `knowthis.place` *and* `http://localhost:8517` (README,
 setup checklist), so the locator map does render for a human previewing the
-site with `python3 -m http.server 8517`. That is a person's check, on that
-exact port — any other port, any other host, and `curl` (which sends no
-`Referer`) all fail the restriction and prove nothing.
+site with `python3 scripts/build_site.py --serve`. That is a person's check,
+on that exact port — any other port, any other host, and `curl` (which sends
+no `Referer`) all fail the restriction and prove nothing.
 Committed `assets/` photos use the same `.media` frame with `<img>` (always
 `alt`, `width`, `height`, `loading="lazy"`, and credit + license in the
 caption) and need no wrapper. Never commit Street View captures to `assets/`.

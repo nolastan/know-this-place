@@ -58,7 +58,8 @@ There is deliberately **no CMS, no database, no build framework**:
    re-renders `index.html` from it, and opens a **pull request** that closes the
    issue.
 3. A human reviews and merges through normal GitHub PR review. Merging to
-   `main` **is** the deploy — GitHub Pages serves the branch as-is.
+   `main` **is** the deploy — [.github/workflows/deploy.yml](.github/workflows/deploy.yml)
+   builds the site from the merged sources and publishes it to GitHub Pages.
 4. A scheduled workflow ([.github/workflows/refresh.yml](.github/workflows/refresh.yml))
    periodically re-queries time-sensitive data (permits, assessments, news).
 
@@ -70,7 +71,7 @@ AGENTS.md                     Agent constitution — the rules core
 REFERENCE.md                  data.json schema, page types, seeding, the
                               reasoning behind the rules
 DATA-SOURCES.md               Catalog of live city APIs agents draw from
-index.html                    Site homepage
+index.html                    Site homepage — the one hand-written page
 san-francisco/
   castro/
     AGENTS.md                 Neighborhood-specific guidance
@@ -85,8 +86,6 @@ shared/
   site.js                     Enhancement layer (progressive web components)
   site-config.json            Site URL, repo URL, Maps embed key,
                               Mapbox token
-  addresses.geojson           Derived index of every address + its
-                              coordinates — the homepage map's dots
 research/
   AGENTS.md                   Research rulebook: the run and its rules
   RUNBOOK.md                  The procedure for a run, step by step
@@ -117,8 +116,11 @@ design/
   RULES-OF-THUMB.md           Generated: the distilled corpus
   META.md / GAPS.md           Learning notes; cases /ui had to guess at
 scripts/
+  build_site.py               The build: every generator below, in the one
+                              order that works. Actions runs it on deploy
   seed_pages.py               Writes the first draft of pages that don't
-                              exist yet, from the DataSF APIs
+                              exist yet, from the DataSF APIs; `render`
+                              rewrites a page's index.html from its data.json
   permit_redactions.json      Names stripped from permit text before it's saved
   validate.py                 CI contract checks (stdlib only)
   build_sitemap.py            Regenerates sitemap.xml (a sitemap index)
@@ -128,21 +130,41 @@ scripts/
                               page's nearby pages, for lateral links
   build_corpus_index.py       Regenerates corpus.jsonl — one line per
                               address page, for corpus-wide questions
-sitemap.xml                   A sitemap index, not a URL list — generated
-sitemaps/<neighborhood>.xml   One child sitemap per neighborhood, plus
-                              hubs.xml and historic-districts.xml, so Search
-                              Console reports coverage per neighborhood
+  build_stats.py              Regenerates the dashboard at /stats/
 corpus.jsonl                  One line per address page — path, year, use,
-                              district, earliest date, sources, hook
+                              district, earliest date, sources, hook. Derived,
+                              but committed, so a corpus-wide question costs
+                              a grep rather than a build
 .github/
   ISSUE_TEMPLATE/page-feedback.yml
-  workflows/{feedback-agent,refresh,validate}.yml
+  workflows/{deploy,feedback-agent,news,refresh,validate}.yml
 ```
+
+**None of the site is in that tree.** Every `index.html` under
+`san-francisco/`, `sitemap.xml`, `sitemaps/`, `shared/addresses.geojson`,
+`shared/nearby.json` and `stats/index.html` are built from the files above and
+gitignored; the repository is 18,013 tracked files rather than 35,688 because
+of it. [REFERENCE.md → The site is built, not
+committed](REFERENCE.md#the-site-is-built-not-committed) has the reasoning and
+the two exceptions.
+
+## Running it locally
+
+```bash
+python3 scripts/build_site.py --serve     # build, then http://localhost:8517
+```
+
+Nothing to install — Python 3.9 and the standard library. The build takes
+about a minute; `--no-build --serve` skips it and serves what is already
+there. Use port 8517 and no other: the Mapbox token and the Google Maps embed
+key are URL-restricted to it, so the maps only render there.
 
 ## Setup checklist (Phase 0)
 
 - [ ] Push to GitHub; confirm `repo_url` in [shared/site-config.json](shared/site-config.json)
-- [ ] Settings → Pages → deploy from branch `main`, root; custom domain `knowthis.place`
+- [ ] Settings → Pages → **Build and deployment → Source: GitHub Actions**
+      (not "Deploy from a branch" — the branch holds no pages); custom domain
+      `knowthis.place`
 - [ ] DNS: apex A/ALIAS records → GitHub Pages, per GitHub docs (CNAME file is committed)
 - [ ] Add `ANTHROPIC_API_KEY` **Actions** secret; install the Claude GitHub App for this repo
 - [ ] Settings → Actions → General → check **"Allow GitHub Actions to create and
@@ -177,11 +199,7 @@ corpus.jsonl                  One line per address page — path, year, use,
 python3 scripts/seed_pages.py plan --neighborhood "Castro/Upper Market"
 python3 scripts/seed_pages.py seed --neighborhood "Castro/Upper Market" \
                                    --city san-francisco --area castro
-python3 scripts/seed_pages.py districts
-python3 scripts/build_sitemap.py
-python3 scripts/build_map_index.py
-python3 scripts/build_link_index.py
-python3 scripts/build_corpus_index.py
+python3 scripts/build_site.py
 python3 scripts/validate.py
 ```
 

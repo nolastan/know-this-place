@@ -232,31 +232,20 @@ each entry went on, or why it didn't.
    day of the read. `listed_address` is the listing's own number on the
    page's own spelling of the street, or the other street for a corner
    building. Preserve each `data.json`'s indent (1 or 2 spaces).
-4. Rebuild the derived indexes **before** rendering — `render` writes each
-   page's Nearby list out of `shared/nearby.json`, so rendering first only
-   bakes in the stale one:
+4. Rebuild the site. `render` writes each page's Nearby list out of
+   `shared/nearby.json`, so the link index has to be rebuilt before the
+   render — `build_site.py` is that order, and it renders every page rather
+   than the ones you name:
 
    ```bash
-   python3 scripts/seed_pages.py districts
-   python3 scripts/build_sitemap.py
-   python3 scripts/build_map_index.py
-   python3 scripts/build_link_index.py
-   python3 scripts/build_corpus_index.py
+   python3 scripts/build_site.py
    python3 research/tools/check.py --index
-   python3 scripts/seed_pages.py render <each page>
    python3 scripts/validate.py
    ```
 
-5. **Re-render the pages the new ones displaced.** Seeding shifts
-   `shared/nearby.json`, so neighbours' Nearby lists change and their HTML goes
-   stale — four new pages staled twenty of them, on streets the run never
-   touched. Render everything `validate.py` names, then validate again:
-
-   ```bash
-   python3 scripts/validate.py | sed -n 's/.*seed_pages.py render //p' | sort -u |
-       while read -r page; do python3 scripts/seed_pages.py render "$page"; done
-   python3 scripts/validate.py
-   ```
-
-   Check the output of each render rather than discarding it: a silent loop
-   here reports success while leaving every page stale.
+5. **The pages the new ones displaced re-render themselves.** Seeding shifts
+   `shared/nearby.json`, so neighbours' Nearby lists change and their HTML
+   goes stale — four new pages once staled twenty of them, on streets the run
+   never touched. `build_site.py` rebuilds the link index and then re-renders
+   every page, so step 4 has already dealt with it. Read one displaced
+   neighbour's page and confirm the only change is its Nearby list.

@@ -102,7 +102,7 @@ jobs:
 
             You are on branch ${{ steps.branch.outputs.branch }}, already
             checked out. ${{ steps.branch.outputs.pr && format('It belongs to OPEN PR #{0}, left by an earlier run — its cursors, queue files and items files are the ones you are continuing, and pushing to this branch updates that PR rather than opening a second one.', steps.branch.outputs.pr) || 'No news PR was open, so this branch is new off main and you will open the PR at the end.' }}
-            ${{ steps.branch.outputs.merge_conflict && 'NOTE: merging main into this branch conflicted and was aborted. Resolve it yourself before committing — `git merge origin/main`, fix the conflicts, and say so in the PR. Generated files (sitemap.xml, sitemaps/, shared/addresses.geojson, hub index.html/index.md) are rebuilt, never hand-merged: take main side and re-run the build scripts.' || '' }}
+            ${{ steps.branch.outputs.merge_conflict && 'NOTE: merging main into this branch conflicted and was aborted. Resolve it yourself before committing — `git merge origin/main`, fix the conflicts, and say so in the PR. The site is not committed, so almost nothing generated can conflict; the two that still can (corpus.jsonl and a hub index.md) are rebuilt, never hand-merged — take main side and re-run `python3 scripts/build_site.py`.' || '' }}
 
             The poll has already run and written today's queue to
             news/queue/<date>.json, advancing the cursors. Your job is the
@@ -152,11 +152,7 @@ jobs:
                through retired APNs, so the story's own number is not always
                the page's), then:
                  python3 scripts/seed_pages.py seed-list --manifest research/manifests/news-<date>.json
-                 python3 scripts/seed_pages.py districts
-                 python3 scripts/build_sitemap.py
-                 python3 scripts/build_map_index.py
-                 python3 scripts/build_link_index.py
-                 python3 scripts/build_corpus_index.py
+                 python3 scripts/build_site.py
                The seeder creates only pages that don't exist and never touches
                one that does. If it refuses a parcel — a condominium unit, no
                row on the current roll — leave that finding pending with the
@@ -165,13 +161,17 @@ jobs:
                `historical_record` with date, kind, headline, outlet, url and
                source — then `python3 scripts/seed_pages.py render <path>` to
                regenerate index.html from it, per news/AGENTS.md → "What an
-               entry is". Never edit index.html. The entry is the
-               headline in italics and the outlet as the link, and NOTHING
-               ELSE: no sentence of your own summarizing the story, and never
-               an edited headline. Record in each finding's `publish.note`
-               whether the page was seeded in this run, and from which
-               manifest.
-            8. `python3 news/tools/check.py` and `python3 scripts/validate.py`
+               entry is". The entry is the headline in italics and the
+               outlet as the link, and NOTHING ELSE: no sentence of your own
+               summarizing the story, and never an edited headline.
+               Never edit index.html. It is gitignored and Actions builds it
+               on deploy, so a re-render leaves nothing in `git status` — that
+               is correct, not a failure. Render anyway: it is how you see
+               what the page will say, and validate.py checks it on disk.
+               Record in each finding's `publish.note` whether the page was
+               seeded in this run, and from which manifest.
+            8. `python3 scripts/build_site.py`, then
+               `python3 news/tools/check.py` and `python3 scripts/validate.py`
                must both pass. Read `git diff` and confirm every change is a
                real fact about a building, and read a sample of any pages you
                seeded before committing them.
@@ -217,29 +217,6 @@ jobs:
           claude_args: |
             --max-turns 90
             --allowedTools "Read,Glob,Grep,Edit,Write,Bash(python3:*),Bash(git:*),Bash(gh pr:*)"
-
-      # The dashboard at /stats/ is derived from the repo, so it is rebuilt
-      # here rather than by the agent: a script that walks the tree costs
-      # seconds and no tokens, while an agent counting the same things costs
-      # turns it needs for reading stories. `always()` is deliberate — the two
-      # freshness tiles this page exists for are "days since the last news run"
-      # and "days since the last news item", and a run that timed out or was
-      # cut short mid-flight is exactly when a reader wants to see them move.
-      # The branch here is never main (the step above guarantees it), so this
-      # commit lands on the PR the run is building.
-      - name: Rebuild the stats dashboard
-        if: always()
-        continue-on-error: true
-        run: |
-          set -euo pipefail
-          python3 scripts/build_stats.py
-          if [ -n "$(git status --porcelain -- stats/)" ]; then
-            git add stats/
-            git commit -m "stats: rebuild the dashboard after the news run" -- stats/
-            git push origin HEAD
-          else
-            echo "stats/index.html unchanged"
-          fi
 
       # The action already writes every SDK message to a file, and the final
       # `result` message carries the bill. Reading it back with jq keeps the

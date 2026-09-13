@@ -36,9 +36,10 @@ SITEMAP_DIR = ROOT / "sitemaps"
 DISTRICTS = "historic-districts"
 ADDRESS_DIR = re.compile(r"^\d+[a-z]?$")  # 123, 123a — same as validate.py
 DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
-# "- [label](href) — hook" — the one line shape every hub list uses; same
-# bullets validate.hub_md_items reads.
-HUB_ITEM = re.compile(r"^- \[[^\]]+\]\(([^)]+)\)")
+# A hub's list of what lies beneath it lives in its index.html — the one copy
+# of it, since the list was collapsed out of index.md. Same <li> shape
+# validate.hub_html_items reads.
+HUB_ITEM = re.compile(r'<li><a href="([^"]+)"')
 
 
 def page_dirs() -> list:
@@ -67,19 +68,18 @@ def address_lastmods() -> dict:
 
 
 def listed_addresses(page_dir: Path) -> list:
-    """The address pages a hub's index.md lists, resolved against the tree.
+    """The address pages a hub's index.html lists, resolved against the tree.
 
     Buildings only, not the streets a hub also links for navigation: a street
     hub would drag in every building on it, including the ones this hub does
     not list, and the date would then move for a page that did not change.
     """
-    md = page_dir / "index.md"
-    if not md.exists():
+    html_path = page_dir / "index.html"
+    if not html_path.exists():
         return []
     out = []
-    for line in md.read_text(encoding="utf-8").splitlines():
-        m = HUB_ITEM.match(line)
-        if not m or "://" in m.group(1) or m.group(1).startswith("#"):
+    for m in HUB_ITEM.finditer(html_path.read_text(encoding="utf-8")):
+        if "://" in m.group(1) or m.group(1).startswith("#"):
             continue
         href = m.group(1)
         target = (ROOT / href.lstrip("/")) if href.startswith("/") else (page_dir / href)
