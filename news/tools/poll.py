@@ -663,6 +663,13 @@ ELSEWHERE = [
     "guerneville", "healdsburg", "sebastopol", "san rafael", "marin county",
     "mill valley", "sausalito", "tiburon", "larkspur", "corte madera",
     "daly city", "south san francisco", "brisbane", "pacifica", "colma",
+    # The first archive backfill queued a San Ramon planning meeting, because
+    # SF YIMBY's "San Francisco metropolitan region" reaches into Contra Costa
+    # and the towns it files from were not all here. The headline names the
+    # city every time, so listing them is the whole fix.
+    "san ramon", "orinda", "lafayette", "moraga", "pleasant hill", "clayton",
+    "san pablo", "hercules", "pinole", "rodeo", "oakley", "brentwood, ca",
+    "pittsburg", "contra costa", "alameda county", "san mateo county",
     "san bruno", "millbrae", "burlingame", "san mateo", "foster city",
     "redwood city", "menlo park", "palo alto", "mountain view", "sunnyvale",
     "santa clara", "cupertino", "campbell", "saratoga", "los gatos",

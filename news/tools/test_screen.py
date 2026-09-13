@@ -38,6 +38,12 @@ GEOGRAPHY = [
      "the What Now SF feed files Sonoma County stories"),
     (item("South San Francisco approves 400-unit project"), SF, "skip",
      "South San Francisco is a different city"),
+    (item("Meeting Tonight For 3180 Crow Canyon Place, San Ramon",
+          categories=["3180 Crow Canyon Place", "Brookfield"]), BAY, "skip",
+     "SF YIMBY's region reaches Contra Costa, and a numbered address out there "
+     "is not a San Francisco address — the first archive backfill queued this"),
+    (item("Construction Starting Soon For Vista Verde Senior Housing, Orinda"),
+     BAY, "skip", "same feed, same county, same rule"),
     (item("Giants land 2028 All-Star Game at Oracle Park"), SF, "skip",
      "'San Francisco Giants' is not the city"),
     (item("San Jose Japantown Boutique Announces Closure Following Building Sale"),

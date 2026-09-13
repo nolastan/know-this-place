@@ -497,6 +497,16 @@ no whitespace ahead of it, is what keeps the icon on the last word.
 - **A declined or pending item has no card**, the same as it has no entry. The
   grid is a view of what is on the pages, so anything in it can be checked
   against the page it names.
+- **A backfilled entry usually earns no card, and that is not a half-done job.**
+  The grid holds the newest six by the entry's date, and an entry recovered from
+  an outlet's archive is old by construction — the first backfill published
+  sixteen entries dated July 2026 against a grid whose oldest card was dated
+  September. Every one was correctly left off. The rule above — that an entry is
+  not published until its card is in — was written for a daily run, where every
+  entry is the newest thing on the site; on a backfill the same rule reads
+  *compare the date and take the newest six*, which normally means changing
+  nothing. Only a backfill into a window newer than the grid's oldest card
+  changes it, and then by the ordinary rule.
 
 `python3 scripts/validate.py` covers the homepage like any other page, so run it
 after editing the grid.

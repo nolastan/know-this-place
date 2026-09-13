@@ -211,7 +211,9 @@ where a reader will actually meet it. A run that published an entry and left the
 grid alone left the job half done.
 
 Six, ordered by the entry's date, one card per page, and every rule above
-applies to the card unchanged. **The `.place-cards` grid below it is not this
+applies to the card unchanged. **A backfilled entry is old by construction and
+usually sorts below all six**; leaving the grid alone is then the rule being
+followed, not a step skipped. **The `.place-cards` grid below it is not this
 module's** — featured addresses turn over by hand on the root
 [AGENTS.md](../AGENTS.md)'s criteria; never move a card between the two. The
 card's markup and the rest of the rules are in [PIPELINE.md → The homepage
