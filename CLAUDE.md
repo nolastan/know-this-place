@@ -2,7 +2,7 @@
 
 A public, static encyclopedia of the built environment: one page per building,
 in San Francisco so far. No framework, no build step, no dependencies — files, one
-stylesheet, one enhancement script, six stdlib-only Python scripts.
+stylesheet, one enhancement script, seven stdlib-only Python scripts.
 
 ## Read the file for the job, not the whole tree
 
@@ -15,6 +15,7 @@ read front to back. Start with the row that matches the task.
 | editing an address page | [AGENTS.md](AGENTS.md) + the neighborhood's `AGENTS.md` + [shared/AGENTS.md](shared/AGENTS.md) | [REFERENCE.md](REFERENCE.md), [shared/BLOCKS.md](shared/BLOCKS.md) |
 | creating pages in bulk | [AGENTS.md](AGENTS.md) | [REFERENCE.md → Seeding](REFERENCE.md#seeding-a-new-area) |
 | querying city data | — | [DATA-SOURCES.md](DATA-SOURCES.md) |
+| a question about the whole corpus | — | `corpus.jsonl`, [REFERENCE.md → The corpus index](REFERENCE.md#the-corpus-index) |
 | mining a source | [research/AGENTS.md](research/AGENTS.md) | [research/RUNBOOK.md](research/RUNBOOK.md), [research/LESSONS.md](research/LESSONS.md), [research/findings/INDEX.md](research/findings/INDEX.md) |
 | finding a new source | [research/AGENTS.md](research/AGENTS.md) | [research/SOURCES.md](research/SOURCES.md), [research/TRIAGE.md](research/TRIAGE.md) |
 | running the news pipeline | [news/AGENTS.md](news/AGENTS.md) | [news/PIPELINE.md](news/PIPELINE.md) |
@@ -51,12 +52,12 @@ python3 scripts/validate.py
 ```
 
 Fix everything it flags. If pages were added or removed, run
-`seed_pages.py districts`, `build_sitemap.py`, `build_map_index.py` and
-`build_link_index.py` first — all four are derived indexes and `validate.py`
-fails until each is current. `build_stats.py` rebuilds the dashboard at
-`/stats/` from the same tree; it is derived too, but it
-carries ages in days, so it is stale by tomorrow and `validate.py` never fails
-on it.
+`seed_pages.py districts`, `build_sitemap.py`, `build_map_index.py`,
+`build_link_index.py` and `build_corpus_index.py` first — all five are
+derived indexes and `validate.py` fails until each is current. `build_stats.py`
+rebuilds the dashboard at `/stats/` from the same tree; it is derived too, but
+it carries ages in days, so it is stale by tomorrow and `validate.py` never
+fails on it.
 
 Branch names are `feedback/issue-<N>`, `refresh/<YYYY-MM-DD>` or
 `seed/<area-slug>`. One concern per PR. Never push to `main`.

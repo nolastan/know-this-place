@@ -100,5 +100,5 @@ above, not a substitute for them.
 
 Site-side commands a run needs when it publishes (`seed_pages.py seed-list`,
 `seed_pages.py districts`, `build_sitemap.py`, `build_map_index.py`,
-`build_link_index.py`, `validate.py`) are documented in the
-root [README.md](../README.md) and [AGENTS.md](../AGENTS.md).
+`build_link_index.py`, `build_corpus_index.py`, `validate.py`) are documented
+in the root [README.md](../README.md) and [AGENTS.md](../AGENTS.md).

@@ -126,10 +126,14 @@ scripts/
   build_map_index.py          Regenerates shared/addresses.geojson
   build_link_index.py         Regenerates shared/nearby.json — each
                               page's nearby pages, for lateral links
+  build_corpus_index.py       Regenerates corpus.jsonl — one line per
+                              address page, for corpus-wide questions
 sitemap.xml                   A sitemap index, not a URL list — generated
 sitemaps/<neighborhood>.xml   One child sitemap per neighborhood, plus
                               hubs.xml and historic-districts.xml, so Search
                               Console reports coverage per neighborhood
+corpus.jsonl                  One line per address page — path, year, use,
+                              district, earliest date, sources, hook
 .github/
   ISSUE_TEMPLATE/page-feedback.yml
   workflows/{feedback-agent,refresh,validate}.yml
@@ -177,6 +181,7 @@ python3 scripts/seed_pages.py districts
 python3 scripts/build_sitemap.py
 python3 scripts/build_map_index.py
 python3 scripts/build_link_index.py
+python3 scripts/build_corpus_index.py
 python3 scripts/validate.py
 ```
 

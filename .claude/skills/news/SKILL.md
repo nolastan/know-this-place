@@ -121,6 +121,7 @@ python3 scripts/seed_pages.py seed-list --manifest research/manifests/news-<date
 python3 scripts/build_sitemap.py
 python3 scripts/build_map_index.py
 python3 scripts/build_link_index.py
+python3 scripts/build_corpus_index.py
 python3 research/tools/check.py --index
 python3 scripts/seed_pages.py render <path to the page>
 python3 news/tools/check.py && python3 scripts/validate.py

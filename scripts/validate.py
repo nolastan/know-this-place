@@ -603,6 +603,36 @@ def main() -> int:
                 err(nearby, f"{len(gone)} indexed page(s) no longer exist, "
                             f"starting {gone[0]} — run scripts/build_link_index.py")
 
+    # And every address should have a line in the corpus index. Same contract
+    # again, both directions — this is the file a corpus-wide question is
+    # meant to be answered from instead of walking every directory, so a page
+    # missing from it or a line outlasting its page defeats the point.
+    corpus = ROOT / "corpus.jsonl"
+    if corpus.exists():
+        indexed_paths = set()
+        corpus_error = None
+        for lineno, line in enumerate(corpus.read_text(encoding="utf-8").splitlines(), 1):
+            try:
+                indexed_paths.add(json.loads(line)["path"])
+            except (json.JSONDecodeError, KeyError, TypeError) as e:
+                corpus_error = f"invalid entry on line {lineno} — run scripts/build_corpus_index.py ({e})"
+                break
+        if corpus_error:
+            err(corpus, corpus_error)
+        else:
+            for html_path in html_pages:
+                if not ADDRESS_DIR.match(html_path.parent.name):
+                    continue
+                rel_dir = "/" + html_path.parent.relative_to(ROOT).as_posix() + "/"
+                if rel_dir not in indexed_paths:
+                    err(html_path, "not in corpus.jsonl — "
+                                   "run scripts/build_corpus_index.py")
+            gone = [p for p in indexed_paths
+                    if not (ROOT / p.strip("/") / "index.html").exists()]
+            if gone:
+                err(corpus, f"{len(gone)} indexed page(s) no longer exist, "
+                            f"starting {sorted(gone)[0]} — run scripts/build_corpus_index.py")
+
     # Entries in the backlog that no longer belong there. Reported as one
     # error, not one per page: the file is 1,010 lines long today and the sweep
     # that empties it would otherwise print a thousand identical complaints.
