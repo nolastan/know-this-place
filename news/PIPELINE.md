@@ -6,7 +6,7 @@ section for the stage you are on, not the file.
 
 | Stage | section |
 |---|---|
-| poll | [Cursors](#cursors-what-already-considered-means) · [The screen](#the-screen) |
+| poll | [Cursors](#cursors-what-already-considered-means) · [The screen](#the-screen) · [Backfill](#backfill-the-archive-behind-the-feed) |
 | read | [Reading an article](#reading-an-article) |
 | extract | [Items files](#items-files) |
 | publish | [The entry and its markup](#the-entry-and-its-markup) · [Rules that catch publishers out](#rules-that-catch-publishers-out) · [The homepage grid](#the-homepage-grid) |
@@ -112,6 +112,128 @@ When a skip turns out to have been wrong, fix the table it came from and say so
 in the commit — the lists in `poll.py` are the module's accumulated judgement,
 not a fixed dictionary. `read.py <queue> --skipped` re-reads a run's skips and
 measures what they cost; do that when you change the screen.
+
+## Backfill: the archive behind the feed
+
+**An RSS feed is not an archive.** Measured across the register, an open feed
+carries between one and sixteen days — most of them two. So a daily poll sees
+about two days of news however large `--backfill-days` is set: the floor never
+binds, the feed does, and everything an outlet published before the module's
+first run has never been looked at.
+
+```bash
+python3 news/tools/poll.py backfill --since 2026-07-01 --until 2026-07-31
+python3 news/tools/poll.py backfill --since 2026-07-01 --until 2026-07-31 --feed sfyimby
+```
+
+What this adds is **a way of listing candidate items, and nothing else**. After
+the listing it is the daily pipeline unchanged: the same screen, the same
+verdict on every item, the same queue file, the same rule that an item is
+considered once. There are no new concepts here, and a backfilled story reaches
+a page by exactly the route a story polled this morning does.
+
+### The routes
+
+Each feed's `backfill` block in [feeds.json](feeds.json) names its route. A feed
+with no block has no reachable archive; the note says what was tried.
+
+| route | feeds | how |
+|---|---|---|
+| `paged` | mission-local, the-registry, sfyimby, the-voice-sf | `?paged=N` on the feed, newest-first, until the window is passed |
+| `sitemap` | sf-standard (monthly), sf-examiner (per-day) | an index of date-named children; only the ones the window touches are fetched |
+| `bluesky` | sf-chronicle, sf-examiner-social | `app.bsky.feed.getAuthorFeed`, 100 posts a call, paged by `cursor` |
+
+Four things these routes cost, all of them found by walking them:
+
+- **A sitemap states a URL and a date and no title at all.** The slug is the
+  only text there is, so the screen reads a headline reconstructed out of it —
+  `/2026/08/31/lurie-moves-overhaul-500m-homelessness-contracts/` put back into
+  title case, because the address patterns are written for the way a headline
+  capitalizes. That reconstruction is **screen material and nothing else**: the
+  module publishes a headline verbatim, and a de-hyphenated slug is not a
+  headline anyone wrote. Items listed this way carry `title_from: "slug"`, and
+  the real headline comes off the article at the reading stage, which `read.py`
+  already prints.
+- **An undated child sitemap is not a month of stories.** The Standard's index
+  lists `sitemap-tags`, `sitemap-sections` and `sitemap-pages` beside its
+  seventy-one months, and every entry in them carries a `<lastmod>` of the last
+  time that listing changed — which for a busy tag is inside every window.
+  Walked as stories they put 677 tag pages into a 294-story month. Where an
+  index names any dated child, the undated ones are dropped.
+- **`<lastmod>` is when the record changed, not when the story ran.** The
+  Standard lists a 31 August article with a lastmod of 1 September. Where the
+  outlet writes the date into the URL that is the publication date and it wins;
+  `lastmod` is the fallback, for the Examiner, whose paths carry no date.
+- **The end of a paged archive is a 404, not an empty page.** Both paged feeds
+  serve it as a *valid RSS document* titled "Page not found" with zero items in
+  it, so a walker that trusts the parse sees an ordinary empty feed. A 404 past
+  page 1 ends the walk and keeps what it gathered; a 404 on page 1 is a broken
+  feed and still raises.
+
+**The Bluesky API and the Bluesky RSS share one cursor**, because the RSS
+`<guid>` for a post *is* its `at://` URI, which is the API's `post.uri`. Without
+that coincidence a backfill would hand every post the daily poll had already
+considered back to a reader. The API is also the better view: it states the
+article's real URL, which the post text does not — the Chronicle account posts
+bit.ly — and carries the outlet's own headline and standfirst in the link card,
+which go into the item's `summary` where the screen reads them. The item's
+`title` stays the post text, as the daily route sets it, so the two routes
+screen the same post the same way. Reposts are dropped.
+
+### What "already considered" means for a window
+
+The daily cursor remembers a few hundred item ids. A backfill cannot: a year of
+one feed is thousands, and pushing those through a 300-deep ring would evict
+the daily poll's own ids and make every recent story new again.
+
+> **A backfill's memory is the window, not a list of ids.** A walked window is
+> recorded in the cursor's `backfill.windows`, with its route and its counts,
+> and an item whose publication date falls inside a recorded window has been
+> considered.
+
+That works because an archive, unlike a feed, states a publication date and does
+not re-date a story it edits. What it trades away is a story added to an archive
+after its window was walked — rare, and fixed by re-running the window with
+`--force`. Two other guards run alongside it, for the overlap where a window
+reaches into days the daily poll already covered: the cursor's `seen` ring, and
+**every article URL the feed's items files already record a verdict on**, which
+is the module's long memory and is not bounded at all.
+
+### Batch it — the window is capped at a month
+
+The crawling is cheap: a full walk of the two deepest paged archives is about
+fifty minutes of politely rate-limited requests. **The queue is not.** Measured
+over July 2026, one month of the eight routed sources lists 2,558 stories and
+queues 538 of them, and stage 2 fetches and judges every queued one. That is far
+past what a reading pass can drain, and a queue file is durable state somebody
+then has to deal with.
+
+So `backfill` refuses a window wider than 31 days, and refuses to list a new one
+while a backfill queue is still waiting to be read. Both are overridable with
+`--force`, and neither should be. Pick a window — one month, or one month of one
+feed — drain it, then go again.
+
+| feed | route | listed in July 2026 | queued |
+|---|---|---|---|
+| sf-chronicle | bluesky | 1,546 | 245 |
+| sf-standard | sitemap | 269 | 52 |
+| the-registry | paged | 248 | 64 |
+| sf-examiner | sitemap | 186 | 49 |
+| mission-local | paged | 150 | 60 |
+| sfyimby | paged | 60 | 21 |
+| the-voice-sf | paged | 51 | 24 |
+| sf-examiner-social | bluesky | 48 | 23 |
+
+**`sfyimby` is where the addresses are.** It is development-only, its first
+`<category>` is the street address itself, and the rest name the architect,
+developer and contractor — the firms the root AGENTS.md allows a page to credit.
+The Chronicle account is the opposite shape: it is a third of everything listed
+and most of it is national wire, sport and weather.
+
+The queue file is `queue/backfill-<since>-to-<until>.json`, named for its window
+rather than for the day it was made, and its items carry `listed_by: "backfill"`.
+Everything else about it — how it is drained, when it is deleted — is the same
+as a daily queue's.
 
 ## Reading an article
 

@@ -4,7 +4,8 @@
     python3 news/tools/poll.py poll                  # every open feed
     python3 news/tools/poll.py poll --feed sfist     # one of them
     python3 news/tools/poll.py poll --dry-run        # screen, writing nothing at all
-    python3 news/tools/poll.py poll --pages 20 --backfill-days 36500   # backfill a new feed
+    python3 news/tools/poll.py poll --pages 20 --backfill-days 36500   # a new feed's feed
+    python3 news/tools/poll.py backfill --since 2026-07-01 --until 2026-07-31
     python3 news/tools/poll.py status                # cursors, at a glance
     python3 news/tools/poll.py screen "a headline"   # why the screen rules the way it does
     python3 news/tools/poll.py find "1234 Valencia Street"   # does this address have a page?
@@ -24,6 +25,14 @@ What it will not do:
 The screen is deliberately cheap and deliberately conservative in one
 direction: it skips on a clear signal and queues on doubt, because a queued
 story costs a glance and a wrongly skipped one is invisible.
+
+`backfill` is the same run over an archive rather than a feed. **An RSS feed is
+not an archive** — the open ones carry between one and sixteen days, so a daily
+poll sees about two days of news however large `--backfill-days` is set, and
+everything an outlet published before the module's first run has never been
+looked at. Each feed's `backfill` block in feeds.json names the route into its
+archive; the window is bounded to a month, because the crawling is cheap and the
+queue it fills is not.
 """
 from __future__ import annotations
 
@@ -327,6 +336,312 @@ def fetch_feed(feed: dict, pages: int) -> list[dict]:
         if page < pages:
             time.sleep(2)  # be a polite client
     return out
+
+
+# --------------------------------------------------------------------------- #
+# Backfill — listing candidates an RSS feed can no longer reach
+# --------------------------------------------------------------------------- #
+#
+# **An RSS feed is not an archive.** Measured across the register, an open feed
+# carries between one and sixteen days: the daily poll therefore sees roughly
+# two days of news however large `--backfill-days` is set, and everything an
+# outlet published before the module's first run has never been looked at.
+#
+# Each route below lists the same kind of candidate item the daily poll lists —
+# an id, a title, a url and a date — out of something the outlet publishes for
+# crawlers rather than for readers. From there the pipeline is unchanged: the
+# same screen, the same queue file, the same rule that an item is considered
+# once. A backfill adds a way of *listing*, and no new concepts at all.
+#
+# The `backfill` block in feeds.json says which route a feed has. A feed with
+# no block has no reachable archive — hoodline answers 403 to both its sitemap
+# and its article pages, so its feed is the only way in and it stays a
+# going-forward source.
+
+BACKFILL_ROUTES = {"paged", "sitemap", "bluesky"}
+
+# A story's date, as the three archives state it.
+DATE_IN_PATH = re.compile(r"/(\d{4})/(\d{2})/(\d{2})/")     # /2026/08/31/slug/
+MONTH_IN_URL = re.compile(r"(\d{4})-(\d{2})(?!\d)")          # sitemap-2026-08.xml
+DAY_IN_URL = re.compile(r"(\d{4})-(\d{2})-(\d{2})")          # ?date=2026-08-14
+
+# Path segments that are not the headline: the date, the opaque CMS id the
+# Examiner ends every URL with, and the section names above it.
+OPAQUE_SEGMENT = re.compile(r"^(?:article_[0-9a-f-]+\.html|index\.html|\d+)$", re.I)
+
+
+def slug_title(url: str) -> str:
+    """A headline reconstructed from the URL an outlet built out of it.
+
+    A sitemap states a URL and a date and nothing else — no title, no summary,
+    no tags. The slug is the only text there is, and it is a real rendering of
+    the headline: `/2026/08/31/lurie-moves-overhaul-500m-homelessness-contracts/`
+    is what the desk wrote, hyphenated and lowercased.
+
+    **This is screen material only, and it must never reach a page.** The
+    module publishes a headline verbatim, and a lowercased slug put back into
+    title case is not a headline anyone wrote — `news/AGENTS.md` forbids
+    editing one, and this would be editing every word of it. An item listed
+    this way carries `title_from: "slug"` so the reading stage knows to take
+    the headline off the article itself, which `read.py` already prints.
+
+    Title case rather than the slug as-is because the screen's address patterns
+    are written for the way a headline capitalizes: `1234-market-street` only
+    reads as an address once it says `1234 Market Street`.
+    """
+    parts = [p for p in urllib.parse.urlsplit(url).path.split("/") if p]
+    parts = [p for p in parts if not OPAQUE_SEGMENT.match(p)]
+    if not parts:
+        return ""
+    words = [w for w in parts[-1].replace(".html", "").split("-") if w]
+    return " ".join(w[:1].upper() + w[1:] for w in words)
+
+
+def parse_sitemap(body: bytes) -> list[tuple[str, str | None]]:
+    """(loc, lastmod) for every <url> or <sitemap> in a sitemap document.
+
+    One parser for both halves of the format: an index lists <sitemap> children
+    and a leaf lists <url> entries, and both carry <loc> and an optional
+    <lastmod>. Which one came back is told by what the locs look like, not by
+    the element name, so a route does not have to know in advance.
+    """
+    root = ET.fromstring(body)
+    out = []
+    for el in root.iter():
+        if el.tag.split("}")[-1] not in ("url", "sitemap"):
+            continue
+        loc = text_of(el.find("{*}loc"))
+        if loc:
+            out.append((loc, when(text_of(el.find("{*}lastmod")))))
+    return out
+
+
+def story_date(loc: str, lastmod: str | None) -> str | None:
+    """When a sitemap's entry was published, as ISO 8601 UTC.
+
+    **The path wins over `<lastmod>`.** A sitemap's lastmod is when the record
+    changed, not when the story ran: sfstandard.com lists a 31 August article
+    with a lastmod of 1 September, and every entry in its index carries the
+    timestamp of the nightly rebuild. Where the outlet writes the date into the
+    URL — `/2026/08/31/slug/` — that is the publication date and it is exact.
+    The Examiner writes no date into its paths, and its per-day sitemap's
+    lastmod is the publication timestamp, so lastmod is the fallback rather
+    than a second-best guess.
+    """
+    m = DATE_IN_PATH.search(urllib.parse.urlsplit(loc).path)
+    if m:
+        return f"{m.group(1)}-{m.group(2)}-{m.group(3)}T12:00:00+00:00"
+    return lastmod
+
+
+def child_date(loc: str) -> str | None:
+    """The date a child sitemap's own name states — a day, or a month."""
+    day = DAY_IN_URL.search(loc)
+    if day:
+        return day.group(0)
+    month = MONTH_IN_URL.search(loc)
+    return month.group(0) if month else None
+
+
+def children_in_window(locs: list[str], since: str, until: str) -> list[str]:
+    """The child sitemaps that could hold a story published inside the window.
+
+    Both archives name their children by date — `sitemap-2026-08.xml` a month,
+    `editorial.xml?date=2026-08-14` a day — so the window is decided before
+    anything is fetched. That is the whole reason to prefer a sitemap route to a
+    paged one: a month of the Standard is one request, where reaching the same
+    month through `?paged=N` means walking every page published since.
+
+    **An undated child is dropped whenever any child is dated.** The Standard's
+    index lists `sitemap-tags`, `sitemap-sections` and `sitemap-pages` beside
+    its seventy-one months, and their entries are tag and section listing pages
+    carrying a `<lastmod>` of the last time the listing changed — which for a
+    busy tag is inside every window. Walked as stories, they put 677 index pages
+    into a 294-story month and the screen dutifully queued some of them. Only
+    where an index names no dates at all does every child get walked.
+    """
+    dated = [(loc, child_date(loc)) for loc in locs]
+    if any(d for _, d in dated):
+        return [loc for loc, d in dated
+                if d and (since[:len(d)] <= d <= until[:len(d)])]
+    return locs
+
+
+def sitemap_items(feed: dict, since: str, until: str) -> list[dict]:
+    """Every story a sitemap lists inside the window.
+
+    The index may be per-year — the Examiner serves one index of per-day
+    sitemaps for each year, and `robots.txt` offers them back to 1900 — so an
+    `{year}` in the configured index URL is filled in for each year the window
+    touches. The Standard's single index lists every month since 2021-01.
+    """
+    conf = feed["backfill"]
+    years = sorted({since[:4], until[:4]})
+    children: list[str] = []
+    for year in (years if "{year}" in conf["index"] else [None]):
+        url = conf["index"].replace("{year}", year) if year else conf["index"]
+        try:
+            listed = parse_sitemap(fetch(url))
+        except Exception as exc:  # noqa: BLE001 — one missing year is not the run
+            print(f"    {url}: {exc}", file=sys.stderr, flush=True)
+            continue
+        children.extend(children_in_window([loc for loc, _ in listed], since, until))
+        time.sleep(2)
+
+    out, seen = [], set()
+    for loc in children:
+        try:
+            entries = parse_sitemap(fetch(loc))
+        except Exception as exc:  # noqa: BLE001
+            print(f"    {loc}: {exc}", file=sys.stderr, flush=True)
+            continue
+        for url, lastmod in entries:
+            published = story_date(url, lastmod)
+            if not published or not (since <= published[:10] <= until):
+                continue
+            url = clean_url(url)
+            if url in seen:
+                continue
+            seen.add(url)
+            out.append({"id": url, "title": slug_title(url), "url": url,
+                        "published": published, "summary": "", "categories": [],
+                        "title_from": "slug"})
+        time.sleep(2)
+    return out
+
+
+def paged_items(feed: dict, since: str, until: str, max_pages: int) -> list[dict]:
+    """Every story in the window, walking back through `?paged=N`.
+
+    WordPress serves the rest of a feed's archive this way and it is the only
+    route past the front page. The walk is newest-first and the window is in
+    the past, so it has to page through everything published since `until`
+    before it reaches anything it wants — which is why a sitemap route is
+    preferred where an outlet has one.
+
+    It stops on the first of: a page whose newest item is older than `since`,
+    the 404 at the end of the archive, a page that adds no id an earlier page
+    did not already hold, or `max_pages`. The 404 is the one worth naming:
+    both feeds measured serve the end of the archive as a **valid RSS document
+    titled "Page not found" with no items in it**, so a walker that trusts the
+    parse sees an ordinary empty feed rather than the end.
+    """
+    out: list[dict] = []
+    seen: set[str] = set()
+    for page in range(1, max_pages + 1):
+        try:
+            items = parse_rss(fetch(paged_url(feed["url"], page)))
+        except urllib.error.HTTPError as exc:
+            if exc.code == 404 and page > 1:
+                break
+            raise
+        fresh = [i for i in items if i["id"] not in seen]
+        if not fresh:
+            break
+        seen.update(i["id"] for i in fresh)
+        for item in fresh:
+            item.pop("body", None)  # the outlet's article text stays out of the repo
+            if item.get("published") and since <= item["published"][:10] <= until:
+                out.append(item)
+        dated = [i["published"][:10] for i in fresh if i.get("published")]
+        if dated and max(dated) < since:
+            break               # this page is already older than the window
+        time.sleep(2)           # be a polite client
+    return out
+
+
+BSKY_FEED = ("https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed"
+             "?actor={actor}&limit=100&filter=posts_no_replies")
+
+
+def bluesky_items(feed: dict, since: str, until: str, max_calls: int) -> list[dict]:
+    """Every post in the window, walking the account's own API.
+
+    The RSS view of a Bluesky account carries thirty posts and stops.
+    `app.bsky.feed.getAuthorFeed` is unauthenticated, serves a hundred at a
+    time and pages with a `cursor`, so the whole account is reachable.
+
+    **The ids match the RSS feed's exactly**, which is what makes the two
+    routes one cursor: the RSS `<guid>` for a post is its `at://` URI, and that
+    is the API's `post.uri`. Without that a backfill would re-queue every post
+    the daily poll had already considered, and the cursor could not tell.
+
+    Two things the API gives that the RSS does not, both used here:
+
+    * **the article's real URL.** The post text carries a shortened or
+      truncated link — the Chronicle account posts bit.ly — while the embed
+      states the destination in full. A citation has to be a link a reader can
+      check.
+    * **the outlet's own headline and standfirst**, in the link card. That is
+      better screen material than a teaser sentence, so it goes in `summary`
+      where the screen reads it. The item's `title` stays the post text, as the
+      daily route sets it, because that is the newsroom's own words about the
+      story and the two routes must screen the same post the same way.
+
+    Reposts are dropped: an account boosting someone else's story is not that
+    newsroom reporting on a building.
+    """
+    actor = feed["backfill"].get("actor") or feed["url"].split("/profile/")[1].split("/")[0]
+    out: list[dict] = []
+    cursor = ""
+    for _ in range(max_calls):
+        url = BSKY_FEED.format(actor=urllib.parse.quote(actor))
+        if cursor:
+            url += "&cursor=" + urllib.parse.quote(cursor)
+        page = json.loads(fetch(url))
+        posts = page.get("feed") or []
+        if not posts:
+            break
+        oldest = ""
+        for entry in posts:
+            if entry.get("reason"):
+                continue                        # a repost, not their story
+            post = entry.get("post") or {}
+            record = post.get("record") or {}
+            published = when(record.get("createdAt") or post.get("indexedAt") or "")
+            if not published:
+                continue
+            oldest = min(oldest or published, published)
+            if not (since <= published[:10] <= until):
+                continue
+            external = ((post.get("embed") or {}).get("external")
+                        or ((record.get("embed") or {}).get("external")) or {})
+            link = clean_url(external.get("uri") or "")
+            if not link:
+                for facet in record.get("facets") or []:
+                    for feature in facet.get("features") or []:
+                        if feature.get("uri"):
+                            link = clean_url(feature["uri"])
+            text = " ".join(POST_LINK.sub("", record.get("text") or "").split())
+            handle = ((post.get("author") or {}).get("handle") or actor)
+            rkey = post.get("uri", "").rsplit("/", 1)[-1]
+            out.append({
+                "id": post.get("uri") or link,
+                "title": text.strip(" →—-"),
+                "url": link or f"https://bsky.app/profile/{handle}/post/{rkey}",
+                "post_url": f"https://bsky.app/profile/{handle}/post/{rkey}",
+                "published": published,
+                "summary": " — ".join(p for p in (external.get("title"),
+                                                  external.get("description")) if p),
+                "categories": [],
+            })
+        cursor = page.get("cursor") or ""
+        if not cursor or (oldest and oldest[:10] < since):
+            break
+        time.sleep(2)
+    return out
+
+
+def backfill_items(feed: dict, since: str, until: str, max_pages: int) -> list[dict]:
+    """The window's candidate items, by whichever route this feed has."""
+    route = feed["backfill"]["route"]
+    if route == "sitemap":
+        return sitemap_items(feed, since, until)
+    if route == "paged":
+        return paged_items(feed, since, until, max_pages)
+    if route == "bluesky":
+        return bluesky_items(feed, since, until, max_pages)
+    raise ValueError(f"{feed['id']}: unknown backfill route {route!r}")
 
 
 # --------------------------------------------------------------------------- #
@@ -787,6 +1102,199 @@ def poll(feed_ids: list[str], backfill_days: int, dry_run: bool,
     return 0
 
 
+# A month is the batch unit, and it is a rule rather than advice. The cost is
+# not the crawling — a full walk of two paged archives is about fifty minutes of
+# polite requests, which is fine — it is the queue: at the screen rates measured
+# on the register, a year of the whole set would put several thousand articles
+# into one file, and stage 2 fetches and judges every one of them. That is far
+# past what a reading pass can drain, and news/AGENTS.md makes the queue durable
+# state somebody then has to deal with. Pick a window, drain it, go again.
+BACKFILL_MAX_DAYS = 31
+
+
+def already_written(feed_id: str) -> set[str]:
+    """Every article url this feed has already recorded a verdict on.
+
+    The items files are the module's long memory: a story that was read and
+    published, and a story that was read and declined, are both in there. The
+    cursor's `seen` ring is only a few hundred ids deep, so on a window that
+    overlaps the daily poll's coverage this is what stops a story being handed
+    to a reader twice.
+    """
+    out: set[str] = set()
+    for path in sorted((ROOT / "items" / feed_id).glob("*.json")):
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            continue
+        for finding in data.get("findings") or []:
+            url = ((finding.get("citation") or {}).get("url") or "")
+            if url:
+                out.add(clean_url(url))
+    return out
+
+
+def covered_window(published: str | None, cursor: dict) -> str | None:
+    """The recorded backfill window this item's date falls in, if any.
+
+    **A backfill's memory is the window, not a list of ids.** The daily poll
+    remembers a few hundred ids because a feed re-dates a story it edits and
+    hands it back; an archive does not — a sitemap or a paged walk states the
+    publication date, and a window that has been walked has been walked. Keeping
+    ids instead would mean either an unbounded list in the cursor, or the
+    backfill's thousands of ids evicting the daily poll's few hundred from the
+    ring and making every recent story new again.
+
+    What this trades away is a story added to an archive after its window was
+    walked. That is rare enough to accept and cheap to fix: re-run the window
+    with `--force`.
+    """
+    if not published:
+        return None
+    for window in ((cursor.get("backfill") or {}).get("windows") or []):
+        if window["from"] <= published[:10] <= window["to"]:
+            return f"{window['from']}..{window['to']}"
+    return None
+
+
+def backfill(feed_ids: list[str], since: str, until: str, dry_run: bool,
+             queue_all: bool, max_pages: int, force: bool) -> int:
+    """Screen one window of an outlet's archive, exactly as the daily poll does.
+
+    The only new thing here is the listing. Everything after it — the screen,
+    the queue file, the verdict on every item, the rule that an item is
+    considered once — is the daily pipeline unchanged.
+    """
+    for stamp in (since, until):
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", stamp):
+            print(f"--since and --until are dates: {stamp!r} is not one", file=sys.stderr)
+            return 2
+    if until < since:
+        print(f"the window runs backwards: {since} to {until}", file=sys.stderr)
+        return 2
+    span = (date.fromisoformat(until) - date.fromisoformat(since)).days + 1
+    if span > BACKFILL_MAX_DAYS and not force:
+        print(f"{since} to {until} is {span} days. The batch unit is a month "
+              f"({BACKFILL_MAX_DAYS} days): a wider window fills a queue file past "
+              f"what a reading pass can drain, and the queue is durable state. "
+              f"Narrow it, or pass --force and say why in the PR.", file=sys.stderr)
+        return 2
+
+    waiting = [p for p in sorted(QUEUE.glob("backfill-*.json"))
+               if json.loads(p.read_text(encoding="utf-8")).get("items")]
+    if waiting and not force:
+        print("a backfill queue is still waiting to be read:", file=sys.stderr)
+        for p in waiting:
+            print(f"  {p.relative_to(REPO)}", file=sys.stderr)
+        print("Drain it before listing another window — that is the batching rule, "
+              "not a lock. --force overrides.", file=sys.stderr)
+        return 2
+
+    register = json.loads(FEEDS.read_text(encoding="utf-8"))["feeds"]
+    cursors = load_cursors()
+    site_pages = page_index()
+    streets = {s.lower() for s in street_vocabulary(site_pages)}
+    today = date.today().isoformat()
+
+    polled, queued, skipped = [], [], []
+    for feed in register:
+        if feed_ids and feed["id"] not in feed_ids:
+            continue
+        if not feed.get("backfill"):
+            if feed_ids:
+                print(f"{feed['id']}: no backfill block in feeds.json — this outlet "
+                      f"has no reachable archive, or nobody has found it yet.",
+                      file=sys.stderr, flush=True)
+            continue
+        if feed.get("access") != "open":
+            print(f"{feed['id']}: not polled ({feed.get('access')})", flush=True)
+            polled.append({"feed": feed["id"], "skipped_feed": feed.get("access")})
+            continue
+
+        cursor = cursors.setdefault("feeds", {}).setdefault(feed["id"], {})
+        print(f"{feed['id']}: walking the {feed['backfill']['route']} route "
+              f"for {since}..{until}", flush=True)
+        try:
+            items = backfill_items(feed, since, until, max_pages)
+        except Exception as exc:  # noqa: BLE001 — one bad archive must not end the run
+            polled.append({"feed": feed["id"], "route": feed["backfill"]["route"],
+                           "window": [since, until], "error": str(exc)})
+            print(f"{feed['id']}: FAILED — {exc}", file=sys.stderr, flush=True)
+            continue
+
+        written = already_written(feed["id"])
+        seen_ids = set(cursor.get("seen") or [])
+        fresh, repeats = [], {"cursor": 0, "items_file": 0, "window": 0}
+        for item in items:
+            if item["id"] in seen_ids:
+                repeats["cursor"] += 1
+            elif clean_url(item["url"]) in written:
+                repeats["items_file"] += 1
+            elif covered_window(item.get("published"), cursor):
+                repeats["window"] += 1
+            else:
+                fresh.append(item)
+
+        for item in fresh:
+            verdict, reason = ("read", "queued by --all") if queue_all else \
+                screen(item, feed, streets)
+            row = dict(item, feed=feed["id"], outlet=feed["outlet"],
+                       verdict=verdict, reason=reason, listed_by="backfill")
+            row.pop("body", None)
+            (queued if verdict == "read" else skipped).append(row)
+
+        n_read = sum(1 for i in queued if i["feed"] == feed["id"])
+        polled.append({"feed": feed["id"], "route": feed["backfill"]["route"],
+                       "window": [since, until], "listed": len(items),
+                       "already_considered": repeats, "considered": len(fresh),
+                       "queued": n_read, "skipped": len(fresh) - n_read})
+        print(f"{feed['id']}: {len(items)} in the window, "
+              f"{sum(repeats.values())} already considered, {len(fresh)} new, "
+              f"{n_read} queued to read", flush=True)
+
+        if not dry_run:
+            windows = (cursor.setdefault("backfill", {})
+                             .setdefault("windows", []))
+            windows[:] = [w for w in windows
+                          if not (w["from"] == since and w["to"] == until)]
+            windows.append({"from": since, "to": until, "run": today,
+                            "route": feed["backfill"]["route"],
+                            "listed": len(items), "considered": len(fresh),
+                            "queued": n_read})
+            windows.sort(key=lambda w: (w["from"], w["to"]))
+        time.sleep(2)
+
+    run = {"run": today, "backfill": {"since": since, "until": until},
+           "polled": polled, "items": queued,
+           "skipped": [{k: s[k] for k in ("feed", "title", "url", "reason")
+                        if k in s} for s in skipped]}
+    if not (queued or skipped):
+        print("\nNothing new in the window.")
+    elif dry_run:
+        print(f"\n{len(queued)} to read, {len(run['skipped'])} skipped "
+              f"(--dry-run: no queue file written, no window recorded)")
+    else:
+        QUEUE.mkdir(parents=True, exist_ok=True)
+        path = QUEUE / f"backfill-{since}-to-{until}.json"
+        if path.exists():
+            prev = json.loads(path.read_text(encoding="utf-8"))
+            have = {i["url"] for i in prev.get("items", [])}
+            run["items"] = prev.get("items", []) + [i for i in queued
+                                                    if i["url"] not in have]
+            run["skipped"] = prev.get("skipped", []) + run["skipped"]
+            run["polled"] = prev.get("polled", []) + run["polled"]
+        path.write_text(json.dumps(run, indent=2, ensure_ascii=False) + "\n",
+                        encoding="utf-8")
+        print(f"\n{len(run['items'])} to read, {len(run['skipped'])} skipped "
+              f"→ {path.relative_to(REPO)}")
+
+    if dry_run:
+        print("(--dry-run: no window recorded)")
+    else:
+        save_cursors(cursors)
+    return 0
+
+
 def status() -> int:
     register = {f["id"]: f for f in json.loads(FEEDS.read_text(encoding="utf-8"))["feeds"]}
     cursors = load_cursors().get("feeds", {})
@@ -799,6 +1307,18 @@ def status() -> int:
         note = "" if feed.get("access") == "open" else f"   ({feed.get('access')})"
         print(f"{fid:<22}{c.get('last_run', '—'):<12}{newest or '—':<28}"
               f"{c.get('considered', 0):>11}{c.get('queued', 0):>8}{note}")
+    walked = [(fid, w) for fid, c in cursors.items()
+              for w in ((c.get("backfill") or {}).get("windows") or [])]
+    if walked:
+        print(f"\n{len(walked)} archive window(s) walked:")
+        for fid, w in sorted(walked, key=lambda r: (r[1]["from"], r[0])):
+            print(f"  {fid:<22}{w['from']}..{w['to']}  {w['route']:<9}"
+                  f"{w['listed']:>5} listed, {w['queued']} queued")
+    no_route = [fid for fid, f in register.items()
+                if f.get("access") == "open" and not f.get("backfill")]
+    if no_route:
+        print(f"\nno archive route: {', '.join(no_route)} "
+              f"(going-forward sources — see feeds.json)")
     pending = sorted(QUEUE.glob("*.json"))
     if pending:
         total = sum(len(json.loads(p.read_text(encoding='utf-8')).get("items", []))
@@ -864,6 +1384,23 @@ def main() -> int:
                         "(default 1; the feed's own page). Pair with a large "
                         "--backfill-days to backfill a newly registered feed.")
 
+    p = sub.add_parser("backfill", help="screen one window of an archive the feed "
+                                       "can no longer reach")
+    p.add_argument("--since", required=True, metavar="YYYY-MM-DD",
+                   help="the oldest publication date to consider")
+    p.add_argument("--until", required=True, metavar="YYYY-MM-DD",
+                   help="the newest publication date to consider")
+    p.add_argument("--feed", action="append", default=[], help="only this feed id")
+    p.add_argument("--dry-run", action="store_true",
+                   help="screen without recording the window or writing a queue file")
+    p.add_argument("--all", action="store_true", dest="queue_all",
+                   help="queue every new item, screening nothing out")
+    p.add_argument("--max-pages", type=int, default=400,
+                   help="guard on the paged and bluesky walks (default 400)")
+    p.add_argument("--force", action="store_true",
+                   help="allow a window wider than a month, a window already "
+                        "recorded, and a run while a backfill queue is waiting")
+
     sub.add_parser("status", help="what each cursor knows")
 
     p = sub.add_parser("screen", help="explain the screen's verdict on a headline")
@@ -876,6 +1413,9 @@ def main() -> int:
     if args.command == "poll":
         return poll(args.feed, args.backfill_days, args.dry_run,
                     args.queue_all, args.pages)
+    if args.command == "backfill":
+        return backfill(args.feed, args.since, args.until, args.dry_run,
+                        args.queue_all, args.max_pages, args.force)
     if args.command == "status":
         return status()
     if args.command == "screen":
