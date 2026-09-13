@@ -11,12 +11,14 @@ Go there for a section; don't read it whole.
 
 ## Ground rules
 
-1. **`data.json` is the single source of truth; `index.html` is generated.**
-   Every fact and every sentence of an address page lives in `data.json` (prose
-   in its `narrative` field); there is no `index.md`. Never edit `index.html` —
-   regenerate it, in the same commit. Hub pages are the exception: no
-   `data.json`, prose in their `index.md`, list generated from each child's
-   `hook`.
+1. **`data.json` is the single source of truth; `index.html` is generated and
+   never committed.** Every fact and every sentence of an address page lives
+   in `data.json` (prose in its `narrative` field); there is no `index.md`.
+   Never edit `index.html` — regenerate it. The HTML is gitignored and
+   GitHub Actions builds it on deploy, so rendering a page leaves nothing in
+   `git status`; that is the design, not a failure. Hub pages are the
+   exception: no `data.json`, prose in their `index.md`, list generated from
+   each child's `hook`.
 2. **Never state a fact in two files.** To change a fact you edit one file.
 3. **Every fact needs a source** — an entry in `data.json`'s `sources` array,
    and for prose, a source in the page footer. Never invent, estimate, or
@@ -27,16 +29,16 @@ Go there for a section; don't read it whole.
    can't provide, and cite the URL. Archives, books, newspapers and newsletters
    are cataloged separately in [research/SOURCES.md](research/SOURCES.md),
    under the same `id` a page cites.
-5. **Scope discipline.** Touch only the pages your task concerns, plus hub
-   pages and the sitemap (`sitemap.xml` and `sitemaps/`, both generated) when
-   adding pages. Never restructure shared styling, tooling, or workflows unless
-   a human explicitly asks.
-6. **No new tooling.** No frameworks, build systems, package manifests, or
-   dependencies. The stack is files, one stylesheet, one dependency-free
-   enhancement script (`shared/site.js`), and seven stdlib-only Python scripts
-   (`seed_pages.py`, `validate.py`, `build_sitemap.py`, `build_map_index.py`,
-   `build_link_index.py`, `build_corpus_index.py`, `build_stats.py`). Every
-   page must render completely from its HTML alone.
+5. **Scope discipline.** Touch only the pages your task concerns, plus the
+   hub `index.md` files when adding pages. Never restructure shared styling,
+   tooling, or workflows unless a human explicitly asks.
+6. **No new tooling.** No frameworks, no package manifests, no dependencies.
+   The stack is files, one stylesheet, one dependency-free enhancement script
+   (`shared/site.js`), and eight stdlib-only Python scripts: `build_site.py`,
+   which is the build, calling `seed_pages.py`, `build_link_index.py`,
+   `build_map_index.py`, `build_sitemap.py`, `build_corpus_index.py` and
+   `build_stats.py` in order, plus `validate.py`, which checks the result.
+   Every page must render completely from its HTML alone.
 7. **Seed pages with the script, not by hand.** Hand-writing HTML for a page
    whose every fact comes from an API is a waste; spend the effort on the pages
    with a story worth researching.
@@ -80,18 +82,25 @@ These pages describe **buildings, not the people in them.**
 
 ```
 san-francisco/                        city
+  index.html                          hand-authored, committed
   castro/                             neighborhood
+    index.md / index.html             both hand-authored and committed: the
+                                      generator patches the street list into
+                                      the page, it does not write the page
     castro-street/                    street  (official name, lowercased,
-      index.md / index.html            street type spelled out: "19th-street",
+      index.md                         street type spelled out: "19th-street",
       4127/                            "collingwood-street")
         data.json                     structured facts + prose + sources
-        index.html                    generated page
         assets/                       openly licensed media only (optional)
   historic-districts/                 the one page type off the tree
-    index.md / index.html             the index of districts
     liberty-hill/                     one historic district
-      index.md / index.html
+      index.md
 ```
+
+Every directory here also holds an `index.html` after a build. Except the two
+marked above, none of them are in the repository — see [REFERENCE.md → The
+site is built, not
+committed](REFERENCE.md#the-site-is-built-not-committed).
 
 - **One page per building — which means one page per parcel, not per street
   number.** Units are documented within their building's page. A parcel
@@ -124,11 +133,18 @@ python3 scripts/seed_pages.py render san-francisco/castro     # a whole neighbor
 ```
 
 `render` is idempotent, so it is always safe to run on a wider path than you
-touched; it holds back the pages in `scripts/render-backlog.txt` and names
-them. A page needing hand-maintained HTML sets `"rendered": false` — treat that
-as close to never. Both, and why the HTML is generated at all, are in
+touched. A page needing hand-maintained HTML sets `"rendered": false` — treat
+that as close to never. That, and why the HTML is generated at all, are in
 [REFERENCE.md → Why `index.html` is a build
 artifact](REFERENCE.md#why-indexhtml-is-a-build-artifact).
+
+**The rendered HTML is not committed.** It is gitignored; `scripts/build_site.py`
+rebuilds the whole site from the tracked sources and GitHub Actions runs it on
+every push to `main`. So `render` leaves nothing in `git status` — run it
+anyway, because `validate.py` checks the page on disk, and because it is how
+you see what you wrote. [REFERENCE.md → The site is built, not
+committed](REFERENCE.md#the-site-is-built-not-committed) has the full list of
+what is derived and what is source.
 
 ### Editing a page that exists
 
@@ -148,21 +164,21 @@ refresh of stale data:
 5. If the page's hub description should change, edit its `hook`, then
    `python3 scripts/seed_pages.py hubs --city <city> --area <area>`. That keeps
    each hub's hand-written intro and regenerates only the list.
-6. If pages were added or removed — or a page's `historic_district` changed —
-   run `seed_pages.py districts`, `build_sitemap.py`, `build_map_index.py`,
-   `build_link_index.py` and `build_corpus_index.py`. All five are derived
-   indexes and `validate.py` fails until each is current. `build_stats.py` is
-   a sixth derived index — the dashboard at `/stats/` — and the one exception
-   to that rule: four of its numbers are ages in days, so it goes stale by the
-   clock and `validate.py` deliberately never fails on it. Run it anyway; it
-   counts the tree in seconds and costs nothing.
+6. Run `python3 scripts/build_site.py`. It is every generator in the one
+   order that works — hubs, districts, link index, render, map index,
+   sitemap, corpus index, stats — and takes about a minute, so run it whether
+   or not you think you needed to. Nearly everything it writes is gitignored;
+   what it can leave in `git status` is `corpus.jsonl` and a hub `index.md`,
+   and those you commit.
 7. **Put the page on the homepage if it is interesting** — see
    [REFERENCE.md → The featured grid](REFERENCE.md#the-featured-grid).
 8. Run `python3 scripts/validate.py` and fix everything it flags.
 
 Never worth the effort: previewing the Street View embed, re-querying an API
 the seeder already cached, serving the site to look at a generated page.
-[REFERENCE.md](REFERENCE.md#dont-burn-effort-on-these) says why.
+[REFERENCE.md](REFERENCE.md#dont-burn-effort-on-these) says why. (A human
+looking at a design change is a different matter, and that is what
+`python3 scripts/build_site.py --serve` is for.)
 
 ## The two source modules
 
@@ -194,11 +210,12 @@ Three of their rules bind you even when you are only editing a page:
 `/stats/` is what this repository holds, counted: pages,
 citations, what each pipeline has taken in and published, and how many days it
 has been since the news run, the last news item, the last research batch and
-the last commit. It is generated by `scripts/build_stats.py`, and that is the
-whole point of it — **never work out a number for that page by hand.** A stat
-worth showing is a stat worth counting in the script, so add a counter there
-and re-run it. The page is stamped with the date it was built and reads
-against that date alone.
+the last commit. It is generated by `scripts/build_stats.py` — the last step of
+`build_site.py`, and so rebuilt on every deploy — and that is the whole point
+of it: **never work out a number for that page by hand.** A stat worth showing
+is a stat worth counting in the script, so add a counter there and re-run it.
+The page is stamped with the date it was built and reads against that date
+alone.
 
 ## Merchants
 

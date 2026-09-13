@@ -1,4 +1,4 @@
-# Ninth Avenue
+# 9th Avenue
 
 The parcels on Ninth Avenue documented here so far, from the city's address, assessor and permit records.
 

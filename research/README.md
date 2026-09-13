@@ -99,6 +99,5 @@ Agents working in Claude Code have a `/research` skill
 above, not a substitute for them.
 
 Site-side commands a run needs when it publishes (`seed_pages.py seed-list`,
-`seed_pages.py districts`, `build_sitemap.py`, `build_map_index.py`,
-`build_link_index.py`, `build_corpus_index.py`, `validate.py`) are documented
-in the root [README.md](../README.md) and [AGENTS.md](../AGENTS.md).
+then `build_site.py` and `validate.py`) are documented in the root
+[README.md](../README.md) and [AGENTS.md](../AGENTS.md).

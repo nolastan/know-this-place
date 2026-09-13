@@ -1,0 +1,67 @@
+# Build the site and publish it to GitHub Pages.
+#
+# The repository holds the sources — every `data.json`, every hub `index.md`,
+# the stylesheet and the one enhancement script. It does not hold the site:
+# 17,600 `index.html` files, `sitemap.xml`, `sitemaps/`,
+# `shared/addresses.geojson`, `shared/nearby.json` and `/stats/` are all
+# derived, and they are built here instead of being committed. Merging to
+# `main` is still the deploy; this is what the deploy now runs.
+#
+# Pages must be set to "GitHub Actions" as its source (Settings → Pages →
+# Build and deployment). On the legacy "deploy from a branch" setting this
+# workflow's artifact is built and then ignored, and the branch — which no
+# longer contains a single page — is what gets served.
+name: deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deploy at a time, and never cancel one in flight: a half-published site
+# is worse than a slightly stale one.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      # Full history, no blobs: `scripts/build_stats.py` counts commits for
+      # the dashboard and blanks four tiles rather than guess from a shallow
+      # clone, but it never reads a file out of history — so the commit graph
+      # is worth fetching and the old blobs are not.
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          filter: blob:none
+
+      - name: Build the site
+        run: python3 scripts/build_site.py
+
+      # After the build, not before: with the HTML uncommitted there is
+      # nothing for the page contract to check until it exists.
+      - name: Check the page contract
+        run: python3 scripts/validate.py
+
+      # What gets served is the working tree minus `.git` — the same set the
+      # branch deploy served, which is what keeps this migration boring.
+      - name: Stage the site
+        run: rsync -a --exclude='.git/' --exclude='_site/' ./ _site/
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - id: deploy
+        uses: actions/deploy-pages@v4

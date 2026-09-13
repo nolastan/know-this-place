@@ -1,4 +1,4 @@
-# 12Th Street
+# 12th Street
 
 Every residential parcel on 12th Street that the city's address, assessor and permit records describe.
 

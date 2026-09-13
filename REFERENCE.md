@@ -337,11 +337,7 @@ at a time:
 python3 scripts/seed_pages.py plan --neighborhood "Castro/Upper Market"
 python3 scripts/seed_pages.py seed --neighborhood "Castro/Upper Market" \
                                    --city san-francisco --area castro
-python3 scripts/seed_pages.py districts
-python3 scripts/build_sitemap.py
-python3 scripts/build_map_index.py
-python3 scripts/build_link_index.py
-python3 scripts/build_corpus_index.py
+python3 scripts/build_site.py
 python3 scripts/validate.py
 ```
 
@@ -426,6 +422,95 @@ change to `seed_pages.py`, which is a human's call under ground rule 6.
 
 ---
 
+## The site is built, not committed
+
+The repository holds the sources. It does not hold the site. Running
+`python3 scripts/build_site.py` turns one into the other in about a minute,
+GitHub Actions runs it on every push to `main`
+(`.github/workflows/deploy.yml`), and `actions/deploy-pages` publishes the
+result. Merging to `main` is still the deploy; what changed is that the deploy
+now has a build in it.
+
+**Source — committed, and the only thing you edit:**
+
+| | |
+|---|---|
+| `san-francisco/**/<number>/data.json` | every fact and every sentence of an address page |
+| `san-francisco/**/index.md` | a hub's lead paragraph and any hand-written section |
+| `index.html` at the repo root | the homepage, hand-authored |
+| `san-francisco/index.html` | the city index, hand-authored — no generator has ever touched it |
+| `san-francisco/<neighborhood>/index.html` | 42 of them. A human's prose; `hubs` patches the street list into the page rather than writing it |
+| two street hubs under `corbett-heights/` | see below |
+| `shared/`, `scripts/`, `research/`, `news/`, `merchants/`, `design/` | the stylesheet, the script, the tools, the modules |
+| `corpus.jsonl` | derived, but committed on purpose — see below |
+
+**Derived — gitignored, rebuilt every deploy:**
+
+| | |
+|---|---|
+| `san-francisco/*/*/*/index.html` | 16,287 address pages, 235 MB |
+| `san-francisco/*/*/index.html` | 1,298 street hubs and 255 historic-district hubs |
+| `san-francisco/historic-districts/index.html` | the district index, written whole by `districts` |
+| `sitemap.xml`, `sitemaps/` | the sitemap index and its 44 children |
+| `shared/addresses.geojson` | the homepage map's dots |
+| `shared/nearby.json` | the lateral links between pages |
+| `stats/index.html` | the dashboard at `/stats/` |
+
+The line between the two is not depth, it is whether a generator can write the
+file from nothing. A street hub and an address page it can. A neighborhood hub
+it cannot: `write_neighborhood_hub` finds the `<h2>Streets</h2>` list and
+replaces it, leaving the lead, the naming explanation and the closing note
+alone — so the page has to exist for the generator to run at all, and it is
+source.
+
+Untracking the rest took the repository from 35,688 tracked files to 18,056,
+and from 397 MB of tracked bytes to 152 MB. That is where the `grep` and
+`glob` costs were: a search across the corpus no longer walks a second, larger
+copy of every page it has already read in `data.json`.
+
+`corpus.jsonl` is the deliberate exception. It is derived like the rest, but
+its entire purpose is to answer a corpus-wide question *without* a build or a
+walk — so it stays committed, and the check that it is current is
+`git diff --exit-code` in `.github/workflows/validate.yml`.
+
+### What it costs
+
+"The committed bytes are the served bytes" was a real property and it is gone.
+A clone is no longer the site; a bad deploy is no longer diffable. What
+replaces it is that the build is one stdlib script anyone can run, and that
+CI runs the same script on every pull request — so the deployed site is a
+function of the repository, checked on the way in rather than inspected after
+the fact.
+
+### The two hubs that stay committed
+
+`seed_pages.py hubs` refuses to rebuild a street hub that has grown a
+hand-written section it doesn't know how to preserve, and names it on every
+run. Two have: `corbett-heights/danvers-street` and
+`corbett-heights/mars-street`. Their `index.html` is the only copy of that
+prose, so both are exempted by name in `.gitignore` and stay committed.
+
+A third one would otherwise vanish from the site silently — the build would
+skip it, nothing would be committed, and no diff would show it. `validate.py`
+has a build-completeness check for exactly that: every address directory with
+a `data.json`, and every hub directory with an `index.md`, must have an
+`index.html` after a build. If it fires, either teach the generator the
+section or commit the HTML and exempt it.
+
+### Looking at it
+
+```bash
+python3 scripts/build_site.py --serve     # build, then serve on :8517
+python3 scripts/build_site.py --no-build --serve   # serve what's already built
+```
+
+Port 8517 and no other: the Mapbox token and the Google Maps embed key are
+URL-restricted to `knowthis.place` and `http://localhost:8517`, so the maps
+render there and nowhere else (shared/AGENTS.md). If the port is busy it is
+usually a stale `http.server` rooted in another worktree.
+
+---
+
 ## The featured grid
 
 The `.place-cards` grid in the root `index.html` holds six featured addresses.
@@ -490,11 +575,13 @@ jq -c 'select(.sources | any(test("^sf-|-context-statement$|^central-soma-survey
 jq -c 'select(.earliest and (.earliest | tonumber) < 1900)' corpus.jsonl
 ```
 
-Regenerated by `scripts/build_corpus_index.py`, which every other derived
-index is rebuilt alongside — see "Page lifecycle" in [AGENTS.md](AGENTS.md).
-It is a derived index like the sitemap and the map: nothing lives here that
-isn't in a `data.json` already, and `validate.py` fails if a page is missing
-from it or an entry outlives its page.
+Regenerated by `scripts/build_corpus_index.py`, the seventh step of
+`scripts/build_site.py`. It is a derived index like the sitemap and the map —
+nothing lives here that isn't in a `data.json` already, and `validate.py`
+fails if a page is missing from it or an entry outlives its page — but it is
+the one derived file that stays **committed**, because a corpus-wide question
+should not cost a build. Commit it whenever a build moves it; CI checks that
+you did.
 
 ---
 

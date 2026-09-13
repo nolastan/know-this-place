@@ -162,8 +162,8 @@ to the production domain, so it fails from localhost, from any preview host,
 and from `curl` — by design. There is no local check that can pass. The map is
 the one exception, and only from one place: `mapbox_token` is URL-restricted to
 `knowthis.place` *and* `http://localhost:8517`, so the locator map does render
-for a human previewing with `python3 -m http.server 8517`. Any other port, any
-other host, and `curl` all fail the restriction and prove nothing.
+for a human previewing with `python3 scripts/build_site.py --serve`. Any other
+port, any other host, and `curl` all fail the restriction and prove nothing.
 
 `site.js` also loads **analytics** (Fathom) on every page, gated on
 `fathom_site_id` and on the page being served from the production host. It is

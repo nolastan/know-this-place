@@ -511,8 +511,37 @@ def check_narrative(data_path: Path, data: dict) -> None:
                     err(data_path, f'narrative.sections[{i}] needs "heading" and "body"')
 
 
+def check_build_is_complete(content: Path) -> None:
+    """Every source that should have produced a page, produced one.
+
+    The HTML is not committed, so a page that fails to build does not show up
+    as a diff — it shows up as a hole in the deploy, and nothing else here
+    would notice: every other check walks the `index.html` files that exist.
+    Two sources say a page is owed. An address directory's `data.json` is one.
+    A hub's `index.md` is the other, and it is the one that catches the real
+    failure mode: `seed_pages.py hubs` refuses to rebuild a hub that has grown
+    a hand-written section it doesn't know how to preserve, so a hub like that
+    needs its `index.html` committed alongside the exemption — see
+    `.gitignore`. Without this check, adding a section to a hub would quietly
+    delete it from the site.
+    """
+    if not content.exists():
+        return
+    owed = [f.parent for f in sorted(content.rglob("data.json"))
+            if ADDRESS_DIR.match(f.parent.name)]
+    owed += [f.parent for f in sorted(content.rglob("index.md"))]
+    for page_dir in owed:
+        if not (page_dir / "index.html").exists():
+            err(page_dir, "no index.html — the build produced no page here. "
+                          "Run python3 scripts/build_site.py; if the build "
+                          "skips this hub because it carries a hand-written "
+                          "section, its index.html has to be committed and "
+                          "exempted in .gitignore")
+
+
 def main() -> int:
     content = ROOT / "san-francisco"
+    check_build_is_complete(content)
     html_pages = [ROOT / "index.html"] if (ROOT / "index.html").exists() else []
     html_pages += sorted(content.rglob("index.html")) if content.exists() else []
 

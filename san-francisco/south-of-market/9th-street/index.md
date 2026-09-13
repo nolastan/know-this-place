@@ -1,4 +1,4 @@
-# Ninth Street
+# 9th Street
 
 The residential parcels on Ninth Street documented here so far, from the city's address, assessor and permit records.
 

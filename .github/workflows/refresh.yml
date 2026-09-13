@@ -82,15 +82,11 @@ jobs:
 
                This adds pages that don't exist and touches nothing that does.
                The Castro is "Castro/Upper Market" / san-francisco / castro.
-            4. Run `python3 scripts/seed_pages.py districts`,
-               `python3 scripts/build_sitemap.py`,
-               `python3 scripts/build_map_index.py`,
-               `python3 scripts/build_link_index.py`,
-               `python3 scripts/build_corpus_index.py`,
-               `python3 scripts/build_stats.py` and
-               `python3 scripts/validate.py`. The stats one rebuilds the
-               dashboard at /stats/ and takes a few seconds; it counts the
-               tree itself, so never work any of its numbers out by hand.
+            4. Run `python3 scripts/build_site.py`, then
+               `python3 scripts/validate.py`. The build runs every derived
+               index and the whole render in about a minute; the site itself
+               is not committed, so the only thing it leaves in `git status`
+               is `corpus.jsonl` and any hub `index.md` that actually moved.
             5. Read `git diff` and confirm each change is real data movement.
             6. If any page changed: create branch refresh/<today's date>,
                commit, push, and open a single PR listing every page updated

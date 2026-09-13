@@ -375,25 +375,16 @@ timeline — stated plainly and left unadjudicated.
 
 ```bash
 python3 scripts/seed_pages.py seed-list --manifest research/manifests/<file>.json
-python3 scripts/seed_pages.py districts
-python3 scripts/build_sitemap.py
-python3 scripts/build_map_index.py
-python3 scripts/build_link_index.py
-python3 scripts/build_corpus_index.py
+python3 scripts/build_site.py
 python3 scripts/validate.py
 ```
 
-**`validate.py` will now fail on pages the run never touched, and that is
-expected.** Each page carries a *Same block* list of its neighbours, so a new
-page makes every nearby page's `index.html` stale by one line. Twelve new pages
-left 67 such failures in one run. Feed the paths `validate.py` names straight
-back to `render`, and read one diff to confirm the change is only the neighbour
-list:
-
-```bash
-python3 scripts/validate.py 2>&1 | grep "does not match" | sed 's/.*render //' | sort -u > /tmp/stale.txt
-cat /tmp/stale.txt | xargs -n 60 python3 scripts/seed_pages.py render
-```
+**A new page stales its neighbours, and `build_site.py` is what fixes that.**
+Each page carries a *Same block* list of the buildings around it, so twelve new
+pages once left 67 existing pages a line out of date — on streets the run never
+touched. The build rebuilds `shared/nearby.json` and then re-renders the whole
+city, in that order, so the staleness never reaches a commit. Read the diff of
+one displaced neighbour to confirm the only change is its Nearby list.
 
 The seeder only creates pages that don't exist, and it knows nothing about the
 source — the facts still have to be added to those pages afterwards. Seeding is

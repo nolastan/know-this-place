@@ -1,4 +1,4 @@
-# 4th Street
+# Fourth Street
 
 The parcels on Fourth Street documented here so far, from the city's address, assessor and permit records.
 
