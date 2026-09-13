@@ -2143,6 +2143,17 @@ def residents_panel_html(rec: dict, indent: str) -> str:
 # Momence referral is per host, so each studio is its own source id and its link
 # opens that studio's own sign-up, which the button already says.
 #
+# `offer` and `note` are the only prose on an address page a reader takes as
+# ours rather than the city's, and they are read by someone deciding whether to
+# click. So they are written short and plain, and every row here is the pattern:
+# `offer` is a verb and an amount ("Get $10 credit at Instacart", "Get a free
+# month at FITNESS SF"); `note` is "Referral link." or "Referral code." and then
+# at most two short imperative sentences saying what the reader does ("Sign up
+# and then search for this hotel."). No em-dash asides, no clause explaining why
+# the programme behaves as it does, no sentence whose subject is the link. What
+# a row needs explained goes in merchants/AGENTS.md's source table, where the
+# next agent reads it, not onto fifty pages.
+#
 # `code` is the second shape an offer comes in. Some programmes — Insomnia
 # Cookies' — hand out a code rather than a link that carries it, and nothing
 # claims it for the reader: they type it into a field themselves. So the row
@@ -2210,15 +2221,13 @@ REFERRALS = {
     "instacart": {
         # The issue said "$10 / $10"; the referral link's own landing modal says
         # "You got $10 referral credit!" over "$10 off", which is the page the
-        # reader lands on, so the two agree. The link carries the code but only
-        # the home page honours it, so the row carries a `note` saying where to
-        # start rather than implying it opens the shop.
+        # reader lands on, so the two agree. The link opens the home page rather
+        # than the shop — only the home page honours the code — which is what
+        # the `note` is for, the way HotelTonight's is.
         "url": "https://www.instacart.com/?code=SROSENTHAL1F3D5",
         "offer": "Get $10 credit at Instacart",
         "app": "Instacart",
-        "note": ("Referral link. It opens Instacart's home page, where the "
-                 "credit is applied — a store's own page does not take it — "
-                 "so sign up there and then shop this store."),
+        "note": "Referral link. Sign up and then shop this store.",
     },
     "momence-folk-yoga": {
         "url": "https://momence.com/sign-up/member?hostId=35337&ref=f11db7945aa1e9ae718b1e8e6fa2c3f6",

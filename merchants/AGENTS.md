@@ -61,6 +61,22 @@ the source ids:
 - **A row carries a `note` only where its link does not reach the merchant.**
   Bites' link opens the app, so its note says so; a Momence link opens that
   studio's own sign-up, so it carries none.
+- **Write the `offer` and the `note` the way every other row is written.**
+  These two strings are the only prose on an address page a reader takes as
+  ours rather than the city’s, and they are read by someone deciding whether
+  to click, not by someone studying the programme. `offer` is a verb and an
+  amount: “Get $10 credit at Instacart”, “Get a free month at FITNESS SF”.
+  `note` is the label — “Referral link.” or “Referral code.” — and then at
+  most two short sentences in the imperative, saying what the reader does:
+  “Sign up and then search for this hotel.” That is the whole form. No
+  em-dash asides, no subordinate clause explaining why the programme behaves
+  as it does, no sentence whose subject is the link or the code. Where a row
+  seems to need explaining, the explanation goes in the source table above,
+  where the next agent will read it, and not onto fifty pages. Instacart’s
+  note was first written “It opens Instacart’s home page, where the credit is
+  applied — a store’s own page does not take it — so sign up there and then
+  shop this store”, which spends twenty-seven words saying what “Sign up and
+  then shop this store” says in seven.
 - **The offer's terms come from the programme's own page, not the ticket.**
   Open the credential and read what it says the reader gets. Issue #275 said
   "Give $25 / Get $25"; the invite page it linked says up to $50 back on a
