@@ -815,7 +815,24 @@ _UNIT_NUM = r"\d+(?:\s*/\s*\d+)?[a-z]?(?:\s+\d+\s*/\s*\d+)?\b"
 #     ambiguity is gone, so "unit a & b/remove kitchen" keeps its "b".
 _UNIT_LETTER = r"(?<![a-z])[a-h]\b(?!/)"
 _UNIT_LETTER_MORE = r"(?<![a-z])[a-h]\b"
-_UNIT_DESIG = r"(?:" + _UNIT_NUM + r"|" + _UNIT_LETTER_MORE + r")"
+# DBI also numbers a unit within a lettered building or wing ("unit#c3",
+# "unit#c4", "unit m305", "apt# m2-203"). A letter glued straight to its own
+# digits carries none of _UNIT_LETTER's risk — nothing else writes a bare
+# letter immediately against a number — so this form isn't confined to a-h or
+# to the separator rules the letter-only run needs. Two shapes glued right
+# after it are absorbed rather than left to leak: a single hyphenated number
+# ("m2-203" is one designator, not "m2" and a stray "203"), and a further
+# slash-separated run after that hyphen ("m2-704/308/303", three units under
+# the same wing prefix — undercounted as one below, but nothing is left
+# unredacted).
+# It still has two collisions of its own, both excluded by what immediately
+# follows: an occupancy classification ("2 units r3 structure") and a
+# telecom-jargon count ("rrus-12 units w3(n) a2 modules", "w/3 (n)ew") — the
+# only two shapes among every keyword-adjacent letter+digit pair in the
+# corpus that name something other than a unit.
+_UNIT_ALNUM = (r"[a-z]\d+\b(?!\s*(?:structure|occupancy)\b)(?!\s*[(][ne][)])"
+               r"(?:-\d+\b)?(?:/\d+\b)*")
+_UNIT_DESIG = r"(?:" + _UNIT_NUM + r"|" + _UNIT_ALNUM + r"|" + _UNIT_LETTER_MORE + r")"
 # DBI doubles its separators too ("units b,c,& e"), so the run absorbs a pair.
 _SEP = r"\s*(?:,\s*&|,\s*and|,|&|and)\s*"
 # A run of them after the keyword. The trailing \b matters: without it,
@@ -824,9 +841,16 @@ _SEP = r"\s*(?:,\s*&|,\s*and|,|&|and)\s*"
 # DBI also writes lists with the separators missing ("units 2, 3 5 & 6",
 # "unit 2308 232"), so a bare space continues a numbered run — except before
 # "." or "/", which mark a numbered list item ("unit 502a 1. rehabilitate") or
-# a floor ("unit #2 3/f only") rather than another unit.
-_NUM_RUN = (_UNIT_NUM + r"(?:" + _SEP + r"#?\s*" + _UNIT_NUM +
-            r"|\s+#?" + _UNIT_NUM + r"(?![./]))*")
+# a floor ("unit #2 3/f only") rather than another unit. A lettered-numbered
+# designator joins the same run — it carries the same list and separator
+# behavior as a plain number, just not the ambiguity that keeps a bare letter
+# out of it — and DBI's building-plus-unit lists mix the two freely enough
+# ("units a1, c, d, and f") that a bare letter may join this run too, the same
+# way it joins the lettered run below.
+_UNIT_TOKEN = r"(?:" + _UNIT_NUM + r"|" + _UNIT_ALNUM + r")"
+_NUM_RUN = (_UNIT_TOKEN + r"(?:" + _SEP + r"#?\s*" + _UNIT_TOKEN +
+            r"|" + _SEP + r"#?\s*" + _UNIT_LETTER_MORE +
+            r"|\s+#?" + _UNIT_TOKEN + r"(?![./]))*")
 # A lettered run is stricter on both counts. It needs a separator throughout —
 # "unit a b" appears nowhere, while "unit a only" appears everywhere — and a
 # number may join it only wearing a "#" ("apts a,b,c,d and #1087"), because
@@ -837,11 +861,31 @@ _LETTER_RUN = (_UNIT_LETTER + r"(?:" + _SEP + r"#?\s*" + _UNIT_LETTER_MORE +
 # DBI also punctuates the "#" itself ("unit #:233", "apt#: 3"), and the colon
 # is allowed only there — never straight after the keyword, where "one unit: 1.
 # rehabilitate ..." would read its list marker as a designator.
-UNIT_REF = re.compile(
-    r"\b(?:apt|apartment|unit)s?\.?\s*(?:#\s*:?\s*)?(?:" + _NUM_RUN + r"|" + _LETTER_RUN + r")",
-    re.I)
+#
+# "apt" is already an abbreviation, so a period after it is always part of the
+# keyword ("apt.3"). "apartment" and "unit" are spelled out, so a period there
+# is a sentence's own, unless it is immediately followed by "#" ("unit.#3") —
+# without that guard the rewrite isn't idempotent: "unit 5" becomes "one
+# unit", and a second pass over "... one unit. 1 (e) bedroom ..." would read
+# the outline number that follows the full stop as a second designator and
+# mangle it into "one one unit ..." (#250).
 COUNT_WORD = {1: "one", 2: "two", 3: "three", 4: "four", 5: "five",
               6: "six", 7: "seven", 8: "eight", 9: "nine", 10: "ten"}
+# The keyword itself is never preceded by one of this function's own count
+# words either. That combination is never original DBI text — it is this
+# same rewrite's own output ("one unit", "two units"), and re-reading it as a
+# fresh designator is how "legalized one unit per #2017-0203-8639, one unit"
+# (15th Street) became "legalized one one unit ..." and "remodel of five
+# units" (Sutter Street) became "remodel of five five units" — both already
+# committed, both #250. `re` has no variable-width lookbehind, so this is one
+# fixed-width lookbehind per word rather than a single alternation.
+_NOT_OWN_COUNT = "".join(
+    rf"(?<!\b{w}\s)" for w in COUNT_WORD.values())
+UNIT_REF = re.compile(
+    _NOT_OWN_COUNT +
+    r"\b(?:apts?\.?|(?:apartment|unit)s?(?:\.(?=\s*#))?)"
+    r"\s*(?:#\s*:?\s*)?(?:" + _NUM_RUN + r"|" + _LETTER_RUN + r")",
+    re.I)
 
 
 def _generic_unit(m) -> str:
