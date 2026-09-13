@@ -66,6 +66,40 @@ UA = {"User-Agent": "know-this-place-seeder/1.0"}
 # `validate.py` imports this rather than keeping a second copy.
 ADDRESS_DIR = re.compile(r"^\d+[a-z]?$")
 
+# Every top-level key an address page's `data.json` may carry. `validate.py`
+# rejects anything outside this set — issue #148's second half, after the
+# first migrated the handful of competing spellings the corpus had
+# accumulated (`aliases`/`also_known_as` for `also_addressed`, `building_history`
+# for `building` + `historical_record`, `historic_districts` for
+# `historic_district` + `also_in_districts`, `open_questions` for `unknowns`,
+# `permits_note` for `permit_summary.note`, `planning_name` for `survey_name`).
+# A key that renders through a block in shared/BLOCKS.md belongs here; a
+# genuinely one-off fact that has no other home (`address_note`,
+# `survey_name_note`, `additional_parcels`) belongs here too, rather than
+# inventing a synonym of something already listed. Nothing else does — a typo
+# or a new synonym should fail loudly here rather than silently render as
+# nothing, which is how the corpus accumulated the spellings above.
+ADDRESS_TOP_LEVEL_KEYS = frozenset({
+    # Identity and location, on every page.
+    "address", "path", "block", "lot", "apn", "eas_baseid", "coordinates",
+    "parcel", "assessment", "historic_status", "sources",
+    # The record.
+    "permits", "permit_summary", "permits_omitted", "historical_record",
+    "historic_survey", "historic_district", "also_in_districts", "building",
+    "survey_name", "notable_residents", "narrative", "unknowns", "occupants",
+    "hook",
+    # Address and parcel shape a page needs only sometimes.
+    "address_range", "street_numbers_on_parcel", "also_addressed",
+    "additional_parcels",
+    # Rare, legitimate one-offs with no other home — not synonyms of
+    # anything above, so a migration would have nowhere to send them.
+    "address_note", "survey_name_note", "adjoining_public_stair",
+    "building_type", "sub_area", "city_landmark", "public_art",
+    "public_open_space",
+    # The `seed_pages.py render` opt-out (see `renders`).
+    "rendered",
+})
+
 # Site icons. `shared/icon.svg` is the source of truth for the mark; the raster
 # files are derived from it. Every page carries these, the way it carries the
 # shared stylesheet — `validate.py` enforces it.
@@ -1358,7 +1392,7 @@ def tags_html(rec: dict) -> str:
     # 1,795 seeded pages that have never shown one, and putting a tag on all
     # of them is a decision about the corpus, not a renderer gap. Flagged on
     # issue #145 for a human.
-    named = rec.get("survey_name") or rec.get("planning_name")
+    named = rec.get("survey_name")
     if named:
         out.append(("ic-pin", named))
     # No year built here: it is a dated fact, so it opens the timeline instead
@@ -1468,10 +1502,7 @@ def permit_items(rec: dict, indent: str) -> tuple:
     permits = rec.get("permits", [])
     # Pages written before `permit_summary` existed still carry their nominal
     # $1 street-space filings in `permits`; drop those here as before.
-    # `permits_note` is the same sentence under an older spelling, on the 18
-    # pages that were hand-written before the seeder had a key for it. One
-    # slot, either spelling — issue #148 settles which one survives.
-    note = (rec.get("permit_summary") or {}).get("note") or rec.get("permits_note")
+    note = (rec.get("permit_summary") or {}).get("note")
     shown, omitted, dropped = [], 0, {}
     for p in permits:
         cost = p.get("estimated_cost") or p.get("revised_cost") or 0
@@ -1592,16 +1623,16 @@ def built_item(rec: dict, indent: str) -> list:
     # year together, so an entry that merely shares the year ("Lot created by
     # subdividing the Cassin parcel", 1953) leaves the entry standing.
     #
-    # This reads every dated entry the rail carries, under both spellings:
-    # three of the 39 `building_history` events match, and 872 of the 8,032
-    # `historical_record` entries, across 863 pages. Seven of those 863 stand
-    # the entry down on a completion that is not this building's — the branch
-    # library further along Taraval, a garage next door at 1960 Washington, the
-    # neighbourhood platted out around the parcel — and on four of them no
-    # other same-year entry says the building went up. That is the price of one
-    # regex reading prose; the seven are listed on this change's PR, and the
-    # fix for them is a sentence in their `data.json`, not a narrower test
-    # here, which would only stand the entry down on fewer real completions.
+    # This reads every dated entry the rail carries: 872 of the 8,032
+    # `historical_record` entries, across 863 pages, match. Seven of those 863
+    # stand the entry down on a completion that is not this building's — the
+    # branch library further along Taraval, a garage next door at 1960
+    # Washington, the neighbourhood platted out around the parcel — and on
+    # four of them no other same-year entry says the building went up. That is
+    # the price of one regex reading prose; the seven are listed on this
+    # change's PR, and the fix for them is a sentence in their `data.json`,
+    # not a narrower test here, which would only stand the entry down on
+    # fewer real completions.
     if any(date_key(e.get("date"))[0] == int(year)
            and BUILT_EVENT.search(e.get("description") or "")
            for e in history_entries(rec)):
@@ -1680,9 +1711,9 @@ def timeline_html(rec: dict, indent: str) -> str:
     # 20 pages, and the old block printed it twice. One line makes the repeat
     # obvious, so drop it here rather than reconciling the two keys.
     said, seen = [], set()
-    # `open_questions` and `building_history.conflict` are `unknowns` under
-    # other spellings, on one page and five: a disagreement in the record,
-    # stated and left unadjudicated. Same slot, same line.
+    # `building.conflict` is `unknowns` under another spelling, on five pages:
+    # a disagreement in the record, stated and left unadjudicated. Same slot,
+    # same line.
     #
     # So are `parcel.note` and `assessment.note`, on 47 pages and 19: "the
     # assessor reports 0 stories for this parcel — a data gap, not a
@@ -1690,10 +1721,10 @@ def timeline_html(rec: dict, indent: str) -> str:
     # 2025". Each says how far to trust a figure the page prints, which is the
     # one thing this line is for, and no key read them.
     for t in [disclosure, *dating_conflicts(rec),
-              (rec.get("building_history") or {}).get("conflict"),
+              (rec.get("building") or {}).get("conflict"),
               (rec.get("parcel") or {}).get("note"),
               (rec.get("assessment") or {}).get("note"),
-              *(rec.get("unknowns") or []), *(rec.get("open_questions") or [])]:
+              *(rec.get("unknowns") or [])]:
         t = str(t).strip() if t else ""
         if t and t not in seen:
             seen.add(t)
@@ -1771,43 +1802,15 @@ def narrative_html(rec: dict, indent: str) -> tuple:
     return lead, "\n".join(out)
 
 
-def building_history_entries(rec: dict) -> list:
-    """`building_history.events` in `historical_record` shape.
-
-    Seventeen Corbett Heights pages record their dated history under
-    `building_history` — one source for the block, then a list of
-    `{date, event}` — where the rest of the corpus writes
-    `historical_record`'s `{date, description, source}`. It is the same kind
-    of fact in the same slot, so it renders through the same timeline block
-    rather than opening a second rail; issue #148 settles the spelling.
-
-    `approximate` is this key's way of writing the hedge `historical_record`
-    puts in the date string itself ("circa 1899"), so it becomes one. All
-    seven events carrying it give a bare year, which is the only form a "c."
-    prefix reads correctly on.
-    """
-    bh = rec.get("building_history") or {}
-    out = []
-    for e in bh.get("events") or []:
-        when = str(e.get("date") or "").strip()
-        if e.get("approximate") and re.fullmatch(r"\d{4}", when):
-            when = f"c. {when}"
-        out.append({"date": when,
-                    "description": e.get("event") or "",
-                    "source": e.get("source") or bh.get("source")})
-    return out
-
-
 def history_entries(rec: dict) -> list:
     """Every dated historical entry the page carries, in one list.
 
-    `historical_record` and `building_history` are the same fact in the same
-    slot under two spellings, and the timeline already reads both. Anything
-    else that has to reason about what the rail is *about* — whether a source
-    has already dated the building's completion, say — has to read both too,
-    or it answers for the seventeen Corbett Heights pages and no others.
+    Issue #148 migrated the seventeen Corbett Heights pages that used to carry
+    their dated history under `building_history.events` into `historical_record`
+    proper, so this is just an alias now — kept because callers read it for
+    what the rail is *about*, not for the key name.
     """
-    return (rec.get("historical_record") or []) + building_history_entries(rec)
+    return rec.get("historical_record") or []
 
 
 def historical_items(rec: dict, indent: str) -> list:
@@ -2123,9 +2126,9 @@ def public_art_html(rec: dict, indent: str) -> str:
 def with_note(value, note) -> str | None:
     """A spec row's value and the sentence qualifying it, in one row.
 
-    `building_history` records "an architect was engaged, not named" and "the
-    same contractor also built 100-102 Corbett Avenue" as `architect_note` and
-    `contractor_note` beside the field they qualify — sometimes instead of it,
+    `building` records "an architect was engaged, not named" and "the same
+    contractor also built 100-102 Corbett Avenue" as `architect_note` and
+    `builder_note` beside the field they qualify — sometimes instead of it,
     where the record names no one. Neither is a fact that earns a label of its
     own, and neither is a disagreement, so neither belongs on the line closing
     the timeline: they ride in the row they qualify, or become it.
@@ -2523,7 +2526,6 @@ def glance_panel_html(rec: dict, indent: str) -> str:
     p = rec.get("parcel", {})
     a = rec.get("assessment", {})
     b = rec.get("building") or {}
-    bh = rec.get("building_history") or {}
     rows = []
     # Researched identity: the name the building goes by, who designed it, who
     # built it. Single facts, so spec rows — never a paragraph each.
@@ -2536,28 +2538,24 @@ def glance_panel_html(rec: dict, indent: str) -> str:
     for icon, key, val in (("ic-home", "Known as", b.get("name")),
                            ("ic-home", "Formerly", b.get("former_name")),
                            ("ic-ruler", "Architect",
-                            with_note(b.get("architect") or bh.get("architect"),
-                                      bh.get("architect_note"))),
+                            with_note(b.get("architect"), b.get("architect_note"))),
                            # A named builder with no named architect is the
                            # normal case for a 19th-century workers' cottage —
                            # the carpenter who put it up is who the record has.
-                           # `building_history.contractor` is the same person
-                           # under the word the permit record uses.
                            ("ic-ruler", "Builder",
-                            with_note(b.get("builder") or bh.get("contractor"),
-                                      bh.get("contractor_note"))),
+                            with_note(b.get("builder"), b.get("builder_note"))),
                            ("ic-plan", "Developer", b.get("developer")),
                            ("ic-calendar", "Completed", completed),
-                           ("ic-calendar", "First owner", bh.get("first_owner")),
+                           ("ic-calendar", "First owner", b.get("first_owner")),
                            # A house that arrived on a lorry: where it stood
                            # before is identity, not a dated event — the move
                            # itself is already an entry on the rail.
-                           ("ic-pin", "Moved from", bh.get("relocated_from"))):
+                           ("ic-pin", "Moved from", b.get("relocated_from"))):
         if val:
             rows.append((icon, key, val))
-    # The cost the builder gave when the work was permitted. Two spellings,
-    # one figure; it is not the assessed value and never enters the chart.
-    build_cost = bh.get("estimated_cost_usd") or bh.get("build_cost_usd")
+    # The cost the builder gave when the work was permitted. Not the assessed
+    # value, and never enters the chart.
+    build_cost = b.get("cost_usd")
     if build_cost:
         rows.append(("ic-value", "Cost when built", f"${int(build_cost):,}"))
     ctype = CONSTRUCTION.get(p.get("construction_type_code"))
@@ -2570,13 +2568,7 @@ def glance_panel_html(rec: dict, indent: str) -> str:
         # strings, and a bare join dies on the first int.
         rows.append(("ic-home", "Street numbers",
                      ", ".join(str(n) for n in rec["street_numbers_on_parcel"])))
-    # Three spellings of one list: `also_addressed` is the seeder's,
-    # `aliases` and `also_known_as` are what four hand-written pages used
-    # before it existed. Every value is another address this parcel answers
-    # to, so they share the row rather than each earning a label.
-    also = list(rec.get("also_addressed") or []) + list(rec.get("aliases") or [])
-    if rec.get("also_known_as"):
-        also.append(rec["also_known_as"])
+    also = rec.get("also_addressed") or []
     if also:
         rows.append(("ic-pin", "Also addressed",
                      ", ".join(alias_display(x) for x in also)))
@@ -3374,28 +3366,20 @@ def district_of(rec: dict) -> dict:
     """The page's historic district, whichever shape it's recorded in.
 
     Generated pages put it at the top level; some earlier hand-authored pages
-    nest it under `historic_status.district`, and two put every district the
-    parcel stands in — the panel's and the overlaps both — in one
-    `historic_districts` list, whose first entry is the one the panel names.
+    nest it under `historic_status.district` instead. Two pages used to put
+    every district the parcel stands in — the panel's and the overlaps both —
+    in one `historic_districts` list; issue #148 split those into
+    `historic_district` (the panel's) and `also_in_districts` (the rest), so
+    a page's own district and its overlaps are always those two keys now.
     """
     return (rec.get("historic_district")
             or (rec.get("historic_status") or {}).get("district")
-            or next(iter(rec.get("historic_districts") or []), None)
             or {})
 
 
 def overlapping_districts(rec: dict) -> list:
-    """The districts this parcel stands in beyond the one the panel names.
-
-    `historic_districts` is one list of all of them, so its overlaps are
-    everything after the entry `district_of` took; `also_in_districts` is the
-    seeder's spelling and holds only the overlaps to begin with.
-    """
-    if rec.get("also_in_districts"):
-        return rec["also_in_districts"]
-    if rec.get("historic_district") or (rec.get("historic_status") or {}).get("district"):
-        return []
-    return (rec.get("historic_districts") or [])[1:]
+    """The districts this parcel stands in beyond the one the panel names."""
+    return rec.get("also_in_districts") or []
 
 
 def range_label(address_range) -> str:

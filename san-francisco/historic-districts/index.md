@@ -76,7 +76,7 @@ The historic districts San Francisco's surveys have drawn, and the buildings doc
 - [Northeast Waterfront Historic District](northeast-waterfront/) — An Article 10 city landmark district, significant [Unofficial] 1848–1960s; 17 buildings documented on 8 streets.
 - [Olsen's Queen Anne Cottages Historic District](olsen-s-queen-anne-cottages/) — Eligible for the California Register, significant 1893; 7 buildings documented on one street.
 - [Pacific Heights Historic District](pacific-heights/) — Eligible for the California Register, significant 1895–1930; 88 buildings documented on 12 streets.
-- [Panhandle Historic District](panhandle/) — Eligible for the California Register, significant 1870–1915; 26 buildings documented on 8 streets.
+- [Panhandle Historic District](panhandle/) — Eligible for the California Register, significant 1870–1915; 28 buildings documented on 8 streets.
 - [Picturesque Period Revival Tracts Historic District](picturesque-period-revival-tracts/) — Eligible for the California and National Registers, significant 1931–1938; 86 buildings documented on 8 streets.
 - [Pine-Sansome Conservation District](pine-sansome/) — An Article 11 conservation district; 8 buildings documented on 2 streets.
 - [Powell Street Shops Historic District](powell-street-shops/) — Eligible for the California Register, significant 1906–1924; 7 buildings documented on 2 streets.

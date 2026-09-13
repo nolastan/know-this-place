@@ -109,7 +109,7 @@ def count_pages(today):
             streets.add(parts[:2])
 
         s["permits"] += len(data.get("permits") or [])
-        record = data.get("historical_record") or data.get("building_history") or []
+        record = data.get("historical_record") or []
         s["records"] += len(record)
 
         # The `retrieved` date the refresh job reads is per-source; a page is

@@ -154,14 +154,17 @@ own.
   one item on the rail. Two items with the same date make a reader think the
   clock stuttered. Give each of those sources a `title` (the address it was
   filed under) so the links on the merged item can be told apart.
-- It replaced `site_history`, which said the same thing under a second name.
-  **Don't reintroduce a third:** a dated historical fact goes here.
-- It is *not* `building_history` (the Corbett Heights pages). That key is a
-  richer per-building object carrying scalars the flat list can't hold —
-  `architect`, `contractor`, `first_owner`, `build_cost_usd`, `relocated`,
-  `conflict` — alongside its own `events`. Leave it alone; if you find yourself
-  wanting those scalars on a `historical_record` page, that is a schema
-  decision for a human, not a new key.
+- It replaced `site_history`, which said the same thing under a second name,
+  and `building_history.events` (the Corbett Heights pages), migrated here by
+  issue #148. Don't reintroduce a third: a dated historical fact goes here.
+- **Scalars that aren't a dated fact go on `building`, not here.** An
+  architect, a builder, a first owner, what stood on the site before, what the
+  build cost, a moved building's former address, an unresolved conflict in the
+  record — `building.architect`/`architect_note`, `building.builder`/
+  `builder_note`, `building.first_owner`, `building.site_before`,
+  `building.cost_usd`, `building.relocated_from`, `building.conflict`. A dated
+  event belongs on the timeline; a standing fact about the building belongs on
+  `building`, whichever page it first shows up on.
 
 ### `occupants`
 
