@@ -202,14 +202,39 @@ main > .panel + .panel { margin-top: 1.25rem; }
 /* bottom margin matters: the last item drops its padding, so without it the
    timeline collides with whatever block follows (panels, a section, prose) */
 .vtl { position: relative; margin: 1.25rem 0 2rem; padding-left: 1.75rem; list-style: none; }
-.vtl::before { content: ""; position: absolute; left: 5px; top: 8px; bottom: 8px; width: 2px; background: var(--rule); }
+/* The rail and the nodes are one geometry, so read the next two rules
+   together. A node is 16px across — a 12px disc inside a 2px ring — sitting
+   at the timeline's own left edge, so its centre is 8px in and the 2px rail
+   has to land on 7px to run through it. The ring counts towards that width
+   because `*` never matched pseudo-elements: these boxes are content-box
+   unless they say so themselves, which is how the rail came to be measured
+   against the 12px disc alone and drawn 2px left of every node (#133).
+   `box-sizing` and the 16px spell the real width out, so the next reader can
+   derive the 7px rather than round it back down.
+
+   The rail is drawn per item, as the connector from this node to the next,
+   rather than as one line down the whole list. A single line can only be
+   trimmed against the list's own box, and the foot of that box is the foot of
+   the last item's description, not its node — so it always ran on past the
+   final circle. Drawn as a connector, both ends are exact and want no
+   trimming: 20px is the node's own underside (4px down, 16px tall) and -4px
+   is 4px past this item's box, which is precisely where the next item hangs
+   its node. Neither number moves with the text size, and the last item simply
+   has no connector to dangle.
+
+   Flush at both ends is deliberate: a node needs no clearance to read as one
+   line meeting one circle, and the 4px `--paper` halo that used to ring the
+   border only held the rail off. */
 .vtl-item { position: relative; padding-bottom: 1.5rem; }
 .vtl-item:last-child { padding-bottom: 0; }
 .vtl-item::before {
   content: ""; position: absolute; left: -1.75rem; top: 4px;
-  width: 12px; height: 12px; border-radius: 50%;
+  box-sizing: border-box; width: 16px; height: 16px; border-radius: 50%;
   background: var(--paper); border: 2px solid var(--accent);
-  box-shadow: 0 0 0 4px var(--paper);
+}
+.vtl-item:not(:last-child)::after {
+  content: ""; position: absolute; left: calc(-1.75rem + 7px); top: 20px; bottom: -4px;
+  width: 2px; background: var(--rule);
 }
 .vtl-item.is-muted::before { border-color: var(--muted); }
 .vtl-date { font-family: var(--sans); font-size: 0.8rem; font-weight: 700; color: var(--accent); letter-spacing: 0.02em; }
