@@ -603,9 +603,14 @@ neighbors' lists level, the way `build_link_index.py` catches
 
 The absence of `<br><span class="hook">` matters on a hub and not only as
 style. `validate.hub_html_items` reads a hub's generated list back out of
-exactly that pairing and `check_hub_sync` then demands the same item in the
-hub's `index.md`; keeping the nearby block off the pattern is what lets
-`index.md` stay a person's prose.
+exactly that pairing. On a neighborhood hub, where the street list is still
+kept in both files (a street's line can carry a hand-written override —
+[REFERENCE.md → Hub pages](../REFERENCE.md#hub-pages-and-their-two-hand-maintained-sections)),
+`check_hub_sync` would then demand the same item in `index.md`; keeping the
+nearby block off the pattern is what lets `index.md` stay a person's prose
+there. A street hub's own list no longer round-trips through `index.md` at all
+(#151), but the block stays off the pattern regardless — it's a fact about the
+neighborhood, not an entry a hub's list check has any reason to know about.
 
 ### Icons — `.ic .ic-NAME`
 `<span class="ic ic-calendar"></span>`; sized in `em`, colored by surrounding

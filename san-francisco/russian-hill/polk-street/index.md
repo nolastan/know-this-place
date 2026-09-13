@@ -2,11 +2,5 @@
 
 The parcels on Polk Street documented here so far, from the city's address, assessor and permit records.
 
-## Documented so far
-
-- [2330](2330/) — A 1926 theater in the San Francisco Neighborhood Movie Theater Historic District (Discontiguous), with stair work permitted in 2024.
-- [2354–2360](2354/) — A 1910 12-unit apartment building, with a kitchen and bathroom remodel permitted in 2025.
-- [2355](2355/) — A 1924 38-unit apartment building, with a kitchen and bathroom remodel permitted in 2020.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

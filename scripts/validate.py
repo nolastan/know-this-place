@@ -341,55 +341,60 @@ def street_hub_hook_overrides(dir_path: Path) -> dict:
 
 
 def check_hub_covers_children(dir_path: Path) -> None:
-    """Every page beneath a street hub must be listed in that hub's index.md.
+    """Every page beneath a street hub must be listed in that hub's index.html.
 
-    `check_hub_sync` is the same contract read the other way: it compares the
-    hub's two files against each other, which catches a list that drifted in
-    one of them but not a list that is stale in both. That is the case here —
-    a page seeded under a street after the hub was last built is in the
-    sitemap and reachable by URL, yet a reader browsing the street never sees
-    it. AGENTS.md's directory contract makes the hub the way in ("Hub pages
-    ... list and link what's beneath them. Keep them current when adding
-    pages"), so an unlisted page is a broken site, not a cosmetic gap — the
-    mirror of a hub link that points at a page which isn't there.
+    `check_hub_sync` is the same contract read the other way: it compares a
+    hub's list against a per-child override, which catches a list that
+    drifted from that override but not a list that is stale everywhere. That
+    is the case here — a page seeded under a street after the hub was last
+    built is in the sitemap and reachable by URL, yet a reader browsing the
+    street never sees it. AGENTS.md's directory contract makes the hub the way
+    in ("Hub pages ... list and link what's beneath them. Keep them current
+    when adding pages"), so an unlisted page is a broken site, not a cosmetic
+    gap — the mirror of a hub link that points at a page which isn't there.
 
     Only street hubs are checked: a directory with at least one data.json
     child, per `street_hub_hook_overrides`. A hub whose own index.md carries
     hand-written sections is one `write_street_hub` refuses to rebuild, but
     the requirement is the same either way — the list is then updated by hand.
+
+    The list lives only in index.html (#151: it's generated wholesale from
+    these same children on every rebuild, so index.md doesn't also carry it).
     """
-    md_path = dir_path / "index.md"
-    if not md_path.exists():
+    html_path = dir_path / "index.html"
+    if not html_path.exists():
         return
     children = sorted(d.name for d in dir_path.iterdir()
                       if d.is_dir() and (d / "data.json").exists())
     if not children:
         return  # a neighborhood or city hub; its children are hubs, not pages
-    listed = {href.rstrip("/") for href in hub_md_items(md_path.read_text(encoding="utf-8"))}
+    listed = {href.rstrip("/") for href in hub_html_items(html_path.read_text(encoding="utf-8"))}
     missing = [c for c in children if c not in listed]
     if missing:
-        err(md_path, f"{len(missing)} page(s) beneath this hub are not in its "
-                     f"list ({', '.join(missing)}) — a reader browsing the "
-                     f"street can't reach them; rebuild with "
-                     f"scripts/seed_pages.py hubs")
+        err(html_path, f"{len(missing)} page(s) beneath this hub are not in its "
+                       f"list ({', '.join(missing)}) — a reader browsing the "
+                       f"street can't reach them; rebuild with "
+                       f"scripts/seed_pages.py hubs")
 
 
 def check_hub_sync(dir_path: Path) -> None:
-    """A hub page's index.md and index.html must show the same list.
+    """A hub page's index.md and index.html must agree on hand-written content.
 
-    `write_street_hub` / `write_neighborhood_hub` generate both files from the
-    same data in one pass, so a fresh rebuild always agrees — divergence means
-    a hand edit landed in only one file. index.md is the source of truth
-    (AGENTS.md: a hub's "prose lives in its index.md"); the fix is always to
-    edit index.md and regenerate index.html from it (`seed_pages.py hubs`),
-    never the reverse.
+    A neighborhood hub keeps its street list in both files (`write_neighborhood_hub`
+    preserves a hand-written street hook by reading it back out of index.md), so
+    those two files must show the same list — divergence means a hand edit
+    landed in only one of them. index.md is the source of truth (AGENTS.md: a
+    hub's "prose lives in its index.md"); the fix is always to edit index.md and
+    regenerate index.html from it (`seed_pages.py hubs`), never the reverse.
 
-    A street hub's list has one deeper anchor beyond that: AGENTS.md also
-    says the list "is generated from those pages' data.json, each
-    contributing its own hook line", and a hand-written data.json["hook"]
-    "always wins over a generated one" (`seed_pages.hook_for`). So where a
-    child page has an explicit hook override, both files must match *that*,
-    not just each other — see `street_hub_hook_overrides`.
+    A street, historic-district or district-index hub carries no such list in
+    index.md at all (#151: `write_street_hub` / `write_district_hub` /
+    `write_districts_index` generate it wholesale from their children on every
+    rebuild, so it isn't duplicated into index.md). There index.md has nothing
+    to compare, but AGENTS.md's rule that a hand-written data.json["hook"]
+    "always wins over a generated one" (`seed_pages.hook_for`) still has to
+    hold, so index.html is checked against that override directly — see
+    `street_hub_hook_overrides`.
     """
     md_path, html_path = dir_path / "index.md", dir_path / "index.html"
     if not (md_path.exists() and html_path.exists()):
@@ -400,6 +405,19 @@ def check_hub_sync(dir_path: Path) -> None:
         return
 
     overrides = street_hub_hook_overrides(dir_path)
+
+    if not md_items:
+        # No list in index.md by design (see docstring) — just check the one
+        # thing that can still diverge: an explicit child override.
+        for slug, override in overrides.items():
+            html_hook = html_items.get(f"{slug}/")
+            if html_hook is not None and html_hook != override:
+                err(html_path, f"'{slug}' hook (\"{html_hook}\") doesn't match "
+                               f"{slug}/data.json's hand-written \"hook\" "
+                               f"(\"{override}\") — regenerate with "
+                               f"scripts/seed_pages.py hubs")
+        return
+
     for href in sorted(set(md_items) | set(html_items)):
         md_hook, html_hook = md_items.get(href), html_items.get(href)
         override = overrides.get(href.rstrip("/"))
@@ -425,9 +443,13 @@ def check_district_hubs() -> None:
 
     `check_hub_covers_children` read one level up. A district hub is derived
     from the pages that name the district, exactly as the sitemap and the map
-    index are derived from the tree — so a hub whose list has gone stale in
-    both its files is invisible to everything else here, and the fix is always
-    to re-run the generator rather than to edit a list by hand.
+    index are derived from the tree — so a hub whose list has gone stale is
+    invisible to everything else here, and the fix is always to re-run the
+    generator rather than to edit a list by hand.
+
+    The list is read off index.html, not index.md: a district hub's list (and
+    the districts index's) carries no hand content, so it lives only in
+    index.html (#151) — see the note in `write_district_hub`.
 
     A district under `DISTRICT_MIN_PAGES` has no hub by design and is not
     checked; see `seed_pages.DISTRICT_MIN_PAGES` for why that floor exists.
@@ -440,32 +462,33 @@ def check_district_hubs() -> None:
               if len(paths) >= seed_pages.DISTRICT_MIN_PAGES}
 
     for slug, (name, paths) in sorted(earned.items()):
-        md = hubs / slug / "index.md"
-        if not md.exists():
-            err(md, f"{len(paths)} page(s) stand in the {name}, which has no hub "
-                    f"— run scripts/seed_pages.py districts")
+        html_path = hubs / slug / "index.html"
+        if not html_path.exists():
+            err(hubs / slug, f"{len(paths)} page(s) stand in the {name}, which has "
+                             f"no hub — run scripts/seed_pages.py districts")
             continue
-        listed = set(hub_md_items(md.read_text(encoding="utf-8")))
+        listed = set(hub_html_items(html_path.read_text(encoding="utf-8")))
         missing = sorted(paths - listed)
         if missing:
-            err(md, f"{len(missing)} page(s) in this district are not in its list "
-                    f"(starting {missing[0]}) — a reader browsing the district "
-                    f"can't reach them; run scripts/seed_pages.py districts")
+            err(html_path, f"{len(missing)} page(s) in this district are not in its "
+                           f"list (starting {missing[0]}) — a reader browsing the "
+                           f"district can't reach them; run "
+                           f"scripts/seed_pages.py districts")
 
     for hub_dir in sorted(hubs.iterdir()):
         if hub_dir.is_dir() and hub_dir.name not in earned:
-            err(hub_dir / "index.md",
+            err(hub_dir / "index.html",
                 f"no district with {seed_pages.DISTRICT_MIN_PAGES} or more "
                 f"documented buildings maps here any more — delete the directory")
 
-    index_md = hubs / "index.md"
-    if index_md.exists():
-        listed = {h.rstrip("/") for h in hub_md_items(index_md.read_text(encoding="utf-8"))}
+    index_html = hubs / "index.html"
+    if index_html.exists():
+        listed = {h.rstrip("/") for h in hub_html_items(index_html.read_text(encoding="utf-8"))}
         absent = sorted(set(earned) - listed)
         if absent:
-            err(index_md, f"{len(absent)} district(s) with a hub are not on this "
-                          f"index ({', '.join(absent[:5])}) — run "
-                          f"scripts/seed_pages.py districts")
+            err(index_html, f"{len(absent)} district(s) with a hub are not on this "
+                            f"index ({', '.join(absent[:5])}) — run "
+                            f"scripts/seed_pages.py districts")
 
 
 def check_narrative(data_path: Path, data: dict) -> None:
