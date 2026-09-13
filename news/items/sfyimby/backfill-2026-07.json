@@ -1,0 +1,984 @@
+{
+  "source_id": "sfyimby",
+  "batch": "backfill-2026-07",
+  "read_on": "2026-09-12",
+  "notes": "The first archive backfill: one month of San Francisco YIMBY's paged archive, 2026-07-01 to 2026-07-31, listed by `poll.py backfill` and screened by the same screen the daily poll uses. Every queued story was read in full.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 21,
+    "mentions": 21,
+    "remaining": "The 39 items the screen skipped in this window, each with its recorded reason, and every San Francisco YIMBY month before 2026-07 and between 2026-08-01 and the daily poll's reach. The other seven routed feeds are untouched for July 2026: mission-local, the-registry, sf-standard, sf-examiner, sf-chronicle, sf-examiner-social and the-voice-sf, together 2,498 stories listed and 517 queued.",
+    "note": "Sixty stories were listed for the window and 21 queued, a far higher rate than the register's general newsrooms — this outlet writes about nothing but buildings and tags each item with its street address. Every article carries a related-articles rail naming 10 South Van Ness Avenue, 536 Mission Street and 2500 Mariposa Street at 90 per cent or more into the page; those are furniture, not reporting, and none was extracted."
+  },
+  "findings": [
+    {
+      "id": "backfill-2026-07-0001",
+      "date": "2026-07-31",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "3571 16th Street",
+      "street_number": "3571",
+      "street_name": "16TH",
+      "street_type": "ST",
+      "description": "An application has been filed to convert part of the ground-level garage at 3571 16th Street in the Castro into three accessory dwelling units, replacing eight covered parking spaces under a local ordinance. Each new unit would have two bedrooms and two bathrooms, and two of the three would open onto the shared backyard; the twelve existing apartments are untouched. Syncopated Architecture drew the plans and Structure Properties is the owner. The article describes the existing 33-foot structure as recorded built in 1963 by an unknown architect in the Midcentury Modern style, and puts construction cost at about two-thirds of a million dollars, excluding other development costs. The conversion is proposed, not built, so nothing goes into the building block.",
+      "extra": {
+        "architect_of_proposal": "Syncopated Architecture",
+        "owner": "Structure Properties",
+        "new_units": 3,
+        "existing_units": 12,
+        "parking_spaces_removed": 8,
+        "existing_height_ft": 33,
+        "lot_acres": 0.12,
+        "construction_cost_estimate_usd": 666000,
+        "cross_streets": "16th Street at Pond Street"
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Garage-to-ADU Conversion At 3571 16th Street, San Francisco,” 31 July 2026",
+        "url": "https://sfyimby.com/2026/07/garage-to-adu-conversion-at-3571-16th-street-san-francisco.html",
+        "locator": "first three paragraphs"
+      },
+      "raw": {
+        "text": "Plans have been filed to convert a portion of a ground-level garage into housing at 3571 16th Street in the Castro District, San Francisco. The application would replace eight covered spaces with three accessory dwelling units, invoking a local ordinance."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3564093",
+        "path": "/san-francisco/castro/16th-street/3571/",
+        "eas_address": "3571 16TH ST",
+        "method": "EAS exact match on 3571 16TH ST → parcel 3564093; sf-parcels has blklot 3564093 active, 3571–3571 16TH; the 2025 roll records it as multi-family residential, built 1963.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Entry on the existing page at /san-francisco/castro/16th-street/3571/. Nothing was written into the building block: the only statement the article makes about the building that stands there — built 1963, architect unknown, Midcentury Modern — is the assessor's own record, which the page already carries, and Syncopated Architecture drew a conversion that has not been built. No card on the homepage news grid: it holds the newest six entries on the site and its oldest card is dated September 2026, so a July entry sorts below all six. See PIPELINE.md → The homepage grid."
+      }
+    },
+    {
+      "id": "backfill-2026-07-0002",
+      "date": "2026-07-28",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "575 Sutter Street",
+      "street_number": "575",
+      "street_name": "SUTTER",
+      "street_type": "ST",
+      "description": "Permits have been filed to convert the second and third floors of the office building at 575 Sutter Street, off Union Square, into twelve apartments — nine one-bedroom and three two-bedroom — under the city's Downtown Adaptive Reuse programme. Commercial use would remain on the ground floor and in the basement, the lobby is unchanged, and the only external alteration is a new exit door on Sutter Street for a new internal stair. Schaub Li Architects is responsible for the design and AHK Group is the owner, filing through One Timberlake Inc. Renovation is estimated at just under a million dollars, excluding other development costs. The conversion is proposed, not built, so nothing goes into the building block.",
+      "extra": {
+        "architect_of_proposal": "Schaub Li Architects",
+        "owner": "AHK Group",
+        "filing_entity": "One Timberlake Inc.",
+        "proposed_units": 12,
+        "one_bedroom_units": 9,
+        "two_bedroom_units": 3,
+        "programme": "Downtown Adaptive Reuse",
+        "cross_streets": "Sutter Street between Mason Street and Powell Street"
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Office-to-Housing Conversion For 575 Sutter Street, San Francisco,” 28 July 2026",
+        "url": "https://sfyimby.com/2026/07/office-to-housing-conversion-for-575-sutter-street-san-francisco.html",
+        "locator": "first three paragraphs"
+      },
+      "raw": {
+        "text": "Permits have been filed to convert a portion of a commercial office space into housing at 575 Sutter Street in the Union Square neighborhood of San Francisco. The application invokes the city's Downtown Adaptive Reuse program for the construction of a dozen residential units."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-12",
+        "method": "sf-eas-addresses has 575 SUTTER ST but it does not join to one parcel. 575 SUTTER ST's coordinates fall in 10 active parcels (0296160, 0296151, 0296157, 0296156…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
+        "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+      },
+      "publish": {
+        "status": "pending",
+        "note": "Blocked: the resolver will not join the address. 575 Sutter Street's coordinates fall in ten active parcels, which is what a condominium looks like in sf-parcels — one parcel per unit and none of them the building — and the root AGENTS.md's directory contract defers those. There is no page this can go on until the building itself has a parcel. Worth retrying if the parcel map changes."
+      }
+    },
+    {
+      "id": "backfill-2026-07-0003",
+      "date": "2026-07-25",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "1956 Great Highway",
+      "street_number": "1956",
+      "street_name": "GREAT",
+      "street_type": "HWY",
+      "description": "Preliminary permits have been filed to split the lot at 1956 Great Highway in the Outer Sunset and build two four-storey structures, each holding two three-bedroom apartments with parking for two cars and four bicycles — four units in all, opposite Ocean Beach and Sunset Dunes park. Hexagon Permit Services filed the application. The article states that the house standing there was designed by Edgar Mathews in 1936 as his own residence, and that the property sold in May 2026 for $3.5 million. No cost or timeline for the new work has been shared.",
+      "extra": {
+        "applicant": "Hexagon Permit Services",
+        "proposed_units": 4,
+        "proposed_structures": 2,
+        "proposed_stories": 4,
+        "parking_spaces_per_structure": 2,
+        "bicycle_spaces_per_structure": 4,
+        "sale_may_2026_usd": 3500000
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Preliminary Application For 1956 Great Highway, San Francisco,” 25 July 2026",
+        "url": "https://sfyimby.com/2026/07/preliminary-application-for-1956-great-highway-san-francisco.html",
+        "locator": "paragraphs one, two and four"
+      },
+      "raw": {
+        "text": "The existing structure was designed by Edgar Mathews in 1936 and served as his private residence. Mathews designed several buildings across the city and Bay Area, including larger homes, churches, and offices."
+      },
+      "confidence": "high",
+      "note": "The article's claim about the existing house — Edgar Mathews, 1936, his own residence — is a fact about the building that stands there, so it goes into the page's building block; the four-unit infill is a proposal and stays in extra.",
+      "resolution": {
+        "status": "resolved",
+        "apn": "2086005A",
+        "path": "/san-francisco/sunset-parkside/great-highway/1956/",
+        "eas_address": "1956 GREAT HWY",
+        "method": "EAS exact match on 1956 GREAT HWY → parcel 2086005A; sf-parcels has blklot 2086005A active, 1956–1956 GREAT; the 2025 roll records it as single family residential, built 1936.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "Seeded /san-francisco/sunset-parkside/great-highway/1956/ from research/manifests/news-backfill-2026-07.json — parcel 2086005A, no page existed. The article's Edgar Mathews, 1936 went into the page's building block; the 2025 roll independently gives 1936 for the parcel, so the two agree and no conflict is recorded. The four-unit infill is a proposal and stays in extra. No card on the homepage news grid: it holds the newest six entries on the site and its oldest card is dated September 2026, so a July entry sorts below all six. See PIPELINE.md → The homepage grid."
+      }
+    },
+    {
+      "id": "backfill-2026-07-0004",
+      "date": "2026-07-24",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2550 Irving Street",
+      "street_number": "2550",
+      "street_name": "IRVING",
+      "street_type": "ST",
+      "description": "The affordable housing at 2550 Irving Street, a block from Golden Gate Park, has filled every one of its 90 units, completing occupancy of a building that topped out in the winter of 2025-26. The 78-foot structure holds more than 113,000 square feet: nine studios, 34 one-bedroom, 23 two-bedroom and 24 three-bedroom apartments, let to households earning 30 to 80 per cent of area median income, with 22 homes subsidised for families leaving homelessness and 15 for formerly homeless veterans. Tenderloin Neighborhood Development Corporation developed it and PYATOK designed it: a podium complex broken into three masses, clad in sandstone-toned thin brick, precast concrete, fibre cement, painted aluminium and western red cedar. It is all-electric, on a pilot model for the International Living Future Institute, with an 18-car garage stacker and storage for 90 bicycles.",
+      "extra": {
+        "architect": "PYATOK",
+        "developer": "Tenderloin Neighborhood Development Corporation",
+        "units": 90,
+        "studios": 9,
+        "one_bedroom_units": 34,
+        "two_bedroom_units": 23,
+        "three_bedroom_units": 24,
+        "height_ft": 78,
+        "floor_area_sqft": 113000,
+        "ami_range": "30–80 per cent",
+        "units_for_families_exiting_homelessness": 22,
+        "units_for_formerly_homeless_veterans": 15,
+        "bicycle_spaces": 90,
+        "car_stacker_spaces": 18,
+        "all_electric": true
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Residents Finish Moving into Housing at 2550 Irving Street,” 24 July 2026",
+        "url": "https://sfyimby.com/2026/07/new-residents-finish-moving-into-affordable-housing-at-2550-irving-street-in-san-francisco.html",
+        "locator": "first three paragraphs"
+      },
+      "raw": {
+        "text": "The new affordable housing development at 2550 Irving Street in San Francisco has reached full capacity, moving residents into all available units. The project, which topped out last winter, was able to rapidly fill its available units after opening its doors to new residents."
+      },
+      "confidence": "high",
+      "note": "The building stands and is occupied, so PYATOK and TNDC describe a real building and belong in the page's building block. The feed's title is longer than the article's own headline; the h1 is what is quoted.",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1724038",
+        "path": "/san-francisco/inner-sunset/irving-street/2520/",
+        "eas_address": "2520 IRVING ST",
+        "method": "EAS exact match on 2550 IRVING ST → parcel 1724038; sf-parcels has blklot 1724038 active, 2520–2550 IRVING; the 2025 roll records it as miscellaneous/mixed-use. EAS puts 2520, 2550 IRVING ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2520.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Entry on the existing page at /san-francisco/inner-sunset/irving-street/2520/ — EAS puts 2520 and 2550 Irving Street on parcel 1724038, so per the directory contract the page is at the lower number even though the story prints 2550. The building is finished and occupied, so PYATOK and Tenderloin Neighborhood Development Corporation went into its building block, both fields having been empty. `completed` was left alone: the article says the building topped out 'last winter' and that residents have now moved in, which is not a year stated plainly, and the 2025 roll gives the parcel no year at all. No card on the homepage news grid: it holds the newest six entries on the site and its oldest card is dated September 2026, so a July entry sorts below all six. See PIPELINE.md → The homepage grid."
+      }
+    },
+    {
+      "id": "backfill-2026-07-0005",
+      "date": "2026-07-22",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "36-38 Gough Street",
+      "street_number": "36",
+      "street_name": "GOUGH",
+      "street_type": "ST",
+      "description": "Permits have been filed to replace the duplex at 36-38 Gough Street, at the corner of Colton Street between Market and Otis, with a four-storey mixed-use triplex of about 5,400 square feet: 3,507 square feet of housing in three two-bedroom apartments, 1,190 square feet of retail and a 625-square-foot three-car garage, with space for a single bicycle. Architects SF drew the design — stucco and Hardie board siding, Juliet balconies facing Gough Street, a roof deck — and SF Permitting Inc. filed. The article states the building to be replaced is a duplex built in 1907. No cost or timeline has been shared.",
+      "extra": {
+        "architect_of_proposal": "Architects SF",
+        "applicant": "SF Permitting Inc.",
+        "proposed_units": 3,
+        "proposed_stories": 4,
+        "proposed_floor_area_sqft": 5400,
+        "residential_sqft": 3507,
+        "retail_sqft": 1190,
+        "garage_sqft": 625,
+        "parking_spaces": 3,
+        "bicycle_spaces": 1,
+        "lot_acres": 0.05,
+        "cross_streets": "Gough Street at Colton Street"
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Permits Filed For 36-38 Gough Street, San Francisco,” 22 July 2026",
+        "url": "https://sfyimby.com/2026/07/permits-filed-for-36-38-gough-street-san-francisco.html",
+        "locator": "first three paragraphs"
+      },
+      "raw": {
+        "text": "Permits have been filed for a small residential infill at 36-38 Gough Street in SoMa, San Francisco. The proposal would replace a 1907-built duplex with a mixed-use triplex between Market Street and Otis Street."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3504028",
+        "path": "/san-francisco/mission/gough-street/36/",
+        "eas_address": "36 GOUGH ST",
+        "method": "EAS exact match on 36 GOUGH ST → parcel 3504028; sf-parcels has blklot 3504028 active, 36–38 GOUGH; the 2025 roll records it as multi-family residential, built 1907. EAS puts 36, 38 GOUGH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 36.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Entry on the existing page at /san-francisco/mission/gough-street/36/. Nothing in the building block: the article's 1907 for the existing duplex is the roll's own year, already on the page, and Architects SF drew a replacement. No card on the homepage news grid: it holds the newest six entries on the site and its oldest card is dated September 2026, so a July entry sorts below all six. See PIPELINE.md → The homepage grid."
+      }
+    },
+    {
+      "id": "backfill-2026-07-0006",
+      "date": "2026-07-21",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "173 Shipley Street",
+      "street_number": "173",
+      "street_name": "SHIPLEY",
+      "street_type": "ST",
+      "description": "The Planning Department has published a notice of an application for new construction at 173 Shipley Street in South of Market, circulating it to neighbours while the application is under review. The 75-foot building would hold about 20,370 square feet of housing in 13 apartments — six one-bedroom, five two-bedroom and two three-bedroom, one of them deed-restricted affordable — over a 1,880-square-foot nine-car garage, with space for nine bicycles. RG Architecture designed it in brick veneer, fibre-cement siding and wood soffits, with a four-level bay window over the narrow street and two rear setbacks to keep light on the neighbouring parcel. Pew Property Group is the sponsor. Construction is estimated at $5.5 million over about 18 months.",
+      "extra": {
+        "architect_of_proposal": "RG Architecture",
+        "sponsor": "Pew Property Group",
+        "proposed_units": 13,
+        "affordable_units": 1,
+        "height_ft": 75,
+        "residential_sqft": 20370,
+        "garage_sqft": 1880,
+        "parking_spaces": 9,
+        "bicycle_spaces": 9,
+        "lot_acres": 0.1,
+        "construction_cost_estimate_usd": 5500000,
+        "construction_duration_estimate_months": 18
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “New Construction Application Filed For 173 Shipley Street in SoMa, San Francisco,” 21 July 2026",
+        "url": "https://sfyimby.com/2026/07/new-construction-application-filed-for-173-shipley-street-in-soma-san-francisco.html",
+        "locator": "first three paragraphs"
+      },
+      "raw": {
+        "text": "The San Francisco Planning Department has published a notice of an application for new construction for 173 Shipley Street in SoMa. The notice will be circulated to the surrounding neighbors for the 13-unit development as the planning application remains under review."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3752070",
+        "path": "/san-francisco/south-of-market/shipley-street/173/",
+        "eas_address": "173 SHIPLEY ST",
+        "method": "EAS exact match on 173 SHIPLEY ST → parcel 3752070; sf-parcels has blklot 3752070 active, 173–173 SHIPLEY; the 2025 roll records it as industrial, built 1928.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Entry on the existing page at /san-francisco/south-of-market/shipley-street/173/. The article says nothing about the building that stands there, so the building block is untouched. No card on the homepage news grid: it holds the newest six entries on the site and its oldest card is dated September 2026, so a July entry sorts below all six. See PIPELINE.md → The homepage grid."
+      }
+    },
+    {
+      "id": "backfill-2026-07-0007",
+      "date": "2026-07-19",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "2401 16th Street",
+      "street_number": "2401",
+      "street_name": "16TH",
+      "street_type": "ST",
+      "description": "Plans have surfaced to convert the vacant ground-floor restaurant space at 2401 16th Street, at the corner of Bryant Street in the Mission, into two apartments, doubling the three-storey building's unit count from two to four; each new home would have a living room, two bedrooms and two bathrooms, and the upper floors are unchanged. My My Ly Architect drew the renovations and Galway Properties II is the owner. The article reports the building as a classic revival structure built in 1909, and cites a historical review by Tim Kelley finding the property eligible for the California Register for its association with the San Francisco Seals: the Double Play Tavern opened there in 1944, across from Seals Stadium, which was demolished in 1959.",
+      "extra": {
+        "architect_of_proposal": "My My Ly Architect",
+        "owner": "Galway Properties II",
+        "existing_units": 2,
+        "proposed_units": 4,
+        "existing_stories": 3,
+        "historic_review_by": "Tim Kelley",
+        "eligibility": "California Register, for association with the San Francisco Seals",
+        "cross_streets": "16th Street at Bryant Street"
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Plans Surface For Residential Conversion at 2401 16th Street, San Francisco,” 19 July 2026",
+        "url": "https://sfyimby.com/2026/07/plans-surface-for-residential-conversion-at-2401-16th-street-san-francisco.html",
+        "locator": "paragraphs one, three and four"
+      },
+      "raw": {
+        "text": "The existing structure is an old classic revival structure built in 1909 for James Larkin. … The review deemed the property eligible for listing in the California Register for its association with the San Francisco Seals baseball team, as the Double Play Tavern, opened in 1944, operated across from the former Seals stadium."
+      },
+      "confidence": "high",
+      "note": "The article names the man the building was put up for in 1909 and the man who wrote the historical review. Neither goes on the page: the root AGENTS.md allows historical figures, but a name attached to a building only as its original owner is not an architect, builder or developer, and the reviewer is a living consultant. The year and the tavern's name are facts about the building and do go on it.",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3965051",
+        "path": "/san-francisco/mission/16th-street/2401/",
+        "eas_address": "2401 16TH ST",
+        "method": "EAS exact match on 2401 16TH ST → parcel 3965051; sf-parcels has blklot 3965051 active, 2401–2405 16TH; the 2025 roll records it as multi-family residential, built 1909. EAS puts 2401, 2403, 2405, 2421, 2423, 2425 16TH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2401. EAS files the address under parcel 3965001, which sf-parcels reports retired; the active parcel its coordinates fall in is 3965051.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Entry on the existing page at /san-francisco/mission/16th-street/2401/. `building.former_name` was set to Double Play Tavern — the article states plainly that the tavern opened in the building in 1944 and that the historical review found the property eligible for the California Register on that association. `completed` was left alone: the article's 1909 is the roll's own year and the page already carries it. No card on the homepage news grid: it holds the newest six entries on the site and its oldest card is dated September 2026, so a July entry sorts below all six. See PIPELINE.md → The homepage grid."
+      }
+    },
+    {
+      "id": "backfill-2026-07-0008",
+      "date": "2026-07-17",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "490 Avenue of the Palms",
+      "street_number": "490",
+      "street_name": "AVENUE OF THE PALMS",
+      "street_type": "",
+      "description": "The first phase of the Treasure Island redevelopment has finished with the opening of 490 Avenue of the Palms, a six-storey building of 148 condominiums and the first condominium complex built on the island. Thirty-four of the homes are sold as a front-row 'Palms Collection' with additional services; shared amenities include a courtyard, a fitness centre, communal rooms and three open-air landscaped terraces, and residential services are run by Sentral. Mark Cavagnero Associates and Fougeron Architecture designed the building jointly. Treasure Island Development Group — a partnership of Lennar Corporation, Stockbridge Capital Group and Wilson Meany — co-developed it.",
+      "extra": {
+        "architect": "Mark Cavagnero Associates; Fougeron Architecture",
+        "developer": "Treasure Island Development Group (Lennar Corporation, Stockbridge Capital Group, Wilson Meany)",
+        "units": 148,
+        "stories": 6,
+        "front_row_collection_units": 34,
+        "residential_services": "Sentral",
+        "note_on_phase": "first phase of the Treasure Island redevelopment"
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Phase One of Treasure Island Redevelopment Opens, San Francisco,” 17 July 2026",
+        "url": "https://sfyimby.com/2026/07/phase-one-of-treasure-island-redevelopment-opens-san-francisco.html",
+        "locator": "first three paragraphs"
+      },
+      "raw": {
+        "text": "The first phase of the transformative Treasure Island redevelopment has officially finished with the opening of 490 Avenue of the Palms. The six-story apartment complex has added 148 condominiums to San Francisco's rapidly changing man-made island in the heart of the bay."
+      },
+      "confidence": "high",
+      "note": "The building is open, so its design and development teams describe a building that stands and belong in the page's building block. The two people quoted in the article — an executive of the developer and one of the architects — are not carried: the firms are what the root AGENTS.md allows a page to credit.",
+      "resolution": {
+        "status": "resolved",
+        "apn": "8906009",
+        "path": "/san-francisco/treasure-island/avenue-of-the-palms/490/",
+        "eas_address": "490 AVENUE OF THE PALMS",
+        "method": "EAS exact match on 490 AVENUE OF THE PALMS (neither the record nor EAS gives this street a type) → parcel 8906009; sf-parcels has blklot 8906009 active, 490–490 AVENUE OF THE PALMS; the 2025 roll records it as miscellaneous/mixed-use. The assessor files the parcel as 22 JOHNSON ST.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "Seeded /san-francisco/treasure-island/avenue-of-the-palms/490/ from research/manifests/news-backfill-2026-07.json — parcel 8906009, no page existed. This is the site's first page on Treasure Island, so the neighborhood had no hub; one was written by hand at /san-francisco/treasure-island/ in the established shape — lead, the generated street list, and the hand-maintained Adjacent neighborhoods section, whose claim comes from the city's Analysis Neighborhoods boundary file (ajp5-b2md gives the island one neighbour, Bayview Hunters Point, across open water) — and the neighborhood was added to the city hub. The building is open, so its architects and its development partnership went into the page's building block, with `completed` 2026; the 2025 roll gives the parcel no year, so there is nothing to contradict. The two people quoted in the article are not carried. No card on the homepage news grid: it holds the newest six entries on the site and its oldest card is dated September 2026, so a July entry sorts below all six. See PIPELINE.md → The homepage grid."
+      }
+    },
+    {
+      "id": "backfill-2026-07-0009",
+      "date": "2026-07-16",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "15 Marina Boulevard",
+      "street_number": "15",
+      "street_name": "MARINA",
+      "street_type": "BLVD",
+      "description": "Updated plans have been filed for the redevelopment of the Safeway at 15 Marina Boulevard, raising the residential capacity from 790 to 848 apartments while slightly reducing the floor count. The 258-foot scheme would yield about 989,500 square feet: 746,600 of housing, 33,840 of amenities, 67,180 for a new Safeway and 141,960 for a 349-car garage, with 360 bicycle spaces and a mix of 254 studios, 268 one-bedroom, 212 two-bedroom and 114 three-bedroom homes, 86 of them deed-restricted at about half of area median income. Arquitectonica designed two towers of 18 and 22 floors on a shared podium. Align Real Estate is the sponsor, filing for the owner, Albertsons Companies. Preliminary permits were filed in December 2025 and the city found the application eligible for streamlining under AB 2011 in March 2026; the revised filing resets the review clock.",
+      "extra": {
+        "architect_of_proposal": "Arquitectonica",
+        "sponsor": "Align Real Estate",
+        "owner": "Albertsons Companies",
+        "proposed_units": 848,
+        "previous_proposed_units": 790,
+        "height_ft": 258,
+        "total_sqft": 989500,
+        "residential_sqft": 746600,
+        "retail_sqft": 67180,
+        "garage_sqft": 141960,
+        "parking_spaces": 349,
+        "bicycle_spaces": 360,
+        "affordable_units": 86,
+        "west_tower_floors": 18,
+        "east_tower_floors": 22,
+        "lot_acres": 2.6,
+        "streamlining": "Assembly Bill 2011"
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Reduced Floor Count, More Units for Safeway Marina Redevelopment, San Francisco,” 16 July 2026",
+        "url": "https://sfyimby.com/2026/07/reduced-floor-count-more-units-for-safeway-marina-redevelopment-san-francisco.html",
+        "locator": "first three paragraphs"
+      },
+      "raw": {
+        "text": "Updated plans have been filed for the mixed-use redevelopment of the Safeway at 15 Marina Boulevard in San Francisco's Marina District. The latest application has slightly reduced the floor count while significantly increasing the overall residential capacity from 790 to 848 units."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0446002",
+        "path": "/san-francisco/marina/marina-boulevard/15/",
+        "eas_address": "15 MARINA BLVD",
+        "method": "EAS exact match on 15 MARINA BLVD → parcel 0446002; sf-parcels has blklot 0446002 active, 15–15 MARINA; the 2025 roll records it as commercial retail, built 1959.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Entry on the existing page at /san-francisco/marina/marina-boulevard/15/. The page already names the building Marina Safeway; Arquitectonica designed the tower that would replace it, which is a proposal and stays in extra. No card on the homepage news grid: it holds the newest six entries on the site and its oldest card is dated September 2026, so a July entry sorts below all six. See PIPELINE.md → The homepage grid."
+      }
+    },
+    {
+      "id": "backfill-2026-07-0010",
+      "date": "2026-07-15",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "1234 Great Highway",
+      "street_number": "1234",
+      "street_name": "GREAT",
+      "street_type": "HWY",
+      "description": "Preliminary permits have been resubmitted for the oceanfront affordable housing at 1234 Great Highway in the Outer Sunset, unchanged in scale: 199 rental apartments in an eight-storey building beside a single-storey adult day health care centre. The residential block would hold about 157,100 square feet — 88 studios, 107 one-bedroom and four two-bedroom homes — with a nine-car garage of 3,400 square feet, storage for 32 bicycles, outdoor gathering areas and a community kitchen and lounge. Paulett Taggart Architects is the designer and Figure the associate architect; Tenderloin Neighborhood Development Corporation and Self-Help For The Elderly are joint developers. The application invokes AB 2162, SB 330 and the State Density Bonus law, with waivers sought for height, bulk, ground-floor residential use and non-active frontages. Cahill estimates construction could start in late 2027 and take about two years.",
+      "extra": {
+        "architect_of_proposal": "Paulett Taggart Architects",
+        "associate_architect": "Figure",
+        "developers": "Tenderloin Neighborhood Development Corporation; Self-Help For The Elderly",
+        "contractor_named": "Cahill Contractors",
+        "proposed_units": 199,
+        "studios": 88,
+        "one_bedroom_units": 107,
+        "two_bedroom_units": 4,
+        "stories": 8,
+        "residential_sqft": 157100,
+        "garage_sqft": 3400,
+        "parking_spaces": 9,
+        "bicycle_spaces": 32,
+        "lot_acres": 0.8,
+        "construction_start_estimate": "late 2027"
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Preliminary Permits Resubmitted For 1234 Great Highway, San Francisco,” 15 July 2026",
+        "url": "https://sfyimby.com/2026/07/preliminary-permits-resubmitted-for-1234-great-highway-san-francisco.html",
+        "locator": "first three paragraphs"
+      },
+      "raw": {
+        "text": "Preliminary permits have been resubmitted for the oceanfront affordable housing complex at 1234 Great Highway in San Francisco's Outer Sunset neighborhood. The overall scale for the proposal remains unchanged since our previous coverage, including 199 rental apartments across an eight-story residential building and a single-story adult day health care center."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1701007",
+        "path": "/san-francisco/sunset-parkside/great-highway/1234/",
+        "eas_address": "1234 GREAT HWY",
+        "method": "EAS exact match on 1234 GREAT HWY → parcel 1701007; sf-parcels has blklot 1701007 active, 1234–1280 GREAT; no row on the secured roll. EAS files the address under parcel 1701006, which sf-parcels reports retired; the active parcel its coordinates fall in is 1701007.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "pending",
+        "note": "Blocked: the seeder refuses the parcel. 1234 Great Highway resolves to parcel 1701007, which sf-parcels reports active but which has no row on the 2025 secured roll — seed_pages.py printed 'no 2025 roll row for 1701007 (1234 Great Highway) — skipped', which is the site's rule about what may become a page and it outranks the story. The site owns the oceanfront lot and the building is not built; retry once it appears on a roll."
+      }
+    },
+    {
+      "id": "backfill-2026-07-0011",
+      "date": "2026-07-14",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "2629 Lombard Street",
+      "street_number": "2629",
+      "street_name": "LOMBARD",
+      "street_type": "ST",
+      "description": "Plans have surfaced for a six-storey residential infill at 2629 Lombard Street in Cow Hollow, at the junction with Richardson Avenue, replacing the two-storey house that stands there. The 65-foot building would yield about 20,550 square feet across 15 apartments — two studios, seven one-bedroom and six two-bedroom, three of them deed-restricted affordable — with no on-site parking. Studio 12 Architecture filed and designed it, the application invoking the Housing Choice San Francisco programme brought in with the Family Zoning plan. The article describes the drawings as preliminary and likely to change, and gives 1932 as the year the existing two-storey structure was built.",
+      "extra": {
+        "architect_of_proposal": "Studio 12 Architecture",
+        "proposed_units": 15,
+        "studios": 2,
+        "one_bedroom_units": 7,
+        "two_bedroom_units": 6,
+        "affordable_units": 3,
+        "height_ft": 65,
+        "proposed_floor_area_sqft": 20550,
+        "parking_spaces": 0,
+        "lot_acres": 0.09,
+        "programme": "Housing Choice San Francisco",
+        "cross_streets": "Lombard Street at Richardson Avenue"
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “HC-SF Proposal for 2629 Lombard Street in Cow Hollow, San Francisco,” 14 July 2026",
+        "url": "https://sfyimby.com/2026/07/hc-sf-proposal-for-2629-lombard-street-in-cow-hollow-san-francisco.html",
+        "locator": "paragraphs one, two and nine"
+      },
+      "raw": {
+        "text": "Plans have surfaced for a six-story residential infill at 2629 Lombard Street in San Francisco's Cow Hollow neighborhood. The initial plans look to replace a two-story house a couple of blocks away from the Presidio. … The existing two-story structure was built in 1932."
+      },
+      "confidence": "high",
+      "note": "The article says the owner is 'a San Anselmo-based individual' and names nobody; nothing about the owner is carried.",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0939036",
+        "path": "/san-francisco/marina/lombard-street/2629/",
+        "eas_address": "2629 LOMBARD ST",
+        "method": "EAS exact match on 2629 LOMBARD ST → parcel 0939036; sf-parcels has blklot 0939036 active, 2627–2629 LOMBARD; the 2025 roll records it as single family residential, built 1932. The address carries no parcel number in EAS; the active parcel its coordinates fall in is 0939036.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "Seeded /san-francisco/marina/lombard-street/2629/ from research/manifests/news-backfill-2026-07.json — parcel 0939036, no page existed. Nothing in the building block: the article's 1932 for the existing house is the roll's own year, now on the seeded page, and Studio 12 Architecture drew a replacement. The article calls the existing structure two-storey and the roll calls it one; the entry is the headline alone and makes no storey claim, so the page carries no note about it. No card on the homepage news grid: it holds the newest six entries on the site and its oldest card is dated September 2026, so a July entry sorts below all six. See PIPELINE.md → The homepage grid."
+      }
+    },
+    {
+      "id": "backfill-2026-07-0012",
+      "date": "2026-07-13",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "85 West Portal Avenue",
+      "street_number": "85",
+      "street_name": "WEST PORTAL",
+      "street_type": "AVE",
+      "description": "Formal permits have been filed to replace the vacant Empire Theater at 85 West Portal Avenue with a nine-storey building of 64 apartments over ground-floor retail. The 112-foot scheme would yield about 113,670 square feet — 94,400 of housing in 16 one-bedroom, 36 two-bedroom and 12 three-bedroom homes, 13,300 of parking for 27 cars and 64 bicycles, and 4,100 of retail — with ten homes deed-restricted below market rate, five at 50 and five at 120 per cent of area median income, invoking AB 1287 and the State Density Bonus law for a 100 per cent density bonus, and AB 2011 and SB 330 to streamline review. Handel Architects designed it in terracotta and off-white concrete panels, reading as two buildings over West Portal Avenue and Vicente Street, and keeping the theatre's ornamental cornice above the new retail while the rest of the century-old building is demolished. DM Development is filing for the owner, Empire West Portal LLC. The article records the cinema as running from 1925 to 2021, opening as the Portal Theater and renamed the Empire Theater in 1936. Construction is estimated at about $45 million, with completion as early as 2028.",
+      "extra": {
+        "architect_of_proposal": "Handel Architects",
+        "applicant": "DM Development",
+        "owner": "Empire West Portal LLC",
+        "proposed_units": 64,
+        "one_bedroom_units": 16,
+        "two_bedroom_units": 36,
+        "three_bedroom_units": 12,
+        "affordable_units": 10,
+        "height_ft": 112,
+        "total_sqft": 113670,
+        "residential_sqft": 94400,
+        "retail_sqft": 4100,
+        "parking_spaces": 27,
+        "bicycle_spaces": 64,
+        "lot_acres": 0.4,
+        "construction_cost_estimate_usd": 45000000,
+        "completion_estimate": 2028,
+        "cinema_years": "1925–2021"
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Formal Application For Empire Theater Redevelopment in West Portal, San Francisco,” 13 July 2026",
+        "url": "https://sfyimby.com/2026/07/formal-application-for-empire-theater-redevelopment-in-west-portal-san-francisco.html",
+        "locator": "paragraphs one and seven"
+      },
+      "raw": {
+        "text": "Formal permits have been filed for plans to replace the vacant Empire Theater with housing at 85 West Portal Avenue in San Francisco's West Portal neighborhood. … The former cinema operated in the West Portal neighborhood from 1925 through 2021, opening first as the Portal Theater and rebranding as the Empire Theater in 1936."
+      },
+      "confidence": "high",
+      "note": "The page already carries a San Francisco YIMBY entry of 1 September 2026, 'Increased Plans For 85 West Portal Avenue, San Francisco'. That is a later revision of the same scheme, not the same event: this entry is the formal application filed in July, and the September one reports plans increased after it. Both stand, in date order.",
+      "resolution": {
+        "status": "resolved",
+        "apn": "2979A019",
+        "path": "/san-francisco/west-of-twin-peaks/west-portal-avenue/75/",
+        "eas_address": "75 WEST PORTAL AVE",
+        "method": "EAS exact match on 85 WEST PORTAL AVE → parcel 2979A019; sf-parcels has blklot 2979A019 active, 75–85 WEST PORTAL; the 2025 roll records it as commercial misc, built 1925. EAS puts 75, 79, 85 WEST PORTAL AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 75.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Entry on the existing page at /san-francisco/west-of-twin-peaks/west-portal-avenue/75/ — EAS puts 75, 79 and 85 West Portal Avenue on parcel 2979A019, so the page is at the lowest number though the story prints 85. `building.name` was set to Empire Theater and `former_name` to Portal Theater: the article states the cinema opened under the first name and was renamed in 1936, and both fields were empty. The page already carries a San Francisco YIMBY entry of 1 September 2026, 'Increased Plans For 85 West Portal Avenue' — a later revision of this scheme, not this event, so both entries stand in date order. No card on the homepage news grid: it holds the newest six entries on the site and its oldest card is dated September 2026, so a July entry sorts below all six. See PIPELINE.md → The homepage grid."
+      }
+    },
+    {
+      "id": "backfill-2026-07-0013",
+      "date": "2026-07-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "78 Haight Street",
+      "street_number": "78",
+      "street_name": "HAIGHT",
+      "street_type": "ST",
+      "description": "The affordable housing at 78 Haight Street in Hayes Valley opened in July 2026, adding 64 homes to a parcel on the former Central Freeway corridor that was cleared after the Loma Prieta earthquake. Half the apartments are for transitional-age youth leaving homelessness and half for low-income families, with support services provided in partnership with Larkin Street Youth Services. Tenderloin Neighborhood Development Corporation developed it; Guzman Construction Group and Suffolk built it in a joint venture, with Guzman as general contractor. Paulett Taggart Architects designed the seven-storey building — white fibre cement with sawtooth bay windows over Octavia Street — and TS Studio was the landscape architect. It cost about $54 million, of which $21 million came from the Mayor's Office of Housing and Community Development and $4 million from California's No Place Like Home programme, with further funding from Silicon Valley Bank and Merritt Community Capital.",
+      "extra": {
+        "architect": "Paulett Taggart Architects",
+        "builder": "Guzman Construction Group and Suffolk (joint venture)",
+        "developer": "Tenderloin Neighborhood Development Corporation",
+        "landscape_architect": "TS Studio",
+        "units": 64,
+        "stories": 7,
+        "lot_acres": 0.12,
+        "project_cost_usd": 54000000,
+        "mohcd_funding_usd": 21000000,
+        "no_place_like_home_funding_usd": 4000000,
+        "services_partner": "Larkin Street Youth Services"
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Affordable Housing Opens At 78 Haight Street in Hayes Valley, San Francisco,” 12 July 2026",
+        "url": "https://sfyimby.com/2026/07/affordable-housing-opens-at-78-haight-street-in-hayes-valley-san-francisco.html",
+        "locator": "first three paragraphs"
+      },
+      "raw": {
+        "text": "City officials and the project team recently gathered to celebrate the grand opening of 78 Haight Street in San Francisco's Hayes Valley. The seven-story affordable housing project has added 64 units to a parcel along the former Central Freeway corridor, demolished after the Loma Prieta Earthquake."
+      },
+      "confidence": "high",
+      "note": "The building is open, so its architect, builder and developer describe a building that stands and belong in the page's building block. TNDC's chief executive is quoted in the article and is not carried.",
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-12",
+        "method": "sf-eas-addresses has 78 HAIGHT ST but it does not join to one parcel. 78 HAIGHT ST's coordinates fall in 2 active parcels (0853066, 0853065), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
+        "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+      },
+      "publish": {
+        "status": "pending",
+        "note": "Blocked: the resolver will not join the address. 78 Haight Street's coordinates fall in two active parcels, so sf-parcels holds it as a condominium and the directory contract defers those. This is the costliest of the three: the building is finished and occupied, and the article gives its architect, its builder, its developer and its landscape architect — all of which would go straight into a building block if there were a page to put them on. Worth retrying when the parcel map settles."
+      }
+    },
+    {
+      "id": "backfill-2026-07-0014",
+      "date": "2026-07-11",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "167 Coleridge Street",
+      "street_number": "167",
+      "street_name": "COLERIDGE",
+      "street_type": "ST",
+      "description": "Plans have been published for a duplex at 167 Coleridge Street in Bernal Heights, on the narrow parcel between Virginia Avenue and Fair Avenue, replacing the single-family house standing there. The four-level scheme holds about 3,700 square feet: a three-bedroom principal residence above a studio apartment. F2 Design is both architect and developer, filing through ELE Development LLC. The drawings were published for a requested project review meeting with the city; no planning permits have been filed, and no cost or timeline has been shared.",
+      "extra": {
+        "architect_of_proposal": "F2 Design",
+        "developer_of_proposal": "F2 Design",
+        "filing_entity": "ELE Development LLC",
+        "proposed_units": 2,
+        "proposed_levels": 4,
+        "proposed_floor_area_sqft": 3700,
+        "stage": "project review meeting requested; no planning permits filed",
+        "cross_streets": "Coleridge Street between Virginia Avenue and Fair Avenue"
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Plans Revealed For 167 Coleridge Street in Bernal Heights, San Francisco,” 11 July 2026",
+        "url": "https://sfyimby.com/2026/07/plans-revealed-for-167-coleridge-street-in-bernal-heights-san-francisco.html",
+        "locator": "first three paragraphs"
+      },
+      "raw": {
+        "text": "Plans have been published for a potential duplex at 167 Coleridge Street in Bernal Heights, San Francisco. The proposal looks to replace a much-disparaged single-family house … F2 Design is the project architect and developer, filing through ELE Development LLC."
+      },
+      "confidence": "high",
+      "note": "The article quotes at length a 2025 San Francisco Standard piece describing the interior of the house while it was for sale. None of that is carried: it describes somebody's home, and the module records what happens to buildings.",
+      "resolution": {
+        "status": "resolved",
+        "apn": "5616024",
+        "path": "/san-francisco/bernal-heights/coleridge-street/167/",
+        "eas_address": "167 COLERIDGE ST",
+        "method": "EAS exact match on 167 COLERIDGE ST → parcel 5616024; sf-parcels has blklot 5616024 active, 167–167 COLERIDGE; the 2025 roll records it as single family residential, built 1900.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "Seeded /san-francisco/bernal-heights/coleridge-street/167/ from research/manifests/news-backfill-2026-07.json — parcel 5616024, no page existed, and the site had no page on Coleridge Street at all. Nothing in the building block: F2 Design drew a duplex that would replace the house. No card on the homepage news grid: it holds the newest six entries on the site and its oldest card is dated September 2026, so a July entry sorts below all six. See PIPELINE.md → The homepage grid."
+      }
+    },
+    {
+      "id": "backfill-2026-07-0015",
+      "date": "2026-07-09",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "886 Union Street",
+      "street_number": "886",
+      "street_name": "UNION",
+      "street_type": "ST",
+      "description": "Updated plans have been filed to replace the single-storey garage behind the apartment building at 886 Union Street in Russian Hill with a four-storey duplex of about 4,430 square feet — a three-bedroom and a five-bedroom home, a one-car garage and space for four bicycles — invoking the Housing Choice San Francisco density bonus. Gentle Sky LLC filed on behalf of the owner, TJH Construction. The article records the property as last sold in 2023 for $4 million. No cost or timeline has been shared.",
+      "extra": {
+        "applicant": "Gentle Sky LLC",
+        "owner": "TJH Construction",
+        "proposed_units": 2,
+        "proposed_stories": 4,
+        "proposed_floor_area_sqft": 4430,
+        "parking_spaces": 1,
+        "bicycle_spaces": 4,
+        "programme": "Housing Choice San Francisco",
+        "last_sale_2023_usd": 4000000,
+        "second_address_in_story": "888 Union Street",
+        "cross_streets": "Union Street between Mason Street and Taylor Street"
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Updated Plans For 886 Union Street in Russian Hill, San Francisco,” 9 July 2026",
+        "url": "https://sfyimby.com/2026/07/updated-plans-for-886-union-street-in-russian-hill-san-francisco.html",
+        "locator": "first three paragraphs"
+      },
+      "raw": {
+        "text": "Updated plans have been filed for a small residential development at 886 Union Street in Russian Hill, San Francisco. The proposal would replace a single-story garage behind an existing apartment building with a four-story duplex."
+      },
+      "confidence": "high",
+      "note": "The article names the individual who filed the application. He is not an architect, builder or developer of the building, so only the firms are recorded. It also captions one drawing '888 Union Street'; the headline, the lede and the tag all say 886, so 886 is the address resolved.",
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-12",
+        "method": "No record in sf-eas-addresses for 886 UNION ST.",
+        "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 866, 868, 869, 870, 871, 872. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+      },
+      "publish": {
+        "status": "pending",
+        "note": "Blocked: there is no such address today. EAS has no record of 886 Union Street — the nearest surviving numbers on the street are 866, 868, 869, 870, 871 and 872 — so there is no parcel and no page. The article itself is about a garage behind an existing apartment building and captions one drawing 888 Union Street, which suggests the number is an addressing artefact of the filing rather than a building the city knows. Left for a human to place."
+      }
+    },
+    {
+      "id": "backfill-2026-07-0016",
+      "date": "2026-07-07",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "230 Anza Street",
+      "street_number": "230",
+      "street_name": "ANZA",
+      "street_type": "ST",
+      "description": "New renderings have been published for an eight-storey apartment building at 230 Anza Street in Lone Mountain, ahead of a Planning Commission hearing on 23 July 2026. The 85-foot scheme would yield about 15,880 square feet — 10,870 of housing and 1,740 for a basement garage — in nine apartments: one one-bedroom, one two-bedroom, five three-bedroom and one four-bedroom, two of them deed-restricted affordable, with parking for five cars and eight bicycles. C.M. Wong Architecture designed it in stucco and wood-look siding, with heavy balconies on the Anza Street elevation, white stucco to the west and dark grey to the east. The article presents the scheme as an illustration of the 2025 San Francisco Family Zoning Plan's effect on narrow parcels, and records the property as last sold in early July 2025 for just under a million dollars.",
+      "extra": {
+        "architect_of_proposal": "C.M. Wong Architecture",
+        "owner": "Ivy Hills LLC",
+        "proposed_units": 9,
+        "affordable_units": 2,
+        "height_ft": 85,
+        "total_sqft": 15880,
+        "residential_sqft": 10870,
+        "garage_sqft": 1740,
+        "parking_spaces": 5,
+        "bicycle_spaces": 8,
+        "lot_acres": 0.06,
+        "planning_commission_hearing": "2026-07-23",
+        "programme": "San Francisco Family Zoning Plan"
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Renderings Revealed for 230 Anza Street, San Francisco,” 7 July 2026",
+        "url": "https://sfyimby.com/2026/07/renderings-revealed-for-230-anza-street-san-francisco.html",
+        "locator": "first three paragraphs"
+      },
+      "raw": {
+        "text": "New renderings have been published for an eight-story apartment complex at 230 Anza Street in San Francisco's Lone Mountain neighborhood. The proposal helps illustrate the effects of the 2025-approved San Francisco Family Zoning Plan, which allows for denser residential development on narrow parcels across the city."
+      },
+      "confidence": "high",
+      "note": "The article names the individual behind the owning company. Only the company is recorded.",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1091013",
+        "path": "/san-francisco/lone-mountain/anza-street/230/",
+        "eas_address": "230 ANZA ST",
+        "method": "EAS exact match on 230 ANZA ST → parcel 1091013; sf-parcels has blklot 1091013 active, 230–230 ANZA; the 2025 roll records it as multi-family residential, built 1900.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Entry on the existing page at /san-francisco/lone-mountain/anza-street/230/. The article says nothing about the building that stands there. No card on the homepage news grid: it holds the newest six entries on the site and its oldest card is dated September 2026, so a July entry sorts below all six. See PIPELINE.md → The homepage grid."
+      }
+    },
+    {
+      "id": "backfill-2026-07-0017",
+      "date": "2026-07-07",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "3180 Crow Canyon Place",
+      "street_number": "3180",
+      "street_name": "CROW CANYON",
+      "street_type": "PL",
+      "description": "The San Ramon Planning Commission was scheduled to review plans on 7 July 2026 for 164 homes — 119 for-sale townhouses and a 45-unit affordable apartment building — replacing four office structures on a 7.2-acre site at 3180 Crow Canyon Place, behind the Crow Canyon Commons shopping centre. KTGY Group is the architect and Gates Studio the landscape architect; Brookfield Residential filed for the owner, Cranbrook Realty Investment Fund.",
+      "extra": {
+        "architect_of_proposal": "KTGY Group",
+        "landscape_architect": "Gates Studio",
+        "applicant": "Brookfield Residential",
+        "owner": "Cranbrook Realty Investment Fund",
+        "proposed_units": 164,
+        "townhouses": 119,
+        "affordable_apartments": 45,
+        "lot_acres": 7.2,
+        "city": "San Ramon, Contra Costa County"
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Meeting Tonight For 3180 Crow Canyon Place, San Ramon,” 7 July 2026",
+        "url": "https://sfyimby.com/2026/07/meeting-tonight-for-3180-crow-canyon-place-san-ramon.html",
+        "locator": "first three paragraphs"
+      },
+      "raw": {
+        "text": "The San Ramon Planning Commission is scheduled to review plans tonight for a residential infill project at 3180 Crow Canyon Place in San Ramon, Contra Costa County."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "rejected",
+        "checked_on": "2026-09-12",
+        "note": "Not San Francisco. 3180 Crow Canyon Place is in San Ramon, Contra Costa County, and no parcel in this city answers to it."
+      },
+      "publish": {
+        "status": "declined",
+        "note": "Out of the city. San Francisco YIMBY's 'San Francisco metropolitan region' reaches San Ramon, and the screen queued this because 'San Ramon' was not in its list of places that are not San Francisco. That list has been corrected in this run, with a case in news/tools/test_screen.py, so the next walk skips it."
+      }
+    },
+    {
+      "id": "backfill-2026-07-0018",
+      "date": "2026-07-06",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "1965 Market Street",
+      "street_number": "1965",
+      "street_name": "MARKET",
+      "street_type": "ST",
+      "description": "The Planning Department has granted final approval for a 23-storey tower at 1965 Market Street, at the corner of Duboce Avenue, entitling 201 apartments in under two years. The 239-foot building would yield about 237,650 square feet — 206,060 of housing, 2,450 of retail and 16,500 for an underground garage — in ten studios, 100 one-bedroom, 81 two-bedroom and ten three-bedroom homes, 30 of them deed-restricted below market rate across low and moderate incomes, with parking for 62 cars and 138 bicycles. SB 330, SB 423 and the State Density Bonus law raised capacity nearly 89 per cent above base zoning, with waivers for rear yard, open space, dwelling-unit exposure, ground-floor commercial use, parking sizes and retail concessions. Keller Grover Properties is the developer and RG Architecture the designer; the tower now reads as a single mass rising from the existing Spanish Revival podium, clad in precast glass-fibre-reinforced concrete and painted steel. The article states the three-storey structure on the site was built in 1926 and held a mortuary and two apartments.",
+      "extra": {
+        "architect_of_proposal": "RG Architecture",
+        "developer_of_proposal": "Keller Grover Properties",
+        "proposed_units": 201,
+        "affordable_units": 30,
+        "stories": 23,
+        "height_ft": 239,
+        "total_sqft": 237650,
+        "residential_sqft": 206060,
+        "retail_sqft": 2450,
+        "garage_sqft": 16500,
+        "parking_spaces": 62,
+        "bicycle_spaces": 138,
+        "lot_acres": 0.4,
+        "density_bonus": "nearly 89 per cent above base zoning",
+        "existing_building_style": "Spanish Revival",
+        "cross_streets": "Market Street at Duboce Avenue"
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Final Approval For 23-Story 1965 Market Street, San Francisco,” 6 July 2026",
+        "url": "https://sfyimby.com/2026/07/final-approval-for-23-story-1965-market-street-san-francisco.html",
+        "locator": "paragraphs one and eight"
+      },
+      "raw": {
+        "text": "The San Francisco Planning Department has granted final approval for a 23-story tower at 1965 Market Street. … The existing three-story structure, built in 1926, included a mortuary and two apartments for the Gartner Brothers, according to the city's planning department."
+      },
+      "confidence": "high",
+      "note": "The article names the family the 1926 building was put up for. They are not its architect, builder or developer, so the name is not carried; the year and the building's use are.",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3534058",
+        "path": "/san-francisco/mission/duboce-avenue/291/",
+        "eas_address": "1965 MARKET ST",
+        "method": "EAS exact match on 1965 MARKET ST → parcel 3534058; sf-parcels has blklot 3534058 active, 291–293 DUBOCE; the 2025 roll records it as commercial office, built 1980. EAS puts 1965, 1967 MARKET ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1965.",
+        "checked_on": "2026-09-12"
+      },
+      "conflict": "The article dates the existing building to 1926 and calls its original occupants the Gartner Brothers. The page already records it as built 1924 for the Gantner Brothers, designed by Walter C. Falch, from an architects' biographical source. The page's account is kept; this is recorded, not adjudicated.",
+      "publish": {
+        "status": "published",
+        "note": "Entry on the existing page at /san-francisco/mission/duboce-avenue/291/ — EAS puts 1965 and 1967 Market Street on parcel 3534058, whose own address range is 291–293 Duboce Avenue, so the page is on Duboce rather than on Market. Nothing was written into the building block, and this is the instructive one: the page already records the 1924 building as the Gantner Brothers' funeral home designed by Walter C. Falch, from an architects' biographical source. The article gives the year as 1926 and the name as 'Gartner', so it is the weaker account of a fact the page already holds well, and enriching an existing page means filling an empty field rather than revising a filled one. Recorded in `conflict`. No card on the homepage news grid: it holds the newest six entries on the site and its oldest card is dated September 2026, so a July entry sorts below all six. See PIPELINE.md → The homepage grid."
+      }
+    },
+    {
+      "id": "backfill-2026-07-0019",
+      "date": "2026-07-03",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "4148 24th Street",
+      "street_number": "4148",
+      "street_name": "24TH",
+      "street_type": "ST",
+      "description": "New building permits have been filed for a five-storey apartment infill at 4148 24th Street in Noe Valley, between Castro and Diamond streets, following the city's final approval of the project in July 2025. The 52-foot building would hold about 9,700 square feet of housing across four full floors and a mezzanine: seven two-bedroom apartments, one deed-restricted affordable, with a bike room and a ground-floor flat opening onto a private garden. RKD Consulting drew the plans — smooth fibre cement, stucco and concrete, balconies over 24th Street, pixelated stucco side panels. Golden Properties LLC is the owner. Demolition permits for the existing three-storey Mission Revival building, which has a ground-floor shop and a vacant flat, have not yet been filed. Construction is estimated at about $2.5 million.",
+      "extra": {
+        "drafter_of_proposal": "RKD Consulting",
+        "owner": "Golden Properties LLC",
+        "proposed_units": 7,
+        "affordable_units": 1,
+        "height_ft": 52,
+        "residential_sqft": 9700,
+        "lot_acres": 0.06,
+        "construction_cost_estimate_usd": 2500000,
+        "approval_granted": "July 2025",
+        "existing_building_style": "Mission Revival",
+        "cross_streets": "24th Street between Castro Street and Diamond Street"
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “New Building Permits Filed For 4148 24th Street, San Francisco,” 3 July 2026",
+        "url": "https://sfyimby.com/2026/07/new-building-permits-filed-for-4148-24th-street-san-francisco.html",
+        "locator": "first three paragraphs"
+      },
+      "raw": {
+        "text": "New building permits have been filed for a five-story apartment infill at 4148 24th Street in Noe Valley, San Francisco. The multi-family project received final approval from the city last July, clearing the path for construction to replace a three-story mixed-use complex with a seven-apartment building."
+      },
+      "confidence": "high",
+      "note": "The article's tag says 'Golden Pacific Properties LLC' and its text says 'Golden Properties LLC'. The text is what is recorded, and neither reaches a page — the owner of a proposal is not a building fact.",
+      "resolution": {
+        "status": "resolved",
+        "apn": "2831012",
+        "path": "/san-francisco/noe-valley/24th-street/4148/",
+        "eas_address": "4148 24TH ST",
+        "method": "EAS exact match on 4148 24TH ST → parcel 2831012; sf-parcels has blklot 2831012 active, 4148–4148 24TH; the 2025 roll records it as multi-family residential, built 1900.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "Seeded /san-francisco/noe-valley/24th-street/4148/ from research/manifests/news-backfill-2026-07.json — parcel 2831012, no page existed. Nothing in the building block: RKD Consulting drew a replacement, and the owner of a proposal is not a building fact. No card on the homepage news grid: it holds the newest six entries on the site and its oldest card is dated September 2026, so a July entry sorts below all six. See PIPELINE.md → The homepage grid."
+      }
+    },
+    {
+      "id": "backfill-2026-07-0020",
+      "date": "2026-07-01",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "901 Market Street",
+      "street_number": "901",
+      "street_name": "MARKET",
+      "street_type": "ST",
+      "description": "Planning permits have been filed to convert the upper floors of 901 Market Street, at the corner of 5th Street in Mid-Market, into 136 apartments while keeping the ground-floor shops: 29 studios, 73 one-bedroom and 34 two-bedroom homes, reworking the 214,900-square-foot building into 138,500 square feet of housing above 76,370 square feet of ground-floor and basement commercial space. Ankrom Moisan drew the plans, leaving most of the historic facade unchanged but removing the atrium skylight to make an open-air courtyard for the inward-facing flats. Hudson Pacific Properties filed the application. The article states that the 132-foot building was designed by the Reid Brothers for the Hale Brothers department store, opened in 1912, and was occupied by J.C. Penney from 1944 to 1971.",
+      "extra": {
+        "architect_of_proposal": "Ankrom Moisan",
+        "applicant": "Hudson Pacific Properties",
+        "proposed_units": 136,
+        "studios": 29,
+        "one_bedroom_units": 73,
+        "two_bedroom_units": 34,
+        "height_ft": 132,
+        "existing_sqft": 214900,
+        "proposed_residential_sqft": 138500,
+        "proposed_commercial_sqft": 76370,
+        "lot_acres": 0.66,
+        "later_occupant": "J.C. Penney, 1944–1971",
+        "cross_streets": "Market Street at 5th Street"
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Plans Filed For Office-to-Housing Conversion at 901 Market Street, San Francisco,” 1 July 2026",
+        "url": "https://sfyimby.com/2026/07/plans-filed-for-office-to-housing-conversion-at-901-market-street-san-francisco.html",
+        "locator": "paragraphs one and three"
+      },
+      "raw": {
+        "text": "The 132-foot-tall structure was designed by the Reid Brothers for the Old Hale Brothers Department Store. The complex opened in 1912 and was later occupied by J.C. Penney's from 1944 to 1971."
+      },
+      "confidence": "high",
+      "note": "The Reid Brothers, 1912 and the Hale Brothers department store are facts about the building that stands there and go into the page's building block. The conversion is a proposal and stays in extra.",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3704001",
+        "path": "/san-francisco/south-of-market/market-street/901/",
+        "eas_address": "901 MARKET ST",
+        "method": "EAS exact match on 901 MARKET ST → parcel 3704001; sf-parcels has blklot 3704001 active, 901–901 MARKET; the 2025 roll records it as commercial office, built 1912.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Entry on the existing page at /san-francisco/south-of-market/market-street/901/. Nothing was added to the building block, because the page already names the building '(Old) Hale Brothers Department Store' with Reid Brothers as its architect — exactly what the article states, from a better source. Ankrom Moisan drew the conversion, which is a proposal. No card on the homepage news grid: it holds the newest six entries on the site and its oldest card is dated September 2026, so a July entry sorts below all six. See PIPELINE.md → The homepage grid."
+      }
+    },
+    {
+      "id": "backfill-2026-07-0021",
+      "date": "2026-07-01",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "2445 Ocean Avenue",
+      "street_number": "2445",
+      "street_name": "OCEAN",
+      "street_type": "AVE",
+      "description": "Demolition and new building permits have been filed for a four-storey mixed-use building at 2445 Ocean Avenue in Ingleside Terraces, on a triangular parcel near the junction with Junipero Serra Boulevard. The 40-foot structure would yield about 7,450 square feet — 3,600 of housing in two three-bedroom apartments and 3,850 of commercial space. Troy Kashanipour Architecture designed it as a wood-frame building clad in beige rainscreen panels with floor-to-ceiling windows. Perigon Hospitality is the owner, filing through 2445 Ocean LLC. The city approved the development in May 2026; construction is estimated at about $1.95 million over 18 to 20 months.",
+      "extra": {
+        "architect_of_proposal": "Troy Kashanipour Architecture",
+        "owner": "Perigon Hospitality",
+        "filing_entity": "2445 Ocean LLC",
+        "proposed_units": 2,
+        "proposed_stories": 4,
+        "total_sqft": 7450,
+        "residential_sqft": 3600,
+        "commercial_sqft": 3850,
+        "construction_cost_estimate_usd": 1950000,
+        "construction_duration_estimate_months": "18–20",
+        "approval_granted": "May 2026"
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “New Building Permits For 2445 Ocean Avenue, San Francisco,” 1 July 2026",
+        "url": "https://sfyimby.com/2026/07/new-building-permits-for-2445-ocean-avenue-san-francisco.html",
+        "locator": "first three paragraphs"
+      },
+      "raw": {
+        "text": "Demolition and new building permits have been filed for a four-story mixed-use development at 2445 Ocean Avenue in the Ingleside Terraces neighborhood of San Francisco. The project would bring new housing and commercial space along the major thoroughfare close to Stonestown Mall."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "6902010",
+        "path": "/san-francisco/lakeshore/ocean-avenue/2445/",
+        "eas_address": "2445 OCEAN AVE",
+        "method": "EAS exact match on 2445 OCEAN AVE → parcel 6902010; sf-parcels has blklot 6902010 active, 2445–2445 OCEAN; the 2025 roll records it as commercial office, built 1923.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "Seeded /san-francisco/lakeshore/ocean-avenue/2445/ from research/manifests/news-backfill-2026-07.json — parcel 6902010, no page existed. Nothing in the building block: Troy Kashanipour Architecture drew a replacement for the building on the site. No card on the homepage news grid: it holds the newest six entries on the site and its oldest card is dated September 2026, so a July entry sorts below all six. See PIPELINE.md → The homepage grid."
+      }
+    }
+  ]
+}

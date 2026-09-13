@@ -13,6 +13,7 @@ The buildings documented here so far inside the Ingleside Terrace Historic Distr
 - [Mercedes Way](/san-francisco/ingleside-terraces/mercedes-way/) — 4 documented buildings inside the district.
 - [Moncada Way](/san-francisco/ingleside-terraces/moncada-way/) — 5 documented buildings inside the district.
 - [Ocean Avenue, Ingleside Terraces](/san-francisco/ingleside-terraces/ocean-avenue/) — 4 documented buildings inside the district.
+- [Ocean Avenue, Lakeshore](/san-francisco/lakeshore/ocean-avenue/) — 1 documented building inside the district.
 - [Ocean Avenue, West of Twin Peaks](/san-francisco/west-of-twin-peaks/ocean-avenue/) — 1 documented building inside the district.
 - [Paloma Avenue](/san-francisco/ingleside-terraces/paloma-avenue/) — 4 documented buildings inside the district.
 - [Urbano Drive](/san-francisco/ingleside-terraces/urbano-drive/) — 5 documented buildings inside the district.
@@ -56,6 +57,7 @@ The buildings documented here so far inside the Ingleside Terrace Historic Distr
 - [1931–1935 Ocean Avenue](/san-francisco/ingleside-terraces/ocean-avenue/1931/) — A 1929 store building, with reroofing permitted in 2001.
 - [1939–1945 Ocean Avenue](/san-francisco/ingleside-terraces/ocean-avenue/1939/) — A 1924 store building, with window replacement permitted in 2016.
 - [1951 Ocean Avenue](/san-francisco/ingleside-terraces/ocean-avenue/1951/) — Legg's Skating Rink, an Ocean Avenue entertainment venue from 1933.
+- [2445 Ocean Avenue](/san-francisco/lakeshore/ocean-avenue/2445/) — A 1923 office building, with reroofing permitted in 2026.
 - [2111 Ocean Avenue](/san-francisco/west-of-twin-peaks/ocean-avenue/2111/) — A 1922 single-family house, with a bathroom remodel permitted in 2006.
 - [48 Paloma Avenue](/san-francisco/ingleside-terraces/paloma-avenue/48/) — A 1912 single-family house, with reroofing permitted in 2024.
 - [49 Paloma Avenue](/san-francisco/ingleside-terraces/paloma-avenue/49/) — A 1912 single-family house, with reroofing permitted in 2025.

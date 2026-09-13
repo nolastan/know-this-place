@@ -8,6 +8,7 @@ The parcels on Lombard Street documented here so far, from the city's address, a
 - [2165](2165/) — A 1950 store building, with a kitchen remodel permitted in 2026.
 - [2415–2417](2415/) — A 1922 2-unit building with a ground-floor store, with a kitchen and bathroom remodel permitted in 2011.
 - [2576](2576/) — A 1940 hotel, with reroofing permitted in 2022.
+- [2629](2629/) — A 1932 single-family house, with a vertical addition permitted in 2009.
 - [2770](2770/) — A 1926 53-unit apartment building, with reroofing permitted in 2018.
 
 Pages are generated from the DataSF datasets listed in each page's
