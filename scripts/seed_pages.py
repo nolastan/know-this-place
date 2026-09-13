@@ -2207,6 +2207,19 @@ REFERRALS = {
                  "(optional)” field when you create an Insomnia Cookies "
                  "account."),
     },
+    "instacart": {
+        # The issue said "$10 / $10"; the referral link's own landing modal says
+        # "You got $10 referral credit!" over "$10 off", which is the page the
+        # reader lands on, so the two agree. The link carries the code but only
+        # the home page honours it, so the row carries a `note` saying where to
+        # start rather than implying it opens the shop.
+        "url": "https://www.instacart.com/?code=SROSENTHAL1F3D5",
+        "offer": "Get $10 credit at Instacart",
+        "app": "Instacart",
+        "note": ("Referral link. It opens Instacart's home page, where the "
+                 "credit is applied — a store's own page does not take it — "
+                 "so sign up there and then shop this store."),
+    },
     "momence-folk-yoga": {
         "url": "https://momence.com/sign-up/member?hostId=35337&ref=f11db7945aa1e9ae718b1e8e6fa2c3f6",
         "offer": "Get $10 credit at Folk Yoga",

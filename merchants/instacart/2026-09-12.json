@@ -1,0 +1,2002 @@
+{
+  "source_id": "instacart",
+  "batch": "2026-09-12",
+  "read_on": "2026-09-12",
+  "notes": "Instacart's San Francisco stores, from the list typed into issue #281 on 2026-09-12. **The directory was not fetched.** https://www.instacart.com/robots.txt ends in `User-Agent: *` / `Disallow: /`, a blanket disallow, and this repo honours robots.txt in every module — so the fifty-four listings here are the ones the issue's author transcribed from https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca, and every entry carries a name and an address and nothing else. No categories and no opening hours: a transcribed list has none, so no entry publishes `kinds` or `opening_hours` and no panel carries a \"Last updated\" line. A refresh means asking a human for a fresh list, not re-running a fetch. The one page that was opened is the referral credential itself, which merchants/AGENTS.md requires be read rather than taken from the ticket: https://www.instacart.com/?code=SROSENTHAL1F3D5 carries a share-code payload whose landing modal reads \"You got $10 referral credit!\" over \"$10 off\" and \"Savings applied at checkout\", which agrees with the issue's \"$10 / $10\". One offer covers the whole directory, so there is one REFERRALS row, `instacart`, and one source id on every page; the issue records that the code only takes on the home page, so the row carries a `note` saying to start there. Four listings are Instacart's own rapid-delivery tiers of shops already in the list — Safeway Rapid, Andronico's Rapid, FoodsCo Delivery Now and Target: Fast Delivery, each filed at its twin's address with a synthetic \"Suite A20\" appended — and they are declined rather than published as second businesses at one door. Four addresses needed resolving by hand: 3995 Alemany Boulevard and 2815 Diamond Street, which EAS files on a retired parcel and on a flat; 789 Mission Street, which EAS holds with no parcel at all; and 465 Hayes Street, whose seven-parcel map the 2025 roll has yet to report, so its page was written by hand with no roll facts.",
+  "coverage": {
+    "unit": "store listings",
+    "examined": 54,
+    "mentions": 54,
+    "remaining": "None; every San Francisco listing in issue #281 is here."
+  },
+  "findings": [
+    {
+      "id": "2026-09-12-0001",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2300 16th St.",
+      "street_number": "2300",
+      "street_name": "16TH",
+      "street_type": "ST",
+      "description": "Instacart lists Safeway at this address.",
+      "extra": {
+        "name": "Safeway",
+        "name_as_listed": "Safeway",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94103",
+        "street_address_as_listed": "2300 16th St., San Francisco, CA 94103"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3930A002",
+        "path": "/san-francisco/mission/16th-street/2300/",
+        "eas_address": "2300 16TH ST",
+        "method": "EAS exact match on 2300 16TH ST → parcel 3930A002; sf-parcels has blklot 3930A002 active, 2300–2300 16TH; the 2025 roll records it as commercial retail, built 1997.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/mission/16th-street/2300/."
+      }
+    },
+    {
+      "id": "2026-09-12-0002",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "450 10th St",
+      "street_number": "450",
+      "street_name": "10TH",
+      "street_type": "ST",
+      "description": "Instacart lists Costco at this address.",
+      "extra": {
+        "name": "Costco",
+        "name_as_listed": "Costco",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94103",
+        "street_address_as_listed": "450 10th St, San Francisco, CA 94103"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3524066",
+        "path": "/san-francisco/mission/10th-street/450/",
+        "eas_address": "450 10TH ST",
+        "method": "EAS exact match on 450 10TH ST → parcel 3524066; sf-parcels has blklot 3524066 active, 450–450 10TH; the 2025 roll records it as commercial retail, built 1993.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/mission/10th-street/450/."
+      }
+    },
+    {
+      "id": "2026-09-12-0003",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "550 Divisadero Street",
+      "street_number": "550",
+      "street_name": "DIVISADERO",
+      "street_type": "ST",
+      "description": "Instacart lists Bi-Rite Market at this address.",
+      "extra": {
+        "name": "Bi-Rite Market",
+        "name_as_listed": "Bi-Rite Market",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94117",
+        "street_address_as_listed": "550 Divisadero Street, San Francisco, CA 94117"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1203037",
+        "path": "/san-francisco/haight-ashbury/divisadero-street/550/",
+        "eas_address": "550 DIVISADERO ST",
+        "method": "EAS exact match on 550 DIVISADERO ST → parcel 1203037; sf-parcels has blklot 1203037 active, 550–560 DIVISADERO; the 2025 roll records it as commercial retail, built 1931. EAS puts 550, 560 DIVISADERO ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 550.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/haight-ashbury/divisadero-street/550/."
+      }
+    },
+    {
+      "id": "2026-09-12-0004",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1745 Folsom St",
+      "street_number": "1745",
+      "street_name": "FOLSOM",
+      "street_type": "ST",
+      "description": "Instacart lists Rainbow Grocery at this address.",
+      "extra": {
+        "name": "Rainbow Grocery",
+        "name_as_listed": "Rainbow Grocery",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94103",
+        "street_address_as_listed": "1745 Folsom St, San Francisco, CA 94103"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3529050",
+        "path": "/san-francisco/mission/folsom-street/1745/",
+        "eas_address": "1745 FOLSOM ST",
+        "method": "EAS exact match on 1745 FOLSOM ST → parcel 3529050; sf-parcels has blklot 3529050 active, 1745–1745 FOLSOM; the 2025 roll records it as commercial retail, built 1940.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/mission/folsom-street/1745/."
+      }
+    },
+    {
+      "id": "2026-09-12-0005",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "308 Broderick St",
+      "street_number": "308",
+      "street_name": "BRODERICK",
+      "street_type": "ST",
+      "description": "Instacart lists Falletti Foods at this address.",
+      "extra": {
+        "name": "Falletti Foods",
+        "name_as_listed": "Falletti Foods",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94117",
+        "street_address_as_listed": "308 Broderick St, San Francisco, CA 94117"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1215018",
+        "path": "/san-francisco/haight-ashbury/broderick-street/300/",
+        "eas_address": "300 BRODERICK ST",
+        "method": "EAS exact match on 308 BRODERICK ST → parcel 1215018; sf-parcels has blklot 1215018 active, 300–310 BRODERICK; the 2025 roll records it as commercial retail, built 2007. The assessor files the parcel as 1275 FELL ST. EAS puts 300, 302, 306, 308, 310 BRODERICK ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 300.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/haight-ashbury/broderick-street/300/."
+      }
+    },
+    {
+      "id": "2026-09-12-0006",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2300 16th St",
+      "street_number": "2300",
+      "street_name": "16TH",
+      "street_type": "ST",
+      "description": "Instacart lists Petco at this address.",
+      "extra": {
+        "name": "Petco",
+        "name_as_listed": "Petco",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94103",
+        "street_address_as_listed": "2300 16th St #200, San Francisco, CA 94103",
+        "unit_as_listed": "#200"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3930A002",
+        "path": "/san-francisco/mission/16th-street/2300/",
+        "eas_address": "2300 16TH ST",
+        "method": "EAS exact match on 2300 16TH ST → parcel 3930A002; sf-parcels has blklot 3930A002 active, 2300–2300 16TH; the 2025 roll records it as commercial retail, built 1997.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/mission/16th-street/2300/."
+      }
+    },
+    {
+      "id": "2026-09-12-0007",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2435 California Street",
+      "street_number": "2435",
+      "street_name": "CALIFORNIA",
+      "street_type": "ST",
+      "description": "Instacart lists Mollie Stone's Markets at this address.",
+      "extra": {
+        "name": "Mollie Stone's Markets",
+        "name_as_listed": "Mollie Stone's Markets",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94115",
+        "street_address_as_listed": "2435 California Street, San Francisco, CA 94115"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0654025",
+        "path": "/san-francisco/pacific-heights/california-street/2435/",
+        "eas_address": "2435 CALIFORNIA ST",
+        "method": "EAS exact match on 2435 CALIFORNIA ST → parcel 0654025; sf-parcels has blklot 0654025 active, 2435–2435 CALIFORNIA; the 2025 roll records it as commercial retail, built 1941.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/pacific-heights/california-street/2435/."
+      }
+    },
+    {
+      "id": "2026-09-12-0008",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "350 Seventh Ave",
+      "street_number": "350",
+      "street_name": "07TH",
+      "street_type": "AVE",
+      "description": "Instacart lists Smart & Final at this address.",
+      "extra": {
+        "name": "Smart & Final",
+        "name_as_listed": "Smart & Final",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94118",
+        "street_address_as_listed": "350 Seventh Ave, San Francisco, CA 94118"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1438028",
+        "path": "/san-francisco/inner-richmond/7th-avenue/350/",
+        "eas_address": "350 07TH AVE",
+        "method": "EAS exact match on 350 07TH AVE → parcel 1438028; sf-parcels has blklot 1438028 active, 350–350 07TH; the 2025 roll records it as miscellaneous/mixed-use.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/inner-richmond/7th-avenue/350/."
+      }
+    },
+    {
+      "id": "2026-09-12-0009",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "701 Van Ness Avenue",
+      "street_number": "701",
+      "street_name": "VAN NESS",
+      "street_type": "AVE",
+      "description": "Instacart lists CVS at this address.",
+      "extra": {
+        "name": "CVS",
+        "name_as_listed": "CVS®",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94102",
+        "street_address_as_listed": "701 Van Ness Avenue, San Francisco, CA 94102"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0743203",
+        "path": "/san-francisco/western-addition/van-ness-avenue/701/",
+        "eas_address": "701 VAN NESS AVE",
+        "method": "EAS exact match on 701 VAN NESS AVE → parcel 0743203; sf-parcels has blklot 0743203 active, 701–711 VAN NESS; the 2025 roll records it as commercial office, built 1984. EAS puts 701, 711 VAN NESS AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 701.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/western-addition/van-ness-avenue/701/."
+      }
+    },
+    {
+      "id": "2026-09-12-0010",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2111 Harrison St",
+      "street_number": "2111",
+      "street_name": "HARRISON",
+      "street_type": "ST",
+      "description": "Instacart lists Gus's Community Market at this address.",
+      "extra": {
+        "name": "Gus's Community Market",
+        "name_as_listed": "Gus's Community Market",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94110",
+        "street_address_as_listed": "2111 Harrison St, San Francisco, CA 94110"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3968001",
+        "path": "/san-francisco/mission/alabama-street/400/",
+        "eas_address": "2111 HARRISON ST",
+        "method": "EAS exact match on 2111 HARRISON ST → parcel 3968001; sf-parcels has blklot 3968001 active, 400–440 ALABAMA; the 2025 roll records it as commercial retail, built 1946.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/mission/alabama-street/400/."
+      }
+    },
+    {
+      "id": "2026-09-12-0011",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "170 S. Van Ness Ave",
+      "street_number": "170",
+      "street_name": "SOUTH VAN NESS",
+      "street_type": "AVE",
+      "description": "Instacart lists CHEF'STORE at this address.",
+      "extra": {
+        "name": "CHEF'STORE",
+        "name_as_listed": "CHEF'STORE",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94103",
+        "street_address_as_listed": "170 S. Van Ness Ave, San Francisco, CA 94103"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3514039",
+        "path": "/san-francisco/mission/south-van-ness-avenue/170/",
+        "eas_address": "170 SOUTH VAN NESS AVE",
+        "method": "EAS exact match on 170 SOUTH VAN NESS AVE → parcel 3514039; sf-parcels has blklot 3514039 active, 170–170 SOUTH VAN NESS; the 2025 roll records it as commercial retail, built 1936.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/mission/south-van-ness-avenue/170/."
+      }
+    },
+    {
+      "id": "2026-09-12-0012",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1750 Harrison Street",
+      "street_number": "1750",
+      "street_name": "HARRISON",
+      "street_type": "ST",
+      "description": "Instacart lists Total Wine & More at this address.",
+      "extra": {
+        "name": "Total Wine & More",
+        "name_as_listed": "Total Wine & More",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94103",
+        "street_address_as_listed": "1750 Harrison Street, San Francisco, CA 94103"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3529051",
+        "path": "/san-francisco/mission/harrison-street/1750/",
+        "eas_address": "1750 HARRISON ST",
+        "method": "EAS exact match on 1750 HARRISON ST → parcel 3529051; sf-parcels has blklot 3529051 active, 1750–1750 HARRISON; the 2025 roll records it as commercial retail, built 1996.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/mission/harrison-street/1750/."
+      }
+    },
+    {
+      "id": "2026-09-12-0013",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1200 Irving St",
+      "street_number": "1200",
+      "street_name": "IRVING",
+      "street_type": "ST",
+      "description": "Instacart lists Andronico's Community Markets at this address.",
+      "extra": {
+        "name": "Andronico's Community Markets",
+        "name_as_listed": "Andronico's Community Markets",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94122",
+        "street_address_as_listed": "1200 Irving St Suite 100, San Francisco, CA 94122",
+        "unit_as_listed": "Suite 100"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1737005",
+        "path": "/san-francisco/inner-sunset/irving-street/1200/",
+        "eas_address": "1200 IRVING ST",
+        "method": "EAS exact match on 1200 IRVING ST → parcel 1737005; sf-parcels has blklot 1737005 active, 1200–1200 IRVING; the 2025 roll records it as commercial retail, built 1959.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/inner-sunset/irving-street/1200/."
+      }
+    },
+    {
+      "id": "2026-09-12-0014",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "465 Hayes St.",
+      "street_number": "465",
+      "street_name": "HAYES",
+      "street_type": "ST",
+      "description": "Instacart lists The Epicurean Trader at this address.",
+      "extra": {
+        "name": "The Epicurean Trader",
+        "name_as_listed": "The Epicurean Trader",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94102",
+        "street_address_as_listed": "465 Hayes St., San Francisco, CA 94102"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0817070",
+        "path": "/san-francisco/hayes-valley/hayes-street/465/",
+        "eas_address": "465 HAYES ST",
+        "checked_on": "2026-09-12",
+        "by_hand": true,
+        "method": "By hand, because EAS and sf-parcels disagree by one lot along this frontage and no roll row settles it. EAS files 465 HAYES ST on parcel 0817076, which sf-parcels records as 463–463 HAYES; sf-parcels puts 465–465 HAYES on 0817070, the key parcel of a map of seven active parcels running 453 to 465 Hayes Street. The 2025 roll carries no row for any of the seven, so the seeder skipped the parcel. DBI settles it: every permit at 465 Hayes Street is filed under block 0817 lot 070, and permit M528047 of 2014 on that lot reads “new address at block 0817, lot 070 as; 465 hayes street”. The page is 465 Hayes Street on 0817070, written by hand with no roll facts and three `unknowns` lines saying why.",
+        "note": "Page written by hand; the seeder cannot build it without a roll row."
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/hayes-valley/hayes-street/465/."
+      }
+    },
+    {
+      "id": "2026-09-12-0015",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1301 Van Ness Ave",
+      "street_number": "1301",
+      "street_name": "VAN NESS",
+      "street_type": "AVE",
+      "description": "Instacart lists BevMo! at this address.",
+      "extra": {
+        "name": "BevMo!",
+        "name_as_listed": "BevMo!",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94109",
+        "street_address_as_listed": "1301 Van Ness Ave, San Francisco, CA 94109"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0671002",
+        "path": "/san-francisco/western-addition/van-ness-avenue/1301/",
+        "eas_address": "1301 VAN NESS AVE",
+        "method": "EAS exact match on 1301 VAN NESS AVE → parcel 0671002; sf-parcels has blklot 0671002 active, 221–221 FERN; the 2025 roll records it as commercial retail, built 1912.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/western-addition/van-ness-avenue/1301/."
+      }
+    },
+    {
+      "id": "2026-09-12-0016",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "3995 Alemany Blvd.",
+      "street_number": "3995",
+      "street_name": "ALEMANY",
+      "street_type": "BLVD",
+      "description": "Instacart lists HMart at this address.",
+      "extra": {
+        "name": "HMart",
+        "name_as_listed": "HMart",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94132",
+        "street_address_as_listed": "3995 Alemany Blvd., San Francisco, CA 94132"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "7126A012",
+        "path": "/san-francisco/oceanview-merced-ingleside/alemany-boulevard/3931/",
+        "eas_address": "3995 ALEMANY BLVD",
+        "checked_on": "2026-09-12",
+        "by_hand": true,
+        "method": "By hand, because EAS files the number under a parcel the city has retired. sf-eas-addresses holds 3995 ALEMANY BLVD on parcel 7126A003, which sf-parcels records as inactive; 3911 and 3981 ALEMANY BLVD sit on the same retired parcel. The numbers went to 7126A012, which sf-parcels has active, mapblklot 7126A012, 3911–3995 ALEMANY BLVD, and which the 2025 roll names '3995 3931 ALEMANY BL' — Commercial Stores, built 2002, one storey. EAS's own point for 3995 ALEMANY BLVD falls inside twenty active parcels sharing that mapblklot — the Oceanview Terrace condominium stack at 8100–8400 Oceanview Terrace, which is mapped over the same ground — so the point alone cannot choose between them; the stated range does, and 7126A012 is the only active parcel on the block that carries 3995. The parcel's lowest number is the roll's 3931, so the page is 3931 Alemany Boulevard and the entry carries 3995 as its listed address.",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/oceanview-merced-ingleside/alemany-boulevard/3931/."
+      }
+    },
+    {
+      "id": "2026-09-12-0017",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2020 Market St",
+      "street_number": "2020",
+      "street_name": "MARKET",
+      "street_type": "ST",
+      "description": "Instacart lists O Organics Market at this address.",
+      "extra": {
+        "name": "O Organics Market",
+        "name_as_listed": "O Organics Market",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94114",
+        "street_address_as_listed": "2020 Market St, Unit 1, San Francisco, CA 94114",
+        "unit_as_listed": ", Unit 1"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3536001",
+        "path": "/san-francisco/castro/market-street/2000/",
+        "eas_address": "2000 MARKET ST",
+        "method": "EAS exact match on 2020 MARKET ST → parcel 3536001; sf-parcels has blklot 3536001 active, 2000–2020 MARKET; the 2025 roll records it as commercial retail, built 1954. EAS puts 2000, 2012, 2016, 2018, 2020 MARKET ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2000.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/castro/market-street/2000/."
+      }
+    },
+    {
+      "id": "2026-09-12-0018",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1800 Folsom Street",
+      "street_number": "1800",
+      "street_name": "FOLSOM",
+      "street_type": "ST",
+      "description": "Instacart lists FoodsCo at this address.",
+      "extra": {
+        "name": "FoodsCo",
+        "name_as_listed": "FoodsCo",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94103",
+        "street_address_as_listed": "1800 Folsom Street, San Francisco, CA 94103"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3549083",
+        "path": "/san-francisco/mission/folsom-street/1800/",
+        "eas_address": "1800 FOLSOM ST",
+        "method": "EAS exact match on 1800 FOLSOM ST → parcel 3549083; sf-parcels has blklot 3549083 active, 1800–1800 FOLSOM; the 2025 roll records it as commercial retail, built 1986.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/mission/folsom-street/1800/."
+      }
+    },
+    {
+      "id": "2026-09-12-0019",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1515 Sloat Blvd",
+      "street_number": "1515",
+      "street_name": "SLOAT",
+      "street_type": "BLVD",
+      "description": "Instacart lists Lucky Supermarkets at this address.",
+      "extra": {
+        "name": "Lucky Supermarkets",
+        "name_as_listed": "Lucky Supermarkets",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94132",
+        "street_address_as_listed": "1515 Sloat Blvd, San Francisco, CA 94132"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "7255002",
+        "path": "/san-francisco/sunset-parkside/sloat-boulevard/1507/",
+        "eas_address": "1507 SLOAT BLVD",
+        "method": "EAS exact match on 1515 SLOAT BLVD → parcel 7255002; sf-parcels has blklot 7255002 active, 1515–1559 SLOAT; the 2025 roll records it as commercial retail, built 1992. EAS puts 1507, 1509, 1511, 1515, 1523, 1525, 1527, 1537, 1541, 1545, 1549, 1557, 1559, 1563, 1567, 1581, 1585, 1595, 1597 SLOAT BLVD on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1507.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/sunset-parkside/sloat-boulevard/1507/."
+      }
+    },
+    {
+      "id": "2026-09-12-0020",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1263 Leavenworth St",
+      "street_number": "1263",
+      "street_name": "LEAVENWORTH",
+      "street_type": "ST",
+      "description": "Instacart lists LeBeau Nob Hill at this address.",
+      "extra": {
+        "name": "LeBeau Nob Hill",
+        "name_as_listed": "LeBeau Nob Hill",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94109",
+        "street_address_as_listed": "1263 Leavenworth St, San Francisco, CA 94109"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0219001",
+        "path": "/san-francisco/nob-hill/leavenworth-street/1263/",
+        "eas_address": "1263 LEAVENWORTH ST",
+        "method": "EAS exact match on 1263 LEAVENWORTH ST → parcel 0219001; sf-parcels has blklot 0219001 active, 1263–1263 LEAVENWORTH; the 2025 roll records it as commercial retail, built 1916.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/nob-hill/leavenworth-street/1263/."
+      }
+    },
+    {
+      "id": "2026-09-12-0021",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "789 Mission St.",
+      "street_number": "789",
+      "street_name": "MISSION",
+      "street_type": "ST",
+      "description": "Instacart lists Target at this address.",
+      "extra": {
+        "name": "Target",
+        "name_as_listed": "Target",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94103",
+        "street_address_as_listed": "789 Mission St. Suite A, San Francisco, CA 94103",
+        "unit_as_listed": "Suite A"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3723113",
+        "path": "/san-francisco/south-of-market/4th-street/135/",
+        "eas_address": "789 MISSION ST",
+        "checked_on": "2026-09-12",
+        "by_hand": true,
+        "method": "By hand, because EAS holds 789 MISSION ST with no parcel_number at all. Its point falls inside seven active parcels: 3723113, which sf-parcels records as 135–155 04TH ST, and the six sharing mapblklot 3723114, which sf-parcels records as 763 MISSION ST. EAS settles it — it files both 155 04TH ST and 763 MISSION ST on 3723113 and puts no address at all on the 3723114 set — and the 2025 roll classes all of them Entertainment Complex Gov at 763 Mission. DBI files every permit at 789 Mission St, one of them a tenant improvement naming the Target retail store, under block 3723 lot 001, a lot sf-parcels no longer carries. The site already has a page for 3723113 at /san-francisco/south-of-market/4th-street/135/, which records 763 MISSION ST among its other addresses, so the store goes there and the entry carries 789 Mission Street as its listed address.",
+        "note": "The page for this parcel already exists."
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/south-of-market/4th-street/135/."
+      }
+    },
+    {
+      "id": "2026-09-12-0022",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "203 Folsom Street",
+      "street_number": "203",
+      "street_name": "FOLSOM",
+      "street_type": "ST",
+      "description": "Instacart lists Woodlands at this address.",
+      "extra": {
+        "name": "Woodlands",
+        "name_as_listed": "Woodlands",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94105",
+        "street_address_as_listed": "203 Folsom Street, San Francisco, CA 94105"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3746008",
+        "path": "/san-francisco/south-beach/folsom-street/203/",
+        "eas_address": "203 FOLSOM ST",
+        "method": "EAS exact match on 203 FOLSOM ST → parcel 3746008; sf-parcels has blklot 3746008 active, 203–203 FOLSOM; the 2025 roll records it as commercial retail, built 2015. The assessor files the parcel as 318 MAIN ST0101.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/south-beach/folsom-street/203/."
+      }
+    },
+    {
+      "id": "2026-09-12-0023",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "527 Sutter St",
+      "street_number": "527",
+      "street_name": "SUTTER",
+      "street_type": "ST",
+      "description": "Instacart lists 7-Eleven at this address.",
+      "extra": {
+        "name": "7-Eleven",
+        "name_as_listed": "7-Eleven",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94102",
+        "street_address_as_listed": "527 Sutter St, San Francisco, CA 94102"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0296013D",
+        "path": "/san-francisco/nob-hill/sutter-street/527/",
+        "eas_address": "527 SUTTER ST",
+        "method": "EAS exact match on 527 SUTTER ST → parcel 0296013D; sf-parcels has blklot 0296013D active, 527–533 SUTTER; the 2025 roll records it as commercial retail, built 1921. EAS puts 527, 531, 533 SUTTER ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 527.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/nob-hill/sutter-street/527/."
+      }
+    },
+    {
+      "id": "2026-09-12-0024",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "3700 Geary Boulevard",
+      "street_number": "3700",
+      "street_name": "GEARY",
+      "street_type": "BLVD",
+      "description": "Instacart lists Office Depot OfficeMax at this address.",
+      "extra": {
+        "name": "Office Depot OfficeMax",
+        "name_as_listed": "Office Depot OfficeMax",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94118",
+        "street_address_as_listed": "3700 Geary Boulevard, San Francisco, CA 94118"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1433009",
+        "path": "/san-francisco/lone-mountain/geary-boulevard/3700/",
+        "eas_address": "3700 GEARY BLVD",
+        "method": "EAS exact match on 3700 GEARY BLVD → parcel 1433009; sf-parcels has blklot 1433009 active, 3700–3716 GEARY; the 2025 roll records it as commercial retail, built 1900. EAS puts 3700, 3716 GEARY BLVD on that parcel, so per the directory contract the fact belongs on one page at the lowest, 3700.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/lone-mountain/geary-boulevard/3700/."
+      }
+    },
+    {
+      "id": "2026-09-12-0025",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2045 Evans Ave",
+      "street_number": "2045",
+      "street_name": "EVANS",
+      "street_type": "AVE",
+      "description": "Instacart lists Restaurant Depot at this address.",
+      "extra": {
+        "name": "Restaurant Depot",
+        "name_as_listed": "Restaurant Depot",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94124",
+        "street_address_as_listed": "2045 Evans Ave Ste 100, San Francisco, CA 94124",
+        "unit_as_listed": "Ste 100"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "4343002",
+        "path": "/san-francisco/bayview-hunters-point/evans-avenue/2045/",
+        "eas_address": "2045 EVANS AVE",
+        "method": "EAS exact match on 2045 EVANS AVE → parcel 4343002; sf-parcels has blklot 4343002 active, 2045–2045 EVANS; the 2025 roll records it as commercial retail, built 2002.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/bayview-hunters-point/evans-avenue/2045/."
+      }
+    },
+    {
+      "id": "2026-09-12-0026",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2425 3rd Street",
+      "street_number": "2425",
+      "street_name": "03RD",
+      "street_type": "ST",
+      "description": "Instacart lists La Fromagerie Cheese Shop at this address.",
+      "extra": {
+        "name": "La Fromagerie Cheese Shop",
+        "name_as_listed": "La Fromagerie Cheese Shop",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94107",
+        "street_address_as_listed": "2425 3rd Street, San Francisco, CA 94107"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "4109001",
+        "path": "/san-francisco/dogpatch/3rd-street/2301/",
+        "eas_address": "2301 03RD ST",
+        "method": "EAS exact match on 2425 03RD ST → parcel 4109001; sf-parcels has blklot 4109001 active, 2301–2495 03RD; the 2025 roll records it as industrial, built 1924. EAS puts 2301, 2325, 2331, 2335, 2339, 2341, 2343, 2345, 2347, 2349, 2353, 2405, 2415, 2419, 2421, 2425, 2427, 2429, 2435, 2445, 2455, 2475, 2495 03RD ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2301.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/dogpatch/3rd-street/2301/."
+      }
+    },
+    {
+      "id": "2026-09-12-0027",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1546 Guerrero St.",
+      "street_number": "1546",
+      "street_name": "GUERRERO",
+      "street_type": "ST",
+      "description": "Instacart lists Indian Market and Liquor at this address.",
+      "extra": {
+        "name": "Indian Market and Liquor",
+        "name_as_listed": "Indian Market and Liquor",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94110",
+        "street_address_as_listed": "1546 Guerrero St., San Francisco, CA 94110"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "6594007",
+        "path": "/san-francisco/mission/guerrero-street/1542/",
+        "eas_address": "1542 GUERRERO ST",
+        "method": "EAS exact match on 1546 GUERRERO ST → parcel 6594007; sf-parcels has blklot 6594007 active, 102–116 DUNCAN; the 2025 roll records it as multi-family residential, built 1908. EAS puts 1542, 1546 GUERRERO ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1542.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/mission/guerrero-street/1542/."
+      }
+    },
+    {
+      "id": "2026-09-12-0028",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2083 Union St.",
+      "street_number": "2083",
+      "street_name": "UNION",
+      "street_type": "ST",
+      "description": "Instacart lists Sephora at this address.",
+      "extra": {
+        "name": "Sephora",
+        "name_as_listed": "Sephora",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94123",
+        "street_address_as_listed": "2083 Union St., San Francisco, CA 94123"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0541015",
+        "path": "/san-francisco/marina/union-street/2077/",
+        "eas_address": "2077 UNION ST",
+        "method": "EAS exact match on 2083 UNION ST → parcel 0541015; sf-parcels has blklot 0541015 active, 2077–2083 UNION; the 2025 roll records it as commercial retail, built 1924. EAS puts 2077, 2083 UNION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2077.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/marina/union-street/2077/."
+      }
+    },
+    {
+      "id": "2026-09-12-0029",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1301 Market St",
+      "street_number": "1301",
+      "street_name": "MARKET",
+      "street_type": "ST",
+      "description": "Instacart lists Walgreens at this address.",
+      "extra": {
+        "name": "Walgreens",
+        "name_as_listed": "Walgreens",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94103",
+        "street_address_as_listed": "1301 Market St, San Francisco, CA 94103"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3508001",
+        "path": "/san-francisco/south-of-market/market-street/1301/",
+        "eas_address": "1301 MARKET ST",
+        "method": "EAS exact match on 1301 MARKET ST → parcel 3508001; sf-parcels has blklot 3508001 active, 32–32 09TH; the 2025 roll records it as commercial office, built 1937. EAS puts 1301, 1315, 1325, 1335, 1355, 1363, 1375 MARKET ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1301.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/south-of-market/market-street/1301/."
+      }
+    },
+    {
+      "id": "2026-09-12-0030",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1590 Bryant St",
+      "street_number": "1590",
+      "street_name": "BRYANT",
+      "street_type": "ST",
+      "description": "Instacart lists Sports Basement at this address.",
+      "extra": {
+        "name": "Sports Basement",
+        "name_as_listed": "Sports Basement",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94103",
+        "street_address_as_listed": "1590 Bryant St, San Francisco, CA 94103"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3923005",
+        "path": "/san-francisco/mission/bryant-street/1590/",
+        "eas_address": "1590 BRYANT ST",
+        "method": "EAS exact match on 1590 BRYANT ST → parcel 3923005; sf-parcels has blklot 3923005 active, 1590–1590 BRYANT; the 2025 roll records it as industrial, built 1907.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/mission/bryant-street/1590/."
+      }
+    },
+    {
+      "id": "2026-09-12-0031",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "555 Ninth Street",
+      "street_number": "555",
+      "street_name": "09TH",
+      "street_type": "ST",
+      "description": "Instacart lists The Container Store at this address.",
+      "extra": {
+        "name": "The Container Store",
+        "name_as_listed": "The Container Store",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94103",
+        "street_address_as_listed": "555 Ninth Street, Unit 6B, San Francisco, CA 94103",
+        "unit_as_listed": ", Unit 6B"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3781003",
+        "path": "/san-francisco/south-of-market/9th-street/525/",
+        "eas_address": "525 09TH ST",
+        "method": "EAS exact match on 555 09TH ST → parcel 3781003; sf-parcels has blklot 3781003 active, 525–559 09TH; the 2025 roll records it as commercial retail, built 1991. EAS puts 525, 555, 559 09TH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 525.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/south-of-market/9th-street/525/."
+      }
+    },
+    {
+      "id": "2026-09-12-0032",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "491 Bayshore Blvd",
+      "street_number": "491",
+      "street_name": "BAYSHORE",
+      "street_type": "BLVD",
+      "description": "Instacart lists Lowe's at this address.",
+      "extra": {
+        "name": "Lowe's",
+        "name_as_listed": "Lowe's",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94124",
+        "street_address_as_listed": "491 Bayshore Blvd, San Francisco, CA 94124"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "5598031",
+        "path": "/san-francisco/bayview-hunters-point/bay-shore-boulevard/491/",
+        "eas_address": "491 BAY SHORE BLVD",
+        "method": "EAS exact match on 491 BAY SHORE BLVD → parcel 5598031; sf-parcels has blklot 5598031 active, 491–491 BAY SHORE; the 2025 roll records it as commercial retail, built 2010. The record spells the street BAYSHORE; EAS holds it as BAY SHORE.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/bayview-hunters-point/bay-shore-boulevard/491/."
+      }
+    },
+    {
+      "id": "2026-09-12-0033",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1800 Folsom Street",
+      "street_number": "1800",
+      "street_name": "FOLSOM",
+      "street_type": "ST",
+      "description": "Instacart lists FoodsCo Delivery Now at this address.",
+      "extra": {
+        "name": "FoodsCo Delivery Now",
+        "name_as_listed": "FoodsCo Delivery Now",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94103",
+        "street_address_as_listed": "1800 Folsom Street Suite A20, San Francisco, CA 94103",
+        "unit_as_listed": "Suite A20"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3549083",
+        "path": "/san-francisco/mission/folsom-street/1800/",
+        "eas_address": "1800 FOLSOM ST",
+        "method": "EAS exact match on 1800 FOLSOM ST → parcel 3549083; sf-parcels has blklot 3549083 active, 1800–1800 FOLSOM; the 2025 roll records it as commercial retail, built 1986.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "declined",
+        "note": "Instacart's rapid-delivery tier of the FoodsCo at 1800 Folsom Street, listed at the same door under a synthetic 'Suite A20'. One shop, one entry."
+      }
+    },
+    {
+      "id": "2026-09-12-0034",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "350 Bay St",
+      "street_number": "350",
+      "street_name": "BAY",
+      "street_type": "ST",
+      "description": "Instacart lists Grocery Outlet at this address.",
+      "extra": {
+        "name": "Grocery Outlet",
+        "name_as_listed": "Grocery Outlet",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94133",
+        "street_address_as_listed": "350 Bay St Ste 100, San Francisco, CA 94133",
+        "unit_as_listed": "Ste 100"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0031080",
+        "path": "/san-francisco/russian-hill/bay-street/300/",
+        "eas_address": "300 BAY ST",
+        "method": "EAS exact match on 350 BAY ST → parcel 0031080; sf-parcels has blklot 0031080 active, 350–350 BAY; the 2025 roll records it as multi-family residential. The assessor files the parcel as 2351 POWELL ST. EAS puts 300, 330, 350, 360 BAY ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 300. EAS files the address under parcel 0031003, which sf-parcels reports retired; the active parcel its coordinates fall in is 0031080.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/russian-hill/bay-street/300/."
+      }
+    },
+    {
+      "id": "2026-09-12-0035",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1462 Fillmore Street",
+      "street_number": "1462",
+      "street_name": "FILLMORE",
+      "street_type": "ST",
+      "description": "Instacart lists Jai Ho Indian Grocery at this address.",
+      "extra": {
+        "name": "Jai Ho Indian Grocery",
+        "name_as_listed": "Jai Ho Indian Grocery",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94115",
+        "street_address_as_listed": "1462 Fillmore Street, San Francisco, CA 94115"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0725029",
+        "path": "/san-francisco/western-addition/fillmore-street/1400/",
+        "eas_address": "1400 FILLMORE ST",
+        "method": "EAS exact match on 1462 FILLMORE ST → parcel 0725029; sf-parcels has blklot 0725029 active, 1400–1480 FILLMORE; the 2025 roll records it as commercial office, built 1985. EAS puts 1400, 1406, 1408, 1410, 1426, 1438, 1450, 1460, 1462, 1480 FILLMORE ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1400.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/western-addition/fillmore-street/1400/."
+      }
+    },
+    {
+      "id": "2026-09-12-0036",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1140 Folsom St",
+      "street_number": "1140",
+      "street_name": "FOLSOM",
+      "street_type": "ST",
+      "description": "Instacart lists Quicklly Indian Grocery at this address.",
+      "extra": {
+        "name": "Quicklly Indian Grocery",
+        "name_as_listed": "Quicklly Indian Grocery",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94103",
+        "street_address_as_listed": "1140 Folsom St, San Francisco, CA 94103"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3730293",
+        "path": "/san-francisco/south-of-market/folsom-street/1130/",
+        "eas_address": "1130 FOLSOM ST",
+        "method": "EAS exact match on 1140 FOLSOM ST → parcel 3730293; sf-parcels has blklot 3730293 active, 1138–1140 FOLSOM; the 2025 roll records it as commercial retail, built 2017. EAS puts 1130, 1136, 1140 FOLSOM ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1130. EAS files the address under parcel 3730015, which sf-parcels reports retired; the active parcel its coordinates fall in is 3730293.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/south-of-market/folsom-street/1130/."
+      }
+    },
+    {
+      "id": "2026-09-12-0037",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "72 Dorman Ave",
+      "street_number": "72",
+      "street_name": "DORMAN",
+      "street_type": "AVE",
+      "description": "Instacart lists The Gifted Basket at this address.",
+      "extra": {
+        "name": "The Gifted Basket",
+        "name_as_listed": "The Gifted Basket",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94124",
+        "street_address_as_listed": "72 Dorman Ave, San Francisco, CA 94124"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "5585003",
+        "path": "/san-francisco/bayview-hunters-point/dorman-avenue/4/",
+        "eas_address": "4 DORMAN AVE",
+        "method": "EAS exact match on 72 DORMAN AVE → parcel 5585003; sf-parcels has blklot 5585003 active, 4–90 DORMAN; the 2025 roll records it as industrial, built 1947. EAS puts 4, 6, 8, 10, 20, 50, 60, 62, 64, 66, 68, 70, 72, 74, 82, 84, 86, 90 DORMAN AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 4.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/bayview-hunters-point/dorman-avenue/4/."
+      }
+    },
+    {
+      "id": "2026-09-12-0038",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2124 Union Street",
+      "street_number": "2124",
+      "street_name": "UNION",
+      "street_type": "ST",
+      "description": "Instacart lists Mishka Dog Boutique at this address.",
+      "extra": {
+        "name": "Mishka Dog Boutique",
+        "name_as_listed": "Mishka Dog Boutique",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94123",
+        "street_address_as_listed": "2124 Union Street, San Francisco, CA 94123"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0533012",
+        "path": "/san-francisco/marina/union-street/2124/",
+        "eas_address": "2124 UNION ST",
+        "method": "EAS exact match on 2124 UNION ST → parcel 0533012; sf-parcels has blklot 0533012 active, 2124–2126 UNION; the 2025 roll records it as commercial retail, built 1926. EAS puts 2124, 2126 UNION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2124.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/marina/union-street/2124/."
+      }
+    },
+    {
+      "id": "2026-09-12-0039",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1051 Valencia St",
+      "street_number": "1051",
+      "street_name": "VALENCIA",
+      "street_type": "ST",
+      "description": "Instacart lists Natural Resources at this address.",
+      "extra": {
+        "name": "Natural Resources",
+        "name_as_listed": "Natural Resources",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94110",
+        "street_address_as_listed": "1051 Valencia St, San Francisco, CA 94110"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3616020",
+        "path": "/san-francisco/mission/valencia-street/1049/",
+        "eas_address": "1049 VALENCIA ST",
+        "method": "EAS exact match on 1051 VALENCIA ST → parcel 3616020; sf-parcels has blklot 3616020 active, 1049–1051 VALENCIA; the 2025 roll records it as multi-family residential, built 1878. EAS puts 1049, 1051 VALENCIA ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1049.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/mission/valencia-street/1049/."
+      }
+    },
+    {
+      "id": "2026-09-12-0040",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "627 Vallejo Street",
+      "street_number": "627",
+      "street_name": "VALLEJO",
+      "street_type": "ST",
+      "description": "Instacart lists Cole Hardware at this address.",
+      "extra": {
+        "name": "Cole Hardware",
+        "name_as_listed": "Cole Hardware",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94133",
+        "street_address_as_listed": "627 Vallejo Street, San Francisco, CA 94133"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0146017",
+        "path": "/san-francisco/chinatown/vallejo-street/627/",
+        "eas_address": "627 VALLEJO ST",
+        "method": "EAS exact match on 627 VALLEJO ST → parcel 0146017; sf-parcels has blklot 0146017 active, 627–629 VALLEJO; the 2025 roll records it as commercial retail, built 1932. EAS puts 627, 629 VALLEJO ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 627.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/chinatown/vallejo-street/627/."
+      }
+    },
+    {
+      "id": "2026-09-12-0041",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2162A Union Street",
+      "street_number": "2162",
+      "street_name": "UNION",
+      "street_type": "ST",
+      "description": "Instacart lists Pressed at this address.",
+      "extra": {
+        "name": "Pressed",
+        "name_as_listed": "Pressed",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94123",
+        "street_address_as_listed": "2162A Union Street, San Francisco, CA 94123"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0533016",
+        "path": "/san-francisco/marina/union-street/2160/",
+        "eas_address": "2160 UNION ST",
+        "method": "EAS exact match on 2162 UNION ST → parcel 0533016; sf-parcels has blklot 0533016 active, 2160–2168 UNION; the 2025 roll records it as multi-family residential, built 1907. EAS puts 2160, 2162, 2168 UNION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2160.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/marina/union-street/2160/."
+      }
+    },
+    {
+      "id": "2026-09-12-0042",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1426 18th Street",
+      "street_number": "1426",
+      "street_name": "18TH",
+      "street_type": "ST",
+      "description": "Instacart lists Le Marché Cezanne at this address.",
+      "extra": {
+        "name": "Le Marché Cezanne",
+        "name_as_listed": "Le Marché Cezanne",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94107",
+        "street_address_as_listed": "1426 18th Street, San Francisco, CA 94107"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "4003016",
+        "path": "/san-francisco/potrero-hill/18th-street/1424/",
+        "eas_address": "1424 18TH ST",
+        "method": "EAS exact match on 1426 18TH ST → parcel 4003016; sf-parcels has blklot 4003016 active, 1424–1434 18TH; the 2025 roll records it as multi-family residential, built 1910. EAS puts 1424, 1426, 1430, 1434 18TH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1424.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/potrero-hill/18th-street/1424/."
+      }
+    },
+    {
+      "id": "2026-09-12-0043",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1975 Market Street",
+      "street_number": "1975",
+      "street_name": "MARKET",
+      "street_type": "ST",
+      "description": "Instacart lists Pet Food Express at this address.",
+      "extra": {
+        "name": "Pet Food Express",
+        "name_as_listed": "Pet Food Express",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94103",
+        "street_address_as_listed": "1975 Market Street, San Francisco, CA 94103"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3534057",
+        "path": "/san-francisco/hayes-valley/market-street/1975/",
+        "eas_address": "1975 MARKET ST",
+        "method": "EAS exact match on 1975 MARKET ST → parcel 3534057; sf-parcels has blklot 3534057 active, 1975–1975 MARKET; the 2025 roll records it as commercial retail, built 1922.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/hayes-valley/market-street/1975/."
+      }
+    },
+    {
+      "id": "2026-09-12-0044",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "789 Mission St.",
+      "street_number": "789",
+      "street_name": "MISSION",
+      "street_type": "ST",
+      "description": "Instacart lists Target: Fast Delivery at this address.",
+      "extra": {
+        "name": "Target: Fast Delivery",
+        "name_as_listed": "Target: Fast Delivery",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94103",
+        "street_address_as_listed": "789 Mission St. Suite A Suite A20, San Francisco, CA 94103",
+        "unit_as_listed": "Suite A Suite A20"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3723113",
+        "path": "/san-francisco/south-of-market/4th-street/135/",
+        "eas_address": "789 MISSION ST",
+        "checked_on": "2026-09-12",
+        "by_hand": true,
+        "method": "By hand, because EAS holds 789 MISSION ST with no parcel_number at all. Its point falls inside seven active parcels: 3723113, which sf-parcels records as 135–155 04TH ST, and the six sharing mapblklot 3723114, which sf-parcels records as 763 MISSION ST. EAS settles it — it files both 155 04TH ST and 763 MISSION ST on 3723113 and puts no address at all on the 3723114 set — and the 2025 roll classes all of them Entertainment Complex Gov at 763 Mission. DBI files every permit at 789 Mission St, one of them a tenant improvement naming the Target retail store, under block 3723 lot 001, a lot sf-parcels no longer carries. The site already has a page for 3723113 at /san-francisco/south-of-market/4th-street/135/, which records 763 MISSION ST among its other addresses, so the store goes there and the entry carries 789 Mission Street as its listed address.",
+        "note": "The page for this parcel already exists."
+      },
+      "publish": {
+        "status": "declined",
+        "note": "Instacart's rapid-delivery tier of the Target at 789 Mission Street, listed at the same door under a synthetic 'Suite A20'. One shop, one entry."
+      }
+    },
+    {
+      "id": "2026-09-12-0045",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1971 Fillmore Street",
+      "street_number": "1971",
+      "street_name": "FILLMORE",
+      "street_type": "ST",
+      "description": "Instacart lists Kiehl's at this address.",
+      "extra": {
+        "name": "Kiehl's",
+        "name_as_listed": "Kiehl's",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94115",
+        "street_address_as_listed": "1971 Fillmore Street, San Francisco, CA 94115"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0659001",
+        "path": "/san-francisco/pacific-heights/fillmore-street/1971/",
+        "eas_address": "1971 FILLMORE ST",
+        "method": "EAS exact match on 1971 FILLMORE ST → parcel 0659001; sf-parcels has blklot 0659001 active, 1971–1971 FILLMORE; the 2025 roll records it as multi-family residential, built 1900.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/pacific-heights/fillmore-street/1971/."
+      }
+    },
+    {
+      "id": "2026-09-12-0046",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2480 San Bruno Ave",
+      "street_number": "2480",
+      "street_name": "SAN BRUNO",
+      "street_type": "AVE",
+      "description": "Instacart lists San Bruno Market at this address.",
+      "extra": {
+        "name": "San Bruno Market",
+        "name_as_listed": "San Bruno Market",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94134",
+        "street_address_as_listed": "2480 San Bruno Ave, San Francisco, CA 94134"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "5925034",
+        "path": "/san-francisco/bayview-hunters-point/san-bruno-avenue/2480/",
+        "eas_address": "2480 SAN BRUNO AVE",
+        "method": "EAS exact match on 2480 SAN BRUNO AVE → parcel 5925034; sf-parcels has blklot 5925034 active, 2480–2480 SAN BRUNO; the 2025 roll records it as commercial retail, built 1940.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/bayview-hunters-point/san-bruno-avenue/2480/."
+      }
+    },
+    {
+      "id": "2026-09-12-0047",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1200 Irving St",
+      "street_number": "1200",
+      "street_name": "IRVING",
+      "street_type": "ST",
+      "description": "Instacart lists Andronico's Rapid at this address.",
+      "extra": {
+        "name": "Andronico's Rapid",
+        "name_as_listed": "Andronico's Rapid",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94122",
+        "street_address_as_listed": "1200 Irving St Suite 100 Suite A20, San Francisco, CA 94122",
+        "unit_as_listed": "Suite 100 Suite A20"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1737005",
+        "path": "/san-francisco/inner-sunset/irving-street/1200/",
+        "eas_address": "1200 IRVING ST",
+        "method": "EAS exact match on 1200 IRVING ST → parcel 1737005; sf-parcels has blklot 1737005 active, 1200–1200 IRVING; the 2025 roll records it as commercial retail, built 1959.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "declined",
+        "note": "Instacart's rapid-delivery tier of the Andronico's at 1200 Irving Street, listed at the same door under a synthetic 'Suite A20'. One shop, one entry."
+      }
+    },
+    {
+      "id": "2026-09-12-0048",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2300 16th St.",
+      "street_number": "2300",
+      "street_name": "16TH",
+      "street_type": "ST",
+      "description": "Instacart lists Safeway Rapid at this address.",
+      "extra": {
+        "name": "Safeway Rapid",
+        "name_as_listed": "Safeway Rapid",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94103",
+        "street_address_as_listed": "2300 16th St. Suite A20, San Francisco, CA 94103",
+        "unit_as_listed": "Suite A20"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3930A002",
+        "path": "/san-francisco/mission/16th-street/2300/",
+        "eas_address": "2300 16TH ST",
+        "method": "EAS exact match on 2300 16TH ST → parcel 3930A002; sf-parcels has blklot 3930A002 active, 2300–2300 16TH; the 2025 roll records it as commercial retail, built 1997.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "declined",
+        "note": "Instacart's rapid-delivery tier of the Safeway at 2300 16th Street, listed at the same door under a synthetic 'Suite A20'. One shop, one entry."
+      }
+    },
+    {
+      "id": "2026-09-12-0049",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "490 Taraval Street",
+      "street_number": "490",
+      "street_name": "TARAVAL",
+      "street_type": "ST",
+      "description": "Instacart lists Guerra Quality Meats at this address.",
+      "extra": {
+        "name": "Guerra Quality Meats",
+        "name_as_listed": "Guerra Quality Meats",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94116",
+        "street_address_as_listed": "490 Taraval Street, San Francisco, CA 94116"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "2343021",
+        "path": "/san-francisco/west-of-twin-peaks/taraval-street/490/",
+        "eas_address": "490 TARAVAL ST",
+        "method": "EAS exact match on 490 TARAVAL ST → parcel 2343021; sf-parcels has blklot 2343021 active, 2382–2390 15TH; the 2025 roll records it as multi-family residential, built 1929.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/west-of-twin-peaks/taraval-street/490/."
+      }
+    },
+    {
+      "id": "2026-09-12-0050",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "3445 California Street",
+      "street_number": "3445",
+      "street_name": "CALIFORNIA",
+      "street_type": "ST",
+      "description": "Instacart lists Bryan's Market at this address.",
+      "extra": {
+        "name": "Bryan's Market",
+        "name_as_listed": "Bryan's Market",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94118",
+        "street_address_as_listed": "3445 California Street, San Francisco, CA 94118"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1034004",
+        "path": "/san-francisco/presidio-heights/california-street/3445/",
+        "eas_address": "3445 CALIFORNIA ST",
+        "method": "EAS exact match on 3445 CALIFORNIA ST → parcel 1034004; sf-parcels has blklot 1034004 active, 3445–3445 CALIFORNIA; the 2025 roll records it as commercial retail, built 1949.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/presidio-heights/california-street/3445/."
+      }
+    },
+    {
+      "id": "2026-09-12-0051",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2815 Diamond St.",
+      "street_number": "2815",
+      "street_name": "DIAMOND",
+      "street_type": "ST",
+      "description": "Instacart lists Canyon Market at this address.",
+      "extra": {
+        "name": "Canyon Market",
+        "name_as_listed": "Canyon Market",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94131",
+        "street_address_as_listed": "2815 Diamond St., San Francisco, CA 94131"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "6745074",
+        "path": "/san-francisco/glen-park/diamond-street/2815/",
+        "eas_address": "2815 DIAMOND ST",
+        "checked_on": "2026-09-12",
+        "by_hand": true,
+        "method": "By hand, because EAS files the number on a flat. sf-eas-addresses holds 2815 DIAMOND ST on parcel 6745086, which the 2025 roll records as '0000 0053 WILDER ST0403' — a residential condominium unit, which is why the resolver declined it. sf-parcels puts nineteen active parcels on mapblklot 6745072: fifteen condominium units at 53 Wilder Street, two at 2825 Diamond Street the roll classes LIBRARY, and 6745074, which sf-parcels records as 2815–2815 DIAMOND ST and the 2025 roll as '0000 2815 DIAMOND ST0000' — Commercial Stores, built 2006, two storeys, 7,793 sq ft. That is the commercial parcel at the shop's own door and it is not a condominium, so the page is 2815 Diamond Street on 6745074 rather than a unit's.",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/glen-park/diamond-street/2815/."
+      }
+    },
+    {
+      "id": "2026-09-12-0052",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "782 Arguello Blvd.",
+      "street_number": "782",
+      "street_name": "ARGUELLO",
+      "street_type": "BLVD",
+      "description": "Instacart lists Arguello Market at this address.",
+      "extra": {
+        "name": "Arguello Market",
+        "name_as_listed": "Arguello Market",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94118",
+        "street_address_as_listed": "782 Arguello Blvd., San Francisco, CA 94118"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1167021",
+        "path": "/san-francisco/inner-richmond/arguello-boulevard/782/",
+        "eas_address": "782 ARGUELLO BLVD",
+        "method": "EAS exact match on 782 ARGUELLO BLVD → parcel 1167021; sf-parcels has blklot 1167021 active, 782–782 ARGUELLO; the 2025 roll records it as commercial retail, built 1930.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/inner-richmond/arguello-boulevard/782/."
+      }
+    },
+    {
+      "id": "2026-09-12-0053",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "580 Green St",
+      "street_number": "580",
+      "street_name": "GREEN",
+      "street_type": "ST",
+      "description": "Instacart lists Luke's Local at this address.",
+      "extra": {
+        "name": "Luke's Local",
+        "name_as_listed": "Luke's Local",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94133",
+        "street_address_as_listed": "580 Green St, San Francisco, CA 94133"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0116020A",
+        "path": "/san-francisco/north-beach/green-street/580/",
+        "eas_address": "580 GREEN ST",
+        "method": "EAS exact match on 580 GREEN ST → parcel 0116020A; sf-parcels has blklot 0116020A active, 580–580 GREEN; the 2025 roll records it as commercial retail, built 1963.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/north-beach/green-street/580/."
+      }
+    },
+    {
+      "id": "2026-09-12-0054",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "448 Cortland Avenue",
+      "street_number": "448",
+      "street_name": "CORTLAND",
+      "street_type": "AVE",
+      "description": "Instacart lists The Good Life Grocery at this address.",
+      "extra": {
+        "name": "The Good Life Grocery",
+        "name_as_listed": "The Good Life Grocery",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94110",
+        "street_address_as_listed": "448 Cortland Avenue, San Francisco, CA 94110"
+      },
+      "citation": {
+        "label": "Instacart, stores near San Francisco, CA",
+        "url": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+        "locator": "the list of San Francisco stores, transcribed into issue #281"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "5678001",
+        "path": "/san-francisco/bernal-heights/cortland-avenue/448/",
+        "eas_address": "448 CORTLAND AVE",
+        "method": "EAS exact match on 448 CORTLAND AVE → parcel 5678001; sf-parcels has blklot 5678001 active, 448–448 CORTLAND; the 2025 roll records it as commercial retail, built 1925.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "An `occupants` entry on /san-francisco/bernal-heights/cortland-avenue/448/."
+      }
+    }
+  ]
+}

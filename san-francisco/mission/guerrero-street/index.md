@@ -285,6 +285,7 @@ Every residential parcel on Guerrero Street that the city's address, assessor an
 - [1420–1424](1420/) — A 1900 three-flat, with reroofing permitted in 1999.
 - [1426–1428](1426/) — An 1890 6-unit apartment building, with a kitchen and bathroom remodel permitted in 2026.
 - [1440–1444](1440/) — A 1910 three-flat, with reroofing permitted in 2019.
+- [1542–1546](1542/) — A 1908 5-unit building with a ground-floor store, with reroofing permitted in 2023.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

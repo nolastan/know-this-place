@@ -12,6 +12,7 @@ The parcels on Arguello Boulevard documented here so far, from the city's addres
 - [421](421/) — A 2012 8-unit apartment building, with garage work permitted in 2005.
 - [460](460/) — A 1930 school building, with permit records from 1996 to 2015.
 - [600](600/) — An assessor class: vacant lot in the Midcentury Recreation Historic District (Discontiguous), with a seismic retrofit permitted in 2018.
+- [782](782/) — A 1930 store building, with window replacement permitted in 2006.
 
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

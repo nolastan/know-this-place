@@ -19,6 +19,7 @@ The parcels on California Street documented here so far, from the city's address
 - [2262–2266](2262/) — A 1904 church, with a seismic retrofit permitted in 2007.
 - [2300](2300/) — A 1962 office building, with reroofing permitted in 2022.
 - [2401–2417](2401/) — A 1905 10-unit apartment building in the Upper Fillmore Neighborhood Commercial Historic District, with a vertical addition permitted in 1996.
+- [2435](2435/) — A 1941 store building, with plumbing work permitted in 2025.
 - [2438–2442](2438/) — A 1900 three-flat, with a kitchen and bathroom remodel permitted in 2016.
 - [2470](2470/) — A 1900 garage, with permit records from 1985 to 1991.
 - [2603](2603/) — A 1900 single-family house, with foundation work permitted in 1999.

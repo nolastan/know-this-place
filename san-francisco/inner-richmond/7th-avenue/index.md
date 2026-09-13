@@ -8,6 +8,7 @@ The parcels on Seventh Avenue documented here so far, from the city's address, a
 - [144–146](144/) — A 1910 building, with a kitchen remodel permitted in 2022.
 - [263](263/) — A 1906 single-family house, with one permit record from 1997.
 - [290](290/) — A 1923 store building, with a seismic retrofit permitted in 1993.
+- [350](350/) — An assessor class: vacant lot, with plumbing work permitted in 1996.
 - [516](516/) — A 1910 single-family house, with foundation work permitted in 1999.
 - [700–702](700/) — A 1907 3-unit building with a ground-floor store, with reroofing permitted in 2008.
 - [730](730/) — A 1923 two-flat, with a rear addition permitted in 1986.

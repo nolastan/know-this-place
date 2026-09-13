@@ -211,6 +211,7 @@ are listed so their size is visible before anyone opens one.
 | `inner-mission-north-context-statement.json` | 102 | 39 KB | `mission` |
 | `inner-sunset-context-statement.json` | 315 | 119 KB | `inner-sunset` |
 | `insomniacookies-2026-09-12.json` | 3 | 1 KB | `east-cut`, `lakeshore`, `south-of-market` |
+| `instacart-2026-09-12.json` | 25 | 9 KB | `bayview-hunters-point`, `nob-hill`, `marina` +15 |
 | `institutional-campuses.json` | 17 | 6 KB | `tenderloin`, `nob-hill`, `potrero-hill` +5 |
 | `issues-2023-11-to-2024-12.json` | 5 | 2 KB | `corbett-heights`, `noe-valley` |
 | `issues-2026-02-to-2026-07.json` | 4 | 1 KB | `corbett-heights`, `castro` |
