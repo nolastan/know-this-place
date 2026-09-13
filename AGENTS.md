@@ -33,10 +33,10 @@ Go there for a section; don't read it whole.
    a human explicitly asks.
 6. **No new tooling.** No frameworks, build systems, package manifests, or
    dependencies. The stack is files, one stylesheet, one dependency-free
-   enhancement script (`shared/site.js`), and six stdlib-only Python scripts
+   enhancement script (`shared/site.js`), and seven stdlib-only Python scripts
    (`seed_pages.py`, `validate.py`, `build_sitemap.py`, `build_map_index.py`,
-   `build_link_index.py`, `build_stats.py`). Every page must render completely
-   from its HTML alone.
+   `build_link_index.py`, `build_corpus_index.py`, `build_stats.py`). Every
+   page must render completely from its HTML alone.
 7. **Seed pages with the script, not by hand.** Hand-writing HTML for a page
    whose every fact comes from an API is a waste; spend the effort on the pages
    with a story worth researching.
@@ -149,13 +149,13 @@ refresh of stale data:
    `python3 scripts/seed_pages.py hubs --city <city> --area <area>`. That keeps
    each hub's hand-written intro and regenerates only the list.
 6. If pages were added or removed — or a page's `historic_district` changed —
-   run `seed_pages.py districts`, `build_sitemap.py`, `build_map_index.py` and
-   `build_link_index.py`. All four are derived indexes and `validate.py` fails
-   until each is current. `build_stats.py` is a fifth derived index — the
-   dashboard at `/stats/` — and the one exception to that
-   rule: four of its numbers are ages in days, so it goes stale by the clock
-   and `validate.py` deliberately never fails on it. Run it anyway; it counts
-   the tree in seconds and costs nothing.
+   run `seed_pages.py districts`, `build_sitemap.py`, `build_map_index.py`,
+   `build_link_index.py` and `build_corpus_index.py`. All five are derived
+   indexes and `validate.py` fails until each is current. `build_stats.py` is
+   a sixth derived index — the dashboard at `/stats/` — and the one exception
+   to that rule: four of its numbers are ages in days, so it goes stale by the
+   clock and `validate.py` deliberately never fails on it. Run it anyway; it
+   counts the tree in seconds and costs nothing.
 7. **Put the page on the homepage if it is interesting** — see
    [REFERENCE.md → The featured grid](REFERENCE.md#the-featured-grid).
 8. Run `python3 scripts/validate.py` and fix everything it flags.
