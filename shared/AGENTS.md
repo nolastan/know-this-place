@@ -99,14 +99,16 @@ Nothing else has a block. A fact that fits none of these is a renderer gap, not
 a licence to write markup: see "Extending the system".
 
 **Write the spelling in the left column, not one of its synonyms.** A handful
-of hand-written pages reached for a different word for a key that already
+of hand-written pages once reached for a different word for a key that already
 existed — `permits_note` for `permit_summary.note`, `building_history` for
-`historical_record`, `aliases` and `also_known_as` for `also_addressed`,
-`historic_districts` for `historic_district` plus `also_in_districts`,
-`open_questions` for `unknowns`, `planning_name` for `survey_name`. The
-renderer reads all of them into the block above so no page loses its content,
-and issue #148 will migrate them and delete the alias reads. Don't add a new
-one: a spelling the renderer doesn't know renders as nothing at all.
+`building` plus `historical_record`, `aliases` and `also_known_as` for
+`also_addressed`, `historic_districts` for `historic_district` plus
+`also_in_districts`, `open_questions` for `unknowns`, `planning_name` for
+`survey_name`. Issue #148 migrated every page carrying one of those spellings
+and deleted the alias reads, and `validate.py` now rejects a `data.json` top-
+level key outside `seed_pages.ADDRESS_TOP_LEVEL_KEYS`. Don't add a new one: a
+spelling the renderer and the validator don't know fails the build rather than
+quietly rendering as nothing.
 
 ## Charts: the rules that keep them honest
 

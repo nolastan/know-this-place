@@ -149,15 +149,20 @@ examples found while seeding:
   built 1890) and **4 Merritt is 3004 Market** — except that no 3004 exists in
   EAS, which runs 3000, 3006, 3008, 3012, so that one resolves to nothing.
 
-## `building_history` is on hand-written pages only
+## Dated events go in `historical_record`; standing facts go on `building`
 
-Several pages in this tree carry a `building_history` object instead of
-`historical_record` — 4, 11, 33, 46, 52, 56, 64 and 75 Mars Street. **The
-renderer does not know that key.** Those pages are in
-`scripts/render-backlog.txt` with hand-written HTML, which is the only reason
-their events appear at all. Writing `building_history` onto any other page puts
-the fact in `data.json` and nowhere a reader can see it, and `validate.py` will
-not say so. A dated fact on a rendered page goes in `historical_record`.
+Several pages in this tree once carried a `building_history` object instead —
+a dated `events` list plus scalars (`architect`, `contractor`, `first_owner`,
+`estimated_cost_usd`, `relocated_from`, `conflict`...) the flat
+`historical_record` shape can't hold. Issue #148 migrated all of them: the
+events are `historical_record` entries now, and the scalars are
+`building.architect`/`building.builder`/`building.first_owner`/
+`building.cost_usd`/`building.relocated_from`/`building.conflict` (with
+`architect_note`/`builder_note` riding beside the field they qualify — see
+`with_note` in `seed_pages.py`). Don't reintroduce `building_history`: a dated
+fact from a newsletter or context statement goes in `historical_record`, and a
+standing fact about the building goes on `building`, the same as everywhere
+else in the corpus.
 
 ## Contributed memoirs: take the building, leave the people
 

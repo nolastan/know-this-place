@@ -251,6 +251,14 @@ def check_address_dir(page_dir: Path, on_disk: str) -> None:
         err(data_path, f"invalid JSON: {e}")
         return
 
+    unknown = sorted(set(data) - seed_pages.ADDRESS_TOP_LEVEL_KEYS)
+    if unknown:
+        err(data_path, f"unrecognised top-level key(s): {', '.join(unknown)} — "
+                       "either it's a synonym of a key already in "
+                       "seed_pages.ADDRESS_TOP_LEVEL_KEYS (migrate to that "
+                       "spelling) or a new key the renderer needs to learn "
+                       "(add it there once it renders something)")
+
     if not data.get("address"):
         err(data_path, 'missing "address"')
     sources = data.get("sources")
