@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The state of the site — Know This Place</title>
+  <meta name="description" content="What Know This Place holds today: 16,287 address pages, 82,382 citations, and how recently each part of the pipeline ran. Counted from the repository, not estimated.">
+  <link rel="canonical" href="https://knowthis.place/stats/">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/shared/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/shared/site.webmanifest">
+  <link rel="stylesheet" href="/shared/site.css">
+  <script type="module" src="/shared/site.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="wordmark" href="/">Know This Place</a>
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span aria-current="page">The state of the site</span>
+  </nav>
+</header>
+
+<main>
+  <h1>The state of the site</h1>
+  <p class="lead">Every number below was counted from the files in this
+  repository on September 12, 2026, and every age on it is measured
+  against that date and no other. Nothing here is live, sampled or
+  estimated.</p>
+  <div class="stats">
+    <div class="stat"><span class="ic ic-home"></span><span class="stat-val">16,287</span><span class="stat-label">Address pages</span></div>
+    <div class="stat"><span class="ic ic-layers"></span><span class="stat-val">42</span><span class="stat-label">Neighborhoods</span></div>
+    <div class="stat"><span class="ic ic-pin"></span><span class="stat-val">1,188</span><span class="stat-label">Streets</span></div>
+    <div class="stat"><span class="ic ic-plan"></span><span class="stat-val">110</span><span class="stat-label">Historic districts</span></div>
+  </div>
+
+  <div class="section-head"><span class="ic ic-clock"></span><h2>Is anything still running?</h2></div>
+  <div class="stats">
+    <div class="stat"><span class="ic ic-calendar"></span><span class="stat-val">2<small> days</small></span><span class="stat-label">Since last news run · Sep 10</span></div>
+    <div class="stat"><span class="ic ic-permit"></span><span class="stat-val">0<small> days</small></span><span class="stat-label">Since last news item · Sep 12</span></div>
+    <div class="stat"><span class="ic ic-help"></span><span class="stat-val">1<small> day</small></span><span class="stat-label">Since last research batch · Sep 11</span></div>
+    <div class="stat"><span class="ic ic-clock"></span><span class="stat-val">0<small> days</small></span><span class="stat-label">Since last commit · Sep 12</span></div>
+  </div>
+
+  <div class="section-head"><span class="ic ic-permit"></span><h2>The record</h2></div>
+  <div class="stats">
+    <div class="stat"><span class="ic ic-permit"></span><span class="stat-val">161,315</span><span class="stat-label">Permits documented</span></div>
+    <div class="stat"><span class="ic ic-calendar"></span><span class="stat-val">8,565</span><span class="stat-label">Dated entries beyond permits</span></div>
+    <div class="stat"><span class="ic ic-link"></span><span class="stat-val">82,382</span><span class="stat-label">Citations</span></div>
+    <div class="stat"><span class="ic ic-layers"></span><span class="stat-val">2,282</span><span class="stat-label">Distinct sources cited</span></div>
+  </div>
+
+  <div class="cols">
+    <div class="main">
+      <section class="panel">
+        <h3>What the pages carry</h3>
+        <dl class="speclist">
+          <div class="spec"><span class="ic ic-calendar"></span><span class="spec-k">With a record beyond permits</span><span class="spec-v">5,938</span></div>
+          <div class="spec"><span class="ic ic-plan"></span><span class="spec-k">With a survey record</span><span class="spec-v">4,537</span></div>
+          <div class="spec"><span class="ic ic-pin"></span><span class="spec-k">Inside a historic district</span><span class="spec-v">4,912</span></div>
+          <div class="spec"><span class="ic ic-home"></span><span class="spec-k">With a current occupant</span><span class="spec-v">253</span></div>
+          <div class="spec"><span class="ic ic-help"></span><span class="spec-k">With written narrative</span><span class="spec-v">94</span></div>
+          <div class="spec"><span class="ic ic-check"></span><span class="spec-k">Naming a past resident</span><span class="spec-v">18</span></div>
+          <div class="spec"><span class="ic ic-ruler"></span><span class="spec-k">With public art on the parcel</span><span class="spec-v">42</span></div>
+          <div class="spec"><span class="ic ic-lot"></span><span class="spec-k">With public open space</span><span class="spec-v">68</span></div>
+        </dl>
+      </section>
+    </div>
+    <aside class="aside">
+      <section class="panel">
+        <h3>Pages due a refresh</h3>
+        <dl class="speclist">
+          <div class="spec"><span class="ic ic-clock"></span><span class="spec-k">City data older than 30 days</span><span class="spec-v">7,700</span></div>
+          <div class="spec"><span class="ic ic-none"></span><span class="spec-k">Opted out of rendering</span><span class="spec-v">0</span></div>
+          <div class="spec"><span class="ic ic-eligible"></span><span class="spec-k">Awaiting the render sweep</span><span class="spec-v">0</span></div>
+          <div class="spec"><span class="ic ic-help"></span><span class="spec-k">data.json that would not parse</span><span class="spec-v">0</span></div>
+        </dl>
+      </section>
+    </aside>
+  </div>
+
+  <div class="section-head"><span class="ic ic-link"></span><h2>The pipelines</h2></div>
+  <div class="cols">
+    <div class="main">
+      <section class="panel">
+        <h3>News · feeds to timeline</h3>
+        <ktp-figure>
+          <div class="stack" role="group" aria-label="What the ten-year test kept">
+            <div class="stack-seg seg-cool" style="width:49%" tabindex="0"
+                 data-tip="Published · 73 · 49%" aria-label="Published, 73, 49 percent"></div>
+            <div class="stack-seg seg-warm" style="width:51%" tabindex="0"
+                 data-tip="Declined · 77 · 51%" aria-label="Declined, 77, 51 percent"></div>
+          </div>
+          <div class="legend">
+            <span class="legend-item"><span class="swatch seg-cool"></span><span>Published</span>&nbsp;<b>73</b></span>
+            <span class="legend-item"><span class="swatch seg-warm"></span><span>Declined</span>&nbsp;<b>77</b></span>
+          </div>
+        </ktp-figure>
+        <dl class="speclist">
+          <div class="spec"><span class="ic ic-link"></span><span class="spec-k">Feeds registered</span><span class="spec-v">12</span></div>
+          <div class="spec"><span class="ic ic-check"></span><span class="spec-k">Open to polling</span><span class="spec-v">11</span></div>
+          <div class="spec"><span class="ic ic-calendar"></span><span class="spec-k">Stories screened</span><span class="spec-v">1,130</span></div>
+          <div class="spec"><span class="ic ic-permit"></span><span class="spec-k">Queued for reading</span><span class="spec-v">313</span></div>
+          <div class="spec"><span class="ic ic-plan"></span><span class="spec-k">Items recorded</span><span class="spec-v">157</span></div>
+          <div class="spec"><span class="ic ic-home"></span><span class="spec-k">Entries on a page</span><span class="spec-v">73</span></div>
+          <div class="spec"><span class="ic ic-help"></span><span class="spec-k">Awaiting a decision</span><span class="spec-v">7</span></div>
+          <div class="spec"><span class="ic ic-layers"></span><span class="spec-k">Backfill windows walked</span><span class="spec-v">1</span></div>
+          <div class="spec"><span class="ic ic-clock"></span><span class="spec-k">Queue files unread</span><span class="spec-v">0</span></div>
+        </dl>
+      </section>
+    </div>
+    <aside class="aside">
+      <section class="panel">
+        <h3>Research · archives to pages</h3>
+        <ktp-figure>
+          <div class="stack" role="group" aria-label="Findings resolved to a parcel">
+            <div class="stack-seg seg-cool" style="width:77%" tabindex="0"
+                 data-tip="Resolved to a parcel · 12,205 · 77%" aria-label="Resolved to a parcel, 12,205, 77 percent"></div>
+            <div class="stack-seg seg-warm" style="width:23%" tabindex="0"
+                 data-tip="Unresolved · 3,587 · 23%" aria-label="Unresolved, 3,587, 23 percent"></div>
+          </div>
+          <div class="legend">
+            <span class="legend-item"><span class="swatch seg-cool"></span><span>Resolved to a parcel</span>&nbsp;<b>12,205</b></span>
+            <span class="legend-item"><span class="swatch seg-warm"></span><span>Unresolved</span>&nbsp;<b>3,587</b></span>
+          </div>
+        </ktp-figure>
+        <dl class="speclist">
+          <div class="spec"><span class="ic ic-layers"></span><span class="spec-k">Sources catalogued</span><span class="spec-v">11</span></div>
+          <div class="spec"><span class="ic ic-plan"></span><span class="spec-k">Corpora with findings</span><span class="spec-v">5</span></div>
+          <div class="spec"><span class="ic ic-permit"></span><span class="spec-k">Findings recorded</span><span class="spec-v">15,792</span></div>
+          <div class="spec"><span class="ic ic-home"></span><span class="spec-k">Published onto a page</span><span class="spec-v">10,853</span></div>
+          <div class="spec"><span class="ic ic-none"></span><span class="spec-k">Declined</span><span class="spec-v">1,823</span></div>
+          <div class="spec"><span class="ic ic-help"></span><span class="spec-k">Awaiting a decision</span><span class="spec-v">3,116</span></div>
+        </dl>
+      </section>
+      <section class="panel">
+        <h3>Merchants · who trades there now</h3>
+        <dl class="speclist">
+          <div class="spec"><span class="ic ic-link"></span><span class="spec-k">Directories registered</span><span class="spec-v">14</span></div>
+          <div class="spec"><span class="ic ic-home"></span><span class="spec-k">Buildings with a listing</span><span class="spec-v">253</span></div>
+          <div class="spec"><span class="ic ic-permit"></span><span class="spec-k">Listings carried</span><span class="spec-v">278</span></div>
+        </dl>
+      </section>
+    </aside>
+  </div>
+
+  <div class="section-head"><span class="ic ic-plan"></span><h2>The repository</h2></div>
+  <div class="stats">
+    <div class="stat"><span class="ic ic-permit"></span><span class="stat-val">606</span><span class="stat-label">Commits</span></div>
+    <div class="stat"><span class="ic ic-calendar"></span><span class="stat-val">518</span><span class="stat-label">Commits in 30 days</span></div>
+    <div class="stat"><span class="ic ic-home"></span><span class="stat-val">5</span><span class="stat-label">Contributors</span></div>
+    <div class="stat"><span class="ic ic-clock"></span><span class="stat-val">53<small> days</small></span><span class="stat-label">Since the first commit · Jul 21</span></div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p class="feedback-cta">This page is generated. Run
+  <a href="https://github.com/nolastan/know-this-place/blob/main/scripts/build_stats.py">scripts/build_stats.py</a>
+  to rebuild it from the repository.</p>
+  <p class="colophon">Part of <a href="/">Know This Place</a>, a community
+  encyclopedia of the built environment. Facts are cited; pages are reviewed
+  by people. <a href="https://github.com/nolastan/know-this-place">Source</a>.</p>
+</footer>
+</body>
+</html>

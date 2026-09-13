@@ -217,6 +217,29 @@ jobs:
             --max-turns 90
             --allowedTools "Read,Glob,Grep,Edit,Write,Bash(python3:*),Bash(git:*),Bash(gh pr:*)"
 
+      # The dashboard at /stats/ is derived from the repo, so it is rebuilt
+      # here rather than by the agent: a script that walks the tree costs
+      # seconds and no tokens, while an agent counting the same things costs
+      # turns it needs for reading stories. `always()` is deliberate — the two
+      # freshness tiles this page exists for are "days since the last news run"
+      # and "days since the last news item", and a run that timed out or was
+      # cut short mid-flight is exactly when a reader wants to see them move.
+      # The branch here is never main (the step above guarantees it), so this
+      # commit lands on the PR the run is building.
+      - name: Rebuild the stats dashboard
+        if: always()
+        continue-on-error: true
+        run: |
+          set -euo pipefail
+          python3 scripts/build_stats.py
+          if [ -n "$(git status --porcelain -- stats/)" ]; then
+            git add stats/
+            git commit -m "stats: rebuild the dashboard after the news run" -- stats/
+            git push origin HEAD
+          else
+            echo "stats/index.html unchanged"
+          fi
+
       # The action already writes every SDK message to a file, and the final
       # `result` message carries the bill. Reading it back with jq keeps the
       # accounting free: the agent never spends tokens working out its own
