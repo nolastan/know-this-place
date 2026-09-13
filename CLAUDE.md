@@ -54,7 +54,7 @@ Fix everything it flags. If pages were added or removed, run
 `seed_pages.py districts`, `build_sitemap.py`, `build_map_index.py` and
 `build_link_index.py` first — all four are derived indexes and `validate.py`
 fails until each is current. `build_stats.py` rebuilds the dashboard at
-[/stats/](stats/index.html) from the same tree; it is derived too, but it
+`/stats/` from the same tree; it is derived too, but it
 carries ages in days, so it is stale by tomorrow and `validate.py` never fails
 on it.
 
