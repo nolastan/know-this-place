@@ -4,11 +4,11 @@ The wide blocks west of Fourth Street, between Market and Harrison. Coverage her
 
 ## Streets documented so far
 
-- [10Th Street](10th-street/) — 9 buildings, built 1923–1929; 8 in the Western SOMA Light Industrial and Residential Historic District.
-- [11Th Street](11th-street/) — 3 buildings, built 1919–1930; 3 in the Western SOMA Light Industrial and Residential Historic District.
-- [4th Street](4th-street/) — 26 buildings, built 1907–2023; 1 in the SoMa LGBTQ Historic District.
+- [10th Street](10th-street/) — 9 buildings, built 1923–1929; 8 in the Western SOMA Light Industrial and Residential Historic District.
+- [11th Street](11th-street/) — 3 buildings, built 1919–1930; 3 in the Western SOMA Light Industrial and Residential Historic District.
 - [7th Street](7th-street/) — 8 buildings, built 1903–2020; 1 in the Western SOMA Light Industrial and Residential Historic District.
 - [8th Street](8th-street/) — 6 buildings, built 1916–1990.
+- [9th Street](9th-street/) — 2 buildings, built 2011–2014.
 - [Bluxome Street](bluxome-street/) — 10 buildings, built 1916–2016; 3 in the Bluxome Townsend Historic District.
 - [Brannan Street](brannan-street/) — 24 buildings, built 1905–1989; 3 in the Clyde and Crooks Historic District.
 - [Bryant Street](bryant-street/) — 56 buildings, built 1905–2005; 1 in the SoMa LGBTQ Historic District.
@@ -23,6 +23,7 @@ The wide blocks west of Fourth Street, between Market and Harrison. Coverage her
 - [Falmouth Street](falmouth-street/) — 2 buildings, built 1912–1990; 1 in the SoMa LGBTQ Historic District.
 - [Fifth Street](5th-street/) — 29 buildings, built 1900–1998; 3 in the Kearny-Market-Mason-Sutter Conservation District.
 - [Folsom Street](folsom-street/) — 35 buildings, built 1906–1988; 4 in the SoMa LGBTQ Historic District.
+- [Fourth Street](4th-street/) — 26 buildings, built 1907–2023; 1 in the SoMa LGBTQ Historic District.
 - [Freelon Street](freelon-street/) — 13 buildings, built 1907–1988.
 - [Grace Street](grace-street/) — 1 building, built 1900; 1 in the Western SOMA Light Industrial and Residential Historic District.
 - [Hallam Street](hallam-street/) — 3 buildings, built 1989–1991.
@@ -43,7 +44,6 @@ The wide blocks west of Fourth Street, between Market and Harrison. Coverage her
 - [Mission Street](mission-street/) — 2 buildings, built 2015; 1 in the Mint-Mission Conservation District.
 - [Morris Street](morris-street/) — 4 buildings, built 1955–1956.
 - [Natoma Street](natoma-street/) — 1 building, built 2014.
-- [Ninth Street](9th-street/) — 2 buildings, built 2011–2014.
 - [Oak Grove Street](oak-grove-street/) — 5 buildings, built 1926–1988.
 - [Perry Street](perry-street/) — 1 building.
 - [Rausch Street](rausch-street/) — 1 building, built 1914; 1 in the Western SOMA Light Industrial and Residential Historic District.

@@ -3501,6 +3501,45 @@ def hook_for(rec: dict, with_district: bool = True) -> str:
 NEARBY_STREET_MAX = 6
 
 
+# "12Th", "9Th" — a capital letter directly after a digit, which is `str.title()`
+# applied to an ordinal and never how a street is written.
+TITLECASED_ORDINAL = re.compile(r"\d[A-Z]")
+
+
+def street_display_name(recs: list) -> str:
+    """The street's name, as its own pages spell it — the commonest spelling.
+
+    Taken off the addresses rather than the slug, because the address carries
+    the city's official name ("Third Street", not "3rd Street"). But a street's
+    pages do not always agree: 9th Street in South of Market spells itself
+    "9th Street" 18 times, "9Th Street" 5 and "Ninth Street" 3 across its 26
+    pages. Reading the name off whichever page came first made the name a fact
+    about directory order — nondeterministic wherever the list was unsorted
+    (`street_summary` was, so a neighborhood hub's street names came out
+    differently on APFS and on ext4), and wrong even when it was sorted,
+    because the lowest-numbered page on a street is sometimes a corner
+    building addressed on the cross street. That is how
+    `/east-cut/minna-street/` came to be published titled "Mission Street".
+
+    A spelling a title-caser mangled does not get a vote. "12Th Street" is what
+    `str.title()` does to "12th", and an uppercase letter straight after a
+    digit is never how a street is written — so those are set aside before the
+    count rather than allowed to win it, which they otherwise do: South of
+    Market's 11th Street carries "11Th" on three pages and "11th" on two. They
+    are counted only if a street has nothing else.
+
+    A tie then goes to the lowest-numbered page, so `recs` must arrive in
+    `num_key` order. Where a tie decides it the two spellings genuinely
+    contradict each other, and one of them is bad data rather than a naming
+    question this function can settle.
+    """
+    names = [page_title(r).split(" ", 1)[1] for r in recs]
+    clean = [n for n in names if not TITLECASED_ORDINAL.search(n)] or names
+    counts = collections.Counter(clean)
+    top = max(counts.values())
+    return next(n for n in clean if counts[n] == top)
+
+
 @functools.lru_cache(maxsize=8)
 def _street_geometry(area_dir: str) -> dict:
     """slug -> (display, count, (lat, lng) centroid, ((lat, lng), ...)).
@@ -3527,10 +3566,10 @@ def _street_geometry(area_dir: str) -> dict:
                     if c.get("lat") is not None and c.get("lng") is not None)
         if not pts:
             continue
-        # The display name comes off an address on the street, not off the
+        # The display name comes off the addresses on the street, not off the
         # slug — the same choice `write_street_hub` makes for its own <h1>, so
         # a link's text matches the page it lands on.
-        disp = page_title(recs[0]).split(" ", 1)[1]
+        disp = street_display_name(recs)
         centroid = (sum(p[0] for p in pts) / len(pts),
                     sum(p[1] for p in pts) / len(pts))
         out[street_dir.name] = (disp, len(recs), centroid, pts)
@@ -3625,7 +3664,7 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
     if not recs:
         return True
     slug = street_dir.name
-    disp = page_title(recs[0]).split(" ", 1)[1]  # off the address, not the slug
+    disp = street_display_name(recs)  # off the addresses, not the slug
     path = f"/{ctx['city']}/{ctx['area']}/{slug}/"
     area_name = " ".join(w.capitalize() for w in ctx["area"].split("-"))
     city_name = " ".join(w.capitalize() for w in ctx["city"].split("-"))
@@ -3809,11 +3848,11 @@ def existing_street_hooks(area_dir: Path) -> dict:
 def street_summary(street_dir: Path, kept: dict = None) -> tuple:
     """(display name, count, hook) for one street, read off its pages."""
     recs = [json.loads((d / "data.json").read_text())
-            for d in street_dir.iterdir()
+            for d in sorted(street_dir.iterdir(), key=lambda x: num_key(x.name))
             if d.is_dir() and (d / "data.json").exists()]
     if not recs:
         return None
-    disp = page_title(recs[0]).split(" ", 1)[1]
+    disp = street_display_name(recs)
     years = sorted(r["parcel"]["year_built"] for r in recs
                    if r.get("parcel", {}).get("year_built"))
     hook = f"{len(recs):,} building{'' if len(recs) == 1 else 's'}"

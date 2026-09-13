@@ -1,4 +1,4 @@
-# Mission Street
+# Minna Street
 
 The parcels on Minna Street documented here so far, from the city's address, assessor and permit records.
 
