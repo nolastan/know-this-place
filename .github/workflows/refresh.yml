@@ -36,7 +36,12 @@ jobs:
       pull-requests: write
       id-token: write
     steps:
+      # Full history: scripts/build_stats.py reports the commit counts on
+      # /stats/, and refuses to guess from a shallow clone — so a shallow
+      # checkout here would blank four tiles the news job had just filled in.
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: anthropics/claude-code-action@v1
         with:
@@ -80,8 +85,11 @@ jobs:
             4. Run `python3 scripts/seed_pages.py districts`,
                `python3 scripts/build_sitemap.py`,
                `python3 scripts/build_map_index.py`,
-               `python3 scripts/build_link_index.py` and
-               `python3 scripts/validate.py`.
+               `python3 scripts/build_link_index.py`,
+               `python3 scripts/build_stats.py` and
+               `python3 scripts/validate.py`. The stats one rebuilds the
+               dashboard at /stats/ and takes a few seconds; it counts the
+               tree itself, so never work any of its numbers out by hand.
             5. Read `git diff` and confirm each change is real data movement.
             6. If any page changed: create branch refresh/<today's date>,
                commit, push, and open a single PR listing every page updated
