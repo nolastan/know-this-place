@@ -287,6 +287,27 @@ Hub pages (`index.md`/`index.html` at city, neighborhood, street and
 historic-district level) list and link what's beneath them. Keep them current
 when adding pages.
 
+**A street hub, a historic-district hub, and the historic-districts index
+carry their list in `index.html` only.** `write_street_hub` / `write_district_hub`
+/ `write_districts_index` regenerate that list wholesale from their children on
+every run — each entry is a projection of a child `data.json` (or, for a
+district, of the pages that name it) — so it holds no information `index.md`
+would preserve by keeping a second copy (issue #151: 766 `index.md` files once
+duplicated exactly this). `index.md` at these three levels keeps only what a
+rebuild can't reconstruct: the lead paragraph (`hub_lead`) and any hand-added
+section beyond the template (`hub_extra_sections`). `validate.py`'s
+`check_hub_covers_children` and `check_hub_sync` read the list back out of
+`index.html` for these levels, and still enforce that a child's explicit
+`data.json["hook"]` wins — see `street_hub_hook_overrides`.
+
+**A neighborhood hub is different: its street list lives in both files, because
+one entry can carry a hand-written override.** `write_neighborhood_hub` reads a
+street's existing line back out of `index.md` before rewriting the list
+(`existing_street_hooks`) — a person's replacement for the generated summary —
+so removing the copy in `index.md` would delete that override on the next
+rebuild. `check_hub_sync` for a neighborhood hub therefore still compares the
+two files line for line, exactly as it always has.
+
 **A neighborhood hub also links sideways, and those two sections are
 hand-maintained.** "Historic districts here" lists every district with a hub
 that holds a documented building in this neighborhood; "Adjacent neighborhoods"
@@ -301,7 +322,9 @@ by hand, in `index.md` and `index.html` both. Neither section uses the
 A street hub that has grown its own sections beyond the lead+list template (a
 "Sources" section, a "The street itself" write-up) is left untouched entirely
 by `seed_pages.py hubs` — the command reports it as skipped rather than
-clobbering it, and its list has to be updated by hand from then on.
+clobbering it. From that point its list is hand-maintained in both files, the
+same as any other page a person has taken over — the split above only applies
+to a hub the generator still rebuilds.
 
 ---
 

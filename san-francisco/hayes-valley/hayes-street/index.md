@@ -2,42 +2,5 @@
 
 The parcels on Hayes Street documented here so far, from the city's address, assessor and permit records.
 
-## Documented so far
-
-- [301–307](301/) — A store building, with a kitchen remodel permitted in 2011.
-- [327–331](327/) — A 1900 3-unit building with a ground-floor store in the Hayes Valley Residential Historic District, with plumbing work permitted in 2019.
-- [355–357](355/) — A 1925 office building in the Hayes Valley Residential Historic District, with deck work permitted in 2013.
-- [361](361/) — A 1920 industrial building in the Hayes Valley Residential Historic District.
-- [364](364/) — A 1920 store building in the Hayes Valley Residential Historic District, with a seismic retrofit permitted in 1994.
-- [371](371/) — A 1963 store building in the Hayes Valley Residential Historic District, with facade work permitted in 2015.
-- [381–395](381/) — A 1911 32-unit apartment building in the Hayes Valley Residential Historic District, with a kitchen remodel permitted in 2015.
-- [406](406/) — A 1908 hotel in the Hayes Valley Residential Historic District, with reroofing permitted in 2019.
-- [424](424/) — A 1916 3-unit apartment building in the Hayes Valley Residential Historic District, with foundation work permitted in 2008.
-- [425–427](425/) — A 1906 store building in the Hayes Valley Residential Historic District, with reroofing permitted in 2026.
-- [450](450/) — A 2016 41-unit building in the Hayes Valley Residential Historic District, with an addition permitted in 2025.
-- [465](465/) — A building in the Hayes Valley Residential Historic District, with deck work permitted in 2014.
-- [482–488](482/) — A 1910 6-unit building with a ground-floor store in the Hayes Valley Residential Historic District, with a bathroom remodel permitted in 2016.
-- [500–516](500/) — A 1900 20-unit apartment building in the Hayes Valley Residential Historic District, with a seismic retrofit permitted in 2018.
-- [511–529](511/) — A 1911 store building in the Hayes Valley Residential Historic District, with window replacement permitted in 2021.
-- [575–579](575/) — A 1900 4-unit building with a ground-floor store in the Hayes Valley Residential Historic District, with deck work permitted in 2007.
-- [615](615/) — An 1890 single-family house in the Hayes Valley Residential Historic District, with an addition permitted in 2020.
-- [616–622](616/) — A 1900 6-unit apartment building in the Hayes Valley Residential Historic District, with a kitchen and bathroom remodel permitted in 2019.
-- [626–628](626/) — A 1900 two-flat in the Hayes Valley Residential Historic District, with reroofing permitted in 1993.
-- [632–634](632/) — A 2-unit building in the Hayes Valley Residential Historic District, with window replacement permitted in 2013.
-- [633–639](633/) — A 1900 6-unit building with a ground-floor store in the Hayes Valley Residential Historic District, with foundation work permitted in 1999.
-- [641–645](641/) — A 1906 7-unit building in the Hayes Valley Residential Historic District, with a kitchen and bathroom remodel permitted in 2014.
-- [644–648](644/) — A 1900 three-flat in the Hayes Valley Residential Historic District, with a vertical addition permitted in 1984.
-- [650–652](650/) — A 1900 two-flat in the Hayes Valley Residential Historic District, with stair work permitted in 2016.
-- [656](656/) — A 1982 building in the Hayes Valley Residential Historic District, with a bathroom remodel permitted in 2025.
-- [662–664](662/) — An 1873 four-flat in the Hayes Valley Residential Historic District, with reroofing permitted in 2000.
-- [672–676](672/) — A 1900 three-flat in the Hayes Valley Residential Historic District, with reroofing permitted in 1988.
-- [680–684](680/) — An 1885 three-flat in the Hayes Valley Residential Historic District, with a kitchen remodel permitted in 2017.
-- [686–690](686/) — An 1885 three-flat in the Hayes Valley Residential Historic District, with a kitchen remodel permitted in 2021.
-- [742–744](742/) — An 1890 building in the Hayes Valley Residential Historic District, with foundation work permitted in 2008.
-- [840–842](840/) — A 1906 12-unit apartment building, with a kitchen remodel permitted in 1988.
-- [890](890/) — A 1900 church, with stair work permitted in 2010.
-- [1339–1343](1339/) — A 1900 three-flat in the NOPA Historic District, with reroofing permitted in 1997.
-- [1534](1534/) — A 1910 6-unit apartment building in the NOPA Historic District, with a seismic retrofit permitted in 2017.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

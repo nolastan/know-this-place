@@ -2,31 +2,5 @@
 
 The parcels on Pine Street documented here so far, from the city's address, assessor and permit records.
 
-## Documented so far
-
-- [1525](1525/) — A 1937 store building, with foundation work permitted in 2015.
-- [1836](1836/) — A 1906 single-family house, with foundation work permitted in 2011.
-- [1844–1848](1844/) — A 1900 2-unit apartment building, with a rear addition permitted in 1991.
-- [1881](1881/) — A 1937 church in the Japantown Community & Cultural Historic District, with reroofing permitted in 2017.
-- [1911](1911/) — A school building in the Japantown Community & Cultural Historic District, with a kitchen remodel permitted in 2019.
-- [1922](1922/) — A 1900 single-family house, with a kitchen remodel permitted in 1994.
-- [2003](2003/) — A 1906 two-flat in the Japantown Community & Cultural Historic District, with a kitchen and bathroom remodel permitted in 2002.
-- [2012](2012/) — A 1900 church, with an addition permitted in 2005.
-- [2016](2016/) — A 1900 church in the Japantown Community & Cultural Historic District, with stair work permitted in 1997.
-- [2066](2066/) — A 1900 single-family house, with foundation work permitted in 2018.
-- [2231](2231/) — A 1900 single-family house, with garage work permitted in 1984.
-- [2325](2325/) — A 1900 3-unit building with a ground-floor store, with a rear addition permitted in 1997.
-- [2445–2475](2445/) — A 1904 school building, with reroofing permitted in 1993.
-- [2501–2507](2501/) — An 1889 19-unit apartment building, with a seismic retrofit permitted in 2000.
-- [2777](2777/) — A 1900 2-unit apartment building, with a seismic retrofit permitted in 1995.
-- [2806](2806/) — A 1900 single-family house, with window replacement permitted in 2020.
-- [2807](2807/) — A 1900 building, with a kitchen remodel permitted in 2003.
-- [2809](2809/) — A 1900 two-flat, with an addition permitted in 2013.
-- [2811](2811/) — An 1885 single-family house, with reroofing permitted in 2014.
-- [2813](2813/) — A 1900 single-family house, with reroofing permitted in 2010.
-- [2815](2815/) — A 1900 two-flat, with a kitchen and bathroom remodel permitted in 2005.
-- [2817](2817/) — A 1900 1-unit flats building, with a rear addition permitted in 1992.
-- [2819](2819/) — A 1900 two-flat, with window replacement permitted in 2012.
-
 Pages are generated from the DataSF datasets listed in each page's
 Sources footer, and are corrected by hand as readers write in.

@@ -3676,13 +3676,15 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
         if n:
             uncovered.append(f"{n} {phrase}")
 
-    md = [f"# {disp}", "", lead, "", "## Documented so far", ""]
-    for number, href, _title, hook in entries:
-        md.append(f"- [{number}]({href}/) — {hook}")
+    # The building-by-building list is not written here: it's generated wholesale
+    # from each child's data.json on every rebuild and carries no hand content of
+    # its own (#151) — index.html is its only copy. What stays in index.md is
+    # what a person could actually have written: the lead above, and this note.
+    md = [f"# {disp}", "", lead, ""]
     if uncovered:
-        md += ["", "## Not yet covered", "",
-               "Also on this street: " + "; ".join(uncovered) + "."]
-    md += ["", "Pages are generated from the DataSF datasets listed in each page's",
+        md += ["## Not yet covered", "",
+               "Also on this street: " + "; ".join(uncovered) + ".", ""]
+    md += ["Pages are generated from the DataSF datasets listed in each page's",
            "Sources footer, and are corrected by hand as readers write in.", ""]
     (street_dir / "index.md").write_text("\n".join(md), encoding="utf-8")
 
@@ -4269,13 +4271,14 @@ def write_district_hub(dist_dir: Path, name: str, members: list) -> bool:
                              f"{'' if s['n'] == 1 else 's'} inside the district."))
     building_items = [(m["path"], m["title"], m["hook"]) for m in members]
 
-    md = [f"# {name}", "", lead, "", "## Streets", ""]
-    md += [f"- [{label}]({href}) — {hook}" for href, label, hook in street_items]
-    md += ["", "## Buildings", ""]
-    md += [f"- [{label}]({href}) — {hook}" for href, label, hook in building_items]
-    md += ["", "The district record is the city's; the buildings beneath it are",
-           "generated from the DataSF datasets listed in each page's Sources",
-           "footer, and are corrected by hand as readers write in.", ""]
+    # Both lists (streets, buildings) are pure projections of `members` and
+    # carry no hand content — see the equivalent note in `write_street_hub`
+    # (#151) — so only the lead and this note live in index.md; index.html
+    # alone carries the lists.
+    md = [f"# {name}", "", lead, "",
+          "The district record is the city's; the buildings beneath it are",
+          "generated from the DataSF datasets listed in each page's Sources",
+          "footer, and are corrected by hand as readers write in.", ""]
     (dist_dir / "index.md").write_text("\n".join(md), encoding="utf-8")
 
     # Identity, so tags rather than tiles (shared/AGENTS.md): what kind of
@@ -4392,9 +4395,9 @@ def write_districts_index(index_dir: Path, listed: list, held_back: int) -> bool
             f"on the pages here hold fewer than {DISTRICT_MIN_PAGES} documented "
             f"buildings, and have no page yet.")
 
-    md = [f"# {DISTRICTS_TITLE}", "", lead, "", "## Districts documented so far", ""]
-    md += [f"- [{label}]({href}) — {hook}" for href, label, hook in items]
-    md += ["", held, ""]
+    # The list is a projection of `listed`, regenerated wholesale each run —
+    # no hand content, so (per #151) it lives only in index.html.
+    md = [f"# {DISTRICTS_TITLE}", "", lead, "", held, ""]
     (index_dir / "index.md").write_text("\n".join(md), encoding="utf-8")
 
     tiles = [("ic-plan", f"{len(items):,}", "Districts"),
