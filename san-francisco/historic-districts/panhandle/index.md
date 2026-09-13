@@ -8,7 +8,7 @@ The buildings documented here so far inside the Panhandle Historic District, and
 - [Clayton Street](/san-francisco/haight-ashbury/clayton-street/) — 6 documented buildings inside the district.
 - [Cole Street](/san-francisco/haight-ashbury/cole-street/) — 2 documented buildings inside the district.
 - [Fell Street](/san-francisco/hayes-valley/fell-street/) — 8 documented buildings inside the district.
-- [Lyon Street](/san-francisco/haight-ashbury/lyon-street/) — 1 documented building inside the district.
+- [Lyon Street](/san-francisco/haight-ashbury/lyon-street/) — 3 documented buildings inside the district.
 - [Oak Street](/san-francisco/haight-ashbury/oak-street/) — 2 documented buildings inside the district.
 - [Page Street](/san-francisco/haight-ashbury/page-street/) — 4 documented buildings inside the district.
 - [Stanyan Street](/san-francisco/haight-ashbury/stanyan-street/) — 1 documented building inside the district.
@@ -33,6 +33,8 @@ The buildings documented here so far inside the Panhandle Historic District, and
 - [1832–1836 Fell Street](/san-francisco/hayes-valley/fell-street/1832/) — A 1909 three-flat, with a kitchen and bathroom remodel permitted in 2012.
 - [1852 Fell Street](/san-francisco/hayes-valley/fell-street/1852/) — A 1902 7-unit apartment building, with a seismic retrofit permitted in 2015.
 - [1994–1998 Fell Street](/san-francisco/hayes-valley/fell-street/1994/) — A 1906 hotel, with a seismic retrofit permitted in 2017.
+- [112 Lyon Street](/san-francisco/haight-ashbury/lyon-street/112/) — An 1900 house, the guide's alternative Joplin address, with a rear addition tried three times.
+- [122 Lyon Street](/san-francisco/haight-ashbury/lyon-street/122/) — A five-apartment 1900 building facing the Panhandle; the best-supported of three Joplin addresses.
 - [301 Lyon Street](/san-francisco/haight-ashbury/lyon-street/301/) — A 1902 church, with garage work permitted in 2023.
 - [1321 Oak Street](/san-francisco/haight-ashbury/oak-street/1321/) — A 1906 church, with reroofing permitted in 2000.
 - [1555 Oak Street](/san-francisco/haight-ashbury/oak-street/1555/) — A 1925 12-unit apartment building, with a kitchen and bathroom remodel permitted in 2019.
