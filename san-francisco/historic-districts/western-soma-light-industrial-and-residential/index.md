@@ -15,7 +15,7 @@ The buildings documented here so far inside the Western SOMA Light Industrial an
 - [Clementina Street](/san-francisco/south-of-market/clementina-street/) — 2 documented buildings inside the district.
 - [Dore Street](/san-francisco/south-of-market/dore-street/) — 2 documented buildings inside the district.
 - [Folsom Street, Mission](/san-francisco/mission/folsom-street/) — 26 documented buildings inside the district.
-- [Folsom Street, South of Market](/san-francisco/south-of-market/folsom-street/) — 9 documented buildings inside the district.
+- [Folsom Street, South of Market](/san-francisco/south-of-market/folsom-street/) — 10 documented buildings inside the district.
 - [Grace Street](/san-francisco/south-of-market/grace-street/) — 2 documented buildings inside the district.
 - [Harrison Street, Mission](/san-francisco/mission/harrison-street/) — 2 documented buildings inside the district.
 - [Harrison Street, South of Market](/san-francisco/south-of-market/harrison-street/) — 1 documented building inside the district.
@@ -156,6 +156,7 @@ The buildings documented here so far inside the Western SOMA Light Industrial an
 - [1091 Folsom Street](/san-francisco/south-of-market/folsom-street/1091/) — A 1944 warehouse, with permit records from 2000 to 2005.
 - [1099 Folsom Street](/san-francisco/south-of-market/folsom-street/1099/) — A 1909 office building, with reroofing permitted in 1995.
 - [1122 Folsom Street](/san-francisco/south-of-market/folsom-street/1122/) — A 1923 store building, with fire repair permitted in 1994.
+- [1130–1140 Folsom Street](/san-francisco/south-of-market/folsom-street/1130/) — A 2017 store building, with plumbing work permitted in 2024.
 - [1175 Folsom Street](/san-francisco/south-of-market/folsom-street/1175/) — A 1928 industrial building, with plumbing work permitted in 1994.
 - [1188–1190 Folsom Street](/san-francisco/south-of-market/folsom-street/1188/) — A 1914 hotel, with a bathroom remodel permitted in 2013.
 - [1359 Folsom Street](/san-francisco/south-of-market/folsom-street/1359/) — A 1925 industrial building, with a kitchen and bathroom remodel permitted in 2012.

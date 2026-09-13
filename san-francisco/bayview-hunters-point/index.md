@@ -11,6 +11,7 @@ San Francisco's south-eastern quarter, settled from the 1860s as the industrial 
 - [Brussels Street](brussels-street/) — 1 building, built 1900.
 - [Carroll Avenue](carroll-avenue/) — 1 building, built 2016.
 - [Charter Oak Avenue](charter-oak-avenue/) — 1 building, built 1956.
+- [Dorman Avenue](dorman-avenue/) — 1 building, built 1947.
 - [Earl Street](earl-street/) — 1 building, built 1947.
 - [Evans Avenue](evans-avenue/) — 1 building, built 1978.
 - [Fitzgerald Avenue](fitzgerald-avenue/) — 1 building, built 1962.

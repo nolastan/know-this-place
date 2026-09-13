@@ -30,6 +30,7 @@ The parcels on Irving Street documented here so far, from the city's address, as
 - [1049](1049/) — A 1894 Queen Anne, built by Henry Behrens.
 - [1097](1097/) — A 1900 building.
 - [1125–1131](1125/) — A 1992 5-unit apartment building, with reroofing permitted in 2005.
+- [1200](1200/) — A 1959 store building, with electrical work permitted in 2008.
 - [1300](1300/) — A 1963 building, built by Samuel Schneider.
 - [1340–1360](1340/) — A 1926 building, designed by Samuel Heiman.
 - [1352–1356](1352/) — A 1926 building, designed by Samuel Heiman.

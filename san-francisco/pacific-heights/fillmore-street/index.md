@@ -13,6 +13,7 @@ The parcels on Fillmore Street documented here so far, from the city's address, 
 - [1919–1921](1919/) — A 1900 2-unit building with a ground-floor store, with an addition permitted in 2025.
 - [1923–1925](1923/) — A 1900 6-unit building with a ground-floor store, with plumbing work permitted in 2012.
 - [1940–1946](1940/) — A 1900 office building, with window replacement permitted in 2010.
+- [1971](1971/) — A 1900 4-unit apartment building, with facade work permitted in 2005.
 - [2000–2016](2000/) — A 1928 16-unit apartment building in the Upper Fillmore Neighborhood Commercial Historic District, with window replacement permitted in 2015.
 - [2035–2047](2035/) — A 1926 store building in the Upper Fillmore Neighborhood Commercial Historic District, with stair work permitted in 2016.
 - [2049](2049/) — A 1932 store building in the Upper Fillmore Neighborhood Commercial Historic District, with deck work permitted in 2006.

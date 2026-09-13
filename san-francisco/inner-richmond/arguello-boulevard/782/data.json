@@ -1,0 +1,158 @@
+{
+  "address": "782 Arguello Boulevard, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/arguello-boulevard/782/",
+  "apn": "1167021",
+  "block": "1167",
+  "lot": "021",
+  "eas_baseid": "296185",
+  "coordinates": {
+    "lat": 37.775648,
+    "lng": -122.45812
+  },
+  "parcel": {
+    "year_built": 1930,
+    "units": 1,
+    "stories": 2,
+    "rooms": 3,
+    "lot_area_sqft": 5000,
+    "building_area_sqft": 5755,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "NC-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lone Mountain",
+    "analysis_neighborhood": "Lone Mountain/USF",
+    "property_location_raw": "0000 0782 ARGUELLO            BL0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 355461,
+    "assessed_improvement_value": 243225
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1930",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202307283276",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-07-28",
+      "status_date": "2023-08-04",
+      "estimated_cost": 1000,
+      "revised_cost": 1,
+      "description": "to comply w/ abe program 51-16. abe # 201912099500 no work in the public way, under this permit. mgw 7-31-23",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202010287673",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2020-10-28",
+      "status_date": "2026-01-09",
+      "estimated_cost": 13455,
+      "revised_cost": 0,
+      "description": "erection of a metal gate \"security\".",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200702083701",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-02-08",
+      "status_date": "2007-02-14",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew pa#200604068460 for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200604068460",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-04-06",
+      "status_date": "2006-04-06",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "replace in like kind 8 4x8 store front windows/install remote power operated door opener at front entrance door in lieu of level landing(equivalent facilitation)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8817134",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-11-01",
+      "status_date": "1989-05-03",
+      "estimated_cost": 18920,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8713268",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-09-15",
+      "status_date": "1988-02-10",
+      "estimated_cost": 5000,
+      "description": "grease flue, hood exhaust",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8505143",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-05-17",
+      "status_date": "1986-01-15",
+      "estimated_cost": 45000,
+      "description": "replace floor tile,new equipment",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ARGUELLO&street_type=BLVD&address_number=782",
+      "retrieved": "2026-09-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1167021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1167&lot=021",
+      "retrieved": "2026-09-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1167021",
+      "retrieved": "2026-09-12"
+    },
+    {
+      "id": "instacart",
+      "name": "Instacart, stores near San Francisco, CA",
+      "supports": "Current occupant",
+      "query": "https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca",
+      "retrieved": "2026-09-12"
+    }
+  ],
+  "occupants": [
+    {
+      "name": "Arguello Market",
+      "listed_address": "782 Arguello Boulevard",
+      "source": "instacart"
+    }
+  ]
+}

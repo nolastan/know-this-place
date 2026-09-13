@@ -25,9 +25,11 @@ The parcels on Union Street documented here so far, from the city's address, ass
 - [2026–2030](2026/) — A 1957 store building, with a rear addition permitted in 1990.
 - [2032–2040](2032/) — A 1900 store building, with window replacement permitted in 2008.
 - [2055](2055/) — A 1924 theater in the San Francisco Neighborhood Movie Theater Historic District (Discontiguous), with a seismic retrofit permitted in 2012.
+- [2077–2083](2077/) — A 1924 store building, with electrical work permitted in 2025.
 - [2088–2098](2088/) — A 1906 7-unit apartment building, with plumbing work permitted in 2022.
 - [2124–2126](2124/) — A 1926 store building, with facade work permitted in 2021.
 - [2152–2154](2152/) — A 1912 2-unit building with a ground-floor store, with a seismic retrofit permitted in 2005.
+- [2160–2168](2160/) — A 1907 4-unit building with a ground-floor store, with plumbing work permitted in 2017.
 - [2172–2176](2172/) — A 1925 5-unit apartment building, with plumbing work permitted in 2020.
 - [2277–2299](2277/) — A 1900 7-unit building with a ground-floor store, with reroofing permitted in 2015.
 - [2325](2325/) — A 1948 church, with a vertical addition permitted in 1997.
