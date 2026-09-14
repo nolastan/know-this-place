@@ -2612,6 +2612,21 @@ def glance_panel_html(rec: dict, indent: str) -> str:
                            ("ic-plan", "Developer", b.get("developer")),
                            ("ic-calendar", "Completed", completed),
                            ("ic-calendar", "First owner", b.get("first_owner")),
+                           # The style as some source other than a survey states
+                           # it — a newsletter, a context statement's prose. The
+                           # survey panel's own "Style" row reads
+                           # `historic_survey.style` and is the commoner case;
+                           # this is the one for a building no survey reached.
+                           ("ic-ruler", "Style", b.get("style")),
+                           # The tract the lot was sold out of. A standing fact
+                           # about the ground, which is why it sits here rather
+                           # than on the rail: the subdivision has a date, the
+                           # building's relationship to it doesn't.
+                           ("ic-plan", "Subdivision", b.get("subdivision")),
+                           # What the record says occupied the ground before,
+                           # where no dated entry carries it. A predecessor with
+                           # dates belongs on the timeline instead.
+                           ("ic-pin", "Site before", b.get("site_before")),
                            # A house that arrived on a lorry: where it stood
                            # before is identity, not a dated event — the move
                            # itself is already an entry on the rail.
@@ -3496,8 +3511,136 @@ def hub_extra_sections(hub_dir: Path, known) -> list:
     return [h for h in headings if not any(pat.search(h) for pat in known)]
 
 
-def street_hub_extra_sections(street_dir: Path) -> list:
-    return hub_extra_sections(street_dir, KNOWN_STREET_HUB_SECTIONS)
+def hub_hand_sections(hub_dir: Path, known) -> list:
+    """`[(heading, [body line, …]), …]` for the sections a person wrote.
+
+    The companion to `hub_extra_sections`, which only names them. A street's
+    own record — when its lots were divided, the 1922 order that graded it, the
+    corner the Market Street extension took — is a fact about the street and
+    has no building page to sit on, so the hub is where it goes. Carrying it
+    through a rebuild is what lets the hub stay generated: the alternative is
+    the generator refusing the street and its `index.html` being committed as
+    the only copy of the prose, which is what `corbett-heights/mars-street` and
+    `corbett-heights/danvers-street` were before this read them.
+    """
+    md = hub_dir / "index.md"
+    if not md.exists():
+        return []
+    out, body = [], None
+    for line in md.read_text(encoding="utf-8").splitlines():
+        m = re.match(r"^## (.+)$", line)
+        if m:
+            body = []
+            if not any(pat.search(m.group(1)) for pat in known):
+                out.append((m.group(1), body))
+            continue
+        if body is not None:
+            body.append(line)
+    return [(h, _strip_blanks(b)) for h, b in out]
+
+
+def _strip_blanks(lines: list) -> list:
+    """A section body without the blank lines around it."""
+    while lines and not lines[0].strip():
+        lines = lines[1:]
+    while lines and not lines[-1].strip():
+        lines = lines[:-1]
+    return lines
+
+
+MD_LINK = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
+# Matched after escaping, which is why these look for the escaped brackets —
+# and why the URL body is "anything up to the closing one" rather than a
+# character class: a query string escapes its own separators to `&amp;`.
+MD_AUTOLINK = re.compile(r"&lt;(https?://(?:(?!&gt;).)+)&gt;")
+# The shape a hand-written Sources bullet ends in: the query URL, then the date
+# it was read. An address page's footer prints exactly that as one link, so a
+# hub's does too rather than spelling a query string out across the page.
+MD_SOURCE_LINK = re.compile(r"&lt;(https?://(?:(?!&gt;).)+)&gt;\s*"
+                            r"\(retrieved (\d{4}-\d{2}-\d{2})\)")
+MD_STRONG = re.compile(r"\*\*([^*]+)\*\*")
+MD_EM = re.compile(r"(?<!\*)\*([^*]+)\*(?!\*)")
+
+
+def md_inline(text: str) -> str:
+    """The inline markdown a hub's hand-written prose actually uses.
+
+    Deliberately not a markdown implementation: links, autolinks, bold and
+    italics are what the sections in the corpus contain, and anything wider
+    would be a parser to maintain for no page's benefit.
+    """
+    return md_inline_escaped(esc(text))
+
+
+def md_inline_escaped(out: str) -> str:
+    """`md_inline`'s markup pass, on text that is already escaped."""
+    out = MD_LINK.sub(lambda m: f'<a href="{esca(html.unescape(m.group(2)))}">'
+                                f'{m.group(1)}</a>', out)
+    out = MD_AUTOLINK.sub(lambda m: f'<a href="{esca(html.unescape(m.group(1)))}">'
+                                    f'{m.group(1)}</a>', out)
+    out = MD_STRONG.sub(r"<b>\1</b>", out)
+    return MD_EM.sub(r"<em>\1</em>", out)
+
+
+def hub_source_line(item: str) -> str:
+    """One hand-written Sources bullet, as the footer's own citation shape."""
+    # Before the general inline pass, which would otherwise autolink the URL
+    # under its own spelling and leave the date behind as bare text.
+    out = MD_SOURCE_LINK.sub(
+        lambda m: f'<a href="{esca(html.unescape(m.group(1)))}">'
+                  f'retrieved {m.group(2)}</a>', esc(item))
+    return md_inline_escaped(out)
+
+
+def md_list_items(lines: list) -> list:
+    """Just the bullets, unwrapped — a hand-written Sources section is a list."""
+    items: list = []
+    for line in lines:
+        stripped = line.strip()
+        if stripped.startswith("- "):
+            items.append(stripped[2:])
+        elif stripped and items:
+            items[-1] += " " + stripped
+    return items
+
+
+def md_block_html(lines: list, indent: str) -> str:
+    """Bullet lists and paragraphs, the two shapes a hand-written section has.
+
+    A list item may wrap onto indented continuation lines, and so may a
+    paragraph; both are joined back into one line before rendering, because the
+    hard wrapping in `index.md` is a courtesy to whoever edits the file and
+    means nothing in the output.
+    """
+    blocks, cur, kind = [], [], None
+    for line in [*lines, ""]:
+        stripped = line.strip()
+        if not stripped:
+            if cur:
+                blocks.append((kind, cur))
+            cur, kind = [], None
+            continue
+        if stripped.startswith("- "):
+            if kind != "ul":
+                if cur:
+                    blocks.append((kind, cur))
+                cur, kind = [], "ul"
+            cur.append(stripped[2:])
+        elif kind == "ul" or (kind == "p" and cur):
+            cur[-1] += " " + stripped          # a wrapped continuation line
+        else:
+            cur, kind = [stripped], "p"
+    out = []
+    for k, items in blocks:
+        if k == "ul":
+            rows = "\n".join(f"{indent}  <li>{md_inline(i)}</li>" for i in items)
+            # `.prose` is the measure, and nothing else — the browser's own
+            # bullets and indent are what a plain list wants, so this needs no
+            # rule of its own in the stylesheet.
+            out.append(f'{indent}<ul class="prose">\n{rows}\n{indent}</ul>')
+        else:
+            out += [f'{indent}<p class="prose">{md_inline(i)}</p>' for i in items]
+    return "\n".join(out) + "\n" if out else ""
 
 
 def hub_lead(street_dir, fallback: str) -> str:
@@ -3713,28 +3856,31 @@ def nearby_streets_html(street_dir: Path, ctx: dict, indent: str) -> str:
 def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
     """Rebuild a street's index.md + index.html from the pages beneath it.
 
-    Returns False (and leaves both files untouched) if the existing index.md
-    has hand-written sections the generator doesn't know how to preserve —
-    see `street_hub_extra_sections`.
+    Returns whether there was a street hub to write — False for a directory
+    holding no pages yet.
+
+    Sections a person wrote are carried through rather than overwritten: they
+    are read out of `index.md`, written back to it verbatim, and rendered into
+    `index.html` — a "Sources" section into the footer where an address page
+    puts its own, everything else into the main column above the building list.
+    So the hub stays generated no matter what a street's own record has grown,
+    and no street's `index.html` has to be committed to keep its prose.
 
     The "Nearby streets" list is a fact about the whole neighborhood, so
     rebuilding one street hub after seeding leaves its neighbors' lists a page
     behind — `hubs` over the neighborhood is what brings them level, the same
     way `build_link_index.py` catches `shared/nearby.json` up to new pages.
     """
-    extra = street_hub_extra_sections(street_dir)
-    if extra:
-        print(f"  {street_dir}: skipping — hand-written section(s) "
-              f"{', '.join(extra)} beyond the generated template; "
-              f"update the list by hand instead", file=sys.stderr)
-        return False
+    hand = hub_hand_sections(street_dir, KNOWN_STREET_HUB_SECTIONS)
+    hand_sources = [b for h, b in hand if h.strip().lower() == "sources"]
+    hand_main = [(h, b) for h, b in hand if h.strip().lower() != "sources"]
     recs = []
     for d in sorted(street_dir.iterdir(), key=lambda x: num_key(x.name)):
         f = d / "data.json"
         if d.is_dir() and f.exists():
             recs.append(json.loads(f.read_text()))
     if not recs:
-        return True
+        return False
     slug = street_dir.name
     disp = street_display_name(recs)  # off the addresses, not the slug
     path = f"/{ctx['city']}/{ctx['area']}/{slug}/"
@@ -3797,6 +3943,12 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
                "Also on this street: " + "; ".join(uncovered) + ".", ""]
     md += ["Pages are generated from the DataSF datasets listed in each page's",
            "Sources footer, and are corrected by hand as readers write in.", ""]
+    # After the generated template, not inside it: a hub with no hand-written
+    # section then reads exactly as it did before this could carry one.
+    for heading, body in hand_main:
+        md += [f"## {heading}", "", *body, ""]
+    for body in hand_sources:
+        md += ["## Sources", "", *body, ""]
     (street_dir / "index.md").write_text("\n".join(md), encoding="utf-8")
 
     stat_html = "\n".join(
@@ -3831,6 +3983,19 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
         cols_open = '  <div class="cols">\n    <div class="main">\n'
         cols_close = f'    </div>\n\n    <aside class="aside">\n{aside}    </aside>\n  </div>\n'
     nearby = nearby_streets_html(street_dir, ctx, "  ")
+    # The street's own record, above the buildings: what a reader wants first
+    # from a hub that has one is the street, and the list is what they scroll to.
+    hand_html = "".join(
+        f'      <div class="section-head"><span class="ic ic-clock"></span>'
+        f'<h2>{esc(heading)}</h2></div>\n{md_block_html(body, "      ")}\n'
+        for heading, body in hand_main)
+    sources_block = ""
+    if hand_sources:
+        rows = "\n".join(f"      <li>{hub_source_line(i)}</li>"
+                         for body in hand_sources
+                         for i in md_list_items(body))
+        sources_block = ('  <section class="sources">\n    <h2>Sources</h2>\n'
+                         f'    <ul>\n{rows}\n    </ul>\n  </section>\n')
 
     html_out = f"""<!doctype html>
 <html lang="en">
@@ -3868,14 +4033,14 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
 {stat_html}
   </div>
 
-{cols_open}      <div class="section-head"><span class="ic ic-pin"></span><h2>Buildings</h2></div>
+{cols_open}{hand_html}      <div class="section-head"><span class="ic ic-pin"></span><h2>Buildings</h2></div>
       <ul class="place-list">
 {list_html}
       </ul>
 {cols_close}{nearby}</main>
 
 <footer class="site-footer">
-  <p class="feedback-cta">
+{sources_block}  <p class="feedback-cta">
     Live on {esc(disp)}, or know a building we should cover next?
     <a href="{feedback_url(disp, path)}">Tell us.</a>
   </p>
@@ -4689,9 +4854,7 @@ def cmd_seed(args) -> int:
     print(f"neighborhood hub lists {n_streets} street(s)")
     print(f"created {written} new page(s); left {skipped} existing page(s) "
           f"untouched; skipped {elsewhere} parcel(s) already documented under "
-          f"another neighborhood; rebuilt {rebuilt_hubs} street hub(s)"
-          + (f"; left {len(touched_streets) - rebuilt_hubs} street hub(s) untouched "
-             f"(hand-written sections)" if rebuilt_hubs < len(touched_streets) else ""))
+          f"another neighborhood; rebuilt {rebuilt_hubs} street hub(s)")
     if excluded:
         print(f"excluded streets (filed under another neighborhood): "
               f"{', '.join(sorted(excluded))}")
@@ -5054,16 +5217,10 @@ def cmd_districts(args) -> int:
 def cmd_hubs(args) -> int:
     ctx = make_ctx(args, {"roll_year": args.roll_year, "historic": [], "districts": []})
     area_dir = ROOT / args.city / args.area
-    n, n_skipped = 0, 0
-    for street_dir in sorted(area_dir.iterdir()):
-        if street_dir.is_dir():
-            if write_street_hub(street_dir, ctx):
-                n += 1
-            else:
-                n_skipped += 1
+    n = sum(1 for street_dir in sorted(area_dir.iterdir())
+            if street_dir.is_dir() and write_street_hub(street_dir, ctx))
     n_streets = write_neighborhood_hub(area_dir, ctx)
-    print(f"rebuilt {n} street hub(s); left {n_skipped} untouched (hand-written "
-          f"sections); neighborhood hub lists {n_streets} street(s)")
+    print(f"rebuilt {n} street hub(s); neighborhood hub lists {n_streets} street(s)")
     return 0
 
 
