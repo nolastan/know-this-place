@@ -100,6 +100,55 @@ ADDRESS_TOP_LEVEL_KEYS = frozenset({
     "rendered",
 })
 
+# The same closed vocabulary, one level down. `ADDRESS_TOP_LEVEL_KEYS` checked
+# the top level and stopped there, so `parcel` and `building` went on quietly
+# accumulating spellings nothing read — thirty pages and twelve of them by the
+# time anyone counted, including `parcel.planning_name`, the very synonym the
+# comment above records as migrated. A sub-key is worse than a stray top-level
+# one, not better: the block around it renders, so the page looks complete
+# while the fact sits in it unread.
+#
+# Both blocks come from the assessor's roll, so almost every key here is a
+# column of it under the name this site gives it (`lot_area` → `lot_area_sqft`)
+# — add one only when `seed_pages.py` reads it, the way the renderer learned
+# `building.site_before` and `building.former_address`. The roll's own column
+# names are not these names: `construction_type` is `construction_type_code`
+# here, and the assessed values and the sale date are `assessment`'s, not the
+# parcel's.
+PARCEL_KEYS = frozenset({
+    # Structure, as the roll measures it.
+    "year_built", "units", "stories", "rooms", "bathrooms", "bedrooms",
+    "building_area_sqft", "basement_area_sqft", "construction_type_code",
+    # The lot.
+    "lot_area_sqft", "lot_depth_ft", "lot_frontage_ft", "zoning",
+    # Classification and where the roll files the parcel.
+    "use", "property_class", "supervisor_district", "assessor_neighborhood",
+    "analysis_neighborhood", "property_location_raw",
+    # How far to trust the figures above: a zero storey count that is a data
+    # gap, a lot area that is one of two the building stands on. It closes the
+    # timeline with the page's other caveats.
+    "note",
+})
+
+# `building` is what a source says about the building itself, where the roll
+# and the city's datasets don't reach: a name, who designed and put it up, an
+# address or a site it no longer has. A dated event is never here — that is
+# `historical_record`, on the one timeline (see REFERENCE.md).
+BUILDING_KEYS = frozenset({
+    "name", "former_name", "architect", "architect_note", "builder",
+    "builder_note", "developer", "first_owner", "style", "subdivision",
+    "completed", "cost_usd",
+    # Where the building or its address used to be, which is identity rather
+    # than a dated event: `relocated_from` is a building that moved,
+    # `former_address` an address that did, `site_before` what stood here
+    # before this building.
+    "relocated_from", "former_address", "site_before",
+    # A disagreement in the record, stated and left unadjudicated.
+    "completed_conflict", "conflict",
+    # The source ids this block rests on, each also in `sources`.
+    "sources",
+})
+
 # Site icons. `shared/icon.svg` is the source of truth for the mark; the raster
 # files are derived from it. Every page carries these, the way it carries the
 # shared stylesheet — `validate.py` enforces it.
