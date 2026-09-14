@@ -949,6 +949,31 @@ def generalize_units(text: str | None) -> str | None:
 # apartment buildings whose "room #63" really is a dwelling are left for a
 # person to decide, one page at a time.
 HOTEL_USE = "Commercial Hotel"
+# The roll is the first witness, not the only one. It classes 50 Turk and 128
+# Eddy as apartment buildings, while the pages themselves carry `building.name`
+# "Winston Arms Hotel" and `building.former_name` "The Gotham Lodgings" — a
+# fact research put there, and better evidence about what a room is than a
+# property class assigned for assessment. So a hotel named on the page counts
+# too, and only on a parcel the roll still calls residential: the same word
+# inside a *commercial* class is a trade name rather than a building's use
+# ("Dohrmann Hotel Supply Co" at 972 Mission, a hotel supplier; "Planters
+# Hotel" at 282 2nd, long since offices), and no one lives in either.
+#
+# Measured over every published page, the widening admits 20 parcels and
+# rewrites 3 descriptions, all 3 SRO room numbers. It cannot fire while a page
+# is being created, because `building` is hand-authored and a fresh draft has
+# none; it fires when an already-named page is seeded again, and until then
+# the residue it leaves is what scripts/permit_room_decisions.json is for.
+HOTEL_NAME = re.compile(r"\b(?:hotels?|lodgings?|sro|rooming house|residence club)\b", re.I)
+RESIDENTIAL_USE = {"Multi-Family Residential", "Single Family Residential"}
+#
+# A ratio test was measured too and rejected: "more rooms than units, fewer
+# baths than units" reads like an SRO and matches 536 pages, but of the 8 with
+# a room designator it would have rewritten "front single story rm.#4" in a
+# three-unit Castro house and "total 12 toilet rooms & 12 shower rooms" at the
+# Dell Apartments to gain one true hotel room. The roll's own unit counts are
+# too unreliable to carry a privacy rule.
+#
 # The narrowings, each one something the hotel corpus actually contains:
 #   * a room type named right before the keyword is a room, not a home. Every
 #     word here precedes a numbered room somewhere in the DBI export; "bath"
@@ -971,15 +996,41 @@ DWELLING_WORD = {"guest", "guess", "hotel", "sleeping"}
 #   * a number that measures is not a number that identifies: "tool room 69 sq
 #     ft" is an area, "room 12' x 15'" is a dimension, and a list can run
 #     straight into one ("rms 113,114,115,116,117,118, 720 sq ft").
-_NOT_MEASURE = (r"(?!\s*(?:sqft|sq|sf|s\.\s?f|feet|ft|square)\b)"
+#     The measure may be reached across a decimal fraction, because the number
+#     that carries one is being measured rather than named: "undermitted rooms
+#     349.8 sf" is an area and "room 7.5 ft to rear yard" a dimension, and
+#     _UNIT_NUM stops at the point, which left the lookahead reading ".8 sf"
+#     and rewriting both (#273). A decimal that is *not* followed by a measure
+#     is left alone, because one institutional numbering scheme really does
+#     use it — "room 116.5, 132, 133, 134, 0533.3" at 200 Larkin.
+_MEASURE_WORD = r"(?:sqft|sq|sf|s\.\s?f|feet|ft|square)\b"
+_NOT_MEASURE = (r"(?!\s*" + _MEASURE_WORD + r")"
+                r"(?!\.\d+\s*" + _MEASURE_WORD + r")"
                 r"(?!\s*['\"])")
+#   * a designator of five digits or more is not a room. Measured over every
+#     published description, the numbers DBI writes after a room keyword run
+#     one to four digits ("rm 3079" is the longest real one); past that lie
+#     its own permit and complaint numbers, which the text references in the
+#     same breath — "smoke alarms in each room # 202309164" (1136 York),
+#     "ref accessible men's room #201504244586" (440 Mission). Reading one as
+#     a dwelling turns a citation into "each one room" (#273).
+_ROOM_DIGITS = r"(?<!\d)\d{1,4}(?!\d)"
 #   * DBI hyphenates room numbers, as a range ("rooms 100-121") and as a list
 #     ("bth rms 201-205-302-303-304-305"), a shape it never uses for units.
 #     The hyphen must join two numbers: before a word it is a dash ("room
 #     #248-close partition wall"), and before "/f" it marks a floor ("room
 #     6-2/f", which is room 6 on the second floor, not rooms 6 through 2).
-_ROOM_NUM = (_UNIT_NUM + _NOT_MEASURE +
-             r"(?:\s*-\s*" + _UNIT_NUM + _NOT_MEASURE + r"(?!/))*")
+#   * it also slash-separates a list, but only a long one, so the room
+#     designator drops _UNIT_NUM's fractional branch and takes its own: three
+#     or more numbers joined by slashes are a list of rooms ("rooms 715/709/
+#     713/711/707/607/..." at 320 Clementina, the trash-room stack), while two
+#     are a fraction ("replace with 5/8 type x") and a letter after the slash
+#     is a floor ("rm 2/f"). Inheriting the fractional branch made the list
+#     count as a single designator and left the tail of it in the sentence.
+_ROOM_BASE = (r"(?:" + _ROOM_DIGITS + r"(?:\s*/\s*" + _ROOM_DIGITS + r"){2,}"
+              r"|" + _ROOM_DIGITS + r"(?!\s*/))[a-z]?\b")
+_ROOM_NUM = (_ROOM_BASE + _NOT_MEASURE +
+             r"(?:\s*-\s*" + _ROOM_BASE + _NOT_MEASURE + r"(?!/))*")
 _ROOM_RUN = (_ROOM_NUM + r"(?:" + _SEP + r"#?\s*" + _ROOM_NUM +
              r"|\s+#?" + _ROOM_NUM + r"(?![./]))*")
 # No lettered branch, unlike UNIT_REF: the hotel corpus holds no "room a", and
@@ -1013,15 +1064,74 @@ def _generic_room(m) -> str:
     else:
         lead, kind = (f"{qual} " if qual else ""), "room"
     desig = m.group("desig")
-    n = 0 if "-" in desig else len(re.findall(_UNIT_NUM, desig))
+    # Plain integers, not _UNIT_NUM: the room designator has no fractional
+    # branch (see _ROOM_BASE), so every number in the run is its own room and
+    # a slash list counts all of its members rather than half of them.
+    n = 0 if "-" in desig else len(re.findall(r"\d+", desig))
     if n == 0 or n not in ROOM_COUNT_WORD:
         return f"{lead}{kind}s"
     return lead + (f"one {kind}" if n == 1 else f"{ROOM_COUNT_WORD[n]} {kind}s")
 
 
+def is_hotel(roll_use: str | None, building: dict | None) -> bool:
+    """Whether a numbered room on this parcel is a dwelling — see HOTEL_USE."""
+    if roll_use == HOTEL_USE:
+        return True
+    named = " ".join(filter(None, ((building or {}).get("name"),
+                                   (building or {}).get("former_name"))))
+    return roll_use in RESIDENTIAL_USE and bool(HOTEL_NAME.search(named))
+
+
 def generalize_rooms(text: str | None, *, hotel: bool) -> str | None:
     """Genericize room numbers, but only on a hotel parcel — see HOTEL_USE."""
     return ROOM_REF.sub(_generic_room, text) if text and hotel else text
+
+
+# What the gate cannot reach, a person read once. Every permit description on a
+# residential-but-not-hotel parcel whose room number the gate leaves alone is
+# recorded in scripts/permit_room_decisions.json with the evidence and the
+# verdict, so the judgment is made once rather than re-derived every time
+# somebody notices the sentence again (#273). Keyed by page path *and* permit
+# number, because DBI's street-name collisions put the same permit number on
+# more than one page (787 of them across the corpus).
+DECISIONS_PATH = ROOT / "scripts" / "permit_room_decisions.json"
+
+
+def _load_room_decisions() -> dict:
+    if not DECISIONS_PATH.exists():
+        return {}
+    out = {}
+    for e in json.loads(DECISIONS_PATH.read_text()).get("decisions", []):
+        if e.get("verdict") == "rewrite":
+            out[(e["path"], str(e["permit"]))] = (e["old"], e["new"])
+    return out
+
+
+ROOM_DECISIONS = _load_room_decisions()
+
+
+def apply_room_decision(text: str | None, path: str, permit: str | None) -> str | None:
+    """Apply the recorded rewrite for one permit description, if there is one.
+
+    Runs last, on the finished sentence, so what the file records is what a
+    reader of the page sees. It raises rather than guessing: a decision whose
+    "old" text has gone means DBI revised the description under it and the
+    sentence needs reading again, which is a person's job and not a default's.
+    Already having the "new" text is not a failure — the widened gate may have
+    reached the same sentence first — so the rewrite is idempotent.
+    """
+    hit = ROOM_DECISIONS.get((path, str(permit)))
+    if not hit or not text:
+        return text
+    old, new = hit
+    if old not in text:
+        if new in text:
+            return text
+        raise SystemExit(
+            f"permit_room_decisions.json: {path} permit {permit} expects\n"
+            f"  {old!r}\nin\n  {text!r}\nand it is not there. DBI has revised the "
+            f"description; read the sentence again and update the decision.")
+    return text.replace(old, new)
 
 
 def redact(text: str | None) -> str | None:
@@ -1284,7 +1394,7 @@ def build_record(parcel: dict, ctx: dict) -> dict:
             rec["also_in_districts"] = [as_record(e) for e in hits[1:]]
 
     permits = []
-    is_hotel = p.get("use") == HOTEL_USE
+    hotel = is_hotel(p.get("use"), rec.get("building"))
     for r in parcel["permits"]:
         entry = {
             "number": r.get("permit_number"),
@@ -1294,8 +1404,10 @@ def build_record(parcel: dict, ctx: dict) -> dict:
             "status_date": ymd(r.get("status_date")),
             "estimated_cost": num(r.get("estimated_cost")),
             "revised_cost": num(r.get("revised_cost")),
-            "description": redact(generalize_rooms(
-                generalize_units(r.get("description")), hotel=is_hotel)),
+            "description": apply_room_decision(
+                redact(generalize_rooms(
+                    generalize_units(r.get("description")), hotel=hotel)),
+                path, r.get("permit_number")),
             "source": "sf-building-permits",
         }
         permits.append({k: v for k, v in entry.items() if v not in (None, "")})
