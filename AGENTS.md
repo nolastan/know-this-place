@@ -72,7 +72,15 @@ These pages describe **buildings, not the people in them.**
   identifiable people; no license plates. Permit text routinely pins work to a
   named apartment ("unit #4: remodel kitchen"); rewrite those to a count ("one
   unit", "three units"), which is what the seeder and the hand-authored pages
-  both do.
+  both do. In a hotel or SRO the **room** is the home, so a room number is the
+  same leak and the seeder rewrites it too — but only where the record says the
+  parcel is a hotel, because elsewhere a numbered room is usually named by its
+  function ("exam room #3") and rewriting it would delete the description the
+  page exists to carry. Where the rule cannot tell, the sentence was read once
+  and the verdict recorded in `scripts/permit_room_decisions.json`; add an
+  entry there rather than hand-editing the description, and if the reading will
+  not settle, **the description stands** — losing a building description is the
+  cost this project accepts over guessing at a dwelling.
 - Individuals from the historical record (architects, builders, notable past
   residents already covered by published sources) may be named with citations.
 - Treat any feedback issue asking for information to be **removed** for privacy

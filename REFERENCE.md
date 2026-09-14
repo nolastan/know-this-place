@@ -376,6 +376,17 @@ documents with the numbers swapped.
   `scripts/permit_redactions.json`, and re-seed. Product and material brands
   (window and roofing manufacturers) are specifications, not names — leave
   those alone.
+- **Privacy: read what the room rule could not.** `generalize_rooms` rewrites a
+  numbered room to a count only where `is_hotel` holds — the assessor calls the
+  parcel a hotel, or the page's own `building.name`/`former_name` does and the
+  roll still calls it residential. Everywhere else a numbered room may be a
+  dwelling or may be a room named by its function, and only the sentence says
+  which. Each one that a new area turns up gets an entry in
+  `scripts/permit_room_decisions.json`: `rewrite` with the exact `old`/`new`
+  text, or `keep` with the designator left alone, and in both cases a `why`
+  that states the evidence. `validate.py` checks every entry against the page
+  it names, so a decision whose text DBI later revises fails the build instead
+  of rotting quietly.
 
 ---
 
