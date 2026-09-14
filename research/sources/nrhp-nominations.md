@@ -261,7 +261,7 @@ URL. Worked example:
      1966 Compton's Cafeteria riot at 101-121 Taylor Street, the Eureka
      Benevolent Society at 434-436 O'Farrell Street in 1909 and the Eureka
      Hotel next door in 1910. Small, bounded, and the cheapest unread material
-     in this source.
+     in this source. Filed as #346.
   1. **The five district nominations of 1982-1989** — 82000983 Bush
      Street-Cottage Row, 83001230 Liberty Street, 87002286 Russian
      Hill-Macondray Lane, 87002288 Russian Hill-Paris Block, 87002289 Russian
