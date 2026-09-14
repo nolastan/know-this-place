@@ -149,6 +149,88 @@ BUILDING_KEYS = frozenset({
     "sources",
 })
 
+# The four remaining blocks, closed the same way and for the same reason: 29
+# more spellings across 590 pages, most of them a column filed one block too
+# low. Check which parent the seeder reads a key under before calling it live —
+# `note`, `district`, `status` and `historic_district` are all live somewhere
+# else, and a grep for the bare name says so.
+#
+# The assessor's value columns. `roll_year` says which roll they were read off;
+# the land and improvement values are the ones the value chart splits, and
+# nothing else is charted. `exemption` is the roll's word for the use a tax
+# exemption was granted for and `exemption_value` the amount exempted, which is
+# not the chart's total.
+ASSESSMENT_KEYS = frozenset({
+    "roll_year", "assessed_land_value", "assessed_improvement_value",
+    "assessed_fixtures_value", "last_sale_date", "exemption", "exemption_value",
+    # How far to trust the figures above: a partial ownership share, a parcel
+    # the current roll has dropped, a second lot's values. It closes the
+    # timeline with the page's other caveats, as `parcel.note` does.
+    "note",
+})
+
+# Planning's per-parcel historic resource status — the CEQA columns and what
+# they rest on, as the seeder writes them. Nothing about an individual landmark
+# belongs here: the name and number are the top-level `city_landmark`, which the
+# "City landmark" row reads, and a designation is dated, so it is a
+# `historical_record` entry like anything else dated.
+HISTORIC_STATUS_KEYS = frozenset({
+    "ceqa_status_code", "ceqa_status_code_article_10_11", "ceqa_status_label",
+    "reason", "in_article_10_11_historic_district", "source",
+    # Planning's build year and Planning's name for the building, both under
+    # the dataset's own spelling. `yearbuilt` prints only where it contradicts
+    # the assessor's year; the name a page shows is the top-level `survey_name`,
+    # title-cased, and `survey_name` here is the raw upper-case string.
+    "yearbuilt", "survey_name",
+    # The page's historic district, where a hand-authored page nests it here
+    # instead of at the top level — `district_of` reads both.
+    "district",
+    # A caveat on a status the page prints, on the closing line with the others.
+    "note",
+})
+
+# What a historic resources survey found here, one object per survey — this is
+# the one block a page may hold as a list, because two surveys reach the same
+# building often enough to plan for it. Keys are the survey's findings, so
+# `_as_surveyed` is the shape for a fact the survey states in its own terms and
+# the city now states differently. Where in the source the survey printed it is
+# not here: that is `cites` on the source entry (REFERENCE.md).
+HISTORIC_SURVEY_KEYS = frozenset({
+    # Which survey, and the source id it rests on.
+    "survey", "source",
+    # Its finding, in words and in codes. `cr_status_code` is the Bayview Area
+    # B survey's spelling, used instead of `proposed_status_code`, never
+    # alongside; `prior_status_code` is the standing before this survey.
+    "finding", "proposed_status_code", "prior_status_code", "cr_status_code",
+    "status_code_meaning", "cr_status_note",
+    "proposed_article11_rating", "current_article11_rating",
+    "eligible_district", "existing_district",
+    # The building as the survey described it.
+    "style", "frame", "physical_integrity", "architect", "architect_as_surveyed",
+    "builder", "builder_as_surveyed", "year_built_as_surveyed",
+    "address_as_surveyed", "apn_as_surveyed",
+    # Its inventory rows, where a page carries them: one per structure the
+    # survey reached on the parcel.
+    "entries",
+    # What the surveys before it had said.
+    "prior_survey", "prior_surveys", "dcp_1976_survey", "here_today_page",
+    "umb_survey", "heritage_rating",
+    # A finding the codes have no room for, under the panel's row list.
+    "note",
+    # Deliberately not rendered, like `historic_status.survey_name`: on 156
+    # pages it records that the survey gives no scale for its Carey & Company
+    # and UMB ratings, which is why the panel holds those and shows neither.
+    "rating_note",
+})
+
+# What DBI holds, where the timeline shows a subset of it — see
+# REFERENCE.md → `permits` vs `permit_summary`. `count_on_file` is the full
+# count and `note` the sentence stating the rule the subset was chosen by;
+# both are computed from the data, never written by hand.
+PERMIT_SUMMARY_KEYS = frozenset({
+    "count_on_file", "range", "shown_on_page", "note",
+})
+
 # Site icons. `shared/icon.svg` is the source of truth for the mark; the raster
 # files are derived from it. Every page carries these, the way it carries the
 # shared stylesheet — `validate.py` enforces it.
