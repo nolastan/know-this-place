@@ -130,7 +130,11 @@ the survey *found* rather than where it printed it.
 
 Both blocks are the assessor's and Planning's columns under this site's names,
 and a fact filed one level too low renders as nothing while the block around it
-renders fine.
+renders fine. Every block's keys are a closed set — `PARCEL_KEYS`,
+`BUILDING_KEYS`, `ASSESSMENT_KEYS`, `HISTORIC_STATUS_KEYS`,
+`HISTORIC_SURVEY_KEYS` and `PERMIT_SUMMARY_KEYS` in `scripts/seed_pages.py`,
+each checked by `validate.py` the way `ADDRESS_TOP_LEVEL_KEYS` is — so a new
+spelling fails the build instead of rendering as nothing.
 
 - **A tax exemption is `assessment.exemption`**, the roll's own word for the use
   it was granted for ("Welfare", "Church"), with `exemption_value` where the

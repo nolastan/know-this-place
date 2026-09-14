@@ -259,24 +259,33 @@ def check_address_dir(page_dir: Path, on_disk: str) -> None:
                        "spelling) or a new key the renderer needs to learn "
                        "(add it there once it renders something)")
 
-    # `parcel` and `building` get the same closed vocabulary, because the check
-    # above stopping at the top level is how thirty pages came to hold twelve
-    # sub-keys nothing read. A sub-key drifts more quietly than a top-level
+    # Every block-level key gets the same closed vocabulary, because the check
+    # above stopping at the top level is how forty-one spellings nothing read
+    # came to sit on 590 pages. A sub-key drifts more quietly than a top-level
     # one: the block around it renders, so the page looks finished while the
     # fact in it is invisible.
+    #
+    # `historic_survey` is the one block a page may hold as a list — two
+    # surveys reaching one building — so each entry is checked in turn.
     for block, allowed in (("parcel", seed_pages.PARCEL_KEYS),
-                           ("building", seed_pages.BUILDING_KEYS)):
+                           ("building", seed_pages.BUILDING_KEYS),
+                           ("assessment", seed_pages.ASSESSMENT_KEYS),
+                           ("historic_status", seed_pages.HISTORIC_STATUS_KEYS),
+                           ("historic_survey", seed_pages.HISTORIC_SURVEY_KEYS),
+                           ("permit_summary", seed_pages.PERMIT_SUMMARY_KEYS)):
         val = data.get(block)
-        if not isinstance(val, dict):
-            continue
-        unknown = sorted(set(val) - allowed)
+        entries = val if isinstance(val, list) else [val]
+        unknown = sorted({k for e in entries if isinstance(e, dict)
+                          for k in set(e) - allowed})
         if unknown:
             err(data_path,
                 f'unrecognised "{block}" key(s): {", ".join(unknown)} — '
                 f"either it's a synonym of a key already in "
                 f"seed_pages.{block.upper()}_KEYS (migrate to that spelling), "
                 f"a fact that belongs under another block (the roll's assessed "
-                f"values and sale date are `assessment`'s; a dated fact is "
+                f"values and sale date are `assessment`'s; a landmark's name and "
+                f"number are the top-level `city_landmark`'s; where in a source "
+                f"a fact sits is that source's `cites`; a dated fact is "
                 f"`historical_record`'s), or a new key the renderer needs to "
                 f"learn (add it there once it renders something)")
 
