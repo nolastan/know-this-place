@@ -1,0 +1,118 @@
+{
+ "_why": "generalize_rooms rewrites a numbered room to a count, because in a hotel or SRO the room is the home and AGENTS.md bars pointing at who lives where. It is gated on the parcel being a hotel (see is_hotel), and that gate is right for a rule: on every other property class a numbered room is usually a room named by its function — 'living rm #3', 'exam room #3' — and rewriting those would delete the building description the page exists to carry. The gate therefore leaves a residue that only reading the sentence can settle. This file is that reading, one entry per permit description, so the judgment is made once, reviewable in a diff, and never re-litigated (#273).",
+ "_policy": "When the sentence genuinely will not settle, the designator stays. Losing a building description is the cost the project accepts; #271 chose it and #273 confirmed it. An entry whose evidence is thin says so in its 'why' rather than being quietly rewritten.",
+ "_how": "Two verdicts. 'rewrite' names the exact 'old' text and the 'new' text to put in its place; it is applied to the permit description after generalize_units, generalize_rooms and redact have run, and is satisfied silently if 'new' is already there — the widened gate may have reached it first. 'keep' records that the designator was read and left alone, and carries no replacement. Either way 'why' states the evidence, not the conclusion. validate.py checks every entry against the page it names, so a decision that no longer applies fails the build instead of rotting.",
+ "_scope": "Only a description on a parcel the roll classes residential but not a hotel needs an entry. A commercial parcel is out of scope: the gate never admits it, and nobody lives in a clinic's exam room.",
+
+ "decisions": [
+  {"verdict": "rewrite",
+   "path": "/san-francisco/financial-district/bush-street/734/",
+   "permit": "8806034",
+   "old": "room #4d",
+   "new": "one room",
+   "why": "47 units and 47 bathrooms on the roll — one bath per dwelling, so the numbered rooms are apartments, and '4d' is the floor-and-letter designator generalize_units already rewrites wherever DBI spells it 'apt 4d'."},
+
+  {"verdict": "rewrite",
+   "path": "/san-francisco/haight-ashbury/haight-street/1250/",
+   "permit": "202507110649",
+   "old": "room 105",
+   "new": "one room",
+   "why": "The sentence names it itself: 'room 105 (ada unit)'. 40 units, 40 bathrooms and 44 rooms on the roll — one room and one bath per dwelling."},
+
+  {"verdict": "rewrite",
+   "path": "/san-francisco/mission/mission-street/2059/",
+   "permit": "202512121721",
+   "old": "guest rooms 34 & 35",
+   "new": "two guest rooms",
+   "why": "The permit converts them to studios, so they were dwellings before the work and are dwellings after it."},
+
+  {"verdict": "rewrite",
+   "path": "/san-francisco/nob-hill/bush-street/1080/",
+   "permit": "200007205606",
+   "old": "apts rm 209, 407,510,601",
+   "new": "four apartments",
+   "why": "The sentence says 'apts'. 55 units and 55 bathrooms on the roll."},
+
+  {"verdict": "rewrite",
+   "path": "/san-francisco/nob-hill/bush-street/1080/",
+   "permit": "8404050",
+   "old": "rm.#206 & 506",
+   "new": "two rooms",
+   "why": "Same building as permit 200007205606 above, which names its numbered rooms 'apts' outright."},
+
+  {"verdict": "rewrite",
+   "path": "/san-francisco/tenderloin/jones-street/450/",
+   "permit": "201807205093",
+   "old": "guest rm 402",
+   "new": "one guest room",
+   "why": "'guest' is already one of generalize_rooms' DWELLING_WORDs; only the roll's apartment classification kept the rewrite off this page. The building is the Athmore Apartments, 60 units against 101 rooms and 50 baths."},
+
+  {"verdict": "rewrite",
+   "path": "/san-francisco/tenderloin/post-street/1030/",
+   "permit": "200307159537",
+   "old": "room 518",
+   "new": "one room",
+   "why": "64 units and 64 bathrooms over five storeys; 518 is the floor-and-number form those dwellings are addressed by."},
+
+  {"verdict": "rewrite",
+   "path": "/san-francisco/tenderloin/turk-street/240/",
+   "permit": "9923312",
+   "old": "rm #504 & 304",
+   "new": "two rooms",
+   "why": "113 dwellings over eight storeys; 504 and 304 are the same position on two floors, which is how the building numbers its homes and not how it would number a utility room."},
+
+  {"verdict": "keep",
+   "path": "/san-francisco/castro/collingwood-street/123/",
+   "permit": "202312192750",
+   "text": "toilet rm 117",
+   "why": "A toilet room is named by its function, and the permit adds a lavatory to it. Nobody lives in it on either reading of the number. 'toilet' is deliberately absent from ROOM_TYPE_WORD for the reason 'bath' is — inside a hotel it numbers the guest rooms — so the gate cannot reach this and the entry stands in its place."},
+
+  {"verdict": "keep",
+   "path": "/san-francisco/castro/hartford-street/182/",
+   "permit": "202403268641",
+   "text": "room 104",
+   "why": "A single-family house of one dwelling: the whole building is the home, so a room number inside it points at a plan sheet, not a resident. The sentence confirms it — the room is 'shown as office'."},
+
+  {"verdict": "keep",
+   "path": "/san-francisco/castro/market-street/2213/",
+   "permit": "201110247516",
+   "text": "rooms 2-3 & 2-4, room 2-5, rooms 2-6 & 2-7",
+   "why": "The one genuinely undecided entry, kept under the policy above. Against: 32 units and only 22 bathrooms, so shared baths exist, and merging two rooms by pulling a non-bearing wall is how two SRO rooms become one. For: the work is plumbing throughout a contiguous run — 'add wall in room 2-5 between shower & tub', 'relocate sinks, add toilet' — and a shower and a tub in the same room is a shared bathroom being split, not a dwelling. The sentence does not settle it, so the description stands."},
+
+  {"verdict": "keep",
+   "path": "/san-francisco/castro/twin-peaks-boulevard/345/",
+   "permit": "202112094040",
+   "text": "undermitted rooms 349.8 sf",
+   "why": "349.8 sf is an area, not a designator. Now also unreachable by the rule: _NOT_MEASURE was taught to look past a decimal in #273."},
+
+  {"verdict": "keep",
+   "path": "/san-francisco/mission/york-street/1136/",
+   "permit": "202307132110",
+   "text": "each room # 202309164",
+   "why": "202309164 is a permit number the sentence cites, and 'each room' carries no designator at all. Now also unreachable by the rule: a designator of five digits or more is refused in #273."},
+
+  {"verdict": "keep",
+   "path": "/san-francisco/nob-hill/washington-street/1351/",
+   "permit": "8402521",
+   "text": "bath room 2",
+   "why": "The sentence is 'remodel bathroom, 2 windows, remodel kitchen' under DBI's spelling. The 2 counts windows; it belongs to the clause after the room, not to the room."},
+
+  {"verdict": "keep",
+   "path": "/san-francisco/presidio-heights/mayfair-drive/155/",
+   "permit": "202104239263",
+   "text": "at room 3",
+   "why": "A single-family house of one dwelling, and the permit is a room-by-room remodel of it — a new door at room 3 on a drawing set, not a home's address."},
+
+  {"verdict": "keep",
+   "path": "/san-francisco/russian-hill/filbert-street/800/",
+   "permit": "200605030551",
+   "text": "proposed room 8 apartment",
+   "why": "There is no room 8. The same parcel's permit 200608099003, filed three months later for the same work, reads 'provide 1-hr separation between proposed storage rooms & apartment above' — the 8 is a mis-keyed &, and the rooms it joins are the storage rooms the permit is reverting the basement to."},
+
+  {"verdict": "keep",
+   "path": "/san-francisco/south-of-market/clementina-street/320/",
+   "permit": "202107134222",
+   "text": "rooms 715/709/713/711/707/607/...",
+   "why": "The trash-room stack, named by the clause immediately before it — 'walls are around trash chute', 'common trash rooms'. The numbers run floors 1 to 7 at the same four positions on each floor, which is a riser, not a set of homes."}
+ ]
+}
