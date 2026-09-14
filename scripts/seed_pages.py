@@ -1880,11 +1880,16 @@ def timeline_html(rec: dict, indent: str) -> str:
     # assessor reports 0 stories for this parcel — a data gap, not a
     # measurement", "the most recent roll carrying this parcel is 2018, not
     # 2025". Each says how far to trust a figure the page prints, which is the
-    # one thing this line is for, and no key read them.
+    # one thing this line is for, and no key read them. `historic_status.note`
+    # is the third of them, on two pages: a parcel inside a district boundary
+    # whose classification as a contributing building nobody has established, a
+    # Category A status that came from a project-driven evaluation rather than a
+    # survey. Same slot, same reason.
     for t in [disclosure, *dating_conflicts(rec),
               (rec.get("building") or {}).get("conflict"),
               (rec.get("parcel") or {}).get("note"),
               (rec.get("assessment") or {}).get("note"),
+              (rec.get("historic_status") or {}).get("note"),
               *(rec.get("unknowns") or [])]:
         t = str(t).strip() if t else ""
         if t and t not in seen:
@@ -2788,6 +2793,18 @@ def glance_panel_html(rec: dict, indent: str) -> str:
         rows.append(("ic-layers", "Residential units", f"{units:,}"))
     if a.get("assessed_fixtures_value"):
         rows.append(("ic-value", "Assessed fixtures", f"${a['assessed_fixtures_value']:,}"))
+    # Why a parcel pays no tax on the figures the chart above it prints. The
+    # roll's exemption column is the assessor's own word for the use the
+    # exemption was granted for — "Welfare" for a nonprofit's office building,
+    # "Church" for a congregation's — and on six pages it was the one thing in
+    # `assessment` no key read. Where the roll also gives the exempted amount it
+    # rides in the same row: it is not the chart's total, and on 57 Post Street
+    # it is under half of it.
+    if a.get("exemption"):
+        rows.append(("ic-value", "Tax exemption",
+                     with_note(a["exemption"],
+                               f"${a['exemption_value']:,} exempt"
+                               if a.get("exemption_value") else None)))
     if a.get("last_sale_date"):
         rows.append(("ic-value", "Last sale", long_date(a["last_sale_date"])))
     # No historic status row: the hero tag already states it in words, and the
