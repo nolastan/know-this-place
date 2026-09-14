@@ -93,7 +93,7 @@ sit in — the three it touched most, and how many in all.
 | `digitalsf/sfp-169.json` | 39 | 79 KB | 1966–1968 | 21 | 21 | `marina`, `south-of-market`, `castro` +8 |
 | `digitalsf/sfp-179.json` | 29 | 60 KB | 2014 | 25 | 25 | `tenderloin`, `nob-hill` |
 | `digitalsf/sfp-22.json` | 80 | 155 KB | 1911–1912 | 72 | 60 | `ingleside-terraces`, `presidio-heights`, `inner-richmond` |
-| `digitalsf/sfp-23.json` | 1,122 | 2.0 MB | 1945–1991 | 921 | 917 | `mission`, `sunset-parkside`, `inner-sunset` +33 |
+| `digitalsf/sfp-23.json` | 1,122 | 2.0 MB | 1945–1991 | 921 | 917 | `mission`, `sunset-parkside`, `inner-sunset` +34 |
 | `digitalsf/sfp-26.json` | 17 | 36 KB | 1935–1942 | 11 | 6 | `lone-mountain`, `dogpatch`, `glen-park` +3 |
 | `digitalsf/sfp-42.json` | 58 | 104 KB | 1953–1994 | 56 | 56 | `mission`, `pacific-heights`, `inner-richmond` +14 |
 | `digitalsf/sfp-84.json` | 13 | 26 KB | 1889–1914 | 1 | 1 | `financial-district` |
@@ -122,7 +122,7 @@ sit in — the three it touched most, and how many in all.
 | `sf-context-statements/flats-small-apartments-hcs.json` | 72 | 153 KB | 1915–1975 | 53 | 52 | `marina`, `inner-sunset`, `russian-hill` +15 |
 | `sf-context-statements/japantown-hcs.json` | 125 | 242 KB | 1852–2009 | 83 | 83 | `pacific-heights`, `japantown`, `western-addition` +1 |
 | `sf-context-statements/large-apartment-hcs.json` | 89 | 199 KB | 1905–2024 | 72 | 58 | `pacific-heights`, `russian-hill`, `nob-hill` +12 |
-| `sf-context-statements/lgbtq-hcs.json` | 382 | 617 KB | 1872–2016 | 307 | 289 | `castro`, `mission`, `tenderloin` +24 |
+| `sf-context-statements/lgbtq-hcs.json` | 382 | 617 KB | 1872–2016 | 307 | 289 | `castro`, `mission`, `tenderloin` +25 |
 | `sf-context-statements/lgbtq-heritage-strategy.json` | 0 | 2 KB | — | 0 | 0 | — |
 | `sf-context-statements/market-octavia-hcs.json` | 496 | 886 KB | 1875–2007 | 425 | 425 | `mission`, `south-of-market`, `castro` +4 |
 | `sf-context-statements/market-octavia-survey-forms.json` | 473 | 1.0 MB | 1870–2010 | 385 | 378 | `hayes-valley`, `mission`, `castro` +3 |
