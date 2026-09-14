@@ -122,6 +122,37 @@ sentence of a page otherwise built from city records; `"supports":
 "Notable-resident claim"` is the difference between citing it for that claim
 and appearing to cite it for the parcel.
 
+A survey's own table or appendix is the same thing: `cites` on the source entry
+("Appendix A, Table 1"), not a key inside `historic_survey`, which is for what
+the survey *found* rather than where it printed it.
+
+### Four traps inside `assessment` and `historic_status`
+
+Both blocks are the assessor's and Planning's columns under this site's names,
+and a fact filed one level too low renders as nothing while the block around it
+renders fine.
+
+- **A tax exemption is `assessment.exemption`**, the roll's own word for the use
+  it was granted for ("Welfare", "Church"), with `exemption_value` where the
+  roll gives the exempted amount — the two ride in one "Tax exemption" spec row.
+  The amount is not the chart's total: at 57 Post Street it is under half of it.
+- **`historic_status.note` closes the timeline**, the way `parcel.note` and
+  `assessment.note` do: how far to trust a status the page prints — a parcel
+  inside a district boundary whose contributing status nobody has established, a
+  Category A finding that came from a project's evaluation rather than a survey.
+- **A city landmark's name and number are the top-level `city_landmark`**
+  (`{name, number, source}`), which the "City landmark" spec row reads; the
+  designation itself is dated, so it is a `historical_record` entry like
+  anything else dated, and the ordinance number belongs in that entry. Nothing
+  about a landmark goes under `historic_status`, whose job is Planning's CEQA
+  columns.
+- **Planning's build year is `yearbuilt`** — its spelling, not
+  `planning_year_built` or `year_built_reported` — and the page prints it only
+  where it contradicts the assessor's, on the line closing the timeline.
+  Planning's name for the building is `survey_name`: `historic_status.survey_name`
+  is the raw upper-case string the dataset gives, and the top-level key is the
+  one the hero tag reads.
+
 ### `hook`
 
 The one-line description a hub shows beside the link. It lives here, not in the
@@ -159,12 +190,18 @@ own.
   issue #148. Don't reintroduce a third: a dated historical fact goes here.
 - **Scalars that aren't a dated fact go on `building`, not here.** An
   architect, a builder, a first owner, what stood on the site before, what the
-  build cost, a moved building's former address, an unresolved conflict in the
+  build cost, a moved building's former address, the number it answered to
+  before the street around it was renumbered, an unresolved conflict in the
   record — `building.architect`/`architect_note`, `building.builder`/
   `builder_note`, `building.first_owner`, `building.site_before`,
-  `building.cost_usd`, `building.relocated_from`, `building.conflict`. A dated
-  event belongs on the timeline; a standing fact about the building belongs on
-  `building`, whichever page it first shows up on.
+  `building.cost_usd`, `building.relocated_from`, `building.former_address`,
+  `building.conflict`. A dated event belongs on the timeline; a standing fact
+  about the building belongs on `building`, whichever page it first shows up
+  on.
+  - `relocated_from` and `former_address` are not the same fact:
+    `relocated_from` is a building that moved, `former_address` an address
+    that did. Neither is `also_addressed`, which is a number the parcel
+    still answers to.
 - **`building.style` and `building.subdivision`** are the same shape for two
   facts a survey usually carries and sometimes doesn't: the architectural style
   where the source stating it is a newsletter or a context statement's prose

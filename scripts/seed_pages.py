@@ -100,6 +100,55 @@ ADDRESS_TOP_LEVEL_KEYS = frozenset({
     "rendered",
 })
 
+# The same closed vocabulary, one level down. `ADDRESS_TOP_LEVEL_KEYS` checked
+# the top level and stopped there, so `parcel` and `building` went on quietly
+# accumulating spellings nothing read — thirty pages and twelve of them by the
+# time anyone counted, including `parcel.planning_name`, the very synonym the
+# comment above records as migrated. A sub-key is worse than a stray top-level
+# one, not better: the block around it renders, so the page looks complete
+# while the fact sits in it unread.
+#
+# Both blocks come from the assessor's roll, so almost every key here is a
+# column of it under the name this site gives it (`lot_area` → `lot_area_sqft`)
+# — add one only when `seed_pages.py` reads it, the way the renderer learned
+# `building.site_before` and `building.former_address`. The roll's own column
+# names are not these names: `construction_type` is `construction_type_code`
+# here, and the assessed values and the sale date are `assessment`'s, not the
+# parcel's.
+PARCEL_KEYS = frozenset({
+    # Structure, as the roll measures it.
+    "year_built", "units", "stories", "rooms", "bathrooms", "bedrooms",
+    "building_area_sqft", "basement_area_sqft", "construction_type_code",
+    # The lot.
+    "lot_area_sqft", "lot_depth_ft", "lot_frontage_ft", "zoning",
+    # Classification and where the roll files the parcel.
+    "use", "property_class", "supervisor_district", "assessor_neighborhood",
+    "analysis_neighborhood", "property_location_raw",
+    # How far to trust the figures above: a zero storey count that is a data
+    # gap, a lot area that is one of two the building stands on. It closes the
+    # timeline with the page's other caveats.
+    "note",
+})
+
+# `building` is what a source says about the building itself, where the roll
+# and the city's datasets don't reach: a name, who designed and put it up, an
+# address or a site it no longer has. A dated event is never here — that is
+# `historical_record`, on the one timeline (see REFERENCE.md).
+BUILDING_KEYS = frozenset({
+    "name", "former_name", "architect", "architect_note", "builder",
+    "builder_note", "developer", "first_owner", "style", "subdivision",
+    "completed", "cost_usd",
+    # Where the building or its address used to be, which is identity rather
+    # than a dated event: `relocated_from` is a building that moved,
+    # `former_address` an address that did, `site_before` what stood here
+    # before this building.
+    "relocated_from", "former_address", "site_before",
+    # A disagreement in the record, stated and left unadjudicated.
+    "completed_conflict", "conflict",
+    # The source ids this block rests on, each also in `sources`.
+    "sources",
+})
+
 # Site icons. `shared/icon.svg` is the source of truth for the mark; the raster
 # files are derived from it. Every page carries these, the way it carries the
 # shared stylesheet — `validate.py` enforces it.
@@ -1831,11 +1880,16 @@ def timeline_html(rec: dict, indent: str) -> str:
     # assessor reports 0 stories for this parcel — a data gap, not a
     # measurement", "the most recent roll carrying this parcel is 2018, not
     # 2025". Each says how far to trust a figure the page prints, which is the
-    # one thing this line is for, and no key read them.
+    # one thing this line is for, and no key read them. `historic_status.note`
+    # is the third of them, on two pages: a parcel inside a district boundary
+    # whose classification as a contributing building nobody has established, a
+    # Category A status that came from a project-driven evaluation rather than a
+    # survey. Same slot, same reason.
     for t in [disclosure, *dating_conflicts(rec),
               (rec.get("building") or {}).get("conflict"),
               (rec.get("parcel") or {}).get("note"),
               (rec.get("assessment") or {}).get("note"),
+              (rec.get("historic_status") or {}).get("note"),
               *(rec.get("unknowns") or [])]:
         t = str(t).strip() if t else ""
         if t and t not in seen:
@@ -2715,6 +2769,13 @@ def glance_panel_html(rec: dict, indent: str) -> str:
     if also:
         rows.append(("ic-pin", "Also addressed",
                      ", ".join(alias_display(x) for x in also)))
+    # The number the building was known by before the street around it
+    # changed — a renumbering, or a street the city absorbed. Not
+    # `also_addressed`, which is an address the parcel still answers to, and
+    # not `relocated_from`, which is a building that moved rather than an
+    # address that did.
+    if b.get("former_address"):
+        rows.append(("ic-pin", "Formerly addressed", alias_display(b["former_address"])))
     stair = rec.get("adjoining_public_stair") or {}
     if stair.get("name"):
         # A public stair running up the side of the parcel is the building's
@@ -2732,6 +2793,18 @@ def glance_panel_html(rec: dict, indent: str) -> str:
         rows.append(("ic-layers", "Residential units", f"{units:,}"))
     if a.get("assessed_fixtures_value"):
         rows.append(("ic-value", "Assessed fixtures", f"${a['assessed_fixtures_value']:,}"))
+    # Why a parcel pays no tax on the figures the chart above it prints. The
+    # roll's exemption column is the assessor's own word for the use the
+    # exemption was granted for — "Welfare" for a nonprofit's office building,
+    # "Church" for a congregation's — and on six pages it was the one thing in
+    # `assessment` no key read. Where the roll also gives the exempted amount it
+    # rides in the same row: it is not the chart's total, and on 57 Post Street
+    # it is under half of it.
+    if a.get("exemption"):
+        rows.append(("ic-value", "Tax exemption",
+                     with_note(a["exemption"],
+                               f"${a['exemption_value']:,} exempt"
+                               if a.get("exemption_value") else None)))
     if a.get("last_sale_date"):
         rows.append(("ic-value", "Last sale", long_date(a["last_sale_date"])))
     # No historic status row: the hero tag already states it in words, and the
