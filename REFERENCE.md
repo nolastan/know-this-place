@@ -171,6 +171,12 @@ own.
     `relocated_from` is a building that moved, `former_address` an address
     that did. Neither is `also_addressed`, which is a number the parcel
     still answers to.
+- **`building.style` and `building.subdivision`** are the same shape for two
+  facts a survey usually carries and sometimes doesn't: the architectural style
+  where the source stating it is a newsletter or a context statement's prose
+  rather than an inventory (`historic_survey.style` is the commoner case and
+  has its own row in the survey panel), and the tract the lot was sold out of.
+  Neither is `parcel` data — nothing in the assessor's roll says either.
 
 ### `occupants`
 
@@ -382,6 +388,17 @@ documents with the numbers swapped.
   `scripts/permit_redactions.json`, and re-seed. Product and material brands
   (window and roofing manufacturers) are specifications, not names — leave
   those alone.
+- **Privacy: read what the room rule could not.** `generalize_rooms` rewrites a
+  numbered room to a count only where `is_hotel` holds — the assessor calls the
+  parcel a hotel, or the page's own `building.name`/`former_name` does and the
+  roll still calls it residential. Everywhere else a numbered room may be a
+  dwelling or may be a room named by its function, and only the sentence says
+  which. Each one that a new area turns up gets an entry in
+  `scripts/permit_room_decisions.json`: `rewrite` with the exact `old`/`new`
+  text, or `keep` with the designator left alone, and in both cases a `why`
+  that states the evidence. `validate.py` checks every entry against the page
+  it names, so a decision whose text DBI later revises fails the build instead
+  of rotting quietly.
 
 ---
 
@@ -446,7 +463,6 @@ now has a build in it.
 | `index.html` at the repo root | the homepage, hand-authored |
 | `san-francisco/index.html` | the city index, hand-authored — no generator has ever touched it |
 | `san-francisco/<neighborhood>/index.html` | 42 of them. A human's prose; `hubs` patches the street list into the page rather than writing it |
-| two street hubs under `corbett-heights/` | see below |
 | `shared/`, `scripts/`, `research/`, `news/`, `merchants/`, `design/` | the stylesheet, the script, the tools, the modules |
 | `corpus.jsonl` | derived, but committed on purpose — see below |
 
@@ -488,20 +504,28 @@ CI runs the same script on every pull request — so the deployed site is a
 function of the repository, checked on the way in rather than inspected after
 the fact.
 
-### The two hubs that stay committed
+### A street hub with a section of its own
 
-`seed_pages.py hubs` refuses to rebuild a street hub that has grown a
-hand-written section it doesn't know how to preserve, and names it on every
-run. Two have: `corbett-heights/danvers-street` and
-`corbett-heights/mars-street`. Their `index.html` is the only copy of that
-prose, so both are exempted by name in `.gitignore` and stay committed.
+Some streets have a record no building page can hold: when the lots were
+divided, the 1922 order that graded the street, the corner an extension took.
+`seed_pages.py hubs` carries that through. A `## Heading` in the street's
+`index.md` that isn't one of the generator's own is read, written back
+verbatim, and rendered into `index.html` — a `## Sources` section into the
+footer, where an address page puts its own citations, and everything else into
+the main column above the building list. The markdown it understands is what
+those sections contain: bullet lists, paragraphs, links, bold and italics.
 
-A third one would otherwise vanish from the site silently — the build would
-skip it, nothing would be committed, and no diff would show it. `validate.py`
-has a build-completeness check for exactly that: every address directory with
-a `data.json`, and every hub directory with an `index.md`, must have an
-`index.html` after a build. If it fires, either teach the generator the
-section or commit the HTML and exempt it.
+So `index.md` stays the only copy of the prose and `index.html` stays a build
+artifact, which is what keeps every street hub out of the repository. Two of
+them — `corbett-heights/mars-street` and `corbett-heights/danvers-street` —
+were committed HTML until the generator could read them, and had gone stale in
+the way a frozen page does: no stat band, no structured data, a hand-kept
+building list and a hand-kept nearby-streets list that nothing updated.
+
+A hub the build skipped would otherwise vanish from the site silently — nothing
+committed, no diff to show it. `validate.py` has a build-completeness check for
+exactly that: every address directory with a `data.json`, and every hub
+directory with an `index.md`, must have an `index.html` after a build.
 
 ### Looking at it
 

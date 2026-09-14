@@ -1,34 +1,47 @@
 {
   "address": "60–62 Danvers Street, San Francisco, CA 94114",
+  "path": "/san-francisco/corbett-heights/danvers-street/60/",
+  "hook": "A 1961 building on ground that carried part of Horner's grocery and saloon.",
+  "apn": "2659060",
+  "block": "2659",
+  "lot": "060",
+  "eas_baseid": "343622",
+  "coordinates": {
+    "lat": 37.76053,
+    "lng": -122.443814
+  },
   "address_range": {
     "low": 60,
     "high": 62,
     "canonical": 60,
     "note": "One parcel spanning 60 and 62 Danvers Street."
   },
-  "path": "/san-francisco/corbett-heights/danvers-street/60/",
-  "hook": "A 1961 building on ground that carried part of Horner's grocery and saloon.",
-  "apn": "2659060",
-  "block": "2659",
-  "lot": "060",
-  "coordinates": {
-    "lat": 37.76053,
-    "lng": -122.443814
-  },
+  "street_numbers_on_parcel": [
+    "60",
+    "62"
+  ],
   "parcel": {
     "year_built": 1961,
-    "use": "Multi-Family Residential",
-    "property_class": "Flats & Duplex",
     "units": 2,
     "stories": 2,
     "rooms": 10,
     "lot_area_sqft": 2652,
     "building_area_sqft": 2732,
-    "construction_type": "Wood frame",
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
     "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0062 0060 DANVERS             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2017,
     "assessed_land_value": 1584365,
     "assessed_improvement_value": 758378,
-    "current_sales_date": "2002-09-27"
+    "last_sale_date": "2002-09-27",
+    "note": "The most recent secured roll carrying this parcel is 2017, and the dataset gives no reason. The figures are not current."
   },
   "historic_status": {
     "ceqa_status_code": "B",
@@ -123,9 +136,9 @@
     },
     {
       "id": "sf-assessor-roll",
-      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2017 secured roll — the latest carrying this parcel)",
       "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2659060&$order=closed_roll_year%20DESC&$limit=1",
-      "retrieved": "2026-07-22"
+      "retrieved": "2026-09-13"
     },
     {
       "id": "sf-planning",

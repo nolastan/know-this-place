@@ -376,8 +376,8 @@ def check_hub_covers_children(dir_path: Path) -> None:
 
     Only street hubs are checked: a directory with at least one data.json
     child, per `street_hub_hook_overrides`. A hub whose own index.md carries
-    hand-written sections is one `write_street_hub` refuses to rebuild, but
-    the requirement is the same either way — the list is then updated by hand.
+    hand-written sections is rebuilt like any other — `write_street_hub`
+    carries those sections through — so the list is always generated.
 
     The list lives only in index.html (#151: it's generated wholesale from
     these same children on every rebuild, so index.md doesn't also carry it).
@@ -532,6 +532,60 @@ def check_narrative(data_path: Path, data: dict) -> None:
                     err(data_path, f'narrative.sections[{i}] needs "heading" and "body"')
 
 
+def check_room_decisions() -> None:
+    """Every recorded room-number decision still applies to the page it names.
+
+    scripts/permit_room_decisions.json is a person's reading of a permit
+    sentence the rewrite rule cannot settle (#273). It is only worth what it
+    still describes: if DBI revises a description, or the page moves, or the
+    permit drops off the trimmed list, the decision becomes a claim about text
+    that no longer exists and the sentence needs reading again. So each entry
+    is checked against the committed page — a "rewrite" must have landed, a
+    "keep" must still be there to keep.
+    """
+    path = ROOT / "scripts" / "permit_room_decisions.json"
+    if not path.exists():
+        return
+    try:
+        entries = json.loads(path.read_text(encoding="utf-8")).get("decisions", [])
+    except json.JSONDecodeError as e:
+        err(path, f"invalid JSON: {e}")
+        return
+    for e in entries:
+        page = ROOT / str(e.get("path", "")).strip("/")
+        data_path = page / "data.json"
+        if not data_path.exists():
+            err(path, f'decision for permit {e.get("permit")} names '
+                      f'{e.get("path")}, which has no data.json')
+            continue
+        data = json.loads(data_path.read_text(encoding="utf-8"))
+        hit = [x for x in data.get("permits", [])
+               if str(x.get("number")) == str(e.get("permit"))]
+        if not hit:
+            err(data_path, f'permit {e.get("permit")} is recorded in '
+                           f'permit_room_decisions.json but is not on this page')
+            continue
+        desc = hit[0].get("description") or ""
+        if e.get("verdict") == "rewrite":
+            if e["new"] not in desc:
+                err(data_path, f'permit {e["permit"]}: permit_room_decisions.json '
+                               f'rewrites this description to contain {e["new"]!r}, '
+                               f'and it does not. Re-render the page')
+        elif e.get("verdict") == "keep":
+            # The designator the decision left alone has to still be there. It
+            # is recorded as the reader saw it, which for a long list is an
+            # abbreviation ("rooms 715/709/713/711/707/607/..."), so the check
+            # is on its first run of characters rather than the whole string.
+            stem = str(e.get("text", "")).split(",")[0].split("...")[0].strip()
+            if stem and stem not in desc:
+                err(data_path, f'permit {e["permit"]}: permit_room_decisions.json '
+                               f'keeps {stem!r} in this description, and it is '
+                               f'no longer there — read the sentence again')
+        else:
+            err(path, f'permit {e.get("permit")}: verdict must be '
+                      f'"rewrite" or "keep"')
+
+
 def check_build_is_complete(content: Path) -> None:
     """Every source that should have produced a page, produced one.
 
@@ -563,6 +617,7 @@ def check_build_is_complete(content: Path) -> None:
 def main() -> int:
     content = ROOT / "san-francisco"
     check_build_is_complete(content)
+    check_room_decisions()
     html_pages = [ROOT / "index.html"] if (ROOT / "index.html").exists() else []
     html_pages += sorted(content.rglob("index.html")) if content.exists() else []
 

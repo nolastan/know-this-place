@@ -998,6 +998,31 @@ def generalize_units(text: str | None) -> str | None:
 # apartment buildings whose "room #63" really is a dwelling are left for a
 # person to decide, one page at a time.
 HOTEL_USE = "Commercial Hotel"
+# The roll is the first witness, not the only one. It classes 50 Turk and 128
+# Eddy as apartment buildings, while the pages themselves carry `building.name`
+# "Winston Arms Hotel" and `building.former_name` "The Gotham Lodgings" — a
+# fact research put there, and better evidence about what a room is than a
+# property class assigned for assessment. So a hotel named on the page counts
+# too, and only on a parcel the roll still calls residential: the same word
+# inside a *commercial* class is a trade name rather than a building's use
+# ("Dohrmann Hotel Supply Co" at 972 Mission, a hotel supplier; "Planters
+# Hotel" at 282 2nd, long since offices), and no one lives in either.
+#
+# Measured over every published page, the widening admits 20 parcels and
+# rewrites 3 descriptions, all 3 SRO room numbers. It cannot fire while a page
+# is being created, because `building` is hand-authored and a fresh draft has
+# none; it fires when an already-named page is seeded again, and until then
+# the residue it leaves is what scripts/permit_room_decisions.json is for.
+HOTEL_NAME = re.compile(r"\b(?:hotels?|lodgings?|sro|rooming house|residence club)\b", re.I)
+RESIDENTIAL_USE = {"Multi-Family Residential", "Single Family Residential"}
+#
+# A ratio test was measured too and rejected: "more rooms than units, fewer
+# baths than units" reads like an SRO and matches 536 pages, but of the 8 with
+# a room designator it would have rewritten "front single story rm.#4" in a
+# three-unit Castro house and "total 12 toilet rooms & 12 shower rooms" at the
+# Dell Apartments to gain one true hotel room. The roll's own unit counts are
+# too unreliable to carry a privacy rule.
+#
 # The narrowings, each one something the hotel corpus actually contains:
 #   * a room type named right before the keyword is a room, not a home. Every
 #     word here precedes a numbered room somewhere in the DBI export; "bath"
@@ -1020,15 +1045,41 @@ DWELLING_WORD = {"guest", "guess", "hotel", "sleeping"}
 #   * a number that measures is not a number that identifies: "tool room 69 sq
 #     ft" is an area, "room 12' x 15'" is a dimension, and a list can run
 #     straight into one ("rms 113,114,115,116,117,118, 720 sq ft").
-_NOT_MEASURE = (r"(?!\s*(?:sqft|sq|sf|s\.\s?f|feet|ft|square)\b)"
+#     The measure may be reached across a decimal fraction, because the number
+#     that carries one is being measured rather than named: "undermitted rooms
+#     349.8 sf" is an area and "room 7.5 ft to rear yard" a dimension, and
+#     _UNIT_NUM stops at the point, which left the lookahead reading ".8 sf"
+#     and rewriting both (#273). A decimal that is *not* followed by a measure
+#     is left alone, because one institutional numbering scheme really does
+#     use it — "room 116.5, 132, 133, 134, 0533.3" at 200 Larkin.
+_MEASURE_WORD = r"(?:sqft|sq|sf|s\.\s?f|feet|ft|square)\b"
+_NOT_MEASURE = (r"(?!\s*" + _MEASURE_WORD + r")"
+                r"(?!\.\d+\s*" + _MEASURE_WORD + r")"
                 r"(?!\s*['\"])")
+#   * a designator of five digits or more is not a room. Measured over every
+#     published description, the numbers DBI writes after a room keyword run
+#     one to four digits ("rm 3079" is the longest real one); past that lie
+#     its own permit and complaint numbers, which the text references in the
+#     same breath — "smoke alarms in each room # 202309164" (1136 York),
+#     "ref accessible men's room #201504244586" (440 Mission). Reading one as
+#     a dwelling turns a citation into "each one room" (#273).
+_ROOM_DIGITS = r"(?<!\d)\d{1,4}(?!\d)"
 #   * DBI hyphenates room numbers, as a range ("rooms 100-121") and as a list
 #     ("bth rms 201-205-302-303-304-305"), a shape it never uses for units.
 #     The hyphen must join two numbers: before a word it is a dash ("room
 #     #248-close partition wall"), and before "/f" it marks a floor ("room
 #     6-2/f", which is room 6 on the second floor, not rooms 6 through 2).
-_ROOM_NUM = (_UNIT_NUM + _NOT_MEASURE +
-             r"(?:\s*-\s*" + _UNIT_NUM + _NOT_MEASURE + r"(?!/))*")
+#   * it also slash-separates a list, but only a long one, so the room
+#     designator drops _UNIT_NUM's fractional branch and takes its own: three
+#     or more numbers joined by slashes are a list of rooms ("rooms 715/709/
+#     713/711/707/607/..." at 320 Clementina, the trash-room stack), while two
+#     are a fraction ("replace with 5/8 type x") and a letter after the slash
+#     is a floor ("rm 2/f"). Inheriting the fractional branch made the list
+#     count as a single designator and left the tail of it in the sentence.
+_ROOM_BASE = (r"(?:" + _ROOM_DIGITS + r"(?:\s*/\s*" + _ROOM_DIGITS + r"){2,}"
+              r"|" + _ROOM_DIGITS + r"(?!\s*/))[a-z]?\b")
+_ROOM_NUM = (_ROOM_BASE + _NOT_MEASURE +
+             r"(?:\s*-\s*" + _ROOM_BASE + _NOT_MEASURE + r"(?!/))*")
 _ROOM_RUN = (_ROOM_NUM + r"(?:" + _SEP + r"#?\s*" + _ROOM_NUM +
              r"|\s+#?" + _ROOM_NUM + r"(?![./]))*")
 # No lettered branch, unlike UNIT_REF: the hotel corpus holds no "room a", and
@@ -1062,15 +1113,74 @@ def _generic_room(m) -> str:
     else:
         lead, kind = (f"{qual} " if qual else ""), "room"
     desig = m.group("desig")
-    n = 0 if "-" in desig else len(re.findall(_UNIT_NUM, desig))
+    # Plain integers, not _UNIT_NUM: the room designator has no fractional
+    # branch (see _ROOM_BASE), so every number in the run is its own room and
+    # a slash list counts all of its members rather than half of them.
+    n = 0 if "-" in desig else len(re.findall(r"\d+", desig))
     if n == 0 or n not in ROOM_COUNT_WORD:
         return f"{lead}{kind}s"
     return lead + (f"one {kind}" if n == 1 else f"{ROOM_COUNT_WORD[n]} {kind}s")
 
 
+def is_hotel(roll_use: str | None, building: dict | None) -> bool:
+    """Whether a numbered room on this parcel is a dwelling — see HOTEL_USE."""
+    if roll_use == HOTEL_USE:
+        return True
+    named = " ".join(filter(None, ((building or {}).get("name"),
+                                   (building or {}).get("former_name"))))
+    return roll_use in RESIDENTIAL_USE and bool(HOTEL_NAME.search(named))
+
+
 def generalize_rooms(text: str | None, *, hotel: bool) -> str | None:
     """Genericize room numbers, but only on a hotel parcel — see HOTEL_USE."""
     return ROOM_REF.sub(_generic_room, text) if text and hotel else text
+
+
+# What the gate cannot reach, a person read once. Every permit description on a
+# residential-but-not-hotel parcel whose room number the gate leaves alone is
+# recorded in scripts/permit_room_decisions.json with the evidence and the
+# verdict, so the judgment is made once rather than re-derived every time
+# somebody notices the sentence again (#273). Keyed by page path *and* permit
+# number, because DBI's street-name collisions put the same permit number on
+# more than one page (787 of them across the corpus).
+DECISIONS_PATH = ROOT / "scripts" / "permit_room_decisions.json"
+
+
+def _load_room_decisions() -> dict:
+    if not DECISIONS_PATH.exists():
+        return {}
+    out = {}
+    for e in json.loads(DECISIONS_PATH.read_text()).get("decisions", []):
+        if e.get("verdict") == "rewrite":
+            out[(e["path"], str(e["permit"]))] = (e["old"], e["new"])
+    return out
+
+
+ROOM_DECISIONS = _load_room_decisions()
+
+
+def apply_room_decision(text: str | None, path: str, permit: str | None) -> str | None:
+    """Apply the recorded rewrite for one permit description, if there is one.
+
+    Runs last, on the finished sentence, so what the file records is what a
+    reader of the page sees. It raises rather than guessing: a decision whose
+    "old" text has gone means DBI revised the description under it and the
+    sentence needs reading again, which is a person's job and not a default's.
+    Already having the "new" text is not a failure — the widened gate may have
+    reached the same sentence first — so the rewrite is idempotent.
+    """
+    hit = ROOM_DECISIONS.get((path, str(permit)))
+    if not hit or not text:
+        return text
+    old, new = hit
+    if old not in text:
+        if new in text:
+            return text
+        raise SystemExit(
+            f"permit_room_decisions.json: {path} permit {permit} expects\n"
+            f"  {old!r}\nin\n  {text!r}\nand it is not there. DBI has revised the "
+            f"description; read the sentence again and update the decision.")
+    return text.replace(old, new)
 
 
 def redact(text: str | None) -> str | None:
@@ -1333,7 +1443,7 @@ def build_record(parcel: dict, ctx: dict) -> dict:
             rec["also_in_districts"] = [as_record(e) for e in hits[1:]]
 
     permits = []
-    is_hotel = p.get("use") == HOTEL_USE
+    hotel = is_hotel(p.get("use"), rec.get("building"))
     for r in parcel["permits"]:
         entry = {
             "number": r.get("permit_number"),
@@ -1343,8 +1453,10 @@ def build_record(parcel: dict, ctx: dict) -> dict:
             "status_date": ymd(r.get("status_date")),
             "estimated_cost": num(r.get("estimated_cost")),
             "revised_cost": num(r.get("revised_cost")),
-            "description": redact(generalize_rooms(
-                generalize_units(r.get("description")), hotel=is_hotel)),
+            "description": apply_room_decision(
+                redact(generalize_rooms(
+                    generalize_units(r.get("description")), hotel=hotel)),
+                path, r.get("permit_number")),
             "source": "sf-building-permits",
         }
         permits.append({k: v for k, v in entry.items() if v not in (None, "")})
@@ -2612,6 +2724,21 @@ def glance_panel_html(rec: dict, indent: str) -> str:
                            ("ic-plan", "Developer", b.get("developer")),
                            ("ic-calendar", "Completed", completed),
                            ("ic-calendar", "First owner", b.get("first_owner")),
+                           # The style as some source other than a survey states
+                           # it — a newsletter, a context statement's prose. The
+                           # survey panel's own "Style" row reads
+                           # `historic_survey.style` and is the commoner case;
+                           # this is the one for a building no survey reached.
+                           ("ic-ruler", "Style", b.get("style")),
+                           # The tract the lot was sold out of. A standing fact
+                           # about the ground, which is why it sits here rather
+                           # than on the rail: the subdivision has a date, the
+                           # building's relationship to it doesn't.
+                           ("ic-plan", "Subdivision", b.get("subdivision")),
+                           # What the record says occupied the ground before,
+                           # where no dated entry carries it. A predecessor with
+                           # dates belongs on the timeline instead.
+                           ("ic-pin", "Site before", b.get("site_before")),
                            # A house that arrived on a lorry: where it stood
                            # before is identity, not a dated event — the move
                            # itself is already an entry on the rail.
@@ -3496,8 +3623,136 @@ def hub_extra_sections(hub_dir: Path, known) -> list:
     return [h for h in headings if not any(pat.search(h) for pat in known)]
 
 
-def street_hub_extra_sections(street_dir: Path) -> list:
-    return hub_extra_sections(street_dir, KNOWN_STREET_HUB_SECTIONS)
+def hub_hand_sections(hub_dir: Path, known) -> list:
+    """`[(heading, [body line, …]), …]` for the sections a person wrote.
+
+    The companion to `hub_extra_sections`, which only names them. A street's
+    own record — when its lots were divided, the 1922 order that graded it, the
+    corner the Market Street extension took — is a fact about the street and
+    has no building page to sit on, so the hub is where it goes. Carrying it
+    through a rebuild is what lets the hub stay generated: the alternative is
+    the generator refusing the street and its `index.html` being committed as
+    the only copy of the prose, which is what `corbett-heights/mars-street` and
+    `corbett-heights/danvers-street` were before this read them.
+    """
+    md = hub_dir / "index.md"
+    if not md.exists():
+        return []
+    out, body = [], None
+    for line in md.read_text(encoding="utf-8").splitlines():
+        m = re.match(r"^## (.+)$", line)
+        if m:
+            body = []
+            if not any(pat.search(m.group(1)) for pat in known):
+                out.append((m.group(1), body))
+            continue
+        if body is not None:
+            body.append(line)
+    return [(h, _strip_blanks(b)) for h, b in out]
+
+
+def _strip_blanks(lines: list) -> list:
+    """A section body without the blank lines around it."""
+    while lines and not lines[0].strip():
+        lines = lines[1:]
+    while lines and not lines[-1].strip():
+        lines = lines[:-1]
+    return lines
+
+
+MD_LINK = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
+# Matched after escaping, which is why these look for the escaped brackets —
+# and why the URL body is "anything up to the closing one" rather than a
+# character class: a query string escapes its own separators to `&amp;`.
+MD_AUTOLINK = re.compile(r"&lt;(https?://(?:(?!&gt;).)+)&gt;")
+# The shape a hand-written Sources bullet ends in: the query URL, then the date
+# it was read. An address page's footer prints exactly that as one link, so a
+# hub's does too rather than spelling a query string out across the page.
+MD_SOURCE_LINK = re.compile(r"&lt;(https?://(?:(?!&gt;).)+)&gt;\s*"
+                            r"\(retrieved (\d{4}-\d{2}-\d{2})\)")
+MD_STRONG = re.compile(r"\*\*([^*]+)\*\*")
+MD_EM = re.compile(r"(?<!\*)\*([^*]+)\*(?!\*)")
+
+
+def md_inline(text: str) -> str:
+    """The inline markdown a hub's hand-written prose actually uses.
+
+    Deliberately not a markdown implementation: links, autolinks, bold and
+    italics are what the sections in the corpus contain, and anything wider
+    would be a parser to maintain for no page's benefit.
+    """
+    return md_inline_escaped(esc(text))
+
+
+def md_inline_escaped(out: str) -> str:
+    """`md_inline`'s markup pass, on text that is already escaped."""
+    out = MD_LINK.sub(lambda m: f'<a href="{esca(html.unescape(m.group(2)))}">'
+                                f'{m.group(1)}</a>', out)
+    out = MD_AUTOLINK.sub(lambda m: f'<a href="{esca(html.unescape(m.group(1)))}">'
+                                    f'{m.group(1)}</a>', out)
+    out = MD_STRONG.sub(r"<b>\1</b>", out)
+    return MD_EM.sub(r"<em>\1</em>", out)
+
+
+def hub_source_line(item: str) -> str:
+    """One hand-written Sources bullet, as the footer's own citation shape."""
+    # Before the general inline pass, which would otherwise autolink the URL
+    # under its own spelling and leave the date behind as bare text.
+    out = MD_SOURCE_LINK.sub(
+        lambda m: f'<a href="{esca(html.unescape(m.group(1)))}">'
+                  f'retrieved {m.group(2)}</a>', esc(item))
+    return md_inline_escaped(out)
+
+
+def md_list_items(lines: list) -> list:
+    """Just the bullets, unwrapped — a hand-written Sources section is a list."""
+    items: list = []
+    for line in lines:
+        stripped = line.strip()
+        if stripped.startswith("- "):
+            items.append(stripped[2:])
+        elif stripped and items:
+            items[-1] += " " + stripped
+    return items
+
+
+def md_block_html(lines: list, indent: str) -> str:
+    """Bullet lists and paragraphs, the two shapes a hand-written section has.
+
+    A list item may wrap onto indented continuation lines, and so may a
+    paragraph; both are joined back into one line before rendering, because the
+    hard wrapping in `index.md` is a courtesy to whoever edits the file and
+    means nothing in the output.
+    """
+    blocks, cur, kind = [], [], None
+    for line in [*lines, ""]:
+        stripped = line.strip()
+        if not stripped:
+            if cur:
+                blocks.append((kind, cur))
+            cur, kind = [], None
+            continue
+        if stripped.startswith("- "):
+            if kind != "ul":
+                if cur:
+                    blocks.append((kind, cur))
+                cur, kind = [], "ul"
+            cur.append(stripped[2:])
+        elif kind == "ul" or (kind == "p" and cur):
+            cur[-1] += " " + stripped          # a wrapped continuation line
+        else:
+            cur, kind = [stripped], "p"
+    out = []
+    for k, items in blocks:
+        if k == "ul":
+            rows = "\n".join(f"{indent}  <li>{md_inline(i)}</li>" for i in items)
+            # `.prose` is the measure, and nothing else — the browser's own
+            # bullets and indent are what a plain list wants, so this needs no
+            # rule of its own in the stylesheet.
+            out.append(f'{indent}<ul class="prose">\n{rows}\n{indent}</ul>')
+        else:
+            out += [f'{indent}<p class="prose">{md_inline(i)}</p>' for i in items]
+    return "\n".join(out) + "\n" if out else ""
 
 
 def hub_lead(street_dir, fallback: str) -> str:
@@ -3713,28 +3968,31 @@ def nearby_streets_html(street_dir: Path, ctx: dict, indent: str) -> str:
 def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
     """Rebuild a street's index.md + index.html from the pages beneath it.
 
-    Returns False (and leaves both files untouched) if the existing index.md
-    has hand-written sections the generator doesn't know how to preserve —
-    see `street_hub_extra_sections`.
+    Returns whether there was a street hub to write — False for a directory
+    holding no pages yet.
+
+    Sections a person wrote are carried through rather than overwritten: they
+    are read out of `index.md`, written back to it verbatim, and rendered into
+    `index.html` — a "Sources" section into the footer where an address page
+    puts its own, everything else into the main column above the building list.
+    So the hub stays generated no matter what a street's own record has grown,
+    and no street's `index.html` has to be committed to keep its prose.
 
     The "Nearby streets" list is a fact about the whole neighborhood, so
     rebuilding one street hub after seeding leaves its neighbors' lists a page
     behind — `hubs` over the neighborhood is what brings them level, the same
     way `build_link_index.py` catches `shared/nearby.json` up to new pages.
     """
-    extra = street_hub_extra_sections(street_dir)
-    if extra:
-        print(f"  {street_dir}: skipping — hand-written section(s) "
-              f"{', '.join(extra)} beyond the generated template; "
-              f"update the list by hand instead", file=sys.stderr)
-        return False
+    hand = hub_hand_sections(street_dir, KNOWN_STREET_HUB_SECTIONS)
+    hand_sources = [b for h, b in hand if h.strip().lower() == "sources"]
+    hand_main = [(h, b) for h, b in hand if h.strip().lower() != "sources"]
     recs = []
     for d in sorted(street_dir.iterdir(), key=lambda x: num_key(x.name)):
         f = d / "data.json"
         if d.is_dir() and f.exists():
             recs.append(json.loads(f.read_text()))
     if not recs:
-        return True
+        return False
     slug = street_dir.name
     disp = street_display_name(recs)  # off the addresses, not the slug
     path = f"/{ctx['city']}/{ctx['area']}/{slug}/"
@@ -3797,6 +4055,12 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
                "Also on this street: " + "; ".join(uncovered) + ".", ""]
     md += ["Pages are generated from the DataSF datasets listed in each page's",
            "Sources footer, and are corrected by hand as readers write in.", ""]
+    # After the generated template, not inside it: a hub with no hand-written
+    # section then reads exactly as it did before this could carry one.
+    for heading, body in hand_main:
+        md += [f"## {heading}", "", *body, ""]
+    for body in hand_sources:
+        md += ["## Sources", "", *body, ""]
     (street_dir / "index.md").write_text("\n".join(md), encoding="utf-8")
 
     stat_html = "\n".join(
@@ -3831,6 +4095,19 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
         cols_open = '  <div class="cols">\n    <div class="main">\n'
         cols_close = f'    </div>\n\n    <aside class="aside">\n{aside}    </aside>\n  </div>\n'
     nearby = nearby_streets_html(street_dir, ctx, "  ")
+    # The street's own record, above the buildings: what a reader wants first
+    # from a hub that has one is the street, and the list is what they scroll to.
+    hand_html = "".join(
+        f'      <div class="section-head"><span class="ic ic-clock"></span>'
+        f'<h2>{esc(heading)}</h2></div>\n{md_block_html(body, "      ")}\n'
+        for heading, body in hand_main)
+    sources_block = ""
+    if hand_sources:
+        rows = "\n".join(f"      <li>{hub_source_line(i)}</li>"
+                         for body in hand_sources
+                         for i in md_list_items(body))
+        sources_block = ('  <section class="sources">\n    <h2>Sources</h2>\n'
+                         f'    <ul>\n{rows}\n    </ul>\n  </section>\n')
 
     html_out = f"""<!doctype html>
 <html lang="en">
@@ -3868,14 +4145,14 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
 {stat_html}
   </div>
 
-{cols_open}      <div class="section-head"><span class="ic ic-pin"></span><h2>Buildings</h2></div>
+{cols_open}{hand_html}      <div class="section-head"><span class="ic ic-pin"></span><h2>Buildings</h2></div>
       <ul class="place-list">
 {list_html}
       </ul>
 {cols_close}{nearby}</main>
 
 <footer class="site-footer">
-  <p class="feedback-cta">
+{sources_block}  <p class="feedback-cta">
     Live on {esc(disp)}, or know a building we should cover next?
     <a href="{feedback_url(disp, path)}">Tell us.</a>
   </p>
@@ -4689,9 +4966,7 @@ def cmd_seed(args) -> int:
     print(f"neighborhood hub lists {n_streets} street(s)")
     print(f"created {written} new page(s); left {skipped} existing page(s) "
           f"untouched; skipped {elsewhere} parcel(s) already documented under "
-          f"another neighborhood; rebuilt {rebuilt_hubs} street hub(s)"
-          + (f"; left {len(touched_streets) - rebuilt_hubs} street hub(s) untouched "
-             f"(hand-written sections)" if rebuilt_hubs < len(touched_streets) else ""))
+          f"another neighborhood; rebuilt {rebuilt_hubs} street hub(s)")
     if excluded:
         print(f"excluded streets (filed under another neighborhood): "
               f"{', '.join(sorted(excluded))}")
@@ -5054,16 +5329,10 @@ def cmd_districts(args) -> int:
 def cmd_hubs(args) -> int:
     ctx = make_ctx(args, {"roll_year": args.roll_year, "historic": [], "districts": []})
     area_dir = ROOT / args.city / args.area
-    n, n_skipped = 0, 0
-    for street_dir in sorted(area_dir.iterdir()):
-        if street_dir.is_dir():
-            if write_street_hub(street_dir, ctx):
-                n += 1
-            else:
-                n_skipped += 1
+    n = sum(1 for street_dir in sorted(area_dir.iterdir())
+            if street_dir.is_dir() and write_street_hub(street_dir, ctx))
     n_streets = write_neighborhood_hub(area_dir, ctx)
-    print(f"rebuilt {n} street hub(s); left {n_skipped} untouched (hand-written "
-          f"sections); neighborhood hub lists {n_streets} street(s)")
+    print(f"rebuilt {n} street hub(s); neighborhood hub lists {n_streets} street(s)")
     return 0
 
 

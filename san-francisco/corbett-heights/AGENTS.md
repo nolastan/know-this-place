@@ -20,6 +20,17 @@ streets don't overlap the Castro tree.
 - The `.sub` locality line is `Corbett Heights · San Francisco, CA <zip>`.
 - If a source calls a Corbett Heights address "Castro/Upper Market," that's
   the city's analysis-neighborhood label, not a reason to refile the page.
+- The separation is enforced in one place: `AREA_EXCLUDE_STREETS` in
+  `seed_pages.py` keeps `seed castro` off these streets, so a parcel here is
+  never filed twice. Seeding new parcels on them means seeding
+  `--area corbett-heights` and pointing it at the same analysis neighborhood.
+
+Three pages here are filed under the address the building is known by rather
+than the lowest number EAS holds for the parcel, which is what the seeder would
+pick: `clayton-street/1349` (EAS also has 5 Villa Terrace),
+`corbett-avenue/127` (EAS has only 9 Hattie Street) and `museum-way/199`, the
+Randall Museum (EAS also has 122 States Street). Each says so in
+`also_addressed`. Don't "correct" them to the mechanical answer.
 
 ## Presenting history from newsletters and context statements
 
@@ -38,7 +49,8 @@ Two hard rules when using it:
 - **Extract facts; never paraphrase the source's prose.** A dated event
   becomes a `.vtl` timeline item; a discrete fact (contractor, architect,
   build cost, first owner) becomes a `.speclist` row or a stat tile; a
-  category (style, subdivision) becomes a tag. Do not reproduce the source's
+  category becomes `building.style` or `building.subdivision`, which are
+  `.speclist` rows too. Do not reproduce the source's
   sentences or their structure — that reads as an article and risks copying
   someone else's expression. Facts are not copyrightable; wording is.
 - **Never name the newsletter in the page body.** "The newsletter says…" is
@@ -163,6 +175,16 @@ events are `historical_record` entries now, and the scalars are
 fact from a newsletter or context statement goes in `historical_record`, and a
 standing fact about the building goes on `building`, the same as everywhere
 else in the corpus.
+
+**`parcel` is the assessor's roll and nothing else.** These pages were written
+before the seeder was, and carried six keys under `parcel` that no other page
+in the corpus has and the renderer never read — the assessed values and sale
+date (they belong in `assessment`, which is what draws the value chart and the
+"Last sale" row), a spelled-out `construction_type` (the renderer maps
+`construction_type_code`), and `style`, `subdivision` and a rear unit's number.
+Those three are now `building.style`, `building.subdivision` and an
+`also_addressed` entry. A fact the assessor doesn't state doesn't go in
+`parcel`, however much it looks like parcel data.
 
 ## Contributed memoirs: take the building, leave the people
 
