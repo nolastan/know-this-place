@@ -205,12 +205,27 @@ OCR text and asked to find the address-level information in it:
   covered and what wasn't, so the next run resumes instead of re-reading the
   same haystack.
 - **Volume doesn't relax privacy.** These corpora are dense with people —
-  householders in want-ads, tenants in fire reports, owners in transfer notices.
-  Take buildings, contractors, architects and named firms; leave residents,
-  occupants and owners, per "Privacy — hard limits" in the root
-  [AGENTS.md](../AGENTS.md). The size of the input is not a reason to loosen
-  that, and the low yield of a pass is never a reason to make up the difference
-  with people.
+  householders in want-ads, tenants in fire reports, owners in transfer notices
+  — and those are the ones to leave: a private individual a record happens to
+  name is not a fact about a building. Take buildings, contractors, architects
+  and named firms. The size of the input is not a reason to loosen that, and
+  the low yield of a pass is never a reason to make up the difference with
+  people.
+- **But take the notable past occupant, every time.** The root
+  [AGENTS.md](../AGENTS.md)'s "Privacy — hard limits" is affirmative about
+  this, and it binds here: where a **published source already covers** the
+  person and they are **plainly no longer there** — the architect, the writer
+  who lived there, the madam whose house it was — that is a fact about the
+  building and a run publishes it like any other, cited, without asking. The
+  rule exists so this site can't be used to look somebody up; it was never
+  about the documented dead. A run that leaves one of these for a human to
+  decide has left the work unfinished. Issue #310 is the decision, and
+  [sources/nrhp-nominations.md](sources/nrhp-nominations.md) has the worked
+  case: where the fact lands differs — a residency with a period is a
+  `notable_residents` row, a use of the building or a dated event is a timeline
+  entry — but *whether* to take it is not a judgement call. What still stops
+  you is a living or undated person, or a name you would have to assemble
+  yourself out of city records rather than read out of a published source.
 - **When the source's sentence *is* the person, skip the source.** The limit
   binds when the finding is written, and the finding carries the sentence
   verbatim. Redacting the name is enough where the name is incidental — an

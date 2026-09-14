@@ -40,11 +40,15 @@ breach is expensive to undo:
    `validate.py` fails the build if the two disagree.
 2. **Every fact needs a source**, cited in `data.json`'s `sources` array with
    the query URL and retrieval date. Never invent, estimate, or extrapolate.
-3. **These pages describe buildings, not the people in them.** No current
-   residents, occupants or owners — not even from public records. Historical
-   figures (architects, builders, documented past residents) may be named with
-   citations. A business trading from the building is not a person: it may be
-   named as the current occupant, but never its owners, staff or customers.
+3. **These pages describe buildings, not the people in them** — so that this
+   site never becomes a way to look somebody up, and never launders a name out
+   of a permit or a deed onto a public page. No current residents, occupants or
+   owners, not even from public records. **Notable past occupants are always
+   added**, with a citation: an architect, a builder, a documented past
+   resident, whoever the building is known for, wherever a published source
+   already covers them and they are plainly no longer there. A business trading
+   from the building is not a person: it may be named as the current occupant,
+   but never its owners, staff or customers.
 4. **No new tooling.** No frameworks, no package manifests, no dependencies.
    The build is `scripts/build_site.py` calling seven stdlib-only siblings,
    and every page must still render completely from its HTML alone — nothing

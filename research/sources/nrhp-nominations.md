@@ -6,7 +6,7 @@
 >
 > - **Kind:** PDF reports (federal nomination forms) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — the listings are indexed everywhere; the forms are not. A search for a street number returns the Wikipedia list entry and the NPS map pin, never the paragraph inside the PDF that dates the building and names its architect.
-> - **Coverage:** 96 of 165 San Francisco listings read — every one certified before 1990, plus the Civic Center district the index omits — and the Uptown Tenderloin Historic District inventory (08001407) read in full, all 477 rows. 618 findings, 564 resolved, 530 published.
+> - **Coverage:** 96 of 165 San Francisco listings read — every one certified before 1990, plus the Civic Center district the index omits — and the Uptown Tenderloin Historic District inventory (08001407) read in full, all 477 rows, structured fields and prose tails both. 627 findings, 573 resolved, 539 published.
 > - **Local corpus:** `research/corpora/nrhp-nominations/` (one PDF and one `.txt` per reference number, plus `index-san-francisco.json` and `state.json`)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -194,6 +194,37 @@ Polk, McDougall Brothers, Woollett & Woollett, McLeran & Peterson, Bliss and
 Faville, Clinton Day. Where a form's own `BUILDER/ARCHITECT` field names
 somebody, that is the field to read.
 
+**And the notable past occupant, always — this is the decision issue #310
+made, and it is settled.** A nomination is a published federal record about a
+building; where its prose names somebody the building is known for and puts
+them in the past, that is a fact about the building and a run publishes it,
+cited, without filing a question. The rule it seemed to collide with exists so
+this site can't be used to look somebody up or to launder a name out of a
+permit, and neither reaches a figure a nomination already covers. The root
+[AGENTS.md](../../AGENTS.md) and [../AGENTS.md](../AGENTS.md) now say so
+affirmatively. **What is still a judgement is where the fact lands**, and the
+Uptown Tenderloin's eleven person-naming rows are the worked case:
+
+| the nomination records | where it goes | example |
+|---|---|---|
+| a residency with a period | `notable_residents` — name and period, nothing else renders | Frank Capra, 1921, 233-237 Eddy Street |
+| a residency with no period | `notable_residents` with `period: null`, which prints "Undated"; a qualifier worth keeping earns a one-clause `narrative.lead` instead, and the renderer then drops the panel row | Dashiell Hammett at 620 Eddy Street, "when he began writing" |
+| a **use of the building** | a `historical_record` entry on the one timeline, like any other dated fact | Jessie Hayman's and Tessie Wall's brothels |
+| a dated event at the building | the same | John Galen Howard's death at 227-231 Ellis Street, July 1931 |
+| a plaque the building carries | the same, dated by what the plaque records | the Isadora Duncan plaque at 501-525 Taylor Street |
+| the building's **own owner**, in any era | nothing — owners are out whatever their date | "A.A. Louderback lived in a house on this site until 1906" |
+
+Two things this case taught that generalise. **Count the people, not the
+sentences**: the run that read the inventory reported "twelve rows" naming a
+notable resident and listed seven names; the sweep under #310 found eleven rows,
+nine of them publishable, and two of the nine — Howard and Duncan — had never
+been listed, because one has no full stop at the end of its clause and the other
+is inside the `signs:` field rather than in a tail. And **a district nomination
+contradicts itself about addresses**: section 8 places Howard's death at 227-231
+Eddy Street where the inventory places it at 227-231 Ellis, and there is no
+227-231 Eddy row at all. Publish on the inventory row, put the disagreement in
+the page's `unknowns`, and don't adjudicate it.
+
 ### Citation label
 
 ```
@@ -218,8 +249,19 @@ URL. Worked example:
   ([`listed-1980-1989.json`](../findings/nrhp-nominations/listed-1980-1989.json)),
   and the **Uptown Tenderloin Historic District nomination of 2008 (08001407) in
   full** — its whole section 7 inventory, 477 rows across 33 blocks
-  ([`uptown-tenderloin-district.json`](../findings/nrhp-nominations/uptown-tenderloin-district.json)).
+  ([`uptown-tenderloin-district.json`](../findings/nrhp-nominations/uptown-tenderloin-district.json)),
+  whose **prose tails** were re-swept under #310 for the people the first pass
+  left
+  ([`uptown-tenderloin-notable-residents.json`](../findings/nrhp-nominations/uptown-tenderloin-notable-residents.json)).
 - **Not read, and this is the queue in order:**
+  0. **08001407's own section 8**, the statement of significance, which no pass
+     has read end to end — only the paragraphs a section 7 row sent a run to.
+     It carries address-level facts the inventory does not: the Japanese-
+     American newspaper published at 650 Ellis Street from 1923 to 1937, the
+     1966 Compton's Cafeteria riot at 101-121 Taylor Street, the Eureka
+     Benevolent Society at 434-436 O'Farrell Street in 1909 and the Eureka
+     Hotel next door in 1910. Small, bounded, and the cheapest unread material
+     in this source.
   1. **The five district nominations of 1982-1989** — 82000983 Bush
      Street-Cottage Row, 83001230 Liberty Street, 87002286 Russian
      Hill-Macondray Lane, 87002288 Russian Hill-Paris Block, 87002289 Russian
@@ -256,6 +298,49 @@ URL. Worked example:
   reference numbers do **not** serve a PDF at the `_text` path — 100008228 (the
   Timothy L. Pflueger House) returns a 1.6 KB PNG placeholder. Those documents
   need a different route, and finding it is part of that batch.
+
+- **Verified:** 2026-09-13 (fifth run, targeted: issue #310, the people the
+  fourth run left on the table. Re-swept all 477 section 7 inventory rows of
+  08001407 for a person in the prose tail. **Eleven rows carry one; nine are
+  published, on nine pages, none of them new.** The two that are not: 366-394
+  Eddy Street, where the sentence is about the building's own owner, and
+  161-165 Turk Street, whose tail names a former tenant's record shop by its
+  proprietor and gives no date.
+
+  The decision itself is recorded under People above and is now in both
+  rulebooks: **a notable past occupant a published source already covers is
+  always taken.** A run does not file that as a question again.
+
+  What this run learned, beyond the decision:
+
+  - **The fourth run's count was of sentences, not of people, and it was
+    wrong in both directions.** It reported twelve rows and listed seven names.
+    Eleven rows carry a person, and two of the nine publishable ones had never
+    been listed at all: John Galen Howard, whose clause ends without a full
+    stop, and Isadora Duncan, who is inside the `signs:` field rather than in a
+    tail. *A sweep for people greps for people — `lived`, `home of`, `died`,
+    `born`, `tenant:`, `plaque`, `ran a` — not for sentence shape.*
+  - **The document contradicts itself about an address, across sections.**
+    Section 8 puts John Galen Howard's death at 227-231 **Eddy** Street; the
+    section 7 inventory puts it at 227-231 **Ellis**, and there is no 227-231
+    Eddy row in the inventory at all. Published on the inventory row, with the
+    disagreement in that page's `unknowns`. Section 8 is also where the
+    Cadillac Hotel's address reads correctly as 366-394 Eddy Street, which is
+    what the inventory's OCR'd "566-394" is.
+  - **Two names are printed wrong and both are published right**: "Fritz
+    Lieber" for Leiber and "Miriam Alien de Ford" for Allen, each consistent
+    across section 7 and section 8. The printed spelling is kept in
+    `extra.name_as_printed` and stated in the page's `notable_residents`
+    detail, because the name is the fact here and shipping a misspelling of a
+    real writer would be the error the LESSONS rule about credited names is
+    guarding against — that rule's "fix only where the document spells it
+    correctly elsewhere" is about an OCR singleton among repeats, not about a
+    name the world spells one way.
+  - **`notable_residents` renders, and `check.py` did not know it.** The tool
+    rejected an undated published finding unless its `publish.note` named a
+    spec row or the survey block; the residents panel is a third home that
+    carries no year by design, and it now counts. Dashiell Hammett is the
+    entry that found it.)
 
 - **Verified:** 2026-09-11 (fourth run. Read the Uptown Tenderloin Historic
   District inventory (08001407) in full under #304 — 477 rows, 480 findings, 463

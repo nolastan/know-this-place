@@ -1814,16 +1814,22 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   compare the two year-free — the captured phrase carries the year and the
   clause may not, so an exact-substring strip silently misses.*
 
-- **A batch that names several notable dead residents is a presentation
-  decision, not a research one.** Twelve rows here name Dashiell Hammett, Frank
-  Capra, Fritz Leiber, Sally Stanford, Miriam Allen de Ford and two women the
-  nomination itself cites to a published history. The root `AGENTS.md` admits
-  "notable past residents already covered by published sources" and
-  `notable_residents` exists to carry them; this module's rulebook says leave
-  residents and occupants. Both readings are defensible. *Take none of them in
-  the run, say so in the dossier with the names listed, and let a person decide
-  — publishing seven residents on an ambiguity is not a call to make inside a
-  450-fact batch.*
+- **A notable dead resident is not a presentation decision, and a run that
+  files one as a question has left work behind.** This batch read eleven rows
+  naming Dashiell Hammett, Frank Capra, Fritz Leiber, Sally Stanford, Miriam
+  Allen de Ford, John Galen Howard, Isadora Duncan and two women the nomination
+  cites to a published history — and took none of them, because the root
+  `AGENTS.md` admitted "notable past residents already covered by published
+  sources" while this module's rulebook said leave residents and occupants.
+  Issue #310 settled it the affirmative way and both rulebooks now say so: the
+  limit exists so this site can't be used to look somebody up or to launder a
+  name out of a permit, and neither reaches the documented dead. *Take the
+  notable past occupant whenever a published source covers them and they are
+  plainly no longer there. What is still a judgement is only **where the fact
+  lands** — a residency with a period is a `notable_residents` row, a use of the
+  building or a dated event is a timeline entry — and that is a call a run
+  makes, not a human.* The cost of having got this wrong once: 451 facts
+  shipped in PR #309 and nine more waited two days in a `needs-human` issue.
 
 - **Census the credited names before publishing them, because OCR damage hides
   in the singletons.** Grouping this batch's 228 distinct credits and matching
