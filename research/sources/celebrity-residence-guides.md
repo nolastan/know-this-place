@@ -34,14 +34,19 @@
     the item's meta row — that is the body attribution. An undated one is a
     one-sentence `narrative.lead`. A notable resident never earns a prose
     section.
-  - **`notable_residents` renders nothing.** The early pages that show a
-    resident in a `.speclist` row do it in hand-written HTML that
-    `scripts/render-backlog.txt` grandfathers; on any page the renderer owns,
-    a claim parked in `notable_residents`, `notable_events` or
-    `filming_location` is invisible — the page cites the guide in its footer
-    and states no fact from it. That was issue #174. Keep the guide's own
-    hedges (`disputed`, a competing address, a figure that disagrees with the
-    assessor) in the entry's `description`, not in a key nothing reads.
+  - **`notable_residents` renders now — this caution is spent.** It once did
+    not: a claim parked there, or in `notable_events` or `filming_location`,
+    was invisible on any page the renderer owned, which was issue #174. The
+    renderer since grew `residents_panel_html`, so `notable_residents` is a
+    panel of `.speclist` rows carrying a name and a period ("Undated" where
+    the source gives none), and it is the right home for a dated residency.
+    It **skips a name the page's own prose already states**, which is why the
+    seventeen older pages that put their resident in a `lead` render no panel.
+    `notable_events` and `filming_location` are gone the other way — no page
+    carries either and the seeder does not recognise them, so writing one now
+    fails the key check rather than rendering nothing. Keep the
+    guide's own hedges (`disputed`, a competing address, a figure that
+    disagrees with the assessor) in the entry's `description`.
 - **Privacy — the binding constraint.** The root AGENTS.md bars naming or
   alluding to **current** residents, publicly available or not. These guides
   routinely name people who still live at the address, often in the present

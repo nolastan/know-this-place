@@ -366,22 +366,26 @@ def check_rules(rel: Path, data: dict) -> None:
                 err(str(rel), f"{fid}: published, {why}")
             # A page's timeline is ordered by date, and an entry with no date
             # renders a row that literally reads "unknown" above the 1930s. An
-            # undated fact still has two homes that carry no year by design:
+            # undated fact still has three homes that carry no year by design:
             # a spec row (building.architect, .builder, .developer, .name) for
-            # a credit, and the historic_survey block for a survey's own
-            # observation of style, integrity or listing. So a published
-            # undated finding must say which of the two took it. The Modern
+            # a credit, the historic_survey block for a survey's own
+            # observation of style, integrity or listing, and the
+            # notable_residents panel, whose rows print "Undated" where the
+            # source names a resident and no period. So a published undated
+            # finding must say which of the three took it. The Modern
             # Architecture statement wrote 92 of these into timelines before a
             # render caught them.
             if str(f.get("date") or "").strip().lower() in (
                     "", "unknown", "undated", "undated in the source",
                     "n.d.", "n. d.", "no date", "none"):
                 note = (pub.get("note") or "").lower()
-                if not any(w in note for w in ("spec row", "survey block")):
+                if not any(w in note for w in ("spec row", "survey block",
+                                               "notable_residents")):
                     err(str(rel), f"{fid}: published with no date at all "
                                   f"({f.get('date')!r}) — an undated fact belongs in a "
-                                  f"spec row or the survey block: say which one took "
-                                  f"it in publish.note, or decline the finding.")
+                                  f"spec row, the survey block or notable_residents: "
+                                  f"say which one took it in publish.note, or decline "
+                                  f"the finding.")
 
     for apn, paths in sorted(paths_by_apn.items()):
         if len(paths) > 1:
