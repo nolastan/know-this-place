@@ -159,12 +159,18 @@ own.
   issue #148. Don't reintroduce a third: a dated historical fact goes here.
 - **Scalars that aren't a dated fact go on `building`, not here.** An
   architect, a builder, a first owner, what stood on the site before, what the
-  build cost, a moved building's former address, an unresolved conflict in the
+  build cost, a moved building's former address, the number it answered to
+  before the street around it was renumbered, an unresolved conflict in the
   record — `building.architect`/`architect_note`, `building.builder`/
   `builder_note`, `building.first_owner`, `building.site_before`,
-  `building.cost_usd`, `building.relocated_from`, `building.conflict`. A dated
-  event belongs on the timeline; a standing fact about the building belongs on
-  `building`, whichever page it first shows up on.
+  `building.cost_usd`, `building.relocated_from`, `building.former_address`,
+  `building.conflict`. A dated event belongs on the timeline; a standing fact
+  about the building belongs on `building`, whichever page it first shows up
+  on.
+  - `relocated_from` and `former_address` are not the same fact:
+    `relocated_from` is a building that moved, `former_address` an address
+    that did. Neither is `also_addressed`, which is a number the parcel
+    still answers to.
 
 ### `occupants`
 

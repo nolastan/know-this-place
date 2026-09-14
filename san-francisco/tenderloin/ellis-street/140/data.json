@@ -24,7 +24,7 @@
     "supervisor_district": 3,
     "assessor_neighborhood": "Union Square",
     "analysis_neighborhood": "Tenderloin",
-    "assessor_property_location": "0140 ELLIS ST",
+    "property_location_raw": "0000 0140 ELLIS               ST0000",
     "note": "Business addresses are usually deferred on this site; this page exists because the prompting source locates its subject on this parcel. The parcel is a corner one and the datasets disagree about which frontage names it: the assessor's property_location says 140 Ellis Street, SF Parcels and SF Planning both say 138 Cyril Magnin Street, and EAS carries 124 Ellis, 140 Ellis and 138 Cyril Magnin. The page follows the assessor and the street the prompting source names; DBI files permits under 124 and 140 Ellis and 120, 138 and 150 Cyril Magnin."
   },
   "assessment": {
@@ -219,7 +219,8 @@
   ],
   "building": {
     "name": "Hotel Fusion",
-    "name_source_note": "The hotel names 140 Ellis Street as its address, which is what ties the 1855 house the prompting source describes to this parcel.",
-    "name_source": "hotel-fusion-site"
+    "sources": [
+      "hotel-fusion-site"
+    ]
   }
 }

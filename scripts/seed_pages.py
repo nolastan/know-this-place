@@ -2588,6 +2588,13 @@ def glance_panel_html(rec: dict, indent: str) -> str:
     if also:
         rows.append(("ic-pin", "Also addressed",
                      ", ".join(alias_display(x) for x in also)))
+    # The number the building was known by before the street around it
+    # changed — a renumbering, or a street the city absorbed. Not
+    # `also_addressed`, which is an address the parcel still answers to, and
+    # not `relocated_from`, which is a building that moved rather than an
+    # address that did.
+    if b.get("former_address"):
+        rows.append(("ic-pin", "Formerly addressed", alias_display(b["former_address"])))
     stair = rec.get("adjoining_public_stair") or {}
     if stair.get("name"):
         # A public stair running up the side of the parcel is the building's
