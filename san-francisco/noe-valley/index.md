@@ -21,7 +21,7 @@ that study area, as an example of the Second Bay Tradition.
 - [Castro Street](castro-street/) — 1 building, built 1973.
 - [Cesar Chavez Street](cesar-chavez-street/) — 1 building, built 1966.
 - [Church Street](church-street/) — 1 building, built 1914.
-- [Clipper Street](clipper-street/) — 2 buildings, built 1883–1890.
+- [Clipper Street](clipper-street/) — 3 buildings, built 1883–1916.
 - [Douglass Street](douglass-street/) — 1 building, built 1900.
 - [Duncan Street](duncan-street/) — 1 building, built 1908.
 - [Hill Street](hill-street/) — 1 building, built 1965.

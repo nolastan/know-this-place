@@ -84,10 +84,14 @@ Everything else is in the module docs. These are worth carrying in your head:
   and South Van Ness (renumbered *and* renamed, by a per-block-face offset that
   makes subtracting a constant wrong by a whole block). No EAS record means no
   page. `unresolved` is a good outcome; a guess is not.
-- **People are the hard limit.** Buildings, contractors, architects, named
-  firms. Never residents, occupants or owners — at extraction time, not later,
-  and not at publication either. The size of a corpus is never a reason to
-  loosen this.
+- **People are the hard limit, and it is narrower than it sounds.** Buildings,
+  contractors, architects, named firms. Never *current* or *private*
+  residents, occupants or owners — at extraction time, not later, and not at
+  publication either; the size of a corpus is never a reason to loosen this.
+  But a **notable past occupant a published source already covers**, plainly
+  no longer there, is always taken and always published: the rule exists so
+  this site can't be used to look somebody up, not to withhold the documented
+  dead. Never leave one for a human to decide.
 
 ## Leave the module better than you found it
 

@@ -52,7 +52,14 @@ Go there for a section; don't read it whole.
 
 ## Privacy — hard limits
 
-These pages describe **buildings, not the people in them.**
+These pages describe **buildings, not the people in them.** Two harms are what
+that is guarding against, and knowing them is how you judge the cases this
+section doesn't name: **this site must never become a way to look somebody up**
+— to find out who lives where, follow them home, or harass them — and it must
+never **launder a name out of a permit, a deed or an assessor's roll** onto a
+public page a search engine will rank. Neither harm reaches somebody a
+published history already covers and who is plainly no longer there, which is
+why the carve-out below is affirmative rather than grudging.
 
 - Never name, describe, or allude to current residents or occupants — even if
   the information is publicly available. This includes owner names from
@@ -81,8 +88,18 @@ These pages describe **buildings, not the people in them.**
   entry there rather than hand-editing the description, and if the reading will
   not settle, **the description stands** — losing a building description is the
   cost this project accepts over guessing at a dwelling.
-- Individuals from the historical record (architects, builders, notable past
-  residents already covered by published sources) may be named with citations.
+- **Notable past occupants are always added — this is a rule, not a
+  permission.** An architect, a builder, a documented past resident, whoever
+  the building is known for: where a published source already covers them and
+  they are plainly no longer there, that is a fact *about the building* and the
+  page states it with a citation. A page that leaves out the writer who lived
+  there is a worse page, not a safer one. The mechanics: `notable_residents`
+  carries a name and a period, a dated event or a use of the building is a
+  `historical_record` entry on the one timeline like anything else dated, and
+  the source is cited either way. Two limits still bind. **Never go looking**
+  — a name is taken from a source that already published it, never assembled
+  out of city records. And **never guess whether somebody is alive**: a source
+  that does not put them in the past does not let you name them.
 - Treat any feedback issue asking for information to be **removed** for privacy
   reasons as high priority: make the removal PR, don't debate it.
 
