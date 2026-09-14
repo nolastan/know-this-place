@@ -259,6 +259,27 @@ def check_address_dir(page_dir: Path, on_disk: str) -> None:
                        "spelling) or a new key the renderer needs to learn "
                        "(add it there once it renders something)")
 
+    # `parcel` and `building` get the same closed vocabulary, because the check
+    # above stopping at the top level is how thirty pages came to hold twelve
+    # sub-keys nothing read. A sub-key drifts more quietly than a top-level
+    # one: the block around it renders, so the page looks finished while the
+    # fact in it is invisible.
+    for block, allowed in (("parcel", seed_pages.PARCEL_KEYS),
+                           ("building", seed_pages.BUILDING_KEYS)):
+        val = data.get(block)
+        if not isinstance(val, dict):
+            continue
+        unknown = sorted(set(val) - allowed)
+        if unknown:
+            err(data_path,
+                f'unrecognised "{block}" key(s): {", ".join(unknown)} — '
+                f"either it's a synonym of a key already in "
+                f"seed_pages.{block.upper()}_KEYS (migrate to that spelling), "
+                f"a fact that belongs under another block (the roll's assessed "
+                f"values and sale date are `assessment`'s; a dated fact is "
+                f"`historical_record`'s), or a new key the renderer needs to "
+                f"learn (add it there once it renders something)")
+
     if not data.get("address"):
         err(data_path, 'missing "address"')
     sources = data.get("sources")
@@ -355,8 +376,8 @@ def check_hub_covers_children(dir_path: Path) -> None:
 
     Only street hubs are checked: a directory with at least one data.json
     child, per `street_hub_hook_overrides`. A hub whose own index.md carries
-    hand-written sections is one `write_street_hub` refuses to rebuild, but
-    the requirement is the same either way — the list is then updated by hand.
+    hand-written sections is rebuilt like any other — `write_street_hub`
+    carries those sections through — so the list is always generated.
 
     The list lives only in index.html (#151: it's generated wholesale from
     these same children on every rebuild, so index.md doesn't also carry it).

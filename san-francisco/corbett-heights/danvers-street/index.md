@@ -1,9 +1,9 @@
 # Danvers Street
 
-Danvers runs down the east side of Corbett Heights to Market Street. The corner
-it once met — 18th Street, Danvers and Falcon — no longer exists: the Market
-Street extension took Falcon Street, the grocery and saloon that stood on it,
-and most of the buildings around them.
+Danvers runs down the east side of Corbett Heights to Market Street. The corner it once met — 18th Street, Danvers and Falcon — no longer exists: the Market Street extension took Falcon Street, the grocery and saloon that stood on it, and most of the buildings around them.
+
+Pages are generated from the DataSF datasets listed in each page's
+Sources footer, and are corrected by hand as readers write in.
 
 ## The lost corner
 
@@ -15,14 +15,6 @@ and most of the buildings around them.
 - The line was extended from Douglass Street to Merritt in 1909
 - Later photographs of the same spot show the extension cut through it, and one
   building on 18th at Danvers reduced to a triangle
-
-## Buildings documented so far
-
-- [19 Danvers Street](19/) — A 1900 two-flat.
-- [56–58 Danvers Street](56/) — Standing as built since before 1909, when it was photographed beside Falcon Street.
-- [60–62 Danvers Street](60/) — A 1961 building on ground that carried part of Horner's grocery and saloon.
-- [220 Danvers Street](220/) — A 1904 single-family house, with deck work permitted in 2025.
-- [221 Danvers Street](221/) — A 1900 single-family house, with a kitchen and bathroom remodel permitted in 2006.
 
 ## Sources
 
