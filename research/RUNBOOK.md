@@ -493,7 +493,10 @@ inference and anything on a street the dossier flags as renumbered.
 3. **The address is still right.** Spot-check `resolution.method`, especially on
    renumbered streets.
 4. **No people leaked** — residents, occupants or owners in prose, a `hook`, a
-   `narrative`, or a permit description.
+   `narrative`, or a permit description. The check runs the other way too:
+   **no notable past occupant left behind.** A person a published source
+   already covers, plainly no longer there, is a fact the page owes its reader
+   — see "Privacy — hard limits" in the root [AGENTS.md](../AGENTS.md).
 5. **No source prose leaked** — sentences lifted or lightly paraphrased, or a
    page body naming the archive it came from.
 6. **The page still obeys the design contract** — facts in components, prose

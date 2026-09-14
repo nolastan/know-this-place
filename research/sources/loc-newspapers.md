@@ -96,8 +96,12 @@ a street number, which is the whole constraint:
   (the same rule as the Corbett Heights photographs).
 - **People.** These columns are full of names — householders in want-ads,
   the dead in funeral notices, tenants in fire reports. Per the root
-  `AGENTS.md`, take **contractors, architects and named firms**; leave
-  residents, occupants and owners out, however long dead.
+  `AGENTS.md`, take **contractors, architects and named firms**, and leave
+  the private householder out however long dead: a name this paper prints in
+  passing is not a published record of a notable occupant, and nothing
+  survives redacting it but a household at a street number. The root rules'
+  affirmative carve-out — always take the notable past occupant — needs a
+  source that *covers* the person, which a want-ad does not.
 - **Coverage is partial.** `state.json` lists 10 batches / 43,769 pages of a
   much larger archive; `batch-index.json` enumerates what has not been pulled.
 - **Verified:** 2026-08-04 (58,620 OCR pages scanned; 8,437 numbered-address
