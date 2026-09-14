@@ -2,7 +2,7 @@
  "source_id": "bounce",
  "batch": "2026-09-13",
  "read_on": "2026-09-13",
- "notes": "Bounce's San Francisco storage spots, asked for in issue #274, read from its GraphQL API on 2026-09-13. `stores(citySlug: \"san-francisco\")` pages 50 at a time on `first`/`after` and returns 115 nodes over three pages, 108 of them distinct — the order shifts between calls, so the pages overlap and the read has to de-duplicate on `id`. Two full reads an hour apart were byte-identical.\n\nThe list query answers `address` as empty strings on every spot; the per-spot query, `store(slug:)`, carries `gmbAddress` — the address of Bounce's own Google Business listing for the spot — and 29 of the 108 have one. The other 79 have no address anywhere public: their store pages print no \"Getting there\" block either, and 14 of those 79 are outside the city altogether, as far out as Vallejo, Palo Alto and Monterey County. So the 29 with an address are the whole of what this source can place.\n\nBounce never names the business hosting a spot, and this decides what the entries say. `name` answers the constant \"J&J's\" on all 108 spots, `description` is empty, `phones` and `gmbPhone` are one number for the whole directory, and the store page calls the host \"this Retail Store\" and \"the Bounce Partner\" — the shop's identity is withheld until a booking is made. What Bounce does publish is itself: a Google Business listing at the street address, named \"Bounce Luggage Storage - <nickname>\", with its own phone, its own opening hours and its own reviews. So the entries are Bounce's own, named \"Bounce Luggage Storage\" with `kinds` \"Luggage storage\", and the host shop is not named at all. Where another directory already names the shop the panel carries both, which is what happened at 527 Sutter Street, where Instacart's 7-Eleven and this counter now sit side by side. The naming was settled with the repository's owner before any page was touched.\n\n`nickname` is Bounce's wayfinding label for the spot (\"Oracle Park 3rd Townsend\", \"Near Waller Street Skatepark\") and `type` its category for the host (\"Convenience Store\", \"Hotel\", \"The UPS Store\"). Neither reaches a page: a category is not a trading name, and filing 26 spots under \"The UPS Store\" would assert a franchise off a Bounce enum rather than off UPS's own locator.\n\n`openingHours` counts dayOfWeek from 0 = Monday, confirmed against the store page's own weekday table, and a day open and closing at 00:00 is that page's \"Open 24/7\" — six of the 29 never close. `hours_rows` in scripts/seed_pages.py now renders a whole-day span as \"Open 24 hours\"; before this run no listing here had one and it would have printed \"12am–12am\".\n\nrobots.txt was read first. bounce.com disallows `/s/*`, which is the referral link's own path, so the credential was never fetched; the offer's terms come from https://bounce.com/ls/coupons, which is allowed and states them: \"they get $5 off their first booking and you get $5 in Bounce credits\", on a booking of at least $10. That agrees with the issue. `/stores/*` is allowed and is in the sitemap. One REFERRALS row, `bounce`, for the whole directory.",
+ "notes": "Bounce's San Francisco storage spots, asked for in issue #274, read from its GraphQL API on 2026-09-13. `stores(citySlug: \"san-francisco\")` pages 50 at a time on `first`/`after` and returns 115 nodes over three pages, 108 of them distinct — the order shifts between calls, so the pages overlap and the read has to de-duplicate on `id`. Two full reads an hour apart were byte-identical.\n\nThe list query answers `address` as empty strings on every spot; the per-spot query, `store(slug:)`, carries `gmbAddress` — the address of Bounce's own Google Business listing for the spot — and 29 of the 108 have one. The other 79 have no address anywhere public: their store pages print no \"Getting there\" block either, and 14 of those 79 are outside the city altogether, as far out as Vallejo, Palo Alto and Monterey County. So the 29 with an address are the whole of what this source can place.\n\nBounce never names the business hosting a spot, and this decides what the entries say. `name` answers the constant \"J&J's\" on all 108 spots, `description` is empty, `phones` and `gmbPhone` are one number for the whole directory, and the store page calls the host \"this Retail Store\" and \"the Bounce Partner\" — the shop's identity is withheld until a booking is made. What Bounce does publish is itself: a Google Business listing at the street address, named \"Bounce Luggage Storage - <nickname>\", with its own phone, its own opening hours and its own reviews. So the entries are Bounce's own, named \"Bounce\" with `kinds` \"Luggage storage\", and the host shop is not named at all. The name is the bare brand because the panel prints `kinds` directly under it: \"Bounce Luggage Storage\" over \"Luggage storage\" said it twice. Where another directory already names the shop the panel carries both, which is what happened at 527 Sutter Street, where Instacart's 7-Eleven and this counter now sit side by side. The naming was settled with the repository's owner before any page was touched.\n\n`nickname` is Bounce's wayfinding label for the spot (\"Oracle Park 3rd Townsend\", \"Near Waller Street Skatepark\") and `type` its category for the host (\"Convenience Store\", \"Hotel\", \"The UPS Store\"). Neither reaches a page: a category is not a trading name, and filing 26 spots under \"The UPS Store\" would assert a franchise off a Bounce enum rather than off UPS's own locator.\n\n`openingHours` counts dayOfWeek from 0 = Monday, confirmed against the store page's own weekday table, and a day open and closing at 00:00 is that page's \"Open 24/7\" — six of the 29 never close. `hours_rows` in scripts/seed_pages.py now renders a whole-day span as \"Open 24 hours\"; before this run no listing here had one and it would have printed \"12am–12am\".\n\nrobots.txt was read first. bounce.com disallows `/s/*`, which is the referral link's own path, so the credential was never fetched; the offer's terms come from https://bounce.com/ls/coupons, which is allowed and states them: \"they get $5 off their first booking and you get $5 in Bounce credits\", on a booking of at least $10. That agrees with the issue. `/stores/*` is allowed and is in the sitemap. One REFERRALS row, `bounce`, for the whole directory.",
  "coverage": {
   "unit": "storage spots",
   "examined": 108,
@@ -22,7 +22,7 @@
    "street_type": "ST",
    "description": "Bounce lists a luggage storage spot at this address.",
    "extra": {
-    "name": "Bounce Luggage Storage",
+    "name": "Bounce",
     "name_as_listed": "Bounce Luggage Storage - Oracle Park 3rd Townsend",
     "kinds": [
      "Luggage storage"
@@ -73,7 +73,7 @@
    "street_type": null,
    "description": "Bounce lists a luggage storage spot at this address.",
    "extra": {
-    "name": "Bounce Luggage Storage",
+    "name": "Bounce",
     "name_as_listed": "Bounce Luggage Storage - Broadway",
     "kinds": [
      "Luggage storage"
@@ -124,7 +124,7 @@
    "street_type": "AVE",
    "description": "Bounce lists a luggage storage spot at this address.",
    "extra": {
-    "name": "Bounce Luggage Storage",
+    "name": "Bounce",
     "name_as_listed": "Bounce Luggage Storage - Fisherman's Wharf",
     "kinds": [
      "Luggage storage"
@@ -174,7 +174,7 @@
    "street_type": "ST",
    "description": "Bounce lists a luggage storage spot at this address.",
    "extra": {
-    "name": "Bounce Luggage Storage",
+    "name": "Bounce",
     "name_as_listed": "Bounce Luggage Storage - Near Fisherman's Wharf",
     "kinds": [
      "Luggage storage"
@@ -223,7 +223,7 @@
    "street_type": "LN",
    "description": "Bounce lists a luggage storage spot at this address.",
    "extra": {
-    "name": "Bounce Luggage Storage",
+    "name": "Bounce",
     "name_as_listed": "Bounce Luggage Storage - Union Square",
     "kinds": [
      "Luggage storage"
@@ -273,7 +273,7 @@
    "street_type": "ST",
    "description": "Bounce lists a luggage storage spot at this address.",
    "extra": {
-    "name": "Bounce Luggage Storage",
+    "name": "Bounce",
     "name_as_listed": "Bounce Luggage Storage - Near Powell Station - Turk St",
     "kinds": [
      "Luggage storage"
@@ -322,7 +322,7 @@
    "street_type": "AVE",
    "description": "Bounce lists a luggage storage spot at this address.",
    "extra": {
-    "name": "Bounce Luggage Storage",
+    "name": "Bounce",
     "name_as_listed": "Bounce Luggage Storage - Columbus Ave – North Beach",
     "kinds": [
      "Luggage storage"
@@ -372,7 +372,7 @@
    "street_type": "ST",
    "description": "Bounce lists a luggage storage spot at this address.",
    "extra": {
-    "name": "Bounce Luggage Storage",
+    "name": "Bounce",
     "name_as_listed": "Bounce Luggage Storage - Mission",
     "kinds": [
      "Luggage storage"
@@ -421,7 +421,7 @@
    "street_type": "ST",
    "description": "Bounce lists a luggage storage spot at this address.",
    "extra": {
-    "name": "Bounce Luggage Storage",
+    "name": "Bounce",
     "name_as_listed": "Bounce Luggage Storage - Golden Gate Park",
     "kinds": [
      "Luggage storage"
@@ -472,7 +472,7 @@
    "street_type": "ST",
    "description": "Bounce lists a luggage storage spot at this address.",
    "extra": {
-    "name": "Bounce Luggage Storage",
+    "name": "Bounce",
     "name_as_listed": "Bounce Luggage Storage - Polk Gulch",
     "kinds": [
      "Luggage storage"
@@ -521,7 +521,7 @@
    "street_type": "ST",
    "description": "Bounce lists a luggage storage spot at this address.",
    "extra": {
-    "name": "Bounce Luggage Storage",
+    "name": "Bounce",
     "name_as_listed": "Bounce Luggage Storage - Van Ness Station – Market St",
     "kinds": [
      "Luggage storage"
@@ -571,7 +571,7 @@
    "street_type": "ST",
    "description": "Bounce lists a luggage storage spot at this address.",
    "extra": {
-    "name": "Bounce Luggage Storage",
+    "name": "Bounce",
     "name_as_listed": "Bounce Luggage Storage - Market Street & 7th Street",
     "kinds": [
      "Luggage storage"
@@ -620,7 +620,7 @@
    "street_type": "BLVD",
    "description": "Bounce lists a luggage storage spot at this address.",
    "extra": {
-    "name": "Bounce Luggage Storage",
+    "name": "Bounce",
     "name_as_listed": "Bounce Luggage Storage - Inner Richmond",
     "kinds": [
      "Luggage storage"
@@ -670,7 +670,7 @@
    "street_type": "ST",
    "description": "Bounce lists a luggage storage spot at this address.",
    "extra": {
-    "name": "Bounce Luggage Storage",
+    "name": "Bounce",
     "name_as_listed": "Bounce Luggage Storage - Union Street Area",
     "kinds": [
      "Luggage storage"
@@ -722,7 +722,7 @@
    "street_type": "ST",
    "description": "Bounce lists a luggage storage spot at this address.",
    "extra": {
-    "name": "Bounce Luggage Storage",
+    "name": "Bounce",
     "name_as_listed": "Bounce Luggage Storage - Bush Street",
     "kinds": [
      "Luggage storage"
@@ -771,7 +771,7 @@
    "street_type": "ST",
    "description": "Bounce lists a luggage storage spot at this address.",
    "extra": {
-    "name": "Bounce Luggage Storage",
+    "name": "Bounce",
     "name_as_listed": "Bounce Luggage Storage - Near Union Square",
     "kinds": [
      "Luggage storage"
@@ -820,7 +820,7 @@
    "street_type": "ST",
    "description": "Bounce lists a luggage storage spot at this address.",
    "extra": {
-    "name": "Bounce Luggage Storage",
+    "name": "Bounce",
     "name_as_listed": "Bounce Luggage Storage - Near Palace Hotel",
     "kinds": [
      "Luggage storage"
@@ -871,7 +871,7 @@
    "street_type": "ST",
    "description": "Bounce lists a luggage storage spot at this address.",
    "extra": {
-    "name": "Bounce Luggage Storage",
+    "name": "Bounce",
     "name_as_listed": "Bounce Luggage Storage - Nob Hill",
     "kinds": [
      "Luggage storage"
@@ -921,7 +921,7 @@
    "street_type": "ST",
    "description": "Bounce lists a luggage storage spot at this address.",
    "extra": {
-    "name": "Bounce Luggage Storage",
+    "name": "Bounce",
     "name_as_listed": "Bounce Luggage Storage - Nob Hill Area",
     "kinds": [
      "Luggage storage"
@@ -971,7 +971,7 @@
    "street_type": "ST",
    "description": "Bounce lists a luggage storage spot at this address.",
    "extra": {
-    "name": "Bounce Luggage Storage",
+    "name": "Bounce",
     "name_as_listed": "Bounce Luggage Storage - Powell Street",
     "kinds": [
      "Luggage storage"
@@ -1021,7 +1021,7 @@
    "street_type": "ST",
    "description": "Bounce lists a luggage storage spot at this address.",
    "extra": {
-    "name": "Bounce Luggage Storage",
+    "name": "Bounce",
     "name_as_listed": "Bounce Luggage Storage - Pac Heights",
     "kinds": [
      "Luggage storage"
@@ -1071,7 +1071,7 @@
    "street_type": "ST",
    "description": "Bounce lists a luggage storage spot at this address.",
    "extra": {
-    "name": "Bounce Luggage Storage",
+    "name": "Bounce",
     "name_as_listed": "Bounce Luggage Storage - Russian Hill",
     "kinds": [
      "Luggage storage"
@@ -1123,7 +1123,7 @@
    "street_type": "ST",
    "description": "Bounce lists a luggage storage spot at this address.",
    "extra": {
-    "name": "Bounce Luggage Storage",
+    "name": "Bounce",
     "name_as_listed": "Bounce Luggage Storage - Mission District – Dolores Park",
     "kinds": [
      "Luggage storage"
@@ -1172,7 +1172,7 @@
    "street_type": "ST",
    "description": "Bounce lists a luggage storage spot at this address.",
    "extra": {
-    "name": "Bounce Luggage Storage",
+    "name": "Bounce",
     "name_as_listed": "Bounce Luggage Storage - Near Waller Street Skatepark",
     "kinds": [
      "Luggage storage"
@@ -1221,7 +1221,7 @@
    "street_type": "ST",
    "description": "Bounce lists a luggage storage spot at this address.",
    "extra": {
-    "name": "Bounce Luggage Storage",
+    "name": "Bounce",
     "name_as_listed": "Bounce Luggage Storage - Near SF Jazz Center",
     "kinds": [
      "Luggage storage"
@@ -1273,7 +1273,7 @@
    "street_type": "ST",
    "description": "Bounce lists a luggage storage spot at this address.",
    "extra": {
-    "name": "Bounce Luggage Storage",
+    "name": "Bounce",
     "name_as_listed": "Bounce Luggage Storage - Fisherman's Wharf - Taylor St",
     "kinds": [
      "Luggage storage"
@@ -1323,7 +1323,7 @@
    "street_type": "ST",
    "description": "Bounce lists a luggage storage spot at this address.",
    "extra": {
-    "name": "Bounce Luggage Storage",
+    "name": "Bounce",
     "name_as_listed": "Bounce Luggage Storage - Chestnut St",
     "kinds": [
      "Luggage storage"
@@ -1374,7 +1374,7 @@
    "street_type": "ST",
    "description": "Bounce lists a luggage storage spot at this address.",
    "extra": {
-    "name": "Bounce Luggage Storage",
+    "name": "Bounce",
     "name_as_listed": "Bounce Luggage Storage - Near Westfield Mall",
     "kinds": [
      "Luggage storage"
@@ -1423,7 +1423,7 @@
    "street_type": "ST",
    "description": "Bounce lists a luggage storage spot at this address.",
    "extra": {
-    "name": "Bounce Luggage Storage",
+    "name": "Bounce",
     "name_as_listed": "Bounce Luggage Storage - Taylor St",
     "kinds": [
      "Luggage storage"
