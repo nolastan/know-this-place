@@ -1,0 +1,1465 @@
+{
+ "source_id": "bounce",
+ "batch": "2026-09-13",
+ "read_on": "2026-09-13",
+ "notes": "Bounce's San Francisco storage spots, asked for in issue #274, read from its GraphQL API on 2026-09-13. `stores(citySlug: \"san-francisco\")` pages 50 at a time on `first`/`after` and returns 115 nodes over three pages, 108 of them distinct — the order shifts between calls, so the pages overlap and the read has to de-duplicate on `id`. Two full reads an hour apart were byte-identical.\n\nThe list query answers `address` as empty strings on every spot; the per-spot query, `store(slug:)`, carries `gmbAddress` — the address of Bounce's own Google Business listing for the spot — and 29 of the 108 have one. The other 79 have no address anywhere public: their store pages print no \"Getting there\" block either, and 14 of those 79 are outside the city altogether, as far out as Vallejo, Palo Alto and Monterey County. So the 29 with an address are the whole of what this source can place.\n\nBounce never names the business hosting a spot, and this decides what the entries say. `name` answers the constant \"J&J's\" on all 108 spots, `description` is empty, `phones` and `gmbPhone` are one number for the whole directory, and the store page calls the host \"this Retail Store\" and \"the Bounce Partner\" — the shop's identity is withheld until a booking is made. What Bounce does publish is itself: a Google Business listing at the street address, named \"Bounce Luggage Storage - <nickname>\", with its own phone, its own opening hours and its own reviews. So the entries are Bounce's own, named \"Bounce Luggage Storage\" with `kinds` \"Luggage storage\", and the host shop is not named at all. Where another directory already names the shop the panel carries both, which is what happened at 527 Sutter Street, where Instacart's 7-Eleven and this counter now sit side by side. The naming was settled with the repository's owner before any page was touched.\n\n`nickname` is Bounce's wayfinding label for the spot (\"Oracle Park 3rd Townsend\", \"Near Waller Street Skatepark\") and `type` its category for the host (\"Convenience Store\", \"Hotel\", \"The UPS Store\"). Neither reaches a page: a category is not a trading name, and filing 26 spots under \"The UPS Store\" would assert a franchise off a Bounce enum rather than off UPS's own locator.\n\n`openingHours` counts dayOfWeek from 0 = Monday, confirmed against the store page's own weekday table, and a day open and closing at 00:00 is that page's \"Open 24/7\" — six of the 29 never close. `hours_rows` in scripts/seed_pages.py now renders a whole-day span as \"Open 24 hours\"; before this run no listing here had one and it would have printed \"12am–12am\".\n\nrobots.txt was read first. bounce.com disallows `/s/*`, which is the referral link's own path, so the credential was never fetched; the offer's terms come from https://bounce.com/ls/coupons, which is allowed and states them: \"they get $5 off their first booking and you get $5 in Bounce credits\", on a booking of at least $10. That agrees with the issue. `/stores/*` is allowed and is in the sitemap. One REFERRALS row, `bounce`, for the whole directory.",
+ "coverage": {
+  "unit": "storage spots",
+  "examined": 108,
+  "mentions": 29,
+  "remaining": "The other 79 spots carry no address: Bounce publishes one only where it has registered a Google Business listing at the door. 14 of those 79 are outside San Francisco.",
+  "note": "29 resolved — 4 of them by hand: one address EAS does not hold, one it holds with no parcel, and two condominium maps placed by the parcel the listing's coordinates fall on. All 29 published; 12 needed a page seeded first."
+ },
+ "findings": [
+  {
+   "id": "2026-09-13-0001",
+   "date": "2026-09-13",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "689 3rd St",
+   "street_number": "689",
+   "street_name": "03RD",
+   "street_type": "ST",
+   "description": "Bounce lists a luggage storage spot at this address.",
+   "extra": {
+    "name": "Bounce Luggage Storage",
+    "name_as_listed": "Bounce Luggage Storage - Oracle Park 3rd Townsend",
+    "kinds": [
+     "Luggage storage"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94107",
+    "geo": [
+     37.779207,
+     -122.392789
+    ],
+    "opening_hours": [
+     "Mo,Tu,Th 12:00-19:00",
+     "We,Fr 12:00-21:00",
+     "Sa 12:00-18:00"
+    ],
+    "spot_nickname": "Oracle Park 3rd Townsend",
+    "host_type_as_listed": "Retail Store",
+    "bounce_slug": "0Tzddj"
+   },
+   "citation": {
+    "label": "Bounce, luggage storage Oracle Park 3rd Townsend",
+    "url": "https://bounce.com/stores/san-francisco/0Tzddj",
+    "locator": "the page's Getting there block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3788014",
+    "path": "/san-francisco/south-beach/3rd-street/689/",
+    "eas_address": "689 03RD ST",
+    "method": "EAS exact match on 689 03RD ST → parcel 3788014; sf-parcels has blklot 3788014 active, 689–699 03RD; the 2025 roll records it as commercial retail, built 1917. EAS puts 689, 695, 699 03RD ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 689.",
+    "checked_on": "2026-09-13"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/PENDING",
+    "note": "An `occupants` entry on /san-francisco/south-beach/3rd-street/689/."
+   }
+  },
+  {
+   "id": "2026-09-13-0002",
+   "date": "2026-09-13",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "494 Broadway",
+   "street_number": "494",
+   "street_name": "BROADWAY",
+   "street_type": null,
+   "description": "Bounce lists a luggage storage spot at this address.",
+   "extra": {
+    "name": "Bounce Luggage Storage",
+    "name_as_listed": "Bounce Luggage Storage - Broadway",
+    "kinds": [
+     "Luggage storage"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94133",
+    "geo": [
+     37.7982726,
+     -122.4053576
+    ],
+    "opening_hours": [
+     "Mo 12:00-21:00",
+     "Tu,We,Th,Fr,Sa 07:00-21:00",
+     "Su 12:00-20:00"
+    ],
+    "spot_nickname": "Broadway",
+    "host_type_as_listed": "Hotel",
+    "bounce_slug": "0WtiVf"
+   },
+   "citation": {
+    "label": "Bounce, luggage storage Broadway",
+    "url": "https://bounce.com/stores/san-francisco/0WtiVf",
+    "locator": "the page's Getting there block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0144082",
+    "path": "/san-francisco/north-beach/broadway/490/",
+    "method": "By hand: sf-eas-addresses has no 494 BROADWAY, so the listing is placed by the active parcel its own coordinates fall on. POINT(-122.4053576 37.7982726) falls in one active sf-parcels polygon, blklot 0144082, its own mapblklot and the only active parcel on the map, addressed 490–498 BROADWAY. The page at /san-francisco/north-beach/broadway/490/ is that parcel, titled 490–498 Broadway, so the entry goes on it with an `unknowns` line saying EAS does not hold 494.",
+    "checked_on": "2026-09-13",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/PENDING",
+    "note": "An `occupants` entry on /san-francisco/north-beach/broadway/490/."
+   }
+  },
+  {
+   "id": "2026-09-13-0003",
+   "date": "2026-09-13",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "1300 Columbus Ave",
+   "street_number": "1300",
+   "street_name": "COLUMBUS",
+   "street_type": "AVE",
+   "description": "Bounce lists a luggage storage spot at this address.",
+   "extra": {
+    "name": "Bounce Luggage Storage",
+    "name_as_listed": "Bounce Luggage Storage - Fisherman's Wharf",
+    "kinds": [
+     "Luggage storage"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94133",
+    "geo": [
+     37.806587,
+     -122.4180126
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr,Sa,Su 00:00-24:00"
+    ],
+    "spot_nickname": "Fisherman's Wharf",
+    "host_type_as_listed": "Hotel",
+    "bounce_slug": "2alVMk"
+   },
+   "citation": {
+    "label": "Bounce, luggage storage Fisherman's Wharf",
+    "url": "https://bounce.com/stores/san-francisco/2alVMk",
+    "locator": "the page's Getting there block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0023005",
+    "path": "/san-francisco/russian-hill/columbus-avenue/1300/",
+    "eas_address": "1300 COLUMBUS AVE",
+    "method": "EAS exact match on 1300 COLUMBUS AVE → parcel 0023005; sf-parcels has blklot 0023005 active, 1300–1300 COLUMBUS; the 2025 roll records it as commercial hotel, built 1970.",
+    "checked_on": "2026-09-13",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/PENDING",
+    "note": "An `occupants` entry on /san-francisco/russian-hill/columbus-avenue/1300/."
+   }
+  },
+  {
+   "id": "2026-09-13-0004",
+   "date": "2026-09-13",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "495 Jefferson St",
+   "street_number": "495",
+   "street_name": "JEFFERSON",
+   "street_type": "ST",
+   "description": "Bounce lists a luggage storage spot at this address.",
+   "extra": {
+    "name": "Bounce Luggage Storage",
+    "name_as_listed": "Bounce Luggage Storage - Near Fisherman's Wharf",
+    "kinds": [
+     "Luggage storage"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94109",
+    "geo": [
+     37.8074874,
+     -122.4204681
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr,Sa,Su 00:00-24:00"
+    ],
+    "spot_nickname": "Near Fisherman's Wharf",
+    "host_type_as_listed": "Hotel",
+    "bounce_slug": "3lYPuy"
+   },
+   "citation": {
+    "label": "Bounce, luggage storage Near Fisherman's Wharf",
+    "url": "https://bounce.com/stores/san-francisco/3lYPuy",
+    "locator": "the page's Getting there block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0010002",
+    "path": "/san-francisco/russian-hill/beach-street/680/",
+    "eas_address": "455 JEFFERSON ST",
+    "method": "EAS exact match on 495 JEFFERSON ST → parcel 0010002; sf-parcels has blklot 0010002 active, 680–680 BEACH; the 2025 roll records it as commercial hotel, built 1907. EAS puts 455, 461, 465, 471, 475, 485, 495 JEFFERSON ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 455.",
+    "checked_on": "2026-09-13"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/PENDING",
+    "note": "An `occupants` entry on /san-francisco/russian-hill/beach-street/680/."
+   }
+  },
+  {
+   "id": "2026-09-13-0005",
+   "date": "2026-09-13",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "5 Isadora Duncan Lane",
+   "street_number": "5",
+   "street_name": "ISADORA DUNCAN",
+   "street_type": "LN",
+   "description": "Bounce lists a luggage storage spot at this address.",
+   "extra": {
+    "name": "Bounce Luggage Storage",
+    "name_as_listed": "Bounce Luggage Storage - Union Square",
+    "kinds": [
+     "Luggage storage"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94102",
+    "geo": [
+     37.7874201,
+     -122.4121679
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr,Sa,Su 08:00-23:00"
+    ],
+    "spot_nickname": "Union Square",
+    "host_type_as_listed": "Hotel",
+    "bounce_slug": "4iG1HG"
+   },
+   "citation": {
+    "label": "Bounce, luggage storage Union Square",
+    "url": "https://bounce.com/stores/san-francisco/4iG1HG",
+    "locator": "the page's Getting there block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0305002",
+    "path": "/san-francisco/tenderloin/isadora-duncan-lane/5/",
+    "eas_address": "5 ISADORA DUNCAN LN",
+    "method": "EAS exact match on 5 ISADORA DUNCAN LN → parcel 0305002; sf-parcels has blklot 0305002 active, 5–5 ISADORA DUNCAN; the 2025 roll records it as commercial hotel.",
+    "checked_on": "2026-09-13",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/PENDING",
+    "note": "An `occupants` entry on /san-francisco/tenderloin/isadora-duncan-lane/5/."
+   }
+  },
+  {
+   "id": "2026-09-13-0006",
+   "date": "2026-09-13",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "140 Turk St",
+   "street_number": "140",
+   "street_name": "TURK",
+   "street_type": "ST",
+   "description": "Bounce lists a luggage storage spot at this address.",
+   "extra": {
+    "name": "Bounce Luggage Storage",
+    "name_as_listed": "Bounce Luggage Storage - Near Powell Station - Turk St",
+    "kinds": [
+     "Luggage storage"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94102",
+    "geo": [
+     37.7834211,
+     -122.4115746
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr,Sa,Su 07:00-00:00"
+    ],
+    "spot_nickname": "Near Powell Station - Turk St",
+    "host_type_as_listed": "Hotel",
+    "bounce_slug": "BfmrFX"
+   },
+   "citation": {
+    "label": "Bounce, luggage storage Near Powell Station - Turk St",
+    "url": "https://bounce.com/stores/san-francisco/BfmrFX",
+    "locator": "the page's Getting there block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0339007",
+    "path": "/san-francisco/tenderloin/turk-street/140/",
+    "eas_address": "140 TURK ST",
+    "method": "EAS exact match on 140 TURK ST → parcel 0339007; sf-parcels has blklot 0339007 active, 140–140 TURK; the 2025 roll records it as commercial hotel, built 1907.",
+    "checked_on": "2026-09-13"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/PENDING",
+    "note": "An `occupants` entry on /san-francisco/tenderloin/turk-street/140/."
+   }
+  },
+  {
+   "id": "2026-09-13-0007",
+   "date": "2026-09-13",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "474 Columbus Ave",
+   "street_number": "474",
+   "street_name": "COLUMBUS",
+   "street_type": "AVE",
+   "description": "Bounce lists a luggage storage spot at this address.",
+   "extra": {
+    "name": "Bounce Luggage Storage",
+    "name_as_listed": "Bounce Luggage Storage - Columbus Ave – North Beach",
+    "kinds": [
+     "Luggage storage"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94133",
+    "geo": [
+     37.79935903260183,
+     -122.40861772363048
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Su 10:00-21:00",
+     "Fr,Sa 10:00-22:00"
+    ],
+    "spot_nickname": "Columbus Ave – North Beach",
+    "host_type_as_listed": "Dessert Shop",
+    "bounce_slug": "Bw0dck"
+   },
+   "citation": {
+    "label": "Bounce, luggage storage Columbus Ave – North Beach",
+    "url": "https://bounce.com/stores/san-francisco/Bw0dck",
+    "locator": "the page's Getting there block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0131018",
+    "path": "/san-francisco/north-beach/columbus-avenue/470/",
+    "eas_address": "470 COLUMBUS AVE",
+    "method": "EAS exact match on 474 COLUMBUS AVE → parcel 0131018; sf-parcels has blklot 0131018 active, 470–480 COLUMBUS; the 2025 roll records it as commercial office, built 1936. EAS puts 470, 474, 480 COLUMBUS AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 470.",
+    "checked_on": "2026-09-13"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/PENDING",
+    "note": "An `occupants` entry on /san-francisco/north-beach/columbus-avenue/470/."
+   }
+  },
+  {
+   "id": "2026-09-13-0008",
+   "date": "2026-09-13",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "2030 Mission St",
+   "street_number": "2030",
+   "street_name": "MISSION",
+   "street_type": "ST",
+   "description": "Bounce lists a luggage storage spot at this address.",
+   "extra": {
+    "name": "Bounce Luggage Storage",
+    "name_as_listed": "Bounce Luggage Storage - Mission",
+    "kinds": [
+     "Luggage storage"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94110",
+    "geo": [
+     37.7645211,
+     -122.4198033
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr,Sa,Su 09:00-23:00"
+    ],
+    "spot_nickname": "Mission",
+    "host_type_as_listed": "Hotel",
+    "bounce_slug": "C8u5jE"
+   },
+   "citation": {
+    "label": "Bounce, luggage storage Mission",
+    "url": "https://bounce.com/stores/san-francisco/C8u5jE",
+    "locator": "the page's Getting there block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3569004",
+    "path": "/san-francisco/mission/mission-street/2026/",
+    "eas_address": "2026 MISSION ST",
+    "method": "EAS exact match on 2030 MISSION ST → parcel 3569004; sf-parcels has blklot 3569004 active, 2026–2030 MISSION; the 2025 roll records it as commercial hotel, built 1907. EAS puts 2026, 2030 MISSION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2026.",
+    "checked_on": "2026-09-13"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/PENDING",
+    "note": "An `occupants` entry on /san-francisco/mission/mission-street/2026/."
+   }
+  },
+  {
+   "id": "2026-09-13-0009",
+   "date": "2026-09-13",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "1899 Irving St",
+   "street_number": "1899",
+   "street_name": "IRVING",
+   "street_type": "ST",
+   "description": "Bounce lists a luggage storage spot at this address.",
+   "extra": {
+    "name": "Bounce Luggage Storage",
+    "name_as_listed": "Bounce Luggage Storage - Golden Gate Park",
+    "kinds": [
+     "Luggage storage"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94122",
+    "geo": [
+     37.763329,
+     -122.4780467
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Su 09:00-23:00",
+     "Fr,Sa 09:00-00:00"
+    ],
+    "spot_nickname": "Golden Gate Park",
+    "host_type_as_listed": "Deli",
+    "bounce_slug": "FXoEit"
+   },
+   "citation": {
+    "label": "Bounce, luggage storage Golden Gate Park",
+    "url": "https://bounce.com/stores/san-francisco/FXoEit",
+    "locator": "the page's Getting there block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "1774042",
+    "path": "/san-francisco/inner-sunset/irving-street/1839/",
+    "eas_address": "1839 IRVING ST",
+    "method": "EAS exact match on 1899 IRVING ST → parcel 1774042; sf-parcels has blklot 1774042 active, 1308–1310 20TH; the 2025 roll records it as commercial retail, built 1926. The assessor files the parcel as 1308–1310 20TH AV. EAS puts 1839, 1845, 1899 IRVING ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1839. The address carries no parcel number in EAS; the active parcel its coordinates fall in is 1774042.",
+    "checked_on": "2026-09-13",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/PENDING",
+    "note": "An `occupants` entry on /san-francisco/inner-sunset/irving-street/1839/."
+   }
+  },
+  {
+   "id": "2026-09-13-0010",
+   "date": "2026-09-13",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "1552 Polk St",
+   "street_number": "1552",
+   "street_name": "POLK",
+   "street_type": "ST",
+   "description": "Bounce lists a luggage storage spot at this address.",
+   "extra": {
+    "name": "Bounce Luggage Storage",
+    "name_as_listed": "Bounce Luggage Storage - Polk Gulch",
+    "kinds": [
+     "Luggage storage"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94109",
+    "geo": [
+     37.7913595,
+     -122.4205787
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr,Sa,Su 10:00-21:00"
+    ],
+    "spot_nickname": "Polk Gulch",
+    "host_type_as_listed": "Restaurant",
+    "bounce_slug": "HOmPjc"
+   },
+   "citation": {
+    "label": "Bounce, luggage storage Polk Gulch",
+    "url": "https://bounce.com/stores/san-francisco/HOmPjc",
+    "locator": "the page's Getting there block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0644017",
+    "path": "/san-francisco/nob-hill/sacramento-street/1685/",
+    "eas_address": "1546 POLK ST",
+    "method": "EAS exact match on 1552 POLK ST → parcel 0644017; sf-parcels has blklot 0644017 active, 1546–1552 POLK; the 2025 roll records it as commercial hotel, built 1907. The assessor files the parcel as 1685 SACRAMENTO ST. EAS puts 1546, 1548, 1552 POLK ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1546.",
+    "checked_on": "2026-09-13"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/PENDING",
+    "note": "An `occupants` entry on /san-francisco/nob-hill/sacramento-street/1685/."
+   }
+  },
+  {
+   "id": "2026-09-13-0011",
+   "date": "2026-09-13",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "1659 Market St",
+   "street_number": "1659",
+   "street_name": "MARKET",
+   "street_type": "ST",
+   "description": "Bounce lists a luggage storage spot at this address.",
+   "extra": {
+    "name": "Bounce Luggage Storage",
+    "name_as_listed": "Bounce Luggage Storage - Van Ness Station – Market St",
+    "kinds": [
+     "Luggage storage"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94103",
+    "geo": [
+     37.7730646,
+     -122.4213088
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr,Sa 08:00-21:00",
+     "Su 08:00-19:30"
+    ],
+    "spot_nickname": "Van Ness Station – Market St",
+    "host_type_as_listed": "Convenience Store",
+    "bounce_slug": "HjbVtW"
+   },
+   "citation": {
+    "label": "Bounce, luggage storage Van Ness Station – Market St",
+    "url": "https://bounce.com/stores/san-francisco/HjbVtW",
+    "locator": "the page's Getting there block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3504045",
+    "path": "/san-francisco/mission/market-street/1659/",
+    "eas_address": "1659 MARKET ST",
+    "method": "EAS exact match on 1659 MARKET ST → parcel 3504045; sf-parcels has blklot 3504045 active, 1659–1661 MARKET; the 2025 roll records it as commercial hotel, built 1908. EAS puts 1659, 1661 MARKET ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1659.",
+    "checked_on": "2026-09-13"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/PENDING",
+    "note": "An `occupants` entry on /san-francisco/mission/market-street/1659/."
+   }
+  },
+  {
+   "id": "2026-09-13-0012",
+   "date": "2026-09-13",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "1095 Market Street",
+   "street_number": "1095",
+   "street_name": "MARKET",
+   "street_type": "ST",
+   "description": "Bounce lists a luggage storage spot at this address.",
+   "extra": {
+    "name": "Bounce Luggage Storage",
+    "name_as_listed": "Bounce Luggage Storage - Market Street & 7th Street",
+    "kinds": [
+     "Luggage storage"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94103",
+    "geo": [
+     37.7803004,
+     -122.4120614
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr,Sa,Su 00:00-24:00"
+    ],
+    "spot_nickname": "Market Street & 7th Street",
+    "host_type_as_listed": "Hotel",
+    "bounce_slug": "Ld0GU0"
+   },
+   "citation": {
+    "label": "Bounce, luggage storage Market Street & 7th Street",
+    "url": "https://bounce.com/stores/san-francisco/Ld0GU0",
+    "locator": "the page's Getting there block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3703059",
+    "path": "/san-francisco/south-of-market/market-street/1095/",
+    "eas_address": "1095 MARKET ST",
+    "method": "EAS exact match on 1095 MARKET ST → parcel 3703059; sf-parcels has blklot 3703059 active, 25–25 07TH; the 2025 roll records it as commercial hotel, built 1905.",
+    "checked_on": "2026-09-13"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/PENDING",
+    "note": "An `occupants` entry on /san-francisco/south-of-market/market-street/1095/."
+   }
+  },
+  {
+   "id": "2026-09-13-0013",
+   "date": "2026-09-13",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "4850 Geary Boulevard",
+   "street_number": "4850",
+   "street_name": "GEARY",
+   "street_type": "BLVD",
+   "description": "Bounce lists a luggage storage spot at this address.",
+   "extra": {
+    "name": "Bounce Luggage Storage",
+    "name_as_listed": "Bounce Luggage Storage - Inner Richmond",
+    "kinds": [
+     "Luggage storage"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94118",
+    "geo": [
+     37.7810935,
+     -122.4715136
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr,Sa,Su 00:00-24:00"
+    ],
+    "spot_nickname": "Inner Richmond",
+    "host_type_as_listed": "Convenience Store",
+    "bounce_slug": "MfcnC4"
+   },
+   "citation": {
+    "label": "Bounce, luggage storage Inner Richmond",
+    "url": "https://bounce.com/stores/san-francisco/MfcnC4",
+    "locator": "the page's Getting there block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "1444023",
+    "path": "/san-francisco/inner-richmond/geary-boulevard/4850/",
+    "eas_address": "4850 GEARY BLVD",
+    "method": "EAS exact match on 4850 GEARY BLVD → parcel 1444023; sf-parcels has blklot 1444023 active, 4850–4856 GEARY; the 2025 roll records it as commercial misc, built 1930. EAS puts 4850, 4856 GEARY BLVD on that parcel, so per the directory contract the fact belongs on one page at the lowest, 4850.",
+    "checked_on": "2026-09-13",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/PENDING",
+    "note": "An `occupants` entry on /san-francisco/inner-richmond/geary-boulevard/4850/."
+   }
+  },
+  {
+   "id": "2026-09-13-0014",
+   "date": "2026-09-13",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "2060 Union Street",
+   "street_number": "2060",
+   "street_name": "UNION",
+   "street_type": "ST",
+   "description": "Bounce lists a luggage storage spot at this address.",
+   "extra": {
+    "name": "Bounce Luggage Storage",
+    "name_as_listed": "Bounce Luggage Storage - Union Street Area",
+    "kinds": [
+     "Luggage storage"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94123",
+    "geo": [
+     37.7975632,
+     -122.4332539
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Su 12:00-18:00",
+     "Fr 12:00-18:30",
+     "Sa 10:00-19:00"
+    ],
+    "spot_nickname": "Union Street Area",
+    "host_type_as_listed": "Retail Store",
+    "bounce_slug": "O9WhBR"
+   },
+   "citation": {
+    "label": "Bounce, luggage storage Union Street Area",
+    "url": "https://bounce.com/stores/san-francisco/O9WhBR",
+    "locator": "the page's Getting there block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0532031",
+    "path": "/san-francisco/marina/union-street/2060/",
+    "method": "By hand: EAS files 2060 UNION ST on parcel 0532032, which the 2025 roll classes as a Condominium at unit 0002 with zero lot area — a flat, not the building. Per merchants/AGENTS.md the building's parcel set is every active parcel sharing one sf-parcels mapblklot: map 0532031 carries seven, 0532031 through 0532037, all addressed 2060–2060 UNION, and the listing's coordinates fall in all seven. The page is filed under the map's key parcel, 0532031, and stripped of the roll's unit-scoped figures.",
+    "checked_on": "2026-09-13",
+    "note": "No page at this path yet; the parcel is the publisher's to seed.",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/PENDING",
+    "note": "An `occupants` entry on /san-francisco/marina/union-street/2060/."
+   }
+  },
+  {
+   "id": "2026-09-13-0015",
+   "date": "2026-09-13",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "985 Bush St",
+   "street_number": "985",
+   "street_name": "BUSH",
+   "street_type": "ST",
+   "description": "Bounce lists a luggage storage spot at this address.",
+   "extra": {
+    "name": "Bounce Luggage Storage",
+    "name_as_listed": "Bounce Luggage Storage - Bush Street",
+    "kinds": [
+     "Luggage storage"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94109",
+    "geo": [
+     37.7893364,
+     -122.4132527
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr,Sa,Su 09:00-21:00"
+    ],
+    "spot_nickname": "Bush Street",
+    "host_type_as_listed": "Deli",
+    "bounce_slug": "QurVUC"
+   },
+   "citation": {
+    "label": "Bounce, luggage storage Bush Street",
+    "url": "https://bounce.com/stores/san-francisco/QurVUC",
+    "locator": "the page's Getting there block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0282012",
+    "path": "/san-francisco/nob-hill/bush-street/975/",
+    "eas_address": "975 BUSH ST",
+    "method": "EAS exact match on 985 BUSH ST → parcel 0282012; sf-parcels has blklot 0282012 active, 975–985 BUSH; the 2025 roll records it as commercial hotel, built 1927. EAS puts 975, 985 BUSH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 975.",
+    "checked_on": "2026-09-13"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/PENDING",
+    "note": "An `occupants` entry on /san-francisco/nob-hill/bush-street/975/."
+   }
+  },
+  {
+   "id": "2026-09-13-0016",
+   "date": "2026-09-13",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "527 Sutter St",
+   "street_number": "527",
+   "street_name": "SUTTER",
+   "street_type": "ST",
+   "description": "Bounce lists a luggage storage spot at this address.",
+   "extra": {
+    "name": "Bounce Luggage Storage",
+    "name_as_listed": "Bounce Luggage Storage - Near Union Square",
+    "kinds": [
+     "Luggage storage"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94102",
+    "geo": [
+     37.7890337,
+     -122.4090856
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr,Sa,Su 00:00-24:00"
+    ],
+    "spot_nickname": "Near Union Square",
+    "host_type_as_listed": "Convenience Store",
+    "bounce_slug": "XDo5dX"
+   },
+   "citation": {
+    "label": "Bounce, luggage storage Near Union Square",
+    "url": "https://bounce.com/stores/san-francisco/XDo5dX",
+    "locator": "the page's Getting there block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0296013D",
+    "path": "/san-francisco/nob-hill/sutter-street/527/",
+    "eas_address": "527 SUTTER ST",
+    "method": "EAS exact match on 527 SUTTER ST → parcel 0296013D; sf-parcels has blklot 0296013D active, 527–533 SUTTER; the 2025 roll records it as commercial retail, built 1921. EAS puts 527, 531, 533 SUTTER ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 527.",
+    "checked_on": "2026-09-13"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/PENDING",
+    "note": "An `occupants` entry on /san-francisco/nob-hill/sutter-street/527/."
+   }
+  },
+  {
+   "id": "2026-09-13-0017",
+   "date": "2026-09-13",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "2nd Street 84",
+   "street_number": "84",
+   "street_name": "02ND",
+   "street_type": "ST",
+   "description": "Bounce lists a luggage storage spot at this address.",
+   "extra": {
+    "name": "Bounce Luggage Storage",
+    "name_as_listed": "Bounce Luggage Storage - Near Palace Hotel",
+    "kinds": [
+     "Luggage storage"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94105",
+    "geo": [
+     37.7881611,
+     -122.4003659
+    ],
+    "opening_hours": [
+     "Mo,Th 09:00-20:00",
+     "Tu,We 09:00-20:30",
+     "Fr,Sa 09:00-18:00"
+    ],
+    "spot_nickname": "Near Palace Hotel",
+    "host_type_as_listed": "Convenience Store",
+    "bounce_slug": "ccv-ww"
+   },
+   "citation": {
+    "label": "Bounce, luggage storage Near Palace Hotel",
+    "url": "https://bounce.com/stores/san-francisco/ccv-ww",
+    "locator": "the page's Getting there block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3707011",
+    "path": "/san-francisco/east-cut/2nd-street/82/",
+    "eas_address": "82 02ND ST",
+    "method": "EAS exact match on 84 02ND ST → parcel 3707011; sf-parcels has blklot 3707011 active, 82–88 02ND; the 2025 roll records it as commercial retail, built 1907. EAS puts 82, 84, 86, 88 02ND ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 82.",
+    "checked_on": "2026-09-13"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/PENDING",
+    "note": "An `occupants` entry on /san-francisco/east-cut/2nd-street/82/."
+   }
+  },
+  {
+   "id": "2026-09-13-0018",
+   "date": "2026-09-13",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "1414 California St",
+   "street_number": "1414",
+   "street_name": "CALIFORNIA",
+   "street_type": "ST",
+   "description": "Bounce lists a luggage storage spot at this address.",
+   "extra": {
+    "name": "Bounce Luggage Storage",
+    "name_as_listed": "Bounce Luggage Storage - Nob Hill",
+    "kinds": [
+     "Luggage storage"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94109",
+    "geo": [
+     37.7910849,
+     -122.4177917
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr 09:30-19:00",
+     "Sa,Su 10:00-19:00"
+    ],
+    "spot_nickname": "Nob Hill",
+    "host_type_as_listed": "Hardware Store",
+    "bounce_slug": "dKMyVU"
+   },
+   "citation": {
+    "label": "Bounce, luggage storage Nob Hill",
+    "url": "https://bounce.com/stores/san-francisco/dKMyVU",
+    "locator": "the page's Getting there block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0249007",
+    "path": "/san-francisco/nob-hill/california-street/1400/",
+    "method": "By hand: sf-eas-addresses holds 1414 CALIFORNIA ST but joins it to no parcel, so the listing is placed by the active parcel its own coordinates fall on. POINT(-122.4177917 37.7910849) falls in one active sf-parcels polygon, blklot 0249007, its own mapblklot and the only active parcel on the map. sf-parcels addresses it 1400–1412 CALIFORNIA, but the 2025 roll's own location for it reads \"1414 1408 CALIFORNIA ST\" — the assessor runs the parcel to 1414 — so the two records agree that 1414 is this building. The page at /san-francisco/nob-hill/california-street/1400/ is that parcel; the entry goes on it with an `unknowns` line saying EAS leaves 1414 unparcelled.",
+    "checked_on": "2026-09-13",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/PENDING",
+    "note": "An `occupants` entry on /san-francisco/nob-hill/california-street/1400/."
+   }
+  },
+  {
+   "id": "2026-09-13-0019",
+   "date": "2026-09-13",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "824 Stockton Street",
+   "street_number": "824",
+   "street_name": "STOCKTON",
+   "street_type": "ST",
+   "description": "Bounce lists a luggage storage spot at this address.",
+   "extra": {
+    "name": "Bounce Luggage Storage",
+    "name_as_listed": "Bounce Luggage Storage - Nob Hill Area",
+    "kinds": [
+     "Luggage storage"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94108",
+    "geo": [
+     37.7935716,
+     -122.4075827
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr,Sa 10:00-16:00"
+    ],
+    "spot_nickname": "Nob Hill Area",
+    "host_type_as_listed": "Travel Agency",
+    "bounce_slug": "jmHZ2M"
+   },
+   "citation": {
+    "label": "Bounce, luggage storage Nob Hill Area",
+    "url": "https://bounce.com/stores/san-francisco/jmHZ2M",
+    "locator": "the page's Getting there block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0225014",
+    "path": "/san-francisco/chinatown/stockton-street/814/",
+    "eas_address": "814 STOCKTON ST",
+    "method": "EAS exact match on 824 STOCKTON ST → parcel 0225014; sf-parcels has blklot 0225014 active, 814–828 STOCKTON; the 2025 roll records it as commercial retail, built 1924. EAS puts 814, 820, 824, 828 STOCKTON ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 814. The address carries no parcel number in EAS; the active parcel its coordinates fall in is 0225014.",
+    "checked_on": "2026-09-13",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/PENDING",
+    "note": "An `occupants` entry on /san-francisco/chinatown/stockton-street/814/."
+   }
+  },
+  {
+   "id": "2026-09-13-0020",
+   "date": "2026-09-13",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "245 Powell St",
+   "street_number": "245",
+   "street_name": "POWELL",
+   "street_type": "ST",
+   "description": "Bounce lists a luggage storage spot at this address.",
+   "extra": {
+    "name": "Bounce Luggage Storage",
+    "name_as_listed": "Bounce Luggage Storage - Powell Street",
+    "kinds": [
+     "Luggage storage"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94102",
+    "geo": [
+     37.7870067,
+     -122.4082892
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr,Sa,Su 09:00-18:30"
+    ],
+    "spot_nickname": "Powell Street",
+    "host_type_as_listed": "Retail Store",
+    "bounce_slug": "lpSySw"
+   },
+   "citation": {
+    "label": "Bounce, luggage storage Powell Street",
+    "url": "https://bounce.com/stores/san-francisco/lpSySw",
+    "locator": "the page's Getting there block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0315002",
+    "path": "/san-francisco/nob-hill/powell-street/235/",
+    "eas_address": "235 POWELL ST",
+    "method": "EAS exact match on 245 POWELL ST → parcel 0315002; sf-parcels has blklot 0315002 active, 235–245 POWELL; the 2025 roll records it as commercial hotel, built 1910. EAS puts 235, 237, 239, 245 POWELL ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 235.",
+    "checked_on": "2026-09-13",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/PENDING",
+    "note": "An `occupants` entry on /san-francisco/nob-hill/powell-street/235/."
+   }
+  },
+  {
+   "id": "2026-09-13-0021",
+   "date": "2026-09-13",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "1475 Lombard Street",
+   "street_number": "1475",
+   "street_name": "LOMBARD",
+   "street_type": "ST",
+   "description": "Bounce lists a luggage storage spot at this address.",
+   "extra": {
+    "name": "Bounce Luggage Storage",
+    "name_as_listed": "Bounce Luggage Storage - Pac Heights",
+    "kinds": [
+     "Luggage storage"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94123",
+    "geo": [
+     37.8009199,
+     -122.4258129
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr,Sa,Su 06:00-02:00"
+    ],
+    "spot_nickname": "Pac Heights",
+    "host_type_as_listed": "Hotel",
+    "bounce_slug": "nGvp9p"
+   },
+   "citation": {
+    "label": "Bounce, luggage storage Pac Heights",
+    "url": "https://bounce.com/stores/san-francisco/nGvp9p",
+    "locator": "the page's Getting there block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0503028",
+    "path": "/san-francisco/russian-hill/lombard-street/1475/",
+    "eas_address": "1475 LOMBARD ST",
+    "method": "EAS exact match on 1475 LOMBARD ST → parcel 0503028; sf-parcels has blklot 0503028 active, 1475–1475 LOMBARD; the 2025 roll records it as commercial hotel, built 1971.",
+    "checked_on": "2026-09-13",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/PENDING",
+    "note": "An `occupants` entry on /san-francisco/russian-hill/lombard-street/1475/."
+   }
+  },
+  {
+   "id": "2026-09-13-0022",
+   "date": "2026-09-13",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "1592 Union St",
+   "street_number": "1592",
+   "street_name": "UNION",
+   "street_type": "ST",
+   "description": "Bounce lists a luggage storage spot at this address.",
+   "extra": {
+    "name": "Bounce Luggage Storage",
+    "name_as_listed": "Bounce Luggage Storage - Russian Hill",
+    "kinds": [
+     "Luggage storage"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94123",
+    "geo": [
+     37.79862101492327,
+     -122.42546778574783
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr 08:30-19:30",
+     "Sa 10:00-16:00",
+     "Su 10:00-14:00"
+    ],
+    "spot_nickname": "Russian Hill",
+    "host_type_as_listed": "Shipping Store",
+    "bounce_slug": "oaIX6j"
+   },
+   "citation": {
+    "label": "Bounce, luggage storage Russian Hill",
+    "url": "https://bounce.com/stores/san-francisco/oaIX6j",
+    "locator": "the page's Getting there block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0527017",
+    "path": "/san-francisco/marina/union-street/1588/",
+    "eas_address": "1588 UNION ST",
+    "method": "EAS exact match on 1592 UNION ST → parcel 0527017; sf-parcels has blklot 0527017 active, 1588–1592 UNION; the 2025 roll records it as multi-family residential, built 1902. EAS puts 1588, 1590, 1592 UNION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1588.",
+    "checked_on": "2026-09-13",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/PENDING",
+    "note": "An `occupants` entry on /san-francisco/marina/union-street/1588/."
+   }
+  },
+  {
+   "id": "2026-09-13-0023",
+   "date": "2026-09-13",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "698 Guerrero street",
+   "street_number": "698",
+   "street_name": "GUERRERO",
+   "street_type": "ST",
+   "description": "Bounce lists a luggage storage spot at this address.",
+   "extra": {
+    "name": "Bounce Luggage Storage",
+    "name_as_listed": "Bounce Luggage Storage - Mission District – Dolores Park",
+    "kinds": [
+     "Luggage storage"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94110",
+    "geo": [
+     37.7600922,
+     -122.4239275
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr,Sa,Su 08:00-20:00"
+    ],
+    "spot_nickname": "Mission District – Dolores Park",
+    "host_type_as_listed": "Convenience Store",
+    "bounce_slug": "olGzes"
+   },
+   "citation": {
+    "label": "Bounce, luggage storage Mission District – Dolores Park",
+    "url": "https://bounce.com/stores/san-francisco/olGzes",
+    "locator": "the page's Getting there block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3587015",
+    "path": "/san-francisco/mission/guerrero-street/696/",
+    "eas_address": "696 GUERRERO ST",
+    "method": "EAS exact match on 698 GUERRERO ST → parcel 3587015; sf-parcels has blklot 3587015 active, 696–698 GUERRERO; the 2025 roll records it as multi-family residential, built 1924. EAS puts 696, 698 GUERRERO ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 696.",
+    "checked_on": "2026-09-13"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/PENDING",
+    "note": "An `occupants` entry on /san-francisco/mission/guerrero-street/696/."
+   }
+  },
+  {
+   "id": "2026-09-13-0024",
+   "date": "2026-09-13",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "750 Stanyan Street",
+   "street_number": "750",
+   "street_name": "STANYAN",
+   "street_type": "ST",
+   "description": "Bounce lists a luggage storage spot at this address.",
+   "extra": {
+    "name": "Bounce Luggage Storage",
+    "name_as_listed": "Bounce Luggage Storage - Near Waller Street Skatepark",
+    "kinds": [
+     "Luggage storage"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94117",
+    "geo": [
+     37.76809069999999,
+     -122.4530557
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr,Sa,Su 00:00-24:00"
+    ],
+    "spot_nickname": "Near Waller Street Skatepark",
+    "host_type_as_listed": "Hotel",
+    "bounce_slug": "pLyEco"
+   },
+   "citation": {
+    "label": "Bounce, luggage storage Near Waller Street Skatepark",
+    "url": "https://bounce.com/stores/san-francisco/pLyEco",
+    "locator": "the page's Getting there block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "1250025",
+    "path": "/san-francisco/haight-ashbury/stanyan-street/750/",
+    "eas_address": "750 STANYAN ST",
+    "method": "EAS exact match on 750 STANYAN ST → parcel 1250025; sf-parcels has blklot 1250025 active, 750–750 STANYAN; the 2025 roll records it as commercial hotel, built 1907. The assessor files the parcel as 1775–1785 WALLER ST.",
+    "checked_on": "2026-09-13"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/PENDING",
+    "note": "An `occupants` entry on /san-francisco/haight-ashbury/stanyan-street/750/."
+   }
+  },
+  {
+   "id": "2026-09-13-0025",
+   "date": "2026-09-13",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "321 Linden St",
+   "street_number": "321",
+   "street_name": "LINDEN",
+   "street_type": "ST",
+   "description": "Bounce lists a luggage storage spot at this address.",
+   "extra": {
+    "name": "Bounce Luggage Storage",
+    "name_as_listed": "Bounce Luggage Storage - Near SF Jazz Center",
+    "kinds": [
+     "Luggage storage"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94102",
+    "geo": [
+     37.7762875,
+     -122.4233427
+    ],
+    "opening_hours": [
+     "Mo,We,Th,Su 11:00-17:00",
+     "Fr 11:00-18:00",
+     "Sa 10:00-18:00"
+    ],
+    "spot_nickname": "Near SF Jazz Center",
+    "host_type_as_listed": "Retail Store",
+    "bounce_slug": "pnJlyn"
+   },
+   "citation": {
+    "label": "Bounce, luggage storage Near SF Jazz Center",
+    "url": "https://bounce.com/stores/san-francisco/pnJlyn",
+    "locator": "the page's Getting there block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0817005",
+    "path": "/san-francisco/hayes-valley/linden-street/321/",
+    "eas_address": "321 LINDEN ST",
+    "method": "EAS exact match on 321 LINDEN ST → parcel 0817005; sf-parcels has blklot 0817005 active, 326–326 FELL; the 2025 roll records it as industrial, built 1919. The assessor files the parcel as 326 FELL ST. The address carries no parcel number in EAS; the active parcel its coordinates fall in is 0817005.",
+    "checked_on": "2026-09-13",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/PENDING",
+    "note": "An `occupants` entry on /san-francisco/hayes-valley/linden-street/321/."
+   }
+  },
+  {
+   "id": "2026-09-13-0026",
+   "date": "2026-09-13",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "2735 Taylor Street",
+   "street_number": "2735",
+   "street_name": "TAYLOR",
+   "street_type": "ST",
+   "description": "Bounce lists a luggage storage spot at this address.",
+   "extra": {
+    "name": "Bounce Luggage Storage",
+    "name_as_listed": "Bounce Luggage Storage - Fisherman's Wharf - Taylor St",
+    "kinds": [
+     "Luggage storage"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94133",
+    "geo": [
+     37.8075379,
+     -122.4158888
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr,Sa,Su 09:30-16:30"
+    ],
+    "spot_nickname": "Fisherman's Wharf - Taylor St",
+    "host_type_as_listed": "Travel Agency",
+    "bounce_slug": "vXUKkG"
+   },
+   "citation": {
+    "label": "Bounce, luggage storage Fisherman's Wharf - Taylor St",
+    "url": "https://bounce.com/stores/san-francisco/vXUKkG",
+    "locator": "the page's Getting there block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0012002",
+    "path": "/san-francisco/russian-hill/taylor-street/2701/",
+    "eas_address": "2701 TAYLOR ST",
+    "method": "EAS exact match on 2735 TAYLOR ST → parcel 0012002; sf-parcels has blklot 0012002 active, 2701–2737 TAYLOR; the 2025 roll records it as commercial retail, built 1921. EAS puts 2701, 2711, 2715, 2729, 2731, 2735, 2737 TAYLOR ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2701. The address carries no parcel number in EAS; the active parcel its coordinates fall in is 0012002.",
+    "checked_on": "2026-09-13",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/PENDING",
+    "note": "An `occupants` entry on /san-francisco/russian-hill/taylor-street/2701/."
+   }
+  },
+  {
+   "id": "2026-09-13-0027",
+   "date": "2026-09-13",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "2172 Chestnut St",
+   "street_number": "2172",
+   "street_name": "CHESTNUT",
+   "street_type": "ST",
+   "description": "Bounce lists a luggage storage spot at this address.",
+   "extra": {
+    "name": "Bounce Luggage Storage",
+    "name_as_listed": "Bounce Luggage Storage - Chestnut St",
+    "kinds": [
+     "Luggage storage"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94123",
+    "geo": [
+     37.8006658,
+     -122.4391923
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr 09:00-20:00",
+     "Sa,Su 09:00-19:00"
+    ],
+    "spot_nickname": "Chestnut St",
+    "host_type_as_listed": "Wellness Center",
+    "bounce_slug": "xu04zO"
+   },
+   "citation": {
+    "label": "Bounce, luggage storage Chestnut St",
+    "url": "https://bounce.com/stores/san-francisco/xu04zO",
+    "locator": "the page's Getting there block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0486A027",
+    "path": "/san-francisco/marina/chestnut-street/2172/",
+    "eas_address": "2172 CHESTNUT ST",
+    "method": "EAS exact match on 2172 CHESTNUT ST → parcel 0486A027; sf-parcels has blklot 0486A027 active, 2172–2176 CHESTNUT; the 2025 roll records it as commercial retail, built 1931. EAS puts 2172, 2176 CHESTNUT ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2172.",
+    "checked_on": "2026-09-13",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/PENDING",
+    "note": "An `occupants` entry on /san-francisco/marina/chestnut-street/2172/."
+   }
+  },
+  {
+   "id": "2026-09-13-0028",
+   "date": "2026-09-13",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "39 Mason Street",
+   "street_number": "39",
+   "street_name": "MASON",
+   "street_type": "ST",
+   "description": "Bounce lists a luggage storage spot at this address.",
+   "extra": {
+    "name": "Bounce Luggage Storage",
+    "name_as_listed": "Bounce Luggage Storage - Near Westfield Mall",
+    "kinds": [
+     "Luggage storage"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94102",
+    "geo": [
+     37.783886,
+     -122.4093827
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr,Sa,Su 11:30-23:00"
+    ],
+    "spot_nickname": "Near Westfield Mall",
+    "host_type_as_listed": "Convenience Store",
+    "bounce_slug": "xxxhCb"
+   },
+   "citation": {
+    "label": "Bounce, luggage storage Near Westfield Mall",
+    "url": "https://bounce.com/stores/san-francisco/xxxhCb",
+    "locator": "the page's Getting there block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0340019",
+    "path": "/san-francisco/tenderloin/mason-street/39/",
+    "method": "By hand: sf-eas-addresses holds 39 MASON ST but joins it to no parcel, and its coordinates fall in seven active parcels — a condominium map. Per merchants/AGENTS.md the building is the map's parcel set: map 0340019 carries 0340019 through 0340025, addressed 45 and 55 MASON ST and 101–127 EDDY ST, and its key parcel 0340019 is 45 MASON ST. The page at /san-francisco/tenderloin/mason-street/39/ is already that parcel, titled 39–45 Mason Street and carrying 39 as its lead number, so the entry goes straight on it.",
+    "checked_on": "2026-09-13",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/PENDING",
+    "note": "An `occupants` entry on /san-francisco/tenderloin/mason-street/39/."
+   }
+  },
+  {
+   "id": "2026-09-13-0029",
+   "date": "2026-09-13",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "749 Taylor St",
+   "street_number": "749",
+   "street_name": "TAYLOR",
+   "street_type": "ST",
+   "description": "Bounce lists a luggage storage spot at this address.",
+   "extra": {
+    "name": "Bounce Luggage Storage",
+    "name_as_listed": "Bounce Luggage Storage - Taylor St",
+    "kinds": [
+     "Luggage storage"
+    ],
+    "locality_as_listed": "San Francisco",
+    "postal_code_as_listed": "94108",
+    "geo": [
+     37.7893775,
+     -122.4124163
+    ],
+    "opening_hours": [
+     "Mo,Tu,We,Th,Fr,Sa,Su 09:00-21:30"
+    ],
+    "spot_nickname": "Taylor St",
+    "host_type_as_listed": "Hotel",
+    "bounce_slug": "yZnYL9"
+   },
+   "citation": {
+    "label": "Bounce, luggage storage Taylor St",
+    "url": "https://bounce.com/stores/san-francisco/yZnYL9",
+    "locator": "the page's Getting there block"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0282002",
+    "path": "/san-francisco/tenderloin/taylor-street/749/",
+    "eas_address": "749 TAYLOR ST",
+    "method": "EAS exact match on 749 TAYLOR ST → parcel 0282002; sf-parcels has blklot 0282002 active, 749–749 TAYLOR; the 2025 roll records it as commercial hotel, built 1909.",
+    "checked_on": "2026-09-13"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/PENDING",
+    "note": "An `occupants` entry on /san-francisco/tenderloin/taylor-street/749/."
+   }
+  }
+ ]
+}

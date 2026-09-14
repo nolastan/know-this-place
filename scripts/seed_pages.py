@@ -2226,6 +2226,17 @@ REFERRALS = {
         "offer": "Get 25% off at Bonobos",
         "app": "Bonobos",
     },
+    "bounce": {
+        # The issue said "Give $5 get $5"; Bounce's own promo-code page says the
+        # friend gets $5 off a first booking, which is the reader's half and
+        # agrees. The minimum booking that earns it is in merchants/AGENTS.md,
+        # not on fifty pages.
+        "url": ("https://bounce.com/s/settings/referral-code-received"
+                "?utm_source=referrer_link&coupon=BOUNCE-L9GB4PBQH"),
+        "offer": "Get $5 off your first Bounce booking",
+        "app": "Bounce",
+        "note": "Referral link. Sign up and then book this spot.",
+    },
     "brooklinen": {
         "url": "https://rwrd.io/k7ow0kp?c",
         "offer": "Get $25 off at Brooklinen",
@@ -2356,6 +2367,10 @@ def hours_rows(spec: list) -> list:
     Bites writes "Mo,Tu,We,Th,Fr 10:45-20:15" and, for a split shift,
     "Fr 11:45-14:45,16:45-21:30". A day the listing never names is closed, and
     says so, so the reader is not left to notice which day is missing.
+
+    A span covering the whole day says so in words. Bounce's round-the-clock
+    spots are the first listings here that never close, and "12am–12am" reads
+    as a mistake rather than as all day.
     """
     rows, seen = [], set()
     for line in spec or []:
@@ -2365,7 +2380,8 @@ def hours_rows(spec: list) -> list:
         if not days or not times:
             continue
         seen |= days
-        rows.append((days, [f"{clock(a)}–{clock(b)}" for a, b in times]))
+        rows.append((days, ["Open 24 hours" if (a, b) in (("00:00", "24:00"), ("00:00", "00:00"))
+                            else f"{clock(a)}–{clock(b)}" for a, b in times]))
     rows.sort(key=lambda r: min(r[0]))
     out = [(days_label(d), label) for d, label in rows]
     closed = set(range(7)) - seen

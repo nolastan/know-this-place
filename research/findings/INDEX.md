@@ -181,6 +181,7 @@ are listed so their size is visible before anyone opens one.
 | `biographies-v-z.json` | 26 | 10 KB | `sunset-parkside`, `west-of-twin-peaks`, `nob-hill` +11 |
 | `bites-2026-09-11.json` | 45 | 17 KB | `inner-richmond`, `marina`, `pacific-heights` +18 |
 | `bonobos-2026-09-12.json` | 1 | 1 KB | `marina` |
+| `bounce-2026-09-13.json` | 12 | 5 KB | `russian-hill`, `marina`, `chinatown` +5 |
 | `brooklinen-2026-09-12.json` | 0 | 1 KB | — |
 | `bvhp-area-b-context-statement.json` | 190 | 75 KB | `bayview-hunters-point` |
 | `carnegie-libraries-context-statement.json` | 1 | 1 KB | `mission` |

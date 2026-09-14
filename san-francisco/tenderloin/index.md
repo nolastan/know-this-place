@@ -15,6 +15,7 @@ The flat blocks west of Union Square, in the city's Tenderloin analysis neighbor
 - [Grove Street](grove-street/) — The Bill Graham Civic Auditorium's block, where the Mechanics' Institute held its industrial exhibitions from 1882.
 - [Hayes Street](hayes-street/) — 1 building, built 2018.
 - [Hyde Street](hyde-street/) — 1 building, built 1929; 1 in the Uptown Tenderloin Historic District.
+- [Isadora Duncan Lane](isadora-duncan-lane/) — 1 building; 1 in the Uptown Tenderloin Historic District.
 - [Jones Street](jones-street/) — 1 building, built 1922; 1 in the Uptown Tenderloin Historic District.
 - [Larkin Street](larkin-street/) — 11 buildings, built 1911–1927; 11 in the Uptown Tenderloin Historic District.
 - [Leavenworth Street](leavenworth-street/) — 4 buildings, built 1907–1923; 4 in the Uptown Tenderloin Historic District.
