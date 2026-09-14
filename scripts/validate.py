@@ -355,8 +355,8 @@ def check_hub_covers_children(dir_path: Path) -> None:
 
     Only street hubs are checked: a directory with at least one data.json
     child, per `street_hub_hook_overrides`. A hub whose own index.md carries
-    hand-written sections is one `write_street_hub` refuses to rebuild, but
-    the requirement is the same either way — the list is then updated by hand.
+    hand-written sections is rebuilt like any other — `write_street_hub`
+    carries those sections through — so the list is always generated.
 
     The list lives only in index.html (#151: it's generated wholesale from
     these same children on every rebuild, so index.md doesn't also carry it).

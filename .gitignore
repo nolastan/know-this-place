@@ -35,10 +35,9 @@ san-francisco/historic-districts/index.html
 #   san-francisco/index.html            — the city index, hand-authored
 #   san-francisco/<neighborhood>/index.html
 #       — a human's prose; `hubs` only patches the street list into it
-# and these two street hubs, which each carry a hand-written section the
-# generator refuses to overwrite (it names them on every run):
-!san-francisco/corbett-heights/danvers-street/index.html
-!san-francisco/corbett-heights/mars-street/index.html
+# A street hub is never in that company, whatever it holds: `write_street_hub`
+# carries a hand-written section through from the street's `index.md`, so the
+# prose has a committed source and the page stays a build artifact.
 
 sitemap.xml
 sitemaps/
