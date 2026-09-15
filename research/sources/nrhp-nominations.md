@@ -6,7 +6,7 @@
 >
 > - **Kind:** PDF reports (federal nomination forms) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — the listings are indexed everywhere; the forms are not. A search for a street number returns the Wikipedia list entry and the NPS map pin, never the paragraph inside the PDF that dates the building and names its architect.
-> - **Coverage:** 96 of 165 San Francisco listings read — every one certified before 1990, plus the Civic Center district the index omits — and the Uptown Tenderloin Historic District inventory (08001407) read in full, all 477 rows, structured fields and prose tails both. 627 findings, 573 resolved, 539 published.
+> - **Coverage:** 96 of 165 San Francisco listings read — every one certified before 1990, plus the Civic Center district the index omits — and the Uptown Tenderloin Historic District nomination (08001407) read in full: the section 7 inventory's 477 rows, structured fields and prose tails both, and section 8, the statement of significance. 637 findings, 581 resolved, 546 published.
 > - **Local corpus:** `research/corpora/nrhp-nominations/` (one PDF and one `.txt` per reference number, plus `index-san-francisco.json` and `state.json`)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -252,16 +252,11 @@ URL. Worked example:
   ([`uptown-tenderloin-district.json`](../findings/nrhp-nominations/uptown-tenderloin-district.json)),
   whose **prose tails** were re-swept under #310 for the people the first pass
   left
-  ([`uptown-tenderloin-notable-residents.json`](../findings/nrhp-nominations/uptown-tenderloin-notable-residents.json)).
+  ([`uptown-tenderloin-notable-residents.json`](../findings/nrhp-nominations/uptown-tenderloin-notable-residents.json)),
+  and whose **section 8, the statement of significance**, is now also read end
+  to end, under #346
+  ([`uptown-tenderloin-section8.json`](../findings/nrhp-nominations/uptown-tenderloin-section8.json)).
 - **Not read, and this is the queue in order:**
-  0. **08001407's own section 8**, the statement of significance, which no pass
-     has read end to end — only the paragraphs a section 7 row sent a run to.
-     It carries address-level facts the inventory does not: the Japanese-
-     American newspaper published at 650 Ellis Street from 1923 to 1937, the
-     1966 Compton's Cafeteria riot at 101-121 Taylor Street, the Eureka
-     Benevolent Society at 434-436 O'Farrell Street in 1909 and the Eureka
-     Hotel next door in 1910. Small, bounded, and the cheapest unread material
-     in this source. Filed as #346.
   1. **The five district nominations of 1982-1989** — 82000983 Bush
      Street-Cottage Row, 83001230 Liberty Street, 87002286 Russian
      Hill-Macondray Lane, 87002288 Russian Hill-Paris Block, 87002289 Russian
@@ -298,6 +293,53 @@ URL. Worked example:
   reference numbers do **not** serve a PDF at the `_text` path — 100008228 (the
   Timothy L. Pflueger House) returns a 1.6 KB PNG placeholder. Those documents
   need a different route, and finding it is part of that batch.
+
+- **Verified:** 2026-09-15 (sixth run, targeted: issue #346, 08001407's section
+  8 — the statement of significance — read end to end for the first time, all
+  39 pages. It restates most of the section 7 inventory in prose, usually
+  crediting the era's developer-owners rather than the architect section 7
+  already names; per the dossier's People section that subsection is about
+  owners, and none of its names were taken. About thirty address-bearing
+  sentences were checked against the corpus and all but ten were already
+  published. 10 findings: 7 new historical_record entries (650 Ellis Street's
+  Japanese-American newspaper, 1923-1937; the Central Police Station at 64
+  Eddy Street, gone from EAS today and left unresolved; the Poodle Dog's
+  temporary post-earthquake stop at 824-826 Eddy, also gone from EAS; its
+  1910-on home at 111 Mason Street; the Miles Brothers' pre-fire film exchange
+  at 116 Turk Street, predating the surviving 1910 building; the Miles
+  Brothers' 1911 relocation to 1145 Mission Street, which had no page and is
+  now seeded; and the 1903 wood-flats building at 493-499 Eddy Street that
+  preceded the Adrian Hotel), 2 recorded conflicts (868 and 724 Geary Street,
+  where section 8's own construction dates disagree with the already-published
+  inventory rows — recorded in each page's `unknowns`, not adjudicated), and 1
+  duplicate declined (the Black Cat at 48-98 Mason Street is already published
+  from a different source). 2 of the 7 new facts have no EAS record for the
+  number as printed and stay unresolved, per the evidence bar, rather than
+  forced onto the street hub or a neighbor's page.
+
+  What this run learned, beyond the cautions above:
+
+  - **The PROPERTY OWNERS subsection is exactly what its name says, and it is
+    dense with dated construction facts anyway.** A dozen buildings get a
+    year and an owner's name in the same sentence, but section 7's inventory
+    already carries the correct architect for every one of them — Klimm
+    Apartments were designed by Salfield and Kohlberg, not built by Klimm the
+    plumbing contractor whose name the building keeps. Checking each sentence
+    against the corpus before extracting is what kept this batch to ten
+    findings instead of thirty.
+  - **A conflict runs in either direction.** The #310 run recorded section 8
+    disagreeing with an already-published section 7 fact (Howard's death
+    address). This run found the reverse is just as common — 868 and 724
+    Geary Street's construction dates are section 8 against section 7, this
+    time with section 8 the newer, unpublished claim. Same handling: the
+    inventory row is what stays published, the disagreement goes in
+    `unknowns`, and nothing is adjudicated.
+  - **A resolved address can still conflict with a resolved date.** 111 Mason
+    Street's Poodle Dog placement ("by 1910") resolves cleanly to a real
+    parcel, but that parcel's own inventory row dates the standing building to
+    1914 — a conflict inside a single finding, not between two sources, and
+    the finding stayed `resolved` with a `conflict` field rather than being
+    forced into `unresolved`.
 
 - **Verified:** 2026-09-13 (fifth run, targeted: issue #310, the people the
   fourth run left on the table. Re-swept all 477 section 7 inventory rows of
