@@ -1,0 +1,124 @@
+{
+  "source_id": "sf-chronicle",
+  "batch": "2026-09-14",
+  "read_on": "2026-09-14",
+  "notes": "Four items queued from the 2026-09-14 poll, all four read. The Chronicle's feed is a Bluesky account; headline and article link are taken from the article itself where they differ from the feed's post text and bit.ly link.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 4,
+    "mentions": 3,
+    "remaining": "none",
+    "note": "One item, on four arrests in a counterfeit-pill investigation, named no street address and would have been declined under the privacy rules in any case."
+  },
+  "findings": [
+    {
+      "id": "2026-09-14-sc-0001",
+      "date": "2026-09-14",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "101 Spear St.",
+      "street_number": "101",
+      "street_name": "SPEAR",
+      "street_type": "ST",
+      "description": "Yank Sing, founded in 1958, will close its Rincon Center restaurant at 101 Spear Street on 20 September 2026 after 27 years there, when its lease ends. The chain moved this location into Rincon Center in 1999, after its prior home on Battery Street was slated for redevelopment. Yank Sing's other restaurant, on Stevenson Street since 1974, remains open. The closure has been announced rather than happened, so the entry takes the article's date, as the module's 'to open' entries do.",
+      "extra": {
+        "business": "Yank Sing",
+        "founded": 1958,
+        "opened_here": 1999,
+        "closing_date": "2026-09-20",
+        "reason": "lease ended",
+        "other_location": "49 Stevenson St. (open since 1974)"
+      },
+      "citation": {
+        "label": "San Francisco Chronicle, “A 68-year-old S.F dim sum institution will close its largest location,” 14 September 2026",
+        "url": "https://www.sfchronicle.com/food/restaurants/article/yank-sing-rincon-center-sf-closing-22431164.php",
+        "locator": "article text"
+      },
+      "raw": {
+        "text": "Yank Sing, which was founded in 1958, will shutter its Rincon Center restaurant at 101 Spear St. on Sept. 20, co-owner Vera Chan Waller confirmed."
+      },
+      "confidence": "high",
+      "note": "The San Francisco Standard covered the same closure the same day ('Don't panic: An award-winning dim sum parlor is closing one SF location, not both'). This account is fuller — it carries the restaurant's founding and the building history behind the move into Rincon Center — so it carries the entry; the Standard's account is declined as the duplicate. Nothing about the Rincon Center building itself is stated plainly enough to go in a building block.",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3716021",
+        "path": "/san-francisco/south-beach/spear-street/121/",
+        "eas_address": "101 SPEAR ST",
+        "method": "EAS exact match on 101 SPEAR ST → parcel 3716021; sf-parcels has blklot 3716021 active, 121–121 SPEAR; the 2025 roll records it as commercial retail, built 1925. EAS puts 101, 121 SPEAR ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 101.",
+        "checked_on": "2026-09-14"
+      },
+      "publish": {
+        "status": "published",
+        "note": "The resolved apn (3716021) turned out to already carry a page: the existing page at /san-francisco/south-beach/spear-street/121/ is Rincon Center itself (filed under the lowest number EAS put in the block's own address range at the time it was seeded, not the 101 the resolver's method text names as the block's current lowest EAS number). Entry added there."
+      }
+    },
+    {
+      "id": "2026-09-14-sc-0002",
+      "date": "2026-09-14",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "682 Haight St.",
+      "street_number": "682",
+      "street_name": "HAIGHT",
+      "street_type": "ST",
+      "description": "Duplicate of the San Francisco Standard's same-day story on the same event: chef Spencer Horovitz's pop-up Hadeem will open a permanent restaurant at 682 Haight Street, in the space Otra vacates in December 2026.",
+      "citation": {
+        "label": "San Francisco Chronicle, “The Bay Area has bagel shops and delis, but it doesn’t have a Jewish restaurant quite like this one,” 14 September 2026",
+        "url": "https://www.sfchronicle.com/food/restaurants/article/hadeem-opening-san-francisco-22422865.php"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "One event, one entry. The San Francisco Standard's same-day 'The Lower Haight is getting a Jewish-inspired restaurant from a rising star chef' (news/items/sf-standard/2026-09-14.json, finding 2026-09-14-ss-0002) carries the same announcement; that account is used because its headline reads more plainly as a fact about the address."
+      },
+      "resolution": {
+        "status": "rejected",
+        "checked_on": "2026-09-14",
+        "method": "Not resolved: the finding is declined, so no parcel is sought.",
+        "by_hand": true
+      }
+    },
+    {
+      "id": "2026-09-14-sc-0003",
+      "date": "2026-09-14",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "200 Rhode Island St.",
+      "street_number": "200",
+      "street_name": "RHODE ISLAND",
+      "street_type": "ST",
+      "description": "Real estate insiders say Airbnb has agreed to lease the historic Takahashi Building at 200 Rhode Island Street, a 100,000-square-foot, more-than-century-old brick-and-timber warehouse on a triangular lot near Airbnb's Showplace Square headquarters. The building was originally constructed in 1912, later expanded with a two-storey concrete warehouse and office building in the late 1960s and a three-storey brick warehouse a decade after that. It has been a San Francisco landmark since 2022. The property is reported to be transferring to new owners, Harvest Properties, from Westbrook Partners and Four Corners Properties, who bought and fully renovated it in 2019 for $37 million; a 2024 deed in lieu of foreclosure appears to show it passing to lender Acore Capital for $47 million in the interim. The Takahashi name comes from Henri and Tomoye Takahashi, who purchased the building in 1965 after their Japantown store was demolished for the redevelopment that became the Japan Center, and ran their import company and later their family's charitable foundation from it.",
+      "extra": {
+        "tenant": "Airbnb",
+        "landlord_reported": "Harvest Properties",
+        "prior_owners": "Westbrook Partners and Four Corners Properties (bought 2019, $37 million)",
+        "interim_transfer": "deed in lieu of foreclosure to Acore Capital, 2024, $47 million",
+        "floor_area_sqft": 100000,
+        "landmark_since": 2022,
+        "original_owners_1965": "Henri and Tomoye Takahashi"
+      },
+      "citation": {
+        "label": "San Francisco Chronicle, “Exclusive: Airbnb is expanding in S.F., leasing a landmark warehouse near its headquarters,” 14 September 2026",
+        "url": "https://www.sfchronicle.com/realestate/article/sf-airbnb-lease-22417714.php",
+        "locator": "article text"
+      },
+      "raw": {
+        "text": "Real estate insiders have confirmed that Airbnb has agreed to lease the historic Takahashi Building at 200 Rhode Island St., a 100,000-square-foot, more than century-old brick warehouse built on a triangular lot."
+      },
+      "confidence": "high",
+      "note": "building.name filled as 'Takahashi Building' — empty before, and the page's own historical_record (from the Showplace Square survey) already independently names the Takahashi Trading Company as a 1912 and 1976 occupant, so the article corroborates rather than introduces the connection. Henri and Tomoye Takahashi themselves are documented past occupants, plainly no longer there, but adding them by name to the page's narrative is outside what this module writes (building.name, .former_name, .architect, .builder, .developer, .completed only) — left for a research pass.",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3936001",
+        "path": "/san-francisco/mission/rhode-island-street/200/",
+        "eas_address": "200 RHODE ISLAND ST",
+        "method": "EAS exact match on 200 RHODE ISLAND ST → parcel 3936001; sf-parcels has blklot 3936001 active, 215–215 15TH; the 2025 roll records it as industrial, built 1912.",
+        "checked_on": "2026-09-14"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Entry added to the existing page at /san-francisco/mission/rhode-island-street/200/, and building.name filled as 'Takahashi Building' (empty before). The page's own historical_record, from the Showplace Square survey, already independently names the Takahashi Trading Company as a 1912 and 1976 occupant, so the article corroborates rather than introduces the fact."
+      }
+    }
+  ]
+}
