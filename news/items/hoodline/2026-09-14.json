@@ -1,0 +1,128 @@
+{
+  "source_id": "hoodline",
+  "batch": "2026-09-14",
+  "read_on": "2026-09-14",
+  "notes": "Six items queued from the 2026-09-14 poll, all six read.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 6,
+    "mentions": 4,
+    "remaining": "none",
+    "note": "Three items named no street address at all: the Muni Heritage Weekend streetcar story, the Clement Street Autumn Moon Festival story, and neither had a specific building as its subject."
+  },
+  "findings": [
+    {
+      "id": "2026-09-14-hl-0001",
+      "date": "2026-09-14",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "801 Market St.",
+      "street_number": "801",
+      "street_name": "MARKET",
+      "street_type": "ST",
+      "description": "Uniqlo will reopen a flagship store at 801 Market Street, in the retail space the article calls Pacific Place, on 9 October 2026, offering its usual apparel alongside custom printing (UTme!), a repair studio, embroidery and pants hemming. The space's most recent tenant, an Old Navy flagship that opened there in 1999, closed in 2023. The opening has been announced rather than happened, so the entry takes the article's date, as the module's 'to open' entries do.",
+      "extra": {
+        "tenant": "Uniqlo",
+        "opening_date": "2026-10-09",
+        "previous_tenant": "Old Navy (1999–2023)",
+        "landlord": "Ponte Gadea California LLC",
+        "space_name_in_article": "Pacific Place"
+      },
+      "citation": {
+        "label": "Hoodline, “Uniqlo Sets October 9 Return to San Francisco's Market Street Flagship,” 14 September 2026",
+        "url": "https://hoodline.com/2026/09/uniqlo-sets-october-9-return-to-san-francisco-s-market-street-flagship/",
+        "locator": "article text"
+      },
+      "raw": {
+        "text": "the retail space at 801 Market Street, known as Pacific Place, is owned by Ponte Gadea California LLC, an investment arm of Spanish billionaire Amancio Ortega"
+      },
+      "confidence": "high",
+      "note": "The page's own historical record already names this building 'The Pacific Building' (1907, architect Charles F. Whittlesey) from a different source. The article's 'Pacific Place' may be the same building under a landlord's marketing name, or may not be — not confident enough to treat the two as the same fact, so building.name is left alone rather than filled or revised. Also named in the article, not carried here: Uniqlo's former West Coast flagship at 111 Powell Street (closed 2021) and Zara's plan for a flagship at 400 Post Street, relocating from 250 Post Street — neither is this building.",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3705Z001",
+        "path": "/san-francisco/south-of-market/market-street/801/",
+        "eas_address": "801 MARKET ST",
+        "method": "sf-eas-addresses has 801 MARKET ST but it does not join to one parcel by ID; its coordinates fall in 4 active parcels (3705Z003, 3705Z002, 3705Z004, 3705Z001), which is what resolve_eas.py's point lookup reads as a condominium stack. Resolved by hand instead: 3705Z001 is the apn of the page already published at this exact path, so the site has already settled which of the four candidate parcels is the building.",
+        "checked_on": "2026-09-14",
+        "note": "Automated resolution gap, not a fresh judgement call: resolve_eas.py's point-lookup path (active_parcel() in research/tools/resolve_eas.py) declares an address unresolved whenever several active parcels share its coordinates, without first checking whether one of those candidates is a parcel the site already has a page for. It should prefer an existing page's own parcel before falling back to the condominium read. Worth fixing and re-running across the corpus rather than patched here mid-run."
+      },
+      "publish": {
+        "status": "published",
+        "note": "Entry added to the existing page at /san-francisco/south-of-market/market-street/801/. building.name left alone — see the resolution note on the naming ambiguity between the article's 'Pacific Place' and the page's own 'The Pacific Building'. A December 2025 DBI permit already on file for this parcel (202512040974, 'uniqlo: l1-l2 electrical upgrades') independently corroborates the tenant. No card on the homepage news grid change needed beyond the normal newest-six rotation, handled at the end of the run."
+      }
+    },
+    {
+      "id": "2026-09-14-hl-0002",
+      "date": "2026-09-14",
+      "date_precision": "day",
+      "kind": "mention",
+      "address_as_written": "653 Laurel Street",
+      "description": "South Asian art gallery Muditā opened at 653 Laurel Street — in San Carlos, on the Peninsula, not in San Francisco. The screen queued it because Laurel Street is a street the site covers, but San Francisco has its own Laurel Street in Presidio Heights; this is a different city's street of the same name.",
+      "citation": {
+        "label": "Hoodline, “South Asian Art Gallery Muditā Opens on San Carlos's Laurel Street,” 14 September 2026",
+        "url": "https://hoodline.com/2026/09/south-asian-art-gallery-mudita-opens-on-san-carlos-s-laurel-street/"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Not San Francisco. San Carlos has its own Laurel Street, distinct from San Francisco's; the screen's street_vocabulary check does not currently disambiguate same-named streets across cities."
+      },
+      "resolution": {
+        "status": "rejected",
+        "checked_on": "2026-09-14",
+        "method": "Not resolved: the finding is declined, so no parcel is sought.",
+        "by_hand": true
+      }
+    },
+    {
+      "id": "2026-09-14-hl-0003",
+      "date": "2026-09-14",
+      "date_precision": "day",
+      "kind": "event",
+      "address_as_written": "3159 16th St.",
+      "street_number": "3159",
+      "street_name": "16TH",
+      "street_type": "ST",
+      "description": "Rainbow Grocery hosted a one-off concert in its produce aisle as part of a series. A grocery store's event programming is not a fact about the building; it fails the ten-year test.",
+      "citation": {
+        "label": "Hoodline, “Rainbow Grocery Turns Its Produce Aisle Into a Mission District Concert Stage,” 14 September 2026",
+        "url": "https://hoodline.com/2026/09/rainbow-grocery-turns-its-produce-aisle-into-a-mission-district-concert-stage/"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Fails the ten-year test: an in-store concert series is programming, not a fact about the building. Not worth reading on the page in ten years."
+      },
+      "resolution": {
+        "status": "rejected",
+        "checked_on": "2026-09-14",
+        "method": "Not resolved: the finding is declined, so no parcel is sought.",
+        "by_hand": true
+      }
+    },
+    {
+      "id": "2026-09-14-hl-0004",
+      "date": "2026-09-14",
+      "date_precision": "day",
+      "kind": "event",
+      "address_as_written": "2026 Harrington",
+      "description": "Front Street closed for a free one-day Fleet Week block party with a yacht rock cover band and an outdoor screening of Top Gun. A street closure for a one-day party is an event, not a fact about a building, and fails the ten-year test.",
+      "citation": {
+        "label": "Hoodline, “Front Street Shuts Down for Free Fleet Week Yacht Rock Bash, Top Gun Screening,” 14 September 2026",
+        "url": "https://hoodline.com/2026/09/front-street-shuts-down-for-free-fleet-week-yacht-rock-bash-top-gun-screening/"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Fails the ten-year test: a one-day Fleet Week block party is an event, not a building fact. Not worth reading on any page in ten years."
+      },
+      "resolution": {
+        "status": "rejected",
+        "checked_on": "2026-09-14",
+        "method": "Not resolved: the finding is declined, so no parcel is sought.",
+        "by_hand": true
+      }
+    }
+  ]
+}

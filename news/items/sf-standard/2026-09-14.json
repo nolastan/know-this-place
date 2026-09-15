@@ -1,0 +1,81 @@
+{
+  "source_id": "sf-standard",
+  "batch": "2026-09-14",
+  "read_on": "2026-09-14",
+  "notes": "Three items queued from the 2026-09-14 poll, all three read.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 3,
+    "mentions": 2,
+    "remaining": "none",
+    "note": "One item, on a city official's characterization of OpenGov software performance, named no street address."
+  },
+  "findings": [
+    {
+      "id": "2026-09-14-ss-0001",
+      "date": "2026-09-14",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "101 Spear St.",
+      "street_number": "101",
+      "street_name": "SPEAR",
+      "street_type": "ST",
+      "description": "Duplicate of the San Francisco Chronicle's same-day story on the same event: Yank Sing will close its Rincon Center restaurant at 101 Spear Street on 20 September 2026, while its Stevenson Street location remains open.",
+      "citation": {
+        "label": "The San Francisco Standard, “Don’t panic: An award-winning dim sum parlor is closing one SF location, not both,” 14 September 2026",
+        "url": "https://sfstandard.com/2026/09/14/yank-sing-rincon-center-closes-dim-sum/"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "One event, one entry. The San Francisco Chronicle's same-day 'A 68-year-old S.F dim sum institution will close its largest location' (news/items/sf-chronicle/2026-09-14.json, finding 2026-09-14-sc-0001) carries the same closure with a fuller account of the restaurant's history; that account carries the entry."
+      },
+      "resolution": {
+        "status": "rejected",
+        "checked_on": "2026-09-14",
+        "method": "Not resolved: the finding is declined, so no parcel is sought.",
+        "by_hand": true
+      }
+    },
+    {
+      "id": "2026-09-14-ss-0002",
+      "date": "2026-09-14",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "682 Haight St.",
+      "street_number": "682",
+      "street_name": "HAIGHT",
+      "street_type": "ST",
+      "description": "Chef Spencer Horovitz's pop-up Hadeem, a California-Jewish concept, has signed on for a permanent restaurant at 682 Haight Street in the Lower Haight, opening in the first half of 2027 in the space Mexican restaurant Otra is vacating in December 2026. The announcement has been made rather than happened, so the entry takes the article's date, as the module's 'to open' entries do.",
+      "extra": {
+        "tenant": "Hadeem",
+        "chef": "Spencer Horovitz",
+        "cuisine": "California-Jewish",
+        "opening_estimate": "first half of 2027",
+        "previous_tenant": "Otra (closing December 2026)"
+      },
+      "citation": {
+        "label": "The San Francisco Standard, “The Lower Haight is getting a Jewish-inspired restaurant from a rising star chef,” 14 September 2026",
+        "url": "https://sfstandard.com/2026/09/14/spencer-horovitz-hadeem-restaurant-lower-haight/",
+        "locator": "article text"
+      },
+      "raw": {
+        "text": "Next year, Horovitz will open his first restaurant at 682 Haight St. in the Lower Haight, where Mexican restaurant Otra will close in December."
+      },
+      "confidence": "high",
+      "note": "The page already carries a Hoodline entry of 2026-09-10 on Otra's closing at the same address (parcel 680 the lowest number). Both stand, in date order: that entry is the outgoing tenant, this one the incoming.",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0847019",
+        "path": "/san-francisco/hayes-valley/haight-street/680/",
+        "eas_address": "680 HAIGHT ST",
+        "method": "EAS exact match on 682 HAIGHT ST → parcel 0847019; sf-parcels has blklot 0847019 active, 680–682 HAIGHT; the 2025 roll records it as multi-family residential, built 1890. EAS puts 680, 682 HAIGHT ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 680.",
+        "checked_on": "2026-09-14"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Entry added to the existing page at /san-francisco/hayes-valley/haight-street/680/, alongside the 2026-09-10 Otra-closing entry already there — the outgoing and incoming tenants both stand, in date order."
+      }
+    }
+  ]
+}
