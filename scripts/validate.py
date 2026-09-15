@@ -17,6 +17,7 @@ Run from anywhere: python3 scripts/validate.py
 """
 import collections
 import html
+import itertools
 import json
 import os
 import re
@@ -586,6 +587,66 @@ def check_room_decisions() -> None:
                       f'"rewrite" or "keep"')
 
 
+def check_days_label() -> None:
+    """`seed_pages.days_label` over every one of the 127 possible day sets.
+
+    The only check here that tests a function rather than a file, and it earns
+    the exception: the opening-hours label is generated prose on a published
+    page, it is read by somebody deciding whether to walk over, and a merchant
+    refresh can put any of the 127 sets through it at any time — so the sets
+    that reach a page today are not the ones that will. #349 shipped six pages
+    printing "Thu, Mon, Tue" before anyone looked.
+
+    The check does not hold a table of expected strings, which would only
+    restate the renderer. It asserts the two properties the label has to have,
+    derived from the set rather than from the code that formats it:
+
+    * it names every day of the set, once, and no day outside it; and
+    * it reads forward through the week. A label may fall backwards exactly
+      once, at Sunday→Monday, and only for a set holding both — the wrap
+      "Sa,Su,Mo" → "Sat–Mon" is written for. Any other backwards step is the
+      mid-week start this check exists to catch.
+    """
+    src = ROOT / "scripts" / "seed_pages.py"
+    short = {name: i for i, name in enumerate(seed_pages.DAY_SHORT)}
+    for n in range(1, 8):
+        for combo in itertools.combinations(range(7), n):
+            days = set(combo)
+            label = seed_pages.days_label(days)
+            if n == 7:
+                if label != "Daily":
+                    err(src, f"days_label(whole week) is {label!r}, not 'Daily'")
+                continue
+            # Expand the label back into day indices. A run prints as
+            # "Mon–Thu" and may itself cross Sunday, so it is walked forward
+            # around the week rather than sliced.
+            seq = []
+            for part in label.split(", "):
+                ends = [short.get(x) for x in part.split("–")]
+                if any(e is None for e in ends):
+                    err(src, f"days_label({sorted(days)}) = {label!r}, "
+                                   f"which has no day name in {part!r}")
+                    seq = None
+                    break
+                first, last = ends[0], ends[-1]
+                seq.append(first)
+                while seq[-1] != last:
+                    seq.append((seq[-1] + 1) % 7)
+            if seq is None:
+                continue
+            if sorted(seq) != sorted(days) or len(set(seq)) != len(seq):
+                err(src, f"days_label({sorted(days)}) = {label!r}, which "
+                               f"names {sorted(seq)} — a day is dropped, "
+                               f"repeated, or invented")
+                continue
+            falls = [k for k in range(len(seq) - 1) if seq[k + 1] < seq[k]]
+            wraps = 6 in days and 0 in days
+            if len(falls) > 1 or (falls and not (wraps and seq[falls[0]] == 6)):
+                err(src, f"days_label({sorted(days)}) = {label!r}, which "
+                               f"runs backwards through the week — the label "
+                               f"starts mid-week instead of on Monday (#349)")
+
+
 def check_build_is_complete(content: Path) -> None:
     """Every source that should have produced a page, produced one.
 
@@ -618,6 +679,7 @@ def main() -> int:
     content = ROOT / "san-francisco"
     check_build_is_complete(content)
     check_room_decisions()
+    check_days_label()
     html_pages = [ROOT / "index.html"] if (ROOT / "index.html").exists() else []
     html_pages += sorted(content.rglob("index.html")) if content.exists() else []
 

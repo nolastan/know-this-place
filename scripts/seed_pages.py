@@ -2498,10 +2498,21 @@ def clock(hhmm: str) -> str:
 def day_runs(days: set) -> list:
     """Day indices → runs of consecutive days, reading the week as a circle.
 
-    Starting just after a day the set lacks is what lets "Su,Mo,Tu,We,Th"
-    read as one run, Sun–Thu, rather than Mon–Thu plus a stray Sunday.
+    A week that runs through Sunday into Monday is one run to a reader and two
+    to a Monday-first walk, so for those sets the walk starts just after a day
+    the set lacks: that is what lets "Su,Mo,Tu,We,Th" read as Sun–Thu rather
+    than "Mon–Thu, Sun".
+
+    The rotation is conditional, and the unconditional version looks right
+    until you feed it a gap. Every set with a day missing has somewhere to
+    rotate to, so an unconditional rotation fires on sets that never touch
+    Sunday and starts the label mid-week — "Mo,Tu,Th" printing as
+    "Thu, Mon, Tue", which reads as broken data rather than as a closed
+    Wednesday (#349). Only a set holding both Sunday and Monday can actually
+    wrap, so only that one rotates; every other set is walked from Monday.
     """
-    start = next(i for i in range(7) if i not in days) + 1
+    start = (next(i for i in range(7) if i not in days) + 1
+             if 6 in days and 0 in days else 0)
     runs, run = [], []
     for k in range(7):
         i = (start + k) % 7
