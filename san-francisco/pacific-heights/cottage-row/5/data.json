@@ -1,0 +1,141 @@
+{
+  "address": "5 Cottage Row, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/cottage-row/5/",
+  "apn": "0677037",
+  "block": "0677",
+  "lot": "037",
+  "eas_baseid": "287559",
+  "coordinates": {
+    "lat": 37.786771,
+    "lng": -122.432243
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 570,
+    "building_area_sqft": 1000,
+    "lot_depth_ft": 28.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Lower Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "0000 0005 COTTAGE             RW0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 564841,
+    "assessed_improvement_value": 466981,
+    "last_sale_date": "2002-12-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Bush Street Cottage Row Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1874\u20131882",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202308104122",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-08-10",
+      "status_date": "2023-09-27",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201008118592",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-08-11",
+      "status_date": "2010-08-11",
+      "estimated_cost": 800,
+      "revised_cost": 1000,
+      "description": "add new double hung window at (e) ground fl in existing rough opening. work requires no structural changes and does not otherwise change the exterior",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201001194899",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-01-19",
+      "status_date": "2010-10-27",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "voluntary structural upgrade, replace slab & foundation. remodel of (e) ground floor. relocate laundry room, extend stairs, new bathroom, upgrade heating, windows and insulation.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=COTTAGE&street_type=ROW&address_number=5",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0677037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0677&lot=037",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department \u2014 Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0677037",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department \u2014 Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43224325415129%2037.786771200631456)%27)",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "nrhp-82000983",
+      "name": "National Register of Historic Places nomination, Bush Street-Cottage Row Historic District (reference number 82000983), National Park Service.",
+      "query": "https://npgallery.nps.gov/NRHP/GetAsset/NRHP/82000983_text",
+      "label": "National Register of Historic Places nomination, National Park Service",
+      "retrieved": "2026-09-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1882",
+      "kind": "construction",
+      "description": "Party-wall house built by the builder Thomas Nash for the developer C.L. Taylor, per The California Architect & Building News, July 1882.",
+      "source": "nrhp-82000983"
+    }
+  ],
+  "building": {
+    "builder": "Thomas Nash",
+    "completed_conflict": "This address is recorded as built 1882; the assessor's roll gives a later year, a placeholder this dataset uses for many undated older buildings rather than a demolition date."
+  }
+}

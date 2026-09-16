@@ -1,0 +1,174 @@
+{
+  "address": "850 Guerrero Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/guerrero-street/850/",
+  "apn": "3607089",
+  "block": "3607",
+  "lot": "089",
+  "eas_baseid": "473302",
+  "coordinates": {
+    "lat": 37.757433,
+    "lng": -122.423701
+  },
+  "parcel": {
+    "year_built": 1907,
+    "rooms": 5,
+    "bathrooms": 1,
+    "building_area_sqft": 1267,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "NA",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0850 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 711142,
+    "assessed_improvement_value": 711142,
+    "last_sale_date": "2013-05-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Liberty Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1860s\u20131906",
+    "source": "sf-historic-districts"
+  },
+  "also_in_districts": [
+    {
+      "name": "Liberty Street Historic District",
+      "california_register_status": "Listed",
+      "national_register_status": "Listed",
+      "article_10_11_status": "No local landmark protection",
+      "local_landmark_protection": false,
+      "period_of_significance": "1867\u20131911",
+      "source": "sf-historic-districts"
+    }
+  ],
+  "permits": [
+    {
+      "number": "202402125705",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-02-12",
+      "status_date": "2024-04-03",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "voluntary strengthening in the crawlspace area. add plywood shear walls w/foundation anchorage. no external work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202104299533",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-04-29",
+      "status_date": "2021-10-15",
+      "estimated_cost": 93000,
+      "revised_cost": 93000,
+      "description": "remodel water closet with toilet staying at same location, add secondary heated flooring unit (electric) remodel bathroom in kind (all fixtures keep same location) add heated floorning unit (elec) secondary",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200412010385",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2004-12-01",
+      "status_date": "2005-06-22",
+      "estimated_cost": 100,
+      "revised_cost": 2000,
+      "description": "work for 3r-report#3r-3918-exclusive of deck repair (permit#200404302771) 07.2 sfbc",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200303149722",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-03-14",
+      "status_date": "2003-10-31",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "kitchen remodel in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200208123776",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-08-12",
+      "status_date": "2002-08-12",
+      "estimated_cost": 12880,
+      "revised_cost": 12880,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "2002\u20132024",
+    "shown_on_page": 5,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=850",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3607089&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3607&lot=089",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department \u2014 Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3607089",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department \u2014 Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42370099387811%2037.757432566070506)%27)",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "nrhp-83001230",
+      "name": "National Register of Historic Places nomination, Liberty Street Historic District (reference number 83001230), National Park Service.",
+      "query": "https://npgallery.nps.gov/NRHP/GetAsset/NRHP/83001230_text",
+      "label": "National Register of Historic Places nomination, National Park Service",
+      "retrieved": "2026-09-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1902",
+      "kind": "construction",
+      "description": "A pre-existing residence altered into flats by the architect Charles J. Rousseau.",
+      "source": "nrhp-83001230"
+    }
+  ],
+  "building": {
+    "architect": "Charles J. Rousseau",
+    "completed_conflict": "This address is recorded as built 1902; the assessor's roll gives a later year, a placeholder this dataset uses for many undated older buildings rather than a demolition date."
+  }
+}
