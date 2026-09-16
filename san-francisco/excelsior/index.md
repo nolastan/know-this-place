@@ -15,6 +15,7 @@ A working-class residential district in the city's south-east, laid out in the e
 - [Royal Lane](royal-lane/) — 1 building, built 1906.
 - [Russia Avenue](russia-avenue/) — 1 building, built 1915.
 - [Silver Avenue](silver-avenue/) — 1 building, built 1922.
+- [Walbridge Street](walbridge-street/) — 1 building.
 
 ## Adjacent neighborhoods
 
