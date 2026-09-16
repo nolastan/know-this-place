@@ -20,6 +20,7 @@ Merced Heights, the ridge between them, was mostly built after World War II.
 - [Josiah Avenue](josiah-avenue/) — 1 building, built 1910.
 - [Jules Avenue](jules-avenue/) — 2 buildings, built 1926–1927.
 - [Lakeview Avenue](lakeview-avenue/) — 1 building, built 1916.
+- [Lee Avenue](lee-avenue/) — 1 building, built 1910.
 - [Lobos Street](lobos-street/) — 1 building, built 1906.
 - [Miramar Avenue](miramar-avenue/) — 2 buildings, built 1905–1917.
 - [Mission Street](mission-street/) — 1 building, built 1924.

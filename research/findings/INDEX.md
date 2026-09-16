@@ -173,6 +173,7 @@ are listed so their size is visible before anyone opens one.
 | `archive-page-2.json` | 4 | 1 KB | `corbett-heights` |
 | `archive-page-3.json` | 2 | 1 KB | `haight-ashbury`, `corbett-heights` |
 | `away-2026-09-12.json` | 1 | 1 KB | `hayes-valley` |
+| `backfill-2026-02.json` | 7 | 3 KB | `marina`, `corbett-heights`, `mission` +4 |
 | `biographies-a-c.json` | 8 | 3 KB | `castro`, `presidio-heights`, `russian-hill` +1 |
 | `biographies-d-f.json` | 106 | 39 KB | `pacific-heights`, `nob-hill`, `presidio-heights` +19 |
 | `biographies-g-i.json` | 65 | 24 KB | `pacific-heights`, `sunset-parkside`, `glen-park` +15 |

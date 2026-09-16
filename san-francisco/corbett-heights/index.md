@@ -16,6 +16,7 @@ Ord, Hattie, Danvers, Mars, Romain and Museum Way.
 
 - [Clayton Street](clayton-street/) — 17 buildings, built 1895–1961; 1 in the Auxiliary Water Supply System (Discontiguous).
 - [Corbett Avenue](corbett-avenue/) — 7 buildings documented — from a 1905 flat above the earthquake refugee camp to post-war infill.
+- [Crestline Drive](crestline-drive/) — 1 building, built 1964.
 - [Danvers Street](danvers-street/) — 2 buildings documented — survivors of the corner the Market Street extension erased.
 - [Hattie Street](hattie-street/) — 2 buildings, built 1900–1904.
 - [Levant Street](levant-street/) — 1 building, built 1929.

@@ -1,0 +1,96 @@
+{
+  "address": "1400 De Haro Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/de-haro-street/1400/",
+  "apn": "4282A001",
+  "block": "4282A",
+  "lot": "001",
+  "eas_baseid": "371105",
+  "coordinates": {
+    "lat": 37.751839,
+    "lng": -122.400531
+  },
+  "parcel": {
+    "year_built": 1940,
+    "stories": 1,
+    "rooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 384,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Misc",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Potrero Hill",
+    "property_location_raw": "0000 1400 DE HARO             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 22144,
+    "assessed_improvement_value": 2508
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1940",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202203019009",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2022-03-01",
+      "status_date": "2026-01-23",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "repair of vandalism ongoing since last august 2021 and previously since years 2003-2006 and 2016 march 10th to present: replacing destroyed hydroinstallation, destroyed gates, electrical systems, replace siding, 1 window. in kind.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DE%20HARO&street_type=ST&address_number=1400",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4282A001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4282A&lot=001",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4282A001",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sfyimby-2026-02-15",
+      "name": "San Francisco YIMBY, “Townhomes Proposed For 1400 De Haro Street on Potrero Hill, San Francisco,” 15 February 2026",
+      "query": "https://sfyimby.com/2026/02/townhomes-proposed-for-1400-de-haro-street-on-potrero-hill-san-francisco.html",
+      "retrieved": "2026-09-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2026-02-15",
+      "kind": "development",
+      "headline": "Townhomes Proposed For 1400 De Haro Street on Potrero Hill, San Francisco",
+      "outlet": "San Francisco YIMBY",
+      "url": "https://sfyimby.com/2026/02/townhomes-proposed-for-1400-de-haro-street-on-potrero-hill-san-francisco.html",
+      "source": "sfyimby-2026-02-15"
+    }
+  ]
+}
