@@ -64,6 +64,24 @@ Locally you may already be on a working branch the user gave you. That is fine �
 say which branch you are using and why, and don't create another one behind
 their back.
 
+**Re-run this check before every backfill window, not just once at the start.**
+A worklist that says "walk the archive back, one month at a time" (issue #337 is
+the worked example) reads like an invitation to open one PR per month — it
+isn't. Each month's PR starts fresh off `main`, so it has no idea the PR you
+opened for last month even exists; if that PR is still open, the fact that
+you're the one who opened it minutes ago carries no weight. And because an
+outlet's archive is its own past coverage, the same address surfaces across
+different months — SF YIMBY covers a given project again and again — so two
+backfill branches that never merge into each other *will* independently seed or
+enrich the same page, and whichever merges second conflicts with the first.
+Do the whole worklist on one branch: after draining a window's queue and
+publishing, run the open-PR check again before listing the next window, and
+keep pushing to that same PR until you actually stop (session end, or the
+worklist is exhausted) — only then does it get merged and a later session
+starts the next one fresh. "Each batch is its own PR" (when a worklist says
+that) means each batch is independently reviewable and mergeable, not that
+batches done back-to-back in one sitting should each fork their own branch.
+
 ## An unfinished run outranks a new one
 
 **Work down this ladder and take the first thing with something in it.** The

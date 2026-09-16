@@ -211,7 +211,18 @@ then has to deal with.
 So `backfill` refuses a window wider than 31 days, and refuses to list a new one
 while a backfill queue is still waiting to be read. Both are overridable with
 `--force`, and neither should be. Pick a window — one month, or one month of one
-feed — drain it, then go again.
+feed — drain it, then go again — **on the same branch**, per
+[AGENTS.md → The pipeline](AGENTS.md#the-pipeline) → "A backfill is batched".
+That guard only stops one branch from listing a new window on top of an
+unread queue; it does
+nothing to stop a *second* branch from independently walking a different
+window, and a feed's own archive guarantees the two will eventually name the
+same address — SF YIMBY's coverage of one project resurfaces across months.
+Two backfill PRs that each started fresh off `main` will each seed or enrich
+that address's page, and the second one to merge conflicts with the first. Run
+the open-PR check the `/news` skill gives under "Where a run starts" before
+every new window, not only once at the top of a session — including when the
+open PR is one you opened yourself minutes earlier for the previous month.
 
 | feed | route | listed in July 2026 | queued |
 |---|---|---|---|
