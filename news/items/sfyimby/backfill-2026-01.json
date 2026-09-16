@@ -1,0 +1,620 @@
+{
+ "source_id": "sfyimby",
+ "batch": "backfill-2026-01",
+ "read_on": "2026-09-15",
+ "notes": "Backfill window 2026-01-01..2026-01-31, per issue #337's suggested order (sfyimby, month by month), continuing from #360 (June), #361 (May), #362 (April), #363 (March) and #364 (February). Three addresses here (555 Beale Street, 772 Pacific Avenue, 61 Royal Lane) are also touched by the still-open May batch (#361) or June batch (#360); those PRs and this one will need a small merge wherever they land relative to each other. 641-645 48th Avenue and 1027-1049 Clayton Street and 1354-1356 York Street are expected to hit the same multi-parcel refusal seen in earlier batches for similar not-yet-merged lots.",
+ "coverage": {
+  "unit": "articles",
+  "examined": 17,
+  "mentions": 17,
+  "remaining": "sfyimby's paged archive back of 2026-01-01, unwalked."
+ },
+ "findings": [
+  {
+   "id": "backfill-2026-01-0001",
+   "date": "2026-01-30",
+   "date_precision": "day",
+   "kind": "construction",
+   "address_as_written": "598 Dellbrook Avenue",
+   "street_number": "598",
+   "street_name": "DELLBROOK",
+   "street_type": "AVE",
+   "description": "New building permits have been filed for a three-storey, nine-unit apartment building at 598 Dellbrook Avenue in Twin Peaks, near the foot of Sutro Tower, approved by the city in August 2025. RG Architecture is the project sponsor and architect.",
+   "extra": {
+    "sponsor": "RG Architecture",
+    "proposed_units": 9,
+    "height_ft": 40,
+    "lot_acres": 0.25,
+    "entitlement_approved": "August 2025"
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “Building Permits Filed For 598 Dellbrook Avenue in Twin Peaks, San Francisco,” 30 January 2026",
+    "url": "https://sfyimby.com/2026/01/building-permits-filed-for-598-dellbrook-avenue-in-twin-peaks-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-15",
+    "method": "No record in sf-eas-addresses for 598 DELLBROOK AVE.",
+    "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 580, 585, 586, 590, 595, 596. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+   },
+   "publish": {
+    "status": "pending",
+    "note": "Blocked: there is no such address today. EAS has no record of 598 Dellbrook Avenue -- the street's registered numbers stop in the 30s. Worth retrying once the parcel is formally addressed."
+   }
+  },
+  {
+   "id": "backfill-2026-01-0002",
+   "date": "2026-01-29",
+   "date_precision": "day",
+   "kind": "development",
+   "address_as_written": "173 Shipley Street",
+   "street_number": "173",
+   "street_name": "SHIPLEY",
+   "street_type": "ST",
+   "description": "Formal permits have been filed for a seven-storey, 13-unit residential infill at 173 Shipley Street in SoMa, unchanged since the preliminary application filed the previous December. Pew Property Group is the applicant, filing through a Laguna Beach-based LLC; RG Architecture designed it.",
+   "extra": {
+    "applicant": "Pew Property Group",
+    "architect_of_proposal": "RG Architecture",
+    "proposed_units": 13,
+    "height_ft": 75,
+    "lot_acres": 0.1,
+    "construction_cost_estimate_usd": 5500000
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “Formal Permits Filed for 173 Shipley Street in SoMa, San Francisco,” 29 January 2026",
+    "url": "https://sfyimby.com/2026/01/formal-permits-filed-for-173-shipley-street-in-soma-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3752070",
+    "path": "/san-francisco/south-of-market/shipley-street/173/",
+    "eas_address": "173 SHIPLEY ST",
+    "method": "EAS exact match on 173 SHIPLEY ST → parcel 3752070; sf-parcels has blklot 3752070 active, 173–173 SHIPLEY; the 2025 roll records it as industrial, built 1928.",
+    "checked_on": "2026-09-15"
+   },
+   "publish": {
+    "status": "published",
+    "note": "Published to san-francisco/south-of-market/shipley-street/173/."
+   }
+  },
+  {
+   "id": "backfill-2026-01-0003",
+   "date": "2026-01-26",
+   "date_precision": "day",
+   "kind": "development",
+   "address_as_written": "555 Beale Street",
+   "street_number": "555",
+   "street_name": "BEALE",
+   "street_type": "ST",
+   "description": "Updated renderings, by London-based Grimshaw Architects with San Francisco-based Perry Architects, have been published for Strada's Seawall Lot 330 waterfront development at 555 Beale Street: two buildings totaling 619 units (93 affordable), sculpted to keep 90% of the site below 105 feet, plus a third, fully affordable parcel (Building 3) under a separate application. The prior dependency on a paired Piers 30-32 office project was severed the previous July when the Port Commission approved splitting the development agreement.",
+   "extra": {
+    "architect_of_proposal": "Grimshaw Architects, with Perry Architects",
+    "proposed_units": 619,
+    "affordable_units": 93,
+    "height_ft": 105,
+    "companion_parcel": "Building 3, fully affordable, separate application"
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “Updated Renderings For 555 Beale Street, San Francisco,” 26 January 2026",
+    "url": "https://sfyimby.com/2026/01/updated-renderings-for-555-beale-street-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3771002",
+    "path": "/san-francisco/east-cut/beale-street/555/",
+    "eas_address": "555 BEALE ST",
+    "method": "EAS exact match on 555 BEALE ST → parcel 3771002; sf-parcels has blklot 3771002 active, 555–555 BEALE; the 2025 roll records it as commercial misc.",
+    "checked_on": "2026-09-15",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "note": "No page existed; seeded from research/manifests/backfill-2026-01.json, apn 3771002. Published to san-francisco/east-cut/beale-street/555/."
+   }
+  },
+  {
+   "id": "backfill-2026-01-0004",
+   "date": "2026-01-24",
+   "date_precision": "day",
+   "kind": "development",
+   "address_as_written": "668 Guerrero Street",
+   "street_number": "668",
+   "street_name": "GUERRERO",
+   "street_type": "ST",
+   "description": "Formal permits have been filed to expand the two-storey commercial building at 668 Guerrero Street in the Mission into a six-storey, 12-unit building (two affordable), using a 100% density bonus. Mill Valley-based Real Equity Group One is the property owner; RG Architecture designed it.",
+   "extra": {
+    "owner": "Real Equity Group One",
+    "architect_of_proposal": "RG Architecture",
+    "proposed_units": 12,
+    "affordable_units": 2,
+    "height_ft": 68,
+    "lot_acres": 0.09,
+    "construction_cost_estimate_usd": 8200000
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “Formal Application For 668 Guerrero Street in Mission District, San Francisco,” 24 January 2026",
+    "url": "https://sfyimby.com/2026/01/formal-application-for-668-guerrero-street-in-mission-district-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3587011",
+    "path": "/san-francisco/mission/guerrero-street/668/",
+    "eas_address": "668 GUERRERO ST",
+    "method": "EAS exact match on 668 GUERRERO ST → parcel 3587011; sf-parcels has blklot 3587011 active, 668–668 GUERRERO; the 2025 roll records it as multi-family residential, built 1905.",
+    "checked_on": "2026-09-15"
+   },
+   "publish": {
+    "status": "published",
+    "note": "Published to san-francisco/mission/guerrero-street/668/."
+   }
+  },
+  {
+   "id": "backfill-2026-01-0005",
+   "date": "2026-01-22",
+   "date_precision": "day",
+   "kind": "development",
+   "address_as_written": "430 Green Street",
+   "street_number": "430",
+   "street_name": "GREEN",
+   "street_type": "ST",
+   "description": "Updated plans have been published to replace the 1906-built house at 430 Green Street in North Beach -- one of many rebuilt in the neighborhood after the earthquake and fire, and found not individually eligible for the California Register in a 2021 evaluation -- with a four-storey, two-unit building. RDK Consulting designed it; Reuben Law filed the application for the individual owner.",
+   "extra": {
+    "applicant": "Reuben Law",
+    "architect_of_proposal": "RDK Consulting",
+    "proposed_units": 2,
+    "existing_built": 1906,
+    "total_sqft": 5270,
+    "historic_finding": "2021 evaluation: not individually eligible for the California Register"
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “Rendering Revealed For 430 Green Street in North Beach, San Francisco,” 22 January 2026",
+    "url": "https://sfyimby.com/2026/01/rendering-revealed-for-430-green-street-in-north-beach-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0115013A",
+    "path": "/san-francisco/north-beach/green-street/430/",
+    "eas_address": "430 GREEN ST",
+    "method": "EAS exact match on 430 GREEN ST → parcel 0115013A; sf-parcels has blklot 0115013A active, 430–430 GREEN; the 2025 roll records it as single family residential, built 1906.",
+    "checked_on": "2026-09-15",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "note": "No page existed; seeded from research/manifests/backfill-2026-01.json, apn 0115013A. Published to san-francisco/north-beach/green-street/430/."
+   }
+  },
+  {
+   "id": "backfill-2026-01-0006",
+   "date": "2026-01-18",
+   "date_precision": "day",
+   "kind": "development",
+   "address_as_written": "64 Ord Court",
+   "street_number": "64",
+   "street_name": "ORD",
+   "street_type": "CT",
+   "description": "Preliminary permits have been filed to demolish the existing single-family house at 64 Ord Court in Corona Heights -- of unknown architect and builder, dated only to sometime between 1913 and 1938 in a 2020 evaluation -- split the lot, and build two duplexes, one facing Ord Court and one facing States Street. Schaub Li Architects is responsible for the application and design.",
+   "extra": {
+    "architect_of_proposal": "Schaub Li Architects",
+    "historic_finding": "2020 evaluation (Tim Kelley Consulting): not historically or architecturally significant, architect/builder unknown, built 1913-1938"
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “Preliminary Permits Filed For 64 Ord Court in Corona Heights, San Francisco,” 18 January 2026",
+    "url": "https://sfyimby.com/2026/01/preliminary-permits-filed-for-64-ord-court-in-corona-heights-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "2619054",
+    "path": "/san-francisco/corbett-heights/ord-court/64/",
+    "eas_address": "64 ORD CT",
+    "method": "EAS exact match on 64 ORD CT → parcel 2619054; sf-parcels has blklot 2619054 active, 64–64 ORD; the 2025 roll records it as single family residential, built 1906.",
+    "checked_on": "2026-09-15"
+   },
+   "publish": {
+    "status": "published",
+    "note": "Published to san-francisco/corbett-heights/ord-court/64/."
+   }
+  },
+  {
+   "id": "backfill-2026-01-0007",
+   "date": "2026-01-16",
+   "date_precision": "day",
+   "kind": "construction",
+   "address_as_written": "160 Freelon Street",
+   "street_number": "160",
+   "street_name": "FREELON",
+   "street_type": "ST",
+   "description": "Concrete has passed the halfway point for the nine-storey, 86-unit affordable housing project at 160 Freelon Street in SoMa, spanning from Freelon to Bryant Street; completion is expected by mid-2027. Related Companies and the San Francisco Housing Development Corp are the sponsors; Cahill Contractors and Guzman Construction Group are the joint-venture contractors, with design by Leddy Maytum Stacy Architects and associate architect Y.A. Studio. The city (owner) received the land from Tishman Speyer as part of a land agreement tied to 598 Brannan Street.",
+   "extra": {
+    "developer_of_proposal": "Related Companies and the San Francisco Housing Development Corp",
+    "architect_of_proposal": "Leddy Maytum Stacy Architects, with Y.A. Studio",
+    "general_contractor": "Cahill Contractors and Guzman Construction Group",
+    "proposed_units": 86,
+    "height_ft": 95,
+    "construction_cost_estimate_usd": 100000000,
+    "land_source": "donated to the city by Tishman Speyer, tied to 598 Brannan Street"
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “Concrete Rising At 160 Freelon Street in SoMa, San Francisco,” 16 January 2026",
+    "url": "https://sfyimby.com/2026/01/concrete-rising-at-160-freelon-street-in-soma-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3777177",
+    "path": "/san-francisco/south-of-market/freelon-street/160/",
+    "eas_address": "160 FREELON ST",
+    "method": "EAS exact match on 160 FREELON ST → parcel 3777177; sf-parcels has blklot 3777177 active, 639–639 BRYANT; the 2025 roll records it as miscellaneous/mixed-use. The assessor files the parcel as 639 BRYANT ST. EAS files the address under parcel 3777052, which sf-parcels reports retired; the active parcel its coordinates fall in is 3777177.",
+    "checked_on": "2026-09-15",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "note": "No page existed; seeded from research/manifests/backfill-2026-01.json, apn 3777177. Published to san-francisco/south-of-market/freelon-street/160/."
+   }
+  },
+  {
+   "id": "backfill-2026-01-0008",
+   "date": "2026-01-15",
+   "date_precision": "day",
+   "kind": "development",
+   "address_as_written": "1027-1049 Clayton Street",
+   "street_number": "1027",
+   "street_name": "CLAYTON",
+   "street_type": "ST",
+   "description": "Updated preliminary permits have been filed to develop five parcels at 1027-1049 Clayton Street in Haight-Ashbury into nine two-bedroom units across five five-storey buildings, requiring demolition of the existing house. Schaub Li Architects is responsible for the application and design, for owner OBT LLC.",
+   "extra": {
+    "owner": "OBT LLC",
+    "architect_of_proposal": "Schaub Li Architects",
+    "proposed_units": 9,
+    "address_range_as_recorded": "1027-1049"
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “Preliminary Permits Filed For 1027-1049 Clayton Street, San Francisco,” 15 January 2026",
+    "url": "https://sfyimby.com/2026/01/preliminary-permits-filed-for-1027-1049-clayton-street-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-15",
+    "method": "the recorded range 1027-1049 on CLAYTON ST spans more than one parcel in sf-eas-addresses today: 1279021 (1027), 1279130 (1047, 1049), 1279132 (1043, 1045), 1279133 (1031, 1033).",
+    "note": "The numbers the record gives are on different parcels now, so the record cannot be placed on one page without deciding which — which the record does not say."
+   },
+   "publish": {
+    "status": "pending",
+    "note": "Blocked: the resolver will not join the address. 1027 and 1047/1049 Clayton Street are separate active parcels today (1279021, 1279130), plus others among the five parcels the project spans; the record does not say which one the fact belongs on."
+   }
+  },
+  {
+   "id": "backfill-2026-01-0009",
+   "date": "2026-01-15",
+   "date_precision": "day",
+   "kind": "development",
+   "address_as_written": "1354-1356 York Street",
+   "street_number": "1354",
+   "street_name": "YORK",
+   "street_type": "ST",
+   "description": "Minor modifications -- revised interior layouts, an expanded ground-floor utility room, a new rear deck and staircase, and divided private roof areas -- have been proposed for the two four-storey, six-unit buildings at 1354-1356 York Street in the Mission, approved in December 2023 but not yet built. Atlas Property Group is the developer; RG Architecture designed it.",
+   "extra": {
+    "developer_of_proposal": "Atlas Property Group",
+    "architect_of_proposal": "RG Architecture",
+    "proposed_units": 6,
+    "entitlement_approved": "December 2023",
+    "address_range_as_recorded": "1354-1356"
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “Modifications Proposed for Previously Approved Residential Development at 1354-1356 York Street in San Francisco,” 15 January 2026",
+    "url": "https://sfyimby.com/2026/01/modifications-proposed-for-previously-approved-residential-development-at-1354-1356-york-street-in-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-15",
+    "method": "the recorded range 1354-1356 on YORK ST spans more than one parcel in sf-eas-addresses today: 4274008 (1354), 4274009 (1356).",
+    "note": "The numbers the record gives are on different parcels now, so the record cannot be placed on one page without deciding which — which the record does not say."
+   },
+   "publish": {
+    "status": "pending",
+    "note": "Blocked: the resolver will not join the address. 1354 and 1356 York Street are two separate active parcels today (4274008, 4274009); the project builds one building on each, and the record does not say which parcel the fact belongs on."
+   }
+  },
+  {
+   "id": "backfill-2026-01-0010",
+   "date": "2026-01-14",
+   "date_precision": "day",
+   "kind": "construction",
+   "address_as_written": "300 De Haro Street",
+   "street_number": "300",
+   "street_name": "DE HARO",
+   "street_type": "ST",
+   "description": "Foundation work is underway, with the first crane segment on site, for the fully affordable, 11-storey, 425-studio development at 300 De Haro Street on Potrero Hill, on a triangular corner lot; the project evolved from a 2020 application (290 group-housing units), through a 2021 revision (450 units, 184 affordable), to the 2024-filed, fully affordable final plan, with groundbreaking in August 2025 and opening expected as early as mid-2027. DM Development and MRK Partners are developing it; BAR Architects & Interiors designed it, with Thompson Builders as general contractor.",
+   "extra": {
+    "developer_of_proposal": "DM Development and MRK Partners",
+    "architect_of_proposal": "BAR Architects & Interiors",
+    "general_contractor": "Thompson Builders",
+    "proposed_units": 425,
+    "height_ft": 120,
+    "lot_acres": 0.62,
+    "entitlement_history": "2020: 290 group-housing units; 2021: 450 units (184 affordable); 2024: 425 fully affordable studios"
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “Foundation Progress at 300 De Haro Street, San Francisco,” 14 January 2026",
+    "url": "https://sfyimby.com/2026/01/foundation-progress-at-300-de-haro-street-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3956008",
+    "path": "/san-francisco/mission-bay/de-haro-street/300/",
+    "eas_address": "300 DE HARO ST",
+    "method": "EAS exact match on 300 DE HARO ST → parcel 3956008; sf-parcels has blklot 3956008 active, 300–300 DE HARO; the 2025 roll records it as industrial, built 1984.",
+    "checked_on": "2026-09-15"
+   },
+   "publish": {
+    "status": "published",
+    "note": "Published to san-francisco/mission-bay/de-haro-street/300/."
+   }
+  },
+  {
+   "id": "backfill-2026-01-0011",
+   "date": "2026-01-13",
+   "date_precision": "day",
+   "kind": "construction",
+   "address_as_written": "1515 South Van Ness Avenue",
+   "street_number": "1515",
+   "street_name": "SOUTH VAN NESS",
+   "street_type": "AVE",
+   "description": "The concrete frame is nearing its top for the nine-storey, 168-unit affordable housing complex at 1515 South Van Ness Avenue in the Mission -- called the largest affordable housing development in the Mission in two decades -- with a groundbreaking attended by Mayor Daniel Lurie and Supervisor Jackie Fielder in mid-April 2025 and completion expected by early 2027. Chinatown Community Development Center and the Mission Economic Development Agency are developing it; David Baker Architects and Y.A. Studio designed it, with Guzman Construction Group and Marinship as the joint-venture contractor.",
+   "extra": {
+    "developer_of_proposal": "Chinatown Community Development Center and the Mission Economic Development Agency",
+    "architect_of_proposal": "David Baker Architects, with Y.A. Studio",
+    "general_contractor": "Guzman Construction Group and Marinship",
+    "proposed_units": 168,
+    "groundbreaking": "mid-April 2025",
+    "ground_floor_tenants": "Wu Yee Children's Services, Nuevo Sol"
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “Concrete Nears Top for 1515 South Van Ness Avenue in Mission District, San Francisco,” 13 January 2026",
+    "url": "https://sfyimby.com/2026/01/concrete-nears-top-for-1515-south-van-ness-avenue-in-mission-district-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "6571053",
+    "path": "/san-francisco/mission/south-van-ness-avenue/1515/",
+    "eas_address": "1515 SOUTH VAN NESS AVE",
+    "method": "EAS exact match on 1515 SOUTH VAN NESS AVE → parcel 6571053; sf-parcels has blklot 6571053 active, 3251–3251 26TH; the 2025 roll records it as government. EAS files the address under parcel 6571008, which sf-parcels reports retired; the active parcel its coordinates fall in is 6571053.",
+    "checked_on": "2026-09-15",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "note": "No page existed; seeded from research/manifests/backfill-2026-01.json, apn 6571053. Published to san-francisco/mission/south-van-ness-avenue/1515/."
+   }
+  },
+  {
+   "id": "backfill-2026-01-0012",
+   "date": "2026-01-09",
+   "date_precision": "day",
+   "kind": "construction",
+   "address_as_written": "1633 Valencia Street",
+   "street_number": "1633",
+   "street_name": "VALENCIA",
+   "street_type": "ST",
+   "description": "Exterior work is essentially complete on the 64-foot, 146-unit affordable senior supportive housing at 1633 Valencia Street between Bernal Heights and the Mission, with a brick-and-tile facade by David Baker Architects and a landscaped backyard by Fletcher Studios. Mercy Housing developed it with San Francisco Housing Accelerator Fund financing and Cahill Contractors as builder.",
+   "extra": {
+    "developer_of_proposal": "Mercy Housing",
+    "architect_of_proposal": "David Baker Architects",
+    "landscape_architect": "Fletcher Studios",
+    "general_contractor": "Cahill Contractors",
+    "proposed_units": 146,
+    "height_ft": 64,
+    "financing": "San Francisco Housing Accelerator Fund"
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “Construction Wrapping Up For 1633 Valencia Street, San Francisco,” 9 January 2026",
+    "url": "https://sfyimby.com/2026/01/construction-wrapping-up-for-1633-valencia-street-san-francisco-2.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "6574071",
+    "path": "/san-francisco/mission/valencia-street/1633/",
+    "eas_address": "1633 VALENCIA ST",
+    "method": "EAS exact match on 1633 VALENCIA ST → parcel 6574071; sf-parcels has blklot 6574071 active, 1633–1633 VALENCIA; the 2025 roll records it as miscellaneous/mixed-use. EAS files the address under parcel 6574068, which sf-parcels reports retired; the active parcel its coordinates fall in is 6574071.",
+    "checked_on": "2026-09-15",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "note": "No page existed; seeded from research/manifests/backfill-2026-01.json, apn 6574071. Published to san-francisco/mission/valencia-street/1633/."
+   }
+  },
+  {
+   "id": "backfill-2026-01-0013",
+   "date": "2026-01-08",
+   "date_precision": "day",
+   "kind": "construction",
+   "address_as_written": "772 Pacific Avenue",
+   "street_number": "772",
+   "street_name": "PACIFIC",
+   "street_type": "AVE",
+   "description": "New building permits have been filed for the 100%-affordable, 15-storey, 175-unit New Asia project at 772 Pacific Avenue in Chinatown, above a rebuilt banquet hall replacing the 1919-built one currently home to New Asia Restaurant; construction is expected to start in February 2027. The city bought 772 Pacific Avenue in 2017 and Chinatown Community Development Corporation bought the adjoining 758 Pacific Avenue in 2023, planning to transfer it to the city to merge the lots before the construction loan closes; the state awarded the CCDC/MOHCD partnership $33.5 million in September 2025. Herman Coliver Locus Architecture and Stan Teng Architectural Studio are jointly designing it.",
+   "extra": {
+    "developer_of_proposal": "Chinatown Community Development Corporation, with MOHCD",
+    "architect_of_proposal": "Herman Coliver Locus Architecture and Stan Teng Architectural Studio",
+    "proposed_units": 175,
+    "height_ft": 155,
+    "funding_secured": "$33.5 million, California Dept. of Housing and Community Development, September 2025",
+    "former_occupant_business": "New Asia Restaurant, in a 1919-built banquet hall",
+    "lot_merger_planned": "758 Pacific Avenue (bought by CCDC 2023) to be transferred to the city and merged with 772 before the construction loan closes"
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “New Building Permits Requested For 772 Pacific Avenue in Chinatown, San Francisco,” 8 January 2026",
+    "url": "https://sfyimby.com/2026/01/new-building-permits-requested-for-772-pacific-avenue-in-chinatown-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0161015",
+    "path": "/san-francisco/chinatown/pacific-avenue/772/",
+    "eas_address": "772 PACIFIC AVE",
+    "method": "EAS exact match on 772 PACIFIC AVE → parcel 0161015; sf-parcels has blklot 0161015 active, 772–772 PACIFIC; the 2025 roll records it as commercial retail, built 1919.",
+    "checked_on": "2026-09-15",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "note": "No page existed; seeded from research/manifests/backfill-2026-01.json, apn 0161015. Published to san-francisco/chinatown/pacific-avenue/772/."
+   }
+  },
+  {
+   "id": "backfill-2026-01-0014",
+   "date": "2026-01-08",
+   "date_precision": "day",
+   "kind": "development",
+   "address_as_written": "61 Royal Lane",
+   "street_number": "61",
+   "street_name": "ROYAL",
+   "street_type": "LN",
+   "description": "Plans have been filed to replace a detached structure at 61 Royal Lane in Crocker-Amazon, listed as built in 1906 (with a mid-1950s addition) and currently used as an unauthorized dwelling unit, with a three-storey duplex; an earlier, similar expansion filed in 2015 by KB Design & Consulting had its permits cancelled in 2022. Nie Yang Architects is responsible for the design and application.",
+   "extra": {
+    "architect_of_proposal": "Nie Yang Architects",
+    "existing_built": 1906,
+    "prior_filing": "2015 by KB Design & Consulting, permits cancelled 2022",
+    "height_ft": 30,
+    "construction_cost_estimate_usd": 500000
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “Plans Filed For Duplex at 61 Royal Lane in Crocker-Amazon, San Francisco,” 8 January 2026",
+    "url": "https://sfyimby.com/2026/01/plans-filed-for-duplex-at-61-royal-lane-in-crocker-amazon-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "6482034",
+    "path": "/san-francisco/excelsior/royal-lane/51/",
+    "eas_address": "51 ROYAL LN",
+    "method": "EAS exact match on 61 ROYAL LN → parcel 6482034; sf-parcels has blklot 6482034 active, 51–61 ROYAL; the 2025 roll records it as single family residential, built 1906. EAS puts 51, 61 ROYAL LN on that parcel, so per the directory contract the fact belongs on one page at the lowest, 51.",
+    "checked_on": "2026-09-15",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "note": "No page existed; seeded from research/manifests/backfill-2026-01.json, apn 6482034. Published to san-francisco/excelsior/royal-lane/51/."
+   }
+  },
+  {
+   "id": "backfill-2026-01-0015",
+   "date": "2026-01-06",
+   "date_precision": "day",
+   "kind": "development",
+   "address_as_written": "85 West Portal Avenue",
+   "street_number": "85",
+   "street_name": "WEST PORTAL",
+   "street_type": "AVE",
+   "description": "Preliminary permits have been filed to demolish the century-old, vacant Empire Theater at 85 West Portal Avenue -- closed by Cinemark in February 2021 and bought that July by Jesse Appleton and partners for $2.5 million, per the San Francisco Chronicle -- and build a nine-storey, 64-unit apartment building (10 affordable) retaining the theater's ornamental cornice along West Portal Avenue. Handel Architects designed it.",
+   "extra": {
+    "architect_of_proposal": "Handel Architects",
+    "proposed_units": 64,
+    "affordable_units": 10,
+    "height_ft": 119,
+    "former_use": "Empire Theater (Cinemark), closed February 2021"
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “Residential Redevelopment Revealed For Empire Theater in West Portal, San Francisco,” 6 January 2026",
+    "url": "https://sfyimby.com/2026/01/residential-redevelopment-revealed-for-empire-theater-in-west-portal-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "2979A019",
+    "path": "/san-francisco/west-of-twin-peaks/west-portal-avenue/75/",
+    "eas_address": "75 WEST PORTAL AVE",
+    "method": "EAS exact match on 85 WEST PORTAL AVE → parcel 2979A019; sf-parcels has blklot 2979A019 active, 75–85 WEST PORTAL; the 2025 roll records it as commercial misc, built 1925. EAS puts 75, 79, 85 WEST PORTAL AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 75.",
+    "checked_on": "2026-09-15"
+   },
+   "publish": {
+    "status": "published",
+    "note": "Published to san-francisco/west-of-twin-peaks/west-portal-avenue/75/."
+   }
+  },
+  {
+   "id": "backfill-2026-01-0016",
+   "date": "2026-01-01",
+   "date_precision": "day",
+   "kind": "development",
+   "address_as_written": "1025 Howard Street",
+   "street_number": "1025",
+   "street_name": "HOWARD",
+   "street_type": "ST",
+   "description": "Formal permits have been filed for a nine-storey, 120-unit apartment building at 1025 Howard Street in SoMa, requiring demolition of the existing 1939 concrete-frame commercial building (found by a Page & Turnbull historic review to have \"no discernible architectural style\"). Developer David O'Keeffe is the property owner, operating through Cogac LLC; Stanton Architecture designed it.",
+   "extra": {
+    "owner": "David O'Keeffe, through Cogac LLC",
+    "architect_of_proposal": "Stanton Architecture",
+    "proposed_units": 120,
+    "affordable_units": 9,
+    "height_ft": 84,
+    "lot_acres": 0.3,
+    "existing_building": "1939 concrete-frame commercial building, no discernible architectural style per Page & Turnbull"
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “Formal Permits For 1025 Howard Street in SoMa, San Francisco,” 1 January 2026",
+    "url": "https://sfyimby.com/2026/01/formal-permits-for-1025-howard-street-in-soma-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3731095",
+    "path": "/san-francisco/south-of-market/howard-street/1025/",
+    "eas_address": "1025 HOWARD ST",
+    "method": "EAS exact match on 1025 HOWARD ST → parcel 3731095; sf-parcels has blklot 3731095 active, 30–30 HARRIET; the 2025 roll records it as commercial office, built 1939.",
+    "checked_on": "2026-09-15"
+   },
+   "publish": {
+    "status": "published",
+    "note": "Published to san-francisco/south-of-market/howard-street/1025/."
+   }
+  },
+  {
+   "id": "backfill-2026-01-0017",
+   "date": "2026-01-01",
+   "date_precision": "day",
+   "kind": "development",
+   "address_as_written": "641-645 48th Avenue",
+   "street_number": "641",
+   "street_name": "48TH",
+   "street_type": "AVE",
+   "description": "Preliminary permits have been filed for Sutro Cove, a 20-unit for-sale apartment enclave (two affordable) that would replace two cliffside homes at 641-645 48th Avenue in Vista Del Mar, Outer Richmond. Stanley Saitowitz Natoma Architects is responsible for the application and design.",
+   "extra": {
+    "architect_of_proposal": "Stanley Saitowitz Natoma Architects",
+    "proposed_units": 20,
+    "affordable_units": 2,
+    "lot_acres": 0.7,
+    "project_name": "Sutro Cove",
+    "address_range_as_recorded": "641-645"
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “Preliminary Permits For Cliffside Apartments in Vista Del Mar, San Francisco,” 1 January 2026",
+    "url": "https://sfyimby.com/2026/01/preliminary-permits-for-cliffside-apartments-in-vista-del-mar-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-15",
+    "method": "the recorded range 641-645 on 48TH AVE spans more than one parcel in sf-eas-addresses today: 1591001 (641), 1591002 (645).",
+    "note": "The numbers the record gives are on different parcels now, so the record cannot be placed on one page without deciding which — which the record does not say."
+   },
+   "publish": {
+    "status": "pending",
+    "note": "Blocked: the resolver will not join the address. 641 and 645 48th Avenue are two separate active parcels today (1591001, 1591002); the same range recurs in the April 2026 formal application for this project (backfill-2026-04-0002), also pending for the same reason."
+   }
+  }
+ ]
+}
