@@ -14,6 +14,7 @@ Merced Heights, the ridge between them, was mostly built after World War II.
 - [Broad Street](broad-street/) — 4 buildings, built 1896–1946.
 - [Capitol Avenue](capitol-avenue/) — 1 building.
 - [De Montfort Avenue](de-montfort-avenue/) — 1 building, built 1939.
+- [Ellington Avenue](ellington-avenue/) — 1 building, built 1917.
 - [Farallones Street](farallones-street/) — 1 building, built 1948.
 - [Faxon Avenue](faxon-avenue/) — 1 building, built 1930.
 - [Granada Avenue](granada-avenue/) — 1 building, built 1989.

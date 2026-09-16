@@ -1,0 +1,88 @@
+{
+  "address": "555 Beale Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/beale-street/555/",
+  "apn": "3771002",
+  "block": "3771",
+  "lot": "002",
+  "eas_baseid": "503897",
+  "coordinates": {
+    "lat": 37.78579,
+    "lng": -122.38876
+  },
+  "parcel": {
+    "lot_area_sqft": 75106,
+    "use": "Commercial Misc",
+    "property_class": "GARAGE",
+    "construction_type_code": "NA",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South Beach",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "property_location_raw": "0000 0555 BEALE               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "last_sale_date": "2004-03-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M1151707",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-10-11",
+      "status_date": "2019-11-01",
+      "revised_cost": 244,
+      "description": "per request from port of san francisco, create address 555 beale street at block 3771, lot 002 for \"navigation center project\"",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BEALE&street_type=ST&address_number=555",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3771002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3771&lot=002",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3771002",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sfyimby-2026-05-19",
+      "name": "San Francisco YIMBY, “Formal Application For Seawall Lot 330, San Francisco,” 19 May 2026",
+      "query": "https://sfyimby.com/2026/05/formal-application-for-seawall-lot-330-san-francisco.html",
+      "retrieved": "2026-09-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2026-05-19",
+      "kind": "development",
+      "headline": "Formal Application For Seawall Lot 330, San Francisco",
+      "outlet": "San Francisco YIMBY",
+      "url": "https://sfyimby.com/2026/05/formal-application-for-seawall-lot-330-san-francisco.html",
+      "source": "sfyimby-2026-05-19"
+    }
+  ]
+}
