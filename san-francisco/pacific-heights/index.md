@@ -11,6 +11,7 @@ An affluent district on the ridge north of Japantown, known for large houses and
 - [Bush Street](bush-street/) — 2 buildings, built 1900–1916.
 - [California Street](california-street/) — 2 buildings, built 1900.
 - [Clay Street](clay-street/) — 1 building, built 1900.
+- [Cottage Row](cottage-row/) — 6 buildings, built 1900; 6 in the Bush Street Cottage Row Historic District.
 - [Divisadero Street](divisadero-street/) — 1 building, built 1905.
 - [Fillmore Street](fillmore-street/) — 2 buildings, built 1900–1913; 1 in the Upper Fillmore Neighborhood Commercial Historic District.
 - [Franklin Street](franklin-street/) — A five-storey 1900 house with an internal theatre floor and a 2025 fire-damage repair.

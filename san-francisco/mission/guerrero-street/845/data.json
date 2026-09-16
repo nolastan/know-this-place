@@ -49,7 +49,7 @@
     "national_register_status": "Not listed",
     "article_10_11_status": "Article 10 historic district",
     "local_landmark_protection": true,
-    "period_of_significance": "1860s–1906",
+    "period_of_significance": "1860s\u20131906",
     "source": "sf-historic-districts"
   },
   "also_in_districts": [
@@ -59,7 +59,7 @@
       "national_register_status": "Listed",
       "article_10_11_status": "No local landmark protection",
       "local_landmark_protection": false,
-      "period_of_significance": "1867–1911",
+      "period_of_significance": "1867\u20131911",
       "source": "sf-historic-districts"
     }
   ],
@@ -138,13 +138,13 @@
     },
     {
       "id": "sf-planning",
-      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "name": "SF Planning Department \u2014 Historic Resource Status by Parcel via DataSF",
       "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3608051",
       "retrieved": "2026-07-31"
     },
     {
       "id": "sf-historic-districts",
-      "name": "SF Planning Department — Historic Districts via DataSF",
+      "name": "SF Planning Department \u2014 Historic Districts via DataSF",
       "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42316041798809%2037.75770858778978)%27)",
       "retrieved": "2026-07-31"
     },
@@ -163,6 +163,13 @@
       "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
       "label": "Victorian Era Styles Historic Context Statement, adopted 2022",
       "retrieved": "2026-08-30"
+    },
+    {
+      "id": "nrhp-83001230",
+      "name": "National Register of Historic Places nomination, Liberty Street Historic District (reference number 83001230), National Park Service.",
+      "query": "https://npgallery.nps.gov/NRHP/GetAsset/NRHP/83001230_text",
+      "label": "National Register of Historic Places nomination, National Park Service",
+      "retrieved": "2026-09-15"
     }
   ],
   "historic_survey": [
@@ -177,5 +184,16 @@
       "style": "Flat-Front Italianate",
       "note": "Illustrated as an example of the flat-front Italianate subtype, whose false front carries no projecting bay. The caption's year is printed as a truncated '187' in the adopted document, so no construction date can be read from it."
     }
-  ]
+  ],
+  "historical_record": [
+    {
+      "date": "1871",
+      "kind": "construction",
+      "description": "House designated San Francisco Landmark No. 136.",
+      "source": "nrhp-83001230"
+    }
+  ],
+  "building": {
+    "completed_conflict": "This address is recorded as built 1871; the assessor's roll gives a later year, a placeholder this dataset uses for many undated older buildings rather than a demolition date."
+  }
 }

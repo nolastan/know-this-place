@@ -6,7 +6,7 @@
 >
 > - **Kind:** PDF reports (federal nomination forms) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — the listings are indexed everywhere; the forms are not. A search for a street number returns the Wikipedia list entry and the NPS map pin, never the paragraph inside the PDF that dates the building and names its architect.
-> - **Coverage:** 96 of 165 San Francisco listings read — every one certified before 1990, plus the Civic Center district the index omits — and the Uptown Tenderloin Historic District nomination (08001407) read in full: the section 7 inventory's 477 rows, structured fields and prose tails both, and section 8, the statement of significance. 637 findings, 581 resolved, 546 published.
+> - **Coverage:** 96 of 165 San Francisco listings read — every one certified before 1990, plus the Civic Center district the index omits — and the Uptown Tenderloin Historic District nomination (08001407) read in full: the section 7 inventory's 477 rows, structured fields and prose tails both, and section 8, the statement of significance. Plus two of the five remaining 1980s district nominations, Bush Street-Cottage Row (82000983) and Liberty Street (83001230), both read in full. 689 findings, 630 resolved, 595 published.
 > - **Local corpus:** `research/corpora/nrhp-nominations/` (one PDF and one `.txt` per reference number, plus `index-san-francisco.json` and `state.json`)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -255,15 +255,24 @@ URL. Worked example:
   ([`uptown-tenderloin-notable-residents.json`](../findings/nrhp-nominations/uptown-tenderloin-notable-residents.json)),
   and whose **section 8, the statement of significance**, is now also read end
   to end, under #346
-  ([`uptown-tenderloin-section8.json`](../findings/nrhp-nominations/uptown-tenderloin-section8.json)).
+  ([`uptown-tenderloin-section8.json`](../findings/nrhp-nominations/uptown-tenderloin-section8.json)),
+  and two of the five remaining 1982-1989 district nominations — **82000983
+  Bush Street-Cottage Row**
+  ([`bush-cottage-row-district.json`](../findings/nrhp-nominations/bush-cottage-row-district.json))
+  and **83001230 Liberty Street**
+  ([`liberty-street-district.json`](../findings/nrhp-nominations/liberty-street-district.json)),
+  both read in full.
 - **Not read, and this is the queue in order:**
-  1. **The five district nominations of 1982-1989** — 82000983 Bush
-     Street-Cottage Row, 83001230 Liberty Street, 87002286 Russian
-     Hill-Macondray Lane, 87002288 Russian Hill-Paris Block, 87002289 Russian
-     Hill-Vallejo Street Crest and 89000319 Southern Pacific Company Hospital.
-     All six PDFs are fetched and extracted. **This is the richest unread
-     material in the source** and it is a different kind of document from the
-     rest — see "A district nomination is a per-property inventory" below.
+  1. **The three remaining district nominations of 1987-1989** — 87002286
+     Russian Hill-Macondray Lane, 87002288 Russian Hill-Paris Block and
+     87002289 Russian Hill-Vallejo Street Crest (by far the largest of the
+     three, roughly 120 inventoried properties against Macondray Lane's ~50 and
+     Paris Block's ~30), plus 89000319 Southern Pacific Company Hospital, a
+     different shape of document (a hospital campus, not a Bloomfield
+     residential inventory). All four PDFs are fetched and extracted
+     (`research/corpora/nrhp-nominations/`, gitignored — re-fetch with `curl`
+     at the stable `GetAsset/NRHP/<refnum>_text` URL if the corpus is gone).
+     **This is still the richest unread material in the source.**
   2. **68 listings certified 1990 or later** — 1990-1999 (17), 2000-2009 (21),
      2010-2015 (15), 2016-2023 (15). The Uptown Tenderloin Historic District
      (08001407, listed 5 February 2009) is out of that count and is now **read
@@ -293,6 +302,50 @@ URL. Worked example:
   reference numbers do **not** serve a PDF at the `_text` path — 100008228 (the
   Timothy L. Pflueger House) returns a 1.6 KB PNG placeholder. Those documents
   need a different route, and finding it is part of that batch.
+
+- **Verified:** 2026-09-15 (seventh run. Read two of the five remaining
+  1982-1989 district nominations in full: 82000983 Bush Street-Cottage Row (20
+  residences, a walkway and a mini-park) and 83001230 Liberty Street (51
+  buildings). 52 findings, 49 resolved, 49 published on 47 pages, 23 of them
+  seeded — every resolved finding carries a named architect, builder,
+  contractor or developer, except one dated event (Susan B. Anthony's 1896
+  suffrage meeting at 159 Liberty Street, a notable past occupant under issue
+  #310). 3 unresolved: 2117 Bush Street is a condominium today; 163 Liberty
+  Street's two recorded numbers sit on different parcels now; 40-46 Liberty
+  Street no longer exists as an address at all (nearest surviving numbers 20,
+  21, 22, 23, 24, 25) and is left for a street-hub fact rather than a page.
+
+  What this run learned, beyond the cautions above:
+
+  - **This source's 1980s Bloomfield districts hit the roll's 1900 placeholder
+    almost every time, and the fix is [LESSONS.md](../LESSONS.md)'s existing
+    one: `building.completed_conflict`, not a reframe.** 33 of the 49 published
+    facts — every one of the 18 Bush-Cottage credits but one, and 17 of
+    Liberty's 31 — sit on a parcel whose `year_property_built` is 1900, 1902,
+    1904 or 1907 against a nomination date of 1863-1913. `check.py --overlap`
+    flags every one of them as "predates the building the assessor says is on
+    the parcel", which is the right question and the wrong answer here: the
+    nomination is describing the standing, still-photographed building in
+    both cases, not a demolished one. Set `building.completed_conflict` and
+    publish; do not decline or reframe the fact as being about a vanished
+    predecessor.
+  - **A per-building appendix is a poor source of unnamed credits and a good
+    one for the named ones — read it for exactly the second.** Both districts
+    are dense with owner-residents (their occupations, their tenancy years,
+    sometimes their descendants), and none of that was taken. Liberty
+    Street's appendix names an architect, builder or contractor on 29 of 51
+    buildings; the other 22 have a construction date and nothing else citable,
+    and were not extracted — a bare date with no credit and no notable
+    occupant is not worth a finding of its own here, since `parcel.year_built`
+    already carries a date (however unreliable) and the nomination's date adds
+    only a disagreement, not a fact `building.completed_conflict` doesn't
+    already carry more economically once one credited finding on the page has
+    stated it.
+  - **Two addresses in the Liberty Street appendix resolve to the same page as
+    a neighbour and are not a resolver error.** 851 Guerrero Street (appendix
+    #14) and 85 Liberty Street (#13) are one parcel, built by the same
+    owner-builder back to back in 1924-1925; both facts belong on the one page
+    at 85 Liberty Street, and the resolver placed them there correctly.
 
 - **Verified:** 2026-09-15 (sixth run, targeted: issue #346, 08001407's section
   8 — the statement of significance — read end to end for the first time, all

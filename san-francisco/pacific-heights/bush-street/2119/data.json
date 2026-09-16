@@ -1,0 +1,132 @@
+{
+  "address": "2119 Bush Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/bush-street/2119/",
+  "apn": "0677030",
+  "block": "0677",
+  "lot": "030",
+  "eas_baseid": "287553",
+  "coordinates": {
+    "lat": 37.786842,
+    "lng": -122.432599
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 4260,
+    "building_area_sqft": 2670,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Lower Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "0000 2119 BUSH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 602345,
+    "assessed_improvement_value": 431577,
+    "last_sale_date": "1988-07-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Bush Street Cottage Row Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1874\u20131882",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "9502207",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-02-15",
+      "status_date": "1995-03-08",
+      "estimated_cost": 1600,
+      "description": "foundation upgrade.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9001129",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-01-19",
+      "status_date": "1991-12-19",
+      "estimated_cost": 30000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1990\u20132013",
+    "shown_on_page": 2,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BUSH&street_type=ST&address_number=2119",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0677030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0677&lot=030",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department \u2014 Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0677030",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department \u2014 Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43259852347799%2037.78684199991823)%27)",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "nrhp-82000983",
+      "name": "National Register of Historic Places nomination, Bush Street-Cottage Row Historic District (reference number 82000983), National Park Service.",
+      "query": "https://npgallery.nps.gov/NRHP/GetAsset/NRHP/82000983_text",
+      "label": "National Register of Historic Places nomination, National Park Service",
+      "retrieved": "2026-09-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1875",
+      "kind": "construction",
+      "description": "House built by the developer The Real Estate Associates, with architectural services provided by Silas P. Ford, superintendent of the company's building department.",
+      "source": "nrhp-82000983"
+    }
+  ],
+  "building": {
+    "architect": "Silas P. Ford",
+    "completed_conflict": "This address is recorded as built 1875; the assessor's roll gives a later year, a placeholder this dataset uses for many undated older buildings rather than a demolition date."
+  }
+}

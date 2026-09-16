@@ -49,7 +49,7 @@
     "national_register_status": "Not listed",
     "article_10_11_status": "Article 10 historic district",
     "local_landmark_protection": true,
-    "period_of_significance": "1860s–1906",
+    "period_of_significance": "1860s\u20131906",
     "source": "sf-historic-districts"
   },
   "also_in_districts": [
@@ -59,7 +59,7 @@
       "national_register_status": "Listed",
       "article_10_11_status": "No local landmark protection",
       "local_landmark_protection": false,
-      "period_of_significance": "1867–1911",
+      "period_of_significance": "1867\u20131911",
       "source": "sf-historic-districts"
     }
   ],
@@ -161,15 +161,31 @@
     },
     {
       "id": "sf-planning",
-      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "name": "SF Planning Department \u2014 Historic Resource Status by Parcel via DataSF",
       "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3607036",
       "retrieved": "2026-07-31"
     },
     {
       "id": "sf-historic-districts",
-      "name": "SF Planning Department — Historic Districts via DataSF",
+      "name": "SF Planning Department \u2014 Historic Districts via DataSF",
       "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42461484472295%2037.75725004754663)%27)",
       "retrieved": "2026-07-31"
+    },
+    {
+      "id": "nrhp-83001230",
+      "name": "National Register of Historic Places nomination, Liberty Street Historic District (reference number 83001230), National Park Service.",
+      "query": "https://npgallery.nps.gov/NRHP/GetAsset/NRHP/83001230_text",
+      "label": "National Register of Historic Places nomination, National Park Service",
+      "retrieved": "2026-09-15"
     }
-  ]
+  ],
+  "historical_record": [
+    {
+      "date": "1896-03-27",
+      "kind": "site history",
+      "description": "Susan B. Anthony held a women's-suffrage organizing meeting at the house on the evening of 27 March 1896, hosted by Mrs. Murphy, wife of the attorney and later Superior Court judge Daniel J. Murphy.",
+      "source": "nrhp-83001230"
+    }
+  ],
+  "building": {}
 }
