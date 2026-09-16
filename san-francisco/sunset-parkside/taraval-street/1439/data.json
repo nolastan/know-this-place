@@ -1,0 +1,157 @@
+{
+  "address": "1439 Taraval Street, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/taraval-street/1439/",
+  "apn": "2401038",
+  "block": "2401",
+  "lot": "038",
+  "eas_baseid": "337571",
+  "coordinates": {
+    "lat": 37.742536,
+    "lng": -122.48174
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2246,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "NC-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1439 TARAVAL             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 90576,
+    "assessed_improvement_value": 185437
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202510278223",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-10-27",
+      "status_date": "2026-01-28",
+      "estimated_cost": 700,
+      "revised_cost": 700,
+      "description": "to correct nov: 202308978. install 1x4 cedar siding to front facade street visible front of building. no plans needed per ces m. hernandez",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201807195001",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-07-19",
+      "status_date": "2019-05-13",
+      "estimated_cost": 23800,
+      "revised_cost": 28000,
+      "description": "no change to existing restaurant ada counter tenant improvement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200609263400",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-09-26",
+      "status_date": "2009-06-24",
+      "estimated_cost": 2200,
+      "revised_cost": 2200,
+      "description": "install fire suppression system pcl-460 to protect hood, duct, plenum and cooling equipment under the hood.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200609152492",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2006-09-15",
+      "status_date": "2006-09-15",
+      "estimated_cost": 1,
+      "description": "no work done under this permit, change of use only to add entertainment to full bar with or without meal service.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200307038731",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-07-03",
+      "status_date": "2010-12-30",
+      "estimated_cost": 6400,
+      "revised_cost": 6400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9213633",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1992-08-14",
+      "status_date": "1993-08-13",
+      "estimated_cost": 1600,
+      "description": "awning fabrics over frame",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "1992–2025",
+    "shown_on_page": 6,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TARAVAL&street_type=ST&address_number=1439",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2401038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2401&lot=038",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2401038",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "id": "blackbird",
+      "name": "Blackbird, restaurant rewards app",
+      "supports": "Current occupant",
+      "query": "https://www.blackbird.xyz/",
+      "retrieved": "2026-09-16"
+    }
+  ],
+  "occupants": [
+    {
+      "name": "Lost and Found Cocktail Bar",
+      "cuisines": [
+        "Cocktail Bar"
+      ],
+      "source": "blackbird"
+    }
+  ]
+}

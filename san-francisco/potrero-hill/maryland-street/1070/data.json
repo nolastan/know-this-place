@@ -1,0 +1,116 @@
+{
+  "address": "1070 Maryland Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/maryland-street/1070/",
+  "apn": "4114010",
+  "block": "4114",
+  "lot": "010",
+  "eas_baseid": "505274",
+  "coordinates": {
+    "lat": 37.758752,
+    "lng": -122.383849
+  },
+  "parcel": {
+    "lot_area_sqft": 64311,
+    "use": "Government",
+    "property_class": "Possessory Interest",
+    "construction_type_code": "NA",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Central Waterfront/Dogpatch",
+    "analysis_neighborhood": "Potrero Hill",
+    "property_location_raw": "0000 1070 MARYLAND            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 19488773,
+    "assessed_improvement_value": 56063873
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1941",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Union Iron Works Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1884–1945",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202503031422",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2025-03-03",
+      "status_date": "2025-03-03",
+      "estimated_cost": 10000,
+      "revised_cost": 6211,
+      "description": "fire sprinkler relocation and sprinklr to cold room - restroom pier 70 building one unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1230687",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-04-25",
+      "status_date": "2023-05-08",
+      "revised_cost": 244,
+      "description": "per office of economic and workforce development requested, add address 1070 maryland st to apn 4110-010 at pier 70 building 12.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARYLAND&street_type=ST&address_number=1070",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4114010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4114&lot=010",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4114010",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.38384876239193%2037.758751680279076)%27)",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "id": "blackbird",
+      "name": "Blackbird, restaurant rewards app",
+      "supports": "Current occupant",
+      "query": "https://www.blackbird.xyz/",
+      "retrieved": "2026-09-16"
+    }
+  ],
+  "occupants": [
+    {
+      "name": "Standard Deviant Brewing",
+      "cuisines": [
+        "Brewery"
+      ],
+      "source": "blackbird"
+    }
+  ]
+}
