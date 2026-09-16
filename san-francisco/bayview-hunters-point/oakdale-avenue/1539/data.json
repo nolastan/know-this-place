@@ -1,0 +1,89 @@
+{
+  "address": "1539 Oakdale Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/oakdale-avenue/1539/",
+  "apn": "5323020A",
+  "block": "5323",
+  "lot": "020A",
+  "eas_baseid": "375577",
+  "coordinates": {
+    "lat": 37.733768,
+    "lng": -122.389415
+  },
+  "parcel": {
+    "lot_area_sqft": 2500,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Residential",
+    "construction_type_code": "NA",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1539 OAKDALE             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 448392
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9411511S",
+      "type": "new construction wood frame",
+      "status": "withdrawn",
+      "filed": "1994-07-20",
+      "status_date": "1997-08-18",
+      "estimated_cost": 100000,
+      "description": "erect a two story single family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=OAKDALE&street_type=AVE&address_number=1539",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5323020A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5323&lot=020A",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5323020A",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sfyimby-2026-06-04",
+      "name": "San Francisco YIMBY, “Preliminary Permits Filed For 1539 Oakdale Avenue, San Francisco,” 4 June 2026",
+      "query": "https://sfyimby.com/2026/06/preliminary-permits-filed-for-1539-oakdale-avenue-san-francisco.html",
+      "retrieved": "2026-09-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2026-06-04",
+      "kind": "development",
+      "headline": "Preliminary Permits Filed For 1539 Oakdale Avenue, San Francisco",
+      "outlet": "San Francisco YIMBY",
+      "url": "https://sfyimby.com/2026/06/preliminary-permits-filed-for-1539-oakdale-avenue-san-francisco.html",
+      "source": "sfyimby-2026-06-04"
+    }
+  ]
+}
