@@ -8,6 +8,7 @@ A working-class residential district in the city's south-east, laid out in the e
 - [Athens Street](athens-street/) — 1 building, built 1925.
 - [Geneva Avenue](geneva-avenue/) — 1 building, built 1922.
 - [La Grande Avenue](la-grande-avenue/) — 1 building, built 1957.
+- [Lisbon Street](lisbon-street/) — 1 building, built 1906.
 - [Mission Street](mission-street/) — 1 building, built 1982.
 - [Moscow Street](moscow-street/) — 1 building.
 - [Ney Street](ney-street/) — 2 buildings, built 1900–1965.
