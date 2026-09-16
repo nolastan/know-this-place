@@ -1,0 +1,120 @@
+{
+  "address": "1844 Church Street, San Francisco, CA 94131",
+  "path": "/san-francisco/noe-valley/church-street/1844/",
+  "apn": "6655012",
+  "block": "6655",
+  "lot": "012",
+  "eas_baseid": "404725",
+  "coordinates": {
+    "lat": 37.74098,
+    "lng": -122.427044
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 3125,
+    "building_area_sqft": 875,
+    "lot_depth_ft": 25,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Glen Park",
+    "analysis_neighborhood": "Glen Park",
+    "property_location_raw": "0000 1844 CHURCH              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 725369,
+    "assessed_improvement_value": 310867,
+    "last_sale_date": "2011-11-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201309187172",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2013-09-18",
+      "status_date": "2020-03-05",
+      "estimated_cost": 500000,
+      "revised_cost": 500000,
+      "description": "vertical & horizontal addition to single family house. excavate garage level for adequate ceiling height, new foundations, new internal stair, new kitchen & bathrooms.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200003214987",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-03-21",
+      "status_date": "2000-04-25",
+      "revised_cost": 10000,
+      "description": "remove & install new cabinets, appliances in existing kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9917366",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-08-20",
+      "status_date": "2000-06-19",
+      "estimated_cost": 5900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CHURCH&street_type=ST&address_number=1844",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6655012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6655&lot=012",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6655012",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sfyimby-2026-04-25",
+      "name": "San Francisco YIMBY, “Updated Plans For 1844 Church Street in Fairmount Heights, San Francisco,” 25 April 2026",
+      "query": "https://sfyimby.com/2026/04/updated-plans-for-1844-church-street-in-fairmount-heights-san-francisco.html",
+      "retrieved": "2026-09-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2026-04-25",
+      "kind": "development",
+      "headline": "Updated Plans For 1844 Church Street in Fairmount Heights, San Francisco",
+      "outlet": "San Francisco YIMBY",
+      "url": "https://sfyimby.com/2026/04/updated-plans-for-1844-church-street-in-fairmount-heights-san-francisco.html",
+      "source": "sfyimby-2026-04-25"
+    }
+  ]
+}

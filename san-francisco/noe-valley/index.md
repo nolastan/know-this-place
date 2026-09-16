@@ -22,6 +22,7 @@ that study area, as an example of the Second Bay Tradition.
 - [Cesar Chavez Street](cesar-chavez-street/) — 1 building, built 1966.
 - [Church Street](church-street/) — 1 building, built 1914.
 - [Clipper Street](clipper-street/) — 3 buildings, built 1883–1916.
+- [Day Street](day-street/) — 1 building, built 1938.
 - [Douglass Street](douglass-street/) — 1 building, built 1900.
 - [Duncan Street](duncan-street/) — 1 building, built 1908.
 - [Hill Street](hill-street/) — 1 building, built 1965.
