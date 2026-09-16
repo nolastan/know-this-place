@@ -6,7 +6,7 @@
 >
 > - **Kind:** PDF reports (federal nomination forms) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — the listings are indexed everywhere; the forms are not. A search for a street number returns the Wikipedia list entry and the NPS map pin, never the paragraph inside the PDF that dates the building and names its architect.
-> - **Coverage:** 96 of 165 San Francisco listings read — every one certified before 1990, plus the Civic Center district the index omits — and the Uptown Tenderloin Historic District nomination (08001407) read in full: the section 7 inventory's 477 rows, structured fields and prose tails both, and section 8, the statement of significance. Plus two of the five remaining 1980s district nominations, Bush Street-Cottage Row (82000983) and Liberty Street (83001230), both read in full. 689 findings, 630 resolved, 595 published.
+> - **Coverage:** 96 of 165 San Francisco listings read — every one certified before 1990, plus the Civic Center district the index omits — and the Uptown Tenderloin Historic District nomination (08001407) read in full: the section 7 inventory's 477 rows, structured fields and prose tails both, and section 8, the statement of significance. Plus four of the five 1980s district nominations Anne Bloomfield wrote — Bush Street-Cottage Row (82000983), Liberty Street (83001230), and the three Russian Hill districts of 1987 (87002286 Macondray Lane, 87002288 Paris Block, 87002289 Vallejo Street Crest) — all read in full. 824 findings, 737 resolved, 697 published.
 > - **Local corpus:** `research/corpora/nrhp-nominations/` (one PDF and one `.txt` per reference number, plus `index-san-francisco.json` and `state.json`)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -212,7 +212,8 @@ Uptown Tenderloin's eleven person-naming rows are the worked case:
 | a **use of the building** | a `historical_record` entry on the one timeline, like any other dated fact | Jessie Hayman's and Tessie Wall's brothels |
 | a dated event at the building | the same | John Galen Howard's death at 227-231 Ellis Street, July 1931 |
 | a plaque the building carries | the same, dated by what the plaque records | the Isadora Duncan plaque at 501-525 Taylor Street |
-| the building's **own owner**, in any era | nothing — owners are out whatever their date | "A.A. Louderback lived in a house on this site until 1906" |
+| an owner who is **independently notable**, or whom the building is named for | `notable_residents` if they lived there with a period, otherwise the timeline entry the ownership belongs to | Louis Feusier, 1875–1914, 1067 Green Street; Paul Verdier's 1919 purchase of 1001 Vallejo Street, the Verdier Mansion |
+| an **ordinary** owner — first owner, client, landlord — in any era | nothing — owners are out whatever their date | "A.A. Louderback lived in a house on this site until 1906" |
 
 Two things this case taught that generalise. **Count the people, not the
 sentences**: the run that read the inventory reported "twelve rows" naming a
@@ -261,25 +262,30 @@ URL. Worked example:
   ([`bush-cottage-row-district.json`](../findings/nrhp-nominations/bush-cottage-row-district.json))
   and **83001230 Liberty Street**
   ([`liberty-street-district.json`](../findings/nrhp-nominations/liberty-street-district.json)),
-  both read in full.
+  both read in full, and the **three Russian Hill district nominations of May
+  1987**, all read in full — **87002286 Macondray Lane**
+  ([`russian-hill-macondray-lane-district.json`](../findings/nrhp-nominations/russian-hill-macondray-lane-district.json)),
+  **87002288 Paris Block**
+  ([`russian-hill-paris-block-district.json`](../findings/nrhp-nominations/russian-hill-paris-block-district.json))
+  and **87002289 Vallejo Street Crest**
+  ([`russian-hill-vallejo-street-crest-district.json`](../findings/nrhp-nominations/russian-hill-vallejo-street-crest-district.json)).
 - **Not read, and this is the queue in order:**
-  1. **The three remaining district nominations of 1987-1989** — 87002286
-     Russian Hill-Macondray Lane, 87002288 Russian Hill-Paris Block and
-     87002289 Russian Hill-Vallejo Street Crest (by far the largest of the
-     three, roughly 120 inventoried properties against Macondray Lane's ~50 and
-     Paris Block's ~30), plus 89000319 Southern Pacific Company Hospital, a
-     different shape of document (a hospital campus, not a Bloomfield
-     residential inventory). All four PDFs are fetched and extracted
-     (`research/corpora/nrhp-nominations/`, gitignored — re-fetch with `curl`
-     at the stable `GetAsset/NRHP/<refnum>_text` URL if the corpus is gone).
-     **This is still the richest unread material in the source.**
+  1. **89000319 Southern Pacific Company Hospital Historic District** (1400
+     Fell Street, 16 pages), the last unread district nomination of the
+     1980s and a different shape of document — a hospital campus, not a
+     Bloomfield residential inventory, so it is a handful of findings on
+     however many parcels the campus is today, not a batch of fifty. Fetched
+     and extracted (`research/corpora/nrhp-nominations/`, gitignored — re-fetch
+     with `curl` at the stable `GetAsset/NRHP/<refnum>_text` URL if the corpus
+     is gone).
   2. **68 listings certified 1990 or later** — 1990-1999 (17), 2000-2009 (21),
      2010-2015 (15), 2016-2023 (15). The Uptown Tenderloin Historic District
      (08001407, listed 5 February 2009) is out of that count and is now **read
      in full** under #304 — all 477 inventory rows, in
      [`uptown-tenderloin-district.json`](../findings/nrhp-nominations/uptown-tenderloin-district.json).
-     With it read, the five district nominations of 1982-1989 are again the
-     richest unread material here.
+     With the Russian Hill districts read, these are the richest unread
+     material here, and they are single-building nominations again — era
+     batches, per the first run.
   3. **77000334** (Mills Building and Tower) and **01000281** (Maritime
      National Historic Site, Fort Mason), whose PDFs have no text layer, and
      **100008228**, whose `_text` path serves a PNG placeholder.
@@ -302,6 +308,71 @@ URL. Worked example:
   reference numbers do **not** serve a PDF at the `_text` path — 100008228 (the
   Timothy L. Pflueger House) returns a 1.6 KB PNG placeholder. Those documents
   need a different route, and finding it is part of that batch.
+
+- **Verified:** 2026-09-16 (eighth run. Read the three Russian Hill district
+  nominations Anne Bloomfield wrote for the Russian Hill Neighbors in May 1987,
+  all in full: 87002286 Macondray Lane (20 pages, 19 resources), 87002288 Paris
+  Block (15 pages, 12 resources) and 87002289 Vallejo Street Crest (41 pages, 46
+  resources). **135 findings, 107 resolved, 102 published on 54 pages, 37 of
+  them seeded; 5 declined, 28 unresolved.** Per document: Macondray Lane 28
+  found, 17 resolved, 17 published on 11 pages; Paris Block 18, 16, 15 on 9;
+  Vallejo Street Crest 89, 74, 70 on 34. 24 findings are a notable past
+  resident or a notable owner's tenure, and 77 carry a named architect,
+  builder, contractor, developer, engineer or mason. Two historic-district hubs were generated for the first time,
+  Macondray Lane and Paris Block, once each had five documented buildings.
+
+  What this run learned, beyond the cautions above:
+
+  - **These nominations are older than the condominium conversions of their
+    buildings, and the conversions cost more than OCR did.** Every printed
+    block and lot was right — 92 exact matches and 15 re-lottings, none on
+    another block — but the city has since split two-unit flats into a parcel
+    per flat: 1918-1920 Jones Street in 1996, 58-66 Macondray Lane in 1999,
+    1017-1019 Green Street, 19 Macondray Lane in 2009 and 72 Macondray Lane in
+    2013 — and 900 Green Street (1989), 1050 Green Street, 1 Florence Street
+    and the Hermitage at 1020 Vallejo Street are condominiums outright.
+    `sf-parcels`' `date_rec_add` dates each split. They are 14 of the 28
+    unresolved findings, and they took two notable residents with them:
+    Charles Caldwell Dobie at 1918-1920 Jones and Maynard Dixon and Dorothea
+    Lange's first cottage at 1 Florence Street. Those wait on #228.
+  - **Section 7 and section 8 number the buildings differently.** In the
+    Macondray Lane nomination they agree to no. 12 and then section 8 runs
+    one ahead (Ryer's Apartments is no. 14 in section 7 and no. 15 in section
+    8); the owners table follows section 7. Vallejo Street Crest's section 8
+    prints "5 Russian Hill Place" for no. 23, which section 7 and the owners
+    table give as 7. Key every row on its address and printed lot, never on
+    its map number.
+  - **Vallejo Street Crest's section 8 is a history, not an inventory
+    appendix**, and most of its value is there: the Livermore family's
+    building programme of 1912-1917, Worcester's 1888 cottages and the
+    contract notice that attributes them, and seventeen named artists, writers
+    and patrons, most placed at a number with a period. It contradicts itself
+    once: Joseph Worcester's cottage is "site of No. 36" (1019 Vallejo) on
+    page 15 and in the chronology, and 1030 Vallejo on the site of no. 37 on
+    page 27. It was placed on neither.
+  - **An environmental review document had already summarised this district**
+    on eleven of its pages (`sf-environmental-review-noticeofavailabi2920sanf`),
+    with looser dates — Farr's two houses "1906", Julia Morgan's cottage "after
+    1906". Where that entry already carried the building, this run added the
+    credit as a `building` spec row and the precise year as
+    `building.completed` or a dated contract entry, not a second construction
+    entry.
+  - **Three credited names are printed wrong and published right**, each
+    identified inside the document itself: "Oscar Kaupt" (spelled Haupt in
+    the same entry, with his Altenheim credit), "L.B. Button Company" (the
+    biography given is Llewellyn B. Dutton's) and "Bruce E. Reiser" (Heiser in
+    the chronology). The printed form is kept in `extra.name_as_printed`.
+  - **Owners who are the notable figure are taken** — Charles M. Fickert,
+    Louis Feusier, Luigi DeMartini, Paul Verdier, Isabel Stine — and ordinary
+    owners and clients are not. See the People table above and
+    [LESSONS.md](../LESSONS.md).
+  - **Green Street is the Russian Hill / Nob Hill line on these blocks**, and
+    the resolver's nearest-page rule filed 1809 Taylor Street and 1025 Green
+    Street across it; both were corrected by hand to the parcel's analysis
+    neighborhood before seeding.
+  - Where this run stopped: the Southern Pacific Company Hospital (89000319)
+    is the only 1980s district nomination left, and is first in the queue
+    above.)
 
 - **Verified:** 2026-09-15 (seventh run. Read two of the five remaining
   1982-1989 district nominations in full: 82000983 Bush Street-Cottage Row (20

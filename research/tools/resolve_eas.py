@@ -1823,6 +1823,35 @@ def main() -> int:
                       "source most are a lost digit, and the rest are the record's own error.")
             print()
 
+        # A resolution onto one of the unit parcels its own method calls a
+        # condominium. The main address joins to a single active parcel, so
+        # nothing declines it, while a sibling EAS row (a "19 A" beside "19")
+        # lands on the same point as that parcel and a twin: 19 Macondray Lane
+        # resolved to 0120076, one of two unit parcels the city split lot
+        # 120/28 into in 2009. Raised, never decided. Measured over every
+        # findings file before it was wired in: 4 resolved entries match, and
+        # one of them (801 Market Street, on airspace parcels 3705Z001-Z004) is a
+        # building the site does want a page for, so this is a question for the
+        # reader, not a rule.
+        stacked = []
+        for f in data["findings"]:
+            r = decisions[f["id"]]
+            if r["status"] != "resolved":
+                continue
+            for g in re.finditer(r"coordinates fall in \d+ active parcels \(([^)]*)\), "
+                                 r"which is what a condominium", r.get("method") or ""):
+                listed = [s.strip().rstrip("…") for s in g.group(1).split(",")]
+                if r.get("apn") in listed:
+                    stacked.append((f["id"], f["address_as_written"][:34], r["apn"], g.group(1)))
+                    break
+        if stacked:
+            print(f"Resolved onto a parcel its own method calls a condominium unit: {len(stacked)}")
+            for fid, addr, apn, listed in stacked:
+                print(f"  {fid}  {addr:<36} → {apn}, one of {listed}")
+            print("  Read each: a unit parcel is not the building (#228) unless the parcels are "
+                  "airspace lots of one building. Mark a unit `unresolved` with `by_hand`.")
+            print()
+
         # A resolution the point made, on a parcel that says it does not carry
         # the number. Raised, never decided — but ranked by the thing that
         # actually settles it, which is not the stated range.

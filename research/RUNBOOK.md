@@ -210,6 +210,12 @@ those makes the scan print re-lottings and block crossings that are artefacts.
 Noise here is worse than silence, because the scan exists so a real lost digit
 stands out.
 
+It then lists **every resolution that landed on a parcel its own method calls a
+condominium unit** — an address that joins to one active parcel while a sibling
+row ("19 A" beside "19") shares that parcel's point with a twin. Nothing
+declines these, because airspace lots of one building look the same; read each
+and mark a unit parcel `unresolved` with `by_hand`.
+
 **`extra.record_date` is the year the *record* was written, and it turns off the
 renumbering guard.** The guard refuses a pre-1910 date resolved on the EAS join
 alone, which is right for a source writing an address down while the old

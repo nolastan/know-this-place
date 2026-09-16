@@ -1,0 +1,109 @@
+{
+  "address": "6 Russian Hill Place, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/russian-hill-place/6/",
+  "apn": "0127008E",
+  "block": "0127",
+  "lot": "008E",
+  "eas_baseid": "278196",
+  "coordinates": {
+    "lat": 37.798181,
+    "lng": -122.414995
+  },
+  "parcel": {
+    "year_built": 1936,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2900,
+    "building_area_sqft": 2991,
+    "lot_depth_ft": 72.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Russian Hill",
+    "analysis_neighborhood": "Nob Hill",
+    "property_location_raw": "0000 0006 RUSSIAN HILL        PL0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1324659,
+    "assessed_improvement_value": 737753,
+    "last_sale_date": "1989-07-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1936",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Russian Hill-Vallejo Street Crest Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1888–1941",
+    "source": "sf-historic-districts"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=RUSSIAN%20HILL&street_type=PL&address_number=6",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0127008E&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127&lot=008E",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0127008E",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41499545592437%2037.79818135130547)%27)",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "id": "nrhp-87002289",
+      "name": "National Register of Historic Places nomination, Russian Hill-Vallejo Street Crest District (reference number 87002289), National Park Service.",
+      "query": "https://npgallery.nps.gov/NRHP/GetAsset/NRHP/87002289_text",
+      "label": "National Register of Historic Places nomination, National Park Service",
+      "retrieved": "2026-09-16"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1936",
+      "kind": "construction",
+      "description": "Stuccoed, shake-roofed house in the Second Bay Area Tradition, designed by Farr & Ward.",
+      "source": "nrhp-87002289"
+    }
+  ],
+  "building": {
+    "architect": "Farr & Ward",
+    "sources": [
+      "nrhp-87002289"
+    ]
+  }
+}
