@@ -1,0 +1,106 @@
+{
+  "address": "3230 24th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/24th-street/3230/",
+  "apn": "3642096",
+  "block": "3642",
+  "lot": "096",
+  "eas_baseid": "472960",
+  "coordinates": {
+    "lat": 37.752436,
+    "lng": -122.416879
+  },
+  "parcel": {
+    "lot_area_sqft": 4468,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot",
+    "construction_type_code": "NA",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "3236 3230 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 946118
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201910094067",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-10-09",
+      "status_date": "2019-10-17",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "installation of cyclone fence",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201708154803",
+      "type": "new construction wood frame",
+      "status": "cancelled",
+      "filed": "2017-08-15",
+      "status_date": "2026-06-09",
+      "estimated_cost": 3000000,
+      "revised_cost": 4500000,
+      "description": "to erect 5 stories, no basement, type va over type ia, 17 units residential over commercial building.(r-2,m,b) lot #011a & 015",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2007–2019",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=3230",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3642096&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3642&lot=096",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3642096",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sfyimby-2026-06-30",
+      "name": "San Francisco YIMBY, “Reduced Plans Filed For 3230 24th Street, Mission District, San Francisco,” 30 June 2026",
+      "query": "https://sfyimby.com/2026/06/reduced-plans-filed-for-3230-24th-street-mission-district-san-francisco.html",
+      "retrieved": "2026-09-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2026-06-30",
+      "kind": "development",
+      "headline": "Reduced Plans Filed For 3230 24th Street, Mission District, San Francisco",
+      "outlet": "San Francisco YIMBY",
+      "url": "https://sfyimby.com/2026/06/reduced-plans-filed-for-3230-24th-street-mission-district-san-francisco.html",
+      "source": "sfyimby-2026-06-30"
+    }
+  ]
+}
