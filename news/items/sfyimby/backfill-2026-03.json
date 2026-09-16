@@ -1,0 +1,747 @@
+{
+ "source_id": "sfyimby",
+ "batch": "backfill-2026-03",
+ "read_on": "2026-09-15",
+ "notes": "Backfill window 2026-03-01..2026-03-31, per issue #337's suggested order (sfyimby, month by month), continuing from #360 (June), #361 (May) and #362 (April).",
+ "coverage": {
+  "unit": "articles",
+  "examined": 21,
+  "mentions": 21,
+  "remaining": "sfyimby's paged archive back of 2026-03-01, unwalked."
+ },
+ "findings": [
+  {
+   "id": "backfill-2026-03-0001",
+   "date": "2026-03-31",
+   "date_precision": "day",
+   "kind": "construction",
+   "address_as_written": "819-831 Alabama Street",
+   "street_number": "819",
+   "street_name": "ALABAMA",
+   "street_type": "ST",
+   "description": "Plans have been approved and new building permits submitted for three four-storey infill buildings with nine apartments total on a vacant lot at 819-831 Alabama Street in the Mission, each with two primary units above an accessory dwelling unit. Bana Construction Inc. is the project sponsor; S&P Structural Engineers designed it.",
+   "extra": {
+    "sponsor": "Bana Construction Inc.",
+    "architect_of_proposal": "S&P Structural Engineers",
+    "proposed_units": 9,
+    "proposed_stories": 4,
+    "address_range_as_recorded": "819-831"
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “New Building Permits For 819-831 Alabama Street in the Mission District, San Francisco,” 31 March 2026",
+    "url": "https://sfyimby.com/2026/03/new-building-permits-for-819-831-alabama-street-in-the-mission-district-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-15",
+    "method": "the recorded range 819-831 on ALABAMA ST spans more than one parcel in sf-eas-addresses today: 4085031 (831), 4085032 (825), 4085032A (819).",
+    "note": "The numbers the record gives are on different parcels now, so the record cannot be placed on one page without deciding which — which the record does not say."
+   },
+   "publish": {
+    "status": "pending",
+    "note": "Blocked: the resolver will not join the address. 819, 825 and 831 Alabama Street are three separate active parcels today; the article's project spans all three but they have not been merged in sf-parcels, and the record does not say which one the fact belongs on."
+   }
+  },
+  {
+   "id": "backfill-2026-03-0002",
+   "date": "2026-03-28",
+   "date_precision": "day",
+   "kind": "development",
+   "address_as_written": "5420 Geary Boulevard",
+   "street_number": "5420",
+   "street_name": "GEARY",
+   "street_type": "BLVD",
+   "description": "Preliminary plans have been filed for an eight-storey, 42-unit apartment building over ground-floor retail at 5420 Geary Boulevard in the Richmond District, next door to the vacant Alexandria Theater that developer Timespace Group is separately redeveloping. Kerman Morris Architects is responsible for the application, for owner Kieran Woods Construction.",
+   "extra": {
+    "architect_of_proposal": "Kerman Morris Architects",
+    "owner": "Kieran Woods Construction",
+    "proposed_units": 42,
+    "proposed_stories": 8,
+    "lot_acres": 0.16
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “Permits Filed For 5420 Geary Boulevard in Richmond District, San Francisco,” 28 March 2026",
+    "url": "https://sfyimby.com/2026/03/permits-filed-for-5420-geary-boulevard-in-richmond-district-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "1450019A",
+    "path": "/san-francisco/inner-richmond/geary-boulevard/5420/",
+    "eas_address": "5420 GEARY BLVD",
+    "method": "EAS exact match on 5420 GEARY BLVD → parcel 1450019A; sf-parcels has blklot 1450019A active, 5420–5424 GEARY; the 2025 roll records it as commercial retail, built 1923. EAS puts 5420, 5424 GEARY BLVD on that parcel, so per the directory contract the fact belongs on one page at the lowest, 5420.",
+    "checked_on": "2026-09-15",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "note": "No page existed; seeded from research/manifests/backfill-2026-03.json, apn 1450019A. Published to san-francisco/inner-richmond/geary-boulevard/5420/."
+   }
+  },
+  {
+   "id": "backfill-2026-03-0003",
+   "date": "2026-03-27",
+   "date_precision": "day",
+   "kind": "development",
+   "address_as_written": "51 Brompton Avenue",
+   "street_number": "51",
+   "street_name": "BROMPTON",
+   "street_type": "AVE",
+   "description": "An initial feasibility study, ahead of any formal application, has been published for a four-storey, eight-unit townhouse-style infill (with up to four more ground-level ADUs under review) on the vacant lot at 51 Brompton Avenue in Glen Park, using Senate Bill 684. Studio KDA drafted the study for the owner, filing through Hayes-Diamond Properties LLC.",
+   "extra": {
+    "architect_of_proposal": "Studio KDA",
+    "filing_entity": "Hayes-Diamond Properties LLC",
+    "proposed_units": 8,
+    "proposed_stories": 4,
+    "lot_acres": 0.15
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “Plans Surface For 51 Brompton Avenue in Glen Park, San Francisco,” 27 March 2026",
+    "url": "https://sfyimby.com/2026/03/plans-surface-for-51-brompton-avenue-in-glen-park-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-15",
+    "method": "No record in sf-eas-addresses for 51 BROMPTON AVE.",
+    "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 31, 40. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+   },
+   "publish": {
+    "status": "pending",
+    "note": "Blocked: there is no such address today. EAS has no record of 51 Brompton Avenue -- the street jumps from 40/31 to 121 -- consistent with the article's own framing of an initial feasibility study for a still-vacant, unaddressed site. Worth retrying once the project is formally filed and assigned a number."
+   }
+  },
+  {
+   "id": "backfill-2026-03-0004",
+   "date": "2026-03-26",
+   "date_precision": "day",
+   "kind": "development",
+   "address_as_written": "2317-2335 Market Street",
+   "street_number": "2317",
+   "street_name": "MARKET",
+   "street_type": "ST",
+   "description": "Plans, not yet formally filed, have been revealed to add a seven-storey, 24-unit rear addition (two affordable) behind five attached two-storey shophouses at 2317-2335 Market Street in the Castro, replacing the 2335 Market Street retail space with an entrance hallway; the property last sold in 2020 for $5.8 million. Golden Pacific Properties LLC is the owner; Kerman Morris Architects designed it.",
+   "extra": {
+    "owner": "Golden Pacific Properties LLC",
+    "architect_of_proposal": "Kerman Morris Architects",
+    "proposed_units": 24,
+    "affordable_units": 2,
+    "height_ft": 84,
+    "lot_acres": 0.32,
+    "last_sold": "2020, $5.8 million"
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “Plans Revealed For 2317-2335 Market Street in The Castro, San Francisco,” 26 March 2026",
+    "url": "https://sfyimby.com/2026/03/plans-revealed-for-2317-2335-market-street-in-the-castro-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3563030",
+    "path": "/san-francisco/castro/market-street/2317/",
+    "eas_address": "2317 MARKET ST",
+    "method": "EAS exact match on 2317 MARKET ST → parcel 3563030; sf-parcels has blklot 3563030 active, 2317–2335 MARKET; the 2025 roll records it as multi-family residential, built 1910. EAS puts 2317, 2319, 2321, 2323, 2325, 2327, 2329, 2331, 2333, 2335 MARKET ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2317.",
+    "checked_on": "2026-09-15"
+   },
+   "publish": {
+    "status": "published",
+    "note": "Published to san-francisco/castro/market-street/2317/."
+   }
+  },
+  {
+   "id": "backfill-2026-03-0005",
+   "date": "2026-03-25",
+   "date_precision": "day",
+   "kind": "development",
+   "address_as_written": "1335-1365 Columbus Avenue",
+   "street_number": "1335",
+   "street_name": "COLUMBUS",
+   "street_type": "AVE",
+   "description": "Formal permits have been filed to convert two commercial buildings at 1335-1365 Columbus Avenue near Fisherman's Wharf into four apartments over two retail shops, leaving the exterior mostly unchanged. Maven Commercial filed the application for owner Maven Properties.",
+   "extra": {
+    "applicant": "Maven Commercial",
+    "owner": "Maven Properties",
+    "proposed_units": 4,
+    "total_sqft": 9090,
+    "address_range_as_recorded": "1335-1365"
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “Permits For 1335-1365 Columbus Avenue, San Francisco,” 25 March 2026",
+    "url": "https://sfyimby.com/2026/03/permits-for-1335-1365-columbus-avenue-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-15",
+    "method": "the recorded range 1335-1365 on COLUMBUS AVE spans more than one parcel in sf-eas-addresses today: 0024015 (1363, 1365), 0024016 (1335).",
+    "note": "The numbers the record gives are on different parcels now, so the record cannot be placed on one page without deciding which — which the record does not say."
+   },
+   "publish": {
+    "status": "pending",
+    "note": "Blocked: the resolver will not join the address. 1335 and 1365 Columbus Avenue are two separate active parcels today (0024016, 0024015 respectively), and a third building at 1333 Columbus Avenue on the same block is a third, unrelated parcel (0024017). The record does not say which of the two named parcels the fact belongs on."
+   }
+  },
+  {
+   "id": "backfill-2026-03-0006",
+   "date": "2026-03-25",
+   "date_precision": "day",
+   "kind": "development",
+   "address_as_written": "658 Lisbon Street",
+   "street_number": "658",
+   "street_name": "LISBON",
+   "street_type": "ST",
+   "description": "Permits have been filed to demolish the existing structures at 658 Lisbon Street in the Excelsior and build a larger three-story, three-bedroom single-family residence, terraced from three storeys at the front down to one at the rear. RDK Consulting designed it.",
+   "extra": {
+    "architect_of_proposal": "RDK Consulting"
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “Permits Filed for New Residence at 658 Lisbon Street in San Francisco,” 25 March 2026",
+    "url": "https://sfyimby.com/2026/03/permits-filed-for-new-residence-at-658-lisbon-street-in-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "6344010",
+    "path": "/san-francisco/excelsior/lisbon-street/658/",
+    "eas_address": "658 LISBON ST",
+    "method": "EAS exact match on 658 LISBON ST → parcel 6344010; sf-parcels has blklot 6344010 active, 658–658 LISBON; the 2025 roll records it as single family residential, built 1906.",
+    "checked_on": "2026-09-15",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "note": "No page existed; seeded from research/manifests/backfill-2026-03.json, apn 6344010. Published to san-francisco/excelsior/lisbon-street/658/."
+   }
+  },
+  {
+   "id": "backfill-2026-03-0007",
+   "date": "2026-03-24",
+   "date_precision": "day",
+   "kind": "development",
+   "address_as_written": "15 Marina Boulevard",
+   "street_number": "15",
+   "street_name": "MARINA",
+   "street_type": "BLVD",
+   "description": "The city has published a notice of conditional AB 2011 eligibility, with a final decision now due by August, for the 297-foot, 790-unit Safeway-replacement tower at 11-15 Marina Boulevard, reducing parking and adjusting unit sizes from earlier plans. Align Real Estate is the sponsor; the tower is designed by Arquitectonica.",
+   "extra": {
+    "developer_of_proposal": "Align Real Estate",
+    "architect_of_proposal": "Arquitectonica",
+    "proposed_units": 790,
+    "affordable_units": 86,
+    "height_ft": 297,
+    "decision_deadline": "August 2026"
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “San Francisco Deems Safeway Marina Tower Eligible for AB 2011 Approval,” 24 March 2026",
+    "url": "https://sfyimby.com/2026/03/san-francisco-deems-safeway-marina-tower-eligible-for-ab-2011-approval.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0446002",
+    "path": "/san-francisco/marina/marina-boulevard/15/",
+    "eas_address": "15 MARINA BLVD",
+    "method": "EAS exact match on 15 MARINA BLVD → parcel 0446002; sf-parcels has blklot 0446002 active, 15–15 MARINA; the 2025 roll records it as commercial retail, built 1959.",
+    "checked_on": "2026-09-15"
+   },
+   "publish": {
+    "status": "published",
+    "note": "Published to san-francisco/marina/marina-boulevard/15/."
+   }
+  },
+  {
+   "id": "backfill-2026-03-0008",
+   "date": "2026-03-23",
+   "date_precision": "day",
+   "kind": "construction",
+   "address_as_written": "967 Mission Street",
+   "street_number": "967",
+   "street_name": "MISSION",
+   "street_type": "ST",
+   "description": "Construction is underway on the nine-storey, 95-unit affordable senior housing complex at 967 Mission Street in SoMa, on a former surface lot dedicated to the city as part of the 5M development agreement between Brookfield Properties and Hearst Corporation; a quarter of the units will house formerly homeless seniors, with murals honoring the SOMA Pilipinas cultural district. BGI and Nibbi are the contractors; Leddy Maytum Stacy Architects is the design architect with Y.A. Studio as associate; John Stewart Company and Bayview Hunters Point Multipurpose Senior Services are the owners, sponsored by MOHCD.",
+   "extra": {
+    "owner": "John Stewart Company and Bayview Hunters Point Multipurpose Senior Services",
+    "architect_of_proposal": "Leddy Maytum Stacy Architects, with Y.A. Studio",
+    "general_contractor": "BGI and Nibbi",
+    "proposed_units": 95,
+    "affordable_units": 94,
+    "total_sqft": 72600,
+    "land_source": "dedicated to the city under the 5M development agreement"
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “Construction Underway For 967 Mission Street, San Francisco,” 23 March 2026",
+    "url": "https://sfyimby.com/2026/03/construction-underway-for-967-mission-street-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3725086",
+    "path": "/san-francisco/south-of-market/mission-street/967/",
+    "eas_address": "967 MISSION ST",
+    "method": "EAS exact match on 967 MISSION ST → parcel 3725086; sf-parcels has blklot 3725086 active, 967–967 MISSION; the 2025 roll records it as commercial misc, built 1900.",
+    "checked_on": "2026-09-15"
+   },
+   "publish": {
+    "status": "published",
+    "note": "Published to san-francisco/south-of-market/mission-street/967/."
+   }
+  },
+  {
+   "id": "backfill-2026-03-0009",
+   "date": "2026-03-19",
+   "date_precision": "day",
+   "kind": "construction",
+   "address_as_written": "1333 Columbus Avenue",
+   "street_number": "1333",
+   "street_name": "COLUMBUS",
+   "street_type": "AVE",
+   "description": "New building permits have been filed for the previously approved, four-storey mixed-use replacement of a vacant building at 1333 Columbus Avenue near Fisherman's Wharf, three two-bedroom apartments over ground-floor retail; the property last sold in 2024 for $650,000. Chicago-based Aventine Property Group is the owner; Berkeley-based DMARCstudio designed it.",
+   "extra": {
+    "owner": "Aventine Property Group",
+    "architect_of_proposal": "DMARCstudio",
+    "proposed_units": 3,
+    "height_ft": 47,
+    "last_sold": "2024, $650,000",
+    "construction_cost_estimate_usd": 1000000
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “New Building Permits For 1333 Columbus Avenue, San Francisco,” 19 March 2026",
+    "url": "https://sfyimby.com/2026/03/new-building-permits-for-1333-columbus-avenue-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0024017",
+    "path": "/san-francisco/russian-hill/columbus-avenue/1333/",
+    "eas_address": "1333 COLUMBUS AVE",
+    "method": "EAS exact match on 1333 COLUMBUS AVE → parcel 0024017; sf-parcels has blklot 0024017 active, 1333–1333 COLUMBUS; the 2025 roll records it as commercial retail, built 1901.",
+    "checked_on": "2026-09-15",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "note": "No page existed; seeded from research/manifests/backfill-2026-03.json, apn 0024017. Published to san-francisco/russian-hill/columbus-avenue/1333/."
+   }
+  },
+  {
+   "id": "backfill-2026-03-0010",
+   "date": "2026-03-19",
+   "date_precision": "day",
+   "kind": "development",
+   "address_as_written": "36 Nevada Street",
+   "street_number": "36",
+   "street_name": "NEVADA",
+   "street_type": "ST",
+   "description": "Permits have been filed for a three-storey, two-unit house cut into a steep, park-facing hillside parcel at 36 Nevada Street in Bernal Heights, backing directly onto Bernal Heights Park; about 315 cubic yards of soil will be removed. Zack de Vito Architecture designed it.",
+   "extra": {
+    "architect_of_proposal": "Zack de Vito Architecture",
+    "proposed_units": 2,
+    "total_sqft": 2723
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “Permits Filed for a New Two-Unit House at 36 Nevada Street in San Francisco,” 19 March 2026",
+    "url": "https://sfyimby.com/2026/03/permits-filed-for-a-new-two-unit-house-at-36-nevada-street-in-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "5629014",
+    "path": "/san-francisco/bernal-heights/nevada-street/36/",
+    "eas_address": "36 NEVADA ST",
+    "method": "EAS exact match on 36 NEVADA ST → parcel 5629014; sf-parcels has blklot 5629014 active, 36–36 NEVADA; the 2025 roll records it as miscellaneous/mixed-use.",
+    "checked_on": "2026-09-15",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "note": "No page existed; seeded from research/manifests/backfill-2026-03.json, apn 5629014. Published to san-francisco/bernal-heights/nevada-street/36/."
+   }
+  },
+  {
+   "id": "backfill-2026-03-0012",
+   "date": "2026-03-18",
+   "date_precision": "day",
+   "kind": "construction",
+   "address_as_written": "45 Montclair Terrace",
+   "street_number": "45",
+   "street_name": "MONTCLAIR",
+   "street_type": "TER",
+   "description": "New building permits have been filed for a previously approved five-storey house with a 760-square-foot accessory dwelling unit at 45 Montclair Terrace in Russian Hill, requiring demolition of the existing 1937 house, which the city has found is not a historic resource; the property last sold in 2021 for $3.75 million. Y.A. Studio is the project sponsor and designer.",
+   "extra": {
+    "sponsor": "Y.A. Studio",
+    "existing_built": 1937,
+    "last_sold": "2021, $3.75 million",
+    "construction_cost_estimate_usd": 1500000
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “New Building Permits Filed, Plans Approved For 45 Montclair Terrace, San Francisco,” 18 March 2026",
+    "url": "https://sfyimby.com/2026/03/new-building-permits-filed-plans-approved-for-45-montclair-terrace-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0068018",
+    "path": "/san-francisco/russian-hill/montclair-terrace/45/",
+    "eas_address": "45 MONTCLAIR TER",
+    "method": "EAS exact match on 45 MONTCLAIR TER → parcel 0068018; sf-parcels has blklot 0068018 active, 45–45 MONTCLAIR; the 2025 roll records it as single family residential, built 1937.",
+    "checked_on": "2026-09-15",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "note": "No page existed; seeded from research/manifests/backfill-2026-03.json, apn 0068018. Published to san-francisco/russian-hill/montclair-terrace/45/."
+   }
+  },
+  {
+   "id": "backfill-2026-03-0013",
+   "date": "2026-03-16",
+   "date_precision": "day",
+   "kind": "construction",
+   "address_as_written": "5400 Geary Boulevard",
+   "street_number": "5400",
+   "street_name": "GEARY",
+   "street_type": "BLVD",
+   "description": "New building permits have been filed to redevelop the vacant, 103-year-old Alexandria Theater at 5400 Geary Boulevard in the Richmond District into an 83-unit apartment complex (10 affordable) over retail, preserving the exterior marquee, the interior sunburst chandelier and the lobby's Art Deco murals under a special use district created for this lot in 2024. Timespace Group is the project sponsor; Gonzales Architects designed it with landscape architect Fletcher Studio.",
+   "extra": {
+    "sponsor": "Timespace Group",
+    "architect_of_proposal": "Gonzales Architects",
+    "landscape_architect": "Fletcher Studio",
+    "proposed_units": 83,
+    "affordable_units": 10,
+    "height_ft": 81,
+    "lot_acres": 0.35,
+    "existing_building": "Alexandria Theater, built 1923",
+    "preserved_features": "exterior marquee, blade sign, interior sunburst chandelier, Art Deco lobby murals"
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “New Building Permits For Alexandria Theater Redevelopment, San Francisco,” 16 March 2026",
+    "url": "https://sfyimby.com/2026/03/new-building-permits-for-alexandria-theater-redevelopment-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "1450048",
+    "path": "/san-francisco/inner-richmond/geary-boulevard/5400/",
+    "eas_address": "5400 GEARY BLVD",
+    "method": "EAS exact match on 5400 GEARY BLVD → parcel 1450048; sf-parcels has blklot 1450048 active, 5400–5400 GEARY; the 2025 roll records it as commercial misc, built 1923. EAS files the address under parcel 1450008, which sf-parcels reports retired; the active parcel its coordinates fall in is 1450048.",
+    "checked_on": "2026-09-15",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "note": "No page existed; seeded from research/manifests/backfill-2026-03.json, apn 1450048. Published to san-francisco/inner-richmond/geary-boulevard/5400/."
+   }
+  },
+  {
+   "id": "backfill-2026-03-0014",
+   "date": "2026-03-13",
+   "date_precision": "day",
+   "kind": "development",
+   "address_as_written": "853 Church Street",
+   "street_number": "853",
+   "street_name": "CHURCH",
+   "street_type": "ST",
+   "description": "Preliminary permits have been filed to split the lot and replace a freestanding garage with a new four-storey single-family house at 853 Church Street in Dolores Heights, using Senate Bill 684. Troy Kashanipour Architecture is responsible for the application and design.",
+   "extra": {
+    "architect_of_proposal": "Troy Kashanipour Architecture",
+    "total_sqft": 2000,
+    "construction_cost_estimate_usd": 700000
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “Permits Filed For 853 Church Street in Dolores Heights, San Francisco,” 13 March 2026",
+    "url": "https://sfyimby.com/2026/03/permits-filed-for-853-church-street-in-dolores-heights-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3606033",
+    "path": "/san-francisco/castro/church-street/851/",
+    "eas_address": "851 CHURCH ST",
+    "method": "EAS exact match on 853 CHURCH ST → parcel 3606033; sf-parcels has blklot 3606033 active, 851–853 CHURCH; the 2025 roll records it as multi-family residential, built 1909. EAS puts 851, 853 CHURCH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 851.",
+    "checked_on": "2026-09-15"
+   },
+   "publish": {
+    "status": "published",
+    "note": "Published to san-francisco/castro/church-street/851/."
+   }
+  },
+  {
+   "id": "backfill-2026-03-0016",
+   "date": "2026-03-09",
+   "date_precision": "day",
+   "kind": "development",
+   "address_as_written": "1053-1055 Texas Street",
+   "street_number": "1053",
+   "street_name": "TEXAS",
+   "street_type": "ST",
+   "description": "Preliminary plans have been filed for two five-storey, three-unit apartment buildings (six units total) at 1053-1055 Texas Street on Potrero Hill, a steep reduction from a 25-unit scheme first filed in 2019 that won final approval in mid-2025 before the developer shifted to a six-unit version; the site faces the Potrero Terrace public housing redevelopment. TM Build LLC is the owner; RdK Consulting (formerly SIA Consulting) designed it.",
+   "extra": {
+    "owner": "TM Build LLC",
+    "architect_of_proposal": "RdK Consulting",
+    "proposed_units": 6,
+    "previous_approved_units": 25,
+    "total_sqft": 16800,
+    "previous_entitlement": "final approval mid-2025, for a 25-unit HOME-SF scheme first filed 2019",
+    "address_range_as_recorded": "1053-1055"
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “Updated Plans For 1053-1055 Texas Street on Potrero Hill, San Francisco,” 9 March 2026",
+    "url": "https://sfyimby.com/2026/03/updated-plans-for-1053-1055-texas-street-on-potrero-hill-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "4224178",
+    "path": "/san-francisco/potrero-hill/texas-street/1055/",
+    "eas_address": "1055 TEXAS ST",
+    "method": "Recorded range 1053-1055 TEXAS ST; EAS matches 1055 on this street → parcel 4224178; sf-parcels has blklot 4224178 active, 1055–1055 TEXAS; the 2025 roll records it as miscellaneous/mixed-use. EAS has no record for 1053 on this street.",
+    "checked_on": "2026-09-15",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "note": "No page existed; seeded from research/manifests/backfill-2026-03.json, apn 4224178. Published to san-francisco/potrero-hill/texas-street/1055/."
+   }
+  },
+  {
+   "id": "backfill-2026-03-0017",
+   "date": "2026-03-07",
+   "date_precision": "day",
+   "kind": "development",
+   "address_as_written": "5500-5504 Mission Street",
+   "street_number": "5500",
+   "street_name": "MISSION",
+   "street_type": "ST",
+   "description": "A formal application, including a lot merger, has been filed for a four-storey, 49-bed senior care facility at 5500-5504 Mission Street in Outer Mission, replacing a 2016 application for a 24-unit facility that was never built; demolition of the existing structure along Foote Avenue has not yet occurred. Tommy Lee of Merced Residential Care is the property owner; Schaub Li Architects designed it.",
+   "extra": {
+    "owner": "Tommy Lee of Merced Residential Care",
+    "architect_of_proposal": "Schaub Li Architects",
+    "proposed_beds": 49,
+    "height_ft": 40,
+    "total_sqft": 26500,
+    "previous_application": "2016, unbuilt 24-unit senior care facility",
+    "construction_cost_estimate_usd": 3500000,
+    "address_range_as_recorded": "5500-5504"
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “Planning Progress For 5500 Mission Street in Outer Mission, San Francisco,” 7 March 2026",
+    "url": "https://sfyimby.com/2026/03/planning-progress-for-5500-mission-street-in-outer-mission-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "7066036",
+    "path": "/san-francisco/mission/mission-street/5500/",
+    "eas_address": "5500 MISSION ST",
+    "method": "Recorded range 5500-5504 MISSION ST; EAS matches 5500 on this street → parcel 7066036; sf-parcels has blklot 7066036 active, 5500–5500 MISSION; the 2025 roll records it as industrial, built 1962. EAS has no record for 5502, 5504 on this street.",
+    "checked_on": "2026-09-15",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "note": "No page existed; seeded from research/manifests/backfill-2026-03.json, apn 7066036. Published to san-francisco/mission/mission-street/5500/."
+   }
+  },
+  {
+   "id": "backfill-2026-03-0018",
+   "date": "2026-03-05",
+   "date_precision": "day",
+   "kind": "development",
+   "address_as_written": "230 Anza Street",
+   "street_number": "230",
+   "street_name": "ANZA",
+   "street_type": "ST",
+   "description": "Increased plans, using the city's new Family Zoning Plan, have been filed for an eight-storey, eight-unit building (two affordable) on the narrow parcel at 230 Anza Street in Lone Mountain, more than doubling the previous scheme's capacity; Castro Valley-based C.M. Wong Architecture drew the earlier plans, but no architect is listed for this filing. Krystal Dong of Oakland-based Ivy Hills LLC is the property owner.",
+   "extra": {
+    "owner": "Krystal Dong of Ivy Hills LLC",
+    "previous_architect": "C.M. Wong Architecture",
+    "proposed_units": 8,
+    "affordable_units": 2,
+    "proposed_stories": 8,
+    "lot_acres": 0.06,
+    "construction_cost_estimate_usd": 2000000
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “Family Zoning Increases Plans For 230 Anza Street in Lone Mountain, San Francisco,” 5 March 2026",
+    "url": "https://sfyimby.com/2026/03/family-zoning-increases-plans-for-230-anza-street-in-lone-mountain-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "1091013",
+    "path": "/san-francisco/lone-mountain/anza-street/230/",
+    "eas_address": "230 ANZA ST",
+    "method": "EAS exact match on 230 ANZA ST → parcel 1091013; sf-parcels has blklot 1091013 active, 230–230 ANZA; the 2025 roll records it as multi-family residential, built 1900.",
+    "checked_on": "2026-09-15"
+   },
+   "publish": {
+    "status": "published",
+    "note": "Published to san-francisco/lone-mountain/anza-street/230/."
+   }
+  },
+  {
+   "id": "backfill-2026-03-0019",
+   "date": "2026-03-04",
+   "date_precision": "day",
+   "kind": "development",
+   "address_as_written": "469 Stevenson Street",
+   "street_number": "469",
+   "street_name": "STEVENSON",
+   "street_type": "ST",
+   "description": "Build Inc has requested an extension of the three-year entitlement it won in 2023 for the 290-foot, 27-storey residential tower at 469 Stevenson Street in SoMa, still a surface parking lot; the project first filed in 2017, was approved in 2021, stalled on a TODCO appeal, and was re-approved in 2023, citing the housing market and financing conditions. The request would also lower on-site affordable housing from 19% to 15%, still above the city's 12% minimum. SCB is the project architect with landscape architect The Miller Company.",
+   "extra": {
+    "sponsor": "Build Inc",
+    "architect_of_proposal": "SCB",
+    "landscape_architect": "The Miller Company",
+    "proposed_units_note": "535,000 sq ft total, 425,640 residential",
+    "height_ft": 290,
+    "proposed_stories": 27,
+    "entitlement_history": "filed 2017, approved 2021 (appeal upheld, stalled), re-approved 2023",
+    "affordable_pct_requested": "15% (from 19%), city minimum 12%",
+    "construction_cost_estimate_usd": 200000000
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “Entitlement Extension Requested for 469 Stevenson Street in SoMa, San Francisco,” 4 March 2026",
+    "url": "https://sfyimby.com/2026/03/entitlement-extension-requested-for-469-stevenson-street-in-soma-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3704045",
+    "path": "/san-francisco/south-of-market/stevenson-street/469/",
+    "eas_address": "469 STEVENSON ST",
+    "method": "EAS exact match on 469 STEVENSON ST → parcel 3704045; sf-parcels has blklot 3704045 active, 469–469 STEVENSON; the 2025 roll records it as commercial misc, built 1940.",
+    "checked_on": "2026-09-15"
+   },
+   "publish": {
+    "status": "published",
+    "note": "Published to san-francisco/south-of-market/stevenson-street/469/."
+   }
+  },
+  {
+   "id": "backfill-2026-03-0020",
+   "date": "2026-03-04",
+   "date_precision": "day",
+   "kind": "development",
+   "address_as_written": "875 Sansome Street",
+   "street_number": "875",
+   "street_name": "SANSOME",
+   "street_type": "ST",
+   "description": "San Francisco's Environmental Review Officer heard presentations on the 875 Sansome Street/303 Broadway project, first reported in February 2024: demolition of an existing commercial structure for an eight-storey, 20-unit residential building (12 two-bedroom, 8 three-bedroom) on the Jackson Square/North Beach border. N17 Development is the developer; BDE Architecture designed it.",
+   "extra": {
+    "developer_of_proposal": "N17 Development",
+    "architect_of_proposal": "BDE Architecture",
+    "proposed_units": 20,
+    "lot_acres": 0.1,
+    "companion_address": "303 Broadway"
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “Meeting Scheduled Today for 875 Sansome Street in San Francisco,” 4 March 2026",
+    "url": "https://sfyimby.com/2026/03/meeting-scheduled-today-for-875-sansome-street-in-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0164001",
+    "path": "/san-francisco/north-beach/sansome-street/875/",
+    "eas_address": "875 SANSOME ST",
+    "method": "EAS exact match on 875 SANSOME ST → parcel 0164001; sf-parcels has blklot 0164001 active, 875–875 SANSOME; the 2025 roll records it as commercial office, built 1900.",
+    "checked_on": "2026-09-15",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "note": "No page existed; seeded from research/manifests/backfill-2026-03.json, apn 0164001. Published to san-francisco/north-beach/sansome-street/875/."
+   }
+  },
+  {
+   "id": "backfill-2026-03-0021",
+   "date": "2026-03-04",
+   "date_precision": "day",
+   "kind": "development",
+   "address_as_written": "1828 25th Avenue",
+   "street_number": "1828",
+   "street_name": "25TH",
+   "street_type": "AVE",
+   "description": "Permits have been filed to convert the 1939-built single-family tract house at 1828 25th Avenue in the Sunset District, whose architect and builder are unknown, into a two-unit duplex -- a rear three-bedroom accessory dwelling unit and a two-bedroom second-floor unit -- with the street-facing facade unaltered.",
+   "extra": {
+    "existing_built": 1939
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “Duplex Conversion Planned For 1828 25th Avenue, San Francisco,” 4 March 2026",
+    "url": "https://sfyimby.com/2026/03/duplex-conversion-planned-for-1828-25th-avenue-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "2061041",
+    "path": "/san-francisco/sunset-parkside/25th-avenue/1828/",
+    "eas_address": "1828 25TH AVE",
+    "method": "EAS exact match on 1828 25TH AVE → parcel 2061041; sf-parcels has blklot 2061041 active, 1828–1828 25TH; the 2025 roll records it as single family residential, built 1939.",
+    "checked_on": "2026-09-15",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "note": "No page existed; seeded from research/manifests/backfill-2026-03.json, apn 2061041. Published to san-francisco/sunset-parkside/25th-avenue/1828/."
+   }
+  },
+  {
+   "id": "backfill-2026-03-0011",
+   "date": "2026-03-18",
+   "date_precision": "day",
+   "kind": "development",
+   "address_as_written": "One Oak, wedged between Market Street and Oak Street",
+   "description": "The Planning Commission was scheduled to review the 41-storey, 541-unit One Oak residential tower proposed for a 0.42-acre lot between Market Street and Oak Street in the Market & Octavia area, fully market-rate with an in-lieu affordable housing fee. The Emerald Fund is the applicant for owner Washington Capital; SCB is the project architect.",
+   "extra": {
+    "applicant": "The Emerald Fund",
+    "owner": "Washington Capital",
+    "architect_of_proposal": "SCB",
+    "proposed_units": 541,
+    "height_ft": 436,
+    "proposed_stories": 41
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “Meeting Tomorrow For 41-Story One Oak, San Francisco,” 18 March 2026",
+    "url": "https://sfyimby.com/2026/03/meeting-tomorrow-for-41-story-one-oak-san-francisco.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "rejected",
+    "checked_on": "2026-09-15",
+    "note": "No usable address. The article names the site only by its project name and cross streets (\"wedged between Market Street and Oak Street\"), never a street number; the site's own EAS records near that corner (1500/1550 Market, 11 Oak) do not obviously match the 0.42-acre parcel described, and guessing which one would not be a fact the article states."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "Declined for lack of a usable address; see resolution note."
+   }
+  },
+  {
+   "id": "backfill-2026-03-0015",
+   "date": "2026-03-12",
+   "date_precision": "day",
+   "kind": "development",
+   "address_as_written": "Caltrain San Francisco Railyards, 4th and King Street",
+   "description": "Preliminary plans (a deeper look at the same application covered on 2026-04-24) were submitted for the 18.6-acre Caltrain San Francisco Railyards redevelopment at 4th and King Street: up to 8 million square feet at full build-out, an 850-foot tower, and a rebuilt Caltrain station, a Prologis/Caltrain joint venture.",
+   "extra": {
+    "sponsor": "Prologis, in partnership with Caltrain",
+    "site_acres": 18.6
+   },
+   "citation": {
+    "label": "San Francisco YIMBY, “Deep Dive Into Caltrain’s San Francisco Railyards Redevelopment,” 12 March 2026",
+    "url": "https://sfyimby.com/2026/03/deep-dive-into-caltrains-san-francisco-railyards-redevelopment.html"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "rejected",
+    "checked_on": "2026-09-15",
+    "note": "No usable address, same as the 24 April 2026 filing on this project (backfill-2026-04-0006): the article names the site only by cross streets and never prints a street number for the parcel."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "Declined for lack of a usable address; see resolution note. Same project as backfill-2026-04-0006, a month later and more detailed, still without a printed street number."
+   }
+  }
+ ]
+}

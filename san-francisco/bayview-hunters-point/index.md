@@ -8,6 +8,7 @@ San Francisco's south-eastern quarter, settled from the 1860s as the industrial 
 - [Arelious Walker Drive](arelious-walker-drive/) — 1 building, built 2017.
 - [Armstrong Avenue](armstrong-avenue/) — 1 building, built 1925.
 - [Bay Shore Boulevard](bay-shore-boulevard/) — 1 building, built 1927.
+- [Bishop Street](bishop-street/) — 1 building, built 1922.
 - [Brussels Street](brussels-street/) — 1 building, built 1900.
 - [Carroll Avenue](carroll-avenue/) — 1 building, built 2016.
 - [Charter Oak Avenue](charter-oak-avenue/) — 1 building, built 1956.
