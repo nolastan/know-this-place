@@ -69,6 +69,8 @@ The window is capped at a month and a new one is refused while a backfill queue
 is still waiting. That is the batching rule, and the reason for it is in
 [PIPELINE.md](PIPELINE.md) → "Backfill": a month of the eight routed sources
 lists 2,558 stories and queues 538, and every queued one is read by hand.
+Walking several windows in one sitting stays on one branch throughout — see
+[PIPELINE.md → Batch it](PIPELINE.md#batch-it--the-window-is-capped-at-a-month).
 
 Then, for anything worth keeping: write it into `news/items/<feed>/<date>.json`,
 resolve it with the research module's resolver, seed the parcel if it has no

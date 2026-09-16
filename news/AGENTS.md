@@ -92,6 +92,19 @@ month of one feed — drain it, then go again. **Stopping with the window record
 and the queue drained is a finished piece of work**, however much archive
 remains.
 
+**Go again on the same branch, not a fresh one.** An outlet's archive is its own
+past coverage, so the same address recurs across it — a project covered in
+February often resurfaces in April or June. Two backfill PRs opened
+independently off `main`, each walking a different window, will each happily
+seed or enrich that address's page on their own branch; whichever merges second
+then conflicts with the first. Before starting the next window, run the same
+open-PR check a daily run does (the `/news` skill's "Where a run starts") and
+continue there instead of branching again — including when you are the one who
+opened that PR minutes ago in the same sitting. A worklist that says "each
+batch is its own PR" (see e.g. #337) means each batch is reviewable on its
+own, merged before or independently of the others — not that batches done
+back-to-back without a merge in between should each get a fresh branch.
+
 Two invariants the stages rest on, both detailed in
 [PIPELINE.md](PIPELINE.md):
 
