@@ -2389,11 +2389,12 @@ REFERRALS = {
     },
     "blackbird": {
         # The issue said "$20 after first purchase"; the referral link's own
-        # landing page (its og:description — the page itself renders only a
-        # QR code, since Blackbird is mobile-only) says the reward is 2,000
-        # Fly, not a dollar figure, so that is what the row states.
+        # landing page states the reward as "2,000 $FLY" and, right under it,
+        # "(2,000 Fly is equivalent to $20 USD)" — so the page confirms the
+        # issue's dollar figure, and the row states it in dollars rather than
+        # a currency a reader has never heard of.
         "url": "https://app.blackbird.xyz/r/bb-98v7tj",
-        "offer": "Get 2,000 Fly at Blackbird",
+        "offer": "Get $20 at Blackbird",
         "app": "Blackbird",
         "note": "Referral link. Blackbird is mobile-only — download the app, then check in at this restaurant.",
     },

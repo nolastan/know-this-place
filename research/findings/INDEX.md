@@ -170,6 +170,8 @@ are listed so their size is visible before anyone opens one.
 
 | Manifest | Parcels | Size | Areas |
 |---|---:|---:|---|
+| `2026-09-15.json` | 17 | 6 KB | `mission`, `russian-hill`, `outer-richmond` +9 |
+| `2026-09-16.json` | 46 | 17 KB | `marina`, `pacific-heights`, `mission` +21 |
 | `address-in-title.json` | 31 | 11 KB | `nob-hill`, `potrero-hill`, `south-of-market` +10 |
 | `african-american-hcs.json` | 119 | 56 KB | `bayview-hunters-point`, `western-addition`, `pacific-heights` +23 |
 | `archive-page-2.json` | 4 | 1 KB | `corbett-heights` |
