@@ -2387,6 +2387,16 @@ REFERRALS = {
         "app": "Bites",
         "note": "Referral link. It opens Bites, where you can search for {which}.",
     },
+    "blackbird": {
+        # The issue said "$20 after first purchase"; the referral link's own
+        # landing page (its og:description — the page itself renders only a
+        # QR code, since Blackbird is mobile-only) says the reward is 2,000
+        # Fly, not a dollar figure, so that is what the row states.
+        "url": "https://app.blackbird.xyz/r/bb-98v7tj",
+        "offer": "Get 2,000 Fly at Blackbird",
+        "app": "Blackbird",
+        "note": "Referral link. Blackbird is mobile-only — download the app, then check in at this restaurant.",
+    },
     "bonobos": {
         "url": "https://fbuy.io/bonobos/stanford",
         "offer": "Get 25% off at Bonobos",
