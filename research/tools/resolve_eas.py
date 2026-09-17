@@ -1660,6 +1660,16 @@ def load_city(findings: dict, refresh: bool = False, aliases: dict = None,
         parsed = parse_address((f.get("extra") or {}).get("address_note_as_recorded"))
         if parsed:
             recorded.add(parsed["street_name"])
+        # A by-hand resolution can land on a street no finding names — a campus
+        # nomination headed "1400 Fell Street" placed on 333 Baker Street, the
+        # only address EAS holds for the parcel it prints. Without the landing
+        # street in this set its EAS rows are never fetched, so `manifest` finds
+        # nothing on the parcel to correct the entry with and writes the
+        # finding's own street beside the path's slug: street_display "Fell
+        # Street" under baker-street/333/, and no coordinates at all.
+        parsed = parse_address((f.get("resolution") or {}).get("eas_address"))
+        if parsed:
+            recorded.add(parsed["street_name"])
     names, unknown = set(), []
     for n in sorted(recorded):
         eas_name, _ = streets.eas_name(n)

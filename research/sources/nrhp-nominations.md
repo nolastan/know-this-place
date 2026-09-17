@@ -6,7 +6,7 @@
 >
 > - **Kind:** PDF reports (federal nomination forms) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — the listings are indexed everywhere; the forms are not. A search for a street number returns the Wikipedia list entry and the NPS map pin, never the paragraph inside the PDF that dates the building and names its architect.
-> - **Coverage:** 96 of 165 San Francisco listings read — every one certified before 1990, plus the Civic Center district the index omits — and the Uptown Tenderloin Historic District nomination (08001407) read in full: the section 7 inventory's 477 rows, structured fields and prose tails both, and section 8, the statement of significance. Plus four of the five 1980s district nominations Anne Bloomfield wrote — Bush Street-Cottage Row (82000983), Liberty Street (83001230), and the three Russian Hill districts of 1987 (87002286 Macondray Lane, 87002288 Paris Block, 87002289 Vallejo Street Crest) — all read in full. 824 findings, 737 resolved, 697 published.
+> - **Coverage:** 113 of 165 San Francisco listings read — every one certified before 2000, plus the Civic Center district the index omits and the Uptown Tenderloin Historic District (08001407) read in full. All six Anne Bloomfield district nominations and the Southern Pacific Company Hospital Historic District (89000319) are read. 981 findings, 864 resolved, 822 published.
 > - **Local corpus:** `research/corpora/nrhp-nominations/` (one PDF and one `.txt` per reference number, plus `index-san-francisco.json` and `state.json`)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -268,25 +268,18 @@ URL. Worked example:
   **87002288 Paris Block**
   ([`russian-hill-paris-block-district.json`](../findings/nrhp-nominations/russian-hill-paris-block-district.json))
   and **87002289 Vallejo Street Crest**
-  ([`russian-hill-vallejo-street-crest-district.json`](../findings/nrhp-nominations/russian-hill-vallejo-street-crest-district.json)).
+  ([`russian-hill-vallejo-street-crest-district.json`](../findings/nrhp-nominations/russian-hill-vallejo-street-crest-district.json)),
+  and the last 1980s district nomination, **89000319 Southern Pacific Company
+  Hospital Historic District**
+  ([`southern-pacific-hospital-district.json`](../findings/nrhp-nominations/southern-pacific-hospital-district.json)),
+  and **all 17 listings certified 1990-1999**
+  ([`listed-1990-1999.json`](../findings/nrhp-nominations/listed-1990-1999.json)).
 - **Not read, and this is the queue in order:**
-  1. **89000319 Southern Pacific Company Hospital Historic District** (1400
-     Fell Street, 16 pages), the last unread district nomination of the
-     1980s and a different shape of document — a hospital campus, not a
-     Bloomfield residential inventory, so it is a handful of findings on
-     however many parcels the campus is today, not a batch of fifty. Fetched
-     and extracted (`research/corpora/nrhp-nominations/`, gitignored — re-fetch
-     with `curl` at the stable `GetAsset/NRHP/<refnum>_text` URL if the corpus
-     is gone).
-  2. **68 listings certified 1990 or later** — 1990-1999 (17), 2000-2009 (21),
-     2010-2015 (15), 2016-2023 (15). The Uptown Tenderloin Historic District
-     (08001407, listed 5 February 2009) is out of that count and is now **read
-     in full** under #304 — all 477 inventory rows, in
-     [`uptown-tenderloin-district.json`](../findings/nrhp-nominations/uptown-tenderloin-district.json).
-     With the Russian Hill districts read, these are the richest unread
-     material here, and they are single-building nominations again — era
-     batches, per the first run.
-  3. **77000334** (Mills Building and Tower) and **01000281** (Maritime
+  1. **50 listings certified 2000 or later** — 2000-2009 (20, the Uptown
+     Tenderloin district apart), 2010-2015 (15), 2016-2023 (15). Era batches,
+     per the first run; they are single-building nominations again. **Check the
+     `_text` path before planning the post-2016 group** — see the caution below.
+  2. **77000334** (Mills Building and Tower) and **01000281** (Maritime
      National Historic Site, Fort Mason), whose PDFs have no text layer, and
      **100008228**, whose `_text` path serves a PNG placeholder.
 - **Never guess a reference number.** 08001407 is the Uptown Tenderloin
@@ -308,6 +301,84 @@ URL. Worked example:
   reference numbers do **not** serve a PDF at the `_text` path — 100008228 (the
   Timothy L. Pflueger House) returns a 1.6 KB PNG placeholder. Those documents
   need a different route, and finding it is part of that batch.
+
+- **Verified:** 2026-09-17 (ninth run. Two batches. First 89000319, the
+  Southern Pacific Company Hospital Historic District (Elizabeth Krase, Page &
+  Turnbull, 1988; certified 5 May 1989), the last unread district nomination of
+  the 1980s — 16 pages, 22 findings, 21 resolved, 20 published on 2 pages, both
+  seeded. Then **all 17 listings certified 1990-1999**, read in full — 135
+  findings, 106 resolved, 105 published on 24 pages, 5 of them seeded; 1
+  declined, 29 unresolved. Run total: **157 found, 127 resolved, 125
+  published on 26 pages, 7 seeded.**
+
+  What this run learned, beyond the cautions above:
+
+  - **A campus district has one address and it may not exist.** 89000319 is
+    titled 1400 Fell Street and EAS has no such address; the nearest numbers
+    are 1380 and 1390, on the next block. What it does print is its own
+    parcel — "Lots 2 and 3, City block 1206" — and those are exactly the two
+    active parcels on that block, split in 1982, the year of the rehabilitation
+    the nomination describes. Their lot areas sum to 2.51 acres against the
+    stated 2.5. **Resolve a campus on the printed parcel and check it with the
+    acreage**, not on the title address.
+  - **The other half of that lesson is which parcel gets which building.** Lot
+    3 is 333 Baker Street, six storeys and 158 units on the roll: the hospital,
+    whose entrance the 1982-83 conversion moved off the monumental Fell Street
+    stair round to the Baker Street portico. Lot 2 is 1500-1599 Hayes Street,
+    four addresses on one point, carrying the four buildings along Hayes —
+    powerhouse, paint shop, nurses' annex and Huntington Social Hall, of 1908,
+    about 1923, 1907 and 1911. One roll year for four buildings is a
+    `building.completed_conflict`, not four pages.
+  - **The 1990s are Anne Bloomfield's and Page & Turnbull's decade, and the
+    documents are long.** 97000348 (Hunter-Dulin) runs to 151,000 characters,
+    most of it the architects' and engineer's biographies and a bank-merger
+    history; the building's own story is about 200 lines. **Grep for the
+    section headings first** — `SITE HISTORY`, `BUILDING HISTORY`, the
+    property name repeated as a running head — and read those ranges.
+  - **Three of the seventeen are on land EAS does not address**, and that is
+    the whole reason 13 findings are unresolved: the Yerba Buena Island
+    lighthouse (no number at all), Quarters 1 at 1 Whiting Way (EAS holds 15,
+    20, 25, 50, 61, 71 and 81 Whiting Way on the island and no 1, and none of
+    them carries a parcel number), and Pier One (The Embarcadero's numbering
+    in EAS starts at 5 and there is no PIER street). Federal and Port land is
+    a standing gap in this source, not a resolver failure.
+  - **Two more give no address at all and still resolve, because they name the
+    building standing over them.** The Apollo and Niantic storeships are buried
+    hulls; 91000561 names "the former Federal Reserve Bank of San Francisco
+    building" at Battery and Sacramento (parcel 0229003, 301-325 Battery
+    Street) and 91000563 names the construction at Clay and Sansome in 1978
+    (parcel 0207037, 505 Sansome Street, the tower whose foundations the dig
+    was for). Both were resolved by hand. 91000561 contradicts itself about
+    the corner — northwest in its heading, southwest in its description — and
+    that disagreement is in the page's `unknowns`.
+  - **A second stated address is worth putting in `extra.address_note_as_recorded`
+    every time.** 97001189's own 855 Front Street has no EAS record; its
+    second address, 101 Vallejo Street, does, and the resolver said so and
+    left the call. The parcel's lot area, 5,064 sq ft, is within 22 sq ft of
+    the 45 ft 10 in by 110 ft a city surveyor measured in 1861, and Planning's
+    survey name for it is GIBB SANBORN WAREHOUSE. That is the strongest
+    identification this source has produced.
+  - **Condominium mapping cost this batch two whole buildings**, both of them
+    conversions of the very buildings the nominations describe: 465 Tenth
+    Street became 19 unit parcels in 1998 and 1489 Folsom Street 8 in 1993.
+    Eleven findings are unresolved on that account, and the page that already
+    exists at 1489 Folsom is one of the eight units — one of issue #228's
+    twenty-nine.
+  - **A bare 1906 sorts before 1906-04-18 on the rail**, so a reconstruction
+    entry dated only to the year prints above the fire it followed. State the
+    sequence in the description rather than reaching for a month the source
+    does not give.
+  - **99001265 is a supplier's building, and its section 8 lists nine
+    buildings its product went into** — the lifts in the Pacific Telephone,
+    Mark Hopkins, Brocklebank, Hunter-Dulin, Russ, Shell, Medical-Dental,
+    Mills Tower and Lurie buildings were all assembled at 1 Beach Street.
+    Those are facts about nine other parcels that only the nomination *about
+    the supplier* states, so they were taken — while the storey counts,
+    architects and dates that list also prints were left to the nominations
+    about those buildings. Nine one-line findings on nine existing pages.
+  - Where this run stopped: the 2000-2023 listings are the whole of what is
+    left, and the post-2016 `_text` caution above should be tested before
+    anyone plans that group.)
 
 - **Verified:** 2026-09-16 (eighth run. Read the three Russian Hill district
   nominations Anne Bloomfield wrote for the Russian Hill Neighbors in May 1987,
