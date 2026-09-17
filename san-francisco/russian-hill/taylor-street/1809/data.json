@@ -1,0 +1,144 @@
+{
+  "address": "1809 Taylor Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/taylor-street/1809/",
+  "apn": "0120004",
+  "block": "0120",
+  "lot": "004",
+  "eas_baseid": "277927",
+  "coordinates": {
+    "lat": 37.799222,
+    "lng": -122.414211
+  },
+  "parcel": {
+    "year_built": 1895,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2818,
+    "building_area_sqft": 2160,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Russian Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "0000 1809 TAYLOR              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2132687,
+    "assessed_improvement_value": 1555758,
+    "last_sale_date": "2004-06-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1895",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Russian Hill-Macondray Lane Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1878–1930",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200510286808",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2005-10-28",
+      "status_date": "2007-03-20",
+      "estimated_cost": 70000,
+      "revised_cost": 160000,
+      "description": "below grade amition under (e) basement for 1 parking, storage & wine cellar cut (e) ret. wall for a 12'-0\" door opening.warp street for driveway & standard curb cut. no work on (e) building no change in occupancy.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200407269725",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-07-26",
+      "status_date": "2005-07-19",
+      "estimated_cost": 68500,
+      "revised_cost": 68500,
+      "description": "remodel kitchen & bath,new cabinets,countertops,fixtures,tile,floors.no wall movements or changes,",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2004–2005",
+    "shown_on_page": 2,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TAYLOR&street_type=ST&address_number=1809",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0120004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0120&lot=004",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0120004",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41421081223888%2037.79922236102464)%27)",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "id": "nrhp-87002286",
+      "name": "National Register of Historic Places nomination, Russian Hill/Macondray Lane District (reference number 87002286), National Park Service.",
+      "query": "https://npgallery.nps.gov/NRHP/GetAsset/NRHP/87002286_text",
+      "label": "National Register of Historic Places nomination, National Park Service",
+      "retrieved": "2026-09-16"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1895",
+      "kind": "construction",
+      "description": "Queen Anne house with a turreted corner bay, designed by William Mooser & Son; one of four buildings on this block that came through the earthquake fire.",
+      "source": "nrhp-87002286"
+    }
+  ],
+  "building": {
+    "architect": "William Mooser & Son",
+    "sources": [
+      "nrhp-87002286"
+    ]
+  },
+  "notable_residents": [
+    {
+      "name": "Luigi DeMartini",
+      "period": "From 1895",
+      "detail": "Built as the home of Luigi DeMartini (born 1854), the Italian-American confectioners' supplier whom A. P. Giannini persuaded to become an early investor in the Bank of Italy; his family lived in the house for some seventy years.",
+      "source": "nrhp-87002286"
+    }
+  ]
+}

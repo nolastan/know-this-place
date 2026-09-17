@@ -1,0 +1,188 @@
+{
+  "address": "1040 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/green-street/1040/",
+  "apn": "0121006",
+  "block": "0121",
+  "lot": "006",
+  "eas_baseid": "277963",
+  "coordinates": {
+    "lat": 37.798848,
+    "lng": -122.41635
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3598,
+    "building_area_sqft": 3934,
+    "basement_area_sqft": 150,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Russian Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "0000 1040 GREEN               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1661276,
+    "assessed_improvement_value": 1495147,
+    "last_sale_date": "1995-12-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Russian Hill-Paris Block Architectural Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1880–1925",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200707166905",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-07-16",
+      "status_date": "2008-01-09",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "tileing two existing bathrooms, installing one shower . reinstall toilet + sinks.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200706194335",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-06-19",
+      "status_date": "2007-06-26",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9606490",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-04-16",
+      "status_date": "1996-10-16",
+      "estimated_cost": 7900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9601644",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-01-31",
+      "status_date": "1996-09-03",
+      "estimated_cost": 85000,
+      "description": "remodel master bdrm, master btrm, jacuzzi pool to sunroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9417183S",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "1994-10-21",
+      "status_date": "1995-06-22",
+      "estimated_cost": 200000,
+      "description": "vertical & horizontal addition, structural upgrade, misc",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8805594",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-05-02",
+      "status_date": "1989-01-18",
+      "estimated_cost": 7000,
+      "description": "vertical addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8805595",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-05-02",
+      "status_date": "1989-03-21",
+      "estimated_cost": 3500,
+      "description": "vertical addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GREEN&street_type=ST&address_number=1040",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0121006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0121&lot=006",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0121006",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41635011580352%2037.79884801771502)%27)",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "id": "nrhp-87002288",
+      "name": "National Register of Historic Places nomination, Russian Hill/Paris Block Architectural District (reference number 87002288), National Park Service.",
+      "query": "https://npgallery.nps.gov/NRHP/GetAsset/NRHP/87002288_text",
+      "label": "National Register of Historic Places nomination, National Park Service",
+      "retrieved": "2026-09-16"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912",
+      "kind": "construction",
+      "description": "Stuccoed Colonial Revival house designed by the L.B. Dutton Company, the firm of Llewellyn B. Dutton, who had come to San Francisco as Daniel Burnham's representative.",
+      "source": "nrhp-87002288"
+    },
+    {
+      "date": "1953",
+      "kind": "alteration",
+      "description": "A projecting ground-floor sun porch and a detached two-car garage at the front lot line were added, designed by D.C. Wells and George Livermore.",
+      "source": "nrhp-87002288"
+    }
+  ],
+  "building": {
+    "architect": "L.B. Dutton Company",
+    "sources": [
+      "nrhp-87002288"
+    ]
+  }
+}

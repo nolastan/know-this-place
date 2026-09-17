@@ -1840,3 +1840,47 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   punctuation variants alone, and leave a genuine ambiguity alone too: "Alfred
   W. Burgren" against "Albert W. Burgren" is two first names for one surname and
   choosing between them would be adjudicating.*
+
+- **A resolution can land on one of the unit parcels its own method calls a
+  condominium, and nothing declines it.** 19 Macondray Lane joined in EAS to a
+  single active parcel, 0120076, so the resolver resolved it — while the same
+  method sentence reported that the sibling row "19 A" falls on a point shared
+  by 0120075 and 0120076, "which is what a condominium looks like". The city had
+  split the three-unit building's lot into two unit parcels in 2009; the page
+  would have been one flat. `resolve_eas.py report` now prints every resolved
+  finding whose parcel is among the ones its own condominium note lists. It
+  raises and does not decide, because the rule was measured first: four
+  committed entries match, and one of them is 801 Market Street on airspace
+  parcels 3705Z001–Z004, a building the site does want a page for. *Read that
+  block of the report, and mark a unit parcel `unresolved` with `by_hand`.*
+
+- **A batch that straddles a street the analysis neighborhoods divide on gets
+  filed across the street.** Green Street is the Russian Hill / Nob Hill line
+  on the 1000 block: the north side is Russian Hill and the south side Nob
+  Hill, and the pages already on disk follow that. The resolver's nearest-page
+  rule put 1809 Taylor Street (block 120, Russian Hill) under `nob-hill`
+  because the nearest Taylor Street page was across Green, and 1025 Green
+  Street (block 126, Nob Hill) under `russian-hill` because the nearest page
+  was 1000 Green opposite. `--area-from-nhood` is not the fix where the site has
+  settled its directories: measured over every page, 925 of 16,468 sit in a
+  directory other than their parcel's analysis neighborhood where that
+  neighborhood is also a directory the site uses — Financial District pages the
+  assessor calls Chinatown, Dogpatch pages it calls Potrero Hill — and those are
+  deliberate. *Before seeding, list each new page's directory against its
+  parcel's `analysis_neighborhood` and read the disagreements; on a boundary
+  street, the side of the street decides.*
+
+- **An owner can be the notable occupant, and "owners are out whatever their
+  era" is about ordinary owners.** The Russian Hill district nominations name
+  the first owner of nearly every house — a harness maker, a widow, a lumber
+  clerk — and those stay out. But the same nominations name, as owners, a
+  District Attorney of the graft trials and the Mooney case, the merchant whose
+  name the Feusier Octagon House carries, the confectioners' supplier A. P.
+  Giannini made an early Bank of Italy investor, and Paul Verdier of the City
+  of Paris, after whom 1001 Vallejo Street is still called the Verdier Mansion.
+  The root AGENTS.md's test is "whoever the building is known for" where a
+  published source covers them and they are plainly gone, and each of these
+  passes it. *Ask whether the person is independently notable or the building
+  bears their name — not whether the sentence calls them the owner.* The client
+  of a lost house who is neither (Myron Hunt's client at 1715 Taylor Street) is
+  left out, and so is his name on the wall that survives him.
