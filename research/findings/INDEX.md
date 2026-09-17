@@ -104,11 +104,11 @@ sit in — the three it touched most, and how many in all.
 | `nrhp-nominations/liberty-street-district.json` | 33 | 73 KB | 1869–1965 | 31 | 31 | `mission` |
 | `nrhp-nominations/listed-1966-1979.json` | 56 | 96 KB | 1782–1978 | 30 | 25 | `pacific-heights`, `haight-ashbury`, `financial-district` +10 |
 | `nrhp-nominations/listed-1980-1989.json` | 63 | 117 KB | 1871–1988 | 54 | 43 | `pacific-heights`, `south-of-market`, `mission` +12 |
-| `nrhp-nominations/listed-1990-1999.json` | 135 | 273 KB | 1849–1999 | 106 | 105 | `financial-district`, `north-beach`, `mission` +6 |
+| `nrhp-nominations/listed-1990-1999.json` | 135 | 275 KB | 1849–1999 | 106 | 105 | `financial-district`, `north-beach`, `mission` +6 |
 | `nrhp-nominations/russian-hill-macondray-lane-district.json` | 28 | 56 KB | 1878–1987 | 17 | 17 | `russian-hill` |
 | `nrhp-nominations/russian-hill-paris-block-district.json` | 18 | 37 KB | 1859–1960 | 16 | 15 | `nob-hill`, `russian-hill` |
 | `nrhp-nominations/russian-hill-vallejo-street-crest-district.json` | 89 | 174 KB | 1853–1986 | 74 | 70 | `nob-hill`, `russian-hill` |
-| `nrhp-nominations/southern-pacific-hospital-district.json` | 22 | 52 KB | 1898–1989 | 21 | 20 | `lone-mountain` |
+| `nrhp-nominations/southern-pacific-hospital-district.json` | 22 | 53 KB | 1898–1989 | 21 | 20 | `lone-mountain` |
 | `nrhp-nominations/uptown-tenderloin-district.json` | 482 | 1.3 MB | 1902–2001 | 463 | 452 | `tenderloin`, `nob-hill`, `union-square` |
 | `nrhp-nominations/uptown-tenderloin-notable-residents.json` | 9 | 18 KB | 1878–1969 | 9 | 9 | `tenderloin`, `nob-hill` |
 | `nrhp-nominations/uptown-tenderloin-section8.json` | 10 | 21 KB | 1902–1925 | 8 | 7 | `tenderloin`, `south-of-market` |
