@@ -1,0 +1,52 @@
+{
+  "source_id": "whatnow-sf",
+  "batch": "2026-09-17",
+  "read_on": "2026-09-17",
+  "notes": "One item queued from the 2026-09-17 poll, read.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 1,
+    "mentions": 1,
+    "remaining": "none"
+  },
+  "findings": [
+    {
+      "id": "2026-09-17-wn-0001",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "101 Spear Street",
+      "street_number": "101",
+      "street_name": "SPEAR",
+      "street_type": "ST",
+      "description": "Yank Sing, a family-owned dim sum restaurant, announced it will close its Rincon Center location at 101 Spear Street after 27 years, serving its final dinner on 20 September 2026. Its Stevenson Street location, open since February 1974, remains open.",
+      "extra": {
+        "business": "Yank Sing",
+        "years_at_address": 27,
+        "final_service": "2026-09-20",
+        "other_location_remains_open": "49 Stevenson Street"
+      },
+      "citation": {
+        "label": "WhatNow SF, “San Francisco Dim Sum Restaurant to Close Its Rincon Center Location After 27 Years,” 15 September 2026",
+        "url": "https://whatnow.com/san-francisco/restaurants/san-francisco-dim-sum-restaurant-to-close-its-rincon-center-location-after-27-years/"
+      },
+      "raw": {
+        "text": "Yank Sing, located at 101 Spear Street in San Francisco, will be closing its doors. After 27 years of service, the Rincon Center restaurant will serve its final dinner on September 20, 2026."
+      },
+      "confidence": "high",
+      "note": "Dated to the announcement rather than to the final dinner, which had not happened when the story ran. The article's mentions of the Stevenson Street sister location say only that it stays open — no event, so nothing for that page.",
+      "publish": {
+        "status": "declined",
+        "note": "One event, one entry. The Rincon Center page at /san-francisco/south-beach/spear-street/121/ already carries this closure, published by an earlier run: 2026-09-14, San Francisco Chronicle, “A 68-year-old S.F dim sum institution will close its largest location.” This is the case PIPELINE.md warns about — read.py reported 101 Spear Street as having no page, because the parcel's page is at 121 Spear, so its already-on-the-page check could not fire and the duplicate had to be caught by hand at the resolution. The detail this account adds (27 years at this location, a final dinner on 20 September 2026) is in this finding's extra rather than on a second line of the timeline."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3716021",
+        "path": "/san-francisco/south-beach/spear-street/121/",
+        "eas_address": "101 SPEAR ST",
+        "method": "EAS exact match on 101 SPEAR ST → parcel 3716021; sf-parcels has blklot 3716021 active, 121–121 SPEAR; the 2025 roll records it as commercial retail, built 1925. EAS puts 101, 121 SPEAR ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 101.",
+        "checked_on": "2026-09-17"
+      }
+    }
+  ]
+}
