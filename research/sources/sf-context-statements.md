@@ -1917,6 +1917,16 @@ its figure captions.
     `97yj-54sx` and the Office of Historic Preservation's register. One
     National Register number is misprinted: the North Beach Branch Library is
     `10000501` here and `11000501` in the NPS index. See LESSONS.md.
+  - **Appendix B's designation cells are the row as it stands today, not in
+    1982.** Beside the survey's district or listing, nine rows name a city
+    landmark or National Register number, and six of those designations
+    postdate the survey: Landmarks 226 (1999), 228 (2001), 237 (2002) and 287
+    (2019), and National Register 07001469 (2008) and 100006073 (2021). Their
+    clauses were removed from the 1982 findings and entries on 2026-09-18;
+    Landmarks 5 (1968), 33 (1970), 127 (1981) and 129 (1981) predate the
+    survey and stay. The Landmark #287 cell is also on the wrong row: it is
+    printed against 544–58 Union (0103/011), and the register puts No. 287 at
+    524 Union (0103009).
   - **`pdftotext -layout` handles Appendix B on a two-space column split**, but
     four rows wrap: `700 Filbert St./1811-21 Powell St./700 Columbus Ave./4-12
     Via Bufano` and `651-73 Union St./1656 Powell St./585 Columbus` continue on

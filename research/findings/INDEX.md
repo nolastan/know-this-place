@@ -142,7 +142,7 @@ sit in — the three it touched most, and how many in all.
 | `sf-context-statements/modernistic-styles.json` | 25 | 58 KB | 1924–1949 | 23 | 20 | `sunset-parkside`, `mission`, `east-cut` +10 |
 | `sf-context-statements/neighborhood-commercial-hcs.json` | 99 | 196 KB | 1873–2018 | 83 | 76 | `mission`, `pacific-heights`, `west-of-twin-peaks` +20 |
 | `sf-context-statements/new-deal-hcs.json` | 138 | 277 KB | 1915–2023 | 101 | 99 | `outer-richmond`, `mission`, `sunset-parkside` +27 |
-| `sf-context-statements/north-beach-hcs.json` | 630 | 1.3 MB | 1860–2021 | 553 | 551 | `north-beach`, `chinatown`, `russian-hill` +3 |
+| `sf-context-statements/north-beach-hcs.json` | 630 | 1.4 MB | 1860–2021 | 553 | 551 | `north-beach`, `chinatown`, `russian-hill` +3 |
 | `sf-context-statements/oceanside-hcs.json` | 32 | 75 KB | 1901–2010 | 20 | 20 | `sunset-parkside` |
 | `sf-context-statements/parkside-hcs.json` | 160 | 412 KB | 1892–2008 | 151 | 147 | `sunset-parkside`, `west-of-twin-peaks` |
 | `sf-context-statements/ppie-marina-hcs.json` | 109 | 263 KB | 1893–2022 | 88 | 86 | `marina`, `tenderloin`, `nob-hill` +1 |

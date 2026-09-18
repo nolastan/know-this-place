@@ -1980,5 +1980,6 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   listings — and where none has one, leave it off the timeline.* The same
   trap has a quieter form in the entries built from the statement's reprint of
   the 1982 survey: they are dated 1982 and name the landmark number the row
-  carries now, so 7 Columbus Avenue reads as City Landmark No. 237 twenty years
-  before it was one.
+  carries now, so 7 Columbus Avenue read as City Landmark No. 237 twenty years
+  before it was one. Those clauses were removed on 2026-09-18 wherever the
+  designation postdates 1982.
