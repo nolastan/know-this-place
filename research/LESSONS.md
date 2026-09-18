@@ -750,7 +750,13 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   rectories — fits both. The check was already on the page: 3tsw-4idn's
   `survey_name` said ST FRANCIS RECTORY. **Where a finding names a building,
   compare the name to `historic_status.survey_name` and the landmark list
-  (97yj-54sx) on the parcel the join chose.**
+  (97yj-54sx) on the parcel the join chose.** Sacred Heart in Hayes Valley is
+  the second case, made by earlier runs of other sources: its rectory at 546
+  Fillmore Street carried the church's 1898 construction, and its convent at
+  660 Oak Street the Black Panther breakfast programme that ran in the church
+  basement. *A run that lands on one building of a parish or campus reads every
+  sibling page before it writes*, and says in `unknowns` where an existing
+  entry sits next door.
 
 - **When a building has been moved, the fact belongs to the parcel it stands on
   now.** The Englander House was built at 807 Franklin Street in 1880 and rolled

@@ -6,7 +6,7 @@
 >
 > - **Kind:** PDF reports (federal nomination forms) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — the listings are indexed everywhere; the forms are not. A search for a street number returns the Wikipedia list entry and the NPS map pin, never the paragraph inside the PDF that dates the building and names its architect.
-> - **Coverage:** 153 of 165 San Francisco listings read — every one certified before 2016, plus the Civic Center district the index omits and the Uptown Tenderloin Historic District (08001407) read in full. All six Anne Bloomfield district nominations and the Southern Pacific Company Hospital Historic District (89000319) are read. 1,177 findings, 1,033 resolved, 989 published.
+> - **Coverage:** 160 of 165 San Francisco listings read — every one certified before 2020, plus the Civic Center district the index omits and the Uptown Tenderloin Historic District (08001407) read in full. All six Anne Bloomfield district nominations and the Southern Pacific Company Hospital Historic District (89000319) are read. 1,261 findings, 1,113 resolved, 1,060 published.
 > - **Local corpus:** `research/corpora/nrhp-nominations/` (one PDF and one `.txt` per reference number, plus `index-san-francisco.json` and `state.json`)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -278,19 +278,15 @@ URL. Worked example:
   district — 26 of 2000-2009
   ([`listed-2000-2009.json`](../findings/nrhp-nominations/listed-2000-2009.json))
   and 14 of 2010-2015
-  ([`listed-2010-2015.json`](../findings/nrhp-nominations/listed-2010-2015.json)).
+  ([`listed-2010-2015.json`](../findings/nrhp-nominations/listed-2010-2015.json)),
+  and **all 7 listings certified 2017-2019**
+  ([`listed-2017-2019.json`](../findings/nrhp-nominations/listed-2017-2019.json)).
 - **Not read, and this is the queue in order:**
-  1. **The 7 listings certified 2017-2019** — 100001018 Federal Office
-     Building, 100001338 Henry Geilfuss House, 100001665 Sacred Heart Parish
-     Complex (a district: four buildings), 100002287 Central YMCA, 100002359
-     The Women's Building, 100004413 Swedish American Hall, 100004531 Glen
-     Park BART Station. All seven serve a PDF at the `_text` path (tested
-     2026-09-18); they are the next batch and one session's work.
-  2. **The 8 listings certified 2020 or later** (100004868 onward), whose
+  1. **The 8 listings certified 2020 or later** (100004868 onward), whose
      `_text` path serves a 1.6 KB PNG placeholder — every one of them, tested
      2026-09-18. Finding another route to these PDFs is that batch's first
      job; the index carries no `NARA_URL` for any of them.
-  3. **77000334** (Mills Building and Tower) and **01000281** (Maritime
+  2. **77000334** (Mills Building and Tower) and **01000281** (Maritime
      National Historic Site, Fort Mason), whose PDFs have no text layer.
 - **Never guess a reference number.** 08001407 is the Uptown Tenderloin
   Historic District. 08000209 — a plausible guess for an early-2008 San
@@ -314,6 +310,57 @@ URL. Worked example:
   serve `application/pdf` and all eight certified from 2020 on serve the
   placeholder (HTTP 206, `image/png` to a `-r 0-200` request). Test the whole
   group before generalising from one number.
+
+- **The post-2016 forms are long, and the payload is in two places.** The
+  seven 2017-2019 nominations run 54 to 125 pages — about 1.36 million
+  characters — against two or three for a 1970s form, and most of it is
+  context: the history of the YMCA movement, of Brutalism, of second-wave
+  feminism. The address-level facts sit in section 7's dated alteration list
+  (the Sacred Heart and Swedish American Hall forms print one, year by year)
+  and in section 8's construction chronology. Strip the running page header
+  (`<name>  San Francisco, California`, `Section 8 page N`) before reading;
+  it repeats every page and doubles the text.
+- **An architect's biography lists his own homes, year by year.** The Swedish
+  American Hall form gives August Nordin's residence in seven directory years;
+  the Geilfuss form gives Henry Geilfuss's office addresses. A residence is a
+  notable-past-occupant fact and goes in `notable_residents` with its year,
+  but most of these do not survive — four of Nordin's seven have no EAS record
+  or no street. Take the residences; leave the lists of *other works*, which
+  are the comparisons cautioned against above.
+- **A parish complex's pages mislay facts between sibling parcels.** Before
+  this run the rectory at 546 Fillmore Street carried the 1898 entry for the
+  church at 554, and the convent at 660 Oak Street carried the Black Panther
+  breakfast programme that ran in the church basement. A district of four
+  buildings on four lots is four pages; read all four before adding to one,
+  and say in `unknowns` where an existing entry sits on the wrong sibling.
+- **The roll's year can be a stranger's.** Parcel 0351050, the 1936 Federal
+  Office Building at 50 United Nations Plaza, is on the 2025 roll as a 1982
+  office building filed under 1128 Market Street and 40 Leavenworth Street, so
+  `--overlap` flags every pre-1982 fact as predating the building. The
+  building's own name is the evidence; record the roll's year in
+  `building.completed_conflict` and publish.
+
+- **Verified:** 2026-09-18 (eleventh run. **All 7 listings certified
+  2017-2019**, every one with a usable text layer: 100001018 Federal Office
+  Building, 100001338 Henry Geilfuss House, 100001665 Sacred Heart Parish
+  Complex (four buildings on four parcels), 100002287 San Francisco Central
+  YMCA, 100002359 The Women's Building, 100004413 Swedish American Hall and
+  100004531 Glen Park BART Station. **84 found, 80 resolved, 71 published on
+  14 pages, 5 of them seeded; 9 declined, 4 unresolved.** Six of the seven
+  buildings had pages already, and what survived the overlap scan is the dated
+  second layer: the Section 504 sit-in of April 1977 at 50 United Nations
+  Plaza, the Black Panther breakfast programme (10 March 1969) and the UFW
+  lettuce boycott (September 1970) at Sacred Heart under Father Eugene Boyle,
+  Golden Gate University's 1910-1967 years in the Central YMCA, the 1980 arson
+  and pipe bomb at The Women's Building, Cafe Du Nord's opening in 1908. The
+  nine declines repeat what the pages already carried — two landmark numbers,
+  two openings, the 2007 vacating of 50 United Nations Plaza and the ARC/AIDS
+  vigil and quilt. Two notable residents went into `notable_residents`: Henry
+  Geilfuss at 811 Treat Avenue (1882-1900) and August Nordin at three
+  addresses. Three sentences went into `unknowns`: two sibling-parcel
+  misplacements at Sacred Heart and The Women's Building's opening month
+  (June 1979 against the page's autumn 1979). Where this run stopped: the
+  2020-and-later listings, whose `_text` path serves a placeholder.)
 
 - **Verified:** 2026-09-18 (tenth run. Two batches: **all 26 listings
   certified 2000-2009** apart from the Uptown Tenderloin district, and **all 14

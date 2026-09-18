@@ -817,10 +817,13 @@ def overlap(path: Path) -> None:
         # a sentence — so the description arrives carrying years that belong to
         # other events, under whichever date the extractor chose, and often
         # restating that date in the prose the timeline label already shows.
+        # A residency bound for the notable_residents panel is not a timeline
+        # item, so no label shows its year and repeating it is not a restatement.
         desc = finding.get("description", "")
         own = set(_YEARS.findall(str(finding.get("date", ""))))
         said = _YEARS.findall(desc)
-        if own and any(y in own for y in _YEAR_AGAIN.findall(desc)):
+        panel = bool((finding.get("extra") or {}).get("notable_resident"))
+        if own and not panel and any(y in own for y in _YEAR_AGAIN.findall(desc)):
             date_hits.append((finding.get("id", "?"), res["path"],
                               sorted(own)[0], desc[:70]))
         foreign = sorted({y for y in said if y not in own})
