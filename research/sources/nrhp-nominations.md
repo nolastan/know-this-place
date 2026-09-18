@@ -6,7 +6,7 @@
 >
 > - **Kind:** PDF reports (federal nomination forms) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — the listings are indexed everywhere; the forms are not. A search for a street number returns the Wikipedia list entry and the NPS map pin, never the paragraph inside the PDF that dates the building and names its architect.
-> - **Coverage:** 113 of 165 San Francisco listings read — every one certified before 2000, plus the Civic Center district the index omits and the Uptown Tenderloin Historic District (08001407) read in full. All six Anne Bloomfield district nominations and the Southern Pacific Company Hospital Historic District (89000319) are read. 981 findings, 864 resolved, 822 published.
+> - **Coverage:** 153 of 165 San Francisco listings read — every one certified before 2016, plus the Civic Center district the index omits and the Uptown Tenderloin Historic District (08001407) read in full. All six Anne Bloomfield district nominations and the Southern Pacific Company Hospital Historic District (89000319) are read. 1,177 findings, 1,033 resolved, 989 published.
 > - **Local corpus:** `research/corpora/nrhp-nominations/` (one PDF and one `.txt` per reference number, plus `index-san-francisco.json` and `state.json`)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -273,15 +273,25 @@ URL. Worked example:
   Hospital Historic District**
   ([`southern-pacific-hospital-district.json`](../findings/nrhp-nominations/southern-pacific-hospital-district.json)),
   and **all 17 listings certified 1990-1999**
-  ([`listed-1990-1999.json`](../findings/nrhp-nominations/listed-1990-1999.json)).
+  ([`listed-1990-1999.json`](../findings/nrhp-nominations/listed-1990-1999.json)),
+  and **all 40 listings certified 2000-2015** apart from the Uptown Tenderloin
+  district — 26 of 2000-2009
+  ([`listed-2000-2009.json`](../findings/nrhp-nominations/listed-2000-2009.json))
+  and 14 of 2010-2015
+  ([`listed-2010-2015.json`](../findings/nrhp-nominations/listed-2010-2015.json)).
 - **Not read, and this is the queue in order:**
-  1. **50 listings certified 2000 or later** — 2000-2009 (20, the Uptown
-     Tenderloin district apart), 2010-2015 (15), 2016-2023 (15). Era batches,
-     per the first run; they are single-building nominations again. **Check the
-     `_text` path before planning the post-2016 group** — see the caution below.
-  2. **77000334** (Mills Building and Tower) and **01000281** (Maritime
-     National Historic Site, Fort Mason), whose PDFs have no text layer, and
-     **100008228**, whose `_text` path serves a PNG placeholder.
+  1. **The 7 listings certified 2017-2019** — 100001018 Federal Office
+     Building, 100001338 Henry Geilfuss House, 100001665 Sacred Heart Parish
+     Complex (a district: four buildings), 100002287 Central YMCA, 100002359
+     The Women's Building, 100004413 Swedish American Hall, 100004531 Glen
+     Park BART Station. All seven serve a PDF at the `_text` path (tested
+     2026-09-18); they are the next batch and one session's work.
+  2. **The 8 listings certified 2020 or later** (100004868 onward), whose
+     `_text` path serves a 1.6 KB PNG placeholder — every one of them, tested
+     2026-09-18. Finding another route to these PDFs is that batch's first
+     job; the index carries no `NARA_URL` for any of them.
+  3. **77000334** (Mills Building and Tower) and **01000281** (Maritime
+     National Historic Site, Fort Mason), whose PDFs have no text layer.
 - **Never guess a reference number.** 08001407 is the Uptown Tenderloin
   Historic District. 08000209 — a plausible guess for an early-2008 San
   Francisco listing — downloads with HTTP 200 and serves 154 pages of nomination
@@ -297,10 +307,67 @@ URL. Worked example:
   assessor's APNs for the site's published pages at those numbers are 0340007,
   0340008, 0340010 and 0340011. Resolve an inventory row against its neighbours
   and against the parcels the site already holds, never on its own.
-- **A caution for the post-2016 group before anyone plans it:** the nine-digit
-  reference numbers do **not** serve a PDF at the `_text` path — 100008228 (the
-  Timothy L. Pflueger House) returns a 1.6 KB PNG placeholder. Those documents
-  need a different route, and finding it is part of that batch.
+- **The nine-digit reference numbers split at 2020, not at 2016.** The
+  first run of the post-2016 group assumed none served a PDF because
+  100008228 (the Timothy L. Pflueger House) returned a 1.6 KB PNG placeholder.
+  A ranged request against all fifteen showed the seven certified 2017-2019
+  serve `application/pdf` and all eight certified from 2020 on serve the
+  placeholder (HTTP 206, `image/png` to a `-r 0-200` request). Test the whole
+  group before generalising from one number.
+
+- **Verified:** 2026-09-18 (tenth run. Two batches: **all 26 listings
+  certified 2000-2009** apart from the Uptown Tenderloin district, and **all 14
+  certified 2010-2015** — 40 nominations, every one with a usable text layer.
+  **196 found, 169 resolved, 167 published on 33 pages, 6 of them seeded; 2
+  declined, 27 unresolved.** Per batch: 2000-2009 131 found, 104 resolved, 103
+  published on 19 pages (3 seeded); 2010-2015 65 found, 65 resolved, 64
+  published on 14 pages (3 seeded). Five residencies went into
+  `notable_residents` rather than the timeline — John C. Spencer, Constance de
+  Young Tobin and Joseph O. Tobin, Julian R. Waybur, Nell Sinton and Benjamin
+  H. Swig.
+
+  What this run learned, beyond the cautions above:
+
+  - **The 2000s nominations are about buildings the site already knew; what
+    they add is the second layer.** Twenty-seven of the 33 pages existed, most
+    already carrying a construction date and architect from a context
+    statement. What survived the overlap scan was dated alterations, openings,
+    occupants and events no statement had: the Bank of Italy's founding in the
+    building that stood where the Colombo Building is (17 October 1904), the
+    Superior Court and the Graft Prosecution in Temple Sherith Israel
+    (1906-1908), the United Nations Charter negotiations in the Fairmont's
+    penthouse, the Coit Tower lock-out of July 1934, the police firing on the
+    Bayview Opera House on 28 September 1966, Diego Rivera's 1931 fresco and
+    Ansel Adams's photography department at the Art Institute.
+  - **The unresolved are all one of two things, and both are known holes.**
+    Nine findings are on Port or Navy land EAS does not address with a parcel
+    (the Central Embarcadero piers; the five Treasure Island and Yerba Buena
+    Island listings, which give no street number at all). Fifteen more are
+    condominium-mapped: the Coffin-Redington Building, whose second address
+    300 Beale Street is unit 605 of live/work parcel 3747075, and the
+    State Teachers' College campus at 55 Laguna Street — both wait on #228.
+    The other three are the Hale Brothers warehouses at 423-429 Stevenson
+    Street, which have no EAS record.
+  - **The pages disagree with the NPS index about listing dates, and one
+    source is the cause.** Colombo Building and North Beach Library pages
+    carried National Register listings dated 2018; 700 7th Street carried
+    1995 for Baker & Hamilton. Each is now a sentence in the page's
+    `unknowns`. The 2018 dates are the North Beach context statement's own
+    year — six entries share the pattern — and fixing them is a separate
+    task, not this run's.
+  - **Ask whether a building has a page by its parcel, not its address.** A
+    pre-read `ls` for `*/mint-street/54`, `*/columbus-avenue/1` and
+    `*/market-street/700` found nothing, and all three buildings had pages —
+    under `mint-plaza/14`, `columbus-avenue/7` and `kearny-street/1`, the
+    parcel's lowest number. Run the resolver before judging what the site
+    already carries.
+  - **A resident belongs in the panel, and a household's other members do not
+    belong in `raw.text` either.** Residencies with a period were published
+    as `notable_residents` rows. Three raw spans named a spouse or child who
+    is not the notable figure (the Waybur and Burr houses); those names were
+    redacted by hand and the spans carry `raw.note`.
+  - Where this run stopped: the 2017-2019 listings, seven PDFs that fetch,
+    are the next batch.)
 
 - **Verified:** 2026-09-17 (ninth run. Two batches. First 89000319, the
   Southern Pacific Company Hospital Historic District (Elizabeth Krase, Page &

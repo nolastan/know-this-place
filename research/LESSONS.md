@@ -1936,3 +1936,30 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   resolution's `eas_address` to the fetch set. Measured first over every
   findings file on disk: 33 files have at least one such street, and re-running
   `report` on a whole batch before and after the change printed no difference.
+
+- **On macOS, `sed 's/[ \t]+/ /g'` deletes every letter t.** BSD `sed` does not
+  read `\t` inside a bracket expression as a tab, so the class is space,
+  backslash and `t`, and a whitespace-squeezing pass turns "the Statement of
+  Significance" into "he S a emen of Significance". It looks exactly like a
+  damaged scan, and the first nomination of the 2000-2015 run was nearly
+  written off as bad OCR on the strength of it. *Squeeze with `tr -s ' '`, and
+  when a whole text layer looks mangled in one consistent way, suspect your own
+  pipe before the document.*
+
+- **Ask whether a building has a page by its parcel, never by the source's
+  address.** A page lives at the lowest number on its parcel, sometimes on
+  another street: the Haas Candy Factory at 54 Mint Street is
+  `mint-plaza/14/`, the Colombo Building at 1-21 Columbus Avenue is
+  `columbus-avenue/7/`, the Mutual Savings Bank at 700 Market Street is
+  `kearny-street/1/`. An `ls san-francisco/*/<street>/<number>` before
+  resolving reported all three as missing, and planning around that would have
+  seeded duplicates and skipped the overlap scan. *Resolve first, then read
+  the page at `resolution.path`.*
+
+- **Test a whole group before generalising a fetch failure from one item.**
+  A dossier recorded that nine-digit National Register reference numbers serve
+  a PNG placeholder instead of a PDF, from one test on 100008228. A ranged
+  request against all fifteen found the seven certified 2017-2019 serve PDFs
+  and only the eight from 2020 on do not — so a batch had been written off
+  that was one session's work. *A `curl -r 0-200 -w '%{content_type}'` over
+  every item costs a minute.*
