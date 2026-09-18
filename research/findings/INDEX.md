@@ -116,7 +116,7 @@ sit in — the three it touched most, and how many in all.
 | `nrhp-nominations/uptown-tenderloin-section8.json` | 10 | 21 KB | 1902–1925 | 8 | 7 | `tenderloin`, `south-of-market` |
 | `sf-context-statements/african-american-hcs.json` | 248 | 512 KB | 1853–2024 | 184 | 180 | `bayview-hunters-point`, `western-addition`, `pacific-heights` +26 |
 | `sf-context-statements/biographies-a-c.json` | 412 | 836 KB | 1878–2020 | 353 | 317 | `pacific-heights`, `presidio-heights`, `financial-district` +35 |
-| `sf-context-statements/biographies-d-f.json` | 208 | 444 KB | 1888–1990 | 190 | 137 | `pacific-heights`, `sunset-parkside`, `north-beach` +26 |
+| `sf-context-statements/biographies-d-f.json` | 208 | 445 KB | 1888–1990 | 190 | 137 | `pacific-heights`, `sunset-parkside`, `north-beach` +26 |
 | `sf-context-statements/biographies-g-i.json` | 176 | 363 KB | 1878–2005 | 145 | 115 | `sunset-parkside`, `pacific-heights`, `financial-district` +25 |
 | `sf-context-statements/biographies-j-l.json` | 125 | 262 KB | 1889–1990 | 105 | 91 | `pacific-heights`, `sunset-parkside`, `glen-park` +21 |
 | `sf-context-statements/biographies-m-o.json` | 247 | 485 KB | 1880–1994 | 212 | 158 | `pacific-heights`, `west-of-twin-peaks`, `nob-hill` +27 |
@@ -142,7 +142,7 @@ sit in — the three it touched most, and how many in all.
 | `sf-context-statements/modernistic-styles.json` | 25 | 58 KB | 1924–1949 | 23 | 20 | `sunset-parkside`, `mission`, `east-cut` +10 |
 | `sf-context-statements/neighborhood-commercial-hcs.json` | 99 | 196 KB | 1873–2018 | 83 | 76 | `mission`, `pacific-heights`, `west-of-twin-peaks` +20 |
 | `sf-context-statements/new-deal-hcs.json` | 138 | 277 KB | 1915–2023 | 101 | 99 | `outer-richmond`, `mission`, `sunset-parkside` +27 |
-| `sf-context-statements/north-beach-hcs.json` | 630 | 1.3 MB | 1860–2021 | 553 | 551 | `north-beach`, `chinatown`, `russian-hill` +3 |
+| `sf-context-statements/north-beach-hcs.json` | 630 | 1.4 MB | 1860–2021 | 554 | 552 | `north-beach`, `chinatown`, `russian-hill` +3 |
 | `sf-context-statements/oceanside-hcs.json` | 32 | 75 KB | 1901–2010 | 20 | 20 | `sunset-parkside` |
 | `sf-context-statements/parkside-hcs.json` | 160 | 412 KB | 1892–2008 | 151 | 147 | `sunset-parkside`, `west-of-twin-peaks` |
 | `sf-context-statements/ppie-marina-hcs.json` | 109 | 263 KB | 1893–2022 | 88 | 86 | `marina`, `tenderloin`, `nob-hill` +1 |
