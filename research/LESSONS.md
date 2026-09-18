@@ -1884,3 +1884,55 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   bears their name — not whether the sentence calls them the owner.* The client
   of a lost house who is neither (Myron Hunt's client at 1715 Taylor Street) is
   left out, and so is his name on the wall that survives him.
+
+- **A record with no street number can still resolve, when it names the
+  building standing over the site.** The evidence bar refuses cross streets and
+  metes and bounds, and that is right for a record that only *locates* itself.
+  It is not the same case as a record that *identifies* a building: the Apollo
+  storeship's nomination has no address at all and says the wreck lies under
+  "the former Federal Reserve Bank of San Francisco building" at Battery and
+  Sacramento, which is one APN with one roll row; the Niantic's puts its
+  excavation in the construction at Clay and Sansome in 1978, and EAS holds one
+  address on that corner, on a tower the roll dates to 1981. Both were resolved
+  by hand with the named building in `method`, and both descriptions frame the
+  fact as the site before. *A named, still-standing building is check material
+  like a lot dimension; a corner on its own is not.* Where the record then
+  contradicts itself about which corner — that nomination says northwest in its
+  heading and southwest in its description — the disagreement goes in the
+  page's `unknowns` and the parcel comes from the building, not the corner.
+
+- **Federal, military and Port land is a standing hole in EAS, and it is worth
+  knowing before a batch is planned rather than after it is read.** Of
+  seventeen National Register nominations read in one batch, three could not
+  reach a parcel for this reason alone: a lighthouse with no number, a naval
+  commandant's house at 1 Whiting Way on Yerba Buena Island where EAS holds 15,
+  20, 25, 50, 61, 71 and 81 Whiting Way and none of them carries a parcel
+  number at all, and a pier on the Embarcadero where EAS's numbering starts at
+  5 and there is no PIER street. Thirteen findings, read and written and
+  unresolvable. *Check EAS for the street before extracting a document about
+  the Presidio, Treasure Island, Yerba Buena Island, Fort Mason or the piers* —
+  the pass is still worth doing, and the coverage note should say why nothing
+  landed.
+
+- **A campus or complex prints its parcel and not its address, and the acreage
+  is the check.** A district nomination for an institution names buildings,
+  not street numbers, and the one address on its form may be dead — the
+  Southern Pacific Company Hospital's 1400 Fell Street has no EAS record and
+  the nearest surviving numbers are on the next block. What it does print is
+  "Lots 2 and 3, City block 1206" and "2.5 acres", and those two lots are the
+  only active parcels on the block, their areas summing to 2.51 acres.
+  *Resolve on the printed parcel, confirm with the stated acreage, and then
+  work out which building sits on which lot from the roll* — storeys, units and
+  the entrance the last rehabilitation moved.
+
+- **`resolve_eas.py manifest` only knew the streets the findings named, so a
+  by-hand resolution onto a different street wrote the wrong street beside the
+  path's slug and no coordinates at all.** The tool already corrects a
+  readdressed building from the parcel's own EAS rows, but those rows are
+  fetched per street name taken from the findings; a campus nomination headed
+  "1400 Fell Street" and placed on 333 Baker Street had no Baker Street rows to
+  correct it with, and the manifest came out `street_display: "Fell Street"`
+  under `baker-street/333/`. `load_city` now adds the street of every
+  resolution's `eas_address` to the fetch set. Measured first over every
+  findings file on disk: 33 files have at least one such street, and re-running
+  `report` on a whole batch before and after the change printed no difference.
