@@ -743,6 +743,14 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   institution rather than a street number alone, ask whether that institution was
   at that address on that date** — an institution that moved takes its name with
   it, and every downstream tool knows only that the number exists.
+  *The institution can also have stayed put and still be on the wrong parcel:*
+  St Francis of Assisi's sources print 610 Vallejo, which EAS puts on the
+  parish rectory next door (0131008, built 1908), and six church findings went
+  onto the rectory's page because the property class — churches, convents,
+  rectories — fits both. The check was already on the page: 3tsw-4idn's
+  `survey_name` said ST FRANCIS RECTORY. **Where a finding names a building,
+  compare the name to `historic_status.survey_name` and the landmark list
+  (97yj-54sx) on the parcel the join chose.**
 
 - **When a building has been moved, the fact belongs to the parcel it stands on
   now.** The Englander House was built at 807 Franklin Street in 1880 and rolled
