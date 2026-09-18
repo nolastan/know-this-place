@@ -730,9 +730,12 @@ def overlap(path: Path) -> None:
         their pages, cited per document, when this batch re-extracted them.
         So the test is the set of item ids *this file* cites, not the prefix.
         """
-        src = entry.get("source") or ""
-        return (src in (source_id, data.get("batch"))
-                or src in our_source_ids
+        # `source` may be a list where one event left several records
+        # (REFERENCE.md → historical_record); any one of them counts.
+        srcs = entry.get("source") or ""
+        srcs = srcs if isinstance(srcs, list) else [srcs]
+        return (any(s in (source_id, data.get("batch")) or s in our_source_ids
+                    for s in srcs)
                 or entry.get("description", "") in ours)
     hits, name_hits, roll_hits, proper_hits, checked, missing = [], [], [], [], 0, 0
     gone_hits: list[tuple] = []
@@ -928,7 +931,8 @@ def _uncited_sources(doc: dict) -> set[str]:
     for key in ("historical_record", "timeline"):
         for entry in (doc.get(key) or []):
             if isinstance(entry, dict) and entry.get("source"):
-                cited.add(entry["source"])
+                src = entry["source"]
+                cited.update(src if isinstance(src, list) else [src])
     return {c for c in cited if c not in declared}
 
 

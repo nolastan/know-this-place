@@ -6,7 +6,7 @@
 >
 > - **Kind:** PDF reports (federal nomination forms) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — the listings are indexed everywhere; the forms are not. A search for a street number returns the Wikipedia list entry and the NPS map pin, never the paragraph inside the PDF that dates the building and names its architect.
-> - **Coverage:** 160 of 165 San Francisco listings read — every one certified before 2020, plus the Civic Center district the index omits and the Uptown Tenderloin Historic District (08001407) read in full. All six Anne Bloomfield district nominations and the Southern Pacific Company Hospital Historic District (89000319) are read. 1,261 findings, 1,113 resolved, 1,060 published.
+> - **Coverage:** every San Francisco listing with a text layer is read — all certified through 2023, including three the NPS index returns only by envelope, plus the Civic Center district the index omits and the Uptown Tenderloin Historic District (08001407) in full. The 2020-2023 listings are read from OHP's drafts, since npgallery serves them a placeholder. 1,356 findings, 1,203 resolved, 1,144 published. Unread: 77000334 and 01000281 (no text layer).
 > - **Local corpus:** `research/corpora/nrhp-nominations/` (one PDF and one `.txt` per reference number, plus `index-san-francisco.json` and `state.json`)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -280,13 +280,12 @@ URL. Worked example:
   and 14 of 2010-2015
   ([`listed-2010-2015.json`](../findings/nrhp-nominations/listed-2010-2015.json)),
   and **all 7 listings certified 2017-2019**
-  ([`listed-2017-2019.json`](../findings/nrhp-nominations/listed-2017-2019.json)).
+  ([`listed-2017-2019.json`](../findings/nrhp-nominations/listed-2017-2019.json)),
+  and **all 11 listings certified 2020-2023**, read from the drafts the
+  California Office of Historic Preservation posted
+  ([`listed-2020-2023.json`](../findings/nrhp-nominations/listed-2020-2023.json)).
 - **Not read, and this is the queue in order:**
-  1. **The 8 listings certified 2020 or later** (100004868 onward), whose
-     `_text` path serves a 1.6 KB PNG placeholder — every one of them, tested
-     2026-09-18. Finding another route to these PDFs is that batch's first
-     job; the index carries no `NARA_URL` for any of them.
-  2. **77000334** (Mills Building and Tower) and **01000281** (Maritime
+  1. **77000334** (Mills Building and Tower) and **01000281** (Maritime
      National Historic Site, Fort Mason), whose PDFs have no text layer.
 - **Never guess a reference number.** 08001407 is the Uptown Tenderloin
   Historic District. 08000209 — a plausible guess for an early-2008 San
@@ -339,6 +338,52 @@ URL. Worked example:
   `--overlap` flags every pre-1982 fact as predating the building. The
   building's own name is the evidence; record the roll's year in
   `building.completed_conflict` and publish.
+
+- **From 2020 on, npgallery has no text, and OHP's drafts are the way in.**
+  Every listing certified 2020 or later serves a 1.6 KB PNG at the `_text`
+  path. The California Office of Historic Preservation posts each nomination
+  draft for the State Historical Resources Commission at
+  `ohp.parks.ca.gov/pages/1067/files/<name>.pdf`, with no index page and
+  inconsistent names (`CA_San Francisco County_…`, `CA_San Francisco_…`,
+  `…_DRAFT 2019-08-29.pdf`, even a misspelt `Pfleuger`), so guessing names
+  finds a third of them. **Enumerate the folder through the Wayback Machine
+  instead**: `web.archive.org/cdx/search/cdx?url=ohp.parks.ca.gov/pages/1067/files/&matchType=prefix&fl=original&collapse=urlkey`
+  lists ~2,600 files, about seventy of them San Francisco. Two traps: OHP now
+  answers a retired file with **HTTP 200 and a one-page "archived document,
+  available by request" PDF of 296,087 bytes**, so check the page count, not
+  the status; and the Wayback capture nearest 2024 is often that placeholder
+  too — ask the CDX for the file's captures and take one from before 2021.
+  A draft is what the Commission reviewed, not the certified form; cite it as
+  a draft, with its date where the filename gives one. The same folder holds
+  drafts for properties still pending or never listed (Compton's Cafeteria,
+  the Raymond Hotel Apartments, Kinmon Gakuen, the North Beach and Ingleside
+  Terraces districts, St. Francis Wood, George Washington High School) — a
+  lead for a separate batch, since a pending draft is not a listing.
+- **San Francisco Planning's review packets are a second route.** As a
+  Certified Local Government the city reviews every nomination; the Historic
+  Preservation Commission packet for the case (`…CRV.pdf` under
+  `sfplanning.s3.amazonaws.com/commissions/hpcpackets/`) carries the whole
+  draft as an exhibit — 2020-008400CRV is Buon Gusto's.
+
+- **Verified:** 2026-09-18 (twelfth run, same session as the eleventh. **All 11
+  listings certified 2020-2023**: 100004868 Japanese YWCA, 100004869 Gran
+  Oriente Filipino Hotel, 100005794 John A. Whelan House, 100005987 Mission
+  Cultural Center, 100006073 Buon Gusto Sausage Factory, 100006911 Hobart
+  Building, 100007488 Glide Memorial Church, 100008228 Timothy L. Pflueger
+  House, 100008498 Bethlehem Shipbuilding Corporation Hospital, 100009644 St.
+  Luke's Episcopal Church and 100009717 Western Manufacturing Company
+  Building, every one from an OHP draft. **95 found, 90 resolved, 84
+  published on 20 pages, 5 of them seeded; 6 declined, 5 unresolved.** These
+  forms reach off the property more than the older ones — the Glide
+  nomination alone places the Mary Elizabeth Inn, the 1965 California Hall
+  raid, the Black Man's Free Store and a CUPP benefit — and those dated,
+  addressed events were taken; architects' lists of other works were not.
+  Two notable residents: John A. Whelan and Timothy Pflueger. Corrections:
+  582 Market Street, the Hobart Building's parcel, carried the Crown
+  Zellerbach Building's 1959 entry and SOM as its architect from an earlier
+  run (spec row corrected to Willis Polk, entry left and named in
+  `unknowns`); 1755 Clay Street's architect was spelt "Gree". Where the run
+  stopped: nothing listed is left but the two forms with no text layer.)
 
 - **Verified:** 2026-09-18 (eleventh run. **All 7 listings certified
   2017-2019**, every one with a usable text layer: 100001018 Federal Office
