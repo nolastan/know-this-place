@@ -175,6 +175,13 @@ here is [Adding a source](#adding-a-source).
   parcel whose only local finding is the work program stays `ceqacodea10a11`
   = A, while all 58 parcels here carrying `Article 10 Individual Landmark`
   and all 118 carrying `Article 11 Individual` are A*.
+- **A city landmark's designation year is `97yj-54sx`** (Landmarks Listed in
+  Article 10), one row per landmark: `landmarkno`, `name`, `address`, `apn`,
+  `yeardesignated` and the designation report's URL. Query it by number,
+  `https://data.sf.gov/resource/97yj-54sx.json?landmarkno=237`; page source id
+  `sf-planning-landmarks`. Its `apn` is not always the page's parcel — Julius
+  Castle is 0079004 here and 0079005 in `3tsw-4idn`, and both carry the
+  landmark — so match on the number, not the parcel.
 - **Citation label:** "SF Planning Department"
 - **Verified:** 2026-07-27 (4,475 Castro parcels fetched by `apn` in chunks of
   400; apn 2752016 = 744 Castro St → ceqacode B). `ceqacodereason` tokens

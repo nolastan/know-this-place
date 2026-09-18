@@ -1963,3 +1963,22 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   and only the eight from 2020 on do not — so a batch had been written off
   that was one session's work. *A `curl -r 0-200 -w '%{content_type}'` over
   every item costs a minute.*
+
+- **A statement's inventory of existing designations carries the statement's
+  date, not the designation's.** The North Beach context statement's regulatory
+  chapter lists every landmark, National Register listing and state point of
+  interest in its area, with numbers and no dates, and the extraction dated all
+  seventeen rows to the statement itself: 2018. Fifteen went onto pages as "2018 ·
+  Listed as …" — the Old Ohio Street Houses (1979), City Landmark No. 5 (1968),
+  and the Paper Doll, whose landmarking in 2019 came *after* the date it was
+  given. The nomination run of 2026-09-18 caught it only because it arrived
+  with the real certification date for two of them. *A listing that the source
+  reports rather than makes has no date from that source: take the date from
+  the register that made it — the NPS index's `CertDate` for the National
+  Register, DataSF `97yj-54sx`'s `yeardesignated` for city landmarks, the
+  Office of Historic Preservation's listed-resources register for state
+  listings — and where none has one, leave it off the timeline.* The same
+  trap has a quieter form in the entries built from the statement's reprint of
+  the 1982 survey: they are dated 1982 and name the landmark number the row
+  carries now, so 7 Columbus Avenue reads as City Landmark No. 237 twenty years
+  before it was one.

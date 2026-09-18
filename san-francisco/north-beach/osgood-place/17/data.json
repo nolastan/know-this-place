@@ -193,6 +193,13 @@
    "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
    "label": "Unreinforced Masonry Building Survey, 1990",
    "retrieved": "2026-08-29"
+  },
+  {
+   "id": "nps-nrhp-index",
+   "name": "National Park Service, National Register of Historic Places listed properties (NRHP locations map service)",
+   "query": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/0/query?where=NRIS_Refnum%3D%2779000535%27&outFields=NRIS_Refnum,RESNAME,Address,CertDate&f=json&returnGeometry=false",
+   "label": "National Register of Historic Places index, National Park Service",
+   "retrieved": "2026-09-18"
   }
  ],
  "historical_record": [
@@ -203,10 +210,13 @@
    "source": "north-beach-context-statement"
   },
   {
-   "date": "2018",
+   "date": "1979-05-31",
    "kind": "designation",
    "description": "Listed as National Register of Historic Places 79000535 — Old Ohio Street Houses.",
-   "source": "north-beach-context-statement"
+   "source": [
+    "nps-nrhp-index",
+    "north-beach-context-statement"
+   ]
   }
  ],
  "historic_survey": {
