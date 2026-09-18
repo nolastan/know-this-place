@@ -126,6 +126,13 @@
       "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
       "label": "North Beach Historic Context Statement, adopted 2022",
       "retrieved": "2026-08-22"
+    },
+    {
+      "id": "nps-nrhp-index",
+      "name": "National Park Service, National Register of Historic Places listed properties (NRHP locations map service)",
+      "query": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/0/query?where=NRIS_Refnum%3D%27100006073%27&outFields=NRIS_Refnum,RESNAME,Address,CertDate&f=json&returnGeometry=false",
+      "label": "National Register of Historic Places index, National Park Service",
+      "retrieved": "2026-09-18"
     }
   ],
   "historical_record": [
@@ -148,10 +155,13 @@
       "source": "north-beach-context-statement"
     },
     {
-      "date": "2018",
+      "date": "2021-02-05",
       "kind": "designation",
       "description": "Listed as National Register of Historic Places SG100006073 — Buon Gusto Sausage Factory.",
-      "source": "north-beach-context-statement"
+      "source": [
+        "nps-nrhp-index",
+        "north-beach-context-statement"
+      ]
     },
     {
       "date": "2019",
