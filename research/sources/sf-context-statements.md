@@ -5573,6 +5573,12 @@ appendices restart their own numbering.
   and occasionally with two architects. **Read the appendices against the
   narrative before writing a year to a page**, and put the disagreement in
   `unknowns` rather than choosing.
+  **The landmark table on printed p. 16 is where this bit hardest:** it puts
+  the Crown Zellerbach Building (No. 183) at 590 Market Street, which EAS
+  files on the Hobart Building next door, and the entry sat on the Hobart's
+  page from #205 until #380 moved it to 1 Bush Street — the address the
+  narrative and Chapter 9 both give. Resolve that table's rows on the
+  landmark number (97yj-54sx), not the street number.
 - **Its overlap is with the architect biographies, not with a neighbourhood
   survey.** The `architecture-preservation-professionals-biographies` collection
   covers many of the same practitioners, and where both name the same architect

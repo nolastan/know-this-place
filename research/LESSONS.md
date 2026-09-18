@@ -774,6 +774,22 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   basement. *A run that lands on one building of a parish or campus reads every
   sibling page before it writes*, and says in `unknowns` where an existing
   entry sits next door.
+- **A landmark table's street number can be wrong while its landmark number is
+  right, and the wrong number can be real.** The Modern context statement's
+  landmark table prints the Crown Zellerbach Building (No. 183) at 590 Market
+  Street; EAS files 590 Market on the Hobart Building next door, itself a
+  landmark, so a `designation` fit the parcel and it published there (#205,
+  moved in #380). The same document says 1 Bush Street twice, and a finding
+  from **the same batch** already sat on 1 Bush. **When a finding carries a
+  landmark number, look the number up in 97yj-54sx and compare its `apn` with
+  the parcel the join chose** — and run `check.py --find` on the building's
+  name before resolving: two findings about one building on two parcels means
+  one of them is wrong. *Measured over every findings file: 176 resolved
+  findings name exactly one landmark number and 19 disagree with 97yj-54sx's
+  APN — mostly an adjacent lot after reparcelization (Mills Building,
+  Hallidie), but some because the source printed the wrong landmark number
+  (St Ignatius as No. 172, which is St Boniface's). So the landmark list
+  raises the question; it does not decide it.*
 
 - **When a building has been moved, the fact belongs to the parcel it stands on
   now.** The Englander House was built at 807 Franklin Street in 1880 and rolled
