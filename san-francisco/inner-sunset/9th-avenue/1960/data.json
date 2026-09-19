@@ -1,0 +1,120 @@
+{
+  "address": "1960 9th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/inner-sunset/9th-avenue/1960/",
+  "apn": "2126013",
+  "block": "2126",
+  "lot": "013",
+  "eas_baseid": "329995",
+  "coordinates": {
+    "lat": 37.751633,
+    "lng": -122.46529
+  },
+  "parcel": {
+    "lot_area_sqft": 53243,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Public Use",
+    "construction_type_code": "NA",
+    "zoning": "P",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Forest Hill",
+    "analysis_neighborhood": "Inner Sunset",
+    "property_location_raw": "0000 1960 09TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Midcentury Recreation Historic District (Discontiguous)",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1947–1961",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201510058851",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-10-05",
+      "status_date": "2015-10-16",
+      "estimated_cost": 5000,
+      "revised_cost": 7000,
+      "description": "install geo grout as a temporary shoring system at retaining wall between 1960 9th ave and 1945 8th ave. geo grout per bkg engineering plan 10/1/15. ref. permit #2015-1005-8852 for work at 1945 8th ave.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200603015730",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2006-03-01",
+      "status_date": "2009-03-23",
+      "revised_cost": 1200000,
+      "description": "renovate and expand building and accessibility upgrade throughout the site includes new doors and windows, new roofing,new flooring, painting and cabinetry. exterior site improvement include ramps, playground equipment,sidewalk improvements,planting & irrigation.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2006–2015",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=09TH&street_type=AVE&address_number=1960",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2126013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2126&lot=013",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2126013",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.46529012612704%2037.7516330068018)%27)",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "new-deal-context-statement",
+      "name": "Christopher VerPlanck and Donna Graves, San Francisco New Deal Historic Context Statement: Rebuilding the City, 1933 to 1943, San Francisco Planning Department and San Francisco Heritage, adopted March 1, 2023",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=03b7d76ed3d5b9b7a48457e4bc99930486a45f8e13f8b9955e56fcfd504e15a7&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "San Francisco New Deal Historic Context Statement, adopted 2023",
+      "retrieved": "2026-08-29"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1935–1941",
+      "kind": "public works",
+      "description": "The Works Progress Administration built tennis courts and a basketball court on what had been an unimproved sand lot.",
+      "source": "new-deal-context-statement"
+    }
+  ]
+}

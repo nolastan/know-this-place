@@ -15,8 +15,10 @@ already exists**.
    design rules.
 2. [design/IMPLEMENTATION.md](../../../design/IMPLEMENTATION.md) — tokens, type,
    rem→px, metrics, icons.
-3. [shared/AGENTS.md](../../../shared/AGENTS.md) — the page contract and the HTML
-   each block expects.
+3. [shared/AGENTS.md](../../../shared/AGENTS.md) — the page contract and the
+   map from `data.json` key to block.
+4. [shared/BLOCKS.md](../../../shared/BLOCKS.md) — the block whose markup you
+   are about to touch. One block, not the file.
 
 Do **not** read the rest of `design/`. The principles, conventions, tool quirks
 and meta notes are the `/design` loop's material; reading them here is how a

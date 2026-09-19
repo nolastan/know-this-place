@@ -1,0 +1,103 @@
+{
+  "address": "301 Locust Street, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/locust-street/301/",
+  "apn": "1011001",
+  "block": "1011",
+  "lot": "001",
+  "eas_baseid": "292783",
+  "coordinates": {
+    "lat": 37.788175,
+    "lng": -122.452301
+  },
+  "parcel": {
+    "year_built": 1954,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 4,
+    "lot_area_sqft": 6418.13,
+    "building_area_sqft": 3187,
+    "lot_depth_ft": 2.69,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Presidio Heights",
+    "analysis_neighborhood": "Presidio Heights",
+    "property_location_raw": "0000 0301 LOCUST              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1472681,
+    "assessed_improvement_value": 253893
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1954",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Presidio Heights Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1890–1930",
+    "source": "sf-historic-districts"
+  },
+  "permits": [],
+  "permit_summary": {
+    "count_on_file": 1,
+    "range": "2001",
+    "shown_on_page": 0,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LOCUST&street_type=ST&address_number=301",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1011001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1011&lot=001",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1011001",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.45230107973089%2037.7881748582358)%27)",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "modern-architecture-context-statement",
+      "name": "Mary Brown, San Francisco Planning Department, San Francisco Modern Architecture and Landscape Design 1935-1970 Historic Context Statement, adopted 12 January 2011",
+      "query": "http://sfplanninggis.org/docs/Historical_Context_Statements/Modern%20Architecture%20Context%20adopted%20Jan%202011.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Modern Architecture and Landscape Design Context Statement, adopted 2011",
+      "retrieved": "2026-09-01"
+    }
+  ],
+  "building": {
+    "architect": "William Wurster"
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "address": "2790 Green Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/green-street/2790/",
+  "apn": "0950017",
+  "block": "0950",
+  "lot": "017",
+  "eas_baseid": "291248",
+  "coordinates": {
+    "lat": 37.795137,
+    "lng": -122.444997
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 13,
+    "stories": 7,
+    "rooms": 74,
+    "bathrooms": 35,
+    "lot_area_sqft": 7130,
+    "building_area_sqft": 37500,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Cow Hollow",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 2790 GREEN               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 209603,
+    "assessed_improvement_value": 1489485
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Cow Hollow First Bay Tradition Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1888–1914",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200202128979",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2002-02-12",
+      "status_date": "2002-08-30",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "upgrading air condition equipment @ roof (sensors/filters, increasing height of elevator overide",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200012077455",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-12-07",
+      "status_date": "2001-12-07",
+      "estimated_cost": 90000,
+      "revised_cost": 90000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9315124",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-09-02",
+      "status_date": "1993-11-01",
+      "estimated_cost": 100000,
+      "description": "parapet corrective work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9205968",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-04-14",
+      "status_date": "1993-05-19",
+      "estimated_cost": 47000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1992–2006",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GREEN&street_type=ST&address_number=2790",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0950017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0950&lot=017",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0950017",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44499673866261%2037.79513718961918)%27)",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "russian-american-context-statement",
+      "name": "Nina Bogdan, Russian American Historic Context Statement, San Francisco Planning Department, adopted by the Historic Preservation Commission October 15, 2025",
+      "query": "https://sfplanning.org/node/3132",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "retrieved": "2026-08-30"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1973",
+      "kind": "occupancy",
+      "description": "The Soviet consulate occupied this building from 1973, becoming the consulate of the Russian Federation in 1991 and closing on the order of the United States government in 2017. It is a designated San Francisco point of interest, and was for years the site of demonstrations by campaigners for the right of Soviet Jews to emigrate.",
+      "source": "russian-american-context-statement"
+    }
+  ]
+}

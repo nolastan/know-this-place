@@ -1,0 +1,87 @@
+{
+  "address": "1091 Portola Drive, San Francisco, CA 94127",
+  "path": "/san-francisco/west-of-twin-peaks/portola-drive/1091/",
+  "apn": "2982029",
+  "block": "2982",
+  "lot": "029",
+  "eas_baseid": "455858",
+  "coordinates": {
+    "lat": 37.740099,
+    "lng": -122.458756
+  },
+  "parcel": {
+    "lot_area_sqft": 29982,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Public Use",
+    "construction_type_code": "NA",
+    "zoning": "P",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Miraloma Park",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 1091 PORTOLA             DR0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9510054",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1995-06-29",
+      "status_date": "1997-10-21",
+      "estimated_cost": 900000,
+      "description": "horizontal addition.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PORTOLA&street_type=DR&address_number=1091",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2982029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2982&lot=029",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2982029",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "digitalsf-46915",
+      "name": "1091 Portola Drive, 1941. San Francisco Subjects Photograph Collection (SFP 162), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/46915",
+      "label": "San Francisco Subjects Photograph Collection (SFP 162), San Francisco Public Library",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1941-04-17",
+      "kind": "photograph",
+      "description": "Photographed.",
+      "source": "digitalsf-46915"
+    }
+  ]
+}

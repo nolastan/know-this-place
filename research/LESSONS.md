@@ -1,0 +1,2047 @@
+# What we've learned the hard way
+
+Cross-cutting lessons that cost a session or a correction. Source-specific ones
+live in the dossiers. **Add to this list** whenever a run discovers something a
+future run would otherwise repeat — that is what makes this module improve
+rather than just accumulate.
+
+This is a register, not a document to read front to back. Grep it for the thing
+you are about to do — `--overlap`, `condominium`, `privacy filter`, `renumber`,
+`pdftotext`, `manifest` — before a run, and again when a run surprises you. The
+rules that bind every run regardless are in [AGENTS.md](AGENTS.md); the
+procedure is in [RUNBOOK.md](RUNBOOK.md).
+
+---
+
+
+- **A folder with no index page can still be listed: ask the Wayback
+  Machine.** OHP posts nomination drafts under one path with no listing and
+  no naming rule, and guessing names found four of eleven. The CDX API
+  (`web.archive.org/cdx/search/cdx?url=<host>/<path>/&matchType=prefix&fl=original&collapse=urlkey`)
+  returned every file ever captured there in one call. *Before concluding a
+  document has no route, list its host's folder through the CDX.* And check
+  what came back, not the status: OHP answers a retired file with HTTP 200 and
+  a one-page placeholder PDF, and the recent Wayback captures are that same
+  placeholder — page count and byte size are the tell
+  ([sources/nrhp-nominations.md](sources/nrhp-nominations.md)).
+
+- **A page's `source` can be a list, and a tool that assumes a string
+  crashes on it.** REFERENCE.md lets one timeline item cite several records
+  as a list; `check.py --overlap` and `--landed` both died on the first page
+  that did (`unhashable type: 'list'`) and are now fixed. *Anything new that
+  reads `historical_record[].source` has to take both shapes.*
+
+- **`--overlap` is blind to the pages the same run is about to seed, and a
+  seeded page is not a blank one.** The scan compares findings against pages *on
+  disk*, so on a route-B run — where the resolver's manifest feeds `seed-list` —
+  every new page reports clean, and then `seed_pages.py` fills it with whatever
+  the citywide surveys already say about that parcel. One batch wrote four
+  construction dates onto four freshly seeded pages that had arrived carrying the
+  same building names and years from a neighbourhood survey. **Run
+  `check.py --overlap` twice: once before you decide what to write, and again
+  after `seed-list` has created the pages.** The second run is the one that sees
+  the duplicates.
+
+- **Most facts about a demolished building land on the page of the thing that
+  replaced it, and a flat sentence then describes the wrong building.** A
+  finding resolves on a street number, and the number outlives the building. Say
+  "the Robins Building was built to the design of T. Paterson Ross" on a parcel
+  the assessor dates 1987 and the page has just told a reader that the 1987
+  tower is a 1907 brick building. The check is one comparison — the parcel's
+  `year_built` against the fact's date — and the fix is a frame, not a decline:
+  *stood here until*, *then on the corner*, *a building then standing here*.
+  These are usually the best facts a page has, because a building that is gone
+  is exactly what a reader cannot find anywhere else. `check.py --overlap` now
+  runs the comparison as its fifth scan; measured across every findings file on
+  disk it flags 612 of 9,080 published findings, so it is a real backlog and not
+  a quirk of one source.
+
+- **A table in a scanned report is worth taking only if its columns survived the
+  OCR with their rows.** Three reports in one batch printed the same downtown
+  survey as a table of address, building name and rating. Two came through
+  aligned; the third dumped its rating columns into the text layer in a heap
+  after the names, and three of its apparent alignments were wrong when checked
+  against the two that were right. **Read the names and numbers off a scrambled
+  table and refuse its values** — a name tied to a street number is legible even
+  when the row is not, and it is often the part no other source supplies. The
+  tell is cheap: find one row whose value you can verify elsewhere, and check it.
+
+- **A proposal in a source is not an event.** Environmental reports, permits,
+  planning applications and rezonings all describe what is *about to* happen, in
+  the future tense, and the tense is the whole difference. A demolition
+  described as a plan is a **site-history** finding dated to the year the record
+  saw the building standing; it becomes a demolition finding only when some
+  record states it in the past tense. The corroboration can come from a
+  neighbouring project's later report, which is how three of this module's
+  demolitions were confirmed.
+
+- **A catalogue filter is a claim about the source, and nobody checks it after
+  the first run.** The 789 environmental review documents were split into "titled
+  by street address" and "titled by project or area" on one rule — does the title
+  begin with a digit — and four batches then treated the 172 as the whole of the
+  addressed material. They were about half of it. **162** documents describe
+  exactly one site in exactly the same way and are titled after the developer's
+  project (*Russ Tower*, *One Sansome*, *Neiman-Marcus department store*), and
+  **50** more print the address in the middle of the title (*Case No. 2003.0273E :
+  46 Geary Street*). The filter had become a description of the source, and the
+  best unread material in the collection was sitting on the far side of it.
+  **Before a second batch, run the opposite of your filter over the catalogue and
+  read fifty of the titles it returns.** It costs one regular expression; here it
+  found 212 documents of the kind already being mined.
+
+- **A batch is a unit of reading, not a unit of the source's own filing.** The
+  DigitalSF archive ends in a long tail: 36 catalogued collections holding
+  between one and nineteen addressed records each. Read as the archive files
+  them, that is 36 findings files, 36 register lines and 36 dossier entries for
+  188 candidate addresses, and a queue no session would ever choose to start.
+  Read as one batch it is a single afternoon. **When the next unit the source
+  names is far smaller than a session, take the whole remainder instead** — and
+  where the tool assumed one unit per run, make it take a set. The cost of that
+  change was one function argument; the cost of not making it was a source that
+  could never be finished. The same shape will turn up wherever a source has a
+  head of large units and a tail of tiny ones.
+
+- **A published fact with no findings file is invisible to every count this
+  module keeps.** Ten pages were carrying facts from six Corbett Heights
+  newsletter issues while the dossier, the register and `check.py --stats` all
+  recorded those issues as unread — the pass that published them wrote no
+  findings file, so nothing on disk connected the pages to the source. The next
+  run re-read the issues, re-extracted sixteen facts that were already on their
+  pages, and only caught it because `--overlap` flagged three of them by
+  wording. **The findings file is not paperwork for the pages; it is the only
+  record that the reading happened.** A run that publishes without writing one
+  has spent a session and left the module believing the work is still to do.
+  Before extracting from any batch, grep `san-francisco` for its citation
+  label — a source that has published before may already have reached the
+  pages you are about to write.
+
+- **A page's dated entries cite a source by an id into the page's own `sources`
+  array, and nothing was checking that the id resolves.** A publishing pass that
+  mints per-issue ids (`corbett-heights-neighbors-jun26`) for a source the page
+  already cited can rename an id out from under an existing entry, or drop the
+  entry the existing record depended on. The citation then renders as nothing
+  and `validate.py` still passes, because the HTML is exactly what the renderer
+  produces from the broken `data.json`. `check.py --landed` now fails on it.
+  **When a page already cites a source you are adding to, reuse the id it has
+  and give the new issue a suffix — never reassign the bare id.**
+
+- **Identical extraction output across many files means you extracted a
+  wrapper, not the documents.** 43 of SF Planning's 81 DPR 523 survey PDFs are
+  **Adobe PDF Packages**: the outer PDF is a one-page "install Adobe Reader"
+  notice and the real documents are *embedded files* inside it. `pdftotext`
+  returned the same 621 characters for all 43, and a bulk pass that only counted
+  bytes would have recorded 43 documents read and nothing found. `pdfdetach
+  -list` / `-save` got 553 per-address forms out of them. The general rule is
+  cheap and catches this whole family — a portfolio, a redirect page, a
+  cookie wall, a "your download will begin shortly" shell: **after any bulk text
+  extraction, count the distinct outputs.** If N files produced far fewer than N
+  distinct texts, you have not read the corpus.
+
+- **A finding's `date` is the date of the *fact*; the renumbering question is
+  about the date of the *address*.** They are usually the same and for a modern
+  survey of an old building they are a century apart. The Market & Octavia DPR
+  forms were written in 2006, in 2006's street numbers, about buildings put up
+  in the 1880s — and `resolve_eas.py`'s pre-1910 guard refused 200 of 473 of
+  them for a renumbering that had already happened long before the surveyor
+  wrote the address down. When a source's addresses are contemporary with the
+  *reading* rather than the *event*, say so before resolving, and check the
+  guard's exemption applies. The fix was to exempt records that print their own
+  assessor block and lot, which is the guard's own stated condition.
+
+- **A field shared by many records is about the batch, not the record.** The
+  Lee Sims photographs carry a `500$a` "Photographer's notes" that reads like a
+  per-item address — *160 October 1970, 700 block Howard Street, Jim's General
+  Merchandise, 789 Howard; Imperial Hotel; Panama Hotel* — and **385 of its 431
+  instances are on a note shared by more than one record**, because it describes
+  a 36-frame roll and is attached to all 36 frames. Read per-record it puts every
+  building on the roll at every other one's address. The same shape turns up as a
+  folder title in an archive, a header row repeated down a scanned table, and a
+  volume-level note in a finding aid. **Before using any metadata field as an
+  address, count its distinct values against the record count.** Roughly one
+  per record means someone wrote it about that item; far fewer means it belongs
+  to the roll, the folder or the accession.
+
+- **A modern geocode attached to an old record locates the camera, not the
+  subject.** SFP 169's donor appended a street address to 549 of 918 slides —
+  *"SF Opera House from Franklin. 406 Franklin St"*, *"Elevated View Opera House
+  & War Memorial. 1390 Market St"* — and those name the viewpoint, not the
+  building in the frame. Where the same note also states a number in its own
+  prose the two disagree about as often as they agree: 2324 against 2330
+  Chestnut, 230 against 250 Brannan, 581 against 553 Buckingham. It is the most
+  seductive shape this module meets, because a geocode always resolves: it is
+  well-formed, it is current, and EAS confirms it. **Treating it as the address
+  would have produced about 300 confidently wrong findings in a collection whose
+  honest yield is 21.** The rule that survives: a coordinate or address supplied
+  *by the digitizer* is provenance about the scan, and only a number stated by
+  the record's own describer is a claim about a building.
+
+- **A quoted title, a model number and a background landmark all parse as street
+  addresses.** `"200 Years of Resistance" on Uganda Liquors` yielded *200 Years
+  Street*; *Sikorsky HH-52A Seaguard* yielded *52A Seaguard*; *"a construction
+  crane in the middle of the street. 555 Market in background"* put a photograph
+  of Market Street on a skyscraper's page. Each is the same failure as the
+  footnote-marker trap already recorded below — **a number next to a capitalised
+  word is not an address, it is a shape** — and each is cheap to guard once
+  named: strip quoted spans the way parentheses are stripped, refuse a number
+  whose left-hand neighbour is a hyphen, and check for a qualifier **after** the
+  number as well as before it.
+
+- **Privacy binds on `raw.text`, which is committed, not only on the page.** A
+  collection can be a buildings source and a privacy problem at once: SFP 125's
+  addressed half names South of Market hotels by street number, and one of the
+  same captions reads *"[name withheld] room in Daton Hotel, 175 3rd Street,
+  personal items atop dresser next to sink"*. The publication filters never see
+  it, because it never reaches a page — and it is in the repository anyway.
+  Redact the record's own personal-name subject headings out of the quoted span
+  when the finding is written, and refuse to carry a free-text archival note
+  into the findings file at all where that note is a donor's or a photographer's
+  prose about who is in the frame. The citation URL is a better audit trail than
+  a verbatim caption, and it carries nobody.
+
+- **A pre-1909 address that resolves cleanly is the module's most convincing
+  wrong answer.** The 1909 renumbering moved street numbers across much of the
+  city, and an EAS join cannot see it: the number exists today, it sits on a
+  parcel, and the resolver reports a clean match for a building that may be a
+  block away or a century newer. SFP 162 published 42 such findings before the
+  audit caught them, and **36 of the 42 sat on a parcel whose building the
+  assessor dates after the photograph** — one by 122 years. The cheap test is
+  the roll: a photograph older than the building under it is a resolution to
+  distrust, whatever the join said. `resolve_eas.py` now refuses any address
+  dated before 1910 and says what would unblock it — a cross street, a block
+  face, a lot dimension — so the refusal is mechanical rather than a thing the
+  next auditor has to think of.
+
+- **An alias maps a street's name, never its direction.** `--alias
+  DOUGLAS=DOUGLASS` is a spelling; `--alias 'BUENA VISTA WEST=BUENA VISTA'` is
+  not. EAS keeps a post-direction in `address` rather than in `street_name`, so
+  collapsing it files the finding on the wrong street and seeds a second page
+  for a building that already has one. Check what EAS actually holds in each
+  field before inventing an alias.
+
+- **A report that reads the page cannot tell your work from the last run's.**
+  `check.py --report` counted a page's current `unknowns` and
+  `building.completed_conflict` as the batch's own, so a digitalsf batch that
+  stated no conflicts at all opened its PR claiming five conflicts and four
+  disputed dates — all of them written months earlier by the context-statement
+  runs that had already documented those same buildings. The columns now
+  subtract what the page held before this batch's commits touched it, the way
+  *Pages created* and *Pages edited* already did. **Any per-batch count taken
+  from a page's current state is wrong on a page two sources have touched**, and
+  the more thoroughly the site is documented the more often that is every page.
+
+- **A `description` warning is not a page defect until you check the page.** The
+  source-voice sweep looked like 571 descriptions to rewrite and 571 pages to
+  re-render. It was 571 descriptions and **69 pages**: the rest were either
+  declined, or published into a *structured component* rather than prose — the
+  1990 UMB batch put all 343 of its into `historic_survey`, so its wording never
+  reached a page at all. **Size a description sweep by grepping the target pages
+  for the offending sentence, not by counting the warnings.** The two numbers
+  differed by eight-fold here, and the difference is the whole cost of the job.
+- **A phrasing check only catches the shapes its author had in front of them.**
+  `SOURCE_VOICE_PASSIVE` listed *illustrated, pictured, depicted, reproduced* and
+  missed *photographed as an example of the neighbourhood's flats* — nine
+  descriptions, published, that read exactly like the four it did catch. When you
+  fix a new shape of a known slip, **add it to the pattern in the same commit**,
+  or the next run rediscovers it by eye.
+
+- **A parcel's page is not always at a number the finding names, and both the
+  resolver and the publisher can get this wrong in opposite directions.** The
+  site keeps one page per parcel, at the number the assessor files it under, so
+  a corner building addressed on two streets has its page on whichever street
+  the assessor chose. `resolve_eas.py` forms `resolution.path` from the
+  finding's own number, which is right until the page turns out to live at the
+  other address. **28 SFP 23 findings said `published` with a path no page has
+  ever occupied** — every one had actually landed, on the parcel's page one
+  street over — and **eight UMB findings were declined outright with "no page
+  was seeded for it"** while that same page sat there the whole time. The
+  question to ask is never "is there a page at this path" but "does this parcel
+  have a page"; `check.py` now asks it, and fails a published finding whose
+  path has no `data.json`, naming the page the APN does have.
+
+- **A point-placed address is settled by the block's number line, not by the
+  parcel's range field.** Where EAS carries no parcel for an address the
+  resolver places it by point, and EAS points sit centimetres from a boundary.
+  The available test used to be sf-parcels' `from_address_num`/`to_address_num`,
+  which fires on 61 of 582 point placements and is wrong about 46 of them,
+  because that field is routinely narrower than the numbers a parcel holds.
+  Reading all 61 found the test that held every time: **another parcel holding
+  a number between the address and the parcel the point chose.** Nothing in
+  between, 35 of 35 correct; something in between, 13 of 13 the neighbour or
+  further. It is blind on a stretch EAS joins no parcel to, and `report` says
+  so rather than reporting a clean bill.
+
+- **A wrong placement can seed a page under an address its parcel does not
+  carry.** `seed_pages.py` takes the manifest's lowest number as the page's
+  own, so a point that landed on the wrong parcel does not just misfile a fact
+  — it can name a building. Parcel 0113023 is 287–289 Union Street to EAS and
+  to the assessor, and had a page titled *265–289 Union Street* because one
+  finding placed 265 there. **When you retract a placement, check whether the
+  page it created is the parcel's own address**, and correct the page, not only
+  the finding.
+
+- **`seed_pages.py render <neighborhood>` sweeps the render backlog.** 969
+  pages are grandfathered in `scripts/render-backlog.txt` because their HTML
+  still carries hand-written prose the renderer would drop, and rendering a
+  whole neighborhood to re-render your own two pages rewrites them too — this
+  run silently replaced a hand-written description on 1640 Grant Avenue that
+  way and caught it in `git status`, not in `validate.py`. **Render the page
+  paths you edited, one by one.**
+
+- **`--landed` reads `data.json`, and a page can hold a key the renderer does
+  not know.** The Corbett Heights tree has a `building_history` object on eight
+  Mars Street pages; those pages are hand-written HTML in
+  `scripts/render-backlog.txt`, which is the only reason their events are
+  visible. Writing that key onto a *rendered* page puts the fact in `data.json`,
+  passes `--landed`, passes `validate.py`, and shows a reader nothing — six
+  pages in one run. **After rendering, grep the rendered `index.html` for a
+  phrase from each fact you wrote.** A key that is right on one page in a
+  neighborhood is not thereby right on the next one.
+
+- **A condominium hides behind a single EAS row.** The resolver defers a
+  condominium stack, but it used to let one through when EAS carried the
+  address on exactly one parcel — no siblings, therefore no stack. 655 Corbett
+  Avenue is a 39-unit building of 1964 with one EAS row, and it seeded a page
+  for flat 105. The roll knew all along: `property_location` ends in the unit
+  designation, `AV0105`, where a whole parcel ends in `0000`. `resolve_eas.py`
+  now reads that suffix and declines. **Twenty-nine published pages are still
+  one flat rather than a building**, and whether those buildings can have a page
+  at all is a directory-contract question for a person: #228.
+
+- **An archive that paginates by recency has no stable batch unit.** The
+  Corbett Heights Neighbors newsletter shows ten or eleven issues to a page,
+  newest first, so an issue slides from page 1 to page 2 as new ones appear.
+  One run recorded its coverage as "page 1 of 5"; two months later the run that
+  took "page 2" re-read the January 2026 issue and had to decline four facts
+  already on pages. **Record coverage as a range of the source's own dates, and
+  name batches the same way.**
+
+- **"Published" is a claim about a page, and it can be false silently.** A
+  publisher that sets `building.architect` only if the field is empty does
+  nothing when the page already names the same person under another spelling —
+  "Chris McKeon" against "Christopher Dennis McKeon" — and the finding is marked
+  published anyway. Four entries in one run said published and had changed
+  nothing. **After writing the pages and before closing the books, run
+  `python3 research/tools/check.py --landed <findings-file>`**: it reports every
+  published finding whose page carries neither its description nor a spec row
+  naming anyone it records. Each one is a decline, or a description trimmed to
+  the part the page lacked with `publish.note` saying so.
+
+- **`--overlap`'s wording percentage is not the signal — the page is.** The
+  score compares content words, so a one-line credit scores about the same
+  against a page that already says exactly that as against a page that says
+  nothing of the kind: "Designed by architect Louis Mastropasqua" scored 50% in
+  both cases. Sorting by score and reading the top of the list misses the 40%
+  duplicates and wastes time on the 60% originals. Dump each flagged page's
+  existing `historical_record`, `building` and `sources` in one pass and decide
+  from that — on a citywide batch over a well-surveyed neighbourhood it is the
+  difference between 98 correct declines and a page that says the same thing
+  twice.
+
+- **A PDF's thin text layer is not the document's yield.** `pdftotext` returned
+  841 lines from the 2004 sexual-identity subcultures statement and none of them
+  were its two densest pages: both appendices are scanned images, and between
+  them they carried 160 of the document's 188 findings. Nothing warns you — the
+  appendix heading extracts, the table under it does not. **Run `pdfimages
+  -list` over any page whose extracted text looks like a heading with nothing
+  after it**, and read the image with `pdftoppm -r 400 -png -x -y -W -H` to crop
+  a column at a time. A thin extraction is a hypothesis about the document, not
+  a fact about it.
+
+- **A demolished building is `rejected`, not `resolved`.** Its street number
+  usually still resolves to a live parcel, and publishing against that parcel
+  hangs the fact on whatever was built afterwards. Where a source marks its own
+  addresses — the counterculture statement marks nearly every one `(extant)` or
+  `(demolished)` — that marking outranks the resolver, which knows only that the
+  number exists today. 18 of that document's 100 addresses were rejected this
+  way, and every one of them would otherwise have become a page.
+
+- **Read the table of contents before planning the read.** A *strategy* is not a
+  *survey*, whatever list it is published on. The LGBTQ+ Cultural Heritage
+  Strategy sits on SF Planning's completed historic-context-statements page, ran
+  56 pages, and contains exactly one street number — in a photo credit. Chapters
+  named for goals and recommended actions mean a policy document and near-zero
+  yield; chapters named for property types, periods or a study area mean a
+  resource document. Two minutes on the contents page sizes the run correctly.
+
+- **An undated finding needs a spec row, not a timeline entry.** A page's
+  timeline is ordered by date, so an entry whose date is `unknown` renders a row
+  reading *unknown* above the 1930s. `building.architect`, `.builder`,
+  `.developer` and `.name` all carry a credit with no year; nothing carries an
+  undated garden, storefront detail or occupancy. **Decide which spec row will
+  take an undated finding before you publish it, and decline it if none will** —
+  the renderer will not stop you writing it into the timeline. The Modern
+  Architecture statement wrote 92 of these before a render caught them, and the
+  same defect was live on two pages from an earlier batch. `check.py` now fails
+  the run on it; the backlog it was raised against has been swept.
+
+- **In a born-digital PDF, a footnote marker manufactures street addresses.**
+  `pdftotext` renders a superscript reference number inline, so a marker that
+  falls at the end of a sentence runs straight into the next one and reads as a
+  street number: "…popular spot for gay sex.537 Fifth Street was popular for
+  cruising" yields *537 Fifth Street*, which does not exist. The LGBTQ citywide
+  statement produced **eleven** such phantoms in 710 mentions — 545 Turk Street,
+  908 and 909 Polk Street, 1054 Eighteenth Street among them — and several would
+  have resolved cleanly in EAS and become confidently wrong pages, because the
+  street is real and the number is plausible. **On any source with numbered
+  footnotes, check the character before the number**: a lower-case letter, a
+  full stop or a closing quote means the "number" is a reference marker and the
+  words after it are a new sentence. The same collision invents institutions —
+  "Eighteenth Street Services" became *1054 Eighteenth Street*.
+- **The overlap tool compares wording; duplicates hide behind different wording.**
+  `--overlap` scores text similarity, so it catches a paraphrase and misses a
+  restatement in another register. Volume D–F of the professionals biographies
+  had **20** findings flagged that way and **35 more** that were flagged only by a
+  second scan: match the practitioner's **surname plus a date within two years**
+  against every historical-record entry already on the page from another source.
+  Almost all 35 were a prolific builder's work — Henry Doelger's Sunset model
+  homes, the North Beach flat builders — already documented, house by house, by
+  the neighbourhood survey devoted to that builder. **A citywide source about a
+  person overlaps a neighbourhood survey about the same person almost
+  completely**, and the neighbourhood survey usually says more. Run both scans
+  before publishing anything organised by practitioner.
+- **A hedge in the extractor's voice is a page naming its source.** Every
+  research document hedges — *gives no year*, *records it as demolished*, *dates
+  it 1929 in the list and 1923 in a caption* — and carrying that hedge into a
+  `description` produces "The volume records…", which the runbook forbids in a
+  page body. It reached **50 descriptions** in one run before a grep caught it.
+  State the fact instead ("Since demolished", "Dated 1929, though 1923 is also
+  given"), or drop the hedge and let `date_precision` carry it. **Grep every
+  published description for the source's own noun — volume, statement, survey,
+  report, archive — before you commit.**
+- **An undated credit is not automatically a decline.** `building.architect`,
+  `building.builder` and `building.developer` are components that hold a credit
+  with no year, and a page can say who built it without claiming when. Decline
+  only where no spec row fits either. Runs before this one declined undated
+  credits as a class and threw away facts the page could have carried.
+- **Ask what the page already says before you write, not after.**
+  `python3 research/tools/check.py --overlap <findings-file>` compares every
+  resolved finding against the historical record, hook and narrative already on
+  its target page and prints the ones that repeat it. Two statements routinely
+  cover the same buildings, so a citywide batch lands on parcels a neighbouring
+  survey has already documented: the LGBTQ citywide run wrote 18 findings that
+  restated what the page already carried — the Harvey Milk camera shop, the
+  Twin Peaks Tavern windows, the Full Moon Coffeehouse — and one of them
+  contradicted the page on a date the older entry had right. All of it was
+  caught by hand at audit time, after the pages had been written and rendered.
+  **Run it between `resolve_eas.py apply` and publishing.** It flags candidates
+  for a decision, not errors: decline the duplicate, or trim it to the part that
+  is new.
+- **A scanned fixed-column table is a 2-D object. Read it from the word boxes.**
+  `pdftotext -layout` reconstructs a table by guessing at whitespace, and on a
+  scan it guesses differently on every page — the 1990 UMB survey's appendix
+  lost every Block on one page, every street number on two others, and half of
+  each year on a fourth. Line-based extraction found 1,179 rows; rebuilding rows
+  and columns from `pdftotext -bbox-layout` word coordinates found 1,902 in the
+  same 51 pages. Cluster words into rows by y, assign them to columns by x
+  against the page's own header line, and anchor the column template on whichever
+  header word the scan preserves best. *Sixty per cent more yield for an hour's
+  work, on any table this project will ever read.*
+- **A parser that requires every column throws away good rows.** The same pass
+  demanded a four-digit assessor block and silently dropped 200 rows on pages
+  where that one column had not survived. Accept a row that still identifies a
+  building, record each field's condition, and let the checks downstream decide
+  what each column can be used for.
+- **A street name that no longer exists reads exactly like bad OCR.** ARMY is
+  Cesar Chavez Street and MONROE is Dashiell Hammett Street, and both look like
+  scanner damage until the record's own assessor block is consulted — block 4324
+  carries Cesar Chavez, and the parcel printed against "20 MONROE" is Dashiell
+  Hammett 20–20. **On any pre-1995 source, resolve the street through the block
+  before concluding the scan is at fault.**
+- **A numbered street with no street type resolves to the Avenue.** San
+  Francisco has both a Sixth Street and a Sixth Avenue, forty blocks apart, and
+  a source that prints "665 6TH" has told you neither. The UMB ratings table
+  sent seven South of Market buildings to the Richmond that way. Where the
+  source states an assessor block, take the street type from that block's own
+  parcels before resolving; it is the difference between a right answer and a
+  confident wrong one, and nothing downstream catches it except the block check.
+- **A run that regenerates HTML must check which pages were written by hand.**
+  Re-rendering two bespoke pages in this run would have replaced a hand-written
+  description, a sub-neighbourhood, a building type and two stat tiles with the
+  seeder's defaults. The renderer is the default, not the authority: before a
+  bulk re-render, diff one page of each kind, and hand-patch the ones that have
+  drifted on purpose.
+- **A run that stops at "resolved" leaves the worst possible state.** PR #114
+  put 425 `sf-context-statements` findings onto pages and never marked the
+  findings file. The next agent could not tell finished work from unstarted
+  work, and closing the loop cost a full verification pass over 425 entries
+  against 260 pages. *Mark the findings file in the same commit that edits the
+  pages.* `check.py` now fails when a file has published entries and resolved
+  ones with no decision recorded.
+- **A duplicated status will eventually disagree with itself.** The findings
+  schema used to carry a file-level `stage` alongside the per-entry statuses;
+  PR #114's file said `stage: resolved` while its facts were on pages. Derived
+  state belongs in the tool that derives it, not in the file.
+- **Don't sample a corpus sequentially to estimate its density.** OAI-PMH and
+  most archive APIs return records in accession order, so any prefix is one or
+  two accessions rather than a cross-section. A `digitalsf` prospecting pass
+  measured 1.2% on that basis and was wrong by more than threefold.
+- **Read the field the archivist wrote in, not the one that is easy to parse.**
+  `digitalsf`'s `269$a` collapses "between 1946 and 1951" to `1946`, and its
+  `907$a` fuzzy-date flag catches only 115 of 298 imprecise dates. Trusting
+  either promoted 183 estimates to firm years.
+- **Check where a collection actually keeps its people before trusting a flag
+  about them.** In `digitalsf` SFP 23 the `600`/`700` personal-name fields hold
+  one corporate body and the actual people are in the titles.
+- **A stale identifier loses records silently.** EAS carries retired APNs; a
+  manifest built by looking EAS up on the active `blklot` drops those parcels
+  with no error. Go via the number EAS actually carries.
+- **Query coordinates at full precision.** EAS address points sit centimetres
+  from their parcel boundary; rounding to six decimals moves enough of them
+  across it to lose the parcel.
+- **A frequency count over any commercial corpus surfaces the advertisers.** The
+  top numbered address in a trade journal is a firm's own office; in Planning
+  Commission minutes it is the Commission's own address. The usable material is
+  in the long tail.
+- **A recorded range is the whole range.** `resolve_eas.py` used to look up only
+  a finding's `street_number` whenever it had one, ignoring the
+  `address_range_as_recorded` beside it. Every building whose low number has
+  since been retired came back "no EAS record" — 550–590 and 731–799 Van Ness
+  Avenue among them, both extant and both surveyed. The tool now expands the
+  range whenever one is recorded. *If a record states a range, look up every
+  number in it.*
+- **A record that names its own parcel has already done the placing.** Where a
+  range spans several parcels today, the tool declined — correctly, because
+  choosing would be adjudicating. But a survey that prints `647/13, 14` has
+  identified the parcel itself, and following that is reading the record, not
+  deciding for it. `resolve_eas.py` now takes the parcel a finding's
+  `extra.assessor_block_as_recorded` **and** `assessor_lot_as_recorded` name
+  when it is one of the candidates, and says so in the method.
+- **The nearest published page cannot pick the neighbourhood directory on a
+  street that has no pages.** The resolver files a new page under the area of
+  the nearest existing page; on Van Ness Avenue, which had three pages in the
+  whole city, that scattered one corridor across five directories and put 1765
+  California Street in `financial-district`. Where a street is that thin, file
+  on the **analysis neighbourhood** the assessor and EAS give the parcel, and
+  put the reason in `resolution.method`.
+- **A lesson nobody can act on gets paid for twice.** The Van Ness run wrote
+  down that the nearest published page cannot pick the neighbourhood directory
+  on a street the site hasn't settled — and then left `resolve_eas.py` doing
+  exactly that, so North Beach came back scattered across six directories and
+  the paths would have been hand-patched a second time. *When a run discovers a
+  rule, give the tool the switch that applies it.* `--area-from-nhood` and the
+  `manifest` subcommand both exist because the knowledge was already in the
+  module and only the tooling was missing.
+- **A `conflict` is not always a conflict about the address.** `resolve_eas.py`
+  read every `conflict` as a disagreement between two recorded addresses and
+  printed `"290 Lombard Street" against "None"` into eighteen resolution
+  methods. Most conflicts are a source disagreeing with itself about a *date*
+  or a *name*; those resolve normally and the disagreement is the page's
+  `unknowns` to carry. The branch now runs only when a second address is
+  actually recorded.
+- **A page the generator will not render is a hand-authored page.** Publishing
+  in bulk means calling `seed_pages.render_html` over pages the run did not
+  create, and some of them predate it — a source with no `query`, a field the
+  renderer expects as a string. Writing `data.json` and letting the render blow
+  up leaves the two files disagreeing, which the root AGENTS.md forbids
+  outright. *Render first, write both files or neither, and list what has to be
+  edited by hand.*
+- **A condominium class code is not proof of a condominium.** `resolve_eas.py`
+  and `seed_pages.py` both declined any parcel the roll class-codes
+  `Condominium`, which is right for a unit stack and wrong for an old parcel
+  that was condominium-mapped and never split. 11 Blackstone Court is one
+  parcel, one EAS address, no sibling units and a roll build year of 1850 that
+  corroborates the statement's circa 1851 — and it was refused a page twice, by
+  two tools running the same weak test. Both now check the thing the rule is
+  actually about: whether EAS puts the recorded numbers on more than one parcel.
+  The Malloch Building's thirteen unit parcels and 2944 Jackson Street's two
+  still decline. *Test the condition the rule exists to catch, not the field
+  that usually accompanies it — and when two tools enforce the same rule, make
+  the one holding the evidence decide and let the other honour it.*
+- **A caption-versus-narrative date split has no fixed direction.** The
+  Progressive Era styles pass established that where these statements print two
+  years for one building, the caption is usually the assessor's roll leaking in.
+  The Early Settlement Era statement reverses it: the Nightengale House is 1882
+  in the landmark list and the caption, 1878 in the narrative, and the roll says
+  **1878** — the narrative is the one agreeing with the roll. *Check the roll
+  each time rather than carrying the previous document's direction forward; a
+  pattern that held for one statement in a series is a hypothesis about the next
+  one, not a rule.*
+- **A series covers the same landmarks repeatedly, so a bad address has a
+  second opinion.** The Early Settlement Era statement prints the Feusier
+  Octagon House at 1607 Green Street; EAS has no such address. The department's
+  own Victorian Era Styles statement prints 1067 Green Street for the same
+  landmark number, and that page already carried the city's survey record for
+  the house. Resolved on the landmark number and the building name. *Before
+  calling a statement's address unresolvable, check the sibling statements this
+  repo has already read — a transposed digit in one document is often correct in
+  another, and matching on a landmark number is an identification where matching
+  on a street number would be a guess.*
+- **The landmark number is only an identification once the city's list
+  confirms it.** The statements get the number wrong as well as the address.
+  One volume calls St. Ignatius Church Landmark #172, which is St. Boniface.
+  Another calls Our Lady of Guadalupe No. 244, which is a Market Street
+  office block. Both numbers were published, one of them twice. An EAS-exact
+  address can also land on the wrong parcel under a right number: Calvary
+  Presbyterian on Alta Plaza Park, the Sentinel Building on the hotel across
+  Kearny Street, the Lilienthal-Pratt House on the neighbouring lot. Of 176
+  resolved findings naming one number, 19 disagreed with DataSF `97yj-54sx`'s
+  parcel. Most were harmless, stale APNs, and `3tsw-4idn` names them: it
+  carries `Article 10 Individual Landmark` on the finding's parcel as well.
+  *Before publishing a landmark number, look it up in `97yj-54sx`
+  (`?landmarkno=N`). Then check that `3tsw-4idn` carries the landmark token,
+  or the building's name, on the parcel you resolved.* The full breakdown is
+  in the sf-context-statements dossier.
+- **An abbreviated range is not a range.** Surveys print "1843-47" and
+  "1761-65" for 1843–1847 and 1761–1765, dropping the digits that don't change.
+  `resolve_eas.py` read the pair literally, expanded 47→1843, and reported the
+  Japantown statement's Art Deco building at 1843-47 Fillmore Street as spanning
+  eighty parcels. The tool now fills a short high end in from the low end.
+  *A recorded range needs its high end spelled out before it is expanded.*
+- **A parcel found by point can outvote three that were stated.** EAS leaves
+  some address rows without a `parcel_number`, and the resolver places those by
+  the point their coordinates fall in — which DATA-SOURCES.md already warns sits
+  centimetres from a boundary. Inside a recorded range that turned one lot into
+  two: 1944 Fillmore Street landed on the neighbour and declined 1940–1946
+  Fillmore Street, an extant National Register building whose other three
+  numbers all state the same parcel. The tool now takes the stated parcel and
+  says so. *Weigh what the record states above what a coordinate implies.*
+- **A permit name with no role label near it walks straight onto a page.**
+  `seed_pages.py names` flags role words, firm suffixes and titles, so it never
+  saw DBI's intake prefix: "one-stop:peter burns:revision to pa …" carries none
+  of them. Two names were seeded onto a Japantown page, and a third had been
+  sitting on a Mission page since whenever it was seeded. `NAME_HINT` now catches
+  the prefix and all three names are on the redaction list. *A privacy filter
+  built from role words misses every name that isn't introduced by one — test it
+  against the raw text of the pages you just wrote, not only against its own
+  flags.*
+- **When a source prints both the historical and the current address, looking
+  up the historical one resolves silently onto a neighbour.** The Russian Hill
+  statement heads each demolished building with its pre-renumbering number and
+  adds "site of today's #N". Every one of those old numbers — 2507, 2509, 2513,
+  2517, 2519 Larkin, 2612 and 2614 Polk — is still a live EAS address on the
+  same block, so `resolve_eas.py` placed six 1870s cottages on the parcels of
+  buildings that are standing today, with a confident method sentence each. It
+  showed up only because 2509 Larkin landed on the parcel of the extant 1888
+  house next door. *A renumbering trap does not always look like a miss; the
+  dangerous ones look like clean matches. When a record gives today's address
+  for a site, place on that and say so.*
+- **EAS holds the numbered streets as zero-padded ordinals**, so a source that
+  spells one out — "285 Second Street" — failed at the *street*, not the number,
+  and came back "not a street in the city's address registry" for one of the
+  busiest streets downtown. `resolve_eas.py` now maps spelled-out ordinals to
+  EAS's form (`SECOND` → `02ND`) and states the mapping in the method. *A
+  lookup that fails on the street name rather than the number is a spelling
+  problem, not a finding.* **The digits fail the same way and were not
+  covered**: a survey that writes "20 2nd Street", which is how nearly every
+  report writes it, lost 1st, 2nd and 3rd Streets whole — 130 findings in the
+  middle of downtown — until the same mapping was taught to accept `2ND` as
+  well as `SECOND`.
+- **A survey of a redevelopment area is a record of buildings that were about to
+  come down, and some did.** The Transit Center survey lists thirteen active
+  projects that would demolish buildings it had just inventoried; three of its
+  parcels now carry buildings the assessor dates after the survey was written.
+  A construction date published on those pages would describe a building that is
+  gone. *Compare the assessor's year built with the source's on every finding,
+  and where the roll year postdates the source, state both years and let the
+  page's `unknowns` carry the disagreement — never assert a demolition the
+  source does not record.*
+- **Two surveys of the same buildings do not fit in one page.** The Transit
+  Center survey area sits inside the Central SoMa survey area, which this repo
+  had already published; 57 of the 123 pages the run reached already carried the
+  other survey's `historic_survey` panel, and the renderer holds one. Their
+  ratings could not be shown at all, and only the fact the other survey lacks —
+  district-contributor status — reached those pages, as a timeline entry.
+  *Before planning where a district statement's facts will go, check which of
+  its parcels the repo has already documented from a neighbouring survey.*
+- **A page-level fact still needs its finding marked published.** Writing a
+  surveyed year into `building.completed_conflict` while declining the finding
+  that supplied it left a page stating a disagreement with no entry in its
+  `sources` — an unsourced sentence, which the root AGENTS.md forbids outright.
+  *A finding that reached the page in any component is published, whatever
+  component it reached, and the source entry goes with it.*
+- **The resolver's path and its manifest disagreed about a parcel's lowest
+  number**, because the path reaches EAS rows filed under a since-retired parcel
+  and the manifest did not. The seeder put the page at 657 Mission Street while
+  every resolution pointed at 655: one parcel, two places, and the facts landing
+  on neither. `build_manifest` now carries the path's own number into the list
+  it hands the seeder.
+- **A parcel with no row on the assessor's secured roll cannot become a page,
+  and on an architectural corpus that selects for exactly the best buildings.**
+  Eight resolved Russian Hill parcels have `in_asr_secured_roll: false` and no
+  roll row in any year, so `seed_pages.py` skipped them: 945 and 947 Green, 2555
+  Larkin, 2500 Steiner, 2000 and 2006 Washington, 1925 Gough. They are the
+  1910s–1920s apartment houses, several of them the "cooperative" buildings the
+  report itself describes — the parcel is not assessed as one property. This is
+  the condominium rule's cousin and it bites the same way: *the rule that keeps
+  the site honest about parcels also holds back the most-documented buildings,
+  so say which ones in the dossier rather than letting them vanish into a
+  count.*
+- **A project table without a date column is not a dated record.** The New Deal
+  statement lists hundreds of WPA projects by facility, address and scope of
+  work, with a project *number* where a year would go. Fifty-nine findings in
+  that batch were first written with a year the document never states — 1935,
+  because that is when the agency started — and every one had to be corrected to
+  the agency's own span before publication. The evidence bar wants *a date, a
+  street number and a citation*; a table that gives two of the three gives two of
+  the three. **Before writing a year into a finding, find the sentence that says
+  it.** Where only a span is defensible, record the span and say in `extra` why.
+- **A privacy filter tuned to full names misses the initialled ones.**
+  `NAME_HINT` learned DBI's `one-stop:` intake prefix after two names walked onto
+  Japantown pages, but the redaction list only held the names in the form those
+  permits printed them. This run's seeding surfaced `one-stop:p.burns` on the
+  zoo's page, and a repo-wide sweep of the same prefix found `m.tjoe`, `mtjoe`,
+  `m tjoe`, `susan leong`, `eric. omokaro` and `neil f.` already published across
+  sixteen pages. *A name on the redaction list is one spelling of that name;
+  after every bulk seed, grep the whole repo for the intake prefixes, not just
+  the pages you wrote.*
+- **A note that only exists in `data.json` is not on the page.** Findings runs
+  have been writing conflicts into an `unknowns` key since Market & Octavia, and
+  `seed_pages.py`'s renderer never read it — the disagreements reached the repo
+  and stopped there. The renderer reads it now, and since issue #118 states
+  them on the line closing the timeline. *When you invent a key, check that
+  something renders it.*
+- **The natural way to write up an inventory finding is the one thing the design
+  contract forbids.** A source that says nothing about a building except that it
+  is on a list invites the sentence "Picked out by a 2007 walking survey as a
+  house predating…" — which is exactly the `a survey records…` pattern the root
+  AGENTS.md rules out of a page body. It went onto 129 pages across two batches
+  before an audit caught it, because it reads like content rather than like
+  attribution. The line: a listing or designation **event** may be stated as an
+  event, the way the North Beach pages state a 1982 survey listing; an ordinary
+  fact about a building must be stated as a fact, with the attribution left to
+  the Sources footer. *Grep the descriptions you are about to publish for
+  "survey", "statement", "report" and "according to" before rendering.*
+- **A generic entry published beside a specific one is a duplicate, not a second
+  finding.** Sources that carry both an inventory and a narrative name the same
+  building twice, and the narrative always says more — a firm year, a builder, a
+  style. Publish both and the page's one timeline shows two items at the same
+  date, the second saying less. Four Parkside findings were declined for this.
+  *Before publishing a source with both parts, group the resolved findings by
+  parcel and read every page that gets more than one.*
+- **A read whose resolve step is blocked must still land on `main`.** The South
+  of Market statement was read cover to cover — 118 pages, 155 cited findings —
+  in a session whose network policy blocked `data.sfgov.org`, so nothing could
+  be resolved. The PR was opened, published nothing, and was closed unmerged
+  an hour later; the whole read sat on an abandoned branch for a week, invisible
+  to `check.py --stats`, which counts open loops only among findings files that
+  are *on disk*. The next run found it only by reading a closed PR's comment.
+  *A blocked run's findings file is the expensive half of the work. Merge it,
+  even with every entry `unresolved` — a stranded branch is indistinguishable
+  from work nobody has started.* And check `data.sfgov.org` answers before
+  planning a run; one `curl` decides whether the run can finish.
+- **The renumbering guard is a refusal, not a verdict, and the assessor usually
+  settles it.** For a modern survey of old buildings the guard fires on the
+  whole pre-1910 stock — 47 of the South of Market statement's findings — because
+  its only exemption is a record that prints its own block and lot, and a
+  narrative statement prints neither. The check it names but cannot make is
+  already in the fetched roll: compare the record's date to
+  `year_property_built` on the parcel the join chose. On that batch 22 agreed
+  within three years, most of them exactly, and were resolved by hand; the rest
+  were off by 10 to 124 years and stayed unresolved, including an 1854 mansion
+  on a parcel the assessor dates to 1922 — the exact error the guard exists to
+  catch. The guard now prints the comparison in its note. *When a tool refuses,
+  ask what evidence would change its mind and whether you already have it.*
+- **A resolution you make by hand needs `by_hand: true`, or `apply` eats it.**
+  `resolve_eas.py apply` recomputes every entry that is not `rejected`, so a
+  hand judgement the guard's own note invited would silently revert to
+  `unresolved` on the next run — work that looks done and then isn't. `apply`
+  now also preserves `resolution.by_hand`; set it whenever you overrule or
+  supplement the tool.
+- **`seed_pages.py names` goes quiet once the pages exist.** It only inspects
+  parcels still marked seedable, so running it after `seed-list` — which is when
+  the root AGENTS.md's instruction reads most naturally — reports zero
+  descriptions and zero flags, which looks like a clean privacy pass and is not
+  one. It also wants the EAS neighborhood name (`"Sunset/Parkside"`), not the
+  directory slug. *Do the privacy pass by reading the `data.json` files the run
+  just wrote, and test against the raw permit text rather than the tool's own
+  flags.*
+
+- **"Rejected, not resolved" for a demolished building cannot be automated, and
+  trying it showed why.** The rule is right and the tooling gap was real, so a
+  run taught `resolve_eas.py` to reject any finding whose record marks the
+  building gone — then ran it over every findings file in the repo before
+  trusting it. A regex over any `*_as_recorded` field would have rejected
+  **fourteen correctly published findings**, because the thing that came down is
+  usually not this building: the *first* St. Francis Hotel of 1904, one academic
+  building of a campus, "demolished except for vertical sign", "largely destroyed
+  in the Great 1906 Earthquake". Narrowing to a bare marker in
+  `status_as_recorded` still rejected the **Swedenborgian Church**, which two
+  volumes of the professionals biographies mark demolished and which stands,
+  landmarked, at 3200 Washington Street. So the tool raises and the person
+  decides: `report` now prints every demolition marking in its own section,
+  split into stated-plainly and mentioned-in-passing, and `decide()` changes
+  nothing. *Before wiring a rule into a tool, run it over every findings file in
+  the repo and read what it would have changed — a rule that is right about the
+  general case can be wrong about a source that is wrong about itself.*
+
+- **A source can name a well-known institution and give the address of a
+  different building of the same name.** A citywide biography credits Gilbert
+  Stanley Underwood with "US Mint, 88 5th Street, 1935-1937". 88 Fifth Street is
+  the **Old Mint of 1874** by Alfred B. Mullet — extant, landmarked, already a
+  page here — and the Mint Underwood supervised in the 1930s is a different
+  building elsewhere in the city. EAS matched, the parcel was live, the roll year
+  agreed with nothing in particular, and no check in the pipeline objected: the
+  address is real, it is simply not this building's. **When a finding names an
+  institution rather than a street number alone, ask whether that institution was
+  at that address on that date** — an institution that moved takes its name with
+  it, and every downstream tool knows only that the number exists.
+  *The institution can also have stayed put and still be on the wrong parcel:*
+  St Francis of Assisi's sources print 610 Vallejo, which EAS puts on the
+  parish rectory next door (0131008, built 1908), and six church findings went
+  onto the rectory's page because the property class — churches, convents,
+  rectories — fits both. The check was already on the page: 3tsw-4idn's
+  `survey_name` said ST FRANCIS RECTORY. **Where a finding names a building,
+  compare the name to `historic_status.survey_name` and the landmark list
+  (97yj-54sx) on the parcel the join chose.** Sacred Heart in Hayes Valley is
+  the second case, made by earlier runs of other sources: its rectory at 546
+  Fillmore Street carried the church's 1898 construction, and its convent at
+  660 Oak Street the Black Panther breakfast programme that ran in the church
+  basement. *A run that lands on one building of a parish or campus reads every
+  sibling page before it writes*, and says in `unknowns` where an existing
+  entry sits next door.
+- **A landmark table's street number can be wrong while its landmark number is
+  right, and the wrong number can be real.** The Modern context statement's
+  landmark table prints the Crown Zellerbach Building (No. 183) at 590 Market
+  Street; EAS files 590 Market on the Hobart Building next door, itself a
+  landmark, so a `designation` fit the parcel and it published there (#205,
+  moved in #380). The same document says 1 Bush Street twice, and a finding
+  from **the same batch** already sat on 1 Bush. **When a finding carries a
+  landmark number, look the number up in 97yj-54sx and compare its `apn` with
+  the parcel the join chose** — and run `check.py --find` on the building's
+  name before resolving: two findings about one building on two parcels means
+  one of them is wrong. *Measured over every findings file: 176 resolved
+  findings name exactly one landmark number and 19 disagree with 97yj-54sx's
+  APN — mostly an adjacent lot after reparcelization (Mills Building,
+  Hallidie), but some because the source printed the wrong landmark number
+  (St Ignatius as No. 172, which is St Boniface's). So the landmark list
+  raises the question; it does not decide it.*
+
+- **When a building has been moved, the fact belongs to the parcel it stands on
+  now.** The Englander House was built at 807 Franklin Street in 1880 and rolled
+  to 635 Fulton Street in February 2021; the source prints both addresses. The
+  construction credit was published at 635 Fulton with the original address
+  stated in the sentence, because publishing at 807 Franklin would hang an 1880
+  house on whatever occupies that lot today. This is the Russian Hill
+  "site of today's #N" rule inverted, and it has the same shape: *the parcel that
+  carries the building wins over the parcel that carries the old number.*
+
+- **A locator computed by searching a quoted span silently falls back to page 1.**
+  A generator that finds each finding's page by looking its `raw.text` up in the
+  extracted pages returns nothing when the quoted sentence wrapped a line break,
+  and a naive `hits[0] if hits else 1` writes `p. 1` into the citation — ten of
+  them in one run, on a source where page 1 is the cover. Nothing downstream
+  checks a locator, and a wrong page is exactly the "citation resolves" defect
+  step 5 exists to catch. *Normalize whitespace before the lookup, fall back to a
+  short distinctive key such as the address rather than to a constant, and fail
+  loudly when no page matches.*
+
+- **A month-precision date printed raw on 68 pages, unnoticed.** The timeline
+  formatted a full ISO date into "August 24, 1896" and left everything else
+  alone, so a source that knows the month but not the day — a directory issue,
+  a water-service record — wrote `1896-10` into `historical_record` and the
+  page printed that string, next to a formatted date from the line above it.
+  It had been doing so on 68 pages across nine neighbourhoods since the first
+  run that used the form. Nothing failed: `validate.py` only asks that the HTML
+  match the renderer, and it did. *A date precision the extractor can express is
+  one the renderer has to be taught; write one of each precision and read the
+  rendered rail before you publish a batch.* Twelve of the 68 are on
+  `scripts/render-backlog.txt` and still print it raw until that sweep reaches
+  them.
+
+- **Putting a lost address on a street hub freezes that hub's list.**
+  `seed_pages.py hubs` refuses to rebuild any street hub carrying a section
+  beyond its generated lead-and-list template, so the "The lost corner"
+  write-up on the Danvers Street hub is why that hub's four entries are now
+  hand-maintained. The runbook offers the surviving building's page **or** the
+  street hub for an address EAS no longer holds, and it reads as a free
+  choice; it is not. Douglass Street has a hundred pages and gains more with
+  every seeding run, and freezing that list to carry a demolished brewery
+  would have cost far more than the story was worth — so the brewery went onto
+  109 Douglass Street, the partner's house next door that survived it.
+  *Count the pages under the hub before choosing the hub.*
+
+- **A row of buildings is not a range, and the resolver cannot tell them
+  apart.** `resolve_eas.py` expands a recorded range on the assumption it is
+  one building with a two-number address, which is right for "1940–1946
+  Fillmore Street" and wrong for "3253 through 3259 Baker Street" — a row of
+  four houses on four parcels, which it then declines. The fix is at extraction
+  time, not in the tool: record only the two numbers the source actually
+  prints, one finding each. The buildings between them are real, but their
+  numbers are an inference, and a source will tell you so if you let it — the
+  PPIE statement calls 215-287 Avila Street *twelve* bungalows and 2122-2146
+  Bay Street *five*, spacings that enumerating by parity would have got wrong
+  both times.
+- **A privacy filter built from role words also misses the bare preposition.**
+  The `one-stop:` lesson above widened `NAME_HINT` to catch DBI's intake
+  prefix; it still let "walk in cooler per jesus zapien" onto a Marina page,
+  because "per" introduces a name with no label at all. The pattern now flags
+  two lowercase words after `per` or `by`, which is noisy — "per field
+  findings" flags too — and that is the right trade for a list a person
+  reviews. *Every widening of this filter so far has come from a name that
+  reached a page. Check the pages you just wrote, not the filter's own output.*
+- **A roll build year of 1900 is a floor value, not a construction date.**
+  Civic and institutional parcels come off the assessor's secured roll as built
+  1900, and the PPIE statement says outright that 1900 on the roll may stand
+  for something earlier. Publishing it as a source-versus-assessor
+  disagreement invents a conflict that isn't there. Where the parcel holds
+  several buildings of several dates, say that instead.
+- **A parcel can resolve perfectly and still be unable to carry a page.**
+  `sf-parcels` marks some active parcels `in_asr_secured_roll: false`, and
+  those have no roll row in any year — so `seed_pages.py` has nothing to build
+  a page from and skips them, silently, in a line among its output. This is not
+  the condominium case and the resolver does not catch it: EAS matches, the
+  parcel is active, `resolve_eas.py` says `resolved`. **After seeding, diff the
+  manifest against the pages that now exist** — the gap is this. The findings
+  are `resolved` with `publish: declined`, which is the "Resolved, no page"
+  column of the PR table. Large multi-unit buildings are where it concentrates:
+  the Large Apartment Buildings statement lost 11 parcels this way and 10 more
+  to condominium APNs, 30 of 89 findings between them.
+- **A multi-family theme loses a large, predictable slice to condominium
+  conversion.** Small multiple-unit buildings are exactly the stock the city
+  converted, so on a theme whose subject *is* multi-family housing the
+  condominium rule bites hardest: 13 of 19 unresolved findings in the Flats and
+  Small Apartment Buildings statement, and 49 of 161 across it and its companion
+  volume once the secured-roll cases are counted too. Budget for roughly a
+  quarter of such a batch never reaching a page, say so in the coverage note,
+  and do not report it as a resolution failure — the addresses are right and the
+  buildings are standing.
+- **Check the resolver's neighborhood against the directories the site
+  actually has.** `--area-from-nhood` files on the analysis neighborhood the
+  assessor and EAS give the parcel, and that vocabulary is not this site's:
+  "Twin Peaks" is a real analysis neighborhood and not one of the 40
+  directories under `san-francisco/`. The manifest will name it anyway and the
+  seeder will create it. `ls san-francisco/` before seeding.
+- **Read the target page before writing the fact.** A citywide theme crosses
+  every neighborhood statement this project has already mined, so a good share
+  of its parcels arrive already documented. Nine of 53 pages in the Flats and
+  Small Apartment Buildings run already carried research content, and it cost
+  one declined finding, three rewordings and three stated disagreements to
+  handle them honestly. What a citywide statement usually adds to a page a
+  neighborhood statement reached first is the *type and style*, not the
+  architect — the neighborhood survey nearly always had the architect already.
+  Check `historic_survey.source` too: the renderer holds one survey panel per
+  page, and a second statement's panel cannot go on.
+- **Where a source names its own neighborhoods, they beat both filing rules.**
+  Proximity and `--area-from-nhood` are both guesses about geography; a context
+  statement saying "both located within Noe Valley" is not. On a scattered
+  batch the two rules will disagree on a fifth of the findings and split about
+  evenly on which is right, and the source's own attributions broke every tie
+  correctly in the run that measured it.
+
+- **A table that prints a build year in one column and a use in the next is
+  not a dated record, and the giveaway is the assessor's roll.** The SoMa
+  Filipino addendum's appendix survey prints YEAR BUILT beside an ASSET that is
+  whatever the surveyor found there in 2011. On the rows before about 1960 that
+  year is the assessor's own build year — it matched the 2025 roll on **twelve
+  of the fifteen** rows where the roll carries one — so publishing the pair as
+  one event put a child care centre at 1949, a Filipino cultural centre at 1908
+  and a monument at 1900, five entries that had to be withdrawn a PR later. The
+  test is cheap and it is now a tool: **compare every finding's date with the
+  parcel's `year_built` before publishing**, and where they are equal and the
+  fact is not the building going up, the date probably belongs to the building
+  rather than to the fact. `check.py --overlap` prints these under *by the roll
+  year*. A use that genuinely began the year the building opened is real — say
+  so in the publish note rather than deleting the check.
+- **On a theme study organised by an institution, what survives an overlap is
+  the client.** The Clubs and Social Halls statement collided with the
+  architect biographies on nearly every building the site already had: same
+  address, same year, same architect, different sentence. What it alone
+  carried was who the building was *for* — 609 Sutter Street was on the page as
+  "Marines Memorial Club, designed by Bliss & Faville" and nowhere did it say
+  the building went up in 1926 as the Western Women's Club. **Trim such a
+  finding to the client and the original name rather than declining it**, and
+  check `building` before you write: an architect the page already credits is a
+  duplicate, an original client is not.
+- **An address inside a parenthesis is invisible to a street-name grep when the
+  street is a number.** The Clubs statement gives every building as
+  *"(1620 Stockton Street, built in 1935, designed by John A. Porporato)"*, and
+  a pattern keyed on a capitalised street name silently drops 2700 45th Avenue,
+  3543 18th Street and 2850 19th Avenue. This is the same failure as the Early
+  Residential study's ALL-CAPS captions, from the opposite direction. *Grep is
+  for finding the seam, not for the extraction; a fifty-page statement gets
+  read.*
+
+- **A hyphenated `street_number` is a range the resolver cannot read.** It looks
+  the number up literally, finds nothing, and reports "EAS has no address near it
+  on this street" — which reads like a dead address and is really a mis-filled
+  field. The range goes in `extra.address_range_as_recorded`; `street_number`
+  holds the low number alone. The biographies A–C batch lost **40 resolutions**
+  to this before anyone read a decline closely enough to notice that 809-811
+  Pierce Street is an address EAS holds on one parcel. `check.py` now fails an
+  unresolved finding with a hyphen in `street_number` and no recorded range.
+
+- **The assessor's roll year is the cheapest test of whether a source's
+  addresses are today's addresses.** Take every published finding older than
+  1910, compare the source's year to `year_property_built`, and look at the
+  distribution. A source printing modern addresses of surviving buildings
+  clusters: the biographies A–C volume put 30 of 89 exactly on the roll year, 53
+  within three years, 78 within ten. A source printing pre-1909 numbers would
+  scatter instead. **Run it before trusting a secondary source's addresses, and
+  run it in reverse afterwards** — findings whose roll year falls *long after*
+  the source's date are the ones on a parcel that has since been rebuilt, where
+  "Designed by X" is a claim about a building that is no longer there. State
+  that disagreement in `unknowns`; never adjudicate it, and never let it become
+  a silent assertion about the standing building.
+
+- **A publishing script is not idempotent unless you make it so.** A second run
+  reads back its own first run's prose, decides the page already carries the
+  fact, and declines findings it published an hour earlier — leaving pages with
+  facts and a findings file that says they were declined, which is the exact
+  "done but unrecorded" state this module pays most to avoid. Two rules make it
+  safe: compute "does the page already say this?" from entries whose `source` is
+  **not** this run's, and decide `published` from whether the page *carries* the
+  fact after the edit, not from whether this invocation wrote it. If in doubt,
+  strip every entry carrying your source id from the pages and re-apply from
+  scratch — that is cheap and it is the only way to get a clean count.
+
+- **A source cited in a page's footer with nothing on the page from it is a
+  bug.** Declining a finding after the sources entry is written leaves the
+  citation stranded. Sweep for it before committing: every page carrying your
+  source id must have a published finding, and every published finding's page
+  must carry the source id.
+
+- **An undated fact has two homes on a page, not one.** A credit goes in a spec
+  row (`building.architect`, `.builder`, `.developer`, `.name`); a survey's own
+  observation — style, physical integrity, a listing, a character-defining
+  feature — goes in the `historic_survey` block, which carries no year by
+  design. Neither is the timeline, which orders by date and renders a dateless
+  entry as a row reading *unknown*. Say in `publish.note` which of the two took
+  it; `check.py` looks for the words *spec row* or *survey block*.
+
+- **Before writing "nothing on the page could carry it", read the whole
+  `data.json`.** Five findings were marked published with a note saying the page
+  had nowhere to put them, when `building.architect` and `building.name` were
+  holding them the whole time. The audit that wrote those notes looked at
+  `historical_record` and `building` and never at `historic_survey`, where 25 of
+  the same sweep's 40 findings turned out to live. A page component you forget
+  to look at reads exactly like a page component that doesn't exist.
+
+- **A source that prints its own parcel has handed over a test, not just a
+  tiebreak.** `resolve_eas.py` used the recorded assessor block and lot to
+  *choose* among the parcels a range spans, and never to *check* a resolution it
+  had already made — so on a 724-page scan the only guard against an OCR digit
+  was the street number, which is itself OCR. Running the comparison over the
+  whole batch by hand found the shape immediately: 147 of 167 exact, 15
+  re-lottings since 1990, and 5 on another block, of which two were a 3/5
+  confusion in the scan (849–853 Valencia printed as block 5996 for 3596) and
+  three the record's own error. *`report` now prints that comparison, splitting
+  re-lottings from block disagreements; put the printed block and lot on every
+  finding from a scanned source, and read every block disagreement before
+  applying.*
+- **A survey's own column may not be the survey's own claim.** The UMB
+  survey's appendix table heads its YEAR column "the year of construction
+  according to the Assessor's Records. It is not necessarily accurate."
+  Published as a construction date it restates the roll; published as a
+  `completed_conflict` it asserts a disagreement between the assessor and the
+  assessor. The same document's inventory forms date the building from city
+  directories and the trade press, and *those* are evidence. *Read the key
+  before treating a column as something the source is claiming.*
+- **A survey selected on a hazard is a survey of buildings that were about to
+  be replaced.** The Transit Center lesson said to compare the roll year with
+  the source's on every finding; the unreinforced-masonry survey says how to
+  read the answer. A roll year a few years off is a dating disagreement and
+  belongs in `unknowns`. A roll year *decades* later — 1913 against 2022, 1907
+  against 2001 — is not a disagreement at all: the building the source
+  described is gone, and publishing its architect and date would describe
+  something that does not exist. Seven of that survey's parcels were declined
+  on that rule. *Set a threshold, decline above it, and say so in the publish
+  note.*
+
+- **An Excel-printed PDF table has no rows in its text layer.** The Showplace
+  Square survey data is an `.xlsx` printed to PDF: cells wrap, and a row's
+  parcel number, address and note sit on three different baselines, sometimes
+  above one another's rows. `pdftotext -layout` and every y-clustering parse
+  built on it mixed adjacent buildings' architects, styles and dates. The row
+  boundaries are in the **content stream**, where each row starts with a `Td`
+  that returns the pen to the first column's x; splitting there and taking each
+  drawn string's column from its x rebuilt all 633 rows, and disagreed with the
+  layout parse on 167 fields — correctly, every time. *Where a table's rows
+  matter, read the content stream, not the rendered text; and parse it twice by
+  different means and diff the two before trusting either.*
+- **Two readers of the same field will eventually disagree, and the failure is
+  silent.** `resolve_eas.py` parsed `address_range_as_recorded` in two places —
+  once to decide which parcels to fetch, once to decide a finding — with two
+  copies of the regex. A batch that wrote its ranges in a shape only one copy
+  accepted had every ranged building's parcel left unfetched, and then declined
+  those findings for "not an active parcel in sf-parcels", which is a sentence
+  about the city rather than about the tool. 57 findings. *One reader per
+  field; and when a lookup fails, check that what it looked up was ever
+  fetched.*
+- **In a storefront corpus, the date belongs to whatever the caption describes.** "A
+  ceramic veneer storefront at 2215 Irving Street, constructed in 1936" dates the
+  storefront; the roll dates the building to 1924. Recorded as a construction fact it
+  becomes a `completed_conflict` asserting a disagreement that does not exist, and the
+  resolver cannot catch it because the address is perfectly good. Two findings were
+  corrected after the publication review for this. *Before writing a year into
+  `building.completed` or `unknowns`, ask what the sentence is dating.*
+- **`--area-from-nhood` is a per-finding judgement, not a per-batch switch.**
+  On a citywide theme the batch lands on six streets in six parts of the city,
+  and the two rules disagree in both directions. The switch was right for
+  Valley Street (Noe Valley, not the Glen Park of the nearest published page)
+  and Peralta Avenue (Bernal Heights, not the Mission) — and wrong for 1227
+  24th Avenue, where the site files the 1200 block under `inner-sunset` while
+  the analysis neighborhood is Sunset/Parkside, so it would have separated the
+  page from 1234 next door. *Run `report` both ways on a scattered batch, and
+  where the site has already settled a block, follow the block.*
+- **One existing page is not a settled block — and it may itself be misfiled.**
+  Proximity files a new page under the area of the *nearest published page*, so
+  where a street has exactly one, that page decides the whole corridor. Both
+  singletons a citywide theme study landed next to were wrong: 202 Clipper
+  Street sits under `castro` where the assessor says Noe Valley, and 279 Ney
+  Street under `bernal-heights` where the assessor says Excelsior, and
+  proximity would have copied each error onto three new pages. *Before letting
+  proximity win, check the neighbour's own `analysis_neighborhood`.* The
+  90-page corridor on 21st Street beat the assessor's slug on the same run;
+  the single page did not.
+- **A cultural statement's densest seam is a transcribed city directory, not a
+  table.** The SoMa Filipino heritage addendum has an inventory table of 22
+  addressed rows and a narrative that yields 98 more, because the narrative
+  reads directories year by year and so prints a named organisation or business
+  at a numbered address on a dated line over and over — sixteen Manilatown
+  storefronts in one paragraph. *Before judging a statement with no appendix,
+  grep the prose for a run of numbers on one street.*
+- **On a statement about a demolished community, a low resolution rate is the
+  subject showing through.** 26 of 33 unresolved findings there were addresses
+  EAS no longer has, because Manilatown was razed for the Financial District
+  and Japantown for redevelopment — which is what the document is about. Report
+  it as coverage, never as a failure, and never reach for a nearby surviving
+  number to rescue one.
+- **A method sentence written for one corpus lies about every other one.**
+  `resolve_eas.py`'s no-street-number branch said "No street number in the
+  catalogue title or the archivist's address note" — true of `digitalsf`, false
+  of a survey PDF, a newspaper or a book, and it went into the audit trail of
+  two findings from a Planning theme document. The tool serves every source;
+  its sentences have to as well.
+- **A privacy filter built from digits misses the letter.**
+  `seed_pages.py`'s `generalize_units` rewrites "unit #4" to "one unit" and
+  leaves "unit a:" alone, because `_UNIT_NUM` requires a digit. 315 permit
+  descriptions across the site carry a lettered designator, one of them on a
+  page seeded by this run. Same shape as the `NAME_HINT` lessons above and the
+  same moral: *every widening of a privacy filter here has come from something
+  that already reached a page — so check the pages you just wrote.*
+- **A filter built from suffixes takes the sentences too.** The survey's note
+  column names the firm for most buildings and describes the architecture for
+  the rest, and a name-detector keyed on "Co.", "&" and capitalisation read
+  "Intact small-scale industrial building with finely executed brick cornice"
+  as an occupant and put it on a page. The leading word is the tell: an
+  adjective at the head of a note means the surveyor is describing, not naming.
+- **A privacy filter built from role words misses the role it doesn't know.**
+  `NAME_HINT` knew owner, applicant, architect, engineer, contractor, tenant,
+  landlord and four honorifics, and did not know **inspector** — the one label
+  DBI uses that no other pattern fires on, since "per inspector adwin lau" has
+  no firm suffix, no "one-stop" prefix and no bare preposition. Two dozen named
+  building inspectors were sitting on published pages when this run happened to
+  grep for them. *A role-word list is a list of the roles somebody thought of;
+  grep the corpus for the shape, not for the words you already have.*
+- **And it misses the punctuation, not just the designator.**
+  `generalize_units` handles "unit #4" and now "unit a", but died on
+  **"unit #:233"** — a colon between the "#" and the number. Widening it is
+  safe only there: a bare "unit:" would read the list marker in "one unit: 1.
+  rehabilitate ..." as a designator. Third lesson in this family, same moral as
+  the two above.
+- **When a source prints two street numbers for one building, ask EAS before
+  calling it a contradiction — and never let the resolver pick.** The
+  Progressive Era statement does it three times. For the Palace of Fine Arts,
+  3301 Lyon in the text and 3601 Lyon in the caption, EAS carries *both* numbers
+  on the one parcel: there is nothing to state and nothing to adjudicate. For
+  the Roos House, 3500 Jackson in the text and 2500 Jackson in the caption, EAS
+  carries both as separate parcels, and `resolve_eas.py` silently took the one
+  the finding happened to carry — the caption's — whose roll year is **1937**,
+  decades after the 1909 building described. The unreinforced-masonry lesson
+  below is what settles it: a roll year decades later means the building
+  described is not on that parcel. Publishing without that check would have put
+  a Maybeck attribution and a landmark number on the wrong building.
+- **A hand-corrected resolution used to fall out of the manifest without a
+  word.** `resolve_eas.py manifest` decided whether a page already existed by
+  testing `resolution.note.startswith("No page at this path yet")` — a string
+  the tool writes itself. Any resolution a publisher corrected by hand carried a
+  different note, so it was skipped, no page was seeded, and the publish step
+  then declined the finding for having no page. It happened twice in one run
+  (the Roos House and 4676-4680 18th Street). **Fixed:** the manifest now asks
+  the filesystem whether `data.json` exists at the path. *A tool that reads its
+  own prose back is testing what it said, not what is true.*
+- **Two findings for one page will silently lose one, if the page carries one
+  panel per survey.** A publisher that appends a `historic_survey` entry only
+  when no entry from that source id exists — the right rule, since two panels
+  from one survey misattribute — drops the second finding's content while still
+  marking it published. It happened here at 215 and 245 Market Street, two named
+  buildings on one assessor parcel. *Before marking a batch published, compare
+  the finding count with the page count; where they differ, open the page and
+  check the collision reached it.*
+- **An illustrated style guide dates its landmarks and copies the roll for
+  everything else — and says so nowhere.** The Victorian Era Styles statement
+  gives a specific, researched year for every building that is a designated
+  landmark (1876, 1883, 1886, 1889, 1892, 1895, 1897, 1902, 1904, 1907) and the
+  bare year **1900** for nine of the eleven that are not — including a row of
+  *flat-front Italianate* dwellings, a style the same document says ended
+  around 1885. No key, no footnote, no column heading admits it: unlike the UMB
+  survey's YEAR column, nothing in the document tells you. The tell is the
+  repetition — one year, exactly 1900, on every undesignated example — and the
+  confirmation is one lookup: 725 Castro Street's roll `year_built` is 1900 too.
+  *In a document with no inventory table, check the source's years against the
+  roll before publishing any of them; where they are the roll's, publish the
+  style and drop the date rather than restating the assessor to himself.*
+- **A renderer that stops crashing has not started reproducing.** Fixing the
+  `TypeError` that killed the "Street numbers" row on a hand-authored page did
+  not make the renderer produce that page — it made it produce a *worse* one,
+  quietly, dropping the hand-written description and printing an
+  `address_range` dict raw into the breadcrumb. `scripts/render-backlog.txt` is
+  what stands between that page and a bulk sweep. *After fixing a render crash,
+  read the diff before you trust the page: a loud failure is safer than a silent
+  rewrite, and the page may need `"rendered": false` rather than a fix.*
+  (Resolved by the #147 sweep: the breadcrumb goes through `range_label` now,
+  and the backlog is empty and gone. The lesson holds; the example no longer
+  reproduces.)
+- **A multi-column key list reads correctly in `pdftotext`'s raw order and
+  wrongly under `-layout`.** The Russian American statement's two appendix maps
+  are keyed to three-column lists of numbered entries. `-layout` reconstructs
+  the page line by line, so a wrapped entry in the first column runs straight
+  into the second column's next line and two businesses merge into one; raw
+  reading order emits each column as a contiguous block and is exact. That is
+  the opposite of the advice for scanned tables above, and the two together are
+  the real rule: *a PDF has three readings — `-layout`, raw order and the
+  content stream — and which one is right is a property of the document, not of
+  the project. Try all three on one page and diff them before reading the rest.*
+- **An undated row in a dated table takes the table's date, not yours.** Sixty
+  of the Russian American statement's appendix entries print a decade; the other
+  sixty-nine print nothing, and the only date the document gives them is its own
+  table heading — "1920s-1940s" for the interwar Fillmore, "ca 1940s-present"
+  for the post-war Richmond. Every one of those sixty-nine was first written
+  with a decade the run had supplied itself, which looks exactly like evidence
+  and is not. This is the New Deal lesson's second half: that one said *find the
+  sentence that says the year*; this one says *when there is no sentence, the
+  table's own heading is the span, and `extra.date_basis` has to say so.*
+- **A source that says an area was demolished has told you how its addresses
+  will resolve.** The Russian American statement says twice that every building
+  in the interwar "Russian center" came down in the Western Addition
+  redevelopment — and 137 of its 164 unresolved findings came back "no EAS
+  record", almost all in those blocks. The blanket statement is not colour, it
+  is a prediction, and the useful consequence is the opposite of the obvious
+  one: *the findings to look at hardest are the ones that resolve anyway*,
+  because the city reissued those numbers on the buildings that replaced them.
+  Comparing the roll's year built with the latest date the source gives caught
+  22, one of them a 1920s shop landing on a 1974 superblock that carries 69
+  numbers of that street on a single parcel.
+- **`seed_pages.py render` does not respect `scripts/render-backlog.txt`.** The
+  backlog grandfathers pages whose HTML the renderer cannot yet reproduce, and
+  a bulk `render` over a batch's page list will quietly sweep any that happen to
+  be in it — 2727 Pierce Street lost its "Casebolt House" tag, its hand-written
+  meta description and a note about omitted permits, and `validate.py` then
+  reported the page as ready to drop from the backlog. The renderer has no
+  `data.json` key for any of the three, so the fix is to keep the hand-written
+  file. *Before rendering a batch, intersect its page list with the backlog, and
+  read `git diff` on every page in both.*
+  (Resolved: `cmd_render` reads the backlog, and the #147 sweep then emptied it
+  — 2727 Pierce keeps its Casebolt House tag and its omitted-permits note under
+  the renderer. The general rule survives the backlog that prompted it: read
+  `git diff` on a bulk render before trusting it.)
+- **A privacy filter's tidy-up only handles the name at the end of a clause.**
+  `redact()` dropped a dangling connective before punctuation, so "correct acc
+  violation-repair by mr. mcabe instructions" became "…repair by instructions"
+  and "notice by john sims on 12-12-2001" became "notice by on 12-12-2001" —
+  the name gone, the sentence broken, and both shipped to a page. It now also
+  drops a connective left pointing at a second connective. The neighbouring
+  half of the fix is the redaction file's own `_order` rule: list "harold lewis
+  and assc" before "harold lewis", or the firm's remnant is stranded the same
+  way.
+
+- **A document's own recommendation is a fact about the building, not about the
+  document.** "The statement recommends the property for landmark designation"
+  names the source in the page body, which the publishing rules forbid, and 47
+  descriptions in one batch were written that way before anyone noticed —
+  because when the source's judgement *is* the finding, attributing it feels
+  like accuracy. It isn't: state it impersonally ("Identified in 2024 as
+  eligible for local landmark, California Register or National Register
+  designation") and let the Sources footer say who. The one place a source may
+  be named is `unknowns`, where a disagreement cannot be stated without saying
+  who disagrees — and there it needs its full name, not "the statement".
+
+- **The assessor's `year_built` of 1900 is a bucket, not a date, and a reverse
+  date check that forgets this calls extant buildings demolished.** Volume A–C
+  established a cheap and valuable check: a finding whose roll year falls *more
+  than fifteen years after* the source's date is usually about a building that
+  no longer stands, and thirteen pages carry that caution. Run mechanically over
+  volume G–I it fired twenty times and was wrong seventeen of them — every
+  Charles Hinkel house of 1883 on Broderick and Pine, and the Havens Mansion of
+  1884, a designated city landmark, all of which the roll dates 1900. **1900 is
+  21% of every roll year on this site** (3,090 of 14,505 pages) and 60% of all
+  pre-1907 ones; 1910 is another 3%. They are where the assessor files
+  "nineteenth century" and "before the fire". So: apply the check only where the
+  roll year is a *specific* later year — 1986 for the 1907 Italian American Bank
+  site, 2019 for the demolished Jack Tar Hotel, both of which it caught
+  correctly — and treat a roll year of 1900 or 1910 as an ordinary
+  construction-date disagreement instead.
+- **The same check governs whether the credit may become a spec row.** Where the
+  building really is a later one, writing the source's architect into
+  `building.architect` misattributes the building standing there now: Hertzka &
+  Knowles went onto 1101 Van Ness, whose building dates from 2019, and Lawrence
+  Halprin onto 10–50 United Nations Plaza, a 1936 federal building whose plaza
+  he laid out and whose architect the page already named. **Set the spec row only
+  when the fact is about the building the parcel now carries**; otherwise keep
+  the timeline entry, give it the kind `site history`, and leave the spec row
+  alone.
+- **A specific later roll year is still not proof, so the building's own name is
+  the second half of the test.** Volume J–L refined the rule above: a major
+  alteration re-dates a parcel, so 225 Bush Street — the Standard Oil Building of
+  1922, extant and well known — carries a roll year of 1948 and tripped the
+  demolition caution anyway. **State the caution only where the record gives a
+  bare address**; where the source names the building (a hotel, a theatre, a
+  named office block), the name is evidence that the building described is the
+  one standing, and an ordinary construction-date disagreement is the honest
+  form. Two of that volume's four candidates moved that way.
+- **Size a batch on what its addressed half is *about*, not on how many rows
+  it has.** DigitalSF's dossier ordered its 44 collections by addressed-record
+  count and named the largest untouched one as the next batch. Its 184
+  addressed captions turned out to be a neighbourhood newspaper's photographs of
+  the people of the Tenderloin — **177 of 184 carry a personal-name shape, 82
+  name someone in a role**, most of them tenants in rent strikes and evictions,
+  and most of them alive. The name filter keeps all of that off a page, but
+  `raw.text` carries the caption verbatim into a committed findings file, which
+  is naming an occupant in the repository — the thing the privacy limits bar *at
+  extraction time*. **A collection can be the largest, the best documented and
+  the wrong one to read.** Check what the addressed captions say before
+  budgeting a session on the count, and where the answer is people, that is a
+  decision for a person and not a batch.
+
+- **A caption's own district heading reads as a building name.** Every Worden
+  plate ends "in Ingleside Terraces", `terrace` is a building noun, and the
+  named-buildings filter kept the *district* as the building's name on sixty
+  pages. The fix was not a stop-list: the record already carries its
+  `650$a Districts--Ingleside Terraces` heading, exactly as it carries the
+  `Streets--` headings the filter was already given to recognise a bare street
+  name. *When a filter needs to know that a phrase is a place, ask the record
+  before writing the phrase down — a catalogue that indexes by place has already
+  told you.*
+
+- **A tool that builds a page's identity from the finding rather than from the
+  resolution breaks on every readdressed building.** `resolve_eas.py manifest`
+  took `street_name` and `street_type` from the finding — the address as
+  recorded — while taking the slug from `resolution.path`. For the Worden plate
+  headed "299 Moncada Way" whose note says the address is now 101 Paloma Avenue,
+  that produced a manifest entry reading `street_slug: paloma-avenue` with
+  `street_name: MONCADA`, which matches no EAS row on the parcel, so the entry
+  got no coordinates and `seed_pages.py` died on a bare `KeyError: 'lat'`. The
+  resolution's `eas_address` is the address that was actually placed. *Anything
+  downstream of a resolution should read the resolution, not the finding it came
+  from — they agree on every ordinary record and disagree on exactly the ones
+  the module has a rule about.*
+
+- **A duplicate check that recognises your own writes by their wording will not
+  recognise them.** `check.py --overlap` excluded a page entry when its text
+  matched a finding's `description` — but a publisher trims the address and the
+  date out of that sentence before it goes on the page, so "Willard E. Worden
+  photographed the property at 710 Victoria Street in 1912" is stored as
+  "…photographed the house." and **all sixty** of a batch's own entries came
+  back as duplicates of themselves, burying the four real flags underneath. The
+  reliable key is the source id: where a source cites per item, the page's id is
+  the register id with the item appended (`digitalsf-8325`), so the prefix test
+  works. *Same shape as the idempotency lesson above, in the checking tool
+  rather than the publishing one — anything that asks "did the page already say
+  this?" has to be able to tell your own writes apart, and text is not how.*
+
+- **A pattern keyed on capitalization is a claim about the source's house
+  style, and sources do not keep to one.** The DigitalSF extractor matched a
+  street name as capitalized tokens, so "743 Washington street" — which is how
+  that catalogue writes an address about a third of the time — parsed as *743
+  Washington*. It cost three different things at once, which is why it went
+  unnoticed through a whole published batch: the finding recorded
+  `street_type_not_stated` about a record that stated it, the orphaned "street"
+  left in the caption failed the name filter's all-capitalized test and took the
+  building's name down with it, and the resolution method said "the record
+  states no street type" — which sent a 12th Street address to the
+  Street-or-Avenue tie-break for want of a word the record had printed.
+  *Before trusting a case-sensitive pattern, grep the corpus for the lower-case
+  form of what it is looking for and count.*
+
+- **A filter that drops on positive evidence still has to be told what the
+  evidence looks like from both ends.** The same extractor's
+  `named-buildings-only` policy — every word capitalized, one of them a building
+  noun — is the right trade for a caption collection, because a false keep is a
+  privacy failure. What it lost was names the caption *frames*: "Main entrance
+  to the Marines' Memorial Club", "Courtyard at the San Francisco Art
+  Institute", "Bank of Canton located at …". Widening the prefix list at the
+  front, stripping the trailing participle at the back, and completing eight
+  noun families recovered 42 names on 53 findings with nothing lost — because
+  none of those edits touched the policy, only what reaches it. **The one
+  proposed widening that was rejected is the shape to remember:** "home" would
+  have kept fourteen funeral homes and also "Home of Charles Berta" and "Home of
+  Katherine Modesti". *A head noun that reads as a building in a firm's name and
+  as a dwelling in a resident's is not safe as a bare noun, whatever the ratio —
+  and the ratio is what makes it tempting.*
+
+- **A word boundary is not a decade boundary, and the field you avoided is
+  still the one you fall back to.** The DigitalSF extractor was written to read
+  `260$c` precisely because `269$a` collapses a range to its first year — and
+  it then failed on `\b(19\d\d)\b` against "1920s", where the trailing "s" is a
+  word character and kills the boundary. Every decade date therefore fell
+  through to the `269$a` fallback and was written as `date_precision: year`.
+  The worst case is the one with no digits at all: `260$c` "19--" means "some
+  time in the twentieth century" and `269$a` answers **1900**, which is also
+  the assessor's bucket for "nineteenth century" — so the fabricated year is
+  the single year this project is least equipped to recognise as fabricated.
+  731 records read "19--"; over 2,100 carried a decade; **24 had reached
+  published pages** before anyone looked. *A fallback is only as safe as the
+  test that decides not to use it — write one input of every shape the source
+  actually prints through the parser and read the output, rather than trusting
+  the branch you were careful about.*
+
+- **A creator credit does not make a name in a caption something other than a
+  person in the frame.** DigitalSF's redactor read `600$a`, which is where a
+  catalogue is supposed to put the people a photograph is *about*. SFP 84
+  leaves `600` empty and files "Winchell, Ezra & Winchell, Led F." under
+  `700$a` with `$e Photographer` — the family photographed their own house in
+  the weeks after the 1906 fire — so seven captions naming a household at 747
+  Baker Street went into a committed findings file untouched. The module's rule
+  that a photographer may be credited is about *crediting the maker*; it says
+  nothing about a caption that puts a name at a street number, which is the
+  resident information the privacy limits bar outright. *Read every field the
+  record files a person in, not the field the standard says it should use* —
+  14,535 of that corpus's 22,360 `700` fields carry no role at all. The guard
+  that stops the widening eating the evidence is worth copying: **a bare
+  surname is left alone when the next word says it is a place**, which keeps
+  "Canterbury Hotel" against a `700$a` of "Canterbury, Alan J." and keeps a
+  street named for someone.
+
+- **Measure a rule over the whole repo before wiring it in — and be willing to
+  leave it out.** A point-placed resolution put 1458 Kirkwood Avenue on a
+  parcel that states its own range as 1470–1498 Kirkwood: the address has no
+  parcel number in EAS, and EAS points sit centimetres from a boundary, so the
+  point landed in the neighbour. The obvious fix is to refuse any point
+  placement whose parcel's stated range excludes the number. Run over every
+  findings file in the repo that rule fires on **61 of 582** point-placed
+  resolutions and **most of them are correct**, because `sf-parcels`'
+  `from_address_num`/`to_address_num` is routinely narrower than the EAS
+  numbers the parcel actually holds — "2861 24th Street" on a parcel stated
+  2863–2869, "243-245 8th Avenue" on one stated 245–245. So the tool raises and
+  prints how far outside the number falls, and a person decides: a parcel
+  stating a single number is an incomplete field, one stating a wide span that
+  excludes the number is usually next door. *Same shape as the demolition rule
+  above, reached the same way — by running it before trusting it.*
+
+- **A batch that can yield nothing is still worth defining precisely, and the
+  definition is usually not the one the symptom suggests.** DigitalSF's batch
+  unit is the citation string in `524$a`, so 1,678 records carrying none were
+  invisible to every run — filed as one open question about "the records with
+  no citation field". They are not a collection: `982$a` splits all 1,678 into
+  six digital series, five of which are not photograph catalogues at all
+  (newspaper *issues*, Sanborn atlas plates, five Book Arts items), and the
+  whole set states no address in any field. All 37 of the candidates that made
+  it an issue are false positives — 23 of them the atlas's own publisher
+  imprint, "115 Broadway, New York". *When a group is defined by a missing
+  field, find the field that is present before planning the read; the answer to
+  "what are these?" is usually a different question's answer.*
+
+- **A duplicate check that recognises "our own writes" by the source-id prefix
+  cannot see the source's own earlier batches.** `check.py --overlap` excluded
+  every page entry whose source started with the register id, which is right for
+  the batch's own per-item citations (`digitalsf-8325`) and wrong for every
+  other batch of a source that cites per document. 216 Pine Street and the
+  Charleston Building were already on their pages, cited as
+  `sf-environmental-review-333californiaoff5198sanf` and
+  `sf-environmental-review-222kearnystreetd1119sanf`, and both came back clean
+  against a batch that had just re-extracted them. The fix is to enumerate the
+  item ids **this file** cites rather than matching the prefix; the shape to
+  remember is that *the second batch of a source is the likeliest place to
+  duplicate it*, and the check built to stop duplicates was blind to exactly
+  that case. Neither wording nor name-and-date caught them either, so this is
+  still a decision a person makes by reading the page.
+
+- **Several parcels can be one building, and the assessor says so.** A tower
+  built on an assembled block keeps its lots: the 505 Montgomery tower stands on
+  seven parcels of block 227 and 100 First Street on six of block 3721. Every
+  one is active, every one still carries a demolished predecessor's street
+  number in EAS, and the resolver places and the manifest seeds each of them —
+  eleven pages for two buildings. The roll is what distinguishes them: an
+  assemblage lot comes off it with **no build year, no storeys, and a
+  `property_location` naming a different street number**, and the two lots on
+  block 227 that carry their own year (1907 and 1923) are exactly the two
+  buildings the project kept. **Before seeding from a manifest, group its
+  parcels by the roll's `property_location` and collapse the ones that share
+  it.**
+
+- **The block and lot a record prints belong to what the record is about, and
+  attaching them more widely poisons the only check that tests a finished
+  resolution.** The dossier's own instruction — put the printed parcel on every
+  finding — was read as "on every finding *from* that document", so a project's
+  block went onto the twenty buildings it merely rates around the block.
+  `report` then printed two "another block" lines and three re-lottings that
+  were artefacts, which is worse than printing nothing: the scan exists so that
+  a real OCR digit stands out, and noise is how a real one gets missed.
+
+- **Seeding a page restages every neighbour's "nearby" list, and nothing
+  re-renders them.** `seed_pages.py seed-list` writes the new pages and rebuilds
+  the street hubs, and stops there — but the renderer puts a *Same block* list
+  into every page near the new one, and those pages' `index.html` files are now
+  stale. Twelve new pages in one run left **67 pages the run never touched**
+  failing `validate.py`, with a diff of exactly one line each. It reads like a
+  disaster and is a one-command fix, but only if you know it is coming: the
+  instinct on seeing sixty-seven unexplained failures is to look for what the run
+  broke. *After any bulk seed, run `validate.py`, feed the paths it names back to
+  `seed_pages.py render`, and read one diff to confirm the change is only the
+  neighbour list.*
+
+- **From about 2000 a planning document stops doing the research and starts
+  appending it.** The environmental reviews of the 1970s and 1980s describe
+  buildings in their own chapters; the ones after about 2000 bind in the
+  consultant's report whole — a Page & Turnbull historic resource evaluation, a
+  McGrew Architecture report, a Carey & Co. Section 106 review — and summarise it
+  in two paragraphs at the front. **The appendix is the document.** Carey & Co.'s
+  survey in the back of the 275 10th Street EIR dates twenty-nine properties from
+  the permits on microfilm, one construction year, architect or builder and
+  occupancy history each; the EIR's own chapters repeat about a fifth of it, and
+  contradict it twice — naming a different owner and a different architect, and
+  swapping two of three buildings' dates in the initial study. *Read to the end of
+  the appendices, and where the front and the back disagree, the back is the one
+  that read the permit.*
+
+- **A street number the city has retired is usually still on the map under the
+  parcel that swallowed it.** Half of one batch's unresolved findings were
+  numbers EAS no longer holds, and for a project's own site buildings almost all
+  of them came back with one query: the report names the lots, the lots were
+  merged for the project, and the merged parcel kept one of the old numbers. 246
+  and 250 Front Street are 248 Front Street; 64 and 72 Dore Street are 275 10th
+  Street; 70 Oak Street is 50 Oak Street; 562–572 and 554–560 Mission Street are
+  both 560 Mission Street. The resolver cannot see this, because it looks the
+  number up and finds nothing. *Before accepting "the address does not exist
+  today" on a finding about a project's own site, look up the other numbers the
+  same record names and see whether they land on one parcel.* The vicinity
+  buildings a report merely mentions are the ones that genuinely die.
+
+- **A second architect on a building the page already credits is an addition,
+  not a duplicate — and neither overlap scan will tell you so.** The name-and-date
+  scan compares the *same* name, so a different collaborator never matches; the
+  wording scan scores these low because the sentences share only the building.
+  Temple Emanu-El's page credited John Bakewell Jr. and the professionals
+  biographies credit G. Albert Lansburgh for the same 1926 building; both are
+  right, because he was the associate. Publish alongside and let neither credit
+  adjudicate the other.
+
+- **A collection's subject is a claim about the whole of it; its *addressed*
+  half can be a different collection entirely — so measure that half before
+  writing one off.** SFP 179 sat unread for weeks because a dossier called it
+  "the same collection shape" as a neighbouring collection of named tenants,
+  on subject matter alone. Read, its 51 addressed records are shopfronts —
+  "Daldas Grocery at 200 Eddy Street", "Angkor Laundromat at 353 Eddy Street" —
+  and where a person is in the frame the caption does not name them: "Barista
+  behind the counter of Cafecito at 406 Ellis Street". Exactly one caption in
+  528 names anybody at a number. *The privacy limit bars **naming** a person,
+  not photographing one, and "photographs of people" is not a finding until
+  someone has read the records that carry an address.*
+
+- **A recurring event, product or programme name that opens with a number will
+  read as a street address on every record that mentions it, and one of them
+  can be most of a collection.** "4 Corner Friday", a weekly street event at a
+  Tenderloin crossing, was **100 of SFP 179's 151 apparent addresses** — two
+  thirds of the collection's entire reported yield, and enough to make it look
+  three times the size it is. It appeared in three spellings, so an exact-match
+  refusal list could not hold it. *When a collection's address count looks
+  surprisingly high for its size, group the parsed street names before
+  extracting: a name repeated dozens of times is a phrase, not a street.*
+
+- **An organisation named after a street number is rarely at that number, and
+  refusing the name is only half the fix.** "826 Valencia Writing Center at 180
+  Golden Gate Avenue" is one caption naming two numbers, and the extractor
+  takes the first one it can parse. Refusing "VALENCIA WRITING CENTER" stops
+  the wrong address reaching a page — but the parser gives up on a refused name
+  rather than trying the next match, so the *right* address does not appear
+  either, and the record silently leaves the batch. A fall-through was written
+  and **measured before wiring: 29 records change corpus-wide and 27 are
+  regressions**, because cutting the title at the match loses the caption's own
+  leading qualifier and "Rear of 80 Clara Street" becomes "80 Clara Street".
+  *Check what a new refusal does to the records it fires on, not only to the
+  ones it saves — and enter the one address by hand rather than rewriting
+  shared control flow at the end of a run.* Compare "4 Mile House Restaurant".
+
+- **A point-in-polygon placement that skips a parcel is a conflict, not a
+  result.** EAS files no parcel number on some addresses, and the resolver
+  falls back to the parcel the coordinates land in. That is right when the
+  parcel is the immediate neighbour with an incomplete range field — 289 Eddy
+  against a parcel stating 291-299 — and wrong when another parcel holds a
+  number *in between*: 353 Eddy was placed in a parcel whose own range is
+  365-365, with 0338021 (355 Eddy) sitting between the two. *Read the block's
+  number line before accepting a by-point placement, and where the point and
+  the line disagree, leave the finding unresolved with both recorded. The tool
+  prints the count of these; it cannot make the judgement.*
+
+
+- **A commercial condominium refuses exactly as a residential one does, and the
+  tell is a parcel with no roll row.** The directory contract defers
+  condominiums because each unit has its own parcel and none of them is the
+  building — and that is as true of a shopping centre split into retail, office,
+  cinema and department-store parcels as of a block of flats. On the Emporium
+  block, EAS files 835 and 845 Market Street under 3705049, which has no 2025
+  roll row at all; the building sits under 3705050, 3705051, 3705052, 3705055
+  and 3705056, each a "Shopping Center" or "Commercial Department Stores" parcel
+  of the same address. *A parcel with no roll row is a master, not a mistake:
+  look for its splits before deciding the address is simply gone.* This cost the
+  richest single document of a batch — thirteen buildings with dates, architects
+  and builders, none of which could reach a page.
+
+- **Seeding a page rewrites its neighbours, so `validate.py` fails on pages the
+  run never touched.** Every address page lists the pages near it, so a new page
+  changes the rendered HTML of every page within its radius. A run that renders
+  only what it edited then fails the build with a list of unfamiliar addresses
+  that looks like corruption and is not. *Render every page `validate.py` names,
+  not only the ones you edited:* pipe its output through
+  `grep -o "render san-francisco/[^ ]*"` and re-render the lot. In one batch 25
+  new pages made 60 pages need rendering, 35 of them nobody had opened.
+
+- **Two findings on one parcel carrying the same sentence make one page item,
+  and nothing checks it.** `check.py` catches a parcel resolved to two different
+  paths, because that breaks the directory contract. It does not catch two
+  findings that resolve to the *same* path and then write the same sentence
+  twice — which is exactly what a survey list does when it records a corner
+  building under both its street numbers (25 and 31-35 Water Street; 480-482
+  Francisco and 81-83 Vandewater; 1623 and 1629 Pine). *Before rendering, count
+  identical descriptions per page and merge them into one entry that names both
+  numbers, marking the sibling's `publish.note`.*
+
+- **An entry belongs to one date, and everything else in it is on the page under
+  a date it did not happen.** A finding is written from a passage, and a passage
+  in an environmental review walks a building through eighty years in four
+  sentences — so the description arrives carrying a designation, a rating, a fire
+  and a demolition under whichever year the extractor chose. On the page that
+  becomes a timeline item dated 1986 that ends in 1998, which is simply false in
+  the reader's eye. The Geneva Office Building shipped with eight items covering
+  nineteen dated events; the corrected page has thirteen items, each one thing
+  that happened on the date beside it. *Before publishing, list the years in each
+  description and compare them with the entry's own `date`: two or more foreign
+  years means the finding is really several findings, and the split belongs in
+  the findings file, not just on the page.* The same pass catches the two other
+  faults it travels with — **the report's argument** ("would have made it the
+  first San Francisco landmark deliberately pulled down"), which is a
+  counterfactual about a proposal and not a fact about the building, and **the
+  date restated in the prose** that the timeline label already shows ("Designated a
+  San Francisco landmark as the Geneva Office Building **in 1985**", on an entry
+  dated 1985). Both are now `check.py --overlap` scans — *by its own date* — so the
+  next batch is told before it publishes rather than after a reader finds it. The
+  restatement is not this module's alone: **953 of the site's 7,764 timeline entries
+  do it**, across almost every context-statement batch, and clearing them is its own
+  sweep.
+
+- **A campus is one parcel, and Golden Gate Park is one of them.** An
+  institutional environmental review names its buildings, not their street
+  numbers — Moffitt Hospital, Clarendon Hall, Simson African Hall, the Cathedral
+  House — and the resolver has nothing to look up. What decides whether the batch
+  resolves is one question: **does the report print an assessor block and lot, and
+  is that block a single parcel?** Where it is, every building on the campus
+  resolves onto the campus's own page and the whole institution gets a
+  chronology: Laguna Honda (2842/7), Grace Cathedral's close (246/1), the Zoo
+  (1 Zoo Road) and Golden Gate Park (1700/1, which is the de Young at 75
+  Hagiwara Tea Garden Drive, the Academy of Sciences at 55 Music Concourse Drive
+  and the Music Concourse together, and whose page on this site is 6101–6701
+  Fulton Street). Where the block is many lots — the UCSF Parnassus campus, the
+  University of San Francisco's block 1144 — nothing resolves and the findings
+  stay unresolved, however well documented the buildings are. *Check the block
+  against `sf-parcels` before deciding a campus batch is unresolvable: the park
+  looked hopeless because EAS has no street called Academy Drive, and the block
+  and lot the report printed on its own cover resolved all twenty findings.*
+
+- **An environmental review's distribution list is a page of street numbers and
+  not one of them is a fact.** Every one of these documents ends with the
+  agencies, libraries, newspapers and neighbours it was mailed to, at their own
+  addresses, and an extractor that keys on "a number followed by a street name"
+  harvests forty of them per document — the Foundation for San Francisco's
+  Architectural Heritage at 2007 Franklin Street appears in nearly every report
+  in the source. Worse, the neighbours on that list are private individuals at
+  their home addresses, which the privacy limits bar outright. *Key the extractor
+  on a construction verb near a year — built, constructed, erected, designed by,
+  demolished, opened — and not on the address; the address is what you look up
+  afterwards.*
+
+- **A parcel with two street frontages seeds under whichever street the finding
+  happened to name.** `resolve_eas.py manifest` takes the street from the finding,
+  so parcel 0766002 — the Civic Center courthouse block, which EAS holds as both
+  400 McAllister Street and 401 Polk Street — produced a manifest row with
+  `street_display: Polk Street` under `street_slug: mcallister-street`, and
+  `seed-list` built a page titled "400–401 Polk Street" at
+  `/tenderloin/mcallister-street/400/`. Nothing fails: `validate.py` passes, and
+  the page contradicts itself in the breadcrumb. *After `manifest` and before
+  `seed-list`, compare each row's street against the roll's `property_location`
+  and fix the row where they disagree; the roll's is the address the assessor
+  files the parcel under.*
+
+- **A caption's own numbers parse as addresses, and the year guard only fires
+  when no street type follows.** The standing rule — a street number equal to
+  the record's own year is not an address — is conditioned on the parse finding
+  no street type, so it misses every case where the caption's next word happens
+  to be one. A fundraising drive named for its year is the pure form: "1949
+  Career Drive" in a record dated 1949-03-16 parses as number 1949 on Career
+  Drive, and so does "1944 War Fund Drive". *Relaxing the condition was measured
+  over every findings file before being wired in, and rejected: it removes four
+  junk entries and two real published addresses — 1977 Bush Street in a 1977
+  photograph, 2011 Folsom Street in a 2011 survey — where number and date
+  genuinely coincide. Leave it. Step 3 refuses the junk for free, because there
+  is no street in EAS called Career or War Fund, and an unresolved finding costs
+  nothing while a lost page costs a page.*
+
+- **A thousands separator is not a street number, and the test is the digit left
+  of the comma.** "leader of 75,000 West Coast Longshoremen" yields *000 West
+  Coast Longshoremen*; "20,000 Leagues Under the Sea" yields *000 Leagues
+  Under*. Refusing every comma before a number would refuse the ordinary caption
+  punctuation that precedes most real addresses ("Miyako Hotel, 1625 Post"), so
+  the guard is `\d,` immediately left of the match and nothing else. *Four
+  entries corpus-wide, all junk, none resolved — which is the point: measure the
+  rule over `findings/` before wiring it, and a rule that changes nothing
+  published is a rule you can add without a re-run.*
+
+- **`digitalsf_extract.py` does not merge, so re-running a batch wipes its
+  resolutions and publish marks.** It writes the findings file from the corpus
+  every time. That makes a fixed extractor rule un-backportable: the three stale
+  entries a new guard would have caught in `sfp-162.json` and `tail.json` stay
+  where they are, correctly marked unresolved and rejected, because cleaning
+  them up would cost every resolution and publish status in two large files.
+  *Fix the extractor for the next batch, note the stale entries in the dossier,
+  and leave the committed files alone.*
+
+- **A collection's subject is not its addressed half, and the privacy limit is
+  about the sentence rather than the shelf label.** Two DigitalSF collections
+  were written off unread on subject matter and both were misjudged: SFP 179
+  because it photographs a neighbourhood's people (its addressed records are
+  shopfronts) and SFP 136 because it is a *portrait* collection (its three
+  addressed captions are public figures at public buildings, all dead half a
+  century, all already in published sources). What actually triggers the limit
+  is a caption naming a living person and the home they live in, where striking
+  the name leaves a household at a street number and nothing else — which is
+  SFP 130 and only SFP 130. *Measure the addressed records before writing a
+  collection off; the count that matters is not how many records name a person
+  but how many name a person **and** a number.*
+
+- **The renumbering guard is about when the *record* was written, not when the
+  *fact* happened.** `resolve_eas.py` declines a pre-1910 date resolved on the
+  EAS join alone, and it is right to: an 1895 newspaper giving 1895's number for
+  an 1895 fire needs a cross-street check before that number means anything
+  today. It is wrong for a modern document about an old building — a 1976
+  National Register nomination giving 1976's number for an 1880 house — where
+  the address is already today's address and the guard costs the fact for
+  nothing. It refused 20 of one 54-document batch. *Set `extra.record_date` to
+  the year the source was written; the tool skips the guard where that is 1910
+  or later and still prints the assessor's year for the parcel into the method,
+  because the guard's other error mode — a modern number pointing at a later
+  building on the same lot — survives the exemption.* The block-and-lot
+  exemption already in the tool is the same principle for records that hand over
+  the parcel.
+
+- **A listing's address and the building's address are not always the same
+  thing, and a moved building is where they part.** Nine of the ten San
+  Francisco National Register listings certified 8 March 1973 are Western
+  Addition Victorians the Redevelopment Agency bought and physically moved
+  rather than demolish; the NPS index carries the address they were moved *to*
+  and the nomination's own "street and number" is where they stood when it was
+  written, months earlier. Both are real, and they are two facts on two
+  different parcels — the one the house left, and the one it arrived at. *Read
+  the document's own header rather than trusting the index the batch was planned
+  from, and where they disagree, record both.* The destination block and lot the
+  form states is an intention, not a record: two of these name the same lot for
+  two different houses.
+
+- **A survey or nomination that dates a building by its water connection is
+  giving you a proxy, and it usually knows it.** The 1973 Western Addition
+  nominations all rest on "the San Francisco Water Department records show this
+  building as being connected to the water system in ⟨year⟩", and several then
+  quote the Junior League's *Here Today* giving a different year — 1884 against
+  1875, 1876 against "late 1880's". *That is a conflict to record, not a range
+  to average, and the water year is when the house got water rather than when it
+  was finished. Say what the source says and set `conflict`.*
+
+- **The assessor's `year_property_built` of 1900 is a placeholder, and the
+  overlap scan cannot tell it from a real replacement.** Eight facts in one
+  batch tripped "predates the building the assessor says is on the parcel", and
+  every one of them was the roll giving a flat 1900 for a Victorian the
+  nomination dates to the 1850s–80s. *Record the disagreement in the page's
+  `unknowns` and publish; do not reframe the fact as being about a demolished
+  building on the strength of a 1900. The flag still earns its keep — in the
+  same batch it caught 848 Kearny, where the roll's 2005 is real and the
+  International Hotel is genuinely gone.*
+
+- **Seeding pages rewrites the neighbours, and `validate.py` will fail until you
+  render them too.** Six new pages left 34 unrelated `index.html` files stale,
+  because each carries a "nearby places" list that now names a page that did not
+  exist. They are not in `scripts/render-backlog.txt` and nothing warns you.
+  *After `seed-list`, run `validate.py`, feed its "run: … render ⟨path⟩" lines
+  back to `seed_pages.py render`, and expect a diff several times larger than
+  the pages you actually wrote to.*
+
+- **A recorded range that splits across two parcels is not always a dead end:
+  the assessor's own `year_property_built` can choose between them.** The
+  resolver declines a range whose numbers sit on different parcels today,
+  because picking one would be adjudicating. But where the record dates *two*
+  buildings and the roll dates two parcels, the record has already chosen. St
+  Joseph's Church nominates 1401–1415 Howard Street, which is 3517039 and
+  3517040 today; the nomination gives a church of 1913–14 and a parish hall and
+  rectory of 1906, and the 2025 roll gives 3517039 a build year of 1913 on
+  25,867 sq ft and 3517040 a build year of 1908 on 11,375. *Two dates against
+  two parcels is a match, not a guess — resolve by hand with `"by_hand": true`
+  and put the arithmetic in `method`. One date against two parcels is still a
+  decline.*
+
+- **A modern document can still give a street number the city does not have,
+  and the fix is to identify the building rather than repair the number.** The
+  1978 San Francisco Civic Center nomination addresses the War Memorial Opera
+  House as 309 Van Ness Avenue and the Veterans Building as 459; EAS holds
+  neither, and holds 301 and 401 on one parcel whose sf-parcels range is
+  301–401. `extra.record_date` turns off the renumbering guard for documents
+  like this, which is right, but it does not make the number correct. *Where a
+  document names a building and states the block it occupies, that is the check
+  material — resolve on the name and the block, say so in `method`, and never
+  quietly slide 309 to 301 as if it were a typo.*
+
+- **A corner building addressed on both its frontages needs the second one in
+  `extra.address_note_as_recorded`, or the resolver never looks.** The Pioneer
+  Trunk Factory nomination is titled "2185–99 Folsom Street and 3180 18th
+  Street". EAS has dropped every number in the Folsom range and holds 3180 18TH
+  ST on a live parcel, and the resolver returned "no record" without a hint
+  that the document had given a second address. The field existed but only fired
+  where a finding also carried a `conflict`, which is the digitalsf case it was
+  written for. *`resolve_eas.py` now reports the second address on every
+  no-EAS-record decline, naming the parcel it lands on and leaving the
+  by-hand call to the reader. Put the source's other frontage in that field
+  whenever it states one.*
+
+- **`urllib` against npgallery.nps.gov runs at about three minutes a document
+  and `curl` at about one second.** Same host, same files, same machine: a
+  42-document batch that should take three minutes was on course for two hours
+  before the difference was measured. *On any bulk fetch, time one document with
+  `curl` before writing a Python fetch loop around `urllib.request`, and if the
+  gap is that size, shell out.*
+
+- **A survey's block-and-lot column can be OCR'd wrong, and the neighbouring
+  rows are the free check.** The Uptown Tenderloin nomination's inventory prints
+  `540/11` for 76–80 Turk Street, and block 0540 is in the Western Addition with
+  no Turk Street frontage at all — the digit is a misread of 340. What settled it
+  was reading four rows either side: 34–48, 50, 62–64, 66–74 and 76–80 carry lots
+  7, 8, 9, 10 and 11, the first row prints its block as `340/7` correctly, and
+  the assessor's APNs for the published pages at those numbers are 0340007,
+  0340008, 0340010 and 0340011. *An inventory is a sequence, so never resolve a
+  single row's block and lot on its own — read its neighbours and check the run
+  against the parcels the site already has. One row in isolation cannot tell a
+  misread digit from a genuinely different block.*
+
+- **Never guess a National Register reference number from the certification
+  year.** 08001407 is the Uptown Tenderloin Historic District; 08000209, which
+  is what guessing an early-2008 listing produces, is a real document that
+  downloads with HTTP 200 and 154 pages of nomination for Johnston's Inn in
+  Paris, Kentucky. Nothing about the fetch fails, and the PDF's own title
+  metadata is the only quick tell. *Take every refnum from the NPS index query,
+  and check the property name on page 1 before extracting anything — the
+  dossier already says the index is the batch planner, and this is the second
+  reason.*
+
+- **A scanned inventory's block column fails systematically, not randomly, and
+  that is what makes it safe to resolve around.** The Uptown Tenderloin
+  inventory's 85 block mismatches were one substitution repeated: a leading 3
+  read as 5 (`531`→0331, `524`→0324, `503`→0303), or dropped entirely (`52/3`→
+  0352), or read as `H` in "31" (`H7`→317, `H9`→319) or as `$` (`$21`→321), with
+  `!` and `l` for 1 and `O` for 0 in the lot. Resolving on the EAS address join
+  and checking the printed block afterwards explained **84 of 85**. *Audit the
+  whole set mechanically — single-character misread, or dropped leading digit —
+  and read only the residue by hand. The one that did not fit was the document's
+  own filing error (800-806 O'Farrell printed `520/14`, and parcel 0520014 is
+  1780 Filbert Street in the Marina), and it stood out precisely because every
+  other mismatch had a rule.*
+
+- **A findings file's `conflict` entries are not automatically a page's
+  `unknowns`.** The resolver recorded 73 conflicts on this batch and every one
+  said the same thing — the record is filed under block 531, the address
+  resolves to 0331009. Those are the OCR artefact above, not a disagreement in
+  the historical record, and writing 73 of them onto pages would have presented
+  a scanning fault to readers as something the sources disagree about. *Sort
+  conflicts by what they are about before publishing them: a date the assessor
+  disputes belongs in `unknowns`; a block-column transcription mismatch is
+  bookkeeping and belongs only in the findings file.*
+
+- **Re-extracting a PDF with `pdftotext -layout` proves nothing when the text is
+  already `-layout`.** A whole class of damage here looked like collapsed
+  columns, so the PDF was re-extracted to compare — and came back byte-identical
+  (6,737 lines, 451,531 characters). The damage was in the scan's OCR, not in
+  the extraction. *Diff the re-extraction against the committed `.txt` before
+  planning any work around "bad extraction"; if they match, the text is as good
+  as it gets and the fix is a resolver rule, not a re-fetch.*
+
+- **In an inventory that lists a building's later names, a parenthesised name is
+  a later name and the year is when that name was current.** 134-144 Eddy Street
+  is dated 1907 and its first listed name is "Langham Hotel (1911)"; 71 of 477
+  rows lead with a dated name. Writing "built as the Langham Hotel" would assert
+  something the row does not say. *Only an undated leading name may be published
+  as what a building was built as; a dated one is a later name and goes in
+  `extra`, not into the sentence.*
+
+- **The free prose after an inventory row's structured fields is where the
+  people are, and a keyword privacy filter will not see them.** These rows end
+  with sentences like "Jessie Hayman ran a house of prostitution here from 1912
+  to 1917" and "Former tenant: Frank Capra, film director, 1921" — no "owner",
+  no "resident", nothing a role-word filter matches. An extractor that ran to
+  the end of the clause put both names into draft findings. *Cut an alterations
+  or use clause at its first sentence boundary, and audit the output a second
+  way: list every capitalised word-pair in the finished descriptions that a
+  credit word did not introduce. In this batch that scan returned 40 pairs, 38
+  of them building names and styles and exactly 2 people.*
+
+- **Pulling a dated event out of a clause without removing it from that clause
+  publishes the same event twice.** "Machine shop 1920 converted to garage by
+  1929" became both a construction sentence still carrying the conversion and a
+  separate 1929 alteration entry — the generic-beside-specific duplicate, on
+  eight pages, and the overlap scan is what caught it. *When an embedded event
+  becomes its own entry, strip its phrase from the clause it came from, and
+  compare the two year-free — the captured phrase carries the year and the
+  clause may not, so an exact-substring strip silently misses.*
+
+- **A notable dead resident is not a presentation decision, and a run that
+  files one as a question has left work behind.** This batch read eleven rows
+  naming Dashiell Hammett, Frank Capra, Fritz Leiber, Sally Stanford, Miriam
+  Allen de Ford, John Galen Howard, Isadora Duncan and two women the nomination
+  cites to a published history — and took none of them, because the root
+  `AGENTS.md` admitted "notable past residents already covered by published
+  sources" while this module's rulebook said leave residents and occupants.
+  Issue #310 settled it the affirmative way and both rulebooks now say so: the
+  limit exists so this site can't be used to look somebody up or to launder a
+  name out of a permit, and neither reaches the documented dead. *Take the
+  notable past occupant whenever a published source covers them and they are
+  plainly no longer there. What is still a judgement is only **where the fact
+  lands** — a residency with a period is a `notable_residents` row, a use of the
+  building or a dated event is a timeline entry — and that is a call a run
+  makes, not a human.* The cost of having got this wrong once: 451 facts
+  shipped in PR #309 and nine more waited two days in a `needs-human` issue.
+
+- **Census the credited names before publishing them, because OCR damage hides
+  in the singletons.** Grouping this batch's 228 distinct credits and matching
+  every one-off against the repeated spellings surfaced `Albert W. Burgen` for
+  Burgren, `H.C. Bauman` for Baumann, `Roussaeau & Rousseau` and `Rousseau &
+  Rosseau` — each wrong once and right several times in the same document. *Fix
+  only where the document itself spells it correctly elsewhere, leave
+  punctuation variants alone, and leave a genuine ambiguity alone too: "Alfred
+  W. Burgren" against "Albert W. Burgren" is two first names for one surname and
+  choosing between them would be adjudicating.*
+
+- **A resolution can land on one of the unit parcels its own method calls a
+  condominium, and nothing declines it.** 19 Macondray Lane joined in EAS to a
+  single active parcel, 0120076, so the resolver resolved it — while the same
+  method sentence reported that the sibling row "19 A" falls on a point shared
+  by 0120075 and 0120076, "which is what a condominium looks like". The city had
+  split the three-unit building's lot into two unit parcels in 2009; the page
+  would have been one flat. `resolve_eas.py report` now prints every resolved
+  finding whose parcel is among the ones its own condominium note lists. It
+  raises and does not decide, because the rule was measured first: four
+  committed entries match, and one of them is 801 Market Street on airspace
+  parcels 3705Z001–Z004, a building the site does want a page for. *Read that
+  block of the report, and mark a unit parcel `unresolved` with `by_hand`.*
+
+- **A batch that straddles a street the analysis neighborhoods divide on gets
+  filed across the street.** Green Street is the Russian Hill / Nob Hill line
+  on the 1000 block: the north side is Russian Hill and the south side Nob
+  Hill, and the pages already on disk follow that. The resolver's nearest-page
+  rule put 1809 Taylor Street (block 120, Russian Hill) under `nob-hill`
+  because the nearest Taylor Street page was across Green, and 1025 Green
+  Street (block 126, Nob Hill) under `russian-hill` because the nearest page
+  was 1000 Green opposite. `--area-from-nhood` is not the fix where the site has
+  settled its directories: measured over every page, 925 of 16,468 sit in a
+  directory other than their parcel's analysis neighborhood where that
+  neighborhood is also a directory the site uses — Financial District pages the
+  assessor calls Chinatown, Dogpatch pages it calls Potrero Hill — and those are
+  deliberate. *Before seeding, list each new page's directory against its
+  parcel's `analysis_neighborhood` and read the disagreements; on a boundary
+  street, the side of the street decides.*
+
+- **An owner can be the notable occupant, and "owners are out whatever their
+  era" is about ordinary owners.** The Russian Hill district nominations name
+  the first owner of nearly every house — a harness maker, a widow, a lumber
+  clerk — and those stay out. But the same nominations name, as owners, a
+  District Attorney of the graft trials and the Mooney case, the merchant whose
+  name the Feusier Octagon House carries, the confectioners' supplier A. P.
+  Giannini made an early Bank of Italy investor, and Paul Verdier of the City
+  of Paris, after whom 1001 Vallejo Street is still called the Verdier Mansion.
+  The root AGENTS.md's test is "whoever the building is known for" where a
+  published source covers them and they are plainly gone, and each of these
+  passes it. *Ask whether the person is independently notable or the building
+  bears their name — not whether the sentence calls them the owner.* The client
+  of a lost house who is neither (Myron Hunt's client at 1715 Taylor Street) is
+  left out, and so is his name on the wall that survives him.
+
+- **A record with no street number can still resolve, when it names the
+  building standing over the site.** The evidence bar refuses cross streets and
+  metes and bounds, and that is right for a record that only *locates* itself.
+  It is not the same case as a record that *identifies* a building: the Apollo
+  storeship's nomination has no address at all and says the wreck lies under
+  "the former Federal Reserve Bank of San Francisco building" at Battery and
+  Sacramento, which is one APN with one roll row; the Niantic's puts its
+  excavation in the construction at Clay and Sansome in 1978, and EAS holds one
+  address on that corner, on a tower the roll dates to 1981. Both were resolved
+  by hand with the named building in `method`, and both descriptions frame the
+  fact as the site before. *A named, still-standing building is check material
+  like a lot dimension; a corner on its own is not.* Where the record then
+  contradicts itself about which corner — that nomination says northwest in its
+  heading and southwest in its description — the disagreement goes in the
+  page's `unknowns` and the parcel comes from the building, not the corner.
+
+- **Federal, military and Port land is a standing hole in EAS, and it is worth
+  knowing before a batch is planned rather than after it is read.** Of
+  seventeen National Register nominations read in one batch, three could not
+  reach a parcel for this reason alone: a lighthouse with no number, a naval
+  commandant's house at 1 Whiting Way on Yerba Buena Island where EAS holds 15,
+  20, 25, 50, 61, 71 and 81 Whiting Way and none of them carries a parcel
+  number at all, and a pier on the Embarcadero where EAS's numbering starts at
+  5 and there is no PIER street. Thirteen findings, read and written and
+  unresolvable. *Check EAS for the street before extracting a document about
+  the Presidio, Treasure Island, Yerba Buena Island, Fort Mason or the piers* —
+  the pass is still worth doing, and the coverage note should say why nothing
+  landed.
+
+- **A campus or complex prints its parcel and not its address, and the acreage
+  is the check.** A district nomination for an institution names buildings,
+  not street numbers, and the one address on its form may be dead — the
+  Southern Pacific Company Hospital's 1400 Fell Street has no EAS record and
+  the nearest surviving numbers are on the next block. What it does print is
+  "Lots 2 and 3, City block 1206" and "2.5 acres", and those two lots are the
+  only active parcels on the block, their areas summing to 2.51 acres.
+  *Resolve on the printed parcel, confirm with the stated acreage, and then
+  work out which building sits on which lot from the roll* — storeys, units and
+  the entrance the last rehabilitation moved.
+
+- **`resolve_eas.py manifest` only knew the streets the findings named, so a
+  by-hand resolution onto a different street wrote the wrong street beside the
+  path's slug and no coordinates at all.** The tool already corrects a
+  readdressed building from the parcel's own EAS rows, but those rows are
+  fetched per street name taken from the findings; a campus nomination headed
+  "1400 Fell Street" and placed on 333 Baker Street had no Baker Street rows to
+  correct it with, and the manifest came out `street_display: "Fell Street"`
+  under `baker-street/333/`. `load_city` now adds the street of every
+  resolution's `eas_address` to the fetch set. Measured first over every
+  findings file on disk: 33 files have at least one such street, and re-running
+  `report` on a whole batch before and after the change printed no difference.
+
+- **On macOS, `sed 's/[ \t]+/ /g'` deletes every letter t.** BSD `sed` does not
+  read `\t` inside a bracket expression as a tab, so the class is space,
+  backslash and `t`, and a whitespace-squeezing pass turns "the Statement of
+  Significance" into "he S a emen of Significance". It looks exactly like a
+  damaged scan, and the first nomination of the 2000-2015 run was nearly
+  written off as bad OCR on the strength of it. *Squeeze with `tr -s ' '`, and
+  when a whole text layer looks mangled in one consistent way, suspect your own
+  pipe before the document.*
+
+- **Ask whether a building has a page by its parcel, never by the source's
+  address.** A page lives at the lowest number on its parcel, sometimes on
+  another street: the Haas Candy Factory at 54 Mint Street is
+  `mint-plaza/14/`, the Colombo Building at 1-21 Columbus Avenue is
+  `columbus-avenue/7/`, the Mutual Savings Bank at 700 Market Street is
+  `kearny-street/1/`. An `ls san-francisco/*/<street>/<number>` before
+  resolving reported all three as missing, and planning around that would have
+  seeded duplicates and skipped the overlap scan. *Resolve first, then read
+  the page at `resolution.path`.*
+
+- **Test a whole group before generalising a fetch failure from one item.**
+  A dossier recorded that nine-digit National Register reference numbers serve
+  a PNG placeholder instead of a PDF, from one test on 100008228. A ranged
+  request against all fifteen found the seven certified 2017-2019 serve PDFs
+  and only the eight from 2020 on do not — so a batch had been written off
+  that was one session's work. *A `curl -r 0-200 -w '%{content_type}'` over
+  every item costs a minute.*
+
+- **A statement's inventory of existing designations carries the statement's
+  date, not the designation's.** The North Beach context statement's regulatory
+  chapter lists every landmark, National Register listing and state point of
+  interest in its area, with numbers and no dates, and the extraction dated all
+  seventeen rows to the statement itself: 2018. Fifteen went onto pages as "2018 ·
+  Listed as …" — the Old Ohio Street Houses (1979), City Landmark No. 5 (1968),
+  and the Paper Doll, whose landmarking in 2019 came *after* the date it was
+  given. The nomination run of 2026-09-18 caught it only because it arrived
+  with the real certification date for two of them. *A listing that the source
+  reports rather than makes has no date from that source: take the date from
+  the register that made it — the NPS index's `CertDate` for the National
+  Register, DataSF `97yj-54sx`'s `yeardesignated` for city landmarks, the
+  Office of Historic Preservation's listed-resources register for state
+  listings — and where none has one, leave it off the timeline.* The same
+  trap has a quieter form in the entries built from the statement's reprint of
+  the 1982 survey: they are dated 1982 and name the landmark number the row
+  carries now, so 7 Columbus Avenue read as City Landmark No. 237 twenty years
+  before it was one. Those clauses were removed on 2026-09-18 wherever the
+  designation postdates 1982.

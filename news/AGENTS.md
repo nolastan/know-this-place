@@ -13,6 +13,10 @@ here — its evidence bar, its citation rules and its corpus discipline bind thi
 module unchanged — and read the root [AGENTS.md](../AGENTS.md), whose privacy
 limits bind hardest of all here, because a news story is mostly about people.
 
+**This file is the rules core.** The mechanics of each stage — cursors, the
+screen, reading an article, the markup, the items-file schema — are in
+[PIPELINE.md](PIPELINE.md). Read the section for the stage you are on.
+
 ## What this module is for, and what it is not for
 
 **For:** a dated, sourced, address-level fact a reader would want on the
@@ -51,7 +55,7 @@ cursors   which    what the     which      seed the page
 
 | Stage | Who | Reads | Writes |
 |---|---|---|---|
-| 1 poll | `tools/poll.py` | the registered feeds | `queue/<date>.json`, `state/cursors.json` |
+| 1 poll | `tools/poll.py` | the registered feeds, or one window of an outlet's archive | `queue/<date>.json`, `state/cursors.json` |
 | 2 read | an agent, with `tools/read.py` | the queued articles | nothing yet |
 | 3 extract | an agent | what it read | `items/<feed-id>/<batch>.json` |
 | 4 resolve | `research/tools/resolve_eas.py` | the items file | `resolution` in the same file |
@@ -69,128 +73,50 @@ python3 research/tools/resolve_eas.py apply news/items/<feed>/<batch>.json
 python3 scripts/seed_pages.py seed-list --manifest research/manifests/news-<batch>.json
 ```
 
-## Cursors: what "already considered" means
+**A feed is not an archive, and the module has two ways of listing stories.**
+The open feeds carry between one and sixteen days, so the daily poll sees about
+two days of news whatever floor it is given — which means everything published
+before this module's first run is reachable only through the outlet's archive.
+`poll.py backfill --since <date> --until <date>` walks that archive by whichever
+route [feeds.json](feeds.json) records for the feed, and then screens and queues
+what it finds *exactly* as the daily poll does. It adds a way of listing and no
+new concepts; [PIPELINE.md → Backfill](PIPELINE.md#backfill-the-archive-behind-the-feed)
+has the routes and their traps.
 
-Every feed has a cursor in [state/cursors.json](state/cursors.json), and the
-rule it encodes is the module's memory:
+**A backfill is batched, and that is a rule rather than advice.** The crawling
+is cheap and the queue it fills is not: one month of the routed sources lists
+2,558 stories and queues 538, and every queued one is fetched and judged by
+hand at stage 2. A window is capped at a month, and a new one is refused while a
+backfill queue is still waiting to be read. Pick a window — one month, or one
+month of one feed — drain it, then go again. **Stopping with the window recorded
+and the queue drained is a finished piece of work**, however much archive
+remains.
 
-> **An item is considered once. Considered means a verdict was recorded — read
-> *or* skipped — not that anything was published.**
+**Go again on the same branch, not a fresh one.** An outlet's archive is its own
+past coverage, so the same address recurs across it — a project covered in
+February often resurfaces in April or June. Two backfill PRs opened
+independently off `main`, each walking a different window, will each happily
+seed or enrich that address's page on their own branch; whichever merges second
+then conflicts with the first. Before starting the next window, run the same
+open-PR check a daily run does (the `/news` skill's "Where a run starts") and
+continue there instead of branching again — including when you are the one who
+opened that PR minutes ago in the same sitting. A worklist that says "each
+batch is its own PR" (see e.g. #337) means each batch is reviewable on its
+own, merged before or independently of the others — not that batches done
+back-to-back without a merge in between should each get a fresh branch.
 
-- **Identity is the item's id**, not its date. Feeds re-date stories they edit,
-  and a date cursor hands the same story back every run.
-- **A cursor remembers the last few hundred ids** it has seen. A feed shows ten
-  to thirty items, so that is many runs of overlap.
-- **A feed's first run has no cursor**, so it takes only the last two weeks
-  (`--backfill-days`). Without that, a first run queues a feed's whole backfill.
-- **A failed fetch does not move a cursor.** One dead feed must not silently
-  swallow a day of another's stories, and the run reports it.
-- **Cursors move on a skip.** That is the point of recording the reason: a skip
-  is a decision the module stands behind, not an item it never got to.
+Two invariants the stages rest on, both detailed in
+[PIPELINE.md](PIPELINE.md):
 
-`poll.py status` prints where every cursor stands.
-
-**The queue file is the durable worklist, and the cursor is not.** Polling
-advances the cursor for everything it screened, so a story only survives in
-`queue/<date>.json` — delete that file when it has been drained, and leave it
-alone when it hasn't. An unfinished queue is picked up by the next pass;
-`poll.py status` lists every queue file still waiting. This is the one place
-where deleting a file is the right way to record that work is done.
-
-**A cursor is only true on the branch it was advanced on.** Nothing this module
-produces reaches `main` without a human merging it, which means the cursors,
-the queue and the items files live on a branch until then — and a run that
-started from `main` while a previous run's PR sat unmerged would re-fetch,
-re-screen and re-read everything that PR had already considered. So the daily
-workflow looks for an open PR whose branch begins `news/` and **continues on
-that branch**, merging `main` in to stay current. One PR accumulates until a
-human merges it; only then does the next run start fresh.
-
-That is why the workflow commits *every* run, including a run that found
-nothing publishable. An empty-handed run still advanced the cursors, and if it
-pushes nothing, the next run does its work again.
-
-The cost of the alternative is worth knowing, because it is not just wasted
-tokens: the feeds carry between one and five days. A PR left unmerged for a
-week, with the cursors stranded on it, would let the stories it had queued age
-out of the feeds entirely — lost rather than merely repeated.
-
-## The screen
-
-`poll.py` gives every new item a verdict from its headline, summary and tags
-alone. It is cheap, it is wrong sometimes, and it is **deliberately asymmetric**:
-it skips only on a clear signal and queues on doubt, because a queued story
-costs a glance and a wrongly skipped one is invisible forever.
-
-**San Francisco only.** Most of these outlets cover the whole Bay Area, and half
-their stories are about somewhere else.
-
-- The **headline** decides the geography. A feed that tags every item "San
-  Francisco" — Hoodline tags a Redwood City arrest that way — must not let its
-  tag outvote the headline's own subject.
-- **"South San Francisco" is a different city**, and so are "San Francisco Bay
-  Area", "the San Francisco Peninsula" and the Giants. Strip those before
-  looking for the city.
-- **Richmond is not in the elsewhere list.** The Richmond District is San
-  Francisco and Richmond is the East Bay; dropping every "Richmond" would cost
-  a whole district's coverage. Let the other signals decide.
-- A story on a **bay-area** feed that names an address but not the city is
-  queued anyway, with the doubt written into the reason. Confirming the city is
-  the reader's first job.
-
-**Might it name an address?** Three strengths, in order:
-
-1. **A street address** — `2918 Mission Street`, or the bare `400 Divisadero`
-   the city writes constantly. The bare form is only trusted on a street the
-   site already has pages on, and a four-digit number that runs into another
-   capitalized word is a year, not an address ("2026 Mission Local reported").
-2. **A street the site has pages on**, without a number.
-3. **The shape of the story** — opens, closes, sold, leased, evicted, burned,
-   landmarked, demolished. These are the stories that carry an address in the
-   body even when the headline names only the business.
-
-A subject that never carries a street number — a ballgame, an election, a
-recipe, a weather forecast — **outranks the third of those**, and only the
-third. A headline with a real address in it is queued no matter what else it is
-about.
-
-**Tuning it is expected.** `poll.py screen "<a headline>"` explains a verdict.
-When a skip turns out to have been wrong, fix the table it came from and say so
-in the commit — the lists in `poll.py` are the module's accumulated judgement,
-not a fixed dictionary. `read.py <queue> --skipped` re-reads a run's skips and
-measures what they cost; do that when you change the screen.
-
-## Reading an article
-
-`read.py` fetches each queued story, strips it to text, and reports every
-address in it with the page it belongs to. What it prints is **evidence, not
-copy.**
-
-- **The headline is the only text of theirs we publish.** These outlets are
-  alive and paying reporters, and a headline carried verbatim with the outlet
-  named and linked is a citation. A summary of the article is not: never
-  reproduce a sentence, a paragraph's structure, or the shape of the reporting,
-  and never write our own precis of it onto a page. What you write in the items
-  file is a note for the next reader of that file, not copy.
-- **An address is not a fact.** "The mayor spoke at 1 Dr Carlton B Goodlett
-  Place" names an address and says nothing about the building. Apply the
-  ten-year test above.
-- **A building with no page counts exactly as much as one with a page.**
-  `read.py` says which addresses already have pages, and that is a convenience,
-  not a ranking: 10,828 pages is a small slice of the city, so ranking by it
-  would confine the module to the slice of San Francisco that happens to be
-  documented already. The story decides, and the page is created to receive it —
-  see "No page yet? Seed it" below. `--only-pages` narrows a read when you are
-  triaging a long backlog by hand; it is not the default and it is not the
-  order to work in.
-- **A paywall that cuts off after the lede is not a source you can extract
-  from.** Record what you could read and mark the item unpublished with the
-  reason. The Registry and the Chronicle both do this.
-- **Some article pages refuse a fetcher (Hoodline answers 403) while their feed
-  syndicates the whole story.** `read.py` falls back to the feed's own copy.
-  That text stays in memory: source text is never committed, per
-  research/AGENTS.md → "Corpora on disk".
-- **Never let a story's own words about a person into the repo.** See below.
+- **An item is considered once**, and considered means a verdict was recorded —
+  read *or* skipped — not that anything was published. That memory is the
+  cursor, and **a cursor is only true on the branch it was advanced on**, which
+  is why a run continues on the open `news/` PR rather than starting fresh. A
+  backfill remembers a walked *window* rather than a list of ids, for the reason
+  PIPELINE.md gives; both halves of that memory bind both routes.
+- **The screen is deliberately asymmetric**: it skips only on a clear signal
+  and queues on doubt, because a queued story costs a glance and a wrongly
+  skipped one is invisible forever. Tuning it is expected.
 
 ## Privacy — the hardest rule here
 
@@ -207,13 +133,19 @@ because a news story is a story about people almost by definition.
   are not the page's business.
 - **Architects, builders, developers and named firms may be named**, per the
   root rules — they are the historical record of how the building got there.
+  A private individual who developed their own building is not a `developer`
+  for this purpose.
 - **A story about a person that mentions a building is not a building story.**
   An obituary that names the tower someone developed belongs on no page.
 - A death, an arrest, a crime at an address: the building's page records what
   happened to the *building*. It is not a crime blotter, and it never names or
   describes the people involved.
+- **A headline that names a private individual cannot go on a page.** We no
+  longer write the entry, so there is no rewriting your way out of it: if the
+  headline names someone who is not an architect, builder, developer or firm,
+  decline the story.
 
-## Putting it on the page
+## What an entry is
 
 A news entry on the timeline is **the article's headline, the outlet, and the
 date** — and nothing else. It reaches a page as an entry in `historical_record`,
@@ -242,137 +174,42 @@ fact the page states, and a paragraph under a headline is us summarizing
 someone else's reporting.
 
 - **Attribution belongs in the footer, never in the value.** `"architect":
-  "OMA"`, never `"OMA, according to SF YIMBY"`. research/AGENTS.md → "an
-  ordinary fact about a building must be stated as a fact, with the attribution
-  left to the Sources footer".
+  "OMA"`, never `"OMA, according to SF YIMBY"`.
 - **The `building` block describes the building that stands there.** A story
-  about a *proposal* names the team for a building that does not exist, and
-  writing its architect onto the page tells a reader that a surface parking lot
-  was designed by someone. A proposal or a permit filing leaves its team in the
-  items file's `extra` and puts nothing in `building` — the headline entry is
-  what carries that news. The same goes for a conversion designed but not yet
-  built: the architect of the alteration is not the architect of the building.
+  about a *proposal* names the team for a building that does not exist. A
+  proposal or a permit filing leaves its team in the items file's `extra` and
+  puts nothing in `building` — the headline entry is what carries that news.
+  The same goes for a conversion designed but not yet built.
 - **Only what the article states plainly, about this building.** Not the
   neighbouring building it describes on the way past, not what the reporter
   expects to happen, not a name that appears only in a rendering's caption or
   the outlet's own tags.
-- **The privacy rule binds hardest here.** Architects, builders, developers and
-  named firms may be named — that is what these fields are for. Owners, buyers,
-  tenants and residents may not, and a private individual who developed their
-  own building is not a `developer` for this purpose.
 - **Never overwrite the assessor with the article.** On a newly finished
   building the two routinely disagree, because the roll lags by years. Set
   `building.completed` and record the disagreement in
-  `building.completed_conflict` or `unknowns` — both render into the same note.
-  The roll's own year stays where it is.
+  `building.completed_conflict` or `unknowns`. The roll's own year stays where
+  it is.
 - **Enriching an existing page is editing someone else's work.** Fill a field
   that is empty; do not revise one a person or another source already filled.
   An article that contradicts a field already on the page is an `unknowns`
-  line, not an edit.
-
-```json
-{ "date": "2026-08-14",
-  "kind": "construction",
-  "headline": "Mission Laundromat Site That Fueled S.F. Housing Wars Finally Rises as Apartments",
-  "outlet": "Hoodline",
-  "url": "https://hoodline.com/2026/08/…",
-  "source": "hoodline-2026-08-14" }
-```
-
-with the matching citation in `sources`:
-
-```json
-{ "id": "hoodline-2026-08-14",
-  "name": "Hoodline, “Mission Laundromat Site That Fueled S.F. Housing Wars Finally Rises as Apartments,” 14 August 2026",
-  "query": "https://hoodline.com/2026/08/…",
-  "retrieved": "2026-08-16" }
-```
-
-`python3 scripts/seed_pages.py render <path to the page>` then regenerates
-`index.html`, where the entry becomes one `.vtl-item` — the headline in
-italics, the outlet as the link, no meta row. You write the JSON above and
-nothing else; the markup here is what to expect, not what to type:
-
-```html
-<li class="vtl-item">
-  <div class="vtl-date">Aug 14, 2026</div>
-  <p class="vtl-desc"><em>Mission Laundromat Site That Fueled S.F. Housing Wars Finally Rises as Apartments</em> — <a href="https://hoodline.com/2026/08/…">Hoodline</a></p>
-</li>
-```
-
-Rules that catch people out:
-
-- **The headline goes up verbatim, so read it as something we are publishing.**
-  It is the outlet's wording, quoted as a citation, which is what makes it fair
-  to reproduce — but it is now the only text on the page from this story, and
-  every rule below applies to it rather than to a sentence we wrote.
-- **A headline that names a private individual cannot go on a page.** Eviction,
-  arrest, crime and death stories routinely name people in the headline, and
-  the root [AGENTS.md](../AGENTS.md) forbids naming residents, tenants, owners
-  and occupants. There is no rewriting your way out of it, because we no longer
-  write the entry: if the headline names someone who is not an architect,
-  builder, developer or firm, decline the story. `publish.status: declined`
-  with the reason.
-- **Never edit a headline** — not to trim it, not to fix its capitalization, not
-  to drop the outlet's brand from the end. A quoted headline that has been
+  sentence, not an edit.
+- **One event, one entry, and the entry it collides with is usually already
+  published.** Two outlets on one morning is the easy case; a filing written up
+  again a week later is the one that gets through, because the earlier entry
+  went up in an earlier run and nothing in today's queue argues with it. Read
+  what the page already carries before writing to it — `read.py` prints it — and
+  decline the second account, naming in its note the entry that carries the
+  event.
+- **Never edit a headline** — not to trim it, not to fix its capitalization,
+  not to drop the outlet's brand from the end. A quoted headline that has been
   altered is no longer a citation. If a headline is unusable, the entry is
   unusable; decline it.
-- **One source id per article**, `<feed-id>-<YYYY-MM-DD>`, following the
-  newspaper convention already on the site (`loc-sf-call-1901-04-06`). Two
-  stories from one outlet on one page are two ids, suffixed `-2`.
-- **The date is the event's date where the story gives one**, and the article's
-  publication date otherwise. A store that opened on the Thursday is dated the
-  Thursday, not the Friday it was written up.
-- **The `description` in the items file stays.** It is the extractor's record of
-  what the story actually said and why it earned an entry — evidence for the
-  auditor, the thing a reviewer checks the headline against. It simply never
-  reaches a page now.
-- **No page yet? Seed it.** Most news addresses are in this state, and a fact
-  parked in an items file waiting for a page nobody creates is a fact nobody
-  reads. Seeding is a stage of this pipeline, not a question to put to a human:
-  name the parcels in a manifest under `research/manifests/news-<batch>.json`,
-  seed them, and put the entries on the pages in the same PR that extracted
-  them.
+- **No page yet? Seed it.** Most news addresses are in this state. Seeding is a
+  stage of this pipeline, not a question to put to a human.
 
-  ```bash
-  python3 research/tools/resolve_eas.py apply news/items/<feed>/<batch>.json
-  python3 scripts/seed_pages.py seed-list --manifest research/manifests/news-<batch>.json
-  python3 scripts/build_sitemap.py
-  python3 scripts/build_map_index.py
-  python3 scripts/validate.py
-  ```
-
-  Everything the seeder does elsewhere holds here — root
-  [AGENTS.md](../AGENTS.md) → "Page lifecycle" is unchanged. It creates only
-  pages that don't exist, it leaves every existing page alone, it rebuilds the
-  street hubs it touched, and what it writes is a first draft whose every fact
-  came from a DataSF API. Read a sample of the drafts before committing them,
-  the same as any other seed.
-- **The manifest's numbers must be derived the way the resolver derives them.**
-  `resolve_eas.py` unions the addresses reached through a parcel's retired APNs,
-  so a manifest built from the active APN alone can name the page at a different
-  street number than the finding resolved to. The numbers and the lead are in
-  the resolution's own `method` — "EAS puts 300, 330, 350, 360 BAY ST on that
-  parcel, so … the lowest, 300" — so take them from there rather than from the
-  number the story printed, and check the manifest's `apn`, `area` and
-  `street_slug` against `resolution.apn` and `resolution.path`.
-  `research/manifests/news-2026-08-16.json` is the worked example: 350 Bay
-  Street resolves to a page at 300 Bay Street.
-- **A parcel the seeder refuses is not a page to force.** It skips condominium
-  units and parcels with no row on the current roll, and prints the reason for
-  each. That is the site's rule about what may be a page, and it outranks the
-  story: leave the finding at `publish.status: "pending"` with the seeder's
-  reason in the note, and it stays in the items file as a fact with nowhere
-  legitimate to go.
-- **A seeded page's own data may contradict the story that prompted it.** The
-  roll described 2740 McAllister as a one-storey house built 1900 five years
-  after it was demolished. That is an `.unknowns` line, not something to
-  quietly drop from either side. Keep such a note only while the page still
-  shows the claim it contradicts — usually in the headline itself.
-- **The page is only half of it.** The same headline goes on the homepage's
-  news grid in the same PR — see "The homepage is the news" below.
-- `python3 scripts/validate.py` must pass — it asserts `index.html` is exactly
-  what the renderer produces from `data.json`, so re-render before you commit.
+The JSON and the markup an entry becomes, the manifest traps, and the rest of
+the publishing rules are in [PIPELINE.md → Rules that catch publishers
+out](PIPELINE.md#rules-that-catch-publishers-out).
 
 ## The homepage is the news
 
@@ -380,115 +217,21 @@ A story that reaches a page reaches the homepage too. The root
 [index.html](../index.html) is a map and then **In the news** — the grid is the
 page's subject, under the `<h1>`, `.place-cards.news-cards`, holding the
 **twelve** most recent news entries on the site, newest first. Below it there is
-only a list of street hubs. The homepage used to open on a manifesto and a grid
-of featured addresses; both are gone, and this module's grid took the room.
+only a list of street hubs.
 
 **An entry is not published until its card is in.** The pages this module writes
 are mostly pages nobody has a reason to visit yet, on streets the site had never
 heard of that morning; the homepage is the only thing that puts a day's news
-where a reader will actually meet it. A fact filed on a page nobody opens is the
-failure this module exists to avoid, and it does not stop being that failure
-because the fact is on a page rather than in an items file.
+where a reader will actually meet it. A run that published an entry and left the
+grid alone left the job half done.
 
-The card is picture, then address, with two lines hung underneath it: the
-headline, verbatim, linking to the article, and the outlet beneath that. The
-building is what the card names first; the news is what it says about it.
-
-**The grid is also the map's data.** The script at the foot of the homepage
-reads these cards — the `location`, the label, the headline, the outlet — and
-draws each one on the map as a pulsing dot in the cool data hue, against the
-brick of the eight thousand ordinary addresses, with the story in a hovercard.
-There is no second file: a card added is a dot added, a card dropped is a dot
-dropped, and a card with a `location` that does not parse is silently missing
-from the map. That is one more reason `location` is copied from the page's
-`data.json` verbatim and never typed by hand.
-
-```html
-<li>
-  <a href="/san-francisco/mission/mission-street/2918/">
-    <ktp-streetview location="37.750313,-122.418539" label="2918–2920 Mission Street">
-      <figure class="media">
-        <div class="media-empty">
-          <span class="ic ic-pin"></span>
-          <span>37.7503, −122.4185</span>
-        </div>
-      </figure>
-    </ktp-streetview>
-  </a>
-  <a class="card-label" href="/san-francisco/mission/mission-street/2918/">2918–2920 Mission Street</a>
-  <p class="card-news"><a href="https://hoodline.com/2026/08/…"><em>Mission Laundromat Site That Fueled S.F. Housing Wars Finally Rises as Apartments</em><span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a><span class="card-outlet">Hoodline</span></p></li>
-```
-
-**Copy that `card-ext` wrapper exactly.** The `ic-link` glyph marks the headline
-as the one link on the homepage that leaves the site, and an inline-block is a
-line-break opportunity in its own right — a bare `&nbsp;` does not stop the
-browser stranding the icon alone on a line of its own. The nowrap wrapper, with
-no whitespace ahead of it, is what keeps the icon on the last word.
-
-- **Twelve, and the newest are the twelve.** The new card goes on the top and
-  the oldest comes off the bottom. Nothing generates this list — it changes only
-  because an agent changed it, and a run that published an entry and left the
-  grid alone left the job half done. The grid is short of twelve until enough
-  runs have filled it; that is expected, and it is filled from the top by
-  ordinary runs, never by digging up old stories to pad it out.
-- **Order by the entry's date** — the same date that put it on the timeline,
-  which is the event's date and not the date of the run.
-- **One card per page.** A second story on a building that already holds a card
-  replaces that card; it does not earn the building a second one.
-- **The address is the page's, the headline is the outlet's.** `location` is
-  `coordinates` from `data.json` verbatim, the label is the page's address up to
-  the comma (`2918–2920 Mission Street`), and the placeholder coordinates are
-  four decimals with a real minus sign (−), matching the other cards.
-- **Every rule in "Putting it on the page" applies here unchanged.** The
-  headline is quoted verbatim and never edited, the outlet is named, and a
-  headline that names a private individual is declined. A headline that cannot
-  go on a page cannot go on the homepage — there is no lighter bar here because
-  the homepage is the more public of the two.
-- **A declined or pending item has no card**, the same as it has no entry. The
-  grid is a view of what is on the pages, so anything in it can be checked
-  against the page it names.
-
-`python3 scripts/validate.py` covers the homepage like any other page, so run it
-after editing the grid.
-
-## Items files
-
-`items/<feed-id>/<batch>.json`, where the batch is the run date. They are
-[research findings files](../research/findings/README.md) — same schema, same
-resolver, same rule that an entry is never deleted once written:
-
-- `source_id` is the feed id; the directory name matches it.
-- **`kind` describes the fact, not the source** — `sale`, `construction`,
-  `development`, `occupancy`, `fire`, `eviction`, `designation`. A sale is a
-  sale whether it came from The Registry this week or the Call in 1901, and the
-  citation is what says where it came from. `kind: "news"` says nothing about
-  what happened, and the timeline is a list of things that happened.
-- `citation.label` names the outlet, the headline and the date; `citation.url`
-  is the article.
-- `raw.text` is the shortest span that justified the extraction. **It never
-  reaches a page**, and it is the one place a source's own words may sit.
-- **`resolution` belongs to the resolver; a refusal goes in `publish`.**
-  `resolve_eas.py apply` rewrites the whole `resolution` object every time it
-  runs, so a hand-written `rejected` there is silently replaced the next time
-  anyone resolves the file. A decision *not* to put a fact on a page is
-  `publish: {"status": "declined", "note": "…"}` — nothing else touches that
-  field, and the note is where the judgement is recorded. Decline generously
-  and delete nothing: a declined finding is the record that the story was read
-  and considered.
-- **`conflict` means the *address* is disputed, and nothing else.** The
-  resolver reads that field as "this record states two addresses" and switches
-  to its adjudication path, which prints archive language about a catalogue
-  title and an archivist's note that has no meaning here. A story that
-  disagrees with itself about a building's size or its acreage records that in
-  `extra`, not in `conflict`.
-- An item whose address has no page is a page to seed, not an item to shelve;
-  the resolver's "the parcel is the publisher's to seed" note is addressed to
-  this pipeline. Record the seeding in `publish.note`, naming the manifest, so
-  the page's origin is auditable from the finding. An item that names no usable
-  address is still written, `rejected`, with the reason — that is what stops it
-  being read again.
-
-Validate with `python3 news/tools/check.py`.
+Twelve, ordered by the entry's date, one card per page, and every rule above
+applies to the card unchanged. **A backfilled entry is old by construction and
+usually sorts below all twelve**; leaving the grid alone is then the rule being
+followed, not a step skipped. **The grid is also the map's data** — each card is
+a pulsing dot on the homepage map, read from the card itself. The card's markup
+and the rest of the rules are in [PIPELINE.md → The homepage
+grid](PIPELINE.md#the-homepage-grid).
 
 ## Being a good citizen
 
@@ -496,8 +239,8 @@ Validate with `python3 news/tools/check.py`.
   URL) and every run rate-limits itself.
 - **robots.txt is honoured, and a feed that forbids automated access is not
   polled.** [feeds.json](feeds.json) records `access: needs-human` for
-  `sf-business-times` for exactly that reason: its host's robots.txt ends with
-  a blanket disallow. Changing that flag is a human's call, not an agent's.
+  `sf-business-times` for exactly that reason. Changing that flag is a human's
+  call, not an agent's.
 - **We link back, always.** Every entry on a page names the outlet, links the
   article, and cites it in the footer — the outlet's name *is* the link. Taking
   a headline and burying where it came from is the one thing that would make
@@ -510,17 +253,24 @@ Validate with `python3 news/tools/check.py`.
 Same rule as the research module: **it is meant to change.** The screen's word
 lists, the feed register, the stage boundaries, this file — all of it is yours
 to improve when the work fights the structure. Update
-[README.md](README.md) and this file in the same commit, record *why* in the
-commit message, and leave the module easier to use than you found it.
+[README.md](README.md), this file and [PIPELINE.md](PIPELINE.md) in the same
+commit, record *why* in the commit message, and leave the module easier to use
+than you found it.
+
+**Finding a feed's archive route is not one of them.** A `backfill` block is a
+fact about how an outlet publishes, discovered by probing what it already serves
+to crawlers under its own `robots.txt`; registering one is the same kind of work
+as recording that a feed needs a trailing slash. Adding the *feed* is still the
+human's call, and a route is only ever added to a feed already registered
+`access: open`.
 
 Two things need a human: **adding or un-blocking a feed** (it is a relationship
 with a publisher, and `access: needs-human` exists for that), and **anything
 that changes what a page looks like** — that is the root AGENTS.md's territory.
 
 **Keeping the homepage's news grid current is not one of them** — the card's
-shape is settled above, and a run that publishes an entry maintains the grid
-without asking. Changing what that card *is* still needs a human, like any other
-change to how a page looks.
+shape is settled, and a run that publishes an entry maintains the grid without
+asking. Changing what that card *is* still needs a human.
 
 **Seeding a parcel is not one of them.** It was, and the rule cost the module
 its whole point: nearly every address in the news has no page, so a pipeline

@@ -1,0 +1,78 @@
+{
+  "address": "2245 Jones Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/jones-street/2245/",
+  "apn": "0072001",
+  "block": "0072",
+  "lot": "001",
+  "eas_baseid": "499554",
+  "coordinates": {
+    "lat": 37.8019,
+    "lng": -122.41636
+  },
+  "parcel": {
+    "year_built": 1900,
+    "lot_area_sqft": 30609,
+    "use": "Commercial Retail",
+    "property_class": "Schools",
+    "construction_type_code": "NA",
+    "zoning": "P",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Russian Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "0000 2245 JONES               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1983",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JONES&street_type=ST&address_number=2245",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0072001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0072&lot=001",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0072001",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "digitalsf-19989",
+      "name": "2245 Jones Street, 1964. San Francisco Subjects Photograph Collection (SFP 162), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/19989",
+      "label": "San Francisco Subjects Photograph Collection (SFP 162), San Francisco Public Library",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1964-08-15",
+      "kind": "photograph",
+      "description": "Photographed, showing the Sarah B. Cooper School.",
+      "source": "digitalsf-19989"
+    }
+  ]
+}

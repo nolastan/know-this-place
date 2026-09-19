@@ -1,0 +1,125 @@
+{
+  "address": "684 2nd Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/2nd-avenue/684/",
+  "apn": "1643028",
+  "block": "1643",
+  "lot": "028",
+  "eas_baseid": "311933",
+  "coordinates": {
+    "lat": 37.775858,
+    "lng": -122.459323
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 2,
+    "stories": 3,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2374,
+    "building_area_sqft": 2262,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0000 0684 02ND                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1507717,
+    "assessed_improvement_value": 811846,
+    "last_sale_date": "2015-03-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201702159505",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-02-15",
+      "status_date": "2017-02-17",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "removal of posts at grage level of (e) three story residence add two new post, steel beam & isolated footings no changes to building exterior",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201508245096",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-08-24",
+      "status_date": "2015-08-24",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "replace kitchen cabinets and bathrom tile",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200808290470",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-08-29",
+      "status_date": "2008-08-29",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=02ND&street_type=AVE&address_number=684",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1643028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1643&lot=028",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1643028",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume M–O), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=819c20a033e71980c63a96c7fcf1503b3292220b4408abf97897f8fc58c05144&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1902",
+      "kind": "construction",
+      "description": "Built by Fernando Nelson in his Richmond tract, which ran from 1st to 3rd avenues between Anza and Cabrillo streets.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ],
+  "building": {
+    "builder": "Fernando Nelson",
+    "completed_conflict": "The assessor's roll gives 1906; this address is recorded as built 1902."
+  }
+}

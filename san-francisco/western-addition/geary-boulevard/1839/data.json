@@ -1,0 +1,130 @@
+{
+  "address": "1839 Geary Boulevard, San Francisco, CA 94115",
+  "path": "/san-francisco/western-addition/geary-boulevard/1839/",
+  "apn": "0707019",
+  "block": "0707",
+  "lot": "019",
+  "eas_baseid": "287837",
+  "coordinates": {
+    "lat": 37.783873,
+    "lng": -122.433432
+  },
+  "parcel": {
+    "lot_area_sqft": 11775,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores Gov",
+    "construction_type_code": "NA",
+    "zoning": "NC-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Western Addition",
+    "analysis_neighborhood": "Western Addition",
+    "property_location_raw": "0000 1839 GEARY               BL0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result",
+    "survey_name": "DEMOLISHED 3/89",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "8903218",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "1989-03-02",
+      "status_date": "1989-05-04",
+      "description": "demolish commercial building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8614680",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1986-11-18",
+      "status_date": "1989-12-04",
+      "estimated_cost": 1750,
+      "description": "install hood, duct & blower.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8605671",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-05-15",
+      "status_date": "1986-07-01",
+      "estimated_cost": 5000,
+      "description": "repair fire damage, install fire-panic hardware on doors",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8502039",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-02-28",
+      "status_date": "1986-07-01",
+      "estimated_cost": 185000,
+      "description": "repair fire damage",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GEARY&street_type=BLVD&address_number=1839",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0707019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0707&lot=019",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0707019",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "digitalsf-21690",
+      "name": "1839 Geary, 1930. San Francisco Subjects Photograph Collection (SFP 162), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/21690",
+      "label": "San Francisco Subjects Photograph Collection (SFP 162), San Francisco Public Library",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "digitalsf-21689",
+      "name": "1839 Geary, 1964. San Francisco Subjects Photograph Collection (SFP 162), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/21689",
+      "label": "San Francisco Subjects Photograph Collection (SFP 162), San Francisco Public Library",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1930-02-26",
+      "kind": "photograph",
+      "description": "Photographed, showing the Temple Beth-Israel.",
+      "source": "digitalsf-21690"
+    },
+    {
+      "date": "1964-08-20",
+      "kind": "photograph",
+      "description": "Photographed, showing the Temple Beth-Israel.",
+      "source": "digitalsf-21689"
+    }
+  ]
+}

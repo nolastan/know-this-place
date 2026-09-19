@@ -1,0 +1,180 @@
+{
+  "address": "720 Washington Street, San Francisco, CA 94108",
+  "path": "/san-francisco/financial-district/washington-street/720/",
+  "apn": "0194006",
+  "block": "0194",
+  "lot": "006",
+  "eas_baseid": "279781",
+  "coordinates": {
+    "lat": 37.79544,
+    "lng": -122.405364
+  },
+  "parcel": {
+    "year_built": 1964,
+    "units": 1,
+    "stories": 4,
+    "rooms": 18,
+    "bathrooms": 2,
+    "lot_area_sqft": 4896,
+    "building_area_sqft": 15507,
+    "use": "Commercial Misc",
+    "property_class": "Churches,Convents,Rectories",
+    "construction_type_code": "C",
+    "zoning": "CCB",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Financial District North",
+    "analysis_neighborhood": "Chinatown",
+    "property_location_raw": "0000 0720 WASHINGTON          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 468299,
+    "assessed_improvement_value": 1627929
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1964",
+    "survey_name": "BUDDHA'S UNIVERSAL CLUB",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Chinatown Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1930/1938",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200802054002",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-02-05",
+      "status_date": "2008-02-22",
+      "estimated_cost": 18800,
+      "revised_cost": 18800,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M14063",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-08-11",
+      "status_date": "2001-02-11",
+      "revised_cost": 20000,
+      "description": "street space use",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9817811",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-09-04",
+      "status_date": "1999-01-11",
+      "estimated_cost": 12000,
+      "description": "reface kitchen-new cabinets,counter top,floor & kitchen door",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9509024",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1995-06-14",
+      "status_date": "1995-12-29",
+      "estimated_cost": 50000,
+      "revised_cost": 65000,
+      "description": "repl (e)me units installed & related ductwork,frmed soffit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9214228",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-08-20",
+      "status_date": "1992-12-10",
+      "estimated_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9209242",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-06-05",
+      "status_date": "1992-06-12",
+      "estimated_cost": 8000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8902042",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1989-02-06",
+      "status_date": "1989-10-03",
+      "estimated_cost": 2500,
+      "description": "cut openings at property line for 2 hr. separation, 8716070",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 8,
+    "range": "1989–2009",
+    "shown_on_page": 7,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=WASHINGTON&street_type=ST&address_number=720",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0194006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0194&lot=006",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0194006",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4053642429628%2037.795440012460205)%27)",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "digitalsf-20549",
+      "name": "720 Washington, 1964. San Francisco Subjects Photograph Collection (SFP 162), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/20549",
+      "label": "San Francisco Subjects Photograph Collection (SFP 162), San Francisco Public Library",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1964-06-20",
+      "kind": "photograph",
+      "description": "Photographed, showing the Buddhist Universal Church.",
+      "source": "digitalsf-20549"
+    }
+  ]
+}

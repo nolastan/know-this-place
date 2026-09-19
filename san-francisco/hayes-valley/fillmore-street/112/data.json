@@ -1,0 +1,145 @@
+{
+  "address": "112 Fillmore Street, San Francisco, CA 94117",
+  "path": "/san-francisco/hayes-valley/fillmore-street/112/",
+  "apn": "0868019",
+  "block": "0868",
+  "lot": "019",
+  "eas_baseid": "289963",
+  "coordinates": {
+    "lat": 37.770531,
+    "lng": -122.429869
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 1947,
+    "building_area_sqft": 1200,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Hayes Valley",
+    "property_location_raw": "0000 0112 FILLMORE            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 73571,
+    "assessed_improvement_value": 169689
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Hayes Valley Residential Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1860–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201404294519",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-04-29",
+      "status_date": "2014-06-12",
+      "estimated_cost": 10844,
+      "revised_cost": 10844,
+      "description": "replace 5 windows like for like with anderson wood-clad visible from street. u factor > .40, bedroom to comply with egress, ooge lugs, double hung in existing openings. no divided lights. profiles to match existing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201008259559",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-08-25",
+      "status_date": "2011-10-25",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "window replacement, 4 windows, no change in rough openings, u-value =.30, aluminum/wood existing, vinyl proposed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200404070650",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-04-07",
+      "status_date": "2006-12-05",
+      "estimated_cost": 12300,
+      "revised_cost": 12300,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2003–2014",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FILLMORE&street_type=ST&address_number=112",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0868019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0868&lot=019",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0868019",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42986877811144%2037.77053148100523)%27)",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "market-octavia-survey-forms",
+      "name": "Page & Turnbull for the San Francisco Planning Department, Market & Octavia Augmentation Survey, DPR 523 survey forms, fieldwork 2006, evaluations by Kelley & VerPlanck 2010",
+      "query": "https://sfplanning.org/sites/default/files/documents/preserv/DPRforms/HV%20Cont%20pre%20existing.pdf",
+      "listing": "https://sfplanning.org/historic-preservation-survey-forms-dpr523",
+      "label": "Market & Octavia Survey DPR 523 form, 2006–2010",
+      "retrieved": "2026-09-03"
+    }
+  ],
+  "building": {
+    "completed_conflict": "The assessor's roll gives 1900; this address is recorded as built 1890."
+  },
+  "historic_survey": [
+    {
+      "survey": "Market & Octavia Survey (2006–2010)",
+      "source": "market-octavia-survey-forms",
+      "proposed_status_code": "2D2",
+      "status_code_meaning": "A contributor to a district determined eligible for the National Register through the Section 106 process.",
+      "year_built_as_surveyed": "1890"
+    }
+  ]
+}

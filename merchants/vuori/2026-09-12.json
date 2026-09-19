@@ -1,0 +1,62 @@
+{
+  "source_id": "vuori",
+  "batch": "2026-09-12",
+  "read_on": "2026-09-12",
+  "notes": "Vuori's San Francisco store, named in issue #324, read from the store's own page on 2026-09-12. https://vuoriclothing.com/pages/stores links 132 store pages, two of them filed under San Francisco: the Union Street shop, and 'San Francisco Premium Outlet', which is in Livermore and stays off. The store page carries a schema.org ClothingStore block with the address and coordinates, and prints the hours beside it. Four fetches on 2026-09-11 and 2026-09-12 agreed on all of it. The 20% is Vuori's own wording — its refer-a-friend page reads 'Refer a Friend & Send Them a 20% Off Discount Code' — and the link in the issue carries a member's `sref_id`, so there is one REFERRALS row, `vuori`, for the one shop.",
+  "coverage": {
+    "unit": "store locations",
+    "examined": 132,
+    "mentions": 1,
+    "remaining": "None. Vuori's other San Francisco-named store, San Francisco Premium Outlet, is in Livermore."
+  },
+  "findings": [
+    {
+      "id": "2026-09-12-0001",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2090 Union Street",
+      "street_number": "2090",
+      "street_name": "UNION",
+      "street_type": "ST",
+      "description": "Vuori lists a store at this address.",
+      "extra": {
+        "name": "Vuori",
+        "name_as_listed": "Vuori",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94123",
+        "kinds": [
+          "Clothing"
+        ],
+        "opening_hours": [
+          "Mo,Tu,We,Th,Fr,Sa 10:00-19:00",
+          "Su 11:00-18:00"
+        ],
+        "geo": [
+          37.7974561,
+          -122.4337302
+        ]
+      },
+      "citation": {
+        "label": "Vuori, San Francisco store page",
+        "url": "https://vuoriclothing.com/stores/vuori-san-francisco-california",
+        "locator": "the page's schema.org ClothingStore block and its store-hours list"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0532017",
+        "path": "/san-francisco/marina/union-street/2088/",
+        "eas_address": "2088 UNION ST",
+        "method": "EAS exact match on 2090 UNION ST → parcel 0532017; sf-parcels has blklot 0532017 active, 2088–2098 UNION; the 2025 roll records it as multi-family residential, built 1906. EAS puts 2088, 2090, 2098 UNION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2088.",
+        "checked_on": "2026-09-12",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/330",
+        "note": "An `occupants` entry on /san-francisco/marina/union-street/2088/."
+      }
+    }
+  ]
+}

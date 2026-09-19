@@ -53,7 +53,10 @@ jobs:
 
             Steps:
             1. Read AGENTS.md at the repo root, then every AGENTS.md on the
-               path to the target page, and shared/AGENTS.md.
+               path to the target page, and shared/AGENTS.md. Those are rules
+               cores; pull sections out of REFERENCE.md (the data.json schema)
+               and shared/BLOCKS.md (a block's markup) as the task needs them,
+               rather than reading either whole.
             2. The "Page" field identifies the page. If it's missing or the
                directory doesn't exist, comment on the issue asking the
                reporter to include the page URL, then stop.
@@ -74,14 +77,18 @@ jobs:
                  python3 scripts/seed_pages.py render <path to the page>
 
                data.json is the only file you write. index.html is a build
-               artifact — do not open it and do not edit it; validate.py fails
-               if it is not exactly what the renderer produces. If the
+               artifact — do not open it and do not edit it; it is gitignored,
+               built by Actions on deploy, and will not appear in
+               `git status`. Render it anyway: validate.py checks the page on
+               disk, and fails if it is not exactly what the renderer
+               produces. If the
                re-rendered page does not show the fact you added, the key you
                used is one the renderer doesn't handle: say so in the PR body
                rather than hand-patching the HTML.
                Don't try to verify the Street View block — the embed key only
                works on the production domain (DATA-SOURCES.md).
-            5. Run `python3 scripts/validate.py` and fix anything it flags.
+            5. Run `python3 scripts/build_site.py`, then
+               `python3 scripts/validate.py`, and fix anything it flags.
             6. Create branch feedback/issue-${{ github.event.issue.number }},
                commit, push, and open a PR. The PR body must summarize what
                changed and why, quote the relevant feedback, list sources

@@ -1,0 +1,126 @@
+{
+  "address": "300 Anza Street, San Francisco, CA 94118",
+  "path": "/san-francisco/lone-mountain/anza-street/300/",
+  "apn": "1090031",
+  "block": "1090",
+  "lot": "031",
+  "eas_baseid": "294745",
+  "coordinates": {
+    "lat": 37.78094,
+    "lng": -122.450005
+  },
+  "parcel": {
+    "year_built": 1960,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 1808.25,
+    "building_area_sqft": 2725,
+    "lot_depth_ft": 72.33,
+    "use": "Commercial Misc",
+    "property_class": "Convalescent/Nursing Homes",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Lone Mountain",
+    "analysis_neighborhood": "Lone Mountain/USF",
+    "property_location_raw": "0000 0300 ANZA                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 296734,
+    "assessed_improvement_value": 344301
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1960",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9305816S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-04-09",
+      "status_date": "1993-12-09",
+      "estimated_cost": 60000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9107735",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-05-03",
+      "status_date": "1991-10-23",
+      "estimated_cost": 2850,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8711825",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-08-19",
+      "status_date": "1988-12-13",
+      "estimated_cost": 35000,
+      "description": "horizontal extension",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8610900",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-09-08",
+      "status_date": "1988-03-24",
+      "estimated_cost": 100000,
+      "description": "add deck & stair at rear",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ANZA&street_type=ST&address_number=300",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1090031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1090&lot=031",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1090031",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "russian-american-context-statement",
+      "name": "Nina Bogdan, Russian American Historic Context Statement, San Francisco Planning Department, adopted by the Historic Preservation Commission October 15, 2025",
+      "query": "https://sfplanning.org/node/3132",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "retrieved": "2026-08-30"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1977",
+      "kind": "occupancy",
+      "description": "Russian American Community Services, a non-profit serving elderly Russian speakers with meals and support services, has operated here since 1977.",
+      "source": "russian-american-context-statement"
+    }
+  ]
+}

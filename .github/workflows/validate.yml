@@ -8,8 +8,30 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
+      # Same checkout as deploy.yml: the commit graph for build_stats.py, none
+      # of the history's blobs.
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          filter: blob:none
+
+      # The site is not committed, so there is no HTML to check until it is
+      # built. Running the real build here is also the check that it still
+      # works: a change that breaks the build fails the PR rather than the
+      # deploy.
+      - name: Build the site
+        run: python3 scripts/build_site.py
+
+      # A build must not change a committed file. The handful of generated
+      # files that stay tracked — `corpus.jsonl`, the hub `index.md` files —
+      # are the ones an agent can leave a step behind, and this is the check
+      # that catches it. `git diff` is empty or the branch is stale.
+      - name: The committed sources are current
+        run: git diff --exit-code
+
       - name: Check page contract
         run: python3 scripts/validate.py
       - name: Check research module
         run: python3 research/tools/check.py
+      - name: Check news module
+        run: python3 news/tools/check.py

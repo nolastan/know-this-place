@@ -1,0 +1,141 @@
+{
+  "address": "711 El Camino Del Mar, San Francisco, CA 94121",
+  "path": "/san-francisco/seacliff/el-camino-del-mar/711/",
+  "apn": "1328001",
+  "block": "1328",
+  "lot": "001",
+  "eas_baseid": "300362",
+  "coordinates": {
+    "lat": 37.786022,
+    "lng": -122.490865
+  },
+  "parcel": {
+    "year_built": 1970,
+    "units": 1,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 7217,
+    "building_area_sqft": 5456,
+    "basement_area_sqft": 612,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Sea Cliff",
+    "analysis_neighborhood": "Seacliff",
+    "property_location_raw": "0000 0711 EL CAMINO DEL MAR     0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 171633,
+    "assessed_improvement_value": 686407
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1970",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Sea Cliff Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1913–1935",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201711073313",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-11-07",
+      "status_date": "2017-11-07",
+      "estimated_cost": 39000,
+      "revised_cost": 39000,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200505112161",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-05-11",
+      "status_date": "2005-06-24",
+      "estimated_cost": 15484,
+      "revised_cost": 15484,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9605101",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-03-27",
+      "status_date": "1997-03-27",
+      "estimated_cost": 26685,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EL%20CAMINO%20DEL%20MAR&street_type=&address_number=711",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1328001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1328&lot=001",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1328001",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.49086461045505%2037.78602219609548)%27)",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "modern-postmodern-styles-context-statement",
+      "name": "Hannah Lise Simonson, Page & Turnbull, for the San Francisco Planning Department, San Francisco Modern & Postmodern Architectural Styles (1960-2000) Historic Context Statement, Context: Architectural Methods & Styles, SF Survey Cultural Resources Survey, adopted August 21, 2024",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=12bf7fd7aa07e2b779e0afc717eb0d789b9ba378bf6e80f7f8a1ce30cdc8946f&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Modern & Postmodern Architectural Styles Historic Context Statement, adopted 2024",
+      "retrieved": "2026-08-31"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Modern & Postmodern Architectural Styles Historic Context Statement (2024)",
+      "source": "modern-postmodern-styles-context-statement",
+      "style": "Late Modernism",
+      "year_built_as_surveyed": "1974",
+      "architect_as_surveyed": "Beverly Willis",
+      "note": "A single-family house by Beverly Willis, called a rare example of a Late Modernist single-family residence in San Francisco."
+    }
+  ],
+  "building": {
+    "architect": "Beverly Willis"
+  }
+}

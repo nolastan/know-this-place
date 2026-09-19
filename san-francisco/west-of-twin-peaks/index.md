@@ -4,16 +4,74 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 
 ## Streets documented so far
 
+- [15th Avenue](15th-avenue/) — 1 building, built 1945.
 - [16th Avenue](16th-avenue/) — 1 building, built 1947.
 - [17th Avenue](17th-avenue/) — 2 buildings, built 1950–2020.
 - [19th Avenue](19th-avenue/) — 1 building, built 1913.
+- [9th Avenue](9th-avenue/) — 1 building, built 1954; 1 in the Forest Hill Historic District.
 - [Casitas Avenue](casitas-avenue/) — 1 building, built 1953.
 - [Castenada Avenue](castenada-avenue/) — 1 building, built 1929; 1 in the Forest Hill Historic District.
+- [Darien Way](darien-way/) — 1 building; 1 in the Balboa Terrace Historic District.
+- [Edgehill Way](edgehill-way/) — 1 building, built 1970.
+- [El Verano Way](el-verano-way/) — 1 building, built 1926.
+- [Faxon Avenue](faxon-avenue/) — 1 building, built 1918.
+- [Frida Kahlo Way](frida-kahlo-way/) — 1 building.
+- [Funston Avenue](funston-avenue/) — 1 building, built 1936.
+- [Juanita Way](juanita-way/) — 1 building, built 1927.
+- [Junipero Serra Boulevard](junipero-serra-boulevard/) — 1 building, built 1920; 1 in the St. Francis Wood Historic District.
+- [Laguna Honda Boulevard](laguna-honda-boulevard/) — 1 building, built 1937; 1 in the Laguna Honda Historic District.
+- [Lansdale Avenue](lansdale-avenue/) — 2 buildings, built 1935–1936.
 - [Lenox Way](lenox-way/) — 1 building, built 1926.
+- [Lopez Avenue](lopez-avenue/) — 1 building, built 1928; 1 in the Forest Hill Historic District.
+- [Los Palmos Drive](los-palmos-drive/) — 1 building, built 1948.
 - [Magellan Avenue](magellan-avenue/) — 1 building, built 1926; 1 in the Forest Hill Historic District.
+- [Maywood Drive](maywood-drive/) — 1 building, built 1927.
+- [Merced Avenue](merced-avenue/) — 1 building, built 1922; 1 in the Forest Hill Historic District.
+- [Miraloma Drive](miraloma-drive/) — 1 building, built 1957.
+- [Miramar Avenue](miramar-avenue/) — 1 building, built 1932.
+- [Molimo Drive](molimo-drive/) — 1 building, built 1949.
+- [Monterey Boulevard](monterey-boulevard/) — 1 building, built 1925; 1 in the St. Francis Wood Historic District.
+- [Ocean Avenue](ocean-avenue/) — 1 building, built 1922; 1 in the Ingleside Terrace Historic District.
+- [Pacheco Street](pacheco-street/) — 1 building, built 1917; 1 in the Forest Hill Historic District.
+- [Plymouth Avenue](plymouth-avenue/) — 1 building, built 1918.
+- [Portola Drive](portola-drive/) — 1 building, built 1955.
 - [Saint Francis Boulevard](saint-francis-boulevard/) — 1 building, built 1948; 1 in the St. Francis Wood Historic District.
+- [San Andreas Way](san-andreas-way/) — 1 building, built 1941; 1 in the St. Francis Wood Historic District.
+- [San Anselmo Avenue](san-anselmo-avenue/) — 1 building, built 1942; 1 in the St. Francis Wood Historic District.
+- [San Leandro Way](san-leandro-way/) — 1 building, built 1923; 1 in the St. Francis Wood Historic District.
+- [San Marcos Avenue](san-marcos-avenue/) — 6 buildings, built 1933–1965; 6 in the Forest Hill Historic District.
+- [San Pablo Avenue](san-pablo-avenue/) — 1 building, built 1964; 1 in the St. Francis Wood Historic District.
+- [San Rafael Way](san-rafael-way/) — 1 building, built 1935; 1 in the St. Francis Wood Historic District.
+- [Santa Ana Avenue](santa-ana-avenue/) — 1 building, built 1949; 1 in the St. Francis Wood Historic District.
+- [Santa Clara Avenue](santa-clara-avenue/) — 1 building, built 1938; 1 in the St. Francis Wood Historic District.
+- [Santa Monica Way](santa-monica-way/) — 1 building, built 1918; 1 in the St. Francis Wood Historic District.
+- [Santa Paula Avenue](santa-paula-avenue/) — 1 building, built 1923; 1 in the St. Francis Wood Historic District.
+- [Sotelo Avenue](sotelo-avenue/) — 1 building, built 1914; 1 in the Forest Hill Historic District.
 - [Stonecrest Drive](stonecrest-drive/) — 2 buildings, built 1939–1941.
 - [Taraval Street](taraval-street/) — 3 buildings, built 1950.
 - [Teresita Boulevard](teresita-boulevard/) — 1 building, built 1951.
+- [Terrace Drive](terrace-drive/) — 1 building, built 1937; 1 in the St. Francis Wood Historic District.
 - [Ulloa Street](ulloa-street/) — 1 building, built 1938.
 - [West Portal Avenue](west-portal-avenue/) — 2 buildings, built 1935–1992.
+- [Westwood Drive](westwood-drive/) — 2 buildings, built 1917–1922.
+- [Winston Drive](winston-drive/) — 1 building, built 1900.
+- [Woodside Avenue](woodside-avenue/) — 1 building.
+- [Yerba Buena Avenue](yerba-buena-avenue/) — 1 building, built 1928; 1 in the St. Francis Wood Historic District.
+
+## Historic districts here
+
+- [Forest Hill Historic District](../historic-districts/forest-hill/)
+- [Ingleside Terrace Historic District](../historic-districts/ingleside-terrace/)
+- [San Francisco Neighborhood Movie Theater Historic District (Discontiguous)](../historic-districts/san-francisco-neighborhood-movie-theater-discontiguous/)
+- [St. Francis Wood Historic District](../historic-districts/st-francis-wood/)
+- [West Portal Park Historic District](../historic-districts/west-portal-park/)
+
+## Adjacent neighborhoods
+
+The residence parks run from the Twin Peaks ridge down to Ocean Avenue. [The
+Inner Sunset](../inner-sunset/) adjoins north and [Sunset /
+Parkside](../sunset-parkside/) west, [Glen Park](../glen-park/) east across
+Glen Canyon, and [the Outer Mission](../outer-mission/) and [Oceanview /
+Merced / Ingleside](../oceanview-merced-ingleside/) south. [Ingleside
+Terraces](../ingleside-terraces/), one of the tracts inside this boundary,
+is filed on its own here.

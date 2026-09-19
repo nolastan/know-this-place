@@ -1,0 +1,164 @@
+{
+  "source_id": "casper",
+  "batch": "2026-09-12",
+  "read_on": "2026-09-12",
+  "notes": "Casper's San Francisco Sleep Shop, named in issue #328, read from the store's own page on 2026-09-12. https://stores.casper.com/ca/sanfrancisco/ lists four stores in the city, but three of them are Mancini's Sleepworld — a different business that stocks Casper, not a Casper door — and only 2174 Union Street is Casper's own. Its page carries a schema.org FurnitureStore block with the address, coordinates and opening hours. Four fetches on 2026-09-11 and 2026-09-12 agreed on all of it. Putting the Mancini's shops under this source id would also put Casper's referral button on another business's page, which is what the rule against an entry carrying its own link is there to prevent; they are recorded below as declined. The 30% is Casper's own wording — casper.com's header reads 'Give 30% off, get 30% off when you refer a friend' — and the link in the issue carries a member's `sref_id`, so there is one REFERRALS row, `casper`, for the one shop.",
+  "coverage": {
+    "unit": "store locations",
+    "examined": 4,
+    "mentions": 1,
+    "remaining": "None; the three other San Francisco listings are Mancini's Sleepworld stores, declined below."
+  },
+  "findings": [
+    {
+      "id": "2026-09-12-0001",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2174 Union Street",
+      "street_number": "2174",
+      "street_name": "UNION",
+      "street_type": "ST",
+      "description": "Casper lists a Sleep Shop at this address.",
+      "extra": {
+        "name": "Casper",
+        "name_as_listed": "Casper - Union Street",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94123",
+        "kinds": [
+          "Mattresses",
+          "Bedding"
+        ],
+        "opening_hours": [
+          "Mo,Tu,We,Th,Fr,Sa 10:00-19:00",
+          "Su 10:00-18:00"
+        ],
+        "geo": [
+          37.7974633,
+          -122.4350898
+        ]
+      },
+      "citation": {
+        "label": "Casper, Union Street store page",
+        "url": "https://stores.casper.com/ca/sanfrancisco/casper-union-street-94123.html",
+        "locator": "the page's schema.org FurnitureStore block"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0533017",
+        "path": "/san-francisco/marina/union-street/2172/",
+        "eas_address": "2172 UNION ST",
+        "method": "EAS exact match on 2174 UNION ST → parcel 0533017; sf-parcels has blklot 0533017 active, 2172–2176 UNION; the 2025 roll records it as multi-family residential, built 1925. EAS puts 2172, 2174, 2176 UNION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2172.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/330",
+        "note": "An `occupants` entry on /san-francisco/marina/union-street/2172/."
+      }
+    },
+    {
+      "id": "2026-09-12-0002",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2950 GEARY BLVD.",
+      "street_number": "2950",
+      "street_name": "GEARY",
+      "street_type": "BLVD",
+      "description": "Casper's store finder lists Mancini's Sleepworld - Geary at this address.",
+      "extra": {
+        "name": "Mancini's Sleepworld",
+        "name_as_listed": "Mancini's Sleepworld - Geary",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94118"
+      },
+      "citation": {
+        "label": "Casper store finder, Mancini's Sleepworld - Geary",
+        "url": "https://stores.casper.com/ca/sanfrancisco/mancinis-sleepworld-geary-94118.html",
+        "locator": "the page's schema.org FurnitureStore block"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "rejected",
+        "checked_on": "2026-09-12",
+        "method": "Not resolved: the listing is not Casper's own door.",
+        "note": "Casper's store finder lists the shops that stock Casper as well as Casper's own. Mancini's Sleepworld is a different business trading from this door, and an entry filed under the `casper` source id would put Casper's referral button on its page — an offer belongs to the source, and a business from any other directory never shows one. Casper's own San Francisco door is 2174 Union Street."
+      },
+      "publish": {
+        "status": "declined",
+        "note": "Casper's store finder lists the shops that stock Casper as well as Casper's own. Mancini's Sleepworld is a different business trading from this door, and an entry filed under the `casper` source id would put Casper's referral button on its page — an offer belongs to the source, and a business from any other directory never shows one. Casper's own San Francisco door is 2174 Union Street.",
+        "pr": "https://github.com/nolastan/know-this-place/pull/330"
+      }
+    },
+    {
+      "id": "2026-09-12-0003",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2300 16th Street #285",
+      "street_number": "2300",
+      "street_name": "16TH",
+      "street_type": "ST",
+      "description": "Casper's store finder lists Mancini's Sleepworld - Portrero Hill at this address.",
+      "extra": {
+        "name": "Mancini's Sleepworld",
+        "name_as_listed": "Mancini's Sleepworld - Portrero Hill",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94103"
+      },
+      "citation": {
+        "label": "Casper store finder, Mancini's Sleepworld - Portrero Hill",
+        "url": "https://stores.casper.com/ca/sanfrancisco/mancinis-sleepworld-portrero-hill-94103.html",
+        "locator": "the page's schema.org FurnitureStore block"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "rejected",
+        "checked_on": "2026-09-12",
+        "method": "Not resolved: the listing is not Casper's own door.",
+        "note": "Casper's store finder lists the shops that stock Casper as well as Casper's own. Mancini's Sleepworld is a different business trading from this door, and an entry filed under the `casper` source id would put Casper's referral button on its page — an offer belongs to the source, and a business from any other directory never shows one. Casper's own San Francisco door is 2174 Union Street."
+      },
+      "publish": {
+        "status": "declined",
+        "note": "Casper's store finder lists the shops that stock Casper as well as Casper's own. Mancini's Sleepworld is a different business trading from this door, and an entry filed under the `casper` source id would put Casper's referral button on its page — an offer belongs to the source, and a business from any other directory never shows one. Casper's own San Francisco door is 2174 Union Street.",
+        "pr": "https://github.com/nolastan/know-this-place/pull/330"
+      }
+    },
+    {
+      "id": "2026-09-12-0004",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1450 VAN NESS AVE",
+      "street_number": "1450",
+      "street_name": "VAN NESS",
+      "street_type": "AVE",
+      "description": "Casper's store finder lists Mancini's Sleepworld - Van Ness at this address.",
+      "extra": {
+        "name": "Mancini's Sleepworld",
+        "name_as_listed": "Mancini's Sleepworld - Van Ness",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94109"
+      },
+      "citation": {
+        "label": "Casper store finder, Mancini's Sleepworld - Van Ness",
+        "url": "https://stores.casper.com/ca/sanfrancisco/mancinis-sleepworld-van-ness-94109.html",
+        "locator": "the page's schema.org FurnitureStore block"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "rejected",
+        "checked_on": "2026-09-12",
+        "method": "Not resolved: the listing is not Casper's own door.",
+        "note": "Casper's store finder lists the shops that stock Casper as well as Casper's own. Mancini's Sleepworld is a different business trading from this door, and an entry filed under the `casper` source id would put Casper's referral button on its page — an offer belongs to the source, and a business from any other directory never shows one. Casper's own San Francisco door is 2174 Union Street."
+      },
+      "publish": {
+        "status": "declined",
+        "note": "Casper's store finder lists the shops that stock Casper as well as Casper's own. Mancini's Sleepworld is a different business trading from this door, and an entry filed under the `casper` source id would put Casper's referral button on its page — an offer belongs to the source, and a business from any other directory never shows one. Casper's own San Francisco door is 2174 Union Street.",
+        "pr": "https://github.com/nolastan/know-this-place/pull/330"
+      }
+    }
+  ]
+}

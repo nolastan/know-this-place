@@ -1,0 +1,163 @@
+{
+  "address": "68–80 Post Street, San Francisco, CA 94104",
+  "path": "/san-francisco/financial-district/post-street/68/",
+  "apn": "0292004",
+  "block": "0292",
+  "lot": "004",
+  "eas_baseid": "450822",
+  "coordinates": {
+    "lat": 37.789203,
+    "lng": -122.403223
+  },
+  "address_range": "68–80",
+  "street_numbers_on_parcel": [
+    "68",
+    "70",
+    "80"
+  ],
+  "parcel": {
+    "year_built": 1982,
+    "stories": 38,
+    "lot_area_sqft": 8289,
+    "building_area_sqft": 816735,
+    "use": "Commercial Office",
+    "property_class": "Office",
+    "construction_type_code": "A",
+    "zoning": "C3O",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Financial District North",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "property_location_raw": "0082 0068 POST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 20042550,
+    "assessed_fixtures_value": 24337
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1982",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9504568",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-03-30",
+      "status_date": "1995-10-04",
+      "estimated_cost": 1500,
+      "description": "removal of previous tenants fixtures, ceiling, floor etc",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8703372",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1987-03-16",
+      "status_date": "1987-09-05",
+      "estimated_cost": 100,
+      "revised_cost": 5000,
+      "description": "to rivise permit #563488, to provide handicapped bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8701324",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-02-02",
+      "status_date": "1987-07-06",
+      "estimated_cost": 43500,
+      "description": "demo old partitions, toilet room, display fixtures, ceiling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8614460",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-11-14",
+      "status_date": "1987-03-12",
+      "estimated_cost": 2000,
+      "description": "open passage thru existing non-load bearing wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POST&street_type=ST&address_number=68",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0292004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0292&lot=004",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0292004",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume A–C), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=903cd18110a5ccc974eb3e5632a9acd8f2525118c61c3ce50c3ffc7374e0bfa3&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-environmental-review-crockernationalb1819sanf",
+      "name": "San Francisco Department of City Planning, Crocker National Bank Northern California Headquarters: Draft Environmental Impact Report, 1979.",
+      "query": "https://archive.org/details/crockernationalb1819sanf",
+      "label": "Crocker National Bank Northern California Headquarters: Draft Environmental Impact Report, 1979",
+      "retrieved": "2026-09-05"
+    },
+    {
+      "id": "sf-environmental-review-chinatownymcapro2320sanf",
+      "name": "San Francisco Department of City Planning, Chinatown YMCA Project: Draft Environmental Impact Report, Case No. 1999.536E, 2002.",
+      "query": "https://archive.org/details/chinatownymcapro2320sanf",
+      "retrieved": "2026-09-06"
+    }
+  ],
+  "unknowns": [
+    "A citywide context statement took offices in a building at this address in 1918; the assessor's roll dates the structure on this parcel to 1982. Whether the building described still stands here is unsettled.",
+    "The record is filed under assessor block 309, but the address it states resolves in sf-eas-addresses to parcel 0292004, on another block. Recorded, not reconciled."
+  ],
+  "building": {
+    "completed_conflict": "A citywide context statement took offices in a building at this address in 1918; the assessor's roll dates the structure on this parcel to 1982. Whether the building described still stands here is unsettled."
+  },
+  "historical_record": [
+    {
+      "date": "1918",
+      "kind": "occupancy",
+      "description": "Earle B. Bertz took offices here.",
+      "source": "architecture-preservation-professionals-biographies"
+    },
+    {
+      "date": "1976",
+      "kind": "survey",
+      "description": "The eight-storey Foxcroft Building stood here, entered in the 1976 city architectural inventory as a classical root style with vernacular variations and graded B by Heritage.",
+      "source": "sf-environmental-review-crockernationalb1819sanf"
+    },
+    {
+      "date": "1908",
+      "kind": "construction",
+      "description": "The Foxcroft Building, by Frederick H. Meyer, stood here; it had been demolished by 2002.",
+      "source": "sf-environmental-review-chinatownymcapro2320sanf"
+    }
+  ]
+}

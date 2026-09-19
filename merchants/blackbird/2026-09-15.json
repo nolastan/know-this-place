@@ -1,0 +1,1650 @@
+{
+  "source_id": "blackbird",
+  "batch": "2026-09-15",
+  "read_on": "2026-09-15",
+  "notes": "Issue #356 posted 176 San Francisco listings from the Blackbird app (data gathered by hand and converted to JSON by an LLM); 42 of them carried a street address as filed — the issue's own text says \"Street addresses past Little Sweet in Financial District will need to be researched\", and this batch is those 42. One, Alora Coastal Mediterranean, gives \"Pier 3, Hornblower Landing\" rather than a numbered street address; it does not parse against EAS and is left out of the findings entirely, so 41 were checked. 38 resolved to an active parcel and are published here. Three did not: 3108 Fillmore Street (Angela's Ice Cream) spans two parcels in sf-eas-addresses today and the record does not say which; 191 Warriors Way (Dumpling Time) is a condominium, which the occupants rule in the root AGENTS.md defers to a human establishing the building's parcel set; and 1796 Union Street (Avotoasty) is addressed on a blklot that carries no shape of its own on sf-parcels (its shape is keyed to mapblklot 0529089, which is 2804 Octavia Street) and has no row on the 2025 roll — a merged-lot case, not a missing-roll-row case, and it needs a human's judgement before a page is seeded. The remaining 134 listings in issue #356 carry no address at all. www.blackbird.xyz's own site is not a way to list them: its sitemap names only about fifty curated /spots pages nationwide (roughly a dozen in San Francisco), each carrying a structured address in the page's Next.js data rather than a directory listing, and it does not cover the app's full San Francisco merchant list the way Bites' or Ritual's own listings do. So the second half merchants/AGENTS.md requires before a ticket is workable — a way to list the directory's San Francisco locations — is still missing for those 134, the same gap issue #356 itself flagged, and they need a human to supply addresses before they can be checked against EAS. The referral credential is real: https://app.blackbird.xyz/r/bb-98v7tj. Its own landing page states the reward as \"2,000 $FLY\" and, directly under that, \"(2,000 Fly is equivalent to $20 USD)\" — confirming the issue's \"$20 after first purchase,\" so the REFERRALS row states it in dollars rather than a currency (\"Fly\") a reader has never heard of. The link never reaches a merchant — it opens Blackbird's mobile download screen — so the row carries a note. Three of the 38 — Little Sweet at 1253 9th Avenue, 3836 Geary Boulevard and 75 O'Farrell Street — are already on their pages from Ritual, read 2026-09-11, four days before this batch. The occupants rule says the more recently read directory's facts win; taken literally here that would replace Ritual's cuisines and opening hours with nothing, since the issue carries neither, which is a page getting less true rather than more current. `source` stays `ritual` on those three and `blackbird` joins `also_listed_by`, the same shape a rotating list without its own occupancy facts already gets (HotelTonight, merchants/AGENTS.md) — a human should confirm this reading.",
+  "coverage": {
+    "unit": "merchant listings",
+    "examined": 176,
+    "mentions": 42,
+    "remaining": "134 listings in issue #356 carry no address and need one from a human before they can be checked against EAS (Blackbird's own site lists only a small curated subset with addresses, not the full directory). Alora Coastal Mediterranean's \"Pier 3, Hornblower Landing\" is not a numbered address and was not checked. Three addressed listings did not resolve and need a human's judgement: 3108 Fillmore Street (two candidate parcels), 191 Warriors Way (condominium), 1796 Union Street (merged lot, no roll row)."
+  },
+  "findings": [
+    {
+      "id": "2026-09-15-0001",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "111 Minna St",
+      "street_number": "111",
+      "street_name": "MINNA",
+      "street_type": "ST",
+      "description": "111 Minna Gallery and Event Space is listed on Blackbird at this address.",
+      "extra": {
+        "name": "111 Minna Gallery and Event Space",
+        "name_as_listed": "111 Minna Gallery and Event Space",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94105",
+        "street_address_as_listed": "111 Minna St, San Francisco, CA 94105",
+        "cuisines": [
+          "Coffee Shop"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3722003",
+        "path": "/san-francisco/east-cut/2nd-street/132/",
+        "eas_address": "111 MINNA ST",
+        "method": "EAS exact match on 111 MINNA ST → parcel 3722003; sf-parcels has blklot 3722003 active, 132–142 02ND; the 2025 roll records it as commercial office, built 1907. The assessor files the parcel as 132–140 02ND ST.",
+        "checked_on": "2026-09-15"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/east-cut/2nd-street/132/."
+      }
+    },
+    {
+      "id": "2026-09-15-0002",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "25 Lusk St",
+      "street_number": "25",
+      "street_name": "LUSK",
+      "street_type": "ST",
+      "description": "25 Lusk is listed on Blackbird at this address.",
+      "extra": {
+        "name": "25 Lusk",
+        "name_as_listed": "25 Lusk",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94107",
+        "street_address_as_listed": "25 Lusk St, San Francisco, CA 94107",
+        "cuisines": [
+          "New American"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3787022",
+        "path": "/san-francisco/south-of-market/lusk-street/25/",
+        "eas_address": "25 LUSK ST",
+        "method": "EAS exact match on 25 LUSK ST → parcel 3787022; sf-parcels has blklot 3787022 active, 25–25 LUSK; the 2025 roll records it as commercial retail, built 1917.",
+        "checked_on": "2026-09-15"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/south-of-market/lusk-street/25/."
+      }
+    },
+    {
+      "id": "2026-09-15-0003",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "606 Broadway",
+      "street_number": "606",
+      "street_name": "BROADWAY",
+      "street_type": "",
+      "description": "606 is listed on Blackbird at this address.",
+      "extra": {
+        "name": "606",
+        "name_as_listed": "606",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94133",
+        "street_address_as_listed": "606 Broadway, San Francisco, CA 94133",
+        "cuisines": [
+          "Chinese"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0146002",
+        "path": "/san-francisco/chinatown/columbus-avenue/301/",
+        "eas_address": "604 BROADWAY",
+        "method": "EAS exact match on 606 BROADWAY (neither the record nor EAS gives this street a type) → parcel 0146002; sf-parcels has blklot 0146002 active, 604–606 BROADWAY; the 2025 roll records it as commercial hotel, built 1907. EAS puts 604, 606 BROADWAY None on that parcel, so per the directory contract the fact belongs on one page at the lowest, 604.",
+        "checked_on": "2026-09-15"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/chinatown/columbus-avenue/301/."
+      }
+    },
+    {
+      "id": "2026-09-15-0004",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "4068 18th St",
+      "street_number": "4068",
+      "street_name": "18TH",
+      "street_type": "ST",
+      "description": "aíso is listed on Blackbird at this address.",
+      "extra": {
+        "name": "aíso",
+        "name_as_listed": "aíso",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94114",
+        "street_address_as_listed": "4068 18th St, San Francisco, CA 94114",
+        "cuisines": [
+          "Vegetarian / Vegan"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3582053",
+        "path": "/san-francisco/castro/18th-street/4064/",
+        "eas_address": "4064 18TH ST",
+        "method": "EAS exact match on 4068 18TH ST → parcel 3582053; sf-parcels has blklot 3582053 active, 4064–4068 18TH; the 2025 roll records it as multi-family residential, built 1901. EAS puts 4064, 4066, 4068 18TH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 4064.",
+        "checked_on": "2026-09-15"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/castro/18th-street/4064/."
+      }
+    },
+    {
+      "id": "2026-09-15-0005",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1155 Folsom St",
+      "street_number": "1155",
+      "street_name": "FOLSOM",
+      "street_type": "ST",
+      "description": "Akari Japanese Bistro is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Akari Japanese Bistro",
+        "name_as_listed": "Akari Japanese Bistro",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94103",
+        "street_address_as_listed": "1155 Folsom St, San Francisco, CA 94103",
+        "cuisines": [
+          "Japanese"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3755077",
+        "path": "/san-francisco/south-of-market/folsom-street/1155/",
+        "eas_address": "1155 FOLSOM ST",
+        "method": "EAS exact match on 1155 FOLSOM ST → parcel 3755077; sf-parcels has blklot 3755077 active, 1155–1155 FOLSOM; the 2025 roll records it as industrial, built 1958.",
+        "checked_on": "2026-09-15",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/south-of-market/folsom-street/1155/."
+      }
+    },
+    {
+      "id": "2026-09-15-0006",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2162 Larkin St",
+      "street_number": "2162",
+      "street_name": "LARKIN",
+      "street_type": "ST",
+      "description": "Amarena is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Amarena",
+        "name_as_listed": "Amarena",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94109",
+        "street_address_as_listed": "2162 Larkin St, San Francisco, CA 94109",
+        "cuisines": [
+          "Italian"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0124034",
+        "path": "/san-francisco/russian-hill/larkin-street/2162/",
+        "eas_address": "2162 LARKIN ST",
+        "method": "EAS exact match on 2162 LARKIN ST → parcel 0124034; sf-parcels has blklot 0124034 active, 1287–1295 GREEN; the 2025 roll records it as multi-family residential, built 1907. The assessor files the parcel as 1287–1295 GREEN ST. EAS puts 2162, 2164 LARKIN ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2162.",
+        "checked_on": "2026-09-15",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/russian-hill/larkin-street/2162/."
+      }
+    },
+    {
+      "id": "2026-09-15-0007",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1754 Polk St",
+      "street_number": "1754",
+      "street_name": "POLK",
+      "street_type": "ST",
+      "description": "Amelie SF is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Amelie SF",
+        "name_as_listed": "Amelie SF",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94109",
+        "street_address_as_listed": "1754 Polk St, San Francisco, CA 94109",
+        "cuisines": [
+          "Wine Bar"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0620020",
+        "path": "/san-francisco/tenderloin/polk-street/1750/",
+        "eas_address": "1750 POLK ST",
+        "method": "EAS exact match on 1754 POLK ST → parcel 0620020; sf-parcels has blklot 0620020 active, 1750–1760 POLK; the 2025 roll records it as commercial retail, built 1939. EAS puts 1750, 1754, 1760 POLK ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1750.",
+        "checked_on": "2026-09-15"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/tenderloin/polk-street/1750/."
+      }
+    },
+    {
+      "id": "2026-09-15-0008",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "3751 24th St",
+      "street_number": "3751",
+      "street_name": "24TH",
+      "street_type": "ST",
+      "description": "Angela's Ice Cream is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Angela's Ice Cream",
+        "name_as_listed": "Angela's Ice Cream",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94114",
+        "street_address_as_listed": "3751 24th St, San Francisco, CA 94114",
+        "cuisines": [
+          "Ice Cream"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "6510023B",
+        "path": "/san-francisco/mission/24th-street/3751/",
+        "eas_address": "3751 24TH ST",
+        "method": "EAS exact match on 3751 24TH ST → parcel 6510023B; sf-parcels has blklot 6510023B active, 3763–3763 24TH; the 2025 roll records it as multi-family residential, built 1923. EAS puts 3751, 3763 24TH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 3751.",
+        "checked_on": "2026-09-15",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/mission/24th-street/3751/."
+      }
+    },
+    {
+      "id": "2026-09-15-0009",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "3108 Fillmore St",
+      "street_number": "3108",
+      "street_name": "FILLMORE",
+      "street_type": "ST",
+      "description": "Angela's Ice Cream is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Angela's Ice Cream",
+        "name_as_listed": "Angela's Ice Cream",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94123",
+        "street_address_as_listed": "3108 Fillmore St, San Francisco, CA 94123",
+        "cuisines": [
+          "Ice Cream"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-15",
+        "method": "3108 FILLMORE ST spans more than one parcel in sf-eas-addresses today: 0516019 (3108), 0516019A (3108).",
+        "note": "The numbers the record gives are on different parcels now, so the record cannot be placed on one page without deciding which — which the record does not say."
+      }
+    },
+    {
+      "id": "2026-09-15-0010",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1797 Haight St",
+      "street_number": "1797",
+      "street_name": "HAIGHT",
+      "street_type": "ST",
+      "description": "Angiday is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Angiday",
+        "name_as_listed": "Angiday",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94117",
+        "street_address_as_listed": "1797 Haight St, San Francisco, CA 94117",
+        "cuisines": [
+          "Vietnamese"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1248019",
+        "path": "/san-francisco/haight-ashbury/haight-street/1795/",
+        "eas_address": "1795 HAIGHT ST",
+        "method": "EAS exact match on 1797 HAIGHT ST → parcel 1248019; sf-parcels has blklot 1248019 active, 1795–1797 HAIGHT; the 2025 roll records it as multi-family residential, built 1904. The assessor files the parcel as 616–618 SHRADER ST. EAS puts 1795, 1797 HAIGHT ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1795.",
+        "checked_on": "2026-09-15"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/haight-ashbury/haight-street/1795/."
+      }
+    },
+    {
+      "id": "2026-09-15-0011",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "482 Hayes St",
+      "street_number": "482",
+      "street_name": "HAYES",
+      "street_type": "ST",
+      "description": "ANINA is listed on Blackbird at this address.",
+      "extra": {
+        "name": "ANINA",
+        "name_as_listed": "ANINA",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94102",
+        "street_address_as_listed": "482 Hayes St, San Francisco, CA 94102",
+        "cuisines": [
+          "Cocktail Bar"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0808016",
+        "path": "/san-francisco/hayes-valley/hayes-street/482/",
+        "eas_address": "482 HAYES ST",
+        "method": "EAS exact match on 482 HAYES ST → parcel 0808016; sf-parcels has blklot 0808016 active, 482–488 HAYES; the 2025 roll records it as multi-family residential, built 1910. EAS puts 482, 484, 486, 488 HAYES ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 482.",
+        "checked_on": "2026-09-15"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/hayes-valley/hayes-street/482/."
+      }
+    },
+    {
+      "id": "2026-09-15-0012",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2730 21st St",
+      "street_number": "2730",
+      "street_name": "21ST",
+      "street_type": "ST",
+      "description": "Asiento is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Asiento",
+        "name_as_listed": "Asiento",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94110",
+        "street_address_as_listed": "2730 21st St, San Francisco, CA 94110",
+        "cuisines": [
+          "Bar"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "4087024",
+        "path": "/san-francisco/mission/21st-street/2728/",
+        "eas_address": "2728 21ST ST",
+        "method": "EAS exact match on 2730 21ST ST → parcel 4087024; sf-parcels has blklot 4087024 active, 2728–2730 21ST; the 2025 roll records it as multi-family residential, built 1912. EAS puts 2728, 2730 21ST ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2728.",
+        "checked_on": "2026-09-15"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/mission/21st-street/2728/."
+      }
+    },
+    {
+      "id": "2026-09-15-0013",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "101 California St",
+      "street_number": "101",
+      "street_name": "CALIFORNIA",
+      "street_type": "ST",
+      "description": "Avotoasty is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Avotoasty",
+        "name_as_listed": "Avotoasty",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94111",
+        "street_address_as_listed": "101 California St, Suite 125, San Francisco, CA 94111",
+        "cuisines": [
+          "Cafe"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0263011",
+        "path": "/san-francisco/financial-district/california-street/101/",
+        "eas_address": "101 CALIFORNIA ST",
+        "method": "EAS exact match on 101 CALIFORNIA ST → parcel 0263011; sf-parcels has blklot 0263011 active, 101–101 CALIFORNIA; the 2025 roll records it as commercial office, built 1983.",
+        "checked_on": "2026-09-15"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/financial-district/california-street/101/."
+      }
+    },
+    {
+      "id": "2026-09-15-0014",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1796 Union St",
+      "street_number": "1796",
+      "street_name": "UNION",
+      "street_type": "ST",
+      "description": "Avotoasty is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Avotoasty",
+        "name_as_listed": "Avotoasty",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94123",
+        "street_address_as_listed": "1796 Union St, San Francisco, CA 94123",
+        "cuisines": [
+          "Cafe"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "unresolved",
+        "by_hand": true,
+        "checked_on": "2026-09-15",
+        "method": "EAS exact match on 1796 UNION ST -> blklot 0529090, active, in_asr_secured_roll false; sf-parcels keys its shape to mapblklot 0529089 instead (0529090 has no shape of its own), and 0529089 is 2804 Octavia St, a different address. Neither parcel_number resolves on the 2025 roll.",
+        "note": "The lot 1796 Union St is addressed on is unassessed and mapped under a different lot's shape (0529089, 2804 Octavia St) rather than its own — the kind of merged-lot case the condominium rule in the root AGENTS.md is written for, and it needs a human to establish which building actually stands here before a page is seeded."
+      }
+    },
+    {
+      "id": "2026-09-15-0015",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "5800 Geary Blvd",
+      "street_number": "5800",
+      "street_name": "GEARY",
+      "street_type": "BLVD",
+      "description": "Aziza is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Aziza",
+        "name_as_listed": "Aziza",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94121",
+        "street_address_as_listed": "5800 Geary Blvd, San Francisco, CA 94121",
+        "cuisines": [
+          "Moroccan"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1454018",
+        "path": "/san-francisco/outer-richmond/geary-boulevard/5800/",
+        "eas_address": "5800 GEARY BLVD",
+        "method": "EAS exact match on 5800 GEARY BLVD → parcel 1454018; sf-parcels has blklot 1454018 active, 385–385 22ND; the 2025 roll records it as commercial retail, built 1900. EAS puts 5800, 5802 GEARY BLVD on that parcel, so per the directory contract the fact belongs on one page at the lowest, 5800.",
+        "checked_on": "2026-09-15",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/outer-richmond/geary-boulevard/5800/."
+      }
+    },
+    {
+      "id": "2026-09-15-0016",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1257 Taylor St",
+      "street_number": "1257",
+      "street_name": "TAYLOR",
+      "street_type": "ST",
+      "description": "Back to Back is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Back to Back",
+        "name_as_listed": "Back to Back",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94108",
+        "street_address_as_listed": "1257 Taylor St, San Francisco, CA 94108",
+        "cuisines": [
+          "Italian"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0214001",
+        "path": "/san-francisco/nob-hill/taylor-street/1255/",
+        "eas_address": "1255 TAYLOR ST",
+        "method": "EAS exact match on 1257 TAYLOR ST → parcel 0214001; sf-parcels has blklot 0214001 active, 1255–1257 TAYLOR; the 2025 roll records it as multi-family residential, built 1915. EAS puts 1255, 1257 TAYLOR ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1255.",
+        "checked_on": "2026-09-15",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/nob-hill/taylor-street/1255/."
+      }
+    },
+    {
+      "id": "2026-09-15-0017",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "76 14th St",
+      "street_number": "76",
+      "street_name": "14TH",
+      "street_type": "ST",
+      "description": "Bageletto is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Bageletto",
+        "name_as_listed": "Bageletto",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94103",
+        "street_address_as_listed": "76 14th St, San Francisco, CA 94103",
+        "cuisines": [
+          "Bagel Shop"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3529019",
+        "path": "/san-francisco/mission/14th-street/74/",
+        "eas_address": "74 14TH ST",
+        "method": "EAS exact match on 76 14TH ST → parcel 3529019; sf-parcels has blklot 3529019 active, 74–76 14TH; the 2025 roll records it as single family residential, built 1919. EAS puts 74, 76 14TH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 74.",
+        "checked_on": "2026-09-15"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/mission/14th-street/74/."
+      }
+    },
+    {
+      "id": "2026-09-15-0018",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "3349 18th St",
+      "street_number": "3349",
+      "street_name": "18TH",
+      "street_type": "ST",
+      "description": "Balompié Cafe #1 is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Balompié Cafe #1",
+        "name_as_listed": "Balompié Cafe #1",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94110",
+        "street_address_as_listed": "3349 18th St, San Francisco, CA 94110",
+        "cuisines": [
+          "American"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3590037",
+        "path": "/san-francisco/mission/18th-street/3351/",
+        "eas_address": "3349 18TH ST",
+        "method": "EAS exact match on 3349 18TH ST → parcel 3590037; sf-parcels has blklot 3590037 active, 3351–3351 18TH; the 2025 roll records it as multi-family residential, built 1908. EAS puts 3349, 3351 18TH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 3349. The address carries no parcel number in EAS; the active parcel its coordinates fall in is 3590037.",
+        "checked_on": "2026-09-15"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/mission/18th-street/3351/."
+      }
+    },
+    {
+      "id": "2026-09-15-0019",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1826 Buchanan St",
+      "street_number": "1826",
+      "street_name": "BUCHANAN",
+      "street_type": "ST",
+      "description": "BANGKOK STREET Thai Street Food is listed on Blackbird at this address.",
+      "extra": {
+        "name": "BANGKOK STREET Thai Street Food",
+        "name_as_listed": "BANGKOK STREET Thai Street Food",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94115",
+        "street_address_as_listed": "1826 Buchanan St, Unit B, San Francisco, CA 94115",
+        "cuisines": [
+          "Thai"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0675051",
+        "path": "/san-francisco/pacific-heights/buchanan-street/1826/",
+        "eas_address": "1826 BUCHANAN ST",
+        "method": "EAS exact match on 1826 BUCHANAN ST → parcel 0675051; sf-parcels has blklot 0675051 active, 1826–1832 BUCHANAN; the 2025 roll records it as commercial retail, built 1982. EAS puts 1826, 1832 BUCHANAN ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1826.",
+        "checked_on": "2026-09-15",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/pacific-heights/buchanan-street/1826/."
+      }
+    },
+    {
+      "id": "2026-09-15-0020",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2310 Polk St",
+      "street_number": "2310",
+      "street_name": "POLK",
+      "street_type": "ST",
+      "description": "Bar Iris is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Bar Iris",
+        "name_as_listed": "Bar Iris",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94109",
+        "street_address_as_listed": "2310 Polk St, San Francisco, CA 94109",
+        "cuisines": [
+          "Cocktail Bar"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0548015B",
+        "path": "/san-francisco/russian-hill/polk-street/2308/",
+        "eas_address": "2308 POLK ST",
+        "method": "EAS exact match on 2310 POLK ST → parcel 0548015B; sf-parcels has blklot 0548015B active, 2308–2310 POLK; the 2025 roll records it as commercial retail, built 1926. EAS puts 2308, 2310 POLK ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2308.",
+        "checked_on": "2026-09-15",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/russian-hill/polk-street/2308/."
+      }
+    },
+    {
+      "id": "2026-09-15-0021",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "417 Stockton St",
+      "street_number": "417",
+      "street_name": "STOCKTON",
+      "street_type": "ST",
+      "description": "Bar Maritime & Maritime Boat Club is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Bar Maritime & Maritime Boat Club",
+        "name_as_listed": "Bar Maritime & Maritime Boat Club",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94108",
+        "street_address_as_listed": "417 Stockton St, Fl 2, San Francisco, CA 94108",
+        "cuisines": [
+          "Cocktail Bar"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0285004",
+        "path": "/san-francisco/chinatown/stockton-street/417/",
+        "eas_address": "417 STOCKTON ST",
+        "method": "EAS exact match on 417 STOCKTON ST → parcel 0285004; sf-parcels has blklot 0285004 active, 417–417 STOCKTON; the 2025 roll records it as commercial hotel, built 1907.",
+        "checked_on": "2026-09-15"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/chinatown/stockton-street/417/."
+      }
+    },
+    {
+      "id": "2026-09-15-0022",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2481 Mission St",
+      "street_number": "2481",
+      "street_name": "MISSION",
+      "street_type": "ST",
+      "description": "Bar TZA is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Bar TZA",
+        "name_as_listed": "Bar TZA",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94110",
+        "street_address_as_listed": "2481 Mission St, San Francisco, CA 94110",
+        "cuisines": [
+          "Bar"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3610020",
+        "path": "/san-francisco/mission/mission-street/2477/",
+        "eas_address": "2477 MISSION ST",
+        "method": "EAS exact match on 2481 MISSION ST → parcel 3610020; sf-parcels has blklot 3610020 active, 2477–2481 MISSION; the 2025 roll records it as commercial hotel, built 1900. EAS puts 2477, 2481 MISSION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2477.",
+        "checked_on": "2026-09-15",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/mission/mission-street/2477/."
+      }
+    },
+    {
+      "id": "2026-09-15-0023",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "28 Fremont St",
+      "street_number": "28",
+      "street_name": "FREMONT",
+      "street_type": "ST",
+      "description": "Barcha Restaurant is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Barcha Restaurant",
+        "name_as_listed": "Barcha Restaurant",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94105",
+        "street_address_as_listed": "28 Fremont St, San Francisco, CA 94105",
+        "cuisines": [
+          "Mediterranean"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3709014",
+        "path": "/san-francisco/east-cut/market-street/425/",
+        "eas_address": "28 FREMONT ST",
+        "method": "EAS exact match on 28 FREMONT ST → parcel 3709014; sf-parcels has blklot 3709014 active, 28–28 FREMONT; the 2025 roll records it as commercial office, built 1973. The assessor files the parcel as 425 MARKET ST.",
+        "checked_on": "2026-09-15"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/east-cut/market-street/425/."
+      }
+    },
+    {
+      "id": "2026-09-15-0024",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "4138 24th St",
+      "street_number": "4138",
+      "street_name": "24TH",
+      "street_type": "ST",
+      "description": "Barney's Gourmet Hamburgers is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Barney's Gourmet Hamburgers",
+        "name_as_listed": "Barney's Gourmet Hamburgers",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94114",
+        "street_address_as_listed": "4138 24th St, San Francisco, CA 94114",
+        "cuisines": [
+          "Burgers"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "2831010",
+        "path": "/san-francisco/noe-valley/24th-street/4134/",
+        "eas_address": "4134 24TH ST",
+        "method": "EAS exact match on 4138 24TH ST → parcel 2831010; sf-parcels has blklot 2831010 active, 4134–4142 24TH; the 2025 roll records it as multi-family residential, built 1915. EAS puts 4134, 4136, 4138, 4140 24TH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 4134.",
+        "checked_on": "2026-09-15",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/noe-valley/24th-street/4134/."
+      }
+    },
+    {
+      "id": "2026-09-15-0025",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "450 Sansome St",
+      "street_number": "450",
+      "street_name": "SANSOME",
+      "street_type": "ST",
+      "description": "Delah Coffee is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Delah Coffee",
+        "name_as_listed": "Delah Coffee",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94111",
+        "street_address_as_listed": "450 Sansome St, San Francisco, CA 94111",
+        "cuisines": [
+          "Coffee Shop"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0229018",
+        "path": "/san-francisco/financial-district/sansome-street/450/",
+        "eas_address": "450 SANSOME ST",
+        "method": "EAS exact match on 450 SANSOME ST → parcel 0229018; sf-parcels has blklot 0229018 active, 450–450 SANSOME; the 2025 roll records it as commercial office, built 1967.",
+        "checked_on": "2026-09-15",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/financial-district/sansome-street/450/."
+      }
+    },
+    {
+      "id": "2026-09-15-0026",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "11 Division St",
+      "street_number": "11",
+      "street_name": "DIVISION",
+      "street_type": "ST",
+      "description": "Dumpling Time is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Dumpling Time",
+        "name_as_listed": "Dumpling Time",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94103",
+        "street_address_as_listed": "11 Division St, San Francisco, CA 94103",
+        "cuisines": [
+          "Chinese"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3912003",
+        "path": "/san-francisco/mission-bay/division-street/11/",
+        "eas_address": "11 DIVISION ST",
+        "method": "EAS exact match on 11 DIVISION ST → parcel 3912003; sf-parcels has blklot 3912003 active, 11–25 DIVISION; the 2025 roll records it as commercial retail, built 1950. EAS puts 11, 25 DIVISION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 11.",
+        "checked_on": "2026-09-15"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/mission-bay/division-street/11/."
+      }
+    },
+    {
+      "id": "2026-09-15-0027",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "191 Warriors Way",
+      "street_number": "191",
+      "street_name": "WARRIORS",
+      "street_type": "WAY",
+      "description": "Dumpling Time is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Dumpling Time",
+        "name_as_listed": "Dumpling Time",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94158",
+        "street_address_as_listed": "191 Warriors Way, Ste 101, San Francisco, CA 94158",
+        "cuisines": [
+          "Chinese"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-15",
+        "method": "sf-eas-addresses has 191 WARRIORS WAY but it does not join to one parcel. 191 WARRIORS WAY's coordinates fall in 20 active parcels (8722087, 8722034, 8722030, 8722035…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
+        "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+      }
+    },
+    {
+      "id": "2026-09-15-0028",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1240 9th Ave",
+      "street_number": "1240",
+      "street_name": "09TH",
+      "street_type": "AVE",
+      "description": "Fiorella is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Fiorella",
+        "name_as_listed": "Fiorella",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94122",
+        "street_address_as_listed": "1240 9th Ave, San Francisco, CA 94122",
+        "cuisines": [
+          "Italian"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1742029",
+        "path": "/san-francisco/inner-sunset/9th-avenue/1238/",
+        "eas_address": "1238 09TH AVE",
+        "method": "EAS exact match on 1240 09TH AVE → parcel 1742029; sf-parcels has blklot 1742029 active, 1238–1240 09TH; the 2025 roll records it as commercial retail, built 1907. EAS puts 1238, 1240 09TH AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1238.",
+        "checked_on": "2026-09-15",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/inner-sunset/9th-avenue/1238/."
+      }
+    },
+    {
+      "id": "2026-09-15-0029",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2339 Clement St",
+      "street_number": "2339",
+      "street_name": "CLEMENT",
+      "street_type": "ST",
+      "description": "Fiorella is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Fiorella",
+        "name_as_listed": "Fiorella",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94121",
+        "street_address_as_listed": "2339 Clement St, San Francisco, CA 94121",
+        "cuisines": [
+          "Italian"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1456043",
+        "path": "/san-francisco/outer-richmond/clement-street/2339/",
+        "eas_address": "2339 CLEMENT ST",
+        "method": "EAS exact match on 2339 CLEMENT ST → parcel 1456043; sf-parcels has blklot 1456043 active, 2339–2341 CLEMENT; the 2025 roll records it as multi-family residential, built 1908. EAS puts 2339, 2341 CLEMENT ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2339.",
+        "checked_on": "2026-09-15",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/outer-richmond/clement-street/2339/."
+      }
+    },
+    {
+      "id": "2026-09-15-0030",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2238 Polk St",
+      "street_number": "2238",
+      "street_name": "POLK",
+      "street_type": "ST",
+      "description": "Fiorella is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Fiorella",
+        "name_as_listed": "Fiorella",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94109",
+        "street_address_as_listed": "2238 Polk St, San Francisco, CA 94109",
+        "cuisines": [
+          "Italian"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0549015",
+        "path": "/san-francisco/pacific-heights/polk-street/2222/",
+        "eas_address": "2222 POLK ST",
+        "method": "EAS exact match on 2238 POLK ST → parcel 0549015; sf-parcels has blklot 0549015 active, 2222–2254 POLK; the 2025 roll records it as multi-family residential, built 1913. EAS puts 2222, 2234, 2238, 2240, 2242, 2246, 2248, 2250, 2254 POLK ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2222.",
+        "checked_on": "2026-09-15"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/pacific-heights/polk-street/2222/."
+      }
+    },
+    {
+      "id": "2026-09-15-0031",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "534 Irving St",
+      "street_number": "534",
+      "street_name": "IRVING",
+      "street_type": "ST",
+      "description": "Foghorn Taproom is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Foghorn Taproom",
+        "name_as_listed": "Foghorn Taproom",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94122",
+        "street_address_as_listed": "534 Irving St, San Francisco, CA 94122",
+        "cuisines": [
+          "Brewery"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1755012",
+        "path": "/san-francisco/inner-sunset/irving-street/530/",
+        "eas_address": "530 IRVING ST",
+        "method": "EAS exact match on 534 IRVING ST → parcel 1755012; sf-parcels has blklot 1755012 active, 530–534 IRVING; the 2025 roll records it as multi-family residential, built 1907. EAS puts 530, 532, 534 IRVING ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 530.",
+        "checked_on": "2026-09-15",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/inner-sunset/irving-street/530/."
+      }
+    },
+    {
+      "id": "2026-09-15-0032",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "450 Balboa St",
+      "street_number": "450",
+      "street_name": "BALBOA",
+      "street_type": "ST",
+      "description": "Foghorn Taproom is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Foghorn Taproom",
+        "name_as_listed": "Foghorn Taproom",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94118",
+        "street_address_as_listed": "450 Balboa St, San Francisco, CA 94118",
+        "cuisines": [
+          "Brewery"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1548027",
+        "path": "/san-francisco/inner-richmond/balboa-street/436/",
+        "eas_address": "436 BALBOA ST",
+        "method": "EAS exact match on 450 BALBOA ST → parcel 1548027; sf-parcels has blklot 1548027 active, 436–452 BALBOA; the 2025 roll records it as commercial retail, built 1915. EAS puts 436, 438, 448, 450, 452 BALBOA ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 436.",
+        "checked_on": "2026-09-15"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/inner-richmond/balboa-street/436/."
+      }
+    },
+    {
+      "id": "2026-09-15-0033",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "846 Divisadero St",
+      "street_number": "846",
+      "street_name": "DIVISADERO",
+      "street_type": "ST",
+      "description": "Foghorn Taproom is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Foghorn Taproom",
+        "name_as_listed": "Foghorn Taproom",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94117",
+        "street_address_as_listed": "846 Divisadero St, San Francisco, CA 94117",
+        "cuisines": [
+          "Brewery"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1180016",
+        "path": "/san-francisco/haight-ashbury/divisadero-street/846/",
+        "eas_address": "846 DIVISADERO ST",
+        "method": "EAS exact match on 846 DIVISADERO ST → parcel 1180016; sf-parcels has blklot 1180016 active, 846–848 DIVISADERO; the 2025 roll records it as commercial retail, built 1900. EAS puts 846, 848 DIVISADERO ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 846.",
+        "checked_on": "2026-09-15"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/haight-ashbury/divisadero-street/846/."
+      }
+    },
+    {
+      "id": "2026-09-15-0034",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "790 Valencia St",
+      "street_number": "790",
+      "street_name": "VALENCIA",
+      "street_type": "ST",
+      "description": "Little Sweet is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Little Sweet",
+        "name_as_listed": "Little Sweet",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94110",
+        "street_address_as_listed": "790 Valencia St, San Francisco, CA 94110",
+        "cuisines": [
+          "Cafe"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3588125",
+        "path": "/san-francisco/mission/valencia-street/786/",
+        "eas_address": "786 VALENCIA ST",
+        "method": "EAS exact match on 790 VALENCIA ST → parcel 3588125; sf-parcels has blklot 3588125 active, 786–790 VALENCIA; the 2025 roll records it as commercial retail, built 2013. EAS puts 786, 788, 790, 798 VALENCIA ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 786. EAS files the address under parcel 3588012, which sf-parcels reports retired; the active parcel its coordinates fall in is 3588125.",
+        "checked_on": "2026-09-15",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/mission/valencia-street/786/."
+      }
+    },
+    {
+      "id": "2026-09-15-0035",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1253 9th Ave",
+      "street_number": "1253",
+      "street_name": "09TH",
+      "street_type": "AVE",
+      "description": "Little Sweet is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Little Sweet",
+        "name_as_listed": "Little Sweet",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94122",
+        "street_address_as_listed": "1253 9th Ave, San Francisco, CA 94122",
+        "cuisines": [
+          "Cafe"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1741010",
+        "path": "/san-francisco/inner-sunset/9th-avenue/1251/",
+        "eas_address": "1251 09TH AVE",
+        "method": "EAS exact match on 1253 09TH AVE → parcel 1741010; sf-parcels has blklot 1741010 active, 1251–1255 09TH; the 2025 roll records it as multi-family residential, built 1904. EAS puts 1251, 1253, 1255 09TH AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1251.",
+        "checked_on": "2026-09-15"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/inner-sunset/9th-avenue/1251/."
+      }
+    },
+    {
+      "id": "2026-09-15-0036",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "3836 Geary Blvd",
+      "street_number": "3836",
+      "street_name": "GEARY",
+      "street_type": "BLVD",
+      "description": "Little Sweet is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Little Sweet",
+        "name_as_listed": "Little Sweet",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94118",
+        "street_address_as_listed": "3836 Geary Blvd, San Francisco, CA 94118",
+        "cuisines": [
+          "Cafe"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1434019",
+        "path": "/san-francisco/lone-mountain/geary-boulevard/3834/",
+        "eas_address": "3834 GEARY BLVD",
+        "method": "EAS exact match on 3836 GEARY BLVD → parcel 1434019; sf-parcels has blklot 1434019 active, 3834–3840 GEARY; the 2025 roll records it as multi-family residential, built 1907. EAS puts 3834, 3836, 3838, 3840 GEARY BLVD on that parcel, so per the directory contract the fact belongs on one page at the lowest, 3834.",
+        "checked_on": "2026-09-15"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/lone-mountain/geary-boulevard/3834/."
+      }
+    },
+    {
+      "id": "2026-09-15-0037",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1660 Geary Blvd",
+      "street_number": "1660",
+      "street_name": "GEARY",
+      "street_type": "BLVD",
+      "description": "Little Sweet is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Little Sweet",
+        "name_as_listed": "Little Sweet",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94115",
+        "street_address_as_listed": "1660 Geary Blvd, Unit B, San Francisco, CA 94115",
+        "cuisines": [
+          "Cafe"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0700032",
+        "path": "/san-francisco/western-addition/geary-boulevard/1660/",
+        "eas_address": "1660 GEARY BLVD",
+        "method": "EAS exact match on 1660 GEARY BLVD → parcel 0700032; sf-parcels has blklot 0700032 active, 1660–1660 GEARY; the 2025 roll records it as commercial office, built 1967.",
+        "checked_on": "2026-09-15",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/western-addition/geary-boulevard/1660/."
+      }
+    },
+    {
+      "id": "2026-09-15-0038",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "555 20th St",
+      "street_number": "555",
+      "street_name": "20TH",
+      "street_type": "ST",
+      "description": "Little Sweet is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Little Sweet",
+        "name_as_listed": "Little Sweet",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94107",
+        "street_address_as_listed": "555 20th St, Ste 1, San Francisco, CA 94107",
+        "cuisines": [
+          "Cafe"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "4111008",
+        "path": "/san-francisco/potrero-hill/20th-street/525/",
+        "eas_address": "525 20TH ST",
+        "method": "EAS exact match on 555 20TH ST → parcel 4111008; sf-parcels has blklot 4111008 active; the 2025 roll records it as industrial. The assessor files the parcel as MICHIGAN ST. EAS puts 525, 555, 575, 577, 579, 581, 583, 585, 587 20TH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 525. EAS files the address under parcel 4111004, which sf-parcels reports retired; the active parcel its coordinates fall in is 4111008.",
+        "checked_on": "2026-09-15",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/potrero-hill/20th-street/525/."
+      }
+    },
+    {
+      "id": "2026-09-15-0039",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "75 O'Farrell St",
+      "street_number": "75",
+      "street_name": "O'FARRELL",
+      "street_type": "ST",
+      "description": "Little Sweet is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Little Sweet",
+        "name_as_listed": "Little Sweet",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94102",
+        "street_address_as_listed": "75 O'Farrell St, San Francisco, CA 94102",
+        "cuisines": [
+          "Cafe"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0328001",
+        "path": "/san-francisco/union-square/market-street/750/",
+        "eas_address": "43 OFARRELL ST",
+        "method": "EAS exact match on 75 OFARRELL ST → parcel 0328001; sf-parcels has blklot 0328001 active, 750–780 MARKET; the 2025 roll records it as commercial office, built 1908. The assessor files the parcel as 760 MARKET ST. EAS puts 43, 75 OFARRELL ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 43. The record spells the street O'FARRELL; EAS holds it as OFARRELL.",
+        "checked_on": "2026-09-15"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/union-square/market-street/750/."
+      }
+    },
+    {
+      "id": "2026-09-15-0040",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "17 Powell St",
+      "street_number": "17",
+      "street_name": "POWELL",
+      "street_type": "ST",
+      "description": "Little Sweet is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Little Sweet",
+        "name_as_listed": "Little Sweet",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94102",
+        "street_address_as_listed": "17 Powell St, San Francisco, CA 94102",
+        "cuisines": [
+          "Cafe"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0330073",
+        "path": "/san-francisco/nob-hill/powell-street/17/",
+        "eas_address": "17 POWELL ST",
+        "method": "EAS exact match on 17 POWELL ST → parcel 0330073; sf-parcels has blklot 0330073 active; the 2025 roll records it as commercial hotel. EAS puts 17, 19, 21, 23, 25, 27, 29, 31, 33 POWELL ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 17. EAS files the address under parcel 0330004, which sf-parcels reports retired; the active parcel its coordinates fall in is 0330073.",
+        "checked_on": "2026-09-15"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/nob-hill/powell-street/17/."
+      }
+    },
+    {
+      "id": "2026-09-15-0041",
+      "date": "2026-09-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "655 Montgomery St",
+      "street_number": "655",
+      "street_name": "MONTGOMERY",
+      "street_type": "ST",
+      "description": "Little Sweet is listed on Blackbird at this address.",
+      "extra": {
+        "name": "Little Sweet",
+        "name_as_listed": "Little Sweet",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94111",
+        "street_address_as_listed": "655 Montgomery St, San Francisco, CA 94111",
+        "cuisines": [
+          "Cafe"
+        ]
+      },
+      "citation": {
+        "label": "Blackbird, restaurant rewards app",
+        "url": "https://www.blackbird.xyz/",
+        "locator": "the list of San Francisco merchants with addresses, typed into issue #356"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0208028",
+        "path": "/san-francisco/chinatown/montgomery-street/655/",
+        "eas_address": "655 MONTGOMERY ST",
+        "method": "EAS exact match on 655 MONTGOMERY ST → parcel 0208028; sf-parcels has blklot 0208028 active, 655–655 MONTGOMERY; the 2025 roll records it as commercial office, built 1983.",
+        "checked_on": "2026-09-15"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/369",
+        "note": "An `occupants` entry on /san-francisco/chinatown/montgomery-street/655/."
+      }
+    }
+  ]
+}

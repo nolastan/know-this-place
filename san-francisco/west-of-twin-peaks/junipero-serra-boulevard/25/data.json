@@ -1,0 +1,133 @@
+{
+  "address": "25 Junipero Serra Boulevard, San Francisco, CA 94127",
+  "path": "/san-francisco/west-of-twin-peaks/junipero-serra-boulevard/25/",
+  "apn": "3098015",
+  "block": "3098",
+  "lot": "015",
+  "eas_baseid": "354051",
+  "coordinates": {
+    "lat": 37.734087,
+    "lng": -122.471002
+  },
+  "parcel": {
+    "year_built": 1920,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 5013,
+    "building_area_sqft": 2913,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "St. Francis Wood",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0025 JUNIPERO SERRA      BL0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 90299,
+    "assessed_improvement_value": 409260
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1920",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "St. Francis Wood Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1912–1954",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "M1144387",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-09-27",
+      "status_date": "2019-09-27",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201905221395",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2019-05-22",
+      "status_date": "2023-01-05",
+      "estimated_cost": 100000,
+      "revised_cost": 290000,
+      "description": "kitchen remodel, bathroom remodel and enclosure of (e) open area of 164 sqft",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2019",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JUNIPERO%20SERRA&street_type=BLVD&address_number=25",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3098015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3098&lot=015",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3098015",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4710018247224%2037.734086574813276)%27)",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume A–C), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=903cd18110a5ccc974eb3e5632a9acd8f2525118c61c3ce50c3ffc7374e0bfa3&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-08-31"
+    }
+  ],
+  "building": {
+    "architect": "Elizabeth Austin"
+  },
+  "historical_record": [
+    {
+      "date": "1920",
+      "kind": "construction",
+      "description": "Designed by Elizabeth Austin.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+ "address": "17–19 Walter U Lum Place, San Francisco, CA 94108",
+ "path": "/san-francisco/north-beach/walter-u-lum-place/17/",
+ "apn": "0209015",
+ "block": "0209",
+ "lot": "015",
+ "eas_baseid": "279872",
+ "coordinates": {
+  "lat": 37.794631,
+  "lng": -122.405916
+ },
+ "address_range": "17–19",
+ "street_numbers_on_parcel": [
+  "17",
+  "19"
+ ],
+ "parcel": {
+  "year_built": 1913,
+  "units": 2,
+  "stories": 2,
+  "rooms": 10,
+  "bathrooms": 1,
+  "bedrooms": 3,
+  "lot_area_sqft": 1716,
+  "building_area_sqft": 2900,
+  "use": "Commercial Retail",
+  "property_class": "Commercial Stores",
+  "construction_type_code": "C",
+  "zoning": "CVR",
+  "supervisor_district": 3,
+  "assessor_neighborhood": "Financial District North",
+  "analysis_neighborhood": "Chinatown",
+  "property_location_raw": "0019 0017 WALTER U LUM        PL0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 316983,
+  "assessed_improvement_value": 316983
+ },
+ "historic_status": {
+  "ceqa_status_code": "A",
+  "ceqa_status_code_article_10_11": "A",
+  "ceqa_status_label": "Historic resource",
+  "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+  "yearbuilt": "1913",
+  "survey_name": "WING SUN MORTUARY",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "historic_district": {
+  "name": "Chinatown Historic District",
+  "california_register_status": "Eligible (not listed)",
+  "national_register_status": "Eligible (not listed)",
+  "article_10_11_status": "No local landmark protection",
+  "local_landmark_protection": false,
+  "period_of_significance": "1906–1930/1938",
+  "source": "sf-historic-districts"
+ },
+ "permits": [
+  {
+   "number": "202303224178",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "2023-03-22",
+   "status_date": "2024-04-11",
+   "estimated_cost": 1,
+   "revised_cost": 1,
+   "description": "to obtain a final inspection for work approved under previous permits 201607122156 & pa 201608165168. all work is complete.",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "201608165168",
+   "type": "otc alterations permit",
+   "status": "expired",
+   "filed": "2016-08-16",
+   "status_date": "2024-04-11",
+   "estimated_cost": 90000,
+   "revised_cost": 90000,
+   "description": "mech, elec & lighting only relative to ref pa 201607122156",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "201607122156",
+   "type": "otc alterations permit",
+   "status": "expired",
+   "filed": "2016-07-12",
+   "status_date": "2024-04-11",
+   "estimated_cost": 400000,
+   "revised_cost": 400000,
+   "description": "remodel of building incl: new elevator, upgrade for accessibility @ entry, bathroom & other accessible upgrades. replacing front door with wall/window(no expansion of footprint and equivalent transparency to sidewalk).mechanical & electrical by separate permit.",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "200901270863",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "2009-01-27",
+   "status_date": "2009-06-17",
+   "estimated_cost": 11000,
+   "revised_cost": 11000,
+   "description": "reroofing.",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "9415114",
+   "type": "additions alterations or repairs",
+   "status": "complete",
+   "filed": "1994-09-23",
+   "status_date": "1995-09-29",
+   "estimated_cost": 9617,
+   "revised_cost": 14000,
+   "description": "accessible entry & toilet upgrade only",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "8307671",
+   "type": "additions alterations or repairs",
+   "status": "expired",
+   "filed": "1983-08-08",
+   "status_date": "1985-04-25",
+   "estimated_cost": 220000,
+   "revised_cost": 286000,
+   "description": "rear extension",
+   "source": "sf-building-permits"
+  }
+ ],
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=WALTER%20U%20LUM&street_type=PL&address_number=17",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0209015&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0209&lot=015",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0209015",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-historic-districts",
+   "name": "SF Planning Department — Historic Districts via DataSF",
+   "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40591620992343%2037.79463077641956)%27)",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "umb-survey-1990",
+   "name": "San Francisco Landmarks Preservation Advisory Board — A Context Statement and Architectural/Historical Survey of Unreinforced Masonry Building (U.M.B.) Construction in San Francisco from 1850 to 1940, San Francisco Department of City Planning, November 1990",
+   "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=de4ab5d53839bb7c49ab1a2e10876d4a39e7dbacc6eccc90508e51012b8f4456&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "label": "Unreinforced Masonry Building Survey, 1990",
+   "retrieved": "2026-08-29"
+  }
+ ],
+ "historic_survey": {
+  "survey": "Unreinforced Masonry Building Survey (1990)",
+  "frame": "Unreinforced masonry",
+  "eligible_district": "Chinatown Historic District — contributory-altered, proposed 1990",
+  "note": "From the survey's appendix table of unreinforced masonry buildings and their historic ratings, study area 7 (Chinatown).",
+  "source": "umb-survey-1990"
+ }
+}

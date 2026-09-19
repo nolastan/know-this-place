@@ -1,0 +1,112 @@
+{
+  "address": "1269 Hyde Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/hyde-street/1269/",
+  "apn": "0218001",
+  "block": "0218",
+  "lot": "001",
+  "eas_baseid": "280110",
+  "coordinates": {
+    "lat": 37.792611,
+    "lng": -122.417946
+  },
+  "parcel": {
+    "year_built": 1908,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "lot_area_sqft": 4273,
+    "building_area_sqft": 5640,
+    "use": "Commercial Misc",
+    "property_class": "Churches,Convents,Rectories",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Nob Hill",
+    "property_location_raw": "0000 1269 HYDE                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 377034,
+    "assessed_improvement_value": 153155
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1908",
+    "survey_name": "FIRST CHINESE SOUTHERN BAPTIST CHURCH",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202310269572",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-10-26",
+      "status_date": "2024-03-05",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "reroofing: 1255 hyde not a legal address-",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201801178778",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-01-17",
+      "status_date": "2018-12-18",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "response to nov 201831941, resolve over excavation beneath south foundation (non official address 1255 hyde st, used and identified at property entrance)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HYDE&street_type=ST&address_number=1269",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0218001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0218&lot=001",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0218001",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "african-american-context-statement",
+      "name": "Christopher VerPlanck, Tim Kelley, Al Williams and San Francisco Planning Department staff, African American Citywide Historic Context Statement, San Francisco Planning Department, adopted February 21, 2024",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=0ab7d14a0fb2469d622481a42e9e19831f1e2cd9ec6724bc8d926606555b3dc4&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "African American Citywide Historic Context Statement, adopted 2024",
+      "retrieved": "2026-08-29"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1906",
+      "kind": "occupancy",
+      "description": "Third Baptist Church, which had begun on Dupont Street near Union, relocated here in 1906 and stayed until it built its own church on McAllister Street in the 1950s.",
+      "source": "african-american-context-statement"
+    }
+  ],
+  "unknowns": [
+    "The city's African American context statement gives the address as 1269 Hyde Street in two lists and 1299 Hyde Street in two narrative passages."
+  ]
+}

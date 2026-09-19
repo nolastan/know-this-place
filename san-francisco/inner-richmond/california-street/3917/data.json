@@ -1,0 +1,137 @@
+{
+  "address": "3917 California Street, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/california-street/3917/",
+  "apn": "1361023",
+  "block": "1361",
+  "lot": "023",
+  "eas_baseid": "301012",
+  "coordinates": {
+    "lat": 37.785396,
+    "lng": -122.459819
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 3,
+    "rooms": 11,
+    "bathrooms": 4,
+    "bedrooms": 7,
+    "lot_area_sqft": 1444.07,
+    "building_area_sqft": 1960,
+    "lot_depth_ft": 62.95,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0000 3917 CALIFORNIA          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1212323,
+    "assessed_improvement_value": 519566,
+    "last_sale_date": "1994-04-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "survey_name": "3917-3927 CALIFORNIA ST",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202502261126",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-02-26",
+      "status_date": "2025-05-12",
+      "estimated_cost": 20000,
+      "revised_cost": 45000,
+      "description": "one unit: upper unit: upgrade kitchen & bathroom fixtures. no change in structure. everything stays the same.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201505055352",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-05-05",
+      "status_date": "2016-03-10",
+      "estimated_cost": 20000,
+      "revised_cost": 25000,
+      "description": "comply with complaint #201534771 and 201542741. remove illegal kitchen, convert to laundry. legalize extg bed room. all work at ground floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201504143536",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-04-14",
+      "status_date": "2016-03-10",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "remodel (e) kitchen & two full bathroom in kind. all work at second floor, comply with complaint #201534771.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9812070",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-06-26",
+      "status_date": "1998-10-15",
+      "estimated_cost": 3290,
+      "description": "add storage room and a toilet on groung floor",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CALIFORNIA&street_type=ST&address_number=3917",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1361023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1361&lot=023",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1361023",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "progressive-era-styles-context-statement",
+      "name": "Elena Moore, San Francisco Planning Department, Progressive Era & Early Revival Styles (1890-1930) Historic Context Statement, SF Survey Cultural Resources Survey, adopted January 18, 2023",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=5c9487ef3fe2e54195baf95878f34c32e7a6e474ca0ff21bcf17fe715c68260a&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Progressive Era & Early Revival Styles Historic Context Statement, adopted 2023",
+      "retrieved": "2026-08-30"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Progressive Era & Early Revival Styles Historic Context Statement (2023)",
+    "source": "progressive-era-styles-context-statement",
+    "style": "Tudor Revival",
+    "year_built_as_surveyed": "1890-1906",
+    "address_as_surveyed": "3917-3929 California Street",
+    "note": "One of a cluster of five Tudor Revival residences built between 1890 and 1906 at California Street and 2nd Avenue, with gable roofs, multiple-pane windows, masonry accents, entry porches with arches and decorative half-timbering."
+  },
+  "building": {
+    "completed_conflict": "The assessor's roll gives 1900; the city's statement on Progressive Era and early revival styles gives 1890-1906."
+  }
+}

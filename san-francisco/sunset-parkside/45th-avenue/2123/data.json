@@ -1,0 +1,101 @@
+{
+  "address": "2123 45th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/45th-avenue/2123/",
+  "apn": "2172003",
+  "block": "2172",
+  "lot": "003",
+  "eas_baseid": "331603",
+  "coordinates": {
+    "lat": 37.746915,
+    "lng": -122.504237
+  },
+  "parcel": {
+    "year_built": 1941,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1300,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2123 45TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 512448,
+    "assessed_improvement_value": 341628,
+    "last_sale_date": "2005-08-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1941",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9722949",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-11-13",
+      "status_date": "1998-03-13",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=45TH&street_type=AVE&address_number=2123",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2172003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2172&lot=003",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2172003",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume G–I), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=b4fed2f0ee80387415081f76f9f657d25c12a1398210899a92a9222f03506e7a&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-09-01"
+    }
+  ],
+  "building": {
+    "builder": "R. F. Galli, Inc. (Galli Construction Co.)"
+  },
+  "historical_record": [
+    {
+      "date": "1941",
+      "kind": "construction",
+      "description": "Built by R. F. Galli, Inc., the Sunset and Parkside building firm, and marketed as the Hollywood No. 2 model.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ]
+}

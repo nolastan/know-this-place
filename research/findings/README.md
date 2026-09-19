@@ -15,6 +15,10 @@ Shape and every field: [../schema/finding.schema.json](../schema/finding.schema.
 A worked example: [../schema/example-findings.json](../schema/example-findings.json).
 Validate with `python3 research/tools/check.py`.
 
+**What is in these files, and how to get at it: [INDEX.md](INDEX.md).** Read
+that, not the files — they are tens of megabytes and the largest is past what a
+context window holds.
+
 ## Why the file exists
 
 An entry records where a fact came from, which parcel it names, and which PR put
@@ -54,6 +58,14 @@ separable, because a run that has to stop early stops between them:
   `research/corpora/`, it isn't a fact yet.
 - **The site is the publication, this is the workshop.** No findings JSON under
   `san-francisco/`, and nothing here is linked from a page.
+- **Never read one whole; query it.** `check.py --peek <file>` for what a batch
+  is and a sample of its entries, `check.py --find "<words>"` for the entries
+  matching an address or a name across every file, `jq` for anything else. A
+  run appends to its own file with `resolve_eas.py` and an editor — that is
+  writing, and it never needs the file in the context either.
+- **[INDEX.md](INDEX.md) is derived**, so regenerate it in the same commit as
+  any change here: `python3 research/tools/check.py --index`. `check.py` fails
+  while it is stale.
 
 ## Naming ids
 

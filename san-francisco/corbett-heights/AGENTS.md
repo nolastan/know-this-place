@@ -20,6 +20,17 @@ streets don't overlap the Castro tree.
 - The `.sub` locality line is `Corbett Heights · San Francisco, CA <zip>`.
 - If a source calls a Corbett Heights address "Castro/Upper Market," that's
   the city's analysis-neighborhood label, not a reason to refile the page.
+- The separation is enforced in one place: `AREA_EXCLUDE_STREETS` in
+  `seed_pages.py` keeps `seed castro` off these streets, so a parcel here is
+  never filed twice. Seeding new parcels on them means seeding
+  `--area corbett-heights` and pointing it at the same analysis neighborhood.
+
+Three pages here are filed under the address the building is known by rather
+than the lowest number EAS holds for the parcel, which is what the seeder would
+pick: `clayton-street/1349` (EAS also has 5 Villa Terrace),
+`corbett-avenue/127` (EAS has only 9 Hattie Street) and `museum-way/199`, the
+Randall Museum (EAS also has 122 States Street). Each says so in
+`also_addressed`. Don't "correct" them to the mechanical answer.
 
 ## Presenting history from newsletters and context statements
 
@@ -38,7 +49,8 @@ Two hard rules when using it:
 - **Extract facts; never paraphrase the source's prose.** A dated event
   becomes a `.vtl` timeline item; a discrete fact (contractor, architect,
   build cost, first owner) becomes a `.speclist` row or a stat tile; a
-  category (style, subdivision) becomes a tag. Do not reproduce the source's
+  category becomes `building.style` or `building.subdivision`, which are
+  `.speclist` rows too. Do not reproduce the source's
   sentences or their structure — that reads as an article and risks copying
   someone else's expression. Facts are not copyrightable; wording is.
 - **Never name the newsletter in the page body.** "The newsletter says…" is
@@ -57,8 +69,27 @@ Verify before asserting any of this about a specific building.
   Street was named for his daughter.
 - **Street numbers changed in 1909**, and some streets were renamed. An
   address given in a pre-1909 source often does not correspond to today's
-  number — 1200 Ashbury became 1200 Clayton, 110 Clara became 110 Ord. Always
-  check today's number against the EAS dataset before creating a page.
+  number. Always check today's number against the EAS dataset before creating
+  a page. The pairs the record states for itself, so far:
+
+  | Then | Now |
+  |---|---|
+  | 1200 Ashbury | 1200 Clayton Street |
+  | 34 Clara Avenue | 18 Ord Street |
+  | 56 Clara Avenue | 80 Ord Street |
+  | 77 Clara Avenue | 81 Ord Street |
+  | 110 Clara Avenue | 110 Ord — no such address today |
+  | 104–106–108 Clara | 104–106–108 Ord Street |
+
+- **Hattie Street was renumbered separately, between 1905 and 1913–14**, and
+  not in 1909: 7 became 17, 11 became 25–27, 15–15½ became 29–31, and 17
+  became 35. A pre-1913 Hattie number is a different building from the one
+  that carries it now — the 1897 chimney fire "at 17 Hattie" is on the parcel
+  the city calls 35 Hattie today.
+- **Two stairways were streets first.** Jupiter Street became the Vulcan
+  Stairway, Serpentine Place became Saturn Street and then the Saturn
+  Stairway, and Mono Street is now Al's Park. A number on any of them is a
+  number on ground the city took: none of the three can carry a page.
 - Much of the housing is early-20th-century, with post-war infill on the
   upper slopes.
 
@@ -68,8 +99,9 @@ The neighborhood's history writing dates buildings from photographs, and the
 assessor's `year_property_built` frequently contradicts them. Both are on the
 record; **neither gets quietly dropped.** Put the assessor's date in the
 `Built …` tag (it is the structured field the rest of the page is built from),
-put the photograph in the timeline, and name the disagreement plainly in the
-`.unknowns` block. Do not average them, pick a favourite, or write "about".
+put the photograph in the timeline, and name the disagreement plainly in
+`unknowns`, which renders on the line closing that timeline. Do not average
+them, pick a favourite, or write "about".
 Worked examples in this tree:
 
 | Page | Assessor | Photograph |
@@ -78,9 +110,13 @@ Worked examples in this tree:
 | 52 Mars, 56 Mars | 1900 | standing c. 1895 |
 | 328 Corbett | 1908 | standing April 1906 |
 | 349 Corbett | 1900 | under construction 1909 |
+| 70 Douglass | 2009 | standing in an early-1880s photograph |
+| 80 Ord | 1900 | occupied from 1884 |
+| 104–108 Ord | 1900 | 1885, and half of it 1908 |
+| 401 Castro | 1901 | 1883, per the landmark case report |
 
 Round years (1900, 1890) in the assessor roll are placeholders as often as
-they are facts — treat them as the weaker evidence, and say in `.unknowns`
+they are facts — treat them as the weaker evidence, and say in `unknowns`
 that the date has not been checked against a permit.
 
 ## Buildings here were moved
@@ -101,14 +137,54 @@ history on the surviving building's page or the street hub instead. Two
 examples found while seeding:
 
 - **110 Ord Street** — the Cassin cottage. Ord runs 7–91 today; no 110 exists.
-- **1200 Clayton Street** — the 1909 Stoddart building was replaced; the
-  address is now thirteen condominium parcels built in 1986.
+- **1200 Clayton Street** — the 1909 building was replaced; the address is now
+  thirteen condominium parcels, and EAS carries `1200 CLAYTON ST` with no
+  parcel number at all. It is the most documented corner in the newsletter's
+  whole archive — a 1906 contract, a 1909 permit by Rainey and Phillips, four
+  alterations, the Georgian Apartments, demolition before 1950, a filling
+  station of 1953 and the condominiums of 1985 — and **none of it can go on a
+  page.** Eight findings sit unresolved for it in
+  `research/findings/corbett-heights-neighbors/issues-2026-02-to-2026-07.json`.
 - **Anything on Falcon Street** — Falcon was expunged by the Market Street
   extension. Fred G. Horner's grocery and saloon at **2 Falcon Street** recurs
   in the record; its story belongs on the surviving buildings nearby
   (`danvers-street/56/`, `danvers-street/60/`) and the Danvers Street hub.
 - **2 Mars Street** — appears in a 1925 photograph, but no such address exists
-  in EAS today; Mars begins at 4.
+  in EAS today; Mars begins at 4. The site is the corner parcel 2654001, which
+  the city addresses **4465 17th Street**: the Belle-V Apartments of 1961, whose
+  build year on the roll matches the one the newsletter gives. The newsletter
+  itself hedges the corner as "2 (?) Mars or 4465 17th".
+- **The 3000 block of Market Street was Merritt Street.** Upper Market Street
+  was cut through in the 1920s and Merritt was eliminated; the north side of the
+  block, 3000 to 3094, carries the numbers that replaced it. Two pairs are
+  stated in the record: **2 Merritt is 3000–3002 Market** (the corner at Hattie,
+  built 1890) and **4 Merritt is 3004 Market** — except that no 3004 exists in
+  EAS, which runs 3000, 3006, 3008, 3012, so that one resolves to nothing.
+
+## Dated events go in `historical_record`; standing facts go on `building`
+
+Several pages in this tree once carried a `building_history` object instead —
+a dated `events` list plus scalars (`architect`, `contractor`, `first_owner`,
+`estimated_cost_usd`, `relocated_from`, `conflict`...) the flat
+`historical_record` shape can't hold. Issue #148 migrated all of them: the
+events are `historical_record` entries now, and the scalars are
+`building.architect`/`building.builder`/`building.first_owner`/
+`building.cost_usd`/`building.relocated_from`/`building.conflict` (with
+`architect_note`/`builder_note` riding beside the field they qualify — see
+`with_note` in `seed_pages.py`). Don't reintroduce `building_history`: a dated
+fact from a newsletter or context statement goes in `historical_record`, and a
+standing fact about the building goes on `building`, the same as everywhere
+else in the corpus.
+
+**`parcel` is the assessor's roll and nothing else.** These pages were written
+before the seeder was, and carried six keys under `parcel` that no other page
+in the corpus has and the renderer never read — the assessed values and sale
+date (they belong in `assessment`, which is what draws the value chart and the
+"Last sale" row), a spelled-out `construction_type` (the renderer maps
+`construction_type_code`), and `style`, `subdivision` and a rear unit's number.
+Those three are now `building.style`, `building.subdivision` and an
+`also_addressed` entry. A fact the assessor doesn't state doesn't go in
+`parcel`, however much it looks like parcel data.
 
 ## Contributed memoirs: take the building, leave the people
 

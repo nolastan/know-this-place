@@ -1,0 +1,128 @@
+{
+  "address": "1636 Armstrong Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/armstrong-avenue/1636/",
+  "apn": "5419005",
+  "block": "5419",
+  "lot": "005",
+  "eas_baseid": "378319",
+  "coordinates": {
+    "lat": 37.726894,
+    "lng": -122.392883
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 7496,
+    "building_area_sqft": 1270,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "M1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1636 ARMSTRONG           AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 52414,
+    "assessed_improvement_value": 45714
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201909101141",
+      "type": "new construction wood frame",
+      "status": "issued",
+      "filed": "2019-09-10",
+      "status_date": "2023-04-10",
+      "estimated_cost": 1200000,
+      "revised_cost": 1200000,
+      "description": "erect a 1 story, no basement, no dwelling religious/institutional bldg. type b",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200605020483",
+      "type": "demolitions",
+      "status": "expired",
+      "filed": "2006-05-02",
+      "status_date": "2013-03-12",
+      "description": "to demolish 2 stories, type 5, church building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200302288512",
+      "type": "new construction wood frame",
+      "status": "cancelled",
+      "filed": "2003-02-28",
+      "status_date": "2019-08-29",
+      "estimated_cost": 1600000,
+      "revised_cost": 1600000,
+      "description": "erect a 2 story church center.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8607012",
+      "type": "sign - erect",
+      "status": "complete",
+      "filed": "1986-06-13",
+      "status_date": "1987-03-23",
+      "estimated_cost": 600,
+      "description": "erect sign",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ARMSTRONG&street_type=AVE&address_number=1636",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5419005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5419&lot=005",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5419005",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "african-american-context-statement",
+      "name": "Christopher VerPlanck, Tim Kelley, Al Williams and San Francisco Planning Department staff, African American Citywide Historic Context Statement, San Francisco Planning Department, adopted February 21, 2024",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=0ab7d14a0fb2469d622481a42e9e19831f1e2cd9ec6724bc8d926606555b3dc4&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "African American Citywide Historic Context Statement, adopted 2024",
+      "retrieved": "2026-08-29"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2024",
+      "kind": "occupancy",
+      "description": "Little Bethany Baptist Church, one of the concentration of churches on and around the Third Street corridor in the Bayview.",
+      "source": "african-american-context-statement"
+    }
+  ]
+}

@@ -126,6 +126,20 @@
       "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
       "label": "North Beach Historic Context Statement, adopted 2022",
       "retrieved": "2026-08-22"
+    },
+    {
+      "id": "nps-nrhp-index",
+      "name": "National Park Service, National Register of Historic Places listed properties (NRHP locations map service)",
+      "query": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/0/query?where=NRIS_Refnum%3D%27100006073%27&outFields=NRIS_Refnum,RESNAME,Address,CertDate&f=json&returnGeometry=false",
+      "label": "National Register of Historic Places index, National Park Service",
+      "retrieved": "2026-09-18"
+    },
+    {
+      "id": "nrhp-100006073",
+      "name": "National Register of Historic Places nomination, Buon Gusto Sausage Factory (reference number 100006073), draft submitted to the California State Historical Resources Commission, 2020, California Office of Historic Preservation.",
+      "query": "https://web.archive.org/web/2024/https://ohp.parks.ca.gov/pages/1067/files/CA_San%20Francisco%20County_Buon%20Gusto%20Sausage%20Factory.pdf",
+      "label": "National Register of Historic Places nomination (draft), California Office of Historic Preservation",
+      "retrieved": "2026-09-18"
     }
   ],
   "historical_record": [
@@ -144,23 +158,51 @@
     {
       "date": "1982",
       "kind": "survey",
-      "description": "Recorded in the city's 1982 survey of North Beach, adopted by the Board of Supervisors in 1999, as a contributor to the Upper Dupont Street / Grant Avenue District. It is listed on the National Register of Historic Places (SG100006073).",
+      "description": "Recorded in the city's 1982 survey of North Beach, adopted by the Board of Supervisors in 1999, as a contributor to the Upper Dupont Street / Grant Avenue District.",
       "source": "north-beach-context-statement"
     },
     {
-      "date": "2018",
+      "date": "2021-02-05",
       "kind": "designation",
       "description": "Listed as National Register of Historic Places SG100006073 — Buon Gusto Sausage Factory.",
-      "source": "north-beach-context-statement"
+      "source": [
+        "nps-nrhp-index",
+        "north-beach-context-statement"
+      ]
     },
     {
       "date": "2019",
       "kind": "survey",
       "description": "Identified by the 2019 updated North Beach survey as appearing eligible for local landmark or California Register / National Register status — recorded as the Buon Gusto Sausage Factory.",
       "source": "north-beach-context-statement"
+    },
+    {
+      "date": "1948-09-07",
+      "kind": "construction",
+      "description": "The Buon Gusto Sausage Factory began production: an International-style industrial building designed by Martin J. Rist for Fred Casissa's Buon Gusto Sausage Company, built by H. E. Rahlmann with Ira S. Kessey as engineer for $150,000, with forty workers turning out 25,000 pounds of salami and sausage a week. It was the only purpose-built meat factory in North Beach, put up as the neighbourhood's other sausage makers were leaving it.",
+      "source": "nrhp-100006073"
+    },
+    {
+      "date": "1961-04-06",
+      "kind": "event",
+      "description": "The zoning administrator held up a permit for alterations, calling the plant an existing but illegal sausage factory on land not zoned for industry; production carried on regardless.",
+      "source": "nrhp-100006073"
+    },
+    {
+      "date": "1978",
+      "kind": "occupancy",
+      "description": "Buon Gusto stopped making salami here, the last sausage company in North Beach; the building then held offices, a warehouse and shops until 1992, and has stood empty since.",
+      "source": "nrhp-100006073"
     }
   ],
   "unknowns": [
-    "The city's survey gives 1926 as the construction date in its property-type chapter and lists the same building in Appendix C as designed by Martin Rist in 1946."
-  ]
+    "The city's survey gives 1926 as the construction date in its property-type chapter and lists the same building in Appendix C as designed by Martin Rist in 1946.",
+    "Accounts differ on when the factory was built — 1926, 1946 or 1948; production began here on 7 September 1948."
+  ],
+  "building": {
+    "name": "Buon Gusto Sausage Factory",
+    "architect": "Martin J. Rist",
+    "builder": "H. E. Rahlmann",
+    "completed": 1948
+  }
 }

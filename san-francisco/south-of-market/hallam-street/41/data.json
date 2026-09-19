@@ -1,0 +1,109 @@
+{
+  "address": "41 Hallam Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/hallam-street/41/",
+  "apn": "3755141",
+  "block": "3755",
+  "lot": "141",
+  "eas_baseid": "446715",
+  "coordinates": {
+    "lat": 37.775613,
+    "lng": -122.408144
+  },
+  "parcel": {
+    "year_built": 1989,
+    "units": 1,
+    "stories": 2,
+    "rooms": 3,
+    "bathrooms": 1,
+    "bedrooms": 1,
+    "lot_area_sqft": 1875,
+    "building_area_sqft": 762,
+    "lot_depth_ft": 75,
+    "use": "Single Family Residential",
+    "property_class": "Live/Work Condominium",
+    "construction_type_code": "D",
+    "zoning": "RED",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0041 HALLAM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 402000,
+    "assessed_improvement_value": 268000,
+    "last_sale_date": "2021-07-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1989",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "8810576",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1988-07-27",
+      "status_date": "1989-11-27",
+      "estimated_cost": 48000,
+      "description": "two story single family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HALLAM&street_type=ST&address_number=41",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3755141&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3755&lot=141",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3755141",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "modern-postmodern-styles-context-statement",
+      "name": "Hannah Lise Simonson, Page & Turnbull, for the San Francisco Planning Department, San Francisco Modern & Postmodern Architectural Styles (1960-2000) Historic Context Statement, Context: Architectural Methods & Styles, SF Survey Cultural Resources Survey, adopted August 21, 2024",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=12bf7fd7aa07e2b779e0afc717eb0d789b9ba378bf6e80f7f8a1ce30cdc8946f&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Modern & Postmodern Architectural Styles Historic Context Statement, adopted 2024",
+      "retrieved": "2026-08-31"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Modern & Postmodern Architectural Styles Historic Context Statement (2024)",
+      "source": "modern-postmodern-styles-context-statement",
+      "style": "Postmodernism",
+      "year_built_as_surveyed": "1990",
+      "architect_as_surveyed": "Donald MacDonald",
+      "note": "A Postmodern triplex by Donald MacDonald, built under the live/work ordinance and repeated four times along this small mid-block SoMa street."
+    }
+  ],
+  "building": {
+    "architect": "Donald MacDonald",
+    "completed_conflict": "The city's Modern & Postmodern styles context statement dates this building 1990; the assessor's roll records it as built 1989."
+  },
+  "unknowns": [
+    "The statement dates this triplex 1989-90 in one place and 1990 in another."
+  ]
+}

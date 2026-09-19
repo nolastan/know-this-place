@@ -1,0 +1,111 @@
+{
+  "address": "133 Commonwealth Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/commonwealth-avenue/133/",
+  "apn": "1063007",
+  "block": "1063",
+  "lot": "007",
+  "eas_baseid": "294083",
+  "coordinates": {
+    "lat": 37.783092,
+    "lng": -122.455996
+  },
+  "parcel": {
+    "year_built": 1914,
+    "units": 1,
+    "stories": 3,
+    "rooms": 8,
+    "bathrooms": 4,
+    "lot_area_sqft": 5998,
+    "building_area_sqft": 3142,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Jordan Park/Laurel Heights",
+    "analysis_neighborhood": "Presidio Heights",
+    "property_location_raw": "0000 0133 COMMONWEALTH        AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 88223,
+    "assessed_improvement_value": 107859
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1914",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Jordan Park Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1900–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "9203416",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-03-05",
+      "status_date": "1992-05-27",
+      "estimated_cost": 15000,
+      "description": "structural repairs only",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=COMMONWEALTH&street_type=AVE&address_number=133",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1063007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1063&lot=007",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1063007",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.45599593936763%2037.7830916430101)%27)",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "digitalsf-8472",
+      "name": "133 Commonwealth Avenue, 1911 to 1912. Willard E. Worden Glass Plate Negatives (SFP 22), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/8472",
+      "label": "Willard E. Worden Glass Plate Negatives (SFP 22), San Francisco Public Library",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1911 to 1912",
+      "kind": "photograph",
+      "description": "Willard E. Worden photographed the house.",
+      "source": "digitalsf-8472"
+    }
+  ]
+}

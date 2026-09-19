@@ -1,0 +1,124 @@
+{
+  "address": "6210 Geary Boulevard, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/geary-boulevard/6210/",
+  "apn": "1458078",
+  "block": "1458",
+  "lot": "078",
+  "eas_baseid": "468309",
+  "coordinates": {
+    "lat": 37.780328,
+    "lng": -122.486339
+  },
+  "parcel": {
+    "year_built": 1965,
+    "stories": 1,
+    "bathrooms": 3,
+    "lot_area_sqft": 13833,
+    "building_area_sqft": 16586,
+    "basement_area_sqft": 8797,
+    "lot_frontage_ft": 38.33,
+    "use": "Commercial Misc",
+    "property_class": "Churches,Convents,Rectories",
+    "construction_type_code": "C",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "6222 6210 GEARY               BL0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 429022,
+    "assessed_improvement_value": 1838878
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Resource Evaluation Response, Historic Survey Result",
+    "yearbuilt": "1965",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202407035735",
+      "type": "additions alterations or repairs",
+      "status": "approved",
+      "filed": "2024-07-08",
+      "status_date": "2024-09-06",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa# 202211096151. pid permit for review of storm water management plan by pid only for new building under ref pa# 201912099041.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202211096151",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2022-11-09",
+      "status_date": "2023-03-03",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "stormwater management review. ref pa#201912099041-s",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201912099041",
+      "type": "new construction",
+      "status": "issued",
+      "filed": "2019-12-09",
+      "status_date": "2023-03-10",
+      "estimated_cost": 1250000,
+      "revised_cost": 1250000,
+      "description": "erect a parking garage detached structure for church use only. one story excavation below grade for parking garage. on rooftop of parking garage, build a open parking level.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GEARY&street_type=BLVD&address_number=6210",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1458078&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1458&lot=078",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1458078",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "russian-american-context-statement",
+      "name": "Nina Bogdan, Russian American Historic Context Statement, San Francisco Planning Department, adopted by the Historic Preservation Commission October 15, 2025",
+      "query": "https://sfplanning.org/node/3132",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "retrieved": "2026-08-30"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1961-06-25",
+      "kind": "construction",
+      "description": "Construction of the Holy Virgin Joy of All Who Sorrow Cathedral began on 25 June 1961 to the design of émigré architect Oleg Ivanitsky. The five-domed exterior was largely complete in 1964; interior frescoes were painted between 1968 and 1974 by Archimandrite Kiprian of Jordanville Monastery with four assistants from the local Russian community, and he also designed the iconostasis. The exterior was repainted red and white in 2015 to a scheme by Andrew Gould.",
+      "source": "russian-american-context-statement"
+    },
+    {
+      "date": "1994",
+      "kind": "occupancy",
+      "description": "St. John of San Francisco Orthodox Academy, a K–12 college-preparatory school, was established here in 1994.",
+      "source": "russian-american-context-statement"
+    }
+  ]
+}

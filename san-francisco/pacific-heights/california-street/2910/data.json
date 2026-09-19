@@ -1,0 +1,121 @@
+{
+  "address": "2910 California Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/california-street/2910/",
+  "apn": "1024030",
+  "block": "1024",
+  "lot": "030",
+  "eas_baseid": "293138",
+  "coordinates": {
+    "lat": 37.788081,
+    "lng": -122.442705
+  },
+  "parcel": {
+    "year_built": 1988,
+    "units": 5,
+    "stories": 2,
+    "rooms": 17,
+    "bedrooms": 5,
+    "lot_area_sqft": 3314.75,
+    "building_area_sqft": 4166,
+    "lot_depth_ft": 32.59,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "0000 2910 CALIFORNIA          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1966356,
+    "assessed_improvement_value": 842724
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1988",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200508059600",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-08-05",
+      "status_date": "2010-01-20",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "repair leeks and dry rot in front architectural wall & terrace about 50 sq ft area",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8608387",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1986-07-15",
+      "status_date": "1987-11-16",
+      "estimated_cost": 347500,
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "1986–2010",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CALIFORNIA&street_type=ST&address_number=2910",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1024030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1024&lot=030",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1024030",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "modern-postmodern-styles-context-statement",
+      "name": "Hannah Lise Simonson, Page & Turnbull, for the San Francisco Planning Department, San Francisco Modern & Postmodern Architectural Styles (1960-2000) Historic Context Statement, Context: Architectural Methods & Styles, SF Survey Cultural Resources Survey, adopted August 21, 2024",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=12bf7fd7aa07e2b779e0afc717eb0d789b9ba378bf6e80f7f8a1ce30cdc8946f&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Modern & Postmodern Architectural Styles Historic Context Statement, adopted 2024",
+      "retrieved": "2026-08-31"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Modern & Postmodern Architectural Styles Historic Context Statement (2024)",
+      "source": "modern-postmodern-styles-context-statement",
+      "style": "Postmodernism",
+      "year_built_as_surveyed": "1989",
+      "architect_as_surveyed": "Kotas/Pantaleoni",
+      "note": "Cottage Row by Kotas/Pantaleoni, which uses playful vernacular references to Victorian-era cottages to make several distinct units on a small urban site."
+    }
+  ],
+  "building": {
+    "name": "Cottage Row",
+    "architect": "Kotas/Pantaleoni",
+    "completed_conflict": "The city's Modern & Postmodern styles context statement dates this building 1989; the assessor's roll records it as built 1988."
+  }
+}

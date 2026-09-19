@@ -1,0 +1,103 @@
+{
+  "address": "2050 Judah Street, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/judah-street/2050/",
+  "apn": "1780025",
+  "block": "1780",
+  "lot": "025",
+  "eas_baseid": "317234",
+  "coordinates": {
+    "lat": 37.761583,
+    "lng": -122.484338
+  },
+  "parcel": {
+    "year_built": 1955,
+    "units": 2,
+    "stories": 1,
+    "rooms": 17,
+    "bathrooms": 2,
+    "lot_area_sqft": 2099,
+    "building_area_sqft": 2020,
+    "use": "Commercial Office",
+    "property_class": "Office",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2050 JUDAH               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1058312,
+    "assessed_improvement_value": 705539,
+    "last_sale_date": "2015-11-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1955",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201606230674",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-06-23",
+      "status_date": "2017-08-04",
+      "estimated_cost": 175000,
+      "revised_cost": 175000,
+      "description": "ineterior renovation of (e) dental office. new ada compliant access ramp on southern elevation of building. new ada compliant bathrooms. design/build mechanical system under this permit. remodel of south elevation with windows and cladding to match extg.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JUDAH&street_type=ST&address_number=2050",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1780025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1780&lot=025",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1780025",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "modern-architecture-context-statement",
+      "name": "Mary Brown, San Francisco Planning Department, San Francisco Modern Architecture and Landscape Design 1935-1970 Historic Context Statement, adopted 12 January 2011",
+      "query": "http://sfplanninggis.org/docs/Historical_Context_Statements/Modern%20Architecture%20Context%20adopted%20Jan%202011.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Modern Architecture and Landscape Design Context Statement, adopted 2011",
+      "retrieved": "2026-09-01"
+    }
+  ],
+  "building": {
+    "architect": "Hertzka & Knowles",
+    "completed": 1955
+  },
+  "historical_record": [
+    {
+      "date": "1955",
+      "kind": "construction",
+      "description": "An office building of 1955 by Hertzka & Knowles.",
+      "source": "modern-architecture-context-statement"
+    }
+  ]
+}

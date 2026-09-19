@@ -1,0 +1,100 @@
+{
+  "address": "111 Raymond Avenue, San Francisco, CA 94134",
+  "path": "/san-francisco/visitacion-valley/raymond-avenue/111/",
+  "apn": "6247041",
+  "block": "6247",
+  "lot": "041",
+  "eas_baseid": "394460",
+  "coordinates": {
+    "lat": 37.712498,
+    "lng": -122.405669
+  },
+  "parcel": {
+    "year_built": 1922,
+    "stories": 2,
+    "rooms": 3,
+    "bathrooms": 2,
+    "lot_area_sqft": 4996,
+    "building_area_sqft": 5175,
+    "use": "Commercial Misc",
+    "property_class": "Clubs,Lodges,Fraternal Organizations",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Visitacion Valley",
+    "analysis_neighborhood": "Visitacion Valley",
+    "property_location_raw": "0000 0111 RAYMOND             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 86610,
+    "assessed_improvement_value": 51952
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9810578",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-06-10",
+      "status_date": "1999-03-04",
+      "estimated_cost": 10400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=RAYMOND&street_type=AVE&address_number=111",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6247041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6247&lot=041",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6247041",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "african-american-context-statement",
+      "name": "Christopher VerPlanck, Tim Kelley, Al Williams and San Francisco Planning Department staff, African American Citywide Historic Context Statement, San Francisco Planning Department, adopted February 21, 2024",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=0ab7d14a0fb2469d622481a42e9e19831f1e2cd9ec6724bc8d926606555b3dc4&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "African American Citywide Historic Context Statement, adopted 2024",
+      "retrieved": "2026-08-29"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926",
+      "kind": "construction",
+      "description": "Built in 1926 and used as the Shriners' Thutmose Temple No. 74; a recent listing gives it as the meeting place of Victoria Lodge No. 3, the African American masonic lodge.",
+      "source": "african-american-context-statement"
+    }
+  ],
+  "building": {
+    "completed": 1926,
+    "completed_conflict": "The city's African American context statement dates the building to 1926; the assessor's roll gives 1922."
+  }
+}

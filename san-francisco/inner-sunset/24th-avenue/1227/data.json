@@ -1,0 +1,182 @@
+{
+  "address": "1227 24th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/24th-avenue/1227/",
+  "apn": "1726004",
+  "block": "1726",
+  "lot": "004",
+  "eas_baseid": "315240",
+  "coordinates": {
+    "lat": 37.764621,
+    "lng": -122.482903
+  },
+  "parcel": {
+    "year_built": 1908,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 822,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1227 24TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 624688,
+    "assessed_improvement_value": 156171,
+    "last_sale_date": "2018-08-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Individual Landmark",
+    "yearbuilt": "1908",
+    "survey_name": "REFUGEE SHACK",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202209202753",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-09-20",
+      "status_date": "2022-09-20",
+      "estimated_cost": 8000,
+      "revised_cost": 10000,
+      "description": "put new tile and new vanity in (e) bathroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202208301571",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-08-30",
+      "status_date": "2022-09-09",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202008242466",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-08-24",
+      "status_date": "2020-08-24",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "change bathroom floor pui in new tile new vanity",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202008242467",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-08-24",
+      "status_date": "2020-08-24",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace 5 broken and inoperable wood windows at rear and side of property replace with operable, not broken replicas like for like replacement with wood replicas",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202008192084",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-08-19",
+      "status_date": "2020-08-19",
+      "estimated_cost": 11500,
+      "revised_cost": 11500,
+      "description": "one unit: removal of old kitchen cainets & counters. installation of replacement cabinets & counters, appliances and fixtures.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201811095506",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-11-09",
+      "status_date": "2018-11-09",
+      "revised_cost": 300,
+      "description": "investigate demo permit needed to determine structural work needed to repair roof and walls. all work in one room (middle room) @ the front house repatch after investigation.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201811095527",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-11-09",
+      "status_date": "2018-11-09",
+      "estimated_cost": 300,
+      "revised_cost": 300,
+      "description": "investigative demo of approx 6 sq ft total at wall and ceiling to determine structural work required to repair roof and walls, will repatch after investigation. it is a single room structure, demo will only happen in main room. patch back to original",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8401976",
+      "type": "demolitions",
+      "status": "cancelled",
+      "filed": "1984-02-27",
+      "status_date": "1984-11-26",
+      "description": "demolition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8401977",
+      "type": "demolitions",
+      "status": "cancelled",
+      "filed": "1984-02-27",
+      "status_date": "1984-11-26",
+      "description": "demolition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=AVE&address_number=1227",
+      "retrieved": "2026-08-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1726004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1726&lot=004",
+      "retrieved": "2026-08-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1726004",
+      "retrieved": "2026-08-27"
+    },
+    {
+      "id": "earthquake-shacks-theme-document",
+      "name": "San Francisco Planning Department (Melanie Bishop), Earthquake Shacks Theme Document, adopted November 17, 2021",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=2fe3a3f72802df35d361d40f98655118df9cad6b56e83c7a9851e6a776647236&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Earthquake Shacks Theme Document, adopted 2021",
+      "retrieved": "2026-08-27"
+    }
+  ],
+  "hook": "Three Type A refugee shacks and a Type B, combined into one house and designated a city landmark.",
+  "historic_survey": {
+    "survey": "Earthquake Shacks Theme Document (2021)",
+    "source": "earthquake-shacks-theme-document",
+    "finding": "Designated San Francisco Landmark No. 171 as a combination of three Type A earthquake relief shacks with a free-standing Type B shack"
+  }
+}

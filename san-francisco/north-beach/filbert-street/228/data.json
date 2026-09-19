@@ -1,0 +1,157 @@
+{
+  "address": "228 Filbert Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/filbert-street/228/",
+  "apn": "0085039",
+  "block": "0085",
+  "lot": "039",
+  "eas_baseid": "276903",
+  "coordinates": {
+    "lat": 37.802207,
+    "lng": -122.404114
+  },
+  "parcel": {
+    "year_built": 1895,
+    "units": 2,
+    "stories": 3,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 1930.6,
+    "building_area_sqft": 1525,
+    "lot_depth_ft": 70,
+    "use": "Multi-Family Residential",
+    "property_class": "Dwellings - Apt 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Telegraph Hill",
+    "analysis_neighborhood": "North Beach",
+    "property_location_raw": "0228A0228 FILBERT             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 106709,
+    "assessed_improvement_value": 45245
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1895",
+    "survey_name": "PHILIP BROWN HOUSE",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Telegraph Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200503046765",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-03-04",
+      "status_date": "2005-03-21",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to establish record of bldg as a two (2) units structure on 3(3) floors of occupancy this use has",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M31456",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-03-04",
+      "status_date": "2005-03-04",
+      "revised_cost": 0,
+      "description": "house number permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9315230",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-09-08",
+      "status_date": "1994-06-24",
+      "estimated_cost": 40000,
+      "description": "repair failed retaining wall & new found. to exist. build.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9215602",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1992-09-10",
+      "status_date": "1993-11-25",
+      "estimated_cost": 12000,
+      "revised_cost": 40000,
+      "description": "stabilize north east corner of residence at rearyard",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8716445",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-11-16",
+      "status_date": "1988-04-25",
+      "estimated_cost": 100,
+      "description": "replacing 1-6ft by 4 1/2 in board on trap door.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FILBERT&street_type=ST&address_number=228",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0085039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0085&lot=039",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0085039",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40411398508516%2037.80220706803173)%27)",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "early-settlement-era-styles-context-statement",
+      "name": "San Francisco Planning Department (Branden Gunn and Alex Westhoff), Early Settlement Era Styles (1848-1906) Historic Context Statement, Context: Architectural Methods & Styles, SF Survey Cultural Resources Survey, March 19, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=76d410415bb783f87a77ec44eeeafee1a658bc4e68e2cab5fe5abf1273e1ad25&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Early Settlement Era Styles Historic Context Statement, adopted 2025",
+      "retrieved": "2026-08-31"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Early Settlement Era Styles Historic Context Statement (2025)",
+    "source": "early-settlement-era-styles-context-statement",
+    "style": "Carpenter Gothic",
+    "year_built_as_surveyed": "c. 1869",
+    "note": "Named as an intact example of a Carpenter Gothic home in the Telegraph Hill Historic District, the Article 10 district holding the city's largest concentration of pre-1870 residential buildings."
+  },
+  "unknowns": [
+    "The city's statement on early settlement era styles dates this house to about 1869; the assessor's roll gives 1895."
+  ]
+}

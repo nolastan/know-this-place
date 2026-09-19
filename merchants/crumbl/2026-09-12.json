@@ -1,0 +1,62 @@
+{
+  "source_id": "crumbl",
+  "batch": "2026-09-12",
+  "read_on": "2026-09-12",
+  "notes": "Crumbl's San Francisco store, named in issue #279, read from the store's own page on 2026-09-12. Crumbl groups its stores by metropolitan area: https://crumblcookies.com/stores/ca/san-francisco-area links four, and only Lakeshore is in the city — Berkeley, Foster City and Walnut Creek are the other three. The sitemap's 306 store pages name no other San Francisco store; the 66 in California are filed under seven areas and the city appears in one of them. The store page carries a schema.org Bakery/LocalBusiness block with the address, the coordinates and the opening hours, and two fetches on 2026-09-12 agreed on all of it. Its `aggregateRating` and `priceRange` describe the merchant rather than the building and stay off the page. Crumbl publishes no Sunday hours, which the renderer prints as closed. The issue's referral link is a cmbl.co short link that redirects to an AppsFlyer OneLink opening the Crumbl app at the invite, so it reaches neither this store nor a web page, and its REFERRALS row carries a note saying so. The issue states the referrer's side of the offer — five loyalty Crumbs once the invited person first buys — and neither Crumbl's rewards page nor its terms state anything the invited person gets beyond membership, so the button says what is published: joining Crumbl Rewards earns Crumbs on every order (10 per dollar at the default Bronze status). One REFERRALS row, `crumbl`, for the one store.",
+  "coverage": {
+    "unit": "store locations",
+    "examined": 306,
+    "mentions": 1,
+    "remaining": "None. Crumbl lists one store in San Francisco; the other three in its 'San Francisco area' are in Berkeley, Foster City and Walnut Creek."
+  },
+  "findings": [
+    {
+      "id": "2026-09-12-0001",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1567 Sloat Blvd",
+      "street_number": "1567",
+      "street_name": "SLOAT",
+      "street_type": "BLVD",
+      "description": "Crumbl lists a store at this address.",
+      "extra": {
+        "name": "Crumbl",
+        "name_as_listed": "Crumbl Cookies – Lakeshore, San Francisco",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94132",
+        "cuisines": [
+          "Desserts",
+          "Cookies"
+        ],
+        "opening_hours": [
+          "Mo,Tu,We,Th 08:00-22:00",
+          "Fr,Sa 08:00-23:00"
+        ],
+        "geo": [
+          37.7332343,
+          -122.4911908
+        ]
+      },
+      "citation": {
+        "label": "Crumbl, Lakeshore (San Francisco) store page",
+        "url": "https://crumblcookies.com/stores/ca/san-francisco-area/calakeshore",
+        "locator": "the page's schema.org Bakery block, its PostalAddress and openingHoursSpecification"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "7255002",
+        "path": "/san-francisco/sunset-parkside/sloat-boulevard/1507/",
+        "eas_address": "1507 SLOAT BLVD",
+        "method": "EAS exact match on 1567 SLOAT BLVD → parcel 7255002; sf-parcels has blklot 7255002 active, 1515–1559 SLOAT; the 2025 roll records it as commercial retail, built 1992. EAS puts 1507, 1509, 1511, 1515, 1523, 1525, 1527, 1537, 1541, 1545, 1549, 1557, 1559, 1563, 1567, 1581, 1585, 1595, 1597 SLOAT BLVD on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1507.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/331",
+        "note": "An `occupants` entry on /san-francisco/sunset-parkside/sloat-boulevard/1507/, the page for the parcel the store's number sits on; the page already carried a Bites entry, so the panel lists two businesses and two offers."
+      }
+    }
+  ]
+}

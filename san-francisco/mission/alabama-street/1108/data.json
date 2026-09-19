@@ -1,70 +1,89 @@
 {
-  "address": "1108 Alabama Street, San Francisco, CA 94110",
-  "path": "/san-francisco/mission/alabama-street/1108/",
-  "apn": "4206003",
-  "block": "4206",
-  "lot": "003",
-  "eas_baseid": "370048",
-  "coordinates": {
-    "lat": 37.753859,
-    "lng": -122.411353
+ "address": "1108 Alabama Street, San Francisco, CA 94110",
+ "path": "/san-francisco/mission/alabama-street/1108/",
+ "apn": "4206003",
+ "block": "4206",
+ "lot": "003",
+ "eas_baseid": "370048",
+ "coordinates": {
+  "lat": 37.753859,
+  "lng": -122.411353
+ },
+ "parcel": {
+  "year_built": 1900,
+  "units": 1,
+  "stories": 1,
+  "rooms": 7,
+  "bathrooms": 2,
+  "lot_area_sqft": 2596,
+  "building_area_sqft": 1295,
+  "use": "Single Family Residential",
+  "property_class": "Dwelling",
+  "construction_type_code": "D",
+  "zoning": "RH-2",
+  "supervisor_district": 9,
+  "assessor_neighborhood": "Inner Mission",
+  "analysis_neighborhood": "Mission",
+  "property_location_raw": "0000 1108 ALABAMA             ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 88799,
+  "assessed_improvement_value": 95456
+ },
+ "historic_status": {
+  "ceqa_status_code": "A",
+  "ceqa_status_code_article_10_11": "A",
+  "ceqa_status_label": "Historic resource",
+  "reason": "Historic Survey Result",
+  "yearbuilt": "1900",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "permits": [],
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALABAMA&street_type=ST&address_number=1108",
+   "retrieved": "2026-07-31"
   },
-  "parcel": {
-    "year_built": 1900,
-    "units": 1,
-    "stories": 1,
-    "rooms": 7,
-    "bathrooms": 2,
-    "lot_area_sqft": 2596,
-    "building_area_sqft": 1295,
-    "use": "Single Family Residential",
-    "property_class": "Dwelling",
-    "construction_type_code": "D",
-    "zoning": "RH-2",
-    "supervisor_district": 9,
-    "assessor_neighborhood": "Inner Mission",
-    "analysis_neighborhood": "Mission",
-    "property_location_raw": "0000 1108 ALABAMA             ST0000"
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4206003&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-07-31"
   },
-  "assessment": {
-    "roll_year": 2025,
-    "assessed_land_value": 88799,
-    "assessed_improvement_value": 95456
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4206&lot=003",
+   "retrieved": "2026-07-31"
   },
-  "historic_status": {
-    "ceqa_status_code": "A",
-    "ceqa_status_code_article_10_11": "A",
-    "ceqa_status_label": "Historic resource",
-    "reason": "Historic Survey Result",
-    "yearbuilt": "1900",
-    "in_article_10_11_historic_district": false,
-    "source": "sf-planning"
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4206003",
+   "retrieved": "2026-07-31"
   },
-  "permits": [],
-  "sources": [
-    {
-      "id": "sf-eas-addresses",
-      "name": "SF Enterprise Addressing System via DataSF",
-      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALABAMA&street_type=ST&address_number=1108",
-      "retrieved": "2026-07-31"
-    },
-    {
-      "id": "sf-assessor-roll",
-      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
-      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4206003&$order=closed_roll_year%20DESC&$limit=1",
-      "retrieved": "2026-07-31"
-    },
-    {
-      "id": "sf-building-permits",
-      "name": "SF Dept. of Building Inspection via DataSF",
-      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4206&lot=003",
-      "retrieved": "2026-07-31"
-    },
-    {
-      "id": "sf-planning",
-      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
-      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4206003",
-      "retrieved": "2026-07-31"
-    }
-  ]
+  {
+   "id": "early-residential-theme-study",
+   "name": "ICF for the San Francisco Planning Department, Theme Study: Early Residential Development in San Francisco, 1848–1899, Context: Residential (1848-1989), Subcontext: Single-Family, adopted September 3, 2025",
+   "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=647bf691ec66d716eeec9729114a47062fc8e1147efa8ea10f88037f2e3e883b&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "label": "Theme Study: Early Residential Development in San Francisco, 1848–1899, adopted 2025",
+   "retrieved": "2026-08-31"
+  }
+ ],
+ "historic_survey": {
+  "survey": "Theme Study: Early Residential Development in San Francisco, 1848–1899 (2025)",
+  "source": "early-residential-theme-study",
+  "style": "Gothic Revival",
+  "year_built_as_surveyed": "c. 1865",
+  "finding": "Could be considered significant under Criterion C/3, given the rarity of Gothic Revival residences",
+  "note": "Modest in scale, with vinyl replacement windows at the front. A gabled ancillary building at the rear of the lot went up at the same time as the house."
+ },
+ "building": {
+  "completed_conflict": "Dated to circa 1865; the assessor's roll records the parcel as built 1900."
+ }
 }

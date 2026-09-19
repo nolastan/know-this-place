@@ -1,0 +1,113 @@
+{
+  "address": "3365 19th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/19th-street/3365/",
+  "apn": "3595032A",
+  "block": "3595",
+  "lot": "032A",
+  "eas_baseid": "361431",
+  "coordinates": {
+    "lat": 37.760109,
+    "lng": -122.418325
+  },
+  "parcel": {
+    "year_built": 1914,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "lot_area_sqft": 4547,
+    "building_area_sqft": 6840,
+    "use": "Commercial Misc",
+    "property_class": "Churches,Convents,Rectories",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 3365 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 904101,
+    "assessed_improvement_value": 1318486,
+    "last_sale_date": "2000-11-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1914",
+    "survey_name": "EMANUEL CHURCH/RUSSIAN CONVENT",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9307896",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-05-11",
+      "status_date": "1993-11-30",
+      "estimated_cost": 8800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9012125",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-06-20",
+      "status_date": "1990-07-18",
+      "estimated_cost": 3700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1990–2009",
+    "shown_on_page": 2,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=3365",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3595032A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3595&lot=032A",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3595032A",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "russian-american-context-statement",
+      "name": "Nina Bogdan, Russian American Historic Context Statement, San Francisco Planning Department, adopted by the Historic Preservation Commission October 15, 2025",
+      "query": "https://sfplanning.org/node/3132",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "retrieved": "2026-08-30"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1955",
+      "kind": "occupancy",
+      "description": "The main convent of Our Lady of Vladimir moved into this building in 1955; it had been the Emanuel Church of the Evangelical Association, by the architects Falch and Knoll. Services continued here until the property was sold in 2000.",
+      "source": "russian-american-context-statement"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "address": "301 Capistrano Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/outer-mission/capistrano-avenue/301/",
+  "apn": "3146016",
+  "block": "3146",
+  "lot": "016",
+  "eas_baseid": "355202",
+  "coordinates": {
+    "lat": 37.72654,
+    "lng": -122.437869
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 3410,
+    "building_area_sqft": 1458,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Mission Terrace",
+    "analysis_neighborhood": "Outer Mission",
+    "property_location_raw": "0000 0301 CAPISTRANO          AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 254937,
+    "assessed_improvement_value": 176753,
+    "last_sale_date": "1993-09-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9703307",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-02-24",
+      "status_date": "1997-06-24",
+      "estimated_cost": 800,
+      "description": "fix cement of driveway about 16 ft x 8 ft inside prop line",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8716809",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-11-23",
+      "status_date": "1988-06-20",
+      "estimated_cost": 12800,
+      "description": "add bedrm & playrm @ bsmnt, remodel exist bathrm",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPISTRANO&street_type=AVE&address_number=301",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3146016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3146&lot=016",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3146016",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "digitalsf-33440",
+      "name": "301 Capistrano Avenue, 1928. San Francisco Subjects Photograph Collection (SFP 162), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/33440",
+      "label": "San Francisco Subjects Photograph Collection (SFP 162), San Francisco Public Library",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1928",
+      "kind": "photograph",
+      "description": "Photographed.",
+      "source": "digitalsf-33440"
+    }
+  ]
+}

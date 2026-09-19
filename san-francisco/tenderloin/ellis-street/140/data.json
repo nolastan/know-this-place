@@ -10,10 +10,6 @@
     "lng": -122.408504
   },
   "building_type": "commercial",
-  "aliases": [
-    "124 Ellis Street",
-    "138 Cyril Magnin Street"
-  ],
   "parcel": {
     "year_built": 1908,
     "use": "Commercial Hotel",
@@ -28,7 +24,7 @@
     "supervisor_district": 3,
     "assessor_neighborhood": "Union Square",
     "analysis_neighborhood": "Tenderloin",
-    "assessor_property_location": "0140 ELLIS ST",
+    "property_location_raw": "0000 0140 ELLIS               ST0000",
     "note": "Business addresses are usually deferred on this site; this page exists because the prompting source locates its subject on this parcel. The parcel is a corner one and the datasets disagree about which frontage names it: the assessor's property_location says 140 Ellis Street, SF Parcels and SF Planning both say 138 Cyril Magnin Street, and EAS carries 124 Ellis, 140 Ellis and 138 Cyril Magnin. The page follows the assessor and the street the prompting source names; DBI files permits under 124 and 140 Ellis and 120, 138 and 150 Cyril Magnin."
   },
   "assessment": {
@@ -36,18 +32,12 @@
     "assessed_land_value": 3828309,
     "assessed_improvement_value": 6301894
   },
-  "present_use": {
-    "name": "Hotel Fusion",
-    "note": "The hotel names 140 Ellis Street as its address, which is what ties the 1855 house the prompting source describes to this parcel.",
-    "source": "hotel-fusion-site"
-  },
   "historic_status": {
     "ceqa_status_code": "A",
     "ceqa_status_code_article_10_11": "A*",
     "ceqa_status_label": "Historical resource; within an Article 11 conservation district",
     "reason": "Article 11 Conservation District",
-    "planning_year_built": 1908,
-    "designated_landmark": false,
+    "yearbuilt": 1908,
     "in_article_10_11_historic_district": true,
     "source": "sf-planning"
   },
@@ -87,7 +77,8 @@
       "filed": "2012-12-12",
       "estimated_cost": 1200000,
       "description": "An interior remodel of 17,315 sq ft across the first basement and first floor, changing the use to include new assembly space.",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "An interior remodel of 17,315 sq ft across the first basement and first floor, changing the use to include new assembly space."
     },
     {
       "number": "201009291867",
@@ -105,7 +96,8 @@
       "filed": "2006-09-22",
       "estimated_cost": 463000,
       "description": "A new entrance on Ellis Street and a new sidewalk, a new stair from the ground floor to the basement, and a change of occupancy, with new walls, kitchen, restrooms and HVAC.",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "A new entrance on Ellis Street and a new sidewalk, a new stair from the ground floor to the basement, and a change of occupancy, with new walls, kitchen, restrooms and HVAC."
     },
     {
       "number": "200111163350",
@@ -139,6 +131,12 @@
       "summary": "Kittredge house built",
       "description": "Jonathan Kittredge, owner of the Phoenix Iron Works, built a two-and-a-half-storey gabled Carpenter Gothic house on the north side of Ellis Street between Powell and Mason for his Christmas Eve marriage. The homestead included an artesian well, a small backyard orchard and a cow.",
       "source": "argonaut-vol30-no2-winter2020-field"
+    },
+    {
+      "date": "1966-03",
+      "kind": "photograph",
+      "description": "The Redevelopment Agency photographed the property, then the Hotel Gates.",
+      "source": "digitalsf-3610"
     }
   ],
   "sources": [
@@ -188,6 +186,40 @@
       "id": "argonaut-vol30-no2-winter2020-field",
       "name": "Peter M. Field, “A Tenderloin District History: The Pioneers of St. Ann's Valley: 1847–1860,” The Argonaut: Journal of the San Francisco Historical Society, vol. 30, no. 2 (Winter 2020), pp. 42–83",
       "retrieved": "2026-08-11"
+    },
+    {
+      "id": "umb-survey-1990",
+      "name": "San Francisco Landmarks Preservation Advisory Board — A Context Statement and Architectural/Historical Survey of Unreinforced Masonry Building (U.M.B.) Construction in San Francisco from 1850 to 1940, San Francisco Department of City Planning, November 1990",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=de4ab5d53839bb7c49ab1a2e10876d4a39e7dbacc6eccc90508e51012b8f4456&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Unreinforced Masonry Building Survey, 1990",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "digitalsf-3610",
+      "name": "140 Ellis Street, 1966. San Francisco Redevelopment Agency Records (SFH 371), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/3610",
+      "label": "Redevelopment Agency Records (SFH 371), San Francisco Public Library",
+      "retrieved": "2026-09-02"
     }
-  ]
+  ],
+  "historic_survey": {
+    "survey": "Unreinforced Masonry Building Survey (1990)",
+    "frame": "Unreinforced masonry",
+    "heritage_rating": "D — of no particular importance",
+    "address_as_surveyed": "124 Ellis Street",
+    "note": "From the survey's appendix table of unreinforced masonry buildings and their historic ratings, study area 4 (NoMa/Civic Center).",
+    "source": "umb-survey-1990"
+  },
+  "sub_area": "Union Square, Tenderloin",
+  "also_addressed": [
+    "124 Ellis Street",
+    "138 Cyril Magnin Street"
+  ],
+  "building": {
+    "name": "Hotel Fusion",
+    "sources": [
+      "hotel-fusion-site"
+    ]
+  }
 }

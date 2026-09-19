@@ -1,0 +1,137 @@
+{
+  "address": "234 Ottawa Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/outer-mission/ottawa-avenue/234/",
+  "apn": "7040B003",
+  "block": "7040B",
+  "lot": "003",
+  "eas_baseid": "412945",
+  "coordinates": {
+    "lat": 37.716851,
+    "lng": -122.447406
+  },
+  "parcel": {
+    "year_built": 1940,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2343,
+    "building_area_sqft": 1430,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Outer Mission",
+    "analysis_neighborhood": "Outer Mission",
+    "property_location_raw": "0000 0234 OTTAWA              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 881280,
+    "assessed_improvement_value": 220320,
+    "last_sale_date": "2023-08-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1940",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202404119813",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-04-11",
+      "status_date": "2024-08-29",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "rev to pa# 2023-0907-6084: 2nd fl. reconfiure kitchen layout, 1st fl. add 2 burner stove and hood",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202309076084",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-09-07",
+      "status_date": "2024-08-29",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "1st floor: add 2 bed room, 1 full bath a nd media room with wetbar. 2nd floor: add 1 new bedroom and relocate kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201404244088",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-04-24",
+      "status_date": "2014-10-02",
+      "estimated_cost": 1651,
+      "revised_cost": 1651,
+      "description": "replace 1 living room window with fibrex window in kind.window faces street, w/temp glass 0x0 (3pnl) slider",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201108031672",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-08-03",
+      "status_date": "2013-04-15",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "repair area of minor damage to west side planter and side wall. 1 damage at stair abuttment 1 vehicular damage trash",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=OTTAWA&street_type=AVE&address_number=234",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7040B003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7040B&lot=003",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7040B003",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "modern-architecture-context-statement",
+      "name": "Mary Brown, San Francisco Planning Department, San Francisco Modern Architecture and Landscape Design 1935-1970 Historic Context Statement, adopted 12 January 2011",
+      "query": "http://sfplanninggis.org/docs/Historical_Context_Statements/Modern%20Architecture%20Context%20adopted%20Jan%202011.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Modern Architecture and Landscape Design Context Statement, adopted 2011",
+      "retrieved": "2026-09-01"
+    }
+  ],
+  "building": {
+    "architect": "N.W. Mohr",
+    "builder": "Hansen Homes",
+    "completed": 1940
+  },
+  "historical_record": [
+    {
+      "date": "1940",
+      "kind": "construction",
+      "description": "Built 1940 to a design by N.W. Mohr for Hansen Homes, in the Streamline Moderne tract development at Cayuga Terrace, where the style is unusually dominant.",
+      "source": "modern-architecture-context-statement"
+    }
+  ]
+}

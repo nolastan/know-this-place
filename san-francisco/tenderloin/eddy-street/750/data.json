@@ -1,0 +1,82 @@
+{
+  "address": "750 Eddy Street, San Francisco, CA 94109",
+  "path": "/san-francisco/tenderloin/eddy-street/750/",
+  "apn": "0739004",
+  "block": "0739",
+  "lot": "004",
+  "eas_baseid": "288078",
+  "coordinates": {
+    "lat": 37.783112,
+    "lng": -122.42002
+  },
+  "parcel": {
+    "year_built": 1900,
+    "lot_area_sqft": 16496,
+    "use": "Commercial Retail",
+    "property_class": "Schools",
+    "construction_type_code": "NA",
+    "zoning": "P",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Van Ness/ Civic Center",
+    "analysis_neighborhood": "Tenderloin",
+    "property_location_raw": "0000 0750 EDDY                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1910",
+    "survey_name": "DEMOLISHED",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200602023671",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2006-02-02",
+      "status_date": "2007-05-30",
+      "estimated_cost": 138000,
+      "revised_cost": 138000,
+      "description": "excavation and shoring as a result of adjacent new construction at 818 van ness. bpn 200409245134s. tie back soldier beam #44-#55 only.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2001–2006",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EDDY&street_type=ST&address_number=750",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0739004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0739&lot=004",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0739004",
+      "retrieved": "2026-09-02"
+    }
+  ]
+}

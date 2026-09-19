@@ -119,7 +119,7 @@ def api_get(dataset: str, params: dict, timeout: int = 120, budget: int = 300,
     urllib's timeout is per-read, so a response that trickles never fires it and
     the process hangs. Read in chunks against a wall clock instead.
     """
-    url = f"https://data.sfgov.org/resource/{dataset}.json?" + urllib.parse.urlencode(params)
+    url = f"https://data.sf.gov/resource/{dataset}.json?" + urllib.parse.urlencode(params)
     for attempt in range(tries):
         try:
             deadline = time.time() + budget
@@ -337,6 +337,51 @@ def num_key(n: str):
 # --------------------------------------------------------------------------- #
 # The address index
 # --------------------------------------------------------------------------- #
+
+def between_on_street(city: "City", name: str, stype: str, num: int,
+                      apn: str, stated: tuple = ()) -> list:
+    """[(number, parcel)] another parcel holds between `num` and `apn`'s own numbers.
+
+    The block's number line is the only evidence that tells a boundary slip from
+    a genuine misplacement, and EAS carries it: every number on the street with
+    the parcel it belongs to. Same parity only — the two sides of a street
+    interleave in the sort and not on the ground.
+    """
+    held = sorted(num_key(r["address_number"])[0]
+                  for r in city.by_parcel.get(apn, [])
+                  if (r.get("street_name") or "") == name
+                  and (r.get("street_type") or "") == stype
+                  and re.fullmatch(r"\d+", r.get("address_number") or ""))
+    if not held:
+        # A parcel EAS joins no number to is known only by its range field, and
+        # that field is then the only edge there is. 1458 Kirkwood — the case
+        # this check was raised for — is exactly this shape.
+        held = sorted(x for x in stated if x is not None)
+    if not held:
+        return []
+    edge = held[0] if num < held[0] else held[-1]
+    span = (num, edge) if num < edge else (edge, num)
+    out, nearby = [], 0
+    for r in city.eas:
+        if (r.get("street_name") or "") != name or (r.get("street_type") or "") != stype:
+            continue
+        if not r.get("parcel_number") or r["parcel_number"] == apn:
+            continue
+        if not re.fullmatch(r"\d+", r.get("address_number") or ""):
+            continue
+        n = int(r["address_number"])
+        if n % 2 != num % 2:
+            continue
+        if abs(n - num) <= 40:
+            nearby += 1
+        if span[0] < n < span[1]:
+            out.append((n, r["parcel_number"]))
+    # Whole stretches of the city carry no parcel join in EAS at all — the
+    # Kirkwood Avenue case this check was raised for is one — and there the
+    # number line is blind rather than clear. Saying which is which is the
+    # difference between "confirmed" and "still unchecked".
+    return sorted(set(out)), nearby
+
 
 class City:
     """EAS, parcels and roll, indexed for the joins a resolver makes."""
@@ -621,17 +666,57 @@ def parcel_note(city: City, parcel: str) -> str:
     return "; ".join(bits)
 
 
-def condo_warning(city: City, parcel: str) -> str | None:
-    """A condominium APN is a unit, not a building — the directory contract's trap."""
+# The assessor's `property_location` is fixed width: four characters of "to"
+# number, four of "from" number, twenty of street name and two of street type,
+# and then the unit designation. `0000` there means the whole parcel; anything
+# else — `0105`, `1903`, `01/2` — means one unit of a stack.
+UNIT_AT = 32
+
+
+def condo_warning(city: City, parcel: str, name: str = "", stype: str = "",
+                  matched: list = None) -> str | None:
+    """A condominium APN is a unit, not a building — the directory contract's trap.
+
+    The trap is a *stack*: many unit APNs on one point, so a page per APN would be
+    a page per unit. The roll's class code alone does not prove one, because it
+    also lands on old single-address parcels that were condominium-mapped at some
+    point and never split. Where EAS holds the recorded numbers on exactly this
+    one parcel, there is no stack to defer and the parcel is the building.
+
+    **That escape hatch has its own trap**, and 655 Corbett Avenue is the worked
+    example: a 39-unit condominium of 1964 whose number EAS carries on one parcel
+    only, so the sibling test found no stack and let it through as a building. The
+    roll knew: `property_location` ends in the unit designation, `AV0105`, one flat
+    of the thirty-nine. A whole parcel ends in `0000`. So the hatch closes whenever
+    the roll names a unit, and the stack is deferred whether or not EAS lists it.
+    """
     roll = city.roll.get(parcel) or {}
-    if "condominium" in (roll.get("property_class_code_definition") or "").lower():
+    if "condominium" not in (roll.get("property_class_code_definition") or "").lower():
+        return None
+    unit = (roll.get("property_location") or "")[UNIT_AT:].strip()
+    names_a_unit = bool(unit) and unit.strip("0") != ""
+    if name and matched and not names_a_unit:
+        siblings = set()
+        for n in matched:
+            for r in city.rows_for(name, stype, n):
+                apn, key, _ = city.active_parcel(r)
+                if apn:
+                    siblings.add(apn)
+        if siblings and siblings <= {parcel}:
+            return None
+    if names_a_unit:
         area = (roll.get("lot_area") or "").strip()
         return ("the 2025 roll classes this parcel as a Condominium"
                 + (" with zero lot area" if area in ("0", "0.0") else "")
-                + ", which is a unit and not a building — the root AGENTS.md "
-                  "directory contract defers these until the building's own parcels "
-                  "are established")
-    return None
+                + f" and gives its location as unit {unit} of the building, which is a "
+                  "flat and not the building — the root AGENTS.md directory contract "
+                  "defers these until the building's own parcels are established")
+    area = (roll.get("lot_area") or "").strip()
+    return ("the 2025 roll classes this parcel as a Condominium"
+            + (" with zero lot area" if area in ("0", "0.0") else "")
+            + ", which is a unit and not a building — the root AGENTS.md "
+              "directory contract defers these until the building's own parcels "
+              "are established")
 
 
 def resolve_numbers(city: City, name: str, stype: str | None,
@@ -797,7 +882,7 @@ def place(city: City, parcel: str, name: str, stype: str, matched: list,
                          "so there is no parcel today to hang the fact on. The block has been "
                          "re-parcelized since; a later pass with the assessor's own "
                          "property_location could still place it.")}
-    condo = condo_warning(city, parcel)
+    condo = condo_warning(city, parcel, name, stype, matched)
     if condo:
         return {"status": "unresolved", "checked_on": today, "method": method,
                 "note": f"Not placed: {condo}."}
@@ -856,6 +941,34 @@ def recorded_parcels(f: dict) -> list:
     return out
 
 
+def recorded_parcel_check(f: dict, parcel: str) -> str:
+    """How the parcel a record printed compares with the one it resolved to.
+
+    A source that states its own assessor block and lot has handed over a test,
+    not just a tiebreak: run it on every resolved finding and the OCR of a
+    scanned survey stops being taken on trust. Three outcomes matter and they
+    mean different things, which is why they are counted separately —
+
+    * ``match``  — the record's block and lot are the parcel's. Nothing to do.
+    * ``relot``  — same block, different lot: the assessor has re-lotted since
+      the record was written, which is ordinary and expected.
+    * ``block``  — a different block. Usually a digit the scan lost (a 3/5
+      confusion put 849-853 Valencia Street on "5996" for 3596), sometimes a
+      real error in the record. **Read every one of these.**
+
+    Returns "" when the record names no parcel, so it can be counted apart from
+    a check that ran and passed.
+    """
+    recorded = recorded_parcels(f)
+    if not recorded or not parcel:
+        return ""
+    if parcel.upper() in recorded:
+        return "match"
+    blk = re.match(r"^(\d{3,4}[A-Z]?)", parcel.upper())
+    blk = blk.group(1) if blk else ""
+    return "relot" if any(r.startswith(blk) for r in recorded) else "block"
+
+
 def block_check(city: City, f: dict, parcel: str) -> tuple:
     """(clause, agrees) — the archivist's assessor block against the parcel's."""
     recorded = (f.get("extra") or {}).get("assessor_block_as_recorded")
@@ -880,9 +993,177 @@ def block_check(city: City, f: dict, parcel: str) -> tuple:
             f"({parcel_block}).", False)
 
 
+# A source that marks its own building demolished outranks the resolver, which
+# knows only that the number exists today — see research/LESSONS.md, "A demolished building
+# is `rejected`, not `resolved`." The tool raises these; it does not decide them.
+# Two passes over every findings file in the repo settled that. A regex over any
+# field mentioning demolition would have rejected fourteen correctly published
+# findings, because the demolished thing is often not this building: the *first*
+# St. Francis Hotel of 1904, one academic building of a campus, "demolished
+# except for vertical sign", "largely destroyed in the Great 1906 Earthquake".
+# Narrowing to a bare marker in `status_as_recorded` still gets the Swedenborgian
+# Church wrong — two volumes mark it demolished and it stands, landmarked, at
+# 3200 Washington Street. A source can be mistaken about its own building, and
+# only a person can tell. So `report` prints these loudly and the judgement stays
+# where the runbook puts it.
+BARE_DEMOLITION = re.compile(
+    r"^\s*(?:demolished|destroyed|razed|not extant|no longer extant)"
+    r"(?:\s+(?:in\s+)?\d{4})?\s*$", re.I)
+DEMOLITION_MENTIONED = re.compile(
+    r"\b(?:demolish|destroyed|razed|no longer stand|not extant|since gone)", re.I)
+
+
+def demolished_as_recorded(f: dict) -> str | None:
+    """The source's own bare marking that this building is gone, or None.
+
+    Only `extra.status_as_recorded` counts, and only when it is the marker and
+    nothing else. A sentence that merely mentions demolition is a judgement call,
+    not a fact the tool may act on; `demolition_mentioned` surfaces those.
+    """
+    status = (f.get("extra") or {}).get("status_as_recorded")
+    if isinstance(status, str) and BARE_DEMOLITION.match(status):
+        return status.strip()
+    return None
+
+
+def demolition_mentioned(f: dict) -> tuple[str, str] | None:
+    """A field recording that something here came down, for `report` to raise."""
+    if demolished_as_recorded(f):
+        return None
+    for key, value in (f.get("extra") or {}).items():
+        if key.endswith("_as_recorded") and isinstance(value, str) \
+                and DEMOLITION_MENTIONED.search(value):
+            return key, value
+    return None
+
+
+# The 1909 renumbering changed street numbers across much of the city, and a
+# plain EAS join cannot see it: the number exists today, on a parcel, and the
+# join reports a clean resolution for a building that may be a block away or a
+# century newer. RUNBOOK.md's rule is that a pre-1909 number is not today's
+# number until EAS *and a cross-street check* agree, and this tool only does the
+# first. So it declines, and says what would unblock it — a cross street, a
+# block face, a lot dimension — which a publisher can act on by resolving the
+# entry by hand.
+#
+# Measured on SFP 162, where 42 findings dated before 1910 resolved on the join
+# alone: 36 of them landed on a parcel whose building the assessor dates *after*
+# the photograph, by as much as 122 years (760 Mission Street, 1867, on a
+# parcel built in 1989). The check that caught it is not in this tool; the
+# refusal is.
+RENUMBERING_YEAR = 1910
+YEAR_IN_DATE = re.compile(r"(1[6-9]\d\d|20\d\d)")
+
+
+def renumbering_guard(f: dict, res: dict, city: "City" = None) -> dict:
+    """Refuse a pre-1910 address resolved on the EAS join alone.
+
+    "On the join alone" is the whole condition, and a record that prints its own
+    assessor block and lot has not been resolved that way — it named the parcel,
+    and the join only agreed. Those are exempt.
+
+    This matters because `date` is the date of the *fact*, not the date the
+    address was written, and for a modern survey of an old building the two are
+    a century apart: the Market & Octavia DPR forms were written in 2006, in
+    2006's street numbers, about buildings put up in the 1880s. Without the
+    exemption the guard refused 200 of 473 of them for a renumbering that had
+    already happened a century before the surveyor wrote the address down.
+
+    Measured over every findings file in the repo before it was wired in: all 41
+    fires that existed at the time were on records that print no block and lot,
+    so none of them changed. The exemption only reaches records that hand over
+    the parcel themselves.
+
+    There is a second exemption for the same reason, `extra.record_date`: the
+    year the record was written. Where that is 1910 or later the number in it is
+    a modern number by construction, whatever the fact's own date, and the guard
+    does not apply. It is opt-in, so it changed nothing already committed (0 of
+    15,230 findings carried the field when it was added). The first source to
+    use it is `nrhp-nominations`, whose 1970s forms date buildings to the 1850s.
+    """
+    if res.get("status") != "resolved":
+        return res
+    m = YEAR_IN_DATE.search(f.get("date") or "")
+    if not m or int(m.group(1)) >= RENUMBERING_YEAR:
+        return res
+    # A second exemption, on the same principle as the block-and-lot one and
+    # reached far more often: **the record itself was written after the
+    # renumbering.** The guard exists for a number written down *while* the old
+    # numbering was in force — an 1895 newspaper giving 1895's number for an
+    # 1895 fire. It has nothing to say about a 1976 National Register nomination
+    # giving 1976's number for an 1880 house, and refusing that costs the fact
+    # for no reason: the address in the document is already today's address.
+    #
+    # It is opt-in and explicit — `extra.record_date`, the year the source was
+    # written, which the extractor sets only where the source states it — so no
+    # committed finding changes (measured: 0 of 15,230 carry the field). The
+    # assessor's year comparison is still printed into the method, because the
+    # guard's *other* error mode survives this exemption: a modern number can
+    # point at a later building on the same lot, and the reader needs to see
+    # that gap even when the number itself is not in doubt.
+    rec = str((f.get("extra") or {}).get("record_date") or "")
+    rm = YEAR_IN_DATE.search(rec)
+    if rm and int(rm.group(1)) >= RENUMBERING_YEAR:
+        res = dict(res)
+        yb = ""
+        if city is not None:
+            yb = ((city.roll.get(res.get("apn") or "") or {}).get("year_property_built") or "")
+        res["method"] = (res.get("method", "") + f" The record was written in {rm.group(1)}, "
+                         f"after the 1909 renumbering, so the number it gives is a modern "
+                         f"number and the renumbering guard does not apply"
+                         + (f"; the assessor dates the building on this parcel to {yb}."
+                            if yb else ".")).strip()
+        return res
+    if recorded_parcel_check(f, res.get("apn") or "") == "match":
+        res = dict(res)
+        res["method"] = (res.get("method", "") + " The record prints assessor block "
+                         f"{(f.get('extra') or {}).get('assessor_block_as_recorded')} lot "
+                         f"{(f.get('extra') or {}).get('assessor_lot_as_recorded')}, which is "
+                         "this parcel, so the pre-1910 date is the building's and not the "
+                         "address's — the renumbering guard does not apply.").strip()
+        return res
+    # The refusal is right, but on its own it is a dead end: it names the check
+    # that would settle the number without saying what the check says. The
+    # assessor's year_property_built for the parcel the join chose is already
+    # fetched, and comparing it to the record's own date is exactly the test
+    # that caught the SFP 162 errors this guard was built from — a 1854 mansion
+    # on a parcel the assessor dates to 1922 is not the same building, and a
+    # 1907 hotel on a parcel dated 1907 is. Reporting it turns a dead end into
+    # a judgement the publisher can make. It still decides nothing: a match is
+    # evidence for the number, not proof, and the status stays unresolved.
+    built = ""
+    if city is not None:
+        yb = ((city.roll.get(res.get("apn") or "") or {}).get("year_property_built") or "")
+        try:
+            yb = int(yb)
+        except (TypeError, ValueError):
+            yb = 0
+        if yb > 0:
+            gap = abs(yb - int(m.group(1)))
+            built = (f" The assessor dates the building on the parcel it would have "
+                     f"resolved to ({res.get('apn')}) to {yb}, {gap} year(s) from the "
+                     f"{m.group(1)} recorded here"
+                     + (" — close enough that the modern number probably does carry this "
+                        "building, which is the check that would settle it."
+                        if gap <= 3 else
+                        " — far enough apart that the number probably points at a later "
+                        "building on the lot."))
+    return {"status": "unresolved", "checked_on": res.get("checked_on"),
+            "method": res.get("method", ""),
+            "note": (f"Dated {f.get('date')}, before the 1909 renumbering, and the record "
+                     f"gives no cross street, block face or lot dimension to check the "
+                     f"number against. EAS holds "
+                     f"{f.get('street_number')} {f.get('street_name')} today, but a "
+                     f"pre-1909 number is not today's number until a cross-street check "
+                     f"says so — see 'The renumbering traps' in research/RUNBOOK.md. "
+                     f"Resolve it by hand if the source supplies the check material."
+                     + built)}
+
+
 def decide(city: City, f: dict, today: str) -> dict:
     """One finding → one resolution. No adjudication: ties go unresolved."""
     extra = f.get("extra") or {}
+
     recorded_name, recorded_type = f.get("street_name"), f.get("street_type")
     number, recorded_range = f.get("street_number"), extra.get("address_range_as_recorded")
     note_addr = parse_address(extra.get("address_note_as_recorded"))
@@ -899,8 +1180,11 @@ def decide(city: City, f: dict, today: str) -> dict:
             bits.append(f"the street ({name} {stype or ''})".strip())
         what = f.get("address_as_written")
         return {"status": "unresolved", "checked_on": today,
-                "method": "No street number in the catalogue title or the archivist's address "
-                          "note, so there is nothing to look up in sf-eas-addresses.",
+                # Source-neutral: this branch runs for every corpus, and a
+                # sentence about catalogue titles and archivists' notes is
+                # false on a survey report, a newspaper or a book.
+                "method": "The record states no street number, so there is nothing to look up "
+                          "in sf-eas-addresses.",
                 "note": (f"The record locates it only as \"{what}\""
                          + (f" — {'; '.join(bits)}" if bits else "")
                          + ". Kept so the record is not read again; per the evidence bar in "
@@ -924,7 +1208,7 @@ def decide(city: City, f: dict, today: str) -> dict:
                            f"or any spelling of it, so the address cannot be looked up." + second),
                 "note": "The street the record names is not a street in the city's address "
                         "registry today; the record may name a private way, a renamed street "
-                        "or an archivist's spelling this pass could not match."}
+                        "or a spelling this pass could not match."}
 
     # ---- what the title says ----------------------------------------------- #
     # A record that states a range states every number in it. Where it also
@@ -947,7 +1231,7 @@ def decide(city: City, f: dict, today: str) -> dict:
     # A `conflict` is only this branch's business when the record states a
     # second address to compare. Findings whose conflict is a date or a name —
     # a survey that dates the same building twice — resolve normally; the
-    # disagreement is the page's `.unknowns` to carry, not the resolver's.
+    # disagreement is the page's `unknowns` to carry, not the resolver's.
     address_conflict = bool(f.get("conflict")) and note_addr is not None
     note_hit = None
     if address_conflict:
@@ -1051,13 +1335,38 @@ def decide(city: City, f: dict, today: str) -> dict:
                               "page to put it on. EAS leaves addresses unparcelled for rear units, "
                               "vacated lots and addresses in flux; a later pass may find one.")
                              + blk)}
+        # A record that states a second address — a corner building the source
+        # gives on both its frontages, an archivist's note — gets that address
+        # looked up too, and the lookup is reported. It is only reported: the
+        # tool does not resolve on it, because deciding that the second address
+        # is the same building is a reading of the record. Without this the
+        # second frontage is invisible, and one corner factory sat unresolved
+        # on a Folsom Street range EAS had dropped while its 18th Street
+        # number was live on a parcel all along.
+        second = ""
+        if note_addr and note_addr.get("street_name"):
+            n_name, n_type, _ = city.normalize(note_addr["street_name"], note_addr["street_type"])
+            n_numbers = note_addr["numbers"]
+            if len(n_numbers) == 2 and all(x.isdigit() for x in n_numbers):
+                n_numbers = expand_range(*n_numbers)
+            hit = resolve_numbers(city, n_name, n_type, n_numbers) if n_name else {"parcels": {}}
+            quoted = extra.get("address_note_as_recorded")
+            if hit["parcels"]:
+                listed = ", ".join(f"{p} ({', '.join(ns)})" for p, ns in sorted(hit["parcels"].items()))
+                second = (f" The record also states \"{quoted}\", and sf-eas-addresses does hold "
+                          f"that address, on {listed}. Whether it is the same building is a "
+                          f"reading of the record, so resolve it by hand with "
+                          f"\"by_hand\": true if it is.")
+            else:
+                second = (f" The record also states \"{quoted}\", and sf-eas-addresses has no "
+                          f"record for that either.")
         return {"status": "unresolved", "checked_on": today,
                 "method": (f"No record in sf-eas-addresses for {label}"
                            + (f" (checked {', '.join(title_numbers[:8])}"
                               f"{'…' if len(title_numbers) > 8 else ''})"
                               if title_kind == "range" else "") + "." + spelling),
                 "note": ("The address does not exist today, so there is no page it can go on."
-                         + where + blk +
+                         + where + blk + second +
                          " Per \"The evidence bar\" in research/AGENTS.md this is a street-hub "
                          "fact: a dated record of a building at a number the city no longer has.")}
 
@@ -1130,6 +1439,7 @@ def decide(city: City, f: dict, today: str) -> dict:
             if loose else "")
     clause, agrees = block_check(city, f, parcel)
     res["method"] += clause + spelling
+    res = renumbering_guard(f, res, city)
     if not agrees and res["status"] == "resolved" and not f.get("conflict"):
         # An address EAS matches exactly, against a block number that says
         # somewhere else. Per RUNBOOK.md a contradiction like this is not
@@ -1229,6 +1539,10 @@ def recorded_addresses(f: dict, city: City = None) -> list:
 CODE_WORD = {code: word for word, code in ORDINAL_WORD.items()
              if "-" not in word and len(code) == 4}
 
+# EAS drops the apostrophe ("OFARRELL"); a copy of scripts/seed_pages.py's table.
+APOSTROPHE_NAME = {"OFARRELL": "O'Farrell", "OREILLY": "O'Reilly",
+                   "OSHAUGHNESSY": "O'Shaughnessy"}
+
 
 def street_display(name: str, stype: str) -> str:
     """"GRANT", "AVE" -> "Grant Avenue". Matches scripts/seed_pages.py."""
@@ -1238,6 +1552,8 @@ def street_display(name: str, stype: str) -> str:
         token = unpad(token)
         if re.fullmatch(r"\d+(ST|ND|RD|TH)", token.upper()):
             parts.append(token.lower())
+        elif token.upper() in APOSTROPHE_NAME:
+            parts.append(APOSTROPHE_NAME[token.upper()])
         elif token.lower() == "the":
             parts.append("The")
         else:
@@ -1257,11 +1573,16 @@ def build_manifest(city: City, data: dict) -> list:
         res = f.get("resolution") or {}
         if res.get("status") != "resolved" or not res.get("apn"):
             continue
-        if not (res.get("note") or "").startswith("No page at this path yet"):
-            continue                       # the page exists; the seeder skips it anyway
         m = re.match(r"^/([a-z\-]+)/([a-z\-]+)/([a-z0-9\-]+)/([^/]+)/$", res["path"] or "")
         if not m:
             continue
+        # Ask the filesystem whether the page exists, not the note. This used to
+        # test `note.startswith("No page at this path yet")`, which is a string
+        # this tool writes itself — so a resolution corrected by hand, which
+        # carries whatever note the publisher wrote, dropped out of the manifest
+        # without a word and its page was never seeded. Twice in one run.
+        if (REPO / res["path"].strip("/") / "data.json").exists():
+            continue                       # the page exists; the seeder skips it anyway
         city_slug, area, slug, number = m.groups()
         apn = res["apn"]
         if apn in by_parcel:
@@ -1270,6 +1591,23 @@ def build_manifest(city: City, data: dict) -> list:
         eas_name, stype, _ = city.normalize(name, f.get("street_type"))
         eas_name = eas_name or name
         rows = [r for r in city.by_parcel.get(apn, []) + city.by_effective.get(apn, [])]
+        # A building that has been readdressed resolves onto a street the
+        # finding never names — the Worden plate headed "299 Moncada Way" whose
+        # own note says the address is now 101 Paloma Avenue, and every other
+        # "site of today's #N" record. The path already carries the new street;
+        # taking the name from the finding leaves the entry's `street_name`
+        # disagreeing with its `street_slug`, which matches no EAS row on the
+        # parcel, so the entry gets no coordinates and the seeder dies on a
+        # KeyError. The resolution's own `eas_address` is the address that was
+        # actually placed, so ask the parcel's rows which one it is.
+        landed = next((r for r in rows
+                       if eas_label(r.get("street_name") or "",
+                                    r.get("street_type"),
+                                    (r.get("address_number") or "").upper())
+                       == (res.get("eas_address") or "")), None)
+        if landed and (landed.get("street_name") or "") != eas_name:
+            eas_name = landed.get("street_name") or eas_name
+            stype = landed.get("street_type") or ""
         same = [r for r in rows if (r.get("street_name") or "") == eas_name]
         stype = stype or next((r.get("street_type") for r in same), "") or ""
         # The path already carries the parcel's lowest number, and it is worked
@@ -1288,6 +1626,20 @@ def build_manifest(city: City, data: dict) -> list:
                  "street_name": eas_name, "street_type": stype,
                  "street_display": street_display(eas_name, stype),
                  "numbers": numbers, "other_street_addresses": others}
+        # The seeder runs its own condominium check on the roll's class code
+        # alone, which is right for a unit stack and wrong for an old parcel
+        # that was condominium-mapped and never split. This resolution only
+        # exists because condo_warning already tested the stronger thing — that
+        # EAS puts these numbers on this parcel and no other — so say so, and
+        # let the seeder honour the check that had the evidence.
+        roll_row = city.roll.get(apn) or {}
+        if "condominium" in (roll_row.get("property_class_code_definition") or "").lower():
+            # Only for a whole parcel. A roll row naming a unit never reaches
+            # here — condo_warning declines it — and must never be waved past
+            # the seeder's own check either.
+            unit = (roll_row.get("property_location") or "")[UNIT_AT:].strip()
+            if not unit or unit.strip("0") == "":
+                entry["sole_parcel_for_address"] = True
         if pick:
             if pick.get("latitude"):
                 entry["lat"] = float(pick["latitude"])
@@ -1306,6 +1658,16 @@ def load_city(findings: dict, refresh: bool = False, aliases: dict = None,
     recorded = {f["street_name"] for f in findings["findings"] if f.get("street_name")}
     for f in findings["findings"]:
         parsed = parse_address((f.get("extra") or {}).get("address_note_as_recorded"))
+        if parsed:
+            recorded.add(parsed["street_name"])
+        # A by-hand resolution can land on a street no finding names — a campus
+        # nomination headed "1400 Fell Street" placed on 333 Baker Street, the
+        # only address EAS holds for the parcel it prints. Without the landing
+        # street in this set its EAS rows are never fetched, so `manifest` finds
+        # nothing on the parcel to correct the entry with and writes the
+        # finding's own street beside the path's slug: street_display "Fell
+        # Street" under baker-street/333/, and no coordinates at all.
+        parsed = parse_address((f.get("resolution") or {}).get("eas_address"))
         if parsed:
             recorded.add(parsed["street_name"])
     names, unknown = set(), []
@@ -1442,15 +1804,190 @@ def main() -> int:
             print(f"{f['id']}  {r['status']:<10} {f['address_as_written'][:48]:<50}"
                   f"{r.get('path') or r.get('note', '')[:70]}")
         print()
+        # The record's own parcel against the one it resolved to. This is the
+        # only check in the tool that tests a finished resolution rather than
+        # producing one, and on a scanned source it is the thing that catches
+        # an OCR digit before it reaches a page.
+        checks = Counter()
+        disagree = []
+        for f in data["findings"]:
+            r = decisions[f["id"]]
+            if r["status"] != "resolved":
+                continue
+            verdict = recorded_parcel_check(f, r.get("apn") or "")
+            checks[verdict or "not stated"] += 1
+            if verdict in ("relot", "block"):
+                e = f.get("extra") or {}
+                disagree.append((verdict, f["id"], f["address_as_written"][:34],
+                                 f"{e.get('assessor_block_as_recorded')}/"
+                                 f"{e.get('assessor_lot_as_recorded')}", r["apn"]))
+        if checks["match"] or disagree:
+            print(f"Recorded parcel vs resolved parcel: {checks['match']} exact, "
+                  f"{checks['relot']} re-lotted since, {checks['block']} on another block, "
+                  f"{checks['not stated']} not stated by the record.")
+            for verdict, fid, addr, printed, apn in disagree:
+                label = "another block" if verdict == "block" else "re-lotted"
+                print(f"  {label:<13} {fid}  {addr:<36} printed {printed:<12} → {apn}")
+            if checks["block"]:
+                print("  Read every 'another block' line before applying: on a scanned "
+                      "source most are a lost digit, and the rest are the record's own error.")
+            print()
+
+        # A resolution onto one of the unit parcels its own method calls a
+        # condominium. The main address joins to a single active parcel, so
+        # nothing declines it, while a sibling EAS row (a "19 A" beside "19")
+        # lands on the same point as that parcel and a twin: 19 Macondray Lane
+        # resolved to 0120076, one of two unit parcels the city split lot
+        # 120/28 into in 2009. Raised, never decided. Measured over every
+        # findings file before it was wired in: 4 resolved entries match, and
+        # one of them (801 Market Street, on airspace parcels 3705Z001-Z004) is a
+        # building the site does want a page for, so this is a question for the
+        # reader, not a rule.
+        stacked = []
+        for f in data["findings"]:
+            r = decisions[f["id"]]
+            if r["status"] != "resolved":
+                continue
+            for g in re.finditer(r"coordinates fall in \d+ active parcels \(([^)]*)\), "
+                                 r"which is what a condominium", r.get("method") or ""):
+                listed = [s.strip().rstrip("…") for s in g.group(1).split(",")]
+                if r.get("apn") in listed:
+                    stacked.append((f["id"], f["address_as_written"][:34], r["apn"], g.group(1)))
+                    break
+        if stacked:
+            print(f"Resolved onto a parcel its own method calls a condominium unit: {len(stacked)}")
+            for fid, addr, apn, listed in stacked:
+                print(f"  {fid}  {addr:<36} → {apn}, one of {listed}")
+            print("  Read each: a unit parcel is not the building (#228) unless the parcels are "
+                  "airspace lots of one building. Mark a unit `unresolved` with `by_hand`.")
+            print()
+
+        # A resolution the point made, on a parcel that says it does not carry
+        # the number. Raised, never decided — but ranked by the thing that
+        # actually settles it, which is not the stated range.
+        #
+        # Measured over every findings file in the repo, the stated-range test
+        # alone fires on 61 of 582 point-placed resolutions and 46 of those are
+        # right: sf-parcels' `from_address_num` / `to_address_num` is routinely
+        # narrower than the numbers a parcel holds ("2861 24th Street" on a
+        # parcel stated 2863–2869), and EAS sometimes still files the number
+        # under a parcel sf-parcels reports retired while the point found its
+        # active successor. Reading all 61 by hand found one signal that
+        # separated right from wrong every time: **another parcel holding a
+        # number between the address and the parcel the point chose.** With
+        # nothing in between the resolution was correct in all 35 such cases;
+        # with something in between it was the neighbour, or several doors
+        # past it, in all 13.
+        outside = []
+        for f in data["findings"]:
+            r = decisions[f["id"]]
+            if r["status"] != "resolved" or "coordinates fall in is" not in \
+                    (r.get("method") or ""):
+                continue
+            parcel = (city.parcels or {}).get(r.get("apn") or "") or {}
+            lo, hi = parcel.get("from_address_num"), parcel.get("to_address_num")
+            m = re.match(r"\d+", f.get("street_number") or "")
+            num = num_key(m.group(0)) if m else None
+            if not (lo and hi and num is not None):
+                continue
+            name, stype = f.get("street_name") or "", f.get("street_type") or ""
+            if (parcel.get("street_name") or "") != name:
+                continue
+            if num_key(lo) <= num <= num_key(hi):
+                continue
+            gap = min(abs(num[0] - num_key(lo)[0]), abs(num[0] - num_key(hi)[0]))
+            outside.append((f["id"], f["address_as_written"][:34], r["apn"],
+                            f"{lo}\u2013{hi} {parcel.get('street_name','')}", gap,
+                            between_on_street(city, name, stype, num[0], r["apn"],
+                                              (num_key(lo)[0], num_key(hi)[0]))))
+        if outside:
+            crowded = [o for o in outside if o[5][0]]
+            print(f"Placed by point, on a parcel whose own range excludes the "
+                  f"number: {len(outside)}, {len(crowded)} with another parcel in between.")
+            for fid, addr, apn, rng, gap, between in sorted(
+                    outside, key=lambda x: (-len(x[5][0]), -x[4])):
+                hits, nearby = between
+            if hits:
+                where = (", ".join(f"{n} on {p}" for n, p in hits[:3])
+                         + (" …" if len(hits) > 3 else "") + " — in between")
+            elif nearby:
+                where = "nothing in between"
+            else:
+                where = "EAS joins no parcel to any number near this one — unchecked"
+                print(f"  {gap:>4} off      {fid}  {addr:<36} {apn} states {rng}")
+                print(f"                  {where}")
+            print("  EAS address points sit centimetres from a boundary, so a point can land in "
+                  "the neighbour.\n  The line under each one is the block's own number line. "
+                  "Another parcel holding a number\n  between the address and the one the point "
+                  "chose means the point is short of it; nothing\n  in between is the immediate "
+                  "neighbour and an incomplete range field, which is what the\n  great majority "
+                  "of these are; and a stretch EAS joins no parcel to says only that the\n  "
+                  "number line cannot see this one.")
+            print()
+
+        # The record saying its own building is gone. Not decided here: two
+        # passes over the repo's findings showed the marking is wrong or
+        # about a different building often enough that only a person can call
+        # it. See the note above BARE_DEMOLITION.
+        gone, mentioned = [], []
+        for f in data["findings"]:
+            r = decisions[f["id"]]
+            if r["status"] == "rejected":
+                continue
+            marker = demolished_as_recorded(f)
+            if marker:
+                gone.append((f["id"], f["address_as_written"][:40], marker, r["status"]))
+            else:
+                hit = demolition_mentioned(f)
+                if hit:
+                    mentioned.append((f["id"], f["address_as_written"][:40], hit[1][:60]))
+        if gone or mentioned:
+            print(f"The record marks a building gone: {len(gone)} stated plainly, "
+                  f"{len(mentioned)} mentioned in passing.")
+            for fid, addr, marker, status in gone:
+                print(f"  marked        {fid}  {addr:<42} \u201c{marker}\u201d  ({status})")
+            for fid, addr, text in mentioned:
+                print(f"  mentioned     {fid}  {addr:<42} \u201c{text}\u201d")
+            print("  A demolished building is rejected, not resolved: its number usually still "
+                  "resolves to a\n  live parcel, and publishing there hangs the fact on whatever "
+                  "stands now. But check each one\n  \u2014 the thing that came down is often a "
+                  "predecessor or one building of a group, and a source\n  can simply be wrong "
+                  "(two volumes mark the Swedenborgian Church demolished; it stands).")
+            print()
     print(f"{sum(tally.values())} findings: " +
           ", ".join(f"{n} {s}" for s, n in tally.most_common())
           + (f"; {len(conflicts)} new conflict(s) recorded" if conflicts else ""))
 
     if args.command == "apply":
+        # A finding the reader has already rejected is not the tool's to
+        # reconsider. The reasons a run rejects by hand are ones the joins
+        # cannot see — the source itself says the building is demolished, the
+        # address is outside San Francisco, the record names no number at all —
+        # and overwriting them with "unresolved" loses the reason and invites
+        # the next run to try again. Every other status is recomputed.
+        # The same goes for a resolution a reader made by hand. The renumbering
+        # guard's own note invites one ("Resolve it by hand if the source
+        # supplies the check material"), and until this was here, taking that
+        # invitation and re-running `apply` silently threw the judgement away
+        # and put the entry back to unresolved — the work looked done, then
+        # quietly wasn't. A resolution marked `by_hand` is kept whatever its
+        # status; drop the marker to hand the entry back to the tool.
+        kept = held = 0
         for f in data["findings"]:
+            res = f.get("resolution") or {}
+            if res.get("status") == "rejected":
+                kept += 1
+                continue
+            if res.get("by_hand"):
+                held += 1
+                continue
             f["resolution"] = decisions[f["id"]]
             if f["id"] in conflicts and not f.get("conflict"):
                 f["conflict"] = conflicts[f["id"]]
+        if kept:
+            print(f"  left {kept} finding(s) already marked rejected untouched")
+        if held:
+            print(f"  left {held} finding(s) resolved by hand untouched")
         args.findings.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n",
                                  encoding="utf-8")
         print(f"wrote {args.findings}")

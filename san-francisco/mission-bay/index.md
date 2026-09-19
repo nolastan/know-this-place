@@ -15,6 +15,7 @@ Northeast Mission Historic Resource Survey, adopted in 2011.
 - [15th Street](15th-street/) — 2 buildings, built 1910–1944.
 - [16th Street](16th-street/) — 10 buildings, built 1912–1990; 1 in the Showplace Square Heavy Timber and Steel-frame Brick Warehouse and Factory Historic District.
 - [17th Street](17th-street/) — 11 buildings, built 1907–1979.
+- [3rd Street](3rd-street/) — 1 building.
 - [7th Street](7th-street/) — 3 buildings, built 1905–1974.
 - [Alameda Street](alameda-street/) — 1 building, built 1948.
 - [Arkansas Street](arkansas-street/) — 2 buildings, built 1922–2018.
@@ -29,9 +30,24 @@ Northeast Mission Historic Resource Survey, adopted in 2011.
 - [Irwin Street](irwin-street/) — 2 buildings, built 1979–2024.
 - [Kansas Street](kansas-street/) — 5 buildings, built 1912–2025.
 - [King Street](king-street/) — 2 buildings, built 2007.
+- [Mission Bay Boulevard](mission-bay-boulevard/) — 1 building, built 2017.
 - [Mississippi Street](mississippi-street/) — 2 buildings, built 1948–1949.
 - [Missouri Street](missouri-street/) — 1 building, built 1931.
+- [Owens Street](owens-street/) — 1 building.
 - [Rhode Island Street](rhode-island-street/) — 4 buildings, built 1924–1951.
+- [Terry A Francois Boulevard](terry-a-francois-boulevard/) — 1 building, built 1900.
 - [Townsend Street](townsend-street/) — 2 buildings, built 2002–2008.
 - [Vermont Street](vermont-street/) — 5 buildings, built 1970–1998.
 - [Wisconsin Street](wisconsin-street/) — 2 buildings, built 1916–1971.
+
+## Historic districts here
+
+- [Showplace Square Heavy Timber and Steel-frame Brick Warehouse and Factory Historic District](../historic-districts/showplace-square-heavy-timber-and-steel-frame-brick-warehouse-and-factory/)
+
+## Adjacent neighborhoods
+
+[South of Market](../south-of-market/) adjoins north-west across Division
+Street and [South Beach](../south-beach/) north along the water. [Potrero
+Hill](../potrero-hill/) rises south-west beyond Mariposa Street, with
+[Dogpatch](../dogpatch/) on the flat ground below it, and [the
+Mission](../mission/) is west across Potrero Avenue.

@@ -1,0 +1,124 @@
+{
+  "address": "1890 27th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/27th-avenue/1890/",
+  "apn": "2063025",
+  "block": "2063",
+  "lot": "025",
+  "eas_baseid": "327272",
+  "coordinates": {
+    "lat": 37.752221,
+    "lng": -122.484666
+  },
+  "parcel": {
+    "year_built": 1939,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2034,
+    "building_area_sqft": 1161,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1890 27TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 952948,
+    "assessed_improvement_value": 408404,
+    "last_sale_date": "2017-06-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1939",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202512111616",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-12-11",
+      "status_date": "2026-01-13",
+      "estimated_cost": 17000,
+      "revised_cost": 17000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200411098810",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-11-09",
+      "status_date": "2004-11-23",
+      "estimated_cost": 10535,
+      "revised_cost": 10535,
+      "description": "replace 6 windows size for size same place & location. visible from street. wood to wood.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9208810",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-05-29",
+      "status_date": "1992-06-10",
+      "estimated_cost": 6915,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=27TH&street_type=AVE&address_number=1890",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2063025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2063&lot=025",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2063025",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume D–F), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=5e61d57895f7a63a45f9a33bd3ee216f5a86bb2a19ca6b0ce2cc9f62584760da&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-08-31"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1939",
+      "kind": "construction",
+      "description": "Built by Henry Doelger, whose firm put up roughly 11,000 buildings in San Francisco, most of them single-family houses in the Sunset District, and who was the country's largest home builder from 1934 to 1941.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ],
+  "building": {
+    "builder": "Henry Doelger"
+  }
+}

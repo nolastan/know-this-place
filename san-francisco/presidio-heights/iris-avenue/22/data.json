@@ -1,0 +1,99 @@
+{
+  "address": "22 Iris Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/iris-avenue/22/",
+  "apn": "1043027",
+  "block": "1043",
+  "lot": "027",
+  "eas_baseid": "293625",
+  "coordinates": {
+    "lat": 37.785464,
+    "lng": -122.451775
+  },
+  "parcel": {
+    "year_built": 1948,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 3886.43,
+    "building_area_sqft": 3088,
+    "lot_depth_ft": 3.28,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Jordan Park/Laurel Heights",
+    "analysis_neighborhood": "Presidio Heights",
+    "property_location_raw": "0024 0022 IRIS                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 75286,
+    "assessed_improvement_value": 128195
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1948",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201610140389",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-10-14",
+      "status_date": "2016-10-14",
+      "estimated_cost": 10140,
+      "revised_cost": 10140,
+      "description": "replacement of eight (e) wood windows in kind; no expansion of existing openings or modification of window configuration. u factor .32 max",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=IRIS&street_type=AVE&address_number=22",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1043027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1043&lot=027",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1043027",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "flats-small-apartments-context-statement",
+      "name": "San Francisco Planning Department (ICF; Jon Rusch, lead author), Flats and Small Apartment Buildings (1915-1978) Citywide Historic Context Statement, adopted January 18, 2023",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=c79390b0b4063814ff373c248a22ace4b2f0bbd5a1bc27818daf4a43b8661fb3&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Flats and Small Apartment Buildings Historic Context Statement, adopted 2023",
+      "retrieved": "2026-08-28"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1948",
+      "kind": "construction",
+      "description": "A court-plan duplex — the L-shaped arrangement that produces the effect of a courtyard apartment at the scale of a two-unit building.",
+      "source": "flats-small-apartments-context-statement"
+    }
+  ]
+}

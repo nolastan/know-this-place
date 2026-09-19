@@ -5,8 +5,28 @@ A district on the rise between the Richmond and the Panhandle, around the Univer
 ## Streets documented so far
 
 - [Anza Street](anza-street/) — 1 building, built 1906.
+- [Baker Street](baker-street/) — 1 building, built 1904; 1 in the NOPA Historic District.
 - [Balboa Street](balboa-street/) — 1 building, built 1984.
+- [Beaumont Avenue](beaumont-avenue/) — 1 building, built 1936.
+- [Cook Street](cook-street/) — 2 buildings, built 1901–1926.
 - [Fulton Street](fulton-street/) — A nineteen-room 1904 house facing Golden Gate Park, bought by Jefferson Airplane in 1968.
 - [Geary Boulevard](geary-boulevard/) — 1 building, built 1999.
 - [Golden Gate Avenue](golden-gate-avenue/) — First A.M.E. Zion Church, built in 1960, whose landmark designation the city initiated in 2026.
+- [Hayes Street](hayes-street/) — 1 building, built 1908; 1 in the Southern Pacific Company Hospital Historic District.
+- [Loraine Court](loraine-court/) — 1 building, built 1900.
 - [McAllister Street](mcallister-street/) — 1 building, built 1900.
+- [Stanyan Street](stanyan-street/) — 1 building.
+- [Turk Boulevard](turk-boulevard/) — 1 building.
+- [Vega Street](vega-street/) — 1 building.
+
+## Historic districts here
+
+- [Jordan Park Historic District](../historic-districts/jordan-park/)
+- [NOPA Historic District](../historic-districts/nopa/)
+
+## Adjacent neighborhoods
+
+[Presidio Heights](../presidio-heights/) adjoins north-west and [the Inner
+Richmond](../inner-richmond/) west across Arguello Boulevard. [The Western
+Addition](../western-addition/) begins east of Masonic Avenue, and [Hayes
+Valley](../hayes-valley/) lies south-east beyond the Panhandle.

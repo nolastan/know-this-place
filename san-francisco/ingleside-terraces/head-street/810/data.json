@@ -1,0 +1,113 @@
+{
+  "address": "810 Head Street, San Francisco, CA 94132",
+  "path": "/san-francisco/ingleside-terraces/head-street/810/",
+  "apn": "6932017",
+  "block": "6932",
+  "lot": "017",
+  "eas_baseid": "408875",
+  "coordinates": {
+    "lat": 37.721975,
+    "lng": -122.464116
+  },
+  "parcel": {
+    "year_built": 1913,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 1,
+    "lot_area_sqft": 4534,
+    "building_area_sqft": 1839,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Ingleside Terrace",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0810 HEAD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 348852,
+    "assessed_improvement_value": 237548,
+    "last_sale_date": "1995-11-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Ingleside Terrace Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1910–1930",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202309136527",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-09-13",
+      "status_date": "2023-09-13",
+      "estimated_cost": 17000,
+      "revised_cost": 17000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HEAD&street_type=ST&address_number=810",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6932017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6932&lot=017",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6932017",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.46411607165645%2037.72197472838291)%27)",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "digitalsf-8249",
+      "name": "810 Head Street, between 1912 and 1915. Willard E. Worden Glass Plate Negatives (SFP 22), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/8249",
+      "label": "Willard E. Worden Glass Plate Negatives (SFP 22), San Francisco Public Library",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "between 1912 and 1915",
+      "kind": "photograph",
+      "description": "Willard E. Worden photographed the house.",
+      "source": "digitalsf-8249"
+    }
+  ]
+}

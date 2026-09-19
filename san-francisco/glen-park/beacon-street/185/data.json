@@ -1,0 +1,136 @@
+{
+  "address": "185 Beacon Street, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/beacon-street/185/",
+  "apn": "7541005",
+  "block": "7541",
+  "lot": "005",
+  "eas_baseid": "421028",
+  "coordinates": {
+    "lat": 37.739505,
+    "lng": -122.431769
+  },
+  "parcel": {
+    "year_built": 1964,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 4499,
+    "building_area_sqft": 1995,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Glen Park",
+    "analysis_neighborhood": "Glen Park",
+    "property_location_raw": "0000 0185 BEACON              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2258376,
+    "assessed_improvement_value": 1187398,
+    "last_sale_date": "2019-12-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1964",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202107214815",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-07-21",
+      "status_date": "2022-09-14",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "existing bath remodel. replace fixtures and finishes in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202102104348",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-02-10",
+      "status_date": "2022-09-14",
+      "estimated_cost": 200000,
+      "revised_cost": 200000,
+      "description": "interior remodel & window placement at front and rear facade.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201203095782",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-03-09",
+      "status_date": "2012-06-20",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "in-kind replacement of extg deck. same dimensions same location. revision of earlier repair permit app#201111078438. 90%",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201111078438",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-11-07",
+      "status_date": "2012-06-20",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "make repairs to dry rot at existing deck less than 50%",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BEACON&street_type=ST&address_number=185",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7541005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7541&lot=005",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7541005",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume J–L), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=804fff9eac94b0734e9f266d1cb0f0a250f209d0b21e9fd8088d42d0fe938ee1&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-09-01"
+    }
+  ],
+  "building": {
+    "architect": "Jeno Lorincz"
+  },
+  "historical_record": [
+    {
+      "date": "1964",
+      "kind": "construction",
+      "description": "Designed by Jeno Lorincz, a Hungarian-born Holocaust survivor who practised in San Francisco for some fifty years and was best known for mid-century modern houses in Twin Peaks and Diamond Heights.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ]
+}

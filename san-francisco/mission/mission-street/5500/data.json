@@ -1,0 +1,130 @@
+{
+  "address": "5500 Mission Street, San Francisco, CA 94112",
+  "path": "/san-francisco/mission/mission-street/5500/",
+  "apn": "7066036",
+  "block": "7066",
+  "lot": "036",
+  "eas_baseid": "414360",
+  "coordinates": {
+    "lat": 37.712718,
+    "lng": -122.445205
+  },
+  "parcel": {
+    "year_built": 1962,
+    "units": 1,
+    "stories": 1,
+    "rooms": 2,
+    "bathrooms": 1,
+    "lot_area_sqft": 4000,
+    "building_area_sqft": 2945,
+    "lot_depth_ft": 80,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "S",
+    "zoning": "NC-2",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Outer Mission",
+    "analysis_neighborhood": "Outer Mission",
+    "property_location_raw": "0000 5500 MISSION             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1017010,
+    "assessed_improvement_value": 33452,
+    "last_sale_date": "2016-05-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "1962",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201711083500",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-11-08",
+      "status_date": "2017-12-19",
+      "estimated_cost": 9000,
+      "revised_cost": 30000,
+      "description": "to comply with complaint# 201705633 to divide (e) repair space into auto storage for automotive parts on 1/f per plan. n/a ordinance #155-13",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201612286112",
+      "type": "new construction wood frame",
+      "status": "filed",
+      "filed": "2016-12-28",
+      "status_date": "2016-12-28",
+      "estimated_cost": 3500000,
+      "description": "to erect 4 stories, no basement, type v-a, (24) unit residential care for elderly building. (r-2.1 & i-4) maher n/a",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201612286125",
+      "type": "demolitions",
+      "status": "filed",
+      "filed": "2016-12-28",
+      "status_date": "2016-12-28",
+      "estimated_cost": 10000,
+      "description": "demolish 1 story type 5b auto repair shop",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8502315",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-03-07",
+      "status_date": "1985-05-31",
+      "estimated_cost": 1000,
+      "description": "storage room 20' x 12' 8' high",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MISSION&street_type=ST&address_number=5500",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7066036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7066&lot=036",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7066036",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sfyimby-2026-03-07",
+      "name": "San Francisco YIMBY, “Planning Progress For 5500 Mission Street in Outer Mission, San Francisco,” 7 March 2026",
+      "query": "https://sfyimby.com/2026/03/planning-progress-for-5500-mission-street-in-outer-mission-san-francisco.html",
+      "retrieved": "2026-09-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2026-03-07",
+      "kind": "development",
+      "headline": "Planning Progress For 5500 Mission Street in Outer Mission, San Francisco",
+      "outlet": "San Francisco YIMBY",
+      "url": "https://sfyimby.com/2026/03/planning-progress-for-5500-mission-street-in-outer-mission-san-francisco.html",
+      "source": "sfyimby-2026-03-07"
+    }
+  ]
+}

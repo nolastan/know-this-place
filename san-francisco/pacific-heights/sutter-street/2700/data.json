@@ -1,0 +1,126 @@
+{
+  "address": "2700 Sutter Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/sutter-street/2700/",
+  "apn": "1055004",
+  "block": "1055",
+  "lot": "004",
+  "eas_baseid": "293959",
+  "coordinates": {
+    "lat": 37.784825,
+    "lng": -122.445038
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 3500,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Lower Pacific Heights",
+    "analysis_neighborhood": "Presidio Heights",
+    "property_location_raw": "0000 2700 SUTTER              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 104873,
+    "assessed_improvement_value": 194816
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200612149859",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-12-14",
+      "status_date": "2007-04-11",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "interior tenant improvement for doctors office. new partitions accessible entrance and new paint and finishes",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200004056395",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-04-05",
+      "status_date": "2000-10-05",
+      "estimated_cost": 5340,
+      "revised_cost": 5340,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9011022",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-06-05",
+      "status_date": "1991-01-02",
+      "estimated_cost": 50000,
+      "description": "repair fire damage",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1990–2013",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SUTTER&street_type=ST&address_number=2700",
+      "retrieved": "2026-08-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1055004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1055&lot=004",
+      "retrieved": "2026-08-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1055004",
+      "retrieved": "2026-08-27"
+    },
+    {
+      "id": "neighborhood-commercial-context-statement",
+      "name": "San Francisco Planning Department (Mary Brown and Susan Parks), Neighborhood Commercial Buildings, 1865-1965, Historic Context Statement, adopted November 2, 2022",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=6e02d03c979da663645a63b156e861fca44d7f96ecca9ad8192c0828493bf7fe&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Neighborhood Commercial Buildings Historic Context Statement, adopted 2022",
+      "retrieved": "2026-08-27"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1900",
+      "kind": "construction",
+      "description": "A residential corner store of about 1900 — ground-floor retail turned toward the corner under residential storeys above. The city's preservation planners put it forward for landmark designation as one of the rare intact pre-1906 examples of the type.",
+      "source": "neighborhood-commercial-context-statement"
+    }
+  ],
+  "building": {}
+}

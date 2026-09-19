@@ -1,0 +1,132 @@
+{
+  "address": "4524–4526 Mission Street, San Francisco, CA 94112",
+  "path": "/san-francisco/mission/mission-street/4524/",
+  "apn": "3147003",
+  "block": "3147",
+  "lot": "003",
+  "eas_baseid": "355260",
+  "coordinates": {
+    "lat": 37.72557,
+    "lng": -122.434496
+  },
+  "address_range": "4524–4526",
+  "street_numbers_on_parcel": [
+    "4524",
+    "4526"
+  ],
+  "parcel": {
+    "year_built": 1904,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "bedrooms": 5,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 4000,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Mission Terrace",
+    "analysis_neighborhood": "Outer Mission",
+    "property_location_raw": "4526 4524 MISSION             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 804789,
+    "assessed_improvement_value": 344901,
+    "last_sale_date": "2006-03-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201005031546",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-05-03",
+      "status_date": "2010-05-21",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201005031547",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-05-03",
+      "status_date": "2010-05-21",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "install 1/2 inch plywood, cdx w/iod @ 6\" edges, 1/2 12\" in field, no structural changes, re-roofing under separate permit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MISSION&street_type=ST&address_number=4524",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "query": "https://data.sfgov.org/resource/acdm-wktn.json?%24where=blklot%3D%273147003%27",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3147003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3147&lot=003",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3147003",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "bites",
+      "name": "Bites, merchant directory",
+      "supports": "Current occupant",
+      "query": "https://withbites.com/merchants",
+      "retrieved": "2026-09-11"
+    }
+  ],
+  "occupants": [
+    {
+      "name": "Hidden Spot Exl",
+      "cuisines": [
+        "Burgers",
+        "Wings",
+        "Sandwiches",
+        "American"
+      ],
+      "opening_hours": [
+        "Su,Tu,We,Th,Fr,Sa 11:00-20:00"
+      ],
+      "listed_address": "4528 Mission Street",
+      "source": "bites"
+    }
+  ],
+  "unknowns": [
+    "The city's address registry holds 4528 Mission Street but joins it to no parcel; the listing's coordinates fall on this one, which the assessor gives as 4524–4526."
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "address": "70 De Soto Street, San Francisco, CA 94127",
+  "path": "/san-francisco/ingleside-terraces/de-soto-street/70/",
+  "apn": "6930019",
+  "block": "6930",
+  "lot": "019",
+  "eas_baseid": "408839",
+  "coordinates": {
+    "lat": 37.722707,
+    "lng": -122.465756
+  },
+  "parcel": {
+    "year_built": 1913,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 5584,
+    "building_area_sqft": 2380,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Ingleside Terrace",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0070 DE SOTO             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 56597,
+    "assessed_improvement_value": 280851
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Ingleside Terrace Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1910–1930",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201803284823",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-03-28",
+      "status_date": "2018-08-27",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "to comply with nov 201713522 - replacing back deck, repainint exterior of house",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200105290097",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-05-29",
+      "status_date": "2002-01-17",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DE%20SOTO&street_type=ST&address_number=70",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6930019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6930&lot=019",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6930019",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.46575556039771%2037.72270712599242)%27)",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "digitalsf-8335",
+      "name": "70 De Soto Street, 1912. Willard E. Worden Glass Plate Negatives (SFP 22), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/8335",
+      "label": "Willard E. Worden Glass Plate Negatives (SFP 22), San Francisco Public Library",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912",
+      "kind": "photograph",
+      "description": "Willard E. Worden photographed the house.",
+      "source": "digitalsf-8335"
+    }
+  ]
+}

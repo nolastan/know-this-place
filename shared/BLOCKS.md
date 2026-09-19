@@ -1,0 +1,620 @@
+# The block library — what the renderer produces
+
+`scripts/seed_pages.py` composes every address page from the blocks below.
+**This is renderer documentation, not a transcription guide.** You do not write
+this markup: you put a fact in `data.json` and run
+
+```
+python3 scripts/seed_pages.py render <a page, street, neighborhood, or city>
+```
+
+Read a block here when you need to know what a page in front of you is made of,
+when you are deciding which `data.json` key a new fact belongs under, or when
+you are changing the renderer. The contract that governs all of it — the hard
+rules, and the key-to-block map — is [AGENTS.md](AGENTS.md) in this directory.
+
+Two consequences worth stating outright:
+
+- **A block that exists here but not in the renderer is a renderer gap**, and
+  the fix is a change to `seed_pages.py` so every page with that data gets the
+  block — not hand-written HTML on the one page that noticed.
+- **A page whose HTML a person genuinely maintains sets `"rendered": false`**
+  in its `data.json`, which exempts it from both `render` and the parity check.
+  It is close to never the right answer: an opted-out page stops picking up
+  every site-wide design change made after it, silently. `validate.py` prints
+  the opt-out count on every run so the cost stays visible.
+
+## Required skeleton
+
+UPPERCASE = from this page's `data.json` / `shared/site-config.json`.
+
+```html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ADDRESS — Know This Place</title>
+  <meta name="description" content="PAGE-SPECIFIC ONE- OR TWO-SENTENCE SUMMARY">
+  <link rel="canonical" href="SITE_URL + PATH">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">                    <!-- verbatim, all four -->
+  <link rel="icon" href="/shared/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/shared/site.webmanifest">
+  <link rel="stylesheet" href="/shared/site.css">
+  <script type="module" src="/shared/site.js"></script>   <!-- enhancement layer -->
+  <script type="application/ld+json"> { … "@type":"Place" … } </script>          <!-- see below -->
+  <script type="application/ld+json"> { … "@type":"BreadcrumbList" … } </script>  <!-- see below -->
+</head>
+<body>
+<header class="site-header">
+  <a class="wordmark" href="/">Know This Place</a>
+  <nav class="breadcrumb" aria-label="Breadcrumb"> … crumbs … <span aria-current="page">744</span></nav>
+</header>
+<main> … COMPOSE BLOCKS … </main>
+<footer class="site-footer"> … sources · feedback-cta · colophon … </footer>
+</body>
+</html>
+```
+
+Every page declares its structured data. An address page carries two blocks:
+`Place` (with `PostalAddress` + `GeoCoordinates`) and a `BreadcrumbList`
+restating the crumbs the breadcrumb `<nav>` already shows — that is what puts
+a trail rather than a bare URL under a search result for a page four levels
+down. Hub pages carry a `BreadcrumbList` and a `CollectionPage` wrapping an
+`ItemList` of what they list. `validate.py` permits any number of
+`application/ld+json` tags and rejects every other script.
+
+The JSON-LD, the `<footer>`
+sources/feedback/colophon, and the **FEEDBACK_URL** are identical on every page
+— `render_html` writes them from `data.json` and `shared/site-config.json`, so
+there is nothing to copy. `validate.py` enforces canonical, description,
+breadcrumb, footer, JSON-LD, the four icon links, and the prefilled feedback
+link independently of the parity check, so the contract still holds for a page
+that has opted out of rendering.
+
+The icon links are shared chrome, on every page for the same reason the
+stylesheet is. The mark itself is one file, `shared/icon.svg` (a `#1F1F1F` tile
+with a `#C2694A` dot); `favicon.ico`, `apple-touch-icon.png` and the two
+`icon-*.png` sizes are rasterized from it, so changing the mark means
+regenerating all five. The `.ico` and the apple touch icon sit at the repo root
+because browsers and iOS fetch those two paths on their own.
+
+## Composing `<main>`: a typical order
+
+Not a template — the renderer reorders, drops, or repeats blocks to fit the
+building. A history-rich place might open with prose and photos; a plain one
+leans on the stat band and timeline. The default spine:
+
+1. `<ktp-map>` — the locator band, above everything else (see "Media").
+2. `.hero` — `<h1>`, `.sub` locality line, `.tags`, and the facade card that
+   rides over the band.
+3. `.lead` — one or two sentences, and only for what no block below can
+   carry. **Dropped entirely** when the blocks already say everything.
+4. `.stats` — the numbers every building has, as tiles (not sentences).
+5. `.cols` — main narrative/timeline on the left, `.aside` panels on the right.
+   **One `.vtl` per page**, holding every dated entry, and no heading over it.
+6. Prose sections (`.section-head` + `.prose`) only where there's a real story.
+7. `.nearby` — the lateral links, written by the renderer, never by hand.
+
+---
+
+## The blocks
+
+All classes are defined in `site.css`. Each heading names the block; the markup
+under it is what `render_html` emits.
+
+### Hero — `.hero`
+Two columns (identity | facade card), stacks on mobile. It follows the locator
+band, and its media slot holds the `.media-lift` card that overlaps it — see
+"Media".
+```html
+<section class="hero">
+  <div>
+    <h1>744 Castro Street</h1>
+    <p class="sub">Eureka Valley · San Francisco, CA 94114</p>
+    <ul class="tags">
+      <li class="tag"><span class="ic ic-home"></span>Two-flat Victorian</li>
+      <li class="tag"><span class="ic ic-layers"></span>2 stories</li>
+    </ul>
+  </div>
+  <!-- media slot: see "Media" -->
+</section>
+```
+
+### Stat band — `.stats` / `.stat`
+The dashboard KPI row: one tile per measurement. Big value in sans, small
+label, an icon. Compact big numbers (`$2.67M`, `2,266`); put units in `<small>`.
+**Never duplicate a fact that's already a tag or lives in another block.**
+Categorical identity (building type, stories, zoning, district) belongs in the
+`.tags`, and the year built opens the timeline; the stat band is for
+*measurements* not shown there
+(building area, lot area, room count). If a number is detailed elsewhere (e.g.
+assessed value, which the sidebar chart owns), don't also make it a tile.
+```html
+<div class="stats">
+  <div class="stat"><span class="ic ic-plan"></span><span class="stat-val">2,266<small> sq ft</small></span><span class="stat-label">Building area</span></div>
+  <div class="stat"><span class="ic ic-lot"></span><span class="stat-val">3,125<small> sq ft</small></span><span class="stat-label">Lot area</span></div>
+  <!-- a few tiles is fine; they reflow automatically -->
+</div>
+```
+
+### Section header — `.section-head`
+Icon + title + trailing hairline. Opens each major section.
+```html
+<div class="section-head"><span class="ic ic-plan"></span><h2>Public art</h2></div>
+```
+
+### Two-column region — `.cols` + `.aside`
+Main content left, stacked side panels right. Stacks under 720px.
+```html
+<div class="cols">
+  <div class="main"> … timeline / narrative … </div>
+  <aside class="aside"> … one or more <section class="panel"> … </aside>
+</div>
+```
+
+### Panel — `.panel`
+A titled card for a sidebar chart or fact group. `<h3>` renders as a small
+uppercase kicker.
+```html
+<section class="panel"><h3>Assessed value · 2025 roll</h3> … </section>
+```
+
+### Visual timeline — `.vtl`
+A rail with dots; each item has a date, a description, and a meta row (status
+pill, a link to the record, a cost tier). Add `is-muted` to an item for a
+withdrawn or revoked record.
+
+**A permit's meta row rides on its dateline, in a `.vtl-head`.** Status, permit
+number and cost are the record's own particulars, not the event, and under the
+sentence they cost every permit a third line of rail. Beside the date they read
+as the dateline's footnotes and the item is two lines (issue #285). A
+historical entry keeps the meta row underneath: its citation is a sentence-long
+label, not three chips, and it belongs after the fact it supports.
+
+**One timeline per page, oldest entry first.** Everything dated shares the one
+rail — permits, a fire, a building contract, a photograph — interleaved in date
+order, because to a reader they are one sequence: things that happened here. Two
+rails made the reader restart the clock halfway down the page. `validate.py`
+fails a page carrying more than one `.vtl`.
+
+**No heading, ever.** The rail carried a "Permit history" one while permits
+were the only thing it could hold; a timeline is self-evident on sight, and
+nothing that describes the whole of one is worth a line of the page. It carries
+the name for screen readers instead:
+```html
+<ol class="vtl" aria-label="Timeline">
+  <li class="vtl-item">
+    <div class="vtl-head">
+      <div class="vtl-date">Aug 2005</div>
+      <div class="vtl-meta">
+        <span class="pill pill-warn"><span class="ic ic-clock"></span>Issued</span>
+        <a href="https://dbiweb02.sfgov.org/dbipts/default.aspx?page=Permit&amp;PermitNumber=200508261366">Permit 200508261366</a>
+        <span class="cost" data-tier="3" aria-label="Estimated cost over $25,000"><b>$</b><b>$</b><b>$</b></span>
+        <span class="cost-amt">$26,822</span>
+      </div>
+    </div>
+    <p class="vtl-desc">Kitchen remodel — cabinets, counter, five windows.</p>
+  </li>
+</ol>
+```
+Not every entry has a meta row: a historical one cites its source there
+(`<span>The Argonaut, Winter 2018</span>`) and one taken from an undated
+photograph has none at all. A **photograph** entry links that citation instead
+of stating it (`<a href="https://digitalsf.org/record/54747">Assessor-Recorder
+Photographs (SFP 23), San Francisco Public Library</a>`), the way a permit links
+to the permit: the reader can go and look at the item, so the entry says where.
+Entries citing a document *about* the building don't — that is attribution, and
+attribution lives in the Sources footer.
+
+**One dated event is one item, however many records it left.** The assessor shot
+four negatives of a corner parcel in an afternoon, one per street number; a
+reader scanning the rail must not meet the same date twice. The entry's `source`
+is then a list, and the meta row carries the shared label once followed by one
+link per record, each labelled with the address it was filed under (the source's
+`title`) — the same shape as a permit item, a span of context and then its
+links:
+```html
+<div class="vtl-meta">
+  <span>Assessor-Recorder Photographs (SFP 23), San Francisco Public Library</span>
+  <a href="https://digitalsf.org/record/54172">110 The Embarcadero</a>
+  <a href="https://digitalsf.org/record/54173">115 Steuart Street</a>
+</div>
+```
+Dates are whatever the record knew — `Aug 2005`,
+`April 18, 1906`, `1912`, `circa 1885`, `1930s`, `pre-1906`; a vaguer date sorts
+before a precise one in the same year, and a `pre-`/`before` hedge before that.
+
+**The rail opens with the building itself.** `parcel.year_built` is the first
+item — bare, with no meta row, because the assessor's roll is already in the
+Sources footer:
+```html
+<li class="vtl-item">
+  <div class="vtl-date">1896</div>
+  <p class="vtl-desc">Built.</p>
+</li>
+```
+It reads `Current structure built.` only where the record shows the parcel was
+cleared first: a whole building demolished on a permit filed before that year
+and not cancelled, withdrawn or expired. Anything *else* dated earlier — a
+design attributed in 1895 under a build year of 1900 — is this building, and
+saying otherwise would be a claim no source made.
+
+**Never introduce the rail with a paragraph.** Counts, totals, date spans and
+statuses are all in the items; a lead-in restates them and adds commentary.
+
+**One line closes the rail, and it is the page's only caveat.** Everything the
+rail cannot show goes there, in this order, run together as one `<small>`:
+
+1. filings deliberately excluded — street-space permits at a nominal $1, or the
+   duplicates DBI files under each street number of a shared parcel;
+2. dating conflicts the renderer reads off the data — the roll against
+   Planning's survey, a parcel classed a vacant lot that also carries a build
+   year, `building.completed_conflict`;
+3. every sentence in `unknowns` — a source against the assessor, a source
+   against itself, an open question the record leaves.
+
+The line can outlive the rail: on a page holding nothing datable and a permit
+record made entirely of omitted filings, it renders alone, because a page
+printing neither says DBI holds nothing.
+
+```html
+<p class="prose"><small>Two $1 street-space permits are omitted. The assessor
+dates the building to 1988, after this photograph was taken.</small></p>
+```
+
+Never above the rail, and never as a second paragraph: one line, or none. This
+is where the retired `.unknowns` block's contents went (issue #118) — the notes
+dispute dates, so they belong against the dates.
+
+Link every permit to its DBI record (see DATA-SOURCES.md → sf-building-permits
+for the URL pattern). Status pills: `.pill-warn` (open/issued/in progress),
+`.pill-muted` (withdrawn/revoked). **A pill always carries an icon + word** —
+never color alone; on the rail it drops its filled ground and is icon and word
+only, because it appears on the exception rather than on every item.
+
+**Which permits reach the rail, and which badge they wear** (issue #285):
+
+- **Expired and cancelled filings never appear.** They were a quarter of every
+  item on the corpus's rails, each one a date and a sentence for work the city
+  never let happen. They are counted in the line under the rail instead.
+- **A complete permit wears no badge.** More than half of all filings are
+  complete, and a badge every second item wears carries nothing; the empty
+  status lane *is* the statement. Every other status still shows its pill.
+- **The meta row carries no accent** — not on the permit link, not on the cost
+  glyphs. The dateline is where a timeline item spends its accent.
+
+### Cost tier — `.cost` ($ / $$ / $$$)
+Communicates a dollar magnitude at a glance *without* a bar (bars read as
+progress meters, which money isn't). Three `$` glyphs; `data-tier` lights the
+first N and leaves the rest at hairline. The lit glyphs take the meta row's own
+ink, not a hue: the tier is the count, and the rising warm ramp it used to
+carry topped out at the accent, which made a rail of costly permits a field of
+brick. Show the exact amount beside it in `.cost-amt`, and give the element an
+`aria-label`. Tiers for permit cost:
+`$` under $5k · `$$` $5k–$25k · `$$$` over $25k.
+```html
+<span class="cost" data-tier="2" aria-label="Estimated cost $5,000 to $25,000"><b>$</b><b>$</b><b>$</b></span>
+<span class="cost-amt">$12,000</span>
+```
+
+### Stacked part-to-whole bar — `.stack` (two categories)
+For splitting one total in two (land vs improvement value). Two segments whose
+widths are percentages of the total, plus a legend that labels **both** (the
+two data hues are only distinguishable-enough with labels present). Wrap it in
+`<ktp-figure>` and give each segment a `data-tip` so hover/focus reveals the
+exact value (see "Enhancement layer"):
+```html
+<ktp-figure>
+  <div class="stack" role="group" aria-label="Assessed value breakdown">
+    <div class="stack-seg seg-cool" style="width:70%" tabindex="0"
+         data-tip="Land · $1,870,163 · 70%" aria-label="Land, $1,870,163, 70 percent"></div>
+    <div class="stack-seg seg-warm" style="width:30%" tabindex="0"
+         data-tip="Improvements · $801,498 · 30%" aria-label="Improvements, $801,498, 30 percent"></div>
+  </div>
+  <div class="legend">
+    <span class="legend-item"><span class="swatch seg-cool"></span><span>Land</span>&nbsp;<b>$1,870,163</b></span>
+    <span class="legend-item"><span class="swatch seg-warm"></span><span>Improvements</span>&nbsp;<b>$801,498</b></span>
+  </div>
+</ktp-figure>
+```
+`seg-cool` = blue (use for the base/larger share, e.g. land), `seg-warm` =
+brick. The legend is the text-truth that survives with no JS; the `data-tip` /
+`aria-label` on each segment carries the value for pointer and keyboard.
+
+### Spec list — `.speclist`
+Secondary facts that don't merit a stat tile: icon · key · right-aligned value.
+```html
+<dl class="speclist">
+  <div class="spec"><span class="ic ic-lot"></span><span class="spec-k">Zoning</span><span class="spec-v">RH-2</span></div>
+</dl>
+```
+
+### Historic district — `.panel-district` and `.standing`
+The one panel whose subject is the **district**, not the building. It is the
+only panel that breaks the `.panel > h3` label convention, and deliberately:
+the most interesting thing it has to say is that this address stands inside a
+named historic district, and that fact does not belong in 11px muted caps.
+
+```html
+<section class="panel panel-district">
+  <p class="district-kind">Article 10 city landmark district</p>
+  <h3>Duboce Park</h3>
+  <p class="district-dateline">Significant 1896–1913</p>
+  <ul class="standing">
+    <li><span class="ic ic-check"></span>Listed on the California Register</li>
+    <li class="is-none"><span class="ic ic-none"></span>Not on the National Register</li>
+  </ul>
+  <p class="district-also">Also within Hayes Valley Commercial Historic District</p>
+</section>
+```
+
+**The name is the headline; its type is the eyebrow.** `split_district_name()`
+lifts the trailing type phrase out of the district's name — "Panhandle Historic
+District" becomes `Panhandle` under a `HISTORIC DISTRICT` eyebrow. Trailing
+qualifiers ("Extension", "(Discontiguous)") ride up with the type. Three of the
+113 district names in the data have no type phrase to lift; they keep their
+whole name and take the generic eyebrow.
+
+**A designation outranks the name's own type in the eyebrow.** Being a city
+landmark district is identity, not consequence, so it sits beside the name
+rather than in the list. The eyebrow stays **muted in every state** — it is a
+label, and a label that changes colour competes with the headline directly
+beneath it; the designation is already carried by what the eyebrow *says*. The
+panel spends **no accent colour at all**. The article number rides in line with
+the label: it is a citation and means nothing to a reader on its own.
+
+**The list carries standing only, on a three-step scale.** The icon is the
+step, never the subject — `ic-check` listed, `ic-eligible` eligible-but-not,
+`ic-none` neither — because the sentence already says which register it is.
+Two registers at the same standing merge into one line. Negatives take
+`.is-none`: muted, and one repeated mark, so shape variation stays where it
+earns attention. No rule or extra gap divides the halves; colour and repetition
+do it.
+
+**What belongs in the list, and what does not.** A register is something the
+district is *on or off* — standing. A period of significance is *when the
+district mattered* — it qualifies the name, so it reads as a dateline beneath
+it, never as a row. The survey records a literal `N/A` for undated districts;
+render no dateline rather than "Significant N/A".
+
+**Never say "no local landmark protection" unqualified here.** The row is about
+the district. A building can be an Article 10 landmark in its own right inside
+a district that holds nothing — 573 Castro Street is exactly that — so the
+negative reads `Not a city landmark district`, scoped to the panel's subject.
+
+`also_in_districts` has no home in this layout yet: a second district wants a
+second headline. It trails the panel as `.district-also` until the design has
+an answer.
+
+### Media — the locator band and the facade card
+An address page **opens with the map**: `<ktp-map>` is the first child of
+`<main>`, a band running the full width of the page frame *above* the `<h1>`.
+The facade then sits in the hero's media slot and **rides over the band's
+lower edge** — `.media-lift` pulls it up and gives it a shadow, so the card
+reads as pinned to the map behind it. Under 720px neither happens: the band
+crops to an ordinary frame and everything stacks.
+
+Both are `<ktp-*>` wrappers around a `.media` placeholder — always author the
+**placeholder**, never a raw `<img>` or iframe pointing at Google or Mapbox.
+Each enhancement swaps its own placeholder for an image once the matching key
+is in `site-config.json` (`maps_embed_key` for Street View, `mapbox_token` for
+the map), and leaves it standing when there's no key and when there's no JS.
+So imagery turns on across the whole site the day a key is set — with no page
+regeneration. Both wrappers take the same `location` and `label`, and
+`location` must equal `coordinates` in `data.json`.
+```html
+<main>
+  <ktp-map location="LAT,LNG" label="ADDRESS">
+    <figure class="media media-map">
+      <div class="media-empty"><span class="ic ic-pin"></span><span>LAT, LNG</span>
+        <small>A locator map appears here once a Mapbox token is configured.</small></div>
+    </figure>
+  </ktp-map>
+
+  <section class="hero">
+    <div> … h1, .sub, .tags … </div>
+    <ktp-streetview location="LAT,LNG" label="ADDRESS">
+      <figure class="media media-lift">
+        <div class="media-empty"><span class="ic ic-pin"></span><span>LAT, LNG</span>
+          <small>Street View appears here once a Google Maps embed key is configured.</small></div>
+      </figure>
+    </ktp-streetview>
+  </section>
+```
+`.media-map` is the 3:1 band frame; `.media-lift` is the 4:3 card that overlaps
+it. Both also zero the browser's `<figure>` margin, which is why they reach
+the edges of their slots — a plain `.media` figure (a committed photo) stays
+inset, and that is the existing behaviour, left alone. The map is a
+**locator**, not a data layer: it carries no parcel outline, no label, and no
+fact that isn't already on the page, so nothing is lost when it doesn't load.
+(A `<figcaption>` is optional — use it for a real photo's credit, not to repeat
+facts shown elsewhere like the parcel number. Neither image needs an
+attribution caption: Google and Mapbox each render their own into the picture.)
+
+**Never test or preview the Street View image.** `maps_embed_key` is
+restricted to the production domain, so it fails from localhost, from any
+preview host, and from `curl` — by design, not by fault. There is no local
+check that can pass, so attempting one only burns effort. Write the
+placeholder, confirm `location="LAT,LNG"` equals `coordinates` in `data.json`,
+and stop there.
+
+**The map is the one exception**, and only from one place: `mapbox_token` is
+URL-restricted to `knowthis.place` *and* `http://localhost:8517` (README,
+setup checklist), so the locator map does render for a human previewing the
+site with `python3 scripts/build_site.py --serve`. That is a person's check,
+on that exact port — any other port, any other host, and `curl` (which sends
+no `Referer`) all fail the restriction and prove nothing.
+Committed `assets/` photos use the same `.media` frame with `<img>` (always
+`alt`, `width`, `height`, `loading="lazy"`, and credit + license in the
+caption) and need no wrapper. Never commit Street View captures to `assets/`.
+
+### Public art — `.section-head` + `.place-list`
+Works the 1% art requirement put on a parcel. One `<li>` each: the title and
+artist on the first line (linked to the artist's page when `artist_link` has
+one), the medium, where it is, and when it can be seen on the `.hook` line —
+the inventory's own phrasing, joined with semicolons. No new classes: this is
+`.place-list`, the same list a hub uses.
+```html
+<div class="section-head"><span class="ic ic-plan"></span><h2>Public art</h2></div>
+<ul class="place-list">
+  <li><a href="http://kentroberts.com/">Three Bridges — Kent Roberts</a><br>
+    <span class="hook">Steel, concrete, brass; in stairway of California St. open space; open space and artwork are always accessible.</span></li>
+</ul>
+```
+A building with art gets the split layout even on a thin permit record — the
+art belongs in the main column, the open space in the aside.
+
+### Public open space — a `.panel` per space
+The privately-owned public open space a downtown development had to provide.
+**One panel per space, not one per building**: 345 California has three, and a
+reader needs to see that the plaza is open at all times while the snippets are
+not. `<h3>` is the space's own name from the inventory; the rows are a plain
+`.speclist`.
+```html
+<section class="panel">
+  <h3>Foundry Square NW</h3>
+  <dl class="speclist">
+    <div class="spec"><span class="ic ic-home"></span><span class="spec-k">Type</span><span class="spec-v">Plaza</span></div>
+    <div class="spec"><span class="ic ic-clock"></span><span class="spec-k">Hours</span><span class="spec-v">Open at all times</span></div>
+  </dl>
+</section>
+```
+The inventory's `year` is the year of the **requirement**, not an opening date —
+label that row "Required from", and never render it as when the space opened.
+
+### Current occupant — `.panel-occupant`
+The businesses trading from the building today, from `occupants`, as an
+infobox at the **top** of the aside. **One panel per building, not per
+merchant**: a shared kitchen lists three brands at one door, and three panels
+would repeat one offer three times. The eyebrow is the district panel's; each
+merchant is an `.occupant` group — the name as a serif headline, its `kinds`
+(or `cuisines`, from a food directory) on a muted line, a `.speclist` of hours
+— split from the next by a hairline. Each directory in `REFERRALS` that lists
+one of the merchants earns one outlined offer button, with a referral
+disclosure beneath it where the row carries one.
+
+**Where the button sits says whose offer it is.** On a panel listing more than
+one business, an offer only one of them has earned goes *inside* that
+business's `.occupant` group: a reader skimming takes the name directly above
+a button to be its owner, and a flat stack at the foot put Ritual's gelateria
+offer under Hotel Triton on the 334–352 Grant Avenue page. An offer several of
+them share still closes the panel — a shared kitchen trading as three brands
+must not print one directory's button three times — and a panel with a single
+business leaves its offer at the foot too, where nothing is ambiguous and
+moving it up would only push "Last updated" below the button.
+
+**The read date sits with the hours it dates**, by the same rule. It appears
+only where the listing published hours, which is what it is about, so a
+business publishing none carries none. Where every business on the panel is
+dated and dated alike, the one line closes the panel — a shared kitchen's
+three brands must not print one read date three times. Otherwise each dated
+group carries its own, above that group's offer: one line closing a panel of
+two reads as the panel's own, and on the 334–352 Grant Avenue page it dated
+Amorino Gelato's hours while sitting under a hotel that publishes none. Per
+group it is also the truer date — 1507 Sloat Boulevard showed one date for a
+Bites listing read on the 11th and a Crumbl one read on the 12th.
+
+The panel then closes with any offer not claimed by one group above.
+A business two directories list is one `.occupant` group with two buttons
+under it, never two groups.
+```html
+<section class="panel panel-occupant">
+  <p class="occupant-kind">Current occupant</p>
+  <div class="occupant">
+    <h3>Burma Superstar</h3>
+    <p class="occupant-kinds">Burmese · Asian</p>
+    <dl class="speclist">
+      <div class="spec"><span class="ic ic-clock"></span><span class="spec-k">Fri, Sat</span><span class="spec-v">11:30am–3pm, 5:30pm–10pm</span></div>
+    </dl>
+  </div>
+  <p class="occupant-updated">Last updated September 11, 2026</p>
+  <p class="occupant-offer"><a href="…" rel="sponsored noopener">Get $5 off your first Bites order</a>
+  <small>Referral link. It opens Bites, where you can search for this restaurant.</small></p>
+</section>
+```
+A `Listed at` row (`ic-pin`) appears only when the merchant's door is not the
+page's lead number — 115 on the 111–117 New Montgomery page, or a corner
+building's other street. The offer is `rel="sponsored"`. Bites' row adds a line
+saying plainly that the link does not open the merchant's own menu; a row whose
+link does reach the merchant — a Momence studio's sign-up — carries none, since
+the button already says where it goes.
+
+An offer the reader claims with a **code** rather than a link that carries it
+**inverts the block**, on `.occupant-offer.occupant-offer-code`. It is the code
+that earns the offer, not the link, so the code takes the accent and the box the
+button would have had — `.offer-code`, stating the offer over itself on a muted
+`.offer-code-claim` line — and the merchant's own address drops beneath it to an
+ordinary link labelled with its host. The disclosure line then says where the
+reader puts the code.
+
+The whole box is the copy target, but only once `<ktp-copy>` has made it one:
+the script adds the role, the `ic-copy` icon and (through them, in CSS) the
+pointer and the hover, so a reader whose script never ran is shown no
+affordance at all — just a code, which `user-select: all` still gives up in one
+click. Never put the code only in the link, and never render the icon or a Copy
+control into the markup.
+```html
+<p class="occupant-offer occupant-offer-code">
+  <ktp-copy class="offer-code"><span class="offer-code-claim">Get 100 points at Insomnia Cookies</span><code>Stanft6246</code></ktp-copy>
+  <a href="…" rel="sponsored noopener"><span class="ic ic-link"></span>insomniacookies.com</a>
+  <small>Referral code. Type it into the “Referral code (optional)” field when you create an Insomnia Cookies account.</small>
+</p>
+```
+
+### Notes — `.community-note`
+`.community-note` wraps clearly-attributed unverified contributions (auto-
+labeled by CSS).
+
+A `.unknowns` block used to close every address page with a generic listing of
+what the page had not documented. Issue #118 deleted it: the listing was
+boilerplate on all 15,956 pages, and the real notes it carried — a source
+against the assessor, a source against itself — moved to the line that closes
+the timeline, against the dates they dispute. See "Timeline" above.
+
+### Nearby — `.nearby`
+The lateral links out of an address page: the documented buildings up and down
+the street, on the same assessor block, and around the corner. **Generated,
+never hand-written** — `render_html` builds it from `shared/nearby.json`, which
+`scripts/build_link_index.py` derives from the whole tree, so a page's own
+`data.json` has no say in it. Two columns on a wide viewport, one on a narrow
+one; the relationship rides on a `.pill.pill-muted` at the right of each row,
+and there are no `.hook` lines — a hub's list summarises its children, this one
+only points.
+```html
+<section class="nearby">
+  <div class="section-head"><span class="ic ic-pin"></span><h2>Nearby</h2></div>
+  <ul class="place-list">
+    <li><a href="/san-francisco/mission/bryant-street/2262/">2262 Bryant Street</a>
+      <span class="pill pill-muted">Same block</span></li>
+  </ul>
+</section>
+```
+
+A **street hub** carries the same block, headed "Nearby streets" and listing up
+to six other streets in its neighborhood with a building count on the pill.
+That one needs no committed index — a street hub is already built from the
+whole directory beneath it, so `seed_pages.nearby_streets_html` reads the
+neighborhood off the tree. It is a fact about the neighborhood, not about one
+street: after seeding, `seed_pages.py hubs --area NAME` is what brings the
+neighbors' lists level, the way `build_link_index.py` catches
+`shared/nearby.json` up.
+
+The absence of `<br><span class="hook">` matters on a hub and not only as
+style. `validate.hub_html_items` reads a hub's generated list back out of
+exactly that pairing. On a neighborhood hub, where the street list is still
+kept in both files (a street's line can carry a hand-written override —
+[REFERENCE.md → Hub pages](../REFERENCE.md#hub-pages-and-their-two-hand-maintained-sections)),
+`check_hub_sync` would then demand the same item in `index.md`; keeping the
+nearby block off the pattern is what lets `index.md` stay a person's prose
+there. A street hub's own list no longer round-trips through `index.md` at all
+(#151), but the block stays off the pattern regardless — it's a fact about the
+neighborhood, not an entry a hub's list check has any reason to know about.
+
+### Icons — `.ic .ic-NAME`
+`<span class="ic ic-calendar"></span>`; sized in `em`, colored by surrounding
+text. Available: `ic-calendar` `ic-home` `ic-layers` `ic-plan` `ic-lot`
+`ic-value` `ic-permit` `ic-pin` `ic-clock` `ic-help` `ic-link` `ic-check`
+`ic-copy` `ic-ruler`. `ic-lg` enlarges. **Only icons in this list exist.** Adding one is
+a `site.css` change — see [AGENTS.md → Extending the system](AGENTS.md#extending-the-system).

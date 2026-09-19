@@ -1,5 +1,5 @@
 {
-  "address": "27–29 Liberty Street, San Francisco, CA 94110",
+  "address": "27\u201329 Liberty Street, San Francisco, CA 94110",
   "path": "/san-francisco/mission/liberty-street/27/",
   "apn": "3608039",
   "block": "3608",
@@ -9,7 +9,7 @@
     "lat": 37.757415,
     "lng": -122.421909
   },
-  "address_range": "27–29",
+  "address_range": "27\u201329",
   "street_numbers_on_parcel": [
     "27",
     "29"
@@ -52,7 +52,7 @@
     "national_register_status": "Not listed",
     "article_10_11_status": "Article 10 historic district",
     "local_landmark_protection": true,
-    "period_of_significance": "1860s–1906",
+    "period_of_significance": "1860s\u20131906",
     "source": "sf-historic-districts"
   },
   "also_in_districts": [
@@ -62,7 +62,7 @@
       "national_register_status": "Listed",
       "article_10_11_status": "No local landmark protection",
       "local_landmark_protection": false,
-      "period_of_significance": "1867–1911",
+      "period_of_significance": "1867\u20131911",
       "source": "sf-historic-districts"
     }
   ],
@@ -260,15 +260,34 @@
     },
     {
       "id": "sf-planning",
-      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "name": "SF Planning Department \u2014 Historic Resource Status by Parcel via DataSF",
       "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3608039",
       "retrieved": "2026-07-31"
     },
     {
       "id": "sf-historic-districts",
-      "name": "SF Planning Department — Historic Districts via DataSF",
+      "name": "SF Planning Department \u2014 Historic Districts via DataSF",
       "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42190939696758%2037.75741462698501)%27)",
       "retrieved": "2026-07-31"
+    },
+    {
+      "id": "nrhp-83001230",
+      "name": "National Register of Historic Places nomination, Liberty Street Historic District (reference number 83001230), National Park Service.",
+      "query": "https://npgallery.nps.gov/NRHP/GetAsset/NRHP/83001230_text",
+      "label": "National Register of Historic Places nomination, National Park Service",
+      "retrieved": "2026-09-15"
     }
-  ]
+  ],
+  "historical_record": [
+    {
+      "date": "1894",
+      "kind": "construction",
+      "description": "House (now 4 apartments) designed by the architect Robert H. White.",
+      "source": "nrhp-83001230"
+    }
+  ],
+  "building": {
+    "architect": "Robert H. White",
+    "completed_conflict": "This address is recorded as built 1894; the assessor's roll gives a later year, a placeholder this dataset uses for many undated older buildings rather than a demolition date."
+  }
 }

@@ -4,6 +4,11 @@
     python3 research/tools/check.py            # check everything
     python3 research/tools/check.py --stats    # ...and print the yield so far
     python3 research/tools/check.py --report <findings-file>   # the PR body's table
+    python3 research/tools/check.py --overlap <findings-file>  # facts the pages already carry
+    python3 research/tools/check.py --landed  <findings-file>  # published entries that changed nothing
+    python3 research/tools/check.py --index                    # rebuild findings/INDEX.md
+    python3 research/tools/check.py --peek   <findings-file>   # what a batch is, without reading it
+    python3 research/tools/check.py --find "1377 Fulton"       # entries matching words, corpus-wide
 
 What it checks:
   * every dossier in research/sources/ has a row in research/SOURCES.md, and
@@ -12,6 +17,10 @@ What it checks:
     research/schema/finding.schema.json;
   * the cross-field rules the schema can't express (a resolved finding needs a
     parcel and a method; a published one needs to be resolved first);
+  * that every published finding has a page at the path it records — a parcel
+    addressed on two streets keeps one page, at the number the assessor files
+    it under, so a path formed from the finding's own number can name a
+    directory that never gets created;
   * the publish loop: once anything in a file is published, every resolved
     finding in it must carry a publish decision. PR #114 published 425 findings
     and marked none of them, and nobody could then tell finished work from
@@ -25,6 +34,25 @@ a run's PR body carries (RUNBOOK.md, "Close the books"). Only findings that
 reached a parcel appear in it, because the parcel is what carries a
 neighborhood; the unresolved and rejected ones are counted underneath it.
 
+--index, --peek and --find exist so that nobody opens a findings file. The
+directory is ~30 MB and its largest file is past what a context window holds,
+so an agent that reads one to reach three entries has spent its session. --index
+regenerates findings/INDEX.md, which says what every batch covers; a default run
+fails while it is stale, the same contract the sitemap has on the website side.
+--peek prints one batch's header, coverage and a spread sample of its entries;
+--find matches words across every findings file at once and prints a line each.
+
+--overlap answers the question step 4 has to ask before it writes anything:
+does the page already say this? Two statements routinely cover the same
+buildings, so a citywide batch lands on parcels a neighbouring survey has
+already documented. The LGBTQ citywide run found 16 of 307 resolved findings
+restating what the page already carried, word for word in places — caught by
+hand at audit time, after they had been written and rendered. Run it between
+`resolve_eas.py apply` and publishing: it reports each resolved finding whose
+wording substantially repeats an existing historical_record entry, hook or
+narrative on its target page, so the decision to decline or trim is made before
+the fact reaches the page rather than after.
+
 The schema file is the single source of truth for shape — this script reads it
 rather than restating it, so the two can't drift. It implements the subset of
 JSON Schema the schema file actually uses: type, required, properties,
@@ -33,6 +61,7 @@ additionalProperties, items, enum, pattern, and local $ref.
 from __future__ import annotations
 
 import argparse
+import functools
 import json
 import re
 import sys
@@ -173,11 +202,88 @@ def check_findings_file(path: Path, schema: dict, ids: set[str]) -> dict | None:
     return data if isinstance(data, dict) else None
 
 
+# The source talking about itself, in a field that becomes page prose. Matches
+# "the volume records", "this statement dates", "the survey gives" and friends —
+# a determiner, one of the source nouns, and a reporting verb.
+SOURCE_VOICE = re.compile(
+    r"\b(?:the|this|its|a)\s+(?:same\s+)?"
+    r"(?:volume|statement|survey|report|archive|newsletter|document|guide|nomination|inventory)\b"
+    r"[^.]{0,40}?\b(?:says?|said|states?|records?|recorded|gives?|dates?|notes?|lists?|"
+    r"describes?|identifies|credits?|calls?|marks?|reports?|mentions?|shows?|holds?|"
+    r"attributes?|according)\b", re.I)
+
+# The same slip with the noun elided. "Illustrated as a good example of Greek
+# Revival" names no source and still reads on the page as the document talking
+# about its own figures — there is no illustration on the page. It slipped past
+# the pattern above four times in one run because it needs no noun at all.
+# "photographed as an example of the neighbourhood's flats" is the same slip and
+# was not caught: it survived the first sweep in nine descriptions because the
+# verb list here was written from the four that happened to be in front of it.
+SOURCE_VOICE_PASSIVE = re.compile(
+    r"\b(?:illustrated|pictured|depicted|reproduced|photographed)\s+"
+    r"(?:above|below|here|opposite)?\s*as\b"
+    r"|\bgiven\s+as\s+an\s+example\b|\bcaptioned\b", re.I)
+
+
+@functools.lru_cache(maxsize=1)
+def pages_by_apn() -> dict:
+    """Every address page on disk, keyed by the parcel it documents.
+
+    Reading 15,000 files is not free, so nothing calls this until a finding has
+    already failed the cheap test — a `resolution.path` with no `data.json`
+    under it. Then it answers the only question worth asking next: does the
+    parcel have a page somewhere else?
+    """
+    out: dict[str, str] = {}
+    for p in (ROOT.parent / "san-francisco").glob("*/*/*/data.json"):
+        try:
+            d = json.loads(p.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        apn = d.get("apn")
+        if apn and apn not in out:
+            out[apn] = d.get("path") or "/" + str(p.relative_to(ROOT.parent).parent) + "/"
+    return out
+
+
+def missing_page(res: dict) -> str | None:
+    """Why a resolution's path has no page, phrased for the run that has to fix it.
+
+    A parcel addressed on two streets keeps its single page at the number the
+    assessor files it under, and `resolve_eas.py` forms a path from the
+    finding's own number — so a resolution written before the page existed can
+    name a directory that will never be created. The publisher then writes the
+    fact onto the page the parcel does have and the findings file still points
+    at the phantom. 28 sfp-23 findings sat like that, and eight umb-survey
+    findings were declined outright with "no page was seeded for it" while the
+    parcel's page had been sitting one street over the whole time.
+    """
+    rel = (res.get("path") or "").strip("/")
+    if not rel or (ROOT.parent / rel / "data.json").exists():
+        return None
+    elsewhere = pages_by_apn().get(res.get("apn"))
+    if elsewhere:
+        return (f"no page at resolution.path {res.get('path')!r}, but parcel "
+                f"{res.get('apn')} is documented at {elsewhere} — one parcel is "
+                f"one page, so record that path")
+    return (f"no page at resolution.path {res.get('path')!r} and parcel "
+            f"{res.get('apn')} has no page anywhere — seed it, or decline the "
+            f"finding with the reason (no roll row, or a condominium APN)")
+
+
 def check_rules(rel: Path, data: dict) -> None:
     """Cross-field rules the schema can't state."""
     seen: set[str] = set()
     any_published = False
     unmarked: list[str] = []
+    # One parcel is one page. Two findings that resolve to the same parcel and
+    # are both going to a page, under different paths, mean one of them is
+    # filed on a page the parcel does not have — the corner-lot case, where the city addresses a building on
+    # both its streets and the site keeps a single page at the lowest number of
+    # the street the assessor files it under. Caught here it is a line; caught
+    # after seeding it is a page that never gets created and a fact that never
+    # lands.
+    paths_by_apn: dict[str, dict[str, str]] = {}
     for f in data.get("findings", []):
         if not isinstance(f, dict):
             continue
@@ -185,6 +291,25 @@ def check_rules(rel: Path, data: dict) -> None:
         if fid in seen:
             err(str(rel), f"duplicate finding id {fid!r}")
         seen.add(fid)
+
+        # A hyphenated street_number is a range the resolver cannot read. It
+        # looks the number up literally, finds nothing, and reports "EAS has no
+        # address near it on this street" — which reads like a dead address and
+        # is really a mis-filled field. The range belongs in
+        # extra.address_range_as_recorded, with street_number holding the low
+        # number alone. One batch lost 40 resolutions to this before anyone
+        # noticed 809-811 Pierce Street coming back unresolved.
+        num = f.get("street_number") or ""
+        extra = f.get("extra") if isinstance(f.get("extra"), dict) else {}
+        _res = f.get("resolution") if isinstance(f.get("resolution"), dict) else {}
+        if ("-" in num and not extra.get("address_range_as_recorded")
+                and _res.get("status") == "unresolved"):
+            err(str(rel), f"{fid}: street_number {num!r} is a range, but "
+                          f"extra.address_range_as_recorded is not set — the "
+                          f"resolver reads the range from that field and looks "
+                          f"street_number up literally, so this will come back "
+                          f"unresolved. Put the range there and the low number "
+                          f"in street_number.")
 
         res = f.get("resolution", {}) if isinstance(f.get("resolution"), dict) else {}
         status = res.get("status")
@@ -197,8 +322,36 @@ def check_rules(rel: Path, data: dict) -> None:
             for key in ("apn", "path", "method"):
                 if not res.get(key):
                     err(str(rel), f"{fid}: resolved findings need resolution.{key}")
+            # The resolver files a page on the analysis neighborhood the
+            # assessor and EAS give the parcel, and that vocabulary is not this
+            # site's — "Twin Peaks" is a real analysis neighborhood and not one
+            # of the directories under san-francisco/. Caught here it costs a
+            # line; caught after `seed_pages.py seed-list` it is a directory
+            # full of pages in a place the site does not use.
+            area = (res.get("path") or "").strip("/").split("/")
+            if len(area) >= 2 and not (ROOT.parent / area[0] / area[1]).is_dir():
+                err(str(rel), f"{fid}: resolution.path names {area[0]}/{area[1]}/, "
+                              f"which is not a directory this site has")
+            apn, path = res.get("apn"), res.get("path")
+            if apn and path and pub_status != "declined":
+                paths_by_apn.setdefault(apn, {}).setdefault(path, str(fid))
         elif status in ("unresolved", "rejected") and not res.get("note") and not res.get("method"):
             err(str(rel), f"{fid}: {status} findings must say why (resolution.note or .method)")
+
+        # A page's Sources footer is the attribution; the body never names the
+        # archive it came from. The trap is not a deliberate citation but a
+        # hedge carried over in the extractor's voice — "the volume gives no
+        # year", "the survey records it as demolished" — which reads on the
+        # page as the source talking about itself. One run wrote 50 of these
+        # before a grep caught them. State the fact, or drop the hedge and let
+        # date_precision carry it.
+        desc = f.get("description") or ""
+        hit = SOURCE_VOICE.search(desc) or SOURCE_VOICE_PASSIVE.search(desc)
+        if hit:
+            err(str(rel), f"{fid}: description names its own source "
+                          f"({hit.group(0)!r}) — a page body "
+                          f"never says where the fact came from; the Sources "
+                          f"footer is the attribution. State the fact instead.")
 
         if pub_status == "published":
             any_published = True
@@ -206,6 +359,40 @@ def check_rules(rel: Path, data: dict) -> None:
                 err(str(rel), f"{fid}: published but resolution.status is {status!r}")
             if not pub.get("pr"):
                 err(str(rel), f"{fid}: published findings need publish.pr")
+            # "Published" is a claim about a page, and the cheapest way for it
+            # to be false is for the page never to have existed.
+            why = missing_page(res)
+            if why:
+                err(str(rel), f"{fid}: published, {why}")
+            # A page's timeline is ordered by date, and an entry with no date
+            # renders a row that literally reads "unknown" above the 1930s. An
+            # undated fact still has three homes that carry no year by design:
+            # a spec row (building.architect, .builder, .developer, .name) for
+            # a credit, the historic_survey block for a survey's own
+            # observation of style, integrity or listing, and the
+            # notable_residents panel, whose rows print "Undated" where the
+            # source names a resident and no period. So a published undated
+            # finding must say which of the three took it. The Modern
+            # Architecture statement wrote 92 of these into timelines before a
+            # render caught them.
+            if str(f.get("date") or "").strip().lower() in (
+                    "", "unknown", "undated", "undated in the source",
+                    "n.d.", "n. d.", "no date", "none"):
+                note = (pub.get("note") or "").lower()
+                if not any(w in note for w in ("spec row", "survey block",
+                                               "notable_residents")):
+                    err(str(rel), f"{fid}: published with no date at all "
+                                  f"({f.get('date')!r}) — an undated fact belongs in a "
+                                  f"spec row, the survey block or notable_residents: "
+                                  f"say which one took it in publish.note, or decline "
+                                  f"the finding.")
+
+    for apn, paths in sorted(paths_by_apn.items()):
+        if len(paths) > 1:
+            where = "; ".join(f"{p} ({f})" for p, f in sorted(paths.items()))
+            err(str(rel), f"parcel {apn} is resolved to {len(paths)} different "
+                          f"paths — one parcel is one page, so pick the one the "
+                          f"parcel actually has: {where}")
 
     # The publish loop. A file with published entries has been through a
     # publishing run, so every resolved entry in it owes a decision — published
@@ -267,6 +454,24 @@ def stats(files: list[Path]) -> None:
               "declined.")
 
 
+def _page_before_batch(rel: str, batch_commits: set[str]) -> dict:
+    """The page's data.json as it stood before this batch's commits touched it."""
+    import subprocess
+    log = subprocess.run(["git", "log", "--format=%H", "--", rel],
+                         cwd=ROOT.parent, capture_output=True, text=True).stdout.split()
+    mine = [c for c in log if c in batch_commits]
+    if not mine:
+        return {}
+    blob = subprocess.run(["git", "show", f"{mine[-1]}^:{rel}"],
+                          cwd=ROOT.parent, capture_output=True, text=True)
+    if blob.returncode != 0:
+        return {}
+    try:
+        return json.loads(blob.stdout)
+    except json.JSONDecodeError:
+        return {}
+
+
 def report(path: Path) -> None:
     """One batch by neighborhood directory, in the PR body's Markdown.
 
@@ -315,19 +520,35 @@ def report(path: Path) -> None:
             ["git", "log", "--diff-filter=A", "--format=%H", "--", rel],
             cwd=ROOT.parent, capture_output=True, text=True).stdout.split()
         # Not committed yet, or added by one of this batch's own commits.
-        (created if not added or added[-1] in batch_commits else edited)[area] += 1
+        is_new = not added or added[-1] in batch_commits
+        (created if is_new else edited)[area] += 1
         try:
             page = json.loads((ROOT.parent / rel).read_text(encoding="utf-8"))
         except (OSError, json.JSONDecodeError):
             continue
-        conflicts[area] += len(page.get("unknowns") or [])
-        if ((page.get("building") or {}).get("completed_conflict")):
-            dates[area] += 1
+        # Count what THIS batch stated, not what the page happens to hold. A
+        # page other runs have already documented usually carries their
+        # conflicts too, and counting those credited one digitalsf batch with
+        # five conflicts and four disputed dates it had not written a word of.
+        # For a page the batch created, everything on it is the batch's; for a
+        # page it edited, subtract what was there before it touched it.
+        before_unknowns, before_dates = 0, 0
+        if not is_new:
+            prev = _page_before_batch(rel, batch_commits)
+            before_unknowns = len(prev.get("unknowns") or [])
+            before_dates = 1 if (prev.get("building") or {}).get("completed_conflict") else 0
+        conflicts[area] += max(0, len(page.get("unknowns") or []) - before_unknowns)
+        now_dates = 1 if (page.get("building") or {}).get("completed_conflict") else 0
+        dates[area] += max(0, now_dates - before_dates)
 
     areas = sorted(set(created) | set(edited) | set(facts) | set(declined),
                    key=lambda a: (-(created[a] + edited[a]), a))
+    # The last column counts findings that reached a parcel and were then
+    # declined — a duplicate, an undated claim, a fact a better source already
+    # carries. It was headed "Resolved, no page", which named a different thing
+    # (a parcel that cannot carry a page) and was never what it counted.
     cols = ("Pages created", "Pages edited", "Facts published",
-            "Conflicts stated", "Dates disputed", "Resolved, no page")
+            "Conflicts stated", "Dates disputed", "Declined")
     print(f"| Neighborhood | {' | '.join(cols)} |")
     print("|---" + "|---:" * len(cols) + "|")
     counters = (created, edited, facts, conflicts, dates, declined)
@@ -345,20 +566,923 @@ def report(path: Path) -> None:
               f"and cannot be grouped by neighborhood.")
 
 
+
+STOPWORDS = set("""about after also been before being between both came could described
+during each first from have here into more most much only other over said same
+some such than that their them then there these they this those through under
+until were what when where which while with would""".split())
+
+
+def _words(text: str) -> set[str]:
+    """Content words of a passage, for comparing what two sentences say."""
+    return {w for w in re.findall(r"[a-z']{4,}", text.lower())} - STOPWORDS
+
+
+def _people(text: str) -> set[str]:
+    """Surnames and firm words in a credit, for matching a person across sources."""
+    return {w for w in re.findall(r"[A-Z][A-Za-z'\u2019&.-]{3,}", text or "")
+            if w.lower() not in STOPWORDS}
+
+
+def _year(value) -> int | None:
+    m = re.search(r"\b(1[89]\d\d|20\d\d)\b", str(value or ""))
+    return int(m.group(1)) if m else None
+
+
+def _proper_names(extra) -> set[str]:
+    """Business, organisation and building names a finding names in ``extra``.
+
+    These are the handles a page already uses when it carries the same fact from
+    another source. A leading article is dropped because sources disagree about
+    it, and anything under five characters is dropped because it produces
+    matches on ordinary words.
+    """
+    if not isinstance(extra, dict):
+        return set()
+    out: set[str] = set()
+    for key in ("business_name", "organisation", "building_name", "also_known_as"):
+        raw = extra.get(key)
+        if not isinstance(raw, str):
+            continue
+        for part in re.split(r"[;/]| and later ", raw):
+            name = part.strip().strip(".,")
+            name = re.sub(r"^(the|a|an)\s+", "", name, flags=re.I).strip()
+            if len(name) >= 5:
+                out.add(name)
+    return out
+
+
+_YEARS = re.compile(r"\b(?:1[89]|20)\d\d\b")
+# A year the prose states as the date of the thing the entry is about — the
+# timeline label already shows it. A year inside a range ("1912 to 1914") or
+# named as a different event's date is not this.
+_YEAR_AGAIN = re.compile(r"\b(?:in|of|from|since|by|during|dated)\s+((?:1[89]|20)\d\d)\b")
+_GONE_EXEMPT = {"site history", "demolition"}
+_GONE_FRAME = re.compile(
+    r"\b(stood|until|then on|then standing|formerly|demolish\w*|razed|replaced|"
+    r"took its place|came down|cleared|no longer|previously|gone|survived|had been|"
+    r"kept when|retained)\b",
+    re.I)
+
+
+def _cited_source_ids(source_id: str, findings: list) -> set:
+    """The source ids this batch's own entries can appear under on a page.
+
+    A source that cites per item writes `<register id>-<item>` onto the page —
+    `digitalsf-8325`, `sf-environmental-review-333californiaoff5198sanf`. The
+    item part comes out of the citation, so the ids one batch can have written
+    are enumerable, and matching on the register-id prefix instead sweeps in
+    every other batch of the same source. That is a miss, not a false positive:
+    the whole point of --overlap is to catch a fact the page already carries.
+    """
+    ids = {source_id} if source_id else set()
+    for finding in findings:
+        cite = finding.get("citation") or {}
+        for raw in (cite.get("url", ""), cite.get("corpus_path", ""), cite.get("locator", "")):
+            for token in re.split(r"[\s/]+", str(raw)):
+                token = token.strip().removesuffix(".txt").removesuffix(".json")
+                if token and re.fullmatch(r"[A-Za-z0-9._-]{4,}", token):
+                    ids.add(f"{source_id}-{token}")
+    return ids
+
+
+def overlap(path: Path) -> None:
+    """Report resolved findings the target page already carries.
+
+    Two scans, because they catch different duplicates:
+
+    * **wording** — content-word overlap against the page's other
+      historical_record entries (its own source excluded) plus hook and
+      narrative prose. The threshold is deliberately low: this prints
+      candidates for a human decision, and a false positive costs one glance
+      while a miss costs a duplicated fact.
+    * **name and date** — the practitioner named in ``extra`` plus a year
+      within two of an entry already on the page from another source. Wording
+      overlap misses these whenever the two sources phrase the same credit
+      differently, which they usually do. A citywide source organised by
+      architect or builder overlaps a neighbourhood survey of the same person
+      almost completely; volume D-F of the professionals biographies had 20
+      duplicates flagged by wording and 35 more flagged only by this scan.
+    * **the proper name** — a business, organisation or building named in
+      ``extra`` that already appears, verbatim, in prose the page carries from
+      another source. Undated and date-independent, which is the point: a venue
+      moves, a survey and a thematic statement give it different years, and both
+      the wording scan and the name-and-date scan let it through. The 2004
+      sexual-identity subcultures statement had 21 findings flagged by wording
+      and 28 flagged by name, most of them not in the first set — nearly its
+      whole Appendix C, which is the same list of North Beach bars the North
+      Beach survey had already published.
+    * **the replacement building** — a finding whose fact predates the
+      parcel's ``year_built`` by more than four years and whose sentence never
+      says the thing it describes is gone. Most facts worth publishing about a
+      demolished building land on the page of whatever replaced it, and a
+      sentence written flat then reads as a description of the building
+      standing there now: "the Robins Building was built to the design of T.
+      Paterson Ross" on a page the assessor dates 1987. The fix is a frame —
+      *stood here until*, *then on the corner*, *a building then standing
+      here* — not a decline; the fact is usually the best thing on the page.
+      The 1975-1982 downtown environmental reports needed it eleven times in
+      one batch, because a tower's EIR is mostly a description of what the
+      tower removed. Kinds that already say it (``site history``,
+      ``demolition``) are exempt.
+    * **the roll year** — a finding dated exactly the parcel's
+      ``year_built`` whose fact is not the building going up. Every page
+      already prints the assessor's year in its "Built NNNN" tag, so such a
+      date adds nothing; worse, it is what a source looks like when it prints
+      a build year in one column and a present-day use in the next, and the
+      extractor reads the pair as one event. The SoMa Filipino addendum's
+      appendix table did exactly that and put a child care centre, a bookshop
+      and a Filipino cultural centre on their buildings' construction dates —
+      five entries, all withdrawn. This scan flags the shape, not the error:
+      an occupancy that genuinely began the year the building opened is real,
+      and says so in its publish note.
+    """
+    repo = ROOT.parent
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        err(str(path), f"--overlap could not read the file: {exc}")
+        return
+
+    source_id = data.get("source_id", "")
+    # A page records the source by the id it cites, not the register id, so the
+    # only reliable way to tell "the page already had this" from "this batch just
+    # wrote it" is the text of the batch's own findings.
+    ours = {f.get("description", "") for f in data.get("findings", [])}
+    our_source_ids = _cited_source_ids(source_id, data.get("findings", []))
+
+    def is_ours(entry: dict) -> bool:
+        """Did this batch write this entry?
+
+        Matching on the description text alone is not enough: a publisher
+        trims the address and the date out of a finding's sentence before it
+        goes on the page, so "Willard E. Worden photographed the property at
+        710 Victoria Street in 1912" is stored as "…photographed the house."
+        and every entry the batch had just written came back as a duplicate of
+        itself — 60 of them in one run. Where a source cites per item, the
+        page's source id is the register id with the item appended
+        (`digitalsf-8325`), so the id is the reliable test.
+
+        The prefix alone is not, though: `sf-environmental-review-<item>`
+        matches every batch this source has ever published, so a later batch
+        that re-reads a building an earlier one already documented came back
+        clean. 216 Pine Street and the Charleston Building were both already on
+        their pages, cited per document, when this batch re-extracted them.
+        So the test is the set of item ids *this file* cites, not the prefix.
+        """
+        # `source` may be a list where one event left several records
+        # (REFERENCE.md → historical_record); any one of them counts.
+        srcs = entry.get("source") or ""
+        srcs = srcs if isinstance(srcs, list) else [srcs]
+        return (any(s in (source_id, data.get("batch")) or s in our_source_ids
+                    for s in srcs)
+                or entry.get("description", "") in ours)
+    hits, name_hits, roll_hits, proper_hits, checked, missing = [], [], [], [], 0, 0
+    gone_hits: list[tuple] = []
+    date_hits: list = []
+    bundle_hits: list = []
+    for finding in data.get("findings", []):
+        res = finding.get("resolution") or {}
+        if res.get("status") != "resolved" or not res.get("path"):
+            continue
+        # A finding already declined has had this decision made about it.
+        if (finding.get("publish") or {}).get("status") == "declined":
+            continue
+        page = repo / res["path"].strip("/") / "data.json"
+        if not page.exists():
+            missing += 1
+            continue
+        try:
+            doc = json.loads(page.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            missing += 1
+            continue
+        checked += 1
+
+        # scan three: a date that is only the assessor's build year restated.
+        # The page prints that year already, and a fact which is not about the
+        # building going up has no business carrying it — see the docstring.
+        built = _year((doc.get("parcel") or {}).get("year_built"))
+        mine_year = _year(finding.get("date"))
+        if (built and mine_year == built
+                and finding.get("kind") not in ("construction", "building contract")):
+            roll_hits.append((finding.get("id", "?"), res["path"], built,
+                              finding.get("kind", "?"),
+                              finding.get("description", "")[:70]))
+
+        # scan five: the fact predates the building on the parcel today, and the
+        # sentence never says so. See the docstring — the fix is a frame, not a
+        # decline.
+        if (built and mine_year and built - mine_year > 4
+                and finding.get("kind") not in _GONE_EXEMPT
+                and not _GONE_FRAME.search(finding.get("description", ""))):
+            gone_hits.append((finding.get("id", "?"), res["path"], mine_year, built,
+                              finding.get("description", "")[:70]))
+
+        # scan two: the same person, credited at the same date, from another source
+        who = (finding.get("extra") or {}).get("architect_as_recorded")
+        names = _people(who)
+        if names and mine_year:
+            for entry in doc.get("historical_record", []):
+                if is_ours(entry):
+                    continue
+                their_year = _year(entry.get("date"))
+                if their_year is None or abs(their_year - mine_year) > 2:
+                    continue
+                if names & _people(entry.get("description", "")):
+                    name_hits.append((finding.get("id", "?"), res["path"], who,
+                                      entry.get("source", "?")))
+                    break
+
+        # scan four: the same named business, organisation or building, already
+        # on the page from another source. See the docstring.
+        wanted = _proper_names(finding.get("extra"))
+        if wanted:
+            for entry in doc.get("historical_record", []):
+                if is_ours(entry):
+                    continue
+                low = entry.get("description", "").lower()
+                found = sorted(n for n in wanted if n.lower() in low)
+                if found:
+                    proper_hits.append((finding.get("id", "?"), res["path"],
+                                        found[0], entry.get("source", "?")))
+                    break
+            else:
+                prose = " ".join(doc[k] for k in ("hook", "narrative")
+                                if isinstance(doc.get(k), str)).lower()
+                found = sorted(n for n in wanted if n.lower() in prose)
+                if found:
+                    proper_hits.append((finding.get("id", "?"), res["path"],
+                                        found[0], "the page's own prose"))
+
+        # scan five: the entry's own date, said twice or not its own. A finding is
+        # written from a passage, and a passage walks a building through decades in
+        # a sentence — so the description arrives carrying years that belong to
+        # other events, under whichever date the extractor chose, and often
+        # restating that date in the prose the timeline label already shows.
+        # A residency bound for the notable_residents panel is not a timeline
+        # item, so no label shows its year and repeating it is not a restatement.
+        desc = finding.get("description", "")
+        own = set(_YEARS.findall(str(finding.get("date", ""))))
+        said = _YEARS.findall(desc)
+        panel = bool((finding.get("extra") or {}).get("notable_resident"))
+        if own and not panel and any(y in own for y in _YEAR_AGAIN.findall(desc)):
+            date_hits.append((finding.get("id", "?"), res["path"],
+                              sorted(own)[0], desc[:70]))
+        foreign = sorted({y for y in said if y not in own})
+        if len(foreign) >= 2:
+            bundle_hits.append((finding.get("id", "?"), res["path"],
+                                finding.get("date", "?"), foreign, desc[:70]))
+
+        mine = _words(finding.get("description", ""))
+        if not mine:
+            continue
+        theirs: set[str] = set()
+        for entry in doc.get("historical_record", []):
+            # An entry this batch wrote is not evidence the page already had it.
+            if is_ours(entry):
+                continue
+            theirs |= _words(entry.get("description", ""))
+        for key in ("hook", "narrative"):
+            if isinstance(doc.get(key), str):
+                theirs |= _words(doc[key])
+        if not theirs:
+            continue
+        share = len(mine & theirs) / len(mine)
+        if share >= 0.34:
+            hits.append((share, finding.get("id", "?"), res["path"],
+                         finding.get("description", "")[:70]))
+
+    hits.sort(reverse=True)
+    print(f"overlap: {checked} resolved finding(s) checked against their pages"
+          + (f", {missing} page(s) not on disk yet" if missing else ""))
+    if (not hits and not name_hits and not roll_hits and not proper_hits
+            and not gone_hits and not date_hits and not bundle_hits):
+        print("  none — no finding repeats what its page already says.")
+        return
+    if hits:
+        print(f"  by wording — {len(hits)} finding(s) may repeat what the page already carries:")
+        for share, fid, page_path, text in hits:
+            print(f"    {share:.0%}  {fid}  {page_path}")
+            print(f"          {text}...")
+    flagged = {h[1] for h in hits}
+    only_names = [n for n in name_hits if n[0] not in flagged]
+    if only_names:
+        print(f"  by name and date — {len(only_names)} more finding(s) credit someone "
+              f"the page already credits within two years:")
+        for fid, page_path, who, other in only_names:
+            print(f"    {fid}  {page_path}")
+            print(f"          {who} — already on the page from {other}")
+    only_proper = [n for n in proper_hits if n[0] not in flagged]
+    if only_proper:
+        print(f"  by name — {len(only_proper)} more finding(s) name a business, "
+              f"organisation or building the page already names:")
+        for fid, page_path, who, other in only_proper:
+            print(f"    {fid}  {page_path}")
+            print(f"          {who} — already on the page from {other}")
+    if roll_hits:
+        print(f"  by the roll year — {len(roll_hits)} finding(s) are dated the year "
+              f"the assessor says the building went up, but are not about it going up:")
+        for fid, page_path, built, kind, text in roll_hits:
+            print(f"    {fid}  {page_path}  ({kind}, roll built {built})")
+            print(f"          {text}...")
+    if gone_hits:
+        print(f"  by the replacement building — {len(gone_hits)} finding(s) predate the "
+              f"building the assessor says is on the parcel, and do not say so:")
+        for fid, page_path, mine_year, built, text in gone_hits:
+            print(f"    {fid}  {page_path}  (fact {mine_year}, roll built {built})")
+            print(f"          {text}...")
+        print("        These want a frame — \"stood here until\", \"then on the corner\" —"
+              " not a decline.")
+    if bundle_hits:
+        print(f"  by its own date — {len(bundle_hits)} finding(s) carry two or more years "
+              f"that are not the entry's date:")
+        for fid, page_path, date, foreign, text in bundle_hits:
+            print(f"    {fid}  {page_path}  (dated {date}, also {', '.join(foreign)})")
+            print(f"          {text}...")
+        print("        An entry belongs to one date. Two or more foreign years usually"
+              " means this is several findings; split it.")
+    if date_hits:
+        print(f"  by its own date — {len(date_hits)} finding(s) restate the year the "
+              f"timeline label already shows:")
+        for fid, page_path, year, text in date_hits:
+            print(f"    {fid}  {page_path}  ({year})")
+            print(f"          {text}...")
+    print("  Read each one: decline it, or trim it to the part that is new.")
+
+
+def _uncited_sources(doc: dict) -> set[str]:
+    """Source ids a page's dated entries cite that the page never declares.
+
+    A page carries the source of every dated entry as an id into its own
+    `sources` array, and the renderer prints whatever that id resolves to. When
+    it resolves to nothing the entry silently loses its citation, which is the
+    one defect on these pages that a reader cannot see and `validate.py` does
+    not test — the HTML still matches what the renderer produces from the
+    broken data.json. It happens when a run mints per-issue ids for a source a
+    page already cited: one publishing pass here left two pages citing ids it
+    had renamed out from under them, and dropped the entry a third page's
+    existing record depended on. Cheap to test, and it belongs next to
+    --landed because that is the pass that walks exactly the pages a batch just
+    wrote.
+    """
+    declared = {s.get("id") for s in (doc.get("sources") or []) if isinstance(s, dict)}
+    cited = set()
+    for key in ("historical_record", "timeline"):
+        for entry in (doc.get(key) or []):
+            if isinstance(entry, dict) and entry.get("source"):
+                src = entry["source"]
+                cited.update(src if isinstance(src, list) else [src])
+    return {c for c in cited if c not in declared}
+
+
+def landed(path: Path) -> None:
+    """After publishing: did every "published" finding change its page?
+
+    "Published" is a claim about a page, and the cheapest way for it to be
+    false is a page that already held the same credit under a slightly
+    different spelling. The write guard sees a value, does nothing, and the
+    finding is marked published anyway — indistinguishable, afterwards, from a
+    fact that landed. One run produced four of these before a hand check found
+    them; the fix in every case is to decline the finding, or to trim the
+    description to the part the page lacked and say so in publish.note.
+
+    Deliberately not part of the always-on rule pass: most published findings
+    across the repo land as structured data — a historic_survey panel, a spec
+    row, a conflict sentence — rather than as their own description, so a
+    global version of this rule reports thousands of false positives and gets
+    ignored. Run it on the one file you just published.
+    """
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        err(str(path), f"--landed could not read the file: {exc}")
+        return
+
+    checked = 0
+    missing: list[tuple[str, str]] = []
+    noop: list[tuple[str, str, str]] = []
+    dangling: set[tuple[str, str]] = set()
+    for finding in data.get("findings", []):
+        pub = finding.get("publish") or {}
+        if pub.get("status") != "published":
+            continue
+        res = finding.get("resolution") or {}
+        rel = (res.get("path") or "").strip("/")
+        if not rel:
+            continue
+        page = ROOT.parent / rel / "data.json"
+        why = missing_page(res)
+        if why:
+            missing.append((finding.get("id", "?"), why))
+            continue
+        try:
+            doc = json.loads(page.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            missing.append((finding.get("id", "?"),
+                            f"{res.get('path')} could not be read"))
+            continue
+        checked += 1
+        for sid in _uncited_sources(doc):
+            dangling.add((res.get("path", "?"), sid))
+
+        blob = json.dumps(doc, ensure_ascii=False)
+
+        desc = (finding.get("description") or "").strip()
+        if desc and desc in blob:
+            continue
+        # The page citing this finding's own record is proof the write landed,
+        # and it is a better signal than matching text: a publisher is supposed
+        # to trim the description for the page — the timeline already shows the
+        # date and the page is the address — so a source whose house style is a
+        # short page sentence fails the text test on every single entry. Both
+        # digitalsf batches did: 885 of 885 and 116 of 116 reported as no-ops,
+        # every one of them actually on its page. A check that cries wolf on a
+        # whole source teaches the next run to skip it.
+        cite = ((finding.get("citation") or {}).get("url") or "").strip()
+        if cite and cite in blob:
+            continue
+        recorded = {str(v).strip() for k, v in (finding.get("extra") or {}).items()
+                    if k.endswith("_as_recorded") and v}
+        spec = {str(v).strip() for k, v in (doc.get("building") or {}).items()
+                if k in ("architect", "builder", "developer", "name")}
+        if recorded & spec:
+            continue
+        note = (pub.get("note") or "").lower()
+        if any(w in note for w in ("spec row", "survey block", "re-worded",
+                                   "reworded", "trimmed", "rewritten")):
+            continue
+        noop.append((finding.get("id", "?"), res.get("path", "?"), desc[:70]))
+
+    print(f"landed: {checked} published finding(s) checked against their pages"
+          + (f", {len(missing)} with no page on disk" if missing else ""))
+    # A published finding whose page does not exist never landed at all, and a
+    # bare count of them reads as a rounding error rather than as the failure it
+    # is. `check.py` fails the run on these too; naming them here saves the run
+    # a second pass to find out which.
+    for fid, why in missing:
+        print(f"    {fid}  {why}")
+    for page_path, sid in sorted(dangling):
+        err(page_path, f"a dated entry cites source id {sid!r}, which the page's "
+                       f"sources array does not declare — the citation renders as "
+                       f"nothing, so add the source entry or repoint the record")
+    if not noop:
+        print("  every published finding left its description or a spec row on its page.")
+        return
+    print(f"  {len(noop)} finding(s) marked published left nothing on the page:")
+    for fid, page_path, text in noop:
+        print(f"    {fid}  {page_path}")
+        print(f"          {text}...")
+    print("  Decline each one, or trim its description to the part the page "
+          "lacked and say so in publish.note.")
+
+
+# --------------------------------------------------------------------------- #
+# The index — so nobody has to open a findings file to find out what is in it
+# --------------------------------------------------------------------------- #
+
+INDEX_PATH = ROOT / "findings" / "INDEX.md"
+MANIFESTS = ROOT / "manifests"
+
+# The fields --find searches. Address and description are what a question is
+# normally phrased in; the resolution fields are here because half the time the
+# question arrives as a page path or an APN, from an issue or a PR body.
+HAYSTACK = ("id", "date", "address_as_written", "street_number", "street_name",
+            "street_type", "description")
+
+
+# `date` is free text by schema, and the corpus uses that latitude: beside
+# ISO dates it holds "c. 1870", "unknown", and one bare "187". So the span is
+# read with a pattern and bounded, rather than by slicing four characters off
+# the front — that turned "187" into the year 187 and printed a batch as
+# "187–1984".
+YEAR = re.compile(r"\b(1[5-9]\d\d|20\d\d)\b")
+
+
+def _span(findings: list) -> str:
+    """The years a batch's findings cover — the first thing you want to know."""
+    years = []
+    for f in findings:
+        m = YEAR.search(f.get("date") or "")
+        if m:
+            years.append(int(m.group(1)))
+    if not years:
+        return "—"
+    lo, hi = min(years), max(years)
+    return str(lo) if lo == hi else f"{lo}–{hi}"
+
+
+def _size(n: int) -> str:
+    if n >= 1048576:
+        return f"{n / 1048576:.1f} MB"
+    # Not rounded down to "0 KB": several manifests are a few hundred bytes,
+    # and a size column that reads zero looks like a broken file.
+    return f"{max(1, round(n / 1024))} KB"
+
+
+def _tokens(n: int) -> str:
+    """Bytes as the round number of tokens they cost to read. ~4 bytes each."""
+    t = n / 4
+    return f"{t / 1e6:.1f}M" if t >= 1e6 else f"{t / 1e3:.0f}k"
+
+
+def _thousands(n: int) -> str:
+    return f"{n:,}"
+
+
+def _wrap(text: str) -> str:
+    """Generated prose wrapped like the hand-written Markdown around it."""
+    import textwrap
+    return "\n".join(textwrap.wrap(text, width=76, break_long_words=False,
+                                   break_on_hyphens=False))
+
+
+def _areas(findings: list):
+    """Neighborhood directories the batch's resolved parcels sit in.
+
+    `resolution.path` is a site path — /san-francisco/<area>/<street>/<n>/ —
+    so the neighborhood is its second segment. It is the coverage axis that
+    matters here: the question an agent brings to these files is almost always
+    "has anything been read about this part of the city", and a street list
+    would be hundreds of names where this is a handful.
+    """
+    import collections
+    out = collections.Counter()
+    for f in findings:
+        path = (f.get("resolution") or {}).get("path")
+        if not path:
+            continue
+        parts = path.strip("/").split("/")
+        if len(parts) > 1:
+            out[parts[1]] += 1
+    return out
+
+
+def _index_rows(docs: list) -> list[dict]:
+    rows = []
+    for path, data in docs:
+        findings = data.get("findings") or []
+        rows.append(dict(
+            rel=f"{path.parent.name}/{path.name}",
+            n=len(findings),
+            size=path.stat().st_size,
+            span=_span(findings),
+            resolved=sum(1 for f in findings
+                         if (f.get("resolution") or {}).get("status") == "resolved"),
+            published=sum(1 for f in findings
+                          if (f.get("publish") or {}).get("status") == "published"),
+            areas=_areas(findings),
+        ))
+    return rows
+
+
+def _manifest_rows() -> list[dict]:
+    import collections
+    rows = []
+    for path in sorted(MANIFESTS.glob("*.json")):
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        if not isinstance(data, list):
+            continue
+        areas = collections.Counter(
+            p["area"] for p in data if isinstance(p, dict) and p.get("area"))
+        rows.append(dict(name=path.name, n=len(data),
+                         size=path.stat().st_size, areas=areas))
+    return rows
+
+
+def build_index(docs: list) -> str:
+    """The Markdown of findings/INDEX.md.
+
+    Everything here is derived, so the file can be regenerated and never hand
+    edited — same contract as the sitemap and the map index on the website
+    side. It exists because the alternative is an agent reading a findings file
+    to find out whether it is worth reading: the corpus is 30 MB, and the
+    largest single file is past what a context window holds.
+    """
+    rows = _index_rows(docs)
+    manifests = _manifest_rows()
+    total_bytes = sum(r["size"] for r in rows)
+    total_findings = sum(r["n"] for r in rows)
+    biggest = max(rows, key=lambda r: r["size"]) if rows else None
+
+    out = []
+    w = out.append
+    w("# What is in the findings files")
+    w("")
+    w("<!-- Generated by `python3 research/tools/check.py --index`. Do not edit by")
+    w("     hand: `check.py` fails when this file and the findings disagree. -->")
+    w("")
+    w(f"{len(rows)} files, {_size(total_bytes)}, "
+      f"{_thousands(total_findings)} findings.")
+    if biggest:
+        w("")
+        w(_wrap(
+            f"**Never read one whole.** The largest, `{biggest['rel']}`, is "
+            f"{_size(biggest['size'])} — about {_tokens(biggest['size'])} "
+            f"tokens, more than a context window holds. The directory as a "
+            f"whole is around {_tokens(total_bytes)} tokens, and an agent that "
+            f"opens one of these files has usually spent its session to reach "
+            f"three entries."))
+    w("")
+    w("This file is the cheap way in. The table says what each batch covers;")
+    w("the commands below get entries out without the file entering the context.")
+    w("")
+    w("## Getting entries out")
+    w("")
+    w("```bash")
+    w("# what a batch is, what it covered, and a sample of its entries")
+    w("python3 research/tools/check.py --peek research/findings/<id>/<batch>.json")
+    w("")
+    w("# every entry matching some words, across every file (or one of them)")
+    w("python3 research/tools/check.py --find \"1377 Fulton\"")
+    w("python3 research/tools/check.py --find Fulton --in research/findings/digitalsf/sfp-23.json")
+    w("```")
+    w("")
+    w("For anything those two don't answer, query the file rather than opening")
+    w("it — `jq` on the entries, never `cat` on the file:")
+    w("")
+    w("```bash")
+    w("jq '.findings[] | select(.street_name == \"FULTON\") | {id, address_as_written, description}' <file>")
+    w("jq '[.findings[] | select(.resolution.status == \"unresolved\")] | length' <file>")
+    w("jq -r '.findings[] | select(.publish.status == \"published\") | .resolution.path' <file> | sort -u")
+    w("```")
+    w("")
+    w("## The shape, once")
+    w("")
+    w("Every file is the same object, so it is written down here rather than")
+    w("discovered by reading one:")
+    w("")
+    w("```")
+    w("{ source_id, batch, read_on, notes, coverage: { unit, examined, remaining,")
+    w("  mentions, note }, findings: [ … ] }")
+    w("```")
+    w("")
+    w("An entry, with the share of the "
+      f"{_thousands(total_findings)} that carry each key:")
+    w("")
+    import collections
+    field_use = collections.Counter()
+    for _, data in docs:
+        for f in data.get("findings") or []:
+            field_use.update(f.keys())
+    w("| key | on |")
+    w("|---|---:|")
+    for key, count in sorted(field_use.items(), key=lambda kv: (-kv[1], kv[0])):
+        share = 100 * count / total_findings if total_findings else 0
+        w(f"| `{key}` | {share:.0f}% |")
+    w("")
+    w("`resolution` is `{status, apn, path, eas_address, method, checked_on, note}`")
+    w("and `publish` is `{status, pr, note}`. Every field and its rules:")
+    w("[../schema/finding.schema.json](../schema/finding.schema.json).")
+    w("")
+    w("## The batches")
+    w("")
+    w("`Areas` is the neighborhood directories the batch's resolved parcels")
+    w("sit in — the three it touched most, and how many in all.")
+    w("")
+    w("| Batch | Entries | Size | Years | Resolved | Published | Areas |")
+    w("|---|---:|---:|---|---:|---:|---|")
+    for r in rows:
+        top = ", ".join(f"`{a}`" for a, _ in r["areas"].most_common(3))
+        rest = len(r["areas"]) - 3
+        if rest > 0:
+            top += f" +{rest}"
+        w(f"| `{r['rel']}` | {_thousands(r['n'])} | {_size(r['size'])} | "
+          f"{r['span']} | {_thousands(r['resolved'])} | "
+          f"{_thousands(r['published'])} | {top or '—'} |")
+    w("")
+    if manifests:
+        w("## Manifests")
+        w("")
+        w("`research/manifests/*.json` are flat parcel lists for")
+        w("`scripts/seed_pages.py seed-list` — no prose, nothing to read. They")
+        w("are listed so their size is visible before anyone opens one.")
+        w("")
+        w("| Manifest | Parcels | Size | Areas |")
+        w("|---|---:|---:|---|")
+        for m in manifests:
+            top = ", ".join(f"`{a}`" for a, _ in m["areas"].most_common(3))
+            rest = len(m["areas"]) - 3
+            if rest > 0:
+                top += f" +{rest}"
+            w(f"| `{m['name']}` | {_thousands(m['n'])} | {_size(m['size'])} | "
+              f"{top or '—'} |")
+        w("")
+    return "\n".join(out) + "\n"
+
+
+def check_index(docs: list) -> None:
+    """A stale index is worse than none: it is read and believed.
+
+    Silent while anything else has already failed: a file that would not parse
+    is missing from `docs`, so the index rebuilt from them would differ for a
+    reason that has nothing to do with the index, and reporting that alongside
+    the real error sends the reader to the wrong file.
+    """
+    if errors:
+        return
+    want = build_index(docs)
+    rel = INDEX_PATH.relative_to(ROOT.parent)
+    if not INDEX_PATH.exists():
+        err(str(rel), "missing — run python3 research/tools/check.py --index")
+        return
+    if INDEX_PATH.read_text(encoding="utf-8") != want:
+        err(str(rel), "out of date — run python3 research/tools/check.py --index")
+
+
+def a_findings_file(path: Path) -> Path | None:
+    """`path` if it is a findings file, else a guess and a message.
+
+    Batch names get typed from an issue or a PR body without their directory,
+    and `resolution.path` — the other path a run has to hand — is a site path
+    that names no file at all. Both are cheap to recognise, and a suggestion
+    costs one line where a traceback costs a round trip.
+    """
+    if path.is_file():
+        return path
+    stem = path.stem or path.name
+    near = [f for f in findings_files() if f.stem == stem or f.name == path.name]
+    print(f"no findings file at {path}")
+    if near:
+        print("Did you mean:")
+        for f in near:
+            print(f"  {f.relative_to(ROOT.parent)}")
+    else:
+        print("The list of them is in research/findings/INDEX.md.")
+    return None
+
+
+def peek(path: Path, sample: int) -> None:
+    """A findings file's header, its coverage, and a few of its entries.
+
+    The sample is spread across the file rather than taken off the front: a
+    batch is written in the order it was read, so the first N entries are
+    routinely N views of one street and say nothing about the rest.
+    """
+    import collections
+
+    data = json.loads(path.read_text(encoding="utf-8"))
+    findings = data.get("findings") or []
+    print(f"{path} — {_size(path.stat().st_size)}, "
+          f"{_thousands(len(findings))} entries")
+    print(f"source_id {data.get('source_id')!r}  batch {data.get('batch')!r}  "
+          f"read_on {data.get('read_on')}")
+
+    cov = data.get("coverage") or {}
+    if cov:
+        print()
+        print(f"Coverage: examined {cov.get('examined')} {cov.get('unit', '')}"
+              f", {cov.get('mentions')} mention(s)")
+        for label in ("remaining", "note"):
+            if cov.get(label):
+                print(f"  {label}: {cov[label]}")
+
+    res = collections.Counter((f.get("resolution") or {}).get("status", "—")
+                              for f in findings)
+    pub = collections.Counter((f.get("publish") or {}).get("status", "none")
+                              for f in findings)
+    kinds = collections.Counter(f.get("kind") for f in findings)
+    print()
+    print(f"Years {_span(findings)}   resolution: "
+          + ", ".join(f"{n} {s}" for s, n in res.most_common()))
+    print(f"Kinds: " + ", ".join(f"{n} {k}" for k, n in kinds.most_common(6))
+          + f"   publish: " + ", ".join(f"{n} {s}" for s, n in pub.most_common()))
+    areas = _areas(findings)
+    if areas:
+        print("Areas: " + ", ".join(f"{a} ({n})" for a, n in areas.most_common(8))
+              + (f", +{len(areas) - 8} more" if len(areas) > 8 else ""))
+
+    notes = data.get("notes")
+    if notes:
+        print()
+        print("Notes:")
+        text = notes if len(notes) <= 1500 else notes[:1500] + \
+            f"\n  … truncated; {len(notes):,} characters in .notes"
+        for line in text.splitlines():
+            print(f"  {line}".rstrip())
+
+    if findings and sample > 0:
+        step = max(1, len(findings) // sample)
+        shown = findings[::step][:sample]
+        print()
+        print(f"{len(shown)} of {_thousands(len(findings))} entries, spread "
+              f"across the file:")
+        for f in shown:
+            print()
+            print(json.dumps(f, indent=1, ensure_ascii=False))
+        print()
+        print("Everything else: --find, or jq. See research/findings/INDEX.md.")
+
+
+def find(text: str, only: Path | None, limit: int) -> None:
+    """Entries matching every word of `text`, one line each.
+
+    All words rather than the phrase, because the question arrives as an
+    address the way a person writes it ("1377 Fulton") and the file holds it
+    split across `street_number` and `street_name`, or spelled with a street
+    type the asker left off.
+    """
+    terms = [t.lower() for t in text.split()]
+    if not terms:
+        print("--find needs something to look for.")
+        return
+
+    paths = [only] if only else findings_files()
+    hits, scanned = [], 0
+    for path in paths:
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        for f in data.get("findings") or []:
+            scanned += 1
+            res = f.get("resolution") or {}
+            hay = " ".join(str(f.get(k, "")) for k in HAYSTACK)
+            hay += " " + " ".join(str(res.get(k, ""))
+                                  for k in ("apn", "path", "eas_address"))
+            hay += " " + str((f.get("citation") or {}).get("label", ""))
+            hay = hay.lower()
+            if all(t in hay for t in terms):
+                hits.append((path, f))
+
+    where = only.name if only else f"{len(paths)} file(s)"
+    print(f"{len(hits)} of {_thousands(scanned)} entries in {where} match "
+          f"{text!r}.")
+    if not hits or limit <= 0:
+        return
+    print()
+    for path, f in hits[:limit]:
+        res = f.get("resolution") or {}
+        pub = (f.get("publish") or {}).get("status")
+        state = res.get("path") or res.get("status", "unresolved")
+        if pub:
+            state += f" [{pub}]"
+        print(f"{path.parent.name}/{path.stem}  {f.get('id')}  "
+              f"{f.get('date') or '—'}  {f.get('address_as_written')}")
+        print(f"    {state}")
+        desc = f.get("description") or ""
+        print(f"    {desc[:160]}{'…' if len(desc) > 160 else ''}")
+    if len(hits) > limit:
+        print()
+        print(f"… {len(hits) - limit} more. Narrow the search, or raise --n.")
+    print()
+    print("Whole entries: --peek the file, or "
+          "jq '.findings[] | select(.id == \"…\")'.")
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--stats", action="store_true", help="print the yield so far")
     ap.add_argument("--report", type=Path, metavar="FINDINGS",
                     help="print one batch by neighborhood, as the PR body's table")
+    ap.add_argument("--overlap", type=Path, metavar="FINDINGS",
+                    help="report findings whose target page already says the same thing")
+    ap.add_argument("--landed", type=Path, metavar="FINDINGS",
+                    help="after publishing: report published findings that changed nothing")
+    ap.add_argument("--index", action="store_true",
+                    help="rebuild research/findings/INDEX.md")
+    ap.add_argument("--peek", type=Path, metavar="FINDINGS",
+                    help="a file's header, coverage and a sample of its entries")
+    ap.add_argument("--find", metavar="WORDS",
+                    help="entries matching every word, one line each")
+    ap.add_argument("--in", dest="within", type=Path, metavar="FINDINGS",
+                    help="limit --find to one file")
+    ap.add_argument("-n", type=int, default=None, metavar="N",
+                    help="how many entries --peek samples (default 3) or --find "
+                         "prints (default 40); 0 for counts only")
     args = ap.parse_args()
+
+    # --peek and --find answer a question about one file; they are the cheap
+    # alternative to opening it, so they must not first spend a second
+    # validating the other 71.
+    if args.peek:
+        path = a_findings_file(args.peek)
+        if path is None:
+            return 1
+        peek(path, 3 if args.n is None else args.n)
+        return 0
+    if args.find:
+        within = None
+        if args.within:
+            within = a_findings_file(args.within)
+            if within is None:
+                return 1
+        find(args.find, within, 40 if args.n is None else args.n)
+        return 0
 
     schema = json.loads(SCHEMA_PATH.read_text(encoding="utf-8"))
     ids = registered_ids()
     check_register(ids)
 
     files = findings_files()
+    docs = []
     for path in files:
-        check_findings_file(path, schema, ids)
+        data = check_findings_file(path, schema, ids)
+        if data is not None:
+            docs.append((path, data))
 
     # The example is documentation, so it has to stay valid; it is exempt from
     # the registered-directory rule because it lives under schema/.
@@ -368,12 +1492,27 @@ def main() -> int:
                  lambda p, m: err(str(EXAMPLE.relative_to(ROOT.parent)), f"{p}: {m}"))
         check_rules(EXAMPLE.relative_to(ROOT.parent), example)
 
+    if args.index:
+        INDEX_PATH.write_text(build_index(docs), encoding="utf-8")
+        print(f"wrote {INDEX_PATH.relative_to(ROOT.parent)} — "
+              f"{len(docs)} batch(es)")
+    else:
+        check_index(docs)
+
     if args.stats:
         stats(files)
         print()
 
     if args.report:
         report(args.report)
+        print()
+
+    if args.overlap:
+        overlap(args.overlap)
+        print()
+
+    if args.landed:
+        landed(args.landed)
         print()
 
     if errors:

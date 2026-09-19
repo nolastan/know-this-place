@@ -9,17 +9,23 @@ description: Work inside this repo's research module (research/) — the pipelin
 addresses. The rest of the repo **presents** them. This skill is the door into
 that module.
 
-The module's own documents are the authority. There are two:
+The module's own documents are the authority. There are three:
 
 1. **[research/AGENTS.md](../../../research/AGENTS.md)** — the rulebook: the
-   goal, the search-invisibility bias, the evidence bar, the statuses, the
-   lessons that already cost something.
+   goal, the search-invisibility bias, the evidence bar, the statuses. Short on
+   purpose; read it whole.
 2. **[research/RUNBOOK.md](../../../research/RUNBOOK.md)** — the procedure, step
-   by step. Read it when you're about to do the work.
+   by step. Read the step you're on when you're about to do the work.
+3. **[research/LESSONS.md](../../../research/LESSONS.md)** — the traps that have
+   already cost a session or a correction. **Grep it, never read it whole** —
+   search for what you're about to do (`--overlap`, `condominium`, `privacy
+   filter`, `renumber`, `pdftotext`, `manifest`) before the step, and again when
+   a step surprises you.
 
 Plus the root [AGENTS.md](../../../AGENTS.md), whose privacy limits and evidence
-rules bind here without exception — read the whole thing if you may touch a page
-under `san-francisco/`.
+rules bind here without exception — read it if you may touch a page under
+`san-francisco/`, along with [REFERENCE.md](../../../REFERENCE.md) for the
+`data.json` schema.
 
 Then get the current state:
 
@@ -28,7 +34,8 @@ python3 research/tools/check.py --stats   # the dashboard: read, found, resolved
 python3 research/tools/check.py           # register ↔ dossiers, findings ↔ schema
 ```
 
-and skim `research/SOURCES.md` — the register plus the leads table.
+and skim `research/SOURCES.md` — the register plus the leads table. A lead's
+triage note, if it has one, is in `research/TRIAGE.md`.
 
 ## Do a whole run
 
@@ -77,10 +84,14 @@ Everything else is in the module docs. These are worth carrying in your head:
   and South Van Ness (renumbered *and* renamed, by a per-block-face offset that
   makes subtracting a constant wrong by a whole block). No EAS record means no
   page. `unresolved` is a good outcome; a guess is not.
-- **People are the hard limit.** Buildings, contractors, architects, named
-  firms. Never residents, occupants or owners — at extraction time, not later,
-  and not at publication either. The size of a corpus is never a reason to
-  loosen this.
+- **People are the hard limit, and it is narrower than it sounds.** Buildings,
+  contractors, architects, named firms. Never *current* or *private*
+  residents, occupants or owners — at extraction time, not later, and not at
+  publication either; the size of a corpus is never a reason to loosen this.
+  But a **notable past occupant a published source already covers**, plainly
+  no longer there, is always taken and always published: the rule exists so
+  this site can't be used to look somebody up, not to withhold the documented
+  dead. Never leave one for a human to decide.
 
 ## Leave the module better than you found it
 
@@ -89,8 +100,8 @@ second deliverable of every run, alongside the facts. See
 [AGENTS.md → This module improves itself](../../../research/AGENTS.md#this-module-improves-itself).
 
 - **Record what you learned** — source-specific in the dossier's cautions and
-  `Verified:` line, cross-cutting in AGENTS.md's "What we've learned the hard
-  way". A trap you hit and didn't write down gets paid for again.
+  `Verified:` line, cross-cutting in [LESSONS.md](../../../research/LESSONS.md).
+  A trap you hit and didn't write down gets paid for again.
 - **Fix the gap you tripped over**, in the same PR as the work. A missing schema
   field, a check `check.py` should have caught, a runbook step that doesn't match
   what runs actually do.
@@ -102,6 +113,11 @@ second deliverable of every run, alongside the facts. See
 ```bash
 python3 research/tools/check.py [--stats]           # run before every commit
 python3 research/tools/check.py --report <findings-file>   # the PR body's table
+python3 research/tools/check.py --overlap <findings-file>  # facts the pages already carry
+python3 research/tools/check.py --landed <findings-file>   # published entries that changed nothing
+python3 research/tools/check.py --index             # rebuild findings/INDEX.md (derived)
+python3 research/tools/check.py --peek <findings-file>     # what a batch is, without reading it
+python3 research/tools/check.py --find "1377 Fulton"       # matching entries, corpus-wide
 python3 research/tools/resolve_eas.py fetch|report|apply <findings-file>
 python3 scripts/validate.py                         # any run that touched a page
 python3 scripts/seed_pages.py seed-list --manifest research/manifests/<f>.json
@@ -109,6 +125,13 @@ python3 scripts/seed_pages.py seed-list --manifest research/manifests/<f>.json
 
 `report` before `apply`, and read every conflict it prints — the tool does the
 lookups, you do the judgement.
+
+**Never open a findings file.** They run to megabytes and the largest is past
+what a context window holds, so reading one to reach a handful of entries costs
+the session and returns nothing. `research/findings/INDEX.md` says what every
+batch covers; `--peek`, `--find` and `jq` get entries out. Regenerate the index
+with `--index` in the same commit as any findings change — `check.py` fails
+while it is stale.
 
 ## Before you stop
 
@@ -130,7 +153,20 @@ python3 research/tools/check.py --report research/findings/<id>/<batch>.json
 Pages created and edited per neighborhood is what a reader wants first, and it
 is what a 150-file diff hides. Only findings that reached a parcel can be in it
 — the neighborhood belongs to the parcel, not the street — so unresolved
-findings are counted in one line below it rather than guessed into a row. See
+findings are counted in one line below it rather than guessed into a row.
+
+**Most of the body is about what was added and updated.** Below the table, name
+the buildings and what each page gained: new pages, credits, dated events,
+notable past residents, corrected dates, stated conflicts. What didn't land gets
+one line: the counts and their largest reason. The per-reason detail belongs in
+the findings file, the dossier and the follow-up issue.
+
+**Put anything a human has to decide, follow up or weigh in a GitHub alert**,
+one per item. Use `[!NOTE]` for a follow-up that's already filed and `[!TIP]`
+for an optional next step. Use `[!IMPORTANT]` for a decision someone has to
+make. Use `[!WARNING]` for a published fact that may be wrong. Use `[!CAUTION]`
+for a risk that's expensive to undo: a possible current resident, licensing, or
+a source id change. Don't use alerts for anything else. See
 [The PR body](../../../research/RUNBOOK.md#the-pr-body).
 
 Report what you did the same way: counts, plainly. Zero findings, reported

@@ -1,6 +1,7 @@
 # <source-id> — <Short title> (<primary|secondary|tertiary>)
 
-> **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · register:
+> **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · traps:
+> [../LESSONS.md](../LESSONS.md) · register:
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id `<source-id>`.
 >
 > - **Kind:** <newspaper OCR | book | journal | newsletter | PDF report | directory | photo archive> · **Tier:** <secondary> · **Status:** <open|done|blocked|reference>
@@ -26,8 +27,11 @@
   contradict the assessor. Claims the source hedges. Places it is known wrong.
   Every one of these is a lesson someone paid for — write it down.
 - **People:** What this source names, and what of that may be used. Default:
-  buildings, contractors, architects, firms; never residents, occupants or
-  owners. See "Privacy — hard limits" in the root [AGENTS.md](../../AGENTS.md).
+  buildings, contractors, architects, firms, and any **notable past occupant
+  the source's own published record covers**; never a current or private
+  resident, occupant or owner. Where the source names notable figures, say so
+  here and say where their facts land on a page. See "Privacy — hard limits"
+  in the root [AGENTS.md](../../AGENTS.md).
 - **Citation label:** Exactly what a page's Sources footer should print, with a
   worked example.
 - **Coverage:** What has been read, in counts, and what has not — named

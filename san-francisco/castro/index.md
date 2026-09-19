@@ -46,8 +46,8 @@ which local histories treat as its own neighborhood.
 - [Castro Street](castro-street/) — 151 buildings, built 1885–1985; 53 in the Duboce Triangle Historic District Extension.
 - [Chula Lane](chula-lane/) — 8 buildings, built 1880–1912; 6 in the Chula-Abbey Early Residential District.
 - [Church Street](church-street/) — 74 buildings, built 1893–1987; 1 in the Upper Market Street Commercial Historic District.
+- [Clarendon Avenue](clarendon-avenue/) — 1 building, built 1974.
 - [Clifford Terrace](clifford-terrace/) — 17 buildings, built 1906–1959.
-- [Clipper Street](clipper-street/) — 1 building, built 1916.
 - [Clover Street](clover-street/) — 5 buildings, built 1905–2002.
 - [Collingwood Street](collingwood-street/) — 58 buildings, built 1878–1981.
 - [Crown Terrace](crown-terrace/) — 3 buildings, built 1935–1999.
@@ -65,6 +65,7 @@ which local histories treat as its own neighborhood.
 - [Fairbanks Street](fairbanks-street/) — 1 building, built 1941.
 - [Flint Street](flint-street/) — 5 buildings, built 1957–1958.
 - [Ford Street](ford-street/) — 24 buildings, built 1880–1936.
+- [Glenbrook Avenue](glenbrook-avenue/) — 1 building, built 1949.
 - [Glendale Street](glendale-street/) — 1 building, built 1962.
 - [Grand View Avenue](grand-view-avenue/) — 3 buildings, built 1936–1953.
 - [Grattan Street](grattan-street/) — 1 building, built 1900; 1 in the Cole Valley Historic District.
@@ -78,9 +79,12 @@ which local histories treat as its own neighborhood.
 - [Loma Vista Terrace](loma-vista-terrace/) — 5 buildings, built 1916–1951.
 - [Lower Terrace](lower-terrace/) — 25 buildings, built 1900–1999.
 - [Market Street](market-street/) — 117 buildings, built 1875–2008; 16 in the Upper Market Street Commercial Historic District.
+- [Marview Way](marview-way/) — 1 building; 1 in the Auxiliary Water Supply System (Discontiguous).
 - [Masonic Avenue](masonic-avenue/) — 1 building, built 2007.
 - [Mono Street](mono-street/) — 1 building, built 1908.
+- [Mountain Spring Avenue](mountain-spring-avenue/) — 4 buildings, built 1958–1960.
 - [Noe Street](noe-street/) — 144 buildings, built 1880–2014; 25 in the Duboce Triangle Historic District.
+- [Palo Alto Avenue](palo-alto-avenue/) — 4 buildings, built 1951–1961; 4 in the Palo Alto Avenue Historic District.
 - [Park Hill Avenue](park-hill-avenue/) — 11 buildings, built 1900–1953.
 - [Pemberton Place](pemberton-place/) — 2 buildings, built 1926–1933.
 - [Pond Street](pond-street/) — 13 buildings, built 1900–1923.
@@ -88,6 +92,7 @@ which local histories treat as its own neighborhood.
 - [Raccoon Drive](raccoon-drive/) — 2 buildings, built 1959–1991.
 - [Rayburn Street](rayburn-street/) — 2 buildings, built 1900–1941.
 - [Roosevelt Way](roosevelt-way/) — 89 buildings, built 1895–2018.
+- [Saint Germain Avenue](saint-germain-avenue/) — 1 building, built 1958.
 - [Sanchez Street](sanchez-street/) — 131 buildings, built 1885–2008; 27 in the Duboce Triangle Historic District.
 - [Saturn Street](saturn-street/) — 51 buildings, built 1890–1974.
 - [Seward Street](seward-street/) — 1 building, built 1922.
@@ -104,6 +109,8 @@ which local histories treat as its own neighborhood.
 - [Vulcan Stairway](vulcan-stairway/) — 10 buildings, built 1900–1928.
 - [Waller Street](waller-street/) — 2 buildings, built 1900; 1 in the Duboce Park Historic District.
 - [Walter Street](walter-street/) — 24 buildings, built 1885–1925; 24 in the Duboce Triangle Historic District.
+- [Willard Street](willard-street/) — 1 building, built 1904.
+- [Woodland Avenue](woodland-avenue/) — 1 building, built 1937.
 - [Yukon Street](yukon-street/) — 13 buildings, built 1890–1949.
 
 Every parcel the assessor's roll calls residential now has a page, built from
@@ -111,3 +118,32 @@ the city's own records. Condominium parcels are held back until the building
 each unit belongs to can be established, and parcels missing from the roll are
 skipped. What the pages don't yet carry is the history — architects, builders,
 who lived there — and that arrives one building at a time.
+
+## Historic districts here
+
+- [19th and Noe Historic District](../historic-districts/19th-and-noe/)
+- [Alert Alley Early Residential Historic District](../historic-districts/alert-alley-early-residential/)
+- [Castro & Liberty Streets Historic District](../historic-districts/castro-and-liberty-streets/)
+- [Chula-Abbey Early Residential District](../historic-districts/chula-abbey/)
+- [Chula-Dolores-17th Fire Survivors and Reconstruction Historic District](../historic-districts/chula-dolores-17th-fire-survivors-and-reconstruction/)
+- [Cole Valley Historic District](../historic-districts/cole-valley/)
+- [Duboce Park Historic District](../historic-districts/duboce-park/)
+- [Duboce Triangle Historic District](../historic-districts/duboce-triangle/)
+- [Duboce Triangle Historic District Extension](../historic-districts/duboce-triangle-extension/)
+- [Eureka Valley Commercial & Castro Village LGBTQ+ Historic District](../historic-districts/eureka-valley-commercial-and-castro-village-lgbtq/)
+- [Haight Ashbury Counterculture Historic District](../historic-districts/haight-ashbury-counterculture/)
+- [Hartford Street Historic District](../historic-districts/hartford-street/)
+- [Hayes Valley Residential Historic District](../historic-districts/hayes-valley-residential/)
+- [San Francisco Neighborhood Movie Theater Historic District (Discontiguous)](../historic-districts/san-francisco-neighborhood-movie-theater-discontiguous/)
+- [Upper Market Street Commercial Historic District](../historic-districts/upper-market-street-commercial/)
+- [Upper Market Street Commercial Historic District Extension](../historic-districts/upper-market-street-commercial-extension/)
+
+## Adjacent neighborhoods
+
+[The Mission](../mission/) adjoins east across Dolores and Church Streets,
+[Noe Valley](../noe-valley/) south over the ridge, and [Hayes
+Valley](../hayes-valley/) north-east where Duboce Triangle meets Market
+Street. [Haight Ashbury](../haight-ashbury/) is north across Buena Vista
+Park. West the ground climbs through [Corbett Heights](../corbett-heights/)
+— inside the same city boundary, filed separately here — to Twin Peaks, with
+[the Inner Sunset](../inner-sunset/) on the far slope.

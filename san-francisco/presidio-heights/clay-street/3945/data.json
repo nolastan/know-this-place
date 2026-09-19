@@ -1,0 +1,145 @@
+{
+  "address": "3945 Clay Street, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/clay-street/3945/",
+  "apn": "1014036",
+  "block": "1014",
+  "lot": "036",
+  "eas_baseid": "292893",
+  "coordinates": {
+    "lat": 37.78736,
+    "lng": -122.458424
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 3,
+    "lot_area_sqft": 6242,
+    "building_area_sqft": 4291,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "S",
+    "zoning": "RH-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Presidio Heights",
+    "analysis_neighborhood": "Presidio Heights",
+    "property_location_raw": "0000 3945 CLAY                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 149450,
+    "assessed_improvement_value": 75981
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Presidio Heights Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1890–1930",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201707121672",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-07-12",
+      "status_date": "2019-08-05",
+      "estimated_cost": 39000,
+      "revised_cost": 39000,
+      "description": "t/o rear flat roof & adjoining shingle slopes. install new class \"a\" tar & gravel roof and class a shingle roof.slope roofing material weight <5 psf",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201012015871",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-12-01",
+      "status_date": "2010-12-01",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "kitchen remodel - change cabinets-applioances, upgrade elec to code; bathroom remodel - change sink cab, toilet-tub & shower to code.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9810212",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-06-04",
+      "status_date": "1999-06-29",
+      "estimated_cost": 12450,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8413066",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-12-13",
+      "status_date": "1985-07-17",
+      "estimated_cost": 3000,
+      "description": "we wiill remove steps and install new brick steps supported",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLAY&street_type=ST&address_number=3945",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1014036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1014&lot=036",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1014036",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.45842406623039%2037.78736026822012)%27)",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "modern-architecture-context-statement",
+      "name": "Mary Brown, San Francisco Planning Department, San Francisco Modern Architecture and Landscape Design 1935-1970 Historic Context Statement, adopted 12 January 2011",
+      "query": "http://sfplanninggis.org/docs/Historical_Context_Statements/Modern%20Architecture%20Context%20adopted%20Jan%202011.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Modern Architecture and Landscape Design Context Statement, adopted 2011",
+      "retrieved": "2026-09-01"
+    }
+  ],
+  "building": {},
+  "historical_record": [
+    {
+      "date": "1959",
+      "kind": "landscape design",
+      "description": "A residential garden laid out in 1959 by the landscape architect Thomas D. Church, who designed more than 150 gardens in San Francisco and is widely counted the founder of Modern California landscape design.",
+      "source": "modern-architecture-context-statement"
+    }
+  ]
+}

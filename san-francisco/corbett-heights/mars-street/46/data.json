@@ -1,62 +1,54 @@
 {
   "address": "46–48 Mars Street, San Francisco, CA 94114",
+  "path": "/san-francisco/corbett-heights/mars-street/46/",
+  "hook": "A house with a rear cottage, in photographs of 1895 and 1906.",
+  "apn": "2654007",
+  "block": "2654",
+  "lot": "007",
+  "eas_baseid": "469656",
+  "coordinates": {
+    "lat": 37.76123,
+    "lng": -122.444876
+  },
   "address_range": {
     "low": 46,
     "high": 48,
     "canonical": 46,
     "note": "One parcel: 48 is the front building, 46 the rear cottage (renumbered from 48A in 2005)."
   },
-  "path": "/san-francisco/corbett-heights/mars-street/46/",
-  "hook": "A house with a rear cottage, in photographs of 1895 and 1906.",
-  "apn": "2654007",
-  "block": "2654",
-  "lot": "007",
-  "coordinates": {
-    "lat": 37.76123,
-    "lng": -122.444876
-  },
+  "street_numbers_on_parcel": [
+    "46",
+    "48"
+  ],
   "parcel": {
     "year_built": 1903,
-    "use": "Single Family Residential",
-    "property_class": "Dwelling",
     "units": 1,
     "stories": 2,
     "rooms": 8,
     "bathrooms": 2,
     "lot_area_sqft": 2382,
     "building_area_sqft": 1438,
-    "construction_type": "Wood frame",
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
     "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0048 MARS                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2011,
     "assessed_land_value": 946552,
     "assessed_improvement_value": 631033,
-    "current_sales_date": "2005-04-29"
+    "last_sale_date": "2005-04-29",
+    "note": "The most recent secured roll carrying this parcel is 2011, and the dataset gives no reason. The figures are not current."
   },
   "historic_status": {
     "ceqa_status_code": "B",
     "ceqa_status_label": "Unknown Historic Resource status",
     "reason": "No evaluation and 45 years or older",
-    "designated_landmark": false,
-    "historic_district": null,
     "source": "sf-planning"
-  },
-  "building_history": {
-    "source": "corbett-heights-neighbors",
-    "events": [
-      {
-        "date": "1895",
-        "approximate": true,
-        "event": "Standing on the west side of Mars in a photograph from Kite Hill (OpenSFHistory wnp27.6091)."
-      },
-      {
-        "date": "1906-04",
-        "event": "Visible above the earthquake refugee camp at Corbett and Mars (OpenSFHistory wnp37.00189)."
-      },
-      {
-        "date": "2005",
-        "event": "Rear cottage renumbered from 48A to 46."
-      }
-    ],
-    "conflict": "The assessor records 1903; the c. 1895 photograph shows the house already standing."
   },
   "permits": [
     {
@@ -64,8 +56,9 @@
       "filed": "2010-03-30",
       "status": "complete",
       "estimated_cost": 10000,
-      "description": "Front building, unit 48: comply with physical inspection report CC-5548.",
-      "source": "sf-building-permits"
+      "description": "Front building, one unit: comply with physical inspection report CC-5548.",
+      "source": "sf-building-permits",
+      "description_edited": "Front building, one unit: work to comply with physical inspection report CC-5548."
     },
     {
       "number": "201002126469",
@@ -73,7 +66,8 @@
       "status": "complete",
       "estimated_cost": 6500,
       "description": "Repair front stairs and railing, less than 50%.",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Front stairs and railing repaired, less than half replaced."
     },
     {
       "number": "200305084109",
@@ -81,7 +75,8 @@
       "status": "complete",
       "estimated_cost": 120000,
       "description": "Interior remodel within existing building envelope; new doors and windows to rear building.",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Interior remodelled within the existing building envelope, with new doors and windows to the rear building."
     },
     {
       "number": "200010173243",
@@ -89,7 +84,8 @@
       "status": "complete",
       "estimated_cost": 1,
       "description": "Correct microfilm record: existing rear cottage of one room and one bathroom.",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Microfilm record corrected to show the existing rear cottage of one room and one bathroom."
     },
     {
       "number": "9520360",
@@ -97,7 +93,8 @@
       "status": "complete",
       "estimated_cost": 17500,
       "description": "Repair dry rot and termite damage.",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Dry rot and termite damage repaired."
     },
     {
       "number": "9212355",
@@ -105,7 +102,8 @@
       "status": "complete",
       "estimated_cost": 4000,
       "description": "Rebuild front stairs to match; repair dry rot.",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Front stairs rebuilt to match; dry rot repaired."
     }
   ],
   "sources": [
@@ -114,14 +112,16 @@
       "name": "Corbett Heights Neighbors, \"January Neighborhood News\", Vol. VIII, No. 1 (1 January 2026)",
       "cites": "OpenSFHistory photograph wnp27.6091 (c. 1895, Mars Street from Kite Hill)",
       "query": "https://corbettneighbors.optin.com/newsletter/awlist6655060/Mjg4NTkyNjM=/january-neighborhood-news.htm",
-      "retrieved": "2026-07-22"
+      "retrieved": "2026-07-22",
+      "supports": "Building history"
     },
     {
       "id": "corbett-heights-neighbors-apr",
       "name": "Corbett Heights Neighbors, \"April Neighborhood News\", Vol. VIII, No. 4 (1 April 2026)",
       "cites": "OpenSFHistory photograph wnp37.00189 (April 1906, the refugee camp at the Slope) and a 1912 photograph in the San Francisco History Center, San Francisco Public Library",
       "query": "https://corbettneighbors.optin.com/newsletter/awlist6655060/Mjk1MDc0NTQ=/april-neighborhood-news.htm",
-      "retrieved": "2026-07-22"
+      "retrieved": "2026-07-22",
+      "supports": "Building history"
     },
     {
       "id": "sf-eas-addresses",
@@ -131,9 +131,9 @@
     },
     {
       "id": "sf-assessor-roll",
-      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2011 secured roll — the latest carrying this parcel)",
       "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2654007&$order=closed_roll_year%20DESC&$limit=1",
-      "retrieved": "2026-07-22"
+      "retrieved": "2026-09-13"
     },
     {
       "id": "sf-planning",
@@ -143,7 +143,7 @@
     },
     {
       "id": "sf-building-permits",
-      "name": "SF Dept. of Building Inspection via DataSF",
+      "name": "SF Dept. of Building Inspection via DataSF, permits for block 2654 lot 007",
       "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2654&lot=007",
       "retrieved": "2026-07-22"
     },
@@ -163,5 +163,28 @@
     "survey": "Corbett Heights Historic Context Statement (2017)",
     "source": "corbett-heights-context-statement",
     "note": "Listed among the properties the statement puts forward as meriting further study; it is a context statement rather than a survey, and says the list is conservative rather than exhaustive. The 1976 city architectural survey rated buildings 0 to 5, 5 highest, and was never adopted as a register of historic resources."
+  },
+  "unknowns": [
+    "The assessor's construction date of 1903 is later than the photograph of about 1895 in which the house already appears; which is right has not been established."
+  ],
+  "historical_record": [
+    {
+      "date": "c. 1895",
+      "description": "Standing on the west side of Mars in a photograph from Kite Hill, when the corner at 17th Street was still open ground (OpenSFHistory wnp27.6091).",
+      "source": "corbett-heights-neighbors"
+    },
+    {
+      "date": "1906-04",
+      "description": "Visible above the earthquake refugee camp at Corbett and Mars, in a photograph taken from the direction of Caselli and 18th (OpenSFHistory wnp37.00189).",
+      "source": "corbett-heights-neighbors"
+    },
+    {
+      "date": "2005",
+      "description": "Rear cottage renumbered from 48A to 46, giving the parcel its present pair of numbers.",
+      "source": "corbett-heights-neighbors"
+    }
+  ],
+  "building": {
+    "conflict": "The assessor records 1903; the c. 1895 photograph shows the house already standing."
   }
 }

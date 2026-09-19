@@ -1,0 +1,91 @@
+{
+  "address": "103 Walbridge Street, San Francisco, CA 94134",
+  "path": "/san-francisco/excelsior/walbridge-street/103/",
+  "apn": "6428009",
+  "block": "6428",
+  "lot": "009",
+  "eas_baseid": "398113",
+  "coordinates": {
+    "lat": 37.709111,
+    "lng": -122.423763
+  },
+  "parcel": {
+    "lot_area_sqft": 2375,
+    "lot_depth_ft": 47.5,
+    "lot_frontage_ft": 50,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Residential",
+    "construction_type_code": "NA",
+    "zoning": "RH-2",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Croker Amazon",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0000 0103 WALBRIDGE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 192164
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201201242773",
+      "type": "new construction wood frame",
+      "status": "cancelled",
+      "filed": "2012-01-24",
+      "status_date": "2020-09-17",
+      "estimated_cost": 300000,
+      "description": "erect three story two family dwelling residential building.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=WALBRIDGE&street_type=ST&address_number=103",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6428009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6428&lot=009",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6428009",
+      "retrieved": "2026-09-15"
+    },
+    {
+      "id": "sfyimby-2026-04-29",
+      "name": "San Francisco YIMBY, “Preliminary Permits For 103 Walbridge Street, San Francisco,” 29 April 2026",
+      "query": "https://sfyimby.com/2026/04/preliminary-permits-for-103-walbridge-street-san-francisco.html",
+      "retrieved": "2026-09-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2026-04-29",
+      "kind": "development",
+      "headline": "Preliminary Permits For 103 Walbridge Street, San Francisco",
+      "outlet": "San Francisco YIMBY",
+      "url": "https://sfyimby.com/2026/04/preliminary-permits-for-103-walbridge-street-san-francisco.html",
+      "source": "sfyimby-2026-04-29"
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "address": "344 San Leandro Way, San Francisco, CA 94127",
+  "path": "/san-francisco/west-of-twin-peaks/san-leandro-way/344/",
+  "apn": "3257008",
+  "block": "3257",
+  "lot": "008",
+  "eas_baseid": "356876",
+  "coordinates": {
+    "lat": 37.73097,
+    "lng": -122.469085
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 1,
+    "lot_area_sqft": 4586,
+    "building_area_sqft": 2152,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Balboa Terrace",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0344 SAN LEANDRO         WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 498372,
+    "assessed_improvement_value": 232566,
+    "last_sale_date": "1996-03-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Balboa Terrace Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1921–1939",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202108025543",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-08-02",
+      "status_date": "2021-11-18",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "replace vinyl windows with marvin ultimate clad/ wood windows. not visible from street. same size location. u-factor <0.30",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200706154070",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-06-15",
+      "status_date": "2007-10-04",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "kitchen replace cabinets, sink, faucet, countertop. re-install stove, hood & dishwasher, ceiling, install new recesses light & under wall cabinet install light. bathroom, new sink, faucet toilet.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200503016500",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-03-01",
+      "status_date": "2005-03-17",
+      "estimated_cost": 6290,
+      "revised_cost": 6290,
+      "description": "repair dry rot as. report #45062 item #5a only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9606216",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-04-11",
+      "status_date": "1996-05-01",
+      "estimated_cost": 7500,
+      "description": "termite repair report #500058 item 4a 4b 6a 3a",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8206989",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1982-08-24",
+      "status_date": "1983-03-04",
+      "estimated_cost": 4880,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8206031",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-07-23",
+      "status_date": "1983-03-04",
+      "estimated_cost": 6825,
+      "description": "bldg use: dwg.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "1982–2021",
+    "shown_on_page": 6,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20LEANDRO&street_type=WAY&address_number=344",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3257008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3257&lot=008",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3257008",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.46908497840806%2037.73097045567199)%27)",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume J–L), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=804fff9eac94b0734e9f266d1cb0f0a250f209d0b21e9fd8088d42d0fe938ee1&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-09-01"
+    }
+  ],
+  "building": {
+    "architect": "Ernest C. and Oscar M. Hueter"
+  },
+  "historical_record": [
+    {
+      "date": "1920s",
+      "kind": "construction",
+      "description": "Built for the Lang Realty Company to designs by Ernest C. and Oscar M. Hueter, part of the Balboa Terrace development the firm laid out with the architect Harold Stoner in the 1920s.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "address": "3125 Cesar Chavez Street, San Francisco, CA 94110",
+  "path": "/san-francisco/bernal-heights/cesar-chavez-street/3125/",
+  "apn": "5503001",
+  "block": "5503",
+  "lot": "001",
+  "eas_baseid": "470742",
+  "coordinates": {
+    "lat": 37.748127,
+    "lng": -122.412016
+  },
+  "parcel": {
+    "year_built": 1900,
+    "lot_area_sqft": 64150,
+    "use": "Commercial Retail",
+    "property_class": "Schools",
+    "construction_type_code": "NA",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Bernal Heights",
+    "property_location_raw": "3139 3101 CESAR CHAVEZ        ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1955",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "2006–2015",
+    "shown_on_page": 0,
+    "note": "5 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CESAR%20CHAVEZ&street_type=ST&address_number=3125",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5503001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5503&lot=001",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5503001",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume G–I), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=b4fed2f0ee80387415081f76f9f657d25c12a1398210899a92a9222f03506e7a&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-09-01"
+    }
+  ],
+  "building": {
+    "architect": "Henry T. Howard",
+    "completed_conflict": "The assessor's roll gives 1900; this address is recorded as built 1926."
+  },
+  "historical_record": [
+    {
+      "date": "1926",
+      "kind": "construction",
+      "description": "Le Conte School, now Leonard R. Flynn Elementary School, on which Henry T. Howard assisted in his father John Galen Howard's office.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ]
+}

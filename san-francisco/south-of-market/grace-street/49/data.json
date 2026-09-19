@@ -1,0 +1,164 @@
+{
+  "address": "49 Grace Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/grace-street/49/",
+  "apn": "3509027",
+  "block": "3509",
+  "lot": "027",
+  "eas_baseid": "357781",
+  "coordinates": {
+    "lat": 37.775051,
+    "lng": -122.41457
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 2,
+    "lot_area_sqft": 1415,
+    "building_area_sqft": 1076,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "SLR",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0049 GRACE               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 274342,
+    "assessed_improvement_value": 599063,
+    "assessed_fixtures_value": 649,
+    "last_sale_date": "1999-05-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Resource Evaluation Response",
+    "yearbuilt": "1907",
+    "survey_name": "49 Grace Street",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Western SOMA Light Industrial and Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1936",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201308134170",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2013-08-13",
+      "status_date": "2026-01-09",
+      "estimated_cost": 5000,
+      "revised_cost": 0,
+      "description": "revision to app#201205170722. addition demolition due to extensive rotting of extg structure.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201205170722",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2012-05-17",
+      "status_date": "2014-08-15",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "remodel an existing 2 story, single family residence. work includes the remodel of the interior space.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200807308027",
+      "type": "new construction wood frame",
+      "status": "withdrawn",
+      "filed": "2008-07-30",
+      "status_date": "2012-05-17",
+      "estimated_cost": 1000000,
+      "description": "to erect a new 5 story 2 unit building with offices.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200807308031",
+      "type": "demolitions",
+      "status": "approved",
+      "filed": "2008-07-30",
+      "status_date": "2011-02-08",
+      "description": "to demolish a single family residence.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8500065",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-04-12",
+      "status_date": "1985-10-17",
+      "estimated_cost": 17400,
+      "description": "comply with chrp specifications 1/11/85",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 9,
+    "range": "1985–2014",
+    "shown_on_page": 5,
+    "note": "4 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GRACE&street_type=ST&address_number=49",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3509027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3509&lot=027",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3509027",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41457036619116%2037.775051127650535)%27)",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "market-octavia-survey-forms",
+      "name": "Page & Turnbull for the San Francisco Planning Department, Market & Octavia Augmentation Survey, DPR 523 survey forms, fieldwork 2006, evaluations by Kelley & VerPlanck 2010",
+      "query": "https://sfplanning.org/sites/default/files/documents/preserv/DPRforms/Grace%2049.pdf",
+      "listing": "https://sfplanning.org/historic-preservation-survey-forms-dpr523",
+      "label": "Market & Octavia Survey DPR 523 form, 2006–2010",
+      "retrieved": "2026-09-03"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Market & Octavia Survey (2006–2010)",
+      "source": "market-octavia-survey-forms",
+      "proposed_status_code": "6Z",
+      "status_code_meaning": "Found ineligible for the National Register, the California Register and local designation through survey evaluation.",
+      "style": "modified Italianate cottage",
+      "year_built_as_surveyed": "1907"
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 # Franklin Street
 
-## Buildings documented so far
+The parcels on Franklin Street documented here so far, from the city's address, assessor and permit records.
 
-- [1945 Franklin Street](1945/) — A five-storey 1900 house with an internal theatre floor and a $3.7m fire-damage repair completed in 2025.
+Pages are generated from the DataSF datasets listed in each page's
+Sources footer, and are corrected by hand as readers write in.

@@ -1,0 +1,122 @@
+{
+  "source_id": "sf-chronicle",
+  "batch": "2026-09-17",
+  "read_on": "2026-09-17",
+  "notes": "Six items queued from the 2026-09-17 poll, all read. The sf-chronicle feed is a Bluesky account, so every title in the queue is a teaser sentence and every link a bit.ly bit; the headlines and article URLs below were read off the articles themselves, per PIPELINE.md.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 6,
+    "mentions": 3,
+    "remaining": "none",
+    "note": "Two of the six were the same BART trackway fire post twice over, and one was an AI protest march; none names a building."
+  },
+  "findings": [
+    {
+      "id": "2026-09-17-chron-0001",
+      "date": "2026-09-17",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "the Doolan-Larson Building, at the corner of Haight and Ashbury",
+      "street_name": "HAIGHT",
+      "street_type": "ST",
+      "description": "SF Heritage, which owns the Doolan-Larson Building at the northwest corner of Haight and Ashbury streets, has selected the Seattle radio nonprofit KEXP and the Blue Bear School of Music to turn it into a cultural centre with music classes, rooftop performances and a broadcast studio and concert space. The article describes the building as Colonial revival, four storeys, built in 1903 and reconstructed after the 1906 earthquake with the owner jacking it up a storey and putting six small retail spaces on the ground floor, and says a previous owner donated it to SF Heritage on his death in 2018. The article prints no street number anywhere; the parcel is identified below from the city's own designation record rather than from the story.",
+      "extra": {
+        "owner": "SF Heritage",
+        "incoming_tenants": [
+          "KEXP",
+          "Blue Bear School of Music"
+        ],
+        "stories": 4,
+        "style": "Colonial revival",
+        "ground_floor_retail_spaces": 6,
+        "article_completed_claim": "1903, reconstructed after 1906"
+      },
+      "citation": {
+        "label": "San Francisco Chronicle, “Exclusive: Building at one of S.F.’s most historic intersections is getting a transformation,” 17 September 2026",
+        "url": "https://www.sfchronicle.com/sf/article/kexp-haight-ashbury-music-hub-22433742.php"
+      },
+      "raw": {
+        "text": "The Doolan-Larson Building, a Haight-Ashbury landmark that housed the San Francisco neighborhood’s first hippie boutique, will be transformed into an ambitious cultural center"
+      },
+      "confidence": "high",
+      "note": "The feed carried a teaser sentence and a bit.ly link; the headline and URL here were read off the article. The article's 1903 is already recorded on the page as building.completed_conflict against the assessor's 1910, so nothing is changed there.",
+      "resolution": {
+        "status": "resolved",
+        "by_hand": true,
+        "apn": "1231009",
+        "path": "/san-francisco/haight-ashbury/haight-street/1500/",
+        "eas_address": "1500 HAIGHT ST",
+        "method": "The article names no street number, so the resolver has nothing to join on. Resolved by hand on the city's own designation record instead: sf-planning's historic survey for parcel 1231009 names it RICHARD DOOLAN/NORMAN LARSON RESIDENCE, which is the building the article calls the Doolan-Larson Building and whose previous owner it names as the Larson who donated it to SF Heritage in 2018. That parcel is 1500–1512 Haight Street, at Ashbury, already a page on the site, and its recorded Article 10 individual landmark status matches the article's 'Haight-Ashbury landmark'.",
+        "checked_on": "2026-09-17"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Published on /san-francisco/haight-ashbury/haight-street/1500/, which already existed. The article prints no street number, so this was resolved by hand on the city's own designation record — sf-planning's historic survey names parcel 1231009 RICHARD DOOLAN/NORMAN LARSON RESIDENCE, the building the article calls the Doolan-Larson Building. building.name was empty and is now “Doolan-Larson Building”, attributed to the page's own counterculture context statement — which already named it and gives it as San Francisco Landmark No. 253 — as well as to this article. building.completed was left alone: the page already carries completed_conflict recording the article's 1903 against the assessor's 1910, and news/AGENTS.md says an existing field is not this module's to revise. The incoming tenants and SF Heritage's ownership stay in extra — the transformation has not happened, so nothing else enters the building block. The card is on the homepage news grid."
+      }
+    },
+    {
+      "id": "2026-09-17-chron-0002",
+      "date": "2026-09-17",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "5801 Geary Blvd.",
+      "street_number": "5801",
+      "street_name": "GEARY",
+      "street_type": "BLVD",
+      "description": "Hi NRG, a coffee pop-up that ran on Clement Street for more than three years, has opened a permanent café and wine bar at 5801 Geary Boulevard in the Central Richmond, in the former space of café AyDea.",
+      "extra": {
+        "business": "Hi NRG",
+        "previous_occupant": "AyDea"
+      },
+      "citation": {
+        "label": "San Francisco Chronicle, “Their pop-up was the sceniest place to drink coffee in S.F. Their café, however, is just for locals,” 17 September 2026",
+        "url": "https://www.sfchronicle.com/food/restaurants/article/hi-nrg-coffee-opens-sf-22426484.php"
+      },
+      "raw": {
+        "text": "Hi NRG. 5801 Geary Blvd., San Francisco."
+      },
+      "confidence": "high",
+      "note": "Feed title was a teaser and the link a bit.ly; headline and URL read off the article.",
+      "publish": {
+        "status": "published",
+        "note": "Published on /san-francisco/outer-richmond/geary-boulevard/5801/, which already existed. Nothing for the building block: the article establishes an occupant, not a fact about the structure. The card is on the homepage news grid."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "1522001",
+        "path": "/san-francisco/outer-richmond/geary-boulevard/5801/",
+        "eas_address": "5801 GEARY BLVD",
+        "method": "EAS exact match on 5801 GEARY BLVD → parcel 1522001; sf-parcels has blklot 1522001 active, 405–405 22ND; the 2025 roll records it as multi-family residential, built 1921. The assessor files the parcel as 405–407 22ND AV.",
+        "checked_on": "2026-09-17"
+      }
+    },
+    {
+      "id": "2026-09-17-chron-0003",
+      "date": "2026-09-17",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "101 Spear St.",
+      "street_number": "101",
+      "street_name": "SPEAR",
+      "street_type": "ST",
+      "description": "Two film actors were photographed dining at Yank Sing's Rincon Center restaurant before it closes. The building fact — that Yank Sing is closing its 101 Spear Street location after 27 years — is the same event carried by the WhatNow SF finding for this batch.",
+      "citation": {
+        "label": "San Francisco Chronicle, “Ashton Kutcher and Mila Kunis visit soon-to-close S.F. restaurant,” 17 September 2026",
+        "url": "https://www.sfchronicle.com/entertainment/movies-tv/article/yank-sing-ashton-kutcher-22434919.php"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Declined twice over. The headline names two private individuals who are not architects, builders, developers or firms, and news/AGENTS.md says a headline naming a private individual cannot go on a page — there is no rewriting past it, because the headline is the entry. It is also the third account of one event: the Rincon Center page at /san-francisco/south-beach/spear-street/121/ already carries this closure as 2026-09-14, San Francisco Chronicle, “A 68-year-old S.F dim sum institution will close its largest location.”"
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3716021",
+        "path": "/san-francisco/south-beach/spear-street/121/",
+        "eas_address": "101 SPEAR ST",
+        "method": "EAS exact match on 101 SPEAR ST → parcel 3716021; sf-parcels has blklot 3716021 active, 121–121 SPEAR; the 2025 roll records it as commercial retail, built 1925. EAS puts 101, 121 SPEAR ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 101.",
+        "checked_on": "2026-09-17"
+      }
+    }
+  ]
+}

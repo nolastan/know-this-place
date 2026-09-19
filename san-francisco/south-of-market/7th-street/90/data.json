@@ -1,0 +1,104 @@
+{
+  "address": "90 7th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/7th-street/90/",
+  "apn": "3702016",
+  "block": "3702",
+  "lot": "016",
+  "eas_baseid": "486291",
+  "coordinates": {
+    "lat": 37.779736,
+    "lng": -122.411887
+  },
+  "parcel": {
+    "lot_area_sqft": 6400,
+    "lot_depth_ft": 80,
+    "use": "Commercial Office",
+    "property_class": "Office Gov",
+    "construction_type_code": "NA",
+    "zoning": "C3G",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0064 0054 07TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result",
+    "survey_name": "HOTEL ST. RAPHAEL",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9705532",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "1997-03-26",
+      "status_date": "1997-10-17",
+      "description": "demolish a 4 story office building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9417254",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "1994-10-19",
+      "status_date": "1997-10-17",
+      "description": "demolish office bldg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=07TH&street_type=ST&address_number=90",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3702016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3702&lot=016",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3702016",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "modern-postmodern-styles-context-statement",
+      "name": "Hannah Lise Simonson, Page & Turnbull, for the San Francisco Planning Department, San Francisco Modern & Postmodern Architectural Styles (1960-2000) Historic Context Statement, Context: Architectural Methods & Styles, SF Survey Cultural Resources Survey, adopted August 21, 2024",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=12bf7fd7aa07e2b779e0afc717eb0d789b9ba378bf6e80f7f8a1ce30cdc8946f&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Modern & Postmodern Architectural Styles Historic Context Statement, adopted 2024",
+      "retrieved": "2026-08-31"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Modern & Postmodern Architectural Styles Historic Context Statement (2024)",
+      "source": "modern-postmodern-styles-context-statement",
+      "style": "Deconstructivism",
+      "year_built_as_surveyed": "2006",
+      "architect_as_surveyed": "Thom Mayne of Morphosis",
+      "note": "The Federal Building by Thom Mayne of Morphosis, one of the rare examples of built Deconstructivist architecture in San Francisco, and not built until the twenty-first century."
+    }
+  ],
+  "building": {
+    "name": "Federal Building",
+    "architect": "Thom Mayne of Morphosis"
+  }
+}

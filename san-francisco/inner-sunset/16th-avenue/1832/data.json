@@ -1,0 +1,172 @@
+{
+  "address": "1832 16th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/16th-avenue/1832/",
+  "apn": "2052A018",
+  "block": "2052A",
+  "lot": "018",
+  "eas_baseid": "326750",
+  "coordinates": {
+    "lat": 37.75376,
+    "lng": -122.472877
+  },
+  "parcel": {
+    "year_built": 1932,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "lot_area_sqft": 4462.5,
+    "building_area_sqft": 2510,
+    "lot_depth_ft": 27.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Golden Gate Heights",
+    "analysis_neighborhood": "Inner Sunset",
+    "property_location_raw": "0000 1832 16TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1561722,
+    "assessed_improvement_value": 669308,
+    "last_sale_date": "2018-10-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1932",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202010317923",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2020-10-31",
+      "status_date": "2020-10-31",
+      "estimated_cost": 130000,
+      "revised_cost": 0,
+      "description": "convert (e) garage & utility room to new family, home office, bathroom & bedroom. remodel (e) bathroom at 2nd fl. remodel (e) bathrooms and kitchen. at 3rd fl, remodel master bathroom and closet.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202009083717",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2020-09-08",
+      "status_date": "2020-09-08",
+      "estimated_cost": 50000,
+      "description": "excavate earth at the basement level for new garage facing 16th ave and new interior stair from new garage to 1st floor. new garage door and driveway at the front facade and new curb cut. new exterior stair at front to public way",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201505045251",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-05-04",
+      "status_date": "2015-05-08",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200308071437",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-08-07",
+      "status_date": "2003-09-23",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "replace 2 windows, size for size, wood to paintable wood composite, visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8922641",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-11-21",
+      "status_date": "1990-04-12",
+      "estimated_cost": 6500,
+      "description": "replace kitchen green house window, repair fire place",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8918648",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-10-03",
+      "status_date": "1990-04-12",
+      "estimated_cost": 5000,
+      "description": "repair replace damaged footing, level floors",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8917942",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-09-25",
+      "status_date": "1990-04-12",
+      "estimated_cost": 15000,
+      "description": "kitchen remodeling, termite work in basement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8814430",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-09-22",
+      "status_date": "1989-03-01",
+      "estimated_cost": 25000,
+      "description": "new kitchen cabinets & counters, new roofing, heat",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=16TH&street_type=AVE&address_number=1832",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2052A018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2052A&lot=018",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2052A018",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "african-american-context-statement",
+      "name": "Christopher VerPlanck, Tim Kelley, Al Williams and San Francisco Planning Department staff, African American Citywide Historic Context Statement, San Francisco Planning Department, adopted February 21, 2024",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=0ab7d14a0fb2469d622481a42e9e19831f1e2cd9ec6724bc8d926606555b3dc4&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "African American Citywide Historic Context Statement, adopted 2024",
+      "retrieved": "2026-08-29"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1971",
+      "kind": "site history",
+      "description": "Home of Charlie Mae Haynes, the first Black woman elected to public office in San Francisco, and of Reverend Frederick Douglas Haynes of Third Baptist Church. Identified in 2024 as eligible for local landmark, California Register or National Register designation.",
+      "source": "african-american-context-statement"
+    }
+  ]
+}

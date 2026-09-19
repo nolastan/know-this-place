@@ -1,0 +1,147 @@
+{
+  "address": "62 Kissling Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/kissling-street/62/",
+  "apn": "3517027",
+  "block": "3517",
+  "lot": "027",
+  "eas_baseid": "357995",
+  "coordinates": {
+    "lat": 37.773114,
+    "lng": -122.414672
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 1575,
+    "building_area_sqft": 1037,
+    "lot_depth_ft": 70,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "SLR",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0062 KISSLING            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 234470,
+    "assessed_improvement_value": 279560,
+    "last_sale_date": "1991-01-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Western SOMA Light Industrial and Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1936",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201903084798",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-03-08",
+      "status_date": "2019-05-08",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "repair (e) bathroom shower: change new fiberglass shower pan, fix dryrot at floor, new floor. new glass shower door. all the work interio. no outside work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201108122410",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-08-12",
+      "status_date": "2011-08-12",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "repair the exterior wood siding board at back side of the house approx. area 20' - 0\" x 10'-0\".",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9713362",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-07-18",
+      "status_date": "1998-08-05",
+      "estimated_cost": 4380,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8411000",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1984-10-30",
+      "status_date": "1985-08-08",
+      "estimated_cost": 3500,
+      "description": "remodel kitchen,dining room-pouh,install new gas stove",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=KISSLING&street_type=ST&address_number=62",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3517027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3517&lot=027",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3517027",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41467228311254%2037.77311354088342)%27)",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "south-of-market-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, prepared for Page & Turnbull, Inc., South of Market Area Historic Context Statement, FINAL, 30 June 2009, adopted 2011",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/372-SOMA_Historic_Context_Statement_06-30-2009.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "South of Market Area Historic Context Statement, adopted 2011",
+      "retrieved": "2026-09-03"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1906",
+      "kind": "construction",
+      "description": "A two-story single-family residence designed in the Classical Revival style.",
+      "source": "south-of-market-context-statement",
+      "date_precision": "year"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+ "address": "14 Capitol Avenue, San Francisco, CA 94112",
+ "path": "/san-francisco/oceanview-merced-ingleside/capitol-avenue/14/",
+ "apn": "7147015",
+ "block": "7147",
+ "lot": "015",
+ "eas_baseid": "491328",
+ "coordinates": {
+  "lat": 37.711005,
+  "lng": -122.458836
+ },
+ "parcel": {
+  "year_built": 1906,
+  "units": 2,
+  "stories": 2,
+  "rooms": 9,
+  "bathrooms": 3,
+  "bedrooms": 4,
+  "lot_area_sqft": 6500,
+  "building_area_sqft": 2161,
+  "lot_depth_ft": 30,
+  "use": "Multi-Family Residential",
+  "property_class": "Flats & Duplex",
+  "construction_type_code": "D",
+  "zoning": "RH-1",
+  "supervisor_district": 11,
+  "assessor_neighborhood": "Oceanview",
+  "analysis_neighborhood": "Oceanview/Merced/Ingleside",
+  "property_location_raw": "0000 0014 CAPITOL             AV0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 934266,
+  "assessed_improvement_value": 400398,
+  "last_sale_date": "2016-07-08"
+ },
+ "historic_status": {
+  "ceqa_status_code": "A",
+  "ceqa_status_code_article_10_11": "A",
+  "ceqa_status_label": "Historic resource",
+  "reason": "Historic Survey Result",
+  "yearbuilt": "1906",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "permits": [
+  {
+   "number": "200202209578",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "2002-02-20",
+   "status_date": "2002-02-27",
+   "estimated_cost": 7443,
+   "revised_cost": 7443,
+   "description": "reroofing",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "8201368",
+   "type": "additions alterations or repairs",
+   "status": "complete",
+   "filed": "1982-02-23",
+   "status_date": "1983-03-04",
+   "estimated_cost": 5000,
+   "source": "sf-building-permits"
+  }
+ ],
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPITOL&street_type=AVE&address_number=14",
+   "retrieved": "2026-08-31"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7147015&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-08-31"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7147&lot=015",
+   "retrieved": "2026-08-31"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7147015",
+   "retrieved": "2026-08-31"
+  },
+  {
+   "id": "early-residential-theme-study",
+   "name": "ICF for the San Francisco Planning Department, Theme Study: Early Residential Development in San Francisco, 1848–1899, Context: Residential (1848-1989), Subcontext: Single-Family, adopted September 3, 2025",
+   "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=647bf691ec66d716eeec9729114a47062fc8e1147efa8ea10f88037f2e3e883b&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "label": "Theme Study: Early Residential Development in San Francisco, 1848–1899, adopted 2025",
+   "retrieved": "2026-08-31"
+  }
+ ],
+ "historic_survey": {
+  "survey": "Theme Study: Early Residential Development in San Francisco, 1848–1899 (2025)",
+  "source": "early-residential-theme-study",
+  "style": "Stick Victorian farmhouse",
+  "year_built_as_surveyed": "c. 1890",
+  "finding": "Could be considered significant under Criteria A/1; likely retains sufficient integrity",
+  "note": "A farmhouse in a part of the city only sparsely developed before 1900, and so an example of early development in an outlying neighbourhood. The non-gabled south-west portion appears to be a later addition."
+ },
+ "building": {
+  "completed_conflict": "Dated to circa 1890; the assessor's roll records the parcel as built 1906."
+ }
+}

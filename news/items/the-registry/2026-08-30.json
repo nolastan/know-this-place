@@ -1,0 +1,81 @@
+{
+  "source_id": "the-registry",
+  "batch": "2026-08-30",
+  "read_on": "2026-08-30",
+  "coverage": {
+    "unit": "articles",
+    "examined": 4,
+    "mentions": 2,
+    "remaining": "Nothing from this batch.",
+    "note": "Two of the four items produced address hits only from the site's own \"Recent Posts\" rail — a law-firm hire and a state minimum-wage explainer, neither of which is about a building. This outlet cuts every article off after its first sentence, so both findings below rest on a headline and a lede."
+  },
+  "findings": [
+    {
+      "id": "2026-08-30-0001",
+      "date": "2026-08-28",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "333 Brannan",
+      "street_number": "333",
+      "street_name": "BRANNAN",
+      "street_type": "ST",
+      "description": "Cognition has agreed to sublease this 180,000-square-foot building from Cruise, expanding its San Francisco footprint sevenfold.",
+      "extra": {
+        "tenant": "Cognition",
+        "former_occupant": "Cruise",
+        "area_sqft_reported": 180000
+      },
+      "citation": {
+        "label": "The Registry, “Cognition Subleases 180,000 SQFT at 333 Brannan From Cruise, Expanding San Francisco Footprint Sevenfold,” 28 August 2026",
+        "url": "https://news.theregistrysf.com/cognition-subleases-180000-sqft-at-333-brannan-from-cruise-expanding-san-francisco-footprint-sevenfold/",
+        "locator": "headline and lede"
+      },
+      "raw": {
+        "text": "AI coding startup Cognition has agreed to sublease the 180,000-square-foot building at 333 Brannan S"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3788042",
+        "path": "/san-francisco/south-beach/brannan-street/329/",
+        "eas_address": "329 BRANNAN ST",
+        "method": "EAS exact match on 333 BRANNAN ST → parcel 3788042; sf-parcels has blklot 3788042 active, 329–333 BRANNAN; the 2025 roll records it as commercial office, built 2015. EAS puts 329, 333 BRANNAN ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 329.",
+        "checked_on": "2026-08-30"
+      },
+      "publish": {
+        "status": "declined",
+        "note": "One event, one entry. /san-francisco/south-beach/brannan-street/329/ carries this sublease from the San Francisco Chronicle (news/items/sf-chronicle/2026-08-28b.json, 2026-08-28b-0001), which is the article we could read in full; this outlet's copy stops after the lede."
+      }
+    },
+    {
+      "id": "2026-08-30-0002",
+      "date": "2026-08-30",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "499 Illinois Street",
+      "street_number": "499",
+      "street_name": "ILLINOIS",
+      "street_type": "ST",
+      "description": "UCSF has selected a design-build team for a 525,000-square-foot education centre and dental clinics project in Mission Bay. Whether this address is the project's site is not established by the text we could read.",
+      "citation": {
+        "label": "The Registry, “UCSF Advances 525,000 SQFT Mission Bay Education Center and Dental Clinics Project,” 30 August 2026",
+        "url": "https://news.theregistrysf.com/ucsf-advances-525000-sqft-mission-bay-education-center-and-dental-clinics-project/",
+        "locator": "headline and lede"
+      },
+      "raw": {
+        "text": "University of California, San Francisco has selected a progressive design-build team to deliver"
+      },
+      "confidence": "low",
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-08-30",
+        "method": "sf-eas-addresses has 499 ILLINOIS ST but it does not join to one parcel. 499 ILLINOIS ST's coordinates fall in 3 active parcels (3940003, 3940005, 3940004), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
+        "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+      },
+      "publish": {
+        "status": "declined",
+        "note": "The paywall cuts in mid-sentence, and the address hit sits on the cut rather than inside the story, so we cannot say this project is at 499 Illinois Street. Even if it were, it is a design-build award on a project that has not been built: per news/AGENTS.md a proposal puts nothing in the building block. Declined for want of a readable source, not for want of interest."
+      }
+    }
+  ]
+}

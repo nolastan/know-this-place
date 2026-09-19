@@ -1,0 +1,163 @@
+{
+  "address": "277–279 Rose Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/rose-street/277/",
+  "apn": "0852009A",
+  "block": "0852",
+  "lot": "009A",
+  "eas_baseid": "289569",
+  "coordinates": {
+    "lat": 37.773135,
+    "lng": -122.425134
+  },
+  "address_range": "277–279",
+  "street_numbers_on_parcel": [
+    "277",
+    "279"
+  ],
+  "parcel": {
+    "year_built": 1952,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 1514.7,
+    "building_area_sqft": 2268,
+    "lot_depth_ft": 55.08,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Hayes Valley",
+    "property_location_raw": "0000 0277 ROSE                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1019587,
+    "assessed_improvement_value": 436965,
+    "last_sale_date": "2008-07-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1952",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Hayes Valley Residential Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1860–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202310279635",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-10-27",
+      "status_date": "2024-05-29",
+      "estimated_cost": 23200,
+      "revised_cost": 23200,
+      "description": "replace 4 street facing windows with marvin ultimate windows: replace 5 interior windows with anlin",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201408284963",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2014-08-28",
+      "status_date": "2014-09-19",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "bathroom remodel. no change to layout of fixtures. update plumbing/elec",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201312053415",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-12-05",
+      "status_date": "2014-12-18",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "kitchen remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201001144764",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-01-14",
+      "status_date": "2010-04-08",
+      "estimated_cost": 2000,
+      "revised_cost": 10000,
+      "description": "(e) bathroom remodel; re-tile, new toilet in (e) location, (n) tub install in (e) location, (n) shower head and faucet in (e) location. install (n) wall furnace @ hall/living rm. (same location).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200306025946",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-06-02",
+      "status_date": "2007-01-08",
+      "estimated_cost": 5695,
+      "revised_cost": 5695,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ROSE&street_type=ST&address_number=277",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0852009A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0852&lot=009A",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0852009A",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42513358971594%2037.77313521210157)%27)",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "market-octavia-survey-forms",
+      "name": "Page & Turnbull for the San Francisco Planning Department, Market & Octavia Augmentation Survey, DPR 523 survey forms, fieldwork 2006, evaluations by Kelley & VerPlanck 2010",
+      "query": "https://sfplanning.org/sites/default/files/documents/preserv/DPRforms/HV%20Post%201920.pdf",
+      "listing": "https://sfplanning.org/historic-preservation-survey-forms-dpr523",
+      "label": "Market & Octavia Survey DPR 523 form, 2006–2010",
+      "retrieved": "2026-09-03"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Market & Octavia Survey (2006–2010)",
+      "source": "market-octavia-survey-forms",
+      "year_built_as_surveyed": "1952"
+    }
+  ]
+}

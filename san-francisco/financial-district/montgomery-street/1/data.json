@@ -23,7 +23,7 @@
     "supervisor_district": 3,
     "assessor_neighborhood": "Financial District North",
     "analysis_neighborhood": "Financial District/South Beach",
-    "assessor_property_location": "0001 MONTGOMERY ST",
+    "property_location_raw": "0000 0001 MONTGOMERY          ST0000",
     "note": "Business addresses are usually deferred on this site; this page exists because the address was named in the prompting source. The parcel carries the two-storey banking hall only — the 38-storey tower behind it on the same block is a separate parcel (0292004, 68–82 Post Street), though DBI files its permits under this address."
   },
   "assessment": {
@@ -37,8 +37,7 @@
     "ceqa_status_code_article_10_11": "A*",
     "ceqa_status_label": "Historical resource; Article 10 individual landmark",
     "reason": "Article 10 Individual Landmark, Historic Resource Evaluation Response, Historic Survey Result",
-    "planning_year_built": 1908,
-    "designated_landmark": true,
+    "yearbuilt": 1908,
     "in_article_10_11_historic_district": false,
     "source": "sf-planning"
   },
@@ -55,7 +54,8 @@
       "filed": "2020-09-05",
       "estimated_cost": 125000,
       "description": "revision to the February 2020 permit, to remove the vaults in the basement",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Revision to the February 2020 permit, to remove the vaults in the basement."
     },
     {
       "number": "202002073837",
@@ -76,7 +76,6 @@
       "source": "sf-building-permits"
     }
   ],
-  "permits_note": "Three of the 792 filings under this address and parcel are shown. DBI files work in the neighbouring 38-storey office tower under the same address, so only filings whose description identifies the two-storey banking hall — its basement vaults, its mezzanine, its historic features — are listed here.",
   "historical_record": [
     {
       "date": "1871-09",
@@ -91,6 +90,12 @@
       "summary": "What the firm would trade in",
       "description": "The firm would deal in the staple products of Japan — tea, coal, flax and wax — rather than knick-knacks, and had the means to do business on a large scale, the Bulletin reported.",
       "source": "argonaut-vol30-no1-summer2019-edwards"
+    },
+    {
+      "date": "1962-04-17",
+      "kind": "photograph",
+      "description": "Photographed.",
+      "source": "digitalsf-32147"
     }
   ],
   "sources": [
@@ -128,6 +133,37 @@
       "id": "argonaut-vol30-no1-summer2019-edwards",
       "name": "Taryn Edwards, “Before the Midwinter Fair: The Mechanics' Institute's ‘Pacific Rim' Industrial Exhibitions of 1869 and 1871,” The Argonaut: Journal of the San Francisco Historical Society, vol. 30, no. 1 (Summer 2019), pp. 8–23",
       "retrieved": "2026-08-06"
+    },
+    {
+      "id": "modern-postmodern-styles-context-statement",
+      "name": "Hannah Lise Simonson, Page & Turnbull, for the San Francisco Planning Department, San Francisco Modern & Postmodern Architectural Styles (1960-2000) Historic Context Statement, Context: Architectural Methods & Styles, SF Survey Cultural Resources Survey, adopted August 21, 2024",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=12bf7fd7aa07e2b779e0afc717eb0d789b9ba378bf6e80f7f8a1ce30cdc8946f&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Modern & Postmodern Architectural Styles Historic Context Statement, adopted 2024",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "digitalsf-32147",
+      "name": "1 Montgomery Street, 1962. San Francisco Subjects Photograph Collection (SFP 162), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/32147",
+      "label": "San Francisco Subjects Photograph Collection (SFP 162), San Francisco Public Library",
+      "retrieved": "2026-09-02"
     }
-  ]
+  ],
+  "historic_survey": [
+    {
+      "survey": "Modern & Postmodern Architectural Styles Historic Context Statement (2024)",
+      "source": "modern-postmodern-styles-context-statement",
+      "style": "Postmodernism",
+      "year_built_as_surveyed": "1982",
+      "architect_as_surveyed": "Skidmore, Owings & Merrill (SOM)",
+      "note": "A roof terrace with historicist columns and pergolas added by Skidmore, Owings & Merrill atop the historic bank here, as part of the Crocker Tower and Galleria project - the point at which the firm's design shifts fully into Postmodernism."
+    }
+  ],
+  "building": {
+    "architect": "Skidmore, Owings & Merrill (SOM)"
+  },
+  "permit_summary": {
+    "note": "Three of the 792 filings under this address and parcel are shown. DBI files work in the neighbouring 38-storey office tower under the same address, so only filings whose description identifies the two-storey banking hall — its basement vaults, its mezzanine, its historic features — are listed here."
+  }
 }

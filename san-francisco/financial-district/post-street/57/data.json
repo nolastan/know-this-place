@@ -26,7 +26,7 @@
     "supervisor_district": 3,
     "assessor_neighborhood": "Union Square",
     "analysis_neighborhood": "Financial District/South Beach",
-    "assessor_property_location": "0065 0057 POST ST",
+    "property_location_raw": "0065 0057 POST                ST0000",
     "note": "Business addresses are usually deferred on this site; this page exists because the address was named in the prompting source. The parcel spans 57, 61 and 65 Post Street, and DBI files permits under all three numbers."
   },
   "assessment": {
@@ -41,8 +41,7 @@
     "ceqa_status_code_article_10_11": "A*",
     "ceqa_status_label": "Historical resource; Article 10 individual landmark",
     "reason": "Article 10 Individual Landmark, Article 11 Individual, Historic Survey Result",
-    "planning_year_built": 1909,
-    "designated_landmark": true,
+    "yearbuilt": 1909,
     "in_article_10_11_historic_district": false,
     "source": "sf-planning"
   },
@@ -59,7 +58,8 @@
       "filed": "2026-07-15",
       "estimated_cost": 1880000,
       "description": "second and third floors — individual study rooms built out on the third floor, finishes updated, walls and ceilings repainted, floors carpeted, woodwork stained, light fittings and casework replaced, and cooling added to the third-floor IT closet",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Second and third floors — individual study rooms built out on the third floor, finishes updated, walls and ceilings repainted, floors carpeted, woodwork stained, light fittings and casework replaced, and cooling added to the third-floor IT closet."
     },
     {
       "number": "202509034426",
@@ -68,7 +68,8 @@
       "filed": "2025-09-03",
       "estimated_cost": 12000,
       "description": "re-roofing, with hot works",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Re-roofing, with hot works."
     },
     {
       "number": "202109108120",
@@ -95,7 +96,8 @@
       "filed": "2016-05-05",
       "estimated_cost": 86400,
       "description": "change of use from bank to bar at 65 Post Street — the commercial tenant space remodelled and its bathrooms made accessible",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Change of use from bank to bar at 65 Post Street — the commercial tenant space remodelled and its bathrooms made accessible."
     },
     {
       "number": "201109225299",
@@ -116,7 +118,6 @@
       "source": "sf-building-permits"
     }
   ],
-  "permits_note": "Seven of the 104 filings on this parcel are shown; the rest are sign and street-space permits, revisions to the permits above, and the duplicates DBI files under 57, 61 and 65 Post Street.",
   "historical_record": [
     {
       "date": "1866",
@@ -131,6 +132,12 @@
       "summary": "Mechanics' Institute founded",
       "description": "The Mechanics' Institute was founded in the slump that followed the fall in gold production, to give under-employed miners, artisans and tradespeople somewhere to learn and meet.",
       "source": "argonaut-vol30-no1-summer2019-edwards"
+    },
+    {
+      "date": "1909",
+      "kind": "construction",
+      "description": "The Mechanics Institute, designed by architect Albert Pissis.",
+      "source": "architecture-preservation-professionals-biographies"
     }
   ],
   "sources": [
@@ -168,6 +175,20 @@
       "id": "argonaut-vol30-no1-summer2019-edwards",
       "name": "Taryn Edwards, “Before the Midwinter Fair: The Mechanics' Institute's ‘Pacific Rim' Industrial Exhibitions of 1869 and 1871,” The Argonaut: Journal of the San Francisco Historical Society, vol. 30, no. 1 (Summer 2019), pp. 8–23",
       "retrieved": "2026-08-06"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume P–R), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=37da3dd1abd97d61cd23d20a163f6d99f76a7aaf67f04eddf11f919d978aa651&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-09-02"
     }
-  ]
+  ],
+  "building": {
+    "architect": "Albert Pissis"
+  },
+  "permit_summary": {
+    "note": "Seven of the 104 filings on this parcel are shown; the rest are sign and street-space permits, revisions to the permits above, and the duplicates DBI files under 57, 61 and 65 Post Street."
+  }
 }

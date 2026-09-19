@@ -1,0 +1,144 @@
+{
+  "address": "1801 Clement Street, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/clement-street/1801/",
+  "apn": "1451001",
+  "block": "1451",
+  "lot": "001",
+  "eas_baseid": "304330",
+  "coordinates": {
+    "lat": 37.782156,
+    "lng": -122.478675
+  },
+  "parcel": {
+    "year_built": 1918,
+    "units": 3,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "lot_area_sqft": 1746,
+    "building_area_sqft": 3000,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "OTCLEM",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "1811 1801 CLEMENT             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 124958,
+    "assessed_improvement_value": 204908
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1918",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201412103437",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-12-10",
+      "status_date": "2014-12-17",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "install (n) lighting in dining area, remove wing walls at entry, install soffits, install automatic door operator for ada compliance, refinish floor. all work confined to dining area.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201005273330",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-05-27",
+      "status_date": "2010-07-08",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "revision to appl. #201003309310. remove (e) prep sink. installing a (n) prep sink & grease trap hand sink & flr. sink requested by health inspector. no other work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201003309310",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-03-30",
+      "status_date": "2010-07-08",
+      "estimated_cost": 8000,
+      "revised_cost": 18000,
+      "description": "josho international restaurant. add ada bathroom in dining area.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8716676",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1987-11-20",
+      "status_date": "1988-08-04",
+      "estimated_cost": 5000,
+      "description": "line walls w/sheetrock, new subfloor & floor, add partitions",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1987–2014",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLEMENT&street_type=ST&address_number=1801",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1451001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1451&lot=001",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1451001",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "bites",
+      "name": "Bites, merchant directory",
+      "supports": "Current occupant",
+      "query": "https://withbites.com/merchants",
+      "retrieved": "2026-09-11"
+    }
+  ],
+  "occupants": [
+    {
+      "name": "Lokma",
+      "cuisines": [
+        "Mediterranean",
+        "American",
+        "Turkish"
+      ],
+      "opening_hours": [
+        "Su 10:00-14:00,16:00-20:30",
+        "Mo,Tu,We 16:00-21:00",
+        "Th,Fr,Sa 10:00-14:00,16:00-21:00"
+      ],
+      "listed_address": "1801 Clement Street",
+      "source": "bites"
+    }
+  ]
+}

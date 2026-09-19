@@ -1,0 +1,162 @@
+{
+  "address": "195 Santa Ana Avenue, San Francisco, CA 94127",
+  "path": "/san-francisco/west-of-twin-peaks/santa-ana-avenue/195/",
+  "apn": "3102013",
+  "block": "3102",
+  "lot": "013",
+  "eas_baseid": "354113",
+  "coordinates": {
+    "lat": 37.733312,
+    "lng": -122.467611
+  },
+  "parcel": {
+    "year_built": 1949,
+    "units": 1,
+    "stories": 1,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 5340,
+    "building_area_sqft": 3744,
+    "basement_area_sqft": 1652,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "St. Francis Wood",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0195 SANTA ANA           AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2572253,
+    "assessed_improvement_value": 1213714,
+    "last_sale_date": "2020-06-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1949",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "St. Francis Wood Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1912–1954",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202106071812",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-06-07",
+      "status_date": "2023-04-25",
+      "estimated_cost": 450000,
+      "revised_cost": 450000,
+      "description": "interior remodel of master bved/bathroom suite and office. reconfig window locaitons on north elevation and addition of skylights, all not vislbe from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209139676",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-09-13",
+      "status_date": "2012-12-21",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "kitchen remodel interior work only, replacement of windows in kind at kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200912314077",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2009-12-31",
+      "status_date": "2011-05-06",
+      "estimated_cost": 400000,
+      "revised_cost": 470000,
+      "description": "add a basement level story under (e) home at garage level. interior remodel on the main level including removing a wall between 2 rooms, & providing a new stair to the basement level. addition of bull bath at basement level. window replacement.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9709840",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-05-30",
+      "status_date": "1997-10-24",
+      "estimated_cost": 7000,
+      "description": "kitechn renovation;repl kitchen,cabinets,counter top",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9600142",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-01-04",
+      "status_date": "1996-02-15",
+      "estimated_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SANTA%20ANA&street_type=AVE&address_number=195",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3102013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3102&lot=013",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3102013",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.46761072460761%2037.73331165620722)%27)",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "modern-architecture-context-statement",
+      "name": "Mary Brown, San Francisco Planning Department, San Francisco Modern Architecture and Landscape Design 1935-1970 Historic Context Statement, adopted 12 January 2011",
+      "query": "http://sfplanninggis.org/docs/Historical_Context_Statements/Modern%20Architecture%20Context%20adopted%20Jan%202011.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Modern Architecture and Landscape Design Context Statement, adopted 2011",
+      "retrieved": "2026-09-01"
+    }
+  ],
+  "building": {
+    "architect": "Dorothy Wormser Coblentz",
+    "completed": 1948
+  },
+  "historical_record": [
+    {
+      "date": "1948",
+      "kind": "construction",
+      "description": "A house of 1948 by Dorothy Wormser Coblentz, credited to the firm of H.H. Gutterson.",
+      "source": "modern-architecture-context-statement"
+    }
+  ]
+}

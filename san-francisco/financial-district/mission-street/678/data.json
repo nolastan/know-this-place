@@ -10,9 +10,16 @@
     "lng": -122.401689
   },
   "building_type": "commercial",
-  "aliases": [
+  "also_addressed": [
     "666 Mission Street"
   ],
+  "building": {
+    "name": "Hundley Hardware Building",
+    "completed": 1922,
+    "sources": [
+      "transit-center-district-survey"
+    ]
+  },
   "parcel": {
     "year_built": 1922,
     "use": "Commercial Retail",
@@ -27,14 +34,14 @@
     "supervisor_district": 6,
     "assessor_neighborhood": "Financial District South",
     "analysis_neighborhood": "Financial District/South Beach",
-    "assessor_property_location": "0000 0666 MISSION ST0000",
+    "property_location_raw": "0000 0666 MISSION             ST0000",
     "note": "Business addresses are usually deferred on this site; this page exists because the prompting source locates a resolvable 1847 land grant here, at the site of a named present-day building. The assessor's property_location and DBI's permit records both name this parcel 666 Mission Street. EAS separately carries 678 Mission Street with no parcel_number of its own, but 678 is the address the California Historical Society used for the same building during its 1993–2024 tenancy, on the same Mission Street frontage as 666."
   },
   "assessment": {
     "roll_year": 2025,
     "assessed_land_value": 2344322,
     "assessed_improvement_value": 781429,
-    "exemption": "Welfare exemption (nonprofit use), while the California Historical Society held the parcel",
+    "exemption": "Welfare (nonprofit use), while the California Historical Society held the parcel",
     "last_sale_date": "1993-05-21"
   },
   "historic_status": {
@@ -42,8 +49,7 @@
     "ceqa_status_code_article_10_11": "A*",
     "ceqa_status_label": "Historical resource; within an Article 11 conservation district",
     "reason": "Article 11 Individual, Article 11 Conservation District, Historic Survey Result",
-    "planning_year_built": 1922,
-    "designated_landmark": false,
+    "yearbuilt": 1922,
     "in_article_10_11_historic_district": true,
     "source": "sf-planning"
   },
@@ -94,15 +100,30 @@
       "source": "sf-building-permits"
     }
   ],
-  "historic_survey": {
-    "survey": "Central SoMa Historic Resources Survey (2016)",
-    "prior_status_code": "2D, 3CS, 3CB",
-    "prior_survey": "Transit Center District",
-    "current_article11_rating": "V",
-    "dcp_1976_survey": true,
-    "heritage_rating": "C — of contextual importance",
-    "source": "central-soma-survey"
-  },
+  "historic_survey": [
+    {
+      "survey": "Central SoMa Historic Resources Survey (2016)",
+      "prior_status_code": "2D, 3CS, 3CB",
+      "prior_survey": "Transit Center District",
+      "current_article11_rating": "V",
+      "dcp_1976_survey": true,
+      "heritage_rating": "C — of contextual importance",
+      "source": "central-soma-survey"
+    },
+    {
+      "survey": "Transit Center District Survey (2008)",
+      "source": "transit-center-district-survey",
+      "proposed_status_code": "2D, 3CB",
+      "prior_status_code": "2D",
+      "eligible_district": "New Montgomery, Mission & Second Historic District (proposed)",
+      "heritage_rating": "C",
+      "dcp_1976_survey": "Rated 1",
+      "address_as_surveyed": "678 Mission Street",
+      "apn_as_surveyed": "3707021",
+      "note": "Listed among the proposed district's contributors. The survey prints the address two ways — 678 Mission Street in the district record and 666 Mission in the ratings table; the assessor now says 666.",
+      "status_code_meaning": "California Historical Resource Status Codes: a 1 or 2 means listed or formally determined eligible, a 3 means the survey judged it eligible, a 4 that it may become eligible, a 6 that it was found ineligible, and a 7 that it was not evaluated."
+    }
+  ],
   "historical_record": [
     {
       "date": "2025-01-28",
@@ -163,6 +184,9 @@
       "description": "Jasper O'Farrell petitioned Acting Alcalde Hyde for the grant of the 100-vara lot.",
       "source": "argonaut-vol32-no1-summer2021-macfarlane"
     }
+  ],
+  "unknowns": [
+    "The building's use since its 2024 sale is not documented, nor what became of the two 100-vara lots the Argonaut names on either side of O'Farrell's grant."
   ],
   "sources": [
     {
@@ -225,6 +249,14 @@
       "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
       "label": "Central SoMa Historic Resources Survey, 2016",
       "retrieved": "2026-08-12"
+    },
+    {
+      "id": "transit-center-district-survey",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, Transit Center District Survey, San Francisco, California — Final, prepared for the San Francisco Planning Department, July 22, 2008, adopted 2012",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4039-Final%20Transit%20Center.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Transit Center District Survey, adopted 2012",
+      "retrieved": "2026-08-24"
     }
   ]
 }

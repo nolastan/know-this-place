@@ -1,0 +1,173 @@
+{
+  "address": "1287 42nd Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/42nd-avenue/1287/",
+  "apn": "1708018",
+  "block": "1708",
+  "lot": "018",
+  "eas_baseid": "314444",
+  "coordinates": {
+    "lat": 37.762675,
+    "lng": -122.502072
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2374,
+    "building_area_sqft": 2164,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1287 42ND                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1304800,
+    "assessed_improvement_value": 559200,
+    "last_sale_date": "2022-06-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1912",
+    "survey_name": "1287 42ND AVE",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Alphonso Harrington 42nd Avenue Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1910–1913",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202505025689",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2025-05-21",
+      "status_date": "2026-01-08",
+      "estimated_cost": 100000,
+      "revised_cost": 620000,
+      "description": "demo (e) rear yard deck and expand 1st & 2nd flr to buildable line; relocate (e) kitchen/dining/family room 2nd fl to 1st fl. make a master bedroom after relocation. add a bedroom to 2nd fl and change (e) living to bedroom. alter (e) stairs. 1st &2nd flr. bath remodel. relocate laundry to 2nd floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202208301554",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-08-30",
+      "status_date": "2022-11-03",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "re-roofing tear off diamond deck underlayment 30 yeat shingles",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200904216765",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-04-21",
+      "status_date": "2009-05-12",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to renew app #20000271198",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200207080795",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-07-08",
+      "status_date": "2009-05-08",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "renew appn. 20002071198 to complete work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200002071198",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2000-02-07",
+      "status_date": "2001-09-27",
+      "estimated_cost": 25000,
+      "revised_cost": 55000,
+      "description": "site permit-rear addition-two levels rooms down",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9218632",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-10-26",
+      "status_date": "1993-07-08",
+      "estimated_cost": 8500,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=42ND&street_type=AVE&address_number=1287",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1708018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1708&lot=018",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1708018",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.50207172954286%2037.762674526624444)%27)",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume G–I), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=b4fed2f0ee80387415081f76f9f657d25c12a1398210899a92a9222f03506e7a&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-09-01"
+    }
+  ],
+  "building": {
+    "builder": "Alphonso Harrington"
+  },
+  "historical_record": [
+    {
+      "date": "1912",
+      "kind": "construction",
+      "description": "Built by Alphonso Harrington, part of the row of fifteen Craftsman houses he raised along the west side of 42nd Avenue near Lincoln Way between 1910 and 1915 — one of the best surviving collections of early Outer Sunset houses, and the core of the Alphonso Harrington 42nd Avenue Historic District.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ]
+}

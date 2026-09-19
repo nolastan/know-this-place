@@ -1,41 +1,52 @@
 {
   "address": "60–62 Danvers Street, San Francisco, CA 94114",
+  "path": "/san-francisco/corbett-heights/danvers-street/60/",
+  "hook": "A 1961 building on ground that carried part of Horner's grocery and saloon.",
+  "apn": "2659060",
+  "block": "2659",
+  "lot": "060",
+  "eas_baseid": "343622",
+  "coordinates": {
+    "lat": 37.76053,
+    "lng": -122.443814
+  },
   "address_range": {
     "low": 60,
     "high": 62,
     "canonical": 60,
     "note": "One parcel spanning 60 and 62 Danvers Street."
   },
-  "path": "/san-francisco/corbett-heights/danvers-street/60/",
-  "hook": "A 1961 building on ground that carried part of Horner's grocery and saloon.",
-  "apn": "2659060",
-  "block": "2659",
-  "lot": "060",
-  "coordinates": {
-    "lat": 37.76053,
-    "lng": -122.443814
-  },
+  "street_numbers_on_parcel": [
+    "60",
+    "62"
+  ],
   "parcel": {
     "year_built": 1961,
-    "use": "Multi-Family Residential",
-    "property_class": "Flats & Duplex",
     "units": 2,
     "stories": 2,
     "rooms": 10,
     "lot_area_sqft": 2652,
     "building_area_sqft": 2732,
-    "construction_type": "Wood frame",
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
     "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0062 0060 DANVERS             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2017,
     "assessed_land_value": 1584365,
     "assessed_improvement_value": 758378,
-    "current_sales_date": "2002-09-27"
+    "last_sale_date": "2002-09-27",
+    "note": "The most recent secured roll carrying this parcel is 2017, and the dataset gives no reason. The figures are not current."
   },
   "historic_status": {
     "ceqa_status_code": "B",
     "ceqa_status_label": "Unknown Historic Resource status",
     "reason": "No evaluation and 45 years or older",
-    "designated_landmark": false,
-    "historic_district": null,
     "source": "sf-planning"
   },
   "permits": [
@@ -45,23 +56,26 @@
       "status": "complete",
       "estimated_cost": 20000,
       "description": "Comply with physical inspection report 7995.",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Work to comply with physical inspection report 7995."
     },
     {
       "number": "201105125945",
       "filed": "2011-05-12",
       "status": "complete",
       "estimated_cost": 10000,
-      "description": "Unit 62 only: kitchen remodel with new 60-amp sub-panel.",
-      "source": "sf-building-permits"
+      "description": "one unit only: kitchen remodel with new 60-amp sub-panel.",
+      "source": "sf-building-permits",
+      "description_edited": "One unit only: kitchen remodelled, with a new 60-amp sub-panel."
     },
     {
       "number": "200409174530",
       "filed": "2004-09-17",
       "status": "complete",
       "estimated_cost": 2800,
-      "description": "Unit 60 only: retile bathroom, replace cabinets.",
-      "source": "sf-building-permits"
+      "description": "one unit only: retile bathroom, replace cabinets.",
+      "source": "sf-building-permits",
+      "description_edited": "One unit only: bathroom retiled and cabinets replaced."
     },
     {
       "number": "200212022534",
@@ -69,7 +83,8 @@
       "status": "complete",
       "estimated_cost": 8000,
       "description": "Replace 20 windows with vinyl dual pane.",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Twenty windows replaced with vinyl dual pane; existing aluminium frames retained."
     },
     {
       "number": "9924852",
@@ -77,7 +92,8 @@
       "status": "expired",
       "estimated_cost": 3200,
       "description": "Remove damaged siding and stucco; replace garage door; paint.",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Damaged siding and stucco removed; garage door replaced; painting."
     },
     {
       "number": "9610867",
@@ -85,7 +101,8 @@
       "status": "complete",
       "estimated_cost": 5300,
       "description": "Install vinyl siding on rear and side walls.",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Vinyl siding installed on the rear and side walls."
     },
     {
       "number": "8614454",
@@ -93,7 +110,8 @@
       "status": "expired",
       "estimated_cost": 12500,
       "description": "Conversion of basement to bedroom and sewing room.",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Basement converted to a bedroom and sewing room."
     }
   ],
   "narrative": {
@@ -105,7 +123,8 @@
       "name": "Corbett Heights Neighbors, \"April Neighborhood News\", Vol. VIII, No. 4 (1 April 2026)",
       "cites": "a photograph dated 1909 of the 18th Street, Danvers and Falcon intersection",
       "query": "https://corbettneighbors.optin.com/newsletter/awlist6655060/Mjk1MDc0NTQ=/april-neighborhood-news.htm",
-      "retrieved": "2026-07-22"
+      "retrieved": "2026-07-22",
+      "supports": "Building history"
     },
     {
       "id": "sf-eas-addresses",
@@ -115,9 +134,9 @@
     },
     {
       "id": "sf-assessor-roll",
-      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2017 secured roll — the latest carrying this parcel)",
       "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2659060&$order=closed_roll_year%20DESC&$limit=1",
-      "retrieved": "2026-07-22"
+      "retrieved": "2026-09-13"
     },
     {
       "id": "sf-planning",
@@ -127,7 +146,7 @@
     },
     {
       "id": "sf-building-permits",
-      "name": "SF Dept. of Building Inspection via DataSF",
+      "name": "SF Dept. of Building Inspection via DataSF, permits for block 2659 lot 060",
       "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2659&lot=060",
       "retrieved": "2026-07-22"
     }
@@ -139,5 +158,8 @@
       "description": "Part of Fred G. Horner's grocery and saloon, addressed 2 Falcon Street, stood on this property at the north-west corner of Market and Danvers.",
       "source": "corbett-heights-neighbors"
     }
+  ],
+  "unknowns": [
+    "The assessor records no bathrooms, which is unlikely to be right."
   ]
 }

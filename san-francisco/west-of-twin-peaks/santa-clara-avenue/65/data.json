@@ -1,0 +1,170 @@
+{
+  "address": "65 Santa Clara Avenue, San Francisco, CA 94127",
+  "path": "/san-francisco/west-of-twin-peaks/santa-clara-avenue/65/",
+  "apn": "3076029",
+  "block": "3076",
+  "lot": "029",
+  "eas_baseid": "353350",
+  "coordinates": {
+    "lat": 37.737831,
+    "lng": -122.465411
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "lot_area_sqft": 5096,
+    "building_area_sqft": 2528,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "St. Francis Wood",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0065 SANTA CLARA         AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2522715,
+    "assessed_improvement_value": 1358385,
+    "last_sale_date": "2023-10-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "St. Francis Wood Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1912–1954",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200908255507",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2009-08-25",
+      "status_date": "2009-10-15",
+      "estimated_cost": 65000,
+      "revised_cost": 65000,
+      "description": "replace 28 windows on side & back of the house in kind. wood. replace furnace with 70.000 btv umt. replace b vents & ducts. install 150 sq feet of r-30 insulation in attic. increase valuation of appl. 200907072131 by $ 20.000. u = 0.67 typical for new windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200908205258",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-08-20",
+      "status_date": "2009-10-15",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "reroof with new plywood , paper and shingles.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200907072131",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-07-07",
+      "status_date": "2009-11-25",
+      "estimated_cost": 1200,
+      "revised_cost": 2000,
+      "description": "reface kitchen cabinets. partially repalce tiel on countertop in kitchen. partially replace tile in 2 bathrooms, refinish approximately 100 sq. ft. of handwood floor. no electrical and plumbing work. no lighting change.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200512291205",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-12-29",
+      "status_date": "2007-02-07",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "replace 1 wood french door with wood french door, same size & location. no structural changes cannot see from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9510334",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-07-06",
+      "status_date": "1995-10-20",
+      "estimated_cost": 1800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8307286",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1983-07-27",
+      "status_date": "1983-12-09",
+      "estimated_cost": 10000,
+      "description": "remodeling of kitchen",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SANTA%20CLARA&street_type=AVE&address_number=65",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3076029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3076&lot=029",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3076029",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.46541105172838%2037.73783116664702)%27)",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume V–Z), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=2c8863b8cbd143e02858494de6865a67321b2a33effe8b9c9dac8ccf3193d4a3&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1920",
+      "kind": "construction",
+      "description": "A large Mediterranean Revival residence designed by architect Grace Y. Weeks.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ],
+  "building": {
+    "architect": "Grace Y. Weeks"
+  }
+}

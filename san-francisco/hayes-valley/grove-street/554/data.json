@@ -1,0 +1,169 @@
+{
+  "address": "554 Grove Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/grove-street/554/",
+  "apn": "0794029",
+  "block": "0794",
+  "lot": "029",
+  "eas_baseid": "288448",
+  "coordinates": {
+    "lat": 37.777601,
+    "lng": -122.425744
+  },
+  "parcel": {
+    "year_built": 1941,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 1483.8,
+    "building_area_sqft": 1296,
+    "basement_area_sqft": 192,
+    "lot_depth_ft": 60,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Hayes Valley",
+    "property_location_raw": "0000 0554 GROVE               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 840322,
+    "assessed_improvement_value": 360132,
+    "last_sale_date": "2010-04-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1941",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Hayes Valley Residential Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1860–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201103071480",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-03-07",
+      "status_date": "2011-03-07",
+      "estimated_cost": 175000,
+      "revised_cost": 175000,
+      "description": "kitchen and upper bath room remodel including removal of wall btn kitchen and dining room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201009211260",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-09-21",
+      "status_date": "2010-09-21",
+      "estimated_cost": 1400,
+      "revised_cost": 1400,
+      "description": "replacing sheet metal extension after new roof is installed and bracing fire place extension to 2' above neiboring roofline (2' above a 10' radius)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201006305651",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-06-30",
+      "status_date": "2010-07-02",
+      "estimated_cost": 6750,
+      "revised_cost": 6750,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M16782",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-08-01",
+      "status_date": "2002-08-01",
+      "revised_cost": 30000,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200104307974",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2001-04-30",
+      "status_date": "2001-12-07",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "improve exist stair, renovate bedroom, relocate bathroom into exist laundry area.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9403159",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-02-28",
+      "status_date": "1994-11-02",
+      "estimated_cost": 6500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GROVE&street_type=ST&address_number=554",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0794029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0794&lot=029",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0794029",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42574376485872%2037.77760055208911)%27)",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "market-octavia-survey-forms",
+      "name": "Page & Turnbull for the San Francisco Planning Department, Market & Octavia Augmentation Survey, DPR 523 survey forms, fieldwork 2006, evaluations by Kelley & VerPlanck 2010",
+      "query": "https://sfplanning.org/sites/default/files/documents/preserv/DPRforms/HV%20Post%201920.pdf",
+      "listing": "https://sfplanning.org/historic-preservation-survey-forms-dpr523",
+      "label": "Market & Octavia Survey DPR 523 form, 2006–2010",
+      "retrieved": "2026-09-03"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Market & Octavia Survey (2006–2010)",
+      "source": "market-octavia-survey-forms",
+      "year_built_as_surveyed": "1941"
+    }
+  ]
+}

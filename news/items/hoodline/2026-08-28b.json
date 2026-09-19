@@ -1,0 +1,92 @@
+{
+  "source_id": "hoodline",
+  "batch": "2026-08-28b",
+  "read_on": "2026-08-28",
+  "notes": "Second run of 2026-08-28. Seven items queued, all seven read.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 7,
+    "mentions": 3,
+    "remaining": "Nothing from this batch.",
+    "note": "Four items named no street address at all: a Golden Gate Park fitness gathering, a Dreamfest bill at Oracle Park, the Koshland Park playground design, and a weather forecast. A fifth, the Sundown Cinema round-up, produced only the false hit \"000 Amazon\" — read.py matched Amazon Avenue against a sentence about a sponsor booth, and the story is an outdoor film series with no building in it."
+  },
+  "findings": [
+    {
+      "id": "2026-08-28b-0001",
+      "date": "2026-08",
+      "date_precision": "month",
+      "kind": "sale",
+      "address_as_written": "150 Post St.",
+      "street_number": "150",
+      "street_name": "POST",
+      "street_type": "ST",
+      "description": "Urban Land Development surrendered title to this 118-year-old, seven-storey, 117,435-square-foot Union Square office building by deed-in-lieu of foreclosure in August 2026, after defaulting on roughly $73.6 million of debt. Control passed to an affiliate of Argentic Investment Management, the lender that financed the 2019 purchase with a $78.5 million loan. Urban Land Development had bought the building in November 2019 for about $94 million in a joint venture with Urban Land Capital and Meyer Corporation; Federal Realty Investment Trust had sold it to Madison Capital and PGIM Real Estate for $69.3 million in August 2017. More than half the office space was empty at the handover. Every party named here is a company.",
+      "extra": {
+        "former_owner": "Urban Land Development",
+        "new_owner": "an affiliate of Argentic Investment Management",
+        "mechanism": "deed-in-lieu of foreclosure",
+        "debt_outstanding_usd": 73600000,
+        "purchase_2019_usd": 94000000,
+        "purchase_2017_usd": 69300000,
+        "area_sqft_reported": 117435,
+        "storeys_reported": 7,
+        "age_reported": "118 years"
+      },
+      "citation": {
+        "label": "Hoodline, “Union Square Tower Slips to Lender as $73.6M in Debt Goes Unpaid,” 28 August 2026",
+        "url": "https://hoodline.com/2026/08/union-square-tower-slips-to-lender-as-73-6m-in-debt-goes-unpaid/",
+        "locator": "opening paragraphs"
+      },
+      "raw": {
+        "text": "Urban Land Development surrendered the title to 150 Post St. via a deed-in-lieu of foreclosure in August"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0293006",
+        "path": "/san-francisco/financial-district/post-street/150/",
+        "eas_address": "150 POST ST",
+        "method": "EAS exact match on 150 POST ST → parcel 0293006; sf-parcels has blklot 0293006 active, 150–150 POST; the 2025 roll records it as commercial office, built 1908.",
+        "checked_on": "2026-08-28",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "Timeline entry on /san-francisco/financial-district/post-street/150/. The page was seeded in this run from research/manifests/news-2026-08-28b.json; there was no page at that path before it. The roll's own figures corroborate the story on every number it gives — built 1908 against the article's \"118-year-old\", seven storeys, and 117,435 square feet exactly — so there is no conflict to record."
+      }
+    },
+    {
+      "id": "2026-08-28b-0002",
+      "date": "2026-08-13",
+      "date_precision": "day",
+      "kind": "mention",
+      "address_as_written": "771 Cabrillo Street",
+      "street_number": "771",
+      "street_name": "CABRILLO",
+      "street_type": "ST",
+      "description": "A jewellery studio in this building was burgled overnight between 12 and 13 August 2026; the front door was forced. No person is recorded here.",
+      "citation": {
+        "label": "Hoodline, “Inner Richmond Jeweler's Shop Ransacked, $300K in Handmade Gold Pieces Stolen,” 28 August 2026",
+        "url": "https://hoodline.com/2026/08/inner-richmond-jeweler-s-shop-ransacked-300k-in-handmade-gold-pieces-stolen/",
+        "locator": "opening paragraph"
+      },
+      "raw": {
+        "text": "someone crowbarred open the front door of Modern Relics, a small jewelry studio at 771 Cabrillo Street"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "news/AGENTS.md is explicit that a building's page is not a crime blotter. A burglary is something that happened to a business and its stock, not to the building; the forced door is the only part that touches the structure and it is not what a reader would want on this timeline in ten years."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "1651038",
+        "path": "/san-francisco/inner-richmond/cabrillo-street/771/",
+        "eas_address": "771 CABRILLO ST",
+        "method": "EAS exact match on 771 CABRILLO ST → parcel 1651038; sf-parcels has blklot 1651038 active, 771–773 CABRILLO; the 2025 roll records it as commercial retail, built 1916. EAS puts 771, 773 CABRILLO ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 771.",
+        "checked_on": "2026-08-28",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      }
+    }
+  ]
+}

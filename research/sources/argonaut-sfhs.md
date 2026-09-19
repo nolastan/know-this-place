@@ -1,6 +1,7 @@
 # argonaut-sfhs — *The Argonaut*, journal of the SF Historical Society (secondary)
 
-> **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · register:
+> **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · traps:
+> [../LESSONS.md](../LESSONS.md) · register:
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id `argonaut-sfhs`.
 >
 > - **Kind:** journal (print, per-article PDFs) · **Tier:** secondary · **Status:** open
@@ -113,7 +114,7 @@
     neither gets a page here — this site covers San Francisco only.
   - **Its dates will disagree with the assessor.** Bardell dates the Casebolt
     house to a March 1868 newspaper report; the roll and Planning both say 1865.
-    Record both and name the disagreement in `.unknowns` — never adjudicate.
+    Record both and name the disagreement in `unknowns` — never adjudicate.
   - **A relocated building is a claim about a structure, not a parcel.** Where
     the journal says a house was moved to an address, say so and leave the
     roll's year built standing beside it.

@@ -1,0 +1,136 @@
+{
+  "address": "2721–2725 Mission Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/mission-street/2721/",
+  "apn": "3642031",
+  "block": "3642",
+  "lot": "031",
+  "eas_baseid": "364109",
+  "coordinates": {
+    "lat": 37.753482,
+    "lng": -122.418204
+  },
+  "address_range": "2721–2725",
+  "street_numbers_on_parcel": [
+    "2721",
+    "2723",
+    "2725"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 3,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 4,
+    "lot_area_sqft": 4286,
+    "building_area_sqft": 3600,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2725 2721 MISSION             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1076494,
+    "assessed_improvement_value": 483794
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M29391",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-09-23",
+      "status_date": "2004-09-23",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9612362",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-07-10",
+      "status_date": "1997-08-21",
+      "estimated_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8504404",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-04-26",
+      "status_date": "1986-01-22",
+      "estimated_cost": 15000,
+      "description": "installing handicap toilet and kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8503955",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1985-04-18",
+      "status_date": "1988-11-30",
+      "estimated_cost": 6000,
+      "description": "install duct hood and blower.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MISSION&street_type=ST&address_number=2721",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3642031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3642&lot=031",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3642031",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "modern-architecture-context-statement",
+      "name": "Mary Brown, San Francisco Planning Department, San Francisco Modern Architecture and Landscape Design 1935-1970 Historic Context Statement, adopted 12 January 2011",
+      "query": "http://sfplanninggis.org/docs/Historical_Context_Statements/Modern%20Architecture%20Context%20adopted%20Jan%202011.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Modern Architecture and Landscape Design Context Statement, adopted 2011",
+      "retrieved": "2026-09-01"
+    }
+  ],
+  "building": {
+    "architect": "Earl R. MacDonald"
+  },
+  "historical_record": [
+    {
+      "date": "1947",
+      "kind": "alteration",
+      "description": "A Midcentury Modern storefront remodel of 1947 by Earl R. MacDonald.",
+      "source": "modern-architecture-context-statement"
+    }
+  ]
+}

@@ -1,11 +1,12 @@
 # digitalsf — DigitalSF, San Francisco Public Library (primary)
 
-> **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · register:
+> **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · traps:
+> [../LESSONS.md](../LESSONS.md) · register:
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id `digitalsf`.
 >
-> - **Kind:** catalogued digital archive (photographs, city records, scanned documents) · **Tier:** primary · **Status:** open
+> - **Kind:** catalogued digital archive (photographs, city records, scanned documents) · **Tier:** primary · **Status:** done
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** harvested in full — 59,601 unique records. One of 44 collections extracted and resolved: **SFP 23, read whole — 1,165 records, 1,122 findings, 923 resolved to a parcel**.
+> - **Coverage:** harvested in full — 59,601 unique records. Twelve of 44 collections read whole, plus the 1,678 records that carry no `524$a`: **SFP 23** (1,165 records, 1,122 findings, 923 resolved, 919 published), **SFH 371** (2,421 records, 421 findings, 117 resolved, 116 published on 103 pages), **SFP 162** (34,738 records, 1,186 findings, 662 resolved, 545 published on 481 pages), **SFP 22** (433 records, 77 findings, 72 resolved, 60 published on 59 pages), the four small buildings collections read together — **SFP 42** (288 records, 58 findings, 56 resolved), **SFP 90** (285 → 14 → 11), **SFP 125** (253 → 36 → 11) and **SFP 169** (918 → 39 → 21), 99 published on 88 pages — and the four institutional collections read together: **SFP 26** (984 records, 17 findings, 12 resolved, 7 published on 6 pages), **SFP 84** (483 → 13 → 1 → 1), **SFP 103** (51 → 7 → 3 → 0) and **SFH 3** (1,603 → 3 → 2 → 0). The **no-`524$a`** batch is 1,678 records and zero findings. The remaining 36 collections were read together as the `tail` batch (7,261 records, 137 findings, 45 published on 45 pages), and the last two written off unread were cleared by #217 and read: **SFP 179** (528 → 29 → 25 → 25 on 24 pages) and **SFP 136** (2,664 → 10 → 2 → 2 on 2 pages). **Every collection in the archive that holds an addressed record has now been read except SFP 130, which #217 closed for good.** What would reopen this source is re-running the harvester for records catalogued since 2026-09-04; it resumes from the stored token rather than re-downloading.
 > - **Local corpus:** `research/corpora/digitalsf/` (453 MB; `state.json` records the OAI resumption token per set)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -136,22 +137,131 @@ The candidate counts below are the title-only figures from
 SFP 23 was listed at 593 and produced 1,122 findings once the `500$a` address
 note was read too. Size a session on the profile; expect more.
 
-| candidates | collection |
-|---|---|
-| 852 | San Francisco Subjects Photograph Collection (SFP 162) |
-| 593 | **San Francisco Office of Assessor-Recorder Photographs (SFP 23) — done: 1,122 findings** |
-| 210 | San Francisco Redevelopment Agency Records (SFH 371) |
-| 151 | Tenderloin Times Photograph Archives (SFP 130) |
-| 95 | Willard E. Worden Glass Plate Negatives (SFP 22) |
-| 50 | James E. Gordon Color Slides of San Francisco Murals (SFP 173) |
+Counted over the **complete** harvest on 2026-09-02, reading the `500$a`
+address note as well as the title — which is what `digitalsf_extract.py` does,
+and roughly double what the title-only profile reports:
 
-**SFP 23 is done** — read whole on 2026-08-15, and it was the right one to
+| addressed records | collection |
+|---|---|
+| 1,435 | **San Francisco Subjects Photograph Collection (SFP 162) — done: 1,186 findings, 545 published.** One session, not the three the decade split assumed |
+| 1,128 | **Office of Assessor-Recorder Photographs (SFP 23) — done: 1,122 findings, 919 published** |
+| 251 | **Redevelopment Agency Records (SFH 371) — done: 421 findings, 116 published** |
+| 186 | **Tenderloin Times Photograph Archives (SFP 130) — not a batch. Skipped, and it stays skipped (#217).** Its addressed half is a newspaper's reporting on named living tenants at their own street numbers; see People below |
+| 51 | **Judi Iranyi Photographs of the Tenderloin (SFP 179) — done: 29 findings, 25 published on 24 pages.** The 151 this row used to claim was **100 records of "4 Corner Friday"** read as street number 4; the guard is in, and 51 is the true count. Read under #217 after the dossier had written it off as SFP 130's twin |
+| 103 | **Willard E. Worden Glass Plate Negatives (SFP 22) — done: 77 findings, 60 published on 59 pages** |
+| 67 | **Robert Durden Color Slide Collection (SFP 42) — done: 58 findings, 56 resolved** |
+| 60 | **Lee Sims Photographs of Tenants and Owners in Opposition to Redevelopment (SFP 125) — done: 36 findings, 11 resolved** |
+| 51 | **James E. Gordon Color Slide Collection of San Francisco Murals (SFP 90) — done: 14 findings, 11 resolved** |
+| 43 | **James A. Martin Color Slides of San Francisco (SFP 169) — done: 39 findings, 21 resolved** |
+| 30 | **San Francisco Portrait Photograph Collection (SFP 136) — done: 2,664 records, 10 candidates, 3 real addresses, 2 published on 2 pages.** The assumption was wrong in both directions. It is not SFP 130 — its addressed captions are public figures at public buildings, not tenants at home — and the "30 addressed" was seven of a caption's own numbers ("1949 Career Drive" is a fundraising drive) on top of three real ones |
+| 28 | **San Francisco Police Department Records (SFH 61) — done in the `tail` batch: 14 findings, 4 published.** Its addressed half is the 1906 ruins and the Bureau of Special Services' 1960s surveillance of bars |
+| 28 | **Marilyn Blaisdell Photograph Collection (SFP 84) — done: 13 findings, 1 published.** A collector's miscellany, 1880s–1914, so eleven of twelve misses are the pre-1910 renumbering rule |
+| 22 | **Michael Brailove Photographic Negatives (SFP 103) — done: 7 findings, 3 resolved, 0 published.** The densest thing left, and every address is a Western Addition building the A-2 clearances took |
+| 21 | **San Francisco Unified School District records (SFH 3) — done: 3 findings, 2 resolved, 0 published.** Select on `"(SFH 3)"`; the bare string also matches SFH 371 and SFH 391 |
+| 16 | **Dept. of Public Works Bureau of Engineering Photograph Records (SFP 26) — done: 17 findings, 12 resolved, 7 published on 6 pages.** The best of the four |
+| 37 | **records with no `524$a` at all — done: 1,678 records, 0 findings.** Not a collection but six digital series, five of which are not photograph catalogues; every one of the 37 candidates is a false positive. Reachable with `--key 982` |
+
+Recounted on 2026-09-02 with the extractor as it now stands; the four rows
+marked done moved by a few records each against the earlier count, because the
+guards added while reading them (a quoted work title, a hyphenated model
+designation, a background landmark) take some candidates back out. The same
+happened again on 2026-09-03: the plate-number, serial-number and clock-time
+guards learned from SFP 84 and SFH 3 take back thirteen more.
+
+**Size a batch on what the addressed half is *about*, not only on how many
+records it has.** This table was ordered by addressed-record count and told the
+next run to take SFP 130. Its 184 addressed captions are a neighbourhood
+newspaper's photographs of the people of the Tenderloin: **177 of the 184 carry
+a personal-name shape and 82 name a person in a role** — "250 Taylor Street
+tenant [name withheld] pointing out damage to shower the landlord refuses to
+repair", "Lao family moving out of their apartment at 355 Eddy Street due to
+rent increases", "Tenderloin resident [name withheld] standing outside building
+at 237 Leavenworth Street". (Withheld here, not in the source. This paragraph
+quoted both names in full until #217; a dossier is as committed as a findings
+file.) The name filter keeps every one of those
+off a page, but `raw.text` carries the caption verbatim into a committed
+findings file, and these are living people in rent strikes and evictions. **SFP
+130 is not a batch and will not become one** (#217): redaction leaves the
+sentence minus the name, which is still a household's eviction at a street
+number, so the collection is skipped rather than mechanised around. What that
+gives up is real and worth naming — the Palace Theatre at 53 Turk, the Lyric
+Hotel at 140 Jones, Powell West at 111 Mason, Newman's Gym at 124 Leavenworth,
+the Hibernia Bank as the Tenderloin police station at 1 Jones, the former KGO
+building at 277 Golden Gate, and three fires (57 Taylor, 376 Ellis, 820
+O'Farrell) — and none of it is the only record of its building. SFP 22, 42,
+90, 125 and 169 were the buildings collections to take meanwhile, and all five
+are now done; the next such run is SFP 84, SFP 103, SFH 3 and SFP 26 together.
+
+**SFP 179 was written off with it and should not have been.** The dossier
+called it "the same collection shape" on subject matter alone, and the addressed
+half says otherwise. **100 of its 151 addressed records are the phrase "4 Corner
+Friday"**, whose `4` the extractor reads as a street number — the same class of
+false address as the plate numbers and clock times already guarded, and a guard
+the SFP 179 run has to add first. The **52** that remain are storefronts:
+Daldas Grocery at 200 Eddy, Radman's Produce Market at 201 Turk, El Castillito
+Taqueria at 250 Golden Gate, Kim Huang Cafe at 325 Leavenworth, Em's Barber
+Shop at 342 Jones, Angkor Laundromat at 353 Eddy, Hamlin Hotel at 385 Eddy,
+Amigo's Market at 500 Ellis, Hotel Essex at 684 Ellis, Kelly Cullen Community
+at 220 Golden Gate. Where a person is in frame the caption does not name them —
+"Tenderloin barber standing in doorway of Eddy Barber Shop at 330 Eddy Street",
+"Barista behind the counter of Cafecito at 406 Ellis Street", "Five restaurant
+staff members pose for photo outside Yemen Kitchen at 219 Jones Street" — and
+the limit bars naming, not photographing. One of the 52 carries a name, and it
+is a forename. **It read under the three policies already in the extractor**, with no
+`raw.text` policy and nothing new but the guard: 528 records → 29 findings →
+25 published on 24 pages, 9 seeded for it. One caption in 528 names anybody at
+a number, by forename, and it is withheld by hand. See the 2026-09-05
+`Verified:` entry.
+
+**The four institutional collections are done, and the next run has no
+buildings batch left.** SFP 26, SFP 84, SFP 103 and SFH 3 were read together on
+2026-09-03 and yielded 40 findings and 8 published pages between them, on 3,121
+catalogue records.
+
+**And then there was no batch left at all.** Everything below SFP 26 in this
+table, plus the thirty-odd collections too small to have a row in it, was read
+on 2026-09-04 as the single `tail` batch — 36 collections, 7,261 records, 45
+published pages. The only rows here still untouched were SFP 130, SFP 179 and
+SFP 136. #217 closed SFP 130 unread and left SFP 136 undecided and
+unmeasured; SFP 179 was cleared by the same issue and read on 2026-09-05, and
+SFP 136 was read on 2026-09-06. **Nothing addressed is unread now.** **The densest thing the tail
+turned up was not in this table**, because the table is ordered by
+addressed-record count and it has only ten records: SFH 611, the Junior
+League of San Francisco's *Here Today* building research files, where ten of
+ten records are one building at one street number, photographed in 1964-65.
+
+**SFP 125 was on that list and half belongs on the other one.** Its *addressed*
+half is unambiguously buildings — 60 records naming South of Market residential
+hotels by name and number in 1970-71, weeks before they came down — but its
+unnumbered half is the people of those hotels, and the two are in the same
+collection. Reading it needed `named-buildings-only` **and** the personal-name
+redaction described under People below. A collection can be a buildings batch
+and a privacy problem at the same time; judge the addressed half separately.
+
+An earlier version of this table listed the murals collection as **SFP 173**.
+There is no SFP 173 in the harvest; the murals are **SFP 90**, and SFP 169 is
+the Martin slides. Match on the `524$a` string, not on a remembered number.
+
+**SFP 23 is done, with one loose end.** 28 of its published findings name a
+page path that has no `data.json` — the source id is on no page in the street
+directory, so `published` is false for them. Six more of the same shape were
+just a wrong path (the fact was on the sibling page at the parcel's lowest
+number) and are corrected. The 28 are #221; the two known reasons a resolved
+parcel gets no page — `in_asr_secured_roll: false` and a condominium APN — are
+both `declined`, not `published`.
+
+Read whole on 2026-08-15, and it was the right one to
 start with. The Office of Assessor-Recorder photographed properties *for
 assessment*, so the collection is a per-building record by construction: 1,128
 of its 1,165 records give a street number, a hit rate no other source here
 comes near. Findings: [`../findings/digitalsf/sfp-23.json`](../findings/digitalsf/sfp-23.json).
-The two largest remaining collections are too big for one session; split them
-by decade.
+**Size a batch on the addressed records, not the record count.** SFP 162 is the
+largest collection here — 34,738 records — and this dossier told the next run to
+split it by decade on that basis. It was wrong: 1,435 of those records carry a
+street number, the extractor reads the other 33,303 in five seconds, and the
+whole collection went from harvest to published pages in one session. What costs
+a session is the *addressed* half — the EAS join, the seeding, the page writes —
+so a collection is one batch until that number passes about fifteen hundred.
 
 ### Cautions
 
@@ -197,6 +307,135 @@ by decade.
   date, a street number and a building name are facts, and this module extracts
   facts. **Do not reproduce a DigitalSF image on a page** regardless of the flag
   without a decision from a human.
+- **A donor's or a photographer's `500$a` note is not the archivist's address
+  note, and reading it as one invents addresses.** Two shapes, both measured:
+
+  - **SFP 169 appends a geocode.** 549 of its 918 records end their donor note
+    with a modern street address — "SPCA - Animal Shelter, 16th & Alabama,
+    front lobby. 2500 16th St, 94103" — and that address is **where the camera
+    was or roughly what the frame shows**, not a statement about a building.
+    "SF Opera House from Franklin. 406 Franklin St" geocodes the viewpoint;
+    "Elevated View Opera House & War Memorial. 1390 Market St" geocodes Fox
+    Plaza. Where the donor *also* names a number in the descriptive half the
+    two disagree about as often as they agree — 2324 against 2330 Chestnut, 230
+    against 250 Brannan, 581 against 553 Buckingham. So the extractor reads the
+    number the donor states in the descriptive half, keeps the geocode in
+    `extra.donor_geocode_as_recorded`, and writes a conflict when they differ;
+    it never treats the geocode as the address. **Taking the geocode would have
+    produced roughly 300 confidently wrong findings** in a collection whose
+    honest yield is 21.
+  - **SFP 125's photographer's notes are roll-level.** 385 of its 431 note
+    instances are on a note shared by more than one record — one note listing
+    every building on a 36-frame roll, attached to all 36 frames. Read
+    per-record it puts Jim's General Merchandise, the Imperial Hotel and the
+    Panama Hotel at each other's addresses. **Use the title only for this
+    collection.**
+
+  The test before using any `500$a` as an address: count the distinct note
+  strings against the record count. Roughly one note per record means the
+  archivist wrote it about that item; far fewer means it belongs to the roll,
+  the folder or the accession.
+
+- **A caption's numbers are not all addresses, and four shapes cost real
+  findings before they were caught.** Each is now a guard in
+  [`digitalsf_extract.py`](../tools/digitalsf_extract.py):
+  - **A hyphenated model designation.** "Sikorsky HH-52A Seaguard", "Coast
+    Guard HC-130B Hercules", "Grumman HU-16 Albatross" — the word boundary
+    falls inside the designation and the model's name reads as a street.
+  - **An unhyphenated one**, which no rule can catch: "Beechcraft 35 Bonanza",
+    "John Deere 93 Series A". Those are on the curated `NOT_A_STREET_NAME` list,
+    which is how this project has always handled the residue.
+  - **A quoted work title.** `"200 Years of Resistance" on Uganda Liquors`
+    yielded *200 Years Street*. Quoted spans come out before the address match,
+    the way parentheses already did.
+  - **A landmark named for scale.** The BART construction slides photograph the
+    street and name a tower to place it — "a construction crane with auger in
+    the middle of the street. 555 Market in background", "View north towards
+    1141 Market Street". Six of SFP 169's candidates were of this shape, and
+    every one would have put a 1967 street photograph on a skyscraper's page.
+    The qualifier can follow the number as well as precede it.
+
+- **`269$a` promotes a decade to a firm year, and the extractor was letting
+  it.** The `260$c` caution above is about a *range*; this is its other half.
+  Where `260$c` reads "1920s", `\b1920\b` does not match inside it — the
+  trailing "s" is a word character and defeats the boundary — so the decade
+  fell through to the `269$a` fallback and was recorded as
+  `date_precision: year`. Worse, `260$c` "19--" is the catalogue saying
+  "some time in the twentieth century" and `269$a` answers **1900**, which is
+  also the assessor's bucket year for "nineteenth century" and therefore the
+  one year this project is least able to tell from a real one. Measured over the
+  whole harvest: **731 records read "19--"**, 163 "1920s", 160 "1960s", 154
+  "1970s" and so on — over 2,100 records that the pass would have dated to a
+  year nobody recorded. **24 of them had already reached published pages** and
+  are corrected. `269$a` is now used only where `260$c` is empty; a decade is
+  `circa` with the decade as the date, and an open century is `unknown`. The
+  timeline already renders and sorts "1930s" — `date_key` names the shape in its
+  own docstring — so nothing downstream needed teaching.
+
+- **The people are not always in `600$a`, and a photographer credit does not
+  settle it.** SFP 23's `600`/`700` hold one corporate body; SFP 84 leaves
+  `600` empty and files the family whose house it is under `700$a`, joined by an
+  ampersand — "Winchell, Ezra & Winchell, Led F." — with `$e Photographer`,
+  because they photographed their own home in the weeks after the fire. The
+  role is not the test: a name written into a caption is a person in the frame
+  whatever the record credits them for elsewhere, and "…home at 747 Baker
+  Street" is a sentence about who lived at a street number. **`redact()` now
+  reads `600$a` and `700$a` both**, splits ampersand-joined pairs, and strips a
+  corporate qualifier before testing for the comma that distinguishes a person
+  ("San Francisco Redevelopment Agency (San Francisco, Calif.)" has a comma and
+  is not a person). 14,535 of the corpus's 22,360 `700` fields carry no role at
+  all. The guard that keeps this from eating the evidence: **a bare surname is
+  left alone when the next word says it is a place** — "Canterbury Hotel, 750
+  Sutter Street" against a `700$a` of "Canterbury, Alan J.", or a street named
+  for someone. Run over every findings file in the repo the widening changes
+  eight quoted spans and takes nothing but names.
+
+- **Three more shapes of number that are not an address**, each measured over
+  the whole harvest and each now guarded:
+  - **A plate number at the head of the title**, in a collection that numbers
+    its plates. All fourteen of SFP 84's title-initial numbers are stereograph
+    serials — "877 A view of San Francisco Bay", "3022 Ferry-boat entering
+    Oakland slip", "1704 Mission Church, Mission Dolores" — and every genuine
+    address in that collection is mid-caption. It is a per-collection switch
+    (`COLLECTION_PLATE_NUMBERS`) because **779 titles corpus-wide open with a
+    real street number**; as a general rule it would be a disaster.
+  - **A serial introduced by "No." or "#"**: "Ridgepoint No. 2 Elementary
+    School", "Pumping Station No. 2", "Lantern Slide No. 55 A", "Chinese San
+    Francisco No. 9". 140 titles corpus-wide, and it is general.
+  - **A clock time**, whose minutes read as a number over a street: "at 1:00
+    P. M." yields *00 P. M*. Four titles, and the colon before the number is
+    the tell — the same one-character test as the hyphen guard.
+
+- **A run of buildings is written with a word between the numbers, and a
+  hyphen-only pattern files the photograph on the wrong one.** SFP 26 prints
+  "610 to 624 Anza Street", "183 to 94 Cook Street", "648 thru 622 Jerrold
+  Avenue". Matching only the hyphen took the *second* number and lost the
+  first — and on the Cook Street rows that second number is an abbreviated high
+  end read literally: 94 for 194, 73 for 173, neither of which EAS holds.
+  Eleven titles corpus-wide. The extractor now reads the whole construct, fills
+  the short high end in from the low, and emits **one finding per printed
+  number** per "A row of buildings is not a range" in ../LESSONS.md, keeping the
+  caption's own words in `extra.address_as_printed`.
+
+- **A year-shaped number with no street type is a year about half the time.**
+  "1958 Bell 47G-2 N977B Helicopter" is a year and a make; "House of Prime Rib,
+  1906 Van Ness" is an address. The standing guard — a number equal to the
+  record's own date — catches neither, because a caption is free to date
+  something else. The refusal is applied only to a donor's or photographer's
+  free prose, where the equipment captions live, and not to a catalogued
+  "<name>, <address>" title.
+
+  **The standing guard was reading the wrong field, and the tail is where it
+  showed.** It compared the number against `year_of(date)`, which returns the
+  archivist's whole phrase for an imprecise date — "not before 1906", "between
+  1985 and 1987" — and a phrase equals no street number ever. So the guard
+  fired on "1966 Bayview-Hunters Point riots" dated `1966-09` and missed
+  "Damage at 1st Street and Harrison from 1906 Earthquake and Fire" dated "not
+  before 1906". It now compares against **every** four-digit year the date
+  carries, which takes out 28 more candidates across the tail and, measured
+  over every findings file in the repository, changes nothing already
+  committed.
+
 - **Sets overlap.** Deduplicate on the OAI identifier or you will double-count
   the Hormel and Shades material, which sits in `Photographs` and `lgbtq` both.
 - **A block is not an address.** "900 block of Valencia Street" is the
@@ -204,6 +443,46 @@ by decade.
 - **`fuzzy date` means what it says.** A record flagged in `907` is an
   archivist's estimate. Carry the flag through to the finding rather than
   silently promoting it to a firm year.
+- **A name change in the extractor is a correction pass over what already
+  shipped, and it is bigger than the one record that showed it.** Adding
+  `Ruins of` to `CAPTION_PREFIX` was filed (#247) as recovering five building
+  names in SFP 162. Re-running the extractor over that collection and diffing
+  on `citation.url` — **not** on the finding id, which is positional and moves
+  the moment a record is added or dropped — showed **93**: every caption-prefix
+  and name-filter fix landed since the collection was read, not just the one the
+  issue noticed. 44 of them were on published pages. So: when a name rule
+  changes, re-run the affected batches and diff, rather than patching the
+  records the issue happens to list. Merge the diff into the committed file
+  (`extra.named_in_record` and the `The record names …` sentence only) — never
+  regenerate it, or 1,186 hand-checked resolutions and 545 publish decisions go
+  with it.
+
+- **The same re-run also drops findings, and that is usually right.** Fifteen
+  SFP 162 entries the current extractor no longer produces: thirteen are the
+  people filter working — "ARTISTIC HOMES OF CALIFORNIA — Residence of Mr. W.
+  MAYO NEWHALL, No. 1206 Post Street" is a person's house, and "4 P.M. Aug",
+  "886 Cliff House" and "214 Carl Saxsenmeir" were never addresses — and two
+  are the same address now folded onto a sibling record. All fifteen were
+  unresolved, so nothing published depended on them.
+
+- **A capitalized word is not a proper noun, and `is_named_building` used to
+  assume it was.** "Large house at 3905 Clay Street" and "Residencial building
+  in 907 Pine street" passed the filter — a BUILDING_NOUN plus one capitalized
+  word is all it asked for — and the first of them reached a published page as
+  a building's name. `GENERIC_QUALIFIER` is the fix, and it is a **closed list**
+  for a measured reason: 234 stored names are an adjective plus a building noun
+  and 232 of them are real ("Grand Theater", "Ideal Bar", "Imperial Hotel",
+  "Sunset Market", "White Cleaners"), so no part-of-speech test separates them.
+  Measured over every name in every findings file in the repository, the rule
+  flips **2 of 1,001** — exactly the two above.
+
+- **Two known regressions in the current name/address parse**, both found by
+  that diff, both on entries no page carries. `Park View Hotel, 102 South Park`
+  now parses the street as `SOUTH` + type `PARK` where the hand-checked entry
+  has `SOUTH PARK` and no type; and `View from 624 Ashbury Street of three
+  children…` keeps `View from` inside `address_as_written`. Don't adopt a
+  re-run's address fields wholesale for this collection — take the names.
+
 - **This overlaps the *SF Redevelopment Agency property summaries* lead — check
   before extracting.** That lead is in the leads table of
   [../SOURCES.md](../SOURCES.md); it has no source id yet because it has not
@@ -277,6 +556,101 @@ displacement: the sibling Internet Archive collection includes items titled
 not make the people in it fair game, and the displacement makes the material
 more sensitive rather than less.
 
+**The name filter keeps people off a page; it does not keep them out of the
+repository.** `raw.text` is the caption verbatim, and it is committed. "Lee
+Washington's room in Daton Hotel, 175 3rd Street, personal items atop dresser
+next to sink" is a finding about a building and a sentence about a named
+resident's belongings, and the privacy limits bind when the finding is written,
+not when a page is. Two mechanisms, both now in the extractor:
+
+- **Redaction.** A record's own `600$a` personal-name subjects are replaced in
+  `raw.text` with `[name withheld]`, in every form the heading and the caption
+  might use — as filed, flipped, surname alone, forenames alone, with the
+  heading's dates stripped off. What is left still justifies the address, the
+  date and the building's name, which is all `raw.text` exists for. It cannot
+  catch a name the heading spells differently from the caption, and one record
+  in SFP 169 proves it: the heading reads "Cresi, Dominic" and the caption
+  "Dominic Cresci".
+- **Dropping the note.** `COLLECTION_NOTE_POLICY` refuses to carry the leftover
+  `500$a` notes into `extra.record_notes` for SFP 125 and SFP 169, whose notes
+  are a photographer's and a donor's free prose about who is in the frame
+  ("214, Lee Wash room Daton Hot.", "Doris Martin & son", "Reverend Fumio
+  Matsui (in white robes)"), **and for all 36 tail collections**, where the same
+  turned out to be true in every register the note can be written in. A donor's
+  memoir of their own family ("Donor's mother Suwa… donor's father"), a police
+  case note with a robbery victim's name and home apartment number ("EVELYN
+  POWERS… Victim. 1900 Vallejo St. apt. #204"), the party to a 1941 collision
+  with his street address, and a newspaper's copy naming the children at a
+  blackboard. Two of the biggest collections in the archive keep their notes,
+  because there they are archival housekeeping — "Sheet: S.F. Streets - Hayes",
+  "See SFP22-0125". **The default is wrong for a caption collection**: judge it
+  by reading `--report`'s notes before writing the file, not after.
+  The record page is one click from `citation.url` if an auditor wants the
+  original.
+- **Both mechanisms have a limit, and SFP 130 is where it is** (#217, decided
+  2026-09-05). They work because the name is *incidental* to what the caption
+  says: take "Lee Washington" out of "Lee Washington's room in Daton Hotel, 175
+  3rd Street" and a hotel, a number and a date survive. Take the name out of
+  "250 Taylor Street tenant [name withheld] pointing out damage to shower the
+  landlord refuses to repair" and what survives is still one household's
+  dispute at one street number. **Where the caption is the person, no
+  `raw.text` policy makes the collection readable, and the answer is to skip
+  it** rather than build the policy. That was the decision on SFP 130; there is
+  deliberately no `COLLECTION_RAW_POLICY` in the extractor.
+- **Decide it per collection, on the addressed half, measured.** The same issue
+  had SFP 179 down as SFP 130's twin, and reading it showed two thirds of its
+  addressed count was a false address and the rest were shopfronts with
+  unnamed people in them. Subject matter is not the test; the captions are.
+- **A courtesy title is the one name shape narrow enough to redact blind.**
+  `redact` can only reach a name the catalogue filed in a `600`/`700` heading,
+  and captions name people the cataloguer indexed nowhere (#248).
+  `redact_honorifics` closes most of that: a courtesy title or a rank —
+  `Mr.`/`Mrs.`/`Miss`/`Dr.`/`Capt.`/`Rev.`/`Judge` and their siblings — in
+  front of a capitalised run, with `Mr. and Mrs. X` bridged as one name.
+
+  **What it caught, measured over every `raw.text` in every digitalsf findings
+  file: 53 spans, 49 of them people.** Not four edge cases — 30 in SFP 162
+  alone, and most of them the sharpest shape the privacy limits exist for:
+  "ARTISTIC HOMES OF CALIFORNIA, Residence of Mr. WILLIAM HAAS, 2007 Franklin
+  Street", "Residence of Mrs. Henrietta Lehe, 15 Cerritos Avenue", "1736
+  Fitzgerald street, scene of the shooting of Mrs. Angela Archie", and — in a
+  **published** finding — "in the home of Mr. and Mrs. Ferdinand Smith at 825
+  Francisco Street". A named resident at their own street number, committed.
+
+  **Two exemptions, both measured, and between them they take the false
+  positive rate to zero on this source.** What follows the title reads as a
+  firm under `is_named_building` ("Dr. Pepper Bottling Company", "Mrs. Biggs
+  Bakery"); or the record's own `610`/`650` headings already file it as one —
+  `Businesses--Andrews Diamond Palace.` is the catalogue saying "Col. Andrews
+  Diamond Palace" is a shop, not a colonel.
+
+  **It is safe here because `redact` is only ever called on this source, and it
+  would be wrong almost anywhere else.** Run the same rule over the whole
+  repository and it fires on "Dr. Carlton B. Goodlett Place" (a street), "Miss
+  Smith's Tea Room" and "Mr. S Leather" (businesses), "Dr. William L. Cobb
+  Elementary School" (a building), and on Dr. Tom Waddell, Dr. Arthur H.
+  Coleman and Reverend Frederick Douglas Haynes — the civic figures the
+  African American and LGBTQ context statements exist to document. **Don't
+  lift it into `sf-context-statements`.**
+
+  What it still cannot reach is a bare name with no title: "Lloyd W.
+  Dinkelspiel", "William Chester", "Revels Cayton" survive, and a general
+  capitalised-name detector would eat "Eagle Market" and "Shadows Restaurant",
+  so that half stays open deliberately.
+
+- **A name can sit outside `raw.text`.** `2786 Diamond Street. Mrs. Evers` was
+  the *street name* of a finding — the caption's second sentence parsed as part
+  of the address, so the owner's name reached `address_as_written`,
+  `description` and `citation.label`, none of which the redactor looks at.
+  Sweep those three fields as well as `raw.text` when a name rule changes; it
+  was the only one in the source, and taking it out also made the finding
+  resolvable for the first time (Glen Park, 2784 Diamond Street, published).
+
+**A mural artist is a creator credit, and the only one this archive states.**
+`700 $e mural artist` names the person who made the work at that address — the
+same class of fact as an architect, and allowed for the same reason. 78 SFP 90
+records carry one; exactly one of those also carries a street number.
+
 - **Citation label:** the record's own `524$a`, with the item identified.
   Worked examples, both real:
 
@@ -295,18 +669,606 @@ more sensitive rather than less.
   `Photographs` 57,647 · `sfhistory` 7,987 · `city` 6,867 · `lgbtq` 2,727 ·
   `basc` 10, before deduplication.
 
-  **One collection of 44 has been extracted, and it is now resolved.** SFP 23
-  (San Francisco Office of Assessor-Recorder Photographs) was read whole — 1,165
-  records, 1,122 findings over 1,083 distinct addresses, in
-  [`../findings/digitalsf/sfp-23.json`](../findings/digitalsf/sfp-23.json).
-  **923 of the 1,122 are resolved** to 886 parcels and 889 page paths, 165 of
-  which are pages that already exist; the other 199 are unresolved with a stated
-  reason, 74 of them because the address no longer exists in EAS. **919 of the
-  923 are published** on 882 pages in #117, 720 of those pages seeded for it; 4
-  are declined with a reason. The other 43 collections are untouched; by candidate
-  count the next are SFP 162 (852), SFH 371 (210) and SFP 130 (151). Re-run the
+  **Every collection in the archive that holds an addressed record has now been
+  read.** Twelve were read on their own —
+  SFP 23, SFP 162, SFH 371, SFP 22, then SFP 42, SFP 90, SFP 125 and SFP 169
+  together, then SFP 26, SFP 84, SFP 103 and SFH 3 together — and the
+  remaining **36 were read as one batch, `tail`**: 7,261 records, 188 candidate
+  addresses, 137 findings, 45 published on 45 pages. What is left in the
+  archive is SFP 130 (184 addressed), **skipped for good under #217**, and 128
+  collections that carry no addressed record at all. SFP 179 (151 reported, 51
+  real) and SFP 136 (30 reported, 3 real) were both cleared by the same issue
+  and both are done.
+  The table under "Batch unit" says what each yielded. Re-run the
   harvester to pick up records added since; it resumes from the stored token
   rather than re-downloading.
+
+  **What is left, after #217: nothing but SFP 130.** SFP 130 (184 addressed) is
+  **closed unread**: its captions are named living tenants and no redaction
+  survives that. SFP 179 is **done** — 151 reported, 51 real once "4 Corner
+  Friday" stopped parsing as an address, 25 of them published. SFP 136 is
+  **done** — 30 reported, 3 real once the caption's own numbers stopped parsing
+  as addresses, 2 of them published. Nothing else in the archive carries an
+  addressed record: a corpus-wide address pass over all 59,902 records finds no
+  candidate in any other unread collection.
+
+  **#217's assumption was wrong twice, and the correction is worth stating
+  once.** Two collections were written off unread on subject matter — SFP 179
+  because it photographs a neighbourhood's people, SFP 136 because it
+  photographs public figures — and both turned out to be a different problem
+  from SFP 130. What SFP 130 has that neither of them has is *tenants at home*:
+  a caption naming a living person and the apartment they live in, where
+  striking the name leaves a household at a street number and nothing else.
+  SFP 136's three addressed captions are a union leader in his own offices, a
+  film comedian on a car showroom's forecourt and a philanthropist in the house
+  she is famous for — each half a century dead, each already in published
+  sources, each permitted by name under the root AGENTS.md. **The rule that
+  falls out of it: the privacy limit is about what the sentence is, not what
+  the collection is about, so measure the addressed records rather than reading
+  the collection's title.**
+
+  **The tail was one batch, and that is the shape to reuse.** 36 collections
+  holding one to nineteen addressed records each are not 36 batches; reading
+  them separately would have been 36 findings files, 36 register lines and 36
+  dossier entries for 188 candidates. `digitalsf_extract.py` now takes a
+  comma-separated list and resolves the description template and all three
+  policies per record, so a set of collections is a batch whenever they are
+  too small to be batches on their own.
+
+  **The 1,678 records with no `524$a` are read and closed** (issue #220).
+  `digitalsf_extract.py --key 982` reaches them, and `982$a` groups all 1,678
+  into six digital series with nothing left over — `092$a` and `490$a` are
+  empty on every one, so `982$a` is the only second key. **Five of the six are
+  not photograph catalogues at all:** 958 records are newspaper *issues* (San
+  Francisco Bay Times 854 including its Coming Up! years, The Spokesman 54,
+  Hunter's Point Beacon 50), one record per issue with the paper's name and a
+  date for a title and per-page TIFFs in `856$u`; 384 are Sanborn atlas page
+  images, one per plate; 5 are Book Arts items. The sixth is the **San
+  Francisco Public Utilities Commission (PUC) Digital Collection**, 331 Water
+  Department photographs — a real photograph collection whose subject is the
+  Hetch Hetchy system and the peninsula reservoirs, and which locates its
+  in-city records by intersection ("Howard & 20th Sts.", "Market Street,
+  opposite Spear Street").
+
+  Across all 1,678: **zero `650$a Streets--` headings, zero `500$a` address
+  notes, zero block notes.** The catalogue states no address for any of them in
+  any field, and **all 37 title-parse candidates are false positives** — 23
+  Sanborn front-matter pages printing the publisher's imprint (*"Sanborn-Perris
+  Map Co. Limited, 115 Broadway, New York"*, the advertiser trap arriving
+  through a title rather than a frequency count; EAS has no 115 Broadway, so
+  they would have stayed unresolved) and 14 PUC captions where the number is a
+  measurement or a sequence ("1/4 Mile Below Big Oak", "500 Ft. In", "Lantern
+  Slide No. 55 A", "2 Miners in Tunnel"). Findings:
+  [`no-citation-field`](../findings/digitalsf/no-citation-field.json), zero
+  findings and a coverage note.
+
+  **What the batch left behind is a lead, not a batch.** The three newspaper
+  runs — the Bay Times from 1978, The Spokesman 1965–66, the Hunter's Point
+  Beacon 1943–45 — are three search-invisible San Francisco papers digitized
+  page by page with no OCR in the MARC. Reading them is an acquisition
+  question, not a re-read of these records.
+
+  **Where a record has no `524$a`, the citation is built to the same shape**:
+  `982$a` (or `791$t`) names the digital series and `692$a` the holding centre,
+  which gives "San Francisco Public Utilities Commission (PUC) Digital
+  Collection, San Francisco History Center, San Francisco Public Library."
+  `citation_of()` does this, and refuses a record that names neither rather
+  than citing "the archive".
+
+- **Verified:** 2026-09-06 (read, resolved and published **SFP 136, the San
+  Francisco Portrait Photograph Collection**, whole: 2,664 records → 10
+  findings → 2 resolved → **2 published on 2 pages**, none seeded. Findings:
+  [`../findings/digitalsf/sfp-136.json`](../findings/digitalsf/sfp-136.json).
+  With this batch **every collection in the archive that holds an addressed
+  record has been read**, save SFP 130, which #217 closed for good.
+
+  It was read for the same reason SFP 179 was — #217 left it written off on an
+  assumption about its subject rather than a measurement of its captions — and
+  it taught three things:
+
+  - **The privacy limit is about the sentence, not the collection.** A portrait
+    collection is people from end to end: 2,615 of 2,664 records are a named
+    person and no place at all, and `people_not_a_place` drops every one of
+    them before a finding exists. What survives is three captions that put a
+    public figure at a public building — a union leader in his own offices at
+    150 Golden Gate Avenue, a film comedian in front of the Van Ness Avenue
+    auto row, a philanthropist in the Pacific Heights house she is famous for.
+    All three are half a century dead and already in published sources, so the
+    root AGENTS.md permits them by name. **SFP 130 is not "a collection about
+    people"; it is captions about living tenants at their own front doors, and
+    that is a narrower thing than the shelf label.**
+  - **Seven of its "30 addressed records" were the caption's own numbers.** A
+    fundraising drive named for its year parses exactly like an address —
+    "1949 Career Drive", "1944 War Fund Drive" — and so do "1956 Lewyt", "1960
+    Olympic", "1939 Golden Gate International Exposition" and "Highway 36
+    Association". The standing guard (a street number equal to the record's own
+    year) misses all of them because it only fires when no street type follows,
+    and "Drive" is a street type. **Relaxing that condition was measured over
+    every findings file and rejected**: it would take out four junk entries and
+    two real published addresses, 1977 Bush Street and 2011 Folsom Street,
+    where the number and the date genuinely coincide. Step 3 already refuses
+    the junk — there is no street called Career or War Fund — so the noise
+    costs nothing and the relaxation would cost two pages.
+  - **A thousands separator was reading as a street number, and that one was
+    worth fixing.** "leader of 75,000 West Coast Longshoremen" yielded *000
+    West Coast Longshoremen*. The guard is a digit immediately left of the
+    comma, which is what separates it from the ordinary caption comma before a
+    real address ("Miyako Hotel, 1625 Post"). Measured corpus-wide first: four
+    entries, all junk, none resolved, so nothing committed changes. Three of
+    them are still in `sfp-162.json` and `tail.json` as unresolved and
+    rejected entries — the extractor does not merge, so re-running those
+    batches would wipe their resolutions and publish marks to clean up four
+    entries that already say the right thing.)
+
+- **Verified:** 2026-09-05 (read, resolved and published **SFP 179, the Judi
+  Iranyi Photographs of the Tenderloin**, whole: 528 records → 29 findings →
+  25 resolved → **25 published on 24 pages**, 9 of them seeded for it.
+  Findings:
+  [`../findings/digitalsf/sfp-179.json`](../findings/digitalsf/sfp-179.json).
+
+  It was read because **#217 decided the dossier had misclassified it**, and
+  the four things it taught are all about that:
+
+  - **A collection's subject is not its addressed half.** This table put SFP
+    179 next to SFP 130 as "the same collection shape" — a Tenderloin
+    collection full of people — and blocked both. Its addressed records are
+    shopfronts, and where a person is in the frame the caption does not name
+    them: "Barista behind the counter of Cafecito at 406 Ellis Street". One
+    caption in 528 names anybody at a number, by forename. **Measure the
+    addressed records before writing a collection off.**
+  - **An event name ate two thirds of its address count.** "4 Corner Friday"
+    is a weekly street event at Golden Gate and Leavenworth, and its "4" is a
+    house number to `address_from_title` on all 100 records that name it —
+    in three spellings, which is why `NOT_A_STREET_PREFIX` matches the front
+    of a name rather than the whole of it. The real count is **51, not 151**.
+    The guard was measured over the 57,467 records in the `Photographs` set —
+    96% of the harvest, and the only set holding SFP 179 — plus every findings
+    file in the repository, where nothing committed moves. The four other sets
+    were unreachable: the complete five-set harvest was in a worktree that has
+    since been cleaned up, and only the `Photographs` copy survives. Both
+    guards only ever *remove* an address, so the exposure is a record in an
+    unscanned set the guard would also have caught, not a wrong address on a
+    page.
+  - **An organisation named for a street number it is not at.** 826 Valencia's
+    Tenderloin writing centre is at 180 Golden Gate Avenue. Refusing
+    "VALENCIA WRITING CENTER" stops the wrong address; it does not produce the
+    right one, because `address_from_title` gives up on a refused name instead
+    of trying the next match in the caption. A fall-through was written and
+    **measured before wiring: 29 records change corpus-wide and 27 are
+    regressions**, because cutting the title at the match loses the caption's
+    qualifier — "Rear of 80 Clara Street" becomes "80 Clara Street". Not
+    wired; the one address is entered by hand.
+  - **The newest material in the archive, and it is all `circa`.** Every one of
+    the 528 is dated "between 2014 to 2016", so no finding here can ever be
+    sharper than a three-year range — and several of the businesses are
+    presumably still trading. That is a building fact, not a privacy one:
+    "take the building, the business, the architect and the photographer".
+
+  One placement was demoted by hand. EAS holds 353 EDDY ST and files no parcel
+  on it, so it was placed by point in 0338020 — whose own range is 365-365,
+  with 0338021 (355 Eddy) numerically in between. Recorded as a conflict rather
+  than adjudicated. 289 Eddy is the same shape and was kept, because it is the
+  immediate neighbour of 291 with nothing in between, which is the ordinary
+  incomplete-range case.)
+
+- **Verified:** 2026-09-04 (correction pass over SFP 162 and a redaction pass
+  over the whole source; no new material read. Closed #247 and #248, both of
+  which turned out to be several times the size they were filed at.
+
+  **#247 said five recovered building names; re-running the extractor over SFP
+  162 and diffing on `citation.url` showed 93**, 44 of them on published pages,
+  because every caption-prefix and name-filter fix landed since the collection
+  was read had gone unapplied to it. 42 timeline rows on 38 pages went from
+  "Photographed." to naming the building. Two of the 93 were not names at all —
+  "Large house", "Residencial building" — and `GENERIC_QUALIFIER` now catches
+  them; measured over every name in every findings file, that rule flips 2 of
+  1,001. The re-run also **drops** 15 SFP 162 entries, and 13 of those are the
+  people filter working on "ARTISTIC HOMES OF CALIFORNIA — Residence of Mr. W.
+  MAYO NEWHALL, No. 1206 Post Street".
+
+  **#248 said four leaked names in the tail; the honorific rule finds 53 spans
+  across the source and 49 are people** — 30 in SFP 162, including a named
+  resident at their own street number in a published finding. One name was
+  outside `raw.text` altogether, in `address_as_written` and `citation.label`,
+  and taking it out made that finding resolvable for the first time: the Glen
+  Park Nickelodeon, 1926, is now on 2784 Diamond Street.
+
+  What both have in common is the lesson: **when a name rule changes, re-run
+  the affected batches and diff, rather than patching the records the issue
+  happens to list** — and diff on `citation.url`, because the finding id is
+  positional and moves.)
+
+- **Verified:** 2026-09-04 (read, resolved and published **the tail — 36
+  collections in one batch**, everything in the archive that holds an addressed
+  record except the three blocked on #217. 7,261 catalogue records → 188
+  candidate addresses → 137 findings over 116 distinct addresses → 73 resolved,
+  33 unresolved, 31 rejected → **45 published on 45 pages, 18 of them seeded by
+  this run**; 28 declined. Three things this batch taught the tool. **The
+  archivist's note is a privacy problem in a caption collection**, not
+  housekeeping — a robbery victim's home apartment number, a donor's parents,
+  the children at a blackboard — so all 36 take `drop`. **The year guard was
+  reading the printed date phrase rather than the years in it** and missed
+  every caption that names the year in words; widened, it removes 28 candidates
+  and changes nothing already committed. And **`Ruins of` belongs in
+  `CAPTION_PREFIX`** with `Exterior of` and `View of`: it recovers five real
+  building names in SFP 162 that were being thrown away with the caption. Two
+  things it taught about the city. **Dupont Street is today's Grant Avenue and
+  the numbers carry over, but the buildings do not** — EAS holds no 1011, 1013,
+  1017 or 714 Grant Avenue, and the Board of Health album photographs Chinatown
+  facades in 1903, the year its own campaign demolished 160 buildings there.
+  And **EAS files Buena Vista Avenue East and West under one `street_name`**
+  with the direction in `address`, so `--alias "BUENA VISTA AVENUE W=BUENA
+  VISTA"` resolves 737 correctly only because 737 is unique across both sides —
+  check that before reusing it)
+- **Verified:** 2026-09-03 (audit run, no new material read. Corrected **28 SFP
+  23 findings that said `published` with no page at their path** (issue #221)
+  and **two SFP 23 placements the block's number line refuses** (issue #222).
+
+  **A corner parcel's page is not at the number the resolver formed the path
+  from.** The site keeps one page per parcel, at the number the assessor files
+  it under, and every one of the 28 had in fact been published — on the
+  parcel's page one street over, at an address the finding never names. 700
+  Montgomery is on the Washington Street page, 568 Sacramento on the Commercial
+  Street one, 2034 Filbert on Pixley. Only `resolution.path` was wrong.
+  `resolve_eas.py` already prefers an existing page when one exists, so this is
+  residue from resolutions written before those pages were seeded; `check.py`
+  now fails on it rather than leaving it to an audit.
+
+  **Two placements were the neighbour**: 1435 17th Street sat on 1401–1423, a
+  parcel short of the block face's end, and its photograph had been folded into
+  the combined entry on that page (digitalsf-54653 is out of it); 1762 Great
+  Highway sat on 1758 with 1760 in between. Both are now `unresolved`.)
+
+- **Verified:** 2026-09-03 (read, resolved and published **the four
+  institutional collections in one run** — SFP 26, SFP 84, SFP 103 and SFH 3 —
+  and closed the **no-`524$a`** batch that issue #220 raised. 4,799 catalogue
+  records → 40 findings → 18 on a parcel → **8 published on 7 pages**, 6 of them
+  seeded for it, 10 declined. Findings:
+  [`sfp-26`](../findings/digitalsf/sfp-26.json),
+  [`sfp-84`](../findings/digitalsf/sfp-84.json),
+  [`sfp-103`](../findings/digitalsf/sfp-103.json),
+  [`sfh-3`](../findings/digitalsf/sfh-3.json),
+  [`no-citation-field`](../findings/digitalsf/no-citation-field.json).
+
+  **The batch that yielded nothing was the most useful one.** Issue #220 asked
+  what the 1,678 records with no citation field are; the answer is that "no
+  `524$a`" is a symptom rather than a collection, and the six series behind it
+  are three newspaper runs, the Sanborn atlas plates, the PUC water-system
+  photographs and five Book Arts items — of which only the PUC collection is a
+  photograph catalogue, and none of the 1,678 states an address in any field.
+  Every one of the 37 candidates the issue counted is a false positive. That
+  closes a haystack the collection table cannot see.
+
+  **The run's real find was a date defect, and it was on published pages.** The
+  extractor read `260$c` to avoid `269$a`'s collapsed ranges, exactly as this
+  dossier prescribes — but `\b1920\b` does not match inside "1920s", so every
+  decade fell through to the `269$a` fallback and became a firm year, and
+  `260$c` "19--" became **1900**. Over 2,100 records corpus-wide, **24 of them
+  on published pages**, all corrected here along with their descriptions,
+  citation labels and page source entries. This is the third distinct way
+  `269$a` has cost this project a date; the field is now read only where
+  `260$c` is empty.
+
+  Four extraction guards and one privacy widening, all measured over the whole
+  harvest before landing:
+
+  - **A plate number at the head of a title**, per collection — all 14 of SFP
+    84's are stereograph serials, but 779 titles corpus-wide open with a real
+    address, so it cannot be general.
+  - **A serial after "No." or "#"** — 140 titles, general.
+  - **A clock time** — 4 titles, and the colon before the number is the test.
+  - **A run written "N to M Street"** — 11 titles, now one finding per printed
+    number with the abbreviated high end filled in from the low.
+  - **`redact()` reads `700$a` as well as `600$a`.** SFP 84 files the household
+    that photographed its own house under `700 $e Photographer` and leaves
+    `600` empty, so the redactor could not see the names in seven captions of
+    747 Baker Street. A photographer credit does not make a name in a caption
+    something other than a person in the frame. A bare surname is left alone
+    where the next word says it is a place, which is what keeps "Canterbury
+    Hotel" and "747 Baker Street" intact.
+
+  **One resolution was wrong in a way nothing checked.** 1458 Kirkwood Avenue is
+  in EAS with coordinates and no parcel number, and the single active parcel its
+  point falls in states its own range as 1470–1498 Kirkwood — the neighbour.
+  `resolve_eas.py report` now raises this shape. It raises rather than decides
+  because the blanket rule was measured first: it fires on **61 of 582**
+  point-placed resolutions across the repo and most of those are right, since
+  sf-parcels' address range is routinely narrower than the EAS numbers a parcel
+  holds. The 61 are #222.
+
+  **SFP 103 is the collection this archive is for and the one that publishes
+  nothing.** Fifty-one negatives of the Western Addition in 1964, the year
+  before the A-2 clearances: four of its seven addresses are gone from EAS, and
+  the three that resolve sit on buildings the roll dates 1973, 1974 and 1975 —
+  the replacements, carrying the reissued numbers. All three declined. Freedom
+  House at 1832 Fillmore Street, the Temple Theater at 1745 Fillmore, the
+  Paradise Inn at 949 Fillmore and Eddie's and Bizon's used-furniture stores on
+  McAllister are now indexed by number and date only in the findings file.)
+
+- **Verified:** 2026-09-02 (read, resolved and published **the four small
+  buildings collections in one run** — SFP 42, SFP 90, SFP 125 and SFP 169:
+  1,744 catalogue records → 147 findings → 99 on a parcel → **99 published on
+  88 pages**, 34 of those pages seeded for it. Findings:
+  [`sfp-42`](../findings/digitalsf/sfp-42.json),
+  [`sfp-90`](../findings/digitalsf/sfp-90.json),
+  [`sfp-125`](../findings/digitalsf/sfp-125.json),
+  [`sfp-169`](../findings/digitalsf/sfp-169.json).
+
+  **Four small collections is the right size of run here, and the reason is the
+  extractor.** Each one needed a `COLLECTION_VOICE` sentence and a name policy
+  before it would run at all, and each one taught a guard the next three then
+  got for free — the quoted work title from SFP 90, the roll-level note from
+  SFP 125, the geocode and the model designations from SFP 169. Read singly
+  that is four runs paying the same setup cost four times.
+
+  Five things learned, all now cautions above:
+
+  - **The donor geocode in SFP 169 is a viewpoint, not an address** — 549
+    records carry one and it disagrees with the donor's own stated number about
+    as often as it agrees. Taking it would have manufactured about 300 findings
+    in a collection whose honest yield is 21.
+  - **SFP 125's photographer's notes are roll-level** — 385 of 431 instances
+    are shared across records, so per-record reading cross-files every hotel on
+    a roll.
+  - **Machinery, quoted work titles and background landmarks all parse as
+    addresses.** Six BART construction slides would have put a street
+    photograph on a skyscraper's page.
+  - **`raw.text` carries people into the repository even when the page never
+    sees them.** SFP 125 is a buildings collection *and* a privacy problem;
+    both are handled at extraction. #217 settled the harder case the same way
+    it was asked: SFP 130 is skipped because redaction leaves the household,
+    and SFP 179 turned out not to be that case at all.
+  - **The extractor's street-type map had drifted from the site's.** It was
+    missing `PARK`, which `scripts/seed_pages.py` has carried all along, so
+    "2 Clinton Park" came back as a street the city does not have. EAS files it
+    as street_name CLINTON, street_type PARK.
+
+  The unresolved half is the interesting one and it is concentrated: **25 of
+  SFP 125's 36 findings did not resolve, and 10 of those are South of Market
+  residential hotels EAS no longer holds** — the Milner, the Panama, the Mars,
+  the St. Regis, the Imperial at 140 4th Street, 789 Howard, 286 Second Street,
+  175 3rd Street, 115 Market, 252 6th Street. They were photographed in October
+  1970 and cleared for Yerba Buena within a few years. Under "The evidence bar"
+  no EAS record means no page, so the best record of those buildings in this
+  archive stays in the findings file.)
+
+- **Verified:** 2026-09-02 (read, resolved and published **SFP 22, the Willard
+  E. Worden Glass Plate Negatives**, whole: 433 records → 77 findings → 72 on a
+  parcel → **60 published on 59 pages** in #218, 50 of them seeded for it, 12
+  declined. Findings:
+  [`../findings/digitalsf/sfp-22.json`](../findings/digitalsf/sfp-22.json).
+
+  It is the first collection here that is a **developer's record of a tract
+  going up**: Worden photographed Ingleside Terraces and Jordan Park house by
+  house between 1911 and 1915, and four plates catch a house still under
+  construction. Four things this collection taught:
+
+  - **Every one of its 433 records is `No Copyright – United States`** — the
+    only untouched collection in the table that is, and worth taking first for
+    that alone.
+  - **The caption tail is the owner about as often as it is anything.**
+    "Residence of Mrs. Henrietta Lehe, 15 Cerritos Avenue", "Residence of Dr.
+    Authur G White, 760 Victoria Street" — 21 of them, all dropped by
+    `named-buildings-only`, which keeps **no** name at all in this collection.
+    That is the correct outcome, not a failure of the filter: Worden was
+    photographing houses, and the only names in the captions are the people who
+    owned them.
+  - **A caption's district heading reads as a building name.** Every plate ends
+    "in Ingleside Terraces", `terrace` is a `BUILDING_NOUN`, and the filter kept
+    "Ingleside Terraces" as the building on sixty pages until `business_names`
+    was given the record's own `650$a Districts--` headings the way it was
+    already given its `Streets--` ones.
+  - **The archivist's `500$a` note carries the readdressing.** The plate headed
+    "299 Moncada Way" adds "Now the address is 101 Paloma Avenue", and 299
+    Moncada Way has no EAS record at all — the Russian Hill "site of today's #N"
+    rule, arriving from a photo archive rather than a survey. Resolved on the
+    number the record gives for today.
+
+  **Twenty of the sixty published findings are dated the year the assessor says
+  the house went up**, which `--overlap`'s roll-year scan flags and which is
+  here the fact rather than the defect: the photographs *are* of the tract being
+  finished. Each says so in its publish note.
+
+  Two tool defects surfaced and are fixed: `resolve_eas.py manifest` built a
+  seeded page's street identity from the finding's recorded street rather than
+  the resolution's `eas_address`, so the readdressed corner house produced a
+  manifest entry reading `street_slug: paloma-avenue` with `street_name:
+  MONCADA`, no coordinates and a `KeyError` in the seeder; and
+  `check.py --overlap` reported all 60 of this batch's own entries as duplicates
+  of themselves, because it recognised the batch's writes by description text
+  and the publisher trims the address out of a description before it goes on a
+  page. It now matches on the source-id prefix.)
+
+- **Verified:** 2026-09-02 (re-read **SFP 162** with the caption name filter
+  fixed, per issue #216. The extractor learned three things — a lower-case
+  street type in the title, a part-of-building phrase in front of a name, and
+  the participle "located" left behind an address — and recovered **42 distinct building
+  names on 53 findings** with nothing lost. 33 of them were on findings
+  already published, and their pages now say what the photograph shows: the
+  Bank of Canton at 743 Washington Street, Hamm's Brewery on Bryant, the Hotel
+  Turpin and Moars Cafeteria at 17 Powell, the Ladies' Protection & Relief
+  Society on Laguna, the Marines' Memorial Club on Sutter. The lower-case
+  street type corrected **92 addresses, 92 citation labels and 67 resolution
+  methods** across SFP 162, plus two findings in SFP 23 and one in SFH 371;
+  47 page source labels were rewritten with it. No status changed:
+  662 resolved, 545 published, as before.)
+
+- **Verified:** 2026-09-02 (read, resolved and published **SFP 162, the San
+  Francisco Subjects Photograph Collection**, whole: 34,738 records → 1,186
+  findings → 662 on a parcel → **545 published on 481 pages** in #215, 235 of
+  them seeded for it, 117 declined. Findings:
+  [`../findings/digitalsf/sfp-162.json`](../findings/digitalsf/sfp-162.json).
+  183 of the published entries name the building or business the caption names —
+  the Castro and Grand and Granada theatres, the Hobart and Russ and Underwood
+  buildings, forty-odd churches, the branch libraries.
+
+  This is the first collection here that is **not** a survey of buildings. It is
+  the library's general subject file, and four things follow from that:
+
+  - **A subject file's unnumbered records are not about buildings at all**, so
+    keeping them as unresolved findings buys nothing. 31,988 of 34,738 records
+    give no street number, and the earlier default — keep every one as a stub so
+    the haystack is not re-read — would have written a 9,000-entry findings file
+    saying "the record names no street number" about a photograph of Stow Lake.
+    `COLLECTION_UNNUMBERED_POLICY` in
+    [`../tools/digitalsf_extract.py`](../tools/digitalsf_extract.py) now takes
+    that per collection; the coverage block records the whole read either way.
+  - **There is no one body that made these photographs**, so the description
+    cannot name one. SFP 23 says "The San Francisco Office of the
+    Assessor-Recorder photographed the property"; SFP 162 can only say
+    "Photographed", plus the building where the caption names one. The
+    `COLLECTION_VOICE` guard that refuses to run without a template for the
+    collection is what made this a decision rather than an accident.
+  - **Caption prose parses as addresses.** "23 April", "2 Engine", "1 Fire
+    House", "32 Streetcar", "365 Club" — a month, a fire company, a numbered
+    vehicle, a venue named for its street number. 37 of them, on top of the 70
+    the year-as-street-number rule already caught. `NOT_A_STREET_NAME` in the
+    extractor holds the list; extend it from `--report` on the next narrative
+    collection rather than rediscovering it.
+  - **Caption framing sticks to the building's name.** "Exterior of Ernie's
+    Restaurant", "Former North Beach Branch Library", "Warehouse of Allegheny
+    Ludlum Steel Corporation" — stripped now by `CAPTION_PREFIX`, and a fragment
+    that is nothing but a building noun ("Building", "House") is dropped. The
+    first pass over this collection left three shapes of framing behind, which
+    #218 fixed and which are worth knowing before reading the next caption
+    collection:
+
+    - **A part of the building in front of the name** — "Main entrance to the
+      Marines' Memorial Club", "Courtyard at the San Francisco Art Institute",
+      "Lobby of the Hotel Turpin". `CAPTION_PREFIX` now strips an optional
+      qualifier, a part-of-building noun and its preposition. None of those
+      nouns is in `BUILDING_NOUN`, so the strip can never take a name's own
+      head noun.
+    - **The participle behind it** — "Bank of Canton located at 743 Washington
+      street" leaves "Bank of Canton located" once the address is removed, and
+      the lower-case word fails the all-capitalized test and takes the name with
+      it. `TRAILING_LOCATIVE` strips it.
+    - **A lower-case street type inside the address**, which is the one that did
+      the most damage: see the next bullet.
+
+    Together they recovered **42 distinct names on 53 findings** with nothing
+    lost, and
+    eight `BUILDING_NOUN` additions — institute, society, brewery, saloon, bar,
+    mortuary, cafeteria, bookstore — each completing a family already in the
+    list. **What was deliberately not added is `home`.** Fourteen dropped
+    fragments end in it and most are firms ("Butler Funeral Home",
+    "Currivan's Funeral Home") — but so are "Home of Charles Berta" and "Home of
+    Katherine Modesti", which the same rule would have put on a page. A head
+    noun that reads as a building in a firm name and as a dwelling in a
+    resident's is not safe as a bare noun, whatever the ratio.
+
+  - **The catalogue writes the street type in lower case about a third of the
+    time, and the extractor could not see it.** `TITLE_ADDR`'s name token is
+    keyed on a capital letter, so "743 Washington street" parsed as *743
+    Washington*, with `street_type_not_stated` recorded about a record that
+    stated it. **101 of SFP 162's 1,378 addressed records** were affected, and
+    it cost three separate things: the type was missing from the finding, the
+    orphaned "street" left in the caption blocked the name filter, and the
+    resolution method said "the record states no street type" — which sent
+    212 12th Street to the Avenue-or-Street tie-break for want of a word the
+    record had printed. The parser now matches the type in its own right, in
+    lower case, as an optional last token, and drops a sentence-ending full stop
+    from a spelled-out one ("429 Montgomery street." is not the address). *A
+    pattern keyed on capitalization is a claim about the source's house style;
+    check it against the source.*
+
+  **The expensive lesson was the 1909 renumbering, and it was caught in the
+  audit rather than the resolver.** 42 findings dated before 1910 resolved on a
+  clean EAS join: the number exists today, on a parcel, and nothing in the join
+  can see that the numbering changed underneath it. Checked against the roll,
+  **36 of the 42 sat on a parcel whose building the assessor dates *after* the
+  photograph** — 760 Mission Street, photographed in 1867, on a parcel built in
+  1989; 315 Montgomery, 1865, on one built in 1921; 120 Kearny, 1880, on one
+  built in 1980. All 42 were pulled back to `unresolved`, taken off their pages
+  and their 15 pages deleted. [`../tools/resolve_eas.py`](../tools/resolve_eas.py)
+  now refuses any pre-1910 address outright and says what would unblock it, so
+  the refusal is the tool's rather than the auditor's. SFP 23 and SFH 371 were
+  checked for the same trap and have none.
+
+  Two smaller ones. **A street alias must not collapse a post-direction.**
+  `--alias 'BUENA VISTA WEST=BUENA VISTA'` looked like the Douglas/Douglass case
+  and is not: EAS keeps the WEST in `address`, not in `street_name`, so the
+  alias filed 737 Buena Vista Avenue West on Buena Vista Avenue — where the site
+  already had a second page for the same building under another parcel, which is
+  the duplicate in #201. The finding is declined and left for a person. And **a page in
+  `scripts/render-backlog.txt` may have no timeline at all** — 420 Montgomery
+  Street carries a permit history, 737 Buena Vista Avenue West carries none —
+  in which case a photograph row has nowhere to sit and the finding is a
+  decline, not a hand-edit. 1 Montgomery Street did have one, and its row and
+  source were added to the HTML by hand.
+
+  **The roll dates the building later than the photograph on 57 pages**, the
+  same finding SFP 23 reported on 45. Each carries the SFP 23 wording in
+  `unknowns` — "The assessor dates the building to 1988, after this photograph
+  was taken" — so a Built tag does not sit unexplained beside an older
+  photograph.
+
+  **The Photographs set alone holds every SFP 162 record**, so the `city`,
+  `sfhistory` and `lgbtq` sets — harvested in this run to complete the
+  repository — added nothing to this batch. A fresh worktree gitignores the
+  corpus, but another worktree on the same machine usually has it: `cp -Rc` off
+  it is a copy-on-write clone and saves the 70-minute `Photographs` harvest.)
+
+- **Verified:** 2026-09-02 (read, resolved and published **SFH 371, the San
+  Francisco Redevelopment Agency Records**, whole: 2,421 records → 421 findings
+  → 117 on a parcel → **116 published on 103 pages** in #214, 51 of them seeded for it,
+  1 declined. 49 name the building then standing — mostly Tenderloin residential
+  hotels, plus the Japantown YWCA, the Miyako Hotel, Woolf House Apartments and
+  the Western Addition Solar House. Findings:
+  [`../findings/digitalsf/sfh-371.json`](../findings/digitalsf/sfh-371.json).
+
+  **The corpus is gitignored, so a fresh worktree starts with no `state.json`
+  and the whole `Photographs` set has to come down again** — 578 pages, 70
+  minutes at the required 5-second delay, and it cannot be parallelized. Budget
+  it as the first hour of any digitalsf run, or work in a checkout that already
+  has the corpus.
+
+  Three things this collection taught that SFP 23 could not, all of them now
+  enforced in [`../tools/digitalsf_extract.py`](../tools/digitalsf_extract.py):
+
+  - **A caption collection is not a signage collection, and the name filter has
+    to know which it is.** SFP 23 titles are "address, shop sign", so the
+    extractor's default — keep the leftover fragment unless something says it is
+    a person — is right for them. SFH 371 titles are narrative: "1249 Scott
+    Street home on dolly being pulled by bulldozer". Run the default over those
+    and it returns 140 "firm names", most of them caption prose ("home on
+    dolly", "under construction", "Adjacent") and four of them **individuals at
+    public ceremonies**, which the privacy limits bar outright. Hence
+    `COLLECTION_NAME_POLICY`: this collection keeps a fragment only if every
+    word is capitalized, it carries no digits and one capitalized word is a
+    building noun. That drops the people and the prose and keeps 56 real
+    building names. It also loses names buried in lowercase caption ("Japantown
+    bakery Benkyodo Company"), which is the right trade — a false keep here is a
+    privacy failure, a false drop is one missing name.
+  - **Records that photograph people, not places, should not become findings at
+    all.** 234 of 2,421 have a MARC `600` personal-name subject or a personal
+    title in the caption *and* no street number. With no number they can never
+    become a page, so keeping them as unresolved findings buys nothing and
+    carries named individuals into the repository. Skipped outright.
+  - **The year-as-street-number trap is live here.** "Miss Chinatown 1967
+    Marilyn Lew" parses as number 1967 on a street called Marilyn Lew. The
+    cautions above already record the rule — a street number equal to the
+    record's own year is not an address — but only `digitalsf_profile.py`
+    enforced it; the extractor now does too.
+
+  A fourth thing, not specific to this source: **the description the extractor
+  writes is not the sentence that goes on the page.** The publisher trims it —
+  the timeline already carries the date and the page is the address — so
+  "The San Francisco Redevelopment Agency photographed the property at 1830
+  Sutter Street in 1975-08" becomes "The Redevelopment Agency photographed the
+  property, then the Japantown YWCA." That convention is why `check.py
+  --landed` reported 116 of 116 here and 885 of 885 for SFP 23 as no-ops when
+  every one was on its page; the check now also accepts the page citing the
+  finding's own record URL, which is stronger evidence than matching text.
+
+  What did not resolve, and why it is the interesting half: 257 records give no
+  street number, **33 name an address EAS no longer holds because the building
+  was cleared**, 6 name something the register does not treat as a street
+  (Embarcadero Center, One Maritime Plaza, One Jackson Place, Ridgeview Terrace,
+  Verona, and a "W 24th Street" that looks like a cataloguing error), 5 are
+  ranges now split across parcels, 3 are condominiums. Those 33 are the most
+  valuable records in the collection and the one class the evidence bar will not
+  let onto a page.)
 
 - **Verified:** 2026-08-16 (published SFP 23: 919 of the 923 resolved findings
   onto 882 pages in #117, 720 of them seeded from
@@ -314,7 +1276,7 @@ more sensitive rather than less.
   and seven new neighborhood directories with them. Each fact is one
   `historical_record` entry on the page's single timeline, cited to the record's
   own `524$a`; the circa dates publish the archivist's phrase and the 14
-  conflicts went into `.unknowns` unadjudicated. Learned two things worth
+  conflicts went into `unknowns` unadjudicated. Learned two things worth
   carrying to the next collection. **EAS's stale `parcel_number` bites the
   publisher as well as the resolver** — 15 of the 723 parcels are filed in EAS
   under a retired APN, so a manifest built by looking EAS up on the active

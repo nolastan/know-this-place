@@ -1,0 +1,169 @@
+{
+  "address": "1070 Lombard Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/lombard-street/1070/",
+  "apn": "0068016",
+  "block": "0068",
+  "lot": "016",
+  "eas_baseid": "276565",
+  "coordinates": {
+    "lat": 37.802213,
+    "lng": -122.419095
+  },
+  "parcel": {
+    "year_built": 1939,
+    "units": 1,
+    "stories": 3,
+    "rooms": 7,
+    "bathrooms": 3,
+    "lot_area_sqft": 3244,
+    "building_area_sqft": 3597,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Russian Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "0000 1070 LOMBARD             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 453001,
+    "assessed_improvement_value": 566263
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1939",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Lombard Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1922–1951",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202410152913",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-10-15",
+      "status_date": "2025-03-18",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "remove stucco around window and door at the east deck and waterproof the openings (interior work) remove stucco under deck to inspect framing (exterior work).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201512145059",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-12-14",
+      "status_date": "2016-01-05",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201111239498",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2011-11-23",
+      "status_date": "2013-03-01",
+      "estimated_cost": 51500,
+      "revised_cost": 51500,
+      "description": "kitchen & bathroom remodel-cabinets, countertops, vanity, tub replaced. new post & header at wall removed",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200808259972",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-08-25",
+      "status_date": "2008-08-25",
+      "estimated_cost": 85000,
+      "revised_cost": 85000,
+      "description": "replace 37 windows & 6 doors. size for size. wood to wood composite. visable from street. u value 0.39.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200408161647",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-08-16",
+      "status_date": "2004-11-22",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "replace wet bar in kind, at 3rd floor, no structural changes",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200004207722",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-04-20",
+      "status_date": "2000-10-10",
+      "estimated_cost": 5250,
+      "revised_cost": 5250,
+      "description": "kitchen and bathrooms remodeling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LOMBARD&street_type=ST&address_number=1070",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0068016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0068&lot=016",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0068016",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41909547882696%2037.80221309327477)%27)",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "modern-architecture-context-statement",
+      "name": "Mary Brown, San Francisco Planning Department, San Francisco Modern Architecture and Landscape Design 1935-1970 Historic Context Statement, adopted 12 January 2011",
+      "query": "http://sfplanninggis.org/docs/Historical_Context_Statements/Modern%20Architecture%20Context%20adopted%20Jan%202011.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Modern Architecture and Landscape Design Context Statement, adopted 2011",
+      "retrieved": "2026-09-01"
+    }
+  ],
+  "building": {},
+  "historical_record": [
+    {
+      "date": "1972",
+      "kind": "landscape design",
+      "description": "A residential garden laid out in 1972 by the landscape architect Thomas D. Church, who designed more than 150 gardens in San Francisco and is widely counted the founder of Modern California landscape design.",
+      "source": "modern-architecture-context-statement"
+    }
+  ]
+}

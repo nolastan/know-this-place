@@ -1,0 +1,173 @@
+{
+  "address": "960 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/green-street/960/",
+  "apn": "0120007C",
+  "block": "0120",
+  "lot": "007C",
+  "eas_baseid": "277929",
+  "coordinates": {
+    "lat": 37.79904,
+    "lng": -122.414871
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 4,
+    "lot_area_sqft": 8097,
+    "building_area_sqft": 3075,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Russian Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "0000 0960 GREEN               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 388552,
+    "assessed_improvement_value": 78893
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Russian Hill-Macondray Lane Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1878–1930",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202304266503",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-04-26",
+      "status_date": "2023-10-13",
+      "estimated_cost": 10000,
+      "revised_cost": 20552,
+      "description": "1/f: 1-bathroom remodel like for like, remove tile to uncover sub floor, change shower valve, run electrical to existing pnael, install new tile. no walls, no layout change",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202109279199",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-09-27",
+      "status_date": "2022-08-16",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "kitchen remodel: 2nd floor, approx. 16'x 22'-6\". no added new fixtures, no alteration of walls. lights per cebc 150.0(k).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202106162553",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-06-16",
+      "status_date": "2021-06-16",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "renovate bathroom due to fire damage on the house. inkind bathroom on garage location.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202103186788",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-03-18",
+      "status_date": "2021-05-13",
+      "estimated_cost": 17000,
+      "revised_cost": 17000,
+      "description": "installation of 5 windows units in kind(all wood casements)2 windoes visible from street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202012020017",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-12-02",
+      "status_date": "2022-05-02",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa #2020-0728-0840: more than 50% rear of stairs, wall assembly, replace interior finishes on main floor, wall framing at northwest laundry basement and exterior stairway. remove/replace interior ceiling & insulation, remove/replace damaged wood stairway. replace plumbing in laundry room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202007280840",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-07-28",
+      "status_date": "2022-05-02",
+      "estimated_cost": 110000,
+      "revised_cost": 110000,
+      "description": "fire repairs to exterior stairs back of house, interior/exterior paint, roof repairs, heating, some plumbing & electrical",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GREEN&street_type=ST&address_number=960",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0120007C&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0120&lot=007C",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0120007C",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41487062036077%2037.799039846912095)%27)",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "id": "nrhp-87002286",
+      "name": "National Register of Historic Places nomination, Russian Hill/Macondray Lane District (reference number 87002286), National Park Service.",
+      "query": "https://npgallery.nps.gov/NRHP/GetAsset/NRHP/87002286_text",
+      "label": "National Register of Historic Places nomination, National Park Service",
+      "retrieved": "2026-09-16"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1907",
+      "kind": "construction",
+      "description": "Stucco bungalow designed by the architect Arthur J. Laib, put up straight after the earthquake fire to replace a house lost on the site.",
+      "source": "nrhp-87002286"
+    }
+  ],
+  "building": {
+    "architect": "Arthur J. Laib",
+    "sources": [
+      "nrhp-87002286"
+    ]
+  }
+}

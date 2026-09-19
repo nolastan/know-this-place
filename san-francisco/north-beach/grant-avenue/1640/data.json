@@ -13,7 +13,11 @@
     "low": 1640,
     "high": 1644
   },
-  "street_numbers_on_parcel": [1640, 1642, 1644],
+  "street_numbers_on_parcel": [
+    1640,
+    1642,
+    1644
+  ],
   "building_type": "residential",
   "parcel": {
     "year_built": 1907,
@@ -30,15 +34,13 @@
     "supervisor_district": 3,
     "assessor_neighborhood": "Telegraph Hill",
     "analysis_neighborhood": "North Beach",
-    "assessor_property_location": "1644 1640 GRANT AV0000",
-    "planning_name": "SITE OF FIRST COLORED BAPTIST CHURCH; TH",
+    "property_location_raw": "1644 1640 GRANT               AV0000",
     "note": "Planning's historic resource survey names this parcel \"SITE OF FIRST COLORED BAPTIST CHURCH; TH\" — the dataset truncates the field at 40 characters. Grant Avenue was formerly Dupont Street. The building standing here now went up in 1907, after the church had left the site."
   },
   "assessment": {
     "roll_year": 2025,
     "assessed_land_value": 75707,
     "assessed_improvement_value": 115686,
-    "percent_of_ownership": 0.1,
     "note": "Every roll year from 2018 through 2025 records this parcel at a 0.1 ownership share, so the assessed figures above are a partial interest, not the whole parcel. They are not charted on this page for that reason."
   },
   "historic_status": {
@@ -46,10 +48,8 @@
     "ceqa_status_code_article_10_11": "B",
     "ceqa_status_label": "Unknown Historic Resource status",
     "reason": "Historic Survey Result and 45 years or older",
-    "planning_year_built": 1907,
-    "designated_landmark": false,
+    "yearbuilt": 1907,
     "in_article_10_11_historic_district": false,
-    "in_historic_district": false,
     "source": "sf-planning"
   },
   "permits": [
@@ -91,7 +91,8 @@
       "completed": "1983-09-20",
       "estimated_cost": 2920,
       "description": "Alterations or repairs; DBI records no description.",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Alterations or repairs; DBI records no description."
     }
   ],
   "permit_summary": {
@@ -101,6 +102,12 @@
     "note": "DBI files the same permits under 1640, 1642 and 1644 Grant Avenue; each is counted once here. One street-space permit at a nominal valuation is omitted from the timeline."
   },
   "historical_record": [
+    {
+      "date": "1993-02-16",
+      "kind": "designation",
+      "description": "Registered as California Historical Landmark No. 1010, the original site of the Third Baptist Church, formerly the First Colored Baptist Church.",
+      "source": "ohp-listed-resources"
+    },
     {
       "date": "1896",
       "kind": "site history",
@@ -135,8 +142,7 @@
     "The Argonaut has the congregation beginning its activities here in 1852; SF Planning's landmark designation report has it forming that year at a private residence on Kearny Street and moving into this building in 1854.",
     "The Argonaut dates the congregation's employment of its first pastor, the Reverend Charles Satchell, to 1854; the designation report dates it to 1856.",
     "What became of the church building itself, and whether the 1907 flats replaced it or a later structure.",
-    "The architect and builder of the 1907 flats.",
-    "The date of the last recorded sale."
+    "The architect and builder of the 1907 flats."
   ],
   "sources": [
     {
@@ -179,6 +185,14 @@
       "id": "argonaut-vol31-no2-winter2021-montesano",
       "name": "Philip M. Montesano, “San Francisco Black Churches in the Early 1860s: Political Pressure Group,” The Argonaut: Journal of the San Francisco Historical Society, vol. 31, no. 2 (Winter 2021), pp. 54–61",
       "retrieved": "2026-08-12"
+    },
+    {
+      "id": "ohp-listed-resources",
+      "name": "California Office of Historic Preservation, Listed California Historical Resources",
+      "query": "https://ohp.parks.ca.gov/ListedResources/Detail/1010",
+      "label": "California Office of Historic Preservation, listed resources",
+      "retrieved": "2026-09-18"
     }
-  ]
+  ],
+  "sub_area": "Telegraph Hill"
 }

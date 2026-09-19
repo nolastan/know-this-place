@@ -1,101 +1,116 @@
 {
-  "address": "1601 Market Street, San Francisco, CA 94103",
-  "path": "/san-francisco/mission/market-street/1601/",
-  "apn": "3505049",
-  "block": "3505",
-  "lot": "049",
-  "eas_baseid": "357723",
-  "coordinates": {
-    "lat": 37.774141,
-    "lng": -122.420219
+ "address": "1601 Market Street, San Francisco, CA 94103",
+ "path": "/san-francisco/mission/market-street/1601/",
+ "apn": "3505049",
+ "block": "3505",
+ "lot": "049",
+ "eas_baseid": "357723",
+ "coordinates": {
+  "lat": 37.774141,
+  "lng": -122.420219
+ },
+ "parcel": {
+  "year_built": 1915,
+  "stories": 5,
+  "rooms": 156,
+  "bathrooms": 32,
+  "lot_area_sqft": 8976,
+  "use": "Commercial Hotel",
+  "property_class": "Hotels - Other",
+  "construction_type_code": "NA",
+  "supervisor_district": 6,
+  "assessor_neighborhood": "South of Market",
+  "analysis_neighborhood": "Mission",
+  "property_location_raw": "0000 1613 MARKET              ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 3508960,
+  "assessed_improvement_value": 631367
+ },
+ "historic_status": {
+  "ceqa_status_code": "A",
+  "ceqa_status_code_article_10_11": "A",
+  "ceqa_status_label": "Historic resource",
+  "reason": "Historic Survey Result",
+  "yearbuilt": "1915",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "permits": [
+  {
+   "number": "200608210087",
+   "type": "additions alterations or repairs",
+   "status": "complete",
+   "filed": "2006-08-21",
+   "status_date": "2006-10-02",
+   "estimated_cost": 8000,
+   "revised_cost": 8000,
+   "description": "parapet bracing",
+   "source": "sf-building-permits"
+  }
+ ],
+ "permit_summary": {
+  "count_on_file": 2,
+  "range": "2006–2008",
+  "shown_on_page": 1,
+  "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+ },
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARKET&street_type=ST&address_number=1601",
+   "retrieved": "2026-08-16"
   },
-  "parcel": {
-    "year_built": 1915,
-    "stories": 5,
-    "rooms": 156,
-    "bathrooms": 32,
-    "lot_area_sqft": 8976,
-    "use": "Commercial Hotel",
-    "property_class": "Hotels - Other",
-    "construction_type_code": "NA",
-    "supervisor_district": 6,
-    "assessor_neighborhood": "South of Market",
-    "analysis_neighborhood": "Mission",
-    "property_location_raw": "0000 1613 MARKET              ST0000"
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3505049&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-08-16"
   },
-  "assessment": {
-    "roll_year": 2025,
-    "assessed_land_value": 3508960,
-    "assessed_improvement_value": 631367
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3505&lot=049",
+   "retrieved": "2026-08-16"
   },
-  "historic_status": {
-    "ceqa_status_code": "A",
-    "ceqa_status_code_article_10_11": "A",
-    "ceqa_status_label": "Historic resource",
-    "reason": "Historic Survey Result",
-    "yearbuilt": "1915",
-    "in_article_10_11_historic_district": false,
-    "source": "sf-planning"
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3505049",
+   "retrieved": "2026-08-16"
   },
-  "permits": [
-    {
-      "number": "200608210087",
-      "type": "additions alterations or repairs",
-      "status": "complete",
-      "filed": "2006-08-21",
-      "status_date": "2006-10-02",
-      "estimated_cost": 8000,
-      "revised_cost": 8000,
-      "description": "parapet bracing",
-      "source": "sf-building-permits"
-    }
-  ],
-  "permit_summary": {
-    "count_on_file": 2,
-    "range": "2006–2008",
-    "shown_on_page": 1,
-    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  {
+   "id": "market-octavia-context-statement",
+   "name": "Page & Turnbull, Inc., Historic Context Statement: Market and Octavia Neighborhood Plan Area, San Francisco, California, endorsed by the San Francisco Landmarks Preservation Advisory Board December 19, 2007",
+   "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4688-M%26O_Context-LPAB121907.pdf",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "label": "Market & Octavia Historic Context Statement, adopted 2007",
+   "retrieved": "2026-08-16"
   },
-  "sources": [
-    {
-      "id": "sf-eas-addresses",
-      "name": "SF Enterprise Addressing System via DataSF",
-      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARKET&street_type=ST&address_number=1601",
-      "retrieved": "2026-08-16"
-    },
-    {
-      "id": "sf-assessor-roll",
-      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
-      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3505049&$order=closed_roll_year%20DESC&$limit=1",
-      "retrieved": "2026-08-16"
-    },
-    {
-      "id": "sf-building-permits",
-      "name": "SF Dept. of Building Inspection via DataSF",
-      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3505&lot=049",
-      "retrieved": "2026-08-16"
-    },
-    {
-      "id": "sf-planning",
-      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
-      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3505049",
-      "retrieved": "2026-08-16"
-    },
-    {
-      "id": "market-octavia-context-statement",
-      "name": "Page & Turnbull, Inc., Historic Context Statement: Market and Octavia Neighborhood Plan Area, San Francisco, California, endorsed by the San Francisco Landmarks Preservation Advisory Board December 19, 2007",
-      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/4688-M%26O_Context-LPAB121907.pdf",
-      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
-      "label": "Market & Octavia Historic Context Statement, adopted 2007",
-      "retrieved": "2026-08-16"
-    }
-  ],
-  "historical_record": [
-    {
-      "date": "2007",
-      "kind": "photograph",
-      "description": "Photographed for the survey as the type example of the plan area's single-room occupancy hotels.",
-      "source": "market-octavia-context-statement"
-    }
-  ]
+  {
+   "id": "umb-survey-1990",
+   "name": "San Francisco Landmarks Preservation Advisory Board — A Context Statement and Architectural/Historical Survey of Unreinforced Masonry Building (U.M.B.) Construction in San Francisco from 1850 to 1940, San Francisco Department of City Planning, November 1990",
+   "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=de4ab5d53839bb7c49ab1a2e10876d4a39e7dbacc6eccc90508e51012b8f4456&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "label": "Unreinforced Masonry Building Survey, 1990",
+   "retrieved": "2026-08-29"
+  }
+ ],
+ "historical_record": [
+  {
+   "date": "2007",
+   "kind": "photograph",
+   "description": "Photographed for the survey as the type example of the plan area's single-room occupancy hotels.",
+   "source": "market-octavia-context-statement"
+  }
+ ],
+ "historic_survey": {
+  "survey": "Unreinforced Masonry Building Survey (1990)",
+  "frame": "Unreinforced masonry",
+  "apn_as_surveyed": "Block 3505, Lot 1",
+  "note": "From the survey's appendix table of unreinforced masonry buildings and their historic ratings, study area 10 (Mission/Upper Market).",
+  "source": "umb-survey-1990"
+ }
 }

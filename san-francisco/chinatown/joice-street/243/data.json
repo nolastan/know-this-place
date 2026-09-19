@@ -1,0 +1,103 @@
+{
+ "address": "243 Joice Street, San Francisco, CA 94108",
+ "path": "/san-francisco/chinatown/joice-street/243/",
+ "apn": "0224025",
+ "block": "0224",
+ "lot": "025",
+ "eas_baseid": "280294",
+ "coordinates": {
+  "lat": 37.793613,
+  "lng": -122.408793
+ },
+ "parcel": {
+  "year_built": 1910,
+  "units": 1,
+  "stories": 2,
+  "rooms": 13,
+  "bathrooms": 2,
+  "lot_area_sqft": 1398,
+  "building_area_sqft": 2550,
+  "use": "Single Family Residential",
+  "property_class": "Dwelling",
+  "construction_type_code": "C",
+  "zoning": "RM-4",
+  "supervisor_district": 3,
+  "assessor_neighborhood": "Nob Hill",
+  "analysis_neighborhood": "Chinatown",
+  "property_location_raw": "0000 0243 JOICE               ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 47099,
+  "assessed_improvement_value": 47791
+ },
+ "historic_status": {
+  "ceqa_status_code": "B",
+  "ceqa_status_code_article_10_11": "B",
+  "ceqa_status_label": "Unevaluated",
+  "reason": "Historic Survey Result and 45 years or older",
+  "yearbuilt": "1910",
+  "survey_name": "HIPKHAN BENEVOLENT ASSOCIATION",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "permits": [
+  {
+   "number": "9204670",
+   "type": "otc alterations permit",
+   "status": "expired",
+   "filed": "1992-03-25",
+   "status_date": "1992-07-07",
+   "estimated_cost": 3850,
+   "description": "reroofing",
+   "source": "sf-building-permits"
+  }
+ ],
+ "permit_summary": {
+  "count_on_file": 2,
+  "range": "1992–2001",
+  "shown_on_page": 1,
+  "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+ },
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JOICE&street_type=ST&address_number=243",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0224025&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0224&lot=025",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0224025",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "umb-survey-1990",
+   "name": "San Francisco Landmarks Preservation Advisory Board — A Context Statement and Architectural/Historical Survey of Unreinforced Masonry Building (U.M.B.) Construction in San Francisco from 1850 to 1940, San Francisco Department of City Planning, November 1990",
+   "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=de4ab5d53839bb7c49ab1a2e10876d4a39e7dbacc6eccc90508e51012b8f4456&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "label": "Unreinforced Masonry Building Survey, 1990",
+   "retrieved": "2026-08-29"
+  }
+ ],
+ "historic_survey": {
+  "survey": "Unreinforced Masonry Building Survey (1990)",
+  "frame": "Unreinforced masonry",
+  "heritage_rating": "C — of contextual importance",
+  "note": "From the survey's appendix table of unreinforced masonry buildings and their historic ratings, study area 7 (Chinatown).",
+  "source": "umb-survey-1990"
+ }
+}

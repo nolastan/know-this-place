@@ -1,0 +1,80 @@
+{
+  "address": "2555 Post Street, San Francisco, CA 94115",
+  "path": "/san-francisco/presidio-heights/post-street/2555/",
+  "apn": "1081030",
+  "block": "1081",
+  "lot": "030",
+  "eas_baseid": "294552",
+  "coordinates": {
+    "lat": 37.7835,
+    "lng": -122.443854
+  },
+  "parcel": {
+    "year_built": 1900,
+    "lot_area_sqft": 3781,
+    "use": "Commercial Misc",
+    "property_class": "Parking Lot",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Lower Pacific Heights",
+    "analysis_neighborhood": "Presidio Heights",
+    "property_location_raw": "0000 2555 POST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 46640,
+    "assessed_improvement_value": 3657
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POST&street_type=ST&address_number=2555",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1081030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1081&lot=030",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1081030",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "digitalsf-23005",
+      "name": "2555 Post Street, 1943. San Francisco Subjects Photograph Collection (SFP 162), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/23005",
+      "label": "San Francisco Subjects Photograph Collection (SFP 162), San Francisco Public Library",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1943-01-21",
+      "kind": "photograph",
+      "description": "Photographed.",
+      "source": "digitalsf-23005"
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "address": "1588 Fell Street, San Francisco, CA 94117",
+  "path": "/san-francisco/hayes-valley/fell-street/1588/",
+  "apn": "1207018",
+  "block": "1207",
+  "lot": "018",
+  "eas_baseid": "297228",
+  "coordinates": {
+    "lat": 37.773381,
+    "lng": -122.443984
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 4,
+    "stories": 4,
+    "rooms": 19,
+    "bathrooms": 4,
+    "lot_area_sqft": 1706.25,
+    "building_area_sqft": 4045,
+    "lot_depth_ft": 81.25,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "North Panhandle",
+    "analysis_neighborhood": "Lone Mountain/USF",
+    "property_location_raw": "0000 1588 FELL                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 335929,
+    "assessed_improvement_value": 344326,
+    "last_sale_date": "1994-12-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "NOPA Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1870s–1910s",
+    "source": "sf-historic-districts"
+  },
+  "also_in_districts": [
+    {
+      "name": "Panhandle Historic District",
+      "california_register_status": "Eligible (not listed)",
+      "national_register_status": "Not listed",
+      "article_10_11_status": "No local landmark protection",
+      "local_landmark_protection": false,
+      "period_of_significance": "1870–1915",
+      "source": "sf-historic-districts"
+    }
+  ],
+  "permits": [
+    {
+      "number": "201909030462",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-09-03",
+      "status_date": "2019-12-23",
+      "estimated_cost": 80325,
+      "revised_cost": 80325,
+      "description": "reroof visible roof w/shingles. no work at façade.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M792727",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-06-02",
+      "status_date": "2017-06-02",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201608255982",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-08-25",
+      "status_date": "2017-12-22",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "to comply with complaint 201615341, remove and replace wood-frame entry stair on central st",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8804900",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-04-15",
+      "status_date": "1988-10-28",
+      "estimated_cost": 800,
+      "description": "repair dry rot siding, threads on stairs per termite report",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8606322",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-05-29",
+      "status_date": "1986-10-17",
+      "estimated_cost": 4235,
+      "revised_cost": 0,
+      "description": "repair right side exterior stairs & landings",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 12,
+    "range": "1986–2019",
+    "shown_on_page": 5,
+    "note": "7 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FELL&street_type=ST&address_number=1588",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1207018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1207&lot=018",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1207018",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44398350886536%2037.773380871592835)%27)",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "digitalsf-33472",
+      "name": "1588 Fell Street, 1964. San Francisco Subjects Photograph Collection (SFP 162), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/33472",
+      "label": "San Francisco Subjects Photograph Collection (SFP 162), San Francisco Public Library",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1964-05",
+      "kind": "photograph",
+      "description": "Photographed.",
+      "source": "digitalsf-33472"
+    }
+  ]
+}

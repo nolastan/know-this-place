@@ -1,0 +1,184 @@
+{
+  "address": "545 Jones Street, San Francisco, CA 94102",
+  "path": "/san-francisco/tenderloin/jones-street/545/",
+  "apn": "0318002",
+  "block": "0318",
+  "lot": "002",
+  "eas_baseid": "281581",
+  "coordinates": {
+    "lat": 37.786445,
+    "lng": -122.413237
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 5,
+    "rooms": 55,
+    "bathrooms": 38,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 13800,
+    "use": "Commercial Hotel",
+    "property_class": "Hotels - Other",
+    "construction_type_code": "C",
+    "zoning": "RC-4",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Downtown",
+    "analysis_neighborhood": "Tenderloin",
+    "property_location_raw": "0000 0545 JONES               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 183877,
+    "assessed_improvement_value": 306563,
+    "assessed_fixtures_value": 131879
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Uptown Tenderloin Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1957",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201704214530",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-04-21",
+      "status_date": "2017-04-21",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201306048653",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-06-04",
+      "status_date": "2013-09-03",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "to comply with ordinance 029-13 only; installation of grab bars in sro at the following locations: add 9 grab bars, 2nd to 5th flrs, 1 shower diag 10, 1 toilet diag 5 each leve, grnd flrs, 1 toilet diag 5 of mayor's office",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200310309053",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-10-30",
+      "status_date": "2003-10-30",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "to comply w/ sro fire sprinkler ordinance #170-02 add 3 heads at manager's unit. to comply nov200341",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "20000114172",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-01-14",
+      "status_date": "2000-10-14",
+      "revised_cost": 15500,
+      "description": "replace lath & plater as necessary,plumbing& electical,tile,paint, one room thru 25",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9515998",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-09-28",
+      "status_date": "1996-03-07",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8714620",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-10-13",
+      "status_date": "1988-02-09",
+      "estimated_cost": 4500,
+      "description": "add 12 sprklr heads",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8611979",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-09-29",
+      "status_date": "1986-10-16",
+      "estimated_cost": 8000,
+      "description": "parapet reinforcement job",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 13,
+    "range": "1986–2017",
+    "shown_on_page": 7,
+    "note": "6 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JONES&street_type=ST&address_number=545",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0318002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0318&lot=002",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0318002",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41323690368148%2037.78644508282181)%27)",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "nrhp-08001407",
+      "name": "National Register of Historic Places nomination, Uptown Tenderloin Historic District (reference number 08001407), National Park Service.",
+      "query": "https://npgallery.nps.gov/NRHP/GetAsset/NRHP/08001407_text",
+      "label": "National Register of Historic Places nomination, National Park Service",
+      "retrieved": "2026-09-11"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912",
+      "kind": "construction",
+      "description": "Built as mid-priced hotel with 55 rooms and 38 baths, to the design of the architect David C. Coleman. Five storeys over a basement, reinforced concrete structure, two-part vertical composition, Gothic ornamentation.",
+      "source": "nrhp-08001407"
+    }
+  ],
+  "building": {
+    "architect": "David C. Coleman"
+  }
+}

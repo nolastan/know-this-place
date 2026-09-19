@@ -1,0 +1,117 @@
+{
+ "address": "250 Masonic Avenue, San Francisco, CA 94118",
+ "path": "/san-francisco/castro/masonic-avenue/250/",
+ "apn": "1111003",
+ "block": "1111",
+ "lot": "003",
+ "eas_baseid": "294989",
+ "coordinates": {
+  "lat": 37.779263,
+  "lng": -122.446962
+ },
+ "parcel": {
+  "year_built": 1955,
+  "stories": 2,
+  "rooms": 59,
+  "bathrooms": 17,
+  "lot_area_sqft": 54297,
+  "building_area_sqft": 85941,
+  "basement_area_sqft": 31669,
+  "use": "Commercial Office",
+  "property_class": "Office",
+  "construction_type_code": "C",
+  "zoning": "RM-1",
+  "supervisor_district": 2,
+  "assessor_neighborhood": "Anza Vista",
+  "analysis_neighborhood": "Lone Mountain/USF",
+  "property_location_raw": "0000 0250 MASONIC             AV0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 12522254,
+  "assessed_improvement_value": 18040536,
+  "last_sale_date": "2022-05-05"
+ },
+ "historic_status": {
+  "ceqa_status_code": "B",
+  "ceqa_status_code_article_10_11": "B",
+  "ceqa_status_label": "Unevaluated",
+  "reason": "No evaluation and 45 years or older",
+  "yearbuilt": "1955",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "permits": [
+  {
+   "number": "M17530",
+   "type": "otc alterations permit",
+   "status": "expired",
+   "filed": "2001-10-31",
+   "status_date": "2002-02-28",
+   "revised_cost": 0,
+   "description": "side walk permit",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "8404532",
+   "type": "additions alterations or repairs",
+   "status": "complete",
+   "filed": "1984-04-27",
+   "status_date": "1984-11-15",
+   "estimated_cost": 8000,
+   "description": "construct 2 shed roofs above existing hvac units",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "8204562",
+   "type": "additions alterations or repairs",
+   "status": "complete",
+   "filed": "1982-06-07",
+   "status_date": "1983-03-04",
+   "estimated_cost": 12000,
+   "description": "bldg use: offices",
+   "source": "sf-building-permits"
+  }
+ ],
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MASONIC&street_type=AVE&address_number=250",
+   "retrieved": "2026-08-30"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1111003&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-08-30"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1111&lot=003",
+   "retrieved": "2026-08-30"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1111003",
+   "retrieved": "2026-08-30"
+  },
+  {
+   "id": "lgbtq-context-statement",
+   "name": "Donna J. Graves and Shayne E. Watson, Citywide Historic Context Statement for LGBTQ History in San Francisco, San Francisco Planning Department, adopted by the Historic Preservation Commission November 18, 2015",
+   "query": "https://sfplanning.s3.amazonaws.com/default/files/Preservation/lgbt_HCS/FinalLGBTQ_HCS_March2016.pdf",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "retrieved": "2026-08-30"
+  }
+ ],
+ "historical_record": [
+  {
+   "date": "1983",
+   "kind": "event",
+   "description": "The San Francisco Medical Society Auditorium, where the 1983 symposium The Physician and the AIDS Crisis was held.",
+   "source": "lgbtq-context-statement"
+  }
+ ]
+}

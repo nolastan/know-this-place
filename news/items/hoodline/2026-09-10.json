@@ -1,0 +1,169 @@
+{
+  "source_id": "hoodline",
+  "batch": "2026-09-10",
+  "read_on": "2026-09-10",
+  "notes": "Six items queued from the 2026-09-10 poll, all six read.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 6,
+    "mentions": 4,
+    "remaining": "none",
+    "note": "The Curran story named no street address, and the San Carlos story is not in San Francisco (its Walnut Street and Old County Road hits are San Carlos addresses)."
+  },
+  "findings": [
+    {
+      "id": "2026-09-10-hl-0001",
+      "date": "2026-09-10",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "628 Haight St.",
+      "street_number": "682",
+      "street_name": "HAIGHT",
+      "street_type": "ST",
+      "description": "The Mexican restaurant Otra, open in the ground-floor corner space at 628 Haight Street since May 2021, will close its dining room in early December 2026. The story says the space was Sushi Raw's before it, and that the lease was signed in January 2020. The closure has been announced rather than happened, so the entry takes the article's date, as the module's 'to open' entries do.",
+      "extra": {
+        "business": "Otra",
+        "opened": "2021-05",
+        "closing": "early December 2026",
+        "previous_tenant": "Sushi Raw",
+        "first_reported_by": "The San Francisco Standard",
+        "address_printed": "628 Haight St.",
+        "address_registered": "682 Haight St (g8m3-pdis, from 2019-10-25)"
+      },
+      "citation": {
+        "label": "Hoodline, “Lower Haight's Otra to Close in December After More Than Five Years,” 10 September 2026",
+        "url": "https://hoodline.com/2026/09/lower-haight-s-otra-to-close-in-december-after-more-than-five-years/",
+        "locator": "article text"
+      },
+      "raw": {
+        "text": "The couple signed the lease for the space at 628 Haight St. back in January 2020"
+      },
+      "confidence": "high",
+      "note": "The article prints 628 Haight St., and that number is wrong: DataSF's Registered Business Locations (g8m3-pdis) records the business 'Otra' at 682 Haight St from 25 October 2019, which agrees with the story's January 2020 lease, while the 2025 roll records 628 Haight as a single-family house built 1895. The finding is resolved at 682 and address_as_written keeps what the article printed. Query: https://data.sf.gov/resource/g8m3-pdis.json?$select=dba_name,full_business_address,location_start_date&$where=upper(dba_name)%20like%20%27%25OTRA%25%27%20AND%20upper(full_business_address)%20like%20%27%25HAIGHT%25%27, retrieved 2026-09-10. The Standard reported the closure first; its story was not in this run's queue, and no items file carries it. The owners are named in the article and are deliberately left out here.",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0847019",
+        "path": "/san-francisco/hayes-valley/haight-street/680/",
+        "eas_address": "680 HAIGHT ST",
+        "method": "EAS exact match on 682 HAIGHT ST → parcel 0847019; sf-parcels has blklot 0847019 active, 680–682 HAIGHT; the 2025 roll records it as multi-family residential, built 1890. EAS puts 680, 682 HAIGHT ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 680.",
+        "checked_on": "2026-09-10",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "Seeded /san-francisco/hayes-valley/haight-street/680/ from research/manifests/news-2026-09-10.json — parcel 0847019, no page existed. Published there as hoodline-2026-09-10."
+      }
+    },
+    {
+      "id": "2026-09-10-hl-0002",
+      "date": "2026-09-10",
+      "date_precision": "day",
+      "kind": "sale",
+      "address_as_written": "747 Front Street",
+      "street_number": "747",
+      "street_name": "FRONT",
+      "street_type": "ST",
+      "description": "The 82,000-square-foot office building at 747 Front Street passed to Pendulum Property Partners for $49 million by deed in lieu of foreclosure, after the previous owners' loan went unrepaid at maturity. This piece is a write-up of other outlets' reporting.",
+      "extra": {
+        "buyer": "Pendulum Property Partners",
+        "price_usd": 49000000,
+        "mechanism": "deed in lieu of foreclosure",
+        "floor_area_sqft": 82000,
+        "built_reported": 1909,
+        "previous_sale": "2019, $68.4 million, to Bridgeton Holdings and Morgan Stanley"
+      },
+      "citation": {
+        "label": "Hoodline, “Orange County Firm Grabs Jackson Square Office Tower Via $49M Foreclosure Deal,” 10 September 2026",
+        "url": "https://hoodline.com/2026/09/orange-county-firm-grabs-jackson-square-office-tower-via-49m-foreclosure-deal/",
+        "locator": "article text"
+      },
+      "raw": {
+        "text": "Pendulum Property Partners, a firm based in Orange County, bought the debt on 747 Front Street before taking control of the 82,000-square-foot property"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "One event, one entry. The same foreclosure transfer is carried by The Registry's story, finding 2026-09-10-0001 in news/items/the-registry/2026-09-10.json, which names the address in its headline; this Hoodline piece rewrites The Real Deal's and the Business Times' reporting. Its detail is kept in extra."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0166001",
+        "path": "/san-francisco/chinatown/front-street/747/",
+        "eas_address": "747 FRONT ST",
+        "method": "EAS exact match on 747 FRONT ST → parcel 0166001; sf-parcels has blklot 0166001 active, 101–101 BROADWAY; the 2025 roll records it as commercial office, built 1909. The assessor files the parcel as 101 BROADWAY.",
+        "checked_on": "2026-09-10",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      }
+    },
+    {
+      "id": "2026-09-10-hl-0003",
+      "date": "2026-09-10",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "600 Stockton Street",
+      "street_number": "600",
+      "street_name": "STOCKTON",
+      "street_type": "ST",
+      "description": "The Ritz-Carlton hotel at 600 Stockton Street is opening an 80-seat cocktail lounge, Bruma, inside the building on 12 October 2026. The interior is by the design firm Fettle.",
+      "extra": {
+        "business": "Bruma",
+        "opens": "2026-10-12",
+        "interior_designer": "Fettle",
+        "seats": 80
+      },
+      "citation": {
+        "label": "Hoodline, “Ritz-Carlton San Francisco Unveils Bruma, a Foggy New Nob Hill Cocktail Salon,” 10 September 2026",
+        "url": "https://hoodline.com/2026/09/ritz-carlton-san-francisco-unveils-bruma-a-foggy-new-nob-hill-cocktail-salon/",
+        "locator": "article text"
+      },
+      "raw": {
+        "text": "Bruma, a cocktail lounge and modern San Francisco salon, opens October 12 inside the hotel's historic 1909 Neoclassical building at 600 Stockton Street"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Fails the ten-year test. The hotel is the building's occupant and remains so; a new lounge inside it is an amenity refresh, not a change to what the building is or who is in it. The article's history of the building (1909, Napoleon LeBrun & Sons, Landmark 167) is relayed from other sources and is not this story's to add."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0257012",
+        "path": "/san-francisco/chinatown/stockton-street/600/",
+        "eas_address": "600 STOCKTON ST",
+        "method": "EAS exact match on 600 STOCKTON ST → parcel 0257012; sf-parcels has blklot 0257012 active, 600–600 STOCKTON; the 2025 roll records it as commercial hotel, built 1908.",
+        "checked_on": "2026-09-10"
+      }
+    },
+    {
+      "id": "2026-09-10-hl-0004",
+      "date": "2026-09-10",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "185 Sutter Street",
+      "street_number": "185",
+      "street_name": "SUTTER",
+      "street_type": "ST",
+      "description": "Le Parc Bistrobar, the existing restaurant at 185 Sutter Street in the Galleria Park Hotel, has opened a lounge on its own mezzanine.",
+      "citation": {
+        "label": "Hoodline, “Bar Antoine Lounge Opens Above Le Parc Bistrobar,” 10 September 2026",
+        "url": "https://hoodline.com/2026/09/bar-antoine-lounge-opens-above-le-parc-bistrobar/",
+        "locator": "article text"
+      },
+      "raw": {
+        "text": "A new lounge has opened on the mezzanine level of Le Parc Bistrobar at 185 Sutter Street"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Fails the ten-year test: an existing restaurant opening a bar on its own mezzanine changes nothing about who occupies the building. The same opening is What Now's finding 2026-09-10-wn-0001, declined on the same grounds."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0292009",
+        "path": "/san-francisco/union-square/kearny-street/138/",
+        "eas_address": "185 SUTTER ST",
+        "method": "EAS exact match on 185 SUTTER ST → parcel 0292009; sf-parcels has blklot 0292009 active, 138–152 KEARNY; the 2025 roll records it as commercial hotel, built 1911. EAS puts 185, 191, 195, 199 SUTTER ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 185.",
+        "checked_on": "2026-09-10"
+      }
+    }
+  ]
+}

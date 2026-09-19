@@ -1,0 +1,163 @@
+{
+  "address": "1871–1873 Bush Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/bush-street/1871/",
+  "apn": "0674014",
+  "block": "0674",
+  "lot": "014",
+  "eas_baseid": "479642",
+  "coordinates": {
+    "lat": 37.787438,
+    "lng": -122.427917
+  },
+  "address_range": "1871–1873",
+  "street_numbers_on_parcel": [
+    "1871",
+    "1873"
+  ],
+  "parcel": {
+    "year_built": 1890,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 3092,
+    "building_area_sqft": 4656,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-4",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Lower Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "1873 1871 BUSH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1639805,
+    "assessed_improvement_value": 763486,
+    "last_sale_date": "2019-04-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1890",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Japantown Community & Cultural Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1960",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202411155133",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-11-15",
+      "status_date": "2025-05-15",
+      "estimated_cost": 90000,
+      "revised_cost": 90000,
+      "description": "one unit: remodel 1 bathroom in kind. one unit: remodel 1 bathroom in kind, remodel 1 kitchen in kind. two units: remodel laundry room in kind both units.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202102104360",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-02-10",
+      "status_date": "2021-02-10",
+      "estimated_cost": 8400,
+      "revised_cost": 8400,
+      "description": "furnish and install 8 hand made wooden sash double hung & fixed sash in -kind, in-like openings as original all with ogee lugs incorporated to sash in wood, not clad. new glass to be laminated for sound control, new sashes by a.g. river wood windows. street facing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202102104362",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-02-10",
+      "status_date": "2021-02-10",
+      "estimated_cost": 7250,
+      "revised_cost": 7250,
+      "description": "furnish 7 hand made wooden windows to (e) wood window openings in-kind dbl hung & fixed sash as original, ogee lugs part of sash no clad, street facing, laminaated bliss for sound control hand made windows by a.g. river wood windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201912058708",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2019-12-05",
+      "status_date": "2020-12-30",
+      "estimated_cost": 10000,
+      "revised_cost": 25000,
+      "description": "extend deck to rear yard. no change to front facade or egress systems.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201106077613",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-06-07",
+      "status_date": "2011-07-08",
+      "estimated_cost": 3000,
+      "revised_cost": 9000,
+      "description": "one kitchen remodel (change cabinets, countertop, plumbing & electrical) and counter top",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BUSH&street_type=ST&address_number=1871",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0674014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0674&lot=014",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0674014",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42791696735289%2037.78743819842427)%27)",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "digitalsf-3044",
+      "name": "1873 Bush Street, 1975. San Francisco Redevelopment Agency Records (SFH 371), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/3044",
+      "label": "Redevelopment Agency Records (SFH 371), San Francisco Public Library",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1975-08",
+      "kind": "photograph",
+      "description": "The Redevelopment Agency photographed the property.",
+      "source": "digitalsf-3044"
+    }
+  ]
+}

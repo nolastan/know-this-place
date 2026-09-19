@@ -1,0 +1,97 @@
+{
+  "address": "101 Lakeview Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/oceanview-merced-ingleside/lakeview-avenue/101/",
+  "apn": "7061001",
+  "block": "7061",
+  "lot": "001",
+  "eas_baseid": "414012",
+  "coordinates": {
+    "lat": 37.716557,
+    "lng": -122.451355
+  },
+  "parcel": {
+    "year_built": 1916,
+    "units": 2,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2815,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Oceanview",
+    "analysis_neighborhood": "Oceanview/Merced/Ingleside",
+    "property_location_raw": "0000 0101 LAKEVIEW            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 105642,
+    "assessed_improvement_value": 185951
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1916",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9906060",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1999-03-30",
+      "status_date": "2000-05-05",
+      "estimated_cost": 70000,
+      "description": "fire repair new roof sheathing partial drywall kitchen cabnt",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LAKEVIEW&street_type=AVE&address_number=101",
+      "retrieved": "2026-09-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7061001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7061&lot=001",
+      "retrieved": "2026-09-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7061001",
+      "retrieved": "2026-09-04"
+    },
+    {
+      "id": "digitalsf-2318",
+      "name": "101 Lakeview Avenue, between 1977 and 1979. Shades of San Francisco: OMI Neighborhoods (SFP 78), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/2318",
+      "label": "Shades of San Francisco: OMI Neighborhoods (SFP 78), San Francisco Public Library",
+      "retrieved": "2026-09-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "between 1977 and 1979",
+      "kind": "photograph",
+      "description": "Photographed, showing Rollins Beauty Supply.",
+      "source": "digitalsf-2318"
+    }
+  ]
+}

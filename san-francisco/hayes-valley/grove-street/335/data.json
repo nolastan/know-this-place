@@ -1,0 +1,171 @@
+{
+  "address": "335 Grove Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/grove-street/335/",
+  "apn": "0809019",
+  "block": "0809",
+  "lot": "019",
+  "eas_baseid": "288695",
+  "coordinates": {
+    "lat": 37.777688,
+    "lng": -122.422106
+  },
+  "parcel": {
+    "year_built": 1908,
+    "units": 10,
+    "stories": 3,
+    "rooms": 30,
+    "bathrooms": 10,
+    "lot_area_sqft": 3306,
+    "building_area_sqft": 6786,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "HAYES",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Hayes Valley",
+    "property_location_raw": "0000 0335 GROVE               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 37378,
+    "assessed_improvement_value": 124940
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Hayes Valley Residential Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1860–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202404119822",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-04-11",
+      "status_date": "2024-04-15",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa#201707111558. all work is complete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201707111558",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-07-11",
+      "status_date": "2017-07-13",
+      "estimated_cost": 160000,
+      "revised_cost": 225000,
+      "description": "install temporay shoring and underpinning along property to allow for new development at 311 grove 201502269406",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201002025764",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-02-02",
+      "status_date": "2010-04-08",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "to comply with his nov# 201032125, dated 01/26/2010. dry rot repair & stairs. less than 50%.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201002025776",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2010-02-02",
+      "status_date": "2026-01-09",
+      "estimated_cost": 500,
+      "revised_cost": 0,
+      "description": "dry rot repair in rear",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9003376",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-02-20",
+      "status_date": "1990-06-13",
+      "estimated_cost": 2000,
+      "description": "repair back stairs, redwood fence and redwood passage deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8700407",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1987-01-13",
+      "status_date": "1987-09-28",
+      "estimated_cost": 6000,
+      "description": "general maintnace repairs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "1987–2024",
+    "shown_on_page": 6,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GROVE&street_type=ST&address_number=335",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0809019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0809&lot=019",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0809019",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42210616784182%2037.77768776110013)%27)",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "market-octavia-survey-forms",
+      "name": "Page & Turnbull for the San Francisco Planning Department, Market & Octavia Augmentation Survey, DPR 523 survey forms, fieldwork 2006, evaluations by Kelley & VerPlanck 2010",
+      "query": "https://sfplanning.org/sites/default/files/documents/preserv/DPRforms/HV%20Conttributory%20New.pdf",
+      "listing": "https://sfplanning.org/historic-preservation-survey-forms-dpr523",
+      "label": "Market & Octavia Survey DPR 523 form, 2006–2010",
+      "retrieved": "2026-09-03"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Market & Octavia Survey (2006–2010)",
+      "source": "market-octavia-survey-forms",
+      "year_built_as_surveyed": "1908"
+    }
+  ]
+}

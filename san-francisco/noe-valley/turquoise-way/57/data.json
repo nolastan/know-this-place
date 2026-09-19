@@ -1,0 +1,160 @@
+{
+  "address": "57 Turquoise Way, San Francisco, CA 94131",
+  "path": "/san-francisco/noe-valley/turquoise-way/57/",
+  "apn": "7510021",
+  "block": "7510",
+  "lot": "021",
+  "eas_baseid": "420240",
+  "coordinates": {
+    "lat": 37.744391,
+    "lng": -122.445515
+  },
+  "parcel": {
+    "year_built": 1963,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 4534,
+    "building_area_sqft": 2200,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Diamond Heights",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 0057 TURQUOISE           WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 134040,
+    "assessed_improvement_value": 264049
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1963",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Diamond Heights Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1962–1965",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202601264493",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-01-26",
+      "status_date": "2026-02-10",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "tar and gravel roof removed and we will install duration cool shingle color (tbd) full redeck 15sq . no hot works",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202404119761",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-04-11",
+      "status_date": "2024-04-11",
+      "estimated_cost": 38000,
+      "revised_cost": 38000,
+      "description": "replace (13) windows and (2) sliding doors total. (8) front windows to mirgard aluminum slider over fix to match (e) rear to vinyl frame windows and doors same size and location u factor max rear 0.30 front 0.37",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200304253171",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-04-25",
+      "status_date": "2003-06-13",
+      "estimated_cost": 8900,
+      "revised_cost": 8900,
+      "description": "remodel 1 bathroom, remove tile, shower walls and floor, install new shower pan, new vanity cabinet",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9805185",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-03-26",
+      "status_date": "1998-09-26",
+      "estimated_cost": 16000,
+      "description": "remove/replace kitchen cabinets new counter tops,range,sink",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9119959",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-10-22",
+      "status_date": "1992-01-30",
+      "estimated_cost": 4500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TURQUOISE&street_type=WAY&address_number=57",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7510021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7510&lot=021",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7510021",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44551515920472%2037.74439125551723)%27)",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "modern-architecture-context-statement",
+      "name": "Mary Brown, San Francisco Planning Department, San Francisco Modern Architecture and Landscape Design 1935-1970 Historic Context Statement, adopted 12 January 2011",
+      "query": "http://sfplanninggis.org/docs/Historical_Context_Statements/Modern%20Architecture%20Context%20adopted%20Jan%202011.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Modern Architecture and Landscape Design Context Statement, adopted 2011",
+      "retrieved": "2026-09-01"
+    }
+  ],
+  "building": {
+    "architect": "Hayes & Smith",
+    "completed": 1963
+  },
+  "historical_record": [
+    {
+      "date": "1963",
+      "kind": "construction",
+      "description": "A Diamond Heights duplex of 1963 by Hayes & Smith.",
+      "source": "modern-architecture-context-statement"
+    }
+  ]
+}

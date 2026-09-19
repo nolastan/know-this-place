@@ -9,6 +9,9 @@
   /* type */
   --serif: ui-serif, Georgia, "Times New Roman", serif;
   --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  /* for a string the reader has to copy out character by character — a promo
+     code — where an l, a 1 and an I must not look alike */
+  --mono: ui-monospace, SFMono-Regular, Menlo, "Liberation Mono", monospace;
 
   /* surfaces & ink */
   --paper: #fbf9f4;
@@ -24,9 +27,6 @@
   --cool: #1568a6;        /* data slot 2 — land */
   --warm-soft: #efdcd3;   /* warm track / tint */
   --cool-soft: #d8e5f2;   /* cool tint */
-
-  /* cost tiers ($ / $$ / $$$) — one warm family, rising intensity */
-  --cost-lo: #bf8a5e;  --cost-mid: #b5601f;  --cost-hi: #8a3b2a;
 
   /* status */
   --ok: #2f7d32;    --ok-bg: #e4efe2;
@@ -54,7 +54,6 @@
     --cool: #3d8fc9;
     --warm-soft: #3a2a23;
     --cool-soft: #1e2c3a;
-    --cost-lo: #8f6f52;  --cost-mid: #c07a45;  --cost-hi: #e0946f;
     --ok: #5cba63;    --ok-bg: #1e2a1d;
     --warn: #d0a24a;  --warn-bg: #2a2416;
     /* a black shadow disappears on a dark ground — deepen it to keep the
@@ -102,6 +101,7 @@ body {
 .ic-check    { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E"); }
 .ic-eligible { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='12' cy='12' r='9' stroke-dasharray='3.53 3.53'/%3E%3C/svg%3E"); }
 .ic-none     { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M5.64 5.64 18.36 18.36'/%3E%3C/svg%3E"); }
+.ic-copy     { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='8' y='8' width='14' height='14' rx='2'/%3E%3Cpath d='M4 16a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2'/%3E%3C/svg%3E"); }
 .ic-ruler    { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2.5 12 12 2.5 21.5 12 12 21.5z'/%3E%3Cpath d='m7 7.5 2 2M10 5l1.5 1.5M14.5 9.5l2 2M12 12l1.5 1.5'/%3E%3C/svg%3E"); }
 
 /* ============================================================= chrome */
@@ -202,39 +202,84 @@ main > .panel + .panel { margin-top: 1.25rem; }
 /* bottom margin matters: the last item drops its padding, so without it the
    timeline collides with whatever block follows (panels, a section, prose) */
 .vtl { position: relative; margin: 1.25rem 0 2rem; padding-left: 1.75rem; list-style: none; }
-.vtl::before { content: ""; position: absolute; left: 5px; top: 8px; bottom: 8px; width: 2px; background: var(--rule); }
+/* The rail and the nodes are one geometry, so read the next two rules
+   together. A node is 16px across — a 12px disc inside a 2px ring — sitting
+   at the timeline's own left edge, so its centre is 8px in and the 2px rail
+   has to land on 7px to run through it. The ring counts towards that width
+   because `*` never matched pseudo-elements: these boxes are content-box
+   unless they say so themselves, which is how the rail came to be measured
+   against the 12px disc alone and drawn 2px left of every node (#133).
+   `box-sizing` and the 16px spell the real width out, so the next reader can
+   derive the 7px rather than round it back down.
+
+   The rail is drawn per item, as the connector from this node to the next,
+   rather than as one line down the whole list. A single line can only be
+   trimmed against the list's own box, and the foot of that box is the foot of
+   the last item's description, not its node — so it always ran on past the
+   final circle. Drawn as a connector, both ends are exact and want no
+   trimming: 20px is the node's own underside (4px down, 16px tall) and -4px
+   is 4px past this item's box, which is precisely where the next item hangs
+   its node. Neither number moves with the text size, and the last item simply
+   has no connector to dangle.
+
+   Flush at both ends is deliberate: a node needs no clearance to read as one
+   line meeting one circle, and the 4px `--paper` halo that used to ring the
+   border only held the rail off. */
 .vtl-item { position: relative; padding-bottom: 1.5rem; }
 .vtl-item:last-child { padding-bottom: 0; }
 .vtl-item::before {
   content: ""; position: absolute; left: -1.75rem; top: 4px;
-  width: 12px; height: 12px; border-radius: 50%;
+  box-sizing: border-box; width: 16px; height: 16px; border-radius: 50%;
   background: var(--paper); border: 2px solid var(--accent);
-  box-shadow: 0 0 0 4px var(--paper);
+}
+.vtl-item:not(:last-child)::after {
+  content: ""; position: absolute; left: calc(-1.75rem + 7px); top: 20px; bottom: -4px;
+  width: 2px; background: var(--rule);
 }
 .vtl-item.is-muted::before { border-color: var(--muted); }
 .vtl-date { font-family: var(--sans); font-size: 0.8rem; font-weight: 700; color: var(--accent); letter-spacing: 0.02em; }
 .vtl-item.is-muted .vtl-date { color: var(--muted); }
 .vtl-desc { margin: 0.15rem 0 0; }
 .vtl-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin-top: 0.4rem; font-family: var(--sans); font-size: 0.8rem; color: var(--muted); }
+/* A permit's own particulars — status, number, cost — ride on the dateline
+   instead of under the sentence, so an item is two lines rather than three.
+   Baseline, not centre: the date and the pill's word sit on one line of type. */
+.vtl-head { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 0.55rem; row-gap: 0.2rem; }
+.vtl-head .vtl-meta { margin-top: 0; }
+/* The meta lane is a demoted one — it says where the record is, not what
+   happened — so its links carry no accent; the accent is the dateline's. */
+.vtl-meta a { color: inherit; }
+.vtl-meta a:hover { color: var(--accent); }
 
 /* status pill */
 .pill { display: inline-flex; align-items: center; gap: 0.3rem; font-family: var(--sans); font-size: 0.72rem; font-weight: 700; padding: 0.18rem 0.5rem; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.04em; }
 .pill .ic { font-size: 0.85rem; }
+/* `pill-ok` renders nowhere at present: `complete` was its only status and the
+   rail stopped badging that one (issue #285). The status vocabulary still maps
+   to it, so it stays. */
 .pill-ok { color: var(--ok); background: var(--ok-bg); }
 .pill-warn { color: var(--warn); background: var(--warn-bg); }
 .pill-muted { color: var(--muted); background: var(--rule); }
+/* On the rail the pill is the exception, not a label: a badge only appears
+   where a permit is something other than complete, and one chip with a filled
+   ground shouted louder than the dateline it sits beside. Icon and word only —
+   the colour still separates issued from withdrawn. (The `.nearby` badges keep
+   their container: there every row carries one, so it reads as a lane.) */
+.vtl-meta .pill { background: none; padding: 0; }
 
 /* ============================================================= cost tier & charts */
-/* dollar-tier indicator: $ / $$ / $$$ at rising hue intensity. Reads as
-   magnitude at a glance without looking like a progress bar. */
-.cost { font-family: var(--sans); font-weight: 800; font-size: 0.95rem; letter-spacing: 0.5px; white-space: nowrap; }
+/* dollar-tier indicator: $ / $$ / $$$. Reads as magnitude at a glance without
+   looking like a progress bar.
+   The tier is the count of lit glyphs against three, which is a channel of its
+   own; it used to be a rising warm hue as well, and at tier 3 that hue *was*
+   the accent, so a rail of expensive permits read as a field of brick. The
+   meta lane's own ink for the lit glyphs, hairline for the rest — same ramp,
+   one channel, and the row reads in one tone. */
+.cost { font-family: var(--sans); font-weight: 800; font-size: 0.85rem; letter-spacing: 0.5px; white-space: nowrap; }
 .cost b { color: var(--rule); font-weight: 800; }
-.cost[data-tier="1"] { --c: var(--cost-lo); }
-.cost[data-tier="2"] { --c: var(--cost-mid); }
-.cost[data-tier="3"] { --c: var(--cost-hi); }
 .cost[data-tier="1"] b:nth-child(1),
 .cost[data-tier="2"] b:nth-child(-n+2),
-.cost[data-tier="3"] b:nth-child(-n+3) { color: var(--c); }
+.cost[data-tier="3"] b:nth-child(-n+3) { color: var(--muted); }
 .cost-amt { font-family: var(--sans); font-size: 0.8rem; color: var(--muted); font-variant-numeric: tabular-nums; }
 
 /* stacked part-to-whole bar (two categories) */
@@ -321,10 +366,130 @@ main > .panel + .panel { margin-top: 1.25rem; }
   color: var(--muted);
 }
 
+/* ============================================================= current occupant
+   The business trading from the building today, as an infobox heading the
+   aside. It borrows the district panel's grammar — muted eyebrow, the name as
+   the serif headline, what it is on a muted line beneath — and a speclist for
+   the hours. A shared kitchen lists several brands at one door, so a panel may
+   hold several .occupant groups, split by a hairline. An offer or a read date
+   only one of several groups has earned sits inside that group, so neither is
+   read as belonging to the business above it; one they all share, or a lone
+   business's own, closes the panel instead. */
+.panel-occupant > .occupant-kind {
+  margin: 0 0 0.3rem;
+  font-family: var(--sans);
+  font-size: 0.69rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.occupant + .occupant { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--rule); }
+.occupant > h3 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  line-height: 1.2;
+  font-weight: 650;
+  color: var(--ink);
+}
+.occupant-kinds { margin: 0.25rem 0 0; font-family: var(--sans); font-size: 0.88rem; color: var(--muted); }
+.occupant > .speclist { margin: 0.8rem 0 0; }
+.occupant .spec-k, .occupant .spec-v span { white-space: nowrap; }
+.occupant-updated { margin: 0.9rem 0 0; font-family: var(--sans); font-size: 0.78rem; color: var(--muted); }
+/* The one call to action on an address page, so it gets the accent: a
+   full-width outlined button, with the referral disclosure beneath it. An
+   offer claimed with a code is the exception, below — there the code is the
+   call to action and the link is only a link. */
+.occupant-offer { margin: 0.9rem 0 0; font-family: var(--sans); }
+.occupant-offer:not(.occupant-offer-code) a {
+  display: block;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  color: var(--accent);
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+.occupant-offer:not(.occupant-offer-code) a:hover,
+.occupant-offer:not(.occupant-offer-code) a:focus-visible { background: var(--note-bg); }
+.occupant-offer small { display: block; margin-top: 0.4rem; font-size: 0.75rem; color: var(--muted); }
+/* A referral claimed with a code rather than a link. The code is what earns
+   the offer — the link only opens the shop — so the block inverts: the code
+   takes the accent and the box the button would have had, states the offer
+   over itself, and the merchant's address drops to an ordinary link beneath.
+   The whole box is the copy target, but only once <ktp-copy> (site.js) has
+   made it one: with no script there is no icon, no pointer and no hover, just
+   a code to read, which `user-select: all` still gives up in one click. */
+.occupant-offer-code a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  text-underline-offset: 0.15em;
+}
+.offer-code {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  column-gap: 0.7rem;
+  margin-top: 0.9rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+}
+.offer-code-claim {
+  grid-column: 1;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--muted);
+}
+.offer-code code {
+  grid-column: 1;
+  overflow-wrap: anywhere;
+  font-family: var(--mono);
+  font-size: 1.02rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: var(--accent);
+  -webkit-user-select: all;
+  user-select: all;   /* one click selects the whole code with no JS at all */
+}
+/* Only the enhanced box is a control: the role is set by the script, so every
+   rule that promises a click hangs off it. */
+.offer-code[role="button"] { cursor: pointer; }
+.offer-code[role="button"]:hover, .offer-code[role="button"]:focus-visible { background: var(--note-bg); }
+.offer-code[role="button"] code { -webkit-user-select: text; user-select: text; }
+.offer-code > .ic {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  font-size: 1.2rem;
+  color: var(--accent);
+}
+.offer-code[data-copied] { border-color: var(--ok); }
+.offer-code[data-copied] > .ic { color: var(--ok); }
+
+/* For text that exists only to be announced — a live region reporting the
+   outcome of something the sighted reader can already see. Never for content. */
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 /* ============================================================= enhancement layer
    Custom elements (see shared/site.js) are progressive-enhancement wrappers.
    They must render as blocks even before/without their script. */
-ktp-streetview, ktp-figure, ktp-map { display: block; }
+ktp-streetview, ktp-figure, ktp-map, ktp-copy { display: block; }
 ktp-figure { position: relative; }
 
 /* chart tooltip */
@@ -368,11 +533,19 @@ ktp-figure { position: relative; }
 .community-note { background: var(--note-bg); border-left: 3px solid var(--accent); padding: 0.75rem 1rem; margin: 1.5rem 0; font-size: 0.97rem; max-width: var(--measure); }
 .community-note::before { content: "Community contribution"; display: block; font-family: var(--sans); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 0.3rem; }
 
-.unknowns { display: flex; gap: 0.9rem; align-items: flex-start; background: var(--note-bg); border-radius: var(--radius); padding: 1rem 1.2rem; margin: 1.5rem 0; max-width: var(--measure); }
-.unknowns .ic { color: var(--accent); font-size: 1.4rem; margin-top: 0.1rem; }
-.unknowns p { margin: 0; }
-
 /* ============================================================= hub lists */
 .place-list { list-style: none; padding: 0; }
 .place-list li { padding: 0.5rem 0; border-bottom: 1px solid var(--rule); }
 .place-list .hook { color: var(--muted); font-size: 0.95rem; }
+
+/* ============================================================= nearby */
+/* The lateral links out of an address page, built from shared/nearby.json.
+   Chrome rather than content: it sits between the building's own material and
+   the "not yet documented" note, so it reads quieter than a hub's list — two
+   columns of bare addresses, each with the relationship on a muted pill, and
+   none of the hook lines a hub carries. */
+.nearby { margin: 2rem 0; max-width: var(--wide); }
+.nearby .place-list { columns: 2; column-gap: 2.5rem; }
+.nearby .place-list li { display: flex; align-items: baseline; justify-content: space-between; gap: 0.75rem; break-inside: avoid; }
+.nearby .pill { flex: 0 0 auto; }
+@media (max-width: 720px) { .nearby .place-list { columns: 1; } }

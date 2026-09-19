@@ -1,0 +1,144 @@
+{
+  "address": "170–174 Turk Street, San Francisco, CA 94102",
+  "path": "/san-francisco/tenderloin/turk-street/170/",
+  "apn": "0339011",
+  "block": "0339",
+  "lot": "011",
+  "eas_baseid": "460595",
+  "coordinates": {
+    "lat": 37.783259,
+    "lng": -122.412032
+  },
+  "address_range": "170–174",
+  "street_numbers_on_parcel": [
+    "170",
+    "174"
+  ],
+  "parcel": {
+    "year_built": 1922,
+    "units": 18,
+    "stories": 5,
+    "rooms": 38,
+    "bathrooms": 18,
+    "lot_area_sqft": 2879,
+    "building_area_sqft": 13464,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "B",
+    "zoning": "RC-4",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Tenderloin",
+    "analysis_neighborhood": "Tenderloin",
+    "property_location_raw": "0000 0174 TURK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2172613,
+    "assessed_improvement_value": 1448409,
+    "last_sale_date": "2016-12-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1922",
+    "survey_name": "NIEDT APARTMENTS; UNITED APARTMENTS",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Uptown Tenderloin Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1957",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202403117507",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2024-03-11",
+      "status_date": "2024-03-11",
+      "estimated_cost": 8000,
+      "revised_cost": 0,
+      "description": "to comply with sffc 1103.7.1. ground level testing in sleeping areas.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201605036383",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-05-03",
+      "status_date": "2016-06-01",
+      "estimated_cost": 5800,
+      "revised_cost": 5800,
+      "description": "like for like voluntary fire system replacement w.new control panel, 11 smk det & 4 pull stations at the same location. (e) 4 bells will be tie-in to new panel. there is no elev recall and no record for previously installed system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8312697",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-12-13",
+      "status_date": "2016-06-21",
+      "estimated_cost": 15000,
+      "description": "to bring bldg. into full compliance with the provisions.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TURK&street_type=ST&address_number=170",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0339011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0339&lot=011",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0339011",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41203162628328%2037.783259159743054)%27)",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "nrhp-08001407",
+      "name": "National Register of Historic Places nomination, Uptown Tenderloin Historic District (reference number 08001407), National Park Service.",
+      "query": "https://npgallery.nps.gov/NRHP/GetAsset/NRHP/08001407_text",
+      "label": "National Register of Historic Places nomination, National Park Service",
+      "retrieved": "2026-09-11"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1922",
+      "kind": "construction",
+      "description": "Built as the Cameron Apartments, 18 unit apartment building with 2-rooms in each unit, to the design of the architect Willis Lowe. Five storeys over a basement, two-part vertical composition, Renaissance/Baroque ornamentation.",
+      "source": "nrhp-08001407"
+    }
+  ],
+  "building": {
+    "architect": "Willis Lowe",
+    "former_name": "Cameron Apartments"
+  }
+}

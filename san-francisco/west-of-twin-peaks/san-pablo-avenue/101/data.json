@@ -1,0 +1,179 @@
+{
+  "address": "101 San Pablo Avenue, San Francisco, CA 94127",
+  "path": "/san-francisco/west-of-twin-peaks/san-pablo-avenue/101/",
+  "apn": "3011020",
+  "block": "3011",
+  "lot": "020",
+  "eas_baseid": "351942",
+  "coordinates": {
+    "lat": 37.738624,
+    "lng": -122.462159
+  },
+  "parcel": {
+    "year_built": 1919,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 5183,
+    "building_area_sqft": 2423,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "St. Francis Wood",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0101 SAN PABLO           AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1001065,
+    "assessed_improvement_value": 576412,
+    "last_sale_date": "1991-04-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1919",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "St. Francis Wood Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1912–1954",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201708023719",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-08-02",
+      "status_date": "2017-12-19",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "new casework, window and (flat) skylight @ existing library. remodel (e) bathroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201706300797",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-06-30",
+      "status_date": "2017-12-19",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "exploratory demo to access (e) structure. max of 500sf of drywall removal. repatch to original configuration.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201107271154",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-07-27",
+      "status_date": "2012-01-20",
+      "estimated_cost": 90000,
+      "revised_cost": 90000,
+      "description": "interior remodel of (e) kitchen/den & addition of entry vestibule at rear. dem include portions exterior walls, concrete slab, elec & plbg components, interior finishes. new work includes concrete slab & foundtion, struct & non-structu walls, finishes, elec & plbg component.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9619030",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-10-04",
+      "status_date": "1997-01-10",
+      "estimated_cost": 7500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9403179",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1994-03-02",
+      "status_date": "1994-03-24",
+      "estimated_cost": 3000,
+      "description": "install vermont casting-fireplace to all factory specs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9209661",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-06-11",
+      "status_date": "1992-06-26",
+      "estimated_cost": 2350,
+      "description": "install a minumum of 22 5/8 anchor bolts 32\"o.c. imbeded",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8109422",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1981-10-30",
+      "status_date": "1983-03-04",
+      "estimated_cost": 34500,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20PABLO&street_type=AVE&address_number=101",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3011020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3011&lot=020",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3011020",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.46215930289875%2037.73862417773739)%27)",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume V–Z), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=2c8863b8cbd143e02858494de6865a67321b2a33effe8b9c9dac8ccf3193d4a3&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1919",
+      "kind": "construction",
+      "description": "One of a pair of French Eclectic houses designed by architect Grace Y. Weeks.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ],
+  "building": {
+    "architect": "Grace Y. Weeks"
+  }
+}

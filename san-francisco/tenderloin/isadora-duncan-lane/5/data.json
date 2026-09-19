@@ -1,0 +1,100 @@
+{
+  "address": "5 Isadora Duncan Lane, San Francisco, CA 94102",
+  "path": "/san-francisco/tenderloin/isadora-duncan-lane/5/",
+  "apn": "0305002",
+  "block": "0305",
+  "lot": "002",
+  "eas_baseid": "281419",
+  "coordinates": {
+    "lat": 37.787412,
+    "lng": -122.412122
+  },
+  "parcel": {
+    "lot_area_sqft": 2670,
+    "use": "Commercial Hotel",
+    "property_class": "Hotels - Other",
+    "construction_type_code": "NA",
+    "zoning": "RC-4",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Downtown",
+    "analysis_neighborhood": "Tenderloin",
+    "property_location_raw": "0000 0005 ISADORA DUNCAN      LN0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1477295,
+    "assessed_improvement_value": 878988,
+    "assessed_fixtures_value": 140,
+    "last_sale_date": "2001-10-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Uptown Tenderloin Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1957",
+    "source": "sf-historic-districts"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ISADORA%20DUNCAN&street_type=LN&address_number=5",
+      "retrieved": "2026-09-13"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0305002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0305&lot=002",
+      "retrieved": "2026-09-13"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0305002",
+      "retrieved": "2026-09-13"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41212249703923%2037.78741241492596)%27)",
+      "retrieved": "2026-09-13"
+    },
+    {
+      "id": "bounce",
+      "name": "Bounce, luggage storage",
+      "query": "https://bounce.com/stores/san-francisco/4iG1HG",
+      "supports": "Current occupant",
+      "retrieved": "2026-09-13"
+    }
+  ],
+  "occupants": [
+    {
+      "name": "Bounce",
+      "kinds": [
+        "Luggage storage"
+      ],
+      "opening_hours": [
+        "Mo,Tu,We,Th,Fr,Sa,Su 08:00-23:00"
+      ],
+      "listed_address": "5 Isadora Duncan Lane",
+      "source": "bounce"
+    }
+  ]
+}

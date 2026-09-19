@@ -1,0 +1,121 @@
+{
+  "address": "3239–3247 Balboa Street, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/balboa-street/3239/",
+  "apn": "1611001C",
+  "block": "1611",
+  "lot": "001C",
+  "eas_baseid": "505302",
+  "coordinates": {
+    "lat": 37.775631,
+    "lng": -122.493773
+  },
+  "address_range": "3239–3247",
+  "street_numbers_on_parcel": [
+    "3239",
+    "3243",
+    "3247"
+  ],
+  "parcel": {
+    "year_built": 1934,
+    "units": 5,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 5,
+    "lot_area_sqft": 4996,
+    "building_area_sqft": 4400,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "NC-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Outer Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "3247 3239 BALBOA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 97826,
+    "assessed_improvement_value": 104088,
+    "last_sale_date": "2024-03-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1934",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202307031435",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-07-03",
+      "status_date": "2023-12-20",
+      "estimated_cost": 1,
+      "revised_cost": 80000,
+      "description": "change of use from dog groomer to liquor store/wine shop. main entry door accessibility upgrades, all gender bathroom and sales and service counter installation.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9613895",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-07-31",
+      "status_date": "1998-02-02",
+      "estimated_cost": 11800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BALBOA&street_type=ST&address_number=3239",
+      "retrieved": "2026-08-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1611001C&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1611&lot=001C",
+      "retrieved": "2026-08-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1611001C",
+      "retrieved": "2026-08-27"
+    },
+    {
+      "id": "neighborhood-commercial-context-statement",
+      "name": "San Francisco Planning Department (Mary Brown and Susan Parks), Neighborhood Commercial Buildings, 1865-1965, Historic Context Statement, adopted November 2, 2022",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=6e02d03c979da663645a63b156e861fca44d7f96ecca9ad8192c0828493bf7fe&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Neighborhood Commercial Buildings Historic Context Statement, adopted 2022",
+      "retrieved": "2026-08-27"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1934",
+      "kind": "construction",
+      "description": "Built in 1934 in the Art Deco style, one of the isolated one-storey Art Deco storefronts of the outer Richmond. The city's preservation planners put the row it stands in forward for landmark designation as an exceptional example of the style.",
+      "source": "neighborhood-commercial-context-statement"
+    }
+  ],
+  "building": {},
+  "historic_survey": {
+    "survey": "Neighborhood Commercial Buildings Historic Context Statement (2022)",
+    "source": "neighborhood-commercial-context-statement",
+    "style": "Art Deco"
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "address": "2340–2344 Golden Gate Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/lone-mountain/golden-gate-avenue/2340/",
+  "apn": "1161009A",
+  "block": "1161",
+  "lot": "009A",
+  "eas_baseid": "463700",
+  "coordinates": {
+    "lat": 37.777495,
+    "lng": -122.449415
+  },
+  "address_range": "2340–2344",
+  "street_numbers_on_parcel": [
+    "2340",
+    "2342",
+    "2344"
+  ],
+  "parcel": {
+    "year_built": 1939,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 1498,
+    "building_area_sqft": 2100,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lone Mountain",
+    "analysis_neighborhood": "Lone Mountain/USF",
+    "property_location_raw": "2344 2342 GOLDEN GATE         AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 35966,
+    "assessed_improvement_value": 92576
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1939",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201509036100",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-09-03",
+      "status_date": "2015-09-03",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "dry rot repair in bathroom at #2344.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200910219451",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-10-21",
+      "status_date": "2009-11-02",
+      "estimated_cost": 8400,
+      "revised_cost": 8400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9317298",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-10-05",
+      "status_date": "1995-02-07",
+      "estimated_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9206113",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1992-04-16",
+      "status_date": "1993-02-18",
+      "estimated_cost": 4500,
+      "description": "const n/wall opening for new atm finish & install 1 more",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GOLDEN%20GATE&street_type=AVE&address_number=2340",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1161009A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1161&lot=009A",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1161009A",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "flats-small-apartments-context-statement",
+      "name": "San Francisco Planning Department (ICF; Jon Rusch, lead author), Flats and Small Apartment Buildings (1915-1978) Citywide Historic Context Statement, adopted January 18, 2023",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=c79390b0b4063814ff373c248a22ace4b2f0bbd5a1bc27818daf4a43b8661fb3&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Flats and Small Apartment Buildings Historic Context Statement, adopted 2023",
+      "retrieved": "2026-08-28"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1939",
+      "kind": "construction",
+      "description": "One of a pair of eclectic court apartment buildings placed on adjoining wide lots in the University Terrace tract, on the former grounds of the Masonic Cemetery.",
+      "source": "flats-small-apartments-context-statement"
+    }
+  ]
+}

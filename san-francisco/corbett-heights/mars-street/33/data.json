@@ -1,53 +1,54 @@
 {
   "address": "33–37 Mars Street, San Francisco, CA 94114",
+  "path": "/san-francisco/corbett-heights/mars-street/33/",
+  "hook": "Three units on one parcel, standing in 1921 and greatly altered since.",
+  "apn": "2653021",
+  "block": "2653",
+  "lot": "021",
+  "eas_baseid": "343395",
+  "coordinates": {
+    "lat": 37.761528,
+    "lng": -122.444392
+  },
   "address_range": {
     "low": 33,
     "high": 37,
     "canonical": 33,
     "note": "One parcel spanning 33, 35 and 37 Mars Street."
   },
-  "path": "/san-francisco/corbett-heights/mars-street/33/",
-  "hook": "Three units on one parcel, standing in 1921 and greatly altered since.",
-  "apn": "2653021",
-  "block": "2653",
-  "lot": "021",
-  "coordinates": {
-    "lat": 37.761528,
-    "lng": -122.444392
-  },
+  "street_numbers_on_parcel": [
+    "33",
+    "35",
+    "37"
+  ],
   "parcel": {
     "year_built": 1900,
-    "use": "Multi-Family Residential",
-    "property_class": "Flats & Duplex",
     "units": 3,
     "stories": 2,
     "rooms": 8,
     "bathrooms": 3,
     "lot_area_sqft": 2469,
     "building_area_sqft": 2000,
-    "construction_type": "Wood frame",
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
     "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0037 MARS                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
     "assessed_land_value": 768484,
     "assessed_improvement_value": 499508,
-    "current_sales_date": "2000-04-18"
+    "last_sale_date": "2000-04-18"
   },
   "historic_status": {
     "ceqa_status_code": "B",
     "ceqa_status_label": "Unknown Historic Resource status",
     "reason": "No evaluation and 45 years or older",
-    "designated_landmark": false,
-    "historic_district": null,
     "source": "sf-planning"
-  },
-  "building_history": {
-    "source": "corbett-heights-neighbors",
-    "events": [
-      {
-        "date": "1921",
-        "approximate": true,
-        "event": "Standing in a photograph of Mars Street taken before the street improvements; greatly altered since (OpenSFHistory wnp36.02476)."
-      }
-    ]
   },
   "permits": [
     {
@@ -64,7 +65,8 @@
       "status": "complete",
       "estimated_cost": 475,
       "description": "Handrail on outside stairs (NOV 201129683).",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Handrail installed on the outside stairs, to comply with notice of violation 201129683."
     },
     {
       "number": "200607197020",
@@ -72,7 +74,8 @@
       "status": "complete",
       "estimated_cost": 4000,
       "description": "Remove and replace windows in kind.",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Windows removed and replaced in kind, same size and location."
     },
     {
       "number": "200304162436",
@@ -80,7 +83,8 @@
       "status": "complete",
       "estimated_cost": 4000,
       "description": "Bathroom remodel; repair posts; new tile and bathtub.",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Bathroom remodelled — posts repaired, new tile and bath."
     },
     {
       "number": "200203292722",
@@ -88,7 +92,8 @@
       "status": "complete",
       "estimated_cost": 5000,
       "description": "Kitchen remodel; sliding door to back deck.",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Kitchen torn out and remodelled in place; sliding door to the back deck."
     },
     {
       "number": "200006193022",
@@ -96,7 +101,8 @@
       "status": "complete",
       "estimated_cost": 8000,
       "description": "Kitchen cabinets and windows; bathroom remodel; spiral stair.",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "New kitchen cabinets and two kitchen windows; bathroom remodelled; metal spiral stair installed."
     },
     {
       "number": "8701462",
@@ -128,7 +134,8 @@
       "status": "complete",
       "estimated_cost": 50000,
       "description": "No description recorded.",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Work recorded without a description."
     }
   ],
   "sources": [
@@ -137,7 +144,8 @@
       "name": "Corbett Heights Neighbors, \"January Neighborhood News\", Vol. VIII, No. 1 (1 January 2026)",
       "cites": "OpenSFHistory photograph wnp36.02476 (c. 1921)",
       "query": "https://corbettneighbors.optin.com/newsletter/awlist6655060/Mjg4NTkyNjM=/january-neighborhood-news.htm",
-      "retrieved": "2026-07-22"
+      "retrieved": "2026-07-22",
+      "supports": "Building history"
     },
     {
       "id": "sf-eas-addresses",
@@ -159,7 +167,7 @@
     },
     {
       "id": "sf-building-permits",
-      "name": "SF Dept. of Building Inspection via DataSF",
+      "name": "SF Dept. of Building Inspection via DataSF, permits for block 2653 lot 021",
       "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2653&lot=021",
       "retrieved": "2026-07-22"
     },
@@ -176,5 +184,16 @@
     "survey": "Corbett Heights Historic Context Statement (2017)",
     "source": "corbett-heights-context-statement",
     "note": "Shown on the 1900 and 1905 Sanborn maps as a dwelling built for more than one household, still standing but altered."
-  }
+  },
+  "unknowns": [
+    "The assessor's 1900 date is a round year and has not been checked against a permit."
+  ],
+  "historical_record": [
+    {
+      "date": "c. 1921",
+      "description": "Standing in a photograph of Mars Street taken before the street improvements; greatly altered since (OpenSFHistory wnp36.02476).",
+      "source": "corbett-heights-neighbors"
+    }
+  ],
+  "building": {}
 }

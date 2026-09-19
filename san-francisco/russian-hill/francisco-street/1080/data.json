@@ -1,0 +1,185 @@
+{
+  "address": "1080 Francisco Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/francisco-street/1080/",
+  "apn": "0476005B",
+  "block": "0476",
+  "lot": "005B",
+  "eas_baseid": "282962",
+  "coordinates": {
+    "lat": 37.803745,
+    "lng": -122.422995
+  },
+  "parcel": {
+    "year_built": 1955,
+    "units": 9,
+    "stories": 3,
+    "rooms": 31,
+    "bathrooms": 12,
+    "lot_area_sqft": 5153,
+    "building_area_sqft": 9591,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Russian Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "0000 1080 FRANCISCO           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 130513,
+    "assessed_improvement_value": 665816
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1955",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202401083557",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2024-01-08",
+      "status_date": "2024-09-18",
+      "estimated_cost": 119000,
+      "revised_cost": 119000,
+      "description": "voluntary seismic upgrade at the garage level.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202304065157",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-04-06",
+      "status_date": "2023-07-26",
+      "estimated_cost": 19800,
+      "revised_cost": 38562,
+      "description": "voluntary system replacement & new lf horns to meet sffc 2022 sec 1103.7.6.1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202010277493",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-10-27",
+      "status_date": "2022-04-08",
+      "estimated_cost": 20000,
+      "revised_cost": 70000,
+      "description": "one unit/level 1: renovate kitchen and bath in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201803224323",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-03-22",
+      "status_date": "2018-06-25",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "one unit: renovate one unit to include kitchen & bath room work on level 3; n/a maher",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201402208953",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-02-20",
+      "status_date": "2014-04-23",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "kitchen/bath renovation, define new bedroom. no structural work. one unit only. ref app#201312174362",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201312174362",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-12-17",
+      "status_date": "2014-04-23",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "one unit (2nd flr): renovate kitchen and bath, no struct work, level 2 one unit, lighting to comply with cec(150)(k)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201107079720",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-07-07",
+      "status_date": "2011-09-29",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201101118176",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-01-11",
+      "status_date": "2011-08-02",
+      "estimated_cost": 25000,
+      "revised_cost": 60000,
+      "description": "one unit-renovating/remodeling unit, add skylights (2), new bedroom, remodel 2 bathrooms and one kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9621369",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-11-04",
+      "status_date": "1997-11-04",
+      "estimated_cost": 12800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FRANCISCO&street_type=ST&address_number=1080",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0476005B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0476&lot=005B",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0476005B",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "flats-small-apartments-context-statement",
+      "name": "San Francisco Planning Department (ICF; Jon Rusch, lead author), Flats and Small Apartment Buildings (1915-1978) Citywide Historic Context Statement, adopted January 18, 2023",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=c79390b0b4063814ff373c248a22ace4b2f0bbd5a1bc27818daf4a43b8661fb3&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Flats and Small Apartment Buildings Historic Context Statement, adopted 2023",
+      "retrieved": "2026-08-28"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1955",
+      "kind": "construction",
+      "description": "A Midcentury Modern apartment building, the style that reached more San Francisco multiple-unit buildings than any other Modernist mode.",
+      "source": "flats-small-apartments-context-statement"
+    }
+  ]
+}

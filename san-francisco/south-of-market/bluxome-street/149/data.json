@@ -349,20 +349,57 @@
       "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
       "label": "Central SoMa Historic Resources Survey, 2016",
       "retrieved": "2026-08-12"
+    },
+    {
+      "id": "umb-survey-1990",
+      "name": "San Francisco Landmarks Preservation Advisory Board — A Context Statement and Architectural/Historical Survey of Unreinforced Masonry Building (U.M.B.) Construction in San Francisco from 1850 to 1940, San Francisco Department of City Planning, November 1990",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=de4ab5d53839bb7c49ab1a2e10876d4a39e7dbacc6eccc90508e51012b8f4456&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Unreinforced Masonry Building Survey, 1990",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "south-of-market-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, prepared for Page & Turnbull, Inc., South of Market Area Historic Context Statement, FINAL, 30 June 2009, adopted 2011",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/372-SOMA_Historic_Context_Statement_06-30-2009.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "South of Market Area Historic Context Statement, adopted 2011",
+      "retrieved": "2026-09-03"
     }
   ],
   "building": {
     "name": "Moody Estate co. Building",
-    "architect": "J.R. Torrener, N.Y. Arch. 1914"
+    "architect": "J. R. Torrance",
+    "builder": "Larsen and Brothers",
+    "completed": 1916,
+    "completed_conflict": "The 1990 unreinforced-masonry survey dates the building to 1916; the assessor's roll gives 1925."
   },
-  "historic_survey": {
-    "survey": "Central SoMa Historic Resources Survey (2016)",
-    "heritage_rating": "C — of contextual importance",
-    "umb_survey": true,
-    "prior_survey": "South of Market",
-    "year_built_as_surveyed": "1916",
-    "builder": "H.H. Larsen and Brothers, Contractors, 1916",
-    "note": "The survey dates the building 1916; the assessor's roll gives 1925.",
-    "source": "central-soma-survey"
-  }
+  "historic_survey": [
+    {
+      "survey": "Central SoMa Historic Resources Survey (2016)",
+      "heritage_rating": "C — of contextual importance",
+      "umb_survey": true,
+      "prior_survey": "South of Market",
+      "year_built_as_surveyed": "1916",
+      "builder": "H.H. Larsen and Brothers, Contractors, 1916",
+      "note": "The survey dates the building 1916; the assessor's roll gives 1925.",
+      "source": "central-soma-survey"
+    },
+    {
+      "survey": "Unreinforced Masonry Building Survey (1990)",
+      "frame": "Unreinforced masonry",
+      "heritage_rating": "C — of contextual importance",
+      "note": "From the survey's appendix table of unreinforced masonry buildings and their historic ratings, study area 2 (South of Market).",
+      "source": "umb-survey-1990"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1916",
+      "kind": "construction",
+      "description": "The F.S. Moody California Wool Depot, built on land belonging to the Moody Estate.",
+      "source": "south-of-market-context-statement",
+      "date_precision": "year"
+    }
+  ]
 }

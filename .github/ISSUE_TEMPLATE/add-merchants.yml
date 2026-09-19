@@ -1,0 +1,109 @@
+name: Add merchants
+description: Put a business on its building's page — one shop, a chain, or a whole directory
+title: "Add "
+labels: ["monetization"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A building's page can name the business trading from it today, in a
+        "Current occupant" panel, with its referral offer under it.
+
+        A ticket is workable when it carries **both halves**: a referral link
+        with a real code in it, and the San Francisco addresses — or a way to
+        list them. With one half missing the issue gets labelled `needs-human`
+        and stops there: only a person can sign up for a referral programme,
+        and a guessed code publishes a dead link.
+  - type: input
+    id: source
+    attributes:
+      label: What are we adding?
+      description: >-
+        The name of the shop, chain, or directory whose San Francisco doors
+        these are. One shop is as workable as a hundred.
+      placeholder: e.g. Vuori — or Bites, a merchant directory
+    validations:
+      required: true
+  - type: input
+    id: referral
+    attributes:
+      label: Referral link
+      description: >-
+        The whole URL, with the code already in it. A link ending in
+        `[REFERRAL CODE]`, `/r/CODE` or an affiliate sign-up page is not one —
+        those block the ticket.
+      placeholder: https://example.com/join?ref=A1B2C3
+    validations:
+      required: true
+  - type: input
+    id: offer
+    attributes:
+      label: What does the person clicking it get?
+      description: >-
+        In the programme's own words. This becomes the button's text, so keep
+        it to what a new customer receives.
+      placeholder: e.g. $5 off a first order — or a free month
+    validations:
+      required: true
+  - type: dropdown
+    id: shape
+    attributes:
+      label: Is it one offer, or one per business?
+      description: >-
+        One link covering everything you are adding — a single shop, a chain
+        like FITNESS SF, a directory like Bites — or a separate link per
+        business, the way Momence works. This decides how the offer is keyed.
+      options:
+        - One offer, covering everything added
+        - One offer per business — a link each, listed below
+        - Not sure
+    validations:
+      required: true
+  - type: dropdown
+    id: destination
+    attributes:
+      label: Where does the link land?
+      description: >-
+        A link that doesn't reach the business gets a line under the button
+        saying so, rather than implying it opens their menu.
+      options:
+        - On the business's own page or sign-up
+        - On an app or a generic sign-up, not the business
+    validations:
+      required: true
+  - type: textarea
+    id: listing
+    attributes:
+      label: Where are the San Francisco locations?
+      description: >-
+        Whichever you have: the addresses typed in, an API or GraphQL endpoint
+        (paste the URL or query), or a page carrying schema.org markup. Hours
+        and postal codes are worth having — the panel prints the hours, and
+        the postal code is what keeps South San Francisco off the city's pages.
+      placeholder: |
+        e.g. 2301 Market Street, San Francisco, CA 94114 — Mon–Thu 5am–12am
+
+        or, where there are many:
+
+        https://example.com/api/locations?city=san-francisco
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else? (optional)
+      description: >-
+        Locations that are closed or not open yet, a chain whose listings
+        include other cities, a login the endpoint needs, anything that reads
+        oddly in the data.
+  - type: markdown
+    attributes:
+      value: |
+        **What happens next.** A run reads the listing twice before trusting a
+        field, keeps the San Francisco locations, resolves each address to its
+        parcel, and opens one pull request — a person reviews it before
+        anything goes live. The recipe is `merchants/AGENTS.md`.
+
+        Note that these pages describe buildings, not the people in them: a
+        business can be named as the current occupant of a building, but its
+        owners, staff and customers never are.

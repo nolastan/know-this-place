@@ -1,10 +1,9 @@
 # Mars Street
 
-A short, steep street running from 17th Street down to Corbett Avenue, cut
-through the Park Lane Tract when its lots were divided in 1885. It is unusually
-well photographed: views survive from about 1895, from the April 1906
-earthquake refugee camp on the slope below, from 1912, and from either side of
-the street rebuilding of the 1920s.
+A short, steep street running from 17th Street down to Corbett Avenue, cut through the Park Lane Tract when its lots were divided in 1885. It is unusually well photographed: views survive from about 1895, from the April 1906 earthquake refugee camp on the slope below, from 1912, and from either side of the street rebuilding of the 1920s.
+
+Pages are generated from the DataSF datasets listed in each page's
+Sources footer, and are corrected by hand as readers write in.
 
 ## The street itself
 
@@ -20,19 +19,6 @@ the street rebuilding of the 1920s.
 - The corner at 17th Street, planted with five sweetgums in the early 2000s, is
   known locally as Sweetgum Corner
 - Stair at the Corbett end: Shiloh's Way
-
-## Buildings documented so far
-
-- [4 Mars Street](4/) — A one-storey house of 1907, recorded as standing intact as built in a photograph of about 1921.
-- [11–23 Mars Street](11/) — Moved here from Falcon Street, a street the Market Street extension erased; its lot is still empty in 1921.
-- [32 Mars Street](32/) — Built in 1925 on a lot photographs show open four years earlier.
-- [33–37 Mars Street](33/) — Three units on one parcel, standing in 1921 and greatly altered since.
-- [41–43 Mars Street](41/) — A two-unit building the assessor dates to 1890, in a photograph of about 1921.
-- [46–48 Mars Street](46/) — A house with a rear cottage, in photographs of 1895 and 1906.
-- [52 Mars Street](52/) — Photographed in 1895, 1906 and 1912, and greatly altered after the street was rebuilt.
-- [56 Mars Street](56/) — In photographs of 1895, 1906 and 1912; assessed by Planning and found not to be a historical resource.
-- [64 Mars Street](64/) — Built between the April 1906 photograph, where it is absent, and the 1912 one, where it appears.
-- [75 Mars Street](75/) — Rebuilt and enlarged from 2010, beside the public stair called Shiloh's Way.
 
 ## Sources
 

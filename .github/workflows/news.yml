@@ -96,11 +96,13 @@ jobs:
           prompt: |
             You are the news agent for knowthis.place. Read news/AGENTS.md
             first — it is the rulebook — then the root AGENTS.md (privacy) and
-            shared/AGENTS.md (the HTML contract).
+            shared/AGENTS.md (the page contract). The working detail for each
+            stage is in news/PIPELINE.md: read the section for the stage you
+            are on, not the file.
 
             You are on branch ${{ steps.branch.outputs.branch }}, already
             checked out. ${{ steps.branch.outputs.pr && format('It belongs to OPEN PR #{0}, left by an earlier run — its cursors, queue files and items files are the ones you are continuing, and pushing to this branch updates that PR rather than opening a second one.', steps.branch.outputs.pr) || 'No news PR was open, so this branch is new off main and you will open the PR at the end.' }}
-            ${{ steps.branch.outputs.merge_conflict && 'NOTE: merging main into this branch conflicted and was aborted. Resolve it yourself before committing — `git merge origin/main`, fix the conflicts, and say so in the PR. Generated files (sitemap.xml, shared/addresses.geojson, hub index.html/index.md) are rebuilt, never hand-merged: take main side and re-run the build scripts.' || '' }}
+            ${{ steps.branch.outputs.merge_conflict && 'NOTE: merging main into this branch conflicted and was aborted. Resolve it yourself before committing — `git merge origin/main`, fix the conflicts, and say so in the PR. The site is not committed, so almost nothing generated can conflict; the two that still can (corpus.jsonl and a hub index.md) are rebuilt, never hand-merged — take main side and re-run `python3 scripts/build_site.py`.' || '' }}
 
             The poll has already run and written today's queue to
             news/queue/<date>.json, advancing the cursors. Your job is the
@@ -143,15 +145,14 @@ jobs:
             5. Resolve it:
                `python3 research/tools/resolve_eas.py apply news/items/<feed>/<date>.json`
             6. For any finding that resolved to a parcel with NO page, seed the
-               page — per news/AGENTS.md → "No page yet? Seed it". Write the
+               page — per news/PIPELINE.md → "No page yet? Seed it". Write the
                parcels into research/manifests/news-<today's date>.json, taking
                the numbers and the lead street number from each finding's
                `resolution.method` (the resolver unions the addresses reached
                through retired APNs, so the story's own number is not always
                the page's), then:
                  python3 scripts/seed_pages.py seed-list --manifest research/manifests/news-<date>.json
-                 python3 scripts/build_sitemap.py
-                 python3 scripts/build_map_index.py
+                 python3 scripts/build_site.py
                The seeder creates only pages that don't exist and never touches
                one that does. If it refuses a parcel — a condominium unit, no
                row on the current roll — leave that finding pending with the
@@ -159,14 +160,18 @@ jobs:
             7. Add the timeline entry to each page's data.json —
                `historical_record` with date, kind, headline, outlet, url and
                source — then `python3 scripts/seed_pages.py render <path>` to
-               regenerate index.html from it, per news/AGENTS.md → "Putting it
-               on the page". Never edit index.html. The entry is the
-               headline in italics and the outlet as the link, and NOTHING
-               ELSE: no sentence of your own summarizing the story, and never
-               an edited headline. Record in each finding's `publish.note`
-               whether the page was seeded in this run, and from which
-               manifest.
-            8. `python3 news/tools/check.py` and `python3 scripts/validate.py`
+               regenerate index.html from it, per news/AGENTS.md → "What an
+               entry is". The entry is the headline in italics and the
+               outlet as the link, and NOTHING ELSE: no sentence of your own
+               summarizing the story, and never an edited headline.
+               Never edit index.html. It is gitignored and Actions builds it
+               on deploy, so a re-render leaves nothing in `git status` — that
+               is correct, not a failure. Render anyway: it is how you see
+               what the page will say, and validate.py checks it on disk.
+               Record in each finding's `publish.note` whether the page was
+               seeded in this run, and from which manifest.
+            8. `python3 scripts/build_site.py`, then
+               `python3 news/tools/check.py` and `python3 scripts/validate.py`
                must both pass. Read `git diff` and confirm every change is a
                real fact about a building, and read a sample of any pages you
                seeded before committing them.

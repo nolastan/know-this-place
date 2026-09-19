@@ -358,21 +358,47 @@
       "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
       "label": "Transit Center District Survey, adopted 2012",
       "retrieved": "2026-08-24"
+    },
+    {
+      "id": "umb-survey-1990",
+      "name": "San Francisco Landmarks Preservation Advisory Board — A Context Statement and Architectural/Historical Survey of Unreinforced Masonry Building (U.M.B.) Construction in San Francisco from 1850 to 1940, San Francisco Department of City Planning, November 1990",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=de4ab5d53839bb7c49ab1a2e10876d4a39e7dbacc6eccc90508e51012b8f4456&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Unreinforced Masonry Building Survey, 1990",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "african-american-context-statement",
+      "name": "Christopher VerPlanck, Tim Kelley, Al Williams and San Francisco Planning Department staff, African American Citywide Historic Context Statement, San Francisco Planning Department, adopted February 21, 2024",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=0ab7d14a0fb2469d622481a42e9e19831f1e2cd9ec6724bc8d926606555b3dc4&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "African American Citywide Historic Context Statement, adopted 2024",
+      "retrieved": "2026-08-29"
     }
   ],
   "building": {
     "name": "Veronica Building",
     "architect": "Salfield & Kohlberg"
   },
-  "historic_survey": {
-    "survey": "Central SoMa Historic Resources Survey (2016)",
-    "current_article11_rating": "I",
-    "heritage_rating": "C — of contextual importance",
-    "umb_survey": true,
-    "dcp_1976_survey": true,
-    "prior_survey": "Transit Center",
-    "source": "central-soma-survey"
-  },
+  "historic_survey": [
+    {
+      "survey": "Central SoMa Historic Resources Survey (2016)",
+      "current_article11_rating": "I",
+      "heritage_rating": "C — of contextual importance",
+      "umb_survey": true,
+      "dcp_1976_survey": true,
+      "prior_survey": "Transit Center",
+      "source": "central-soma-survey"
+    },
+    {
+      "survey": "Unreinforced Masonry Building Survey (1990)",
+      "frame": "Unreinforced masonry",
+      "heritage_rating": "C — of contextual importance",
+      "dcp_1976_survey": "Rated 1 of 5",
+      "note": "From the survey's appendix table of unreinforced masonry buildings and their historic ratings, study area 1 (Downtown).",
+      "source": "umb-survey-1990"
+    }
+  ],
   "historical_record": [
     {
       "date": "2008",
@@ -385,6 +411,12 @@
       "kind": "construction",
       "description": "Built as the Veronica Building.",
       "source": "transit-center-district-survey"
+    },
+    {
+      "date": "1870",
+      "kind": "site history",
+      "description": "The Aurora, an early African American-owned nightclub, stood on this site. The building is gone.",
+      "source": "african-american-context-statement"
     }
   ]
 }

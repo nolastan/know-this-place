@@ -1,0 +1,138 @@
+{
+  "address": "1508–1516 Ocean Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/ingleside-terraces/ocean-avenue/1508/",
+  "apn": "3196005",
+  "block": "3196",
+  "lot": "005",
+  "eas_baseid": "356269",
+  "coordinates": {
+    "lat": 37.724594,
+    "lng": -122.458571
+  },
+  "address_range": "1508–1516",
+  "street_numbers_on_parcel": [
+    "1508",
+    "1516"
+  ],
+  "parcel": {
+    "year_built": 1923,
+    "units": 2,
+    "stories": 1,
+    "rooms": 3,
+    "lot_area_sqft": 2330,
+    "building_area_sqft": 2074,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "NC-2",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Westwood Park",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "1516 1508 OCEAN               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 249177,
+    "assessed_improvement_value": 119596,
+    "last_sale_date": "1996-06-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Ocean Avenue Neighborhood Commercial District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1900–1955",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202401113850",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-01-11",
+      "status_date": "2024-07-02",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "front stucco work/ replace wood dryrot and paint. patch and repair to comply with his complaint #202317452",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9415337",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1994-09-23",
+      "status_date": "1995-12-29",
+      "estimated_cost": 2000,
+      "description": "termite repairs to ws wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9412557",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1994-08-05",
+      "status_date": "1995-04-18",
+      "estimated_cost": 2000,
+      "description": "repair termite damage cover holes with gup board",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=OCEAN&street_type=AVE&address_number=1508",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3196005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3196&lot=005",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3196005",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.45857117241448%2037.72459419728584)%27)",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "african-american-context-statement",
+      "name": "Christopher VerPlanck, Tim Kelley, Al Williams and San Francisco Planning Department staff, African American Citywide Historic Context Statement, San Francisco Planning Department, adopted February 21, 2024",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=0ab7d14a0fb2469d622481a42e9e19831f1e2cd9ec6724bc8d926606555b3dc4&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "African American Citywide Historic Context Statement, adopted 2024",
+      "retrieved": "2026-08-29"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1975",
+      "kind": "occupancy",
+      "description": "Leonard's Hickory Pit, which had run for twenty-four years in the Fillmore, reopened here in the mid-1970s after redevelopment displaced it.",
+      "source": "african-american-context-statement"
+    }
+  ]
+}

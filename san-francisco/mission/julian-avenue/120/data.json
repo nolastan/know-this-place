@@ -1,0 +1,84 @@
+{
+  "address": "120 Julian Avenue, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/julian-avenue/120/",
+  "apn": "3554031",
+  "block": "3554",
+  "lot": "031",
+  "eas_baseid": "359311",
+  "coordinates": {
+    "lat": 37.766164,
+    "lng": -122.421293
+  },
+  "parcel": {
+    "year_built": 1908,
+    "stories": 3,
+    "rooms": 4,
+    "bathrooms": 2,
+    "lot_area_sqft": 5497,
+    "building_area_sqft": 1000,
+    "use": "Commercial Misc",
+    "property_class": "Churches,Convents,Rectories",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0120 JULIAN              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 62345,
+    "assessed_improvement_value": 6897
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JULIAN&street_type=AVE&address_number=120",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3554031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3554&lot=031",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3554031",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "early-settlement-era-styles-context-statement",
+      "name": "San Francisco Planning Department (Branden Gunn and Alex Westhoff), Early Settlement Era Styles (1848-1906) Historic Context Statement, Context: Architectural Methods & Styles, SF Survey Cultural Resources Survey, March 19, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=76d410415bb783f87a77ec44eeeafee1a658bc4e68e2cab5fe5abf1273e1ad25&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Early Settlement Era Styles Historic Context Statement, adopted 2025",
+      "retrieved": "2026-08-31"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Early Settlement Era Styles Historic Context Statement (2025)",
+    "source": "early-settlement-era-styles-context-statement",
+    "style": "Gothic Revival",
+    "year_built_as_surveyed": "1908",
+    "note": "St. John the Evangelist Episcopal Church, named among the notable extant Gothic Revival churches in San Francisco."
+  }
+}

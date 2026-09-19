@@ -1,0 +1,138 @@
+{
+  "address": "20 Taraval Street, San Francisco, CA 94116",
+  "path": "/san-francisco/west-of-twin-peaks/taraval-street/20/",
+  "apn": "2925001B",
+  "block": "2925",
+  "lot": "001B",
+  "eas_baseid": "349158",
+  "coordinates": {
+    "lat": 37.743945,
+    "lng": -122.464301
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 5000,
+    "building_area_sqft": 1976,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Forest Hill",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0020 TARAVAL             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1450035,
+    "assessed_improvement_value": 621443,
+    "last_sale_date": "2021-08-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Forest Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1912–1939",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202111172594",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-11-17",
+      "status_date": "2021-11-19",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201612296216",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-12-29",
+      "status_date": "2017-03-10",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "new bathroom for wheelchair access to be built at gr fl",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9319906",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-11-10",
+      "status_date": "1995-02-02",
+      "estimated_cost": 8400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TARAVAL&street_type=ST&address_number=20",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2925001B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2925&lot=001B",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2925001B",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.46430120702694%2037.7439449973261)%27)",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "african-american-context-statement",
+      "name": "Christopher VerPlanck, Tim Kelley, Al Williams and San Francisco Planning Department staff, African American Citywide Historic Context Statement, San Francisco Planning Department, adopted February 21, 2024",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=0ab7d14a0fb2469d622481a42e9e19831f1e2cd9ec6724bc8d926606555b3dc4&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "African American Citywide Historic Context Statement, adopted 2024",
+      "retrieved": "2026-08-29"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1960",
+      "kind": "site history",
+      "description": "Recorded as a residence of the civil rights attorney and supervisor Terry Francois.",
+      "source": "african-american-context-statement"
+    }
+  ],
+  "unknowns": [
+    "The city's African American context statement lists two Francois residences in two different chapters, 1608 Tenth Avenue and 20 Taraval Street, without dating either."
+  ]
+}

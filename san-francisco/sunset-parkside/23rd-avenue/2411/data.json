@@ -1,0 +1,174 @@
+{
+  "address": "2411 23rd Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/23rd-avenue/2411/",
+  "apn": "2402033",
+  "block": "2402",
+  "lot": "033",
+  "eas_baseid": "337627",
+  "coordinates": {
+    "lat": 37.742535,
+    "lng": -122.480207
+  },
+  "parcel": {
+    "year_built": 1958,
+    "units": 8,
+    "stories": 2,
+    "rooms": 24,
+    "bathrooms": 8,
+    "lot_area_sqft": 3750,
+    "building_area_sqft": 6240,
+    "lot_depth_ft": 75,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "NC-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2411 23RD                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 660344,
+    "assessed_improvement_value": 440214,
+    "last_sale_date": "1987-07-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1958",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201711224722",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-11-22",
+      "status_date": "2018-01-19",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "upgrade (e) fire alarm system install low frequency sounder in sleeping areas (sffc section 1103.7.6.1) ref 201707202494",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201707202494",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-07-20",
+      "status_date": "2017-12-18",
+      "estimated_cost": 65000,
+      "revised_cost": 65000,
+      "description": "soft story retrofitper sfbc chapter 4d, rational design method",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201511303744",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2015-11-30",
+      "status_date": "2017-07-20",
+      "estimated_cost": 20000,
+      "revised_cost": 0,
+      "description": "soft story retrofit per sfbc chapter 34b, 2012 iebc appendix a-4.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200912233731",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-12-23",
+      "status_date": "2009-12-29",
+      "estimated_cost": 8600,
+      "revised_cost": 8600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200912113098",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-12-11",
+      "status_date": "2009-12-14",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "8 62x66 vinyl window, white , safety glass fire escape. 8 100 1/2 vinyl windows, white regualr glass. replace in kind. total of 8 unit in 2 windows. to comply with nov 200921205",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200909116609",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-09-11",
+      "status_date": "2009-09-15",
+      "estimated_cost": 272,
+      "revised_cost": 272,
+      "description": "replaced a window 47 3/4\"x 47 1/2\" in kitchen at one unit, not visible from street, u factor 0.67 max",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9722143",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-11-03",
+      "status_date": "1998-11-12",
+      "estimated_cost": 4500,
+      "description": "install vinyl siding on existing wood siding wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8302960",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1983-04-12",
+      "status_date": "1983-09-01",
+      "estimated_cost": 200,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=AVE&address_number=2411",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2402033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2402&lot=033",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2402033",
+      "retrieved": "2026-08-28"
+    },
+    {
+      "id": "flats-small-apartments-context-statement",
+      "name": "San Francisco Planning Department (ICF; Jon Rusch, lead author), Flats and Small Apartment Buildings (1915-1978) Citywide Historic Context Statement, adopted January 18, 2023",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=c79390b0b4063814ff373c248a22ace4b2f0bbd5a1bc27818daf4a43b8661fb3&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Flats and Small Apartment Buildings Historic Context Statement, adopted 2023",
+      "retrieved": "2026-08-28"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1958",
+      "kind": "construction",
+      "description": "A postwar eight-unit “stucco box” apartment building — wider than its prewar models on a consolidated lot, with more garage doors below and more bays above, but still symmetrical.",
+      "source": "flats-small-apartments-context-statement"
+    }
+  ]
+}

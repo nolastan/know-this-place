@@ -1,0 +1,153 @@
+{
+  "address": "430 Hickory Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/hickory-street/430/",
+  "apn": "0830036",
+  "block": "0830",
+  "lot": "036",
+  "eas_baseid": "289120",
+  "coordinates": {
+    "lat": 37.775087,
+    "lng": -122.426509
+  },
+  "parcel": {
+    "year_built": 1922,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2175,
+    "building_area_sqft": 1280,
+    "basement_area_sqft": 560,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Hayes Valley",
+    "property_location_raw": "0000 0430 HICKORY             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1266117,
+    "assessed_improvement_value": 542620,
+    "last_sale_date": "2020-12-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Hayes Valley Residential Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1860–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201204128158",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-04-12",
+      "status_date": "2012-05-04",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "repair stair landing (dry rot) less than 50%",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200004036113",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-04-03",
+      "status_date": "2001-04-10",
+      "revised_cost": 3680,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9305872",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-04-09",
+      "status_date": "1993-09-21",
+      "estimated_cost": 3150,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8306621",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1983-07-13",
+      "status_date": "1983-11-01",
+      "estimated_cost": 8000,
+      "description": "insulated new floors in 2 new bathrooms",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1983–2015",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HICKORY&street_type=ST&address_number=430",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0830036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0830&lot=036",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0830036",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42650911138377%2037.775087352224425)%27)",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "market-octavia-survey-forms",
+      "name": "Page & Turnbull for the San Francisco Planning Department, Market & Octavia Augmentation Survey, DPR 523 survey forms, fieldwork 2006, evaluations by Kelley & VerPlanck 2010",
+      "query": "https://sfplanning.org/sites/default/files/documents/preserv/DPRforms/HV%20Conttributory%20New.pdf",
+      "listing": "https://sfplanning.org/historic-preservation-survey-forms-dpr523",
+      "label": "Market & Octavia Survey DPR 523 form, 2006–2010",
+      "retrieved": "2026-09-03"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Market & Octavia Survey (2006–2010)",
+      "source": "market-octavia-survey-forms",
+      "proposed_status_code": "2D2",
+      "status_code_meaning": "A contributor to a district determined eligible for the National Register through the Section 106 process.",
+      "year_built_as_surveyed": "1922"
+    }
+  ]
+}

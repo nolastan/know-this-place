@@ -1,0 +1,130 @@
+{
+ "address": "917 Cayuga Avenue, San Francisco, CA 94112",
+ "path": "/san-francisco/outer-mission/cayuga-avenue/917/",
+ "apn": "6954037",
+ "block": "6954",
+ "lot": "037",
+ "eas_baseid": "478417",
+ "coordinates": {
+  "lat": 37.723186,
+  "lng": -122.438903
+ },
+ "parcel": {
+  "year_built": 1880,
+  "stories": 2,
+  "rooms": 5,
+  "bathrooms": 1,
+  "bedrooms": 2,
+  "lot_area_sqft": 2634,
+  "building_area_sqft": 956,
+  "lot_depth_ft": 67,
+  "use": "Single Family Residential",
+  "property_class": "Dwelling",
+  "construction_type_code": "D",
+  "supervisor_district": 11,
+  "assessor_neighborhood": "Mission Terrace",
+  "analysis_neighborhood": "Outer Mission",
+  "property_location_raw": "0000 0917 CAYUGA              AV0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 803828,
+  "assessed_improvement_value": 479748,
+  "last_sale_date": "2019-10-11"
+ },
+ "historic_status": {
+  "ceqa_status_code": "B",
+  "ceqa_status_code_article_10_11": "B",
+  "ceqa_status_label": "Unevaluated",
+  "reason": "No evaluation and 45 years or older",
+  "yearbuilt": "1880",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "permits": [
+  {
+   "number": "202103096157",
+   "type": "new construction wood frame",
+   "status": "issued",
+   "filed": "2021-03-09",
+   "status_date": "2021-11-04",
+   "estimated_cost": 60000,
+   "revised_cost": 60000,
+   "description": "erect (1) car detached private parking garage.",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "202002265517",
+   "type": "additions alterations or repairs",
+   "status": "cancelled",
+   "filed": "2020-02-26",
+   "status_date": "2024-07-02",
+   "estimated_cost": 1,
+   "description": "roof mounted solar installation 14 modules w/ 14 microinverters 4.62 kw dc size. 3.927 kw ac.**maher n/a**",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "201006013594",
+   "type": "otc alterations permit",
+   "status": "issued",
+   "filed": "2010-06-01",
+   "status_date": "2010-06-03",
+   "estimated_cost": 5000,
+   "revised_cost": 5000,
+   "description": "revision to pa# 2010.04.02.9571. dry rot repair in kind for property line walls and framing (maintain 2x4 at 16\" at center). all work to be performed within boundary of (e) building thru out, repair work less than 20%.",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "201004029571",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "2010-04-02",
+   "status_date": "2010-08-03",
+   "estimated_cost": 18000,
+   "revised_cost": 24000,
+   "description": "general repair siding @ side. kitchen, 2-baths remodeling @ 2nd. flr. siding not visible from street.",
+   "source": "sf-building-permits"
+  }
+ ],
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAYUGA&street_type=AVE&address_number=917",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6954037&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6954&lot=037",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6954037",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "umb-survey-1990",
+   "name": "San Francisco Landmarks Preservation Advisory Board — A Context Statement and Architectural/Historical Survey of Unreinforced Masonry Building (U.M.B.) Construction in San Francisco from 1850 to 1940, San Francisco Department of City Planning, November 1990",
+   "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=de4ab5d53839bb7c49ab1a2e10876d4a39e7dbacc6eccc90508e51012b8f4456&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "label": "Unreinforced Masonry Building Survey, 1990",
+   "retrieved": "2026-08-29"
+  }
+ ],
+ "historic_survey": {
+  "survey": "Unreinforced Masonry Building Survey (1990)",
+  "frame": "Unreinforced masonry",
+  "apn_as_surveyed": "Block 6954, Lot 33",
+  "note": "From the survey's appendix table of unreinforced masonry buildings and their historic ratings, study area 11 (Outlying).",
+  "source": "umb-survey-1990"
+ }
+}

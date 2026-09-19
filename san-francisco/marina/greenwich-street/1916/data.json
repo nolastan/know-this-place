@@ -1,0 +1,134 @@
+{
+  "address": "1916 Greenwich Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/greenwich-street/1916/",
+  "apn": "0507011",
+  "block": "0507",
+  "lot": "011",
+  "eas_baseid": "488940",
+  "coordinates": {
+    "lat": 37.799748,
+    "lng": -122.431862
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 3436,
+    "building_area_sqft": 2937,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Cow Hollow",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "1916A1916 GREENWICH           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 207907,
+    "assessed_improvement_value": 238558
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201501216227",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-01-21",
+      "status_date": "2015-01-21",
+      "estimated_cost": 31000,
+      "revised_cost": 31000,
+      "description": "one unit greenwich street and 1916a greenwich st : 2nd floor will remodel kitchen and bathroom area, in bathrom add a fan all new electrical in bathroom and kitchen. co2 detectors and smoke detectors will be installed in both units. electrical subpanel will be removed and replace for both units.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201107089803",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-07-08",
+      "status_date": "2011-07-08",
+      "estimated_cost": 10800,
+      "revised_cost": 10800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200911131162",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-11-13",
+      "status_date": "2009-12-07",
+      "estimated_cost": 5000,
+      "revised_cost": 7500,
+      "description": "removal of hazardous wood exterior stairs at rear, installation of new exterior wood stairs at rear.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9113165",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-07-26",
+      "status_date": "1991-09-27",
+      "estimated_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GREENWICH&street_type=ST&address_number=1916",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0507011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0507&lot=011",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0507011",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume P–R), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=37da3dd1abd97d61cd23d20a163f6d99f76a7aaf67f04eddf11f919d978aa651&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1892",
+      "kind": "construction",
+      "description": "Built by architect Charles Marion Rousseau in Cow Hollow.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ],
+  "building": {
+    "architect": "Charles Marion Rousseau",
+    "completed_conflict": "The assessor's roll gives 1906; this address is recorded as built 1892."
+  }
+}

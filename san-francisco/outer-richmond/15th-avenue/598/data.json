@@ -1,0 +1,113 @@
+{
+  "address": "598 15th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/outer-richmond/15th-avenue/598/",
+  "apn": "1557020",
+  "block": "1557",
+  "lot": "020",
+  "eas_baseid": "308127",
+  "coordinates": {
+    "lat": 37.77704,
+    "lng": -122.473537
+  },
+  "parcel": {
+    "year_built": 1916,
+    "units": 1,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 6,
+    "lot_area_sqft": 3358,
+    "building_area_sqft": 3740,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0598 15TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 922180,
+    "assessed_improvement_value": 614786
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1916",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202011179031",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-11-17",
+      "status_date": "2020-11-17",
+      "estimated_cost": 17000,
+      "revised_cost": 17000,
+      "description": "removal of old stucco aprox 3'by 40'",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9615435",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-08-21",
+      "status_date": "1998-12-07",
+      "estimated_cost": 8300,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=15TH&street_type=AVE&address_number=598",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1557020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1557&lot=020",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1557020",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "russian-american-context-statement",
+      "name": "Nina Bogdan, Russian American Historic Context Statement, San Francisco Planning Department, adopted by the Historic Preservation Commission October 15, 2025",
+      "query": "https://sfplanning.org/node/3132",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "retrieved": "2026-08-30"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1916",
+      "kind": "construction",
+      "description": "Built in 1916 as a single-family house at the Balboa Street corner.",
+      "source": "russian-american-context-statement"
+    },
+    {
+      "date": "1951",
+      "kind": "alteration",
+      "description": "Adapted in 1951 as St. Tichon of Zadonsk, an orphanage for 26 displaced Russian children who had come from Shanghai by way of the Philippines; it was the residence of the ruling archbishop from 1963 to 1966 and is now the diocesan chancellery, holding the Western American Diocese archives.",
+      "source": "russian-american-context-statement"
+    }
+  ]
+}

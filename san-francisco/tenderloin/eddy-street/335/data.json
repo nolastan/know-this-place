@@ -1,0 +1,143 @@
+{
+  "address": "335–339 Eddy Street, San Francisco, CA 94102",
+  "path": "/san-francisco/tenderloin/eddy-street/335/",
+  "apn": "0338022",
+  "block": "0338",
+  "lot": "022",
+  "eas_baseid": "281899",
+  "coordinates": {
+    "lat": 37.78366,
+    "lng": -122.413187
+  },
+  "address_range": "335–339",
+  "street_numbers_on_parcel": [
+    "335",
+    "337",
+    "339"
+  ],
+  "parcel": {
+    "year_built": 1916,
+    "units": 8,
+    "stories": 3,
+    "rooms": 16,
+    "bathrooms": 10,
+    "lot_area_sqft": 1937.5,
+    "building_area_sqft": 5050,
+    "lot_depth_ft": 77.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "B",
+    "zoning": "RC-4",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Tenderloin",
+    "analysis_neighborhood": "Tenderloin",
+    "property_location_raw": "0339 0335 EDDY                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 152266,
+    "assessed_improvement_value": 243660
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1916",
+    "survey_name": "ESTELLE APARTMENTS; MANILA TOWNHOUSE APA",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Uptown Tenderloin Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1957",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200606164337",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2006-06-16",
+      "status_date": "2007-01-23",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "cantileverd steel soldier piles with wood lagging along south propertyb line due to excavation of adjacent building (under separate permit.)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8510993",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-10-04",
+      "status_date": "1985-10-25",
+      "estimated_cost": 2000,
+      "description": "comply with rap reports, continuation of 8311044",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8311044",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-11-21",
+      "status_date": "1985-09-19",
+      "estimated_cost": 83000,
+      "description": "comply with rap report #338-22-10",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EDDY&street_type=ST&address_number=335",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0338022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0338&lot=022",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0338022",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41318684632039%2037.783660239236504)%27)",
+      "retrieved": "2026-09-11"
+    },
+    {
+      "id": "nrhp-08001407",
+      "name": "National Register of Historic Places nomination, Uptown Tenderloin Historic District (reference number 08001407), National Park Service.",
+      "query": "https://npgallery.nps.gov/NRHP/GetAsset/NRHP/08001407_text",
+      "label": "National Register of Historic Places nomination, National Park Service",
+      "retrieved": "2026-09-11"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1916",
+      "kind": "construction",
+      "description": "Built as the Estelle Apartments, 8 apartments over stores. Two storeys, reinforced concrete structure with stucco facade, two-part commercial composition, Renaissance/Baroque ornamentation.",
+      "source": "nrhp-08001407"
+    }
+  ],
+  "building": {
+    "former_name": "Estelle Apartments"
+  }
+}

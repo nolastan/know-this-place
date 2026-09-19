@@ -1,0 +1,167 @@
+{
+  "address": "405 Baker Street, San Francisco, CA 94117",
+  "path": "/san-francisco/lone-mountain/baker-street/405/",
+  "apn": "1199007",
+  "block": "1199",
+  "lot": "007",
+  "eas_baseid": "297005",
+  "coordinates": {
+    "lat": 37.774804,
+    "lng": -122.441547
+  },
+  "parcel": {
+    "year_built": 1904,
+    "units": 1,
+    "stories": 3,
+    "rooms": 15,
+    "bathrooms": 2,
+    "lot_area_sqft": 3351.43,
+    "building_area_sqft": 4970,
+    "lot_depth_ft": 21.87,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "North Panhandle",
+    "analysis_neighborhood": "Lone Mountain/USF",
+    "property_location_raw": "0000 0405 BAKER               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1838921,
+    "assessed_improvement_value": 788103,
+    "last_sale_date": "2007-07-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "NOPA Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1870s–1910s",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200201086449",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-01-08",
+      "status_date": "2002-04-30",
+      "estimated_cost": 850,
+      "revised_cost": 850,
+      "description": "install a fire suppression system in the kitchen using 2 1/2 gallon wet chemical by range guard comp",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200109148333",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-09-14",
+      "status_date": "2002-03-14",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "new fire alarm system for 4 stories r2.2 occup.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200106252284",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2001-06-25",
+      "status_date": "2002-04-30",
+      "estimated_cost": 20500,
+      "revised_cost": 20500,
+      "description": "installation of fire sprinkler & standpipe system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M15988",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2001-04-17",
+      "status_date": "2001-04-17",
+      "revised_cost": 800000,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200009291969",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2000-09-29",
+      "status_date": "2002-04-18",
+      "estimated_cost": 800000,
+      "revised_cost": 800000,
+      "description": "conversion of type 5n to type v-1 hr w/additional gwb, upgrade (e) assembly",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "2000–2002",
+    "shown_on_page": 5,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BAKER&street_type=ST&address_number=405",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1199007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1199&lot=007",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1199007",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44154708094972%2037.7748042245288)%27)",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume D–F), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=5e61d57895f7a63a45f9a33bd3ee216f5a86bb2a19ca6b0ce2cc9f62584760da&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-08-31"
+    }
+  ],
+  "building": {
+    "architect": "James F. Dunn"
+  },
+  "historical_record": [
+    {
+      "date": "1904",
+      "kind": "construction",
+      "description": "Designed by James F. Dunn, a self-taught San Francisco architect best known for French Beaux Arts work with curved balconies, delicate ironwork and heavy figural ornament.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ]
+}

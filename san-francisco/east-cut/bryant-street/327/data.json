@@ -1,0 +1,122 @@
+{
+ "address": "327 Bryant Street, San Francisco, CA 94107",
+ "path": "/san-francisco/east-cut/bryant-street/327/",
+ "apn": "3774005",
+ "block": "3774",
+ "lot": "005",
+ "eas_baseid": "366229",
+ "coordinates": {
+  "lat": 37.784216,
+  "lng": -122.391681
+ },
+ "parcel": {
+  "year_built": 1916,
+  "stories": 3,
+  "rooms": 19,
+  "bathrooms": 4,
+  "lot_area_sqft": 8000,
+  "use": "Commercial Office",
+  "property_class": "Office",
+  "construction_type_code": "C",
+  "zoning": "M1",
+  "supervisor_district": 6,
+  "assessor_neighborhood": "South Beach",
+  "analysis_neighborhood": "Financial District/South Beach",
+  "property_location_raw": "0000 0327 BRYANT              ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 1791290,
+  "assessed_improvement_value": 1465600
+ },
+ "historic_status": {
+  "ceqa_status_code": "A",
+  "ceqa_status_code_article_10_11": "A*",
+  "ceqa_status_label": "Historic resource",
+  "reason": "Article 10 Historic District, National Register Historic District, California Register Historic District",
+  "yearbuilt": "1916",
+  "survey_name": "AMERICAN MARINE PAINT ANNEX",
+  "in_article_10_11_historic_district": true,
+  "source": "sf-planning"
+ },
+ "historic_district": {
+  "name": "South End Historic District",
+  "california_register_status": "Listed",
+  "national_register_status": "Listed",
+  "article_10_11_status": "Article 10 historic district",
+  "local_landmark_protection": true,
+  "period_of_significance": "1867–1935",
+  "source": "sf-historic-districts"
+ },
+ "permits": [
+  {
+   "number": "200405063199",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "2004-05-06",
+   "status_date": "2006-02-08",
+   "estimated_cost": 4000,
+   "revised_cost": 4000,
+   "description": "renew #200101300988 to finish the job",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "200101300988",
+   "type": "additions alterations or repairs",
+   "status": "complete",
+   "filed": "2001-01-30",
+   "status_date": "2006-02-08",
+   "estimated_cost": 15000,
+   "revised_cost": 19000,
+   "description": "retrofit of unreinforced building",
+   "source": "sf-building-permits"
+  }
+ ],
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=327",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3774005&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3774&lot=005",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3774005",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-historic-districts",
+   "name": "SF Planning Department — Historic Districts via DataSF",
+   "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.39168128114403%2037.784216363130184)%27)",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "umb-survey-1990",
+   "name": "San Francisco Landmarks Preservation Advisory Board — A Context Statement and Architectural/Historical Survey of Unreinforced Masonry Building (U.M.B.) Construction in San Francisco from 1850 to 1940, San Francisco Department of City Planning, November 1990",
+   "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=de4ab5d53839bb7c49ab1a2e10876d4a39e7dbacc6eccc90508e51012b8f4456&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "label": "Unreinforced Masonry Building Survey, 1990",
+   "retrieved": "2026-08-29"
+  }
+ ],
+ "historic_survey": {
+  "survey": "Unreinforced Masonry Building Survey (1990)",
+  "frame": "Unreinforced masonry",
+  "existing_district": "South End Historic District — non-contributory",
+  "note": "From the survey's appendix table of unreinforced masonry buildings and their historic ratings, study area 2 (South of Market).",
+  "source": "umb-survey-1990"
+ }
+}

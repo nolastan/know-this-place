@@ -1,0 +1,155 @@
+{
+  "address": "403 Clayton Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/clayton-street/403/",
+  "apn": "1225002",
+  "block": "1225",
+  "lot": "002",
+  "eas_baseid": "297720",
+  "coordinates": {
+    "lat": 37.771441,
+    "lng": -122.44913
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 1406.25,
+    "building_area_sqft": 2880,
+    "lot_depth_ft": 56.25,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Haight Ashbury",
+    "analysis_neighborhood": "Haight Ashbury",
+    "property_location_raw": "0000 0403 CLAYTON             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 254937,
+    "assessed_improvement_value": 270247
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Panhandle Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1870–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201903084730",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-03-08",
+      "status_date": "2019-03-08",
+      "estimated_cost": 9338,
+      "revised_cost": 9338,
+      "description": "replace (4) windows into existing frames - fibrex. same size, same location. u-factor 0.32. not visible from street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201405296941",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-05-29",
+      "status_date": "2014-08-25",
+      "estimated_cost": 6197,
+      "revised_cost": 6197,
+      "description": "replace three existing wood windows visible from the street with wood-clad, in-kind configuration and operation, bedrooms to comply with egress. u-factor <.40.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209250582",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-09-25",
+      "status_date": "2012-09-25",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9315752",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-09-13",
+      "status_date": "1993-10-21",
+      "estimated_cost": 8310,
+      "description": "repair framing.new conc stemwalls. repair stair/handrails.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9003128",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1990-02-16",
+      "status_date": "1990-08-21",
+      "estimated_cost": 50000,
+      "description": "convert (e) attic to bedroom w/new closet, bath/sitting area",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLAYTON&street_type=ST&address_number=403",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1225002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1225&lot=002",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1225002",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44912970347893%2037.771441227151314)%27)",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "digitalsf-33447",
+      "name": "403 Clayton Street, 1964. San Francisco Subjects Photograph Collection (SFP 162), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/33447",
+      "label": "San Francisco Subjects Photograph Collection (SFP 162), San Francisco Public Library",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1964-05",
+      "kind": "photograph",
+      "description": "Photographed.",
+      "source": "digitalsf-33447"
+    }
+  ]
+}

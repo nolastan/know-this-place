@@ -5,22 +5,30 @@
   "apn": "2654004",
   "block": "2654",
   "lot": "004",
+  "eas_baseid": "343412",
   "coordinates": {
     "lat": 37.761437,
     "lng": -122.444867
   },
   "parcel": {
     "year_built": 1925,
-    "use": "Single Family Residential",
-    "property_class": "Dwelling",
     "units": 1,
     "stories": 1,
     "rooms": 4,
     "bathrooms": 1,
     "lot_area_sqft": 2735,
     "building_area_sqft": 835,
-    "construction_type": "Wood frame",
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
     "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0032 MARS                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
     "assessed_land_value": 139375,
     "assessed_improvement_value": 159290
   },
@@ -28,18 +36,7 @@
     "ceqa_status_code": "B",
     "ceqa_status_label": "Unknown Historic Resource status",
     "reason": "No evaluation and 45 years or older",
-    "designated_landmark": false,
-    "historic_district": null,
     "source": "sf-planning"
-  },
-  "building_history": {
-    "source": "corbett-heights-neighbors",
-    "events": [
-      {
-        "date": "1921",
-        "event": "Lot still open in a photograph looking south along Mars from 17th Street (OpenSFHistory wnp36.02481)."
-      }
-    ]
   },
   "permits": [
     {
@@ -48,7 +45,8 @@
       "status": "complete",
       "estimated_cost": 7520,
       "description": "Install 10 replacement windows, 6 wood and visible from street.",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Ten replacement windows, six of them wood and visible from the street."
     },
     {
       "number": "9415890",
@@ -65,7 +63,8 @@
       "name": "Corbett Heights Neighbors, \"January Neighborhood News\", Vol. VIII, No. 1 (1 January 2026)",
       "cites": "OpenSFHistory photograph wnp36.02481 (1921)",
       "query": "https://corbettneighbors.optin.com/newsletter/awlist6655060/Mjg4NTkyNjM=/january-neighborhood-news.htm",
-      "retrieved": "2026-07-22"
+      "retrieved": "2026-07-22",
+      "supports": "Building history"
     },
     {
       "id": "sf-eas-addresses",
@@ -87,7 +86,7 @@
     },
     {
       "id": "sf-building-permits",
-      "name": "SF Dept. of Building Inspection via DataSF",
+      "name": "SF Dept. of Building Inspection via DataSF, permits for block 2654 lot 004",
       "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2654&lot=004",
       "retrieved": "2026-07-22"
     },
@@ -104,5 +103,16 @@
     "style": "Period Revival (Craftsman)",
     "survey": "Corbett Heights Historic Context Statement (2017)",
     "source": "corbett-heights-context-statement"
-  }
+  },
+  "unknowns": [
+    "No sale is recorded on the current assessor roll."
+  ],
+  "historical_record": [
+    {
+      "date": "1921",
+      "description": "Lot still open in a photograph looking south along Mars from 17th Street (OpenSFHistory wnp36.02481).",
+      "source": "corbett-heights-neighbors"
+    }
+  ],
+  "building": {}
 }

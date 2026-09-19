@@ -1,53 +1,53 @@
 {
   "address": "41–43 Mars Street, San Francisco, CA 94114",
+  "path": "/san-francisco/corbett-heights/mars-street/41/",
+  "hook": "A two-unit building the assessor dates to 1890, in a photograph of about 1921.",
+  "apn": "2653033",
+  "block": "2653",
+  "lot": "033",
+  "eas_baseid": "343405",
+  "coordinates": {
+    "lat": 37.761425,
+    "lng": -122.444374
+  },
   "address_range": {
     "low": 41,
     "high": 43,
     "canonical": 41,
     "note": "One parcel spanning 41 and 43 Mars Street."
   },
-  "path": "/san-francisco/corbett-heights/mars-street/41/",
-  "hook": "A two-unit building the assessor dates to 1890, in a photograph of about 1921.",
-  "apn": "2653033",
-  "block": "2653",
-  "lot": "033",
-  "coordinates": {
-    "lat": 37.761425,
-    "lng": -122.444374
-  },
+  "street_numbers_on_parcel": [
+    "41",
+    "43"
+  ],
   "parcel": {
     "year_built": 1890,
-    "use": "Multi-Family Residential",
-    "property_class": "Flats & Duplex",
     "units": 2,
     "stories": 1,
     "rooms": 6,
     "bathrooms": 2,
     "lot_area_sqft": 1912,
     "building_area_sqft": 1320,
-    "construction_type": "Wood frame",
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
     "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0043 0041 MARS                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
     "assessed_land_value": 1085000,
     "assessed_improvement_value": 465000,
-    "current_sales_date": "2018-04-26"
+    "last_sale_date": "2018-04-26"
   },
   "historic_status": {
     "ceqa_status_code": "B",
     "ceqa_status_label": "Unknown Historic Resource status",
     "reason": "No evaluation and 45 years or older",
-    "designated_landmark": false,
-    "historic_district": null,
     "source": "sf-planning"
-  },
-  "building_history": {
-    "source": "corbett-heights-neighbors",
-    "events": [
-      {
-        "date": "1921",
-        "approximate": true,
-        "event": "Standing in a photograph of Mars Street; some alteration since (OpenSFHistory wnp36.02476)."
-      }
-    ]
   },
   "permits": [
     {
@@ -56,14 +56,16 @@
       "status": "complete",
       "estimated_cost": 33000,
       "description": "Bathroom remodel.",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Bathroom remodelled — tile, vanity, shower valve and controls relocated."
     },
     {
       "number": "202211307439",
       "filed": "2022-11-30",
       "status": "cancelled",
       "description": "Replace five street-visible windows in kind.",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Five street-visible windows to be replaced in kind with wood."
     },
     {
       "number": "201601076563",
@@ -71,7 +73,8 @@
       "status": "complete",
       "estimated_cost": 5000,
       "description": "Repair rotted deck ledger and siding at rear.",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Rotted deck ledger and siding repaired at the rear of the house."
     },
     {
       "number": "200002151945",
@@ -87,7 +90,8 @@
       "status": "complete",
       "estimated_cost": 20000,
       "description": "New bedroom at 1st and 2nd floors and rear deck.",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "New bedroom added at first and second floors, with a rear deck."
     }
   ],
   "sources": [
@@ -96,7 +100,8 @@
       "name": "Corbett Heights Neighbors, \"January Neighborhood News\", Vol. VIII, No. 1 (1 January 2026)",
       "cites": "OpenSFHistory photograph wnp36.02476 (c. 1921)",
       "query": "https://corbettneighbors.optin.com/newsletter/awlist6655060/Mjg4NTkyNjM=/january-neighborhood-news.htm",
-      "retrieved": "2026-07-22"
+      "retrieved": "2026-07-22",
+      "supports": "Building history"
     },
     {
       "id": "sf-eas-addresses",
@@ -118,9 +123,17 @@
     },
     {
       "id": "sf-building-permits",
-      "name": "SF Dept. of Building Inspection via DataSF",
+      "name": "SF Dept. of Building Inspection via DataSF, permits for block 2653 lot 033",
       "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2653&lot=033",
       "retrieved": "2026-07-22"
     }
-  ]
+  ],
+  "historical_record": [
+    {
+      "date": "c. 1921",
+      "description": "Standing in a photograph of Mars Street; some alteration since (OpenSFHistory wnp36.02476).",
+      "source": "corbett-heights-neighbors"
+    }
+  ],
+  "building": {}
 }

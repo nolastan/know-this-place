@@ -15,8 +15,11 @@ counted and printed on every run.
 Run from anywhere: python3 scripts/validate.py
                    python3 scripts/validate.py --prune-render-backlog
 """
+import collections
 import html
+import itertools
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -24,9 +27,9 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 # The renderer *is* the contract for an address page's index.html, so the
 # checker has to be able to run it. Both scripts are stdlib-only siblings and
-# seed_pages does no network on import. `scripts/__pycache__/` is tracked in
-# git for now, so importing it would otherwise leave a modified file behind on
-# every run.
+# seed_pages does no network on import. Importing it would otherwise write
+# `scripts/__pycache__/` into the working tree; the bytecode is gitignored, but
+# a check that reads the repo should not leave files in it either way.
 sys.dont_write_bytecode = True
 import seed_pages  # noqa: E402
 from seed_pages import ADDRESS_DIR  # noqa: E402  — an address dir: 123, 123a
@@ -35,9 +38,6 @@ ROOT = Path(__file__).resolve().parent.parent
 CONFIG = json.loads((ROOT / "shared" / "site-config.json").read_text())
 SITE = CONFIG["site_url"].rstrip("/")
 REPO = CONFIG["repo_url"].rstrip("/")
-
-# See the file's own header for what it is and why it can only shrink.
-BACKLOG_PATH = ROOT / "scripts" / "render-backlog.txt"
 
 # Site icons, on every page for the same reason the stylesheet is: they are
 # shared chrome, not page content. `shared/icon.svg` is the source of truth for
@@ -59,19 +59,22 @@ opted_out: list[str] = []
 backlogged: list[str] = []
 backlog_stale: list[str] = []
 
+# Filled in as the address pages are read, and checked once at the end:
+# district name -> the pages that say they stand inside it. Gathering it here
+# rather than re-walking the tree costs nothing — every data.json is already
+# parsed for the parity check.
+district_pages: dict = collections.defaultdict(set)
+
 
 def err(path: Path, msg: str) -> None:
     errors.append(f"{path.relative_to(ROOT)}: {msg}")
 
 
-def load_backlog() -> set:
-    if not BACKLOG_PATH.exists():
-        return set()
-    return {ln.strip() for ln in BACKLOG_PATH.read_text(encoding="utf-8").splitlines()
-            if ln.strip() and not ln.lstrip().startswith("#")}
-
-
-BACKLOG = load_backlog()
+# See the file's own header for what it is and why it can only shrink. Read
+# through seed_pages so the checker that excuses these pages from parity and
+# the renderer that refuses to overwrite them agree on the list by construction.
+BACKLOG_PATH = seed_pages.RENDER_BACKLOG_PATH
+BACKLOG = seed_pages.load_render_backlog()
 
 
 def check_html(html_path: Path, html: str, is_address: bool) -> None:
@@ -126,6 +129,50 @@ def check_html(html_path: Path, html: str, is_address: bool) -> None:
             err(html_path, "address page missing prefilled feedback link")
         if "google.com/maps/embed" in html and "streetview?key=&" in html:
             err(html_path, "street view iframe has an empty API key")
+
+
+# Cache for check_internal_links: a resolved target path -> does it exist.
+# The sweep resolves ~185,000 hrefs across the site and they collapse onto far
+# fewer targets (every street hub links the same neighborhood, every address
+# page the same stylesheet), so the stat calls are the part worth not repeating.
+_link_targets: dict = {}
+
+
+def check_internal_links(html_path: Path, html_text: str) -> None:
+    """Every internal href on a page must resolve to a file on disk.
+
+    The one failure mode of generated cross-linking: a hub lists a building
+    whose page was never created, or a page moves and the index that points at
+    it isn't rebuilt. Both render as a live link to a 404, which nothing else
+    here would notice. Same contract as the sitemap and addresses.geojson
+    checks above — these lists are derived, so a failure means re-running the
+    script that builds the index (`seed_pages.py hubs` for a hub's list), not
+    hand-editing the HTML.
+
+    Both href forms on the site are resolved: absolute ("/san-francisco/…/",
+    what a breadcrumb and a cross-reference use) and relative ("2262/", what a
+    hub's list of children uses). A directory href must hold an index.html; an
+    href naming a file must be that file.
+    """
+    for raw in re.findall(r'href="([^"]*)"', html_text):
+        href = html.unescape(raw).split("#")[0].split("?")[0]
+        # Off-site (http:, mailto:, //cdn…) and pure fragments aren't ours.
+        if not href or href.startswith("//") or ":" in href.split("/")[0]:
+            continue
+        base = ROOT if href.startswith("/") else html_path.parent
+        target = Path(os.path.normpath(base / href.lstrip("/")))
+        if not target.suffix:
+            target = target / "index.html"
+        rel = os.path.relpath(target, ROOT)
+        if rel.startswith(".."):
+            # Enough "../" to climb past the repo root. Whatever it finds on
+            # this disk, the deployed site has nothing above ROOT to serve.
+            err(html_path, f"internal link '{raw}' resolves outside the site root")
+            continue
+        if target not in _link_targets:
+            _link_targets[target] = target.exists()
+        if not _link_targets[target]:
+            err(html_path, f"dangling internal link '{raw}' — nothing at {rel}")
 
 
 def check_render_parity(page_dir: Path, data: dict, on_disk: str) -> None:
@@ -205,6 +252,35 @@ def check_address_dir(page_dir: Path, on_disk: str) -> None:
         err(data_path, f"invalid JSON: {e}")
         return
 
+    unknown = sorted(set(data) - seed_pages.ADDRESS_TOP_LEVEL_KEYS)
+    if unknown:
+        err(data_path, f"unrecognised top-level key(s): {', '.join(unknown)} — "
+                       "either it's a synonym of a key already in "
+                       "seed_pages.ADDRESS_TOP_LEVEL_KEYS (migrate to that "
+                       "spelling) or a new key the renderer needs to learn "
+                       "(add it there once it renders something)")
+
+    # `parcel` and `building` get the same closed vocabulary, because the check
+    # above stopping at the top level is how thirty pages came to hold twelve
+    # sub-keys nothing read. A sub-key drifts more quietly than a top-level
+    # one: the block around it renders, so the page looks finished while the
+    # fact in it is invisible.
+    for block, allowed in (("parcel", seed_pages.PARCEL_KEYS),
+                           ("building", seed_pages.BUILDING_KEYS)):
+        val = data.get(block)
+        if not isinstance(val, dict):
+            continue
+        unknown = sorted(set(val) - allowed)
+        if unknown:
+            err(data_path,
+                f'unrecognised "{block}" key(s): {", ".join(unknown)} — '
+                f"either it's a synonym of a key already in "
+                f"seed_pages.{block.upper()}_KEYS (migrate to that spelling), "
+                f"a fact that belongs under another block (the roll's assessed "
+                f"values and sale date are `assessment`'s; a dated fact is "
+                f"`historical_record`'s), or a new key the renderer needs to "
+                f"learn (add it there once it renders something)")
+
     if not data.get("address"):
         err(data_path, 'missing "address"')
     sources = data.get("sources")
@@ -215,6 +291,9 @@ def check_address_dir(page_dir: Path, on_disk: str) -> None:
             for key in ("id", "retrieved"):
                 if not isinstance(s, dict) or not s.get(key):
                     err(data_path, f'sources[{i}] missing "{key}"')
+
+    for name in seed_pages.districts_named(data):
+        district_pages[name].add("/" + page_dir.relative_to(ROOT).as_posix() + "/")
 
     check_narrative(data_path, data)
     check_render_parity(page_dir, data, on_disk)
@@ -283,22 +362,61 @@ def street_hub_hook_overrides(dir_path: Path) -> dict:
     return out
 
 
+def check_hub_covers_children(dir_path: Path) -> None:
+    """Every page beneath a street hub must be listed in that hub's index.html.
+
+    `check_hub_sync` is the same contract read the other way: it compares a
+    hub's list against a per-child override, which catches a list that
+    drifted from that override but not a list that is stale everywhere. That
+    is the case here — a page seeded under a street after the hub was last
+    built is in the sitemap and reachable by URL, yet a reader browsing the
+    street never sees it. AGENTS.md's directory contract makes the hub the way
+    in ("Hub pages ... list and link what's beneath them. Keep them current
+    when adding pages"), so an unlisted page is a broken site, not a cosmetic
+    gap — the mirror of a hub link that points at a page which isn't there.
+
+    Only street hubs are checked: a directory with at least one data.json
+    child, per `street_hub_hook_overrides`. A hub whose own index.md carries
+    hand-written sections is rebuilt like any other — `write_street_hub`
+    carries those sections through — so the list is always generated.
+
+    The list lives only in index.html (#151: it's generated wholesale from
+    these same children on every rebuild, so index.md doesn't also carry it).
+    """
+    html_path = dir_path / "index.html"
+    if not html_path.exists():
+        return
+    children = sorted(d.name for d in dir_path.iterdir()
+                      if d.is_dir() and (d / "data.json").exists())
+    if not children:
+        return  # a neighborhood or city hub; its children are hubs, not pages
+    listed = {href.rstrip("/") for href in hub_html_items(html_path.read_text(encoding="utf-8"))}
+    missing = [c for c in children if c not in listed]
+    if missing:
+        err(html_path, f"{len(missing)} page(s) beneath this hub are not in its "
+                       f"list ({', '.join(missing)}) — a reader browsing the "
+                       f"street can't reach them; rebuild with "
+                       f"scripts/seed_pages.py hubs")
+
+
 def check_hub_sync(dir_path: Path) -> None:
-    """A hub page's index.md and index.html must show the same list.
+    """A hub page's index.md and index.html must agree on hand-written content.
 
-    `write_street_hub` / `write_neighborhood_hub` generate both files from the
-    same data in one pass, so a fresh rebuild always agrees — divergence means
-    a hand edit landed in only one file. index.md is the source of truth
-    (AGENTS.md: a hub's "prose lives in its index.md"); the fix is always to
-    edit index.md and regenerate index.html from it (`seed_pages.py hubs`),
-    never the reverse.
+    A neighborhood hub keeps its street list in both files (`write_neighborhood_hub`
+    preserves a hand-written street hook by reading it back out of index.md), so
+    those two files must show the same list — divergence means a hand edit
+    landed in only one of them. index.md is the source of truth (AGENTS.md: a
+    hub's "prose lives in its index.md"); the fix is always to edit index.md and
+    regenerate index.html from it (`seed_pages.py hubs`), never the reverse.
 
-    A street hub's list has one deeper anchor beyond that: AGENTS.md also
-    says the list "is generated from those pages' data.json, each
-    contributing its own hook line", and a hand-written data.json["hook"]
-    "always wins over a generated one" (`seed_pages.hook_for`). So where a
-    child page has an explicit hook override, both files must match *that*,
-    not just each other — see `street_hub_hook_overrides`.
+    A street, historic-district or district-index hub carries no such list in
+    index.md at all (#151: `write_street_hub` / `write_district_hub` /
+    `write_districts_index` generate it wholesale from their children on every
+    rebuild, so it isn't duplicated into index.md). There index.md has nothing
+    to compare, but AGENTS.md's rule that a hand-written data.json["hook"]
+    "always wins over a generated one" (`seed_pages.hook_for`) still has to
+    hold, so index.html is checked against that override directly — see
+    `street_hub_hook_overrides`.
     """
     md_path, html_path = dir_path / "index.md", dir_path / "index.html"
     if not (md_path.exists() and html_path.exists()):
@@ -309,6 +427,19 @@ def check_hub_sync(dir_path: Path) -> None:
         return
 
     overrides = street_hub_hook_overrides(dir_path)
+
+    if not md_items:
+        # No list in index.md by design (see docstring) — just check the one
+        # thing that can still diverge: an explicit child override.
+        for slug, override in overrides.items():
+            html_hook = html_items.get(f"{slug}/")
+            if html_hook is not None and html_hook != override:
+                err(html_path, f"'{slug}' hook (\"{html_hook}\") doesn't match "
+                               f"{slug}/data.json's hand-written \"hook\" "
+                               f"(\"{override}\") — regenerate with "
+                               f"scripts/seed_pages.py hubs")
+        return
+
     for href in sorted(set(md_items) | set(html_items)):
         md_hook, html_hook = md_items.get(href), html_items.get(href)
         override = overrides.get(href.rstrip("/"))
@@ -327,6 +458,59 @@ def check_hub_sync(dir_path: Path) -> None:
                          f"{href}data.json's hand-written \"hook\" (\"{override}\") — "
                          f"that override is the source of truth for this entry; "
                          f"regenerate with scripts/seed_pages.py hubs")
+
+
+def check_district_hubs() -> None:
+    """Every district hub lists every page inside it, and no hub outlives its district.
+
+    `check_hub_covers_children` read one level up. A district hub is derived
+    from the pages that name the district, exactly as the sitemap and the map
+    index are derived from the tree — so a hub whose list has gone stale is
+    invisible to everything else here, and the fix is always to re-run the
+    generator rather than to edit a list by hand.
+
+    The list is read off index.html, not index.md: a district hub's list (and
+    the districts index's) carries no hand content, so it lives only in
+    index.html (#151) — see the note in `write_district_hub`.
+
+    A district under `DISTRICT_MIN_PAGES` has no hub by design and is not
+    checked; see `seed_pages.DISTRICT_MIN_PAGES` for why that floor exists.
+    """
+    hubs = ROOT / "san-francisco" / seed_pages.DISTRICTS_DIR
+    if not hubs.exists():
+        return
+    earned = {seed_pages.district_slug(name): (name, paths)
+              for name, paths in district_pages.items()
+              if len(paths) >= seed_pages.DISTRICT_MIN_PAGES}
+
+    for slug, (name, paths) in sorted(earned.items()):
+        html_path = hubs / slug / "index.html"
+        if not html_path.exists():
+            err(hubs / slug, f"{len(paths)} page(s) stand in the {name}, which has "
+                             f"no hub — run scripts/seed_pages.py districts")
+            continue
+        listed = set(hub_html_items(html_path.read_text(encoding="utf-8")))
+        missing = sorted(paths - listed)
+        if missing:
+            err(html_path, f"{len(missing)} page(s) in this district are not in its "
+                           f"list (starting {missing[0]}) — a reader browsing the "
+                           f"district can't reach them; run "
+                           f"scripts/seed_pages.py districts")
+
+    for hub_dir in sorted(hubs.iterdir()):
+        if hub_dir.is_dir() and hub_dir.name not in earned:
+            err(hub_dir / "index.html",
+                f"no district with {seed_pages.DISTRICT_MIN_PAGES} or more "
+                f"documented buildings maps here any more — delete the directory")
+
+    index_html = hubs / "index.html"
+    if index_html.exists():
+        listed = {h.rstrip("/") for h in hub_html_items(index_html.read_text(encoding="utf-8"))}
+        absent = sorted(set(earned) - listed)
+        if absent:
+            err(index_html, f"{len(absent)} district(s) with a hub are not on this "
+                            f"index ({', '.join(absent[:5])}) — run "
+                            f"scripts/seed_pages.py districts")
 
 
 def check_narrative(data_path: Path, data: dict) -> None:
@@ -349,8 +533,153 @@ def check_narrative(data_path: Path, data: dict) -> None:
                     err(data_path, f'narrative.sections[{i}] needs "heading" and "body"')
 
 
+def check_room_decisions() -> None:
+    """Every recorded room-number decision still applies to the page it names.
+
+    scripts/permit_room_decisions.json is a person's reading of a permit
+    sentence the rewrite rule cannot settle (#273). It is only worth what it
+    still describes: if DBI revises a description, or the page moves, or the
+    permit drops off the trimmed list, the decision becomes a claim about text
+    that no longer exists and the sentence needs reading again. So each entry
+    is checked against the committed page — a "rewrite" must have landed, a
+    "keep" must still be there to keep.
+    """
+    path = ROOT / "scripts" / "permit_room_decisions.json"
+    if not path.exists():
+        return
+    try:
+        entries = json.loads(path.read_text(encoding="utf-8")).get("decisions", [])
+    except json.JSONDecodeError as e:
+        err(path, f"invalid JSON: {e}")
+        return
+    for e in entries:
+        page = ROOT / str(e.get("path", "")).strip("/")
+        data_path = page / "data.json"
+        if not data_path.exists():
+            err(path, f'decision for permit {e.get("permit")} names '
+                      f'{e.get("path")}, which has no data.json')
+            continue
+        data = json.loads(data_path.read_text(encoding="utf-8"))
+        hit = [x for x in data.get("permits", [])
+               if str(x.get("number")) == str(e.get("permit"))]
+        if not hit:
+            err(data_path, f'permit {e.get("permit")} is recorded in '
+                           f'permit_room_decisions.json but is not on this page')
+            continue
+        desc = hit[0].get("description") or ""
+        if e.get("verdict") == "rewrite":
+            if e["new"] not in desc:
+                err(data_path, f'permit {e["permit"]}: permit_room_decisions.json '
+                               f'rewrites this description to contain {e["new"]!r}, '
+                               f'and it does not. Re-render the page')
+        elif e.get("verdict") == "keep":
+            # The designator the decision left alone has to still be there. It
+            # is recorded as the reader saw it, which for a long list is an
+            # abbreviation ("rooms 715/709/713/711/707/607/..."), so the check
+            # is on its first run of characters rather than the whole string.
+            stem = str(e.get("text", "")).split(",")[0].split("...")[0].strip()
+            if stem and stem not in desc:
+                err(data_path, f'permit {e["permit"]}: permit_room_decisions.json '
+                               f'keeps {stem!r} in this description, and it is '
+                               f'no longer there — read the sentence again')
+        else:
+            err(path, f'permit {e.get("permit")}: verdict must be '
+                      f'"rewrite" or "keep"')
+
+
+def check_days_label() -> None:
+    """`seed_pages.days_label` over every one of the 127 possible day sets.
+
+    The only check here that tests a function rather than a file, and it earns
+    the exception: the opening-hours label is generated prose on a published
+    page, it is read by somebody deciding whether to walk over, and a merchant
+    refresh can put any of the 127 sets through it at any time — so the sets
+    that reach a page today are not the ones that will. #349 shipped six pages
+    printing "Thu, Mon, Tue" before anyone looked.
+
+    The check does not hold a table of expected strings, which would only
+    restate the renderer. It asserts the two properties the label has to have,
+    derived from the set rather than from the code that formats it:
+
+    * it names every day of the set, once, and no day outside it; and
+    * it reads forward through the week. A label may fall backwards exactly
+      once, at Sunday→Monday, and only for a set holding both — the wrap
+      "Sa,Su,Mo" → "Sat–Mon" is written for. Any other backwards step is the
+      mid-week start this check exists to catch.
+    """
+    src = ROOT / "scripts" / "seed_pages.py"
+    short = {name: i for i, name in enumerate(seed_pages.DAY_SHORT)}
+    for n in range(1, 8):
+        for combo in itertools.combinations(range(7), n):
+            days = set(combo)
+            label = seed_pages.days_label(days)
+            if n == 7:
+                if label != "Daily":
+                    err(src, f"days_label(whole week) is {label!r}, not 'Daily'")
+                continue
+            # Expand the label back into day indices. A run prints as
+            # "Mon–Thu" and may itself cross Sunday, so it is walked forward
+            # around the week rather than sliced.
+            seq = []
+            for part in label.split(", "):
+                ends = [short.get(x) for x in part.split("–")]
+                if any(e is None for e in ends):
+                    err(src, f"days_label({sorted(days)}) = {label!r}, "
+                                   f"which has no day name in {part!r}")
+                    seq = None
+                    break
+                first, last = ends[0], ends[-1]
+                seq.append(first)
+                while seq[-1] != last:
+                    seq.append((seq[-1] + 1) % 7)
+            if seq is None:
+                continue
+            if sorted(seq) != sorted(days) or len(set(seq)) != len(seq):
+                err(src, f"days_label({sorted(days)}) = {label!r}, which "
+                               f"names {sorted(seq)} — a day is dropped, "
+                               f"repeated, or invented")
+                continue
+            falls = [k for k in range(len(seq) - 1) if seq[k + 1] < seq[k]]
+            wraps = 6 in days and 0 in days
+            if len(falls) > 1 or (falls and not (wraps and seq[falls[0]] == 6)):
+                err(src, f"days_label({sorted(days)}) = {label!r}, which "
+                               f"runs backwards through the week — the label "
+                               f"starts mid-week instead of on Monday (#349)")
+
+
+def check_build_is_complete(content: Path) -> None:
+    """Every source that should have produced a page, produced one.
+
+    The HTML is not committed, so a page that fails to build does not show up
+    as a diff — it shows up as a hole in the deploy, and nothing else here
+    would notice: every other check walks the `index.html` files that exist.
+    Two sources say a page is owed. An address directory's `data.json` is one.
+    A hub's `index.md` is the other, and it is the one that catches the real
+    failure mode: `seed_pages.py hubs` refuses to rebuild a hub that has grown
+    a hand-written section it doesn't know how to preserve, so a hub like that
+    needs its `index.html` committed alongside the exemption — see
+    `.gitignore`. Without this check, adding a section to a hub would quietly
+    delete it from the site.
+    """
+    if not content.exists():
+        return
+    owed = [f.parent for f in sorted(content.rglob("data.json"))
+            if ADDRESS_DIR.match(f.parent.name)]
+    owed += [f.parent for f in sorted(content.rglob("index.md"))]
+    for page_dir in owed:
+        if not (page_dir / "index.html").exists():
+            err(page_dir, "no index.html — the build produced no page here. "
+                          "Run python3 scripts/build_site.py; if the build "
+                          "skips this hub because it carries a hand-written "
+                          "section, its index.html has to be committed and "
+                          "exempted in .gitignore")
+
+
 def main() -> int:
     content = ROOT / "san-francisco"
+    check_build_is_complete(content)
+    check_room_decisions()
+    check_days_label()
     html_pages = [ROOT / "index.html"] if (ROOT / "index.html").exists() else []
     html_pages += sorted(content.rglob("index.html")) if content.exists() else []
 
@@ -358,6 +687,7 @@ def main() -> int:
         text = html_path.read_text(encoding="utf-8")
         is_address = bool(ADDRESS_DIR.match(html_path.parent.name))
         check_html(html_path, text, is_address)
+        check_internal_links(html_path, text)
         if is_address:
             check_address_dir(html_path.parent, text)
         elif html_path.parent != content:
@@ -368,6 +698,9 @@ def main() -> int:
             # hand-authored prose in both files; keeping them in sync is a
             # content edit, not a build-contract check.
             check_hub_sync(html_path.parent)
+            check_hub_covers_children(html_path.parent)
+
+    check_district_hubs()
 
     # The icon links every page carries have to resolve to something.
     for icon in ("favicon.ico", "apple-touch-icon.png", "shared/icon.svg",
@@ -377,15 +710,37 @@ def main() -> int:
             err(ROOT / icon, "site icon missing — every page links to it")
 
     # Every page should be reachable through the sitemap once one exists.
+    # sitemap.xml is an index now, so the URLs live one level down, in the
+    # per-neighborhood children it points at; a page missing from all of them
+    # is a page Google is never told about.
     sitemap = ROOT / "sitemap.xml"
     if sitemap.exists():
-        sitemap_text = sitemap.read_text(encoding="utf-8")
+        index_text = sitemap.read_text(encoding="utf-8")
+        children = [ROOT / rel.lstrip("/") for rel in
+                    re.findall(rf"<loc>{re.escape(SITE)}(/\S+?\.xml)</loc>", index_text)]
+        listed = set()
+        for child in children:
+            if not child.exists():
+                err(child, "listed in sitemap.xml but missing — "
+                           "run scripts/build_sitemap.py")
+                continue
+            listed |= set(re.findall(rf"<loc>{re.escape(SITE)}(\S*?)</loc>",
+                                     child.read_text(encoding="utf-8")))
         for html_path in html_pages:
             rel_dir = "/" + html_path.parent.relative_to(ROOT).as_posix() + "/"
             if html_path.parent == ROOT:
                 rel_dir = "/"
-            if f"<loc>{SITE}{rel_dir}</loc>" not in sitemap_text:
-                err(html_path, "not in sitemap.xml — run scripts/build_sitemap.py")
+            if rel_dir not in listed:
+                err(html_path, "not in the sitemap — run scripts/build_sitemap.py")
+        # And nothing in the sitemap that has stopped existing: a submitted
+        # URL that 404s is a crawl error Search Console reports against the
+        # sitemap it came from, which is the report this split exists to make
+        # readable. One error, not one per URL — the fix is the same command.
+        gone = sorted(u for u in listed
+                      if u != "/" and not (ROOT / u.strip("/") / "index.html").exists())
+        if gone:
+            err(sitemap, f"{len(gone)} sitemap URL(s) no longer exist, starting "
+                         f"{gone[0]} — run scripts/build_sitemap.py")
 
     # And every address should be a dot on the homepage map. Same contract as
     # the sitemap: the index is derived, so a new page just means re-running
@@ -408,6 +763,65 @@ def main() -> int:
                 if rel_dir not in mapped:
                     err(html_path, "not in shared/addresses.geojson — "
                                    "run scripts/build_map_index.py")
+
+    # And every address should have its neighbors in the link index. Same
+    # contract again — but this one is checked in both directions, because a
+    # path in the index that no longer exists becomes a dangling link the
+    # moment the renderer starts printing them.
+    nearby = ROOT / "shared" / "nearby.json"
+    if nearby.exists():
+        try:
+            indexed = json.loads(nearby.read_text(encoding="utf-8"))["paths"]
+        except (json.JSONDecodeError, KeyError, TypeError) as e:
+            err(nearby, f"invalid link index — run scripts/build_link_index.py ({e})")
+            indexed = None
+        if indexed is not None:
+            known = set(indexed)
+            for html_path in html_pages:
+                if not ADDRESS_DIR.match(html_path.parent.name):
+                    continue
+                rel_dir = "/" + html_path.parent.relative_to(ROOT).as_posix() + "/"
+                if rel_dir not in known:
+                    err(html_path, "not in shared/nearby.json — "
+                                   "run scripts/build_link_index.py")
+            # Reported as one error, not one per stale entry: a neighborhood
+            # moved or removed would otherwise print hundreds of lines that all
+            # have the same one-command fix.
+            gone = [q for q in indexed
+                    if not (ROOT / q.strip("/") / "index.html").exists()]
+            if gone:
+                err(nearby, f"{len(gone)} indexed page(s) no longer exist, "
+                            f"starting {gone[0]} — run scripts/build_link_index.py")
+
+    # And every address should have a line in the corpus index. Same contract
+    # again, both directions — this is the file a corpus-wide question is
+    # meant to be answered from instead of walking every directory, so a page
+    # missing from it or a line outlasting its page defeats the point.
+    corpus = ROOT / "corpus.jsonl"
+    if corpus.exists():
+        indexed_paths = set()
+        corpus_error = None
+        for lineno, line in enumerate(corpus.read_text(encoding="utf-8").splitlines(), 1):
+            try:
+                indexed_paths.add(json.loads(line)["path"])
+            except (json.JSONDecodeError, KeyError, TypeError) as e:
+                corpus_error = f"invalid entry on line {lineno} — run scripts/build_corpus_index.py ({e})"
+                break
+        if corpus_error:
+            err(corpus, corpus_error)
+        else:
+            for html_path in html_pages:
+                if not ADDRESS_DIR.match(html_path.parent.name):
+                    continue
+                rel_dir = "/" + html_path.parent.relative_to(ROOT).as_posix() + "/"
+                if rel_dir not in indexed_paths:
+                    err(html_path, "not in corpus.jsonl — "
+                                   "run scripts/build_corpus_index.py")
+            gone = [p for p in indexed_paths
+                    if not (ROOT / p.strip("/") / "index.html").exists()]
+            if gone:
+                err(corpus, f"{len(gone)} indexed page(s) no longer exist, "
+                            f"starting {sorted(gone)[0]} — run scripts/build_corpus_index.py")
 
     # Entries in the backlog that no longer belong there. Reported as one
     # error, not one per page: the file is 1,010 lines long today and the sweep

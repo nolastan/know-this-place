@@ -1,0 +1,129 @@
+{
+ "address": "1235 Sutter Street, San Francisco, CA 94109",
+ "path": "/san-francisco/nob-hill/sutter-street/1235/",
+ "apn": "0691011",
+ "block": "0691",
+ "lot": "011",
+ "eas_baseid": "287751",
+ "coordinates": {
+  "lat": 37.787406,
+  "lng": -122.420769
+ },
+ "parcel": {
+  "year_built": 1914,
+  "units": 2,
+  "stories": 1,
+  "rooms": 7,
+  "bathrooms": 3,
+  "lot_area_sqft": 8268,
+  "building_area_sqft": 17800,
+  "basement_area_sqft": 7980,
+  "lot_depth_ft": 20,
+  "use": "Commercial Retail",
+  "property_class": "Commercial Stores",
+  "construction_type_code": "C",
+  "zoning": "RC-4",
+  "supervisor_district": 3,
+  "assessor_neighborhood": "Van Ness/ Civic Center",
+  "analysis_neighborhood": "Nob Hill",
+  "property_location_raw": "1243 1235 SUTTER              ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 651475,
+  "assessed_improvement_value": 570036,
+  "last_sale_date": "1996-08-08"
+ },
+ "historic_status": {
+  "ceqa_status_code": "A",
+  "ceqa_status_code_article_10_11": "A",
+  "ceqa_status_label": "Historic resource",
+  "reason": "Historic Survey Result",
+  "yearbuilt": "1914",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "permits": [
+  {
+   "number": "200712069867",
+   "type": "additions alterations or repairs",
+   "status": "withdrawn",
+   "filed": "2007-12-06",
+   "status_date": "2011-05-27",
+   "estimated_cost": 307500,
+   "description": "underpinning required due to new construction on adjacent parcel @ 1285 sutter street.",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "200304152299",
+   "type": "additions alterations or repairs",
+   "status": "complete",
+   "filed": "2003-04-15",
+   "status_date": "2006-07-11",
+   "estimated_cost": 50000,
+   "revised_cost": 60000,
+   "description": "umb/seismic retrofitting, special procedure.",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "9621127",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "1996-10-31",
+   "status_date": "1997-11-18",
+   "estimated_cost": 68000,
+   "description": "remodel showroom",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "8306294",
+   "type": "sign - erect",
+   "status": "complete",
+   "filed": "1983-07-06",
+   "status_date": "1983-08-24",
+   "estimated_cost": 1000,
+   "source": "sf-building-permits"
+  }
+ ],
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SUTTER&street_type=ST&address_number=1235",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0691011&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0691&lot=011",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0691011",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "umb-survey-1990",
+   "name": "San Francisco Landmarks Preservation Advisory Board — A Context Statement and Architectural/Historical Survey of Unreinforced Masonry Building (U.M.B.) Construction in San Francisco from 1850 to 1940, San Francisco Department of City Planning, November 1990",
+   "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=de4ab5d53839bb7c49ab1a2e10876d4a39e7dbacc6eccc90508e51012b8f4456&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "label": "Unreinforced Masonry Building Survey, 1990",
+   "retrieved": "2026-08-29"
+  }
+ ],
+ "historic_survey": {
+  "survey": "Unreinforced Masonry Building Survey (1990)",
+  "frame": "Unreinforced masonry",
+  "heritage_rating": "D — of no particular importance",
+  "note": "From the survey's appendix table of unreinforced masonry buildings and their historic ratings, study area 5 (Bush Street Corridor).",
+  "source": "umb-survey-1990"
+ }
+}

@@ -1,0 +1,155 @@
+{
+  "address": "20 De Soto Street, San Francisco, CA 94127",
+  "path": "/san-francisco/ingleside-terraces/de-soto-street/20/",
+  "apn": "6930014",
+  "block": "6930",
+  "lot": "014",
+  "eas_baseid": "408834",
+  "coordinates": {
+    "lat": 37.722086,
+    "lng": -122.466143
+  },
+  "parcel": {
+    "year_built": 1913,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 5616,
+    "building_area_sqft": 2823,
+    "lot_depth_ft": 17,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Ingleside Terrace",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0020 DE SOTO             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 168868,
+    "assessed_improvement_value": 468984
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Ingleside Terrace Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1910–1930",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "S20251020217",
+      "status": "issued",
+      "filed": "2025-10-21",
+      "status_date": "2026-04-20",
+      "revised_cost": 109443,
+      "description": "solar permit: installing 35 solar pv modules, 405 watts per module, total no. of rating 14.175 kw. mounted: roof, ballasted: n, including 1 energy storage unit, with 13.5 kwh each in capacity, ess units will be closer than 3 feet | roof mount, 35 mods, 14.175 kw, ess +e",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202509125213",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-09-12",
+      "status_date": "2025-10-15",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "reroofing: tear off and re-shingle 26 sq ft. no hot works.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9614132",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-08-02",
+      "status_date": "1997-01-21",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to 9515891 (deck built larger than original)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9515891",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-09-27",
+      "status_date": "1997-01-27",
+      "estimated_cost": 1,
+      "description": "rear addtn-ref to 9508032(deleting walkable usable laundry",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9508032",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1995-05-30",
+      "status_date": "1995-10-23",
+      "estimated_cost": 60000,
+      "revised_cost": 82800,
+      "description": "horizontal",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DE%20SOTO&street_type=ST&address_number=20",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6930014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6930&lot=014",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6930014",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4661425929037%2037.722086210632675)%27)",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "digitalsf-8330",
+      "name": "20 De Soto Street, 1912. Willard E. Worden Glass Plate Negatives (SFP 22), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/8330",
+      "label": "Willard E. Worden Glass Plate Negatives (SFP 22), San Francisco Public Library",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912",
+      "kind": "photograph",
+      "description": "Willard E. Worden photographed the house.",
+      "source": "digitalsf-8330"
+    }
+  ]
+}

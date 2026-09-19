@@ -5,32 +5,38 @@
   "apn": "2653016",
   "block": "2653",
   "lot": "016",
+  "eas_baseid": "343391",
   "coordinates": {
     "lat": 37.761041,
     "lng": -122.444418
   },
   "parcel": {
     "year_built": 1940,
-    "use": "Single Family Residential",
-    "property_class": "Dwelling",
     "units": 1,
     "stories": 4,
     "bathrooms": 4,
     "lot_area_sqft": 1354,
     "building_area_sqft": 3213,
-    "construction_type": "Wood frame",
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
     "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0075 MARS                ST0000",
+    "note": "The assessor's year built pre-dates the 2010–2017 rebuild."
+  },
+  "assessment": {
+    "roll_year": 2025,
     "assessed_land_value": 918166,
     "assessed_improvement_value": 2179710,
-    "current_sales_date": "2013-10-11",
-    "note": "The assessor's year built pre-dates the 2010–2017 rebuild."
+    "last_sale_date": "2013-10-11"
   },
   "historic_status": {
     "ceqa_status_code": "C",
     "ceqa_status_label": "Not a historical resource",
     "reason": "Historic Resource Evaluation Response",
-    "designated_landmark": false,
-    "historic_district": null,
     "source": "sf-planning"
   },
   "adjoining_public_stair": {
@@ -49,7 +55,8 @@
       "status": "complete",
       "estimated_cost": 1,
       "description": "Final inspection for work approved under 201408254618, 201405276746 and 201006154512.",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Final inspection obtained for the work approved in 2010, 2014 and 2015 — closing out the rebuild."
     },
     {
       "number": "201512023963",
@@ -57,7 +64,8 @@
       "status": "issued",
       "estimated_cost": 55000,
       "description": "Interior floor plan modifications at basement and first floor.",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Interior floor plan modified at basement and first floor; stair size changed."
     },
     {
       "number": "201503160926",
@@ -65,7 +73,8 @@
       "status": "issued",
       "estimated_cost": 24000,
       "description": "Elimination of elevator at the 4th floor.",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Fourth-floor elevator eliminated; plans revised."
     },
     {
       "number": "201405276746",
@@ -73,7 +82,8 @@
       "status": "complete",
       "estimated_cost": 118300,
       "description": "Shoring work for existing building and excavation.",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Shoring of the existing building and excavation."
     },
     {
       "number": "201310189655",
@@ -81,7 +91,8 @@
       "status": "issued",
       "estimated_cost": 1,
       "description": "Interior changes to reduce amount of excavation.",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Interior changes to reduce the amount of excavation."
     },
     {
       "number": "201006154512",
@@ -89,7 +100,8 @@
       "status": "complete",
       "estimated_cost": 745000,
       "description": "Renovation of existing dwelling unit; addition of a floor and a basement garage.",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Renovation of the dwelling with a new floor and a basement garage — vertical and horizontal addition."
     },
     {
       "number": "200403259680",
@@ -97,7 +109,8 @@
       "status": "complete",
       "estimated_cost": 6000,
       "description": "Replace 13 windows, same size and location, dual pane.",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Thirteen windows replaced, same size and location, dual pane."
     },
     {
       "number": "200401214518",
@@ -105,7 +118,8 @@
       "status": "complete",
       "estimated_cost": 10000,
       "description": "Replace kitchen cabinets and counters in kind.",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Kitchen cabinets and counters replaced in kind."
     },
     {
       "number": "9816174",
@@ -113,7 +127,8 @@
       "status": "expired",
       "estimated_cost": 445,
       "description": "Replace dry rot and fungus damage to exterior wood and trim.",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Dry rot and fungus damage to exterior wood and trim."
     }
   ],
   "narrative": {
@@ -130,7 +145,8 @@
       "name": "Corbett Heights Neighbors, \"January Neighborhood News\", Vol. VIII, No. 1 (1 January 2026)",
       "cites": "the account of Shiloh's Way given by the property's owners",
       "query": "https://corbettneighbors.optin.com/newsletter/awlist6655060/Mjg4NTkyNjM=/january-neighborhood-news.htm",
-      "retrieved": "2026-07-22"
+      "retrieved": "2026-07-22",
+      "supports": "Building history"
     },
     {
       "id": "sf-eas-addresses",
@@ -152,9 +168,12 @@
     },
     {
       "id": "sf-building-permits",
-      "name": "SF Dept. of Building Inspection via DataSF",
+      "name": "SF Dept. of Building Inspection via DataSF, permits for block 2653 lot 016",
       "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2653&lot=016",
       "retrieved": "2026-07-22"
     }
+  ],
+  "unknowns": [
+    "The assessor still records the pre-rebuild construction date."
   ]
 }

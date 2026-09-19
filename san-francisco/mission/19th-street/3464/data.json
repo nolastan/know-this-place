@@ -343,6 +343,55 @@
       "name": "SF Planning Department — Historic Districts via DataSF",
       "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42080821269306%2037.76034722565212)%27)",
       "retrieved": "2026-07-31"
+    },
+    {
+      "id": "lgbtq-context-statement",
+      "name": "Donna J. Graves and Shayne E. Watson, Citywide Historic Context Statement for LGBTQ History in San Francisco, San Francisco Planning Department, adopted by the Historic Preservation Commission November 18, 2015",
+      "query": "https://sfplanning.s3.amazonaws.com/default/files/Preservation/lgbt_HCS/FinalLGBTQ_HCS_March2016.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume A–C), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=903cd18110a5ccc974eb3e5632a9acd8f2525118c61c3ce50c3ffc7374e0bfa3&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "blackbird",
+      "name": "Blackbird, restaurant rewards app",
+      "supports": "Current occupant",
+      "query": "https://www.blackbird.xyz/",
+      "retrieved": "2026-09-16"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1909",
+      "kind": "construction",
+      "description": "Lexington Club, designed by Gabriel Amie Berger.",
+      "source": "architecture-preservation-professionals-biographies"
+    },
+    {
+      "date": "2015",
+      "kind": "occupancy",
+      "description": "The Lexington Club, described as the city's last full-time lesbian bar.",
+      "source": "lgbtq-context-statement"
+    }
+  ],
+  "building": {
+    "architect": "Gabriel Amie Berger",
+    "name": "Lexington Club"
+  },
+  "occupants": [
+    {
+      "name": "Wildhawk",
+      "cuisines": [
+        "Bar"
+      ],
+      "source": "blackbird"
     }
   ]
 }

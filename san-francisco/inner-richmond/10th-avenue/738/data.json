@@ -1,0 +1,145 @@
+{
+  "address": "738 10th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/10th-avenue/738/",
+  "apn": "1652026",
+  "block": "1652",
+  "lot": "026",
+  "eas_baseid": "312285",
+  "coordinates": {
+    "lat": 37.774414,
+    "lng": -122.467773
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 2460,
+    "basement_area_sqft": 540,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0000 0738 10TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 789087,
+    "assessed_improvement_value": 748419,
+    "last_sale_date": "2003-08-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Inner Richmond Nelson Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1910–1914",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201904198487",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-04-19",
+      "status_date": "2020-06-29",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "exploratory demo work under site permit application #201705318009, approx. real wall 100 sq. ft. interior, repair under remodel pa#201705318009",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201705318009",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2017-05-31",
+      "status_date": "2020-06-29",
+      "estimated_cost": 120000,
+      "revised_cost": 120000,
+      "description": "horizontal addition on the ground floor unit & 2nd floor. upper unit, a family room, a bedroom with a full bath & a deck.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M17542",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-11-01",
+      "status_date": "2002-03-01",
+      "revised_cost": 0,
+      "description": "address assignment-additional",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9407388",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-05-16",
+      "status_date": "1995-08-15",
+      "estimated_cost": 4500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=10TH&street_type=AVE&address_number=738",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1652026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1652&lot=026",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1652026",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.467773342454%2037.7744141961096)%27)",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "russian-american-context-statement",
+      "name": "Nina Bogdan, Russian American Historic Context Statement, San Francisco Planning Department, adopted by the Historic Preservation Commission October 15, 2025",
+      "query": "https://sfplanning.org/node/3132",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "retrieved": "2026-08-30"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1930s",
+      "kind": "occupancy",
+      "description": "A Russian dental surgery moved to this address from California Street.",
+      "source": "russian-american-context-statement"
+    }
+  ]
+}

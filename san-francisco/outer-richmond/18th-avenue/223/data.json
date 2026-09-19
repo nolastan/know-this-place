@@ -1,0 +1,137 @@
+{
+  "address": "223–225 18th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/18th-avenue/223/",
+  "apn": "1415002B",
+  "block": "1415",
+  "lot": "002B",
+  "eas_baseid": "452427",
+  "coordinates": {
+    "lat": 37.783725,
+    "lng": -122.477802
+  },
+  "address_range": "223–225",
+  "street_numbers_on_parcel": [
+    "223",
+    "225"
+  ],
+  "parcel": {
+    "year_built": 1915,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 3124,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0225 0223 18TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 55184,
+    "assessed_improvement_value": 79672
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202506128566",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-06-12",
+      "status_date": "2025-08-20",
+      "estimated_cost": 32450,
+      "revised_cost": 32450,
+      "description": "install scaffolding to demo street facing stucco, then apply new color stucco finish.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8918639",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-10-02",
+      "status_date": "1990-08-24",
+      "estimated_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8806536",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-05-20",
+      "status_date": "1988-06-14",
+      "estimated_cost": 1,
+      "description": "final inspection for expired #8716797",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8716797",
+      "type": "otc alterations permit",
+      "status": "approved",
+      "filed": "1987-11-23",
+      "status_date": "1988-06-07",
+      "estimated_cost": 3600,
+      "description": "kitchen remodeling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=AVE&address_number=223",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1415002B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1415&lot=002B",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1415002B",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume P–R), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=37da3dd1abd97d61cd23d20a163f6d99f76a7aaf67f04eddf11f919d978aa651&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1915",
+      "kind": "construction",
+      "description": "Built by Grace Perego, a real estate agent, contractor and developer who worked in San Francisco and Santa Rosa from the 1920s and wrote a textbook on real estate.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ],
+  "building": {
+    "builder": "Grace Perego",
+    "developer": "Grace Perego"
+  }
+}

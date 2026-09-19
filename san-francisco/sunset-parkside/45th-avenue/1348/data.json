@@ -1,0 +1,139 @@
+{
+  "address": "1348 45th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/45th-avenue/1348/",
+  "apn": "1799029",
+  "block": "1799",
+  "lot": "029",
+  "eas_baseid": "484736",
+  "coordinates": {
+    "lat": 37.761386,
+    "lng": -122.504787
+  },
+  "parcel": {
+    "year_built": 1900,
+    "stories": 2,
+    "lot_area_sqft": 3598,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "FIRE STATION",
+    "construction_type_code": "C",
+    "zoning": "RH-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1348 45TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1912",
+    "survey_name": "1348 45TH AVE",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "San Francisco 1952 Firehouse Bond Act Thematic District (Discontiguous)",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1952–1961",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202105240863",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-05-24",
+      "status_date": "2021-07-07",
+      "estimated_cost": 25000,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under permit application no: 201806111493. all work is completed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201806111493",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-06-11",
+      "status_date": "2018-07-09",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "replacement of (e) apparatus bay door (telecsoping door) with new four-fold door. maher na",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201611233457",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-11-23",
+      "status_date": "2017-12-20",
+      "estimated_cost": 200000,
+      "revised_cost": 200000,
+      "description": "removal & replacement of (e) roofing system, down to (e) roofing system, down to (e) conc. roof deck. new fluid flashings. replace (e) roof drains overflows. replace skylights. electrical disconnect & reconnect at mech units",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2016–2021",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=45TH&street_type=AVE&address_number=1348",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1799029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1799&lot=029",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1799029",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.50478670499703%2037.761386336105424)%27)",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "modern-architecture-context-statement",
+      "name": "Mary Brown, San Francisco Planning Department, San Francisco Modern Architecture and Landscape Design 1935-1970 Historic Context Statement, adopted 12 January 2011",
+      "query": "http://sfplanninggis.org/docs/Historical_Context_Statements/Modern%20Architecture%20Context%20adopted%20Jan%202011.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Modern Architecture and Landscape Design Context Statement, adopted 2011",
+      "retrieved": "2026-09-01"
+    }
+  ],
+  "building": {
+    "architect": "J.S. Gould"
+  },
+  "historical_record": [
+    {
+      "date": "1957",
+      "kind": "alteration",
+      "description": "A firehouse remodelled in 1957 by J.S. Gould.",
+      "source": "modern-architecture-context-statement"
+    }
+  ]
+}

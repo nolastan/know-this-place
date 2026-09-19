@@ -1,0 +1,93 @@
+{
+ "address": "2970 California Street, San Francisco, CA 94115",
+ "path": "/san-francisco/pacific-heights/california-street/2970/",
+ "apn": "1024012",
+ "block": "1024",
+ "lot": "012",
+ "eas_baseid": "293118",
+ "coordinates": {
+  "lat": 37.787999,
+  "lng": -122.443346
+ },
+ "parcel": {
+  "year_built": 1900,
+  "units": 1,
+  "stories": 2,
+  "rooms": 11,
+  "bathrooms": 1,
+  "lot_area_sqft": 5301,
+  "building_area_sqft": 4905,
+  "use": "Single Family Residential",
+  "property_class": "Dwelling",
+  "construction_type_code": "D",
+  "zoning": "RH-2",
+  "supervisor_district": 2,
+  "assessor_neighborhood": "Pacific Heights",
+  "analysis_neighborhood": "Pacific Heights",
+  "property_location_raw": "0000 2970 CALIFORNIA          ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 73431,
+  "assessed_improvement_value": 73431,
+  "assessed_fixtures_value": 42878
+ },
+ "historic_status": {
+  "ceqa_status_code": "A",
+  "ceqa_status_code_article_10_11": "A",
+  "ceqa_status_label": "Historic resource",
+  "reason": "Historic Survey Result",
+  "yearbuilt": "1900",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "permits": [],
+ "permit_summary": {
+  "count_on_file": 2,
+  "range": "2012–2014",
+  "shown_on_page": 0,
+  "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+ },
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CALIFORNIA&street_type=ST&address_number=2970",
+   "retrieved": "2026-08-31"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1024012&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-08-31"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1024&lot=012",
+   "retrieved": "2026-08-31"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1024012",
+   "retrieved": "2026-08-31"
+  },
+  {
+   "id": "soma-filipino-heritage-addendum",
+   "name": "Page & Turnbull for the San Francisco Planning Department, San Francisco Filipino Heritage: Addendum to the South of Market Historic Context Statement, final report, 13 March 2013",
+   "query": "https://default.sfplanning.org/Preservation/central_soma_hrs/SOMA_Filipino_Heritage_HCS_Final_Report-031313.pdf",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "label": "San Francisco Filipino Heritage: Addendum to the South of Market Historic Context Statement, 2013",
+   "retrieved": "2026-08-31"
+  }
+ ],
+ "historical_record": [
+  {
+   "date": "circa 1948",
+   "kind": "occupancy",
+   "description": "Filipino Community of San Francisco, Inc. was at this address from at least the late 1940s through the 1980s.",
+   "source": "soma-filipino-heritage-addendum"
+  }
+ ]
+}

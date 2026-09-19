@@ -1,0 +1,143 @@
+{
+  "address": "680–684 Hayes Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/hayes-street/680/",
+  "apn": "0806016",
+  "block": "0806",
+  "lot": "016",
+  "eas_baseid": "288619",
+  "coordinates": {
+    "lat": 37.776489,
+    "lng": -122.4276
+  },
+  "address_range": "680–684",
+  "street_numbers_on_parcel": [
+    "680",
+    "682",
+    "684"
+  ],
+  "parcel": {
+    "year_built": 1885,
+    "units": 3,
+    "stories": 3,
+    "rooms": 13,
+    "bathrooms": 3,
+    "bedrooms": 6,
+    "lot_area_sqft": 1800,
+    "building_area_sqft": 3282,
+    "lot_depth_ft": 72,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Hayes Valley",
+    "property_location_raw": "0684 0680 HAYES               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 766507,
+    "assessed_improvement_value": 510999,
+    "last_sale_date": "2005-01-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1885",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Hayes Valley Residential Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1860–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201705318067",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-05-31",
+      "status_date": "2017-08-30",
+      "estimated_cost": 20000,
+      "revised_cost": 30000,
+      "description": "to comply with complaint # 201779318, replace kitchen cabinets and counter tops some new appliances.work is in 682 & 684",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200812198937",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-12-19",
+      "status_date": "2009-01-27",
+      "estimated_cost": 800,
+      "revised_cost": 800,
+      "description": "provide handrails at exit stairs @ rear. repair stair less than 50% in kind repair per nov.#200881814.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200407290082",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-07-29",
+      "status_date": "2004-08-30",
+      "estimated_cost": 16100,
+      "revised_cost": 16100,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAYES&street_type=ST&address_number=680",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0806016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0806&lot=016",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0806016",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42760008140515%2037.77648945510408)%27)",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "market-octavia-survey-forms",
+      "name": "Page & Turnbull for the San Francisco Planning Department, Market & Octavia Augmentation Survey, DPR 523 survey forms, fieldwork 2006, evaluations by Kelley & VerPlanck 2010",
+      "query": "https://sfplanning.org/sites/default/files/documents/preserv/DPRforms/HV%20Conttributory%20New.pdf",
+      "listing": "https://sfplanning.org/historic-preservation-survey-forms-dpr523",
+      "label": "Market & Octavia Survey DPR 523 form, 2006–2010",
+      "retrieved": "2026-09-03"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Market & Octavia Survey (2006–2010)",
+      "source": "market-octavia-survey-forms",
+      "year_built_as_surveyed": "1885"
+    }
+  ]
+}

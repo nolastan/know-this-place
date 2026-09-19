@@ -1,0 +1,98 @@
+{
+  "address": "555 Battery Street, San Francisco, CA 94111",
+  "path": "/san-francisco/financial-district/battery-street/555/",
+  "apn": "0197001",
+  "block": "0197",
+  "lot": "001",
+  "eas_baseid": "279829",
+  "coordinates": {
+    "lat": 37.796329,
+    "lng": -122.400739
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 15,
+    "lot_area_sqft": 37810,
+    "use": "Commercial Office",
+    "property_class": "Office Gov",
+    "construction_type_code": "A",
+    "zoning": "C2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Financial District North",
+    "analysis_neighborhood": "Chinatown",
+    "property_location_raw": "0000 0555 BATTERY             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Individual, Historic Survey Result",
+    "yearbuilt": "1900",
+    "survey_name": "U.S. CUSTOMS HOUSE",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M11759",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-03-02",
+      "status_date": "2000-09-02",
+      "revised_cost": 20000,
+      "description": "street space",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2000–2009",
+    "shown_on_page": 1,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BATTERY&street_type=ST&address_number=555",
+      "retrieved": "2026-09-06"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0197001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-06"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0197&lot=001",
+      "retrieved": "2026-09-06"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0197001",
+      "retrieved": "2026-09-06"
+    },
+    {
+      "id": "nrhp-75000476",
+      "name": "National Register of Historic Places nomination, U.S. Customhouse (reference number 75000476), National Park Service.",
+      "query": "https://npgallery.nps.gov/NRHP/GetAsset/NRHP/75000476_text",
+      "label": "National Register of Historic Places nomination, National Park Service",
+      "retrieved": "2026-09-06"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1911",
+      "kind": "construction",
+      "description": "Completed and occupied as the United States Customhouse, to the design of the architects William S. Eames and Thomas C. Young.",
+      "source": "nrhp-75000476"
+    }
+  ]
+}

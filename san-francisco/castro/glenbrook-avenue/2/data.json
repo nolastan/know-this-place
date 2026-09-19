@@ -1,0 +1,181 @@
+{
+  "address": "2 Glenbrook Avenue, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/glenbrook-avenue/2/",
+  "apn": "2709045",
+  "block": "2709",
+  "lot": "045",
+  "eas_baseid": "344834",
+  "coordinates": {
+    "lat": 37.757985,
+    "lng": -122.44997
+  },
+  "parcel": {
+    "year_built": 1949,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "lot_area_sqft": 6695,
+    "building_area_sqft": 2952,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Clarendon Heights",
+    "analysis_neighborhood": "Twin Peaks",
+    "property_location_raw": "0000 0002 GLENBROOK           AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2462853,
+    "assessed_improvement_value": 1231423,
+    "last_sale_date": "2000-04-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1949",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201404163361",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-04-16",
+      "status_date": "2014-04-28",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9907771",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-04-22",
+      "status_date": "1999-07-27",
+      "estimated_cost": 35000,
+      "description": "install new windows, increase valuation, addendum to 9816419",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9823381",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-11-12",
+      "status_date": "1999-07-27",
+      "estimated_cost": 3000,
+      "description": "replace wooden header w/steel girder",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9823382",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-11-12",
+      "status_date": "1999-07-27",
+      "estimated_cost": 3000,
+      "description": "replace roof joist girder w/steel beam,wood post & footing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9816419",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-08-19",
+      "status_date": "1999-07-27",
+      "estimated_cost": 40000,
+      "description": "interior remodel install new kitchen cabinets bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9805123",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-03-25",
+      "status_date": "1999-01-26",
+      "estimated_cost": 1200,
+      "description": "deck repair/replace 2x6 decking",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9319083",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-10-28",
+      "status_date": "1995-02-02",
+      "estimated_cost": 4500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9122350",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-11-22",
+      "status_date": "1992-03-19",
+      "estimated_cost": 2500,
+      "description": "replace plaster w/sheetrock walls & ceiling of bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8104672",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1981-05-21",
+      "status_date": "1983-03-14",
+      "estimated_cost": 15500,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GLENBROOK&street_type=AVE&address_number=2",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2709045&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2709&lot=045",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2709045",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume D–F), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=5e61d57895f7a63a45f9a33bd3ee216f5a86bb2a19ca6b0ce2cc9f62584760da&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-08-31"
+    }
+  ],
+  "building": {
+    "architect": "John C. Funk"
+  },
+  "historical_record": [
+    {
+      "date": "1948",
+      "kind": "construction",
+      "description": "Designed by John C. Funk, an influential Second Bay Tradition architect whose buildings were modest in scale and noted for simple horizontal lines and low siting. Since altered.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ]
+}

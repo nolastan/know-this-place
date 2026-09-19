@@ -5,8 +5,8 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 ## Streets documented so far
 
 - [10th Street](10th-street/) — 2 buildings, built 1927–1988.
-- [11Th Street](11th-street/) — 3 buildings, built 1906–1912; 2 in the Western SOMA Light Industrial and Residential Historic District.
-- [12Th Street](12th-street/) — 5 buildings, built 1907–1909; 3 in the Western SOMA Light Industrial and Residential Historic District.
+- [11th Street](11th-street/) — 3 buildings, built 1906–1912; 2 in the Western SOMA Light Industrial and Residential Historic District.
+- [12th Street](12th-street/) — 5 buildings, built 1907–1909; 3 in the Western SOMA Light Industrial and Residential Historic District.
 - [13th Street](13th-street/) — 2 buildings, built 1954–1986.
 - [14th Street](14th-street/) — 46 buildings, built 1898–1975; 2 in the Ramona Street Historic District.
 - [15th Street](15th-street/) — 36 buildings, built 1875–2017; 4 in the South Van Ness Avenue-Shotwell-Folsom Streets Historic District.
@@ -35,7 +35,9 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [Bird Street](bird-street/) — 4 buildings, built 1900–1966.
 - [Brady Street](brady-street/) — 3 buildings, built 1906–1912; 1 in the Market Street Masonry Historic District.
 - [Brannan Street](brannan-street/) — 1 building, built 1917.
+- [Brazil Avenue](brazil-avenue/) — 1 building, built 1907.
 - [Brosnan Street](brosnan-street/) — 8 buildings, built 1900–1936.
+- [Brunswick Street](brunswick-street/) — 1 building, built 1906.
 - [Bryant Street](bryant-street/) — 196 buildings, built 1890–2023; 28 in the East Mission Florida-to-Hampshire Streets Historic District.
 - [Caledonia Street](caledonia-street/) — 1 building, built 1908.
 - [Camp Street](camp-street/) — 7 buildings, built 1907–1932; 6 in the 16th and Valencia Streets Post-Fire Historic District.
@@ -64,6 +66,7 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [Gough Street](gough-street/) — 6 buildings, built 1906–1947.
 - [Guerrero Street](guerrero-street/) — 276 buildings, built 1873–1989; 37 in the Liberty Hill Historic District.
 - [Hampshire Street](hampshire-street/) — 197 buildings, built 1878–2012; 14 in the Hampshire Street False-Front Historic District.
+- [Hanover Street](hanover-street/) — 1 building, built 1926.
 - [Harrison Street](harrison-street/) — 119 buildings, built 1870–2019; 24 in the South Mission Avenues and Alleys Historic District.
 - [Hidalgo Terrace](hidalgo-terrace/) — 12 buildings, built 1919–1925; 12 in the Hidalgo Terrace Historic District.
 - [Hill Street](hill-street/) — 28 buildings, built 1880–1989; 28 in the Liberty Hill Historic District.
@@ -92,6 +95,7 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [Missouri Street](missouri-street/) — 1 building, built 1922.
 - [Natoma Street](natoma-street/) — 25 buildings, built 1906–1990; 7 in the Western SOMA Light Industrial and Residential Historic District.
 - [Oakwood Street](oakwood-street/) — 20 buildings, built 1900–1988; 1 in the Inner Mission Boulevards and Alleys Reconstruction Historic District.
+- [Ocean Avenue](ocean-avenue/) — 1 building, built 1922.
 - [Orange Alley](orange-alley/) — 1 building, built 1900.
 - [Otis Street](otis-street/) — 6 buildings, built 1909–1926; 1 in the SoMa LGBTQ Historic District.
 - [Pearl Street](pearl-street/) — 17 buildings, built 1906–1926; 15 in the Elgin Park-Pearl Street Reconstruction Historic District.
@@ -104,11 +108,13 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [San Bruno Avenue](san-bruno-avenue/) — 55 buildings, built 1895–1938.
 - [San Carlos Street](san-carlos-street/) — 80 buildings, built 1880–1986; 22 in the Liberty Hill Historic District.
 - [San Jose Avenue](san-jose-avenue/) — 66 buildings, built 1865–2017; 5 in the Horner's Addition East Historic District.
+- [Sheridan Street](sheridan-street/) — 2 buildings, built 2004–2007; 2 in the Western SOMA Light Industrial and Residential Historic District.
 - [Shotwell Street](shotwell-street/) — 182 buildings, built 1875–2017; 91 in the Shotwell Street Historic District.
 - [South Van Ness Avenue](south-van-ness-avenue/) — 195 buildings, built 1863–2021; 16 in the Shotwell Street Historic District.
 - [Spencer Street](spencer-street/) — 1 building, built 1904.
 - [Stevenson Street](stevenson-street/) — 9 buildings, built 1906–1926; 9 in the Jessie-McCoppin-Stevenson Streets Reconstruction Historic District.
 - [Sycamore Street](sycamore-street/) — 14 buildings, built 1906–1928; 11 in the Sycamore Street Reconstruction Historic District.
+- [Tingley Street](tingley-street/) — 1 building, built 1907.
 - [Treat Avenue](treat-avenue/) — 105 buildings, built 1880–1982; 16 in the South Mission Avenues and Alleys Historic District.
 - [Treat Way](treat-way/) — 1 building.
 - [Utah Street](utah-street/) — 72 buildings, built 1890–1978.
@@ -118,3 +124,49 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [Wiese Street](wiese-street/) — 1 building, built 2000.
 - [Woodward Street](woodward-street/) — 20 buildings, built 1906–2018; 20 in the Woodward St. Romeo Flats Reconstruction Historic District.
 - [York Street](york-street/) — 184 buildings, built 1880–1999; 23 in the East Mission Florida-to-Hampshire Streets Historic District.
+
+## Historic districts here
+
+- [16th and Valencia Streets Post-Fire Historic District](../historic-districts/16th-and-valencia-streets-post-fire/)
+- [23rd Street Shops and Rowhouses Historic District](../historic-districts/23rd-street-shops-and-rowhouses/)
+- [Alabama Street Pioneers Historic District](../historic-districts/alabama-street-pioneers/)
+- [Capp and Howard Streets Mid-Block Fire Line Historic District](../historic-districts/capp-and-howard-streets-mid-block-fire-line/)
+- [East Mission Florida-to-Hampshire Streets Historic District](../historic-districts/east-mission-florida-to-hampshire-streets/)
+- [Elgin Park-Pearl Street Reconstruction Historic District](../historic-districts/elgin-park-pearl-street-reconstruction/)
+- [Fair Oaks Street Historic District](../historic-districts/fair-oaks-street/)
+- [Gottlieb Knopf Block Historic District](../historic-districts/gottlieb-knopf-block/)
+- [Guerrero Street Fire Line Historic District](../historic-districts/guerrero-street-fire-line/)
+- [Hampshire Street False-Front Historic District](../historic-districts/hampshire-street-false-front/)
+- [Hidalgo Terrace Historic District](../historic-districts/hidalgo-terrace/)
+- [Horner's Addition East Historic District](../historic-districts/horner-s-addition-east/)
+- [Inner Mission Boulevards and Alleys Reconstruction Historic District](../historic-districts/inner-mission-boulevards-and-alleys-reconstruction/)
+- [Jessie-McCoppin-Stevenson Streets Reconstruction Historic District](../historic-districts/jessie-mccoppin-stevenson-streets-reconstruction/)
+- [Juri Street Historic District](../historic-districts/juri-street/)
+- [Lexington and San Carlos Streets Reconstruction Historic District](../historic-districts/lexington-and-san-carlos-streets-reconstruction/)
+- [Liberty Hill Historic District](../historic-districts/liberty-hill/)
+- [Liberty Street Historic District](../historic-districts/liberty-street/)
+- [Market Street Masonry Historic District](../historic-districts/market-street-masonry/)
+- [Mission Miracle Mile 19th to 20th Streets Historic District](../historic-districts/mission-miracle-mile-19th-to-20th-streets/)
+- [Mission Miracle Mile at 17th Street Historic District](../historic-districts/mission-miracle-mile-at-17th-street/)
+- [Olsen's Queen Anne Cottages Historic District](../historic-districts/olsen-s-queen-anne-cottages/)
+- [Ramona Street Historic District](../historic-districts/ramona-street/)
+- [San Francisco 1952 Firehouse Bond Act Thematic District (Discontiguous)](../historic-districts/san-francisco-1952-firehouse-bond-act-thematic-district-discontiguous/)
+- [San Francisco Neighborhood Movie Theater Historic District (Discontiguous)](../historic-districts/san-francisco-neighborhood-movie-theater-discontiguous/)
+- [Shotwell Street Historic District](../historic-districts/shotwell-street/)
+- [Showplace Square Heavy Timber and Steel-frame Brick Warehouse and Factory Historic District](../historic-districts/showplace-square-heavy-timber-and-steel-frame-brick-warehouse-and-factory/)
+- [SoMa LGBTQ Historic District](../historic-districts/soma-lgbtq/)
+- [South Mission Avenues and Alleys Historic District](../historic-districts/south-mission-avenues-and-alleys/)
+- [South Van Ness Avenue-Shotwell-Folsom Streets Historic District](../historic-districts/south-van-ness-avenue-shotwell-folsom-streets/)
+- [Sycamore Street Reconstruction Historic District](../historic-districts/sycamore-street-reconstruction/)
+- [Von Schroeder-Welsh Block Historic District](../historic-districts/von-schroeder-welsh-block/)
+- [Western SOMA Light Industrial and Residential Historic District](../historic-districts/western-soma-light-industrial-and-residential/)
+- [Woodward St. Romeo Flats Reconstruction Historic District](../historic-districts/woodward-st-romeo-flats-reconstruction/)
+
+## Adjacent neighborhoods
+
+[The Castro](../castro/) adjoins west across Dolores and Church Streets,
+[Noe Valley](../noe-valley/) south-west over the hill, and [Bernal
+Heights](../bernal-heights/) south beyond Cesar Chavez Street. [Potrero
+Hill](../potrero-hill/) is east across Potrero Avenue, [South of
+Market](../south-of-market/) north-east past Division Street, and [Hayes
+Valley](../hayes-valley/) north-west across Market Street.

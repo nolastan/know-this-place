@@ -1,0 +1,79 @@
+{
+  "address": "841 Ellis Street, San Francisco, CA 94109",
+  "path": "/san-francisco/tenderloin/ellis-street/841/",
+  "apn": "0739013",
+  "block": "0739",
+  "lot": "013",
+  "eas_baseid": "489647",
+  "coordinates": {
+    "lat": 37.783812,
+    "lng": -122.420106
+  },
+  "parcel": {
+    "year_built": 1900,
+    "lot_area_sqft": 9896,
+    "use": "Commercial Office",
+    "property_class": "Office Gov",
+    "construction_type_code": "NA",
+    "zoning": "P",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Van Ness/ Civic Center",
+    "analysis_neighborhood": "Tenderloin",
+    "property_location_raw": "0000 0841 ELLIS               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ELLIS&street_type=ST&address_number=841",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0739013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0739&lot=013",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0739013",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "new-deal-context-statement",
+      "name": "Christopher VerPlanck and Donna Graves, San Francisco New Deal Historic Context Statement: Rebuilding the City, 1933 to 1943, San Francisco Planning Department and San Francisco Heritage, adopted March 1, 2023",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=03b7d76ed3d5b9b7a48457e4bc99930486a45f8e13f8b9955e56fcfd504e15a7&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "San Francisco New Deal Historic Context Statement, adopted 2023",
+      "retrieved": "2026-08-29"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1935–1941",
+      "kind": "occupancy",
+      "description": "Works Progress Administration workers remodelled the Adams School Annex here for the police department, as a teletype bureau and citizens' complaints office. The building survives, in use as a school district nutritional services office.",
+      "source": "new-deal-context-statement"
+    }
+  ]
+}

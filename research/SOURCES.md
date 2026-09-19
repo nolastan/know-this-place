@@ -14,12 +14,14 @@ the coverage log. Sources are cited on pages by the `id` in the first column;
 |---|---|---|---|---|---|
 | [`argonaut-sfhs`](sources/argonaut-sfhs.md) | *The Argonaut*, journal of the SF Historical Society | journal | high | open | 7 volumes read in full |
 | [`celebrity-residence-guides`](sources/celebrity-residence-guides.md) | Notable-resident guides | web guides | low | done | 26 addresses, 25 resolved |
-| [`corbett-heights-neighbors`](sources/corbett-heights-neighbors.md) | Corbett Heights Neighbors newsletter | newsletter | high | open | page 1 of 5 (10 of 48 issues) |
-| [`digitalsf`](sources/digitalsf.md) | DigitalSF — SF Public Library's catalogued digital archive | catalogued digital archive | high | open | harvested in full: 59,601 records; SFP 23 read whole, resolved and published (1,165 records → 1,122 findings → 923 on a parcel → 919 on 882 pages), 43 collections to go |
+| [`corbett-heights-neighbors`](sources/corbett-heights-neighbors.md) | Corbett Heights Neighbors newsletter | newsletter | high | done | all 50 issues read (Nov 2023 – Sep 2026); 197 findings, 151 resolved, 115 published on 65 distinct pages. Exhausted until the association publishes again — roughly one issue a month |
+| [`digitalsf`](sources/digitalsf.md) | DigitalSF — SF Public Library's catalogued digital archive | catalogued digital archive | high | done | harvested in full: 59,601 records; 8 of 44 collections read whole — SFP 23 (1,165 records → 1,122 findings → 923 on a parcel → 919 on 882 pages), SFH 371, the Redevelopment Agency Records (2,421 → 421 → 117 → 116 on 103 pages) and SFP 162, the Subjects Photograph Collection, the largest in the repository (34,738 → 1,186 → 663 → 546 on 482 pages, re-read once the caption name filter was fixed and 42 building names recovered onto 28 of them, then corrected again in #251 when a re-run showed the caption fixes had recovered **93** names in it rather than the five that had been filed, 42 of them landing as timeline rows on 38 pages), SFP 22, the Willard E. Worden glass plates of Ingleside Terraces and Jordan Park going up (433 → 77 → 72 → 60 on 59 pages), and the four small buildings collections read together in one run — SFP 42 (Durden slides), SFP 90 (Gordon murals), SFP 125 (Sims, the South of Market hotels before Yerba Buena) and SFP 169 (Martin slides), 1,744 records → 147 findings → 99 resolved → 99 on 88 pages; and the four institutional collections read together in one run — SFP 26 (DPW Bureau of Engineering, 984 records → 17 findings → 12 resolved → 7 on 6 pages), SFP 84 (Blaisdell, 483 → 13 → 1 → 1, the rest refused by the pre-1910 renumbering rule), SFP 103 (Brailove's 1964 Western Addition, 51 → 7 → 3 → 0, every resolution declined because the parcels carry the 1970s redevelopment buildings) and SFH 3 (school district, 1,603 → 3 → 2 → 0); plus the **1,678 records with no `524$a`**, read whole and closed with zero findings (#220) — six digital series, five of them not photograph catalogues, no address stated in any field. and the whole remaining tail read as one batch — **36 collections, 7,261 records → 137 findings → 73 resolved → 45 published on 45 pages**, of which the Junior League's *Here Today* building research files (SFH 611) are ten records, ten buildings, ten street numbers. and SFP 179, the Judi Iranyi Photographs of the Tenderloin, read under #217 after the dossier had written it off as a people collection (528 records → 29 findings → 25 resolved → **25 published on 24 pages**; its "151 addressed" was 100 records of "4 Corner Friday" read as street number 4, and the real count is 51). and SFP 136, the San Francisco Portrait Photograph Collection, read on 2026-09-06 under the same issue after the dossier had written it off as SFP 130's twin (2,664 records → 10 findings → 3 real street addresses → 2 resolved → **2 published on 2 pages**; the other seven candidates are a caption's own figures — "1949 Career Drive" is a fundraising drive named for its year). **Every collection in the archive that holds an addressed record has now been read.** SFP 130 (184 addressed) is **closed unread** under #217 — its captions are a newspaper's reporting on named living tenants, and redacting the name leaves the household. What would reopen this source is re-harvesting for records catalogued since 2026-09-04 |
 | [`hittell-1878`](sources/hittell-1878.md) | Hittell, *A History of the City of San Francisco* (1878) | book | medium | open | §12–14, 24, 27, 231 |
 | [`loc-newspapers`](sources/loc-newspapers.md) | Chronicling America OCR — *Morning Call*, *SF Call* | newspaper OCR | high | open | 58,620 pages → 8,437 mentions, 2,025 addresses |
+| [`sf-environmental-review`](sources/sf-environmental-review.md) | SF Planning environmental review documents (EIRs, initial studies, negative declarations) | PDF reports | high | open | **all 172 address-titled documents read**, in 93 projects, plus 165 projects out of the project-titled set — 916 findings, 637 resolved, 571 published. The 1975–2011 record of what stood on a site *before* a project, and the only source in the register that states the assessor's block and lot outright. Four batches: the sixteen outside downtown (61 findings, 29 resolved, 21 published on 13 pages), the earliest downtown reports of 1975–1982 (21 documents, 120 findings, 78 resolved, 73 published on 52 pages, 17 of them seeded), the downtown and South of Market projects of 1983–1991 (19 documents, 110 findings, 77 resolved, 59 published on 44 pages, 11 of them seeded) and the address-titled projects of 1995–2011 (37 documents, 147 findings, 96 resolved, 72 published on 43 pages, 12 of them seeded). Downtown is a different kind of document — its historic-resources chapters are rating indexes that give a building **name**, a street number and two survey grades for every building on and around the block, and its project-site chapters date every building the tower removed, building by building, in prose. From about 2000 the department stopped writing that itself and appended the historian's own report instead, and those appendices are the densest part of the document: the Carey & Co. Section 106 review bound into the 275 10th Street EIR dates twenty-nine properties around one block. A fifth batch takes the first group of the project-titled set: the **named single-site projects of 1974–1982** (36 documents, 59 findings, 43 resolved, 39 published on 20 pages, 2 of them seeded), and a sixth takes the second: the **projects whose titles carry a street address later than first position** (58 projects, 109 findings, 74 resolved, 73 published on 55 pages, 31 of them seeded). Those are the same kind of document as the address-titled downtown reports, named after the developer's project instead of the street — and the earlier batches' filter, a title beginning with a digit, could never reach them. A seventh batch takes the rest of the named single-site group — the **projects of 1979–2005 titled by project name**, 36 documents, 141 findings, 102 resolved, 98 published on 53 pages, 25 of them seeded by that run. Its richest documents are the Emporium site expansion (thirteen dated buildings on and around Jessie Street, all of them refused by the commercial condominium the block became), the Geneva Office Building demolition project (one City landmark documented from its 1900 groundbreaking to its closure after Loma Prieta) and the North Beach Hope VI survey, whose appendix evaluates 105 properties on Francisco, Mason, Taylor, Water and Vandewater Streets. An eighth takes the **institutional-campus group** — hospitals, universities, museums, libraries, churches, the zoo and the civic buildings around them, 38 documents in 35 projects, 169 findings, 139 resolved, 129 published on 37 pages, 17 of them seeded. A campus document names buildings and not street numbers, so the batch turns on whether the report prints an assessor block that is a single parcel: Laguna Honda, Grace Cathedral's close, the Zoo and the whole of Golden Gate Park each are, and each got one chronology; UCSF's Parnassus Heights and the University of San Francisco's block are many lots, and nothing on them resolved. Remaining: ~449 of the 617 project-titled documents are unread — 130 area and policy plans, 67 transportation and airport documents, 96 procedural notices, 35 documents about places outside San Francisco, and the finals and supplements of projects whose drafts are read |
 | [`local-news`](sources/local-news.md) | Hoodline, Bay Area Reporter, SF Chronicle | news | low | reference | browsed per address, no corpus pass |
-| [`sf-context-statements`](sources/sf-context-statements.md) | SF Planning historic context statements & surveys | PDF reports | high | open | 27 statements read; ~23 remain (one issue each). All thirteen with findings files are closed out: market-octavia-hcs 425 of 496 published, mission-dolores-hcs 66 of 83, van-ness-auto-row 352 of 453 on 133 pages, carnegie-libraries 1 of 2, north-beach-hcs 553 of 630 on 352 pages, japantown-hcs 83 of 125 on 53 pages, russian-hill-hcs 57 of 109 on 48 pages, parkside-hcs 147 of 160 on 142 pages, oceanside-hcs 20 of 32 on 19 pages, transit-center-district-survey 211 of 316 on 123 pages, showplace-square-survey 576 of 941 on 314 pages, sunset-builders-hcs 143 of 158 on 143 pages, ppie-marina-hcs 86 of 109 on 86 pages |
+| [`nrhp-nominations`](sources/nrhp-nominations.md) | National Register of Historic Places nomination forms | PDF reports | high | open | every San Francisco listing with a text layer read — all certified through 2023, the 2020-2023 ones from the California Office of Historic Preservation's drafts, plus the Civic Center district (78000757), which is in neither the NPS index's city query nor its county query. 133 findings, 98 resolved, 79 published on 35 pages, 10 of them seeded. Plus the **Uptown Tenderloin Historic District (08001407), now read in full** — its whole section 7 inventory, 477 rows over 33 blocks, 480 findings, 463 resolved, 451 published across 414 pages with 199 parcels seeded (#304), and its **prose tails re-swept under #310** for the notable past occupants the first pass left: 9 more findings on 9 existing pages, and the decision that a notable past occupant a published source already covers is always published. Its **section 8, the statement of significance, is now also read end to end** (#346): 10 findings, mostly overlap with the inventory once the PROPERTY OWNERS subsection's owners are set aside, but 7 new historical_record entries, 2 conflicts recorded in `unknowns` against already-published inventory dates, and 1145 Mission Street seeded new. A district inventory is the densest thing in this source: 308 of those findings name an architect, against 98 resolved from the 96 single-building nominations read before it. The listings are indexed everywhere and the forms are not: a nomination's section 8 gives a construction date, the architect or builder and the dated alterations, and the 1974 form revision prints `SPECIFIC DATES` and `BUILDER/ARCHITECT` as adjacent fields. **The address the NPS index carries is not always the address the nomination describes**: nine of the ten listings certified 8 March 1973 are Western Addition Victorians the Redevelopment Agency moved rather than demolished, and the index gives the destination while the form gives where the house stood. The batch that works is a certification-date era, because the era is also the form revision — but **districts do not belong in an era batch**: a single-building nomination is two or three findings and one of Anne Bloomfield's district nominations is an appendix of fifty. Two of those five district nominations are now read in full — **82000983 Bush Street-Cottage Row** (20 residences, a walkway and a mini-park; 19 findings, 18 resolved) and **83001230 Liberty Street** (51 buildings; 33 findings, 31 resolved) — together 52 findings, 49 resolved, 49 published on 47 pages, 23 of them seeded. Every published fact but one carries a named architect, builder, contractor or developer; the one exception is Susan B. Anthony's 1896 suffrage meeting at 159 Liberty Street. Both districts hit the assessor roll's 1900-era placeholder build year on most of their parcels — recorded with `building.completed_conflict`, not declined. The **three Russian Hill district nominations of May 1987 are now read in full** — 87002286 Macondray Lane, 87002288 Paris Block and 87002289 Vallejo Street Crest: 135 findings, 107 resolved, 102 published on 54 pages, 37 of them seeded. 77 of the findings carry a named architect, builder, contractor, developer, engineer or mason, and 24 are a notable past resident or a notable owner's tenure — Ina Coolbrith at three addresses, Willis Polk at two, Dorothea Lange and Maynard Dixon, Anita Whitney, Sara Bard Field, Rose Wilder Lane, Andrew S. Rowan, the Livermores. Their block-and-lot columns were exact every time; what cost them was the city's later condominium splits of two-unit flats, 14 of the 28 unresolved. The **Southern Pacific Company Hospital Historic District (89000319)** is now read too — the last 1980s district nomination and the only institutional campus in this source: 22 findings, 21 resolved, 20 published on 2 pages, both seeded. A campus names buildings and not street numbers, and the one address it does print, 1400 Fell Street, has no EAS record at all; what placed it was the parcel it prints outright, "Lots 2 and 3, City block 1206", whose two lot areas sum to 2.51 acres against the nomination's 2.5. And **all 17 listings certified 1990-1999 are read in full** — two gold-rush storeship sites buried under downtown blocks, two on Yerba Buena Island, the six-building Jackson Brewing Company district and twelve single buildings: 135 findings, 106 resolved, 105 published on 24 pages, 5 of them seeded, 29 unresolved. Thirteen of those 29 are on federal or Port land EAS does not address — the Yerba Buena Island lighthouse, Quarters 1 at 1 Whiting Way, Pier One — and eleven more are two buildings the city condominium-mapped, 465 Tenth Street in 1998 and 1489 Folsom Street in 1993, which wait on #228. The two storeships have no street number either and were still placed, by hand, on the buildings the nominations name as standing over the wrecks. And **all 40 listings certified 2000-2015** apart from the Uptown Tenderloin district, read in two era batches: 196 findings, 169 resolved, 167 published on 33 pages, 6 of them seeded, 27 unresolved — nine on Port or Navy land EAS does not address (the Central Embarcadero piers and five Treasure Island and Yerba Buena Island buildings), fifteen on two condominium-mapped properties waiting on #228 (the Coffin-Redington Building and the State Teachers' College campus at 55 Laguna Street), three on warehouses with no EAS record. What they add to pages that mostly existed is the second layer: the Bank of Italy's 1904 founding on the Colombo Building's site, the Graft Prosecution in Temple Sherith Israel, the United Nations Charter talks in the Fairmont penthouse, the Coit Tower lock-out of 1934. And **all 7 listings certified 2017-2019** — the Federal Office Building, the Henry Geilfuss House, the four-building Sacred Heart Parish Complex, the Central YMCA, The Women's Building, the Swedish American Hall and Glen Park BART: 84 findings, 80 resolved, 71 published on 14 pages, 5 of them seeded, 9 declined as repeats. Forms of this era run 54 to 125 pages, mostly context; what they add to pages that existed is the dated second layer — the Section 504 sit-in of 1977, the Black Panther breakfast programme and the UFW lettuce boycott at Sacred Heart, Golden Gate University's years in the YMCA. And **all 11 listings certified 2020-2023**, whose `_text` path serves only a placeholder, read from the drafts OHP posted for the State Historical Resources Commission and found through the Wayback Machine's index of that folder: 95 findings, 90 resolved, 84 published on 20 pages, 5 of them seeded. Source total: 1,356 findings, 1,203 resolved, 1,144 published. Remaining: 77000334 and 01000281, whose PDFs carry no text layer; OHP's folder also holds drafts for pending and unlisted San Francisco properties, a lead in its own right. |
+| [`sf-context-statements`](sources/sf-context-statements.md) | SF Planning historic context statements & surveys | PDF reports | high | open | 44 documents **and the 81-PDF DPR 523 survey-forms page** read. The survey forms are SF Planning's per-property record and answer #115: 583 per-address forms across two surveys — market-octavia-survey-forms 378 of 473 published on 374 pages, van-ness-auto-row-forms 94 of 110 on 92 pages — 472 published in all on 460 distinct pages, 260 of them seeded by that run and 242 of those in Hayes Valley. 43 of the 81 PDFs are Adobe PDF Packages whose forms are embedded files: `pdftotext` returns the same 621-character shell for every one of them and `pdfdetach` gets the forms out. What remains there is three district-level records and the dated alterations in 111 construction histories. 1 statement remains — the Market & Octavia survey (#115), still to acquire. The **South of Market Area statement is done**: 118 pages read 2026-08-25, then stranded on the abandoned branch of closed PR #161 because that session could not reach `data.sfgov.org`; recovered and published 2026-09-03 — 155 findings, 117 resolved, 103 published on 96 pages, 32 of them seeded by that run. It cites a separate South of Market Area Plan Survey (1,128 DPR 523 forms) as "attached" that is not in the PDF and is not collected. The eight-volume Architecture, Planning & Preservation Professionals biographies collection is **finished**. All thirty-nine with findings files are closed out: market-octavia-hcs 425 of 496 published, mission-dolores-hcs 66 of 83, van-ness-auto-row 352 of 453 on 133 pages, carnegie-libraries 1 of 2, north-beach-hcs 553 of 630 on 352 pages, japantown-hcs 83 of 125 on 53 pages, russian-hill-hcs 57 of 109 on 48 pages, parkside-hcs 147 of 160 on 142 pages, oceanside-hcs 20 of 32 on 19 pages, transit-center-district-survey 211 of 316 on 123 pages, showplace-square-survey 576 of 941 on 314 pages, sunset-builders-hcs 143 of 158 on 143 pages, ppie-marina-hcs 86 of 109 on 86 pages, earthquake-shacks 5 of 11 on 5 pages, neighborhood-commercial-hcs 76 of 99 on 75 pages, large-apartment-hcs 58 of 89 on 52 pages, flats-small-apartments-hcs 52 of 72 on 52 pages, umb-survey 159 of 200 on 159 pages, umb-survey-ratings 1,452 of 1,902 on 1,435 pages, new-deal-hcs 99 of 138 on 76 pages, african-american-hcs 180 of 248 on 174 pages, lgbtq-hcs 289 of 382 on 280 pages, russian-american-hcs 179 of 365 on 164 pages, victorian-era-styles 37 of 45 on 37 pages, progressive-era-styles 63 of 69 on 61 pages, early-settlement-era-styles 29 of 32 on 28 pages, modernistic-styles 20 of 25 on 20 pages, modern-postmodern-styles 182 of 224 on 177 pages, biographies-a-c 317 of 412 on 312 pages, biographies-d-f 138 of 208 on 138 pages, early-residential-development 18 of 26 on 18 pages, soma-filipino-heritage 73 of 153 on 63 pages, clubs-social-halls 38 of 53 on 41 pages, modern-architecture-landscape 273 of 466 on 268 pages, sexual-identity-subcultures 115 of 188 on 63 pages, counterculture-hcs 72 of 111 on 71 pages, biographies-g-i 115 of 176 on 115 pages, biographies-j-l 91 of 125 on 90 pages, biographies-m-o 158 of 247 on 157 pages, biographies-p-r 126 of 223 on 125 pages, biographies-s-u 75 of 152 on 74 pages, and biographies-v-z 43 of 96 on 43 pages; the LGBTQ+ Cultural Heritage Strategy was read in full and yielded nothing, recorded as a zero-finding batch. The 1990 UMB survey is finished — both its inventory forms and its 51-page appendix ratings table. The five-part styles series (Early Settlement, Victorian, Progressive Era, Modernistic, Modern & Postmodern) is complete. The Architecture, Planning & Preservation Professionals biographies are eight volumes and all eight are now read and published: 2,259 numbered-address mentions became 1,639 findings, 1,385 resolved and 1,063 published on 1,017 distinct pages. V-Z is the most duplicated volume in the set — 37 of its 82 resolved findings were already carried by the statement that had documented the same building first. M-O and P-R are the duplicate-heavy volumes: 115 of their 399 resolved findings were declined, 98 because a neighbourhood survey had documented the building first. G-I is the builders' volume of the three: two-thirds of its addresses come from five builder entries, and twelve of its thirty declines are Galli model homes the Sunset builders statement had already documented. The Modern Architecture and Landscape Design statement (2011) is the densest single document in the register: 330 pages, 521 numbered-address mentions, 466 findings. |
 | [`spur-popos-guide`](sources/spur-popos-guide.md) | SPUR, *Secrets of San Francisco* | PDF guide | medium | done | read in full |
 
 City APIs and bulk datasets are **not** registered here — they are in
@@ -59,7 +61,7 @@ The **triaged** column says where a lead stands, in three states:
 - **blank** — nobody has looked. Everything starts here.
 - **a date** — checked and real on that date: it exists, it names street
   numbers with dates, and there is a lawful way in. The sampled evidence is in
-  [Triage notes](#triage-notes) below. Not yet worth a dossier.
+  [TRIAGE.md](TRIAGE.md). Not yet worth a dossier.
 - **struck through** — didn't pan out. Retire it in place with the reason on
   the row, so nobody rediscovers it.
 
@@ -83,8 +85,6 @@ line up.
 
 | lead | why it could be good | how to get at it | triaged |
 |---|---|---|---|
-| San Francisco environmental review documents (EIRs, initial studies, negative declarations) | One document per project, most titled by street address, and it hands over the **assessor's block and lot outright** — plus what stood on the site, when it was built and when it came down. The record of what was demolished, which nothing else on this list covers. | Internet Archive collection `sanfranciscopubliclibrary` — 823 items, 1973–2013, published by the SF Planning Dept., open PDFs each with a `_djvu.txt` text layer | 2026-08-21 |
-| National Register nomination forms | Per-building PDFs with construction dates, architects and a full narrative. Densely addressed, almost never indexed per address. | NPS map service for the index, `npgallery.nps.gov/NRHP/GetAsset/NRHP/<refnum>_text` for the PDF | 2026-08-15 |
 | SF neighborhood newspapers, 1956–2026 | Fifteen-plus papers covering neighborhoods this project has almost nothing on. Block-level reporting, businesses and institutions at numbered addresses. | Internet Archive collection `sanfrancisconewspapers` — one issue per item, OCR text included | 2026-08-15 |
 | HABS/HAER documentation | Measured drawings and a historian's report per building. | LoC collection `historic-american-buildings-landscapes-and-engineering-records`; data pages are text-layer PDFs on `tile.loc.gov` | 2026-08-15 |
 | Article 10 landmark designation reports (SF Planning) | One report per city landmark, address-specific, PDF-only — and the index hands over the APN. | DataSF `97yj-54sx` for the index (address + APN + document URL), then the PDF | 2026-08-15 |
@@ -104,6 +104,7 @@ line up.
 | Sanborn fire insurance maps | Building footprint, material, use and street number, by block, across decades. Not text-searchable anywhere. | LoC Sanborn collection, 40 SF volumes 1886–1950s. Images only — no OCR to mine | 2026-08-15 |
 | Pacific Coast Architecture Database (PCAD) | Per-building records: address, construction and demolition dates, architect, contractor, sourced narrative. | pcad.lib.washington.edu — but see the note: it ranks **first** for address queries, so it is a cross-check, not a target | 2026-08-15 |
 | California Digital Newspaper Collection (CDNC) | Holds *Daily Alta California* 1849–1891, filling the whole pre-1890 gap `loc-newspapers` leaves. | **Blocked** — the search endpoint sits behind a Cloudflare challenge | 2026-08-15 |
+| ~~Sunnyside History Project~~ | ~~A neighbourhood historian's archive of Sunnyside, a district the site has almost nothing on — house-by-house posts with build dates, architects and street numbers.~~ | **Retired — the operator has opted out of AI use.** `sunnysidehistory.org/robots.txt` carries an "AI Scrape Protect" block that names `anthropic-ai`, `ClaudeBot`, `ClaudeResearchBot`, `AnthropicBot`, `Claude-User` and `Claude-SearchBot` under `Disallow: /`, and every page repeats it in markup (`<meta name="robots" content="noai, nosummary, DisallowAITraining">`). Unblocking this is a person writing to the site and asking — see #203. | ~~2026-09-02~~ |
 | ~~McCord's Edwards Abstract from Records (1900–1931)~~ | ~~Abstracts of recorded property transfers, parcel by parcel.~~ | **Retired** — the entries are metes-and-bounds with no street number (`N Haight 131-6 W Gough W 27-6 x N 20`), the parties are individuals and barred by the privacy limits, and the OCR of the tabular pages is unusable. The only numbered addresses in a sampled 9 MB volume are the abstract company's own offices at 318 Pine and 210 Montgomery. | ~~2026-08-21~~ |
 | ~~*Tenant Times* (SF Tenants Union, 1979–1996)~~ | ~~Buildings named in eviction and rent-control coverage.~~ | **Retired** — 40 issues on the Internet Archive (`tenanttimes`); a sampled 1981 issue carries **no numbered street address at all**, and what the paper is about is the people in the buildings, which the privacy limits bar. | ~~2026-08-21~~ |
 | ~~SF Weekly archive~~ | ~~Alt-weekly coverage and listings at venue addresses.~~ | **Retired** — 451 issues on the Internet Archive (`sfweeklyarchive`), but the run starts in 2013 and SF Weekly is fully indexed on the open web. Low search-invisibility over a period the site can source elsewhere. | ~~2026-08-21~~ |
@@ -130,310 +131,9 @@ collection search (`mediatype:collection AND title:"San Francisco"`) returns
 
 ### Triage notes
 
-One entry per lead marked `hold` above — what the triage pass actually found,
-with the sampled example that proves it carries numbered addresses with dates.
-Delete an entry when its lead is promoted; the dossier takes over from there.
-
-**San Francisco environmental review documents.** The San Francisco Public
-Library's Internet Archive collection (`sanfranciscopubliclibrary`, 14,664
-items) holds **823 environmental review documents** published by the SF
-Planning Department between **1973 and 2013** — draft and final EIRs, initial
-studies, negative declarations and supplements. **172 of them are titled by
-street address** ("101 California Street : [draft] environmental impact
-report"); the rest are area plans and project names. Ten sampled at random were
-**all** open — no `access-restricted-item`, a `_djvu.txt` text layer on every
-one — and all name the SF Dept. of City Planning as publisher, so this is
-municipal work product, not a lending-library book. One document is one batch,
-which makes it as startable as the National Register row.
-
-**What it gives that nothing else here does.** An EIR describes the site
-*before* the project, so it is the record of buildings that no longer exist —
-and it states the parcel outright. **Sampled:** `280divisaderostr5200sanf`
-puts 280 Divisadero Street at "Assessor's Block 1238, Lot 23", a 6,875 sq ft
-double lot, identifies it as City Landmark No. 190, the Charles L. Hinkel House
-and carriage house, and dates the carriage house's second residential unit to
-before 1964 and its abandonment to around 1981. A second, `101californiastr1819sanf`
-(1979), records that the 49,000 sq ft building formerly at 101 California
-Street "was demolished in 1974 after a destructive fire". Both give a date, a
-street number and a page-level citation.
-
-**Cautions.** Downtown is heavily over-represented — the 1970s–80s highrise
-boom is most of the run — so neighborhood coverage is thin and clustered.
-Project descriptions are proposals, not outcomes: an EIR says what was
-*intended*, and whether it was built is a separate check against the assessor.
-And these documents name project sponsors and property owners, which the
-privacy limits bar; take the buildings.
-
-**National Register nomination forms.** 166 San Francisco listings, 135 of them
-with a numbered street address. The NPS map service
-(`mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/0`,
-query `City='San Francisco'`) returns reference number, resource name, address
-and certification date in one call — that is the index. The nomination PDF is
-then at `npgallery.nps.gov/NRHP/GetAsset/NRHP/<refnum>_text`, and all three
-sampled (73000441, 78000757, 71000183) returned a PDF with a usable OCR text
-layer. Federal work product, public domain. **Sampled:** the Civic Center
-district nomination (78000757, 85K characters of text) names 99 Grove Street,
-355 and 450 McAllister Street, 45 Hyde Street and 200 Larkin Street among
-others; the 1973 form 73000441 gives 762 Fulton Street. One nomination is one
-batch, which makes this the most startable thing on the list.
-
-**SF neighborhood newspapers, 1956–2026.** The original lead named five papers
-and pointed at each one's own website; that is the wrong access path. The right
-one is a single Internet Archive collection, `sanfrancisconewspapers`, holding
-**2,358 issues** contributed by a collaborative of neighborhood history groups,
-each with a `_djvu.txt` OCR file. Titles include Noe Valley Voice (273 issues),
-The Potrero View (190), Richmond ReView (228 across two title spellings),
-Visitacion Valley Grapevine (116), New Mission News (111), OMI News (71), North
-Mission News (68), New Bernal Journal and Bernal Journal (118), Tenderloin
-Times (64), Park Bell (51), The Semaphore / Telegraph Hill Semaphore (75), Glen
-Park News (33), The New Fillmore (23). **Sampled:** *The Potrero View*, June
-1999 — the Victoria Theater at 2961 Sixteenth Street, the Potrero Hill Health
-Center at 1050 Wisconsin Street, the Neighborhood House at 953 DeHaro Street.
-OCR doubles its spaces, so match on `\d+\s+Street` rather than a single space.
-Two cautions: no explicit license on the items (facts are free, the OCR text is
-not ours to redistribute), and these papers are thick with residents, obituaries
-and donors — the privacy limits bite harder here than anywhere else in the
-register. Marina Times and Westside Observer, both named in the original lead,
-are **not** in this collection.
-
-**SF Redevelopment Agency property summaries.** 106 items on the Internet
-Archive under `sanfranciscoredevelopmentagencyrecords`, from SFPL's SFH 371,
-covering Western Addition A-1 and A-2 and Yerba Buena. **Public domain, CC0
-marked**, with a requested credit line: "From the San Francisco History Center,
-San Francisco Public Library." The payload is a per-parcel SFRA survey form
-(FORM P-10, dated 8/10/62) carrying block and lot, parcel dimensions, number and
-type of improvements, assessed land and improvement value, zoning, an exterior
-and interior condition survey with dates, and a **recommendation for disposition
-— retain, rehabilitate, move, or demolish**. For the neighborhoods the
-redevelopment program erased, this is the record of what stood there, and it is
-keyed to block and lot, which is the resolver's answer handed over directly.
-**Sampled:** item `SFH371-5054_0`, "Western Addition Property Summary", blocks
-1126 to 1130. **Two hard cautions.** The forms are handwritten on printed
-stock and the OCR of them is close to unusable — dimensions come through as
-`25! x [Ob` — so extraction here means a vision pass over page images, not a
-text scan. And the collection includes items titled "Western Addition.
-Community: Identified People" and "Identified people relocated" — files about
-displaced residents by name. Those are exactly what the root
-[AGENTS.md](../AGENTS.md) privacy limits forbid, the displacement makes them
-more sensitive rather than less, and no amount of public-domain status changes
-it. Take the buildings. Leave the people.
-
-**HABS/HAER documentation.** 384 San Francisco items, 104 with a street number
-in the title. 126 are military installations (Presidio, Treasure Island,
-Alcatraz, Fort Mason), whose addresses will mostly not exist in EAS, and the
-numbered civilian ones cluster heavily in a handful of projects — real distinct
-coverage is perhaps 40–60 buildings. The payload is the "data pages": a written
-historian's report, reachable at
-`tile.loc.gov/storage-services/master/pnp/habshaer/ca/ca<NN00>/ca<NNNN>/data/ca<NNNN>data.pdf`
-and carrying a text layer that `pdftotext` reads directly — no OCR step needed.
-Public domain. **Sampled:** ca3559, North Beach Place Building 1 at 415 Bay
-Street — designed 1941–42, built 1950–52, demolished 2001–03, with the
-architect and the housing authority named.
-
-**Article 10 landmark designation reports.** DataSF's `97yj-54sx` carries 370
-rows, each with the landmark name, address, **APN** and a direct URL to the
-designation document — so this is the one lead where resolution is handed over
-for free rather than being the hard part. The documents themselves live on
-`files.sfplanning.org` or `sfplanninggis.org`, not DataSF. Text quality is
-mixed: LM100 (the Castro Theatre) has a clean text layer naming "429-431 Castro
-Street, Assessor's Parcel Block No. 3582, Lot No. 085", and the two district
-documents sampled are large and text-bearing (LM271, 75pp; LM300, 235pp), but
-LM11 and LM200 are image-only and would need OCR. Same publisher as
-`sf-context-statements` but an entirely separate corpus.
-
-**San Francisco City Planning Commission minutes.** 109 volumes in the same
-SFPL collection, **1946–1984**, each with a `_djvu.txt`. The payload is the
-case calendar: a case number, the address, the zoning, the request, the date
-and the Commission's decision. **The address line carries a survey bearing**,
-which is exactly what the resolver needs where a street number alone is
-ambiguous. **Sampled:** `10minutesofsanfran1969san` — "CU67.13 960 Haight
-Street, north line, east of Broderick Street; and Broderick Street, east line,
-between 112.5 feet and 137.5 feet north of Haight Street. Request for 100-bed
-convalescent hospital for long-term psychiatric care on property zoned R-3 and
-R-4", carried over from the meeting of 7 August 1969. The same volume names 801
-and 731 Grove, 751 and 725 Webster, 1280 Ellis and 6021 Geary. **Caution:** 100
-Larkin Street is the top numbered token in every volume and it is the library's
-and the Commission's own address, not a case — the same advertiser-address trap
-the trade-journals note describes. Volumes are undated in the IA metadata; the
-year is in the text.
-
-**Period trade journals.** Two runs, mined identically, so they are one lead.
-***Architect and Engineer of California***: 214 issues on the Internet Archive
-under `usmodernist-AECA-*`. ***Building & Engineering News***: 35 volumes under
-`buildingengineer*`, digitized with SFPL funding, roughly 9 MB of OCR text per
-volume. Both are dense with architects, contractors, costs and dates, and both
-carry the weekly contract-award column — a sampled 1928 entry gives a
-three-storey 69-room apartment building, $80,000, with the owner, the heating
-contractor and the architect's firm all named and addressed.
-
-**The catch is the same one `loc-newspapers` already documents, twice over.**
-First, the contract notices identify buildings by corner, not by number: the
-1912 *Architect and Engineer* award for the Sharon building places it "on the
-northeast corner of New Montgomery and Jessie streets" with a $375,000 price and
-the architect named, and no street number anywhere. Second, the numbered
-addresses that *are* dense in the text are mostly advertisers' and architects'
-own offices — in one *Building & Engineering News* volume the 5,427 numbered
-street tokens are topped by 354 Hobart (125 times) and 251 Kearny (102), which
-are firms' addresses, not building facts. The usable material is in the long
-tail. Expect a low resolve rate and a resolver-heavy pass, and note that a
-sampled volume ran heavily to Oakland and the wider Bay Area, so a filtering
-step for San Francisco comes before anything else.
-
-**Bay Area Reporter archive.** 1,529 issues on the Internet Archive under
-collection `bayareareporter`, contributed by the GLBT Historical Society,
-identifiers of the form `BAR_YYYYMMDD`, each with OCR text. This is a much
-cleaner path than CDNC, which also holds the paper but is walled. **Caution:**
-the items carry an explicit "Copyright BAR Media, Inc." — facts extract freely
-under the evidence bar, the text does not get committed or reproduced. Note the
-register already lists Bay Area Reporter under `local-news` as a browse-only
-reference; mining the archive is a different activity and wants its own id.
-
-***East/West: The Chinese-American Journal.*** 1,125 issues on the Internet
-Archive under collection `eastwestnews`, **1967–1989**, contributed through
-SFPL, with OCR text on each. Chinatown, the Richmond and the Sunset in a
-weekly that no address query will ever return. **Density is thin and it is
-mostly commercial:** five issues sampled across the run (1967, 1972, 1978,
-1984, 1989) carried roughly 5–15 numbered addresses each — 758 Commercial
-Street, 900 and 857 Grant Avenue, 724 Pacific Avenue, 777 Stockton Street, 1119
-Clement Street, 1127 Market Street. Over 1,125 issues that is a few thousand
-mentions, which is a real harvest at this module's usual rate. **Three
-cautions.** The OCR is mixed Chinese and English and the Latin text is mangled
-(commas render as `，`, and `838 Grant Avenue` recurs across years as an
-advertiser, not a fact). The masthead address (863 Stockton Street) will top
-any frequency count. And the issues carry an explicit "Copyright 1967 by
-EAST/WEST Publishing Company" — facts extract freely, the text does not get
-committed.
-
-**Crocker-Langley city directories.** 41 volumes on the Internet Archive with
-full OCR. **The privacy limit removes most of the book.** A sampled slice of the
-1900 volume is almost entirely residents, marked with `r.` for residence — all
-of it off-limits under the root AGENTS.md. What survives is the business entry
-sitting in the same alphabetical run: a contractors-and-builders firm at 667
-Market, a laboratory director's office at 803 Sutter. An extractor here must
-filter on the `r.` marker and keep only firms, which is a narrow slice of a
-13 MB text file. OCR is also poor — words are space-broken mid-token. The lead
-said "pre-1930"; the successor Polk's Crocker-Langley volumes are on the
-Internet Archive too (`polkscrockerlang194849dire` and siblings), so the run
-extends at least to 1949 if the business slice proves worth mining.
-
-**SF Municipal Reports.** 68 volumes on the Internet Archive covering FY1859–60
-through FY1913–14, plus a separate index volume to the appendices 1859–1901.
-Not yet sampled for address density — that is the first thing an acquire pass
-should measure.
-
-***Here Today* and *Splendid Survivors*.** The two standard building-by-building
-surveys of San Francisco's architecture, and the ones the city's own
-environmental documents cite as authority — the 101 California EIR sampled
-above refers to "the 1968 catalogue and description of architecturally
-outstanding buildings built before 1920 (Olmsted, Roger, and T.H. Watkin, 1968,
-*Here Today*)". All three editions are on the Internet Archive
-(`heretodaysanfran00olms` 1968, `heretodaysanfran0000olms` 1978,
-`splendidsurvivor00corb` 1979, the downtown survey). **All three are
-lending-restricted**: `access-restricted-item: true`, collection `inlibrary`,
-and a direct fetch of the `_djvu.txt` returns **401**. Per "Corpora on disk" in
-[AGENTS.md](AGENTS.md) that makes this `needs-human`, not something to route
-around — a person borrows the scan or reads the copy at SFPL. Worth the ask:
-these are per-address entries with dates and architects, in books that have
-been out of print for decades. Not yet sampled for content, because sampling it
-is the thing that needs a person.
-
-**Journal of Proceedings, Board of Supervisors.** 157 volumes in the SFPL
-collection, **1906–1999**, roughly 4 MB of OCR each. **Sampled:**
-`journalofproceed34sanfrich` (1939) — the assessment-appeal schedules put named
-firms at numbered addresses on dated days: "Barron & Rossi, 998 Folsom St.
-Assessment erroneous, excessive, reassessed. Tax paid to Assessor, Aug. 11,
-1938"; the same run gives Crosley Radio Corporation, Lewittes & Sons and
-Stakmore Co. all at 1355 Market St. That is a dated occupancy record for a
-business at a street number, which is usable. **But it ranks low, for two
-reasons.** The appeal schedules interleave firms with individuals — "Anna
-Crljenko, 930 Fillmore St." on the next line — so an extractor needs the same
-person-name filter the city-directories note describes, and most of a volume is
-not about buildings at all. Street name changes and street acceptances are the
-other seam here and have not been sampled.
-
-**Western Neighborhoods Project *Outside Lands* magazine.** 36 issue PDFs listed
-at outsidelands.org/publications/. **Access caution:** a plain `curl` for the
-PDF returns 403; a browser-context fetch retrieves it fine. **Sampled:** volume
-21 number 3 names Little Woman Variety & Foods at 2722 Clement Street with a
-photo credit. The weakness is datedness — captions run to "circa 1980" as often
-as to a year, and undated claims are nearly unusable under the evidence bar.
-Same organization as OpenSFHistory, so reuse terms are one conversation, not
-two.
-
-**OpenSFHistory photo captions.** Same organization as WNP above. Terms are
-explicit and workable: 1,000-pixel watermarked images are free for personal and
-educational use, the watermark must not be cropped, WNP does not hold copyright
-to everything in the collection, and the requested credit line is
-`OpenSFHistory/<file number>` — for example `OpenSFHistory/wnp15.556` — linking
-back to opensfhistory.org. That is the citation label a page would print. Facts
-in a caption are free regardless. **Sampled:** a caption dating a single-family
-residence at 1354 32nd Avenue, between Irving and Judah, to 1950.
-
-**SFMTA Photo Archive.** Muni photography from 1903 to 1978, of which the
-agency says over 95% is digitized, browsable on PhotoShelter. Copies up to 1,200
-pixels are free on request for non-commercial use; they are not to be sold or
-used in advertising, and there is no bulk download — every image is a request.
-That request gate, plus the likelihood that transit photography is captioned to
-the intersection rather than the street number, puts this well down the list.
-Worth a pass only once the cheaper sources are exhausted, or when a specific
-address needs a photograph and nothing else has one.
-
-**San Francisco block books, 1894–1909.** Twelve volumes on the Internet
-Archive (`handyblockbookof1894hick`, `sanfranciscobloc1901hick`,
-`merysblockbookof1909bloc`, the 1906 volumes and others), digitized with SFPL
-funding. **This is not a page source and should not be treated as one.** The
-volumes are map plates: block outlines with lot lines, lot dimensions and owner
-names lettered onto the drawing. The `_djvu.txt` is consequently noise — a
-sampled page of the 1901 volume yields scattered surnames and fragments like
-`S7-` where dimensions should be. Owner names are people and barred regardless.
-What survives is genuinely useful but narrow: **pre-1906 lot geometry**, which
-the resolver already uses as a corroborating check (see the cautions in
-[sources/loc-newspapers.md](sources/loc-newspapers.md) on matching 25x125 against
-a parcel's `lot_area`). Register it, if at all, as a resolver aid.
-
-**Pacific Coast Architecture Database.** Per-building records of real quality —
-the Crocker Building entry gives 600 Market Street, constructed 1890–1891,
-demolished 1968, ten storeys, the architect, the building contractors, latitude
-and longitude, and a narrative with its sources named. **And that is the
-problem.** A plain web search for "600 Market Street San Francisco Crocker
-Building history" returns the PCAD record as the **first result**. By the
-standard set at the top of [AGENTS.md](AGENTS.md), a source already ranking for
-address queries adds little to why this site exists. Keep it where `local-news`
-sits — a cross-check for a fact found elsewhere, and a way to catch an
-architect attribution that contradicts ours. Not a mining target.
-
-**Sanborn fire insurance maps.** 40 San Francisco volumes at the Library of
-Congress, 1886 onward, explicitly public domain and free to reuse. **But the
-online format is `image` with no OCR and no text layer at all**, so every fact
-has to be read off a map by eye or by vision model. Nothing else on this list
-has that cost. There is also no obvious finishable batch unit yet — "one sheet"
-is too small to be worth an issue and "one volume" may be hundreds of sheets.
-Working out the batch unit is the precondition for this one, not the mining.
-
-**California Digital Newspaper Collection.** The prize is real: CDNC holds 33
-San Francisco titles, and the one that matters is ***Daily Alta California*,
-1849–1891**, which covers the entire period before `loc-newspapers` begins in
-1890. Also there: the Elevator (1865–1898) and Pacific Appeal (1862–1880), both
-Black press; Organized Labor (1900–1988); Labor Clarion (1906–1947); Vestkusten
-(1887–2007); Italia (1897–1919). **The search endpoint returns a Cloudflare
-managed challenge to automated requests.** Under "Corpora on disk" in
-[AGENTS.md](AGENTS.md) that makes it a `needs-human` matter, not something to
-route around. Two things a person could do, in order: check whether Chronicling
-America itself holds *Daily Alta California* — if it does, the existing
-`loc-newspapers` tooling mines it with no wall to negotiate — and, failing that,
-ask UCR whether they will grant API or bulk access.
-
-**Rejected in the 2026-08-21 pass, with what was actually checked.**
-*McCord's Edwards Abstract from Records* (37 volumes, 1900–1931, collection
-`sfpl_mccords-edwards-abstract-from-records`) is the metes-and-bounds trap in
-its purest form: a sampled 9 MB volume gives transfers as `N Haight 131-6 W
-Gough W 27-6 x N 20` with no street number anywhere, the grantors and grantees
-are individuals and barred, and the only numbered addresses in the whole file
-are the abstract company's own offices at 318 Pine (126 times) and 210
-Montgomery (54). *Tenant Times* (40 issues, `tenanttimes`) — a sampled 1981
-issue contains no numbered street address at all, and the paper's subject is
-the people in the buildings. *SF Weekly archive* (451 issues, `sfweeklyarchive`)
-— the run starts in 2013 and the paper is fully indexed on the open web.
+Every `hold` lead above has an entry in **[TRIAGE.md](TRIAGE.md)** recording
+what the pass found and the sampled example behind the verdict. Look a lead up
+there before triaging it again; delete its entry when the lead is promoted.
 
 ## Adding a source
 

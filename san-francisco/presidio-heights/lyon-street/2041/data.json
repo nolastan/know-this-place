@@ -1,0 +1,96 @@
+{
+  "address": "2041 Lyon Street, San Francisco, CA 94115",
+  "path": "/san-francisco/presidio-heights/lyon-street/2041/",
+  "apn": "0998002",
+  "block": "0998",
+  "lot": "002",
+  "eas_baseid": "292360",
+  "coordinates": {
+    "lat": 37.789793,
+    "lng": -122.446229
+  },
+  "parcel": {
+    "year_built": 1904,
+    "stories": 3,
+    "rooms": 13,
+    "bathrooms": 2,
+    "lot_area_sqft": 6185,
+    "building_area_sqft": 6424,
+    "use": "Commercial Misc",
+    "property_class": "Clubs,Lodges,Fraternal Organizations",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Pacific Heights",
+    "analysis_neighborhood": "Presidio Heights",
+    "property_location_raw": "0000 2041 LYON                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 160541,
+    "assessed_improvement_value": 20525
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1904",
+    "survey_name": "RUSSIAN VETERAN'S SOCIETY",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9813718",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-07-20",
+      "status_date": "1999-01-20",
+      "estimated_cost": 9500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LYON&street_type=ST&address_number=2041",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0998002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0998&lot=002",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0998002",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "russian-american-context-statement",
+      "name": "Nina Bogdan, Russian American Historic Context Statement, San Francisco Planning Department, adopted by the Historic Preservation Commission October 15, 2025",
+      "query": "https://sfplanning.org/node/3132",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "retrieved": "2026-08-30"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1934",
+      "kind": "occupancy",
+      "description": "Built in 1904 and bought in 1934 by the Society of Russian Veterans of World War I as a mutual-benefit house where veterans rented rooms; the Society of Former Russian Cadets joined it in the 1950s and the building still holds their museum.",
+      "source": "russian-american-context-statement"
+    }
+  ]
+}

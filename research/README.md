@@ -9,12 +9,13 @@ everything here is about **finding it** — reading newspaper archives, mining
 survey PDFs, combing newsletters, and turning what turns up into verified,
 sourced facts a page can carry.
 
-Two documents run it:
+Three documents run it:
 
 - **[AGENTS.md](AGENTS.md)** — the rulebook. Why the module exists, what a run
-  is, the evidence bar, the statuses, and the lessons that already cost
-  something.
+  is, the evidence bar, the statuses. Short on purpose; read it whole.
 - **[RUNBOOK.md](RUNBOOK.md)** — the procedure, step by step.
+- **[LESSONS.md](LESSONS.md)** — 147 traps that already cost a session or a
+  correction. A register to grep before a step, never to read front to back.
 
 ## What we're looking for
 
@@ -52,13 +53,16 @@ has its own half of the runbook.
 
 ```
 research/
-  AGENTS.md          The rulebook: goal, the run, evidence bar, statuses, lessons
+  AGENTS.md          The rulebook: goal, the run, evidence bar, statuses
   RUNBOOK.md         The procedure: both kinds of run, step by step
+  LESSONS.md         The traps, one bullet each — grep, don't read
   README.md          This file
   SOURCES.md         The register — every source, its status and its yield —
-                     plus the leads table and the triage notes
+                     plus the leads table
+  TRIAGE.md          What a prospecting pass found, one entry per held lead
   sources/<id>.md    One dossier per source: access, cautions, coverage log
   findings/          The chain of custody, one JSON file per batch
+  findings/INDEX.md  What each batch covers — read this, never the files
   schema/            The findings JSON schema
   manifests/         Parcel lists produced here, consumed by seed_pages.py
   templates/         Dossier skeleton and GitHub issue bodies
@@ -73,10 +77,20 @@ research/
 ```bash
 python3 research/tools/check.py          # register ↔ dossiers, findings ↔ schema
 python3 research/tools/check.py --stats  # the dashboard: yield and open loops
+python3 research/tools/check.py --index  # rebuild findings/INDEX.md (it's derived)
 ```
 
 `--stats` is the one place to look for where things stand. Its `open` column —
 resolved findings nobody has published or declined — is the module's to-do list.
+
+The findings files are tens of megabytes and the largest is past what a context
+window holds, so **nothing reads one**. [findings/INDEX.md](findings/INDEX.md)
+says what each batch covers, and two commands get entries out of one:
+
+```bash
+python3 research/tools/check.py --peek research/findings/<id>/<batch>.json
+python3 research/tools/check.py --find "1377 Fulton"
+```
 
 Agents working in Claude Code have a `/research` skill
 ([../.claude/skills/research/SKILL.md](../.claude/skills/research/SKILL.md)):
@@ -85,5 +99,5 @@ Agents working in Claude Code have a `/research` skill
 above, not a substitute for them.
 
 Site-side commands a run needs when it publishes (`seed_pages.py seed-list`,
-`build_sitemap.py`, `build_map_index.py`, `validate.py`) are documented in the
-root [README.md](../README.md) and [AGENTS.md](../AGENTS.md).
+then `build_site.py` and `validate.py`) are documented in the root
+[README.md](../README.md) and [AGENTS.md](../AGENTS.md).

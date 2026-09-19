@@ -1,0 +1,109 @@
+{
+  "address": "1518–1522 Jackson Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/jackson-street/1518/",
+  "apn": "0596010",
+  "block": "0596",
+  "lot": "010",
+  "eas_baseid": "438154",
+  "coordinates": {
+    "lat": 37.794532,
+    "lng": -122.420223
+  },
+  "address_range": "1518–1522",
+  "street_numbers_on_parcel": [
+    "1518",
+    "1520",
+    "1522"
+  ],
+  "parcel": {
+    "year_built": 1909,
+    "units": 3,
+    "stories": 3,
+    "rooms": 19,
+    "bathrooms": 3,
+    "lot_area_sqft": 2565,
+    "building_area_sqft": 5580,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "1522 1518 JACKSON             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 70204,
+    "assessed_improvement_value": 106474
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201108031602",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-08-03",
+      "status_date": "2011-08-03",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2011–2012",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JACKSON&street_type=ST&address_number=1518",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0596010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0596&lot=010",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0596010",
+      "retrieved": "2026-08-30"
+    },
+    {
+      "id": "russian-american-context-statement",
+      "name": "Nina Bogdan, Russian American Historic Context Statement, San Francisco Planning Department, adopted by the Historic Preservation Commission October 15, 2025",
+      "query": "https://sfplanning.org/node/3132",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "retrieved": "2026-08-30"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1930s",
+      "kind": "occupancy",
+      "description": "A Russian émigré doctor's surgery was at this address in the 1930s.",
+      "source": "russian-american-context-statement"
+    }
+  ]
+}

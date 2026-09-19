@@ -1,0 +1,139 @@
+{
+  "address": "230 Palo Alto Avenue, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/palo-alto-avenue/230/",
+  "apn": "2722024",
+  "block": "2722",
+  "lot": "024",
+  "eas_baseid": "345179",
+  "coordinates": {
+    "lat": 37.756899,
+    "lng": -122.451784
+  },
+  "parcel": {
+    "year_built": 1961,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 3249,
+    "building_area_sqft": 1943,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Clarendon Heights",
+    "analysis_neighborhood": "Twin Peaks",
+    "property_location_raw": "0000 0230 PALO ALTO           AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 940625,
+    "assessed_improvement_value": 313534,
+    "last_sale_date": "1998-12-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1961",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Palo Alto Avenue Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1937–1964",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202505086051",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-05-08",
+      "status_date": "2025-05-16",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "re-roofing approx 15sq - no hot works.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200610266148",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-10-26",
+      "status_date": "2006-12-01",
+      "estimated_cost": 13050,
+      "revised_cost": 13050,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9705804",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-03-31",
+      "status_date": "1997-07-17",
+      "estimated_cost": 18000,
+      "description": "kitchen and bathroom remodeling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PALO%20ALTO&street_type=AVE&address_number=230",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2722024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2722&lot=024",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2722024",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4517843677454%2037.75689899850816)%27)",
+      "retrieved": "2026-09-01"
+    },
+    {
+      "id": "modern-architecture-context-statement",
+      "name": "Mary Brown, San Francisco Planning Department, San Francisco Modern Architecture and Landscape Design 1935-1970 Historic Context Statement, adopted 12 January 2011",
+      "query": "http://sfplanninggis.org/docs/Historical_Context_Statements/Modern%20Architecture%20Context%20adopted%20Jan%202011.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Modern Architecture and Landscape Design Context Statement, adopted 2011",
+      "retrieved": "2026-09-01"
+    }
+  ],
+  "building": {
+    "architect": "Charles Warren Callister",
+    "completed": 1960
+  },
+  "historical_record": [
+    {
+      "date": "1960",
+      "kind": "construction",
+      "description": "A house of 1960 by Charles Warren Callister.",
+      "source": "modern-architecture-context-statement"
+    }
+  ]
+}

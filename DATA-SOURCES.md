@@ -53,6 +53,32 @@ an app token (header `X-App-Token`) lifts throttling if we ever need it.
 
 ---
 
+## What you are looking for
+
+Each section below is self-contained. **Read the row you need, not the file.**
+
+| To find | dataset |
+|---|---|
+| whether an address exists at all, and its parcel | [`sf-eas-addresses`](#sf-eas-addresses--addresses-enterprise-addressing-system) |
+| year built, units, rooms, areas, assessed value | [`sf-assessor-roll`](#sf-assessor-roll--assessor-historical-secured-property-tax-rolls) |
+| what work was done, when, and what it cost | [`sf-building-permits`](#sf-building-permits--building-permits) |
+| zoning, land use, and the historic-resource code | [`sf-planning`](#sf-planning--parcels-zoning-historic-resources) |
+| a parcel's geometry, and its retired APNs | [`sf-parcels`](#sf-parcels--parcels-active-and-retired) |
+| a downtown building's public plaza or terrace | [`sf-popos`](#sf-popos--privately-owned-public-open-spaces) |
+| art the 1% requirement put on a parcel | [`sf-public-art`](#sf-public-art--public-art-1-art-program) |
+| which historic district an address stands in | [`sf-historic-districts`](#sf-historic-districts--historic-district-boundaries) |
+| a period photograph | [`historical-imagery`](#historical-imagery--opensfhistory--wikimedia-commons) |
+| the Street View still on a page | [`streetview`](#streetview--google-maps-embed-api-live-embed-only) |
+| a survey form's own assessment of a building | [`sf-dpr-forms`](#sf-dpr-forms--historic-resource-survey-forms-primary) |
+| which school has occupied a campus, and when | [`cde-school-directory`](#cde-school-directory--california-school-directory) |
+| anything in an archive, book, newspaper or newsletter | [research/SOURCES.md](research/SOURCES.md) |
+
+The first five are the ones `seed_pages.py` joins to make a page. What each
+section still can't tell you is in [Known gaps](#known-gaps); adding a source
+here is [Adding a source](#adding-a-source).
+
+---
+
 ## sf-eas-addresses — Addresses (Enterprise Addressing System)
 
 - **What:** The city's canonical address registry: every address, its APN,
@@ -149,6 +175,13 @@ an app token (header `X-App-Token`) lifts throttling if we ever need it.
   parcel whose only local finding is the work program stays `ceqacodea10a11`
   = A, while all 58 parcels here carrying `Article 10 Individual Landmark`
   and all 118 carrying `Article 11 Individual` are A*.
+- **A city landmark's designation year is `97yj-54sx`** (Landmarks Listed in
+  Article 10), one row per landmark: `landmarkno`, `name`, `address`, `apn`,
+  `yeardesignated` and the designation report's URL. Query it by number,
+  `https://data.sf.gov/resource/97yj-54sx.json?landmarkno=237`; page source id
+  `sf-planning-landmarks`. Its `apn` is not always the page's parcel — Julius
+  Castle is 0079004 here and 0079005 in `3tsw-4idn`, and both carry the
+  landmark — so match on the number, not the parcel.
 - **Citation label:** "SF Planning Department"
 - **Verified:** 2026-07-27 (4,475 Castro parcels fetched by `apn` in chunks of
   400; apn 2752016 = 744 Castro St → ceqacode B). `ceqacodereason` tokens
@@ -318,7 +351,7 @@ an app token (header `X-App-Token`) lifts throttling if we ever need it.
 ## streetview — Google Maps Embed API (live embed only)
 
 - **What:** Present-day imagery for every page via a live Street View embed.
-- **How:** iframe snippet in [shared/AGENTS.md](shared/AGENTS.md), using
+- **How:** the `<ktp-streetview>` block in [shared/BLOCKS.md](shared/BLOCKS.md), using
   `maps_embed_key` from `shared/site-config.json` and coordinates from
   `data.json`. Free at any volume in embed form.
 - **Do not test, validate, or preview the embed. Ever.** `maps_embed_key` is
@@ -327,7 +360,7 @@ an app token (header `X-App-Token`) lifts throttling if we ever need it.
   A failed embed in local preview is the key working as configured — it is not
   a bug, there is nothing to diagnose, and confirming it costs tokens to
   re-learn a fact this file already states. Author the `<ktp-streetview>`
-  placeholder from `shared/AGENTS.md`, and move on. The only thing to check is
+  placeholder from `shared/BLOCKS.md`, and move on. The only thing to check is
   that `location="LAT,LNG"` matches `coordinates` in `data.json`.
 - **Hard rule:** **Never download, screenshot, or commit Street View imagery
   into `assets/`** — that violates Google's terms. Live embed only.
@@ -346,8 +379,48 @@ an app token (header `X-App-Token`) lifts throttling if we ever need it.
   building was "completed in 1983"). Record both.
 - **Citation label:** "State of California DPR 523 form for <address>, via SF
   Planning"
+- **Verified:** 2026-09-09 (3 of the 14 theatre parcels of issue #302 have a
+  form: 4266036 → 2761 24th Street, "Brava Theater", Page & Turnbull for the
+  Eastern Neighborhoods Mission Survey, 2007; 3589108 → 777 Valencia Street,
+  Tudor Revival, 2006; 3969001 → 475–499 Alabama Street, American Can Co. The
+  other eleven 404. **A 404 body is 1,245 bytes of HTML, not an empty file** —
+  check the status code, not the size.)
 - **Verified:** 2026-08-06 (apn 3708097 → 25 Jessie Street / One Ecker Square,
   Jorge de Quesada, 1982–83)
+
+## cde-school-directory — California School Directory
+
+- **What:** The state's register of every California public school, with the
+  address it operates at and — the reason to come here — its **open and closed
+  dates**. A school campus changes hands without a permit, a sale or a roll
+  entry, so for a public school this is the only record of who taught in the
+  building and until when. 555 Portola Drive carries three: McAteer High,
+  closed 2002; the School of the Arts, still open; and a second high school
+  that ran on the same campus from 2009.
+- **Endpoints:** one school —
+  `https://www.cde.ca.gov/SchoolDirectory/details?cdscode=<14-digit CDS code>`;
+  the bulk file — `https://www.cde.ca.gov/SchoolDirectory/report?rid=dl1&tp=txt`
+  (tab-separated, ~9 MB, every school in the state, so filter it locally on
+  `County` and `Street` rather than trying to query it).
+- **Key fields:** `School`, `Street`, `StatusType` (Active / Closed),
+  `OpenDate`, `ClosedDate`, `SOCType`, `GSserved`, `CDSCode`, `District`.
+- **Cautions:**
+  - **`OpenDate` is often the database's start, not the school's.** Schools
+    predating the register share `07/01/1980`, including ones documented at
+    their address years earlier. Treat a 1980 open date as unknown, and say so
+    in `unknowns` where a page's other sources contradict it. `ClosedDate` is
+    specific and does not have this problem.
+  - The directory is **self-reported by districts and unverified**, which the
+    CDE states on every record.
+  - **`Administrator` names a person — never copy it** (AGENTS.md privacy
+    rules). The street address and the dates are what a page takes.
+  - The address on a record is the school's **current** one, so it dates the
+    school, not its tenancy of that building. A school's open date is not the
+    date it arrived at the address on its record.
+- **Citation label:** "California Department of Education, California School
+  Directory"
+- **Verified:** 2026-09-08 (bulk file, 18,399 rows; three schools at 555
+  Portola Drive — CDS 38684783830072, 38684783830387, 38684780119958)
 
 ## Research sources — cataloged in `research/`
 

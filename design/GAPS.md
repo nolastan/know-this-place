@@ -22,4 +22,35 @@ fills it.
 
 ---
 
-*Empty.*
+- `2026-09-12` **Referral offer claimed with a code (issue #278)** — the panel's
+  call to action is specified as one outlined button, and nothing covers an
+  offer the button cannot claim, where the reader has to carry a string away
+  with them. Took the accent off the button and gave it to the code: the code
+  keeps the outlined box, states the offer over itself on a muted line, and is
+  set in a new `--mono`, while the merchant's link drops beneath it as an
+  ordinary underlined link labelled with its host. Nothing covers a whole
+  container as a click target either; guessed `role="button"` and the `ic-copy`
+  icon added by the script, so the pointer, the hover and the icon exist only
+  where the copy does. No rule for how a transient "Copied" state should read;
+  guessed the icon swapping to `ic-check` with the box's border going `--ok`
+  for 2.5s, plus a visually-hidden live region.
+- `2026-09-08` **Permit timeline items, tightened (issue #285)** — nothing covers
+  what a documented indicator becomes when the decision removes its colour
+  channel: the `.cost` tier is specified as "a rising warm hue", the issue took
+  the hue away, and "never introduce new colours" leaves lit-glyph count on ink
+  as the only move. Guessed the meta row's own `--muted` for the lit glyphs so
+  the row reads in one tone.
+- `2026-09-08` **Permit timeline items, tightened (issue #285)** — BLOCKS.md
+  names two kinds of deliberately excluded filing for the line under the rail
+  ($1 street-space, DBI duplicates) and no rule for a third; guessed that a
+  status the render drops wholesale is the same kind of admission, counted in
+  the same line, and that a stored `permit_summary.note` takes the second
+  clause rather than a second sentence.
+- `2026-09-11` **Current occupant panel (issue #283)** — nothing covers an
+  outbound commercial call to action (a referral link) on an address page, or
+  how loud it may be; guessed a full-width outlined button in `--accent` with a
+  muted disclosure line beneath, as the one place on the page to spend the
+  accent. Nor is there a rule for weekly opening hours in a speclist; guessed
+  one row per run of days ("Tue–Thu", "Sat, Sun", "Daily"), 12-hour times,
+  days the listing omits as a "Closed" row, and a `--muted` "Last updated" line
+  under the last merchant.

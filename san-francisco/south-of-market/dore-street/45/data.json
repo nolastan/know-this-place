@@ -1,0 +1,138 @@
+{
+  "address": "45 Dore Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/dore-street/45/",
+  "apn": "3518033",
+  "block": "3518",
+  "lot": "033",
+  "eas_baseid": "358026",
+  "coordinates": {
+    "lat": 37.774004,
+    "lng": -122.412993
+  },
+  "parcel": {
+    "year_built": 1923,
+    "stories": 1,
+    "rooms": 2,
+    "bathrooms": 2,
+    "lot_area_sqft": 4247,
+    "building_area_sqft": 4250,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant land- residential 15+ units",
+    "construction_type_code": "C",
+    "zoning": "RED",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0045 DORE                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2495257,
+    "last_sale_date": "2017-04-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Western SOMA Light Industrial and Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1936",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "9502822",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-02-27",
+      "status_date": "1995-09-15",
+      "estimated_cost": 1,
+      "description": "change use from machine shop to auto repair shop",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9114265",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1991-08-09",
+      "status_date": "1992-02-29",
+      "estimated_cost": 6000,
+      "description": "parapet.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9011818",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-06-15",
+      "status_date": "1991-09-27",
+      "estimated_cost": 5200,
+      "description": "parapet reinforcing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1990–2007",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DORE&street_type=ST&address_number=45",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3518033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3518&lot=033",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3518033",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41299250117781%2037.77400415764982)%27)",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "south-of-market-context-statement",
+      "name": "Kelley & VerPlanck Historical Resources Consulting, prepared for Page & Turnbull, Inc., South of Market Area Historic Context Statement, FINAL, 30 June 2009, adopted 2011",
+      "query": "https://sfplanning.s3.amazonaws.com/archives/documents/372-SOMA_Historic_Context_Statement_06-30-2009.pdf",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "South of Market Area Historic Context Statement, adopted 2011",
+      "retrieved": "2026-09-03"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1923",
+      "kind": "construction",
+      "description": "A concrete loft building designed by architect James H. Hjul.",
+      "source": "south-of-market-context-statement",
+      "date_precision": "year"
+    }
+  ]
+}

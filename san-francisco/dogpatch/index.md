@@ -9,3 +9,15 @@ The flat blocks east of Interstate 280 between Mariposa Street and Islais Creek,
 - [Minnesota Street](minnesota-street/) — 9 buildings, built 1900–1907; 9 in the Dogpatch Historic District.
 - [Tennessee Street](tennessee-street/) — 38 buildings, built 1890–1989; 38 in the Dogpatch Historic District.
 - [Third Street](3rd-street/) — 5 buildings, built 1900–1947; 3 in the Dogpatch Historic District.
+
+## Historic districts here
+
+- [Dogpatch Historic District](../historic-districts/dogpatch/)
+- [Third Street Industrial District](../historic-districts/third-street/)
+
+## Adjacent neighborhoods
+
+[Potrero Hill](../potrero-hill/) rises immediately west across Interstate
+280; the two together make up the city's Potrero Hill analysis neighborhood.
+[Mission Bay](../mission-bay/) is north beyond Mariposa Street, and [Bayview
+Hunters Point](../bayview-hunters-point/) begins south across Islais Creek.

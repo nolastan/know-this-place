@@ -1,6 +1,7 @@
 # celebrity-residence-guides — Notable-resident claims (tertiary)
 
-> **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · register:
+> **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · traps:
+> [../LESSONS.md](../LESSONS.md) · register:
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id `celebrity-residence-guides`.
 >
 > - **Kind:** web guides · **Tier:** tertiary · **Status:** done
@@ -27,18 +28,35 @@
   - **Carry the source's own hedges and conflicts through.** Where the guide
     flags a claim as disputed, or two addresses compete for the same story,
     say so on both pages and cross-link them — never silently pick a winner.
-  - One claim is **one `.tag` or one `.speclist` row**, per the writing
-    rules. A notable resident does not earn a prose section.
-  - Never state a residency as fact in `data.json`; nest it under a
-    `notable_residents` array whose entries each carry `"source"` and, where
-    the guide hedges, `"disputed": true`.
+  - **Put the claim where the renderer will show it.** A dated claim is one
+    `historical_record` entry (`kind: "occupancy"`, or `"event"` for the SLA
+    addresses), which lands on the page's one timeline and names the guide in
+    the item's meta row — that is the body attribution. An undated one is a
+    one-sentence `narrative.lead`. A notable resident never earns a prose
+    section.
+  - **`notable_residents` renders now — this caution is spent.** It once did
+    not: a claim parked there, or in `notable_events` or `filming_location`,
+    was invisible on any page the renderer owned, which was issue #174. The
+    renderer since grew `residents_panel_html`, so `notable_residents` is a
+    panel of `.speclist` rows carrying a name and a period ("Undated" where
+    the source gives none), and it is the right home for a dated residency.
+    It **skips a name the page's own prose already states**, which is why the
+    seventeen older pages that put their resident in a `lead` render no panel.
+    `notable_events` and `filming_location` are gone the other way — no page
+    carries either and the seeder does not recognise them, so writing one now
+    fails the key check rather than rendering nothing. Keep the
+    guide's own hedges (`disputed`, a competing address, a figure that
+    disagrees with the assessor) in the entry's `description`.
 - **Privacy — the binding constraint.** The root AGENTS.md bars naming or
   alluding to **current** residents, publicly available or not. These guides
   routinely name people who still live at the address, often in the present
   tense ("when he's in town"). **Omit any claim phrased as present or
-  ongoing occupancy**, and record the omission in the page's `.unknowns`
+  ongoing occupancy**, and record the omission in the page's `unknowns`
   without naming anyone. Only past residency — dated, or stated in the past
   tense about someone who has plainly moved on or died — may be named.
 - **Citation label:** name the guide and its title, and link the page.
-- **Verified:** 2026-07-23 (26 San Francisco addresses listed; all but one
-  resolve in EAS)
+- **Verified:** 2026-09-05 (re-read whole for issue #174; unchanged since the
+  2026-07-23 pass — 26 San Francisco addresses listed, all but one resolve in
+  EAS. Every address it names now has its claim on the page, except the two
+  where the guide's claim is present-tense occupancy and the omission is
+  recorded in `unknowns` instead.)

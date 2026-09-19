@@ -17,3 +17,30 @@ research/corpora/
 # Python bytecode. Build artifacts of the repo's own tools; two were committed by accident.
 __pycache__/
 *.pyc
+
+# ---------------------------------------------------------------------------
+# The built site. `scripts/build_site.py` makes all of this out of the
+# data.json and hub index.md files that ARE committed; GitHub Actions runs it
+# and publishes the result, so none of it belongs in a diff. See
+# REFERENCE.md → "The site is built, not committed".
+# ---------------------------------------------------------------------------
+
+# Street hubs and every address page, plus the historic-district hubs —
+# written whole by `seed_pages.py hubs`, `districts` and `render`.
+san-francisco/*/*/index.html
+san-francisco/*/*/*/index.html
+san-francisco/historic-districts/index.html
+
+# NOT ignored, because nothing can rebuild them from scratch:
+#   san-francisco/index.html            — the city index, hand-authored
+#   san-francisco/<neighborhood>/index.html
+#       — a human's prose; `hubs` only patches the street list into it
+# A street hub is never in that company, whatever it holds: `write_street_hub`
+# carries a hand-written section through from the street's `index.md`, so the
+# prose has a committed source and the page stays a build artifact.
+
+sitemap.xml
+sitemaps/
+shared/addresses.geojson
+shared/nearby.json
+stats/index.html

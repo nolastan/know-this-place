@@ -1,0 +1,53 @@
+{
+  "source_id": "brooklinen",
+  "batch": "2026-09-12",
+  "read_on": "2026-09-12",
+  "notes": "Brooklinen's San Francisco store, named in issue #329, read from the brand's own store list on 2026-09-12. https://www.brooklinen.com/pages/our-stores prints every store's address and hours as plain text, with no schema.org markup, no coordinates and no category for the shop — so the entry publishes none, rather than a guess at what kind of shop it is. Four fetches on 2026-09-11 and 2026-09-12 were identical. The $25 is Brooklinen's own wording — its rewards page reads 'Refer a friend and we’ll gift you 1,000 points to use on your next purchase, and they’ll get $25 off' — and the link in the issue is a live rwrd.io share link. The issue writes that link as `http://`; the same path over https reaches the same Brooklinen page, and that is what the REFERRALS row carries. One row, `brooklinen`, for the one shop.",
+  "coverage": {
+    "unit": "store locations",
+    "examined": 9,
+    "mentions": 1,
+    "remaining": "None; Brooklinen lists one San Francisco store."
+  },
+  "findings": [
+    {
+      "id": "2026-09-12-0001",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "519 Hayes Street",
+      "street_number": "519",
+      "street_name": "HAYES",
+      "street_type": "ST",
+      "description": "Brooklinen lists a store at this address.",
+      "extra": {
+        "name": "Brooklinen",
+        "name_as_listed": "San Francisco",
+        "locality_as_listed": "San Francisco",
+        "postal_code_as_listed": "94102",
+        "opening_hours": [
+          "Mo,Tu,We,Th,Fr,Sa,Su 11:00-19:00"
+        ]
+      },
+      "citation": {
+        "label": "Brooklinen, Our Stores",
+        "url": "https://www.brooklinen.com/pages/our-stores",
+        "locator": "the San Francisco row of the Midwest & West Coast list"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0818031",
+        "path": "/san-francisco/hayes-valley/hayes-street/511/",
+        "eas_address": "511 HAYES ST",
+        "method": "EAS exact match on 519 HAYES ST → parcel 0818031; sf-parcels has blklot 0818031 active, 511–529 HAYES; the 2025 roll records it as commercial retail, built 1911. EAS puts 511, 517, 519, 525, 529 HAYES ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 511.",
+        "checked_on": "2026-09-12"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/330",
+        "note": "An `occupants` entry on /san-francisco/hayes-valley/hayes-street/511/."
+      }
+    }
+  ]
+}

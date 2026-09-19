@@ -41,6 +41,7 @@ from __future__ import annotations
 
 import argparse
 import collections
+import functools
 import html
 import json
 import math
@@ -64,6 +65,89 @@ UA = {"User-Agent": "know-this-place-seeder/1.0"}
 # "walk this path and render the address pages under it" unambiguous.
 # `validate.py` imports this rather than keeping a second copy.
 ADDRESS_DIR = re.compile(r"^\d+[a-z]?$")
+
+# Every top-level key an address page's `data.json` may carry. `validate.py`
+# rejects anything outside this set — issue #148's second half, after the
+# first migrated the handful of competing spellings the corpus had
+# accumulated (`aliases`/`also_known_as` for `also_addressed`, `building_history`
+# for `building` + `historical_record`, `historic_districts` for
+# `historic_district` + `also_in_districts`, `open_questions` for `unknowns`,
+# `permits_note` for `permit_summary.note`, `planning_name` for `survey_name`).
+# A key that renders through a block in shared/BLOCKS.md belongs here; a
+# genuinely one-off fact that has no other home (`address_note`,
+# `survey_name_note`, `additional_parcels`) belongs here too, rather than
+# inventing a synonym of something already listed. Nothing else does — a typo
+# or a new synonym should fail loudly here rather than silently render as
+# nothing, which is how the corpus accumulated the spellings above.
+ADDRESS_TOP_LEVEL_KEYS = frozenset({
+    # Identity and location, on every page.
+    "address", "path", "block", "lot", "apn", "eas_baseid", "coordinates",
+    "parcel", "assessment", "historic_status", "sources",
+    # The record.
+    "permits", "permit_summary", "permits_omitted", "historical_record",
+    "historic_survey", "historic_district", "also_in_districts", "building",
+    "survey_name", "notable_residents", "narrative", "unknowns", "occupants",
+    "hook",
+    # Address and parcel shape a page needs only sometimes.
+    "address_range", "street_numbers_on_parcel", "also_addressed",
+    "additional_parcels",
+    # Rare, legitimate one-offs with no other home — not synonyms of
+    # anything above, so a migration would have nowhere to send them.
+    "address_note", "survey_name_note", "adjoining_public_stair",
+    "building_type", "sub_area", "city_landmark", "public_art",
+    "public_open_space",
+    # The `seed_pages.py render` opt-out (see `renders`).
+    "rendered",
+})
+
+# The same closed vocabulary, one level down. `ADDRESS_TOP_LEVEL_KEYS` checked
+# the top level and stopped there, so `parcel` and `building` went on quietly
+# accumulating spellings nothing read — thirty pages and twelve of them by the
+# time anyone counted, including `parcel.planning_name`, the very synonym the
+# comment above records as migrated. A sub-key is worse than a stray top-level
+# one, not better: the block around it renders, so the page looks complete
+# while the fact sits in it unread.
+#
+# Both blocks come from the assessor's roll, so almost every key here is a
+# column of it under the name this site gives it (`lot_area` → `lot_area_sqft`)
+# — add one only when `seed_pages.py` reads it, the way the renderer learned
+# `building.site_before` and `building.former_address`. The roll's own column
+# names are not these names: `construction_type` is `construction_type_code`
+# here, and the assessed values and the sale date are `assessment`'s, not the
+# parcel's.
+PARCEL_KEYS = frozenset({
+    # Structure, as the roll measures it.
+    "year_built", "units", "stories", "rooms", "bathrooms", "bedrooms",
+    "building_area_sqft", "basement_area_sqft", "construction_type_code",
+    # The lot.
+    "lot_area_sqft", "lot_depth_ft", "lot_frontage_ft", "zoning",
+    # Classification and where the roll files the parcel.
+    "use", "property_class", "supervisor_district", "assessor_neighborhood",
+    "analysis_neighborhood", "property_location_raw",
+    # How far to trust the figures above: a zero storey count that is a data
+    # gap, a lot area that is one of two the building stands on. It closes the
+    # timeline with the page's other caveats.
+    "note",
+})
+
+# `building` is what a source says about the building itself, where the roll
+# and the city's datasets don't reach: a name, who designed and put it up, an
+# address or a site it no longer has. A dated event is never here — that is
+# `historical_record`, on the one timeline (see REFERENCE.md).
+BUILDING_KEYS = frozenset({
+    "name", "former_name", "architect", "architect_note", "builder",
+    "builder_note", "developer", "first_owner", "style", "subdivision",
+    "completed", "cost_usd",
+    # Where the building or its address used to be, which is identity rather
+    # than a dated event: `relocated_from` is a building that moved,
+    # `former_address` an address that did, `site_before` what stood here
+    # before this building.
+    "relocated_from", "former_address", "site_before",
+    # A disagreement in the record, stated and left unadjudicated.
+    "completed_conflict", "conflict",
+    # The source ids this block rests on, each also in `sources`.
+    "sources",
+})
 
 # Site icons. `shared/icon.svg` is the source of truth for the mark; the raster
 # files are derived from it. Every page carries these, the way it carries the
@@ -135,7 +219,11 @@ def api_get(dataset: str, params: dict, timeout: int = 120, budget: int = 300,
     fetch hangs forever. Reading in chunks against a wall-clock deadline turns
     that into an ordinary retryable failure.
     """
-    url = f"https://data.sfgov.org/resource/{dataset}.json?" + urllib.parse.urlencode(params)
+    # DataSF moved to data.sf.gov. The old host still 301s a bare `?$limit=`,
+    # but its edge answers 403 to anything carrying a `$select` or `$where` —
+    # i.e. every query this script makes. Fetch from the new host; the citation
+    # URLs written into data.json are a separate migration.
+    url = f"https://data.sf.gov/resource/{dataset}.json?" + urllib.parse.urlencode(params)
     for attempt in range(tries):
         try:
             deadline = time.time() + budget
@@ -396,6 +484,12 @@ ORDINAL_WORD = {"1ST": "First", "2ND": "Second", "3RD": "Third", "4TH": "Fourth"
                 "5TH": "Fifth", "6TH": "Sixth", "7TH": "Seventh", "8TH": "Eighth",
                 "9TH": "Ninth"}
 
+# EAS files street names without their apostrophe — O'Farrell Street is
+# "OFARRELL" — and capitalize() can't put it back. These are every name in
+# EAS's street list that lost one. research/tools/resolve_eas.py keeps a copy.
+APOSTROPHE_NAME = {"OFARRELL": "O'Farrell", "OREILLY": "O'Reilly",
+                   "OSHAUGHNESSY": "O'Shaughnessy"}
+
 
 def unpad(token: str) -> str:
     m = PADDED_ORDINAL.match(token or "")
@@ -437,7 +531,7 @@ def street_display(name: str, stype: str) -> str:
     parts = []
     for token in (name or "").split():
         token = unpad(token)
-        spelled = ORDINAL_WORD.get(token.upper())
+        spelled = ORDINAL_WORD.get(token.upper()) or APOSTROPHE_NAME.get(token.upper())
         if spelled:
             parts.append(spelled)
         else:
@@ -644,6 +738,19 @@ PILL = {  # DBI status -> (css class, icon, word, muted item?)
     "disapproved": ("pill-muted", "ic-help", "Disapproved", True),
     "revoked": ("pill-muted", "ic-help", "Revoked", True),
 }
+# A permit the city never let happen is not a thing that happened here. Expired
+# and cancelled filings were a quarter of every item on the rail (35,698 of
+# 156,000), each one costing a reader a date, a status and a sentence to learn
+# that nothing was built — so the timeline drops them and the line under the
+# rail counts them (issue #285). The other dead statuses stay: `withdrawn`,
+# `suspend`, `disapproved` and `revoked` are 2,000 filings across the corpus,
+# rare enough to be interesting when one appears.
+PERMIT_OMIT = {"expired", "cancelled"}
+# `complete` is the status of 87,892 of the permits on file — more than half of
+# them — and a badge every second item wears tells a reader nothing. The pill
+# lane is for the exception: issued, filed, withdrawn. A finished permit says so
+# by having no badge at all.
+PILL_IMPLIED = {"complete"}
 MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
           "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 MONTHS_LONG = ["January", "February", "March", "April", "May", "June", "July",
@@ -773,32 +880,307 @@ REDACTIONS = _load_redactions()
 # "units 149, 151 and 153"). AGENTS.md bars apartment-level detail that points
 # at who lives where, and the hand-authored pages genericize it, so the seeder
 # does too: the number of units survives, the identifiers don't.
-# One unit designator: "4", "12a", "502a", "1/2", "457 1/2".
+# One numbered designator: "4", "12a", "502a", "1/2", "457 1/2".
 _UNIT_NUM = r"\d+(?:\s*/\s*\d+)?[a-z]?(?:\s+\d+\s*/\s*\d+)?\b"
+# DBI letters units as often as it numbers them ("unit a:", "apt #c"), and a
+# bare letter is a far more dangerous thing to match than a digit — one-letter
+# English words and DBI's slashed abbreviations wear the same shape. So the
+# letter form is deliberately narrow, and every narrowing is something the
+# corpus actually contains:
+#   * only "a" through "h", the range these letters run in. Past it lie
+#     "units w/ garage" (with), "unit. n/a", "unit. u factor", "unit #s: 143",
+#     "unit r-3" (occupancy class) — all abbreviation, none a designator.
+#   * never glued to the keyword, so "unite" and "unita" aren't read as
+#     "unit e" and "unit a" (the lookbehind is what enforces the gap, since
+#     the "#" and whitespace between keyword and designator are optional).
+#   * never before "/", where a leading letter is half of an abbreviation
+#     pair: "hvac units. f/s sep permit", "a/c". Deeper into a list that
+#     ambiguity is gone, so "unit a & b/remove kitchen" keeps its "b".
+_UNIT_LETTER = r"(?<![a-z])[a-h]\b(?!/)"
+_UNIT_LETTER_MORE = r"(?<![a-z])[a-h]\b"
+# DBI also numbers a unit within a lettered building or wing ("unit#c3",
+# "unit#c4", "unit m305", "apt# m2-203"). A letter glued straight to its own
+# digits carries none of _UNIT_LETTER's risk — nothing else writes a bare
+# letter immediately against a number — so this form isn't confined to a-h or
+# to the separator rules the letter-only run needs. Two shapes glued right
+# after it are absorbed rather than left to leak: a single hyphenated number
+# ("m2-203" is one designator, not "m2" and a stray "203"), and a further
+# slash-separated run after that hyphen ("m2-704/308/303", three units under
+# the same wing prefix — undercounted as one below, but nothing is left
+# unredacted).
+# It still has two collisions of its own, both excluded by what immediately
+# follows: an occupancy classification ("2 units r3 structure") and a
+# telecom-jargon count ("rrus-12 units w3(n) a2 modules", "w/3 (n)ew") — the
+# only two shapes among every keyword-adjacent letter+digit pair in the
+# corpus that name something other than a unit.
+_UNIT_ALNUM = (r"[a-z]\d+\b(?!\s*(?:structure|occupancy)\b)(?!\s*[(][ne][)])"
+               r"(?:-\d+\b)?(?:/\d+\b)*")
+_UNIT_DESIG = r"(?:" + _UNIT_NUM + r"|" + _UNIT_ALNUM + r"|" + _UNIT_LETTER_MORE + r")"
+# DBI doubles its separators too ("units b,c,& e"), so the run absorbs a pair.
+_SEP = r"\s*(?:,\s*&|,\s*and|,|&|and)\s*"
 # A run of them after the keyword. The trailing \b matters: without it,
 # "unit 2nd flr" matches as unit "2n" and the sentence gets mangled — with it,
 # ordinals ("1st", "2nd") and street numbers ("4145 20th st") stay put.
 # DBI also writes lists with the separators missing ("units 2, 3 5 & 6",
-# "unit 2308 232"), so a bare space continues the run — except before "." or
-# "/", which mark a numbered list item ("unit 502a 1. rehabilitate") or a floor
-# ("unit #2 3/f only") rather than another unit.
-UNIT_REF = re.compile(
-    r"\b(?:apt|apartment|unit)s?\.?\s*#?\s*" + _UNIT_NUM +
-    r"(?:\s*(?:,|&|and)\s*#?\s*" + _UNIT_NUM + r"|\s+#?" + _UNIT_NUM + r"(?![./]))*",
-    re.I)
+# "unit 2308 232"), so a bare space continues a numbered run — except before
+# "." or "/", which mark a numbered list item ("unit 502a 1. rehabilitate") or
+# a floor ("unit #2 3/f only") rather than another unit. A lettered-numbered
+# designator joins the same run — it carries the same list and separator
+# behavior as a plain number, just not the ambiguity that keeps a bare letter
+# out of it — and DBI's building-plus-unit lists mix the two freely enough
+# ("units a1, c, d, and f") that a bare letter may join this run too, the same
+# way it joins the lettered run below.
+_UNIT_TOKEN = r"(?:" + _UNIT_NUM + r"|" + _UNIT_ALNUM + r")"
+_NUM_RUN = (_UNIT_TOKEN + r"(?:" + _SEP + r"#?\s*" + _UNIT_TOKEN +
+            r"|" + _SEP + r"#?\s*" + _UNIT_LETTER_MORE +
+            r"|\s+#?" + _UNIT_TOKEN + r"(?![./]))*")
+# A lettered run is stricter on both counts. It needs a separator throughout —
+# "unit a b" appears nowhere, while "unit a only" appears everywhere — and a
+# number may join it only wearing a "#" ("apts a,b,c,d and #1087"), because
+# without one the number after the list is an address: "units a & b, 743 green
+# st" is two units on Green Street, not three units.
+_LETTER_RUN = (_UNIT_LETTER + r"(?:" + _SEP + r"#?\s*" + _UNIT_LETTER_MORE +
+               r"|" + _SEP + r"#\s*" + _UNIT_NUM + r")*")
+# DBI also punctuates the "#" itself ("unit #:233", "apt#: 3"), and the colon
+# is allowed only there — never straight after the keyword, where "one unit: 1.
+# rehabilitate ..." would read its list marker as a designator.
+#
+# "apt" is already an abbreviation, so a period after it is always part of the
+# keyword ("apt.3"). "apartment" and "unit" are spelled out, so a period there
+# is a sentence's own, unless it is immediately followed by "#" ("unit.#3") —
+# without that guard the rewrite isn't idempotent: "unit 5" becomes "one
+# unit", and a second pass over "... one unit. 1 (e) bedroom ..." would read
+# the outline number that follows the full stop as a second designator and
+# mangle it into "one one unit ..." (#250).
 COUNT_WORD = {1: "one", 2: "two", 3: "three", 4: "four", 5: "five",
               6: "six", 7: "seven", 8: "eight", 9: "nine", 10: "ten"}
+# The keyword itself is never preceded by one of this function's own count
+# words either. That combination is never original DBI text — it is this
+# same rewrite's own output ("one unit", "two units"), and re-reading it as a
+# fresh designator is how "legalized one unit per #2017-0203-8639, one unit"
+# (15th Street) became "legalized one one unit ..." and "remodel of five
+# units" (Sutter Street) became "remodel of five five units" — both already
+# committed, both #250. `re` has no variable-width lookbehind, so this is one
+# fixed-width lookbehind per word rather than a single alternation.
+_NOT_OWN_COUNT = "".join(
+    rf"(?<!\b{w}\s)" for w in COUNT_WORD.values())
+UNIT_REF = re.compile(
+    _NOT_OWN_COUNT +
+    r"\b(?:apts?\.?|(?:apartment|unit)s?(?:\.(?=\s*#))?)"
+    r"\s*(?:#\s*:?\s*)?(?:" + _NUM_RUN + r"|" + _LETTER_RUN + r")",
+    re.I)
 
 
 def _generic_unit(m) -> str:
     # Count designators, not digits — "unit 457 1/2" is one unit, not three.
     rest = re.sub(r"^(?:apt|apartment|unit)s?\.?\s*", "", m.group(0), flags=re.I)
-    n = len(re.findall(_UNIT_NUM, rest, re.I))
+    n = len(re.findall(_UNIT_DESIG, rest, re.I))
     return "one unit" if n <= 1 else f"{COUNT_WORD.get(n, n)} units"
 
 
 def generalize_units(text: str | None) -> str | None:
     return UNIT_REF.sub(_generic_unit, text) if text else text
+
+
+# In a hotel — and above all in a residential hotel or SRO, where the room is
+# the home — a room number is a dwelling identifier exactly as an apartment
+# number is, and AGENTS.md bars both. DBI writes them constantly: "repair fire
+# damage to room #227 & 204" (240 Jones, the Roosevelt).
+#
+# The rewrite is confined to parcels the assessor's roll files as a hotel,
+# because that gate is what separates a dwelling identifier from a room named
+# by its function. Measured over every published data.json, a "room <number>"
+# pattern matches 111 pages; on the 55 that are not hotels it is almost
+# always a building description a page should keep — "storage room #1 (aka
+# media room)" in a Castro house, "exam room #3" in a clinic, "operating rooms
+# 1,2,3,4,6" in a hospital, "living room #1 - #3" in a flat. Widening past the
+# roll's own classification would rewrite those, so it isn't done here; the
+# apartment buildings whose "room #63" really is a dwelling are left for a
+# person to decide, one page at a time.
+HOTEL_USE = "Commercial Hotel"
+# The roll is the first witness, not the only one. It classes 50 Turk and 128
+# Eddy as apartment buildings, while the pages themselves carry `building.name`
+# "Winston Arms Hotel" and `building.former_name` "The Gotham Lodgings" — a
+# fact research put there, and better evidence about what a room is than a
+# property class assigned for assessment. So a hotel named on the page counts
+# too, and only on a parcel the roll still calls residential: the same word
+# inside a *commercial* class is a trade name rather than a building's use
+# ("Dohrmann Hotel Supply Co" at 972 Mission, a hotel supplier; "Planters
+# Hotel" at 282 2nd, long since offices), and no one lives in either.
+#
+# Measured over every published page, the widening admits 20 parcels and
+# rewrites 3 descriptions, all 3 SRO room numbers. It cannot fire while a page
+# is being created, because `building` is hand-authored and a fresh draft has
+# none; it fires when an already-named page is seeded again, and until then
+# the residue it leaves is what scripts/permit_room_decisions.json is for.
+HOTEL_NAME = re.compile(r"\b(?:hotels?|lodgings?|sro|rooming house|residence club)\b", re.I)
+RESIDENTIAL_USE = {"Multi-Family Residential", "Single Family Residential"}
+#
+# A ratio test was measured too and rejected: "more rooms than units, fewer
+# baths than units" reads like an SRO and matches 536 pages, but of the 8 with
+# a room designator it would have rewritten "front single story rm.#4" in a
+# three-unit Castro house and "total 12 toilet rooms & 12 shower rooms" at the
+# Dell Apartments to gain one true hotel room. The roll's own unit counts are
+# too unreliable to carry a privacy rule.
+#
+# The narrowings, each one something the hotel corpus actually contains:
+#   * a room type named right before the keyword is a room, not a home. Every
+#     word here precedes a numbered room somewhere in the DBI export; "bath"
+#     is deliberately absent, because inside a hotel "bth rms 201-205" and
+#     "bathrms in & adj to rms 120, 220 & 320" number the guest rooms.
+ROOM_TYPE_WORD = {
+    "bed", "boiler", "break", "breakout", "class", "computer", "conference",
+    "dining", "display", "elec", "electrical", "engine", "exam", "fam",
+    "family", "furnace", "game", "jacuzzi", "laundry", "liv", "living",
+    "locker", "machine", "massage", "mech", "mechanical", "media", "meeting",
+    "mud", "music", "office", "operating", "piano", "powder", "pump",
+    "purpose", "rest", "sauna", "server", "service", "shower", "steam",
+    "stock", "storage", "storge", "study", "studio", "sun", "supply", "tool",
+    "training", "treatment", "utility", "wash",
+}
+#   * a qualifier that says "dwelling" is absorbed into the replacement rather
+#     than left in front of it, so "hotel rooms 806 and 807" becomes "two
+#     hotel rooms" and not "hotel two rooms".
+DWELLING_WORD = {"guest", "guess", "hotel", "sleeping"}
+#   * a number that measures is not a number that identifies: "tool room 69 sq
+#     ft" is an area, "room 12' x 15'" is a dimension, and a list can run
+#     straight into one ("rms 113,114,115,116,117,118, 720 sq ft").
+#     The measure may be reached across a decimal fraction, because the number
+#     that carries one is being measured rather than named: "undermitted rooms
+#     349.8 sf" is an area and "room 7.5 ft to rear yard" a dimension, and
+#     _UNIT_NUM stops at the point, which left the lookahead reading ".8 sf"
+#     and rewriting both (#273). A decimal that is *not* followed by a measure
+#     is left alone, because one institutional numbering scheme really does
+#     use it — "room 116.5, 132, 133, 134, 0533.3" at 200 Larkin.
+_MEASURE_WORD = r"(?:sqft|sq|sf|s\.\s?f|feet|ft|square)\b"
+_NOT_MEASURE = (r"(?!\s*" + _MEASURE_WORD + r")"
+                r"(?!\.\d+\s*" + _MEASURE_WORD + r")"
+                r"(?!\s*['\"])")
+#   * a designator of five digits or more is not a room. Measured over every
+#     published description, the numbers DBI writes after a room keyword run
+#     one to four digits ("rm 3079" is the longest real one); past that lie
+#     its own permit and complaint numbers, which the text references in the
+#     same breath — "smoke alarms in each room # 202309164" (1136 York),
+#     "ref accessible men's room #201504244586" (440 Mission). Reading one as
+#     a dwelling turns a citation into "each one room" (#273).
+_ROOM_DIGITS = r"(?<!\d)\d{1,4}(?!\d)"
+#   * DBI hyphenates room numbers, as a range ("rooms 100-121") and as a list
+#     ("bth rms 201-205-302-303-304-305"), a shape it never uses for units.
+#     The hyphen must join two numbers: before a word it is a dash ("room
+#     #248-close partition wall"), and before "/f" it marks a floor ("room
+#     6-2/f", which is room 6 on the second floor, not rooms 6 through 2).
+#   * it also slash-separates a list, but only a long one, so the room
+#     designator drops _UNIT_NUM's fractional branch and takes its own: three
+#     or more numbers joined by slashes are a list of rooms ("rooms 715/709/
+#     713/711/707/607/..." at 320 Clementina, the trash-room stack), while two
+#     are a fraction ("replace with 5/8 type x") and a letter after the slash
+#     is a floor ("rm 2/f"). Inheriting the fractional branch made the list
+#     count as a single designator and left the tail of it in the sentence.
+_ROOM_BASE = (r"(?:" + _ROOM_DIGITS + r"(?:\s*/\s*" + _ROOM_DIGITS + r"){2,}"
+              r"|" + _ROOM_DIGITS + r"(?!\s*/))[a-z]?\b")
+_ROOM_NUM = (_ROOM_BASE + _NOT_MEASURE +
+             r"(?:\s*-\s*" + _ROOM_BASE + _NOT_MEASURE + r"(?!/))*")
+_ROOM_RUN = (_ROOM_NUM + r"(?:" + _SEP + r"#?\s*" + _ROOM_NUM +
+             r"|\s+#?" + _ROOM_NUM + r"(?![./]))*")
+# No lettered branch, unlike UNIT_REF: the hotel corpus holds no "room a", and
+# a bare letter after "room" is likelier one of DBI's abbreviations. The
+# abbreviation may carry its own period ("rm. 248-close partition wall",
+# "rm.#206"); the spelled-out word may not, except in front of "#", because
+# "room." otherwise ends a sentence and the number after it opens the next one
+# ("powder room. 338 sq ft of new habitable space") — the mistake that makes
+# generalize_units non-idempotent (#250).
+ROOM_REF = re.compile(
+    r"(?:\b(?P<qual>[a-z]+)\s+)?\b(?:rms?\.?|rooms?(?:\.(?=\s*#))?)"
+    r"\s*(?:#\s*:?\s*)?(?P<desig>" + _ROOM_RUN + r")", re.I)
+# Counts are spelled out, never written as digits, so that the rewrite can
+# never produce text it would rewrite again: "toilet rooms guest room 501,505,
+# ..." ends "... rooms sixteen guest rooms", where a digit would have left a
+# fresh "rooms 16" for the next pass to eat. A run longer than this table
+# drops to the bare plural for the same reason; the longest in the corpus is
+# 19, so that branch is unreached today.
+ROOM_COUNT_WORD = COUNT_WORD | {
+    11: "eleven", 12: "twelve", 13: "thirteen", 14: "fourteen",
+    15: "fifteen", 16: "sixteen", 17: "seventeen", 18: "eighteen",
+    19: "nineteen", 20: "twenty"}
+
+
+def _generic_room(m) -> str:
+    qual = m.group("qual") or ""
+    if qual.lower() in ROOM_TYPE_WORD:
+        return m.group(0)
+    if qual.lower() in DWELLING_WORD:
+        lead, kind = "", f"{qual.lower()} room"
+    else:
+        lead, kind = (f"{qual} " if qual else ""), "room"
+    desig = m.group("desig")
+    # Plain integers, not _UNIT_NUM: the room designator has no fractional
+    # branch (see _ROOM_BASE), so every number in the run is its own room and
+    # a slash list counts all of its members rather than half of them.
+    n = 0 if "-" in desig else len(re.findall(r"\d+", desig))
+    if n == 0 or n not in ROOM_COUNT_WORD:
+        return f"{lead}{kind}s"
+    return lead + (f"one {kind}" if n == 1 else f"{ROOM_COUNT_WORD[n]} {kind}s")
+
+
+def is_hotel(roll_use: str | None, building: dict | None) -> bool:
+    """Whether a numbered room on this parcel is a dwelling — see HOTEL_USE."""
+    if roll_use == HOTEL_USE:
+        return True
+    named = " ".join(filter(None, ((building or {}).get("name"),
+                                   (building or {}).get("former_name"))))
+    return roll_use in RESIDENTIAL_USE and bool(HOTEL_NAME.search(named))
+
+
+def generalize_rooms(text: str | None, *, hotel: bool) -> str | None:
+    """Genericize room numbers, but only on a hotel parcel — see HOTEL_USE."""
+    return ROOM_REF.sub(_generic_room, text) if text and hotel else text
+
+
+# What the gate cannot reach, a person read once. Every permit description on a
+# residential-but-not-hotel parcel whose room number the gate leaves alone is
+# recorded in scripts/permit_room_decisions.json with the evidence and the
+# verdict, so the judgment is made once rather than re-derived every time
+# somebody notices the sentence again (#273). Keyed by page path *and* permit
+# number, because DBI's street-name collisions put the same permit number on
+# more than one page (787 of them across the corpus).
+DECISIONS_PATH = ROOT / "scripts" / "permit_room_decisions.json"
+
+
+def _load_room_decisions() -> dict:
+    if not DECISIONS_PATH.exists():
+        return {}
+    out = {}
+    for e in json.loads(DECISIONS_PATH.read_text()).get("decisions", []):
+        if e.get("verdict") == "rewrite":
+            out[(e["path"], str(e["permit"]))] = (e["old"], e["new"])
+    return out
+
+
+ROOM_DECISIONS = _load_room_decisions()
+
+
+def apply_room_decision(text: str | None, path: str, permit: str | None) -> str | None:
+    """Apply the recorded rewrite for one permit description, if there is one.
+
+    Runs last, on the finished sentence, so what the file records is what a
+    reader of the page sees. It raises rather than guessing: a decision whose
+    "old" text has gone means DBI revised the description under it and the
+    sentence needs reading again, which is a person's job and not a default's.
+    Already having the "new" text is not a failure — the widened gate may have
+    reached the same sentence first — so the rewrite is idempotent.
+    """
+    hit = ROOM_DECISIONS.get((path, str(permit)))
+    if not hit or not text:
+        return text
+    old, new = hit
+    if old not in text:
+        if new in text:
+            return text
+        raise SystemExit(
+            f"permit_room_decisions.json: {path} permit {permit} expects\n"
+            f"  {old!r}\nin\n  {text!r}\nand it is not there. DBI has revised the "
+            f"description; read the sentence again and update the decision.")
+    return text.replace(old, new)
 
 
 def redact(text: str | None) -> str | None:
@@ -821,9 +1203,13 @@ def redact(text: str | None) -> str | None:
     if out.count("(") != out.count(")"):                   # now-unbalanced
         out = out.replace("(", " ").replace(")", " ")
     out = re.sub(r"\s{2,}", " ", out)
-    # A connective whose object was the name now points at nothing.
-    out = re.sub(r"\b(?:by|per|from|of|for|with|at|and|in)\b\s*(?=[.,;:]|$)", "", out,
+    # A connective whose object was the name now points at nothing — either at
+    # the end of the clause, or at a second connective that led the rest of the
+    # sentence ("notice by john sims on 12-12-2001" leaves "notice by on …").
+    out = re.sub(r"\b(?:by|per|from|of|for|with|at|and|in|as)\b\s*(?=[.,;:]|$)", "", out,
                  flags=re.I)
+    out = re.sub(r"\b(?:by|per|from|of|for|with|as)\s+(?=(?:by|per|from|of|for|with|at|in|on|as|and|to)\b)",
+                 "", out, flags=re.I)
     out = re.sub(r"\s+([,;.:])", r"\1", out)
     out = re.sub(r"([.,;:])\s*[.,;:]+", r"\1", out)        # doubled punctuation
     out = re.sub(r"(^|\.\s)\s*[,;:.]+\s*", r"\1", out)     # punctuation opening a clause
@@ -1057,6 +1443,7 @@ def build_record(parcel: dict, ctx: dict) -> dict:
             rec["also_in_districts"] = [as_record(e) for e in hits[1:]]
 
     permits = []
+    hotel = is_hotel(p.get("use"), rec.get("building"))
     for r in parcel["permits"]:
         entry = {
             "number": r.get("permit_number"),
@@ -1066,7 +1453,10 @@ def build_record(parcel: dict, ctx: dict) -> dict:
             "status_date": ymd(r.get("status_date")),
             "estimated_cost": num(r.get("estimated_cost")),
             "revised_cost": num(r.get("revised_cost")),
-            "description": redact(generalize_units(r.get("description"))),
+            "description": apply_room_decision(
+                redact(generalize_rooms(
+                    generalize_units(r.get("description")), hotel=hotel)),
+                path, r.get("permit_number")),
             "source": "sf-building-permits",
         }
         permits.append({k: v for k, v in entry.items() if v not in (None, "")})
@@ -1157,8 +1547,17 @@ def meta_description(rec: dict) -> str:
 def tags_html(rec: dict) -> str:
     p = rec.get("parcel", {})
     out = []
-    if p.get("year_built"):
-        out.append(("ic-calendar", f"Built {p['year_built']}"))
+    # The name the city's survey files this building under, where a page
+    # records one — identity, and the first thing to say. Deliberately the
+    # top-level key only: `historic_status.survey_name` carries a name on
+    # 1,795 seeded pages that have never shown one, and putting a tag on all
+    # of them is a decision about the corpus, not a renderer gap. Flagged on
+    # issue #145 for a human.
+    named = rec.get("survey_name")
+    if named:
+        out.append(("ic-pin", named))
+    # No year built here: it is a dated fact, so it opens the timeline instead
+    # (see `built_item`).
     out.append(("ic-home", building_type(p.get("property_class"), p.get("units"))))
     if p.get("stories"):
         s = p["stories"]
@@ -1210,87 +1609,304 @@ def stats_html(rec: dict) -> str:
     return f'  <div class="stats">\n{body}\n  </div>\n'
 
 
+def dead_permit_phrase(dropped: dict) -> tuple[str, int]:
+    """"4 expired or cancelled permits", with the count, or ("", 0) for none.
+
+    Names the statuses the page actually dropped, not the pair it filters on: a
+    reader told "expired or cancelled" about two filings that both expired has
+    been handed a possibility where the record holds a fact.
+    """
+    n = sum(dropped.values())
+    if not n:
+        return "", 0
+    kinds = " or ".join(w for w in ("expired", "cancelled") if dropped.get(w))
+    return f"{n} {kinds} {'permit' if n == 1 else 'permits'}", n
+
+
+def omission_phrase(nominal: int, dropped: dict) -> str:
+    """The one sentence for filings the rail leaves out, however many kinds.
+
+    BLOCKS.md gives the line under the rail one job first — the filings
+    deliberately excluded — and a page can exclude on two grounds at once: a
+    nominal $1 street-space filing and a permit that expired. Two sentences for
+    that is two sentences saying "omitted", so they share one.
+    """
+    parts = []
+    if nominal:
+        parts.append(f"{nominal} nominal $1 street-space "
+                     f"{'permit' if nominal == 1 else 'permits'}")
+    dead, n = dead_permit_phrase(dropped)
+    if dead:
+        parts.append(dead)
+    if not parts:
+        return ""
+    return (" and ".join(parts)
+            + (" is omitted." if nominal + n == 1 else " are omitted."))
+
+
 def permit_items(rec: dict, indent: str) -> tuple:
     """(items, disclosure) — the permit half of the timeline.
 
     Each item is a `(date_key, html)` pair so it can be interleaved with the
-    historical entries; `disclosure` is the line about filings deliberately
-    left out, which belongs under the finished rail.
+    historical entries; `disclosure` is the sentence about filings deliberately
+    left out. It comes back as text rather than markup because `timeline_html`
+    runs it together with the record notes from `unknowns` into the single line
+    under the finished rail.
+
+    The item leads with its date and the record's own particulars — status,
+    permit number, cost — on one line, and gives the second line to what the
+    work was (issue #285). A permit's meta row was three chips under a
+    sentence, which cost every item a third line of rail for facts a reader
+    scanning for *what happened here* skips; beside the date they read as the
+    dateline's own footnotes, and the sentence stands alone.
     """
     permits = rec.get("permits", [])
     # Pages written before `permit_summary` existed still carry their nominal
     # $1 street-space filings in `permits`; drop those here as before.
     note = (rec.get("permit_summary") or {}).get("note")
-    shown, omitted = [], 0
+    shown, omitted, dropped = [], 0, {}
     for p in permits:
         cost = p.get("estimated_cost") or p.get("revised_cost") or 0
         desc = (p.get("description") or "").lower()
-        if not note and cost <= 1 and re.search(r"street space|sidewalk", desc):
+        status = (p.get("status") or "").strip().lower()
+        # A permit somebody wrote a sentence for is one they decided belongs on
+        # the page, so the nominal-filing filter lets it through. Without that,
+        # a $1 revision to a garage permit that happens to say "minor sidewalk
+        # encroachment" is dropped as a street-space filing, which is what it
+        # is not.
+        if (not note and cost <= 1 and not p.get("description_edited")
+                and re.search(r"street space|sidewalk", desc)):
             omitted += 1
             continue
+        # An expired or cancelled filing describes work the city never let
+        # happen. No `description_edited` exception here, unlike the filter
+        # above: that one reads a sentence and can misjudge it, while DBI's
+        # status is the record itself, so a hand-polished description of work
+        # that never happened is still work that never happened.
+        if status in PERMIT_OMIT:
+            dropped[status] = dropped.get(status, 0) + 1
+            continue
         shown.append(p)
-    disclosure = ""
     if note:
-        disclosure = f'{indent}<p class="prose"><small>{esc(note)}</small></p>\n'
-    elif omitted:
-        word = "permit is" if omitted == 1 else "permits are"
-        disclosure = (f'{indent}<p class="prose"><small>{omitted} nominal $1 '
-                      f'street-space {word} omitted.</small></p>\n')
+        # `permit_summary.note` is a stored sentence that already accounts for
+        # what the timeline leaves out, so the dropped filings join it as a
+        # second clause rather than a second "…are omitted."
+        dead, n = dead_permit_phrase(dropped)
+        disclosure = note + (f" {dead} {'is' if n == 1 else 'are'} not shown."
+                             if dead else "")
+    else:
+        disclosure = omission_phrase(omitted, dropped)
     if not shown:
-        return [], ""
+        # No items, but the count of what was left out still belongs under the
+        # rail: on 333 pages every permit on file expired or was cancelled, and
+        # a page that simply shows no permit record is claiming DBI holds none.
+        return [], disclosure
     items = []
     for p in shown:
         css, icon, word, muted = PILL.get(p.get("status", ""),
                                           ("pill-warn", "ic-clock",
                                            (p.get("status") or "Filed").capitalize(), False))
-        desc = clean_description(p.get("description")) or \
+        # `description` is DBI's own words and stays that way — it is what the
+        # `sf-building-permits` citation vouches for, and the redaction pass
+        # and the unit-generalizer both read it. `description_edited` is the
+        # sentence a person wrote after reading the filing against the rest of
+        # the record, and it carries what the raw text cannot: that this was
+        # the only part of a project ever carried through, that the matching
+        # filing for the next flat was cancelled. Where it exists it wins;
+        # `clean_description` is the mechanical fallback, not the editor.
+        desc = p.get("description_edited") or \
+            clean_description(p.get("description")) or \
             f"{(p.get('type') or 'Permit').capitalize()}."
         cost = p.get("estimated_cost")
         if cost in (None, ""):
             cost = p.get("revised_cost")
-        meta = [f'{indent}      <span class="pill {css}">'
-                f'<span class="ic {icon}"></span>{esc(word)}</span>',
-                f'{indent}      <a href="https://dbiweb02.sfgov.org/dbipts/default.aspx'
-                f'?page=Permit&amp;PermitNumber={esca(p["number"])}">'
-                f'Permit {esc(p["number"])}</a>']
+        meta = []
+        if (p.get("status") or "").strip().lower() not in PILL_IMPLIED:
+            # A pill only where the status is not the one every other permit
+            # has; `PILL` is still read for the muted flag either way.
+            meta.append(f'{indent}        <span class="pill {css}">'
+                        f'<span class="ic {icon}"></span>{esc(word)}</span>')
+        meta.append(f'{indent}        <a href="https://dbiweb02.sfgov.org/dbipts/default.aspx'
+                    f'?page=Permit&amp;PermitNumber={esca(p["number"])}">'
+                    f'Permit {esc(p["number"])}</a>')
         if cost:
             tier = cost_tier(float(cost))
-            meta.append(f'{indent}      <span class="cost" data-tier="{tier}" '
+            meta.append(f'{indent}        <span class="cost" data-tier="{tier}" '
                         f'aria-label="{TIER_LABEL[tier]}"><b>$</b><b>$</b><b>$</b></span>')
-            meta.append(f'{indent}      <span class="cost-amt">${int(float(cost)):,}</span>')
+            meta.append(f'{indent}        <span class="cost-amt">${int(float(cost)):,}</span>')
         items.append((date_key(p.get("filed")),
             f'{indent}  <li class="vtl-item{" is-muted" if muted else ""}">\n'
-            f'{indent}    <div class="vtl-date">{month_year(p.get("filed"))}</div>\n'
-            f'{indent}    <p class="vtl-desc">{esc(desc)}</p>\n'
-            f'{indent}    <div class="vtl-meta">\n' + "\n".join(meta) + "\n"
+            f'{indent}    <div class="vtl-head">\n'
+            f'{indent}      <div class="vtl-date">{month_year(p.get("filed"))}</div>\n'
+            f'{indent}      <div class="vtl-meta">\n'
+            + "\n".join(meta) + "\n"
+            f'{indent}      </div>\n'
             f'{indent}    </div>\n'
+            f'{indent}    <p class="vtl-desc">{esc(desc)}</p>\n'
             f'{indent}  </li>'))
     return items, disclosure
+
+
+DEMOLITION = re.compile(r"\bdemoli", re.I)
+# Work inside or beside a building that stayed up: "interior demolition",
+# "demolish non-bearing partitions", "demolish storage shed".
+PARTIAL_DEMOLITION = re.compile(r"interior|non-? ?structural|partition|\bshed\b|partial", re.I)
+
+
+BUILT_EVENT = re.compile(r"\b(built|completed)\b", re.I)
+
+
+def built_item(rec: dict, indent: str) -> list:
+    """The assessor's year built, as the entry the rest of the timeline hangs off.
+
+    It was a "Built 1896" tag in the hero until issue #132: a dated fact
+    standing outside the one sequence a reader reads dates in, which left every
+    rail starting at whichever permit DBI happened to keep.
+
+    "Current structure built" only where the record shows the parcel was
+    cleared first — a whole building demolished on a permit filed before the
+    assessor's year and not cancelled, withdrawn or expired. That is the sole
+    signal this reads, deliberately: 1,484 pages carry something dated earlier
+    than their build year, and on all but a fraction of them it is this
+    building's own design or construction, attributed a few years before the
+    roll's rounded year ("Designed by Ernest Coxhead", 1895, under a build year
+    of 1900). Calling that a previous structure would be a claim no source
+    made. 162 pages meet the demolition test.
+    """
+    year = (rec.get("parcel") or {}).get("year_built")
+    if not year:
+        return []
+    # A source that says the building was finished, in the year the assessor
+    # gives, has already opened the rail — and it says more than "Built." does,
+    # naming the contractor who finished it. Stand down rather than print the
+    # same year twice, the way the "Completed" spec row already does when it
+    # matches the roll. The test is deliberately the completion words and the
+    # year together, so an entry that merely shares the year ("Lot created by
+    # subdividing the Cassin parcel", 1953) leaves the entry standing.
+    #
+    # This reads every dated entry the rail carries: 872 of the 8,032
+    # `historical_record` entries, across 863 pages, match. Seven of those 863
+    # stand the entry down on a completion that is not this building's — the
+    # branch library further along Taraval, a garage next door at 1960
+    # Washington, the neighbourhood platted out around the parcel — and on
+    # four of them no other same-year entry says the building went up. That is
+    # the price of one regex reading prose; the seven are listed on this
+    # change's PR, and the fix for them is a sentence in their `data.json`,
+    # not a narrower test here, which would only stand the entry down on
+    # fewer real completions.
+    if any(date_key(e.get("date"))[0] == int(year)
+           and BUILT_EVENT.search(e.get("description") or "")
+           for e in history_entries(rec)):
+        return []
+    replaced = any(
+        date_key(p.get("filed"))[0] < int(year)
+        and DEMOLITION.search(p.get("description") or "")
+        and not PARTIAL_DEMOLITION.search(p.get("description") or "")
+        # A demolition that was cancelled, withdrawn or expired is a plan, not
+        # a cleared lot — the rail mutes those items for the same reason.
+        and not PILL.get(p.get("status", ""), ("", "", "", False))[3]
+        for p in rec.get("permits") or [])
+    return [((int(year), 0, 0),
+             f'{indent}  <li class="vtl-item">\n'
+             f'{indent}    <div class="vtl-date">{year}</div>\n'
+             f'{indent}    <p class="vtl-desc">'
+             f'{"Current structure built." if replaced else "Built."}</p>\n'
+             f'{indent}  </li>')]
+
+
+def dating_conflicts(rec: dict) -> list:
+    """Disagreements about the building's date, read off the data itself.
+
+    These rendered inside the old `.unknowns` block and are the part of it
+    worth keeping: the generic "Not yet documented:" listing was boilerplate,
+    but a roll that contradicts Planning — or itself — is a fact the page has
+    to state. They read as dating notes, so they close the timeline with the
+    rest of its caveats rather than sitting in a box at the foot of the page.
+    """
+    p = rec.get("parcel") or {}
+    hs = rec.get("historic_status") or {}
+    out = []
+    hy, ry = hs.get("yearbuilt"), p.get("year_built")
+    if hy and ry and str(hy) != str(ry):
+        out.append(f"The assessor dates the building to {ry}; Planning's "
+                   f"historic resource survey records {hy}.")
+    if "vacant lot" in (p.get("property_class") or "").lower() and ry:
+        out.append(f"The roll classes this parcel as a vacant lot and also "
+                   f"gives it a build year of {ry}.")
+    conflict = (rec.get("building") or {}).get("completed_conflict")
+    if conflict:
+        out.append(str(conflict).strip())
+    return out
 
 
 def timeline_html(rec: dict, indent: str) -> str:
     """The page's one timeline: every dated entry on a single rail, oldest first.
 
-    Permits and historical records are the same kind of thing to a reader —
-    something that happened here on a date — so they share one `.vtl` and
-    interleave by date rather than sitting in two rails that each restart the
-    clock. The rail is only introduced by a heading when it holds nothing but
-    permits and "Permit history" therefore describes all of it; a mixed
-    timeline needs no heading (its layout says what it is) and carries the
-    label for screen readers instead.
+    The year the building went up, its permits and its historical records are
+    the same kind of thing to a reader — something that happened here on a date
+    — so they share one `.vtl` and interleave by date rather than sitting in
+    two rails that each restart the clock.
+
+    No heading. The rail carried a "Permit history" one while it could hold
+    nothing else, and it is neither true now (every page with a build year
+    opens with it) nor needed: a timeline is self-evident on sight. The name
+    stays for screen readers, on `aria-label`.
+
+    One line closes the rail, and it is where the page admits what the rail
+    cannot show: the filings left out, then the dating conflicts read off the
+    data, then every disagreement `unknowns` records. All of it used to sit in
+    a `.unknowns` box at the foot of the page, under a generic listing of what
+    the page did not know; issue #118 deleted the listing and moved what was
+    left against the dates it disputes. No page is stranded by the move —
+    every one of the 480 carrying the key, and of the 921 with a derived
+    conflict, has a timeline.
     """
+    built = built_item(rec, indent)
     permits, disclosure = permit_items(rec, indent)
     earlier = historical_items(rec, indent)
-    if not (permits or earlier):
-        return ""
-    items = [html for _, html in sorted(permits + earlier, key=lambda e: e[0])]
-    head = ""
-    if not earlier:
-        head = (f'{indent}<div class="section-head"><span class="ic ic-clock"></span>'
-                f'<h2>Permit history</h2></div>\n')
-    rail = ('<ol class="vtl">' if head else '<ol class="vtl" aria-label="Timeline">')
-    return (head + f'{indent}{rail}\n' + "\n".join(items)
-            + f"\n{indent}</ol>\n" + disclosure)
+    # `sorted` is stable and `built` leads the list, so the building's own year
+    # comes before anything else the same year — a permit filed in the month it
+    # was finished, a photograph dated to the year.
+    items = [html for _, html in sorted(built + permits + earlier, key=lambda e: e[0])]
+    # A conflict reached `building.completed_conflict` and `unknowns` both on
+    # 20 pages, and the old block printed it twice. One line makes the repeat
+    # obvious, so drop it here rather than reconciling the two keys.
+    said, seen = [], set()
+    # `building.conflict` is `unknowns` under another spelling, on five pages:
+    # a disagreement in the record, stated and left unadjudicated. Same slot,
+    # same line.
+    #
+    # So are `parcel.note` and `assessment.note`, on 47 pages and 19: "the
+    # assessor reports 0 stories for this parcel — a data gap, not a
+    # measurement", "the most recent roll carrying this parcel is 2018, not
+    # 2025". Each says how far to trust a figure the page prints, which is the
+    # one thing this line is for, and no key read them. `historic_status.note`
+    # is the third of them, on two pages: a parcel inside a district boundary
+    # whose classification as a contributing building nobody has established, a
+    # Category A status that came from a project-driven evaluation rather than a
+    # survey. Same slot, same reason.
+    for t in [disclosure, *dating_conflicts(rec),
+              (rec.get("building") or {}).get("conflict"),
+              (rec.get("parcel") or {}).get("note"),
+              (rec.get("assessment") or {}).get("note"),
+              (rec.get("historic_status") or {}).get("note"),
+              *(rec.get("unknowns") or [])]:
+        t = str(t).strip() if t else ""
+        if t and t not in seen:
+            seen.add(t)
+            said.append(t)
+    said = " ".join(said)
+    tail = (f'{indent}<p class="prose"><small>{esc(said)}</small></p>\n'
+            if said else "")
+    # The line can outlive the rail. Three pages hold nothing datable and a
+    # permit record made entirely of filings the timeline leaves out — a
+    # nominal $1 street space, a permit that expired — and a page that prints
+    # neither the rail nor the line says DBI holds nothing, which is the one
+    # thing it must not say.
+    if not items:
+        return tail
+    return (f'{indent}<ol class="vtl" aria-label="Timeline">\n' + "\n".join(items)
+            + f"\n{indent}</ol>\n" + tail)
 
 
 def value_panel_html(rec: dict, indent: str) -> str:
@@ -1352,6 +1968,17 @@ def narrative_html(rec: dict, indent: str) -> tuple:
     return lead, "\n".join(out)
 
 
+def history_entries(rec: dict) -> list:
+    """Every dated historical entry the page carries, in one list.
+
+    Issue #148 migrated the seventeen Corbett Heights pages that used to carry
+    their dated history under `building_history.events` into `historical_record`
+    proper, so this is just an alias now — kept because callers read it for
+    what the rail is *about*, not for the key name.
+    """
+    return rec.get("historical_record") or []
+
+
 def historical_items(rec: dict, indent: str) -> list:
     """`historical_record` as `(date_key, html)` items for the page's timeline.
 
@@ -1367,7 +1994,7 @@ def historical_items(rec: dict, indent: str) -> list:
     with the address it was filed under. Never one item per record: a reader
     scanning the rail should not meet the same date twice.
     """
-    entries = rec.get("historical_record") or []
+    entries = history_entries(rec)
     if not entries:
         return []
     # `label` is the short form a timeline entry cites; the full citation is in
@@ -1387,7 +2014,11 @@ def historical_items(rec: dict, indent: str) -> list:
         cited = e.get("source")
         cited = [s for s in (cited if isinstance(cited, list) else [cited]) if s]
         meta = labels.get(cited[0], cited[0]) if cited else ""
-        photo = e.get("kind") == "photograph"
+        # An item-level record in an image catalogue: the citation is one
+        # record with its own URL, so the label is a link to it. A
+        # postcard is the same shape as a photograph here — a catalogued
+        # item, not a document a page cites a passage of.
+        photo = e.get("kind") in ("photograph", "postcard")
         if len(cited) > 1:
             # Shared label once, then one link per record — the shape a permit
             # item already uses, a span of context followed by its links.
@@ -1401,6 +2032,16 @@ def historical_items(rec: dict, indent: str) -> list:
             row = (f'{indent}      <a href="{esca(href)}">{esc(meta)}</a>\n' if href
                    else f'{indent}      <span>{esc(meta)}</span>\n')
         desc = esc(e.get("description", ""))
+        # What the record stated about the site beyond the fact itself — the lot
+        # as the contract gave it, the corner it named. REFERENCE.md has always
+        # listed these as legitimate entry keys and nothing rendered them, so a
+        # contract's own dimensions reached no reader. Ten entries carry one.
+        for label, key in (("Site as recorded", "site_as_recorded"),
+                           ("Lot as recorded", "lot_as_recorded"),
+                           ("Cross streets", "cross_streets")):
+            val = e.get(key)
+            if val:
+                desc += f" {esc(label)}: {esc(str(val).rstrip('.'))}."
         # A news entry is the article's headline, the outlet and the date, and
         # nothing else: we never restate a living outlet's reporting in our own
         # words, so it carries `headline`/`outlet`/`url` in place of a
@@ -1418,6 +2059,12 @@ def historical_items(rec: dict, indent: str) -> list:
         key = date_key(when)
         if re.fullmatch(r"\d{4}-\d{2}-\d{2}", when or ""):
             when = long_date(when)
+        # A source that knows the month but not the day — a directory issue, a
+        # water-service record read to the month — writes `1896-10`, and until
+        # this branch existed the rail printed that string raw beside a
+        # "August 24, 1896" formatted from the line above it.
+        elif re.fullmatch(r"\d{4}-\d{2}", when or ""):
+            when = MONTHS_LONG[int(when[5:7]) - 1] + " " + when[:4]
         items.append((key,
             f'{indent}  <li class="vtl-item">\n'
             f'{indent}    <div class="vtl-date">{esc(when)}</div>\n'
@@ -1429,16 +2076,63 @@ def historical_items(rec: dict, indent: str) -> list:
     return items
 
 
+# What the California Historical Resource Status Codes the surveys actually use
+# mean, in the wording the pages that carried these rows by hand already used.
+# Only the codes the corpus contains are here: an unlisted code renders bare
+# rather than guessing, which is the same thing the hand-written pages did with
+# 6L and 6Z.
+CR_STATUS_MEANING = {
+    "3CS": "may be eligible for the California Register",
+    "3S": "potential National Register or City Landmark",
+}
+
+
+def survey_entry_description(s: dict) -> str | None:
+    """What a survey's inventory rows call the building, deduplicated.
+
+    A survey that reached two structures on one parcel — a church and its
+    rectory — has a row for each, and both descriptions belong. A survey that
+    listed the same building twice under two street numbers has one.
+    """
+    seen = []
+    for e in s.get("entries") or []:
+        d = (e or {}).get("description")
+        if d and d not in seen:
+            seen.append(d)
+    return "; ".join(seen) or None
+
+
+def cr_status(code) -> str | None:
+    """A California Register status code, expanded where we know the wording."""
+    if not code:
+        return None
+    code = str(code).strip()
+    meaning = CR_STATUS_MEANING.get(code)
+    return f"{code} — {meaning}" if meaning else code
+
+
 def survey_panel_html(rec: dict, indent: str) -> str:
-    """`historic_survey` — what a historic resources survey found here.
+    """`historic_survey` — what the historic resources surveys found here.
+
+    One panel per survey, in the order the page lists them, because a heading
+    names one survey and its rows are that survey's findings. Two surveys reach
+    the same building often enough to plan for it — the Transit Center area sits
+    inside Central SoMa, and the 1990 unreinforced-masonry survey crosses nearly
+    all of them — and while this held a single object, the second survey to
+    arrive either overwrote the first or was written into its panel under the
+    first's name. Both lose the fact.
 
     Spec rows, not prose: a status code, a rating, the earlier surveys that
-    looked at the building. Where the survey's own address or APN disagrees
+    looked at the building. Where a survey's own address or APN disagrees
     with the city's, both are shown and neither is adjudicated.
     """
-    s = rec.get("historic_survey") or {}
-    if not s:
-        return ""
+    surveys = rec.get("historic_survey") or []
+    if isinstance(surveys, dict):
+        surveys = [surveys]
+    return "".join(one_survey_panel_html(s, indent) for s in surveys if s)
+
+
+def one_survey_panel_html(s: dict, indent: str) -> str:
     rows = []
     for icon, key, val in (
             # Not every survey assigns a status code. A CEQA-era evaluation
@@ -1446,17 +2140,33 @@ def survey_panel_html(rec: dict, indent: str) -> str:
             # is the point of the page's citation — it belongs in a row, not
             # buried in the note under it.
             ("ic-permit", "Survey finding", s.get("finding")),
-            ("ic-permit", "Status code", s.get("proposed_status_code")),
+            # How the survey itself described the building — "Classical Revival
+            # mixed-use commercial and residential building". It sits in
+            # `entries`, the survey's own inventory rows, which the panel
+            # otherwise has no reason to open: everything else in a row is the
+            # address and APN the survey used, and those have rows already.
+            ("ic-home", "Described as", survey_entry_description(s)),
+            # `cr_status_code` is the Bayview Area B survey's spelling of the
+            # same fact. The 156 pages carrying it use it *instead* of
+            # `proposed_status_code` — never alongside — so one row serves
+            # both, and the panel heading already names which survey said it.
+            ("ic-permit", "Status code",
+             s.get("proposed_status_code") or cr_status(s.get("cr_status_code"))),
             ("ic-permit", "Prior status code", s.get("prior_status_code")),
             ("ic-plan", "Article 11 rating", s.get("proposed_article11_rating")),
             ("ic-plan", "Current Article 11 rating", s.get("current_article11_rating")),
             ("ic-pin", "Eligible district", s.get("eligible_district")),
             ("ic-pin", "Within district", s.get("existing_district")),
             ("ic-ruler", "Style", s.get("style")),
-            # A survey that attributes the building to a builder is stating a
-            # finding, not repeating `building.builder` — 32 pages carried this
-            # key with nowhere to render it before the row existed.
-            ("ic-ruler", "Builder as surveyed", s.get("builder")),
+            # A survey that attributes the building to an architect or a builder
+            # is stating a finding, not repeating `building.architect` — 32 pages
+            # carried the builder key with nowhere to render it before the row
+            # existed, and 15 more were written with the `_as_surveyed` spellings
+            # that no row read at all.
+            ("ic-ruler", "Architect as surveyed",
+             s.get("architect_as_surveyed") or s.get("architect")),
+            ("ic-ruler", "Builder as surveyed",
+             s.get("builder") or s.get("builder_as_surveyed")),
             ("ic-plan", "Construction", s.get("frame")),
             ("ic-layers", "Integrity", s.get("physical_integrity")),
             ("ic-calendar", "Year built as surveyed", s.get("year_built_as_surveyed")),
@@ -1464,8 +2174,17 @@ def survey_panel_html(rec: dict, indent: str) -> str:
             ("ic-pin", "Parcel as surveyed", s.get("apn_as_surveyed"))):
         if val:
             rows.append((icon, key, str(val)))
-    for key, val in (("Here Today (1968)", s.get("here_today_page")),
-                     ("1976 architectural survey", s.get("dcp_1976_survey")),
+    # `prior_surveys` is the Area B survey's spelling for what the surveys
+    # before it had said. Two of its ratings are deliberately not rows: the
+    # survey gives no scale for the Carey & Company or UMB numbers, says so in
+    # `rating_note`, and the pages written by hand showed neither.
+    prior = s.get("prior_surveys") or {}
+    dcp_1976 = s.get("dcp_1976_survey")
+    if not dcp_1976 and prior.get("survey_1976_rating") is not None:
+        dcp_1976 = f"rated {prior['survey_1976_rating']} of 5"
+    for key, val in (("Here Today (1968)",
+                      s.get("here_today_page") or prior.get("here_today")),
+                     ("1976 architectural survey", dcp_1976),
                      ("Unreinforced masonry survey", s.get("umb_survey")),
                      ("Heritage rating", s.get("heritage_rating")),
                      ("Earlier survey", s.get("prior_survey"))):
@@ -1476,7 +2195,7 @@ def survey_panel_html(rec: dict, indent: str) -> str:
     meaning = s.get("status_code_meaning")
     if meaning and not meaning.endswith("."):
         meaning += "."
-    footnote = " ".join(x for x in (meaning, s.get("note")) if x)
+    footnote = " ".join(x for x in (meaning, s.get("cr_status_note"), s.get("note")) if x)
     # Some surveys record nothing codeable about a building and still say
     # something worth keeping — that its address was numbered differently when
     # it went up, or that the report contradicts itself about which building
@@ -1570,7 +2289,444 @@ def public_art_html(rec: dict, indent: str) -> str:
             + f'\n{indent}</ul>\n')
 
 
+def with_note(value, note) -> str | None:
+    """A spec row's value and the sentence qualifying it, in one row.
+
+    `building` records "an architect was engaged, not named" and "the same
+    contractor also built 100-102 Corbett Avenue" as `architect_note` and
+    `builder_note` beside the field they qualify — sometimes instead of it,
+    where the record names no one. Neither is a fact that earns a label of its
+    own, and neither is a disagreement, so neither belongs on the line closing
+    the timeline: they ride in the row they qualify, or become it.
+    """
+    parts = [str(x).strip() for x in (value, note) if x]
+    return " — ".join(parts) or None
+
+
+def narrative_text(rec: dict) -> str:
+    """Every word of the page's own prose, run together.
+
+    Used to ask whether a structured fact is already stated in a sentence, so
+    the block carrying it can stand down rather than say it twice.
+    """
+    n = rec.get("narrative") or {}
+    bits = [n.get("lead") or "", n.get("community_note") or ""]
+    for sec in n.get("sections") or []:
+        bits += [sec.get("heading") or "", sec.get("body") or ""]
+    return " ".join(bits)
+
+
+def residents_panel_html(rec: dict, indent: str) -> str:
+    """`notable_residents` — documented past residents, one spec row each.
+
+    The name is the row's key and the period its value; a claim the source
+    gives no dates for says so rather than leaving the row half empty. The
+    `detail` behind each claim is not repeated here — the Sources footer
+    carries the citation, and a page with more to say says it in `narrative`.
+
+    Which is why a resident the page's own prose already names is skipped.
+    Seventeen of the eighteen pages carrying this key were written before the
+    panel existed and put the person in their `lead`; rendering both would
+    state the fact twice, which the page contract forbids. Only 737 Buena
+    Vista Avenue West, whose lead names nobody, has a panel to render — and
+    the check was run over all eighteen to confirm the split is that clean.
+    """
+    prose = narrative_text(rec)
+    rows = [r for r in (rec.get("notable_residents") or [])
+            if r.get("name") and r["name"] not in prose]
+    if not rows:
+        return ""
+    body = "\n".join(
+        f'{indent}    <div class="spec"><span class="ic ic-home"></span>'
+        f'<span class="spec-k">{esc(r["name"])}</span>'
+        f'<span class="spec-v">{esc(r.get("period") or "Undated")}</span></div>'
+        for r in rows)
+    return (f'{indent}<section class="panel">\n'
+            f'{indent}  <h3>Notable residents</h3>\n'
+            f'{indent}  <dl class="speclist">\n{body}\n{indent}  </dl>\n'
+            f'{indent}</section>\n')
+
+
+# Ordering-app referral offers, keyed by the `source` id an `occupants` entry
+# cites. The offer is the source's, not the merchant's: an entry shows it only
+# when the source it came from is listed here, so a merchant added later from a
+# directory with no referral programme never inherits one. Bites' link opens
+# the app, not the merchant's menu — there is no per-merchant deep link — so its
+# `note` says so rather than implying one. A row without a `note` prints none: a
+# Momence referral is per host, so each studio is its own source id and its link
+# opens that studio's own sign-up, which the button already says.
+#
+# `offer` and `note` are the only prose on an address page a reader takes as
+# ours rather than the city's, and they are read by someone deciding whether to
+# click. So they are written short and plain, and every row here is the pattern:
+# `offer` is a verb and an amount ("Get $10 credit at Instacart", "Get a free
+# month at FITNESS SF"); `note` is "Referral link." or "Referral code." and then
+# at most two short imperative sentences saying what the reader does ("Sign up
+# and then search for this hotel."). No em-dash asides, no clause explaining why
+# the programme behaves as it does, no sentence whose subject is the link. What
+# a row needs explained goes in merchants/AGENTS.md's source table, where the
+# next agent reads it, not onto fifty pages.
+#
+# `code` is the second shape an offer comes in. Some programmes — Insomnia
+# Cookies' — hand out a code rather than a link that carries it, and nothing
+# claims it for the reader: they type it into a field themselves. So the row
+# carries both, `code` for the string and `url` for the merchant's own address.
+# The block then inverts: the code is what earns the offer, so it takes the
+# accent and states the offer inside its own box, and the link drops to an
+# ordinary one beneath it. A row with a `code` always carries a `note` too,
+# because an offer nothing applies for the reader has to say who does.
+REFERRALS = {
+    "away": {
+        "url": "https://referrals.awaytravel.com/away482479",
+        "offer": "Get $40 off at Away",
+        "app": "Away",
+    },
+    "bites": {
+        "url": "https://withbites.com/invite/5570dec6-e5a7-49f3-9d2c-fa4e12788c9d",
+        "offer": "Get $5 off your first Bites order",
+        "app": "Bites",
+        "note": "Referral link. It opens Bites, where you can search for {which}.",
+    },
+    "blackbird": {
+        # The issue said "$20 after first purchase"; the referral link's own
+        # landing page states the reward as "2,000 $FLY" and, right under it,
+        # "(2,000 Fly is equivalent to $20 USD)" — so the page confirms the
+        # issue's dollar figure, and the row states it in dollars rather than
+        # a currency a reader has never heard of.
+        "url": "https://app.blackbird.xyz/r/bb-98v7tj",
+        "offer": "Get $20 at Blackbird",
+        "app": "Blackbird",
+        "note": "Referral link. Blackbird is mobile-only — download the app, then check in at this restaurant.",
+    },
+    "bonobos": {
+        "url": "https://fbuy.io/bonobos/stanford",
+        "offer": "Get 25% off at Bonobos",
+        "app": "Bonobos",
+    },
+    "bounce": {
+        # The issue said "Give $5 get $5"; Bounce's own promo-code page says the
+        # friend gets $5 off a first booking, which is the reader's half and
+        # agrees. The minimum booking that earns it is in merchants/AGENTS.md,
+        # not on fifty pages.
+        "url": ("https://bounce.com/s/settings/referral-code-received"
+                "?utm_source=referrer_link&coupon=BOUNCE-L9GB4PBQH"),
+        "offer": "Get $5 off your first Bounce booking",
+        "app": "Bounce",
+        "note": "Referral link. Sign up and then book this spot.",
+    },
+    "brooklinen": {
+        "url": "https://rwrd.io/k7ow0kp?c",
+        "offer": "Get $25 off at Brooklinen",
+        "app": "Brooklinen",
+    },
+    "casper": {
+        "url": "https://rwrd.io/ref_YUMLWET?c",
+        "offer": "Get 30% off at Casper",
+        "app": "Casper",
+    },
+    "crumbl": {
+        "url": "https://cmbl.co/RZ6XAQU99O8G",
+        "offer": "Join Crumbl Rewards and earn Crumbs on every order",
+        "app": "Crumbl",
+        "note": ("Referral link. It opens the Crumbl app at the invite, not "
+                 "this bakery's own page."),
+    },
+    "fitnesssf": {
+        "url": "https://join.fitnesssf.com/?m=0bcaa244-52f7-472f-806d-0e517436edb0",
+        "offer": "Get a free month at FITNESS SF",
+        "app": "FITNESS SF",
+    },
+    "hoteltonight": {
+        # The issue said "Give $25 / Get $25"; the invite page itself says up
+        # to $50 back on a first booking, and the page is what the reader gets.
+        "url": "https://www.hoteltonight.com/invite/SROSENTHAL7",
+        "offer": "Get up to $50 back on your first HotelTonight booking",
+        "app": "HotelTonight",
+        "note": "Referral link. Sign up and then search for this hotel.",
+    },
+    "insomniacookies": {
+        "url": "https://insomniacookies.com/",
+        "offer": "Get 100 points at Insomnia Cookies",
+        "app": "Insomnia Cookies",
+        "code": "Stanft6246",
+        "note": ("Referral code. Type it into the “Referral code "
+                 "(optional)” field when you create an Insomnia Cookies "
+                 "account."),
+    },
+    "instacart": {
+        # The issue said "$10 / $10"; the referral link's own landing modal says
+        # "You got $10 referral credit!" over "$10 off", which is the page the
+        # reader lands on, so the two agree. The link opens the home page rather
+        # than the shop — only the home page honours the code — which is what
+        # the `note` is for, the way HotelTonight's is.
+        "url": "https://www.instacart.com/?code=SROSENTHAL1F3D5",
+        "offer": "Get $10 credit at Instacart",
+        "app": "Instacart",
+        "note": "Referral link. Sign up and then shop this store.",
+    },
+    "momence-folk-yoga": {
+        "url": "https://momence.com/sign-up/member?hostId=35337&ref=f11db7945aa1e9ae718b1e8e6fa2c3f6",
+        "offer": "Get $10 credit at Folk Yoga",
+        "app": "Momence",
+    },
+    "momence-haum-studios": {
+        "url": "https://momence.com/sign-up/member?hostId=5610&ref=1ffe67934a48391e4d94df8104c216fa",
+        "offer": "Get a free credit at HAUM Studios",
+        "app": "Momence",
+    },
+    "ritual": {
+        "url": "https://order.ritual.co/join-your-friends?promo=STANFORD66377",
+        "offer": "Get $10 towards your first Ritual orders",
+        "app": "Ritual",
+        "note": ("Referral link. Sign up and then search for {which}. "
+                 "$5 is applied on signup and $5 after your first order."),
+    },
+    "vuori": {
+        "url": ("https://vuoriclothing.com/?utm_medium=EMAIL&utm_campaign=referral_program"
+                "&utm_source=loyalty&sref_id=1KISMQ4"
+                "&cref_id=7d34f858-f559-4074-be75-c6e17634c03f"),
+        "offer": "Get 20% off at Vuori",
+        "app": "Vuori",
+    },
+    "wework": {
+        "url": "https://refer.wework.com/i/nolastan",
+        "offer": "Get a month free on a 12-month WeWork membership",
+        "app": "WeWork",
+    },
+}
+DAY_ABBR = ("Mo", "Tu", "We", "Th", "Fr", "Sa", "Su")
+DAY_SHORT = ("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun")
+
+
+def clock(hhmm: str) -> str:
+    """"17:30" → "5:30pm"; "12:00" → "12pm"."""
+    h, m = int(hhmm[:2]), hhmm[3:5]
+    suffix = "am" if h < 12 or h == 24 else "pm"
+    h = h % 12 or 12
+    return f"{h}{'' if m == '00' else ':' + m}{suffix}"
+
+
+def day_runs(days: set) -> list:
+    """Day indices → runs of consecutive days, reading the week as a circle.
+
+    A week that runs through Sunday into Monday is one run to a reader and two
+    to a Monday-first walk, so for those sets the walk starts just after a day
+    the set lacks: that is what lets "Su,Mo,Tu,We,Th" read as Sun–Thu rather
+    than "Mon–Thu, Sun".
+
+    The rotation is conditional, and the unconditional version looks right
+    until you feed it a gap. Every set with a day missing has somewhere to
+    rotate to, so an unconditional rotation fires on sets that never touch
+    Sunday and starts the label mid-week — "Mo,Tu,Th" printing as
+    "Thu, Mon, Tue", which reads as broken data rather than as a closed
+    Wednesday (#349). Only a set holding both Sunday and Monday can actually
+    wrap, so only that one rotates; every other set is walked from Monday.
+    """
+    start = (next(i for i in range(7) if i not in days) + 1
+             if 6 in days and 0 in days else 0)
+    runs, run = [], []
+    for k in range(7):
+        i = (start + k) % 7
+        if i in days:
+            run.append(i)
+        elif run:
+            runs.append(run)
+            run = []
+    if run:
+        runs.append(run)
+    return runs
+
+
+def days_label(days: set) -> str:
+    if len(days) == 7:
+        return "Daily"
+    parts = []
+    for run in day_runs(days):
+        if len(run) >= 3:
+            parts.append(f"{DAY_SHORT[run[0]]}–{DAY_SHORT[run[-1]]}")
+        else:
+            parts.extend(DAY_SHORT[i] for i in run)
+    return ", ".join(parts)
+
+
+def hours_rows(spec: list) -> list:
+    """schema.org `openingHours` strings → (days, hours) rows, closed days last.
+
+    Bites writes "Mo,Tu,We,Th,Fr 10:45-20:15" and, for a split shift,
+    "Fr 11:45-14:45,16:45-21:30". A day the listing never names is closed, and
+    says so, so the reader is not left to notice which day is missing.
+
+    A span covering the whole day says so in words. Bounce's round-the-clock
+    spots are the first listings here that never close, and "12am–12am" reads
+    as a mistake rather than as all day.
+    """
+    rows, seen = [], set()
+    for line in spec or []:
+        head, _, spans = line.partition(" ")
+        days = {DAY_ABBR.index(d) for d in head.split(",") if d in DAY_ABBR}
+        times = [s.split("-") for s in spans.split(",") if "-" in s]
+        if not days or not times:
+            continue
+        seen |= days
+        rows.append((days, ["Open 24 hours" if (a, b) in (("00:00", "24:00"), ("00:00", "00:00"))
+                            else f"{clock(a)}–{clock(b)}" for a, b in times]))
+    rows.sort(key=lambda r: min(r[0]))
+    out = [(days_label(d), label) for d, label in rows]
+    closed = set(range(7)) - seen
+    if out and closed:
+        out.append((days_label(closed), ["Closed"]))
+    return out
+
+
+def occupant_panel_html(rec: dict, indent: str) -> str:
+    """`occupants` — the businesses trading from the building today.
+
+    One panel per building, not per merchant: a shared kitchen lists three
+    brands at one door, and three panels would repeat the same offer three
+    times. Each merchant is a name, its cuisines, and its hours; the panel
+    closes with the date the listing was read — but only where it published
+    hours, since that date is theirs and hours drift within days — and with
+    the referral offer when the source has one. An offer whose programme hands
+    out a code rather than a link that carries it puts the code where the
+    button would be, stating the offer over it, to copy.
+
+    One business is one entry even when two directories list it, so an entry
+    also carries `also_listed_by`: the other directories that list it, whose
+    offers belong on the panel beside its own. The entry's facts, and the date
+    under them, are `source`'s alone — the most recently read of them.
+    """
+    rows = [o for o in (rec.get("occupants") or []) if o.get("name")]
+    if not rows:
+        return ""
+    sources = {s["id"]: s for s in rec.get("sources") or []}
+    # A merchant at the page's own lead number needs no address row; one at
+    # 115 on the 111–117 New Montgomery page, or round the corner on another
+    # street, does — it says which door.
+    title = page_title(rec)
+    here = {title, re.sub(r"^(\d+\w*)–\S+", r"\1", title)}
+    heads, occ_dates, offers = [], [], {}
+    for o in rows:
+        specs = []
+        listed = o.get("listed_address")
+        if listed and listed not in here:
+            specs.append(("ic-pin", "Listed at", esc(listed)))
+        # A condominium building's page is the building's, so a merchant in one
+        # of its units says which.
+        if o.get("unit"):
+            specs.append(("ic-home", "Unit", esc(o["unit"])))
+        # Each shift is its own span so a narrow column breaks a split day
+        # between its shifts, never inside "11:30 am–3 pm".
+        hours = hours_rows(o.get("opening_hours"))
+        specs += [("ic-clock", k, ", ".join(f"<span>{esc(s)}</span>" for s in v))
+                  for k, v in hours]
+        body = "".join(
+            f'{indent}      <div class="spec"><span class="ic {i}"></span>'
+            f'<span class="spec-k">{esc(k)}</span>'
+            f'<span class="spec-v">{v}</span></div>\n' for i, k, v in specs)
+        # What the business is, on the muted line under its name. `kinds` is
+        # the general key — a yoga studio is not a cuisine — and `cuisines` is
+        # what the food directories write, kept as the fallback.
+        kinds = " · ".join(o.get("kinds") or o.get("cuisines") or [])
+        heads.append(
+            f'{indent}  <div class="occupant">\n'
+            f'{indent}    <h3>{esc(o["name"])}</h3>\n'
+            + (f'{indent}    <p class="occupant-kinds">{esc(kinds)}</p>\n' if kinds else "")
+            + (f'{indent}    <dl class="speclist">\n{body}{indent}    </dl>\n' if body else ""))
+        src = sources.get(o.get("source")) or {}
+        # The date is the hours' — it is on the panel because hours drift. An
+        # entry with none omits it: "Last updated" over a name and an address
+        # would read as a claim about the tenancy, which it is not.
+        occ_dates.append(src["retrieved"] if (src.get("retrieved") and hours) else None)
+        # An offer belongs to a directory that lists the business, and a
+        # business listed by two directories has earned both buttons.
+        for sid in [o.get("source"), *(o.get("also_listed_by") or [])]:
+            if sid in REFERRALS:
+                offers.setdefault(sid, []).append(o)
+    kind = "Current occupant" if len(rows) == 1 else "Current occupants"
+    # An offer only one of the businesses has earned belongs under that
+    # business, not at the foot of the panel. Two merchants over one stack of
+    # buttons say nothing about which is whose, and a reader skimming takes the
+    # name directly above a button to be its owner — which put Ritual's
+    # gelateria offer under Hotel Triton on the 334–352 Grant Avenue page. An
+    # offer several of them share still closes the panel, because a shared
+    # kitchen trading as three brands must not print one directory's button
+    # three times.
+    # One business on the panel disambiguates itself, and moving its offer up
+    # into the group would only push "Last updated" — which dates the hours —
+    # below the button, where it would read as the offer's date instead.
+    solo = ({sid for sid, listed in offers.items() if len(listed) == 1}
+            if len(rows) > 1 else set())
+    # The date belongs to the hours it dates, so where it does not cover the
+    # whole panel it goes inside the group whose hours it describes. One
+    # "Last updated" closing a panel of two reads as the panel's own, and on
+    # the 334–352 Grant Avenue page it dated Amorino Gelato's hours while
+    # sitting under Hotel Triton, which publishes none at all. A date every
+    # business on the panel shares still closes it, so a shared kitchen's
+    # three brands do not print one read date three times.
+    dated = [d for d in occ_dates if d]
+    per_group = bool(dated) and len(rows) > 1 and (
+        len(dated) != len(rows) or len(set(dated)) > 1)
+    blocks = []
+    for o, head, when in zip(rows, heads, occ_dates):
+        mine = [sid for sid in [o.get("source"), *(o.get("also_listed_by") or [])]
+                if sid in solo]
+        blocks.append(head
+                      + (f'{indent}    <p class="occupant-updated">Last updated '
+                         f'{esc(long_date(when))}</p>\n'
+                         if per_group and when else "")
+                      + "".join(offer_html(sid, offers[sid], indent + "    ")
+                                for sid in mine)
+                      + f'{indent}  </div>\n')
+    tail = ""
+    if dated and not per_group:
+        tail += (f'{indent}  <p class="occupant-updated">Last updated '
+                 f'{esc(long_date(max(dated)))}</p>\n')
+    for sid, listed in offers.items():
+        if sid not in solo:
+            tail += offer_html(sid, listed, indent + "  ")
+    return (f'{indent}<section class="panel panel-occupant">\n'
+            f'{indent}  <p class="occupant-kind">{kind}</p>\n'
+            + "".join(blocks) + tail
+            + f'{indent}</section>\n')
+
+
+def offer_html(sid: str, listed: list, pad: str) -> str:
+    """One directory's referral block, at `pad`'s indent.
+
+    Rendered inside the `.occupant` group when the directory lists only that
+    one business, and at the foot of the panel when it lists several.
+    """
+    ref = REFERRALS[sid]
+    which = "this restaurant" if len(listed) == 1 else "these restaurants"
+    note = ref.get("note", "").format(which=which)
+    # An offer claimed with a code inverts the block. It is the code that
+    # earns the reader the offer, not the link, so the code takes the
+    # accent and the offer is stated inside its box, over it; the merchant's
+    # own address drops to an ordinary link beneath, labelled with the host
+    # so it says where it goes. The code is plain text in the HTML —
+    # <ktp-copy> only adds the click — because the reader who has no JS is
+    # the one typing it in.
+    code = ref.get("code")
+    if code:
+        host = urllib.parse.urlsplit(ref["url"]).netloc
+        host = host[4:] if host.startswith("www.") else host
+        return (f'{pad}<p class="occupant-offer occupant-offer-code">\n'
+                f'{pad}  <ktp-copy class="offer-code">'
+                f'<span class="offer-code-claim">{esc(ref["offer"])}</span>'
+                f'<code>{esc(code)}</code></ktp-copy>\n'
+                f'{pad}  <a href="{esca(ref["url"])}" rel="sponsored noopener">'
+                f'<span class="ic ic-link"></span>{esc(host)}</a>'
+                + (f'\n{pad}  <small>{esc(note)}</small>' if note else "")
+                + f'\n{pad}</p>\n')
+    return (f'{pad}<p class="occupant-offer">'
+            f'<a href="{esca(ref["url"])}" rel="sponsored noopener">'
+            f'{esc(ref["offer"])}</a>'
+            + (f'\n{pad}<small>{esc(note)}</small>' if note else "")
+            + '</p>\n')
+
+
 def glance_panel_html(rec: dict, indent: str) -> str:
+    title = page_title(rec)
     p = rec.get("parcel", {})
     a = rec.get("assessment", {})
     b = rec.get("building") or {}
@@ -1578,32 +2734,79 @@ def glance_panel_html(rec: dict, indent: str) -> str:
     # Researched identity: the name the building goes by, who designed it, who
     # built it. Single facts, so spec rows — never a paragraph each.
     # A published completion year that matches the assessor's is the same fact
-    # twice — the "Built 1988" tag already carries it. Show the row only when
-    # the two disagree, and `unknowns` says so alongside.
+    # twice — the timeline's "Built" entry already carries it. Show the row only
+    # when the two disagree, and `unknowns` says so alongside.
     completed = b.get("completed")
     if completed and str(completed) == str(p.get("year_built")):
         completed = None
     for icon, key, val in (("ic-home", "Known as", b.get("name")),
                            ("ic-home", "Formerly", b.get("former_name")),
-                           ("ic-ruler", "Architect", b.get("architect")),
+                           ("ic-ruler", "Architect",
+                            with_note(b.get("architect"), b.get("architect_note"))),
                            # A named builder with no named architect is the
                            # normal case for a 19th-century workers' cottage —
                            # the carpenter who put it up is who the record has.
-                           ("ic-ruler", "Builder", b.get("builder")),
+                           ("ic-ruler", "Builder",
+                            with_note(b.get("builder"), b.get("builder_note"))),
                            ("ic-plan", "Developer", b.get("developer")),
-                           ("ic-calendar", "Completed", completed)):
+                           ("ic-calendar", "Completed", completed),
+                           ("ic-calendar", "First owner", b.get("first_owner")),
+                           # The style as some source other than a survey states
+                           # it — a newsletter, a context statement's prose. The
+                           # survey panel's own "Style" row reads
+                           # `historic_survey.style` and is the commoner case;
+                           # this is the one for a building no survey reached.
+                           ("ic-ruler", "Style", b.get("style")),
+                           # The tract the lot was sold out of. A standing fact
+                           # about the ground, which is why it sits here rather
+                           # than on the rail: the subdivision has a date, the
+                           # building's relationship to it doesn't.
+                           ("ic-plan", "Subdivision", b.get("subdivision")),
+                           # What the record says occupied the ground before,
+                           # where no dated entry carries it. A predecessor with
+                           # dates belongs on the timeline instead.
+                           ("ic-pin", "Site before", b.get("site_before")),
+                           # A house that arrived on a lorry: where it stood
+                           # before is identity, not a dated event — the move
+                           # itself is already an entry on the rail.
+                           ("ic-pin", "Moved from", b.get("relocated_from"))):
         if val:
             rows.append((icon, key, val))
+    # The cost the builder gave when the work was permitted. Not the assessed
+    # value, and never enters the chart.
+    build_cost = b.get("cost_usd")
+    if build_cost:
+        rows.append(("ic-value", "Cost when built", f"${int(build_cost):,}"))
     ctype = CONSTRUCTION.get(p.get("construction_type_code"))
     if ctype:
         rows.append(("ic-plan", "Construction", ctype))
     if rec.get("block") and rec.get("lot"):
         rows.append(("ic-pin", "Parcel", f"Block {rec['block']}, Lot {rec['lot']}"))
     if rec.get("street_numbers_on_parcel"):
-        rows.append(("ic-home", "Street numbers", ", ".join(rec["street_numbers_on_parcel"])))
-    if rec.get("also_addressed"):
+        # Hand-authored pages sometimes hold these as numbers rather than
+        # strings, and a bare join dies on the first int.
+        rows.append(("ic-home", "Street numbers",
+                     ", ".join(str(n) for n in rec["street_numbers_on_parcel"])))
+    also = rec.get("also_addressed") or []
+    if also:
         rows.append(("ic-pin", "Also addressed",
-                     ", ".join(alias_display(x) for x in rec["also_addressed"])))
+                     ", ".join(alias_display(x) for x in also)))
+    # The number the building was known by before the street around it
+    # changed — a renumbering, or a street the city absorbed. Not
+    # `also_addressed`, which is an address the parcel still answers to, and
+    # not `relocated_from`, which is a building that moved rather than an
+    # address that did.
+    if b.get("former_address"):
+        rows.append(("ic-pin", "Formerly addressed", alias_display(b["former_address"])))
+    stair = rec.get("adjoining_public_stair") or {}
+    if stair.get("name"):
+        # A public stair running up the side of the parcel is the building's
+        # own fact, and what it is worth saying is where it goes — which is
+        # the street at its far end, not the one this page is already on.
+        far = [x for x in (stair.get("connects") or [])
+               if x.lower() not in title.lower()]
+        rows.append(("ic-pin", "Adjoining stair",
+                     ", to ".join([stair["name"], *far[:1]])))
     # Only when the building-type tag doesn't already carry the count
     # ("12-unit apartment building", "Two-flat") — never state a fact twice.
     units = p.get("units")
@@ -1612,12 +2815,34 @@ def glance_panel_html(rec: dict, indent: str) -> str:
         rows.append(("ic-layers", "Residential units", f"{units:,}"))
     if a.get("assessed_fixtures_value"):
         rows.append(("ic-value", "Assessed fixtures", f"${a['assessed_fixtures_value']:,}"))
+    # Why a parcel pays no tax on the figures the chart above it prints. The
+    # roll's exemption column is the assessor's own word for the use the
+    # exemption was granted for — "Welfare" for a nonprofit's office building,
+    # "Church" for a congregation's — and on six pages it was the one thing in
+    # `assessment` no key read. Where the roll also gives the exempted amount it
+    # rides in the same row: it is not the chart's total, and on 57 Post Street
+    # it is under half of it.
+    if a.get("exemption"):
+        rows.append(("ic-value", "Tax exemption",
+                     with_note(a["exemption"],
+                               f"${a['exemption_value']:,} exempt"
+                               if a.get("exemption_value") else None)))
     if a.get("last_sale_date"):
         rows.append(("ic-value", "Last sale", long_date(a["last_sale_date"])))
-    hs = rec.get("historic_status") or {}
-    code = (hs.get("ceqa_status_code") or "").strip()
-    if code:
-        rows.append(("ic-permit", "Historic status", f"CEQA {code} — {CEQA_LABEL.get(code, '')}"))
+    # No historic status row: the hero tag already states it in words, and the
+    # row's only addition is the raw CEQA code letter — a citation, which means
+    # nothing to a reader on its own. Same reasoning as the district panel's
+    # article number. The code stays in data.json; it just isn't printed.
+    #
+    # `city_landmark` is the exception, and for the same reason the status row
+    # is gone: the hero tag says the building is an Article 10 landmark, and
+    # this says *which* one. The name and the ordinance number are the
+    # designation's own identifiers, and neither is anywhere else on the page.
+    cl = rec.get("city_landmark") or {}
+    if cl.get("name"):
+        num = cl.get("number")
+        rows.append(("ic-check", "City landmark",
+                     f"{cl['name']} — No. {num}" if num else cl["name"]))
     if not rec.get("permits"):
         rows.append(("ic-clock", "Permits on file", "None"))
     if not rows:
@@ -1766,6 +2991,54 @@ def district_record(rec: dict) -> dict:
     return out
 
 
+@functools.lru_cache(maxsize=None)
+def _district_hubs(city_slug: str) -> frozenset:
+    """The district slugs that have a hub page in this city, read off the tree.
+
+    Which districts earned a hub is a fact about the whole city — the
+    threshold is `DISTRICT_MIN_PAGES` documented buildings — so it cannot be
+    computed from one page's `data.json`. Reading the built directory back is
+    how the renderer stays incapable of emitting a link to a district hub that
+    was held back, which `validate.check_internal_links` would fail on anyway.
+    `seed_pages.py districts` writes these; this only ever reads them.
+    """
+    d = ROOT / city_slug / DISTRICTS_DIR
+    if not d.is_dir():
+        return frozenset()
+    return frozenset(x.name for x in d.iterdir() if (x / "index.html").is_file())
+
+
+def district_hub_href(city_slug: str, name: str) -> str | None:
+    """The hub for this district, or None where the district has no hub.
+
+    A district under the threshold keeps its panel and simply has nowhere to
+    link — the panel states the standing either way, and only the name stops
+    being a link.
+
+    Takes the city slug rather than a record so hub pages, which have no
+    `data.json` of their own, can resolve the same link an address page does.
+    """
+    slug = district_slug(name)
+    return (f"/{city_slug}/{DISTRICTS_DIR}/{slug}/"
+            if slug in _district_hubs(city_slug) else None)
+
+
+def district_href(rec: dict, name: str) -> str | None:
+    """`district_hub_href` for the city this page sits in."""
+    return district_hub_href(rec["path"].strip("/").split("/")[0], name)
+
+
+def district_hub_link(city_slug: str, name: str, text: str) -> str:
+    """`text` as a link to the district's hub, or as plain text without one."""
+    href = district_hub_href(city_slug, name)
+    return f'<a href="{esca(href)}">{esc(text)}</a>' if href else esc(text)
+
+
+def district_link(rec: dict, name: str, text: str) -> str:
+    """`district_hub_link` for the city this page sits in."""
+    return district_hub_link(rec["path"].strip("/").split("/")[0], name, text)
+
+
 def district_panel_html(rec: dict, indent: str) -> str:
     d = district_record(rec)
     if not d:
@@ -1774,7 +3047,7 @@ def district_panel_html(rec: dict, indent: str) -> str:
     out = [f'{indent}<section class="panel panel-district">',
            f'{indent}  <p class="district-kind">'
            f'{esc(district_eyebrow(d, kind))}</p>',
-           f'{indent}  <h3>{esc(name)}</h3>']
+           f'{indent}  <h3>{district_link(rec, d["name"], name)}</h3>']
     # The survey records a literal "N/A" for districts it never dated. A
     # dateline reading "Significant N/A" is worse than no dateline.
     pos = (d.get("period_of_significance") or "").strip()
@@ -1792,77 +3065,78 @@ def district_panel_html(rec: dict, indent: str) -> str:
     # Overlapping districts have no home in the headline — a second district
     # would want a second name at the same size. They trail the panel as a
     # note until the layout has an answer for them.
-    for other in rec.get("also_in_districts", []):
+    for other in overlapping_districts(rec):
         out.append(f'{indent}  <p class="district-also">Also within '
-                   f'{esc(other["name"])}</p>')
+                   f'{district_link(rec, other["name"], other["name"])}</p>')
     out.append(f'{indent}</section>')
     return "\n".join(out) + "\n"
 
 
-def unknowns_html(rec: dict) -> str:
-    p = rec.get("parcel", {})
-    a = rec.get("assessment", {})
-    # "The early residents" is only a gap on a building that has residents, and
-    # the architect is only a gap while the page doesn't name one.
-    residential = (p.get("use") or "") in (
-        "Single Family Residential", "Multi-Family Residential")
-    b = rec.get("building") or {}
-    missing = []
-    if not b.get("architect"):
-        # "and builder" only while the builder is genuinely undocumented — a
-        # page that names the carpenter who built the house must not go on
-        # listing the builder as a gap.
-        missing.append("the architect" if b.get("builder")
-                       else "the architect and builder")
-    elif not b.get("developer"):
-        missing.append("the developer")
-    missing.append("the early residents" if residential else "the early tenants")
-    if any(not w.get("installed") for w in rec.get("public_art") or []):
-        missing.append("when each artwork was installed")
-    if any(not s.get("designer") for s in rec.get("public_open_space") or []):
-        missing.append("who designed the open space")
-    if not a.get("last_sale_date"):
-        missing.append("the date of the last recorded sale")
-    # The roll leaves `year_built` empty on city-owned and exempt parcels. That
-    # is a gap only while nothing else on the page dates the building — once a
-    # source gives a completion year, listing it as undocumented contradicts the
-    # "Completed" row two blocks up.
-    if not p.get("year_built") and not b.get("completed"):
-        missing.insert(0, "the year the building went up")
-    # One gap left is the normal case on a well-documented page, and the
-    # join above turns it into a dangling "Not yet documented: and the early
-    # tenants." It stayed hidden while every page had at least two gaps —
-    # "the architect and builder" was always one of them — and surfaced the
-    # first time a run filled in both.
-    listing = (missing[0] if len(missing) == 1
-               else ", ".join(missing[:-1]) + f" and {missing[-1]}")
-    note = ""
-    hs = rec.get("historic_status") or {}
-    hy, ry = hs.get("yearbuilt"), p.get("year_built")
-    if hy and ry and str(hy) != str(ry):
-        note = (f" The assessor dates the building to {ry}; Planning's historic "
-                f"resource survey records {hy}.")
-    if "vacant lot" in (p.get("property_class") or "").lower() and ry:
-        note += (f" The roll classes this parcel as a vacant lot and also gives "
-                 f"it a build year of {ry}.")
-    conflict = (rec.get("building") or {}).get("completed_conflict")
-    if conflict:
-        note += f" {conflict}"
-    # `unknowns` is where a run records a disagreement it must not adjudicate —
-    # a source against the assessor, or a source against itself. It is written
-    # into data.json, so it has to render from there; a note that lives only in
-    # the JSON is a fact the page does not state. Both shapes in the repo are
-    # read: a list of sentences, and a dict keyed by a slug.
-    stated = rec.get("unknowns") or []
-    if isinstance(stated, dict):
-        stated = list(stated.values())
-    said = " ".join(str(s).strip() for s in stated if str(s).strip())
-    url = feedback_url(page_title(rec), rec["path"])
-    return ('  <div class="unknowns">\n'
-            '    <span class="ic ic-help"></span>\n'
-            f'    <p>{said + " " if said else ""}Not yet documented: {listing}.{note}\n'
-            f'    <a href="{url}">Submit an update</a></p>\n'
-            '  </div>\n')
+# --------------------------------------------------------------------------
+# Nearby
+# --------------------------------------------------------------------------
+# `render_html` is a pure function of one page's `data.json`, so it cannot know
+# what stands next door. `scripts/build_link_index.py` works that out for the
+# whole city ahead of time and this reads it back — the same arrangement the
+# homepage map has with `shared/addresses.geojson`.
+#
+# The index carries paths and titles and deliberately no hooks, so a page's
+# HTML changes when a page is added or removed nearby and not every time a
+# neighbor's prose is edited. See that script's docstring for the rest.
+NEARBY_INDEX = ROOT / "shared" / "nearby.json"
+
+# The relationship in the reader's terms. This is the context a hook would have
+# supplied, and the reason the index doesn't have to carry one.
+NEARBY_LABEL = {"street": "Same street",
+                "block": "Same block",
+                "corner": "Around the corner"}
+
+
+@functools.lru_cache(maxsize=1)
+def _nearby_index() -> dict:
+    """page path -> ((href, title, relationship), ...), read once per process.
+
+    A missing or unreadable index is not an error: the page renders without a
+    Nearby block rather than failing. That is what lets a page seeded before
+    `build_link_index.py` next runs still render — it simply has no neighbors
+    to show until the index catches up with it.
+    """
+    try:
+        raw = json.loads(NEARBY_INDEX.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    paths, titles = raw["paths"], raw["titles"]
+    return {path: tuple((paths[j], titles[j], cls) for j, cls in near)
+            for path, near in zip(paths, raw["near"]) if near}
+
+
+def nearby_html(rec: dict, indent: str) -> str:
+    """The lateral links: the places a reader standing here could walk to.
+
+    Ordered as the index stores them — up and down the street first, then the
+    rest of the block, then around the corner — which is widening circles from
+    the doorstep rather than a ranking.
+
+    Note what this markup is not: an `<a>` followed by `<br>` and a
+    `span.hook`. That pairing is what `validate.hub_html_items` reads a hub's
+    generated list back out of, and `check_hub_sync` then requires the same
+    item in the hub's `index.md`. The check skips address directories, so this
+    block would be safe either way; staying off the pattern means it cannot
+    break that check even if the markup is later reused on a hub.
+    """
+    entries = _nearby_index().get(rec["path"])
+    if not entries:
+        return ""
+    out = [f'{indent}<section class="nearby">',
+           f'{indent}  <div class="section-head"><span class="ic ic-pin"></span>'
+           f'<h2>Nearby</h2></div>',
+           f'{indent}  <ul class="place-list">']
+    for href, title, cls in entries:
+        out.append(f'{indent}    <li><a href="{esca(href)}">{esc(title)}</a>\n'
+                   f'{indent}      <span class="pill pill-muted">'
+                   f'{esc(NEARBY_LABEL.get(cls, cls))}</span></li>')
+    out += [f'{indent}  </ul>', f'{indent}</section>']
+    return "\n".join(out) + "\n"
 
 
 SOURCE_FOOTER_NAME = {
@@ -1871,13 +3145,106 @@ SOURCE_FOOTER_NAME = {
 
 
 def sources_html(rec: dict) -> str:
+    """The footer's source list.
+
+    A source need not have a URL. Two pages cite a printed journal article read
+    off paper, and a citation with nowhere to link is still a citation — it just
+    prints without the link rather than crashing the render.
+
+    `cites` names the passage or item within a source that the page rests on —
+    which photograph in a newsletter, which entry in a directory. Forty-two
+    sources across thirty-four pages carry one, and without it their footer
+    line cites a whole newsletter for a fact found in one paragraph of it.
+
+    `supports` is the other half of that: not where in the source the fact is,
+    but which of the page's claims rests on it. A tourist guide listing where
+    musicians once lived backs one sentence of a page built otherwise from city
+    records, and saying so is the difference between citing it for that claim
+    and appearing to cite it for the parcel. It leads the line, where a reader
+    scanning the list sees it before deciding how much weight the source
+    carries.
+    """
     items = []
     for s in rec.get("sources", []):
         name = SOURCE_FOOTER_NAME.get(s["id"], lambda n: n)(s["name"]).replace(" — ", ", ")
-        items.append(f'      <li>{esc(name)} —\n'
-                     f'        <a href="{esca(s["query"])}">'
-                     f'retrieved {s["retrieved"]}</a></li>')
+        if s.get("cites"):
+            name = f'{name}, citing {s["cites"]}'
+        if s.get("supports"):
+            name = f'{s["supports"]} — {name}'
+        retrieved = s.get("retrieved")
+        if s.get("query") and retrieved:
+            tail = (f'\n        <a href="{esca(s["query"])}">'
+                    f'retrieved {retrieved}</a>')
+        elif retrieved:
+            tail = f'\n        <span>read {retrieved}</span>'
+        else:
+            tail = ""
+        items.append(f'      <li>{esc(name)}{" —" if tail else ""}{tail}</li>')
     return "\n".join(items)
+
+
+# --------------------------------------------------------------------------
+# Structured data
+# --------------------------------------------------------------------------
+# The site's whole shape is a containment hierarchy — city, neighborhood,
+# street, building — and until these blocks landed none of it was declared. A
+# `BreadcrumbList` is what puts the trail, rather than a bare URL, under a
+# result for a page four levels deep, and it states the same values the
+# breadcrumb `<nav>` already renders, in the form a crawler reads.
+#
+# `validate.check_html` permits any number of `application/ld+json` tags and
+# rejects only other scripts, so a page may carry several of these.
+def ld_block(obj, indent: str = "  ") -> str:
+    """One `<script type="application/ld+json">`, indented into the page."""
+    return (f'{indent}<script type="application/ld+json">\n'
+            + indent_block(json.dumps(obj, indent=2, ensure_ascii=False), indent)
+            + f'\n{indent}</script>')
+
+
+def breadcrumb_ld(crumbs: list) -> dict:
+    """`[(name, href or None), ...]` from the top down, current page last.
+
+    The current page carries no `item`: it is where the reader already is, and
+    schema.org treats the final crumb's URL as optional for exactly that
+    reason. Every crumb above it is absolute, because the consumer is a
+    crawler that may have the page out of its directory context.
+    """
+    items = []
+    for i, (name, href) in enumerate(crumbs):
+        item = {"@type": "ListItem", "position": i + 1, "name": name}
+        if href:
+            item["item"] = f"{SITE}{href}"
+        items.append(item)
+    return {"@context": "https://schema.org", "@type": "BreadcrumbList",
+            "itemListElement": items}
+
+
+def collection_ld(path: str, name: str, desc: str, items: list) -> dict:
+    """A hub, as the collection it is: `CollectionPage` wrapping an `ItemList`.
+
+    `items` is `[(name, href), ...]` in the order the page lists them, and the
+    positions are that order — a hub's list is sorted (by number up a street,
+    by street across a neighborhood), so the sequence is information rather
+    than an accident of the walk. Only URLs go in the list: the hook beside
+    each entry is this page's own summary of another page, and repeating it
+    here would be the same sentence in a second place.
+    """
+    return {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "url": f"{SITE}{path}",
+        "name": name,
+        "description": desc,
+        "mainEntity": {
+            "@type": "ItemList",
+            "numberOfItems": len(items),
+            "itemListOrder": "https://schema.org/ItemListOrderAscending",
+            "itemListElement": [
+                {"@type": "ListItem", "position": i + 1, "name": label,
+                 "url": f"{SITE}{href}"}
+                for i, (label, href) in enumerate(items)],
+        },
+    }
 
 
 def render_html(rec: dict) -> str:
@@ -1892,8 +3259,20 @@ def render_html(rec: dict) -> str:
     # The street name comes off the address itself, so rendering never has to
     # reverse-engineer a slug.
     street_name = title.split(" ", 1)[1]
-    sub_line = AREA_SUB.get((city_slug, area_slug), area_name)
-    crumb_number = rec.get("address_range") or number
+    # The line under the address names the neighborhood the page is filed
+    # under. `sub_area` overrides it for a building that sits in a smaller
+    # named place a reader would recognise first — Telegraph Hill inside North
+    # Beach, Jackson Square inside Chinatown, Alamo Square inside Hayes
+    # Valley. `AREA_SUB` cannot say it: it is keyed by directory, and these are
+    # true of some pages in the directory and not others.
+    sub_line = (rec.get("sub_area")
+                or AREA_SUB.get((city_slug, area_slug), area_name))
+    # `address_range` comes in two shapes — the "100–102" string `build_record`
+    # writes, and the {low, high, …} object a hand-edited page may carry. The
+    # crumb and the JSON-LD both read it, so both go through `range_label`;
+    # without it a dict's Python repr lands in the breadcrumb and the
+    # BreadcrumbList name.
+    crumb_number = range_label(rec.get("address_range")) or number
     street_addr_plain = title.replace("–", "-")
 
     # Panels belong beside the main column whenever there is a main column for
@@ -1902,14 +3281,21 @@ def render_html(rec: dict) -> str:
     # there. Only a page that is nothing but panels stacks them full width.
     has_panels = bool(value_panel_html(rec, "") or glance_panel_html(rec, "")
                       or district_panel_html(rec, "") or open_space_panel_html(rec, "")
-                      or survey_panel_html(rec, ""))
-    has_main = bool(public_art_html(rec, "") or timeline_html(rec, "")
-                    or narrative_html(rec, "")[1])
+                      or survey_panel_html(rec, "") or residents_panel_html(rec, "")
+                      or occupant_panel_html(rec, ""))
+    # A rail holding nothing but the building's own year is not a column: it
+    # would put one dot beside a full stack of panels. Those pages keep
+    # stacking full width, as they did when the year was a tag in the hero.
+    has_main = bool(public_art_html(rec, "") or narrative_html(rec, "")[1]
+                    or timeline_html(rec, "").count('<li class="vtl-item"') > 1)
     use_cols = has_panels and has_main
     ind = "      " if use_cols else "  "
-    panels = (open_space_panel_html(rec, ind) + value_panel_html(rec, ind)
-              + glance_panel_html(rec, ind) + survey_panel_html(rec, ind)
-              + district_panel_html(rec, ind))
+    # What trades from the building today heads the aside, like an infobox:
+    # it is the one panel a passer-by opening the page is most likely after.
+    panels = (occupant_panel_html(rec, ind)
+              + open_space_panel_html(rec, ind) + value_panel_html(rec, ind)
+              + glance_panel_html(rec, ind) + residents_panel_html(rec, ind)
+              + survey_panel_html(rec, ind) + district_panel_html(rec, ind))
     art = public_art_html(rec, ind)
     timeline = timeline_html(rec, ind)
     lead_html, sections = narrative_html(rec, ind)
@@ -1935,6 +3321,12 @@ def render_html(rec: dict) -> str:
         "geo": {"@type": "GeoCoordinates", "latitude": lat, "longitude": lng},
         "description": desc,
     }
+    crumbs_ld = breadcrumb_ld([
+        (city_name, f"/{city_slug}/"),
+        (area_name, f"/{city_slug}/{area_slug}/"),
+        (street_name, f"/{city_slug}/{area_slug}/{street_slug_}/"),
+        (crumb_number, None),
+    ])
 
     return f"""<!doctype html>
 <html lang="en">
@@ -1947,9 +3339,8 @@ def render_html(rec: dict) -> str:
 {ICON_LINKS}
   <link rel="stylesheet" href="/shared/site.css">
   <script type="module" src="/shared/site.js"></script>
-  <script type="application/ld+json">
-{indent_block(json.dumps(ld, indent=2, ensure_ascii=False), "  ")}
-  </script>
+{ld_block(ld)}
+{ld_block(crumbs_ld)}
 </head>
 <body>
 <header class="site-header">
@@ -1994,7 +3385,7 @@ def render_html(rec: dict) -> str:
 
 {lead_html}{stats_html(rec)}
 {body}
-{unknowns_html(rec)}</main>
+{nearby_html(rec, "  ")}</main>
 
 <footer class="site-footer">
   <section class="sources">
@@ -2193,8 +3584,16 @@ def classify(row: dict) -> str:
         return "no-roll-record"
     # Condominium parcels are individual units with their own APN, not
     # buildings. AGENTS.md says skip them and flag for a human.
+    #
+    # The class code alone does not prove a unit stack: it also sits on old
+    # single-address parcels that were condominium-mapped and never split, and
+    # those are buildings. A research manifest may therefore carry
+    # `sole_parcel_for_address`, set only where the resolver checked the
+    # stronger thing — that EAS puts the recorded numbers on this parcel and no
+    # other, so there is no stack of units to defer. Nothing else may set it.
     if roll.get("property_class_code_definition") == "Condominium":
-        return "condo-unit"
+        if not row.get("sole_parcel_for_address"):
+            return "condo-unit"
     return "seedable"
 
 
@@ -2205,11 +3604,20 @@ def district_of(rec: dict) -> dict:
     """The page's historic district, whichever shape it's recorded in.
 
     Generated pages put it at the top level; some earlier hand-authored pages
-    nest it under `historic_status.district`.
+    nest it under `historic_status.district` instead. Two pages used to put
+    every district the parcel stands in — the panel's and the overlaps both —
+    in one `historic_districts` list; issue #148 split those into
+    `historic_district` (the panel's) and `also_in_districts` (the rest), so
+    a page's own district and its overlaps are always those two keys now.
     """
     return (rec.get("historic_district")
             or (rec.get("historic_status") or {}).get("district")
             or {})
+
+
+def overlapping_districts(rec: dict) -> list:
+    """The districts this parcel stands in beyond the one the panel names."""
+    return rec.get("also_in_districts") or []
 
 
 def range_label(address_range) -> str:
@@ -2238,21 +3646,152 @@ KNOWN_STREET_HUB_SECTIONS = (re.compile(r"documented so far$", re.I),
                              re.compile(r"^not yet covered$", re.I))
 
 
-def street_hub_extra_sections(street_dir: Path) -> list:
-    """H2 section headings in an existing street hub that the generator didn't write.
+def hub_extra_sections(hub_dir: Path, known) -> list:
+    """H2 section headings in an existing hub that its generator didn't write.
 
     A hand-edited hub can grow sections a plain lead+list template has no room
     for — "The street itself", "Sources" — see `AGENTS.md`'s note that an
-    existing page "is only ever edited by hand." `write_street_hub` has no way
-    to merge those back in, so it must detect them and refuse to overwrite
-    rather than silently deleting them.
+    existing page "is only ever edited by hand." A hub writer has no way to
+    merge those back in, so it must detect them and refuse to overwrite rather
+    than silently deleting them.
     """
-    md = street_dir / "index.md"
+    md = hub_dir / "index.md"
     if not md.exists():
         return []
     headings = re.findall(r"^## (.+)$", md.read_text(encoding="utf-8"), re.M)
-    return [h for h in headings
-            if not any(pat.search(h) for pat in KNOWN_STREET_HUB_SECTIONS)]
+    return [h for h in headings if not any(pat.search(h) for pat in known)]
+
+
+def hub_hand_sections(hub_dir: Path, known) -> list:
+    """`[(heading, [body line, …]), …]` for the sections a person wrote.
+
+    The companion to `hub_extra_sections`, which only names them. A street's
+    own record — when its lots were divided, the 1922 order that graded it, the
+    corner the Market Street extension took — is a fact about the street and
+    has no building page to sit on, so the hub is where it goes. Carrying it
+    through a rebuild is what lets the hub stay generated: the alternative is
+    the generator refusing the street and its `index.html` being committed as
+    the only copy of the prose, which is what `corbett-heights/mars-street` and
+    `corbett-heights/danvers-street` were before this read them.
+    """
+    md = hub_dir / "index.md"
+    if not md.exists():
+        return []
+    out, body = [], None
+    for line in md.read_text(encoding="utf-8").splitlines():
+        m = re.match(r"^## (.+)$", line)
+        if m:
+            body = []
+            if not any(pat.search(m.group(1)) for pat in known):
+                out.append((m.group(1), body))
+            continue
+        if body is not None:
+            body.append(line)
+    return [(h, _strip_blanks(b)) for h, b in out]
+
+
+def _strip_blanks(lines: list) -> list:
+    """A section body without the blank lines around it."""
+    while lines and not lines[0].strip():
+        lines = lines[1:]
+    while lines and not lines[-1].strip():
+        lines = lines[:-1]
+    return lines
+
+
+MD_LINK = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
+# Matched after escaping, which is why these look for the escaped brackets —
+# and why the URL body is "anything up to the closing one" rather than a
+# character class: a query string escapes its own separators to `&amp;`.
+MD_AUTOLINK = re.compile(r"&lt;(https?://(?:(?!&gt;).)+)&gt;")
+# The shape a hand-written Sources bullet ends in: the query URL, then the date
+# it was read. An address page's footer prints exactly that as one link, so a
+# hub's does too rather than spelling a query string out across the page.
+MD_SOURCE_LINK = re.compile(r"&lt;(https?://(?:(?!&gt;).)+)&gt;\s*"
+                            r"\(retrieved (\d{4}-\d{2}-\d{2})\)")
+MD_STRONG = re.compile(r"\*\*([^*]+)\*\*")
+MD_EM = re.compile(r"(?<!\*)\*([^*]+)\*(?!\*)")
+
+
+def md_inline(text: str) -> str:
+    """The inline markdown a hub's hand-written prose actually uses.
+
+    Deliberately not a markdown implementation: links, autolinks, bold and
+    italics are what the sections in the corpus contain, and anything wider
+    would be a parser to maintain for no page's benefit.
+    """
+    return md_inline_escaped(esc(text))
+
+
+def md_inline_escaped(out: str) -> str:
+    """`md_inline`'s markup pass, on text that is already escaped."""
+    out = MD_LINK.sub(lambda m: f'<a href="{esca(html.unescape(m.group(2)))}">'
+                                f'{m.group(1)}</a>', out)
+    out = MD_AUTOLINK.sub(lambda m: f'<a href="{esca(html.unescape(m.group(1)))}">'
+                                    f'{m.group(1)}</a>', out)
+    out = MD_STRONG.sub(r"<b>\1</b>", out)
+    return MD_EM.sub(r"<em>\1</em>", out)
+
+
+def hub_source_line(item: str) -> str:
+    """One hand-written Sources bullet, as the footer's own citation shape."""
+    # Before the general inline pass, which would otherwise autolink the URL
+    # under its own spelling and leave the date behind as bare text.
+    out = MD_SOURCE_LINK.sub(
+        lambda m: f'<a href="{esca(html.unescape(m.group(1)))}">'
+                  f'retrieved {m.group(2)}</a>', esc(item))
+    return md_inline_escaped(out)
+
+
+def md_list_items(lines: list) -> list:
+    """Just the bullets, unwrapped — a hand-written Sources section is a list."""
+    items: list = []
+    for line in lines:
+        stripped = line.strip()
+        if stripped.startswith("- "):
+            items.append(stripped[2:])
+        elif stripped and items:
+            items[-1] += " " + stripped
+    return items
+
+
+def md_block_html(lines: list, indent: str) -> str:
+    """Bullet lists and paragraphs, the two shapes a hand-written section has.
+
+    A list item may wrap onto indented continuation lines, and so may a
+    paragraph; both are joined back into one line before rendering, because the
+    hard wrapping in `index.md` is a courtesy to whoever edits the file and
+    means nothing in the output.
+    """
+    blocks, cur, kind = [], [], None
+    for line in [*lines, ""]:
+        stripped = line.strip()
+        if not stripped:
+            if cur:
+                blocks.append((kind, cur))
+            cur, kind = [], None
+            continue
+        if stripped.startswith("- "):
+            if kind != "ul":
+                if cur:
+                    blocks.append((kind, cur))
+                cur, kind = [], "ul"
+            cur.append(stripped[2:])
+        elif kind == "ul" or (kind == "p" and cur):
+            cur[-1] += " " + stripped          # a wrapped continuation line
+        else:
+            cur, kind = [stripped], "p"
+    out = []
+    for k, items in blocks:
+        if k == "ul":
+            rows = "\n".join(f"{indent}  <li>{md_inline(i)}</li>" for i in items)
+            # `.prose` is the measure, and nothing else — the browser's own
+            # bullets and indent are what a plain list wants, so this needs no
+            # rule of its own in the stylesheet.
+            out.append(f'{indent}<ul class="prose">\n{rows}\n{indent}</ul>')
+        else:
+            out += [f'{indent}<p class="prose">{md_inline(i)}</p>' for i in items]
+    return "\n".join(out) + "\n" if out else ""
 
 
 def hub_lead(street_dir, fallback: str) -> str:
@@ -2285,7 +3824,13 @@ def hub_lead(street_dir, fallback: str) -> str:
     return " ".join(para) if para else fallback
 
 
-def hook_for(rec: dict) -> str:
+def hook_for(rec: dict, with_district: bool = True) -> str:
+    """The page's one-line description for a hub's list.
+
+    `with_district` is off on a historic-district hub, where naming the
+    district on every line would repeat the page's own headline — and would
+    name the *wrong* district for a building that stands in two.
+    """
     # A hand-written hook in data.json always wins over a generated one.
     if rec.get("hook"):
         return rec["hook"]
@@ -2294,7 +3839,7 @@ def hook_for(rec: dict) -> str:
     btype = building_type(p.get("property_class"), p.get("units")).lower()
     article = article_for(year, btype).capitalize()
     head = f"{article} {year} {btype}" if year else f"{article} {btype}"
-    dist = district_of(rec).get("name")
+    dist = district_of(rec).get("name") if with_district else None
     if dist:
         head += f" in the {dist}"
     wp = work_phrase(rec.get("permits", []))
@@ -2311,28 +3856,184 @@ def hook_for(rec: dict) -> str:
     return f"{head}."
 
 
+# --------------------------------------------------------------------------
+# Nearby streets
+# --------------------------------------------------------------------------
+# The street-hub counterpart to `nearby_html`. Address pages get their lateral
+# links from `shared/nearby.json` because `render_html` sees one `data.json`
+# and nothing else; a street hub is already built from the whole directory
+# beneath it, and its neighbors are one level up, so this reads the
+# neighborhood off the tree instead of needing a committed index.
+NEARBY_STREET_MAX = 6
+
+
+# "12Th", "9Th" — a capital letter directly after a digit, which is `str.title()`
+# applied to an ordinal and never how a street is written.
+TITLECASED_ORDINAL = re.compile(r"\d[A-Z]")
+
+
+def street_display_name(recs: list) -> str:
+    """The street's name, as its own pages spell it — the commonest spelling.
+
+    Taken off the addresses rather than the slug, because the address carries
+    the city's official name ("Third Street", not "3rd Street"). But a street's
+    pages do not always agree: 9th Street in South of Market spells itself
+    "9th Street" 18 times, "9Th Street" 5 and "Ninth Street" 3 across its 26
+    pages. Reading the name off whichever page came first made the name a fact
+    about directory order — nondeterministic wherever the list was unsorted
+    (`street_summary` was, so a neighborhood hub's street names came out
+    differently on APFS and on ext4), and wrong even when it was sorted,
+    because the lowest-numbered page on a street is sometimes a corner
+    building addressed on the cross street. That is how
+    `/east-cut/minna-street/` came to be published titled "Mission Street".
+
+    A spelling a title-caser mangled does not get a vote. "12Th Street" is what
+    `str.title()` does to "12th", and an uppercase letter straight after a
+    digit is never how a street is written — so those are set aside before the
+    count rather than allowed to win it, which they otherwise do: South of
+    Market's 11th Street carries "11Th" on three pages and "11th" on two. They
+    are counted only if a street has nothing else.
+
+    A tie then goes to the lowest-numbered page, so `recs` must arrive in
+    `num_key` order. Where a tie decides it the two spellings genuinely
+    contradict each other, and one of them is bad data rather than a naming
+    question this function can settle.
+    """
+    names = [page_title(r).split(" ", 1)[1] for r in recs]
+    clean = [n for n in names if not TITLECASED_ORDINAL.search(n)] or names
+    counts = collections.Counter(clean)
+    top = max(counts.values())
+    return next(n for n in clean if counts[n] == top)
+
+
+@functools.lru_cache(maxsize=8)
+def _street_geometry(area_dir: str) -> dict:
+    """slug -> (display, count, (lat, lng) centroid, ((lat, lng), ...)).
+
+    One pass over a neighborhood, cached, because `write_street_hub` is called
+    once per street and every call wants the same answer. Streets with no
+    documented building, and buildings with no coordinates, are left out —
+    a street that contributes nothing to the geometry can't be ranked against
+    and can't be ranked.
+    """
+    out = {}
+    for street_dir in sorted(Path(area_dir).iterdir()):
+        if not street_dir.is_dir():
+            continue
+        recs = []
+        for d in sorted(street_dir.iterdir(), key=lambda x: num_key(x.name)):
+            f = d / "data.json"
+            if d.is_dir() and f.exists():
+                recs.append(json.loads(f.read_text(encoding="utf-8")))
+        if not recs:
+            continue
+        pts = tuple((c["lat"], c["lng"]) for c in
+                    (r.get("coordinates") or {} for r in recs)
+                    if c.get("lat") is not None and c.get("lng") is not None)
+        if not pts:
+            continue
+        # The display name comes off the addresses on the street, not off the
+        # slug — the same choice `write_street_hub` makes for its own <h1>, so
+        # a link's text matches the page it lands on.
+        disp = street_display_name(recs)
+        centroid = (sum(p[0] for p in pts) / len(pts),
+                    sum(p[1] for p in pts) / len(pts))
+        out[street_dir.name] = (disp, len(recs), centroid, pts)
+    return out
+
+
+@functools.lru_cache(maxsize=8)
+def _nearby_streets(area_dir: str) -> dict:
+    """slug -> ((slug, display, count), ...), nearest first, capped.
+
+    Distance between two streets is the shorter of "how far is A's centre from
+    the nearest building on B" and the same measured the other way. Centre to
+    centre would be cheaper but reads badly on a long street: Mission Street's
+    centroid sits in the middle of the neighborhood, so a centre-to-centre
+    ranking would hide it from every street near the edges that it in fact
+    runs straight past. Taking the nearer of the two measurements keeps the
+    *distance* symmetric while letting a long street be near everything it
+    actually passes; the cap is still one-sided, so a street on a crowded
+    corner can appear on a quiet street's list without returning the favour.
+
+    Cost is streets x buildings per neighborhood, about 1.2M distance
+    calculations for the whole city, all of it inside one cached pass.
+    """
+    geom = _street_geometry(area_dir)
+    slugs = sorted(geom)
+    reach = {}  # (a, b) -> distance from a's centroid to b's nearest building
+    for a in slugs:
+        lat, lng = geom[a][2]
+        for b in slugs:
+            if b != a:
+                reach[(a, b)] = min(_metres(lat, lng, y, x) for y, x in geom[b][3])
+    out = {}
+    for a in slugs:
+        ranked = sorted(((min(reach[(a, b)], reach[(b, a)]), b) for b in slugs
+                         if b != a))[:NEARBY_STREET_MAX]
+        if ranked:
+            out[a] = tuple((b, geom[b][0], geom[b][1]) for _d, b in ranked)
+    return out
+
+
+def nearby_streets_html(street_dir: Path, ctx: dict, indent: str) -> str:
+    """The streets a reader standing on this one could walk to.
+
+    Deliberately not the `<a>…</a><br><span class="hook">` pairing:
+    `validate.hub_html_items` reads a hub's generated list back out of exactly
+    that markup and `check_hub_sync` then demands the same item in the hub's
+    `index.md`. Street hubs *are* hub-synced, so a nearby list written that way
+    would either fail the check or force generated content into the file that
+    exists to hold a person's prose. Staying off the pattern keeps `index.md`
+    for prose — the same choice `nearby_html` makes on address pages.
+    """
+    entries = _nearby_streets(str(street_dir.parent)).get(street_dir.name)
+    if not entries:
+        return ""
+    out = [f'{indent}<section class="nearby">',
+           f'{indent}  <div class="section-head"><span class="ic ic-pin"></span>'
+           f'<h2>Nearby streets</h2></div>',
+           f'{indent}  <ul class="place-list">']
+    for slug, disp, count in entries:
+        out.append(
+            f'{indent}    <li><a href="/{ctx["city"]}/{ctx["area"]}/{slug}/">'
+            f'{esc(disp)}</a>\n{indent}      <span class="pill pill-muted">'
+            f'{count:,} {"building" if count == 1 else "buildings"}'
+            f'</span></li>')
+    out += [f'{indent}  </ul>', f'{indent}</section>']
+    return "\n".join(out) + "\n"
+
+
 def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
     """Rebuild a street's index.md + index.html from the pages beneath it.
 
-    Returns False (and leaves both files untouched) if the existing index.md
-    has hand-written sections the generator doesn't know how to preserve —
-    see `street_hub_extra_sections`.
+    Returns whether there was a street hub to write — False for a directory
+    holding no pages yet.
+
+    Sections a person wrote are carried through rather than overwritten: they
+    are read out of `index.md`, written back to it verbatim, and rendered into
+    `index.html` — a "Sources" section into the footer where an address page
+    puts its own, everything else into the main column above the building list.
+    So the hub stays generated no matter what a street's own record has grown,
+    and no street's `index.html` has to be committed to keep its prose.
+
+    The "Nearby streets" list is a fact about the whole neighborhood, so
+    rebuilding one street hub after seeding leaves its neighbors' lists a page
+    behind — `hubs` over the neighborhood is what brings them level, the same
+    way `build_link_index.py` catches `shared/nearby.json` up to new pages.
     """
-    extra = street_hub_extra_sections(street_dir)
-    if extra:
-        print(f"  {street_dir}: skipping — hand-written section(s) "
-              f"{', '.join(extra)} beyond the generated template; "
-              f"update the list by hand instead", file=sys.stderr)
-        return False
+    hand = hub_hand_sections(street_dir, KNOWN_STREET_HUB_SECTIONS)
+    hand_sources = [b for h, b in hand if h.strip().lower() == "sources"]
+    hand_main = [(h, b) for h, b in hand if h.strip().lower() != "sources"]
     recs = []
     for d in sorted(street_dir.iterdir(), key=lambda x: num_key(x.name)):
         f = d / "data.json"
         if d.is_dir() and f.exists():
             recs.append(json.loads(f.read_text()))
     if not recs:
-        return True
+        return False
     slug = street_dir.name
-    disp = page_title(recs[0]).split(" ", 1)[1]  # off the address, not the slug
+    disp = street_display_name(recs)  # off the addresses, not the slug
     path = f"/{ctx['city']}/{ctx['area']}/{slug}/"
     area_name = " ".join(w.capitalize() for w in ctx["area"].split("-"))
     city_name = " ".join(w.capitalize() for w in ctx["city"].split("-"))
@@ -2383,14 +4084,22 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
         if n:
             uncovered.append(f"{n} {phrase}")
 
-    md = [f"# {disp}", "", lead, "", "## Documented so far", ""]
-    for number, href, _title, hook in entries:
-        md.append(f"- [{number}]({href}/) — {hook}")
+    # The building-by-building list is not written here: it's generated wholesale
+    # from each child's data.json on every rebuild and carries no hand content of
+    # its own (#151) — index.html is its only copy. What stays in index.md is
+    # what a person could actually have written: the lead above, and this note.
+    md = [f"# {disp}", "", lead, ""]
     if uncovered:
-        md += ["", "## Not yet covered", "",
-               "Also on this street: " + "; ".join(uncovered) + "."]
-    md += ["", "Pages are generated from the DataSF datasets listed in each page's",
+        md += ["## Not yet covered", "",
+               "Also on this street: " + "; ".join(uncovered) + ".", ""]
+    md += ["Pages are generated from the DataSF datasets listed in each page's",
            "Sources footer, and are corrected by hand as readers write in.", ""]
+    # After the generated template, not inside it: a hub with no hand-written
+    # section then reads exactly as it did before this could carry one.
+    for heading, body in hand_main:
+        md += [f"## {heading}", "", *body, ""]
+    for body in hand_sources:
+        md += ["## Sources", "", *body, ""]
     (street_dir / "index.md").write_text("\n".join(md), encoding="utf-8")
 
     stat_html = "\n".join(
@@ -2404,7 +4113,8 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
     if districts:
         rows = "\n".join(
             f'          <div class="spec"><span class="ic ic-permit"></span>'
-            f'<span class="spec-k">{esc(name)}</span>'
+            f'<span class="spec-k">'
+            f'{district_hub_link(ctx["city"], name, name)}</span>'
             f'<span class="spec-v">{count:,}</span></div>'
             for name, count in districts.most_common())
         aside += (f'      <section class="panel">\n'
@@ -2423,6 +4133,20 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
     if aside:
         cols_open = '  <div class="cols">\n    <div class="main">\n'
         cols_close = f'    </div>\n\n    <aside class="aside">\n{aside}    </aside>\n  </div>\n'
+    nearby = nearby_streets_html(street_dir, ctx, "  ")
+    # The street's own record, above the buildings: what a reader wants first
+    # from a hub that has one is the street, and the list is what they scroll to.
+    hand_html = "".join(
+        f'      <div class="section-head"><span class="ic ic-clock"></span>'
+        f'<h2>{esc(heading)}</h2></div>\n{md_block_html(body, "      ")}\n'
+        for heading, body in hand_main)
+    sources_block = ""
+    if hand_sources:
+        rows = "\n".join(f"      <li>{hub_source_line(i)}</li>"
+                         for body in hand_sources
+                         for i in md_list_items(body))
+        sources_block = ('  <section class="sources">\n    <h2>Sources</h2>\n'
+                         f'    <ul>\n{rows}\n    </ul>\n  </section>\n')
 
     html_out = f"""<!doctype html>
 <html lang="en">
@@ -2435,6 +4159,12 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
 {ICON_LINKS}
   <link rel="stylesheet" href="/shared/site.css">
   <script type="module" src="/shared/site.js"></script>
+{ld_block(breadcrumb_ld([(city_name, f"/{ctx['city']}/"),
+                         (area_name, f"/{ctx['city']}/{ctx['area']}/"),
+                         (disp, None)]))}
+{ld_block(collection_ld(path, disp, desc,
+                        [(title, f"{path}{href}/")
+                         for _n, href, title, _hook in entries]))}
 </head>
 <body>
 <header class="site-header">
@@ -2454,14 +4184,14 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
 {stat_html}
   </div>
 
-{cols_open}      <div class="section-head"><span class="ic ic-pin"></span><h2>Buildings</h2></div>
+{cols_open}{hand_html}      <div class="section-head"><span class="ic ic-pin"></span><h2>Buildings</h2></div>
       <ul class="place-list">
 {list_html}
       </ul>
-{cols_close}</main>
+{cols_close}{nearby}</main>
 
 <footer class="site-footer">
-  <p class="feedback-cta">
+{sources_block}  <p class="feedback-cta">
     Live on {esc(disp)}, or know a building we should cover next?
     <a href="{feedback_url(disp, path)}">Tell us.</a>
   </p>
@@ -2506,11 +4236,11 @@ def existing_street_hooks(area_dir: Path) -> dict:
 def street_summary(street_dir: Path, kept: dict = None) -> tuple:
     """(display name, count, hook) for one street, read off its pages."""
     recs = [json.loads((d / "data.json").read_text())
-            for d in street_dir.iterdir()
+            for d in sorted(street_dir.iterdir(), key=lambda x: num_key(x.name))
             if d.is_dir() and (d / "data.json").exists()]
     if not recs:
         return None
-    disp = page_title(recs[0]).split(" ", 1)[1]
+    disp = street_display_name(recs)
     years = sorted(r["parcel"]["year_built"] for r in recs
                    if r.get("parcel", {}).get("year_built"))
     hook = f"{len(recs):,} building{'' if len(recs) == 1 else 's'}"
@@ -2571,8 +4301,567 @@ def write_neighborhood_hub(area_dir: Path, ctx: dict) -> int:
             lambda m: m.group(1) + block + m.group(3), text, flags=re.S)
         if not n:
             raise SystemExit(f"{html_path}: no '{NEIGHBORHOOD_SECTION}' list to replace")
-        html_path.write_text(new, encoding="utf-8")
+        html_path.write_text(neighborhood_ld(new, area_dir, streets),
+                             encoding="utf-8")
     return len(streets)
+
+
+# Everything from the shared enhancement script to the end of the head. A
+# neighborhood hub is otherwise a human's prose that this file only patches, so
+# its structured data is rewritten wholesale in the one region no hand-written
+# content occupies — replacing the region rather than inserting into it is what
+# makes a second `hubs` run leave the page alone.
+HUB_HEAD_LD = re.compile(
+    r'(<script type="module" src="/shared/site\.js"></script>)'
+    r'.*?(\n</head>)', re.S)
+
+
+def neighborhood_ld(text: str, area_dir: Path, streets: list) -> str:
+    """Put the hub's `BreadcrumbList` and `ItemList` in its `<head>`."""
+    city_slug, area_slug = area_dir.parent.name, area_dir.name
+    path = f"/{city_slug}/{area_slug}/"
+    city_name = " ".join(w.capitalize() for w in city_slug.split("-"))
+    disp = area_display(path)
+    m = re.search(r'<meta name="description" content="([^"]*)"', text)
+    desc = html.unescape(m.group(1)) if m else disp
+    blocks = "\n".join(ld_block(obj) for obj in (
+        breadcrumb_ld([(city_name, f"/{city_slug}/"), (disp, None)]),
+        collection_ld(path, disp, desc,
+                      [(street_disp, f"{path}{slug}/")
+                       for slug, street_disp, _n, _hook in streets])))
+    out, n = HUB_HEAD_LD.subn(lambda m: f"{m.group(1)}\n{blocks}{m.group(2)}", text)
+    if not n:
+        raise SystemExit(f"{area_dir / 'index.html'}: no <head> to put "
+                         f"structured data in")
+    return out
+
+
+# --------------------------------------------------------------------------
+# Historic-district hubs
+# --------------------------------------------------------------------------
+# The fourth page type, and the only aggregation on this site that isn't the
+# containment tree. A historic district is a real subject with a record of its
+# own — the city's surveys drew its boundary, dated its period of significance
+# and set down its standing on the registers — which is what separates it from
+# a facet. Decade, zoning and property-class lists have no such record behind
+# them and are deliberately not built.
+#
+# They sit at city level rather than under a neighborhood because a district is
+# not contained by one: the Chinatown Historic District runs through five
+# neighborhood directories and Kearny-Market-Mason-Sutter through six.
+DISTRICTS_DIR = "historic-districts"
+DISTRICTS_TITLE = "Historic districts"
+
+# Below this a district's list says nothing the one or two pages carrying it
+# don't already say, and a list that thin is a doorway page rather than an
+# encyclopedia entry. Those pages keep their district panel; it just has
+# nowhere to link.
+DISTRICT_MIN_PAGES = 5
+
+DISTRICT_DATASET_URL = "https://data.sfgov.org/resource/63x5-g3m4.json"
+
+# Read off the *name*, not off `split_district_name`'s lifted type phrase,
+# which lowercases it. Six districts in the data are an Extension sharing a
+# base name with the district they extend, so dropping the qualifier would put
+# two districts at one URL.
+DISTRICT_QUALIFIER = re.compile(r"\s+(Extension|Addition|\(Discontiguous\))$")
+
+
+def slugify(text: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", text.lower().replace("&", " and ")).strip("-")
+
+
+def district_short_name(name: str) -> str:
+    """"Duboce Triangle Historic District Extension" -> "Duboce Triangle Extension".
+
+    The parent directory already says these are historic districts, so the slug
+    and the breadcrumb drop the type phrase and keep the qualifier.
+    """
+    base, _kind = split_district_name(name)
+    if base == name:
+        return name          # no type phrase to lift; the name is all there is
+    m = DISTRICT_QUALIFIER.search(name)
+    return f"{base} {m.group(1)}" if m else base
+
+
+def district_slug(name: str) -> str:
+    return slugify(district_short_name(name))
+
+
+DISTRICT_FIELDS = ("california_register_status", "national_register_status",
+                   "article_10_11_status", "local_landmark_protection",
+                   "period_of_significance")
+
+
+def merge_district_records(name: str, records: list) -> dict:
+    """One district record out of the many copies of it the pages carry.
+
+    Three districts disagree with themselves. The survey holds two rows over
+    the same ground under one name — one carrying an Article 10 designation,
+    the other a register listing — and only some parcels fall inside the second
+    row's boundary. `merge_districts` already takes the stronger status where
+    both rows cover one parcel, so what is left here is a real split in the
+    data rather than a merge bug.
+
+    The hub reports what the pages beneath it report: the majority value, ties
+    broken toward the stronger standing and then alphabetically so a rebuild is
+    deterministic. Taking the strongest value outright would put the hub in
+    contradiction with twenty-three of the twenty-four pages it lists.
+    """
+    out = {"name": name}
+    for key in DISTRICT_FIELDS:
+        vals = [r[key] for r in records if r.get(key) not in (None, "")]
+        if not vals:
+            continue
+        counts = collections.Counter(vals)
+        out[key] = max(counts, key=lambda v: (counts[v],
+                                              -STANDING_RANK[standing_tier(str(v))],
+                                              str(v)))
+    return out
+
+
+def districts_named(rec: dict) -> dict:
+    """Every district this page stands in: name -> the record it carries for it.
+
+    Both memberships count. A parcel inside overlapping districts headlines one
+    under `historic_district` and records the rest under `also_in_districts`;
+    to a district those are the same fact, and reading only the headline would
+    lose seven districts outright — every one of the forty buildings in the
+    Liberty Street Historic District headlines Liberty Hill instead.
+
+    `validate.py` calls this too, so the hub and the check that the hub is
+    current read membership by one rule rather than two.
+    """
+    found: dict = {}
+    primary = district_record(rec)
+    if primary.get("name"):
+        found[primary["name"]] = primary
+    for other in rec.get("also_in_districts") or []:
+        if other.get("name") and other["name"] not in found:
+            found[other["name"]] = other
+    return found
+
+
+def district_memberships(city_dir: Path) -> dict:
+    """district name -> [(page_dir, rec, its district record)] across the city."""
+    out: dict = collections.defaultdict(list)
+    for data_path in sorted(city_dir.rglob("data.json")):
+        page_dir = data_path.parent
+        if not ADDRESS_DIR.match(page_dir.name):
+            continue
+        try:
+            rec = json.loads(data_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            print(f"  {data_path}: invalid JSON — skipped", file=sys.stderr)
+            continue
+        for name, d in districts_named(rec).items():
+            out[name].append((page_dir, rec, d))
+    return out
+
+
+def district_members(pages: list) -> list:
+    """One row per building on a district hub, in the order the page lists them.
+
+    Grouped by street and then by number, which is how a reader walks a
+    district; ordering by number alone would interleave four streets.
+    """
+    rows = []
+    for page_dir, rec, d in pages:
+        street_dir = page_dir.parent
+        rows.append({
+            "path": "/" + page_dir.relative_to(ROOT).as_posix() + "/",
+            "title": page_title(rec),
+            # The district is the whole page here, so the hook doesn't repeat
+            # it — and a building in two districts would otherwise name the
+            # other one on this hub's list.
+            "hook": hook_for(rec, with_district=False),
+            "street_path": "/" + street_dir.relative_to(ROOT).as_posix() + "/",
+            "street": page_title(rec).split(" ", 1)[-1],
+            "area_path": "/" + street_dir.parent.relative_to(ROOT).as_posix() + "/",
+            "number": page_dir.name,
+            "year_built": (rec.get("parcel") or {}).get("year_built"),
+            # What DBI holds, not what the page shows — same rule as a street
+            # hub's permit tile.
+            "permits": ((rec.get("permit_summary") or {}).get("count_on_file")
+                        or len(rec.get("permits", []))),
+            "sources": rec.get("sources", []),
+            "record": d,
+        })
+    rows.sort(key=lambda r: (r["street"], r["street_path"], num_key(r["number"])))
+    return rows
+
+
+def area_display(area_path: str) -> str:
+    """A neighborhood's own name for itself, off the h1 of its hub.
+
+    The slug can't be reversed into it — "castro" is filed as "Castro / Eureka
+    Valley" and "lone-mountain" as "Lone Mountain / USF".
+    """
+    md = ROOT / area_path.strip("/") / "index.md"
+    if md.exists():
+        for line in md.read_text(encoding="utf-8").splitlines():
+            if line.startswith("# "):
+                return line[2:].strip()
+    return " ".join(w.capitalize()
+                    for w in area_path.strip("/").split("/")[-1].split("-"))
+
+
+def district_standing_clause(d: dict) -> str:
+    """The one thing about a district's paperwork worth putting on a hub line.
+
+    A local designation outranks a register for the same reason it outranks the
+    name's own type in the panel eyebrow: it is what the district *is*.
+    """
+    a = d.get("article_10_11_status") or ""
+    if a.startswith("Article 10"):
+        return "An Article 10 city landmark district"
+    if a.startswith("Article 11"):
+        return "An Article 11 conservation district"
+    rows = standing_rows(d)
+    return rows[0][1] if rows else ""
+
+
+def district_hook(d: dict, n_pages: int, n_streets: int) -> str:
+    """A district's line on the index — standing, dates, and how much is here.
+
+    Deliberately not where the district is: naming neighborhoods would put an
+    article in front of half of them and not the other half ("in the Mission",
+    "in Hayes Valley"), and the district's own page carries that list.
+    """
+    streets = "one street" if n_streets == 1 else f"{n_streets:,} streets"
+    where = f"{n_pages:,} buildings documented on {streets}"
+    clause = district_standing_clause(d)
+    pos = (d.get("period_of_significance") or "").strip()
+    if clause and pos and pos.upper() != "N/A":
+        return f"{clause}, significant {pos}; {where}."
+    if clause:
+        return f"{clause}; {where}."
+    return f"{where.capitalize()}."
+
+
+def hub_shell(path: str, title: str, desc: str, crumbs: str, main_html: str,
+              sources: str, feedback_title: str, ld: list = None) -> str:
+    """The shared page chrome for the two historic-district page types.
+
+    The skeleton in shared/BLOCKS.md, written once because these two writers
+    produce it identically. The street and neighborhood hubs predate this and
+    keep their own copy — routing them through here would re-render every hub
+    on the site for no change a reader could see.
+    """
+    ld_blocks = "".join("\n" + ld_block(obj) for obj in ld or ())
+    sources_block = ""
+    if sources:
+        sources_block = ('  <section class="sources">\n    <h2>Sources</h2>\n'
+                         f'    <ul>\n{sources}\n    </ul>\n  </section>\n')
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{esc(title)} — Know This Place</title>
+  <meta name="description" content="{esca(desc)}">
+  <link rel="canonical" href="{SITE}{path}">
+{ICON_LINKS}
+  <link rel="stylesheet" href="/shared/site.css">
+  <script type="module" src="/shared/site.js"></script>{ld_blocks}
+</head>
+<body>
+<header class="site-header">
+  <a class="wordmark" href="/">Know This Place</a>
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+{crumbs}
+  </nav>
+</header>
+
+<main>
+{main_html}</main>
+
+<footer class="site-footer">
+{sources_block}  <p class="feedback-cta">
+    <a href="{feedback_url(feedback_title, path)}">Request an edit</a>
+  </p>
+  <p class="colophon">Part of <a href="/">Know This Place</a>, a community
+  encyclopedia of the built environment. Facts are cited; pages are reviewed
+  by people. <a href="{REPO}">Source</a>.</p>
+</footer>
+</body>
+</html>
+"""
+
+
+def stat_tiles_html(tiles: list, indent: str) -> str:
+    return "\n".join(
+        f'{indent}<div class="stat"><span class="ic {i}"></span>'
+        f'<span class="stat-val">{v}</span>'
+        f'<span class="stat-label">{esc(label)}</span></div>'
+        for i, v, label in tiles)
+
+
+def place_list_html(items: list, indent: str) -> str:
+    """The list markup every hub uses — and the markup `validate.check_hub_sync`
+    reads back, so each line written here has a matching bullet in index.md."""
+    return "\n".join(
+        f'{indent}<li><a href="{esca(href)}">{esc(label)}</a><br>\n'
+        f'{indent}  <span class="hook">{esc(hook)}</span></li>'
+        for href, label, hook in items)
+
+
+def district_sources_html(name: str, members: list) -> str:
+    """The footer for a district hub: the survey the district record comes from.
+
+    The counts and the date span are read off the pages listed on the page,
+    each of which carries its own footer — the same way a street hub cites
+    nothing of its own. What this page states that they don't is the district's
+    record, and that is this one dataset. The query is the district's own row
+    by name rather than the point-intersect query a parcel page ran; the
+    retrieval date is the most recent one across the pages listed here.
+    """
+    seen = collections.Counter()
+    names: dict = {}
+    retrieved: dict = collections.defaultdict(list)
+    for m in members:
+        for s in m["sources"]:
+            if s.get("id") in ("sf-historic-districts", "sf-planning"):
+                seen[s["id"]] += 1
+                names.setdefault(s["id"], s.get("name") or s["id"])
+                if s.get("retrieved"):
+                    retrieved[s["id"]].append(s["retrieved"])
+    if "sf-historic-districts" in seen:
+        sid = "sf-historic-districts"
+    elif seen:
+        sid = seen.most_common(1)[0][0]
+    else:
+        return ""
+    query = f"{DISTRICT_DATASET_URL}?name_1={urllib.parse.quote(name, safe='')}"
+    rec = {"sources": [{"id": sid, "name": names[sid], "query": query,
+                        "retrieved": max(retrieved[sid]) if retrieved[sid] else None}]}
+    return sources_html(rec)
+
+
+KNOWN_DISTRICT_HUB_SECTIONS = (re.compile(r"^streets$", re.I),
+                               re.compile(r"^buildings$", re.I))
+KNOWN_DISTRICT_INDEX_SECTIONS = (re.compile(r"^districts documented so far$", re.I),)
+
+
+def write_district_hub(dist_dir: Path, name: str, members: list) -> bool:
+    """Write one district's index.md + index.html. False if it refused to.
+
+    It refuses for the reason `write_street_hub` does: a hub that has grown
+    sections this template has no room for is a person's page from then on, and
+    the generator has no way to merge them back in.
+    """
+    extra = hub_extra_sections(dist_dir, KNOWN_DISTRICT_HUB_SECTIONS)
+    if extra:
+        print(f"  {dist_dir}: skipping — hand-written section(s) "
+              f"{', '.join(extra)} beyond the generated template; "
+              f"update the lists by hand instead", file=sys.stderr)
+        return False
+
+    d = merge_district_records(name, [m["record"] for m in members])
+    short = district_short_name(name)
+    path = f"/san-francisco/{DISTRICTS_DIR}/{district_slug(name)}/"
+
+    streets: dict = {}
+    for m in members:
+        s = streets.setdefault(m["street_path"], {"name": m["street"], "n": 0,
+                                                  "area": m["area_path"]})
+        s["n"] += 1
+    areas = collections.Counter(m["area_path"] for m in members)
+
+    years = sorted(m["year_built"] for m in members if m["year_built"])
+    n_permits = sum(m["permits"] for m in members)
+
+    tiles = [("ic-home", f"{len(members):,}", "Buildings documented")]
+    if years:
+        span = (f"{years[0]}<small>–{years[-1]}</small>" if years[0] != years[-1]
+                else f"{years[0]}")
+        tiles.append(("ic-calendar", span, "Construction dates"))
+    tiles.append(("ic-pin", f"{len(streets):,}", "Streets"))
+    tiles.append(("ic-permit", f"{n_permits:,}", "Permit records"))
+
+    lead = hub_lead(dist_dir,
+                    f"The buildings documented here so far inside the {name}, "
+                    f"and the streets it runs through.")
+
+    # A street name is not unique across the city: a district spanning two
+    # neighborhoods can hold two different Market Streets. Say which, but only
+    # where it is actually ambiguous.
+    repeated = {n for n, c in collections.Counter(
+        s["name"] for s in streets.values()).items() if c > 1}
+    street_items = []
+    for href in sorted(streets, key=lambda h: (streets[h]["name"], h)):
+        s = streets[href]
+        label = (f"{s['name']}, {area_display(s['area'])}"
+                 if s["name"] in repeated else s["name"])
+        street_items.append((href, label,
+                             f"{s['n']:,} documented building"
+                             f"{'' if s['n'] == 1 else 's'} inside the district."))
+    building_items = [(m["path"], m["title"], m["hook"]) for m in members]
+
+    # Both lists (streets, buildings) are pure projections of `members` and
+    # carry no hand content — see the equivalent note in `write_street_hub`
+    # (#151) — so only the lead and this note live in index.md; index.html
+    # alone carries the lists.
+    md = [f"# {name}", "", lead, "",
+          "The district record is the city's; the buildings beneath it are",
+          "generated from the DataSF datasets listed in each page's Sources",
+          "footer, and are corrected by hand as readers write in.", ""]
+    (dist_dir / "index.md").write_text("\n".join(md), encoding="utf-8")
+
+    # Identity, so tags rather than tiles (shared/AGENTS.md): what kind of
+    # district it is, and when it mattered. Its standing on the registers is a
+    # separate question and takes the `.standing` list below.
+    tags = [("ic-plan", district_eyebrow(d, split_district_name(name)[1]))]
+    pos = (d.get("period_of_significance") or "").strip()
+    if pos and pos.upper() != "N/A":
+        tags.append(("ic-calendar", f"Significant {pos}"))
+    tags_block = "\n".join(f'    <li class="tag"><span class="ic {i}"></span>'
+                           f'{esc(label)}</li>' for i, label in tags)
+
+    aside = ""
+    rows = standing_rows(d)
+    if rows:
+        lines = []
+        for tier, sentence in rows:
+            cls = ' class="is-none"' if tier == "none" else ""
+            lines.append(f'          <li{cls}><span class="ic '
+                         f'{STANDING_ICON[tier]}"></span>{esc(sentence)}</li>')
+        aside += ('      <section class="panel">\n'
+                  '        <h3>Designation</h3>\n'
+                  '        <ul class="standing">\n'
+                  + "\n".join(lines) + '\n        </ul>\n'
+                  '      </section>\n')
+    area_rows = "\n".join(
+        f'          <div class="spec"><span class="ic ic-pin"></span>'
+        f'<span class="spec-k"><a href="{esca(href)}">{esc(area_display(href))}</a>'
+        f'</span><span class="spec-v">{n:,}</span></div>'
+        for href, n in sorted(areas.items(), key=lambda kv: (-kv[1], kv[0])))
+    aside += ('      <section class="panel">\n'
+              '        <h3>Neighborhoods</h3>\n'
+              f'        <dl class="speclist">\n{area_rows}\n        </dl>\n'
+              '      </section>\n')
+
+    main_html = f"""  <h1>{esc(name)}</h1>
+  <ul class="tags">
+{tags_block}
+  </ul>
+
+  <p class="lead">{esc(lead)}</p>
+
+  <div class="stats">
+{stat_tiles_html(tiles, "    ")}
+  </div>
+
+  <div class="cols">
+    <div class="main">
+      <div class="section-head"><span class="ic ic-pin"></span><h2>Streets</h2></div>
+      <ul class="place-list">
+{place_list_html(street_items, "        ")}
+      </ul>
+
+      <div class="section-head"><span class="ic ic-home"></span><h2>Buildings</h2></div>
+      <ul class="place-list">
+{place_list_html(building_items, "        ")}
+      </ul>
+    </div>
+
+    <aside class="aside">
+{aside}    </aside>
+  </div>
+"""
+
+    n_streets = len(streets)
+    desc = (f"{name}, San Francisco: {len(members):,} documented building"
+            f"{'' if len(members) == 1 else 's'} on "
+            f"{'one street' if n_streets == 1 else f'{n_streets:,} streets'}, "
+            f"with construction dates, permits and the district's register "
+            f"standing, fully cited.")
+    crumbs = ('    <a href="/san-francisco/">San Francisco</a>\n'
+              f'    <a href="/san-francisco/{DISTRICTS_DIR}/">{DISTRICTS_TITLE}</a>\n'
+              f'    <span aria-current="page">{esc(short)}</span>')
+    (dist_dir / "index.html").write_text(
+        hub_shell(path, f"{name}, San Francisco", desc, crumbs, main_html,
+                  district_sources_html(name, members), name,
+                  ld=[breadcrumb_ld([
+                          ("San Francisco", "/san-francisco/"),
+                          (DISTRICTS_TITLE, f"/san-francisco/{DISTRICTS_DIR}/"),
+                          (short, None)]),
+                      # The buildings, not the streets: the streets list above
+                      # them is a way into the same set, and declaring both
+                      # would state one collection twice.
+                      collection_ld(path, name, desc,
+                                    [(m["title"], m["path"]) for m in members])]),
+        encoding="utf-8")
+    return True
+
+
+def write_districts_index(index_dir: Path, listed: list, held_back: int) -> bool:
+    """The index at /san-francisco/historic-districts/.
+
+    `listed` is (name, merged record, buildings, streets, area paths) per
+    district that earned a page, in the order the index shows them.
+    """
+    extra = hub_extra_sections(index_dir, KNOWN_DISTRICT_INDEX_SECTIONS)
+    if extra:
+        print(f"  {index_dir}: skipping — hand-written section(s) "
+              f"{', '.join(extra)} beyond the generated template; "
+              f"update the list by hand instead", file=sys.stderr)
+        return False
+
+    items = [(f"{district_slug(name)}/", name, district_hook(d, n_pages, n_streets))
+             for name, d, n_pages, n_streets, _areas in listed]
+    n_buildings = sum(n for _name, _d, n, _s, _a in listed)
+    n_areas = len({a for *_head, areas in listed for a in areas})
+
+    lead = hub_lead(index_dir,
+                    "The historic districts San Francisco's surveys have drawn, "
+                    "and the buildings documented inside each one. A district "
+                    "page lists every building here that stands within it, and "
+                    "the streets it runs through.")
+    held = (f"{held_back:,} further district{'' if held_back == 1 else 's'} named "
+            f"on the pages here hold fewer than {DISTRICT_MIN_PAGES} documented "
+            f"buildings, and have no page yet.")
+
+    # The list is a projection of `listed`, regenerated wholesale each run —
+    # no hand content, so (per #151) it lives only in index.html.
+    md = [f"# {DISTRICTS_TITLE}", "", lead, "", held, ""]
+    (index_dir / "index.md").write_text("\n".join(md), encoding="utf-8")
+
+    tiles = [("ic-plan", f"{len(items):,}", "Districts"),
+             ("ic-home", f"{n_buildings:,}", "Buildings documented"),
+             ("ic-pin", f"{n_areas:,}", "Neighborhoods")]
+    main_html = f"""  <h1>{DISTRICTS_TITLE}</h1>
+  <p class="lead">{esc(lead)}</p>
+
+  <div class="stats">
+{stat_tiles_html(tiles, "    ")}
+  </div>
+
+  <div class="section-head"><span class="ic ic-plan"></span><h2>Districts documented so far</h2></div>
+  <ul class="place-list">
+{place_list_html(items, "    ")}
+  </ul>
+
+  <p>{esc(held)}</p>
+"""
+    desc = (f"The {len(items):,} San Francisco historic districts with buildings "
+            f"documented on Know This Place: {n_buildings:,} buildings across "
+            f"{n_areas:,} neighborhoods, with register standing and periods of "
+            f"significance, fully cited.")
+    crumbs = ('    <a href="/san-francisco/">San Francisco</a>\n'
+              f'    <span aria-current="page">{DISTRICTS_TITLE}</span>')
+    (index_dir / "index.html").write_text(
+        hub_shell(f"/san-francisco/{DISTRICTS_DIR}/",
+                  f"{DISTRICTS_TITLE}, San Francisco", desc, crumbs, main_html,
+                  "", f"{DISTRICTS_TITLE}, San Francisco",
+                  ld=[breadcrumb_ld([("San Francisco", "/san-francisco/"),
+                                     (DISTRICTS_TITLE, None)]),
+                      collection_ld(f"/san-francisco/{DISTRICTS_DIR}/",
+                                    DISTRICTS_TITLE, desc,
+                                    [(label, f"/san-francisco/{DISTRICTS_DIR}/{href}")
+                                     for href, label, _hook in items])]),
+        encoding="utf-8")
+    return True
 
 
 # --------------------------------------------------------------------------
@@ -2716,9 +5005,7 @@ def cmd_seed(args) -> int:
     print(f"neighborhood hub lists {n_streets} street(s)")
     print(f"created {written} new page(s); left {skipped} existing page(s) "
           f"untouched; skipped {elsewhere} parcel(s) already documented under "
-          f"another neighborhood; rebuilt {rebuilt_hubs} street hub(s)"
-          + (f"; left {len(touched_streets) - rebuilt_hubs} street hub(s) untouched "
-             f"(hand-written sections)" if rebuilt_hubs < len(touched_streets) else ""))
+          f"another neighborhood; rebuilt {rebuilt_hubs} street hub(s)")
     if excluded:
         print(f"excluded streets (filed under another neighborhood): "
               f"{', '.join(sorted(excluded))}")
@@ -2737,6 +5024,30 @@ def cmd_seed(args) -> int:
 # write into a directory that has a page, and `render` refuses to invent one
 # where there is no `data.json`.
 # --------------------------------------------------------------------------
+RENDER_BACKLOG_PATH = ROOT / "scripts" / "render-backlog.txt"
+
+
+def load_render_backlog() -> set:
+    """The page directories `scripts/render-backlog.txt` grandfathers.
+
+    That file lists pages whose committed `index.html` predates the parity
+    check and is not what the renderer produces — hand-written prose, mostly,
+    including the site's only address-to-address links written before there
+    was an index to generate them from. `validate.py` reads it to excuse those
+    pages from parity; `cmd_render` reads it to refuse to overwrite them,
+    which is the half that was missing. Rendering one is how the drift gets
+    destroyed rather than resolved, so it takes `--include-backlogged` and a
+    person who has looked at the diff (issue #147's sweep).
+
+    Returns paths relative to the repo root, as the file stores them.
+    """
+    if not RENDER_BACKLOG_PATH.exists():
+        return set()
+    return {ln.strip()
+            for ln in RENDER_BACKLOG_PATH.read_text(encoding="utf-8").splitlines()
+            if ln.strip() and not ln.lstrip().startswith("#")}
+
+
 def renders(rec: dict) -> bool:
     """Whether this page's `index.html` is generated from its `data.json`.
 
@@ -2788,9 +5099,14 @@ def cmd_render(args) -> int:
         print(f"no address pages under {', '.join(args.path)}", file=sys.stderr)
         return 1
 
+    backlog = set() if args.include_backlogged else load_render_backlog()
     rewritten, current, opted_out, failed = 0, 0, 0, 0
+    held_back = []
     for page_dir in dirs:
         rel = page_dir.relative_to(ROOT).as_posix()
+        if rel in backlog:
+            held_back.append(rel)
+            continue
         try:
             rec = json.loads((page_dir / "data.json").read_text(encoding="utf-8"))
         except json.JSONDecodeError as e:
@@ -2821,7 +5137,17 @@ def cmd_render(args) -> int:
     verb = "would rewrite" if args.dry_run else "rewrote"
     print(f"{len(dirs)} page(s): {verb} {rewritten}, left {current} already "
           f"current, skipped {opted_out} opted out of rendering"
+          + (f", held back {len(held_back)} backlogged" if held_back else "")
           + (f", FAILED on {failed}" if failed else ""))
+    if held_back:
+        print(f"{len(held_back)} page(s) held back — scripts/render-backlog.txt "
+              f"grandfathers HTML the renderer cannot reproduce, and rendering "
+              f"one overwrites prose no data.json holds. Read the diff first, "
+              f"then re-run with --include-backlogged:")
+        for rel in held_back[:10]:
+            print(f"  {rel}")
+        if len(held_back) > 10:
+            print(f"  … and {len(held_back) - 10} more")
     if opted_out:
         print(f'{opted_out} page(s) carry "rendered": false and no longer track '
               f"site-wide design changes")
@@ -2838,6 +5164,10 @@ NAME_HINT = re.compile(
     r"\b(one-?stop|onestop)\b\s*[:.]?\s*[a-z]"
     r"|\b(owner|owners|attn|attention|applicant|contact|c/o|architect|architects|"
     r"engineer|engineering|contractor|contracting|tenant|landlord|purchaser|"
+    # "per inspector adwin lau" and two dozen like it sat on published
+    # pages because the DBI inspector is the one role this list did not
+    # know, and no other pattern fires on a bare first-and-last name.
+    r"inspector|inspectors|"
     r"mr|mrs|ms|dr)\b[.:]?\s+\S"
     r"|\b(inc|llc|l\.l\.c|corp|corporation|company|associates|assoc|builders|"
     r"construction|develop(ment|ers)|partners|group|realty|properties)\b"
@@ -2981,19 +5311,67 @@ def cmd_seed_list(args) -> int:
     return 0
 
 
+def cmd_districts(args) -> int:
+    """Rebuild the historic-district hubs from the pages that name a district.
+
+    A derived index, like the sitemap and the map: it holds nothing of its own
+    beyond a hand-written lead, so re-running it after pages are added or
+    removed is always safe and always the fix when it has gone stale.
+    """
+    city_dir = ROOT / args.city
+    memberships = district_memberships(city_dir)
+    index_dir = city_dir / DISTRICTS_DIR
+    index_dir.mkdir(parents=True, exist_ok=True)
+
+    earned, held_back, by_slug = [], 0, {}
+    for name in sorted(memberships):
+        if len(memberships[name]) < args.min_pages:
+            held_back += 1
+            continue
+        slug = district_slug(name)
+        if slug in by_slug:
+            raise SystemExit(f"two districts share the slug '{slug}': "
+                             f"{by_slug[slug]!r} and {name!r} — "
+                             f"district_short_name needs to tell them apart")
+        by_slug[slug] = name
+        earned.append(name)
+
+    written, skipped, listed = 0, 0, []
+    for name in earned:
+        members = district_members(memberships[name])
+        dist_dir = index_dir / district_slug(name)
+        dist_dir.mkdir(parents=True, exist_ok=True)
+        if write_district_hub(dist_dir, name, members):
+            written += 1
+        else:
+            skipped += 1
+        # A hub the writer refused to touch is still a district with a page,
+        # so it keeps its line on the index.
+        listed.append((name,
+                       merge_district_records(name, [m["record"] for m in members]),
+                       len(members),
+                       len({m["street_path"] for m in members}),
+                       {m["area_path"] for m in members}))
+    write_districts_index(index_dir, listed, held_back)
+
+    for stale in sorted(index_dir.iterdir()):
+        if stale.is_dir() and stale.name not in by_slug:
+            print(f"  {stale}: no district with {args.min_pages} or more "
+                  f"documented buildings maps here any more — remove it by hand",
+                  file=sys.stderr)
+    print(f"wrote {written} district hub(s); left {skipped} untouched "
+          f"(hand-written sections); held back {held_back} district(s) under "
+          f"{args.min_pages} documented building(s)")
+    return 0
+
+
 def cmd_hubs(args) -> int:
     ctx = make_ctx(args, {"roll_year": args.roll_year, "historic": [], "districts": []})
     area_dir = ROOT / args.city / args.area
-    n, n_skipped = 0, 0
-    for street_dir in sorted(area_dir.iterdir()):
-        if street_dir.is_dir():
-            if write_street_hub(street_dir, ctx):
-                n += 1
-            else:
-                n_skipped += 1
+    n = sum(1 for street_dir in sorted(area_dir.iterdir())
+            if street_dir.is_dir() and write_street_hub(street_dir, ctx))
     n_streets = write_neighborhood_hub(area_dir, ctx)
-    print(f"rebuilt {n} street hub(s); left {n_skipped} untouched (hand-written "
-          f"sections); neighborhood hub lists {n_streets} street(s)")
+    print(f"rebuilt {n} street hub(s); neighborhood hub lists {n_streets} street(s)")
     return 0
 
 
@@ -3045,6 +5423,10 @@ def main() -> int:
                         "every address page beneath it is re-rendered")
     p.add_argument("--dry-run", action="store_true",
                    help="list the pages that would change without writing them")
+    p.add_argument("--include-backlogged", action="store_true",
+                   help="also render the pages scripts/render-backlog.txt "
+                        "grandfathers, overwriting hand-written HTML the "
+                        "renderer cannot reproduce (issue #147's sweep)")
     p.set_defaults(fn=cmd_render)
 
     p = sub.add_parser("names", help="list permit descriptions that may name a person or firm")
@@ -3056,6 +5438,14 @@ def main() -> int:
     common(p, neighborhood_required=False)
     p.add_argument("--roll-year", type=int, default=2025)
     p.set_defaults(fn=cmd_hubs)
+
+    p = sub.add_parser("districts",
+                       help="rebuild the historic-district hub pages from the "
+                            "address pages that name a district")
+    p.add_argument("--city", default="san-francisco")
+    p.add_argument("--min-pages", type=int, default=DISTRICT_MIN_PAGES,
+                   help="a district with fewer documented buildings gets no page")
+    p.set_defaults(fn=cmd_districts)
 
     args = ap.parse_args()
     return args.fn(args)

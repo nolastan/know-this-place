@@ -1,0 +1,132 @@
+{
+ "address": "1326–1328 Stockton Street, San Francisco, CA 94133",
+ "path": "/san-francisco/chinatown/stockton-street/1326/",
+ "apn": "0146013",
+ "block": "0146",
+ "lot": "013",
+ "eas_baseid": "278550",
+ "coordinates": {
+  "lat": 37.798086,
+  "lng": -122.408472
+ },
+ "address_range": "1326–1328",
+ "street_numbers_on_parcel": [
+  "1326",
+  "1328"
+ ],
+ "parcel": {
+  "year_built": 1911,
+  "units": 13,
+  "stories": 5,
+  "rooms": 30,
+  "bathrooms": 10,
+  "lot_area_sqft": 1449,
+  "building_area_sqft": 6900,
+  "lot_depth_ft": 21,
+  "use": "Multi-Family Residential",
+  "property_class": "Apartment 5 to 14 Units",
+  "construction_type_code": "C",
+  "zoning": "NBEACH",
+  "supervisor_district": 3,
+  "assessor_neighborhood": "Telegraph Hill",
+  "analysis_neighborhood": "Chinatown",
+  "property_location_raw": "1330 1328 STOCKTON            ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 73431,
+  "assessed_improvement_value": 134896
+ },
+ "historic_status": {
+  "ceqa_status_code": "A",
+  "ceqa_status_code_article_10_11": "A",
+  "ceqa_status_label": "Historic resource",
+  "reason": "Historic Survey Result",
+  "yearbuilt": "1911",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "permits": [
+  {
+   "number": "200512120097",
+   "type": "otc alterations permit",
+   "status": "issued",
+   "filed": "2005-12-12",
+   "status_date": "2005-12-12",
+   "estimated_cost": 9500,
+   "revised_cost": 9500,
+   "description": "reroofing",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "9412273",
+   "type": "additions alterations or repairs",
+   "status": "complete",
+   "filed": "1994-08-02",
+   "status_date": "1995-01-23",
+   "estimated_cost": 1,
+   "description": "deismic upgrade per umb ordinance from roof to 2nd floor",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "9318279",
+   "type": "additions alterations or repairs",
+   "status": "complete",
+   "filed": "1993-10-21",
+   "status_date": "1995-01-20",
+   "estimated_cost": 88000,
+   "description": "bolts plus above 2nd level special procedure below 2nd level",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "8924726",
+   "type": "additions alterations or repairs",
+   "status": "complete",
+   "filed": "1989-12-18",
+   "status_date": "1990-07-25",
+   "estimated_cost": 12000,
+   "description": "parapet reinforcement",
+   "source": "sf-building-permits"
+  }
+ ],
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=STOCKTON&street_type=ST&address_number=1326",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0146013&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0146&lot=013",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0146013",
+   "retrieved": "2026-08-29"
+  },
+  {
+   "id": "umb-survey-1990",
+   "name": "San Francisco Landmarks Preservation Advisory Board — A Context Statement and Architectural/Historical Survey of Unreinforced Masonry Building (U.M.B.) Construction in San Francisco from 1850 to 1940, San Francisco Department of City Planning, November 1990",
+   "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=de4ab5d53839bb7c49ab1a2e10876d4a39e7dbacc6eccc90508e51012b8f4456&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "label": "Unreinforced Masonry Building Survey, 1990",
+   "retrieved": "2026-08-29"
+  }
+ ],
+ "historic_survey": {
+  "survey": "Unreinforced Masonry Building Survey (1990)",
+  "frame": "Unreinforced masonry",
+  "note": "From the survey's appendix table of unreinforced masonry buildings and their historic ratings, study area 7 (Chinatown).",
+  "source": "umb-survey-1990"
+ }
+}

@@ -1,0 +1,113 @@
+{
+  "address": "167–169 Cook Street, San Francisco, CA 94118",
+  "path": "/san-francisco/lone-mountain/cook-street/167/",
+  "apn": "1088008",
+  "block": "1088",
+  "lot": "008",
+  "eas_baseid": "473679",
+  "coordinates": {
+    "lat": 37.780935,
+    "lng": -122.452275
+  },
+  "address_range": "167–169",
+  "street_numbers_on_parcel": [
+    "167",
+    "169"
+  ],
+  "parcel": {
+    "year_built": 1926,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 2804,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Lone Mountain",
+    "analysis_neighborhood": "Lone Mountain/USF",
+    "property_location_raw": "0169 0167 COOK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1102658,
+    "assessed_improvement_value": 472564,
+    "last_sale_date": "2013-12-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201401307414",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-01-30",
+      "status_date": "2014-05-05",
+      "estimated_cost": 20000,
+      "revised_cost": 35000,
+      "description": "kitchen and bath room remodeling. walls to remain in existing locations, all layout to remain the same.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9613260",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-07-23",
+      "status_date": "1997-01-10",
+      "estimated_cost": 2950,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=COOK&street_type=ST&address_number=167",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1088008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1088&lot=008",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1088008",
+      "retrieved": "2026-09-03"
+    },
+    {
+      "id": "digitalsf-6796",
+      "name": "169 Cook Street, 1941. San Francisco Department of Public Works Bureau of Engineering Photograph Records (SFP 26), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/6796",
+      "label": "Bureau of Engineering Photograph Records (SFP 26), San Francisco Public Library",
+      "retrieved": "2026-09-03"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1941-01-27",
+      "kind": "photograph",
+      "description": "The Bureau of Engineering photographed the property, one of a run from 169 to 173 Cook Street.",
+      "source": "digitalsf-6796"
+    }
+  ]
+}

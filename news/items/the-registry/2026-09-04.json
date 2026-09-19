@@ -1,0 +1,42 @@
+{
+  "source_id": "the-registry",
+  "batch": "2026-09-04",
+  "read_on": "2026-09-04",
+  "notes": "Two items queued, both read.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 2,
+    "mentions": 1,
+    "remaining": "Nothing outstanding on this batch.",
+    "note": "The plug-in solar bill story is statewide policy and named no address in its own text; its \"1155 Market\" and \"1532 Mount Diablo Boulevard\" hits both came from the next-post and previous-post navigation furniture, not the article. 1532 Mount Diablo Boulevard is in Walnut Creek."
+  },
+  "findings": [
+    {
+      "id": "2026-09-04-0001",
+      "date": "2026-08",
+      "date_precision": "month",
+      "kind": "sale",
+      "address_as_written": "1155 Market Street",
+      "street_number": "1155",
+      "street_name": "MARKET",
+      "street_type": "ST",
+      "description": "Recorded so the hit is not read again. The Registry's account of STG Group buying eight floors of 1155 Market Street for roughly $8 million, a decade after the space was valued at $80 million. This is the same transaction The San Francisco Standard reported on 28 August 2026 and which this module already extracted.",
+      "citation": {
+        "label": "The Registry, “STG Group Buys Eight Floors of San Francisco’s 1155 Market for $8MM, a Decade After $80MM Peak,” 3 September 2026",
+        "url": "https://news.theregistrysf.com/stg-group-buys-eight-floors-of-san-franciscos-1155-market-for-8mm-a-decade-after-80mm-peak/",
+        "locator": "headline and opening paragraphs"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "One event, one entry. This is the same sale as finding 2026-08-28b-0001 in news/items/sf-standard/2026-08-28b.json, which carries it; the second outlet does not earn the building a second entry. That finding is itself still pending, and for a reason this article does not change: 1155 Market Street is a commercial condominium, carried in EAS only as #PARCEL A through D across four active parcels, none of which is the building. The subdivision is the story here too — eight floors sold, three kept — so a second citation on the same blocked fact adds nothing. If the site ever settles how it documents a vertically subdivided building, this article is a second source for that entry."
+      },
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-04",
+        "method": "sf-eas-addresses has 1155 MARKET ST but it does not join to one parcel. 1155 MARKET ST's coordinates fall in 4 active parcels (3702821, 3702823, 3702822, 3702820), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
+        "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+      }
+    }
+  ]
+}

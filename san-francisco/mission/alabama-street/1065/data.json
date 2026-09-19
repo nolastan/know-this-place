@@ -1,98 +1,117 @@
 {
-  "address": "1065 Alabama Street, San Francisco, CA 94110",
-  "path": "/san-francisco/mission/alabama-street/1065/",
-  "apn": "4149022",
-  "block": "4149",
-  "lot": "022",
-  "eas_baseid": "369502",
-  "coordinates": {
-    "lat": 37.754854,
-    "lng": -122.410896
+ "address": "1065 Alabama Street, San Francisco, CA 94110",
+ "path": "/san-francisco/mission/alabama-street/1065/",
+ "apn": "4149022",
+ "block": "4149",
+ "lot": "022",
+ "eas_baseid": "369502",
+ "coordinates": {
+  "lat": 37.754854,
+  "lng": -122.410896
+ },
+ "parcel": {
+  "year_built": 1914,
+  "units": 1,
+  "stories": 1,
+  "rooms": 6,
+  "bathrooms": 1,
+  "lot_area_sqft": 2600,
+  "building_area_sqft": 1740,
+  "use": "Single Family Residential",
+  "property_class": "Dwelling",
+  "construction_type_code": "D",
+  "zoning": "RH-2",
+  "supervisor_district": 9,
+  "assessor_neighborhood": "Inner Mission",
+  "analysis_neighborhood": "Mission",
+  "property_location_raw": "0000 1065 ALABAMA             ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 202360,
+  "assessed_improvement_value": 239158,
+  "last_sale_date": "1990-01-24"
+ },
+ "historic_status": {
+  "ceqa_status_code": "A",
+  "ceqa_status_code_article_10_11": "A",
+  "ceqa_status_label": "Historic resource",
+  "reason": "California Register Historic District, Historic Survey Result",
+  "yearbuilt": "1914",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "historic_district": {
+  "name": "Alabama Street Pioneers Historic District",
+  "california_register_status": "Eligible (not listed)",
+  "national_register_status": "Not listed",
+  "article_10_11_status": "No local landmark protection",
+  "local_landmark_protection": false,
+  "period_of_significance": "1865–1884",
+  "source": "sf-historic-districts"
+ },
+ "permits": [
+  {
+   "number": "202410173106",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "2024-10-17",
+   "status_date": "2024-11-08",
+   "estimated_cost": 13500,
+   "revised_cost": 13500,
+   "description": "re-roofing",
+   "source": "sf-building-permits"
+  }
+ ],
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALABAMA&street_type=ST&address_number=1065",
+   "retrieved": "2026-07-31"
   },
-  "parcel": {
-    "year_built": 1914,
-    "units": 1,
-    "stories": 1,
-    "rooms": 6,
-    "bathrooms": 1,
-    "lot_area_sqft": 2600,
-    "building_area_sqft": 1740,
-    "use": "Single Family Residential",
-    "property_class": "Dwelling",
-    "construction_type_code": "D",
-    "zoning": "RH-2",
-    "supervisor_district": 9,
-    "assessor_neighborhood": "Inner Mission",
-    "analysis_neighborhood": "Mission",
-    "property_location_raw": "0000 1065 ALABAMA             ST0000"
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4149022&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-07-31"
   },
-  "assessment": {
-    "roll_year": 2025,
-    "assessed_land_value": 202360,
-    "assessed_improvement_value": 239158,
-    "last_sale_date": "1990-01-24"
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4149&lot=022",
+   "retrieved": "2026-07-31"
   },
-  "historic_status": {
-    "ceqa_status_code": "A",
-    "ceqa_status_code_article_10_11": "A",
-    "ceqa_status_label": "Historic resource",
-    "reason": "California Register Historic District, Historic Survey Result",
-    "yearbuilt": "1914",
-    "in_article_10_11_historic_district": false,
-    "source": "sf-planning"
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4149022",
+   "retrieved": "2026-07-31"
   },
-  "historic_district": {
-    "name": "Alabama Street Pioneers Historic District",
-    "california_register_status": "Eligible (not listed)",
-    "national_register_status": "Not listed",
-    "article_10_11_status": "No local landmark protection",
-    "local_landmark_protection": false,
-    "period_of_significance": "1865–1884",
-    "source": "sf-historic-districts"
+  {
+   "id": "sf-historic-districts",
+   "name": "SF Planning Department — Historic Districts via DataSF",
+   "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41089594842758%2037.75485375932288)%27)",
+   "retrieved": "2026-07-31"
   },
-  "permits": [
-    {
-      "number": "202410173106",
-      "type": "otc alterations permit",
-      "status": "complete",
-      "filed": "2024-10-17",
-      "status_date": "2024-11-08",
-      "estimated_cost": 13500,
-      "revised_cost": 13500,
-      "description": "re-roofing",
-      "source": "sf-building-permits"
-    }
-  ],
-  "sources": [
-    {
-      "id": "sf-eas-addresses",
-      "name": "SF Enterprise Addressing System via DataSF",
-      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALABAMA&street_type=ST&address_number=1065",
-      "retrieved": "2026-07-31"
-    },
-    {
-      "id": "sf-assessor-roll",
-      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
-      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4149022&$order=closed_roll_year%20DESC&$limit=1",
-      "retrieved": "2026-07-31"
-    },
-    {
-      "id": "sf-building-permits",
-      "name": "SF Dept. of Building Inspection via DataSF",
-      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4149&lot=022",
-      "retrieved": "2026-07-31"
-    },
-    {
-      "id": "sf-planning",
-      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
-      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4149022",
-      "retrieved": "2026-07-31"
-    },
-    {
-      "id": "sf-historic-districts",
-      "name": "SF Planning Department — Historic Districts via DataSF",
-      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41089594842758%2037.75485375932288)%27)",
-      "retrieved": "2026-07-31"
-    }
-  ]
+  {
+   "id": "early-residential-theme-study",
+   "name": "ICF for the San Francisco Planning Department, Theme Study: Early Residential Development in San Francisco, 1848–1899, Context: Residential (1848-1989), Subcontext: Single-Family, adopted September 3, 2025",
+   "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=647bf691ec66d716eeec9729114a47062fc8e1147efa8ea10f88037f2e3e883b&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "label": "Theme Study: Early Residential Development in San Francisco, 1848–1899, adopted 2025",
+   "retrieved": "2026-08-31"
+  }
+ ],
+ "historic_survey": {
+  "survey": "Theme Study: Early Residential Development in San Francisco, 1848–1899 (2025)",
+  "source": "early-residential-theme-study",
+  "style": "Greek Revival",
+  "year_built_as_surveyed": "c. 1870",
+  "finding": "Likely too heavily altered for individual eligibility under Criterion C/3; could be considered a district contributor",
+  "note": "A modest Greek Revival house, heavily altered since."
+ },
+ "building": {
+  "completed_conflict": "Dated to circa 1870; the assessor's roll records the parcel as built 1914."
+ }
 }

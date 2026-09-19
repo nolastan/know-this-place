@@ -239,6 +239,29 @@
       "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
       "label": "North Beach Historic Context Statement, adopted 2022",
       "retrieved": "2026-08-22"
+    },
+    {
+      "id": "umb-survey-1990",
+      "name": "San Francisco Landmarks Preservation Advisory Board — A Context Statement and Architectural/Historical Survey of Unreinforced Masonry Building (U.M.B.) Construction in San Francisco from 1850 to 1940, San Francisco Department of City Planning, November 1990",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=de4ab5d53839bb7c49ab1a2e10876d4a39e7dbacc6eccc90508e51012b8f4456&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Unreinforced Masonry Building Survey, 1990",
+      "retrieved": "2026-08-29"
+    },
+    {
+      "id": "modern-postmodern-styles-context-statement",
+      "name": "Hannah Lise Simonson, Page & Turnbull, for the San Francisco Planning Department, San Francisco Modern & Postmodern Architectural Styles (1960-2000) Historic Context Statement, Context: Architectural Methods & Styles, SF Survey Cultural Resources Survey, adopted August 21, 2024",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=12bf7fd7aa07e2b779e0afc717eb0d789b9ba378bf6e80f7f8a1ce30cdc8946f&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Modern & Postmodern Architectural Styles Historic Context Statement, adopted 2024",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "nps-nrhp-index",
+      "name": "National Park Service, National Register of Historic Places listed properties (NRHP locations map service)",
+      "query": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/0/query?where=NRIS_Refnum%3D%2779000535%27&outFields=NRIS_Refnum,RESNAME,Address,CertDate&f=json&returnGeometry=false",
+      "label": "National Register of Historic Places index, National Park Service",
+      "retrieved": "2026-09-18"
     }
   ],
   "historical_record": [
@@ -249,10 +272,28 @@
       "source": "north-beach-context-statement"
     },
     {
-      "date": "2018",
+      "date": "1979-05-31",
       "kind": "designation",
       "description": "Listed as National Register of Historic Places 79000535 — Old Ohio Street Houses.",
-      "source": "north-beach-context-statement"
+      "source": [
+        "nps-nrhp-index",
+        "north-beach-context-statement"
+      ]
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Unreinforced Masonry Building Survey (1990)",
+      "frame": "Unreinforced masonry",
+      "dcp_1976_survey": "Rated 2 of 5",
+      "note": "From the survey's appendix table of unreinforced masonry buildings and their historic ratings, study area 8 (North Beach).",
+      "source": "umb-survey-1990"
+    },
+    {
+      "survey": "Modern & Postmodern Architectural Styles Historic Context Statement (2024)",
+      "source": "modern-postmodern-styles-context-statement",
+      "year_built_as_surveyed": "1978",
+      "note": "ARCH, a drafting and architectural supply store, opened here in 1978; it moved to Carolina Street around 2000."
     }
   ]
 }

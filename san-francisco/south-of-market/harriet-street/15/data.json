@@ -1,0 +1,123 @@
+{
+ "address": "15 Harriet Street, San Francisco, CA 94103",
+ "path": "/san-francisco/south-of-market/harriet-street/15/",
+ "apn": "3731116",
+ "block": "3731",
+ "lot": "116",
+ "eas_baseid": "365457",
+ "coordinates": {
+  "lat": 37.779176,
+  "lng": -122.407222
+ },
+ "parcel": {
+  "year_built": 1921,
+  "units": 3,
+  "rooms": 8,
+  "bathrooms": 3,
+  "lot_area_sqft": 1498,
+  "building_area_sqft": 2700,
+  "use": "Multi-Family Residential",
+  "property_class": "Flats & Duplex",
+  "construction_type_code": "D",
+  "zoning": "SLR",
+  "supervisor_district": 6,
+  "assessor_neighborhood": "South of Market",
+  "analysis_neighborhood": "South of Market",
+  "property_location_raw": "0017 0015 HARRIET             ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 1473487,
+  "assessed_improvement_value": 631494,
+  "last_sale_date": "2018-06-25"
+ },
+ "historic_status": {
+  "ceqa_status_code": "A",
+  "ceqa_status_code_article_10_11": "A",
+  "ceqa_status_label": "Historic resource",
+  "reason": "California Register Historic District",
+  "yearbuilt": "1921",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "historic_district": {
+  "name": "SoMa LGBTQ Historic District",
+  "california_register_status": "Eligible (not listed)",
+  "national_register_status": "Not listed",
+  "article_10_11_status": "No local landmark protection",
+  "local_landmark_protection": false,
+  "period_of_significance": "ca.1950s–ca.1990s",
+  "source": "sf-historic-districts"
+ },
+ "permits": [
+  {
+   "number": "201605036422",
+   "type": "otc alterations permit",
+   "status": "issued",
+   "filed": "2016-05-03",
+   "status_date": "2016-05-03",
+   "estimated_cost": 3000,
+   "revised_cost": 3000,
+   "description": "drywall repair from roof leak, changing floor finish. changing upper cabinets in kitchen, paint walls and texture. to comply with complaint #201613771. 200 sq ft approx.",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "200910169098",
+   "type": "otc alterations permit",
+   "status": "issued",
+   "filed": "2009-10-16",
+   "status_date": "2009-10-16",
+   "estimated_cost": 6200,
+   "revised_cost": 6200,
+   "description": "reroofing.",
+   "source": "sf-building-permits"
+  }
+ ],
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRIET&street_type=ST&address_number=15",
+   "retrieved": "2026-08-30"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3731116&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-08-30"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3731&lot=116",
+   "retrieved": "2026-08-30"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3731116",
+   "retrieved": "2026-08-30"
+  },
+  {
+   "id": "sf-historic-districts",
+   "name": "SF Planning Department — Historic Districts via DataSF",
+   "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40722176103651%2037.77917622431582)%27)",
+   "retrieved": "2026-08-30"
+  },
+  {
+   "id": "lgbtq-context-statement",
+   "name": "Donna J. Graves and Shayne E. Watson, Citywide Historic Context Statement for LGBTQ History in San Francisco, San Francisco Planning Department, adopted by the Historic Preservation Commission November 18, 2015",
+   "query": "https://sfplanning.s3.amazonaws.com/default/files/Preservation/lgbt_HCS/FinalLGBTQ_HCS_March2016.pdf",
+   "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+   "retrieved": "2026-08-30"
+  }
+ ],
+ "historical_record": [
+  {
+   "date": "1980",
+   "kind": "occupancy",
+   "description": "Drummer magazine moved into this South of Market building in 1980; it also housed Stars Magazine.",
+   "source": "lgbtq-context-statement"
+  }
+ ]
+}

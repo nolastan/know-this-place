@@ -29,7 +29,6 @@
     "ceqa_status_code_article_10_11": "A",
     "ceqa_status_label": "Historical Resource present",
     "reason": "Historic Survey Result",
-    "designated_landmark": false,
     "in_article_10_11_historic_district": false,
     "source": "sf-planning"
   },
@@ -39,9 +38,6 @@
     "assessed_improvement_value": 466291,
     "last_sale_date": "1989-03-10"
   },
-  "open_questions": [
-    "The assessor roll records one dwelling unit, but permit applications 202509155299 and 202605292197 refer to a 'top unit' and a 'lower unit'. The two sources disagree; neither has been reconciled here."
-  ],
   "permits": [
     {
       "number": "202605292197",
@@ -49,7 +45,8 @@
       "filed": "2026-05-29",
       "estimated_cost": 750000,
       "description": "interior remodel at top unit and dormer addition (max 8x8 feet); lower unit relocated to basement",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Interior remodel at the top unit and a dormer addition of up to 8 × 8 feet; lower unit relocated to the basement."
     },
     {
       "number": "202509155299",
@@ -58,7 +55,8 @@
       "filed_note": "No filed date recorded in the DataSF permit dataset.",
       "estimated_cost": 450000,
       "description": "interior remodel at top unit and dormer addition (max 8x8 feet); lower unit relocated — superseded by 202605292197",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Interior remodel at the top unit and dormer addition; lower unit relocated. Superseded by the 2026 application."
     },
     {
       "number": "200109289477",
@@ -66,7 +64,8 @@
       "filed": "2001-09-28",
       "estimated_cost": 9500,
       "description": "new trellis on rear facade; rear deck and stair repaired for dry rot; rear deck removed",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "New trellis on the rear facade; rear deck and stair repaired for dry rot."
     },
     {
       "number": "200002081331",
@@ -130,7 +129,8 @@
       "filed": "1985-07-26",
       "estimated_cost": 450,
       "description": "access hole opened in concrete foundation wall",
-      "source": "sf-building-permits"
+      "source": "sf-building-permits",
+      "description_edited": "Access hole opened in the concrete foundation wall."
     },
     {
       "number": "8309087",
@@ -141,7 +141,6 @@
       "source": "sf-building-permits"
     }
   ],
-  "permits_note": "15 permits on file; an expired street-space permit (2001), a 1995 valuation amendment and a 1989 cancelled cross-reference are omitted from the page.",
   "narrative": {
     "sections": [
       {
@@ -182,6 +181,14 @@
       "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
       "label": "Eureka Valley Historic Context Statement, adopted 2017",
       "retrieved": "2026-08-14"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume G–I), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=b4fed2f0ee80387415081f76f9f657d25c12a1398210899a92a9222f03506e7a&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-09-01"
     }
   ],
   "historic_survey": {
@@ -192,6 +199,21 @@
     "note": "Listed among the houses Charles L. Hinkel and his sons built in Eureka Valley. The statement gives the signature Hinkel details as rounded architrave window mouldings with bevelled keystones and bracket-and-strip architraves at the roofline. The statement is reconnaissance-level and says inclusion in it is not a judgement on a building's worthiness for preservation. It records it as a two-flat."
   },
   "building": {
-    "builder": "Charles L. Hinkel"
-  }
+    "builder": "Charles L. Hinkel",
+    "completed_conflict": "The assessor's roll gives 1896; this address is recorded as built 1892."
+  },
+  "historical_record": [
+    {
+      "date": "1892",
+      "kind": "construction",
+      "description": "Built by Charles L. Hinkel, whose family firm was among the Bay Area's leading residential builders in the late nineteenth century; his work is marked by canted narrow windows with keystone lintels, pedimented gables with boxed eaves and prominent scrolled brackets.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ],
+  "permit_summary": {
+    "note": "15 permits on file; an expired street-space permit (2001), a 1995 valuation amendment and a 1989 cancelled cross-reference are omitted from the page."
+  },
+  "unknowns": [
+    "The assessor roll records one dwelling unit, but permit applications 202509155299 and 202605292197 refer to a 'top unit' and a 'lower unit'. The two sources disagree; neither has been reconciled here."
+  ]
 }

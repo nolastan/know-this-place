@@ -8,6 +8,23 @@ disk, facts extracted, addresses resolved, pages published, work checked, books
 closed. Not one stage. Not one handoff. The whole chain, for as much material
 as a session can hold.
 
+**Read the step you are on.** A mining run walks 1–6 in order; a prospecting
+run is a different document from "A prospecting run" down.
+
+| Step | section |
+|---|---|
+| — | [Sizing a run](#sizing-a-run) · [Picking the run](#picking-the-run) |
+| 1 | [Get the material readable](#1-get-the-material-readable) — and the [access traps](#access-traps-this-project-has-already-paid-for) |
+| 2 | [Read it — findings out](#2-read-it--findings-out) |
+| 3 | [Place it — an address becomes a parcel](#3-place-it--an-address-becomes-a-parcel), incl. [the renumbering traps](#the-renumbering-traps) |
+| 4 | [Publish it](#4-publish-it) — and [the rules that catch publishers out](#rules-that-catch-publishers-out) |
+| 5 | [Check it](#5-check-it) |
+| 6 | [Close the books](#6-close-the-books) — and [the PR body](#the-pr-body) |
+| prospecting | [Judge a source on four things](#judge-a-source-on-four-things-in-this-order) · [Two gears](#two-gears--picking-the-wrong-one-wastes-the-run) |
+
+Traps a step has already cost someone are in
+[LESSONS.md](LESSONS.md) — grep it before a step, not after.
+
 ## Sizing a run
 
 **Take more, not less.** A session should end with a source measurably further
@@ -31,7 +48,7 @@ The only reasons to stop short of publishing:
 
 **Never stop at "resolved."** A findings file full of resolved entries that
 nobody published is the single most expensive state this module can be left in
-— see [What we've learned the hard way](AGENTS.md#what-weve-learned-the-hard-way).
+— see [LESSONS.md](LESSONS.md).
 
 ## Picking the run
 
@@ -130,6 +147,13 @@ example: [findings/README.md](findings/README.md).
 Name the batch after the citable unit that was read: `sn85066387-1895.json`,
 `japantown-hcs.json`, `vol-31-no-2.json`.
 
+**Don't open an existing findings file to see how it's done** — take the shape
+from the schema and the worked example, both small, and a real batch from
+`check.py --peek`. The files in `findings/` run to megabytes; what each one
+holds is in [findings/INDEX.md](findings/INDEX.md), and
+`research/AGENTS.md` → "Never read a findings file whole" says how to get
+entries out of one.
+
 ## 3. Place it — an address becomes a parcel
 
 **Most of the mistakes this project can make live in this step**, so the bias is
@@ -153,7 +177,13 @@ python3 research/tools/resolve_eas.py manifest research/findings/<id>/<batch>.js
 
 `manifest` writes `research/manifests/<batch>.json` — the resolved parcels that
 have no page yet, in the shape `seed_pages.py seed-list` reads. Run it after
-`apply`; step 4 seeds from it.
+`apply`; step 4 seeds from it. **Group its parcels by the roll's
+`property_location` before seeding**: a tower on an assembled block keeps its
+lots, each still carrying a demolished predecessor's number in EAS, and each
+comes off the roll with no build year, no storeys and the tower's address. One
+downtown batch would have seeded eleven pages for two buildings that way. The
+lots that carry their own year are the buildings the project kept, and those do
+want pages.
 
 Add **`--area-from-nhood`** to `report`, `apply` and `manifest` together when
 the site has few or no pages on the streets in the batch. Without it the
@@ -165,9 +195,60 @@ the assessor and EAS give the parcel decides, every method says which rule
 chose the directory, and a directory the site does not use yet is flagged in
 the method for the publisher to confirm.
 
+`report` also prints, under the per-finding lines, **the record's own parcel
+against the one it resolved to** — the only check in the tool that tests a
+finished resolution instead of producing one. It needs
+`assessor_block_as_recorded` and `assessor_lot_as_recorded` on the findings, and
+it separates a *re-lotting* since the record was written (same block, ordinary)
+from *another block* (usually a digit a scan lost, sometimes the record's own
+error). **On any source read from a scan, put the printed block and lot on every
+finding and read every "another block" line** — that is what stops an OCR digit
+becoming a page. Put it only where the record prints it *for that building*,
+though: a survey or an environmental report states its own site's parcel and
+then rates twenty buildings on other blocks, and carrying the site's parcel onto
+those makes the scan print re-lottings and block crossings that are artefacts.
+Noise here is worse than silence, because the scan exists so a real lost digit
+stands out.
+
+It then lists **every resolution that landed on a parcel its own method calls a
+condominium unit** — an address that joins to one active parcel while a sibling
+row ("19 A" beside "19") shares that parcel's point with a twin. Nothing
+declines these, because airspace lots of one building look the same; read each
+and mark a unit parcel `unresolved` with `by_hand`.
+
+**`extra.record_date` is the year the *record* was written, and it turns off the
+renumbering guard.** The guard refuses a pre-1910 date resolved on the EAS join
+alone, which is right for a source writing an address down while the old
+numbering was in force and wrong for a modern document about an old building —
+a 1976 National Register nomination gives 1976's number for an 1880 house, and
+without the field the guard refuses it for a renumbering that had already
+happened. Set it wherever the source states when it was written; the method then
+says so, and still prints the assessor's year for the parcel, because a modern
+number can still point at a later building on the lot. It is opt-in, so leaving
+it off is exactly the old behaviour.
+
+**A second address the record states goes in `extra.address_note_as_recorded`** —
+a corner building the source gives on both its frontages, or an archivist's note
+disagreeing with a catalogue title. Where the primary lookup finds no EAS record
+at all, the tool now looks the second one up too and says which parcel it lands
+on, leaving the by-hand call to you. It does not resolve on it: deciding the two
+addresses are the same building is a reading of the record, not a join.
+
+**A range goes in `extra.address_range_as_recorded`, never in `street_number`.**
+The resolver reads the range from that field and looks `street_number` up
+literally, so `"street_number": "809-811"` comes back "EAS has no address near
+it on this street" for an address EAS holds on one parcel. Put the range in the
+extra field and the low number in `street_number`; `check.py` fails an
+unresolved finding that gets this wrong.
+
 It declines rather than guesses: no EAS record, a range now split across
 parcels the record does not choose between, a condominium's worth of parcels on one point, or two recorded
-addresses that are both real all come back `unresolved`. **`report` before
+addresses that are both real all come back `unresolved`. **A resolution you
+then make by hand must carry `"by_hand": true`** — `apply` recomputes
+everything else, so an unmarked hand judgement reverts to `unresolved` the next
+time anyone runs it. The pre-1910 refusals are the common case: the guard now
+prints the assessor's `year_property_built` for the parcel the join chose
+against the record's own date, which is usually enough to decide. **`report` before
 `apply`, and read every conflict it prints** — the tool does the lookups, you do
 the judgement. A street the source spells its own way is mapped onto EAS's
 spelling where squashing punctuation finds it, and otherwise needs an explicit
@@ -207,7 +288,12 @@ spelling where squashing punctuation finds it, and otherwise needs an explicit
   streets, or leave it unresolved. The table is in
   [sources/loc-newspapers.md](sources/loc-newspapers.md).
 - **Pure renames carry their numbers over:** Lexington Avenue → Lexington
-  Street, Army Street → Cesar Chavez, Clara → Ord, Dupont → Grant.
+  Street, Army Street → Cesar Chavez, Clara → Ord, Dupont → Grant. **The number
+  carrying over is not the building surviving.** Four 1903 Dupont Street
+  addresses came back with no EAS record at all on Grant Avenue — the block
+  faces kept their numbering and lost those particular lots, to the 1903 plague
+  clearances and the 1906 fire. Alias the street, then read what EAS says; a
+  rename that resolves to nothing is a `rejected` finding, not a bad alias.
 - **Streets that no longer exist** (Falcon Street, expunged by the Market Street
   extension) resolve to nothing. `rejected`, with the note saying where the
   story belongs instead.
@@ -217,7 +303,7 @@ spelling where squashing punctuation finds it, and otherwise needs an explicit
 A finding that contradicts the assessor's `year_property_built`, or another
 source, is **not** a resolution problem. Resolve the address, keep both claims,
 and set `conflict` on the finding so step 4 records the disagreement in the
-page's `.unknowns`. Never adjudicate, never average, never quietly prefer the
+page's `unknowns`. Never adjudicate, never average, never quietly prefer the
 newer source.
 
 ## 4. Publish it
@@ -225,6 +311,29 @@ newer source.
 Here you are a **site agent**: the root [AGENTS.md](../AGENTS.md) and
 [shared/AGENTS.md](../shared/AGENTS.md) govern exactly. This section only says
 how research feeds them.
+
+**Before either route, ask what the pages already say.**
+
+```bash
+python3 research/tools/check.py --overlap research/findings/<id>/<batch>.json
+```
+
+It runs two scans. **By wording** — every resolved finding whose text
+substantially repeats the historical record, hook or narrative already on its
+target page. **By name and date** — every finding crediting a practitioner the
+page already credits within two years, from another source. The second exists
+because the first compares phrasing and two sources rarely phrase a credit the
+same way: volume D–F of the professionals biographies had 20 duplicates caught
+by wording and **35 more caught only by name and date**, nearly all of them a
+prolific builder's houses already documented one by one by the neighbourhood
+survey devoted to that builder. A source organised by architect or builder will
+overlap a neighbourhood survey of the same person almost completely, and the
+neighbourhood survey usually says more. Two statements
+cover the same buildings often enough that a citywide batch will land on parcels
+a neighbouring survey has already documented. Read each line and decide *before*
+writing: decline the duplicate, or trim it to the part that is new. Doing this
+after publication costs a re-render and an entry that may contradict a better
+one already on the page.
 
 **Route A — the page exists, or should and it's a handful.** Add each fact to
 `data.json` by hand, normally as a `historical_record` entry (`date`, `kind`,
@@ -236,23 +345,63 @@ commit**:
 python3 scripts/seed_pages.py render <path to the page, street or area>
 ```
 
+**Seeding pages leaves the neighbours stale.** Every page carries a "nearby
+places" list, so a new page changes the HTML of pages nobody edited — six new
+pages left 34 unrelated `index.html` files failing `validate.py`, none of them
+in `scripts/render-backlog.txt`. Run `validate.py` after `seed-list` and feed
+its "run: … render ⟨path⟩" lines straight back to `render`.
+
+**`render` takes a repo-relative path, and a finding's `resolution.path` is
+not one.** Findings store the site path — `/san-francisco/nob-hill/...` — and
+`render` treats a leading `/` as an absolute filesystem path, so it exits with
+`render: no such path` on the *first* bad argument and renders nothing after
+it. Strip the slash. To render exactly the pages a batch published:
+
+```bash
+python3 - <<'EOF' > /tmp/pages.txt
+import json, pathlib
+d = json.load(open("research/findings/<id>/<batch>.json"))
+seen = []
+for f in d["findings"]:
+    r = f["resolution"]
+    if r.get("status") == "resolved" and r["path"].strip("/") not in seen:
+        seen.append(r["path"].strip("/"))
+print("\n".join(seen))
+EOF
+cat /tmp/pages.txt | xargs -n 60 python3 scripts/seed_pages.py render
+```
+
 `data.json` is the only file you write; `validate.py` fails if `index.html` is
 not exactly what the renderer produces from it. A conflict from step 3 goes in
-`.unknowns`, stated plainly and left unadjudicated.
+`unknowns` — a flat list of sentences, rendered on the line that closes the
+timeline — stated plainly and left unadjudicated.
 
 **Route B — the source names many buildings with no pages.** Generate
 `manifests/<batch>.json` with `resolve_eas.py manifest` (above), then:
 
 ```bash
 python3 scripts/seed_pages.py seed-list --manifest research/manifests/<file>.json
-python3 scripts/build_sitemap.py
-python3 scripts/build_map_index.py
+python3 scripts/build_site.py
 python3 scripts/validate.py
 ```
+
+**A new page stales its neighbours, and `build_site.py` is what fixes that.**
+Each page carries a *Same block* list of the buildings around it, so twelve new
+pages once left 67 existing pages a line out of date — on streets the run never
+touched. The build rebuilds `shared/nearby.json` and then re-renders the whole
+city, in that order, so the staleness never reaches a commit. Read the diff of
+one displaced neighbour to confirm the only change is its Nearby list.
 
 The seeder only creates pages that don't exist, and it knows nothing about the
 source — the facts still have to be added to those pages afterwards. Seeding is
 the scaffold, not the research.
+
+**Run `check.py --overlap` again after `seed-list`.** The scan compares findings
+against pages on disk, so on this route it saw nothing for every page the run was
+about to create — and a seeded page is not blank: it arrives carrying whatever
+the citywide surveys already say about that parcel. One batch wrote four
+construction dates onto four new pages that already named and dated the same four
+buildings from a neighbourhood survey.
 
 Two things bite when adding those facts in bulk:
 
@@ -266,6 +415,13 @@ Two things bite when adding those facts in bulk:
   put there by whoever maintains it. A page it counts as *failed* did not get
   the fact either. Neither is silent: `render` prints both, and `validate.py`
   prints the opt-out count on every run.
+- **Intersect your page list with `scripts/render-backlog.txt` first.** That
+  file grandfathers pages whose HTML the renderer cannot yet reproduce, and
+  `render` does not consult it: a bulk render sweeps any backlogged page in the
+  list and can drop hand-written content the renderer has no `data.json` key
+  for. Render those pages last, read `git diff` on each, and where the diff
+  loses something, restore the file, add your fact to its HTML by hand and leave
+  its backlog line in place.
 
 **Check the neighborhood directory the resolver chose before you seed.** It
 files a new page under the area of the nearest published page, which is right
@@ -280,11 +436,20 @@ assessor and EAS give the parcel and say so in `resolution.method`.
   name the component that could carry the fact instead. Usually one can.
 - **Never name the source in the page body.** "The newsletter says…", "a survey
   records…", "according to the archive" — all wrong. The Sources footer is the
-  attribution. The one documented exception is
+  attribution. The trap is not a deliberate citation but a **hedge carried over
+  in your own voice** — *the volume gives no year*, *the survey records it as
+  demolished* — which reads on the page as the source talking about itself.
+  State the fact ("Since demolished"), or drop the hedge and let
+  `date_precision` carry it. `check.py` fails on the phrasing it can recognise;
+  grep your own descriptions for the source's noun before you commit. The one documented exception is
   [sources/celebrity-residence-guides.md](sources/celebrity-residence-guides.md),
   whose claims are attributed in the body precisely because they're weak.
 - **Facts, not wording.** Re-express; never reproduce the source's sentences or
   their structure.
+- **An undated credit is not automatically a decline.** `building.architect`,
+  `building.builder` and `building.developer` hold a credit with no year, and a
+  page can say who built it without claiming when. Decline only where no spec
+  row fits either.
 - **Privacy binds at publication too.** Buildings, contractors, architects,
   firms, and historical figures already published with dates. Not residents,
   occupants or owners.
@@ -292,15 +457,30 @@ assessor and EAS give the parcel and say so in `resolution.method`.
   with prose. A dated fact joins the page's one timeline in date order; it never
   opens a second rail.
 
+**Then check that the writes actually landed.**
+
+```bash
+python3 research/tools/check.py --landed research/findings/<id>/<batch>.json
+```
+
+A page that already names the same practitioner under another spelling makes an
+`if not already set` write a no-op, and the finding is marked published anyway.
+`--landed` reports every published finding whose page carries neither its
+description nor a spec row naming anyone it records. Each one is a decline, or a
+description trimmed to the part the page lacked with `publish.note` saying so.
+
 ### Mark the findings file in the same commit that edits the pages
 
 Every entry you touched gets `publish.status` set to `"published"` with its PR
 number, or `"declined"` with a reason. **An entry left unmarked will be
 re-published by the next run**, and telling "not done yet" from "done but
 unrecorded" costs a full verification pass. This has happened; see
-[AGENTS.md → What we've learned the hard way](AGENTS.md#what-weve-learned-the-hard-way).
+[LESSONS.md](LESSONS.md).
 `check.py` now fails the run if a file has published entries and resolved ones
-with no decision recorded.
+with no decision recorded. It also fails when two findings headed for a page
+resolve to the same parcel under different paths — the corner-lot case, where
+the city addresses one building on both its streets and only one of the two
+pages will ever exist.
 
 ## 5. Check it
 
@@ -319,7 +499,10 @@ inference and anything on a street the dossier flags as renumbered.
 3. **The address is still right.** Spot-check `resolution.method`, especially on
    renumbered streets.
 4. **No people leaked** — residents, occupants or owners in prose, a `hook`, a
-   `narrative`, or a permit description.
+   `narrative`, or a permit description. The check runs the other way too:
+   **no notable past occupant left behind.** A person a published source
+   already covers, plainly no longer there, is a fact the page owes its reader
+   — see "Privacy — hard limits" in the root [AGENTS.md](../AGENTS.md).
 5. **No source prose leaked** — sentences lifted or lightly paraphrased, or a
    page body naming the archive it came from.
 6. **The page still obeys the design contract** — facts in components, prose
@@ -343,10 +526,13 @@ Leave all of this true:
 - **An issue** for what you didn't finish, using
   [templates/issues.md](templates/issues.md). Search open issues for the source
   id first.
+- **The findings index** ([findings/INDEX.md](findings/INDEX.md)) — derived
+  from the findings files, so it is stale the moment a run writes one.
 - **Clean checks**, then a commit on a branch — never `main` — whose message and
   PR body carry the run's counts:
 
 ```bash
+python3 research/tools/check.py --index    # findings/INDEX.md is derived
 python3 research/tools/check.py
 python3 scripts/validate.py        # if a page was touched
 ```
@@ -372,9 +558,9 @@ That prints the table ready to paste. Its columns:
 | **Pages created** | pages this batch's own commits added |
 | **Pages edited** | pages that already existed and gained a fact |
 | **Facts published** | findings that reached a page; more than one can land on the same page |
-| **Conflicts stated** | sentences written to a page's `.unknowns` — the source disagreeing with itself or the assessor, left unadjudicated |
+| **Conflicts stated** | sentences written to a page's `unknowns` — the source disagreeing with itself or the assessor, left unadjudicated |
 | **Dates disputed** | pages where the source's construction year disagrees with the assessor's, in `building.completed_conflict` |
-| **Resolved, no page** | resolved to a parcel that cannot carry a page — a condominium, a retired parcel, a parcel off the secured roll |
+| **Declined** | resolved to a parcel and then not published — a duplicate of what the page already carries, an undated claim with no component to hold it, a fact a better source states first |
 
 **Only findings that reached a parcel can be in it**, because the neighborhood
 is a property of the parcel and nothing else. Unresolved and rejected findings
@@ -383,10 +569,38 @@ the honest shape. Do not invent a neighborhood for them from the street name —
 a street runs through several, which is the same mistake `--area-from-nhood`
 exists to prevent.
 
-Below the table, say what did *not* resolve and why, grouped by reason. A reader
-who sees "26 no EAS record, 9 ranges now split across parcels, 5 condominiums"
-learns what the source is like; a reader who sees "41 unresolved" learns
-nothing.
+**Below the table, say what was added and updated** — most of the body belongs
+here. Name the buildings, and what each page gained: a new page, an architect
+or builder credit, a dated event, a notable past resident, a corrected date, a
+stated conflict. Lead with the facts a reader would stop for. "The 1977 Section
+504 sit-in on 50 UN Plaza's page; Julia Morgan credited on four Vallejo Street
+houses; three new pages on Macondray Lane" says what the site now knows. "102
+facts published" does not.
+
+**What didn't land gets one line**, after that: the unresolved and declined
+counts and their largest reason ("28 unresolved, half of them condominiums
+waiting on #228"). No list per reason and no list of addresses. The full
+account belongs in the findings file's `resolution` fields, the dossier's
+coverage note and the follow-up issue. The PR is about the change.
+
+**Anything a human has to decide, follow up or weigh goes in a GitHub alert**,
+so a reviewer can find it without reading the whole body. Use one alert per
+item, keep each to a sentence or two, and don't use them for anything else:
+
+```markdown
+> [!IMPORTANT]
+> 1 Florence Street is waiting on #228 for Dixon and Lange's first cottage — decide there which condo parcel carries it.
+```
+
+| alert | use it for |
+|---|---|
+| `[!NOTE]` | a follow-up that's already filed. For example, "the unread 1990s listings are filed as an issue". |
+| `[!TIP]` | a suggested next step that no one has to take. For example, "the Paris Block form also covers the rear cottages, which would make a cheap next batch". |
+| `[!IMPORTANT]` | a decision the reviewer has to make, or that has to be made before the work can continue: two sources that disagree and need a call, a parcel choice the tool couldn't make, a scope question. |
+| `[!WARNING]` | something on a published page that may be wrong and needs checking, such as a fact that may sit on the wrong sibling parcel or a date taken over the assessor's. |
+| `[!CAUTION]` | a risk that would be expensive to undo: a name that might be a current resident or owner (rule 3), a licensing or terms-of-use doubt about the source, a change to a source `id`. |
+
+A run with nothing to decide has no alerts. Don't invent one.
 
 ---
 
@@ -420,7 +634,7 @@ a source with no natural batch boundary can be excellent and still unstartable.
 effort. Per lead: the four judgements above, one sampled example proving it
 carries numbered addresses with dates, and a dated verdict in the **Leads**
 table's `triaged` column with its evidence under
-[SOURCES.md → Triage notes](SOURCES.md#triage-notes). No dossier, no issue.
+[TRIAGE.md](TRIAGE.md). No dossier, no issue.
 Rejected leads are struck through in place with the reason, so nobody spends a
 run rediscovering them. *Thirteen dossiers written before knowing which three
 are worth mining is thirteen sessions spent to learn what three would have told

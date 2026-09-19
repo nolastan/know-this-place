@@ -1,0 +1,123 @@
+{
+  "address": "4531 Mission Street, San Francisco, CA 94112",
+  "path": "/san-francisco/mission/mission-street/4531/",
+  "apn": "6014039",
+  "block": "6014",
+  "lot": "039",
+  "eas_baseid": "389476",
+  "coordinates": {
+    "lat": 37.725607,
+    "lng": -122.433765
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2087.5,
+    "lot_depth_ft": 83.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Excelsior",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "4533 4531 MISSION             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 90576,
+    "assessed_improvement_value": 79247
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9719094",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-09-26",
+      "status_date": "1997-10-28",
+      "estimated_cost": 9000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8308281",
+      "type": "sign - erect",
+      "status": "complete",
+      "filed": "1983-08-24",
+      "status_date": "1983-12-29",
+      "estimated_cost": 1000,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8205706",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-07-13",
+      "status_date": "1983-04-25",
+      "estimated_cost": 55000,
+      "description": "bldg use: coml/dwg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8201822",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-03-11",
+      "status_date": "1983-03-04",
+      "estimated_cost": 950,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MISSION&street_type=ST&address_number=4531",
+      "retrieved": "2026-08-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6014039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6014&lot=039",
+      "retrieved": "2026-08-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6014039",
+      "retrieved": "2026-08-27"
+    },
+    {
+      "id": "neighborhood-commercial-context-statement",
+      "name": "San Francisco Planning Department (Mary Brown and Susan Parks), Neighborhood Commercial Buildings, 1865-1965, Historic Context Statement, adopted November 2, 2022",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=6e02d03c979da663645a63b156e861fca44d7f96ecca9ad8192c0828493bf7fe&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Neighborhood Commercial Buildings Historic Context Statement, adopted 2022",
+      "retrieved": "2026-08-27"
+    }
+  ],
+  "historic_survey": {
+    "survey": "Neighborhood Commercial Buildings Historic Context Statement (2022)",
+    "source": "neighborhood-commercial-context-statement",
+    "note": "Keeps an intact Kawneer-style storefront — the metal-sash system, patented in 1906, that let plate glass replace divided-light wood sashes."
+  },
+  "building": {}
+}

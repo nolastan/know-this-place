@@ -12,14 +12,48 @@ that neighborhood.
 - [California Street](california-street/) — 1 building, built 1910.
 - [Clay Street](clay-street/) — 1 building, built 1914.
 - [Commercial Street](commercial-street/) — 1 building, built 1985; 1 in the Commercial-Leidesdorff Conservation District.
+- [Cosmo Place](cosmo-place/) — 1 building, built 1921; 1 in the Kearny-Market-Mason-Sutter Conservation District.
+- [Florence Street](florence-street/) — 2 buildings, built 1913; 2 in the Russian Hill-Vallejo Street Crest Historic District.
+- [Glover Street](glover-street/) — 1 building, built 1981.
+- [Green Street](green-street/) — 1 building, built 1900; 1 in the Russian Hill-Paris Block Architectural Historic District.
 - [Hyde Street](hyde-street/) — 1 building, built 1911.
+- [Jackson Street](jackson-street/) — 1 building, built 1916.
 - [Jones Street](jones-street/) — 1 building, built 1915.
 - [Larkin Street](larkin-street/) — 2 buildings, built 1909–2022.
 - [Leavenworth Street](leavenworth-street/) — 1 building, built 1907.
+- [Leroy Place](leroy-place/) — 1 building, built 1988.
 - [Mason Street](mason-street/) — 1 building.
 - [Pine Street](pine-street/) — 4 buildings, built 1920–1922.
+- [Pleasant Street](pleasant-street/) — 1 building, built 1984.
 - [Polk Street](polk-street/) — 1 building, built 1909.
+- [Post Street](post-street/) — 1 building, built 1912; 1 in the Kearny-Market-Mason-Sutter Conservation District.
 - [Powell Street](powell-street/) — 1 building.
+- [Reed Street](reed-street/) — 1 building, built 1937.
+- [Russian Hill Place](russian-hill-place/) — 1 building, built 1916; 1 in the Russian Hill-Vallejo Street Crest Historic District.
 - [Sacramento Street](sacramento-street/) — 1 building.
 - [Sutter Street](sutter-street/) — 1 building.
+- [Taylor Street](taylor-street/) — 1 building, built 1929.
+- [Vallejo Street](vallejo-street/) — 1 building, built 1957; 1 in the Russian Hill-Vallejo Street Crest Historic District.
 - [Van Ness Avenue](van-ness-avenue/) — 8 buildings, built 1911–1919.
+- [Washington Street](washington-street/) — 2 buildings, built 1915.
+
+## Historic districts here
+
+- [Chinatown Historic District](../historic-districts/chinatown/)
+- [Civic Center Historic District](../historic-districts/civic-center/)
+- [Commercial-Leidesdorff Conservation District](../historic-districts/commercial-leidesdorff/)
+- [Front-California Conservation District](../historic-districts/front-california/)
+- [Kearny-Market-Mason-Sutter Conservation District](../historic-districts/kearny-market-mason-sutter/)
+- [Lower Nob Hill Apartment Hotel Historic District](../historic-districts/lower-nob-hill-apartment-hotel/)
+- [Russian Hill-Vallejo Street Crest Historic District](../historic-districts/russian-hill-vallejo-street-crest/)
+- [San Francisco Civic Center National Historic Landmark District](../historic-districts/san-francisco-civic-center-national-historic-landmark-district/)
+- [Uptown Tenderloin Historic District](../historic-districts/uptown-tenderloin/)
+
+## Adjacent neighborhoods
+
+[Chinatown](../chinatown/) is east down the grade and [Russian
+Hill](../russian-hill/) north across Broadway. [Union
+Square](../union-square/) and [the Financial
+District](../financial-district/) lie south-east and east below the hill,
+[the Tenderloin](../tenderloin/) south beyond Bush Street, and [the Western
+Addition](../western-addition/) west past Van Ness Avenue.

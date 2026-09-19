@@ -1,0 +1,169 @@
+{
+  "address": "48 Turquoise Way, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/turquoise-way/48/",
+  "apn": "7506013",
+  "block": "7506",
+  "lot": "013",
+  "eas_baseid": "420162",
+  "coordinates": {
+    "lat": 37.744433,
+    "lng": -122.445937
+  },
+  "parcel": {
+    "year_built": 1962,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 5388,
+    "building_area_sqft": 1411,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Diamond Heights",
+    "analysis_neighborhood": "Glen Park",
+    "property_location_raw": "0000 0048 TURQUOISE           WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1708544,
+    "assessed_improvement_value": 732233,
+    "last_sale_date": "2022-01-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1962",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Diamond Heights Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1962–1965",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201409045408",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-09-04",
+      "status_date": "2014-09-12",
+      "estimated_cost": 15800,
+      "revised_cost": 15800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201106097759",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-06-09",
+      "status_date": "2011-09-02",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "replace (38) single glass and (7) single glass doors on double glass windows and doors. not visible from the street. all new replacement window/doors: u-facotr less than 0.40.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9516977",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-10-12",
+      "status_date": "1995-11-09",
+      "estimated_cost": 11730,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9512591",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-08-09",
+      "status_date": "1995-12-13",
+      "estimated_cost": 2500,
+      "description": "wood siding repair only/siding on east wall to be replaced",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9310231",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-06-17",
+      "status_date": "1994-01-20",
+      "estimated_cost": 3000,
+      "description": "replacing exterior siding on front of house, dry rot",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8912026",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-07-10",
+      "status_date": "1989-11-16",
+      "estimated_cost": 5000,
+      "description": "repair existing dryrot on decking, railing and girders",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TURQUOISE&street_type=WAY&address_number=48",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7506013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7506&lot=013",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7506013",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44593692408964%2037.744433439485114)%27)",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume P–R), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=37da3dd1abd97d61cd23d20a163f6d99f76a7aaf67f04eddf11f919d978aa651&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1962",
+      "kind": "construction",
+      "description": "Designed by architect Neil Pinney, who worked on the Diamond Heights redevelopment project.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ],
+  "building": {
+    "architect": "Neil Pinney"
+  }
+}

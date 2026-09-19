@@ -1,0 +1,184 @@
+{
+  "address": "1690 Bay Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/bay-street/1690/",
+  "apn": "0460A013",
+  "block": "0460A",
+  "lot": "013",
+  "eas_baseid": "282615",
+  "coordinates": {
+    "lat": 37.803089,
+    "lng": -122.434726
+  },
+  "parcel": {
+    "year_built": 1931,
+    "units": 18,
+    "stories": 3,
+    "rooms": 42,
+    "bathrooms": 18,
+    "lot_area_sqft": 5000,
+    "building_area_sqft": 13200,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 1690 BAY                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 863266,
+    "assessed_improvement_value": 1706256
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1931",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Marina Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1930–1940",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202505307579",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-05-30",
+      "status_date": "2025-07-01",
+      "estimated_cost": 2166,
+      "revised_cost": 2166,
+      "description": "fire alarm as builts reference 202408219151",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202408219151",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-08-21",
+      "status_date": "2025-07-01",
+      "estimated_cost": 30000,
+      "revised_cost": 58855,
+      "description": "fire only alarm to include upgrade (e) system. to comply with sffd 3.08 sleeping area fire alarm requirement.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201105045303",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-05-04",
+      "status_date": "2011-10-11",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "replace existing aluminum windows with ultra wood clad windows, visable from street. (n) windows u factor 0.4 max.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9704829",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-03-17",
+      "status_date": "1997-05-28",
+      "estimated_cost": 1200,
+      "description": "install double door at utility room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9517669",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-10-20",
+      "status_date": "1997-09-22",
+      "estimated_cost": 7500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9004499",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-03-07",
+      "status_date": "1990-07-02",
+      "estimated_cost": 10000,
+      "description": "structural repair per lang engineering",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8920621",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-10-30",
+      "status_date": "1990-08-14",
+      "estimated_cost": 50000,
+      "description": "e.w.o.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 9,
+    "range": "1989–2025",
+    "shown_on_page": 7,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BAY&street_type=ST&address_number=1690",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0460A013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0460A&lot=013",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0460A013",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43472554154371%2037.803089094527074)%27)",
+      "retrieved": "2026-08-31"
+    },
+    {
+      "id": "architecture-preservation-professionals-biographies",
+      "name": "San Francisco Planning Department, Architecture, Planning, & Preservation Professionals: A Collection of Biographies (volume A–C), citywide historic context statement, adopted November 17, 2021, updated December 30, 2025",
+      "query": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=903cd18110a5ccc974eb3e5632a9acd8f2525118c61c3ce50c3ffc7374e0bfa3&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+      "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
+      "label": "Architecture, Planning & Preservation Professionals: A Collection of Biographies, adopted 2021",
+      "retrieved": "2026-08-31"
+    }
+  ],
+  "building": {
+    "architect": "Herman C. Baumann"
+  },
+  "historical_record": [
+    {
+      "date": "1931",
+      "kind": "construction",
+      "description": "Designed by Herman C. Baumann.",
+      "source": "architecture-preservation-professionals-biographies"
+    }
+  ]
+}

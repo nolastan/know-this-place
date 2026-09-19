@@ -1,0 +1,120 @@
+{
+  "address": "2524 Rivera Street, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/rivera-street/2524/",
+  "apn": "2182013",
+  "block": "2182",
+  "lot": "013",
+  "eas_baseid": "332000",
+  "coordinates": {
+    "lat": 37.746249,
+    "lng": -122.493609
+  },
+  "parcel": {
+    "year_built": 1940,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1900,
+    "basement_area_sqft": 700,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2524 RIVERA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 392188,
+    "assessed_improvement_value": 187640,
+    "last_sale_date": "1988-08-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1940",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200008319424",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-08-31",
+      "status_date": "2001-04-26",
+      "estimated_cost": 300,
+      "revised_cost": 300,
+      "description": "remove cabinets in family room, remove",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200006263635",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2000-06-26",
+      "status_date": "2002-06-07",
+      "estimated_cost": 55000,
+      "revised_cost": 75000,
+      "description": "extend (e) residential house by constructing a 3-story additional bldng",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8605197",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-05-05",
+      "status_date": "1987-02-10",
+      "estimated_cost": 16000,
+      "description": "remodel bath room and kitchen @ 2/f basement remodeling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=RIVERA&street_type=ST&address_number=2524",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2182013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2182&lot=013",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2182013",
+      "retrieved": "2026-09-02"
+    },
+    {
+      "id": "digitalsf-22967",
+      "name": "2524 Rivera Street, 1962. San Francisco Subjects Photograph Collection (SFP 162), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/22967",
+      "label": "San Francisco Subjects Photograph Collection (SFP 162), San Francisco Public Library",
+      "retrieved": "2026-09-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1962-12-21",
+      "kind": "photograph",
+      "description": "Photographed.",
+      "source": "digitalsf-22967"
+    }
+  ]
+}
