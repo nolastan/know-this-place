@@ -414,7 +414,7 @@ const dotLayer = () => ({
    Coordinates come off <ktp-streetview location="LAT,LNG">, which the card
    copies verbatim from the page's own data.json. */
 const newsFeatures = () =>
-  [...document.querySelectorAll(".news-cards > li")].flatMap((li) => {
+  [...document.querySelectorAll(".news-cards > li")].flatMap((li, i) => {
     const sv = li.querySelector("ktp-streetview");
     const [lat, lng] = (sv?.getAttribute("location") ?? "").split(",").map(Number);
     if (!Number.isFinite(lat) || !Number.isFinite(lng)) return [];
@@ -426,6 +426,10 @@ const newsFeatures = () =>
         p: li.querySelector("a.card-label")?.getAttribute("href") ?? "",
         h: li.querySelector(".card-news em")?.textContent ?? "",
         o: li.querySelector(".card-outlet")?.textContent ?? "",
+        // Where this dot sits in the pulse cycle, 0 → 1. Stepping by the golden
+        // ratio spreads any number of dots evenly with no two neighbours in the
+        // grid firing together, so the rings take turns instead of beating as one.
+        ph: (i * 0.618034) % 1,
       },
     }];
   });
@@ -439,10 +443,12 @@ const REDUCED_MOTION = matchMedia("(prefers-reduced-motion: reduce)").matches;
    rather than a new color invented for the map. They are also drawn a size
    larger, because color alone would not find a dozen dots in eight thousand at
    city zoom. */
+/* scale may be a number or a data expression; either way it sits inside the
+   stops, where Mapbox allows it. */
 const newsRadius = (scale) => ["interpolate", ["linear"], ["zoom"],
   // Scaled stop by stop: Mapbox only accepts ["zoom"] at the top level of an
   // interpolate, so ["*", scale, interpolate] is rejected and the layer is lost.
-  ...[[10, 2.6], [12, 3.4], [14, 5], [16, 8], [18, 11]].flatMap(([z, r]) => [z, r * scale])];
+  ...[[10, 2.6], [12, 3.4], [14, 5], [16, 8], [18, 11]].flatMap(([z, r]) => [z, ["*", r, scale]])];
 
 const newsLayers = () => [
   /* The halo. Its radius and opacity are driven frame by frame below; the
@@ -472,8 +478,8 @@ const newsLayers = () => [
   },
 ];
 
-/* One ring every two seconds, growing to four times the dot and fading as
-   it grows. Mapbox has no animated paint, so the halo is repainted per frame —
+/* One ring per dot every two seconds, each dot on its own beat, growing to four
+   times the dot and fading as it grows. Mapbox has no animated paint, so the halo is repainted per frame —
    cheap at a dozen features, and parked whenever the map is off-screen or the
    tab is hidden rather than repainting the city under the fold. */
 function pulse(map) {
@@ -482,13 +488,15 @@ function pulse(map) {
   const tick = (now) => {
     if (!running) return;
     if (map.getLayer("news-pulse")) {
-      const k = (now % PULSE_MS) / PULSE_MS;          // 0 → 1, once a cycle
+      const t = (now % PULSE_MS) / PULSE_MS;          // 0 → 1, once a cycle
+      const k = ["%", ["+", t, ["get", "ph"]], 1];    // this dot's own place in it
       map.setPaintProperty("news-pulse", "circle-radius",
-        newsRadius(1 + (PULSE_MAX - 1) * k));
+        newsRadius(["+", 1, ["*", PULSE_MAX - 1, k]]));
       // Bright at the dot and fading as it grows, so the ring dissolves at its
       // widest rather than snapping back — but slowly enough that it is still
       // plainly visible halfway out, at city zoom among eight thousand dots.
-      map.setPaintProperty("news-pulse", "circle-opacity", 0.6 * (1 - k) ** 1.1);
+      map.setPaintProperty("news-pulse", "circle-opacity",
+        ["*", 0.6, ["^", ["-", 1, k], 1.1]]);
     }
     frame = requestAnimationFrame(tick);
   };
