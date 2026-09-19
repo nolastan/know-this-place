@@ -533,6 +533,27 @@ ktp-figure { position: relative; }
 .community-note { background: var(--note-bg); border-left: 3px solid var(--accent); padding: 0.75rem 1rem; margin: 1.5rem 0; font-size: 0.97rem; max-width: var(--measure); }
 .community-note::before { content: "Community contribution"; display: block; font-family: var(--sans); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 0.3rem; }
 
+/* The story that put the building on the homepage, repeated under the hero
+   while its card is up. Built like the community note — a tinted strip with a
+   rule down its edge and a small-caps kicker, here the story's date — but the rule is the cool hue,
+   the one the homepage map draws its news dots in, so the block reads as that
+   dot's story arriving. The rule is the only data colour; text stays ink. The
+   whole strip is one link to the article, and it spans the page's frame like
+   the stat band below it. The headline is italic because it is quoted. */
+.news-now { display: block; background: var(--note-bg); border-left: 3px solid var(--cool); border-radius: 0 var(--radius) var(--radius) 0; padding: 0.75rem 1rem; margin: 1.25rem 0; color: var(--ink); text-decoration: none; }
+.news-now > span { display: block; }
+.news-now-kicker { margin-bottom: 0.3rem; font-family: var(--sans); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+.news-now-head { font-size: 1.1rem; line-height: 1.35; }
+.news-now-outlet { margin-top: 0.3rem; font-family: var(--sans); font-size: 0.85rem; color: var(--muted); }
+/* Hover fills the strip with its own rule's tint rather than recolouring the
+   text: the whole block is the target, so the whole block answers. */
+.news-now { transition: background-color 0.15s; }
+.news-now:hover, .news-now:focus-visible { background: color-mix(in srgb, var(--cool-soft) 50%, var(--note-bg)); }
+/* The icon rides with the last word of the outlet: an inline-block is a break
+   opportunity on its own, so the space and the icon share one nowrap box. */
+.news-now-ext { white-space: nowrap; }
+.news-now-outlet .ic { font-size: 0.85em; }
+
 /* ============================================================= hub lists */
 .place-list { list-style: none; padding: 0; }
 .place-list li { padding: 0.5rem 0; border-bottom: 1px solid var(--rule); }

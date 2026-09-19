@@ -3110,6 +3110,63 @@ def _nearby_index() -> dict:
             for path, near in zip(paths, raw["near"]) if near}
 
 
+HOMEPAGE = ROOT / "index.html"
+
+
+@functools.cache
+def _homepage_news() -> dict:
+    """page path -> article URL, for every card in the homepage's news grid.
+
+    "Recent" news is whatever the homepage is carrying: the twelve newest
+    entries the news module published, one card per building. The grid is hand
+    maintained, so it is read here rather than recomputed from the corpus — a
+    card added or dropped moves the showcase with it on the next render. A
+    missing or unreadable homepage just means no page showcases anything.
+    """
+    try:
+        page = HOMEPAGE.read_text(encoding="utf-8")
+    except OSError:
+        return {}
+    grid = re.search(r'<ul class="[^"]*\bnews-cards\b[^"]*">(.*?)</ul>', page, re.S)
+    out = {}
+    for li in re.findall(r"<li>(.*?)</li>", grid[1] if grid else "", re.S):
+        page = re.search(r'<a href="(/[^"]*)">', li)
+        story = re.search(r'<a class="card-outlet" href="([^"]+)"', li)
+        if page and story:
+            out[page[1]] = html.unescape(story[1])
+    return out
+
+
+def news_now_html(rec: dict) -> str:
+    """The story that put this building on the homepage, under the hero.
+
+    A reader who clicks a homepage card arrives looking for that story, and on a
+    page with a long rail it is the last entry, a long way down. So while the
+    card is up, the entry is shown again at the top. It is a pointer to the
+    newest entry on the rail, not a second record: the rail keeps it too, and
+    the block goes away when the card comes off the homepage. The same shape as
+    the entry itself, headline then outlet, because it is the same entry.
+    """
+    url = _homepage_news().get(rec["path"])
+    entry = next((e for e in history_entries(rec)
+                  if url and e.get("url") == url and e.get("headline")), None)
+    if not entry:
+        return ""
+    when = entry.get("date", "")
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", when):
+        when = long_date(when)
+    # The whole strip is the link, so it cannot be mistaken for anything but a
+    # way out to the article; the outlet's name and icon still say where to.
+    outlet = (f'\n    <span class="news-now-outlet">{esc(entry["outlet"])}'
+              f'<span class="news-now-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></span>'
+              if entry.get("outlet") else "")
+    return (f'  <a class="news-now" href="{esca(url)}">\n'
+            + (f'    <span class="news-now-kicker">{esc(when)}</span>\n' if when else "")
+            + f'    <span class="news-now-head"><em>{esc(entry["headline"])}</em></span>'
+            f'{outlet}\n'
+            '  </a>\n')
+
+
 def nearby_html(rec: dict, indent: str) -> str:
     """The lateral links: the places a reader standing here could walk to.
 
@@ -3383,7 +3440,7 @@ def render_html(rec: dict) -> str:
     </ktp-streetview>
   </section>
 
-{lead_html}{stats_html(rec)}
+{news_now_html(rec)}{lead_html}{stats_html(rec)}
 {body}
 {nearby_html(rec, "  ")}</main>
 

@@ -456,8 +456,9 @@ failure this module exists to avoid, and it does not stop being that failure
 because the fact is on a page rather than in an items file.
 
 The card is picture, then address, with two lines hung underneath it: the
-headline, verbatim, linking to the article, and the outlet beneath that. The
-building is what the card names first; the news is what it says about it.
+headline, verbatim and unlinked, and beneath it the outlet's name, which is the
+link to the article. The building is what the card names first; the news is what
+it says about it. The same shape as a news entry on an address page.
 
 **The grid is also the map's data.** The script at the foot of the homepage
 reads these cards — the `location`, the label, the headline, the outlet — and
@@ -479,16 +480,28 @@ from the map. That is one more reason `location` is copied from the page's
         </div>
       </figure>
     </ktp-streetview>
+    <span class="card-label">2918–2920 Mission Street</span>
   </a>
-  <a class="card-label" href="/san-francisco/mission/mission-street/2918/">2918–2920 Mission Street</a>
-  <p class="card-news"><a href="https://hoodline.com/2026/08/…"><em>Mission Laundromat Site That Fueled S.F. Housing Wars Finally Rises as Apartments</em><span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a><span class="card-outlet">Hoodline</span></p></li>
+  <p class="card-news"><em>Mission Laundromat Site That Fueled S.F. Housing Wars Finally Rises as Apartments</em><a class="card-outlet" href="https://hoodline.com/2026/08/…">Hoodline<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
 ```
 
-**Copy that `card-ext` wrapper exactly.** The `ic-link` glyph marks the headline
-as the one link on the homepage that leaves the site, and an inline-block is a
-line-break opportunity in its own right — a bare `&nbsp;` does not stop the
-browser stranding the icon alone on a line of its own. The nowrap wrapper, with
-no whitespace ahead of it, is what keeps the icon on the last word.
+**The picture and the address are one link**, to the building's page, so they
+highlight together on hover and a reader sees them as one destination. Keep the
+label a `<span class="card-label">` inside that `<a>` — the map reads the page's
+URL off it. **Link the outlet, not the headline.** A headline that went somewhere else looked exactly like them,
+and a reader could not tell which click left the site. The outlet's name reads as
+a publication, and the `ic-link` glyph after it marks it as the one link on the
+card that leaves. **Copy that `card-ext` wrapper exactly:** an inline-block is a
+line-break opportunity in its own right, so a bare `&nbsp;` does not stop the
+browser stranding the icon alone on a line; the nowrap wrapper, with no
+whitespace ahead of it, keeps it on the last word.
+
+**The grid also decides what an address page leads with.** While a building has
+a card here, its page repeats that story under the hero (`.news-now`, see
+[shared/BLOCKS.md](../shared/BLOCKS.md#in-the-news--news-now)), found by matching
+the card's outlet link to the entry's `url`. So the card's `href` must be the
+entry's `url` exactly, and the grid change has to be followed by a render —
+`build_site.py` does both pages and grid in one go.
 
 - **Twelve, and the newest are the twelve.** The new card goes on the top and
   the oldest comes off the bottom. Nothing generates this list — it changes only
