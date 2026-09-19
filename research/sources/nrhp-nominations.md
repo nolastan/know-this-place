@@ -6,7 +6,7 @@
 >
 > - **Kind:** PDF reports (federal nomination forms) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — the listings are indexed everywhere; the forms are not. A search for a street number returns the Wikipedia list entry and the NPS map pin, never the paragraph inside the PDF that dates the building and names its architect.
-> - **Coverage:** 153 of 165 San Francisco listings read — every one certified before 2016, plus the Civic Center district the index omits and the Uptown Tenderloin Historic District (08001407) read in full. All six Anne Bloomfield district nominations and the Southern Pacific Company Hospital Historic District (89000319) are read. 1,177 findings, 1,033 resolved, 989 published.
+> - **Coverage:** every San Francisco listing with a text layer is read — all certified through 2023, including three the NPS index returns only by envelope, plus the Civic Center district the index omits and the Uptown Tenderloin Historic District (08001407) in full. The 2020-2023 listings are read from OHP's drafts, since npgallery serves them a placeholder. 1,356 findings, 1,203 resolved, 1,144 published. Unread: 77000334 and 01000281 (no text layer).
 > - **Local corpus:** `research/corpora/nrhp-nominations/` (one PDF and one `.txt` per reference number, plus `index-san-francisco.json` and `state.json`)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -278,19 +278,14 @@ URL. Worked example:
   district — 26 of 2000-2009
   ([`listed-2000-2009.json`](../findings/nrhp-nominations/listed-2000-2009.json))
   and 14 of 2010-2015
-  ([`listed-2010-2015.json`](../findings/nrhp-nominations/listed-2010-2015.json)).
+  ([`listed-2010-2015.json`](../findings/nrhp-nominations/listed-2010-2015.json)),
+  and **all 7 listings certified 2017-2019**
+  ([`listed-2017-2019.json`](../findings/nrhp-nominations/listed-2017-2019.json)),
+  and **all 11 listings certified 2020-2023**, read from the drafts the
+  California Office of Historic Preservation posted
+  ([`listed-2020-2023.json`](../findings/nrhp-nominations/listed-2020-2023.json)).
 - **Not read, and this is the queue in order:**
-  1. **The 7 listings certified 2017-2019** — 100001018 Federal Office
-     Building, 100001338 Henry Geilfuss House, 100001665 Sacred Heart Parish
-     Complex (a district: four buildings), 100002287 Central YMCA, 100002359
-     The Women's Building, 100004413 Swedish American Hall, 100004531 Glen
-     Park BART Station. All seven serve a PDF at the `_text` path (tested
-     2026-09-18); they are the next batch and one session's work.
-  2. **The 8 listings certified 2020 or later** (100004868 onward), whose
-     `_text` path serves a 1.6 KB PNG placeholder — every one of them, tested
-     2026-09-18. Finding another route to these PDFs is that batch's first
-     job; the index carries no `NARA_URL` for any of them.
-  3. **77000334** (Mills Building and Tower) and **01000281** (Maritime
+  1. **77000334** (Mills Building and Tower) and **01000281** (Maritime
      National Historic Site, Fort Mason), whose PDFs have no text layer.
 - **Never guess a reference number.** 08001407 is the Uptown Tenderloin
   Historic District. 08000209 — a plausible guess for an early-2008 San
@@ -314,6 +309,103 @@ URL. Worked example:
   serve `application/pdf` and all eight certified from 2020 on serve the
   placeholder (HTTP 206, `image/png` to a `-r 0-200` request). Test the whole
   group before generalising from one number.
+
+- **The post-2016 forms are long, and the payload is in two places.** The
+  seven 2017-2019 nominations run 54 to 125 pages — about 1.36 million
+  characters — against two or three for a 1970s form, and most of it is
+  context: the history of the YMCA movement, of Brutalism, of second-wave
+  feminism. The address-level facts sit in section 7's dated alteration list
+  (the Sacred Heart and Swedish American Hall forms print one, year by year)
+  and in section 8's construction chronology. Strip the running page header
+  (`<name>  San Francisco, California`, `Section 8 page N`) before reading;
+  it repeats every page and doubles the text.
+- **An architect's biography lists his own homes, year by year.** The Swedish
+  American Hall form gives August Nordin's residence in seven directory years;
+  the Geilfuss form gives Henry Geilfuss's office addresses. A residence is a
+  notable-past-occupant fact and goes in `notable_residents` with its year,
+  but most of these do not survive — four of Nordin's seven have no EAS record
+  or no street. Take the residences; leave the lists of *other works*, which
+  are the comparisons cautioned against above.
+- **A parish complex's pages mislay facts between sibling parcels.** Before
+  this run the rectory at 546 Fillmore Street carried the 1898 entry for the
+  church at 554, and the convent at 660 Oak Street carried the Black Panther
+  breakfast programme that ran in the church basement. A district of four
+  buildings on four lots is four pages; read all four before adding to one,
+  and say in `unknowns` where an existing entry sits on the wrong sibling.
+- **The roll's year can be a stranger's.** Parcel 0351050, the 1936 Federal
+  Office Building at 50 United Nations Plaza, is on the 2025 roll as a 1982
+  office building filed under 1128 Market Street and 40 Leavenworth Street, so
+  `--overlap` flags every pre-1982 fact as predating the building. The
+  building's own name is the evidence; record the roll's year in
+  `building.completed_conflict` and publish.
+
+- **From 2020 on, npgallery has no text, and OHP's drafts are the way in.**
+  Every listing certified 2020 or later serves a 1.6 KB PNG at the `_text`
+  path. The California Office of Historic Preservation posts each nomination
+  draft for the State Historical Resources Commission at
+  `ohp.parks.ca.gov/pages/1067/files/<name>.pdf`, with no index page and
+  inconsistent names (`CA_San Francisco County_…`, `CA_San Francisco_…`,
+  `…_DRAFT 2019-08-29.pdf`, even a misspelt `Pfleuger`), so guessing names
+  finds a third of them. **Enumerate the folder through the Wayback Machine
+  instead**: `web.archive.org/cdx/search/cdx?url=ohp.parks.ca.gov/pages/1067/files/&matchType=prefix&fl=original&collapse=urlkey`
+  lists ~2,600 files, about seventy of them San Francisco. Two traps: OHP now
+  answers a retired file with **HTTP 200 and a one-page "archived document,
+  available by request" PDF of 296,087 bytes**, so check the page count, not
+  the status; and the Wayback capture nearest 2024 is often that placeholder
+  too — ask the CDX for the file's captures and take one from before 2021.
+  A draft is what the Commission reviewed, not the certified form; cite it as
+  a draft, with its date where the filename gives one. The same folder holds
+  drafts for properties still pending or never listed (Compton's Cafeteria,
+  the Raymond Hotel Apartments, Kinmon Gakuen, the North Beach and Ingleside
+  Terraces districts, St. Francis Wood, George Washington High School) — a
+  lead for a separate batch, since a pending draft is not a listing.
+- **San Francisco Planning's review packets are a second route.** As a
+  Certified Local Government the city reviews every nomination; the Historic
+  Preservation Commission packet for the case (`…CRV.pdf` under
+  `sfplanning.s3.amazonaws.com/commissions/hpcpackets/`) carries the whole
+  draft as an exhibit — 2020-008400CRV is Buon Gusto's.
+
+- **Verified:** 2026-09-18 (twelfth run, same session as the eleventh. **All 11
+  listings certified 2020-2023**: 100004868 Japanese YWCA, 100004869 Gran
+  Oriente Filipino Hotel, 100005794 John A. Whelan House, 100005987 Mission
+  Cultural Center, 100006073 Buon Gusto Sausage Factory, 100006911 Hobart
+  Building, 100007488 Glide Memorial Church, 100008228 Timothy L. Pflueger
+  House, 100008498 Bethlehem Shipbuilding Corporation Hospital, 100009644 St.
+  Luke's Episcopal Church and 100009717 Western Manufacturing Company
+  Building, every one from an OHP draft. **95 found, 90 resolved, 84
+  published on 20 pages, 5 of them seeded; 6 declined, 5 unresolved.** These
+  forms reach off the property more than the older ones — the Glide
+  nomination alone places the Mary Elizabeth Inn, the 1965 California Hall
+  raid, the Black Man's Free Store and a CUPP benefit — and those dated,
+  addressed events were taken; architects' lists of other works were not.
+  Two notable residents: John A. Whelan and Timothy Pflueger. Corrections:
+  582 Market Street, the Hobart Building's parcel, carried the Crown
+  Zellerbach Building's 1959 entry and SOM as its architect from an earlier
+  run (spec row corrected to Willis Polk, entry left and named in
+  `unknowns`); 1755 Clay Street's architect was spelt "Gree". Where the run
+  stopped: nothing listed is left but the two forms with no text layer.)
+
+- **Verified:** 2026-09-18 (eleventh run. **All 7 listings certified
+  2017-2019**, every one with a usable text layer: 100001018 Federal Office
+  Building, 100001338 Henry Geilfuss House, 100001665 Sacred Heart Parish
+  Complex (four buildings on four parcels), 100002287 San Francisco Central
+  YMCA, 100002359 The Women's Building, 100004413 Swedish American Hall and
+  100004531 Glen Park BART Station. **84 found, 80 resolved, 71 published on
+  14 pages, 5 of them seeded; 9 declined, 4 unresolved.** Six of the seven
+  buildings had pages already, and what survived the overlap scan is the dated
+  second layer: the Section 504 sit-in of April 1977 at 50 United Nations
+  Plaza, the Black Panther breakfast programme (10 March 1969) and the UFW
+  lettuce boycott (September 1970) at Sacred Heart under Father Eugene Boyle,
+  Golden Gate University's 1910-1967 years in the Central YMCA, the 1980 arson
+  and pipe bomb at The Women's Building, Cafe Du Nord's opening in 1908. The
+  nine declines repeat what the pages already carried — two landmark numbers,
+  two openings, the 2007 vacating of 50 United Nations Plaza and the ARC/AIDS
+  vigil and quilt. Two notable residents went into `notable_residents`: Henry
+  Geilfuss at 811 Treat Avenue (1882-1900) and August Nordin at three
+  addresses. Three sentences went into `unknowns`: two sibling-parcel
+  misplacements at Sacred Heart and The Women's Building's opening month
+  (June 1979 against the page's autumn 1979). Where this run stopped: the
+  2020-and-later listings, whose `_text` path serves a placeholder.)
 
 - **Verified:** 2026-09-18 (tenth run. Two batches: **all 26 listings
   certified 2000-2009** apart from the Uptown Tenderloin district, and **all 14

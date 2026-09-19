@@ -14,6 +14,23 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
 ---
 
 
+- **A folder with no index page can still be listed: ask the Wayback
+  Machine.** OHP posts nomination drafts under one path with no listing and
+  no naming rule, and guessing names found four of eleven. The CDX API
+  (`web.archive.org/cdx/search/cdx?url=<host>/<path>/&matchType=prefix&fl=original&collapse=urlkey`)
+  returned every file ever captured there in one call. *Before concluding a
+  document has no route, list its host's folder through the CDX.* And check
+  what came back, not the status: OHP answers a retired file with HTTP 200 and
+  a one-page placeholder PDF, and the recent Wayback captures are that same
+  placeholder — page count and byte size are the tell
+  ([sources/nrhp-nominations.md](sources/nrhp-nominations.md)).
+
+- **A page's `source` can be a list, and a tool that assumes a string
+  crashes on it.** REFERENCE.md lets one timeline item cite several records
+  as a list; `check.py --overlap` and `--landed` both died on the first page
+  that did (`unhashable type: 'list'`) and are now fixed. *Anything new that
+  reads `historical_record[].source` has to take both shapes.*
+
 - **`--overlap` is blind to the pages the same run is about to seed, and a
   seeded page is not a blank one.** The scan compares findings against pages *on
   disk*, so on a route-B run — where the resolver's manifest feeds `seed-list` —
@@ -765,7 +782,29 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   rectories — fits both. The check was already on the page: 3tsw-4idn's
   `survey_name` said ST FRANCIS RECTORY. **Where a finding names a building,
   compare the name to `historic_status.survey_name` and the landmark list
-  (97yj-54sx) on the parcel the join chose.**
+  (97yj-54sx) on the parcel the join chose.** Sacred Heart in Hayes Valley is
+  the second case, made by earlier runs of other sources: its rectory at 546
+  Fillmore Street carried the church's 1898 construction, and its convent at
+  660 Oak Street the Black Panther breakfast programme that ran in the church
+  basement. *A run that lands on one building of a parish or campus reads every
+  sibling page before it writes*, and says in `unknowns` where an existing
+  entry sits next door.
+- **A landmark table's street number can be wrong while its landmark number is
+  right, and the wrong number can be real.** The Modern context statement's
+  landmark table prints the Crown Zellerbach Building (No. 183) at 590 Market
+  Street; EAS files 590 Market on the Hobart Building next door, itself a
+  landmark, so a `designation` fit the parcel and it published there (#205,
+  moved in #380). The same document says 1 Bush Street twice, and a finding
+  from **the same batch** already sat on 1 Bush. **When a finding carries a
+  landmark number, look the number up in 97yj-54sx and compare its `apn` with
+  the parcel the join chose** — and run `check.py --find` on the building's
+  name before resolving: two findings about one building on two parcels means
+  one of them is wrong. *Measured over every findings file: 176 resolved
+  findings name exactly one landmark number and 19 disagree with 97yj-54sx's
+  APN — mostly an adjacent lot after reparcelization (Mills Building,
+  Hallidie), but some because the source printed the wrong landmark number
+  (St Ignatius as No. 172, which is St Boniface's). So the landmark list
+  raises the question; it does not decide it.*
 
 - **When a building has been moved, the fact belongs to the parcel it stands on
   now.** The Englander House was built at 807 Franklin Street in 1880 and rolled
