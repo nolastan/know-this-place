@@ -157,6 +157,10 @@ ICON_LINKS = """  <link rel="icon" href="/favicon.ico" sizes="32x32">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/shared/site.webmanifest">"""
 
+# Breadcrumb divider. Rendered as its own unlinked element so the chevron is
+# not inside the adjacent <a>.
+CRUMB_SEP = '<span class="crumb-sep" aria-hidden="true">›</span>'
+
 # An alternative neighborhood designation, per neighborhood directory —
 # appended to the `.sub` after the address or building type. The Castro's is
 # required by san-francisco/castro/AGENTS.md — it is what tells a reader that
@@ -1580,8 +1584,6 @@ def tags_html(rec: dict) -> str:
         out.append(("ic-layers", f"{s} stor{'y' if s == 1 else 'ies'}"))
     if p.get("zoning"):
         out.append(("ic-plan", f"Zoned {p['zoning']}"))
-    if p.get("supervisor_district"):
-        out.append(("ic-pin", f"District {p['supervisor_district']}"))
     if rec.get("public_open_space"):
         n = len(rec["public_open_space"])
         out.append(("ic-pin", "Privately owned public open space"
@@ -2796,8 +2798,6 @@ def glance_panel_html(rec: dict, indent: str) -> str:
     ctype = CONSTRUCTION.get(p.get("construction_type_code"))
     if ctype:
         rows.append(("ic-plan", "Construction", ctype))
-    if rec.get("block") and rec.get("lot"):
-        rows.append(("ic-pin", "Parcel", f"Block {rec['block']}, Lot {rec['lot']}"))
     if rec.get("street_numbers_on_parcel"):
         # Hand-authored pages sometimes hold these as numbers rather than
         # strings, and a bare join dies on the first int.
@@ -3409,6 +3409,16 @@ def render_html(rec: dict) -> str:
         (street_name, f"/{city_slug}/{area_slug}/{street_slug_}/"),
         (crumb_number, None),
     ])
+    # The parcel's identifiers ride the map chip's second line, so they render
+    # nowhere else — not the district tag, the glance panel's Parcel row, or
+    # the .sub's ZIP. The trail above it names ancestors only; the leaf is the
+    # page itself (the BreadcrumbList still carries it for search).
+    sup = rec.get("parcel", {}).get("supervisor_district")
+    crumb_meta = " · ".join(x for x in (
+        f"District {sup}" if sup else "",
+        (f"Block {rec['block']}, Lot {rec['lot']}"
+            if rec.get("block") and rec.get("lot") else ""),
+        f"ZIP {zip_code}") if x)
 
     return f"""<!doctype html>
 <html lang="en">
@@ -3425,17 +3435,7 @@ def render_html(rec: dict) -> str:
 {ld_block(crumbs_ld)}
 </head>
 <body>
-<header class="site-header">
-  <a class="wordmark" href="/">Know This Place</a>
-  <nav class="breadcrumb" aria-label="Breadcrumb">
-    <a href="/{city_slug}/">{esc(city_name)}</a>
-    <a href="/{city_slug}/{area_slug}/">{esc(area_name)}</a>
-    <a href="/{city_slug}/{area_slug}/{street_slug_}/">{esc(street_name)}</a>
-    <span aria-current="page">{esc(crumb_number)}</span>
-  </nav>
-</header>
-
-<main>
+<div class="map-shell">
   <ktp-map location="{lat},{lng}" label="{esca(heading)}">
     <figure class="media media-map">
       <div class="media-empty">
@@ -3445,7 +3445,18 @@ def render_html(rec: dict) -> str:
       </div>
     </figure>
   </ktp-map>
+  <a class="map-brand" href="/">Know This Place</a>
+  <div class="map-id">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/{city_slug}/">{esc(city_name)}</a>{CRUMB_SEP}
+      <a href="/{city_slug}/{area_slug}/">{esc(area_name)}</a>{CRUMB_SEP}
+      <a href="/{city_slug}/{area_slug}/{street_slug_}/">{esc(street_name)}</a>
+    </nav>
+    <p class="crumb-meta">{esc(crumb_meta)}</p>
+  </div>
+</div>
 
+<main>
   <section class="hero">
     <div>
       <h1>{esc(heading)}</h1>
@@ -4252,8 +4263,8 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
 <header class="site-header">
   <a class="wordmark" href="/">Know This Place</a>
   <nav class="breadcrumb" aria-label="Breadcrumb">
-    <a href="/{ctx['city']}/">{esc(city_name)}</a>
-    <a href="/{ctx['city']}/{ctx['area']}/">{esc(area_name)}</a>
+    <a href="/{ctx['city']}/">{esc(city_name)}</a>{CRUMB_SEP}
+    <a href="/{ctx['city']}/{ctx['area']}/">{esc(area_name)}</a>{CRUMB_SEP}
     <span aria-current="page">{esc(disp)}</span>
   </nav>
 </header>
@@ -4858,8 +4869,8 @@ def write_district_hub(dist_dir: Path, name: str, members: list) -> bool:
             f"{'one street' if n_streets == 1 else f'{n_streets:,} streets'}, "
             f"with construction dates, permits and the district's register "
             f"standing, fully cited.")
-    crumbs = ('    <a href="/san-francisco/">San Francisco</a>\n'
-              f'    <a href="/san-francisco/{DISTRICTS_DIR}/">{DISTRICTS_TITLE}</a>\n'
+    crumbs = (f'    <a href="/san-francisco/">San Francisco</a>{CRUMB_SEP}\n'
+              f'    <a href="/san-francisco/{DISTRICTS_DIR}/">{DISTRICTS_TITLE}</a>{CRUMB_SEP}\n'
               f'    <span aria-current="page">{esc(short)}</span>')
     (dist_dir / "index.html").write_text(
         hub_shell(path, f"{name}, San Francisco", desc, crumbs, main_html,
@@ -4930,7 +4941,7 @@ def write_districts_index(index_dir: Path, listed: list, held_back: int) -> bool
             f"documented on Know This Place: {n_buildings:,} buildings across "
             f"{n_areas:,} neighborhoods, with register standing and periods of "
             f"significance, fully cited.")
-    crumbs = ('    <a href="/san-francisco/">San Francisco</a>\n'
+    crumbs = (f'    <a href="/san-francisco/">San Francisco</a>{CRUMB_SEP}\n'
               f'    <span aria-current="page">{DISTRICTS_TITLE}</span>')
     (index_dir / "index.html").write_text(
         hub_shell(f"/san-francisco/{DISTRICTS_DIR}/",
