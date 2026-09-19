@@ -138,6 +138,22 @@ rather than the other way round.
 The rebind is mechanical in either direction; the difference is which one you
 looked at while deciding.
 
+## Ship means both schemes
+
+*Tentative — one correction, from a pinned glass alpha that washed out over a
+light backdrop.*
+
+"Build dark first" settles which scheme a screen is composed in; it says
+nothing about what the other scheme receives. Everything that bypasses the
+derivation — a literal colour, a token pinned by hand, a transparency chosen
+against one backdrop — is a decision made in one scheme only, and it renders
+identically in the other, over a ground it was never judged against.
+
+So the check is not "derive the light variant" but "look at the finished
+screen under both schemes." Translucency over imagery is the usual failure:
+the alpha that reads as glass over a dark ground composites to mid-grey over
+a light one, taking every ink that was chosen for dark with it.
+
 ---
 
 ## Checks to run before committing to a rule that reads data
