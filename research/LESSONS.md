@@ -566,6 +566,21 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   repo has already read — a transposed digit in one document is often correct in
   another, and matching on a landmark number is an identification where matching
   on a street number would be a guess.*
+- **The landmark number is only an identification once the city's list
+  confirms it.** The statements get the number wrong as well as the address.
+  One volume calls St. Ignatius Church Landmark #172, which is St. Boniface.
+  Another calls Our Lady of Guadalupe No. 244, which is a Market Street
+  office block. Both numbers were published, one of them twice. An EAS-exact
+  address can also land on the wrong parcel under a right number: Calvary
+  Presbyterian on Alta Plaza Park, the Sentinel Building on the hotel across
+  Kearny Street, the Lilienthal-Pratt House on the neighbouring lot. Of 176
+  resolved findings naming one number, 19 disagreed with DataSF `97yj-54sx`'s
+  parcel. Most were harmless, stale APNs, and `3tsw-4idn` names them: it
+  carries `Article 10 Individual Landmark` on the finding's parcel as well.
+  *Before publishing a landmark number, look it up in `97yj-54sx`
+  (`?landmarkno=N`). Then check that `3tsw-4idn` carries the landmark token,
+  or the building's name, on the parcel you resolved.* The full breakdown is
+  in the sf-context-statements dossier.
 - **An abbreviated range is not a range.** Surveys print "1843-47" and
   "1761-65" for 1843–1847 and 1761–1765, dropping the digits that don't change.
   `resolve_eas.py` read the pair literally, expanded 47→1843, and reported the

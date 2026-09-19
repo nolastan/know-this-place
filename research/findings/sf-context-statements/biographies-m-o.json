@@ -2744,16 +2744,17 @@
       "confidence": "high",
       "resolution": {
         "status": "resolved",
-        "apn": "0607001",
-        "path": "/san-francisco/pacific-heights/jackson-street/2501/",
-        "eas_address": "2501 JACKSON ST",
-        "method": "EAS exact match on 2501 JACKSON ST → parcel 0607001; sf-parcels has blklot 0607001 active, 2501–2599 JACKSON; the 2025 roll records it as miscellaneous/mixed-use. EAS puts 2501, 2599 JACKSON ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2501. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls.",
-        "checked_on": "2026-09-02",
-        "note": "No page at this path yet; the parcel is the publisher's to seed."
+        "apn": "0587027",
+        "path": "/san-francisco/pacific-heights/fillmore-street/2515/",
+        "eas_address": "2515 FILLMORE ST",
+        "method": "Re-resolved by hand on the landmark number. EAS files 2501 JACKSON ST on 0607001, which 3tsw-4idn names ALTA PLAZA PARK and which carries no landmark; 97yj-54sx puts No. 103, Calvary Presbyterian Church, on 0587027 at 2501-2515 Fillmore Street & 2428-2515 Jackson Street, and 3tsw-4idn names 0587027 CALVARY PRESBYTERIAN CHURCH with the Article 10 landmark. EAS 2515 FILLMORE ST → 0587027.",
+        "checked_on": "2026-09-18",
+        "by_hand": true
       },
       "publish": {
         "status": "published",
-        "pr": "https://github.com/nolastan/know-this-place/pull/211"
+        "pr": "https://github.com/nolastan/know-this-place/pull/381",
+        "note": "First published by PR https://github.com/nolastan/know-this-place/pull/211 onto the Alta Plaza Park page at 2501 Jackson, the wrong parcel. PR https://github.com/nolastan/know-this-place/pull/381 removed it there. 2515 Fillmore already carried the McDougall Brothers credit and the 1900–1902 construction from nrhp-78000755, so what landed is the landmark: a 1978 designation entry for No. 103, cited to sf-planning-landmarks and this volume."
       }
     },
     {
@@ -6900,7 +6901,8 @@
       },
       "publish": {
         "status": "published",
-        "pr": "https://github.com/nolastan/know-this-place/pull/211"
+        "pr": "https://github.com/nolastan/know-this-place/pull/211",
+        "note": "Landmark check (2026-09-18): 97yj-54sx lists No. 122 at 965 Clay Street, apn 0224079; 3tsw-4idn names both 0224078 and 0224079 CLAY STREET CENTER and carries the Article 10 landmark on both. The landmark number is right and the parcel stands."
       }
     },
     {
@@ -8060,17 +8062,19 @@
       "confidence": "high",
       "resolution": {
         "status": "resolved",
-        "apn": "3555031N",
-        "path": "/san-francisco/mission/guerrero-street/327/",
-        "eas_address": "327 GUERRERO ST",
-        "method": "EAS exact match on 327 GUERRERO ST → parcel 3555031N; sf-parcels has blklot 3555031N active, 327–329 GUERRERO; the 2025 roll records it as multi-family residential, built 1941. EAS puts 327, 329 GUERRERO ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 327.",
-        "checked_on": "2026-09-02"
+        "apn": "3608076",
+        "path": "/san-francisco/mission/guerrero-street/827/",
+        "eas_address": "827 GUERRERO ST",
+        "method": "Re-resolved by hand on the landmark number. The source's 327 GUERRERO ST resolves to 3555031N, which carries no landmark and a 1941 roll year; 97yj-54sx puts No. 123, John McMullen Residence, on 3608076 at 827 Guerrero Street, and 3tsw-4idn names 3608076 MCMULLEN RESIDENCE with the Article 10 landmark. The printed 327 is 827 with one digit wrong.",
+        "checked_on": "2026-09-18",
+        "by_hand": true
       },
       "publish": {
-        "status": "declined",
-        "pr": "https://github.com/nolastan/know-this-place/pull/211",
-        "note": "Already carried: the page documents this building and credit from a survey or statement that reached it first."
-      }
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/381",
+        "note": "827 Guerrero already carried the Newsom addition (as 1890) and the landmark, so PR https://github.com/nolastan/know-this-place/pull/381 added only the disagreement to its unknowns. The same PR took the McMullen House off the 327 Guerrero page, where the Corbett Heights context statement had put it with the same wrong number (published in 841b799e7f, before findings files)."
+      },
+      "conflict": "The statement dates the Newsom additions to 1906 and places the house at 327 Guerrero Street; nrhp-83001231 dates the Newsom remodel to 1890, and it and 97yj-54sx place Landmark No. 123 at 827 Guerrero Street."
     },
     {
       "id": "biographies-m-o-0215",

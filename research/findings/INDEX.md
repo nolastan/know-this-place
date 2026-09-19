@@ -119,11 +119,11 @@ sit in — the three it touched most, and how many in all.
 | `sf-context-statements/african-american-hcs.json` | 248 | 512 KB | 1853–2024 | 184 | 180 | `bayview-hunters-point`, `western-addition`, `pacific-heights` +26 |
 | `sf-context-statements/biographies-a-c.json` | 412 | 836 KB | 1878–2020 | 353 | 317 | `pacific-heights`, `presidio-heights`, `financial-district` +35 |
 | `sf-context-statements/biographies-d-f.json` | 208 | 445 KB | 1888–1990 | 190 | 137 | `pacific-heights`, `sunset-parkside`, `north-beach` +26 |
-| `sf-context-statements/biographies-g-i.json` | 176 | 363 KB | 1878–2005 | 145 | 115 | `sunset-parkside`, `pacific-heights`, `financial-district` +25 |
-| `sf-context-statements/biographies-j-l.json` | 125 | 262 KB | 1889–1990 | 105 | 91 | `pacific-heights`, `sunset-parkside`, `glen-park` +21 |
-| `sf-context-statements/biographies-m-o.json` | 247 | 485 KB | 1880–1994 | 212 | 158 | `pacific-heights`, `west-of-twin-peaks`, `nob-hill` +27 |
+| `sf-context-statements/biographies-g-i.json` | 176 | 364 KB | 1878–2005 | 145 | 115 | `sunset-parkside`, `pacific-heights`, `financial-district` +25 |
+| `sf-context-statements/biographies-j-l.json` | 125 | 263 KB | 1889–1990 | 105 | 91 | `pacific-heights`, `sunset-parkside`, `glen-park` +21 |
+| `sf-context-statements/biographies-m-o.json` | 247 | 486 KB | 1880–1994 | 212 | 159 | `pacific-heights`, `west-of-twin-peaks`, `nob-hill` +27 |
 | `sf-context-statements/biographies-p-r.json` | 223 | 434 KB | 1884–1995 | 187 | 126 | `pacific-heights`, `north-beach`, `sunset-parkside` +23 |
-| `sf-context-statements/biographies-s-u.json` | 152 | 283 KB | 1897–2020 | 110 | 75 | `sunset-parkside`, `financial-district`, `pacific-heights` +23 |
+| `sf-context-statements/biographies-s-u.json` | 152 | 284 KB | 1897–2020 | 110 | 75 | `sunset-parkside`, `financial-district`, `pacific-heights` +23 |
 | `sf-context-statements/biographies-v-z.json` | 96 | 185 KB | 1875–1982 | 82 | 43 | `pacific-heights`, `south-of-market`, `sunset-parkside` +24 |
 | `sf-context-statements/carnegie-libraries.json` | 2 | 6 KB | 1890–1908 | 1 | 1 | `mission` |
 | `sf-context-statements/clubs-social-halls.json` | 53 | 103 KB | 1877–1984 | 45 | 38 | `nob-hill`, `chinatown`, `mission` +19 |
@@ -148,7 +148,7 @@ sit in — the three it touched most, and how many in all.
 | `sf-context-statements/oceanside-hcs.json` | 32 | 75 KB | 1901–2010 | 20 | 20 | `sunset-parkside` |
 | `sf-context-statements/parkside-hcs.json` | 160 | 412 KB | 1892–2008 | 151 | 147 | `sunset-parkside`, `west-of-twin-peaks` |
 | `sf-context-statements/ppie-marina-hcs.json` | 109 | 263 KB | 1893–2022 | 88 | 86 | `marina`, `tenderloin`, `nob-hill` +1 |
-| `sf-context-statements/progressive-era-styles.json` | 69 | 151 KB | 1889–1936 | 64 | 63 | `sunset-parkside`, `pacific-heights`, `marina` +19 |
+| `sf-context-statements/progressive-era-styles.json` | 69 | 152 KB | 1889–1936 | 64 | 63 | `sunset-parkside`, `pacific-heights`, `marina` +19 |
 | `sf-context-statements/russian-american-hcs.json` | 365 | 556 KB | 1852–2020 | 199 | 177 | `inner-richmond`, `pacific-heights`, `outer-richmond` +19 |
 | `sf-context-statements/russian-hill-hcs.json` | 109 | 255 KB | 1857–2006 | 67 | 57 | `russian-hill`, `pacific-heights`, `nob-hill` +5 |
 | `sf-context-statements/sexual-identity-subcultures.json` | 188 | 347 KB | 1929–1993 | 148 | 114 | `south-of-market`, `mission`, `north-beach` +7 |
@@ -161,7 +161,7 @@ sit in — the three it touched most, and how many in all.
 | `sf-context-statements/umb-survey.json` | 200 | 428 KB | 1886–1990 | 167 | 159 | `mission`, `pacific-heights`, `nob-hill` +24 |
 | `sf-context-statements/van-ness-auto-row-forms.json` | 110 | 291 KB | 1906–1947 | 94 | 94 | `tenderloin`, `nob-hill`, `western-addition` +4 |
 | `sf-context-statements/van-ness-auto-row.json` | 453 | 916 KB | 1901–2010 | 352 | 352 | `tenderloin`, `nob-hill`, `western-addition` +6 |
-| `sf-context-statements/victorian-era-styles.json` | 45 | 106 KB | 1856–1984 | 43 | 37 | `pacific-heights`, `hayes-valley`, `haight-ashbury` +12 |
+| `sf-context-statements/victorian-era-styles.json` | 45 | 107 KB | 1856–1984 | 43 | 37 | `pacific-heights`, `hayes-valley`, `haight-ashbury` +12 |
 | `sf-environmental-review/address-in-title.json` | 109 | 222 KB | 1853–2010 | 74 | 73 | `nob-hill`, `east-cut`, `south-of-market` +16 |
 | `sf-environmental-review/downtown-1975-1982.json` | 120 | 227 KB | 1851–1983 | 78 | 73 | `financial-district`, `union-square`, `east-cut` +3 |
 | `sf-environmental-review/downtown-1983-1991.json` | 110 | 221 KB | 1854–1991 | 77 | 59 | `east-cut`, `financial-district`, `chinatown` +5 |
