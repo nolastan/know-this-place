@@ -54,6 +54,24 @@ document you are about to mine.
   `property_location` — 287–289 Union — is what caught it.
 - **A statement contradicts itself often enough to plan for it.** State the
   disagreement in the page's `unknowns`; never adjudicate.
+- **A printed landmark number is a claim to check, not an identification.**
+  A 2026-09-18 audit compared every resolved finding naming one City Landmark
+  number (176) with the parcel DataSF `97yj-54sx` gives that number. 19
+  disagreed. Twelve were stale or split parcels: `3tsw-4idn` carried the
+  Article 10 landmark on the finding's parcel too, or the list's APN was
+  retired. Two were the wrong number. The biographies D–F volume calls St.
+  Ignatius Church #172, which is St. Boniface, and St. Ignatius is on no list.
+  The Progressive Era statement calls Our Lady of Guadalupe No. 244, which is
+  the Dressler Building; the church is No. 204. Four were the wrong parcel,
+  with the right number: Calvary Presbyterian at "2501 Jackson" (EAS: Alta
+  Plaza Park); the Sentinel Building at "935–951 Kearny" (the Saint Paul Hotel
+  across the street); the McMullen House at "327 Guerrero", printed that way by
+  two statements, for 827; and the Lilienthal-Pratt House at "1820 California",
+  a separate parcel from the 1818 house. The Crown Zellerbach Building was the
+  nineteenth (PR #380). *Check the number against `97yj-54sx`. Check the
+  parcel against `3tsw-4idn`'s `name` and its `Article 10 Individual Landmark`
+  token. A number that matches both identifies the building. A number that
+  matches neither is the source's error, so record it in `unknowns`.*
 - **Condominium parcels take out a large slice of any Mission-area
   inventory** — 31 of the Market & Octavia addresses and 5 of the 18
   individually eligible Mission Dolores properties.

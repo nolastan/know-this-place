@@ -925,7 +925,9 @@ def _uncited_sources(doc: dict) -> set[str]:
     for key in ("historical_record", "timeline"):
         for entry in (doc.get(key) or []):
             if isinstance(entry, dict) and entry.get("source"):
-                cited.add(entry["source"])
+                src = entry["source"]
+                # An entry may cite several sources at once.
+                cited.update(src if isinstance(src, list) else [src])
     return {c for c in cited if c not in declared}
 
 
