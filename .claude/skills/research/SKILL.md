@@ -153,7 +153,20 @@ python3 research/tools/check.py --report research/findings/<id>/<batch>.json
 Pages created and edited per neighborhood is what a reader wants first, and it
 is what a 150-file diff hides. Only findings that reached a parcel can be in it
 — the neighborhood belongs to the parcel, not the street — so unresolved
-findings are counted in one line below it rather than guessed into a row. See
+findings are counted in one line below it rather than guessed into a row.
+
+**Most of the body is about what was added and updated.** Below the table, name
+the buildings and what each page gained: new pages, credits, dated events,
+notable past residents, corrected dates, stated conflicts. What didn't land gets
+one line: the counts and their largest reason. The per-reason detail belongs in
+the findings file, the dossier and the follow-up issue.
+
+**Put anything a human has to decide, follow up or weigh in a GitHub alert**,
+one per item. Use `[!NOTE]` for a follow-up that's already filed and `[!TIP]`
+for an optional next step. Use `[!IMPORTANT]` for a decision someone has to
+make. Use `[!WARNING]` for a published fact that may be wrong. Use `[!CAUTION]`
+for a risk that's expensive to undo: a possible current resident, licensing, or
+a source id change. Don't use alerts for anything else. See
 [The PR body](../../../research/RUNBOOK.md#the-pr-body).
 
 Report what you did the same way: counts, plainly. Zero findings, reported

@@ -569,10 +569,38 @@ the honest shape. Do not invent a neighborhood for them from the street name —
 a street runs through several, which is the same mistake `--area-from-nhood`
 exists to prevent.
 
-Below the table, say what did *not* resolve and why, grouped by reason. A reader
-who sees "26 no EAS record, 9 ranges now split across parcels, 5 condominiums"
-learns what the source is like; a reader who sees "41 unresolved" learns
-nothing.
+**Below the table, say what was added and updated** — most of the body belongs
+here. Name the buildings, and what each page gained: a new page, an architect
+or builder credit, a dated event, a notable past resident, a corrected date, a
+stated conflict. Lead with the facts a reader would stop for. "The 1977 Section
+504 sit-in on 50 UN Plaza's page; Julia Morgan credited on four Vallejo Street
+houses; three new pages on Macondray Lane" says what the site now knows. "102
+facts published" does not.
+
+**What didn't land gets one line**, after that: the unresolved and declined
+counts and their largest reason ("28 unresolved, half of them condominiums
+waiting on #228"). No list per reason and no list of addresses. The full
+account belongs in the findings file's `resolution` fields, the dossier's
+coverage note and the follow-up issue. The PR is about the change.
+
+**Anything a human has to decide, follow up or weigh goes in a GitHub alert**,
+so a reviewer can find it without reading the whole body. Use one alert per
+item, keep each to a sentence or two, and don't use them for anything else:
+
+```markdown
+> [!IMPORTANT]
+> 1 Florence Street is waiting on #228 for Dixon and Lange's first cottage — decide there which condo parcel carries it.
+```
+
+| alert | use it for |
+|---|---|
+| `[!NOTE]` | a follow-up that's already filed. For example, "the unread 1990s listings are filed as an issue". |
+| `[!TIP]` | a suggested next step that no one has to take. For example, "the Paris Block form also covers the rear cottages, which would make a cheap next batch". |
+| `[!IMPORTANT]` | a decision the reviewer has to make, or that has to be made before the work can continue: two sources that disagree and need a call, a parcel choice the tool couldn't make, a scope question. |
+| `[!WARNING]` | something on a published page that may be wrong and needs checking, such as a fact that may sit on the wrong sibling parcel or a date taken over the assessor's. |
+| `[!CAUTION]` | a risk that would be expensive to undo: a name that might be a current resident or owner (rule 3), a licensing or terms-of-use doubt about the source, a change to a source `id`. |
+
+A run with nothing to decide has no alerts. Don't invent one.
 
 ---
 
