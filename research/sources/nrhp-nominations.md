@@ -4,9 +4,9 @@
 > [../LESSONS.md](../LESSONS.md) · register:
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id `nrhp-nominations`.
 >
-> - **Kind:** PDF reports (federal nomination forms) · **Tier:** primary · **Status:** open
+> - **Kind:** PDF reports (federal nomination forms) · **Tier:** primary · **Status:** done
 > - **Search-invisibility:** high — the listings are indexed everywhere; the forms are not. A search for a street number returns the Wikipedia list entry and the NPS map pin, never the paragraph inside the PDF that dates the building and names its architect.
-> - **Coverage:** every San Francisco listing with a text layer is read — all certified through 2023, including three the NPS index returns only by envelope, plus the Civic Center district the index omits and the Uptown Tenderloin Historic District (08001407) in full. The 2020-2023 listings are read from OHP's drafts, since npgallery serves them a placeholder. 1,356 findings, 1,203 resolved, 1,144 published. Unread: 77000334 and 01000281 (no text layer).
+> - **Coverage:** every San Francisco listing in the NPS index is read — all certified through 2023, including three the index returns only by envelope, plus the Civic Center district the index omits and the Uptown Tenderloin Historic District (08001407) in full. The 2020-2023 listings are read from OHP's drafts and 77000334 from the National Archives scan, since npgallery serves both a placeholder. One listing could not be read anywhere: 01000281 (San Francisco Maritime National Historic Site) is undigitized at NPS and its NARA file holds only a locator card recording the missing folder. 1,364 findings, 1,210 resolved, 1,151 published.
 > - **Local corpus:** `research/corpora/nrhp-nominations/` (one PDF and one `.txt` per reference number, plus `index-san-francisco.json` and `state.json`)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -136,9 +136,16 @@ hope for — a dated move with the trade press quoted:
   Francisco, "1382" for 1882, "Emd Sales" for Enid Sales, checkbox glyphs
   scattered through every line. A year read out of running prose needs the
   `SPECIFIC DATE(S)` field or a second sentence to confirm it.
-- **One document in the first batch has no text layer at all**: 77000334, the
-  Mills Building and Tower. `pdftotext` returns 76 characters. It needs OCR or
-  a person.
+- **One document in the first batch served no text at all**: 77000334, the
+  Mills Building and Tower — `pdftotext` returned 76 characters, which turned
+  out to be the "not yet been digitized" placeholder rather than an image-only
+  scan. **The National Archives catalog is the fallback**: its digitized
+  National Register records for California hold the scan as
+  `catalog.archives.gov/medialz/electronic-records/rg-079/NPS_CA/<refnum>.pdf`
+  (search `catalog.archives.gov/proxy/records/search?q=<refnum>` for the item,
+  "California SP ‹name›"), and its text layer is usable. It was read there in
+  the thirteenth run. The same check on 01000281 found only the WASO locator
+  card — the nomination folder is missing from the archive's holdings too.
 - **Half of every nomination is not about this building.** Sections 9 and 10
   are bibliography and boundary description, and the significance section
   routinely reaches for comparisons at other addresses — the Whittier Mansion's
@@ -284,9 +291,12 @@ URL. Worked example:
   and **all 11 listings certified 2020-2023**, read from the drafts the
   California Office of Historic Preservation posted
   ([`listed-2020-2023.json`](../findings/nrhp-nominations/listed-2020-2023.json)).
-- **Not read, and this is the queue in order:**
-  1. **77000334** (Mills Building and Tower) and **01000281** (Maritime
-     National Historic Site, Fort Mason), whose PDFs have no text layer.
+- **Read, closing the queue:** **77000334** (Mills Building and Tower), read
+  from the National Archives scan — npgallery serves it the undigitized
+  placeholder ([`mills-building-and-tower.json`](../findings/nrhp-nominations/mills-building-and-tower.json)).
+  **01000281** (Maritime National Historic Site, Fort Mason) is undigitized at
+  NPS and missing from its NARA file — recorded as a stub in the same batch,
+  needs-human if the nomination is ever to be read.
 - **Never guess a reference number.** 08001407 is the Uptown Tenderloin
   Historic District. 08000209 — a plausible guess for an early-2008 San
   Francisco listing — downloads with HTTP 200 and serves 154 pages of nomination
@@ -365,6 +375,25 @@ URL. Worked example:
   `sfplanning.s3.amazonaws.com/commissions/hpcpackets/`) carries the whole
   draft as an exhibit — 2020-008400CRV is Buon Gusto's.
 
+- **Verified:** 2026-09-19 (thirteenth run. The source is now read to
+  exhaustion: **77000334, the Mills Building and Tower**, recovered from the
+  National Archives' digitized California NRHP records — npgallery's `_text`
+  path serves the undigitized placeholder and the old pdfhost.focus.nps.gov
+  copy is dead, but NARA's catalog item "California SP Mills Building and
+  Tower" (NAID 123861210) carries the scanned form with a text layer at
+  `catalog.archives.gov/medialz/electronic-records/rg-079/NPS_CA/77000334.pdf`.
+  7 findings, all resolved, all published on the two parcels the listing
+  covers: the 1890 building at 200-232 Montgomery Street (0268008) and the
+  Mills Tower at 220 Bush Street (0268006). The nomination's "220 Montgomery
+  Street and 220 Bush Street" straddles two parcels — the address the index
+  prints is not one page. Also in this run, the route that worked: NARA's
+  catalog API is `catalog.archives.gov/proxy/records/search?q=<refnum>`; the
+  record's `digitalObjects` carry the PDF URL. **01000281** (San Francisco
+  Maritime National Historic Site, certified 1988) is not recoverable this
+  way: its NARA file (NAID 123861287) contains only the WASO locator card —
+  the folder itself is missing. Stub finding recorded; needs-human. Register
+  status moves to done: every listing in the index has been read or recorded
+  as missing.)
 - **Verified:** 2026-09-18 (twelfth run, same session as the eleventh. **All 11
   listings certified 2020-2023**: 100004868 Japanese YWCA, 100004869 Gran
   Oriente Filipino Hotel, 100005794 John A. Whelan House, 100005987 Mission
