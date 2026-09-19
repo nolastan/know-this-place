@@ -195,8 +195,10 @@ refresh of stale data:
    or not you think you needed to. Nearly everything it writes is gitignored;
    what it can leave in `git status` is `corpus.jsonl` and a hub `index.md`,
    and those you commit.
-7. **Put the page on the homepage if it is interesting** — see
-   [REFERENCE.md → The featured grid](REFERENCE.md#the-featured-grid).
+7. **The homepage is the news, and it is not yours to add to.** Its grid is
+   the twelve newest news entries on the site, kept by the news module; there
+   is no featured-addresses grid to put a page into. See
+   [REFERENCE.md → The homepage](REFERENCE.md#the-homepage).
 8. Run `python3 scripts/validate.py` and fix everything it flags.
 
 Never worth the effort: previewing the Street View embed, re-querying an API

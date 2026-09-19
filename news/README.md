@@ -76,8 +76,9 @@ Then, for anything worth keeping: write it into `news/items/<feed>/<date>.json`,
 resolve it with the research module's resolver, seed the parcel if it has no
 page yet, publish it as a timeline entry per [AGENTS.md](AGENTS.md) → "What an
 entry is", and put its card on the homepage's **In the news** grid per
-[PIPELINE.md](PIPELINE.md) → "The homepage grid". The grid holds
-the six newest entries on the site, and a story filed on a page nobody has a
+[PIPELINE.md](PIPELINE.md) → "The homepage grid". The grid holds the twelve
+newest entries on the site and is most of what the homepage is, each card also
+a pulsing dot on the map above it — and a story filed on a page nobody has a
 reason to open yet is a story nobody reads.
 
 ```bash

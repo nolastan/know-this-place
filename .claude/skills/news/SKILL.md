@@ -196,7 +196,7 @@ Everything else is in the module docs. These are the ones worth carrying:
   timeline entry; decline the duplicate and say in its note which one carries it.
 - **The page is only half of it.** An entry that never reached the homepage's
   news grid is not published — that grid is the only thing putting a day's news
-  where a reader will meet it. Six cards, newest first, ordered by the entry's
+  where a reader will meet it. Twelve cards, newest first, ordered by the entry's
   date.
 - **Derive the manifest's numbers from `resolution.method`, not from the
   story.** The resolver unions the addresses reached through retired APNs, so
@@ -229,7 +229,7 @@ that changes what a page looks like**.
   stales `research/findings/INDEX.md` — rebuild it with
   `python3 research/tools/check.py --index`.
 - `git diff` read through, and every change is a real fact about a building.
-- The homepage grid holds six cards and the newest are the six.
+- The homepage grid holds twelve cards and the newest are the twelve.
 - The PR lists every page touched and seeded, every story used, and the run's
   counts: **considered / queued / read / found / seeded / published / pending**.
 

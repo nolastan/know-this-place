@@ -13,7 +13,7 @@ Read a section. Don't read the file.
 | creating pages that don't exist yet | [Seeding a new area](#seeding-a-new-area) |
 | touching a historic-district page | [Historic districts](#historic-districts) |
 | deciding whether a parcel may be a page | [One page per building](#one-page-per-building) |
-| adding a card to the homepage | [The featured grid](#the-featured-grid) |
+| touching the homepage | [The homepage](#the-homepage) |
 | wondering why the HTML is generated | [Why `index.html` is a build artifact](#why-indexhtml-is-a-build-artifact) |
 | writing prose and want the worked examples | [Writing pages — the examples](#writing-pages--the-examples) |
 
@@ -572,44 +572,25 @@ usually a stale `http.server` rooted in another worktree.
 
 ---
 
-## The featured grid
+## The homepage
 
-The `.place-cards` grid in the root `index.html` holds six featured addresses.
-(The grid above it, `.place-cards.news-cards`, is a different list on a
-different rule — the six newest news entries on the site, maintained by the
-news module; see [news/AGENTS.md](news/AGENTS.md). Nothing moves between the
-two.)
+The root `index.html` is hand-authored, and it is a map and then **In the
+news**: `.place-cards.news-cards`, the twelve newest news entries on the site,
+maintained by the news module and nothing else — see
+[news/PIPELINE.md → The homepage grid](news/PIPELINE.md#the-homepage-grid). The
+cards are also the map's data: each one is a pulsing dot on the map above.
 
-A page qualifies on two things: **a timeline reaching far back** (the earliest
-`date` across `historical_record` and `permits`) and **sources beyond the
-standard SF gov datasets** (any `sources` entry whose `id` is not `sf-*`, not
-`*-context-statement`, and not `central-soma-survey` — a newspaper, a book, a
-journal, an archive, a neighborhood newsletter).
+There is no featured-addresses grid to put a page you just wrote into. There was
+one, and the homepage now spends that room on the news instead, on the grounds
+that a story from this week is what brings a stranger back. A page earns its way
+onto the homepage by being the address a story is about, which is the news
+module's business, not the seeder's.
 
-**Judge the page on its own.** Do not audit the six that are there, do not rank
-the corpus, and do not go looking for something to displace: if the page you
-just wrote or updated clears both bars, drop a card and put it in. The bar is
-qualifying, not winning. This list is meant to turn over often — six cards is a
-sample of what the site holds, not a leaderboard, and wiping all six for six
-better ones in a single pass is a good outcome, not an overstep. Six is the
-only hard count; a stale list is the failure mode, not a churning one — and
-nothing generates or rebuilds this one, so it only ever changes because you
-changed it.
-
-**Which card to drop is a diversity question, and the only one you need to
-ask.** The six should read as six different parts of the city and six different
-kinds of evidence. So drop the card nearest the incoming one — same
-neighborhood first, and failing that the one leaning on the same source, the
-same era, or the same kind of building. Never run two cards from one
-neighborhood, and avoid three resting on the same book, survey or article.
-Downtown fills this list on the raw criteria if nothing pushes back, because
-that is where the early records are; a page from the avenues or the southeast
-that clears both bars is worth more here than a marginally older one from a
-neighborhood already on the list.
-
-A card is a link, a `<ktp-streetview>` whose `location` matches the page's
-`coordinates`, and the street address — **never a description.** The cards
-carry no commentary; the page they open is where the story is told.
+The one hand-kept list left on the page is the street hubs under **Browse by
+street** — the best-covered streets on the site, and what makes the map's
+no-JavaScript fallback ("every address is reachable through the links below")
+true. Add to it only when a street has genuinely become one of those, and keep
+the count where it is.
 
 ---
 
@@ -623,13 +604,11 @@ and whichever of `year` (`parcel.year_built`), `use` (`parcel.use`),
 they appear) and `hook` the page has. It exists so a question about the whole
 corpus — which Mission pages cite a non-`sf-*` source, which pages have a
 timeline reaching before 1900 — is a `grep`/`jq` pass over one file instead of
-a walk through every directory. It is what the featured-grid criteria above
-are meant to be checked against without opening 11,000-odd `data.json` files
+a walk through every directory, without opening 11,000-odd `data.json` files
 by hand:
 
 ```bash
-# Pages with a source that isn't a standard SF dataset or context statement —
-# the second qualifying bar for the featured grid.
+# Pages with a source that isn't a standard SF dataset or context statement.
 jq -c 'select(.sources | any(test("^sf-|-context-statement$|^central-soma-survey$") | not))' corpus.jsonl
 
 # Every page whose timeline reaches back before 1900.

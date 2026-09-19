@@ -211,11 +211,13 @@ The JSON and the markup an entry becomes, the manifest traps, and the rest of
 the publishing rules are in [PIPELINE.md → Rules that catch publishers
 out](PIPELINE.md#rules-that-catch-publishers-out).
 
-## The homepage carries the newest six
+## The homepage is the news
 
-A story that reaches a page reaches the homepage too — `.place-cards.news-cards`
-in the root [index.html](../index.html) holds the six most recent news entries
-on the site, newest first.
+A story that reaches a page reaches the homepage too. The root
+[index.html](../index.html) is a map and then **In the news** — the grid is the
+page's subject, under the `<h1>`, `.place-cards.news-cards`, holding the
+**twelve** most recent news entries on the site, newest first. Below it there is
+only a list of street hubs.
 
 **An entry is not published until its card is in.** The pages this module writes
 are mostly pages nobody has a reason to visit yet, on streets the site had never
@@ -223,13 +225,12 @@ heard of that morning; the homepage is the only thing that puts a day's news
 where a reader will actually meet it. A run that published an entry and left the
 grid alone left the job half done.
 
-Six, ordered by the entry's date, one card per page, and every rule above
+Twelve, ordered by the entry's date, one card per page, and every rule above
 applies to the card unchanged. **A backfilled entry is old by construction and
-usually sorts below all six**; leaving the grid alone is then the rule being
-followed, not a step skipped. **The `.place-cards` grid below it is not this
-module's** — featured addresses turn over by hand on the root
-[AGENTS.md](../AGENTS.md)'s criteria; never move a card between the two. The
-card's markup and the rest of the rules are in [PIPELINE.md → The homepage
+usually sorts below all twelve**; leaving the grid alone is then the rule being
+followed, not a step skipped. **The grid is also the map's data** — each card is
+a pulsing dot on the homepage map, read from the card itself. The card's markup
+and the rest of the rules are in [PIPELINE.md → The homepage
 grid](PIPELINE.md#the-homepage-grid).
 
 ## Being a good citizen
