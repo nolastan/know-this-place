@@ -73,8 +73,8 @@ Where a new fact goes. Full markup for each is in [BLOCKS.md](BLOCKS.md).
 
 | `data.json` | renders as | for |
 |---|---|---|
-| `address`, `coordinates` | `.hero` `<h1>` + `.sub`, `<ktp-map>`, `<ktp-streetview>` | identity and the locator band |
-| `parcel`, `historic_status` | `.tags` in the hero | categorical identity — type, stories, zoning, district |
+| `address`, `coordinates`, `building.name`, `sub_area` | `.hero` `<h1>` + `.sub`, `<ktp-map>`, `<ktp-streetview>` | identity and the locator band — a known name heads the page, with the address as `.sub`; an unnamed page is headed by the address with the building type as `.sub`; an alternative neighborhood designation (`sub_area`, or `AREA_SUB` for a whole directory) trails either |
+| `parcel`, `historic_status` | `.tags` in the hero | categorical identity — type, stories, zoning, district (the type is the `.sub` instead when the address heads the page) |
 | `parcel.year_built` | the first `.vtl` item | the year the building went up, on the rail with everything else dated |
 | `parcel`, `assessment` | `.stats` / `.stat` tiles | measurements: building area, lot area, rooms |
 | `assessment` land/improvement split | `.stack` inside `<ktp-figure>` | one total split in two, both parts labeled |

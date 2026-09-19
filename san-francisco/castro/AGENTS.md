@@ -12,10 +12,9 @@ assessor's roll says **Eureka Valley/Dolores Heights**, and everyone says
 the subtitle reads as though they are two different places.
 
 - The breadcrumb and directory always use **Castro**.
-- The `.sub` locality line is always exactly
-  `Castro (Eureka Valley) · San Francisco, CA <zip>` — the parenthetical is
-  what tells a reader the two names are the same place. Don't drop it, and
-  don't substitute a dataset's name for it.
+- The `.sub` line under the heading always ends `· Eureka Valley` — the
+  second name is what tells a reader the two names are the same place. Don't
+  drop it, and don't substitute a dataset's name for it.
 - The explanation lives once, on the neighborhood hub page. Don't repeat it
   on address pages.
 
@@ -58,9 +57,9 @@ with `--area corbett-heights`. Independently of that list, the seeder skips any
 parcel that already has a page anywhere on the site, so no building can end up
 with two.
 
-`AREA_SUB` in the script supplies this neighborhood's `.sub` line, so every
-generated page gets `Castro (Eureka Valley) · San Francisco, CA 94114`
-automatically. Don't hand-edit it onto a page.
+`AREA_SUB` in the script supplies this neighborhood's `.sub` designation, so
+every generated page gets the `· Eureka Valley` tail automatically. Don't
+hand-edit it onto a page.
 
 ## Orientation (context, not citable facts)
 

@@ -29,7 +29,7 @@ pattern, and always include `address` and non-empty `sources`:
   "address": "123 Example Street, San Francisco, CA 94114",
   "path": "/san-francisco/castro/example-street/123/",
   "hook": "One concrete sentence, under 22 words, for the street hub's list. No superlatives.",
-  "sub_area": "Optional. Overrides the neighborhood line under the address.",
+  "sub_area": "Optional. The smaller or better-known place the neighborhood goes by here — appended to the line under the heading, after the address or building type. The designation alone, never the parent neighborhood: \"Telegraph Hill\", not \"Telegraph Hill, North Beach\".",
   "apn": "0000-000",
   "coordinates": { "lat": 37.0, "lng": -122.0 },
   "parcel": { "year_built": 1904, "land_use": "...", "units": 2 },
