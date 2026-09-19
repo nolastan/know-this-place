@@ -91,7 +91,7 @@ customElements.define(
       const label = this.getAttribute("label") || "this address";
       const img = document.createElement("img");
       img.src =
-        "https://maps.googleapis.com/maps/api/streetview?size=640x480&scale=2&source=outdoor&location=" +
+        "https://maps.googleapis.com/maps/api/streetview?size=640x480&source=outdoor&location=" +
         encodeURIComponent(location) +
         "&key=" +
         encodeURIComponent(key);
@@ -130,15 +130,15 @@ const cssVar = (name) =>
 
    The basemap follows the reader's color scheme (the same two styles the
    homepage map uses) and re-renders if they switch mid-visit. */
-/* The band is ~1000 CSS px wide on a full-width page, so the image is asked
-   for at 1200x400 and @2x: `@2x` both doubles the pixels and draws labels and
-   roads at twice the size, so the picture is sharp on a hidpi screen and
-   correctly proportioned on an ordinary one. Zoom 17 rather than 16 because a
-   band this wide at 16 covers most of a mile — the parcel's own block has to
-   be the thing you see. On phones the same image is cropped to 16:9 by
+/* The band bleeds to the viewport's edges, so it is asked for at the Static
+   Images API's maximum width — 1280x400 and @2x: `@2x` both doubles the
+   pixels and draws labels and roads at twice the size, so the picture is
+   sharp on a hidpi screen and correctly proportioned on an ordinary one.
+   Zoom 16 keeps the parcel and its immediate block legible while letting the
+   band show the surrounding streets. On phones the same image is cropped by
    `object-fit`, so one request serves both layouts. */
-const MAP_ZOOM = 17;
-const MAP_SIZE = "1200x400@2x";
+const MAP_ZOOM = 16;
+const MAP_SIZE = "1280x400@2x";
 
 customElements.define(
   "ktp-map",

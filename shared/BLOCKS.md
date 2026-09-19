@@ -47,15 +47,29 @@ UPPERCASE = from this page's `data.json` / `shared/site-config.json`.
   <script type="application/ld+json"> { … "@type":"BreadcrumbList" … } </script>  <!-- see below -->
 </head>
 <body>
-<header class="site-header">
-  <a class="wordmark" href="/">Know This Place</a>
-  <nav class="breadcrumb" aria-label="Breadcrumb"> … crumbs … <span aria-current="page">744</span></nav>
-</header>
+<div class="map-shell">                      <!-- address pages only -->
+  <ktp-map …> … the locator band, bleeding to the viewport's top and side edges … </ktp-map>
+  <a class="map-brand" href="/">Know This Place</a>
+  <div class="map-id">
+    <nav class="breadcrumb" aria-label="Breadcrumb"> … crumbs, ancestors only … </nav>
+    <p class="crumb-meta">District 8 · Block 2752, Lot 016 · ZIP 94114</p>
+  </div>
+</div>
 <main> … COMPOSE BLOCKS … </main>
 <footer class="site-footer"> … sources · feedback-cta · colophon … </footer>
 </body>
 </html>
 ```
+
+Hub pages have no map, so they keep the old chrome — a `.site-header`
+holding the `.wordmark` link and the breadcrumb `<nav>` with its
+`aria-current` leaf. On an address page both ride on the map instead: the
+brand as a chip top-left, the crumb trail over a `.crumb-meta` line of parcel
+identifiers (district, block/lot, ZIP) in a frosted chip bottom-right. The
+identifiers render only there — never as a hero tag, a spec row, or in the
+`.sub` — and the trail names ancestors only, since the leaf is the page
+itself. The `BreadcrumbList` JSON-LD still carries all four items; that is
+what search reads, not the chip.
 
 Every page declares its structured data. An address page carries two blocks:
 `Place` (with `PostalAddress` + `GeoCoordinates`) and a `BreadcrumbList`
@@ -86,9 +100,11 @@ Not a template — the renderer reorders, drops, or repeats blocks to fit the
 building. A history-rich place might open with prose and photos; a plain one
 leans on the stat band and timeline. The default spine:
 
-1. `<ktp-map>` — the locator band, above everything else (see "Media").
+1. `.map-shell` — the locator band bleeding to the viewport's top and side
+   edges, with the brand chip and the `.map-id` chip riding on it (see
+   "Media"). It sits above `<main>`, not inside it.
 2. `.hero` — `<h1>`, `.sub`, `.tags`, and the facade card that
-   rides over the band.
+   rides over the band's lower-left edge.
 3. `.lead` — one or two sentences, and only for what no block below can
    carry. **Dropped entirely** when the blocks already say everything.
 4. `.stats` — the numbers every building has, as tiles (not sentences).
@@ -105,9 +121,10 @@ All classes are defined in `site.css`. Each heading names the block; the markup
 under it is what `render_html` emits.
 
 ### Hero — `.hero`
-Two columns (identity | facade card), stacks on mobile. It follows the locator
-band, and its media slot holds the `.media-lift` card that overlaps it — see
-"Media".
+Two columns (facade card | identity) on desktop, placed not reordered — the
+DOM keeps the identity first so a small screen and no-CSS still read it first.
+It follows the locator band, and its media slot holds the `.media-lift` card
+that overlaps the band's lower-left edge — see "Media".
 
 The `<h1>` is the building's name where a page records one (`building.name`),
 its street address where it doesn't — and the `<title>` and JSON-LD `name`
@@ -399,12 +416,15 @@ second headline. It trails the panel as `.district-also` until the design has
 an answer.
 
 ### Media — the locator band and the facade card
-An address page **opens with the map**: `<ktp-map>` is the first child of
-`<main>`, a band running the full width of the page frame *above* the `<h1>`.
-The facade then sits in the hero's media slot and **rides over the band's
-lower edge** — `.media-lift` pulls it up and gives it a shadow, so the card
-reads as pinned to the map behind it. Under 720px neither happens: the band
-crops to an ordinary frame and everything stacks.
+An address page **opens with the map**: `.map-shell` is the first element of
+`<body>`, and the `<ktp-map>` inside it bleeds to the viewport's top, right
+and left edges rather than stopping at the page frame. The page's chrome
+rides on it — the `.map-brand` chip top-left, the `.map-id` chip (crumb trail
+over parcel identifiers) bottom-right. The facade then sits in the hero's
+media slot and **rides over the band's lower-left edge** — `.media-lift`
+pulls it up and gives it a shadow, so the card reads as pinned to the map
+behind it. Under 720px none of this happens: the band crops to an ordinary
+16:9 frame and everything stacks.
 
 Both are `<ktp-*>` wrappers around a `.media` placeholder — always author the
 **placeholder**, never a raw `<img>` or iframe pointing at Google or Mapbox.
@@ -415,14 +435,21 @@ So imagery turns on across the whole site the day a key is set — with no page
 regeneration. Both wrappers take the same `location` and `label`, and
 `location` must equal `coordinates` in `data.json`.
 ```html
-<main>
+<div class="map-shell">
   <ktp-map location="LAT,LNG" label="ADDRESS">
     <figure class="media media-map">
       <div class="media-empty"><span class="ic ic-pin"></span><span>LAT, LNG</span>
         <small>A locator map appears here once a Mapbox token is configured.</small></div>
     </figure>
   </ktp-map>
+  <a class="map-brand" href="/">Know This Place</a>
+  <div class="map-id">
+    <nav class="breadcrumb" aria-label="Breadcrumb"> … ancestors only … </nav>
+    <p class="crumb-meta">District N · Block N, Lot N · ZIP N</p>
+  </div>
+</div>
 
+<main>
   <section class="hero">
     <div> … h1, .sub, .tags … </div>
     <ktp-streetview location="LAT,LNG" label="ADDRESS">
@@ -433,10 +460,12 @@ regeneration. Both wrappers take the same `location` and `label`, and
     </ktp-streetview>
   </section>
 ```
-`.media-map` is the 3:1 band frame; `.media-lift` is the 4:3 card that overlaps
-it. Both also zero the browser's `<figure>` margin, which is why they reach
-the edges of their slots — a plain `.media` figure (a committed photo) stays
-inset, and that is the existing behaviour, left alone. The map is a
+`.media-map` fills the shell edge to edge (3:1, capped at 30rem, no border or
+radius — a bleed is only a bleed if nothing frames it); `.media-lift` is the
+4:3 card that overlaps its lower-left corner. Both also zero the browser's
+`<figure>` margin, which is why they reach the edges of their slots — a plain
+`.media` figure (a committed photo) stays inset, and that is the existing
+behaviour, left alone. The map is a
 **locator**, not a data layer: it carries no parcel outline, no label, and no
 fact that isn't already on the page, so nothing is lost when it doesn't load.
 (A `<figcaption>` is optional — use it for a real photo's credit, not to repeat
