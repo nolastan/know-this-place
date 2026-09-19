@@ -430,8 +430,8 @@ const newsFeatures = () =>
     }];
   });
 
-const PULSE_MS = 2400;
-const PULSE_MAX = 2.4;
+const PULSE_MS = 2000;
+const PULSE_MAX = 4;
 const REDUCED_MOTION = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 /* News dots are the cool half of the site's warm/cool data pair, against the
@@ -472,7 +472,7 @@ const newsLayers = () => [
   },
 ];
 
-/* Subtle is the whole brief: one slow ring every couple of seconds, fading as
+/* One ring every two seconds, growing to four times the dot and fading as
    it grows. Mapbox has no animated paint, so the halo is repainted per frame —
    cheap at a dozen features, and parked whenever the map is off-screen or the
    tab is hidden rather than repainting the city under the fold. */
@@ -485,9 +485,10 @@ function pulse(map) {
       const k = (now % PULSE_MS) / PULSE_MS;          // 0 → 1, once a cycle
       map.setPaintProperty("news-pulse", "circle-radius",
         newsRadius(1 + (PULSE_MAX - 1) * k));
-      // Fading faster than it grows, so the ring is nearly gone by the time it
-      // is wide and dissolves rather than snapping back to the dot.
-      map.setPaintProperty("news-pulse", "circle-opacity", 0.3 * (1 - k) ** 1.6);
+      // Bright at the dot and fading as it grows, so the ring dissolves at its
+      // widest rather than snapping back — but slowly enough that it is still
+      // plainly visible halfway out, at city zoom among eight thousand dots.
+      map.setPaintProperty("news-pulse", "circle-opacity", 0.6 * (1 - k) ** 1.1);
     }
     frame = requestAnimationFrame(tick);
   };
@@ -596,7 +597,10 @@ async function init() {
 
   map.addControl(new mapboxgl.NavigationControl({ showCompass: false }), "top-right");
   map.on("style.load", () => addAddresses(map));
-  map.on("load", () => placeholder?.remove());
+  /* The pulse starts only once the map has loaded: it repaints every frame, and
+     a map that is always repainting never fires "load" — which is what takes
+     the placeholder down. */
+  map.on("load", () => { placeholder?.remove(); pulse(map); });
 
   /* The wheel zooms the map — no modifier key. That only works because the map
      hands the wheel back once the reader has scrolled past it: otherwise
@@ -607,8 +611,6 @@ async function init() {
   addEventListener("scroll", syncScrollZoom, { passive: true });
   syncScrollZoom();
   dark.addEventListener("change", (e) => map.setStyle(styleFor(e.matches)));
-
-  pulse(map);
 
   const popup = new mapboxgl.Popup({
     closeButton: false, closeOnClick: false, offset: 10,
