@@ -82,7 +82,7 @@ def check_html(html_path: Path, html: str, is_address: bool) -> None:
     if html_path.parent == ROOT:
         rel_dir = "/"
 
-    if '<link rel="stylesheet" href="/shared/site.css">' not in html:
+    if seed_pages.CSS_LINK not in html:
         err(html_path, "missing the shared stylesheet link")
     for link in ICON_LINKS:
         if link not in html:

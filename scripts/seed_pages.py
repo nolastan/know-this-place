@@ -42,6 +42,7 @@ from __future__ import annotations
 import argparse
 import collections
 import functools
+import hashlib
 import html
 import json
 import math
@@ -156,6 +157,12 @@ ICON_LINKS = """  <link rel="icon" href="/favicon.ico" sizes="32x32">
   <link rel="icon" href="/shared/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/shared/site.webmanifest">"""
+
+# The stylesheet link carries the file's content hash so a CSS change busts
+# the CDN cache on the next deploy. Keep the hash short; it only needs to change
+# when the file does.
+_CSS_HASH = hashlib.md5((ROOT / "shared" / "site.css").read_bytes()).hexdigest()[:8]
+CSS_LINK = f'  <link rel="stylesheet" href="/shared/site.css?v={_CSS_HASH}">'
 
 # Breadcrumb divider. Rendered as its own unlinked element so the chevron is
 # not inside the adjacent <a>.
@@ -3429,7 +3436,7 @@ def render_html(rec: dict) -> str:
   <meta name="description" content="{esca(desc)}">
   <link rel="canonical" href="{SITE}{rec['path']}">
 {ICON_LINKS}
-  <link rel="stylesheet" href="/shared/site.css">
+{CSS_LINK}
   <script type="module" src="/shared/site.js"></script>
 {ld_block(ld)}
 {ld_block(crumbs_ld)}
@@ -4250,7 +4257,7 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
   <meta name="description" content="{esca(desc)}">
   <link rel="canonical" href="{SITE}{path}">
 {ICON_LINKS}
-  <link rel="stylesheet" href="/shared/site.css">
+{CSS_LINK}
   <script type="module" src="/shared/site.js"></script>
 {ld_block(breadcrumb_ld([(city_name, f"/{ctx['city']}/"),
                          (area_name, f"/{ctx['city']}/{ctx['area']}/"),
@@ -4384,6 +4391,13 @@ def write_neighborhood_hub(area_dir: Path, ctx: dict) -> int:
 
     if html_path.exists():
         text = html_path.read_text(encoding="utf-8")
+        # Keep the committed hub's stylesheet link in sync with the shared
+        # stylesheet hash, since the <head> is not regenerated from scratch.
+        text, n_link = re.subn(
+            r'\s*<link rel="stylesheet" href="/shared/site\.css[^"]*">',
+            CSS_LINK, text)
+        if not n_link:
+            raise SystemExit(f"{html_path}: no stylesheet link to update")
         block = "\n".join(
             f'    <li><a href="{slug}/">{esc(disp)}</a><br>\n'
             f'      <span class="hook">{esc(hook)}</span></li>'
@@ -4655,7 +4669,7 @@ def hub_shell(path: str, title: str, desc: str, crumbs: str, main_html: str,
   <meta name="description" content="{esca(desc)}">
   <link rel="canonical" href="{SITE}{path}">
 {ICON_LINKS}
-  <link rel="stylesheet" href="/shared/site.css">
+{CSS_LINK}
   <script type="module" src="/shared/site.js"></script>{ld_blocks}
 </head>
 <body>
