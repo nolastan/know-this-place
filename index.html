@@ -439,8 +439,10 @@ const REDUCED_MOTION = matchMedia("(prefers-reduced-motion: reduce)").matches;
    rather than a new color invented for the map. They are also drawn a size
    larger, because color alone would not find a dozen dots in eight thousand at
    city zoom. */
-const newsRadius = (scale) => ["*", scale,
-  ["interpolate", ["linear"], ["zoom"], 10, 2.6, 12, 3.4, 14, 5, 16, 8, 18, 11]];
+const newsRadius = (scale) => ["interpolate", ["linear"], ["zoom"],
+  // Scaled stop by stop: Mapbox only accepts ["zoom"] at the top level of an
+  // interpolate, so ["*", scale, interpolate] is rejected and the layer is lost.
+  ...[[10, 2.6], [12, 3.4], [14, 5], [16, 8], [18, 11]].flatMap(([z, r]) => [z, r * scale])];
 
 const newsLayers = () => [
   /* The halo. Its radius and opacity are driven frame by frame below; the
