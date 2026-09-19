@@ -106,6 +106,14 @@ blank frames for these pages; `getComputedStyle` on the real page confirmed the
 panel renders at 368px with the right sizes and colours in both schemes. Prefer
 the measurement either way — it is the check that catches a specificity bug.
 
+**Check both colour schemes — a literal colour is a pinned colour.** The token
+set is the only thing that follows `prefers-color-scheme`; every `rgb()`/`#…`
+written into `site.css` renders identically on both grounds. That is how the
+`.map-id` chip broke in light mode: its 0.55-alpha glass held over the dark
+basemap and composited to mid-grey over the light one, taking the pinned inks
+with it. Verify every ported module under both schemes, and treat each literal
+value as a decision that has to survive both grounds.
+
 **Hard-reload before believing a CSS result.** A stale `site.css` made the first
 verification pass look like a specificity failure when nothing was wrong.
 

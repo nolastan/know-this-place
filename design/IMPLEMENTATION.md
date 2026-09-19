@@ -34,6 +34,12 @@ names.
 
 Paper needs a second token set per scheme — see [PAPER.md](PAPER.md).
 
+A literal `rgb()`/`#…` in `site.css` resolves identically under both schemes —
+pinning is done with a literal, and only the token set follows
+`prefers-color-scheme`. (The `.map-id` chip broke this way: the dark tokens
+pinned as literals, illegible over the light basemap.) Every literal colour
+therefore has to hold against both grounds, not just the one it was chosen on.
+
 ## Type
 
 | `site.css` | Stack | In Paper |

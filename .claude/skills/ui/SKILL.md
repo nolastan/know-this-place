@@ -35,6 +35,9 @@ adding one.
   stylesheet.
 - `index.html` on an address page is generated. Change the generator in
   [`scripts/seed_pages.py`](../../../scripts/seed_pages.py), then re-render.
+- Check both colour schemes. Only the token set follows
+  `prefers-color-scheme`; a literal `rgb()`/`#…` renders identically in both,
+  so verify the change in light and dark before finishing.
 - Run `python3 scripts/validate.py` before you finish.
 - The root [AGENTS.md](../../../AGENTS.md) binds without exception.
 
