@@ -54,3 +54,4 @@ fills it.
   one row per run of days ("Tue–Thu", "Sat, Sun", "Daily"), 12-hour times,
   days the listing omits as a "Closed" row, and a `--muted` "Last updated" line
   under the last merchant.
+- `2026-09-18` **Homepage story shown under an address page's hero (`.news-now`)** — the contract says never state a fact twice, but not whether a temporary pointer to a timeline entry counts; guessed that it doesn't, and kept the entry on the rail. No rule for which surface a news callout uses; guessed the community note's strip with the `--cool` rule, the homepage map's news hue.

@@ -85,7 +85,6 @@
       font-family: var(--serif); font-size: 0.95rem; line-height: 1.35;
     }
     .map-newscard small { display: block; margin-top: 0.2rem; color: var(--muted); }
-    .map-note { color: var(--muted); font-size: 0.9rem; margin: 0 0 1.25rem; }
 
     /* The news is the page's subject now, so its heading is the page's <h1>.
        It sits in the ordinary .section-head band at h2's size: the rank is
@@ -124,25 +123,22 @@
     .news-cards .card-news {
       margin: 0.2rem 0 0; font-size: 0.95rem; line-height: 1.4;
     }
-    .news-cards .card-news a:hover { color: var(--accent); }
-    /* The one link on this page that leaves the site says so. Muted and a size
-       down: an affordance at the end of the headline, not a mark on it.
-       An inline-block is a break opportunity all by itself, so a headline that
-       filled its last line left the icon stranded alone on the next one — a
-       non-breaking space does not stop that. .card-ext holds the space and the
-       icon in a nowrap box with no whitespace before it, which leaves the
-       browser nowhere to break but ahead of the last word, so the word and its
-       icon travel together. */
-    .news-cards .card-news .card-ext { white-space: nowrap; }
-    .news-cards .card-news .ic { font-size: 0.85em; color: var(--muted); }
-    .news-cards .card-news a:hover .ic { color: var(--accent); }
+    .news-cards .card-news em { display: block; }
+    /* The one link on the card that leaves the site is the outlet's name, not
+       the headline. The picture and the address are one link to the building's page,
+       and a third link that looked like them but went to another site was a
+       guess every time; a publication's name reads as a place to go. It is
+       sized to its text so the rest of the line isn't a hidden link. The icon
+       says it leaves: muted and a size down, an affordance rather than a mark.
+       .card-ext holds the space and the icon in a nowrap box with no whitespace
+       before it, so the icon cannot be stranded alone on a line of its own. */
     .news-cards .card-outlet {
-      display: block; margin-top: 0.15rem;
+      width: fit-content; margin-top: 0.15rem;
       font-family: var(--sans); font-size: 0.8rem; color: var(--muted);
     }
-    /* The address is its own link here, not a span inside one, so the hover
-       rule above it can't reach it. */
-    .news-cards .card-label:hover { color: var(--accent); }
+    .news-cards .card-outlet:hover { color: var(--accent); }
+    .news-cards .card-outlet .card-ext { white-space: nowrap; }
+    .news-cards .card-outlet .ic { font-size: 0.85em; }
 
     /* Street hubs. One line each now that they carry no description, so the
        chevron between neighborhood and street recedes and the two links read
@@ -177,9 +173,6 @@
        reads these cards for the coordinates, the headline and the outlet, and
        draws each one as a pulsing dot with the story in its hovercard. There
        is no second file to keep in step — edit the cards and the map follows. -->
-  <p class="map-note">Each of these is one of the pulsing dots on the map above.
-  Hover a dot to read the story; every other dot is an address the site has
-  documented.</p>
   <ul class="place-cards news-cards">
     <li>
       <a href="/san-francisco/mission-bay/kansas-street/300/">
@@ -191,9 +184,9 @@
             </div>
           </figure>
         </ktp-streetview>
+        <span class="card-label">300 Kansas Street</span>
       </a>
-      <a class="card-label" href="/san-francisco/mission-bay/kansas-street/300/">300 Kansas Street</a>
-      <p class="card-news"><a href="https://news.theregistrysf.com/lincoln-property-and-sabal-take-title-to-150000-sqft-showplace-square-production-building-at-300-kansas-street/"><em>Lincoln Property and Sabal Take Title to 150,000 SQFT Showplace Square Production Building at 300 Kansas Street</em><span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a><span class="card-outlet">The Registry</span></p></li>
+      <p class="card-news"><em>Lincoln Property and Sabal Take Title to 150,000 SQFT Showplace Square Production Building at 300 Kansas Street</em><a class="card-outlet" href="https://news.theregistrysf.com/lincoln-property-and-sabal-take-title-to-150000-sqft-showplace-square-production-building-at-300-kansas-street/">The Registry<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
     <li>
       <a href="/san-francisco/haight-ashbury/haight-street/1500/">
         <ktp-streetview location="37.77007,-122.447314" label="1500–1512 Haight Street">
@@ -204,9 +197,9 @@
             </div>
           </figure>
         </ktp-streetview>
+        <span class="card-label">1500–1512 Haight Street</span>
       </a>
-      <a class="card-label" href="/san-francisco/haight-ashbury/haight-street/1500/">1500–1512 Haight Street</a>
-      <p class="card-news"><a href="https://www.sfchronicle.com/sf/article/kexp-haight-ashbury-music-hub-22433742.php"><em>Exclusive: Building at one of S.F.’s most historic intersections is getting a transformation</em><span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a><span class="card-outlet">San Francisco Chronicle</span></p></li>
+      <p class="card-news"><em>Exclusive: Building at one of S.F.’s most historic intersections is getting a transformation</em><a class="card-outlet" href="https://www.sfchronicle.com/sf/article/kexp-haight-ashbury-music-hub-22433742.php">San Francisco Chronicle<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
     <li>
       <a href="/san-francisco/outer-richmond/geary-boulevard/5801/">
         <ktp-streetview location="37.780048,-122.481671" label="5801 Geary Boulevard">
@@ -217,9 +210,9 @@
             </div>
           </figure>
         </ktp-streetview>
+        <span class="card-label">5801 Geary Boulevard</span>
       </a>
-      <a class="card-label" href="/san-francisco/outer-richmond/geary-boulevard/5801/">5801 Geary Boulevard</a>
-      <p class="card-news"><a href="https://www.sfchronicle.com/food/restaurants/article/hi-nrg-coffee-opens-sf-22426484.php"><em>Their pop-up was the sceniest place to drink coffee in S.F. Their café, however, is just for locals</em><span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a><span class="card-outlet">San Francisco Chronicle</span></p></li>
+      <p class="card-news"><em>Their pop-up was the sceniest place to drink coffee in S.F. Their café, however, is just for locals</em><a class="card-outlet" href="https://www.sfchronicle.com/food/restaurants/article/hi-nrg-coffee-opens-sf-22426484.php">San Francisco Chronicle<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
     <li>
       <a href="/san-francisco/east-cut/1st-street/42/">
         <ktp-streetview location="37.790149,-122.398658" label="42–50 1st Street">
@@ -230,9 +223,9 @@
             </div>
           </figure>
         </ktp-streetview>
+        <span class="card-label">42–50 1st Street</span>
       </a>
-      <a class="card-label" href="/san-francisco/east-cut/1st-street/42/">42–50 1st Street</a>
-      <p class="card-news"><a href="https://sfyimby.com/2026/09/oceanwide-center-no-more-renderings-revealed-for-fifty-at-first-san-francisco.html"><em>Oceanwide Center No More, Renderings Revealed For Fifty at First, San Francisco</em><span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a><span class="card-outlet">San Francisco YIMBY</span></p></li>
+      <p class="card-news"><em>Oceanwide Center No More, Renderings Revealed For Fifty at First, San Francisco</em><a class="card-outlet" href="https://sfyimby.com/2026/09/oceanwide-center-no-more-renderings-revealed-for-fifty-at-first-san-francisco.html">San Francisco YIMBY<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
     <li>
       <a href="/san-francisco/mission/guerrero-street/500/">
         <ktp-streetview location="37.763013,-122.424098" label="500 Guerrero Street">
@@ -243,9 +236,9 @@
             </div>
           </figure>
         </ktp-streetview>
+        <span class="card-label">500 Guerrero Street</span>
       </a>
-      <a class="card-label" href="/san-francisco/mission/guerrero-street/500/">500 Guerrero Street</a>
-      <p class="card-news"><a href="https://missionlocal.org/2026/09/coreys-pizza-is-open-and-lowriders-are-coming-to-town/"><em>Corey’s Pizza is open and lowriders are coming to town</em><span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a><span class="card-outlet">Mission Local</span></p></li>
+      <p class="card-news"><em>Corey’s Pizza is open and lowriders are coming to town</em><a class="card-outlet" href="https://missionlocal.org/2026/09/coreys-pizza-is-open-and-lowriders-are-coming-to-town/">Mission Local<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
     <li>
       <a href="/san-francisco/glen-park/laidley-street/70/">
         <ktp-streetview location="37.740596,-122.431493" label="70 Laidley Street">
@@ -256,9 +249,9 @@
             </div>
           </figure>
         </ktp-streetview>
+        <span class="card-label">70 Laidley Street</span>
       </a>
-      <a class="card-label" href="/san-francisco/glen-park/laidley-street/70/">70 Laidley Street</a>
-      <p class="card-news"><a href="https://sfyimby.com/2026/09/renderings-revealed-for-70-74-laidley-street-san-francisco.html"><em>Renderings Revealed For 70-74 Laidley Street, San Francisco</em><span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a><span class="card-outlet">San Francisco YIMBY</span></p></li>
+      <p class="card-news"><em>Renderings Revealed For 70-74 Laidley Street, San Francisco</em><a class="card-outlet" href="https://sfyimby.com/2026/09/renderings-revealed-for-70-74-laidley-street-san-francisco.html">San Francisco YIMBY<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
     <li>
       <a href="/san-francisco/east-cut/3rd-street/395/">
         <ktp-streetview location="37.782896,-122.39758" label="395 Third Street">
@@ -269,9 +262,9 @@
             </div>
           </figure>
         </ktp-streetview>
+        <span class="card-label">395 Third Street</span>
       </a>
-      <a class="card-label" href="/san-francisco/east-cut/3rd-street/395/">395 Third Street</a>
-      <p class="card-news"><a href="https://sfyimby.com/2026/09/plans-refiled-for-395-3rd-street-in-soma-san-francisco.html"><em>Plans Refiled for 395 3rd Street in SoMa, San Francisco</em><span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a><span class="card-outlet">San Francisco YIMBY</span></p></li>
+      <p class="card-news"><em>Plans Refiled for 395 3rd Street in SoMa, San Francisco</em><a class="card-outlet" href="https://sfyimby.com/2026/09/plans-refiled-for-395-3rd-street-in-soma-san-francisco.html">San Francisco YIMBY<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
     <li>
       <a href="/san-francisco/mission/rhode-island-street/200/">
         <ktp-streetview location="37.766977,-122.403123" label="200 Rhode Island Street">
@@ -282,9 +275,9 @@
             </div>
           </figure>
         </ktp-streetview>
+        <span class="card-label">200 Rhode Island Street</span>
       </a>
-      <a class="card-label" href="/san-francisco/mission/rhode-island-street/200/">200 Rhode Island Street</a>
-      <p class="card-news"><a href="https://www.sfchronicle.com/realestate/article/sf-airbnb-lease-22417714.php"><em>Exclusive: Airbnb is expanding in S.F., leasing a landmark warehouse near its headquarters</em><span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a><span class="card-outlet">San Francisco Chronicle</span></p></li>
+      <p class="card-news"><em>Exclusive: Airbnb is expanding in S.F., leasing a landmark warehouse near its headquarters</em><a class="card-outlet" href="https://www.sfchronicle.com/realestate/article/sf-airbnb-lease-22417714.php">San Francisco Chronicle<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
     <li>
       <a href="/san-francisco/south-of-market/market-street/801/">
         <ktp-streetview location="37.785231,-122.406144" label="801–815 Market Street">
@@ -295,9 +288,9 @@
             </div>
           </figure>
         </ktp-streetview>
+        <span class="card-label">801–815 Market Street</span>
       </a>
-      <a class="card-label" href="/san-francisco/south-of-market/market-street/801/">801–815 Market Street</a>
-      <p class="card-news"><a href="https://hoodline.com/2026/09/uniqlo-sets-october-9-return-to-san-francisco-s-market-street-flagship/"><em>Uniqlo Sets October 9 Return to San Francisco's Market Street Flagship</em><span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a><span class="card-outlet">Hoodline</span></p></li>
+      <p class="card-news"><em>Uniqlo Sets October 9 Return to San Francisco's Market Street Flagship</em><a class="card-outlet" href="https://hoodline.com/2026/09/uniqlo-sets-october-9-return-to-san-francisco-s-market-street-flagship/">Hoodline<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
     <li>
       <a href="/san-francisco/south-beach/spear-street/121/">
         <ktp-streetview location="37.791888,-122.392751" label="121 Spear Street">
@@ -308,9 +301,9 @@
             </div>
           </figure>
         </ktp-streetview>
+        <span class="card-label">121 Spear Street</span>
       </a>
-      <a class="card-label" href="/san-francisco/south-beach/spear-street/121/">121 Spear Street</a>
-      <p class="card-news"><a href="https://www.sfchronicle.com/food/restaurants/article/yank-sing-rincon-center-sf-closing-22431164.php"><em>A 68-year-old S.F dim sum institution will close its largest location</em><span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a><span class="card-outlet">San Francisco Chronicle</span></p></li>
+      <p class="card-news"><em>A 68-year-old S.F dim sum institution will close its largest location</em><a class="card-outlet" href="https://www.sfchronicle.com/food/restaurants/article/yank-sing-rincon-center-sf-closing-22431164.php">San Francisco Chronicle<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
     <li>
       <a href="/san-francisco/east-cut/howard-street/405/">
         <ktp-streetview location="37.788609,-122.395376" label="405 Howard Street">
@@ -321,9 +314,9 @@
             </div>
           </figure>
         </ktp-streetview>
+        <span class="card-label">405 Howard Street</span>
       </a>
-      <a class="card-label" href="/san-francisco/east-cut/howard-street/405/">405 Howard Street</a>
-      <p class="card-news"><a href="https://news.theregistrysf.com/pwc-locks-in-200000-sqft-at-405-howard-in-san-francisco-through-2040/"><em>PwC Locks In 200,000 SQFT at 405 Howard in San Francisco Through 2040</em><span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a><span class="card-outlet">The Registry</span></p></li>
+      <p class="card-news"><em>PwC Locks In 200,000 SQFT at 405 Howard in San Francisco Through 2040</em><a class="card-outlet" href="https://news.theregistrysf.com/pwc-locks-in-200000-sqft-at-405-howard-in-san-francisco-through-2040/">The Registry<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
     <li>
       <a href="/san-francisco/east-cut/mission-street/536/">
         <ktp-streetview location="37.789249,-122.398893" label="536 Mission Street">
@@ -334,9 +327,9 @@
             </div>
           </figure>
         </ktp-streetview>
+        <span class="card-label">536 Mission Street</span>
       </a>
-      <a class="card-label" href="/san-francisco/east-cut/mission-street/536/">536 Mission Street</a>
-      <p class="card-news"><a href="https://news.theregistrysf.com/sf-planning-commission-oks-tower-on-former-golden-gate-university-campus-caps-office-allocation-below-developers-ask/"><em>SF Planning Commission OKs Tower on Former Golden Gate University Campus, Caps Office Allocation Below Developer’s Ask</em><span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a><span class="card-outlet">The Registry</span></p></li>
+      <p class="card-news"><em>SF Planning Commission OKs Tower on Former Golden Gate University Campus, Caps Office Allocation Below Developer’s Ask</em><a class="card-outlet" href="https://news.theregistrysf.com/sf-planning-commission-oks-tower-on-former-golden-gate-university-campus-caps-office-allocation-below-developers-ask/">The Registry<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
   </ul>
 
   <div class="section-head"><span class="ic ic-pin"></span><h2>Browse by street</h2></div>
@@ -423,9 +416,9 @@ const newsFeatures = () =>
       geometry: { type: "Point", coordinates: [lng, lat] },
       properties: {
         t: sv.getAttribute("label") ?? "",
-        p: li.querySelector("a.card-label")?.getAttribute("href") ?? "",
+        p: li.querySelector(".card-label")?.closest("a")?.getAttribute("href") ?? "",
         h: li.querySelector(".card-news em")?.textContent ?? "",
-        o: li.querySelector(".card-outlet")?.textContent ?? "",
+        o: li.querySelector(".card-outlet")?.textContent.trim() ?? "",
         // Where this dot sits in the pulse cycle, 0 → 1. Stepping by the golden
         // ratio spreads any number of dots evenly with no two neighbours in the
         // grid firing together, so the rings take turns instead of beating as one.

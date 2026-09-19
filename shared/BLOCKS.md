@@ -573,6 +573,25 @@ boilerplate on all 15,956 pages, and the real notes it carried — a source
 against the assessor, a source against itself — moved to the line that closes
 the timeline, against the dates they dispute. See "Timeline" above.
 
+### In the news — `.news-now`
+The story that put the building on the homepage, shown between the hero and the
+`.lead` for as long as its card is in the homepage's news grid. **Not a
+`data.json` key**: `news_now_html` reads the root `index.html`'s
+`.news-cards`, takes the card whose address link is this page's path, and finds
+the `historical_record` entry whose `url` is the card's outlet link. No card, or
+no matching entry, and nothing renders. The entry stays on the `.vtl` as well —
+this block is a pointer to the newest item on the rail for a reader arriving
+from the homepage, not a second record, and it goes away when the card does.
+The whole strip is one link to the article, full width like the stat band. So
+a change to the homepage grid changes these pages on the next render.
+```html
+<a class="news-now" href="https://www.sfchronicle.com/…">
+  <span class="news-now-kicker">September 17, 2026</span>
+  <span class="news-now-head"><em>Exclusive: Building at one of S.F.’s most historic intersections is getting a transformation</em></span>
+  <span class="news-now-outlet">San Francisco Chronicle<span class="news-now-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></span>
+</a>
+```
+
 ### Nearby — `.nearby`
 The lateral links out of an address page: the documented buildings up and down
 the street, on the same assessor block, and around the corner. **Generated,
