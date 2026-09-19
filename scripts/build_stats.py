@@ -24,6 +24,7 @@ ignore it.
 Run from anywhere:  python3 scripts/build_stats.py
                     python3 scripts/build_stats.py --print   (numbers only)
 """
+import hashlib
 import json
 import re
 import subprocess
@@ -35,6 +36,9 @@ ROOT = Path(__file__).resolve().parent.parent
 CONFIG = json.loads((ROOT / "shared" / "site-config.json").read_text())
 SITE = CONFIG["site_url"].rstrip("/")
 REPO = CONFIG["repo_url"].rstrip("/")
+
+_CSS_HASH = hashlib.md5((ROOT / "shared" / "site.css").read_bytes()).hexdigest()[:8]
+CSS_LINK = f'<link rel="stylesheet" href="/shared/site.css?v={_CSS_HASH}">'
 
 ADDRESS_DIR = re.compile(r"^\d+[a-z]?$")  # 123, 123a — same as validate.py
 OUT = ROOT / "stats" / "index.html"
@@ -355,7 +359,7 @@ def render(s):
   <link rel="icon" href="/shared/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/shared/site.webmanifest">
-  <link rel="stylesheet" href="/shared/site.css">
+  {CSS_LINK}
   <script type="module" src="/shared/site.js"></script>
 </head>
 <body>

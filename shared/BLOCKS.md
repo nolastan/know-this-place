@@ -41,7 +41,7 @@ UPPERCASE = from this page's `data.json` / `shared/site-config.json`.
   <link rel="icon" href="/shared/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/shared/site.webmanifest">
-  <link rel="stylesheet" href="/shared/site.css">
+  <link rel="stylesheet" href="/shared/site.css?v=HASH">   <!-- HASH is the md5 of site.css, added by the renderer for cache busting -->
   <script type="module" src="/shared/site.js"></script>   <!-- enhancement layer -->
   <script type="application/ld+json"> { … "@type":"Place" … } </script>          <!-- see below -->
   <script type="application/ld+json"> { … "@type":"BreadcrumbList" … } </script>  <!-- see below -->
