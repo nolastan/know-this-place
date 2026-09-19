@@ -87,7 +87,7 @@ building. A history-rich place might open with prose and photos; a plain one
 leans on the stat band and timeline. The default spine:
 
 1. `<ktp-map>` — the locator band, above everything else (see "Media").
-2. `.hero` — `<h1>`, `.sub` locality line, `.tags`, and the facade card that
+2. `.hero` — `<h1>`, `.sub`, `.tags`, and the facade card that
    rides over the band.
 3. `.lead` — one or two sentences, and only for what no block below can
    carry. **Dropped entirely** when the blocks already say everything.
@@ -108,13 +108,23 @@ under it is what `render_html` emits.
 Two columns (identity | facade card), stacks on mobile. It follows the locator
 band, and its media slot holds the `.media-lift` card that overlaps it — see
 "Media".
+
+The `<h1>` is the building's name where a page records one (`building.name`),
+its street address where it doesn't — and the `<title>` and JSON-LD `name`
+follow the same choice. The `.sub` under it carries the other identity: the
+street address under a name, the building type under an address — and in that
+case the type does not also get a `.tags` chip, which would state it twice.
+Where the page stands in a smaller or better-known place than its
+neighborhood directory, the `.sub` ends with that designation
+(`sub_area`, or `AREA_SUB` for a whole neighborhood — the Castro's is
+"Eureka Valley").
 ```html
 <section class="hero">
   <div>
-    <h1>744 Castro Street</h1>
-    <p class="sub">Eureka Valley · San Francisco, CA 94114</p>
+    <h1>Castro Theater</h1>
+    <p class="sub">429–431 Castro Street · Eureka Valley</p>
     <ul class="tags">
-      <li class="tag"><span class="ic ic-home"></span>Two-flat Victorian</li>
+      <li class="tag"><span class="ic ic-home"></span>Theater</li>
       <li class="tag"><span class="ic ic-layers"></span>2 stories</li>
     </ul>
   </div>

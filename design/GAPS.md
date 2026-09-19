@@ -55,3 +55,4 @@ fills it.
   days the listing omits as a "Closed" row, and a `--muted` "Last updated" line
   under the last merchant.
 - `2026-09-18` **Homepage story shown under an address page's hero (`.news-now`)** — the contract says never state a fact twice, but not whether a temporary pointer to a timeline entry counts; guessed that it doesn't, and kept the entry on the rail. No rule for which surface a news callout uses; guessed the community note's strip with the `--cool` rule, the homepage map's news hue.
+- `2026-09-18` **Hero heading from `building.name`** — no rule for a name that only restates the address (8 towers like "101 Second Street"); guessed it is unnamed, so the address heads the page and the `.sub` carries the building type. Also no rule for whether the building-type `.tags` chip survives when the type becomes the `.sub`; guessed it doesn't, per never-state-a-fact-twice.

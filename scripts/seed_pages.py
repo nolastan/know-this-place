@@ -157,10 +157,11 @@ ICON_LINKS = """  <link rel="icon" href="/favicon.ico" sizes="32x32">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/shared/site.webmanifest">"""
 
-# The `.sub` locality line, per neighborhood. The Castro's parenthetical is
+# An alternative neighborhood designation, per neighborhood directory —
+# appended to the `.sub` after the address or building type. The Castro's is
 # required by san-francisco/castro/AGENTS.md — it is what tells a reader that
 # "Castro" and "Eureka Valley" name the same place.
-AREA_SUB = {("san-francisco", "castro"): "Castro (Eureka Valley)"}
+AREA_SUB = {("san-francisco", "castro"): "Eureka Valley"}
 
 # An analysis neighborhood can contain streets this site files under a
 # different neighborhood directory. Castro/Upper Market covers Corbett Heights,
@@ -1529,9 +1530,21 @@ def page_title(rec: dict) -> str:
     return rec["address"].split(",")[0]
 
 
+def building_name(rec: dict) -> str | None:
+    """The name the building is known by, for the hero's heading and the
+    `<title>` — where a page's research found one. A tower marketed under its
+    own address ("101 Second Street") has no name the heading adds, so it is
+    headed by the address like any unnamed page.
+    """
+    name = re.sub(r"\s+", " ", (rec.get("building") or {}).get("name") or "").strip()
+    return name if name and name.lower() != page_title(rec).lower() else None
+
+
 def meta_description(rec: dict) -> str:
     p = rec.get("parcel", {})
-    bits = [f"{page_title(rec)}, San Francisco:"]
+    name = building_name(rec)
+    where = f"{name} ({page_title(rec)})" if name else page_title(rec)
+    bits = [f"{where}, San Francisco:"]
     year = p.get("year_built")
     btype = building_type(p.get("property_class"), p.get("units")).lower()
     article = article_for(year, btype)
@@ -1557,8 +1570,11 @@ def tags_html(rec: dict) -> str:
     if named:
         out.append(("ic-pin", named))
     # No year built here: it is a dated fact, so it opens the timeline instead
-    # (see `built_item`).
-    out.append(("ic-home", building_type(p.get("property_class"), p.get("units"))))
+    # (see `built_item`). And no building-type tag on an address-headed page:
+    # the type is the `.sub` line under the address there, so a tag would
+    # state it twice. A page headed by the building's name keeps the tag.
+    if building_name(rec):
+        out.append(("ic-home", building_type(p.get("property_class"), p.get("units"))))
     if p.get("stories"):
         s = p["stories"]
         out.append(("ic-layers", f"{s} stor{'y' if s == 1 else 'ies'}"))
@@ -2731,16 +2747,16 @@ def glance_panel_html(rec: dict, indent: str) -> str:
     a = rec.get("assessment", {})
     b = rec.get("building") or {}
     rows = []
-    # Researched identity: the name the building goes by, who designed it, who
-    # built it. Single facts, so spec rows — never a paragraph each.
+    # Researched identity: who designed the building, who built it. Single
+    # facts, so spec rows — never a paragraph each. The name it goes by is not
+    # a row: where a page records one it is the hero's heading.
     # A published completion year that matches the assessor's is the same fact
     # twice — the timeline's "Built" entry already carries it. Show the row only
     # when the two disagree, and `unknowns` says so alongside.
     completed = b.get("completed")
     if completed and str(completed) == str(p.get("year_built")):
         completed = None
-    for icon, key, val in (("ic-home", "Known as", b.get("name")),
-                           ("ic-home", "Formerly", b.get("former_name")),
+    for icon, key, val in (("ic-home", "Formerly", b.get("former_name")),
                            ("ic-ruler", "Architect",
                             with_note(b.get("architect"), b.get("architect_note"))),
                            # A named builder with no named architect is the
@@ -3306,6 +3322,8 @@ def collection_ld(path: str, name: str, desc: str, items: list) -> dict:
 
 def render_html(rec: dict) -> str:
     title = page_title(rec)
+    name = building_name(rec)
+    heading = name or title
     desc = meta_description(rec)
     lat, lng = rec["coordinates"]["lat"], rec["coordinates"]["lng"]
     zip_code = rec["address"].rsplit(" ", 1)[-1]
@@ -3316,14 +3334,21 @@ def render_html(rec: dict) -> str:
     # The street name comes off the address itself, so rendering never has to
     # reverse-engineer a slug.
     street_name = title.split(" ", 1)[1]
-    # The line under the address names the neighborhood the page is filed
-    # under. `sub_area` overrides it for a building that sits in a smaller
-    # named place a reader would recognise first — Telegraph Hill inside North
-    # Beach, Jackson Square inside Chinatown, Alamo Square inside Hayes
-    # Valley. `AREA_SUB` cannot say it: it is keyed by directory, and these are
-    # true of some pages in the directory and not others.
-    sub_line = (rec.get("sub_area")
-                or AREA_SUB.get((city_slug, area_slug), area_name))
+    # The line under the heading is the building's other identity: a named
+    # building shows its street address there ("Castro Theater" over "429–431
+    # Castro Street"), a page headed by its address shows what the building is.
+    # A second clause names the smaller or better-known place the neighborhood
+    # is filed under or goes by — `sub_area` for one page ("Telegraph Hill"),
+    # `AREA_SUB` for a whole directory ("Eureka Valley" across the Castro).
+    # Each value is the alternative designation alone: the neighborhood itself
+    # is already in the breadcrumb, so "Union Square, Tenderloin" is stored
+    # as "Union Square".
+    sub_text = title if name else building_type(
+        rec.get("parcel", {}).get("property_class"),
+        rec.get("parcel", {}).get("units"))
+    sub_alt = rec.get("sub_area") or AREA_SUB.get((city_slug, area_slug))
+    if sub_alt:
+        sub_text += f" · {sub_alt}"
     # `address_range` comes in two shapes — the "100–102" string `build_record`
     # writes, and the {low, high, …} object a hand-edited page may carry. The
     # crumb and the JSON-LD both read it, so both go through `range_label`;
@@ -3370,7 +3395,7 @@ def render_html(rec: dict) -> str:
     ld = {
         "@context": "https://schema.org",
         "@type": "Place",
-        "name": title,
+        "name": heading,
         "url": f"{SITE}{rec['path']}",
         "address": {"@type": "PostalAddress", "streetAddress": street_addr_plain,
                     "addressLocality": city_name, "addressRegion": "CA",
@@ -3390,7 +3415,7 @@ def render_html(rec: dict) -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{esc(title)} — Know This Place</title>
+  <title>{esc(heading)} — Know This Place</title>
   <meta name="description" content="{esca(desc)}">
   <link rel="canonical" href="{SITE}{rec['path']}">
 {ICON_LINKS}
@@ -3411,7 +3436,7 @@ def render_html(rec: dict) -> str:
 </header>
 
 <main>
-  <ktp-map location="{lat},{lng}" label="{esca(title)}">
+  <ktp-map location="{lat},{lng}" label="{esca(heading)}">
     <figure class="media media-map">
       <div class="media-empty">
         <span class="ic ic-pin"></span>
@@ -3423,13 +3448,13 @@ def render_html(rec: dict) -> str:
 
   <section class="hero">
     <div>
-      <h1>{esc(title)}</h1>
-      <p class="sub">{esc(sub_line)} · {esc(city_name)}, CA {zip_code}</p>
+      <h1>{esc(heading)}</h1>
+      <p class="sub">{esc(sub_text)}</p>
       <ul class="tags">
 {tags_html(rec)}
       </ul>
     </div>
-    <ktp-streetview location="{lat},{lng}" label="{esca(title)}">
+    <ktp-streetview location="{lat},{lng}" label="{esca(heading)}">
       <figure class="media media-lift">
         <div class="media-empty">
           <span class="ic ic-pin"></span>
@@ -3452,7 +3477,7 @@ def render_html(rec: dict) -> str:
     </ul>
   </section>
   <p class="feedback-cta">
-    <a href="{feedback_url(title, rec['path'])}">Request an edit</a>
+    <a href="{feedback_url(heading, rec['path'])}">Request an edit</a>
   </p>
   <p class="colophon">Part of <a href="/">Know This Place</a>, a community
   encyclopedia of the built environment. Facts are cited; pages are reviewed
