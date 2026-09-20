@@ -34,7 +34,16 @@
       },
       "confidence": "high",
       "resolution": {
-        "status": "unresolved"
+        "status": "resolved",
+        "apn": "2693028",
+        "path": "/san-francisco/castro/18th-street/4355/",
+        "eas_address": "4355 18TH ST",
+        "method": "resolve_eas.py could not run: data.sf.gov is refused by this session's egress policy. Resolved instead from the site's own committed city data, which is the same EAS join: 4359 appears in street_numbers_on_parcel on exactly one page, /san-francisco/castro/18th-street/4355/ (parcel 2693028, 4355–4359 18th Street), whose own sf-eas-addresses citation is the source of that list. No other page on the street carries the number. A later resolver run will rewrite this block from DataSF directly.",
+        "checked_on": "2026-09-20"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Published on /san-francisco/castro/18th-street/4355/ as hoodline-2026-09-19, and on the homepage news grid. Nothing for the building block: the article establishes a tenant and a remodel, not a fact about the structure. The page already existed, so no seeding and no manifest."
       }
     },
     {
@@ -91,6 +100,10 @@
       "note": "Opening date not announced at publication; dated to the article.",
       "resolution": {
         "status": "unresolved"
+      },
+      "publish": {
+        "status": "pending",
+        "note": "Blocked: the page does not exist yet and the seeder cannot make it. scripts/seed_pages.py and research/tools/resolve_eas.py both read the city's data through data.sf.gov, and this session's egress policy answers 403 to every CONNECT to that host (the cache under .cache/resolve-eas/ is empty, so there is nothing to fall back on). No page on the site carries this street number in its street_numbers_on_parcel, so the address cannot be joined to an existing parcel offline either. The finding is complete and ready — resolve and seed it on a run that can reach DataSF."
       }
     },
     {
@@ -142,6 +155,10 @@
       "confidence": "high",
       "resolution": {
         "status": "unresolved"
+      },
+      "publish": {
+        "status": "pending",
+        "note": "Blocked: the page does not exist yet and the seeder cannot make it. scripts/seed_pages.py and research/tools/resolve_eas.py both read the city's data through data.sf.gov, and this session's egress policy answers 403 to every CONNECT to that host (the cache under .cache/resolve-eas/ is empty, so there is nothing to fall back on). No page on the site carries this street number in its street_numbers_on_parcel, so the address cannot be joined to an existing parcel offline either. The finding is complete and ready — resolve and seed it on a run that can reach DataSF."
       }
     },
     {
@@ -199,6 +216,10 @@
       "confidence": "high",
       "resolution": {
         "status": "unresolved"
+      },
+      "publish": {
+        "status": "pending",
+        "note": "Blocked: the page does not exist yet and the seeder cannot make it. scripts/seed_pages.py and research/tools/resolve_eas.py both read the city's data through data.sf.gov, and this session's egress policy answers 403 to every CONNECT to that host (the cache under .cache/resolve-eas/ is empty, so there is nothing to fall back on). No page on the site carries this street number in its street_numbers_on_parcel, so the address cannot be joined to an existing parcel offline either. The finding is complete and ready — resolve and seed it on a run that can reach DataSF."
       }
     },
     {

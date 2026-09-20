@@ -43,6 +43,10 @@
       "confidence": "high",
       "resolution": {
         "status": "unresolved"
+      },
+      "publish": {
+        "status": "pending",
+        "note": "Blocked: the page does not exist yet and the seeder cannot make it. scripts/seed_pages.py and research/tools/resolve_eas.py both read the city's data through data.sf.gov, and this session's egress policy answers 403 to every CONNECT to that host (the cache under .cache/resolve-eas/ is empty, so there is nothing to fall back on). No page on the site carries this street number in its street_numbers_on_parcel, so the address cannot be joined to an existing parcel offline either. The finding is complete and ready — resolve and seed it on a run that can reach DataSF."
       }
     },
     {

@@ -37,7 +37,7 @@
       },
       "publish": {
         "status": "declined",
-        "note": "No numbered address. The article names only \"the former Old Navy space on Market Street\", and Market Street runs three miles; an address the module has to infer is not an address. Available if the opening is written up with the number."
+        "note": "One event, one entry. /san-francisco/south-of-market/market-street/801/ already carries this opening from Hoodline, dated 2026-09-14 — a story that does print the numbered address SFist's account leaves out."
       }
     },
     {
@@ -67,7 +67,7 @@
       },
       "publish": {
         "status": "declined",
-        "note": "No numbered address: the article names the building and the intersection only, and research/AGENTS.md's evidence bar does not let the module supply a street number the source never printed. This is the costliest decline of the run — a landmark conversion with a named architect team — and it becomes publishable the moment a source states the number."
+        "note": "One event, one entry. /san-francisco/haight-ashbury/haight-street/1500/ already carries this conversion from the San Francisco Chronicle, dated 2026-09-17. SFist's account names the building and the intersection but no street number, so it could not have been placed on its own in any case."
       }
     },
     {
@@ -123,7 +123,7 @@
       },
       "publish": {
         "status": "declined",
-        "note": "No numbered address, and Rincon Center is a complex of more than one building. The headline would describe the wrong place besides — Rincon Center is not in the Avenues."
+        "note": "One event, one entry. /san-francisco/south-beach/spear-street/121/ already carries this closure from the San Francisco Chronicle, dated 2026-09-14 — which places it at a numbered address, where this column names only the Rincon Center complex."
       },
       "extra": {}
     },
@@ -147,9 +147,14 @@
       "confidence": "high",
       "note": "One of several SF items in a weekly food roundup; extracted as its own finding.",
       "resolution": {
-        "status": "unresolved"
+        "status": "rejected",
+        "note": "declined — no parcel sought"
       },
-      "extra": {}
+      "extra": {},
+      "publish": {
+        "status": "declined",
+        "note": "One event, one entry. /san-francisco/outer-richmond/geary-boulevard/5801/ already carries this opening from the San Francisco Chronicle, dated 2026-09-17 (news/items/sf-chronicle/2026-09-17.json)."
+      }
     },
     {
       "id": "2026-09-20-si-0006",
@@ -175,6 +180,10 @@
       "note": "Planned opening (mid-2027) at publication. One of several SF items in a weekly food roundup; extracted as its own finding.",
       "resolution": {
         "status": "unresolved"
+      },
+      "publish": {
+        "status": "pending",
+        "note": "Blocked: the page does not exist yet and the seeder cannot make it. scripts/seed_pages.py and research/tools/resolve_eas.py both read the city's data through data.sf.gov, and this session's egress policy answers 403 to every CONNECT to that host (the cache under .cache/resolve-eas/ is empty, so there is nothing to fall back on). No page on the site carries this street number in its street_numbers_on_parcel, so the address cannot be joined to an existing parcel offline either. The finding is complete and ready — resolve and seed it on a run that can reach DataSF."
       }
     }
   ]
