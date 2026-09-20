@@ -656,13 +656,55 @@
   and 2009 notices of preparation, the USF mitigated negative declaration notice, and
   the Grace Cathedral expansion initial study.
 
-  **Remaining: 449 of the 617 project-titled documents, grouped and sampled in the
-  triage note above — 130 area and policy plans, 67 transportation and airport
-  documents, 96 procedural notices and 35 documents about places outside San
-  Francisco; the institutional-campus group is finished — and the finals and
-  supplements of projects whose drafts are read.**
+  The ninth batch is the **area-and-policy-plan group**: 18 of the highest-yield
+  documents out of the 56 project-documents (76 IA items) the group classifier
+  produced — the Downtown Plan EIR, the two Rincon Hill plans, the I-280 Transfer
+  Concept Program, Glen Park, Visitacion Valley, Bayview Hunters Point, Mission
+  Bay, Mid-Market, Van Ness Avenue, South of Market and its supplement, South
+  Bayshore, Golden Gate Park, three Yerba Buena Center supplements and the
+  unreinforced-masonry-building seismic-safety EIR — read whole in their
+  historic-resources chapters and inventory appendices. 288 findings, 156
+  resolved, 134 published on 121 pages, 26 of them seeded by the run. Its richest
+  documents are the Downtown Plan EIR's Appendix E — Table E.3, a ~900-row rated-
+  buildings inventory reconstructed by coordinate from the DjVu word XML after
+  line-based parsing failed, of which the name/address rows that survived the
+  OCR cleanly were recorded and the detached rating columns refused — and Table
+  E.4, the 37-building demolitions list of 1979 to October 1982; the I-280
+  document's Appendix F warehouse inventory (Castle Brothers, the Oriental
+  Warehouse, the Audiffred, the Ferry Building, Rincon Annex and a run of Howard
+  Street survivors); the Rincon Hill 2004 building histories (Sailors' Union,
+  Hills Brothers, the Coffin-Redington and Gimbel buildings); the Visitacion
+  Valley Schlage Lock factory chapters, which date the plant's buildings and
+  disagree with each other about two of them; and the Glen Park plan's
+  California-Register evaluations. The lower-yield groups triaged in the note
+  above — procedural notices, transportation and airport, out-of-city — were
+  scanned for numbered-address mentions and produced nothing to publish.
 
-- **Verified:** 2026-09-06, eighth run: the institutional-campus group — 38 documents in
+  **Remaining: the rest of the project-titled documents — the finals and
+  supplements of projects whose drafts are read, the lower-yield area-plan
+  documents scanned but not read whole, and the unmined tables inside the
+  documents that were: Mission Bay's Table VI.I.1 survey matrix, the Van Ness
+  Avenue 47-building survey list, the Golden Gate Park resource inventory and
+  the Bayview Appendix B rows beyond the narrative list.**
+
+- **Verified:** 2026-09-19, ninth run: the area-and-policy-plan group — 18 of 56
+  project-documents (76 IA items) read whole — 288 findings, 156 resolved, 134
+  published on 121 pages, 26 of them seeded. What it learned: **a fixed-column
+  table is a two-dimensional object** — the Downtown Plan's Table E.3 came out
+  only by clustering DjVu word coordinates into columns per page, because the
+  text layer emits the table as heaps of names, numbers and ratings with no row
+  structure at all; **a row that keeps only its name, address and block/lot is
+  still a finding**, but the detached rating columns are not, so E.3 shipped as
+  name-and-presence facts and not ratings; **the same building can carry two
+  names the document does not reconcile**, so the Southern Police Station is
+  "460 Fourth" in one supplement and the Salvation Army Building at "360 Fourth"
+  in the next, and the conflict is recorded rather than adjudicated; **chapters
+  of the same EIR disagree about their own plant dates**, which is what the
+  Schlage Lock `unknowns` lines record; and **`address_range_as_recorded` is
+  read as a range even when it holds a single number**, which cost a second
+  resolution pass.
+
+  **2026-09-06**, eighth run: the institutional-campus group — 38 documents in
   35 projects — 169 findings, 139 resolved, 129 published on 37 pages, 17 of them seeded.
   What it learned: **an institutional campus resolves on its block and lot or not at
   all**, because these documents name buildings and never their street numbers, and the
