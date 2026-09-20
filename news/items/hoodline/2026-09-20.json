@@ -1,0 +1,260 @@
+{
+  "source_id": "hoodline",
+  "batch": "2026-09-20",
+  "read_on": "2026-09-20",
+  "notes": "Article pages returned 200 to a browser UA, so each h1 was verified verbatim; the feed's syndicated body was read for article text. The Q Specialty Coffee item names no numbered address.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 6,
+    "mentions": 7,
+    "remaining": "none"
+  },
+  "findings": [
+    {
+      "id": "2026-09-20-hl-0001",
+      "date": "2026-09-18",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "4359 18th Street",
+      "street_number": "4359",
+      "street_name": "18TH",
+      "street_type": "ST",
+      "description": "Castro Nail Salon reopened at 4359 18th Street (at Eureka Street) on Friday, September 18, after being forced to vacate its longtime space in the building shared with the historic Castro Theatre earlier in the year. The new space was remodeled over the spring with new plumbing, electrical, an ADA bathroom, chairs and paint at an estimated construction cost of $97,000; it was previously home to Big Cleaners, which closed in August 2020. The reopening was delayed while the landlord permitted an ADU added to the ground floor.",
+      "extra": {
+        "previous_tenant": "Big Cleaners (closed August 2020)",
+        "remodel_cost_estimate": "$97,000",
+        "vacated_building_shared_with": "the historic Castro Theatre"
+      },
+      "citation": {
+        "label": "Hoodline, “Castro Nail Salon Settles into New Location After Move,” 19 September 2026",
+        "url": "https://hoodline.com/2026/09/castro-nail-salon-settles-into-new-location-after-move/"
+      },
+      "raw": {
+        "text": "Castro Nail Salon officially reopened after moving to its new location at 4359 18th Street (at Eureka Street)."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "2693028",
+        "path": "/san-francisco/castro/18th-street/4355/",
+        "eas_address": "4355 18TH ST",
+        "method": "resolve_eas.py could not run: data.sf.gov is refused by this session's egress policy. Resolved instead from the site's own committed city data, which is the same EAS join: 4359 appears in street_numbers_on_parcel on exactly one page, /san-francisco/castro/18th-street/4355/ (parcel 2693028, 4355–4359 18th Street), whose own sf-eas-addresses citation is the source of that list. No other page on the street carries the number. A later resolver run will rewrite this block from DataSF directly.",
+        "checked_on": "2026-09-20"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Published on /san-francisco/castro/18th-street/4355/ as hoodline-2026-09-19, and on the homepage news grid. Nothing for the building block: the article establishes a tenant and a remodel, not a fact about the structure. The page already existed, so no seeding and no manifest.",
+        "pr": "392"
+      }
+    },
+    {
+      "id": "2026-09-20-hl-0002",
+      "date": "2026-09-19",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "421 Castro Street",
+      "street_number": "421",
+      "street_name": "CASTRO",
+      "street_type": "ST",
+      "description": "Castro Coffee Company reopened at 421 Castro Street, one door up from its old location, after it and the neighboring nail salon were forced to vacate the building shared with the historic Castro Theatre earlier in the year; the theater's new manager plans to convert one of the vacated spaces into a box office.",
+      "citation": {
+        "label": "Hoodline, “Castro Nail Salon Settles into New Location After Move,” 19 September 2026",
+        "url": "https://hoodline.com/2026/09/castro-nail-salon-settles-into-new-location-after-move/"
+      },
+      "raw": {
+        "text": "Castro Coffee Company has since reopened at 421 Castro Street, just one door up from its old location."
+      },
+      "confidence": "medium",
+      "note": "Secondary fact in the nail-salon article; the reopening date is not given, so it is dated to publication.",
+      "resolution": {
+        "status": "unresolved"
+      },
+      "extra": {},
+      "publish": {
+        "status": "declined",
+        "note": "The headline is the entry, and this one would describe the wrong building: “Castro Nail Salon Settles into New Location After Move” is about 4359 18th Street, and carried onto 421 Castro Street it would name the wrong tenant and the wrong move. news/AGENTS.md forbids editing a headline to fit, so the coffee company's reopening waits for a story of its own — the same call as 2026-08-25-0007."
+      }
+    },
+    {
+      "id": "2026-09-20-hl-0003",
+      "date": "2026-09-19",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "548 Castro Street",
+      "street_number": "548",
+      "street_name": "CASTRO",
+      "street_type": "ST",
+      "description": "L'Amourette Chocolat, a San Francisco chocolate maker, will open a new chocolate shop and cafe at 548 Castro Street in the former plant shop How's It Hanging, offering chocolates, confections and espresso/coffee in an Art Deco-influenced interior. No opening date had been announced and no construction permits or planning applications had been filed at publication. It would be the company's second San Francisco shop after its Pacific Heights location at 2412 Fillmore Street (opened 2022).",
+      "extra": {
+        "former_tenant": "How's It Hanging (plant shop)",
+        "opening_date": "not announced at publication",
+        "permits_at_publication": "none filed"
+      },
+      "citation": {
+        "label": "Hoodline, “L'Amourette Chocolat Expanding to the Castro with Shop & Cafe,” 19 September 2026",
+        "url": "https://hoodline.com/2026/09/l-amourette-chocolate-expanding-to-the-castro-with-shop-cafe/"
+      },
+      "raw": {
+        "text": "L'Amourette will be opening a chocolate shop and cafe at 548 Castro Street, formerly the plant shop How's It Hanging."
+      },
+      "confidence": "high",
+      "note": "Opening date not announced at publication; dated to the article.",
+      "resolution": {
+        "status": "unresolved"
+      },
+      "publish": {
+        "status": "pending",
+        "note": "Blocked: the page does not exist yet and the seeder cannot make it. scripts/seed_pages.py and research/tools/resolve_eas.py both read the city's data through data.sf.gov, and this session's egress policy answers 403 to every CONNECT to that host (the cache under .cache/resolve-eas/ is empty, so there is nothing to fall back on). No page on the site carries this street number in its street_numbers_on_parcel, so the address cannot be joined to an existing parcel offline either. The finding is complete and ready — resolve and seed it on a run that can reach DataSF."
+      }
+    },
+    {
+      "id": "2026-09-20-hl-0004",
+      "date": "2026-09-19",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "a large office building on Howard Street, downtown",
+      "description": "Q Specialty Coffee, the year-old Laurel Heights cafe, is opening a second San Francisco location downtown on Howard Street at the end of October, with stone-milled matcha taking center stage alongside coffee. The article describes the building only as a 521,555-square-foot office building with ground-floor retail that earned LEED Platinum certification in 2010; no numbered street address is given.",
+      "citation": {
+        "label": "Hoodline, “Laurel Heights Coffee Breakout: Q Specialty Brews Up Howard Street Expansion,” 19 September 2026",
+        "url": "https://hoodline.com/2026/09/laurel-heights-coffee-breakout-q-specialty-brews-up-howard-street-expansion/"
+      },
+      "raw": {
+        "text": "The new spot will be on Howard Street, with tea taking center stage on the menu."
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "rejected",
+        "note": "declined — no parcel sought"
+      },
+      "publish": {
+        "status": "declined",
+        "note": "No numbered address. The story names only \"Howard Street\" and a description of the building, and an address the module has to guess at is not an address. If the opening is written up with the number, the entry becomes available then."
+      },
+      "extra": {}
+    },
+    {
+      "id": "2026-09-20-hl-0005",
+      "date": "2026-09-16",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2146 Third Street",
+      "street_number": "2146",
+      "street_name": "THIRD",
+      "street_type": "ST",
+      "description": "San Francisco health inspectors closed Corgi Insurance's Dogpatch cafe at 2146 Third Street on September 16 after finding it operating without a valid health permit; an official notice was posted at the entrance. The 24/7 cafe had opened recently as the company's second San Francisco location; the company characterized the problem as a permitting transition, saying it had operated under a temporary permit while seeking a permanent one. The cafe remained closed at publication.",
+      "extra": {
+        "closure_reason": "operating without a valid health permit",
+        "permit_status": "temporary permit while seeking a permanent one (per company)"
+      },
+      "citation": {
+        "label": "Hoodline, “Dogpatch Corgi Cafe Closed Over Missing Health Permit,” 19 September 2026",
+        "url": "https://hoodline.com/2026/09/dogpatch-corgi-cafe-closed-over-missing-health-permit/"
+      },
+      "raw": {
+        "text": "San Francisco health inspectors closed Corgi Insurance’s cafe at 2146 Third Street in Dogpatch on September 16 after finding that it was operating without a valid health permit."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "unresolved"
+      },
+      "publish": {
+        "status": "pending",
+        "note": "Blocked: the page does not exist yet and the seeder cannot make it. scripts/seed_pages.py and research/tools/resolve_eas.py both read the city's data through data.sf.gov, and this session's egress policy answers 403 to every CONNECT to that host (the cache under .cache/resolve-eas/ is empty, so there is nothing to fall back on). No page on the site carries this street number in its street_numbers_on_parcel, so the address cannot be joined to an existing parcel offline either. The finding is complete and ready — resolve and seed it on a run that can reach DataSF."
+      }
+    },
+    {
+      "id": "2026-09-20-hl-0006",
+      "date": "2026-09",
+      "date_precision": "month",
+      "kind": "sale",
+      "address_as_written": "600 20th Street",
+      "street_number": "600",
+      "street_name": "20TH",
+      "street_type": "ST",
+      "description": "Corgi purchased the commercial property at 600 20th Street for $11 million, days before its Dogpatch cafe closure; the property had previously sold for $8.5 million in 2024.",
+      "extra": {
+        "sale_price": "$11,000,000",
+        "prior_sale_2024": "$8,500,000"
+      },
+      "citation": {
+        "label": "Hoodline, “Dogpatch Corgi Cafe Closed Over Missing Health Permit,” 19 September 2026",
+        "url": "https://hoodline.com/2026/09/dogpatch-corgi-cafe-closed-over-missing-health-permit/"
+      },
+      "raw": {
+        "text": "The closure followed Corgi’s purchase of the commercial property at 600 20th Street for $11 million, a transaction reported by the Chronicle."
+      },
+      "confidence": "medium",
+      "note": "Secondary fact in the cafe-closure article; the transaction date is not given beyond 'days' before publication, so it is dated to the month. The named individual prior owner is not named per privacy rules.",
+      "resolution": {
+        "status": "unresolved"
+      },
+      "publish": {
+        "status": "declined",
+        "note": "The headline is the entry, and this one — “Dogpatch Corgi Cafe Closed Over Missing Health Permit” — is about the cafe at 2146 Third Street. Carried onto 600 20th Street it would describe a closure that did not happen there. An $11 million sale is worth a timeline line; it needs a story whose headline is about this building."
+      }
+    },
+    {
+      "id": "2026-09-20-hl-0007",
+      "date": "2026-09",
+      "date_precision": "month",
+      "kind": "occupancy",
+      "address_as_written": "424 Irving St",
+      "street_number": "424",
+      "street_name": "IRVING",
+      "street_type": "ST",
+      "description": "Abanico Coffee Roasters is opening a second San Francisco cafe at 424 Irving Street near Fifth Avenue in the Inner Sunset, expected by the end of September — an expansion, not a relocation, of its Mission roastery cafe at 2121 Mission Street (opened 2021). The storefront most recently served as a campaign office and before that a laundromat; it is being converted into a working roastery cafe with location-specific signature drinks.",
+      "extra": {
+        "prior_uses": "Cal Laundromat, then a campaign canvassing office",
+        "existing_location": "2121 Mission Street (opened 2021)"
+      },
+      "citation": {
+        "label": "Hoodline, “Abanico Coffee Roasters Pours Into Irving Street, Won't Leave The Mission After All,” 19 September 2026",
+        "url": "https://hoodline.com/2026/09/abanico-coffee-roasters-pours-into-irving-street-won-t-leave-the-mission-after-all/"
+      },
+      "raw": {
+        "text": "will take over a storefront at 424 Irving St. that most recently served as a campaign office and, before that, sat empty as a former laundromat."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "unresolved"
+      },
+      "publish": {
+        "status": "pending",
+        "note": "Blocked: the page does not exist yet and the seeder cannot make it. scripts/seed_pages.py and research/tools/resolve_eas.py both read the city's data through data.sf.gov, and this session's egress policy answers 403 to every CONNECT to that host (the cache under .cache/resolve-eas/ is empty, so there is nothing to fall back on). No page on the site carries this street number in its street_numbers_on_parcel, so the address cannot be joined to an existing parcel offline either. The finding is complete and ready — resolve and seed it on a run that can reach DataSF."
+      }
+    },
+    {
+      "id": "2026-09-20-hl-0008",
+      "date": "2026-09-18",
+      "date_precision": "day",
+      "kind": "sale",
+      "address_as_written": "300 Kansas Street",
+      "street_number": "300",
+      "street_name": "KANSAS",
+      "street_type": "ST",
+      "description": "Lincoln Property Company and Sabal Investment Holdings acquired the 152,000-square-foot production building at 300 Kansas Street in Showplace Square through a deed-in-lieu of foreclosure, after purchasing the underlying debt from Bank of America; the firms secured an $87.9 million first-priority acquisition and lease-up loan from BridgeInvest. Former owner Spear Street Capital reclassified the building as a past asset. The R&D-zoned building is being positioned for hardware, robotics and physical-AI tenants.",
+      "extra": {
+        "sale_structure": "deed-in-lieu of foreclosure",
+        "loan": "$87,900,000 acquisition and lease-up loan from BridgeInvest",
+        "building_size_sqft": 152000,
+        "former_owner": "Spear Street Capital",
+        "buyers": "Lincoln Property Company and Sabal Investment Holdings"
+      },
+      "citation": {
+        "label": "Hoodline, “Lincoln Property, Sabal Acquire Mission Bay Building,” 18 September 2026",
+        "url": "https://hoodline.com/2026/09/lincoln-property-sabal-acquire-mission-bay-building/"
+      },
+      "raw": {
+        "text": "A 152,000-square-foot building at 300 Kansas Street in San Francisco’s Mission Bay submarket has a new owner after Lincoln Property Company and Sabal Investment Holdings acquired the property through a deed-in-lieu of foreclosure, purchasing the underlying debt from Bank of America before taking title."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "unresolved"
+      },
+      "publish": {
+        "status": "declined",
+        "note": "One event, one entry. /san-francisco/mission-bay/kansas-street/300/ already carries this acquisition from The Registry, dated 2026-09-17 (news/items/the-registry/2026-09-18.json, 2026-09-18-reg-0001). The detail Hoodline adds — the BridgeInvest loan, the former owner — is kept in this finding's extra rather than as a second line on the timeline."
+      }
+    }
+  ]
+}
