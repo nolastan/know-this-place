@@ -164,7 +164,7 @@ sit in — the three it touched most, and how many in all.
 | `sf-context-statements/van-ness-auto-row.json` | 453 | 916 KB | 1901–2010 | 352 | 352 | `tenderloin`, `nob-hill`, `western-addition` +6 |
 | `sf-context-statements/victorian-era-styles.json` | 45 | 107 KB | 1856–1984 | 43 | 37 | `pacific-heights`, `hayes-valley`, `haight-ashbury` +12 |
 | `sf-environmental-review/address-in-title.json` | 109 | 222 KB | 1853–2010 | 74 | 73 | `nob-hill`, `east-cut`, `south-of-market` +16 |
-| `sf-environmental-review/area-plans.json` | 288 | 575 KB | 1830–2010 | 156 | 134 | `financial-district`, `south-of-market`, `east-cut` +13 |
+| `sf-environmental-review/area-plans.json` | 288 | 578 KB | 1830–2010 | 156 | 134 | `financial-district`, `south-of-market`, `east-cut` +13 |
 | `sf-environmental-review/downtown-1975-1982.json` | 120 | 227 KB | 1851–1983 | 78 | 73 | `financial-district`, `union-square`, `east-cut` +3 |
 | `sf-environmental-review/downtown-1983-1991.json` | 110 | 221 KB | 1854–1991 | 77 | 59 | `east-cut`, `financial-district`, `chinatown` +5 |
 | `sf-environmental-review/downtown-1995-2011.json` | 147 | 284 KB | 1850–2005 | 96 | 72 | `south-of-market`, `east-cut`, `financial-district` +9 |
