@@ -1,4 +1,4 @@
-# Third Street
+# 3rd Street
 
 The parcels on Third Street documented here so far, from the city's address, assessor and permit records.
 

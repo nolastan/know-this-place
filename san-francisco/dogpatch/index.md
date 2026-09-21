@@ -6,9 +6,9 @@ The flat blocks east of Interstate 280 between Mariposa Street and Islais Creek,
 
 - [18th Street](18th-street/) — 2 buildings, built 1900–2008; 1 in the Dogpatch Historic District.
 - [22nd Street](22nd-street/) — 13 buildings, built 1900–1920; 13 in the Dogpatch Historic District.
+- [3rd Street](3rd-street/) — 5 buildings, built 1900–1947; 3 in the Dogpatch Historic District.
 - [Minnesota Street](minnesota-street/) — 9 buildings, built 1900–1907; 9 in the Dogpatch Historic District.
 - [Tennessee Street](tennessee-street/) — 38 buildings, built 1890–1989; 38 in the Dogpatch Historic District.
-- [Third Street](3rd-street/) — 5 buildings, built 1900–1947; 3 in the Dogpatch Historic District.
 
 ## Historic districts here
 

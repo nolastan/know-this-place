@@ -158,8 +158,8 @@
     },
     {
       "id": "2026-09-20-si-0006",
-      "date": "2027-06",
-      "date_precision": "month",
+      "date": "2026-09-18",
+      "date_precision": "day",
       "kind": "occupancy",
       "address_as_written": "801 Irving Street",
       "street_number": "801",
@@ -177,13 +177,19 @@
         "text": "will take over the former Reliable Rexall pharmacy space at 801 Irving Street in the Inner Sunset, with a goal to open by mid-2027."
       },
       "confidence": "high",
-      "note": "Planned opening (mid-2027) at publication. One of several SF items in a weekly food roundup; extracted as its own finding.",
+      "note": "Dated to publication, not the mid-2027 target opening: the target is a forecast, not an event that has happened, and dating the entry to it would misrepresent a not-yet-open business as this building's most recent news a year from now. Same call as the L'Amourette finding in this batch (2026-09-20-hl-0003), which uses the article date for the same reason.",
       "resolution": {
-        "status": "unresolved"
+        "status": "resolved",
+        "apn": "1764001",
+        "path": "/san-francisco/inner-sunset/9th-avenue/1307/",
+        "eas_address": "801 IRVING ST",
+        "method": "EAS exact match on 801 IRVING ST → parcel 1764001; sf-parcels has blklot 1764001 active, 1307–1317 09TH; the 2025 roll records it as commercial retail, built 1912. EAS puts 801, 815, 821, 825, 827 IRVING ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 801. The address carries no parcel number in EAS; the active parcel its coordinates fall in is 1764001.",
+        "checked_on": "2026-09-21"
       },
       "publish": {
-        "status": "pending",
-        "note": "Blocked: the page does not exist yet and the seeder cannot make it. scripts/seed_pages.py and research/tools/resolve_eas.py both read the city's data through data.sf.gov, and this session's egress policy answers 403 to every CONNECT to that host (the cache under .cache/resolve-eas/ is empty, so there is nothing to fall back on). No page on the site carries this street number in its street_numbers_on_parcel, so the address cannot be joined to an existing parcel offline either. The finding is complete and ready — resolve and seed it on a run that can reach DataSF."
+        "status": "published",
+        "note": "Published on /san-francisco/inner-sunset/9th-avenue/1307/ as sfist-2026-09-18, and on the homepage news grid. The address resolves to this page's parcel by point (EAS carries no parcel number for 801 Irving Street); the page already existed, so no seeding and no manifest. Nothing for the building block: the article names a planned new tenant, not a fact about the structure.",
+        "pr": "394"
       }
     }
   ]
