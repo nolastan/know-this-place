@@ -1,0 +1,77 @@
+{
+  "source_id": "sf-chronicle",
+  "batch": "2026-09-21",
+  "read_on": "2026-09-21",
+  "notes": "Bluesky route: the feed item's text is a post teaser, never publishable as a headline. The bit.ly links were followed to the real article URLs, but the articles themselves could not be read (paywall), so no h1 was ever seen for either. Both declined.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 2,
+    "mentions": 0,
+    "remaining": "none"
+  },
+  "findings": [
+    {
+      "id": "2026-09-21-sc-0001",
+      "date": "2026-09-21",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "none",
+      "description": "A Bluesky post teasing a Chronicle story about residents saying a neighborhood is deteriorating and demanding City Hall act more forcefully on people refusing shelter and services. The article could not be read; no building and no address are named in the teaser.",
+      "extra": {
+        "paywall": true,
+        "headline_is_about_this_building": "no — no building is named",
+        "feed_id": "at://did:plc:niws4datih6dforyd7y22km4/app.bsky.feed.post/3mvzupokgbe2e",
+        "headline_from": "not read — the article is paywalled and no h1 was seen",
+        "outlet": "San Francisco Chronicle",
+        "date_is_publication_date": true
+      },
+      "citation": {
+        "label": "San Francisco Chronicle, article of 21 September 2026 (headline unread — paywalled)",
+        "url": "https://www.sfchronicle.com/sf/article/hub-neighborhood-residents-drugs-22437400.php"
+      },
+      "raw": {
+        "text": "Some residents say the neighborhood is deteriorating and are demanding City Hall take more forceful action to deal with those on the street who refuse shelter and services.",
+        "note": "this is the Bluesky post's own text, not a headline — it is evidence only and could never be published as one"
+      },
+      "confidence": "low",
+      "resolution": {
+        "status": "unresolved"
+      },
+      "publish": {
+        "status": "declined",
+        "note": "No numbered address and no building: a neighborhood complaint piece, which fails the ten-year test on its own. The article is paywalled and its headline was never read, so there would be nothing publishable to put on a page even if there were an address."
+      }
+    },
+    {
+      "id": "2026-09-21-sc-0002",
+      "date": "2026-09-20",
+      "date_precision": "day",
+      "kind": "fire",
+      "address_as_written": "none",
+      "description": "The same event as 2026-09-21-hl-0002: a fire in a single-family home in the Fairmount neighborhood near Glen Park on Sunday, September 20. The Chronicle article could not be read (paywall); the Hoodline account gives the location as Laidley Street and Noa Street, with no numbered address.",
+      "extra": {
+        "paywall": true,
+        "headline_is_about_this_building": "unsure — the teaser describes the fire but names no address",
+        "feed_id": "at://did:plc:niws4datih6dforyd7y22km4/app.bsky.feed.post/3mvyt6rn5vl27",
+        "headline_from": "not read — the article is paywalled and no h1 was seen",
+        "outlet": "San Francisco Chronicle"
+      },
+      "citation": {
+        "label": "San Francisco Chronicle, article of 20 September 2026 (headline unread — paywalled)",
+        "url": "https://www.sfchronicle.com/sf/article/fire-fairmount-neighborhood-22440811.php"
+      },
+      "raw": {
+        "text": "The fire broke out in a single-family home in San Francisco’s Fairmount neighborhood near Glen Park.",
+        "note": "the Bluesky post's own text, not a headline"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "unresolved"
+      },
+      "publish": {
+        "status": "declined",
+        "note": "One event, one entry: the same fire as 2026-09-21-hl-0002, which carries the fuller account and is itself declined for want of a numbered address. This one adds nothing and its headline was never read."
+      }
+    }
+  ]
+}

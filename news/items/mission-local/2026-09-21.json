@@ -1,0 +1,48 @@
+{
+  "source_id": "mission-local",
+  "batch": "2026-09-21",
+  "read_on": "2026-09-21",
+  "notes": "Article body not carried in the feed and the article page could not be fetched; the verdict rests on the feed title, summary and URL. Declined, so nothing turns on the unread body.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 1,
+    "mentions": 0,
+    "remaining": "none"
+  },
+  "findings": [
+    {
+      "id": "2026-09-21-ml-0001",
+      "date": "2026-09-21",
+      "date_precision": "day",
+      "kind": "alteration",
+      "address_as_written": "none",
+      "description": "Mission Local published an ‘exclusive tour’ of a Mission house with secret passageways and a secret floor, described as the former inner sanctum of a former political fixer. The article body could not be read (not in the feed; page fetch blocked); no numbered address was available, and the piece is framed around a person rather than a building fact.",
+      "extra": {
+        "paywall": false,
+        "headline_is_about_this_building": "unsure — the headline is about the tour; the story is framed around its former occupant",
+        "feed_id": "https://missionlocal.org/?p=871340",
+        "headline_as_published": "Uncle Walter’s Mystery House: Mission Local’s exclusive tour",
+        "headline_from": "feed title / og:title (article page could not be fetched; h1 unverified)",
+        "outlet": "Mission Local",
+        "date_is_publication_date": true
+      },
+      "citation": {
+        "label": "Mission Local, “Uncle Walter’s Mystery House: Mission Local’s exclusive tour,” 21 September 2026",
+        "url": "https://missionlocal.org/2026/09/walter-wong-kink-com-uncle-walters-mystery-house-citicenter/"
+      },
+      "raw": {
+        "text": "Secret passageways, a secret floor — the former inner sanctum of [name redacted] is full of strange and terrible surprises",
+        "note": "the named former occupant is redacted from the verbatim span, per the root AGENTS.md privacy limit"
+      },
+      "confidence": "low",
+      "resolution": {
+        "status": "unresolved"
+      },
+      "publish": {
+        "status": "declined",
+        "note": "No numbered address — the body could not be read and the feed carried none. It would be declined on privacy in any case: the story is about a named individual's house and is framed around him, which is the root AGENTS.md's ‘a story about a person that mentions a building is not a building story’. Recorded so it is not read again."
+      },
+      "note": "The outlet's own article URL carries the former occupant's name; it is kept here as the citation of record and reaches no page, since the finding is declined."
+    }
+  ]
+}
