@@ -42,11 +42,16 @@
       },
       "confidence": "high",
       "resolution": {
-        "status": "unresolved"
+        "status": "resolved",
+        "apn": "3999015",
+        "path": "/san-francisco/potrero-hill/mariposa-street/935/",
+        "eas_address": "249 PENNSYLVANIA AVE",
+        "method": "EAS exact match on 249 PENNSYLVANIA AVE → parcel 3999015; sf-parcels has blklot 3999015 active, 935–935 MARIPOSA; the 2025 roll records it as industrial. EAS files the address under parcel 3999013, which sf-parcels reports retired; the active parcel its coordinates fall in is 3999015.",
+        "checked_on": "2026-09-21"
       },
       "publish": {
-        "status": "pending",
-        "note": "Blocked: the page does not exist yet and the seeder cannot make it. scripts/seed_pages.py and research/tools/resolve_eas.py both read the city's data through data.sf.gov, and this session's egress policy answers 403 to every CONNECT to that host (the cache under .cache/resolve-eas/ is empty, so there is nothing to fall back on). No page on the site carries this street number in its street_numbers_on_parcel, so the address cannot be joined to an existing parcel offline either. The finding is complete and ready — resolve and seed it on a run that can reach DataSF."
+        "status": "published",
+        "note": "Published on /san-francisco/potrero-hill/mariposa-street/935/ as sfyimby-2026-09-19, and on the homepage news grid. EAS files 249 Pennsylvania Avenue under a retired parcel; the active parcel (3999015) is already published at 935 Mariposa Street, so no seeding and no manifest. Nothing for the building block: this is a permit filing for a proposed building that does not yet stand, so the architect, developers and contractor stay in extra rather than building per news/AGENTS.md."
       }
     },
     {

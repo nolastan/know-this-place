@@ -38,8 +38,8 @@
         "apn": "2693028",
         "path": "/san-francisco/castro/18th-street/4355/",
         "eas_address": "4355 18TH ST",
-        "method": "resolve_eas.py could not run: data.sf.gov is refused by this session's egress policy. Resolved instead from the site's own committed city data, which is the same EAS join: 4359 appears in street_numbers_on_parcel on exactly one page, /san-francisco/castro/18th-street/4355/ (parcel 2693028, 4355–4359 18th Street), whose own sf-eas-addresses citation is the source of that list. No other page on the street carries the number. A later resolver run will rewrite this block from DataSF directly.",
-        "checked_on": "2026-09-20"
+        "method": "EAS exact match on 4359 18TH ST → parcel 2693028; sf-parcels has blklot 2693028 active, 4355–4359 18TH; the 2025 roll records it as multi-family residential, built 1904. EAS puts 4355, 4357, 4359 18TH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 4355.",
+        "checked_on": "2026-09-21"
       },
       "publish": {
         "status": "published",
@@ -67,7 +67,10 @@
       "confidence": "medium",
       "note": "Secondary fact in the nail-salon article; the reopening date is not given, so it is dated to publication.",
       "resolution": {
-        "status": "unresolved"
+        "status": "unresolved",
+        "checked_on": "2026-09-21",
+        "method": "sf-eas-addresses has 421 CASTRO ST but it does not join to one parcel.",
+        "note": "The address exists but cannot be joined to a parcel, so there is no page to put it on. EAS leaves addresses unparcelled for rear units, vacated lots and addresses in flux; a later pass may find one."
       },
       "extra": {},
       "publish": {
@@ -100,11 +103,17 @@
       "confidence": "high",
       "note": "Opening date not announced at publication; dated to the article.",
       "resolution": {
-        "status": "unresolved"
+        "status": "resolved",
+        "apn": "2695008",
+        "path": "/san-francisco/castro/castro-street/548/",
+        "eas_address": "548 CASTRO ST",
+        "method": "EAS exact match on 548 CASTRO ST → parcel 2695008; sf-parcels has blklot 2695008 active, 548–552 CASTRO; the 2025 roll records it as commercial retail, built 1900. EAS puts 548, 550, 552 CASTRO ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 548.",
+        "checked_on": "2026-09-21",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
       },
       "publish": {
-        "status": "pending",
-        "note": "Blocked: the page does not exist yet and the seeder cannot make it. scripts/seed_pages.py and research/tools/resolve_eas.py both read the city's data through data.sf.gov, and this session's egress policy answers 403 to every CONNECT to that host (the cache under .cache/resolve-eas/ is empty, so there is nothing to fall back on). No page on the site carries this street number in its street_numbers_on_parcel, so the address cannot be joined to an existing parcel offline either. The finding is complete and ready — resolve and seed it on a run that can reach DataSF."
+        "status": "published",
+        "note": "Published on /san-francisco/castro/castro-street/548/ as hoodline-2026-09-19, and on the homepage news grid. Page seeded via research/manifests/news-2026-09-20.json. Nothing for the building block: the article names a new tenant, not a fact about the structure."
       }
     },
     {
@@ -155,11 +164,17 @@
       },
       "confidence": "high",
       "resolution": {
-        "status": "unresolved"
+        "status": "resolved",
+        "apn": "4044003",
+        "path": "/san-francisco/dogpatch/3rd-street/2146/",
+        "eas_address": "2146 03RD ST",
+        "method": "EAS exact match on 2146 03RD ST → parcel 4044003; sf-parcels has blklot 4044003 active, 2146–2148 03RD; the 2025 roll records it as multi-family residential, built 1900. EAS puts 2146, 2148 03RD ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2146. The record spells the street out as THIRD; EAS holds the numbered streets as zero-padded ordinals, so this is 03RD.",
+        "checked_on": "2026-09-21",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
       },
       "publish": {
-        "status": "pending",
-        "note": "Blocked: the page does not exist yet and the seeder cannot make it. scripts/seed_pages.py and research/tools/resolve_eas.py both read the city's data through data.sf.gov, and this session's egress policy answers 403 to every CONNECT to that host (the cache under .cache/resolve-eas/ is empty, so there is nothing to fall back on). No page on the site carries this street number in its street_numbers_on_parcel, so the address cannot be joined to an existing parcel offline either. The finding is complete and ready — resolve and seed it on a run that can reach DataSF."
+        "status": "published",
+        "note": "Published on /san-francisco/dogpatch/3rd-street/2146/ as hoodline-2026-09-19, and on the homepage news grid. Page seeded via research/manifests/news-2026-09-20.json. Nothing for the building block: the article is about a permit closure of the tenant, not a fact about the structure."
       }
     },
     {
@@ -186,7 +201,13 @@
       "confidence": "medium",
       "note": "Secondary fact in the cafe-closure article; the transaction date is not given beyond 'days' before publication, so it is dated to the month. The named individual prior owner is not named per privacy rules.",
       "resolution": {
-        "status": "unresolved"
+        "status": "resolved",
+        "apn": "4058002",
+        "path": "/san-francisco/potrero-hill/20th-street/600/",
+        "eas_address": "600 20TH ST",
+        "method": "EAS exact match on 600 20TH ST → parcel 4058002; sf-parcels has blklot 4058002 active, 600–600 20TH; the 2025 roll records it as commercial retail, built 1972.",
+        "checked_on": "2026-09-21",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
       },
       "publish": {
         "status": "declined",
@@ -195,8 +216,8 @@
     },
     {
       "id": "2026-09-20-hl-0007",
-      "date": "2026-09",
-      "date_precision": "month",
+      "date": "2026-09-19",
+      "date_precision": "day",
       "kind": "occupancy",
       "address_as_written": "424 Irving St",
       "street_number": "424",
@@ -216,12 +237,19 @@
       },
       "confidence": "high",
       "resolution": {
-        "status": "unresolved"
+        "status": "resolved",
+        "apn": "1754011",
+        "path": "/san-francisco/inner-sunset/irving-street/424/",
+        "eas_address": "424 IRVING ST",
+        "method": "EAS exact match on 424 IRVING ST → parcel 1754011; sf-parcels has blklot 1754011 active, 424–428 IRVING; the 2025 roll records it as multi-family residential, built 1912. EAS puts 424, 426, 428 IRVING ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 424.",
+        "checked_on": "2026-09-21",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
       },
       "publish": {
-        "status": "pending",
-        "note": "Blocked: the page does not exist yet and the seeder cannot make it. scripts/seed_pages.py and research/tools/resolve_eas.py both read the city's data through data.sf.gov, and this session's egress policy answers 403 to every CONNECT to that host (the cache under .cache/resolve-eas/ is empty, so there is nothing to fall back on). No page on the site carries this street number in its street_numbers_on_parcel, so the address cannot be joined to an existing parcel offline either. The finding is complete and ready — resolve and seed it on a run that can reach DataSF."
-      }
+        "status": "published",
+        "note": "Published on /san-francisco/inner-sunset/irving-street/424/ as hoodline-2026-09-19, and on the homepage news grid. Page seeded via research/manifests/news-2026-09-20.json. Nothing for the building block: the article names a new tenant and prior tenants, not a fact about the structure."
+      },
+      "note": "Dated to publication, not the “by the end of September” target: the opening had not happened at publication, so the target is a forecast rather than an event date. Same call as 2026-09-20-hl-0003 in this batch."
     },
     {
       "id": "2026-09-20-hl-0008",
@@ -249,7 +277,12 @@
       },
       "confidence": "high",
       "resolution": {
-        "status": "unresolved"
+        "status": "resolved",
+        "apn": "3958006",
+        "path": "/san-francisco/mission-bay/kansas-street/300/",
+        "eas_address": "300 KANSAS ST",
+        "method": "EAS exact match on 300 KANSAS ST → parcel 3958006; sf-parcels has blklot 3958006 active, 1701–1701 16TH; the 2025 roll records it as commercial retail, built 2025.",
+        "checked_on": "2026-09-21"
       },
       "publish": {
         "status": "declined",
