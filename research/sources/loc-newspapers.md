@@ -6,8 +6,8 @@
 >
 > - **Kind:** newspaper OCR corpus · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 10 batches / 58,620 pages scanned of a much larger archive.
-> - **Local corpus:** `research/corpora/loc-newspapers/` (`state.json` records batches pulled)
+> - **Coverage:** 10 batches / 58,620 pages scanned for address mentions in August 2026 (no findings file; see below), and the *Call*'s 1911 Real Estate and Financial Section read in full into `findings/loc-newspapers/sn85066387-1911-real-estate.json`.
+> - **Local corpus:** `research/corpora/loc-newspapers/` — `tar/` for the batch OCR tarballs, `txt/<lccn>/<yyyy>/<mm>/<dd>/ed-1/seq-N/ocr.txt` for the extracted pages. A fresh container has none of it.
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
 > coverage note, and anything the pass learned about getting at the source.
@@ -50,6 +50,97 @@ a street number, which is the whole constraint:
 - **Classified ads** (to let, for sale, business notices) — the bulk of the
   hits. An ad is dated proof a building **stood at that number**, and often
   states its room count, form (cottage / flat / house) and cross-streets.
+
+### Getting at it (September 2026)
+
+- **The per-page routes are walled; the bulk dump is not.** Every
+  `chroniclingamerica.loc.gov/lccn/…/ocr.txt` page, the `loc.gov` JSON search
+  and each batch's `BATCH.xml` now answer with a Cloudflare challenge (403, 429,
+  or a 308 into `tile.loc.gov` and a 404). The OCR tarballs at
+  `https://chroniclingamerica.loc.gov/data/ocr/<batch>.tar.bz2` download whole
+  — about 800 MB each, one request — and so do the directory listings under
+  `data/batches/<batch>/data/<lccn>/<reel>/`, whose folder names
+  (`1911040801`) are the issue dates. One tarball took a 429 and came through
+  on a retry ninety seconds later. Extract only the text:
+  `tar xjf <batch>.tar.bz2 -C txt --wildcards '*.txt'`.
+- **The August 2026 pass left nothing on disk.** Its `state.json` and
+  `batch-index.json` went with its container, and it wrote no findings file:
+  the 21 pages citing `loc-sf-call-*` ids are what it published, by hand. Its
+  "58,620 pages" are the 1890s and 1900s years below, and its mention counts
+  cannot be re-derived without re-fetching.
+- **The citation URL still works for a reader.** The page URL
+  `…/lccn/sn85066387/<date>/ed-1/seq-N/` opens in a browser behind the same
+  challenge a person passes without noticing; cite it, fetch the tarball.
+
+### Which batch holds which year
+
+Mapped 2026-09-22 from the batch listings (`BATCH.xml` where it answered).
+Issue counts per year; a year split across batches needs all of them.
+
+| title | year | batches (issues) |
+|---|---|---|
+| *San Francisco Call* `sn85066387` | 1895 | `curiv_dogtown_ver01` (302) |
+| | 1896 | `dogtown` (121), `carlsbad_ver01` (215), `joshuaTree_ver01` (30) |
+| | 1897 | `fredsplace_ver01` (152), `idyllwild_ver01` (212) |
+| | 1898 | `ahwahnee_ver01` (365) |
+| | 1899 | `carlsbad` (46), `exeter_ver01` (181), `joshuaTree` (137) |
+| | 1900–1905 | `albion_ver01`, `brea_ver01`, `carmel_ver01`, `darwin_ver01`, `felix_ver01`, `plasse_ver01`, `elderwood_ver02` (listings only; years not mapped), `quincy_ver01` (1901: 61, 1904: 60), `oasis_ver01` (1905: 89) |
+| | 1906–1907 | `hercules_ver01` (275 + 92), `indio_ver01` (1907: 245), `mecca_ver01` (1907: 28) |
+| | 1908 | `indio` (90), `jenner_ver01` (31), `llano_ver01` (245) |
+| | 1909 | `jenner` (92), `llano` (61), `mecca` (151), `needles_ver01` (61) |
+| | 1910 | `jenner` (90), `klamath_ver01` (122), `mecca` (122), `needles` (31) |
+| | **1911** | `curiv_betteravia_ver02` (Jan–Aug, 5,901 pages), `curiv_angwin_ver02` (Sep–Dec, 2,996 pages) — **both on disk** |
+| | 1912 | `angwin` (106; 2,680 pages on disk), `calipatria_ver03` (183), `dardanelle_ver01` (64) |
+| | 1913 | `dardanelle` (15), `grimes_ver01` (132) |
+| *Morning Call* `sn94052989` | 1890–1895 | `kaweah_ver01`, `hemet_ver01`, `garberville_ver01`, `exeter`, `idyllwild`, `oakland_ver01`, `pescadero_ver01` |
+
+### The 1911 Real Estate and Financial Section
+
+Every Saturday the *Call* ran a one- or two-page **Real Estate and Financial
+Section**; its header survives the OCR as `REAL ESTATE AND F…CIAL SECTION`
+often enough to find it, and misspelt on three Saturdays out of 51. What it
+carries, and what of it is usable:
+
+- **Leases** — the bulk. A broker's column of "For X to Y, the store at N …
+  street, five years, $…". Most name only private lessors and lessees, which
+  are left out at extraction; what survives is the building's form ("the
+  five story and basement brick building"), its name ("the Sachs building"),
+  its use (hotel, lodging house, apartment house) or the firm that took it.
+- **Sales** — each with the side of the street, the distance from a corner and
+  the lot in feet and inches, which is the whole check: "25x137:6" against the
+  roll's 3,436 sq ft settled two OCR-damaged numbers.
+- **Auction lists** — the building's rooms and form with the lot, a week before
+  the sale, and the result the following Saturday.
+- **Building news** — new construction with architect and cost, usually by
+  corner or "137:6 feet west of Mason" rather than by number. Unresolvable
+  unless Planning's `name` field names the parcel.
+- **The improvement-club column** — dated meetings at named halls: the Eureka
+  Valley Improvement hall at 406 Castro, St. Joseph's hall on Tenth Street,
+  the Oakwood Hotel at 1805 Divisadero.
+- **Noise** — about half the numbered mentions: advertisers' own office
+  addresses, land companies selling British Columbia and the Sacramento Valley,
+  and in January and February a savings bank's list of named depositors,
+  which is people and never taken.
+
+### Cautions for the 1911 section
+
+- **After 1909 the numbers are today's numbers** — and still more than half
+  did not resolve. Of 135 findings, 66 have no EAS record at their number,
+  nearly all downtown and South of Market, where a later building took several
+  lots and their numbers with them (Market between First and Fifth, Mission,
+  Kearny, Sansome, Howard). That is the design, not a defect.
+- **The same building is printed two ways.** "The Sachs building" is 110 Geary
+  in January and 140 Geary in March; a sanatorium's lease is 1811 Van Ness in
+  November and 1110 Van Ness in December; St. Joseph's is 260 Tenth in July
+  and 250 in November. Planning's name settled the first; the other two stay
+  unresolved.
+- **The roll dates the sales.** Three buildings the section sold in 1911 are
+  dated 1911 by the assessor (1637 Clay, 3731 17th, 3949 18th) — new
+  buildings on the market. Seven were rebuilt after 1911; those sales and
+  leases were declined or framed as the building before.
+- **A notable owner appears in a sale notice.** "The marine view residence of
+  Alfred Sbarboro, 3160 Jackson" — taken as a notable past resident, the
+  buyers left out.
 
 ### Cautions
 
@@ -106,3 +197,15 @@ a street number, which is the whole constraint:
   much larger archive; `batch-index.json` enumerates what has not been pulled.
 - **Verified:** 2026-08-04 (58,620 OCR pages scanned; 8,437 numbered-address
   mentions on streets that have pages, across 2,025 distinct addresses)
+- **Verified:** 2026-09-22 (the *Call*'s 1911 Real Estate and Financial
+  Section, every Saturday: 96 OCR pages, 633 numbered-address mentions, 135
+  findings — 59 resolved (8 by hand, 6 of them through a building name in
+  Planning's `name` field), 76 unresolved; 50 published on 48 pages, 18 of
+  them seeded, 9 declined. Batch file
+  `findings/loc-newspapers/sn85066387-1911-real-estate.json`.)
+- **Coverage:** 1890s and 1900s years scanned in August 2026 for mentions only
+  (above); **1911 Real Estate and Financial Section read in full**. Next: the
+  1912 section (`angwin` is on disk; fetch `calipatria_ver03` and
+  `dardanelle_ver01`), then 1913 (`grimes`), then the unscanned 1897–1899 and
+  1903–1904 years. The rest of the 1911 paper — 8,800 pages of news, where the
+  fires and the building-permit lists are — is on disk and unread.

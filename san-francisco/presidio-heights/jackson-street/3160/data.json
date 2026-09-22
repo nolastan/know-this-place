@@ -1,0 +1,139 @@
+{
+  "address": "3160 Jackson Street, San Francisco, CA 94115",
+  "path": "/san-francisco/presidio-heights/jackson-street/3160/",
+  "apn": "0974009",
+  "block": "0974",
+  "lot": "009",
+  "eas_baseid": "291732",
+  "coordinates": {
+    "lat": 37.791148,
+    "lng": -122.447092
+  },
+  "parcel": {
+    "year_built": 1904,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 5112,
+    "building_area_sqft": 3029,
+    "lot_depth_ft": 27.8,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Pacific Heights",
+    "analysis_neighborhood": "Presidio Heights",
+    "property_location_raw": "0000 3160 JACKSON             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 3157093,
+    "assessed_improvement_value": 1353040,
+    "last_sale_date": "2021-09-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Resource Evaluation Response",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Presidio Heights Historic District Extension",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1890–1930",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202606253889",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2026-06-25",
+      "status_date": "2026-06-25",
+      "estimated_cost": 1,
+      "revised_cost": 0,
+      "description": "revision to 202203220486, to the superstructure and soil shoring for excavation of basement to incorporate the effects of the shoring of the project at 50 predisio.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202203220486",
+      "type": "additions alterations or repairs",
+      "status": "reinstated",
+      "filed": "2022-03-22",
+      "status_date": "2025-04-24",
+      "estimated_cost": 3267048,
+      "revised_cost": 3267048,
+      "description": "excavating a garage,renovating the(e)structure,a west side yard addition to the property line @ basement,level 1,level 2,level 3(within 3'partial setback)west side yard addition @level 4 with 3' setback.**maher n/a**",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2008–2026",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JACKSON&street_type=ST&address_number=3160",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0974009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0974&lot=009",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0974009",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44709214282311%2037.79114832561445)%27)",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "loc-sf-call-1911-11-04",
+      "name": "The San Francisco Call, 4 November 1911, p. 18",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1911-11-04/ed-1/seq-18/",
+      "retrieved": "2026-09-22"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1911-11-04",
+      "kind": "sale",
+      "description": "Alfred Sbarboro's residence, with its view over the bay, was sold to buyers who took it as their own home.",
+      "source": "loc-sf-call-1911-11-04",
+      "cross_streets": "Presidio avenue and Lyon"
+    }
+  ],
+  "notable_residents": [
+    {
+      "name": "Alfred Sbarboro",
+      "period": "until 1911",
+      "detail": "His residence until its sale in November 1911.",
+      "source": "loc-sf-call-1911-11-04"
+    }
+  ]
+}

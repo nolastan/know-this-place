@@ -176,8 +176,11 @@ python3 research/tools/resolve_eas.py manifest research/findings/<id>/<batch>.js
 ```
 
 `manifest` writes `research/manifests/<batch>.json` — the resolved parcels that
-have no page yet, in the shape `seed_pages.py seed-list` reads. Run it after
-`apply`; step 4 seeds from it. **Group its parcels by the roll's
+have no page yet, in the shape `seed_pages.py seed-list` reads, leaving out any
+finding already marked `publish.status: "declined"`. Run it after `apply`, and
+after recording the declines you already know — a sale on a parcel the roll
+says was rebuilt, a bare lease — or it seeds pages for them; step 4 seeds from
+it. **Group its parcels by the roll's
 `property_location` before seeding**: a tower on an assembled block keeps its
 lots, each still carrying a demolished predecessor's number in EAS, and each
 comes off the roll with no build year, no storeys and the tower's address. One
