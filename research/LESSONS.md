@@ -2078,3 +2078,21 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   sharing a block. Where they collide, the second parcel has no page to write
   to and needs a person: this module doesn't yet have a rule for which of two
   same-numbered parcels gets the page.
+
+- **`python3 scripts/validate.py` does not check `corpus.jsonl` is current —
+  CI's `validate` workflow does, and it fails on a diff, not a description.**
+  A 2026-09-22 batch ran `build_site.py` once after seeding new pages, then
+  wrote `historic_survey` data into 373 more `data.json` files and re-rendered
+  only those pages with `seed_pages.py render` — which keeps `index.html`
+  correct but never touches `corpus.jsonl`, a separate derived file
+  `build_site.py`'s own corpus-index step writes. Local `validate.py` passed
+  (`OK — N page(s) pass the contract`) both before and after, because it
+  checks the rendering contract, not this file; the PR's `validate` GitHub
+  Actions check caught the stale `corpus.jsonl` and failed with a raw JSON
+  diff, which took a run of the actual workflow to see, not a local rerun of
+  the tool named in its message. *A publish pass that touches
+  `data.json` after the run's own `build_site.py` call needs to run
+  `build_site.py` again — not just re-render the touched pages — before the
+  final commit,* per [RUNBOOK.md](RUNBOOK.md)'s own "Before you commit" step;
+  skipping straight to `seed_pages.py render` for a small edit list is the
+  trap.
