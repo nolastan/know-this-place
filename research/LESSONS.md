@@ -2046,6 +2046,45 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   before it was one. Those clauses were removed on 2026-09-18 wherever the
   designation postdates 1982.
 
+- **An archive whose pages are walled can still hand over its bulk dump.**
+  In September 2026 every per-page and API route on Chronicling America —
+  `…/lccn/<lccn>/<date>/ed-1/seq-N/ocr.txt`, the `loc.gov` JSON search, each
+  batch's `BATCH.xml` — answered with a Cloudflare challenge (403, 429 or a
+  308 into `tile.loc.gov` and a 404). The bulk OCR tarballs at
+  `chroniclingamerica.loc.gov/data/ocr/<batch>.tar.bz2` downloaded whole, one
+  ~800 MB request per batch, and the plain directory listings under
+  `data/batches/` answered too, which is enough to map every batch to its
+  titles and years. One tarball got a 429 and came through on a retry ninety
+  seconds later. *Before calling a digitized archive closed, look for the dump
+  the archive publishes for mirrors.*
+  ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+
+- **`manifest` seeded pages for findings the run had declined.** It picked
+  every resolved finding whose page did not exist, so a 1911 sale on a parcel
+  rebuilt in 1963 would have created a page carrying nothing from the batch
+  that made it. `build_manifest` now skips `publish.status: "declined"`.
+  *Record the declines before running `manifest`.*
+
+- **Write a page's `data.json` back in the format it came in.** Pages on disk
+  are indented by one space or two, and some escape non-ASCII. A publisher
+  script that dumped every page with `indent=2` turned fifty added facts into
+  a 5,000-line diff, and sorting `historical_record` by date moved entries
+  nobody had touched. *Read the indent off the file's second line, keep
+  `ensure_ascii` as the file had it, keep its trailing newline, and append new
+  timeline entries rather than re-sorting — the renderer orders them.*
+
+- **A building's name in the record places what its street number cannot.**
+  Six findings in one newspaper batch resolved on `3tsw-4idn`'s `name` field
+  and nothing else: stores "in the Flood building" at Market numbers EAS no
+  longer holds, a "Bancroft building, 736 Market" that Planning puts at 725
+  (736 is the 1912 Bankers Investment Building, which the same section
+  announced two months later), and two apartment houses given only by their
+  corner. Planning's names are free to fetch whole —
+  `3tsw-4idn.json?$select=apn,name&$where=name is not null&$limit=50000` is
+  4,420 rows — so grep that file for every building the record names before
+  writing one off. The same check caught a misprint: "the Sachs building, 110
+  Geary" lands on a 1984 building Planning calls the E. Simon Building.
+
 - **A dossier's "Remaining" row is prose, and prose goes stale.** The
   sf-context-statements dossier's `Remaining` line named the Market & Octavia
   document as "still to acquire" (referring to issue #115) three weeks after a

@@ -1,0 +1,124 @@
+{
+  "address": "1007 Castro Street, San Francisco, CA 94114",
+  "path": "/san-francisco/noe-valley/castro-street/1007/",
+  "apn": "3624029",
+  "block": "3624",
+  "lot": "029",
+  "eas_baseid": "363394",
+  "coordinates": {
+    "lat": 37.753446,
+    "lng": -122.433967
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2625,
+    "building_area_sqft": 2019,
+    "lot_depth_ft": 5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 1007 CASTRO              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 74448,
+    "assessed_improvement_value": 72911
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Noe & Alvarado Streets Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1885–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200009221329",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-09-22",
+      "status_date": "2001-03-22",
+      "estimated_cost": 18700,
+      "revised_cost": 18700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9020961",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-10-12",
+      "status_date": "1992-11-22",
+      "estimated_cost": 27000,
+      "description": "remove porch area of (e) structure, remove (e) foundation",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASTRO&street_type=ST&address_number=1007",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3624029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3624&lot=029",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3624029",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43396653516214%2037.75344636776685)%27)",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "loc-sf-call-1911-02-04",
+      "name": "The San Francisco Call, 4 February 1911, p. 17",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1911-02-04/ed-1/seq-17/",
+      "retrieved": "2026-09-22"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1911-02-04",
+      "kind": "advertisement",
+      "description": "Two flats, of seven and five rooms each with bath, offered at auction on 7 February 1911 on a 25 by 105-foot lot.",
+      "source": "loc-sf-call-1911-02-04",
+      "cross_streets": "Alvarado and 23rd",
+      "lot_as_recorded": "25x105"
+    }
+  ]
+}

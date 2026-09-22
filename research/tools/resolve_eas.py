@@ -1573,6 +1573,11 @@ def build_manifest(city: City, data: dict) -> list:
         res = f.get("resolution") or {}
         if res.get("status") != "resolved" or not res.get("apn"):
             continue
+        # A declined finding is not going on a page, so it must not seed one:
+        # a resolved 1911 sale on a parcel since rebuilt would otherwise leave a
+        # new page carrying nothing from the batch that created it.
+        if (f.get("publish") or {}).get("status") == "declined":
+            continue
         m = re.match(r"^/([a-z\-]+)/([a-z\-]+)/([a-z0-9\-]+)/([^/]+)/$", res["path"] or "")
         if not m:
             continue
