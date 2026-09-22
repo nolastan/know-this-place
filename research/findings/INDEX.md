@@ -137,7 +137,7 @@ sit in — the three it touched most, and how many in all.
 | `sf-context-statements/large-apartment-hcs.json` | 89 | 199 KB | 1905–2024 | 72 | 58 | `pacific-heights`, `russian-hill`, `nob-hill` +12 |
 | `sf-context-statements/lgbtq-hcs.json` | 382 | 617 KB | 1872–2016 | 307 | 289 | `castro`, `mission`, `tenderloin` +25 |
 | `sf-context-statements/lgbtq-heritage-strategy.json` | 0 | 2 KB | — | 0 | 0 | — |
-| `sf-context-statements/market-octavia-district-records.json` | 434 | 901 KB | 1912–2010 | 370 | 370 | `hayes-valley`, `western-addition`, `castro` |
+| `sf-context-statements/market-octavia-district-records.json` | 434 | 917 KB | 1912–2010 | 370 | 370 | `hayes-valley`, `western-addition`, `castro` |
 | `sf-context-statements/market-octavia-hcs.json` | 496 | 886 KB | 1875–2007 | 425 | 425 | `mission`, `south-of-market`, `castro` +4 |
 | `sf-context-statements/market-octavia-survey-forms.json` | 473 | 1.0 MB | 1870–2010 | 385 | 378 | `hayes-valley`, `mission`, `castro` +3 |
 | `sf-context-statements/mission-dolores-hcs.json` | 83 | 126 KB | 2022 | 66 | 66 | `castro`, `mission` |
