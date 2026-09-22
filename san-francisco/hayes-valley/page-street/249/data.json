@@ -1,0 +1,166 @@
+{
+  "address": "249 Page Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/page-street/249/",
+  "apn": "0852019A",
+  "block": "0852",
+  "lot": "019A",
+  "eas_baseid": "289578",
+  "coordinates": {
+    "lat": 37.773515,
+    "lng": -122.424829
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 1,
+    "bedrooms": 4,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 1207,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Hayes Valley",
+    "property_location_raw": "0000 0249 PAGE                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2349614,
+    "assessed_improvement_value": 1006976,
+    "last_sale_date": "2017-09-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1910",
+    "survey_name": "249 Page St",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Hayes Valley Residential Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1860–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202208261344",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-08-26",
+      "status_date": "2022-08-26",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "replace 6 sets of dbl hung sashes and 2 casement sashes. wood for wood with ogee lugs 3 visible from the street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202205043547",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-05-04",
+      "status_date": "2022-10-18",
+      "estimated_cost": 33000,
+      "revised_cost": 33000,
+      "description": "remodel of 2 existing bathrooms in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209119476",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-09-11",
+      "status_date": "2012-10-09",
+      "estimated_cost": 4390,
+      "revised_cost": 4390,
+      "description": "increase attic insulation level to r-38 with blown-in fiberglass. building envelopes sealing. air filtration unit on return duct of furnace. duct system sealing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9717228",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-09-05",
+      "status_date": "1997-12-02",
+      "estimated_cost": 8480,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9509446",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-06-20",
+      "status_date": "1995-12-20",
+      "estimated_cost": 10000,
+      "description": "kitchen remodel w/new elec & plumb.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "1995–2022",
+    "shown_on_page": 5,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PAGE&street_type=ST&address_number=249",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0852019A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0852&lot=019A",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0852019A",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42482931866144%2037.77351461375439)%27)",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "hayes-valley-hd-2008",
+      "name": "C. Harvey, J. Lammers (Page & Turnbull), District Record: Hayes Valley Residential Historic District Update, DPR 523D, January 2008",
+      "query": "https://sfplanning.org/sites/default/files/documents/preserv/DPRforms/DPR%20523D_Hayes%20Valley%20Residential%20Update%206_6_08.pdf",
+      "listing": "https://sfplanning.org/historic-preservation-survey-forms-dpr523",
+      "retrieved": "2026-09-22"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Hayes Valley Residential Historic District Update (2008)",
+      "source": "hayes-valley-hd-2008",
+      "existing_district": "Hayes Valley Residential Historic District",
+      "finding": "Contributor to the Hayes Valley Residential Historic District",
+      "apn_as_surveyed": "0852/019A",
+      "address_as_surveyed": "249 Page ST"
+    }
+  ]
+}

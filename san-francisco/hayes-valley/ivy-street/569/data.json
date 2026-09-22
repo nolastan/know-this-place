@@ -1,0 +1,175 @@
+{
+  "address": "569 Ivy Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/ivy-street/569/",
+  "apn": "0806063",
+  "block": "0806",
+  "lot": "063",
+  "eas_baseid": "491715",
+  "coordinates": {
+    "lat": 37.776728,
+    "lng": -122.427476
+  },
+  "parcel": {
+    "year_built": 1890,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "building_area_sqft": 799,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "NA",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Hayes Valley",
+    "property_location_raw": "0000 0569 IVY                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 799089,
+    "assessed_improvement_value": 532725,
+    "last_sale_date": "2022-05-06"
+  },
+  "historic_district": {
+    "name": "Hayes Valley Residential Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1860–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202401123900",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-01-12",
+      "status_date": "2024-08-13",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "replace 4 sets of double hung sashes, wood for wood, in kind, and visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202305037031",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-05-03",
+      "status_date": "2023-05-10",
+      "estimated_cost": 12700,
+      "revised_cost": 12700,
+      "description": "front of the house, flashing top of winodw with coppers- 6 windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201904258976",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2019-04-25",
+      "status_date": "2019-04-25",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "dry rot repair around basement door at front facade and at rear facade; less than 100 sf ft area total.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201904168095",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-04-16",
+      "status_date": "2019-04-30",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M884367",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-02-02",
+      "status_date": "2018-02-02",
+      "revised_cost": 244,
+      "description": "per pa #201706300827, add address to new 2nd unit at block 0806, lot 016a as; 569 ivy street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108135903",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-08-13",
+      "status_date": "2003-03-06",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "to renew pa#9920721s & 2001/03/28/5379 to complete work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200103285379",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-03-28",
+      "status_date": "2003-03-06",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "correct item 9a of pa 99207215. to conforms w/written description at line 16. & relataed approvplans",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9920721S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1999-09-30",
+      "status_date": "2003-03-06",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "new rear addition & deck seismic upgrade of repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=IVY&street_type=ST&address_number=569",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0806063&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0806&lot=063",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42747582049788%2037.77672813282525)%27)",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "hayes-valley-hd-2010",
+      "name": "N. Moses Corrette (San Francisco Planning Department), District Record: Hayes Valley Residential Historic District Update #2, DPR 523L, May 2010",
+      "query": "https://sfplanning.org/sites/default/files/documents/preserv/DPR%20523L%20Hayes%20Valley%20Residential%20Update2.pdf",
+      "listing": "https://sfplanning.org/historic-preservation-survey-forms-dpr523",
+      "retrieved": "2026-09-22"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Hayes Valley Residential Historic District Update #2 (2010)",
+      "source": "hayes-valley-hd-2010",
+      "existing_district": "Hayes Valley Residential Historic District",
+      "finding": "Contributor to the Hayes Valley Residential Historic District, automatically listed in the California Register in 1996",
+      "proposed_status_code": "2D2",
+      "apn_as_surveyed": "0806/014A",
+      "address_as_surveyed": "569 Ivy St"
+    }
+  ]
+}

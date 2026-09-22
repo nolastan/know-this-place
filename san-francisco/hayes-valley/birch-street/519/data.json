@@ -1,0 +1,144 @@
+{
+  "address": "519–525 Birch Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/birch-street/519/",
+  "apn": "0794005A",
+  "block": "0794",
+  "lot": "005A",
+  "eas_baseid": "425034",
+  "coordinates": {
+    "lat": 37.777954,
+    "lng": -122.425321
+  },
+  "address_range": "519–525",
+  "street_numbers_on_parcel": [
+    "519",
+    "521",
+    "523",
+    "525"
+  ],
+  "parcel": {
+    "year_built": 1901,
+    "units": 4,
+    "stories": 2,
+    "rooms": 16,
+    "bathrooms": 4,
+    "bedrooms": 8,
+    "lot_area_sqft": 1659,
+    "building_area_sqft": 2430,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Hayes Valley",
+    "property_location_raw": "0525 0519 BIRCH               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 799749,
+    "assessed_improvement_value": 266575,
+    "last_sale_date": "2004-04-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1901",
+    "survey_name": "519-25 Birch Street",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Hayes Valley Residential Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1860–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201612054187",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-12-05",
+      "status_date": "2016-12-05",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "pre-construction meeting is requared with city inspetor. repair fungus damaged lower and upper left deck and upper right deck. no structural repairs, less than 50% in rear. no structural changes replacement of fungus damaged members only. refer to golden gate termite report #20836",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9921278",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-10-07",
+      "status_date": "1999-11-24",
+      "estimated_cost": 5000,
+      "description": "repair existing deck and replace existing sliding glass dr",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8915724",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-08-25",
+      "status_date": "1990-08-22",
+      "estimated_cost": 900,
+      "description": "repair exterior siding, repair sheetrock-bathroom, etc",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BIRCH&street_type=ST&address_number=519",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0794005A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0794&lot=005A",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0794005A",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42532110394214%2037.777954351610354)%27)",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "hayes-valley-hd-2008",
+      "name": "C. Harvey, J. Lammers (Page & Turnbull), District Record: Hayes Valley Residential Historic District Update, DPR 523D, January 2008",
+      "query": "https://sfplanning.org/sites/default/files/documents/preserv/DPRforms/DPR%20523D_Hayes%20Valley%20Residential%20Update%206_6_08.pdf",
+      "listing": "https://sfplanning.org/historic-preservation-survey-forms-dpr523",
+      "retrieved": "2026-09-22"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Hayes Valley Residential Historic District Update (2008)",
+      "source": "hayes-valley-hd-2008",
+      "existing_district": "Hayes Valley Residential Historic District",
+      "finding": "Contributor to the Hayes Valley Residential Historic District",
+      "apn_as_surveyed": "0794/005A",
+      "address_as_surveyed": "519-525 Birch ST"
+    }
+  ]
+}

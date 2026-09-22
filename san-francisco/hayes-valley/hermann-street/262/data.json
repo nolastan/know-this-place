@@ -1,0 +1,161 @@
+{
+  "address": "262 Hermann Street, San Francisco, CA 94117",
+  "path": "/san-francisco/hayes-valley/hermann-street/262/",
+  "apn": "0868072",
+  "block": "0868",
+  "lot": "072",
+  "eas_baseid": "289958",
+  "coordinates": {
+    "lat": 37.770498,
+    "lng": -122.429502
+  },
+  "parcel": {
+    "year_built": 1900,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2000,
+    "building_area_sqft": 1085,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "NA",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Hayes Valley",
+    "property_location_raw": "0000 0262 HERMANN             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 133125,
+    "assessed_improvement_value": 280431
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Hayes Valley Residential Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1860–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200410136622",
+      "type": "demolitions",
+      "status": "issued",
+      "filed": "2004-10-13",
+      "status_date": "2005-12-20",
+      "description": "demolish rear garage (only)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9320145",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-11-15",
+      "status_date": "1994-09-26",
+      "estimated_cost": 250,
+      "description": "under pinning",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9010511",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-05-30",
+      "status_date": "1990-09-13",
+      "estimated_cost": 400,
+      "description": "infill garage window, add new footing 24\" long",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9008213",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-04-27",
+      "status_date": "1990-09-04",
+      "estimated_cost": 3000,
+      "description": "replace dryrotted existing framing, install concrete cap",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9004165",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-03-05",
+      "status_date": "1990-09-13",
+      "estimated_cost": 23000,
+      "description": "add non bearing walls in basement utility room & 1/f",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9004168",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-03-02",
+      "status_date": "1990-09-13",
+      "estimated_cost": 15000,
+      "description": "kitchen and bathroom remodel, single family home",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HERMANN&street_type=ST&address_number=262",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0868072&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0868&lot=072",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0868072",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42950161273524%2037.770497677562105)%27)",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "hayes-valley-hd-2010",
+      "name": "N. Moses Corrette (San Francisco Planning Department), District Record: Hayes Valley Residential Historic District Update #2, DPR 523L, May 2010",
+      "query": "https://sfplanning.org/sites/default/files/documents/preserv/DPR%20523L%20Hayes%20Valley%20Residential%20Update2.pdf",
+      "listing": "https://sfplanning.org/historic-preservation-survey-forms-dpr523",
+      "retrieved": "2026-09-22"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Hayes Valley Residential Historic District Update #2 (2010)",
+      "source": "hayes-valley-hd-2010",
+      "existing_district": "Hayes Valley Residential Historic District",
+      "finding": "Contributor to the Hayes Valley Residential Historic District, automatically listed in the California Register in 1996",
+      "proposed_status_code": "2D2",
+      "apn_as_surveyed": "0868/072",
+      "address_as_surveyed": "262 Hermann St"
+    }
+  ]
+}

@@ -2045,3 +2045,54 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   carries now, so 7 Columbus Avenue read as City Landmark No. 237 twenty years
   before it was one. Those clauses were removed on 2026-09-18 wherever the
   designation postdates 1982.
+
+- **A dossier's "Remaining" row is prose, and prose goes stale.** The
+  sf-context-statements dossier's `Remaining` line named the Market & Octavia
+  document as "still to acquire" (referring to issue #115) three weeks after a
+  different batch, `market-octavia-survey-forms`, had already answered #115 and
+  a sibling batch, `market-octavia-hcs`, had already read the context statement
+  itself cover to cover — appendices, narrative and all — and published 425 of
+  its 496 findings. Nothing had re-checked the sentence since. A 2026-09-22
+  session downloaded the same 136-page PDF, parsed the same two appendix
+  tables, resolved 202 addresses and got as far as writing a findings file
+  before `check.py --peek` on a neighbouring batch surfaced the duplicate.
+  *Before starting a mining pass, check the source's own "Findings files" list
+  (or `findings/INDEX.md`) for a batch that already names the document you're
+  about to acquire — not just the "Remaining" sentence next to it.* A `grep -i
+  <document name>` across the dossier catches it in one line; the register's
+  prose summary is written once and not guaranteed to be re-derived.
+
+- **Two different active parcels can carry the same lowest EAS number, and the
+  resolver's path never notices.** 501 Grove Street is EAS's lowest number on
+  *both* parcel 0807001 (501–503 Grove) and parcel 0807001A (501–505 Grove /
+  416–418 Ivy, a corner lot). `resolve_eas.py`'s lowest-number rule computes
+  `grove-street/501/` for a finding on either parcel, with nothing to say the
+  path is already spoken for by the other one — a 2026-09-22 batch wrote two
+  findings about 0807001A onto the page the site had already built around
+  0807001. `check.py` catches one parcel resolved to two paths; it does not
+  catch two parcels resolved to the same path, because it groups by APN, not
+  by path. *After publishing to a resolver-computed path, confirm the page's
+  own `apn` matches the finding's `apn`* — a one-line check
+  (`json.load(open(path/"data.json"))["apn"] == finding["resolution"]["apn"]`)
+  over every resolved finding — before trusting a batch that touches parcels
+  sharing a block. Where they collide, the second parcel has no page to write
+  to and needs a person: this module doesn't yet have a rule for which of two
+  same-numbered parcels gets the page.
+
+- **`python3 scripts/validate.py` does not check `corpus.jsonl` is current —
+  CI's `validate` workflow does, and it fails on a diff, not a description.**
+  A 2026-09-22 batch ran `build_site.py` once after seeding new pages, then
+  wrote `historic_survey` data into 373 more `data.json` files and re-rendered
+  only those pages with `seed_pages.py render` — which keeps `index.html`
+  correct but never touches `corpus.jsonl`, a separate derived file
+  `build_site.py`'s own corpus-index step writes. Local `validate.py` passed
+  (`OK — N page(s) pass the contract`) both before and after, because it
+  checks the rendering contract, not this file; the PR's `validate` GitHub
+  Actions check caught the stale `corpus.jsonl` and failed with a raw JSON
+  diff, which took a run of the actual workflow to see, not a local rerun of
+  the tool named in its message. *A publish pass that touches
+  `data.json` after the run's own `build_site.py` call needs to run
+  `build_site.py` again — not just re-render the touched pages — before the
+  final commit,* per [RUNBOOK.md](RUNBOOK.md)'s own "Before you commit" step;
+  skipping straight to `seed_pages.py render` for a small edit list is the
+  trap.
