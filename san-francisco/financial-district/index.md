@@ -10,6 +10,7 @@ The office district north of Market Street, in the city's Financial District/Sou
 - [Clay Street](clay-street/) — 1 building, built 1906; 1 in the Chinatown Historic District.
 - [Commercial Street](commercial-street/) — 1 building; 1 in the Chinatown Historic District.
 - [Dashiell Hammett Street](dashiell-hammett-street/) — 2 buildings, built 1912; 2 in the Lower Nob Hill Apartment Hotel Historic District.
+- [Davis Court](davis-court/) — 1 building, built 1966.
 - [Davis Street](davis-street/) — 1 building, built 1927; 1 in the Northeast Waterfront Historic District.
 - [Drumm Street](drumm-street/) — 1 building, built 1912.
 - [Embarcadero Center](embarcadero-center/) — 1 building, built 1979.

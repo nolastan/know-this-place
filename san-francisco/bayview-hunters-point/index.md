@@ -25,6 +25,7 @@ San Francisco's south-eastern quarter, settled from the 1860s as the industrial 
 - [Industrial Street](industrial-street/) — 1 building, built 1956.
 - [Ingalls Street](ingalls-street/) — 4 buildings, built 1920–1932.
 - [Innes Avenue](innes-avenue/) — 3 buildings, built 1890–1920; 1 in the India Basin Scow Schooner Boatyard Vernacular Cultural Landscape.
+- [Jerrold Avenue](jerrold-avenue/) — 2 buildings, built 1963.
 - [Keith Street](keith-street/) — 1 building, built 2004.
 - [Kirkwood Avenue](kirkwood-avenue/) — 7 buildings, built 1900–1941.
 - [Kiska Road](kiska-road/) — 1 building, built 1959.

@@ -7,6 +7,7 @@ The oldest Chinese community in North America, on the slopes above Portsmouth Sq
 - [Battery Street](battery-street/) — 1 building, built 1989.
 - [Beckett Street](beckett-street/) — 2 buildings, built 1908–1922; 2 in the Chinatown Historic District.
 - [Broadway](broadway/) — 4 buildings, built 1907; 4 in the Jackson Square Historic District Extension.
+- [California Street](california-street/) — 1 building, built 1908.
 - [Clay Street](clay-street/) — 1 building, built 1900.
 - [Columbus Avenue](columbus-avenue/) — 17 buildings, built 1907–1915; 2 in the Jackson Square Historic District.
 - [Commercial Street](commercial-street/) — 1 building, built 1923; 1 in the Chinatown Historic District.
