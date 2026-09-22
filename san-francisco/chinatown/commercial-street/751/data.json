@@ -1,0 +1,169 @@
+{
+  "address": "751–755 Commercial Street, San Francisco, CA 94108",
+  "path": "/san-francisco/chinatown/commercial-street/751/",
+  "apn": "0226024",
+  "block": "0226",
+  "lot": "024",
+  "eas_baseid": "458480",
+  "coordinates": {
+    "lat": 37.793797,
+    "lng": -122.405479
+  },
+  "address_range": "751–755",
+  "street_numbers_on_parcel": [
+    "751",
+    "755"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 2,
+    "stories": 3,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 888,
+    "building_area_sqft": 2280,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "NA",
+    "zoning": "CCB",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Financial District North",
+    "analysis_neighborhood": "Chinatown",
+    "property_location_raw": "0755 0751 COMMERCIAL          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 825354,
+    "assessed_improvement_value": 886903,
+    "last_sale_date": "2021-02-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Chinatown Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1930/1938",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202108317536",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-08-31",
+      "status_date": "2022-03-29",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "white vynil window (double hung) installation in the existing opening. the opening deminsions are 72 in. height by 26 in width. the proposed new opening is 50\" x 26\" the frame work will be performed to make the opening smaller. the window is facing the back of home. u-factor <0.30",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202107305528",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-07-30",
+      "status_date": "2022-04-11",
+      "estimated_cost": 40000,
+      "revised_cost": 50000,
+      "description": "two bathroom remodel, 1 toilet, smoke detectors installation, 1 kitchen remodel.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200111153330",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2001-11-15",
+      "status_date": "2007-01-02",
+      "estimated_cost": 22000,
+      "revised_cost": 22000,
+      "description": "seismic upgrade as per bolt plus with irregularities corrected for this unreinforced masonry buildi",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9912279",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-06-21",
+      "status_date": "1999-08-13",
+      "estimated_cost": 3400,
+      "description": "damage repair from water",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8714981",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-10-19",
+      "status_date": "1988-03-01",
+      "estimated_cost": 1500,
+      "description": "parapet bracing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "1987–2021",
+    "shown_on_page": 5,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=COMMERCIAL&street_type=ST&address_number=751",
+      "retrieved": "2026-09-21"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0226024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-21"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0226&lot=024",
+      "retrieved": "2026-09-21"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0226024",
+      "retrieved": "2026-09-21"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40547915440678%2037.793797443102314)%27)",
+      "retrieved": "2026-09-21"
+    },
+    {
+      "id": "sf-environmental-review-600californiastr1119sanf",
+      "name": "San Francisco Department of City Planning, 600 California Street, Federal Home Loan Bank of San Francisco: Initial Study, 1986.",
+      "query": "https://archive.org/details/600californiastr1119sanf",
+      "retrieved": "2026-09-21"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1976",
+      "kind": "survey",
+      "description": "Rated '3' in the city planning department's 1976 architectural survey.",
+      "source": "sf-environmental-review-600californiastr1119sanf"
+    }
+  ],
+  "unknowns": [
+    "The 1986 initial study that noted this building's rating files the address under Assessor's Block 241; the parcel is on Block 226."
+  ]
+}

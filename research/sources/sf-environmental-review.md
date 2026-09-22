@@ -680,14 +680,46 @@
   above — procedural notices, transportation and airport, out-of-city — were
   scanned for numbered-address mentions and produced nothing to publish.
 
-  **Remaining: the rest of the project-titled documents — the finals and
-  supplements of projects whose drafts are read, the lower-yield area-plan
+  **Remaining: the finals and supplements of projects whose drafts are read
+  (~209 catalogue items, mostly restatement), the lower-yield area-plan
   documents scanned but not read whole, and the unmined tables inside the
   documents that were: Mission Bay's Table VI.I.1 survey matrix, the Van Ness
   Avenue 47-building survey list, the Golden Gate Park resource inventory and
   the Bayview Appendix B rows beyond the narrative list.**
 
-- **Verified:** 2026-09-19, ninth run: the area-and-policy-plan group — 18 of 56
+- **Verified:** 2026-09-21, tenth run: the unread draft-stage documents — all
+  84 catalogue items never previously read (38 draft EIRs plus 46 initial
+  studies, negative declarations and related reports; same-project volumes
+  read as one work unit, so 72 reads) — 1,100 findings, 450 resolved, 353
+  published on 257 pages, 84 of them seeded by the run. Its richest documents
+  are the Federal Building DEIS (the San Buenaventura rated-buildings tables
+  for both Market Street Areas of Potential Effect — Hotel Odeon, the Old Post
+  Office, Odd Fellows Hall, the Bell/Embassy Theatre's actual 1995 demolition,
+  plus the federal building inventory); the 1973 Yerba Buena Center clearance
+  EIR (the on-foot Fourth/Folsom/Howard survey of what stood on the
+  redevelopment blocks, and Table E-29's October 1971 census of 101
+  residential hotels used as relocation housing); the Kaiser Geary Campus DEIR
+  appendix (the whole 1954–1985 campus build-out and the former French
+  Hospital's National Register trio); the Giants ballpark DEIR (the Berry
+  Street warehouse roster and Steamboat Point shipyard history); and the
+  Yerba Buena Island ramps DEIR (the naval station's DPR forms — Quarters
+  1–10, Nimitz House, the 1934 fire and 1935 rebuild). What it learned:
+  **subagents reading one document each scale the batch** — 72 parallel
+  extraction passes digested ~7,000 candidate address mentions into the
+  findings, and per-document JSON fragments merged cleanly into one file;
+  **a printed assessor block belongs to the project site, not to every
+  building its survey table lists** — the 600 California and California-Powell
+  studies filed their neighbours' rows under the project's own block, which
+  produced most of the run's 119 recorded-resolution conflicts, all resolved
+  by address rather than by the printed lot; **two scans of the same draft EIR
+  differ in what they record** — the January 1975 Bechtel draft records
+  occupants and vacancies where the August draft records demolitions, so both
+  scans earned their read; and **the C&R volumes of an EIR add little** — the
+  America's Cup responses reprinted the draft's cultural-resources text with
+  almost nothing new, and its appendix volume was scanned upside-down into
+  unreversed OCR.
+
+  **2026-09-19**, ninth run: the area-and-policy-plan group — 18 of 56
   project-documents (76 IA items) read whole — 288 findings, 156 resolved, 134
   published on 121 pages, 26 of them seeded. What it learned: **a fixed-column
   table is a two-dimensional object** — the Downtown Plan's Table E.3 came out
