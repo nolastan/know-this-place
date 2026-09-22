@@ -1,0 +1,171 @@
+{
+  "address": "262 Oak Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/oak-street/262/",
+  "apn": "0832074",
+  "block": "0832",
+  "lot": "074",
+  "eas_baseid": "464803",
+  "coordinates": {
+    "lat": 37.775061,
+    "lng": -122.423651
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "building_area_sqft": 1521,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "NA",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Hayes Valley",
+    "property_location_raw": "0000 0262 OAK                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 162856,
+    "assessed_improvement_value": 183212
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "survey_name": "262 Oak St",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Hayes Valley Residential Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1860–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200907293726",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-07-29",
+      "status_date": "2009-11-16",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "reconstruct existing rear stairs and deck to comply with nov# 2009.96401(hid)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200903063587",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-03-06",
+      "status_date": "2009-11-16",
+      "estimated_cost": 1000,
+      "revised_cost": 2000,
+      "description": "voluntary bolting of foundation sill: boldting of mudsill to foundation on perimeter footings of building. use 5/8 x10\" j bolt galvazined @ 24\" @ center and 1\" at an ends. min 7\" embedment. along all perimeter ftg 50 ft each side prop line wall and 25 ft approx front and rear wall ftgs. approx 75",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9813982",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1998-07-22",
+      "status_date": "2001-05-18",
+      "estimated_cost": 2500,
+      "description": "remove existing stairway at rear & provide fire escape at re",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9118553",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-10-02",
+      "status_date": "1992-03-10",
+      "estimated_cost": 200,
+      "description": "install gas line for water heater. install new meter.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9105150",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1991-04-02",
+      "status_date": "1992-04-14",
+      "estimated_cost": 6000,
+      "description": "new doors at garage, new fire escapes at 1st & 2nd level",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8715562",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-10-29",
+      "status_date": "1988-07-20",
+      "estimated_cost": 20000,
+      "description": "remove non structural wall & added on 2nd floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8713689",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-09-23",
+      "status_date": "1987-12-09",
+      "estimated_cost": 10000,
+      "description": "patch walls, ceiling & paint; new cabinets in kitchen",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=OAK&street_type=ST&address_number=262",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0832074&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0832&lot=074",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0832074",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4236512933974%2037.775061442423834)%27)",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "hayes-valley-hd-2008",
+      "name": "C. Harvey, J. Lammers (Page & Turnbull), District Record: Hayes Valley Residential Historic District Update, DPR 523D, January 2008",
+      "query": "https://sfplanning.org/sites/default/files/documents/preserv/DPRforms/DPR%20523D_Hayes%20Valley%20Residential%20Update%206_6_08.pdf",
+      "listing": "https://sfplanning.org/historic-preservation-survey-forms-dpr523",
+      "retrieved": "2026-09-22"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Hayes Valley Residential Historic District Update (2008)",
+      "source": "hayes-valley-hd-2008",
+      "existing_district": "Hayes Valley Residential Historic District",
+      "finding": "Contributor to the Hayes Valley Residential Historic District",
+      "apn_as_surveyed": "0832/074-76",
+      "address_as_surveyed": "262 Oak ST"
+    }
+  ]
+}

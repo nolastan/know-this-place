@@ -1,0 +1,129 @@
+{
+  "address": "432–436 Lily Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/lily-street/432/",
+  "apn": "0841024A",
+  "block": "0841",
+  "lot": "024A",
+  "eas_baseid": "455510",
+  "coordinates": {
+    "lat": 37.773945,
+    "lng": -122.428097
+  },
+  "address_range": "432–436",
+  "street_numbers_on_parcel": [
+    "432",
+    "436"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 3,
+    "rooms": 12,
+    "bathrooms": 3,
+    "lot_area_sqft": 1119,
+    "building_area_sqft": 3423,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Hayes Valley",
+    "property_location_raw": "0436 0432 LILY                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 93808,
+    "assessed_improvement_value": 632400
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "survey_name": "432-436 Lily St",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Hayes Valley Residential Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1860–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "9416662",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-10-12",
+      "status_date": "1995-05-19",
+      "estimated_cost": 5985,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8919258",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-10-11",
+      "status_date": "1990-07-03",
+      "estimated_cost": 21500,
+      "description": "termite repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LILY&street_type=ST&address_number=432",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0841024A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0841&lot=024A",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0841024A",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4280965409381%2037.77394484678324)%27)",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "hayes-valley-hd-2008",
+      "name": "C. Harvey, J. Lammers (Page & Turnbull), District Record: Hayes Valley Residential Historic District Update, DPR 523D, January 2008",
+      "query": "https://sfplanning.org/sites/default/files/documents/preserv/DPRforms/DPR%20523D_Hayes%20Valley%20Residential%20Update%206_6_08.pdf",
+      "listing": "https://sfplanning.org/historic-preservation-survey-forms-dpr523",
+      "retrieved": "2026-09-22"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Hayes Valley Residential Historic District Update (2008)",
+      "source": "hayes-valley-hd-2008",
+      "existing_district": "Hayes Valley Residential Historic District",
+      "finding": "Contributor to the Hayes Valley Residential Historic District",
+      "apn_as_surveyed": "0841/024A",
+      "address_as_surveyed": "432-436 Lily ST"
+    }
+  ]
+}

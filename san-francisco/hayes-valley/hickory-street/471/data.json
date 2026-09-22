@@ -1,0 +1,156 @@
+{
+  "address": "471 Hickory Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/hickory-street/471/",
+  "apn": "0830012A",
+  "block": "0830",
+  "lot": "012A",
+  "eas_baseid": "289091",
+  "coordinates": {
+    "lat": 37.774808,
+    "lng": -122.427061
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 3,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 1302,
+    "building_area_sqft": 1799,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Hayes Valley",
+    "property_location_raw": "0000 0471 HICKORY             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1201341,
+    "assessed_improvement_value": 1129586,
+    "last_sale_date": "2014-06-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "survey_name": "471 Hickory St",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Hayes Valley Residential Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1860–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202008182035",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-08-18",
+      "status_date": "2020-09-24",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "remove and replace dry rotted existing siding in kind, at the lower east side of the house. material to be breckinridge plywood to match existing, approx area 120 sq ft (4sheets). not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201808238183",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-08-23",
+      "status_date": "2018-09-19",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa # 201806071287. framing field change",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201806071287",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-06-07",
+      "status_date": "2018-06-07",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision 201510149671, s1 structural change resulting froim unforseen existing condition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201510149671",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2015-10-14",
+      "status_date": "2019-06-03",
+      "estimated_cost": 533000,
+      "revised_cost": 450000,
+      "description": "vertical addition to single family dwelling to change from (e) 1-story over garage to proposed 2-story over garage. add (1) (n) bathroom.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "2015–2020",
+    "shown_on_page": 4,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HICKORY&street_type=ST&address_number=471",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0830012A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0830&lot=012A",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0830012A",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42706144261713%2037.77480773151085)%27)",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "hayes-valley-hd-2008",
+      "name": "C. Harvey, J. Lammers (Page & Turnbull), District Record: Hayes Valley Residential Historic District Update, DPR 523D, January 2008",
+      "query": "https://sfplanning.org/sites/default/files/documents/preserv/DPRforms/DPR%20523D_Hayes%20Valley%20Residential%20Update%206_6_08.pdf",
+      "listing": "https://sfplanning.org/historic-preservation-survey-forms-dpr523",
+      "retrieved": "2026-09-22"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Hayes Valley Residential Historic District Update (2008)",
+      "source": "hayes-valley-hd-2008",
+      "existing_district": "Hayes Valley Residential Historic District",
+      "finding": "Contributor to the Hayes Valley Residential Historic District",
+      "apn_as_surveyed": "0830/012A",
+      "address_as_surveyed": "471 Hickory ST"
+    }
+  ]
+}

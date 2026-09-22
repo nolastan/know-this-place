@@ -5,6 +5,7 @@ A large central district west of Van Ness that largely survived the 1906 fire, m
 ## Streets documented so far
 
 - [Beideman Street](beideman-street/) — 1 building, built 1900.
+- [Birch Street](birch-street/) — 1 building, built 1904; 1 in the Hayes Valley Residential Historic District.
 - [Buchanan Street](buchanan-street/) — 1 building, built 1935.
 - [Bush Street](bush-street/) — 5 buildings, built 1916–1930.
 - [California Street](california-street/) — 1 building, built 1921.
