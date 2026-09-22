@@ -1,0 +1,145 @@
+{
+  "source_id": "sf-chronicle",
+  "batch": "2026-09-22",
+  "read_on": "2026-09-22",
+  "notes": "Bluesky route: every feed title is a teaser; read.py followed each bit.ly link and read the <h1> off the article, which is the headline used. Two published, two declined.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 4,
+    "mentions": 3,
+    "remaining": "none"
+  },
+  "findings": [
+    {
+      "id": "2026-09-22-sc-0001",
+      "date": "2026-09-22",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1668 Union St.",
+      "street_number": "1668",
+      "street_name": "UNION",
+      "street_type": "ST",
+      "description": "Corsagna Deli, a small Italian deli on Union Street in the Marina/Cow Hollow that began in 1980, announced it will close on 2 October 2026 after 46 years. Dated the announcement and article, since the closing date is still ahead.",
+      "extra": {
+        "business": "Corsagna Deli",
+        "opened": "1980",
+        "closing_date": "2026-10-02",
+        "headline_from": "the article's <h1>, via read.py; the feed carried a Bluesky teaser",
+        "date_is_publication_date": true
+      },
+      "citation": {
+        "label": "San Francisco Chronicle, “After 46 years, pint-size S.F. Italian deli to close,” 22 September 2026",
+        "url": "https://www.sfchronicle.com/food/restaurants/article/corsagna-deli-sf-closing-22442552.php"
+      },
+      "raw": {
+        "text": "Corsagna Deli at 1668 Union St. will close on Oct. 2"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0528009D",
+        "path": "/san-francisco/marina/union-street/1666/",
+        "eas_address": "1666 UNION ST",
+        "method": "EAS exact match on 1668 UNION ST → parcel 0528009D; sf-parcels has blklot 0528009D active, 1666–1670 UNION; the 2025 roll records it as commercial retail, built 1950. EAS puts 1666, 1668, 1670 UNION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1666.",
+        "checked_on": "2026-09-22"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Put on the existing page /san-francisco/marina/union-street/1666/ — EAS puts 1666, 1668 and 1670 Union Street on parcel 0528009D, so the fact belongs on the page at the lowest number. Dated the article and announcement (22 September); the closing itself is set for 2 October. The card is on the homepage news grid."
+      }
+    },
+    {
+      "id": "2026-09-22-sc-0002",
+      "date": "2026-09-22",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "175 Jefferson St.",
+      "street_number": "175",
+      "street_name": "JEFFERSON",
+      "street_type": "ST",
+      "description": "Ripley's Believe It or Not will close its Fisherman's Wharf attraction before the end of 2026, ending a run the company dates to 1967; announced on Tuesday 22 September.",
+      "extra": {
+        "business": "Ripley's Believe It or Not",
+        "opened": "1967",
+        "closing": "before the end of 2026, date not yet set",
+        "headline_from": "the article's <h1>, via read.py; the feed carried a Bluesky teaser"
+      },
+      "citation": {
+        "label": "San Francisco Chronicle, “Major tourist attraction to close after nearly 60 years at S.F.’s Fisherman’s Wharf,” 22 September 2026",
+        "url": "https://www.sfchronicle.com/sf/article/ripley-believe-it-or-not-closing-whart-22443738.php"
+      },
+      "raw": {
+        "text": "As of Tuesday, the attraction at 175 Jefferson St. remained open."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0013006",
+        "path": "/san-francisco/north-beach/jefferson-street/175/",
+        "eas_address": "175 JEFFERSON ST",
+        "method": "EAS exact match on 175 JEFFERSON ST → parcel 0013006; sf-parcels has blklot 0013006 active, 175–175 JEFFERSON; the 2025 roll records it as commercial retail, built 1966. The assessor files the parcel as 2770 TAYLOR ST.",
+        "checked_on": "2026-09-22"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Put on the existing page /san-francisco/north-beach/jefferson-street/175/. The page's building block (A. Sabella's Restaurant, Edward Wong) is left as it is; the article says nothing about the building's name or design. Hoodline's account of the same closure (2026-09-22-hl-0002) is declined as the duplicate. The card is on the homepage news grid."
+      }
+    },
+    {
+      "id": "2026-09-22-sc-0003",
+      "date": "2026-09-22",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "401 Haight Street",
+      "street_number": "401",
+      "street_name": "HAIGHT",
+      "street_type": "ST",
+      "description": "A wine bar and bistro, Passages, is planned for 401 Haight Street, the former Nik's Place, set to open in March 2027.",
+      "extra": {
+        "planned_business": "Passages",
+        "former_occupant": "Nik's Place, closed 2022"
+      },
+      "citation": {
+        "label": "San Francisco Chronicle, “This new wine bar aims to be an inclusive answer to ‘hostility’ in S.F.’s restaurant scene,” 22 September 2026",
+        "url": "https://www.sfchronicle.com/food/wine/article/passages-bar-lower-haight-sf-22438584.php"
+      },
+      "raw": {
+        "text": "set to open at 401 Haight Street in March"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "rejected",
+        "note": "declined — no parcel sought"
+      },
+      "publish": {
+        "status": "declined",
+        "note": "Not yet an event: the bar is not due to open until March 2027, and the article is a profile of its founder. The opening, when it happens, is the entry."
+      }
+    },
+    {
+      "id": "2026-09-22-sc-0004",
+      "date": "2026-09-22",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "none",
+      "description": "A review-style piece on a small jazz kissa bar and coffee shop. No street address in the article.",
+      "extra": {},
+      "citation": {
+        "label": "San Francisco Chronicle, “Forget the ‘listening bar.’ S.F. is now home to a true Japanese jazz kissa,” 22 September 2026",
+        "url": "https://www.sfchronicle.com/food/restaurants/article/kissakeko-jazz-kissa-sf-22413178.php"
+      },
+      "raw": {
+        "text": "Forget the ‘listening bar.’ S.F. is now home to a true Japanese jazz kissa"
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "rejected",
+        "note": "declined — no parcel sought"
+      },
+      "publish": {
+        "status": "declined",
+        "note": "No street address in the article, so no parcel to place it on; a venue profile rather than an opening."
+      }
+    }
+  ]
+}
