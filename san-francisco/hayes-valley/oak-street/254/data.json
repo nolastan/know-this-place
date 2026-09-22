@@ -1,0 +1,146 @@
+{
+  "address": "254–260 Oak Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/oak-street/254/",
+  "apn": "0832009",
+  "block": "0832",
+  "lot": "009",
+  "eas_baseid": "430831",
+  "coordinates": {
+    "lat": 37.775078,
+    "lng": -122.423554
+  },
+  "address_range": "254–260",
+  "street_numbers_on_parcel": [
+    "254",
+    "256",
+    "258",
+    "260"
+  ],
+  "parcel": {
+    "year_built": 1911,
+    "units": 6,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 6,
+    "bedrooms": 6,
+    "lot_area_sqft": 1650,
+    "building_area_sqft": 3765,
+    "lot_depth_ft": 60,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "HAYES",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Hayes Valley",
+    "property_location_raw": "0260 0254 OAK                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 470288,
+    "assessed_improvement_value": 368382,
+    "last_sale_date": "1998-10-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1911",
+    "survey_name": "254-260 Oak St",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Hayes Valley Residential Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1860–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202201216391",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-01-21",
+      "status_date": "2022-02-16",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "upgrade existing fire alarm system to comply with sffc section 1103.7.6.1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M613187",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-08-11",
+      "status_date": "2015-08-11",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200401154068",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-01-15",
+      "status_date": "2004-01-15",
+      "estimated_cost": 14895,
+      "revised_cost": 14895,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=OAK&street_type=ST&address_number=254",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0832009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0832&lot=009",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0832009",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42355431103194%2037.77507791406823)%27)",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "hayes-valley-hd-2008",
+      "name": "C. Harvey, J. Lammers (Page & Turnbull), District Record: Hayes Valley Residential Historic District Update, DPR 523D, January 2008",
+      "query": "https://sfplanning.org/sites/default/files/documents/preserv/DPRforms/DPR%20523D_Hayes%20Valley%20Residential%20Update%206_6_08.pdf",
+      "listing": "https://sfplanning.org/historic-preservation-survey-forms-dpr523",
+      "retrieved": "2026-09-22"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Hayes Valley Residential Historic District Update (2008)",
+      "source": "hayes-valley-hd-2008",
+      "existing_district": "Hayes Valley Residential Historic District",
+      "finding": "Contributor to the Hayes Valley Residential Historic District",
+      "apn_as_surveyed": "0832/009",
+      "address_as_surveyed": "254-260 Oak ST"
+    }
+  ]
+}

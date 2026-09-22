@@ -1,0 +1,170 @@
+{
+  "address": "228–230 Linden Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/linden-street/228/",
+  "apn": "0816025",
+  "block": "0816",
+  "lot": "025",
+  "eas_baseid": "472983",
+  "coordinates": {
+    "lat": 37.776693,
+    "lng": -122.42181
+  },
+  "address_range": "228–230",
+  "street_numbers_on_parcel": [
+    "228",
+    "230"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 1699,
+    "building_area_sqft": 2350,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "HAYES",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Hayes Valley",
+    "property_location_raw": "0230 0282 LINDEN              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 117271,
+    "assessed_improvement_value": 180139
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1908",
+    "survey_name": "228-230 Linden St",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Hayes Valley Residential Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1860–1920",
+    "source": "sf-historic-districts"
+  },
+  "also_in_districts": [
+    {
+      "name": "Hayes Valley Commercial Historic District",
+      "california_register_status": "Eligible (not listed)",
+      "national_register_status": "Not listed",
+      "article_10_11_status": "No local landmark protection",
+      "local_landmark_protection": false,
+      "period_of_significance": "ca 1855–1929",
+      "source": "sf-historic-districts"
+    }
+  ],
+  "permits": [
+    {
+      "number": "201006295564",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-06-29",
+      "status_date": "2010-07-19",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa #200804079028 all work is ocmplete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200804079028",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2008-04-07",
+      "status_date": "2008-05-28",
+      "estimated_cost": 1,
+      "revised_cost": 10000,
+      "description": "revision to pa#2007/09/26/3828 to add tiebacks to solder piles that run along west property line. valuation remains the same as appl#200709263828.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200709263828",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2007-09-26",
+      "status_date": "2010-07-16",
+      "estimated_cost": 26104,
+      "revised_cost": 26104,
+      "description": "underpinning as required due to adjacent new construction. bpn 200509163107s",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200705181662",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-05-18",
+      "status_date": "2007-12-04",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "(all work in lower unit). repair plaster and / or drywall in 1 kitchen & 1 bath. kitchen & bath remodel. install kitchen cabinets, replace fixtures & appliances, & perform minor repairs. repair plaster and or drywall in 2 bedrooms. all non structural work.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "2007–2010",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LINDEN&street_type=ST&address_number=228",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0816025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0816&lot=025",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0816025",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42180970096771%2037.77669313576091)%27)",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "hayes-valley-hd-2008",
+      "name": "C. Harvey, J. Lammers (Page & Turnbull), District Record: Hayes Valley Residential Historic District Update, DPR 523D, January 2008",
+      "query": "https://sfplanning.org/sites/default/files/documents/preserv/DPRforms/DPR%20523D_Hayes%20Valley%20Residential%20Update%206_6_08.pdf",
+      "listing": "https://sfplanning.org/historic-preservation-survey-forms-dpr523",
+      "retrieved": "2026-09-22"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Hayes Valley Residential Historic District Update (2008)",
+      "source": "hayes-valley-hd-2008",
+      "existing_district": "Hayes Valley Residential Historic District",
+      "finding": "Contributor to the Hayes Valley Residential Historic District",
+      "apn_as_surveyed": "0816/025",
+      "address_as_surveyed": "228-230 Linden ST"
+    }
+  ]
+}

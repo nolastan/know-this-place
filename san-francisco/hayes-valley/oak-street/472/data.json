@@ -1,0 +1,164 @@
+{
+  "address": "472 Oak Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/oak-street/472/",
+  "apn": "0830052",
+  "block": "0830",
+  "lot": "052",
+  "eas_baseid": "289092",
+  "coordinates": {
+    "lat": 37.774633,
+    "lng": -122.427122
+  },
+  "parcel": {
+    "year_built": 1900,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "building_area_sqft": 1337,
+    "basement_area_sqft": 136,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "NA",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Hayes Valley",
+    "property_location_raw": "0000 0472 OAK                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 402084,
+    "assessed_improvement_value": 290099
+  },
+  "historic_district": {
+    "name": "Hayes Valley Residential Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1860–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201509046243",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-09-04",
+      "status_date": "2015-09-22",
+      "estimated_cost": 5000,
+      "revised_cost": 20000,
+      "description": "revision to app#201404082732. structural revisions include: repair foundation in rear of bldg, repair stud wall, new posts, new shearwalls, retaining walls, repair rear stairs less than 50%. change beam at garage opening.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201404082732",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-04-08",
+      "status_date": "2015-02-23",
+      "estimated_cost": 190000,
+      "revised_cost": 190000,
+      "description": "excavate (e) crawl space to create a new 2-car parking garage. provide (n) garage door and driveway. rebuild front stairs inkind, rebuild (e) concrete retaining wall and construct new railing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201108263325",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-08-26",
+      "status_date": "2011-09-27",
+      "estimated_cost": 9239,
+      "revised_cost": 9239,
+      "description": "one unit oak-comply with report of physical inspection report #cc-5862",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201105045299",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-05-04",
+      "status_date": "2011-09-27",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "to comply with physical inspection report cc-5862.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201103152113",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-03-15",
+      "status_date": "2011-06-10",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "replace area damage by fire to include sheetrock, framing, hvac, cope upgrades per inspector's request.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200405214486",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-05-21",
+      "status_date": "2004-05-21",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9215612",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-09-10",
+      "status_date": "1993-01-12",
+      "estimated_cost": 2600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=OAK&street_type=ST&address_number=472",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0830052&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0830&lot=052",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42712243722801%2037.774633079256645)%27)",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "hayes-valley-hd-2010",
+      "name": "N. Moses Corrette (San Francisco Planning Department), District Record: Hayes Valley Residential Historic District Update #2, DPR 523L, May 2010",
+      "query": "https://sfplanning.org/sites/default/files/documents/preserv/DPR%20523L%20Hayes%20Valley%20Residential%20Update2.pdf",
+      "listing": "https://sfplanning.org/historic-preservation-survey-forms-dpr523",
+      "retrieved": "2026-09-22"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Hayes Valley Residential Historic District Update #2 (2010)",
+      "source": "hayes-valley-hd-2010",
+      "existing_district": "Hayes Valley Residential Historic District",
+      "finding": "Contributor to the Hayes Valley Residential Historic District, automatically listed in the California Register in 1996",
+      "proposed_status_code": "2D2",
+      "apn_as_surveyed": "0830/012B",
+      "address_as_surveyed": "472 Oak St"
+    }
+  ]
+}

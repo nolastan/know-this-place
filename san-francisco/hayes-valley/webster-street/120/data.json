@@ -1,0 +1,160 @@
+{
+  "address": "120 Webster Street, San Francisco, CA 94117",
+  "path": "/san-francisco/hayes-valley/webster-street/120/",
+  "apn": "0858017",
+  "block": "0858",
+  "lot": "017",
+  "eas_baseid": "289651",
+  "coordinates": {
+    "lat": 37.771968,
+    "lng": -122.428436
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 9,
+    "stories": 3,
+    "rooms": 19,
+    "bathrooms": 9,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 6500,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Hayes Valley",
+    "property_location_raw": "0000 0120 WEBSTER             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 179599,
+    "assessed_improvement_value": 532994,
+    "last_sale_date": "2023-10-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "survey_name": "120 Webster St",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Hayes Valley Residential Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1860–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202607275618",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-07-27",
+      "status_date": "2026-07-27",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "one unit: new appliances. new kitchen faucet. new vanity & sink at bathroom. no demo work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202103045921",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-03-04",
+      "status_date": "2021-03-30",
+      "estimated_cost": 6545,
+      "revised_cost": 6545,
+      "description": "as-built of pa # 2020-0310-6672 addition of missing smoke detectors in third and roof level",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202009184465",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-09-18",
+      "status_date": "2020-12-01",
+      "estimated_cost": 9600,
+      "revised_cost": 9600,
+      "description": "upgrade to meet 2021 mandate an addition to existing fire alarm system install of new low frequency sounders in every unit. reference number # 202003106672",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202003106672",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-03-10",
+      "status_date": "2020-03-12",
+      "estimated_cost": 8750,
+      "revised_cost": 8750,
+      "description": "replacement installation of fire alarm system in none sprinklered bldg. replace extg facu with new ifd 75, smoke detector, hewat detector, pull station, and bells.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200508251266",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-08-25",
+      "status_date": "2005-08-25",
+      "estimated_cost": 17400,
+      "revised_cost": 17400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=WEBSTER&street_type=ST&address_number=120",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0858017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0858&lot=017",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0858017",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42843626968299%2037.77196777327801)%27)",
+      "retrieved": "2026-09-22"
+    },
+    {
+      "id": "hayes-valley-hd-2008",
+      "name": "C. Harvey, J. Lammers (Page & Turnbull), District Record: Hayes Valley Residential Historic District Update, DPR 523D, January 2008",
+      "query": "https://sfplanning.org/sites/default/files/documents/preserv/DPRforms/DPR%20523D_Hayes%20Valley%20Residential%20Update%206_6_08.pdf",
+      "listing": "https://sfplanning.org/historic-preservation-survey-forms-dpr523",
+      "retrieved": "2026-09-22"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Hayes Valley Residential Historic District Update (2008)",
+      "source": "hayes-valley-hd-2008",
+      "existing_district": "Hayes Valley Residential Historic District",
+      "finding": "Contributor to the Hayes Valley Residential Historic District",
+      "apn_as_surveyed": "0858/017",
+      "address_as_surveyed": "120 Webster ST"
+    }
+  ]
+}
