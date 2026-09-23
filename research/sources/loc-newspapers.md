@@ -6,7 +6,7 @@
 >
 > - **Kind:** newspaper OCR corpus · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 10 batches / 58,620 pages scanned for address mentions in August 2026 (no findings file; see below), and the *Call*'s 1911 Real Estate and Financial Section read in full into `findings/loc-newspapers/sn85066387-1911-real-estate.json`.
+> - **Coverage:** 10 batches / 58,620 pages scanned for address mentions in August 2026 (no findings file; see below), and the *Call*'s Real Estate and Financial Section read in full for 1911 and 1912, into `findings/loc-newspapers/sn85066387-1911-real-estate.json` and `sn85066387-1912-real-estate.json`.
 > - **Local corpus:** `research/corpora/loc-newspapers/` — `tar/` for the batch OCR tarballs, `txt/<lccn>/<yyyy>/<mm>/<dd>/ed-1/seq-N/ocr.txt` for the extracted pages. A fresh container has none of it.
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -90,7 +90,7 @@ Issue counts per year; a year split across batches needs all of them.
 | | 1909 | `jenner` (92), `llano` (61), `mecca` (151), `needles_ver01` (61) |
 | | 1910 | `jenner` (90), `klamath_ver01` (122), `mecca` (122), `needles` (31) |
 | | **1911** | `curiv_betteravia_ver02` (Jan–Aug, 5,901 pages), `curiv_angwin_ver02` (Sep–Dec, 2,996 pages) — **both on disk** |
-| | 1912 | `angwin` (106; 2,680 pages on disk), `calipatria_ver03` (183), `dardanelle_ver01` (64) |
+| | **1912** | `angwin` (106), `calipatria_ver03` (183), `dardanelle_ver01` (64) — 9,693 pages, **all three fetched 2026-09-23**; nothing after 15 December |
 | | 1913 | `dardanelle` (15), `grimes_ver01` (132) |
 | *Morning Call* `sn94052989` | 1890–1895 | `kaweah_ver01`, `hemet_ver01`, `garberville_ver01`, `exeter`, `idyllwild`, `oakland_ver01`, `pescadero_ver01` |
 
@@ -141,6 +141,44 @@ carries, and what of it is usable:
 - **A notable owner appears in a sale notice.** "The marine view residence of
   Alfred Sbarboro, 3160 Jackson" — taken as a notable past resident, the
   buyers left out.
+
+### The 1912 section — what changed from 1911
+
+Same Saturday section, same header (misspelt on eight Saturdays: `ANF`, `AMD`,
+`AN D`, one with no header surviving at all — find those by the page after the
+Bay-cities news). Three things differ, and the second is the one that pays:
+
+- **From April it runs three pages, not two:** the city page, a country-land
+  page (Stockton, the San Joaquin, Richmond — no city addresses) and the
+  improvement-club column. Read the first and third; the second is advertising.
+- **The building-news column is richer and is almost all corners.** 1912 is
+  the pre-exposition building boom, and the column names the architect for
+  most new construction — Bugbee & Bugbee's Landseer, Meussdorffer's Hotel
+  Justice and Hotel Henry, Willis Polk's Insurance Exchange, MacDonald &
+  Applegarth's Clift. None has a number. `research/tools/corner.py` places them
+  on lot area and roll year: 19 of 27 unnumbered entries went onto parcels,
+  five of them on pages that already credited the same architect.
+- **The lease columns are thinner on firms and thicker on private leases**
+  between named people — about 90 bare leases left out. What survives is the
+  firms (Ford at 53 Bluxome, the U.S. government at 615 Sansome, Sutro & Co.
+  moving 412 → 410 Montgomery) and named buildings.
+
+### Cautions for the 1912 section
+
+- **The same lease printed with two numbers again:** the Standard Wall Paper
+  company's ground floor is 710 Mission on 19 October and 719 Mission on
+  2 November; the South of Civic Center club's hall is 1423 Folsom in June and
+  1243 Folsom in September. Both left unresolved with the conflict recorded.
+- **The same building on two corners:** the Voorman hotel is the northwest
+  corner of Mission and Fourth in September and the northeast in November.
+  Every corner there has been rebuilt, so it did not need deciding.
+- **A demolished building's corner can carry a page that already dates the
+  predecessor.** 121 Golden Gate's page is the 2014 parcel but its National
+  Register entry is the 1912 building; the Moose hall went on it as the 1912
+  building, with the two accounts of its first use in `unknowns`.
+- **Thirteen resolved findings were declined** because the roll dates the
+  building on the parcel after 1912 — Metreon, 1970s complexes on Golden Gate,
+  the 1924 building on the Realty Building's lot.
 
 ### Cautions
 
@@ -203,9 +241,16 @@ carries, and what of it is usable:
   Planning's `name` field), 76 unresolved; 50 published on 48 pages, 18 of
   them seeded, 9 declined. Batch file
   `findings/loc-newspapers/sn85066387-1911-real-estate.json`.)
+- **Verified:** 2026-09-23 (the *Call*'s 1912 Real Estate and Financial
+  Section, every Saturday with an issue: 131 OCR pages over 50 Saturdays, 761
+  numbered-address mentions, 126 findings — 71 resolved (19 by hand, all of them
+  corners or building names), 55 unresolved; 58 published on 56 pages, 26
+  of them seeded, 13 declined. Batch file
+  `findings/loc-newspapers/sn85066387-1912-real-estate.json`.)
 - **Coverage:** 1890s and 1900s years scanned in August 2026 for mentions only
-  (above); **1911 Real Estate and Financial Section read in full**. Next: the
-  1912 section (`angwin` is on disk; fetch `calipatria_ver03` and
-  `dardanelle_ver01`), then 1913 (`grimes`), then the unscanned 1897–1899 and
-  1903–1904 years. The rest of the 1911 paper — 8,800 pages of news, where the
+  (above); **1911 and 1912 Real Estate and Financial Sections read in full**
+  (1912 lacks 21 and 28 December, which no batch holds). Next: 1913
+  (`dardanelle` has 15 issues, `grimes_ver01` 132), then the unscanned
+  1897–1899 and 1903–1904 years. The 1911 batch's unnumbered building entries
+  can now be placed with `corner.py`. The rest of the 1911 paper — 8,800 pages of news, where the
   fires and the building-permit lists are — is on disk and unread.

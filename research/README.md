@@ -69,6 +69,7 @@ research/
   tools/check.py     Consistency + schema checks, and the dashboard (stdlib only)
   tools/resolve_eas.py  Addresses → parcels: the EAS/parcel/roll joins, with the
                      reason for each decision
+  tools/corner.py    A corner → the parcels on it, for records that give no number
   corpora/           Raw downloaded material — gitignored, never committed
 ```
 

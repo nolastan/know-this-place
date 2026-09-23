@@ -1,0 +1,145 @@
+{
+  "address": "1041 Washington Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/washington-street/1041/",
+  "apn": "0212037",
+  "block": "0212",
+  "lot": "037",
+  "eas_baseid": "279967",
+  "coordinates": {
+    "lat": 37.794487,
+    "lng": -122.410415
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 6,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 6,
+    "lot_area_sqft": 1746,
+    "building_area_sqft": 4620,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Nob Hill",
+    "property_location_raw": "0000 1041 WASHINGTON          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 418068,
+    "assessed_improvement_value": 398913,
+    "last_sale_date": "1998-02-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202303022930",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-03-02",
+      "status_date": "2023-11-21",
+      "estimated_cost": 13000,
+      "revised_cost": 20198,
+      "description": "upgrade fire alarm system to comply w/ sffc 1103.7.6.1, install new fire alarm control panel, new communicator,4-smoke detectors, 5-pull station,3-monitor modules, 3-wall horn strobes, 12-low freq sounders.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201308204749",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-08-20",
+      "status_date": "2013-11-26",
+      "estimated_cost": 17000,
+      "revised_cost": 17000,
+      "description": "re-stucco; remove (e) and replace with new lath and stucco.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201304255469",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2013-04-25",
+      "status_date": "2014-06-12",
+      "estimated_cost": 6000,
+      "revised_cost": 18248,
+      "description": "one unit - replace kitchen cabinets & counters, kitchen area 9' x 11'. redo electrical (ew20130415041).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201109164853",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2011-09-16",
+      "status_date": "2011-09-16",
+      "estimated_cost": 6545,
+      "revised_cost": 6545,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9821865",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-10-26",
+      "status_date": "1999-08-31",
+      "estimated_cost": 7800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=WASHINGTON&street_type=ST&address_number=1041",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0212037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0212&lot=037",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0212037",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "loc-sf-call-1912-09-21",
+      "name": "The San Francisco Call, 21 September 1912, p. 21",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1912-09-21/ed-1/seq-21/",
+      "retrieved": "2026-09-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-09-21",
+      "kind": "construction",
+      "description": "Work started on a $10,000 frame apartment house with 28 ft of frontage, designed by C. O. Clausen, for the Brizzolara Estate company.",
+      "source": "loc-sf-call-1912-09-21"
+    }
+  ],
+  "building": {
+    "architect": "C. O. Clausen",
+    "sources": [
+      "loc-sf-call-1912-09-21"
+    ]
+  }
+}

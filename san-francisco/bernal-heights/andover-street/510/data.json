@@ -1,0 +1,108 @@
+{
+  "address": "510 Andover Street, San Francisco, CA 94110",
+  "path": "/san-francisco/bernal-heights/andover-street/510/",
+  "apn": "5717005",
+  "block": "5717",
+  "lot": "005",
+  "eas_baseid": "383307",
+  "coordinates": {
+    "lat": 37.736654,
+    "lng": -122.41696
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "bedrooms": 1,
+    "lot_area_sqft": 2750,
+    "building_area_sqft": 1375,
+    "lot_depth_ft": 10,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Bernal Heights",
+    "property_location_raw": "0000 0510 ANDOVER             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 99550,
+    "assessed_improvement_value": 181205
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202106303529",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-06-30",
+      "status_date": "2022-08-22",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "to comply with nov 202173078 - demo most part of the shed. shed to be demolished: 591.63 sf. shed to be kept 84.88 sf",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8513591",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-12-02",
+      "status_date": "1986-02-08",
+      "estimated_cost": 7000,
+      "description": "remode kitchen rear house remodel bath down",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ANDOVER&street_type=ST&address_number=510",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5717005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5717&lot=005",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5717005",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "loc-sf-call-1912-07-27",
+      "name": "The San Francisco Call, 27 July 1912, p. 21",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1912-07-27/ed-1/seq-21/",
+      "retrieved": "2026-09-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-07-27",
+      "kind": "sale",
+      "description": "A cottage here was sold for $1,500.",
+      "source": "loc-sf-call-1912-07-27"
+    }
+  ]
+}

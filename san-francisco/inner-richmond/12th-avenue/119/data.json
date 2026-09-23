@@ -1,0 +1,186 @@
+{
+  "address": "119 12th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/12th-avenue/119/",
+  "apn": "1372003",
+  "block": "1372",
+  "lot": "003",
+  "eas_baseid": "301516",
+  "coordinates": {
+    "lat": 37.785881,
+    "lng": -122.471408
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 1700,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0000 0119 12TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 433409,
+    "assessed_improvement_value": 457679,
+    "last_sale_date": "1992-07-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202109087957",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-09-08",
+      "status_date": "2022-06-10",
+      "estimated_cost": 95000,
+      "revised_cost": 95000,
+      "description": "remodel 1 kitchen and 1 bath in-kind. replace tub/shower, tiles. vamity. replace all appliances & cabinets. new counter top. lighting shall comply with cec 150.0ch",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200106111254",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-06-11",
+      "status_date": "2001-10-11",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "remove & replace entry steps. less than 50% front entry stair replacement.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200106070967",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-06-07",
+      "status_date": "2001-10-07",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "repair front entry steps. replace dry rot material w/ new in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9813127",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-07-10",
+      "status_date": "1999-01-10",
+      "estimated_cost": 10815,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8717813",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-12-18",
+      "status_date": "1989-01-09",
+      "estimated_cost": 800,
+      "description": "front stairs to be fixed, replaced tile, add handrail",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8715120",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-10-21",
+      "status_date": "1987-12-22",
+      "estimated_cost": 2500,
+      "description": "replace deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8713453",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1987-09-21",
+      "status_date": "1987-12-22",
+      "estimated_cost": 1500,
+      "description": "repair deck in rear of the building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8711255",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-08-07",
+      "status_date": "1988-06-01",
+      "estimated_cost": 11000,
+      "description": "install bay window, skylights",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8606575",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1986-06-05",
+      "status_date": "1987-05-14",
+      "estimated_cost": 25000,
+      "description": "remodel existing kit. & bathroom, repair interior plaster tr",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 10,
+    "range": "1986–2021",
+    "shown_on_page": 9,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=12TH&street_type=AVE&address_number=119",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1372003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1372&lot=003",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1372003",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "loc-sf-call-1912-07-13",
+      "name": "The San Francisco Call, 13 July 1912, p. 23",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1912-07-13/ed-1/seq-23/",
+      "retrieved": "2026-09-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-07-13",
+      "kind": "sale",
+      "description": "A residence here was sold with its lot.",
+      "source": "loc-sf-call-1912-07-13"
+    }
+  ]
+}

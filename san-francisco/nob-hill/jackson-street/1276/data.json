@@ -1,0 +1,135 @@
+{
+  "address": "1276 Jackson Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/jackson-street/1276/",
+  "apn": "0183016",
+  "block": "0183",
+  "lot": "016",
+  "eas_baseid": "279458",
+  "coordinates": {
+    "lat": 37.795026,
+    "lng": -122.416037
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 6,
+    "stories": 3,
+    "rooms": 24,
+    "bathrooms": 6,
+    "lot_area_sqft": 2084.95,
+    "building_area_sqft": 4680,
+    "lot_depth_ft": 92.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Nob Hill",
+    "property_location_raw": "0000 1276 JACKSON             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 114080,
+    "assessed_improvement_value": 264250
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201708185264",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-08-18",
+      "status_date": "2019-08-20",
+      "estimated_cost": 50000,
+      "revised_cost": 62000,
+      "description": "soft story retrofit per sfebc chapter 4d per engineering creteria 2016 cebc appendix a-4.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200806114178",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-06-11",
+      "status_date": "2008-06-27",
+      "estimated_cost": 700,
+      "revised_cost": 700,
+      "description": "comply nov 200856256-his. repair damaged missing fire resistive ceiling surfaces in the garage hallway storage areas. 5/8 type x. install 20 minute fire door between the parking garage and the ground floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200005089381",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-05-08",
+      "status_date": "2000-05-30",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "repair loose rear stair threads at the top portion of the rear stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8602673",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-03-10",
+      "status_date": "1986-12-04",
+      "estimated_cost": 1500,
+      "description": "to bring into code",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1986–2019",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JACKSON&street_type=ST&address_number=1276",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0183016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0183&lot=016",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0183016",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "loc-sf-call-1912-02-03",
+      "name": "The San Francisco Call, 3 February 1912, p. 19",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1912-02-03/ed-1/seq-19/",
+      "retrieved": "2026-09-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-02-03",
+      "kind": "lease",
+      "description": "Six flats of four rooms and bath each; let through W. B. McGerry & Co.",
+      "source": "loc-sf-call-1912-02-03"
+    }
+  ]
+}

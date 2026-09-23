@@ -119,6 +119,7 @@ python3 research/tools/check.py --index             # rebuild findings/INDEX.md 
 python3 research/tools/check.py --peek <findings-file>     # what a batch is, without reading it
 python3 research/tools/check.py --find "1377 Fulton"       # matching entries, corpus-wide
 python3 research/tools/resolve_eas.py fetch|report|apply <findings-file>
+python3 research/tools/corner.py BUSH MASON --year 1912   # a record that gives a corner, not a number
 python3 scripts/validate.py                         # any run that touched a page
 python3 scripts/seed_pages.py seed-list --manifest research/manifests/<f>.json
 ```

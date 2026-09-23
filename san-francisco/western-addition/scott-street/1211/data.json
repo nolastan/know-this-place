@@ -1,0 +1,142 @@
+{
+  "address": "1211 Scott Street, San Francisco, CA 94115",
+  "path": "/san-francisco/western-addition/scott-street/1211/",
+  "apn": "1127003",
+  "block": "1127",
+  "lot": "003",
+  "eas_baseid": "295198",
+  "coordinates": {
+    "lat": 37.781196,
+    "lng": -122.43766
+  },
+  "parcel": {
+    "year_built": 1870,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 4,
+    "bedrooms": 5,
+    "lot_area_sqft": 2635.8,
+    "building_area_sqft": 2690,
+    "lot_depth_ft": 15,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Western Addition",
+    "analysis_neighborhood": "Western Addition",
+    "property_location_raw": "0000 1211 SCOTT               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1488342,
+    "assessed_improvement_value": 1360060,
+    "last_sale_date": "2021-01-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1870",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202103025683",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-03-02",
+      "status_date": "2021-05-03",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "remodel 2 kitchens. remove 1 wall. remodel 2 laundry areas.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201509156939",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2015-09-15",
+      "status_date": "2022-07-29",
+      "estimated_cost": 60000,
+      "revised_cost": 80000,
+      "description": "voluntary soft story seismic retrofit per ab-094 analysis per fema p-807 & foundation replacement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201509156948",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2015-09-15",
+      "status_date": "2022-07-29",
+      "estimated_cost": 80000,
+      "revised_cost": 80000,
+      "description": "new apartment addition in compliance with ordinance 30-15, miscellaneous decay & water damage repair, waterproof (e) decks & front staircase. soft story retrofit permit #201509156939. sprinklers under separate permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200002101506",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-02-10",
+      "status_date": "2000-05-24",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "repair damaged stairs, handrail landing & stringer with pressure tread wood in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8411329",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-10-23",
+      "status_date": "1986-03-04",
+      "estimated_cost": 100000,
+      "description": "conform to code, interior remodel deck replacement",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SCOTT&street_type=ST&address_number=1211",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1127003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1127&lot=003",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1127003",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "loc-sf-call-1912-06-08",
+      "name": "The San Francisco Call, 8 June 1912, p. 23",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1912-06-08/ed-1/seq-23/",
+      "retrieved": "2026-09-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-06-08",
+      "kind": "sale",
+      "description": "A store and two flats on a 22 ft 11 in by 114 ft 2 in lot were offered at auction by order of an executrix.",
+      "source": "loc-sf-call-1912-06-08"
+    }
+  ]
+}

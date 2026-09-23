@@ -1,0 +1,112 @@
+{
+  "address": "2256 Lake Street, San Francisco, CA 94121",
+  "path": "/san-francisco/seacliff/lake-street/2256/",
+  "apn": "1336039",
+  "block": "1336",
+  "lot": "039",
+  "eas_baseid": "300615",
+  "coordinates": {
+    "lat": 37.786093,
+    "lng": -122.483846
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 7,
+    "lot_area_sqft": 9275,
+    "building_area_sqft": 8113,
+    "basement_area_sqft": 1950,
+    "use": "Commercial Retail",
+    "property_class": "Consulate",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Seacliff",
+    "property_location_raw": "0000 2256 LAKE                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202103297414",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-03-29",
+      "status_date": "2021-03-29",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "kitchen remodel: replace of cooking appliances, replace d/w, replace coutner & cabinets, replace floor finish, replace sink add 3# of gfci outlets, replace ktichen. hood.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201602089052",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-02-08",
+      "status_date": "2016-02-16",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LAKE&street_type=ST&address_number=2256",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1336039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1336&lot=039",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1336039",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "loc-sf-call-1912-11-09",
+      "name": "The San Francisco Call, 9 November 1912, p. 13",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1912-11-09/ed-1/seq-13/",
+      "retrieved": "2026-09-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-11-09",
+      "kind": "construction",
+      "description": "One of the most costly houses yet begun in West Clay Park, a pressed-brick residence in the modern French manner on a corner over 70 by 125 ft at the Lake Street and Twenty-fourth Avenue gate, was being built by J. E. Krafft & Son, architects.",
+      "source": "loc-sf-call-1912-11-09"
+    }
+  ],
+  "building": {
+    "architect": "J. E. Krafft & Son",
+    "sources": [
+      "loc-sf-call-1912-11-09"
+    ]
+  }
+}

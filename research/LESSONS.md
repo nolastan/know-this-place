@@ -2135,3 +2135,22 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   final commit,* per [RUNBOOK.md](RUNBOOK.md)'s own "Before you commit" step;
   skipping straight to `seed_pages.py render` for a small edit list is the
   trap.
+
+- **A newspaper's building news gives corners, not numbers, and the 1911 run
+  left all of it unresolved.** The best entries in a real-estate section — new
+  construction with its architect, contractor and cost — locate the building as
+  "the southeast corner of Ellis and Jones" or "25 feet south of Mission", so
+  `resolve_eas.py` reports them unplaceable and a run that stops there loses its
+  architect credits. The 1912 batch placed 19 of 27 by hand, and the lot area
+  did the work: "55 by 87:6" against a roll `lot_area` of exactly 4,812.5 on a
+  hotel built in 1913, "60x75" against 4,499 on the parcel next to the Mission
+  corner. Five of the placements landed on pages that already credited the same
+  architect from another source (Herman Barth, Nathaniel Blaisdell, Albert
+  Pissis, Applegarth, Frederick Meyer) — confirmation the method works, and a
+  hint that the rest are right. Two traps: a quadrant computed from a
+  centroid is wrong often enough that the tool no longer prints one, and a
+  parcel whose newest roll row is years old (0349001, last on the 2013 roll)
+  has been replaced — the corner's page is under the new parcel's number.
+  *Run `research/tools/corner.py` on every corner a batch names, and match on
+  lot area and year before the corner word.* See RUNBOOK.md step 3.
+  ([sources/loc-newspapers.md](sources/loc-newspapers.md))
