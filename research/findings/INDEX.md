@@ -287,6 +287,7 @@ are listed so their size is visible before anyone opens one.
 | `news-2026-09-17.json` | 1 | 1 KB | `glen-park` |
 | `news-2026-09-20.json` | 3 | 1 KB | `inner-sunset`, `castro`, `dogpatch` |
 | `news-2026-09-22.json` | 1 | 1 KB | `north-beach` |
+| `news-2026-09-23.json` | 3 | 1 KB | `tenderloin`, `castro`, `potrero-hill` |
 | `news-backfill-2026-07.json` | 7 | 3 KB | `sunset-parkside`, `marina`, `noe-valley` +3 |
 | `north-beach-hcs.json` | 342 | 130 KB | `north-beach`, `chinatown`, `russian-hill` +3 |
 | `oceanside-hcs.json` | 19 | 7 KB | `sunset-parkside` |

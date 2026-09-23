@@ -1,0 +1,148 @@
+{
+  "source_id": "sf-chronicle",
+  "batch": "2026-09-23",
+  "read_on": "2026-09-23",
+  "notes": "Bluesky route: read.py followed each bit.ly link and read the <h1> off the article. The data-center moratorium story names no street address.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 3,
+    "mentions": 2,
+    "remaining": "none"
+  },
+  "findings": [
+    {
+      "id": "2026-09-23-sc-0001",
+      "date": "2026-09-23",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2146 Third St.",
+      "street_number": "2146",
+      "street_name": "THIRD",
+      "street_type": "ST",
+      "description": "The Chronicle's story on Corgi halting its cafe expansion recaps the temporary shuttering of its Dogpatch cafe at 2146 Third Street for operating without a valid health permit.",
+      "citation": {
+        "label": "San Francisco Chronicle, “Tech start-up that wanted to take over S.F. with 100 cafes is suddenly pulling back,” 23 September 2026",
+        "url": "https://www.sfchronicle.com/realestate/article/corgi-cafe-tech-22444563.php"
+      },
+      "raw": {
+        "text": "one of Corgi's two existing locations in the city, at 2146 Third St. in the Dogpatch neighborhood, was temporarily shuttered last week for operating without a valid permit"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "4044003",
+        "path": "/san-francisco/dogpatch/3rd-street/2146/",
+        "eas_address": "2146 03RD ST",
+        "method": "EAS exact match on 2146 03RD ST → parcel 4044003; sf-parcels has blklot 4044003 active, 2146–2148 03RD; the 2025 roll records it as multi-family residential, built 1900. EAS puts 2146, 2148 03RD ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2146. The record spells the street out as THIRD; EAS holds the numbered streets as zero-padded ordinals, so this is 03RD.",
+        "checked_on": "2026-09-23"
+      },
+      "publish": {
+        "status": "declined",
+        "note": "One event, one entry. The same closure is already published on /san-francisco/dogpatch/3rd-street/2146/ as hoodline-2026-09-19 (news/items/hoodline/2026-09-20.json, 2026-09-20-hl-0005). This account adds nothing the earlier one didn't have."
+      }
+    },
+    {
+      "id": "2026-09-23-sc-0002",
+      "date": "2026-09-23",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "260 Church St.; 968 Columbus Ave.; 680 Illinois St.",
+      "description": "The same story names three new San Francisco leases Corgi signed as it prepared its now-halted 100-cafe expansion, at 260 Church Street, 968 Columbus Avenue and 680 Illinois Street. The story states plainly that none of the three has opened and that it is unclear when, or if, they will.",
+      "citation": {
+        "label": "San Francisco Chronicle, “Tech start-up that wanted to take over S.F. with 100 cafes is suddenly pulling back,” 23 September 2026",
+        "url": "https://www.sfchronicle.com/realestate/article/corgi-cafe-tech-22444563.php"
+      },
+      "raw": {
+        "text": "five new leases have been signed — three in San Francisco... The San Francisco locations are at 260 Church St. in the Castro-Upper Market neighborhood, 968 Columbus Ave. in North Beach and 680 Illinois St. in Dogpatch. It is unclear when, or if, those cafes will open."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-23",
+        "method": "The record states no street number, so there is nothing to look up in sf-eas-addresses.",
+        "note": "The record locates it only as “260 Church St.; 968 Columbus Ave.; 680 Illinois St.”. Kept so the record is not read again; per the evidence bar in research/AGENTS.md it cannot become a page."
+      },
+      "publish": {
+        "status": "declined",
+        "note": "Not yet an event at any of the three: a signed lease with no opening, and the story itself says it is unclear whether these cafes will ever open. Fails the ten-year test as it stands; the opening of any one of them, if it happens, is the entry."
+      }
+    },
+    {
+      "id": "2026-09-23-sc-0003",
+      "date": "2026-09",
+      "date_precision": "month",
+      "kind": "sale",
+      "address_as_written": "600 20th St.",
+      "street_number": "600",
+      "street_name": "20TH",
+      "street_type": "ST",
+      "description": "The story gives new detail on the September sale already recorded pending on this address: the buyer is Dane Reinsurance Inc., a Utah company the Chronicle says is apparently linked to Corgi, which paid $11 million for the building on 8 September 2026. The building is referred to in the story as 'the Steph Curry building'; the seller is a private individual and is not named here.",
+      "extra": {
+        "buyer": "Dane Reinsurance Inc.",
+        "buyer_location": "Utah",
+        "sale_date": "2026-09-08",
+        "sale_price": "$11,000,000"
+      },
+      "citation": {
+        "label": "San Francisco Chronicle, “Tech start-up that wanted to take over S.F. with 100 cafes is suddenly pulling back,” 23 September 2026",
+        "url": "https://www.sfchronicle.com/realestate/article/corgi-cafe-tech-22444563.php"
+      },
+      "raw": {
+        "text": "Dane Reinsurance Inc., the Utah-based company apparently linked to Corgi, paid $11 million for it on Sept. 8."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "4058002",
+        "path": "/san-francisco/potrero-hill/20th-street/600/",
+        "eas_address": "600 20TH ST",
+        "method": "EAS exact match on 600 20TH ST → parcel 4058002; sf-parcels has blklot 4058002 active, 600–600 20TH; the 2025 roll records it as commercial retail, built 1972.",
+        "checked_on": "2026-09-23",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "pending",
+        "note": "Blocked the same way as the earlier account of this sale (news/items/hoodline/2026-09-20.json, 2026-09-20-hl-0006, declined): the headline here is about Corgi's cafe expansion pulling back generally, not about 600 20th Street, so carrying it onto this page's timeline would misdescribe what happened there. This finding sharpens the fact itself — exact date (8 September) and the actual buyer entity (Dane Reinsurance Inc., not Corgi directly) — over the earlier 'days before' and 'Corgi purchased.' Still needs a story whose headline is about this building before it can be published."
+      }
+    },
+    {
+      "id": "2026-09-23-sc-0004",
+      "date": "2026-09-23",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "568 Sacramento St.",
+      "street_number": "568",
+      "street_name": "SACRAMENTO",
+      "street_type": "ST",
+      "description": "Chef Brad Kilgore, whose three businesses in the Transamerica Pyramid Center closed this year after the building sold, is opening a seafood restaurant named the Bonacker at 568 Sacramento Street, slated for early 2027. The space was the once-buzzing Leo's Oyster Bar, which closed in July 2026 after its lease ended and its owner filed for bankruptcy.",
+      "extra": {
+        "planned_business": "the Bonacker (seafood)",
+        "chef": "Brad Kilgore",
+        "opening_target": "early 2027",
+        "prior_tenant": "Leo's Oyster Bar",
+        "prior_tenant_closed": "2026-07",
+        "prior_tenant_closure_reason": "lease ended; owner filed for bankruptcy"
+      },
+      "citation": {
+        "label": "San Francisco Chronicle, “The chef behind shuttered Transamerica Pyramid restaurants is making a comeback in S.F.,” 23 September 2026",
+        "url": "https://www.sfchronicle.com/food/restaurants/article/bonacker-seafood-san-francisco-22438842.php"
+      },
+      "raw": {
+        "text": "Kilgore's newest project, a seafood restaurant named the Bonacker, is slated to open in early 2027 at 568 Sacramento St., where the once-buzzing Leo's Oyster Bar closed in July after its lease ended and its owner filed for bankruptcy."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0228011",
+        "path": "/san-francisco/nob-hill/commercial-street/565/",
+        "eas_address": "568 SACRAMENTO ST",
+        "method": "EAS exact match on 568 SACRAMENTO ST → parcel 0228011; sf-parcels has blklot 0228011 active, 565–565 COMMERCIAL; the 2025 roll records it as commercial office, built 1985. The assessor files the parcel as 565 COMMERCIAL ST.",
+        "checked_on": "2026-09-23"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Put on the existing page /san-francisco/nob-hill/commercial-street/565/ as sf-chronicle-2026-09-23 — 568 Sacramento Street is “also_addressed” on the PG&E Substation J parcel (0228011). Nothing for the building block: the article names a planned tenant and the prior tenant's closure, not a fact about the landmarked structure. The card is on the homepage news grid."
+      }
+    }
+  ]
+}

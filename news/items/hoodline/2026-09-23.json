@@ -1,0 +1,52 @@
+{
+  "source_id": "hoodline",
+  "batch": "2026-09-23",
+  "read_on": "2026-09-23",
+  "coverage": {
+    "unit": "articles",
+    "examined": 3,
+    "mentions": 1,
+    "remaining": "none",
+    "note": "The chili cook-off and UCSF/DOJ stories name no street address at all."
+  },
+  "findings": [
+    {
+      "id": "2026-09-23-hl-0001",
+      "date": "2026-09-23",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1668 Union St.",
+      "street_number": "1668",
+      "street_name": "UNION",
+      "street_type": "ST",
+      "description": "Hoodline's own account of Corsagna Deli's closure on 2 October 2026 after 46 years. The San Francisco Chronicle broke this story the day before and it is already on the page. This retelling adds real building history the Chronicle account did not carry: the wood-frame building was completed in December 1950 by contractor Leo Dal Bon; through the 1950s it housed Theodore Pezzolo's school of music (already on the page from a 1951 and a 1958 photograph), with an 'Accordion House' sign that came down in 1961; the space became an Italian bakery under the family that runs the deli today, then the delicatessen itself in 1980 when the family matriarch left a corporate job to meet demand for sandwiches. The individuals who ran the bakery and the deli across three generations are not recorded here, per the module's rule that owners are never named.",
+      "extra": {
+        "builder": "Leo Dal Bon",
+        "completed": 1950,
+        "prior_use_1950s": "Theodore School of Music (“Accordion House”), sign down 1961",
+        "prior_use_bakery": "Italian bakery, opened by the family that later ran the deli",
+        "deli_opened": 1980
+      },
+      "citation": {
+        "label": "Hoodline, “Cow Hollow's Corsagna Deli Closes Oct. 2 After 46 Years Slicing Sandwiches,” 23 September 2026",
+        "url": "https://hoodline.com/2026/09/cow-hollow-s-corsagna-deli-closes-oct-2-after-46-years-slicing-sandwiches/"
+      },
+      "raw": {
+        "text": "The wood-frame building was completed in December 1950 by contractor Leo Dal Bon, and through the 1950s it housed Theodore Pezzolo's school of music; the Accordion House sign came down in 1961, per San Francisco Story."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0528009D",
+        "path": "/san-francisco/marina/union-street/1666/",
+        "eas_address": "1666 UNION ST",
+        "method": "EAS exact match on 1668 UNION ST → parcel 0528009D; sf-parcels has blklot 0528009D active, 1666–1670 UNION; the 2025 roll records it as commercial retail, built 1950. EAS puts 1666, 1668, 1670 UNION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1666.",
+        "checked_on": "2026-09-23"
+      },
+      "publish": {
+        "status": "declined",
+        "note": "One event, one entry: the closure is already published on /san-francisco/marina/union-street/1666/ as sf-chronicle-2026-09-22 (news/items/sf-chronicle/2026-09-22.json, 2026-09-22-sc-0001), a day ahead of this account. But the building block was empty, and this story fills it: added building.builder (“Leo Dal Bon”) and building.completed (1950), sourced to this citation, cited on the page. The bakery and music-school ownership history stays out — those are owners, and the module names owners never; the school's business name was already on the page from the 1951 and 1958 archive photographs."
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "source_id": "mission-local",
+  "batch": "2026-09-23",
+  "read_on": "2026-09-23",
+  "coverage": {
+    "unit": "articles",
+    "examined": 3,
+    "mentions": 1,
+    "remaining": "none",
+    "note": "The Magik*Magik Orchestra piece and the home-cooking street-vendor story name no street address."
+  },
+  "findings": [
+    {
+      "id": "2026-09-23-ml-0001",
+      "date": "2026-09-22",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "850 Bryant Street",
+      "street_number": "850",
+      "street_name": "BRYANT",
+      "street_type": "ST",
+      "description": "The only address hit in Mission Local's story about the city's pretrial program closing is a photo caption — \"The Hall of Justice at 850 Bryant Street\" — identifying the building shown in the accompanying photograph. The story is about a program closing, not about the building.",
+      "citation": {
+        "label": "Mission Local, \"S.F.'s trailblazing pretrial program is closing. Its replacement isn't ready.,\" 22 September 2026",
+        "url": "https://missionlocal.org/2026/09/san-francisco-pretrial-closing/"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3759042",
+        "path": "/san-francisco/south-of-market/bryant-street/850/",
+        "eas_address": "850 BRYANT ST",
+        "method": "EAS exact match on 850 BRYANT ST → parcel 3759042; sf-parcels has blklot 3759042 active, 425–425 07TH; the 2025 roll records it as miscellaneous/mixed-use. The assessor files the parcel as 425 07TH ST.",
+        "checked_on": "2026-09-23"
+      },
+      "publish": {
+        "status": "declined",
+        "note": "Photo caption, not reporting about the building. Fails the ten-year test: the story is about a pretrial-release program's closure, not a fact about the Hall of Justice."
+      }
+    }
+  ]
+}
