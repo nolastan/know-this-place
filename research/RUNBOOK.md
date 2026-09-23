@@ -386,10 +386,10 @@ python3 scripts/seed_pages.py render <path to the page, street or area>
 ```
 
 **Seeding pages leaves the neighbours stale.** Every page carries a "nearby
-places" list, so a new page changes the HTML of pages nobody edited — six new
-pages left 34 unrelated `index.html` files failing `validate.py`, none of them
-in `scripts/render-backlog.txt`. Run `validate.py` after `seed-list` and feed
-its "run: … render ⟨path⟩" lines straight back to `render`.
+places" list, so a new page changes the HTML of pages nobody edited. The HTML is
+generated and gitignored, so `python3 scripts/build_site.py` — which rebuilds
+the nearby index and re-renders every page — is the whole fix; run it before
+`validate.py`.
 
 **`render` takes a repo-relative path, and a finding's `resolution.path` is
 not one.** Findings store the site path — `/san-francisco/nob-hill/...` — and
@@ -455,13 +455,6 @@ Two things bite when adding those facts in bulk:
   put there by whoever maintains it. A page it counts as *failed* did not get
   the fact either. Neither is silent: `render` prints both, and `validate.py`
   prints the opt-out count on every run.
-- **Intersect your page list with `scripts/render-backlog.txt` first.** That
-  file grandfathers pages whose HTML the renderer cannot yet reproduce, and
-  `render` does not consult it: a bulk render sweeps any backlogged page in the
-  list and can drop hand-written content the renderer has no `data.json` key
-  for. Render those pages last, read `git diff` on each, and where the diff
-  loses something, restore the file, add your fact to its HTML by hand and leave
-  its backlog line in place.
 
 **Check the neighborhood directory the resolver chose before you seed.** It
 files a new page under the area of the nearest published page, which is right

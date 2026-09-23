@@ -2166,6 +2166,26 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   record's 25 by 114). *Measure the offset; where it lands on no lot line, or
   disagrees with the lot, say which and don't choose silently.*
   ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **The privacy limit binds `raw.text` too, and a realty column puts the
+  person between the address and the price.** "Lot and improvements at 1571
+  Sanchez street for James Kelly; $2,500" — a fixed-length quote from the
+  address runs straight through the name. In the 1910 *Call* batch about 30 of
+  172 raw spans would have carried a private buyer, seller, lessee or owner.
+  *Read every raw span before the resolver runs; stop the quote before the name
+  or splice two fragments with " ... ", and keep the name out of `extra` too.*
+  ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **A construction notice is `kind: construction` (or `building contract`), not
+  `building`.** `check.py --overlap` flags any finding dated the parcel's roll
+  year as "not about it going up" unless its kind says it is, and 13 plans and
+  contracts in one batch came back flagged under `building`. The kind also
+  decides how the page's timeline reads, so it is worth getting right at
+  extraction, not after the scan.
+- **`corner.py` can miss the very parcel you want, when EAS lists it under only
+  one of the two streets.** The Women's Building (the Mission Turnverein, 3541
+  18th) sits at 18th and Lapidge and never appeared at that corner; its page did.
+  *For a named institution, grep the pages on disk for the name or the street
+  block before concluding the corner has been rebuilt*, and check the lot area
+  against the record (8,903 sq ft against 93:8 1/4 by 95 settled it).
 - **`data.json` files are not all indented the same way.** Some pages are
   written with one-space indentation, some with two; a publish script that
   re-dumps every file with `indent=2` turned four one-line additions into
