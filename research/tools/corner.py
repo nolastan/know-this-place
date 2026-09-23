@@ -10,6 +10,12 @@ lot area, SF Planning's building name, and the page the site already has.
 
     python3 research/tools/corner.py BUSH MASON
     python3 research/tools/corner.py "GOLDEN GATE" JONES --year 1912
+    python3 research/tools/corner.py CALIFORNIA HYDE --to LEAVENWORTH --year 1911
+
+`--to` lists a whole block face instead: every parcel addressed on the first
+street between its crossings with the other two, for a record that says "south
+side of California between Hyde and Leavenworth", or gives an offset further
+along the block than the corner radius reaches.
 
 It deliberately does not pick a corner. Which parcel is "southeast" depends on
 which side of the street carries the odd numbers, and that is a reading of the
@@ -63,10 +69,35 @@ def pages_by_apn() -> dict:
     return out
 
 
+def crossing(A: list, B: list):
+    """Where two streets' EAS rows come closest, or None if they don't meet."""
+    pa = [(float(x["latitude"]), float(x["longitude"])) for x in A]
+    best = min(((p[0] - q[0]) ** 2 + (p[1] - q[1]) ** 2, p, q)
+               for p in pa for q in ((float(y["latitude"]), float(y["longitude"])) for y in B))
+    if best[0] > 0.0012 ** 2:
+        return None
+    return ((best[1][0] + best[2][0]) / 2, (best[1][1] + best[2][1]) / 2)
+
+
+def block_face(A: list, p: tuple, q: tuple) -> dict:
+    """Parcels addressed on street A between crossings p and q, either side."""
+    k = math.cos(math.radians(p[0]))
+    vx, vy = (q[1] - p[1]) * k, q[0] - p[0]
+    n = math.hypot(vx, vy)
+    out = {}
+    for x in A:
+        wx, wy = (float(x["longitude"]) - p[1]) * k, float(x["latitude"]) - p[0]
+        if 0 <= (wx * vx + wy * vy) / (n * n) <= 1 and abs(wx * vy - wy * vx) / n < RADIUS_DEG:
+            out.setdefault(x["parcel_number"], []).append(x["address"])
+    return out
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("street_a")
     ap.add_argument("street_b")
+    ap.add_argument("--to", metavar="STREET_C",
+                    help="list street_a's block face from street_b to this street instead")
     ap.add_argument("--year", type=int, help="mark parcels built within two years of this")
     a = ap.parse_args()
     A, B = eas_rows(a.street_a), eas_rows(a.street_b)
@@ -74,22 +105,29 @@ def main() -> int:
         print(f"no EAS rows for {a.street_a if not A else a.street_b} — "
               "use EAS's spelling (OFARRELL, 06TH, GOLDEN GATE)")
         return 1
-    pa = [(float(x["latitude"]), float(x["longitude"])) for x in A]
-    best = min(((p[0] - q[0]) ** 2 + (p[1] - q[1]) ** 2, p, q)
-               for p in pa for q in ((float(y["latitude"]), float(y["longitude"])) for y in B))
-    if best[0] > 0.0012 ** 2:
+    ix = crossing(A, B)
+    if ix is None:
         print(f"{a.street_a} and {a.street_b} do not meet")
         return 1
-    ix = ((best[1][0] + best[2][0]) / 2, (best[1][1] + best[2][1]) / 2)
-    near = {}
-    for x in A + B:
-        dy = float(x["latitude"]) - ix[0]
-        dx = (float(x["longitude"]) - ix[1]) * math.cos(math.radians(ix[0]))
-        if math.hypot(dy, dx) < RADIUS_DEG:
-            near.setdefault(x["parcel_number"], []).append(x["address"])
+    if a.to:
+        C = eas_rows(a.to)
+        iy = crossing(A, C) if C else None
+        if iy is None:
+            print(f"{a.street_a} and {a.to} do not meet")
+            return 1
+        near = block_face(A, ix, iy)
+        head = f"{a.street_a} between {a.street_b} and {a.to}: {len(near)} parcel(s)"
+    else:
+        near = {}
+        for x in A + B:
+            dy = float(x["latitude"]) - ix[0]
+            dx = (float(x["longitude"]) - ix[1]) * math.cos(math.radians(ix[0]))
+            if math.hypot(dy, dx) < RADIUS_DEG:
+                near.setdefault(x["parcel_number"], []).append(x["address"])
+        head = (f"{a.street_a} & {a.street_b}: {len(near)} parcel(s) within ~60 m of "
+                f"{ix[0]:.5f}, {ix[1]:.5f}")
     names, pages = planning_names(sorted(near)), pages_by_apn()
-    print(f"{a.street_a} & {a.street_b}: {len(near)} parcel(s) within ~60 m of "
-          f"{ix[0]:.5f}, {ix[1]:.5f}")
+    print(head)
     for apn in sorted(near):
         ro = roll_row(apn)
         yr = ro.get("year_property_built") or "?"

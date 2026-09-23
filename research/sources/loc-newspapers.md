@@ -91,7 +91,7 @@ Issue counts per year; a year split across batches needs all of them.
 | | 1910 | `jenner` (90), `klamath_ver01` (122), `mecca` (122), `needles` (31) |
 | | **1911** | `curiv_betteravia_ver02` (Jan–Aug, 5,901 pages), `curiv_angwin_ver02` (Sep–Dec, 2,996 pages) — **both on disk** |
 | | **1912** | `angwin` (106), `calipatria_ver03` (183), `dardanelle_ver01` (64) — 9,693 pages, **all three fetched 2026-09-23**; nothing after 15 December |
-| | 1913 | `dardanelle` (15), `grimes_ver01` (132) |
+| | 1913 | `dardanelle` (15: 1–15 February), `grimes_ver01` (132: 16 July–8 December) — **both fetched 2026-09-23**; January, March to mid-July and the rest of December are in neither |
 | *Morning Call* `sn94052989` | 1890–1895 | `kaweah_ver01`, `hemet_ver01`, `garberville_ver01`, `exeter`, `idyllwild`, `oakland_ver01`, `pescadero_ver01` |
 
 ### The 1911 Real Estate and Financial Section
@@ -112,8 +112,9 @@ carries, and what of it is usable:
 - **Auction lists** — the building's rooms and form with the lot, a week before
   the sale, and the result the following Saturday.
 - **Building news** — new construction with architect and cost, usually by
-  corner or "137:6 feet west of Mason" rather than by number. Unresolvable
-  unless Planning's `name` field names the parcel.
+  corner or "137:6 feet west of Mason" rather than by number. Placed by hand
+  with `research/tools/corner.py` on lot area and roll year (see the 1912 and
+  1913 notes below).
 - **The improvement-club column** — dated meetings at named halls: the Eureka
   Valley Improvement hall at 406 Castro, St. Joseph's hall on Tenth Street,
   the Oakwood Hotel at 1805 Divisadero.
@@ -179,6 +180,55 @@ Bay-cities news). Three things differ, and the second is the one that pays:
 - **Thirteen resolved findings were declined** because the roll dates the
   building on the parcel after 1912 — Metreon, 1970s complexes on Golden Gate,
   the 1924 building on the Realty Building's lot.
+
+### The 1913 pages — what changed from 1912
+
+The batches hold only **1–15 February and 16 July–8 December 1913**: 24
+Saturdays, not 52. Three things differ from 1912:
+
+- **The header goes after February.** "REAL ESTATE AND FINANCIAL SECTION"
+  heads the page on 1, 8 and 15 February and then disappears. From July the
+  realty news runs on one or two unheaded pages among the residence-park and
+  country-land advertising (St. Francis Wood, Ingleside Terraces, Richmond
+  tracts). Find it by its headlines — `SALES BY …`, `… LEASES MADE BY …`,
+  `FEATURES OF SAN FRANCISCO'S BUILDING ACTIVITY` — not by the header, and
+  skip the classified pages, which score high on addresses and carry nothing:
+  a page with more than about 40 uses of "rooms" is want-ads. On 16 and 30
+  August, when the paper ran ten to twelve pages, no realty page was found.
+- **Far fewer numbers.** 186 numbered mentions on 32 pages, against 761 on
+  131 in 1912; the brokers' columns give most sales as "the north line of
+  Turk street, 180 feet east of Webster", so the corner-and-offset share
+  rises to 37 of 59 findings. `research/tools/corner.py --to` lists the whole
+  block face, and the sf-parcels shapes measure the offset (worked below).
+- **Picture captions carry architects with no lot.** "A new apartment house
+  at Hyde and O'Farrell streets. W. G. Hind, architect." Year and use alone
+  do not place one; both 1913 captions stay `unresolved` with the likeliest
+  parcel named.
+
+### Cautions for the 1913 pages
+
+- **The offset is the check where the lot is not.** The Ellsworth sale (1911)
+  and the 24th Street and Mission Street sales (1913) were placed by
+  measuring along the block face on the `acdm-wktn` shapes from the corner:
+  the lot whose front begins at the stated distance is the parcel. Lots begin
+  on round multiples of 25 feet from a 25- or 27:6-foot corner lot; an offset
+  that falls on no lot line (80 feet east of Taylor, 1913) is a misprint or
+  an OCR digit, and the entry stays unresolved.
+- **Where the offset and the lot disagree, say so on the page.** The
+  Ellsworth apartments are "147 feet east of Polk" and 45 by 128 feet; the
+  only 45 by 128 lot on that block face begins 48 feet from Polk. The lot, the
+  storeys and the unit count agree, so it was placed, and the disagreement is
+  in the page's `unknowns`.
+- **Pages confirm more often than not.** Of the 13 placements by hand, five
+  landed on pages that already carried the same architect or owner from
+  another source: Havens (the Flatiron Building), Smith and Stewart (the
+  Metone), Blaisdell's Shreve factory, the Drexler–Colombo Building, and
+  The Paul's 60 rooms.
+- **A notable name on a vanished house goes on the lot as site history.**
+  The Levi Strauss residence at Post and Leavenworth burned in 1906; the 1913
+  sale notice is the published source that places it on the Matsonia's lot,
+  so it is `building.site_before` plus a dated entry, not a
+  `notable_residents` row.
 
 ### Cautions
 
@@ -247,10 +297,24 @@ Bay-cities news). Three things differ, and the second is the one that pays:
   corners or building names), 55 unresolved; 58 published on 56 pages, 26
   of them seeded, 13 declined. Batch file
   `findings/loc-newspapers/sn85066387-1912-real-estate.json`.)
+- **Verified:** 2026-09-23 (the *Call*'s 1913 real-estate pages, every
+  Saturday the batches hold: 32 OCR pages over 22 Saturdays, 186
+  numbered-address mentions and 296 corner or architect cues, 59 findings — 25
+  resolved (13 by hand), 34 unresolved; 21 published on 21 pages, 5 of them
+  seeded, 4 declined. Batch file
+  `findings/loc-newspapers/sn85066387-1913-real-estate.json`. Same day, the
+  1911 batch's seven corner-located entries (#401): 4 resolved onto 3 parcels
+  — 500 Ellis, 1580 Jackson (seeded; the Ellsworth), 1218 Haight (seeded; two
+  sales of "No. 1210") — and 3 left unresolved with the parcel checks written
+  in.)
 - **Coverage:** 1890s and 1900s years scanned in August 2026 for mentions only
   (above); **1911 and 1912 Real Estate and Financial Sections read in full**
-  (1912 lacks 21 and 28 December, which no batch holds). Next: 1913
-  (`dardanelle` has 15 issues, `grimes_ver01` 132), then the unscanned
-  1897–1899 and 1903–1904 years. The 1911 batch's unnumbered building entries
-  can now be placed with `corner.py`. The rest of the 1911 paper — 8,800 pages of news, where the
-  fires and the building-permit lists are — is on disk and unread.
+  (1912 lacks 21 and 28 December, which no batch holds); **1913 read as far
+  as the batches hold it** (1–15 February, 16 July–8 December). Next: find
+  1913's missing months — no batch in the table holds them; check the
+  `data/batches/` listings for a later `curiv_` batch before calling them lost
+  — then the unscanned 1897–1899 and 1903–1904 years. The weekly Building
+  Contracts lists in 1911–1913 are metes-and-bounds and were read only for
+  named buildings; they are the next `corner.py` batch. The rest of the 1911,
+  1912 and 1913 paper — the fires and the building-permit lists — is on disk
+  in a session that fetched it, and unread.

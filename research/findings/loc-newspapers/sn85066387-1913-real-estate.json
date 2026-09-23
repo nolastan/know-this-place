@@ -1,0 +1,2115 @@
+{
+ "source_id": "loc-newspapers",
+ "batch": "sn85066387-1913-real-estate",
+ "read_on": "2026-09-23",
+ "notes": "The San Francisco Call's Saturday real-estate pages for 1913, as far as the batches hold the year: curiv_dardanelle_ver01 has 1-15 February and curiv_grimes_ver01 16 July to 8 December, so January, March to mid-July and the last three weeks of December are in neither. 24 Saturdays fall in that span; the real-estate news was found on 22 of them (none identified on 16 and 30 August, when the paper ran ten to twelve pages) and read page by page, 32 OCR pages. The section's own header survives only in February; from July the realty news runs without it on one or two pages among the tract advertising, and was found by its headlines (SALES BY ..., leasing reports, BUILDING ACTIVITY picture captions). 1913 is after the 1909 renumbering, so the pages print today's numbers and every entry carries extra.record_date. Taken: numbered addresses where the page says something about the building itself - its form and price in a sale, a firm that leased it, a hall, an auction offering - and buildings located by corner, offset or name with their architect, storeys, lot or institution, placed by hand with research/tools/corner.py. Left out at extraction: sellers, buyers, lessors and lessees who are private people, owners named in loan and contract notices, and the buyers in the Sunset and Richmond lot lists.",
+ "coverage": {
+  "unit": "OCR pages",
+  "examined": 32,
+  "mentions": 186,
+  "remaining": "1913 outside 1-15 February and 16 July-8 December is in neither batch; the batch index in sources/loc-newspapers.md says where to look next. The rest of the 1913 paper - about 2,860 OCR pages across curiv_dardanelle_ver01 and curiv_grimes_ver01, where the fires, the building-permit lists and the news reports sit - is on disk but unread for this batch. The weekly Real Estate Transactions and Building Contracts lists (on 1, 8 February, 19 July, 1 and 8 November, 29 November, 6 December) were read only for entries naming a building by name or an institution; their metes-and-bounds contracts are the next corner.py batch.",
+  "note": "186 numbered-address mentions and 296 corner, offset and architect cues on the 32 pages, merged into 163 passages and read one by one. About 60 of the numbered mentions are advertisers' and real-estate firms' own offices (the Call's weekly guide to real-estate firms alone repeats 15 a week), about 25 are Oakland, Berkeley, Richmond and Marin, and the Sunset, Richmond and Parkside lot-sales lists give lots, not buildings. Not taken: vacant-lot sales, bare leases between private people, savings-bank loans on vacant lots, a robbery at a private apartment, a wedding notice's home address, numbers the OCR destroyed, and the metes-and-bounds transaction lists. 59 findings: 22 at a street number, 37 located by corner, offset or building name; 25 resolved (13 by hand), 34 unresolved; 21 published on 21 pages, 5 of them seeded; 4 declined because the building on the parcel is later than 1913."
+ },
+ "findings": [
+  {
+   "id": "sn85066387-1913-real-estate-0001",
+   "date": "1913-02-01",
+   "date_precision": "day",
+   "kind": "building",
+   "address_as_written": "the Holbrook building in Sutter street between Sansome and Montgomery",
+   "street_number": "58",
+   "street_name": "SUTTER",
+   "street_type": "ST",
+   "description": "The Holbrook Building was nearly finished in February 1913.",
+   "extra": {
+    "building_name_as_recorded": "Holbrook building",
+    "cross_streets": "between Sansome and Montgomery",
+    "number_from": "an advertisement on p. 12 of the same issue: 'the Holbrook Building, No. 58 Sutter Street, between Sansome and Montgomery'",
+    "record_date": "1913-02-01"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 1 February 1913, p. 11",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-02-01/ed-1/seq-11/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/02/01/ed-1/seq-11/ocr.txt",
+    "locator": "p. 11, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "the Holbrook building in Sutter street between Sansome and Montgom ery, which is now nearly finished",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "No record in sf-eas-addresses for 58 SUTTER ST.",
+    "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 39, 41, 53, 55, 57. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0002",
+   "date": "1913-02-01",
+   "date_precision": "day",
+   "kind": "sale",
+   "address_as_written": "two stores and two flats, at 553-5.% Haignt street",
+   "street_number": "553",
+   "street_name": "HAIGHT",
+   "street_type": "ST",
+   "description": "Two stores and two flats here were sold for $12,300.",
+   "extra": {
+    "form": "two stores and two flats",
+    "price_usd": 12300,
+    "number_range_as_recorded": "553-555",
+    "record_date": "1913-02-01"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 1 February 1913, p. 12",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-02-01/ed-1/seq-12/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/02/01/ed-1/seq-12/ocr.txt",
+    "locator": "p. 12, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "Lot and improTements consisting of two Btarea and two flats, at 553-5.% Haignt street ... price $12,300",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0860062",
+    "path": "/san-francisco/hayes-valley/haight-street/551/",
+    "eas_address": "551 HAIGHT ST",
+    "method": "EAS exact match on 553 HAIGHT ST → parcel 0860062; sf-parcels has blklot 0860062 active, 551–559 HAIGHT; the 2025 roll records it as commercial hotel, built 1900. EAS puts 551, 553, 555, 557, 559 HAIGHT ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 551.",
+    "checked_on": "2026-09-23",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "402"
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0003",
+   "date": "1913-02-01",
+   "date_precision": "day",
+   "kind": "sale",
+   "address_as_written": "store and flats located at 1806-10 McAllister street",
+   "street_number": "1806",
+   "street_name": "MCALLISTER",
+   "street_type": "ST",
+   "description": "A store and flats here were sold for $8,500.",
+   "extra": {
+    "form": "store and flats",
+    "price_usd": 8500,
+    "number_range_as_recorded": "1806-1810",
+    "record_date": "1913-02-01"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 1 February 1913, p. 12",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-02-01/ed-1/seq-12/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/02/01/ed-1/seq-12/ocr.txt",
+    "locator": "p. 12, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "store and flats located at 1806-10 McAllister street ... for the sum of $8,500"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "No record in sf-eas-addresses for 1806 MCALLISTER ST.",
+    "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 1787, 1789, 1791, 1793, 1795, 1797. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0004",
+   "date": "1913-02-01",
+   "date_precision": "day",
+   "kind": "sale",
+   "address_as_written": "residence *t 183 Fourteenth arenue",
+   "street_number": "183",
+   "street_name": "14TH",
+   "street_type": "AVE",
+   "description": "A residence here was sold for $7,500.",
+   "extra": {
+    "form": "residence",
+    "price_usd": 7500,
+    "street_as_recorded": "Fourteenth avenue",
+    "record_date": "1913-02-01"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 1 February 1913, p. 12",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-02-01/ed-1/seq-12/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/02/01/ed-1/seq-12/ocr.txt",
+    "locator": "p. 12, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "residence *t 183 Fourteenth arenue, to James Morrie, for the sum of $7,500",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "1374018A",
+    "path": "/san-francisco/outer-richmond/14th-avenue/183/",
+    "eas_address": "183 14TH AVE",
+    "method": "EAS exact match on 183 14TH AVE → parcel 1374018A; sf-parcels has blklot 1374018A active, 183–183 14TH; the 2025 roll records it as multi-family residential, built 1924.",
+    "checked_on": "2026-09-23",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "The roll dates the building on the parcel to 1924; the residence sold in 1913 is gone."
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0005",
+   "date": "1913-02-01",
+   "date_precision": "day",
+   "kind": "sale",
+   "address_as_written": "resi dence at 351 Fifth nrenue",
+   "street_number": "351",
+   "street_name": "05TH",
+   "street_type": "AVE",
+   "description": "A residence here was sold for $4,500.",
+   "extra": {
+    "form": "residence",
+    "price_usd": 4500,
+    "street_as_recorded": "Fifth avenue",
+    "record_date": "1913-02-01"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 1 February 1913, p. 12",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-02-01/ed-1/seq-12/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/02/01/ed-1/seq-12/ocr.txt",
+    "locator": "p. 12, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "resi dence at 351 Fifth nrenue, to James L. Furey, for the sum of $4,500",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "1437009",
+    "path": "/san-francisco/inner-richmond/5th-avenue/351/",
+    "eas_address": "351 05TH AVE",
+    "method": "EAS exact match on 351 05TH AVE → parcel 1437009; sf-parcels has blklot 1437009 active, 351–351 05TH; the 2025 roll records it as multi-family residential, built 1974.",
+    "checked_on": "2026-09-23",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "The roll dates the building on the parcel to 1974; the residence sold in 1913 is gone."
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0006",
+   "date": "1913-02-01",
+   "date_precision": "day",
+   "kind": "sale",
+   "address_as_written": "Lot and two flats, renting for $45 per month, at 209 Tremont avenue",
+   "street_number": "209",
+   "street_name": "TREMONT",
+   "street_type": "AVE",
+   "description": "Two flats on a 25 by 100 ft lot, renting for $45 a month, were sold for $5,500.",
+   "extra": {
+    "form": "two flats",
+    "lot_as_recorded": "25x100",
+    "price_usd": 5500,
+    "rent_usd_month": 45,
+    "record_date": "1913-02-01"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 1 February 1913, p. 12",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-02-01/ed-1/seq-12/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/02/01/ed-1/seq-12/ocr.txt",
+    "locator": "p. 12, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "Lot and two flats, renting for $45 per month, at 209 Tremont avenue ... for tfie sum of $5,500; lot 25x100"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "sf-eas-addresses holds no street named TREMONT AVE, under that spelling or any spelling of it, so the address cannot be looked up.",
+    "note": "The street the record names is not a street in the city's address registry today; the record may name a private way, a renamed street or a spelling this pass could not match."
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0007",
+   "date": "1913-02-01",
+   "date_precision": "day",
+   "kind": "sale",
+   "address_as_written": "residence, 576 Liberty street, between Noe and Castro, lot 25x114",
+   "street_number": "576",
+   "street_name": "LIBERTY",
+   "street_type": "ST",
+   "description": "A residence on a 25 by 114 ft lot was sold for $3,750.",
+   "extra": {
+    "form": "residence",
+    "lot_as_recorded": "25x114",
+    "cross_streets": "between Noe and Castro",
+    "price_usd": 3750,
+    "record_date": "1913-02-01"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 1 February 1913, p. 12",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-02-01/ed-1/seq-12/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/02/01/ed-1/seq-12/ocr.txt",
+    "locator": "p. 12, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "residence, 576 Liberty street, between Noe and Castro, lot 25x114, $3,750"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3603066",
+    "path": "/san-francisco/castro/liberty-street/576/",
+    "eas_address": "576 LIBERTY ST",
+    "method": "EAS exact match on 576 LIBERTY ST → parcel 3603066; sf-parcels has blklot 3603066 active, 576–576 LIBERTY; the 2025 roll records it as single family residential, built 1900.",
+    "checked_on": "2026-09-23"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "402"
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0008",
+   "date": "1913-02-01",
+   "date_precision": "day",
+   "kind": "sale",
+   "address_as_written": "*fy<>n room reeldoncr. at. 3174 Turk street near First avenue",
+   "street_number": "3174",
+   "street_name": "TURK",
+   "street_type": "BLVD",
+   "description": "A seven-room residence was sold for $4,750.",
+   "extra": {
+    "form": "seven-room residence",
+    "cross_streets": "near First avenue (Arguello)",
+    "price_usd": 4750,
+    "street_as_recorded": "Turk street",
+    "record_date": "1913-02-01"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 1 February 1913, p. 12",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-02-01/ed-1/seq-12/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/02/01/ed-1/seq-12/ocr.txt",
+    "locator": "p. 12, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "*fy<>n room reeldoncr. at. 3174 Turk street near First avenue; price $4,750",
+    "ocr_uncertain": true
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "resolved",
+    "apn": "1141030",
+    "path": "/san-francisco/lone-mountain/turk-boulevard/3164/",
+    "eas_address": "3164 TURK BLVD",
+    "method": "EAS exact match on 3174 TURK BLVD → parcel 1141030; sf-parcels has blklot 1141030 active, 3164–3174 TURK; the 2025 roll records it as multi-family residential, built 1963. EAS puts 3164, 3174 TURK BLVD on that parcel, so per the directory contract the fact belongs on one page at the lowest, 3164.",
+    "checked_on": "2026-09-23",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "The roll dates the building on the parcel to 1963; the residence sold in 1913 is gone."
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0009",
+   "date": "1913-02-01",
+   "date_precision": "day",
+   "kind": "sale",
+   "address_as_written": "two fiats, 2705-2707 Tine street near Baker, 25x137:8 feet",
+   "street_number": "2705",
+   "street_name": "PINE",
+   "street_type": "ST",
+   "description": "Two flats on a 25 by 137 ft 6 in lot were sold for $4,500.",
+   "extra": {
+    "form": "two flats",
+    "lot_as_recorded": "25x137:6",
+    "cross_streets": "near Baker",
+    "price_usd": 4500,
+    "number_range_as_recorded": "2705-2707",
+    "record_date": "1913-02-01"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 1 February 1913, p. 12",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-02-01/ed-1/seq-12/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/02/01/ed-1/seq-12/ocr.txt",
+    "locator": "p. 12, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "two fiats, 2705-2707 Tine street near Baker, 25x137:8 feet: price $4,500",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "No record in sf-eas-addresses for 2705 PINE ST.",
+    "note": "No record for 2705; the parcel at 2707 PINE ST (1049034) holds a five-storey building of 1969 on 7,500 sq ft, so the two flats on a 25 by 137:6 lot are gone. The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 2685, 2687, 2689, 2704, 2706, 2707. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0010",
+   "date": "1913-02-01",
+   "date_precision": "day",
+   "kind": "sale",
+   "address_as_written": "six room residence. 174 Ninth avenue ■car Lake etreet, lot 25t120 feet",
+   "street_number": "174",
+   "street_name": "09TH",
+   "street_type": "AVE",
+   "description": "A six-room residence on a 25 by 120 ft lot was sold for $5,500.",
+   "extra": {
+    "form": "six-room residence",
+    "lot_as_recorded": "25x120",
+    "cross_streets": "near Lake",
+    "price_usd": 5500,
+    "street_as_recorded": "Ninth avenue",
+    "record_date": "1913-02-01"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 1 February 1913, p. 12",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-02-01/ed-1/seq-12/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/02/01/ed-1/seq-12/ocr.txt",
+    "locator": "p. 12, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "six room residence. 174 Ninth avenue ■car Lake etreet, lot 25t120 feet; price $5,500",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "1368028",
+    "path": "/san-francisco/inner-richmond/9th-avenue/174/",
+    "eas_address": "174 09TH AVE",
+    "method": "EAS exact match on 174 09TH AVE → parcel 1368028; sf-parcels has blklot 1368028 active, 174–176 09TH; the 2025 roll records it as multi-family residential, built 1908. EAS puts 174, 176 09TH AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 174.",
+    "checked_on": "2026-09-23",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "402"
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0011",
+   "date": "1913-07-26",
+   "date_precision": "day",
+   "kind": "lease",
+   "address_as_written": "storrt and basement, at 77 Third street, and also ... more and basement in the same building and fronting in Jessie street",
+   "street_number": "77",
+   "street_name": "03RD",
+   "street_type": "ST",
+   "description": "Its store and basement were let to William Schmalz & Sons, and the store and basement on its Jessie Street side to Roth & Blanchard, both for a term of years.",
+   "extra": {
+    "tenant_firm": "William Schmalz & Sons; Roth & Blanchard",
+    "street_as_recorded": "Third street",
+    "record_date": "1913-07-26"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 26 July 1913, p. 14",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-07-26/ed-1/seq-14/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/07/26/ed-1/seq-14/ocr.txt",
+    "locator": "p. 14, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "to WO -11 am Scbmalz & Sons, storrt and basement, at 77 Third street, and also ... to Both & Blam-hard, more and basement in the same building and fronting in Jessie street",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "No record in sf-eas-addresses for 77 03RD ST.",
+    "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 60, 71, 86, 87, 91, 95. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0012",
+   "date": "1913-07-26",
+   "date_precision": "day",
+   "kind": "lease",
+   "address_as_written": "the building just recently completed ... situate at 622 Larkin street",
+   "street_number": "622",
+   "street_name": "LARKIN",
+   "street_type": "ST",
+   "description": "The ground floor and basement of the newly completed building were let to Leiser Brothers for five years at $3,600.",
+   "extra": {
+    "tenant_firm": "Leiser Brothers",
+    "rent_total_usd": 3600,
+    "record_date": "1913-07-26"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 26 July 1913, p. 14",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-07-26/ed-1/seq-14/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/07/26/ed-1/seq-14/ocr.txt",
+    "locator": "p. 14, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "the ground floor and basement of the building just recently completed by bta owner, situate at 622 Larkin street, for a period of Aye years, at n total reDtal of $3,600",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "No record in sf-eas-addresses for 622 LARKIN ST.",
+    "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 603, 607, 611, 625, 631, 633. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0013",
+   "date": "1913-07-26",
+   "date_precision": "day",
+   "kind": "lease",
+   "address_as_written": "building at 536-038 Bryant street",
+   "street_number": "536",
+   "street_name": "BRYANT",
+   "street_type": "ST",
+   "description": "The building was let to Henry Lund & Co.",
+   "extra": {
+    "tenant_firm": "Henry Lund & Co.",
+    "number_range_as_recorded": "536-538",
+    "record_date": "1913-07-26"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 26 July 1913, p. 14",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-07-26/ed-1/seq-14/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/07/26/ed-1/seq-14/ocr.txt",
+    "locator": "p. 14, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "they hare leased to Henry Lund & Co.. building at 536-038 Bryant street, on private terms",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3762016",
+    "path": "/san-francisco/south-of-market/bryant-street/536/",
+    "eas_address": "536 BRYANT ST",
+    "method": "EAS exact match on 536 BRYANT ST → parcel 3762016; sf-parcels has blklot 3762016 active, 536–536 BRYANT; the 2025 roll records it as industrial, built 1991.",
+    "checked_on": "2026-09-23"
+   },
+   "publish": {
+    "status": "declined",
+    "note": "The roll dates the building on the parcel to 1991; the building let in 1913 is gone."
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0014",
+   "date": "1913-07-26",
+   "date_precision": "day",
+   "kind": "lease",
+   "address_as_written": "store premises at 242 Market street",
+   "street_number": "242",
+   "street_name": "MARKET",
+   "street_type": "ST",
+   "description": "The store premises were let for three years by the Allen Photo Supply Company to the Star Furniture Company.",
+   "extra": {
+    "tenant_firm": "Star Furniture company",
+    "lessor_firm": "Allen Photo Supply company",
+    "record_date": "1913-07-26"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 26 July 1913, p. 14",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-07-26/ed-1/seq-14/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/07/26/ed-1/seq-14/ocr.txt",
+    "locator": "p. 14, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "Pat the account of the Allen Photo Snpply oom ; pany to the Star Furniture company, store prem ises at 242 Market street, for a period of three years",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "No record in sf-eas-addresses for 242 MARKET ST.",
+    "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 245. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0015",
+   "date": "1913-08-02",
+   "date_precision": "day",
+   "kind": "advertisement",
+   "address_as_written": "Nos. 2206 to 2212 DIVISADERO ST., Bet. Washington and Clay Sts. LOT 75x110 FEET",
+   "street_number": "2206",
+   "street_name": "DIVISADERO",
+   "street_type": "ST",
+   "description": "Offered at a court-ordered auction on 6 August 1913: four two-storey residences of eight rooms and bath on a 75 by 110 ft lot, renting for $160 a month.",
+   "extra": {
+    "form": "four two-storey eight-room residences",
+    "lot_as_recorded": "75x110",
+    "cross_streets": "between Washington and Clay",
+    "number_range_as_recorded": "2206-2212",
+    "rent_usd_month": 160,
+    "record_date": "1913-08-02"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 2 August 1913, p. 10",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-08-02/ed-1/seq-10/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/08/02/ed-1/seq-10/ocr.txt",
+    "locator": "p. 10, auction advertisement"
+   },
+   "raw": {
+    "text": "Nos. 2206 to 2212 DIVISADERO ST., Bet. Washington and Clay Sts. LOT 75x110 FEET. IMPROVEMENTS consist of 4 two story S room and bath residences",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "No record in sf-eas-addresses for 2206 DIVISADERO ST.",
+    "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 2193, 2195, 2197, 2199, 2201, 2202. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0016",
+   "date": "1913-08-02",
+   "date_precision": "day",
+   "kind": "event",
+   "address_as_written": "1034 Golden Gate avenue",
+   "street_number": "1034",
+   "street_name": "GOLDEN GATE",
+   "street_type": "AVE",
+   "description": "The Servian Club of San Francisco held its tenth monthly social and dance here.",
+   "extra": {
+    "hall": "meeting place of the Servian club of San Francisco",
+    "record_date": "1913-08-02"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 2 August 1913, p. 11",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-08-02/ed-1/seq-11/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/08/02/ed-1/seq-11/ocr.txt",
+    "locator": "p. 11, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "The tenth monthly social and shirt waist dance of the Servian club of San Francisco will be held this evening at 1034 Golden Gate avenue"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "No record in sf-eas-addresses for 1034 GOLDEN GATE AVE.",
+    "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 1014, 1018, 1019, 1020, 1021, 1023. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0017",
+   "date": "1913-11-22",
+   "date_precision": "day",
+   "kind": "lease",
+   "address_as_written": "the entire five story and basement building at 647-49 Mission street",
+   "street_number": "647",
+   "street_name": "MISSION",
+   "street_type": "ST",
+   "description": "The whole five-storey-and-basement building was let to Morris Stulsaft & Co. for a term of years at a total rental of $120,000.",
+   "extra": {
+    "tenant_firm": "Morris Stulsaft & Co.",
+    "lessor_firm": "Baird Estate company",
+    "rent_total_usd": 120000,
+    "number_range_as_recorded": "647-649",
+    "record_date": "1913-11-22"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 22 November 1913, p. 8",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-11-22/ed-1/seq-8/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/11/22/ed-1/seq-8/ocr.txt",
+    "locator": "p. 8, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "For the account of the Baird Es tate company to Morris Stulsaft & Co.. the entire five story and basement building at 647-49 Mission street, for a term of years at a total rental of $120,000"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3722069",
+    "path": "/san-francisco/east-cut/mission-street/647/",
+    "eas_address": "647 MISSION ST",
+    "method": "EAS exact match on 647 MISSION ST → parcel 3722069; sf-parcels has blklot 3722069 active, 647–649 MISSION; the 2025 roll records it as commercial office, built 1907. EAS puts 647, 649 MISSION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 647.",
+    "checked_on": "2026-09-23"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "402"
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0018",
+   "date": "1913-11-22",
+   "date_precision": "day",
+   "kind": "lease",
+   "address_as_written": "a portion of the loft on the second ftoor of the building at 617 Mission street",
+   "street_number": "617",
+   "street_name": "MISSION",
+   "street_type": "ST",
+   "description": "Part of the second-floor loft was let to the Lamson Company for five years at about $10,000.",
+   "extra": {
+    "tenant_firm": "the Lamson company",
+    "rent_total_usd": 10000,
+    "record_date": "1913-11-22"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 22 November 1913, p. 8",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-11-22/ed-1/seq-8/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/11/22/ed-1/seq-8/ocr.txt",
+    "locator": "p. 8, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "to the Lamson company, a portion of the loft on the second ftoor of the building at 617 Mission street for a term of five years at an approxi mate total rental of $10,000",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3722073",
+    "path": "/san-francisco/east-cut/new-montgomery-street/101/",
+    "eas_address": "617 MISSION ST",
+    "method": "EAS exact match on 617 MISSION ST → parcel 3722073; sf-parcels has blklot 3722073 active, 617–617 MISSION; the 2025 roll records it as commercial office, built 1908.",
+    "checked_on": "2026-09-23"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "402"
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0019",
+   "date": "1913-11-22",
+   "date_precision": "day",
+   "kind": "sale",
+   "address_as_written": "house. 31 Niagara avenue",
+   "street_number": "31",
+   "street_name": "NIAGARA",
+   "street_type": "AVE",
+   "description": "A house here was sold for $2,750.",
+   "extra": {
+    "form": "house",
+    "price_usd": 2750,
+    "record_date": "1913-11-22"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 22 November 1913, p. 8",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-11-22/ed-1/seq-8/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/11/22/ed-1/seq-8/ocr.txt",
+    "locator": "p. 8, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "house. 31 Niagara avenue. $2,750"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "No record in sf-eas-addresses for 31 NIAGARA AVE.",
+    "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 15, 17, 20, 21, 24, 25. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0020",
+   "date": "1913-11-22",
+   "date_precision": "day",
+   "kind": "sale",
+   "address_as_written": "house and lot, 272 London street",
+   "street_number": "272",
+   "street_name": "LONDON",
+   "street_type": "ST",
+   "description": "A house here was sold for $4,000.",
+   "extra": {
+    "form": "house",
+    "price_usd": 4000,
+    "record_date": "1913-11-22"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 22 November 1913, p. 8",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-11-22/ed-1/seq-8/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/11/22/ed-1/seq-8/ocr.txt",
+    "locator": "p. 8, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "house and lot, 272 London street, $4,000"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "6014018",
+    "path": "/san-francisco/excelsior/london-street/272/",
+    "eas_address": "272 LONDON ST",
+    "method": "EAS exact match on 272 LONDON ST → parcel 6014018; sf-parcels has blklot 6014018 active, 272–272 LONDON; the 2025 roll records it as single family residential, built 1905. Filed under excelsior, the analysis neighborhood the roll gives the parcel: the site has no London Street page, so the nearest-page rule chose mission, which is wrong for a street in the Excelsior.",
+    "checked_on": "2026-09-23",
+    "note": "No page at this path yet; the parcel is the publisher's to seed.",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "402"
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0021",
+   "date": "1913-12-06",
+   "date_precision": "day",
+   "kind": "sale",
+   "address_as_written": "lot and im provements, 32x82:6, being 1810-1814 Divlsadero street, consisting of store and two flats",
+   "street_number": "1810",
+   "street_name": "DIVISADERO",
+   "street_type": "ST",
+   "description": "A store and two flats on a 32 by 82 ft 6 in lot were sold.",
+   "extra": {
+    "form": "store and two flats",
+    "lot_as_recorded": "32x82:6",
+    "number_range_as_recorded": "1810-1814",
+    "record_date": "1913-12-06"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 6 December 1913, p. 4",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-12-06/ed-1/seq-4/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/12/06/ed-1/seq-4/ocr.txt",
+    "locator": "p. 4, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "lot and im provements, 32x82:6, being 1810-1814 Divlsadero street, consisting of store and two flats",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "1050015",
+    "path": "/san-francisco/pacific-heights/divisadero-street/1810/",
+    "eas_address": "1810 DIVISADERO ST",
+    "method": "EAS exact match on 1810 DIVISADERO ST → parcel 1050015; sf-parcels has blklot 1050015 active, 1810–1816 DIVISADERO; the 2025 roll records it as multi-family residential, built 1906. EAS puts 1810, 1812, 1814, 1816 DIVISADERO ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1810.",
+    "checked_on": "2026-09-23"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "402"
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0022",
+   "date": "1913-12-06",
+   "date_precision": "day",
+   "kind": "event",
+   "address_as_written": "Polito hall. 3665 Sixteenth street",
+   "street_number": "3665",
+   "street_name": "16TH",
+   "street_type": "ST",
+   "description": "Polito Hall: the Twentieth Century Club and the Forensic Club held a debate here on immigration.",
+   "extra": {
+    "hall": "Polito hall",
+    "street_as_recorded": "Sixteenth street",
+    "record_date": "1913-12-06"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 6 December 1913, p. 4",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-12-06/ed-1/seq-4/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/12/06/ed-1/seq-4/ocr.txt",
+    "locator": "p. 4, news page"
+   },
+   "raw": {
+    "text": "Members of the Twentieth Century club and the Forensic club will hold a debate this evening in Polito hall. 3665 Sixteenth street"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3562028",
+    "path": "/san-francisco/castro/16th-street/3661/",
+    "eas_address": "3661 16TH ST",
+    "method": "EAS exact match on 3665 16TH ST → parcel 3562028; sf-parcels has blklot 3562028 active, 3661–3671 16TH; the 2025 roll records it as multi-family residential, built 1905. EAS puts 3661, 3663, 3665, 3667, 3669, 3671 16TH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 3661.",
+    "checked_on": "2026-09-23"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "402"
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0023",
+   "date": "1913-02-01",
+   "date_precision": "day",
+   "kind": "building",
+   "address_as_written": "The Meyer & Liebes building, to be erected at the corner of Market, Sutter and Sansome streets",
+   "description": "The Meyer & Liebes Building was to be put up at the corner: ten storeys and basement, Class A, steel frame with reinforced-concrete walls and floors, about 100 offices and four stores, estimated at $150,000 and due early in 1914; designed by Havens & Toepke.",
+   "extra": {
+    "building_name_as_recorded": "Meyer & Liebes building",
+    "architect": "Havens & Toepke",
+    "cost_usd": 150000,
+    "cross_streets": "corner of Market, Sutter and Sansome",
+    "record_date": "1913-02-01"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 1 February 1913, p. 11",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-02-01/ed-1/seq-11/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/02/01/ed-1/seq-11/ocr.txt",
+    "locator": "p. 11, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "The Meyer & Liebes building, to be erected at the corner of Market. Sutter and Sansome streets, will cost $150,000. It is to be a 10 story and basement class A building ... The architects are Havens & Toepke",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "checked_on": "2026-09-23",
+    "apn": "0291001",
+    "path": "/san-francisco/east-cut/market-street/540/",
+    "eas_address": "540 MARKET ST",
+    "method": "The record gives the corner of Market, Sutter and Sansome and a ten-storey-and-basement Class A building by Havens & Toepke. corner.py SUTTER SANSOME and MARKET SANSOME: the gore parcel is 0291001 (540-548 Market, 1-15 Sutter), ten storeys, built 1913 by the roll, named FLATIRON BUILDING by SF Planning - the only ten-storey building of that date at the corner. The page already credits Charles I. Havens, the firm's partner, from another source: confirmed.",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "402"
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0024",
+   "date": "1913-02-01",
+   "date_precision": "day",
+   "kind": "building",
+   "address_as_written": "the new Crocker estate building across Market street at the corner of Ecker",
+   "description": "A new building for the Crocker estate at the corner of Ecker Street was approaching completion.",
+   "extra": {
+    "building_name_as_recorded": "Crocker estate building",
+    "cross_streets": "Market at the corner of Ecker",
+    "record_date": "1913-02-01"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 1 February 1913, p. 11",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-02-01/ed-1/seq-11/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/02/01/ed-1/seq-11/ocr.txt",
+    "locator": "p. 11, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "the new Crocker estate bund ing across Market street at the corner of Kcker, now approaching completion",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "The record gives the Crocker estate building at the corner of Market and Ecker. EAS has no rows for Ecker, so corner.py cannot find the corner, and the record gives no lot or storeys to check.",
+    "by_hand": true,
+    "note": "Placeable with a lot size or a building name from another source."
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0025",
+   "date": "1913-02-01",
+   "date_precision": "day",
+   "kind": "sale",
+   "address_as_written": "The southwest corner of Market and Second streets ... 75 feet in Market street by 135 feet in Second, with an \"L\" 20x43:6 feet",
+   "description": "The corner, 75 ft on Market by 135 ft on Second with an L of 20 by 43 ft 6 in, was sold in two parcels by the heirs of Commodore Selim E. Woodworth for close to $400,000, after more than fifty years in the family.",
+   "extra": {
+    "lot_as_recorded": "75x135, with an L 20x43:6",
+    "cross_streets": "southwest corner of Market and Second",
+    "price_usd": 400000,
+    "notable_past_owner": "Commodore Selim E. Woodworth (d. 1871), whose heirs sold",
+    "record_date": "1913-02-01"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 1 February 1913, p. 11",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-02-01/ed-1/seq-11/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/02/01/ed-1/seq-11/ocr.txt",
+    "locator": "p. 11, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "The southwest corner of Market and Second streets last Monday passed into new hands after being held by one fam ily more than 50 years. The lot, 75 feet in Market street by 135 fe«t in Second ... lias been sold by the heirs of Com modore Selim E. Woodworth in two parcels",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "checked_on": "2026-09-23",
+    "apn": "3707001",
+    "path": "/san-francisco/east-cut/market-street/601/",
+    "eas_address": "601 MARKET ST",
+    "method": "The record gives the southwest corner of Market and Second, 75 ft on Market by 135 ft on Second with an L of 20 by 43:6 - 10,995 sq ft - sold in two parcels. corner.py MARKET 02ND: the corner is now three parcels, 3707001 (601-605 Market, 4,117.5 sq ft, 1917), 3707002A (609 Market, 2,745, 1914) and 3707002 (20-30 Second, 4,129, 1914), which sum to 10,991.5 sq ft. The fact is filed on the corner parcel; every building there is later than the sale, so it is site history.",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "402"
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0026",
+   "date": "1913-02-01",
+   "date_precision": "day",
+   "kind": "site history",
+   "address_as_written": "The 60 vara lot at the southwest corner of Post and Leavenworth streets ... 137* i by 137%* feet",
+   "description": "The 137 ft 6 in square corner lot, the site of Levi Strauss's residence before the 1906 fire, was sold for between $90,000 and $100,000; the buyer had plans ready for an apartment building covering the whole lot.",
+   "extra": {
+    "lot_as_recorded": "137:6x137:6",
+    "cross_streets": "southwest corner of Post and Leavenworth",
+    "notable_past_resident": "Levi Strauss",
+    "price_usd_range": "90000-100000",
+    "record_date": "1913-02-01"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 1 February 1913, p. 12",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-02-01/ed-1/seq-12/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/02/01/ed-1/seq-12/ocr.txt",
+    "locator": "p. 12, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "The 60 vara lot at the southwest corner of Post and Leavenworth streets ... The lot was the site of the old Lev! Strauss residence before the tire. The new owner has plans ready for construction of an apartment building* that will cover the entire 50 vara lot",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "checked_on": "2026-09-23",
+    "apn": "0303001",
+    "path": "/san-francisco/tenderloin/post-street/825/",
+    "eas_address": "825 POST ST",
+    "method": "The record gives the 50-vara lot at the southwest corner of Post and Leavenworth, 137:6 by 137:6 - 18,906.25 sq ft. corner.py POST LEAVENWORTH: 0303001 (825 Post, 645 Leavenworth - the south side of Post and west side of Leavenworth) has a roll lot area of exactly 18,906.25 and a five-storey building of 1913, the Matsonia Apartments - the apartment building the buyer had plans ready for.",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "402"
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0027",
+   "date": "1913-02-15",
+   "date_precision": "day",
+   "kind": "building",
+   "address_as_written": "the hotel building for the Board Realty company at the southeast corner of Ellis and Jones streets",
+   "description": "The six-storey hotel for the Board Realty Company was well under way, due in five months: 80 rooms, three stores and a large lobby on the ground floor, steel frame faced in light pressed brick, over $71,000; designed by Smith & Stewart.",
+   "extra": {
+    "architect": "Smith & Stewart",
+    "cost_usd": 71000,
+    "owner_firm": "Board Realty company",
+    "cross_streets": "southeast corner of Ellis and Jones",
+    "rooms": 80,
+    "record_date": "1913-02-15"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 15 February 1913, p. 9",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-02-15/ed-1/seq-9/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/02/15/ed-1/seq-9/ocr.txt",
+    "locator": "p. 9, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "the hotel building for the Board Realty company at the southeast corner of Ellis and Jones streets. It is now well started and will be completed in five months. The building will contain SO rooms, with three stores ... The building will cost over $71,000 completed. Smith & Stewart are the architects",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "checked_on": "2026-09-23",
+    "apn": "0332012",
+    "path": "/san-francisco/tenderloin/ellis-street/387/",
+    "eas_address": "387 ELLIS ST",
+    "method": "The record gives the southeast corner of Ellis and Jones and a six-storey hotel of 80 rooms by Smith & Stewart. The 1912 batch placed the same corner lot (55 by 87:6, roll 4,812.5 sq ft) on 0332012, the Hotel Metone of 1913; the page already credits Smith and Stewart and 80 rooms from the National Register nomination: confirmed.",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "402"
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0028",
+   "date": "1913-02-15",
+   "date_precision": "day",
+   "kind": "building",
+   "address_as_written": "a three story brick hotel building at the north side of yoward street, 410 feet southwest from Third",
+   "description": "A three-storey brick hotel for the Eisenbach Company was nearing completion: 40 rooms on the upper floors and three stores; designed by A. F. & C. W. Rousseau.",
+   "extra": {
+    "architect": "A. F. & C. W. Rousseau",
+    "owner_firm": "Eisenbach company",
+    "cross_streets": "410 ft southwest of Third",
+    "side": "north",
+    "rooms": 40,
+    "record_date": "1913-02-15"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 15 February 1913, p. 9",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-02-15/ed-1/seq-9/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/02/15/ed-1/seq-9/ocr.txt",
+    "locator": "p. 9, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "Work is nearing completion on a three story brick hotel building at the north side of yoward street, 410 feet southwest from Third, for the Eisen baeh company, on designs by A. F. & C. Id Rousseau, architects",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "The record gives the north side of Howard 410 feet southwest of Third. corner.py HOWARD 03RD --to 04TH: that block face is now 3734091 (747-799 Howard, 454,537 sq ft, the Yerba Buena Gardens and Moscone site) and 3733171 (1970).",
+    "by_hand": true,
+    "note": "The 1913 hotel is gone."
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0029",
+   "date": "1913-02-15",
+   "date_precision": "day",
+   "kind": "building",
+   "address_as_written": "The New Tivoli opera house now under course of construction on the site of the original Tivoli ... a wide vestibule leading from Eddy street",
+   "description": "The new Tivoli Opera House, on the site of the original Tivoli with its entrance from Eddy Street, was nearing completion to seat 950 on the lower floor, and was to open on 12 March 1913 with the Chicago Grand Opera Company; designed by O'Brien & Werner.",
+   "extra": {
+    "building_name_as_recorded": "New Tivoli opera house",
+    "architect": "O'Brien & Werner",
+    "cross_streets": "entrance from Eddy street",
+    "record_date": "1913-02-15"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 15 February 1913, p. 9",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-02-15/ed-1/seq-9/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/02/15/ed-1/seq-9/ocr.txt",
+    "locator": "p. 9, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "The N«w Tivoli opera botMM now under < o'irse of construction on the site of the original Tivoli ... The entrance to the theater is through a wide vestibule leading from Eddy street ... O'Brien & Werner are the architects of the building",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "The record gives the new Tivoli on the site of the old one, entered from Eddy Street, with no corner or lot. corner.py EDDY MASON: the parcel on that side of Eddy (0340001, 101-127 Eddy and 39-55 Mason) is dated 1917 and was last on the 2021 roll, so it has been replaced; no parcel there can be tied to the theatre by year or size.",
+    "by_hand": true,
+    "note": "A source giving the theatre's number would place it."
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0030",
+   "date": "1913-02-01",
+   "date_precision": "day",
+   "kind": "building contract",
+   "address_as_written": "a three story and basement frame builditiK (flstiO in 8 line of Clay street, 80 E of Tavior",
+   "description": "Contract let for the carpentry and millwork of a three-storey-and-basement frame building of flats, $1,400.",
+   "extra": {
+    "cross_streets": "80 ft east of Taylor",
+    "side": "south",
+    "cost_usd": 1400,
+    "form": "three-storey-and-basement frame flats",
+    "record_date": "1913-02-01"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 1 February 1913, p. 12",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-02-01/ed-1/seq-12/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/02/01/ed-1/seq-12/ocr.txt",
+    "locator": "p. 12, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "cribbing for concrete foundations, carpenter, mill ... tor a three story and basement frame builditiK (flstiO in 8 line of Clay street, 80 E of Tavior",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "The record gives the south line of Clay 80 feet east of Taylor. Measured on the sf-parcels shapes for block 0222, the lots begin at 0, 24, 49, 74 and 99 feet; 80 feet falls inside 1165 Clay (0222028, 1912) and on no lot line, and the OCR of the lot dimension is destroyed.",
+    "by_hand": true,
+    "note": "1165 or 1171 Clay (1912, 1913), neither provable."
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0031",
+   "date": "1913-02-01",
+   "date_precision": "day",
+   "kind": "building contract",
+   "address_as_written": "a six ftory class C building in SW line of Sixth street, 72 NW of Howard",
+   "description": "Contract let to the California Electrical Construction Company for the electrical work of a six-storey Class C building, $2,735.",
+   "extra": {
+    "cross_streets": "72 ft northwest of Howard",
+    "side": "southwest",
+    "cost_usd": 2735,
+    "contractor": "California Electrical Construction company",
+    "record_date": "1913-02-01"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 1 February 1913, p. 12",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-02-01/ed-1/seq-12/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/02/01/ed-1/seq-12/ocr.txt",
+    "locator": "p. 12, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "California Electrical Con struction company—Electrical work for a six ftory class C building in SW line of Sixth street, 72 NW of Howard ... $2,735",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "The record gives the southwest line of Sixth 72 feet northwest of Howard, a six-storey Class C building. corner.py 06TH HOWARD: the only parcel on that block face within reach is 3726011 (1000 Howard, 184 Sixth), four storeys, 1907; no six-storey building of 1913 stands there.",
+    "by_hand": true,
+    "note": "The building is gone."
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0032",
+   "date": "1913-02-08",
+   "date_precision": "day",
+   "kind": "event",
+   "address_as_written": "the southeast corner of Guerrero street and Clinton park",
+   "description": "The Hibernia Bank lent Mary's Help Hospital $60,000 on its property at the corner.",
+   "extra": {
+    "institution": "Mary's Help hospital",
+    "cross_streets": "southeast corner of Guerrero and Clinton Park",
+    "record_date": "1913-02-08"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 8 February 1913, p. 10",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-02-08/ed-1/seq-10/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/02/08/ed-1/seq-10/ocr.txt",
+    "locator": "p. 10, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "tUe Hi beinia bank loaned to Mary's Help hospital yittO.oCO ou the southeast corner of Oue.Tero street aud Clinton park",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "The record gives the southeast corner of Guerrero and Clinton Park. EAS has no rows for Clinton Park, so corner.py cannot find the corner; the record describes a loan to the hospital, not the building.",
+    "by_hand": true
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0033",
+   "date": "1913-02-08",
+   "date_precision": "day",
+   "kind": "event",
+   "address_as_written": "its property at the southwest corner of Hayes and Sbrader streets",
+   "description": "The Hibernia Bank lent St. Ignatius College $67,500 on its property at the corner.",
+   "extra": {
+    "institution": "St. Ignatius college",
+    "cross_streets": "southwest corner of Hayes and Shrader",
+    "record_date": "1913-02-08"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 8 February 1913, p. 10",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-02-08/ed-1/seq-10/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/02/08/ed-1/seq-10/ocr.txt",
+    "locator": "p. 10, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "the Hi bernia bank loaned $67,500 to St. Ignatius col lege on Its property at the southwest corner of Hayes and Sbrader streets",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "The record gives the southwest corner of Hayes and Shrader. corner.py HAYES SHRADER: the parcels there date from 1900-1956 and are houses and flats; nothing on the corner can be tied to the college's property.",
+    "by_hand": true,
+    "note": "The college's buildings at that corner are gone."
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0034",
+   "date": "1913-08-09",
+   "date_precision": "day",
+   "kind": "lease",
+   "address_as_written": "the northeast cor ner of Clay and Front streets, a two story and basement concrete building on a lot 27:6 by 120",
+   "description": "The two-storey-and-basement concrete building on a 27 ft 6 in by 120 ft lot was let for five years to William A. Curtis & Co. at about $20,000.",
+   "extra": {
+    "tenant_firm": "William A. Curtis & Co.",
+    "lot_as_recorded": "27:6x120",
+    "cross_streets": "northeast corner of Clay and Front",
+    "rent_total_usd": 20000,
+    "record_date": "1913-08-09"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 9 August 1913, p. 6",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-08-09/ed-1/seq-6/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/08/09/ed-1/seq-6/ocr.txt",
+    "locator": "p. 6, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "the northeast cor ner of Clay and Front streets, a two story and basement concrete building on a lot 27:6 by 120, for five years to William A. Curtis & To., at the approximate total rent of about $20,000",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "The record gives the northeast corner of Clay and Front, 27:6 by 120 (3,300 sq ft), a two-storey-and-basement concrete building. corner.py CLAY FRONT: the corner is now inside 0230028, the 1970 Embarcadero Center tower; the nearest period building, 251 Front (1911), is four storeys on 3,646 sq ft.",
+    "by_hand": true,
+    "note": "The building is gone."
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0035",
+   "date": "1913-08-09",
+   "date_precision": "day",
+   "kind": "lease",
+   "address_as_written": "the northwest corner of Washington street and Columbus avenue (former ly Montgomery avenue), 142 by 96 feet, irregular",
+   "description": "The two-storey-and-basement concrete building on the corner, 142 by 96 ft irregular, was let for five years at nearly $50,000.",
+   "extra": {
+    "lot_as_recorded": "142x96 irregular",
+    "cross_streets": "northwest corner of Washington and Columbus (formerly Montgomery avenue)",
+    "rent_total_usd": 50000,
+    "record_date": "1913-08-09"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 9 August 1913, p. 6",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-08-09/ed-1/seq-6/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/08/09/ed-1/seq-6/ocr.txt",
+    "locator": "p. 6, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "the northwest corner of Washington street and Columbus avenue (former ly Montgomery avenue), 142 by 96 feet, irregular: also a two story and basement concrete building for fire years at the approximate total rent of nearly $50,000",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "checked_on": "2026-09-23",
+    "apn": "0195004",
+    "path": "/san-francisco/chinatown/columbus-avenue/7/",
+    "eas_address": "9 COLUMBUS AVE",
+    "method": "The record gives the northwest corner of Washington and Columbus, 142 by 96 irregular, a two-storey-and-basement concrete building owned by a Mrs. Drexler. corner.py WASHINGTON COLUMBUS: 0195004 (9-33 Columbus, 612-614 Washington) is two storeys, built 1913, named COLOMBO BUILDING by SF Planning; the page records it as the Drexler-Colombo Building, a reinforced-concrete building of 1913 - the owner's name and the construction confirm it.",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "402"
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0036",
+   "date": "1913-08-09",
+   "date_precision": "day",
+   "kind": "sale",
+   "address_as_written": "a two story two fiats of five rooms each, in the north line of Vallejo street, 70 feet west of Jones",
+   "description": "Two two-storey flats of five rooms each were sold for $4,000.",
+   "extra": {
+    "form": "two flats of five rooms each",
+    "cross_streets": "70 ft west of Jones",
+    "side": "north",
+    "price_usd": 4000,
+    "record_date": "1913-08-09"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 9 August 1913, p. 6",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-08-09/ed-1/seq-6/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/08/09/ed-1/seq-6/ocr.txt",
+    "locator": "p. 6, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "lot and improvements of a two story two fiats of five rooms each, in the north line of Vallejo street, 70 feet west of Jones, for *4,000",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "The record gives the north line of Vallejo 70 feet west of Jones, two flats. On block 0126 the frontage about 70 feet west of Jones is 1120-1122 Vallejo, two condominium parcels (0126055, 0126056) with no lot area on the roll, then 1126-1130 Vallejo (1907, three storeys).",
+    "by_hand": true,
+    "note": "Deferred: the parcel at the offset is a condominium stack and the next is three storeys, not two."
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0037",
+   "date": "1913-09-13",
+   "date_precision": "day",
+   "kind": "building",
+   "address_as_written": "A new apartment house at Hyde and O'Farrell streets",
+   "description": "A new apartment house at the corner, designed by W. G. Hind.",
+   "extra": {
+    "architect": "W. G. Hind",
+    "cross_streets": "Hyde and O'Farrell",
+    "record_date": "1913-09-13"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 13 September 1913, p. 10",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-09-13/ed-1/seq-10/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/09/13/ed-1/seq-10/ocr.txt",
+    "locator": "p. 10, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "FEATURES OF SAN FRANCISCO'S BUILDING ACTIVITY A new apartment house at Hyde and O'Farrell streets. W. G. Hind, architect",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "The record is a picture caption: a new apartment house at Hyde and O'Farrell, by W. G. Hind, September 1913, with no corner or lot. corner.py HYDE OFARRELL: 525 Hyde (0320005, the Hydrangea Apartments, 1914) is the only building near the corner dated within a year; with no lot size, a year alone is not an identification.",
+    "by_hand": true,
+    "note": "525 Hyde is the likeliest."
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0038",
+   "date": "1913-09-20",
+   "date_precision": "day",
+   "kind": "building",
+   "address_as_written": "New hotel at Bush and Kearny streets",
+   "description": "A new hotel at the corner, designed by E. P. Antonovich.",
+   "extra": {
+    "architect": "E. P. Antonovich",
+    "cross_streets": "Bush and Kearny",
+    "record_date": "1913-09-20"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 20 September 1913, p. 10",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-09-20/ed-1/seq-10/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/09/20/ed-1/seq-10/ocr.txt",
+    "locator": "p. 10, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "New hotel at Bush and Kearny streets. E. P. Antonovich, architect",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "The record is a picture caption: a new hotel at Bush and Kearny, by E. P. Antonovich, with no corner or lot. corner.py BUSH KEARNY: 0269005 (380 Bush, 300-314 Kearny, the Shasta Hotel, seven storeys, 1913) is the only hotel at the corner of that date; with no lot size and no other source crediting Antonovich, year and use are not an identification.",
+    "by_hand": true,
+    "note": "380 Bush is the likeliest."
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0039",
+   "date": "1913-09-27",
+   "date_precision": "day",
+   "kind": "sale",
+   "address_as_written": "the lot In the northeast corner of Hyde and Francisco streets ... Its frontage of IS3 feet in Hyde street",
+   "description": "The sculptor Haig Patigian bought the corner lot, with its marine view, to build a combined residence and studio designed by Clarence Ward.",
+   "extra": {
+    "notable_past_owner": "Haig Patigian, sculptor",
+    "architect": "Clarence Ward",
+    "cross_streets": "northeast corner of Hyde and Francisco",
+    "record_date": "1913-09-27"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 27 September 1913, p. 11",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-09-27/ed-1/seq-11/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/09/27/ed-1/seq-11/ocr.txt",
+    "locator": "p. 11, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "Halg Patigian, the sculptor, has purchased ... the lot In the northeast corner of Hyde and Francisco streets ... It Is the Intention of Mr. Patigian. through his architect, Clarence Ward, to erect a magnificent home on this property, which will combine both residence and studio",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "The record gives the northeast corner of Hyde and Francisco and a frontage the OCR reads as \"IS3\" feet on Hyde, bought for a residence and studio. corner.py HYDE FRANCISCO: 2454 Hyde (0048011, 1914) and its neighbour 0048011A (1915) both date from the right years, and the frontage is unreadable.",
+    "by_hand": true,
+    "note": "A purchase and a plan, not a residence: nothing here says the house was built or that Patigian lived in it."
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0040",
+   "date": "1913-10-04",
+   "date_precision": "day",
+   "kind": "sale",
+   "address_as_written": "the east side of Mission street 150 feet north of Seventeenth, fronting 75 feet on Mission by a depth of 105 feet",
+   "description": "The 75 by 105 ft property sold for slightly under $40,000; its southerly 60 feet went to Lachman Brothers.",
+   "extra": {
+    "lot_as_recorded": "75x105",
+    "cross_streets": "150 ft north of Seventeenth",
+    "side": "east",
+    "buyer_firm": "Lachman Brothers",
+    "price_usd": 40000,
+    "record_date": "1913-10-04"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 4 October 1913, p. 11",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-10-04/ed-1/seq-11/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/10/04/ed-1/seq-11/ocr.txt",
+    "locator": "p. 11, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "the property sold being lo cated on the east side of Mission street 150 feet north of Seventeenth, fronting 75 feet on Mission by a depth of 105 feet ... The southerly 60 feet of the hold ing, is acquired by Lachman Broth ers",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "The record gives the east side of Mission 150 feet north of Seventeenth, 75 by 105. corner.py MISSION 17TH does not reach 150 feet up the block, and the nearest large parcel, 2081 Mission (3570020, 10,500 sq ft), dates from 1922.",
+    "by_hand": true
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0041",
+   "date": "1913-11-08",
+   "date_precision": "day",
+   "kind": "building contract",
+   "address_as_written": "SE por tion of Palace Hotel building at NW corner of Montgomery and Jessie streets",
+   "description": "The Transportation Club contracted with Wagner Bros. for alterations and additions to the southeast part of the Palace Hotel, $7,930.",
+   "extra": {
+    "building_name_as_recorded": "Palace Hotel",
+    "contractor": "Wagner Bros.",
+    "occupant_institution": "The Transportation club",
+    "cost_usd": 7930,
+    "cross_streets": "NW corner of Montgomery and Jessie",
+    "record_date": "1913-11-08"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 8 November 1913, p. 22",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-11-08/ed-1/seq-22/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/11/08/ed-1/seq-22/ocr.txt",
+    "locator": "p. 22, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "The Transportation club with Wagner Bros, et aL—Alterations and additions to SE por tion of Palace Hotel building at NW corner of Montgomery and Jessie streets; $7,930",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "checked_on": "2026-09-23",
+    "apn": "3707052",
+    "path": "/san-francisco/east-cut/market-street/643/",
+    "eas_address": "643 MARKET ST",
+    "method": "The record names the Palace Hotel building, its southeast portion at the northwest corner of (New) Montgomery and Jessie. SF Planning names 3707052 PALACE HOTEL, and the hotel's page is 643 Market; placed by the building name.",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "402"
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0042",
+   "date": "1913-11-08",
+   "date_precision": "day",
+   "kind": "building contract",
+   "address_as_written": "building (stores and rooms) in W line of Stockton street, 137:6 N of Sacramento, W 100 by N 40",
+   "description": "Contract let for all but the plumbing, hardware, excavation and foundation of a building of stores and rooms, $15,900.",
+   "extra": {
+    "cross_streets": "137:6 north of Sacramento",
+    "side": "west",
+    "lot_as_recorded": "40x100",
+    "cost_usd": 15900,
+    "form": "stores and rooms",
+    "record_date": "1913-11-08"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 8 November 1913, p. 22",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-11-08/ed-1/seq-22/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/11/08/ed-1/seq-22/ocr.txt",
+    "locator": "p. 22, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "All work except pramhing, finish hardware, excavation and foundation for building (stores and rooms i in W line of Stockton street, 137:0 N of gacra oiento, W 100 by N 40; $15,900",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "The record gives the west line of Stockton 137:6 north of Sacramento, 40 by 100 (4,000 sq ft), stores and rooms contracted in November 1913. corner.py STOCKTON SACRAMENTO: 805 Stockton (0224005, 1915) is 2,712 sq ft and 0224006 (1925) is later; no parcel matches the lot.",
+    "by_hand": true
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0043",
+   "date": "1913-11-15",
+   "date_precision": "day",
+   "kind": "building",
+   "address_as_written": "hotel build ing being erected ... in the north side of Geary street west of Jones, upon lot 25x137:8",
+   "description": "A hotel was going up on a 25 by 137 ft 6 in lot: 60 guest rooms and 10 private baths, lobby and lounge in front, dining rooms in the basement, a classic front in white cement with marble and tile trim, $40,000; designed by Rousseau & Rousseau.",
+   "extra": {
+    "architect": "Rousseau & Rousseau",
+    "lot_as_recorded": "25x137:6",
+    "cross_streets": "west of Jones",
+    "side": "north",
+    "cost_usd": 40000,
+    "rooms": 60,
+    "record_date": "1913-11-15"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 15 November 1913, p. 8",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-11-15/ed-1/seq-8/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/11/15/ed-1/seq-8/ocr.txt",
+    "locator": "p. 8, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "hotel build ing being erected ... upon their choice lot situated in the north side of Geary street west of Jones, upon lot 25x137:8. The above hotel building will contain 60 rooms ... The cost of the build ing is $40,000. The architects of this building are. Rousseau & Rousseau",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "checked_on": "2026-09-23",
+    "apn": "0304006",
+    "path": "/san-francisco/tenderloin/geary-street/630/",
+    "eas_address": "630 GEARY ST",
+    "method": "The record gives the north side of Geary west of Jones, a 25 by 137:6 lot (3,437.5 sq ft) and a 60-room hotel under construction in November 1913. corner.py GEARY JONES --to LEAVENWORTH: 0304006 (630 Geary, the even north side of the 600 block) has a roll lot area of exactly 3,437.5, five storeys, built 1913, named HOTEL TELLER by SF Planning; the page already records it as a residential hotel of 60 units.",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "402"
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0044",
+   "date": "1913-11-15",
+   "date_precision": "day",
+   "kind": "sale",
+   "address_as_written": "the southeast corner of Fulton and Octa via streets, lot 46x120 feet. Improve ments consist of six stores and rooms",
+   "description": "The corner lot, 46 by 120 ft, with six stores and rooms, was sold for $14,500.",
+   "extra": {
+    "form": "six stores and rooms",
+    "lot_as_recorded": "46x120",
+    "cross_streets": "southeast corner of Fulton and Octavia",
+    "price_usd": 14500,
+    "record_date": "1913-11-15"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 15 November 1913, p. 8",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-11-15/ed-1/seq-8/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/11/15/ed-1/seq-8/ocr.txt",
+    "locator": "p. 8, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "for $14,500, the southeast corner of Fulton and Octa via streets, lot 46x120 feet. Improve ments consist of six stores and rooms",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "The record gives the southeast corner of Fulton and Octavia, 46 by 120 (5,520 sq ft), six stores and rooms. corner.py FULTON OCTAVIA: the corner parcel 495-497 Fulton (0793023, 1909) is 2,208 sq ft, and no parcel or pair of parcels at the corner matches.",
+    "by_hand": true
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0045",
+   "date": "1913-11-15",
+   "date_precision": "day",
+   "kind": "sale",
+   "address_as_written": "lot ttallS feet and improvements in the oast line of Mission street 195 feet ; north of Twenty-fifth",
+   "description": "A store with ten rooms was sold for $9,500.",
+   "extra": {
+    "form": "store and 10 rooms",
+    "cross_streets": "195 ft north of Twenty-fifth",
+    "side": "east",
+    "price_usd": 9500,
+    "record_date": "1913-11-15"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 15 November 1913, p. 8",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-11-15/ed-1/seq-8/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/11/15/ed-1/seq-8/ocr.txt",
+    "locator": "p. 8, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "for $9,500, lot ttallS feet and improvements in the oast line of Mission street 195 feet ; north of Twenty-fifth. Improvements i consist of store and 10 rooms",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "checked_on": "2026-09-23",
+    "apn": "6517026",
+    "path": "/san-francisco/mission/mission-street/2857/",
+    "eas_address": "2857 MISSION ST",
+    "method": "The record gives the east line of Mission 195 feet north of Twenty-fifth, a store and ten rooms. Measured along Mission from the Twenty-fifth Street line on the sf-parcels shapes for block 6517, 2857-2859 Mission (6517026) begins 196 feet north; roll lot area 2,861 sq ft (about 25 by 114), two storeys, built 1908. Placed on the offset; the lot dimension is OCR-damaged (\"ttallS\").",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "402"
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0046",
+   "date": "1913-11-15",
+   "date_precision": "day",
+   "kind": "sale",
+   "address_as_written": "lot and improvements in the northerly line of Twenty-fourth street 155 feet west of Noe, 25x114 feet",
+   "description": "A store and three flats on a 25 by 114 ft lot, leased at $125 a month, were sold for $12,550.",
+   "extra": {
+    "form": "store and three flats",
+    "lot_as_recorded": "25x114",
+    "cross_streets": "155 ft west of Noe",
+    "side": "north",
+    "price_usd": 12550,
+    "rent_usd_month": 125,
+    "record_date": "1913-11-15"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 15 November 1913, p. 8",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-11-15/ed-1/seq-8/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/11/15/ed-1/seq-8/ocr.txt",
+    "locator": "p. 8, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "for $12,550, lot and improvements in the northerly line of Twenty-fourth street 155 feet west of Noe, 25x114 feet. Improve ments consist of store and three flats, leased at $125 a month",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "checked_on": "2026-09-23",
+    "apn": "3656011",
+    "path": "/san-francisco/noe-valley/24th-street/4026/",
+    "eas_address": "4026 24TH ST",
+    "method": "The record gives the north line of Twenty-fourth 155 feet west of Noe, 25 by 114 (2,850 sq ft), a store and three flats. Measured along 24th from the Noe line on the sf-parcels shapes for block 3656, the parcel 3656011 (4026-4030 24th in EAS; 4028-4030 in sf-parcels) runs 155 to 181 feet west; roll lot area 2,850, three storeys, built 1907. Filed under noe-valley, the parcel's analysis neighborhood.",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "402"
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0047",
+   "date": "1913-11-22",
+   "date_precision": "day",
+   "kind": "lease",
+   "address_as_written": "two story residence at the northeast corner of Buchanan and Page streets, consisting of 16 rooms",
+   "description": "The two-storey residence of 16 rooms on the corner was let for three years at $3,600.",
+   "extra": {
+    "form": "two-storey residence of 16 rooms",
+    "cross_streets": "northeast corner of Buchanan and Page",
+    "rent_total_usd": 3600,
+    "record_date": "1913-11-22"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 22 November 1913, p. 8",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-11-22/ed-1/seq-8/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/11/22/ed-1/seq-8/ocr.txt",
+    "locator": "p. 8, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "two story residence at the northeast corner of Buchanan and Page streets, consisting of 16 rooms, for a term of three years at a total rental of $3,600",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "The record gives the northeast corner of Buchanan and Page, a two-storey residence of 16 rooms. corner.py BUCHANAN PAGE: the only parcel there is 0850012, a 1999 complex of 105,589 sq ft.",
+    "by_hand": true,
+    "note": "The house is gone."
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0048",
+   "date": "1913-11-22",
+   "date_precision": "day",
+   "kind": "lease",
+   "address_as_written": "in the south erly line of Golden Gate avenue. 68 feet east of Hyde street",
+   "description": "Premises here were let for one year to the Stanley Steam Car Company at $1,500.",
+   "extra": {
+    "tenant_firm": "Stanley Steam Car company",
+    "cross_streets": "68 ft east of Hyde",
+    "side": "south",
+    "rent_total_usd": 1500,
+    "record_date": "1913-11-22"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 22 November 1913, p. 8",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-11-22/ed-1/seq-8/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/11/22/ed-1/seq-8/ocr.txt",
+    "locator": "p. 8, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "Joseph Estate company to the Stan ley Steam Car company, in the south erly line of Golden Gate avenue. 68 feet east of Hyde street, for a term of one year at a total rental of $1,500",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "The record gives the south line of Golden Gate 68 feet east of Hyde, let to a steam-car company, with no building described or lot given. corner.py \"GOLDEN GATE\" HYDE lists several 1911-1915 parcels on the corner and nothing to choose between them.",
+    "by_hand": true
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0049",
+   "date": "1913-11-29",
+   "date_precision": "day",
+   "kind": "building contract",
+   "address_as_written": "church Imllding at SE corner of Poat and Mason stre. ts, B 110 by S 137:«",
+   "description": "The First Congregational Church contracted with the San Francisco Artificial Stone Paving Company for the concrete work of its church building on the 110 by 137 ft 6 in corner, $31,000.",
+   "extra": {
+    "institution": "First Congregational church",
+    "contractor": "San Francisco Artificial Stone Paving company",
+    "lot_as_recorded": "110x137:6",
+    "cross_streets": "SE corner of Post and Mason",
+    "cost_usd": 31000,
+    "record_date": "1913-11-29"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 29 November 1913, p. 7",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-11-29/ed-1/seq-7/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/11/29/ed-1/seq-7/ocr.txt",
+    "locator": "p. 7, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "Firat Congregational church (by Stockholm & Allyn) with the San Francisco Artificial Stone Paving company—Concrete work for church Imllding at SE corner of Poat and Mason stre. ts, B 110 by S 137:«; $31,000",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "checked_on": "2026-09-23",
+    "apn": "0307009",
+    "path": "/san-francisco/tenderloin/post-street/491/",
+    "eas_address": "491 POST ST",
+    "method": "The record gives the southeast corner of Post and Mason, 110 by 137:6 (15,125 sq ft), for the First Congregational Church. corner.py POST MASON: 0307009, roll lot area 15,124, built 1913, named FIRST CONGREGATIONAL CHURCH by SF Planning.",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "402"
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0050",
+   "date": "1913-11-29",
+   "date_precision": "day",
+   "kind": "building contract",
+   "address_as_written": "St. Francis hotel on lot bounded on N by Post Htreet, E by Powell and 8 by Geary",
+   "description": "The Crocker Hotel Company contracted with Fred F. Harris for boring a well 1,000 ft deep for the St. Francis Hotel, $3,000.",
+   "extra": {
+    "building_name_as_recorded": "St. Francis hotel",
+    "owner_firm": "Crocker Hotel company",
+    "contractor": "Fred F. Harris",
+    "cost_usd": 3000,
+    "record_date": "1913-11-29"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 29 November 1913, p. 7",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-11-29/ed-1/seq-7/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/11/29/ed-1/seq-7/ocr.txt",
+    "locator": "p. 7, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "Crocker Hotel company with Fred F. Har rln—Boring and construction of well 1.000 feet deep for Bt. Francis hotel on lot bounded on N by Post Htreet, E by Powell and 8 by Geary; $3,000",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "checked_on": "2026-09-23",
+    "apn": "0307001",
+    "path": "/san-francisco/nob-hill/powell-street/301/",
+    "eas_address": "301 POWELL ST",
+    "method": "The record names the St. Francis Hotel on the block bounded by Post, Powell and Geary. SF Planning names 0307001 ST. FRANCIS HOTEL; its page is 301 Powell. Placed by the building name.",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "402"
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0051",
+   "date": "1913-11-29",
+   "date_precision": "day",
+   "kind": "building contract",
+   "address_as_written": "a four story clusa C building at NW corner of Ellis and Mason streets W 97:6 by N 60",
+   "description": "Contract let for painting and tinting in alterations and additions to the four-storey Class C building on the corner, 97 ft 6 in by 60 ft, $2,250.",
+   "extra": {
+    "lot_as_recorded": "97:6x60",
+    "cross_streets": "NW corner of Ellis and Mason",
+    "cost_usd": 2250,
+    "contractor": "Mayer Walk",
+    "record_date": "1913-11-29"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 29 November 1913, p. 7",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-11-29/ed-1/seq-7/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/11/29/ed-1/seq-7/ocr.txt",
+    "locator": "p. 7, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "Painting and 1 tinting for alterations and additions to a four story clusa C building at NW corner of Ellis and Mason streets W 97:6 by N 60; 12.250",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "The record gives the northwest corner of Ellis and Mason, 97:6 by 60 (5,850 sq ft), a four-storey Class C building. corner.py ELLIS MASON: no parcel at the corner matches the lot or the storeys.",
+    "by_hand": true
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0052",
+   "date": "1913-12-06",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "Ford Motor Company's New Home ... located at the corner of Twenty-first and Harrison streets",
+   "description": "The Ford Motor Company's new building: general offices, salesrooms, garage and repair department, and an assembly plant with upholstery, paint and stock departments and a service station.",
+   "extra": {
+    "occupant_firm": "Ford Motor Company",
+    "cross_streets": "corner of Twenty-first and Harrison",
+    "record_date": "1913-12-06"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 6 December 1913, p. 4",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-12-06/ed-1/seq-4/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/12/06/ed-1/seq-4/ocr.txt",
+    "locator": "p. 4, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "Ford Motor Company's New Home The new building is located at the corner of Twenty-first and Harrison streets, and includes, besides the general offices, salesrooms, garage and repair department, a large assembly plant",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "The record gives the corner of Twenty-first and Harrison, with no quadrant or lot. corner.py 21ST HARRISON: every parcel at the corner is a house or flats of 1890-1906 or later, with no industrial building of 1913.",
+    "by_hand": true,
+    "note": "The Ford building is gone."
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0053",
+   "date": "1913-12-06",
+   "date_precision": "day",
+   "kind": "sale",
+   "address_as_written": "lot and im provements, 120x60, consisting of 10 fiats and five stores situated at the northwest corner of Grove and La guna streets",
+   "description": "Ten flats and five stores on a 120 by 60 ft corner lot were sold.",
+   "extra": {
+    "form": "10 flats and five stores",
+    "lot_as_recorded": "120x60",
+    "cross_streets": "northwest corner of Grove and Laguna",
+    "record_date": "1913-12-06"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 6 December 1913, p. 4",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-12-06/ed-1/seq-4/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/12/06/ed-1/seq-4/ocr.txt",
+    "locator": "p. 4, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "lot and im provements, 120x60, consisting of 10 fiats and five stores situated at the northwest corner of Grove and La guna streets",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "The record gives the northwest corner of Grove and Laguna, 120 by 60 (7,200 sq ft), ten flats and five stores. corner.py GROVE LAGUNA: no parcel at the corner matches (700 Laguna is 1928 on 4,950 sq ft; 565-567 Grove is 9,147 sq ft).",
+    "by_hand": true
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0054",
+   "date": "1913-07-26",
+   "date_precision": "day",
+   "kind": "sale",
+   "address_as_written": "lot sr.xl2n feet and improvements, located in tbe north side of Geary street. 52:6 feet west of Polk",
+   "description": "A one-storey and a three-storey brick building, let to the Pathfinder Automobile Company and the Splitdorf Magneto Company at $500 a month, were sold.",
+   "extra": {
+    "tenant_firm": "Pathfinder Automobile company; Splitdorf Magneto company",
+    "cross_streets": "52:6 west of Polk",
+    "side": "north",
+    "rent_usd_month": 500,
+    "record_date": "1913-07-26"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 26 July 1913, p. 14",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-07-26/ed-1/seq-14/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/07/26/ed-1/seq-14/ocr.txt",
+    "locator": "p. 14, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "lot sr.xl2n feet and improvements, located in tbe north side of Geary street. 52:6 feet west of Polk. Improve ments consist of a one and a three story brick building, leased to the Pathfinder Automobile company and the Splitdorf Magnet company, at a rental of $.\"00 a month",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "The record gives the north side of Geary 52:6 west of Polk, a one- and a three-storey brick building. corner.py GEARY POLK: the block face west of the Pierce Arrow Building is 0694005-0694008, last on the 2017 roll and replaced; 0694005 and 0694006 (1912, 2 and 3 storeys, 3,297 and 3,300 sq ft) together make 55 by 120, the likeliest match, but neither parcel exists now.",
+    "by_hand": true,
+    "note": "Placeable once the parcel that replaced 0694005-0694006 is found in sf-parcels."
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0055",
+   "date": "1913-08-02",
+   "date_precision": "day",
+   "kind": "sale",
+   "address_as_written": "the three story building in the north side of Sutter street, 123:4 feet east of Van Ness avenue. 83 feet front by 120 feet deep, back to Fern street",
+   "description": "The three-storey building, 83 ft front by 120 ft deep through to Fern Street, went in trade to the Wenban Estate, Inc.",
+   "extra": {
+    "lot_as_recorded": "83x120",
+    "cross_streets": "123:4 east of Van Ness, through to Fern",
+    "side": "north",
+    "buyer_firm": "Wenban Estate, Inc.",
+    "record_date": "1913-08-02"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 2 August 1913, p. 11",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-08-02/ed-1/seq-11/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/08/02/ed-1/seq-11/ocr.txt",
+    "locator": "p. 11, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "toe three story building in the north side of Sutter street, 123:4 feet east of Van Ness avenue. 83 feet front by 120 feet deep, back to Fern street in rear, was sold ln trade ... to the Wenban Estate, Inc.",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "The record gives the north side of Sutter 123:4 east of Van Ness, 83 by 120 (9,960 sq ft) through to Fern. corner.py SUTTER \"VAN NESS\" reaches only the corner parcels, none of which matches the lot.",
+    "by_hand": true
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0056",
+   "date": "1913-02-01",
+   "date_precision": "day",
+   "kind": "sale",
+   "address_as_written": "a three story and basement brick building in the south side of Clay street, 172:11 west of Montgomery",
+   "description": "A three-storey-and-basement brick building with stores below and rooms above was sold for $32,500.",
+   "extra": {
+    "form": "three-storey-and-basement brick, stores and rooms",
+    "cross_streets": "172:11 west of Montgomery",
+    "side": "south",
+    "price_usd": 32500,
+    "record_date": "1913-02-01"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 1 February 1913, p. 12",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-02-01/ed-1/seq-12/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/02/01/ed-1/seq-12/ocr.txt",
+    "locator": "p. 12, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "the sale of a three story and basement brick building in the south side of Clay street, 172:11 west of Montgomery, at a<, price of $32,500 ... It consists of stores and rooms above",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "The record gives the south side of Clay 172:11 west of Montgomery, a three-storey-and-basement brick building. The south side of Clay west of Montgomery is block 0227, whose first 300 feet from Montgomery are now largely 0227048, the 1985 tower at 555 Montgomery; corner.py CLAY MONTGOMERY --to KEARNY shows no parcel at that offset of the right form.",
+    "by_hand": true,
+    "note": "The building is gone."
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0057",
+   "date": "1913-02-08",
+   "date_precision": "day",
+   "kind": "building",
+   "address_as_written": "the large apartment house in the north side of Bush street, 114 feet east of L<eavenworth, on a lot 91 by 137:6 feet",
+   "description": "A large apartment house on a 91 by 137 ft 6 in lot was being completed with a $30,000 Hibernia Bank loan.",
+   "extra": {
+    "lot_as_recorded": "91x137:6",
+    "cross_streets": "114 ft east of Leavenworth",
+    "side": "north",
+    "record_date": "1913-02-08"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 8 February 1913, p. 9",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-02-08/ed-1/seq-9/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/02/08/ed-1/seq-9/ocr.txt",
+    "locator": "p. 9, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "The iTllbernia bank loaned $30,000 ... to com- J p';ete the large apartment house in the north side of Bush street, 114 feet east of L<eavenworth, on a lot 91 by 137:6 feet",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "checked_on": "2026-09-23",
+    "apn": "0276014",
+    "path": "/san-francisco/nob-hill/bush-street/1060/",
+    "eas_address": "1060 BUSH ST",
+    "method": "The record gives the north side of Bush 114 feet east of Leavenworth, a lot 91 by 137:6 (12,512.5 sq ft), and a large apartment house being completed in February 1913. corner.py BUSH LEAVENWORTH --to JONES and the sf-parcels shapes: 0276014 (1060 Bush) begins about 110 feet east of the Leavenworth line, roll lot area 12,604.6 sq ft, five storeys, built 1912, named MARLBOROUGH HALL HOTEL APARTMENTS by SF Planning.",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "402"
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0058",
+   "date": "1913-02-01",
+   "date_precision": "day",
+   "kind": "building",
+   "address_as_written": "to erect apartments to cost $18,000 in the north eido of Green etreet, 91 feet east of Hjde, on lot 46x«2",
+   "description": "Apartments to cost $18,000 were to be built here, financed by a Savings Union Bank building loan.",
+   "extra": {
+    "cross_streets": "91 ft east of Hyde",
+    "side": "north",
+    "lot_as_recorded": "46x?2 (OCR)",
+    "cost_usd": 18000,
+    "record_date": "1913-02-01"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 1 February 1913, p. 12",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-02-01/ed-1/seq-12/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/02/01/ed-1/seq-12/ocr.txt",
+    "locator": "p. 12, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "a bulldinff loan of $13,500 ... to erect apartments to cost $18,000 in the north eido of Green etreet, 91 feet east of Hjde, on lot 46x«2",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-23",
+    "method": "The record gives the north side of Green 91 feet east of Hyde, a lot 46 by 62:6 (2,875 sq ft) for apartments to cost $18,000. corner.py GREEN HYDE: 0122012, 2,875 sq ft and built 1913, matches exactly but was last on the 2017 roll; the building has since been split into condominium parcels.",
+    "by_hand": true,
+    "note": "Deferred per the condominium rule; the building is the one on retired parcel 0122012."
+   }
+  },
+  {
+   "id": "sn85066387-1913-real-estate-0059",
+   "date": "1913-02-01",
+   "date_precision": "day",
+   "kind": "building",
+   "address_as_written": "the factory build ing at the south corner of Bryant and Zoe",
+   "description": "The Hibernia Bank lent Shreve & Co. $30,000 to complete its factory building at the corner.",
+   "extra": {
+    "occupant_firm": "Shreve & Co.",
+    "cross_streets": "south corner of Bryant and Zoe",
+    "record_date": "1913-02-01"
+   },
+   "citation": {
+    "label": "The San Francisco Call, 1 February 1913, p. 12",
+    "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-02-01/ed-1/seq-12/",
+    "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1913/02/01/ed-1/seq-12/ocr.txt",
+    "locator": "p. 12, Real Estate and Financial Section"
+   },
+   "raw": {
+    "text": "The Hibernia made a loan of $30,000 to Slireve & Co. to complete the factory build ing at the south corner of Bryant and Zoe",
+    "ocr_uncertain": true
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "checked_on": "2026-09-23",
+    "apn": "3776041",
+    "path": "/san-francisco/south-of-market/bryant-street/539/",
+    "eas_address": "539 BRYANT ST",
+    "method": "The record gives the factory building at the south corner of Bryant and Zoe, for Shreve & Co. corner.py BRYANT ZOE: 3776041 (539 Bryant) is four storeys, built 1912; the page already records it as the Shreve & Co. factory, under construction in November 1912: confirmed.",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "402"
+   }
+  }
+ ]
+}
