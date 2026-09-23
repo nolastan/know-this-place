@@ -1,0 +1,126 @@
+{
+  "address": "1060–1062 Capp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/capp-street/1060/",
+  "apn": "6528036",
+  "block": "6528",
+  "lot": "036",
+  "eas_baseid": "460958",
+  "coordinates": {
+    "lat": 37.749768,
+    "lng": -122.41741
+  },
+  "address_range": "1060–1062",
+  "street_numbers_on_parcel": [
+    "1060",
+    "1062"
+  ],
+  "parcel": {
+    "year_built": 1969,
+    "stories": 1,
+    "rooms": 2,
+    "bathrooms": 2,
+    "lot_area_sqft": 4983,
+    "building_area_sqft": 4324,
+    "use": "Commercial Office",
+    "property_class": "Office",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1062 1060 CAPP                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1502815,
+    "assessed_improvement_value": 1001874,
+    "last_sale_date": "2008-08-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1969",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200204022943",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-04-02",
+      "status_date": "2002-06-20",
+      "estimated_cost": 11500,
+      "revised_cost": 13800,
+      "description": "install kitchenette, new demising wall and doors, new lower level entry doors",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200112135209",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-12-13",
+      "status_date": "2002-02-25",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "install photovoltaic system on roof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200107133578",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-07-13",
+      "status_date": "2002-02-25",
+      "estimated_cost": 23890,
+      "revised_cost": 23890,
+      "description": "add electrical outlets and relocate switches insulattion in walls and ceiling n sheetrock as rqrd",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200106201999",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-06-20",
+      "status_date": "2002-02-25",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "exploratory demolition to determine structural conditions",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "2001–2008",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPP&street_type=ST&address_number=1060",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6528036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6528&lot=036",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6528036",
+      "retrieved": "2026-09-23"
+    }
+  ]
+}

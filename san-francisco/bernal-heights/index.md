@@ -5,11 +5,13 @@ A hilly residential district south of the Mission, built up from the late 19th c
 ## Streets documented so far
 
 - [Alabama Street](alabama-street/) — 1 building, built 1998.
+- [Anderson Street](anderson-street/) — 1 building, built 1925.
 - [Andover Street](andover-street/) — 1 building, built 1907.
 - [Cesar Chavez Street](cesar-chavez-street/) — 1 building, built 1991.
 - [Coleridge Street](coleridge-street/) — 1 building, built 1900.
 - [College Avenue](college-avenue/) — 1 building, built 1928.
 - [Cortland Avenue](cortland-avenue/) — 1 building, built 1910.
+- [Costa Street](costa-street/) — 1 building, built 1906.
 - [Crescent Avenue](crescent-avenue/) — 1 building, built 1900.
 - [Ellsworth Street](ellsworth-street/) — 1 building, built 1956.
 - [Franconia Street](franconia-street/) — 2 buildings, built 1964–1965.
@@ -31,6 +33,7 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [Shotwell Street](shotwell-street/) — 1 building.
 - [Virginia Avenue](virginia-avenue/) — 1 building, built 1910.
 - [Winfield Street](winfield-street/) — 1 building, built 1909.
+- [Wool Street](wool-street/) — 1 building, built 1906.
 
 ## Historic districts here
 

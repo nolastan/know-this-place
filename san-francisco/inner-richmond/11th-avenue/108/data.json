@@ -1,0 +1,156 @@
+{
+  "address": "108 11th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/11th-avenue/108/",
+  "apn": "1370044",
+  "block": "1370",
+  "lot": "044",
+  "eas_baseid": "301456",
+  "coordinates": {
+    "lat": 37.786163,
+    "lng": -122.469736
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 1,
+    "stories": 3,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 2374,
+    "building_area_sqft": 3073,
+    "basement_area_sqft": 720,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0000 0108 11TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1444595,
+    "assessed_improvement_value": 2307704,
+    "last_sale_date": "2018-12-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202009285342",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-09-28",
+      "status_date": "2021-02-17",
+      "estimated_cost": 2499,
+      "revised_cost": 2499,
+      "description": "fire sprinkler waterflow monitoring system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201911187509",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-11-18",
+      "status_date": "2021-01-21",
+      "estimated_cost": 1,
+      "revised_cost": 2500,
+      "description": "rev pa# 201902072362; new condenser unit and update to title 24",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201911147247",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-11-14",
+      "status_date": "2021-02-17",
+      "estimated_cost": 22500,
+      "revised_cost": 31744,
+      "description": "new fire sprinkler system and underground for single family residence per nfpa 13r ref pa 2019-0207-2362",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201905029547",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-05-02",
+      "status_date": "2021-01-08",
+      "estimated_cost": 4800,
+      "revised_cost": 4800,
+      "description": "abatement of asbestos per benchmark hazardous material servey dates 4/25/2019.work includes rmeovel of appox 800sf of contaminated walls, ceiling and windows, replacement of sheetrock where asbestos is present.patch andrepair drywall as required.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201902072362",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2019-02-07",
+      "status_date": "2021-01-21",
+      "estimated_cost": 350000,
+      "revised_cost": 400000,
+      "description": "renovation includes repairs to front facade & stairs, 3rd fl window change, rear yard addition interior renovation & landscape improvements. kitchen & bath remodel. addition of bathroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201507131287",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-07-13",
+      "status_date": "2015-07-30",
+      "estimated_cost": 18880,
+      "revised_cost": 18880,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9111554",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-07-01",
+      "status_date": "1991-07-29",
+      "estimated_cost": 5190,
+      "description": "vinyl sidings",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 9,
+    "range": "1991–2020",
+    "shown_on_page": 7,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=11TH&street_type=AVE&address_number=108",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1370044&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1370&lot=044",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1370044",
+      "retrieved": "2026-09-23"
+    }
+  ]
+}

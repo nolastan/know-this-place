@@ -1,0 +1,103 @@
+{
+  "address": "49 Costa Street, San Francisco, CA 94110",
+  "path": "/san-francisco/bernal-heights/costa-street/49/",
+  "apn": "5574015",
+  "block": "5574",
+  "lot": "015",
+  "eas_baseid": "380322",
+  "coordinates": {
+    "lat": 37.744657,
+    "lng": -122.40684
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 1751,
+    "building_area_sqft": 1070,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "WOO",
+    "zoning": "RH-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Bernal Heights",
+    "property_location_raw": "0000 0049 COSTA               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 28283,
+    "assessed_improvement_value": 134953
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200008248731",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-08-24",
+      "status_date": "2000-12-24",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "relocate rear stair from prop line to interior of lot",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200003214963",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-03-21",
+      "status_date": "2000-09-21",
+      "revised_cost": 9875,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9913322S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1999-06-30",
+      "status_date": "2000-09-07",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "new 2 story addition at rear w/new deck",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=COSTA&street_type=ST&address_number=49",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5574015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5574&lot=015",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5574015",
+      "retrieved": "2026-09-23"
+    }
+  ]
+}
