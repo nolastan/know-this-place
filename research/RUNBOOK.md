@@ -257,6 +257,31 @@ the judgement. A street the source spells its own way is mapped onto EAS's
 spelling where squashing punctuation finds it, and otherwise needs an explicit
 `--alias RECORDED=EAS`, which it states in the method.
 
+### A corner, not a number
+
+Building news locates new construction by corner — "the southeast corner of
+Bush and Mason" — and the resolver has nothing to join on, so these come back
+`unresolved` from `report`. They are usually the best entries in a newspaper
+batch, because they carry the architect. Place them by hand:
+
+```bash
+python3 research/tools/corner.py BUSH MASON --year 1912
+```
+
+It lists every parcel within about 60 m of the intersection with the roll's
+build year, storeys and lot area, Planning's building name and any existing
+page. **The match is the lot area and the year, not the corner word.** The
+record's "55 by 87:6" against a roll `lot_area` of 4,812.5, on a parcel built
+the year after the announcement, is an identification; a corner parcel with the
+right year and no area check is a guess. Read which side carries the odd
+numbers off the addresses it prints — the tool does not name quadrants, because
+a centroid gets them wrong. Where the page already credits an architect from
+another source, a match is confirmed; where every parcel on the corner was
+built later, the record is about a demolished building and stays `unresolved`.
+A parcel whose latest roll row is years old has been retired: look for the
+parcel that replaced it before calling the corner empty. Write the lot and year
+into `resolution.method` with `"by_hand": true`.
+
 ### The judgement half
 
 1. **Check EAS first.** `sf-eas-addresses` in

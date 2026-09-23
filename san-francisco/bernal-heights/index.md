@@ -30,6 +30,7 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [Rutledge Street](rutledge-street/) — 1 building, built 1973.
 - [Shotwell Street](shotwell-street/) — 1 building.
 - [Virginia Avenue](virginia-avenue/) — 1 building, built 1910.
+- [Winfield Street](winfield-street/) — 1 building, built 1909.
 
 ## Historic districts here
 
