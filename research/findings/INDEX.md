@@ -8,7 +8,7 @@
 **Never read one whole.** The largest,
 `sf-context-statements/umb-survey-ratings.json`, is 4.1 MB — about 1.1M
 tokens, more than a context window holds. The directory as a whole is around
-9.8M tokens, and an agent that opens one of these files has usually spent
+9.9M tokens, and an agent that opens one of these files has usually spent
 its session to reach three entries.
 
 This file is the cheap way in. The table says what each batch covers;
@@ -62,7 +62,7 @@ An entry, with the share of the 19,302 that carry each key:
 | `street_number` | 92% |
 | `street_type` | 90% |
 | `confidence` | 84% |
-| `publish` | 81% |
+| `publish` | 82% |
 | `conflict` | 5% |
 | `note` | 1% |
 
@@ -99,7 +99,7 @@ sit in — the three it touched most, and how many in all.
 | `digitalsf/sfp-84.json` | 13 | 26 KB | 1889–1914 | 1 | 1 | `financial-district` |
 | `digitalsf/sfp-90.json` | 14 | 29 KB | 1976–1984 | 11 | 11 | `tenderloin`, `bernal-heights`, `pacific-heights` +6 |
 | `digitalsf/tail.json` | 137 | 244 KB | 1900–2022 | 73 | 45 | `north-beach`, `castro`, `mission` +17 |
-| `loc-newspapers/sn85066387-1910-h2-real-estate.json` | 450 | 780 KB | 1910 | 128 | 0 | `nob-hill`, `financial-district`, `mission` +20 |
+| `loc-newspapers/sn85066387-1910-h2-real-estate.json` | 450 | 796 KB | 1910 | 128 | 125 | `nob-hill`, `financial-district`, `mission` +20 |
 | `loc-newspapers/sn85066387-1910-real-estate.json` | 172 | 298 KB | 1909–1910 | 76 | 73 | `nob-hill`, `mission`, `financial-district` +16 |
 | `loc-newspapers/sn85066387-1911-real-estate.json` | 135 | 220 KB | 1911 | 63 | 54 | `east-cut`, `south-of-market`, `pacific-heights` +20 |
 | `loc-newspapers/sn85066387-1912-real-estate.json` | 126 | 201 KB | 1906–1912 | 71 | 58 | `south-of-market`, `nob-hill`, `financial-district` +20 |

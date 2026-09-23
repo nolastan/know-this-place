@@ -1650,6 +1650,10 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   `seed-list`, compare each row's street against the roll's `property_location`
   and fix the row where they disagree; the roll's is the address the assessor
   files the parcel under.*
+  It recurs: the 1910 July–December manifest had three such rows in 56 (Pine for
+  1005 Jones, McAllister for 856 Divisadero, Polk for 1688 Sacramento), every
+  one a corner placed by hand, where the finding's street is simply the one the
+  newspaper named first. *Corner placements are where to look.*
 
 - **A caption's own numbers parse as addresses, and the year guard only fires
   when no street type follows.** The standing rule — a street number equal to
@@ -2154,6 +2158,16 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   *Run `research/tools/corner.py` on every corner a batch names, and match on
   lot area and year before the corner word.* See RUNBOOK.md step 3.
   ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+
+- **Run `corner.py` over the whole batch, then match lot areas in bulk.** The
+  1910 July–December batch had 286 corner, offset and block-face entries.
+  Running `research/tools/corner.py` once per entry into a scratch directory
+  and comparing each record's lot ("46x137:6", "62:6x106:3") with every listed
+  parcel's `lot_area` to 4% turned up 31 area-and-year matches from 112 entries
+  that give a lot size, in a minute. Most of the 54 hand placements came from
+  that list or from a Planning building name the listing printed (Masonic
+  Temple, Head Building, Tin How Temple / Sue Hing). Entries with no lot size
+  rarely placed. *Script the lookups; spend the reading on the candidates.*
 
 - **Corner lookups miss the middle of the block, and offsets were being
   thrown away.** The 1911 batch's "south side of California between Hyde and

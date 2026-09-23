@@ -2,10 +2,13 @@
   "source_id": "loc-newspapers",
   "batch": "sn85066387-1910-h2-real-estate",
   "read_on": "2026-09-23",
-  "notes": "",
+  "notes": "The San Francisco Call's Saturday Real Estate and Financial Section for 2 July to 31 December 1910, from curiv_klamath_ver01, curiv_mecca_ver01 and curiv_needles_ver01. 27 Saturdays, 74 OCR pages. After June the section moves round the issue: two to four pages, starting anywhere from p. 8 to p. 13, and the REAL ESTATE AND FINANCIAL SECTION head is missing on many Saturdays, so the pages were found by their headlines; p. 6 is the bay-counties (Oakland) page every week and was not read. Every entry carries extra.record_date (1910 is after the 1909 renumbering). Same selection as the January-June batch: numbered sales, leases and offerings that say something about the building, and buildings located by corner, offset or name that come with an architect, a builder, an institution or a firm; permits and loans naming only a private owner were left out. Private buyers, sellers, lessors, lessees and owners are cut from raw (raw.note says where); notable people a published source names in the past (Theodore Roosevelt Jr., Leon and George H. Roos, Harris Weinstock, Phoebe Hearst, Walter D. Bliss, Virginia Fair Vanderbilt) are kept. Corner and offset entries were placed with research/tools/corner.py on the record's lot area against the roll's lot_area and a roll year near 1910; entries it could not place carry by_hand with the corner.py call that was read.",
   "coverage": {
     "unit": "OCR pages",
-    "examined": 74
+    "examined": 74,
+    "mentions": 148,
+    "remaining": "The permit, contract and loan paragraphs that name only a private owner (roughly 120 corner and offset entries across the 27 Saturdays) were not taken; they are the next corner.py batch for 1910. The Real Estate Transactions lists are metes-and-bounds and were not read for entries. Five Presidio Terrace tract-lot entries (lots 7-8, 19, 21, 32, 33-34) wait on a tract-lot to APN key.",
+    "note": "148 numbered-address mentions on the 74 pages (a regex count, including brokers' offices and out-of-town property), read one by one with the architect and corner passages. 450 findings: 135 at a street number, 315 by corner, offset, block face or name. 128 resolved (54 by hand), 322 unresolved - most because the corner's buildings are all later than 1913 or the record gives no lot size to choose between parcels, and 60 numbered addresses that EAS no longer has, that now split across parcels, or that land on a condominium. 125 published on 109 pages, 55 of them seeded; 3 declined."
   },
   "findings": [
     {
@@ -75,6 +78,10 @@
         "eas_address": "722 MARKET ST",
         "method": "EAS exact match on 726 MARKET ST → parcel 0312009; sf-parcels has blklot 0312009 active, 49–67 GEARY; the 2025 roll records it as commercial office, built 1912. EAS puts 722, 724, 726, 730, 732, 734, 736, 738, 740, 742 MARKET ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 722.",
         "checked_on": "2026-09-23"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -110,6 +117,10 @@
         "method": "Sexton's hotel on the south side of Bush between Mason and Powell; the 19 November issue places it 183 feet west of Powell on a 46 x 137:6 lot (6,325 sq ft). research/tools/corner.py BUSH POWELL: 0284020, 753 Bush (Planning name Grant Hotel), lot area 6,325 sq ft exactly, roll 1911.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -241,6 +252,10 @@
         "method": "SE corner of Bush and Powell, 45 by 67:6, six storeys. research/tools/corner.py BUSH POWELL: 0285010 (550-560 Powell, Planning name Chesterfield Apartments) has lot area 3,037.5 sq ft, exactly 45 x 67:6, six storeys, roll 1911.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -343,6 +358,10 @@
         "checked_on": "2026-09-23",
         "by_hand": true,
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -443,6 +462,10 @@
         "method": "South side of Market 250 feet west of Sixth, with an L to Stevenson. research/tools/corner.py MARKET 06TH: 3703075 (1023 Market, Planning name De Laveaga Building) has lot area 2,250 sq ft, roll 1907; the only parcel of that size on the block face at that offset.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -484,6 +507,10 @@
         "method": "Recorded range 856-860 MARKET ST; EAS matches 856 on this street → parcel 0329004; sf-parcels has blklot 0329004 active, 856–856 MARKET; the 2025 roll records it as commercial retail, built 1909. EAS has no record for 858, 860 on this street.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -584,6 +611,10 @@
         "method": "The Bellevue Hotel on Geary: the site's page for 501 Geary (0317001) is the Hotel Bellevue.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -618,6 +649,10 @@
         "method": "The San Francisco Turnverein's hall on Sutter between Divisadero and Broderick: 1052009, 2450 Sutter, roll 1911, whose page is the Turnverein hall.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -780,6 +815,10 @@
         "method": "The Mission Savings Bank's building at Sixteenth and Valencia: 3555015 (3106-3116 16th), the parcel the January-June batch placed the same building on, roll 1910.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -883,6 +922,10 @@
         "method": "North line of Post 60 feet west of Taylor, 40:6 x 60 (2,430 sq ft). research/tools/corner.py POST TAYLOR: 0298007, 620 Post (Planning name Venice Apartments), lot area 2,426 sq ft, six storeys, roll 1910 — the second lot from the corner, where a 60-foot offset lands.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -1018,6 +1061,10 @@
         "method": "North line of Golden Gate 192:6 west of Taylor, 68:9 x 137:6 (9,453 sq ft), for Rivers Brothers' seven-storey apartment house. research/tools/corner.py GOLDEN GATE TAYLOR: 0343008, 48-50 Golden Gate (Planning name Riverside Apartments), lot area 9,453.13 sq ft exactly, six storeys, roll 1911.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -1090,6 +1137,10 @@
         "method": "Recorded range 1811-1813 LYON ST; EAS matches 1811, 1813 on this street → parcel 1022007; sf-parcels has blklot 1022007 active, 1811–1813 LYON; the 2025 roll records it as multi-family residential, built 1900. EAS puts 1811, 1813 LYON ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1811.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -1158,6 +1209,11 @@
         "eas_address": "601 FULTON ST",
         "method": "Recorded range 623-625 FULTON ST; EAS matches 625 on this street → parcel 0795025; sf-parcels has blklot 0795025 active, 822–840 BUCHANAN; the 2025 roll records it as multi-family residential, built 1975. EAS puts 601, 625, 627, 629, 631, 655, 657, 659, 661, 663, 665, 667, 669, 671, 673, 675, 677, 679, 681 FULTON ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 601. EAS has no record for 623 on this street.",
         "checked_on": "2026-09-23"
+      },
+      "note": "Published wording differs from the extracted description: the building on the parcel today is later than the record, so the entry says the record is about the building then standing.",
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -1193,6 +1249,10 @@
         "eas_address": "101 DUBOCE AVE",
         "method": "EAS exact match on 103 DUBOCE AVE → parcel 3533001; sf-parcels has blklot 3533001 active, 101–113 DUBOCE; the 2025 roll records it as multi-family residential, built 1911. EAS puts 101, 103, 105, 107, 109, 111, 113 DUBOCE AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 101.",
         "checked_on": "2026-09-23"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -1229,6 +1289,10 @@
         "method": "EAS exact match on 406 ANDERSON ST → parcel 5706002; sf-parcels has blklot 5706002 active, 406–406 ANDERSON; the 2025 roll records it as single family residential, built 1925.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "declined",
+        "note": "Declined: the record says only that a lot and its building sold, with no price or description, and the building on the parcel today dates from 1925."
       }
     },
     {
@@ -1397,6 +1461,10 @@
         "method": "EAS exact match on 375 CRESCENT AVE → parcel 5744009; sf-parcels has blklot 5744009 active, 375–375 CRESCENT; the 2025 roll records it as multi-family residential, built 1906.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -1434,6 +1502,10 @@
         "method": "EAS exact match on 180 HARTFORD ST → parcel 3583108; sf-parcels has blklot 3583108 active, 180–180 HARTFORD; the 2025 roll records it as single family residential, built 1900.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -1504,6 +1576,10 @@
         "checked_on": "2026-09-23",
         "by_hand": true,
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -2276,6 +2352,10 @@
         "eas_address": "25 KEARNY ST",
         "method": "EAS exact match on 25 KEARNY ST → parcel 0310004; sf-parcels has blklot 0310004 active, 25–35 KEARNY; the 2025 roll records it as commercial office, built 1909. The assessor files the parcel as 11 MAIDEN LN. EAS puts 25, 33, 35 KEARNY ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 25.",
         "checked_on": "2026-09-23"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -2554,6 +2634,10 @@
         "method": "EAS exact match on 1942 PACIFIC AVE → parcel 0577003A; sf-parcels has blklot 0577003A active, 1942–1942 PACIFIC; the 2025 roll records it as single family residential, built 1900.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -2587,6 +2671,10 @@
         "method": "Leon Roos's new house by Maybeck & White at Jackson and Locust: 0970002, 3500 Jackson, whose page is the Roos House by Bernard Maybeck.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -2619,6 +2707,10 @@
         "method": "George H. Roos's house in the north line of Jackson east of Maple, near his brother's. research/tools/corner.py JACKSON MAPLE --to SPRUCE: 0969008, 3680 Jackson, Planning name George H. Roos House, roll 1911, four storeys.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -2750,6 +2842,10 @@
         "method": "EAS exact match on 30 WOOL ST → parcel 5645009; sf-parcels has blklot 5645009 active, 30–30 WOOL; the 2025 roll records it as single family residential, built 1906.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -2851,6 +2947,10 @@
         "method": "EAS exact match on 138 05TH AVE → parcel 1364030; sf-parcels has blklot 1364030 active, 136–138 05TH; the 2025 roll records it as single family residential, built 1903. EAS puts 136, 138 05TH AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 136. The record writes the street 5TH; EAS holds the numbered streets zero-padded to four characters, so this is 05TH.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -2885,6 +2985,10 @@
         "method": "EAS exact match on 390 CRESCENT AVE → parcel 5809001A; sf-parcels has blklot 5809001A active, 390–392 CRESCENT; the 2025 roll records it as multi-family residential, built 1900. EAS puts 390, 392 CRESCENT AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 390.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -2918,6 +3022,10 @@
         "method": "EAS exact match on 2256 FILBERT ST → parcel 0515017; sf-parcels has blklot 0515017 active, 2256–2260 FILBERT; the 2025 roll records it as multi-family residential, built 1906. EAS puts 2256, 2258, 2260 FILBERT ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2256.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -3120,6 +3228,10 @@
         "method": "EAS exact match on 90 JORDAN AVE → parcel 1038022; sf-parcels has blklot 1038022 active, 90–90 JORDAN; the 2025 roll records it as single family residential, built 1907.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -3157,6 +3269,11 @@
         "method": "EAS exact match on 553 25TH AVE → parcel 1519010; sf-parcels has blklot 1519010 active, 551–553 25TH; the 2025 roll records it as multi-family residential, built 1915. EAS puts 551, 553 25TH AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 551.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "note": "Published wording differs from the extracted description: the building on the parcel today is later than the record, so the entry says the record is about the building then standing.",
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -3195,6 +3312,11 @@
         "method": "EAS exact match on 372 05TH AVE → parcel 1436025; sf-parcels has blklot 1436025 active, 370–372 05TH; the 2025 roll records it as multi-family residential, built 1925. EAS puts 370, 372 05TH AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 370. The record writes the street 5TH; EAS holds the numbered streets zero-padded to four characters, so this is 05TH.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "note": "Published wording differs from the extracted description: the building on the parcel today is later than the record, so the entry says the record is about the building then standing.",
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -3268,6 +3390,10 @@
         "checked_on": "2026-09-23",
         "by_hand": true,
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -3307,6 +3433,10 @@
         "method": "Recorded range 1040-1050 COLE ST; EAS matches 1040, 1042, 1044, 1046, 1048, 1050 on this street → parcel 1278016; sf-parcels has blklot 1278016 active, 1040–1050 COLE; the 2025 roll records it as multi-family residential, built 1906. EAS puts 1040, 1042, 1044, 1046, 1048, 1050 COLE ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1040.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -3347,6 +3477,10 @@
         "method": "Recorded range 1261-1265 JACKSON ST; EAS matches 1261, 1263, 1265 on this street → parcel 0188020; sf-parcels has blklot 0188020 active, 1261–1265 JACKSON; the 2025 roll records it as multi-family residential, built 1908. EAS puts 1261, 1263, 1265 JACKSON ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1261.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -3422,6 +3556,10 @@
         "method": "EAS exact match on 572 04TH AVE → parcel 1546023; sf-parcels has blklot 1546023 active, 572–572 04TH; the 2025 roll records it as single family residential, built 1907. The record writes the street 4TH; EAS holds the numbered streets zero-padded to four characters, so this is 04TH.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -3461,6 +3599,10 @@
         "method": "EAS exact match on 147 16TH AVE → parcel 1376009; sf-parcels has blklot 1376009 active, 147–149 16TH; the 2025 roll records it as single family residential, built 1910. EAS puts 147, 149 16TH AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 147.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -3596,6 +3738,11 @@
         "method": "Recorded range 2616-2620 OCTAVIA ST; EAS matches 2616 on this street → parcel 0553031; sf-parcels has blklot 0553031 active, 2616–2616 OCTAVIA; the 2025 roll records it as single family residential, built 1957. EAS has no record for 2618, 2620 on this street.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "note": "Published wording differs from the extracted description: the building on the parcel today is later than the record, so the entry says the record is about the building then standing.",
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -3633,6 +3780,10 @@
         "method": "EAS exact match on 1815 LAGUNA ST → parcel 0662009; sf-parcels has blklot 0662009 active, 1815–1815 LAGUNA; the 2025 roll records it as single family residential, built 1890.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -3772,6 +3923,10 @@
         "eas_address": "2121 MARKET ST",
         "method": "EAS exact match on 2121 MARKET ST → parcel 3543012; sf-parcels has blklot 3543012 active, 2121–2123 MARKET; the 2025 roll records it as commercial retail, built 1905. EAS puts 2121, 2123 MARKET ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2121.",
         "checked_on": "2026-09-23"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -4228,6 +4383,10 @@
         "method": "Recorded range 390-392 CRESCENT AVE; EAS matches 390, 392 on this street → parcel 5809001A; sf-parcels has blklot 5809001A active, 390–392 CRESCENT; the 2025 roll records it as multi-family residential, built 1900. EAS puts 390, 392 CRESCENT AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 390.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -4265,6 +4424,10 @@
         "method": "Recorded range 2256-2260 FILBERT ST; EAS matches 2256, 2258, 2260 on this street → parcel 0515017; sf-parcels has blklot 0515017 active, 2256–2260 FILBERT; the 2025 roll records it as multi-family residential, built 1906. EAS puts 2256, 2258, 2260 FILBERT ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2256.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -4528,6 +4691,10 @@
         "method": "EAS exact match on 49 COSTA ST → parcel 5574015; sf-parcels has blklot 5574015 active, 49–49 COSTA; the 2025 roll records it as single family residential, built 1906.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -4591,6 +4758,11 @@
         "method": "SW corner of 11th Avenue and Clement, 70 x 75 (5,250 sq ft), two-storey brick building of stores. research/tools/corner.py CLEMENT 11TH: 1443001, 311 11th Avenue (Planning name Elite Hotel), lot area 5,248 sq ft, two storeys, roll 1910.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "note": "Published wording differs from the extracted description: trimmed to what the page does not already carry from the April 1910 issue.",
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -4692,6 +4864,11 @@
         "method": "EAS exact match on 1508 CHURCH ST → parcel 6592003; sf-parcels has blklot 6592003 active, 1508–1508 CHURCH; the 2025 roll records it as commercial retail, built 1949.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "note": "Published wording differs from the extracted description: the building on the parcel today is later than the record, so the entry says the record is about the building then standing.",
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -4728,6 +4905,11 @@
         "method": "EAS exact match on 54 NAPLES ST → parcel 5949008; sf-parcels has blklot 5949008 active, 54–54 NAPLES; the 2025 roll records it as single family residential, built 1983.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "note": "Published wording differs from the extracted description: the building on the parcel today is later than the record, so the entry says the record is about the building then standing.",
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -4797,6 +4979,10 @@
         "method": "EAS exact match on 375 CRESCENT AVE → parcel 5744009; sf-parcels has blklot 5744009 active, 375–375 CRESCENT; the 2025 roll records it as multi-family residential, built 1906.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -4833,6 +5019,10 @@
         "method": "EAS exact match on 373 LONDON ST → parcel 6082026; sf-parcels has blklot 6082026 active, 373–373 LONDON; the 2025 roll records it as single family residential, built 1907.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -4869,6 +5059,10 @@
         "method": "EAS exact match on 3943 21ST ST → parcel 2770028; sf-parcels has blklot 2770028 active, 3943–3943 21ST; the 2025 roll records it as single family residential, built 1907.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -4970,6 +5164,10 @@
         "eas_address": "552 CAPP ST",
         "method": "EAS exact match on 552 CAPP ST → parcel 3610037; sf-parcels has blklot 3610037 active, 552–554 CAPP; the 2025 roll records it as single family residential, built 1900. EAS puts 552, 554 CAPP ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 552.",
         "checked_on": "2026-09-23"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -5005,6 +5203,10 @@
         "eas_address": "2121 MARKET ST",
         "method": "EAS exact match on 2121 MARKET ST → parcel 3543012; sf-parcels has blklot 3543012 active, 2121–2123 MARKET; the 2025 roll records it as commercial retail, built 1905. EAS puts 2121, 2123 MARKET ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2121.",
         "checked_on": "2026-09-23"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -5044,6 +5246,10 @@
         "method": "EAS exact match on 1420 SHOTWELL ST → parcel 5520001; sf-parcels has blklot 5520001 active, 1420–1420 SHOTWELL; the 2025 roll records it as single family residential, built 1908.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -5204,6 +5410,10 @@
         "method": "The new custom house: 0197001, 555 Battery, whose page is the United States Custom House.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -5395,6 +5605,10 @@
         "checked_on": "2026-09-23",
         "by_hand": true,
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -5593,6 +5807,10 @@
         "method": "The Biber estate's five-storey apartment house in the north line of Sutter between Jones and Taylor. research/tools/corner.py SUTTER JONES --to TAYLOR: 0282007, 766 Sutter (Planning name Lucerne Apartments), five storeys, roll 1910 — the only five-storey parcel of that year on the north block face.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -5753,6 +5971,10 @@
         "method": "East side of Leavenworth 81:6 north of Geary, three flats in three storeys. research/tools/corner.py LEAVENWORTH GEARY --to POST: 0304012, 622-626 Leavenworth (Planning name Neuval Flats), three addresses, three storeys, roll 1910, on the lot a 81:6 offset reaches.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -6112,6 +6334,10 @@
         "method": "The new Ingleside police station: the page for 1 Sergeant John V. Young Street (3179011) is the Ingleside station.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -6246,6 +6472,11 @@
         "method": "EAS exact match on 3316 MISSION ST → parcel 6635067; sf-parcels has blklot 6635067 active, 3316–3316 MISSION; the 2025 roll records it as commercial retail, built 2022. EAS puts 3310, 3312, 3316 MISSION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 3310. EAS files the address under parcel 6635054, which sf-parcels reports retired; the active parcel its coordinates fall in is 6635067.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "note": "Published wording differs from the extracted description: the building on the parcel today is later than the record, so the entry says the record is about the building then standing.",
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -6544,6 +6775,10 @@
         "eas_address": "4324 18TH ST",
         "method": "EAS exact match on 4324 18TH ST → parcel 2649018; sf-parcels has blklot 2649018 active, 4324–4324 18TH; the 2025 roll records it as multi-family residential, built 1908.",
         "checked_on": "2026-09-23"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -6884,6 +7119,10 @@
         "method": "The Rialto Building: 3722071 (116 New Montgomery), whose page is the Rialto Building.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "declined",
+        "note": "Declined: the page already carries the permit for the Rialto's reconstruction (NRHP nomination) and the January 1910 announcement; a permit application adds nothing a reader needs."
       }
     },
     {
@@ -6948,6 +7187,10 @@
         "method": "East side of Hyde 96 feet north of O'Farrell, 40 x 75 (3,000 sq ft), class C apartment house for the Julian Investment Company. research/tools/corner.py HYDE OFARRELL: 0319019, 522 Hyde, lot area 3,000 sq ft, four storeys, roll 1910.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -6982,6 +7225,10 @@
         "method": "West side of Powell 113 feet south of Bush, 25 x 82, a three-storey house. research/tools/corner.py POWELL BUSH: 0284002, 535 Powell (Planning name George Perine House), lot area 2,062.5 sq ft, three storeys, roll 1911.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -7020,6 +7267,10 @@
         "eas_address": "25 KEARNY ST",
         "method": "EAS exact match on 25 KEARNY ST → parcel 0310004; sf-parcels has blklot 0310004 active, 25–35 KEARNY; the 2025 roll records it as commercial office, built 1909. The assessor files the parcel as 11 MAIDEN LN. EAS puts 25, 33, 35 KEARNY ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 25.",
         "checked_on": "2026-09-23"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -7057,6 +7308,10 @@
         "eas_address": "131 HAYES ST",
         "method": "Recorded range 133-137 HAYES ST; EAS matches 135 on this street → parcel 0814A001; sf-parcels has blklot 0814A001 active, 150–150 VAN NESS; the 2025 roll records it as multi-family residential, built 2018. The assessor files the parcel as 150 VAN NESS AV. EAS puts 131, 135 HAYES ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 131. EAS files the address under parcel 0814016, which sf-parcels reports retired; the active parcel its coordinates fall in is 0814A001. EAS has no record for 133, 137 on this street.",
         "checked_on": "2026-09-23"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -7094,6 +7349,10 @@
         "method": "EAS exact match on 210 SPRUCE ST → parcel 0994013; sf-parcels has blklot 0994013 active, 210–210 SPRUCE; the 2025 roll records it as single family residential, built 1909.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -7421,6 +7680,10 @@
         "eas_address": "551 HAIGHT ST",
         "method": "Recorded range 553-559 HAIGHT ST; EAS matches 553, 555, 557, 559 on this street → parcel 0860062; sf-parcels has blklot 0860062 active, 551–559 HAIGHT; the 2025 roll records it as commercial hotel, built 1900. EAS puts 551, 553, 555, 557, 559 HAIGHT ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 551.",
         "checked_on": "2026-09-23"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -7488,6 +7751,10 @@
         "checked_on": "2026-09-23",
         "by_hand": true,
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -7518,6 +7785,10 @@
         "method": "The Hearst Building at Third and Market. research/tools/corner.py MARKET KEARNY: 3707057 (691-699 Market), Planning name Hearst Building, roll 1909.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -7779,6 +8050,10 @@
         "method": "NE corner of Haight and Gough, 55 x 120 (6,600 sq ft). research/tools/corner.py HAIGHT GOUGH: 0854006 (64-78 Gough) has lot area 6,600 sq ft exactly, three storeys, roll 1911.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -8011,6 +8286,10 @@
         "method": "NE corner of Second and Natoma, a four-storey building on 1,875 sq ft. research/tools/corner.py 02ND NATOMA: 3721048, 163 Second (Planning name Marcus Modry Building), lot area 1,875 sq ft exactly, four storeys, roll 1906.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -8172,6 +8451,10 @@
         "checked_on": "2026-09-23",
         "by_hand": true,
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -8407,6 +8690,10 @@
         "method": "EAS exact match on 1511 GOLDEN GATE AVE → parcel 0776026; sf-parcels has blklot 0776026 active, 1511–1511 GOLDEN GATE; the 2025 roll records it as multi-family residential, built 1900.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -8569,6 +8856,10 @@
         "method": "The San Francisco Turnverein's hall on Sutter west of Divisadero: 1052009, 2450 Sutter, roll 1911, whose page is the Turnverein hall.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -8765,6 +9056,10 @@
         "method": "SE corner of Kearny and Sutter, 97:6 on Sutter by 122:6 on Kearny (11,943.75 sq ft), eight-storey hotel. research/tools/corner.py KEARNY SUTTER: 0292009 (Planning name Sutter Hotel) has lot area 11,943.75 sq ft exactly, nine storeys, roll 1911.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -8864,6 +9159,10 @@
         "method": "Masonic temple at the corner of Van Ness and Oak. research/tools/corner.py VAN NESS OAK: 0834004, 11-27 Van Ness, Planning name Masonic Temple, eight storeys, roll 1911.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -9062,6 +9361,10 @@
         "method": "Recorded range 1471-1475 OAK ST; EAS matches 1473 on this street → parcel 1221031; sf-parcels has blklot 1221031 active, 1473–1473 OAK; the 2025 roll records it as multi-family residential, built 1900. EAS has no record for 1471, 1475 on this street.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -9316,6 +9619,11 @@
         "eas_address": "601 FULTON ST",
         "method": "Recorded range 623-625 FULTON ST; EAS matches 625 on this street → parcel 0795025; sf-parcels has blklot 0795025 active, 822–840 BUCHANAN; the 2025 roll records it as multi-family residential, built 1975. EAS puts 601, 625, 627, 629, 631, 655, 657, 659, 661, 663, 665, 667, 669, 671, 673, 675, 677, 679, 681 FULTON ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 601. EAS has no record for 623 on this street.",
         "checked_on": "2026-09-23"
+      },
+      "note": "Published wording differs from the extracted description: the building on the parcel today is later than the record, so the entry says the record is about the building then standing.",
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -9383,6 +9691,10 @@
         "method": "The Whitcomb estate's temporary city hall on Market between Eighth and Ninth, 200 feet frontage: 3701059 (1231 Market), lot area 57,024 sq ft, eight storeys, roll 1911; the page is the Municipal Building.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -9451,6 +9763,10 @@
         "eas_address": "1748 CLAY ST",
         "method": "EAS exact match on 1750 CLAY ST → parcel 0619007; sf-parcels has blklot 0619007 active, 1748–1748 CLAY; the 2025 roll records it as commercial misc, built 1907. EAS puts 1748, 1750 CLAY ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1748.",
         "checked_on": "2026-09-23"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -9485,6 +9801,10 @@
         "eas_address": "2664 MISSION ST",
         "method": "EAS exact match on 2668 MISSION ST → parcel 3636009; sf-parcels has blklot 3636009 active, 2664–2668 MISSION; the 2025 roll records it as commercial retail, built 1900. EAS puts 2664, 2668 MISSION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2664.",
         "checked_on": "2026-09-23"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -9581,6 +9901,10 @@
         "method": "Four-storey building in the west line of Waverly Place for the Sue Hing Benevolent Association. research/tools/corner.py WAVERLY WASHINGTON --to CLAY: 0210034, 125-129 Waverly, Planning name Tin How Temple: Sue Hing Benevolent Association, four storeys, roll 1911.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -9744,6 +10068,10 @@
         "method": "John Deere Plow Company building on Brannan between Fifth and Sixth, 34,375 sq ft as recorded. research/tools/corner.py BRANNAN 05TH --to 06TH: 3785009, 651 Brannan, lot area 34,650 sq ft, four storeys, roll 1911.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -9912,6 +10240,10 @@
         "checked_on": "2026-09-23",
         "by_hand": true,
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -9973,6 +10305,10 @@
         "method": "The Merchants' Exchange Building: 0260015, 465 California, whose page is the Merchants' Exchange.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -10142,6 +10478,10 @@
         "method": "The Julian Investment Company's apartment building on the east side of Hyde between O'Farrell and Geary, the lot the 24 September issue gives as 96 feet north of O'Farrell, 40 x 75. research/tools/corner.py HYDE OFARRELL: 0319019, 522 Hyde, lot area 3,000 sq ft, four storeys, roll 1910.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -10215,6 +10555,10 @@
         "eas_address": "1220 PINE ST",
         "method": "EAS exact match on 1220 PINE ST → parcel 0251008; sf-parcels has blklot 0251008 active, 1220–1220 PINE; the 2025 roll records it as multi-family residential, built 1910.",
         "checked_on": "2026-09-23"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -10492,6 +10836,10 @@
         "method": "EAS exact match on 690 05TH AVE → parcel 1640028; sf-parcels has blklot 1640028 active, 690–690 05TH; the 2025 roll records it as single family residential, built 1910. The record writes the street 5TH; EAS holds the numbered streets zero-padded to four characters, so this is 05TH.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -10531,6 +10879,10 @@
         "method": "Recorded range 115-119 STEINER ST; EAS matches 115, 117, 119 on this street → parcel 0866007; sf-parcels has blklot 0866007 active, 115–119 STEINER; the 2025 roll records it as multi-family residential, built 1900. EAS puts 115, 117, 119 STEINER ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 115.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -10605,6 +10957,10 @@
         "method": "EAS exact match on 108 11TH AVE → parcel 1370044; sf-parcels has blklot 1370044 active, 108–108 11TH; the 2025 roll records it as single family residential, built 1910.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -10809,6 +11165,11 @@
         "method": "EAS exact match on 370 30TH AVE → parcel 1404028; sf-parcels has blklot 1404028 active, 370–370 30TH; the 2025 roll records it as single family residential, built 1915.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "note": "Published wording differs from the extracted description: the building on the parcel today is later than the record, so the entry says the record is about the building then standing.",
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -10845,6 +11206,10 @@
         "method": "EAS exact match on 1291 05TH AVE → parcel 1754009; sf-parcels has blklot 1754009 active, 1291–1291 05TH; the 2025 roll records it as single family residential, built 1900. The record writes the street 5TH; EAS holds the numbered streets zero-padded to four characters, so this is 05TH.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -10920,6 +11285,10 @@
         "method": "EAS exact match on 170 26TH AVE → parcel 1333026; sf-parcels has blklot 1333026 active, 170–170 26TH; the 2025 roll records it as single family residential, built 1909.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -10956,6 +11325,10 @@
         "method": "EAS exact match on 1904 GREEN ST → parcel 0542006; sf-parcels has blklot 0542006 active, 1904–1904 GREEN; the 2025 roll records it as multi-family residential, built 1900.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -11060,6 +11433,10 @@
         "eas_address": "116 TURK ST",
         "method": "EAS exact match on 116 TURK ST → parcel 0339004; sf-parcels has blklot 0339004 active, 116–118 TURK; the 2025 roll records it as commercial hotel, built 1910. EAS puts 116, 118 TURK ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 116.",
         "checked_on": "2026-09-23"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -11161,6 +11538,10 @@
         "method": "South line of Bush 183 feet west of Powell, 46 x 137:6 (6,325 sq ft). research/tools/corner.py BUSH POWELL: 0284020, 753 Bush (Planning name Grant Hotel), lot area 6,325 sq ft exactly, five storeys, roll 1911.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -11260,6 +11641,10 @@
         "method": "SW corner of Post and Jones, six storeys. research/tools/corner.py POST JONES: 0304001, 701 Post (Planning name Warrin Apartments), six storeys, roll 1910; the south side of Post carries the odd numbers here.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "declined",
+        "note": "Declined: the page already carries this plan and the contract for the six-storey building from the April and May 1910 issues."
       }
     },
     {
@@ -11493,6 +11878,10 @@
         "method": "Recorded range 1457-1459 CHURCH ST; EAS matches 1457 on this street → parcel 6578029; sf-parcels has blklot 6578029 active, 1457–1457 CHURCH; the 2025 roll records it as multi-family residential, built 1908. 1459 is in EAS on this street but carries no parcel number.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -11598,6 +11987,10 @@
         "method": "The Hearst Building, twelve storeys at the east corner of Market and Kearny. research/tools/corner.py MARKET KEARNY: 3707057 (691-699 Market), Planning name Hearst Building, roll 1909.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -11924,6 +12317,10 @@
         "eas_address": "124 TURK ST",
         "method": "EAS exact match on 124 TURK ST → parcel 0339005; sf-parcels has blklot 0339005 active, 124–126 TURK; the 2025 roll records it as commercial hotel, built 1907. EAS puts 124, 126 TURK ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 124.",
         "checked_on": "2026-09-23"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -11962,6 +12359,11 @@
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed.",
         "by_hand": true
+      },
+      "note": "Published wording differs from the extracted description: the building on the parcel today is later than the record, so the entry says the record is about the building then standing.",
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -11994,6 +12396,10 @@
         "method": "The Merchants' Exchange Building: 0260015, 465 California, whose page is the Merchants' Exchange.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -12032,6 +12438,10 @@
         "method": "Recorded range 4346-4350 25TH ST; EAS matches 4346, 4348, 4350 on this street → parcel 6540017; sf-parcels has blklot 6540017 active, 4346–4350 25TH; the 2025 roll records it as multi-family residential, built 1908. EAS puts 4346, 4348, 4350 25TH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 4346.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -12069,6 +12479,11 @@
         "method": "Recorded range 1060-1062 CAPP ST; EAS matches 1060, 1062 on this street → parcel 6528036; sf-parcels has blklot 6528036 active, 1060–1062 CAPP; the 2025 roll records it as commercial office, built 1969. EAS puts 1060, 1062 CAPP ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1060.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "note": "Published wording differs from the extracted description: the building on the parcel today is later than the record, so the entry says the record is about the building then standing.",
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -12302,6 +12717,10 @@
         "method": "EAS exact match on 2504 JACKSON ST → parcel 0586004; sf-parcels has blklot 0586004 active, 2504–2504 JACKSON; the 2025 roll records it as single family residential, built 1896.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -12340,6 +12759,10 @@
         "method": "EAS exact match on 3712 JACKSON ST → parcel 0968003; sf-parcels has blklot 0968003 active, 3712–3712 JACKSON; the 2025 roll records it as single family residential, built 1912.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -12376,6 +12799,10 @@
         "checked_on": "2026-09-23",
         "by_hand": true,
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -12510,6 +12937,10 @@
         "checked_on": "2026-09-23",
         "by_hand": true,
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -12547,6 +12978,10 @@
         "method": "The Davis estate's lot at the SE corner of Kearny and Sutter, 122:6 on Kearny by 97:6. research/tools/corner.py KEARNY SUTTER: 0292009 (Planning name Sutter Hotel) has lot area 11,943.75 sq ft exactly, roll 1911 — the hotel whose bids the 22 October issue reports.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -12609,6 +13044,10 @@
         "method": "The Hearst Building at Third and Market. research/tools/corner.py MARKET KEARNY: 3707057 (691-699 Market), Planning name Hearst Building, roll 1909.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -12643,6 +13082,10 @@
         "method": "The San Francisco Turnverein's clubhouse, placed by name on 1052009, 2450 Sutter (roll 1911), whose page is the Turnverein hall; the permit's 'north side, 200 feet east of Devisadero' contradicts the 9 July and 15 October issues and the parcel.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -13162,6 +13605,10 @@
         "method": "Recorded range 151-153 09TH AVE; EAS matches 151, 153 on this street → parcel 1369003; sf-parcels has blklot 1369003 active, 151–151 09TH; the 2025 roll records it as multi-family residential, built 1908. EAS puts 151, 153 09TH AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 151. The address carries no parcel number in EAS; the active parcel its coordinates fall in is 1369003. The record writes the street 9TH; EAS holds the numbered streets zero-padded to four characters, so this is 09TH.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -13198,6 +13645,10 @@
         "eas_address": "54 GEARY ST",
         "method": "Recorded range 54-56 GEARY ST; EAS matches 54 on this street → parcel 0310011; sf-parcels has blklot 0310011 active, 54–54 GEARY; the 2025 roll records it as commercial retail, built 1907. EAS has no record for 56 on this street.",
         "checked_on": "2026-09-23"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -13363,6 +13814,10 @@
         "method": "EAS exact match on 124 HIGHLAND AVE → parcel 5718040; sf-parcels has blklot 5718040 active, 124–124 HIGHLAND; the 2025 roll records it as single family residential, built 1900.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -13432,6 +13887,10 @@
         "eas_address": "267 SAN CARLOS ST",
         "method": "Recorded range 267-269 SAN CARLOS ST; EAS matches 267, 269 on this street → parcel 3596025; sf-parcels has blklot 3596025 active, 267–267 SAN CARLOS; the 2025 roll records it as multi-family residential, built 1910. EAS puts 267, 269 SAN CARLOS ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 267. The address carries no parcel number in EAS; the active parcel its coordinates fall in is 3596025.",
         "checked_on": "2026-09-23"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -13467,6 +13926,10 @@
         "method": "EAS exact match on 1617 TREAT AVE → parcel 5543010; sf-parcels has blklot 5543010 active, 1617–1617 TREAT; the 2025 roll records it as single family residential, built 1910.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -13502,6 +13965,10 @@
         "eas_address": "3352 21ST ST",
         "method": "Recorded range 3352-3354 21ST ST; EAS matches 3352, 3352, 3354 on this street → parcel 3608018; sf-parcels has blklot 3608018 active, 3352–3354 21ST; the 2025 roll records it as multi-family residential, built 1900. EAS puts 3352, 3354 21ST ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 3352.",
         "checked_on": "2026-09-23"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -13533,6 +14000,10 @@
         "method": "The Call (Claus Spreckels) Building: research/tools/corner.py MARKET 03RD: 3706001, 701-705 Market, Planning name Call/Claus Spreckels Building, roll 1908.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -13569,6 +14040,10 @@
         "eas_address": "1415 HOWARD ST",
         "method": "EAS exact match on 1415 HOWARD ST → parcel 3517040; sf-parcels has blklot 3517040 active; the 2025 roll records it as commercial misc, built 1908. EAS files the address under parcel 3517034, which sf-parcels reports retired; the active parcel its coordinates fall in is 3517040.",
         "checked_on": "2026-09-23"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -13828,6 +14303,10 @@
         "method": "The Head Building at the SW corner of Grant and Post. research/tools/corner.py GRANT POST: 0309001, Planning name Head Building, twelve storeys, roll 1909.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -13861,6 +14340,10 @@
         "method": "NE corner of O'Farrell and Taylor, 72 x 92 (6,624 sq ft), a hotel. research/tools/corner.py OFARRELL TAYLOR: 0324001 (401 O'Farrell, Planning name R. S. Brown Hotel (Columbia Hotel)), lot area 6,372 sq ft, six storeys, roll 1910.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -13929,6 +14412,10 @@
         "method": "The temporary city hall on Market near Eighth, 200 x 163, Wright, Rushforth & Cahill: 3701059 (1231 Market), lot area 57,024 sq ft, eight storeys, roll 1911; the page is the Municipal Building.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -14028,6 +14515,10 @@
         "method": "EAS exact match on 1646 FLORIDA ST → parcel 5515006; sf-parcels has blklot 5515006 active, 1646–1646 FLORIDA; the 2025 roll records it as multi-family residential, built 1904.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -14294,6 +14785,10 @@
         "method": "NE corner of Van Ness and Post, 120 x 246:6 (29,580 sq ft). research/tools/corner.py POST VAN NESS: 0691005 (1150-1180 Post), lot area 29,585 sq ft, roll 1911.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -14394,6 +14889,11 @@
         "eas_address": "120 KEARNY ST",
         "method": "EAS exact match on 130 KEARNY ST → parcel 0292008; sf-parcels has blklot 0292008 active, 120–130 KEARNY; the 2025 roll records it as commercial office, built 1980. EAS puts 120, 130 KEARNY ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 120.",
         "checked_on": "2026-09-23"
+      },
+      "note": "Published wording differs from the extracted description: the building on the parcel today is later than the record, so the entry says the record is about the building then standing.",
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -14533,6 +15033,10 @@
         "eas_address": "28 GEARY ST",
         "method": "EAS exact match on 28 GEARY ST → parcel 0310008; sf-parcels has blklot 0310008 active, 28–36 GEARY; the 2025 roll records it as commercial office, built 1908. EAS puts 28, 30, 36 GEARY ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 28.",
         "checked_on": "2026-09-23"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -14566,6 +15070,10 @@
         "method": "NW corner of Grant and Tillman Place, 30 x 25 (750 sq ft), four-storey brick. research/tools/corner.py GRANT TILLMAN: 0294003 (249-253 Grant, 1 Tillman), lot area 749 sq ft, four storeys, roll 1907.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -14633,6 +15141,10 @@
         "eas_address": "57 POST ST",
         "method": "EAS exact match on 65 POST ST → parcel 0311013; sf-parcels has blklot 0311013 active, 57–65 POST; the 2025 roll records it as commercial office, built 1909. EAS puts 57, 61, 65 POST ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 57.",
         "checked_on": "2026-09-23"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -14766,6 +15278,11 @@
         "eas_address": "154 SUTTER ST",
         "method": "EAS exact match on 154 SUTTER ST → parcel 0288010; sf-parcels has blklot 0288010 active, 154–180 SUTTER; the 2025 roll records it as commercial office, built 1987. EAS puts 154, 160, 168, 170, 176, 180 SUTTER ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 154.",
         "checked_on": "2026-09-23"
+      },
+      "note": "Published wording differs from the extracted description: the building on the parcel today is later than the record, so the entry says the record is about the building then standing.",
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -14802,6 +15319,11 @@
         "method": "EAS exact match on 2112 CALIFORNIA ST → parcel 0638079; sf-parcels has blklot 0638079 active, 2112–2112 CALIFORNIA; the 2025 roll records it as single family residential, built 1930.",
         "checked_on": "2026-09-23",
         "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "note": "Published wording differs from the extracted description: the building on the parcel today is later than the record, so the entry says the record is about the building then standing.",
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -14836,6 +15358,11 @@
         "method": "The Savings Union's new building at Grant, O'Farrell and Market. research/tools/corner.py GRANT OFARRELL: 0313008, 1 Grant, Planning name Savings Union Branch of Security Pacific National Bank, roll 1910.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "note": "Published wording differs from the extracted description: the founding years are left out so the entry keeps to its own date.",
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
@@ -14867,6 +15394,10 @@
         "method": "The Union Trust Company building opposite the Savings Union at Grant, Market and O'Farrell: 0312006, 744 Market, Planning name Wells Fargo Union Trust Branch; the page is the Union Trust Building.",
         "checked_on": "2026-09-23",
         "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "406"
       }
     },
     {
