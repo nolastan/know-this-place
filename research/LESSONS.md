@@ -2154,3 +2154,24 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   *Run `research/tools/corner.py` on every corner a batch names, and match on
   lot area and year before the corner word.* See RUNBOOK.md step 3.
   ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+
+- **Corner lookups miss the middle of the block, and offsets were being
+  thrown away.** The 1911 batch's "south side of California between Hyde and
+  Leavenworth" and "147 feet east of Polk" were out of `corner.py`'s 60 m
+  radius, and the 1913 brokers' columns give most sales as "the north line of
+  Twenty-fourth street 155 feet west of Noe" — 37 of 59 findings had no
+  number. `corner.py --to` now lists a whole block face, and measuring the
+  offset on the sf-parcels shapes placed four of them outright (the lot
+  beginning 155 feet from Noe is 4026–4030 24th, roll 2,850 sq ft against the
+  record's 25 by 114). *Measure the offset; where it lands on no lot line, or
+  disagrees with the lot, say which and don't choose silently.*
+  ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **`data.json` files are not all indented the same way.** Some pages are
+  written with one-space indentation, some with two; a publish script that
+  re-dumps every file with `indent=2` turned four one-line additions into
+  800-line diffs that hide the change from a reviewer. *Read the file's own
+  indentation (the second line of the HEAD version) and write it back the
+  same way.* Relatedly, a path typed by hand from the offset parcel's
+  sf-parcels range (4028) disagreed with EAS's lowest number on the parcel
+  (4026); the seeder followed EAS and `check.py` flagged the finding.
+  *Take the page's number from EAS, not from the parcel map.*

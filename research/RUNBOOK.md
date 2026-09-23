@@ -270,7 +270,19 @@ python3 research/tools/corner.py BUSH MASON --year 1912
 
 It lists every parcel within about 60 m of the intersection with the roll's
 build year, storeys and lot area, Planning's building name and any existing
-page. **The match is the lot area and the year, not the corner word.** The
+page. For a record that says "between Hyde and Leavenworth", or gives an
+offset further up the block than the corner radius reaches, `--to` lists the
+whole block face instead:
+
+```bash
+python3 research/tools/corner.py CALIFORNIA HYDE --to LEAVENWORTH --year 1911
+```
+
+**An offset is a check in its own right.** "80 feet west of Lyon, 25 by 100"
+names the lot whose front begins 80 feet from the corner; measure it on the
+`acdm-wktn` shapes by projecting each lot's vertices onto the street line
+(DATA-SOURCES.md → sf-parcels). Lots begin on round multiples of 25 feet from
+the corner lot; an offset that lands on no lot line is a misprint. **The match is the lot area and the year, not the corner word.** The
 record's "55 by 87:6" against a roll `lot_area` of 4,812.5, on a parcel built
 the year after the announcement, is an identification; a corner parcel with the
 right year and no area check is a guess. Read which side carries the odd
