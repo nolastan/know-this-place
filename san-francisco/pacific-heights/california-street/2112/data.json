@@ -1,0 +1,101 @@
+{
+  "address": "2112 California Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/california-street/2112/",
+  "apn": "0638079",
+  "block": "0638",
+  "lot": "079",
+  "eas_baseid": "464508",
+  "coordinates": {
+    "lat": 37.789797,
+    "lng": -122.42926
+  },
+  "parcel": {
+    "year_built": 1930,
+    "units": 1,
+    "bathrooms": 2,
+    "building_area_sqft": 1261,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "0000 2112 CALIFORNIA          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 791300,
+    "assessed_improvement_value": 527532,
+    "last_sale_date": "2012-04-25"
+  },
+  "permits": [
+    {
+      "number": "200805081648",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-05-08",
+      "status_date": "2008-08-25",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "master bath remodel, gut bath wall and ceiling to the e substructure. e window to remain. upgrade plumbing/elec. move an unstructural wall, new shower with shower pan and shower valve, relocate toilet and sink, insulate walls and ceiling. sheetrock, tape, texture, tile bath. repair hardwood floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200801072001",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-01-07",
+      "status_date": "2008-04-21",
+      "estimated_cost": 69000,
+      "revised_cost": 69000,
+      "description": "one unit only-kitchen remodel-demo (e)kitchen down to the bare studs &ceiling joists.enlarge (e)kitchen entryway-non landbearing-upgrade elec&plumb-insulate walls-5/8\" sheetrock-new hardwood floor, new cabinets&countertops,hookup all finish elec&plumb. see architect drawings w/ this application.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200104197278",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-04-19",
+      "status_date": "2001-12-10",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "replace existing toilet,sink & tub. replace existing tile.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CALIFORNIA&street_type=ST&address_number=2112",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0638079&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0638&lot=079",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "loc-sf-call-1910-12-24",
+      "name": "The San Francisco Call, 24 December 1910, p. 9",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-12-24/ed-1/seq-9/",
+      "retrieved": "2026-09-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1910-12-24",
+      "kind": "lease",
+      "description": "The Nippon Club, an organization of Japanese businessmen, leased the premises then standing here for three years.",
+      "source": "loc-sf-call-1910-12-24"
+    }
+  ]
+}

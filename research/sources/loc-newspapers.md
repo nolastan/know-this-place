@@ -6,7 +6,7 @@
 >
 > - **Kind:** newspaper OCR corpus · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 10 batches / 58,620 pages scanned for address mentions in August 2026 (no findings file; see below), and the *Call*'s Real Estate and Financial Section read in full for 1911 and 1912, as held for 1913, and for January–June 1910, into `findings/loc-newspapers/sn85066387-<year>-real-estate.json`.
+> - **Coverage:** 10 batches / 58,620 pages scanned for address mentions in August 2026 (no findings file; see below), and the *Call*'s Real Estate and Financial Section read in full for 1911 and 1912, as held for 1913, and for the whole of 1910 (January–June and July–December batches), into `findings/loc-newspapers/sn85066387-<year>-real-estate.json`.
 > - **Local corpus:** `research/corpora/loc-newspapers/` — `tar/` for the batch OCR tarballs, `txt/<lccn>/<yyyy>/<mm>/<dd>/ed-1/seq-N/ocr.txt` for the extracted pages. A fresh container has none of it.
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -88,7 +88,7 @@ Issue counts per year; a year split across batches needs all of them.
 | | 1906–1907 | `hercules_ver01` (275 + 92), `indio_ver01` (1907: 245), `mecca_ver01` (1907: 28) |
 | | 1908 | `indio` (90), `jenner_ver01` (31), `llano_ver01` (245) |
 | | 1909 | `jenner` (92), `llano` (61), `mecca` (151), `needles_ver01` (61) |
-| | **1910** | `jenner` (90), `klamath_ver01` (122), `mecca` (122), `needles` (31) — **all four fetched 2026-09-23**; January–June read |
+| | **1910** | `jenner` (90), `klamath_ver01` (122), `mecca` (122), `needles` (31) — **all four fetched 2026-09-23**; **read in full** (January–June, July–December) |
 | | **1911** | `curiv_betteravia_ver02` (Jan–Aug, 5,901 pages), `curiv_angwin_ver02` (Sep–Dec, 2,996 pages) — **both on disk** |
 | | **1912** | `angwin` (106), `calipatria_ver03` (183), `dardanelle_ver01` (64) — 9,693 pages, **all three fetched 2026-09-23**; nothing after 15 December |
 | | 1913 | `dardanelle` (15: 1–15 February), `grimes_ver01` (132: 16 July–8 December) — **both fetched 2026-09-23**; January, March to mid-July and the rest of December are in neither, and in no other batch: all 79 `curiv_` batch listings were checked for `sn85066387` on 2026-09-23 and every one that holds the *Call* is in this table |
@@ -275,6 +275,32 @@ Saturdays, not 52. Three things differ from 1912:
   3541 18th, 100 New Montgomery, 414 Mason, 524 Post, 1369 Hyde), which is the
   best check a corner placement gets.
 
+### Cautions for the second half of 1910
+
+- **The section stops sitting still in July.** January to June it is three
+  pages in a fixed place; from July it is two to four pages starting anywhere
+  from p. 8 to p. 13, and the `REAL ESTATE AND FINANCIAL SECTION` head is
+  missing on many Saturdays. Find it by its headlines (sales, leases, building
+  news, improvement clubs). **Page 6 is the bay-counties page every week** —
+  Oakland, Berkeley, Alameda — and looks like the section at a glance.
+- **A loan names the security, not the building.** The YMCA's loan on
+  8 October is secured on a lot in Mason Street, and a quick reading places the
+  YMCA there; the building the money is for is on Golden Gate Avenue. Read the
+  whole loan sentence before taking its lot as the site.
+- **Prices and sides change between issues.** The Fell and Franklin corner is
+  $30,000 in July and $17,500 in October; the Goodrich lease $45,000 and then
+  $37,200; the Turnverein's hall "west of Devisadero" in October and "north
+  side, 200 feet east of Devisadero" on its December permit; the Bryant school
+  "at the corner of York" on 10 December and at 22nd and Bryant a week later.
+  Each finding records what its own issue printed; the page says which.
+- **Lot area is the only corner check that works.** 54 hand placements this
+  batch, most of them an exact match of the record's "46x137:6" or "62:6x106:3"
+  against the roll's `lot_area`. Where the record gives no lot size, the
+  corner's parcels were not chosen between, however likely one looked.
+- **The roll files some corner parcels under the other street.** The manifest
+  took Pine for 1100 Pine / 1005 Jones and McAllister for 856 Divisadero;
+  both were moved to the roll's `property_location` before seeding (see LESSONS).
+
 ### Cautions
 
 - **Verify the number against the cross-streets — the ads hand you the check.**
@@ -358,13 +384,19 @@ Saturdays, not 52. Three things differ from 1912:
   resolved (45 by hand), 96 unresolved; 73 published on 68 pages, 28 of them
   seeded, 3 declined as duplicates. Batch file
   `findings/loc-newspapers/sn85066387-1910-real-estate.json`.)
+- **Verified:** 2026-09-23 (the *Call*'s 1910 Real Estate and Financial
+  Section, July–December: 74 OCR pages over 27 Saturdays, 148 numbered-address
+  mentions, 450 findings — 128 resolved (54 by hand with `corner.py`), 322
+  unresolved; 125 published on 109 pages, 55 of them seeded, 3 declined (#406).
+  Batch file `findings/loc-newspapers/sn85066387-1910-h2-real-estate.json`.)
 - **Coverage:** 1890s and 1900s years scanned in August 2026 for mentions only
-  (above); **1910 read January–June**; **1911 and 1912 Real Estate and Financial Sections read in full**
+  (above); **1910 Real Estate and Financial Section read in full**; **1911 and 1912 Real Estate and Financial Sections read in full**
   (1912 lacks 21 and 28 December, which no batch holds); **1913 read as far
   as the batches hold it** (1–15 February, 16 July–8 December); 1913's other
-  months are in no batch on the bulk route. Next: **1910, July–December** (#404)
-  (on disk in klamath, mecca and needles for a session that fetched them), then
-  the unscanned 1897–1899 and 1903–1904 years. The weekly Building
+  months are in no batch on the bulk route. Next: the 1910 owner-only permit
+  and loan paragraphs (about 120 corner and offset entries left out of both
+  1910 batches) as a `corner.py` batch, then the unscanned 1897–1899 and
+  1903–1904 years. The weekly Building
   Contracts lists in 1911–1913 are metes-and-bounds and were read only for
   named buildings; they are the next `corner.py` batch. The rest of the 1911,
   1912 and 1913 paper — the fires and the building-permit lists — is on disk

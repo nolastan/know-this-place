@@ -1,0 +1,106 @@
+{
+  "address": "170 26th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/seacliff/26th-avenue/170/",
+  "apn": "1333026",
+  "block": "1333",
+  "lot": "026",
+  "eas_baseid": "300521",
+  "coordinates": {
+    "lat": 37.786369,
+    "lng": -122.485939
+  },
+  "parcel": {
+    "year_built": 1909,
+    "units": 1,
+    "stories": 3,
+    "rooms": 10,
+    "bathrooms": 3,
+    "lot_area_sqft": 3140,
+    "building_area_sqft": 2359,
+    "basement_area_sqft": 168,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Seacliff",
+    "property_location_raw": "0000 0170 26TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 53107,
+    "assessed_improvement_value": 144139
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202607215317",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2026-09-18",
+      "status_date": "2026-09-18",
+      "estimated_cost": 55000,
+      "description": "addition of a bedroom and interior remodel of a bathroom on the 3rd level of sfd.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8924447",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-12-13",
+      "status_date": "1990-08-23",
+      "estimated_cost": 7750,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=26TH&street_type=AVE&address_number=170",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1333026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1333&lot=026",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1333026",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "loc-sf-call-1910-11-12",
+      "name": "The San Francisco Call, 12 November 1910, p. 11",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-11-12/ed-1/seq-11/",
+      "retrieved": "2026-09-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1910-11-12",
+      "kind": "sale",
+      "description": "A six-room house on a 26 by 120 lot sold for $4,800.",
+      "source": "loc-sf-call-1910-11-12"
+    }
+  ]
+}

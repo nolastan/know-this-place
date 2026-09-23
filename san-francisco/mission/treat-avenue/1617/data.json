@@ -1,0 +1,99 @@
+{
+  "address": "1617 Treat Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/treat-avenue/1617/",
+  "apn": "5543010",
+  "block": "5543",
+  "lot": "010",
+  "eas_baseid": "380018",
+  "coordinates": {
+    "lat": 37.744616,
+    "lng": -122.412054
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 2750,
+    "building_area_sqft": 1386,
+    "lot_depth_ft": 10,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Bernal Heights",
+    "property_location_raw": "0000 1617 TREAT               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1295000,
+    "assessed_improvement_value": 555000,
+    "last_sale_date": "2021-12-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Assessment",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200812098108",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-12-09",
+      "status_date": "2008-12-09",
+      "estimated_cost": 12800,
+      "revised_cost": 12800,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TREAT&street_type=AVE&address_number=1617",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5543010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5543&lot=010",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5543010",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "loc-sf-call-1910-12-10",
+      "name": "The San Francisco Call, 10 December 1910, p. 10",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-12-10/ed-1/seq-10/",
+      "retrieved": "2026-09-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1910-12-10",
+      "kind": "sale",
+      "description": "The property at 1617 Treat Avenue was exchanged for 174 Vienna Street.",
+      "source": "loc-sf-call-1910-12-10"
+    }
+  ]
+}

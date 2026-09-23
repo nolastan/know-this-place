@@ -1,0 +1,116 @@
+{
+  "address": "370–372 5th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/5th-avenue/370/",
+  "apn": "1436025",
+  "block": "1436",
+  "lot": "025",
+  "eas_baseid": "303832",
+  "coordinates": {
+    "lat": 37.7817,
+    "lng": -122.462929
+  },
+  "address_range": "370–372",
+  "street_numbers_on_parcel": [
+    "370",
+    "372"
+  ],
+  "parcel": {
+    "year_built": 1925,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 2890,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0372 0370 05TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 55164,
+    "assessed_improvement_value": 67406
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9317599",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-10-07",
+      "status_date": "1994-02-07",
+      "estimated_cost": 3600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9001441",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-01-22",
+      "status_date": "1990-03-08",
+      "estimated_cost": 5500,
+      "description": "anchor bolt on concrete fndtn.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "1990–2017",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=05TH&street_type=AVE&address_number=370",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1436025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1436&lot=025",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1436025",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "loc-sf-call-1910-08-06",
+      "name": "The San Francisco Call, 6 August 1910, p. 10",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-08-06/ed-1/seq-10/",
+      "retrieved": "2026-09-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1910-08-06",
+      "kind": "sale",
+      "description": "The Urban Realty Improvement Company sold an earlier building here with its 25 by 120 lot.",
+      "source": "loc-sf-call-1910-08-06"
+    }
+  ]
+}

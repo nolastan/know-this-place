@@ -1,0 +1,117 @@
+{
+  "address": "3943 21st Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/21st-street/3943/",
+  "apn": "2770028",
+  "block": "2770",
+  "lot": "028",
+  "eas_baseid": "345925",
+  "coordinates": {
+    "lat": 37.755854,
+    "lng": -122.435322
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 1873,
+    "building_area_sqft": 1600,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 3943 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1787299,
+    "assessed_improvement_value": 765985,
+    "last_sale_date": "2017-06-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9303282S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-03-02",
+      "status_date": "1994-02-14",
+      "estimated_cost": 60000,
+      "description": "horizontal & vertical addition.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9302670",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1993-02-18",
+      "status_date": "1993-09-23",
+      "estimated_cost": 12000,
+      "description": "replace existing foundation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9302671",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-02-18",
+      "status_date": "1993-04-07",
+      "estimated_cost": 800,
+      "description": "remove existing wall coverings",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=3943",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2770028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2770&lot=028",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2770028",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "loc-sf-call-1910-08-13",
+      "name": "The San Francisco Call, 13 August 1910, p. 13",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-08-13/ed-1/seq-13/",
+      "retrieved": "2026-09-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1910-08-13",
+      "kind": "sale",
+      "description": "A cottage here sold for $1,900.",
+      "source": "loc-sf-call-1910-08-13"
+    }
+  ]
+}
