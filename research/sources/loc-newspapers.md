@@ -6,7 +6,7 @@
 >
 > - **Kind:** newspaper OCR corpus · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 10 batches / 58,620 pages scanned for address mentions in August 2026 (no findings file; see below), and the *Call*'s Real Estate and Financial Section read in full for 1911 and 1912, into `findings/loc-newspapers/sn85066387-1911-real-estate.json` and `sn85066387-1912-real-estate.json`.
+> - **Coverage:** 10 batches / 58,620 pages scanned for address mentions in August 2026 (no findings file; see below), and the *Call*'s Real Estate and Financial Section read in full for 1911 and 1912, as held for 1913, and for January–June 1910, into `findings/loc-newspapers/sn85066387-<year>-real-estate.json`.
 > - **Local corpus:** `research/corpora/loc-newspapers/` — `tar/` for the batch OCR tarballs, `txt/<lccn>/<yyyy>/<mm>/<dd>/ed-1/seq-N/ocr.txt` for the extracted pages. A fresh container has none of it.
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -88,10 +88,10 @@ Issue counts per year; a year split across batches needs all of them.
 | | 1906–1907 | `hercules_ver01` (275 + 92), `indio_ver01` (1907: 245), `mecca_ver01` (1907: 28) |
 | | 1908 | `indio` (90), `jenner_ver01` (31), `llano_ver01` (245) |
 | | 1909 | `jenner` (92), `llano` (61), `mecca` (151), `needles_ver01` (61) |
-| | 1910 | `jenner` (90), `klamath_ver01` (122), `mecca` (122), `needles` (31) |
+| | **1910** | `jenner` (90), `klamath_ver01` (122), `mecca` (122), `needles` (31) — **all four fetched 2026-09-23**; January–June read |
 | | **1911** | `curiv_betteravia_ver02` (Jan–Aug, 5,901 pages), `curiv_angwin_ver02` (Sep–Dec, 2,996 pages) — **both on disk** |
 | | **1912** | `angwin` (106), `calipatria_ver03` (183), `dardanelle_ver01` (64) — 9,693 pages, **all three fetched 2026-09-23**; nothing after 15 December |
-| | 1913 | `dardanelle` (15: 1–15 February), `grimes_ver01` (132: 16 July–8 December) — **both fetched 2026-09-23**; January, March to mid-July and the rest of December are in neither |
+| | 1913 | `dardanelle` (15: 1–15 February), `grimes_ver01` (132: 16 July–8 December) — **both fetched 2026-09-23**; January, March to mid-July and the rest of December are in neither, and in no other batch: all 79 `curiv_` batch listings were checked for `sn85066387` on 2026-09-23 and every one that holds the *Call* is in this table |
 | *Morning Call* `sn94052989` | 1890–1895 | `kaweah_ver01`, `hemet_ver01`, `garberville_ver01`, `exeter`, `idyllwild`, `oakland_ver01`, `pescadero_ver01` |
 
 ### The 1911 Real Estate and Financial Section
@@ -230,6 +230,51 @@ Saturdays, not 52. Three things differ from 1912:
   so it is `building.site_before` plus a dated entry, not a
   `notable_residents` row.
 
+### The 1910 section — what changed from 1911
+
+- **Three pages a Saturday, found by the head and what follows it.** Only the
+  first page carries `REAL ESTATE AND FINANCIAL SECTION` near its top; the next
+  two are the rest of the section, up to the page headed `EVENTS IN THE COUNTIES
+  BORDERING ON THE BAY`. Special Richmond (5 March) and Turlock (30 April)
+  editions push the city pages later, so also take any non-classified page
+  dense in broker vocabulary (lease, sold, architect, lot). A page with more
+  than about 40 uses of "rooms" is want-ads, as in 1913.
+- **The building-news column is three times as dense as 1912's**, about 150
+  architect or corner passages in six months, and it is the section's real
+  value: MacDonald & Applegarth, Bliss & Faville, D. H. Burnham & Co., Reid
+  Brothers, Righetti & Headman, the Rousseaus, N. W. Sexton, Cunningham &
+  Politeo. Placing all of them is more than a run. The January–June batch took
+  the entries naming an architect, a building, an institution or a firm, and
+  left the permits that name only a private owner.
+- **Fewer numbers, more ranges.** The sale columns give flats as "1325-27-29"
+  and the resolver finds many such ranges split across parcels today; about
+  half the numbered entries have no EAS record at all (Western Addition and
+  downtown lots taken by later buildings).
+
+### Cautions for the 1910 section
+
+- **The realty columns put the private buyer between the address and the
+  price**, so a raw quote of fixed length carries the name. Cut or splice the
+  quote round it (see LESSONS). About 30 of 172 needed it.
+- **The same building is placed two ways again.** The Rousseaus' apartment
+  hotel is the northeast corner of Pine and Leavenworth in their February list
+  and the northwest in April and May; the Wolf company's building is the
+  northeast corner of Bush and Mason and "50 feet east of Mason" in one issue;
+  the Schmiedell estate's is the southwest corner of Post and Jones and "78 feet
+  west of Jones" (the lot's frontage, as the parcel's exact 78 by 137:6 shows).
+  The conflicts are stated on the pages.
+- **A corner the city lists under one street only.** The Mission Turnverein
+  (the Women's Building, 3541 18th) never appeared at 18th and Lapidge in
+  `corner.py`; its page was found by name.
+- **Planned storeys are not built storeys.** O. D. Baldwin's hotel (321 Grant)
+  was let as eight storeys and the roll counts ten; the Sutter Hotel corner was
+  planned at eight and has nine. Descriptions say "planned".
+- **The Keystone, the Herald Hotel and 245 Leavenworth** were already on their
+  pages from other sources and were declined. Eight placements landed on pages
+  already crediting the same architect (3106 16th, 317 and 245 Leavenworth,
+  3541 18th, 100 New Montgomery, 414 Mason, 524 Post, 1369 Hyde), which is the
+  best check a corner placement gets.
+
 ### Cautions
 
 - **Verify the number against the cross-streets — the ads hand you the check.**
@@ -307,13 +352,19 @@ Saturdays, not 52. Three things differ from 1912:
   — 500 Ellis, 1580 Jackson (seeded; the Ellsworth), 1218 Haight (seeded; two
   sales of "No. 1210") — and 3 left unresolved with the parcel checks written
   in.)
+- **Verified:** 2026-09-23 (the *Call*'s 1910 Real Estate and Financial
+  Section, January–June: 84 OCR pages over 26 Saturdays, 393 numbered-address
+  mentions and about 150 architect or corner passages, 172 findings — 76
+  resolved (45 by hand), 96 unresolved; 73 published on 68 pages, 28 of them
+  seeded, 3 declined as duplicates. Batch file
+  `findings/loc-newspapers/sn85066387-1910-real-estate.json`.)
 - **Coverage:** 1890s and 1900s years scanned in August 2026 for mentions only
-  (above); **1911 and 1912 Real Estate and Financial Sections read in full**
+  (above); **1910 read January–June**; **1911 and 1912 Real Estate and Financial Sections read in full**
   (1912 lacks 21 and 28 December, which no batch holds); **1913 read as far
-  as the batches hold it** (1–15 February, 16 July–8 December). Next: find
-  1913's missing months — no batch in the table holds them; check the
-  `data/batches/` listings for a later `curiv_` batch before calling them lost
-  — then the unscanned 1897–1899 and 1903–1904 years. The weekly Building
+  as the batches hold it** (1–15 February, 16 July–8 December); 1913's other
+  months are in no batch on the bulk route. Next: **1910, July–December** (#404)
+  (on disk in klamath, mecca and needles for a session that fetched them), then
+  the unscanned 1897–1899 and 1903–1904 years. The weekly Building
   Contracts lists in 1911–1913 are metes-and-bounds and were read only for
   named buildings; they are the next `corner.py` batch. The rest of the 1911,
   1912 and 1913 paper — the fires and the building-permit lists — is on disk

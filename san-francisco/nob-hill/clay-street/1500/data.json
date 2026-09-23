@@ -1,0 +1,124 @@
+{
+  "address": "1500–1510 Clay Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/clay-street/1500/",
+  "apn": "0217005",
+  "block": "0217",
+  "lot": "005",
+  "eas_baseid": "423993",
+  "coordinates": {
+    "lat": 37.792886,
+    "lng": -122.418017
+  },
+  "address_range": "1500–1510",
+  "street_numbers_on_parcel": [
+    "1500",
+    "1502",
+    "1504",
+    "1506",
+    "1508",
+    "1510"
+  ],
+  "parcel": {
+    "year_built": 1910,
+    "units": 6,
+    "stories": 3,
+    "rooms": 24,
+    "bathrooms": 6,
+    "lot_area_sqft": 2382,
+    "building_area_sqft": 6900,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "0000 1500 CLAY                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 135586,
+    "assessed_improvement_value": 167929
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202305016795",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-05-01",
+      "status_date": "2023-09-20",
+      "estimated_cost": 21600,
+      "revised_cost": 21600,
+      "description": "upgrade (e) fire alarm to comply w/ sffc sec 1103.7.6.1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9507773",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-05-24",
+      "status_date": "1996-01-04",
+      "estimated_cost": 7600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1995–2023",
+    "shown_on_page": 2,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLAY&street_type=ST&address_number=1500",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0217005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0217&lot=005",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0217005",
+      "retrieved": "2026-09-23"
+    },
+    {
+      "id": "loc-sf-call-1910-02-26",
+      "name": "The San Francisco Call, 26 February 1910, p. 16",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-02-26/ed-1/seq-16/",
+      "retrieved": "2026-09-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1910-02-26",
+      "kind": "construction",
+      "description": "Planned: one of two buildings of six four-room flats each, at the corner. Herman Barth, architect.",
+      "source": "loc-sf-call-1910-02-26"
+    }
+  ],
+  "building": {
+    "architect": "Herman Barth"
+  }
+}
