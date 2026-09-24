@@ -11,6 +11,7 @@ A working-class residential district in the city's south-east, laid out in the e
 - [La Grande Avenue](la-grande-avenue/) — 1 building, built 1957.
 - [Lisbon Street](lisbon-street/) — 1 building, built 1906.
 - [London Street](london-street/) — 1 building, built 1905.
+- [Madrid Street](madrid-street/) — 1 building, built 1911.
 - [Mission Street](mission-street/) — 1 building, built 1982.
 - [Moscow Street](moscow-street/) — 1 building.
 - [Naples Street](naples-street/) — 1 building, built 1910.

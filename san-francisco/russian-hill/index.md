@@ -24,6 +24,7 @@ A steep district above North Beach and the waterfront, known for its cable-car g
 - [Lurmont Terrace](lurmont-terrace/) — 1 building, built 1957.
 - [Macondray Lane](macondray-lane/) — 1 building, built 1900; 1 in the Russian Hill-Macondray Lane Historic District.
 - [Mason Street](mason-street/) — 2 buildings, built 1908–1911.
+- [Mccormick Street](mccormick-street/) — 1 building, built 1907.
 - [Montclair Terrace](montclair-terrace/) — 1 building, built 1938.
 - [North Point Street](north-point-street/) — 1 building, built 1978.
 - [Pacific Avenue](pacific-avenue/) — 5 buildings, built 1914–2014.

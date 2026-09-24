@@ -1,0 +1,150 @@
+{
+  "address": "139 8th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/8th-avenue/139/",
+  "apn": "1368007",
+  "block": "1368",
+  "lot": "007",
+  "eas_baseid": "301321",
+  "coordinates": {
+    "lat": 37.785801,
+    "lng": -122.4671
+  },
+  "parcel": {
+    "year_built": 1909,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 1700,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0000 0139 08TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 623778,
+    "assessed_improvement_value": 422756,
+    "last_sale_date": "1995-12-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202507090442",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-07-09",
+      "status_date": "2025-08-07",
+      "estimated_cost": 27850,
+      "revised_cost": 27850,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201308053550",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-08-05",
+      "status_date": "2013-10-08",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "kitchen cabinet replacement lighting & finishes, not moving or adding walls.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200612018975",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-12-01",
+      "status_date": "2014-10-24",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "repair dry rot at rear deck (e) in kind repair/p.t. woood, same size, same location.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9518599",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-11-03",
+      "status_date": "1996-04-01",
+      "estimated_cost": 1800,
+      "description": "bolt foundation/no struct work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8714112",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1987-10-01",
+      "status_date": "1987-10-20",
+      "estimated_cost": 968,
+      "description": "repair dryt rot of front banister",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8706598",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-05-18",
+      "status_date": "1987-11-05",
+      "estimated_cost": 75000,
+      "description": "horizontal extension, addition to kitchen & family room",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=08TH&street_type=AVE&address_number=139",
+      "retrieved": "2026-09-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1368007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1368&lot=007",
+      "retrieved": "2026-09-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1368007",
+      "retrieved": "2026-09-24"
+    },
+    {
+      "id": "loc-sf-call-1910-02-19",
+      "name": "The San Francisco Call, 19 February 1910, p. 16",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-02-19/ed-1/seq-16/",
+      "retrieved": "2026-09-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1910-02-19",
+      "kind": "sale",
+      "description": "A new colonial residence of seven rooms was sold with its 25 by 120 foot lot for $6,750 by the Central Land and Lumber Company, its builder-owner.",
+      "source": "loc-sf-call-1910-02-19"
+    }
+  ]
+}

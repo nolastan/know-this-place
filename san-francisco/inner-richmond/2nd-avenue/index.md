@@ -1,4 +1,4 @@
-# Second Avenue
+# 2nd Avenue
 
 The parcels on Second Avenue documented here so far, from the city's address, assessor and permit records.
 

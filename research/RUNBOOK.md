@@ -278,6 +278,18 @@ whole block face instead:
 python3 research/tools/corner.py CALIFORNIA HYDE --to LEAVENWORTH --year 1911
 ```
 
+**A batch of corners goes through `--batch`**, one JSON line per record:
+
+```bash
+python3 research/tools/corner.py --batch corners.jsonl
+# {"id": "0012", "a": "WASHINGTON", "b": "HYDE", "to": "LEAVENWORTH", "lot": "38:9x137:6", "year": 1910}
+```
+
+It prints only the parcels within 4% of the record's lot area, and for a block
+face (`to`) each lot's frontage measured from the block's end on the parcel
+shapes, "front 167-206 ft from HYDE" — the offset check done for you. A match
+still needs the side of the street the record names and a roll year that fits.
+
 **An offset is a check in its own right.** "80 feet west of Lyon, 25 by 100"
 names the lot whose front begins 80 feet from the corner; measure it on the
 `acdm-wktn` shapes by projecting each lot's vertices onto the street line

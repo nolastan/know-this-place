@@ -1,0 +1,178 @@
+{
+  "address": "1270 Pine Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/pine-street/1270/",
+  "apn": "0251013",
+  "block": "0251",
+  "lot": "013",
+  "eas_baseid": "280643",
+  "coordinates": {
+    "lat": 37.790378,
+    "lng": -122.416754
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 24,
+    "stories": 3,
+    "rooms": 59,
+    "bathrooms": 24,
+    "bedrooms": 11,
+    "lot_area_sqft": 6875,
+    "building_area_sqft": 14565,
+    "lot_depth_ft": 37.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "D",
+    "zoning": "RC-4",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Downtown",
+    "analysis_neighborhood": "Nob Hill",
+    "property_location_raw": "0000 1270 PINE                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 780934,
+    "assessed_improvement_value": 1280264
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202308174645",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-08-17",
+      "status_date": "2023-12-01",
+      "estimated_cost": 25000,
+      "revised_cost": 45000,
+      "description": "one unit - remodel kitchen and bathroom in kind. no change to floor layout. no change to wall layout. no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202009154183",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-09-15",
+      "status_date": "2020-09-25",
+      "estimated_cost": 38500,
+      "revised_cost": 38500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201612235793",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-12-23",
+      "status_date": "2017-02-01",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "field revision on existing pa #201609026658 (soft story retrofit 2012 iebc appendix a-4) - revise 3 shear walls. no exterior work. n/a maher ordinance",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201609026658",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-09-02",
+      "status_date": "2017-02-01",
+      "estimated_cost": 110000,
+      "revised_cost": 110000,
+      "description": "soft story seismic retrofit of multi unit apartment building per sf soft story ordinance chapter 34b iebc 2012 appendix a-4.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200105290100",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-05-29",
+      "status_date": "2001-10-01",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace back stair, replication, presently delapidated, same for same",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9314146",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-08-18",
+      "status_date": "1994-03-11",
+      "estimated_cost": 11500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8506545",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-06-24",
+      "status_date": "1987-05-18",
+      "estimated_cost": 7000,
+      "description": "comply with list of violations",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8403878",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1984-04-12",
+      "status_date": "1985-07-22",
+      "estimated_cost": 1000,
+      "description": "correct violations",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 9,
+    "range": "1984–2023",
+    "shown_on_page": 8,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PINE&street_type=ST&address_number=1270",
+      "retrieved": "2026-09-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0251013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0251&lot=013",
+      "retrieved": "2026-09-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0251013",
+      "retrieved": "2026-09-24"
+    },
+    {
+      "id": "loc-sf-call-1910-04-02",
+      "name": "The San Francisco Call, 2 April 1910, p. 22",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-02/ed-1/seq-22/",
+      "retrieved": "2026-09-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1910-04-02",
+      "kind": "building contract",
+      "description": "The Turner Company contracted for the plumbing, sewer work and steam and hot-water heating of a three-storey and basement apartment building for $5,288.",
+      "source": "loc-sf-call-1910-04-02"
+    }
+  ]
+}
