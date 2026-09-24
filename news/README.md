@@ -52,6 +52,7 @@ them.
 ```bash
 python3 news/tools/poll.py poll                          # every open feed
 python3 news/tools/poll.py status                        # where the cursors stand
+python3 news/tools/poll.py audit                         # which screen rules queue stories that come to nothing
 python3 news/tools/read.py news/queue/2026-08-16.json
 python3 news/tools/check.py --stats                      # yield so far
 ```
