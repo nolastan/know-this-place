@@ -375,8 +375,10 @@ const placeholder = document.querySelector(".map-shell .media-empty");
 const styleFor = (dark) =>
   dark ? "mapbox://styles/mapbox/dark-v11" : "mapbox://styles/mapbox/light-v11";
 
-/* Dots wear the site's brick hue, read live from site.css so light and dark
-   mode stay in step and no new color enters the system. */
+/* A page the research module has published a finding onto ("r" in the index)
+   wears the site's brick hue; the rest, pages that are permit history and
+   little else, wear the muted grey. Both are read live from site.css so light
+   and dark mode stay in step and no new color enters the system. */
 const cssVar = (name) =>
   getComputedStyle(document.documentElement).getPropertyValue(name).trim();
 
@@ -384,16 +386,24 @@ const dotLayer = () => ({
   id: "addresses",
   type: "circle",
   source: "addresses",
+  // Researched dots draw above the grey ones, so a block of plain permit
+  // pages never buries the one building with a story.
+  layout: { "circle-sort-key": ["case", ["has", "r"], 1, 0] },
   paint: {
-    "circle-color": cssVar("--warm"),
+    "circle-color": ["case", ["has", "r"], cssVar("--warm"), cssVar("--muted")],
     // Small and semi-transparent at city zoom so overlapping dots build up
     // into shading rather than one flat mass — the Mission and the Castro
     // should read as denser than the scattered downtown parcels. Grows to a
     // comfortable click target once you're down at street level.
     "circle-radius": ["interpolate", ["linear"], ["zoom"],
       10, 0.8, 12, 1.4, 14, 3, 16, 6, 18, 9],
+    // The grey dots at a third to a half the strength: --muted is lighter than
+    // the brick in dark mode, and at full opacity a district of permit-only
+    // pages would outshine the researched ones it is meant to sit behind.
     "circle-opacity": ["interpolate", ["linear"], ["zoom"],
-      10, 0.45, 13, 0.7, 15, 0.95],
+      10, ["case", ["has", "r"], 0.45, 0.15],
+      13, ["case", ["has", "r"], 0.7, 0.22],
+      15, ["case", ["has", "r"], 0.95, 0.5]],
     "circle-stroke-color": cssVar("--paper"),
     "circle-stroke-width": ["interpolate", ["linear"], ["zoom"], 15, 0, 17, 1.5],
   },
