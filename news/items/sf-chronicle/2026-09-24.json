@@ -1,0 +1,66 @@
+{
+  "source_id": "sf-chronicle",
+  "batch": "2026-09-24",
+  "read_on": "2026-09-24",
+  "notes": "Bluesky route: read.py followed each bit.ly link. Four queued; the Heklina documentary and the Muni stabbing stories name no street address. The Corgi story is the same article already extracted and decided in news/items/sf-chronicle/2026-09-23.json — re-surfaced today via a different Bluesky post to the same bit.ly-linked article.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 4,
+    "mentions": 2,
+    "remaining": "none"
+  },
+  "findings": [
+    {
+      "id": "2026-09-24-sc-0001",
+      "date": "2026-09-23",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2146 Third St.; 260 Church St.; 968 Columbus Ave.; 680 Illinois St.; 600 20th St.",
+      "description": "The same Corgi cafe-expansion story already extracted yesterday as news/items/sf-chronicle/2026-09-23.json (2026-09-23-sc-0001 through -0003), re-surfaced today by a second Bluesky post linking the same bit.ly URL to the same article. Nothing here is new.",
+      "citation": {
+        "label": "San Francisco Chronicle, “Tech start-up that wanted to take over S.F. with 100 cafes is suddenly pulling back,” 23 September 2026",
+        "url": "https://www.sfchronicle.com/realestate/article/corgi-cafe-tech-22444563.php"
+      },
+      "raw": {
+        "text": "While this tech start-up has halted its pursuit of expanding cafe locations, five new leases have been signed — including some in San Francisco."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "rejected",
+        "checked_on": "2026-09-24",
+        "method": "Not resolved: the finding is a duplicate and is declined, so no parcel is sought.",
+        "by_hand": true
+      },
+      "publish": {
+        "status": "declined",
+        "note": "One event, one entry. This is the same article already read and decided as news/items/sf-chronicle/2026-09-23.json 2026-09-23-sc-0001 (2146 Third St., declined), -0002 (260 Church/968 Columbus/680 Illinois, declined) and -0003 (600 20th St., pending). Today's Bluesky post is a second share of the identical story; nothing here changes any of those verdicts."
+      }
+    },
+    {
+      "id": "2026-09-24-sc-0002",
+      "date": "2026-09-23",
+      "date_precision": "day",
+      "kind": "sale",
+      "address_as_written": "1284 Stanyan St.",
+      "street_number": "1284",
+      "street_name": "STANYAN",
+      "street_type": "ST",
+      "description": "A house connected to Gov. Gavin Newsom's family — his parents reportedly lived there around the time of his 1967 birth — was listed for sale at $4.5 million.",
+      "citation": {
+        "label": "San Francisco Chronicle, “Gavin Newsom’s San Francisco family home listed for $4.5 million,” 23 September 2026",
+        "url": "https://www.sfchronicle.com/realestate/article/gavin-newsom-family-home-22446333.php"
+      },
+      "raw": {
+        "text": "A secluded San Francisco home with a connection to Gov. Gavin Newsom’s family has gone on the market for $4.5 million."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "unresolved"
+      },
+      "publish": {
+        "status": "declined",
+        "note": "The headline names a private individual (Gavin Newsom, by way of his family's residence) rather than an architect, builder, developer or firm. Root AGENTS.md forbids naming residents even from public records, and this story is entirely about who lived there and when — declined outright, no rewriting."
+      }
+    }
+  ]
+}

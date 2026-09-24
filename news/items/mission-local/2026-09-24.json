@@ -1,0 +1,82 @@
+{
+  "source_id": "mission-local",
+  "batch": "2026-09-24",
+  "read_on": "2026-09-24",
+  "notes": "One article queued and read, naming two addresses.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 1,
+    "mentions": 1,
+    "remaining": "none"
+  },
+  "findings": [
+    {
+      "id": "2026-09-24-ml-0001",
+      "date": "2026-09-24",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "32 Clement St.",
+      "street_number": "32",
+      "street_name": "CLEMENT",
+      "street_type": "ST",
+      "description": "Therapy Stores, a gift-shop chain, filed in May for the conditional-use authorization the city requires to open a formula-retail outpost at 32 Clement Street, after buying the building in December 2025 for nearly $2 million and opening without the required permit; the planning commission was to vote on the application on 24 September. Neighborhood merchants oppose it. Nothing for the building block: the article is about a tenant's permit fight, not the structure.",
+      "extra": {
+        "applicant": "Therapy Stores (formula-retail chain)",
+        "purchase_price_2025": "$2,000,000 (approx., December 2025)",
+        "commission_vote_date": "2026-09-24"
+      },
+      "citation": {
+        "label": "Mission Local, “Tchotchke shop chain draws ire of Clement Street merchants,” 24 September 2026",
+        "url": "https://missionlocal.org/2026/09/therapy-stores-clement-street-merchants/"
+      },
+      "raw": {
+        "text": "Chen bought the 32 Clement St. building in December 2025 for nearly $2 million and registered her business there that month."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1432020",
+        "path": "/san-francisco/inner-richmond/clement-street/32/",
+        "eas_address": "32 CLEMENT ST",
+        "method": "EAS exact match on 32 CLEMENT ST → parcel 1432020; sf-parcels has blklot 1432020 active, 32–34 CLEMENT; the 2025 roll records it as multi-family residential, built 1904. EAS puts 32, 34 CLEMENT ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 32.",
+        "checked_on": "2026-09-24",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "Seeded /san-francisco/inner-richmond/clement-street/32/ (research/manifests/news-2026-09-24.json) and put the entry on it as mission-local-2026-09-24, and on the homepage news grid. Nothing for the building block: the article is about a tenant's permit fight, not the structure."
+      }
+    },
+    {
+      "id": "2026-09-24-ml-0002",
+      "date": "2026-09-24",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "124 Clement St.",
+      "street_number": "124",
+      "street_name": "CLEMENT",
+      "street_type": "ST",
+      "description": "Mentioned only as the location of Foggy Notion, an existing neighboring gift shop whose owner is quoted opposing the Therapy Stores permit — not the subject of this headline.",
+      "citation": {
+        "label": "Mission Local, “Tchotchke shop chain draws ire of Clement Street merchants,” 24 September 2026",
+        "url": "https://missionlocal.org/2026/09/therapy-stores-clement-street-merchants/"
+      },
+      "raw": {
+        "text": "Alissa Anderson, who owns the gift store Foggy Notion at 124 Clement St."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1431020",
+        "path": "/san-francisco/inner-richmond/clement-street/120/",
+        "eas_address": "120 CLEMENT ST",
+        "method": "EAS exact match on 124 CLEMENT ST → parcel 1431020; sf-parcels has blklot 1431020 active, 120–124 CLEMENT; the 2025 roll records it as multi-family residential, built 1904. EAS puts 120, 122, 124 CLEMENT ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 120.",
+        "checked_on": "2026-09-24"
+      },
+      "publish": {
+        "status": "declined",
+        "note": "The headline is about the Therapy Stores dispute at 32 Clement Street; 124 Clement is a neighboring merchant quoted in opposition, not this article's subject."
+      }
+    }
+  ]
+}
