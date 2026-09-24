@@ -2168,6 +2168,31 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   that list or from a Planning building name the listing printed (Masonic
   Temple, Head Building, Tin How Temple / Sue Hing). Entries with no lot size
   rarely placed. *Script the lookups; spend the reading on the candidates.*
+  The script is now the tool: `research/tools/corner.py --batch FILE` takes
+  one JSON line per record (streets, lot, year, and `to` for a block face) and
+  prints only the lot-area matches, each with its frontage measured from the
+  block's end on the sf-parcels shapes ("front 183-229 ft from POWELL" is the
+  Grant Hotel's lot, which the 1910 record puts 183 feet west of Powell). The
+  measurement uses the lot's own edge as the street's axis: the axis between
+  two EAS crossing points is skewed by up to 20 degrees, enough to add a lot's
+  depth to its frontage. 168 entries took under five minutes in #407.
+  ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+
+- **A batch's notes say what it meant to take, not what it took.** Both 1910
+  *Call* batches wrote that they had taken every entry naming an architect;
+  re-reading the same 162 pages under #407 found C. A. Meussdorffer's list of
+  six buildings, Frederick H. Meyer's Sather Building, Rousseau's Buena Vista
+  Avenue house and the German House's two 1910 notices in neither file. *Before
+  writing a "left for later" line, count what the selection rule should have
+  caught against what the file holds; a re-read of a source's pages is cheap
+  next to a missed architect.*
+
+- **On a grid of avenues, the assessor block tells you the side of the street.**
+  "The west line of Eighth avenue" is the east frontage of the block between
+  Eighth and Ninth (block 1368), and the east line is block 1367. Two lots
+  facing each other across an avenue come back from `corner.py` with the same
+  frontage measurement and the same area; the block number, not the address
+  parity, is the quick way to pick the side the record names.
 
 - **Corner lookups miss the middle of the block, and offsets were being
   thrown away.** The 1911 batch's "south side of California between Hyde and

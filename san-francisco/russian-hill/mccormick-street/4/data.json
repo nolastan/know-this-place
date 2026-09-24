@@ -1,0 +1,109 @@
+{
+  "address": "4 Mccormick Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/mccormick-street/4/",
+  "apn": "0185036",
+  "block": "0185",
+  "lot": "036",
+  "eas_baseid": "279546",
+  "coordinates": {
+    "lat": 37.795023,
+    "lng": -122.418909
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 1257.75,
+    "building_area_sqft": 900,
+    "lot_depth_ft": 58.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "0000 0004 MCCORMICK           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 441537,
+    "assessed_improvement_value": 149005,
+    "last_sale_date": "1989-08-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201411171705",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-11-17",
+      "status_date": "2015-02-23",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "rebuild existing damaged retaining walls (4'-6\") height maximum in rear yard area; maher n/a",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200905088064",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-05-08",
+      "status_date": "2009-05-22",
+      "estimated_cost": 7995,
+      "revised_cost": 7995,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MCCORMICK&street_type=ST&address_number=4",
+      "retrieved": "2026-09-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0185036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0185&lot=036",
+      "retrieved": "2026-09-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0185036",
+      "retrieved": "2026-09-24"
+    },
+    {
+      "id": "loc-sf-call-1910-02-19",
+      "name": "The San Francisco Call, 19 February 1910, p. 16",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-02-19/ed-1/seq-16/",
+      "retrieved": "2026-09-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1910-02-19",
+      "kind": "sale",
+      "description": "A small cottage was sold with its lot of about 21:6 by 58 feet.",
+      "source": "loc-sf-call-1910-02-19"
+    }
+  ]
+}

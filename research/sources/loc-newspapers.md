@@ -6,7 +6,7 @@
 >
 > - **Kind:** newspaper OCR corpus · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 10 batches / 58,620 pages scanned for address mentions in August 2026 (no findings file; see below), and the *Call*'s Real Estate and Financial Section read in full for 1911 and 1912, as held for 1913, and for the whole of 1910 (January–June and July–December batches), into `findings/loc-newspapers/sn85066387-<year>-real-estate.json`.
+> - **Coverage:** 10 batches / 58,620 pages scanned for address mentions in August 2026 (no findings file; see below), and the *Call*'s Real Estate and Financial Section read in full for 1911 and 1912, as held for 1913, and for the whole of 1910 (January–June and July–December batches, then re-read for its owner-only permits, contracts, loans and building sales in `sn85066387-1910-permits.json`), into `findings/loc-newspapers/sn85066387-<year>-real-estate.json`.
 > - **Local corpus:** `research/corpora/loc-newspapers/` — `tar/` for the batch OCR tarballs, `txt/<lccn>/<yyyy>/<mm>/<dd>/ed-1/seq-N/ocr.txt` for the extracted pages. A fresh container has none of it.
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -301,6 +301,50 @@ Saturdays, not 52. Three things differ from 1912:
   took Pine for 1100 Pine / 1005 Jones and McAllister for 856 Divisadero;
   both were moved to the roll's `property_location` before seeding (see LESSONS).
 
+### The 1910 permits re-read (#407)
+
+The two 1910 batches left out every entry naming only a private owner. This
+pass re-read the same pages for them — building contracts, permits, building
+loans and the brokers' sales of buildings, wherever the record gives a corner
+or an offset **and** a lot size — and placed them in bulk with
+`research/tools/corner.py --batch`.
+
+- **The Building Contracts list is inside the Real Estate Transactions
+  column**, after the deeds, under a head the OCR mangles (`Butldlnsr
+  Contract*`, `Bnlldiiipr ' Contracts`, `BUILDING CONTRACTS RECORDED
+  YESTERDAY`). Each entry is owner "with" contractor, a dash, the work, and the
+  lot as the deed gives it: "In N line of Sacramento street, 110:4 W of
+  Montgomery, W 20:1½ by N 60; $5,000". The owner comes first, so the raw span
+  starts at "with". The deeds above it end in a nominal `$10`, `gift` or
+  `grant` and carry nothing; filtering out a lot followed by one of those
+  leaves the contracts.
+- **The loan column is weekly from the summer**, and a building loan names what
+  the money is for ("to build three frame flats of six rooms … on lot 62:6 by
+  93"). A loan that is a renewal, or names no purpose, says nothing about a
+  building and was not taken.
+- **The earlier batches missed more than their notes say.** Both claimed every
+  entry naming an architect, and this pass found C. A. Meussdorffer's 1
+  January list of six buildings, Frederick H. Meyer's Sather Building (256
+  Sutter), Charles J. Rousseau's Buena Vista Avenue house, the Rousseaus'
+  California and Leavenworth corner and the German House's two 1910 notices in
+  neither file. See LESSONS.
+- **The side of the street is the check the offset needs.** Two lots facing
+  each other have the same offset and often the same area. On the avenues the
+  assessor block settles it (the west line of Eighth Avenue is block 1368, the
+  east line 1367); on east-west streets, parity (Washington, Jackson, Bush:
+  odd on the south side).
+- **What placed and what did not.** 43 of 168 lot-bearing entries were placed
+  by the measured frontage, the lot area and the roll year together. Of the
+  rest, most corners have no parcel of the record's area left with a roll year
+  near 1910, and most brokers' sales of flats name a block face ("east line of
+  Capp between Twenty-second and Twenty-third") where nine identical lots match
+  and nothing chooses between them. 999 Sutter (the Sutter and Hyde corner of
+  January) is exactly the record's 62:6 by 87:6, but it was split into
+  condominium units in 2013.
+- **Old St. Mary's Church had no page.** The 660 California page is the
+  rectory lot (0241011); the church is 0241012, filed by EAS as 680 California
+  and 614 Grant, and was seeded by this pass.
+
 ### Cautions
 
 - **Verify the number against the cross-streets — the ads hand you the check.**
@@ -389,14 +433,22 @@ Saturdays, not 52. Three things differ from 1912:
   mentions, 450 findings — 128 resolved (54 by hand with `corner.py`), 322
   unresolved; 125 published on 109 pages, 55 of them seeded, 3 declined (#406).
   Batch file `findings/loc-newspapers/sn85066387-1910-h2-real-estate.json`.)
+- **Verified:** 2026-09-24 (the *Call*'s 1910 Real Estate and Financial
+  Section re-read for owner-only permits, contracts, loans and building sales,
+  #407: 162 OCR pages over 53 Saturdays, 581 lot-size passages located by a
+  corner, an offset or a number, 336 of them read as building, contract or
+  loan passages, 178 findings not already in either 1910 batch — 49 resolved
+  (43 by hand with `corner.py --batch`), 129 unresolved; 46 published on 44
+  pages, 29 of them seeded, 3 declined. Batch file
+  `findings/loc-newspapers/sn85066387-1910-permits.json`.)
 - **Coverage:** 1890s and 1900s years scanned in August 2026 for mentions only
   (above); **1910 Real Estate and Financial Section read in full**; **1911 and 1912 Real Estate and Financial Sections read in full**
   (1912 lacks 21 and 28 December, which no batch holds); **1913 read as far
   as the batches hold it** (1–15 February, 16 July–8 December); 1913's other
-  months are in no batch on the bulk route. Next: the 1910 owner-only permit
-  and loan paragraphs (about 120 corner and offset entries left out of both
-  1910 batches) as a `corner.py` batch, then the unscanned 1897–1899 and
-  1903–1904 years. The weekly Building
+  months are in no batch on the bulk route. The 1910 owner-only permits,
+  contracts, loans and building sales that give a lot size are read (#407);
+  those giving a corner or offset and **no** lot size are not, and are the
+  next 1910 batch. Then the unscanned 1897–1899 and 1903–1904 years. The weekly Building
   Contracts lists in 1911–1913 are metes-and-bounds and were read only for
   named buildings; they are the next `corner.py` batch. The rest of the 1911,
   1912 and 1913 paper — the fires and the building-permit lists — is on disk

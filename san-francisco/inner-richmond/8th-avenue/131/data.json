@@ -1,0 +1,117 @@
+{
+  "address": "131 8th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/8th-avenue/131/",
+  "apn": "1368005",
+  "block": "1368",
+  "lot": "005",
+  "eas_baseid": "301319",
+  "coordinates": {
+    "lat": 37.785938,
+    "lng": -122.46711
+  },
+  "parcel": {
+    "year_built": 1909,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1663,
+    "basement_area_sqft": 800,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0000 0131 08TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 47791,
+    "assessed_improvement_value": 77514
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200607106044",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-07-10",
+      "status_date": "2006-08-01",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8818594",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-11-30",
+      "status_date": "1989-02-27",
+      "estimated_cost": 300,
+      "description": "remove hollow roof & wall at rear porch",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8811825",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1988-08-15",
+      "status_date": "1989-01-09",
+      "estimated_cost": 1600,
+      "description": "install wire glass over deck, wall onto deck wall, new tiles",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=08TH&street_type=AVE&address_number=131",
+      "retrieved": "2026-09-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1368005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1368&lot=005",
+      "retrieved": "2026-09-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1368005",
+      "retrieved": "2026-09-24"
+    },
+    {
+      "id": "loc-sf-call-1910-04-02",
+      "name": "The San Francisco Call, 2 April 1910, p. 21",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-02/ed-1/seq-21/",
+      "retrieved": "2026-09-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1910-04-02",
+      "kind": "sale",
+      "description": "A modern residence of seven rooms was sold with its 25 by 120 foot lot through J. W. Wright & Co.",
+      "source": "loc-sf-call-1910-04-02"
+    }
+  ]
+}
