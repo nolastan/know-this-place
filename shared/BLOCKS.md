@@ -631,6 +631,40 @@ a change to the homepage grid changes these pages on the next render.
 </a>
 ```
 
+### Upcoming events — `.panel-events` and `.event-rows`
+What the public-space calendars have announced on this parcel, in the aside
+after the occupant panel. **Not a `data.json` key**: `events_panel_html`
+reads `events/events.json` — the events module's committed data file — and
+takes the events whose `path` is this page's, within the next 30 days. A
+venue the site documents carries `path` because the venue register says the
+venue *is* the parcel; see [events/AGENTS.md](../events/AGENTS.md). A
+recurring run (the daily programming a venue hosts) collapses to its next
+occurrence rather than forty identical rows — the panel is about what is
+upcoming, and the next date is that. The panel always says when the
+calendars were read — the same rule the occupant panel's date follows,
+because a listing drifts.
+```html
+<section class="panel panel-events">
+  <h3>Upcoming events</h3>
+  <ul class="event-list">
+    <li class="event"><a class="event-title" href="https://sfrecpark.org/calendar.aspx?EID=10515">Free Dance Fitness Class by Rae Studios</a>
+      <span class="event-meta">Today · 5:30–6:30pm</span>
+      <span class="event-sub">United Nations Plaza · SF Rec &amp; Park</span></li>
+  </ul>
+  <p class="event-read">Calendars read September 24, 2026</p>
+</section>
+```
+
+The same grammar fills `/events`, one `.event-row` per listing grouped under
+day `.section-head`s — the when in a fixed column first, the listing's own
+title as the link back, the venue (linked when it has a page), and the
+calendar's name trailing muted at the right:
+```html
+<ul class="event-rows">
+  <li class="event-row"><span class="event-when">5:30–6:30pm</span><a class="event-title" href="…">Free Dance Fitness Class by Rae Studios</a><a class="event-where" href="/san-francisco/tenderloin/united-nations-plaza/10/">United Nations Plaza</a><span class="event-src">SF Rec &amp; Park</span></li>
+</ul>
+```
+
 ### Nearby — `.nearby`
 The lateral links out of an address page: the documented buildings up and down
 the street, on the same assessor block, and around the corner. **Generated,

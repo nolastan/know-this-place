@@ -1,0 +1,118 @@
+# Daily read of the registered public-space calendars → events/events.json.
+#
+# Unlike the news workflow there is no agent in this loop: the events pipeline
+# is mechanical end to end — a listed event is a kept event — so the run is
+# fetch, check, commit. Issue #414 asked for it exactly this way.
+#
+# Nothing here reaches main without a human merging it. The branch, not main,
+# is where a run's output accumulates, so a run first looks for the open PR a
+# previous run left behind and continues on its branch — an unmerged PR's
+# events.json is the one this run diffs against, which keeps a reviewable
+# diff and avoids a pile of one-day branches.
+name: events
+
+on:
+  schedule:
+    - cron: "0 17 * * *" # daily, ~10am Pacific — after the news run
+  workflow_dispatch:
+    inputs:
+      source:
+        description: "Fetch only this source id (empty = every open source)."
+        required: false
+        default: ""
+
+concurrency:
+  group: events
+  cancel-in-progress: false
+
+jobs:
+  events:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Find the open events PR, or start a branch
+        id: branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          pr=$(gh pr list --state open --base main --limit 50 \
+                 --json number,headRefName \
+                 --jq '[.[] | select(.headRefName | startswith("events/"))][0] // empty')
+
+          if [ -n "$pr" ]; then
+            number=$(echo "$pr" | python3 -c 'import json,sys; print(json.load(sys.stdin)["number"])')
+            branch=$(echo "$pr" | python3 -c 'import json,sys; print(json.load(sys.stdin)["headRefName"])')
+            echo "continuing PR #$number on $branch"
+            git fetch origin main "$branch"
+            git checkout -B "$branch" "origin/$branch"
+            # A conflict against main shouldn't stall the read: stay on the
+            # branch's own base and let the human resolve it at review.
+            git merge --no-edit origin/main || git merge --abort
+            echo "pr=$number" >> "$GITHUB_OUTPUT"
+          else
+            git fetch origin main
+            branch="events/$(date -u +%F)"
+            # A branch from a cycle closed unmerged can still be sitting on
+            # the remote under today's name; pushing to it would be rejected.
+            if git ls-remote --exit-code --heads origin "$branch" >/dev/null 2>&1; then
+              branch="$branch-$GITHUB_RUN_NUMBER"
+            fi
+            echo "no open events PR; starting $branch"
+            git checkout -B "$branch" origin/main
+            echo "pr=" >> "$GITHUB_OUTPUT"
+          fi
+          echo "branch=$branch" >> "$GITHUB_OUTPUT"
+
+      - name: Fetch the calendars
+        run: |
+          python3 events/tools/fetch.py ${{ inputs.source && format('--source {0}', inputs.source) || '' }}
+          python3 events/tools/check.py --stats
+
+      - name: Commit and open the PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH: ${{ steps.branch.outputs.branch }}
+          PR: ${{ steps.branch.outputs.pr }}
+        run: |
+          set -euo pipefail
+          git add events/events.json
+          if git diff --cached --quiet; then
+            echo "events.json unchanged — nothing to commit"
+            exit 0
+          fi
+          git commit -m "events: calendar read $(date -u +%F)"
+          git push -u origin "$BRANCH"
+
+          stats=$(python3 events/tools/check.py --stats || true)
+          if [ -z "$PR" ]; then
+            gh pr create --base main --head "$BRANCH" \
+              --title "events: calendar read $(date -u +%F)" \
+              --body "$(cat <<EOF
+              The daily read of the registered public-space calendars, fetched
+              by \`events/tools/fetch.py\` with no agent in the loop — see
+              events/AGENTS.md.
+
+              \`\`\`
+              $stats
+              \`\`\`
+
+              Each daily run continues on this branch until it is merged.
+              EOF
+              )"
+          else
+            gh pr comment "$PR" --body "Calendar read $(date -u +%F):
+            \`\`\`
+            $stats
+            \`\`\`" || true
+          fi

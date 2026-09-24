@@ -2,7 +2,7 @@
 
 A public, static encyclopedia of the built environment: one page per building,
 in San Francisco so far. No framework, no dependencies — files, one stylesheet,
-one enhancement script, eight stdlib-only Python scripts. The site is built
+one enhancement script, nine stdlib-only Python scripts. The site is built
 from those files by `scripts/build_site.py` and published by Actions; the
 repository holds the sources, not the pages.
 
@@ -21,12 +21,14 @@ read front to back. Start with the row that matches the task.
 | mining a source | [research/AGENTS.md](research/AGENTS.md) | [research/RUNBOOK.md](research/RUNBOOK.md), [research/LESSONS.md](research/LESSONS.md), [research/findings/INDEX.md](research/findings/INDEX.md) |
 | finding a new source | [research/AGENTS.md](research/AGENTS.md) | [research/SOURCES.md](research/SOURCES.md), [research/TRIAGE.md](research/TRIAGE.md) |
 | running the news pipeline | [news/AGENTS.md](news/AGENTS.md) | [news/PIPELINE.md](news/PIPELINE.md) |
+| running the events pipeline | [events/AGENTS.md](events/AGENTS.md) | `events/tools/fetch.py` + `check.py`, `scripts/build_events.py` |
 | adding merchants to their buildings — a `monetization` issue | [merchants/AGENTS.md](merchants/AGENTS.md) | [REFERENCE.md → occupants](REFERENCE.md#occupants) |
 | changing the CSS or the renderer | [shared/AGENTS.md](shared/AGENTS.md) | [shared/BLOCKS.md](shared/BLOCKS.md) |
 | adding a number to the `/stats/` dashboard | [AGENTS.md](AGENTS.md) | `scripts/build_stats.py` |
 | designing a module | [design/AGENTS.md](design/AGENTS.md) | `design/*` |
 
-There are skills for the four modules: `/research`, `/news`, `/design`, `/ui`.
+There are skills for the five modules: `/research`, `/news`, `/events`,
+`/design`, `/ui`.
 
 ## The four rules you cannot get wrong
 
@@ -50,7 +52,7 @@ breach is expensive to undo:
    from the building is not a person: it may be named as the current occupant,
    but never its owners, staff or customers.
 4. **No new tooling.** No frameworks, no package manifests, no dependencies.
-   The build is `scripts/build_site.py` calling seven stdlib-only siblings,
+   The build is `scripts/build_site.py` calling eight stdlib-only siblings,
    and every page must still render completely from its HTML alone — nothing
    the build produces needs JavaScript to be readable.
 
@@ -61,7 +63,7 @@ python3 scripts/build_site.py && python3 scripts/validate.py
 ```
 
 `build_site.py` runs every generator in the one order that works — hubs,
-districts, link index, render, map index, sitemap, corpus index, stats — in
+districts, link index, render, map index, events, sitemap, corpus index, stats — in
 about a minute. Almost all of what it writes is gitignored, so the only things
 it can leave in `git status` are `corpus.jsonl` and a hub `index.md`; commit
 those. Then fix everything `validate.py` flags.

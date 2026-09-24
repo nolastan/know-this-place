@@ -51,7 +51,8 @@ import sys
 import time
 import urllib.parse
 import urllib.request
-from datetime import date
+import zoneinfo
+from datetime import date, datetime, timedelta
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -3190,6 +3191,101 @@ def news_now_html(rec: dict) -> str:
             '  </a>\n')
 
 
+EVENTS_INDEX = ROOT / "events" / "events.json"
+EVENT_PANEL_DAYS = 30
+PACIFIC = zoneinfo.ZoneInfo("America/Los_Angeles")
+
+
+@functools.cache
+def _events_index() -> tuple:
+    """page path -> the events announced on its parcel, read once per process.
+
+    events/events.json is the module's committed data file — what the
+    calendars said when fetch.py last ran — and the renderer reads it the way
+    it reads shared/nearby.json: a missing or unreadable file means no page
+    shows a panel, not a build failure.
+    """
+    try:
+        doc = json.loads(EVENTS_INDEX.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}, "", {}
+    names = {}
+    try:
+        src = json.loads((EVENTS_INDEX.parent / "sources.json")
+                         .read_text(encoding="utf-8"))
+        names = {s["id"]: s["name"] for s in src.get("sources") or []}
+    except (OSError, json.JSONDecodeError):
+        pass
+    out = {}
+    for ev in doc.get("events") or []:
+        if ev.get("path"):
+            out.setdefault(ev["path"], []).append(ev)
+    return out, (doc.get("fetched") or "")[:10], names
+
+
+def event_day(iso: str, today: date) -> str:
+    d = datetime.fromisoformat(iso).date()
+    if d == today:
+        return "Today"
+    if d == today + timedelta(days=1):
+        return "Tomorrow"
+    return f"{DAY_SHORT[d.weekday()]}, {MONTHS[d.month - 1]} {d.day}"
+
+
+def event_time(ev: dict) -> str:
+    """'10am–1:30pm', collapsing a shared am/pm — the occupant-hours style."""
+    a = clock(ev["start"][11:16])
+    if not ev.get("end"):
+        return a
+    b = clock(ev["end"][11:16])
+    return f"{a[:-2]}–{b}" if a[-2:] == b[-2:] else f"{a}–{b}"
+
+
+def events_panel_html(rec: dict, indent: str) -> str:
+    """What the calendars have announced on this parcel, in the aside.
+
+    The thirty-day window is a render decision, not a fetch one: events.json
+    holds whatever the calendars announced, and a page shows the near term of
+    it. A recurring run — the daily programming a venue hosts — collapses to
+    its next occurrence, the way the venue's own listing reads, because forty
+    identical rows would bury every other panel.
+    """
+    by_path, fetched, names = _events_index()
+    today = datetime.now(PACIFIC).date()
+    horizon = today + timedelta(days=EVENT_PANEL_DAYS)
+    events = [e for e in by_path.get(rec["path"], [])
+              if today <= datetime.fromisoformat(e["start"]).date() <= horizon]
+    if not events:
+        return ""
+    groups = {}
+    for ev in events:
+        key = re.sub(r"[^a-z0-9]+", " ", ev["title"].lower()).strip()
+        groups.setdefault(key, []).append(ev)
+
+    items = []
+    for run in groups.values():
+        ev = run[0]
+        title = (f'<a class="event-title" href="{esca(ev["url"])}">'
+                 f'{esc(ev["title"])}</a>' if ev.get("url")
+                 else esc(ev["title"]))
+        meta = f"{event_day(ev['start'], today)} · {event_time(ev)}"
+        src = names.get(ev.get("source"), ev.get("source") or "")
+        sub = " · ".join(x for x in (ev.get("venue") or "", src) if x)
+        items.append(
+            f'{indent}    <li class="event">{title}\n'
+            f'{indent}      <span class="event-meta">{esc(meta)}</span>'
+            + (f'\n{indent}      <span class="event-sub">{esc(sub)}</span>'
+               if sub else "")
+            + '</li>')
+    read = (f'{indent}  <p class="event-read">Calendars read '
+            f'{esc(long_date(fetched))}</p>\n' if fetched else "")
+    return (f'{indent}<section class="panel panel-events">\n'
+            f'{indent}  <h3>Upcoming events</h3>\n'
+            f'{indent}  <ul class="event-list">\n' + "\n".join(items)
+            + f'\n{indent}  </ul>\n' + read
+            + f'{indent}</section>\n')
+
+
 def nearby_html(rec: dict, indent: str) -> str:
     """The lateral links: the places a reader standing here could walk to.
 
@@ -3371,7 +3467,7 @@ def render_html(rec: dict) -> str:
     has_panels = bool(value_panel_html(rec, "") or glance_panel_html(rec, "")
                       or district_panel_html(rec, "") or open_space_panel_html(rec, "")
                       or survey_panel_html(rec, "") or residents_panel_html(rec, "")
-                      or occupant_panel_html(rec, ""))
+                      or occupant_panel_html(rec, "") or events_panel_html(rec, ""))
     # A rail holding nothing but the building's own year is not a column: it
     # would put one dot beside a full stack of panels. Those pages keep
     # stacking full width, as they did when the year was a tag in the hero.
@@ -3381,7 +3477,8 @@ def render_html(rec: dict) -> str:
     ind = "      " if use_cols else "  "
     # What trades from the building today heads the aside, like an infobox:
     # it is the one panel a passer-by opening the page is most likely after.
-    panels = (occupant_panel_html(rec, ind)
+    # What is happening there next is its nearest relation, so events follow.
+    panels = (occupant_panel_html(rec, ind) + events_panel_html(rec, ind)
               + open_space_panel_html(rec, ind) + value_panel_html(rec, ind)
               + glance_panel_html(rec, ind) + residents_panel_html(rec, ind)
               + survey_panel_html(rec, ind) + district_panel_html(rec, ind))
