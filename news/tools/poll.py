@@ -8,6 +8,7 @@
     python3 news/tools/poll.py backfill --since 2026-07-01 --until 2026-07-31
     python3 news/tools/poll.py status                # cursors, at a glance
     python3 news/tools/poll.py screen "a headline"   # why the screen rules the way it does
+    python3 news/tools/poll.py audit                 # score the screen against what it queued
     python3 news/tools/poll.py find "1234 Valencia Street"   # does this address have a page?
 
 Stdlib only. This is the mechanical half of [../AGENTS.md](../AGENTS.md): it
@@ -747,6 +748,13 @@ PLACE_WORDS = [
     "restaurant space", "food hall", "mural", "sidewalk", "parklet",
 ]
 
+# A shape word matches itself and its inflections, and nothing longer. It used
+# to match any word that began with it, so "hospitalized" read as a hospital,
+# "BART" as a bar and "homelessness" as a home: the first `poll.py audit` found
+# those three queueing 36 stories, one of which came to anything.
+INFLECTION = r"(?:s|es|d|ed|ing|er|ers)?\b"
+PLACE_WORD = {w: re.compile(r"\b" + re.escape(w) + INFLECTION) for w in PLACE_WORDS}
+
 # Story shapes that do not. Only consulted when nothing above matched.
 NOT_LOCAL = [
     "weather", "forecast", "storm", "hurricane", "wildfire smoke", "heat wave",
@@ -807,6 +815,13 @@ def plausible_street(name: str) -> bool:
 BARE_ADDRESS = re.compile(r"\b(\d{1,5})\s+([A-Z][A-Za-z'\-\.]+)\b")
 
 
+def inside_a_number(text: str, start: int) -> bool:
+    """Is the street number the tail of a bigger figure? "Nearly 86,000
+    California children" read as 000 California Street, because the word
+    boundary falls after the comma."""
+    return bool(re.search(r"\d[,.]$", text[max(0, start - 2):start]))
+
+
 TABLE = re.compile(r"(?:\b\d+[\d.]*\s+){3,}$")
 
 # San Francisco names its bus lines the way it names its addresses: the 1
@@ -843,6 +858,8 @@ def bare_addresses(text: str, streets: set[str]):
         if name.lower() not in streets:
             continue
         before = text[max(0, m.start() - 30):m.start()]
+        if inside_a_number(text, m.start()):
+            continue
         if before.endswith(".") or before.endswith("-") or TABLE.search(before):
             continue
         if looks_like_transit(text, m.start(), m.end()):
@@ -867,6 +884,8 @@ def address_signal(item: dict, streets: set[str]) -> tuple[str | None, str]:
     """
     text = haystack(item)
     for m in NUMBERED_ADDRESS.finditer(text):
+        if inside_a_number(text, m.start()):
+            continue
         if plausible_street(m.group(2)) and not looks_like_transit(text, m.start(), m.end()):
             return "address", f"a street address in the item ({m.group(0)})"
     for number, name, m in bare_addresses(text, streets):
@@ -875,7 +894,7 @@ def address_signal(item: dict, streets: set[str]) -> tuple[str | None, str]:
         if m.group(1).lower() in streets:
             return "street", f"names {m.group(0)}, a street the site has pages on"
     lowered = text.lower()
-    hit = next((w for w in PLACE_WORDS if re.search(r"\b" + re.escape(w), lowered)), None)
+    hit = next((w for w in PLACE_WORDS if PLACE_WORD[w].search(lowered)), None)
     if hit:
         return "shape", f"a story shape that usually carries an address ({hit!r})"
     return None, ""
@@ -1351,6 +1370,124 @@ def explain(headline: str) -> int:
     return 0
 
 
+def queued_history() -> list[dict]:
+    """Every item a drained queue file ever held, newest copy of each.
+
+    Queue files are deleted once read, so the record of what the screen let
+    through lives in git history — on every branch, since a run's queue is
+    committed on its `news/` branch. An item still sitting in a queue file
+    has no outcome yet and is left out.
+    """
+    import subprocess
+
+    def git(*args: str) -> str:
+        return subprocess.run(["git", "-C", str(REPO), *args],
+                              capture_output=True, text=True).stdout
+
+    waiting = set()
+    for p in QUEUE.glob("*.json"):
+        waiting |= {i["url"] for i in json.loads(p.read_text(encoding="utf-8")).get("items", [])}
+    seen: dict[str, dict] = {}
+    for commit in git("log", "--all", "--format=%H", "--", "news/queue/").split():
+        for name in git("ls-tree", "-r", "--name-only", commit, "news/queue/").split():
+            if not name.endswith(".json"):
+                continue
+            try:
+                items = json.loads(git("show", f"{commit}:{name}")).get("items", [])
+            except ValueError:
+                continue
+            for i in items:
+                if i.get("url") and i["url"] not in waiting:
+                    seen.setdefault(i["url"], i)
+    return list(seen.values())
+
+
+def outcomes() -> dict[str, str]:
+    """url → `published` or `found`, from the items files; absent means read
+    and nothing written."""
+    out: dict[str, str] = {}
+    for f in (ROOT / "items").glob("*/*.json"):
+        for x in json.loads(f.read_text(encoding="utf-8")).get("findings", []):
+            url = (x.get("citation") or {}).get("url")
+            if not url:
+                continue
+            status = (x.get("publish") or {}).get("status")
+            if status == "published" or out.get(url) != "published":
+                out[url] = "published" if status == "published" else "found"
+    return out
+
+
+def trigger(verdict: str, reason: str) -> str:
+    """The rule behind a verdict, as one short key to count by."""
+    if verdict == "skip":
+        return "skip"
+    m = re.search(r"usually carries an address \('([^']+)'\)", reason)
+    if m:
+        return f"shape: {m.group(1)}"
+    if "confirm it is San Francisco" in reason:
+        return "address, city unconfirmed"
+    if reason.startswith("a street address"):
+        return "street address"
+    if reason.startswith("names "):
+        return "named street"
+    return reason[:40]
+
+
+def audit(top: int) -> int:
+    """Score the current screen against what became of every story it queued.
+
+    Every drained queue item has an outcome: Claude published it, wrote a
+    finding and declined it, or read it and wrote nothing. Replaying today's
+    screen over them says which rules queue stories that never come to
+    anything — the ones to tune — and whether a change to the screen would
+    now skip a story that was published. That last is a regression, and the
+    command fails on it. Skipped items are not replayed: the queue files keep
+    only their titles, and the screen read more than that.
+    """
+    register = {f["id"]: f for f in json.loads(FEEDS.read_text(encoding="utf-8"))["feeds"]}
+    streets = {s.lower() for s in street_vocabulary(page_index())}
+    fate = outcomes()
+    rows = []
+    for i in queued_history():
+        item = {"title": i.get("title"), "summary": i.get("summary"),
+                "categories": i.get("categories") or []}
+        verdict, reason = screen(item, register.get(i["feed"], {}), streets)
+        rows.append({"item": i, "now": verdict, "why": reason,
+                     "rule": trigger(verdict, reason), "fate": fate.get(i["url"], "nothing")})
+    if not rows:
+        print("no drained queue files in git history")
+        return 0
+
+    def table(key: str, title: str) -> None:
+        groups: dict[str, list[dict]] = {}
+        for r in rows:
+            groups.setdefault(r[key] if key != "feed" else r["item"]["feed"], []).append(r)
+        print(f"{title:<30}{'queued':>7}{'found':>7}{'published':>10}{'nothing':>9}")
+        for k, rs in sorted(groups.items(), key=lambda kv: -len(kv[1]))[:top]:
+            n = {f: sum(r["fate"] == f for r in rs) for f in ("found", "published", "nothing")}
+            print(f"{k:<30}{len(rs):>7}{n['found'] + n['published']:>7}"
+                  f"{n['published']:>10}{n['nothing']:>9}")
+        print()
+
+    print(f"{len(rows)} queued stories with an outcome, replayed through today's screen\n")
+    table("feed", "by feed")
+    table("rule", "by the rule that queues it now")
+    dropped = [r for r in rows if r["now"] == "skip"]
+    lost = [r for r in dropped if r["fate"] == "published"]
+    found = [r for r in dropped if r["fate"] == "found"]
+    print(f"today's screen would skip {len(dropped)} of them: "
+          f"{len(lost)} published, {len(found)} found and declined, "
+          f"{len(dropped) - len(lost) - len(found)} that came to nothing")
+    for label, rs in (("PUBLISHED — the screen must not skip these", lost),
+                      ("found, then declined", found)):
+        if rs:
+            print(f"\n  {label}:")
+            for r in rs:
+                print(f"    {r['item']['feed']:<16} {(r['item'].get('title') or '')[:80]}\n"
+                      f"    {'':<16} → {r['why']}")
+    return 1 if lost else 0
+
+
 def find(address: str) -> int:
     """Does the site have a page for this address? The reader's first question."""
     pages = page_index()
@@ -1413,6 +1550,10 @@ def main() -> int:
     p = sub.add_parser("screen", help="explain the screen's verdict on a headline")
     p.add_argument("headline")
 
+    p = sub.add_parser("audit", help="replay today's screen over every story it ever "
+                                     "queued, against what became of each")
+    p.add_argument("--top", type=int, default=25, help="rows per table (default 25)")
+
     p = sub.add_parser("find", help="the page path for an address, if the site has one")
     p.add_argument("address")
 
@@ -1427,6 +1568,8 @@ def main() -> int:
         return status()
     if args.command == "screen":
         return explain(args.headline)
+    if args.command == "audit":
+        return audit(args.top)
     return find(args.address)
 
 

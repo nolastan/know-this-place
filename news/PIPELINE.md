@@ -113,6 +113,16 @@ in the commit — the lists in `poll.py` are the module's accumulated judgement,
 not a fixed dictionary. `read.py <queue> --skipped` re-reads a run's skips and
 measures what they cost; do that when you change the screen.
 
+**`poll.py audit` scores the screen against its own record.** Every drained
+queue item has an outcome — published, found and declined, or read and nothing
+written — and queue files survive in git history after they are deleted. The
+audit replays today's screen over all of them and prints, per feed and per rule,
+how many queued stories came to anything. A rule that queues a dozen stories and
+none became a finding is the next thing to tune. It fails if a change would now
+skip a story that was published, so run it before committing a change to the
+screen. It cannot replay skips (their queue entries keep only a title), which is
+what `read.py --skipped` is for.
+
 ## Backfill: the archive behind the feed
 
 **An RSS feed is not an archive.** Measured across the register, an open feed

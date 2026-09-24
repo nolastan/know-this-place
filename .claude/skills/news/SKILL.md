@@ -214,8 +214,10 @@ Same rule as the research module, and
 is explicit about it: the screen's word lists, the feed register and the stage
 boundaries are yours to improve when the work fights the structure. When a skip
 turns out to have been wrong, fix the table it came from and say so in the
-commit — `poll.py screen "<a headline>"` explains a verdict, and
-`read.py <queue> --skipped` measures what a run of skips actually cost.
+commit — `poll.py screen "<a headline>"` explains a verdict,
+`read.py <queue> --skipped` measures what a run of skips actually cost, and
+`poll.py audit` shows which rules queue stories that never come to anything,
+and fails if a change would skip one that was published.
 
 Two things still need a human: **adding or un-blocking a feed**, and **anything
 that changes what a page looks like**.
