@@ -34,6 +34,18 @@ is in — the check a record's "183 feet west of Powell" is made against. Withou
 `to` it is the EAS point's distance, a rough middle. Streets are fetched once
 each, so a hundred entries take a minute rather than an hour.
 
+**An entry with `to` and `offset` but no `lot`** — a building-news paragraph
+that gives a corner and a distance and never states the lot — matches
+differently: there is no area to check, so it prints every parcel on the
+block face whose *measured frontage start* (the same span `to` computes for
+the lot-area mode) is within 4 feet of the record's `offset`, and whose roll
+`year_property_built` is within two years of the record's `year` (the same
+tolerance `--year` marks elsewhere in this file). Both conditions are
+required, because a frontage start alone repeats every 25 feet down a block of
+regular lots. It is still a candidate, not a verdict — read RUNBOOK.md's "A
+corner, not a number" and write the reasoning into `resolution.method` with
+`"by_hand": true`.
+
 It deliberately does not pick a corner. Which parcel is "southeast" depends on
 which side of the street carries the odd numbers, and that is a reading of the
 addresses printed here, not something a centroid gets right. The match is the
@@ -235,8 +247,14 @@ def batch(path: str, tol: float = 0.04) -> int:
                                   for _, hit, _ in found if hit and hit[2] for a in hit[0]}))
     for e, hit, err in found:
         want = lot_sqft(e.get("lot", ""))
+        offset = e.get("offset") if not want else None
         head = f"{e['id']}: {e['a']} & {e['b']}" + (f" to {e['to']}" if e.get("to") else "")
-        head += f"  lot {e.get('lot')} = {want:.0f} sq ft" if want else "  (no lot)"
+        if want:
+            head += f"  lot {e.get('lot')} = {want:.0f} sq ft"
+        elif offset is not None:
+            head += f"  offset {offset} ft from {e['b']}, year {e.get('year', '?')}  (no lot)"
+        else:
+            head += "  (no lot)"
         print(head)
         if err:
             print(f"    {err}")
@@ -249,7 +267,20 @@ def batch(path: str, tol: float = 0.04) -> int:
                 area = float(ro.get("lot_area") or 0)
             except ValueError:
                 area = 0
-            if not want or not area or abs(area - want) > tol * want:
+            span = front_span(apn, shapes, ix, toward) if toward else None
+            if want:
+                if not area or abs(area - want) > tol * want:
+                    continue
+            elif offset is not None:
+                # No lot to check, so the match is the measured frontage start
+                # against the record's offset, and the roll year against the
+                # record's — the offset alone repeats every 25 feet.
+                if span is None or abs(span[0] - offset) > 4:
+                    continue
+                yr = ro.get("year_property_built") or ""
+                if not (e.get("year") and yr.isdigit() and abs(int(yr) - int(e["year"])) <= 2):
+                    continue
+            else:
                 continue
             n += 1
             yr = ro.get("year_property_built") or "?"
@@ -257,7 +288,6 @@ def batch(path: str, tol: float = 0.04) -> int:
             if e.get("year") and yr.isdigit() and abs(int(yr) - int(e["year"])) <= 2:
                 mark = "  <-- year"
             d = ""
-            span = front_span(apn, shapes, ix, toward) if toward else None
             if span:
                 d = f"  front {span[0]:.0f}-{span[1]:.0f} ft from {e['b']}"
             elif apn in pts:
@@ -268,7 +298,8 @@ def batch(path: str, tol: float = 0.04) -> int:
                   + (f"  Planning: {names[apn]}" if apn in names else "")
                   + (f"  page: {', '.join(pages[apn])}" if apn in pages else ""))
         if not n:
-            print(f"    no parcel of {len(near)} within {tol:.0%} of the lot")
+            what = "within 4 ft of the offset and roll year" if offset is not None else f"within {tol:.0%} of the lot"
+            print(f"    no parcel of {len(near)} {what}")
     return 0
 
 

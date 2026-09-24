@@ -88,7 +88,7 @@ Issue counts per year; a year split across batches needs all of them.
 | | 1906–1907 | `hercules_ver01` (275 + 92), `indio_ver01` (1907: 245), `mecca_ver01` (1907: 28) |
 | | 1908 | `indio` (90), `jenner_ver01` (31), `llano_ver01` (245) |
 | | 1909 | `jenner` (92), `llano` (61), `mecca` (151), `needles_ver01` (61) |
-| | **1910** | `jenner` (90), `klamath_ver01` (122), `mecca` (122), `needles` (31) — **all four fetched 2026-09-23**; **read in full** (January–June, July–December) |
+| | **1910** | `curiv_jenner_ver01` (90), `curiv_klamath_ver01` (122), `curiv_mecca_ver01` (122), `curiv_needles_ver01` (31) — **all four fetched 2026-09-23**; **read in full** (January–June, July–December, and twice more for owner-only corner/offset entries with and without a lot, #407 and #412) |
 | | **1911** | `curiv_betteravia_ver02` (Jan–Aug, 5,901 pages), `curiv_angwin_ver02` (Sep–Dec, 2,996 pages) — **both on disk** |
 | | **1912** | `angwin` (106), `calipatria_ver03` (183), `dardanelle_ver01` (64) — 9,693 pages, **all three fetched 2026-09-23**; nothing after 15 December |
 | | 1913 | `dardanelle` (15: 1–15 February), `grimes_ver01` (132: 16 July–8 December) — **both fetched 2026-09-23**; January, March to mid-July and the rest of December are in neither, and in no other batch: all 79 `curiv_` batch listings were checked for `sn85066387` on 2026-09-23 and every one that holds the *Call* is in this table |
@@ -441,15 +441,47 @@ or an offset **and** a lot size — and placed them in bulk with
   (43 by hand with `corner.py --batch`), 129 unresolved; 46 published on 44
   pages, 29 of them seeded, 3 declined. Batch file
   `findings/loc-newspapers/sn85066387-1910-permits.json`.)
+- **Verified:** 2026-09-24 (the *Call*'s 1910 Real Estate and Financial
+  Section re-read a third time, for the building-news, permit, contract and
+  building-sale entries that give a corner or an offset but **no** lot
+  dimension — the counterpart #407 explicitly left out, #412: same 244-page
+  span as #407 (the head page and the pages around it for every Saturday of
+  1910, from `curiv_jenner`, `curiv_klamath`, `curiv_mecca` and
+  `curiv_needles`), scanned by a regex for corner/offset phrases with no
+  adjacent lot-size pattern (311 candidate windows) and read by hand. 120
+  findings not already in any of the three earlier 1910 batches — 19 resolved
+  (all by hand with `corner.py --batch`'s new offset mode, added this run: it
+  matches the measured frontage start against the record's offset within 4 ft
+  and the roll year within 2 years, for a record with no lot to check against
+  area), 101 unresolved — nearly all bare corners with no lot or offset for
+  the tool to choose between their parcels, exactly as the issue predicted.
+  15 published on 15 pages, 4 of them seeded; 4 declined, all duplicates of
+  entries this same source already published (321 Grant Avenue, 3541 18th
+  Street twice, and 1221 Masonic Avenue). Same run, the five Presidio Terrace
+  tract-lot entries left open from #406
+  (`findings/loc-newspapers/sn85066387-1910-h2-real-estate.json`) were
+  resolved: Presidio Terrace's original subdivision lot numbers equal today's
+  EAS street numbers on the street (lots 7–8 and 33–34 are single parcels EAS
+  addresses only at 8 and 34; lots 19, 21 and 32 stand alone), confirmed by
+  two of the five already carrying an independently-sourced credit for the
+  same building (21 Presidio Terrace's 1910 Burgren credit, 8 Presidio
+  Terrace's clubhouse use on the roll) — a tract-lot-to-APN key, not a guess.
+  All five resolved and published (2 on existing pages, 2 seeded, 1 — lot 21
+  — folded into its page's existing 1910 entry with the new detail the
+  newspaper adds). Batch file
+  `findings/loc-newspapers/sn85066387-1910-offsets.json`.)
 - **Coverage:** 1890s and 1900s years scanned in August 2026 for mentions only
-  (above); **1910 Real Estate and Financial Section read in full**; **1911 and 1912 Real Estate and Financial Sections read in full**
-  (1912 lacks 21 and 28 December, which no batch holds); **1913 read as far
-  as the batches hold it** (1–15 February, 16 July–8 December); 1913's other
-  months are in no batch on the bulk route. The 1910 owner-only permits,
-  contracts, loans and building sales that give a lot size are read (#407);
-  those giving a corner or offset and **no** lot size are not, and are the
-  next 1910 batch. Then the unscanned 1897–1899 and 1903–1904 years. The weekly Building
-  Contracts lists in 1911–1913 are metes-and-bounds and were read only for
-  named buildings; they are the next `corner.py` batch. The rest of the 1911,
-  1912 and 1913 paper — the fires and the building-permit lists — is on disk
-  in a session that fetched it, and unread.
+  (above); **1910 Real Estate and Financial Section read in full, three
+  times over** — numbered/architect/corner entries (#three 1910 batches),
+  owner-only lot-bearing corner/offset entries (#407), and owner-only
+  corner/offset entries with no lot (#412); nothing from this section's
+  building-news, permit, contract and building-sale columns is known to
+  remain unread. **1911 and 1912 Real Estate and Financial Sections read in
+  full** (1912 lacks 21 and 28 December, which no batch holds); **1913 read
+  as far as the batches hold it** (1–15 February, 16 July–8 December); 1913's
+  other months are in no batch on the bulk route. Then the unscanned
+  1897–1899 and 1903–1904 years. The weekly Building Contracts lists in
+  1911–1913 are metes-and-bounds and were read only for named buildings; they
+  are the next `corner.py` batch. The rest of the 1911, 1912 and 1913 paper —
+  the fires and the building-permit lists — is on disk in a session that
+  fetched it, and unread.

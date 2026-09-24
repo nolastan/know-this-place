@@ -1,0 +1,3656 @@
+{
+  "source_id": "loc-newspapers",
+  "batch": "sn85066387-1910-offsets",
+  "read_on": "2026-09-24",
+  "notes": "The Call's 1910 Real Estate and Financial Section re-read a second time for the building-news, permit, contract and building-sale entries that give a corner or an offset but no lot dimension — the ones #407's re-read (sn85066387-1910-permits.json) explicitly left out because it took only the lot-bearing counterparts. Same 244-page span as #407 (the head page and the pages around it for every Saturday of 1910, from curiv_jenner, curiv_klamath, curiv_mecca and curiv_needles), scanned by a regex for corner/offset phrases with no adjacent lot-size pattern and then read by hand. Private owners, buyers, sellers and lessees are left out at extraction (cut from raw where the source names them); contractors, architects, institutions and named firms are kept. Corner and offset entries were placed with research/tools/corner.py --batch's new offset mode, added for this run: it matches the measured frontage start on the block face against the record's stated offset (within 4 ft) and the roll year (within 2 years, the tolerance already used elsewhere in the tool) when the record gives no lot to check against area. A bare corner with neither a lot nor an offset is not chosen between its parcels, per the tool's own docstring, and stays unresolved.",
+  "coverage": {
+    "unit": "OCR pages",
+    "examined": 244,
+    "mentions": 311,
+    "remaining": "The weekly Building Contracts lists in 1911-1913 are metes-and-bounds and were read only for named buildings; they are the next corner.py batch (unchanged from the dossier's prior coverage note). Five Presidio Terrace tract-lot entries from the July-December 1910 batch are resolved separately, by a tract-lot-to-APN key documented in the dossier, not by this batch's offset method.",
+    "note": "311 candidate corner/offset windows surfaced by a regex scan of the 244 pages; after dropping leases (out of this batch's scope), loans that name no construction, Real Estate Transactions deeds at a nominal consideration, out-of-town locations, fires, duplicates of the run's own extraction, and passages that turned out to carry a lot dimension after all, 120 findings. 19 resolved (all by hand with corner.py --batch's offset mode), 4 of those declined as duplicates of entries this same source already published; 101 unresolved, nearly all bare corners with no lot or offset for the tool to choose between their parcels, or offset entries whose measured frontage and roll year match nothing on that block face."
+  },
+  "findings": [
+    {
+      "id": "sn85066387-1910-offsets-0000",
+      "date": "1910-01-01",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "the corner of Beale and Market streets",
+      "description": "Contracts amounting to $99,779 were placed for a four-storey and basement brick building here.",
+      "citation": {
+        "label": "The San Francisco Call, 1 January 1910, p. 12",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-01-01/ed-1/seq-12/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/01/01/ed-1/seq-12/ocr.txt",
+        "locator": "p. 12, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... has placed contracts amounting to $99,779 for the construction of a four story and basement brick building at the corner of Beale and Market streets.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 99779
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch BEALE & MARKET: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0001",
+      "date": "1910-01-01",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Powell street, 85 feet west of Geary",
+      "description": "The Manlerson company contracted for a seven-storey and basement class C reinforced concrete building here.",
+      "citation": {
+        "label": "The San Francisco Call, 1 January 1910, p. 12",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-01-01/ed-1/seq-12/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/01/01/ed-1/seq-12/ocr.txt",
+        "locator": "p. 12, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "The Manlerson company has contracted for a seven story and basement class C reinforced concrete building in the west line of Powell street, 85 feet south of Geary.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "firm": "The Manlerson company",
+        "cross_street": "GEARY"
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0315002",
+        "path": "/san-francisco/nob-hill/powell-street/235/",
+        "eas_address": "235 POWELL ST",
+        "method": "corner.py --batch: offset mode matched the frontage 86-138 ft from GEARY on parcel 0315002 against the record's 85 ft, built 1910 (exact year match). The record says the west line of Powell; 0315002 (odd, 235 Powell) has the more negative (further west) longitude of the two candidates the tool printed (-122.40842 vs -122.40790 for 236 Powell, the Hotel Stratford, even side), so the west line is the odd side here.",
+        "checked_on": "2026-09-24",
+        "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "TBD"
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0002",
+      "date": "1910-01-01",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Union street, 75 feet north of Leavenworth",
+      "description": "A three-storey apartment building was contracted for here, to cost $16,000.",
+      "citation": {
+        "label": "The San Francisco Call, 1 January 1910, p. 12",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-01-01/ed-1/seq-12/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/01/01/ed-1/seq-12/ocr.txt",
+        "locator": "p. 12, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... has contracted for the erection of a three story apartment building in the north line of Union street, 75 feet east of Leavenworth street, to cost $16,000.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 16000,
+        "cross_street": "LEAVENWORTH"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): UNION from LEAVENWORTH toward POLK, offset 75 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0003",
+      "date": "1910-01-01",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of Broderick and Filbert streets",
+      "description": "A permit was taken out to place a two-storey frame building here, to cost $8,100.",
+      "citation": {
+        "label": "The San Francisco Call, 1 January 1910, p. 12",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-01-01/ed-1/seq-12/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/01/01/ed-1/seq-12/ocr.txt",
+        "locator": "p. 12, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... has taken out a permit to place a two story frame building at the southeast corner of Broderick and Filbert streets to cost $8,100.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 8100
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch BRODERICK & FILBERT: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0004",
+      "date": "1910-01-08",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of Filbert and Divisadero streets",
+      "description": "A two-storey and attic stock brick veneer building, a residence, was completed here by W. W. Rednall, designer and builder.",
+      "citation": {
+        "label": "The San Francisco Call, 8 January 1910, p. 17",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-01-08/ed-1/seq-17/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/01/08/ed-1/seq-17/ocr.txt",
+        "locator": "p. 17, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "A two story and attic stock brick veneer building has just been completed by W. W. Rednall, designer and builder, for ..., occupying a commanding position on the northeast corner of Filbert and Devisadero streets.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "builder": "W. W. Rednall"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch FILBERT & DIVISADERO: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0005",
+      "date": "1910-01-15",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "the corner of Ofarrell and Taylor streets",
+      "description": "A contract was awarded for a six-storey and basement steel and brick building here, to cost $59,500.",
+      "citation": {
+        "label": "The San Francisco Call, 15 January 1910, p. 17",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-01-15/ed-1/seq-17/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/01/15/ed-1/seq-17/ocr.txt",
+        "locator": "p. 17, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "the contract for a six story and basement steel and brick building at the southwest corner of O'Farrell and Taylor streets, which will cost $59,500.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 59500
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch OFARRELL & TAYLOR: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0006",
+      "date": "1910-01-15",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of San Jose and Day streets",
+      "description": "A two-storey building was to be built here, to cost $6,000.",
+      "citation": {
+        "label": "The San Francisco Call, 15 January 1910, p. 17",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-01-15/ed-1/seq-17/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/01/15/ed-1/seq-17/ocr.txt",
+        "locator": "p. 17, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... will build a two story building at the southwest corner of San Jose avenue and Day street to cost $6,000.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 6000
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch SAN JOSE & DAY: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0007",
+      "date": "1910-01-15",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "25Th street, 100 feet west of Clay",
+      "description": "A two-storey and basement and attic frame building was to be erected here, at an expense of $6,300.",
+      "citation": {
+        "label": "The San Francisco Call, 15 January 1910, p. 17",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-01-15/ed-1/seq-17/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/01/15/ed-1/seq-17/ocr.txt",
+        "locator": "p. 17, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "A two story and basement and attic frame building will be erected ... in the west line of Twenty-fifth avenue, 100 feet south of Clay street, at an expense of $6,300.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 6300,
+        "cross_street": "CLAY"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): 25TH from CLAY toward GEARY, offset 100 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0008",
+      "date": "1910-01-15",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "the corner of Hermann and Valencia streets",
+      "description": "The Knights of Pythias Castle Association gave out the contract for a four-storey and basement class C brick building here.",
+      "citation": {
+        "label": "The San Francisco Call, 15 January 1910, p. 17",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-01-15/ed-1/seq-17/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/01/15/ed-1/seq-17/ocr.txt",
+        "locator": "p. 17, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "The Knights of Pythias castle association has given out the contract for the construction of a four story and basement class C brick building at the southeast corner of Hermann and Valencia streets.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "institution": "Knights of Pythias Castle Association"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch HERMANN & VALENCIA: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0009",
+      "date": "1910-01-15",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "the corner of 04Th and Minna streets",
+      "description": "Hare & Sons took out a permit to place a four-storey brick structure containing stores and flats here, at an estimated cost of $11,315.",
+      "citation": {
+        "label": "The San Francisco Call, 15 January 1910, p. 17",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-01-15/ed-1/seq-17/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/01/15/ed-1/seq-17/ocr.txt",
+        "locator": "p. 17, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "Hare & Sons have taken out a permit to place a four story brick structure containing stores and flats at the northeast corner of Fourth and Minna street at an estimated cost of $11,315.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 11315,
+        "firm": "Hare & Sons"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch 04TH & MINNA: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0010",
+      "date": "1910-01-29",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "California street, 87.5 feet north of Dupont",
+      "description": "The Roman Catholic Archbishop of San Francisco was awarded the contract for a four-storey brick building here, for the residence of the clergy.",
+      "citation": {
+        "label": "The San Francisco Call, 29 January 1910, p. 15",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-01-29/ed-1/seq-15/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/01/29/ed-1/seq-15/ocr.txt",
+        "locator": "p. 15, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "The Roman Catholic archbishop of San Francisco has awarded the contract for the erection of a four story brick building, for the residence of the clergy, in the north line of California street, 87:6 feet east of Dupont.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "institution": "Roman Catholic Archbishop of San Francisco",
+        "cross_street": "DUPONT",
+        "cross_street_eas": "GRANT"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): CALIFORNIA from DUPONT toward KEARNY, offset 87.5 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0011",
+      "date": "1910-01-29",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of Clement and 06Th streets",
+      "description": "The Morehead company was to erect a three-storey frame building here, to contain stores and flats, at a cost of about $15,000.",
+      "citation": {
+        "label": "The San Francisco Call, 29 January 1910, p. 15",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-01-29/ed-1/seq-15/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/01/29/ed-1/seq-15/ocr.txt",
+        "locator": "p. 15, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "The Morehead company will erect a three story frame building to contain stores and flats, at the southeast corner of Clement street and Sixth avenue, to cost about $15,000.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 15000,
+        "firm": "The Morehead company"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch CLEMENT & 06TH: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0012",
+      "date": "1910-01-29",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "17Th street, 100 feet west of Church",
+      "description": "Two frame flat buildings, each three storeys high, were to be erected here, at a cost of $15,000.",
+      "citation": {
+        "label": "The San Francisco Call, 29 January 1910, p. 15",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-01-29/ed-1/seq-15/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/01/29/ed-1/seq-15/ocr.txt",
+        "locator": "p. 15, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... will erect two frame flat buildings, each three stories high, in the south line of Seventeenth street, 100 feet west of Church, at a cost of $15,000.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 15000,
+        "cross_street": "CHURCH"
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3580070",
+        "path": "/san-francisco/castro/17th-street/3719/",
+        "eas_address": "3719 17TH ST",
+        "method": "corner.py --batch: offset mode matched the only candidate, frontage 100-125 ft from CHURCH on parcel 3580070, built 1910 (exact year match) — 3719-3721 17th St.",
+        "checked_on": "2026-09-24",
+        "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "TBD"
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0013",
+      "date": "1910-02-05",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "the corner of California and Battery streets",
+      "description": "A five-storey steel frame structure was to be built here, to cost $139,000, for stores and offices.",
+      "citation": {
+        "label": "The San Francisco Call, 5 February 1910, p. 15",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-02-05/ed-1/seq-15/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/02/05/ed-1/seq-15/ocr.txt",
+        "locator": "p. 15, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... will build a five story steel frame structure at the southwest corner of California and Battery streets to cost $139,000, for stores and offices.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 139000
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch CALIFORNIA & BATTERY: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0014",
+      "date": "1910-02-05",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "Bush street, 137 feet north of Sansome",
+      "description": "An eight-storey steel loft and store building was to be constructed here, to cost $40,000.",
+      "citation": {
+        "label": "The San Francisco Call, 5 February 1910, p. 15",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-02-05/ed-1/seq-15/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/02/05/ed-1/seq-15/ocr.txt",
+        "locator": "p. 15, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... will construct an eight story steel loft and store building in the north line of Bush street, 137 feet east of Sansome, to cost $40,000.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 40000,
+        "cross_street": "SANSOME"
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0267009",
+        "path": "/san-francisco/financial-district/bush-street/130/",
+        "eas_address": "130 BUSH ST",
+        "method": "corner.py --batch: offset mode matched the only candidate, frontage 137-157 ft from SANSOME on parcel 0267009, built 1910 (exact year match) — 130 Bush St, which Planning names the Heineman Building, confirming the identification independently of the offset match.",
+        "checked_on": "2026-09-24",
+        "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "TBD"
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0015",
+      "date": "1910-02-05",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Mcallister street, 176 feet south of Baker",
+      "description": "A permit was taken out to build a three-storey frame apartment building here, estimated cost $14,000.",
+      "citation": {
+        "label": "The San Francisco Call, 5 February 1910, p. 15",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-02-05/ed-1/seq-15/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/02/05/ed-1/seq-15/ocr.txt",
+        "locator": "p. 15, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... has taken out a permit to build a three story frame apartment building in the south line of McAllister street, 176 feet east of Baker. The estimated cost is $14,000.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 14000,
+        "cross_street": "BAKER"
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "1178025",
+        "path": "/san-francisco/western-addition/mcallister-street/1747/",
+        "eas_address": "1747 MCALLISTER ST",
+        "method": "corner.py --batch: offset mode matched the only candidate, frontage 177-210 ft from BAKER on parcel 1178025, built 1910 (exact year match) — 1747 McAllister St. No page exists yet; seeded by this run.",
+        "checked_on": "2026-09-24",
+        "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "TBD"
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0016",
+      "date": "1910-02-05",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "the corner of Washington and Jones streets",
+      "description": "Contracts were awarded for a three-storey frame apartment building here, to cost $43,000.",
+      "citation": {
+        "label": "The San Francisco Call, 5 February 1910, p. 15",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-02-05/ed-1/seq-15/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/02/05/ed-1/seq-15/ocr.txt",
+        "locator": "p. 15, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... has awarded contracts for the construction of a three story frame apartment building at the northwest corner of Washington and Jones streets to cost $43,000.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 43000
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch WASHINGTON & JONES: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0017",
+      "date": "1910-02-05",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Stockton street, 69.5 feet east of Jackson",
+      "description": "A three-storey and basement brick building was to be built here, at an estimated cost of $15,620.",
+      "citation": {
+        "label": "The San Francisco Call, 5 February 1910, p. 15",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-02-05/ed-1/seq-15/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/02/05/ed-1/seq-15/ocr.txt",
+        "locator": "p. 15, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "A three story and basement brick building will be constructed ... in the east line of Stockton street, 69:6 feet north of Jackson, at an estimated cost of $15,620.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 15620,
+        "cross_street": "JACKSON"
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0178013",
+        "path": "/san-francisco/chinatown/stockton-street/1116/",
+        "eas_address": "1116 STOCKTON ST",
+        "method": "corner.py --batch: offset mode matched the only candidate, frontage 70-104 ft from JACKSON on parcel 0178013, built 1910 (exact year match) — 1116-1122 Stockton St.",
+        "checked_on": "2026-09-24",
+        "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "TBD"
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0018",
+      "date": "1910-02-05",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of California and St Marys streets",
+      "description": "A three-storey and basement brick building was to be erected here; the contracts called for $16,314.",
+      "citation": {
+        "label": "The San Francisco Call, 5 February 1910, p. 17",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-02-05/ed-1/seq-17/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/02/05/ed-1/seq-17/ocr.txt",
+        "locator": "p. 17, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... will erect a three story and basement brick building on the southeast corner of California street and St. Mary's place. The contracts call for the expenditure of $16,314.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 16314
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch CALIFORNIA & ST MARYS: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0019",
+      "date": "1910-02-05",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Bush street, 167 feet south of Hyde",
+      "description": "Three-storey flats of brick were to be built here, at an estimated cost of $21,000.",
+      "citation": {
+        "label": "The San Francisco Call, 5 February 1910, p. 17",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-02-05/ed-1/seq-17/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/02/05/ed-1/seq-17/ocr.txt",
+        "locator": "p. 17, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... will build three story flats of brick in the south line of Bush street, 167 feet west of Hyde, at an estimated cost of $21,000.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 21000,
+        "cross_street": "HYDE"
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0279020",
+        "path": "/san-francisco/nob-hill/bush-street/1241/",
+        "eas_address": "1241 BUSH ST",
+        "method": "corner.py --batch: offset mode matched the only candidate, frontage 167-204 ft from HYDE on parcel 0279020, built 1910 (exact year match) — 1241 Bush St. No page exists yet; seeded by this run.",
+        "checked_on": "2026-09-24",
+        "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "TBD"
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0020",
+      "date": "1910-02-05",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "Scott street, 130.5 feet east of Hayes",
+      "description": "Contracts were awarded for a three-storey and basement flat building here, to cost $15,165.",
+      "citation": {
+        "label": "The San Francisco Call, 5 February 1910, p. 17",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-02-05/ed-1/seq-17/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/02/05/ed-1/seq-17/ocr.txt",
+        "locator": "p. 17, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... has awarded contracts for the construction of a three story and basement flat building in the east line of Scott street, 130:6 feet south of Hayes, to cost $15,165.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 15165,
+        "cross_street": "HAYES"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): SCOTT from HAYES toward GROVE, offset 130.5 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0021",
+      "date": "1910-02-05",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of Van Ness and Elm streets",
+      "description": "A two-storey concrete dwelling was to be constructed here, to cost $9,600.",
+      "citation": {
+        "label": "The San Francisco Call, 5 February 1910, p. 17",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-02-05/ed-1/seq-17/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/02/05/ed-1/seq-17/ocr.txt",
+        "locator": "p. 17, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "A two story concrete dwelling will be constructed ... at the northeast corner of Elm and Van Ness avenues at a cost of $9,600.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 9600
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch VAN NESS & ELM: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0022",
+      "date": "1910-02-12",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Minna street, 97.5 feet south of 02Nd",
+      "description": "N. Clark & Sons contracted for a three-storey brick building here.",
+      "citation": {
+        "label": "The San Francisco Call, 12 February 1910, p. 17",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-02-12/ed-1/seq-17/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/02/12/ed-1/seq-17/ocr.txt",
+        "locator": "p. 17, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "N. Clark & Sons have contracted for the construction of a three story brick building in the south line of Minna street, 97:6 feet west of Second.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "firm": "N. Clark & Sons",
+        "cross_street": "02ND"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): MINNA from 02ND toward 01ST, offset 97.5 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0023",
+      "date": "1910-02-12",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "the corner of California and St Anne streets",
+      "description": "A permit was issued to construct a three-storey brick lodging house here, to cost $16,500.",
+      "citation": {
+        "label": "The San Francisco Call, 12 February 1910, p. 17",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-02-12/ed-1/seq-17/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/02/12/ed-1/seq-17/ocr.txt",
+        "locator": "p. 17, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "A permit has been issued to ... construct a three story brick lodging house at the southeast corner of California and St. Anne streets, to cost $16,500.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 16500
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch CALIFORNIA & ST ANNE: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0024",
+      "date": "1910-02-12",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Clay street, 58 feet south of Battery",
+      "description": "Intention was signified to build a three-storey brick warehouse here; the cost was to be about $24,000.",
+      "citation": {
+        "label": "The San Francisco Call, 12 February 1910, p. 17",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-02-12/ed-1/seq-17/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/02/12/ed-1/seq-17/ocr.txt",
+        "locator": "p. 17, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... has signified his intention to build a three story brick warehouse in the south line of Clay street, 58 feet east of Battery. The cost will be about $24,000.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 24000,
+        "cross_street": "BATTERY"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): CLAY from BATTERY toward FRONT, offset 58 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0025",
+      "date": "1910-02-12",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "the corner of Eddy and Leavenworth streets",
+      "description": "$50,000 was to be expended on a six-storey brick lodging house here.",
+      "citation": {
+        "label": "The San Francisco Call, 12 February 1910, p. 17",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-02-12/ed-1/seq-17/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/02/12/ed-1/seq-17/ocr.txt",
+        "locator": "p. 17, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "The sum of $50,000 will be expended ... in the construction of a six story brick lodging house on the northwest corner of Eddy and Leavenworth streets.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 50000
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch EDDY & LEAVENWORTH: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0026",
+      "date": "1910-02-12",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "Mission street, 45.83 feet north of Main",
+      "description": "A contract was awarded to build a three-storey store and loft structure here, to cost $21,500.",
+      "citation": {
+        "label": "The San Francisco Call, 12 February 1910, p. 17",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-02-12/ed-1/seq-17/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/02/12/ed-1/seq-17/ocr.txt",
+        "locator": "p. 17, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... has awarded a contract to build a three story store and loft structure, in the north line of Mission street, 45:10 feet west of Main, to cost $21,500.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 21500,
+        "cross_street": "MAIN"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): MISSION from MAIN toward SPEAR, offset 45.83 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0027",
+      "date": "1910-02-12",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "the corner of California and Joice streets",
+      "description": "A four-storey and basement apartment house was contracted for here, at a cost of about $50,000.",
+      "citation": {
+        "label": "The San Francisco Call, 12 February 1910, p. 17",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-02-12/ed-1/seq-17/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/02/12/ed-1/seq-17/ocr.txt",
+        "locator": "p. 17, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... has contracted for the construction of a four story and basement apartment house on the southwest corner of California and Joyce streets, at a cost of about $50,000.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 50000
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch CALIFORNIA & JOICE: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0028",
+      "date": "1910-02-12",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "the corner of Van Ness and Hickory streets",
+      "description": "A three-storey brick building was to be built here, to cost $20,000.",
+      "citation": {
+        "label": "The San Francisco Call, 12 February 1910, p. 17",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-02-12/ed-1/seq-17/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/02/12/ed-1/seq-17/ocr.txt",
+        "locator": "p. 17, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... will build a three story and brick building at the northwest corner of Van Ness avenue and Hickory street, to cost $20,000.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 20000
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch VAN NESS & HICKORY: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0029",
+      "date": "1910-02-19",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "Pine street, 87.67 feet north of Leavenworth",
+      "description": "Arthur F. Rousseau was awarded contracts for a frame building to contain 11 apartments here.",
+      "citation": {
+        "label": "The San Francisco Call, 19 February 1910, p. 15",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-02-19/ed-1/seq-15/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/02/19/ed-1/seq-15/ocr.txt",
+        "locator": "p. 15, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "Arthur F. Rousseau has awarded contracts for the erection of a frame building to contain 11 apartments in the north line of Pine street, 87:8 feet west of Leavenworth.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "architect": "Arthur F. Rousseau",
+        "cross_street": "LEAVENWORTH"
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0251008",
+        "path": "/san-francisco/nob-hill/pine-street/1220/",
+        "eas_address": "1220 PINE ST",
+        "method": "corner.py --batch: offset mode matched the only candidate, frontage 88-115 ft from LEAVENWORTH on parcel 0251008, built 1910 (exact year match) — 1220 Pine St.",
+        "checked_on": "2026-09-24",
+        "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "TBD"
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0030",
+      "date": "1910-02-19",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "the corner of Guerrero and Clinton streets",
+      "description": "Contracts were awarded for the construction of the Mary's Help Hospital here, at an estimated cost of $13,670.",
+      "citation": {
+        "label": "The San Francisco Call, 19 February 1910, p. 15",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-02-19/ed-1/seq-15/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/02/19/ed-1/seq-15/ocr.txt",
+        "locator": "p. 15, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "Contracts have been awarded for the construction of the Mary's Help hospital at the southeast corner of Guerrero street and Clinton place. The estimated cost is $13,670.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 13670,
+        "institution": "Mary's Help Hospital"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch GUERRERO & CLINTON: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0031",
+      "date": "1910-02-19",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "Sutter street, 167.25 feet north of Van Ness",
+      "description": "A five-storey and basement class C apartment building was contracted for here; the cost was to be about $70,000.",
+      "citation": {
+        "label": "The San Francisco Call, 19 February 1910, p. 15",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-02-19/ed-1/seq-15/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/02/19/ed-1/seq-15/ocr.txt",
+        "locator": "p. 15, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... has contracted for the construction of a five story and basement class C apartment building in the north line of Sutter street, 167:3 feet west of Van Ness avenue. The cost will be about $70,000.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 70000,
+        "cross_street": "VAN NESS"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): SUTTER from VAN NESS toward POLK, offset 167.25 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0032",
+      "date": "1910-02-19",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "the corner of Sansome and Gold streets",
+      "description": "A three-storey building was to be erected here by the Pacific Coast Syrup Company; the estimated cost was about $16,000.",
+      "citation": {
+        "label": "The San Francisco Call, 19 February 1910, p. 15",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-02-19/ed-1/seq-15/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/02/19/ed-1/seq-15/ocr.txt",
+        "locator": "p. 15, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "A three story building will be erected by the Pacific coast syrup company, for which the contract has been placed, to stand at the northwest corner of Sansome and Gold streets. The estimated cost is about $16,000.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 16000,
+        "firm": "Pacific Coast Syrup Company"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch SANSOME & GOLD: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0033",
+      "date": "1910-02-19",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of California and Joice streets",
+      "description": "A permit was secured to erect a four-storey frame building here, to contain apartments, at an estimated cost of $45,000.",
+      "citation": {
+        "label": "The San Francisco Call, 19 February 1910, p. 15",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-02-19/ed-1/seq-15/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/02/19/ed-1/seq-15/ocr.txt",
+        "locator": "p. 15, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... has secured a permit to erect a four story frame building at the southwest corner of California and Joice streets, to contain apartments, the estimated cost of which is $45,000.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 45000
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch CALIFORNIA & JOICE: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0034",
+      "date": "1910-02-19",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of Clay and Stockton streets",
+      "description": "A three-storey brick store and hotel structure was to be built here; the cost was estimated at $22,500.",
+      "citation": {
+        "label": "The San Francisco Call, 19 February 1910, p. 15",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-02-19/ed-1/seq-15/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/02/19/ed-1/seq-15/ocr.txt",
+        "locator": "p. 15, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... will build a three story brick store and hotel structure, at the northeast corner of Clay and Stockton streets. The cost is estimated at $22,500.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 22500
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch CLAY & STOCKTON: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0035",
+      "date": "1910-02-19",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Masonic street, 62 feet south of Haight",
+      "description": "Conly & Wick were to construct a three-storey frame dwelling here, to cost about $18,000.",
+      "citation": {
+        "label": "The San Francisco Call, 19 February 1910, p. 15",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-02-19/ed-1/seq-15/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/02/19/ed-1/seq-15/ocr.txt",
+        "locator": "p. 15, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "Conly & Wick will construct a three story frame dwelling in the west line of Masonic avenue, 62 feet south of Haight street, to cost about $18,000.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 18000,
+        "firm": "Conly & Wick",
+        "cross_street": "HAIGHT"
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "1244002",
+        "path": "/san-francisco/castro/masonic-avenue/1221/",
+        "eas_address": "1221 MASONIC AVE",
+        "method": "corner.py --batch matched the only candidate on frontage and year (see finding -0035's original method), but the page already carries a same-date (1910-02-12) building-contract entry for a three-storey and basement frame apartment building from this same source — the same record, extracted a second time.",
+        "checked_on": "2026-09-24",
+        "by_hand": true
+      },
+      "publish": {
+        "status": "declined",
+        "note": "Duplicates the loc-sf-call-1910-02-12 entry already on 1221 Masonic Avenue."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0036",
+      "date": "1910-02-19",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Market street, 152 feet northeast of Golden Gate",
+      "description": "A one-storey class C building was to be built here; the cost was to be about $25,000.",
+      "citation": {
+        "label": "The San Francisco Call, 19 February 1910, p. 16",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-02-19/ed-1/seq-16/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/02/19/ed-1/seq-16/ocr.txt",
+        "locator": "p. 16, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "[a] one story class C building in the northwest line of Market street, 152 feet northeast of Golden Gate avenue. The cost will be about $25,000.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 25000,
+        "cross_street": "GOLDEN GATE"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): MARKET from GOLDEN GATE toward POWELL, offset 152 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0037",
+      "date": "1910-02-19",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Jones street, 85 feet north of Pine",
+      "description": "Two three-storey flat structures were to be built here, to cost $20,000.",
+      "citation": {
+        "label": "The San Francisco Call, 19 February 1910, p. 16",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-02-19/ed-1/seq-16/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/02/19/ed-1/seq-16/ocr.txt",
+        "locator": "p. 16, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... will build two three story flat structures in the west line of Jones street, 85 feet north of Pine, to cost $20,000.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 20000,
+        "cross_street": "PINE"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): JONES from PINE toward CALIFORNIA, offset 85 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0038",
+      "date": "1910-02-19",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Ofarrell street, 137 feet south of Jones",
+      "description": "A permit was taken out to build a five-storey brick apartment house here, to cost $120,000.",
+      "citation": {
+        "label": "The San Francisco Call, 19 February 1910, p. 16",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-02-19/ed-1/seq-16/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/02/19/ed-1/seq-16/ocr.txt",
+        "locator": "p. 16, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "A permit has been taken out ... to build a five story brick apartment house in the south line of O'Farrell street, 137 feet west of Jones, to cost $120,000.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 120000,
+        "cross_street": "JONES"
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0323023",
+        "path": "/san-francisco/tenderloin/ofarrell-street/545/",
+        "eas_address": "545 OFARRELL ST",
+        "method": "corner.py --batch: offset mode matched the only candidate, frontage 137-228 ft from JONES on parcel 0323023, built 1910 (exact year match) — 545 O'Farrell St.",
+        "checked_on": "2026-09-24",
+        "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "TBD"
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0039",
+      "date": "1910-02-26",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of Hyde and Clay streets",
+      "description": "Two buildings, on plans by Herman Barth, architect, were to be constructed here, each containing six flats of four rooms each; the cost of the two was to be about $35,000.",
+      "citation": {
+        "label": "The San Francisco Call, 26 February 1910, p. 16",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-02-26/ed-1/seq-16/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/02/26/ed-1/seq-16/ocr.txt",
+        "locator": "p. 16, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "Two buildings, on plans by Herman Barth, architect, will be constructed at the northwest corner of Hyde and Clay streets.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "architect": "Herman Barth",
+        "cost_usd": 35000
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch HYDE & CLAY: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0040",
+      "date": "1910-02-26",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Market street, 105 feet south of Noe",
+      "description": "A plan was announced to erect a two-storey frame structure to contain stores and apartments here, at an estimated cost of $23,900.",
+      "citation": {
+        "label": "The San Francisco Call, 26 February 1910, p. 17",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-02-26/ed-1/seq-17/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/02/26/ed-1/seq-17/ocr.txt",
+        "locator": "p. 17, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... has announced a plan to erect a two story frame structure to contain stores and apartments in the south line of Market street, 105 feet west of Noe, at an estimated cost of $23,900.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 23900,
+        "cross_street": "NOE"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): MARKET from NOE toward SANCHEZ, offset 105 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0041",
+      "date": "1910-02-26",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Geary street, 165 feet north of Powell",
+      "description": "The Crocker Hotel Company took out a permit to erect a four-storey brick hotel building here; the estimated cost was $100,000.",
+      "citation": {
+        "label": "The San Francisco Call, 26 February 1910, p. 17",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-02-26/ed-1/seq-17/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/02/26/ed-1/seq-17/ocr.txt",
+        "locator": "p. 17, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "The Crocker hotel company has taken out a permit to erect a four story brick hotel building in the north line of Geary street, 165 feet west of Powell. The estimated cost is $100,000.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 100000,
+        "firm": "Crocker Hotel Company",
+        "cross_street": "POWELL"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): GEARY from POWELL toward MASON, offset 165 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0042",
+      "date": "1910-03-05",
+      "date_precision": "day",
+      "kind": "sale",
+      "address_as_written": "the corner of Clay and Front streets",
+      "description": "A water lot with a temporary building here was leased by the Coast Realty Company to the Pockwitz-Fleischmann Realty Company for a term of 20 years, for an aggregate rental of more than $73,000; the lessee was to erect a substantial store and office building.",
+      "citation": {
+        "label": "The San Francisco Call, 5 March 1910, p. 21",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-03-05/ed-1/seq-21/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/03/05/ed-1/seq-21/ocr.txt",
+        "locator": "p. 21, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "Water lot with temporary building at the southwest corner of Market and East streets from Coast realty company to Pockwitz-Fleischmann realty company for a term of 20 years for an aggregate rental of more than $73,000.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "firm": "Coast Realty Company; Pockwitz-Fleischmann Realty Company"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch CLAY & FRONT: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0043",
+      "date": "1910-03-12",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "the corner of Hermann and Valencia streets",
+      "description": "The Knights of Pythias took out a permit to erect a four-storey brick store and lodge-rooms building here, at a cost of $80,000.",
+      "citation": {
+        "label": "The San Francisco Call, 12 March 1910, p. 18",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-03-12/ed-1/seq-18/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/03/12/ed-1/seq-18/ocr.txt",
+        "locator": "p. 18, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "[Knight]s of Pythias have taken out a permit to erect a four story brick store and lodge rooms building at the southeast corner of Hermann and Valencia streets, at a cost of $80,000.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 80000,
+        "institution": "Knights of Pythias"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch HERMANN & VALENCIA: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0044",
+      "date": "1910-03-12",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of Geary and Jones streets",
+      "description": "A brick apartment house five storeys high was to be erected here, to cost $57,000.",
+      "citation": {
+        "label": "The San Francisco Call, 12 March 1910, p. 18",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-03-12/ed-1/seq-18/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/03/12/ed-1/seq-18/ocr.txt",
+        "locator": "p. 18, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... will erect a brick apartment house five stories high at the northwest corner of Geary and Jones streets, to cost $57,000.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 57000
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch GEARY & JONES: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0045",
+      "date": "1910-03-12",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of Polk and Sutter streets",
+      "description": "A permit was issued to the Polk Street Investment Company to erect a one-storey reinforced concrete building here, on the site of the former Sutter Street Railroad power house, to cost $41,134.",
+      "citation": {
+        "label": "The San Francisco Call, 12 March 1910, p. 18",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-03-12/ed-1/seq-18/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/03/12/ed-1/seq-18/ocr.txt",
+        "locator": "p. 18, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "A permit has been issued to the Polk Street investment company to erect a building of one story, reinforced concrete, on the site of the former Sutter Street railroad power house, southeast corner of Polk and Sutter streets, to cost $41,134.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 41134,
+        "firm": "Polk Street Investment Company"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch POLK & SUTTER: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0046",
+      "date": "1910-03-12",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Front street, 61 feet south of Pacific",
+      "description": "A three-storey brick factory was to be built here, to cost $21,000.",
+      "citation": {
+        "label": "The San Francisco Call, 12 March 1910, p. 18",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-03-12/ed-1/seq-18/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/03/12/ed-1/seq-18/ocr.txt",
+        "locator": "p. 18, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... will build a three story brick factory in the west side of Front street, 61 feet south of Pacific, to cost $21,000.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 21000,
+        "cross_street": "PACIFIC"
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0173002",
+        "path": "/san-francisco/chinatown/front-street/643/",
+        "eas_address": "643 FRONT ST",
+        "method": "corner.py --batch: offset mode matched the only candidate, frontage 62-98 ft from PACIFIC on parcel 0173002, built 1910 (exact year match) — 643-649 Front St.",
+        "checked_on": "2026-09-24",
+        "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "TBD"
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0047",
+      "date": "1910-03-12",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Mason street, 20 feet south of Ofarrell",
+      "description": "The Swanton Investment Company was to construct a four-storey brick lodging house here, at an estimated cost of $14,000.",
+      "citation": {
+        "label": "The San Francisco Call, 12 March 1910, p. 18",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-03-12/ed-1/seq-18/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/03/12/ed-1/seq-18/ocr.txt",
+        "locator": "p. 18, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "The Swanton investment company will construct a four story brick lodging house in the east line of Mason street, 20 feet south of O'Farrell, at an estimated cost of $14,000.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 14000,
+        "firm": "Swanton Investment Company",
+        "cross_street": "OFARRELL"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): MASON from OFARRELL toward ELLIS, offset 20 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0048",
+      "date": "1910-03-12",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Hyde street, 34 feet north of Clay",
+      "description": "A three-storey frame building to contain flats was to be erected here, to cost $11,000.",
+      "citation": {
+        "label": "The San Francisco Call, 12 March 1910, p. 18",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-03-12/ed-1/seq-18/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/03/12/ed-1/seq-18/ocr.txt",
+        "locator": "p. 18, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... will erect a three story frame building to contain flats in the east line of Hyde street, 34 feet north of Clay, to cost $11,000.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 11000,
+        "cross_street": "CLAY"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "corner.py --batch matched three parcels near the 34 ft offset from CLAY on Hyde street, spanning it (0187016 front 32-57, 0217004 front 35-76, both close roll years) and one more (0216014 front 34-69, built 1911) exactly on the boundary — the offset does not choose between them.",
+        "checked_on": "2026-09-24",
+        "note": "An offset alone does not choose between overlapping lots; see method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0049",
+      "date": "1910-03-12",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "Market street, 91.67 feet southwest of Fremont",
+      "description": "Contracts were awarded for a four-storey and basement class C building here, to cost $42,575.",
+      "citation": {
+        "label": "The San Francisco Call, 12 March 1910, p. 18",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-03-12/ed-1/seq-18/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/03/12/ed-1/seq-18/ocr.txt",
+        "locator": "p. 18, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... has awarded contracts for the construction of a four story and basement class C building, in the south line of Market street, 91:8 feet northeast of Fremont, to cost $42,575.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 42575,
+        "cross_street": "FREMONT"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): MARKET from FREMONT toward SPEAR, offset 91.67 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0050",
+      "date": "1910-03-12",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "Bush street, 102.5 feet north of Battery",
+      "description": "Contracts were awarded for a reinforced concrete building here, amounting to $57,725.",
+      "citation": {
+        "label": "The San Francisco Call, 12 March 1910, p. 18",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-03-12/ed-1/seq-18/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/03/12/ed-1/seq-18/ocr.txt",
+        "locator": "p. 18, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... has awarded contracts for a reinforced concrete build[ing] in the north line of Bush street, 102:6 feet east of Battery, amounting to $57,725.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 57725,
+        "cross_street": "BATTERY"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): BUSH from BATTERY toward DAVIS, offset 102.5 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0051",
+      "date": "1910-03-12",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Monroe street, 91.5 feet north of Bush",
+      "description": "A three-storey and basement brick lodging house was to be built here, to cost $16,700.",
+      "citation": {
+        "label": "The San Francisco Call, 12 March 1910, p. 18",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-03-12/ed-1/seq-18/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/03/12/ed-1/seq-18/ocr.txt",
+        "locator": "p. 18, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... will build a three story and basement brick lodging house in the west line of Monroe street, 91:6 feet north of Bush, to cost $16,700.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 16700,
+        "cross_street": "BUSH"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): MONROE from BUSH toward SUTTER, offset 91.5 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0052",
+      "date": "1910-03-12",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "the corner of 05Th and Minna streets",
+      "description": "Contracts were let for a wholesale meat warehouse here; the building was in course of construction, covering nearly a third of an acre, with a frontage of 75 feet in Fifth and 375 feet in Minna street. The work was being carried out by M. V. Brady, from plans and designs.",
+      "citation": {
+        "label": "The San Francisco Call, 12 March 1910, p. 20",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-03-12/ed-1/seq-20/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/03/12/ed-1/seq-20/ocr.txt",
+        "locator": "p. 20, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "Contracts have been let for the erection of a wholesale meat warehouse at the southwest corner of Fifth and Minna streets. ... having a frontage of 75 feet in Fifth and 375 feet in Minna street. The work is being carried out by M. V. Brady from plans and designs",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "builder": "M. V. Brady"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch 05TH & MINNA: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0053",
+      "date": "1910-03-19",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Jackson street, 137.5 feet east of Laurel",
+      "description": "A wooden structure was to be built here on plans by C. A. Meussdorffer, architect, to cost $24,500.",
+      "citation": {
+        "label": "The San Francisco Call, 19 March 1910, p. 17",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-03-19/ed-1/seq-17/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/03/19/ed-1/seq-17/ocr.txt",
+        "locator": "p. 17, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "A wooden structure, to cost $24,500 will be built ... on plans by C. A. Meussdorffer, architect, in the south line of Jackson street, 137:6 feet east of Laurel.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "architect": "C. A. Meussdorffer",
+        "cost_usd": 24500,
+        "cross_street": "LAUREL"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): JACKSON from LAUREL toward LOCUST, offset 137.5 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0054",
+      "date": "1910-03-19",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of Washington and Arguello streets",
+      "description": "A contract was made for a two-storey frame building to contain four flats here, to cost about $15,000.",
+      "citation": {
+        "label": "The San Francisco Call, 19 March 1910, p. 17",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-03-19/ed-1/seq-17/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/03/19/ed-1/seq-17/ocr.txt",
+        "locator": "p. 17, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... has contracted for a two story frame building, to contain four flats, at the southeast corner of Washington street and First avenue, to cost about $15,000.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 15000
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch WASHINGTON & ARGUELLO: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0055",
+      "date": "1910-03-19",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "04Th street, 92 feet north of Howard",
+      "description": "The Diamond Estate Company took out a permit for a six-storey brick hotel building here, to cost $40,000.",
+      "citation": {
+        "label": "The San Francisco Call, 19 March 1910, p. 17",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-03-19/ed-1/seq-17/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/03/19/ed-1/seq-17/ocr.txt",
+        "locator": "p. 17, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "The Diamond estate company has taken out a permit for the erection of a six story brick hotel building in the west line of Fourth street, 92 feet north of Howard, to cost $40,000.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 40000,
+        "firm": "Diamond Estate Company",
+        "cross_street": "HOWARD"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): 04TH from HOWARD toward MARKET, offset 92 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0056",
+      "date": "1910-03-26",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of Sutter and Taylor streets",
+      "description": "Plans were completed for a seven-storey and high-basement brick hotel building here, at a cost of $50,000; N. W. Sexton, architect.",
+      "citation": {
+        "label": "The San Francisco Call, 26 March 1910, p. 15",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-03-26/ed-1/seq-15/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/03/26/ed-1/seq-15/ocr.txt",
+        "locator": "p. 15, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "Plans have been completed for a seven story and high basement brick hotel building, to be erected at the southwest corner of Sutter and Taylor streets ... at a cost of $50,000. The architect is N. W. Sexton.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "architect": "N. W. Sexton",
+        "cost_usd": 50000
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch SUTTER & TAYLOR: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0057",
+      "date": "1910-03-26",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Sutter street, 107 feet north of Grant",
+      "description": "A permit was issued to erect seven-storey concrete lofts here, at a cost of $52,000.",
+      "citation": {
+        "label": "The San Francisco Call, 26 March 1910, p. 16",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-03-26/ed-1/seq-16/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/03/26/ed-1/seq-16/ocr.txt",
+        "locator": "p. 16, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "A permit has been issued to ... erect seven story concrete lofts in the north line of Sutter street, 107 feet east of Grant avenue, at a cost of $52,000.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 52000,
+        "cross_street": "GRANT"
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0287011",
+        "path": "/san-francisco/financial-district/sutter-street/256/",
+        "eas_address": "256 SUTTER ST",
+        "method": "corner.py --batch: offset mode matched the only candidate, frontage 108-137 ft from GRANT on parcel 0287011, built 1911 (within the tool's 2-year mark) — 256-262 Sutter St, which Planning names the Sather Building.",
+        "checked_on": "2026-09-24",
+        "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "TBD"
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0058",
+      "date": "1910-03-26",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of Hyde and Lynch streets",
+      "description": "A three-storey frame dwelling was to be erected here, to cost $14,900.",
+      "citation": {
+        "label": "The San Francisco Call, 26 March 1910, p. 16",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-03-26/ed-1/seq-16/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/03/26/ed-1/seq-16/ocr.txt",
+        "locator": "p. 16, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... will erect a three story frame dwelling at the northeast corner of Hyde and Lynch streets, to cost $14,900.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 14900
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch HYDE & LYNCH: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0059",
+      "date": "1910-04-02",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of Pine and Leavenworth streets",
+      "description": "Architects Charles M. and Arthur F. Rousseau were awarded contracts for a three-storey brick and frame apartment hotel building here.",
+      "citation": {
+        "label": "The San Francisco Call, 2 April 1910, p. 21",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-02/ed-1/seq-21/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/02/ed-1/seq-21/ocr.txt",
+        "locator": "p. 21, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "Contracts have been awarded by Architects Charles M. and Arthur F. Rousseau for the erection of a three story brick and frame apartment hotel building to be erected [at] the northwest corner of Pine and Leavenworth streets.",
+        "note": "site's purchaser cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "architect": "Charles M. and Arthur F. Rousseau"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch PINE & LEAVENWORTH: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0060",
+      "date": "1910-04-02",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "Golden Gate street, 68 feet south of Hyde",
+      "description": "The Fraternal Order of Eagles was to build a three-storey brick structure here, to cost $100,000, per a building permit.",
+      "citation": {
+        "label": "The San Francisco Call, 2 April 1910, p. 22",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-02/ed-1/seq-22/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/02/ed-1/seq-22/ocr.txt",
+        "locator": "p. 22, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "the three story brick structure to be erected for the Fraternal Order of Eagles in the south line of Golden Gate avenue, as stated in a building permit, is $100,000. The building will stand in the south line of Golden Gate avenue, 68 feet east of Hyde street.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 100000,
+        "institution": "Fraternal Order of Eagles",
+        "cross_street": "HYDE"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): GOLDEN GATE from HYDE toward LEAVENWORTH, offset 68 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0061",
+      "date": "1910-04-02",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of Eddy and Taylor streets",
+      "description": "A hotel was to be erected here, of brick and two storeys high; the cost was estimated at $43,500.",
+      "citation": {
+        "label": "The San Francisco Call, 2 April 1910, p. 22",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-02/ed-1/seq-22/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/02/ed-1/seq-22/ocr.txt",
+        "locator": "p. 22, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "The hotel to be erected for ... at the southeast corner of Eddy and Taylor streets will be of brick and two stories high. The cost, as estimated, will be $43,500.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 43500
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch EDDY & TAYLOR: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0062",
+      "date": "1910-04-02",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of Cole and Parnassus streets",
+      "description": "A three-storey frame stores and flats building was to be constructed here; the estimated cost was $12,000.",
+      "citation": {
+        "label": "The San Francisco Call, 2 April 1910, p. 22",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-02/ed-1/seq-22/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/02/ed-1/seq-22/ocr.txt",
+        "locator": "p. 22, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "At the southeast corner of Cole and Parnassus streets a three story frame stores and flats building will be constructed ... The estimated cost is $12,000.",
+        "note": "builder's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 12000
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch COLE & PARNASSUS: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0063",
+      "date": "1910-04-02",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Union street, 137 feet west of Scott",
+      "description": "A two-storey frame dwelling was to be built here, to cost $9,500.",
+      "citation": {
+        "label": "The San Francisco Call, 2 April 1910, p. 22",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-02/ed-1/seq-22/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/02/ed-1/seq-22/ocr.txt",
+        "locator": "p. 22, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... will build a two story frame dwelling in the south line of Union street, 137 feet west of Scott, to cost $9,500.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 9500,
+        "cross_street": "SCOTT"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): UNION from SCOTT toward PIERCE, offset 137 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0064",
+      "date": "1910-04-02",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Mission street, 200 feet east of 02Nd",
+      "description": "A three-storey brick shop was to be built here, to cost $12,000.",
+      "citation": {
+        "label": "The San Francisco Call, 2 April 1910, p. 22",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-02/ed-1/seq-22/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/02/ed-1/seq-22/ocr.txt",
+        "locator": "p. 22, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... will build a three story brick shop in the south line of Mission street, 200 feet east of Second, to cost $12,000.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 12000,
+        "cross_street": "02ND"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): MISSION from 02ND toward 03RD, offset 200 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0065",
+      "date": "1910-04-02",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of 04Th and Tehama streets",
+      "description": "A three-storey frame rooming house was to be built here, at a cost of about $11,000.",
+      "citation": {
+        "label": "The San Francisco Call, 2 April 1910, p. 22",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-02/ed-1/seq-22/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/02/ed-1/seq-22/ocr.txt",
+        "locator": "p. 22, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "At the southwest corner of Fourth and Tehama streets ... will build a three story frame rooming house at a cost of about $11,000.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 11000
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch 04TH & TEHAMA: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0066",
+      "date": "1910-04-02",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "Market street, 100 feet northeast of 02Nd",
+      "description": "Contracts were let for a six-storey and basement building here, amounting to $68,000.",
+      "citation": {
+        "label": "The San Francisco Call, 2 April 1910, p. 22",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-02/ed-1/seq-22/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/02/ed-1/seq-22/ocr.txt",
+        "locator": "p. 22, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "Contracts have been let amounting to $68,000 for the construction of a six story and basement building ... at the southeast corner of Market street, 100 feet northeast from Second.",
+        "note": "owners' names cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 68000,
+        "cross_street": "02ND"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): MARKET from 02ND toward MONTGOMERY, offset 100 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0067",
+      "date": "1910-04-02",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Leavenworth street, 67.5 feet south of Eddy",
+      "description": "A six-storey and basement brick building was to be erected here; the cost was to be about $60,000.",
+      "citation": {
+        "label": "The San Francisco Call, 2 April 1910, p. 22",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-02/ed-1/seq-22/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/02/ed-1/seq-22/ocr.txt",
+        "locator": "p. 22, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... will erect a six story and basement brick building in the west line of Leavenworth street, 67:6 feet south of Eddy. The cost will be about $60,000.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 60000,
+        "cross_street": "EDDY"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): LEAVENWORTH from EDDY toward TURK, offset 67.5 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0068",
+      "date": "1910-04-09",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "the corner of Grant and Harlan streets",
+      "description": "An eight-storey steel-frame class A building, to be used as a hotel, was planned by T. Paterson Ross and A. W. Burgren, architects.",
+      "citation": {
+        "label": "The San Francisco Call, 9 April 1910, p. 14",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-09/ed-1/seq-14/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/09/ed-1/seq-14/ocr.txt",
+        "locator": "p. 14, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "An eight story, steel frame, class A building will be erected at the southwest corner of Grant avenue and Harlan place ... The plans have been prepared by T. Paterson Ross and A. W. Burgren, architects.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "architect": "T. Paterson Ross and A. W. Burgren"
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0286003",
+        "path": "/san-francisco/financial-district/grant-avenue/321/",
+        "eas_address": "321 GRANT AVE",
+        "method": "Corner and architects match the O. D. Baldwin hotel already published at 321 Grant Avenue from this same source (sn85066387-1910-real-estate-0097, 1910-04-09, same date and wording) — a duplicate extraction of the same passage.",
+        "checked_on": "2026-09-24",
+        "by_hand": true
+      },
+      "publish": {
+        "status": "declined",
+        "note": "Already published as sn85066387-1910-real-estate-0097 on 321 Grant Avenue."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0069",
+      "date": "1910-04-09",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of Fulton and Octavia streets",
+      "description": "The G. W. Hume company was to erect a three-storey frame building here, to cost $13,000.",
+      "citation": {
+        "label": "The San Francisco Call, 9 April 1910, p. 14",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-09/ed-1/seq-14/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/09/ed-1/seq-14/ocr.txt",
+        "locator": "p. 14, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "The G. W. Hume company will erect a three story frame building at the northeast corner of Fulton and Octavia streets to cost $13,000.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 13000,
+        "firm": "G. W. Hume company"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch FULTON & OCTAVIA: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0070",
+      "date": "1910-04-09",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of Larkin and Ofarrell streets",
+      "description": "A three-storey brick store and flat building was to be erected here, to cost $12,000.",
+      "citation": {
+        "label": "The San Francisco Call, 9 April 1910, p. 14",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-09/ed-1/seq-14/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/09/ed-1/seq-14/ocr.txt",
+        "locator": "p. 14, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... will erect a three story brick store and flat building at the southeast corner of Larkin and O'Farrell streets to cost $12,000.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 12000
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch LARKIN & OFARRELL: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0071",
+      "date": "1910-04-09",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of Van Ness and Turk streets",
+      "description": "A one-storey brick building was contracted for here, to cost $15,000.",
+      "citation": {
+        "label": "The San Francisco Call, 9 April 1910, p. 14",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-09/ed-1/seq-14/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/09/ed-1/seq-14/ocr.txt",
+        "locator": "p. 14, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... has contracted for the construction of a one story brick building at the southeast corner of Van Ness avenue and Turk street to cost $15,000.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 15000
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch VAN NESS & TURK: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0072",
+      "date": "1910-04-16",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Jones street, 122 feet south of Sutter",
+      "description": "A permit was taken out by the Berkshire Apartments corporation to erect a five-storey brick structure here; the estimated cost was $120,000.",
+      "citation": {
+        "label": "The San Francisco Call, 16 April 1910, p. 14",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-16/ed-1/seq-14/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/16/ed-1/seq-14/ocr.txt",
+        "locator": "p. 14, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "A permit has been taken out by the Berkshire apartments, a corporation, to erect a five story brick structure in the west line of Jones street, 122 feet south of Sutter.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 120000,
+        "firm": "Berkshire Apartments corporation",
+        "cross_street": "SUTTER"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): JONES from SUTTER toward POST, offset 122 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0073",
+      "date": "1910-04-16",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Ellis street, 68.75 feet north of Larkin",
+      "description": "A three-storey and basement class C building was built here on plans by O'Brien Brothers, architects; the estimated cost was $12,900.",
+      "citation": {
+        "label": "The San Francisco Call, 16 April 1910, p. 14",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-16/ed-1/seq-14/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/16/ed-1/seq-14/ocr.txt",
+        "locator": "p. 14, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "A three story and basement class C building for ... on plans by O'Brien Brothers, architects, in the north line of Ellis street, 68:9 feet east of Larkin. The estimated cost is $12,900.",
+        "note": "owners' names cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "architect": "O'Brien Brothers",
+        "cost_usd": 12900,
+        "cross_street": "LARKIN"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): ELLIS from LARKIN toward HYDE, offset 68.75 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0074",
+      "date": "1910-04-16",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Washington street, 62 feet south of Spruce",
+      "description": "A three-storey and basement frame residence was to cost about $15,000, on plans by Welsh & Carey, architects.",
+      "citation": {
+        "label": "The San Francisco Call, 16 April 1910, p. 14",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-16/ed-1/seq-14/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/16/ed-1/seq-14/ocr.txt",
+        "locator": "p. 14, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "A three story and basement frame residence in the south line of Washington street, 62 feet east of Spruce, for ... on plans by Welsh & Carey, architects, to cost about $15,000.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "architect": "Welsh & Carey",
+        "cost_usd": 15000,
+        "cross_street": "SPRUCE"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): WASHINGTON from SPRUCE toward MAPLE, offset 62 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0075",
+      "date": "1910-04-16",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of Front and Clay streets",
+      "description": "Piles were being driven for a four-storey and basement brick building here; the facade was to be terra cotta and cast iron.",
+      "citation": {
+        "label": "The San Francisco Call, 16 April 1910, p. 14",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-16/ed-1/seq-14/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/16/ed-1/seq-14/ocr.txt",
+        "locator": "p. 14, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "The piles are now being driven for a four story and basement brick building at the southeast corner of Front and Clay streets. The facade is of terra cotta and cast iron.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch FRONT & CLAY: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0076",
+      "date": "1910-04-23",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of Battery and Merchant streets",
+      "description": "A building was to be constructed here; the cost was estimated at $300,000.",
+      "citation": {
+        "label": "The San Francisco Call, 23 April 1910, p. 14",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-23/ed-1/seq-14/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/23/ed-1/seq-14/ocr.txt",
+        "locator": "p. 14, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "[A building] will be constructed at the southwest corner of Battery and Merchant streets. The cost is estimated at $300,000.",
+        "note": "owners' names cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 300000
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch BATTERY & MERCHANT: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0077",
+      "date": "1910-04-23",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of 08Th and Minna streets",
+      "description": "O'Brien Brothers, architects, prepared plans for a structure here; the cost was to be about $15,000.",
+      "citation": {
+        "label": "The San Francisco Call, 23 April 1910, p. 14",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-23/ed-1/seq-14/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/23/ed-1/seq-14/ocr.txt",
+        "locator": "p. 14, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "O'Brien Brothers, architects, have prepared the plans for a structure ... to stand on the northeast corner of Eighth and Minna streets. The cost will be about $15,000.",
+        "note": "client's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "architect": "O'Brien Brothers",
+        "cost_usd": 15000
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch 08TH & MINNA: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0078",
+      "date": "1910-04-23",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "02Nd street, 275 feet northwest of Bryant",
+      "description": "Contracts were awarded for a three-storey brick building here.",
+      "citation": {
+        "label": "The San Francisco Call, 23 April 1910, p. 16",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-23/ed-1/seq-16/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/23/ed-1/seq-16/ocr.txt",
+        "locator": "p. 16, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... has awarded contracts for the construction of a three story brick building in the northeast line of Second street, 275 feet northwest of Bryant street.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cross_street": "BRYANT"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): 02ND from BRYANT toward FOLSOM, offset 275 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0079",
+      "date": "1910-04-23",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "the corner of Van Ness and Pacific streets",
+      "description": "Contracts were placed for a four-storey brick and frame apartment building here.",
+      "citation": {
+        "label": "The San Francisco Call, 23 April 1910, p. 16",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-23/ed-1/seq-16/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/23/ed-1/seq-16/ocr.txt",
+        "locator": "p. 16, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... has placed the contracts for a four story brick and frame apartment building at the northwest corner of Van Ness and Pacific avenues.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch VAN NESS & PACIFIC: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0081",
+      "date": "1910-04-23",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Montgomery street, 40 feet south of Vallejo",
+      "description": "A permit was taken out to erect a three-storey concrete structure for stores and flats here, to cost about $14,000.",
+      "citation": {
+        "label": "The San Francisco Call, 23 April 1910, p. 16",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-23/ed-1/seq-16/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/23/ed-1/seq-16/ocr.txt",
+        "locator": "p. 16, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... has taken out a permit to erect a three story concrete structure for stores and flats in the west line of Montgomery avenue, 40 feet south of Vallejo street, to cost about $14,000.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 14000,
+        "cross_street": "VALLEJO"
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0133010",
+        "path": "/san-francisco/north-beach/montgomery-street/1109/",
+        "eas_address": "1109 MONTGOMERY ST",
+        "method": "corner.py --batch: offset mode matched the only candidate, frontage 40-65 ft from VALLEJO on parcel 0133010, built 1912 (within the tool's 2-year mark) — 1109-1113 Montgomery St. No page exists yet; seeded by this run.",
+        "checked_on": "2026-09-24",
+        "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "TBD"
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0082",
+      "date": "1910-04-23",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Davis street, 40 feet north of Clay",
+      "description": "A two-storey brick warehouse was to be erected here.",
+      "citation": {
+        "label": "The San Francisco Call, 23 April 1910, p. 16",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-23/ed-1/seq-16/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/23/ed-1/seq-16/ocr.txt",
+        "locator": "p. 16, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "A two story brick warehouse will be erected in the east line of Davis street, 40 feet north of Clay.",
+        "note": "builders' names cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cross_street": "CLAY"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): DAVIS from CLAY toward WASHINGTON, offset 40 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0083",
+      "date": "1910-04-23",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "the corner of 18Th and Lapidge streets",
+      "description": "Contracts were just awarded for the Mission Turn Verein hall building here, the contract price $42,500; plans by A. Reinhold Denke, architect.",
+      "citation": {
+        "label": "The San Francisco Call, 23 April 1910, p. 16",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-23/ed-1/seq-16/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/23/ed-1/seq-16/ocr.txt",
+        "locator": "p. 16, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "Contracts have just been awarded for the construction of the Mission Turn Verein hall building, at the southwest corner of Eighteenth and Lapidge streets, upon which work will begin at once. The contract price is $42,500 ... The plans have been prepared by A. Reinhold Denke, architect.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "architect": "A. Reinhold Denke",
+        "cost_usd": 42500,
+        "institution": "Mission Turn Verein"
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3588082",
+        "path": "/san-francisco/mission/18th-street/3541/",
+        "eas_address": "3541 18TH ST",
+        "method": "Corner, contract price and architect match the Mission Turn Verein hall already published at 3541 18th Street from this same source (the 1910-04-23 building-contract entry in sn85066387-1910-real-estate.json) — a duplicate extraction of the same passage.",
+        "checked_on": "2026-09-24",
+        "by_hand": true
+      },
+      "publish": {
+        "status": "declined",
+        "note": "Already published on 3541 18th Street from this source's 1910-04-23 entry."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0084",
+      "date": "1910-04-23",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Guerrero street, 130 feet west of 15Th",
+      "description": "A two-storey frame building was to be erected here, on plans by Arthur G. Scholz, architect.",
+      "citation": {
+        "label": "The San Francisco Call, 23 April 1910, p. 16",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-23/ed-1/seq-16/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/23/ed-1/seq-16/ocr.txt",
+        "locator": "p. 16, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "A two story frame building will be erected in the westerly line of Guerrero street, 130 feet west of Fifteenth street, for ..., on plans by Arthur G. Scholz, architect.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "architect": "Arthur G. Scholz",
+        "cross_street": "15TH"
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3556006",
+        "path": "/san-francisco/mission/guerrero-street/326/",
+        "eas_address": "326 GUERRERO ST",
+        "method": "corner.py --batch: offset mode matched the only candidate, frontage 131-156 ft from 15TH on parcel 3556006, built 1910 (exact year match) — 326-328 Guerrero St.",
+        "checked_on": "2026-09-24",
+        "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "TBD"
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0085",
+      "date": "1910-04-23",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Pine street, 87.5 feet north of Leavenworth",
+      "description": "A four-storey brick and frame building containing 12 artistic apartments was under construction here; Arthur Francis Rousseau is the architect.",
+      "citation": {
+        "label": "The San Francisco Call, 23 April 1910, p. 16",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-23/ed-1/seq-16/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/23/ed-1/seq-16/ocr.txt",
+        "locator": "p. 16, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "Work is rapidly progressing on a four story brick and frame building in the north side of Pine street, 87:6 feet west of Leavenworth. ... Arthur Francis Rousseau is the architect.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "architect": "Arthur Francis Rousseau",
+        "cross_street": "LEAVENWORTH"
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0251008",
+        "path": "/san-francisco/nob-hill/pine-street/1220/",
+        "eas_address": "1220 PINE ST",
+        "method": "Same parcel as finding -0029, but the page already carries a same-date (1910-04-23) entry — 'Under construction: a four-storey brick and frame building of twelve apartments... Arthur Francis Rousseau, architect' — that is this same record.",
+        "checked_on": "2026-09-24",
+        "by_hand": true
+      },
+      "publish": {
+        "status": "declined",
+        "note": "Duplicates the loc-sf-call-1910-04-23 entry already on 1220 Pine Street."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0086",
+      "date": "1910-04-30",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "the corner of Scott and Mcallister streets",
+      "description": "A contract was awarded for a three-storey apartment building here, to contain 12 apartments of four rooms each.",
+      "citation": {
+        "label": "The San Francisco Call, 30 April 1910, p. 18",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-30/ed-1/seq-18/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/30/ed-1/seq-18/ocr.txt",
+        "locator": "p. 18, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "Contracts have been let by ... for a three story apartment building at the southwest corner of Scott and McAllister streets.",
+        "note": "owners' names cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch SCOTT & MCALLISTER: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0087",
+      "date": "1910-04-30",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "the corner of Jones and Eddy streets",
+      "description": "Contracts were awarded for a seven-storey class C building here; the estimated cost was $80,000.",
+      "citation": {
+        "label": "The San Francisco Call, 30 April 1910, p. 20",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-30/ed-1/seq-20/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/30/ed-1/seq-20/ocr.txt",
+        "locator": "p. 20, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... has awarded contracts for the construction of a seven story class C building to stand at the northwest corner of Jones and Eddy streets. The estimated cost of this is $80,000.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 80000
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch JONES & EDDY: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0088",
+      "date": "1910-04-30",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of Geary and Mason streets",
+      "description": "A permit was secured for a six-storey brick lodging house here, at a cost of $40,000.",
+      "citation": {
+        "label": "The San Francisco Call, 30 April 1910, p. 20",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-30/ed-1/seq-20/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/30/ed-1/seq-20/ocr.txt",
+        "locator": "p. 20, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... has secured a permit for the erection of a six story brick lodging house at the southeast corner of Geary and Mason streets, at a cost of $40,000.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 40000
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch GEARY & MASON: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0089",
+      "date": "1910-04-30",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "the corner of Pacific and Davis streets",
+      "description": "Swift & Co. were awarded contracts for a three-storey wholesale market building here; the cost was to be about $122,000.",
+      "citation": {
+        "label": "The San Francisco Call, 30 April 1910, p. 20",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-30/ed-1/seq-20/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/30/ed-1/seq-20/ocr.txt",
+        "locator": "p. 20, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "Swift & Co. have awarded contracts for a three story wholesale market building at the northwest corner of Pacific and Davis streets, the cost of which will be about $122,000.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 122000,
+        "firm": "Swift & Co."
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch PACIFIC & DAVIS: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0090",
+      "date": "1910-04-30",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Pacific street, 337.5 feet east of Broderick",
+      "description": "A brick dwelling house and concrete garage were to be erected here, to cost about $45,000.",
+      "citation": {
+        "label": "The San Francisco Call, 30 April 1910, p. 20",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-30/ed-1/seq-20/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/30/ed-1/seq-20/ocr.txt",
+        "locator": "p. 20, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... will erect a brick dwelling house and concrete garage in the north line of Pacific avenue, 337:6 feet east of Broderick street, to cost about $45,000.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 45000,
+        "cross_street": "BRODERICK"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): PACIFIC from BRODERICK toward SCOTT, offset 337.5 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0091",
+      "date": "1910-04-30",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Pacific street, 120 feet west of Pierce",
+      "description": "A two-storey frame dwelling was to be erected here; the cost was estimated at $23,000.",
+      "citation": {
+        "label": "The San Francisco Call, 30 April 1910, p. 20",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-30/ed-1/seq-20/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/30/ed-1/seq-20/ocr.txt",
+        "locator": "p. 20, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "A two story frame dwelling will be erected ... in the north line of Pacific avenue, 120 feet west of Pierce street, the cost of which is estimated at $23,000.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 23000,
+        "cross_street": "PIERCE"
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0584006",
+        "path": "/san-francisco/pacific-heights/pacific-avenue/2606/",
+        "eas_address": "2606 PACIFIC AVE",
+        "method": "corner.py --batch: offset mode matched the only candidate, frontage 120-162 ft from PIERCE on parcel 0584006, built 1910 (exact year match) — 2606 Pacific Ave.",
+        "checked_on": "2026-09-24",
+        "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "TBD"
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0092",
+      "date": "1910-04-30",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of Kearny and Sutter streets",
+      "description": "Tobelman & Burke were to build a three-storey concrete stores and lofts building here; the cost was to be about $19,000.",
+      "citation": {
+        "label": "The San Francisco Call, 30 April 1910, p. 20",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-30/ed-1/seq-20/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/30/ed-1/seq-20/ocr.txt",
+        "locator": "p. 20, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "Tobelman & Burke will build a three story concrete stores and lofts building at the northeast corner of Kearny and Sutter streets, the cost of which will be about $19,000.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 19000,
+        "firm": "Tobelman & Burke"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch KEARNY & SUTTER: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0093",
+      "date": "1910-04-30",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Market street, 45 feet south of Spear",
+      "description": "A 10-storey class A structure was reported to be erected here; a local architect had prepared plans, submitted for consideration.",
+      "citation": {
+        "label": "The San Francisco Call, 30 April 1910, p. 20",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-04-30/ed-1/seq-20/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/04/30/ed-1/seq-20/ocr.txt",
+        "locator": "p. 20, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "It is reported that a 10 story class A structure will be erected in the southerly line of Market street, 45 feet west of Spear. A local architect has prepared plans, which have been submitted for consideration.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cross_street": "SPEAR"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): MARKET from SPEAR toward FREMONT, offset 45 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0094",
+      "date": "1910-05-14",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Golden Gate street, 68 feet east of Jones",
+      "description": "A brick warehouse was to be built here, to cost about $12,000.",
+      "citation": {
+        "label": "The San Francisco Call, 14 May 1910, p. 11",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-05-14/ed-1/seq-11/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/05/14/ed-1/seq-11/ocr.txt",
+        "locator": "p. 11, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "[A bri]ck warehouse will be built ... in the north line of Golden Gate avenue, 68 feet east of Jones, to cost about $12,000.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 12000,
+        "cross_street": "JONES"
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0343009",
+        "path": "/san-francisco/tenderloin/golden-gate-avenue/64/",
+        "eas_address": "64 GOLDEN GATE AVE",
+        "method": "corner.py --batch: offset mode matched the only candidate, frontage 68-151 ft from JONES on parcel 0343009, built 1910 (exact year match) — 64 Golden Gate Ave.",
+        "checked_on": "2026-09-24",
+        "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "TBD"
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0095",
+      "date": "1910-05-14",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Market street, 200 feet west of 05Th",
+      "description": "A two-storey store and lofts building of brick was to be placed here, at an estimated cost of $11,800.",
+      "citation": {
+        "label": "The San Francisco Call, 14 May 1910, p. 11",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-05-14/ed-1/seq-11/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/05/14/ed-1/seq-11/ocr.txt",
+        "locator": "p. 11, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... will place a two story store and lofts building of brick in the south line of Market street, 200 feet west of Fifth, at an estimated cost of $11,800.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 11800,
+        "cross_street": "05TH"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): MARKET from 05TH toward MASON, offset 200 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0096",
+      "date": "1910-05-14",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of Lincoln and 17Th streets",
+      "description": "A two-storey frame apartments building was contracted for here, to cost about $15,000, in the Sunset district.",
+      "citation": {
+        "label": "The San Francisco Call, 14 May 1910, p. 11",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-05-14/ed-1/seq-11/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/05/14/ed-1/seq-11/ocr.txt",
+        "locator": "p. 11, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... has contracted for a two story frame apartments building, to cost about $15,000, to be erected at the southwest corner of Lincoln way and Seventeenth avenue, in the Sunset district.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 15000
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch LINCOLN & 17TH: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0097",
+      "date": "1910-05-14",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Clay street, 187 feet east of Taylor",
+      "description": "A three-storey frame building was to be constructed here, to cost $10,000.",
+      "citation": {
+        "label": "The San Francisco Call, 14 May 1910, p. 11",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-05-14/ed-1/seq-11/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/05/14/ed-1/seq-11/ocr.txt",
+        "locator": "p. 11, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "A three story frame building will be constructed ... in the north line of Clay street, 187 feet east of Taylor, to cost $10,000.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 10000,
+        "cross_street": "TAYLOR"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): CLAY from TAYLOR toward JONES, offset 187 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0098",
+      "date": "1910-05-14",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "the corner of Bush and Mason streets",
+      "description": "A six-storey class C building was contracted for by the Wolf Improvement Company, at a cost of about $90,000.",
+      "citation": {
+        "label": "The San Francisco Call, 14 May 1910, p. 11",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-05-14/ed-1/seq-11/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/05/14/ed-1/seq-11/ocr.txt",
+        "locator": "p. 11, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "A six story, class C building has been contracted for by the Wolf improvement company, which will be erected, at a cost of about $90,000, at the northeast corner of Bush and Mason streets.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 90000,
+        "firm": "Wolf Improvement Company"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch BUSH & MASON: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0099",
+      "date": "1910-05-14",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Shotwell street, 95 feet north of 19Th",
+      "description": "A two-storey brick storage building was contracted for by the Old Homestead bakery here.",
+      "citation": {
+        "label": "The San Francisco Call, 14 May 1910, p. 11",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-05-14/ed-1/seq-11/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/05/14/ed-1/seq-11/ocr.txt",
+        "locator": "p. 11, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "A two story brick storage building has been contracted for by the Old Homestead bakery to stand in the west line of Shotwell street, 95 feet north of Nineteenth.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "institution": "Old Homestead bakery",
+        "cross_street": "19TH"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): SHOTWELL from 19TH toward 18TH, offset 95 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0100",
+      "date": "1910-05-14",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Bush street, 50 feet east of Mason",
+      "description": "A class A apartment house was to be erected for the William Wolf Investment Company here, to cost $90,000, six storeys high, 110 rooms; plans by the Pacific architectural bureau.",
+      "citation": {
+        "label": "The San Francisco Call, 14 May 1910, p. 12",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-05-14/ed-1/seq-12/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/05/14/ed-1/seq-12/ocr.txt",
+        "locator": "p. 12, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "A class A apartment house will be erected for the William Wolf Investment company in the north line of Bush street, 50 feet east of Mason, which will cost $90,000. It will be six stories high and will contain 110 rooms. ... The plans have been prepared by the Pacific architectural [bureau].",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 90000,
+        "firm": "William Wolf Investment Company",
+        "cross_street": "MASON"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): BUSH from MASON toward TAYLOR, offset 50 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0101",
+      "date": "1910-05-14",
+      "date_precision": "day",
+      "kind": "sale",
+      "address_as_written": "the corner of Broadway and Jones streets",
+      "description": "An apartment house here, on a lot 47x60 feet with 16 apartments, was part of the consideration in a sale to the M. Fisher company.",
+      "citation": {
+        "label": "The San Francisco Call, 14 May 1910, p. 13",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-05-14/ed-1/seq-13/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/05/14/ed-1/seq-13/ocr.txt",
+        "locator": "p. 13, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "the apartment house at the southeast corner of Broadway and Jones streets, occupying a lot 47x60 feet, the improvements consisting of a frame apartment building of 16 apartments ... the new owners, the M. Fisher company",
+        "note": "seller's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "firm": "M. Fisher company"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch BROADWAY & JONES: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0102",
+      "date": "1910-05-21",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Jackson street, 170 feet east of Taylor",
+      "description": "An apartment house to contain six five-room apartments was being built here; Hladik & Thayer are the architects.",
+      "citation": {
+        "label": "The San Francisco Call, 21 May 1910, p. 9",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-05-21/ed-1/seq-9/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/05/21/ed-1/seq-9/ocr.txt",
+        "locator": "p. 9, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "An apartment house, to contain six five-room apartments is being built for ... in the north line of Jackson street, 170 feet east of Taylor. ... Hladik & Thayer are the architects.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "architect": "Hladik & Thayer",
+        "cross_street": "TAYLOR"
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0182010",
+        "path": "/san-francisco/nob-hill/jackson-street/1142/",
+        "eas_address": "1142 JACKSON ST",
+        "method": "corner.py --batch: offset mode matched the only candidate, frontage 170-201 ft from TAYLOR on parcel 0182010, built 1909 (within the tool's 2-year mark) — 1142 Jackson St. No page exists yet; seeded by this run.",
+        "checked_on": "2026-09-24",
+        "by_hand": true
+      },
+      "publish": {
+        "status": "published",
+        "pr": "TBD"
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0103",
+      "date": "1910-05-21",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of Pine and Leavenworth streets",
+      "description": "Arthur F. Rousseau, of the Monadnock Building, reported a three-storey and basement brick and frame building containing 19 apartments here, at a cost of $35,000.",
+      "citation": {
+        "label": "The San Francisco Call, 21 May 1910, p. 10",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-05-21/ed-1/seq-10/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/05/21/ed-1/seq-10/ocr.txt",
+        "locator": "p. 10, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "A three story and basement brick and frame building containing 19 apartments of two, three and four rooms and bath each, for ..., at the northwest corner of Pine and Leavenworth streets, at a cost of $35,000",
+        "note": "client's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "architect": "Arthur F. Rousseau",
+        "cost_usd": 35000
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch PINE & LEAVENWORTH: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0104",
+      "date": "1910-05-21",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of California and Leavenworth streets",
+      "description": "Arthur F. Rousseau reported a five-storey reinforced concrete apartment house here, containing 24 apartments of two and three rooms, at a cost of $60,000.",
+      "citation": {
+        "label": "The San Francisco Call, 21 May 1910, p. 10",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-05-21/ed-1/seq-10/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/05/21/ed-1/seq-10/ocr.txt",
+        "locator": "p. 10, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "a five story reinforced concrete apartment house for Arthur F. Rousseau at the southwest corner of California and Leavenworth streets, containing 24 apartments of two and three rooms, at a cost of $60,000.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "architect": "Arthur F. Rousseau",
+        "cost_usd": 60000
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch CALIFORNIA & LEAVENWORTH: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0105",
+      "date": "1910-06-11",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of 07Th and Mission streets",
+      "description": "A $110,000 seven-storey brick lodging house was to be erected here.",
+      "citation": {
+        "label": "The San Francisco Call, 11 June 1910, p. 9",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-06-11/ed-1/seq-9/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/06/11/ed-1/seq-9/ocr.txt",
+        "locator": "p. 9, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "the largest is for a $110,000 seven story brick lodging house at the corner of Seventh and Mission streets, to be erected by ...",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 110000
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch 07TH & MISSION: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0106",
+      "date": "1910-06-11",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of Golden Gate and Larkin streets",
+      "description": "A five-storey hotel was under construction here for the Farrell estate; W. D. Shea is the architect. The contract price was upward of $100,000.",
+      "citation": {
+        "label": "The San Francisco Call, 11 June 1910, p. 11",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-06-11/ed-1/seq-11/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/06/11/ed-1/seq-11/ocr.txt",
+        "locator": "p. 11, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "A five story hotel is under construction at the southwest corner of Golden Gate avenue and Larkin street for the Farrell estate. ... W. D. Shea is the architect. The contract price is upward of $100,000.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "architect": "W. D. Shea",
+        "cost_usd": 100000,
+        "firm": "Farrell estate"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch GOLDEN GATE & LARKIN: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0107",
+      "date": "1910-06-11",
+      "date_precision": "day",
+      "kind": "site history",
+      "address_as_written": "the corner of Mission and New Montgomery streets",
+      "description": "The reconstruction of the old Rialto Building here had begun, with about $500,000 to be spent. The old building was erected in 1901 at a cost of $630,000 and was destroyed in the great fire.",
+      "citation": {
+        "label": "The San Francisco Call, 11 June 1910, p. 11",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-06-11/ed-1/seq-11/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/06/11/ed-1/seq-11/ocr.txt",
+        "locator": "p. 11, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "The reconstruction of the old Rialto building at the corner of Mission and New Montgomery streets has begun. ... [the owner] is preparing to spend about $500,000 ... The old building was erected in 1901 at a cost of $630,000. The great fire left it a[...]",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 500000,
+        "building_name": "Rialto Building"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch MISSION & NEW MONTGOMERY: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0108",
+      "date": "1910-06-18",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "the corner of Kearny and Sutter streets",
+      "description": "The southeast corner here was leased to a local hotel company; plans for a large eight-storey hotel were being prepared by architect L. B. Dutton.",
+      "citation": {
+        "label": "The San Francisco Call, 18 June 1910, p. 10",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-06-18/ed-1/seq-10/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/06/18/ed-1/seq-10/ocr.txt",
+        "locator": "p. 10, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "the southeast corner of Kearny and Sutter streets to a local hotel company through Keith & McCarthy. ... Plans for a large hotel are now being prepared by Architect L. B. Dutton.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "architect": "L. B. Dutton"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch KEARNY & SUTTER: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0109",
+      "date": "1910-06-18",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of 19Th and Dolores streets",
+      "description": "A new gothic-style church building was begun here for the Mission Congregational church.",
+      "citation": {
+        "label": "The San Francisco Call, 18 June 1910, p. 10",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-06-18/ed-1/seq-10/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/06/18/ed-1/seq-10/ocr.txt",
+        "locator": "p. 10, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "A handsome new church building of gothic style has been begun for the Mission Congregational church at the southeast corner of Nineteenth and Dolores streets.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "institution": "Mission Congregational church"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch 19TH & DOLORES: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0110",
+      "date": "1910-06-18",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Geary street, 77 feet north of Mason",
+      "description": "Excavation was made for the foundation of a seven-storey hotel here for the St. Francis Realty Company; the hotel was to occupy part of the lot recently bought from the Ford estate, with a frontage of 60 feet.",
+      "citation": {
+        "label": "The San Francisco Call, 18 June 1910, p. 10",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-06-18/ed-1/seq-10/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/06/18/ed-1/seq-10/ocr.txt",
+        "locator": "p. 10, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "Excavation has been made for the foundation of a seven story hotel in the north line of Geary street, 77 feet west of Mason, for the St. Francis realty company. ... a frontage of 60 feet",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "firm": "St. Francis Realty Company",
+        "cross_street": "MASON"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch (offset mode): GEARY from MASON toward TAYLOR, offset 77 ft — no parcel's measured frontage start on that block face falls within 4 ft of the offset with a roll year within 2 years of 1910.",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0111",
+      "date": "1910-07-30",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of California and Stockton streets",
+      "description": "One of the most modern apartment buildings yet to be erected in the city was soon to begin here, in Spanish style with concrete plaster walls, six storeys, 27 apartments.",
+      "citation": {
+        "label": "The San Francisco Call, 30 July 1910, p. 8",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-07-30/ed-1/seq-8/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/07/30/ed-1/seq-8/ocr.txt",
+        "locator": "p. 8, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "One of the most modern apartment buildings yet to be erected in this city will soon be begun at the northeast corner of California and Stockton streets. ... six stories high, containing 27 apartments",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch CALIFORNIA & STOCKTON: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0112",
+      "date": "1910-08-20",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "the corner of California and Maple streets",
+      "description": "The Hospital for Children and Training School for Nurses let the excavation, foundation and concrete work to the Clinton Fireproofing Company, and the steam power and heating plant to Robert Dalziel Jr.",
+      "citation": {
+        "label": "The San Francisco Call, 20 August 1910, p. 10",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-08-20/ed-1/seq-10/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/08/20/ed-1/seq-10/ocr.txt",
+        "locator": "p. 10, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "Hospital for Children and Training School for Nurses with Clinton fireproofing company — Excavation, foundation, concrete work ... for building in California street near Maple",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "institution": "Hospital for Children and Training School for Nurses",
+        "contractors": "Clinton Fireproofing Company; Robert Dalziel Jr."
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch CALIFORNIA & MAPLE: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0113",
+      "date": "1910-09-24",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of Frederick and Ashbury streets",
+      "description": "The Crossways apartment house was being built here, the third such structure erected in Ashbury Heights (after the Casa Madrona and the Uplands), in Spanish renaissance style.",
+      "citation": {
+        "label": "The San Francisco Call, 24 September 1910, p. 9",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-09-24/ed-1/seq-9/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/09/24/ed-1/seq-9/ocr.txt",
+        "locator": "p. 9, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... is building the Crossways apartment house at the southeast corner of Frederick and Ashbury streets. It is the third structure of this order to be erected ... in Ashbury heights, the other two being the Casa Madrona and the Uplands.",
+        "note": "builder's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "building_name": "The Crossways"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch FREDERICK & ASHBURY: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0114",
+      "date": "1910-09-24",
+      "date_precision": "day",
+      "kind": "building contract",
+      "address_as_written": "the corner of Taylor and Filbert streets",
+      "description": "A contract was made to erect a three-storey frame building here, to cost $8,500.",
+      "citation": {
+        "label": "The San Francisco Call, 24 September 1910, p. 10",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-09-24/ed-1/seq-10/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/09/24/ed-1/seq-10/ocr.txt",
+        "locator": "p. 10, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "... with ... — To erect a three story frame building at [south]east corner of Taylor and Filbert streets ... $8,500.",
+        "note": "owner's and contractor's names cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 8500
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch TAYLOR & FILBERT: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0115",
+      "date": "1910-10-22",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of California and Leavenworth streets",
+      "description": "Arthur F. Rousseau was loaned $20,000 by a bank to build a first-class apartment house here, to cost $25,000.",
+      "citation": {
+        "label": "The San Francisco Call, 22 October 1910, p. 9",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-10-22/ed-1/seq-9/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/10/22/ed-1/seq-9/ocr.txt",
+        "locator": "p. 9, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "The French-American bank has loaned $20,000 to Arthur F. Rousseau to build a first class apartment house to cost $25,000 at the southwest corner of California and Leavenworth streets.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "architect": "Arthur F. Rousseau",
+        "cost_usd": 25000
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch CALIFORNIA & LEAVENWORTH: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0116",
+      "date": "1910-11-19",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of Sutter and Jones streets",
+      "description": "A six-storey brick and steel frame building was planned here, with a depth of 122 feet in Jones and a frontage of 57:6 in Sutter, for apartments of two and three rooms.",
+      "citation": {
+        "label": "The San Francisco Call, 19 November 1910, p. 9",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-11-19/ed-1/seq-9/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/11/19/ed-1/seq-9/ocr.txt",
+        "locator": "p. 9, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "A six story brick and steel frame building for ... on the southwest corner of Sutter and Jones streets, with a depth of 122 feet in Jones, and a frontage of 57:6 in Sutter",
+        "note": "owner's name and his reserved top-floor use cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch SUTTER & JONES: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0117",
+      "date": "1910-11-19",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of Post and Jones streets",
+      "description": "A six-storey apartment house was to be erected by the Schmiedell estate company here; Frederick H. Meyer is the architect, in pressed brick with terra cotta trimmings, passenger and freight elevators.",
+      "citation": {
+        "label": "The San Francisco Call, 19 November 1910, p. 9",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-11-19/ed-1/seq-9/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/11/19/ed-1/seq-9/ocr.txt",
+        "locator": "p. 9, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "A six story apartment house is to be erected by the Schmiedell estate company on the southwest corner of Post and Jones streets. Frederick H. Meyer is the architect.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "architect": "Frederick H. Meyer",
+        "firm": "Schmiedell estate company"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch POST & JONES: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0119",
+      "date": "1910-12-17",
+      "date_precision": "day",
+      "kind": "site history",
+      "address_as_written": "the corner of Main and Sutter streets",
+      "description": "The Rosenbaum Building here sold for $40,000 in 1893, brought $62,000 in 1905 when bought by the Stockton Savings Bank as a site for a new bank building, and was offered $85,000 this year.",
+      "citation": {
+        "label": "The San Francisco Call, 17 December 1910, p. 9",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-12-17/ed-1/seq-9/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/12/17/ed-1/seq-9/ocr.txt",
+        "locator": "p. 9, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "In 1893 the Rosenbaum building at the southeast corner of Main and Sutter streets sold for $40,000. In 1905 it brought $62,000, having been purchased by the Stockton savings bank as a site for a new bank building.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "building_name": "Rosenbaum Building"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch MAIN & SUTTER: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0120",
+      "date": "1910-12-24",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of California and Franklin streets",
+      "description": "The largest building permit issued that week was for a $125,000 Christian Science church here.",
+      "citation": {
+        "label": "The San Francisco Call, 24 December 1910, p. 8",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-12-24/ed-1/seq-8/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/12/24/ed-1/seq-8/ocr.txt",
+        "locator": "p. 8, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "The largest permit issued this week was for the $125,000 Christian Science church at the northeast corner of California and Franklin streets.",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 125000,
+        "institution": "Christian Science church"
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch CALIFORNIA & FRANKLIN: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    },
+    {
+      "id": "sn85066387-1910-offsets-0121",
+      "date": "1910-12-24",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "the corner of Jones and Sutter streets",
+      "description": "Another large class C building, to cost $90,000, was to be a six-storey brick and steel hotel here.",
+      "citation": {
+        "label": "The San Francisco Call, 24 December 1910, p. 8",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-12-24/ed-1/seq-8/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1910/12/24/ed-1/seq-8/ocr.txt",
+        "locator": "p. 8, Real Estate and Financial Section"
+      },
+      "raw": {
+        "text": "Another large class C building is [the owner]'s; to cost $90,000 and to be a six story brick and steel hotel at the southwest corner of Jones and Sutter streets.",
+        "note": "owner's name cut from raw",
+        "ocr_uncertain": true
+      },
+      "confidence": "medium",
+      "extra": {
+        "cost_usd": 90000
+      },
+      "resolution": {
+        "status": "unresolved",
+        "method": "research/tools/corner.py --batch JONES & SUTTER: no parcel at this corner carries a lot size or offset the record gives to choose between them; the record itself gives neither, so the corner alone does not place it (RUNBOOK.md 'A corner, not a number').",
+        "checked_on": "2026-09-24",
+        "note": "No EAS record chosen; see resolution.method."
+      }
+    }
+  ]
+}

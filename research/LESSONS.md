@@ -2234,3 +2234,67 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   sf-parcels range (4028) disagreed with EAS's lowest number on the parcel
   (4026); the seeder followed EAS and `check.py` flagged the finding.
   *Take the page's number from EAS, not from the parcel map.*
+- **The Chronicling America bulk tarballs are not named what the dossier's
+  batch table shortens them to.** `chroniclingamerica.loc.gov/data/ocr/` holds
+  them as `curiv_<name>_ver01.tar.bz2` — the dossier's table drops the
+  `curiv_` prefix and `_ver01` suffix for readability, but the fetch URL and
+  the `tar tjf` listing both need the full name. Confirm with `curl -I` before
+  queuing four ~1 GB downloads on a guessed name.
+  ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **`tar --wildcards` needs `--no-anchored` (or a leading `*/`) when the
+  archive's paths don't start with a wildcard-eligible segment.** Extracting
+  `sn85066387/1910/*.txt` from a Chronicling America batch with plain
+  `--wildcards '*/sn85066387/1910/*.txt'` matched nothing and exited
+  non-zero, because the archive's own paths start directly with `sn85066387/`
+  — there is no leading segment for the first `*` to eat. `tar xjf FILE -C
+  DIR --wildcards --no-anchored 'sn85066387/1910/*.txt'` matches the pattern
+  anywhere in the path instead of only at its start, and this is also the
+  fix when a first attempt with `--wildcards` alone silently extracts
+  nothing: it fails fast (seconds), not silently, so a re-run costs little,
+  but a background job piping into `tail` hides the exit code — check
+  `$?` or the extracted count before waiting on a second multi-GB tarball
+  with the same broken pattern.
+- **`corner.py --batch` gained an offset-only match mode (#412): frontage
+  start against the record's offset, roll year against the record's year,
+  no lot required.** Building-news paragraphs that give a corner and a
+  distance but never a lot ("137 feet east of Sansome") were unplaceable by
+  the existing lot-area match, which needs a `lot` field to compare against.
+  The fix reuses the same `front_span` measurement the `to` block-face mode
+  already computes: when an entry's JSON line has `offset` and `to` but no
+  `lot`, it matches parcels whose measured frontage start is within 4 ft of
+  the offset *and* whose roll `year_property_built` is within 2 years of the
+  record's year — both required, because frontage start alone repeats every
+  25 feet down a block of regular lots and the lot-area check that normally
+  rules those out isn't available. Of 122 corner/offset-no-lot entries in one
+  1910 batch, the new mode placed 19 by hand, all of them on parcels where it
+  was the *only* candidate within tolerance — a useful cross-check in itself,
+  since an offset ambiguous between two adjacent lots (the same shape,
+  25 feet apart) correctly returns none.
+- **EAS's `street_name` field holds the bare ordinal for a numbered avenue,
+  with no `AVENUE`/`AVE` suffix and no zero-padding above one digit.**
+  `corner.py`'s batch mode queries `street_name` alone (it does not filter
+  `street_type`), so `"06TH AVENUE"` and `"5TH"` both return zero rows where
+  `"06TH"` and `"05TH"` succeed — single-digit ordinals need the leading
+  zero (`04TH`, not `4TH`; but `24TH` needs none, already two digits) and an
+  avenue's `AVENUE`/`AVE` never belongs in the query string. A newspaper's
+  own street name sometimes needs an alias too: Dupont Street is Grant Avenue
+  today and "First Avenue" is Arguello Boulevard, both pure renames, and
+  `corner.py` has no alias table of its own — resolve the record's name to
+  today's before building the batch line, and keep the record's own spelling
+  in the finding's `extra` for the citation. 47 of 122 batch lines in one run
+  needed a same-street correction (wrong end of the block face given as
+  `to`, not a spelling fix) before any of this, so build the batch file,
+  spot-check a `crossing()` call per street pair for a same-point or
+  no-crossing failure, and fix the geography before reading the batch's real
+  output — a batch run against bad geography returns confident-looking
+  "no parcel" lines that are indistinguishable from a genuine miss.
+- **`data.json`'s indentation has to be read off the file being edited, not
+  assumed.** A publish script that opens a page, adds one `historical_record`
+  entry and re-dumps with a fixed `indent=2` turns a one-line addition into a
+  700-line diff on every page that was written with `indent=1` — six of
+  fourteen pages in one batch. Read the original file's own indent (checked
+  with a plain `git show HEAD:<path>` diff of line lengths, not assumed) and
+  write back with that same width; `render` doesn't care either way, since it
+  derives `index.html` from the parsed data, not from the source file's
+  formatting, so re-indenting after the fact costs nothing but is easy to
+  forget doing at all.
