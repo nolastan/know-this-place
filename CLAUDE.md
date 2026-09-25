@@ -16,6 +16,7 @@ read front to back. Start with the row that matches the task.
 |---|---|---|
 | editing an address page | [AGENTS.md](AGENTS.md) + the neighborhood's `AGENTS.md` + [shared/AGENTS.md](shared/AGENTS.md) | [REFERENCE.md](REFERENCE.md), [shared/BLOCKS.md](shared/BLOCKS.md) |
 | creating pages in bulk | [AGENTS.md](AGENTS.md) | [REFERENCE.md → Seeding](REFERENCE.md#seeding-a-new-area) |
+| a park, plaza or place in a park | [AGENTS.md](AGENTS.md) | [REFERENCE.md → Place pages](REFERENCE.md#place-pages) |
 | querying city data | — | [DATA-SOURCES.md](DATA-SOURCES.md) |
 | a question about the whole corpus | — | `corpus.jsonl`, [REFERENCE.md → The corpus index](REFERENCE.md#the-corpus-index) |
 | mining a source | [research/AGENTS.md](research/AGENTS.md) | [research/RUNBOOK.md](research/RUNBOOK.md), [research/LESSONS.md](research/LESSONS.md), [research/findings/INDEX.md](research/findings/INDEX.md) |

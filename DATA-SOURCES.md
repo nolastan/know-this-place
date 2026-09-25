@@ -66,6 +66,7 @@ Each section below is self-contained. **Read the row you need, not the file.**
 | a parcel's geometry, and its retired APNs | [`sf-parcels`](#sf-parcels--parcels-active-and-retired) |
 | a downtown building's public plaza or terrace | [`sf-popos`](#sf-popos--privately-owned-public-open-spaces) |
 | art the 1% requirement put on a parcel | [`sf-public-art`](#sf-public-art--public-art-1-art-program) |
+| a park, plaza or community garden, and what is in it | [`sf-rpd-properties`](#sf-rpd-properties--recreation-and-parks-properties), [`sf-rpd-facilities`](#sf-rpd-facilities--recreation-and-parks-facilities) |
 | which historic district an address stands in | [`sf-historic-districts`](#sf-historic-districts--historic-district-boundaries) |
 | a period photograph | [`historical-imagery`](#historical-imagery--opensfhistory--wikimedia-commons) |
 | the Street View still on a page | [`streetview`](#streetview--google-maps-embed-api-live-embed-only) |
@@ -288,6 +289,68 @@ here is [Adding a source](#adding-a-source).
 - **Citation label:** "SF Planning Department — Public Art (from the 1% Art
   Program) via DataSF"
 - **Verified:** 2026-08-06 (65 works; 58 of them on 83 documented parcels)
+
+## sf-rpd-properties — Recreation and Parks Properties
+
+- **What:** Every property the Recreation and Park Department owns or
+  maintains — neighborhood parks, mini parks, civic plazas, community
+  gardens, regional parks, parkways — one row per property, with its outline.
+  It is the source of the site's place pages
+  ([REFERENCE.md → Place pages](REFERENCE.md#place-pages)).
+- **Endpoint:** `https://data.sf.gov/resource/gtr9-ntp6.json`
+- **Key fields:** `property_id`, `property_name`, `propertytype`, `acres`,
+  `address`, `zipcode`, `city`, `ownership` (the department that manages it:
+  Recreation & Park, Port, PUC, Public Works…), `complex`,
+  `analysis_neighborhood` (comma-separated where a property spans several),
+  `latitude` / `longitude`, and `shape`.
+- **Cautions:**
+  - **No APN.** The parcels a property covers come from a spatial join against
+    [`sf-parcels`](#sf-parcels--parcels-active-and-retired): a parcel belongs
+    to a property when most of its area lies inside the property's outline.
+    Many parks cover several parcels (Bernal Heights Park, 34 — the paper lots
+    of a subdivision nobody built); some cover none, because they sit on a
+    street right-of-way (Sunset Dunes, on the former Upper Great Highway) or
+    inside a larger parcel (Louis Sutter Playground, in McLaren Park).
+  - **`501 Stanyan St` is not an address.** It is the department's
+    headquarters, McLaren Lodge, and the table files every property with no
+    address of its own under it — all seven sections of Golden Gate Park, and
+    Sunset Dunes. Never print it as the place's address.
+  - **Golden Gate Park is seven rows**, "Golden Gate Park - Section 1" to 7,
+    which are administrative divisions rather than places anyone knows.
+  - Libraries, City Hall and the War Memorial are in the table as properties
+    the department maintains; they are buildings, with address pages, not
+    parks. Camp Mather and Sharp Park are outside the city.
+- **Citation label:** "SF Recreation and Park Department — Recreation and
+  Parks Properties via DataSF"
+- **Verified:** 2026-09-25 (255 properties)
+
+## sf-rpd-facilities — Recreation and Parks Facilities
+
+- **What:** Rec & Park's asset inventory: every feature inside its
+  properties, from the Conservatory of Flowers and the Rose Garden to each
+  restroom, lawn polygon and storage container, one row per polygon.
+- **Endpoint:** `https://data.sf.gov/resource/ib5c-xgwu.json`
+- **Key fields:** `objectid`, `facility_id`, `facility_name`,
+  `facility_type`, `acres`, `property_id` / `property_name` (the property it
+  is inside), `latitude` / `longitude`, and `shape`.
+- **Cautions:**
+  - **Key rows by `objectid`. `facility_id` is not unique** — one id covers
+    the Academy of Sciences and its landscaping, another over a hundred
+    polygons across the city.
+  - Most rows are upkeep, not places: "Hardscaped Areas", "Landscaped Areas",
+    "Greenspace", "Cargo Container", maintenance sheds, service roads. Their
+    types are listed in `seed_pages.FACILITY_TYPES_NOT_LISTED`.
+  - Names carry the department's shorthand: a `GGPn ` prefix for the section
+    of Golden Gate Park, "DPA" for a dog play area, "CPA" for a children's play
+    area. The type column is the reliable half.
+  - Some buildings are points with no outline, and so no `acres`; a museum
+    that shows no area has none recorded, not an area of zero.
+  - **The meadows are not in it.** Golden Gate Park's meadows appear only as
+    the names of their picnic areas and restrooms ("Marx Meadow Picnic Areas");
+    there is no row for the meadow itself.
+- **Citation label:** "SF Recreation and Park Department — Recreation and
+  Parks Facilities via DataSF"
+- **Verified:** 2026-09-25 (2,676 rows; 849 in Golden Gate Park)
 
 ## sf-historic-districts — Historic district boundaries
 

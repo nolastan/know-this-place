@@ -299,6 +299,72 @@ def check_address_dir(page_dir: Path, on_disk: str) -> None:
     check_render_parity(page_dir, data, on_disk)
 
 
+def check_place_dir(page_dir: Path, on_disk: str) -> None:
+    """A place page: the fifth page type, rendered from `place.json`.
+
+    The same contract as an address page, read off its own source file: a
+    closed vocabulary, a non-empty `sources`, a `path` that is where the file
+    is, and render parity — `index.html` is exactly what
+    `seed_pages.render_place_html` makes of `place.json`.
+    """
+    src = page_dir / seed_pages.PLACE_FILE
+    try:
+        data = json.loads(src.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as e:
+        err(src, f"invalid JSON: {e}")
+        return
+    unknown = sorted(set(data) - seed_pages.PLACE_KEYS)
+    if unknown:
+        err(src, f"unrecognised key(s): {', '.join(unknown)} — see "
+                 f"seed_pages.PLACE_KEYS")
+    for key in ("name", "path", "coordinates"):
+        if not data.get(key):
+            err(src, f'missing "{key}"')
+    here = "/" + page_dir.relative_to(ROOT).as_posix() + "/"
+    if data.get("path") and data["path"] != here:
+        err(src, f'"path" is {data["path"]!r} but the page is at {here!r}')
+    sources = data.get("sources")
+    if not isinstance(sources, list) or not sources:
+        err(src, '"sources" must be a non-empty list — every page cites its data')
+    else:
+        for i, s_ in enumerate(sources):
+            for key in ("id", "retrieved"):
+                if not isinstance(s_, dict) or not s_.get(key):
+                    err(src, f'sources[{i}] missing "{key}"')
+    check_narrative(src, data)
+    try:
+        expected = seed_pages.render_place_html(data)
+    except Exception as e:
+        err(src, f"the renderer cannot produce this page ({type(e).__name__}: {e})")
+        return
+    if on_disk != expected:
+        rel = page_dir.relative_to(ROOT).as_posix()
+        err(page_dir / "index.html",
+            "does not match what the renderer produces from place.json — put the "
+            f"change in place.json and run: python3 scripts/seed_pages.py render {rel}")
+
+
+def check_hub_lists_places(dir_path: Path) -> None:
+    """Every place page filed under a neighborhood is on that neighborhood's hub.
+
+    `check_hub_covers_children` for the other kind of child: the hub's
+    "Parks and public spaces" list is generated from the place pages beneath
+    it (`seed_pages.write_neighborhood_hub`), so a place missing from it means
+    the hub was not rebuilt.
+    """
+    html_path = dir_path / "index.html"
+    places = sorted(d.name for d in dir_path.iterdir()
+                    if d.is_dir() and seed_pages.is_place_dir(d))
+    if not places or not html_path.exists():
+        return
+    listed = {href.rstrip("/") for href in hub_html_items(html_path.read_text(encoding="utf-8"))}
+    missing = [p for p in places if p not in listed]
+    if missing:
+        err(html_path, f"{len(missing)} place page(s) beneath this hub are not in "
+                       f"its list ({', '.join(missing)}) — rebuild with "
+                       f"scripts/seed_pages.py hubs")
+
+
 def hub_md_items(text: str) -> dict:
     """href -> hook text for each '- [label](href) — hook' bullet in a hub's index.md.
 
@@ -665,6 +731,7 @@ def check_build_is_complete(content: Path) -> None:
         return
     owed = [f.parent for f in sorted(content.rglob("data.json"))
             if ADDRESS_DIR.match(f.parent.name)]
+    owed += [f.parent for f in sorted(content.rglob(seed_pages.PLACE_FILE))]
     owed += [f.parent for f in sorted(content.rglob("index.md"))]
     for page_dir in owed:
         if not (page_dir / "index.html").exists():
@@ -690,6 +757,8 @@ def main() -> int:
         check_internal_links(html_path, text)
         if is_address:
             check_address_dir(html_path.parent, text)
+        elif seed_pages.is_place_dir(html_path.parent):
+            check_place_dir(html_path.parent, text)
         elif html_path.parent != content:
             # The city-level index (san-francisco/index.md) has no generator
             # counterpart — write_neighborhood_hub/write_street_hub only cover
@@ -699,6 +768,7 @@ def main() -> int:
             # content edit, not a build-contract check.
             check_hub_sync(html_path.parent)
             check_hub_covers_children(html_path.parent)
+            check_hub_lists_places(html_path.parent)
 
     check_district_hubs()
 

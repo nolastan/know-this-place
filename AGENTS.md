@@ -117,6 +117,8 @@ san-francisco/                        city
       4127/                            "collingwood-street")
         data.json                     structured facts + prose + sources
         assets/                       openly licensed media only (optional)
+    mission-dolores-park/             place — a park, plaza or place in a park
+      place.json                      its facts + sources, as data.json is
   historic-districts/                 the one page type off the tree
     liberty-hill/                     one historic district
       index.md
@@ -135,6 +137,13 @@ committed](REFERENCE.md#the-site-is-built-not-committed).
 - **Historic districts are the fourth page type**, at city level rather than
   under a neighborhood, and their hubs are generated. See
   [REFERENCE.md → Historic districts](REFERENCE.md#historic-districts).
+- **Places are the fifth**: a park, a plaza, or a named place inside a park —
+  public space, not a building, and usually without a street number. One
+  page per Recreation and Park property or facility, beside the street
+  directories of its neighborhood, rendered from `place.json` and linked both
+  ways with the parcel pages beneath it. Golden Gate Park is a neighborhood of
+  its own, whose hub is the park. See
+  [REFERENCE.md → Place pages](REFERENCE.md#place-pages).
 - Hub pages list and link what's beneath them; keep them current when adding
   pages. A neighborhood hub has two hand-maintained sections nothing
   regenerates — see
