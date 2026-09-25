@@ -45,6 +45,7 @@ documented so far:
 - [Portola](portola/) — the hillside district between McLaren Park and Highway 101, settled around its market gardens and greenhouses; the 1932 University Mound Home and a 1927 Silver Avenue church, both surveyed in 1990 as unreinforced masonry
 - [Visitacion Valley](visitacion-valley/) — the south-eastern corner of the city between McLaren Park and the county line; two buildings on Bay Shore Boulevard
 - [Treasure Island](treasure-island/) — the man-made island built for the 1939 Golden Gate International Exposition, and Yerba Buena Island beside it; the first building finished in the island's redevelopment
+- [Golden Gate Park](golden-gate-park/) — the park between Stanyan Street and the Great Highway; the places the Recreation and Park Department's facility inventory names in it, from the Conservatory of Flowers to the Dutch Windmill
 
 Several of these pages document addresses named in a published guide to notable
 San Francisco residences; residency claims are attributed to that guide and
@@ -54,6 +55,11 @@ Downtown coverage begins with the buildings named in two city inventories — th
 privately owned public open spaces the Downtown Plan requires, and the artworks
 the 1% art program pays for — which is why those pages are offices and hotels
 rather than the residential buildings the rest of the site documents.
+
+Parks, plazas and community gardens come from the Recreation and Park
+Department's inventory of the properties it manages. Each has a page of its own
+under the neighborhood it lies in, listed on that neighborhood's page beside its
+streets, and linked to the parcel pages it covers.
 
 ## Historic districts
 
