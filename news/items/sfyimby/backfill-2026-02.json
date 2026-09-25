@@ -1,638 +1,631 @@
 {
- "source_id": "sfyimby",
- "batch": "backfill-2026-02",
- "read_on": "2026-09-15",
- "notes": "Backfill window 2026-02-01..2026-02-28, per issue #337's suggested order (sfyimby, month by month), continuing from #360 (June), #361 (May), #362 (April) and #363 (March). Four addresses in this batch (536 Mission Street, 3230 24th Street, 3333 California Street, 880 McAllister Street) are also touched by the still-open June batch (#360) or April batch (#362); those PRs and this one will need a trivial merge -- combining historical_record entries -- wherever they land relative to each other.",
- "coverage": {
-  "unit": "articles",
-  "examined": 18,
-  "mentions": 18,
-  "remaining": "sfyimby's paged archive back of 2026-02-01, unwalked."
- },
- "findings": [
-  {
-   "id": "backfill-2026-02-0001",
-   "date": "2026-02-27",
-   "date_precision": "day",
-   "kind": "development",
-   "address_as_written": "4758 Mission Street",
-   "street_number": "4758",
-   "street_name": "MISSION",
-   "street_type": "ST",
-   "description": "An application has been submitted to add four residential units, reached through the rear yard, to the basement and ground-floor commercial space of the three-storey mixed-use building at 4758 Mission Street on the Balboa Park/Excelsior border, leaving the third-floor residential units and the building's envelope unchanged.",
-   "extra": {
-    "architect_of_proposal": "RDK",
-    "proposed_units": 4
-   },
-   "citation": {
-    "label": "San Francisco YIMBY, “Application Submitted for Conversion of a Mixed-Use Building at 4758 Mission Street in San Francisco,” 27 February 2026",
-    "url": "https://sfyimby.com/2026/02/application-submitted-for-the-partial-conversion-of-a-small-mixed-use-building-at-4758-mission-street-in-san-francisco.html"
-   },
-   "confidence": "high",
-   "resolution": {
-    "status": "resolved",
-    "apn": "6956024",
-    "path": "/san-francisco/excelsior/mission-street/4758/",
-    "eas_address": "4758 MISSION ST",
-    "method": "EAS exact match on 4758 MISSION ST → parcel 6956024; sf-parcels has blklot 6956024 active, 4758–4764 MISSION; the 2025 roll records it as multi-family residential, built 1916. EAS puts 4758, 4760, 4762, 4764 MISSION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 4758.",
-    "checked_on": "2026-09-15",
-    "note": "No page at this path yet; the parcel is the publisher's to seed."
-   },
-   "publish": {
-    "status": "published",
-    "note": "No page existed; seeded from research/manifests/backfill-2026-02.json, apn 6956024. Published to san-francisco/excelsior/mission-street/4758/."
-   }
+  "source_id": "sfyimby",
+  "batch": "backfill-2026-02",
+  "read_on": "2026-09-15",
+  "notes": "Backfill window 2026-02-01..2026-02-28, per issue #337's suggested order (sfyimby, month by month), continuing from #360 (June), #361 (May), #362 (April) and #363 (March). Four addresses in this batch (536 Mission Street, 3230 24th Street, 3333 California Street, 880 McAllister Street) are also touched by the still-open June batch (#360) or April batch (#362); those PRs and this one will need a trivial merge -- combining historical_record entries -- wherever they land relative to each other.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 18,
+    "mentions": 18,
+    "remaining": "sfyimby's paged archive back of 2026-02-01, unwalked."
   },
-  {
-   "id": "backfill-2026-02-0002",
-   "date": "2026-02-26",
-   "date_precision": "day",
-   "kind": "development",
-   "address_as_written": "2800 Geary Boulevard",
-   "street_number": "2800",
-   "street_name": "GEARY",
-   "street_type": "BLVD",
-   "description": "Updated plans have been filed for a seven-storey, 49-unit apartment building over retail at 2800 Geary Boulevard in Presidio Heights, among the first applications to use the city's new Housing Choice-San Francisco program under the Family Zoning Plan; demolition is required for an abandoned auto shop. JS Sullivan filed the application; Kip Coleman Architecture designed it.",
-   "extra": {
-    "applicant": "JS Sullivan",
-    "architect_of_proposal": "Kip Coleman Architecture",
-    "proposed_units": 49,
-    "height_ft": 78,
-    "lot_acres": 0.25
-   },
-   "citation": {
-    "label": "San Francisco YIMBY, “Family Zoning Program Invoked For Updated 2800 Geary Boulevard, San Francisco,” 26 February 2026",
-    "url": "https://sfyimby.com/2026/02/family-zoning-program-invoked-for-updated-2800-geary-boulevard-san-francisco.html"
-   },
-   "confidence": "high",
-   "resolution": {
-    "status": "resolved",
-    "apn": "1069013",
-    "path": "/san-francisco/presidio-heights/wood-street/91/",
-    "eas_address": "2800 GEARY BLVD",
-    "method": "EAS exact match on 2800 GEARY BLVD → parcel 1069013; sf-parcels has blklot 1069013 active, 2800–2800 GEARY; the 2025 roll records it as commercial retail, built 1952.",
-    "checked_on": "2026-09-15"
-   },
-   "publish": {
-    "status": "published",
-    "note": "Published to san-francisco/presidio-heights/wood-street/91/."
-   }
-  },
-  {
-   "id": "backfill-2026-02-0003",
-   "date": "2026-02-26",
-   "date_precision": "day",
-   "kind": "development",
-   "address_as_written": "169 Vienna Street",
-   "street_number": "169",
-   "street_name": "VIENNA",
-   "street_type": "ST",
-   "description": "Permits have been filed for a three-storey, single-unit residential infill on the vacant lot at 169 Vienna Street in Excelsior, which sold in February 2025 for $300,000. Tom Hua of Vienna LLC is the property owner; Sunset & Annex designed it.",
-   "extra": {
-    "owner": "Tom Hua of Vienna LLC",
-    "architect_of_proposal": "Sunset & Annex",
-    "total_sqft": 3060,
-    "last_sold": "February 2025, $300,000",
-    "construction_cost_estimate_usd": 500000
-   },
-   "citation": {
-    "label": "San Francisco YIMBY, “Permits Filed For 169 Vienna Street in Excelsior, San Francisco,” 26 February 2026",
-    "url": "https://sfyimby.com/2026/02/permits-filed-for-169-vienna-street-in-excelsior-san-francisco.html"
-   },
-   "confidence": "high",
-   "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-09-15",
-    "method": "No record in sf-eas-addresses for 169 VIENNA ST.",
-    "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 150, 151, 154, 155, 158, 162. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
-   },
-   "publish": {
-    "status": "pending",
-    "note": "Blocked: there is no such address today. EAS has no record of 169 Vienna Street; the article itself describes a currently vacant lot. Worth retrying once the parcel is formally addressed."
-   }
-  },
-  {
-   "id": "backfill-2026-02-0004",
-   "date": "2026-02-25",
-   "date_precision": "day",
-   "kind": "development",
-   "address_as_written": "3230 24th Street",
-   "street_number": "3230",
-   "street_name": "24TH",
-   "street_type": "ST",
-   "description": "Updated illustrations and formal planning applications have been submitted for an eight-storey, 35-unit Flatiron-style building (three affordable) at 3230 24th Street in the Mission, on a triangular parcel shaped by a former Southern Pacific Railroad right-of-way, using a 75% density bonus above a 20-unit base zoning. Berkeley-based Wong Logan Architects is responsible for the application and design.",
-   "extra": {
-    "architect_of_proposal": "Wong Logan Architects",
-    "proposed_units": 35,
-    "affordable_units": 3,
-    "height_ft": 84,
-    "lot_acres": 0.1,
-    "density_bonus_pct": 75
-   },
-   "citation": {
-    "label": "San Francisco YIMBY, “Updated Illustrations For 3230 24th Street in the Mission District, San Francisco,” 25 February 2026",
-    "url": "https://sfyimby.com/2026/02/updated-illustrations-for-3230-24th-street-in-the-mission-district-san-francisco.html"
-   },
-   "confidence": "high",
-   "resolution": {
-    "status": "resolved",
-    "apn": "3642096",
-    "path": "/san-francisco/mission/24th-street/3230/",
-    "eas_address": "3230 24TH ST",
-    "method": "EAS exact match on 3230 24TH ST → parcel 3642096; sf-parcels has blklot 3642096 active, 3230–3236 24TH; the 2025 roll records it as miscellaneous/mixed-use. EAS files the address under parcel 3642015, which sf-parcels reports retired; the active parcel its coordinates fall in is 3642096.",
-    "checked_on": "2026-09-15",
-    "note": "No page at this path yet; the parcel is the publisher's to seed."
-   },
-   "publish": {
-    "status": "published",
-    "note": "No page existed; seeded from research/manifests/backfill-2026-02.json, apn 3642096. Published to san-francisco/mission/24th-street/3230/."
-   }
-  },
-  {
-   "id": "backfill-2026-02-0005",
-   "date": "2026-02-25",
-   "date_precision": "day",
-   "kind": "construction",
-   "address_as_written": "263 Lee Avenue",
-   "street_number": "263",
-   "street_name": "LEE",
-   "street_type": "AVE",
-   "description": "Demolition permits have been filed for a vacant single-storey former church at 263 Lee Avenue in Ingleside -- vacant since 2013, sold in 2020 for $710,000 after the prior owner, Rescue Prayer Mission, had asked $1.5 million -- to build a three-unit apartment complex approved in May 2025. Shahin Saneinejad is the property owner and applicant; OpenScope Studio designed it.",
-   "extra": {
-    "owner": "Shahin Saneinejad",
-    "architect_of_proposal": "OpenScope Studio",
-    "proposed_units": 3,
-    "height_ft": 33,
-    "former_use": "church (Rescue Prayer Mission), vacant since 2013",
-    "last_sold": "2020, $710,000",
-    "entitlement_approved": "May 2025",
-    "construction_cost_estimate_usd": 1500000
-   },
-   "citation": {
-    "label": "San Francisco YIMBY, “Demolition Permits Filed for 263 Lee Avenue, San Francisco,” 25 February 2026",
-    "url": "https://sfyimby.com/2026/02/demolition-permits-filed-for-263-lee-avenue-san-francisco.html"
-   },
-   "confidence": "high",
-   "resolution": {
-    "status": "resolved",
-    "apn": "6944003",
-    "path": "/san-francisco/oceanview-merced-ingleside/lee-avenue/263/",
-    "eas_address": "263 LEE AVE",
-    "method": "EAS exact match on 263 LEE AVE → parcel 6944003; sf-parcels has blklot 6944003 active, 263–263 LEE; the 2025 roll records it as single family residential, built 1910.",
-    "checked_on": "2026-09-15",
-    "note": "No page at this path yet; the parcel is the publisher's to seed."
-   },
-   "publish": {
-    "status": "published",
-    "note": "No page existed; seeded from research/manifests/backfill-2026-02.json, apn 6944003. Published to san-francisco/oceanview-merced-ingleside/lee-avenue/263/."
-   }
-  },
-  {
-   "id": "backfill-2026-02-0006",
-   "date": "2026-02-24",
-   "date_precision": "day",
-   "kind": "development",
-   "address_as_written": "536 Mission Street",
-   "street_number": "536",
-   "street_name": "MISSION",
-   "street_type": "ST",
-   "description": "A new Historic Resource Review by Page & Turnbull, published ahead of plans to replace the Golden Gate University campus with the city's fifth- or sixth-tallest skyscraper, found the 1979 Brutalist addition at 536 Mission Street eligible for the California Register under Criterion 3 (architectural merit) for its expressive massing, sunken plaza, pedestrian bridge and total landscape design. The campus's earlier 1923 commercial building, at Mission and Ecker, was found in a 2007 review (Kelley & VerPlanck) too altered to retain integrity. The 1979 addition was designed by William D. Podesto & Associates with consulting engineer T.Y. Lin.",
-   "extra": {
-    "historic_review_1979": "Page & Turnbull, 2026 -- eligible for the California Register, Criterion 3",
-    "historic_review_1923": "Kelley & VerPlanck, 2007 -- too altered to retain integrity",
-    "structural_engineer_1979": "T.Y. Lin"
-   },
-   "citation": {
-    "label": "San Francisco YIMBY, “Brutalist Building at 536 Mission Street Deemed Eligible For Historic Designation, San Francisco,” 24 February 2026",
-    "url": "https://sfyimby.com/2026/02/brutalist-building-at-536-mission-street-deemed-eligible-for-historic-designation-san-francisco.html"
-   },
-   "confidence": "high",
-   "resolution": {
-    "status": "resolved",
-    "apn": "3708098",
-    "path": "/san-francisco/east-cut/mission-street/536/",
-    "eas_address": "536 MISSION ST",
-    "method": "EAS exact match on 536 MISSION ST → parcel 3708098; sf-parcels has blklot 3708098 active, 536–536 MISSION; the 2025 roll records it as commercial misc.",
-    "checked_on": "2026-09-15"
-   },
-   "publish": {
-    "status": "published",
-    "note": "Published to san-francisco/east-cut/mission-street/536/."
-   }
-  },
-  {
-   "id": "backfill-2026-02-0007",
-   "date": "2026-02-23",
-   "date_precision": "day",
-   "kind": "development",
-   "address_as_written": "2055 Chestnut Street",
-   "street_number": "2055",
-   "street_name": "CHESTNUT",
-   "street_type": "ST",
-   "description": "Plans for a 49-unit mixed-use redevelopment of 2055 Chestnut Street in the Marina have shifted to a retail-only expansion of the existing structure instead, keeping the Lombard Street-facing surface parking and much of the existing roof, including its sawtooth clerestory dormers. The Prado Group is the sponsor for owner The Bruni Company; Jensen Architects designed it.",
-   "extra": {
-    "sponsor": "The Prado Group",
-    "owner": "The Bruni Company",
-    "architect_of_proposal": "Jensen Architects",
-    "previous_proposed_units": 49,
-    "construction_cost_estimate_usd": 2750000
-   },
-   "citation": {
-    "label": "San Francisco YIMBY, “Plans Shift To Retail-Only For 2055 Chestnut Street in Marina District, San Francisco,” 23 February 2026",
-    "url": "https://sfyimby.com/2026/02/plans-shift-to-retail-only-for-2055-chestnut-street-in-marina-district-san-francisco.html"
-   },
-   "confidence": "high",
-   "resolution": {
-    "status": "resolved",
-    "apn": "0491009",
-    "path": "/san-francisco/marina/chestnut-street/2055/",
-    "eas_address": "2055 CHESTNUT ST",
-    "method": "EAS exact match on 2055 CHESTNUT ST → parcel 0491009; sf-parcels has blklot 0491009 active, 2055–2055 CHESTNUT; the 2025 roll records it as commercial retail, built 1974.",
-    "checked_on": "2026-09-15",
-    "note": "No page at this path yet; the parcel is the publisher's to seed."
-   },
-   "publish": {
-    "status": "published",
-    "note": "No page existed; seeded from research/manifests/backfill-2026-02.json, apn 0491009. Published to san-francisco/marina/chestnut-street/2055/."
-   }
-  },
-  {
-   "id": "backfill-2026-02-0008",
-   "date": "2026-02-20",
-   "date_precision": "day",
-   "kind": "development",
-   "address_as_written": "268 Fair Oaks Street",
-   "street_number": "268",
-   "street_name": "FAIR OAKS",
-   "street_type": "ST",
-   "description": "Updated permits have been filed to expand the two-storey, three-unit building at 268 Fair Oaks Street in Dolores Heights to a four-storey, six-unit for-sale building, one below-market-rate. Burlingame-based Arcus Housing is the property owner; Shatara Architecture designed it.",
-   "extra": {
-    "owner": "Arcus Housing",
-    "architect_of_proposal": "Shatara Architecture",
-    "proposed_units": 6,
-    "existing_units": 3,
-    "affordable_units": 1,
-    "lot_acres": 0.08
-   },
-   "citation": {
-    "label": "San Francisco YIMBY, “Permits For Residential Expansion at 268 Fair Oaks Street, Dolores Heights, San Francisco,” 20 February 2026",
-    "url": "https://sfyimby.com/2026/02/permits-for-residential-expansion-at-268-fair-oaks-street-dolores-heights-san-francisco.html"
-   },
-   "confidence": "high",
-   "resolution": {
-    "status": "resolved",
-    "apn": "3648012",
-    "path": "/san-francisco/mission/fair-oaks-street/268/",
-    "eas_address": "268 FAIR OAKS ST",
-    "method": "EAS exact match on 268 FAIR OAKS ST → parcel 3648012; sf-parcels has blklot 3648012 active, 268–270 FAIR OAKS; the 2025 roll records it as multi-family residential, built 1900. EAS puts 268, 270 FAIR OAKS ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 268.",
-    "checked_on": "2026-09-15"
-   },
-   "publish": {
-    "status": "published",
-    "note": "Published to san-francisco/mission/fair-oaks-street/268/."
-   }
-  },
-  {
-   "id": "backfill-2026-02-0010",
-   "date": "2026-02-19",
-   "date_precision": "day",
-   "kind": "development",
-   "address_as_written": "66 Bishop Street",
-   "street_number": "66",
-   "street_name": "BISHOP",
-   "street_type": "ST",
-   "description": "Preliminary permits have been filed to demolish the 480-square-foot, 1922-built cottage at 66 Bishop Street in Visitacion Valley -- once described by SFGATE in 2018 as the smallest home listed in San Francisco, and sold in late 2018 for $600,000 -- and replace it with a larger house and accessory dwelling unit. Oakland-based Shelterwerk is the project architect.",
-   "extra": {
-    "architect_of_proposal": "Shelterwerk",
-    "existing_built": 1922,
-    "notable_fact": "described by SFGATE in 2018 as the smallest home listed in San Francisco",
-    "last_sold": "late 2018, $600,000",
-    "height_ft": 24,
-    "total_sqft": 2390
-   },
-   "citation": {
-    "label": "San Francisco YIMBY, “Preliminary Permits For 66 Bishop Street in Visitacion Valley, San Francisco,” 19 February 2026",
-    "url": "https://sfyimby.com/2026/02/preliminary-permits-for-66-bishop-street-in-visitacion-valley-san-francisco.html"
-   },
-   "confidence": "high",
-   "resolution": {
-    "status": "resolved",
-    "apn": "6167012",
-    "path": "/san-francisco/bayview-hunters-point/bishop-street/66/",
-    "eas_address": "66 BISHOP ST",
-    "method": "EAS exact match on 66 BISHOP ST → parcel 6167012; sf-parcels has blklot 6167012 active, 66–66 BISHOP; the 2025 roll records it as single family residential, built 1922.",
-    "checked_on": "2026-09-15",
-    "note": "No page at this path yet; the parcel is the publisher's to seed."
-   },
-   "publish": {
-    "status": "published",
-    "note": "No page existed; seeded from research/manifests/backfill-2026-02.json, apn 6167012. Published to san-francisco/bayview-hunters-point/bishop-street/66/."
-   }
-  },
-  {
-   "id": "backfill-2026-02-0011",
-   "date": "2026-02-17",
-   "date_precision": "day",
-   "kind": "construction",
-   "address_as_written": "1687 Market Street",
-   "street_number": "1687",
-   "street_name": "MARKET",
-   "street_type": "ST",
-   "description": "The century-old former Edward McRoskey Mattress Factory at 1687 Market Street has been torn down ahead of a 17-storey, 182-foot affordable housing tower and artist community hub; the application was filed in mid-2024, won final approval in March 2025, and demolition permits were filed in July 2025 and issued in November, with crews starting in early February 2026. Built in 1925 by architects Fabre & Hildebrand in a classical revival style for the 1899-founded McRoskey company (the family still operates it as McRoskey Airflex Mattress Company). Mercy Housing is developing it on behalf of the Artists Hub on Market; Mark Cavagnero Associates designed the replacement with landscape architect Shades of Green.",
-   "extra": {
-    "developer_of_proposal": "Mercy Housing, for the Artists Hub on Market",
-    "architect_of_proposal": "Mark Cavagnero Associates",
-    "landscape_architect": "Shades of Green",
-    "proposed_units": 102,
-    "height_ft": 182,
-    "demolished_building": "Edward McRoskey Mattress Factory, built 1925 by Fabre & Hildebrand, classical revival",
-    "entitlement_approved": "March 2025"
-   },
-   "citation": {
-    "label": "San Francisco YIMBY, “McRoskey Mattress Building Demolished at 1687 Market Street, San Francisco,” 17 February 2026",
-    "url": "https://sfyimby.com/2026/02/mcroskey-mattress-building-demolished-at-1687-market-street-san-francisco.html"
-   },
-   "confidence": "high",
-   "resolution": {
-    "status": "resolved",
-    "apn": "3504040",
-    "path": "/san-francisco/mission/market-street/1687/",
-    "eas_address": "1687 MARKET ST",
-    "method": "EAS exact match on 1687 MARKET ST → parcel 3504040; sf-parcels has blklot 3504040 active, 1687–1687 MARKET; the 2025 roll records it as industrial, built 1925.",
-    "checked_on": "2026-09-15"
-   },
-   "publish": {
-    "status": "published",
-    "note": "Published to san-francisco/mission/market-street/1687/."
-   }
-  },
-  {
-   "id": "backfill-2026-02-0012",
-   "date": "2026-02-15",
-   "date_precision": "day",
-   "kind": "development",
-   "address_as_written": "1400 De Haro Street",
-   "street_number": "1400",
-   "street_name": "DE HARO",
-   "street_type": "ST",
-   "description": "Plans have been published to replace a single-family house at 1400 De Haro Street on Potrero Hill with two three-storey townhouse buildings (one fronting De Haro Street, one on 2203 25th Street) totaling five apartments and two accessory dwelling units, a block from the Potrero Block 2 affordable housing complex within the HOPE SF masterplan. San Diego-based Jacob's Real Estate Investments Inc. filed the application; L.A. Paul & Associates designed it, with San Jose-based Aero Living Inc. as general contractor.",
-   "extra": {
-    "applicant": "Jacob's Real Estate Investments Inc.",
-    "architect_of_proposal": "L.A. Paul & Associates",
-    "general_contractor": "Aero Living Inc.",
-    "proposed_units": 5,
-    "companion_address": "2203 25th Street"
-   },
-   "citation": {
-    "label": "San Francisco YIMBY, “Townhomes Proposed For 1400 De Haro Street on Potrero Hill, San Francisco,” 15 February 2026",
-    "url": "https://sfyimby.com/2026/02/townhomes-proposed-for-1400-de-haro-street-on-potrero-hill-san-francisco.html"
-   },
-   "confidence": "high",
-   "resolution": {
-    "status": "resolved",
-    "apn": "4282A001",
-    "path": "/san-francisco/potrero-hill/de-haro-street/1400/",
-    "eas_address": "1400 DE HARO ST",
-    "method": "EAS exact match on 1400 DE HARO ST → parcel 4282A001; sf-parcels has blklot 4282A001 active, 1400–1400 DE HARO; the 2025 roll records it as miscellaneous/mixed-use, built 1940.",
-    "checked_on": "2026-09-15",
-    "note": "No page at this path yet; the parcel is the publisher's to seed."
-   },
-   "publish": {
-    "status": "published",
-    "note": "No page existed; seeded from research/manifests/backfill-2026-02.json, apn 4282A001. Published to san-francisco/potrero-hill/de-haro-street/1400/."
-   }
-  },
-  {
-   "id": "backfill-2026-02-0013",
-   "date": "2026-02-13",
-   "date_precision": "day",
-   "kind": "development",
-   "address_as_written": "2 Crestline Drive",
-   "street_number": "2",
-   "street_name": "CRESTLINE",
-   "street_type": "DR",
-   "description": "Preliminary permits have been filed to split the lot at 2 Crestline Drive in Twin Peaks, separating a vacant corner portion from the 1964-built ten-unit apartment building (which would remain unchanged) to build a five-storey, nine-unit apartment complex; the property last sold in 2019 for just under $3.5 million. James Keith filed the application; RG Architecture designed it.",
-   "extra": {
-    "applicant": "James Keith",
-    "architect_of_proposal": "RG Architecture",
-    "proposed_units": 9,
-    "height_ft": 65,
-    "lot_acres": 0.07,
-    "last_sold": "2019, just under $3.5 million",
-    "existing_building": "1964-built, 10-unit apartment building, to remain"
-   },
-   "citation": {
-    "label": "San Francisco YIMBY, “Preliminary Plans Filed For 2 Crestline Drive in Twin Peaks, San Francisco,” 13 February 2026",
-    "url": "https://sfyimby.com/2026/02/preliminary-plans-filed-for-2-crestline-drive-in-twin-peaks-san-francisco.html"
-   },
-   "confidence": "high",
-   "resolution": {
-    "status": "resolved",
-    "apn": "2845016",
-    "path": "/san-francisco/corbett-heights/crestline-drive/2/",
-    "eas_address": "2 CRESTLINE DR",
-    "method": "EAS exact match on 2 CRESTLINE DR → parcel 2845016; sf-parcels has blklot 2845016 active, 2–2 CRESTLINE; the 2025 roll records it as multi-family residential, built 1964.",
-    "checked_on": "2026-09-15",
-    "note": "No page at this path yet; the parcel is the publisher's to seed."
-   },
-   "publish": {
-    "status": "published",
-    "note": "No page existed; seeded from research/manifests/backfill-2026-02.json, apn 2845016. Published to san-francisco/corbett-heights/crestline-drive/2/."
-   }
-  },
-  {
-   "id": "backfill-2026-02-0014",
-   "date": "2026-02-12",
-   "date_precision": "day",
-   "kind": "construction",
-   "address_as_written": "3333 California Street",
-   "street_number": "3333",
-   "street_name": "CALIFORNIA",
-   "street_type": "ST",
-   "description": "New building permits have been filed for the first three structures -- 152 units, a fifth of the full 744-unit build-out -- of the UCSF Laurel Heights campus redevelopment, now dubbed Presidio Highlands: a five-storey, 61-unit building at 3333 California Street, a four-storey, 61-unit building at 528 Laurel Street, and a four-storey, 30-unit building at 538 Laurel Street. The Walnut Building's affordable-senior-housing count has dropped from 185 (in the 2019-approved plan) to 125. Prado Group is developing it; urban planning is by James Corner Field Operations, architecture by BAR Architects & Interiors, Jensen Architects and Solomon Cordwell Buenz, and civil engineering by BKF Engineer.",
-   "extra": {
-    "developer_of_proposal": "Prado Group",
-    "urban_planner": "James Corner Field Operations",
-    "architects_of_proposal": "BAR Architects & Interiors, Jensen Architects, Solomon Cordwell Buenz",
-    "civil_engineer": "BKF Engineer",
-    "proposed_units": 152,
-    "master_plan_total_units": 744,
-    "project_name": "Presidio Highlands",
-    "walnut_building_affordable_units": "125 (down from 185 in the 2019-approved plan)"
-   },
-   "citation": {
-    "label": "San Francisco YIMBY, “New Building Permits Filed For First Phase of 3333 California Street, San Francisco,” 12 February 2026",
-    "url": "https://sfyimby.com/2026/02/new-building-permits-filed-for-first-phase-of-3333-california-street-san-francisco.html"
-   },
-   "confidence": "high",
-   "resolution": {
-    "status": "resolved",
-    "apn": "1032003",
-    "path": "/san-francisco/presidio-heights/california-street/3301/",
-    "eas_address": "3301 CALIFORNIA ST",
-    "method": "EAS exact match on 3333 CALIFORNIA ST → parcel 1032003; sf-parcels has blklot 1032003 active, 3301–3395 CALIFORNIA; the 2025 roll records it as multi-family residential, built 1957. EAS puts 3301, 3305, 3315, 3325, 3333, 3335, 3345, 3355, 3365, 3375, 3385, 3395 CALIFORNIA ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 3301.",
-    "checked_on": "2026-09-15"
-   },
-   "publish": {
-    "status": "published",
-    "note": "Published to san-francisco/presidio-heights/california-street/3301/."
-   }
-  },
-  {
-   "id": "backfill-2026-02-0015",
-   "date": "2026-02-11",
-   "date_precision": "day",
-   "kind": "development",
-   "address_as_written": "880 McAllister Street",
-   "street_number": "880",
-   "street_name": "MCALLISTER",
-   "street_type": "ST",
-   "description": "The Planning Commission reviewed the Draft Environmental Impact Report for Freedom West 2.0, a master plan to replace the existing Freedom West cooperative with 2,291 apartments (including replacement units for existing residents), 15 buildings up to 335 feet, retail and a 150-key hotel across three phases; Phase One (five buildings, 935 units) centers on 880 McAllister Street. The original 1970s Freedom West co-op was sponsored by Bethel African Methodist Episcopal Church -- Rev. J. Austell Hall of Bethel A.M.E. is credited in the EIR's historic review as its key figure, responding to \"the eroding character of the Fillmore\" with a resident-owned co-op -- and designed by Krisel Shapiro & Associates. MacFarlane Partners is the applicant, working with Avanath Capital Management; DLR Group is project architect and master planner, with Kimley Horn as civil engineer.",
-   "extra": {
-    "applicant": "MacFarlane Partners, with Avanath Capital Management",
-    "architect_of_proposal": "DLR Group",
-    "civil_engineer": "Kimley Horn",
-    "master_plan_total_units": 2291,
-    "phase_one_units": 935,
-    "phase_one_buildings": 5,
-    "original_sponsor": "Bethel African Methodist Episcopal Church",
-    "original_key_figure": "Rev. J. Austell Hall of Bethel A.M.E. Church",
-    "original_architect": "Krisel Shapiro & Associates"
-   },
-   "citation": {
-    "label": "San Francisco YIMBY, “Meeting Tomorrow For Freedom West 2.0, San Francisco,” 11 February 2026",
-    "url": "https://sfyimby.com/2026/02/meeting-tomorrow-for-freedom-west-2-0-san-francisco.html"
-   },
-   "confidence": "high",
-   "resolution": {
-    "status": "resolved",
-    "apn": "0770027",
-    "path": "/san-francisco/western-addition/golden-gate-avenue/875/",
-    "eas_address": "716 MCALLISTER ST",
-    "method": "EAS exact match on 880 MCALLISTER ST → parcel 0770027; sf-parcels has blklot 0770027 active, 875–935 GOLDEN GATE; the 2025 roll records it as multi-family residential, built 1974. The assessor files the parcel as 735 GOUGH ST. EAS puts 716, 718, 720, 722, 724, 726, 728, 730, 732, 734, 736, 738, 740, 742, 744, 746, 748, 752, 754, 756, 758, 760, 762, 764, 766, 768, 770, 772, 774, 776, 778, 780, 782, 784, 786, 788, 790, 792, 794, 796, 798, 800, 802, 804, 806, 808, 810, 812, 814, 816, 842, 844, 846, 848, 850, 852, 854, 860, 862, 864, 866, 868, 870, 872, 874, 876, 878, 880, 898 MCALLISTER ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 716.",
-    "checked_on": "2026-09-15"
-   },
-   "publish": {
-    "status": "published",
-    "note": "Published to san-francisco/western-addition/golden-gate-avenue/875/."
-   }
-  },
-  {
-   "id": "backfill-2026-02-0018",
-   "date": "2026-02-05",
-   "date_precision": "day",
-   "kind": "development",
-   "address_as_written": "598 Bryant Street",
-   "street_number": "598",
-   "street_name": "BRYANT",
-   "street_type": "ST",
-   "description": "The Planning Department published its General Plan Evaluation finding the proposed 355-foot, 33-storey, 395-unit tower at 598 Bryant Street in SoMa eligible for streamlined CEQA environmental review, with no Planning Commission action required. N17 Development founder Oisin Heneghan confirmed the project (47 affordable units) is moving forward for owner Allrise Capital; BDE Architecture designed it with Creo Landscape Architecture.",
-   "extra": {
-    "applicant": "N17 Development",
-    "owner": "Allrise Capital",
-    "architect_of_proposal": "BDE Architecture",
-    "landscape_architect": "Creo Landscape Architecture",
-    "proposed_units": 395,
-    "affordable_units": 47,
-    "height_ft": 355,
-    "lot_acres": 0.46
-   },
-   "citation": {
-    "label": "San Francisco YIMBY, “CEQA Streamlining Approved for 33-Story Tower at 598 Bryant Street, San Francisco,” 5 February 2026",
-    "url": "https://sfyimby.com/2026/02/ceqa-streamlining-approved-for-33-story-tower-at-598-bryant-street-san-francisco.html"
-   },
-   "confidence": "high",
-   "resolution": {
-    "status": "resolved",
-    "apn": "3762121",
-    "path": "/san-francisco/south-of-market/bryant-street/598/",
-    "eas_address": "598 BRYANT ST",
-    "method": "EAS exact match on 598 BRYANT ST → parcel 3762121; sf-parcels has blklot 3762121 active, 598–598 BRYANT; the 2025 roll records it as commercial misc, built 1964.",
-    "checked_on": "2026-09-15"
-   },
-   "publish": {
-    "status": "published",
-    "note": "Published to san-francisco/south-of-market/bryant-street/598/."
-   }
-  },
-  {
-   "id": "backfill-2026-02-0009",
-   "date": "2026-02-19",
-   "date_precision": "day",
-   "kind": "development",
-   "address_as_written": "315 Las Animas Avenue, Gilroy",
-   "description": "A housing development outside San Francisco (Gilroy, Santa Clara County), queued by the screen but not in scope for this site.",
-   "extra": {
-    "city": "Gilroy, Santa Clara County"
-   },
-   "citation": {
-    "label": "San Francisco YIMBY, “Housing Development Approved for 315 Las Animas Avenue in Gilroy,” 19 February 2026",
-    "url": "https://sfyimby.com/2026/02/housing-development-approved-for-315-las-animas-avenue-in-gilroy.html"
-   },
-   "confidence": "high",
-   "resolution": {
-    "status": "rejected",
-    "checked_on": "2026-09-15",
-    "note": "Not San Francisco. 315 Las Animas Avenue is in Gilroy, Santa Clara County, and no parcel in this city answers to it."
-   },
-   "publish": {
-    "status": "declined",
-    "note": "Out of the city; see resolution note."
-   }
-  },
-  {
-   "id": "backfill-2026-02-0017",
-   "date": "2026-02-06",
-   "date_precision": "day",
-   "kind": "development",
-   "address_as_written": "345 Middlefield Road, Menlo Park",
-   "description": "A housing development outside San Francisco (Menlo Park, San Mateo County), queued by the screen but not in scope for this site.",
-   "extra": {
-    "city": "Menlo Park, San Mateo County"
-   },
-   "citation": {
-    "label": "San Francisco YIMBY, “Presidio Bay Plans Mixed-Use Redevelopment of Former USGS Campus, Menlo Park,” 6 February 2026",
-    "url": "https://sfyimby.com/2026/02/presidio-bay-plans-mixed-use-redevelopment-of-former-usgs-campus-menlo-park.html"
-   },
-   "confidence": "high",
-   "resolution": {
-    "status": "rejected",
-    "checked_on": "2026-09-15",
-    "note": "Not San Francisco. 345 Middlefield Road is in Menlo Park, San Mateo County, and no parcel in this city answers to it."
-   },
-   "publish": {
-    "status": "declined",
-    "note": "Out of the city; see resolution note."
-   }
-  },
-  {
-   "id": "backfill-2026-02-0016",
-   "date": "2026-02-09",
-   "date_precision": "day",
-   "kind": "construction",
-   "address_as_written": "Potrero Power Station Block 2",
-   "description": "Excavation is underway for Block 2 of the Potrero Power Station redevelopment: a Herzog & de Meuron-designed, seven-storey, 130-foot UCSF Life Sciences/cancer research building, with completion expected by 2030. Fifth Space (formerly Associate Capital) is the developer; Stantec is executive architect.",
-   "extra": {
-    "developer_of_proposal": "Fifth Space",
-    "architect_of_proposal": "Herzog & de Meuron, with Stantec as executive architect",
-    "height_ft": 130,
-    "total_sqft": 285500,
-    "completion_estimate": "2030"
-   },
-   "citation": {
-    "label": "San Francisco YIMBY, “Excavation Work Underway for Potrero Power Station Block 2, San Francisco,” 9 February 2026",
-    "url": "https://sfyimby.com/2026/02/excavation-work-underway-for-potrero-power-station-block-2-san-francisco.html"
-   },
-   "confidence": "high",
-   "resolution": {
-    "status": "rejected",
-    "checked_on": "2026-09-15",
-    "note": "No usable address. The article names the site only as \"Block 2\" of the Potrero Power Station redevelopment and never prints a street number for that specific parcel; the power station's own address (1201 Illinois Street) covers a much larger site than this one building, so using it would not be a fact this article states."
-   },
-   "publish": {
-    "status": "declined",
-    "note": "Declined for lack of a usable address; see resolution note."
-   }
-  }
- ]
+  "findings": [
+    {
+      "id": "backfill-2026-02-0001",
+      "date": "2026-02-27",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "4758 Mission Street",
+      "street_number": "4758",
+      "street_name": "MISSION",
+      "street_type": "ST",
+      "description": "An application has been submitted to add four residential units, reached through the rear yard, to the basement and ground-floor commercial space of the three-storey mixed-use building at 4758 Mission Street on the Balboa Park/Excelsior border, leaving the third-floor residential units and the building's envelope unchanged.",
+      "extra": {
+        "architect_of_proposal": "RDK",
+        "proposed_units": 4
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Application Submitted for Conversion of a Mixed-Use Building at 4758 Mission Street in San Francisco,” 27 February 2026",
+        "url": "https://sfyimby.com/2026/02/application-submitted-for-the-partial-conversion-of-a-small-mixed-use-building-at-4758-mission-street-in-san-francisco.html"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "6956024",
+        "path": "/san-francisco/excelsior/mission-street/4758/",
+        "eas_address": "4758 MISSION ST",
+        "method": "EAS exact match on 4758 MISSION ST → parcel 6956024; sf-parcels has blklot 6956024 active, 4758–4764 MISSION; the 2025 roll records it as multi-family residential, built 1916. EAS puts 4758, 4760, 4762, 4764 MISSION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 4758.",
+        "checked_on": "2026-09-25"
+      },
+      "publish": {
+        "status": "published",
+        "note": "No page existed; seeded from research/manifests/backfill-2026-02.json, apn 6956024. Published to san-francisco/excelsior/mission-street/4758/."
+      }
+    },
+    {
+      "id": "backfill-2026-02-0002",
+      "date": "2026-02-26",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "2800 Geary Boulevard",
+      "street_number": "2800",
+      "street_name": "GEARY",
+      "street_type": "BLVD",
+      "description": "Updated plans have been filed for a seven-storey, 49-unit apartment building over retail at 2800 Geary Boulevard in Presidio Heights, among the first applications to use the city's new Housing Choice-San Francisco program under the Family Zoning Plan; demolition is required for an abandoned auto shop. JS Sullivan filed the application; Kip Coleman Architecture designed it.",
+      "extra": {
+        "applicant": "JS Sullivan",
+        "architect_of_proposal": "Kip Coleman Architecture",
+        "proposed_units": 49,
+        "height_ft": 78,
+        "lot_acres": 0.25
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Family Zoning Program Invoked For Updated 2800 Geary Boulevard, San Francisco,” 26 February 2026",
+        "url": "https://sfyimby.com/2026/02/family-zoning-program-invoked-for-updated-2800-geary-boulevard-san-francisco.html"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1069013",
+        "path": "/san-francisco/presidio-heights/wood-street/91/",
+        "eas_address": "2800 GEARY BLVD",
+        "method": "EAS exact match on 2800 GEARY BLVD → parcel 1069013; sf-parcels has blklot 1069013 active, 2800–2800 GEARY; the 2025 roll records it as commercial retail, built 1952.",
+        "checked_on": "2026-09-25"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Published to san-francisco/presidio-heights/wood-street/91/."
+      }
+    },
+    {
+      "id": "backfill-2026-02-0003",
+      "date": "2026-02-26",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "169 Vienna Street",
+      "street_number": "169",
+      "street_name": "VIENNA",
+      "street_type": "ST",
+      "description": "Permits have been filed for a three-storey, single-unit residential infill on the vacant lot at 169 Vienna Street in Excelsior, which sold in February 2025 for $300,000. Tom Hua of Vienna LLC is the property owner; Sunset & Annex designed it.",
+      "extra": {
+        "owner": "Tom Hua of Vienna LLC",
+        "architect_of_proposal": "Sunset & Annex",
+        "total_sqft": 3060,
+        "last_sold": "February 2025, $300,000",
+        "construction_cost_estimate_usd": 500000
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Permits Filed For 169 Vienna Street in Excelsior, San Francisco,” 26 February 2026",
+        "url": "https://sfyimby.com/2026/02/permits-filed-for-169-vienna-street-in-excelsior-san-francisco.html"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-25",
+        "method": "No record in sf-eas-addresses for 169 VIENNA ST.",
+        "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 150, 151, 154, 155, 158, 162. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+      },
+      "publish": {
+        "status": "pending",
+        "note": "Blocked: there is no such address today. EAS has no record of 169 Vienna Street; the article itself describes a currently vacant lot. Worth retrying once the parcel is formally addressed."
+      }
+    },
+    {
+      "id": "backfill-2026-02-0004",
+      "date": "2026-02-25",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "3230 24th Street",
+      "street_number": "3230",
+      "street_name": "24TH",
+      "street_type": "ST",
+      "description": "Updated illustrations and formal planning applications have been submitted for an eight-storey, 35-unit Flatiron-style building (three affordable) at 3230 24th Street in the Mission, on a triangular parcel shaped by a former Southern Pacific Railroad right-of-way, using a 75% density bonus above a 20-unit base zoning. Berkeley-based Wong Logan Architects is responsible for the application and design.",
+      "extra": {
+        "architect_of_proposal": "Wong Logan Architects",
+        "proposed_units": 35,
+        "affordable_units": 3,
+        "height_ft": 84,
+        "lot_acres": 0.1,
+        "density_bonus_pct": 75
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Updated Illustrations For 3230 24th Street in the Mission District, San Francisco,” 25 February 2026",
+        "url": "https://sfyimby.com/2026/02/updated-illustrations-for-3230-24th-street-in-the-mission-district-san-francisco.html"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3642096",
+        "path": "/san-francisco/mission/24th-street/3230/",
+        "eas_address": "3230 24TH ST",
+        "method": "EAS exact match on 3230 24TH ST → parcel 3642096; sf-parcels has blklot 3642096 active, 3230–3236 24TH; the 2025 roll records it as miscellaneous/mixed-use. EAS files the address under parcel 3642015, which sf-parcels reports retired; the active parcel its coordinates fall in is 3642096.",
+        "checked_on": "2026-09-25"
+      },
+      "publish": {
+        "status": "published",
+        "note": "No page existed; seeded from research/manifests/backfill-2026-02.json, apn 3642096. Published to san-francisco/mission/24th-street/3230/."
+      }
+    },
+    {
+      "id": "backfill-2026-02-0005",
+      "date": "2026-02-25",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "263 Lee Avenue",
+      "street_number": "263",
+      "street_name": "LEE",
+      "street_type": "AVE",
+      "description": "Demolition permits have been filed for a vacant single-storey former church at 263 Lee Avenue in Ingleside -- vacant since 2013, sold in 2020 for $710,000 after the prior owner, Rescue Prayer Mission, had asked $1.5 million -- to build a three-unit apartment complex approved in May 2025. Shahin Saneinejad is the property owner and applicant; OpenScope Studio designed it.",
+      "extra": {
+        "owner": "Shahin Saneinejad",
+        "architect_of_proposal": "OpenScope Studio",
+        "proposed_units": 3,
+        "height_ft": 33,
+        "former_use": "church (Rescue Prayer Mission), vacant since 2013",
+        "last_sold": "2020, $710,000",
+        "entitlement_approved": "May 2025",
+        "construction_cost_estimate_usd": 1500000
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Demolition Permits Filed for 263 Lee Avenue, San Francisco,” 25 February 2026",
+        "url": "https://sfyimby.com/2026/02/demolition-permits-filed-for-263-lee-avenue-san-francisco.html"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "6944003",
+        "path": "/san-francisco/oceanview-merced-ingleside/lee-avenue/263/",
+        "eas_address": "263 LEE AVE",
+        "method": "EAS exact match on 263 LEE AVE → parcel 6944003; sf-parcels has blklot 6944003 active, 263–263 LEE; the 2025 roll records it as single family residential, built 1910.",
+        "checked_on": "2026-09-25"
+      },
+      "publish": {
+        "status": "published",
+        "note": "No page existed; seeded from research/manifests/backfill-2026-02.json, apn 6944003. Published to san-francisco/oceanview-merced-ingleside/lee-avenue/263/."
+      }
+    },
+    {
+      "id": "backfill-2026-02-0006",
+      "date": "2026-02-24",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "536 Mission Street",
+      "street_number": "536",
+      "street_name": "MISSION",
+      "street_type": "ST",
+      "description": "A new Historic Resource Review by Page & Turnbull, published ahead of plans to replace the Golden Gate University campus with the city's fifth- or sixth-tallest skyscraper, found the 1979 Brutalist addition at 536 Mission Street eligible for the California Register under Criterion 3 (architectural merit) for its expressive massing, sunken plaza, pedestrian bridge and total landscape design. The campus's earlier 1923 commercial building, at Mission and Ecker, was found in a 2007 review (Kelley & VerPlanck) too altered to retain integrity. The 1979 addition was designed by William D. Podesto & Associates with consulting engineer T.Y. Lin.",
+      "extra": {
+        "historic_review_1979": "Page & Turnbull, 2026 -- eligible for the California Register, Criterion 3",
+        "historic_review_1923": "Kelley & VerPlanck, 2007 -- too altered to retain integrity",
+        "structural_engineer_1979": "T.Y. Lin"
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Brutalist Building at 536 Mission Street Deemed Eligible For Historic Designation, San Francisco,” 24 February 2026",
+        "url": "https://sfyimby.com/2026/02/brutalist-building-at-536-mission-street-deemed-eligible-for-historic-designation-san-francisco.html"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3708098",
+        "path": "/san-francisco/east-cut/mission-street/536/",
+        "eas_address": "536 MISSION ST",
+        "method": "EAS exact match on 536 MISSION ST → parcel 3708098; sf-parcels has blklot 3708098 active, 536–536 MISSION; the 2025 roll records it as commercial misc.",
+        "checked_on": "2026-09-25"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Published to san-francisco/east-cut/mission-street/536/."
+      }
+    },
+    {
+      "id": "backfill-2026-02-0007",
+      "date": "2026-02-23",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "2055 Chestnut Street",
+      "street_number": "2055",
+      "street_name": "CHESTNUT",
+      "street_type": "ST",
+      "description": "Plans for a 49-unit mixed-use redevelopment of 2055 Chestnut Street in the Marina have shifted to a retail-only expansion of the existing structure instead, keeping the Lombard Street-facing surface parking and much of the existing roof, including its sawtooth clerestory dormers. The Prado Group is the sponsor for owner The Bruni Company; Jensen Architects designed it.",
+      "extra": {
+        "sponsor": "The Prado Group",
+        "owner": "The Bruni Company",
+        "architect_of_proposal": "Jensen Architects",
+        "previous_proposed_units": 49,
+        "construction_cost_estimate_usd": 2750000
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Plans Shift To Retail-Only For 2055 Chestnut Street in Marina District, San Francisco,” 23 February 2026",
+        "url": "https://sfyimby.com/2026/02/plans-shift-to-retail-only-for-2055-chestnut-street-in-marina-district-san-francisco.html"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0491009",
+        "path": "/san-francisco/marina/chestnut-street/2055/",
+        "eas_address": "2055 CHESTNUT ST",
+        "method": "EAS exact match on 2055 CHESTNUT ST → parcel 0491009; sf-parcels has blklot 0491009 active, 2055–2055 CHESTNUT; the 2025 roll records it as commercial retail, built 1974.",
+        "checked_on": "2026-09-25"
+      },
+      "publish": {
+        "status": "published",
+        "note": "No page existed; seeded from research/manifests/backfill-2026-02.json, apn 0491009. Published to san-francisco/marina/chestnut-street/2055/."
+      }
+    },
+    {
+      "id": "backfill-2026-02-0008",
+      "date": "2026-02-20",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "268 Fair Oaks Street",
+      "street_number": "268",
+      "street_name": "FAIR OAKS",
+      "street_type": "ST",
+      "description": "Updated permits have been filed to expand the two-storey, three-unit building at 268 Fair Oaks Street in Dolores Heights to a four-storey, six-unit for-sale building, one below-market-rate. Burlingame-based Arcus Housing is the property owner; Shatara Architecture designed it.",
+      "extra": {
+        "owner": "Arcus Housing",
+        "architect_of_proposal": "Shatara Architecture",
+        "proposed_units": 6,
+        "existing_units": 3,
+        "affordable_units": 1,
+        "lot_acres": 0.08
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Permits For Residential Expansion at 268 Fair Oaks Street, Dolores Heights, San Francisco,” 20 February 2026",
+        "url": "https://sfyimby.com/2026/02/permits-for-residential-expansion-at-268-fair-oaks-street-dolores-heights-san-francisco.html"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3648012",
+        "path": "/san-francisco/mission/fair-oaks-street/268/",
+        "eas_address": "268 FAIR OAKS ST",
+        "method": "EAS exact match on 268 FAIR OAKS ST → parcel 3648012; sf-parcels has blklot 3648012 active, 268–270 FAIR OAKS; the 2025 roll records it as multi-family residential, built 1900. EAS puts 268, 270 FAIR OAKS ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 268.",
+        "checked_on": "2026-09-25"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Published to san-francisco/mission/fair-oaks-street/268/."
+      }
+    },
+    {
+      "id": "backfill-2026-02-0010",
+      "date": "2026-02-19",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "66 Bishop Street",
+      "street_number": "66",
+      "street_name": "BISHOP",
+      "street_type": "ST",
+      "description": "Preliminary permits have been filed to demolish the 480-square-foot, 1922-built cottage at 66 Bishop Street in Visitacion Valley -- once described by SFGATE in 2018 as the smallest home listed in San Francisco, and sold in late 2018 for $600,000 -- and replace it with a larger house and accessory dwelling unit. Oakland-based Shelterwerk is the project architect.",
+      "extra": {
+        "architect_of_proposal": "Shelterwerk",
+        "existing_built": 1922,
+        "notable_fact": "described by SFGATE in 2018 as the smallest home listed in San Francisco",
+        "last_sold": "late 2018, $600,000",
+        "height_ft": 24,
+        "total_sqft": 2390
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Preliminary Permits For 66 Bishop Street in Visitacion Valley, San Francisco,” 19 February 2026",
+        "url": "https://sfyimby.com/2026/02/preliminary-permits-for-66-bishop-street-in-visitacion-valley-san-francisco.html"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "6167012",
+        "path": "/san-francisco/bayview-hunters-point/bishop-street/66/",
+        "eas_address": "66 BISHOP ST",
+        "method": "EAS exact match on 66 BISHOP ST → parcel 6167012; sf-parcels has blklot 6167012 active, 66–66 BISHOP; the 2025 roll records it as single family residential, built 1922.",
+        "checked_on": "2026-09-25"
+      },
+      "publish": {
+        "status": "published",
+        "note": "No page existed; seeded from research/manifests/backfill-2026-02.json, apn 6167012. Published to san-francisco/bayview-hunters-point/bishop-street/66/."
+      }
+    },
+    {
+      "id": "backfill-2026-02-0011",
+      "date": "2026-02-17",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "1687 Market Street",
+      "street_number": "1687",
+      "street_name": "MARKET",
+      "street_type": "ST",
+      "description": "The century-old former Edward McRoskey Mattress Factory at 1687 Market Street has been torn down ahead of a 17-storey, 182-foot affordable housing tower and artist community hub; the application was filed in mid-2024, won final approval in March 2025, and demolition permits were filed in July 2025 and issued in November, with crews starting in early February 2026. Built in 1925 by architects Fabre & Hildebrand in a classical revival style for the 1899-founded McRoskey company (the family still operates it as McRoskey Airflex Mattress Company). Mercy Housing is developing it on behalf of the Artists Hub on Market; Mark Cavagnero Associates designed the replacement with landscape architect Shades of Green.",
+      "extra": {
+        "developer_of_proposal": "Mercy Housing, for the Artists Hub on Market",
+        "architect_of_proposal": "Mark Cavagnero Associates",
+        "landscape_architect": "Shades of Green",
+        "proposed_units": 102,
+        "height_ft": 182,
+        "demolished_building": "Edward McRoskey Mattress Factory, built 1925 by Fabre & Hildebrand, classical revival",
+        "entitlement_approved": "March 2025"
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “McRoskey Mattress Building Demolished at 1687 Market Street, San Francisco,” 17 February 2026",
+        "url": "https://sfyimby.com/2026/02/mcroskey-mattress-building-demolished-at-1687-market-street-san-francisco.html"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3504040",
+        "path": "/san-francisco/mission/market-street/1687/",
+        "eas_address": "1687 MARKET ST",
+        "method": "EAS exact match on 1687 MARKET ST → parcel 3504040; sf-parcels has blklot 3504040 active, 1687–1687 MARKET; the 2025 roll records it as industrial, built 1925.",
+        "checked_on": "2026-09-25"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Published to san-francisco/mission/market-street/1687/."
+      }
+    },
+    {
+      "id": "backfill-2026-02-0012",
+      "date": "2026-02-15",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "1400 De Haro Street",
+      "street_number": "1400",
+      "street_name": "DE HARO",
+      "street_type": "ST",
+      "description": "Plans have been published to replace a single-family house at 1400 De Haro Street on Potrero Hill with two three-storey townhouse buildings (one fronting De Haro Street, one on 2203 25th Street) totaling five apartments and two accessory dwelling units, a block from the Potrero Block 2 affordable housing complex within the HOPE SF masterplan. San Diego-based Jacob's Real Estate Investments Inc. filed the application; L.A. Paul & Associates designed it, with San Jose-based Aero Living Inc. as general contractor.",
+      "extra": {
+        "applicant": "Jacob's Real Estate Investments Inc.",
+        "architect_of_proposal": "L.A. Paul & Associates",
+        "general_contractor": "Aero Living Inc.",
+        "proposed_units": 5,
+        "companion_address": "2203 25th Street"
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Townhomes Proposed For 1400 De Haro Street on Potrero Hill, San Francisco,” 15 February 2026",
+        "url": "https://sfyimby.com/2026/02/townhomes-proposed-for-1400-de-haro-street-on-potrero-hill-san-francisco.html"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "4282A001",
+        "path": "/san-francisco/potrero-hill/de-haro-street/1400/",
+        "eas_address": "1400 DE HARO ST",
+        "method": "EAS exact match on 1400 DE HARO ST → parcel 4282A001; sf-parcels has blklot 4282A001 active, 1400–1400 DE HARO; the 2025 roll records it as miscellaneous/mixed-use, built 1940.",
+        "checked_on": "2026-09-25"
+      },
+      "publish": {
+        "status": "published",
+        "note": "No page existed; seeded from research/manifests/backfill-2026-02.json, apn 4282A001. Published to san-francisco/potrero-hill/de-haro-street/1400/."
+      }
+    },
+    {
+      "id": "backfill-2026-02-0013",
+      "date": "2026-02-13",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "2 Crestline Drive",
+      "street_number": "2",
+      "street_name": "CRESTLINE",
+      "street_type": "DR",
+      "description": "Preliminary permits have been filed to split the lot at 2 Crestline Drive in Twin Peaks, separating a vacant corner portion from the 1964-built ten-unit apartment building (which would remain unchanged) to build a five-storey, nine-unit apartment complex; the property last sold in 2019 for just under $3.5 million. James Keith filed the application; RG Architecture designed it.",
+      "extra": {
+        "applicant": "James Keith",
+        "architect_of_proposal": "RG Architecture",
+        "proposed_units": 9,
+        "height_ft": 65,
+        "lot_acres": 0.07,
+        "last_sold": "2019, just under $3.5 million",
+        "existing_building": "1964-built, 10-unit apartment building, to remain"
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Preliminary Plans Filed For 2 Crestline Drive in Twin Peaks, San Francisco,” 13 February 2026",
+        "url": "https://sfyimby.com/2026/02/preliminary-plans-filed-for-2-crestline-drive-in-twin-peaks-san-francisco.html"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "2845016",
+        "path": "/san-francisco/corbett-heights/crestline-drive/2/",
+        "eas_address": "2 CRESTLINE DR",
+        "method": "EAS exact match on 2 CRESTLINE DR → parcel 2845016; sf-parcels has blklot 2845016 active, 2–2 CRESTLINE; the 2025 roll records it as multi-family residential, built 1964.",
+        "checked_on": "2026-09-25"
+      },
+      "publish": {
+        "status": "published",
+        "note": "No page existed; seeded from research/manifests/backfill-2026-02.json, apn 2845016. Published to san-francisco/corbett-heights/crestline-drive/2/."
+      }
+    },
+    {
+      "id": "backfill-2026-02-0014",
+      "date": "2026-02-12",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "3333 California Street",
+      "street_number": "3333",
+      "street_name": "CALIFORNIA",
+      "street_type": "ST",
+      "description": "New building permits have been filed for the first three structures -- 152 units, a fifth of the full 744-unit build-out -- of the UCSF Laurel Heights campus redevelopment, now dubbed Presidio Highlands: a five-storey, 61-unit building at 3333 California Street, a four-storey, 61-unit building at 528 Laurel Street, and a four-storey, 30-unit building at 538 Laurel Street. The Walnut Building's affordable-senior-housing count has dropped from 185 (in the 2019-approved plan) to 125. Prado Group is developing it; urban planning is by James Corner Field Operations, architecture by BAR Architects & Interiors, Jensen Architects and Solomon Cordwell Buenz, and civil engineering by BKF Engineer.",
+      "extra": {
+        "developer_of_proposal": "Prado Group",
+        "urban_planner": "James Corner Field Operations",
+        "architects_of_proposal": "BAR Architects & Interiors, Jensen Architects, Solomon Cordwell Buenz",
+        "civil_engineer": "BKF Engineer",
+        "proposed_units": 152,
+        "master_plan_total_units": 744,
+        "project_name": "Presidio Highlands",
+        "walnut_building_affordable_units": "125 (down from 185 in the 2019-approved plan)"
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “New Building Permits Filed For First Phase of 3333 California Street, San Francisco,” 12 February 2026",
+        "url": "https://sfyimby.com/2026/02/new-building-permits-filed-for-first-phase-of-3333-california-street-san-francisco.html"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1032003",
+        "path": "/san-francisco/presidio-heights/california-street/3301/",
+        "eas_address": "3301 CALIFORNIA ST",
+        "method": "EAS exact match on 3333 CALIFORNIA ST → parcel 1032003; sf-parcels has blklot 1032003 active, 3301–3395 CALIFORNIA; the 2025 roll records it as multi-family residential, built 1957. EAS puts 3301, 3305, 3315, 3325, 3333, 3335, 3345, 3355, 3365, 3375, 3385, 3395 CALIFORNIA ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 3301.",
+        "checked_on": "2026-09-25"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Published to san-francisco/presidio-heights/california-street/3301/."
+      }
+    },
+    {
+      "id": "backfill-2026-02-0015",
+      "date": "2026-02-11",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "880 McAllister Street",
+      "street_number": "880",
+      "street_name": "MCALLISTER",
+      "street_type": "ST",
+      "description": "The Planning Commission reviewed the Draft Environmental Impact Report for Freedom West 2.0, a master plan to replace the existing Freedom West cooperative with 2,291 apartments (including replacement units for existing residents), 15 buildings up to 335 feet, retail and a 150-key hotel across three phases; Phase One (five buildings, 935 units) centers on 880 McAllister Street. The original 1970s Freedom West co-op was sponsored by Bethel African Methodist Episcopal Church -- Rev. J. Austell Hall of Bethel A.M.E. is credited in the EIR's historic review as its key figure, responding to \"the eroding character of the Fillmore\" with a resident-owned co-op -- and designed by Krisel Shapiro & Associates. MacFarlane Partners is the applicant, working with Avanath Capital Management; DLR Group is project architect and master planner, with Kimley Horn as civil engineer.",
+      "extra": {
+        "applicant": "MacFarlane Partners, with Avanath Capital Management",
+        "architect_of_proposal": "DLR Group",
+        "civil_engineer": "Kimley Horn",
+        "master_plan_total_units": 2291,
+        "phase_one_units": 935,
+        "phase_one_buildings": 5,
+        "original_sponsor": "Bethel African Methodist Episcopal Church",
+        "original_key_figure": "Rev. J. Austell Hall of Bethel A.M.E. Church",
+        "original_architect": "Krisel Shapiro & Associates"
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Meeting Tomorrow For Freedom West 2.0, San Francisco,” 11 February 2026",
+        "url": "https://sfyimby.com/2026/02/meeting-tomorrow-for-freedom-west-2-0-san-francisco.html"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0770027",
+        "path": "/san-francisco/western-addition/golden-gate-avenue/875/",
+        "eas_address": "716 MCALLISTER ST",
+        "method": "EAS exact match on 880 MCALLISTER ST → parcel 0770027; sf-parcels has blklot 0770027 active, 875–935 GOLDEN GATE; the 2025 roll records it as multi-family residential, built 1974. The assessor files the parcel as 735 GOUGH ST. EAS puts 716, 718, 720, 722, 724, 726, 728, 730, 732, 734, 736, 738, 740, 742, 744, 746, 748, 752, 754, 756, 758, 760, 762, 764, 766, 768, 770, 772, 774, 776, 778, 780, 782, 784, 786, 788, 790, 792, 794, 796, 798, 800, 802, 804, 806, 808, 810, 812, 814, 816, 842, 844, 846, 848, 850, 852, 854, 860, 862, 864, 866, 868, 870, 872, 874, 876, 878, 880, 898 MCALLISTER ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 716.",
+        "checked_on": "2026-09-25"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Published to san-francisco/western-addition/golden-gate-avenue/875/."
+      }
+    },
+    {
+      "id": "backfill-2026-02-0018",
+      "date": "2026-02-05",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "598 Bryant Street",
+      "street_number": "598",
+      "street_name": "BRYANT",
+      "street_type": "ST",
+      "description": "The Planning Department published its General Plan Evaluation finding the proposed 355-foot, 33-storey, 395-unit tower at 598 Bryant Street in SoMa eligible for streamlined CEQA environmental review, with no Planning Commission action required. N17 Development founder Oisin Heneghan confirmed the project (47 affordable units) is moving forward for owner Allrise Capital; BDE Architecture designed it with Creo Landscape Architecture.",
+      "extra": {
+        "applicant": "N17 Development",
+        "owner": "Allrise Capital",
+        "architect_of_proposal": "BDE Architecture",
+        "landscape_architect": "Creo Landscape Architecture",
+        "proposed_units": 395,
+        "affordable_units": 47,
+        "height_ft": 355,
+        "lot_acres": 0.46
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “CEQA Streamlining Approved for 33-Story Tower at 598 Bryant Street, San Francisco,” 5 February 2026",
+        "url": "https://sfyimby.com/2026/02/ceqa-streamlining-approved-for-33-story-tower-at-598-bryant-street-san-francisco.html"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3762121",
+        "path": "/san-francisco/south-of-market/bryant-street/598/",
+        "eas_address": "598 BRYANT ST",
+        "method": "EAS exact match on 598 BRYANT ST → parcel 3762121; sf-parcels has blklot 3762121 active, 598–598 BRYANT; the 2025 roll records it as commercial misc, built 1964.",
+        "checked_on": "2026-09-25"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Published to san-francisco/south-of-market/bryant-street/598/."
+      }
+    },
+    {
+      "id": "backfill-2026-02-0009",
+      "date": "2026-02-19",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "315 Las Animas Avenue, Gilroy",
+      "description": "A housing development outside San Francisco (Gilroy, Santa Clara County), queued by the screen but not in scope for this site.",
+      "extra": {
+        "city": "Gilroy, Santa Clara County"
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Housing Development Approved for 315 Las Animas Avenue in Gilroy,” 19 February 2026",
+        "url": "https://sfyimby.com/2026/02/housing-development-approved-for-315-las-animas-avenue-in-gilroy.html"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "rejected",
+        "checked_on": "2026-09-15",
+        "note": "Not San Francisco. 315 Las Animas Avenue is in Gilroy, Santa Clara County, and no parcel in this city answers to it."
+      },
+      "publish": {
+        "status": "declined",
+        "note": "Out of the city; see resolution note."
+      }
+    },
+    {
+      "id": "backfill-2026-02-0017",
+      "date": "2026-02-06",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "345 Middlefield Road, Menlo Park",
+      "description": "A housing development outside San Francisco (Menlo Park, San Mateo County), queued by the screen but not in scope for this site.",
+      "extra": {
+        "city": "Menlo Park, San Mateo County"
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Presidio Bay Plans Mixed-Use Redevelopment of Former USGS Campus, Menlo Park,” 6 February 2026",
+        "url": "https://sfyimby.com/2026/02/presidio-bay-plans-mixed-use-redevelopment-of-former-usgs-campus-menlo-park.html"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "rejected",
+        "checked_on": "2026-09-15",
+        "note": "Not San Francisco. 345 Middlefield Road is in Menlo Park, San Mateo County, and no parcel in this city answers to it."
+      },
+      "publish": {
+        "status": "declined",
+        "note": "Out of the city; see resolution note."
+      }
+    },
+    {
+      "id": "backfill-2026-02-0016",
+      "date": "2026-02-09",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "Potrero Power Station Block 2",
+      "description": "Excavation is underway for Block 2 of the Potrero Power Station redevelopment: a Herzog & de Meuron-designed, seven-storey, 130-foot UCSF Life Sciences/cancer research building, with completion expected by 2030. Fifth Space (formerly Associate Capital) is the developer; Stantec is executive architect.",
+      "extra": {
+        "developer_of_proposal": "Fifth Space",
+        "architect_of_proposal": "Herzog & de Meuron, with Stantec as executive architect",
+        "height_ft": 130,
+        "total_sqft": 285500,
+        "completion_estimate": "2030"
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Excavation Work Underway for Potrero Power Station Block 2, San Francisco,” 9 February 2026",
+        "url": "https://sfyimby.com/2026/02/excavation-work-underway-for-potrero-power-station-block-2-san-francisco.html"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "rejected",
+        "checked_on": "2026-09-15",
+        "note": "No usable address. The article names the site only as \"Block 2\" of the Potrero Power Station redevelopment and never prints a street number for that specific parcel; the power station's own address (1201 Illinois Street) covers a much larger site than this one building, so using it would not be a fact this article states."
+      },
+      "publish": {
+        "status": "declined",
+        "note": "Declined for lack of a usable address; see resolution note."
+      }
+    }
+  ]
 }

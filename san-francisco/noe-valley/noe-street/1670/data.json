@@ -1,0 +1,90 @@
+{
+  "address": "1670 Noe Street, San Francisco, CA 94131",
+  "path": "/san-francisco/noe-valley/noe-street/1670/",
+  "apn": "6640001",
+  "block": "6640",
+  "lot": "001",
+  "eas_baseid": "485472",
+  "coordinates": {
+    "lat": 37.742207,
+    "lng": -122.431335
+  },
+  "parcel": {
+    "year_built": 1900,
+    "stories": 3,
+    "lot_area_sqft": 41037,
+    "use": "Commercial Retail",
+    "property_class": "Schools",
+    "construction_type_code": "D",
+    "zoning": "P",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 1670 NOE                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1980",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "permit_summary": {
+    "count_on_file": 1,
+    "range": "2015",
+    "shown_on_page": 0,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "building": {
+    "name": "Mission Education Center"
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NOE&street_type=ST&address_number=1670",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6640001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6640&lot=001",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6640001",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "mission-local-2026-09-25",
+      "name": "Mission Local, “S.F. opens Mandarin program in school that once housed Spanish-speaking immigrant kids,” 25 September 2026",
+      "query": "https://missionlocal.org/2026/09/san-francisco-mandarin-immersion-school-mission-education-cente/",
+      "retrieved": "2026-09-25"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2026-09",
+      "kind": "occupancy",
+      "headline": "S.F. opens Mandarin program in school that once housed Spanish-speaking immigrant kids",
+      "outlet": "Mission Local",
+      "url": "https://missionlocal.org/2026/09/san-francisco-mandarin-immersion-school-mission-education-cente/",
+      "source": "mission-local-2026-09-25",
+      "date_precision": "month"
+    }
+  ]
+}

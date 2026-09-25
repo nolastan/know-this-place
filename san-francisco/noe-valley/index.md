@@ -26,6 +26,7 @@ that study area, as an example of the Second Bay Tradition.
 - [Douglass Street](douglass-street/) — 1 building, built 1900.
 - [Duncan Street](duncan-street/) — 1 building, built 1908.
 - [Hill Street](hill-street/) — 1 building, built 1965.
+- [Noe Street](noe-street/) — 1 building, built 1900.
 - [Turquoise Way](turquoise-way/) — 1 building, built 1962; 1 in the Diamond Heights Historic District.
 - [Valley Street](valley-street/) — 1 building, built 1900.
 - [Vicksburg Street](vicksburg-street/) — 1 building, built 1900.
