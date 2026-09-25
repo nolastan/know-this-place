@@ -812,9 +812,9 @@ def main() -> int:
             err(sitemap, f"{len(gone)} sitemap URL(s) no longer exist, starting "
                          f"{gone[0]} — run scripts/build_sitemap.py")
 
-    # And every address should be a dot on the homepage map. Same contract as
-    # the sitemap: the index is derived, so a new page just means re-running
-    # the script that builds it.
+    # And every address and place should be a dot on the homepage map. Same
+    # contract as the sitemap: the index is derived, so a new page just means
+    # re-running the script that builds it.
     geojson = ROOT / "shared" / "addresses.geojson"
     if geojson.exists():
         try:
@@ -827,7 +827,8 @@ def main() -> int:
             mapped = None
         if mapped is not None:
             for html_path in html_pages:
-                if not ADDRESS_DIR.match(html_path.parent.name):
+                if not (ADDRESS_DIR.match(html_path.parent.name)
+                        or (html_path.parent / seed_pages.PLACE_FILE).exists()):
                     continue
                 rel_dir = "/" + html_path.parent.relative_to(ROOT).as_posix() + "/"
                 if rel_dir not in mapped:
