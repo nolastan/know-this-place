@@ -1,0 +1,50 @@
+{
+  "name": "Dogpatch - Miller Memorial Garden",
+  "path": "/san-francisco/bernal-heights/dogpatch-miller-memorial-garden/",
+  "kind": "park",
+  "type": "Community Garden",
+  "coordinates": {
+    "lat": 37.745047,
+    "lng": -122.407176
+  },
+  "acres": 0.3,
+  "address": "114 Brewster Street",
+  "managed_by": "Recreation & Park",
+  "complex": "Bernal/St. Mary's Complex",
+  "rpd_property_id": "35",
+  "facilities": [
+    {
+      "name": "Brewster Rutledge Miller Memorial Community Garden",
+      "type": "Community Garden"
+    }
+  ],
+  "parcels": [
+    "5556004",
+    "5556006",
+    "5556005",
+    "5556057",
+    "5556056",
+    "5556058"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=35",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=35",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%275556004%27%2C%275556006%27%2C%275556005%27%2C%275556057%27%2C%275556056%27%2C%275556058%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

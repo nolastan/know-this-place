@@ -1,0 +1,33 @@
+{
+  "name": "Page & Laguna Mini Park",
+  "path": "/san-francisco/hayes-valley/page-and-laguna-mini-park/",
+  "kind": "park",
+  "type": "Mini Park",
+  "coordinates": {
+    "lat": 37.773477,
+    "lng": -122.425263
+  },
+  "acres": 0.18,
+  "address": "281 Page Street",
+  "managed_by": "Recreation & Park",
+  "complex": "Western Addition Complex",
+  "rpd_property_id": "114",
+  "parcels": [
+    "0852015"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=114",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%270852015%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

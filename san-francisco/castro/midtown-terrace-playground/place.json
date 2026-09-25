@@ -1,0 +1,57 @@
+{
+  "name": "Midtown Terrace Playground",
+  "path": "/san-francisco/castro/midtown-terrace-playground/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.751721,
+    "lng": -122.455463
+  },
+  "acres": 1.61,
+  "address": "210 Olympia Way",
+  "managed_by": "Recreation & Park",
+  "complex": "Lake Merced Complex",
+  "rpd_property_id": "167",
+  "facilities": [
+    {
+      "name": "Basketball Courts",
+      "type": "Basketball Court"
+    },
+    {
+      "name": "Children's Play Area",
+      "type": "Children's Play Area"
+    },
+    {
+      "name": "Midtown Terrace Clubhouse",
+      "type": "Clubhouse"
+    },
+    {
+      "name": "Picnic Areas",
+      "type": "Picnic Area"
+    }
+  ],
+  "parcels": [
+    "2736002"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=167",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=167",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%272736002%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

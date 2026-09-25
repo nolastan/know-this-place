@@ -1,0 +1,54 @@
+{
+  "name": "Parque Ninos Unidos",
+  "path": "/san-francisco/mission/parque-ninos-unidos/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.75438,
+    "lng": -122.41357
+  },
+  "acres": 0.7,
+  "address": "3070 23rd Street",
+  "managed_by": "Recreation & Park",
+  "complex": "Mission Complex",
+  "rpd_property_id": "187",
+  "facilities": [
+    {
+      "name": "Children's Play Area",
+      "type": "Children's Play Area"
+    },
+    {
+      "name": "Parque Ninos Unidos Clubhouse",
+      "type": "Clubhouse"
+    },
+    {
+      "name": "Treat Commons Community Garden",
+      "type": "Community Garden"
+    }
+  ],
+  "parcels": [
+    "3639005A",
+    "3639005"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=187",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=187",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%273639005A%27%2C%273639005%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

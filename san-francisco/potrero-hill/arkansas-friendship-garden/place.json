@@ -1,0 +1,32 @@
+{
+  "name": "Arkansas Friendship Garden",
+  "path": "/san-francisco/potrero-hill/arkansas-friendship-garden/",
+  "kind": "park",
+  "type": "Community Garden",
+  "coordinates": {
+    "lat": 37.757364,
+    "lng": -122.397653
+  },
+  "acres": 0.13,
+  "managed_by": "Recreation & Park",
+  "complex": "Civic Center/Potrero Hill Complex",
+  "rpd_property_id": "171727",
+  "parcels": [
+    "VACST22S"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=171727",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%27VACST22S%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

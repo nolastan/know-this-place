@@ -129,7 +129,7 @@ sit in — the three it touched most, and how many in all.
 | `sf-context-statements/biographies-d-f.json` | 208 | 445 KB | 1888–1990 | 190 | 137 | `pacific-heights`, `sunset-parkside`, `north-beach` +26 |
 | `sf-context-statements/biographies-g-i.json` | 176 | 364 KB | 1878–2005 | 145 | 115 | `sunset-parkside`, `pacific-heights`, `financial-district` +25 |
 | `sf-context-statements/biographies-j-l.json` | 125 | 263 KB | 1889–1990 | 105 | 91 | `pacific-heights`, `sunset-parkside`, `glen-park` +21 |
-| `sf-context-statements/biographies-m-o.json` | 247 | 486 KB | 1880–1994 | 212 | 159 | `pacific-heights`, `west-of-twin-peaks`, `nob-hill` +27 |
+| `sf-context-statements/biographies-m-o.json` | 247 | 486 KB | 1880–1994 | 212 | 159 | `pacific-heights`, `west-of-twin-peaks`, `nob-hill` +28 |
 | `sf-context-statements/biographies-p-r.json` | 223 | 434 KB | 1884–1995 | 187 | 126 | `pacific-heights`, `north-beach`, `sunset-parkside` +23 |
 | `sf-context-statements/biographies-s-u.json` | 152 | 284 KB | 1897–2020 | 110 | 75 | `sunset-parkside`, `financial-district`, `pacific-heights` +23 |
 | `sf-context-statements/biographies-v-z.json` | 96 | 185 KB | 1875–1982 | 82 | 43 | `pacific-heights`, `south-of-market`, `sunset-parkside` +24 |
@@ -152,7 +152,7 @@ sit in — the three it touched most, and how many in all.
 | `sf-context-statements/modern-postmodern-styles.json` | 224 | 514 KB | 1902–2021 | 189 | 182 | `financial-district`, `south-of-market`, `east-cut` +29 |
 | `sf-context-statements/modernistic-styles.json` | 25 | 58 KB | 1924–1949 | 23 | 20 | `sunset-parkside`, `mission`, `east-cut` +10 |
 | `sf-context-statements/neighborhood-commercial-hcs.json` | 99 | 196 KB | 1873–2018 | 83 | 76 | `mission`, `pacific-heights`, `west-of-twin-peaks` +20 |
-| `sf-context-statements/new-deal-hcs.json` | 138 | 277 KB | 1915–2023 | 101 | 99 | `outer-richmond`, `mission`, `sunset-parkside` +27 |
+| `sf-context-statements/new-deal-hcs.json` | 138 | 277 KB | 1915–2023 | 101 | 99 | `mission`, `outer-richmond`, `sunset-parkside` +28 |
 | `sf-context-statements/north-beach-hcs.json` | 630 | 1.4 MB | 1860–2021 | 554 | 552 | `north-beach`, `chinatown`, `russian-hill` +3 |
 | `sf-context-statements/oceanside-hcs.json` | 32 | 75 KB | 1901–2010 | 20 | 20 | `sunset-parkside` |
 | `sf-context-statements/parkside-hcs.json` | 160 | 412 KB | 1892–2008 | 151 | 147 | `sunset-parkside`, `west-of-twin-peaks` |
@@ -176,7 +176,7 @@ sit in — the three it touched most, and how many in all.
 | `sf-environmental-review/downtown-1975-1982.json` | 120 | 227 KB | 1851–1983 | 78 | 73 | `financial-district`, `union-square`, `east-cut` +3 |
 | `sf-environmental-review/downtown-1983-1991.json` | 110 | 221 KB | 1854–1991 | 77 | 59 | `east-cut`, `financial-district`, `chinatown` +5 |
 | `sf-environmental-review/downtown-1995-2011.json` | 147 | 284 KB | 1850–2005 | 96 | 72 | `south-of-market`, `east-cut`, `financial-district` +9 |
-| `sf-environmental-review/institutional-campuses.json` | 169 | 296 KB | 1850–2007 | 139 | 129 | `tenderloin`, `nob-hill`, `outer-richmond` +12 |
+| `sf-environmental-review/institutional-campuses.json` | 169 | 296 KB | 1850–2007 | 139 | 129 | `tenderloin`, `nob-hill`, `golden-gate-park` +12 |
 | `sf-environmental-review/named-sites-1974-1982.json` | 59 | 113 KB | 1849–1982 | 43 | 39 | `financial-district`, `chinatown`, `south-beach` +4 |
 | `sf-environmental-review/named-sites-1983-2005.json` | 141 | 285 KB | 1887–2003 | 102 | 98 | `north-beach`, `outer-mission`, `chinatown` +11 |
 | `sf-environmental-review/outside-downtown.json` | 61 | 118 KB | 1852–2005 | 28 | 28 | `mission`, `north-beach`, `haight-ashbury` +6 |
@@ -303,6 +303,7 @@ are listed so their size is visible before anyone opens one.
 | `ppie-marina-hcs.json` | 85 | 31 KB | `marina`, `nob-hill`, `pacific-heights` |
 | `progressive-era-styles.json` | 36 | 13 KB | `pacific-heights`, `sunset-parkside`, `inner-richmond` +13 |
 | `ritual-2026-09-11.json` | 12 | 4 KB | `south-beach`, `chinatown`, `nob-hill` +7 |
+| `rpd-places.json` | 297 | 52 KB | `golden-gate-park`, `mission`, `bayview-hunters-point` +37 |
 | `russian-american-hcs.json` | 136 | 51 KB | `inner-richmond`, `pacific-heights`, `outer-richmond` +16 |
 | `russian-hill-hcs.json` | 51 | 19 KB | `russian-hill`, `pacific-heights`, `nob-hill` +5 |
 | `russian-hill-macondray-lane-district.json` | 8 | 3 KB | `russian-hill` |

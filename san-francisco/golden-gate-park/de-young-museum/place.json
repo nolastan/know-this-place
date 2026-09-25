@@ -1,0 +1,35 @@
+{
+  "name": "De Young Museum",
+  "path": "/san-francisco/golden-gate-park/de-young-museum/",
+  "kind": "facility",
+  "type": "Arts/Activity Center",
+  "coordinates": {
+    "lat": 37.771523,
+    "lng": -122.468667
+  },
+  "street_addresses": [
+    "50 Hagiwara Tea Garden Drive"
+  ],
+  "rpd_object_ids": [
+    "2020"
+  ],
+  "part_of": {
+    "name": "Golden Gate Park",
+    "path": "/san-francisco/golden-gate-park/"
+  },
+  "sources": [
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?$where=objectid%20in%20%282020%29",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "supports": "Street address",
+      "query": "https://data.sf.gov/resource/3mea-di5p.json?$where=eas_baseid%20in%20%28%27483132%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

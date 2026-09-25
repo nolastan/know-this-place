@@ -1,0 +1,45 @@
+{
+  "name": "Howard & Langton Mini Park",
+  "path": "/san-francisco/south-of-market/howard-and-langton-mini-park/",
+  "kind": "park",
+  "type": "Community Garden",
+  "coordinates": {
+    "lat": 37.77726,
+    "lng": -122.409832
+  },
+  "acres": 0.28,
+  "address": "1129 Howard Street",
+  "managed_by": "Recreation & Park",
+  "complex": "Civic Center/Potrero Hill Complex",
+  "rpd_property_id": "58",
+  "facilities": [
+    {
+      "name": "Community Garden",
+      "type": "Community Garden"
+    }
+  ],
+  "parcels": [
+    "3730091"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=58",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=58",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%273730091%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

@@ -41,6 +41,15 @@ A low-lying district on filled ground along the northern waterfront, largely bui
 - [Webster Street](webster-street/) — 1 building, built 1900.
 - [Yacht Road](yacht-road/) — 1 building, built 1929.
 
+## Parks and public spaces
+
+- [Allyne Park](allyne-park/) — Neighborhood park or playground, 38,333 sq ft.
+- [Cow Hollow Playground](cow-hollow-playground/) — Mini park, 6,534 sq ft.
+- [Moscone Rec Center](moscone-rec-center/) — Neighborhood park or playground, 12.7 acres.
+- [Palace of Fine Arts](palace-of-fine-arts/) — Civic plaza or square, 19.7 acres.
+- [Presidio Wall Playground](presidio-wall-playground/) — Neighborhood park or playground, 12.4 acres.
+- [Yacht Harbor and Marina Green](yacht-harbor-and-marina-green/) — Regional park, 165.5 acres.
+
 ## Historic districts here
 
 - [Baker Street Historic District](../historic-districts/baker-street/)

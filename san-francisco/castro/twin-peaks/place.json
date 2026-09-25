@@ -1,0 +1,43 @@
+{
+  "name": "Twin Peaks",
+  "path": "/san-francisco/castro/twin-peaks/",
+  "kind": "park",
+  "type": "Regional Park",
+  "coordinates": {
+    "lat": 37.750904,
+    "lng": -122.447909
+  },
+  "acres": 32.25,
+  "address": "501 Twin Peaks Boulevard",
+  "managed_by": "Recreation & Park",
+  "complex": "Glen Park Complex",
+  "rpd_property_id": "77",
+  "parcels": [
+    "2643022",
+    "2643009",
+    "2643006",
+    "2643023",
+    "2643017",
+    "2643021",
+    "2643014",
+    "2643003",
+    "2643027",
+    "2643010",
+    "2643007"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=77",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%272643022%27%2C%272643009%27%2C%272643006%27%2C%272643023%27%2C%272643017%27%2C%272643021%27%2C%272643014%27%2C%272643003%27%2C%272643027%27%2C%272643010%27%2C%272643007%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

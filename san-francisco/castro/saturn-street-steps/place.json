@@ -1,0 +1,33 @@
+{
+  "name": "Saturn Street Steps",
+  "path": "/san-francisco/castro/saturn-street-steps/",
+  "kind": "park",
+  "type": "Mini Park",
+  "coordinates": {
+    "lat": 37.762726,
+    "lng": -122.440547
+  },
+  "acres": 0.19,
+  "address": "70 Ord Street",
+  "managed_by": "Recreation & Park",
+  "complex": "Buena Vista Complex",
+  "rpd_property_id": "79",
+  "parcels": [
+    "2626010A"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=79",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%272626010A%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

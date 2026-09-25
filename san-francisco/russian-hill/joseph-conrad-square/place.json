@@ -1,0 +1,33 @@
+{
+  "name": "Joseph Conrad Square",
+  "path": "/san-francisco/russian-hill/joseph-conrad-square/",
+  "kind": "park",
+  "type": "Mini Park",
+  "coordinates": {
+    "lat": 37.806677,
+    "lng": -122.419076
+  },
+  "acres": 0.15,
+  "address": "601 Beach Street",
+  "managed_by": "Recreation & Park",
+  "complex": "North Beach Complex",
+  "rpd_property_id": "154",
+  "parcels": [
+    "0024001"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=154",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%270024001%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Willow Bridge Gardens",
+  "path": "/san-francisco/south-beach/willow-bridge-gardens/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.813466,
+    "lng": -122.362656
+  },
+  "acres": 1.76,
+  "managed_by": "Recreation & Park",
+  "complex": "Treasure Island",
+  "rpd_property_id": "957487",
+  "parcels": [
+    "1939090"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=957487",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%271939090%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

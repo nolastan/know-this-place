@@ -64,6 +64,14 @@ The wide blocks west of Fourth Street, between Market and Harrison. Coverage her
 - [Welsh Street](welsh-street/) — 5 buildings, built 1906–1986.
 - [Zoe Street](zoe-street/) — 4 buildings, built 1907–2024.
 
+## Parks and public spaces
+
+- [Eugene Friend Rec Center](eugene-friend-rec-center/) — Neighborhood park or playground, 1.2 acres.
+- [Howard & Langton Mini Park](howard-and-langton-mini-park/) — Community garden, 12,197 sq ft.
+- [Mission Creek Park](mission-creek-park/) — Neighborhood park or playground, 17.2 acres.
+- [UN Plaza](un-plaza/) — Civic plaza or square, 2.7 acres.
+- [Victoria Manalo Draves Park](victoria-manalo-draves-park/) — Neighborhood park or playground, 2.7 acres.
+
 ## Historic districts here
 
 - [Bluxome Townsend Historic District](../historic-districts/bluxome-townsend/)

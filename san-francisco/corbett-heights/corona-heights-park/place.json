@@ -1,0 +1,49 @@
+{
+  "name": "Corona Heights Park",
+  "path": "/san-francisco/corbett-heights/corona-heights-park/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.764982,
+    "lng": -122.43881
+  },
+  "acres": 13.25,
+  "address": "199 Museum Way",
+  "managed_by": "Recreation & Park",
+  "complex": "Buena Vista Complex",
+  "rpd_property_id": "80",
+  "facilities": [
+    {
+      "name": "Dog Play Area",
+      "type": "Dog Play Area"
+    },
+    {
+      "name": "Randall Museum",
+      "type": "Arts/Activity Center"
+    }
+  ],
+  "parcels": [
+    "2615002"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=80",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=80",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%272615002%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

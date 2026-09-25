@@ -35,6 +35,14 @@ A central district west of Civic Center, taking in the eastern edge of Alamo Squ
 - [Waller Street](waller-street/) — 1 building, built 1931; 1 in the Hayes Valley Residential Historic District.
 - [Webster Street](webster-street/) — 1 building; 1 in the Hayes Valley Residential Historic District.
 
+## Parks and public spaces
+
+- [Hayes Valley Playground](hayes-valley-playground/) — Neighborhood park or playground, 32,670 sq ft.
+- [Koshland Park](koshland-park/) — Neighborhood park or playground, 41,818 sq ft.
+- [Page & Laguna Mini Park](page-and-laguna-mini-park/) — Mini park, 7,841 sq ft.
+- [Page Street Community Garden](page-street-community-garden/) — Community garden, 3,920 sq ft.
+- [Patricia's Green in Hayes Valley](patricias-green-in-hayes-valley/) — Neighborhood park or playground, 20,909 sq ft.
+
 ## Historic districts here
 
 - [Alamo Square Historic District](../historic-districts/alamo-square/)

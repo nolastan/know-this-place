@@ -36,6 +36,11 @@ The oldest Chinese community in North America, on the slopes above Portsmouth Sq
 - [Waverly Place](waverly-place/) — 3 buildings, built 1907–1911; 3 in the Chinatown Historic District.
 - [Winter Place](winter-place/) — 1 building, built 1912.
 
+## Parks and public spaces
+
+- [Willie Woo Woo Wong Playground](willie-woo-woo-wong-playground/) — Neighborhood park or playground, 28,750 sq ft.
+- [Woh Hei Yuen Playground](woh-hei-yuen-playground/) — Mini park, 15,682 sq ft.
+
 ## Historic districts here
 
 - [Chinatown Historic District](../historic-districts/chinatown/)

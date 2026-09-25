@@ -1,0 +1,49 @@
+{
+  "name": "Heron's Head Park",
+  "path": "/san-francisco/bayview-hunters-point/herons-head-park/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.739865,
+    "lng": -122.375717
+  },
+  "acres": 0.58,
+  "address": "32 Jennings Street",
+  "managed_by": "Port",
+  "complex": "Bayview Complex",
+  "rpd_property_id": "957473",
+  "facilities": [
+    {
+      "name": "Heron's Head Eco Center",
+      "type": "Arts/Activity Center"
+    },
+    {
+      "name": "Nature Exploration Area",
+      "type": "Nature Exploration Area"
+    }
+  ],
+  "parcels": [
+    "4502A002"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=957473",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=957473",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%274502A002%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

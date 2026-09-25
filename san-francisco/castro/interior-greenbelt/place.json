@@ -1,0 +1,43 @@
+{
+  "name": "Interior Greenbelt",
+  "path": "/san-francisco/castro/interior-greenbelt/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.760779,
+    "lng": -122.453214
+  },
+  "acres": 21.37,
+  "managed_by": "Recreation & Park",
+  "complex": "Lake Merced Complex",
+  "rpd_property_id": "87",
+  "parcels": [
+    "2634A003",
+    "2723002",
+    "2844009",
+    "2782027",
+    "2634A012",
+    "2788027",
+    "2643B009",
+    "2781022",
+    "2789029",
+    "2643B005",
+    "2664012",
+    "2724001"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=87",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%272634A003%27%2C%272723002%27%2C%272844009%27%2C%272782027%27%2C%272634A012%27%2C%272788027%27%2C%272643B009%27%2C%272781022%27%2C%272789029%27%2C%272643B005%27%2C%272664012%27%2C%272724001%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

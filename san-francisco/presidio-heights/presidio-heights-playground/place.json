@@ -1,0 +1,57 @@
+{
+  "name": "Presidio Heights Playground",
+  "path": "/san-francisco/presidio-heights/presidio-heights-playground/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.788496,
+    "lng": -122.449614
+  },
+  "acres": 0.49,
+  "address": "3437 Clay Street",
+  "managed_by": "Recreation & Park",
+  "complex": "Marina Complex",
+  "rpd_property_id": "109",
+  "facilities": [
+    {
+      "name": "Basketball Courts",
+      "type": "Basketball Court"
+    },
+    {
+      "name": "Children's Play Area",
+      "type": "Children's Play Area"
+    },
+    {
+      "name": "Picnic Area",
+      "type": "Children's Play Area"
+    },
+    {
+      "name": "Presidio Heights Clubhouse",
+      "type": "Clubhouse"
+    }
+  ],
+  "parcels": [
+    "1009024"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=109",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=109",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%271009024%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

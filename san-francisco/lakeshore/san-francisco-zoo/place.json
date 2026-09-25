@@ -1,0 +1,36 @@
+{
+  "name": "San Francisco Zoo",
+  "path": "/san-francisco/lakeshore/san-francisco-zoo/",
+  "kind": "park",
+  "type": "Zoological Garden",
+  "coordinates": {
+    "lat": 37.731594,
+    "lng": -122.503822
+  },
+  "acres": 131.54,
+  "address": "1 Zoo Road",
+  "managed_by": "Recreation & Park",
+  "complex": "Lake Merced Complex",
+  "rpd_property_id": "12",
+  "parcels": [
+    "7281006",
+    "7281007",
+    "7281009",
+    "7281005"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=12",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%277281006%27%2C%277281007%27%2C%277281009%27%2C%277281005%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

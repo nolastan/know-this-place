@@ -1,0 +1,66 @@
+{
+  "name": "Herz Playground",
+  "path": "/san-francisco/visitacion-valley/herz-playground/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.713505,
+    "lng": -122.416596
+  },
+  "acres": 7.0,
+  "address": "1701 Visitacion Avenue",
+  "managed_by": "Recreation & Park",
+  "complex": "Crocker Complex",
+  "rpd_property_id": "137671",
+  "facilities": [
+    {
+      "name": "Ball Fields",
+      "type": "Ball Field"
+    },
+    {
+      "name": "Basketball Courts",
+      "type": "Basketball Court",
+      "count": 2
+    },
+    {
+      "name": "Coffman Pool",
+      "type": "Swimming Pool"
+    },
+    {
+      "name": "Herz CPA",
+      "type": "Children's Play Area"
+    },
+    {
+      "name": "Herz Playground Clubhouse",
+      "type": "Clubhouse"
+    },
+    {
+      "name": "Herz Rec Center",
+      "type": "Rec Center"
+    }
+  ],
+  "parcels": [
+    "6220002"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=137671",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=137671",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%276220002%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

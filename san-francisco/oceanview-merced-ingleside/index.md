@@ -33,6 +33,15 @@ Merced Heights, the ridge between them, was mostly built after World War II.
 - [Sagamore Street](sagamore-street/) — 1 building, built 1890.
 - [Summit Street](summit-street/) — 1 building, built 1936.
 
+## Parks and public spaces
+
+- [Alice Chalmers Playground](alice-chalmers-playground/) — Neighborhood park or playground, 1.8 acres.
+- [Cayuga Playground](cayuga-playground/) — Neighborhood park or playground, 3.6 acres.
+- [Head & Brotherood Mini Park](head-and-brotherood-mini-park/) — Mini park, 22,651 sq ft.
+- [Lessing & Sears Mini Park](lessing-and-sears-mini-park/) — Mini park, 7,405 sq ft.
+- [Minnie and Lovie Ward Rec Center](minnie-and-lovie-ward-rec-center/) — Neighborhood park or playground, 11.1 acres.
+- [Randolph & Bright Mini Park](randolph-and-bright-mini-park/) — Mini park, 5,663 sq ft.
+
 ## Historic districts here
 
 - [Ingleside Terrace Historic District](../historic-districts/ingleside-terrace/)

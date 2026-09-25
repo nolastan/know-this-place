@@ -18,6 +18,12 @@ A residential district south of the Mission proper, built up in the first decade
 - [Santa Rosa Avenue](santa-rosa-avenue/) — 1 building, built 1952.
 - [Sergeant John V Young Street](sergeant-john-v-young-street/) — The Ingleside police station, built 1909-1910 on land ceded from Balboa Park.
 
+## Parks and public spaces
+
+- [Balboa Park](balboa-park/) — Neighborhood park or playground, 24.9 acres.
+- [Geneva Carbarn](geneva-carbarn/) — Mini park, 15,246 sq ft.
+- [Geneva Community Garden](geneva-community-garden/) — Community garden, 12,632 sq ft.
+
 ## Historic districts here
 
 - [Midcentury Recreation Historic District (Discontiguous)](../historic-districts/midcentury-recreation-discontiguous/)

@@ -1,0 +1,34 @@
+{
+  "name": "Joost & Baden Mini Park",
+  "path": "/san-francisco/glen-park/joost-and-baden-mini-park/",
+  "kind": "park",
+  "type": "Mini Park",
+  "coordinates": {
+    "lat": 37.732738,
+    "lng": -122.440855
+  },
+  "acres": 0.14,
+  "address": "246 Joost Avenue",
+  "managed_by": "PUC/Clean Water Program",
+  "complex": "Glen Park Complex",
+  "rpd_property_id": "158",
+  "parcels": [
+    "6765017",
+    "6765042"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=158",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%276765017%27%2C%276765042%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

@@ -33,6 +33,11 @@ The city's Presidio Heights analysis neighborhood, on the ridge between the Pres
 - [Washington Street](washington-street/) — 3 buildings, built 1906–1950; 3 in the Presidio Heights Historic District.
 - [Wood Street](wood-street/) — 1 building, built 1952.
 
+## Parks and public spaces
+
+- [Laurel Hill Playground](laurel-hill-playground/) — Neighborhood park or playground, 1.6 acres.
+- [Presidio Heights Playground](presidio-heights-playground/) — Neighborhood park or playground, 21,344 sq ft.
+
 ## Historic districts here
 
 - [Jordan Park Historic District](../historic-districts/jordan-park/)

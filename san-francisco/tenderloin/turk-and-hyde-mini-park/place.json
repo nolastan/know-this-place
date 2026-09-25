@@ -1,0 +1,49 @@
+{
+  "name": "Turk & Hyde Mini Park",
+  "path": "/san-francisco/tenderloin/turk-and-hyde-mini-park/",
+  "kind": "park",
+  "type": "Mini Park",
+  "coordinates": {
+    "lat": 37.782732,
+    "lng": -122.415954
+  },
+  "acres": 0.15,
+  "address": "201 Hyde Street",
+  "managed_by": "Recreation & Park",
+  "complex": "Civic Center/Potrero Hill Complex",
+  "rpd_property_id": "192",
+  "facilities": [
+    {
+      "name": "Children's Play Area",
+      "type": "Children's Play Area"
+    },
+    {
+      "name": "Picnic Areas",
+      "type": "Picnic Area"
+    }
+  ],
+  "parcels": [
+    "0336003"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=192",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=192",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%270336003%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

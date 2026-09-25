@@ -1,0 +1,45 @@
+{
+  "name": "Richmond Rec Center",
+  "path": "/san-francisco/outer-richmond/richmond-rec-center/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.783275,
+    "lng": -122.47799
+  },
+  "acres": 0.93,
+  "address": "251 18th Avenue",
+  "managed_by": "Unified School District",
+  "complex": "Richmond Complex",
+  "rpd_property_id": "172",
+  "facilities": [
+    {
+      "name": "Richmond Rec Center",
+      "type": "Rec Center"
+    }
+  ],
+  "parcels": [
+    "1415004"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=172",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=172",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%271415004%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

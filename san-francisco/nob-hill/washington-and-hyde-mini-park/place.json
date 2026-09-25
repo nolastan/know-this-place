@@ -1,0 +1,46 @@
+{
+  "name": "Washington & Hyde Mini Park",
+  "path": "/san-francisco/nob-hill/washington-and-hyde-mini-park/",
+  "kind": "park",
+  "type": "Mini Park",
+  "coordinates": {
+    "lat": 37.794001,
+    "lng": -122.417411
+  },
+  "acres": 0.16,
+  "address": "1470 Washington Street",
+  "managed_by": "Recreation & Park",
+  "complex": "North Beach Complex",
+  "rpd_property_id": "144",
+  "facilities": [
+    {
+      "name": "Children's Play Area",
+      "type": "Childrens Play Area"
+    }
+  ],
+  "parcels": [
+    "0187013",
+    "0187012"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=144",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=144",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%270187013%27%2C%270187012%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

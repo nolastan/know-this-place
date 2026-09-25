@@ -50,6 +50,17 @@ The blocks between Golden Gate Park and Mount Sutro, laid out along the Muni N-J
 - [Villa Terrace](villa-terrace/) — 1 building, built 1951.
 - [Warren Drive](warren-drive/) — 2 buildings, built 1961.
 
+## Parks and public spaces
+
+- [15th Avenue Steps](15th-avenue-steps/) — Mini park, 22,216 sq ft.
+- [Golden Gate Heights Park](golden-gate-heights-park/) — Neighborhood park or playground, 7.0 acres.
+- [Grand View Open Space](grand-view-open-space/) — Neighborhood park or playground, 34,412 sq ft.
+- [Grand View Park](grand-view-park/) — Neighborhood park or playground, 4.1 acres.
+- [J.P. Murphy Playground](j-p-murphy-playground/) — Neighborhood park or playground, 1.3 acres.
+- [Rocky Outcrop](rocky-outcrop/) — Neighborhood park or playground, 1.7 acres.
+- [Sunset Rec Center](sunset-rec-center/) — Neighborhood park or playground, 3.9 acres.
+- [White Crane Springs Community Garden](white-crane-springs-community-garden/) — Community garden, 20,038 sq ft.
+
 ## Historic districts here
 
 - [Cole Valley Historic District](../historic-districts/cole-valley/)

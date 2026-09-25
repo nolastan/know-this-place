@@ -1,0 +1,45 @@
+{
+  "name": "Geneva Carbarn",
+  "path": "/san-francisco/outer-mission/geneva-carbarn/",
+  "kind": "park",
+  "type": "Mini Park",
+  "coordinates": {
+    "lat": 37.720217,
+    "lng": -122.446749
+  },
+  "acres": 0.35,
+  "address": "2301 San Jose Avenue",
+  "managed_by": "Recreation & Park",
+  "complex": "Glen Park Complex",
+  "rpd_property_id": "11797",
+  "facilities": [
+    {
+      "name": "Geneva Carbarn",
+      "type": "Administration Building"
+    }
+  ],
+  "parcels": [
+    "6972036"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=11797",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=11797",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%276972036%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

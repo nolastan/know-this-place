@@ -1,0 +1,50 @@
+{
+  "name": "Fay Park",
+  "path": "/san-francisco/russian-hill/fay-park/",
+  "kind": "park",
+  "type": "Mini Park",
+  "coordinates": {
+    "lat": 37.802912,
+    "lng": -122.417887
+  },
+  "acres": 0.33,
+  "address": "2366 Leavenworth Street",
+  "managed_by": "Recreation & Park",
+  "complex": "Marina Complex",
+  "rpd_property_id": "184",
+  "facilities": [
+    {
+      "name": "Fay Garden",
+      "type": "Ornamental Garden"
+    },
+    {
+      "name": "Fay House",
+      "type": "Structure, Historic: Bldg-Other"
+    }
+  ],
+  "parcels": [
+    "0067014",
+    "0067014A"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=184",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=184",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%270067014%27%2C%270067014A%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

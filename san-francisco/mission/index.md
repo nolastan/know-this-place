@@ -125,6 +125,30 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [Woodward Street](woodward-street/) — 20 buildings, built 1906–2018; 20 in the Woodward St. Romeo Flats Reconstruction Historic District.
 - [York Street](york-street/) — 184 buildings, built 1880–1999; 23 in the East Mission Florida-to-Hampshire Streets Historic District.
 
+## Parks and public spaces
+
+- [24th & York Mini Park](24th-and-york-mini-park/) — Mini park, 5,663 sq ft.
+- [Alioto Mini Park](alioto-mini-park/) — Mini park, 9,148 sq ft.
+- [Coleridge Mini Park](coleridge-mini-park/) — Mini park, 10,019 sq ft.
+- [Coso & Precita Mini Park](coso-and-precita-mini-park/) — Mini park, 6,534 sq ft.
+- [Fallen Bridge Mini Park](fallen-bridge-mini-park/) — Mini park, 13,939 sq ft.
+- [Franklin Square](franklin-square/) — Neighborhood park or playground, 5.6 acres.
+- [Garfield Square](garfield-square/) — Neighborhood park or playground, 3.5 acres.
+- [In Chan Kaajal Park](in-chan-kaajal-park/) — Neighborhood park or playground, 37,462 sq ft.
+- [James Rolph Jr Playground](james-rolph-jr-playground/) — Neighborhood park or playground, 2.9 acres.
+- [Jose Coronado Playground](jose-coronado-playground/) — Neighborhood park or playground, 42,253 sq ft.
+- [Juri Commons](juri-commons/) — Mini park, 13,939 sq ft.
+- [Kid Power Park](kid-power-park/) — Mini park, 11,326 sq ft.
+- [McKinley Square](mckinley-square/) — Neighborhood park or playground, 2.9 acres.
+- [Mission Playground](mission-playground/) — Neighborhood park or playground, 2.1 acres.
+- [Mission Rec Center](mission-rec-center/) — Neighborhood park or playground, 30,928 sq ft.
+- [Noe Valley Town Square](noe-valley-town-square/) — Mini park, 12,197 sq ft.
+- [Parque Ninos Unidos](parque-ninos-unidos/) — Neighborhood park or playground, 30,492 sq ft.
+- [Potrero del Sol](potrero-del-sol/) — Neighborhood park or playground, 4.7 acres.
+- [Precita Park](precita-park/) — Neighborhood park or playground, 2.2 acres.
+- [SOMA West Dog Park](soma-west-dog-park/) — Neighborhood park or playground, 27,007 sq ft.
+- [SOMA West Skate Park](soma-west-skate-park/) — Neighborhood park or playground, 37,897 sq ft.
+
 ## Historic districts here
 
 - [16th and Valencia Streets Post-Fire Historic District](../historic-districts/16th-and-valencia-streets-post-fire/)

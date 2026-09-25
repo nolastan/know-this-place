@@ -1,0 +1,48 @@
+{
+  "name": "Panorama Park",
+  "path": "/san-francisco/visitacion-valley/panorama-park/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.712869,
+    "lng": -122.416171
+  },
+  "acres": 2.34,
+  "managed_by": "Recreation & Park",
+  "complex": "Treasure Island",
+  "rpd_property_id": "957481",
+  "facilities": [
+    {
+      "name": "Panorama Park Point of Infinity Sculpture",
+      "type": "Monument, Historic: Sculpture-Art"
+    },
+    {
+      "name": "Panorama Port Chicago Memorial",
+      "type": "Monument, Historic: Sculpture-Art"
+    }
+  ],
+  "parcels": [
+    "8950002"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=957481",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=957481",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%278950002%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "name": "Father Alfred Boeddeker Park",
+  "path": "/san-francisco/tenderloin/father-alfred-boeddeker-park/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.784387,
+    "lng": -122.412087
+  },
+  "acres": 1.09,
+  "address": "246 Eddy Street",
+  "managed_by": "Recreation & Park",
+  "complex": "Civic Center/Potrero Hill Complex",
+  "rpd_property_id": "134",
+  "facilities": [
+    {
+      "name": "Basketball Courts",
+      "type": "Basketball Court"
+    },
+    {
+      "name": "Boeddeker Clubhouse",
+      "type": "Clubhouse"
+    },
+    {
+      "name": "Children's Play Area",
+      "type": "Children's Play Area"
+    },
+    {
+      "name": "Community Garden",
+      "type": "Community Garden"
+    },
+    {
+      "name": "Picnic Areas",
+      "type": "Picnic Area"
+    }
+  ],
+  "parcels": [
+    "0332009",
+    "0332008",
+    "0332019",
+    "0332018",
+    "0332017",
+    "0332006",
+    "0332007"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=134",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=134",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%270332009%27%2C%270332008%27%2C%270332019%27%2C%270332018%27%2C%270332017%27%2C%270332006%27%2C%270332007%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

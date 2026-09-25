@@ -1,0 +1,55 @@
+{
+  "name": "Selby & Palou Mini Park",
+  "path": "/san-francisco/bayview-hunters-point/selby-and-palou-mini-park/",
+  "kind": "park",
+  "type": "Mini Park",
+  "coordinates": {
+    "lat": 37.738873,
+    "lng": -122.400394
+  },
+  "acres": 0.42,
+  "address": "1321 Selby Street",
+  "managed_by": "Recreation & Park",
+  "complex": "Bayview Complex",
+  "rpd_property_id": "157",
+  "facilities": [
+    {
+      "name": "Basketball Courts",
+      "type": "Basketball Court"
+    },
+    {
+      "name": "Children's Play Area",
+      "type": "Childrens Play Area"
+    },
+    {
+      "name": "Picnic Areas",
+      "type": "Picnic Area"
+    }
+  ],
+  "parcels": [
+    "5331057",
+    "5331055",
+    "5331056"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=157",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=157",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%275331057%27%2C%275331055%27%2C%275331056%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "name": "Hilltop Park",
+  "path": "/san-francisco/bayview-hunters-point/hilltop-park/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.732932,
+    "lng": -122.383504
+  },
+  "acres": 3.83,
+  "address": "2 Willie B Kennedy Drive",
+  "managed_by": "Recreation & Park",
+  "complex": "Bayview Complex",
+  "rpd_property_id": "47",
+  "facilities": [
+    {
+      "name": "Children's Play Area",
+      "type": "Children's Play Area"
+    },
+    {
+      "name": "Fitness Area",
+      "type": "Adult Fitness Court/Course"
+    },
+    {
+      "name": "Hilltop Skatepark",
+      "type": "Skatepark"
+    },
+    {
+      "name": "Performance Space",
+      "type": "Performance Space"
+    },
+    {
+      "name": "Picnic Areas",
+      "type": "Picnic Area"
+    },
+    {
+      "name": "Restroom",
+      "type": "Restroom"
+    }
+  ],
+  "parcels": [
+    "4713013"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=47",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=47",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%274713013%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Duncan & Castro Open Space",
+  "path": "/san-francisco/noe-valley/duncan-and-castro-open-space/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.745972,
+    "lng": -122.433409
+  },
+  "acres": 0.65,
+  "address": "592 Duncan Street",
+  "managed_by": "Recreation & Park",
+  "complex": "Buena Vista Complex",
+  "rpd_property_id": "178",
+  "parcels": [
+    "6590028",
+    "6590024",
+    "6590029",
+    "6590027",
+    "6590025",
+    "6590026"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=178",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%276590028%27%2C%276590024%27%2C%276590029%27%2C%276590027%27%2C%276590025%27%2C%276590026%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

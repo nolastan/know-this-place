@@ -1,0 +1,37 @@
+{
+  "name": "O'Shaughnessy Hollow",
+  "path": "/san-francisco/glen-park/oshaughnessy-hollow/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.739181,
+    "lng": -122.44389
+  },
+  "acres": 10.98,
+  "managed_by": "Recreation & Park",
+  "complex": "Glen Park Complex",
+  "rpd_property_id": "183",
+  "parcels": [
+    "2966001",
+    "2949A076",
+    "2953001A",
+    "2965001A",
+    "2964001",
+    "2949A017"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=183",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%272966001%27%2C%272949A076%27%2C%272953001A%27%2C%272965001A%27%2C%272964001%27%2C%272949A017%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

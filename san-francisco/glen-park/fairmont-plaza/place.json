@@ -1,0 +1,34 @@
+{
+  "name": "Fairmont Plaza",
+  "path": "/san-francisco/glen-park/fairmont-plaza/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.738508,
+    "lng": -122.429128
+  },
+  "acres": 0.87,
+  "address": "26 Amatista Lane",
+  "managed_by": "Recreation & Park",
+  "complex": "Glen Park Complex",
+  "rpd_property_id": "3",
+  "parcels": [
+    "6682A001",
+    "7542010"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=3",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%276682A001%27%2C%277542010%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

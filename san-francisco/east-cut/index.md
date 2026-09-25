@@ -30,6 +30,11 @@ The blocks between Market and Folsom around First, Second and Fremont Streets �
 - [Sutter Street](sutter-street/) — 2 buildings, built 1907–1922.
 - [Third Street](3rd-street/) — 14 buildings, built 1900–1999; 1 in the SoMa LGBTQ Historic District.
 
+## Parks and public spaces
+
+- [Guy Place Mini Park](guy-place-mini-park/) — Mini park, 3,920 sq ft.
+- [South Park](south-park-open-space/) — Neighborhood park or playground, 1.1 acres.
+
 ## Historic districts here
 
 - [New Montgomery-Mission-Second Street Conservation District](../historic-districts/new-montgomery-mission-second-street/)

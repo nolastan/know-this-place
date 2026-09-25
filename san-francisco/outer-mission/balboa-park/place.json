@@ -1,0 +1,89 @@
+{
+  "name": "Balboa Park",
+  "path": "/san-francisco/outer-mission/balboa-park/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.72496,
+    "lng": -122.444625
+  },
+  "acres": 24.86,
+  "address": "51 Havelock Street",
+  "managed_by": "Recreation & Park",
+  "complex": "Glen Park Complex",
+  "rpd_property_id": "66",
+  "facilities": [
+    {
+      "name": "Balboa Skatepark",
+      "type": "Skatepark"
+    },
+    {
+      "name": "Balboa Swimming Pool",
+      "type": "Swimming Pool"
+    },
+    {
+      "name": "Ball Fields",
+      "type": "Ball Field"
+    },
+    {
+      "name": "Basketball Courts",
+      "type": "Basketball Court"
+    },
+    {
+      "name": "Children's Play Areas",
+      "type": "Children's Play Area"
+    },
+    {
+      "name": "Dog Play Area",
+      "type": "Dog Play Area"
+    },
+    {
+      "name": "East Restroom",
+      "type": "Restroom"
+    },
+    {
+      "name": "Matthew Boxer Stadium",
+      "type": "Stadium"
+    },
+    {
+      "name": "Multi-Use Turf Playfields",
+      "type": "Multi-Use Turf"
+    },
+    {
+      "name": "Picnic Areas",
+      "type": "Picnic Area"
+    },
+    {
+      "name": "Tennis Courts",
+      "type": "Tennis Court"
+    },
+    {
+      "name": "West Restroom",
+      "type": "Restroom"
+    }
+  ],
+  "parcels": [
+    "3179011"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=66",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=66",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%273179011%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

@@ -38,6 +38,13 @@ An affluent district on the ridge north of Japantown, known for large houses and
 - [Webster Street](webster-street/) — 1 building, built 1905.
 - [Wilmot Street](wilmot-street/) — 1 building, built 1905.
 
+## Parks and public spaces
+
+- [Alta Plaza Park](alta-plaza-park/) — Neighborhood park or playground, 12.9 acres.
+- [Bush & Broderick Mini Park](bush-and-broderick-mini-park/) — Mini park, 8,712 sq ft.
+- [Cottage Row Mini Park](cottage-row-mini-park/) — Mini park, 7,405 sq ft.
+- [Lafayette Park](lafayette-park/) — Neighborhood park or playground, 12.5 acres.
+
 ## Historic districts here
 
 - [Cow Hollow First Bay Tradition Historic District](../historic-districts/cow-hollow-first-bay-tradition/)

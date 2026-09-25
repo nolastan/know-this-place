@@ -1,0 +1,37 @@
+{
+  "name": "Everson & Digby Lots",
+  "path": "/san-francisco/glen-park/everson-and-digby-lots/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.738092,
+    "lng": -122.431795
+  },
+  "acres": 1.27,
+  "address": "61 Everson Street",
+  "managed_by": "Recreation & Park",
+  "complex": "Glen Park Complex",
+  "rpd_property_id": "6",
+  "parcels": [
+    "7543026",
+    "7543027",
+    "7543028",
+    "7543025",
+    "7543032"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=6",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%277543026%27%2C%277543027%27%2C%277543028%27%2C%277543025%27%2C%277543032%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

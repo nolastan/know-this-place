@@ -1,0 +1,65 @@
+{
+  "name": "Raymond Kimbell Playground",
+  "path": "/san-francisco/western-addition/raymond-kimbell-playground/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.782948,
+    "lng": -122.435127
+  },
+  "acres": 6.02,
+  "address": "1901 Geary Boulevard",
+  "managed_by": "Recreation & Park",
+  "complex": "Western Addition Complex",
+  "rpd_property_id": "124",
+  "facilities": [
+    {
+      "name": "Admin Building",
+      "type": "Administration Building"
+    },
+    {
+      "name": "Ball Fields",
+      "type": "Ball Field"
+    },
+    {
+      "name": "Kimball CPA",
+      "type": "Children's Play Area"
+    },
+    {
+      "name": "Picnic Areas",
+      "type": "Picnic Area"
+    },
+    {
+      "name": "Raymond Kimbell Fieldhouse",
+      "type": "Fieldhouse"
+    },
+    {
+      "name": "Soccer Pitches",
+      "type": "Soccer Field"
+    }
+  ],
+  "parcels": [
+    "0706001"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=124",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=124",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%270706001%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

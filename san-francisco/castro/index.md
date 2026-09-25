@@ -113,6 +113,24 @@ which local histories treat as its own neighborhood.
 - [Woodland Avenue](woodland-avenue/) — 1 building, built 1937.
 - [Yukon Street](yukon-street/) — 13 buildings, built 1890–1949.
 
+## Parks and public spaces
+
+- [Buena Vista Park](buena-vista-park/) — Regional park, 38.4 acres.
+- [Duboce Park](duboce-park/) — Neighborhood park or playground, 4.8 acres.
+- [Eureka Valley Branch Library](eureka-valley-branch-library/) — Community garden, 18,731 sq ft.
+- [Eureka Valley Rec Center](eureka-valley-rec-center/) — Neighborhood park or playground, 2.2 acres.
+- [Grattan Playground](grattan-playground/) — Neighborhood park or playground, 1.9 acres.
+- [Interior Greenbelt](interior-greenbelt/) — Neighborhood park or playground, 21.4 acres.
+- [Kite Hill](kite-hill/) — Neighborhood park or playground, 2.9 acres.
+- [Midtown Terrace Playground](midtown-terrace-playground/) — Neighborhood park or playground, 1.6 acres.
+- [Mission Dolores Park](mission-dolores-park/) — Neighborhood park or playground, 16.0 acres.
+- [Mt. Olympus](mt-olympus/) — Mini park, 9,148 sq ft.
+- [Noe & Beaver Mini Park](noe-and-beaver-mini-park/) — Mini park, 4,792 sq ft.
+- [Roosevelt & Henry Stairs](roosevelt-and-henry-stairs/) — Mini park, 16,988 sq ft.
+- [Saturn Street Steps](saturn-street-steps/) — Mini park, 8,276 sq ft.
+- [Seward Mini Park](seward-mini-park/) — Mini park, 18,295 sq ft.
+- [Twin Peaks](twin-peaks/) — Regional park, 32.2 acres.
+
 Every parcel the assessor's roll calls residential now has a page, built from
 the city's own records. Condominium parcels are held back until the building
 each unit belongs to can be established, and parcels missing from the roll are

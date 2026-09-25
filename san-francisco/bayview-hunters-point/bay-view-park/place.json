@@ -1,0 +1,39 @@
+{
+  "name": "Bay View Park",
+  "path": "/san-francisco/bayview-hunters-point/bay-view-park/",
+  "kind": "park",
+  "type": "Regional Park",
+  "coordinates": {
+    "lat": 37.715185,
+    "lng": -122.392515
+  },
+  "acres": 46.64,
+  "address": "900 Key Avenue",
+  "managed_by": "Recreation & Park",
+  "complex": "Bayview Complex",
+  "rpd_property_id": "43",
+  "parcels": [
+    "4991005A",
+    "4991246",
+    "5000020",
+    "4991056",
+    "5000024",
+    "4991039",
+    "4991043"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=43",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%274991005A%27%2C%274991246%27%2C%275000020%27%2C%274991056%27%2C%275000024%27%2C%274991039%27%2C%274991043%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

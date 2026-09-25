@@ -51,6 +51,13 @@ and the upper reaches of Grant Avenue, which was formerly Dupont Street.
 - [Waverly Place](waverly-place/) — 16 buildings, built 1906–1911; 16 in the Chinatown Historic District.
 - [Wentworth Place](wentworth-place/) — 3 buildings, built 1907; 3 in the Chinatown Historic District.
 
+## Parks and public spaces
+
+- [Chestnut & Kearny Open Space](chestnut-and-kearny-open-space/) — Mini park, 2,178 sq ft.
+- [Joe DiMaggio Playground](joe-dimaggio-playground/) — Neighborhood park or playground, 2.9 acres.
+- [Telegraph Hill - Pioneer Park](telegraph-hill-pioneer-park/) — Neighborhood park or playground, 4.8 acres.
+- [Washington Square](washington-square/) — Civic plaza or square, 2.8 acres.
+
 ## Historic districts here
 
 - [Chinatown Historic District](../historic-districts/chinatown/)

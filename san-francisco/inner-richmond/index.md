@@ -27,6 +27,15 @@ The city's Inner Richmond analysis neighborhood, between Golden Gate Park and th
 - [Presidio Terrace](presidio-terrace/) — 8 buildings, built 1906–2010; 8 in the Presidio Terrace Historic District.
 - [Third Avenue](3rd-avenue/) — 1 building, built 1907.
 
+## Parks and public spaces
+
+- [10th Ave & Clement Park](10th-ave-and-clement-park/) — Neighborhood park or playground, 40,511 sq ft.
+- [Angelo J. Rossi Playground](angelo-j-rossi-playground/) — Neighborhood park or playground, 7.1 acres.
+- [Argonne Playground](argonne-playground/) — Neighborhood park or playground, 40,075 sq ft.
+- [Mountain Lake Park](mountain-lake-park/) — Neighborhood park or playground, 13.0 acres.
+- [Muriel Leff Mini Park](muriel-leff-mini-park/) — Mini park, 10,454 sq ft.
+- [Park Presidio Blvd](park-presidio-blvd/) — Parkway, 20.4 acres.
+
 ## Historic districts here
 
 - [Midcentury Recreation Historic District (Discontiguous)](../historic-districts/midcentury-recreation-discontiguous/)

@@ -30,6 +30,16 @@ that study area, as an example of the Second Bay Tradition.
 - [Valley Street](valley-street/) — 1 building, built 1900.
 - [Vicksburg Street](vicksburg-street/) — 1 building, built 1900.
 
+## Parks and public spaces
+
+- [29th & Diamond Open Space](29th-and-diamond-open-space/) — Neighborhood park or playground, 40,511 sq ft.
+- [Clipper Terrace Community Garden](clipper-terrace-community-garden/) — Community garden, 20,473 sq ft.
+- [Douglass Playground](douglass-playground/) — Neighborhood park or playground, 7.9 acres.
+- [Duncan & Castro Open Space](duncan-and-castro-open-space/) — Neighborhood park or playground, 28,314 sq ft.
+- [Noe Valley Courts](noe-valley-courts/) — Neighborhood park or playground, 1.1 acres.
+- [Portola Open Space](portola-open-space/) — Neighborhood park or playground, 35,284 sq ft.
+- [Upper Noe Rec Center](upper-noe-rec-center/) — Neighborhood park or playground, 2.9 acres.
+
 ## Historic districts here
 
 - [Diamond Heights Historic District](../historic-districts/diamond-heights/)

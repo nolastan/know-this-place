@@ -1,0 +1,49 @@
+{
+  "name": "Kid Power Park",
+  "path": "/san-francisco/mission/kid-power-park/",
+  "kind": "park",
+  "type": "Mini Park",
+  "coordinates": {
+    "lat": 37.764158,
+    "lng": -122.42031
+  },
+  "acres": 0.26,
+  "address": "45 Hoff Street",
+  "managed_by": "Recreation & Park",
+  "complex": "Mission Complex",
+  "rpd_property_id": "191",
+  "facilities": [
+    {
+      "name": "Children's Play Area",
+      "type": "Children's Play Area"
+    },
+    {
+      "name": "Community Garden",
+      "type": "Community Garden"
+    }
+  ],
+  "parcels": [
+    "3569019"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=191",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=191",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%273569019%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}
