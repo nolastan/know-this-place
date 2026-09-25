@@ -1,0 +1,79 @@
+{
+  "source_id": "sf-standard",
+  "batch": "2026-09-25",
+  "read_on": "2026-09-25",
+  "notes": "Four items queued from the 2026-09-25 poll, all four read. The AI-reading-tutor feature and the Flock cameras/SF Democrats story name no street address. The Wrecking Ball Coffee story also names a Berkeley address (3030 Telegraph Ave.), out of scope.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 4,
+    "mentions": 2,
+    "remaining": "none"
+  },
+  "findings": [
+    {
+      "id": "2026-09-25-st-0001",
+      "date": "2026-09",
+      "date_precision": "month",
+      "kind": "occupancy",
+      "address_as_written": "1670 Noe St.",
+      "street_number": "1670",
+      "street_type": "ST",
+      "street_name": "NOE",
+      "description": "SFUSD's announcement that the Mandarin immersion school will be temporarily housed at 1670 Noe Street.",
+      "citation": {
+        "label": "The San Francisco Standard, “SFUSD’s long-awaited Mandarin immersion school finally has a (temporary) address,” 25 September 2026",
+        "url": "https://sfstandard.com/2026/09/24/sfusd-mandarin-immersion-school-opening-2027/"
+      },
+      "raw": {
+        "text": "SFUSD’s long-awaited Mandarin immersion school finally has a (temporary) address"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "One event, one entry. Carried by Mission Local's account (2026-09-25-ml-0002), which gives the building's own history (the Spanish-speaking newcomer program it housed since 1973) rather than just the district's announcement."
+      },
+      "resolution": {
+        "status": "rejected",
+        "checked_on": "2026-09-25",
+        "method": "Not resolved: the finding is declined as a duplicate, so no parcel is sought by hand.",
+        "by_hand": true
+      }
+    },
+    {
+      "id": "2026-09-25-st-0002",
+      "date": "2026-12",
+      "date_precision": "month",
+      "kind": "occupancy",
+      "address_as_written": "1700 20th St.",
+      "street_number": "1700",
+      "street_type": "ST",
+      "street_name": "20TH",
+      "description": "Wrecking Ball Coffee, founded by Trish Rothgeb, is to open its second cafe at 1700 20th Street in Potrero Hill in December 2026, part of the company's expansion that also includes a Dogpatch roastery planned for early 2027.",
+      "extra": {
+        "opening_business": "Wrecking Ball Coffee",
+        "roastery_target": "early 2027 (Dogpatch, address not yet given)"
+      },
+      "citation": {
+        "label": "The San Francisco Standard, “She coined the term ‘third-wave coffee.’ Now she’s poised for a big comeback,” 25 September 2026",
+        "url": "https://sfstandard.com/2026/09/24/wrecking-ball-coffee-trish-rothgeb-new-cafe-roastery/"
+      },
+      "raw": {
+        "text": "plans to open a second at 1700 20th St. in Potrero Hill in December"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "published",
+        "note": "Seeded /san-francisco/potrero-hill/20th-street/1700/ (research/manifests/news-2026-09-25-sf-standard.json) and put the entry on it as sf-standard-2026-09-25, and on the homepage news grid. Nothing for the building block: the article is about a planned tenant, not a fact about the 1921 structure — the site's own permit records already show the space being converted to a cafe since March 2025, corroborating this story."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "4069012A",
+        "path": "/san-francisco/potrero-hill/20th-street/1700/",
+        "eas_address": "1700 20TH ST",
+        "method": "EAS exact match on 1700 20TH ST → parcel 4069012A; sf-parcels has blklot 4069012A active, 1700–1700 20TH; the 2025 roll records it as multi-family residential, built 1921.",
+        "checked_on": "2026-09-25",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      }
+    }
+  ]
+}
