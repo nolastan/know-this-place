@@ -1,0 +1,167 @@
+{
+  "$comment": "The venue register: how a calendar's free-text location becomes a named place with coordinates and — when the place has a page — the path of that page: a place page for a park, plaza or place in a park, else the address page of the parcel the venue is. fetch.py matches an event's location string against each key and each `match` entry (normalized: lowercase, alphanumeric-only, substring), longest matcher first. `path` is set only where the venue IS the page's place or parcel — an event at a spot with no page still gets a dot and a listing, just no panel and no link. `lat`/`lng` are the venue pin; set both, and say in `note` where they came from, so a coordinate here is a cited fact like any other.",
+  "venues": {
+    "sunset dunes": {
+      "name": "Sunset Dunes",
+      "match": [
+        "noriega sunset lounge",
+        "upper great highway"
+      ],
+      "path": "/san-francisco/sunset-parkside/sunset-dunes/",
+      "lat": 37.7506923,
+      "lng": -122.5085133,
+      "note": "The Sunset Dunes place page — the park is the former Upper Great Highway, mostly unparceled right of way. The venue pin stays the OSM centroid; per-event coordinates from sunsetdunes.org override it."
+    },
+    "alemany farm": {
+      "name": "Alemany Farm",
+      "path": "/san-francisco/bernal-heights/justin-drive/95/",
+      "lat": 37.732318,
+      "lng": -122.4196984,
+      "note": "Nature in the City's own event pin for the farm; Nominatim puts '700 Alemany Boulevard' at 37.7331,-122.4197 — same footprint. No EAS address on Alemany itself, but parcels/acdm-wktn puts the farm inside parcel 5801002, the 95 Justin Drive page."
+    },
+    "united nations plaza": {
+      "name": "United Nations Plaza",
+      "path": "/san-francisco/south-of-market/un-plaza/",
+      "lat": 37.780087,
+      "lng": -122.413949,
+      "note": "The UN Plaza place page (Rec & Park property on parcels 0351039–0351049). Events here are on the plaza itself, not in the 10–50 United Nations Plaza building on parcel 0351050. Coordinates are the place page's own."
+    },
+    "city hall": {
+      "name": "City Hall",
+      "match": [
+        "dr carlton b goodlett"
+      ],
+      "path": "/san-francisco/tenderloin/dr-carlton-b-goodlett-place/1/",
+      "lat": 37.779332,
+      "lng": -122.418728,
+      "note": "EAS resolves '1 Dr Carlton B Goodlett Place' to parcel 0787001 — the City Hall page. RecPark's 'City Hall Room 416 - 1 Dr. Carlton B. Goodlett Place' matches on 'city hall'."
+    },
+    "randall museum": {
+      "name": "Randall Museum",
+      "match": [
+        "museum way"
+      ],
+      "path": "/san-francisco/corbett-heights/museum-way/199/",
+      "lat": 37.764423,
+      "lng": -122.438148,
+      "note": "EAS resolves '199 Museum Way' to parcel 2615002 — the Randall Museum page. Coordinates are the page's own."
+    },
+    "golden gate bandshell": {
+      "name": "Golden Gate Bandshell",
+      "path": "/san-francisco/golden-gate-park/spreckels-temple-of-music/",
+      "lat": 37.7698795,
+      "lng": -122.4685913,
+      "note": "The Bandshell is the Spreckels Temple of Music (78 Music Concourse Drive), a place page in Golden Gate Park; Illuminate's LOCATION gives the Hagiwara Tea Garden Drive address beside it. Coordinates from Nominatim for the Bandshell."
+    },
+    "mclaren lodge": {
+      "name": "McLaren Lodge",
+      "match": [
+        "501 stanyan"
+      ],
+      "path": "/san-francisco/golden-gate-park/mclaren-lodge/",
+      "lat": 37.7718643,
+      "lng": -122.4547489,
+      "note": "McLaren Lodge, 501 Stanyan Street — its own place page in Golden Gate Park. Coordinates from Nominatim."
+    },
+    "hagiwara tea garden": {
+      "name": "Golden Gate Bandshell",
+      "path": "/san-francisco/golden-gate-park/spreckels-temple-of-music/",
+      "lat": 37.7698795,
+      "lng": -122.4685913,
+      "note": "The Bandshell is the Spreckels Temple of Music (78 Music Concourse Drive), a place page in Golden Gate Park; Illuminate's LOCATION gives the Hagiwara Tea Garden Drive address beside it. Coordinates from Nominatim for the Bandshell."
+    },
+    "147 fulton": {
+      "name": "Fulton Street Plaza",
+      "lat": 37.7797197,
+      "lng": -122.4159253,
+      "note": "Illuminate's own event page links this exact pin for '147 Fulton St' — the plaza beside the Main Library. No matching parcel page on the site."
+    },
+    "east meadow": {
+      "name": "14th Avenue East Meadow, Golden Gate Park",
+      "match": [
+        "14th ave east meadow"
+      ],
+      "path": "/san-francisco/golden-gate-park/fulton-street/6101/",
+      "lat": 37.7712281,
+      "lng": -122.4723184,
+      "note": "No place page for the meadow itself; it lies on parcel 1700001, Golden Gate Park's one parcel, the 6101 Fulton Street page. Coordinates from Nominatim for the East Meadow at 14th Avenue."
+    },
+    "union square": {
+      "name": "Union Square",
+      "path": "/san-francisco/union-square/union-square/",
+      "lat": 37.787936,
+      "lng": -122.407514,
+      "note": "The Union Square place page (Rec & Park property on parcel 0308001, the 333 Post Street parcel page). Coordinates are the place page's own."
+    },
+    "sigmund stern grove": {
+      "name": "Sigmund Stern Grove",
+      "match": [
+        "stern grove"
+      ],
+      "path": "/san-francisco/sunset-parkside/sigmund-stern-recreation-grove/",
+      "lat": 37.736098,
+      "lng": -122.478295,
+      "note": "The Sigmund Stern Recreation Grove place page (parcel 2488001). Coordinates are the place page's own."
+    },
+    "civic center plaza": {
+      "name": "Civic Center Plaza",
+      "path": "/san-francisco/tenderloin/mcallister-street/355/",
+      "lat": 37.7792467,
+      "lng": -122.4175699,
+      "note": "OpenStreetMap centroid (nominatim 'Civic Center Plaza'), checked 2026-09. The plaza is parcel 0788001 — documented at 355 McAllister Street, one of its addresses."
+    },
+    "rochambeau playground": {
+      "name": "Rochambeau Playground",
+      "path": "/san-francisco/seacliff/rochambeau-playground/",
+      "lat": 37.784844,
+      "lng": -122.484547,
+      "note": "The Rochambeau Playground place page (parcel 1384006). Coordinates are the place page's own."
+    },
+    "mcateer campus": {
+      "name": "McAteer Campus",
+      "match": [
+        "mcateer"
+      ],
+      "path": "/san-francisco/glen-park/portola-drive/555/",
+      "lat": 37.7452236,
+      "lng": -122.4490703,
+      "note": "The campus is parcel 7560003 — the 555 Portola Drive page. Coordinates are the event listing's own pin."
+    },
+    "palou phelps": {
+      "name": "Palou Phelps Mini Park",
+      "path": "/san-francisco/bayview-hunters-point/palou-and-phelps-park/",
+      "lat": 37.735524,
+      "lng": -122.394749,
+      "note": "The Palou & Phelps Park place page (parcels 5328xxx, 5329001). Coordinates are the place page's own."
+    },
+    "adah's stairway": {
+      "name": "Adah's Stairway",
+      "lat": 37.7700437,
+      "lng": -122.4388152,
+      "note": "A stairway in the public right of way — parcels/acdm-wktn finds no parcel at the pin, so the venue lists and draws a dot but links no page."
+    },
+    "moraga tiled steps": {
+      "name": "Moraga Tiled Steps",
+      "lat": 37.75626436492318,
+      "lng": -122.47273989311523,
+      "note": "The 16th Avenue Tiled Steps at Moraga — a stairway in the public right of way with no parcel (parcels/acdm-wktn), so no page path. Coordinates are the event listing's own pin."
+    },
+    "698 connecticut": {
+      "name": "698 Connecticut Street",
+      "lat": 37.757525810482676,
+      "lng": -122.39728432491208,
+      "note": "EAS resolves '698 Connecticut St' to this parcel point. RecPark lists block parties by street address; the event is the block, not a parcel the site documents, so no page path."
+    },
+    "mission st and avalon": {
+      "name": "Mission Street & Avalon Avenue",
+      "note": "Sunday Streets intersection in the Excelsior; no reliable coordinate source found yet — events here list on /events but draw no map dot."
+    },
+    "balboa park": {
+      "name": "Balboa Park",
+      "path": "/san-francisco/outer-mission/balboa-park/",
+      "lat": 37.72496,
+      "lng": -122.444625,
+      "note": "The Balboa Park place page (parcel 3179011). Coordinates are the place page's own."
+    }
+  }
+}

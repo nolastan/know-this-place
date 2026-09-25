@@ -1,0 +1,62 @@
+{
+  "$comment": "The events module's register. events/tools/fetch.py reads this file; events/AGENTS.md explains the fields. An id here is the `source` value on every event the calendar contributes, and the prefix of that event's `id`.",
+  "sources": [
+    {
+      "id": "illuminate",
+      "name": "Illuminate",
+      "url": "https://illuminate.org/feed/calendar",
+      "page": "https://illuminate.org/events/",
+      "kind": "ical",
+      "access": "open",
+      "note": "The City of Awe's free-concert calendar. One iCal feed carries the upcoming slate — but no per-event URL, so entries link the public `page` where they are listed. LOCATION is a street address with no venue name, so venues.json does the naming. WordPress robots.txt disallows nothing relevant."
+    },
+    {
+      "id": "sfrecpark",
+      "name": "SF Rec & Park",
+      "url": "https://sfrecpark.org/calendar.aspx?CID=43,34,28,39,35,22,37,14,30,32,42,40,33,29&showPastEvents=false",
+      "kind": "ical-multi",
+      "access": "open",
+      "note": "CivicPlus. Each calendar in the issue's CID list has its own iCalendar feed at common/modules/iCalendar/iCalendar.aspx?catID=<id>&feed=calendar; several are empty by design. LOCATION is 'Venue - address' text, occasionally wrapped in <p> tags. robots.txt disallows /RSS.aspx and /map.aspx but not calendar.aspx or the iCalendar feed.",
+      "feeds": [
+        "https://sfrecpark.org/common/modules/iCalendar/iCalendar.aspx?catID=43&feed=calendar",
+        "https://sfrecpark.org/common/modules/iCalendar/iCalendar.aspx?catID=34&feed=calendar",
+        "https://sfrecpark.org/common/modules/iCalendar/iCalendar.aspx?catID=28&feed=calendar",
+        "https://sfrecpark.org/common/modules/iCalendar/iCalendar.aspx?catID=39&feed=calendar",
+        "https://sfrecpark.org/common/modules/iCalendar/iCalendar.aspx?catID=35&feed=calendar",
+        "https://sfrecpark.org/common/modules/iCalendar/iCalendar.aspx?catID=22&feed=calendar",
+        "https://sfrecpark.org/common/modules/iCalendar/iCalendar.aspx?catID=37&feed=calendar",
+        "https://sfrecpark.org/common/modules/iCalendar/iCalendar.aspx?catID=14&feed=calendar",
+        "https://sfrecpark.org/common/modules/iCalendar/iCalendar.aspx?catID=30&feed=calendar",
+        "https://sfrecpark.org/common/modules/iCalendar/iCalendar.aspx?catID=32&feed=calendar",
+        "https://sfrecpark.org/common/modules/iCalendar/iCalendar.aspx?catID=42&feed=calendar",
+        "https://sfrecpark.org/common/modules/iCalendar/iCalendar.aspx?catID=40&feed=calendar",
+        "https://sfrecpark.org/common/modules/iCalendar/iCalendar.aspx?catID=33&feed=calendar",
+        "https://sfrecpark.org/common/modules/iCalendar/iCalendar.aspx?catID=29&feed=calendar"
+      ]
+    },
+    {
+      "id": "natureinthecity",
+      "name": "Nature in the City",
+      "url": "https://natureinthecity.org/events",
+      "kind": "squarespace",
+      "access": "open",
+      "note": "Squarespace events collection; ?format=json lists `upcoming` with title, startDate/endDate (ms epoch) and a location object whose mapLat/mapLng are real when set and the Squarespace default (40.7207559, -74.0007613) when not. The /calendar page is an empty shell — the collection is /events."
+    },
+    {
+      "id": "alemanyfarm",
+      "name": "Alemany Farm",
+      "url": "https://alemanyfarm.org/workshops/",
+      "kind": "html",
+      "access": "open",
+      "note": "No feed: the workshops page is hand-maintained WordPress markup — each workshop is an <h3>, a <strong> line with the date and hours, and an Eventbrite register button. All events are at the farm. robots.txt allows everything but asks Crawl-Delay: 20 — one request per run."
+    },
+    {
+      "id": "sunsetdunes",
+      "name": "Friends of Sunset Dunes",
+      "url": "https://sunsetdunes.org/events",
+      "kind": "squarespace",
+      "access": "open",
+      "note": "Squarespace events collection like natureinthecity's. Same NYC-default coordinate sentinel to drop. Venues are usually entrances along the park ('Sunset Dunes @ Irving'); the addressTitle names the spot."
+    }
+  ]
+}

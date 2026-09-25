@@ -214,6 +214,23 @@ def count_news():
     return s
 
 
+def count_events():
+    """The events module's data file: what the calendars announced, and when
+    the read happened. `fetched` is the date the "last run" tile measures —
+    the heartbeat of a pipeline with no queue and no cursors."""
+    doc = read_json(ROOT / "events" / "events.json") or {}
+    events = doc.get("events") or []
+    sources = (read_json(ROOT / "events" / "sources.json") or {}).get("sources", [])
+    return {
+        "events": len(events),
+        "with_coords": sum(1 for e in events if e.get("lat")),
+        "on_page": sum(1 for e in events if e.get("path")),
+        "sources": len(sources),
+        "sources_open": sum(1 for s in sources if s.get("access") == "open"),
+        "fetched": (doc.get("fetched") or "")[:10] or None,
+    }
+
+
 def count_git(today):
     """Cheap because git has already counted it. Returns an empty dict rather
     than a wrong one when the checkout cannot answer — a shallow clone (the
@@ -252,6 +269,7 @@ def collect(today):
         "research": count_findings(ROOT / "research" / "findings"),
         "news_items": count_findings(ROOT / "news" / "items"),
         "news": count_news(),
+        "events": count_events(),
         "git": count_git(today),
     }
     sources = ROOT / "research" / "sources"
@@ -347,8 +365,9 @@ def age_tile(icon, iso, label, today):
 
 def render(s):
     today = date.fromisoformat(s["generated"])
-    site, news, items, research, git = (
-        s["site"], s["news"], s["news_items"], s["research"], s["git"])
+    site, news, items, research, git, events = (
+        s["site"], s["news"], s["news_items"], s["research"], s["git"],
+        s["events"])
 
     head = f"""<!doctype html>
 <html lang="en">
@@ -395,6 +414,7 @@ def render(s):
         "<h2>Is anything still running?</h2></div>",
         band([
             age_tile("ic-calendar", news["last_run"], "Since last news run", today),
+            age_tile("ic-clock", events["fetched"], "Since last events read", today),
             age_tile("ic-permit", items["last_read"], "Since last news item", today),
             age_tile("ic-help", research["last_read"], "Since last research batch", today),
             age_tile("ic-clock", git.get("last_commit"), "Since last commit", today),
@@ -459,6 +479,13 @@ def render(s):
                 spec("ic-link", "Directories registered", s["merchants"]),
                 spec("ic-home", "Buildings with a listing", site["with_occupant"]),
                 spec("ic-permit", "Listings carried", site["listings"]),
+            ])
+            + panel("Events · calendars to listings", [
+                spec("ic-link", "Calendars registered", events["sources"]),
+                spec("ic-check", "Open to fetching", events["sources_open"]),
+                spec("ic-calendar", "Events listed", events["events"]),
+                spec("ic-pin", "With a map dot", events["with_coords"]),
+                spec("ic-home", "On a place or building page", events["on_page"]),
             ]),
         ),
 
@@ -495,7 +522,7 @@ def as_text(s):
     """The same numbers as plain lines, for a workflow summary or a PR body —
     so reporting the run never means an agent reading back the HTML."""
     out = [f"stats as of {s['generated']}"]
-    for section in ("site", "news", "news_items", "research", "git"):
+    for section in ("site", "news", "news_items", "events", "research", "git"):
         out.append(f"[{section}]")
         for k, v in sorted(s[section].items()):
             out.append(f"  {k}: {v}")
