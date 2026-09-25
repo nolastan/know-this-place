@@ -1,0 +1,33 @@
+{
+  "name": "Presidio Visitor Center",
+  "path": "/san-francisco/presidio/presidio-visitor-center/",
+  "kind": "presidio",
+  "type": "Museum",
+  "coordinates": {
+    "lat": 37.801924,
+    "lng": -122.456853
+  },
+  "street_addresses": [
+    "210 Lincoln Boulevard"
+  ],
+  "trust_slug": "presidio-visitor-center",
+  "part_of": {
+    "name": "Presidio",
+    "path": "/san-francisco/presidio/"
+  },
+  "sources": [
+    {
+      "id": "presidio-trust-places",
+      "name": "Presidio Trust — places listed on presidio.gov",
+      "query": "https://wp.presidio.gov/wp-json/wp/v2/places?slug=presidio-visitor-center",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "supports": "Street address",
+      "query": "https://data.sf.gov/resource/3mea-di5p.json?$where=eas_baseid%20in%20%28%27486969%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

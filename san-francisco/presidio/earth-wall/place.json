@@ -1,0 +1,42 @@
+{
+  "name": "Earth Wall",
+  "path": "/san-francisco/presidio/earth-wall/",
+  "kind": "presidio",
+  "type": "art installation",
+  "coordinates": {
+    "lat": 37.797541,
+    "lng": -122.459379
+  },
+  "street_addresses": [
+    "50 Moraga Avenue"
+  ],
+  "nps_id": "7C4882F9-1907-459C-8F73-BC12DBE4E58D",
+  "nps_name": "Earth Wall by Andy Goldsworthy",
+  "trust_slug": "andy-goldsworthys-earth-wall",
+  "trust_name": "Andy Goldsworthy’s Earth Wall",
+  "part_of": {
+    "name": "Presidio",
+    "path": "/san-francisco/presidio/"
+  },
+  "sources": [
+    {
+      "id": "nps-places",
+      "name": "National Park Service — Places API, Presidio of San Francisco",
+      "query": "https://developer.nps.gov/api/v1/places?id=7C4882F9-1907-459C-8F73-BC12DBE4E58D&api_key=DEMO_KEY",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "presidio-trust-places",
+      "name": "Presidio Trust — places listed on presidio.gov",
+      "query": "https://wp.presidio.gov/wp-json/wp/v2/places?slug=andy-goldsworthys-earth-wall",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "supports": "Street address",
+      "query": "https://data.sf.gov/resource/3mea-di5p.json?$where=eas_baseid%20in%20%28%27487147%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}
