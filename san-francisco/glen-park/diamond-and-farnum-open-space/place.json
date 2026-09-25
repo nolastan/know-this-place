@@ -1,0 +1,32 @@
+{
+  "name": "Diamond & Farnum Open Space",
+  "path": "/san-francisco/glen-park/diamond-and-farnum-open-space/",
+  "kind": "park",
+  "type": "Mini Park",
+  "coordinates": {
+    "lat": 37.738807,
+    "lng": -122.434327
+  },
+  "acres": 0.08,
+  "managed_by": "Recreation & Park",
+  "complex": "Glen Park Complex",
+  "rpd_property_id": "181",
+  "parcels": [
+    "7549007"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=181",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%277549007%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

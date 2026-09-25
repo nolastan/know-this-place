@@ -1,0 +1,37 @@
+{
+  "name": "Rocky Outcrop",
+  "path": "/san-francisco/inner-sunset/rocky-outcrop/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.753847,
+    "lng": -122.470878
+  },
+  "acres": 1.67,
+  "address": "1800 14th Avenue",
+  "managed_by": "Recreation & Park",
+  "complex": "Stern Grove Complex",
+  "rpd_property_id": "175",
+  "parcels": [
+    "2050A006",
+    "2050A011",
+    "2050A021",
+    "2050A022",
+    "2050A012"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=175",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%272050A006%27%2C%272050A011%27%2C%272050A021%27%2C%272050A022%27%2C%272050A012%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

@@ -14,6 +14,11 @@ The city's Lakeshore analysis neighborhood, in the south-western corner of San F
 - [Winston Drive](winston-drive/) — 1 building.
 - [Zoo Road](zoo-road/) — 1 building.
 
+## Parks and public spaces
+
+- [Lake Merced Park](lake-merced-park/) — Regional park, 608.6 acres.
+- [San Francisco Zoo](san-francisco-zoo/) — Zoo, 131.5 acres.
+
 ## Historic districts here
 
 - [Midcentury Recreation Historic District (Discontiguous)](../historic-districts/midcentury-recreation-discontiguous/)

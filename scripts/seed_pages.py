@@ -36,6 +36,12 @@ Usage:
   python3 scripts/seed_pages.py render san-francisco          # the whole city
   python3 scripts/seed_pages.py names --neighborhood "Castro/Upper Market"
   python3 scripts/seed_pages.py hubs  --city san-francisco --area castro
+  python3 scripts/seed_pages.py places --manifest research/manifests/rpd-places.json
+
+`places` is `seed-list` for the fifth page type: a park, plaza or named place
+inside a park, which has no street number of its own and so no address page.
+Its source is `place.json`, it lives at `/<city>/<area>/<place-slug>/`, and
+`render` re-renders it exactly as it does an address page.
 """
 from __future__ import annotations
 
@@ -192,6 +198,8 @@ DS_ROLL = "wv5m-vpq2"
 DS_PERMITS = "i98e-djp9"
 DS_HISTORIC = "3tsw-4idn"
 DS_DISTRICTS = "63x5-g3m4"
+DS_RPD_PROPERTIES = "gtr9-ntp6"
+DS_RPD_FACILITIES = "ib5c-xgwu"
 
 
 # --------------------------------------------------------------------------
@@ -3368,7 +3376,8 @@ def render_html(rec: dict) -> str:
     # them to sit beside — the empty column a split risks is the left one, and a
     # page with any timeline entry, art or prose at all has something to put
     # there. Only a page that is nothing but panels stacks them full width.
-    has_panels = bool(value_panel_html(rec, "") or glance_panel_html(rec, "")
+    has_panels = bool(place_panel_html(rec, "")
+                      or value_panel_html(rec, "") or glance_panel_html(rec, "")
                       or district_panel_html(rec, "") or open_space_panel_html(rec, "")
                       or survey_panel_html(rec, "") or residents_panel_html(rec, "")
                       or occupant_panel_html(rec, ""))
@@ -3381,7 +3390,7 @@ def render_html(rec: dict) -> str:
     ind = "      " if use_cols else "  "
     # What trades from the building today heads the aside, like an infobox:
     # it is the one panel a passer-by opening the page is most likely after.
-    panels = (occupant_panel_html(rec, ind)
+    panels = (occupant_panel_html(rec, ind) + place_panel_html(rec, ind)
               + open_space_panel_html(rec, ind) + value_panel_html(rec, ind)
               + glance_panel_html(rec, ind) + residents_panel_html(rec, ind)
               + survey_panel_html(rec, ind) + district_panel_html(rec, ind))
@@ -3496,6 +3505,359 @@ def render_html(rec: dict) -> str:
   </section>
   <p class="feedback-cta">
     <a href="{feedback_url(heading, rec['path'])}">Request an edit</a>
+  </p>
+  <p class="colophon">Part of <a href="/">Know This Place</a>, a community
+  encyclopedia of the built environment. Facts are cited; pages are reviewed
+  by people. <a href="{REPO}">Source</a>.</p>
+</footer>
+</body>
+</html>
+"""
+
+
+# --------------------------------------------------------------------------
+# Places — the fifth page type
+# --------------------------------------------------------------------------
+# A park, a plaza, or a named place inside a park: Mission Dolores Park, the
+# Rose Garden. None of them is a building, and most have no street number, so
+# none of them fits `/<area>/<street>/<number>/`. They sit one level up, at
+# `/<city>/<area>/<place-slug>/`, beside the street directories of the
+# neighborhood they are in, and their source is `place.json` rather than
+# `data.json` — a different file, so that every tool walking the tree for
+# address pages (`rglob("data.json")`) goes on seeing address pages only.
+#
+# Everything a place page states comes from the Recreation and Park
+# Department's two inventories (DATA-SOURCES.md → sf-rpd-properties,
+# sf-rpd-facilities), plus the parcels it sits on and, for a place the city's
+# address register gives a number, that address. What the page says about the
+# parcel is the parcel page's to say: the place page links to it.
+PLACE_FILE = "place.json"
+
+# The closed vocabulary, as `ADDRESS_TOP_LEVEL_KEYS` is for an address page.
+PLACE_KEYS = frozenset({
+    "name", "path", "kind", "type", "coordinates", "acres", "address",
+    "street_addresses", "managed_by", "complex", "rpd_name", "rpd_property_id",
+    "rpd_object_ids", "part_of", "parcels", "facilities", "hook",
+    "historical_record", "building", "narrative", "unknowns", "sources",
+})
+
+# The Rec & Park facility types that are the park's own upkeep rather than
+# anything a visitor goes to — a lawn polygon, a shed, a service road. They
+# stay off the page's list of what is in the park.
+FACILITY_TYPES_NOT_LISTED = frozenset({
+    "Hardscaped Area", "Landscaped Area", "Non-landscaped Greenspace",
+    "Cargo Container", "Maintenance Building", "Maintenance Facility", "Road",
+    "Aggregate", "Office Trailer", "Parking Lot", "Multi-use Paved",
+    "Natural Resource Management Area",
+})
+
+# Rec & Park files a property with no address of its own under its
+# headquarters, McLaren Lodge at 501 Stanyan Street — every section of Golden
+# Gate Park and the whole of Sunset Dunes carry it. It is not the place's
+# address, and the page does not print it as one.
+RPD_HQ_ADDRESS = "501 Stanyan St"
+
+
+def is_place_dir(d: Path) -> bool:
+    return (d / PLACE_FILE).is_file()
+
+
+@functools.lru_cache(maxsize=1)
+def place_index() -> tuple:
+    """Every place on the site: ((path, name, type, parcels), ...), by path.
+
+    Read off the tree at render time, like `_district_hubs`: a place links to
+    the parcel pages beneath it and an address page to the places on its
+    parcel, and neither is worth a committed index of its own at this size.
+    """
+    out = []
+    for f in sorted(ROOT.glob(f"*/*/*/{PLACE_FILE}")):
+        try:
+            rec = json.loads(f.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+        out.append((rec.get("path") or "", rec.get("name") or "",
+                    rec.get("type") or "", tuple(rec.get("parcels") or ())))
+    return tuple(out)
+
+
+@functools.lru_cache(maxsize=1)
+def pages_by_apn() -> dict:
+    """APN -> address page path, for a place's links to the parcels it covers."""
+    return existing_pages_by_apn()
+
+
+def places_on_parcel(apn: str) -> list:
+    """(path, name, type) for every place standing on this parcel."""
+    apn = (apn or "").replace("-", "")
+    return [(path, name, ptype) for path, name, ptype, parcels in place_index()
+            if apn and apn in parcels]
+
+
+def place_panel_html(rec: dict, indent: str) -> str:
+    """On an address page: the parks and public spaces on this parcel.
+
+    One row per place, linked. The parcel page is the assessor's and the
+    permit office's record of the land; the place page is the park. A reader
+    who arrives at 333 Post Street looking for Union Square needs the door.
+    """
+    places = places_on_parcel(rec.get("apn"))
+    if not places:
+        return ""
+    rows = "\n".join(
+        f'{indent}    <div class="spec"><span class="ic ic-pin"></span>'
+        f'<span class="spec-k"><a href="{esca(path)}">{esc(name)}</a></span>'
+        f'<span class="spec-v">{esc(place_type_label({"type": ptype}))}</span></div>'
+        for path, name, ptype in places)
+    heading = "Public space on this parcel" if len(places) == 1 \
+        else "Public spaces on this parcel"
+    return (f'{indent}<section class="panel">\n'
+            f'{indent}  <h3>{heading}</h3>\n'
+            f'{indent}  <dl class="speclist">\n{rows}\n{indent}  </dl>\n'
+            f'{indent}</section>\n')
+
+
+def acreage(acres) -> tuple:
+    """(value html, label) for a stat tile: acres from one up, square feet below."""
+    a = float(acres)
+    if a >= 1:
+        return f"{a:,.1f}<small> acres</small>", "Area"
+    return f"{round(a * 43560):,}<small> sq ft</small>", "Area"
+
+
+# Rec & Park's type codes, for the two that read as a database column rather
+# than as words. Every other type is its own plain label, sentence-cased. The
+# record panel prints the code as the inventory has it.
+PLACE_TYPE_LABEL = {
+    "Structure, Historic: Bldg-Other": "Historic structure",
+    "Monument, Historic: Sculpture-Art": "Monument",
+    "Zoological Garden": "Zoo",
+}
+
+
+def place_type_label(rec: dict) -> str:
+    t = rec.get("type") or "Public space"
+    t = PLACE_TYPE_LABEL.get(t, t).replace("/", " and ")
+    return t[0].upper() + t[1:].lower()
+
+
+def place_hook(rec: dict) -> str:
+    """A place's line on its neighborhood hub — which is also, for a place
+    inside a park, the park's own page, so the park is not named again."""
+    if rec.get("hook"):
+        return rec["hook"]
+    head = place_type_label(rec)
+    if rec.get("acres"):
+        a = float(rec["acres"])
+        head += (f", {a:,.1f} acres" if a >= 1 else f", {round(a * 43560):,} sq ft")
+    return head + "."
+
+
+def place_record_panel_html(rec: dict, indent: str) -> str:
+    rows = []
+    for icon, key, val in (
+            ("ic-home", "Type", rec.get("type")),
+            ("ic-pin", "Address", rec.get("address")),
+            ("ic-pin", "Street address" if len(rec.get("street_addresses") or []) < 2
+             else "Street addresses", "; ".join(rec.get("street_addresses") or [])),
+            ("ic-plan", "Managed by", rec.get("managed_by")),
+            ("ic-link", "Complex", rec.get("complex")),
+            ("ic-help", "Rec & Park name", rec.get("rpd_name")),
+            ("ic-ruler", "Architect", (rec.get("building") or {}).get("architect"))):
+        if val:
+            rows.append((icon, key, val))
+    if not rows:
+        return ""
+    body = "\n".join(
+        f'{indent}    <div class="spec"><span class="ic {i}"></span>'
+        f'<span class="spec-k">{esc(k)}</span>'
+        f'<span class="spec-v">{esc(v)}</span></div>' for i, k, v in rows)
+    return (f'{indent}<section class="panel">\n'
+            f'{indent}  <h3>Recreation and Park record</h3>\n'
+            f'{indent}  <dl class="speclist">\n{body}\n{indent}  </dl>\n'
+            f'{indent}</section>\n')
+
+
+def place_parcels_panel_html(rec: dict, indent: str) -> str:
+    """The parcels the place covers, each linked where it has a page, and the
+    other places that share one of them."""
+    apns = rec.get("parcels") or []
+    if not apns:
+        return ""
+    paged = pages_by_apn()
+    rows = []
+    for apn in apns:
+        label = f"Block {apn[:4]}, Lot {apn[4:]}"
+        path = paged.get(apn)
+        val = (f'<a href="{esca(path)}">{esc(label)}</a>' if path else esc(label))
+        rows.append(f'{indent}    <div class="spec"><span class="ic ic-lot"></span>'
+                    f'<span class="spec-k">Assessor\'s block and lot</span>'
+                    f'<span class="spec-v">{val}</span></div>')
+    shared = sorted({(p, n) for apn in apns for p, n, _t in places_on_parcel(apn)
+                     if p != rec["path"]}, key=lambda x: x[1])
+    for path, name in shared:
+        rows.append(f'{indent}    <div class="spec"><span class="ic ic-pin"></span>'
+                    f'<span class="spec-k">Shares a parcel with</span>'
+                    f'<span class="spec-v"><a href="{esca(path)}">{esc(name)}</a>'
+                    f'</span></div>')
+    heading = "Parcel" if len(apns) == 1 else f"Parcels ({len(apns)})"
+    return (f'{indent}<section class="panel">\n'
+            f'{indent}  <h3>{heading}</h3>\n'
+            f'{indent}  <dl class="speclist">\n' + "\n".join(rows) + "\n"
+            f'{indent}  </dl>\n'
+            f'{indent}</section>\n')
+
+
+def place_facilities_html(rec: dict, indent: str) -> str:
+    """What Rec & Park's facility inventory records inside the place."""
+    items = rec.get("facilities") or []
+    if not items:
+        return ""
+    rows = []
+    for f in items:
+        label = f["name"]
+        if f.get("count", 1) > 1:
+            label += f" ×{f['count']}"
+        name = (f'<a href="{esca(f["path"])}">{esc(label)}</a>' if f.get("path")
+                else esc(label))
+        # The inventory often names a thing by its type ("Tennis Courts",
+        # "Tennis Court"); the type column then says nothing the name hasn't.
+        ftype = f.get("type") or ""
+        if ftype.lower().rstrip("s") == f["name"].lower().rstrip("s"):
+            ftype = ""
+        rows.append(f'{indent}    <div class="spec"><span class="ic ic-pin"></span>'
+                    f'<span class="spec-k">{name}</span>'
+                    f'<span class="spec-v">{esc(ftype)}</span></div>')
+    return (f'{indent}<section class="panel">\n'
+            f'{indent}  <h3>Facilities</h3>\n'
+            f'{indent}  <dl class="speclist">\n' + "\n".join(rows) + "\n"
+            f'{indent}  </dl>\n'
+            f'{indent}</section>\n')
+
+
+def render_place_html(rec: dict) -> str:
+    name = rec["name"]
+    lat, lng = rec["coordinates"]["lat"], rec["coordinates"]["lng"]
+    city_slug, area_slug, _slug = rec["path"].strip("/").split("/")
+    city_name = " ".join(w.capitalize() for w in city_slug.split("-"))
+    area_name = area_display(f"/{city_slug}/{area_slug}/")
+    part_of = rec.get("part_of") or {}
+    sub_text = place_type_label(rec)
+    if part_of:
+        sub_text += f" · {part_of['name']}"
+    desc = f"{name}, San Francisco: {place_hook(rec).rstrip('.')} — from the " \
+           f"Recreation and Park Department's inventory, fully cited."
+
+    tiles = []
+    if rec.get("acres"):
+        v, label = acreage(rec["acres"])
+        tiles.append(("ic-lot", v, label))
+    listed = [f for f in rec.get("facilities") or []]
+    if listed:
+        tiles.append(("ic-home", f"{sum(f.get('count', 1) for f in listed):,}",
+                      "Facilities listed"))
+    stats = ""
+    if tiles:
+        stats = ('  <div class="stats">\n' + "\n".join(
+            f'    <div class="stat"><span class="ic {i}"></span>'
+            f'<span class="stat-val">{v}</span>'
+            f'<span class="stat-label">{esc(l)}</span></div>' for i, v, l in tiles)
+            + '\n  </div>\n')
+
+    timeline = timeline_html(rec, "      ") if rec.get("historical_record") else ""
+    lead_html, sections = narrative_html(rec, "      ")
+    main_col = "\n".join(x for x in (timeline, sections) if x)
+    panels_ind = "      " if main_col else "  "
+    panels = (place_record_panel_html(rec, panels_ind)
+              + place_facilities_html(rec, panels_ind)
+              + place_parcels_panel_html(rec, panels_ind))
+    if main_col:
+        body = ('  <div class="cols">\n    <div class="main">\n' + main_col
+                + '    </div>\n\n    <aside class="aside">\n' + panels
+                + '    </aside>\n  </div>\n')
+    else:
+        body = panels
+
+    ld = {
+        "@context": "https://schema.org",
+        "@type": "Place",
+        "name": name,
+        "url": f"{SITE}{rec['path']}",
+        "geo": {"@type": "GeoCoordinates", "latitude": lat, "longitude": lng},
+        "description": desc,
+    }
+    if part_of:
+        ld["containedInPlace"] = {"@type": "Place", "name": part_of["name"],
+                                  "url": f"{SITE}{part_of['path']}"}
+    crumbs_ld = breadcrumb_ld([
+        (city_name, f"/{city_slug}/"),
+        (area_name, f"/{city_slug}/{area_slug}/"),
+        (name, None),
+    ])
+
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{esc(name)} — Know This Place</title>
+  <meta name="description" content="{esca(desc)}">
+  <link rel="canonical" href="{SITE}{rec['path']}">
+{ICON_LINKS}
+{CSS_LINK}
+  <script type="module" src="/shared/site.js"></script>
+{ld_block(ld)}
+{ld_block(crumbs_ld)}
+</head>
+<body>
+<div class="map-shell">
+  <ktp-map location="{lat},{lng}" label="{esca(name)}">
+    <figure class="media media-map">
+      <div class="media-empty">
+        <span class="ic ic-pin"></span>
+        <span>{lat:.4f}, {'−' if lng < 0 else ''}{abs(lng):.4f}</span>
+        <small>A locator map appears here once a Mapbox token is configured.</small>
+      </div>
+    </figure>
+  </ktp-map>
+  <a class="map-brand" href="/">Know This Place</a>
+  <div class="map-id">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/{city_slug}/">{esc(city_name)}</a>{CRUMB_SEP}
+      <a href="/{city_slug}/{area_slug}/">{esc(area_name)}</a>
+    </nav>
+  </div>
+</div>
+
+<main>
+  <section class="hero">
+    <div>
+      <h1>{esc(name)}</h1>
+      <p class="sub">{esc(sub_text)}</p>
+    </div>
+    <ktp-streetview location="{lat},{lng}" label="{esca(name)}">
+      <figure class="media media-lift">
+        <div class="media-empty">
+          <span class="ic ic-pin"></span>
+          <span>{lat:.4f}, {'−' if lng < 0 else ''}{abs(lng):.4f}</span>
+          <small>Street View appears here once a Google Maps embed key is configured.</small>
+        </div>
+      </figure>
+    </ktp-streetview>
+  </section>
+
+{lead_html}{stats}
+{body}</main>
+
+<footer class="site-footer">
+  <section class="sources">
+    <h2>Sources</h2>
+    <ul>
+{sources_html(rec)}
+    </ul>
+  </section>
+  <p class="feedback-cta">
+    <a href="{feedback_url(name, rec['path'])}">Request an edit</a>
   </p>
   <p class="colophon">Part of <a href="/">Know This Place</a>, a community
   encyclopedia of the built environment. Facts are cited; pages are reviewed
@@ -4307,6 +4669,17 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
 
 
 NEIGHBORHOOD_SECTION = "Streets documented so far"
+PLACES_SECTION = "Parks and public spaces"
+
+
+def area_places(area_dir: Path) -> list:
+    """(slug, name, hook) for every place page filed under a neighborhood."""
+    out = []
+    for d in sorted(area_dir.iterdir()):
+        if d.is_dir() and is_place_dir(d):
+            rec = json.loads((d / PLACE_FILE).read_text(encoding="utf-8"))
+            out.append((d.name, rec["name"], place_hook(rec)))
+    return sorted(out, key=lambda x: x[1].lower())
 
 
 def existing_street_hooks(area_dir: Path) -> dict:
@@ -4373,6 +4746,7 @@ def write_neighborhood_hub(area_dir: Path, ctx: dict) -> int:
     if not streets:
         return 0
     streets.sort(key=lambda s: s[1])
+    places = area_places(area_dir)
 
     md_path, html_path = area_dir / "index.md", area_dir / "index.html"
     if md_path.exists():
@@ -4387,6 +4761,7 @@ def write_neighborhood_hub(area_dir: Path, ctx: dict) -> int:
             lambda m: m.group(1) + block + "\n", text)
         if not n:
             raise SystemExit(f"{md_path}: no '## {NEIGHBORHOOD_SECTION}' list to replace")
+        new = md_places_section(new, places)
         md_path.write_text(new, encoding="utf-8")
 
     if html_path.exists():
@@ -4408,9 +4783,53 @@ def write_neighborhood_hub(area_dir: Path, ctx: dict) -> int:
             lambda m: m.group(1) + block + m.group(3), text, flags=re.S)
         if not n:
             raise SystemExit(f"{html_path}: no '{NEIGHBORHOOD_SECTION}' list to replace")
-        html_path.write_text(neighborhood_ld(new, area_dir, streets),
-                             encoding="utf-8")
+        new = html_places_section(new, places)
+        html_path.write_text(neighborhood_ld(
+            new, area_dir, streets + [(slug, name, 0, hook) for slug, name, hook in places]),
+            encoding="utf-8")
     return len(streets)
+
+
+def md_places_section(text: str, places: list) -> str:
+    """Replace a hub's place list in `index.md`, or add it after the streets.
+
+    Generated wholesale from the place pages, like the street list above it,
+    and in the same `- [name](slug/) — hook` shape, so `validate.check_hub_sync`
+    holds the two files to the same list.
+    """
+    block = "\n".join(f"- [{name}]({slug}/) — {hook}" for slug, name, hook in places)
+    head = f"## {PLACES_SECTION}\n\n"
+    if head in text:
+        pat = rf"({re.escape(head)})(?:- .*\n(?:[ \t]+\S.*\n)*)+"
+        if not places:
+            return re.sub(rf"{re.escape(head)}(?:- .*\n(?:[ \t]+\S.*\n)*)+\n?", "", text)
+        return re.sub(pat, lambda m: m.group(1) + block + "\n", text)
+    if not places:
+        return text
+    return re.sub(
+        rf"(## {re.escape(NEIGHBORHOOD_SECTION)}\n\n(?:- .*\n(?:[ \t]+\S.*\n)*)+)",
+        lambda m: m.group(1) + "\n" + head + block + "\n", text, count=1)
+
+
+def html_places_section(text: str, places: list) -> str:
+    """The same list in `index.html`: replaced where it is, added where not."""
+    items = "\n".join(
+        f'    <li><a href="{slug}/">{esc(name)}</a><br>\n'
+        f'      <span class="hook">{esc(hook)}</span></li>'
+        for slug, name, hook in places)
+    head = f"<h2>{PLACES_SECTION}</h2></div>"
+    if head in text:
+        return re.sub(
+            rf"({re.escape(head)}\s*<ul class=\"place-list\">\n)(.*?)(\n  </ul>)",
+            lambda m: m.group(1) + items + m.group(3), text, count=1, flags=re.S)
+    if not places:
+        return text
+    section = (f'\n\n  <div class="section-head"><span class="ic ic-lot"></span>'
+               f'{head}\n  <ul class="place-list">\n{items}\n  </ul>')
+    return re.sub(
+        rf"(<h2>{re.escape(NEIGHBORHOOD_SECTION)}</h2></div>\s*"
+        rf'<ul class="place-list">\n.*?\n  </ul>)',
+        lambda m: m.group(1) + section, text, count=1, flags=re.S)
 
 
 # Everything from the shared enhancement script to the end of the head. A
@@ -5185,17 +5604,20 @@ def page_dirs(paths) -> list:
         if not p.is_absolute():
             p = Path.cwd() / p
         p = p.resolve()
-        if p.is_file() and p.name == "data.json":
+        if p.is_file() and p.name in ("data.json", PLACE_FILE):
             p = p.parent
         if not p.exists():
             raise SystemExit(f"render: no such path: {raw}")
         if p != ROOT and ROOT not in p.parents:
             raise SystemExit(f"render: {raw} is outside the repo")
-        if (p / "data.json").is_file():
+        if (p / "data.json").is_file() or is_place_dir(p):
             out.add(p)
         else:
             out.update(f.parent for f in p.rglob("data.json")
                        if ADDRESS_DIR.match(f.parent.name))
+            # Place pages too: they are rendered from their source exactly as
+            # an address page is, and a sweep over a neighborhood means both.
+            out.update(f.parent for f in p.rglob(PLACE_FILE))
     return sorted(out)
 
 
@@ -5215,7 +5637,9 @@ def cmd_render(args) -> int:
             held_back.append(rel)
             continue
         try:
-            rec = json.loads((page_dir / "data.json").read_text(encoding="utf-8"))
+            place = is_place_dir(page_dir)
+            rec = json.loads((page_dir / (PLACE_FILE if place else "data.json"))
+                             .read_text(encoding="utf-8"))
         except json.JSONDecodeError as e:
             print(f"  {rel}: invalid JSON: {e}", file=sys.stderr)
             failed += 1
@@ -5224,7 +5648,7 @@ def cmd_render(args) -> int:
             opted_out += 1
             continue
         try:
-            out = render_html(rec)
+            out = render_place_html(rec) if place else render_html(rec)
         except Exception as e:
             # One page the renderer can't produce must not abandon the rest of
             # the sweep. Report it, keep going, and fail the run at the end.
@@ -5418,6 +5842,171 @@ def cmd_seed_list(args) -> int:
     return 0
 
 
+RPD_PROPERTY_SELECT = ",".join((
+    "property_id", "property_name", "propertytype", "acres", "address", "zipcode",
+    "city", "ownership", "complex", "latitude", "longitude"))
+RPD_FACILITY_SELECT = ",".join((
+    "objectid", "facility_id", "facility_name", "facility_type", "acres", "property_id",
+    "property_name", "latitude", "longitude"))
+
+
+def build_place_record(e: dict, props: dict, facs: list, retrieved: str) -> dict:
+    """One manifest entry -> the first draft of its `place.json`.
+
+    The manifest states what needed judgement — which parcels a park covers
+    (a spatial join, run once), which neighborhood directory it is filed
+    under, which of Golden Gate Park's facilities are places a visitor goes to
+    and what its heading calls them, which city addresses fall inside one.
+    Everything else is read here, from the two Rec & Park inventories.
+    """
+    path = f"/san-francisco/{e['area']}/{e['slug']}/"
+    base = "https://data.sf.gov/resource"
+    q = urllib.parse.quote
+    sources = []
+    if e["kind"] == "park":
+        p = props[e["property_id"]]
+        rec = {"name": p["property_name"], "path": path, "kind": "park",
+               "type": p.get("propertytype"),
+               "coordinates": {"lat": round(float(p["latitude"]), 6),
+                               "lng": round(float(p["longitude"]), 6)},
+               "acres": round(float(p["acres"]), 2)}
+        addr = (p.get("address") or "").strip()
+        if addr and addr != RPD_HQ_ADDRESS:
+            rec["address"] = alias_display(addr.upper())
+        for key, col in (("managed_by", "ownership"), ("complex", "complex")):
+            if p.get(col):
+                rec[key] = p[col]
+        rec["rpd_property_id"] = p["property_id"]
+        sources.append({"id": "sf-rpd-properties",
+                        "name": "SF Recreation and Park Department — Recreation "
+                                "and Parks Properties via DataSF",
+                        "query": f"{base}/{DS_RPD_PROPERTIES}.json?property_id="
+                                 f"{p['property_id']}",
+                        "retrieved": retrieved})
+        # What the facility inventory records inside the property, less its
+        # upkeep. One row per name and type; a name the inventory repeats
+        # (four tennis courts, each its own polygon) is counted, not repeated.
+        mine = collections.Counter(
+            (re.sub(r"^GGP\d\s+", "", f.get("facility_name") or "").strip(),
+             f.get("facility_type") or "")
+            for f in facs if f.get("property_id") == p["property_id"]
+            and f.get("facility_type") not in FACILITY_TYPES_NOT_LISTED
+            and f.get("facility_name"))
+        if mine:
+            rec["facilities"] = [
+                {"name": n, "type": t, **({"count": c} if c > 1 else {})}
+                for (n, t), c in sorted(mine.items())]
+            sources.append({"id": "sf-rpd-facilities",
+                            "name": "SF Recreation and Park Department — Recreation "
+                                    "and Parks Facilities via DataSF",
+                            "query": f"{base}/{DS_RPD_FACILITIES}.json?property_id="
+                                     f"{p['property_id']}",
+                            "retrieved": retrieved})
+    else:
+        # By `objectid`, the inventory's row id: `facility_id` is not unique —
+        # one id covers the Academy of Sciences and its landscaping, another
+        # a hundred-odd polygons across the city (DATA-SOURCES.md).
+        rows = [f for f in facs if f["objectid"] in set(e["rpd_object_ids"])]
+        if len(rows) != len(e["rpd_object_ids"]):
+            raise SystemExit(f"{e['slug']}: object ids missing from the inventory")
+        biggest = max(rows, key=lambda f: float(f.get("acres") or 0))
+        raw = {f["facility_name"] for f in rows}
+        types = collections.Counter(f.get("facility_type") for f in rows)
+        rec = {"name": e["name"], "path": path, "kind": "facility",
+               "type": types.most_common(1)[0][0],
+               "coordinates": {"lat": round(float(biggest["latitude"]), 6),
+                               "lng": round(float(biggest["longitude"]), 6)}}
+        # A building the inventory holds as a point has no area; say nothing
+        # rather than "0 sq ft".
+        acres = round(sum(float(f.get("acres") or 0) for f in rows), 2)
+        if acres:
+            rec["acres"] = acres
+        if e.get("eas"):
+            rec["street_addresses"] = [alias_display(a["address"]) for a in e["eas"]]
+        if raw != {e["name"]}:
+            rec["rpd_name"] = "; ".join(sorted(raw))
+        rec["rpd_object_ids"] = sorted(e["rpd_object_ids"], key=int)
+        # A facility is part of the park whose hub it is filed under — named
+        # off that hub's own heading, as a breadcrumb is.
+        rec["part_of"] = {"name": area_display(e["part_of"]), "path": e["part_of"]}
+        ids = ",".join(rec["rpd_object_ids"])
+        sources.append({"id": "sf-rpd-facilities",
+                        "name": "SF Recreation and Park Department — Recreation "
+                                "and Parks Facilities via DataSF",
+                        "query": f"{base}/{DS_RPD_FACILITIES}.json?$where="
+                                 f"{q(f'objectid in ({ids})')}",
+                        "retrieved": retrieved})
+        if e.get("eas"):
+            ids = ",".join(f"'{a['eas_baseid']}'" for a in e["eas"])
+            sources.append({"id": "sf-eas-addresses",
+                            "name": "SF Enterprise Addressing System via DataSF",
+                            "supports": "Street address",
+                            "query": f"{base}/{DS_EAS}.json?$where="
+                                     f"{q(f'eas_baseid in ({ids})')}",
+                            "retrieved": retrieved})
+    if e.get("parcels"):
+        rec["parcels"] = list(e["parcels"])
+        ids = ",".join(f"'{a}'" for a in e["parcels"])
+        sources.append({"id": "sf-parcels",
+                        "name": "SF Parcels (active and retired) via DataSF",
+                        "supports": "Parcels",
+                        "query": f"{base}/acdm-wktn.json?$where="
+                                 f"{q(f'blklot in ({ids})')}",
+                        "retrieved": retrieved})
+    rec["sources"] = sources
+    return rec
+
+
+def cmd_places(args) -> int:
+    """Write the place pages named in a manifest — create-only, like `seed-list`.
+
+    A directory already holding a `place.json` is left alone: from its first
+    draft on, a place page is edited by hand and re-rendered, exactly as an
+    address page is.
+    """
+    entries = json.loads(Path(args.manifest).read_text())
+    props = {r["property_id"]: r for r in fetch_paged(
+        "rpd_properties.json", DS_RPD_PROPERTIES, select=RPD_PROPERTY_SELECT,
+        refresh=args.refresh)}
+    facs = fetch_paged("rpd_facilities.json", DS_RPD_FACILITIES,
+                       select=RPD_FACILITY_SELECT, refresh=args.refresh)
+    retrieved = args.retrieved or date.today().isoformat()
+    written, skipped, areas = 0, 0, set()
+    for e in entries:
+        page_dir = ROOT / "san-francisco" / e["area"] / e["slug"]
+        areas.add(e["area"])
+        if (page_dir / PLACE_FILE).exists():
+            skipped += 1
+            continue
+        street_like = page_dir.exists() and any(
+            d.is_dir() and ADDRESS_DIR.match(d.name) for d in page_dir.iterdir())
+        if street_like:
+            raise SystemExit(f"{page_dir}: a street directory already has this "
+                             f"name — give the place a qualified slug")
+        rec = build_place_record(e, props, facs, retrieved)
+        page_dir.mkdir(parents=True, exist_ok=True)
+        (page_dir / PLACE_FILE).write_text(
+            json.dumps(rec, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        written += 1
+    place_index.cache_clear()
+    for d in sorted(ROOT.glob(f"san-francisco/*/*/{PLACE_FILE}")):
+        rec = json.loads(d.read_text(encoding="utf-8"))
+        (d.parent / "index.html").write_text(render_place_html(rec), encoding="utf-8")
+    for area in sorted(areas):
+        area_dir = ROOT / "san-francisco" / area
+        if (area_dir / "index.md").exists():
+            ctx = make_ctx(argparse.Namespace(city="san-francisco", area=area,
+                                              retrieved=args.retrieved),
+                           {"roll_year": None, "historic": [], "districts": []})
+            write_neighborhood_hub(area_dir, ctx)
+        else:
+            print(f"  {area_dir}: no neighborhood hub yet — write one by hand",
+                  file=sys.stderr)
+    print(f"created {written} place page(s); left {skipped} existing place "
+          f"page(s) untouched; relisted {len(areas)} neighborhood hub(s)")
+    return 0
+
+
 def cmd_districts(args) -> int:
     """Rebuild the historic-district hubs from the pages that name a district.
 
@@ -5545,6 +6134,15 @@ def main() -> int:
     common(p, neighborhood_required=False)
     p.add_argument("--roll-year", type=int, default=2025)
     p.set_defaults(fn=cmd_hubs)
+
+    p = sub.add_parser("places",
+                       help="write place pages (parks, plazas, places in a park) "
+                            "from a manifest")
+    p.add_argument("--manifest", required=True)
+    p.add_argument("--retrieved", default=None,
+                   help="retrieval date for the sources (default: today)")
+    p.add_argument("--refresh", action="store_true", help="ignore the cache")
+    p.set_defaults(fn=cmd_places)
 
     p = sub.add_parser("districts",
                        help="rebuild the historic-district hub pages from the "

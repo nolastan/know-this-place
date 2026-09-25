@@ -1,0 +1,68 @@
+{
+  "name": "Gilman Playground",
+  "path": "/san-francisco/bayview-hunters-point/gilman-playground/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.717221,
+    "lng": -122.388069
+  },
+  "acres": 4.86,
+  "address": "993 Gilman Avenue",
+  "managed_by": "Recreation & Park",
+  "complex": "Bayview Complex",
+  "rpd_property_id": "44",
+  "facilities": [
+    {
+      "name": "Ball Fields",
+      "type": "Ball Field"
+    },
+    {
+      "name": "Basketball Courts",
+      "type": "Basketball Court"
+    },
+    {
+      "name": "Children's Play Areas",
+      "type": "Children's Play Area"
+    },
+    {
+      "name": "Gilman Clubhouse",
+      "type": "Clubhouse"
+    },
+    {
+      "name": "Picnic Areas",
+      "type": "Picnic Area"
+    },
+    {
+      "name": "Restrooms",
+      "type": "Restroom"
+    }
+  ],
+  "parcels": [
+    "4963003",
+    "4963004",
+    "4945005",
+    "4945006"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=44",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=44",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%274963003%27%2C%274963004%27%2C%274945005%27%2C%274945006%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

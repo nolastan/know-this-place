@@ -1,0 +1,70 @@
+{
+  "name": "Lake Merced Park",
+  "path": "/san-francisco/lakeshore/lake-merced-park/",
+  "kind": "park",
+  "type": "Regional Park",
+  "coordinates": {
+    "lat": 37.721841,
+    "lng": -122.492391
+  },
+  "acres": 608.58,
+  "address": "1 Harding Road",
+  "managed_by": "PUC/Water Department",
+  "complex": "Lake Merced Complex",
+  "rpd_property_id": "10",
+  "facilities": [
+    {
+      "name": "Flemming Golf Course",
+      "type": "Golf Facility"
+    },
+    {
+      "name": "Harding Clubhouse (Sandy Tatum)",
+      "type": "Retail Space"
+    },
+    {
+      "name": "Harding Golf Course",
+      "type": "Golf Facility"
+    },
+    {
+      "name": "Lake Merced",
+      "type": "Water Body"
+    },
+    {
+      "name": "Lake Merced Boathouse",
+      "type": "Retail Space"
+    },
+    {
+      "name": "Lake Merced Fitness Course",
+      "type": "Adult Fitness Court/Course",
+      "count": 2
+    },
+    {
+      "name": "Lake Merced Picnic Areas",
+      "type": "Picnic Area"
+    }
+  ],
+  "parcels": [
+    "7283004"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=10",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=10",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%277283004%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

@@ -152,6 +152,9 @@ def count_pages(today):
         if data.get("rendered") is False:
             s["opted_out"] += 1
 
+    # Place pages — parks, plazas and places inside a park — have their own
+    # source file and so are counted apart from the address pages above.
+    s["places"] = sum(1 for _ in content.rglob("place.json")) if content.exists() else 0
     s["neighborhoods"] = len(neighborhoods)
     s["streets"] = len(streets)
     s["sources_cited"] = len(source_ids)
@@ -385,6 +388,7 @@ def render(s):
             tile("ic-layers", site["neighborhoods"], "", "Neighborhoods"),
             tile("ic-pin", site["streets"], "", "Streets"),
             tile("ic-plan", site["districts"], "", "Historic districts"),
+            tile("ic-lot", site["places"], "", "Parks and public spaces"),
         ]),
 
         '\n  <div class="section-head"><span class="ic ic-clock"></span>'

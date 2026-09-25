@@ -1,0 +1,61 @@
+{
+  "name": "Adam Rodgers Park",
+  "path": "/san-francisco/bayview-hunters-point/adam-rodgers-park/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.731018,
+    "lng": -122.383864
+  },
+  "acres": 2.77,
+  "address": "1215 Quesada Avenue",
+  "managed_by": "Recreation & Park",
+  "complex": "Bayview Complex",
+  "rpd_property_id": "46",
+  "facilities": [
+    {
+      "name": "Basketball Courts",
+      "type": "Basketball Court"
+    },
+    {
+      "name": "Children's Play Area",
+      "type": "Children's Play Area"
+    },
+    {
+      "name": "Community Garden",
+      "type": "Community Garden"
+    },
+    {
+      "name": "Picnic Areas",
+      "type": "Picnic Area"
+    },
+    {
+      "name": "Restrooms",
+      "type": "Restroom"
+    }
+  ],
+  "parcels": [
+    "4715001"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=46",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=46",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%274715001%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

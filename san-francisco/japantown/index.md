@@ -15,6 +15,11 @@ The city's Japantown analysis neighborhood, the blocks around Post and Buchanan 
 - [Steiner Street](steiner-street/) — 1 building, built 1964.
 - [Sutter Street](sutter-street/) — 1 building, built 1975.
 
+## Parks and public spaces
+
+- [Hamilton Rec Center](hamilton-rec-center/) — Neighborhood park or playground, 3.6 acres.
+- [Japantown Peace Plaza](japantown-peace-plaza/) — Civic plaza or square, 34,848 sq ft.
+
 ## Adjacent neighborhoods
 
 These blocks were cut out of [the Western Addition](../western-addition/),

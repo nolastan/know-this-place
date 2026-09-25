@@ -10,6 +10,16 @@ The city's Visitacion Valley analysis neighborhood, in the south-eastern corner 
 - [Schwerin Street](schwerin-street/) — 1 building, built 1939.
 - [Visitacion Avenue](visitacion-avenue/) — 1 building, built 1934.
 
+## Parks and public spaces
+
+- [Herz Playground](herz-playground/) — Neighborhood park or playground, 7.0 acres.
+- [Kelloch & Velasco Park](kelloch-and-velasco-park/) — Neighborhood park or playground, 2.0 acres.
+- [Little Hollywood Park](little-hollywood-park/) — Neighborhood park or playground, 1.5 acres.
+- [Panorama Park](panorama-park/) — Neighborhood park or playground, 2.3 acres.
+- [Signal Point](signal-point/) — Neighborhood park or playground, 2.0 acres.
+- [Visitacion Valley Greenway](visitacion-valley-greenway/) — Neighborhood park or playground, 2.4 acres.
+- [Yik Oi Huang Peace & Friendship Park](yik-oi-huang-peace-and-friendship-park/) — Neighborhood park or playground, 2.3 acres.
+
 ## Adjacent neighborhoods
 
 McLaren Park closes the valley to the west, with [the

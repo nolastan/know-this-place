@@ -1,0 +1,67 @@
+{
+  "name": "Mission Playground",
+  "path": "/san-francisco/mission/mission-playground/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.759311,
+    "lng": -122.422317
+  },
+  "acres": 2.14,
+  "address": "3555 19th Street",
+  "managed_by": "Recreation & Park",
+  "complex": "Mission Complex",
+  "rpd_property_id": "61",
+  "facilities": [
+    {
+      "name": "Basketball Courts",
+      "type": "Basketball Court"
+    },
+    {
+      "name": "Children's Play Area",
+      "type": "Children's Play Area"
+    },
+    {
+      "name": "Mission Clubhouse",
+      "type": "Clubhouse"
+    },
+    {
+      "name": "Mission PG Playfield",
+      "type": "Multi-Use Turf"
+    },
+    {
+      "name": "Mission Pool",
+      "type": "Swimming Pool"
+    },
+    {
+      "name": "Tennis Courts",
+      "type": "Tennis Court"
+    }
+  ],
+  "parcels": [
+    "3597061",
+    "3597007",
+    "3597008"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=61",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=61",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%273597061%27%2C%273597007%27%2C%273597008%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

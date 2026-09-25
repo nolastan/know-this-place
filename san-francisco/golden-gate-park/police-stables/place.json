@@ -1,0 +1,36 @@
+{
+  "name": "Police Stables",
+  "path": "/san-francisco/golden-gate-park/police-stables/",
+  "kind": "facility",
+  "type": "Equestrian Facility",
+  "coordinates": {
+    "lat": 37.768778,
+    "lng": -122.495368
+  },
+  "acres": 1.11,
+  "street_addresses": [
+    "1475 John F Kennedy Drive"
+  ],
+  "rpd_object_ids": [
+    "729"
+  ],
+  "part_of": {
+    "name": "Golden Gate Park",
+    "path": "/san-francisco/golden-gate-park/"
+  },
+  "sources": [
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?$where=objectid%20in%20%28729%29",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "supports": "Street address",
+      "query": "https://data.sf.gov/resource/3mea-di5p.json?$where=eas_baseid%20in%20%28%27483133%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

@@ -32,6 +32,17 @@ A large central district west of Van Ness that largely survived the 1906 fire, m
 - [Van Ness Avenue](van-ness-avenue/) — 10 buildings, built 1900–2019.
 - [Willow Street](willow-street/) — 1 building, built 1931.
 
+## Parks and public spaces
+
+- [Alamo Square](alamo-square/) — Neighborhood park or playground, 13.7 acres.
+- [Beideman & O'Farrell Mini Park](beideman-and-ofarrell-mini-park/) — Mini park, 3,920 sq ft.
+- [Buchanan St Mall](buchanan-st-mall/) — Neighborhood park or playground, 2.0 acres.
+- [Fillmore & Turk Mini Park](fillmore-and-turk-mini-park/) — Mini park, 11,326 sq ft.
+- [Golden Gate & Steiner Mini Park](golden-gate-and-steiner-mini-park/) — Mini park, 5,227 sq ft.
+- [Jefferson Square](jefferson-square/) — Neighborhood park or playground, 6.4 acres.
+- [Margaret S Hayward Playground](margaret-s-hayward-playground/) — Neighborhood park or playground, 5.8 acres.
+- [Raymond Kimbell Playground](raymond-kimbell-playground/) — Neighborhood park or playground, 6.0 acres.
+
 ## Historic districts here
 
 - [Alamo Square Historic District](../historic-districts/alamo-square/)

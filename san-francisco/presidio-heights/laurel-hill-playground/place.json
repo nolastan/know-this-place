@@ -1,0 +1,61 @@
+{
+  "name": "Laurel Hill Playground",
+  "path": "/san-francisco/presidio-heights/laurel-hill-playground/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.783959,
+    "lng": -122.450937
+  },
+  "acres": 1.61,
+  "address": "251 Euclid Avenue",
+  "managed_by": "Recreation & Park",
+  "complex": "Richmond Complex",
+  "rpd_property_id": "107",
+  "facilities": [
+    {
+      "name": "Ball Fields",
+      "type": "Ball Field"
+    },
+    {
+      "name": "Basketball Courts",
+      "type": "Basketball Court"
+    },
+    {
+      "name": "Children's Play Area",
+      "type": "Children's Play Area"
+    },
+    {
+      "name": "Laurel Hill Clubhouse",
+      "type": "Clubhouse"
+    },
+    {
+      "name": "Tennis Courts",
+      "type": "Tennis Court"
+    }
+  ],
+  "parcels": [
+    "1068001"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=107",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=107",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%271068001%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

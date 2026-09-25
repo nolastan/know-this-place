@@ -1,0 +1,58 @@
+{
+  "name": "Walter Haas Playground",
+  "path": "/san-francisco/glen-park/walter-haas-playground/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.740587,
+    "lng": -122.434384
+  },
+  "acres": 4.63,
+  "address": "300 Addison Street",
+  "managed_by": "Recreation & Park",
+  "complex": "Glen Park Complex",
+  "rpd_property_id": "4",
+  "facilities": [
+    {
+      "name": "Basketball Courts",
+      "type": "Basketball Court"
+    },
+    {
+      "name": "DPA",
+      "type": "Dog Play Area"
+    },
+    {
+      "name": "Picnic Areas",
+      "type": "Picnic Area"
+    },
+    {
+      "name": "Walter Haas CPA",
+      "type": "Children's Play Area"
+    }
+  ],
+  "parcels": [
+    "7540002",
+    "7540001"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=4",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=4",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%277540002%27%2C%277540001%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

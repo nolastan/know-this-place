@@ -1,0 +1,35 @@
+{
+  "name": "Academy of Sciences",
+  "path": "/san-francisco/golden-gate-park/academy-of-sciences/",
+  "kind": "facility",
+  "type": "Arts/Activity Center",
+  "coordinates": {
+    "lat": 37.769816,
+    "lng": -122.466113
+  },
+  "street_addresses": [
+    "55 Music Concourse Drive"
+  ],
+  "rpd_object_ids": [
+    "2019"
+  ],
+  "part_of": {
+    "name": "Golden Gate Park",
+    "path": "/san-francisco/golden-gate-park/"
+  },
+  "sources": [
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?$where=objectid%20in%20%282019%29",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "supports": "Street address",
+      "query": "https://data.sf.gov/resource/3mea-di5p.json?$where=eas_baseid%20in%20%28%27483130%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

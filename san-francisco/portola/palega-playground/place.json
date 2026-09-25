@@ -1,0 +1,72 @@
+{
+  "name": "Palega Playground",
+  "path": "/san-francisco/portola/palega-playground/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.729347,
+    "lng": -122.409793
+  },
+  "acres": 5.41,
+  "address": "500 Felton Street",
+  "managed_by": "Recreation & Park",
+  "complex": "Bayview Complex",
+  "rpd_property_id": "30",
+  "facilities": [
+    {
+      "name": "Ball Fields",
+      "type": "Ball Field"
+    },
+    {
+      "name": "Basketball Courts",
+      "type": "Basketball Court"
+    },
+    {
+      "name": "Children's Play Area",
+      "type": "Children's Play Area"
+    },
+    {
+      "name": "Community Garden",
+      "type": "Community Garden"
+    },
+    {
+      "name": "Palega Picnic Areas",
+      "type": "Picnic Area"
+    },
+    {
+      "name": "Palega Rec Center",
+      "type": "Rec Center"
+    },
+    {
+      "name": "Tennis Courts",
+      "type": "Tennis Court"
+    }
+  ],
+  "parcels": [
+    "5929001",
+    "5930001",
+    "5929001A",
+    "5930001A"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=30",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=30",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%275929001%27%2C%275930001%27%2C%275929001A%27%2C%275930001A%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

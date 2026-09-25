@@ -39,12 +39,21 @@ The city's Outer Richmond analysis neighborhood, running west from Park Presidio
 - [Cabrillo Street](cabrillo-street/) — 5 buildings, built 1922–1950.
 - [California Street](california-street/) — 1 building, built 1967.
 - [Clement Street](clement-street/) — 2 buildings, built 1921–2017.
-- [Fulton Street](fulton-street/) — 1 building; 1 in the Golden Gate Park Historic District.
+- [Fulton Street](fulton-street/) — 1 building, built 1938.
 - [Geary Boulevard](geary-boulevard/) — 1 building, built 1919.
 - [La Playa](la-playa/) — 1 building, built 1984.
 - [Lake Street](lake-street/) — 1 building, built 1922.
 - [Point Lobos Avenue](point-lobos-avenue/) — 1 building, built 1900.
 - [Shore View Avenue](shore-view-avenue/) — 1 building, built 1916.
+
+## Parks and public spaces
+
+- [Balboa Natural Area](balboa-natural-area/) — Neighborhood park or playground, 1.8 acres.
+- [Cabrillo Playground](cabrillo-playground/) — Neighborhood park or playground, 1.0 acres.
+- [Fulton Playground](fulton-playground/) — Neighborhood park or playground, 40,075 sq ft.
+- [Lincoln Park](lincoln-park/) — Regional park, 112.8 acres.
+- [Richmond Playground](richmond-playground/) — Neighborhood park or playground, 40,511 sq ft.
+- [Richmond Rec Center](richmond-rec-center/) — Neighborhood park or playground, 40,511 sq ft.
 
 ## Historic districts here
 

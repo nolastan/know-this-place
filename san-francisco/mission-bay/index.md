@@ -40,6 +40,10 @@ Northeast Mission Historic Resource Survey, adopted in 2011.
 - [Vermont Street](vermont-street/) — 5 buildings, built 1970–1998.
 - [Wisconsin Street](wisconsin-street/) — 2 buildings, built 1916–1971.
 
+## Parks and public spaces
+
+- [Mission Bay Park](mission-bay-park/) — Neighborhood park or playground, 11.6 acres.
+
 ## Historic districts here
 
 - [Showplace Square Heavy Timber and Steel-frame Brick Warehouse and Factory Historic District](../historic-districts/showplace-square-heavy-timber-and-steel-frame-brick-warehouse-and-factory/)

@@ -1,0 +1,58 @@
+{
+  "name": "Golden Gate Heights Park",
+  "path": "/san-francisco/inner-sunset/golden-gate-heights-park/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.749991,
+    "lng": -122.469416
+  },
+  "acres": 6.96,
+  "address": "2041 12th Avenue",
+  "managed_by": "Recreation & Park",
+  "complex": "Lake Merced Complex",
+  "rpd_property_id": "89",
+  "facilities": [
+    {
+      "name": "Children's Play Area",
+      "type": "Children's Play Area"
+    },
+    {
+      "name": "Nature Exploration Area",
+      "type": "Nature Exploration Area"
+    },
+    {
+      "name": "Picnic Areas",
+      "type": "Picnic Area"
+    },
+    {
+      "name": "Tennis Courts",
+      "type": "Tennis Court"
+    }
+  ],
+  "parcels": [
+    "2132B001",
+    "2132A001"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=89",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=89",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%272132B001%27%2C%272132A001%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

@@ -33,6 +33,15 @@ opened here in 1905.
 - [Vermont Street](vermont-street/) — 1 building, built 1900.
 - [Wisconsin Street](wisconsin-street/) — 7 buildings, built 1900–1968.
 
+## Parks and public spaces
+
+- [Arkansas Friendship Garden](arkansas-friendship-garden/) — Community garden, 5,663 sq ft.
+- [Connecticut Friendship Garden](connecticut-friendship-garden/) — Community garden, 6,098 sq ft.
+- [Jackson Playground](jackson-playground/) — Neighborhood park or playground, 4.9 acres.
+- [Mariposa Park](mariposa-park/) — Neighborhood park or playground, 2.7 acres.
+- [Potrero Hill Mini Park](potrero-hill-mini-park/) — Mini park, 9,583 sq ft.
+- [Potrero Hill Rec Center](potrero-hill-rec-center/) — Neighborhood park or playground, 10.1 acres.
+
 ## Historic districts here
 
 - [Dogpatch Historic District](../historic-districts/dogpatch/)

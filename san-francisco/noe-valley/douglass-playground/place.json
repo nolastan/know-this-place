@@ -1,0 +1,69 @@
+{
+  "name": "Douglass Playground",
+  "path": "/san-francisco/noe-valley/douglass-playground/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.747291,
+    "lng": -122.438922
+  },
+  "acres": 7.89,
+  "address": "1098 Douglass Street",
+  "managed_by": "Recreation & Park",
+  "complex": "Glen Park Complex",
+  "rpd_property_id": "8",
+  "facilities": [
+    {
+      "name": "Basketball Courts",
+      "type": "Basketball Court"
+    },
+    {
+      "name": "Children's Play Areas",
+      "type": "Children's Play Area"
+    },
+    {
+      "name": "Dog Play Area",
+      "type": "Dog Play Area"
+    },
+    {
+      "name": "Douglass Clubhouse",
+      "type": "Clubhouse"
+    },
+    {
+      "name": "Picnic Areas",
+      "type": "Picnic Area"
+    },
+    {
+      "name": "Restroom",
+      "type": "Restroom"
+    },
+    {
+      "name": "Tennis Courts",
+      "type": "Tennis Court"
+    }
+  ],
+  "parcels": [
+    "7500001"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=8",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=8",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%277500001%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

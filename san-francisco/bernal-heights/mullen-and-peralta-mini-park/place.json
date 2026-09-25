@@ -1,0 +1,37 @@
+{
+  "name": "Mullen & Peralta Mini Park",
+  "path": "/san-francisco/bernal-heights/mullen-and-peralta-mini-park/",
+  "kind": "park",
+  "type": "Mini Park",
+  "coordinates": {
+    "lat": 37.746081,
+    "lng": -122.40882
+  },
+  "acres": 0.45,
+  "address": "124 Mullen Avenue",
+  "managed_by": "Recreation & Park",
+  "complex": "Bernal/St. Mary's Complex",
+  "rpd_property_id": "176",
+  "parcels": [
+    "5538014",
+    "5538023",
+    "5538015",
+    "5538030",
+    "5528008"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=176",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%275538014%27%2C%275538023%27%2C%275538015%27%2C%275538030%27%2C%275528008%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

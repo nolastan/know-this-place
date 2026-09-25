@@ -39,6 +39,14 @@ that neighborhood.
 - [Van Ness Avenue](van-ness-avenue/) — 8 buildings, built 1911–1919.
 - [Washington Street](washington-street/) — 2 buildings, built 1915.
 
+## Parks and public spaces
+
+- [Betty Ann Ong Rec Center](betty-ann-ong-rec-center/) — Neighborhood park or playground, 32,670 sq ft.
+- [Collis P Huntington Park](collis-p-huntington-park/) — Civic plaza or square, 1.3 acres.
+- [Hooker Alley Community Garden](hooker-alley-community-garden/) — Community garden, 2,614 sq ft.
+- [Ina Coolbrith Park](ina-coolbrith-park/) — Neighborhood park or playground, 37,897 sq ft.
+- [Washington & Hyde Mini Park](washington-and-hyde-mini-park/) — Mini park, 6,970 sq ft.
+
 ## Historic districts here
 
 - [Chinatown Historic District](../historic-districts/chinatown/)

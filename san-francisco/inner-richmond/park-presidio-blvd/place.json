@@ -1,0 +1,38 @@
+{
+  "name": "Park Presidio Blvd",
+  "path": "/san-francisco/inner-richmond/park-presidio-blvd/",
+  "kind": "park",
+  "type": "Parkway",
+  "coordinates": {
+    "lat": 37.78014,
+    "lng": -122.472301
+  },
+  "acres": 20.39,
+  "managed_by": "Recreation & Park",
+  "complex": "Richmond Complex",
+  "rpd_property_id": "101",
+  "parcels": [
+    "1556001",
+    "1531001",
+    "1631001",
+    "1420001",
+    "1445001",
+    "1373001",
+    "1656001"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=101",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%271556001%27%2C%271531001%27%2C%271631001%27%2C%271420001%27%2C%271445001%27%2C%271373001%27%2C%271656001%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

@@ -13,6 +13,11 @@ A hillside residential district in the city's south-east, between McLaren Park a
 - [Wayland Street](wayland-street/) — 1 building, built 2004.
 - [Woolsey Street](woolsey-street/) — 1 building, built 1961.
 
+## Parks and public spaces
+
+- [Louis Sutter Playground](louis-sutter-playground/) — Neighborhood park or playground, 14.3 acres.
+- [Palega Playground](palega-playground/) — Neighborhood park or playground, 5.4 acres.
+
 ## Adjacent neighborhoods
 
 [Bernal Heights](../bernal-heights/) is north-west across Highway 101 and

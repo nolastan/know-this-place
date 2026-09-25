@@ -1,0 +1,43 @@
+{
+  "name": "Edgehill Mountain",
+  "path": "/san-francisco/west-of-twin-peaks/edgehill-mountain/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.742039,
+    "lng": -122.459782
+  },
+  "acres": 2.42,
+  "managed_by": "Recreation & Park",
+  "complex": "Lake Merced Complex",
+  "rpd_property_id": "71",
+  "parcels": [
+    "2923067",
+    "2934021",
+    "2923054",
+    "2934012",
+    "2934013",
+    "2923017",
+    "2934011",
+    "2934010",
+    "2923048",
+    "2923047",
+    "2923040",
+    "2923073"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=71",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%272923067%27%2C%272934021%27%2C%272923054%27%2C%272934012%27%2C%272934013%27%2C%272923017%27%2C%272934011%27%2C%272934010%27%2C%272923048%27%2C%272923047%27%2C%272923040%27%2C%272923073%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

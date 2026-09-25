@@ -1,0 +1,45 @@
+{
+  "name": "Page Street Community Garden",
+  "path": "/san-francisco/hayes-valley/page-street-community-garden/",
+  "kind": "park",
+  "type": "Community Garden",
+  "coordinates": {
+    "lat": 37.773618,
+    "lng": -122.428112
+  },
+  "acres": 0.09,
+  "address": "438 Page Street",
+  "managed_by": "Recreation & Park",
+  "complex": "Western Addition Complex",
+  "rpd_property_id": "11976",
+  "facilities": [
+    {
+      "name": "Community Garden",
+      "type": "Community Garden"
+    }
+  ],
+  "parcels": [
+    "0841029"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=11976",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=11976",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%270841029%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

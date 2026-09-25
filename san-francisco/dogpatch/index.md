@@ -10,6 +10,10 @@ The flat blocks east of Interstate 280 between Mariposa Street and Islais Creek,
 - [Minnesota Street](minnesota-street/) — 9 buildings, built 1900–1907; 9 in the Dogpatch Historic District.
 - [Tennessee Street](tennessee-street/) — 38 buildings, built 1890–1989; 38 in the Dogpatch Historic District.
 
+## Parks and public spaces
+
+- [Esprit Park](esprit-park/) — Neighborhood park or playground, 2.2 acres.
+
 ## Historic districts here
 
 - [Dogpatch Historic District](../historic-districts/dogpatch/)

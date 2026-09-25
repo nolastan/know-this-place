@@ -1,0 +1,53 @@
+{
+  "name": "Precita Park",
+  "path": "/san-francisco/mission/precita-park/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.747066,
+    "lng": -122.41206
+  },
+  "acres": 2.25,
+  "address": "3200 Folsom Street",
+  "managed_by": "Recreation & Park",
+  "complex": "Bernal/St. Mary's Complex",
+  "rpd_property_id": "37",
+  "facilities": [
+    {
+      "name": "Children's Play Area",
+      "type": "Children's Play Area"
+    },
+    {
+      "name": "Ornamental Gardens",
+      "type": "Ornamental Garden"
+    },
+    {
+      "name": "Picnic Areas",
+      "type": "Picnic Area"
+    }
+  ],
+  "parcels": [
+    "5516001"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=37",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=37",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%275516001%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

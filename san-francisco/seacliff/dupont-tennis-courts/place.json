@@ -1,0 +1,49 @@
+{
+  "name": "DuPont Tennis Courts",
+  "path": "/san-francisco/seacliff/dupont-tennis-courts/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.782693,
+    "lng": -122.490846
+  },
+  "acres": 0.93,
+  "address": "336 31st Avenue",
+  "managed_by": "Recreation & Park",
+  "complex": "Richmond Complex",
+  "rpd_property_id": "98",
+  "facilities": [
+    {
+      "name": "Restrooms",
+      "type": "Restroom"
+    },
+    {
+      "name": "Tennis Courts",
+      "type": "Tennis Court"
+    }
+  ],
+  "parcels": [
+    "1403007"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=98",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=98",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%271403007%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

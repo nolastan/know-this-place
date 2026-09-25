@@ -1,0 +1,36 @@
+{
+  "name": "Japanese Tea Garden",
+  "path": "/san-francisco/golden-gate-park/japanese-tea-garden/",
+  "kind": "facility",
+  "type": "Ornamental Garden",
+  "coordinates": {
+    "lat": 37.770187,
+    "lng": -122.470059
+  },
+  "acres": 2.36,
+  "street_addresses": [
+    "75 Hagiwara Tea Garden Drive"
+  ],
+  "rpd_object_ids": [
+    "9202"
+  ],
+  "part_of": {
+    "name": "Golden Gate Park",
+    "path": "/san-francisco/golden-gate-park/"
+  },
+  "sources": [
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?$where=objectid%20in%20%289202%29",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "supports": "Street address",
+      "query": "https://data.sf.gov/resource/3mea-di5p.json?$where=eas_baseid%20in%20%28%27506163%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "name": "Ralph D. House Community Park",
+  "path": "/san-francisco/bayview-hunters-point/ralph-d-house-community-park/",
+  "kind": "park",
+  "type": "Mini Park",
+  "coordinates": {
+    "lat": 37.71769,
+    "lng": -122.395826
+  },
+  "acres": 0.17,
+  "address": "885 Le Conte Avenue",
+  "managed_by": "Recreation & Park",
+  "complex": "Bayview Complex",
+  "rpd_property_id": "137649",
+  "facilities": [
+    {
+      "name": "Community Garden",
+      "type": "Community Garden"
+    }
+  ],
+  "parcels": [
+    "4991133",
+    "4991134"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=137649",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=137649",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%274991133%27%2C%274991134%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

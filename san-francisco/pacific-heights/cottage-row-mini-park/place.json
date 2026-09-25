@@ -1,0 +1,33 @@
+{
+  "name": "Cottage Row Mini Park",
+  "path": "/san-francisco/pacific-heights/cottage-row-mini-park/",
+  "kind": "park",
+  "type": "Mini Park",
+  "coordinates": {
+    "lat": 37.786565,
+    "lng": -122.432321
+  },
+  "acres": 0.17,
+  "managed_by": "Recreation & Park",
+  "complex": "Western Addition Complex",
+  "rpd_property_id": "127",
+  "parcels": [
+    "0677012",
+    "0677046"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=127",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%270677012%27%2C%270677046%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

@@ -35,6 +35,18 @@ A steep district above North Beach and the waterfront, known for its cable-car g
 - [Van Ness Avenue](van-ness-avenue/) — 9 buildings, built 1909–1922.
 - [Washington Street](washington-street/) — 1 building, built 1922.
 
+## Parks and public spaces
+
+- [Alice Marble Courts](alice-marble-courts/) — Neighborhood park or playground, 36,590 sq ft.
+- [Broadway Tunnel W. Mini Park](broadway-tunnel-w-mini-park/) — Mini park, 5,227 sq ft.
+- [Fay Park](fay-park/) — Mini park, 14,375 sq ft.
+- [Francisco Park](francisco-park/) — Neighborhood park or playground, 4.9 acres.
+- [Helen Wills Playground](helen-wills-playground/) — Neighborhood park or playground, 40,075 sq ft.
+- [Hyde & Vallejo Mini Park](hyde-and-vallejo-mini-park/) — Mini park, 4,792 sq ft.
+- [Joseph Conrad Square](joseph-conrad-square/) — Mini park, 6,534 sq ft.
+- [Michelangelo Playground](michelangelo-playground/) — Neighborhood park or playground, 20,909 sq ft.
+- [Rowing Club - Dolphin Club](rowing-club-dolphin-club/) — Concession, 1.1 acres.
+
 ## Historic districts here
 
 - [Russian Hill-Vallejo Street Crest Historic District](../historic-districts/russian-hill-vallejo-street-crest/)

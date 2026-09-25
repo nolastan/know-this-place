@@ -12,6 +12,10 @@ The retail blocks around Union Square, at the top of Market Street. Coverage her
 - [Post Street](post-street/) — 1 building, built 1969.
 - [Stockton Street](stockton-street/) — 2 buildings, built 1989; 2 in the Kearny-Market-Mason-Sutter Conservation District.
 
+## Parks and public spaces
+
+- [Union Square](union-square/) — Civic plaza or square, 2.6 acres.
+
 ## Historic districts here
 
 - [Chinatown Historic District](../historic-districts/chinatown/)

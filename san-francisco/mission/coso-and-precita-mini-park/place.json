@@ -1,0 +1,32 @@
+{
+  "name": "Coso & Precita Mini Park",
+  "path": "/san-francisco/mission/coso-and-precita-mini-park/",
+  "kind": "park",
+  "type": "Mini Park",
+  "coordinates": {
+    "lat": 37.746249,
+    "lng": -122.418134
+  },
+  "acres": 0.15,
+  "managed_by": "Recreation & Park",
+  "complex": "Bernal/St. Mary's Complex",
+  "rpd_property_id": "199",
+  "parcels": [
+    "PARKCOSO"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=199",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%27PARKCOSO%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

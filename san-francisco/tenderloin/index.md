@@ -31,6 +31,14 @@ The flat blocks west of Union Square, in the city's Tenderloin analysis neighbor
 - [United Nations Plaza](united-nations-plaza/) — 1 building, built 1982; 1 in the Civic Center Historic District.
 - [Van Ness Avenue](van-ness-avenue/) — 1 building.
 
+## Parks and public spaces
+
+- [Father Alfred Boeddeker Park](father-alfred-boeddeker-park/) — Neighborhood park or playground, 1.1 acres.
+- [Joseph L Alioto Performing Arts Piazza](joseph-l-alioto-performing-arts-piazza/) — Civic plaza or square, 5.4 acres.
+- [Sgt. John Macaulay Park](sgt-john-macaulay-park/) — Mini park, 12,197 sq ft.
+- [Tenderloin Rec Center](tenderloin-rec-center/) — Neighborhood park or playground, 28,750 sq ft.
+- [Turk & Hyde Mini Park](turk-and-hyde-mini-park/) — Mini park, 6,534 sq ft.
+
 ## Historic districts here
 
 - [Civic Center Historic District](../historic-districts/civic-center/)

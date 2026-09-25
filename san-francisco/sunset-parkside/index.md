@@ -59,6 +59,18 @@ The city's Sunset/Parkside analysis neighborhood — the avenues laid out across
 - [Vicente Street](vicente-street/) — 1 building, built 1950.
 - [Wawona Street](wawona-street/) — 3 buildings, built 1950.
 
+## Parks and public spaces
+
+- [Carl Larsen Park](carl-larsen-park/) — Neighborhood park or playground, 7.3 acres.
+- [McCoppin Square](mccoppin-square/) — Neighborhood park or playground, 7.9 acres.
+- [Parkside Square](parkside-square/) — Neighborhood park or playground, 8.8 acres.
+- [Pine Lake Park](pine-lake-park/) — Regional park, 30.8 acres.
+- [Rolph Nicol Playground](rolph-nicol-playground/) — Neighborhood park or playground, 3.6 acres.
+- [Sigmund Stern Recreation Grove](sigmund-stern-recreation-grove/) — Regional park, 34.8 acres.
+- [South Sunset Playground](south-sunset-playground/) — Neighborhood park or playground, 4.1 acres.
+- [Sunset Dunes](sunset-dunes/) — Parkway, 50.6 acres.
+- [West Sunset Playground](west-sunset-playground/) — Neighborhood park or playground, 17.8 acres.
+
 ## Historic districts here
 
 - [Alphonso Harrington 42nd Avenue Historic District](../historic-districts/alphonso-harrington-42nd-avenue/)

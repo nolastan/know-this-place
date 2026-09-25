@@ -12,6 +12,7 @@ Read a section. Don't read the file.
 | writing or editing `data.json` | [data.json shape](#datajson-shape) |
 | creating pages that don't exist yet | [Seeding a new area](#seeding-a-new-area) |
 | touching a historic-district page | [Historic districts](#historic-districts) |
+| touching a park, plaza or place in a park | [Place pages](#place-pages) |
 | deciding whether a parcel may be a page | [One page per building](#one-page-per-building) |
 | touching the homepage | [The homepage](#the-homepage) |
 | wondering why the HTML is generated | [Why `index.html` is a build artifact](#why-indexhtml-is-a-build-artifact) |
@@ -323,6 +324,50 @@ Kearny-Market-Mason-Sutter through six.
   district panel; it just has nowhere to link. **Facets with no record of their
   own behind them — decade, zoning, property class — are not pages and are not
   to be added.**
+
+### Place pages
+
+**A place page is a public space: a park, a plaza, a community garden, or a
+named place inside a park** — Mission Dolores Park, Union Square, the Rose
+Garden. None of them is a building, and most have no street number, so they
+don't fit `/<area>/<street>/<number>/`. They sit one level up, at
+`/<city>/<area>/<place-slug>/`, beside the street directories of the
+neighborhood they lie in, and the neighborhood hub lists them under "Parks and
+public spaces" — generated, like its street list, in both `index.md` and
+`index.html`.
+
+- **The source is `place.json`, not `data.json`.** Same rules — every fact
+  cited in `sources`, prose only in `narrative`, a dated fact in
+  `historical_record`, `index.html` generated and never committed — but a
+  different file, so that every tool that walks the tree for address pages
+  goes on finding address pages only. The vocabulary is
+  `seed_pages.PLACE_KEYS`; `render` re-renders both kinds, and `validate.py`
+  holds a place page to render parity like any other.
+- **They are seeded from a manifest**, `research/manifests/rpd-places.json`,
+  by `python3 scripts/seed_pages.py places --manifest <file>`, create-only
+  like `seed-list`. Each entry is either a Rec & Park **property** (`kind:
+  "park"`, by `property_id`) or a group of rows from its **facility inventory**
+  (`kind: "facility"`, by `rpd_object_ids`) with the name its heading uses.
+  The manifest records what took judgement: the parcels a property covers
+  (a spatial join against `sf-parcels`), the directory it is filed under (the
+  parcel page's, else the neighborhood of the address pages nearest it), and
+  the city addresses that fall inside a facility's outline. See
+  [DATA-SOURCES.md → sf-rpd-properties](DATA-SOURCES.md#sf-rpd-properties--recreation-and-parks-properties).
+- **A place and a parcel are two pages, linked both ways.** The parcel page
+  keeps the assessor's and the permit office's record of the land; the place
+  page is the park, and lists the parcels it covers. An address page whose
+  parcel carries a place shows it in a "Public space on this parcel" panel, so
+  a reader who lands on 333 Post Street looking for Union Square finds it. A
+  place that shares a parcel with another says so; the page never claims one
+  park is part of another on the strength of a shared parcel alone.
+- **Golden Gate Park is a neighborhood directory, and its hub is the park.**
+  Its places come from the facility inventory, curated to what a visitor goes
+  to — gardens, lakes, museums, windmills — and each names the park as its
+  `part_of`. Its one parcel, 1700001, is the address page on Fulton Street.
+- **A slug that collides with a street directory** in the same neighborhood
+  takes `-open-space`: South Park is both a street and the park inside it.
+- The Presidio is federal land and not in either Rec & Park dataset; it is
+  not yet covered.
 
 ### Hub pages and their two hand-maintained sections
 

@@ -1,0 +1,45 @@
+{
+  "name": "10th Ave & Clement Park",
+  "path": "/san-francisco/inner-richmond/10th-ave-and-clement-park/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.781849,
+    "lng": -122.468112
+  },
+  "acres": 0.93,
+  "address": "351 Ninth Avenue",
+  "managed_by": "Public Library",
+  "complex": "Richmond Complex",
+  "rpd_property_id": "156",
+  "facilities": [
+    {
+      "name": "Children's Play Area",
+      "type": "Children's Play Area"
+    }
+  ],
+  "parcels": [
+    "1441007"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=156",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=156",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%271441007%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

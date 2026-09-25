@@ -58,6 +58,13 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Woodside Avenue](woodside-avenue/) — 1 building.
 - [Yerba Buena Avenue](yerba-buena-avenue/) — 1 building, built 1928; 1 in the St. Francis Wood Historic District.
 
+## Parks and public spaces
+
+- [Edgehill Mountain](edgehill-mountain/) — Neighborhood park or playground, 2.4 acres.
+- [Hawk Hill](hawk-hill/) — Neighborhood park or playground, 4.8 acres.
+- [Mt. Davidson Park](mt-davidson-park/) — Regional park, 40.7 acres.
+- [West Portal Playground](west-portal-playground/) — Neighborhood park or playground, 1.3 acres.
+
 ## Historic districts here
 
 - [Forest Hill Historic District](../historic-districts/forest-hill/)

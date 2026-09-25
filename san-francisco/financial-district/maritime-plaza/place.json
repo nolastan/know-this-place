@@ -1,0 +1,36 @@
+{
+  "name": "Maritime Plaza",
+  "path": "/san-francisco/financial-district/maritime-plaza/",
+  "kind": "park",
+  "type": "Civic Plaza or Square",
+  "coordinates": {
+    "lat": 37.79561,
+    "lng": -122.399252
+  },
+  "acres": 2.01,
+  "address": "285 Washington Street",
+  "managed_by": "Recreation & Park",
+  "complex": "North Beach Complex",
+  "rpd_property_id": "142",
+  "parcels": [
+    "0204020",
+    "0204022",
+    "0204019",
+    "0204023"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=142",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%270204020%27%2C%270204022%27%2C%270204019%27%2C%270204023%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

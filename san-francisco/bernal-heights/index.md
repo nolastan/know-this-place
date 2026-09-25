@@ -35,6 +35,19 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [Winfield Street](winfield-street/) — 1 building, built 1909.
 - [Wool Street](wool-street/) — 1 building, built 1906.
 
+## Parks and public spaces
+
+- [Bernal Heights Park](bernal-heights-park/) — Regional park, 26.3 acres.
+- [Bernal Heights Rec Center](bernal-heights-rec-center/) — Neighborhood park or playground, 36,155 sq ft.
+- [Dogpatch - Miller Memorial Garden](dogpatch-miller-memorial-garden/) — Community garden, 13,068 sq ft.
+- [Good Prospect Community Garden](good-prospect-community-garden/) — Community garden, 2,178 sq ft.
+- [Holly Park](holly-park/) — Neighborhood park or playground, 8.2 acres.
+- [Mullen & Peralta Mini Park](mullen-and-peralta-mini-park/) — Mini park, 19,602 sq ft.
+- [Ogden Terrace Community Garden](ogden-terrace-community-garden/) — Community garden, 7,405 sq ft.
+- [Park Street Garden](park-street-garden/) — Community garden, 2,178 sq ft.
+- [Prentiss Mini Park](prentiss-mini-park/) — Mini park, 3,049 sq ft.
+- [St. Mary's Rec Center](st-marys-rec-center/) — Neighborhood park or playground, 13.6 acres.
+
 ## Historic districts here
 
 - [Midcentury Recreation Historic District (Discontiguous)](../historic-districts/midcentury-recreation-discontiguous/)

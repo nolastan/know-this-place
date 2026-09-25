@@ -1,0 +1,39 @@
+{
+  "name": "Grand View Open Space",
+  "path": "/san-francisco/inner-sunset/grand-view-open-space/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.755045,
+    "lng": -122.472341
+  },
+  "acres": 0.79,
+  "managed_by": "Recreation & Park",
+  "complex": "Lake Merced Complex",
+  "rpd_property_id": "12910",
+  "parcels": [
+    "1928B050",
+    "1928B051",
+    "1928B046",
+    "1928B045",
+    "1928B047",
+    "1928B049",
+    "1928B048",
+    "1928B052"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=12910",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%271928B050%27%2C%271928B051%27%2C%271928B046%27%2C%271928B045%27%2C%271928B047%27%2C%271928B049%27%2C%271928B048%27%2C%271928B052%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

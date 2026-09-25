@@ -1,0 +1,62 @@
+{
+  "name": "Carl Larsen Park",
+  "path": "/san-francisco/sunset-parkside/carl-larsen-park/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.73929,
+    "lng": -122.475993
+  },
+  "acres": 7.34,
+  "address": "2695 19th Avenue",
+  "managed_by": "Recreation & Park",
+  "complex": "Stern Grove Complex",
+  "rpd_property_id": "86",
+  "facilities": [
+    {
+      "name": "Ball Fields",
+      "type": "Ball Field"
+    },
+    {
+      "name": "Children's Play Area",
+      "type": "Children's Play Area"
+    },
+    {
+      "name": "Pickleball Courts",
+      "type": "Pickleball Courts"
+    },
+    {
+      "name": "Restrooms",
+      "type": "Restroom"
+    },
+    {
+      "name": "Sava Pool",
+      "type": "Swimming Pool"
+    }
+  ],
+  "parcels": [
+    "2477001",
+    "2420001"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=86",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=86",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%272477001%27%2C%272420001%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

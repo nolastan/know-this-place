@@ -1,0 +1,33 @@
+{
+  "name": "Cayuga & Lamartine Mini Park",
+  "path": "/san-francisco/glen-park/cayuga-and-lamartine-mini-park/",
+  "kind": "park",
+  "type": "Mini Park",
+  "coordinates": {
+    "lat": 37.730349,
+    "lng": -122.432958
+  },
+  "acres": 0.15,
+  "address": "185 Cayuga Avenue",
+  "managed_by": "PUC/Clean Water Program",
+  "complex": "Glen Park Complex",
+  "rpd_property_id": "159",
+  "parcels": [
+    "6786095"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=159",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%276786095%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

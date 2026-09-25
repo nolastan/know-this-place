@@ -1,0 +1,33 @@
+{
+  "name": "Hyde & Vallejo Mini Park",
+  "path": "/san-francisco/russian-hill/hyde-and-vallejo-mini-park/",
+  "kind": "park",
+  "type": "Mini Park",
+  "coordinates": {
+    "lat": 37.797644,
+    "lng": -122.419092
+  },
+  "acres": 0.11,
+  "address": "1825 Hyde Street",
+  "managed_by": "Recreation & Park",
+  "complex": "North Beach Complex",
+  "rpd_property_id": "146",
+  "parcels": [
+    "0124049"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=146",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%270124049%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

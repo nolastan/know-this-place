@@ -1,0 +1,46 @@
+{
+  "name": "Bush & Broderick Mini Park",
+  "path": "/san-francisco/pacific-heights/bush-and-broderick-mini-park/",
+  "kind": "park",
+  "type": "Mini Park",
+  "coordinates": {
+    "lat": 37.785597,
+    "lng": -122.442551
+  },
+  "acres": 0.2,
+  "address": "2748 Bush Street",
+  "managed_by": "Recreation & Park",
+  "complex": "Western Addition Complex",
+  "rpd_property_id": "108",
+  "facilities": [
+    {
+      "name": "Picnic Areas",
+      "type": "Picnic Area"
+    }
+  ],
+  "parcels": [
+    "1053030",
+    "1053029"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=108",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=108",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%271053030%27%2C%271053029%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

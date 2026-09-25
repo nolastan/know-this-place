@@ -1,0 +1,33 @@
+{
+  "name": "Roosevelt & Henry Stairs",
+  "path": "/san-francisco/castro/roosevelt-and-henry-stairs/",
+  "kind": "park",
+  "type": "Mini Park",
+  "coordinates": {
+    "lat": 37.766562,
+    "lng": -122.437341
+  },
+  "acres": 0.39,
+  "address": "299 Henry Street",
+  "managed_by": "Recreation & Park",
+  "complex": "Buena Vista Complex",
+  "rpd_property_id": "107857",
+  "parcels": [
+    "2612050"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=107857",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%272612050%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

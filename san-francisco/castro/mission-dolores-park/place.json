@@ -1,0 +1,70 @@
+{
+  "name": "Mission Dolores Park",
+  "path": "/san-francisco/castro/mission-dolores-park/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.759755,
+    "lng": -122.427128
+  },
+  "acres": 15.99,
+  "address": "646 Dolores Street",
+  "managed_by": "Recreation & Park",
+  "complex": "Mission Complex",
+  "rpd_property_id": "63",
+  "facilities": [
+    {
+      "name": "Basketball Courts",
+      "type": "Basketball Court"
+    },
+    {
+      "name": "Children's Play Area",
+      "type": "Children's Play Area"
+    },
+    {
+      "name": "DPA",
+      "type": "Dog Play Area"
+    },
+    {
+      "name": "Mission Dolores North Restrooms",
+      "type": "Restroom"
+    },
+    {
+      "name": "Mission Dolores South Restrooms",
+      "type": "Restroom"
+    },
+    {
+      "name": "Picnic Areas",
+      "type": "Picnic Area"
+    },
+    {
+      "name": "Tennis Courts",
+      "type": "Tennis Court"
+    }
+  ],
+  "parcels": [
+    "3599001",
+    "3586001"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=63",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=63",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%273599001%27%2C%273586001%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

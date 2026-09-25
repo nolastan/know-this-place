@@ -57,6 +57,27 @@ San Francisco's south-eastern quarter, settled from the 1860s as the industrial 
 - [Whitney Young Circle](whitney-young-circle/) — 1 building.
 - [Yosemite Avenue](yosemite-avenue/) — 1 building, built 1915.
 
+## Parks and public spaces
+
+- [900 Innes](900-innes/) — Neighborhood park or playground, 1.6 acres.
+- [Adam Rodgers Park](adam-rodgers-park/) — Neighborhood park or playground, 2.8 acres.
+- [Bay View Park](bay-view-park/) — Regional park, 46.6 acres.
+- [Bayview K.C. Jones Playground](bayview-k-c-jones-playground/) — Neighborhood park or playground, 3.9 acres.
+- [Gilman Playground](gilman-playground/) — Neighborhood park or playground, 4.9 acres.
+- [Heron's Head Park](herons-head-park/) — Neighborhood park or playground, 25,265 sq ft.
+- [Hilltop Park](hilltop-park/) — Neighborhood park or playground, 3.8 acres.
+- [India Basin - Shoreline Park](india-basin-shoreline-park/) — Neighborhood park or playground, 11.8 acres.
+- [Joseph Lee Rec Center](joseph-lee-rec-center/) — Neighborhood park or playground, 40,075 sq ft.
+- [Palou & Phelps Park](palou-and-phelps-park/) — Neighborhood park or playground, 2.8 acres.
+- [Ralph D. House Community Park](ralph-d-house-community-park/) — Mini park, 7,405 sq ft.
+- [Ridgetop Plaza](ridgetop-plaza/) — Neighborhood park or playground, 32,670 sq ft.
+- [Selby & Palou Mini Park](selby-and-palou-mini-park/) — Mini park, 18,295 sq ft.
+- [Shipyard Parks](shipyard-parks/) — Neighborhood park or playground, 8.0 acres.
+- [Shoreview Park](shoreview-park/) — Neighborhood park or playground, 41,382 sq ft.
+- [Silver Terrace Playground](silver-terrace-playground/) — Neighborhood park or playground, 5.6 acres.
+- [The Rocks Dog Park](the-rocks-dog-park/) — Mini park, 8,712 sq ft.
+- [Youngblood-Coleman Playground](youngblood-coleman-playground/) — Neighborhood park or playground, 6.5 acres.
+
 ## Historic districts here
 
 - [India Basin Scow Schooner Boatyard Vernacular Cultural Landscape](../historic-districts/india-basin-scow-schooner-boatyard-vernacular-cultural-landscape/)

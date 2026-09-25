@@ -19,6 +19,13 @@ A former industrial and warehouse district along the bay south of Market, much o
 - [Third Street](3rd-street/) — A 1920 bank building marking the site of Jack London's 1876 birthplace.
 - [Townsend Street](townsend-street/) — 6 buildings, built 1900–1922; 6 in the South End Historic District.
 
+## Parks and public spaces
+
+- [Buckeye Grove](buckeye-grove/) — Neighborhood park or playground, 2.1 acres.
+- [Clipper Cove Park](clipper-cove-park/) — Neighborhood park or playground, 1.4 acres.
+- [Willow Bridge Gardens](willow-bridge-gardens/) — Neighborhood park or playground, 1.8 acres.
+- [Yerba Buena Natural Areas](yerba-buena-natural-areas/) — Regional park, 45.2 acres.
+
 ## Historic districts here
 
 - [South End Historic District](../historic-districts/south-end/)

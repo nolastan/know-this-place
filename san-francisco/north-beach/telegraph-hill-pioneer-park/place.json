@@ -1,0 +1,60 @@
+{
+  "name": "Telegraph Hill - Pioneer Park",
+  "path": "/san-francisco/north-beach/telegraph-hill-pioneer-park/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.802795,
+    "lng": -122.405853
+  },
+  "acres": 4.82,
+  "address": "1 Telegraph Hill Boulevard",
+  "managed_by": "Recreation & Park",
+  "complex": "North Beach Complex",
+  "rpd_property_id": "149",
+  "facilities": [
+    {
+      "name": "Coit Tower",
+      "type": "Structure, Historic: Bldg-Other"
+    },
+    {
+      "name": "Coit Tower Cafe",
+      "type": "Retail Space"
+    },
+    {
+      "name": "Pioneer Park Restroom",
+      "type": "Restroom"
+    }
+  ],
+  "parcels": [
+    "0079008",
+    "0086012",
+    "0086011",
+    "0078061",
+    "0079009",
+    "0078062",
+    "0086013",
+    "0086056"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=149",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=149",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%270079008%27%2C%270086012%27%2C%270086011%27%2C%270078061%27%2C%270079009%27%2C%270078062%27%2C%270086013%27%2C%270086056%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

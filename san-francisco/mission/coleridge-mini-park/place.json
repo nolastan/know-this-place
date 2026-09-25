@@ -1,0 +1,46 @@
+{
+  "name": "Coleridge Mini Park",
+  "path": "/san-francisco/mission/coleridge-mini-park/",
+  "kind": "park",
+  "type": "Mini Park",
+  "coordinates": {
+    "lat": 37.744418,
+    "lng": -122.419656
+  },
+  "acres": 0.23,
+  "address": "90 Coleridge Street",
+  "managed_by": "Recreation & Park",
+  "complex": "Bernal/St. Mary's Complex",
+  "rpd_property_id": "34",
+  "facilities": [
+    {
+      "name": "Children's Play Areas",
+      "type": "Children's Play Area"
+    }
+  ],
+  "parcels": [
+    "5615009",
+    "5615077"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=34",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=34",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%275615009%27%2C%275615077%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

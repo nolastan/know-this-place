@@ -1,0 +1,36 @@
+{
+  "name": "Kezar Stadium",
+  "path": "/san-francisco/golden-gate-park/kezar-stadium/",
+  "kind": "facility",
+  "type": "Stadium",
+  "coordinates": {
+    "lat": 37.766847,
+    "lng": -122.456016
+  },
+  "street_addresses": [
+    "650 Frederick Street",
+    "710 Frederick Street"
+  ],
+  "rpd_object_ids": [
+    "628"
+  ],
+  "part_of": {
+    "name": "Golden Gate Park",
+    "path": "/san-francisco/golden-gate-park/"
+  },
+  "sources": [
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?$where=objectid%20in%20%28628%29",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "supports": "Street address",
+      "query": "https://data.sf.gov/resource/3mea-di5p.json?$where=eas_baseid%20in%20%28%27452166%27%2C%27452744%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

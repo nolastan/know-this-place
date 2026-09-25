@@ -24,6 +24,14 @@ Court.
 - [Victoria Street](victoria-street/) — 5 buildings, built 1912–1927; 5 in the Ingleside Terrace Historic District.
 - [Westwood Drive](westwood-drive/) — 1 building, built 1924.
 
+## Parks and public spaces
+
+- [Aptos Playground](aptos-playground/) — Neighborhood park or playground, 5.0 acres.
+- [Brooks Park](brooks-park/) — Neighborhood park or playground, 3.8 acres.
+- [Junipero Serra Playground](junipero-serra-playground/) — Neighborhood park or playground, 1.8 acres.
+- [Lakeview & Ashton Mini Park](lakeview-and-ashton-mini-park/) — Mini park, 22,216 sq ft.
+- [Merced Heights Playground](merced-heights-playground/) — Neighborhood park or playground, 1.2 acres.
+
 ## Historic districts here
 
 - [Ingleside Terrace Historic District](../historic-districts/ingleside-terrace/)

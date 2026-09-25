@@ -1,0 +1,50 @@
+{
+  "name": "Lessing & Sears Mini Park",
+  "path": "/san-francisco/oceanview-merced-ingleside/lessing-and-sears-mini-park/",
+  "kind": "park",
+  "type": "Mini Park",
+  "coordinates": {
+    "lat": 37.708623,
+    "lng": -122.455336
+  },
+  "acres": 0.17,
+  "address": "10 Lessing Street",
+  "managed_by": "Recreation & Park",
+  "complex": "Crocker Complex",
+  "rpd_property_id": "14",
+  "facilities": [
+    {
+      "name": "Children's Play Area",
+      "type": "Childrens Play Area"
+    },
+    {
+      "name": "Community Garden",
+      "type": "Community Garden"
+    }
+  ],
+  "parcels": [
+    "7160001",
+    "7160011"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=14",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=14",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%277160001%27%2C%277160011%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

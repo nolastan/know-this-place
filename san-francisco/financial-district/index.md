@@ -30,6 +30,17 @@ The office district north of Market Street, in the city's Financial District/Sou
 - [Vinton Court](vinton-court/) — 1 building, built 1923; 1 in the Chinatown Historic District.
 - [Washington Street](washington-street/) — 1 building, built 1900.
 
+## Parks and public spaces
+
+- [Chapel Grove](chapel-grove/) — Neighborhood park or playground, 2.7 acres.
+- [Cityside Parks](cityside-parks/) — Neighborhood park or playground, 6.6 acres.
+- [Embarcadero Plaza](embarcadero-plaza/) — Civic plaza or square, 4.1 acres.
+- [Maritime Plaza](maritime-plaza/) — Civic plaza or square, 2.0 acres.
+- [Portsmouth Square](portsmouth-square/) — Neighborhood park or playground, 1.5 acres.
+- [St. Mary's Square](st-marys-square/) — Civic plaza or square, 1.4 acres.
+- [Sue Bierman Park](sue-bierman-park/) — Neighborhood park or playground, 4.5 acres.
+- [Treasure Island Landing](treasure-island-landing/) — Neighborhood park or playground, 2.3 acres.
+
 ## Historic districts here
 
 - [Chinatown Historic District](../historic-districts/chinatown/)

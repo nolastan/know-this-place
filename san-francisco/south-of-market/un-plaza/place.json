@@ -1,0 +1,53 @@
+{
+  "name": "UN Plaza",
+  "path": "/san-francisco/south-of-market/un-plaza/",
+  "kind": "park",
+  "type": "Civic Plaza or Square",
+  "coordinates": {
+    "lat": 37.780087,
+    "lng": -122.413949
+  },
+  "acres": 2.66,
+  "address": "1150 Market Street",
+  "managed_by": "Recreation & Park",
+  "complex": "Civic Center/Potrero Hill Complex",
+  "rpd_property_id": "957477",
+  "facilities": [
+    {
+      "name": "UN Plaza DPA",
+      "type": "Dog Play Area"
+    },
+    {
+      "name": "UN Plaza Skate Park",
+      "type": "Skatepark"
+    }
+  ],
+  "parcels": [
+    "0351049",
+    "0351046",
+    "0351039",
+    "0351041",
+    "0351043"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=957477",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=957477",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%270351049%27%2C%270351046%27%2C%270351039%27%2C%270351041%27%2C%270351043%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

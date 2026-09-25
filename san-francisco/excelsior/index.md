@@ -21,6 +21,12 @@ A working-class residential district in the city's south-east, laid out in the e
 - [Silver Avenue](silver-avenue/) — 1 building, built 1922.
 - [Walbridge Street](walbridge-street/) — 1 building.
 
+## Parks and public spaces
+
+- [Crocker Amazon Playground](crocker-amazon-playground/) — Regional park, 57.5 acres.
+- [Excelsior Playground](excelsior-playground/) — Neighborhood park or playground, 1.9 acres.
+- [John McLaren Park](john-mclaren-park/) — Regional park, 278.0 acres.
+
 ## Adjacent neighborhoods
 
 [The Outer Mission](../outer-mission/) adjoins west along Mission Street and

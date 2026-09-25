@@ -23,6 +23,11 @@ An affluent residential enclave on the bluffs above the Golden Gate, laid out fr
 - [Seacliff Avenue](seacliff-avenue/) — 3 buildings, built 1914–1916; 3 in the Sea Cliff Historic District.
 - [West Clay Street](west-clay-street/) — 1 building, built 1912.
 
+## Parks and public spaces
+
+- [DuPont Tennis Courts](dupont-tennis-courts/) — Neighborhood park or playground, 40,511 sq ft.
+- [Rochambeau Playground](rochambeau-playground/) — Neighborhood park or playground, 39,640 sq ft.
+
 ## Historic districts here
 
 - [Sea Cliff Historic District](../historic-districts/sea-cliff/)

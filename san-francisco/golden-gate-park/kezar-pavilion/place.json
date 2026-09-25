@@ -1,0 +1,35 @@
+{
+  "name": "Kezar Pavilion",
+  "path": "/san-francisco/golden-gate-park/kezar-pavilion/",
+  "kind": "facility",
+  "type": "Arts/Activity Center",
+  "coordinates": {
+    "lat": 37.767474,
+    "lng": -122.453976
+  },
+  "street_addresses": [
+    "755 Stanyan Street"
+  ],
+  "rpd_object_ids": [
+    "2018"
+  ],
+  "part_of": {
+    "name": "Golden Gate Park",
+    "path": "/san-francisco/golden-gate-park/"
+  },
+  "sources": [
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?$where=objectid%20in%20%282018%29",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "supports": "Street address",
+      "query": "https://data.sf.gov/resource/3mea-di5p.json?$where=eas_baseid%20in%20%28%27488791%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

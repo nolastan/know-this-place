@@ -1,0 +1,61 @@
+{
+  "name": "Eureka Valley Rec Center",
+  "path": "/san-francisco/castro/eureka-valley-rec-center/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.759773,
+    "lng": -122.436487
+  },
+  "acres": 2.25,
+  "address": "100 Collingwood Street",
+  "managed_by": "Recreation & Park",
+  "complex": "Buena Vista Complex",
+  "rpd_property_id": "75",
+  "facilities": [
+    {
+      "name": "Ball Fields",
+      "type": "Ball Field"
+    },
+    {
+      "name": "CPA",
+      "type": "Children's Play Area"
+    },
+    {
+      "name": "DPA",
+      "type": "Dog Play Area"
+    },
+    {
+      "name": "Eureka Rec Center",
+      "type": "Rec Center"
+    },
+    {
+      "name": "Tennis Courts",
+      "type": "Tennis Court"
+    }
+  ],
+  "parcels": [
+    "2694002"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=75",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=75",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%272694002%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

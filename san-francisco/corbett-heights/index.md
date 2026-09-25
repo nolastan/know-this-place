@@ -27,6 +27,13 @@ Ord, Hattie, Danvers, Mars, Romain and Museum Way.
 - [Romain Street](romain-street/) — 5 buildings, built 1935–1936.
 - [Shrader Street](shrader-street/) — 1 building, built 1907.
 
+## Parks and public spaces
+
+- [Corona Heights Park](corona-heights-park/) — Neighborhood park or playground, 13.2 acres.
+- [Peixotto Playground](peixotto-playground/) — Neighborhood park or playground, 35,719 sq ft.
+- [States Street Playground](states-street-playground/) — Neighborhood park or playground, 2.9 acres.
+- [Tank Hill](tank-hill/) — Neighborhood park or playground, 3.0 acres.
+
 ## Sources
 
 - Neighborhood and subdivision history — Corbett Heights Neighbors,

@@ -1,0 +1,73 @@
+{
+  "name": "St. Mary's Rec Center",
+  "path": "/san-francisco/bernal-heights/st-marys-rec-center/",
+  "kind": "park",
+  "type": "Neighborhood Park or Playground",
+  "coordinates": {
+    "lat": 37.733675,
+    "lng": -122.420671
+  },
+  "acres": 13.6,
+  "address": "95 Justin Drive",
+  "managed_by": "Recreation & Park",
+  "complex": "Bernal/St. Mary's Complex",
+  "rpd_property_id": "31",
+  "facilities": [
+    {
+      "name": "Alemany Farm",
+      "type": "Community Garden"
+    },
+    {
+      "name": "Ball Fields",
+      "type": "Ball Field"
+    },
+    {
+      "name": "Basketball Courts",
+      "type": "Basketball Court"
+    },
+    {
+      "name": "DPA",
+      "type": "Dog Play Area"
+    },
+    {
+      "name": "St Mary's CPA",
+      "type": "Children's Play Area"
+    },
+    {
+      "name": "St Mary's Picnic Area",
+      "type": "Picnic Area"
+    },
+    {
+      "name": "St Mary's Rec Center",
+      "type": "Rec Center"
+    },
+    {
+      "name": "Tennis Courts",
+      "type": "Tennis Court"
+    }
+  ],
+  "parcels": [
+    "5801002"
+  ],
+  "sources": [
+    {
+      "id": "sf-rpd-properties",
+      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
+      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=31",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-rpd-facilities",
+      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
+      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=31",
+      "retrieved": "2026-09-25"
+    },
+    {
+      "id": "sf-parcels",
+      "name": "SF Parcels (active and retired) via DataSF",
+      "supports": "Parcels",
+      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%275801002%27%29",
+      "retrieved": "2026-09-25"
+    }
+  ]
+}

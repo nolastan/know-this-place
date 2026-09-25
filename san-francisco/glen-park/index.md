@@ -39,6 +39,27 @@ Diamond and Chenery and evaluated eight of them in detail.
 - [Turquoise Way](turquoise-way/) — 3 buildings, built 1962–1964; 3 in the Diamond Heights Historic District.
 - [Wilder Street](wilder-street/) — 3 buildings, built 1938–1954.
 
+## Parks and public spaces
+
+- [Arlington Community Garden](arlington-community-garden/) — Community garden, 5,663 sq ft.
+- [Berkeley Way Open Space](berkeley-way-open-space/) — Neighborhood park or playground, 36,155 sq ft.
+- [Billy Goat Hill](billy-goat-hill/) — Neighborhood park or playground, 3.7 acres.
+- [Cayuga & Lamartine Mini Park](cayuga-and-lamartine-mini-park/) — Mini park, 6,534 sq ft.
+- [Crags Court Garden](crags-court-garden/) — Community garden, 19,166 sq ft.
+- [Diamond & Farnum Open Space](diamond-and-farnum-open-space/) — Mini park, 3,485 sq ft.
+- [Dorothy Erskine Park](dorothy-erskine-park/) — Neighborhood park or playground, 1.6 acres.
+- [Everson & Digby Lots](everson-and-digby-lots/) — Neighborhood park or playground, 1.3 acres.
+- [Fairmont Plaza](fairmont-plaza/) — Neighborhood park or playground, 37,897 sq ft.
+- [George Christopher Playground](george-christopher-playground/) — Neighborhood park or playground, 7.0 acres.
+- [Glen Canyon Park](glen-canyon-park/) — Regional park, 70.7 acres.
+- [Joost & Baden Mini Park](joost-and-baden-mini-park/) — Mini park, 6,098 sq ft.
+- [Miraloma Playground](miraloma-playground/) — Neighborhood park or playground, 2.4 acres.
+- [O'Shaughnessy Hollow](oshaughnessy-hollow/) — Neighborhood park or playground, 11.0 acres.
+- [Sunnyside Conservatory](sunnyside-conservatory/) — Mini park, 10,890 sq ft.
+- [Sunnyside Playground](sunnyside-playground/) — Neighborhood park or playground, 2.6 acres.
+- [Topaz Open Space](topaz-open-space/) — Neighborhood park or playground, 40,075 sq ft.
+- [Walter Haas Playground](walter-haas-playground/) — Neighborhood park or playground, 4.6 acres.
+
 ## Historic districts here
 
 - [Diamond Heights Historic District](../historic-districts/diamond-heights/)
