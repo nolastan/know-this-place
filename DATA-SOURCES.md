@@ -67,6 +67,7 @@ Each section below is self-contained. **Read the row you need, not the file.**
 | a downtown building's public plaza or terrace | [`sf-popos`](#sf-popos--privately-owned-public-open-spaces) |
 | art the 1% requirement put on a parcel | [`sf-public-art`](#sf-public-art--public-art-1-art-program) |
 | a park, plaza or community garden, and what is in it | [`sf-rpd-properties`](#sf-rpd-properties--recreation-and-parks-properties), [`sf-rpd-facilities`](#sf-rpd-facilities--recreation-and-parks-facilities) |
+| a named place in the Presidio | [`nps-places`](#nps-places--national-park-service-places-api), [`presidio-trust-places`](#presidio-trust-places--presidio-trust-places-on-presidiogov) |
 | which historic district an address stands in | [`sf-historic-districts`](#sf-historic-districts--historic-district-boundaries) |
 | a period photograph | [`historical-imagery`](#historical-imagery--opensfhistory--wikimedia-commons) |
 | the Street View still on a page | [`streetview`](#streetview--google-maps-embed-api-live-embed-only) |
@@ -351,6 +352,99 @@ here is [Adding a source](#adding-a-source).
 - **Citation label:** "SF Recreation and Park Department — Recreation and
   Parks Facilities via DataSF"
 - **Verified:** 2026-09-25 (2,676 rows; 849 in Golden Gate Park)
+
+## nps-places — National Park Service Places API
+
+- **What:** The Park Service's own list of the places it describes on nps.gov,
+  one row per place page, for any park unit. The Presidio is federal land and
+  in neither Rec & Park inventory above; this and
+  [`presidio-trust-places`](#presidio-trust-places--presidio-trust-places-on-presidiogov)
+  are where its place pages come from
+  ([REFERENCE.md → Place pages](REFERENCE.md#place-pages)).
+- **Endpoint:** `https://developer.nps.gov/api/v1/places?parkCode=prsf&limit=500&api_key=DEMO_KEY`
+  (146 rows for the Presidio). One place: `?id=<id>&api_key=DEMO_KEY`.
+- **Key fields:** `id` (a GUID, stable — key on it), `title`, `url` (the
+  nps.gov page), `latitude` / `longitude` (strings), `tags`,
+  `listingDescription` and `bodyText` (the page's prose, as HTML),
+  `isMapPinHidden`, `isManagedByNps`, `relatedParks`.
+- **Cautions:**
+  - **It needs a key.** Without `api_key` it answers 403. `DEMO_KEY` is the
+    public key api.data.gov publishes for trying an API, limited per IP to
+    30 requests an hour and 50 a day; a free key of your own lifts that, and
+    `seed_pages.py` reads one from `NPS_API_KEY`. Citation URLs carry
+    `DEMO_KEY` so a reader can open them.
+  - **Most rows are not places.** About fifty of the 146 are interpretive
+    stops on a tour: numbered wayside panels ("12 - The Last Word in
+    Airfields", the Crissy Field tour) and the stops of the Philippines War,
+    Presidio Bronze Cannon and Batteries to Bluffs tours ("Battery Dynamite: A
+    Failed Experiment"). `isMapPinHidden: "1"` marks most of them, but not
+    reliably, and a tour tag is no test either: Battery Boutelle and Battery
+    Godfrey are real places that carry the Batteries to Bluffs tag.
+  - **About fifteen rows are businesses and tenants**: restaurants, a
+    Starbucks, the bowling alley, House of Air, the Inn and the Lodge, the
+    Walt Disney Family Museum, the Presidio Trust's own office. A business is
+    an occupant of a building, not a place.
+  - **`parkCode=prsf` reaches past the Presidio.** Every row is related to
+    both `prsf` and `goga`, and seven fall outside the Presidio: the Palace of
+    Fine Arts, Mountain Lake Park and the Anza camp site beside it (city
+    land), the Greater Farallones sanctuary offshore, and three tour stops.
+    Test each point against parcel 1300001's outline in
+    [`sf-parcels`](#sf-parcels--parcels-active-and-retired), which is the
+    Presidio's boundary.
+  - **One place can be two rows**: "Crissy Field" and "Crissy Airfield"; "East
+    Beach at Crissy Field" and "East Beach - Crissy Field Promenade".
+  - **`isManagedByNps` is `1` on nearly every row**, including buildings the
+    Presidio Trust runs. Don't print a manager off it.
+  - `tags` are free text in mixed case and spelling ("presidio of san
+    francsico"); there is no type column. A place page's `type` is one tag,
+    chosen in the manifest.
+  - Presidio Wall Playground is in it, and is Rec & Park's: its page comes from
+    `sf-rpd-properties`.
+- **Citation label:** "National Park Service — Places API, Presidio of San
+  Francisco"
+- **Verified:** 2026-09-25 (146 rows for `prsf`; 62 used)
+
+## presidio-trust-places — Presidio Trust places on presidio.gov
+
+- **What:** The places the Presidio Trust, the federal agency that manages
+  most of the park, lists on presidio.gov: attractions, overlooks, lawns and
+  habitats, and the businesses and schools that are its tenants. It has places
+  the Park Service does not (the Main Parade Lawn, the Civil War Parade
+  Ground, Fort Point, the Presidio Theatre) and a place type the Park Service
+  lacks.
+- **Endpoint:** `https://wp.presidio.gov/wp-json/wp/v2/places?per_page=100&page=1`
+  (and `page=2`; 129 rows, `X-WP-Total`). One place: `?slug=<slug>`. No key.
+- **Key fields:** the API is the site's page builder, not a table. `url` (the
+  presidio.gov path; its last segment is the slug), `block[]` — the `hero`
+  block's `heading` is the name, the `attraction_metrics_bar` block's
+  `place_type` and `region` terms are the type and the park region —
+  and `schema.place`, a schema.org object with `@type`, `geo` and `address`.
+- **Cautions:**
+  - **The Trust publishes no GIS or open data.** No ArcGIS or data portal of
+    its own turned up. An ArcGIS Online account serving "Presidio Trust
+    Boundary", "Presidio Trust Base Map" and "Existing Vegetation at the
+    Presidio" (`services5.arcgis.com/KS6joEEoa0G4EO56`) belongs to a North Bay
+    fire-planning consultancy, not the Trust. Don't cite it.
+  - **About half the rows are tenants**: `schema.place["@type"]` is
+    `LocalBusiness` or `Restaurant` for restaurants, schools, gyms, a bank and
+    the post office. Not places.
+  - **Event venues are listed twice**, once as an attraction and once as a
+    rental venue (`presidio-officers-club` and `presidio-officers-club-venue`;
+    `civil-war-parade-ground` and its `-venue`). Match slugs exactly; a prefix
+    match finds the venue.
+  - **`schema.place.address.streetAddress` is usually the place's name**, not
+    an address. Where it is a number, confirm it in
+    [`sf-eas-addresses`](#sf-eas-addresses--addresses-enterprise-addressing-system)
+    on parcel 1300001. One number can be several homes: 1249 Appleton Street
+    (the Presidio Nursery) is four lettered units in EAS, and is not printed.
+  - `schema` is sometimes a list rather than an object, and some rows have no
+    `place_type` at all. Trails are rows too, and one of them (the Bay Area
+    Ridge Trail) is pinned in Marin.
+  - Names are the Trust's marketing headings ("Battery East Vista",
+    "Crissy Field Overview"); the page's heading is the name a visitor knows,
+    and the Trust's heading is kept as `trust_name` where it differs.
+- **Citation label:** "Presidio Trust — places listed on presidio.gov"
+- **Verified:** 2026-09-25 (129 rows; 50 used)
 
 ## sf-historic-districts — Historic district boundaries
 

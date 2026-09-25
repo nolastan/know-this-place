@@ -20,8 +20,10 @@ seeder never invents prose and knows nothing about the source.
   silently drops.
 - Manifests are create-only inputs: re-running `seed-list` writes nothing for a
   page that already exists.
-- `rpd-places.json` is the one manifest of the other shape: place pages, read by
-  `seed_pages.py places` rather than `seed-list`. See
+- `rpd-places.json` and `presidio-places.json` are the manifests of the other
+  shape: place pages, read by `seed_pages.py places` rather than `seed-list`.
+  The first is Rec & Park's; the second is the Presidio's, from the National
+  Park Service's and the Presidio Trust's listings. See
   [REFERENCE.md → Place pages](../../REFERENCE.md#place-pages).
 
 Keeping them here rather than under `scripts/` is the module boundary — the

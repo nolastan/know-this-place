@@ -37,6 +37,7 @@ Usage:
   python3 scripts/seed_pages.py names --neighborhood "Castro/Upper Market"
   python3 scripts/seed_pages.py hubs  --city san-francisco --area castro
   python3 scripts/seed_pages.py places --manifest research/manifests/rpd-places.json
+  python3 scripts/seed_pages.py places --manifest research/manifests/presidio-places.json
 
 `places` is `seed-list` for the fifth page type: a park, plaza or named place
 inside a park, which has no street number of its own and so no address page.
@@ -52,6 +53,7 @@ import hashlib
 import html
 import json
 import math
+import os
 import re
 import sys
 import time
@@ -3528,9 +3530,12 @@ def render_html(rec: dict) -> str:
 #
 # Everything a place page states comes from the Recreation and Park
 # Department's two inventories (DATA-SOURCES.md → sf-rpd-properties,
-# sf-rpd-facilities), plus the parcels it sits on and, for a place the city's
-# address register gives a number, that address. What the page says about the
-# parcel is the parcel page's to say: the place page links to it.
+# sf-rpd-facilities) — or, in the Presidio, which is federal land and in
+# neither, from the National Park Service's and the Presidio Trust's listings
+# (nps-places, presidio-trust-places) — plus the parcels it sits on and, for a
+# place the city's address register gives a number, that address. What the
+# page says about the parcel is the parcel page's to say: the place page links
+# to it.
 PLACE_FILE = "place.json"
 
 # The closed vocabulary, as `ADDRESS_TOP_LEVEL_KEYS` is for an address page.
@@ -3539,6 +3544,7 @@ PLACE_KEYS = frozenset({
     "street_addresses", "managed_by", "complex", "rpd_name", "rpd_property_id",
     "rpd_object_ids", "part_of", "parcels", "facilities", "hook",
     "historical_record", "building", "narrative", "unknowns", "sources",
+    "nps_id", "nps_name", "trust_slug", "trust_name",
 })
 
 # The Rec & Park facility types that are the park's own upkeep rather than
@@ -3653,6 +3659,22 @@ def place_hook(rec: dict) -> str:
     return head + "."
 
 
+def place_is_presidio(rec: dict) -> bool:
+    """A Presidio place: listed by the Park Service and the Presidio Trust,
+    not by Rec & Park, whose inventories stop at the federal boundary."""
+    return rec.get("kind") == "presidio"
+
+
+def place_source_phrase(rec: dict) -> str:
+    """Whose listing a place page is built from, for its meta description."""
+    if not place_is_presidio(rec):
+        return "the Recreation and Park Department's inventory"
+    who = [n for k, n in (("nps_id", "National Park Service"),
+                          ("trust_slug", "Presidio Trust")) if rec.get(k)]
+    return "the " + "'s and the ".join(who) + "'s listings" if len(who) > 1 \
+        else f"the {who[0]}'s listing"
+
+
 def place_record_panel_html(rec: dict, indent: str) -> str:
     rows = []
     for icon, key, val in (
@@ -3663,6 +3685,8 @@ def place_record_panel_html(rec: dict, indent: str) -> str:
             ("ic-plan", "Managed by", rec.get("managed_by")),
             ("ic-link", "Complex", rec.get("complex")),
             ("ic-help", "Rec & Park name", rec.get("rpd_name")),
+            ("ic-help", "Park Service name", rec.get("nps_name")),
+            ("ic-help", "Presidio Trust name", rec.get("trust_name")),
             ("ic-ruler", "Architect", (rec.get("building") or {}).get("architect"))):
         if val:
             rows.append((icon, key, val))
@@ -3672,8 +3696,9 @@ def place_record_panel_html(rec: dict, indent: str) -> str:
         f'{indent}    <div class="spec"><span class="ic {i}"></span>'
         f'<span class="spec-k">{esc(k)}</span>'
         f'<span class="spec-v">{esc(v)}</span></div>' for i, k, v in rows)
+    heading = "Park record" if place_is_presidio(rec) else "Recreation and Park record"
     return (f'{indent}<section class="panel">\n'
-            f'{indent}  <h3>Recreation and Park record</h3>\n'
+            f'{indent}  <h3>{heading}</h3>\n'
             f'{indent}  <dl class="speclist">\n{body}\n{indent}  </dl>\n'
             f'{indent}</section>\n')
 
@@ -3745,8 +3770,8 @@ def render_place_html(rec: dict) -> str:
     sub_text = place_type_label(rec)
     if part_of:
         sub_text += f" · {part_of['name']}"
-    desc = f"{name}, San Francisco: {place_hook(rec).rstrip('.')} — from the " \
-           f"Recreation and Park Department's inventory, fully cited."
+    desc = f"{name}, San Francisco: {place_hook(rec).rstrip('.')} — from " \
+           f"{place_source_phrase(rec)}, fully cited."
 
     tiles = []
     if rec.get("acres"):
@@ -5850,6 +5875,128 @@ RPD_FACILITY_SELECT = ",".join((
     "property_name", "latitude", "longitude"))
 
 
+# The Presidio's two listings (DATA-SOURCES.md → nps-places,
+# presidio-trust-places). The Park Service's API wants a key; DEMO_KEY is the
+# one it publishes for exactly this, rate-limited per IP, and the one the
+# citation URLs carry. Set NPS_API_KEY to use your own for the fetch.
+NPS_PLACES_API = "https://developer.nps.gov/api/v1/places"
+TRUST_PLACES_API = "https://wp.presidio.gov/wp-json/wp/v2/places"
+
+
+def fetch_json_cached(name: str, urls: list, refresh: bool = False) -> list:
+    """GET each URL once, concatenate the JSON lists, and cache the result."""
+    CACHE.mkdir(exist_ok=True)
+    path = CACHE / name
+    if path.exists() and not refresh:
+        return json.loads(path.read_text())
+    rows = []
+    for url in urls:
+        with urllib.request.urlopen(urllib.request.Request(url, headers=UA),
+                                    timeout=120) as r:
+            got = json.loads(r.read())
+        rows.extend(got["data"] if isinstance(got, dict) else got)
+        print(f"  {name}: {len(rows)} rows", file=sys.stderr, flush=True)
+    path.write_text(json.dumps(rows))
+    return rows
+
+
+def fetch_presidio_listings(refresh: bool = False) -> tuple:
+    """({NPS place id: row}, {Trust slug: row}) for every place in the Presidio."""
+    key = os.environ.get("NPS_API_KEY", "DEMO_KEY")
+    nps = fetch_json_cached("nps_places_prsf.json", [
+        f"{NPS_PLACES_API}?parkCode=prsf&limit=500&api_key={key}"], refresh)
+    # The Trust's API serves 100 a page; it lists about 130.
+    trust = fetch_json_cached("presidio_trust_places.json", [
+        f"{TRUST_PLACES_API}?per_page=100&page={n}" for n in (1, 2)], refresh)
+    return ({p["id"]: p for p in nps},
+            {p["url"].rstrip("/").rsplit("/", 1)[1]: p for p in trust})
+
+
+def trust_place_fields(p: dict) -> tuple:
+    """(heading, place types, schema.org place) out of one Trust page's blocks.
+
+    The Trust's API is its page builder's output, not a table: the name is the
+    hero block's heading, the types are the metrics bar's `place_type` terms,
+    and the point and street address are in the page's schema.org block.
+    """
+    heading, types = None, []
+    for b in p.get("block") or []:
+        if not isinstance(b, dict):
+            continue
+        if b.get("acf_fc_layout") == "hero":
+            heading = html.unescape(b["data"]["hero"].get("heading") or "").strip()
+        elif b.get("acf_fc_layout") == "attraction_metrics_bar":
+            types = [t["name"] for t in
+                     b["data"]["attraction_metrics_bar"].get("place_type") or []
+                     if isinstance(t, dict)]
+    schema = p.get("schema") if isinstance(p.get("schema"), dict) else {}
+    place = schema.get("place") if isinstance(schema.get("place"), dict) else {}
+    return heading, types, place
+
+
+def build_presidio_record(e: dict, nps: dict, trust: dict, retrieved: str) -> dict:
+    """A Presidio manifest entry -> the first draft of its `place.json`.
+
+    The manifest names the entry's Park Service place (`nps_id`), its Trust
+    page (`trust_slug`), or both; the name its heading uses; and a `type`,
+    which must be one of those records' own Trust place types or NPS tags —
+    the choice between them is the manifest's, the words are the source's.
+    Coordinates are the Park Service's point where there is one.
+    """
+    path = f"/san-francisco/{e['area']}/{e['slug']}/"
+    p = nps[e["nps_id"]] if e.get("nps_id") else None
+    t = trust[e["trust_slug"]] if e.get("trust_slug") else None
+    if not (p or t):
+        raise SystemExit(f"{e['slug']}: names neither an NPS place nor a Trust page")
+    heading, trust_types, schema = trust_place_fields(t) if t else (None, [], {})
+    if p:
+        lat, lng = p["latitude"], p["longitude"]
+    else:
+        lat, lng = schema["geo"]["latitude"], schema["geo"]["longitude"]
+    rec = {"name": e["name"], "path": path, "kind": "presidio"}
+    if e.get("type"):
+        terms = {x.lower() for x in trust_types + (p["tags"] if p else [])}
+        if e["type"].lower() not in terms:
+            raise SystemExit(f"{e['slug']}: type {e['type']!r} is not one of its "
+                             f"sources' own terms")
+        rec["type"] = e["type"]
+    rec["coordinates"] = {"lat": round(float(lat), 6), "lng": round(float(lng), 6)}
+    if e.get("eas"):
+        rec["street_addresses"] = [alias_display(a["address"]) for a in e["eas"]]
+    if p:
+        rec["nps_id"] = p["id"]
+        if p["title"] != e["name"]:
+            rec["nps_name"] = p["title"]
+    if t:
+        rec["trust_slug"] = e["trust_slug"]
+        if heading and heading != e["name"]:
+            rec["trust_name"] = heading
+    rec["part_of"] = {"name": area_display(e["part_of"]), "path": e["part_of"]}
+    sources = []
+    if p:
+        sources.append({"id": "nps-places",
+                        "name": "National Park Service — Places API, Presidio of "
+                                "San Francisco",
+                        "query": f"{NPS_PLACES_API}?id={p['id']}&api_key=DEMO_KEY",
+                        "retrieved": retrieved})
+    if t:
+        sources.append({"id": "presidio-trust-places",
+                        "name": "Presidio Trust — places listed on presidio.gov",
+                        "query": f"{TRUST_PLACES_API}?slug={e['trust_slug']}",
+                        "retrieved": retrieved})
+    if e.get("eas"):
+        ids = ",".join(f"'{a['eas_baseid']}'" for a in e["eas"])
+        sources.append({"id": "sf-eas-addresses",
+                        "name": "SF Enterprise Addressing System via DataSF",
+                        "supports": "Street address",
+                        "query": "https://data.sf.gov/resource/"
+                                 f"{DS_EAS}.json?$where="
+                                 f"{urllib.parse.quote(f'eas_baseid in ({ids})')}",
+                        "retrieved": retrieved})
+    rec["sources"] = sources
+    return rec
+
+
 def build_place_record(e: dict, props: dict, facs: list, retrieved: str) -> dict:
     """One manifest entry -> the first draft of its `place.json`.
 
@@ -5965,11 +6112,16 @@ def cmd_places(args) -> int:
     address page is.
     """
     entries = json.loads(Path(args.manifest).read_text())
-    props = {r["property_id"]: r for r in fetch_paged(
-        "rpd_properties.json", DS_RPD_PROPERTIES, select=RPD_PROPERTY_SELECT,
-        refresh=args.refresh)}
-    facs = fetch_paged("rpd_facilities.json", DS_RPD_FACILITIES,
-                       select=RPD_FACILITY_SELECT, refresh=args.refresh)
+    kinds = {e["kind"] for e in entries}
+    props, facs, nps, trust = {}, [], {}, {}
+    if kinds & {"park", "facility"}:
+        props = {r["property_id"]: r for r in fetch_paged(
+            "rpd_properties.json", DS_RPD_PROPERTIES, select=RPD_PROPERTY_SELECT,
+            refresh=args.refresh)}
+        facs = fetch_paged("rpd_facilities.json", DS_RPD_FACILITIES,
+                           select=RPD_FACILITY_SELECT, refresh=args.refresh)
+    if "presidio" in kinds:
+        nps, trust = fetch_presidio_listings(args.refresh)
     retrieved = args.retrieved or date.today().isoformat()
     written, skipped, areas = 0, 0, set()
     for e in entries:
@@ -5983,7 +6135,8 @@ def cmd_places(args) -> int:
         if street_like:
             raise SystemExit(f"{page_dir}: a street directory already has this "
                              f"name — give the place a qualified slug")
-        rec = build_place_record(e, props, facs, retrieved)
+        rec = (build_presidio_record(e, nps, trust, retrieved) if e["kind"] == "presidio"
+               else build_place_record(e, props, facs, retrieved))
         page_dir.mkdir(parents=True, exist_ok=True)
         (page_dir / PLACE_FILE).write_text(
             json.dumps(rec, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
