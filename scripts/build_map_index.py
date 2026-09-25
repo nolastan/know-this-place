@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
 """Regenerate shared/addresses.geojson from the content tree. Stdlib only.
 
-One Point feature per documented address, carrying only what the homepage map
-needs: the label it shows on hover ("t"), the page it opens on click ("p"), and
-"r": 1 when the research module has published a finding onto that page — the
-map draws those in the brick hue and the rest, pages that are permit history
-and little else, in grey. Coordinates come from each page's data.json, which is
-the single source of truth; "r" comes from research/findings, whose published
-entries each name the page they went onto. This file is a derived index and is
-never edited by hand.
+One Point feature per documented address and per place page (a park, plaza
+or place in a park — see REFERENCE.md → Place pages), carrying only what the
+homepage map needs: the label it shows on hover ("t"), the page it opens on
+click ("p"), and "r": 1 when the research module has published a finding onto
+that page — the map draws those in the brick hue and the rest, pages that are
+permit history and little else, in grey. Coordinates and labels come from each
+page's data.json, or a place's place.json, which is the single source of truth;
+a place is labelled by its name, since most have no street number. "r" comes
+from research/findings, whose published entries each name the page they went
+onto. This file is a derived index and is never edited by hand.
 
 Run from anywhere: python3 scripts/build_map_index.py
 """
@@ -48,10 +50,14 @@ def main() -> None:
     features = []
     skipped = []
     researched = researched_paths()
+    place_paths = set()
 
-    for data_path in sorted(content.rglob("data.json")) if content.exists() else []:
+    pages = sorted(content.rglob("data.json")) if content.exists() else []
+    places = sorted(content.rglob("place.json")) if content.exists() else []
+    for data_path in pages + places:
         page_dir = data_path.parent
-        if not ADDRESS_DIR.match(page_dir.name):
+        is_place = data_path.name == "place.json"
+        if not is_place and not ADDRESS_DIR.match(page_dir.name):
             continue
         try:
             data = json.loads(data_path.read_text(encoding="utf-8"))
@@ -67,12 +73,15 @@ def main() -> None:
             continue
 
         path = data.get("path") or "/" + page_dir.relative_to(ROOT).as_posix() + "/"
-        label = LOCALITY.sub("", data.get("address") or "").strip()
+        label = (data.get("name") if is_place else
+                 LOCALITY.sub("", data.get("address") or "")).strip()
         props = {"t": label, "p": path}
         # Only on the pages that have it: absent is the common case, and this
         # file is fetched whole by every homepage visit.
         if path in researched:
             props["r"] = 1
+        if is_place:
+            place_paths.add(path)
         features.append((path, {
             "type": "Feature",
             "geometry": {"type": "Point", "coordinates": [round(lng, 5), round(lat, 5)]},
@@ -91,8 +100,9 @@ def main() -> None:
     out = ROOT / "shared" / "addresses.geojson"
     out.write_text("\n".join(lines) + "\n", encoding="utf-8")
     flagged = sum(1 for _, f in features if "r" in f["properties"])
-    print(f"shared/addresses.geojson written with {len(features)} address(es), "
-          f"{flagged} with published research")
+    mapped_places = sum(1 for p, _ in features if p in place_paths)
+    print(f"shared/addresses.geojson written with {len(features) - mapped_places} "
+          f"address(es) and {mapped_places} place(s), {flagged} with published research")
     for note in skipped:
         print(f"  skipped — {note}")
 
