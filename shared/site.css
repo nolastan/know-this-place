@@ -124,8 +124,8 @@ body {
 
 /* The address-page masthead: the locator map bleeds to the viewport's top,
    right and left edges, and the page's chrome rides on it. The shell keeps the
-   same 16:5 ratio as the Mapbox static image so the baked-in attribution and
-   logo are never cropped. The overlays wear the chip treatment the homepage map
+   same 16:5 ratio as the Mapbox static image so the picture is never
+   cropped. The overlays wear the chip treatment the homepage map
    gives its popups, anchored to the viewport edges so they stay above the
    bleed, not the content column. */
 .map-shell {
@@ -165,6 +165,43 @@ body {
 }
 .map-id .breadcrumb .crumb-sep { color: var(--rule); }
 .map-id .crumb-meta { margin: 0.375rem 0 0; }
+/* The map's own credit, drawn by <ktp-map> once the image loads: the image
+   is fetched without the marks Mapbox bakes into its bottom corners, which
+   .map-id and the facade card ride over. Top-right is the one corner no chip
+   uses. The wordmark and the translucent strip are mapbox-gl's own control
+   (.mapboxgl-ctrl-logo / -attrib), literal colours included — they sit on the
+   map, not the page, so like the homepage map's they don't follow the tokens. */
+.map-shell ktp-map { position: relative; }
+.map-credit {
+  position: absolute; z-index: 2;
+  top: 0.5rem; right: 0.5rem;
+  display: flex; flex-direction: column; align-items: flex-end; gap: 0.25rem;
+  font: 12px/20px var(--sans);
+}
+.map-credit-logo {
+  display: block; width: 88px; height: 23px;
+  background: url("/shared/mapbox-logo.svg") no-repeat;
+}
+.map-credit-text { padding: 0 5px; background: #ffffff80; }
+.map-credit-text a { color: #000000bf; text-decoration: none; }
+.map-credit-text a:hover { text-decoration: underline; }
+
+/* On a phone the 16:5 band is too short to hold the chip, which covered the
+   whole map. The map takes a taller 4:3 frame of its own (site.js asks Mapbox
+   for a matching image rather than cropping the wide one) and the chip
+   drops into the flow beneath it, full width inside the page gutter, lifted
+   just over the map's bottom edge. */
+@media (max-width: 720px) {
+  .map-shell { aspect-ratio: auto; border-bottom: 0; background: none; }
+  /* The credit's one line would run under .map-brand; wrap it beside it. */
+  .map-credit-text { max-width: 10rem; text-align: right; }
+  .map-id {
+    position: relative;
+    right: auto; bottom: auto;
+    max-width: none;
+    margin: -1.5rem 1rem 0;
+  }
+}
 
 main { padding-top: 1.5rem; padding-bottom: 3rem; }
 
@@ -583,9 +620,11 @@ ktp-figure { position: relative; }
    margin reset, so the card fills its hero column. */
 .media-lift { position: relative; z-index: 1; max-width: 640px; margin: -4rem 0 0 0.6rem; box-shadow: var(--lift); }
 @media (max-width: 720px) {
-  /* Stacked: the card no longer overlaps, and the band keeps the 16:5 image
-     ratio so the Mapbox attribution and logo stay visible. */
+  /* Stacked: the card no longer overlaps, and the band takes a taller 4:3
+     frame — site.js requests an image of that ratio on phones rather than
+     cropping the wide one. */
   .media-lift { margin: 0; }
+  .map-shell ktp-map { height: auto; aspect-ratio: 4 / 3; border-bottom: 1px solid var(--rule); }
 }
 
 /* ============================================================= notes */
