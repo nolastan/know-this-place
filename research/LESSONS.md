@@ -13,6 +13,40 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
 
 ---
 
+- **A source read live off the web can still end up with zero findings files,
+  and that's a gap, not a valid skip.** `argonaut-sfhs`, `celebrity-residence-guides`
+  and `spur-popos-guide` all have resolved, published facts on real pages — their
+  dossiers narrate exactly which places became which pages — but none of the
+  three has a `research/findings/<id>/` directory at all. Step 1 ("get the
+  material readable") may skip the corpus for a source read live, but step 2
+  ("read it — findings out") has no such exemption, and skipping it quietly
+  breaks the chain of custody: nothing records which passage justified which
+  fact, `check.py --stats` can't count the source's yield, and a future run has
+  no record of what was already checked and declined. *Write the findings file
+  even for a three-fact pass read straight off a web page — the schema doesn't
+  get lighter just because the source is small.* Reconstructing these three
+  retroactively is its own bounded run, not part of whatever picked up this
+  lesson.
+
+- **A book-length source is small enough to scan programmatically for every
+  numbered address in one pass, instead of sampling sections by title.**
+  `hittell-1878` (245 numbered sections, ~930 KB of OCR text) had only 6
+  sections read after two prior passes; joining the whole text into one string,
+  stripping running headers/footers, and searching for a 1–4 digit number
+  within ~20–45 characters of a known San Francisco street name found every
+  numbered address in the book in one script, and confirmed nothing else in
+  the other ~239 sections was worth a manual read. The same trick works for any
+  single-volume secondary source small enough to fit in a session — no reason
+  to guess from section titles which ones might carry an address when the
+  whole text can be checked directly.
+
+- **`loc.gov` item pages return a Cloudflare challenge to a plain fetch, and
+  the Internet Archive often holds the same public-domain scan.**
+  `www.loc.gov/item/<id>/` is unusable for automated retrieval even though the
+  work is public domain; `archive.org/advancedsearch.php?q=title:...` finds
+  the same title, and `archive.org/download/<identifier>/<identifier>_djvu.txt`
+  (following the redirect) gives the full OCR text directly. Try Internet
+  Archive before treating a Library of Congress item as `needs-human`.
 
 - **A folder with no index page can still be listed: ask the Wayback
   Machine.** OHP posts nomination drafts under one path with no listing and
