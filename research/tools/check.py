@@ -529,7 +529,11 @@ def report(path: Path) -> None:
     one whose data.json was added by a commit that also touched this findings
     file — which is the batch's own commits, since a run marks its findings in
     the same commit that edits the pages. Uncommitted pages count as created,
-    so the table is right when run before the commit as well as after.
+    so the table is right when run before the commit as well as after. A page
+    this batch's commits never touched at all — a fact published earlier and
+    only now written down in a findings file, as a retroactive documentation
+    pass does — is neither: counting it as "edited" would claim a page change
+    the diff doesn't show, so it's reported separately instead.
     """
     import collections
     import subprocess
@@ -559,15 +563,31 @@ def report(path: Path) -> None:
     batch_commits = set(subprocess.run(
         ["git", "log", "--format=%H", "--", str(path)],
         cwd=ROOT.parent, capture_output=True, text=True).stdout.split())
+    already = collections.Counter()
     for page_path, area in pages.items():
         found = page_file(page_path)
         rel = str(found.relative_to(ROOT.parent)) if found else page_path.strip("/") + "/data.json"
         added = subprocess.run(
             ["git", "log", "--diff-filter=A", "--format=%H", "--", rel],
             cwd=ROOT.parent, capture_output=True, text=True).stdout.split()
+        touching = set(subprocess.run(
+            ["git", "log", "--format=%H", "--", rel],
+            cwd=ROOT.parent, capture_output=True, text=True).stdout.split())
         # Not committed yet, or added by one of this batch's own commits.
         is_new = not added or added[-1] in batch_commits
-        (created if is_new else edited)[area] += 1
+        if is_new:
+            created[area] += 1
+        elif touching & batch_commits:
+            edited[area] += 1
+        else:
+            # A published finding whose page was neither created nor ever
+            # touched by one of this batch's own commits — the fact was
+            # already on the page from an earlier, untracked publish, and this
+            # batch only wrote the finding down after the fact (see
+            # hittell-1878's full-text.json for a worked example). Counting it
+            # as "edited" claimed a page change the diff doesn't show.
+            already[area] += 1
+            continue
         try:
             page = json.loads((ROOT.parent / rel).read_text(encoding="utf-8"))
         except (OSError, json.JSONDecodeError):
@@ -610,6 +630,12 @@ def report(path: Path) -> None:
         print()
         print(f"{sum(unplaced.values())} finding(s) never reached a parcel ({rest}) "
               f"and cannot be grouped by neighborhood.")
+
+    if already:
+        print()
+        print(f"{sum(already.values())} finding(s) record a fact already on its page from "
+              f"an earlier publish — this batch's commits never touched that page, so it's "
+              f"not in the table above as created or edited.")
 
 
 
