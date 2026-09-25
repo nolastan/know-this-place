@@ -89,7 +89,7 @@ sit in — the three it touched most, and how many in all.
 | `digitalsf/sfp-103.json` | 7 | 16 KB | 1964 | 3 | 0 | `western-addition` |
 | `digitalsf/sfp-125.json` | 36 | 79 KB | 1970–1971 | 11 | 11 | `south-of-market`, `tenderloin`, `south-beach` +1 |
 | `digitalsf/sfp-136.json` | 10 | 16 KB | 1915–1959 | 2 | 2 | `tenderloin`, `pacific-heights` |
-| `digitalsf/sfp-162.json` | 1,186 | 2.2 MB | 1865–1989 | 663 | 546 | `financial-district`, `pacific-heights`, `mission` +36 |
+| `digitalsf/sfp-162.json` | 1,186 | 2.2 MB | 1865–1989 | 663 | 546 | `financial-district`, `pacific-heights`, `mission` +37 |
 | `digitalsf/sfp-169.json` | 39 | 79 KB | 1966–1968 | 21 | 21 | `marina`, `south-of-market`, `castro` +8 |
 | `digitalsf/sfp-179.json` | 29 | 60 KB | 2014 | 25 | 25 | `tenderloin`, `nob-hill` |
 | `digitalsf/sfp-22.json` | 80 | 155 KB | 1911–1912 | 72 | 60 | `ingleside-terraces`, `presidio-heights`, `inner-richmond` |
@@ -301,9 +301,10 @@ are listed so their size is visible before anyone opens one.
 | `parkside-hcs.json` | 141 | 50 KB | `sunset-parkside`, `west-of-twin-peaks` |
 | `popos-public-art.json` | 83 | 32 KB | `east-cut`, `financial-district`, `south-beach` +4 |
 | `ppie-marina-hcs.json` | 85 | 31 KB | `marina`, `nob-hill`, `pacific-heights` |
+| `presidio-places.json` | 75 | 19 KB | `presidio` |
 | `progressive-era-styles.json` | 36 | 13 KB | `pacific-heights`, `sunset-parkside`, `inner-richmond` +13 |
 | `ritual-2026-09-11.json` | 12 | 4 KB | `south-beach`, `chinatown`, `nob-hill` +7 |
-| `rpd-places.json` | 297 | 52 KB | `golden-gate-park`, `mission`, `bayview-hunters-point` +37 |
+| `rpd-places.json` | 297 | 52 KB | `golden-gate-park`, `mission`, `bayview-hunters-point` +38 |
 | `russian-american-hcs.json` | 136 | 51 KB | `inner-richmond`, `pacific-heights`, `outer-richmond` +16 |
 | `russian-hill-hcs.json` | 51 | 19 KB | `russian-hill`, `pacific-heights`, `nob-hill` +5 |
 | `russian-hill-macondray-lane-district.json` | 8 | 3 KB | `russian-hill` |

@@ -361,13 +361,35 @@ public spaces" — generated, like its street list, in both `index.md` and
   place that shares a parcel with another says so; the page never claims one
   park is part of another on the strength of a shared parcel alone.
 - **Golden Gate Park is a neighborhood directory, and its hub is the park.**
+  So is the Presidio, below.
   Its places come from the facility inventory, curated to what a visitor goes
   to — gardens, lakes, museums, windmills — and each names the park as its
   `part_of`. Its one parcel, 1700001, is the address page on Fulton Street.
 - **A slug that collides with a street directory** in the same neighborhood
   takes `-open-space`: South Park is both a street and the park inside it.
-- The Presidio is federal land and not in either Rec & Park dataset; it is
-  not yet covered.
+- **The Presidio is a neighborhood directory too, and its places come from
+  federal listings.** It is federal land and in neither Rec & Park dataset, so
+  its manifest, `research/manifests/presidio-places.json`, names each place's
+  row in the National Park Service's Places API (`nps_id`), its page on
+  presidio.gov (`trust_slug`), or both — see
+  [DATA-SOURCES.md → nps-places](DATA-SOURCES.md#nps-places--national-park-service-places-api).
+  Entries are `kind: "presidio"`, and the same `places` command seeds them.
+  The manifest picks the `type`, but only from that place's own Trust place
+  types or NPS tags, and the seeder refuses any other word. Left out: tour
+  stops and wayside panels, businesses and tenants, trails, and anything whose
+  point falls outside parcel 1300001, which is the Presidio's outline. Its one
+  parcel is the address page on Moraga Avenue.
+  - **The Presidio hub is the park, not the analysis neighborhood.** The
+    city's "Presidio" analysis neighborhood also takes in some thirty private
+    lots on its edge, along Pacific Avenue, Lyon Street and 25th Avenue. Their
+    pages stay under Presidio Heights and Seacliff, where the site already
+    files them.
+  - Presidio Wall Playground is on Presidio land but run by Rec & Park; its
+    page is Rec & Park's, filed here.
+  - A Presidio address can be somebody's home: EAS puts hundreds of numbers
+    on 1300001, many of them housing. A place page gets a street address only
+    where the Trust gives that number for the place and EAS confirms it as
+    one address, not a row of units.
 
 ### Hub pages and their two hand-maintained sections
 

@@ -34,7 +34,7 @@ An affluent residential enclave on the bluffs above the Golden Gate, laid out fr
 
 ## Adjacent neighborhoods
 
-The Presidio adjoins east and Lincoln Park west, with the Golden Gate below
+[The Presidio](../presidio/) adjoins east and Lincoln Park west, with the Golden Gate below
 the bluffs to the north. [The Outer Richmond](../outer-richmond/) begins
 south-east of the enclave, and [the Inner Richmond](../inner-richmond/) lies
 beyond it.

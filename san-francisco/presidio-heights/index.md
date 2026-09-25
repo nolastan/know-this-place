@@ -47,7 +47,7 @@ The city's Presidio Heights analysis neighborhood, on the ridge between the Pres
 
 ## Adjacent neighborhoods
 
-The Presidio is the northern boundary. [Pacific
+[The Presidio](../presidio/) is the northern boundary. [Pacific
 Heights](../pacific-heights/) continues east from Presidio Avenue, [Lone
 Mountain / USF](../lone-mountain/) lies south-east, and [the Inner
 Richmond](../inner-richmond/) west and south-west across Arguello Boulevard.

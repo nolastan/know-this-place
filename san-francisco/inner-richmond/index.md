@@ -43,7 +43,7 @@ The city's Inner Richmond analysis neighborhood, between Golden Gate Park and th
 
 ## Adjacent neighborhoods
 
-Golden Gate Park is the southern boundary and the Presidio the northern one.
+Golden Gate Park is the southern boundary and [the Presidio](../presidio/) the northern one.
 [The Outer Richmond](../outer-richmond/) continues west from Park Presidio
 Boulevard, with [Seacliff](../seacliff/) on the bluffs beyond it. [Presidio
 Heights](../presidio-heights/) adjoins north-east and [Lone Mountain /
