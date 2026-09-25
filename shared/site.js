@@ -124,9 +124,13 @@ const cssVar = (name) =>
 
    A static image rather than Mapbox GL JS deliberately — an address page
    loads no third-party script, and an <img> costs one request instead of a
-   map engine. Mapbox bakes its own and OpenStreetMap's attribution into the
-   returned image, so the credit travels with the picture and no page has to
-   carry a second one.
+   map engine. The image is requested without the logo and attribution Mapbox
+   would bake into its bottom corners — the page's chips ride over those edges
+   and would hide them — and the element draws the same credit itself as
+   .map-credit, in the band's top-right corner: the Mapbox wordmark
+   (shared/mapbox-logo.svg, copied from mapbox-gl's own stylesheet) over the
+   © Mapbox, © OpenStreetMap and "Improve this map" links. It goes in with the
+   image, so a page with no picture carries no credit for one.
 
    The basemap follows the reader's color scheme (the same two styles the
    homepage map uses) and re-renders if they switch mid-visit. */
@@ -136,9 +140,8 @@ const cssVar = (name) =>
    sharp on a hidpi screen and correctly proportioned on an ordinary one.
    Zoom 16 keeps the parcel and its immediate block legible while letting the
    band show the surrounding streets. On phones the band is a taller 4:3
-   frame, and cropping the wide image into it would cut off the baked-in
-   attribution, so phones get an image of their own ratio (same breakpoint as
-   the CSS). */
+   frame, and phones get an image of that ratio rather than a crop of the wide
+   one (same breakpoint as the CSS). */
 const MAP_ZOOM = 16;
 const MAP_SIZE = "1280x400@2x";
 const MAP_SIZE_PHONE = "640x480@2x";
@@ -167,7 +170,7 @@ customElements.define(
         cssVar("--warm").replace("#", "") +
         `(${lng},${lat})/${lng},${lat},${MAP_ZOOM},0/` +
         (PHONE.matches ? MAP_SIZE_PHONE : MAP_SIZE) +
-        "?access_token=" +
+        "?attribution=false&logo=false&access_token=" +
         encodeURIComponent(token);
 
       const img = document.createElement("img");
@@ -179,6 +182,17 @@ customElements.define(
       img.alt = "Map showing the location of " + label;
       img.decoding = "async";
       empty.replaceWith(img);
+
+      const credit = document.createElement("div");
+      credit.className = "map-credit";
+      credit.innerHTML =
+        '<a class="map-credit-logo" href="https://www.mapbox.com/" aria-label="Mapbox"></a>' +
+        '<span class="map-credit-text">' +
+        '<a href="https://www.mapbox.com/about/maps/">© Mapbox</a> ' +
+        '<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap</a> ' +
+        '<a href="https://www.mapbox.com/map-feedback/"><strong>Improve this map</strong></a>' +
+        "</span>";
+      this.append(credit);
 
       // --warm resolves to the dark-mode brick on its own, so re-reading it
       // here is all the swap needs.

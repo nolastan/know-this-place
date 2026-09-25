@@ -424,7 +424,7 @@ over parcel identifiers) bottom-right. The facade then sits in the hero's
 media slot and **rides over the band's lower-left edge** — `.media-lift`
 pulls it up and gives it a shadow, so the card reads as pinned to the map
 behind it. Under 720px none of this happens: the map takes a taller 4:3
-frame (with a 4:3 image, so the attribution survives), the `.map-id` chip
+frame (with a 4:3 image, not a crop), the `.map-id` chip
 drops below it — full width inside the gutter, lifted 1.5rem over the map's
 bottom edge — and everything stacks.
 
@@ -472,7 +472,9 @@ behaviour, left alone. The map is a
 fact that isn't already on the page, so nothing is lost when it doesn't load.
 (A `<figcaption>` is optional — use it for a real photo's credit, not to repeat
 facts shown elsewhere like the parcel number. Neither image needs an
-attribution caption: Google and Mapbox each render their own into the picture.)
+attribution caption: Google renders its own into the picture, and `<ktp-map>`
+draws Mapbox's as `.map-credit` in the band's top-right corner, since the
+chips cover the bottom corners where Mapbox would bake it in.)
 
 **Never test or preview the Street View image.** `maps_embed_key` is
 restricted to the production domain, so it fails from localhost, from any
