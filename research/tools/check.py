@@ -246,6 +246,46 @@ def pages_by_apn() -> dict:
     return out
 
 
+def page_file(rel: str) -> Path | None:
+    """The source file of the page at site path `rel`, whichever kind it is.
+
+    An address page is a `data.json`; a place page — a park, or a named place
+    inside one — is a `place.json` (REFERENCE.md → Place pages). A finding about
+    the Beach Chalet resolves to Golden Gate Park's one parcel, and the fact
+    belongs on the Beach Chalet's place page, not on the parcel's.
+    """
+    rel = rel.strip("/")
+    for name in ("data.json", "place.json"):
+        p = ROOT.parent / rel / name
+        if p.exists():
+            return p
+    return None
+
+
+def place_misfit(res: dict, place: Path) -> str | None:
+    """Why a place page can't take a finding resolved to `res['apn']`, or None.
+
+    A place takes a parcel's finding when it covers the parcel — its `parcels`
+    list — or, for a place inside a park (`part_of`), when the park's
+    directory holds the parcel's own page: every place in Golden Gate Park
+    stands on parcel 1700001, whose page is under golden-gate-park/.
+    """
+    try:
+        d = json.loads(place.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return f"{res.get('path')!r} has a place.json that cannot be read"
+    apn = res.get("apn")
+    if apn in (d.get("parcels") or []):
+        return None
+    park = ((d.get("part_of") or {}).get("path") or "").strip("/")
+    parcel_page = (pages_by_apn().get(apn) or "").strip("/")
+    if park and parcel_page.startswith(park + "/"):
+        return None
+    return (f"resolution.path {res.get('path')!r} is a place page, but it does "
+            f"not cover parcel {apn} — neither in its parcels nor as part of a "
+            f"park whose directory holds that parcel's page")
+
+
 def missing_page(res: dict) -> str | None:
     """Why a resolution's path has no page, phrased for the run that has to fix it.
 
@@ -261,6 +301,8 @@ def missing_page(res: dict) -> str | None:
     rel = (res.get("path") or "").strip("/")
     if not rel or (ROOT.parent / rel / "data.json").exists():
         return None
+    if (ROOT.parent / rel / "place.json").exists():
+        return place_misfit(res, ROOT.parent / rel / "place.json")
     elsewhere = pages_by_apn().get(res.get("apn"))
     if elsewhere:
         return (f"no page at resolution.path {res.get('path')!r}, but parcel "
@@ -332,8 +374,11 @@ def check_rules(rel: Path, data: dict) -> None:
             if len(area) >= 2 and not (ROOT.parent / area[0] / area[1]).is_dir():
                 err(str(rel), f"{fid}: resolution.path names {area[0]}/{area[1]}/, "
                               f"which is not a directory this site has")
+            # A place page is not the parcel's page — many places can share
+            # one parcel — so a finding filed on one is out of this rule.
             apn, path = res.get("apn"), res.get("path")
-            if apn and path and pub_status != "declined":
+            is_place = path and (ROOT.parent / path.strip("/") / "place.json").exists()
+            if apn and path and pub_status != "declined" and not is_place:
                 paths_by_apn.setdefault(apn, {}).setdefault(path, str(fid))
         elif status in ("unresolved", "rejected") and not res.get("note") and not res.get("method"):
             err(str(rel), f"{fid}: {status} findings must say why (resolution.note or .method)")
@@ -515,7 +560,8 @@ def report(path: Path) -> None:
         ["git", "log", "--format=%H", "--", str(path)],
         cwd=ROOT.parent, capture_output=True, text=True).stdout.split())
     for page_path, area in pages.items():
-        rel = page_path.strip("/") + "/data.json"
+        found = page_file(page_path)
+        rel = str(found.relative_to(ROOT.parent)) if found else page_path.strip("/") + "/data.json"
         added = subprocess.run(
             ["git", "log", "--diff-filter=A", "--format=%H", "--", rel],
             cwd=ROOT.parent, capture_output=True, text=True).stdout.split()
@@ -748,8 +794,8 @@ def overlap(path: Path) -> None:
         # A finding already declined has had this decision made about it.
         if (finding.get("publish") or {}).get("status") == "declined":
             continue
-        page = repo / res["path"].strip("/") / "data.json"
-        if not page.exists():
+        page = page_file(res["path"])
+        if page is None:
             missing += 1
             continue
         try:
@@ -971,7 +1017,7 @@ def landed(path: Path) -> None:
         rel = (res.get("path") or "").strip("/")
         if not rel:
             continue
-        page = ROOT.parent / rel / "data.json"
+        page = page_file(rel) or ROOT.parent / rel / "data.json"
         why = missing_page(res)
         if why:
             missing.append((finding.get("id", "?"), why))
