@@ -306,6 +306,17 @@ A parcel whose latest roll row is years old has been retired: look for the
 parcel that replaced it before calling the corner empty. Write the lot and year
 into `resolution.method` with `"by_hand": true`.
 
+### A place in a park, not the parcel
+
+A fact about one named place inside a park — the Beach Chalet, the de Young,
+Kezar Stadium — resolves to the park's parcel (Golden Gate Park is all
+1700001), but it goes on that place's page, not the parcel's
+([REFERENCE.md → Place pages](../REFERENCE.md#place-pages)). Keep
+`resolution.apn` as the parcel and set `resolution.path` to the place's
+directory; `check.py` accepts a `place.json` there when the place lists the
+parcel in `parcels`, or is `part_of` a park whose directory holds the parcel's
+page. The parcel page keeps only facts about the land as a whole.
+
 ### The judgement half
 
 1. **Check EAS first.** `sf-eas-addresses` in
