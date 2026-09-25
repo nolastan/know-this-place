@@ -28,7 +28,6 @@ A low-lying district on filled ground along the northern waterfront, largely bui
 - [Lyon Street](lyon-street/) — 1 building, built 1900; 1 in the Presidio of San Francisco Historic District.
 - [Mallorca Way](mallorca-way/) — 1 building, built 1950; 1 in the Marina Corporation Residential Historic District.
 - [Marina Boulevard](marina-boulevard/) — 1 building, built 1938.
-- [Moraga Avenue](moraga-avenue/) — 1 building; 1 in the Presidio of San Francisco Historic District.
 - [North Point Street](north-point-street/) — 3 buildings, built 1926–1928.
 - [Octavia Street](octavia-street/) — 2 buildings, built 1924–1926.
 - [Pierce Street](pierce-street/) — 4 buildings, built 1912–1936; 2 in the Marina Corporation Residential Historic District.
@@ -47,7 +46,6 @@ A low-lying district on filled ground along the northern waterfront, largely bui
 - [Cow Hollow Playground](cow-hollow-playground/) — Mini park, 6,534 sq ft.
 - [Moscone Rec Center](moscone-rec-center/) — Neighborhood park or playground, 12.7 acres.
 - [Palace of Fine Arts](palace-of-fine-arts/) — Civic plaza or square, 19.7 acres.
-- [Presidio Wall Playground](presidio-wall-playground/) — Neighborhood park or playground, 12.4 acres.
 - [Yacht Harbor and Marina Green](yacht-harbor-and-marina-green/) — Regional park, 165.5 acres.
 
 ## Historic districts here
@@ -62,6 +60,6 @@ A low-lying district on filled ground along the northern waterfront, largely bui
 
 ## Adjacent neighborhoods
 
-The bay closes these blocks to the north and the Presidio to the west.
+The bay closes these blocks to the north and [the Presidio](../presidio/) to the west.
 [Pacific Heights](../pacific-heights/) rises south up the slope from Union
 Street, and [Russian Hill](../russian-hill/) is east beyond Van Ness Avenue.
