@@ -423,8 +423,10 @@ rides on it — the `.map-brand` chip top-left, the `.map-id` chip (crumb trail
 over parcel identifiers) bottom-right. The facade then sits in the hero's
 media slot and **rides over the band's lower-left edge** — `.media-lift`
 pulls it up and gives it a shadow, so the card reads as pinned to the map
-behind it. Under 720px none of this happens: the band crops to an ordinary
-16:9 frame and everything stacks.
+behind it. Under 720px none of this happens: the map takes a taller 4:3
+frame (with a 4:3 image, so the attribution survives), the `.map-id` chip
+drops below it — full width inside the gutter, lifted 1.5rem over the map's
+bottom edge — and everything stacks.
 
 Both are `<ktp-*>` wrappers around a `.media` placeholder — always author the
 **placeholder**, never a raw `<img>` or iframe pointing at Google or Mapbox.

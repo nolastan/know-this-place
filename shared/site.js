@@ -135,10 +135,14 @@ const cssVar = (name) =>
    pixels and draws labels and roads at twice the size, so the picture is
    sharp on a hidpi screen and correctly proportioned on an ordinary one.
    Zoom 16 keeps the parcel and its immediate block legible while letting the
-   band show the surrounding streets. On phones the same image is cropped by
-   `object-fit`, so one request serves both layouts. */
+   band show the surrounding streets. On phones the band is a taller 4:3
+   frame, and cropping the wide image into it would cut off the baked-in
+   attribution, so phones get an image of their own ratio (same breakpoint as
+   the CSS). */
 const MAP_ZOOM = 16;
 const MAP_SIZE = "1280x400@2x";
+const MAP_SIZE_PHONE = "640x480@2x";
+const PHONE = matchMedia("(max-width: 720px)");
 
 customElements.define(
   "ktp-map",
@@ -161,7 +165,8 @@ customElements.define(
         (dark.matches ? "dark-v11" : "light-v11") +
         "/static/pin-s+" +
         cssVar("--warm").replace("#", "") +
-        `(${lng},${lat})/${lng},${lat},${MAP_ZOOM},0/${MAP_SIZE}` +
+        `(${lng},${lat})/${lng},${lat},${MAP_ZOOM},0/` +
+        (PHONE.matches ? MAP_SIZE_PHONE : MAP_SIZE) +
         "?access_token=" +
         encodeURIComponent(token);
 
@@ -178,6 +183,7 @@ customElements.define(
       // --warm resolves to the dark-mode brick on its own, so re-reading it
       // here is all the swap needs.
       dark.addEventListener("change", () => (img.src = src()));
+      PHONE.addEventListener("change", () => (img.src = src()));
     }
   },
 );

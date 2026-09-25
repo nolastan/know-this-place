@@ -165,6 +165,20 @@ body {
 }
 .map-id .breadcrumb .crumb-sep { color: var(--rule); }
 .map-id .crumb-meta { margin: 0.375rem 0 0; }
+/* On a phone the 16:5 band is too short to hold the chip, which covered the
+   whole map. The map takes a taller 4:3 frame of its own (site.js asks Mapbox
+   for a matching image, so the attribution is never cropped) and the chip
+   drops into the flow beneath it, full width inside the page gutter, lifted
+   just over the map's bottom edge. */
+@media (max-width: 720px) {
+  .map-shell { aspect-ratio: auto; border-bottom: 0; background: none; }
+  .map-id {
+    position: relative;
+    right: auto; bottom: auto;
+    max-width: none;
+    margin: -1.5rem 1rem 0;
+  }
+}
 
 main { padding-top: 1.5rem; padding-bottom: 3rem; }
 
@@ -583,9 +597,11 @@ ktp-figure { position: relative; }
    margin reset, so the card fills its hero column. */
 .media-lift { position: relative; z-index: 1; max-width: 640px; margin: -4rem 0 0 0.6rem; box-shadow: var(--lift); }
 @media (max-width: 720px) {
-  /* Stacked: the card no longer overlaps, and the band keeps the 16:5 image
-     ratio so the Mapbox attribution and logo stay visible. */
+  /* Stacked: the card no longer overlaps, and the band takes a taller 4:3
+     frame — site.js requests an image of that ratio on phones, so the Mapbox
+     attribution and logo stay visible. */
   .media-lift { margin: 0; }
+  .map-shell ktp-map { height: auto; aspect-ratio: 4 / 3; border-bottom: 1px solid var(--rule); }
 }
 
 /* ============================================================= notes */
