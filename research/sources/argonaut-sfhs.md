@@ -239,3 +239,16 @@
   Bruno, Bell, Birt/Wong and Quock articles land on none)
 - **Coverage:** volumes 29 no. 2, 30 nos. 1–2, 31 nos. 1–2 and 32 no. 1 read in
   full.
+- **Findings:** one file per volume, `findings/argonaut-sfhs/vol-NN-no-N.json` —
+  118 entries, 33 published on 15 pages. They were written retroactively on
+  2026-09-26 under #422, traced from the pages by the article-level source ids
+  the pages cite (`argonaut-vol31-no2-winter2021-montesano` and so on) and from
+  the places the `Verified:` lines above name. **Write the next volume's findings
+  file as you read it.** The pages cite one id per article, not `argonaut-sfhs`;
+  keep doing that, and put the article id in each finding's citation locator.
+- **Verified:** 2026-09-26 (findings rebuilt, #422: every published fact traced
+  to its page, every place the dossier names recorded. One gap cannot be closed
+  from here: the Winter 2018 pass counted 17 places and named only 5, so 12 are
+  missing from `vol-29-no-2.json` until someone has the print volume again. The
+  Winter 2020 pass counts 16 places and names 17 once its two unbuilt portals are
+  one entry; recorded as found.)

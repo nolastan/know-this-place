@@ -13,6 +13,8 @@
 What it checks:
   * every dossier in research/sources/ has a row in research/SOURCES.md, and
     every registered id has a dossier;
+  * every registered source that is `open` or `done` has at least one findings
+    file (#422);
   * every findings file sits under a registered source id and validates against
     research/schema/finding.schema.json;
   * the cross-field rules the schema can't express (a resolved finding needs a
@@ -172,6 +174,28 @@ def check_register(ids: set[str]) -> None:
             err(f"research/sources/{sid}.md", f"first heading should start '# {sid} —'")
         if "**Verified:**" not in text and "**Verified:" not in text:
             err(f"research/sources/{sid}.md", "no Verified: line — every dossier records its last pass")
+    # A source someone has read has a findings file, however small the pass.
+    # Three sources once reached pages with none, and rebuilding their chain of
+    # custody from the pages was a run of its own (#422). `reference` sources
+    # are consulted per address, never mined, and `blocked` ones may have
+    # nothing read yet, so only `open` and `done` are held to it.
+    for sid, status in sorted(register_statuses().items()):
+        if status in ("open", "done") and not any((ROOT / "findings" / sid).glob("*.json")):
+            err("research/SOURCES.md", f"`{sid}` is {status} but has no findings file — "
+                "write one even for a pass read straight off a web page")
+
+
+def register_statuses() -> dict[str, str]:
+    """id -> the register's status column, for the rows that parse."""
+    out: dict[str, str] = {}
+    if not REGISTER.exists():
+        return out
+    for line in REGISTER.read_text(encoding="utf-8").splitlines():
+        m = ROW_ID.match(line.strip())
+        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        if m and len(cells) >= 5:
+            out[m.group(1)] = cells[4].lower()
+    return out
 
 
 # --------------------------------------------------------------------------- #

@@ -573,7 +573,9 @@ Leave all of this true:
 
 - **The findings file** — every entry carries the decision it is owed:
   `resolution` for every entry, `publish` for every resolved one, `coverage`
-  filled in even when nothing was found.
+  filled in even when nothing was found. A source read straight off a web
+  page still gets one: `check.py` fails an `open` or `done` source with no
+  findings file (#422).
 - **The dossier** (`sources/<id>.md`) — the coverage note and the `Verified:`
   line, naming what was read and what wasn't, **and what the run learned.** A
   run that doesn't update its dossier has thrown away most of its value.
