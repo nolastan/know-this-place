@@ -15,18 +15,27 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
 
 - **A source read live off the web can still end up with zero findings files,
   and that's a gap, not a valid skip.** `argonaut-sfhs`, `celebrity-residence-guides`
-  and `spur-popos-guide` all have resolved, published facts on real pages — their
-  dossiers narrate exactly which places became which pages — but none of the
-  three has a `research/findings/<id>/` directory at all. Step 1 ("get the
-  material readable") may skip the corpus for a source read live, but step 2
-  ("read it — findings out") has no such exemption, and skipping it quietly
-  breaks the chain of custody: nothing records which passage justified which
-  fact, `check.py --stats` can't count the source's yield, and a future run has
-  no record of what was already checked and declined. *Write the findings file
-  even for a three-fact pass read straight off a web page — the schema doesn't
-  get lighter just because the source is small.* Reconstructing these three
-  retroactively is its own bounded run, not part of whatever picked up this
-  lesson.
+  and `spur-popos-guide` all reached pages with no `research/findings/<id>/`
+  directory, so nothing recorded which passage justified which fact and
+  `check.py --stats` could not count them. Rebuilding them from the pages was
+  a run of its own (#422), and `check.py` now fails an `open` or `done` source
+  with no findings file. *Write the findings file even for a three-fact pass
+  read straight off a web page.* How the rebuild went, for the next one: trace
+  every page fact by the source id it cites (pages cite an article-level id
+  like `argonaut-vol31-no2-winter2021-montesano` or a local one like `res-spur`,
+  not the register id, so grep for both), then take every place the dossier's
+  `Verified:` lines name as checked; where a dossier counted places it never
+  named, say so in `coverage.remaining` rather than inventing them.
+- **Rebuilding the chain of custody audits the citations, so re-read the
+  source.** Re-reading the SPUR guide to rebuild its findings showed that one of
+  the two page fields citing it, the 101 California plaza's designer credit,
+  isn't in the guide at all: the credit names a renovation the guide predates,
+  and the page already cited the firm's own project page. The same pass turned
+  up two public spaces the city's current inventory no longer lists, and a
+  celebrity-guide address whose missing page had no recorded reason (it is a
+  condominium unit). *Reconstruct from the source, not from the dossier's
+  prose alone: the prose says what the last pass meant to publish, and only the
+  source says whether it supports what shipped.*
 
 - **A book-length source is small enough to scan programmatically for every
   numbered address in one pass, instead of sampling sections by title.**
@@ -751,8 +760,11 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   are *on disk*. The next run found it only by reading a closed PR's comment.
   *A blocked run's findings file is the expensive half of the work. Merge it,
   even with every entry `unresolved` — a stranded branch is indistinguishable
-  from work nobody has started.* And check `data.sfgov.org` answers before
-  planning a run; one `curl` decides whether the run can finish.
+  from work nobody has started.* And check DataSF answers before planning a
+  run; one `curl` decides whether the run can finish. Query `data.sf.gov`:
+  the old `data.sfgov.org` host still redirects a bare request but answers 403
+  to anything carrying `$where` or `$select`, which looks exactly like a
+  blocked network.
 - **The renumbering guard is a refusal, not a verdict, and the assessor usually
   settles it.** For a modern survey of old buildings the guard fires on the
   whole pre-1910 stock — 47 of the South of Market statement's findings — because

@@ -60,3 +60,22 @@
   EAS. Every address it names now has its claim on the page, except the two
   where the guide's claim is present-tense occupancy and the omission is
   recorded in `unknowns` instead.)
+- **Findings:** `findings/celebrity-residence-guides/sftourismtips.json`, written
+  retroactively under #422. The guide's byline now reads "Updated: March 10,
+  2025"; the page is fetched with a browser-like User-Agent and its text is
+  saved beside it in the corpus directory.
+- **1235 Masonic is the one address that "doesn't resolve", and the reason is
+  the condominium rule, not EAS.** The guide says "Masonic Street"; EAS has 1235
+  MASONIC AVE in Haight Ashbury, matching the guide's "in The Haight", but on
+  parcel 1244004, which is retired. The building is now three condominium
+  parcels, 1244042–1244044, one per number of 1233–1237, so it gets no page
+  (#228). Nothing recorded that until the rebuild.
+- **The guide's number is not always the page's.** 2047 Taylor and 288 Precita
+  are on pages filed under 2043 Taylor and 286 Precita, the lowest EAS number on
+  each parcel; 131 24th Avenue is carried on the page for 129.
+- **Two sidewalk plaques are not buildings.** The guide gives 4550 and 5099
+  Mission Street for Jerry Garcia plaques set in the sidewalk; both resolve and
+  both are declined as facts about the pavement.
+- **Verified:** 2026-09-26 (re-fetched and re-read whole for #422: unchanged in
+  substance. 28 numbered addresses, 26 claims on 24 pages, 2 current-resident
+  claims recorded only as omissions, 1235 Masonic a condominium unit.)
