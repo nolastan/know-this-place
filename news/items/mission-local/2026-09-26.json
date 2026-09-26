@@ -1,0 +1,78 @@
+{
+  "source_id": "mission-local",
+  "batch": "2026-09-26",
+  "read_on": "2026-09-26",
+  "coverage": {
+    "unit": "articles",
+    "examined": 4,
+    "mentions": 2,
+    "remaining": "none",
+    "note": "The Meta-moderation piece on leather bars and the SoMa stabbing story name no street address; the stabbing is a crime story about people in any case."
+  },
+  "findings": [
+    {
+      "id": "2026-09-26-ml-0001",
+      "date": "2026-09-25",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "151 Powell Street",
+      "street_number": "151",
+      "street_name": "POWELL",
+      "street_type": "ST",
+      "description": "TIAT, an art gallery, now occupies a former JINS eyewear storefront at 151 Powell Street in Union Square, taken on through the SF New Deal's Vacant to Vibrant program. The high-ceilinged space, with the small back rooms that once held optometry appointments, now hosts light-and-shadow installations. The article does not say when the lease expires or what happens after.",
+      "extra": {
+        "tenant": "TIAT",
+        "previous_tenant": "JINS (eyewear)",
+        "program": "SF New Deal's Vacant to Vibrant"
+      },
+      "citation": {
+        "label": "Mission Local, “‘A very Chinese time of life’ for tech and art in Union Square,” 25 September 2026",
+        "url": "https://missionlocal.org/2026/09/a-very-chinese-time-of-life-for-tech-and-art-in-union-square/"
+      },
+      "raw": {
+        "text": "a former JINS eyewear store ... high ceilings, white brick walls and small rooms in the back, that used to hold optometry appointments and now host pieces where artists play with shadow and light"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0326002",
+        "path": "/san-francisco/nob-hill/powell-street/151/",
+        "eas_address": "151 POWELL ST",
+        "method": "EAS exact match on 151 POWELL ST → parcel 0326002; sf-parcels has blklot 0326002 active, 151–161 POWELL; the 2025 roll records it as commercial hotel, built 1909. EAS puts 151, 153, 155, 157, 159, 161 POWELL ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 151.",
+        "checked_on": "2026-09-26"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Entry added to the existing page at /san-francisco/nob-hill/powell-street/151/."
+      }
+    },
+    {
+      "id": "2026-09-26-ml-0002",
+      "date": "2026-09-25",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "850 La Playa Street",
+      "street_number": "850",
+      "street_name": "LA PLAYA",
+      "street_type": "",
+      "description": "A town hall of about 60 Richmond District neighbors opposed the eight-story, 562-unit Safeway redevelopment at 850 La Playa Street, objecting to the state streamlining laws that bypass discretionary review. The project's own facts — 562 units, 113 affordable, 85 feet, Align Real Estate for owner Albertsons, Steinberg Hart as architect — are already on this page from the formal application (sfyimby, 18 May 2026). This story adds neighborhood reaction, not a new building fact.",
+      "extra": {},
+      "citation": {
+        "label": "Mission Local, “At Richmond District town hall on Safeway housing project, neighbors see an assault on democracy,” 25 September 2026",
+        "url": "https://missionlocal.org/2026/09/richmond-town-hall-safeway/"
+      },
+      "raw": {
+        "text": "an eight-story, 562-unit housing development planned for the Safeway site at 850 La Playa Street"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "rejected",
+        "note": "declined — no parcel sought"
+      },
+      "publish": {
+        "status": "declined",
+        "note": "One event, one entry. /san-francisco/outer-richmond/la-playa/850/ already carries this project's own facts from the formal application (news/items/sfyimby/backfill-2026-05.json, backfill-2026-05-0009). This town-hall account is community reaction to the same project and adds nothing to the building record; the named speakers quoted in the piece are not recorded per the privacy rule."
+      }
+    }
+  ]
+}

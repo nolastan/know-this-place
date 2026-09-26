@@ -304,6 +304,7 @@ are listed so their size is visible before anyone opens one.
 | `news-2026-09-24.json` | 2 | 1 KB | `inner-richmond`, `north-beach` |
 | `news-2026-09-25-mission-local.json` | 1 | 1 KB | `noe-valley` |
 | `news-2026-09-25-sf-standard.json` | 1 | 1 KB | `potrero-hill` |
+| `news-2026-09-26.json` | 1 | 1 KB | `presidio-heights` |
 | `news-backfill-2026-07.json` | 7 | 3 KB | `sunset-parkside`, `marina`, `noe-valley` +3 |
 | `north-beach-hcs.json` | 342 | 130 KB | `north-beach`, `chinatown`, `russian-hill` +3 |
 | `oceanside-hcs.json` | 19 | 7 KB | `sunset-parkside` |

@@ -1,0 +1,91 @@
+{
+  "source_id": "hoodline",
+  "batch": "2026-09-26",
+  "read_on": "2026-09-26",
+  "coverage": {
+    "unit": "articles",
+    "examined": 5,
+    "mentions": 2,
+    "remaining": "none",
+    "note": "Three of the five name no usable address: the banked-rent-cap policy story and the 'Wasian' community feature name none at all, and the $35,000 tenant-buyout story shows only a generic Google Street View stock photo captioned 400 McAllister St., unrelated to the actual building, so nothing is extracted from it."
+  },
+  "findings": [
+    {
+      "id": "2026-09-26-hl-0001",
+      "date": "2026-09",
+      "date_precision": "month",
+      "kind": "sale",
+      "address_as_written": "3460 Clay Street",
+      "street_number": "3460",
+      "street_name": "CLAY",
+      "street_type": "ST",
+      "description": "A six-bedroom Edwardian at 3460 Clay Street in Presidio Heights, built around 1900 and roughly 5,230 square feet, sold in September 2026 for $14.7 million against an $11 million asking price — about $2,811 a square foot. The house last sold in 2019 for $9.1 million. The article's lede photo, captioned 400 McAllister St., is an unrelated stock image and is not evidence about this building.",
+      "extra": {
+        "sale_price_usd": 14700000,
+        "asking_price_usd": 11000000,
+        "prior_sale": "2019, $9,100,000",
+        "bedrooms": 6,
+        "style": "Edwardian",
+        "approx_completed": 1900,
+        "sqft": 5230
+      },
+      "citation": {
+        "label": "Hoodline, “Presidio Heights Home Sells for $14.7M, Nearly $4M Over Asking Price,” 25 September 2026",
+        "url": "https://hoodline.com/2026/09/presidio-heights-home-sells-for-14-7m-nearly-4m-over-asking-price/"
+      },
+      "raw": {
+        "text": "A six-bedroom Edwardian ... sold for $14.7 million, nearly $4 million over its $11 million asking price"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0996012",
+        "path": "/san-francisco/presidio-heights/clay-street/3460/",
+        "eas_address": "3460 CLAY ST",
+        "method": "EAS exact match on 3460 CLAY ST → parcel 0996012; sf-parcels has blklot 0996012 active, 3460–3460 CLAY; the 2025 roll records it as single family residential, built 1900.",
+        "checked_on": "2026-09-26",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "No page existed; seeded from research/manifests/news-2026-09-26.json, apn 0996012. Published to san-francisco/presidio-heights/clay-street/3460/."
+      }
+    },
+    {
+      "id": "2026-09-26-hl-0002",
+      "date": "2026-09-25",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "32 Clement St.",
+      "street_number": "32",
+      "street_name": "CLEMENT",
+      "street_type": "ST",
+      "description": "Hoodline's account of the same Planning Commission approval of an 11th Therapy Stores location at 32 Clement Street already on this page from Mission Local, two days earlier.",
+      "extra": {
+        "tenant": "Therapy Stores",
+        "vacant_years": 2,
+        "dispute": "formula retail law; merchants association opposition"
+      },
+      "citation": {
+        "label": "Hoodline, “Clement Street Splits Over 11th Therapy Stores Outlet Approved By SF Planners,” 25 September 2026",
+        "url": "https://hoodline.com/2026/09/clement-street-splits-over-11th-therapy-stores-outlet-approved-by-sf-planners/"
+      },
+      "raw": {
+        "text": "capping months of feuding between the Inner Richmond corridor's merchants association and a homegrown retailer ... The vote clears Therapy Stores' [11th location]"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1432020",
+        "path": "/san-francisco/inner-richmond/clement-street/32/",
+        "eas_address": "32 CLEMENT ST",
+        "method": "EAS exact match on 32 CLEMENT ST → parcel 1432020; sf-parcels has blklot 1432020 active, 32–34 CLEMENT; the 2025 roll records it as multi-family residential, built 1904. EAS puts 32, 34 CLEMENT ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 32.",
+        "checked_on": "2026-09-26"
+      },
+      "publish": {
+        "status": "declined",
+        "note": "One event, one entry. /san-francisco/inner-richmond/clement-street/32/ already carries this Planning Commission approval from Mission Local, dated 2026-09-24 (“Despite angry merchants, S.F. approves Therapy store on Clement St.”) — the same vote this account reports a day later. Nothing here is new."
+      }
+    }
+  ]
+}
