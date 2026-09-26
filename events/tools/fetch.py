@@ -81,6 +81,19 @@ def clean_location(s: str) -> str:
     return s.lstrip("-–— ").strip()
 
 
+# A trailing date on a title — Illuminate's "Midweek Melodies | September 30"
+# — repeats what the listing already shows beside it, and splits one series
+# into as many names as it has dates.
+TITLE_DATE = re.compile(
+    r"\s+[|–—-]\s+(?:(?:Mon|Tues?|Wed(?:nes)?|Thu(?:rs)?|Fri|Sat(?:ur)?|Sun)"
+    r"[a-z]*,?\s+)?(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?"
+    r"\s+\d{1,2}(?:st|nd|rd|th)?(?:,?\s+\d{4})?\s*$", re.I)
+
+
+def clean_title(title: str) -> str:
+    return TITLE_DATE.sub("", title).strip() or title
+
+
 def venue_label(location: str) -> str:
     """What to call a venue the register doesn't know. RecPark writes
     '<Venue> - <address>  San Francisco CA 94122'; the venue half is the name
@@ -402,6 +415,7 @@ def resolve(events: list, today: date) -> tuple:
     unlocated, kept = {}, []
 
     for ev in events:
+        ev["title"] = clean_title(ev["title"])
         start = datetime.fromisoformat(ev["start"])
         if start.date() > horizon or (ev.get("end")
                 and datetime.fromisoformat(ev["end"]) < datetime.now(PACIFIC)):
@@ -509,6 +523,7 @@ def main() -> int:
         # name the slice carries and follow the register's current path.
         venues = load_venues()
         for ev in kept:
+            ev["title"] = clean_title(ev["title"])
             venue = match_venue(venues, ev.get("venue") or "")
             if venue:
                 ev["venue"] = venue["name"]

@@ -70,7 +70,9 @@ rather than branching fresh — the workflow does the same.
   WordPress post, so `fetch.py` reads the REST API (`links` in
   `sources.json`) and matches on start time and title; slugs can't be
   guessed, since reused names get `-2`, `-3`. Only an event the API doesn't
-  return falls back to the public events page. Its `LOCATION` is a bare
+  return falls back to the public events page. Its titles end in the date
+  (`| September 26`); `clean_title` strips it, so a series reads as one
+  name. Its `LOCATION` is a bare
   street address, so `venues.json` does the naming.
 - **SF Rec & Park** — one iCalendar feed per calendar ID. `LOCATION` reads
   `"<Venue> - <address>  San Francisco CA 94122"`, occasionally wrapped in

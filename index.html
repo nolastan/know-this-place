@@ -584,15 +584,27 @@ const newsCard = ({ t, h, o }) => {
 };
 
 /* The event hovercard: the listing's own title, then when and where, then
-   the calendar that published it. */
-const eventCard = ({ t, tm, v, s }) => {
+   the calendar that published it. The day is worked out here, off "d", in
+   San Francisco's time zone — like the six-day window, so a build a day old
+   never calls yesterday "Today". */
+const SF_TZ = "America/Los_Angeles";
+const sfDate = (t) => new Intl.DateTimeFormat("en-CA", { timeZone: SF_TZ }).format(t);
+const DAY_FMT = new Intl.DateTimeFormat("en-US",
+  { weekday: "short", month: "short", day: "numeric", timeZone: SF_TZ });
+const eventDay = (iso) => {
+  const day = iso.slice(0, 10);
+  if (day === sfDate(Date.now())) return "Today";
+  if (day === sfDate(Date.now() + 86400e3)) return "Tomorrow";
+  return DAY_FMT.format(new Date(iso));
+};
+const eventCard = ({ t, d, tm, v, s }) => {
   const card = document.createElement("div");
   card.className = "map-eventcard";
   const title = document.createElement("strong");
   title.textContent = t;
   const when = document.createElement("span");
   when.className = "map-event-when";
-  when.textContent = [tm, v].filter(Boolean).join(" · ");
+  when.textContent = [`${eventDay(d)}, ${tm}`, v].filter(Boolean).join(" · ");
   const source = document.createElement("small");
   source.textContent = s;
   card.append(title, when, source);
