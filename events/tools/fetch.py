@@ -94,6 +94,16 @@ def clean_title(title: str) -> str:
     return TITLE_DATE.sub("", title).strip() or title
 
 
+def drop_venue_prefix(title: str, venue: str) -> str:
+    """'Union Square Daily Programming: Friday Chess Lessons' at Union Square
+    → 'Friday Chess Lessons'. RecPark leads with the venue, which every
+    surface already shows beside the title; a prefix that doesn't name the
+    venue ('Partner Spotlight: …') is part of the title and stays."""
+    head, sep, rest = title.partition(": ")
+    v = norm(venue or "")
+    return rest.strip() if sep and rest.strip() and v and v in norm(head) else title
+
+
 def venue_label(location: str) -> str:
     """What to call a venue the register doesn't know. RecPark writes
     '<Venue> - <address>  San Francisco CA 94122'; the venue half is the name
@@ -431,6 +441,7 @@ def resolve(events: list, today: date) -> tuple:
                 ev["coords"] = (venue["lat"], venue["lng"])
         else:
             ev["venue"] = venue_label(ev.get("location") or "")
+        ev["title"] = drop_venue_prefix(ev["title"], ev["venue"])
         if ev.get("coords") and in_sf(*ev["coords"]):
             ev["lat"], ev["lng"] = ev["coords"]
         elif ev.get("location"):
@@ -531,6 +542,7 @@ def main() -> int:
                     ev["path"] = venue["path"]
                 else:
                     ev.pop("path", None)
+            ev["title"] = drop_venue_prefix(ev["title"], ev.get("venue"))
         if kept:
             events += kept
             print(f"  (kept {len(kept)} events from sources not read this run)")
@@ -539,10 +551,10 @@ def main() -> int:
     if args.command == "venues":
         seen = sorted({(ev.get("venue") or "(none)") for ev in events})
         print("\nvenues seen:")
+        # A venue needs a page for a dot (the dot opens it) and for a panel.
         for v in seen:
-            flag = "unlocated " if not any(
-                e.get("lat") or e.get("path") for e in events
-                if e.get("venue") == v) else ""
+            flag = "no page " if not any(
+                e.get("path") for e in events if e.get("venue") == v) else ""
             print(f"  {flag}{v}")
         return 0
 

@@ -29,7 +29,7 @@ order:
 
 ```bash
 python3 events/tools/fetch.py            # every open source → events/events.json
-python3 events/tools/fetch.py venues     # every venue seen; "unlocated" = no dot
+python3 events/tools/fetch.py venues     # every venue seen; "no page" = no dot, no panel
 python3 events/tools/check.py --stats    # the registers and the data file
 ```
 
@@ -44,8 +44,8 @@ Then the judgement pass, in this order:
    or place in a park, then `data.json` for a building — and set `path` only
    under the rule in events/AGENTS.md. Add the entry to `events/venues.json`
    with `lat`/`lng` from the place page, EAS or Nominatim, and a `note` saying
-   which. A stairway, an intersection or a block party gets coordinates and
-   no `path`; leave one with no trustworthy coordinate listed-but-dotless.
+   which. A stairway, an intersection or a block party has no page, so it
+   gets no `path` and no map dot — it lists on `/events` only.
 2. **Re-run `fetch.py`** so the new entries resolve (it re-matches events
    carried over from a failed calendar too), then `check.py`.
 3. **Screen titles.** A title that names a private individual — a memorial,

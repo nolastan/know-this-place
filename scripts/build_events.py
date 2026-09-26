@@ -4,7 +4,8 @@
 Two derived artifacts, both gitignored like every other build output:
 
     shared/events.geojson   one Point feature per upcoming event that has a
-                            coordinate — the homepage map's event layer. The
+                            coordinate and a page — the homepage map's event
+                            layer, whose dots open that page. The
                             six-day window is applied in the browser, off the
                             "d" property, so a stale build fades rather than
                             being wrong.
@@ -98,11 +99,7 @@ def load() -> tuple:
 
 
 def anchor(ev: dict) -> str:
-    """The event's row id on /events — 'sfrecpark:10515' → 'e-sfrecpark-10515'.
-
-    A map dot at a venue with no page lands on the listing's own row, so the
-    same slug is the row's id below and the feature's "e" property above.
-    """
+    """The event's row id on /events — 'sfrecpark:10515' → 'e-sfrecpark-10515'."""
     return "e-" + re.sub(r"[^a-z0-9]+", "-",
                          str(ev.get("id") or "").lower()).strip("-")
 
@@ -112,8 +109,11 @@ def anchor(ev: dict) -> str:
 def build_geojson(events: list, names: dict) -> int:
     features = []
     for ev in events:
+        # A dot opens the venue's page, so an event with no page gets no dot —
+        # it still lists on /events, which links the calendar that posted it.
         lat, lng = ev.get("lat"), ev.get("lng")
-        if not isinstance(lat, (int, float)) or not isinstance(lng, (int, float)):
+        if (not ev.get("path") or not isinstance(lat, (int, float))
+                or not isinstance(lng, (int, float))):
             continue
         props = {
             "t": ev["title"],
@@ -121,10 +121,8 @@ def build_geojson(events: list, names: dict) -> int:
             "d": ev["start"],
             "tm": time_range(ev),
             "s": names.get(ev.get("source"), ev.get("source") or ""),
-            "e": anchor(ev),
+            "p": ev["path"],
         }
-        if ev.get("path"):
-            props["p"] = ev["path"]
         features.append({
             "type": "Feature",
             "geometry": {"type": "Point",

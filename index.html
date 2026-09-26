@@ -10,7 +10,7 @@
   <link rel="icon" href="/shared/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/shared/site.webmanifest">
-  <link rel="stylesheet" href="/shared/site.css?v=29aab528">
+  <link rel="stylesheet" href="/shared/site.css?v=fc5562d8">
   <script type="module" src="/shared/site.js"></script>
   <!-- The homepage is a map, and the only page on the site that carries its
        own script, style and third-party dependency. Content pages stay static
@@ -500,9 +500,9 @@ const pulseLayers = (prefix, color) => [
    addresses.geojson, written by scripts/build_events.py out of the module's
    committed events.json. Unlike the news layer this one can't read its data
    off the page (there is no events grid), so the file carries the listing:
-   the title, the venue, the when, the calendar's name, and the destination —
-   "p" when the venue is a parcel the site documents, "e" (its row's anchor
-   on /events) always. The six-day window is applied here, off "d", so a
+   the title, the venue, the when, the calendar's name, and "p", the page of
+   the park, plaza or building it is at. An event with no page has no dot —
+   build_events.py leaves it out, and it lists on /events only. The six-day window is applied here, off "d", so a
    stale build fades rather than being wrong. One dot per spot: a venue with
    five events this week is still one place, so only the soonest listing at
    each coordinate draws — the rest still list on /events. */
@@ -789,13 +789,10 @@ async function init() {
     map.getCanvas().style.cursor = "";
     eventPopup.remove();
   });
-  /* An event at a documented parcel opens the building's page; one in a park
-     or a plaza with no page lands on its own row on /events, where the link
-     back to the calendar that announced it lives. A dot never leaves the
-     site to reach its listing. */
+  /* A dot opens the page of the place the event is at — never the calendar's
+     own listing, which the page's panel links. */
   map.on("click", "events-dot", (e) => {
-    const p = e.features[0].properties;
-    location.href = p.p || ("/events/" + (p.e ? "#" + p.e : ""));
+    location.href = e.features[0].properties.p;
   });
 }
 

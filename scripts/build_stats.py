@@ -223,7 +223,7 @@ def count_events():
     sources = (read_json(ROOT / "events" / "sources.json") or {}).get("sources", [])
     return {
         "events": len(events),
-        "with_coords": sum(1 for e in events if e.get("lat")),
+        "with_coords": sum(1 for e in events if e.get("lat") and e.get("path")),
         "on_page": sum(1 for e in events if e.get("path")),
         "sources": len(sources),
         "sources_open": sum(1 for s in sources if s.get("access") == "open"),

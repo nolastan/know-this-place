@@ -58,7 +58,7 @@ venues
 
 ```bash
 python3 events/tools/fetch.py            # fetch every source, write events.json
-python3 events/tools/fetch.py venues     # the venues seen, and which lack a dot
+python3 events/tools/fetch.py venues     # the venues seen, and which have no page
 python3 events/tools/check.py --stats    # the registers and the data file
 python3 scripts/build_events.py          # /events + shared/events.geojson
 python3 scripts/build_site.py            # the whole site, panels included
@@ -104,7 +104,8 @@ calendar whose parser has stopped matching.
     borrow.
   - A venue in the public right of way — a stairway, an intersection, a
     block party — has no page and never gets one. That is not a failure: it
-    still gets a dot and a listing, and its dot opens its row on `/events`.
+    still lists on `/events`. It gets no map dot, because a dot opens the
+    venue's page and there is none to open.
   An event never seeds a page. When a venue clearly deserves one that doesn't
   exist, that is a separate concern for the seeder or the place manifest.
 - **`events.json`** is the data file `fetch.py` writes — the module's one

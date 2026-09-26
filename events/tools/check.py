@@ -172,11 +172,11 @@ def main():
         by_source = {}
         for e in events:
             by_source[e["source"]] = by_source.get(e["source"], 0) + 1
-        mapped = sum(1 for e in events if e.get("lat"))
+        mapped = sum(1 for e in events if e.get("lat") and e.get("path"))
         paged = sum(1 for e in events if e.get("path"))
         print(f"{len(events)} events: " +
               ", ".join(f"{k} {v}" for k, v in sorted(by_source.items())))
-        print(f"{mapped} with coordinates, {paged} on a page")
+        print(f"{mapped} with a map dot, {paged} on a page")
 
     if errors:
         print(f"\n{len(errors)} problem(s):")
