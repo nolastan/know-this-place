@@ -586,11 +586,11 @@ const newsCard = ({ t, h, o }) => {
 /* The event hovercard: the listing's own title, then when and where, then
    the calendar that published it. The day is worked out here, off "d", in
    San Francisco's time zone — like the six-day window, so a build a day old
-   never calls yesterday "Today". */
+   never calls yesterday "Today". The window never reaches the same weekday
+   twice, so a bare weekday ("Tuesday") is never ambiguous and needs no date. */
 const SF_TZ = "America/Los_Angeles";
 const sfDate = (t) => new Intl.DateTimeFormat("en-CA", { timeZone: SF_TZ }).format(t);
-const DAY_FMT = new Intl.DateTimeFormat("en-US",
-  { weekday: "short", month: "short", day: "numeric", timeZone: SF_TZ });
+const DAY_FMT = new Intl.DateTimeFormat("en-US", { weekday: "long", timeZone: SF_TZ });
 const eventDay = (iso) => {
   const day = iso.slice(0, 10);
   if (day === sfDate(Date.now())) return "Today";
