@@ -36,6 +36,19 @@
       display: flex; flex-direction: column; align-items: center;
       justify-content: center; gap: 0.4rem; text-align: center; padding: 1.5rem;
     }
+    .map-loading {
+      animation: pulse-text 1.5s ease-in-out infinite;
+    }
+    @keyframes pulse-text {
+      0%, 100% { opacity: 0.6; }
+      50% { opacity: 1; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .map-loading {
+        animation: none;
+        opacity: 1;
+      }
+    }
 
     /* Overlays. Both wear the popup's chip treatment so they stay legible on
        either basemap. */
@@ -163,9 +176,8 @@
   <div id="map" role="region" aria-label="Map of documented addresses in San Francisco, with the addresses in the news and upcoming events marked"></div>
   <div class="media-empty">
     <span class="ic ic-pin ic-lg"></span>
-    <span>8,473 documented addresses in San Francisco</span>
-    <small>The map appears here once a Mapbox token is configured. Every
-    address is reachable through the links below.</small>
+    <span class="map-loading">Loading map...</span>
+    <small>Every address is reachable through the links below.</small>
   </div>
   <p class="map-brand">Know This Place</p>
   <a class="map-cue" href="#news">In the news<span aria-hidden="true">↓</span></a>
