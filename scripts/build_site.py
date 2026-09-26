@@ -11,7 +11,8 @@ It is the seven builders in the one order that works, and the order is the
 whole reason it exists:
 
     districts → hubs → build_link_index → render → build_map_index
-              → build_sitemap → build_corpus_index → build_stats
+              → build_events → build_sitemap → build_corpus_index
+              → build_stats
 
 Every one of those edges is load-bearing, and none of them error when broken —
 the site just comes out a step stale. `districts` runs first because a page or
@@ -81,6 +82,7 @@ def build() -> None:
     run("address pages", seed, "render", "san-francisco")
 
     run("map index", str(SCRIPTS / "build_map_index.py"))
+    run("events", str(SCRIPTS / "build_events.py"))
     run("sitemap", str(SCRIPTS / "build_sitemap.py"))
     run("corpus index", str(SCRIPTS / "build_corpus_index.py"))
     run("stats dashboard", str(SCRIPTS / "build_stats.py"))

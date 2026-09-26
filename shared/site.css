@@ -27,6 +27,11 @@
   --cool: #1568a6;        /* data slot 2 — land */
   --warm-soft: #efdcd3;   /* warm track / tint */
   --cool-soft: #d8e5f2;   /* cool tint */
+  /* data slot 3 — upcoming events (#414). Violet rather than a third earth
+     tone: it stays separable from both brick and blue for readers who can't
+     see hue, which a green or amber would not. Used on the homepage map only;
+     nothing else wears it yet. */
+  --event: #6a3d9a;
 
   /* status */
   --ok: #2f7d32;    --ok-bg: #e4efe2;
@@ -54,6 +59,7 @@
     --cool: #3d8fc9;
     --warm-soft: #3a2a23;
     --cool-soft: #1e2c3a;
+    --event: #a98ae0;
     --ok: #5cba63;    --ok-bg: #1e2a1d;
     --warn: #d0a24a;  --warn-bg: #2a2416;
     /* a black shadow disappears on a dark ground — deepen it to keep the
@@ -651,6 +657,30 @@ ktp-figure { position: relative; }
    opportunity on its own, so the space and the icon share one nowrap box. */
 .news-now-ext { white-space: nowrap; }
 .news-now-outlet .ic { font-size: 0.85em; }
+
+/* Upcoming events — the aside panel on an address page, and the day-grouped
+   rows on /events. Both wear the same grammar: the listing's own title as the
+   link back, the when in tabular figures, and provenance muted beneath — a
+   calendar listing reads like a spec row, not like a card. */
+.panel-events .event-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.75rem; }
+.panel-events .event { font-family: var(--sans); font-size: 0.88rem; line-height: 1.4; }
+.panel-events .event-title { font-weight: 600; }
+.panel-events .event-meta,
+.panel-events .event-sub { display: block; margin-top: 0.1rem; font-size: 0.8rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.panel-events .event-read { margin: 0.8rem 0 0; font-family: var(--sans); font-size: 0.75rem; color: var(--muted); }
+
+/* /events. One row per listing, time first because that is what a reader
+   scans; the source's name trails, smaller, the way an outlet's does on a
+   news card. On a narrow screen the row wraps rather than truncating. */
+.event-rows { list-style: none; margin: 0 0 1.75rem; padding: 0; }
+.event-row { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.15rem 1rem; padding: 0.55rem 0; border-bottom: 1px solid var(--rule); }
+.event-row .event-when { flex: 0 0 7rem; font-family: var(--sans); font-size: 0.85rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.event-row .event-title { font-weight: 600; }
+.event-row .event-where { font-family: var(--sans); font-size: 0.85rem; }
+.event-row .event-src { margin-left: auto; font-family: var(--sans); font-size: 0.78rem; color: var(--muted); }
+/* A link to one listing's row (#e-<source>-<id>) marks it among the day's
+   other rows. */
+.event-row:target { background: var(--note-bg); box-shadow: 0 0 0 0.35rem var(--note-bg); scroll-margin-top: 1rem; }
 
 /* ============================================================= hub lists */
 .place-list { list-style: none; padding: 0; }

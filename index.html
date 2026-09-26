@@ -10,7 +10,7 @@
   <link rel="icon" href="/shared/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/shared/site.webmanifest">
-  <link rel="stylesheet" href="/shared/site.css?v=13e78121">
+  <link rel="stylesheet" href="/shared/site.css?v=fc5562d8">
   <script type="module" src="/shared/site.js"></script>
   <!-- The homepage is a map, and the only page on the site that carries its
        own script, style and third-party dependency. Content pages stay static
@@ -86,6 +86,16 @@
     }
     .map-newscard small { display: block; margin-top: 0.2rem; color: var(--muted); }
 
+    /* The event hovercard wears the same grammar — the listing's own title,
+       then the when and the where, then who is listing it. */
+    .map-eventpop .mapboxgl-popup-content { padding: 0.5rem 0.7rem; font-weight: 400; }
+    .map-eventcard strong { font-family: var(--sans); font-weight: 700; }
+    .map-eventcard .map-event-when {
+      display: block; margin-top: 0.25rem;
+      font-family: var(--sans); font-size: 0.85rem;
+    }
+    .map-eventcard small { display: block; margin-top: 0.2rem; color: var(--muted); }
+
     /* The news is the page's subject now, so its heading is the page's <h1>.
        It sits in the ordinary .section-head band at h2's size: the rank is
        structural, for a crawler and a screen reader, and the map above it is
@@ -150,7 +160,7 @@
 <div class="map-shell">
   <!-- #map stays empty: Mapbox wants sole ownership of its container, so the
        fallback is a sibling laid over it and removed once tiles are up. -->
-  <div id="map" role="region" aria-label="Map of documented addresses in San Francisco, with the addresses in the news marked"></div>
+  <div id="map" role="region" aria-label="Map of documented addresses in San Francisco, with the addresses in the news and upcoming events marked"></div>
   <div class="media-empty">
     <span class="ic ic-pin ic-lg"></span>
     <span>8,473 documented addresses in San Francisco</span>
@@ -363,9 +373,10 @@
 /* The homepage map. Every documented address as one dot, click to open its
    page. The dots come from shared/addresses.geojson, built by
    scripts/build_map_index.py from the same data.json files that render the
-   pages themselves. On top of them sits the news layer — the dozen addresses
-   in the grid below, in the other data hue, pulsing, each holding its story in
-   a hovercard.
+   pages themselves. On top of them sit two pulsing layers, each with a
+   hovercard: the news layer — the dozen addresses in the grid below, in the
+   cool data hue — and the events layer, the next six days of public-space
+   events in the violet --event hue, read from shared/events.geojson.
 
    If anything here fails — no token, blocked CDN, no WebGL — the placeholder
    in #map stands and the links below it still reach every page. */
@@ -445,7 +456,8 @@ const REDUCED_MOTION = matchMedia("(prefers-reduced-motion: reduce)").matches;
    brick of every other address — two hues that are already validated together,
    rather than a new color invented for the map. They are also drawn a size
    larger, because color alone would not find a dozen dots in eight thousand at
-   city zoom. */
+   city zoom. Event dots take the third data hue (--event violet): a color a
+   reader can tell apart from both brick and blue even without hue vision. */
 /* scale may be a number or a data expression; either way it sits inside the
    stops, where Mapbox allows it. */
 const newsRadius = (scale) => ["interpolate", ["linear"], ["zoom"],
@@ -453,26 +465,29 @@ const newsRadius = (scale) => ["interpolate", ["linear"], ["zoom"],
   // interpolate, so ["*", scale, interpolate] is rejected and the layer is lost.
   ...[[10, 2.6], [12, 3.4], [14, 5], [16, 8], [18, 11]].flatMap(([z, r]) => [z, ["*", r, scale]])];
 
-const newsLayers = () => [
+/* One pulsing layer pair per data hue — news and events share the geometry
+   and the animation, and differ only in the token they draw with. `prefix`
+   is both the GeoJSON source name and the layer prefix. */
+const pulseLayers = (prefix, color) => [
   /* The halo. Its radius and opacity are driven frame by frame below; the
      values here are the resting state, which is also what a reader who has
      asked for reduced motion sees — a soft ring that never moves. */
   {
-    id: "news-pulse",
+    id: `${prefix}-pulse`,
     type: "circle",
-    source: "news",
+    source: prefix,
     paint: {
-      "circle-color": cssVar("--cool"),
+      "circle-color": cssVar(color),
       "circle-radius": newsRadius(PULSE_MAX),
       "circle-opacity": REDUCED_MOTION ? 0.14 : 0,
     },
   },
   {
-    id: "news-dot",
+    id: `${prefix}-dot`,
     type: "circle",
-    source: "news",
+    source: prefix,
     paint: {
-      "circle-color": cssVar("--cool"),
+      "circle-color": cssVar(color),
       "circle-radius": newsRadius(1),
       "circle-opacity": 0.95,
       "circle-stroke-color": cssVar("--paper"),
@@ -480,6 +495,35 @@ const newsLayers = () => [
     },
   },
 ];
+
+/* Events come from shared/events.geojson — the build's second file alongside
+   addresses.geojson, written by scripts/build_events.py out of the module's
+   committed events.json. Unlike the news layer this one can't read its data
+   off the page (there is no events grid), so the file carries the listing:
+   the title, the venue, the when, the calendar's name, and "p", the page of
+   the park, plaza or building it is at. An event with no page has no dot —
+   build_events.py leaves it out, and it lists on /events only. The six-day window is applied here, off "d", so a
+   stale build fades rather than being wrong. One dot per spot: a venue with
+   five events this week is still one place, so only the soonest listing at
+   each coordinate draws — the rest still list on /events. */
+const EVENT_DAYS = 6;
+const eventFeatures = (collection) => {
+  const today = new Date(); today.setHours(0, 0, 0, 0);
+  const horizon = today.getTime() + (EVENT_DAYS + 1) * 86400e3;
+  const bySpot = new Map();
+  for (const f of collection.features) {
+    const d = new Date(f.properties.d).getTime();
+    if (d < today.getTime() || d >= horizon) continue;
+    const key = f.geometry.coordinates.join(",");
+    const prev = bySpot.get(key);
+    if (!prev || f.properties.d < prev.properties.d) bySpot.set(key, f);
+  }
+  let i = 0;
+  return [...bySpot.values()].map((f) => ({
+    ...f,
+    properties: { ...f.properties, ph: (i++ * 0.618034) % 1 },
+  }));
+};
 
 /* One ring per dot every two seconds, each dot on its own beat, growing to four
    times the dot and fading as it grows. Mapbox has no animated paint, so the halo is repainted per frame —
@@ -490,15 +534,16 @@ function pulse(map) {
   let running = false, frame = 0;
   const tick = (now) => {
     if (!running) return;
-    if (map.getLayer("news-pulse")) {
+    for (const prefix of ["news", "events"]) {
+      if (!map.getLayer(`${prefix}-pulse`)) continue;
       const t = (now % PULSE_MS) / PULSE_MS;          // 0 → 1, once a cycle
       const k = ["%", ["+", t, ["get", "ph"]], 1];    // this dot's own place in it
-      map.setPaintProperty("news-pulse", "circle-radius",
+      map.setPaintProperty(`${prefix}-pulse`, "circle-radius",
         newsRadius(["+", 1, ["*", PULSE_MAX - 1, k]]));
       // Bright at the dot and fading as it grows, so the ring dissolves at its
       // widest rather than snapping back — but slowly enough that it is still
       // plainly visible halfway out, at city zoom among eight thousand dots.
-      map.setPaintProperty("news-pulse", "circle-opacity",
+      map.setPaintProperty(`${prefix}-pulse`, "circle-opacity",
         ["*", 0.6, ["^", ["-", 1, k], 1.1]]);
     }
     frame = requestAnimationFrame(tick);
@@ -509,7 +554,10 @@ function pulse(map) {
     if (on) frame = requestAnimationFrame(tick);
     else {
       cancelAnimationFrame(frame);
-      if (map.getLayer("news-pulse")) map.setPaintProperty("news-pulse", "circle-opacity", 0);
+      for (const prefix of ["news", "events"]) {
+        if (map.getLayer(`${prefix}-pulse`))
+          map.setPaintProperty(`${prefix}-pulse`, "circle-opacity", 0);
+      }
     }
   };
   let onScreen = true;
@@ -535,6 +583,34 @@ const newsCard = ({ t, h, o }) => {
   return card;
 };
 
+/* The event hovercard: the listing's own title, then when and where, then
+   the calendar that published it. The day is worked out here, off "d", in
+   San Francisco's time zone — like the six-day window, so a build a day old
+   never calls yesterday "Today". The window never reaches the same weekday
+   twice, so a bare weekday ("Tuesday") is never ambiguous and needs no date. */
+const SF_TZ = "America/Los_Angeles";
+const sfDate = (t) => new Intl.DateTimeFormat("en-CA", { timeZone: SF_TZ }).format(t);
+const DAY_FMT = new Intl.DateTimeFormat("en-US", { weekday: "long", timeZone: SF_TZ });
+const eventDay = (iso) => {
+  const day = iso.slice(0, 10);
+  if (day === sfDate(Date.now())) return "Today";
+  if (day === sfDate(Date.now() + 86400e3)) return "Tomorrow";
+  return DAY_FMT.format(new Date(iso));
+};
+const eventCard = ({ t, d, tm, v, s }) => {
+  const card = document.createElement("div");
+  card.className = "map-eventcard";
+  const title = document.createElement("strong");
+  title.textContent = t;
+  const when = document.createElement("span");
+  when.className = "map-event-when";
+  when.textContent = [`${eventDay(d)}, ${tm}`, v].filter(Boolean).join(" · ");
+  const source = document.createElement("small");
+  source.textContent = s;
+  card.append(title, when, source);
+  return card;
+};
+
 /* The index is fetched here rather than handed to Mapbox as a URL so we can
    set the cache policy. "no-cache" revalidates every load and reuses the
    cached body on a 304 — costing one conditional request, not another 107 KB.
@@ -542,7 +618,7 @@ const newsCard = ({ t, h, o }) => {
    map silently lags the site: newly documented addresses are simply missing,
    with nothing to indicate it. site.js reads site-config.json the same way,
    for the same reason. */
-let addresses;
+let addresses, events;
 async function addAddresses(map) {
   addresses ??= await (await fetch("/shared/addresses.geojson", { cache: "no-cache" })).json();
   if (!map.getSource("addresses")) {
@@ -550,17 +626,36 @@ async function addAddresses(map) {
   }
   if (!map.getLayer("addresses")) map.addLayer(dotLayer());
 
-  /* The news goes on last so it sits above the eight thousand. This runs again
-     on every style load — a light/dark switch throws the layers away — which is
-     also how the dots pick up the other scheme's hues. */
+  /* The news goes on last so it sits above the eight thousand, with the
+     events above it — a dot the reader can act on today outranks a story
+     already told. This runs again on every style load — a light/dark switch
+     throws the layers away — which is also how the dots pick up the other
+     scheme's hues. */
   if (!map.getSource("news")) {
     map.addSource("news", {
       type: "geojson",
       data: { type: "FeatureCollection", features: newsFeatures() },
     });
   }
-  for (const layer of newsLayers()) {
+  for (const layer of pulseLayers("news", "--cool")) {
     if (!map.getLayer(layer.id)) map.addLayer(layer);
+  }
+
+  /* A missing or stale events index is not an error worth a broken map over —
+     the dots just don't draw. */
+  try {
+    events ??= await (await fetch("/shared/events.geojson", { cache: "no-cache" })).json();
+  } catch { /* no events layer this load */ }
+  if (events && !map.getSource("events")) {
+    map.addSource("events", {
+      type: "geojson",
+      data: { type: "FeatureCollection", features: eventFeatures(events) },
+    });
+  }
+  if (events) {
+    for (const layer of pulseLayers("events", "--event")) {
+      if (!map.getLayer(layer.id)) map.addLayer(layer);
+    }
   }
 }
 
@@ -630,16 +725,24 @@ async function init() {
     closeButton: false, closeOnClick: false, offset: 12,
     className: "map-newspop", maxWidth: "17rem",
   });
+  const eventPopup = new mapboxgl.Popup({
+    closeButton: false, closeOnClick: false, offset: 12,
+    className: "map-eventpop", maxWidth: "17rem",
+  });
 
   /* A news dot sits on top of the plain dot for the same address, so both
      layers answer a hover there. The news layer wins: it says everything the
-     plain chip does and then the story. */
+     plain chip does and then the story. An event dot sits over both, for the
+     same reason it draws last. */
+  const overEvent = (e) =>
+    map.getLayer("events-dot") &&
+    map.queryRenderedFeatures(e.point, { layers: ["events-dot"] }).length > 0;
   const overNews = (e) =>
-    map.getLayer("news-dot") &&
+    !overEvent(e) && map.getLayer("news-dot") &&
     map.queryRenderedFeatures(e.point, { layers: ["news-dot"] }).length > 0;
 
   map.on("mousemove", "addresses", (e) => {
-    if (overNews(e)) return;
+    if (overNews(e) || overEvent(e)) return;
     const f = e.features[0];
     map.getCanvas().style.cursor = "pointer";
     popup.setLngLat(f.geometry.coordinates)
@@ -651,11 +754,12 @@ async function init() {
     popup.remove();
   });
   map.on("click", "addresses", (e) => {
-    if (overNews(e)) return;   // the news handler below has this one
+    if (overNews(e) || overEvent(e)) return;   // the handlers below have this one
     location.href = e.features[0].properties.p;
   });
 
   map.on("mousemove", "news-dot", (e) => {
+    if (overEvent(e)) return;
     const f = e.features[0];
     map.getCanvas().style.cursor = "pointer";
     popup.remove();
@@ -668,6 +772,26 @@ async function init() {
     newsPopup.remove();
   });
   map.on("click", "news-dot", (e) => {
+    if (overEvent(e)) return;
+    location.href = e.features[0].properties.p;
+  });
+
+  map.on("mousemove", "events-dot", (e) => {
+    const f = e.features[0];
+    map.getCanvas().style.cursor = "pointer";
+    popup.remove();
+    newsPopup.remove();
+    eventPopup.setLngLat(f.geometry.coordinates)
+              .setDOMContent(eventCard(f.properties))
+              .addTo(map);
+  });
+  map.on("mouseleave", "events-dot", () => {
+    map.getCanvas().style.cursor = "";
+    eventPopup.remove();
+  });
+  /* A dot opens the page of the place the event is at — never the calendar's
+     own listing, which the page's panel links. */
+  map.on("click", "events-dot", (e) => {
     location.href = e.features[0].properties.p;
   });
 }

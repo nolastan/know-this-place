@@ -364,6 +364,11 @@ public spaces" — generated, like its street list, in both `index.md` and
   Its places come from the facility inventory, curated to what a visitor goes
   to — gardens, lakes, museums, windmills — and each names the park as its
   `part_of`. Its one parcel, 1700001, is the address page on Fulton Street.
+- **A place is where its events land.** A park or plaza whose venue string
+  `events/venues.json` knows carries an "Upcoming events" panel for the next
+  30 days, and the homepage map's event dots open the place page — see
+  [events/AGENTS.md](events/AGENTS.md). Prefer the place page over the parcel
+  it sits on when pointing a venue at a page.
 - **A slug that collides with a street directory** in the same neighborhood
   takes `-open-space`: South Park is both a street and the park inside it.
 - The Presidio is federal land and not in either Rec & Park dataset; it is
@@ -539,7 +544,7 @@ now has a build in it.
 | `index.html` at the repo root | the homepage, hand-authored |
 | `san-francisco/index.html` | the city index, hand-authored — no generator has ever touched it |
 | `san-francisco/<neighborhood>/index.html` | 42 of them. A human's prose; `hubs` patches the street list into the page rather than writing it |
-| `shared/`, `scripts/`, `research/`, `news/`, `merchants/`, `design/` | the stylesheet, the script, the tools, the modules |
+| `shared/`, `scripts/`, `research/`, `news/`, `merchants/`, `design/`, `events/` | the stylesheet, the script, the tools, the modules |
 | `corpus.jsonl` | derived, but committed on purpose — see below |
 
 **Derived — gitignored, rebuilt every deploy:**
@@ -551,7 +556,9 @@ now has a build in it.
 | `san-francisco/historic-districts/index.html` | the district index, written whole by `districts` |
 | `sitemap.xml`, `sitemaps/` | the sitemap index and its 44 children |
 | `shared/addresses.geojson` | the homepage map's dots |
+| `shared/events.geojson` | the homepage map's event dots — built from `events/events.json`, which is source |
 | `shared/nearby.json` | the lateral links between pages |
+| `events/index.html` | the `/events` listing, written whole by `build_events.py` |
 | `stats/index.html` | the dashboard at `/stats/` |
 
 The line between the two is not depth, it is whether a generator can write the
