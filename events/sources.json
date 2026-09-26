@@ -6,9 +6,10 @@
       "name": "Illuminate",
       "url": "https://illuminate.org/feed/calendar",
       "page": "https://illuminate.org/events/",
+      "links": "https://illuminate.org/wp-json/wp/v2/se-event?per_page=100&orderby=date&order=desc&_fields=link,title,meta",
       "kind": "ical",
       "access": "open",
-      "note": "The City of Awe's free-concert calendar. One iCal feed carries the upcoming slate — but no per-event URL, so entries link the public `page` where they are listed. LOCATION is a street address with no venue name, so venues.json does the naming. WordPress robots.txt disallows nothing relevant."
+      "note": "The City of Awe's free-concert calendar. One iCal feed carries the upcoming slate but no per-event URL; each event is a WordPress `se-event` post, so `links` (the REST API, newest first) supplies its page, matched on start time and title. An event the API doesn't return links the public `page`. LOCATION is a street address with no venue name, so venues.json does the naming. robots.txt disallows nothing relevant."
     },
     {
       "id": "sfrecpark",

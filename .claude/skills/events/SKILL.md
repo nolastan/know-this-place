@@ -66,9 +66,12 @@ rather than branching fresh — the workflow does the same.
 
 ## Known source quirks
 
-- **Illuminate** — its iCal feed carries no per-event URL, so every listing
-  links the public events page (`page` in `sources.json`). Its `LOCATION` is
-  a bare street address, so `venues.json` does the naming.
+- **Illuminate** — its iCal feed carries no per-event URL. Each event is a
+  WordPress post, so `fetch.py` reads the REST API (`links` in
+  `sources.json`) and matches on start time and title; slugs can't be
+  guessed, since reused names get `-2`, `-3`. Only an event the API doesn't
+  return falls back to the public events page. Its `LOCATION` is a bare
+  street address, so `venues.json` does the naming.
 - **SF Rec & Park** — one iCalendar feed per calendar ID. `LOCATION` reads
   `"<Venue> - <address>  San Francisco CA 94122"`, occasionally wrapped in
   `<p>` tags; `clean_location` strips both, and the venue half is what to

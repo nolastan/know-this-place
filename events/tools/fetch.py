@@ -167,10 +167,44 @@ def fetch_ical_feed(url: str, source_id: str, url_for_uid) -> list:
 
 
 def fetch_illuminate(source: dict) -> list:
-    # The feed's VEVENTs carry no URL of their own; the public listing page
-    # is the link back.
-    return fetch_ical_feed(source["url"], source["id"],
-                           lambda uid: source.get("page") or source["url"])
+    # The feed's VEVENTs carry no URL of their own, but every event is a
+    # WordPress post, and the REST API lists each one's link with its title
+    # and start (a UTC epoch). Slugs can't be derived from titles — reused
+    # names get "-2", "-3" — so match on start time and title, and fall back
+    # to the public listing page only for an event the API doesn't return.
+    events = fetch_ical_feed(source["url"], source["id"],
+                             lambda uid: source.get("page") or source["url"])
+    links = source.get("links")
+    if not links or not events:
+        return events
+    by_start, wanted = {}, {int(datetime.fromisoformat(e["start"]).timestamp())
+                            for e in events}
+    # Posts come newest first, and an event is posted before it happens, so
+    # the upcoming slate is in the first pages; stop once every start is seen.
+    for page in range(1, 6):
+        sep = "&" if "?" in links else "?"
+        try:
+            posts = json.loads(fetch(f"{links}{sep}page={page}"))
+        except Exception:
+            break   # a missing link falls back to the listing page, not a failure
+        for post in posts:
+            try:
+                start = int((post.get("meta") or {}).get("se_event_date_start"))
+            except (TypeError, ValueError):
+                continue
+            title = norm(html_lib.unescape((post.get("title") or {}).get("rendered", "")))
+            if post.get("link", "").startswith("http"):
+                by_start.setdefault(start, []).append((title, post["link"]))
+        if len(posts) < 100 or wanted <= by_start.keys():
+            break
+        time.sleep(DELAY_S)
+    for ev in events:
+        cands = by_start.get(int(datetime.fromisoformat(ev["start"]).timestamp()), [])
+        match = ([link for t, link in cands if t == norm(ev["title"])]
+                 or ([cands[0][1]] if len(cands) == 1 else []))
+        if match:
+            ev["url"] = match[0]
+    return events
 
 
 def fetch_sfrecpark(source: dict) -> list:
