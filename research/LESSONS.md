@@ -2344,3 +2344,64 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   derives `index.html` from the parsed data, not from the source file's
   formatting, so re-indenting after the fact costs nothing but is easy to
   forget doing at all.
+- **This container ships without Poppler or Tesseract, and that is not a
+  blocker.** An earlier article-10-landmarks session filed "OCR setup" as a
+  `needs-human` issue (#437) and stopped with 44 of 50 reports unread. `apt-get
+  install poppler-utils tesseract-ocr tesseract-ocr-eng` takes a minute and
+  commits nothing, so it is not new tooling. When running several OCR workers
+  at once, set **`OMP_THREAD_LIMIT=1`**: without it each Tesseract spawns a
+  thread per core and four workers took 70 seconds a page instead of 2. 1,500
+  scanned pages took about 40 minutes at 300 dpi with three workers. *Before
+  filing an environment blocker, try installing the tool for the session.*
+- **An issue asking to publish findings that exist only on a closed branch is a
+  pointer, not a queue.** #438 asked a later run to publish eleven "resolved"
+  landmark findings, but the PR carrying their findings file (#439) had been
+  closed unmerged, so `check.py --stats` on `main` showed nothing open, and the
+  issue's table was itself wrong in places (a page filed under the wrong
+  neighbourhood). The findings had also been read only from text layers. The
+  run redid the batches from the PDFs instead of reviving the branch. *Before
+  building on another session's work, check the PR that carried it: a
+  closed-unmerged PR means that work was declined, and a "publish these" issue
+  pointing at it does not change that.*
+- **The landmark list's APN can itself be the stale one.** The existing advice
+  — look the landmark number up in DataSF `97yj-54sx` and compare its APN with
+  the parcel the join chose — assumes the list is current. For the Article 10
+  reports it was not, three times among 100: the Gas Light Co. building's APN
+  was retired in August 2025, the Hallidie Building's list APN carries no EAS
+  address while the roll puts the 1917 building on the neighbouring lot, and
+  Sunnyside Conservatory's list APN is now the private house the conservatory
+  shared a lot with until about 1970. A page-by-APN join therefore missed
+  pages that already existed. *When the list and the address join disagree,
+  look both parcels up in `sf-parcels` (retired? active with no EAS address?)
+  and read the roll's build year before choosing; neither source outranks the
+  other by default.*
+- **A report's own day is "current".** Historical reports name people in the
+  present tense of their own date: the Landmarks Board's 1968–1977 case
+  reports open with an OWNER line, and their histories run up to the people
+  then living in or running the building ("the present owners, who are to be
+  commended for their restoration", "now Mrs. Randall"). Those people are the
+  current owners and occupants this site must not name, even though the
+  document is fifty years old. The carve-out for past residents needs the
+  source to put the person in the past — a death date, "until 1916", "lived
+  here from 1877 to 1895". In LM001–LM100 that line took 38 named past
+  residents and left out every OWNER line, every post-1950 buyer, and the
+  artists a 1968 report treated as alive. Where the building is known by such a
+  person's name (the Belli Building), the landmark's official name can still
+  be printed; the timeline entry does without the name.
+- **Count the documents read against the index before resolving, not at the
+  close.** A batch of a hundred reports read over several hours in one notes
+  file lost one: LM140, the High School of Commerce, was never written up, and
+  it surfaced only when the coverage figure for the findings file was being
+  computed — after resolve, publish and a full build. It was compiled on its own
+  and appended, which cost a second publish pass and a re-render. *When a batch
+  is read from a list, diff the list against the documents that have notes (or
+  an explicit "nothing new" line) before compiling; a report with no entry at
+  all is a skipped report, not an empty one.*
+- **A page's architect credit can be the architect of an alteration.** The
+  Mark Hopkins Hotel's page carried `building.architect: Timothy Pflueger`,
+  set from a context-statement row about the 1939 Top of the Mark lounge; the
+  hotel is Weeks & Day's. Publishing only "if not already set" would have left
+  the wrong credit standing beside a report that names the right one. *Where a
+  primary source's construction credit disagrees with the page's, find what the
+  page's credit came from; an alteration's designer is a timeline entry, not
+  `building.architect`.*
