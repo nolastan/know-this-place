@@ -170,6 +170,7 @@ ICON_LINKS = """  <link rel="icon" href="/favicon.ico" sizes="32x32">
 # when the file does.
 _CSS_HASH = hashlib.md5((ROOT / "shared" / "site.css").read_bytes()).hexdigest()[:8]
 CSS_LINK = f'  <link rel="stylesheet" href="/shared/site.css?v={_CSS_HASH}">'
+HUGEICONS_LINK = '  <link rel="stylesheet" href="https://use.hugeicons.com/font/icons.css">'
 
 # Breadcrumb divider. Rendered as its own unlinked element so the chevron is
 # not inside the adjacent <a>.
@@ -3552,6 +3553,7 @@ def render_html(rec: dict) -> str:
   <link rel="canonical" href="{SITE}{rec['path']}">
 {ICON_LINKS}
 {CSS_LINK}
+{HUGEICONS_LINK}
   <script type="module" src="/shared/site.js"></script>
 {ld_block(ld)}
 {ld_block(crumbs_ld)}
@@ -3913,6 +3915,7 @@ def render_place_html(rec: dict) -> str:
   <link rel="canonical" href="{SITE}{rec['path']}">
 {ICON_LINKS}
 {CSS_LINK}
+{HUGEICONS_LINK}
   <script type="module" src="/shared/site.js"></script>
 {ld_block(ld)}
 {ld_block(crumbs_ld)}
@@ -4727,6 +4730,7 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
   <link rel="canonical" href="{SITE}{path}">
 {ICON_LINKS}
 {CSS_LINK}
+{HUGEICONS_LINK}
   <script type="module" src="/shared/site.js"></script>
 {ld_block(breadcrumb_ld([(city_name, f"/{ctx['city']}/"),
                          (area_name, f"/{ctx['city']}/{ctx['area']}/"),
@@ -5195,6 +5199,7 @@ def hub_shell(path: str, title: str, desc: str, crumbs: str, main_html: str,
   <link rel="canonical" href="{SITE}{path}">
 {ICON_LINKS}
 {CSS_LINK}
+{HUGEICONS_LINK}
   <script type="module" src="/shared/site.js"></script>{ld_blocks}
 </head>
 <body>
