@@ -1,0 +1,308 @@
+{
+  "source_id": "hoodline",
+  "batch": "2026-09-27",
+  "read_on": "2026-09-27",
+  "notes": "Six items queued from the 2026-09-27 poll, all six read.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 6,
+    "mentions": 8,
+    "remaining": "none",
+    "note": "Two hits are photo-caption noise, not reporting: 255 California St. on the AI-funding story (\u201capproximate\u2026 headquarters\u201d) and 2026 20th St. on the Wrecking Ball story (\u201cunverified street scene\u201d). 80 Jefferson St. (the new Fisherman's Wharf ice rink) has no EAS record at all. 568 Sacramento St. (ex-Leo's Oyster Bar) is declined: its only headline names the chef opening the replacement restaurant, who is not an architect, builder, developer or firm."
+  },
+  "findings": [
+    {
+      "id": "2026-09-27-hl-0001",
+      "date": "2026-09-26",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "255 California St.",
+      "street_number": "255",
+      "street_name": "CALIFORNIA",
+      "street_type": "ST",
+      "description": "The address appears only in a Google Street View photo caption labelling it the \u201capproximate\u201d headquarters of an AI startup; the article's text says nothing about the building itself.",
+      "citation": {
+        "label": "Hoodline, \u201cSF Startup's Chat-Free AI Draws $10 Billion Offers a Week After Launch,\u201d 26 September 2026",
+        "url": "https://hoodline.com/2026/09/sf-startup-s-chat-free-ai-draws-10-billion-offers-a-week-after-launch/",
+        "locator": "photo caption"
+      },
+      "raw": {
+        "text": "255 California St. \u2014 Approximate TypeSafe AI Headquarters"
+      },
+      "confidence": "low",
+      "publish": {
+        "status": "declined",
+        "note": "A photo caption's hedged \u201capproximate\u201d location, not a reported fact about the building. Fails the ten-year test."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0262013",
+        "path": "/san-francisco/financial-district/california-street/235/",
+        "eas_address": "235 CALIFORNIA ST",
+        "method": "EAS exact match on 255 CALIFORNIA ST \u2192 parcel 0262013; sf-parcels has blklot 0262013 active, 140\u2013140 BATTERY; the 2025 roll records it as commercial office, built 1958. EAS puts 235, 241, 245, 255, 259 CALIFORNIA ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 235.",
+        "checked_on": "2026-09-27"
+      }
+    },
+    {
+      "id": "2026-09-27-hl-0002",
+      "date": "2026-09-26",
+      "date_precision": "day",
+      "kind": "sale",
+      "address_as_written": "875 and 899 Howard St.",
+      "street_number": "899",
+      "street_name": "HOWARD",
+      "street_type": "ST",
+      "description": "Hudson Pacific Properties completed the sale of its office complex at 875 and 899 Howard Street \u2014 one building on one parcel, per EAS \u2014 for $65.5 million, roughly $230 per square foot across 284,000 square feet. The 899 portion, the former Burlington Coat Factory site, was 100% vacant and in shell condition at sale; the 875 portion was 31.9% occupied, after a tech company had leased roughly 30,000\u201333,000 square feet there before departing in October 2022. Hudson Pacific had bought the complex in 2007 for $46 million and later converted retail space to office use; the buyer was not disclosed.",
+      "extra": {
+        "seller": "Hudson Pacific Properties",
+        "price_usd": 65500000,
+        "sqft_approx": 284000,
+        "price_per_sqft_approx": 230,
+        "occupancy_pct_899_portion": 0,
+        "former_tenant_899_portion": "Burlington Coat Factory",
+        "occupancy_pct_875_portion": 31.9,
+        "former_tenant_875_portion_sqft_approx": "30000-33000",
+        "former_tenant_875_portion_departed": "2022-10",
+        "original_purchase_year": 2007,
+        "original_purchase_price_usd": 46000000
+      },
+      "citation": {
+        "label": "Hoodline, \u201cHudson Pacific Dumps Nearly Empty SoMa Office Complex for $65.5 Million,\u201d 26 September 2026",
+        "url": "https://hoodline.com/2026/09/hudson-pacific-dumps-nearly-empty-soma-office-complex-for-65-5-million/",
+        "locator": "opening paragraphs"
+      },
+      "raw": {
+        "text": "Hudson Pacific Properties has completed the sale of its largely vacant office complex at 875 and 899 Howard St. for $65.5 million."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3733079",
+        "path": "/san-francisco/south-of-market/howard-street/861/",
+        "eas_address": "861 HOWARD ST",
+        "method": "EAS exact match on 899 HOWARD ST \u2192 parcel 3733079; sf-parcels has blklot 3733079 active, 235\u2013235 05TH; the 2025 roll records it as commercial retail, built 1920. EAS puts 861, 875, 881, 899 HOWARD ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 861. 875 HOWARD ST resolves to the same parcel, so the two article findings for this sale are recorded as one.",
+        "checked_on": "2026-09-27"
+      },
+      "publish": {
+        "status": "declined",
+        "note": "Duplicate: this sale is already on the page, entry source the-registry-2026-09-25 (\u201cHudson Pacific Sells 284,000 SQFT 875-899 Howard in San Francisco for $65.5MM\u201d, The Registry, 25 September 2026). This story sharpens the fact \u2014 each building\u2019s individual occupancy percentage and former tenant, and the 2007 purchase history \u2014 recorded in `extra` above, but the event is not written a second time onto the timeline."
+      }
+    },
+    {
+      "id": "2026-09-27-hl-0003",
+      "date": "2026",
+      "date_precision": "year",
+      "kind": "development",
+      "address_as_written": "901 Market Street",
+      "street_number": "901",
+      "street_name": "MARKET",
+      "street_type": "ST",
+      "description": "Earlier in 2026 Hudson Pacific Properties filed plans to convert its 32.4%-occupied office building at 901 Market Street into residential apartments \u2014 a different approach than its sale, in the same period, of the nearly empty Howard Street complex it also owned.",
+      "extra": {
+        "owner": "Hudson Pacific Properties",
+        "occupancy_pct": 32.4,
+        "proposal": "office-to-residential conversion"
+      },
+      "citation": {
+        "label": "Hoodline, \u201cHudson Pacific Dumps Nearly Empty SoMa Office Complex for $65.5 Million,\u201d 26 September 2026",
+        "url": "https://hoodline.com/2026/09/hudson-pacific-dumps-nearly-empty-soma-office-complex-for-65-5-million/",
+        "locator": "mid-article, contrasting the Howard Street sale"
+      },
+      "raw": {
+        "text": "Earlier this year, the company filed plans to convert its 32.4%-occupied office building at 901 Market Street into residential apartments."
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Duplicate: this fact is already on the page as a 2026-07-01 development entry, \u201cPlans Filed For Office-to-Housing Conversion at 901 Market Street, San Francisco.\u201d This story\u2019s headline was unusable for it anyway (see below); no need to leave it pending since the underlying fact already has a proper entry from a story about this building specifically."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3704001",
+        "path": "/san-francisco/south-of-market/market-street/901/",
+        "eas_address": "901 MARKET ST",
+        "method": "EAS exact match on 901 MARKET ST \u2192 parcel 3704001; sf-parcels has blklot 3704001 active, 901\u2013901 MARKET; the 2025 roll records it as commercial office, built 1912.",
+        "checked_on": "2026-09-27"
+      }
+    },
+    {
+      "id": "2026-09-27-hl-0004",
+      "date": "2026-11-04",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "80 Jefferson St.",
+      "street_number": "80",
+      "street_name": "JEFFERSON",
+      "street_type": "ST",
+      "description": "San Francisco on Ice, billed as the city's newest and largest holiday ice rink, is set to open 4 November 2026 at 80 Jefferson St. \u2014 a 6,300-square-foot outdoor skating surface at Fisherman's Wharf \u2014 running through 18 January 2027.",
+      "extra": {
+        "attraction": "San Francisco on Ice",
+        "surface_sqft": 6300,
+        "season": "2026-11-04 to 2027-01-18"
+      },
+      "citation": {
+        "label": "Hoodline, \u201cFisherman's Wharf Lands SF's Biggest Holiday Ice Rink This November,\u201d 26 September 2026",
+        "url": "https://hoodline.com/2026/09/fisherman-s-wharf-lands-sf-s-biggest-holiday-ice-rink-this-november/",
+        "locator": "opening paragraphs"
+      },
+      "raw": {
+        "text": "San Francisco on Ice, billed as the city's newest and largest holiday ice rink, is set to open Nov. 4 at 80 Jefferson St."
+      },
+      "confidence": "medium",
+      "publish": {
+        "status": "pending",
+        "note": "Blocked: sf-eas-addresses has no record of 80 Jefferson St., so there is no parcel and no page. Worth retrying if the site ever addresses this stretch of the Wharf; also worth a second look at publication time, since a seasonal outdoor rink is a thinner building fact than most of what this module carries."
+      },
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-27",
+        "method": "No record in sf-eas-addresses for 80 JEFFERSON ST.",
+        "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 61, 63, 65, 75, 79, 81. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+      }
+    },
+    {
+      "id": "2026-09-27-hl-0005",
+      "date": "2026-09-26",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "401 Haight Street",
+      "street_number": "401",
+      "street_name": "HAIGHT",
+      "street_type": "ST",
+      "description": "Two Jack's Nik's Place, a restaurant that had operated at 401 Haight Street for 45 years after opening in 1977 and earning San Francisco Legacy Business status in 2016, closed on 14 July 2022. Passages, a wine bar and bistro, is slated to open in the space, with an expected opening in March 2027; the storefront retains a Type 1 hood commercial kitchen and a basement prep area.",
+      "extra": {
+        "former_occupant": "Two Jack's Nik's Place",
+        "former_occupant_years": "1977-2022",
+        "former_occupant_closed": "2022-07-14",
+        "legacy_business_status_year": 2016,
+        "new_occupant": "Passages",
+        "opening_planned": "2027-03"
+      },
+      "citation": {
+        "label": "Hoodline, \u201cWine Bar Passages Set To Fill Lower Haight Corner Left By Two Jack's Closure,\u201d 26 September 2026",
+        "url": "https://hoodline.com/2026/09/wine-bar-passages-set-to-fill-lower-haight-corner-left-by-two-jack-s-closure/",
+        "locator": "throughout"
+      },
+      "raw": {
+        "text": "Two Jack's Nik's Place officially closed on July 14, 2022, after 45 years of continuous operation in the Lower Haight."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0859001",
+        "path": "/san-francisco/hayes-valley/haight-street/401/",
+        "eas_address": "401 HAIGHT ST",
+        "method": "EAS exact match on 401 HAIGHT ST \u2192 parcel 0859001; sf-parcels has blklot 0859001 active, 401\u2013411 HAIGHT; the 2025 roll records it as multi-family residential, built 1906. EAS puts 401, 403, 405, 407, 409, 411 HAIGHT ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 401.",
+        "checked_on": "2026-09-27"
+      },
+      "publish": {
+        "status": "declined",
+        "note": "Duplicate: this occupancy fact is already on the page, entry source whatnow-sf-2026-09-25 (\u201cPassages To Open In San Francisco\u2019s Lower Haight\u201d, WhatNow San Francisco, 25 September 2026). This story adds the prior tenant\u2019s closure date and Legacy Business history, recorded in `extra` above, but the event is not written a second time onto the timeline."
+      }
+    },
+    {
+      "id": "2026-09-27-hl-0006",
+      "date": "2026-09-26",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "568 Sacramento St.",
+      "street_number": "568",
+      "street_name": "SACRAMENTO",
+      "street_type": "ST",
+      "description": "Leo's Oyster Bar closed its 568 Sacramento Street location in July 2026 after a ten-year lease expired. A new oyster house is planned to open in early 2027, retaining some elements of the storefront's existing 1950s-styled interior.",
+      "extra": {
+        "former_occupant": "Leo's Oyster Bar",
+        "former_occupant_lease_years": 10,
+        "former_occupant_closed": "2026-07",
+        "opening_planned": "2027 (early)"
+      },
+      "citation": {
+        "label": "Hoodline, \u201cChef Brad Kilgore Revives Ex-Leo's Oyster Bar Space With East Hampton-Named Raw Bar,\u201d 26 September 2026",
+        "url": "https://hoodline.com/2026/09/chef-brad-kilgore-revives-ex-leo-s-oyster-bar-space-with-east-hampton-named-raw-bar/",
+        "locator": "throughout"
+      },
+      "raw": {
+        "text": "Leo's Oyster Bar quietly closed its doors at the Sacramento Street address in July after its 10-year lease expired."
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "The only headline reporting this fact names the chef opening the replacement restaurant, who is not an architect, builder, developer or firm \u2014 \u201cChef Brad Kilgore Revives Ex-Leo's Oyster Bar Space With East Hampton-Named Raw Bar.\u201d news/AGENTS.md is explicit that there is no rewriting past this: decline the story. The underlying fact (closure, new opening planned) is real and could publish from a future story whose headline does not name him."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0228011",
+        "path": "/san-francisco/nob-hill/commercial-street/565/",
+        "eas_address": "568 SACRAMENTO ST",
+        "method": "EAS exact match on 568 SACRAMENTO ST \u2192 parcel 0228011; sf-parcels has blklot 0228011 active, 565\u2013565 COMMERCIAL; the 2025 roll records it as commercial office, built 1985. The assessor files the parcel as 565 COMMERCIAL ST.",
+        "checked_on": "2026-09-27"
+      }
+    },
+    {
+      "id": "2026-09-27-hl-0007",
+      "date": "2026-09-26",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2026 20th St.",
+      "street_number": "2026",
+      "street_name": "20TH",
+      "street_type": "ST",
+      "description": "The address appears only in a Google Street View photo caption labelled \u201cunverified street scene\u201d; the article's text does not connect it to Wrecking Ball Coffee or say anything about the building.",
+      "citation": {
+        "label": "Hoodline, \u201cWrecking Ball Coffee Plots Potrero Hill, Berkeley Cafes and a Dogpatch Roastery,\u201d 26 September 2026",
+        "url": "https://hoodline.com/2026/09/wrecking-ball-coffee-plots-potrero-hill-berkeley-cafes-and-a-dogpatch-roastery/",
+        "locator": "photo caption"
+      },
+      "raw": {
+        "text": "20th St. \u2014 Unverified Street Scene"
+      },
+      "confidence": "low",
+      "publish": {
+        "status": "declined",
+        "note": "Photo-caption noise, not reporting. Fails the ten-year test."
+      },
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-27",
+        "method": "No record in sf-eas-addresses for 2026 20TH ST.",
+        "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 2040, 2042. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+      }
+    },
+    {
+      "id": "2026-09-27-hl-0008",
+      "date": "2026-12",
+      "date_precision": "month",
+      "kind": "occupancy",
+      "address_as_written": "1700 20th St.",
+      "street_number": "1700",
+      "street_name": "20TH",
+      "street_type": "ST",
+      "description": "Wrecking Ball Coffee is planning a cafe at 1700 20th Street in Potrero Hill, set to open in December 2026.",
+      "extra": {
+        "operator": "Wrecking Ball Coffee",
+        "opening_planned": "2026-12"
+      },
+      "citation": {
+        "label": "Hoodline, \u201cWrecking Ball Coffee Plots Potrero Hill, Berkeley Cafes and a Dogpatch Roastery,\u201d 26 September 2026",
+        "url": "https://hoodline.com/2026/09/wrecking-ball-coffee-plots-potrero-hill-berkeley-cafes-and-a-dogpatch-roastery/",
+        "locator": "mid-article"
+      },
+      "raw": {
+        "text": "The new Potrero Hill cafe is planned for 1700 20th St. and is set to open in December 2026."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "4069012A",
+        "path": "/san-francisco/potrero-hill/20th-street/1700/",
+        "eas_address": "1700 20TH ST",
+        "method": "EAS exact match on 1700 20TH ST \u2192 parcel 4069012A; sf-parcels has blklot 4069012A active, 1700\u20131700 20TH; the 2025 roll records it as multi-family residential, built 1921.",
+        "checked_on": "2026-09-27"
+      },
+      "publish": {
+        "status": "declined",
+        "note": "Duplicate: this occupancy fact is already on the page, entry source sf-standard-2026-09-25 (\u201cShe coined the term \u2018third-wave coffee.\u2019 Now she\u2019s poised for a big comeback\u201d, The San Francisco Standard, 24 September 2026), which is about the same planned Potrero Hill cafe under a different headline. The event is not written a second time onto the timeline."
+      }
+    }
+  ]
+}

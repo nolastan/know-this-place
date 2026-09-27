@@ -1,0 +1,82 @@
+{
+  "source_id": "sf-chronicle",
+  "batch": "2026-09-27",
+  "read_on": "2026-09-27",
+  "notes": "Two items queued from the 2026-09-27 poll, both read.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 2,
+    "mentions": 2,
+    "remaining": "none",
+    "note": "One item, on an SFUSD negotiator's indictment, named no street address. The other, a multi-restaurant roundup, named two addresses; both are declined below."
+  },
+  "findings": [
+    {
+      "id": "2026-09-27-sc-0001",
+      "date": "2026-09-27",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2050 Bryant St.",
+      "street_number": "2050",
+      "street_name": "BRYANT",
+      "street_type": "ST",
+      "description": "A cookie roundup names Christine's, an existing bakery at 2050 Bryant Street, for its chocolate chip cookie. No opening date, ownership change or other building fact is stated — this is a food review of an already-established business, not an event.",
+      "citation": {
+        "label": "San Francisco Chronicle, “One of San Francisco’s best chocolate chip cookies comes from a tiny bakery in the Mission,” 27 September 2026",
+        "url": "https://www.sfchronicle.com/food/restaurants/article/christines-bakery-cookie-mission-san-francisco-22442365.php",
+        "locator": "opening section, on Christine's"
+      },
+      "raw": {
+        "text": "Christine's. 2050 Bryant St., San Francisco. cometochristines.com"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "A review of an already-open bakery's product, with no dated event. Fails the ten-year test."
+      },
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-27",
+        "method": "No record in sf-eas-addresses for 2050 BRYANT ST.",
+        "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 2031, 2055, 2070. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+      }
+    },
+    {
+      "id": "2026-09-27-sc-0002",
+      "date": "2026-09-27",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "546 Laguna St.",
+      "street_number": "546",
+      "street_name": "LAGUNA",
+      "street_type": "ST",
+      "description": "The same roundup reports that Kopê House, previously a popup, has landed a permanent cafe at 546 Laguna Street in Hayes Valley — a real occupancy fact, but told in a paragraph of a multi-restaurant column whose headline is about Christine's cookie at a different address.",
+      "extra": {
+        "occupant": "Kopê House",
+        "prior_status": "popup"
+      },
+      "citation": {
+        "label": "San Francisco Chronicle, “One of San Francisco’s best chocolate chip cookies comes from a tiny bakery in the Mission,” 27 September 2026",
+        "url": "https://www.sfchronicle.com/food/restaurants/article/christines-bakery-cookie-mission-san-francisco-22442365.php",
+        "locator": "second section, on Kopê House"
+      },
+      "raw": {
+        "text": "A popup no more, Kopê House landed a cafe in Hayes Valley."
+      },
+      "confidence": "medium",
+      "publish": {
+        "status": "declined",
+        "note": "The only headline available — “One of San Francisco’s best chocolate chip cookies comes from a tiny bakery in the Mission” — is about Christine's cookie, not about 546 Laguna Street; carrying it onto this page would misdescribe what happened here, the same trap news/AGENTS.md warns about for a headline that belongs to a different building. Needs a story whose headline is about this address."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0818017",
+        "path": "/san-francisco/hayes-valley/laguna-street/534/",
+        "eas_address": "534 LAGUNA ST",
+        "method": "EAS exact match on 546 LAGUNA ST → parcel 0818017; sf-parcels has blklot 0818017 active, 595–599 HAYES; the 2025 roll records it as multi-family residential, built 1900. EAS puts 534, 536, 540, 542, 546, 548, 550 LAGUNA ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 534.",
+        "checked_on": "2026-09-27",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      }
+    }
+  ]
+}
