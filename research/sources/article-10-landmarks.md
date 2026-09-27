@@ -62,22 +62,27 @@ Or organize by geography: Downtown (LM1–LM30), Mission (LM40–LM70), etc. The
 
 ---
 
-**Verified:** 2026-09-27, prospecting pass complete; 2026-09-27, batch 1 partial pass; 2026-09-27, batch 2 complete pass
+**Verified:** 2026-09-27, prospecting pass complete; 2026-09-27, batch 1 partial pass; 2026-09-27, batch 2 complete pass; 2026-09-27, batch 3 attempted
 - Index confirmed at DataSF 97yj-54sx: 370 rows, complete address and APN coverage
 - PDFs confirmed accessible on files.sfplanning.org and sfplanninggis.org without login
 - **Batch 1 (LM1–LM50):** 6 readable PDFs (13%), 44 image-only; OCR setup needed (issue #437)
 - **Batch 2 (LM51–LM100):** 21 readable PDFs (43%), 28 image-only; 28 findings extracted
   - Resolved: 11 to existing pages (all published)
   - Unresolved: 17 (demolished buildings, address parsing issues, need special handling)
+- **Batch 3 (LM101–LM200):** 18 readable PDFs (18%), 79 image-only; stopped early (OCR blocker)
+  - Text quality worse than batch 2 despite dossier note of "cleaner text"
+  - Readable PDFs have severe OCR corruption, address parsing unreliable
+  - 0 findings extracted — insufficient material without OCR correction
 - Structured data: all records carry landmark name, street address, and APN outright
 - Overlap with `sf-context-statements` confirmed in 1000 California St (Old Flood Mansion / Pacific Union Club) — both sources document it
 
-**Next:** Batch 3 (LM101–LM200) has cleaner text per dossier; or pursue batch 1 OCR setup if tools are installed.
+**Next:** Batch 1 OCR setup (issue #437) is the critical path. Batch 4+ untested.
 
 ---
 
 **Run summary (2026-09-27):**
 - **Batch 1:** Stopped early (88% image-only; OCR blocker filed as issue #437)
 - **Batch 2:** Complete pass — 28 findings, 11 resolved → pending publication (issue #438), 17 declined
+- **Batch 3:** Stopped early (81% image-only; text quality worse than expected; OCR blocker)
 - Source measurably further along: 39 findings extracted from 27 readable PDFs, 11 with facts ready to publish
-- Dossier updated with coverage; two issues filed for continuation
+- Dossier updated with coverage; two issues filed for continuation; batch 3 assessment documented

@@ -84,7 +84,7 @@ sit in — the three it touched most, and how many in all.
 | `argonaut-sfhs/vol-31-no-2.json` | 22 | 27 KB | 1852–1863 | 6 | 6 | `western-addition`, `lone-mountain`, `north-beach` |
 | `argonaut-sfhs/vol-32-no-1.json` | 15 | 20 KB | 1847–1951 | 7 | 7 | `corbett-heights`, `financial-district` |
 | `article-10-landmarks/batch-1-lm001-lm050.json` | 0 | 1 KB | — | 0 | 0 | — |
-| `article-10-landmarks/lm-51-100.json` | 28 | 44 KB | — | 11 | 11 | `pacific-heights`, `castro`, `bayview-hunters-point` +5 |
+| `article-10-landmarks/lm-51-100.json` | 28 | 44 KB | — | 11 | 0 | `pacific-heights`, `castro`, `bayview-hunters-point` +5 |
 | `celebrity-residence-guides/sftourismtips.json` | 31 | 47 KB | 1876–1996 | 28 | 26 | `haight-ashbury`, `pacific-heights`, `seacliff` +10 |
 | `corbett-heights-neighbors/archive-page-2.json` | 22 | 38 KB | 1885–2016 | 19 | 9 | `corbett-heights`, `castro` |
 | `corbett-heights-neighbors/archive-page-3.json` | 36 | 66 KB | 1889–2025 | 32 | 31 | `castro`, `corbett-heights`, `mission` +3 |
