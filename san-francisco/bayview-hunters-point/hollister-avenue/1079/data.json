@@ -1,0 +1,113 @@
+{
+  "address": "1079 Hollister Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/hollister-avenue/1079/",
+  "apn": "4965030",
+  "block": "4965",
+  "lot": "030",
+  "eas_baseid": "373523",
+  "coordinates": {
+    "lat": 37.719274,
+    "lng": -122.392178
+  },
+  "parcel": {
+    "year_built": 1914,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "lot_area_sqft": 4996,
+    "building_area_sqft": 2526,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1079 HOLLISTER           AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 147720,
+    "assessed_improvement_value": 295451,
+    "last_sale_date": "2002-04-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1914",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200007266191",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-07-26",
+      "status_date": "2000-08-10",
+      "estimated_cost": 100,
+      "revised_cost": 100,
+      "description": "revise 9520324. remove exist sinks, cabinets, range, toilet & shower.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9520324",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1995-12-01",
+      "status_date": "1997-03-26",
+      "estimated_cost": 500,
+      "description": "legalize grnd flr to garage & storage only",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HOLLISTER&street_type=AVE&address_number=1079",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4965030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4965&lot=030",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4965030",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-environmental-review-bayviewhunterspo2004sanf",
+      "name": "San Francisco Redevelopment Agency, Bayview Hunters Point Redevelopment Projects and Rezoning: Draft Environmental Impact Report, File No. 1996.546E, October 19, 2004.",
+      "query": "https://archive.org/details/bayviewhunterspo2004sanf",
+      "retrieved": "2026-09-27"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Bayview Hunters Point redevelopment survey (2004)",
+      "source": "sf-environmental-review-bayviewhunterspo2004sanf",
+      "entries": [
+        {
+          "address_as_surveyed": "1079 Hollister Avenue",
+          "description": "Residence"
+        }
+      ],
+      "style": "Queen Anne/Shingle Style",
+      "year_built_as_surveyed": "c. 1900"
+    }
+  ]
+}

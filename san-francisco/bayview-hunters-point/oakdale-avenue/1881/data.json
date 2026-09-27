@@ -1,0 +1,128 @@
+{
+  "address": "1881 Oakdale Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/oakdale-avenue/1881/",
+  "apn": "5320018",
+  "block": "5320",
+  "lot": "018",
+  "eas_baseid": "375455",
+  "coordinates": {
+    "lat": 37.737371,
+    "lng": -122.39574
+  },
+  "parcel": {
+    "year_built": 2014,
+    "units": 1,
+    "stories": 3,
+    "rooms": 12,
+    "bathrooms": 3,
+    "bedrooms": 8,
+    "lot_area_sqft": 1642,
+    "building_area_sqft": 2438,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Silver Terrace",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1881 OAKDALE             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 668561,
+    "assessed_improvement_value": 286526,
+    "last_sale_date": "2022-01-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "2014",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201305086436",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-05-08",
+      "status_date": "2014-02-18",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "to add 2 bedrooms, one full bathroom, and laundry area on extg ground floor per plan(no structural work)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201304154560",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-04-15",
+      "status_date": "2014-02-18",
+      "estimated_cost": 25000,
+      "revised_cost": 30000,
+      "description": "remodel (2) bathrooms & (1) kitchen & (n) sheetrock in (e) 2 bedrooms, living room ceiling & wall complaint #201039324 to complaint w/ nov#201039324",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9100015",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-01-03",
+      "status_date": "1992-01-03",
+      "estimated_cost": 610,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=OAKDALE&street_type=AVE&address_number=1881",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5320018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5320&lot=018",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5320018",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-environmental-review-bayviewhunterspo2004sanf",
+      "name": "San Francisco Redevelopment Agency, Bayview Hunters Point Redevelopment Projects and Rezoning: Draft Environmental Impact Report, File No. 1996.546E, October 19, 2004.",
+      "query": "https://archive.org/details/bayviewhunterspo2004sanf",
+      "retrieved": "2026-09-27"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Bayview Hunters Point redevelopment survey (2004)",
+      "source": "sf-environmental-review-bayviewhunterspo2004sanf",
+      "entries": [
+        {
+          "address_as_surveyed": "1881 Oakdale Avenue",
+          "description": "Residence"
+        }
+      ],
+      "style": "Italianate",
+      "year_built_as_surveyed": "c. 1880"
+    }
+  ],
+  "unknowns": [
+    "The Bayview Hunters Point redevelopment survey of 2004 dates the building here to about 1880; the assessor gives 2014."
+  ]
+}

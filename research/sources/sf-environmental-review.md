@@ -681,12 +681,44 @@
   scanned for numbered-address mentions and produced nothing to publish.
 
   **Remaining: the finals and supplements of projects whose drafts are read
-  (~209 catalogue items, mostly restatement), the lower-yield area-plan
-  documents scanned but not read whole, and the unmined tables inside the
-  documents that were: Mission Bay's Table VI.I.1 survey matrix, the Van Ness
-  Avenue 47-building survey list, the Golden Gate Park resource inventory and
-  the Bayview Appendix B rows beyond the narrative list.**
+  (~209 catalogue items, mostly restatement) and the lower-yield area-plan
+  documents scanned but not read whole.** The four tables this line used to
+  name are done (`area-plan-tables.json`, 2026-09-27) — and one of them never
+  existed: the Van Ness Avenue Plan DEIR counts 47 significant buildings but
+  does not print the list, which is in the Heritage survey it cites.
 
+- **Verified:** 2026-09-27, eleventh run: the four tables left unmined inside
+  the area-plan documents, 320 findings in `area-plan-tables.json`, 257
+  published. **Bayview Hunters Point DEIR (2004) Appendix B, Table B-1** —
+  Carey & Company's reconnaissance survey matrix, six fold-out leaves
+  (600–610), 252 rows: 251 numbered buildings with construction date (mostly
+  circa), style, historic use, historic status and Carey rating, plus one
+  unnumbered bridge. 226 resolved; 216 published as a second survey panel
+  ("Bayview Hunters Point redevelopment survey (2004)": style, year built as
+  surveyed, historic use, and the 1976 rating and *Here Today* page where the
+  page lacked them) on 216 pages, **108 of them seeded by this run** (110 with the two below); 55 of
+  those pages state in `unknowns` a roll year more than fifteen years after the
+  survey's (never where the roll says 1900, which is a bucket). 1863 and 1867 Oakdale,
+  which the matrix lists twice with different dates, carry that contradiction
+  in `unknowns` instead of a panel. **Mission Bay
+  DEIR (1988) Table VI.I.1** — 47 numbered addresses: 20 1976 ratings
+  published as timeline entries on 19 pages, the rest declined as already on
+  the page or as Heritage-list presence with no rating. **Golden Gate Park
+  Master Plan DEIR (1997) Table 27 and the p. 189 contributing-structures
+  list** — 22 findings on place pages, 17 published, among them construction
+  years for eleven places that had no dated entry at all, and a correction:
+  the Alvord Lake Bridge page called it a National Historic Landmark, and it is
+  a National Historic *Civil Engineering* Landmark. **Van Ness Avenue Plan
+  DEIR** — zero rows; see Remaining above. What it learned: **the OCR garbles
+  every shaded row of the Bayview matrix** (the "changed since 2001"
+  highlight), turning addresses into noise; the page images at
+  `https://archive.org/download/<id>/page/n<leaf-1>_w2400.jpg` (append
+  `_rot270` for a sideways table) were legible and were transcribed instead;
+  **set `extra.record_date` on every row of a modern survey table** — without
+  it the renumbering guard refused every circa-1880 house the 2004 matrix
+  addresses in 2004's numbers; and **the matrix lists 1863 and 1867 Oakdale
+  twice**, in two activity nodes with different dates and styles — stated,
+  not adjudicated.
 - **Verified:** 2026-09-21, tenth run: the unread draft-stage documents — all
   84 catalogue items never previously read (38 draft EIRs plus 46 initial
   studies, negative declarations and related reports; same-project volumes

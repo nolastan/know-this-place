@@ -1,0 +1,132 @@
+{
+  "address": "1500 Kirkwood Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/kirkwood-avenue/1500/",
+  "apn": "5278025",
+  "block": "5278",
+  "lot": "025",
+  "eas_baseid": "374821",
+  "coordinates": {
+    "lat": 37.737382,
+    "lng": -122.388037
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 1,
+    "rooms": 11,
+    "bathrooms": 3,
+    "lot_area_sqft": 2750,
+    "building_area_sqft": 2780,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1500 KIRKWOOD            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 167955,
+    "assessed_improvement_value": 151153,
+    "last_sale_date": "1994-07-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9808950",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-05-18",
+      "status_date": "1999-08-23",
+      "estimated_cost": 4372,
+      "description": "replace 3 windows in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8903349",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-03-01",
+      "status_date": "1989-11-30",
+      "estimated_cost": 7500,
+      "description": "add bedroom/social rm/bathroom to lower level/appl 8820234",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8820234",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-12-22",
+      "status_date": "1990-01-04",
+      "estimated_cost": 25000,
+      "description": "basement alterations,existing bathroom to be remodeled etc",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1988–2008",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=KIRKWOOD&street_type=AVE&address_number=1500",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5278025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5278&lot=025",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5278025",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-environmental-review-bayviewhunterspo2004sanf",
+      "name": "San Francisco Redevelopment Agency, Bayview Hunters Point Redevelopment Projects and Rezoning: Draft Environmental Impact Report, File No. 1996.546E, October 19, 2004.",
+      "query": "https://archive.org/details/bayviewhunterspo2004sanf",
+      "retrieved": "2026-09-27"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Bayview Hunters Point redevelopment survey (2004)",
+      "source": "sf-environmental-review-bayviewhunterspo2004sanf",
+      "entries": [
+        {
+          "address_as_surveyed": "1500 Kirkwood Avenue",
+          "description": "Residence"
+        }
+      ],
+      "style": "Queen Anne",
+      "year_built_as_surveyed": "c. 1890",
+      "dcp_1976_survey": "rated 1 of 5"
+    }
+  ],
+  "unknowns": [
+    "The Bayview Hunters Point redevelopment survey of 2004 dates the building here to about 1890; the assessor gives 1907."
+  ]
+}
