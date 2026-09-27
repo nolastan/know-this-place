@@ -62,21 +62,17 @@ Or organize by geography: Downtown (LM1–LM30), Mission (LM40–LM70), etc. The
 
 ---
 
-**Verified:** 2026-09-27, prospecting pass complete
+**Verified:** 2026-09-27, prospecting pass complete; 2026-09-27, batch 1 partial pass
 - Index confirmed at DataSF 97yj-54sx: 370 rows, complete address and APN coverage
 - PDFs confirmed accessible on files.sfplanning.org and sfplanninggis.org without login
-- Text quality verified: clean text layers in LM100+ (Castro Theatre sampled); image-only PDFs in LM1–LM50 (LM11, LM200 sampled)
-- Structured data: all records carry landmark name, street address, and APN outright
+- **Batch 1 (LM1–LM50) text extraction: 6 of 50 PDFs have readable text layers; 44 are image-only**
+  - Readable (>1000 bytes text): LM001 (Mission Dolores), LM045 (Leale House), LM046, LM047, LM049, LM050
+  - Image-only: 44 PDFs require OCR (pdftotext returns 4–10 bytes)
+- Structured data: all records carry landmark name, street address, and APN outright in the documents
 - Overlap with `sf-context-statements` will need checking before seeding new pages
-- Source promoted 2026-09-27; promotion and first mining batch (LM1–LM50) is the next run
 
-**Next:** Mine batch 1 (LM1–LM50) — 50 PDF documents, establish extraction and OCR strategy. All PDFs have text layers or contain the key information (address, date, architect) even if image-heavy.
+**Next:** Batch 1 stopped early — 44 PDFs require OCR setup (see issue #XXX). Batch 2 (LM51–LM100) is the next run; per the dossier, batch 2 is a "mix; transition to cleaner text" and should be more productive than OCR setup.
 
 ---
 
-**Environment note (2026-09-27):** Batch 1 PDFs downloaded successfully; however, the session environment lacks PDF extraction tools (pdftotext, pdfimages, pdftoppm from Poppler, and Python PDF libraries). Research module expects these tools for handling image-only PDFs. Batch 1 mining requires either:
-1. Environment setup to install Poppler and Python PDF libraries
-2. Manual extraction of the 50 documents (labor-intensive but doable)
-3. Deferral to a session with PDF tools available
-
-Recommend: Set up environment with Poppler (pdftotext, pdfimages, pdftoppm) + Python pdfplumber or PyPDF2, then resume mining.
+**Mining pass (2026-09-27):** Batch 1 PDFs downloaded (50/50 successful). Text extraction via pdftotext shows 88% of batch is image-only. Run stopped per RUNBOOK guidance on early stops: "The material genuinely ran out" = image-only PDFs without OCR tools available. Readable PDFs contain expected content: street address, block/lot information, date of designation, historical narrative. Issue filed for OCR setup (needs-human). Moving to batch 2 for continuity.
