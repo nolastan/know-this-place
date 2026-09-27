@@ -170,6 +170,7 @@ ICON_LINKS = """  <link rel="icon" href="/favicon.ico" sizes="32x32">
 # when the file does.
 _CSS_HASH = hashlib.md5((ROOT / "shared" / "site.css").read_bytes()).hexdigest()[:8]
 CSS_LINK = f'  <link rel="stylesheet" href="/shared/site.css?v={_CSS_HASH}">'
+HUGEICONS_LINK = '  <link rel="stylesheet" href="https://use.hugeicons.com/font/icons.css">'
 
 # Breadcrumb divider. Rendered as its own unlinked element so the chevron is
 # not inside the adjacent <a>.
@@ -1536,6 +1537,14 @@ def esca(s) -> str:
     return html.escape(str(s), quote=True)
 
 
+def icon_html(icon: str) -> str:
+    """Render icon HTML for either CSS mask (ic-*) or HugeIcons font (hgi-*) classes."""
+    if icon.startswith("hgi-"):
+        return f'<i class="hgi-stroke {icon}"></i>'
+    else:
+        return f'<span class="ic {icon}"></span>'
+
+
 def indent_block(text: str, pad: str) -> str:
     return "\n".join(pad + line if line else line for line in text.split("\n"))
 
@@ -1597,7 +1606,7 @@ def tags_html(rec: dict) -> str:
         out.append(("ic-home", building_type(p.get("property_class"), p.get("units"))))
     if p.get("stories"):
         s = p["stories"]
-        out.append(("ic-layers", f"{s} stor{'y' if s == 1 else 'ies'}"))
+        out.append(("hgi-stairs-01", f"{s} stor{'y' if s == 1 else 'ies'}"))
     if p.get("zoning"):
         out.append(("ic-plan", f"Zoned {p['zoning']}"))
     if rec.get("public_open_space"):
@@ -1607,11 +1616,11 @@ def tags_html(rec: dict) -> str:
     hs = rec.get("historic_status") or {}
     label = CEQA_LABEL.get((hs.get("ceqa_status_code") or "").strip())
     if label:
-        out.append(("ic-permit", f"Historic status: {label}"))
+        out.append(("hgi-castle-02", f"Historic status: {label}"))
     # After the CEQA classification, which is the general finding: a
     # designation is the specific one, and it is the building's own.
     out.extend(individual_designations(rec))
-    return "\n".join(f'        <li class="tag"><span class="ic {i}"></span>{esc(t)}</li>'
+    return "\n".join(f'        <li class="tag">{icon_html(i)}{esc(t)}</li>'
                      for i, t in out)
 
 
@@ -1619,7 +1628,7 @@ def stats_html(rec: dict) -> str:
     p = rec.get("parcel", {})
     tiles = []
     if p.get("building_area_sqft"):
-        tiles.append(("ic-plan", f"{p['building_area_sqft']:,}<small> sq ft</small>",
+        tiles.append(("hgi-coordinate-01", f"{p['building_area_sqft']:,}<small> sq ft</small>",
                       "Building area"))
     if p.get("lot_area_sqft"):
         tiles.append(("ic-lot", f"{p['lot_area_sqft']:,}<small> sq ft</small>", "Lot area"))
@@ -1631,13 +1640,13 @@ def stats_html(rec: dict) -> str:
             label = f"Rooms · {bath} bath{'' if bath == 1 else 's'}"
         else:
             label = "Rooms"
-        tiles.append(("ic-home", f"{rooms:,}", label))
+        tiles.append(("hgi-door-01", f"{rooms:,}", label))
     elif p.get("units") and p["units"] > 1:
         tiles.append(("ic-home", f"{p['units']:,}", "Residential units"))
     if not tiles:
         return ""
     body = "\n".join(
-        f'    <div class="stat"><span class="ic {i}"></span>'
+        f'    <div class="stat">{icon_html(i)}'
         f'<span class="stat-val">{v}</span>'
         f'<span class="stat-label">{esc(l)}</span></div>' for i, v, l in tiles)
     return f'  <div class="stats">\n{body}\n  </div>\n'
@@ -1759,7 +1768,7 @@ def permit_items(rec: dict, indent: str) -> tuple:
             # A pill only where the status is not the one every other permit
             # has; `PILL` is still read for the muted flag either way.
             meta.append(f'{indent}        <span class="pill {css}">'
-                        f'<span class="ic {icon}"></span>{esc(word)}</span>')
+                        f'{icon_html(icon)}{esc(word)}</span>')
         meta.append(f'{indent}        <a href="https://dbiweb02.sfgov.org/dbipts/default.aspx'
                     f'?page=Permit&amp;PermitNumber={esca(p["number"])}">'
                     f'Permit {esc(p["number"])}</a>')
@@ -2191,7 +2200,7 @@ def one_survey_panel_html(s: dict, indent: str) -> str:
             ("ic-plan", "Current Article 11 rating", s.get("current_article11_rating")),
             ("ic-pin", "Eligible district", s.get("eligible_district")),
             ("ic-pin", "Within district", s.get("existing_district")),
-            ("ic-ruler", "Style", s.get("style")),
+            ("hgi-court-house", "Style", s.get("style")),
             # A survey that attributes the building to an architect or a builder
             # is stating a finding, not repeating `building.architect` — 32 pages
             # carried the builder key with nowhere to render it before the row
@@ -2199,12 +2208,12 @@ def one_survey_panel_html(s: dict, indent: str) -> str:
             # that no row read at all.
             ("ic-ruler", "Architect as surveyed",
              s.get("architect_as_surveyed") or s.get("architect")),
-            ("ic-ruler", "Builder as surveyed",
+            ("hgi-labor", "Builder as surveyed",
              s.get("builder") or s.get("builder_as_surveyed")),
-            ("ic-plan", "Construction", s.get("frame")),
+            ("hgi-crane-tower", "Construction", s.get("frame")),
             ("ic-layers", "Integrity", s.get("physical_integrity")),
             ("ic-calendar", "Year built as surveyed", s.get("year_built_as_surveyed")),
-            ("ic-home", "Address as surveyed", s.get("address_as_surveyed")),
+            ("hgi-location-03", "Address as surveyed", s.get("address_as_surveyed")),
             ("ic-pin", "Parcel as surveyed", s.get("apn_as_surveyed"))):
         if val:
             rows.append((icon, key, str(val)))
@@ -2237,7 +2246,7 @@ def one_survey_panel_html(s: dict, indent: str) -> str:
     if not (rows or footnote):
         return ""
     body = "\n".join(
-        f'{indent}    <div class="spec"><span class="ic {i}"></span>'
+        f'{indent}    <div class="spec">{icon_html(i)}'
         f'<span class="spec-k">{esc(k)}</span>'
         f'<span class="spec-v">{esc(v)}</span></div>' for i, k, v in rows)
     specs = f'{indent}  <dl class="speclist">\n{body}\n{indent}  </dl>\n' if rows else ""
@@ -2277,7 +2286,7 @@ def open_space_panel_html(rec: dict, indent: str) -> str:
         if not rows:
             continue
         body = "\n".join(
-            f'{indent}    <div class="spec"><span class="ic {i}"></span>'
+            f'{indent}    <div class="spec">{icon_html(i)}'
             f'<span class="spec-k">{esc(k)}</span>'
             f'<span class="spec-v">{esc(v)}</span></div>' for i, k, v in rows)
         heading = s.get("name") or "Public open space"
@@ -2654,7 +2663,7 @@ def occupant_panel_html(rec: dict, indent: str) -> str:
         specs += [("ic-clock", k, ", ".join(f"<span>{esc(s)}</span>" for s in v))
                   for k, v in hours]
         body = "".join(
-            f'{indent}      <div class="spec"><span class="ic {i}"></span>'
+            f'{indent}      <div class="spec">{icon_html(i)}'
             f'<span class="spec-k">{esc(k)}</span>'
             f'<span class="spec-v">{v}</span></div>\n' for i, k, v in specs)
         # What the business is, on the muted line under its name. `kinds` is
@@ -2780,7 +2789,7 @@ def glance_panel_html(rec: dict, indent: str) -> str:
                            # A named builder with no named architect is the
                            # normal case for a 19th-century workers' cottage —
                            # the carpenter who put it up is who the record has.
-                           ("ic-ruler", "Builder",
+                           ("hgi-labor", "Builder",
                             with_note(b.get("builder"), b.get("builder_note"))),
                            ("ic-plan", "Developer", b.get("developer")),
                            ("ic-calendar", "Completed", completed),
@@ -2790,7 +2799,7 @@ def glance_panel_html(rec: dict, indent: str) -> str:
                            # survey panel's own "Style" row reads
                            # `historic_survey.style` and is the commoner case;
                            # this is the one for a building no survey reached.
-                           ("ic-ruler", "Style", b.get("style")),
+                           ("hgi-court-house", "Style", b.get("style")),
                            # The tract the lot was sold out of. A standing fact
                            # about the ground, which is why it sits here rather
                            # than on the rail: the subdivision has a date, the
@@ -2813,11 +2822,11 @@ def glance_panel_html(rec: dict, indent: str) -> str:
         rows.append(("ic-value", "Cost when built", f"${int(build_cost):,}"))
     ctype = CONSTRUCTION.get(p.get("construction_type_code"))
     if ctype:
-        rows.append(("ic-plan", "Construction", ctype))
+        rows.append(("hgi-crane-tower", "Construction", ctype))
     if rec.get("street_numbers_on_parcel"):
         # Hand-authored pages sometimes hold these as numbers rather than
         # strings, and a bare join dies on the first int.
-        rows.append(("ic-home", "Street numbers",
+        rows.append(("hgi-hash", "Street numbers",
                      ", ".join(str(n) for n in rec["street_numbers_on_parcel"])))
     also = rec.get("also_addressed") or []
     if also:
@@ -2860,7 +2869,7 @@ def glance_panel_html(rec: dict, indent: str) -> str:
                                f"${a['exemption_value']:,} exempt"
                                if a.get("exemption_value") else None)))
     if a.get("last_sale_date"):
-        rows.append(("ic-value", "Last sale", long_date(a["last_sale_date"])))
+        rows.append(("hgi-sale-tag-02", "Last sale", long_date(a["last_sale_date"])))
     # No historic status row: the hero tag already states it in words, and the
     # row's only addition is the raw CEQA code letter — a citation, which means
     # nothing to a reader on its own. Same reasoning as the district panel's
@@ -2880,7 +2889,7 @@ def glance_panel_html(rec: dict, indent: str) -> str:
     if not rows:
         return ""
     body = "\n".join(
-        f'{indent}    <div class="spec"><span class="ic {i}"></span>'
+        f'{indent}    <div class="spec">{icon_html(i)}'
         f'<span class="spec-k">{esc(k)}</span>'
         f'<span class="spec-v">{esc(v)}</span></div>' for i, k, v in rows)
     return (f'{indent}<section class="panel">\n'
@@ -3312,7 +3321,7 @@ def nearby_html(rec: dict, indent: str) -> str:
     if not entries:
         return ""
     out = [f'{indent}<section class="nearby">',
-           f'{indent}  <div class="section-head"><span class="ic ic-pin"></span>'
+           f'{indent}  <div class="section-head"><i class="hgi-stroke hgi-real-estate-01"></i>'
            f'<h2>Nearby</h2></div>',
            f'{indent}  <ul class="place-list">']
     for href, title, cls in entries:
@@ -3544,6 +3553,7 @@ def render_html(rec: dict) -> str:
   <link rel="canonical" href="{SITE}{rec['path']}">
 {ICON_LINKS}
 {CSS_LINK}
+{HUGEICONS_LINK}
   <script type="module" src="/shared/site.js"></script>
 {ld_block(ld)}
 {ld_block(crumbs_ld)}
@@ -3766,7 +3776,7 @@ def place_record_panel_html(rec: dict, indent: str) -> str:
     if not rows:
         return ""
     body = "\n".join(
-        f'{indent}    <div class="spec"><span class="ic {i}"></span>'
+        f'{indent}    <div class="spec">{icon_html(i)}'
         f'<span class="spec-k">{esc(k)}</span>'
         f'<span class="spec-v">{esc(v)}</span></div>' for i, k, v in rows)
     return (f'{indent}<section class="panel">\n'
@@ -3856,7 +3866,7 @@ def render_place_html(rec: dict) -> str:
     stats = ""
     if tiles:
         stats = ('  <div class="stats">\n' + "\n".join(
-            f'    <div class="stat"><span class="ic {i}"></span>'
+            f'    <div class="stat">{icon_html(i)}'
             f'<span class="stat-val">{v}</span>'
             f'<span class="stat-label">{esc(l)}</span></div>' for i, v, l in tiles)
             + '\n  </div>\n')
@@ -3905,6 +3915,7 @@ def render_place_html(rec: dict) -> str:
   <link rel="canonical" href="{SITE}{rec['path']}">
 {ICON_LINKS}
 {CSS_LINK}
+{HUGEICONS_LINK}
   <script type="module" src="/shared/site.js"></script>
 {ld_block(ld)}
 {ld_block(crumbs_ld)}
@@ -4664,7 +4675,7 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
     (street_dir / "index.md").write_text("\n".join(md), encoding="utf-8")
 
     stat_html = "\n".join(
-        f'    <div class="stat"><span class="ic {i}"></span><span class="stat-val">{v}</span>'
+        f'    <div class="stat">{icon_html(i)}<span class="stat-val">{v}</span>'
         f'<span class="stat-label">{esc(l)}</span></div>' for i, v, l in tiles)
     list_html = "\n".join(
         f'        <li><a href="{href}/">{esc(title)}</a><br>\n'
@@ -4719,6 +4730,7 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
   <link rel="canonical" href="{SITE}{path}">
 {ICON_LINKS}
 {CSS_LINK}
+{HUGEICONS_LINK}
   <script type="module" src="/shared/site.js"></script>
 {ld_block(breadcrumb_ld([(city_name, f"/{ctx['city']}/"),
                          (area_name, f"/{ctx['city']}/{ctx['area']}/"),
@@ -5187,6 +5199,7 @@ def hub_shell(path: str, title: str, desc: str, crumbs: str, main_html: str,
   <link rel="canonical" href="{SITE}{path}">
 {ICON_LINKS}
 {CSS_LINK}
+{HUGEICONS_LINK}
   <script type="module" src="/shared/site.js"></script>{ld_blocks}
 </head>
 <body>
@@ -5214,7 +5227,7 @@ def hub_shell(path: str, title: str, desc: str, crumbs: str, main_html: str,
 
 def stat_tiles_html(tiles: list, indent: str) -> str:
     return "\n".join(
-        f'{indent}<div class="stat"><span class="ic {i}"></span>'
+        f'{indent}<div class="stat">{icon_html(i)}'
         f'<span class="stat-val">{v}</span>'
         f'<span class="stat-label">{esc(label)}</span></div>'
         for i, v, label in tiles)
@@ -5338,7 +5351,7 @@ def write_district_hub(dist_dir: Path, name: str, members: list) -> bool:
     pos = (d.get("period_of_significance") or "").strip()
     if pos and pos.upper() != "N/A":
         tags.append(("ic-calendar", f"Significant {pos}"))
-    tags_block = "\n".join(f'    <li class="tag"><span class="ic {i}"></span>'
+    tags_block = "\n".join(f'    <li class="tag">{icon_html(i)}'
                            f'{esc(label)}</li>' for i, label in tags)
 
     aside = ""
