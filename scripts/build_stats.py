@@ -508,9 +508,8 @@ def render(s):
   <p class="feedback-cta">This page is generated. Run
   <a href="{REPO}/blob/main/scripts/build_stats.py">scripts/build_stats.py</a>
   to rebuild it from the repository.</p>
-  <p class="colophon">Part of <a href="/">Know This Place</a>, a community
-  encyclopedia of the built environment. Facts are cited; pages are reviewed
-  by people. <a href="{REPO}">Source</a>.</p>
+  <p class="colophon">Know This Place is an
+  <a href="{REPO}">open source</a> project by <a href="https://stanfordrosenthal.com">Stanford Rosenthal</a>.</p>
 </footer>
 </body>
 </html>
