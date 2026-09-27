@@ -1,63 +1,81 @@
 {
-  "source": "sn85066387-1911-building-contracts",
   "source_id": "loc-newspapers",
-  "batch": "1911-full-year",
-  "kind": "building_contracts_pre-dbi",
-  "date_mined": "2026-09-27",
-  "date_range": [
-    "1911-01-01",
-    "1911-12-31"
-  ],
-  "extraction_notes": {
-    "format": "Owner with Contractor\u2014Description; Amount",
-    "address_styles": [
-      "Street number + street name (e.g., '3003 California')",
-      "Corner notation (e.g., 'NE corner of Post and Van Ness')",
-      "Metes-and-bounds with lot dimensions (N/S/E/W values)"
-    ],
-    "ocr_quality": "Poor to fair; frequent corruption in owner/contractor names, address text",
-    "sample_entries": [
-      {
-        "raw": "'\u2022'Can's Investment companylwlthi Western 'engi... H. O. Harrison bulldlnj at XF. corner of \u2022 Post. street and Van Ness avenue,\" N 120 by V. 240:\u00ab: $1?.4J0.",
-        "reconstructed": "Can's Investment Company with [contractors] \u2014 work at H.O. Harrison building at NE corner of Post and Van Ness Avenue \u2014 $12,450 (estimated)",
-        "parts": {
-          "owner": "Can's Investment Company",
-          "location": "NE corner of Post and Van Ness Avenue",
-          "amount": "$12,450 (OCR corruption: '1?.4J0')"
-        }
-      },
-      {
-        "raw": "-Myrtle Cample!! with*Reese & Rnuntree^-tjn fi\u00bbslieil excavating... two story frame building in ,N, line < of California street.\u2022 30:3 W of SUth avenue,. N 87, W 27:8, S 80:0 8-10, D 27;0^ $3,100.",
-        "reconstructed": "Myrtle Campbell with Reese & Rountree \u2014 excavating, concrete, plastering, painting for 2-story frame building on N line of California St, 30:3 W of 50th Ave \u2014 $3,100",
-        "parts": {
-          "owner": "Myrtle Campbell",
-          "contractor": "Reese & Rountree",
-          "address": "California Street (metes-and-bounds)",
-          "amount": "$3,100"
-        }
-      }
-    ]
-  },
+  "batch": "sn85066387-1911-building-contracts",
+  "read_on": "2026-09-27",
+  "notes": "Sampled January 1911 Saturday Real Estate building contracts sections as feasibility assessment. Located 37 pages across 4 Saturdays with BUILDING CONTRACTS header. Format confirmed: 'Owner with Contractor\u2014Description; $Amount'. OCR quality is moderate to heavy corruption in owner/contractor names but street numbers mostly readable and metes-and-bounds notation preserved. Two sample entries extracted and documented. Extraction strategy mapped: high-confidence entries are street numbers (~30-40% of total); remaining entries require corner.py tool. Estimated 80-120 entries for January, extrapolated to 800-1200 for full year. Data structure ready for parser implementation in next session.",
   "coverage": {
-    "january_saturdays": 4,
-    "january_pages_with_contracts": 37,
-    "estimated_total_entries_january": "80-120",
-    "estimated_total_entries_year": "800-1200"
+    "unit": "pages",
+    "examined": 37,
+    "mentions": 0,
+    "remaining": "Sampling complete for January only; full year (1911) awaiting parser implementation. 1912-1913 blocked by Cloudflare access issues on bulk OCR endpoint."
   },
-  "extraction_strategy": [
-    "1. High-confidence entries: street numbers (e.g., 3003, 123, etc.) \u2014 ~30-40% of total",
-    "2. OCR-aware parser: handle common corruptions (l/1, rn/m, etc.)",
-    "3. Address resolution: street numbers to EAS resolution straightforward; corners/metes-and-bounds use corner.py tool",
-    "4. Low-confidence entries: defer to manual review or mark unresolved"
-  ],
-  "findings": [],
-  "status": "sampled_not_extracted",
-  "next_steps": [
-    "Build OCR-aware extraction regex for high-confidence entries",
-    "Process all January pages to establish pattern consistency",
-    "Extend to full year (Feb-Dec)",
-    "Run resolve_eas.py on street-number entries",
-    "Use corner.py for corner/offset entries",
-    "Publish resolved entries to pages"
+  "findings": [
+    {
+      "id": "sn85066387-1911-jan-sample-001",
+      "date": "1911-01-07",
+      "date_precision": "day",
+      "kind": "building contracts",
+      "address_as_written": "NE corner of Post and Van Ness Avenue, N 120 by V 240",
+      "description": "Can's Investment Company with contractors (Western engineering and water supply company, Otla elevator company, others) \u2014 elevator work, sheet metal work, plumbing, painting, electric work, plumbing for H.O. Harrison building. Lot dimensions: N 120 by V 240.",
+      "extra": {
+        "ocr_corruption": "Original: 'Can's Investment companylwlthi...'; reconstructed owner",
+        "amount_estimated": "$12,450 (OCR shows: $1?.4J0)"
+      },
+      "citation": {
+        "label": "San Francisco Call, Building Contracts section, Saturday Real Estate page",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1911-01-07/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1911/01/07/ed-1/seq-13/ocr.txt",
+        "locator": "Saturday, January 7, 1911, page 13, Building Contracts section, lines 1503-1512"
+      },
+      "raw": {
+        "text": "'\u2022'Can's Investment companylwlthi Western 'engi- neering and water supply company, Otla elevator company. t Ideal cornice -\u2022 company,. William ' F. Wilson; company,' M. Colin * company. ; Standard eleetrle construction. company - air] W. P. Fuller fc Co.; Kewanee water sj\u00bbtem\u2014Elevator work. sheet metal work,; plumbing, palating, , electric work, pluzinp for. H. O. Harrison bulldlnj at XF. corner of \u2022 Post. street and Van Ness avenue,\" N 120 by V. 240:\u00ab: $1?.4J0."
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "unresolved",
+        "method": "Corner notation with lot dimensions; requires corner.py tool to resolve to parcel. Post and Van Ness is known intersection in SF.",
+        "checked_on": "2026-09-27",
+        "note": "Address is corner + lot dimensions, not street number. OCR corruption in contractor names. Awaiting corner.py resolution."
+      },
+      "publish": {
+        "status": "pending",
+        "note": "Awaiting corner.py resolution and address confirmation."
+      }
+    },
+    {
+      "id": "sn85066387-1911-jan-sample-002",
+      "date": "1911-01-07",
+      "date_precision": "day",
+      "kind": "building contracts",
+      "address_as_written": "N line of California street, 30:3 W of 50th avenue",
+      "street_name": "CALIFORNIA",
+      "street_type": "ST",
+      "description": "Myrtle Campbell with Reese & Rountree \u2014 unfinished excavating and unfinished concrete work, plastering, painting for 2-story frame building. Lot dimensions: N 87, W 27:8, S 80:0 8-10, D 27:0.",
+      "extra": {
+        "ocr_reconstruction": "Original: 'Myrtle Cample!!' and 'Rnuntree^'; names reconstructed",
+        "amount": "$3,100",
+        "lot_dimensions": "N 87, W 27:8, S 80:0 8-10, D 27:0"
+      },
+      "citation": {
+        "label": "San Francisco Call, Building Contracts section, Saturday Real Estate page",
+        "url": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1911-01-07/",
+        "corpus_path": "research/corpora/loc-newspapers/txt/sn85066387/1911/01/07/ed-1/seq-13/ocr.txt",
+        "locator": "Saturday, January 7, 1911, page 13, Building Contracts section, lines 1513-1518"
+      },
+      "raw": {
+        "text": "-Myrtle Cample!! with*Reese & Rnuntree^-tjn fi\u00bbslieil excavating and unfinished concrete work, plastering, painting, etc.. for a two story frame building in ,N, line < of California street.\u2022 30:3 W of SUth avenue,. N 87, W 27:8, S 80:0 8-10, 1) , 27;0^ $3,100."
+      },
+      "confidence": "medium",
+      "resolution": {
+        "status": "unresolved",
+        "method": "Partial street number '30:3' (likely 303 or 3003) with lot notation; OCR corruption makes number unreliable; requires corner.py lookup with lot dimensions for resolution.",
+        "checked_on": "2026-09-27",
+        "note": "Address mixes street number notation with lot dimensions. Requires OCR correction of number and corner.py tool for resolution."
+      },
+      "publish": {
+        "status": "pending",
+        "note": "Awaiting OCR correction and corner.py resolution."
+      }
+    }
   ]
 }
