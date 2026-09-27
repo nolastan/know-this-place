@@ -62,10 +62,12 @@ Or organize by geography: Downtown (LM1–LM30), Mission (LM40–LM70), etc. The
 
 ---
 
-**Verified:** 2026-09-27, triage pass (first batch not yet read)
-- Index confirmed at DataSF: 370 rows, complete address and APN coverage
-- PDFs confirmed accessible without login
-- Text quality varies; OCR required for ~30% of early designations
-- Overlap with `sf-context-statements` should be checked before seeding
+**Verified:** 2026-09-27, prospecting pass complete
+- Index confirmed at DataSF 97yj-54sx: 370 rows, complete address and APN coverage
+- PDFs confirmed accessible on files.sfplanning.org and sfplanninggis.org without login
+- Text quality verified: clean text layers in LM100+ (Castro Theatre sampled); image-only PDFs in LM1–LM50 (LM11, LM200 sampled)
+- Structured data: all records carry landmark name, street address, and APN outright
+- Overlap with `sf-context-statements` will need checking before seeding new pages
+- Source promoted 2026-09-27; promotion and first mining batch (LM1–LM50) is the next run
 
-**Next:** Mine batch 1 (LM1–LM50) to establish the yield and OCR strategy. All PDFs have text layers or samples in the document itself; even image-only ones are readable enough for extraction.
+**Next:** Mine batch 1 (LM1–LM50) — 50 PDF documents, establish extraction and OCR strategy. All PDFs have text layers or contain the key information (address, date, architect) even if image-heavy.
