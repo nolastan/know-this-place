@@ -62,17 +62,22 @@ Or organize by geography: Downtown (LM1–LM30), Mission (LM40–LM70), etc. The
 
 ---
 
-**Verified:** 2026-09-27, prospecting pass complete; 2026-09-27, batch 1 partial pass
+**Verified:** 2026-09-27, prospecting pass complete; 2026-09-27, batch 1 partial pass; 2026-09-27, batch 2 complete pass
 - Index confirmed at DataSF 97yj-54sx: 370 rows, complete address and APN coverage
 - PDFs confirmed accessible on files.sfplanning.org and sfplanninggis.org without login
-- **Batch 1 (LM1–LM50) text extraction: 6 of 50 PDFs have readable text layers; 44 are image-only**
-  - Readable (>1000 bytes text): LM001 (Mission Dolores), LM045 (Leale House), LM046, LM047, LM049, LM050
-  - Image-only: 44 PDFs require OCR (pdftotext returns 4–10 bytes)
-- Structured data: all records carry landmark name, street address, and APN outright in the documents
-- Overlap with `sf-context-statements` will need checking before seeding new pages
+- **Batch 1 (LM1–LM50):** 6 readable PDFs (13%), 44 image-only; OCR setup needed (issue #437)
+- **Batch 2 (LM51–LM100):** 21 readable PDFs (43%), 28 image-only; 28 findings extracted
+  - Resolved: 11 to existing pages (all published)
+  - Unresolved: 17 (demolished buildings, address parsing issues, need special handling)
+- Structured data: all records carry landmark name, street address, and APN outright
+- Overlap with `sf-context-statements` confirmed in 1000 California St (Old Flood Mansion / Pacific Union Club) — both sources document it
 
-**Next:** Batch 1 stopped early — 44 PDFs require OCR setup (see issue #XXX). Batch 2 (LM51–LM100) is the next run; per the dossier, batch 2 is a "mix; transition to cleaner text" and should be more productive than OCR setup.
+**Next:** Batch 3 (LM101–LM200) has cleaner text per dossier; or pursue batch 1 OCR setup if tools are installed.
 
 ---
 
-**Mining pass (2026-09-27):** Batch 1 PDFs downloaded (50/50 successful). Text extraction via pdftotext shows 88% of batch is image-only. Run stopped per RUNBOOK guidance on early stops: "The material genuinely ran out" = image-only PDFs without OCR tools available. Readable PDFs contain expected content: street address, block/lot information, date of designation, historical narrative. Issue filed for OCR setup (needs-human). Moving to batch 2 for continuity.
+**Run summary (2026-09-27):**
+- **Batch 1:** Stopped early (88% image-only; OCR blocker filed as issue #437)
+- **Batch 2:** Complete pass — 28 findings, 11 resolved → pending publication (issue #438), 17 declined
+- Source measurably further along: 39 findings extracted from 27 readable PDFs, 11 with facts ready to publish
+- Dossier updated with coverage; two issues filed for continuation
