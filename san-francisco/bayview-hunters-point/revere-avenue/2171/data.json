@@ -1,0 +1,91 @@
+{
+  "address": "2171 Revere Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/revere-avenue/2171/",
+  "apn": "5347046",
+  "block": "5347",
+  "lot": "046",
+  "eas_baseid": "376535",
+  "coordinates": {
+    "lat": 37.737519,
+    "lng": -122.401014
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2800,
+    "building_area_sqft": 1107,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Silver Terrace",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 2171 REVERE              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 497191,
+    "assessed_improvement_value": 213081,
+    "last_sale_date": "2002-08-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=REVERE&street_type=AVE&address_number=2171",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5347046&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5347&lot=046",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5347046",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-environmental-review-bayviewhunterspo2004sanf",
+      "name": "San Francisco Redevelopment Agency, Bayview Hunters Point Redevelopment Projects and Rezoning: Draft Environmental Impact Report, File No. 1996.546E, October 19, 2004.",
+      "query": "https://archive.org/details/bayviewhunterspo2004sanf",
+      "retrieved": "2026-09-27"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Bayview Hunters Point redevelopment survey (2004)",
+      "source": "sf-environmental-review-bayviewhunterspo2004sanf",
+      "entries": [
+        {
+          "address_as_surveyed": "2171 Revere Avenue",
+          "description": "Residence"
+        }
+      ],
+      "style": "Craftsman/Vernacular",
+      "year_built_as_surveyed": "c. 1920"
+    }
+  ]
+}

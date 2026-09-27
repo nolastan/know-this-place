@@ -11,9 +11,11 @@ San Francisco's south-eastern quarter, settled from the 1860s as the industrial 
 - [Bishop Street](bishop-street/) — 1 building, built 1922.
 - [Brussels Street](brussels-street/) — 1 building, built 1900.
 - [Carroll Avenue](carroll-avenue/) — 1 building, built 2016.
+- [Cesar Chavez Street](cesar-chavez-street/) — 1 building, built 1900.
 - [Charter Oak Avenue](charter-oak-avenue/) — 1 building, built 1956.
 - [Dorman Avenue](dorman-avenue/) — 1 building, built 1947.
 - [Earl Street](earl-street/) — 1 building, built 1947.
+- [Egbert Avenue](egbert-avenue/) — 2 buildings, built 1900–1910.
 - [Evans Avenue](evans-avenue/) — 1 building, built 1978.
 - [Fitzgerald Avenue](fitzgerald-avenue/) — 1 building, built 1962.
 - [Gilman Avenue](gilman-avenue/) — 1 building, built 1925.
@@ -24,18 +26,24 @@ San Francisco's south-eastern quarter, settled from the 1860s as the industrial 
 - [Hunters Point Boulevard](hunters-point-boulevard/) — 1 building, built 1961.
 - [Industrial Street](industrial-street/) — 1 building, built 1956.
 - [Ingalls Street](ingalls-street/) — 4 buildings, built 1920–1932.
+- [Ingerson Avenue](ingerson-avenue/) — 3 buildings, built 1913–1915.
 - [Innes Avenue](innes-avenue/) — 3 buildings, built 1890–1920; 1 in the India Basin Scow Schooner Boatyard Vernacular Cultural Landscape.
+- [Jamestown Avenue](jamestown-avenue/) — 2 buildings, built 1900–1923.
+- [Jennings Street](jennings-street/) — 1 building, built 1915.
 - [Jerrold Avenue](jerrold-avenue/) — 2 buildings, built 1963.
 - [Keith Street](keith-street/) — 1 building, built 2004.
+- [Key Avenue](key-avenue/) — 1 building, built 1913.
 - [Kirkwood Avenue](kirkwood-avenue/) — 7 buildings, built 1900–1941.
 - [Kiska Road](kiska-road/) — 1 building, built 1959.
 - [La Salle Avenue](la-salle-avenue/) — 15 buildings, built 1900–1994.
 - [Lane Street](lane-street/) — 2 buildings, built 1900–1908.
 - [Latona Street](latona-street/) — 1 building, built 1900.
 - [Le Conte Avenue](le-conte-avenue/) — 1 building, built 1930.
+- [Marin Street](marin-street/) — 1 building, built 1942.
 - [Mckinnon Avenue](mckinnon-avenue/) — 18 buildings, built 1885–1923.
 - [Mendell Street](mendell-street/) — 3 buildings, built 1908–1941.
 - [Middle Point Road](middle-point-road/) — 3 buildings, built 1930–1940.
+- [Napoleon Street](napoleon-street/) — 2 buildings, built 1927–1947.
 - [Newcomb Avenue](newcomb-avenue/) — 15 buildings, built 1890–1946.
 - [Newhall Street](newhall-street/) — 5 buildings, built 1885–1924.
 - [Oakdale Avenue](oakdale-avenue/) — 27 buildings, built 1890–1954.

@@ -1,0 +1,127 @@
+{
+  "address": "2165 Revere Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/revere-avenue/2165/",
+  "apn": "5347047",
+  "block": "5347",
+  "lot": "047",
+  "eas_baseid": "376536",
+  "coordinates": {
+    "lat": 37.737461,
+    "lng": -122.400912
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 4,
+    "bedrooms": 5,
+    "lot_area_sqft": 4400,
+    "building_area_sqft": 2015,
+    "basement_area_sqft": 890,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Silver Terrace",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 2165 REVERE              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 861794,
+    "assessed_improvement_value": 369336,
+    "last_sale_date": "2016-01-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201404042466",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-04-04",
+      "status_date": "2014-11-02",
+      "estimated_cost": 56600,
+      "revised_cost": 70000,
+      "description": "legalize bathroom, laundry, add 3 bedrooms, family room, bath room at 1st flor per plan, add deck and stair at rear",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201402188770",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-02-18",
+      "status_date": "2014-09-24",
+      "estimated_cost": 39700,
+      "revised_cost": 39700,
+      "description": "remodel kitchen, two & half bathrooms & replace interior finished with 5/8\" typ. \"x\" gyp. bd. @ 2/f. no change on walls.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201402138474",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-02-13",
+      "status_date": "2014-08-20",
+      "estimated_cost": 800,
+      "revised_cost": 500,
+      "description": "remodel kitchen cabinets.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=REVERE&street_type=AVE&address_number=2165",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5347047&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5347&lot=047",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5347047",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-environmental-review-bayviewhunterspo2004sanf",
+      "name": "San Francisco Redevelopment Agency, Bayview Hunters Point Redevelopment Projects and Rezoning: Draft Environmental Impact Report, File No. 1996.546E, October 19, 2004.",
+      "query": "https://archive.org/details/bayviewhunterspo2004sanf",
+      "retrieved": "2026-09-27"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Bayview Hunters Point redevelopment survey (2004)",
+      "source": "sf-environmental-review-bayviewhunterspo2004sanf",
+      "entries": [
+        {
+          "address_as_surveyed": "2165 Revere Avenue",
+          "description": "Residence"
+        }
+      ],
+      "style": "Prairie/Vernacular",
+      "year_built_as_surveyed": "c. 1925"
+    }
+  ]
+}

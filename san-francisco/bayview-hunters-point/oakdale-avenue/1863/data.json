@@ -1,0 +1,139 @@
+{
+  "address": "1863 Oakdale Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/oakdale-avenue/1863/",
+  "apn": "5320022",
+  "block": "5320",
+  "lot": "022",
+  "eas_baseid": "375458",
+  "coordinates": {
+    "lat": 37.737198,
+    "lng": -122.395434
+  },
+  "parcel": {
+    "year_built": 1909,
+    "units": 2,
+    "stories": 3,
+    "rooms": 9,
+    "bathrooms": 3,
+    "lot_area_sqft": 2312.5,
+    "building_area_sqft": 2714,
+    "lot_depth_ft": 92.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Silver Terrace",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1863 OAKDALE             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 348515,
+    "assessed_improvement_value": 232338,
+    "last_sale_date": "2010-02-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201202023414",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-02-02",
+      "status_date": "2012-02-23",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "reduce fence to 6', upper portion at least 75% open to comply nov#201177415",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201003269062",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-03-26",
+      "status_date": "2010-03-26",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "replace two windows on side of bldg. windwos are not visible form street, u-factor around 0.40.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200901059548",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-01-05",
+      "status_date": "2009-01-06",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "convert (e) living room to new bedroom, convert (e) dining room to new living on 1st floor. convert (e) entertainment to new bedroom with new front windows on basement per plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200601253021",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-01-25",
+      "status_date": "2006-03-23",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew expired pa# 2004/07/13/8612 & pa# 2005/04/04/9023 for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200504049023",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-04-04",
+      "status_date": "2006-03-23",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "renew appl#200407138612 for remaining work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200407138612",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-07-13",
+      "status_date": "2005-04-08",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "add 1 entertainment room, 1 study room, 1 full bath, 1 storage& 1 laundry room on exist grd fl.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=OAKDALE&street_type=AVE&address_number=1863",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5320022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5320&lot=022",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5320022",
+      "retrieved": "2026-09-27"
+    }
+  ]
+}

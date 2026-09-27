@@ -1,0 +1,119 @@
+{
+  "address": "1269 Shafter Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/shafter-avenue/1269/",
+  "apn": "4792020A",
+  "block": "4792",
+  "lot": "020A",
+  "eas_baseid": "372653",
+  "coordinates": {
+    "lat": 37.727301,
+    "lng": -122.384679
+  },
+  "parcel": {
+    "year_built": 1941,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2760,
+    "building_area_sqft": 1425,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1269 SHAFTER             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 156761,
+    "assessed_improvement_value": 130110,
+    "last_sale_date": "1998-09-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1941",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202307202588",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-07-20",
+      "status_date": "2023-11-20",
+      "estimated_cost": 19232,
+      "revised_cost": 19232,
+      "description": "replace (3) street visible windows at rear. (e) wood (n) wood clad. no size change < .30 max",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9725508",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-12-22",
+      "status_date": "1998-09-25",
+      "estimated_cost": 5160,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "1997–2023",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHAFTER&street_type=AVE&address_number=1269",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4792020A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4792&lot=020A",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4792020A",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-environmental-review-bayviewhunterspo2004sanf",
+      "name": "San Francisco Redevelopment Agency, Bayview Hunters Point Redevelopment Projects and Rezoning: Draft Environmental Impact Report, File No. 1996.546E, October 19, 2004.",
+      "query": "https://archive.org/details/bayviewhunterspo2004sanf",
+      "retrieved": "2026-09-27"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Bayview Hunters Point redevelopment survey (2004)",
+      "source": "sf-environmental-review-bayviewhunterspo2004sanf",
+      "entries": [
+        {
+          "address_as_surveyed": "1269 Shafter Avenue",
+          "description": "Residence"
+        }
+      ],
+      "style": "Art Moderne",
+      "year_built_as_surveyed": "c. 1930"
+    }
+  ]
+}
