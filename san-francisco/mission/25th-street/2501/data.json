@@ -1,0 +1,100 @@
+{
+  "address": "2501 25th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/25th-street/2501/",
+  "apn": "4279001",
+  "block": "4279",
+  "lot": "001",
+  "eas_baseid": "490811",
+  "coordinates": {
+    "lat": 37.751766,
+    "lng": -122.403708
+  },
+  "parcel": {
+    "year_built": 1900,
+    "lot_area_sqft": 7496,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "FIRE STATION",
+    "construction_type_code": "NA",
+    "zoning": "P",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1430 1408 VERMONT             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Individual Landmark, Historic Survey Result",
+    "yearbuilt": "1918",
+    "survey_name": "#37 ENGINE, #9 TRUCK FIREHOUSE",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=ST&address_number=2501",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4279001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4279&lot=001",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4279001",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "article-10-lm187",
+      "name": "San Francisco Planning, Article 10 landmark designation: Landmark No. 187, Firehouse, Engine Co. No. 37, Truck Co. No. 9 (ordinance, Planning Commission resolution and case report)",
+      "query": "https://sfplanninggis.org/docs/landmarks_and_districts/LM187.pdf",
+      "label": "SF Planning, landmark designation",
+      "retrieved": "2026-09-27"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1988",
+      "kind": "designation",
+      "description": "Designated San Francisco Landmark No. 187, Firehouse, Engine Co. No. 37, Truck Co. No. 9.",
+      "source": "article-10-lm187"
+    },
+    {
+      "date": "1918",
+      "kind": "construction",
+      "description": "Completed in 1918 for $34,550 to designs by Clarence R. Ward of Ward & Blohme, under the city architect John Reid Jr.: a one-storey Mission Revival firehouse of brick with terra-cotta trim and a variegated red tile roof — a central range of seven windows between two pedimented wings, the western one with double arched engine doors under a terra-cotta shield bearing \"SFFD\" and a captain's two-trumpet insignia, and Italian lamps at the doors.",
+      "source": "article-10-lm187",
+      "cost": 34550
+    },
+    {
+      "date": "1918–c. 1960",
+      "kind": "occupancy",
+      "description": "The building served continuously as the Mission–Potrero Hill fire station until about 1960, when it became the Fire Department's Bureau of Equipment, and later a store for its utility and maintenance vehicles.",
+      "source": "article-10-lm187"
+    }
+  ],
+  "city_landmark": {
+    "name": "Firehouse, Engine Co. No. 37, Truck Co. No. 9",
+    "number": 187,
+    "source": "article-10-lm187"
+  },
+  "building": {
+    "architect": "Clarence R. Ward (Ward & Blohme), with John Reid Jr., city architect"
+  }
+}

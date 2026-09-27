@@ -96,6 +96,31 @@ entry's `name` names the landmark and number, and its `query` is the PDF.
   states one (day precision), else DataSF's `yeardesignated` (year precision).
   The ordinance's final-passage date is not the designation date; the Flood
   Mansion page's 1974-08-02 is the effective date, 30 days after the Mayor signed.
+  Secondary sources often give the **Planning Commission's** year instead: the
+  Fairmont's National Register nomination says 1986, the year the Commission
+  approved it, but the Board finally passed the ordinance on 4 May 1987. Where a
+  page already carries the other year, publish the final passage as its own dated
+  event and say why in `unknowns`, rather than a second "Designated" entry.
+- **Some PDFs are incomplete.** LM160 is one blank page, LM133 one bibliography
+  page, LM102 stops mid case report and LM168 holds only the continuation sheets.
+  Record the designation from DataSF and what the fragment gives; say so in the
+  batch's coverage note.
+- **From about LM160 the case report names the owners of its day in the
+  narrative too** — the builder's granddaughter who owned 198 Haight in 1983, the
+  preservationist who bought 4143 23rd Street in 1966, the last pharmacist of 500
+  Divisadero, the Spreckels heirs of 1989. Leave each out and write the fact
+  around them ("From 1966 the house was a meeting place of…"); `raw.note` says
+  who was left out.
+- **An existing page credit can be an alteration's architect.** The Mark Hopkins
+  Hotel's page credited the hotel to Timothy Pflueger, who designed only the 1939
+  Top of the Mark; the report gives Weeks & Day, and the credit was corrected.
+  Where a report's construction credit disagrees with `building.architect`, read
+  the page's source for that credit before letting "if not already set" keep it.
+- **Campuses, parks and street furniture.** Grace Cathedral's case report is the
+  Cathedral School's (the designation is the whole close, 246/1); the High School
+  of Commerce page is a campus of several buildings. Neither takes a
+  `building.architect` from the report. The Third Street Bridge (No. 194) and the
+  Path of Gold standards (No. 200) have no parcel and stay unresolved.
 
 ## Structure for mining
 
@@ -103,14 +128,20 @@ entry's `name` names the landmark and number, and its `query` is the PDF.
 |---|---|---|---|
 | `batch-1-lm001-lm050` | LM001–LM050 | 1968–1972 | read whole, resolved, published |
 | `batch-2-lm051-lm100` | LM051–LM100 | 1973–1977 | read whole, resolved, published |
-| next | LM101–LM200 | 1977–1990s | PDFs and OCR on disk (`pdf_rest/`, `ocr_rest/`); not read |
-| next | LM201+ | 1990s–2025 | PDFs on disk; mostly text layers; not read |
+| `batch-3-lm101-lm200` | LM101–LM200 | 1977–1991 | read whole, resolved, published |
+| next | LM201+ | 1991–2025 | PDFs on disk (`pdf_rest/`); mostly text layers; not read |
 
 ---
 
-**Verified:** 2026-09-27 — LM001–LM100 read whole (99 reports; No. 93 has no
-index row): 330 findings, 307 resolved, 289 published on 84 pages (6 seeded),
-18 declined as duplicates or undated, 23 unresolved (Belli, Genella, Ghirardelli
-Square, Jessie Street Substation, Lotta's Fountain). The earlier attempt (PR
-#439, closed unmerged) had read only the text-layer reports and published
-nothing; its branch was not built on. **Next:** LM101–LM200.
+**Verified:** 2026-09-27 — LM001–LM200 read whole. **LM001–LM100** (99 reports;
+No. 93 has no index row): 330 findings, 307 resolved, 289 published on 84 pages
+(6 seeded). **LM101–LM200** (98 reports; Nos. 116 and 126 have no row, No. 166 is
+the row mislabelled 65): 232 findings from 92 reports (six gave nothing the page
+lacked), 210 resolved, 205 published on 81 pages (6 seeded: 1265 Battery,
+964 Eddy, 1190 Noe, 893 Wisconsin, 2501 25th Street, 1648 Pacific), 5 declined as
+repeats, 22 unresolved over 10 landmarks — condominiums (Nos. 101, 129, 141,
+168), no EAS address (105, 111), a double house now on two parcels (191), and
+no parcel at all (114, 194, 200). The earlier attempt (PR #439, closed unmerged)
+had read only the text-layer reports and published nothing; its branch was not
+built on. **Next:** LM201 onward, mostly text-layer designation reports of
+1991–2025.

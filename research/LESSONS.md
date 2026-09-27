@@ -2388,3 +2388,20 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   artists a 1968 report treated as alive. Where the building is known by such a
   person's name (the Belli Building), the landmark's official name can still
   be printed; the timeline entry does without the name.
+- **Count the documents read against the index before resolving, not at the
+  close.** A batch of a hundred reports read over several hours in one notes
+  file lost one: LM140, the High School of Commerce, was never written up, and
+  it surfaced only when the coverage figure for the findings file was being
+  computed — after resolve, publish and a full build. It was compiled on its own
+  and appended, which cost a second publish pass and a re-render. *When a batch
+  is read from a list, diff the list against the documents that have notes (or
+  an explicit "nothing new" line) before compiling; a report with no entry at
+  all is a skipped report, not an empty one.*
+- **A page's architect credit can be the architect of an alteration.** The
+  Mark Hopkins Hotel's page carried `building.architect: Timothy Pflueger`,
+  set from a context-statement row about the 1939 Top of the Mark lounge; the
+  hotel is Weeks & Day's. Publishing only "if not already set" would have left
+  the wrong credit standing beside a report that names the right one. *Where a
+  primary source's construction credit disagrees with the page's, find what the
+  page's credit came from; an alteration's designer is a timeline entry, not
+  `building.architect`.*
