@@ -2405,3 +2405,21 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   primary source's construction credit disagrees with the page's, find what the
   page's credit came from; an alteration's designer is a timeline entry, not
   `building.architect`.*
+- **Write one dated fact per entry while reading, not after `--overlap`.** Long
+  modern reports tempt a reader to compress a building's history into one rich
+  paragraph dated by its construction — the bank's founding, its move, the fire,
+  a merger — and `--overlap`'s "by its own date" scan then flags a third of the
+  batch. Article 10 batch 3 needed 26 splits after compiling, batch 4 needed 27
+  even with the lesson in hand. Splitting after the fact costs a second pass
+  over every note and loses the reader's sense of what the source actually
+  dated. *When a sentence in a note needs a second year, it is a second
+  finding: write it as one then. Birth and death years belong in the period,
+  not the prose.*
+- **A landmark number quoted by a context statement is not the landmark
+  number.** The Bayview Hunters Point Area B statement gave 900 Innes Avenue as
+  "City Landmark No. 260, the Dircks Residence"; the page carried that in its
+  `city_landmark` row until the designation report (No. 250, the Shipwright's
+  Cottage) arrived. *Take `city_landmark` numbers only from the city's own list
+  (DataSF `97yj-54sx`) or the designating document. An audit of every page's
+  row against the list by APN is a two-minute script; one run found this case
+  and nothing else.*

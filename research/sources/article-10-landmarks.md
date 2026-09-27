@@ -116,6 +116,24 @@ entry's `name` names the landmark and number, and its `query` is the PDF.
   Top of the Mark; the report gives Weeks & Day, and the credit was corrected.
   Where a report's construction credit disagrees with `building.architect`, read
   the page's source for that credit before letting "if not already set" keep it.
+- **Landmark numbers quoted by context statements can be wrong.** The Bayview
+  Hunters Point Area B statement made 900 Innes Avenue "City Landmark No. 260,
+  the Dircks Residence"; it is No. 250, the Shipwright's Cottage (260 is the Tobin
+  House). An audit of all 190 `city_landmark` rows against DataSF by APN found
+  no other disagreement (bar the LM166 index error above). Our Lady of
+  Guadalupe's page carries a similar "No. 244" in its unknowns.
+- **From LM201 the reports are full designation reports** — Kalman ratings,
+  DPR 523 forms, 10–100 pages of history, owners' names in the text and in
+  permit tables. Read the history, significance and integrity sections whole;
+  the rest is boilerplate. They are also where the timeline temptation is
+  strongest: write one dated fact per entry from the start, or `--overlap`'s
+  "by its own date" scan will send half the batch back (batch 4 needed 27
+  splits before publishing).
+- **A park landmark can span several place pages.** The Murphy Windmill and its
+  millwright's cottage, and the Music Concourse with the Spreckels Temple of
+  Music, each have a place page per structure; the findings name their page, and
+  the park's own parcel page takes only what has no place page (the Park
+  Emergency Hospital, No. 201).
 - **Campuses, parks and street furniture.** Grace Cathedral's case report is the
   Cathedral School's (the designation is the whole close, 246/1); the High School
   of Commerce page is a campus of several buildings. Neither takes a
@@ -129,19 +147,21 @@ entry's `name` names the landmark and number, and its `query` is the PDF.
 | `batch-1-lm001-lm050` | LM001–LM050 | 1968–1972 | read whole, resolved, published |
 | `batch-2-lm051-lm100` | LM051–LM100 | 1973–1977 | read whole, resolved, published |
 | `batch-3-lm101-lm200` | LM101–LM200 | 1977–1991 | read whole, resolved, published |
-| next | LM201+ | 1991–2025 | PDFs on disk (`pdf_rest/`); mostly text layers; not read |
+| `batch-4-lm201-lm250` | LM201–LM250 | 1991–2008 | read, resolved, published |
+| next | LM251–LM300 | 2005–2022 | on disk; 6.5 MB of full designation reports; not read |
+| next | LM301+ | 2022–2025 | on disk; not read |
 
 ---
 
-**Verified:** 2026-09-27 — LM001–LM200 read whole. **LM001–LM100** (99 reports;
-No. 93 has no index row): 330 findings, 307 resolved, 289 published on 84 pages
-(6 seeded). **LM101–LM200** (98 reports; Nos. 116 and 126 have no row, No. 166 is
-the row mislabelled 65): 232 findings from 92 reports (six gave nothing the page
-lacked), 210 resolved, 205 published on 81 pages (6 seeded: 1265 Battery,
-964 Eddy, 1190 Noe, 893 Wisconsin, 2501 25th Street, 1648 Pacific), 5 declined as
-repeats, 22 unresolved over 10 landmarks — condominiums (Nos. 101, 129, 141,
-168), no EAS address (105, 111), a double house now on two parcels (191), and
-no parcel at all (114, 194, 200). The earlier attempt (PR #439, closed unmerged)
-had read only the text-layer reports and published nothing; its branch was not
-built on. **Next:** LM201 onward, mostly text-layer designation reports of
-1991–2025.
+**Verified:** 2026-09-27 — LM001–LM250 read. **LM001–LM100** (99 reports):
+330 findings, 307 resolved, 289 published on 84 pages (6 seeded).
+**LM101–LM200** (98 reports): 232 findings, 210 resolved, 205 published on 81
+pages (6 seeded). **LM201–LM250** (45 reports; Nos. 216, 219, 224, 230, 240 have
+no row): 190 findings, 171 resolved, 170 published on 40 pages (1 seeded, the
+Garfield Building at 938 Market), 1 declined as a repeat, 19 unresolved over 6
+landmarks — the Golden Gate Bridge, the Fireboat House, the Golden Triangle
+lights (no parcel), the Filbert Street cottages and the Chronicle Building
+(condominiums), and the Forest Hill station (no EAS address). Corrected: Balboa
+High's architect (three firms, not Bakewell alone) and 900 Innes Avenue's
+landmark number (250, not 260). The earlier attempt (PR #439, closed unmerged)
+was not built on. **Next:** LM251–LM300.
