@@ -688,7 +688,7 @@
   does not print the list, which is in the Heritage survey it cites.
 
 - **Verified:** 2026-09-27, eleventh run: the four tables left unmined inside
-  the area-plan documents, 320 findings in `area-plan-tables.json`, 250
+  the area-plan documents, 320 findings in `area-plan-tables.json`, 257
   published. **Bayview Hunters Point DEIR (2004) Appendix B, Table B-1** —
   Carey & Company's reconnaissance survey matrix, six fold-out leaves
   (600–610), 252 rows: 251 numbered buildings with construction date (mostly
@@ -696,9 +696,11 @@
   unnumbered bridge. 226 resolved; 216 published as a second survey panel
   ("Bayview Hunters Point redevelopment survey (2004)": style, year built as
   surveyed, historic use, and the 1976 rating and *Here Today* page where the
-  page lacked them) on 216 pages, **110 of them seeded by this run**; 55 of
+  page lacked them) on 216 pages, **108 of them seeded by this run** (110 with the two below); 55 of
   those pages state in `unknowns` a roll year more than fifteen years after the
-  survey's (never where the roll says 1900, which is a bucket). **Mission Bay
+  survey's (never where the roll says 1900, which is a bucket). 1863 and 1867 Oakdale,
+  which the matrix lists twice with different dates, carry that contradiction
+  in `unknowns` instead of a panel. **Mission Bay
   DEIR (1988) Table VI.I.1** — 47 numbered addresses: 20 1976 ratings
   published as timeline entries on 19 pages, the rest declined as already on
   the page or as Heritage-list presence with no rating. **Golden Gate Park
@@ -715,7 +717,7 @@
   **set `extra.record_date` on every row of a modern survey table** — without
   it the renumbering guard refused every circa-1880 house the 2004 matrix
   addresses in 2004's numbers; and **the matrix lists 1863 and 1867 Oakdale
-  twice**, in two activity nodes with different dates and styles — declined,
+  twice**, in two activity nodes with different dates and styles — stated,
   not adjudicated.
 - **Verified:** 2026-09-21, tenth run: the unread draft-stage documents — all
   84 catalogue items never previously read (38 draft EIRs plus 46 initial
