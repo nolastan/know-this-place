@@ -3604,9 +3604,8 @@ def render_html(rec: dict) -> str:
   <p class="feedback-cta">
     <a href="{feedback_url(heading, rec['path'])}">Request an edit</a>
   </p>
-  <p class="colophon">Part of <a href="/">Know This Place</a>, a community
-  encyclopedia of the built environment. Facts are cited; pages are reviewed
-  by people. <a href="{REPO}">Source</a>.</p>
+  <p class="colophon">Know This Place is an
+  <a href="{REPO}">open source</a> project by <a href="https://stanfordrosenthal.com">Stanford Rosenthal</a>.</p>
 </footer>
 </body>
 </html>
@@ -3960,9 +3959,8 @@ def render_place_html(rec: dict) -> str:
   <p class="feedback-cta">
     <a href="{feedback_url(name, rec['path'])}">Request an edit</a>
   </p>
-  <p class="colophon">Part of <a href="/">Know This Place</a>, a community
-  encyclopedia of the built environment. Facts are cited; pages are reviewed
-  by people. <a href="{REPO}">Source</a>.</p>
+  <p class="colophon">Know This Place is an
+  <a href="{REPO}">open source</a> project by <a href="https://stanfordrosenthal.com">Stanford Rosenthal</a>.</p>
 </footer>
 </body>
 </html>
@@ -4758,9 +4756,8 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
     Live on {esc(disp)}, or know a building we should cover next?
     <a href="{feedback_url(disp, path)}">Tell us.</a>
   </p>
-  <p class="colophon">Part of <a href="/">Know This Place</a>, a community
-  encyclopedia of the built environment. Facts are cited; pages are reviewed
-  by people. <a href="{REPO}">Source</a>.</p>
+  <p class="colophon">Know This Place is an
+  <a href="{REPO}">open source</a> project by <a href="https://stanfordrosenthal.com">Stanford Rosenthal</a>.</p>
 </footer>
 </body>
 </html>
@@ -5207,9 +5204,8 @@ def hub_shell(path: str, title: str, desc: str, crumbs: str, main_html: str,
 {sources_block}  <p class="feedback-cta">
     <a href="{feedback_url(feedback_title, path)}">Request an edit</a>
   </p>
-  <p class="colophon">Part of <a href="/">Know This Place</a>, a community
-  encyclopedia of the built environment. Facts are cited; pages are reviewed
-  by people. <a href="{REPO}">Source</a>.</p>
+  <p class="colophon">Know This Place is an
+  <a href="{REPO}">open source</a> project by <a href="https://stanfordrosenthal.com">Stanford Rosenthal</a>.</p>
 </footer>
 </body>
 </html>
