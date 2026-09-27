@@ -239,7 +239,7 @@ img, iframe { max-width: 100%; }
 /* section header: icon + title + trailing hairline */
 .section-head { display: flex; align-items: center; gap: 0.7rem; margin: 2.75rem 0 1.1rem; }
 .section-head h2 { flex: 0 0 auto; }
-.section-head .ic { color: var(--accent); font-size: 1.15rem; }
+.section-head .ic, .section-head i.hgi-stroke { color: var(--accent); font-size: 1.15rem; }
 .section-head::after { content: ""; flex: 1; height: 1px; background: var(--rule); }
 
 /* two-column region (main + aside), stacks on narrow screens */
@@ -282,7 +282,7 @@ main > .panel + .panel { margin-top: 1.25rem; }
 /* tag chips */
 .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.4rem 0 0; padding: 0; list-style: none; }
 .tag { display: inline-flex; align-items: center; gap: 0.35rem; padding: 0 0.25rem 0 0; font-family: var(--sans); font-size: 0.82rem; color: var(--ink); }
-.tag .ic { color: var(--accent); font-size: 0.95rem; }
+.tag .ic, .tag i.hgi-stroke { color: var(--accent); font-size: 0.95rem; }
 
 /* ============================================================= stat band */
 .stats {
@@ -296,7 +296,7 @@ main > .panel + .panel { margin-top: 1.25rem; }
    tiles, never gray blocks, whatever the tile count */
 .stat { padding: 0.95rem 1rem 1rem; display: grid; gap: 0.15rem;
   box-shadow: inset -1px -1px 0 var(--rule); }
-.stat .ic { color: var(--accent); font-size: 1.05rem; margin-bottom: 0.15rem; }
+.stat .ic, .stat i.hgi-stroke { color: var(--accent); font-size: 1.05rem; margin-bottom: 0.15rem; }
 .stat-val { font-family: var(--sans); font-size: 1.55rem; font-weight: 600; line-height: 1.1; color: var(--ink); }
 .stat-val small { font-size: 0.8rem; font-weight: 600; color: var(--muted); }
 .stat-label { font-family: var(--sans); font-size: 0.78rem; color: var(--muted); }
@@ -399,7 +399,7 @@ main > .panel + .panel { margin-top: 1.25rem; }
 /* ============================================================= spec list */
 .speclist { display: grid; gap: 0.55rem; margin: 0; padding: 0; }
 .spec { display: flex; align-items: baseline; gap: 0.6rem; font-family: var(--sans); font-size: 0.88rem; }
-.spec .ic { color: var(--muted); font-size: 0.95rem; align-self: center; }
+.spec .ic, .spec i.hgi-stroke { color: var(--muted); font-size: 0.95rem; align-self: center; }
 .spec-k { color: var(--muted); }
 .spec-v { margin-left: auto; text-align: right; color: var(--ink); font-variant-numeric: tabular-nums; }
 
@@ -575,7 +575,7 @@ main > .panel + .panel { margin-top: 1.25rem; }
   color: var(--accent);
 }
 .offer-code[data-copied] { border-color: var(--ok); }
-.offer-code[data-copied] > .ic { color: var(--ok); }
+.offer-code[data-copied] > .ic, .offer-code[data-copied] > i.hgi-stroke { color: var(--ok); }
 
 /* For text that exists only to be announced — a live region reporting the
    outcome of something the sighted reader can already see. Never for content. */
@@ -612,7 +612,7 @@ ktp-figure { position: relative; }
 .media iframe, .media img { display: block; width: 100%; aspect-ratio: 4 / 3; border: 0; object-fit: cover; }
 .media figcaption { padding: 0.5rem 0.75rem; font-family: var(--sans); font-size: 0.8rem; color: var(--muted); }
 .media-empty { aspect-ratio: 4 / 3; display: grid; place-content: center; justify-items: center; gap: 0.4rem; text-align: center; padding: 1rem; color: var(--muted); }
-.media-empty .ic { font-size: 1.6rem; color: var(--accent); }
+.media-empty .ic, .media-empty i.hgi-stroke { font-size: 1.6rem; color: var(--accent); }
 .media-empty small { font-size: 0.78rem; font-family: var(--sans); max-width: 16rem; }
 /* The locator band — the map that opens an address page, bleeding to the
    viewport's top and side edges inside .map-shell. The figure fills the shell
