@@ -2822,7 +2822,7 @@ def glance_panel_html(rec: dict, indent: str) -> str:
         rows.append(("ic-value", "Cost when built", f"${int(build_cost):,}"))
     ctype = CONSTRUCTION.get(p.get("construction_type_code"))
     if ctype:
-        rows.append(("ic-plan", "Construction", ctype))
+        rows.append(("hgi-crane-tower", "Construction", ctype))
     if rec.get("street_numbers_on_parcel"):
         # Hand-authored pages sometimes hold these as numbers rather than
         # strings, and a bare join dies on the first int.
