@@ -71,3 +71,12 @@ Or organize by geography: Downtown (LM1–LM30), Mission (LM40–LM70), etc. The
 - Source promoted 2026-09-27; promotion and first mining batch (LM1–LM50) is the next run
 
 **Next:** Mine batch 1 (LM1–LM50) — 50 PDF documents, establish extraction and OCR strategy. All PDFs have text layers or contain the key information (address, date, architect) even if image-heavy.
+
+---
+
+**Environment note (2026-09-27):** Batch 1 PDFs downloaded successfully; however, the session environment lacks PDF extraction tools (pdftotext, pdfimages, pdftoppm from Poppler, and Python PDF libraries). Research module expects these tools for handling image-only PDFs. Batch 1 mining requires either:
+1. Environment setup to install Poppler and Python PDF libraries
+2. Manual extraction of the 50 documents (labor-intensive but doable)
+3. Deferral to a session with PDF tools available
+
+Recommend: Set up environment with Poppler (pdftotext, pdfimages, pdftoppm) + Python pdfplumber or PyPDF2, then resume mining.

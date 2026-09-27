@@ -1,13 +1,63 @@
 {
+  "source": "sn85066387-1911-building-contracts",
   "source_id": "loc-newspapers",
-  "batch": "sn85066387-1911-building-contracts",
-  "read_on": "2026-09-27",
-  "coverage": {
-    "unit": "Saturday section pages",
-    "examined": 618,
-    "mentions": 1096,
-    "remaining": "Entries await parsing and address resolution",
-    "note": "Building Contracts subsections from Real Estate and Financial Section"
+  "batch": "1911-full-year",
+  "kind": "building_contracts_pre-dbi",
+  "date_mined": "2026-09-27",
+  "date_range": [
+    "1911-01-01",
+    "1911-12-31"
+  ],
+  "extraction_notes": {
+    "format": "Owner with Contractor\u2014Description; Amount",
+    "address_styles": [
+      "Street number + street name (e.g., '3003 California')",
+      "Corner notation (e.g., 'NE corner of Post and Van Ness')",
+      "Metes-and-bounds with lot dimensions (N/S/E/W values)"
+    ],
+    "ocr_quality": "Poor to fair; frequent corruption in owner/contractor names, address text",
+    "sample_entries": [
+      {
+        "raw": "'\u2022'Can's Investment companylwlthi Western 'engi... H. O. Harrison bulldlnj at XF. corner of \u2022 Post. street and Van Ness avenue,\" N 120 by V. 240:\u00ab: $1?.4J0.",
+        "reconstructed": "Can's Investment Company with [contractors] \u2014 work at H.O. Harrison building at NE corner of Post and Van Ness Avenue \u2014 $12,450 (estimated)",
+        "parts": {
+          "owner": "Can's Investment Company",
+          "location": "NE corner of Post and Van Ness Avenue",
+          "amount": "$12,450 (OCR corruption: '1?.4J0')"
+        }
+      },
+      {
+        "raw": "-Myrtle Cample!! with*Reese & Rnuntree^-tjn fi\u00bbslieil excavating... two story frame building in ,N, line < of California street.\u2022 30:3 W of SUth avenue,. N 87, W 27:8, S 80:0 8-10, D 27;0^ $3,100.",
+        "reconstructed": "Myrtle Campbell with Reese & Rountree \u2014 excavating, concrete, plastering, painting for 2-story frame building on N line of California St, 30:3 W of 50th Ave \u2014 $3,100",
+        "parts": {
+          "owner": "Myrtle Campbell",
+          "contractor": "Reese & Rountree",
+          "address": "California Street (metes-and-bounds)",
+          "amount": "$3,100"
+        }
+      }
+    ]
   },
-  "findings": []
+  "coverage": {
+    "january_saturdays": 4,
+    "january_pages_with_contracts": 37,
+    "estimated_total_entries_january": "80-120",
+    "estimated_total_entries_year": "800-1200"
+  },
+  "extraction_strategy": [
+    "1. High-confidence entries: street numbers (e.g., 3003, 123, etc.) \u2014 ~30-40% of total",
+    "2. OCR-aware parser: handle common corruptions (l/1, rn/m, etc.)",
+    "3. Address resolution: street numbers to EAS resolution straightforward; corners/metes-and-bounds use corner.py tool",
+    "4. Low-confidence entries: defer to manual review or mark unresolved"
+  ],
+  "findings": [],
+  "status": "sampled_not_extracted",
+  "next_steps": [
+    "Build OCR-aware extraction regex for high-confidence entries",
+    "Process all January pages to establish pattern consistency",
+    "Extend to full year (Feb-Dec)",
+    "Run resolve_eas.py on street-number entries",
+    "Use corner.py for corner/offset entries",
+    "Publish resolved entries to pages"
+  ]
 }
