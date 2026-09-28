@@ -1,0 +1,112 @@
+{
+  "source_id": "sf-standard",
+  "batch": "2026-09-28",
+  "read_on": "2026-09-28",
+  "notes": "Four items queued from the 2026-09-28 poll, all four read.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 4,
+    "mentions": 3,
+    "remaining": "none",
+    "note": "“She leads one of SF’s biggest real estate firms, but she can’t afford to live here” named no street address at all."
+  },
+  "findings": [
+    {
+      "id": "2026-09-28-ss-0001",
+      "date": "2026-09-27",
+      "date_precision": "day",
+      "kind": "incident",
+      "address_as_written": "1580 Haight St.",
+      "street_number": "1580",
+      "street_name": "HAIGHT",
+      "street_type": "ST",
+      "description": "A bar owner was arrested after an alleged baseball-bat attack in a dispute over a parking spot outside a bar at 1580 Haight St.",
+      "citation": {
+        "label": "The San Francisco Standard, “Haight bar owner arrested after alleged baseball bat attack over parking spot,” 27 September 2026",
+        "url": "https://sfstandard.com/2026/09/27/mad-dog-in-the-fog-kezar-pub-owner-cyril-hackett-arrested-baseball-bat/",
+        "locator": "opening paragraphs"
+      },
+      "raw": {
+        "text": "…to jail at 1:17 a.m. Saturday, according to the San Francisco Sheriff’s Office. The incident began with a confrontation over parking on Friday outside Further…"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "An arrest is a fact about a person, not the building. AGENTS.md is explicit that a crime or arrest at an address records what happened to the building, never a crime blotter naming or describing the people involved — and this story is entirely about the person arrested. Fails the ten-year test as a building fact."
+      },
+      "resolution": {
+        "status": "rejected",
+        "checked_on": "2026-09-28",
+        "method": "Not resolved: the finding is declined, so no parcel is sought.",
+        "by_hand": true
+      }
+    },
+    {
+      "id": "2026-09-28-ss-0002",
+      "date": "2026-09-27",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "3821 Noriega St.",
+      "street_number": "3821",
+      "street_name": "NORIEGA",
+      "street_type": "ST",
+      "description": "Two Pitchers Brewing Co., which opened in Oakland in 2021, expanded to a Sunset District location at 3821 Noriega St. within the last year, where the piece describes it as frequently packed with regulars and first-time visitors.",
+      "extra": {
+        "tenant": "Two Pitchers Brewing Co.",
+        "opened_relative": "less than a year before this article, per the article"
+      },
+      "citation": {
+        "label": "The San Francisco Standard, “Affordable SF: The cheapest beer in the city is not where you’d expect,” 27 September 2026",
+        "url": "https://sfstandard.com/2026/09/27/affordable-sf-cheapest-beer/",
+        "locator": "body"
+      },
+      "raw": {
+        "text": "the Sunset location at 3821 Noriega St. is doing even better than the duo hoped: It’s frequently packed with a mix of regulars and first-time visitors."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "2082001K",
+        "path": "/san-francisco/sunset-parkside/noriega-street/3821/",
+        "eas_address": "3821 NORIEGA ST",
+        "method": "EAS exact match on 3821 NORIEGA ST → parcel 2082001K; sf-parcels has blklot 2082001K active, 3821–3827 NORIEGA; the 2025 roll records it as commercial retail, built 1948. EAS puts 3821, 3823, 3825, 3827 NORIEGA ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 3821.",
+        "checked_on": "2026-09-28",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "Seeded /san-francisco/sunset-parkside/noriega-street/3821/ from research/manifests/news-2026-09-28.json — parcel 2082001K, no page existed. The headline entry and its citation are on the page, and the card is on the homepage news grid. No exact opening date given, so the article's own date stands in for the event date."
+      }
+    },
+    {
+      "id": "2026-09-28-ss-0003",
+      "date": "2026-09-27",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "988 Market Street",
+      "street_number": "988",
+      "street_name": "MARKET",
+      "street_type": "ST",
+      "description": "The San Francisco Standard's own account of the Warfield Commons grand opening at 988 Market Street — the same event Hoodline covered the same day.",
+      "citation": {
+        "label": "The San Francisco Standard, “A Market Street building is packed with new tenants. None of them are tech companies,” 27 September 2026",
+        "url": "https://sfstandard.com/2026/09/27/warfield-commons-988-market-street-grand-opening/",
+        "locator": "opening paragraphs"
+      },
+      "raw": {
+        "text": "…t Street building is packed with new tenants. None of them are tech companies Warfield Commons opens this weekend with 11 local arts and media tenants…"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Duplicate: one event, one entry. The same Warfield Commons opening is carried by hoodline-2026-09-28 (news/items/hoodline/2026-09-28.json, 2026-09-28-hl-0001) — the fuller account, and the one this batch leaves pending on the same 988 Market Street condominium block this finding would also hit. This account adds the purchase-price discrepancy ($7.8M here vs. $7.3M per CAST) and KALW Executive Director James Kass's estimate of a roughly $45 million pre-pandemic valuation — not recorded, since the latter names an individual and neither is needed alongside the Hoodline account."
+      },
+      "resolution": {
+        "status": "rejected",
+        "checked_on": "2026-09-28",
+        "method": "Not resolved: the finding is declined as a duplicate, so no parcel is sought.",
+        "by_hand": true
+      }
+    }
+  ]
+}
