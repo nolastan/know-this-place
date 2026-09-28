@@ -1,0 +1,101 @@
+{
+  "address": "551 Greenwich Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/greenwich-street/551/",
+  "apn": "0088026",
+  "block": "0088",
+  "lot": "026",
+  "eas_baseid": "276976",
+  "coordinates": {
+    "lat": 37.802117,
+    "lng": -122.408744
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 8,
+    "stories": 2,
+    "rooms": 28,
+    "bathrooms": 8,
+    "lot_area_sqft": 4726,
+    "building_area_sqft": 6056,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Telegraph Hill",
+    "analysis_neighborhood": "North Beach",
+    "property_location_raw": "0557 0551 GREENWICH           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 179004,
+    "assessed_improvement_value": 164212
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9916325",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-08-09",
+      "status_date": "2001-08-27",
+      "estimated_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "1999–2012",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GREENWICH&street_type=ST&address_number=551",
+      "retrieved": "2026-09-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0088026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0088&lot=026",
+      "retrieved": "2026-09-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0088026",
+      "retrieved": "2026-09-28"
+    },
+    {
+      "id": "loc-sf-call-1911-09-13",
+      "name": "The San Francisco Call, 13 September 1911, p. 15",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1911-09-13/ed-1/seq-15/",
+      "retrieved": "2026-09-28"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1911-09-13",
+      "kind": "building contract",
+      "description": "B. Kessler contracted for all work except plumbing, shades, gas and electric fixtures on a two-storey and basement frame building, then going up, at $7,573.",
+      "source": "loc-sf-call-1911-09-13"
+    }
+  ]
+}
