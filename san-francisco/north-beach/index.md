@@ -14,6 +14,7 @@ and the upper reaches of Grant Avenue, which was formerly Dupont Street.
 - [Broadway](broadway/) — 14 buildings, built 1900–1921; 6 in the Jackson Square Historic District Extension.
 - [Calhoun Terrace](calhoun-terrace/) — 1 building, built 1939; 1 in the Telegraph Hill Historic District.
 - [Chestnut Street](chestnut-street/) — 10 buildings, built 1904–1940.
+- [Child Street](child-street/) — 1 building, built 1911.
 - [Columbus Avenue](columbus-avenue/) — 13 buildings, built 1906–1961; 1 in the Washington Square Historic District.
 - [Darrell Place](darrell-place/) — 1 building, built 1986; 1 in the Telegraph Hill Historic District.
 - [Edith Street](edith-street/) — 2 buildings, built 1907–1915.

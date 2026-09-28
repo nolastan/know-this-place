@@ -1,0 +1,156 @@
+{
+  "source_id": "hoodline",
+  "batch": "2026-09-28",
+  "read_on": "2026-09-28",
+  "notes": "Four items queued from the 2026-09-28 poll, all four read.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 4,
+    "mentions": 4,
+    "remaining": "none",
+    "note": "The burglary/shooting story on 22nd Avenue named no street address at all."
+  },
+  "findings": [
+    {
+      "id": "2026-09-28-hl-0001",
+      "date": "2026-09-27",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "988 Market Street",
+      "street_number": "988",
+      "street_name": "MARKET",
+      "street_type": "ST",
+      "description": "Warfield Commons, an 11-tenant arts and media hub anchored by KALW Public Media and the Community Arts Stabilization Trust (CAST), held its grand opening on 27 September 2026 in the 48,313-square-foot former office building the two nonprofits purchased together in 2025. KALW occupies two floors and CAST one; incoming tenants include Psyched! Radio SF and other independent media and literary organizations. A housing conversion of the building had been considered earlier but the developers involved did not secure funding.",
+      "extra": {
+        "building_name": "Warfield Commons",
+        "anchor_tenants": [
+          "KALW Public Media",
+          "Community Arts Stabilization Trust"
+        ],
+        "tenant_count": 11,
+        "sqft_reported": 48313,
+        "purchase_year": 2025,
+        "purchase_price_usd_reported_low": 7300000,
+        "purchase_price_usd_reported_high": 7800000,
+        "former_use": "office building",
+        "prior_housing_conversion_considered": true
+      },
+      "citation": {
+        "label": "Hoodline, “Warfield Commons Opens as CAST and KALW Bet on a Cultural Reuse Model,” 27 September 2026",
+        "url": "https://hoodline.com/2026/09/warfield-commons-opens-as-cast-and-kalw-bet-on-a-cultural-reuse-model/",
+        "locator": "opening paragraphs"
+      },
+      "raw": {
+        "text": "Warfield Commons Opens as CAST and KALW Bet on a Cultural Reuse Model … Warfield Commons opens… at 988 Market Street"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-28",
+        "method": "sf-eas-addresses has 988 MARKET ST but it does not join to one parcel. 988 MARKET ST's coordinates fall in 20 active parcels (0342025, 0342038, 0342035, 0342037…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
+        "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+      },
+      "publish": {
+        "status": "pending",
+        "note": "Blocked: the seeder may not make a page here. 988 Market Street's coordinates fall in 20 active parcels, which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building. The directory contract in the root AGENTS.md defers those. This is a costly one to leave pending: the article gives the building's name (Warfield Commons), its two anchor tenants, its square footage and its 2025 purchase — all ready to go once there is a page to put them on. Worth retrying when the parcel map settles."
+      }
+    },
+    {
+      "id": "2026-09-28-hl-0002",
+      "date": "2026-09-27",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "80 Turk Street",
+      "street_number": "80",
+      "street_name": "TURK",
+      "street_type": "ST",
+      "description": "80 Turk Street is named only as background: the Warfield Commons story recounts that the Luggage Store Gallery and CounterPulse both faced displacement from it in 2013 and were offered below-market leases and a purchase option elsewhere, on their way to explaining the funding model behind the Market Street building the article is actually about. Nothing is established about 80 Turk Street's own building as it stands today.",
+      "citation": {
+        "label": "Hoodline, “Warfield Commons Opens as CAST and KALW Bet on a Cultural Reuse Model,” 27 September 2026",
+        "url": "https://hoodline.com/2026/09/warfield-commons-opens-as-cast-and-kalw-bet-on-a-cultural-reuse-model/",
+        "locator": "body, funding-model background"
+      },
+      "raw": {
+        "text": "…ery and CounterPulse, both facing displacement in 2013. The organizations received below-market leases and an opportunity to purchase their spaces in seven to 10 years; CounterPulse fully owned its…"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Passing background mention for a different building's story (988 Market Street), not reporting about 80 Turk Street itself. Fails the ten-year test as a fact about this building."
+      },
+      "resolution": {
+        "status": "rejected",
+        "checked_on": "2026-09-28",
+        "method": "Not resolved: the finding is declined, so no parcel is sought.",
+        "by_hand": true
+      }
+    },
+    {
+      "id": "2026-09-28-hl-0003",
+      "date": "2026-09-27",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "155 Bovet Rd.",
+      "street_number": "155",
+      "street_name": "BOVET",
+      "street_type": "RD",
+      "description": "Helix and Databricks announced a clinicogenomic-data partnership; the only street address in the piece, 155 Bovet Rd., is in San Mateo, not San Francisco.",
+      "citation": {
+        "label": "Hoodline, “Helix Teams With Databricks to Give Researchers Faster Access to More Than 550,000 Clinicogenomic Records,” 27 September 2026",
+        "url": "https://hoodline.com/2026/09/helix-teams-with-databricks-to-give-researchers-faster-access-to-more-than-550-000-clinicogenomic-records/",
+        "locator": "opening paragraphs"
+      },
+      "raw": {
+        "text": "…Bay Area / San Francisco / Science, Tech & Medicine Helix Teams With Databricks… 155 Bovet Rd."
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Not a San Francisco address — Bovet Road is in San Mateo. Hoodline's own \"San Francisco\" tag outvoted by the address itself, per the screen's geography rule."
+      },
+      "resolution": {
+        "status": "rejected",
+        "checked_on": "2026-09-28",
+        "method": "Not resolved: out of scope (San Mateo, not San Francisco), so no parcel is sought.",
+        "by_hand": true
+      }
+    },
+    {
+      "id": "2026-09-28-hl-0004",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "701 Illinois Street",
+      "street_number": "701",
+      "street_name": "ILLINOIS",
+      "street_type": "ST",
+      "description": "Chula Cafe opened on 12 September 2026 inside the Dogpatch YMCA, the first commercial food and beverage business to operate inside a YMCA of Greater San Francisco branch in the organization's 175-year history. The Dogpatch YMCA itself opened in May 2025 in a rehabilitated historic industrial warehouse at this address — the 15th Bay Area YMCA location and the organization's first newly built San Francisco facility in 30 years. The cafe overlooks Crane Cove Park with outdoor courtyard seating. The article does not name the building's architect, builder or developer.",
+      "extra": {
+        "tenant": "Chula Cafe",
+        "opened_on": "2026-09-12",
+        "host_facility": "Dogpatch YMCA",
+        "host_facility_opened": "2025-05",
+        "former_use": "historic industrial warehouse"
+      },
+      "citation": {
+        "label": "Hoodline, “Dogpatch YMCA Welcomes Chula Cafe, a 150-Year Chiapas Coffee Legacy,” 27 September 2026",
+        "url": "https://hoodline.com/2026/09/dogpatch-ymca-welcomes-chula-cafe-a-150-year-chiapas-coffee-legacy/",
+        "locator": "opening paragraphs"
+      },
+      "raw": {
+        "text": "…la Cafe, a 150-Year Chiapas Coffee Legacy By Emily Johnson Published on September 27, 2026 Source: Google Street View A coffee shop rooted in six generations of a Chiapas farming family has opened it…"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-09-28",
+        "method": "sf-eas-addresses has 701 ILLINOIS ST but it does not join to one parcel. 701 ILLINOIS ST's coordinates fall in 2 active parcels (3941041, 9900068), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
+        "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+      },
+      "publish": {
+        "status": "pending",
+        "note": "Blocked: the seeder may not make a page here. 701 Illinois Street's coordinates fall in 2 active parcels (3941041, 9900068), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building. The directory contract in the root AGENTS.md defers those. Worth retrying if the parcel map settles — note the article's owners are private individuals and are not recorded here regardless."
+      }
+    }
+  ]
+}

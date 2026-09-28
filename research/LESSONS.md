@@ -2420,6 +2420,43 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   — the list is in the Heritage survey it cites. A dossier carried "the Van
   Ness 47-building list" as unmined material for a week. *Before naming a
   table as remaining work, find its first row.*
+- **The *Call*'s Building Contracts list was daily, and a heading search finds
+  half of it.** The dossier had it as weekly; 1911 has it in 286 page-blocks.
+  Its heading is mangled past recognition on many days (`nnlldlnjc
+  Contract*`) or lost in interleaved columns, so a heading search alone missed
+  whole days, and a pass on the entry's own shape (`with CONTRACTOR—WORK …
+  line of …; $AMOUNT`) missed others — 329 of the heading pass's entries were
+  not in the shape pass's output. The union of the two is what was read. *For a recurring
+  column, search on the entry's shape as well as its heading, and count what
+  each pass finds that the other did not.* Then read, don't parse: a location
+  regex got under a third of the OCR'd entries through; reading the blocks
+  into fields got all of them.
+  ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **`corner.py --batch` takes `dir`, and a single candidate still needs its
+  side checked.** A contract says "183 W of Guerrero" and never names the far
+  street, so `dir` measures the block face along the street's own axis from
+  the crossing. Of 242 entries that came back with exactly one parcel matching
+  roll year and offset, 58 had it on the other side of the street — lots face
+  each other at the same offset. *Check each candidate's EAS point against the
+  side the record names (the perpendicular to the street's fitted axis) before
+  calling it placed, and refuse a storey count off by one and a half or more.*
+- **A street-name alias keyed on the name alone crosses streets and avenues.**
+  First Avenue is Arguello Boulevard and First Street is downtown's; an alias
+  table mapping `FIRST` put downtown contracts on Arguello. The same holds for
+  every numbered street and avenue pair EAS files under one name (`27TH` is
+  both). *Carry the record's street type through to the alias.*
+- **`git clean` leaves the gitignored `index.html` of a seeded page behind,
+  and `seed-list` then counts the directory as an existing page.** Undoing a
+  seed with `git clean -fd` removed each new page's `data.json` and left its
+  `index.html`; the re-seed reported "created 0, left 94 existing" and the
+  publish found nothing to write to. *To undo a seed, remove the page
+  directories whole (they hold only generated files and the `data.json`).*
+- **A publish script must insert, not re-sort.** Re-sorting a page's whole
+  `historical_record` after appending reorders entries earlier runs placed by
+  hand (a date range, an undated row), and the diff hides the one line the
+  run added. *Insert the new entry before the first later date and leave the
+  rest where it is.*
+
 - **Write one dated fact per entry while reading, not after `--overlap`.** Long
   modern reports tempt a reader to compress a building's history into one rich
   paragraph dated by its construction — the bank's founding, its move, the fire,

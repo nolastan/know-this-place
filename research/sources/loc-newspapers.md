@@ -6,7 +6,7 @@
 >
 > - **Kind:** newspaper OCR corpus · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 10 batches / 58,620 pages scanned for address mentions in August 2026 (no findings file; see below), and the *Call*'s Real Estate and Financial Section read in full for 1911 and 1912, as held for 1913, and for the whole of 1910 (January–June and July–December batches, then re-read for its owner-only permits, contracts, loans and building sales in `sn85066387-1910-permits.json`), into `findings/loc-newspapers/sn85066387-<year>-real-estate.json`.
+> - **Coverage:** 10 batches / 58,620 pages scanned for address mentions in August 2026 (no findings file; see below), and the *Call*'s Real Estate and Financial Section read in full for 1911 and 1912, as held for 1913, and for the whole of 1910 (January–June and July–December batches, then re-read for its owner-only permits, contracts, loans and building sales in `sn85066387-1910-permits.json`), into `findings/loc-newspapers/sn85066387-<year>-real-estate.json`. The daily Building Contracts lists of 1911 are read in full into `sn85066387-1911-building-contracts.json`.
 > - **Local corpus:** `research/corpora/loc-newspapers/` — `tar/` for the batch OCR tarballs, `txt/<lccn>/<yyyy>/<mm>/<dd>/ed-1/seq-N/ocr.txt` for the extracted pages. A fresh container has none of it.
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -40,6 +40,9 @@ a street number, which is the whole constraint:
   metes and bounds ("east line of Folsom street, 85 feet south of Twentieth"),
   and only gives a street number for **alterations to an existing building**.
   Those numbered entries are few but excellent.
+  It runs **most days**, not weekly, in the Real Estate Transactions column —
+  1911 has it in 286 page-blocks — and the metes-and-bounds entries are
+  placeable after all: see "The 1911 Building Contracts lists" below.
 - **"Real Estate Transactions"** — near-useless as it stands. Entries are
   metes-and-bounds, and the recorded consideration is almost always a nominal
   `$10` or `gift`, not a price. The occasional entry that names a street
@@ -345,6 +348,49 @@ or an offset **and** a lot size — and placed them in bulk with
   rectory lot (0241011); the church is 0241012, filed by EAS as 680 California
   and 614 Grant, and was seeded by this pass.
 
+### The 1911 Building Contracts lists
+
+Read 2026-09-28, every page of 1911. What a run on these lists needs to know:
+
+- **Find the list two ways.** Its heading survives the OCR on about half the
+  days, and when it does it is often unrecognisable (`nnlldlnjc Contract*`,
+  and on other days nothing at all, the column interleaved with shipping news).
+  A heading-free pass on the entry's own shape — `with CONTRACTOR—WORK …
+  (line|corner) of …; $AMOUNT` — finds the rest; the union of the two, merged
+  into page-blocks, is what to read: each found entries the other missed (329
+  of the heading pass's were not in the shape pass's output).
+- **Read, don't regex.** A parser for the location got fewer than a third of
+  the entries through the OCR. Reading each block into fields (side, street,
+  offset, direction, cross street, lot, storeys, material, use, contractor,
+  amount) got all of them, and the reading is what the placement runs on.
+- **The owner comes first and is usually a private person**; the quote starts
+  at "with". Where the owner is an institution or a company — a church, a
+  college, a club, a realty company, the United Railroads, the German House
+  Association, the Olympic Club — it is kept in `extra.owner_firm`, and it is
+  often the best thing in the entry.
+- **A building gets several contracts**, one per trade, over months: the
+  general contract, then plumbing, glazing, elevators, painting. Publish one
+  entry per building (the general contract, else the earliest) and fold the
+  rest in; a page with six plumbing-and-painting rows says less, not more.
+- **Placement is `corner.py --batch` with `dir`**, added for this batch: the
+  record's "183 W of Guerrero" measured along the street from the crossing,
+  with no far street to type. A single parcel matching the roll year within
+  two years and the offset within 4 ft placed 242 entries to one candidate;
+  checking its EAS point against the side of the street the record names
+  refused 58 of them, and a storey count off by one and a half or more
+  refused a few more. One placement landed on a page whose builder was
+  already credited from another source — Hauser and Race at 3771 Mission,
+  which the OCR prints "Hauler ft Race" — and eighteen on pages crediting
+  only an architect, none of them disagreeing with the contract.
+- **Where it fails:** most entries (699) have no parcel on the corner or block
+  face matching the record's lot or offset with a roll year near 1911 —
+  the building replaced, or the lot re-cut. The avenue districts and the
+  north side of the city place best; South of Market and the Mission's
+  alleys, where the lots were redrawn, hardly at all.
+- **"First street" is not "First avenue".** First Avenue is Arguello
+  Boulevard, First Street is downtown's; an alias keyed on the name alone put
+  downtown contracts on Arguello until the street type was carried through.
+
 ### Cautions
 
 - **Verify the number against the cross-streets — the ads hand you the check.**
@@ -470,6 +516,15 @@ or an offset **and** a lot size — and placed them in bulk with
   — folded into its page's existing 1910 entry with the new detail the
   newspaper adds). Batch file
   `findings/loc-newspapers/sn85066387-1910-offsets.json`.)
+- **Verified:** 2026-09-28 (the *Call*'s daily Building Contracts lists for
+  the whole of 1911, from `curiv_betteravia_ver02` and `curiv_angwin_ver02`:
+  8,897 OCR pages scanned, 286 page-blocks holding the list, 1,348 contract
+  entries read, 1,341 findings after 7 reprints collapsed — 175 resolved (167
+  by hand with `corner.py --batch`'s new `dir` mode, 8 on a printed number),
+  1,166 unresolved; 152 published on 152 pages, 94 of them seeded, 23
+  declined, 19 of them other contracts for a building already carrying one.
+  Batch file `findings/loc-newspapers/sn85066387-1911-building-contracts.json`,
+  replacing the two-entry sample of 2026-09-27.)
 - **Coverage:** 1890s and 1900s years scanned in August 2026 for mentions only
   (above); **1910 Real Estate and Financial Section read in full, three
   times over** — numbered/architect/corner entries (#three 1910 batches),
@@ -480,8 +535,8 @@ or an offset **and** a lot size — and placed them in bulk with
   full** (1912 lacks 21 and 28 December, which no batch holds); **1913 read
   as far as the batches hold it** (1–15 February, 16 July–8 December); 1913's
   other months are in no batch on the bulk route. Then the unscanned
-  1897–1899 and 1903–1904 years. The weekly Building Contracts lists in
-  1911–1913 are metes-and-bounds and were read only for named buildings; they
-  are the next `corner.py` batch. The rest of the 1911, 1912 and 1913 paper —
+  1897–1899 and 1903–1904 years. The daily Building Contracts lists are **read
+  for 1911** (above); 1912's and 1913's are the next batches, on the same
+  method. The rest of the 1911, 1912 and 1913 paper —
   the fires and the building-permit lists — is on disk in a session that
   fetched it, and unread.

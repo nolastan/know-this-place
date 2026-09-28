@@ -1,0 +1,126 @@
+{
+  "address": "241 Rivoli Street, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/rivoli-street/241/",
+  "apn": "1288023",
+  "block": "1288",
+  "lot": "023",
+  "eas_baseid": "299941",
+  "coordinates": {
+    "lat": 37.76204,
+    "lng": -122.451467
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1800,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Cole Valley/Parnassus Heights",
+    "analysis_neighborhood": "Haight Ashbury",
+    "property_location_raw": "0000 0241 RIVOLI              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 54250,
+    "assessed_improvement_value": 31366
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201901089850",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-01-08",
+      "status_date": "2019-01-31",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9911988",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-06-16",
+      "status_date": "1999-09-07",
+      "estimated_cost": 20000,
+      "description": "removed concrete cracked retaining walls ,3 sides",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8509582",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-08-30",
+      "status_date": "1985-10-15",
+      "estimated_cost": 950,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8506326",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-06-17",
+      "status_date": "1985-08-05",
+      "estimated_cost": 950,
+      "description": "install 5 alum windows existing frames.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=RIVOLI&street_type=ST&address_number=241",
+      "retrieved": "2026-09-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1288023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1288&lot=023",
+      "retrieved": "2026-09-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1288023",
+      "retrieved": "2026-09-28"
+    },
+    {
+      "id": "loc-sf-call-1911-02-01",
+      "name": "The San Francisco Call, 1 February 1911, p. 17",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1911-02-01/ed-1/seq-17/",
+      "retrieved": "2026-09-28"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1911-02-01",
+      "kind": "building contract",
+      "description": "O. B. Hedstrom contracted for all work except foundation, chimneys, mantels, concrete, plastering, plumbing, painting, hardware, light fixtures and shades on a two-storey and basement frame building, then going up.",
+      "source": "loc-sf-call-1911-02-01"
+    }
+  ]
+}

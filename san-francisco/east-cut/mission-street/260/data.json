@@ -1,0 +1,83 @@
+{
+  "address": "260 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/260/",
+  "apn": "3711010",
+  "block": "3711",
+  "lot": "010",
+  "eas_baseid": "364866",
+  "coordinates": {
+    "lat": 37.791662,
+    "lng": -122.395693
+  },
+  "parcel": {
+    "year_built": 1909,
+    "stories": 3,
+    "rooms": 6,
+    "bathrooms": 4,
+    "lot_area_sqft": 6324,
+    "use": "Commercial Office",
+    "property_class": "Office",
+    "construction_type_code": "C",
+    "zoning": "C3O",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Financial District South",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "property_location_raw": "0000 0260 MISSION             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 8053294,
+    "assessed_improvement_value": 85924776,
+    "last_sale_date": "2021-09-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MISSION&street_type=ST&address_number=260",
+      "retrieved": "2026-09-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3711010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3711&lot=010",
+      "retrieved": "2026-09-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3711010",
+      "retrieved": "2026-09-28"
+    },
+    {
+      "id": "loc-sf-call-1911-09-23",
+      "name": "The San Francisco Call, 23 September 1911, p. 18",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1911-09-23/ed-1/seq-18/",
+      "retrieved": "2026-09-28"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1911-09-23",
+      "kind": "building contract",
+      "description": "A contract was recorded with William F. Wilson company for plumbing and sewering on a three-storey building, at $1,070.",
+      "source": "loc-sf-call-1911-09-23"
+    }
+  ]
+}

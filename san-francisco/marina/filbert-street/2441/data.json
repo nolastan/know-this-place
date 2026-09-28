@@ -1,0 +1,160 @@
+{
+  "address": "2441 Filbert Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/filbert-street/2441/",
+  "apn": "0536028",
+  "block": "0536",
+  "lot": "028",
+  "eas_baseid": "284616",
+  "coordinates": {
+    "lat": 37.79724,
+    "lng": -122.43956
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 1,
+    "stories": 3,
+    "rooms": 7,
+    "bathrooms": 3,
+    "lot_area_sqft": 5083,
+    "building_area_sqft": 3382,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Cow Hollow",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 2441 FILBERT             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 137857,
+    "assessed_improvement_value": 107823
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201705237385",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2017-05-23",
+      "status_date": "2019-01-29",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "remove unpermitted stove on 2nd floor. comply w/ complaint# 201616241",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200007245955",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-07-24",
+      "status_date": "2001-01-24",
+      "estimated_cost": 12060,
+      "revised_cost": 12060,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9910003",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-05-20",
+      "status_date": "1999-08-23",
+      "estimated_cost": 15000,
+      "description": "resingle siding in front and right corner of the house",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9114593",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-08-14",
+      "status_date": "1991-11-27",
+      "estimated_cost": 200,
+      "description": "replace kitchen window in existing opening",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9113044",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-07-24",
+      "status_date": "1991-11-18",
+      "estimated_cost": 7000,
+      "description": "bathroom remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9110096",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-06-10",
+      "status_date": "1991-11-18",
+      "estimated_cost": 15000,
+      "description": "remodel kitchen, sheetrock, cabinets,toilet sink,tile2 bath",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9001732",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-01-25",
+      "status_date": "1990-04-05",
+      "estimated_cost": 2500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FILBERT&street_type=ST&address_number=2441",
+      "retrieved": "2026-09-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0536028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0536&lot=028",
+      "retrieved": "2026-09-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0536028",
+      "retrieved": "2026-09-28"
+    },
+    {
+      "id": "loc-sf-call-1911-06-01",
+      "name": "The San Francisco Call, 1 June 1911, p. 15",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1911-06-01/ed-1/seq-15/",
+      "retrieved": "2026-09-28"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1911-06-01",
+      "kind": "building contract",
+      "description": "Fred Miller contracted to put up a two-storey and basement frame residence, at $6,443.",
+      "source": "loc-sf-call-1911-06-01"
+    }
+  ],
+  "building": {
+    "builder": "Fred Miller"
+  }
+}

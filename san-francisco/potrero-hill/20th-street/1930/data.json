@@ -1,0 +1,129 @@
+{
+  "address": "1930 20th Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/20th-street/1930/",
+  "apn": "4071017",
+  "block": "4071",
+  "lot": "017",
+  "eas_baseid": "367999",
+  "coordinates": {
+    "lat": 37.759982,
+    "lng": -122.400772
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 2,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1073,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Potrero Hill",
+    "property_location_raw": "0000 1930 20TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 47099,
+    "assessed_improvement_value": 92382
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202002275591",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-02-27",
+      "status_date": "2020-02-27",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "replace (1) single pane patio door and (2) windows with double pane door & windows not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201003319364",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-03-31",
+      "status_date": "2010-04-13",
+      "estimated_cost": 900,
+      "revised_cost": 900,
+      "description": "replace 2 windows in (e) openings, side of the house, no alteration to opening. living rm. 36\"x 36\" wood sash, replace in kind. bathroom 24'x36\" wood sash replace in kind, not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201003097795",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-03-09",
+      "status_date": "2010-03-31",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "window ( 2) and door (1) replacement in kind , wood to wood, at rear of the house not visible from street. no change to(e) opening.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200103214908",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-03-21",
+      "status_date": "2001-04-17",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "repair in kind rear stairs & deck & posts",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=ST&address_number=1930",
+      "retrieved": "2026-09-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4071017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4071&lot=017",
+      "retrieved": "2026-09-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4071017",
+      "retrieved": "2026-09-28"
+    },
+    {
+      "id": "loc-sf-call-1911-09-28",
+      "name": "The San Francisco Call, 28 September 1911, p. 13",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1911-09-28/ed-1/seq-13/",
+      "retrieved": "2026-09-28"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1911-09-28",
+      "kind": "building contract",
+      "description": "B. W. Demarais contracted for all work except plumbing and painting on a one-storey cottage, then going up, at $680.",
+      "source": "loc-sf-call-1911-09-28"
+    }
+  ]
+}

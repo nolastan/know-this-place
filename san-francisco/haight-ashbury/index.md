@@ -22,6 +22,7 @@ The neighborhood at the east end of Golden Gate Park, at the centre of San Franc
 - [Oak Street](oak-street/) — 1 building, built 1900.
 - [Page Street](page-street/) — 1 building, built 1900; 1 in the Buena Vista North Historic District.
 - [Potomac Street](potomac-street/) — 1 building, built 1900; 1 in the Duboce Park Historic District.
+- [Rivoli Street](rivoli-street/) — 1 building, built 1911; 1 in the Cole Valley Historic District.
 - [Scott Street](scott-street/) — 1 building, built 1900.
 - [Stanyan Street](stanyan-street/) — 1 building, built 1911; 1 in the Panhandle Historic District.
 - [Steiner Street](steiner-street/) — 1 building, built 1900; 1 in the Duboce Park Historic District.
