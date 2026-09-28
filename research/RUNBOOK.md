@@ -285,6 +285,14 @@ python3 research/tools/corner.py --batch corners.jsonl
 # {"id": "0012", "a": "WASHINGTON", "b": "HYDE", "to": "LEAVENWORTH", "lot": "38:9x137:6", "year": 1910}
 ```
 
+A record that gives a direction and never names the far street — "183 W of
+Guerrero", which is nearly every building-contract entry — takes `dir`
+instead of `to`, and the block face is measured the same way:
+
+```bash
+# {"id": "0014", "a": "17TH", "b": "GUERRERO", "dir": "W", "offset": 183, "lot": "45x84:3", "year": 1911}
+```
+
 It prints only the parcels within 4% of the record's lot area, and for a block
 face (`to`) each lot's frontage measured from the block's end on the parcel
 shapes, "front 167-206 ft from HYDE" — the offset check done for you. A match

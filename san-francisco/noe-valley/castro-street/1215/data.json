@@ -1,0 +1,95 @@
+{
+  "address": "1215 Castro Street, San Francisco, CA 94114",
+  "path": "/san-francisco/noe-valley/castro-street/1215/",
+  "apn": "3656026",
+  "block": "3656",
+  "lot": "026",
+  "eas_baseid": "364629",
+  "coordinates": {
+    "lat": 37.751859,
+    "lng": -122.433974
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 7,
+    "stories": 4,
+    "rooms": 31,
+    "bathrooms": 7,
+    "lot_area_sqft": 3419,
+    "building_area_sqft": 8542,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 1215 CASTRO              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 199125,
+    "assessed_improvement_value": 884898
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9416597",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-10-11",
+      "status_date": "1995-05-25",
+      "estimated_cost": 2500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASTRO&street_type=ST&address_number=1215",
+      "retrieved": "2026-09-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3656026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3656&lot=026",
+      "retrieved": "2026-09-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3656026",
+      "retrieved": "2026-09-28"
+    },
+    {
+      "id": "loc-sf-call-1911-09-08",
+      "name": "The San Francisco Call, 8 September 1911, p. 13",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1911-09-08/ed-1/seq-13/",
+      "retrieved": "2026-09-28"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1911-09-08",
+      "kind": "building contract",
+      "description": "Dempniak Brothers contracted for all work except millwork and glass on three-storey and basement frame apartments, then going up.",
+      "source": "loc-sf-call-1911-09-08"
+    }
+  ]
+}

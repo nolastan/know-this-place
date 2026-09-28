@@ -91,6 +91,7 @@ which local histories treat as its own neighborhood.
 - [Prosper Street](prosper-street/) — 22 buildings, built 1890–1922.
 - [Raccoon Drive](raccoon-drive/) — 2 buildings, built 1959–1991.
 - [Rayburn Street](rayburn-street/) — 2 buildings, built 1900–1941.
+- [Rivoli Street](rivoli-street/) — 1 building, built 1911.
 - [Roosevelt Way](roosevelt-way/) — 89 buildings, built 1895–2018.
 - [Saint Germain Avenue](saint-germain-avenue/) — 1 building, built 1958.
 - [Sanchez Street](sanchez-street/) — 131 buildings, built 1885–2008; 27 in the Duboce Triangle Historic District.

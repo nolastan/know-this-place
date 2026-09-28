@@ -1,0 +1,123 @@
+{
+  "address": "731 11th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/11th-avenue/731/",
+  "apn": "1654005",
+  "block": "1654",
+  "lot": "005",
+  "eas_baseid": "312355",
+  "coordinates": {
+    "lat": 37.774487,
+    "lng": -122.46951
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 3172,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0733 0731 11TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 63507,
+    "assessed_improvement_value": 98856
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202308174608",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-08-17",
+      "status_date": "2023-09-08",
+      "estimated_cost": 1,
+      "revised_cost": 24000,
+      "description": "revision of pa202305016800. remove walls between bathroom & closet and kitchen.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202305016800",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-05-01",
+      "status_date": "2023-09-08",
+      "estimated_cost": 30000,
+      "revised_cost": 40000,
+      "description": "remodel (1) kitchen and (1) bathroom in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9515789",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-09-25",
+      "status_date": "1996-03-25",
+      "estimated_cost": 10700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1995–2023",
+    "shown_on_page": 3,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=11TH&street_type=AVE&address_number=731",
+      "retrieved": "2026-09-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1654005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1654&lot=005",
+      "retrieved": "2026-09-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1654005",
+      "retrieved": "2026-09-28"
+    },
+    {
+      "id": "loc-sf-call-1911-09-27",
+      "name": "The San Francisco Call, 27 September 1911, p. 15",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1911-09-27/ed-1/seq-15/",
+      "retrieved": "2026-09-28"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1911-09-27",
+      "kind": "building contract",
+      "description": "Oscar W. Thunberg contracted for all work except plumbing and painting on two-storey frame flats, then going up, at $4,788. Further contracts for the building followed through October 1911.",
+      "source": "loc-sf-call-1911-09-27"
+    }
+  ]
+}

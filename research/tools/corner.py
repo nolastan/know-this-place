@@ -34,6 +34,19 @@ is in — the check a record's "183 feet west of Powell" is made against. Withou
 `to` it is the EAS point's distance, a rough middle. Streets are fetched once
 each, so a hundred entries take a minute rather than an hour.
 
+**`dir` instead of `to`** — for the record that says "183 W of Guerrero" and
+never names the street at the block's other end, which is nearly every
+building-contract entry:
+
+    {"id": "...-0014", "a": "17TH", "b": "GUERRERO", "dir": "W",
+     "offset": 183, "lot": "45x84:3", "year": 1911}
+
+The block face is measured along street `a`'s own axis from the crossing, the
+way the record's compass direction points, exactly as `to` measures it; a
+parcel on a block that does not begin at the crossing is dropped, and a
+frontage that begins within 4 feet of the record's `offset` is marked
+`<-- offset`.
+
 **An entry with `to` and `offset` but no `lot`** — a building-news paragraph
 that gives a corner and a distance and never states the lot — matches
 differently: there is no area to check, so it prints every parcel on the
@@ -143,6 +156,51 @@ def along_ft(x: dict, p: tuple, q: tuple) -> float:
     return (wx * vx + wy * vy) / n * 364000  # a degree of latitude, in feet
 
 
+COMPASS = {"N": (0, 1), "S": (0, -1), "E": (1, 0), "W": (-1, 0),
+           "NE": (1, 1), "NW": (-1, 1), "SE": (1, -1), "SW": (-1, -1)}
+
+
+def toward_point(A: list, p: tuple, direction: str, e: dict):
+    """A point along street A from crossing p, the way the record's offset runs.
+
+    For a record that says "183 W of Guerrero" and never names the street at
+    the block's other end. The axis is street A's own, fitted to its EAS points
+    within about 150 m of the crossing, and turned to the compass direction the
+    record gives; a direction more than 50 degrees off the street's axis is a
+    misread and returns None. The point lies far enough along to take in the
+    record's offset and lot with room for an EAS point set back on its parcel,
+    never past 800 ft; a parcel on a block that does not begin at the crossing
+    is dropped by the caller, so running long does not reach the next block.
+    """
+    k = math.cos(math.radians(p[0]))
+    near = [((float(x["longitude"]) - p[1]) * k, float(x["latitude"]) - p[0]) for x in A]
+    near = [v for v in near if math.hypot(*v) < 0.00135]
+    if len(near) < 3:
+        return None
+    mx, my = sum(v[0] for v in near) / len(near), sum(v[1] for v in near) / len(near)
+    sxx = sum((v[0] - mx) ** 2 for v in near)
+    syy = sum((v[1] - my) ** 2 for v in near)
+    sxy = sum((v[0] - mx) * (v[1] - my) for v in near)
+    ang = 0.5 * math.atan2(2 * sxy, sxx - syy)
+    ux, uy = math.cos(ang), math.sin(ang)
+    cx, cy = COMPASS.get(direction.upper(), (0, 0))
+    cn = math.hypot(cx, cy)
+    if not cn:
+        return None
+    dot = (ux * cx + uy * cy) / cn
+    if abs(dot) < math.cos(math.radians(50)):
+        return None
+    if dot < 0:
+        ux, uy = -ux, -uy
+    width = 0
+    m = re.match(r"\s*(\d+)(?::(\d+))?", e.get("lot") or "")
+    if m:
+        width = int(m[1]) + int(m[2] or 0) / 12
+    feet = min(800, float(e.get("offset") or 0) + max(width, 25) + 200)
+    d = feet / 364000
+    return (p[0] + uy * d, p[1] + ux * d / k)
+
+
 def block_shapes(blocks: list) -> dict:
     """Every active parcel's outline on these assessor blocks, by APN."""
     out = {}
@@ -159,7 +217,7 @@ def block_shapes(blocks: list) -> dict:
     return out
 
 
-def front_span(apn: str, shapes: dict, p: tuple, q: tuple):
+def front_span(apn: str, shapes: dict, p: tuple, q: tuple, with_origin: bool = False):
     """Feet from the block's end at p to where this lot's frontage starts and stops.
 
     The direction p->q comes from EAS points and can be skewed by 20 degrees,
@@ -193,6 +251,8 @@ def front_span(apn: str, shapes: dict, p: tuple, q: tuple):
     block = shapes[apn][0]
     origin = min(proj(pt) for b, ps in shapes.values() if b == block for pt in ps)
     mine = [proj(pt) for pt in pts]
+    if with_origin:
+        return min(mine) - origin, max(mine) - origin, origin
     return min(mine) - origin, max(mine) - origin
 
 
@@ -229,6 +289,12 @@ def batch(path: str, tol: float = 0.04) -> int:
                 found.append((e, None, f"{e['a']} and {e['to']} do not meet in EAS"))
                 continue
             near, toward = block_face(A, ix, iy), iy
+        elif e.get("dir"):
+            iy = toward_point(A, ix, e["dir"], e)
+            if iy is None:
+                found.append((e, None, f"{e['a']} does not run {e['dir']} from {e['b']}"))
+                continue
+            near, toward = block_face(A, ix, iy), iy
         else:
             near, toward = {}, None
             for x in A + B:
@@ -248,7 +314,8 @@ def batch(path: str, tol: float = 0.04) -> int:
     for e, hit, err in found:
         want = lot_sqft(e.get("lot", ""))
         offset = e.get("offset") if not want else None
-        head = f"{e['id']}: {e['a']} & {e['b']}" + (f" to {e['to']}" if e.get("to") else "")
+        head = f"{e['id']}: {e['a']} & {e['b']}" + (f" to {e['to']}" if e.get("to") else "") \
+            + (f" going {e['dir']}" if e.get("dir") and not e.get("to") else "")
         if want:
             head += f"  lot {e.get('lot')} = {want:.0f} sq ft"
         elif offset is not None:
@@ -267,7 +334,9 @@ def batch(path: str, tol: float = 0.04) -> int:
                 area = float(ro.get("lot_area") or 0)
             except ValueError:
                 area = 0
-            span = front_span(apn, shapes, ix, toward) if toward else None
+            span = front_span(apn, shapes, ix, toward, with_origin=True) if toward else None
+            if span and e.get("dir") and not e.get("to") and abs(span[2]) > 120:
+                continue  # a block that does not begin at the crossing: the next one along
             if want:
                 if not area or abs(area - want) > tol * want:
                     continue
@@ -290,6 +359,8 @@ def batch(path: str, tol: float = 0.04) -> int:
             d = ""
             if span:
                 d = f"  front {span[0]:.0f}-{span[1]:.0f} ft from {e['b']}"
+                if e.get("offset") is not None and abs(span[0] - float(e["offset"])) <= 4:
+                    d += "  <-- offset"
             elif apn in pts:
                 d = f"  ~{abs(along_ft(pts[apn], ix, toward or (ix[0], ix[1] + 1e-3))):.0f} ft along {e['a']}"
             print(f"    {apn}  built {yr}  {ro.get('number_of_stories', '?')} st  "
