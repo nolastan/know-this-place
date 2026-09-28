@@ -1,0 +1,135 @@
+{
+  "address": "2011 Oakdale Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/oakdale-avenue/2011/",
+  "apn": "5318039",
+  "block": "5318",
+  "lot": "039",
+  "eas_baseid": "375397",
+  "coordinates": {
+    "lat": 37.738873,
+    "lng": -122.398403
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1545,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Silver Terrace",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "2011A2011 OAKDALE             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 363596,
+    "assessed_improvement_value": 195876
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201906183785",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-06-18",
+      "status_date": "2019-07-03",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "to comply w/complaint #19919020. to add a second dwelling unit to a rh-2 zoned existing one unit building on ground fl.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201806010717",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-06-01",
+      "status_date": "2018-08-08",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "in compliance of nov# 200007156 to repair (e) front stair not more than 60%. (not visible from front) repair-in-kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201805219704",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2018-05-21",
+      "status_date": "2018-05-21",
+      "estimated_cost": 7000,
+      "revised_cost": 0,
+      "description": "to comply with #199919020 & #200007156, to repair (e) front stairs at (e) rear stair dryrot at ground fl. (not more than 50% to be repaired).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200612089466",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2006-12-08",
+      "status_date": "2018-05-22",
+      "estimated_cost": 4500,
+      "description": "repair front & rear stairs less than 50%. replace damaged plumbing fixgtures. replace damaged electrical heaters. to comply w/his nov#199919020 + 200007156.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=OAKDALE&street_type=AVE&address_number=2011",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5318039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5318&lot=039",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5318039",
+      "retrieved": "2026-09-27"
+    },
+    {
+      "id": "sf-environmental-review-bayviewhunterspo2004sanf",
+      "name": "San Francisco Redevelopment Agency, Bayview Hunters Point Redevelopment Projects and Rezoning: Draft Environmental Impact Report, File No. 1996.546E, October 19, 2004.",
+      "query": "https://archive.org/details/bayviewhunterspo2004sanf",
+      "retrieved": "2026-09-27"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "Bayview Hunters Point redevelopment survey (2004)",
+      "source": "sf-environmental-review-bayviewhunterspo2004sanf",
+      "entries": [
+        {
+          "address_as_surveyed": "2011 Oakdale Avenue",
+          "description": "Residence"
+        }
+      ],
+      "style": "Queen Anne",
+      "year_built_as_surveyed": "c. 1900"
+    }
+  ]
+}

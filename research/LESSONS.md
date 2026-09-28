@@ -2405,6 +2405,21 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   primary source's construction credit disagrees with the page's, find what the
   page's credit came from; an alteration's designer is a timeline entry, not
   `building.architect`.*
+- **A highlighted table row is where OCR fails, and the page image is one URL
+  away.** The Bayview Hunters Point EIR's survey matrix shades every row that
+  changed since the previous survey; the DjVu text layer turns those rows —
+  most of the table — into strings like `Kf'VKipncp` and `lo^U`, addresses
+  included, while the unshaded rows read cleanly. Coordinates don't help: the
+  words themselves are wrong. The Internet Archive serves every leaf as an
+  image at `https://archive.org/download/<id>/page/n<leaf-1>_w2400.jpg`
+  (`_rot270` for a table printed sideways), and a 250-row matrix read off six
+  of those images in one pass. *Before reconstructing a table from OCR, look at
+  one leaf's image; where the OCR is noise, transcribe the image.*
+- **A report's count is not a report's list.** The Van Ness Avenue Plan EIR
+  says 47 buildings in its study area are significant and prints none of them
+  — the list is in the Heritage survey it cites. A dossier carried "the Van
+  Ness 47-building list" as unmined material for a week. *Before naming a
+  table as remaining work, find its first row.*
 - **Write one dated fact per entry while reading, not after `--overlap`.** Long
   modern reports tempt a reader to compress a building's history into one rich
   paragraph dated by its construction — the bank's founding, its move, the fire,

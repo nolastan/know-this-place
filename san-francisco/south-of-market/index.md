@@ -10,6 +10,7 @@ The wide blocks west of Fourth Street, between Market and Harrison. Coverage her
 - [8th Street](8th-street/) — 6 buildings, built 1916–1990.
 - [9th Street](9th-street/) — 2 buildings, built 2011–2014.
 - [Bluxome Street](bluxome-street/) — 10 buildings, built 1916–2016; 3 in the Bluxome Townsend Historic District.
+- [Boardman Place](boardman-place/) — 1 building, built 1912.
 - [Brannan Street](brannan-street/) — 24 buildings, built 1905–1989; 3 in the Clyde and Crooks Historic District.
 - [Bryant Street](bryant-street/) — 56 buildings, built 1905–2005; 1 in the SoMa LGBTQ Historic District.
 - [Clara Street](clara-street/) — 29 buildings, built 1906–1991.
