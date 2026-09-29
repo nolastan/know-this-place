@@ -1,0 +1,85 @@
+{
+  "address": "6315 3rd Street, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/3rd-street/6315/",
+  "apn": "4968021",
+  "block": "4968",
+  "lot": "021",
+  "eas_baseid": "373638",
+  "coordinates": {
+    "lat": 37.720523,
+    "lng": -122.396119
+  },
+  "parcel": {
+    "year_built": 1918,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2565,
+    "building_area_sqft": 1212,
+    "use": "Commercial Office",
+    "property_class": "Office",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview Heights",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 6315 03RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 331843,
+    "assessed_improvement_value": 142217,
+    "last_sale_date": "2020-06-04"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1918",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=03RD&street_type=ST&address_number=6315",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4968021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4968&lot=021",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4968021",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "article-10-lm279",
+      "name": "San Francisco Planning, Article 10 landmark designation: Landmark No. 279, Arthur H. Coleman Medical Center (ordinance, Planning Commission resolution and landmark designation report)",
+      "query": "https://sfplanninggis.org/docs/landmarks_and_districts/LM279.pdf",
+      "label": "SF Planning, landmark designation",
+      "retrieved": "2026-09-29"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1991-09-12",
+      "kind": "sale",
+      "description": "Dr. Arthur H. Coleman and three medical partners bought the neighbouring building at 6315 Third Street, built in 1918, to expand the medical center's services.",
+      "source": "article-10-lm279"
+    }
+  ]
+}

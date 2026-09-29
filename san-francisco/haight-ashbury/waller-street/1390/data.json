@@ -1,0 +1,113 @@
+{
+  "address": "1390 Waller Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/waller-street/1390/",
+  "apn": "1244015",
+  "block": "1244",
+  "lot": "015",
+  "eas_baseid": "298261",
+  "coordinates": {
+    "lat": 37.769237,
+    "lng": -122.446489
+  },
+  "parcel": {
+    "year_built": 1907,
+    "stories": 3,
+    "rooms": 12,
+    "bathrooms": 1,
+    "lot_area_sqft": 2395,
+    "building_area_sqft": 4342,
+    "use": "Commercial Hotel",
+    "property_class": "Hotels - Other",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Haight Ashbury",
+    "analysis_neighborhood": "Haight Ashbury",
+    "property_location_raw": "0000 1390 WALLER              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 325726,
+    "assessed_improvement_value": 488599,
+    "last_sale_date": "1996-12-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202106182750",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-06-18",
+      "status_date": "2022-06-08",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "one bathroom remodel. no walls will be moved. new toilet tub/shower hand basin. new shower surrounded. new floor covering. paint. no new wall & no existing wall relocation. electrical, plumbing by others. new lighting shall comply with cec (50.0 (k) 5.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9206907",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-04-28",
+      "status_date": "1992-05-12",
+      "estimated_cost": 9500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1992–2021",
+    "shown_on_page": 2,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=WALLER&street_type=ST&address_number=1390",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1244015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1244&lot=015",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1244015",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "article-10-lm253",
+      "name": "San Francisco Planning, Article 10 landmark designation: Landmark No. 253, Richard P. Doolan/Norman T. Larson Residence and Storefronts (ordinance, Planning Commission resolution and landmark designation report)",
+      "query": "https://sfplanninggis.org/docs/landmarks_and_districts/LM253.pdf",
+      "label": "SF Planning, landmark designation",
+      "retrieved": "2026-09-29"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1902",
+      "kind": "construction",
+      "description": "The Colonial Revival single-family house at the corner of Waller and Ashbury was built in 1902.",
+      "source": "article-10-lm253"
+    }
+  ]
+}

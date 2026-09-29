@@ -1,0 +1,165 @@
+{
+  "address": "451 Jersey Street, San Francisco, CA 94114",
+  "path": "/san-francisco/mission/jersey-street/451/",
+  "apn": "6539034",
+  "block": "6539",
+  "lot": "034",
+  "eas_baseid": "466844",
+  "coordinates": {
+    "lat": 37.750293,
+    "lng": -122.435107
+  },
+  "parcel": {
+    "year_built": 1900,
+    "stories": 2,
+    "lot_area_sqft": 9117,
+    "use": "Commercial Office",
+    "property_class": "LIBRARY",
+    "construction_type_code": "NA",
+    "zoning": "P",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 0451 JERSEY              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Individual Landmark, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1916",
+    "survey_name": "NOE VALLEY BRANCH LIBRARY",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Diamond & Elizabeth Streets Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1878–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201201172391",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-01-17",
+      "status_date": "2012-04-20",
+      "estimated_cost": 10000,
+      "revised_cost": 28000,
+      "description": "construct 8' high retaining wall with soldier beam and lagging. wall is approximately 55' long located at southern boundry.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200702063429",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-02-06",
+      "status_date": "2007-02-06",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "install fa panel, strobe/horn, pull station, smoke detector, etc.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200603297767",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-03-29",
+      "status_date": "2008-03-05",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "umb seismic upgrade, ada inprovements, interior remodel,minor addition, restoration of historic fabric, general procedure umb seismic upgrade reference permit #200311079752s. this otc permit application is for correction for construction type from type v-n to type 3-n; story count from 1 to 2.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200311079752",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2003-11-07",
+      "status_date": "2008-03-05",
+      "revised_cost": 2400000,
+      "description": "umb seismic upgrade,ada improvements, interior remodel, restoration of historic fabric,minor",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "2003–2012",
+    "shown_on_page": 4,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JERSEY&street_type=ST&address_number=451",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6539034&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6539&lot=034",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6539034",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43510654039444%2037.75029265678745)%27)",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "article-10-lm259",
+      "name": "San Francisco Planning, Article 10 landmark designation: Landmark No. 259, Carnegie Noe Valley/Sally Brunn Branch Library (ordinance, Planning Commission resolution and landmark designation report)",
+      "query": "https://sfplanninggis.org/docs/landmarks_and_districts/LM259.pdf",
+      "label": "SF Planning, landmark designation",
+      "retrieved": "2026-09-29"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1915",
+      "kind": "construction",
+      "description": "The Noe Valley Branch Library was built, the third of San Francisco's seven Carnegie-funded branch libraries: brick in a tapestry bond with polychrome glazed terra cotta, one storey over a raised basement, a stair rising from a small vestibule into the main reading room.",
+      "source": "article-10-lm259"
+    },
+    {
+      "date": "2008-03-04",
+      "kind": "designation",
+      "description": "Designated San Francisco Landmark No. 259, Carnegie Noe Valley/Sally Brunn Branch Library.",
+      "source": "article-10-lm259"
+    }
+  ],
+  "city_landmark": {
+    "name": "Carnegie Noe Valley/Sally Brunn Branch Library",
+    "number": 259,
+    "source": "article-10-lm259"
+  },
+  "unknowns": [
+    "Construction is dated both 1915 and 1916."
+  ],
+  "building": {
+    "architect": "John Reid Jr.",
+    "sources": [
+      "article-10-lm259"
+    ]
+  }
+}

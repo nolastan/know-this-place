@@ -2475,3 +2475,26 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   (DataSF `97yj-54sx`) or the designating document. An audit of every page's
   row against the list by APN is a two-minute script; one run found this case
   and nothing else.*
+- **A newer source can show that an older page names a current resident.**
+  22 Beaver Street's page named the couple who restored the house, out of a
+  2022 context statement; the 2019 designation report says the wife "still
+  lives there". Neither source broke the rule on its own terms — the statement
+  never said she was living there — and the page did. *When a run reads a
+  building's fullest history, grep the page for every person it already
+  names and check each against what the new source says about them now.*
+- **A reader split across parallel agents must write to disk as it goes.**
+  Batch 5 of the Article 10 reports ran as twelve readers at once; five hit a
+  rate limit mid-run. Every one had already written its findings file (most
+  through a small generator script), so the restart only had to check quotes
+  and write notes, not re-read 300 pages. *Have each reader write one file per
+  report as soon as the report is read, and have a checker — not the
+  reader — verify `raw.text` against the corpus before assembly: the checkers
+  found curly-quote mismatches, spliced quotes and a locator carrying a
+  report-day owner's first name.*
+- **A note for the publisher is not a `conflict`.** Editorial agents asked to
+  record disagreements wrote them into `conflict` in their own voice — "the
+  page's building.architect is…, this report credits…" — and `conflict` is
+  what the publish step writes into a page's `unknowns`. *A `conflict` is a
+  sentence a reader of the page sees: the two claims, no source named ("Dated
+  both 1924 and 1930"). A correction the page needs is a page edit, made by
+  hand, and a note about it goes in the PR.*

@@ -1,0 +1,144 @@
+{
+  "address": "1490 Mason Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/mason-street/1490/",
+  "apn": "0159046",
+  "block": "0159",
+  "lot": "046",
+  "eas_baseid": "485679",
+  "coordinates": {
+    "lat": 37.797133,
+    "lng": -122.411758
+  },
+  "parcel": {
+    "year_built": 1900,
+    "lot_area_sqft": 11250,
+    "use": "Commercial Office",
+    "property_class": "Medical- dental Office Building",
+    "construction_type_code": "NA",
+    "zoning": "RM-2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Chinatown",
+    "property_location_raw": "0000 1490 MASON               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202212239075",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2022-12-23",
+      "status_date": "2024-03-28",
+      "estimated_cost": 42487700,
+      "revised_cost": 42487700,
+      "description": "priority process per ab004: chinatown public health ctr, renovation of exterior/interior/broadway tunnel below clinic improvement. some site reno proposed to improve accessibility along mason st entry & pedestrian access for broadway tunnel. incl storage ocupancy (s-2)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201012086311",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-12-08",
+      "status_date": "2010-12-08",
+      "estimated_cost": 122000,
+      "revised_cost": 122000,
+      "description": "replace boiler",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200901130120",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-01-13",
+      "status_date": "2010-06-23",
+      "estimated_cost": 300000,
+      "revised_cost": 300000,
+      "description": "barrier removal - accessibility improvement, widen doors, remodel 3 toilet rooms, remodel counters, door hardware replacement, new ada drinking fountains, lower elevator control and new signage.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200711208621",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-11-20",
+      "status_date": "2008-02-27",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "revision to 200610165138 permit #1101683 convert an exist. toilet room to unisex toilet for ada (barrier removal work)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200610165138",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-10-16",
+      "status_date": "2008-02-27",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "front counter remodeling for accessibility @ 2nd floor (barrier removal)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9402945",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-02-24",
+      "status_date": "1994-09-15",
+      "estimated_cost": 20000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MASON&street_type=ST&address_number=1490",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0159046&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0159&lot=046",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0159046",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "article-10-lm272",
+      "name": "San Francisco Planning, Article 10 landmark designation: Landmark No. 272, Alemany Emergency Hospital and Health Center (ordinance, Planning Commission resolution and landmark designation report)",
+      "query": "https://sfplanninggis.org/docs/landmarks_and_districts/LM272.pdf",
+      "label": "SF Planning, landmark designation",
+      "retrieved": "2026-09-29"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1969",
+      "kind": "construction",
+      "description": "A new Harbor Emergency Hospital was built atop the Broadway Tunnel at 1490 Mason Street, replacing the original Harbor hospital demolished for the Embarcadero Center project; the site is now the Chinese Public Health Center.",
+      "source": "article-10-lm272"
+    }
+  ]
+}

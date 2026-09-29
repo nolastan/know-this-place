@@ -1,0 +1,112 @@
+{
+  "address": "685 Castro Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/castro-street/685/",
+  "apn": "3602092",
+  "block": "3602",
+  "lot": "092",
+  "eas_baseid": "462823",
+  "coordinates": {
+    "lat": 37.757987,
+    "lng": -122.43437
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 1,
+    "building_area_sqft": 688,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "NA",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0685 CASTRO              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 41565,
+    "assessed_improvement_value": 90088
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202202238540",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-02-23",
+      "status_date": "2022-02-23",
+      "estimated_cost": 19000,
+      "revised_cost": 19000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9520138S",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1995-11-29",
+      "status_date": "1997-08-26",
+      "estimated_cost": 30000,
+      "description": "replace rear stairs, add deck at each unit, enclose landings",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9302488",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-02-16",
+      "status_date": "1993-11-23",
+      "estimated_cost": 8200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASTRO&street_type=ST&address_number=685",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3602092&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3602&lot=092",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3602092",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "article-10-lm292",
+      "name": "San Francisco Planning, Article 10 landmark designation: Landmark No. 292, Lyon-Martin House (ordinance, Planning Commission resolution and landmark designation report)",
+      "query": "https://sfplanninggis.org/docs/landmarks_and_districts/LM292.pdf",
+      "label": "SF Planning, landmark designation",
+      "retrieved": "2026-09-29"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1953-02-14",
+      "kind": "occupancy",
+      "description": "Del Martin moved in with Phyllis Lyon in her ground-floor apartment here on Valentine's Day 1953; the couple lived here until they bought 651 Duncan Street in 1955.",
+      "source": "article-10-lm292"
+    }
+  ]
+}
