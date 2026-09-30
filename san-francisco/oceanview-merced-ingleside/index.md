@@ -27,6 +27,7 @@ Merced Heights, the ridge between them, was mostly built after World War II.
 - [Mission Street](mission-street/) — 1 building, built 1924.
 - [Montana Street](montana-street/) — 1 building, built 1907.
 - [Ocean Avenue](ocean-avenue/) — 2 buildings, built 1900–1909; 2 in the Ocean Avenue Neighborhood Commercial District.
+- [Orizaba Avenue](orizaba-avenue/) — 1 building.
 - [Plymouth Avenue](plymouth-avenue/) — 1 building, built 1904.
 - [Randolph Street](randolph-street/) — 1 building, built 1907.
 - [Sadowa Street](sadowa-street/) — 1 building, built 1910.

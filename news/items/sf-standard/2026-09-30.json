@@ -1,0 +1,145 @@
+{
+ "source_id": "sf-standard",
+ "batch": "2026-09-30",
+ "read_on": "2026-09-30",
+ "notes": "Five queued, read. 170 Otis is a city-land report (declined, a report not a building fact); the October openings roundup and the second Olive Juice story are duplicates or lists; OpenAI story has no address.",
+ "coverage": {
+  "unit": "articles",
+  "examined": 5,
+  "mentions": 4,
+  "remaining": "none"
+ },
+ "findings": [
+  {
+   "id": "2026-09-30-ss-0001",
+   "date": "2026-09-29",
+   "date_precision": "day",
+   "kind": "sale",
+   "address_as_written": "410 Townsend St.",
+   "street_number": "410",
+   "street_type": "ST",
+   "street_name": "TOWNSEND",
+   "description": "The SoMa office building sold this month for $47 million, after a $22 million sale in 2024 and $86 million in 2019.",
+   "extra": {
+    "price": "$47 million",
+    "prior_sales": "2024 $22 million; 2019 $86 million"
+   },
+   "citation": {
+    "label": "The San Francisco Standard, “The state of the SF office market, in one boomerang building sale,” 29 September 2026",
+    "url": "https://sfstandard.com/2026/09/29/sf-office-market-rebound-boomerang-sale/"
+   },
+   "raw": {
+    "text": "The state of the SF office market, in one boomerang building sale"
+   },
+   "confidence": "high",
+   "publish": {
+    "status": "declined",
+    "note": "Duplicate: the 410 Townsend Street page already carries this sale via Hoodline, 2026-09, 'Zurich Investor Pays $47.4M for SF's Old Start-Up Village, Doubling 2024 Price'."
+   },
+   "resolution": {
+    "status": "resolved",
+    "apn": "3785002A",
+    "path": "/san-francisco/south-of-market/townsend-street/410/",
+    "eas_address": "410 TOWNSEND ST",
+    "method": "EAS exact match on 410 TOWNSEND ST → parcel 3785002A; sf-parcels has blklot 3785002A active, 410–410 TOWNSEND; the 2025 roll records it as commercial office, built 1912.",
+    "checked_on": "2026-09-30"
+   }
+  },
+  {
+   "id": "2026-09-30-ss-0002",
+   "date": "2026-09-29",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "354 Divisadero St.",
+   "street_number": "354",
+   "street_type": "ST",
+   "street_name": "DIVISADERO",
+   "description": "Second account of the Olive Juice opening.",
+   "extra": {},
+   "citation": {
+    "label": "The San Francisco Standard, “This new Divisadero cafe puts olive oil in everything, including coffee,” 29 September 2026",
+    "url": "https://sfstandard.com/2026/09/29/olive-juice-roy-hospitality-divisadero/"
+   },
+   "raw": {
+    "text": "This new Divisadero cafe puts olive oil in everything, including coffee"
+   },
+   "confidence": "high",
+   "publish": {
+    "status": "declined",
+    "note": "Duplicate: the Hoodline entry (2026-09-29-hl-0002) carries this event. Also its byline story is about a named designer."
+   },
+   "resolution": {
+    "status": "resolved",
+    "apn": "1217079",
+    "path": "/san-francisco/haight-ashbury/divisadero-street/354/",
+    "eas_address": "354 DIVISADERO ST",
+    "method": "EAS exact match on 354 DIVISADERO ST → parcel 1217079; sf-parcels has blklot 1217079 active, 354–364 DIVISADERO; no row on the secured roll. EAS files the address under parcel 1217028, which sf-parcels reports retired; the active parcel its coordinates fall in is 1217079.",
+    "checked_on": "2026-09-30",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   }
+  },
+  {
+   "id": "2026-09-30-ss-0003",
+   "date": "2026-09-29",
+   "date_precision": "day",
+   "kind": "development",
+   "address_as_written": "170 Otis St.",
+   "street_number": "170",
+   "street_type": "ST",
+   "street_name": "OTIS",
+   "description": "City-owned land housing report; 170 Otis named as one aging site.",
+   "extra": {},
+   "citation": {
+    "label": "The San Francisco Standard, “SF’s housing solution may be hiding in plain sight: Land it already owns,” 29 September 2026",
+    "url": "https://sfstandard.com/2026/09/29/sf-affordable-housing-solution-city-owned-land-report/"
+   },
+   "raw": {
+    "text": "SF’s housing solution may be hiding in plain sight: Land it already owns"
+   },
+   "confidence": "high",
+   "publish": {
+    "status": "declined",
+    "note": "A citywide report that mentions the address in passing; fails the ten-year test."
+   },
+   "resolution": {
+    "status": "resolved",
+    "apn": "3513207",
+    "path": "/san-francisco/mission/otis-street/170/",
+    "eas_address": "170 OTIS ST",
+    "method": "EAS exact match on 170 OTIS ST → parcel 3513207; sf-parcels has blklot 3513207 active, 170–170 OTIS; the 2025 roll records it as miscellaneous/mixed-use. EAS files the address under parcel 3513007, which sf-parcels reports retired; the active parcel its coordinates fall in is 3513207.",
+    "checked_on": "2026-09-30",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   }
+  },
+  {
+   "id": "2026-09-30-ss-0004",
+   "date": "2026-09-29",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "334 Battery St.",
+   "street_number": "334",
+   "street_type": "ST",
+   "street_name": "BATTERY",
+   "description": "Monthly roundup of openings.",
+   "extra": {},
+   "citation": {
+    "label": "The San Francisco Standard, “4 most anticipated SF restaurant and bar openings in October,” 29 September 2026",
+    "url": "https://sfstandard.com/2026/09/29/sf-best-new-restaurants-bars-october/"
+   },
+   "raw": {
+    "text": "4 most anticipated SF restaurant and bar openings in October"
+   },
+   "confidence": "high",
+   "publish": {
+    "status": "declined",
+    "note": "A roundup of four future openings; each address is a passing mention and a forecast, not an event."
+   },
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-09-30",
+    "method": "No record in sf-eas-addresses for 334 BATTERY ST.",
+    "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 325, 333. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+   }
+  }
+ ]
+}
