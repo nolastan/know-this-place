@@ -1,0 +1,136 @@
+{
+  "address": "344 Moncada Way, San Francisco, CA 94127",
+  "path": "/san-francisco/ingleside-terraces/moncada-way/344/",
+  "apn": "6902002",
+  "block": "6902",
+  "lot": "002",
+  "eas_baseid": "408157",
+  "coordinates": {
+    "lat": 37.729763,
+    "lng": -122.469902
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 6,
+    "bedrooms": 6,
+    "lot_area_sqft": 5510,
+    "building_area_sqft": 2542,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Ingleside Terrace",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0344 MONCADA             WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1172549,
+    "assessed_improvement_value": 691922,
+    "last_sale_date": "2015-12-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Ingleside Terrace Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1910–1930",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201609016622",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-09-01",
+      "status_date": "2017-02-17",
+      "estimated_cost": 95600,
+      "revised_cost": 95600,
+      "description": "1)comply w/ nov#201618261. 2)restore windows at front and side, revert back to original size, location and look. 3)replace windows and add new windows per plan, all windows to be aluminum clad wood window. 4)add one bedroom & 2 bath at 2nd floor. 5)legalize 2 bedroom, office, media room,",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201603182522",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-03-18",
+      "status_date": "2017-02-21",
+      "estimated_cost": 28000,
+      "revised_cost": 32844,
+      "description": "remodle kitchen & bathroom at 2nd floor. replace floor tiles, cabinets, sink, tub & toilet. 50% of lighting to be high efficiency. no walls moved, removed, added or infilled. all existing layouts to remain unchanged.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9101717",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-02-01",
+      "status_date": "1991-08-02",
+      "estimated_cost": 1600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MONCADA&street_type=WAY&address_number=344",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6902002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6902&lot=002",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6902002",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4699019293121%2037.72976299921478)%27)",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "article-10-lm273",
+      "name": "San Francisco Planning, Article 10 landmark designation: Landmark No. 273, Ingleside Presbyterian Church and \"The Great Cloud of Witnesses\" (ordinance, Planning Commission resolution and landmark designation report)",
+      "query": "https://sfplanninggis.org/docs/landmarks_and_districts/LM273.pdf",
+      "label": "SF Planning, landmark designation",
+      "retrieved": "2026-09-29"
+    }
+  ],
+  "notable_residents": [
+    {
+      "name": "Joseph A. Leonard",
+      "period": "until 1929",
+      "detail": "Architect and Ingleside Terraces developer Joseph A. Leonard died in 1929 at his second Ingleside Terraces home here.",
+      "source": "article-10-lm273"
+    }
+  ],
+  "historical_record": []
+}

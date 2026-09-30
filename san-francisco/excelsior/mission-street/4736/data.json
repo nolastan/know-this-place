@@ -1,0 +1,125 @@
+{
+  "address": "4736 Mission Street, San Francisco, CA 94112",
+  "path": "/san-francisco/excelsior/mission-street/4736/",
+  "apn": "6956002",
+  "block": "6956",
+  "lot": "002",
+  "eas_baseid": "409628",
+  "coordinates": {
+    "lat": 37.72244,
+    "lng": -122.43687
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 4,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 4,
+    "lot_area_sqft": 2487,
+    "building_area_sqft": 3280,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Mission Terrace",
+    "analysis_neighborhood": "Outer Mission",
+    "property_location_raw": "0000 4736 MISSION             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 191394,
+    "assessed_improvement_value": 411522,
+    "last_sale_date": "1987-10-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201004220858",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-04-22",
+      "status_date": "2010-04-30",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "replace roll up security gate for commercial space & replace front metal swing gate for apartments above the commercial space. fire dept to field verify that roll up gate locks in \"open\" position & verify that new gate for apartments without key or special knowledge and is lever type door hardware.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200608159571",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2006-08-15",
+      "status_date": "2007-04-17",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "remove and replace sidewalk, structural slab, steel beam and metal hatch door with new",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8717655",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-12-14",
+      "status_date": "1988-04-25",
+      "estimated_cost": 10000,
+      "description": "remodel chiropractic center",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1987–2016",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MISSION&street_type=ST&address_number=4736",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6956002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6956&lot=002",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6956002",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "article-10-lm290",
+      "name": "San Francisco Planning, Article 10 landmark designation: Landmark No. 290, Royal Baking Company (ordinance, Planning Commission resolution and landmark designation report)",
+      "query": "https://sfplanninggis.org/docs/landmarks_and_districts/LM290.pdf",
+      "label": "SF Planning, landmark designation",
+      "retrieved": "2026-09-29"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1914–1923",
+      "kind": "occupancy",
+      "description": "The Green Valley Macaroni Factory operated here, across Mission Street from the later Sorrento Macaroni plant, from about 1914 to 1923; the building survives, heavily modified.",
+      "source": "article-10-lm290"
+    }
+  ]
+}

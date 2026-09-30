@@ -1,0 +1,145 @@
+{
+  "address": "342 Paris Street, San Francisco, CA 94112",
+  "path": "/san-francisco/excelsior/paris-street/342/",
+  "apn": "6082007A",
+  "block": "6082",
+  "lot": "007A",
+  "eas_baseid": "391013",
+  "coordinates": {
+    "lat": 37.723367,
+    "lng": -122.434003
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1104,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Excelsior",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0000 0342 PARIS               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 447611,
+    "assessed_improvement_value": 298403,
+    "last_sale_date": "2002-06-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200911121090",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-11-12",
+      "status_date": "2009-11-12",
+      "estimated_cost": 9850,
+      "revised_cost": 9850,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200511168281",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-11-16",
+      "status_date": "2006-01-05",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "bathroom remodel,plumbing stays in same position.change window from 30\"x44\" to 40-1/2\"x57-1/2\" & will be frame window opening for glass block.new lighting,lighting must be fluorescent or control by occupancy sensor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8713105",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-09-11",
+      "status_date": "1988-02-29",
+      "estimated_cost": 3000,
+      "description": "replace perimeter walls & posts, install new foundation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8712399",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1987-08-28",
+      "status_date": "1988-02-02",
+      "estimated_cost": 3500,
+      "description": "install 5/8\"x11\" mudsill anchor bolts",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8513324",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-11-21",
+      "status_date": "1985-12-19",
+      "estimated_cost": 500,
+      "description": "replace sheet rock on walls in kitchen/bathroom/bedroom",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PARIS&street_type=ST&address_number=342",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6082007A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6082&lot=007A",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6082007A",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "article-10-lm290",
+      "name": "San Francisco Planning, Article 10 landmark designation: Landmark No. 290, Royal Baking Company (ordinance, Planning Commission resolution and landmark designation report)",
+      "query": "https://sfplanninggis.org/docs/landmarks_and_districts/LM290.pdf",
+      "label": "SF Planning, landmark designation",
+      "retrieved": "2026-09-29"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1915",
+      "kind": "construction",
+      "description": "Built in 1915 by A. B. Frank & Co., Ambrose B. Frank's real estate and home-building firm; an early example of the firm's houses.",
+      "source": "article-10-lm290"
+    }
+  ],
+  "building": {
+    "builder": "A. B. Frank & Co.",
+    "sources": [
+      "article-10-lm290"
+    ]
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "address": "270 Topeka Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/topeka-avenue/270/",
+  "apn": "5354006",
+  "block": "5354",
+  "lot": "006",
+  "eas_baseid": "376721",
+  "coordinates": {
+    "lat": 37.732237,
+    "lng": -122.396511
+  },
+  "parcel": {
+    "year_built": 1946,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 1995,
+    "building_area_sqft": 1270,
+    "basement_area_sqft": 192,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Silver Terrace",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 0270 TOPEKA              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 69676,
+    "assessed_improvement_value": 139375
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1946",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201510028738",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-10-02",
+      "status_date": "2015-11-25",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "dry rot repair. 800 sf of hardy backer siding on back of house. comply with 201571481. work on siding only",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TOPEKA&street_type=AVE&address_number=270",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5354006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5354&lot=006",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5354006",
+      "retrieved": "2026-09-29"
+    },
+    {
+      "id": "article-10-lm263",
+      "name": "San Francisco Planning, Article 10 landmark designation: Landmark No. 263, Sam Jordan's Bar (ordinance, Planning Commission resolution and landmark designation report)",
+      "query": "https://sfplanninggis.org/docs/landmarks_and_districts/LM263.pdf",
+      "label": "SF Planning, landmark designation",
+      "retrieved": "2026-09-29"
+    }
+  ],
+  "notable_residents": [
+    {
+      "name": "Sam Jordan",
+      "period": "1957–1958",
+      "detail": "Sam Jordan, later the owner of Sam Jordan's Bar and the first African American to run for mayor of San Francisco, lived here before moving above his bar at 4004 Third Street in 1958.",
+      "source": "article-10-lm263"
+    }
+  ],
+  "historical_record": []
+}

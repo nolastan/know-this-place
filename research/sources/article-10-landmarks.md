@@ -140,6 +140,34 @@ entry's `name` names the landmark and number, and its `query` is the PDF.
   `building.architect` from the report. The Third Street Bridge (No. 194) and the
   Path of Gold standards (No. 200) have no parcel and stay unresolved.
 
+- **The index's APN is wrong outright for several of LM251–LM300**, not just stale:
+  LM259 (Noe Valley library) repeats LM258's 0857001A — the ordinance gives 6539/034;
+  LM265 (Doelger Building) gives 1762020, the wrong block — the building is 1763/020 and
+  021, both with pages; LM292 (Lyon-Martin House) is a float, `6.60404e+006`, for
+  6604036; LM291's row links a lookup for 0676035. LM254 (Doggie Diner sign) and LM293
+  (Ingleside Terraces sundial) have no address at all. Take the parcel from the
+  ordinance's own "Assessor's Block … Lot …" line.
+- **Not every PDF is its landmark's report.** LM280–LM282 hold only the Board ordinance,
+  whose findings are procedural — one designation finding each. LM262 is the 2009 report
+  proposing all eight Appleton & Wolfard branch libraries, and LM300 binds the other
+  Carnegie branches' reports after its own; LM289 is a 25-page fact sheet. LM256–LM258
+  are one PDF for three buildings on the 55 Laguna campus.
+- **From LM251 the reports are community-written nominations as often as staff
+  reports** (the Paper Doll's is 224 pages of appendices, the Eagle's and Twin Peaks
+  Tavern's are histories told through the bar's owners). They carry the report-day
+  owners, bartenders and families on every page, and the owners of 1972–2003 who made a
+  bar significant may well be living: name them only where the record says they have
+  died. Twenty-one quotes in batch 5 carry `[name cut]`.
+- **Designation reports list the architect's other works with addresses and years.**
+  Worth taking — they credit buildings the site has pages for — but they are where the
+  batch's wrong placements came from: 16 of about 125 such findings were demolished
+  buildings (the Coronet, the Haight Theater, the Buena Vista School) or pre-1909
+  numbers. Compare every one with the roll year on the parcel the join chose.
+- **A report can contradict the building's own history.** LM297's list of Polk's works
+  dates the Hallidie Building 1912 (it is 1917–18); LM287 dates the Paper Doll's opening
+  1944 against 1949 elsewhere. State it in `unknowns`; don't publish the report's year
+  over a page that has it right.
+
 ## Structure for mining
 
 | batch | landmarks | designated | state |
@@ -148,20 +176,20 @@ entry's `name` names the landmark and number, and its `query` is the PDF.
 | `batch-2-lm051-lm100` | LM051–LM100 | 1973–1977 | read whole, resolved, published |
 | `batch-3-lm101-lm200` | LM101–LM200 | 1977–1991 | read whole, resolved, published |
 | `batch-4-lm201-lm250` | LM201–LM250 | 1991–2008 | read, resolved, published |
-| next | LM251–LM300 | 2005–2022 | on disk; 6.5 MB of full designation reports; not read |
-| next | LM301+ | 2022–2025 | on disk; not read |
+| `batch-5-lm251-lm300` | LM251–LM300 | 2005–2022 | read, resolved, published |
+| next | LM301+ | 2022–2025 | not read; fetch `LM<n>.pdf` from the index's `designationdocument.url` |
 
 ---
 
-**Verified:** 2026-09-27 — LM001–LM250 read. **LM001–LM100** (99 reports):
-330 findings, 307 resolved, 289 published on 84 pages (6 seeded).
-**LM101–LM200** (98 reports): 232 findings, 210 resolved, 205 published on 81
-pages (6 seeded). **LM201–LM250** (45 reports; Nos. 216, 219, 224, 230, 240 have
-no row): 190 findings, 171 resolved, 170 published on 40 pages (1 seeded, the
-Garfield Building at 938 Market), 1 declined as a repeat, 19 unresolved over 6
-landmarks — the Golden Gate Bridge, the Fireboat House, the Golden Triangle
-lights (no parcel), the Filbert Street cottages and the Chronicle Building
-(condominiums), and the Forest Hill station (no EAS address). Corrected: Balboa
-High's architect (three firms, not Bakewell alone) and 900 Innes Avenue's
-landmark number (250, not 260). The earlier attempt (PR #439, closed unmerged)
-was not built on. **Next:** LM251–LM300.
+**Verified:** 2026-09-29 — LM001–LM300 read. Batches 1–4 as before (LM001–LM250:
+752 findings, 688 resolved, 664 published on 204 pages). **LM251–LM300** (50 reports,
+six of them image-only and OCR'd — LM251–255 and LM261): 819 findings, 712 resolved,
+639 published on 107 pages (30 seeded), 73 declined — mostly repeats of what the page
+had from a context statement, and fourteen of James F. Dunn's credits the pages
+already carried — 100 unresolved (the 55 Laguna campus is 29 of them, condominium
+parcels, #228), 7 rejected (demolished buildings). Corrected on pages: the Metro
+Theater's architect (Reid Brothers; Deichmann was the 1941 remodel), One Montgomery's
+(Willis Polk; SOM was the 1979–84 remodel), St. Brigid's (Shea & Shea), the Doelger
+Building's and Sam Jordan's Bar's mislabelled "designation" entries, and **22 Beaver
+Street's page, which named a current resident** out of a context statement — the
+designation report says she still lives there. **Next:** LM301 onward.
