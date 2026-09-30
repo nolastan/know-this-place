@@ -1,0 +1,111 @@
+{
+  "source_id": "the-registry",
+  "batch": "2026-09-30",
+  "read_on": "2026-09-30",
+  "notes": "Six queued. 244 Jackson (foreclosed building marketed) is paywalled after the lede so nothing could be extracted; the lease renewals at 1550 Bryant and 185 Berry are tenant deals, not building facts; the rest name no building as their subject.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 6,
+    "mentions": 6,
+    "remaining": "none"
+  },
+  "findings": [
+    {
+      "id": "2026-09-30-reg-0001",
+      "date": "2026-09-29",
+      "date_precision": "day",
+      "kind": "sale",
+      "address_as_written": "244 Jackson Street",
+      "street_number": "244",
+      "street_type": "ST",
+      "street_name": "JACKSON",
+      "description": "Lender markets a foreclosed 28,000 sq ft Jackson Square building.",
+      "extra": {},
+      "citation": {
+        "label": "The Registry, “Lender Markets Foreclosed 28,000 SQFT Jackson Square Building Assessed at $37.5MM in San Francisco,” 29 September 2026",
+        "url": "https://news.theregistrysf.com/lender-markets-foreclosed-28000-sqft-jackson-square-building-assessed-at-37-5mm-in-san-francisco/"
+      },
+      "raw": {
+        "text": "Lender Markets Foreclosed 28,000 SQFT Jackson Square Building Assessed at $37.5MM in San Francisco"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Paywalled after the lede: could not confirm from the text that the building is 244 Jackson (the sidebar lists 244 and 530 Jackson). Not extractable."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0173007",
+        "path": "/san-francisco/chinatown/jackson-street/220/",
+        "eas_address": "220 JACKSON ST",
+        "method": "EAS exact match on 244 JACKSON ST → parcel 0173007; sf-parcels has blklot 0173007 active, 220–244 JACKSON; the 2025 roll records it as commercial office, built 1913. EAS puts 220, 230, 244 JACKSON ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 220.",
+        "checked_on": "2026-09-30",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      }
+    },
+    {
+      "id": "2026-09-30-reg-0002",
+      "date": "2026-09-29",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1550 Bryant St.",
+      "street_number": "1550",
+      "street_type": "ST",
+      "street_name": "BRYANT",
+      "description": "Tenant renews 55,000 sq ft at the Hamm's Building.",
+      "extra": {},
+      "citation": {
+        "label": "The Registry, “Retool Renews 55,000 SQFT at the Hamm’s Building, 1550 Bryant St., as San Francisco Tenants Keep Space in a Tightening Market,” 29 September 2026",
+        "url": "https://news.theregistrysf.com/retool-renews-55000-sqft-at-the-hamms-building-1550-bryant-st-as-san-francisco-tenants-keep-space-in-a-tightening-market/"
+      },
+      "raw": {
+        "text": "Retool Renews 55,000 SQFT at the Hamm’s Building, 1550 Bryant St., as San Francisco Tenants Keep Space in a Tightening Market"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "A lease renewal: a tenant fact, not a building fact."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3923006",
+        "path": "/san-francisco/mission/bryant-street/1550/",
+        "eas_address": "1550 BRYANT ST",
+        "method": "EAS exact match on 1550 BRYANT ST → parcel 3923006; sf-parcels has blklot 3923006 active, 1550–1550 BRYANT; the 2025 roll records it as commercial office, built 1915.",
+        "checked_on": "2026-09-30"
+      }
+    },
+    {
+      "id": "2026-09-30-reg-0003",
+      "date": "2026-09-29",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "185 Berry St.",
+      "street_number": "185",
+      "street_type": "ST",
+      "street_name": "BERRY",
+      "description": "Tenant expands to 351,000 sq ft.",
+      "extra": {},
+      "citation": {
+        "label": "The Registry, “Sierra Grows to 351,000 SQFT at China Basin’s 185 Berry St., Landing San Francisco’s Largest Office Deal of Q3,” 29 September 2026",
+        "url": "https://news.theregistrysf.com/sierra-grows-to-351000-sqft-at-china-basins-185-berry-st-landing-san-franciscos-largest-office-deal-of-q3/"
+      },
+      "raw": {
+        "text": "Sierra Grows to 351,000 SQFT at China Basin’s 185 Berry St., Landing San Francisco’s Largest Office Deal of Q3"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "A lease; tenant fact, not a building fact."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3803005",
+        "path": "/san-francisco/mission-bay/berry-street/105/",
+        "eas_address": "105 BERRY ST",
+        "method": "EAS exact match on 185 BERRY ST → parcel 3803005; sf-parcels has blklot 3803005 active, 980–980 03RD; the 2025 roll records it as commercial office, built 1920. EAS puts 105, 185 BERRY ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 105.",
+        "checked_on": "2026-09-30"
+      }
+    }
+  ]
+}

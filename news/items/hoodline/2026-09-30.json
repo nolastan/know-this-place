@@ -1,0 +1,85 @@
+{
+ "source_id": "hoodline",
+ "batch": "2026-09-30",
+ "read_on": "2026-09-30",
+ "notes": "Four queued, read. The Glen Park crash story names no address; the Gap headquarters story is a corporate arts programme at 2 Folsom Street, not a fact about the building. The other addresses in the Barista story (3313 Sacramento, 120 Fourth, 2222 Fillmore, 1750 Fulton) are context, not the subject.",
+ "coverage": {
+  "unit": "articles",
+  "examined": 4,
+  "mentions": 2,
+  "remaining": "none"
+ },
+ "findings": [
+  {
+   "id": "2026-09-30-hl-0001",
+   "date": "2026-09-29",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "1799 Fulton Street",
+   "street_number": "1799",
+   "street_type": "ST",
+   "street_name": "FULTON",
+   "description": "A local cafe plans a fall 2026 opening in the storefront at 1799 Fulton Street that a Starbucks vacated at the end of 2024.",
+   "extra": {
+    "occupant": "Barista Coffee & Brunch (business)",
+    "previous_occupant": "Starbucks, closed end of 2024"
+   },
+   "citation": {
+    "label": "Hoodline, “Barista Coffee & Brunch to Fill Former NOPA Starbucks Spot This Fall,” 29 September 2026",
+    "url": "https://hoodline.com/2026/09/barista-coffee-brunch-to-fill-former-nopa-starbucks-spot-this-fall/"
+   },
+   "raw": {
+    "text": "Barista Coffee & Brunch to Fill Former NOPA Starbucks Spot This Fall"
+   },
+   "confidence": "high",
+   "publish": {
+    "status": "published",
+    "note": "Seeded page via research/manifests/news-2026-09-30.json; headline entry added to historical_record and homepage grid. Proposal/tenant story: no building fields."
+   },
+   "resolution": {
+    "status": "resolved",
+    "apn": "1186018",
+    "path": "/san-francisco/western-addition/fulton-street/1799/",
+    "eas_address": "1799 FULTON ST",
+    "method": "EAS exact match on 1799 FULTON ST → parcel 1186018; sf-parcels has blklot 1186018 active, 1799–1799 FULTON; the 2025 roll records it as multi-family residential, built 1924. The assessor files the parcel as 608 MASONIC AV.",
+    "checked_on": "2026-09-30",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   }
+  },
+  {
+   "id": "2026-09-30-hl-0002",
+   "date": "2026-09-29",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "354 Divisadero St.",
+   "street_number": "354",
+   "street_type": "ST",
+   "street_name": "DIVISADERO",
+   "description": "Olive Juice, a cafe, opens as a pop-up at 354 Divisadero Street on October 8 ahead of a permanent build-out.",
+   "extra": {
+    "occupant": "Olive Juice (business)"
+   },
+   "citation": {
+    "label": "Hoodline, “Divisadero's New Olive Juice Cafe Douses Coffee, Smoothies in Olive Oil,” 29 September 2026",
+    "url": "https://hoodline.com/2026/09/divisadero-s-new-olive-juice-cafe-douses-coffee-smoothies-in-olive-oil/"
+   },
+   "raw": {
+    "text": "Divisadero's New Olive Juice Cafe Douses Coffee, Smoothies in Olive Oil"
+   },
+   "confidence": "high",
+   "publish": {
+    "status": "pending",
+    "note": "Blocked: the seeder refuses the parcel. 354 Divisadero Street resolves to parcel 1217079, which has no row on the 2025 secured roll (seed_pages.py: 'no 2025 roll row for 1217079 (354 Divisadero Street) — skipped'). Retry when the parcel is assessed. Second account: sf-standard ss-0002 (declined as duplicate)."
+   },
+   "resolution": {
+    "status": "resolved",
+    "apn": "1217079",
+    "path": "/san-francisco/haight-ashbury/divisadero-street/354/",
+    "eas_address": "354 DIVISADERO ST",
+    "method": "EAS exact match on 354 DIVISADERO ST → parcel 1217079; sf-parcels has blklot 1217079 active, 354–364 DIVISADERO; no row on the secured roll. EAS files the address under parcel 1217028, which sf-parcels reports retired; the active parcel its coordinates fall in is 1217079.",
+    "checked_on": "2026-09-30",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   }
+  }
+ ]
+}
