@@ -2498,3 +2498,16 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   sentence a reader of the page sees: the two claims, no source named ("Dated
   both 1924 and 1930"). A correction the page needs is a page edit, made by
   hand, and a note about it goes in the PR.*
+- **Parallel readers need a directory each, not a shared scratchpad.** Batch 6 of
+  the Article 10 reports ran nine readers at once, and three of them lost helper
+  scripts to another reader's file of the same name (`mk.py`, `chk.py`) in the
+  common scratchpad, then redid the work in private subfolders. Nothing was lost
+  because each wrote its notes file as soon as a report was read. *Give every
+  reader its own working directory in the brief, and keep the shared one for the
+  orchestrator's scripts.*
+- **A place page rejects keys an address page takes.** `city_landmark` and
+  `notable_residents` are not in `seed_pages.PLACE_KEYS`, so a publish script that
+  writes them onto a park's `place.json` fails `validate.py`. *Route by file: on a
+  place page the designation is a timeline entry and a past resident is a dated
+  entry about the building's use.*
+

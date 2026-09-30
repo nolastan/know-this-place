@@ -1,0 +1,132 @@
+{
+  "address": "1573–1575 Francisco Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/francisco-street/1573/",
+  "apn": "0482026",
+  "block": "0482",
+  "lot": "026",
+  "eas_baseid": "283156",
+  "coordinates": {
+    "lat": 37.80216,
+    "lng": -122.43094
+  },
+  "address_range": "1573–1575",
+  "street_numbers_on_parcel": [
+    "1573",
+    "1575"
+  ],
+  "parcel": {
+    "year_built": 1925,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 3436,
+    "building_area_sqft": 3390,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "1575 1573 FRANCISCO           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 95618,
+    "assessed_improvement_value": 113409
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201410108616",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-10-10",
+      "status_date": "2015-05-13",
+      "estimated_cost": 6608,
+      "revised_cost": 6608,
+      "description": "replace 7 front existing wood windows with wood (nine total, seven visible from the street) u factor not more > .32",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9018464",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-09-12",
+      "status_date": "1991-01-16",
+      "estimated_cost": 20000,
+      "description": "reset 7 doorstofit properly. reset door casing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9003689",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-02-26",
+      "status_date": "1990-09-04",
+      "estimated_cost": 4200,
+      "description": "replace exist damaged back wooden stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9000115",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-01-04",
+      "status_date": "1990-03-12",
+      "estimated_cost": 6800,
+      "description": "re - roofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FRANCISCO&street_type=ST&address_number=1573",
+      "retrieved": "2026-09-30"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0482026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-30"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0482&lot=026",
+      "retrieved": "2026-09-30"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0482026",
+      "retrieved": "2026-09-30"
+    },
+    {
+      "id": "article-10-lm320",
+      "name": "San Francisco Planning, Article 10 landmark designation: Landmark No. 320, Ladies' Protection and Relief Society (landmark designation report and ordinance)",
+      "query": "https://files.sfplanning.org/documents/preservation/LM320.pdf",
+      "label": "SF Planning, landmark designation",
+      "retrieved": "2026-09-30"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925",
+      "kind": "construction",
+      "description": "Built between 1925 and 1927 as one of a row of six three-story-over-basement Classical Revival two-family dwellings known locally as the \"Painted Ladies of the Marina.\"",
+      "source": "article-10-lm320"
+    }
+  ]
+}

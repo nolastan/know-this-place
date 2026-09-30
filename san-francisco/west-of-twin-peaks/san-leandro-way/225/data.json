@@ -1,0 +1,177 @@
+{
+  "address": "225 San Leandro Way, San Francisco, CA 94127",
+  "path": "/san-francisco/west-of-twin-peaks/san-leandro-way/225/",
+  "apn": "3253015",
+  "block": "3253",
+  "lot": "015",
+  "eas_baseid": "356846",
+  "coordinates": {
+    "lat": 37.732702,
+    "lng": -122.46844
+  },
+  "parcel": {
+    "year_built": 1920,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 4377,
+    "building_area_sqft": 1630,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Balboa Terrace",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0225 SAN LEANDRO         WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 95099,
+    "assessed_improvement_value": 158529
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Individual Landmark, California Register Historic District",
+    "yearbuilt": "1920",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Balboa Terrace Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1921–1939",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202501037684",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2025-07-18",
+      "status_date": "2026-06-12",
+      "estimated_cost": 1,
+      "revised_cost": 20000,
+      "description": "prop h: per sb-1214, abate unpermitted change of use. obtain cua, planning code 303 & 186.3, landmarks in rh take on zoing of nc1 districts for ge use. barrier free ramp at rear planning code 1005(c)(5) legalization of (e) skylights.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202305228279",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-05-22",
+      "status_date": "2023-06-29",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "administrative permit only- no plans-to change wording of bpa# 202303073153 to read: \"canvas projection at front of building withing allowable buildable bay window area.\" to match the previously approved scope.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202303073153",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-03-07",
+      "status_date": "2023-06-29",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "(n) awning w/in allowable buildable area @ front window",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201108051882",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-08-05",
+      "status_date": "2011-10-13",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20LEANDRO&street_type=WAY&address_number=225",
+      "retrieved": "2026-09-30"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3253015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-30"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3253&lot=015",
+      "retrieved": "2026-09-30"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3253015",
+      "retrieved": "2026-09-30"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.46843963954542%2037.732701707122956)%27)",
+      "retrieved": "2026-09-30"
+    },
+    {
+      "id": "article-10-lm318",
+      "name": "San Francisco Planning, Article 10 landmark designation: Landmark No. 318, The Gregangelo Museum (landmark designation report and ordinance)",
+      "query": "https://files.sfplanning.org/documents/preservation/LM318.pdf",
+      "label": "SF Planning, landmark designation",
+      "retrieved": "2026-09-30"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1920",
+      "kind": "construction",
+      "description": "The house was built as a detached single-family home, one of four on this side of the block that Walter Falch designed this year and that began house construction in Balboa Terrace, before Harold Stoner became the tract's main architect.",
+      "source": "article-10-lm318"
+    },
+    {
+      "date": "1989",
+      "kind": "occupancy",
+      "description": "The house became an artist collective and immersive folk-art environment, with hundreds of artists covering its porch, roofline and ground-floor rooms in mosaics, murals, tapestries, dioramas and sculpture; its nine themed rooms retell the Thousand and One Nights through San Francisco history and are open to the public on guided tours and at events.",
+      "source": "article-10-lm318"
+    },
+    {
+      "date": "2023-12-04",
+      "kind": "event",
+      "description": "The Board of Supervisors adopted a resolution initiating landmark designation of the house as The Gregangelo Museum.",
+      "source": "article-10-lm318"
+    },
+    {
+      "date": "2024-03-20",
+      "kind": "event",
+      "description": "The Historic Preservation Commission held a hearing and recommended the property for landmark designation, including its publicly accessible ground-floor art interiors.",
+      "source": "article-10-lm318"
+    },
+    {
+      "date": "2024-06-11",
+      "kind": "designation",
+      "description": "Designated San Francisco Landmark No. 318, The Gregangelo Museum.",
+      "source": "article-10-lm318"
+    }
+  ],
+  "city_landmark": {
+    "name": "The Gregangelo Museum",
+    "number": 318,
+    "source": "article-10-lm318"
+  },
+  "building": {
+    "architect": "Walter C. Falch"
+  }
+}
