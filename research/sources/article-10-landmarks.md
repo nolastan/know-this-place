@@ -5,7 +5,7 @@
 > [../SOURCES.md](../SOURCES.md) · cited on pages by one source id per report,
 > `article-10-lm<NNN>` (e.g. `article-10-lm061`), whose `query` is the report's PDF.
 >
-> - **Kind:** PDF reports · **Tier:** primary · **Status:** open
+> - **Kind:** PDF reports · **Tier:** primary · **Status:** done
 > - **Search-invisibility:** high — scanned or text-poor PDFs, one per landmark, not indexed in any useful way
 > - **Coverage:** Article 10 of the Planning Code — the city's individually designated landmarks, one designation document each; DataSF `97yj-54sx` lists 372 rows
 > - **Local corpus:** `research/corpora/article-10-landmarks/` (gitignored) — `index.json` (the DataSF rows), `matched.json` (rows joined to pages by APN), `pdf/` and `pdf_rest/`, `txt*/` (text layers), `ocr*/` (Tesseract output)
@@ -168,6 +168,29 @@ entry's `name` names the landmark and number, and its `query` is the PDF.
   1944 against 1949 elsewhere. State it in `unknowns`; don't publish the report's year
   over a page that has it right.
 
+- **From LM322 the index links an M-Files download, and that is the only URL.** The
+  fourteen landmarks of the April 2026 omnibus (LM322–LM335) have no `LM<n>.pdf` at
+  either `files.sfplanning.org` or `sfplanninggis.org` (both 404); the index's
+  `citypln-m-extnl.sfgov.org/external/link.ashx?Action=Download…` link is what the pages
+  cite. Each PDF is the Clerk's cover memo (adopted 21 April, enacted 30 April 2026), the
+  ordinance and a short fact sheet; the full designation reports are not in them.
+- **LM316's PDF is the 2016 report alone.** Its cover's "Approved March 28, 2024" is not
+  stated to be final passage and there is no ordinance, so the designation is dated by
+  DataSF's year.
+- **More index errors in LM301–LM336:** LM334's APN 3657034 is 3567/034 (the page is
+  16th Street 3281); LM301 is indexed at 899 Wawona but stands in Stern Grove (place
+  page); LM306's parcel page is the Legion of Honor, which the landmark excludes — the
+  cemetery facts go on Lincoln Park; LM311 is indexed as Sydney Walton Park (the arch
+  stood at 626 Front). Ordinances misprint their own parcel too: LM312 and LM313 print
+  block "01765192" in Section 3, LM335 gives 1660 Church Street in Section 3(b).
+- **Place pages take neither `city_landmark` nor `notable_residents`** (validate fails
+  on both). A landmark on a place page gets its designation as a timeline entry, and a
+  past resident becomes a dated entry.
+- **From LM300 on, the fact sheets name the living people the building is known for** —
+  the House of Latin Rock's owner of sixty years, the Gregangelo Museum's creator.
+  Neither is named anywhere; the landmark's official name is printed, as with the Belli
+  Building.
+
 ## Structure for mining
 
 | batch | landmarks | designated | state |
@@ -177,11 +200,23 @@ entry's `name` names the landmark and number, and its `query` is the PDF.
 | `batch-3-lm101-lm200` | LM101–LM200 | 1977–1991 | read whole, resolved, published |
 | `batch-4-lm201-lm250` | LM201–LM250 | 1991–2008 | read, resolved, published |
 | `batch-5-lm251-lm300` | LM251–LM300 | 2005–2022 | read, resolved, published |
-| next | LM301+ | 2022–2025 | not read; fetch `LM<n>.pdf` from the index's `designationdocument.url` |
+| `batch-6-lm301-lm336` | LM301–LM336 | 2022–2026 | read, resolved, published |
+| next | LM337+ | — | none designated yet; re-fetch `97yj-54sx` and take any new number from its `designationdocument.url` |
 
 ---
 
-**Verified:** 2026-09-29 — LM001–LM300 read. Batches 1–4 as before (LM001–LM250:
+**Verified:** 2026-09-30 — **every landmark in the index read, LM001–LM336.** Batches 1–5
+as before (LM001–LM300: 1571 findings, 1400 resolved, 1303 published). **LM301–LM336**
+(36 PDFs, all with text layers — no OCR needed): 667 findings, 608 resolved, 562 published
+on 99 pages (29 seeded), 46 declined — nearly all repeats of what a page already carried
+from a context statement or an earlier landmark report — 55 unresolved (the Westwood Park
+pillars and the Milk Plaza rainbow flag have no parcel; addresses with no EAS record) and
+4 rejected (demolished). Corrected on a page: 546 Fillmore's architect (Hugh Keenan designed
+and built the c. 1891 rectory; Thomas J. Welsh was the 1906–07 rebuild). Not cited: LM324's
+image-only pp. 11–21. **Next:** nothing until the city designates LM337; the source is
+`done`.
+
+**Previously verified:** 2026-09-29 — LM001–LM300 read. Batches 1–4 as before (LM001–LM250:
 752 findings, 688 resolved, 664 published on 204 pages). **LM251–LM300** (50 reports,
 six of them image-only and OCR'd — LM251–255 and LM261): 819 findings, 712 resolved,
 639 published on 107 pages (30 seeded), 73 declined — mostly repeats of what the page

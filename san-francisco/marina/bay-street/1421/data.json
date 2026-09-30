@@ -1,0 +1,138 @@
+{
+  "address": "1421 Bay Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/bay-street/1421/",
+  "apn": "0471001F",
+  "block": "0471",
+  "lot": "001F",
+  "eas_baseid": "282849",
+  "coordinates": {
+    "lat": 37.80327,
+    "lng": -122.430422
+  },
+  "parcel": {
+    "year_built": 1931,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 1873,
+    "building_area_sqft": 1950,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 1421 BAY                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 424910,
+    "assessed_improvement_value": 365420,
+    "last_sale_date": "1994-04-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1931",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200708170251",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-08-17",
+      "status_date": "2007-12-18",
+      "estimated_cost": 4550,
+      "revised_cost": 4550,
+      "description": "install 5 wood windows into (e) openings visable from the street no structural changes .67 u factor min.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9812675",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-07-06",
+      "status_date": "1999-06-16",
+      "estimated_cost": 5780,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9812351",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-07-01",
+      "status_date": "1998-07-22",
+      "estimated_cost": 2707,
+      "description": "repair dry-rot at base of front wall/right front corner/sdg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9202191",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1992-02-11",
+      "status_date": "1992-08-11",
+      "estimated_cost": 5000,
+      "description": "remove existing common footing,install new footing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8309831",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1983-09-29",
+      "status_date": "1983-12-08",
+      "estimated_cost": 4000,
+      "description": "repair dry rot",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BAY&street_type=ST&address_number=1421",
+      "retrieved": "2026-09-30"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0471001F&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-30"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0471&lot=001F",
+      "retrieved": "2026-09-30"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0471001F",
+      "retrieved": "2026-09-30"
+    },
+    {
+      "id": "article-10-lm320",
+      "name": "San Francisco Planning, Article 10 landmark designation: Landmark No. 320, Ladies' Protection and Relief Society (landmark designation report and ordinance)",
+      "query": "https://files.sfplanning.org/documents/preservation/LM320.pdf",
+      "label": "SF Planning, landmark designation",
+      "retrieved": "2026-09-30"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1931",
+      "kind": "construction",
+      "description": "Built as a two-story single-family house.",
+      "source": "article-10-lm320"
+    }
+  ]
+}

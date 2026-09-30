@@ -1,0 +1,144 @@
+{
+  "address": "2777–2779 Mission Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/mission-street/2777/",
+  "apn": "3642024",
+  "block": "3642",
+  "lot": "024",
+  "eas_baseid": "458897",
+  "coordinates": {
+    "lat": 37.752657,
+    "lng": -122.418125
+  },
+  "address_range": "2777–2779",
+  "street_numbers_on_parcel": [
+    "2777",
+    "2779"
+  ],
+  "parcel": {
+    "year_built": 1920,
+    "units": 2,
+    "stories": 1,
+    "rooms": 2,
+    "bathrooms": 3,
+    "lot_area_sqft": 4042,
+    "building_area_sqft": 2700,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "C",
+    "zoning": "NC-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2779 2777 MISSION             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 398272,
+    "assessed_improvement_value": 450051
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1920",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201508315701",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2015-08-31",
+      "status_date": "2020-11-18",
+      "estimated_cost": 10000,
+      "revised_cost": 30000,
+      "description": "one story horizontal addition for dry storage and refrigerator at the rear of (e) restaurant.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201505146360",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-05-14",
+      "status_date": "2015-06-04",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "comply with n.o.v. # 201411331. need permit to remove 3 metal shed for storage dry goods.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200003295803",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2000-03-29",
+      "status_date": "2000-10-14",
+      "estimated_cost": 5000,
+      "revised_cost": 8000,
+      "description": "seismic retrofit of existing building parapet, no addnl work, compy w/parat safety program requireme",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9309030",
+      "type": "additions alterations or repairs",
+      "status": "filing",
+      "filed": "1993-05-28",
+      "status_date": "1993-05-28",
+      "estimated_cost": 2000,
+      "description": "correction to existing parapet per parapet safety program",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8902646",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1989-02-16",
+      "status_date": "1989-08-10",
+      "estimated_cost": 60000,
+      "description": "proposed 2 story horiz. addition @ rear of exist bar",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MISSION&street_type=ST&address_number=2777",
+      "retrieved": "2026-09-30"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3642024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-09-30"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3642&lot=024",
+      "retrieved": "2026-09-30"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3642024",
+      "retrieved": "2026-09-30"
+    },
+    {
+      "id": "article-10-lm336",
+      "name": "San Francisco Planning, Article 10 landmark designation: Landmark No. 336, House of Latin Rock (landmark designation report and ordinance)",
+      "query": "https://sfplanninggis.org/docs/landmarks_and_districts/LM336.pdf",
+      "label": "SF Planning, landmark designation",
+      "retrieved": "2026-09-30"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1975",
+      "kind": "event",
+      "description": "Michael Rios, Anthony Machado and Richard Montez completed a major mural on the side of the building at the 24th Street BART station; the mural survives.",
+      "source": "article-10-lm336"
+    }
+  ]
+}
