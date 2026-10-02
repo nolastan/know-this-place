@@ -121,7 +121,7 @@ sit in — the three it touched most, and how many in all.
 | `loc-newspapers/sn85066387-1911-real-estate.json` | 135 | 220 KB | 1911 | 63 | 54 | `east-cut`, `south-of-market`, `pacific-heights` +20 |
 | `loc-newspapers/sn85066387-1912-building-contracts.json` | 1,302 | 2.6 MB | 1912 | 209 | 166 | `mission`, `nob-hill`, `tenderloin` +23 |
 | `loc-newspapers/sn85066387-1912-real-estate.json` | 126 | 201 KB | 1906–1912 | 71 | 58 | `south-of-market`, `nob-hill`, `financial-district` +20 |
-| `loc-newspapers/sn85066387-1913-building-contracts.json` | 369 | 723 KB | 1913 | 88 | 69 | `nob-hill`, `tenderloin`, `outer-richmond` +18 |
+| `loc-newspapers/sn85066387-1913-building-contracts.json` | 369 | 724 KB | 1913 | 88 | 69 | `nob-hill`, `tenderloin`, `outer-richmond` +18 |
 | `loc-newspapers/sn85066387-1913-real-estate.json` | 59 | 99 KB | 1913 | 25 | 21 | `east-cut`, `tenderloin`, `inner-richmond` +11 |
 | `nrhp-nominations/bush-cottage-row-district.json` | 19 | 47 KB | 1874–1882 | 18 | 18 | `pacific-heights`, `japantown` |
 | `nrhp-nominations/civic-center-district.json` | 17 | 34 KB | 1913–1966 | 17 | 10 | `tenderloin`, `nob-hill` |
