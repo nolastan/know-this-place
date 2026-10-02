@@ -173,6 +173,54 @@ COMPASS = {"N": (0, 1), "S": (0, -1), "E": (1, 0), "W": (-1, 0),
            "NE": (1, 1), "NW": (-1, 1), "SE": (1, -1), "SW": (-1, -1)}
 
 
+def street_axis(A: list, p: tuple):
+    """Street A's direction at crossing p, as a unit vector (east, north), fitted
+    to its EAS points within about 150 m; None where there are too few."""
+    k = math.cos(math.radians(p[0]))
+    near = [((float(x["longitude"]) - p[1]) * k, float(x["latitude"]) - p[0]) for x in A]
+    near = [v for v in near if math.hypot(*v) < 0.00135]
+    if len(near) < 3:
+        return None
+    mx, my = sum(v[0] for v in near) / len(near), sum(v[1] for v in near) / len(near)
+    sxx = sum((v[0] - mx) ** 2 for v in near)
+    syy = sum((v[1] - my) ** 2 for v in near)
+    sxy = sum((v[0] - mx) * (v[1] - my) for v in near)
+    ang = 0.5 * math.atan2(2 * sxy, sxx - syy)
+    return math.cos(ang), math.sin(ang)
+
+
+def on_side(axis: tuple, p: tuple, pt: tuple, side: str):
+    """Is pt on the side of the street through p (running along axis) that the
+    record names — "N line", "SW line"? True, False, or None where the named
+    side runs along the street rather than across it (a misread)."""
+    cx, cy = COMPASS.get(side.upper(), (0, 0))
+    nx, ny = -axis[1], axis[0]
+    c = (cx * nx + cy * ny) / (math.hypot(cx, cy) or 1)
+    if abs(c) < 0.3:
+        return None
+    k = math.cos(math.radians(p[0]))
+    s = (pt[1] - p[1]) * k * nx + (pt[0] - p[0]) * ny
+    return (s > 0) == (c > 0)
+
+
+def in_quadrant(axes: list, p: tuple, pt: tuple, quad: str):
+    """Is pt in the record's corner — "SE corner", or "S corner" of two diagonal
+    streets? Tested against each street in turn: the corner must lie on the
+    named side of every street the compass point runs across."""
+    verdicts = [on_side(ax, p, pt, quad) for ax in axes if ax]
+    verdicts = [v for v in verdicts if v is not None]
+    return all(verdicts) if verdicts else None
+
+
+def centroid(apn: str, shapes: dict, fallback):
+    """A parcel's (lat, lng) centre from its outline, else its EAS point —
+    EAS points sit on the street line often enough to land on the wrong side."""
+    if apn in shapes:
+        pts = shapes[apn][1]
+        return (sum(q[1] for q in pts) / len(pts), sum(q[0] for q in pts) / len(pts))
+    return fallback
+
+
 def toward_point(A: list, p: tuple, direction: str, e: dict):
     """A point along street A from crossing p, the way the record's offset runs.
 
@@ -186,16 +234,10 @@ def toward_point(A: list, p: tuple, direction: str, e: dict):
     is dropped by the caller, so running long does not reach the next block.
     """
     k = math.cos(math.radians(p[0]))
-    near = [((float(x["longitude"]) - p[1]) * k, float(x["latitude"]) - p[0]) for x in A]
-    near = [v for v in near if math.hypot(*v) < 0.00135]
-    if len(near) < 3:
+    axis = street_axis(A, p)
+    if axis is None:
         return None
-    mx, my = sum(v[0] for v in near) / len(near), sum(v[1] for v in near) / len(near)
-    sxx = sum((v[0] - mx) ** 2 for v in near)
-    syy = sum((v[1] - my) ** 2 for v in near)
-    sxy = sum((v[0] - mx) * (v[1] - my) for v in near)
-    ang = 0.5 * math.atan2(2 * sxy, sxx - syy)
-    ux, uy = math.cos(ang), math.sin(ang)
+    ux, uy = axis
     cx, cy = COMPASS.get(direction.upper(), (0, 0))
     cn = math.hypot(cx, cy)
     if not cn:
@@ -279,7 +321,7 @@ def roll_rows(apns: list) -> dict:
     return out
 
 
-def batch(path: str, tol: float = 0.04) -> int:
+def batch(path: str, tol: float = 0.04, as_json: bool = False) -> int:
     entries = [json.loads(line) for line in open(path) if line.strip()]
     streets, found = {}, []
 
@@ -316,30 +358,40 @@ def batch(path: str, tol: float = 0.04) -> int:
                 if math.hypot(dy, dx) < RADIUS_DEG * 1.5:
                     near.setdefault(x["parcel_number"], []).append(x["address"])
         pts = {}
-        for x in A:
+        for x in A + B:
             if x["parcel_number"] in near:
-                pts.setdefault(x["parcel_number"], x)
-        found.append((e, (near, ix, toward, pts), None))
+                pts.setdefault(x["parcel_number"], (float(x["latitude"]), float(x["longitude"])))
+        axes = (street_axis(A, ix), street_axis(B, ix))
+        found.append((e, (near, ix, toward, pts, axes), None))
     apns = sorted({a for _, hit, _ in found if hit for a in hit[0]})
     roll, names, pages = roll_rows(apns), planning_names(apns), pages_by_apn()
     shapes = block_shapes(sorted({a[:4] if not a[4].isalpha() else a[:5]
-                                  for _, hit, _ in found if hit and hit[2] for a in hit[0]}))
+                                  for _, hit, _ in found if hit for a in hit[0]}))
+    results = []
     for e, hit, err in found:
         want = lot_sqft(e.get("lot", ""))
         offset = e.get("offset") if not want else None
+        corner_only = not want and offset is None and e.get("quad") and not e.get("to") \
+            and not e.get("dir")
         head = f"{e['id']}: {e['a']} & {e['b']}" + (f" to {e['to']}" if e.get("to") else "") \
             + (f" going {e['dir']}" if e.get("dir") and not e.get("to") else "")
         if want:
             head += f"  lot {e.get('lot')} = {want:.0f} sq ft"
         elif offset is not None:
             head += f"  offset {offset} ft from {e['b']}, year {e.get('year', '?')}  (no lot)"
+        elif corner_only:
+            head += f"  {e['quad']} corner, year {e.get('year', '?')}  (no lot)"
         else:
             head += "  (no lot)"
-        print(head)
+        res = {"id": e["id"], "error": err, "candidates": []}
+        results.append(res)
+        if not as_json:
+            print(head)
         if err:
-            print(f"    {err}")
+            if not as_json:
+                print(f"    {err}")
             continue
-        near, ix, toward, pts = hit
+        near, ix, toward, pts, axes = hit
         n = 0
         for apn in sorted(near):
             ro = roll.get(apn, {})
@@ -347,6 +399,8 @@ def batch(path: str, tol: float = 0.04) -> int:
                 area = float(ro.get("lot_area") or 0)
             except ValueError:
                 area = 0
+            yr = ro.get("year_property_built") or ""
+            year_ok = bool(e.get("year") and yr.isdigit() and abs(int(yr) - int(e["year"])) <= 2)
             span = front_span(apn, shapes, ix, toward, with_origin=True) if toward else None
             if span and e.get("dir") and not e.get("to") and abs(span[2]) > 120:
                 continue  # a block that does not begin at the crossing: the next one along
@@ -357,33 +411,61 @@ def batch(path: str, tol: float = 0.04) -> int:
                 # No lot to check, so the match is the measured frontage start
                 # against the record's offset, and the roll year against the
                 # record's — the offset alone repeats every 25 feet.
-                if span is None or abs(span[0] - offset) > 4:
+                if span is None or abs(span[0] - offset) > 4 or not year_ok:
                     continue
-                yr = ro.get("year_property_built") or ""
-                if not (e.get("year") and yr.isdigit() and abs(int(yr) - int(e["year"])) <= 2):
+            elif corner_only:
+                # No lot and no offset: a corner's parcels are many, so only a
+                # roll year that fits, in the corner the record names, is shown.
+                if not year_ok:
                     continue
             else:
                 continue
+            here = centroid(apn, shapes, pts.get(apn))
+            side = None
+            if here and e.get("side") and axes[0]:
+                side = on_side(axes[0], ix, here, e["side"])
+            elif here and e.get("quad"):
+                side = in_quadrant(list(axes), ix, here, e["quad"])
+            if corner_only and side is False:
+                continue
             n += 1
-            yr = ro.get("year_property_built") or "?"
-            mark = ""
-            if e.get("year") and yr.isdigit() and abs(int(yr) - int(e["year"])) <= 2:
-                mark = "  <-- year"
+            mark = "  <-- year" if year_ok else ""
             d = ""
+            offset_ok = None
             if span:
                 d = f"  front {span[0]:.0f}-{span[1]:.0f} ft from {e['b']}"
-                if e.get("offset") is not None and abs(span[0] - float(e["offset"])) <= 4:
-                    d += "  <-- offset"
+                if e.get("offset") is not None:
+                    offset_ok = abs(span[0] - float(e["offset"])) <= 4
+                    if offset_ok:
+                        d += "  <-- offset"
             elif apn in pts:
-                d = f"  ~{abs(along_ft(pts[apn], ix, toward or (ix[0], ix[1] + 1e-3))):.0f} ft along {e['a']}"
-            print(f"    {apn}  built {yr}  {ro.get('number_of_stories', '?')} st  "
-                  f"{area:g} sq ft  roll {ro.get('closed_roll_year')}{mark}{d}")
-            print(f"        {', '.join(sorted(set(near[apn]))[:6])}"
-                  + (f"  Planning: {names[apn]}" if apn in names else "")
-                  + (f"  page: {', '.join(pages[apn])}" if apn in pages else ""))
-        if not n:
-            what = "within 4 ft of the offset and roll year" if offset is not None else f"within {tol:.0%} of the lot"
+                d = f"  ~{abs(along_ft({'latitude': pts[apn][0], 'longitude': pts[apn][1]}, ix, toward or (ix[0], ix[1] + 1e-3))):.0f} ft along {e['a']}"
+            if side is not None:
+                d += "  side ok" if side else "  WRONG SIDE"
+            res["candidates"].append({
+                "apn": apn, "year": yr or None, "stories": ro.get("number_of_stories"),
+                "lot_area": area, "roll_year": ro.get("closed_roll_year"),
+                "front": [round(span[0], 1), round(span[1], 1)] if span else None,
+                "year_ok": year_ok, "offset_ok": offset_ok, "side_ok": side,
+                "crossing_ft": round(math.hypot(
+                    (here[1] - ix[1]) * math.cos(math.radians(ix[0])), here[0] - ix[0]) * 364000)
+                if here else None,
+                "addresses": sorted(set(near[apn])), "name": names.get(apn),
+                "pages": pages.get(apn, [])})
+            if not as_json:
+                print(f"    {apn}  built {yr or '?'}  {ro.get('number_of_stories', '?')} st  "
+                      f"{area:g} sq ft  roll {ro.get('closed_roll_year')}{mark}{d}")
+                print(f"        {', '.join(sorted(set(near[apn]))[:6])}"
+                      + (f"  Planning: {names[apn]}" if apn in names else "")
+                      + (f"  page: {', '.join(pages[apn])}" if apn in pages else ""))
+        if not n and not as_json:
+            what = ("within 4 ft of the offset and roll year" if offset is not None
+                    else f"in the {e.get('quad')} corner with the roll year" if corner_only
+                    else f"within {tol:.0%} of the lot")
             print(f"    no parcel of {len(near)} {what}")
+    if as_json:
+        json.dump(results, sys.stdout, indent=1)
+        print()
     return 0
 
 
@@ -396,9 +478,11 @@ def main() -> int:
     ap.add_argument("--to", metavar="STREET_C",
                     help="list street_a's block face from street_b to this street instead")
     ap.add_argument("--year", type=int, help="mark parcels built within two years of this")
+    ap.add_argument("--json", action="store_true",
+                    help="with --batch: print every entry's candidates as JSON, checks included")
     a = ap.parse_args()
     if a.batch:
-        return batch(a.batch)
+        return batch(a.batch, as_json=a.json)
     if not (a.street_a and a.street_b):
         ap.error("two streets, or --batch FILE")
     A, B = eas_rows(a.street_a), eas_rows(a.street_b)
