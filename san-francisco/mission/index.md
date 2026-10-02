@@ -43,6 +43,7 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [Camp Street](camp-street/) — 7 buildings, built 1907–1932; 6 in the 16th and Valencia Streets Post-Fire Historic District.
 - [Capp Street](capp-street/) — 187 buildings, built 1870–2019; 11 in the Von Schroeder-Welsh Block Historic District.
 - [Cesar Chavez Street](cesar-chavez-street/) — 46 buildings, built 1900–1993.
+- [Chattanooga Street](chattanooga-street/) — 1 building, built 1912.
 - [Clarion Alley](clarion-alley/) — 4 buildings, built 1908–2006; 1 in the Mission Miracle Mile at 17th Street Historic District.
 - [Clinton Park](clinton-park/) — 29 buildings, built 1885–1980; 4 in the Guerrero Street Fire Line Historic District.
 - [Colton Street](colton-street/) — 1 building, built 1908.

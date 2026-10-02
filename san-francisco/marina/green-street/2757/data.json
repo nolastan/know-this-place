@@ -1,0 +1,156 @@
+{
+  "address": "2757 Green Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/green-street/2757/",
+  "apn": "0955025",
+  "block": "0955",
+  "lot": "025",
+  "eas_baseid": "291407",
+  "coordinates": {
+    "lat": 37.794708,
+    "lng": -122.444453
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 3,
+    "rooms": 9,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 4673,
+    "building_area_sqft": 3400,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "0000 2757 GREEN               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1881266,
+    "assessed_improvement_value": 2023719,
+    "last_sale_date": "1998-07-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Cow Hollow First Bay Tradition Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1888–1914",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201412224264",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-12-22",
+      "status_date": "2015-12-24",
+      "estimated_cost": 8000,
+      "revised_cost": 16000,
+      "description": "exterior stair and landing renovation; new stair structure and new stair treads and risers. new landing finish material, structure to remain. new treads and risers and landing finish material to be precast concrete tiles in lieu of painted wood.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200909307954",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2009-09-30",
+      "status_date": "2015-12-24",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200906220974",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-06-22",
+      "status_date": "2009-12-07",
+      "estimated_cost": 80000,
+      "revised_cost": 80000,
+      "description": "renovation of powder room, bathroom and master bath. window replacement at bath 1, master bath, master bedroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200507258467",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-07-25",
+      "status_date": "2006-09-13",
+      "estimated_cost": 85000,
+      "revised_cost": 85000,
+      "description": "kitchen renovation, removal of interior, non load bearing walls @ pantry. expansion of windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9025085",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-12-07",
+      "status_date": "1991-04-29",
+      "estimated_cost": 17056,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GREEN&street_type=ST&address_number=2757",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0955025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0955&lot=025",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0955025",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44445295397965%2037.79470765649653)%27)",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "loc-sf-call-1912-03-15",
+      "name": "The San Francisco Call, 15 March 1912, p. 15",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1912-03-15/ed-1/seq-15/",
+      "retrieved": "2026-10-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-03-15",
+      "kind": "building contract",
+      "description": "Harry C. Warwick contracted to put up a two-storey frame residence.",
+      "source": "loc-sf-call-1912-03-15"
+    }
+  ]
+}

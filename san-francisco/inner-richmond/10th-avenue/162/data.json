@@ -1,0 +1,143 @@
+{
+  "address": "162 10th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/10th-avenue/162/",
+  "apn": "1369023",
+  "block": "1369",
+  "lot": "023",
+  "eas_baseid": "301390",
+  "coordinates": {
+    "lat": 37.785322,
+    "lng": -122.468561
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 1915,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0000 0162 10TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 298704,
+    "assessed_improvement_value": 419847
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200303250628",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-03-25",
+      "status_date": "2003-08-13",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "construct 1/2 of bsmnt into recroom and install full bath",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9905763",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-03-25",
+      "status_date": "2000-02-16",
+      "estimated_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9405755",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-04-13",
+      "status_date": "1994-04-26",
+      "estimated_cost": 1200,
+      "description": "termite work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8713198",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-09-14",
+      "status_date": "1987-12-17",
+      "estimated_cost": 400,
+      "description": "deck revision",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8615228",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-12-02",
+      "status_date": "1987-12-07",
+      "estimated_cost": 18500,
+      "description": "horizontal extension, wood deck",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "1986–2015",
+    "shown_on_page": 5,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=10TH&street_type=AVE&address_number=162",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1369023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1369&lot=023",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1369023",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "loc-sf-call-1912-05-18",
+      "name": "The San Francisco Call, 18 May 1912, p. 27",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1912-05-18/ed-1/seq-27/",
+      "retrieved": "2026-10-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-05-18",
+      "kind": "building contract",
+      "description": "A builder contracted for all work except painting, electrical work, gas and electrical fixtures, shades on a frame residence, then going up, at $3,600.",
+      "source": "loc-sf-call-1912-05-18"
+    }
+  ]
+}

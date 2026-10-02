@@ -6,7 +6,7 @@
 >
 > - **Kind:** newspaper OCR corpus · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 10 batches / 58,620 pages scanned for address mentions in August 2026 (no findings file; see below), and the *Call*'s Real Estate and Financial Section read in full for 1911 and 1912, as held for 1913, and for the whole of 1910 (January–June and July–December batches, then re-read for its owner-only permits, contracts, loans and building sales in `sn85066387-1910-permits.json`), into `findings/loc-newspapers/sn85066387-<year>-real-estate.json`. The daily Building Contracts lists of 1911 are read in full into `sn85066387-1911-building-contracts.json`.
+> - **Coverage:** 10 batches / 58,620 pages scanned for address mentions in August 2026 (no findings file; see below), and the *Call*'s Real Estate and Financial Section read in full for 1911 and 1912, as held for 1913, and for the whole of 1910 (January–June and July–December batches, then re-read for its owner-only permits, contracts, loans and building sales in `sn85066387-1910-permits.json`), into `findings/loc-newspapers/sn85066387-<year>-real-estate.json`. The daily Building Contracts lists of 1911 and 1912 are read in full into `sn85066387-1911-building-contracts.json` and `sn85066387-1912-building-contracts.json`.
 > - **Local corpus:** `research/corpora/loc-newspapers/` — `tar/` for the batch OCR tarballs, `txt/<lccn>/<yyyy>/<mm>/<dd>/ed-1/seq-N/ocr.txt` for the extracted pages. A fresh container has none of it.
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -391,6 +391,41 @@ Read 2026-09-28, every page of 1911. What a run on these lists needs to know:
   Boulevard, First Street is downtown's; an alias keyed on the name alone put
   downtown contracts on Arguello until the street type was carried through.
 
+### The 1912 Building Contracts lists
+
+Read 2026-10-02, every page of 1912 the three batches hold (nothing after 15
+December). Same method as 1911, and the same list: owner with contractor, work,
+building, line or corner, lot, amount. What was new:
+
+- **Trim the heading windows.** A heading hit opened a 6,000-character window
+  that ran on into sports and shipping news; cutting each block at the first
+  gap of more than about 1,100 characters between dollar amounts halved the
+  text to read without losing an entry. Don't chain amounts *backwards* to find
+  a block's start: the deeds column above the list ends every deed in "$10",
+  and the chain walks up the whole column.
+- **Numbered streets need their type.** EAS files Eighth Street and Eighth
+  Avenue under one `street_name` (`08TH`), and the contracts print "Eighth
+  avenue" and "Eighth street" both. `corner.py` now takes a trailing EAS type
+  (`08TH AVE`); a numbered cross street printed with no type is tried both
+  ways and kept only where exactly one meets the main street.
+- **Readers diverge on corner lots.** The list prints a corner lot's two
+  dimensions in compass order ("N 30 by W 70"); some readers put the frontage
+  first and some kept the printed order. The lot-area match doesn't care, but
+  `lot_as_recorded` is not a reliable front-by-depth on corner entries.
+- **The lettered streets are only aliases for geometry.** A, B, I, J, L, N, P
+  and T streets (renamed Anza, Balboa, Irving, Judah, Lawton, Noriega, Pacheco,
+  Taraval in 1909) still appear in 1912, as does Thirteenth avenue (Funston).
+  A corner on them is measurable; a street *number* on them ("558 B street")
+  is not today's number until a cross street says so, and stays unresolved.
+- **Contractor names come through the OCR worse than the rest.** About one in six
+  of the published entries had a name garbled past repair ("W T lllla I*.
+  Gott"); the page says "a builder" and the finding keeps the name as printed.
+  A name is corrected on the page only where another entry prints it legibly.
+- **Where it fails** is the same as 1911: 729 entries have no parcel matching
+  the lot or offset with a roll year near 1912, and the expunged South of
+  Market alleys (Ecker, Webb, Chelsea place) cannot be
+  measured at all.
+
 ### Cautions
 
 - **Verify the number against the cross-streets — the ads hand you the check.**
@@ -525,6 +560,15 @@ Read 2026-09-28, every page of 1911. What a run on these lists needs to know:
   declined, 19 of them other contracts for a building already carrying one.
   Batch file `findings/loc-newspapers/sn85066387-1911-building-contracts.json`,
   replacing the two-entry sample of 2026-09-27.)
+- **Verified:** 2026-10-02 (the *Call*'s daily Building Contracts lists for
+  1912, from `curiv_angwin_ver02`, `curiv_calipatria_ver03` and
+  `curiv_dardanelle_ver01`: 9,693 OCR pages scanned, 507 page-blocks, 1,388
+  contract entries read, 1,302 findings after 73 cut-off fragments and 13
+  reprints set aside — 209 resolved (199 by corner, offset and lot, 10 on a
+  printed number), 1,093 unresolved; 166 published on 166 pages, 108 of them
+  seeded, 43 declined, 35 of them other contracts for a building already
+  carrying one. Batch file
+  `findings/loc-newspapers/sn85066387-1912-building-contracts.json`.)
 - **Coverage:** 1890s and 1900s years scanned in August 2026 for mentions only
   (above); **1910 Real Estate and Financial Section read in full, three
   times over** — numbered/architect/corner entries (#three 1910 batches),
@@ -536,7 +580,7 @@ Read 2026-09-28, every page of 1911. What a run on these lists needs to know:
   as far as the batches hold it** (1–15 February, 16 July–8 December); 1913's
   other months are in no batch on the bulk route. Then the unscanned
   1897–1899 and 1903–1904 years. The daily Building Contracts lists are **read
-  for 1911** (above); 1912's and 1913's are the next batches, on the same
-  method. The rest of the 1911, 1912 and 1913 paper —
+  for 1911 and 1912** (above); 1913's, as far as the batches hold it (1–15
+  February, 16 July–8 December), is the next batch, on the same method. The rest of the 1911, 1912 and 1913 paper —
   the fires and the building-permit lists — is on disk in a session that
   fetched it, and unread.

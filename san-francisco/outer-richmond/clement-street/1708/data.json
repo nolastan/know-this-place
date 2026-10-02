@@ -1,0 +1,125 @@
+{
+  "address": "1708 Clement Street, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/clement-street/1708/",
+  "apn": "1415010",
+  "block": "1415",
+  "lot": "010",
+  "eas_baseid": "302960",
+  "coordinates": {
+    "lat": 37.782595,
+    "lng": -122.477669
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 3258,
+    "basement_area_sqft": 650,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 1708 CLEMENT             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1008776,
+    "assessed_improvement_value": 672517,
+    "last_sale_date": "2008-05-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9920213",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-09-27",
+      "status_date": "2000-01-27",
+      "estimated_cost": 4200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8308340",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1983-08-24",
+      "status_date": "1983-09-06",
+      "estimated_cost": 1200,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8302904",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-04-08",
+      "status_date": "1983-07-13",
+      "estimated_cost": 950,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8208272",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1982-10-08",
+      "status_date": "1983-03-17",
+      "estimated_cost": 460,
+      "description": "bldg use: dwg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLEMENT&street_type=ST&address_number=1708",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1415010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1415&lot=010",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1415010",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "loc-sf-call-1912-06-08",
+      "name": "The San Francisco Call, 8 June 1912, p. 18",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1912-06-08/ed-1/seq-18/",
+      "retrieved": "2026-10-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-06-08",
+      "kind": "building contract",
+      "description": "David Haute contracted to put up a two-storey frame building, at $4,600.",
+      "source": "loc-sf-call-1912-06-08"
+    }
+  ]
+}

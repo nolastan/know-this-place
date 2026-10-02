@@ -1,0 +1,84 @@
+{
+  "address": "267 20th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/20th-avenue/267/",
+  "apn": "1413014",
+  "block": "1413",
+  "lot": "014",
+  "eas_baseid": "302858",
+  "coordinates": {
+    "lat": 37.782942,
+    "lng": -122.479896
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1300,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0267 20TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 45228,
+    "assessed_improvement_value": 47768
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=AVE&address_number=267",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1413014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1413&lot=014",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1413014",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "loc-sf-call-1912-05-17",
+      "name": "The San Francisco Call, 17 May 1912, p. 19",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1912-05-17/ed-1/seq-19/",
+      "retrieved": "2026-10-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-05-17",
+      "kind": "building contract",
+      "description": "John V. Steefel contracted to put up a one-storey, attic and basement frame building.",
+      "source": "loc-sf-call-1912-05-17"
+    }
+  ]
+}

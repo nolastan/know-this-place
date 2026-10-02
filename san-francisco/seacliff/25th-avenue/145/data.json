@@ -1,0 +1,180 @@
+{
+  "address": "145 25th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/seacliff/25th-avenue/145/",
+  "apn": "1333007",
+  "block": "1333",
+  "lot": "007",
+  "eas_baseid": "300504",
+  "coordinates": {
+    "lat": 37.786744,
+    "lng": -122.485551
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 3,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 3120,
+    "building_area_sqft": 3260,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Seacliff",
+    "property_location_raw": "0000 0145 25TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2689843,
+    "assessed_improvement_value": 1152789,
+    "last_sale_date": "2020-07-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202209293397",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-09-29",
+      "status_date": "2023-01-11",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202012019919",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-12-01",
+      "status_date": "2021-03-16",
+      "estimated_cost": 8000,
+      "revised_cost": 14500,
+      "description": "bathroom remodel, replacement in-kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9804232",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-03-12",
+      "status_date": "1998-03-20",
+      "estimated_cost": 2400,
+      "description": "dry rot repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9721022",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1997-10-20",
+      "status_date": "1998-03-17",
+      "estimated_cost": 8000,
+      "description": "new skylight/new side windows; install toilet & enclosures",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9720457",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-10-14",
+      "status_date": "1998-03-03",
+      "estimated_cost": 6000,
+      "description": "repalce (e) single glazing at rear walls new flue shaft encl",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9719851",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-10-06",
+      "status_date": "1998-03-03",
+      "estimated_cost": 20000,
+      "description": "build internal structural walls, relocate hearing wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9717415",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-09-08",
+      "status_date": "1998-03-17",
+      "estimated_cost": 10000,
+      "description": "const. non-structural partitions & fixtures for 2nd fl",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9717183S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1997-09-04",
+      "status_date": "1998-03-17",
+      "estimated_cost": 60000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9714735",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-08-05",
+      "status_date": "1997-10-16",
+      "estimated_cost": 5000,
+      "description": "intrnal mon-structural partition;cabinets & fixtures.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=AVE&address_number=145",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1333007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1333&lot=007",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1333007",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "loc-sf-call-1912-11-27",
+      "name": "The San Francisco Call, 27 November 1912, p. 17",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1912-11-27/ed-1/seq-17/",
+      "retrieved": "2026-10-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-11-27",
+      "kind": "building contract",
+      "description": "V. Filippis contracted to put up a two-storey frame residence.",
+      "source": "loc-sf-call-1912-11-27"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "address": "1088 Rhode Island Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/rhode-island-street/1088/",
+  "apn": "4158014",
+  "block": "4158",
+  "lot": "014",
+  "eas_baseid": "369688",
+  "coordinates": {
+    "lat": 37.755952,
+    "lng": -122.402036
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1790,
+    "basement_area_sqft": 880,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Potrero Hill",
+    "property_location_raw": "0000 1088 RHODE ISLAND        ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1310824,
+    "assessed_improvement_value": 561781,
+    "last_sale_date": "2021-03-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201409105954",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-09-10",
+      "status_date": "2014-09-12",
+      "estimated_cost": 40000,
+      "revised_cost": 75000,
+      "description": "revision to 201406249392. new conditioned bedroom at front lower level. lowered floor line. also with added full bath",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201406259392",
+      "type": "otc alterations permit",
+      "status": "reinstated",
+      "filed": "2014-06-25",
+      "status_date": "2014-09-10",
+      "estimated_cost": 60000,
+      "revised_cost": 150000,
+      "description": "general interior remodeling & rear deck replacement at (2) levels, no new sq.ft. ooutside (e) envelope, new windows throughout. windows at front to be wood, single hung.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200110241588",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-10-24",
+      "status_date": "2003-04-30",
+      "estimated_cost": 11895,
+      "revised_cost": 11895,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=RHODE%20ISLAND&street_type=ST&address_number=1088",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4158014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4158&lot=014",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4158014",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "loc-sf-call-1912-06-19",
+      "name": "The San Francisco Call, 19 June 1912, p. 19",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1912-06-19/ed-1/seq-19/",
+      "retrieved": "2026-10-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-06-19",
+      "kind": "building contract",
+      "description": "David Houle contracted to put up a cottage, at $1,485.",
+      "source": "loc-sf-call-1912-06-19"
+    }
+  ]
+}

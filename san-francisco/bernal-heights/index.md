@@ -7,6 +7,7 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [Alabama Street](alabama-street/) — 1 building, built 1998.
 - [Anderson Street](anderson-street/) — 1 building, built 1925.
 - [Andover Street](andover-street/) — 1 building, built 1907.
+- [Bradford Street](bradford-street/) — 1 building, built 1912.
 - [Cesar Chavez Street](cesar-chavez-street/) — 1 building, built 1991.
 - [Coleridge Street](coleridge-street/) — 1 building, built 1900.
 - [College Avenue](college-avenue/) — 1 building, built 1928.

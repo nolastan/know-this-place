@@ -1,0 +1,131 @@
+{
+  "address": "129 Bradford Street, San Francisco, CA 94110",
+  "path": "/san-francisco/bernal-heights/bradford-street/129/",
+  "apn": "5657012",
+  "block": "5657",
+  "lot": "012",
+  "eas_baseid": "381777",
+  "coordinates": {
+    "lat": 37.740807,
+    "lng": -122.40931
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2150,
+    "building_area_sqft": 1402,
+    "lot_depth_ft": 86,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Bernal Heights",
+    "property_location_raw": "0000 0129 BRADFORD            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 853041,
+    "assessed_improvement_value": 568693,
+    "last_sale_date": "2020-04-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200411179518",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-11-17",
+      "status_date": "2005-06-21",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "rear foundation and deck. rebuild rear deck in kind. replace rear foundations",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200310218171",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-10-21",
+      "status_date": "2003-12-09",
+      "estimated_cost": 18133,
+      "revised_cost": 18133,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9926147",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2000-02-10",
+      "status_date": "2000-07-31",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "remodel of 2nd floor bathroom & rebuild and new dormer",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9803854",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-03-06",
+      "status_date": "1998-12-03",
+      "estimated_cost": 4200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRADFORD&street_type=ST&address_number=129",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5657012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5657&lot=012",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5657012",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "loc-sf-call-1912-06-22",
+      "name": "The San Francisco Call, 22 June 1912, p. 29",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1912-06-22/ed-1/seq-29/",
+      "retrieved": "2026-10-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-06-22",
+      "kind": "building contract",
+      "description": "A builder contracted to put up a one-storey frame cottage, at $1,700.",
+      "source": "loc-sf-call-1912-06-22"
+    }
+  ]
+}

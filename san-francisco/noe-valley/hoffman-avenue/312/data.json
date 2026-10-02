@@ -1,0 +1,120 @@
+{
+  "address": "312 Hoffman Avenue, San Francisco, CA 94114",
+  "path": "/san-francisco/noe-valley/hoffman-avenue/312/",
+  "apn": "2828001A",
+  "block": "2828",
+  "lot": "001A",
+  "eas_baseid": "347316",
+  "coordinates": {
+    "lat": 37.751454,
+    "lng": -122.44093
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 2250,
+    "building_area_sqft": 1275,
+    "lot_depth_ft": 90,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 0312 HOFFMAN             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 868994,
+    "assessed_improvement_value": 579325,
+    "last_sale_date": "2002-07-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201511092077",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-11-09",
+      "status_date": "2015-12-16",
+      "estimated_cost": 12880,
+      "revised_cost": 12880,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200507087147",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-07-08",
+      "status_date": "2005-07-26",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "dryrot repair of existing front entry stairs exterior, repair in kind - treard, risers, stringers, l",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9415767",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-09-28",
+      "status_date": "1995-03-28",
+      "estimated_cost": 6500,
+      "description": "repair dryrot at side fndtn walls & basement floor",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HOFFMAN&street_type=AVE&address_number=312",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2828001A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2828&lot=001A",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2828001A",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "loc-sf-call-1912-02-24",
+      "name": "The San Francisco Call, 24 February 1912, p. 23",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1912-02-24/ed-1/seq-23/",
+      "retrieved": "2026-10-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-02-24",
+      "kind": "building contract",
+      "description": "Fred Tedder and R. E. Morris contracted to put up a one-storey frame cottage.",
+      "source": "loc-sf-call-1912-02-24"
+    }
+  ]
+}

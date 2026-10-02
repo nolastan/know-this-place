@@ -1,0 +1,123 @@
+{
+  "address": "2765–2767 Lombard Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/lombard-street/2765/",
+  "apn": "0940020",
+  "block": "0940",
+  "lot": "020",
+  "eas_baseid": "290932",
+  "coordinates": {
+    "lat": 37.798322,
+    "lng": -122.446955
+  },
+  "address_range": "2765–2767",
+  "street_numbers_on_parcel": [
+    "2765",
+    "2767"
+  ],
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 2,
+    "rooms": 2,
+    "bathrooms": 1,
+    "lot_area_sqft": 1702.31,
+    "building_area_sqft": 2992,
+    "lot_depth_ft": 59.73,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "NC-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Cow Hollow",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 2765 LOMBARD             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 61965,
+    "assessed_improvement_value": 40395
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201412304748",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-12-30",
+      "status_date": "2015-01-06",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "reroofing. compliance with maher ordinance no 155-13 not required.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200306066526",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-06-06",
+      "status_date": "2004-02-03",
+      "estimated_cost": 200,
+      "revised_cost": 200,
+      "description": "plaster to drywall because plaster is falling/peeling, main living room & bedroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9315158",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-09-03",
+      "status_date": "1993-10-25",
+      "estimated_cost": 5000,
+      "description": "reinforce existing parapet wall at roof level",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LOMBARD&street_type=ST&address_number=2765",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0940020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0940&lot=020",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0940020",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "loc-sf-call-1912-07-18",
+      "name": "The San Francisco Call, 18 July 1912, p. 5",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1912-07-18/ed-1/seq-5/",
+      "retrieved": "2026-10-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-07-18",
+      "kind": "building contract",
+      "description": "J. J. Mitrovitch Building Company contracted to put up a two-storey concrete building, at $4,800.",
+      "source": "loc-sf-call-1912-07-18"
+    }
+  ]
+}
