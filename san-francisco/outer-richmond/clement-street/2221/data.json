@@ -1,0 +1,184 @@
+{
+  "address": "2221–2223 Clement Street, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/clement-street/2221/",
+  "apn": "1455038",
+  "block": "1455",
+  "lot": "038",
+  "eas_baseid": "490131",
+  "coordinates": {
+    "lat": 37.781851,
+    "lng": -122.483172
+  },
+  "address_range": "2221–2223",
+  "street_numbers_on_parcel": [
+    "2221",
+    "2223"
+  ],
+  "parcel": {
+    "year_built": 1913,
+    "units": 3,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 3540,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "OTCLEM",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "2223 2221 CLEMENT             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1244725,
+    "assessed_improvement_value": 670235,
+    "last_sale_date": "2016-12-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202408299727",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-08-29",
+      "status_date": "2025-01-10",
+      "estimated_cost": 19000,
+      "revised_cost": 19000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201706220100",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-06-22",
+      "status_date": "2017-10-30",
+      "estimated_cost": 90000,
+      "revised_cost": 90000,
+      "description": "tenant improvement: non-bearing wall framing, electrical, water, server line installation, sushi bar counter fabrication, interior decoration. no mechanical work and structural work. ada bathroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201704275071",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-04-27",
+      "status_date": "2017-04-27",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "partial demo non bearing walls for prepare for future ti. reference to ab-017",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9618559",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-09-30",
+      "status_date": "1997-03-31",
+      "estimated_cost": 7850,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9119639",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1991-10-16",
+      "status_date": "1992-10-22",
+      "estimated_cost": 1800,
+      "description": "install chair lift",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9100164",
+      "type": "sign - erect",
+      "status": "expired",
+      "filed": "1991-01-07",
+      "status_date": "1991-07-14",
+      "estimated_cost": 1400,
+      "description": "electric sign",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8716437",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-11-16",
+      "status_date": "1988-03-30",
+      "estimated_cost": 2755,
+      "description": "awnings",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8714064",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-09-30",
+      "status_date": "1988-03-30",
+      "estimated_cost": 2000,
+      "description": "remove existing partition inside restaurant & trim work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8205465",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1982-07-02",
+      "status_date": "1983-03-11",
+      "estimated_cost": 2400,
+      "description": "bldg use: dwg/restaurant",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLEMENT&street_type=ST&address_number=2221",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1455038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1455&lot=038",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1455038",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "loc-sf-call-1913-10-07",
+      "name": "The San Francisco Call, 7 October 1913, p. 13",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-10-07/ed-1/seq-13/",
+      "retrieved": "2026-10-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1913-10-07",
+      "kind": "building contract",
+      "description": "Thomas Hamill contracted for all work except shades and fixtures on a two-storey frame store and flat, at $3,300.",
+      "source": "loc-sf-call-1913-10-07"
+    }
+  ]
+}

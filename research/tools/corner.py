@@ -63,6 +63,14 @@ regular lots. It is still a candidate, not a verdict — read RUNBOOK.md's "A
 corner, not a number" and write the reasoning into `resolution.method` with
 `"by_hand": true`.
 
+**`side` and `quad`** — the record's "N line of" or "SE corner of", given as
+`"side": "N"` on a `dir`/`to` line or `"quad": "SE"` on a corner line: each
+candidate is marked `side ok` or `WRONG SIDE`, tested against its parcel
+centroid (EAS points sit on the street line often enough to fall on the wrong
+side). A corner line with `quad` and neither `lot` nor `offset` lists only the
+parcels in that corner whose roll year fits `year`. **`--json`** prints every
+entry's candidates with these checks as data, for a placement script.
+
 It deliberately does not pick a corner. Which parcel is "southeast" depends on
 which side of the street carries the odd numbers, and that is a reading of the
 addresses printed here, not something a centroid gets right. The match is the

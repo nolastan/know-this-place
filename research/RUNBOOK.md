@@ -301,7 +301,16 @@ Eighth Street and Eighth Avenue), so give it the type the record prints:
 It prints only the parcels within 4% of the record's lot area, and for a block
 face (`to`) each lot's frontage measured from the block's end on the parcel
 shapes, "front 167-206 ft from HYDE" — the offset check done for you. A match
-still needs the side of the street the record names and a roll year that fits.
+still needs the side of the street the record names and a roll year that fits,
+and the tool checks the side too: give the record's `"side": "N"` (its "N
+line") on a `dir` or `to` line, or `"quad": "SE"` on a corner, and each
+candidate is marked `side ok` or `WRONG SIDE` against its parcel centroid. A
+corner line with `quad` and no lot or offset lists only the parcels in that
+corner whose roll year fits. `--json` prints every entry's candidates with
+those checks, the roll year, storeys, lot area, frontage, addresses and page,
+for a placement script to apply the rule to instead of re-deriving the
+geometry; see [LESSONS.md](LESSONS.md) for why a corner record's lot is the
+parcel addressed on both streets, whatever its distance from the crossing.
 
 **An offset is a check in its own right.** "80 feet west of Lyon, 25 by 100"
 names the lot whose front begins 80 feet from the corner; measure it on the

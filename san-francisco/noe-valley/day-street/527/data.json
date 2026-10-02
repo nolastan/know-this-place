@@ -1,0 +1,137 @@
+{
+  "address": "527 Day Street, San Francisco, CA 94131",
+  "path": "/san-francisco/noe-valley/day-street/527/",
+  "apn": "7537030",
+  "block": "7537",
+  "lot": "030",
+  "eas_baseid": "420932",
+  "coordinates": {
+    "lat": 37.742199,
+    "lng": -122.43402
+  },
+  "parcel": {
+    "year_built": 1913,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 820,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Glen Park",
+    "property_location_raw": "0000 0527 DAY                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 971633,
+    "assessed_improvement_value": 647751,
+    "last_sale_date": "2005-10-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201103111920",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-03-11",
+      "status_date": "2011-03-21",
+      "estimated_cost": 9037,
+      "revised_cost": 9037,
+      "description": "bathroom upgrade. new fixtures, finishes, lighting changes must comply with cec 150k",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200102121860",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2001-02-12",
+      "status_date": "2001-08-31",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "remodel driveway to repair tree root damage steps from drivewy to door",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9509414",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-06-20",
+      "status_date": "1995-09-26",
+      "estimated_cost": 7400,
+      "description": "strap/bolt foundation/correct earth to wood contact/cap foun",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8701295",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-02-02",
+      "status_date": "1987-06-03",
+      "estimated_cost": 2500,
+      "description": "horizontal extension, replace front stair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8305442",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1983-06-14",
+      "status_date": "1983-07-27",
+      "estimated_cost": 80,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DAY&street_type=ST&address_number=527",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7537030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7537&lot=030",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7537030",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "loc-sf-call-1913-10-31",
+      "name": "The San Francisco Call, 31 October 1913, p. 15",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-10-31/ed-1/seq-15/",
+      "retrieved": "2026-10-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1913-10-31",
+      "kind": "building contract",
+      "description": "New Era Building company contracted to put up a one-storey frame cottage, at $1,600.",
+      "source": "loc-sf-call-1913-10-31"
+    }
+  ]
+}
