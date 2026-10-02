@@ -1,0 +1,113 @@
+{
+  "source_id": "the-registry",
+  "batch": "2026-10-02",
+  "read_on": "2026-10-02",
+  "notes": "Eight queued, read. 580 Market (foreclosure, Rialto Capital) earns an entry. 850 Brannan are tenant lease deals, not building facts; 736 Mission is a potential buyer's interest, no event; 725 Harrison BXP extension already on the 120 Perry Street page via Hoodline 2026-09-28; the rest name no building as subject.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 8,
+    "mentions": 3,
+    "remaining": "none"
+  },
+  "findings": [
+    {
+      "id": "2026-10-02-reg-0001",
+      "date": "2026-10-01",
+      "date_precision": "day",
+      "kind": "sale",
+      "address_as_written": "580 Market Street",
+      "street_number": "580",
+      "street_type": "ST",
+      "street_name": "MARKET",
+      "description": "Special servicer Rialto Capital took ownership of the 1907-built, 35,000 sq ft office at 580 Market Street in foreclosure, with $17.5 million of debt still owed; Paragon Company had bought it in 2015.",
+      "extra": {
+        "new_owner": "Rialto Capital (firm)",
+        "prior_owner": "Paragon Company (firm)",
+        "completed_per_article": "1907",
+        "area": "35,000 sq ft"
+      },
+      "citation": {
+        "label": "The Registry, “Rialto Takes Back 35,000 SQFT 580 Market St. Office After Paragon’s $17.5MM Debt Goes Unpaid,” 1 October 2026",
+        "url": "https://news.theregistrysf.com/rialto-takes-back-35000-sqft-580-market-st-office-after-paragons-17-5mm-debt-goes-unpaid/"
+      },
+      "raw": {
+        "text": "Rialto Takes Back 35,000 SQFT 580 Market St. Office After Paragon’s $17.5MM Debt Goes Unpaid"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "published",
+        "note": "Page already existed (east-cut/market-street/576); headline entry added to historical_record and homepage grid. No building fields: sale/tenant/proposal story."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0291005B",
+        "path": "/san-francisco/east-cut/market-street/576/",
+        "eas_address": "576 MARKET ST",
+        "method": "EAS exact match on 580 MARKET ST → parcel 0291005B; sf-parcels has blklot 0291005B active, 576–580 MARKET; the 2025 roll records it as commercial office, built 1923. EAS puts 576, 578, 580 MARKET ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 576.",
+        "checked_on": "2026-10-02"
+      }
+    },
+    {
+      "id": "2026-10-02-reg-0002",
+      "date": "2026-10-01",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "736 Mission Street",
+      "street_number": "736",
+      "street_type": "ST",
+      "street_name": "MISSION",
+      "description": "Golden Gate University reported as a potential buyer of the Contemporary Jewish Museum building.",
+      "extra": {},
+      "citation": {
+        "label": "The Registry, “Golden Gate University Eyes Contemporary Jewish Museum’s 63,000 SQFT Libeskind Landmark at 736 Mission Street for New Home,” 1 October 2026",
+        "url": "https://news.theregistrysf.com/golden-gate-university-eyes-contemporary-jewish-museums-63000-sqft-libeskind-landmark-at-736-mission-street-for-new-home/"
+      },
+      "raw": {
+        "text": "Golden Gate University Eyes Contemporary Jewish Museum’s 63,000 SQFT Libeskind Landmark at 736 Mission Street for New Home"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Speculative: a potential buyer is interested; nothing has happened to the building. Revisit if a sale is announced."
+      },
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-10-02",
+        "method": "sf-eas-addresses has 736 MISSION ST but it does not join to one parcel. 736 MISSION ST's coordinates fall in 20 active parcels (3706436, 3706310, 3706412, 3706315…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
+        "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+      }
+    },
+    {
+      "id": "2026-10-02-reg-0003",
+      "date": "2026-10-01",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "850 Brannan Street",
+      "street_number": "850",
+      "street_type": "ST",
+      "street_name": "BRANNAN",
+      "description": "Two tenant lease deals (Physical Intelligence sublease, Airbnb new lease) at 850 Brannan.",
+      "extra": {},
+      "citation": {
+        "label": "The Registry, “Airbnb Signs 123,000 SQFT New Lease at 850 Brannan St. as Its San Francisco Rebound Gathers Speed,” 1 October 2026",
+        "url": "https://news.theregistrysf.com/airbnb-signs-123000-sqft-new-lease-at-850-brannan-st-as-its-san-francisco-rebound-gathers-speed/"
+      },
+      "raw": {
+        "text": "Airbnb Signs 123,000 SQFT New Lease at 850 Brannan St. as Its San Francisco Rebound Gathers Speed"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Tenant lease deal, not a building fact (same as the 1550 Bryant and 185 Berry decisions). The Physical Intelligence sublease story at 850 Brannan is declined for the same reason."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3780072",
+        "path": "/san-francisco/south-of-market/brannan-street/850/",
+        "eas_address": "850 BRANNAN ST",
+        "method": "EAS exact match on 850 BRANNAN ST → parcel 3780072; sf-parcels has blklot 3780072 active, 850–850 BRANNAN; the 2025 roll records it as commercial office, built 1986.",
+        "checked_on": "2026-10-02"
+      }
+    }
+  ]
+}
