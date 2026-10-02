@@ -1,0 +1,109 @@
+{
+  "address": "273 16th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/outer-richmond/16th-avenue/273/",
+  "apn": "1417011",
+  "block": "1417",
+  "lot": "011",
+  "eas_baseid": "303047",
+  "coordinates": {
+    "lat": 37.782939,
+    "lng": -122.4756
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2400,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0273 16TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 367914,
+    "assessed_improvement_value": 613314,
+    "last_sale_date": "1990-05-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200711137929",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2007-11-13",
+      "status_date": "2009-01-05",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "remodel (e) full bathroom on top floor. no sturctural. remove & replace tub, toilet & vanity. no lighting changes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9614173S",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1996-08-02",
+      "status_date": "1999-01-26",
+      "estimated_cost": 28000,
+      "revised_cost": 50000,
+      "description": "horizontal",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=16TH&street_type=AVE&address_number=273",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1417011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1417&lot=011",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1417011",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "loc-sf-call-1912-02-24",
+      "name": "The San Francisco Call, 24 February 1912, p. 23",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1912-02-24/ed-1/seq-23/",
+      "retrieved": "2026-10-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-02-24",
+      "kind": "building contract",
+      "description": "O. B. Arthur contracted to put up a two-storey frame residence, at $3,350.",
+      "source": "loc-sf-call-1912-02-24"
+    }
+  ]
+}

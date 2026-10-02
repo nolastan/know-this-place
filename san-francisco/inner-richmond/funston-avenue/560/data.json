@@ -1,0 +1,108 @@
+{
+  "address": "560 Funston Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/funston-avenue/560/",
+  "apn": "1555036",
+  "block": "1555",
+  "lot": "036",
+  "eas_baseid": "308092",
+  "coordinates": {
+    "lat": 37.777712,
+    "lng": -122.471232
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 3,
+    "rooms": 12,
+    "bathrooms": 3,
+    "bedrooms": 7,
+    "lot_area_sqft": 3600,
+    "building_area_sqft": 3628,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0000 0560 FUNSTON             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2488532,
+    "assessed_improvement_value": 1066514,
+    "last_sale_date": "2022-05-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200004036163",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-04-03",
+      "status_date": "2000-10-03",
+      "revised_cost": 12000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8204262",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-05-27",
+      "status_date": "1983-07-11",
+      "estimated_cost": 9000,
+      "description": "bldg use: dwg.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FUNSTON&street_type=AVE&address_number=560",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1555036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1555&lot=036",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1555036",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "loc-sf-call-1912-09-20",
+      "name": "The San Francisco Call, 20 September 1912, p. 19",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1912-09-20/ed-1/seq-19/",
+      "retrieved": "2026-10-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-09-20",
+      "kind": "building contract",
+      "description": "A builder contracted for all work except plumbing, painting, heating and electric work on a two-storey, attic and basement frame residence, then going up, at $4,900.",
+      "source": "loc-sf-call-1912-09-20"
+    }
+  ]
+}

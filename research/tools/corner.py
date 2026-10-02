@@ -34,6 +34,10 @@ is in — the check a record's "183 feet west of Powell" is made against. Withou
 `to` it is the EAS point's distance, a rough middle. Streets are fetched once
 each, so a hundred entries take a minute rather than an hour.
 
+A street may end in its EAS type — `"08TH AVE"`, `"08TH ST"` — and then only
+that type is searched: EAS files Eighth Street and Eighth Avenue under one
+`street_name`, so a numbered name without its type finds both.
+
 **`dir` instead of `to`** — for the record that says "183 W of Guerrero" and
 never names the street at the block's other end, which is nearly every
 building-contract entry:
@@ -81,8 +85,17 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 RADIUS_DEG = 0.00055  # about 60 m of latitude
 
 
+STREET_TYPES = {"ALY", "AVE", "BLVD", "CIR", "CT", "DR", "HWY", "LN", "PL", "PLZ",
+                "RD", "ST", "TER", "WAY"}
+
+
 def eas_rows(street: str) -> list:
-    rows = r.api_get(r.EAS, {"street_name": street.upper(), "$limit": 50000,
+    """EAS rows on a street. A trailing EAS type ("08TH AVE", "08TH ST") keeps
+    only that type: EAS files Eighth Street and Eighth Avenue under one name."""
+    name, _, kind = street.upper().rpartition(" ")
+    q = {"street_name": name, "street_type": kind} if name and kind in STREET_TYPES \
+        else {"street_name": street.upper()}
+    rows = r.api_get(r.EAS, {**q, "$limit": 50000,
                              "$select": "address,parcel_number,latitude,longitude"})
     return [x for x in rows if x.get("parcel_number") and x.get("latitude")]
 

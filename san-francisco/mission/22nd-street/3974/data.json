@@ -1,0 +1,139 @@
+{
+  "address": "3974 22nd Street, San Francisco, CA 94114",
+  "path": "/san-francisco/mission/22nd-street/3974/",
+  "apn": "2769017",
+  "block": "2769",
+  "lot": "017",
+  "eas_baseid": "345865",
+  "coordinates": {
+    "lat": 37.754566,
+    "lng": -122.435995
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 1875,
+    "building_area_sqft": 866,
+    "lot_depth_ft": 60,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 3974 22ND                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 163261,
+    "assessed_improvement_value": 326554
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201307161953",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-07-16",
+      "status_date": "2013-07-16",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "replace (e) kitchen countertop surface (n) surface to be granite, revision to app# 201306200123, re-use existing appliances & cabinets in existing configuration.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201306200123",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-06-20",
+      "status_date": "2013-09-20",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "remodel existing first flr bathroom, no structural changes, plumbing and electrical work will be done under separate permits",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200207181743",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-07-18",
+      "status_date": "2002-09-18",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "replace windows inclduing front of bldg.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9921862",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-10-15",
+      "status_date": "2002-03-20",
+      "estimated_cost": 15000,
+      "description": "replace a portion of a retaining wall which was damaged",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9714629",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-08-04",
+      "status_date": "1997-10-03",
+      "estimated_cost": 12500,
+      "description": "replace portion of foundation @ garage",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=ST&address_number=3974",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2769017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2769&lot=017",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2769017",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "loc-sf-call-1912-01-14",
+      "name": "The San Francisco Call, 14 January 1912, p. 43",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1912-01-14/ed-1/seq-43/",
+      "retrieved": "2026-10-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-01-14",
+      "kind": "building contract",
+      "description": "H. P. Maas contracted to put up a one-storey and basement frame dwelling, at $750.",
+      "source": "loc-sf-call-1912-01-14"
+    }
+  ]
+}

@@ -2445,6 +2445,24 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   table mapping `FIRST` put downtown contracts on Arguello. The same holds for
   every numbered street and avenue pair EAS files under one name (`27TH` is
   both). *Carry the record's street type through to the alias.*
+- **EAS files a numbered street and avenue under one name, so `corner.py`
+  must be told which.** `08TH` holds both Eighth Street and Eighth Avenue, and
+  a building contract prints both. `corner.py` now takes a trailing EAS type
+  (`"a": "08TH AVE"`), and the 1912 contracts carried the printed type through
+  to every batch line; a numbered cross street printed with no type ("70 W of
+  Fifteenth") was tried as both and kept only where exactly one meets the main
+  street. *Never build a batch line from a numbered name alone.*
+  ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **Fan a long reading pass out to parallel readers with one written spec.**
+  The 1912 contract lists were 1.1 MB of OCR in 507 blocks; twelve readers
+  working from one field spec read them in about ten minutes, and the spec's
+  privacy rule (private owner null, `raw` starts at "with") held in all twelve
+  outputs. What the spec didn't pin down drifted: one reader put a corner lot's
+  frontage first, another kept the printed compass order, and cross-block
+  reprints came back with an OCR digit different in the amount, so a reprint
+  key on the amount missed them. *Write the dimension order and the reprint
+  rule into the spec, and key reprints on contractor, street, offset and lot,
+  not the amount.*
 - **`git clean` leaves the gitignored `index.html` of a seeded page behind,
   and `seed-list` then counts the directory as an existing page.** Undoing a
   seed with `git clean -fd` removed each new page's `data.json` and left its

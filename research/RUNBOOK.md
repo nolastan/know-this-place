@@ -293,6 +293,11 @@ instead of `to`, and the block face is measured the same way:
 # {"id": "0014", "a": "17TH", "b": "GUERRERO", "dir": "W", "offset": 183, "lot": "45x84:3", "year": 1911}
 ```
 
+A numbered street name is both a street and an avenue in EAS (`08TH` is
+Eighth Street and Eighth Avenue), so give it the type the record prints:
+`"a": "08TH AVE"`. Any street may carry a trailing EAS type
+(`ST`, `AVE`, `BLVD`, `WAY`, …); without one, every type is searched.
+
 It prints only the parcels within 4% of the record's lot area, and for a block
 face (`to`) each lot's frontage measured from the block's end on the parcel
 shapes, "front 167-206 ft from HYDE" — the offset check done for you. A match

@@ -1,0 +1,118 @@
+{
+  "address": "706–708 9th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/9th-avenue/706/",
+  "apn": "1651037",
+  "block": "1651",
+  "lot": "037",
+  "eas_baseid": "312239",
+  "coordinates": {
+    "lat": 37.775023,
+    "lng": -122.466779
+  },
+  "address_range": "706–708",
+  "street_numbers_on_parcel": [
+    "706",
+    "708"
+  ],
+  "parcel": {
+    "year_built": 1912,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "bedrooms": 5,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2912,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0708 0706 09TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 730131,
+    "assessed_improvement_value": 423873,
+    "last_sale_date": "1998-03-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9617044",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-09-10",
+      "status_date": "1998-12-31",
+      "estimated_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9300541",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1993-01-14",
+      "status_date": "1995-06-06",
+      "estimated_cost": 8000,
+      "description": "provide new storage spaces, half bath & laundry area.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "1993–2005",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=09TH&street_type=AVE&address_number=706",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1651037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1651&lot=037",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1651037",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "loc-sf-call-1912-09-28",
+      "name": "The San Francisco Call, 28 September 1912, p. 27",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1912-09-28/ed-1/seq-27/",
+      "retrieved": "2026-10-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-09-28",
+      "kind": "building contract",
+      "description": "Charles A. Rushton contracted to put up two-storey and basement frame flats, at $5,280.",
+      "source": "loc-sf-call-1912-09-28"
+    }
+  ]
+}

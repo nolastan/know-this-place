@@ -1,0 +1,107 @@
+{
+  "address": "150 24th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/seacliff/24th-avenue/150/",
+  "apn": "1336023",
+  "block": "1336",
+  "lot": "023",
+  "eas_baseid": "300602",
+  "coordinates": {
+    "lat": 37.786496,
+    "lng": -122.483849
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "lot_area_sqft": 3149,
+    "building_area_sqft": 2650,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Seacliff",
+    "property_location_raw": "0000 0150 24TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 3045666,
+    "assessed_improvement_value": 1305285,
+    "last_sale_date": "2021-12-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202211297319",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2022-11-29",
+      "status_date": "2023-10-10",
+      "estimated_cost": 200000,
+      "revised_cost": 355000,
+      "description": "renovation & partition changes all (3) flrs. provide (n) mep, fixtures, finishes & fittings. add (1) skylight, replace (1) exterior door & (16) windows. rebuild fencing, gate & add lanscape at (n) rear entry.conver 1st space to habitable",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9414745",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-09-13",
+      "status_date": "1995-08-15",
+      "estimated_cost": 4500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=AVE&address_number=150",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1336023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1336&lot=023",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1336023",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "loc-sf-call-1912-10-09",
+      "name": "The San Francisco Call, 9 October 1912, p. 20",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1912-10-09/ed-1/seq-20/",
+      "retrieved": "2026-10-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-10-09",
+      "kind": "building contract",
+      "description": "O. B. Arthur contracted to put up a two-storey and basement frame residence, at $7,352.",
+      "source": "loc-sf-call-1912-10-09"
+    }
+  ]
+}

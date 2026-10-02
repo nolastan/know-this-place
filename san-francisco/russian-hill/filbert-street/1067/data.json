@@ -1,0 +1,112 @@
+{
+  "address": "1067–1071 Filbert Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/filbert-street/1067/",
+  "apn": "0098015",
+  "block": "0098",
+  "lot": "015",
+  "eas_baseid": "429546",
+  "coordinates": {
+    "lat": 37.800131,
+    "lng": -122.416989
+  },
+  "address_range": "1067–1071",
+  "street_numbers_on_parcel": [
+    "1067",
+    "1069",
+    "1071"
+  ],
+  "parcel": {
+    "year_built": 1912,
+    "units": 4,
+    "stories": 3,
+    "rooms": 19,
+    "bathrooms": 4,
+    "lot_area_sqft": 3437.5,
+    "building_area_sqft": 5325,
+    "lot_depth_ft": 37.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Russian Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "1071 1067 FILBERT             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 248884,
+    "assessed_improvement_value": 293940
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9800259",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-01-07",
+      "status_date": "1998-09-28",
+      "estimated_cost": 7500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9318534",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-10-21",
+      "status_date": "1994-03-02",
+      "estimated_cost": 25000,
+      "description": "remove (e) stairs & decking & repalce as per existing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FILBERT&street_type=ST&address_number=1067",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0098015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0098&lot=015",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0098015",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "loc-sf-call-1912-10-10",
+      "name": "The San Francisco Call, 10 October 1912, p. 9",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1912-10-10/ed-1/seq-9/",
+      "retrieved": "2026-10-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-10-10",
+      "kind": "building contract",
+      "description": "Antonio Ferreccio company contracted for all work except foundations, painting, mantels, gas fixtures and shades on three-storey frame flats, then going up, at $7,300.",
+      "source": "loc-sf-call-1912-10-10"
+    }
+  ]
+}
