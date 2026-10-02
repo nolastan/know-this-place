@@ -358,7 +358,7 @@ are listed so their size is visible before anyone opens one.
 | `sn85066387-1911-building-contracts.json` | 94 | 34 KB | `nob-hill`, `russian-hill`, `marina` +22 |
 | `sn85066387-1911-corners.json` | 2 | 1 KB | `russian-hill`, `haight-ashbury` |
 | `sn85066387-1911-real-estate.json` | 18 | 7 KB | `bernal-heights`, `east-cut`, `chinatown` +13 |
-| `sn85066387-1912-building-contracts.json` | 108 | 39 KB | `outer-richmond`, `russian-hill`, `inner-richmond` +20 |
+| `sn85066387-1912-building-contracts.json` | 107 | 39 KB | `outer-richmond`, `russian-hill`, `inner-richmond` +20 |
 | `sn85066387-1912-real-estate.json` | 26 | 9 KB | `nob-hill`, `mission`, `bernal-heights` +12 |
 | `sn85066387-1913-real-estate.json` | 5 | 2 KB | `nob-hill`, `hayes-valley`, `inner-richmond` +2 |
 | `soma-filipino-heritage.json` | 30 | 11 KB | `south-of-market`, `chinatown`, `western-addition` +5 |
