@@ -1,0 +1,90 @@
+{
+  "address": "1833–1835 Mason Street, San Francisco, CA 94133",
+  "path": "/san-francisco/chinatown/mason-street/1833/",
+  "apn": "0100005",
+  "block": "0100",
+  "lot": "005",
+  "eas_baseid": "277375",
+  "coordinates": {
+    "lat": 37.8005,
+    "lng": -122.412828
+  },
+  "address_range": "1833–1835",
+  "street_numbers_on_parcel": [
+    "1833",
+    "1835"
+  ],
+  "parcel": {
+    "year_built": 1909,
+    "units": 2,
+    "stories": 3,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 7,
+    "lot_area_sqft": 1830,
+    "building_area_sqft": 3252,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Russian Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "1835 1833 MASON               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 122420,
+    "assessed_improvement_value": 305309
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MASON&street_type=ST&address_number=1833",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0100005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0100&lot=005",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0100005",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "loc-sf-call-1909-01-20",
+      "name": "The San Francisco Call, 20 January 1909, p. 15",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1909-01-20/ed-1/seq-15/",
+      "retrieved": "2026-10-03"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1909-01-20",
+      "kind": "building contract",
+      "description": "Zitsch & Belle contracted to put up a two-storey and basement frame building.",
+      "source": "loc-sf-call-1909-01-20"
+    }
+  ]
+}

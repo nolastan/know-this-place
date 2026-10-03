@@ -1,0 +1,123 @@
+{
+  "address": "20–22 Glover Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/glover-street/20/",
+  "apn": "0151039",
+  "block": "0151",
+  "lot": "039",
+  "eas_baseid": "278690",
+  "coordinates": {
+    "lat": 37.797355,
+    "lng": -122.415785
+  },
+  "address_range": "20–22",
+  "street_numbers_on_parcel": [
+    "20",
+    "22"
+  ],
+  "parcel": {
+    "year_built": 1909,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 1376,
+    "building_area_sqft": 2138,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Russian Hill",
+    "analysis_neighborhood": "Nob Hill",
+    "property_location_raw": "0022 0020 GLOVER              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 214116,
+    "assessed_improvement_value": 211596
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202210275328",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-10-27",
+      "status_date": "2022-10-27",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201408254572",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-08-25",
+      "status_date": "2014-10-23",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "rev. to pa# 201407242049 existing non-conforming staircase dry rot, more than 50%.replace windows and doors.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201407242049",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-07-24",
+      "status_date": "2014-10-23",
+      "estimated_cost": 10500,
+      "revised_cost": 10500,
+      "description": "extg non-conforming staircase with dry rot in rear less than 50%. repair in kind.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GLOVER&street_type=ST&address_number=20",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0151039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0151&lot=039",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0151039",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "loc-sf-call-1909-02-02",
+      "name": "The San Francisco Call, 2 February 1909, p. 13",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1909-02-02/ed-1/seq-13/",
+      "retrieved": "2026-10-03"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1909-02-02",
+      "kind": "building contract",
+      "description": "P. Frederickson contracted for all work except concrete, cement, asphalt, roof painting and Lincrusta on a two-storey frame building, at $3,340.",
+      "source": "loc-sf-call-1909-02-02"
+    }
+  ]
+}

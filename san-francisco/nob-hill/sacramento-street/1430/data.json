@@ -1,0 +1,169 @@
+{
+  "address": "1430 Sacramento Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/sacramento-street/1430/",
+  "apn": "0219007",
+  "block": "0219",
+  "lot": "007",
+  "eas_baseid": "280149",
+  "coordinates": {
+    "lat": 37.792255,
+    "lng": -122.416605
+  },
+  "parcel": {
+    "year_built": 1909,
+    "units": 7,
+    "stories": 3,
+    "rooms": 23,
+    "bathrooms": 7,
+    "bedrooms": 6,
+    "lot_area_sqft": 2292,
+    "building_area_sqft": 5685,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Nob Hill",
+    "property_location_raw": "0000 1430 SACRAMENTO          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2437227,
+    "assessed_improvement_value": 1103032,
+    "last_sale_date": "2016-12-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202601093565",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-01-09",
+      "status_date": "2026-04-20",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "minor first damage to one unit, front family room and exterior repair work, replace vinyl window and replace damaged electrical wire and fixture to match original conditions.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202301240647",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-01-24",
+      "status_date": "2023-03-17",
+      "estimated_cost": 18000,
+      "revised_cost": 18799,
+      "description": "to comply with sffc sec 1103.7.6.1. like-for-like fire alarm system replacement with new fire panel, 5 pull stations, 4 smokes, 4 horn strobes, radio to monitor system and 14 low frequency sounders located in sleeping rooms. this is a partly sprinklered building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201905241680",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-05-24",
+      "status_date": "2021-04-02",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "one unit. addition of (n) office, remodel and relocation of (e) kitchen, remodel of (e) bathroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201901170629",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-01-17",
+      "status_date": "2019-10-25",
+      "estimated_cost": 1500,
+      "revised_cost": 2000,
+      "description": "one unit: to comply with nov # 201801371 repair windows. replace windows in-kind with wood casement windows with divided light pattern.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201305287950",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-05-28",
+      "status_date": "2013-06-14",
+      "estimated_cost": 9800,
+      "revised_cost": 9800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200111213736",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-11-21",
+      "status_date": "2002-05-21",
+      "estimated_cost": 10700,
+      "revised_cost": 10700,
+      "description": "roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8401735",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-02-16",
+      "status_date": "1984-08-10",
+      "estimated_cost": 4000,
+      "description": "wallboard installation cabinet installation cabinet.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 10,
+    "range": "1984–2026",
+    "shown_on_page": 7,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SACRAMENTO&street_type=ST&address_number=1430",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0219007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0219&lot=007",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0219007",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "loc-sf-call-1909-04-07",
+      "name": "The San Francisco Call, 7 April 1909, p. 15",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1909-04-07/ed-1/seq-15/",
+      "retrieved": "2026-10-03"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1909-04-07",
+      "kind": "building contract",
+      "description": "F. A. Lowis contracted for all work except plumbing, roofing, painting, wiring, heater, dumbwaiter, fixtures, tiling, fireplaces and hardware on three-storey frame apartments.",
+      "source": "loc-sf-call-1909-04-07"
+    }
+  ]
+}

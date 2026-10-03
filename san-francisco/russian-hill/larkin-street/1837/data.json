@@ -1,0 +1,112 @@
+{
+  "address": "1837–1839 Larkin Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/larkin-street/1837/",
+  "apn": "0596004",
+  "block": "0596",
+  "lot": "004",
+  "eas_baseid": "285994",
+  "coordinates": {
+    "lat": 37.794855,
+    "lng": -122.420173
+  },
+  "address_range": "1837–1839",
+  "street_numbers_on_parcel": [
+    "1837",
+    "1839"
+  ],
+  "parcel": {
+    "year_built": 1909,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2796,
+    "building_area_sqft": 2650,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "NC-2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "1839 1837 LARKIN              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1514327,
+    "assessed_improvement_value": 648993,
+    "last_sale_date": "2014-08-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201501054868",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2015-01-05",
+      "status_date": "2015-01-05",
+      "estimated_cost": 49000,
+      "description": "add one dwelling unit. raise the entire bldg 10'-0\" to fill-in the new ist flr. new parking spaces & living space at basement. three story rear addition interior remodel for (e) flr space. all work per plan.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108276956",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-08-27",
+      "status_date": "2001-12-27",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "install 13 replacement windows. visible from street.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LARKIN&street_type=ST&address_number=1837",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0596004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0596&lot=004",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0596004",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "loc-sf-call-1909-03-05",
+      "name": "The San Francisco Call, 5 March 1909, p. 15",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1909-03-05/ed-1/seq-15/",
+      "retrieved": "2026-10-03"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1909-03-05",
+      "kind": "building contract",
+      "description": "O. Kraumeni contracted to put up a two-storey and basement frame building, at $3,800.",
+      "source": "loc-sf-call-1909-03-05"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "address": "235 Valley Street, San Francisco, CA 94131",
+  "path": "/san-francisco/noe-valley/valley-street/235/",
+  "apn": "6619024",
+  "block": "6619",
+  "lot": "024",
+  "eas_baseid": "404078",
+  "coordinates": {
+    "lat": 37.744163,
+    "lng": -122.428229
+  },
+  "parcel": {
+    "year_built": 1908,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2935.5,
+    "building_area_sqft": 1696,
+    "lot_depth_ft": 14,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 0235 VALLEY              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 38780,
+    "assessed_improvement_value": 23997
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201708296187",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-08-29",
+      "status_date": "2018-01-19",
+      "estimated_cost": 17000,
+      "revised_cost": 17000,
+      "description": "replace existing metal-frame sliding windows with aluminum wood-clad. 6 street-facing windows in total, all aluminum-wood clad. bedroom to meet egress. u-factor .32 full divided-light on all windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9711549",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-06-24",
+      "status_date": "1999-03-02",
+      "estimated_cost": 3000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VALLEY&street_type=ST&address_number=235",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6619024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6619&lot=024",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6619024",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "loc-sf-call-1909-07-24",
+      "name": "The San Francisco Call, 24 July 1909, p. 8",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1909-07-24/ed-1/seq-8/",
+      "retrieved": "2026-10-03"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1909-07-24",
+      "kind": "building contract",
+      "description": "Linfield & Roberts contracted to put up a one-and-a-half-storey and basement frame cottage, at $2,200.",
+      "source": "loc-sf-call-1909-07-24"
+    }
+  ]
+}
