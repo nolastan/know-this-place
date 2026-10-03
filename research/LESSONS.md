@@ -2474,6 +2474,36 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   hand (a date range, an undated row), and the diff hides the one line the
   run added. *Insert the new entry before the first later date and leave the
   rest where it is.*
+- **Trimming a located block loses the column where an advertisement splits
+  it.** The 1912 trim — cut each block at the first long gap between dollar
+  amounts — read cleanly there and cost 27 entries in 1913, where the column
+  resumes mid-sentence after railway timetables and steamship notices, and
+  once runs a second list lower on the same page. *After reading the trimmed
+  blocks, sweep the untrimmed spans for contract paragraphs outside them,
+  and count what the sweep finds.* ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **A corner's lot is the parcel addressed on both streets; a radius around
+  the crossing proves nothing.** `corner.py` estimates the crossing from EAS
+  points, and it can sit 100 ft off the corner, so a candidate's distance
+  from it neither confirms nor refuses one. The parcel EAS addresses on both
+  streets is the corner lot. *And an alteration is to an older building:
+  match it on the corner lot, never on a roll year near the record's.*
+- **EAS can name a retired parcel.** 1401 Howard Street joins in EAS to
+  3517035, retired in 2018 for 3517039, the parcel St. Joseph's Church's page
+  already carried; 2222 Broadway joins to 0564024, retired into the school's
+  0564070. A resolution keyed on the EAS join alone would have put each fact
+  on a second, impossible page. *Before writing a hand resolution, confirm
+  the parcel is active in sf-parcels and look for a page on the same path.*
+- **Landmarks fail the roll-year test; look them up by name.** A tax-exempt
+  parcel may have no roll row at all, and an old one carries the 1900-era
+  placeholder, so a contract for the Flood residence, St. Joseph's Church or
+  the Exposition Auditorium never matches "a roll year near 1913". *Where the
+  entry names the building or its owning institution, find its page by name
+  and place it there by hand.*
+- **An entry carries one citation, so it names only what that issue
+  printed.** Folding a building's later trade contracts into its general
+  contract's sentence ("plumbing followed in November") reads well and leaves
+  the later facts uncited — the audit caught five. *Fold by declining the
+  later contracts, or give each issue its own entry.*
 
 - **Write one dated fact per entry while reading, not after `--overlap`.** Long
   modern reports tempt a reader to compress a building's history into one rich

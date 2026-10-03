@@ -1,0 +1,127 @@
+{
+  "address": "218 21st Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/21st-avenue/218/",
+  "apn": "1413038",
+  "block": "1413",
+  "lot": "038",
+  "eas_baseid": "302881",
+  "coordinates": {
+    "lat": 37.783677,
+    "lng": -122.480367
+  },
+  "parcel": {
+    "year_built": 1913,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1840,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0218 21ST                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 69735,
+    "assessed_improvement_value": 86610
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202505196720",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-05-19",
+      "status_date": "2025-05-29",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "reroof w/hot work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202211307433",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-11-30",
+      "status_date": "2023-11-09",
+      "estimated_cost": 7850,
+      "revised_cost": 7850,
+      "description": "replace (7) windows, street visible (3) front of house (e) wood, new wood, not street visible (4) new vinyl. same size/location, retrofit installation. u-factor not to exceed 0.30, new wood windows to include integral ogee lugs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201910174821",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-10-17",
+      "status_date": "2020-01-10",
+      "estimated_cost": 7500,
+      "revised_cost": 8000,
+      "description": "remove (e) tub replace w/walk in jet tub add 1-20 amp circuit for outlet, minor drywall patch.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9204558",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-03-23",
+      "status_date": "1992-05-12",
+      "estimated_cost": 2600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=AVE&address_number=218",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1413038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1413&lot=038",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1413038",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "loc-sf-call-1913-11-26",
+      "name": "The San Francisco Call, 26 November 1913, p. 12",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-11-26/ed-1/seq-12/",
+      "retrieved": "2026-10-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1913-11-26",
+      "kind": "building contract",
+      "description": "Ed Mooney contracted to put up a two-storey frame residence, at $3,000.",
+      "source": "loc-sf-call-1913-11-26"
+    }
+  ]
+}

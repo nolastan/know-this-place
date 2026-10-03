@@ -6,7 +6,7 @@
 >
 > - **Kind:** newspaper OCR corpus · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 10 batches / 58,620 pages scanned for address mentions in August 2026 (no findings file; see below), and the *Call*'s Real Estate and Financial Section read in full for 1911 and 1912, as held for 1913, and for the whole of 1910 (January–June and July–December batches, then re-read for its owner-only permits, contracts, loans and building sales in `sn85066387-1910-permits.json`), into `findings/loc-newspapers/sn85066387-<year>-real-estate.json`. The daily Building Contracts lists of 1911 and 1912 are read in full into `sn85066387-1911-building-contracts.json` and `sn85066387-1912-building-contracts.json`.
+> - **Coverage:** 10 batches / 58,620 pages scanned for address mentions in August 2026 (no findings file; see below), and the *Call*'s Real Estate and Financial Section read in full for 1911 and 1912, as held for 1913, and for the whole of 1910 (January–June and July–December batches, then re-read for its owner-only permits, contracts, loans and building sales in `sn85066387-1910-permits.json`), into `findings/loc-newspapers/sn85066387-<year>-real-estate.json`. The daily Building Contracts lists of 1911 and 1912 are read in full into `sn85066387-1911-building-contracts.json` and `sn85066387-1912-building-contracts.json`, and 1913's as far as the batches hold it into `sn85066387-1913-building-contracts.json`.
 > - **Local corpus:** `research/corpora/loc-newspapers/` — `tar/` for the batch OCR tarballs, `txt/<lccn>/<yyyy>/<mm>/<dd>/ed-1/seq-N/ocr.txt` for the extracted pages. A fresh container has none of it.
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -426,6 +426,48 @@ building, line or corner, lot, amount. What was new:
   Market alleys (Ecker, Webb, Chelsea place) cannot be
   measured at all.
 
+### The 1913 Building Contracts lists
+
+Read 2026-10-02, every page of 1913 the two batches hold (`curiv_dardanelle_ver01`
+for 1–15 February, `curiv_grimes_ver01` for 16 July–8 December: 147 issues,
+2,895 pages). Same method as 1912. What was new:
+
+- **The list is not daily in the short issues.** In August, September and
+  October the *Call* often ran ten to fourteen pages and carried no Real
+  Estate Transactions column at all; 63 of the 147 issues have no list. Check
+  for the column before counting a day as missed.
+- **Don't trim the blocks — read the untrimmed spans for continuations.** The
+  1913 column is split around railway timetables, steamship sailings, auction
+  notices and weather reports, and resumes after them mid-entry ("Mrs. Mattie
+  Feeley with J. E. Johansen—To [timetable] erect a three story…"). The 1912
+  trim at the first long gap between amounts cut those halves off, and once
+  dropped a second Building Contracts list printed lower on the same page
+  (5 September). A third pass over the full spans for contract paragraphs
+  outside the trimmed blocks recovered 27 entries, the Carpenters' Hall at
+  McCoppin and Valencia and the Maritime Hall on Clay among them.
+- **Corner records with no lot need the corner lot, and the roll year can't
+  find it.** The corner lot is the parcel EAS addresses on *both* streets:
+  1185 Pine / 946 Leavenworth, 1351 Powell / 801 Broadway, 895 Dolores /
+  3492 22nd Street. A radius around the estimated crossing takes in a dozen
+  parcels, and the crossing itself can sit 100 ft or more off the corner, so
+  distance from it proves nothing. An alteration is to an *older* building:
+  match it on the corner lot, never on a roll year near the record's.
+- **Landmarks fail the year test, so look them up by name.** The roll gives
+  St. Joseph's Church 1913 but under a retired parcel; the Flood residence's
+  parcel has no roll row at all (tax-exempt), and EAS still names the retired
+  0564024 for 2222 Broadway; the Exposition Auditorium, the Palace of Fine
+  Arts, the Mills Building, the Palace Hotel and the Leesmont are named in the
+  entry. Ten of the batch's best facts would have been left unresolved by the
+  geometry alone.
+- **The Panama-Pacific International Exposition company let 26 contracts**
+  in these months — the Machinery, Transportation, Mines, Horticultural and
+  Fine Arts buildings, the Court of the Four Seasons, the Auditorium. Only the
+  Palace of Fine Arts and the Auditorium survive; the rest are unresolved by
+  design.
+- **Where it fails** is where 1911 and 1912 failed: 96 entries have no parcel
+  matching the lot or offset with a roll year near 1913, and 57 single
+  candidates were refused.
+
 ### Cautions
 
 - **Verify the number against the cross-streets — the ads hand you the check.**
@@ -569,6 +611,16 @@ building, line or corner, lot, amount. What was new:
   seeded, 43 declined, 35 of them other contracts for a building already
   carrying one. Batch file
   `findings/loc-newspapers/sn85066387-1912-building-contracts.json`.)
+- **Verified:** 2026-10-02 (the *Call*'s daily Building Contracts lists for
+  1913 as far as the batches hold them, from `curiv_dardanelle_ver01` and
+  `curiv_grimes_ver01`: 2,895 OCR pages scanned, 103 page-blocks plus 27
+  entries recovered from the spans the trim had dropped, 385 contract entries
+  read, 369 findings after 12 reprints and 4 cut-off fragments set aside — 88
+  resolved (64 by corner, offset and lot with `corner.py --batch --json`'s new
+  side and quadrant check, 17 on a building the record names, 7 on a printed
+  number), 281 unresolved; 69 published on 68 pages, 46 of them seeded, 19
+  declined, 15 of them other contracts for a building already carrying one.
+  Batch file `findings/loc-newspapers/sn85066387-1913-building-contracts.json`.)
 - **Coverage:** 1890s and 1900s years scanned in August 2026 for mentions only
   (above); **1910 Real Estate and Financial Section read in full, three
   times over** — numbered/architect/corner entries (#three 1910 batches),
@@ -580,7 +632,12 @@ building, line or corner, lot, amount. What was new:
   as far as the batches hold it** (1–15 February, 16 July–8 December); 1913's
   other months are in no batch on the bulk route. Then the unscanned
   1897–1899 and 1903–1904 years. The daily Building Contracts lists are **read
-  for 1911 and 1912** (above); 1913's, as far as the batches hold it (1–15
-  February, 16 July–8 December), is the next batch, on the same method. The rest of the 1911, 1912 and 1913 paper —
+  for 1911, 1912 and 1913** (1913 as far as the batches hold it: 1–15
+  February, 16 July–8 December). **Next: the daily Building Contracts lists
+  of 1910**, never read — every 1910 pass so far was on the Saturday Real
+  Estate and Financial Section — from the four 1910 batches (`curiv_jenner`,
+  `curiv_klamath`, `curiv_mecca`, `curiv_needles`), on the same method; then
+  1909's, where the renumbering year needs the record's date checked against
+  each street. The rest of the 1911, 1912 and 1913 paper —
   the fires and the building-permit lists — is on disk in a session that
   fetched it, and unread.

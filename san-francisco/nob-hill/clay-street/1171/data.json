@@ -1,0 +1,148 @@
+{
+  "address": "1171 Clay Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/clay-street/1171/",
+  "apn": "0222027",
+  "block": "0222",
+  "lot": "027",
+  "eas_baseid": "280246",
+  "coordinates": {
+    "lat": 37.793292,
+    "lng": -122.41236
+  },
+  "parcel": {
+    "year_built": 1913,
+    "units": 6,
+    "stories": 3,
+    "rooms": 24,
+    "bathrooms": 6,
+    "lot_area_sqft": 2358.25,
+    "building_area_sqft": 5466,
+    "lot_depth_ft": 94.33,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Nob Hill",
+    "property_location_raw": "0000 1171 CLAY                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 601476,
+    "assessed_improvement_value": 485301
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201910215050",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-10-21",
+      "status_date": "2020-03-19",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "like for like replacement w/upgrade w/new control panel, smoke detecors & pull stations @ the same location. install new horns inside units to meet new sffc & power supply near panel. local fire system existing 3 bells will be tie-in to new panel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200102162313",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-02-16",
+      "status_date": "2001-03-29",
+      "estimated_cost": 3355,
+      "revised_cost": 3355,
+      "description": "install eight vinyl windows in kind, into existing frames, no change in size or location. no struct",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9701135",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-01-21",
+      "status_date": "1997-11-04",
+      "estimated_cost": 6770,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8907346",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-05-02",
+      "status_date": "1989-09-11",
+      "estimated_cost": 535,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8801641",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-02-10",
+      "status_date": "1988-05-10",
+      "estimated_cost": 2050,
+      "description": "replace alum windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8507330",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-07-11",
+      "status_date": "1985-09-23",
+      "estimated_cost": 1200,
+      "description": "replace new garage door, repair cement in garage",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLAY&street_type=ST&address_number=1171",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0222027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0222&lot=027",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0222027",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "loc-sf-call-1913-02-01",
+      "name": "The San Francisco Call, 1 February 1913, p. 12",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-02-01/ed-1/seq-12/",
+      "retrieved": "2026-10-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1913-02-01",
+      "kind": "building contract",
+      "description": "J. O. Kincanon contracted for cribbing for concrete foundations, carpentry, millwork and stairs on three-storey frame flats.",
+      "source": "loc-sf-call-1913-02-01"
+    }
+  ]
+}

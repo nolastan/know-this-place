@@ -1,0 +1,151 @@
+{
+  "address": "670 41st Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/41st-avenue/670/",
+  "apn": "1583032",
+  "block": "1583",
+  "lot": "032",
+  "eas_baseid": "309327",
+  "coordinates": {
+    "lat": 37.776083,
+    "lng": -122.501311
+  },
+  "parcel": {
+    "year_built": 1913,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2225,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Outer Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0670 41ST                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 43457,
+    "assessed_improvement_value": 112069
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201911157371",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2019-11-15",
+      "status_date": "2025-02-10",
+      "estimated_cost": 19908,
+      "revised_cost": 19908,
+      "description": "remove existing siding due to rot & replace w/ hardi board siding, repair any framing and install 2 windows patch sheetrock inside at rear of property. all work repair in kind, not visible from street. windows same size, same location, max u factor 0.32",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201304164675",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-04-16",
+      "status_date": "2013-05-07",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "dry rot repair with siding at light well. approximately 32ft",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200601313423",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-01-31",
+      "status_date": "2006-02-08",
+      "estimated_cost": 2857,
+      "revised_cost": 2857,
+      "description": "renew permit 200504139977 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200504139977",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-04-13",
+      "status_date": "2006-02-08",
+      "estimated_cost": 2857,
+      "revised_cost": 2857,
+      "description": "replace 2 windows at front of house in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9612381",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-07-10",
+      "status_date": "1998-02-10",
+      "estimated_cost": 3800,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8400338",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-01-09",
+      "status_date": "1984-10-18",
+      "estimated_cost": 42500,
+      "description": "horizontal extension",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=41ST&street_type=AVE&address_number=670",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1583032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1583&lot=032",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1583032",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "loc-sf-call-1913-07-27",
+      "name": "The San Francisco Call, 27 July 1913, p. 61",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-07-27/ed-1/seq-61/",
+      "retrieved": "2026-10-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1913-07-27",
+      "kind": "building contract",
+      "description": "George F. Cleese contracted to put up a one-and-a-half-storey frame cottage, at $2,400.",
+      "source": "loc-sf-call-1913-07-27"
+    }
+  ]
+}

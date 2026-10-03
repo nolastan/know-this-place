@@ -1,0 +1,130 @@
+{
+  "address": "763 17th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/17th-avenue/763/",
+  "apn": "1660013",
+  "block": "1660",
+  "lot": "013",
+  "eas_baseid": "312601",
+  "coordinates": {
+    "lat": 37.773641,
+    "lng": -122.476
+  },
+  "parcel": {
+    "year_built": 1913,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1568,
+    "basement_area_sqft": 132,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0763 17TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1292697,
+    "assessed_improvement_value": 554013,
+    "last_sale_date": "2022-07-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202205103936",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-05-10",
+      "status_date": "2022-05-19",
+      "estimated_cost": 7300,
+      "revised_cost": 7300,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202205103937",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-05-10",
+      "status_date": "2022-05-19",
+      "estimated_cost": 6800,
+      "revised_cost": 6800,
+      "description": "remove one the old skylight 4x3 and install new skylight.same size and location.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200608028275",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-08-02",
+      "status_date": "2006-08-02",
+      "estimated_cost": 7950,
+      "revised_cost": 7950,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9003286",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-02-16",
+      "status_date": "1990-08-15",
+      "estimated_cost": 1000,
+      "description": "ewo ( s )",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=AVE&address_number=763",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1660013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1660&lot=013",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1660013",
+      "retrieved": "2026-10-02"
+    },
+    {
+      "id": "loc-sf-call-1913-07-23",
+      "name": "The San Francisco Call, 23 July 1913, p. 18",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-07-23/ed-1/seq-18/",
+      "retrieved": "2026-10-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1913-07-23",
+      "kind": "building contract",
+      "description": "George Parker contracted to put up a five-room dwelling, at $2,850.",
+      "source": "loc-sf-call-1913-07-23"
+    }
+  ]
+}
