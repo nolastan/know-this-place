@@ -113,7 +113,7 @@ sit in — the three it touched most, and how many in all.
 | `digitalsf/sfp-90.json` | 14 | 29 KB | 1976–1984 | 11 | 11 | `tenderloin`, `bernal-heights`, `pacific-heights` +6 |
 | `digitalsf/tail.json` | 137 | 244 KB | 1900–2022 | 73 | 45 | `north-beach`, `castro`, `mission` +17 |
 | `hittell-1878/full-text.json` | 14 | 23 KB | 1837–1878 | 3 | 2 | `financial-district` |
-| `loc-newspapers/sn85066387-1910-building-contracts.json` | 1,315 | 2.9 MB | 1910 | 216 | 167 | `nob-hill`, `mission`, `tenderloin` +24 |
+| `loc-newspapers/sn85066387-1910-building-contracts.json` | 1,315 | 2.9 MB | 1910 | 216 | 168 | `nob-hill`, `mission`, `tenderloin` +24 |
 | `loc-newspapers/sn85066387-1910-h2-real-estate.json` | 450 | 797 KB | 1910 | 133 | 130 | `nob-hill`, `inner-richmond`, `financial-district` +20 |
 | `loc-newspapers/sn85066387-1910-offsets.json` | 120 | 183 KB | 1910 | 19 | 15 | `nob-hill`, `financial-district`, `castro` +6 |
 | `loc-newspapers/sn85066387-1910-permits.json` | 178 | 342 KB | 1910 | 49 | 46 | `nob-hill`, `inner-richmond`, `financial-district` +16 |

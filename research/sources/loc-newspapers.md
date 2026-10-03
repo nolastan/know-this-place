@@ -664,8 +664,8 @@ pages). Same method as 1911–1913. What was new:
   1,315 findings after 4 reprints, 1 overlapping read and 45 entries already
   in an earlier 1910 batch set aside — 216 resolved (184 by corner, offset and
   lot with `corner.py --batch --json`, 23 on a building the record names, 9 on
-  a printed number), 1,099 unresolved; 167 published on 167 pages, 82 of them
-  seeded, 49 declined, 44 of them other contracts for a building already
+  a printed number), 1,099 unresolved; 168 published on 168 pages, 82 of them
+  seeded, 48 declined, 43 of them other contracts for a building already
   carrying one. Batch file
   `findings/loc-newspapers/sn85066387-1910-building-contracts.json`.)
 - **Coverage:** 1890s and 1900s years scanned in August 2026 for mentions only
