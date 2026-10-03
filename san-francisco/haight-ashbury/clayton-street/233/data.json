@@ -1,0 +1,123 @@
+{
+  "address": "233 Clayton Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/clayton-street/233/",
+  "apn": "1211006",
+  "block": "1211",
+  "lot": "006",
+  "eas_baseid": "297348",
+  "coordinates": {
+    "lat": 37.773023,
+    "lng": -122.44954
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 6,
+    "stories": 3,
+    "rooms": 22,
+    "bathrooms": 6,
+    "lot_area_sqft": 2656.25,
+    "building_area_sqft": 6225,
+    "lot_depth_ft": 6.25,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "North Panhandle",
+    "analysis_neighborhood": "Lone Mountain/USF",
+    "property_location_raw": "0000 0233 CLAYTON             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 44325,
+    "assessed_improvement_value": 104168
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Panhandle Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1870–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201907014847",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-07-01",
+      "status_date": "2019-07-17",
+      "estimated_cost": 24000,
+      "revised_cost": 24000,
+      "description": "remove existing tar & gravel, flat roof layers down to expose wood sheathing. install modified bitumen membrane system by torch down. flat roof replacement only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201501276806",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-01-27",
+      "status_date": "2015-04-03",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "comply with complaint #201520521, fixing the rotten wood frame due to upstair leaking problem, repair water damage on #1 and #3.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLAYTON&street_type=ST&address_number=233",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1211006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1211&lot=006",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1211006",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4495396460138%2037.77302331602828)%27)",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "loc-sf-call-1910-06-18",
+      "name": "The San Francisco Call, 18 June 1910, p. 11",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-06-18/ed-1/seq-11/",
+      "retrieved": "2026-10-03"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1910-06-18",
+      "kind": "building contract",
+      "description": "George G. Moren contracted for all work except plumbing, painting and electric wiring on a three-storey frame dwelling.",
+      "source": "loc-sf-call-1910-06-18"
+    }
+  ]
+}

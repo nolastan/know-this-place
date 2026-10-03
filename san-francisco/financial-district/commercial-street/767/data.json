@@ -1,0 +1,145 @@
+{
+  "address": "767–769 Commercial Street, San Francisco, CA 94108",
+  "path": "/san-francisco/financial-district/commercial-street/767/",
+  "apn": "0226022",
+  "block": "0226",
+  "lot": "022",
+  "eas_baseid": "458478",
+  "coordinates": {
+    "lat": 37.79378,
+    "lng": -122.405684
+  },
+  "address_range": "767–769",
+  "street_numbers_on_parcel": [
+    "767",
+    "769"
+  ],
+  "parcel": {
+    "year_built": 1910,
+    "units": 2,
+    "stories": 3,
+    "rooms": 9,
+    "bathrooms": 1,
+    "lot_area_sqft": 849,
+    "building_area_sqft": 2268,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "C",
+    "zoning": "CCB",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Financial District North",
+    "analysis_neighborhood": "Chinatown",
+    "property_location_raw": "0769 0767 COMMERCIAL          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 937439,
+    "assessed_improvement_value": 234356,
+    "last_sale_date": "2015-04-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1910",
+    "survey_name": "CHINESE MERCHANTS REALTY CO. BLDG.",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Chinatown Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1930/1938",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200901089828",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-01-08",
+      "status_date": "2009-01-20",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "replace new roof 25x55 1375 sqft. new touch down roof. no new sheathing. roofmat international.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M20355",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-05-22",
+      "status_date": "2002-05-22",
+      "revised_cost": 5578,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9321610",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-12-14",
+      "status_date": "1994-12-08",
+      "estimated_cost": 30000,
+      "revised_cost": 52700,
+      "description": "seismic rehab & retrofit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1993–2009",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=COMMERCIAL&street_type=ST&address_number=767",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0226022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0226&lot=022",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0226022",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40568373253204%2037.79377983009881)%27)",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "loc-sf-call-1910-01-19",
+      "name": "The San Francisco Call, 19 January 1910, p. 13",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-01-19/ed-1/seq-13/",
+      "retrieved": "2026-10-03"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1910-01-19",
+      "kind": "building contract",
+      "description": "A builder contracted to put up a three-storey and basement class C building for the Chinese Merchants' realty company, at $4,325.",
+      "source": "loc-sf-call-1910-01-19"
+    }
+  ]
+}

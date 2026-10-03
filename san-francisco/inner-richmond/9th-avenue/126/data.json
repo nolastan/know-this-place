@@ -1,0 +1,124 @@
+{
+  "address": "126–128 9th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/9th-avenue/126/",
+  "apn": "1368039",
+  "block": "1368",
+  "lot": "039",
+  "eas_baseid": "301345",
+  "coordinates": {
+    "lat": 37.785988,
+    "lng": -122.467529
+  },
+  "address_range": "126–128",
+  "street_numbers_on_parcel": [
+    "126",
+    "128"
+  ],
+  "parcel": {
+    "year_built": 1909,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 3210,
+    "basement_area_sqft": 750,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0128 0126 09TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 587622,
+    "assessed_improvement_value": 395131
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201805310648",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-05-31",
+      "status_date": "2018-06-14",
+      "estimated_cost": 26300,
+      "revised_cost": 26300,
+      "description": "install new built-up roof consisting of one layer of 15 lb felt underlayment and one layer laminated fiberglass asphalt shingles",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200909177067",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-09-17",
+      "status_date": "2009-09-17",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "remodel bathroom on 2nd floor, 1 1/2 bath. sheetrock furnace room. replace plumbing fixtures, tile floor, wall. 5/8\" type x. no lighting or exhaust fan change",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200905047646",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-05-04",
+      "status_date": "2010-02-03",
+      "estimated_cost": 9800,
+      "revised_cost": 9800,
+      "description": "remove existing cabinets and counter, and fixtures from itchen in 126th av, replace with new cabinets, counter, fixtures in same location, plumbing electrical under separate permit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=09TH&street_type=AVE&address_number=126",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1368039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1368&lot=039",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1368039",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "loc-sf-call-1910-06-16",
+      "name": "The San Francisco Call, 16 June 1910, p. 15",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-06-16/ed-1/seq-15/",
+      "retrieved": "2026-10-03"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1910-06-16",
+      "kind": "building contract",
+      "description": "B. A. Trobeck and company contracted for all work except plumbing, tinning, painting, gas grates, shades and light fixtures on a two-storey and basement frame building.",
+      "source": "loc-sf-call-1910-06-16"
+    }
+  ]
+}

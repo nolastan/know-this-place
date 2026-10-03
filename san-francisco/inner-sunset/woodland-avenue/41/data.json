@@ -1,0 +1,145 @@
+{
+  "address": "41 Woodland Avenue, San Francisco, CA 94117",
+  "path": "/san-francisco/inner-sunset/woodland-avenue/41/",
+  "apn": "2631010",
+  "block": "2631",
+  "lot": "010",
+  "eas_baseid": "342866",
+  "coordinates": {
+    "lat": 37.763417,
+    "lng": -122.453568
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 850,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Cole Valley/Parnassus Heights",
+    "analysis_neighborhood": "Inner Sunset",
+    "property_location_raw": "0000 0041 WOODLAND            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1053792,
+    "assessed_improvement_value": 795879,
+    "last_sale_date": "2005-04-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200702164362",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-02-16",
+      "status_date": "2008-08-06",
+      "estimated_cost": 95000,
+      "revised_cost": 95000,
+      "description": "excavate, replace foundation and restructure garage for 2 car side by side parking. increase garage door opening and extend entry porch and stairs. exterior detail and trim to match extg. relocate electrical and gas service",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200412070823",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-12-07",
+      "status_date": "2006-02-02",
+      "estimated_cost": 14900,
+      "revised_cost": 14900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9204034",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-03-16",
+      "status_date": "1992-03-25",
+      "estimated_cost": 2500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9104953",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-03-27",
+      "status_date": "1991-10-08",
+      "estimated_cost": 3000,
+      "description": "tear off roof, re-sheet and install fiberglass shingles",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9006174",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-03-30",
+      "status_date": "1990-07-30",
+      "estimated_cost": 2500,
+      "description": "re roofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 8,
+    "range": "1990–2007",
+    "shown_on_page": 5,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=WOODLAND&street_type=AVE&address_number=41",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2631010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2631&lot=010",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2631010",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "loc-sf-call-1910-05-25",
+      "name": "The San Francisco Call, 25 May 1910, p. 13",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-05-25/ed-1/seq-13/",
+      "retrieved": "2026-10-03"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1910-05-25",
+      "kind": "building contract",
+      "description": "J. E. Beck contracted to put up a two-storey frame cottage.",
+      "source": "loc-sf-call-1910-05-25"
+    }
+  ]
+}

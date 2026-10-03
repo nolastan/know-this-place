@@ -1,0 +1,120 @@
+{
+  "address": "857–861 Greenwich Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/greenwich-street/857/",
+  "apn": "0091048",
+  "block": "0091",
+  "lot": "048",
+  "eas_baseid": "429508",
+  "coordinates": {
+    "lat": 37.80159,
+    "lng": -122.413751
+  },
+  "address_range": "857–861",
+  "street_numbers_on_parcel": [
+    "857",
+    "859",
+    "861"
+  ],
+  "parcel": {
+    "year_built": 1910,
+    "units": 3,
+    "stories": 3,
+    "rooms": 14,
+    "bathrooms": 3,
+    "lot_area_sqft": 1592.75,
+    "building_area_sqft": 3683,
+    "lot_depth_ft": 69.25,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Russian Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "0861 0857 GREENWICH           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 65786,
+    "assessed_improvement_value": 108296
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202205033425",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-05-03",
+      "status_date": "2022-08-24",
+      "estimated_cost": 39000,
+      "revised_cost": 39000,
+      "description": "one kitchen and one bathroom remodel in-kind, non-structural.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202111152329",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-11-15",
+      "status_date": "2022-02-28",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "kitchen and bath room remodel in kind. no moving walls.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2006–2022",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GREENWICH&street_type=ST&address_number=857",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0091048&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0091&lot=048",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0091048",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "loc-sf-call-1910-10-18",
+      "name": "The San Francisco Call, 18 October 1910, p. 15",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-10-18/ed-1/seq-15/",
+      "retrieved": "2026-10-03"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1910-10-18",
+      "kind": "building contract",
+      "description": "Demartini & Chiappe contracted for all work except plumbing, sewer, mantels, shades and gas fixtures on three-storey and basement frame flats.",
+      "source": "loc-sf-call-1910-10-18"
+    }
+  ]
+}

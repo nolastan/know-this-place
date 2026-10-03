@@ -93,7 +93,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 RADIUS_DEG = 0.00055  # about 60 m of latitude
 
 
-STREET_TYPES = {"ALY", "AVE", "BLVD", "CIR", "CT", "DR", "HWY", "LN", "PL", "PLZ",
+STREET_TYPES = {"ALY", "AVE", "BLVD", "CIR", "CT", "DR", "HWY", "LN", "PARK", "PL", "PLZ",
                 "RD", "ST", "TER", "WAY"}
 
 

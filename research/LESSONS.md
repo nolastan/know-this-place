@@ -2559,3 +2559,41 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   place page the designation is a timeline entry and a past resident is a dated
   entry about the building's use.*
 
+- **Parallel readers share one rate limit, so they stop together.** The 1910
+  contract lists ran as twelve readers and all twelve hit the session limit at
+  about 40% of their shards, within a minute of each other. Because each wrote
+  its entries and then a `{"_block": i}` marker after every block, the restart
+  was mechanical: drop any lines after a reader's last marker, then resume each
+  reader with its context ("intact through block N, continue from N+1") rather
+  than re-briefing a fresh one. *Have readers mark each unit as done, not just
+  write it, so a stop leaves a clean boundary.*
+  ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **A shape regex widened for dirty OCR finds the ads too; filter on the
+  column, then rescue on the heading.** 1910's OCR breaks "with" (`wita`,
+  `wlta`, `irtth`), and the widened entry shape matched 876 rooming-house ads.
+  Requiring two "line of" / "corner of" phrases in a block — the deeds column
+  above every list always has them — removed the ads and also short real lists
+  under a heading, so heading blocks carrying the entry shape were put back (43).
+  *Sample what a filter drops before trusting it, and count both directions.*
+- **An earlier batch's unresolved entries have no `street_name`.** A dedupe of
+  the 1910 daily lists against the four earlier 1910 batches of the same source
+  keyed on `street_name` and offset matched nothing; matched on the address
+  text, it found 45 entries that were the same printing. *Match prior batches
+  on `address_as_written` and `raw`, never on parsed fields only resolved
+  entries carry.*
+- **A period street type is not EAS's, and `corner.py` must know every type.**
+  The contracts print "Geary street" west of Van Ness, where EAS has only
+  `GEARY BLVD`; Birch avenue is `BIRCH ST`; `CLINTON PARK` failed until `PARK`
+  joined `corner.py`'s type set. *Map names onto EAS's own list of street
+  names and types before batching, and retry a corner that "does not meet" with
+  the type dropped.*
+- **An EAS address can carry a letter (`1526 A MASONIC AVE`).** Splitting
+  "number name type" on it took `A MASONIC` as the street, and the path lookup
+  failed. *Pick the plain-numbered address on the parcel; fall back to the
+  lettered one only when there is no other.*
+- **A 1910 number does not trip the renumbering guard, so a rebuilt parcel gets
+  through.** "Alterations to 2200 Post" joined cleanly to a parcel the roll
+  dates 1948. *For a printed number, read the record's scope against the roll
+  year by hand: an alteration needs a building standing by the record's date,
+  a new building a roll year near it; otherwise mark it `unresolved` with
+  `by_hand`.*

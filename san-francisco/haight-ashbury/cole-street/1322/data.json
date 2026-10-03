@@ -1,0 +1,131 @@
+{
+  "address": "1322–1324 Cole Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/cole-street/1322/",
+  "apn": "1286023",
+  "block": "1286",
+  "lot": "023",
+  "eas_baseid": "299873",
+  "coordinates": {
+    "lat": 37.762158,
+    "lng": -122.448929
+  },
+  "address_range": "1322–1324",
+  "street_numbers_on_parcel": [
+    "1322",
+    "1324"
+  ],
+  "parcel": {
+    "year_built": 1909,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2748,
+    "building_area_sqft": 3672,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Cole Valley/Parnassus Heights",
+    "analysis_neighborhood": "Haight Ashbury",
+    "property_location_raw": "1324 1322 COLE                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 62566,
+    "assessed_improvement_value": 68792
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201910215073",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-10-21",
+      "status_date": "2019-10-30",
+      "estimated_cost": 32891,
+      "revised_cost": 32891,
+      "description": "replace 13 metal frame windows - 12 double hung and 1 casement, 3 street facing - with new andersen fibrex double hung windows in same openings with same recess.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9416663",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-10-12",
+      "status_date": "1995-08-21",
+      "estimated_cost": 6980,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9219258",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-11-04",
+      "status_date": "1993-03-19",
+      "estimated_cost": 3000,
+      "description": "renewal under application #9101851.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9101851",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-02-05",
+      "status_date": "1992-02-05",
+      "estimated_cost": 30000,
+      "description": "repair & paint walls,ceiling,tiles in bathrm kitchen outlets",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=COLE&street_type=ST&address_number=1322",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1286023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1286&lot=023",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1286023",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "loc-sf-call-1910-08-18",
+      "name": "The San Francisco Call, 18 August 1910, p. 17",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-08-18/ed-1/seq-17/",
+      "retrieved": "2026-10-03"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1910-08-18",
+      "kind": "building contract",
+      "description": "Frank Pegel contracted to put up a two-storey and basement frame building, at $5,050.",
+      "source": "loc-sf-call-1910-08-18"
+    }
+  ]
+}
