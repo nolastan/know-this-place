@@ -1,0 +1,108 @@
+{
+  "address": "2074–2078 Ellis Street, San Francisco, CA 94115",
+  "path": "/san-francisco/western-addition/ellis-street/2074/",
+  "apn": "1101012A",
+  "block": "1101",
+  "lot": "012A",
+  "eas_baseid": "294860",
+  "coordinates": {
+    "lat": 37.781601,
+    "lng": -122.440456
+  },
+  "address_range": "2074–2078",
+  "street_numbers_on_parcel": [
+    "2074",
+    "2076",
+    "2078"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 3,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 1,
+    "lot_area_sqft": 2812.5,
+    "building_area_sqft": 5160,
+    "lot_depth_ft": 12.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Anza Vista",
+    "analysis_neighborhood": "Western Addition",
+    "property_location_raw": "2078 2074 ELLIS               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 31824,
+    "assessed_improvement_value": 101840
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9008601",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-05-03",
+      "status_date": "1990-05-30",
+      "estimated_cost": 3400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "1990–2011",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ELLIS&street_type=ST&address_number=2074",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1101012A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1101&lot=012A",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1101012A",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "loc-sf-call-1909-09-17",
+      "name": "The San Francisco Call, 17 September 1909, p. 13",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1909-09-17/ed-1/seq-13/",
+      "retrieved": "2026-10-03"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1909-09-17",
+      "kind": "building contract",
+      "description": "J. S. Hannah & Co. contracted for masonry, carpentry, painting, plumbing and electrical work on three-storey and basement frame flats.",
+      "source": "loc-sf-call-1909-09-17"
+    }
+  ]
+}

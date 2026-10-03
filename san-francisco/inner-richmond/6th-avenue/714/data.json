@@ -1,0 +1,106 @@
+{
+  "address": "714 6th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/6th-avenue/714/",
+  "apn": "1648036",
+  "block": "1648",
+  "lot": "036",
+  "eas_baseid": "312129",
+  "coordinates": {
+    "lat": 37.775032,
+    "lng": -122.463566
+  },
+  "parcel": {
+    "year_built": 1909,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 2374,
+    "building_area_sqft": 2920,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0716 0714 06TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1202136,
+    "assessed_improvement_value": 801424,
+    "last_sale_date": "2022-06-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9913187",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-06-30",
+      "status_date": "1999-09-01",
+      "estimated_cost": 5000,
+      "description": "rebuild existing dry rot stairs at rear bldng (2nd exit stai",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9006739",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-04-09",
+      "status_date": "1990-07-19",
+      "estimated_cost": 2000,
+      "description": "proposed repairing (e) stairs @ rear bldg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=06TH&street_type=AVE&address_number=714",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1648036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1648&lot=036",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1648036",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "loc-sf-call-1909-07-23",
+      "name": "The San Francisco Call, 23 July 1909, p. 9",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1909-07-23/ed-1/seq-9/",
+      "retrieved": "2026-10-03"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1909-07-23",
+      "kind": "building contract",
+      "description": "A builder contracted to put up two-storey frame flats, at $4,545.",
+      "source": "loc-sf-call-1909-07-23"
+    }
+  ]
+}

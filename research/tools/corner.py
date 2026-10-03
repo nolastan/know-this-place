@@ -71,6 +71,12 @@ side). A corner line with `quad` and neither `lot` nor `offset` lists only the
 parcels in that corner whose roll year fits `year`. **`--json`** prints every
 entry's candidates with these checks as data, for a placement script.
 
+**`built_by`** instead of `year` — for an alteration, which is work on a
+building already standing: `"built_by": 1908` passes every parcel whose roll
+year is 1908 or earlier wherever the ±2-year test would otherwise apply (the
+offset-only and corner-only modes filter on it, so without this an alteration
+to an older building can never be placed there).
+
 It deliberately does not pick a corner. Which parcel is "southeast" depends on
 which side of the street carries the odd numbers, and that is a reading of the
 addresses printed here, not something a centroid gets right. The match is the
@@ -408,7 +414,12 @@ def batch(path: str, tol: float = 0.04, as_json: bool = False) -> int:
             except ValueError:
                 area = 0
             yr = ro.get("year_property_built") or ""
-            year_ok = bool(e.get("year") and yr.isdigit() and abs(int(yr) - int(e["year"])) <= 2)
+            if e.get("built_by"):
+                # An alteration is to a building already standing: any roll year
+                # up to the record's own counts, a near one does not.
+                year_ok = bool(yr.isdigit() and int(yr) <= int(e["built_by"]))
+            else:
+                year_ok = bool(e.get("year") and yr.isdigit() and abs(int(yr) - int(e["year"])) <= 2)
             span = front_span(apn, shapes, ix, toward, with_origin=True) if toward else None
             if span and e.get("dir") and not e.get("to") and abs(span[2]) > 120:
                 continue  # a block that does not begin at the crossing: the next one along

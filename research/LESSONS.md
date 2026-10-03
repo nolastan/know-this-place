@@ -2597,3 +2597,31 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   year by hand: an alteration needs a building standing by the record's date,
   a new building a roll year near it; otherwise mark it `unresolved` with
   `by_hand`.*
+- **1909's OCR reads a capital N as X, and "X street" is a street.** "X line
+  of" is the north line, but in the Sunset "X street" is N street — Noriega —
+  and eight entries were first read as Moraga (M). 1909 is also the year the
+  lettered streets were renamed, so a list prints both forms in the same week.
+  *Read a letter street against the 1909 key (A Anza … W Wawona) and check the
+  OCR's X against the street grid before mapping it.*
+  ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **An alteration cannot pass a year filter built for new work.** `corner.py`'s
+  offset-only and corner-only modes keep only parcels whose roll year is within
+  two of the record's, so a 1909 alteration to a building of 1900 was dropped
+  before the placement rule ever saw it. `corner.py` now takes `built_by`.
+  *Give every alteration `built_by` (the year before the record), never
+  `year`.* ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **A long `corner.py --batch` run outlives a background timeout.** 995 lines in
+  one run were killed at ten minutes with nothing written. *Split a batch into
+  chunks of about 350 lines and run them in parallel, each to its own output.*
+- **A measurement survives a renumbering; a number does not.** The year left
+  for last because of the 1909 renumbering printed a line and an offset, or a
+  corner, for all but 17 of 1,253 entries, and the offset from a crossing is
+  the same before and after. *Before deferring a pre-renumbering source, count
+  how many of its records print a number at all.*
+  ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **The order of a lot's dimensions follows the compass, not frontage first.**
+  "W 75 by S 46" on a north-line lot is frontage 75, depth 46, but "S 46 by W
+  75" on a corner gives the depth first. A frontage check that took the first
+  figure as the frontage refused a correct match. *Apply a frontage test only
+  where a dimension is illegible, and read the frontage off the direction that
+  runs along the named street.*

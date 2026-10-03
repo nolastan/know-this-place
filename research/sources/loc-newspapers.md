@@ -6,7 +6,7 @@
 >
 > - **Kind:** newspaper OCR corpus · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 10 batches / 58,620 pages scanned for address mentions in August 2026 (no findings file; see below), and the *Call*'s Real Estate and Financial Section read in full for 1911 and 1912, as held for 1913, and for the whole of 1910 (January–June and July–December batches, then re-read for its owner-only permits, contracts, loans and building sales in `sn85066387-1910-permits.json`), into `findings/loc-newspapers/sn85066387-<year>-real-estate.json`. The daily Building Contracts lists of 1911 and 1912 are read in full into `sn85066387-1911-building-contracts.json` and `sn85066387-1912-building-contracts.json`, and 1913's as far as the batches hold it into `sn85066387-1913-building-contracts.json`, and 1910's in full into `sn85066387-1910-building-contracts.json`.
+> - **Coverage:** 10 batches / 58,620 pages scanned for address mentions in August 2026 (no findings file; see below), and the *Call*'s Real Estate and Financial Section read in full for 1911 and 1912, as held for 1913, and for the whole of 1910 (January–June and July–December batches, then re-read for its owner-only permits, contracts, loans and building sales in `sn85066387-1910-permits.json`), into `findings/loc-newspapers/sn85066387-<year>-real-estate.json`. The daily Building Contracts lists of 1911 and 1912 are read in full into `sn85066387-1911-building-contracts.json` and `sn85066387-1912-building-contracts.json`, and 1913's as far as the batches hold it into `sn85066387-1913-building-contracts.json`, 1910's in full into `sn85066387-1910-building-contracts.json`, and 1909's in full into `sn85066387-1909-building-contracts.json`.
 > - **Local corpus:** `research/corpora/loc-newspapers/` — `tar/` for the batch OCR tarballs, `txt/<lccn>/<yyyy>/<mm>/<dd>/ed-1/seq-N/ocr.txt` for the extracted pages. A fresh container has none of it.
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -90,7 +90,7 @@ Issue counts per year; a year split across batches needs all of them.
 | | 1900–1905 | `albion_ver01`, `brea_ver01`, `carmel_ver01`, `darwin_ver01`, `felix_ver01`, `plasse_ver01`, `elderwood_ver02` (listings only; years not mapped), `quincy_ver01` (1901: 61, 1904: 60), `oasis_ver01` (1905: 89) |
 | | 1906–1907 | `hercules_ver01` (275 + 92), `indio_ver01` (1907: 245), `mecca_ver01` (1907: 28) |
 | | 1908 | `indio` (90), `jenner_ver01` (31), `llano_ver01` (245) |
-| | 1909 | `jenner` (92), `llano` (61), `mecca` (151), `needles_ver01` (61) |
+| | **1909** | `jenner` (92), `llano` (61), `mecca` (151), `needles_ver01` (61) — **all four fetched 2026-10-03**; **the daily Building Contracts lists read in full** 2026-10-03 |
 | | **1910** | `curiv_jenner_ver01` (90), `curiv_klamath_ver01` (122), `curiv_mecca_ver01` (122), `curiv_needles_ver01` (31) — **all four fetched 2026-09-23**, again 2026-10-03; **read in full** (January–June, July–December, and twice more for owner-only corner/offset entries with and without a lot, #407 and #412), and **the daily Building Contracts lists read in full** 2026-10-03 |
 | | **1911** | `curiv_betteravia_ver02` (Jan–Aug, 5,901 pages), `curiv_angwin_ver02` (Sep–Dec, 2,996 pages) — **both on disk** |
 | | **1912** | `angwin` (106), `calipatria_ver03` (183), `dardanelle_ver01` (64) — 9,693 pages, **all three fetched 2026-09-23**; nothing after 15 December |
@@ -504,6 +504,51 @@ pages). Same method as 1911–1913. What was new:
   trimming to the last marker and resuming each reader with its context lost
   nothing (see LESSONS).
 
+### The 1909 Building Contracts lists
+
+Read 2026-10-03, every page of 1909 the four batches hold (365 issues, 7,870
+pages), on the 1910 method. What was new:
+
+- **The renumbering barely touches these lists.** The 1909 renumbering is the
+  reason this year was left last, but the list prints a line and an offset, or
+  a corner, for all but 17 of its 1,253 entries — a measurement from a street
+  crossing, which no renumbering moves. Only the 17 numbered entries needed the
+  cross-street check, and one survived it (807 Castro).
+- **1909's OCR reads a capital N as X.** "X line of" is the north line, and
+  "X street" in the Sunset is **N street, now Noriega** — not Moraga, which is
+  M. Eight entries were first read as Moraga and corrected. The lettered
+  streets were renamed during 1909, so the year's lists print both forms: A
+  Anza, B Balboa, C Cabrillo, D Fulton, H Lincoln Way, I Irving, J Judah, K
+  Kirkham, L Lawton, M Moraga, N Noriega, P Pacheco, Q Quintara, S Santiago, T
+  Taraval, U Ulloa, V Vicente, W Wawona. "First avenue" is Arguello.
+- **Alterations need `built_by`.** corner.py's offset-only and corner-only
+  modes filter on the roll year, so an alteration to a building of 1900 could
+  never be placed in them. corner.py now takes `built_by` in place of `year`
+  on a batch line: any roll year up to it passes, none after. 24 alterations
+  were re-run with it.
+- **A lot with one illegible dimension** still says something: the frontage it
+  does print must not be wider than the parcel's by more than 5 ft. The rule
+  only applies where a dimension is unknown — with both printed, the lot-area
+  test already decides, and a lot printed "W 75 by S 46" gives its depth
+  first.
+- **Ina Coolbrith** let the contract for her house at 1067 Broadway on 15
+  September 1909, the year the NRHP nomination on that page puts her there:
+  the only parcel the offset and the side allow, and published as a notable
+  owner, as the Sbarboro contract was in 1911.
+- **The Chinese Free Masons' Society** built on the W line of Spofford, 62:6
+  S of Washington, lot 75 by 61:9 — parcel 0210021, 39 Spofford, whose 4,630
+  sq ft is exactly that lot; the society's headquarters is at 36 Spofford,
+  across the alley. Published on 39, with the conflict in its `unknowns`.
+- **Downtown is named, not measured.** 53 entries were placed by the building
+  the record names — the Palace Hotel's reconstruction alone has four
+  contracts, the Elks' building on Powell six. Several lots carry two general
+  contracts a year apart, 1909 and 1910, with different builders (111 Powell,
+  1517 Jones, 615 Guerrero); both are on the page and the page says it does
+  not know which built the building.
+- **Where it fails** is where 1910 failed: 374 no parcel with a roll year near
+  1909, 294 single candidates refused, 191 unmeasurable, 67 on streets EAS no
+  longer joins.
+
 ### Cautions
 
 - **Verify the number against the cross-streets — the ads hand you the check.**
@@ -668,6 +713,16 @@ pages). Same method as 1911–1913. What was new:
   seeded, 48 declined, 43 of them other contracts for a building already
   carrying one. Batch file
   `findings/loc-newspapers/sn85066387-1910-building-contracts.json`.)
+- **Verified:** 2026-10-03 (the *Call*'s daily Building Contracts lists for
+  the whole of 1909, from `curiv_jenner_ver01`, `curiv_llano_ver01`,
+  `curiv_mecca_ver01` and `curiv_needles_ver01`: 7,870 OCR pages scanned, 346
+  page-blocks on 233 days, 1,385 candidate segments read, 1,253 contract
+  entries, 1,244 findings after 9 reprints (1,119 building contracts, 121
+  alterations, 4 architect credits) — 284 resolved (230 by corner, offset and
+  lot with `corner.py --batch --json`, 53 on a building the record names, 1 on
+  a printed number), 960 unresolved; 229 published on 228 pages, 124 of them
+  seeded, 55 declined as other contracts for a building already carrying one.
+  Batch file `findings/loc-newspapers/sn85066387-1909-building-contracts.json`.)
 - **Coverage:** 1890s and 1900s years scanned in August 2026 for mentions only
   (above); **1910 Real Estate and Financial Section read in full, three
   times over** — numbered/architect/corner entries (#three 1910 batches),
@@ -679,11 +734,10 @@ pages). Same method as 1911–1913. What was new:
   as far as the batches hold it** (1–15 February, 16 July–8 December); 1913's
   other months are in no batch on the bulk route. Then the unscanned
   1897–1899 and 1903–1904 years. The daily Building Contracts lists are **read
-  for 1910, 1911, 1912 and 1913** (1913 as far as the batches hold it: 1–15
+  for 1909, 1910, 1911, 1912 and 1913** (1913 as far as the batches hold it: 1–15
   February, 16 July–8 December). **Next: the daily Building Contracts lists
-  of 1909** (`jenner`, `llano`, `mecca`, `needles_ver01` — 365 issues), on the
-  same method, where the renumbering year needs the record's date checked
-  against each street: a list from before the renumbering took effect gives
-  numbers that are not today's. The rest of the 1911, 1912 and 1913 paper —
+  of 1908** (`indio`, `jenner_ver01`, `llano_ver01` — 366 issues), on the
+  same method; 1908 is before the renumbering too, and as in 1909 only the
+  numbered entries need the cross-street check. The rest of the 1911, 1912 and 1913 paper —
   the fires and the building-permit lists — is on disk in a session that
   fetched it, and unread.

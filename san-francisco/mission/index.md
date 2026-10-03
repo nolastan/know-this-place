@@ -104,6 +104,7 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [Potrero Avenue](potrero-avenue/) — 118 buildings, built 1890–2016.
 - [Ramona Avenue](ramona-avenue/) — 21 buildings, built 1875–1923; 21 in the Ramona Street Historic District.
 - [Rhode Island Street](rhode-island-street/) — 2 buildings, built 1912–1948; 1 in the Showplace Square Heavy Timber and Steel-frame Brick Warehouse and Factory Historic District.
+- [Ringold Street](ringold-street/) — 1 building, built 1909; 1 in the Western SOMA Light Industrial and Residential Historic District.
 - [Rondel Place](rondel-place/) — 12 buildings, built 1904–1925.
 - [Rosemont Place](rosemont-place/) — 5 buildings, built 1906–1976.
 - [San Bruno Avenue](san-bruno-avenue/) — 55 buildings, built 1895–1938.

@@ -1,0 +1,126 @@
+{
+  "address": "628–630 4th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/4th-avenue/628/",
+  "apn": "1641043",
+  "block": "1641",
+  "lot": "043",
+  "eas_baseid": "465390",
+  "coordinates": {
+    "lat": 37.776763,
+    "lng": -122.461498
+  },
+  "address_range": "628–630",
+  "street_numbers_on_parcel": [
+    "628",
+    "630"
+  ],
+  "parcel": {
+    "year_built": 1911,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "bedrooms": 5,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2880,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "WOO",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0630 0628 04TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 956584,
+    "assessed_improvement_value": 839334,
+    "last_sale_date": "2006-06-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200701101391",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-01-10",
+      "status_date": "2007-08-07",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "interior remodeling for an existing residential unit. work includes relocation of kitchen and bedrrom. rearrange of bathrooms as shown, relocate water heater to basement at an open space.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200305144571",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-05-14",
+      "status_date": "2003-09-22",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "to add 1 bdrm/1 full bth rm/1 lndryrm/1 storage on extg ground floor per plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200211211968",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-11-21",
+      "status_date": "2006-01-26",
+      "estimated_cost": 9995,
+      "revised_cost": 9995,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=04TH&street_type=AVE&address_number=628",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1641043&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1641&lot=043",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1641043",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "loc-sf-call-1909-04-04",
+      "name": "The San Francisco Call, 4 April 1909, p. 51",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1909-04-04/ed-1/seq-51/",
+      "retrieved": "2026-10-03"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1909-04-04",
+      "kind": "building contract",
+      "description": "George G. Moren contracted for all work except electrical work, gas fixtures and shades on a two-storey frame residence and stable, at $3,504.",
+      "source": "loc-sf-call-1909-04-04"
+    }
+  ]
+}

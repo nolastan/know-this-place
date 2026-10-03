@@ -1,0 +1,107 @@
+{
+  "address": "1132–1134 Vallejo Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/vallejo-street/1132/",
+  "apn": "0126010",
+  "block": "0126",
+  "lot": "010",
+  "eas_baseid": "448025",
+  "coordinates": {
+    "lat": 37.797952,
+    "lng": -122.416063
+  },
+  "address_range": "1132–1134",
+  "street_numbers_on_parcel": [
+    "1132",
+    "1134"
+  ],
+  "parcel": {
+    "year_built": 1910,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 3437.5,
+    "building_area_sqft": 2800,
+    "lot_depth_ft": 37.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Russian Hill",
+    "analysis_neighborhood": "Nob Hill",
+    "property_location_raw": "1134 1132 VALLEJO             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 61650,
+    "assessed_improvement_value": 98622
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9814143",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-07-24",
+      "status_date": "1998-10-13",
+      "estimated_cost": 1200,
+      "description": "repair deck in back yard no other work",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "1998–2015",
+    "shown_on_page": 1,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VALLEJO&street_type=ST&address_number=1132",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0126010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0126&lot=010",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0126010",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "loc-sf-call-1909-08-26",
+      "name": "The San Francisco Call, 26 August 1909, p. 9",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1909-08-26/ed-1/seq-9/",
+      "retrieved": "2026-10-03"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1909-08-26",
+      "kind": "building contract",
+      "description": "B. Pagano contracted for all work except plumbing, mantels, light fixtures and shades on two-storey and basement frame flats.",
+      "source": "loc-sf-call-1909-08-26"
+    }
+  ]
+}

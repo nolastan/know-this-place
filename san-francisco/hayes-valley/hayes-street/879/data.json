@@ -1,0 +1,159 @@
+{
+  "address": "879–883 Hayes Street, San Francisco, CA 94117",
+  "path": "/san-francisco/hayes-valley/hayes-street/879/",
+  "apn": "0821028",
+  "block": "0821",
+  "lot": "028",
+  "eas_baseid": "435700",
+  "coordinates": {
+    "lat": 37.775696,
+    "lng": -122.430774
+  },
+  "address_range": "879–883",
+  "street_numbers_on_parcel": [
+    "879",
+    "881",
+    "883"
+  ],
+  "parcel": {
+    "year_built": 1909,
+    "units": 3,
+    "stories": 3,
+    "rooms": 15,
+    "bathrooms": 3,
+    "lot_area_sqft": 1563,
+    "building_area_sqft": 3570,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Alamo Square",
+    "analysis_neighborhood": "Hayes Valley",
+    "property_location_raw": "0883 0879 HAYES               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1018301,
+    "assessed_improvement_value": 591274
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Hayes Valley Residential Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1860–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202603046933",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-03-04",
+      "status_date": "2026-04-02",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "reroofing 1500sf tear off and install pvc, hot works # 126727.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202507291873",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-07-29",
+      "status_date": "2025-11-14",
+      "estimated_cost": 28000,
+      "revised_cost": 35000,
+      "description": "replace existing foundation. post bases and framing at rear foundation and 2nd floor framing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200111143092",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2001-11-14",
+      "status_date": "2002-09-04",
+      "estimated_cost": 5000,
+      "revised_cost": 8000,
+      "description": "replace 24' of existing footing no structural changes",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9208252",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-05-20",
+      "status_date": "1992-06-12",
+      "estimated_cost": 500,
+      "description": "renew pa#9108705",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9108705",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1991-05-21",
+      "status_date": "1992-02-06",
+      "estimated_cost": 2500,
+      "description": "install steel beam to stabilize adjacent bldg.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAYES&street_type=ST&address_number=879",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0821028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0821&lot=028",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0821028",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4307744638079%2037.77569551388661)%27)",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "loc-sf-call-1909-11-17",
+      "name": "The San Francisco Call, 17 November 1909, p. 13",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1909-11-17/ed-1/seq-13/",
+      "retrieved": "2026-10-03"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1909-11-17",
+      "kind": "building contract",
+      "description": "Oliver Evans contracted to put up three-storey and basement frame flats, at $8,550.",
+      "source": "loc-sf-call-1909-11-17"
+    }
+  ]
+}

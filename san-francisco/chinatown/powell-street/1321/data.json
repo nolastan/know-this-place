@@ -1,0 +1,123 @@
+{
+  "address": "1321–1327 Powell Street, San Francisco, CA 94133",
+  "path": "/san-francisco/chinatown/powell-street/1321/",
+  "apn": "0159004",
+  "block": "0159",
+  "lot": "004",
+  "eas_baseid": "445165",
+  "coordinates": {
+    "lat": 37.796803,
+    "lng": -122.410333
+  },
+  "address_range": "1321–1327",
+  "street_numbers_on_parcel": [
+    "1321",
+    "1323",
+    "1325",
+    "1327"
+  ],
+  "parcel": {
+    "year_built": 1910,
+    "units": 8,
+    "stories": 3,
+    "rooms": 20,
+    "bathrooms": 7,
+    "bedrooms": 6,
+    "lot_area_sqft": 1374.9,
+    "building_area_sqft": 4355,
+    "basement_area_sqft": 470,
+    "lot_depth_ft": 45.83,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "CRNC",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Chinatown",
+    "property_location_raw": "1327 1323 POWELL              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 655363,
+    "assessed_improvement_value": 655363,
+    "last_sale_date": "2012-12-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201304305765",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-04-30",
+      "status_date": "2013-05-22",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9203007",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-02-27",
+      "status_date": "1992-05-28",
+      "estimated_cost": 3600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "1992–2013",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POWELL&street_type=ST&address_number=1321",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0159004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0159&lot=004",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0159004",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "loc-sf-call-1909-02-12",
+      "name": "The San Francisco Call, 12 February 1909, p. 13",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1909-02-12/ed-1/seq-13/",
+      "retrieved": "2026-10-03"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1909-02-12",
+      "kind": "building contract",
+      "description": "J. Little and J. M. Lettich contracted to put up a three-storey and basement frame building, at $8,492.",
+      "source": "loc-sf-call-1909-02-12"
+    }
+  ]
+}
