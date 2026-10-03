@@ -1,0 +1,131 @@
+{
+  "address": "1440 Jones Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/jones-street/1440/",
+  "apn": "0189015",
+  "block": "0189",
+  "lot": "015",
+  "eas_baseid": "279657",
+  "coordinates": {
+    "lat": 37.794658,
+    "lng": -122.4144
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 7,
+    "stories": 3,
+    "rooms": 28,
+    "bathrooms": 7,
+    "bedrooms": 14,
+    "lot_area_sqft": 3628,
+    "building_area_sqft": 6111,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Nob Hill",
+    "property_location_raw": "0000 1440 JONES               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2610531,
+    "assessed_improvement_value": 1118798,
+    "last_sale_date": "2020-03-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202211176776",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-11-17",
+      "status_date": "2023-06-12",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "replace (e) 3 story deck in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201604195153",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-04-19",
+      "status_date": "2016-05-03",
+      "estimated_cost": 750,
+      "revised_cost": 750,
+      "description": "comply with n.o.v. #201609191 item #2 - repair stairs in kind less than 50%.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200210169107",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-10-16",
+      "status_date": "2002-10-16",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8704588",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-04-10",
+      "status_date": "1987-08-31",
+      "estimated_cost": 5,
+      "revised_cost": 1000,
+      "description": "to bring building into code",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JONES&street_type=ST&address_number=1440",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0189015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0189&lot=015",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0189015",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "loc-sf-call-1910-10-11",
+      "name": "The San Francisco Call, 11 October 1910, p. 13",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-10-11/ed-1/seq-13/",
+      "retrieved": "2026-10-03"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1910-10-11",
+      "kind": "building contract",
+      "description": "William and John Little contracted for all work except plumbing on three-storey frame apartments.",
+      "source": "loc-sf-call-1910-10-11"
+    }
+  ]
+}

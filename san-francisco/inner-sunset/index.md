@@ -49,6 +49,7 @@ The blocks between Golden Gate Park and Mount Sutro, laid out along the Muni N-J
 - [Ventura Avenue](ventura-avenue/) — 1 building, built 1927; 1 in the Forest Hill Historic District.
 - [Villa Terrace](villa-terrace/) — 1 building, built 1951.
 - [Warren Drive](warren-drive/) — 2 buildings, built 1961.
+- [Woodland Avenue](woodland-avenue/) — 2 buildings, built 1910.
 
 ## Parks and public spaces
 

@@ -1,0 +1,107 @@
+{
+  "address": "5414 California Street, San Francisco, CA 94118",
+  "path": "/san-francisco/outer-richmond/california-street/5414/",
+  "apn": "1376020",
+  "block": "1376",
+  "lot": "020",
+  "eas_baseid": "301689",
+  "coordinates": {
+    "lat": 37.784551,
+    "lng": -122.475751
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2380,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "5416 5414 CALIFORNIA          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 53320,
+    "assessed_improvement_value": 81270
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201707262981",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-07-26",
+      "status_date": "2017-08-31",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "replace 9 windows visible to the street. all windows to be wood double-hung.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201506108589",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-06-10",
+      "status_date": "2015-07-30",
+      "estimated_cost": 6600,
+      "revised_cost": 6600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CALIFORNIA&street_type=ST&address_number=5414",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1376020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1376&lot=020",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1376020",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "loc-sf-call-1910-08-18",
+      "name": "The San Francisco Call, 18 August 1910, p. 17",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-08-18/ed-1/seq-17/",
+      "retrieved": "2026-10-03"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1910-08-18",
+      "kind": "building contract",
+      "description": "H. J. Burns contracted to put up two-storey and basement flats, at $3,600.",
+      "source": "loc-sf-call-1910-08-18"
+    }
+  ]
+}

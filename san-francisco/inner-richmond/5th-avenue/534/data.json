@@ -1,0 +1,114 @@
+{
+  "address": "534–536 5th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/5th-avenue/534/",
+  "apn": "1547041",
+  "block": "1547",
+  "lot": "041",
+  "eas_baseid": "495422",
+  "coordinates": {
+    "lat": 37.778472,
+    "lng": -122.462695
+  },
+  "address_range": "534–536",
+  "street_numbers_on_parcel": [
+    "534",
+    "536"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 3,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 3,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2649,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0536 0534 05TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1032500,
+    "assessed_improvement_value": 442500,
+    "last_sale_date": "2024-09-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202512051061",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-12-05",
+      "status_date": "2026-01-07",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "addressing permit only. add address 536 05th ave for ground floor unit in the front building. add 536 a 05th ave for the rear building. link to parcel 1547/041.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200812319377",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-12-31",
+      "status_date": "2008-12-31",
+      "estimated_cost": 4100,
+      "revised_cost": 4100,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=05TH&street_type=AVE&address_number=534",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1547041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1547&lot=041",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1547041",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "loc-sf-call-1910-06-03",
+      "name": "The San Francisco Call, 3 June 1910, p. 13",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-06-03/ed-1/seq-13/",
+      "retrieved": "2026-10-03"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1910-06-03",
+      "kind": "building contract",
+      "description": "Nels A. Trubeck contracted for all work except plumbing on two-storey and basement frame flats.",
+      "source": "loc-sf-call-1910-06-03"
+    }
+  ]
+}

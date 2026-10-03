@@ -1,0 +1,146 @@
+{
+  "address": "1338 5th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/5th-avenue/1338/",
+  "apn": "1759037",
+  "block": "1759",
+  "lot": "037",
+  "eas_baseid": "316351",
+  "coordinates": {
+    "lat": 37.763481,
+    "lng": -122.461649
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 1900,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Inner Sunset",
+    "analysis_neighborhood": "Inner Sunset",
+    "property_location_raw": "0000 1338 05TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1041598,
+    "assessed_improvement_value": 694394,
+    "last_sale_date": "2004-06-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201211274865",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-11-27",
+      "status_date": "2014-06-03",
+      "estimated_cost": 17000,
+      "revised_cost": 17000,
+      "description": "remove interior fin wall, remodel kitchen.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200101089391",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-01-08",
+      "status_date": "2001-03-01",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "rear small first fl addtiion to use fam den & fl master bathroom original rear porch, remodel old b",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200009059650",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-09-05",
+      "status_date": "2000-09-20",
+      "estimated_cost": 10075,
+      "revised_cost": 10075,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9908298",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1999-04-29",
+      "status_date": "2001-02-28",
+      "estimated_cost": 30000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9318670",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-10-22",
+      "status_date": "1994-09-21",
+      "estimated_cost": 1450,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 8,
+    "range": "1993–2013",
+    "shown_on_page": 5,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=05TH&street_type=AVE&address_number=1338",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1759037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1759&lot=037",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1759037",
+      "retrieved": "2026-10-03"
+    },
+    {
+      "id": "loc-sf-call-1910-05-03",
+      "name": "The San Francisco Call, 3 May 1910, p. 13",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1910-05-03/ed-1/seq-13/",
+      "retrieved": "2026-10-03"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1910-05-03",
+      "kind": "building contract",
+      "description": "Junius Branch contracted to put up a two-storey frame residence.",
+      "source": "loc-sf-call-1910-05-03"
+    }
+  ]
+}
