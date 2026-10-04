@@ -1,0 +1,123 @@
+{
+  "address": "1175–1181 Pacific Avenue, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/pacific-avenue/1175/",
+  "apn": "0182022",
+  "block": "0182",
+  "lot": "022",
+  "eas_baseid": "458091",
+  "coordinates": {
+    "lat": 37.795718,
+    "lng": -122.414534
+  },
+  "address_range": "1175–1181",
+  "street_numbers_on_parcel": [
+    "1175",
+    "1177",
+    "1181"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 4,
+    "stories": 3,
+    "rooms": 21,
+    "bathrooms": 4,
+    "lot_area_sqft": 3223,
+    "building_area_sqft": 6070,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "NC-2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Nob Hill",
+    "property_location_raw": "1181 1175 PACIFIC             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2315954,
+    "assessed_improvement_value": 1021139
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202609087777",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-09-08",
+      "status_date": "2026-09-09",
+      "estimated_cost": 32500,
+      "revised_cost": 80283,
+      "description": "interior remodel to residential building in the rear of the property including replacemant of kitchen cabinets and appliances in the existing kitchen & fixture rearrangement in the existing bathrooms, new laundry cabinets.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202608176670",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-08-17",
+      "status_date": "2026-09-03",
+      "estimated_cost": 65000,
+      "revised_cost": 240788,
+      "description": "full remodel: kitchen and 3 baths, addition of 1-1/2 baths, replacement of alum windows with double glaszed alum windows of matching config and operation.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9024202",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-11-26",
+      "status_date": "1991-08-23",
+      "estimated_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PACIFIC&street_type=AVE&address_number=1175",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0182022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0182&lot=022",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0182022",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "loc-sf-call-1908-08-09",
+      "name": "The San Francisco Call, 9 August 1908, p. 39",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1908-08-09/ed-1/seq-39/",
+      "retrieved": "2026-10-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1908-08-09",
+      "kind": "building contract",
+      "description": "Demartini & Carranza contracted for all work except hardware, mantels, painting, plumbing, shades and chandeliers on a three-storey and basement frame building, at $5,350.",
+      "source": "loc-sf-call-1908-08-09"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "address": "1131–1141 Leavenworth Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/leavenworth-street/1131/",
+  "apn": "0248003",
+  "block": "0248",
+  "lot": "003",
+  "eas_baseid": "437726",
+  "coordinates": {
+    "lat": 37.791714,
+    "lng": -122.416071
+  },
+  "address_range": "1131–1141",
+  "street_numbers_on_parcel": [
+    "1131",
+    "1133",
+    "1135",
+    "1137",
+    "1139",
+    "1141"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 8,
+    "stories": 3,
+    "rooms": 32,
+    "bathrooms": 8,
+    "lot_area_sqft": 2100,
+    "building_area_sqft": 6276,
+    "lot_depth_ft": 56,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Nob Hill",
+    "property_location_raw": "1141 1131 LEAVENWORTH         ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 585692,
+    "assessed_improvement_value": 585692
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9414212",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "1994-09-02",
+      "status_date": "1994-09-02",
+      "estimated_cost": 4500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "1994–2009",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LEAVENWORTH&street_type=ST&address_number=1131",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0248003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0248&lot=003",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0248003",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "loc-sf-call-1908-04-28",
+      "name": "The San Francisco Call, 28 April 1908, p. 5",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1908-04-28/ed-1/seq-5/",
+      "retrieved": "2026-10-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1908-04-28",
+      "kind": "building contract",
+      "description": "A builder contracted for ? on three-storey frame flats, at $10,480.",
+      "source": "loc-sf-call-1908-04-28"
+    }
+  ]
+}

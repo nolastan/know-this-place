@@ -1,0 +1,112 @@
+{
+  "address": "1216–1218 3rd Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/3rd-avenue/1216/",
+  "apn": "1748017",
+  "block": "1748",
+  "lot": "017",
+  "eas_baseid": "316109",
+  "coordinates": {
+    "lat": 37.765785,
+    "lng": -122.459661
+  },
+  "address_range": "1216–1218",
+  "street_numbers_on_parcel": [
+    "1216",
+    "1218"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 3184,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Inner Sunset",
+    "analysis_neighborhood": "Inner Sunset",
+    "property_location_raw": "1218 1216 03RD                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 124328,
+    "assessed_improvement_value": 230926
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201606109645",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-06-10",
+      "status_date": "2016-06-21",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8705505",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-04-27",
+      "status_date": "1987-09-08",
+      "estimated_cost": 3500,
+      "description": "legalize 1st story occupancy, construct interior stair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=03RD&street_type=AVE&address_number=1216",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1748017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1748&lot=017",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1748017",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "loc-sf-call-1908-08-28",
+      "name": "The San Francisco Call, 28 August 1908, p. 13",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1908-08-28/ed-1/seq-13/",
+      "retrieved": "2026-10-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1908-08-28",
+      "kind": "building contract",
+      "description": "J. P. Fletcher contracted to put up two-storey frame flats, at $5,855.",
+      "source": "loc-sf-call-1908-08-28"
+    }
+  ]
+}

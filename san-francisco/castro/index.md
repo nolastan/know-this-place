@@ -35,9 +35,11 @@ which local histories treat as its own neighborhood.
 - [20th Street](20th-street/) — 143 buildings, built 1875–2012.
 - [21st Street](21st-street/) — 76 buildings, built 1900–2022; 9 in the Castro & Liberty Streets Historic District.
 - [Abbey Street](abbey-street/) — 10 buildings, built 1900–1924; 7 in the Chula-Abbey Early Residential District.
+- [Alma Street](alma-street/) — 1 building, built 1908; 1 in the Cole Valley Historic District.
 - [Alpine Terrace](alpine-terrace/) — 35 buildings, built 1900–2007.
 - [Beaver Street](beaver-street/) — 43 buildings, built 1885–1991; 22 in the Duboce Triangle Historic District Extension.
 - [Belcher Street](belcher-street/) — 11 buildings, built 1900–1974; 5 in the Duboce Triangle Historic District.
+- [Belvedere Street](belvedere-street/) — 1 building, built 1906; 1 in the Cole Valley Historic District.
 - [Boynton Court](boynton-court/) — 3 buildings, built 1890–1900; 3 in the Duboce Triangle Historic District.
 - [Buena Vista Avenue](buena-vista-avenue/) — 18 buildings, built 1895–2010.
 - [Buena Vista Terrace](buena-vista-terrace/) — 47 buildings, built 1884–1994.

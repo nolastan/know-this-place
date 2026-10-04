@@ -136,7 +136,10 @@ example: [findings/README.md](findings/README.md).
   public citation URL or label a page would print. "The archive" is not a
   citation.
 - **Quote sparingly.** `raw.text` is the shortest span that justifies the
-  extraction. It exists for steps 3 and 6; it never reaches a page.
+  extraction. It exists for steps 3 and 6; it never reaches a page. In a list
+  (owner, then contractor, then work), check **both ends**: start after the
+  owner, and end at the entry's own amount, or its next entry's owner rides
+  in on the tail.
 - **People:** buildings, contractors, architects and named firms. Not residents,
   occupants or owners — **at extraction time, not later.** See "Privacy — hard
   limits" in the root [AGENTS.md](../AGENTS.md).

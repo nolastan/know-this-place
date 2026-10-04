@@ -5,6 +5,7 @@ The retail blocks around Union Square, at the top of Market Street. Coverage her
 ## Streets documented so far
 
 - [Belden Street](belden-street/) — 1 building, built 1922; 1 in the Kearny-Belden Conservation District.
+- [Claude Lane](claude-lane/) — 1 building, built 1908; 1 in the Kearny-Market-Mason-Sutter Conservation District.
 - [Geary Street](geary-street/) — 1 building; 1 in the Kearny-Market-Mason-Sutter Conservation District.
 - [Kearny Street](kearny-street/) — 1 building; 1 in the Kearny-Market-Mason-Sutter Conservation District.
 - [Maiden Lane](maiden-lane/) — 1 building, built 1909; 1 in the Kearny-Market-Mason-Sutter Conservation District.

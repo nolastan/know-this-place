@@ -1,0 +1,144 @@
+{
+  "address": "73 Elgin Park, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/elgin-park/73/",
+  "apn": "3502128",
+  "block": "3502",
+  "lot": "128",
+  "eas_baseid": "357690",
+  "coordinates": {
+    "lat": 37.770319,
+    "lng": -122.422994
+  },
+  "parcel": {
+    "year_built": 1907,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "building_area_sqft": 1200,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "NA",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Mission Dolores",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0073 ELGIN               PK0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 628845,
+    "assessed_improvement_value": 628845,
+    "last_sale_date": "2019-10-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1907",
+    "survey_name": "73 Elgin Park",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Elgin Park-Pearl Street Reconstruction Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1913",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202103237104",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2021-03-23",
+      "status_date": "2024-06-13",
+      "estimated_cost": 65000,
+      "revised_cost": 85000,
+      "description": "3rd fl infill lightwell. convert from 1 to 3 baths. remodel kitchen. add 2 skylights.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200702013156",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2007-02-01",
+      "status_date": "2007-07-13",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "all work as required per condo conversion report #3r-4701.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200406025326",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-06-02",
+      "status_date": "2004-09-15",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "install elctrical, sheetrock walls basement 2 rooms",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200308273163",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-08-27",
+      "status_date": "2003-09-11",
+      "estimated_cost": 22000,
+      "revised_cost": 22000,
+      "description": "work for termite report#40978 items 1b,3a,4a,10a,11a & 11b(flr in item 1b to be replaced w/ p.t.wood",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ELGIN&street_type=PARK&address_number=73",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3502128&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3502&lot=128",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3502128",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42299416276641%2037.770318800002244)%27)",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "loc-sf-call-1908-04-18",
+      "name": "The San Francisco Call, 18 April 1908, p. 10",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1908-04-18/ed-1/seq-10/",
+      "retrieved": "2026-10-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1908-04-18",
+      "kind": "building contract",
+      "description": "Henry Conrad contracted for all work except mantels, gas fixtures and shades on two-storey and basement frame flats, at $5,620.",
+      "source": "loc-sf-call-1908-04-18"
+    }
+  ]
+}

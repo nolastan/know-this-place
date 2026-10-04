@@ -21,6 +21,7 @@ The city's Presidio Heights analysis neighborhood, on the ridge between the Pres
 - [Laurel Street](laurel-street/) — 1 building, built 1920; 1 in the Presidio Heights Historic District.
 - [Locust Street](locust-street/) — 1 building, built 1916; 1 in the Presidio Heights Historic District.
 - [Lyon Street](lyon-street/) — 1 building, built 1885.
+- [Maple Street](maple-street/) — 1 building, built 1907.
 - [Mayfair Drive](mayfair-drive/) — 1 building, built 1953.
 - [Pacific Avenue](pacific-avenue/) — 1 building, built 1912.
 - [Palm Avenue](palm-avenue/) — 2 buildings, built 1920–1921; 2 in the Jordan Park Historic District.

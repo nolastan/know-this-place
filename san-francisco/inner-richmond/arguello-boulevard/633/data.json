@@ -1,0 +1,149 @@
+{
+  "address": "633 Arguello Boulevard, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/arguello-boulevard/633/",
+  "apn": "1544012",
+  "block": "1544",
+  "lot": "012",
+  "eas_baseid": "307532",
+  "coordinates": {
+    "lat": 37.778429,
+    "lng": -122.45905
+  },
+  "parcel": {
+    "year_built": 1908,
+    "units": 2,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 1870,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0000 0633 ARGUELLO            BL0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 592076,
+    "assessed_improvement_value": 394712,
+    "last_sale_date": "2001-09-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Review",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202512010628",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-12-01",
+      "status_date": "2026-09-16",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "asbestos remediation from interior sheetrock joints.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202407317683",
+      "type": "new construction wood frame",
+      "status": "issued",
+      "filed": "2024-09-26",
+      "status_date": "2025-12-11",
+      "estimated_cost": 1750000,
+      "revised_cost": 2400000,
+      "description": "erect 4 stories type va over 1a basement, 4 unit residential building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202407317682",
+      "type": "demolitions",
+      "status": "issued",
+      "filed": "2024-09-26",
+      "status_date": "2025-12-11",
+      "estimated_cost": 15000,
+      "revised_cost": 30000,
+      "description": "demolish type-5 2-unit/2-story residental building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9613563",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-07-26",
+      "status_date": "1997-08-05",
+      "estimated_cost": 9650,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8506185",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-06-13",
+      "status_date": "1985-09-19",
+      "estimated_cost": 7000,
+      "description": "extention of laundry room back stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8308106",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1983-08-18",
+      "status_date": "1983-08-24",
+      "estimated_cost": 500,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ARGUELLO&street_type=BLVD&address_number=633",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1544012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1544&lot=012",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1544012",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "loc-sf-call-1908-03-18",
+      "name": "The San Francisco Call, 18 March 1908, p. 15",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1908-03-18/ed-1/seq-15/",
+      "retrieved": "2026-10-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1908-03-18",
+      "kind": "building contract",
+      "description": "Alfred T. Morris contracted for all work except shades, gas fixtures and basement floor on a cottage, at $1,920.",
+      "source": "loc-sf-call-1908-03-18"
+    }
+  ]
+}
