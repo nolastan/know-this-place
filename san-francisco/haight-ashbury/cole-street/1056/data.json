@@ -1,0 +1,131 @@
+{
+  "address": "1056 Cole Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/cole-street/1056/",
+  "apn": "1278035",
+  "block": "1278",
+  "lot": "035",
+  "eas_baseid": "462620",
+  "coordinates": {
+    "lat": 37.764257,
+    "lng": -122.449351
+  },
+  "parcel": {
+    "year_built": 1909,
+    "units": 1,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "building_area_sqft": 1350,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "NA",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Cole Valley/Parnassus Heights",
+    "analysis_neighborhood": "Haight Ashbury",
+    "property_location_raw": "0000 1056 COLE                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 894000,
+    "assessed_improvement_value": 596000,
+    "last_sale_date": "2020-07-16"
+  },
+  "historic_district": {
+    "name": "Cole Valley Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1900–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201611213201",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-11-21",
+      "status_date": "2017-02-10",
+      "estimated_cost": 50200,
+      "revised_cost": 50200,
+      "description": "new bathroom at location of existing closet and bedroom, update tub in (e) bathroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9704003",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-03-05",
+      "status_date": "1997-03-13",
+      "estimated_cost": 3000,
+      "description": "existing powder rm/bath & kitchen had some partial remodelng",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9704004",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-03-05",
+      "status_date": "1997-07-16",
+      "estimated_cost": 2000,
+      "description": "existing furnace (1052) legalized need permit as per 3r-2503",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9624583",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-12-23",
+      "status_date": "1997-03-06",
+      "estimated_cost": 3000,
+      "revised_cost": 10000,
+      "description": "code improvement physical inspector's report (3r)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "1996–2016",
+    "shown_on_page": 4,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=COLE&street_type=ST&address_number=1056",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1278035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1278&lot=035",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44935100986585%2037.764256545972685)%27)",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "loc-sf-call-1908-05-22",
+      "name": "The San Francisco Call, 22 May 1908, p. 15",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1908-05-22/ed-1/seq-15/",
+      "retrieved": "2026-10-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1908-05-22",
+      "kind": "building contract",
+      "description": "C. Arthur & Son contracted to put up three-storey frame flats, at $7,150.",
+      "source": "loc-sf-call-1908-05-22"
+    }
+  ]
+}

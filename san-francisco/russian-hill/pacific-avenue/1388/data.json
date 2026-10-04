@@ -1,0 +1,112 @@
+{
+  "address": "1388–1390 Pacific Avenue, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/pacific-avenue/1388/",
+  "apn": "0155024",
+  "block": "0155",
+  "lot": "024",
+  "eas_baseid": "448380",
+  "coordinates": {
+    "lat": 37.795648,
+    "lng": -122.418037
+  },
+  "address_range": "1388–1390",
+  "street_numbers_on_parcel": [
+    "1388",
+    "1390"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 1050,
+    "building_area_sqft": 1992,
+    "lot_depth_ft": 60,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "NC-2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "1390 1388 PACIFIC             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 124290,
+    "assessed_improvement_value": 176058
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200406015233",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2004-06-01",
+      "status_date": "2005-05-13",
+      "estimated_cost": 3600,
+      "revised_cost": 3600,
+      "description": "add sittings for tea shop.up to code as follow-floor tile, floor drain, elec plug, plumbing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9715449",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-08-13",
+      "status_date": "1999-03-08",
+      "estimated_cost": 3300,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PACIFIC&street_type=AVE&address_number=1388",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0155024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0155&lot=024",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0155024",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "loc-sf-call-1908-12-19",
+      "name": "The San Francisco Call, 19 December 1908, p. 12",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1908-12-19/ed-1/seq-12/",
+      "retrieved": "2026-10-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1908-12-19",
+      "kind": "alteration",
+      "description": "Martin & Tichter company contracted for all for an additional storey on a building.",
+      "source": "loc-sf-call-1908-12-19"
+    }
+  ]
+}

@@ -24,6 +24,7 @@ and the upper reaches of Grant Avenue, which was formerly Dupont Street.
 - [Grant Avenue](grant-avenue/) — Three 1907 flats on the Dupont Street site of the First Colored Baptist Church's first building.
 - [Green Street](green-street/) — 16 buildings, built 1907–2001; 8 in the Upper Grant Avenue Historic District.
 - [Greenwich Street](greenwich-street/) — 6 buildings, built 1907–1933.
+- [Houston Street](houston-street/) — 1 building, built 1907.
 - [Jasper Place](jasper-place/) — 18 buildings, built 1900–1913; 18 in the Upper Grant Avenue Historic District.
 - [Jefferson Street](jefferson-street/) — 1 building, built 1966.
 - [Kearny Street](kearny-street/) — 5 buildings, built 1906–1909; 2 in the Jackson Square Historic District Extension.

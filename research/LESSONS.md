@@ -2625,3 +2625,31 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   figure as the frontage refused a correct match. *Apply a frontage test only
   where a dimension is illegible, and read the frontage off the direction that
   runs along the named street.*
+- **A quote that starts clean can end on a private name.** The 1908 quotes
+  start at "with", which keeps the owner out — but an entry whose amount the
+  OCR garbled, cut at the next entry's "with", carries that next entry's owner
+  at its tail ("…by W 60; Mary A. McCarthy"). 126 of 2,204 needed a hand cut.
+  *End a list entry's quote at the first separator after its location that a
+  figure follows, else at the first ";" after the location, and scan every
+  quote's tail for a capitalised name before it is written.*
+  ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **A list whose OCR loses both its heading and its amounts is invisible to a
+  locator keyed on either.** Five 1908 days' lists were missed until a third
+  shape was added: "with" followed by a dash and a work word ("— To erect").
+  And an entry that lost its own "with" falls into the gap before the next
+  one. *Locate on three shapes, and scan the gaps between cut segments for
+  "line of", "corner" and "$" before calling a block read.*
+  ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **Group by parcel before choosing one entry per building.** A corner lot
+  came back on two streets (175 Post and 60 Maiden Lane), so grouping the
+  1908 placements by path published two entries for one building and
+  `check.py` refused the file. *Group a batch's resolutions by APN, give the
+  group the page the parcel already has, then pick its one entry.*
+- **A condominium-mapped parcel's point is on its address, not its parcel.**
+  Fourteen 1908 parcels the resolver took whole (`sole_parcel_for_address`)
+  have every EAS row filed under unit parcels, so `manifest` found no row on
+  the parcel with a point and wrote an entry with no `lat` or `zip`;
+  `seed-list` died after seeding 45 pages. `manifest` now falls back to the
+  EAS row at the resolution's `eas_address`. *A seeder crash mid-list leaves
+  the pages it wrote; regenerate the manifest (it skips pages on disk) and
+  run it again rather than starting over.*

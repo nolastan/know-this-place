@@ -29,6 +29,7 @@ A steep district above North Beach and the waterfront, known for its cable-car g
 - [North Point Street](north-point-street/) — 1 building, built 1978.
 - [Pacific Avenue](pacific-avenue/) — 5 buildings, built 1914–2014.
 - [Polk Street](polk-street/) — 1 building, built 1924.
+- [Russell Street](russell-street/) — 2 buildings, built 1906–1907; 2 in the Russell Street Historic District.
 - [Taylor Street](taylor-street/) — Three flats of 1907 recorded as where Joe DiMaggio grew up.
 - [Union Street](union-street/) — 9 buildings, built 1906–1912.
 - [Vallejo Street](vallejo-street/) — 2 buildings, built 1911–2004.

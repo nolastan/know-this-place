@@ -1,0 +1,116 @@
+{
+  "address": "325 Lake Street, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/lake-street/325/",
+  "apn": "1364040",
+  "block": "1364",
+  "lot": "040",
+  "eas_baseid": "301170",
+  "coordinates": {
+    "lat": 37.7865,
+    "lng": -122.463064
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 3200,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0327 0325 LAKE                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 70666,
+    "assessed_improvement_value": 223853
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202507140695",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-07-14",
+      "status_date": "2025-07-22",
+      "estimated_cost": 12500,
+      "revised_cost": 12500,
+      "description": "partial removal and application of roofing system on the rear deck only. remove existing roofing system and haul away debris. install new base sheet and mid-ply using heat activated adhesive. install a layer of granulated refrlective cap sheet. install new flashings.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9712827",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-07-11",
+      "status_date": "1999-12-27",
+      "estimated_cost": 11800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9516406",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-10-04",
+      "status_date": "1996-02-04",
+      "estimated_cost": 4600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LAKE&street_type=ST&address_number=325",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1364040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1364&lot=040",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1364040",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "loc-sf-call-1908-11-26",
+      "name": "The San Francisco Call, 26 November 1908, p. 15",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1908-11-26/ed-1/seq-15/",
+      "retrieved": "2026-10-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1908-11-26",
+      "kind": "building contract",
+      "description": "Fred Horstmeyer contracted to put up a two-storey and basement frame building.",
+      "source": "loc-sf-call-1908-11-26"
+    }
+  ]
+}

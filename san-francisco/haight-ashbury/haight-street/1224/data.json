@@ -1,0 +1,124 @@
+{
+  "address": "1224–1228 Haight Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/haight-street/1224/",
+  "apn": "1234009",
+  "block": "1234",
+  "lot": "009",
+  "eas_baseid": "297984",
+  "coordinates": {
+    "lat": 37.770851,
+    "lng": -122.44257
+  },
+  "address_range": "1224–1228",
+  "street_numbers_on_parcel": [
+    "1224",
+    "1226",
+    "1228"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 3,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 3,
+    "lot_area_sqft": 3437.5,
+    "building_area_sqft": 4800,
+    "lot_depth_ft": 37.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Haight Ashbury",
+    "analysis_neighborhood": "Haight Ashbury",
+    "property_location_raw": "1228 1224 HAIGHT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 293934,
+    "assessed_improvement_value": 318606
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Buena Vista North Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1870–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201001054199",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-01-05",
+      "status_date": "2010-01-15",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "repair 4 steps @ back stair, repair/patch hallway plaster, install one kitchen cabinet, work in #1224.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2010–2014",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAIGHT&street_type=ST&address_number=1224",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1234009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1234&lot=009",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1234009",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44257018017919%2037.77085089420278)%27)",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "loc-sf-call-1908-08-12",
+      "name": "The San Francisco Call, 12 August 1908, p. 5",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1908-08-12/ed-1/seq-5/",
+      "retrieved": "2026-10-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1908-08-12",
+      "kind": "building contract",
+      "description": "L. Segale and A. Debenedetti contracted for all work except mantels, dining room gas grates, finish hardware, gas and electric fixtures on a three-storey and basement frame building, at $7,000.",
+      "source": "loc-sf-call-1908-08-12"
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "address": "1520 California Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/california-street/1520/",
+  "apn": "0644009",
+  "block": "0644",
+  "lot": "009",
+  "eas_baseid": "286853",
+  "coordinates": {
+    "lat": 37.790969,
+    "lng": -122.419451
+  },
+  "parcel": {
+    "year_built": 1908,
+    "units": 13,
+    "stories": 4,
+    "rooms": 31,
+    "bathrooms": 13,
+    "lot_area_sqft": 2391,
+    "building_area_sqft": 5649,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "POLK",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Nob Hill",
+    "property_location_raw": "0000 1520 CALIFORNIA          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 677791,
+    "assessed_improvement_value": 827172,
+    "last_sale_date": "1996-01-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202602206225",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-02-20",
+      "status_date": "2026-03-10",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "reroofing no hot works",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201808167598",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-08-16",
+      "status_date": "2018-09-14",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "replace in like kind less than 25% of the back stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201511062010",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-11-06",
+      "status_date": "2018-01-30",
+      "estimated_cost": 70000,
+      "revised_cost": 70000,
+      "description": "soft story retrofit per sfbc chapter 34b, 2012 iebc appendix a-4, adding shear walls to ground floor. n/a ordinance #155-13",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200905218946",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-05-21",
+      "status_date": "2010-05-20",
+      "estimated_cost": 1275,
+      "revised_cost": 1275,
+      "description": "repair dry rotted rear stairway treads and roof decking less than 50% replacement. no structural work. owner/builder. minor leaking replacement at roof deck.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200206249827",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-06-24",
+      "status_date": "2002-07-10",
+      "estimated_cost": 9800,
+      "revised_cost": 9800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9617818",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-09-19",
+      "status_date": "1997-03-19",
+      "estimated_cost": 6000,
+      "description": "termite and dry rot repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9306557",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-04-21",
+      "status_date": "1993-10-21",
+      "estimated_cost": 5100,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8301548",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-02-24",
+      "status_date": "1983-03-24",
+      "estimated_cost": 1600,
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 11,
+    "range": "1983–2026",
+    "shown_on_page": 8,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CALIFORNIA&street_type=ST&address_number=1520",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0644009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0644&lot=009",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0644009",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "loc-sf-call-1908-01-25",
+      "name": "The San Francisco Call, 25 January 1908, p. 13",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1908-01-25/ed-1/seq-13/",
+      "retrieved": "2026-10-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1908-01-25",
+      "kind": "building contract",
+      "description": "Frank Neidick and Boscus Bros. contracted for carpentry, gas fitting, sewer work, water pipes, boilers and plumbing on three-storey frame flats, at $4,071.",
+      "source": "loc-sf-call-1908-01-25"
+    }
+  ]
+}

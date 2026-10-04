@@ -1,0 +1,121 @@
+{
+  "address": "562 42nd Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/42nd-avenue/562/",
+  "apn": "1503031",
+  "block": "1503",
+  "lot": "031",
+  "eas_baseid": "483995",
+  "coordinates": {
+    "lat": 37.77804,
+    "lng": -122.502528
+  },
+  "parcel": {
+    "year_built": 1908,
+    "units": 2,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 3,
+    "bedrooms": 2,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 1604,
+    "basement_area_sqft": 333,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "2 Dwellings on 1 Parcel 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Outer Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0562A0562 42ND                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1037860,
+    "assessed_improvement_value": 691906,
+    "last_sale_date": "2022-01-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M384688",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-04-11",
+      "status_date": "2013-04-11",
+      "revised_cost": 267,
+      "description": "change address from 562-1/2 42nd ave. to 562a 42nd ave at block 1503, lot 031.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201304104244",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-04-10",
+      "status_date": "2013-11-15",
+      "estimated_cost": 6000,
+      "revised_cost": 40000,
+      "description": "rear bldg - remove sheetrock through out, remove & replace bath, kitchen fixtures, remove & new electrical, replace windows not visible from the street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201304033701",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-04-03",
+      "status_date": "2013-11-15",
+      "estimated_cost": 35000,
+      "revised_cost": 147905,
+      "description": "front bldg - remove sheetrock through out, remove & replace bath, kitchen, remove & replace composite roof shingles, replace sheet rock / remove & replace skylights, new electrical and plumbing under separate permit. replace 3 windows at front.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=42ND&street_type=AVE&address_number=562",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1503031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1503&lot=031",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1503031",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "loc-sf-call-1908-11-22",
+      "name": "The San Francisco Call, 22 November 1908, p. 45",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1908-11-22/ed-1/seq-45/",
+      "retrieved": "2026-10-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1908-11-22",
+      "kind": "building contract",
+      "description": "W. L. Butler contracted for all work except fireplaces on a one-and-a-half-storey frame residence, at $1,725.",
+      "source": "loc-sf-call-1908-11-22"
+    }
+  ]
+}

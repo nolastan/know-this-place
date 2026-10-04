@@ -1627,6 +1627,16 @@ def build_manifest(city: City, data: dict) -> list:
                                    (r.get("address_number") or "").upper())
                          for r in rows if (r.get("street_name") or "") != eas_name})
         pick = next((r for r in same if r.get("latitude")), None) or (same[0] if same else None)
+        if not pick or not pick.get("latitude"):
+            # A condominium-mapped parcel that EAS files under its unit parcels:
+            # none of the parcel's own rows carries the point, but the address
+            # the resolution placed does. Without it the seeder dies on 'lat'.
+            placed = parse_address(res.get("eas_address"))
+            if placed:
+                pick = next((r for r in city.by_addr.get(
+                    (placed["street_name"], placed.get("street_type") or "",
+                     (placed["numbers"][0] or "").upper()), [])
+                    if r.get("latitude")), None) or pick
         entry = {"apn": apn, "city": city_slug, "area": area, "street_slug": slug,
                  "street_name": eas_name, "street_type": stype,
                  "street_display": street_display(eas_name, stype),

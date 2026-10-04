@@ -1,0 +1,134 @@
+{
+  "address": "651–653 3rd Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/3rd-avenue/651/",
+  "apn": "1641013",
+  "block": "1641",
+  "lot": "013",
+  "eas_baseid": "434098",
+  "coordinates": {
+    "lat": 37.776398,
+    "lng": -122.461054
+  },
+  "address_range": "651–653",
+  "street_numbers_on_parcel": [
+    "651",
+    "653"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 3,
+    "stories": 3,
+    "rooms": 14,
+    "bathrooms": 3,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 4224,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0653 0651 03RD                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 319342,
+    "assessed_improvement_value": 296531,
+    "last_sale_date": "2024-09-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202411124785",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-11-12",
+      "status_date": "2024-11-25",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "fire place demolition on all three stories.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202411124826",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-11-12",
+      "status_date": "2024-11-25",
+      "estimated_cost": 20000,
+      "revised_cost": 36000,
+      "description": "kitchen remodel in-kind. no wall removed or constructed, no change in plumbing fixture count.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201509046297",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-09-04",
+      "status_date": "2015-12-09",
+      "estimated_cost": 28900,
+      "revised_cost": 28900,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9007143",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-04-12",
+      "status_date": "1991-07-19",
+      "estimated_cost": 4500,
+      "description": "anchor bolt garage wall strap post-beam in garage",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=03RD&street_type=AVE&address_number=651",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1641013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1641&lot=013",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1641013",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "loc-sf-call-1908-11-20",
+      "name": "The San Francisco Call, 20 November 1908, p. 4",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1908-11-20/ed-1/seq-4/",
+      "retrieved": "2026-10-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1908-11-20",
+      "kind": "building contract",
+      "description": "W. C. Boswell contracted for all work except gas and electric fixtures, shades, excavation, concrete and brick work on a two-storey frame building, at $5,089.",
+      "source": "loc-sf-call-1908-11-20"
+    }
+  ]
+}

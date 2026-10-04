@@ -1,0 +1,97 @@
+{
+  "address": "828 Vallejo Street, San Francisco, CA 94133",
+  "path": "/san-francisco/chinatown/vallejo-street/828/",
+  "apn": "0129010",
+  "block": "0129",
+  "lot": "010",
+  "eas_baseid": "278235",
+  "coordinates": {
+    "lat": 37.7985,
+    "lng": -122.411044
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 2,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 1530,
+    "building_area_sqft": 1800,
+    "lot_depth_ft": 76.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "North Beach",
+    "analysis_neighborhood": "Chinatown",
+    "property_location_raw": "0830 0828 VALLEJO             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 47312,
+    "assessed_improvement_value": 70642
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201901220838",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-01-22",
+      "status_date": "2019-01-22",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VALLEJO&street_type=ST&address_number=828",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0129010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0129&lot=010",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0129010",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "loc-sf-call-1908-06-30",
+      "name": "The San Francisco Call, 30 June 1908, p. 15",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1908-06-30/ed-1/seq-15/",
+      "retrieved": "2026-10-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1908-06-30",
+      "kind": "building contract",
+      "description": "A. Pedroni contracted for all work except window shades and gas fixtures on a two-storey frame building, at $2,750.",
+      "source": "loc-sf-call-1908-06-30"
+    }
+  ]
+}

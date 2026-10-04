@@ -1,0 +1,109 @@
+{
+  "address": "667 5th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/5th-avenue/667/",
+  "apn": "1639016",
+  "block": "1639",
+  "lot": "016",
+  "eas_baseid": "311736",
+  "coordinates": {
+    "lat": 37.776026,
+    "lng": -122.463178
+  },
+  "parcel": {
+    "year_built": 1908,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2100,
+    "basement_area_sqft": 250,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0000 0667 05TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 303377,
+    "assessed_improvement_value": 208023,
+    "last_sale_date": "1992-09-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9220683",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-11-30",
+      "status_date": "1993-01-06",
+      "estimated_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8510224",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-09-17",
+      "status_date": "1985-11-05",
+      "estimated_cost": 1913,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=05TH&street_type=AVE&address_number=667",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1639016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1639&lot=016",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1639016",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "loc-sf-call-1908-01-25",
+      "name": "The San Francisco Call, 25 January 1908, p. 13",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1908-01-25/ed-1/seq-13/",
+      "retrieved": "2026-10-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1908-01-25",
+      "kind": "building contract",
+      "description": "C. E. Doty contracted to put up a one-storey and basement frame building, at $2,700.",
+      "source": "loc-sf-call-1908-01-25"
+    }
+  ]
+}

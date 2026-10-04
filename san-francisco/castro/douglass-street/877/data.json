@@ -1,0 +1,150 @@
+{
+  "address": "877 Douglass Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/douglass-street/877/",
+  "apn": "6540045",
+  "block": "6540",
+  "lot": "045",
+  "eas_baseid": "401773",
+  "coordinates": {
+    "lat": 37.7498,
+    "lng": -122.438113
+  },
+  "parcel": {
+    "year_built": 1910,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "building_area_sqft": 1206,
+    "basement_area_sqft": 26,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "NA",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 0877 DOUGLASS            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 93212,
+    "assessed_improvement_value": 218574
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201904178211",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-04-17",
+      "status_date": "2019-08-07",
+      "estimated_cost": 13900,
+      "revised_cost": 13900,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201606200334",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-06-20",
+      "status_date": "2016-12-27",
+      "estimated_cost": 1028,
+      "revised_cost": 1028,
+      "description": "replace 1 bath window not visible. no structural changes max ufactor .32 vinyl",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201404284297",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-04-28",
+      "status_date": "2015-02-09",
+      "estimated_cost": 75000,
+      "revised_cost": 40000,
+      "description": "kitchen remodel that involves removig two walls & adding new windows at the rear of the property. new gas fireplaces in living room & dining room. open wall between living room & bedroom. no change to front facade or overall area. no work on 1st floor or basement.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201210101659",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-10-10",
+      "status_date": "2013-06-28",
+      "estimated_cost": 1973,
+      "revised_cost": 1973,
+      "description": "replace 2 windows no structural changes, not visible from the street max u factor .40",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200807096297",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-07-09",
+      "status_date": "2008-08-08",
+      "estimated_cost": 6750,
+      "revised_cost": 6750,
+      "description": "one unit only. install 8 replacement windows: 1 wood window visible from street. 7 vinyl windows, not visable from street. all replace in kind. no change in size. u value .38-.52",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200411229865",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-11-22",
+      "status_date": "2005-03-03",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "repair some stairs & landing in upper level, in rear of building. (less than 50 percent of the stair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOUGLASS&street_type=ST&address_number=877",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6540045&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6540&lot=045",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6540045",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "loc-sf-call-1908-12-22",
+      "name": "The San Francisco Call, 22 December 1908, p. 13",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1908-12-22/ed-1/seq-13/",
+      "retrieved": "2026-10-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1908-12-22",
+      "kind": "building contract",
+      "description": "Robert Lenord contracted to put up a two-storey frame building of four flats, at $5,300.",
+      "source": "loc-sf-call-1908-12-22"
+    }
+  ]
+}

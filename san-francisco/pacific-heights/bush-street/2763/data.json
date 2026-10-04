@@ -1,0 +1,139 @@
+{
+  "address": "2763 Bush Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/bush-street/2763/",
+  "apn": "1053028",
+  "block": "1053",
+  "lot": "028",
+  "eas_baseid": "293914",
+  "coordinates": {
+    "lat": 37.78556,
+    "lng": -122.44268
+  },
+  "parcel": {
+    "year_built": 1908,
+    "units": 6,
+    "stories": 3,
+    "rooms": 30,
+    "bathrooms": 6,
+    "lot_area_sqft": 3781,
+    "building_area_sqft": 7335,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Lower Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "0000 2763 BUSH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 547379,
+    "assessed_improvement_value": 482734
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202603167647",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-03-16",
+      "status_date": "2026-04-06",
+      "estimated_cost": 8900,
+      "revised_cost": 8900,
+      "description": "reroofing. no hot works.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202510076919",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-10-07",
+      "status_date": "2026-01-14",
+      "estimated_cost": 5000,
+      "revised_cost": 10000,
+      "description": "comply with nov #202287708. replace existing deterriorated rear stairs in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202305087277",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2023-05-08",
+      "status_date": "2025-09-26",
+      "estimated_cost": 20000,
+      "revised_cost": 0,
+      "description": "to comply with nov bid #202287708 dated 2/22/2022, replace back stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201004220868",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-04-22",
+      "status_date": "2010-04-28",
+      "estimated_cost": 250,
+      "revised_cost": 500,
+      "description": "one unit: comply with notice of violation 201030173. install (n) base bd. elec. heater (50,000 btu) in living rm. wall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9517023",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-10-12",
+      "status_date": "1996-10-02",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BUSH&street_type=ST&address_number=2763",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1053028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1053&lot=028",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1053028",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "loc-sf-call-1908-10-30",
+      "name": "The San Francisco Call, 30 October 1908, p. 15",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1908-10-30/ed-1/seq-15/",
+      "retrieved": "2026-10-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1908-10-30",
+      "kind": "building contract",
+      "description": "W. O. Peterson et al. contracted to put up a three-storey and basement building of six flats, at $11,823.",
+      "source": "loc-sf-call-1908-10-30"
+    }
+  ]
+}
