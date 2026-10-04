@@ -1,0 +1,96 @@
+{
+  "address": "1348–1350 Green Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/green-street/1348/",
+  "apn": "0548009",
+  "block": "0548",
+  "lot": "009",
+  "eas_baseid": "423940",
+  "coordinates": {
+    "lat": 37.798219,
+    "lng": -122.421387
+  },
+  "address_range": "1348–1350",
+  "street_numbers_on_parcel": [
+    "1348",
+    "1350"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 4,
+    "stories": 2,
+    "rooms": 16,
+    "bathrooms": 4,
+    "lot_area_sqft": 3624,
+    "building_area_sqft": 3540,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Russian Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "1350 1348 GREEN               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 98315,
+    "assessed_improvement_value": 85360,
+    "assessed_fixtures_value": 267
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2013–2019",
+    "shown_on_page": 0,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GREEN&street_type=ST&address_number=1348",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0548009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0548&lot=009",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0548009",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "loc-sf-call-1907-09-05",
+      "name": "The San Francisco Call, 5 September 1907, p. 15",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1907-09-05/ed-1/seq-15/",
+      "retrieved": "2026-10-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1907-09-05",
+      "kind": "building contract",
+      "description": "A builder contracted for carpentry, plastering, mill and stair work, plumbing, painting and electric work on a two-storey and basement frame building.",
+      "source": "loc-sf-call-1907-09-05"
+    }
+  ]
+}

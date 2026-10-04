@@ -1,0 +1,79 @@
+{
+  "address": "580 Greenwich Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/greenwich-street/580/",
+  "apn": "0077051",
+  "block": "0077",
+  "lot": "051",
+  "eas_baseid": "462251",
+  "coordinates": {
+    "lat": 37.802644,
+    "lng": -122.409095
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 3,
+    "rooms": 4,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "building_area_sqft": 1481,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "WOO",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Telegraph Hill",
+    "analysis_neighborhood": "North Beach",
+    "property_location_raw": "0000 0580 GREENWICH           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 155103,
+    "assessed_improvement_value": 104604
+  },
+  "permits": [
+    {
+      "number": "M35335",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-11-14",
+      "status_date": "2005-11-14",
+      "revised_cost": 0,
+      "description": "verification of addresses",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GREENWICH&street_type=ST&address_number=580",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0077051&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0077&lot=051",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "loc-sf-call-1907-03-01",
+      "name": "The San Francisco Call, 1 March 1907, p. 4",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1907-03-01/ed-1/seq-4/",
+      "retrieved": "2026-10-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1907-03-01",
+      "kind": "building contract",
+      "description": "Fauth & Klein contracted to put up a two-storey frame building, at $4,500.",
+      "source": "loc-sf-call-1907-03-01"
+    }
+  ]
+}

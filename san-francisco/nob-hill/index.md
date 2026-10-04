@@ -7,6 +7,7 @@ that neighborhood.
 
 ## Streets documented so far
 
+- [Bernard Street](bernard-street/) — 1 building, built 1905.
 - [Broadway](broadway/) — 1 building, built 1907.
 - [Bush Street](bush-street/) — 8 buildings, built 1900–1985.
 - [California Street](california-street/) — 1 building, built 1910.

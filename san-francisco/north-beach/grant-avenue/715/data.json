@@ -1,0 +1,141 @@
+{
+  "address": "715–717 Grant Avenue, San Francisco, CA 94108",
+  "path": "/san-francisco/north-beach/grant-avenue/715/",
+  "apn": "0225005",
+  "block": "0225",
+  "lot": "005",
+  "eas_baseid": "458442",
+  "coordinates": {
+    "lat": 37.793648,
+    "lng": -122.406364
+  },
+  "address_range": "715–717",
+  "street_numbers_on_parcel": [
+    "715",
+    "717"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 3,
+    "stories": 3,
+    "rooms": 12,
+    "lot_area_sqft": 1372,
+    "building_area_sqft": 4452,
+    "use": "Commercial Office",
+    "property_class": "Office",
+    "construction_type_code": "C",
+    "zoning": "CVR",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Financial District North",
+    "analysis_neighborhood": "Chinatown",
+    "property_location_raw": "0000 0717 GRANT               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 289241,
+    "assessed_improvement_value": 171633
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1907",
+    "survey_name": "ONG KO MET BENEVOLENT ASSOCIATION",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Chinatown Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1930/1938",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201006104280",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-06-10",
+      "status_date": "2010-10-07",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "replace existing wood windows (4) double hung w/new all wood window by \"marvin\" as insert double hung windows w/low e ii, insulating glass w/ simulated divided lite w/space bar. all windows located at 3rd floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9003723",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-02-26",
+      "status_date": "1990-04-26",
+      "estimated_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8209840",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-11-30",
+      "status_date": "1983-03-04",
+      "estimated_cost": 1900,
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1982–2010",
+    "shown_on_page": 3,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GRANT&street_type=AVE&address_number=715",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0225005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0225&lot=005",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0225005",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40636378053918%2037.793647692448786)%27)",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "loc-sf-call-1907-02-22",
+      "name": "The San Francisco Call, 22 February 1907, p. 13",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1907-02-22/ed-1/seq-13/",
+      "retrieved": "2026-10-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1907-02-22",
+      "kind": "building contract",
+      "description": "A builder contracted to put up a three-storey and basement building for James D. and Mary L. Phelan, at $14,670.",
+      "source": "loc-sf-call-1907-02-22"
+    }
+  ]
+}

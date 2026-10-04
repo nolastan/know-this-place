@@ -15,7 +15,7 @@ A district on the rise between the Richmond and the Panhandle, around the Univer
 - [Grove Street](grove-street/) — 1 building, built 1906; 1 in the Panhandle Historic District.
 - [Hayes Street](hayes-street/) — 1 building, built 1908; 1 in the Southern Pacific Company Hospital Historic District.
 - [Loraine Court](loraine-court/) — 1 building, built 1900.
-- [McAllister Street](mcallister-street/) — 1 building, built 1900.
+- [Mcallister Street](mcallister-street/) — 1 building, built 1900.
 - [Stanyan Street](stanyan-street/) — 1 building.
 - [Turk Boulevard](turk-boulevard/) — 1 building.
 - [Vega Street](vega-street/) — 1 building.

@@ -1,0 +1,131 @@
+{
+  "address": "1365–1373 California Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/california-street/1365/",
+  "apn": "0251025",
+  "block": "0251",
+  "lot": "025",
+  "eas_baseid": "424245",
+  "coordinates": {
+    "lat": 37.790746,
+    "lng": -122.416791
+  },
+  "address_range": "1365–1373",
+  "street_numbers_on_parcel": [
+    "1365",
+    "1367",
+    "1369",
+    "1371",
+    "1373"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 8,
+    "stories": 3,
+    "rooms": 24,
+    "bathrooms": 8,
+    "lot_area_sqft": 3950,
+    "building_area_sqft": 5736,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Downtown",
+    "analysis_neighborhood": "Nob Hill",
+    "property_location_raw": "1373 1365 CALIFORNIA          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 115726,
+    "assessed_improvement_value": 55416
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202108126324",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2021-08-12",
+      "status_date": "2026-01-23",
+      "estimated_cost": 160000,
+      "revised_cost": 160000,
+      "description": "soft story retrofit per sfebc chapter 4d 2019 cebc appendix a-4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201009070270",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-09-07",
+      "status_date": "2010-10-05",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8819349",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-12-07",
+      "status_date": "1988-12-19",
+      "estimated_cost": 1500,
+      "description": "repair back stairways, treads, posts, stringers, landing jst",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "1988–2021",
+    "shown_on_page": 3,
+    "note": "4 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CALIFORNIA&street_type=ST&address_number=1365",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0251025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0251&lot=025",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0251025",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "loc-sf-call-1907-08-16",
+      "name": "The San Francisco Call, 16 August 1907, p. 15",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1907-08-16/ed-1/seq-15/",
+      "retrieved": "2026-10-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1907-08-16",
+      "kind": "building contract",
+      "description": "Whitman & McVeagh Co. contracted to put up a two-storey and basement frame building, at $9,800.",
+      "source": "loc-sf-call-1907-08-16"
+    }
+  ]
+}

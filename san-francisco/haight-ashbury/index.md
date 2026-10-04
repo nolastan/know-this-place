@@ -22,6 +22,7 @@ The neighborhood at the east end of Golden Gate Park, at the centre of San Franc
 - [Masonic Avenue](masonic-avenue/) — 2 buildings, built 1903–1906; 2 in the Ashbury Heights Historic District.
 - [Oak Street](oak-street/) — 1 building, built 1900.
 - [Page Street](page-street/) — 1 building, built 1900; 1 in the Buena Vista North Historic District.
+- [Piedmont Street](piedmont-street/) — 1 building, built 1909.
 - [Potomac Street](potomac-street/) — 1 building, built 1900; 1 in the Duboce Park Historic District.
 - [Rivoli Street](rivoli-street/) — 1 building, built 1911; 1 in the Cole Valley Historic District.
 - [Scott Street](scott-street/) — 1 building, built 1900.
