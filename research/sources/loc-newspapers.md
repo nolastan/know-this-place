@@ -98,14 +98,14 @@ Issue counts per year; a year split across batches needs all of them.
 | | 1897 | `fredsplace_ver01` (152), `idyllwild_ver01` (212) |
 | | 1898 | `ahwahnee_ver01` (365) |
 | | 1899 | `carlsbad` (46), `exeter_ver01` (181), `joshuaTree` (137) |
-| | 1900–1905 | `albion_ver01`, `brea_ver01`, `carmel_ver01`, `darwin_ver01`, `felix_ver01`, `plasse_ver01`, `elderwood_ver02` (listings only; years not mapped), `quincy_ver01` (1901: 61, 1904: 60), `oasis_ver01` (1905: 89) |
+| | 1900–1905 | `albion_ver01` (from January 1900), `brea_ver01` (from May 1900), `carmel_ver01` (from August 1901), `darwin_ver01` (October 1901, 1903, March–November 1904), `felix_ver01` (September 1903, May, June and August 1905), `plasse_ver01` (January 1905), `quincy_ver01` (November–December 1901, December 1904), `oasis_ver01` (February–March 1905) — reel folders mapped 2026-10-05; **no batch holds January–March 1906** |
 | | 1906–1907 | `hercules_ver01` (275 + 92), `indio_ver01` (1907: 245), `mecca_ver01` (1907: 28) — **the daily Building Contracts lists read in full** for 1907 (2026-10-04) and for 1906 as far as `hercules` holds it, 1 April–31 December (2026-10-05) |
 | | **1908** | `indio` (90), `jenner_ver01` (31), `llano_ver01` (245) — **fetched 2026-10-04**; **the daily Building Contracts lists read in full** 2026-10-04 |
 | | **1909** | `jenner` (92), `llano` (61), `mecca` (151), `needles_ver01` (61) — **all four fetched 2026-10-03**; **the daily Building Contracts lists read in full** 2026-10-03 |
 | | **1910** | `curiv_jenner_ver01` (90), `curiv_klamath_ver01` (122), `curiv_mecca_ver01` (122), `curiv_needles_ver01` (31) — **all four fetched 2026-09-23**, again 2026-10-03; **read in full** (January–June, July–December, and twice more for owner-only corner/offset entries with and without a lot, #407 and #412), and **the daily Building Contracts lists read in full** 2026-10-03 |
 | | **1911** | `curiv_betteravia_ver02` (Jan–Aug, 5,901 pages), `curiv_angwin_ver02` (Sep–Dec, 2,996 pages) — **both on disk** |
-| | **1912** | `angwin` (106), `calipatria_ver03` (183), `dardanelle_ver01` (64) — 9,693 pages, **all three fetched 2026-09-23**; nothing after 15 December |
-| | 1913 | `dardanelle` (15: 1–15 February), `grimes_ver01` (132: 16 July–8 December) — **both fetched 2026-09-23**; January, March to mid-July and the rest of December are in neither, and in no other batch: all 79 `curiv_` batch listings were checked for `sn85066387` on 2026-09-23 and every one that holds the *Call* is in this table |
+| | **1912** | `angwin` (106), `calipatria_ver03` (183), `dardanelle_ver01` (64) — 9,693 pages, **all three fetched 2026-09-23**; nothing after 15 December in these three — 16–31 December is in `curiv_elderwood_ver02` (see 1913) |
+| | 1913 | `dardanelle` (15: 1–15 February), `grimes_ver01` (132: 16 July–8 December) — **both fetched 2026-09-23**; and **`curiv_elderwood_ver02`** (196 issues: 16–31 December 1912 and 1 January–15 July 1913, all but 1–15 February) — **fetched 2026-10-05; the daily Building Contracts lists read in full**. The 2026-09-23 check that called these months "in no batch" missed elderwood, which this table had filed under 1900–1905 unmapped: map a batch by its reel folders before ruling a year out |
 | *Morning Call* `sn94052989` | 1890–1895 | `kaweah_ver01`, `hemet_ver01`, `garberville_ver01`, `exeter`, `idyllwild`, `oakland_ver01`, `pescadero_ver01` |
 
 ### The 1911 Real Estate and Financial Section
