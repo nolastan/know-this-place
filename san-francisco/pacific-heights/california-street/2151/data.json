@@ -1,0 +1,140 @@
+{
+  "address": "2151 California Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/california-street/2151/",
+  "apn": "0651021",
+  "block": "0651",
+  "lot": "021",
+  "eas_baseid": "286986",
+  "coordinates": {
+    "lat": 37.789114,
+    "lng": -122.42976
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 8,
+    "stories": 2,
+    "rooms": 18,
+    "bathrooms": 8,
+    "lot_area_sqft": 3789,
+    "building_area_sqft": 4270,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Lower Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "0000 2151 CALIFORNIA          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1205808,
+    "assessed_improvement_value": 803872,
+    "assessed_fixtures_value": 31,
+    "last_sale_date": "2011-12-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201507141369",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-07-14",
+      "status_date": "2016-06-01",
+      "estimated_cost": 48000,
+      "revised_cost": 66000,
+      "description": "remodel existing bath in one unit. remodel existing kitchen and bath in two units. no structural work. no change to wall and layout. all work in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201211164390",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-11-16",
+      "status_date": "2013-12-12",
+      "estimated_cost": 5000,
+      "revised_cost": 2000,
+      "description": "revision to pa# 201206253361 - replace rear portion of g/f in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201206253361",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-06-25",
+      "status_date": "2013-12-12",
+      "estimated_cost": 210000,
+      "revised_cost": 260000,
+      "description": "(n) conc. slab on grade & foundation at ground level; lateral upgrade (voluntary) at ground level; (n) rear deck for units; interior remodel of two units at ground level.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200010052448",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-10-05",
+      "status_date": "2001-04-05",
+      "estimated_cost": 15900,
+      "revised_cost": 15900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "2000–2016",
+    "shown_on_page": 4,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CALIFORNIA&street_type=ST&address_number=2151",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0651021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0651&lot=021",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0651021",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "loc-sf-call-1913-07-09",
+      "name": "The San Francisco Call, 9 July 1913, p. 17",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-07-09/ed-1/seq-17/",
+      "retrieved": "2026-10-05"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1913-07-09",
+      "kind": "alteration",
+      "description": "J. Harold Johnson contracted for alterations to a two-storey and basement frame dwelling, at $2,770.",
+      "source": "loc-sf-call-1913-07-09",
+      "cost": 2770,
+      "lot_as_recorded": "27:6 by 137:6",
+      "cross_streets": "S line of California Street, 164:11 feet E of Buchanan, lot 27:6 by 137:6"
+    }
+  ]
+}

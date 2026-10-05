@@ -1,0 +1,130 @@
+{
+  "address": "558 29th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/29th-avenue/558/",
+  "apn": "1516026",
+  "block": "1516",
+  "lot": "026",
+  "eas_baseid": "306404",
+  "coordinates": {
+    "lat": 37.778749,
+    "lng": -122.488602
+  },
+  "parcel": {
+    "year_built": 1913,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1395,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0558 29TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 45245,
+    "assessed_improvement_value": 35551
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201112150764",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-12-15",
+      "status_date": "2012-01-10",
+      "estimated_cost": 4120,
+      "revised_cost": 4120,
+      "description": "structural strengthening at grnd flr/ garage 5/8\" threded rod, embedment,block over (e) mudsill, 5 ply nailed, top of wall to 1st flr rim joist every 16\"",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201006154565",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-06-15",
+      "status_date": "2010-08-05",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200801243136",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-01-24",
+      "status_date": "2008-04-16",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "refer to application #200801142377 - additional damage found at front stair (more than 50%). replaced in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200801142377",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-01-14",
+      "status_date": "2008-04-16",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "repair to front stairs, repair current damage, install new membrane. less than 50% of structure. rpovide handrail at 34\"-38\" above nosing of step with 1 1/4 \" - 2\" grip.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=29TH&street_type=AVE&address_number=558",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1516026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1516&lot=026",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1516026",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "loc-sf-call-1913-06-10",
+      "name": "The San Francisco Call, 10 June 1913, p. 16",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-06-10/ed-1/seq-16/",
+      "retrieved": "2026-10-05"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1913-06-10",
+      "kind": "building contract",
+      "description": "A builder contracted to put up a one-and-a-half-storey frame residence.",
+      "source": "loc-sf-call-1913-06-10",
+      "cross_streets": "E line of 29th Avenue, 225 feet N of Anza"
+    }
+  ]
+}

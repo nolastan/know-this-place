@@ -7,6 +7,18 @@
 > - **Kind:** newspaper OCR corpus · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
 > - **Verified:** 2026-10-05 (the *Call*'s daily Building Contracts lists for
+  16 December 1912 – 15 July 1913, from `curiv_elderwood_ver02`: 5,877 OCR
+  pages scanned, 480 page-blocks on 168 days — 310 located by heading and
+  shape, 170 by a sweep of the real-estate pages — 754 contract entries read,
+  1,017 candidate paragraphs rejected, 23 reprints folded in, 731 findings (668
+  building contracts, 63 alterations). 120 resolved on 120 parcels: 116 by lot,
+  offset and corner with `corner.py --batch --json` and its new centreline
+  test, 4 on a printed number checked against the roll. 611 unresolved. 91
+  published on 91 pages, 49 of them seeded. 29 declined: 27 further contracts
+  for a building already carrying one, 2 contradicting what the page already
+  records. Batch file
+  `findings/loc-newspapers/sn85066387-1913-jan-jul-building-contracts.json`.)
+> - **Verified:** 2026-10-05 (the *Call*'s daily Building Contracts lists for
   1 April – 31 December 1906, from `curiv_hercules_ver01`: 5,188 OCR pages
   scanned, 159 page-blocks on 145 days, 1,373 candidate segments read, 141 of
   them not entries, 1,232 contract entries and 27 run-on entries inside them,
@@ -17,7 +29,7 @@
   seeded. 46 declined: 37 further contracts for a building already carrying
   one, 9 contradicting what the page already records. Batch file
   `findings/loc-newspapers/sn85066387-1906-building-contracts.json`.)
-- **Coverage:** 10 batches / 58,620 pages scanned for address mentions in August 2026 (no findings file; see below), and the *Call*'s Real Estate and Financial Section read in full for 1911 and 1912, as held for 1913, and for the whole of 1910 (January–June and July–December batches, then re-read for its owner-only permits, contracts, loans and building sales in `sn85066387-1910-permits.json`), into `findings/loc-newspapers/sn85066387-<year>-real-estate.json`. The daily Building Contracts lists of 1911 and 1912 are read in full into `sn85066387-1911-building-contracts.json` and `sn85066387-1912-building-contracts.json`, and 1913's as far as the batches hold it into `sn85066387-1913-building-contracts.json`, 1910's in full into `sn85066387-1910-building-contracts.json`, and 1909's in full into `sn85066387-1909-building-contracts.json`.
+- **Coverage:** 10 batches / 58,620 pages scanned for address mentions in August 2026 (no findings file; see below), and the *Call*'s Real Estate and Financial Section read in full for 1911 and 1912, as held for 1913, and for the whole of 1910 (January–June and July–December batches, then re-read for its owner-only permits, contracts, loans and building sales in `sn85066387-1910-permits.json`), into `findings/loc-newspapers/sn85066387-<year>-real-estate.json`. The daily Building Contracts lists of 1911 and 1912 are read in full into `sn85066387-1911-building-contracts.json` and `sn85066387-1912-building-contracts.json`, 1913's into `sn85066387-1913-building-contracts.json` (1–15 February, 16 July–8 December) and `sn85066387-1913-jan-jul-building-contracts.json` (16 December 1912 – 15 July 1913, from `elderwood`), 1910's in full into `sn85066387-1910-building-contracts.json`, and 1909's in full into `sn85066387-1909-building-contracts.json`.
 > - **Local corpus:** `research/corpora/loc-newspapers/` — `tar/` for the batch OCR tarballs, `txt/<lccn>/<yyyy>/<mm>/<dd>/ed-1/seq-N/ocr.txt` for the extracted pages. A fresh container has none of it.
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -639,6 +651,51 @@ Read 2026-10-04, every page of 1907 the three batches hold (`hercules_ver01`,
   53 matching several parcels, 28 numbers refused or unknown, 11 re-lotted
   as condominiums.
 
+### The December 1912 – July 1913 Building Contracts lists (`elderwood`)
+
+Read 2026-10-05, every page of 16 December 1912 – 15 July 1913 that
+`curiv_elderwood_ver02` holds (196 issues, 5,877 pages), on the 1906–1912
+method. The batch was in the table under 1900–1905 with "years not mapped", so
+the September 2026 pass concluded these months were in no batch at all; its
+reel folders say otherwise. What was new:
+
+- **Mid-1913's OCR loses the heading *and* the dollar signs**, so a locator
+  keyed on either misses whole lists (24 December 1912, 29 May and 13 June
+  1913, where "$" reads as a digit or a letter and the column is interleaved
+  with railway timetables). Two things fixed it: a third shape — an amount
+  over $100 with a location word and a building word in the 450 characters
+  before it, kept only where three such amounts cluster — and then a **sweep
+  of every real-estate page** (10 or more "lot in" phrases, or two
+  work-and-storey phrases) for contract paragraphs outside the located blocks.
+  The sweep found 170 blocks to the located pass's 310, and is where the three
+  missing days came from.
+- **Re-anchor every quote on the block's own text after reading.** Ten readers
+  returned 48 quotes that were not verbatim — a transposed digit, a dropped
+  word, OCR line breaks rejoined differently. Matching each quote's first 20
+  and last 14 alphanumeric characters back into the block and taking the span
+  between them fixed 692 of 731 and confirmed the rest; 25 could not be
+  anchored (a quote spliced across two blocks, or one the reader had cut) and
+  were left as written.
+- **A reader's `note` is not publishable.** Theirs explain garbled digits and
+  joins, and some name the owner they decided was private — which is the one
+  thing that may not be committed. The notes were used to assemble the batch
+  and dropped before the findings file was written.
+- **`cross_streets` on a page must be composed, not copied.** Writing the
+  finding's `address_as_written` into it put raw OCR on 88 pages
+  ("R line of .Tone* nfreet. 75 S of ('Tie«tnnt"). The page's line is built
+  from the parsed fields — side, street, offset in feet, cross street, and the
+  lot only where it parses as two dimensions.
+- **Downtown is named by its hotels:** the New Bachelor Hotel on Post and
+  Taylor (seven contracts), the Hotel Mason on Eddy (four), the Arthur
+  Apartments on Post (five), the Wigwam Theatre on Mission (five), the
+  Insurance Exchange, the Hotel Victoria's underpinning, the Masonic Temple's
+  furnishing, the Cartwright and San Fran hotels, and the structural steel for
+  the new Mission Dolores church at 16th and Dolores.
+- **Where it fails:** 306 not measurable at all (no legible offset, corner or
+  lot), 155 no parcel with a roll year that fits, 104 single candidates
+  refused, 23 on streets EAS does not join, 15 printing a number that resolves
+  to nothing, 5 matching several parcels, 1 a condominium parcel.
+
 ### The 1906 Building Contracts lists
 
 Read 2026-10-05, every page of 1906 that `hercules_ver01` holds (1 April to 31
@@ -889,10 +946,13 @@ another batch and is unread. What was new:
   as far as the batches hold it** (1–15 February, 16 July–8 December); 1913's
   other months are in no batch on the bulk route. Then the unscanned
   1897–1899 and 1903–1904 years. The daily Building Contracts lists are **read
-  for 1906 (April–December), 1907, 1908, 1909, 1910, 1911, 1912 and 1913** (1913 as far as the batches
-  hold it: 1–15 February, 16 July–8 December). **Next: January–March 1906**, the
-  months before the fire, in whichever batch holds them (not mapped: try the
-  `curiv_` listings for 1906 outside `hercules_ver01`), on the same method;
+  for 1906 (April–December), 1907, 1908, 1909, 1910, 1911, 1912 and 1913** —
+  1913 now in full except 9–31 December, since `curiv_elderwood_ver02` turned
+  out to hold 16 December 1912 – 15 July 1913 (read 2026-10-05) beside
+  `dardanelle`'s 1–15 February and `grimes`'s 16 July–8 December. **Next:
+  January–March 1906** and **9–31 December 1913**, in whichever batches hold
+  them — neither is mapped, and the lesson of `elderwood` is to list a batch's
+  reel folders before believing a year is unavailable;
   then the 1907 placement of 1499 Sutter re-tested with the centreline test
   (its outline does not reach Gough); then the Union Trust building's placement checked against a
   source that names its lot; then the 1907–1913 lists'

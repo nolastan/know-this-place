@@ -1,0 +1,120 @@
+{
+  "address": "2350 Vallejo Street, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/vallejo-street/2350/",
+  "apn": "0558014",
+  "block": "0558",
+  "lot": "014",
+  "eas_baseid": "285195",
+  "coordinates": {
+    "lat": 37.795391,
+    "lng": -122.436062
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 3,
+    "stories": 3,
+    "rooms": 15,
+    "bathrooms": 7,
+    "lot_area_sqft": 5328.13,
+    "building_area_sqft": 6065,
+    "lot_depth_ft": 37.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Pacific Heights",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 2350 VALLEJO             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1025587,
+    "assessed_improvement_value": 627775
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202506239213",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-06-23",
+      "status_date": "2025-10-07",
+      "estimated_cost": 19600,
+      "revised_cost": 19600,
+      "description": "re-roofing no hot works.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8611273",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-09-12",
+      "status_date": "1987-01-16",
+      "estimated_cost": 500,
+      "description": "remove rotting deck above 1st floor bedroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8610889",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1986-09-05",
+      "status_date": "1987-04-01",
+      "estimated_cost": 7000,
+      "description": "repair and replace roof over bedroom and reinstall deck",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VALLEJO&street_type=ST&address_number=2350",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0558014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0558&lot=014",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0558014",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "loc-sf-call-1913-05-18",
+      "name": "The San Francisco Call, 18 May 1913, p. 81",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-05-18/ed-1/seq-81/",
+      "retrieved": "2026-10-05"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1913-05-18",
+      "kind": "alteration",
+      "description": "J. R. Catherwood contracted for alterations to a residence, at $2,774.",
+      "source": "loc-sf-call-1913-05-18",
+      "cost": 2774,
+      "lot_as_recorded": "38:9 by 137:0",
+      "cross_streets": "N line of Vallejo Street, 167:6 feet E of Steiner, lot 38:9 by 137:0"
+    }
+  ]
+}

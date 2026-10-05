@@ -1,0 +1,185 @@
+{
+  "address": "3466 Jackson Street, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/jackson-street/3466/",
+  "apn": "0971007",
+  "block": "0971",
+  "lot": "007",
+  "eas_baseid": "291653",
+  "coordinates": {
+    "lat": 37.790537,
+    "lng": -122.451892
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 3,
+    "rooms": 10,
+    "bathrooms": 4,
+    "lot_area_sqft": 4085,
+    "building_area_sqft": 4775,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Presidio Heights",
+    "analysis_neighborhood": "Presidio Heights",
+    "property_location_raw": "0000 3466 JACKSON             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1118308,
+    "assessed_improvement_value": 865783,
+    "last_sale_date": "1991-06-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Presidio Heights Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1890–1930",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201606028927",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-06-02",
+      "status_date": "2016-09-22",
+      "estimated_cost": 39695,
+      "revised_cost": 39695,
+      "description": "reroofing, n/a ordinance #155-13",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200006142638",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-06-14",
+      "status_date": "2000-12-14",
+      "estimated_cost": 6750,
+      "revised_cost": 6750,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9120753",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-11-01",
+      "status_date": "1992-11-17",
+      "estimated_cost": 5700,
+      "description": "install fire sprinklet",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9116395",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-09-09",
+      "status_date": "1992-11-17",
+      "estimated_cost": 20000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9116400",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-09-09",
+      "status_date": "1992-11-17",
+      "estimated_cost": 275000,
+      "description": "alterations to kitchen & bath, new master bedroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9110413",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-06-13",
+      "status_date": "1992-11-17",
+      "estimated_cost": 17000,
+      "description": "replace interior plaster & trimn with sheetrock &/or plaster",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9016613",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-08-20",
+      "status_date": "1990-11-20",
+      "estimated_cost": 5000,
+      "description": "repair brick vaneer/quake damage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8409314",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1984-08-27",
+      "status_date": "1986-01-06",
+      "estimated_cost": 6000,
+      "description": "add a deck to rear of bldg/new patio door/close off closet",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JACKSON&street_type=ST&address_number=3466",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0971007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0971&lot=007",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0971007",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.45189216550563%2037.7905371721106)%27)",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "loc-sf-call-1913-01-21",
+      "name": "The San Francisco Call, 21 January 1913, p. 15",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-01-21/ed-1/seq-15/",
+      "retrieved": "2026-10-05"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1913-01-21",
+      "kind": "building contract",
+      "description": "B. W. Elliot contracted for all work except heating, painting, finish hardware and electric fixtures on a three-storey and basement frame residence, at $11,626.",
+      "source": "loc-sf-call-1913-01-21",
+      "cost": 11626,
+      "cross_streets": "N line of Jackson Street, 137:0 feet E of Locust"
+    }
+  ]
+}

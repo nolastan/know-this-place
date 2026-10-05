@@ -1,0 +1,130 @@
+{
+  "address": "1513–1519 Taylor Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/taylor-street/1513/",
+  "apn": "0157006",
+  "block": "0157",
+  "lot": "006",
+  "eas_baseid": "442801",
+  "coordinates": {
+    "lat": 37.796295,
+    "lng": -122.413635
+  },
+  "address_range": "1513–1519",
+  "street_numbers_on_parcel": [
+    "1513",
+    "1515",
+    "1517",
+    "1519"
+  ],
+  "parcel": {
+    "year_built": 1913,
+    "units": 6,
+    "stories": 3,
+    "rooms": 24,
+    "bathrooms": 6,
+    "lot_area_sqft": 2191,
+    "building_area_sqft": 5298,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Nob Hill",
+    "property_location_raw": "1519 1513 TAYLOR              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 92847,
+    "assessed_improvement_value": 171394
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201804206928",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-04-20",
+      "status_date": "2019-06-20",
+      "estimated_cost": 40000,
+      "revised_cost": 58000,
+      "description": "soft story retrofit per sfbc chapter 4d in occordance with 2016 cebc appendix a4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9513480",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-08-22",
+      "status_date": "1995-09-15",
+      "estimated_cost": 11000,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8714026",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1987-09-30",
+      "status_date": "1987-10-30",
+      "estimated_cost": 170,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 15,
+    "range": "1987–2019",
+    "shown_on_page": 3,
+    "note": "12 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TAYLOR&street_type=ST&address_number=1513",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0157006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0157&lot=006",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0157006",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "loc-sf-call-1913-03-18",
+      "name": "The San Francisco Call, 18 March 1913, p. 15",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-03-18/ed-1/seq-15/",
+      "retrieved": "2026-10-05"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1913-03-18",
+      "kind": "building contract",
+      "description": "Devencenzi Bros. & Co. contracted for all work except glass, hardware, mantels, shades and fixtures on a three-storey and basement frame building of flats.",
+      "source": "loc-sf-call-1913-03-18",
+      "cross_streets": "W line of Taylor Street, 48 feet N of Pacific"
+    }
+  ]
+}

@@ -2705,3 +2705,47 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   a pre-fire contract in the burned district by geometry. Place it only by
   name, on a building a source says survived (the Sentinel Building's steel
   frame did).*
+- **A batch filed "years not mapped" is not a batch you have ruled out.** The
+  1913 read concluded that January, March to mid-July and most of December 1913
+  "are in no batch on the bulk route… all 79 `curiv_` batch listings were
+  checked" — but `curiv_elderwood_ver02` sat in the dossier's table under
+  1900–1905 with "listings only; years not mapped", and its reel folders hold
+  16 December 1912 to 15 July 1913: 196 issues the project had written off.
+  *Map a batch by listing its reel folders (`data/batches/<batch>/data/<lccn>/`,
+  whose names are issue dates) before any sentence that says a year is
+  unavailable. One `curl` per reel, a minute for a batch.*
+  ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **Re-anchor a reader's quote on the source text; don't trust it verbatim.**
+  Ten readers on one spec returned 48 of 731 quotes that were not in the block
+  they came from — a digit transposed, a word dropped, line breaks rejoined
+  their own way. Matching each quote's first 20 and last 14 alphanumeric
+  characters back into the block and taking the span between them repaired 692
+  and confirmed the rest, in seconds. *A quote is evidence, so verify it
+  mechanically against the corpus before the findings file is written — and
+  treat the ones that will not anchor (a quote spliced across two blocks) as
+  the short list to read by hand.*
+- **A reader's working notes are not publishable material.** The notes that
+  explain a garbled amount or an inferred join also record what the reader
+  decided about the owner, and some name the private person they correctly
+  kept out of `raw` and `extra`. They were useful to assemble the batch and
+  were dropped before it was committed. *Keep reader commentary in the
+  scratchpad; carry only the fields the schema asks for into
+  `findings/`, and never bulk-copy a note field into a finding.*
+- **A page's `cross_streets` is composed, not copied.** Writing the finding's
+  `address_as_written` into the timeline entry put raw OCR on 88 pages ("R
+  line of .Tone* nfreet. 75 S of ('Tie«tnnt"). *Build the line a reader sees
+  from the parsed fields — side, street, offset in feet, cross street — and
+  include the lot only where it parses as two dimensions; `address_as_written`
+  exists to preserve the source's words in the findings file, which is exactly
+  why it cannot go on a page.*
+- **A street's centreline is found by number parity, not by the sign of the
+  offset.** The 1906 run's centreline test split a street's EAS points into
+  two sides by which side of the estimated crossing they fell on; downtown the
+  crossing estimate itself sits across the street (at Montgomery and
+  Sacramento, every nearby Sacramento point came out on one side), so the
+  "centre" was one kerb and the test passed what it was built to refuse.
+  *Split the points by even and odd house number — that is what the two sides
+  of a street are — and centre the line between the two medians.* The test now
+  lives in `corner.py --json` as `centreline_ok`, instead of being rebuilt in
+  each run's session script.
+  ([sources/loc-newspapers.md](sources/loc-newspapers.md))
