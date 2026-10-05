@@ -1,0 +1,124 @@
+{
+  "address": "1575 Washington Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/washington-street/1575/",
+  "apn": "0217020",
+  "block": "0217",
+  "lot": "020",
+  "eas_baseid": "280102",
+  "coordinates": {
+    "lat": 37.79333,
+    "lng": -122.419014
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 12,
+    "stories": 3,
+    "rooms": 42,
+    "bathrooms": 14,
+    "lot_area_sqft": 4029,
+    "building_area_sqft": 7475,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "0000 1575 WASHINGTON          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 339746,
+    "assessed_improvement_value": 459670
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202009043505",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2020-09-04",
+      "status_date": "2022-12-20",
+      "estimated_cost": 130000,
+      "revised_cost": 252000,
+      "description": "construction two accessory dwelling unit per sf ordinance 162-12. alterations to existing unathorized one unit expansions at 2nd floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201911016238",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-11-01",
+      "status_date": "2021-08-26",
+      "estimated_cost": 130000,
+      "revised_cost": 140000,
+      "description": "soft story retrofit per sfebc chapter 4d. 2016 cebc appendix a-4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200811126321",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-11-12",
+      "status_date": "2008-11-19",
+      "estimated_cost": 20100,
+      "revised_cost": 20100,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2008–2020",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=WASHINGTON&street_type=ST&address_number=1575",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0217020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0217&lot=020",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0217020",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "loc-sf-call-1907-07-11",
+      "name": "The San Francisco Call, 11 July 1907, p. 15",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1907-07-11/ed-1/seq-15/",
+      "retrieved": "2026-10-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1907-07-11",
+      "kind": "building contract",
+      "description": "Armstrong Construction Company contracted to put up a three-storey frame building, at $15,000.",
+      "source": "loc-sf-call-1907-07-11"
+    }
+  ]
+}

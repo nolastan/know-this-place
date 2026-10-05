@@ -2653,3 +2653,31 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   EAS row at the resolution's `eas_address`. *A seeder crash mid-list leaves
   the pages it wrote; regenerate the manifest (it skips pages on disk) and
   run it again rather than starting over.*
+- **A corner record with a lot it prints but cannot be measured is not a
+  corner-only record.** Five 1907 entries for the Phelan building gave "SW
+  corner of O'Farrell and Grant" with the flatiron's irregular lot ("W
+  295:11 … NE 325:9"), and `corner.py`'s corner-only mode, fed no lot, put
+  them on the one corner lot whose roll year fitted: the Kohler & Chase
+  building next door, ten storeys to the Phelan's eleven. *Use corner-only
+  only where the record prints no lot at all; where it prints one that can't
+  be measured (irregular, a figure lost), require the storeys to agree
+  exactly, and put a named building on its page by name.*
+  ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **An amount the OCR garbled can have no figure in it at all.** "sss,ooo",
+  "fIO.OOO", "$4ROO": a quote ended at the first figure after the location
+  ran on through the next entry's owner, and a quote with no figure after its
+  location has nothing to end on. *Trim a quote after its last figure when
+  what follows reads as a name, read every quote's tail, and end the rest by
+  hand.* In 1907 45 quotes were ended or started by hand.
+- **An entry whose "with" the OCR mangled is inside the quote before it.**
+  "vtfth", "wia", "-rlth", "wi-th": 50 of 1907's entries ran on inside the
+  segment before them, and a quote ended at "the entry's amount" took the
+  hidden entry's owner with it. *Find each run-on entry first, by its
+  contractor's surname and the nearest with-like token before it, end the
+  first quote there, and start the run-on entry's quote at its own "with".*
+- **An earlier batch's named-building placement is a lead, not a source.**
+  The 1908 batch put "Union Trust building, NE corner of Post and Montgomery"
+  on 1 Montgomery Street, whose page records the First National Bank building
+  going up on the old Masonic Temple's lot. *Before you reuse a name
+  placement, read the page's own record for the name; where it isn't there,
+  leave the entry unresolved and say why.*

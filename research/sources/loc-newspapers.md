@@ -588,6 +588,46 @@ Read 2026-10-04, every page of 1908 the three batches hold (`indio`,
   candidates refused, 423 unmeasurable, 116 on streets EAS no longer joins, 63
   matching several parcels.
 
+### The 1907 Building Contracts lists
+
+Read 2026-10-04, every page of 1907 the three batches hold (`hercules_ver01`,
+`indio_ver01`, `mecca_ver01`: 7,417 pages), on the 1908 method. What was new:
+
+- **The list does not run every day.** It vanishes on Mondays and on several
+  late-1907 days, and in December it shrinks to one or two entries under a
+  broad real-estate heading. 567 blocks on 317 days; two more shapes than
+  1908 were needed to find them: a storey count with "line of" or "corner of"
+  within 200 characters, and the location word as the OCR spells it ("Une",
+  "llne", "comer").
+- **Real-estate news paragraphs mimic entries.** "with the opening of the new
+  year …", a strike report, a funeral notice: 275 of 2,523 segments were news
+  and 281 advertisements. Sunday lists set an entry as "with X, to erect …"
+  with no dash.
+- **Run-on entries.** 50 entries lost their "with" to the OCR ("vtfth",
+  "wia", "-rlth") and sit inside the segment before them. Each is found by
+  its contractor's surname before the first quote is ended, so that quote
+  stops short of the run-on entry's owner.
+- **A garbled amount can have no figure in it** ("sss,ooo", "$4ROO"). Quotes
+  are trimmed after their last figure where a name follows, and 45 were
+  started or ended by hand.
+- **Downtown is named,** 24 entries placed on 15 buildings whose page carries
+  the name: the Palace Hotel ($144,280 for ornamental iron and elevators), the
+  Phelan, Hewes, Postal Telegraph, Flood, Adam Grant and Central Realty
+  buildings, the Hibernia, Humboldt and California banks, La Granada and St.
+  Francis hotels, the Claus Spreckels building and annex, Mary's Help
+  Hospital and the Alaska Commercial building. The Phelan building's five
+  "SW corner of O'Farrell and Grant" entries went first to the Kohler & Chase
+  building next door, through corner-only mode. A corner record that prints
+  a lot that can't be measured now needs its storeys to agree exactly.
+- **The Union Trust building is not placed.** The 1908 batch put it on 1
+  Montgomery Street, whose page records the First National Bank building on
+  the Masonic Temple's lot. Until someone checks, its four 1907 entries stay
+  unresolved.
+- **Where it fails:** 508 no parcel with a roll year near 1907, 459 single
+  candidates refused, 444 unmeasurable, 156 on garbled or vanished streets,
+  53 matching several parcels, 28 numbers refused or unknown, 11 re-lotted
+  as condominiums.
+
 ### Cautions
 
 - **Verify the number against the cross-streets — the ads hand you the check.**
@@ -773,6 +813,17 @@ Read 2026-10-04, every page of 1908 the three batches hold (`indio`,
   further contracts for a building already carrying one, 2 contradicting a
   1909 contract already on the page). Batch file
   `findings/loc-newspapers/sn85066387-1908-building-contracts.json`.)
+- **Verified:** 2026-10-04 (the *Call*'s daily Building Contracts lists for
+  the whole of 1907, from `curiv_hercules_ver01`, `curiv_indio_ver01` and
+  `curiv_mecca_ver01`: 7,417 OCR pages scanned, 567 page-blocks on 317 days,
+  2,523 candidate segments read, 616 of them not entries, 1,907 contract
+  entries and 50 run-on entries inside them, 1,957 findings (1,855 building
+  contracts, 102 alterations). 298 resolved: 274 by lot, offset and corner
+  with `corner.py --batch --json`, 24 on a building the record names. 1,659
+  unresolved. 242 published on 242 pages, 118 of them seeded. 56 declined: 55
+  further contracts for a building already carrying one, 1 contradicting a
+  1908 contract already on the page. Batch file
+  `findings/loc-newspapers/sn85066387-1907-building-contracts.json`.)
 - **Coverage:** 1890s and 1900s years scanned in August 2026 for mentions only
   (above); **1910 Real Estate and Financial Section read in full, three
   times over** — numbered/architect/corner entries (#three 1910 batches),
@@ -784,11 +835,11 @@ Read 2026-10-04, every page of 1908 the three batches hold (`indio`,
   as far as the batches hold it** (1–15 February, 16 July–8 December); 1913's
   other months are in no batch on the bulk route. Then the unscanned
   1897–1899 and 1903–1904 years. The daily Building Contracts lists are **read
-  for 1908, 1909, 1910, 1911, 1912 and 1913** (1913 as far as the batches hold
-  it: 1–15 February, 16 July–8 December). **Next: the daily Building
-  Contracts lists of 1907** (`hercules_ver01` 92, `indio_ver01` 245, `mecca_ver01`
-  28 issues), on the same
-  method — the first full year of the rebuilding; then the 1908–1913 lists'
+  for 1907, 1908, 1909, 1910, 1911, 1912 and 1913** (1913 as far as the batches
+  hold it: 1–15 February, 16 July–8 December). **Next: the 1906 lists** (the 275
+  issues of 1906 in `hercules_ver01`, the first months of the rebuilding), on
+  the same method; then the Union Trust building's placement checked against a
+  source that names its lot; then the 1907–1913 lists'
   refused single candidates, re-read against the Sanborn sheets where a
   parcel was re-cut. The rest of the 1911, 1912 and 1913 paper —
   the fires and the building-permit lists — is on disk in a session that

@@ -1,0 +1,128 @@
+{
+  "address": "3026 Clement Street, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/clement-street/3026/",
+  "apn": "1402021",
+  "block": "1402",
+  "lot": "021",
+  "eas_baseid": "302376",
+  "coordinates": {
+    "lat": 37.78195,
+    "lng": -122.491858
+  },
+  "parcel": {
+    "year_built": 1908,
+    "units": 2,
+    "stories": 3,
+    "rooms": 12,
+    "bathrooms": 5,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 3040,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "NC-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "3028 3026 CLEMENT             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 93519,
+    "assessed_improvement_value": 202381
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201911126974",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-11-12",
+      "status_date": "2020-02-04",
+      "estimated_cost": 24000,
+      "revised_cost": 24000,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201609208272",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-09-20",
+      "status_date": "2016-12-02",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "install a laundry machine in the sunroom and 2nd bath in the master closet in the second floor - reference ppa#201607293788",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201607293788",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-07-29",
+      "status_date": "2016-12-02",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "renovate bathroom with new tile, vanity & toilet and half bath with new tile. change new cabinets, counter & floor in the kitchen with the same layout. change rear windows with same size and layout. maher na",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9414174",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-09-02",
+      "status_date": "1995-08-15",
+      "estimated_cost": 7700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLEMENT&street_type=ST&address_number=3026",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1402021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1402&lot=021",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1402021",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "loc-sf-call-1907-04-26",
+      "name": "The San Francisco Call, 26 April 1907, p. 15",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1907-04-26/ed-1/seq-15/",
+      "retrieved": "2026-10-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1907-04-26",
+      "kind": "building contract",
+      "description": "G. W. Sheppard contracted to put up a two-storey frame building of two flats, at $6,140.",
+      "source": "loc-sf-call-1907-04-26"
+    }
+  ]
+}

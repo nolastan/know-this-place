@@ -1,0 +1,169 @@
+{
+  "address": "1335 Jackson Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/jackson-street/1335/",
+  "apn": "0187031",
+  "block": "0187",
+  "lot": "031",
+  "eas_baseid": "279610",
+  "coordinates": {
+    "lat": 37.794437,
+    "lng": -122.417043
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 3262,
+    "building_area_sqft": 2269,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "0000 1335 JACKSON             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2651704,
+    "assessed_improvement_value": 1136442,
+    "last_sale_date": "2016-05-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202204263049",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2022-04-26",
+      "status_date": "2023-12-19",
+      "estimated_cost": 829400,
+      "revised_cost": 1170489,
+      "description": "horizontal addition to existing 3-story single family home w/3bed, 2.5 baths. interior remodel, new count to be 5beds, 4 baths. addition of a new roof deck. nfpa13r sprinklers throughout.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201004069727",
+      "type": "otc alterations permit",
+      "status": "reinstated",
+      "filed": "2010-04-06",
+      "status_date": "2010-05-03",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "remove and replace existing stair at rear",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200912103003",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-12-10",
+      "status_date": "2010-04-12",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under app #200706063182. all work is complete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200912103006",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-12-10",
+      "status_date": "2010-04-12",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under app #200612210332. all work is complete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200709102250",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2007-09-10",
+      "status_date": "2012-03-27",
+      "estimated_cost": 8000,
+      "description": "new french doors, new 135 sq. ft deck at ex. 3rd floor with new one hour rated guard rails along property line. this application is based entirely 2007 cbc",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200706063182",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2007-06-06",
+      "status_date": "2010-04-12",
+      "estimated_cost": 200000,
+      "revised_cost": 200000,
+      "description": "remodel existing building, new electrical and plumbing, including windows. windows to be replaced with matching wood, double hung with ogee lugs, no other exterior work to be performed except painting",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200612210332",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-12-21",
+      "status_date": "2010-03-02",
+      "estimated_cost": 8280,
+      "revised_cost": 8280,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 8,
+    "range": "2006–2022",
+    "shown_on_page": 7,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JACKSON&street_type=ST&address_number=1335",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0187031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0187&lot=031",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0187031",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "loc-sf-call-1907-07-06",
+      "name": "The San Francisco Call, 6 July 1907, p. 5",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1907-07-06/ed-1/seq-5/",
+      "retrieved": "2026-10-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1907-07-06",
+      "kind": "building contract",
+      "description": "Charles Legrand contracted for all work except shades, gas and electric fixtures on a two-storey and basement frame building, at $4,300.",
+      "source": "loc-sf-call-1907-07-06"
+    }
+  ]
+}

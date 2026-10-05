@@ -1,0 +1,110 @@
+{
+  "address": "17 Piedmont Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/piedmont-street/17/",
+  "apn": "2617A051",
+  "block": "2617A",
+  "lot": "051",
+  "eas_baseid": "474695",
+  "coordinates": {
+    "lat": 37.765467,
+    "lng": -122.444508
+  },
+  "parcel": {
+    "year_built": 1909,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 1530,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Haight Ashbury",
+    "property_location_raw": "0000 0017 PIEDMONT            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1363864,
+    "assessed_improvement_value": 909242,
+    "last_sale_date": "2020-08-27"
+  },
+  "permits": [
+    {
+      "number": "201106097822",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-06-09",
+      "status_date": "2012-03-07",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to app#201103303095. reduce scope of work, eliminate 3 new property ine windows from scope of work. see plans",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201103303095",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-03-30",
+      "status_date": "2012-03-07",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "remodel of extg apartment including a kitchen remodel and adding master bathroom. add 2 new skylilghts.windows to be replaced in kind at rear and lightwells. deck to be repaired less than 50%. 4 new window at side, 2 new windows and french door at rear.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200702123944",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-02-12",
+      "status_date": "2007-04-02",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "comply with report 3r-4785.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "2007–2011",
+    "shown_on_page": 3,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PIEDMONT&street_type=ST&address_number=17",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2617A051&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2617A&lot=051",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "loc-sf-call-1907-09-12",
+      "name": "The San Francisco Call, 12 September 1907, p. 15",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1907-09-12/ed-1/seq-15/",
+      "retrieved": "2026-10-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1907-09-12",
+      "kind": "building contract",
+      "description": "A. Jackson contracted to put up a two-storey frame building, at $6,500.",
+      "source": "loc-sf-call-1907-09-12"
+    }
+  ]
+}

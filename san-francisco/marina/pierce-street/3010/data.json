@@ -1,0 +1,145 @@
+{
+  "address": "3010–3012 Pierce Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/pierce-street/3010/",
+  "apn": "0514018",
+  "block": "0514",
+  "lot": "018",
+  "eas_baseid": "283894",
+  "coordinates": {
+    "lat": 37.797886,
+    "lng": -122.438744
+  },
+  "address_range": "3010–3012",
+  "street_numbers_on_parcel": [
+    "3010",
+    "3012"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2090,
+    "building_area_sqft": 2750,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Cow Hollow",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "3012 3010 PIERCE              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1757829,
+    "assessed_improvement_value": 753354,
+    "last_sale_date": "2017-07-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202609258652",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-09-25",
+      "status_date": "2026-09-25",
+      "estimated_cost": 46000,
+      "revised_cost": 79595,
+      "description": "replace bathroom and kitchen in kind: cabinets, tiles, bath tub like for like and appliances.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201801309881",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2018-01-30",
+      "status_date": "2019-08-19",
+      "estimated_cost": 230000,
+      "description": "interior remodel of each unit including bathrooms & kitchens. new roof deck. new garage. new habitable space behind garage. remodel front facade. new penthouse addition and roof deck.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201311081450",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-11-08",
+      "status_date": "2013-12-31",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "repair & replace stairs in rear of building to comply with violation #201307101. replace in kind, same location, same size.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201011024214",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-11-02",
+      "status_date": "2010-11-29",
+      "estimated_cost": 13700,
+      "revised_cost": 13700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200401093746",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-01-09",
+      "status_date": "2004-04-09",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "minor non-structural correction of wood decay at existing front stairs; no change of configuration a",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PIERCE&street_type=ST&address_number=3010",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0514018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0514&lot=018",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0514018",
+      "retrieved": "2026-10-04"
+    },
+    {
+      "id": "loc-sf-call-1907-07-14",
+      "name": "The San Francisco Call, 14 July 1907, p. 45",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1907-07-14/ed-1/seq-45/",
+      "retrieved": "2026-10-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1907-07-14",
+      "kind": "building contract",
+      "description": "P. C. Storm contracted to put up a two-storey frame building, at $3,000.",
+      "source": "loc-sf-call-1907-07-14"
+    }
+  ]
+}
