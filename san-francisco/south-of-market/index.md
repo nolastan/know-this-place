@@ -13,6 +13,7 @@ The wide blocks west of Fourth Street, between Market and Harrison. Coverage her
 - [Boardman Place](boardman-place/) — 1 building, built 1912.
 - [Brannan Street](brannan-street/) — 24 buildings, built 1905–1989; 3 in the Clyde and Crooks Historic District.
 - [Bryant Street](bryant-street/) — 56 buildings, built 1905–2005; 1 in the SoMa LGBTQ Historic District.
+- [China Basin Street](china-basin-street/) — 1 building.
 - [Clara Street](clara-street/) — 29 buildings, built 1906–1991.
 - [Clementina Street](clementina-street/) — 16 buildings, built 1909–2008.
 - [Clyde Street](clyde-street/) — 4 buildings, built 1923; 4 in the Clyde and Crooks Historic District.
