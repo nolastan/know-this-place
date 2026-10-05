@@ -2681,3 +2681,27 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   going up on the old Masonic Temple's lot. *Before you reuse a name
   placement, read the page's own record for the name; where it isn't there,
   leave the entry unresolved and say why.*
+- **corner.py's crossing estimate can put a parcel in the wrong quadrant, not
+  just the wrong distance.** Downtown, where EAS points crowd one side of a
+  street, the estimated crossing sits far enough off that `corner.py`'s
+  quadrant and side tests passed 576 Sacramento as the SE corner of
+  Montgomery and Sacramento, though it is on the north side of Sacramento, and
+  600 Eddy as a corner it does not touch. *Re-test every placement against
+  each street's own centreline. Fit the centreline from that street's EAS
+  points, then centre it between the median offsets of its two sides (a
+  plain mean is pulled toward the busier side). A corner needs an outline
+  within 65 ft of both centrelines, or EAS addresses on both streets. Where
+  the two tests disagree, leave it unresolved.* In 1906 23 placements were
+  refused this way. ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **A lot that measures and does not match is a refusal, not a corner-only
+  record.** Letting a corner record whose printed lot fitted no parcel fall
+  through to corner-only mode placed it on whichever corner lot had a fitting
+  roll year, a building the lot had just ruled out. *Corner-only is for a
+  record that prints no lot. A lot that can be measured and matches nothing
+  means the lot was re-cut or the building replaced.*
+- **A contract let before 18 April 1906 in the district that burned names a
+  building that burned.** The roll's year near 1906 on that lot is the
+  replacement, so a geometric fit there is a coincidence of dates. *Never place
+  a pre-fire contract in the burned district by geometry. Place it only by
+  name, on a building a source says survived (the Sentinel Building's steel
+  frame did).*

@@ -1,0 +1,142 @@
+{
+  "address": "1131–1135 Cole Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/cole-street/1131/",
+  "apn": "1281006",
+  "block": "1281",
+  "lot": "006",
+  "eas_baseid": "430899",
+  "coordinates": {
+    "lat": 37.763535,
+    "lng": -122.449803
+  },
+  "address_range": "1131–1135",
+  "street_numbers_on_parcel": [
+    "1131",
+    "1133",
+    "1135"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 4,
+    "stories": 3,
+    "rooms": 13,
+    "bathrooms": 4,
+    "lot_area_sqft": 2587,
+    "building_area_sqft": 3653,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Cole Valley/Parnassus Heights",
+    "analysis_neighborhood": "Haight Ashbury",
+    "property_location_raw": "1135 1131 COLE                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1107968,
+    "assessed_improvement_value": 295451
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Cole Valley Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1900–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "9921256",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1999-10-07",
+      "status_date": "2000-07-20",
+      "estimated_cost": 8000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9714707",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-08-05",
+      "status_date": "1999-01-19",
+      "estimated_cost": 4200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9417617",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1994-10-25",
+      "status_date": "1995-03-07",
+      "estimated_cost": 500,
+      "description": "annual inspection checklist",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1994–2007",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=COLE&street_type=ST&address_number=1131",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1281006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1281&lot=006",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1281006",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44980295202149%2037.76353475397961)%27)",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "loc-sf-call-1906-12-21",
+      "name": "The San Francisco Call, 21 December 1906, p. 15",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1906-12-21/ed-1/seq-15/",
+      "retrieved": "2026-10-05"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1906-12-21",
+      "kind": "building contract",
+      "description": "Rountree Home Building Company contracted to put up a two-storey frame building of two flats, at $5,700.",
+      "source": "loc-sf-call-1906-12-21"
+    }
+  ]
+}

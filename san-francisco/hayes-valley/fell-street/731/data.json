@@ -1,0 +1,153 @@
+{
+  "address": "731–733 Fell Street, San Francisco, CA 94117",
+  "path": "/san-francisco/hayes-valley/fell-street/731/",
+  "apn": "0828023",
+  "block": "0828",
+  "lot": "023",
+  "eas_baseid": "289033",
+  "coordinates": {
+    "lat": 37.774755,
+    "lng": -122.429924
+  },
+  "address_range": "731–733",
+  "street_numbers_on_parcel": [
+    "731",
+    "733"
+  ],
+  "parcel": {
+    "year_built": 1908,
+    "units": 4,
+    "stories": 2,
+    "rooms": 15,
+    "bathrooms": 4,
+    "bedrooms": 7,
+    "lot_area_sqft": 4128,
+    "building_area_sqft": 3700,
+    "lot_depth_ft": 37.6,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Hayes Valley",
+    "property_location_raw": "0000 0731 FELL                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 130623,
+    "assessed_improvement_value": 180700
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Hayes Valley Residential Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1860–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "9809626",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-05-28",
+      "status_date": "1998-09-28",
+      "estimated_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8906188",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-04-17",
+      "status_date": "1990-03-27",
+      "estimated_cost": 1,
+      "description": "shoring in neighbours prop0erty",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8503010",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1985-03-26",
+      "status_date": "1985-10-28",
+      "estimated_cost": 1000,
+      "description": "replace wooden stairs same configuration aas original",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8410334",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1984-09-25",
+      "status_date": "1985-07-11",
+      "estimated_cost": 1500,
+      "description": "replace deck & stairs on rear of bldg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1984–2010",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FELL&street_type=ST&address_number=731",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0828023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0828&lot=023",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0828023",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42992355750329%2037.77475529451761)%27)",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "loc-sf-call-1906-07-20",
+      "name": "The San Francisco Call, 20 July 1906, p. 11",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1906-07-20/ed-1/seq-11/",
+      "retrieved": "2026-10-05"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1906-07-20",
+      "kind": "building contract",
+      "description": "John E. Beck contracted to put up a three-storey frame building for the Roman Catholic Archbishop of San Francisco, at $11,436.",
+      "source": "loc-sf-call-1906-07-20"
+    }
+  ]
+}

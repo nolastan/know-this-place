@@ -1,0 +1,95 @@
+{
+  "address": "80 Valparaiso Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/valparaiso-street/80/",
+  "apn": "0091038",
+  "block": "0091",
+  "lot": "038",
+  "eas_baseid": "277106",
+  "coordinates": {
+    "lat": 37.801412,
+    "lng": -122.413957
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 1376,
+    "building_area_sqft": 1792,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Russian Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "0000 0080 VALPARAISO          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 59328,
+    "assessed_improvement_value": 52616
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9303173",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-02-26",
+      "status_date": "1993-08-23",
+      "estimated_cost": 2800,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VALPARAISO&street_type=ST&address_number=80",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0091038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0091&lot=038",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0091038",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "loc-sf-call-1906-11-03",
+      "name": "The San Francisco Call, 3 November 1906, p. 11",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1906-11-03/ed-1/seq-11/",
+      "retrieved": "2026-10-05"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1906-11-03",
+      "kind": "building contract",
+      "description": "V. Brisa & Co. contracted to put up a two-storey frame building, at $3,530.",
+      "source": "loc-sf-call-1906-11-03"
+    }
+  ]
+}
