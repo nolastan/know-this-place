@@ -6,7 +6,18 @@
 >
 > - **Kind:** newspaper OCR corpus · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 10 batches / 58,620 pages scanned for address mentions in August 2026 (no findings file; see below), and the *Call*'s Real Estate and Financial Section read in full for 1911 and 1912, as held for 1913, and for the whole of 1910 (January–June and July–December batches, then re-read for its owner-only permits, contracts, loans and building sales in `sn85066387-1910-permits.json`), into `findings/loc-newspapers/sn85066387-<year>-real-estate.json`. The daily Building Contracts lists of 1911 and 1912 are read in full into `sn85066387-1911-building-contracts.json` and `sn85066387-1912-building-contracts.json`, and 1913's as far as the batches hold it into `sn85066387-1913-building-contracts.json`, 1910's in full into `sn85066387-1910-building-contracts.json`, and 1909's in full into `sn85066387-1909-building-contracts.json`.
+> - **Verified:** 2026-10-05 (the *Call*'s daily Building Contracts lists for
+  1 April – 31 December 1906, from `curiv_hercules_ver01`: 5,188 OCR pages
+  scanned, 159 page-blocks on 145 days, 1,373 candidate segments read, 141 of
+  them not entries, 1,232 contract entries and 27 run-on entries inside them,
+  1,259 findings (1,193 building contracts, 66 alterations). 191 resolved on
+  154 parcels: 158 by lot, offset and corner with `corner.py --batch --json`
+  and a centreline side test, 33 on a building the record names or a number
+  checked by hand. 1,068 unresolved. 145 published on 145 pages, 60 of them
+  seeded. 46 declined: 37 further contracts for a building already carrying
+  one, 9 contradicting what the page already records. Batch file
+  `findings/loc-newspapers/sn85066387-1906-building-contracts.json`.)
+- **Coverage:** 10 batches / 58,620 pages scanned for address mentions in August 2026 (no findings file; see below), and the *Call*'s Real Estate and Financial Section read in full for 1911 and 1912, as held for 1913, and for the whole of 1910 (January–June and July–December batches, then re-read for its owner-only permits, contracts, loans and building sales in `sn85066387-1910-permits.json`), into `findings/loc-newspapers/sn85066387-<year>-real-estate.json`. The daily Building Contracts lists of 1911 and 1912 are read in full into `sn85066387-1911-building-contracts.json` and `sn85066387-1912-building-contracts.json`, and 1913's as far as the batches hold it into `sn85066387-1913-building-contracts.json`, 1910's in full into `sn85066387-1910-building-contracts.json`, and 1909's in full into `sn85066387-1909-building-contracts.json`.
 > - **Local corpus:** `research/corpora/loc-newspapers/` — `tar/` for the batch OCR tarballs, `txt/<lccn>/<yyyy>/<mm>/<dd>/ed-1/seq-N/ocr.txt` for the extracted pages. A fresh container has none of it.
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -88,7 +99,7 @@ Issue counts per year; a year split across batches needs all of them.
 | | 1898 | `ahwahnee_ver01` (365) |
 | | 1899 | `carlsbad` (46), `exeter_ver01` (181), `joshuaTree` (137) |
 | | 1900–1905 | `albion_ver01`, `brea_ver01`, `carmel_ver01`, `darwin_ver01`, `felix_ver01`, `plasse_ver01`, `elderwood_ver02` (listings only; years not mapped), `quincy_ver01` (1901: 61, 1904: 60), `oasis_ver01` (1905: 89) |
-| | 1906–1907 | `hercules_ver01` (275 + 92), `indio_ver01` (1907: 245), `mecca_ver01` (1907: 28) |
+| | 1906–1907 | `hercules_ver01` (275 + 92), `indio_ver01` (1907: 245), `mecca_ver01` (1907: 28) — **the daily Building Contracts lists read in full** for 1907 (2026-10-04) and for 1906 as far as `hercules` holds it, 1 April–31 December (2026-10-05) |
 | | **1908** | `indio` (90), `jenner_ver01` (31), `llano_ver01` (245) — **fetched 2026-10-04**; **the daily Building Contracts lists read in full** 2026-10-04 |
 | | **1909** | `jenner` (92), `llano` (61), `mecca` (151), `needles_ver01` (61) — **all four fetched 2026-10-03**; **the daily Building Contracts lists read in full** 2026-10-03 |
 | | **1910** | `curiv_jenner_ver01` (90), `curiv_klamath_ver01` (122), `curiv_mecca_ver01` (122), `curiv_needles_ver01` (31) — **all four fetched 2026-09-23**, again 2026-10-03; **read in full** (January–June, July–December, and twice more for owner-only corner/offset entries with and without a lot, #407 and #412), and **the daily Building Contracts lists read in full** 2026-10-03 |
@@ -628,6 +639,49 @@ Read 2026-10-04, every page of 1907 the three batches hold (`hercules_ver01`,
   53 matching several parcels, 28 numbers refused or unknown, 11 re-lotted
   as condominiums.
 
+### The 1906 Building Contracts lists
+
+Read 2026-10-05, every page of 1906 that `hercules_ver01` holds (1 April to 31
+December: 5,188 pages), on the 1907 method. January to March 1906 is in
+another batch and is unread. What was new:
+
+- **The fire stops the list.** It runs to 17 April, is absent from 18 April
+  to late June, and comes back in July. 159 blocks on 145 days. Before the
+  fire the list sets the owner first, as "M. Ehrenberg (owner) with X
+  (contractors), architects Y — all work for …"; afterwards it sets "with X,
+  to erect …" with a comma where 1907 has a dash. Both shapes had to be added
+  to find the blocks.
+- **The owner comes before "with",** so the tail of each segment is the next
+  entry's owner. Quotes start at "with" and end at the entry's own amount, and
+  every tail was cut. Five notable past owners are kept: Claus Spreckels,
+  M. H. de Young, James L. Flood, H. H. Bancroft and A. Ruef, whose
+  three-storey frame stable on Filbert Street the page for 721 Filbert
+  records as the Hildebrand Stables, in brick.
+- **A pre-fire contract in the burned district names a building that burned.**
+  Seven placed by geometry on a building of 1906–08 were refused for that
+  reason. The exception is the Sentinel Building (916 Kearny), whose steel
+  frame was up when its brick work was let on 4 April and which survived.
+- **Downtown, corner.py's crossing estimate can be wrong enough to put a parcel
+  in the wrong quadrant.** For example, 576 Sacramento came back as the SE
+  corner of Montgomery and Sacramento, which is the Italian American Bank's
+  corner, and 600 Eddy as a corner it is not on. Every placement was
+  re-tested against each street's own centreline, fitted from its EAS points
+  and centred between the two sides. A corner needs an outline within 65 ft of
+  both centrelines, or EAS addresses on both streets. 23 placements the two
+  tests disagreed on were refused (see LESSONS.md).
+- **Downtown is named:** the Sentinel Building, the Flood building, the Bank
+  of California (Mahony Bros.' general contract, $441,200, 30 August), the
+  Claus Spreckels building and its annex, the Mutual Savings Bank, the
+  Italian American Bank, the Merchants' Exchange (465 California, placed on
+  its printed offset), the French Savings Bank, the Alaska Commercial
+  building, the German Hospital and St. Mark's Lutheran Church. 33 entries
+  were placed by name or by hand.
+- **Where it fails:** 369 had no parcel with a roll year near 1906, 294 single
+  candidates were refused, 230 couldn't be measured, 92 are on streets that
+  don't meet in EAS, 27 matched several parcels, 23 were refused by the
+  centreline test, 20 printed numbers that were refused or unknown, 7 were
+  pre-fire and burned, and 6 name a building no page carries.
+
 ### Cautions
 
 - **Verify the number against the cross-streets — the ads hand you the check.**
@@ -835,10 +889,12 @@ Read 2026-10-04, every page of 1907 the three batches hold (`hercules_ver01`,
   as far as the batches hold it** (1–15 February, 16 July–8 December); 1913's
   other months are in no batch on the bulk route. Then the unscanned
   1897–1899 and 1903–1904 years. The daily Building Contracts lists are **read
-  for 1907, 1908, 1909, 1910, 1911, 1912 and 1913** (1913 as far as the batches
-  hold it: 1–15 February, 16 July–8 December). **Next: the 1906 lists** (the 275
-  issues of 1906 in `hercules_ver01`, the first months of the rebuilding), on
-  the same method; then the Union Trust building's placement checked against a
+  for 1906 (April–December), 1907, 1908, 1909, 1910, 1911, 1912 and 1913** (1913 as far as the batches
+  hold it: 1–15 February, 16 July–8 December). **Next: January–March 1906**, the
+  months before the fire, in whichever batch holds them (not mapped: try the
+  `curiv_` listings for 1906 outside `hercules_ver01`), on the same method;
+  then the 1907 placement of 1499 Sutter re-tested with the centreline test
+  (its outline does not reach Gough); then the Union Trust building's placement checked against a
   source that names its lot; then the 1907–1913 lists'
   refused single candidates, re-read against the Sanborn sheets where a
   parcel was re-cut. The rest of the 1911, 1912 and 1913 paper —

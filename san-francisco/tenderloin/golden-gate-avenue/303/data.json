@@ -1,0 +1,80 @@
+{
+  "address": "303 Golden Gate Avenue, San Francisco, CA 94102",
+  "path": "/san-francisco/tenderloin/golden-gate-avenue/303/",
+  "apn": "0347001",
+  "block": "0347",
+  "lot": "001",
+  "eas_baseid": "281996",
+  "coordinates": {
+    "lat": 37.781327,
+    "lng": -122.415799
+  },
+  "parcel": {
+    "year_built": 1907,
+    "stories": 2,
+    "rooms": 40,
+    "bathrooms": 4,
+    "lot_area_sqft": 18905,
+    "use": "Commercial Office",
+    "property_class": "Office Gov",
+    "construction_type_code": "C",
+    "zoning": "P",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Tenderloin",
+    "analysis_neighborhood": "Tenderloin",
+    "property_location_raw": "0305 0303 GOLDEN GATE         AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GOLDEN%20GATE&street_type=AVE&address_number=303",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0347001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0347&lot=001",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0347001",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "loc-sf-call-1906-07-19",
+      "name": "The San Francisco Call, 19 July 1906, p. 11",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1906-07-19/ed-1/seq-11/",
+      "retrieved": "2026-10-05"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1906-07-19",
+      "kind": "building contract",
+      "description": "G. P. W. Jensen, H. L. Peterson and Anderson & Anderson contracted to put up a two-storey and basement brick building, at $43,038.",
+      "source": "loc-sf-call-1906-07-19"
+    }
+  ]
+}

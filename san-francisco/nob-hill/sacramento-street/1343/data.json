@@ -1,0 +1,148 @@
+{
+  "address": "1343 Sacramento Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/sacramento-street/1343/",
+  "apn": "0247035",
+  "block": "0247",
+  "lot": "035",
+  "eas_baseid": "280539",
+  "coordinates": {
+    "lat": 37.792101,
+    "lng": -122.414882
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 5,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 5,
+    "lot_area_sqft": 1380.39,
+    "building_area_sqft": 3076,
+    "lot_depth_ft": 70.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Nob Hill",
+    "property_location_raw": "0000 1343 SACRAMENTO          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 442078,
+    "assessed_improvement_value": 321827,
+    "last_sale_date": "1992-06-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200207100987",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-07-10",
+      "status_date": "2005-11-09",
+      "estimated_cost": 5180,
+      "revised_cost": 5180,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9304927",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-03-29",
+      "status_date": "1993-09-14",
+      "estimated_cost": 8000,
+      "description": "new garage door/enlarged exist opening/new man door",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9114731",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-08-15",
+      "status_date": "1991-12-05",
+      "estimated_cost": 3000,
+      "description": "repair termite.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8313081",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-12-23",
+      "status_date": "1984-10-15",
+      "estimated_cost": 20000,
+      "description": "relocate kitchen & baths",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8304874",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-05-27",
+      "status_date": "1984-05-03",
+      "estimated_cost": 5200,
+      "description": "2nd floor partition to be removed, etc.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8206129",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-07-27",
+      "status_date": "1984-05-03",
+      "estimated_cost": 8500,
+      "description": "bldg use: apts.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SACRAMENTO&street_type=ST&address_number=1343",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0247035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0247&lot=035",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0247035",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "loc-sf-call-1906-11-20",
+      "name": "The San Francisco Call, 20 November 1906, p. 11",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1906-11-20/ed-1/seq-11/",
+      "retrieved": "2026-10-05"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1906-11-20",
+      "kind": "building contract",
+      "description": "Sjogren Bros. contracted to put up two-storey frame four apartments, at $3,510.",
+      "source": "loc-sf-call-1906-11-20"
+    }
+  ]
+}

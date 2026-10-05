@@ -1,0 +1,112 @@
+{
+  "address": "1536–1540 Leavenworth Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/leavenworth-street/1536/",
+  "apn": "0183023",
+  "block": "0183",
+  "lot": "023",
+  "eas_baseid": "437544",
+  "coordinates": {
+    "lat": 37.795308,
+    "lng": -122.416217
+  },
+  "address_range": "1536–1540",
+  "street_numbers_on_parcel": [
+    "1536",
+    "1538",
+    "1540"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 3,
+    "stories": 3,
+    "rooms": 16,
+    "bathrooms": 3,
+    "lot_area_sqft": 3772,
+    "building_area_sqft": 3684,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Nob Hill",
+    "property_location_raw": "1540 1536 LEAVENWORTH         ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 133027,
+    "assessed_improvement_value": 97215
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200105310354",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-05-31",
+      "status_date": "2001-06-11",
+      "estimated_cost": 5300,
+      "revised_cost": 5300,
+      "description": "re roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9105660",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-04-05",
+      "status_date": "1991-11-26",
+      "estimated_cost": 1500,
+      "description": "repair back stairs per housing insp. report no struct. chang",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LEAVENWORTH&street_type=ST&address_number=1536",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0183023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0183&lot=023",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0183023",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "loc-sf-call-1906-11-29",
+      "name": "The San Francisco Call, 29 November 1906, p. 10",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1906-11-29/ed-1/seq-10/",
+      "retrieved": "2026-10-05"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1906-11-29",
+      "kind": "building contract",
+      "description": "Adolph Hennings contracted to put up a two-storey frame building of flats.",
+      "source": "loc-sf-call-1906-11-29"
+    }
+  ]
+}

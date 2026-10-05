@@ -1,0 +1,142 @@
+{
+  "address": "24–34 Palm Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/palm-avenue/24/",
+  "apn": "1039036",
+  "block": "1039",
+  "lot": "036",
+  "eas_baseid": "431592",
+  "coordinates": {
+    "lat": 37.785239,
+    "lng": -122.457672
+  },
+  "address_range": "24–34",
+  "street_numbers_on_parcel": [
+    "24",
+    "26",
+    "28",
+    "30",
+    "32",
+    "34"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 6,
+    "stories": 3,
+    "rooms": 24,
+    "bathrooms": 6,
+    "bedrooms": 6,
+    "lot_area_sqft": 3999.6,
+    "building_area_sqft": 6000,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Jordan Park/Laurel Heights",
+    "analysis_neighborhood": "Presidio Heights",
+    "property_location_raw": "0034 0024 PALM                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1324181,
+    "assessed_improvement_value": 993655
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Jordan Park Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1900–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201612013880",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-12-01",
+      "status_date": "2017-02-27",
+      "estimated_cost": 26500,
+      "revised_cost": 26500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9007665",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-04-20",
+      "status_date": "1990-08-30",
+      "estimated_cost": 9645,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8612678",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-10-10",
+      "status_date": "1988-11-16",
+      "estimated_cost": 4800,
+      "description": "bring bldg to code",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PALM&street_type=AVE&address_number=24",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1039036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1039&lot=036",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1039036",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.45767172052057%2037.78523940894609)%27)",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "loc-sf-call-1906-10-09",
+      "name": "The San Francisco Call, 9 October 1906, p. 13",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1906-10-09/ed-1/seq-13/",
+      "retrieved": "2026-10-05"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1906-10-09",
+      "kind": "building contract",
+      "description": "Felix Marcuse contracted to put up a two-storey frame building.",
+      "source": "loc-sf-call-1906-10-09"
+    }
+  ]
+}
