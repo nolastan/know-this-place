@@ -1,0 +1,169 @@
+{
+  "address": "161 Broderick Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/broderick-street/161/",
+  "apn": "1236002",
+  "block": "1236",
+  "lot": "002",
+  "eas_baseid": "298038",
+  "coordinates": {
+    "lat": 37.771758,
+    "lng": -122.439149
+  },
+  "parcel": {
+    "year_built": 1913,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "bedrooms": 6,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 3140,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Haight Ashbury",
+    "analysis_neighborhood": "Haight Ashbury",
+    "property_location_raw": "0000 0161 BRODERICK           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1084810,
+    "assessed_improvement_value": 464906,
+    "last_sale_date": "2004-01-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Buena Vista North Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1870–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200602235292",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-02-23",
+      "status_date": "2006-09-13",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "renovate existing bath- fix water leak at tub walls, upgrade electrical & plumbing, lighting will be 100 percent flourescent, one bath remodel, non structral",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200512130172",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-12-13",
+      "status_date": "2006-09-11",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "renovate (e) bath & kitchen with new cabinets & counters, electrical & plumbing. in one unit and renovate (e) bath in one unit. electrical lighting in kitchen 50% or 100% wattage ti be fkyrecebt ub bath 100% flourcent.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200302258247",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-02-25",
+      "status_date": "2003-05-15",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "repair dry rot at center exterior stairs and wood siding per comply #200232724",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200203010486",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-03-01",
+      "status_date": "2002-05-15",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "new deck/landing & stair to grade, remove exist window & instlal new french door light fixture,switc",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9500748",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-01-19",
+      "status_date": "1995-08-07",
+      "estimated_cost": 3600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8918235",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-09-28",
+      "status_date": "1989-10-27",
+      "estimated_cost": 3000,
+      "description": "remove dryrotted section of studs & siding at g/f",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRODERICK&street_type=ST&address_number=161",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1236002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1236&lot=002",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1236002",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43914946007483%2037.77175838237118)%27)",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "loc-sf-call-1913-06-22",
+      "name": "The San Francisco Call, 22 June 1913, p. 63",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-06-22/ed-1/seq-63/",
+      "retrieved": "2026-10-05"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1913-06-22",
+      "kind": "building contract",
+      "description": "A builder contracted for all work except grading, finish hardwood, shades, gas and electric fixtures on a two-storey frame apartment house, at $7,150.",
+      "source": "loc-sf-call-1913-06-22",
+      "cost": 7150,
+      "lot_as_recorded": "23X100",
+      "cross_streets": "W line of Broderick Street, 25 feet S of Page, lot 23X100"
+    }
+  ]
+}

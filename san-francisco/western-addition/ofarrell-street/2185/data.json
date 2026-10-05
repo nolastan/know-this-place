@@ -1,0 +1,126 @@
+{
+  "address": "2185 O'Farrell Street, San Francisco, CA 94115",
+  "path": "/san-francisco/western-addition/ofarrell-street/2185/",
+  "apn": "1101019",
+  "block": "1101",
+  "lot": "019",
+  "eas_baseid": "294862",
+  "coordinates": {
+    "lat": 37.782075,
+    "lng": -122.440595
+  },
+  "parcel": {
+    "year_built": 1913,
+    "units": 6,
+    "stories": 2,
+    "rooms": 16,
+    "bathrooms": 6,
+    "lot_area_sqft": 2187.5,
+    "building_area_sqft": 4122,
+    "lot_depth_ft": 87.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Anza Vista",
+    "analysis_neighborhood": "Western Addition",
+    "property_location_raw": "0000 2185 O'FARRELL           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1640262,
+    "assessed_improvement_value": 706742,
+    "last_sale_date": "2013-11-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202404301089",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-04-30",
+      "status_date": "2024-05-10",
+      "estimated_cost": 17500,
+      "revised_cost": 17500,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9820623",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-10-09",
+      "status_date": "1999-02-09",
+      "estimated_cost": 500,
+      "description": "repair of dry rot on stair landing,no structural work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9025320",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-12-12",
+      "status_date": "1991-10-29",
+      "estimated_cost": 50000,
+      "description": "remove old rotten roach infested kitchen cabinets/plaster",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1990–2024",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=OFARRELL&street_type=ST&address_number=2185",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1101019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1101&lot=019",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1101019",
+      "retrieved": "2026-10-05"
+    },
+    {
+      "id": "loc-sf-call-1913-01-16",
+      "name": "The San Francisco Call, 16 January 1913, p. 17",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-01-16/ed-1/seq-17/",
+      "retrieved": "2026-10-05"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1913-01-16",
+      "kind": "building contract",
+      "description": "George V. McCausland contracted for all work on a two-storey apartment house.",
+      "source": "loc-sf-call-1913-01-16",
+      "lot_as_recorded": "25x87:6",
+      "cross_streets": "S line of O'Farrell Street, 50 feet E of Broderick, lot 25 by 87:6"
+    }
+  ]
+}

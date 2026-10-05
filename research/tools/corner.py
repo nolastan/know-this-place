@@ -71,6 +71,14 @@ side). A corner line with `quad` and neither `lot` nor `offset` lists only the
 parcels in that corner whose roll year fits `year`. **`--json`** prints every
 entry's candidates with these checks as data, for a placement script.
 
+`side_ok` alone is not enough downtown, where EAS points crowd one side of a
+street and the estimated crossing can sit across it. Each candidate also gets
+**`centreline_ok`**: the same side test against each street's own centreline,
+fitted from its EAS points and centred between the median offsets of its even
+and its odd numbers; on a corner it also needs the lot's outline within 65 ft of both
+centrelines, or EAS addresses on both streets (`on_both_streets`). Where
+`side_ok` and `centreline_ok` disagree, the placement is refused.
+
 **`built_by`** instead of `year` — for an alteration, which is work on a
 building already standing: `"built_by": 1908` passes every parcel whose roll
 year is 1908 or earlier wherever the ±2-year test would otherwise apply (the
@@ -226,6 +234,57 @@ def in_quadrant(axes: list, p: tuple, pt: tuple, quad: str):
     return all(verdicts) if verdicts else None
 
 
+def centreline(A: list, p: tuple):
+    """Street A near crossing p as a centred line: (axis, shift), where shift is
+    how far (in degrees, along the axis's left normal) the street's middle sits
+    from p. Fitted from A's EAS points within about 150 m, then centred between
+    the median offsets of its two sides (its even and its odd numbers) — a
+    plain mean is pulled toward the busier side, and downtown the crossing
+    estimate itself can sit across the street. None where there are too few points, or points on one side only."""
+    axis = street_axis(A, p)
+    if axis is None:
+        return None
+    k = math.cos(math.radians(p[0]))
+    nx, ny = -axis[1], axis[0]
+    sides = {0: [], 1: []}
+    for x in A:
+        wx, wy = (float(x["longitude"]) - p[1]) * k, float(x["latitude"]) - p[0]
+        m = re.match(r"\s*(\d+)", x.get("address") or "")
+        if m and math.hypot(wx, wy) < 0.00135:
+            sides[int(m[1]) % 2].append(wx * nx + wy * ny)
+    # The two sides are the two parities: the crossing estimate can sit on one
+    # side of the street, so a split on the sign of the offset is not one.
+    even, odd = sorted(sides[0]), sorted(sides[1])
+    if not even or not odd:
+        return axis, 0.0
+    return axis, (even[len(even) // 2] + odd[len(odd) // 2]) / 2
+
+
+def centreline_side(line, p: tuple, pt: tuple, side: str):
+    """Is pt on the named side of a centred street line? True, False, or None."""
+    if not line:
+        return None
+    axis, shift = line
+    cx, cy = COMPASS.get(side.upper(), (0, 0))
+    nx, ny = -axis[1], axis[0]
+    c = (cx * nx + cy * ny) / (math.hypot(cx, cy) or 1)
+    if abs(c) < 0.3:
+        return None
+    k = math.cos(math.radians(p[0]))
+    s = (pt[1] - p[1]) * k * nx + (pt[0] - p[0]) * ny - shift
+    return (s > 0) == (c > 0)
+
+
+def outline_ft(line, p: tuple, pts: list):
+    """The nearest an outline's vertex comes to a centred street line, in feet."""
+    if not line or not pts:
+        return None
+    axis, shift = line
+    k = math.cos(math.radians(p[0]))
+    nx, ny = -axis[1], axis[0]
+    return min(abs((q[0] - p[1]) * k * nx + (q[1] - p[0]) * ny - shift) for q in pts) * 364000
+
+
 def centroid(apn: str, shapes: dict, fallback):
     """A parcel's (lat, lng) centre from its outline, else its EAS point —
     EAS points sit on the street line often enough to land on the wrong side."""
@@ -376,7 +435,9 @@ def batch(path: str, tol: float = 0.04, as_json: bool = False) -> int:
             if x["parcel_number"] in near:
                 pts.setdefault(x["parcel_number"], (float(x["latitude"]), float(x["longitude"])))
         axes = (street_axis(A, ix), street_axis(B, ix))
-        found.append((e, (near, ix, toward, pts, axes), None))
+        lines = (centreline(A, ix), centreline(B, ix))
+        both = {x["parcel_number"] for x in A} & {x["parcel_number"] for x in B}
+        found.append((e, (near, ix, toward, pts, axes, lines, both), None))
     apns = sorted({a for _, hit, _ in found if hit for a in hit[0]})
     roll, names, pages = roll_rows(apns), planning_names(apns), pages_by_apn()
     shapes = block_shapes(sorted({a[:4] if not a[4].isalpha() else a[:5]
@@ -405,7 +466,7 @@ def batch(path: str, tol: float = 0.04, as_json: bool = False) -> int:
             if not as_json:
                 print(f"    {err}")
             continue
-        near, ix, toward, pts, axes = hit
+        near, ix, toward, pts, axes, lines, both = hit
         n = 0
         for apn in sorted(near):
             ro = roll.get(apn, {})
@@ -447,6 +508,19 @@ def batch(path: str, tol: float = 0.04, as_json: bool = False) -> int:
                 side = in_quadrant(list(axes), ix, here, e["quad"])
             if corner_only and side is False:
                 continue
+            # The second test, against each street's own centred line: a corner
+            # needs both streets' sides and an outline within 65 ft of both
+            # centrelines (or EAS addresses on both streets).
+            centre_ok = None
+            if here and e.get("side") and not e.get("quad"):
+                centre_ok = centreline_side(lines[0], ix, here, e["side"])
+            elif here and e.get("quad"):
+                vs = [centreline_side(ln, ix, here, e["quad"]) for ln in lines]
+                vs = [v for v in vs if v is not None]
+                outline = shapes[apn][1] if apn in shapes else []
+                dists = [outline_ft(ln, ix, outline) for ln in lines]
+                touches = apn in both or all(d is not None and d <= 65 for d in dists)
+                centre_ok = (all(vs) if vs else None) if touches else False
             n += 1
             mark = "  <-- year" if year_ok else ""
             d = ""
@@ -461,11 +535,14 @@ def batch(path: str, tol: float = 0.04, as_json: bool = False) -> int:
                 d = f"  ~{abs(along_ft({'latitude': pts[apn][0], 'longitude': pts[apn][1]}, ix, toward or (ix[0], ix[1] + 1e-3))):.0f} ft along {e['a']}"
             if side is not None:
                 d += "  side ok" if side else "  WRONG SIDE"
+            if centre_ok is False:
+                d += "  CENTRELINE DISAGREES"
             res["candidates"].append({
                 "apn": apn, "year": yr or None, "stories": ro.get("number_of_stories"),
                 "lot_area": area, "roll_year": ro.get("closed_roll_year"),
                 "front": [round(span[0], 1), round(span[1], 1)] if span else None,
                 "year_ok": year_ok, "offset_ok": offset_ok, "side_ok": side,
+                "centreline_ok": centre_ok, "on_both_streets": apn in both,
                 "crossing_ft": round(math.hypot(
                     (here[1] - ix[1]) * math.cos(math.radians(ix[0])), here[0] - ix[0]) * 364000)
                 if here else None,
