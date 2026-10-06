@@ -1,0 +1,152 @@
+{
+ "address": "960 Haight Street, San Francisco, CA 94117",
+ "path": "/san-francisco/haight-ashbury/haight-street/960/",
+ "apn": "1237037",
+ "block": "1237",
+ "lot": "037",
+ "eas_baseid": "298089",
+ "coordinates": {
+  "lat": 37.771291,
+  "lng": -122.438195
+ },
+ "parcel": {
+  "year_built": 1987,
+  "units": 1,
+  "stories": 1,
+  "rooms": 3,
+  "bathrooms": 1,
+  "bedrooms": 1,
+  "building_area_sqft": 845,
+  "use": "Single Family Residential",
+  "property_class": "Condominium",
+  "construction_type_code": "D",
+  "zoning": "RM-2",
+  "supervisor_district": 5,
+  "assessor_neighborhood": "Haight Ashbury",
+  "analysis_neighborhood": "Haight Ashbury",
+  "property_location_raw": "0000 0960 HAIGHT              ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 446823,
+  "assessed_improvement_value": 446823,
+  "last_sale_date": "2016-07-29"
+ },
+ "historic_status": {
+  "ceqa_status_code": "A",
+  "ceqa_status_code_article_10_11": "A",
+  "ceqa_status_label": "Historic resource",
+  "reason": "California Register Historic District, Historic Survey Result",
+  "yearbuilt": "1987",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "historic_district": {
+  "name": "Buena Vista North Historic District",
+  "california_register_status": "Eligible (not listed)",
+  "national_register_status": "Not listed",
+  "article_10_11_status": "No local landmark protection",
+  "local_landmark_protection": false,
+  "period_of_significance": "1870–1915",
+  "source": "sf-historic-districts"
+ },
+ "permits": [
+  {
+   "number": "201502198815",
+   "type": "otc alterations permit",
+   "status": "issued",
+   "filed": "2015-02-19",
+   "status_date": "2015-02-19",
+   "estimated_cost": 24195,
+   "revised_cost": 24195,
+   "description": "replacement of (e) handrails on guardrails with new railing attached @ same locations. repair in kind less than 50% exterior stairs. n/a for maher.",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "200305194955",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "2003-05-19",
+   "status_date": "2003-05-28",
+   "estimated_cost": 4500,
+   "revised_cost": 4500,
+   "description": "repair dry rotted areas at landings, 2 total, patach sheetrock opened for inspection",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "8508665",
+   "type": "new construction wood frame",
+   "status": "reinstated",
+   "filed": "1985-08-12",
+   "status_date": "1986-08-26",
+   "estimated_cost": 1500000,
+   "source": "sf-building-permits"
+  }
+ ],
+ "permit_summary": {
+  "count_on_file": 4,
+  "range": "1985–2015",
+  "shown_on_page": 3,
+  "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+ },
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAIGHT&street_type=ST&address_number=960",
+   "retrieved": "2026-10-06"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1237037&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-10-06"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1237&lot=037",
+   "retrieved": "2026-10-06"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1237037",
+   "retrieved": "2026-10-06"
+  },
+  {
+   "id": "sf-historic-districts",
+   "name": "SF Planning Department — Historic Districts via DataSF",
+   "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43819539250967%2037.77129086527453)%27)",
+   "retrieved": "2026-10-06"
+  },
+  {
+   "id": "sf-planning-commission-minutes-1968-09-05",
+   "name": "San Francisco City Planning Commission, minutes of the regular meeting of 5 September 1968",
+   "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+   "query": "https://archive.org/details/6minutesofsanfran1968sanf/page/n222/mode/1up",
+   "retrieved": "2026-10-06"
+  },
+  {
+   "id": "sf-planning-commission-minutes-1969-09-04",
+   "name": "San Francisco City Planning Commission, minutes of the regular meeting of 4 September 1969",
+   "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+   "query": "https://archive.org/details/10minutesofsanfran1969san/page/n120/mode/1up",
+   "retrieved": "2026-10-06"
+  }
+ ],
+ "historical_record": [
+  {
+   "date": "1968-09-05",
+   "kind": "planning decision",
+   "description": "The City Planning Commission disapproved reclassifying the three-lot site, then holding houses, from R-3 and R-4 to C-1 for a 54-room hotel, finding it would create an isolated commercial district in a residential area.",
+   "source": "sf-planning-commission-minutes-1968-09-05"
+  },
+  {
+   "date": "1969-09-04",
+   "kind": "planning decision",
+   "description": "The City Planning Commission accepted withdrawal of an application for a 100-bed convalescent hospital for long-term psychiatric care on the R-3 and R-4 property then on the site, after the staff recommended disapproval.",
+   "source": "sf-planning-commission-minutes-1969-09-04"
+  }
+ ]
+}

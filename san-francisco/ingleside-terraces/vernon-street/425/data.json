@@ -1,0 +1,130 @@
+{
+ "address": "425 Vernon Street, San Francisco, CA 94132",
+ "path": "/san-francisco/ingleside-terraces/vernon-street/425/",
+ "apn": "6995052",
+ "block": "6995",
+ "lot": "052",
+ "eas_baseid": "411172",
+ "coordinates": {
+  "lat": 37.720089,
+  "lng": -122.468334
+ },
+ "parcel": {
+  "year_built": 1916,
+  "units": 1,
+  "stories": 3,
+  "rooms": 11,
+  "bathrooms": 3,
+  "lot_area_sqft": 5000,
+  "building_area_sqft": 3116,
+  "use": "Single Family Residential",
+  "property_class": "Dwelling",
+  "construction_type_code": "D",
+  "zoning": "RH-1",
+  "supervisor_district": 11,
+  "assessor_neighborhood": "Merced Heights",
+  "analysis_neighborhood": "Oceanview/Merced/Ingleside",
+  "property_location_raw": "0000 0425 VERNON              ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 117373,
+  "assessed_improvement_value": 234770
+ },
+ "historic_status": {
+  "ceqa_status_code": "B",
+  "ceqa_status_code_article_10_11": "B",
+  "ceqa_status_label": "Unevaluated",
+  "reason": "No evaluation and 45 years or older",
+  "yearbuilt": "1916",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "permits": [
+  {
+   "number": "201611303749",
+   "type": "otc alterations permit",
+   "status": "issued",
+   "filed": "2016-11-30",
+   "status_date": "2016-11-30",
+   "estimated_cost": 1,
+   "revised_cost": 1,
+   "description": "replace in-kind retaining wall. main permit under pa 2016-1115-2784 (415 vernon)",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "9205205",
+   "type": "additions alterations or repairs",
+   "status": "expired",
+   "filed": "1992-04-03",
+   "status_date": "1992-09-01",
+   "estimated_cost": 3000,
+   "description": "reroofing",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "9204884",
+   "type": "additions alterations or repairs",
+   "status": "expired",
+   "filed": "1992-03-27",
+   "status_date": "1993-01-22",
+   "estimated_cost": 1350,
+   "description": "install 1.65 gal. into hood & duct area",
+   "source": "sf-building-permits"
+  }
+ ],
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VERNON&street_type=ST&address_number=425",
+   "retrieved": "2026-10-06"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6995052&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-10-06"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6995&lot=052",
+   "retrieved": "2026-10-06"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6995052",
+   "retrieved": "2026-10-06"
+  },
+  {
+   "id": "sf-planning-commission-minutes-1969-04-03",
+   "name": "San Francisco City Planning Commission, minutes of the regular meeting of 3 April 1969",
+   "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+   "query": "https://archive.org/details/9minutesofsanfran1969sanf/page/n48/mode/1up",
+   "retrieved": "2026-10-06"
+  },
+  {
+   "id": "sf-planning-commission-minutes-1969-04-24",
+   "name": "San Francisco City Planning Commission, minutes of the regular meeting of 24 April 1969",
+   "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+   "query": "https://archive.org/details/9minutesofsanfran1969sanf/page/n94/mode/1up",
+   "retrieved": "2026-10-06"
+  }
+ ],
+ "historical_record": [
+  {
+   "date": "1969-04-03",
+   "kind": "occupancy",
+   "description": "The property held a detached one-family dwelling of 3,250 square feet with ten rooms and three baths, set in substantial yards.",
+   "source": "sf-planning-commission-minutes-1969-04-03"
+  },
+  {
+   "date": "1969-04-24",
+   "kind": "occupancy",
+   "description": "The house was larger than the others on its street. The City Planning Commission approved, with eight conditions, use of the house by the Ingleside Cultural Arts Association as a day nursery for up to 34 preschool children and a cultural enrichment program for up to 20 school-age children a day, open 6 a.m. to 7 p.m., in an R-1 district.",
+   "source": "sf-planning-commission-minutes-1969-04-24"
+  }
+ ]
+}

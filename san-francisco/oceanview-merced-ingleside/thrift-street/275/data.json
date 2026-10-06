@@ -1,0 +1,117 @@
+{
+ "address": "275 Thrift Street, San Francisco, CA 94112",
+ "path": "/san-francisco/oceanview-merced-ingleside/thrift-street/275/",
+ "apn": "7055015F",
+ "block": "7055",
+ "lot": "015F",
+ "eas_baseid": "413770",
+ "coordinates": {
+  "lat": 37.717188,
+  "lng": -122.461609
+ },
+ "parcel": {
+  "year_built": 1949,
+  "units": 1,
+  "stories": 1,
+  "rooms": 4,
+  "bathrooms": 1,
+  "lot_area_sqft": 3123,
+  "building_area_sqft": 750,
+  "use": "Single Family Residential",
+  "property_class": "Dwelling",
+  "construction_type_code": "D",
+  "zoning": "RH-1",
+  "supervisor_district": 11,
+  "assessor_neighborhood": "Oceanview",
+  "analysis_neighborhood": "Oceanview/Merced/Ingleside",
+  "property_location_raw": "0000 0275 THRIFT              ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 394819,
+  "assessed_improvement_value": 169202,
+  "last_sale_date": "2008-09-19"
+ },
+ "historic_status": {
+  "ceqa_status_code": "B",
+  "ceqa_status_code_article_10_11": "B",
+  "ceqa_status_label": "Unevaluated",
+  "reason": "No evaluation and 45 years or older",
+  "yearbuilt": "1949",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "permits": [
+  {
+   "number": "202506209134",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "2025-06-20",
+   "status_date": "2025-08-12",
+   "estimated_cost": 600,
+   "revised_cost": 600,
+   "description": "replace 1 rear windows and 1 in front in kind. singlehung vinyl",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "200205217081",
+   "type": "otc alterations permit",
+   "status": "expired",
+   "filed": "2002-05-21",
+   "status_date": "2002-09-21",
+   "revised_cost": 0,
+   "description": "reroofing",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "8302636",
+   "type": "additions alterations or repairs",
+   "status": "complete",
+   "filed": "1983-03-31",
+   "status_date": "1983-06-21",
+   "estimated_cost": 3600,
+   "source": "sf-building-permits"
+  }
+ ],
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=THRIFT&street_type=ST&address_number=275",
+   "retrieved": "2026-10-06"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7055015F&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-10-06"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7055&lot=015F",
+   "retrieved": "2026-10-06"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7055015F",
+   "retrieved": "2026-10-06"
+  },
+  {
+   "id": "sf-planning-commission-minutes-1969-12-04",
+   "name": "San Francisco City Planning Commission, minutes of the regular meeting of 4 December 1969",
+   "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+   "query": "https://archive.org/details/11minutesofsanfran1969san/page/n214/mode/1up",
+   "retrieved": "2026-10-06"
+  }
+ ],
+ "historical_record": [
+  {
+   "date": "1969-12-04",
+   "kind": "occupancy",
+   "description": "The house was a repossessed three-bedroom single-family row house in an R-1 district in the Oceanview neighborhood, held by the Federal Housing Administration. The City Planning Commission found use of the rehabilitated row house as a scattered-site public housing unit, to be bought by the Housing Authority for $22,000, in conformity with the Master Plan.",
+   "source": "sf-planning-commission-minutes-1969-12-04"
+  }
+ ]
+}

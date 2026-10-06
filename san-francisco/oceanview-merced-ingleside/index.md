@@ -17,6 +17,7 @@ Merced Heights, the ridge between them, was mostly built after World War II.
 - [Ellington Avenue](ellington-avenue/) — 1 building, built 1917.
 - [Farallones Street](farallones-street/) — 1 building, built 1948.
 - [Faxon Avenue](faxon-avenue/) — 1 building, built 1930.
+- [Grafton Avenue](grafton-avenue/) — 1 building, built 1915.
 - [Granada Avenue](granada-avenue/) — 1 building, built 1989.
 - [Josiah Avenue](josiah-avenue/) — 1 building, built 1910.
 - [Jules Avenue](jules-avenue/) — 2 buildings, built 1926–1927.
@@ -33,6 +34,7 @@ Merced Heights, the ridge between them, was mostly built after World War II.
 - [Sadowa Street](sadowa-street/) — 1 building, built 1910.
 - [Sagamore Street](sagamore-street/) — 1 building, built 1890.
 - [Summit Street](summit-street/) — 1 building, built 1936.
+- [Thrift Street](thrift-street/) — 1 building, built 1949.
 
 ## Parks and public spaces
 

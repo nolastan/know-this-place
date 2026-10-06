@@ -1,0 +1,101 @@
+{
+ "address": "609 Hampshire Street, San Francisco, CA 94110",
+ "path": "/san-francisco/mission/hampshire-street/609/",
+ "apn": "4025013",
+ "block": "4025",
+ "lot": "013",
+ "eas_baseid": "367419",
+ "coordinates": {
+  "lat": 37.761496,
+  "lng": -122.407839
+ },
+ "parcel": {
+  "lot_area_sqft": 2495,
+  "use": "Commercial Misc",
+  "property_class": "Parking Lot",
+  "construction_type_code": "NA",
+  "zoning": "M1",
+  "supervisor_district": 9,
+  "assessor_neighborhood": "Inner Mission",
+  "analysis_neighborhood": "Mission",
+  "property_location_raw": "0000 0609 HAMPSHIRE           ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 24454,
+  "assessed_improvement_value": 1117
+ },
+ "historic_status": {
+  "ceqa_status_code": "B",
+  "ceqa_status_code_article_10_11": "B",
+  "ceqa_status_label": "Unevaluated",
+  "reason": "No evaluation and 45 years or older",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "permits": [
+  {
+   "number": "201209119373",
+   "type": "additions alterations or repairs",
+   "status": "complete",
+   "filed": "2012-09-11",
+   "status_date": "2014-08-26",
+   "estimated_cost": 950000,
+   "revised_cost": 1150000,
+   "description": "oshpd3 project - new interior improvements for 25 station dialysis clinic with support space. this project will require oshpd3 approval .",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "201208157378",
+   "type": "additions alterations or repairs",
+   "status": "complete",
+   "filed": "2012-08-15",
+   "status_date": "2014-08-26",
+   "estimated_cost": 750000,
+   "revised_cost": 780000,
+   "description": "shell&core improv for future dialysis clinic.landscape,remove(e)fence&replc w/ new wrought iron fence.replace parking lots, demo interior. add elevator tower. replace doors&windows.reroof, add roof screen. new hvac units. (blk&lot 4025/001(2012-08-15-7382) shall be referenced to this permit.)",
+   "source": "sf-building-permits"
+  }
+ ],
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMPSHIRE&street_type=ST&address_number=609",
+   "retrieved": "2026-10-06"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4025013&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-10-06"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4025&lot=013",
+   "retrieved": "2026-10-06"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4025013",
+   "retrieved": "2026-10-06"
+  },
+  {
+   "id": "sf-planning-commission-minutes-1968-07-11",
+   "name": "San Francisco City Planning Commission, minutes of the regular meeting of 11 July 1968",
+   "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+   "query": "https://archive.org/details/6minutesofsanfran1968sanf/page/n18/mode/1up",
+   "retrieved": "2026-10-06"
+  }
+ ],
+ "historical_record": [
+  {
+   "date": "1968-07-11",
+   "kind": "occupancy",
+   "description": "The R-3 lot had been used for years as a parking lot for customers, employees and delivery trucks of the Rose Exterminator Company. The City Planning Commission approved, with conditions on street trees, screening and lighting, the continued use of an R-3 lot for customer and employee parking for the Rose Exterminator Company.",
+   "source": "sf-planning-commission-minutes-1968-07-11"
+  }
+ ]
+}
