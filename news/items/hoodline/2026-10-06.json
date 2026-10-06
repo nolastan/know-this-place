@@ -1,0 +1,138 @@
+{
+  "source_id": "hoodline",
+  "batch": "2026-10-06",
+  "read_on": "2026-10-06",
+  "notes": "Eleven queued across feeds, read. One earns an entry (Pause Studio). Other stories: Curry bar declined (headline names a person), Ember Cafe (planned), Farewinds (South SF), Juniper (San Mateo), 1120 Jackson/907 Valencia nuisance-eviction policy stories (address in passing, tenants), others name no address.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 11,
+    "mentions": 4,
+    "remaining": "none"
+  },
+  "findings": [
+    {
+      "id": "2026-10-06-hl-0001",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "kind": "opening",
+      "address_as_written": "2234 Market Street",
+      "street_number": "2234",
+      "street_type": "ST",
+      "street_name": "MARKET",
+      "description": "Pause Studio, a wellness studio, opened 12 September in a previously vacant ground-floor retail space of the 2022 condo building at 2238 Market.",
+      "extra": {},
+      "citation": {
+        "label": "Hoodline, “A Look Inside the Castro's Newest Wellness Center 'Pause Studio',” 5 October 2026",
+        "url": "https://hoodline.com/2026/10/a-look-inside-the-castro-s-newest-wellness-center-pause-studio/"
+      },
+      "raw": {
+        "text": "A Look Inside the Castro's Newest Wellness Center 'Pause Studio'"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "pending",
+        "note": "Resolver: 2234 Market St is a condominium (one parcel per unit, none the building); the directory contract defers condo parcels, so no page can be seeded. Revisit if a page for the building appears."
+      },
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-10-06",
+        "method": "sf-eas-addresses has 2234 MARKET ST but it does not join to one parcel. 2234 MARKET ST's coordinates fall in 20 active parcels (3560122, 3560095, 3560129, 3560105…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
+        "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+      }
+    },
+    {
+      "id": "2026-10-06-hl-0002",
+      "date": "2026-10-05",
+      "date_precision": "day",
+      "kind": "opening",
+      "address_as_written": "335 Powell Street",
+      "street_number": "335",
+      "street_type": "ST",
+      "street_name": "POWELL",
+      "description": "A reservation-only bourbon bar opened inside the Westin St. Francis.",
+      "extra": {},
+      "citation": {
+        "label": "Hoodline, “Steph Curry's Hush-Hush Bourbon Bar Pours Basketball-Shaped Ice in Union Square,” 5 October 2026",
+        "url": "https://hoodline.com/2026/10/steph-curry-s-hush-hush-bourbon-bar-pours-basketball-shaped-ice-in-union-square/"
+      },
+      "raw": {
+        "text": "Steph Curry's Hush-Hush Bourbon Bar Pours Basketball-Shaped Ice in Union Square"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Headline names a private individual (not an architect, builder, developer or firm); cannot be published verbatim."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0307001",
+        "path": "/san-francisco/nob-hill/powell-street/301/",
+        "eas_address": "301 POWELL ST",
+        "method": "EAS exact match on 335 POWELL ST → parcel 0307001; sf-parcels has blklot 0307001 active, 300–330 GEARY; the 2025 roll records it as commercial hotel, built 1904. EAS puts 301, 303, 305, 307, 309, 311, 313, 315, 317, 319, 321, 323, 325, 327, 329, 331, 333, 335, 337, 339, 341, 343, 345 POWELL ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 301.",
+        "checked_on": "2026-10-06"
+      }
+    },
+    {
+      "id": "2026-10-06-hl-0003",
+      "date": "2026-10-05",
+      "date_precision": "day",
+      "kind": "opening",
+      "address_as_written": "3248 22nd St.",
+      "street_number": "3248",
+      "street_type": "ST",
+      "street_name": "22ND",
+      "description": "Ember Cafe plans to open mid-November in the former Revolution Cafe space.",
+      "extra": {},
+      "citation": {
+        "label": "Hoodline, “Ember Cafe to Light Up Mission's Old Revolution Cafe Spot This November,” 5 October 2026",
+        "url": "https://hoodline.com/2026/10/ember-cafe-to-light-up-mission-s-old-revolution-cafe-spot-this-november/"
+      },
+      "raw": {
+        "text": "Ember Cafe to Light Up Mission's Old Revolution Cafe Spot This November"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "A planned opening, not yet an event; revisit when it opens."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3616009",
+        "path": "/san-francisco/mission/22nd-street/3224/",
+        "eas_address": "3224 22ND ST",
+        "method": "EAS exact match on 3248 22ND ST → parcel 3616009; sf-parcels has blklot 3616009 active, 3224–3248 22ND; the 2025 roll records it as multi-family residential, built 1885. EAS puts 3224, 3226, 3228, 3230, 3232, 3234, 3242, 3246, 3248 22ND ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 3224.",
+        "checked_on": "2026-10-06"
+      }
+    },
+    {
+      "id": "2026-10-06-hl-0004",
+      "date": "2026-10-05",
+      "date_precision": "day",
+      "kind": "opening",
+      "address_as_written": "357 Oyster Point Blvd.",
+      "street_number": "357",
+      "street_type": "BLVD",
+      "street_name": "OYSTER POINT",
+      "description": "Farewinds Food Hall opens to the public.",
+      "extra": {},
+      "citation": {
+        "label": "Hoodline, “Farewinds Food Hall Opens at Oyster Point, Finally Open to All of South City,” 5 October 2026",
+        "url": "https://hoodline.com/2026/10/farewinds-food-hall-opens-at-oyster-point-finally-open-to-all-of-south-city/"
+      },
+      "raw": {
+        "text": "Farewinds Food Hall Opens at Oyster Point, Finally Open to All of South City"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "South San Francisco, outside the site's city."
+      },
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-10-06",
+        "method": "sf-eas-addresses holds no street named OYSTER POINT BLVD, under that spelling or any spelling of it, so the address cannot be looked up.",
+        "note": "The street the record names is not a street in the city's address registry today; the record may name a private way, a renamed street or a spelling this pass could not match."
+      }
+    }
+  ]
+}
