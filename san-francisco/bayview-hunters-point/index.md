@@ -13,6 +13,7 @@ San Francisco's south-eastern quarter, settled from the 1860s as the industrial 
 - [Carroll Avenue](carroll-avenue/) — 1 building, built 2016.
 - [Cesar Chavez Street](cesar-chavez-street/) — 1 building, built 1900.
 - [Charter Oak Avenue](charter-oak-avenue/) — 1 building, built 1956.
+- [Davidson Avenue](davidson-avenue/) — 1 building, built 1950.
 - [Dorman Avenue](dorman-avenue/) — 1 building, built 1947.
 - [Earl Street](earl-street/) — 1 building, built 1947.
 - [Egbert Avenue](egbert-avenue/) — 2 buildings, built 1900–1910.

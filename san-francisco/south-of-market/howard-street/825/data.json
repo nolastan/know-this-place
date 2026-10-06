@@ -1,0 +1,104 @@
+{
+ "address": "825 Howard Street, San Francisco, CA 94103",
+ "path": "/san-francisco/south-of-market/howard-street/825/",
+ "apn": "3733160",
+ "block": "3733",
+ "lot": "160",
+ "eas_baseid": "462927",
+ "coordinates": {
+  "lat": 37.782608,
+  "lng": -122.403299
+ },
+ "parcel": {
+  "year_built": 2007,
+  "building_area_sqft": 11180,
+  "use": "Commercial Retail",
+  "property_class": "Commercial Stores",
+  "construction_type_code": "NA",
+  "supervisor_district": 6,
+  "assessor_neighborhood": "Yerba Buena",
+  "analysis_neighborhood": "South of Market",
+  "property_location_raw": "0000 0825 HOWARD              ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 796576,
+  "assessed_improvement_value": 2376938
+ },
+ "permits": [
+  {
+   "number": "201405135645",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "2014-05-13",
+   "status_date": "2014-10-06",
+   "estimated_cost": 5000,
+   "revised_cost": 5000,
+   "description": "new fire alarm devices for new tenant improvment. includes (1) power supply, (2) pull stations, (1) sd, (3) strobes, (8) speaker/strobes, (1) control module. ref app#201404163388",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "201405085220",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "2014-05-08",
+   "status_date": "2014-07-24",
+   "estimated_cost": 5000,
+   "revised_cost": 13364,
+   "description": "add 26 new fire sprinkler drops for new t.i. on ground fl. ref. appl #201404163388.",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "201404163388",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "2014-04-16",
+   "status_date": "2014-07-18",
+   "estimated_cost": 400000,
+   "revised_cost": 580000,
+   "description": "tenant improvement for new office space. work includes offices, restrooms, mech, elec, plumbing.",
+   "source": "sf-building-permits"
+  }
+ ],
+ "permit_summary": {
+  "count_on_file": 5,
+  "range": "2014–2016",
+  "shown_on_page": 3,
+  "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+ },
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HOWARD&street_type=ST&address_number=825",
+   "retrieved": "2026-10-06"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3733160&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-10-06"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3733&lot=160",
+   "retrieved": "2026-10-06"
+  },
+  {
+   "id": "sf-planning-commission-minutes-1969-01-23",
+   "name": "San Francisco City Planning Commission, minutes of the regular meeting of 23 January 1969",
+   "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+   "query": "https://archive.org/details/8minutesofsanfran1969sanf/page/n94/mode/1up",
+   "retrieved": "2026-10-06"
+  }
+ ],
+ "historical_record": [
+  {
+   "date": "1969-01-23",
+   "kind": "planning decision",
+   "description": "The City Planning Commission approved, with conditions, public housing for the elderly on a site then including this Howard Street parcel, which was to keep an entrance to the project and could take a commercial ground floor.",
+   "source": "sf-planning-commission-minutes-1969-01-23"
+  }
+ ]
+}

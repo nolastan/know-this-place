@@ -31,6 +31,7 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [Precita Avenue](precita-avenue/) — Four units of 1905 at the foot of the hill, a 1974 Patty Hearst address.
 - [Prospect Avenue](prospect-avenue/) — 1 building, built 1979.
 - [Richland Avenue](richland-avenue/) — 1 building, built 1907.
+- [Ripley Street](ripley-street/) — 2 buildings, built 1917–1940.
 - [Rutledge Street](rutledge-street/) — 1 building, built 1973.
 - [Shotwell Street](shotwell-street/) — 1 building.
 - [Virginia Avenue](virginia-avenue/) — 1 building, built 1910.

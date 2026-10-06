@@ -1,0 +1,102 @@
+{
+ "address": "1064 Oak Street, San Francisco, CA 94117",
+ "path": "/san-francisco/haight-ashbury/oak-street/1064/",
+ "apn": "1216019",
+ "block": "1216",
+ "lot": "019",
+ "eas_baseid": "297455",
+ "coordinates": {
+  "lat": 37.773619,
+  "lng": -122.43675
+ },
+ "parcel": {
+  "year_built": 1988,
+  "lot_area_sqft": 12812,
+  "use": "Commercial Misc",
+  "property_class": "Parking Lot",
+  "construction_type_code": "D",
+  "zoning": "RH-3",
+  "supervisor_district": 5,
+  "assessor_neighborhood": "Hayes Valley",
+  "analysis_neighborhood": "Hayes Valley",
+  "property_location_raw": "0000 1064 OAK                 ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 1386955,
+  "assessed_improvement_value": 104006
+ },
+ "historic_status": {
+  "ceqa_status_code": "C",
+  "ceqa_status_code_article_10_11": "C",
+  "ceqa_status_label": "Not a historical resource",
+  "reason": "Not 45 years or older",
+  "yearbuilt": "1988",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "permits": [
+  {
+   "number": "201912179800",
+   "type": "new construction",
+   "status": "issued",
+   "filed": "2019-12-17",
+   "status_date": "2026-05-05",
+   "estimated_cost": 47875275,
+   "revised_cost": 71252700,
+   "description": "to erect 5 stories type iii-a over 3 stories type i-a mixed use 8 story building, with 203 residential dwelling units and amenity spaces, with a commercial tenant space at level 1. (r-2, a-3, a-2, s-2, b)",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "M16396",
+   "type": "otc alterations permit",
+   "status": "expired",
+   "filed": "2001-06-12",
+   "status_date": "2002-06-12",
+   "revised_cost": 32500,
+   "description": "street space",
+   "source": "sf-building-permits"
+  }
+ ],
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=OAK&street_type=ST&address_number=1064",
+   "retrieved": "2026-10-06"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1216019&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-10-06"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1216&lot=019",
+   "retrieved": "2026-10-06"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1216019",
+   "retrieved": "2026-10-06"
+  },
+  {
+   "id": "sf-planning-commission-minutes-1968-11-07",
+   "name": "San Francisco City Planning Commission, minutes of the regular meeting of 7 November 1968",
+   "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+   "query": "https://archive.org/details/7minutesofsanfran1968sanf/page/n200/mode/1up",
+   "retrieved": "2026-10-06"
+  }
+ ],
+ "historical_record": [
+  {
+   "date": "1968-11-07",
+   "kind": "site history",
+   "description": "The property held a two-family dwelling, zoned R-4, next to a gasoline station at the Divisadero Street corner. The City Planning Commission approved reclassifying the lot from R-4 to C-2 so the two-family dwelling could be demolished and the adjoining Shell service station's frontage on Oak Street extended to 150 feet.",
+   "source": "sf-planning-commission-minutes-1968-11-07"
+  }
+ ]
+}

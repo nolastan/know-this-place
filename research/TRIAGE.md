@@ -106,22 +106,6 @@ documents sampled are large and text-bearing (LM271, 75pp; LM300, 235pp), but
 LM11 and LM200 are image-only and would need OCR. Same publisher as
 `sf-context-statements` but an entirely separate corpus.
 
-**San Francisco City Planning Commission minutes.** 109 volumes in the same
-SFPL collection, **1946–1984**, each with a `_djvu.txt`. The payload is the
-case calendar: a case number, the address, the zoning, the request, the date
-and the Commission's decision. **The address line carries a survey bearing**,
-which is exactly what the resolver needs where a street number alone is
-ambiguous. **Sampled:** `10minutesofsanfran1969san` — "CU67.13 960 Haight
-Street, north line, east of Broderick Street; and Broderick Street, east line,
-between 112.5 feet and 137.5 feet north of Haight Street. Request for 100-bed
-convalescent hospital for long-term psychiatric care on property zoned R-3 and
-R-4", carried over from the meeting of 7 August 1969. The same volume names 801
-and 731 Grove, 751 and 725 Webster, 1280 Ellis and 6021 Geary. **Caution:** 100
-Larkin Street is the top numbered token in every volume and it is the library's
-and the Commission's own address, not a case — the same advertiser-address trap
-the trade-journals note describes. Volumes are undated in the IA metadata; the
-year is in the text.
-
 **Period trade journals.** Two runs, mined identically, so they are one lead.
 ***Architect and Engineer of California***: 214 issues on the Internet Archive
 under `usmodernist-AECA-*`. ***Building & Engineering News***: 35 volumes under

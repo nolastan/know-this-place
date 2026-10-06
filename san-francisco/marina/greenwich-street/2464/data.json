@@ -1,0 +1,121 @@
+{
+ "address": "2464–2466 Greenwich Street, San Francisco, CA 94123",
+ "path": "/san-francisco/marina/greenwich-street/2464/",
+ "apn": "0512013",
+ "block": "0512",
+ "lot": "013",
+ "eas_baseid": "283840",
+ "coordinates": {
+  "lat": 37.798705,
+  "lng": -122.440244
+ },
+ "address_range": "2464–2466",
+ "street_numbers_on_parcel": [
+  "2464",
+  "2466"
+ ],
+ "parcel": {
+  "year_built": 1908,
+  "units": 2,
+  "stories": 2,
+  "rooms": 11,
+  "bathrooms": 2,
+  "lot_area_sqft": 4190,
+  "building_area_sqft": 2808,
+  "use": "Multi-Family Residential",
+  "property_class": "Flats & Duplex",
+  "construction_type_code": "D",
+  "zoning": "RH-2",
+  "supervisor_district": 2,
+  "assessor_neighborhood": "Cow Hollow",
+  "analysis_neighborhood": "Marina",
+  "property_location_raw": "2466 2464 GREENWICH           ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 120109,
+  "assessed_improvement_value": 192201
+ },
+ "historic_status": {
+  "ceqa_status_code": "B",
+  "ceqa_status_code_article_10_11": "B",
+  "ceqa_status_label": "Unevaluated",
+  "reason": "No evaluation and 45 years or older",
+  "yearbuilt": "1908",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "permits": [
+  {
+   "number": "9705707",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "1997-03-28",
+   "status_date": "1997-07-25",
+   "estimated_cost": 4160,
+   "description": "install 7 vinyl windows in existing frames",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "9702755",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "1997-02-14",
+   "status_date": "1997-08-14",
+   "estimated_cost": 7500,
+   "description": "replace wood stairs",
+   "source": "sf-building-permits"
+  },
+  {
+   "number": "9113040",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "1991-07-24",
+   "status_date": "1991-08-20",
+   "estimated_cost": 6100,
+   "description": "reroofing",
+   "source": "sf-building-permits"
+  }
+ ],
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GREENWICH&street_type=ST&address_number=2464",
+   "retrieved": "2026-10-06"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0512013&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-10-06"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0512&lot=013",
+   "retrieved": "2026-10-06"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0512013",
+   "retrieved": "2026-10-06"
+  },
+  {
+   "id": "sf-planning-commission-minutes-1969-11-06",
+   "name": "San Francisco City Planning Commission, minutes of the regular meeting of 6 November 1969",
+   "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+   "query": "https://archive.org/details/11minutesofsanfran1969san/page/n122/mode/1up",
+   "retrieved": "2026-10-06"
+  }
+ ],
+ "historical_record": [
+  {
+   "date": "1969-11-06",
+   "kind": "occupancy",
+   "description": "The apartment building was being used as part of the Lanai Motel on Lombard Street, with cars parked in its rear yard in violation of R-3 zoning.",
+   "source": "sf-planning-commission-minutes-1969-11-06"
+  }
+ ]
+}
