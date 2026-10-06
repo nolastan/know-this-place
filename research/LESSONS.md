@@ -2749,3 +2749,12 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   lives in `corner.py --json` as `centreline_ok`, instead of being rebuilt in
   each run's session script.
   ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **A bulk crawl of a walled host costs the one route that was open.** Mapping
+  Chronicling America's reel folders one listing each (about 900 requests in
+  a few minutes) drew a host-wide Cloudflare challenge, and the tarball
+  download that followed saved a 5.6 KB challenge page under the `.tar.bz2`
+  name and kept doing so for 45 minutes. *Find a gap from the cheapest
+  listing that answers it — reel names sort in issue order across batches, so
+  one listing per batch shows which reel sits next to the gap — pace anything
+  more at seconds per request, and check a download with `file` before
+  trusting it.* ([sources/loc-newspapers.md](sources/loc-newspapers.md))

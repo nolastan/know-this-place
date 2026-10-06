@@ -89,6 +89,14 @@ a street number, which is the whole constraint:
   (`1911040801`) are the issue dates. One tarball took a 429 and came through
   on a retry ninety seconds later. Extract only the text:
   `tar xjf <batch>.tar.bz2 -C txt --wildcards '*.txt'`.
+- **Listing reels in bulk costs the tarballs.** On 2026-10-06 about 900
+  directory listings in a few minutes (every reel of every `sn85066387`
+  batch) drew a Cloudflare challenge on the whole host, and the tarball route
+  then answered 429 with a challenge page — saved under the `.tar.bz2` name,
+  5.6 KB — for 45 minutes. The reel *names*, one listing per batch, are
+  enough to find a gap: they sort in issue order across batches, so the reel
+  numbered next to a gap's neighbour is the one to list. Check a downloaded
+  tarball with `file` before extracting.
 - **The August 2026 pass left nothing on disk.** Its `state.json` and
   `batch-index.json` went with its container, and it wrote no findings file:
   the 21 pages citing `loc-sf-call-*` ids are what it published, by hand. Its
@@ -110,14 +118,14 @@ Issue counts per year; a year split across batches needs all of them.
 | | 1897 | `fredsplace_ver01` (152), `idyllwild_ver01` (212) |
 | | 1898 | `ahwahnee_ver01` (365) |
 | | 1899 | `carlsbad` (46), `exeter_ver01` (181), `joshuaTree` (137) |
-| | 1900–1905 | `albion_ver01` (from January 1900), `brea_ver01` (from May 1900), `carmel_ver01` (from August 1901), `darwin_ver01` (October 1901, 1903, March–November 1904), `felix_ver01` (September 1903, May, June and August 1905), `plasse_ver01` (January 1905), `quincy_ver01` (November–December 1901, December 1904), `oasis_ver01` (February–March 1905) — reel folders mapped 2026-10-05; **no batch holds January–March 1906** |
+| | 1900–1905 | `albion_ver01` (from January 1900), `brea_ver01` (from May 1900), `carmel_ver01` (from August 1901), `darwin_ver01` (October 1901, 1903, March–November 1904), `felix_ver01` (September 1903, May, June and August 1905), `plasse_ver01` (January 1905), `quincy_ver01` (November–December 1901, December 1904), `oasis_ver01` (February–March 1905) — reel folders mapped 2026-10-05; **no batch holds January–March 1906** except a single issue, **25 March 1906**, on reel `00100480748` inside `curiv_jenner_ver01` (a 1909–1910 batch; found 2026-10-06 by sorting every batch's reel names, the reel numbered just before `hercules`'s first, `0010048075A`, 1 April 1906) |
 | | 1906–1907 | `hercules_ver01` (275 + 92), `indio_ver01` (1907: 245), `mecca_ver01` (1907: 28) — **the daily Building Contracts lists read in full** for 1907 (2026-10-04) and for 1906 as far as `hercules` holds it, 1 April–31 December (2026-10-05) |
 | | **1908** | `indio` (90), `jenner_ver01` (31), `llano_ver01` (245) — **fetched 2026-10-04**; **the daily Building Contracts lists read in full** 2026-10-04 |
 | | **1909** | `jenner` (92), `llano` (61), `mecca` (151), `needles_ver01` (61) — **all four fetched 2026-10-03**; **the daily Building Contracts lists read in full** 2026-10-03 |
 | | **1910** | `curiv_jenner_ver01` (90), `curiv_klamath_ver01` (122), `curiv_mecca_ver01` (122), `curiv_needles_ver01` (31) — **all four fetched 2026-09-23**, again 2026-10-03; **read in full** (January–June, July–December, and twice more for owner-only corner/offset entries with and without a lot, #407 and #412), and **the daily Building Contracts lists read in full** 2026-10-03 |
 | | **1911** | `curiv_betteravia_ver02` (Jan–Aug, 5,901 pages), `curiv_angwin_ver02` (Sep–Dec, 2,996 pages) — **both on disk** |
 | | **1912** | `angwin` (106), `calipatria_ver03` (183), `dardanelle_ver01` (64) — 9,693 pages, **all three fetched 2026-09-23**; nothing after 15 December in these three — 16–31 December is in `curiv_elderwood_ver02` (see 1913) |
-| | 1913 | `dardanelle` (15: 1–15 February), `grimes_ver01` (132: 16 July–8 December) — **both fetched 2026-09-23**; and **`curiv_elderwood_ver02`** (196 issues: 16–31 December 1912 and 1 January–15 July 1913, all but 1–15 February) — **fetched 2026-10-05; the daily Building Contracts lists read in full**. The 2026-09-23 check that called these months "in no batch" missed elderwood, which this table had filed under 1900–1905 unmapped: map a batch by its reel folders before ruling a year out |
+| | 1913 | `dardanelle` (15: 1–15 February), `grimes_ver01` (132: 16 July–8 December) — **both fetched 2026-09-23**; and **`curiv_elderwood_ver02`** (196 issues: 16–31 December 1912 and 1 January–15 July 1913, all but 1–15 February) — **fetched 2026-10-05; the daily Building Contracts lists read in full**. The 2026-09-23 check that called these months "in no batch" missed elderwood, which this table had filed under 1900–1905 unmapped: map a batch by its reel folders before ruling a year out. **9–31 December 1913 is in no batch**: `grimes`'s last reel, `00280768686`, is the highest `sn85066387` reel number in any of the 33 batches that hold the title (checked 2026-10-06) |
 | *Morning Call* `sn94052989` | 1890–1895 | `kaweah_ver01`, `hemet_ver01`, `garberville_ver01`, `exeter`, `idyllwild`, `oakland_ver01`, `pescadero_ver01` |
 
 ### The 1911 Real Estate and Financial Section
@@ -949,14 +957,21 @@ another batch and is unread. What was new:
   for 1906 (April–December), 1907, 1908, 1909, 1910, 1911, 1912 and 1913** —
   1913 now in full except 9–31 December, since `curiv_elderwood_ver02` turned
   out to hold 16 December 1912 – 15 July 1913 (read 2026-10-05) beside
-  `dardanelle`'s 1–15 February and `grimes`'s 16 July–8 December. **Next:
-  January–March 1906** and **9–31 December 1913**, in whichever batches hold
-  them — neither is mapped, and the lesson of `elderwood` is to list a batch's
-  reel folders before believing a year is unavailable;
+  `dardanelle`'s 1–15 February and `grimes`'s 16 July–8 December. Both gaps the
+  last pass named were mapped on 2026-10-06: **January–March 1906 survives as
+  one issue, 25 March 1906, inside `jenner`**, and **9–31 December 1913 is in
+  no batch at all** (see the table). **Next:** the 25 March 1906 issue when
+  `jenner` is next on disk (one day, pre-fire; read it on the 1906 method);
   then the 1907 placement of 1499 Sutter re-tested with the centreline test
   (its outline does not reach Gough); then the Union Trust building's placement checked against a
   source that names its lot; then the 1907–1913 lists'
   refused single candidates, re-read against the Sanborn sheets where a
   parcel was re-cut. The rest of the 1911, 1912 and 1913 paper —
-  the fires and the building-permit lists — is on disk in a session that
-  fetched it, and unread.
+  the fires and the building-permit lists — was sized on 2026-10-06 against
+  January–August 1911 (`betteravia`, 5,901 pages) and is **not worth a run**:
+  the 1911 *Call* prints **no daily permit list** (permits appear only as the
+  weekly total in the Saturday section, already read), and **no Fire Alarms
+  column**; fires are news stories, and a scan for a numbered address within
+  400 characters of three fire words found 91 hits on 71 pages, most of them
+  Oakland, Berkeley, Alameda or out of state, and nearly all built around a
+  named occupant or victim.
