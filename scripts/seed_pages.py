@@ -2452,7 +2452,7 @@ REFERRALS = {
         # agrees. The minimum booking that earns it is in merchants/AGENTS.md,
         # not on fifty pages.
         "url": ("https://bounce.com/s/settings/referral-code-received"
-                "?utm_source=referrer_link&coupon=BOUNCE-L9GB4PBQH"),
+                "?utm_source=referrer_link&coupon=BOUNCE-N2182HCCD"),
         "offer": "Get $5 off your first Bounce booking",
         "app": "Bounce",
         "note": "Referral link. Sign up and then book this spot.",
