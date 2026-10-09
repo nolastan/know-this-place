@@ -1,0 +1,144 @@
+{
+  "address": "2116 Sutter Street, San Francisco, CA 94115",
+  "path": "/san-francisco/japantown/sutter-street/2116/",
+  "apn": "0679007",
+  "block": "0679",
+  "lot": "007",
+  "eas_baseid": "287588",
+  "coordinates": {
+    "lat": 37.786061,
+    "lng": -122.435312
+  },
+  "parcel": {
+    "year_built": 1963,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2750,
+    "building_area_sqft": 2365,
+    "use": "Commercial Office",
+    "property_class": "Office",
+    "construction_type_code": "D",
+    "zoning": "NC-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Lower Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "0000 2116 SUTTER              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 401985,
+    "assessed_improvement_value": 807724,
+    "assessed_fixtures_value": 24594,
+    "last_sale_date": "1988-02-04"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1963",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200502286316",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-02-28",
+      "status_date": "2005-08-18",
+      "estimated_cost": 17500,
+      "revised_cost": 17500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9321104",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-12-01",
+      "status_date": "1994-09-22",
+      "estimated_cost": 11570,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8820157",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-12-21",
+      "status_date": "1989-04-06",
+      "estimated_cost": 30000,
+      "description": "mechanical air & heat as per title 24",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8818293",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-11-17",
+      "status_date": "1989-02-22",
+      "estimated_cost": 18000,
+      "description": "install fire protection system entire building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8801735",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-02-11",
+      "status_date": "1989-04-06",
+      "estimated_cost": 115000,
+      "description": "rear enclosure",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "1988–2010",
+    "shown_on_page": 5,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SUTTER&street_type=ST&address_number=2116",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0679007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0679&lot=007",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0679007",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1970-05-07",
+      "name": "San Francisco City Planning Commission, minutes of the regular meeting of 7 May 1970",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/13minutesofsanfran1970sa/page/n140/mode/1up",
+      "retrieved": "2026-10-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1970-05-07",
+      "kind": "occupancy",
+      "description": "The building held an ambulance service facility that had outlived its usefulness.",
+      "source": "sf-planning-commission-minutes-1970-05-07"
+    }
+  ]
+}

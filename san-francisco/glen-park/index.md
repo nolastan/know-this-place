@@ -36,6 +36,7 @@ Diamond and Chenery and evaluated eight of them in detail.
 - [Monterey Boulevard](monterey-boulevard/) — 1 building, built 1900.
 - [Portola Drive](portola-drive/) — 1 building.
 - [Randall Street](randall-street/) — 1 building, built 1903.
+- [Sussex Street](sussex-street/) — 4 buildings, built 1977.
 - [Turquoise Way](turquoise-way/) — 3 buildings, built 1962–1964; 3 in the Diamond Heights Historic District.
 - [Whitney Street](whitney-street/) — 1 building, built 1908.
 - [Wilder Street](wilder-street/) — 3 buildings, built 1938–1954.

@@ -1179,6 +1179,22 @@ def decide(city: City, f: dict, today: str) -> dict:
         if name:
             bits.append(f"the street ({name} {stype or ''})".strip())
         what = f.get("address_as_written")
+        named = recorded_parcels(f)
+        if named and recorded_name:
+            # A record that prints its own block and lot has placed itself;
+            # only the street number is missing, and EAS does not need it.
+            # The join is by parcel, which this branch has no cache for, so
+            # say what to look up instead of calling the record unplaceable.
+            return {"status": "unresolved", "checked_on": today,
+                    "method": "The record states no street number, so there is nothing to look up "
+                              "in sf-eas-addresses by address.",
+                    "note": (f"The record locates it as \"{what}\" and names its own parcel"
+                             f"{'s' if len(named) > 1 else ''} {', '.join(named)}. Look "
+                             f"{'them' if len(named) > 1 else 'it'} up in sf-parcels (acdm-wktn, "
+                             "blklot) and sf-eas-addresses (parcel_number): one active lot whose "
+                             "addresses are on the street the record names can be placed by hand "
+                             "(by_hand, LESSONS.md, a record that names its own parcel); several "
+                             "lots, or a lot with no address, stay unresolved.")}
         return {"status": "unresolved", "checked_on": today,
                 # Source-neutral: this branch runs for every corpus, and a
                 # sentence about catalogue titles and archivists' notes is

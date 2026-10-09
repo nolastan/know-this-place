@@ -1,0 +1,123 @@
+{
+  "address": "649 Diamond Street, San Francisco, CA 94114",
+  "path": "/san-francisco/noe-valley/diamond-street/649/",
+  "apn": "2804022",
+  "block": "2804",
+  "lot": "022",
+  "eas_baseid": "497570",
+  "coordinates": {
+    "lat": 37.752069,
+    "lng": -122.436228
+  },
+  "parcel": {
+    "year_built": 1893,
+    "units": 2,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2625,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 0690 ELIZABETH           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 239252,
+    "assessed_improvement_value": 191394,
+    "last_sale_date": "1987-10-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1893",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Diamond & Elizabeth Streets Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1878–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201109275550",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-09-27",
+      "status_date": "2011-09-27",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9918374",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-09-02",
+      "status_date": "1999-12-30",
+      "estimated_cost": 11300,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DIAMOND&street_type=ST&address_number=649",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2804022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2804&lot=022",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2804022",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43622840974149%2037.75206935631882)%27)",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1970-08-27",
+      "name": "San Francisco City Planning Commission, minutes of the regular meeting of 27 August 1970",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/14minutesofsanfran1970sa/page/n300/mode/1up",
+      "retrieved": "2026-10-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1970-08-27",
+      "kind": "planning decision",
+      "description": "The building held a grocery store, a commercial use left nonconforming in a residential district and due to end in 1970. The City Planning Commission approved, with conditions, extending the life of the nonconforming use (grocery store) to May 2, 1980.",
+      "source": "sf-planning-commission-minutes-1970-08-27"
+    }
+  ]
+}

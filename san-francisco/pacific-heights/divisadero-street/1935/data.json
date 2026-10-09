@@ -1,0 +1,110 @@
+{
+  "address": "1935 Divisadero Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/divisadero-street/1935/",
+  "apn": "1028057",
+  "block": "1028",
+  "lot": "057",
+  "eas_baseid": "483743",
+  "coordinates": {
+    "lat": 37.787571,
+    "lng": -122.440682
+  },
+  "parcel": {
+    "year_built": 2012,
+    "bathrooms": 1,
+    "building_area_sqft": 632,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Store Condo",
+    "construction_type_code": "NA",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Lower Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "0000 2829 CALIFORNIA          ST0012"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 377306,
+    "assessed_improvement_value": 377306,
+    "last_sale_date": "2020-02-10"
+  },
+  "permits": [
+    {
+      "number": "201611042009",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2016-11-04",
+      "status_date": "2026-01-09",
+      "estimated_cost": 3139,
+      "revised_cost": 0,
+      "description": "non electric wall sign",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201511092156",
+      "type": "sign - erect",
+      "status": "cancelled",
+      "filed": "2015-11-09",
+      "status_date": "2026-01-09",
+      "estimated_cost": 1465,
+      "revised_cost": 1500,
+      "description": "electric projecting sign",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201509177331",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2015-09-17",
+      "status_date": "2026-01-09",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "change address to permit application #201504234453, from old address 1933 divisadero st to 1935 divisadero st.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M358731",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-11-19",
+      "status_date": "2012-11-20",
+      "revised_cost": 267,
+      "description": "change/add address 1933 divisadero st 5d.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DIVISADERO&street_type=ST&address_number=1935",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1028057&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1028&lot=057",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1970-05-21",
+      "name": "San Francisco City Planning Commission, minutes of the regular meeting of 21 May 1970",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/13minutesofsanfran1970sa/page/n218/mode/1up",
+      "retrieved": "2026-10-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1970-05-21",
+      "kind": "planning decision",
+      "description": "The City Planning Commission approved, with ten conditions, an ambulance service building on an L-shaped parcel running from Divisadero Street through to California Street.",
+      "source": "sf-planning-commission-minutes-1970-05-21"
+    }
+  ]
+}

@@ -23,12 +23,14 @@ that study area, as an example of the Second Bay Tradition.
 - [Church Street](church-street/) — 1 building, built 1914.
 - [Clipper Street](clipper-street/) — 3 buildings, built 1883–1916.
 - [Day Street](day-street/) — 1 building, built 1938.
+- [Diamond Street](diamond-street/) — 2 buildings, built 1893–1900; 1 in the Diamond & Elizabeth Streets Historic District.
 - [Douglass Street](douglass-street/) — 1 building, built 1900.
 - [Duncan Street](duncan-street/) — 1 building, built 1908.
 - [Hill Street](hill-street/) — 1 building, built 1965.
 - [Hoffman Avenue](hoffman-avenue/) — 1 building.
 - [Homestead Street](homestead-street/) — 1 building, built 1909; 1 in the Diamond & Elizabeth Streets Historic District.
 - [Noe Street](noe-street/) — 1 building, built 1900.
+- [Sanchez Street](sanchez-street/) — 1 building, built 2001.
 - [Turquoise Way](turquoise-way/) — 1 building, built 1962; 1 in the Diamond Heights Historic District.
 - [Valley Street](valley-street/) — 1 building, built 1900.
 - [Vicksburg Street](vicksburg-street/) — 1 building, built 1900.

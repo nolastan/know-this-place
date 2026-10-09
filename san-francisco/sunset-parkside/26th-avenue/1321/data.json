@@ -1,0 +1,114 @@
+{
+  "address": "1321–1325 26th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/26th-avenue/1321/",
+  "apn": "1781003",
+  "block": "1781",
+  "lot": "003",
+  "eas_baseid": "457360",
+  "coordinates": {
+    "lat": 37.76273,
+    "lng": -122.484921
+  },
+  "address_range": "1321–1325",
+  "street_numbers_on_parcel": [
+    "1321",
+    "1323",
+    "1325"
+  ],
+  "parcel": {
+    "year_built": 1939,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2650,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "1325 1323 26TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 213422,
+    "assessed_improvement_value": 285998
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1939",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9817780",
+      "type": "otc alterations permit",
+      "status": "approved",
+      "filed": "1998-09-04",
+      "status_date": "1998-09-04",
+      "estimated_cost": 30500,
+      "description": "revision to pa#9816453",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9220701",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-11-30",
+      "status_date": "1993-01-27",
+      "estimated_cost": 2850,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=26TH&street_type=AVE&address_number=1321",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1781003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1781&lot=003",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1781003",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1970-09-03",
+      "name": "San Francisco City Planning Commission, minutes of the regular meeting of 3 September 1970",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/14minutesofsanfran1970sa/page/n312/mode/1up",
+      "retrieved": "2026-10-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1970-09-03",
+      "kind": "planning decision",
+      "description": "The lot was a parking lot serving the Chapel of the Sunset Mortuary. The City Planning Commission approved, with conditions, enlarging the Chapel of the Sunset Mortuary's parking lot, with no access from the 26th Avenue driveway.",
+      "source": "sf-planning-commission-minutes-1970-09-03"
+    }
+  ]
+}
