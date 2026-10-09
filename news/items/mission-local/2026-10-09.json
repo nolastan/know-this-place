@@ -1,0 +1,80 @@
+{
+  "source_id": "mission-local",
+  "batch": "2026-10-09",
+  "read_on": "2026-10-09",
+  "notes": "Run of 2026-10-09.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 2,
+    "mentions": 2,
+    "remaining": "none",
+    "note": "Other queued stories name no building or fail the ten-year test."
+  },
+  "findings": [
+    {
+      "id": "2026-10-09-ml-0001",
+      "date": "2026-10-07",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "998 Guerrero Street",
+      "street_number": "998",
+      "street_name": "GUERRERO",
+      "street_type": "ST",
+      "description": "The Liberties, the Irish bar and restaurant at 22nd and Guerrero open nearly 25 years, has closed indefinitely. The headline names a business only.",
+      "extra": {
+        "business": "The Liberties"
+      },
+      "citation": {
+        "label": "Mission Local, “The Liberties, Mission District watering hole for nearly 25 years, closes indefinitely,” 7 October 2026",
+        "url": "https://missionlocal.org/2026/10/the-liberties-at-22nd-and-guerrero-closes-indefinitely/"
+      },
+      "raw": {
+        "text": "The Liberties, Mission District watering hole for nearly 25 years, closes indefinitely"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "published",
+        "note": "Headline entry added to historical_record at /san-francisco/mission/22nd-street/3410/ as mission-local-2026-10-07; no building-block fields (a bar's closing; no fact about the building)."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3618014",
+        "path": "/san-francisco/mission/22nd-street/3410/",
+        "eas_address": "994 GUERRERO ST",
+        "method": "EAS exact match on 998 GUERRERO ST → parcel 3618014; sf-parcels has blklot 3618014 active, 3410–3420 22ND; the 2025 roll records it as multi-family residential, built 1912. EAS puts 994, 998 GUERRERO ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 994.",
+        "checked_on": "2026-10-09"
+      }
+    },
+    {
+      "id": "2026-10-09-ml-0002",
+      "date": "2026-10-06",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "716 Irving Street",
+      "street_number": "716",
+      "street_name": "IRVING",
+      "street_type": "ST",
+      "description": "Roundup column: Poke Origin closed, a Yemeni cafe planned at 403 Irving.",
+      "citation": {
+        "label": "Mission Local, “Sunset Buzz: Farewell to poke, hello to Yemeni cafe,” 2026",
+        "url": "https://missionlocal.org/2026/10/sf-sunset-poke-origin-kj-produce-yemeni-cafe/"
+      },
+      "raw": {
+        "text": "Sunset Buzz: Farewell to poke, hello to Yemeni cafe"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Declined: a multi-address roundup; the headline names no address and so cannot be pinned to one building's timeline."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "1742015A",
+        "path": "/san-francisco/inner-sunset/irving-street/700/",
+        "eas_address": "700 IRVING ST",
+        "method": "EAS exact match on 716 IRVING ST → parcel 1742015A; sf-parcels has blklot 1742015A active, 700–718 IRVING; the 2025 roll records it as commercial retail, built 1922. EAS puts 700, 712, 716, 718 IRVING ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 700.",
+        "checked_on": "2026-10-09"
+      }
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "source_id": "sfist",
+  "batch": "2026-10-09",
+  "read_on": "2026-10-09",
+  "notes": "Run of 2026-10-09.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 2,
+    "mentions": 2,
+    "remaining": "none",
+    "note": "Other queued stories name no building or fail the ten-year test."
+  },
+  "findings": [
+    {
+      "id": "2026-10-09-sf-0001",
+      "date": "2026-10-09",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "801 Market Street",
+      "street_number": "801",
+      "street_name": "MARKET",
+      "street_type": "ST",
+      "description": "Uniqlo opens its new downtown flagship at 801 Market Street with a free street festival on Friday 9 October 2026, returning to downtown San Francisco. Earns an entry; SFist's account is the one carried, the Chronicle, Standard and Registry stories on the same opening are declined as duplicates.",
+      "extra": {
+        "occupant": "Uniqlo (a business)"
+      },
+      "citation": {
+        "label": "SFist, “Uniqlo’s New Market Street Flagship Opens With Huge Street Festival Friday,” 8 October 2026",
+        "url": "https://sfist.com/2026/10/08/uniqlos-new-market-street-flagship-opens-with-huge-street-festival-friday/"
+      },
+      "raw": {
+        "text": "Uniqlo’s New Market Street Flagship Opens With Huge Street Festival Friday"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "pending",
+        "note": "Blocked: 801 Market Street's coordinates fall in four active parcels (3705Z001-3705Z004), which is what a condominium looks like in sf-parcels; the directory contract defers condo parcels, so no page can be seeded. Revisit if a page for the building appears. Duplicate accounts (Chronicle, Standard) declined meanwhile."
+      },
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-10-09",
+        "method": "sf-eas-addresses has 801 MARKET ST but it does not join to one parcel. 801 MARKET ST's coordinates fall in 4 active parcels (3705Z001, 3705Z002, 3705Z003, 3705Z004), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
+        "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+      }
+    },
+    {
+      "id": "2026-10-09-sf-0002",
+      "date": "2026-10-07",
+      "date_precision": "day",
+      "kind": "crime",
+      "address_as_written": "228 Clara Street",
+      "street_number": "228",
+      "street_name": "CLARA",
+      "street_type": "ST",
+      "description": "Auction of a house where a killing occurred eight years ago; a crime story about a residence and its occupants.",
+      "citation": {
+        "label": "SFist, “Day Around the Bay: Infamous Dismemberment House Up for Auction,” 7 October 2026",
+        "url": "https://sfist.com/2026/10/07/infamous-dismemberment-house-up-for-auction/"
+      },
+      "raw": {
+        "text": "Infamous Dismemberment House Up for Auction"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Declined: a crime at a residence; the page records what happened to the building, not a crime blotter, and the story is about the people involved. Also a roundup headline."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3753701",
+        "path": "/san-francisco/south-of-market/clara-street/228/",
+        "eas_address": "228 CLARA ST",
+        "method": "EAS exact match on 228 CLARA ST → parcel 3753701; sf-parcels has blklot 3753701 active, 224–228 CLARA; the 2025 roll records it as miscellaneous/mixed-use. EAS files the address under parcel 3753063, which sf-parcels reports retired; the active parcel its coordinates fall in is 3753701.",
+        "checked_on": "2026-10-09",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      }
+    }
+  ]
+}
