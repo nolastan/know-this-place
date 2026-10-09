@@ -1,0 +1,105 @@
+{
+  "address": "1383 Pacific Avenue, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/pacific-avenue/1383/",
+  "apn": "0184029",
+  "block": "0184",
+  "lot": "029",
+  "eas_baseid": "279507",
+  "coordinates": {
+    "lat": 37.795359,
+    "lng": -122.417832
+  },
+  "parcel": {
+    "year_built": 1971,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "lot_area_sqft": 2922,
+    "building_area_sqft": 3831,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "S",
+    "zoning": "NC-2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "0000 1383 PACIFIC             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 288672,
+    "assessed_improvement_value": 233146
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1971",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9613232",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-07-23",
+      "status_date": "1997-04-09",
+      "estimated_cost": 8000,
+      "description": "alteration (e) building to add new fire sprinkler system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8908711",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-05-19",
+      "status_date": "1989-07-31",
+      "estimated_cost": 500,
+      "description": "replace damaged sheetrock in bathroom on 2nd bathroom",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PACIFIC&street_type=AVE&address_number=1383",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0184029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0184&lot=029",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0184029",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1970-10-01",
+      "name": "San Francisco City Planning Commission, minutes of the regular meeting of 1 October 1970",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/15minutesofsanfran1970sa/page/n36/mode/1up",
+      "retrieved": "2026-10-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1970-10-01",
+      "kind": "planning decision",
+      "description": "A small household-goods storage business had operated from a little old building on the lot for about fifteen years. The City Planning Commission approved, with conditions, replacing the old building with a new 2,925-square-foot building for the household-goods storage business and a retail furniture outlet.",
+      "source": "sf-planning-commission-minutes-1970-10-01"
+    }
+  ]
+}
