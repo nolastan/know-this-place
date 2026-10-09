@@ -24,6 +24,7 @@ Merced Heights, the ridge between them, was mostly built after World War II.
 - [Lakeview Avenue](lakeview-avenue/) — 1 building, built 1916.
 - [Lee Avenue](lee-avenue/) — 1 building, built 1910.
 - [Lobos Street](lobos-street/) — 1 building, built 1906.
+- [Louisburg Street](louisburg-street/) — 1 building, built 1990.
 - [Miramar Avenue](miramar-avenue/) — 2 buildings, built 1905–1917.
 - [Mission Street](mission-street/) — 1 building, built 1924.
 - [Montana Street](montana-street/) — 1 building, built 1907.

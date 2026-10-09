@@ -1,0 +1,141 @@
+{
+  "address": "1125 Mason Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/mason-street/1125/",
+  "apn": "0213002",
+  "block": "0213",
+  "lot": "002",
+  "eas_baseid": "279982",
+  "coordinates": {
+    "lat": 37.793963,
+    "lng": -122.411514
+  },
+  "parcel": {
+    "year_built": 1972,
+    "units": 8,
+    "stories": 3,
+    "rooms": 30,
+    "bathrooms": 13,
+    "lot_area_sqft": 2360,
+    "building_area_sqft": 7281,
+    "lot_depth_ft": 80,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Nob Hill",
+    "property_location_raw": "0000 1125 MASON               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 188706,
+    "assessed_improvement_value": 443778
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1972",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202301039632",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-01-03",
+      "status_date": "2023-01-06",
+      "estimated_cost": 5000,
+      "revised_cost": 1,
+      "description": "revision to fire alarm permit 202211106318. adding wireless notification into sleeping area.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202211106318",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-11-10",
+      "status_date": "2023-04-21",
+      "estimated_cost": 34800,
+      "revised_cost": 34800,
+      "description": "upgrade fire alarm system and install new low frequency sounders inside of all sleeping areas to comply with sffd sec 1103.7.6.1 per csfm code interpretation 12-001 and information bulletin issued 9/4/2008.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201804166446",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-04-16",
+      "status_date": "2018-11-01",
+      "estimated_cost": 80000,
+      "revised_cost": 120000,
+      "description": "mandatory soft story retrofit per 2016 sfebc appx a4. add steel moment frames with foundations and ply shear walls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201706230271",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2017-06-23",
+      "status_date": "2018-04-30",
+      "estimated_cost": 110000,
+      "revised_cost": 110000,
+      "description": "soft story retrofit per sfebc chapter 4d engineering criteria 2016 cebc appendix a-4.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9124322",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-12-31",
+      "status_date": "1992-03-31",
+      "estimated_cost": 5500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MASON&street_type=ST&address_number=1125",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0213002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0213&lot=002",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0213002",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1970-12-03",
+      "name": "San Francisco City Planning Commission, minutes of the regular meeting of 3 December 1970",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/15minutesofsanfran1970sa/page/n198/mode/1up",
+      "retrieved": "2026-10-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1970-12-03",
+      "kind": "planning decision",
+      "description": "The fairly level lot, 29.5 feet on Mason Street and 80 feet on Truett Street, was then vacant except for a shed. The City Planning Commission found the City's acquisition of the lot for a Chinatown mini-park in conformity with the Master Plan.",
+      "source": "sf-planning-commission-minutes-1970-12-03"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "address": "1300 Potrero Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/potrero-avenue/1300/",
+  "apn": "4276042",
+  "block": "4276",
+  "lot": "042",
+  "eas_baseid": "448491",
+  "coordinates": {
+    "lat": 37.751089,
+    "lng": -122.406374
+  },
+  "parcel": {
+    "year_built": 1987,
+    "stories": 2,
+    "building_area_sqft": 3149,
+    "use": "Industrial",
+    "property_class": "Industrial Condominium",
+    "construction_type_code": "NA",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1300 POTRERO             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 663000,
+    "assessed_improvement_value": 285600,
+    "last_sale_date": "2023-09-29"
+  },
+  "permits": [
+    {
+      "number": "200901069658",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-01-06",
+      "status_date": "2009-02-09",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "comply with physical inspection report# 3r-3249.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200807287784",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-07-28",
+      "status_date": "2008-07-28",
+      "estimated_cost": 70000,
+      "revised_cost": 70000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9220981S",
+      "type": "additions alterations or repairs",
+      "status": "disapproved",
+      "filed": "1992-12-04",
+      "status_date": "1999-12-28",
+      "estimated_cost": 15000,
+      "revised_cost": 48000,
+      "description": "t.i.-non-bearing partitions, kitch, lighting, shower in bath",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "7909754",
+      "type": "new construction wood frame",
+      "status": "cancelled",
+      "filed": "1979-09-26",
+      "status_date": "1987-08-15",
+      "estimated_cost": 500000,
+      "revised_cost": 965400,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POTRERO&street_type=AVE&address_number=1300",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4276042&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4276&lot=042",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1970-05-07",
+      "name": "San Francisco City Planning Commission, minutes of the regular meeting of 7 May 1970",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/13minutesofsanfran1970sa/page/n106/mode/1up",
+      "retrieved": "2026-10-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1970-05-07",
+      "kind": "planning decision",
+      "description": "An automobile service station then occupied the corner lot, used as a station site for more than 40 years; of the adjoining lots to the south, one held an abandoned single-family house and two were vacant. The City Planning Commission approved reclassifying the service station corner and adjoining lots from R-4 to C-2, allowing the station to be rebuilt and expanded as a Phillips Petroleum Company outlet.",
+      "source": "sf-planning-commission-minutes-1970-05-07"
+    }
+  ]
+}

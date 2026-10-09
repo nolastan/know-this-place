@@ -1,0 +1,182 @@
+{
+  "address": "1241 26th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/26th-avenue/1241/",
+  "apn": "1724009",
+  "block": "1724",
+  "lot": "009",
+  "eas_baseid": "315160",
+  "coordinates": {
+    "lat": 37.764273,
+    "lng": -122.48503
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 4,
+    "bedrooms": 5,
+    "lot_area_sqft": 3600,
+    "building_area_sqft": 2506,
+    "basement_area_sqft": 965,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1241 26TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1987111,
+    "assessed_improvement_value": 851619,
+    "last_sale_date": "2021-11-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201910316122",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-10-31",
+      "status_date": "2021-10-08",
+      "estimated_cost": 150000,
+      "revised_cost": 280000,
+      "description": "1st floor: remodel extg bathroom. remodel and relocate extg bathroom. addition new bathroom. relocate extg bedroom. addition new family room. remodel and relocation extg laundry. 2nd floor: remodel 2 extg bathrooms, remodel extg kitchen. removal of extg bedroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201908269853",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-08-26",
+      "status_date": "2019-08-26",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "kitchen and bath remodel in kind. no exploratory demo",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9123161",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-12-06",
+      "status_date": "1992-04-06",
+      "estimated_cost": 1,
+      "description": "renewal of pa #8708836 & #9012997",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9113137",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1991-07-26",
+      "status_date": "1992-07-06",
+      "estimated_cost": 1000,
+      "description": "fire sprinkler systme.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9110724",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-06-20",
+      "status_date": "1991-11-21",
+      "estimated_cost": 1487,
+      "description": "install ansul hood & duct fire system.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9012997",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-07-03",
+      "status_date": "1991-04-25",
+      "estimated_cost": 1,
+      "description": "final inspection of work under app #8708836",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8817620",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-11-08",
+      "status_date": "1989-02-17",
+      "estimated_cost": 1500,
+      "description": "repair rear exist stairs outstair building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8802901",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1988-03-08",
+      "status_date": "1990-01-23",
+      "estimated_cost": 5000,
+      "description": "revision of roof, stair & floor plan, re #8708836",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8708836",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-06-25",
+      "status_date": "1989-03-02",
+      "estimated_cost": 40000,
+      "description": "horizontal extension",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=26TH&street_type=AVE&address_number=1241",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1724009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1724&lot=009",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1724009",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1970-06-18",
+      "name": "San Francisco City Planning Commission, minutes of the regular meeting of 18 June 1970",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/13minutesofsanfran1970sa/page/n314/mode/1up",
+      "retrieved": "2026-10-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1970-06-18",
+      "kind": "planning decision",
+      "description": "A residential care home for six persons, with three staff, occupied the building on 26th Avenue south of Lincoln Way. The City Planning Commission approved, with six conditions, raising the residential care home on 26th Avenue from six to seven residents, with no change to the building.",
+      "source": "sf-planning-commission-minutes-1970-06-18"
+    }
+  ]
+}

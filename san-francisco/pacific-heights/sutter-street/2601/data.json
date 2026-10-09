@@ -1,0 +1,139 @@
+{
+  "address": "2601 Sutter Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/sutter-street/2601/",
+  "apn": "1074001",
+  "block": "1074",
+  "lot": "001",
+  "eas_baseid": "294427",
+  "coordinates": {
+    "lat": 37.784664,
+    "lng": -122.443445
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 1,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1130,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Lower Pacific Heights",
+    "analysis_neighborhood": "Presidio Heights",
+    "property_location_raw": "0000 2601 SUTTER              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1592958,
+    "assessed_improvement_value": 28443,
+    "last_sale_date": "2018-06-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202006108331",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2020-06-10",
+      "status_date": "2020-06-10",
+      "estimated_cost": 1,
+      "description": "addition of an adu unit per ord#116-19 in new construction under separate 72018-1003-2193.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201810032192",
+      "type": "demolitions",
+      "status": "approved",
+      "filed": "2018-10-03",
+      "status_date": "2022-12-09",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "to demolish (e) one story, type 5a, conmercial store bldg.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201810032193",
+      "type": "new construction wood frame",
+      "status": "approved",
+      "filed": "2018-10-03",
+      "status_date": "2022-03-08",
+      "estimated_cost": 1100000,
+      "revised_cost": 2200000,
+      "description": "to erect a 4-story, type 5a bldg w/ 3 residential units and 1 basement.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9724358",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-12-04",
+      "status_date": "1998-04-02",
+      "estimated_cost": 4300,
+      "description": "repair moisture damaged floor two areas & provide entry stor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9701459",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-01-27",
+      "status_date": "1997-07-27",
+      "estimated_cost": 5800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SUTTER&street_type=ST&address_number=2601",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1074001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1074&lot=001",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1074001",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1970-08-27",
+      "name": "San Francisco City Planning Commission, minutes of the regular meeting of 27 August 1970",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/14minutesofsanfran1970sa/page/n280/mode/1up",
+      "retrieved": "2026-10-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1970-08-27",
+      "kind": "planning decision",
+      "description": "The building held a grocery store, a commercial use left nonconforming in a residential district and due to end in 1970. The City Planning Commission approved, with conditions, extending the life of the nonconforming use (grocery store) to May 2, 1980.",
+      "source": "sf-planning-commission-minutes-1970-08-27"
+    }
+  ]
+}

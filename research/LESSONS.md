@@ -2758,3 +2758,33 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   one listing per batch shows which reel sits next to the gap — pace anything
   more at seconds per request, and check a download with `file` before
   trusting it.* ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **A reader will do arithmetic to supply what the page does not state.** One
+  of eight readers on the 1970 Planning Commission minutes turned a speaker's
+  "built 112 years ago" into a finding dated "about 1858", and two more
+  "corrected" a resolution number from the run of numbers around it. Each one
+  is reasonable and each one is a fact the source never printed, and the
+  first would have put an extrapolated year on a landmark's page beside the
+  National Register's own. *Write into the reader spec that a date or number
+  is what the page prints, and that working one out — from an age, a
+  sequence, a neighbouring entry — goes in `reader_note`, never in `date` or
+  `extra`.*
+- **The Internet Archive's hOCR page index has a span for every leaf, the
+  colour cards included.** `_hocr_pageindex.json` lists one span per
+  `scandata.xml` leaf, so the card at leaf 0 has a span (empty) and every
+  real page's span index runs one ahead of the viewer's `page/n<i>`. Dropping
+  the cards' files after splitting by span index does not fix it; the viewer
+  number has to be counted among the leaves not marked
+  `addToAccessFormats=false`. *Before splitting any Internet Archive scan,
+  confirm the mapping by finding one known quote on the viewer page a
+  citation names.*
+- **A record with a block and lot and no street number is unresolved by the
+  tool and placeable by hand.** `resolve_eas.py` reads
+  `assessor_block_as_recorded` only to choose among parcels an address already
+  found, so a planning case located as "Lot 15, Block 4209, north side of 24th
+  Street west of York Street" came back "nothing to look up" — 72 of the 1970
+  minutes' unresolved findings printed their own lot. Looking each lot up in
+  `acdm-wktn` and EAS by `parcel_number` placed 33 of them; the rest named
+  several lots, or a lot with no address. The tool now says this in the note
+  rather than "it cannot become a page". *Grep a batch's unresolved entries
+  for a recorded lot before closing it, and check whether the parcel is a
+  Rec and Park place before seeding it.*

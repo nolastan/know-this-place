@@ -1,0 +1,184 @@
+{
+  "address": "2521 Scott Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/scott-street/2521/",
+  "apn": "0961002",
+  "block": "0961",
+  "lot": "002",
+  "eas_baseid": "291529",
+  "coordinates": {
+    "lat": 37.793323,
+    "lng": -122.440119
+  },
+  "parcel": {
+    "year_built": 1900,
+    "stories": 38,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 5998,
+    "building_area_sqft": 4299,
+    "use": "Commercial Misc",
+    "property_class": "Schools",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "0000 2521 SCOTT               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 931966,
+    "assessed_improvement_value": 677791
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Pacific Heights Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1895–1930",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202309257344",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-09-25",
+      "status_date": "2023-09-25",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to comply with accessible business entrance program per ordinance 51-16. technical infeasibility. abe# 201911198390.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108095727",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-08-09",
+      "status_date": "2002-08-09",
+      "estimated_cost": 28800,
+      "revised_cost": 28800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9908764",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-05-05",
+      "status_date": "1999-09-05",
+      "estimated_cost": 3000,
+      "description": "remove & replace extg deck/dry-rot replaces in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9908675",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-05-04",
+      "status_date": "1999-09-04",
+      "estimated_cost": 1000,
+      "description": "rerun automatic fire sprinkler sys to cover remodeled area",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9905026",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-03-16",
+      "status_date": "1999-07-16",
+      "estimated_cost": 3500,
+      "description": "to remove lath & plastr in one bedrm,hallwy,insulate sheetrc",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8407427",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-07-10",
+      "status_date": "1984-10-18",
+      "estimated_cost": 175,
+      "description": "replace 2 or 3 dry rotted tread on back stoop same as before",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8206729",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-08-16",
+      "status_date": "1983-03-04",
+      "estimated_cost": 175,
+      "description": "bldg use: school",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 8,
+    "range": "1982–2023",
+    "shown_on_page": 7,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SCOTT&street_type=ST&address_number=2521",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0961002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0961&lot=002",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0961002",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44011927560003%2037.79332252185025)%27)",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1970-12-03",
+      "name": "San Francisco City Planning Commission, minutes of the regular meeting of 3 December 1970",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/15minutesofsanfran1970sa/page/n222/mode/1up",
+      "retrieved": "2026-10-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1949",
+      "kind": "site history",
+      "description": "The Hillwood Academic Day School moved onto the property.",
+      "source": "sf-planning-commission-minutes-1970-12-03"
+    },
+    {
+      "date": "1970-12-03",
+      "kind": "planning decision",
+      "description": "The Hillwood Academic Day School occupied the property at the southwest corner of Scott Street and Broadway. The City Planning Commission refused to return the school property from R-1-D to R-1 zoning, which would have allowed the lot to be split for two row houses.",
+      "source": "sf-planning-commission-minutes-1970-12-03"
+    }
+  ]
+}

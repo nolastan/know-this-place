@@ -1,0 +1,175 @@
+{
+  "address": "3101 San Jose Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/outer-mission/san-jose-avenue/3101/",
+  "apn": "7161001",
+  "block": "7161",
+  "lot": "001",
+  "eas_baseid": "417551",
+  "coordinates": {
+    "lat": 37.709283,
+    "lng": -122.457519
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 1,
+    "stories": 1,
+    "rooms": 2,
+    "bathrooms": 1,
+    "bedrooms": 1,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 830,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Outer Mission",
+    "analysis_neighborhood": "Outer Mission",
+    "property_location_raw": "0000 3101 SAN JOSE            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 442040,
+    "assessed_improvement_value": 294691,
+    "last_sale_date": "2014-05-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202212229019",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-12-22",
+      "status_date": "2023-10-05",
+      "estimated_cost": 200,
+      "revised_cost": 200,
+      "description": "remove low wall (as built 10\") to provide required maneuvering space (door width x 18\" min x 60\" min), per abe 202206281826.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201702219813",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2017-02-21",
+      "status_date": "2017-02-21",
+      "estimated_cost": 150000,
+      "description": "tenant improvement to limited commerical unit and (n) single family unit addition. (rear vertical & horizontal addition). (3) bedrooms, (3 1/2) bath, den, family room, kitchen, dining, living & roof deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201303011294",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-03-01",
+      "status_date": "2013-11-07",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "revision to pa# 2012-1101-3268-replace roof & skiylights modification",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201303011325",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-03-01",
+      "status_date": "2013-11-07",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "revision to appl #2012.0913.9705 - add support beam to ceiling.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201211013268",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-11-01",
+      "status_date": "2013-11-07",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "seal around skylights & edge to prevent leakage, repair roof & add drainage. ref pa #2012.0913.9705",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209139705",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-09-13",
+      "status_date": "2013-11-07",
+      "estimated_cost": 22000,
+      "revised_cost": 22000,
+      "description": "comply with nov# 201083686 & 2002-234411-return building to original use, commercial use only (retail)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200410136660",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-10-13",
+      "status_date": "2004-11-02",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew app #200002172215",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200002172215",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-02-17",
+      "status_date": "2000-06-17",
+      "estimated_cost": 150,
+      "revised_cost": 150,
+      "description": "for records only-lcu 1 bedrm,bathrm,storage,retail & display rooms",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20JOSE&street_type=AVE&address_number=3101",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7161001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7161&lot=001",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7161001",
+      "retrieved": "2026-10-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1970-08-27",
+      "name": "San Francisco City Planning Commission, minutes of the regular meeting of 27 August 1970",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/14minutesofsanfran1970sa/page/n296/mode/1up",
+      "retrieved": "2026-10-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1970-08-27",
+      "kind": "planning decision",
+      "description": "The building held a chiropractor's office, a commercial use left nonconforming in a residential district and due to end in 1970. The City Planning Commission approved, with conditions, extending the life of the nonconforming use (chiropractor's office) to May 2, 1980.",
+      "source": "sf-planning-commission-minutes-1970-08-27"
+    }
+  ]
+}
