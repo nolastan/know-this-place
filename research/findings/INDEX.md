@@ -206,7 +206,7 @@ sit in — the three it touched most, and how many in all.
 | `sf-environmental-review/outside-downtown.json` | 61 | 118 KB | 1852–2005 | 28 | 28 | `mission`, `north-beach`, `haight-ashbury` +6 |
 | `sf-environmental-review/unread-docs.json` | 1,100 | 2.0 MB | 1849–2012 | 449 | 353 | `financial-district`, `south-of-market`, `nob-hill` +21 |
 | `sf-planning-commission-minutes/minutes-1968-1969.json` | 372 | 685 KB | 1968–1969 | 163 | 162 | `chinatown`, `bayview-hunters-point`, `pacific-heights` +25 |
-| `sf-planning-commission-minutes/minutes-1970.json` | 455 | 821 KB | 1854–1970 | 217 | 202 | `pacific-heights`, `mission`, `outer-richmond` +30 |
+| `sf-planning-commission-minutes/minutes-1970.json` | 455 | 835 KB | 1854–1970 | 250 | 235 | `mission`, `pacific-heights`, `outer-richmond` +30 |
 | `spur-popos-guide/popos-guide.json` | 56 | 86 KB | 1959–2008 | 54 | 3 | `east-cut`, `financial-district`, `south-beach` +2 |
 
 ## Manifests
@@ -299,7 +299,7 @@ are listed so their size is visible before anyone opens one.
 | `market-octavia-district-records.json` | 161 | 60 KB | `hayes-valley`, `western-addition`, `castro` |
 | `market-octavia-survey-forms.json` | 260 | 96 KB | `hayes-valley`, `castro`, `mission` +3 |
 | `minutes-1968-1969.json` | 44 | 16 KB | `pacific-heights`, `bayview-hunters-point`, `marina` +17 |
-| `minutes-1970.json` | 65 | 24 KB | `pacific-heights`, `sunset-parkside`, `bernal-heights` +22 |
+| `minutes-1970.json` | 73 | 27 KB | `pacific-heights`, `outer-richmond`, `sunset-parkside` +23 |
 | `mission-dolores-context-statement.json` | 12 | 5 KB | `castro`, `mission` |
 | `modern-architecture-landscape.json` | 244 | 90 KB | `pacific-heights`, `presidio-heights`, `west-of-twin-peaks` +28 |
 | `modern-postmodern-styles.json` | 111 | 42 KB | `south-of-market`, `financial-district`, `chinatown` +26 |

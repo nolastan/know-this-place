@@ -6,9 +6,9 @@
 >
 > - **Kind:** meeting minutes (scanned volumes) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 6 of 53 volumes read (July 1968 – December 1969): 957 pages,
->   286 cases, 372 findings, 163 resolved, 162 published on 91 pages. 47
->   volumes remain — 1970–1980 and 1994–2005.
+> - **Coverage:** 10 of 53 volumes read (July 1968 – December 1970): 2,435
+>   pages, 827 findings, 413 resolved, 397 published on 200 distinct pages. 43 volumes
+>   remain — 1971–1980 and 1994–2005.
 > - **Local corpus:** `research/corpora/sf-planning-commission-minutes/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -33,7 +33,8 @@
 | volumes | span | state |
 |---|---|---|
 | 6–11 | July 1968 – December 1969, one quarter each | **read in full** 2026-10-06 |
-| 12–39 | 1970–1980 (quarters to 1973, then halves, then whole years) | unread |
+| 12–15 | January – December 1970, one quarter each | **read in full** 2026-10-09 |
+| 16–39 | 1971–1980 (quarters to 1973, then halves, then whole years) | unread |
 | 40–58 | 1994–2005 | unread |
 | — | 1981–1993 | in no volume; 31 is missing from the sequence |
 | — | before July 1968 | not in this collection. The Commission dates from 1942 |
@@ -47,10 +48,13 @@
   - `<id>_hocr_pageindex.json.gz` — byte offsets into it, one span per leaf
   - `<id>_scandata.xml` — the leaf list, and which leaves are colour cards
   **Split on the page index, not on the `_djvu.txt`.** The one-file text has no
-  page separators, and a citation has to name a page. Dropping the leaves
-  `scandata.xml` marks `addToAccessFormats>false` (two colour cards per volume,
-  the first and the last) makes the index position equal the Internet Archive
-  viewer's own page number, so the citation URL is
+  page separators, and a citation has to name a page. The page index carries
+  **one span per scandata leaf, the two colour cards included** (leaf 0 and the
+  last), so count a leaf's viewer number among the leaves `scandata.xml` does
+  not mark `addToAccessFormats>false`, skipping the cards' spans rather than
+  just dropping their files: span *i* is viewer page *i − 1*. Taking the span
+  index as the page number puts every citation one page late. That makes the
+  number the Internet Archive viewer's own page number, so the citation URL is
   `https://archive.org/details/<id>/page/n<i>/mode/1up` and it opens on the
   page the fact is on.
 - **What is actually usable:**
@@ -104,6 +108,32 @@
   - **The street numbers are modern** — this is 1968, long after the 1909
     renumbering — but the buildings often are not, so a number that resolves
     cleanly can still point at a later building.
+  - **The page with the text is the even one.** Every odd viewer page in the
+    1970 volumes is a blank verso or bleed-through noise, and a few minutes
+    pages were scanned twice (vol. 14, n0030 and n0032).
+  - **A record that prints its own block and lot needs no street number.**
+    About a third of the cases locate the property as "Lot 15, Block 4209, north
+    side of 24th Street west of York Street" — no number at all — and the
+    resolver can only call those unplaceable by address. Looking the lot up in
+    `acdm-wktn` and EAS by parcel placed 33 of the 1970 findings: one active lot
+    with one address on the street the record names. Several lots, or a lot
+    with no address, stay unresolved. `resolve_eas.py` now says so in the note
+    instead of "it cannot become a page".
+  - **The mini-park lots are place pages now.** From 1970 the Commission
+    passed the City's purchase of a run of vacant lots for its mini-park
+    programme, each named only by block and lot. Some are Recreation and Park
+    places today (Howard & Langton, 24th & York, the Roosevelt and Henry
+    stairs) and take the fact on the `place.json`; others were built on
+    instead, 1972–1990, and take it framed as what was then on the lot.
+  - **A Board of Supervisors action reported in the minutes is dated to the
+    Board's meeting**, which the report names ("at its meeting of September 28,
+    1970"), not to the Commission meeting that heard the report.
+  - **Readers supply numbers the minutes do not print.** One 1970 reader
+    turned a speaker's "built 112 years ago" into "about 1858", and two
+    corrected a resolution number from the sequence. The year was declined;
+    the resolution numbers are kept as printed with the doubt in
+    `reader_note`. Say in the spec that a date is what the page states, not
+    what can be worked out from it.
 - **People:** The minutes are *full* of them: applicants, their attorneys and
   architects, objecting neighbours, improvement-club officers, the
   commissioners and the staff, all named in the narrative of every hearing.
@@ -124,9 +154,12 @@
   page the fact is on.
 - **Coverage:** Volumes 6–11 — every meeting from 11 July 1968 to 18 December
   1969 — read in full into
-  `findings/sf-planning-commission-minutes/minutes-1968-1969.json`. Nothing of
-  those volumes is known to remain unread. **Next: volume 12 (January–March
-  1970) and onwards**, one or two volumes a run; the 1994–2005 volumes are a
+  `findings/sf-planning-commission-minutes/minutes-1968-1969.json`; volumes
+  12–15 — every meeting of 1970, 8 January to 17 December — read in full into
+  `findings/sf-planning-commission-minutes/minutes-1970.json`. Nothing of
+  those volumes is known to remain unread. **Next: volume 16 (January–March
+  1971) and onwards**, four quarterly volumes a run (one year, about 1,500
+  text pages, eight readers); the 1994–2005 volumes are a
   different kind of document (by then the Commission's own case reports are
   online and indexed) and are worth sampling before a run is sized on them.
 - **Verified:** 2026-10-06 (volumes 6–11, July 1968 – December 1969: 957 OCR
@@ -143,3 +176,19 @@
   date order; a bearing from a corner, which the triage note rated the source's
   strength, placed only 4 of 99 entries, because a 1968 case names no lot
   dimensions and `corner.py` has nothing to check an offset against.)
+  **2026-10-09** (volumes 12–15, January – December 1970: 1,478 OCR pages with
+  text out of 1,652 scanned leaves, read by eight readers from one spec in
+  about ten minutes. 50 meetings, 281 agenda items, 233 about a property the
+  minutes locate; 455 findings — 217 statements of what stood on a property,
+  183 decisions, 47 dated past facts, 8 landmark designations. 250 resolved:
+  199 by the EAS join on a printed number, 18 by name on a building a page
+  already carries, 33 by the record's own block and lot. 205 unresolved, 148
+  of them located only by a block, a corner or a name. 235 published on 116
+  pages, 73 of them seeded and 3 of them place pages; 15 declined. The year's
+  densest single sitting is 27 August 1970, 34 small shops in residential
+  districts asking to extend a nonconforming use to 1980 — a grocery, a
+  laundry, a barber, a cabinet shop, each dated to the day, on a corner no
+  other source in the register reaches. What the pass learned: the page index
+  holds a span for each colour card, so a citation must skip them, not drop
+  them; a record with a block and lot and no number is placed by parcel; a
+  reader will do arithmetic to supply a date, and the spec must forbid it.)
