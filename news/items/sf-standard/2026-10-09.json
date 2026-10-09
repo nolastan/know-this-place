@@ -1,0 +1,70 @@
+{
+  "source_id": "sf-standard",
+  "batch": "2026-10-09",
+  "read_on": "2026-10-09",
+  "notes": "Run of 2026-10-09.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 2,
+    "mentions": 2,
+    "remaining": "none",
+    "note": "Other queued stories name no building or fail the ten-year test."
+  },
+  "findings": [
+    {
+      "id": "2026-10-09-ss-0001",
+      "date": "2026-10-08",
+      "date_precision": "day",
+      "kind": "sale",
+      "address_as_written": "2023 Pacific Avenue",
+      "description": "Sale of a Pacific Heights house to a named private buyer. The '2023 Pacific Ave' hit is a date artifact.",
+      "citation": {
+        "label": "The San Francisco Standard, “Former DreamWorks film exec buys Pacific Heights home for $8.25M,” 8 October 2026",
+        "url": "https://sfstandard.com/2026/10/08/hollywood-exec-buys-in-pacific-heights/"
+      },
+      "raw": {
+        "text": "Former DreamWorks film exec buys Pacific Heights home for $8.25M"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "No usable address in the article text, and the headline identifies a private individual buyer."
+      },
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-10-09",
+        "method": "The record states no street number, so there is nothing to look up in sf-eas-addresses.",
+        "note": "The record locates it only as \"2023 Pacific Avenue\". Kept so the record is not read again; per the evidence bar in research/AGENTS.md it cannot become a page."
+      }
+    },
+    {
+      "id": "2026-10-09-ss-0002",
+      "date": "2026-10-08",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "801 Market Street",
+      "street_number": "801",
+      "street_name": "MARKET",
+      "street_type": "ST",
+      "description": "Uniqlo downtown opening opinion piece.",
+      "citation": {
+        "label": "The San Francisco Standard, “Uniqlo’s return to San Francisco is more than a store opening; it’s a signal,” 8 October 2026",
+        "url": "https://sfstandard.com/2026/10/08/uniqlo-reopening-sf-downtown-retail/"
+      },
+      "raw": {
+        "text": "Uniqlo’s return to San Francisco is more than a store opening; it’s a signal"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Declined: duplicate of the Uniqlo opening carried by SFist (news/items/sfist/2026-10-09.json, 2026-10-09-sf-0001); this one is commentary."
+      },
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-10-09",
+        "method": "sf-eas-addresses has 801 MARKET ST but it does not join to one parcel. 801 MARKET ST's coordinates fall in 4 active parcels (3705Z001, 3705Z002, 3705Z003, 3705Z004), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
+        "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+      }
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "source_id": "hoodline",
+  "batch": "2026-10-09",
+  "read_on": "2026-10-09",
+  "notes": "Run of 2026-10-09.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 2,
+    "mentions": 2,
+    "remaining": "none",
+    "note": "Other queued stories name no building or fail the ten-year test."
+  },
+  "findings": [
+    {
+      "id": "2026-10-09-hl-0001",
+      "date": "2026-10-08",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2061 Mission St.",
+      "street_number": "2061",
+      "street_name": "MISSION",
+      "street_type": "ST",
+      "description": "MEDA bought 2059-2061 Mission, a 1918 35-unit building, in 2024 (COPA); tenant returns after renovation.",
+      "citation": {
+        "label": "Hoodline, “Mission Tenant Returns to $862 Studio After Nonprofit Rescues His Building,” 8 October 2026",
+        "url": "https://hoodline.com/2026/10/mission-tenant-returns-to-862-studio-after-nonprofit-rescues-his-building/"
+      },
+      "raw": {
+        "text": "Mission Tenant Returns to $862 Studio After Nonprofit Rescues His Building"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Declined: the headline is about an individual tenant and his rent; a story about a person that mentions a building. The building facts (MEDA acquisition under COPA, 2024) are worth a future headline from another account that is about the building."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3570023",
+        "path": "/san-francisco/mission/mission-street/2059/",
+        "eas_address": "2059 MISSION ST",
+        "method": "EAS exact match on 2061 MISSION ST → parcel 3570023; sf-parcels has blklot 3570023 active, 2059–2065 MISSION; the 2025 roll records it as multi-family residential, built 1914. EAS puts 2059, 2061, 2063, 2065 MISSION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2059.",
+        "checked_on": "2026-10-09"
+      }
+    },
+    {
+      "id": "2026-10-09-hl-0002",
+      "date": "2026-10-08",
+      "date_precision": "day",
+      "kind": "other",
+      "address_as_written": "Chestnut Street",
+      "description": "Scout, an all-day cafe, to open in the former L'mida space on Chestnut Street in November; the article gives no street number.",
+      "citation": {
+        "label": "Hoodline, “Marina’s Martini Bar Team Preps Scout, an All-Day Cafe on Chestnut Street,” 8 October 2026",
+        "url": "https://hoodline.com/2026/10/marina-s-martini-bar-team-preps-scout-an-all-day-cafe-on-chestnut-street/"
+      },
+      "raw": {
+        "text": "Marina’s Martini Bar Team Preps Scout, an All-Day Cafe on Chestnut Street"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "No street number is printed; the '2026 Chestnut' hit is the year. Retry when the address is published."
+      },
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-10-09",
+        "method": "The record states no street number, so there is nothing to look up in sf-eas-addresses.",
+        "note": "The record locates it only as \"Chestnut Street\". Kept so the record is not read again; per the evidence bar in research/AGENTS.md it cannot become a page."
+      }
+    }
+  ]
+}

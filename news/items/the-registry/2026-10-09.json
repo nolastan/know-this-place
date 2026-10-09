@@ -1,0 +1,84 @@
+{
+  "source_id": "the-registry",
+  "batch": "2026-10-09",
+  "read_on": "2026-10-09",
+  "notes": "Run of 2026-10-09.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 2,
+    "mentions": 2,
+    "remaining": "none",
+    "note": "Other queued stories name no building or fail the ten-year test."
+  },
+  "findings": [
+    {
+      "id": "2026-10-09-reg-0001",
+      "date": "2026-10-08",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "321 Florida Street",
+      "street_number": "321",
+      "street_name": "FLORIDA",
+      "street_type": "ST",
+      "description": "DM Development and Ascentris close a $61.7 million PNC construction loan on the 152-unit, nine-story 321 Florida in the Mission; paywalled after the lede. Under construction financing but a not-yet-built building: no building-block fields.",
+      "extra": {
+        "developer": "DM Development; Ascentris",
+        "architect": "Handel Architects (tag only)",
+        "units": 152,
+        "stories": 9
+      },
+      "citation": {
+        "label": "The Registry, “DM Development, Ascentris Close on 152-Unit 321 Florida in San Francisco’s Mission With $61.7MM PNC Construction Loan,” 8 October 2026",
+        "url": "https://news.theregistrysf.com/dm-development-ascentris-close-on-152-unit-321-florida-in-san-franciscos-mission-with-61-7mm-pnc-construction-loan/"
+      },
+      "raw": {
+        "text": "DM Development, Ascentris Close on 152-Unit 321 Florida in San Francisco’s Mission With $61.7MM PNC Construction Loan"
+      },
+      "confidence": "medium",
+      "publish": {
+        "status": "declined",
+        "note": "Declined: 309–321 Florida already carries this project's 27 Aug permit entry and the 4 Sept 'break ground this fall' entry; a loan closing is financing news for the same project, paywalled after the lede, and adds nothing the timeline needs."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3965022",
+        "path": "/san-francisco/mission/florida-street/309/",
+        "eas_address": "309 FLORIDA ST",
+        "method": "EAS exact match on 321 FLORIDA ST → parcel 3965022; sf-parcels has blklot 3965022 active, 309–321 FLORIDA; the 2025 roll records it as miscellaneous/mixed-use, built 1957. EAS puts 309, 321 FLORIDA ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 309.",
+        "checked_on": "2026-10-09"
+      }
+    },
+    {
+      "id": "2026-10-09-reg-0002",
+      "date": "2026-10-08",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "151 Humboldt Street",
+      "street_number": "151",
+      "street_name": "HUMBOLDT",
+      "street_type": "ST",
+      "description": "Supervisors approve amended development agreement for the 29-acre Power Station; keywords only, a district-scale agreement.",
+      "citation": {
+        "label": "The Registry, “San Francisco Supervisors Approve Amended Development Agreement for Fifth Space’s 29-Acre Power Station in Dogpatch,” 2026",
+        "url": "https://news.theregistrysf.com/san-francisco-supervisors-approve-amended-development-agreement-for-fifth-spaces-29-acre-power-station-in-dogpatch/"
+      },
+      "raw": {
+        "text": "Power Station amended development agreement"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Declined: a 29-acre district agreement; the addresses are the outlet's tags, not a building."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "4232022",
+        "path": "/san-francisco/potrero-hill/humboldt-street/151/",
+        "eas_address": "151 HUMBOLDT ST",
+        "method": "EAS exact match on 151 HUMBOLDT ST → parcel 4232022; sf-parcels has blklot 4232022 active, 151–151 HUMBOLDT; the 2025 roll records it as miscellaneous/mixed-use. The assessor files the parcel as 1201 ILLINOIS ST.",
+        "checked_on": "2026-10-09",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "source_id": "sf-chronicle",
+  "batch": "2026-10-09",
+  "read_on": "2026-10-09",
+  "notes": "Run of 2026-10-09.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 1,
+    "mentions": 1,
+    "remaining": "none",
+    "note": "Other queued stories name no building or fail the ten-year test."
+  },
+  "findings": [
+    {
+      "id": "2026-10-09-sc-0001",
+      "date": "2026-10-09",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "801 Market Street",
+      "street_number": "801",
+      "street_name": "MARKET",
+      "street_type": "ST",
+      "description": "Uniqlo returns downtown with a street festival.",
+      "citation": {
+        "label": "San Francisco Chronicle, “Uniqlo returns to downtown San Francisco with a free street festival,” 2026",
+        "url": "https://www.sfchronicle.com/entertainment/festivals/article/uniqlo-downtown-street-festival-22468751.php"
+      },
+      "raw": {
+        "text": "Uniqlo returns to downtown San Francisco with a free street festival"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Declined: duplicate of the Uniqlo opening carried by SFist (2026-10-09-sf-0001)."
+      },
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-10-09",
+        "method": "sf-eas-addresses has 801 MARKET ST but it does not join to one parcel. 801 MARKET ST's coordinates fall in 4 active parcels (3705Z001, 3705Z002, 3705Z003, 3705Z004), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
+        "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+      }
+    }
+  ]
+}
