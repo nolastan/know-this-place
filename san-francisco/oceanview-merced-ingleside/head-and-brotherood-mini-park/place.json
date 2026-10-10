@@ -1,53 +1,68 @@
 {
-  "name": "Head & Brotherood Mini Park",
-  "path": "/san-francisco/oceanview-merced-ingleside/head-and-brotherood-mini-park/",
-  "kind": "park",
-  "type": "Mini Park",
-  "coordinates": {
-    "lat": 37.712631,
-    "lng": -122.464232
+ "name": "Head & Brotherood Mini Park",
+ "path": "/san-francisco/oceanview-merced-ingleside/head-and-brotherood-mini-park/",
+ "kind": "park",
+ "type": "Mini Park",
+ "coordinates": {
+  "lat": 37.712631,
+  "lng": -122.464232
+ },
+ "acres": 0.52,
+ "address": "300 Head Street",
+ "managed_by": "Public Works",
+ "complex": "Lake Merced Complex",
+ "rpd_property_id": "196",
+ "facilities": [
+  {
+   "name": "Basketball Courts",
+   "type": "Basketball Court"
   },
-  "acres": 0.52,
-  "address": "300 Head Street",
-  "managed_by": "Public Works",
-  "complex": "Lake Merced Complex",
-  "rpd_property_id": "196",
-  "facilities": [
-    {
-      "name": "Basketball Courts",
-      "type": "Basketball Court"
-    },
-    {
-      "name": "Children's Play Area",
-      "type": "Childrens Play Area"
-    },
-    {
-      "name": "DPA",
-      "type": "Dog Play Area"
-    }
-  ],
-  "parcels": [
-    "7116025"
-  ],
-  "sources": [
-    {
-      "id": "sf-rpd-properties",
-      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
-      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=196",
-      "retrieved": "2026-09-25"
-    },
-    {
-      "id": "sf-rpd-facilities",
-      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
-      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=196",
-      "retrieved": "2026-09-25"
-    },
-    {
-      "id": "sf-parcels",
-      "name": "SF Parcels (active and retired) via DataSF",
-      "supports": "Parcels",
-      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%277116025%27%29",
-      "retrieved": "2026-09-25"
-    }
-  ]
+  {
+   "name": "Children's Play Area",
+   "type": "Childrens Play Area"
+  },
+  {
+   "name": "DPA",
+   "type": "Dog Play Area"
+  }
+ ],
+ "parcels": [
+  "7116025"
+ ],
+ "sources": [
+  {
+   "id": "sf-rpd-properties",
+   "name": "SF Recreation and Park Department \u2014 Recreation and Parks Properties via DataSF",
+   "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=196",
+   "retrieved": "2026-09-25"
+  },
+  {
+   "id": "sf-rpd-facilities",
+   "name": "SF Recreation and Park Department \u2014 Recreation and Parks Facilities via DataSF",
+   "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=196",
+   "retrieved": "2026-09-25"
+  },
+  {
+   "id": "sf-parcels",
+   "name": "SF Parcels (active and retired) via DataSF",
+   "supports": "Parcels",
+   "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%277116025%27%29",
+   "retrieved": "2026-09-25"
+  },
+  {
+   "id": "sf-planning-commission-minutes-1971-02-11",
+   "name": "San Francisco City Planning Commission, minutes of the meeting of 11 February 1971",
+   "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+   "query": "https://archive.org/details/16minutesofsanfran1971sa/page/n188/mode/1up",
+   "retrieved": "2026-10-10"
+  }
+ ],
+ "historical_record": [
+  {
+   "date": "1971-02-11",
+   "kind": "planning decision",
+   "description": "The 5,130-square-foot triangular lot formed part of the landscaped Brotherhood Way parkway at the foot of Merced Heights. The City Planning Commission found the sale of the lot in conflict with the Master Plan because it was part of the Brotherhood Way parkway landscaping.",
+   "source": "sf-planning-commission-minutes-1971-02-11"
+  }
+ ]
 }

@@ -1,53 +1,68 @@
 {
-  "name": "Seward Mini Park",
-  "path": "/san-francisco/castro/seward-mini-park/",
-  "kind": "park",
-  "type": "Mini Park",
-  "coordinates": {
-    "lat": 37.757625,
-    "lng": -122.440065
+ "name": "Seward Mini Park",
+ "path": "/san-francisco/castro/seward-mini-park/",
+ "kind": "park",
+ "type": "Mini Park",
+ "coordinates": {
+  "lat": 37.757625,
+  "lng": -122.440065
+ },
+ "acres": 0.42,
+ "address": "70 Corwin Street",
+ "managed_by": "Recreation & Park",
+ "complex": "Buena Vista Complex",
+ "rpd_property_id": "73",
+ "facilities": [
+  {
+   "name": "Children's Play Area",
+   "type": "Children's Play Area"
   },
-  "acres": 0.42,
-  "address": "70 Corwin Street",
-  "managed_by": "Recreation & Park",
-  "complex": "Buena Vista Complex",
-  "rpd_property_id": "73",
-  "facilities": [
-    {
-      "name": "Children's Play Area",
-      "type": "Children's Play Area"
-    },
-    {
-      "name": "Community Garden",
-      "type": "Community Garden"
-    }
-  ],
-  "parcels": [
-    "2714030",
-    "2714032",
-    "2714031",
-    "2714013A",
-    "2714013"
-  ],
-  "sources": [
-    {
-      "id": "sf-rpd-properties",
-      "name": "SF Recreation and Park Department — Recreation and Parks Properties via DataSF",
-      "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=73",
-      "retrieved": "2026-09-25"
-    },
-    {
-      "id": "sf-rpd-facilities",
-      "name": "SF Recreation and Park Department — Recreation and Parks Facilities via DataSF",
-      "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=73",
-      "retrieved": "2026-09-25"
-    },
-    {
-      "id": "sf-parcels",
-      "name": "SF Parcels (active and retired) via DataSF",
-      "supports": "Parcels",
-      "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%272714030%27%2C%272714032%27%2C%272714031%27%2C%272714013A%27%2C%272714013%27%29",
-      "retrieved": "2026-09-25"
-    }
-  ]
+  {
+   "name": "Community Garden",
+   "type": "Community Garden"
+  }
+ ],
+ "parcels": [
+  "2714030",
+  "2714032",
+  "2714031",
+  "2714013A",
+  "2714013"
+ ],
+ "sources": [
+  {
+   "id": "sf-rpd-properties",
+   "name": "SF Recreation and Park Department \u2014 Recreation and Parks Properties via DataSF",
+   "query": "https://data.sf.gov/resource/gtr9-ntp6.json?property_id=73",
+   "retrieved": "2026-09-25"
+  },
+  {
+   "id": "sf-rpd-facilities",
+   "name": "SF Recreation and Park Department \u2014 Recreation and Parks Facilities via DataSF",
+   "query": "https://data.sf.gov/resource/ib5c-xgwu.json?property_id=73",
+   "retrieved": "2026-09-25"
+  },
+  {
+   "id": "sf-parcels",
+   "name": "SF Parcels (active and retired) via DataSF",
+   "supports": "Parcels",
+   "query": "https://data.sf.gov/resource/acdm-wktn.json?$where=blklot%20in%20%28%272714030%27%2C%272714032%27%2C%272714031%27%2C%272714013A%27%2C%272714013%27%29",
+   "retrieved": "2026-09-25"
+  },
+  {
+   "id": "sf-planning-commission-minutes-1971-05-27",
+   "name": "San Francisco City Planning Commission, minutes of the meeting of 27 May 1971",
+   "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+   "query": "https://archive.org/details/17minutesofsanfran1971sa/page/n194/mode/1up",
+   "retrieved": "2026-10-10"
+  }
+ ],
+ "historical_record": [
+  {
+   "date": "1971-05-27",
+   "kind": "planning decision",
+   "description": "The two lots, with a combined 51-foot frontage and about 6,300 square feet sloping up some 40 feet from the street, were vacant; an apartment building once proposed for the site had never been built. The City Planning Commission found the City's acquisition of the two vacant lots for a mini-park in conformity with the Master Plan.",
+   "source": "sf-planning-commission-minutes-1971-05-27"
+  }
+ ]
 }

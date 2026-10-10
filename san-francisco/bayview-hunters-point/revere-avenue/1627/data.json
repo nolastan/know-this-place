@@ -1,0 +1,105 @@
+{
+ "address": "1627 Revere Avenue, San Francisco, CA 94124",
+ "path": "/san-francisco/bayview-hunters-point/revere-avenue/1627/",
+ "apn": "5342017",
+ "block": "5342",
+ "lot": "017",
+ "eas_baseid": "376465",
+ "coordinates": {
+  "lat": 37.731692,
+  "lng": -122.390751
+ },
+ "parcel": {
+  "year_built": 1981,
+  "units": 1,
+  "stories": 1,
+  "rooms": 8,
+  "bathrooms": 3,
+  "bedrooms": 4,
+  "lot_area_sqft": 2500,
+  "building_area_sqft": 1840,
+  "basement_area_sqft": 550,
+  "use": "Single Family Residential",
+  "property_class": "Dwelling",
+  "construction_type_code": "D",
+  "zoning": "RH-2",
+  "supervisor_district": 10,
+  "assessor_neighborhood": "Bayview",
+  "analysis_neighborhood": "Bayview Hunters Point",
+  "property_location_raw": "0000 1627 REVERE              AV0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 817130,
+  "assessed_improvement_value": 350198
+ },
+ "historic_status": {
+  "ceqa_status_code": "B",
+  "ceqa_status_code_article_10_11": "B",
+  "ceqa_status_label": "Unevaluated",
+  "reason": "No evaluation and 45 years or older",
+  "yearbuilt": "1981",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "permits": [
+  {
+   "number": "202504114266",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "2025-04-11",
+   "status_date": "2025-04-15",
+   "estimated_cost": 1,
+   "revised_cost": 1,
+   "description": "administrative permit to document the legal use and occupancy of structure as a 2 story building with 2 dwelling units. this determination is based on a review of records including sanborn map, assessors record, and a dbi site visit. no work on this permit.",
+   "source": "sf-building-permits"
+  }
+ ],
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=REVERE&street_type=AVE&address_number=1627",
+   "retrieved": "2026-10-10"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5342017&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-10-10"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5342&lot=017",
+   "retrieved": "2026-10-10"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department \u2014 Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5342017",
+   "retrieved": "2026-10-10"
+  },
+  {
+   "id": "sf-planning-commission-minutes-1971-11-04",
+   "name": "San Francisco City Planning Commission, minutes of the meeting of 4 November 1971",
+   "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+   "query": "https://archive.org/details/19minutesofsanfran1971sa/page/n124/mode/1up",
+   "retrieved": "2026-10-10"
+  }
+ ],
+ "historical_record": [
+  {
+   "date": "1965",
+   "kind": "site history",
+   "description": "The commercial use of the property lost its non-conforming status and was declared illegal in 1965.",
+   "source": "sf-planning-commission-minutes-1971-11-04"
+  },
+  {
+   "date": "1971-11-04",
+   "kind": "planning decision",
+   "description": "The building then on the lot had a used clothing store on the ground floor with apartments above; the premises had formerly been a paint store. The City Planning Commission disapproved, 7-0, reclassifying the property from R-2 to C-2.",
+   "source": "sf-planning-commission-minutes-1971-11-04"
+  }
+ ]
+}

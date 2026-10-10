@@ -1,0 +1,90 @@
+{
+ "address": "55 Belcher Street, San Francisco, CA 94114",
+ "path": "/san-francisco/castro/belcher-street/55/",
+ "apn": "3537100",
+ "block": "3537",
+ "lot": "100",
+ "eas_baseid": "480159",
+ "coordinates": {
+  "lat": 37.768511,
+  "lng": -122.429842
+ },
+ "parcel": {
+  "lot_area_sqft": 3500,
+  "lot_depth_ft": 25,
+  "use": "Miscellaneous/Mixed-Use",
+  "property_class": "Vacant Lot Residential",
+  "construction_type_code": "NA",
+  "zoning": "RH-3",
+  "supervisor_district": 8,
+  "assessor_neighborhood": "Duboce Triangle",
+  "analysis_neighborhood": "Castro/Upper Market",
+  "property_location_raw": "0000 0055 BELCHER             ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 100776
+ },
+ "historic_status": {
+  "ceqa_status_code": "B",
+  "ceqa_status_code_article_10_11": "B",
+  "ceqa_status_label": "Unevaluated",
+  "reason": "No evaluation and 45 years or older",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "permits": [
+  {
+   "number": "201905069886",
+   "type": "new construction",
+   "status": "issued",
+   "filed": "2019-05-06",
+   "status_date": "2022-02-15",
+   "estimated_cost": 7000000,
+   "revised_cost": 7000000,
+   "description": "to erect a 4-story, type 3a, 25 residential units bldg w/ parking garage. (n) bldg will be on block/lot# 3537/098,099 and 100; revised drawings indicate type iiia construction, dmj 04/01/2021;",
+   "source": "sf-building-permits"
+  }
+ ],
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BELCHER&street_type=ST&address_number=55",
+   "retrieved": "2026-10-10"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3537100&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-10-10"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3537&lot=100",
+   "retrieved": "2026-10-10"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department \u2014 Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3537100",
+   "retrieved": "2026-10-10"
+  },
+  {
+   "id": "sf-planning-commission-minutes-1971-06-17",
+   "name": "San Francisco City Planning Commission, minutes of the meeting of 17 June 1971",
+   "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+   "query": "https://archive.org/details/17minutesofsanfran1971sa/page/n298/mode/1up",
+   "retrieved": "2026-10-10"
+  }
+ ],
+ "historical_record": [
+  {
+   "date": "1971-06-17",
+   "kind": "planning decision",
+   "description": "Three lots totalling 10,603 square feet held buildings with nine dwelling units in all. The City Planning Commission approved in principle replacing the houses on the three lots with a 24-space parking lot for a Bank of America drive-in branch to be built on Church Street, subject to conditions to be drafted later.",
+   "source": "sf-planning-commission-minutes-1971-06-17"
+  }
+ ]
+}
