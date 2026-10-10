@@ -6,9 +6,9 @@
 >
 > - **Kind:** meeting minutes (scanned volumes) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 10 of 53 volumes read (July 1968 – December 1970): 2,435
->   pages, 827 findings, 413 resolved, 397 published on 200 distinct pages. 43 volumes
->   remain — 1971–1980 and 1994–2005.
+> - **Coverage:** 14 of 53 volumes read (July 1968 – December 1971): 3,521
+>   pages, 1,150 findings, 567 resolved, 539 published on 264 distinct pages. 39 volumes
+>   remain — 1972–1980 and 1994–2005.
 > - **Local corpus:** `research/corpora/sf-planning-commission-minutes/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -34,7 +34,8 @@
 |---|---|---|
 | 6–11 | July 1968 – December 1969, one quarter each | **read in full** 2026-10-06 |
 | 12–15 | January – December 1970, one quarter each | **read in full** 2026-10-09 |
-| 16–39 | 1971–1980 (quarters to 1973, then halves, then whole years) | unread |
+| 16–19 | January – December 1971, one quarter each | **read in full** 2026-10-10 |
+| 20–39 | 1972–1980 (quarters to 1973, then halves, then whole years) | unread |
 | 40–58 | 1994–2005 | unread |
 | — | 1981–1993 | in no volume; 31 is missing from the sequence |
 | — | before July 1968 | not in this collection. The Commission dates from 1942 |
@@ -128,6 +129,26 @@
   - **A Board of Supervisors action reported in the minutes is dated to the
     Board's meeting**, which the report names ("at its meeting of September 28,
     1970"), not to the Commission meeting that heard the report.
+  - **The 1971 volumes stop naming the Board's date.** "The Board of
+    Supervisors, at its meeting on Monday, approved…" is the 1971 form: seven
+    of that year's reported actions (four landmark designations, two
+    reclassifications, a Finance Committee vote on the Opera House) print no
+    date of their own, and three of ten readers dated each one to the
+    Commission meeting that reported it — a date the action never had. Working
+    out the Monday is arithmetic the spec forbids. Frame it instead: "By 26
+    August 1971, the Board of Supervisors had approved…", dated to the reporting
+    meeting, which is true as written.
+  - **From June 1971 the page headers drop the meeting date** in places (vol.
+    17 from n272); date those pages from the meeting's opening paragraph.
+  - **The same case number can be printed for two cases** (R71.21 for 2750
+    Hyde and for a Loomis Street lot) and **a case's number can change between
+    hearings** (2352 Pine: CU71.38 on 5 August, CU71.28 on 12 August). Link a
+    decision to its hearing by the address, not the number alone.
+  - **1971 is the year of the downtown towers.** Discretionary review brought
+    the Metropolitan Life, Tishman-Cahill, Standard Oil, One Market Plaza and
+    100 Van Ness towers before the Commission, each with the buildings then on
+    its site; none of them prints a street number, and each was placed by name
+    on the page the site already had for the tower.
   - **Readers supply numbers the minutes do not print.** One 1970 reader
     turned a speaker's "built 112 years ago" into "about 1858", and two
     corrected a resolution number from the sequence. The year was declined;
@@ -156,10 +177,13 @@
   1969 — read in full into
   `findings/sf-planning-commission-minutes/minutes-1968-1969.json`; volumes
   12–15 — every meeting of 1970, 8 January to 17 December — read in full into
-  `findings/sf-planning-commission-minutes/minutes-1970.json`. Nothing of
-  those volumes is known to remain unread. **Next: volume 16 (January–March
-  1971) and onwards**, four quarterly volumes a run (one year, about 1,500
-  text pages, eight readers); the 1994–2005 volumes are a
+  `findings/sf-planning-commission-minutes/minutes-1970.json`; volumes
+  16–19 — every meeting of 1971, 7 January to 23 December — read in full
+  into `findings/sf-planning-commission-minutes/minutes-1971.json`. Nothing
+  of those volumes is known to remain unread. **Next: volume 20
+  (January–March 1972) and onwards**, four quarterly volumes a run (one year,
+  about 1,100 text pages, ten readers of ~110 pages each, about six minutes);
+  the 1994–2005 volumes are a
   different kind of document (by then the Commission's own case reports are
   online and indexed) and are worth sampling before a run is sized on them.
 - **Verified:** 2026-10-06 (volumes 6–11, July 1968 – December 1969: 957 OCR
@@ -192,3 +216,17 @@
   holds a span for each colour card, so a citation must skip them, not drop
   them; a record with a block and lot and no number is placed by parcel; a
   reader will do arithmetic to supply a date, and the spec must forbid it.)
+  **2026-10-10** (volumes 16–19, January – December 1971: 1,086 OCR pages
+  with text out of 1,704 scanned leaves, read by ten readers from one spec in
+  about six minutes. 39 meetings; 323 findings — 162 statements of what stood
+  on a property, 113 decisions, 38 dated past facts, 10 landmark designations.
+  154 resolved: 108 by the EAS join on a printed number, 46 by hand — by name
+  on a building a page already carries, by the record's own block and lot, and
+  one range. 169 unresolved, 128 of them located only by a block, a corner or a
+  name; 11 are condominiums waiting on #446. 142 published on 71 pages, 34 of
+  them seeded and 2 of them place pages; 12 declined. Fewer property cases
+  than 1970 — whole sittings went to the Improvement Plan for Residence, the
+  Urban Design Plan and the citywide transportation plan, which locate
+  nothing. What the pass learned: the 1971 minutes report Board actions as
+  "on Monday" with no date, and the frame is "by" the reporting meeting; the
+  downtown towers of 1971 are found by name, not number.)

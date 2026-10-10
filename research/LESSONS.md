@@ -2768,6 +2768,16 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   is what the page prints, and that working one out — from an age, a
   sequence, a neighbouring entry — goes in `reader_note`, never in `date` or
   `extra`.*
+- **An action reported without its own date is dated "by" the report, not
+  at it.** The 1971 Planning Commission minutes report seven Board of
+  Supervisors actions as "at its meeting on Monday", and three of ten readers,
+  told not to work out a date, dated each one to the Commission meeting that
+  reported it instead — a day the Board never sat, which would have put a
+  landmark's Board vote on the wrong date beside the Article 10 report's own.
+  *Write into the reader spec what to do when the date is missing, not only
+  what not to compute: the entry takes the reporting meeting's date and says
+  "By 26 August 1971, the Board of Supervisors had approved…", which is true
+  as written.* ([sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))
 - **The Internet Archive's hOCR page index has a span for every leaf, the
   colour cards included.** `_hocr_pageindex.json` lists one span per
   `scandata.xml` leaf, so the card at leaf 0 has a span (empty) and every

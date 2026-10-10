@@ -7,6 +7,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [15th Avenue](15th-avenue/) — 1 building, built 1945.
 - [16th Avenue](16th-avenue/) — 1 building, built 1947.
 - [17th Avenue](17th-avenue/) — 2 buildings, built 1950–2020.
+- [18th Avenue](18th-avenue/) — 1 building, built 1920.
 - [19th Avenue](19th-avenue/) — 1 building, built 1913.
 - [9th Avenue](9th-avenue/) — 1 building, built 1954; 1 in the Forest Hill Historic District.
 - [Casitas Avenue](casitas-avenue/) — 1 building, built 1953.

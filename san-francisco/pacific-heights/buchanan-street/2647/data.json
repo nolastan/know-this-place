@@ -1,0 +1,97 @@
+{
+ "address": "2647 Buchanan Street, San Francisco, CA 94115",
+ "path": "/san-francisco/pacific-heights/buchanan-street/2647/",
+ "apn": "0580002",
+ "block": "0580",
+ "lot": "002",
+ "eas_baseid": "285673",
+ "coordinates": {
+  "lat": 37.794402,
+  "lng": -122.431889
+ },
+ "parcel": {
+  "year_built": 1900,
+  "units": 8,
+  "stories": 3,
+  "rooms": 21,
+  "bathrooms": 8,
+  "lot_area_sqft": 3720,
+  "building_area_sqft": 5655,
+  "use": "Multi-Family Residential",
+  "property_class": "Apartment 5 to 14 Units",
+  "construction_type_code": "D",
+  "zoning": "RH-2",
+  "supervisor_district": 2,
+  "assessor_neighborhood": "Pacific Heights",
+  "analysis_neighborhood": "Pacific Heights",
+  "property_location_raw": "0000 2647 BUCHANAN            ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 1054784,
+  "assessed_improvement_value": 1371226,
+  "last_sale_date": "2000-08-18"
+ },
+ "historic_status": {
+  "ceqa_status_code": "B",
+  "ceqa_status_code_article_10_11": "B",
+  "ceqa_status_label": "Unevaluated",
+  "reason": "No evaluation and 45 years or older",
+  "yearbuilt": "1900",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "permits": [
+  {
+   "number": "9624525",
+   "type": "otc alterations permit",
+   "status": "expired",
+   "filed": "1996-12-23",
+   "status_date": "1997-08-05",
+   "estimated_cost": 8560,
+   "description": "repair fire boxes install dampers and reline with stainless",
+   "source": "sf-building-permits"
+  }
+ ],
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BUCHANAN&street_type=ST&address_number=2647",
+   "retrieved": "2026-10-10"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0580002&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-10-10"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0580&lot=002",
+   "retrieved": "2026-10-10"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department \u2014 Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0580002",
+   "retrieved": "2026-10-10"
+  },
+  {
+   "id": "sf-planning-commission-minutes-1971-04-08",
+   "name": "San Francisco City Planning Commission, minutes of the meeting of 8 April 1971",
+   "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+   "query": "https://archive.org/details/17minutesofsanfran1971sa/page/n40/mode/1up",
+   "retrieved": "2026-10-10"
+  }
+ ],
+ "historical_record": [
+  {
+   "date": "1971-04-08",
+   "kind": "occupancy",
+   "description": "A former Victorian mansion, built without a garage, stood on the lot and had been legally converted into seventeen apartments.",
+   "source": "sf-planning-commission-minutes-1971-04-08"
+  }
+ ]
+}

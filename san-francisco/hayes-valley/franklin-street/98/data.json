@@ -1,0 +1,91 @@
+{
+ "address": "98 Franklin Street, San Francisco, CA 94102",
+ "path": "/san-francisco/hayes-valley/franklin-street/98/",
+ "apn": "0836013",
+ "block": "0836",
+ "lot": "013",
+ "eas_baseid": "289170",
+ "coordinates": {
+  "lat": 37.775003,
+  "lng": -122.420621
+ },
+ "parcel": {
+  "year_built": 1900,
+  "lot_area_sqft": 12218.75,
+  "lot_depth_ft": 97.75,
+  "use": "Commercial Misc",
+  "property_class": "Parking Lot",
+  "construction_type_code": "D",
+  "zoning": "C3G",
+  "supervisor_district": 6,
+  "assessor_neighborhood": "Van Ness/ Civic Center",
+  "analysis_neighborhood": "Hayes Valley",
+  "property_location_raw": "0000 0098 FRANKLIN            ST0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 5701511
+ },
+ "historic_status": {
+  "ceqa_status_code": "B",
+  "ceqa_status_code_article_10_11": "B",
+  "ceqa_status_label": "Unevaluated",
+  "reason": "No evaluation and 45 years or older",
+  "yearbuilt": "1900",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "permits": [
+  {
+   "number": "202102184905",
+   "type": "new construction",
+   "status": "filed",
+   "filed": "2021-02-18",
+   "status_date": "2021-02-18",
+   "estimated_cost": 120000000,
+   "description": "erect new 37 stories 345 residential unit, type 1-a construction, two basements, mix use building with private school new building on 3 lots: 0836/13, 08 & 09",
+   "source": "sf-building-permits"
+  }
+ ],
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FRANKLIN&street_type=ST&address_number=98",
+   "retrieved": "2026-10-10"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0836013&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-10-10"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0836&lot=013",
+   "retrieved": "2026-10-10"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department \u2014 Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0836013",
+   "retrieved": "2026-10-10"
+  },
+  {
+   "id": "sf-planning-commission-minutes-1971-01-07",
+   "name": "San Francisco City Planning Commission, minutes of the meeting of 7 January 1971",
+   "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+   "query": "https://archive.org/details/16minutesofsanfran1971sa/page/n30/mode/1up",
+   "retrieved": "2026-10-10"
+  }
+ ],
+ "historical_record": [
+  {
+   "date": "1971-01-07",
+   "kind": "planning decision",
+   "description": "The corner lot had formerly been an automobile service station, also used for parking and truck and trailer rental. The City Planning Commission approved, with conditions, an unattended automobile parking lot on the site.",
+   "source": "sf-planning-commission-minutes-1971-01-07"
+  }
+ ]
+}

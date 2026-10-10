@@ -1,0 +1,107 @@
+{
+ "address": "1423\u20131425 47th Avenue, San Francisco, CA 94122",
+ "path": "/san-francisco/sunset-parkside/47th-avenue/1423/",
+ "apn": "1806049",
+ "block": "1806",
+ "lot": "049",
+ "eas_baseid": "473583",
+ "coordinates": {
+  "lat": 37.759876,
+  "lng": -122.507292
+ },
+ "address_range": "1423\u20131425",
+ "street_numbers_on_parcel": [
+  "1423",
+  "1425"
+ ],
+ "parcel": {
+  "year_built": 1974,
+  "units": 2,
+  "stories": 2,
+  "rooms": 14,
+  "bathrooms": 5,
+  "bedrooms": 7,
+  "lot_area_sqft": 3000,
+  "building_area_sqft": 4158,
+  "basement_area_sqft": 616,
+  "lot_depth_ft": 20,
+  "lot_frontage_ft": 25,
+  "use": "Multi-Family Residential",
+  "property_class": "Flats & Duplex",
+  "construction_type_code": "D",
+  "zoning": "RH-2",
+  "supervisor_district": 4,
+  "assessor_neighborhood": "Outer Sunset",
+  "analysis_neighborhood": "Sunset/Parkside",
+  "property_location_raw": "1425 1423 47TH                AV0000"
+ },
+ "assessment": {
+  "roll_year": 2025,
+  "assessed_land_value": 780341,
+  "assessed_improvement_value": 334428,
+  "last_sale_date": "2011-03-30"
+ },
+ "historic_status": {
+  "ceqa_status_code": "B",
+  "ceqa_status_code_article_10_11": "B",
+  "ceqa_status_label": "Unevaluated",
+  "reason": "No evaluation and 45 years or older",
+  "yearbuilt": "1974",
+  "in_article_10_11_historic_district": false,
+  "source": "sf-planning"
+ },
+ "permits": [
+  {
+   "number": "200602154712",
+   "type": "otc alterations permit",
+   "status": "complete",
+   "filed": "2006-02-15",
+   "status_date": "2006-07-17",
+   "estimated_cost": 12000,
+   "revised_cost": 12000,
+   "description": "comply with the violation# 200564239 & 200564534 (pid). install interior stairs. bathroom, study room & family room @ 1st floor.",
+   "source": "sf-building-permits"
+  }
+ ],
+ "sources": [
+  {
+   "id": "sf-eas-addresses",
+   "name": "SF Enterprise Addressing System via DataSF",
+   "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=47TH&street_type=AVE&address_number=1423",
+   "retrieved": "2026-10-10"
+  },
+  {
+   "id": "sf-assessor-roll",
+   "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+   "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1806049&$order=closed_roll_year%20DESC&$limit=1",
+   "retrieved": "2026-10-10"
+  },
+  {
+   "id": "sf-building-permits",
+   "name": "SF Dept. of Building Inspection via DataSF",
+   "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1806&lot=049",
+   "retrieved": "2026-10-10"
+  },
+  {
+   "id": "sf-planning",
+   "name": "SF Planning Department \u2014 Historic Resource Status by Parcel via DataSF",
+   "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1806049",
+   "retrieved": "2026-10-10"
+  },
+  {
+   "id": "sf-planning-commission-minutes-1971-10-07",
+   "name": "San Francisco City Planning Commission, minutes of the meeting of 7 October 1971",
+   "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+   "query": "https://archive.org/details/19minutesofsanfran1971sa/page/n34/mode/1up",
+   "retrieved": "2026-10-10"
+  }
+ ],
+ "historical_record": [
+  {
+   "date": "1971-10-07",
+   "kind": "planning decision",
+   "description": "The lot was vacant. The City Planning Commission disapproved reclassifying the vacant lot from R-2 to R-4, which would have allowed an apartment building of up to 30 units.",
+   "source": "sf-planning-commission-minutes-1971-10-07"
+  }
+ ]
+}
