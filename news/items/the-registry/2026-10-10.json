@@ -1,0 +1,111 @@
+{
+ "source_id": "the-registry",
+ "batch": "2026-10-10",
+ "read_on": "2026-10-10",
+ "notes": "Run of 2026-10-10.",
+ "coverage": {
+  "unit": "articles",
+  "examined": 3,
+  "mentions": 3,
+  "remaining": "none",
+  "note": "Other queued stories name no building or fail the ten-year test."
+ },
+ "findings": [
+  {
+   "id": "2026-10-10-reg-0001",
+   "date": "2026-10-09",
+   "date_precision": "day",
+   "kind": "sale",
+   "address_as_written": "201 California Street",
+   "street_number": "201",
+   "street_type": "ST",
+   "street_name": "CALIFORNIA",
+   "description": "Ridge Capital closed on the 17-story, 272,000 sq ft 201 California from Columbia Property Trust for $75MM with an $80.1MM Rialto loan.",
+   "extra": {},
+   "citation": {
+    "label": "The Registry, “Ridge Capital Takes 272,000 SQFT 201 California in San Francisco From Columbia Property Trust for $75MM, Backed by $80.1MM Rialto Loan,” 9 October 2026",
+    "url": "https://news.theregistrysf.com/ridge-capital-takes-272000-sqft-201-california-in-san-francisco-from-columbia-property-trust-for-75mm-backed-by-80-1mm-rialto-loan/"
+   },
+   "raw": {
+    "text": "Ridge Capital Takes 272,000 SQFT 201 California in San Francisco From Columbia Property Trust for $75MM, Backed by $80.1MM Rialto Loan"
+   },
+   "confidence": "high",
+   "publish": {
+    "status": "published",
+    "note": "Page seeded (research/manifests/news-2026-10-10.json); headline entry added to historical_record and homepage grid. No building fields: proposal/sale/construction story."
+   },
+   "resolution": {
+    "status": "resolved",
+    "apn": "0262021",
+    "path": "/san-francisco/financial-district/california-street/201/",
+    "eas_address": "201 CALIFORNIA ST",
+    "method": "EAS exact match on 201 CALIFORNIA ST → parcel 0262021; sf-parcels has blklot 0262021 active, 201–201 CALIFORNIA; the 2025 roll records it as commercial office, built 1980.",
+    "checked_on": "2026-10-10",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   }
+  },
+  {
+   "id": "2026-10-10-reg-0002",
+   "date": "2026-10-09",
+   "date_precision": "day",
+   "kind": "sale",
+   "address_as_written": "2101 Mission Street",
+   "street_number": "2101",
+   "street_type": "ST",
+   "street_name": "MISSION",
+   "description": "Owner brings former Thrift Town building to market.",
+   "extra": {},
+   "citation": {
+    "label": "the-registry, “Owner That Took 132,000 SQFT 2101 Mission From Deutsche Bank Debt Brings Former Thrift Town Building to Market in San Francisco,” 9 October 2026",
+    "url": "https://news.theregistrysf.com/owner-that-took-132000-sqft-2101-mission-from-deutsche-bank-debt-brings-former-thrift-town-building-to-market-in-san-francisco/"
+   },
+   "raw": {
+    "text": "Owner That Took 132,000 SQFT 2101 Mission From Deutsche Bank Debt Brings Former Thrift Town Building to Market in San Francisco"
+   },
+   "confidence": "high",
+   "publish": {
+    "status": "declined",
+    "note": "A listing, not a transaction; revisit when it sells."
+   },
+   "resolution": {
+    "status": "resolved",
+    "apn": "3575091",
+    "path": "/san-francisco/mission/mission-street/2101/",
+    "eas_address": "2101 MISSION ST",
+    "method": "EAS exact match on 2101 MISSION ST → parcel 3575091; sf-parcels has blklot 3575091 active, 2101–2129 MISSION; the 2025 roll records it as commercial office, built 1916. EAS puts 2101, 2109, 2111, 2125, 2129 MISSION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2101.",
+    "checked_on": "2026-10-10",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   }
+  },
+  {
+   "id": "2026-10-10-reg-0003",
+   "date": "2026-10-09",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "80 Jefferson St.",
+   "street_number": "80",
+   "street_type": "ST",
+   "street_name": "JEFFERSON",
+   "description": "Seasonal ice rink on a Port lot.",
+   "extra": {},
+   "citation": {
+    "label": "the-registry, “On Ice Rinks Brings 6,000 SQFT Holiday Ice Rink to Port's Triangle Lot at Fisherman's Wharf in San Francisco,” 9 October 2026",
+    "url": "https://news.theregistrysf.com/on-ice-rinks-brings-6000-sqft-holiday-ice-rink-to-ports-triangle-lot-at-fishermans-wharf-in-san-francisco/"
+   },
+   "raw": {
+    "text": "On Ice Rinks Brings 6,000 SQFT Holiday Ice Rink to Port's Triangle Lot at Fisherman's Wharf in San Francisco"
+   },
+   "confidence": "high",
+   "publish": {
+    "status": "declined",
+    "note": "Seasonal pop-up on a lot; address is incidental. Fails ten-year test."
+   },
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-10-10",
+    "method": "No record in sf-eas-addresses for 80 JEFFERSON ST.",
+    "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 61, 63, 65, 75, 79, 81. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+   }
+  }
+ ]
+}
