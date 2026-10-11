@@ -1,0 +1,78 @@
+{
+  "source_id": "sf-chronicle",
+  "batch": "2026-10-11",
+  "read_on": "2026-10-11",
+  "notes": "Three queued, read. The Alto88 story duplicates the Standard's entry for 88 Spear; banh mi review is a restaurant review with no building fact; SFUSD story has no address.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 3,
+    "mentions": 2,
+    "remaining": "none"
+  },
+  "findings": [
+    {
+      "id": "2026-10-11-sc-0001",
+      "date": "2026-10-10",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "88 Spear St.",
+      "street_number": "88",
+      "street_type": "ST",
+      "street_name": "SPEAR",
+      "description": "Rooftop restaurant under construction atop an office building.",
+      "extra": {},
+      "citation": {
+        "label": "San Francisco Chronicle, “This rooftop restaurant is part of a bold bet on downtown San Francisco’s future,” 10 October 2026",
+        "url": "https://www.sfchronicle.com/sf/article/sf-office-building-rooftop-restaurant-22467157.php"
+      },
+      "raw": {
+        "text": "This rooftop restaurant is part of a bold bet on downtown San Francisco’s future"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Same article as the Chronicle entry already on /san-francisco/south-beach/mission-street/100/ (sf-chronicle-2026-10-09)."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3712023",
+        "path": "/san-francisco/south-beach/mission-street/100/",
+        "eas_address": "60 SPEAR ST",
+        "method": "EAS exact match on 88 SPEAR ST → parcel 3712023; sf-parcels has blklot 3712023 active, 100–100 MISSION; the 2025 roll records it as commercial office, built 1967. EAS puts 60, 88 SPEAR ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 60.",
+        "checked_on": "2026-10-11"
+      }
+    },
+    {
+      "id": "2026-10-11-sc-0002",
+      "date": "2026-10-10",
+      "date_precision": "day",
+      "kind": "opening",
+      "address_as_written": "3401 Geary Blvd.",
+      "street_number": "3401",
+      "street_type": "BLVD",
+      "street_name": "GEARY",
+      "description": "Restaurant review.",
+      "extra": {},
+      "citation": {
+        "label": "San Francisco Chronicle, “A cult favorite lunch spot closed under sketchy circumstances, but its $8 sandwich lives on,” 10 October 2026",
+        "url": "https://www.sfchronicle.com/food/restaurants/article/banh-mi-mui-sing-sing-22465599.php"
+      },
+      "raw": {
+        "text": "A cult favorite lunch spot closed under sketchy circumstances, but its $8 sandwich lives on"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Restaurant review; address not established as the shop's, and the story is about its owners."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "1085001",
+        "path": "/san-francisco/lone-mountain/geary-boulevard/3401/",
+        "eas_address": "3401 GEARY BLVD",
+        "method": "EAS exact match on 3401 GEARY BLVD → parcel 1085001; sf-parcels has blklot 1085001 active, 21–21 BEAUMONT; the 2025 roll records it as multi-family residential, built 1900. The assessor files the parcel as 21 BEAUMONT AV.",
+        "checked_on": "2026-10-11"
+      }
+    }
+  ]
+}

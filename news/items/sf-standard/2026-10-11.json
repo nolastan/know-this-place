@@ -1,0 +1,49 @@
+{
+  "source_id": "sf-standard",
+  "batch": "2026-10-11",
+  "read_on": "2026-10-11",
+  "notes": "Three queued, read. The Alto88 story duplicates the Chronicle entry already on the page for 88 Spear; nothing published.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 3,
+    "mentions": 1,
+    "remaining": "none"
+  },
+  "findings": [
+    {
+      "id": "2026-10-11-ss-0001",
+      "date": "2026-10-10",
+      "date_precision": "day",
+      "kind": "construction",
+      "address_as_written": "88 Spear Street",
+      "street_number": "88",
+      "street_type": "ST",
+      "street_name": "SPEAR",
+      "description": "A rooftop restaurant and event space is under construction atop the 12-story building, opening next year.",
+      "extra": {
+        "redeveloper": "Presidio Bay",
+        "building_name_per_article": "The Spear"
+      },
+      "citation": {
+        "label": "The San Francisco Standard, “Tip of The Spear: SF’s next rooftop destination takes shape,” 10 October 2026",
+        "url": "https://sfstandard.com/2026/10/10/presidio-bay-spear-renovation-spiegel/"
+      },
+      "raw": {
+        "text": "Tip of The Spear: SF’s next rooftop destination takes shape"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Duplicate: the same event is already on /san-francisco/south-beach/mission-street/100/ as the Chronicle entry of 2026-10-09 (sf-chronicle-2026-10-09). Presidio Bay's redevelopment is a proposal-stage fact for extra, not the building's original developer field."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3712023",
+        "path": "/san-francisco/south-beach/mission-street/100/",
+        "eas_address": "60 SPEAR ST",
+        "method": "EAS exact match on 88 SPEAR ST → parcel 3712023; sf-parcels has blklot 3712023 active, 100–100 MISSION; the 2025 roll records it as commercial office, built 1967. EAS puts 60, 88 SPEAR ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 60.",
+        "checked_on": "2026-10-11"
+      }
+    }
+  ]
+}
