@@ -220,7 +220,11 @@ It then lists **every resolution that landed on a parcel its own method calls a
 condominium unit** — an address that joins to one active parcel while a sibling
 row ("19 A" beside "19") shares that parcel's point with a twin. Nothing
 declines these, because airspace lots of one building look the same; read each
-and mark a unit parcel `unresolved` with `by_hand`.
+and mark a unit parcel `unresolved` with `by_hand`. It also lists **every
+resolution onto a parcel with no row on the secured roll** — usually a
+condominium's original lot, which EAS still carries the street number on
+while the building's units sit on `<block>C…` lots; `seed-list` skips these
+silently, so settle them before `manifest`.
 
 **`extra.record_date` is the year the *record* was written, and it turns off the
 renumbering guard.** The guard refuses a pre-1910 date resolved on the EAS join

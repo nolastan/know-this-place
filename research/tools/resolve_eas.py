@@ -1893,6 +1893,26 @@ def main() -> int:
                   "airspace lots of one building. Mark a unit `unresolved` with `by_hand`.")
             print()
 
+        # A resolution onto a parcel the secured roll has no row for. EAS still
+        # files a condominium's street number on the building's original lot
+        # after the assessor moved the building onto unit lots ("0071C301"…),
+        # so the join succeeds, and then `seed-list` skips the parcel for want
+        # of a roll row and the finding has no page to land on. Five of the
+        # 1972 Planning Commission minutes' Russian Hill towers did this.
+        rollless = [(f["id"], f["address_as_written"][:34], decisions[f["id"]]["apn"])
+                    for f in data["findings"]
+                    if decisions[f["id"]]["status"] == "resolved"
+                    and not decisions[f["id"]].get("by_hand")
+                    and "no row on the secured roll" in (decisions[f["id"]].get("method") or "")]
+        if rollless:
+            print(f"Resolved onto a parcel with no row on the secured roll: {len(rollless)}")
+            for fid, addr, apn in rollless:
+                print(f"  {fid}  {addr:<36} → {apn}")
+            print("  Usually a condominium's original lot, its units now on C-series lots of the "
+                  "same block; seed-list skips these. Check the roll for '<block>C…' parcels at the "
+                  "address and mark a condominium `unresolved` with `by_hand` (#446).")
+            print()
+
         # A resolution the point made, on a parcel that says it does not carry
         # the number. Raised, never decided — but ranked by the thing that
         # actually settles it, which is not the stated range.

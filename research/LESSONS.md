@@ -2798,3 +2798,15 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   rather than "it cannot become a page". *Grep a batch's unresolved entries
   for a recorded lot before closing it, and check whether the parcel is a
   Rec and Park place before seeding it.*
+- **A clean EAS join can land on a condominium's original lot, and the
+  seeder then skips it without a word of warning.** EAS keeps a condominium
+  tower's street number on the lot the building stood on before it was
+  mapped, and that lot is still active in `sf-parcels`; the assessor moved
+  the building onto unit lots of the same block (`0071C301`…). The join
+  resolves, `manifest` lists the parcel, and `seed-list` prints "no 2025 roll
+  row … skipped" — five Russian Hill towers in the 1972 Planning Commission
+  minutes went that way, and the facts had no page to land on. `resolve_eas.py
+  report` now lists every resolution onto a parcel with no roll row. *Read
+  that list before `manifest`, check the roll for `<block>C…` parcels at the
+  address, and mark a condominium `unresolved` with `by_hand` (#446).*
+  ([sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))

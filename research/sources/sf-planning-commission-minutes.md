@@ -6,9 +6,9 @@
 >
 > - **Kind:** meeting minutes (scanned volumes) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 14 of 53 volumes read (July 1968 – December 1971): 3,521
->   pages, 1,150 findings, 567 resolved, 539 published on 264 distinct pages. 39 volumes
->   remain — 1972–1980 and 1994–2005.
+> - **Coverage:** 18 of 53 volumes read (July 1968 – December 1972): 4,527
+>   pages, 1,532 findings, 698 resolved, 640 published on 309 distinct pages. 35 volumes
+>   remain — 1973–1980 and 1994–2005.
 > - **Local corpus:** `research/corpora/sf-planning-commission-minutes/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -35,7 +35,8 @@
 | 6–11 | July 1968 – December 1969, one quarter each | **read in full** 2026-10-06 |
 | 12–15 | January – December 1970, one quarter each | **read in full** 2026-10-09 |
 | 16–19 | January – December 1971, one quarter each | **read in full** 2026-10-10 |
-| 20–39 | 1972–1980 (quarters to 1973, then halves, then whole years) | unread |
+| 20–23 | January – December 1972, one quarter each | **read in full** 2026-10-11 |
+| 24–39 | 1973–1980 (quarters in 1973, then halves from 1974, then whole years) | unread |
 | 40–58 | 1994–2005 | unread |
 | — | 1981–1993 | in no volume; 31 is missing from the sequence |
 | — | before July 1968 | not in this collection. The Commission dates from 1942 |
@@ -155,6 +156,31 @@
     the resolution numbers are kept as printed with the doubt in
     `reader_note`. Say in the spec that a date is what the page states, not
     what can be worked out from it.
+  - **A condominium tower keeps its number on its original lot in EAS.** The
+    1972 height hearings list the Russian Hill towers by street number with
+    units and height — 1100 Union, 2164 and 2240 Hyde, 945 and 947 Green — and
+    EAS joins each cleanly to one active parcel. That parcel has no row on the
+    secured roll: the building's units are `<block>C…` lots of the same block,
+    and `seed-list` skipped all five. They are condominiums waiting on #446,
+    not pages. `resolve_eas.py report` now lists every resolution onto a
+    parcel with no roll row.
+  - **1972 is the year of the height-and-bulk hearings.** Eight special
+    meetings (16 and 30 March, 12 and 26 April, 13 June, 22 June evening,
+    and the open-space hearings of 16 November and 12 December) are almost all
+    public testimony and citywide maps. What they locate is a speaker's
+    "the Summit at 297 feet", "Harkness Hospital on Fell Street" — named
+    buildings with no number and no decision, left unresolved. The staff
+    tables of neighbouring tower heights in the Green-and-Jones and
+    Hyde-and-Lombard cases are the exception, and gave the year's Russian Hill
+    pages their units-and-height facts.
+  - **The Commission's landmark vote and the Board's ordinance are two
+    entries' worth only where the page lacks the vote.** The Article 10 report
+    already dates each designation; the minutes add the Commission's own vote
+    (the House of the Flag carried 4-3 on 10 February 1972) and, new in 1972,
+    the 180-day suspension of a demolition application on a designated
+    landmark (the Old Mint and the House of the Flag, both 15 June 1972). The
+    Board's undated second reading adds nothing beside the ordinance date and
+    was declined.
 - **People:** The minutes are *full* of them: applicants, their attorneys and
   architects, objecting neighbours, improvement-club officers, the
   commissioners and the staff, all named in the narrative of every hearing.
@@ -179,10 +205,12 @@
   12–15 — every meeting of 1970, 8 January to 17 December — read in full into
   `findings/sf-planning-commission-minutes/minutes-1970.json`; volumes
   16–19 — every meeting of 1971, 7 January to 23 December — read in full
-  into `findings/sf-planning-commission-minutes/minutes-1971.json`. Nothing
-  of those volumes is known to remain unread. **Next: volume 20
-  (January–March 1972) and onwards**, four quarterly volumes a run (one year,
-  about 1,100 text pages, ten readers of ~110 pages each, about six minutes);
+  into `findings/sf-planning-commission-minutes/minutes-1971.json`; volumes
+  20–23 — every meeting of 1972, 6 January to 21 December — read in full
+  into `findings/sf-planning-commission-minutes/minutes-1972.json`. Nothing
+  of those volumes is known to remain unread. **Next: volumes 24–27
+  (January–December 1973)**, four quarterly volumes a run (one year,
+  about 1,000 text pages, ten readers of ~100 pages each, about twenty minutes);
   the 1994–2005 volumes are a
   different kind of document (by then the Commission's own case reports are
   online and indexed) and are worth sampling before a run is sized on them.
@@ -230,3 +258,18 @@
   nothing. What the pass learned: the 1971 minutes report Board actions as
   "on Monday" with no date, and the frame is "by" the reporting meeting; the
   downtown towers of 1971 are found by name, not number.)
+  **2026-10-11** (volumes 20–23, January – December 1972: 1,006 OCR pages
+  with text out of 1,942 scanned leaves, read by ten readers from one spec in
+  about twenty minutes. 43 meetings; 382 findings — 174 statements of what
+  stood on a property, 128 decisions, 65 dated past facts, 15 landmark
+  designations. 131 resolved: 107 by the EAS join on a printed number, 24 by
+  hand on a named building the site already carries. 251 unresolved, 196 of
+  them with no street number; 29 are condominiums waiting on #446. 101
+  published on 53 pages, 20 of them seeded and 1 a place page; 30 declined, 18
+  of them already on the page from an earlier volume or another source. The
+  year's new kind of fact is the suspension of a demolition application on a
+  designated landmark. What the pass learned: an EAS join can land on a
+  condominium tower's original lot, which has no roll row, and the seeder
+  then skips it silently — `resolve_eas.py report` now lists those; and the
+  1972 height hearings, a quarter of the year's pages, locate almost
+  nothing.)
