@@ -15,6 +15,7 @@ A residential district south of the Mission proper, built up in the first decade
 - [Otsego Avenue](otsego-avenue/) — 1 building, built 1912.
 - [Ottawa Avenue](ottawa-avenue/) — 1 building, built 1940.
 - [Regent Street](regent-street/) — 1 building, built 2008.
+- [Rousseau Street](rousseau-street/) — 1 building.
 - [San Gabriel Avenue](san-gabriel-avenue/) — 2 buildings, built 1913.
 - [San Jose Avenue](san-jose-avenue/) — The San Francisco and San Mateo Railway's 1901 Geneva car barn, a San Francisco landmark since 1985.
 - [Santa Rosa Avenue](santa-rosa-avenue/) — 1 building, built 1952.
