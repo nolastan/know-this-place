@@ -1958,13 +1958,13 @@ def main() -> int:
             for fid, addr, apn, rng, gap, between in sorted(
                     outside, key=lambda x: (-len(x[5][0]), -x[4])):
                 hits, nearby = between
-            if hits:
-                where = (", ".join(f"{n} on {p}" for n, p in hits[:3])
-                         + (" …" if len(hits) > 3 else "") + " — in between")
-            elif nearby:
-                where = "nothing in between"
-            else:
-                where = "EAS joins no parcel to any number near this one — unchecked"
+                if hits:
+                    where = (", ".join(f"{n} on {p}" for n, p in hits[:3])
+                             + (" …" if len(hits) > 3 else "") + " — in between")
+                elif nearby:
+                    where = "nothing in between"
+                else:
+                    where = "EAS joins no parcel to any number near this one — unchecked"
                 print(f"  {gap:>4} off      {fid}  {addr:<36} {apn} states {rng}")
                 print(f"                  {where}")
             print("  EAS address points sit centimetres from a boundary, so a point can land in "

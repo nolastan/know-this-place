@@ -2810,3 +2810,26 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   that list before `manifest`, check the roll for `<block>C…` parcels at the
   address, and mark a condominium `unresolved` with `by_hand` (#446).*
   ([sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))
+- **A designation's printed number can put it on the building next door,
+  and nothing in the tool will say so.** Two 1973 landmark votes resolved
+  cleanly onto the wrong parcel: the Haslett Warehouse's case header prints
+  600 Beach Street, which EAS joins to the Cannery beside it (its resolution
+  prints 680), and the Lilienthal-Orville Pratt House's "1820 California" is
+  filed in EAS on both the landmark's parcel and its neighbour's, and the join
+  took the neighbour. Both looked like ordinary EAS exact matches. *For any
+  finding that names a building, check the resolved page against the page
+  that already names it (`check.py --overlap` lists those "by name"); where
+  they differ, the named building decides the parcel.*
+  ([sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))
+- **A script that writes `data.json` must keep the file's own indent and
+  order.** Pages are written at one-space and two-space indents both; a
+  publisher that dumped every page at `indent=2` and re-sorted its
+  `historical_record` turned a 90-page append into a 13,000-line diff of
+  other sources' entries. *Read the indent off the file, append, and never
+  re-sort a timeline the renderer orders anyway.*
+- **A reader stopped by a usage limit can be resumed, not re-run.** Five of
+  thirteen parallel readers on the 1973–74 minutes hit a session limit part-way;
+  sending each a message to continue resumed it from its own transcript, and
+  all five finished their pages without re-reading. *Check the output file
+  for a `_summary` line before trusting a reader is done; a file without one
+  is a reader that stopped.*

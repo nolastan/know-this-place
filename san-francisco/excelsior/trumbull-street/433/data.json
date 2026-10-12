@@ -1,0 +1,118 @@
+{
+  "address": "433 Trumbull Street, San Francisco, CA 94112",
+  "path": "/san-francisco/excelsior/trumbull-street/433/",
+  "apn": "5872066",
+  "block": "5872",
+  "lot": "066",
+  "eas_baseid": "385434",
+  "coordinates": {
+    "lat": 37.73114,
+    "lng": -122.422076
+  },
+  "parcel": {
+    "year_built": 1965,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 1341,
+    "building_area_sqft": 1340,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Excelsior",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0000 0433 TRUMBULL            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 21681,
+    "assessed_improvement_value": 57730
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1965",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201002126472",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-02-12",
+      "status_date": "2010-03-23",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200910199270",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-10-19",
+      "status_date": "2010-07-06",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "add wood roof curb, 1'-0\" high, to existing flat roof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9724861",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-12-11",
+      "status_date": "1999-03-08",
+      "estimated_cost": 6700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TRUMBULL&street_type=ST&address_number=433",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5872066&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5872&lot=066",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5872066",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1973-04-12",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 12 April 1973",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/25minutesofsanfran1973sa/page/n70/mode/1up",
+      "retrieved": "2026-10-12"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1973-04-12",
+      "kind": "planning decision",
+      "description": "Lot 66 in Block 5872, at the southwest corner of Trumbull Street and Alemany Boulevard, was a 1,500-square-foot R-1 lot almost entirely covered by an existing dwelling, beside about 350 square feet of unused street land kept as outdoor space. The City Planning Commission unanimously found in conformity with the Master Plan the vacation of unused portions of Trumbull Street and Alemany Boulevard next to Lot 66, Block 5872, so the land could be sold and added to that lot.",
+      "source": "sf-planning-commission-minutes-1973-04-12"
+    }
+  ]
+}

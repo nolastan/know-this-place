@@ -1,0 +1,107 @@
+{
+  "address": "2011 California Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/california-street/2011/",
+  "apn": "0650022",
+  "block": "0650",
+  "lot": "022",
+  "eas_baseid": "286961",
+  "coordinates": {
+    "lat": 37.789373,
+    "lng": -122.427722
+  },
+  "parcel": {
+    "year_built": 1974,
+    "units": 12,
+    "stories": 3,
+    "rooms": 42,
+    "bathrooms": 18,
+    "lot_area_sqft": 5156,
+    "building_area_sqft": 13650,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Lower Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "0000 2011 CALIFORNIA          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 273948,
+    "assessed_improvement_value": 817143
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1974",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202302282788",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2023-02-28",
+      "status_date": "2026-01-23",
+      "estimated_cost": 4000,
+      "revised_cost": 0,
+      "description": "replace the front (4) house windows and (1) light well window.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9708746",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-05-14",
+      "status_date": "1998-01-30",
+      "estimated_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CALIFORNIA&street_type=ST&address_number=2011",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0650022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0650&lot=022",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0650022",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1973-08-16",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 16 August 1973",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/26minutesofsanfran1973sa/page/n228/mode/1up",
+      "retrieved": "2026-10-12"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1973-08-16",
+      "kind": "planning decision",
+      "description": "The 5,156-square-foot lot was overgrown and held several large trees, including a large avocado tree near the west property line. The City Planning Commission unanimously affirmed the Negative Declaration for a 12-unit apartment building of three floors over a parking garage, finding it could not have a significant effect on the environment.",
+      "source": "sf-planning-commission-minutes-1973-08-16"
+    }
+  ]
+}

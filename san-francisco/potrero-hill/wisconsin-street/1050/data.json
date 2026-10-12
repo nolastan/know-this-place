@@ -1,0 +1,120 @@
+{
+  "address": "1050 Wisconsin Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/wisconsin-street/1050/",
+  "apn": "4219051",
+  "block": "4219",
+  "lot": "051",
+  "eas_baseid": "465677",
+  "coordinates": {
+    "lat": 37.754007,
+    "lng": -122.398931
+  },
+  "parcel": {
+    "lot_area_sqft": 20691,
+    "use": "Commercial Office",
+    "property_class": "Medical- dental Office Building",
+    "construction_type_code": "NA",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Potrero Hill",
+    "property_location_raw": "0000 1050 WISCONSIN           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201408274863",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-08-27",
+      "status_date": "2015-03-13",
+      "estimated_cost": 88500,
+      "revised_cost": 88500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201106289124",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-06-28",
+      "status_date": "2012-01-18",
+      "estimated_cost": 148000,
+      "revised_cost": 148000,
+      "description": "dry rot repair and removal of bldg siding, new stucco and windows on exterior elevation, south/west/east",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201012066174",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-12-06",
+      "status_date": "2011-03-24",
+      "estimated_cost": 800,
+      "revised_cost": 800,
+      "description": "add 2 smoke detectors and 2 notification devices to existing f/a system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200709263800",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2007-09-26",
+      "status_date": "2011-04-13",
+      "revised_cost": 750000,
+      "description": "the scope of services include barrier removal ada work, such as alteration of the main entrance door,public reception counter, 2 public restrooms, drinking fountain.work also includes construction of a new horizontal additional of approx 1050 s.f. for exam.room. consultation offices and conference.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=WISCONSIN&street_type=ST&address_number=1050",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4219051&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4219&lot=051",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4219051",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1973-12-13",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 13 December 1973",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/27minutesofsanfran1973sa/page/n364/mode/1up",
+      "retrieved": "2026-10-12"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1973-12-13",
+      "kind": "planning decision",
+      "description": "The City Planning Commission unanimously found the transfer of the lot from the Real Estate Department to the Health Department, for a Potrero Hill neighbourhood health center north of Starr King school, in conformity with the Master Plan, provided Coral Way stayed open and a six-foot sidewalk was kept beside the schoolyard.",
+      "source": "sf-planning-commission-minutes-1973-12-13"
+    }
+  ]
+}

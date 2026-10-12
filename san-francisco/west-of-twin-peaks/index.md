@@ -12,10 +12,12 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [9th Avenue](9th-avenue/) — 1 building, built 1954; 1 in the Forest Hill Historic District.
 - [Casitas Avenue](casitas-avenue/) — 1 building, built 1953.
 - [Castenada Avenue](castenada-avenue/) — 1 building, built 1929; 1 in the Forest Hill Historic District.
+- [Claremont Boulevard](claremont-boulevard/) — 1 building, built 1929.
 - [Darien Way](darien-way/) — 1 building; 1 in the Balboa Terrace Historic District.
 - [Edgehill Way](edgehill-way/) — 1 building, built 1970.
 - [El Verano Way](el-verano-way/) — 1 building, built 1926.
 - [Faxon Avenue](faxon-avenue/) — 1 building, built 1918.
+- [Foerster Street](foerster-street/) — 1 building, built 1900.
 - [Frida Kahlo Way](frida-kahlo-way/) — 1 building.
 - [Funston Avenue](funston-avenue/) — 1 building, built 1936.
 - [Juanita Way](juanita-way/) — 1 building, built 1927.

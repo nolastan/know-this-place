@@ -1,0 +1,110 @@
+{
+  "address": "101 Shields Street, San Francisco, CA 94132",
+  "path": "/san-francisco/ingleside-terraces/shields-street/101/",
+  "apn": "7071001",
+  "block": "7071",
+  "lot": "001",
+  "eas_baseid": "414535",
+  "coordinates": {
+    "lat": 37.717759,
+    "lng": -122.463686
+  },
+  "parcel": {
+    "year_built": 1951,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 1873,
+    "building_area_sqft": 1842,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Ingleside Heights",
+    "analysis_neighborhood": "Oceanview/Merced/Ingleside",
+    "property_location_raw": "0000 0101 SHIELDS             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 166113,
+    "assessed_improvement_value": 202588,
+    "last_sale_date": "1995-11-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1951",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201501206123",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-01-20",
+      "status_date": "2015-11-04",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa 201201182446; all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201201182446",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2012-01-18",
+      "status_date": "2013-01-30",
+      "estimated_cost": 65000,
+      "revised_cost": 65000,
+      "description": "front entry remodel, rear two story addition 334 sqft living space @ rear of first fl. 101 sqft @ 2nd fl plus 186 sqft new deck @ 2nd fl. kitchen remodel.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHIELDS&street_type=ST&address_number=101",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7071001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7071&lot=001",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7071001",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1974-01-10",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 10 January 1974",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/28minutesofsanfran1974sa/page/n92/mode/1up",
+      "retrieved": "2026-10-12"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1974-01-10",
+      "kind": "occupancy",
+      "description": "101 Shields Street held a residential building.",
+      "source": "sf-planning-commission-minutes-1974-01-10"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "address": "2115 19th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/west-of-twin-peaks/19th-avenue/2115/",
+  "apn": "2198037",
+  "block": "2198",
+  "lot": "037",
+  "eas_baseid": "332733",
+  "coordinates": {
+    "lat": 37.748171,
+    "lng": -122.47638
+  },
+  "parcel": {
+    "lot_area_sqft": 6600,
+    "use": "Commercial Misc",
+    "property_class": "Parking Lot",
+    "construction_type_code": "NA",
+    "zoning": "RH-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2115 19TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 214114,
+    "assessed_improvement_value": 1080
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200404121007",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-04-12",
+      "status_date": "2004-05-03",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace 55' linear feet of retaining wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=AVE&address_number=2115",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2198037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2198&lot=037",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2198037",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1974-09-05",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 5 September 1974",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/29minutesofsanfran1974sa/page/n326/mode/1up",
+      "retrieved": "2026-10-12"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1974-09-05",
+      "kind": "planning decision",
+      "description": "The City Planning Commission, by a 5-2 vote, disapproved expanding the office buildings' parking lot from 62 to 85 spaces over the rear portion of this property and the adjoining vacant Quintara Street lot.",
+      "source": "sf-planning-commission-minutes-1974-09-05"
+    }
+  ]
+}

@@ -11,6 +11,7 @@ San Francisco's south-eastern quarter, settled from the 1860s as the industrial 
 - [Bishop Street](bishop-street/) — 1 building, built 1922.
 - [Brussels Street](brussels-street/) — 1 building, built 1900.
 - [Carroll Avenue](carroll-avenue/) — 1 building, built 2016.
+- [Cashmere Street](cashmere-street/) — 1 building.
 - [Cesar Chavez Street](cesar-chavez-street/) — 1 building, built 1900.
 - [Charter Oak Avenue](charter-oak-avenue/) — 1 building, built 1956.
 - [Davidson Avenue](davidson-avenue/) — 1 building, built 1950.
@@ -53,6 +54,7 @@ San Francisco's south-eastern quarter, settled from the 1860s as the industrial 
 - [Phelps Street](phelps-street/) — 1 building.
 - [Pomona Street](pomona-street/) — 1 building, built 1910.
 - [Quesada Avenue](quesada-avenue/) — 5 buildings, built 1900–1922.
+- [Quint Street](quint-street/) — 1 building.
 - [Rankin Street](rankin-street/) — 1 building, built 1962.
 - [Revere Avenue](revere-avenue/) — 1 building, built 1900.
 - [San Bruno Avenue](san-bruno-avenue/) — 1 building, built 1906.

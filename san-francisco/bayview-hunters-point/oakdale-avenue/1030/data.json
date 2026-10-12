@@ -1,0 +1,109 @@
+{
+  "address": "1030 Oakdale Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/oakdale-avenue/1030/",
+  "apn": "4714007",
+  "block": "4714",
+  "lot": "007",
+  "eas_baseid": "371939",
+  "coordinates": {
+    "lat": 37.72905,
+    "lng": -122.380082
+  },
+  "parcel": {
+    "lot_area_sqft": 17019,
+    "use": "Commercial Misc",
+    "property_class": "Clubs,Lodges,Fraternal Organizations Gov",
+    "construction_type_code": "NA",
+    "zoning": "RH2RM1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Hunters Point",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1030 OAKDALE             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202408098308",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-08-09",
+      "status_date": "2024-11-08",
+      "estimated_cost": 90000,
+      "revised_cost": 90000,
+      "description": "ref #202408098309: resheating & waterproofing certainteed landmark pro solaris 0.26,0.90,26 certainteed flinlastic sta & gta fr 0.27,0.90,28",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202408098309",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-08-09",
+      "status_date": "2024-11-08",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "reroofing ref #202408098308: certainteed landmark pro solaris 0.26,0.90,26 certainteed flinlastic sta & gta fr 0.27,0.90,28",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9918933",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-09-09",
+      "status_date": "2001-11-30",
+      "estimated_cost": 80000,
+      "description": "roof repair, waterproofing repair, finishes-flooring",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=OAKDALE&street_type=AVE&address_number=1030",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4714007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4714&lot=007",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4714007",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1974-10-31",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 31 October 1974",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/29minutesofsanfran1974sa/page/n574/mode/1up",
+      "retrieved": "2026-10-12"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1974-10-31",
+      "kind": "planning decision",
+      "description": "The City Planning Commission unanimously reported that moving jurisdiction over this city-owned Hunters Point neighborhood facility, one of three child care centers and a community center built with HUD Neighborhood Facilities Grant funds, from the Real Estate Department to the Mayor's Office did not affect the Master Plan.",
+      "source": "sf-planning-commission-minutes-1974-10-31"
+    }
+  ]
+}

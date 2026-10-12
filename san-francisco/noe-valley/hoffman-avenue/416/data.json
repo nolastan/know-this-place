@@ -1,0 +1,97 @@
+{
+  "address": "416 Hoffman Avenue, San Francisco, CA 94114",
+  "path": "/san-francisco/noe-valley/hoffman-avenue/416/",
+  "apn": "6502005",
+  "block": "6502",
+  "lot": "005",
+  "eas_baseid": "400330",
+  "coordinates": {
+    "lat": 37.750322,
+    "lng": -122.440881
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 3,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 2127,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 0416 HOFFMAN             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 40403,
+    "assessed_improvement_value": 32551
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202601164014",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-01-16",
+      "status_date": "2026-01-16",
+      "estimated_cost": 22545,
+      "revised_cost": 22545,
+      "description": "reroof. no torch.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HOFFMAN&street_type=AVE&address_number=416",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6502005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6502&lot=005",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6502005",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1973-05-03",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 3 May 1973",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/25minutesofsanfran1973sa/page/n152/mode/1up",
+      "retrieved": "2026-10-12"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1973-05-03",
+      "kind": "planning decision",
+      "description": "The residential building on the 25-by-125-foot R-2 lot had been used, without authorization, as administrative offices of the Association for Humanistic Psychology. The City Planning Commission unanimously disapproved, by Resolution No. 7017, office use of the residential building by the Association for Humanistic Psychology, finding it incompatible with the low-density neighborhood.",
+      "source": "sf-planning-commission-minutes-1973-05-03"
+    }
+  ]
+}

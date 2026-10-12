@@ -1,0 +1,81 @@
+{
+  "address": "2700 Van Ness Avenue, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/van-ness-avenue/2700/",
+  "apn": "0502005H",
+  "block": "0502",
+  "lot": "005H",
+  "eas_baseid": "283614",
+  "coordinates": {
+    "lat": 37.80069,
+    "lng": -122.424066
+  },
+  "parcel": {
+    "year_built": 1900,
+    "stories": 2,
+    "lot_area_sqft": 7400,
+    "use": "Commercial Misc",
+    "property_class": "Parking Lot",
+    "construction_type_code": "NA",
+    "zoning": "RC-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Russian Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "0000 2700 VAN NESS            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 4005540,
+    "last_sale_date": "2022-12-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VAN%20NESS&street_type=AVE&address_number=2700",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0502005H&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0502&lot=005H",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0502005H",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1973-01-04",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 4 January 1973",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/24minutesofsanfran1973sa/page/n18/mode/1up",
+      "retrieved": "2026-10-12"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1973-01-04",
+      "kind": "planning decision",
+      "description": "The 24,900-square-foot property, with 275 feet of frontage on Van Ness Avenue, held a gas and oil service station at the Greenwich corner and a retail apparel store at the Lombard corner. The City Planning Commission, by a 6-1 vote, disapproved a conditional use for an automatic car wash with gasoline pumps that would have replaced the service station and apparel store on the site.",
+      "source": "sf-planning-commission-minutes-1973-01-04"
+    }
+  ]
+}

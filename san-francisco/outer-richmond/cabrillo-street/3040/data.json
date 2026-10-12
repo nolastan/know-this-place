@@ -1,0 +1,130 @@
+{
+  "address": "3040 Cabrillo Street, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/cabrillo-street/3040/",
+  "apn": "1613007G",
+  "block": "1613",
+  "lot": "007G",
+  "eas_baseid": "310565",
+  "coordinates": {
+    "lat": 37.774251,
+    "lng": -122.491549
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 5,
+    "lot_area_sqft": 2375,
+    "building_area_sqft": 3575,
+    "basement_area_sqft": 500,
+    "lot_depth_ft": 95,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 3040 CABRILLO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 345300,
+    "assessed_improvement_value": 264049
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202404119823",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-04-11",
+      "status_date": "2026-04-15",
+      "estimated_cost": 80000,
+      "revised_cost": 80000,
+      "description": "replace 30 windows and 6 french doors with double pane units of like appearance. windows uf<0.3",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202007300929",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-07-30",
+      "status_date": "2020-08-05",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "reroofing for upper main flat roof only: remove existing roofing material. install modified bitumen roofing. 10sq",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9314210",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-08-19",
+      "status_date": "1994-02-16",
+      "estimated_cost": 500,
+      "description": "remove enclose porch",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9220588",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-11-25",
+      "status_date": "1993-01-11",
+      "estimated_cost": 14500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CABRILLO&street_type=ST&address_number=3040",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1613007G&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1613&lot=007G",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1613007G",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1974-09-05",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 5 September 1974",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/29minutesofsanfran1974sa/page/n318/mode/1up",
+      "retrieved": "2026-10-12"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1974-09-05",
+      "kind": "planning decision",
+      "description": "The 2,375-square-foot corner lot, 95 feet on Cabrillo Street and 25 feet on 32nd Avenue, held a building used as a residential care home for six girls, in an R-3 district. The City Planning Commission unanimously approved, with seven conditions, enlarging the residential care home from 5 to 10 residents (adolescents aged 13 to 18), by remodelling the building without significant exterior change.",
+      "source": "sf-planning-commission-minutes-1974-09-05"
+    }
+  ]
+}

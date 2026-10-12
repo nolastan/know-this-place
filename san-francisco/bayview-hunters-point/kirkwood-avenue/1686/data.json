@@ -1,0 +1,98 @@
+{
+  "address": "1686 Kirkwood Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/kirkwood-avenue/1686/",
+  "apn": "5279025",
+  "block": "5279",
+  "lot": "025",
+  "eas_baseid": "374841",
+  "coordinates": {
+    "lat": 37.739181,
+    "lng": -122.391466
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1916,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1686 KIRKWOOD            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 53337,
+    "assessed_improvement_value": 113098
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201207205378",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-07-20",
+      "status_date": "2012-12-04",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "vandalism repairs: replace approxiately 260 sq. ft. 5/8 drywall. replace garage door.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=KIRKWOOD&street_type=AVE&address_number=1686",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5279025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5279&lot=025",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5279025",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1974-06-27",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 27 June 1974",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/28minutesofsanfran1974sa/page/n744/mode/1up",
+      "retrieved": "2026-10-12"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1974-06-27",
+      "kind": "planning decision",
+      "description": "The building at 1684-86 Kirkwood Avenue, a smaller property than most in the series, was an existing residential care facility with 12 residents, in operation for five years. The City Planning Commission unanimously approved, with seven conditions, a residential care facility for 12 persons at 1684-86 Kirkwood Avenue in an R-2 district.",
+      "source": "sf-planning-commission-minutes-1974-06-27"
+    }
+  ]
+}
