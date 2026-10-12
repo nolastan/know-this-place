@@ -1,0 +1,76 @@
+{
+  "address": "220 Rankin Street, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/rankin-street/220/",
+  "apn": "5228001",
+  "block": "5228",
+  "lot": "001",
+  "eas_baseid": "489615",
+  "coordinates": {
+    "lat": 37.745497,
+    "lng": -122.392114
+  },
+  "parcel": {
+    "lot_area_sqft": 69996,
+    "use": "Industrial",
+    "property_class": "Industrial Gov",
+    "construction_type_code": "NA",
+    "zoning": "M2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 0220 RANKIN              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=RANKIN&street_type=ST&address_number=220",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5228001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5228&lot=001",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5228001",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1974-08-01",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 1 August 1974",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/29minutesofsanfran1974sa/page/n168/mode/1up",
+      "retrieved": "2026-10-12"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1974-08-01",
+      "kind": "planning decision",
+      "description": "The State-owned property, with 350-foot frontages on Evans and Davidson Streets and 200 feet on Rankin Street, was an open fenced yard with a small office building and several one-storey storage buildings used by a building-wrecking contractor to store equipment. The City Planning Commission unanimously approved, with eleven conditions, an automobile dismantling and parts-sales business on the block bounded by Evans, Davidson and Rankin Streets and the Southern Embarcadero Freeway.",
+      "source": "sf-planning-commission-minutes-1974-08-01"
+    }
+  ]
+}

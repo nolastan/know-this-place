@@ -1,0 +1,129 @@
+{
+  "address": "239 Sadowa Street, San Francisco, CA 94112",
+  "path": "/san-francisco/oceanview-merced-ingleside/sadowa-street/239/",
+  "apn": "7137072",
+  "block": "7137",
+  "lot": "072",
+  "eas_baseid": "417005",
+  "coordinates": {
+    "lat": 37.712096,
+    "lng": -122.460563
+  },
+  "parcel": {
+    "year_built": 2002,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 5,
+    "lot_area_sqft": 3125,
+    "building_area_sqft": 2100,
+    "basement_area_sqft": 600,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Oceanview",
+    "analysis_neighborhood": "Oceanview/Merced/Ingleside",
+    "property_location_raw": "0000 0239 SADOWA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1116626,
+    "assessed_improvement_value": 478548,
+    "last_sale_date": "2019-01-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "2002",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200210300333",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-10-30",
+      "status_date": "2002-12-02",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revised property address number from 241 to 239. under app 200105290147s. for proper documentation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200105290147",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "2001-05-29",
+      "status_date": "2002-12-02",
+      "estimated_cost": 150000,
+      "revised_cost": 165000,
+      "description": "new building - 2 stories, single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200105290142",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "2001-05-29",
+      "status_date": "2002-07-31",
+      "description": "demo 1 story, single family dwelling.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9117001",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-09-13",
+      "status_date": "1991-12-12",
+      "estimated_cost": 8250,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SADOWA&street_type=ST&address_number=239",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7137072&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7137&lot=072",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7137072",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1973-04-05",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 5 April 1973",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/25minutesofsanfran1973sa/page/n28/mode/1up",
+      "retrieved": "2026-10-12"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1973-04-05",
+      "kind": "planning decision",
+      "description": "The 12,500-square-foot R-1 lot, 100 feet wide and 125 feet deep, then held a vacant single-family dwelling that had formerly been used as a school. The City Planning Commission unanimously approved, by Resolution No. 6998 with eight conditions, a child care center for up to 25 pre-school children in the building then on the lot.",
+      "source": "sf-planning-commission-minutes-1973-04-05"
+    }
+  ]
+}

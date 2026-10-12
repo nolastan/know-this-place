@@ -6,9 +6,9 @@
 >
 > - **Kind:** meeting minutes (scanned volumes) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 18 of 53 volumes read (July 1968 – December 1972): 4,527
->   pages, 1,532 findings, 698 resolved, 640 published on 309 distinct pages. 35 volumes
->   remain — 1973–1980 and 1994–2005.
+> - **Coverage:** 24 of 53 volumes read (July 1968 – December 1974): 6,200
+>   pages, 2,413 findings, 1,083 resolved, 978 published. 29 volumes
+>   remain — 1975–1980 and 1994–2005.
 > - **Local corpus:** `research/corpora/sf-planning-commission-minutes/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -36,7 +36,9 @@
 | 12–15 | January – December 1970, one quarter each | **read in full** 2026-10-09 |
 | 16–19 | January – December 1971, one quarter each | **read in full** 2026-10-10 |
 | 20–23 | January – December 1972, one quarter each | **read in full** 2026-10-11 |
-| 24–39 | 1973–1980 (quarters in 1973, then halves from 1974, then whole years) | unread |
+| 24–27 | January – December 1973, one quarter each | **read in full** 2026-10-12 |
+| 28–29 | January – December 1974, one half each | **read in full** 2026-10-12 |
+| 30–39 | 1975–1980 (halves, then whole years) | unread |
 | 40–58 | 1994–2005 | unread |
 | — | 1981–1993 | in no volume; 31 is missing from the sequence |
 | — | before July 1968 | not in this collection. The Commission dates from 1942 |
@@ -181,6 +183,29 @@
     landmark (the Old Mint and the House of the Flag, both 15 June 1972). The
     Board's undated second reading adds nothing beside the ordinance date and
     was declined.
+  - **A header's number and its resolution's number can name different
+    buildings, and the join takes the header.** The Haslett Warehouse case
+    (LM73.4) prints 600 Beach Street in its header and 680 Beach in the
+    resolution; EAS joins 600 Beach to the Cannery's parcel next door, and the
+    finding went there until a by-name check moved it to 680. Wherever a
+    reader's `reader_note` says the two disagree, place the finding by hand.
+  - **A landmark's printed number can be on two parcels in EAS.** "1820
+    California Street", the Lilienthal-Orville Pratt House, is filed on both
+    0641004 (the landmark, the site's 1818 California page) and 0641006, and
+    the join chose 0641006. For a designation, check the parcel against the
+    page that already names the landmark.
+  - **A landmark's minutes repeat its Article 10 report.** From 1974 the
+    Commission's landmark hearings read the Landmarks Board's case report into
+    the record — the 1853 and 1859 maps under the Tanforan Cottages, the 1869
+    party-wall houses under the Goodman Building. The site already carries
+    those from the Article 10 reports: 14 of 1974's 24 declines are that. What
+    the minutes add is the Commission's vote, its date, and what the building
+    was being used for that year.
+  - **1974 is the year of the residential care homes.** On 27 June 1974 the
+    Commission legalised fifteen state-licensed group homes in houses —
+    residents, years in operation, operating organisation — in one sitting; the
+    1973 and 1974 volumes hold about thirty such cases. They are a use of the
+    building and are published; no resident is ever named.
 - **People:** The minutes are *full* of them: applicants, their attorneys and
   architects, objecting neighbours, improvement-club officers, the
   commissioners and the staff, all named in the narrative of every hearing.
@@ -208,9 +233,11 @@
   into `findings/sf-planning-commission-minutes/minutes-1971.json`; volumes
   20–23 — every meeting of 1972, 6 January to 21 December — read in full
   into `findings/sf-planning-commission-minutes/minutes-1972.json`. Nothing
-  of those volumes is known to remain unread. **Next: volumes 24–27
-  (January–December 1973)**, four quarterly volumes a run (one year,
-  about 1,000 text pages, ten readers of ~100 pages each, about twenty minutes);
+  of those volumes is known to remain unread; volumes 24–27, every meeting of
+  1973, 4 January to 20 December, into `minutes-1973.json`; volumes 28–29,
+  every meeting of 1974, 3 January to 19 December, into `minutes-1974.json`.
+  **Next: volumes 30–33 (1975–1976)**, two years a run (about 1,700 text
+  pages, thirteen readers of ~130 pages each from the Reader spec below);
   the 1994–2005 volumes are a
   different kind of document (by then the Commission's own case reports are
   online and indexed) and are worth sampling before a run is sized on them.
@@ -273,3 +300,81 @@
   then skips it silently — `resolve_eas.py report` now lists those; and the
   1972 height hearings, a quarter of the year's pages, locate almost
   nothing.)
+  **2026-10-12** (volumes 24–29, January 1973 – December 1974, two years in
+  one run: 1,673 OCR pages with text out of 3,248 scanned leaves, read by
+  thirteen readers from the Reader spec below; 97 meetings; 881 findings — 399
+  statements of what stood on a property, 339 decisions, 102 dated past facts,
+  41 landmark designations. 385 resolved: 323 by the EAS join on a printed
+  number, 62 by hand — 14 by the record's own block and lot, 48 by name on a
+  building the site already carries. 496 unresolved, 323 of them with no
+  street number; 8 are condominiums waiting on #228 and #446. 338 published on
+  174 distinct pages, 94 of them seeded and 2 Golden Gate Park place pages; 47
+  declined. What the pass learned: a header's number and its resolution's
+  number can name neighbouring parcels, and a landmark's number can be on two
+  parcels in EAS — both put a designation on the wrong building until a
+  by-name check caught it; from 1974 the landmark hearings repeat the Article
+  10 report, and what is new is the vote; `resolve_eas.py report` had never
+  printed its "placed by point" list, an indentation bug fixed in this run.
+  Five of the thirteen readers were stopped by a usage limit part-way and
+  resumed from their own transcripts, losing nothing.)
+
+## Reader spec
+
+The brief every reader of a run gets, verbatim, with its page list and output
+path. Earlier runs wrote one each time and kept none; keep this one current
+instead, and change it here when a run learns something a reader needs.
+
+- Read **every page** assigned, start to finish; low yield is normal.
+- **Date every page from the meeting header on it** or the meeting's opening
+  paragraph; binding order is not date order, and a page with no header
+  belongs to the meeting of the page before. Any date hint you were given is
+  unreliable.
+- Output JSON Lines, one finding per line: `volume`, `page` (`n12`),
+  `meeting_date`, `date`, `date_precision`, `kind`, `address_as_written`,
+  `street_number`, `street_name`, `street_type`, `description`, `extra`,
+  `raw_text`, `confidence`; last line `{"_summary": {pages_read, first, last,
+  meetings, notes}}`.
+- `kind` is one of `planning decision` (dated to the meeting that decided),
+  `occupancy` (what stood on or occupied the property at that date — storeys,
+  units, beds, floor area, use, the business or institution, a vacant lot),
+  `site history` (a dated past fact about the building, at the date and
+  precision the page prints), `designation` (landmark or district action).
+- **A date or number is what the page prints.** Never compute one — not from
+  an age, a sequence of resolution numbers or a neighbouring entry; working
+  goes in `extra.reader_note`.
+- **A Board of Supervisors action reported without its own date** takes the
+  reporting meeting's date and is framed "By 5 July 1973, the Board of
+  Supervisors had approved…"; with its own date, use that.
+- **A decision reached at a later meeting belongs to that meeting**; link the
+  hearing with `extra.case`, and put the page carrying the address header in
+  `extra.header_page`. A postponement, a continuance or a request withdrawn
+  before a vote is not a decision.
+- A proposal alone is not a finding; the staff's statement of what stood on
+  the property is, even if the case was never decided.
+- `address_as_written` is copied as printed; **never fix a number** — if the
+  resolution prints it differently from the header, say so in
+  `extra.reader_note`. `street_number` is the low number only; a range goes in
+  `extra.address_range_as_recorded`. `street_name` is uppercase as EAS holds
+  it (`24TH`, `19TH` with type `AVE`, `O'FARRELL`, `ARMY` as printed in 1973).
+- No street number? Still write the finding: the printed block and lot in
+  `extra.assessor_block_as_recorded` / `assessor_lot_as_recorded` (block 4
+  digits, lot 3), a named building in `extra.building_name`, a bearing in
+  `side`, `cross_street_name`, `direction`, `offset_ft`. Put the block and lot
+  on numbered findings too, where printed for that property.
+- `extra.record_date` is always the meeting date.
+- `description` in your own words, past tense, one or two sentences; never
+  refer to the source ("the minutes say", "the staff report"); include the vote
+  where printed.
+- `raw_text` is the shortest verbatim span (≤ 250 characters, copied exactly
+  from the page file) that justifies the fact, chosen to contain no personal
+  name. It is checked mechanically against the page.
+- **No personal name in any field**: not applicants, owners, attorneys,
+  objectors, improvement-club officers, commissioners or staff. The architect
+  of a building may go in `extra.reader_note` as "architect: <name>". A
+  business trading under a person's own name goes with the person. Keep
+  companies, institutions, churches, schools, hospitals, unions, government
+  bodies and named buildings.
+- Skip 100 Larkin Street and any other meeting venue, citywide plans, text
+  amendments, district rezonings, and street vacations — unless the passage
+  pins a fact to one property.
+

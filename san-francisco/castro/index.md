@@ -52,6 +52,7 @@ which local histories treat as its own neighborhood.
 - [Clifford Terrace](clifford-terrace/) — 17 buildings, built 1906–1959.
 - [Clover Street](clover-street/) — 5 buildings, built 1905–2002.
 - [Collingwood Street](collingwood-street/) — 58 buildings, built 1878–1981.
+- [Corwin Street](corwin-street/) — 1 building, built 1960.
 - [Crown Terrace](crown-terrace/) — 3 buildings, built 1935–1999.
 - [Cumberland Street](cumberland-street/) — 50 buildings, built 1894–2001.
 - [Dehon Street](dehon-street/) — 1 building, built 1902.

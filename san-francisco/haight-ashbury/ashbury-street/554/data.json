@@ -1,0 +1,125 @@
+{
+  "address": "554 Ashbury Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/ashbury-street/554/",
+  "apn": "1232036",
+  "block": "1232",
+  "lot": "036",
+  "eas_baseid": "462570",
+  "coordinates": {
+    "lat": 37.770218,
+    "lng": -122.44683
+  },
+  "parcel": {
+    "year_built": 1904,
+    "units": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "building_area_sqft": 1313,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "NA",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Haight Ashbury",
+    "analysis_neighborhood": "Haight Ashbury",
+    "property_location_raw": "0000 0554 ASHBURY             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 481536,
+    "assessed_improvement_value": 206347,
+    "last_sale_date": "2003-03-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9917331",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1999-08-19",
+      "status_date": "2000-02-11",
+      "estimated_cost": 3000,
+      "revised_cost": 9000,
+      "description": "comply w/3r report convert back to residential use",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8602733",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1986-03-11",
+      "status_date": "1986-12-02",
+      "estimated_cost": 50000,
+      "description": "convert existing basement to 3 car parking garage.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1986–2007",
+    "shown_on_page": 2,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ASHBURY&street_type=ST&address_number=554",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1232036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1232&lot=036",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1232036",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1973-10-04",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 4 October 1973",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/27minutesofsanfran1973sa/page/n26/mode/1up",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1973-12-06",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 6 December 1973",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/27minutesofsanfran1973sa/page/n286/mode/1up",
+      "retrieved": "2026-10-12"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1973-10-04",
+      "kind": "occupancy",
+      "description": "The R-3.5 property held a three-unit apartment building, one unit of which was used without authorization as the office of the Sickle Cell Anemia Disease Research Foundation.",
+      "source": "sf-planning-commission-minutes-1973-10-04"
+    },
+    {
+      "date": "1973-12-06",
+      "kind": "planning decision",
+      "description": "The Sickle Cell Anemia Disease Research Foundation, a charitable institution, occupied space in the building, paying $150 a month rent, in an R-3.5 district. The City Planning Commission unanimously approved, with four conditions, a conditional use letting the Sickle Cell Anemia Disease Research Foundation use part of the existing building as its office (Resolution 7108), after no affordable space was found on Haight Street.",
+      "source": "sf-planning-commission-minutes-1973-12-06"
+    }
+  ]
+}

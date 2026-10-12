@@ -1,0 +1,96 @@
+{
+  "address": "6424 3rd Street, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/3rd-street/6424/",
+  "apn": "5470002",
+  "block": "5470",
+  "lot": "002",
+  "eas_baseid": "378821",
+  "coordinates": {
+    "lat": 37.71985,
+    "lng": -122.397168
+  },
+  "parcel": {
+    "year_built": 1976,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 10206,
+    "building_area_sqft": 3600,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview Heights",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 6424 03RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1250865
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1976",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201512316257",
+      "type": "new construction wood frame",
+      "status": "filed",
+      "filed": "2015-12-31",
+      "status_date": "2015-12-31",
+      "estimated_cost": 3500000,
+      "revised_cost": 9520000,
+      "description": "to erect 4 stories of 17 dwelling units with commercial on ground floor - maher ordinance - extended no.15513- required",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=03RD&street_type=ST&address_number=6424",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5470002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5470&lot=002",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5470002",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1974-01-10",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 10 January 1974",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/28minutesofsanfran1974sa/page/n84/mode/1up",
+      "retrieved": "2026-10-12"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1974-01-10",
+      "kind": "planning decision",
+      "description": "The irregular 10,206-square-foot corner parcel, with 103 feet on Third Street and 151 feet on Key Avenue, was vacant. The City Planning Commission unanimously approved, with five conditions, a one-storey mortuary with a 200-seat chapel, four slumber rooms and five off-street parking spaces on the vacant lot.",
+      "source": "sf-planning-commission-minutes-1974-01-10"
+    }
+  ]
+}

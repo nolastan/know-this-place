@@ -1,0 +1,86 @@
+{
+  "address": "1799 Newcomb Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/newcomb-avenue/1799/",
+  "apn": "5312051",
+  "block": "5312",
+  "lot": "051",
+  "eas_baseid": "375354",
+  "coordinates": {
+    "lat": 37.737155,
+    "lng": -122.39346
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 3,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 5000,
+    "building_area_sqft": 3310,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1799 NEWCOMB             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 261524,
+    "assessed_improvement_value": 180356,
+    "last_sale_date": "1991-06-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NEWCOMB&street_type=AVE&address_number=1799",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5312051&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5312&lot=051",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5312051",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1973-11-01",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 1 November 1973",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/27minutesofsanfran1973sa/page/n140/mode/1up",
+      "retrieved": "2026-10-12"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1973-11-01",
+      "kind": "planning decision",
+      "description": "The property in an R-2 district was in use, without a conditional use authorization, as a board-and-care home for 12 mentally retarded persons, a business that had operated for four years. The City Planning Commission unanimously approved, with conditions, the board-and-care home for 12 mentally retarded persons, after a postponement from October 4, 1973.",
+      "source": "sf-planning-commission-minutes-1973-11-01"
+    }
+  ]
+}

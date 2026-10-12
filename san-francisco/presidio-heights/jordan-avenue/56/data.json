@@ -1,0 +1,134 @@
+{
+  "address": "56 Jordan Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/jordan-avenue/56/",
+  "apn": "1038041",
+  "block": "1038",
+  "lot": "041",
+  "eas_baseid": "293454",
+  "coordinates": {
+    "lat": 37.784836,
+    "lng": -122.456534
+  },
+  "parcel": {
+    "year_built": 1960,
+    "units": 1,
+    "stories": 1,
+    "rooms": 10,
+    "bathrooms": 5,
+    "bedrooms": 5,
+    "lot_area_sqft": 4077,
+    "building_area_sqft": 2906,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Jordan Park/Laurel Heights",
+    "analysis_neighborhood": "Presidio Heights",
+    "property_location_raw": "0000 0056 JORDAN              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1557505,
+    "assessed_improvement_value": 1557505,
+    "last_sale_date": "2012-06-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1960",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Jordan Park Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1900–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "9709902S",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1997-05-30",
+      "status_date": "2001-06-22",
+      "estimated_cost": 34000,
+      "description": "rooftop addition m. cl, m. bd. m bath & decks & restucco",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9618662",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-10-01",
+      "status_date": "1997-02-27",
+      "estimated_cost": 2750,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9609157",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-05-24",
+      "status_date": "1997-03-26",
+      "estimated_cost": 18000,
+      "revised_cost": 30000,
+      "description": "remodel (e)family rm area @1st flr into 2 baths,3bedrms",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JORDAN&street_type=AVE&address_number=56",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1038041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1038&lot=041",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1038041",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.45653391947701%2037.78483624239762)%27)",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1973-05-24",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 24 May 1973",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/25minutesofsanfran1973sa/page/n264/mode/1up",
+      "retrieved": "2026-10-12"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1973-05-24",
+      "kind": "planning decision",
+      "description": "The City Planning Commission unanimously declined to take discretionary review of a building permit for a 16-by-18-foot rooftop sun deck, enclosed by a solid wooden fence, on the dwelling at 56 Jordan Avenue; work had already started and was on hold pending the decision.",
+      "source": "sf-planning-commission-minutes-1973-05-24"
+    }
+  ]
+}
