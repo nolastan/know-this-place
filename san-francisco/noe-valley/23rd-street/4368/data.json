@@ -1,0 +1,118 @@
+{
+  "address": "4368 23rd Street, San Francisco, CA 94114",
+  "path": "/san-francisco/noe-valley/23rd-street/4368/",
+  "apn": "2802021",
+  "block": "2802",
+  "lot": "021",
+  "eas_baseid": "346662",
+  "coordinates": {
+    "lat": 37.752785,
+    "lng": -122.440092
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 925,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 4368 23RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 296953,
+    "assessed_improvement_value": 128774
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Review",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200211222123",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-11-22",
+      "status_date": "2002-11-22",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "remove dirt from retaining wall, install water proofing & drainage system @ retaining wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9811889",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-06-25",
+      "status_date": "1998-10-19",
+      "estimated_cost": 2200,
+      "description": "underpining per day by engineer andy forest",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9207282",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-05-05",
+      "status_date": "1992-11-05",
+      "estimated_cost": 6779,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=ST&address_number=4368",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2802021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2802&lot=021",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2802021",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sfyimby-2026-10-12",
+      "name": "San Francisco YIMBY, “Duplex Proposed For 4368 23rd Street in Noe Valley, San Francisco,” 12 October 2026",
+      "query": "https://sfyimby.com/2026/10/duplex-proposed-for-4368-23rd-street-in-noe-valley-san-francisco.html",
+      "retrieved": "2026-10-12"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2026-10-12",
+      "kind": "development",
+      "headline": "Duplex Proposed For 4368 23rd Street in Noe Valley, San Francisco",
+      "outlet": "San Francisco YIMBY",
+      "url": "https://sfyimby.com/2026/10/duplex-proposed-for-4368-23rd-street-in-noe-valley-san-francisco.html",
+      "source": "sfyimby-2026-10-12"
+    }
+  ]
+}
