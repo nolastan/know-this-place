@@ -6,9 +6,9 @@
 >
 > - **Kind:** meeting minutes (scanned volumes) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 24 of 53 volumes read (July 1968 – December 1974): 6,200
->   pages, 2,413 findings, 1,083 resolved, 978 published. 29 volumes
->   remain — 1975–1980 and 1994–2005.
+> - **Coverage:** 25 of 52 volumes read (July 1968 – June 1975): 6,550
+>   pages, 2,515 findings, 1,146 resolved, 1,039 published. 27 volumes
+>   remain — 1976–1980 and 1994–2005. July–December 1975 is in no volume.
 > - **Local corpus:** `research/corpora/sf-planning-commission-minutes/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -23,10 +23,10 @@
   and **what the staff said was standing on the property** when it decided —
   storeys, units, beds, rooms, the use, the business or institution occupying
   it, whether it was vacant.
-- **Where:** The San Francisco Public Library contributed 53 volumes to the
+- **Where:** The San Francisco Public Library contributed 52 volumes to the
   Internet Archive, digitized under a California State Library Califa/LSTA
   grant. Identifiers are of the form `<n>minutesofsanfran<year>san[f]`, where
-  `<n>` runs 6 to 58 in date order; the volume's own span is in its
+  `<n>` runs 6 to 58 in date order, skipping 31; the volume's own span is in its
   `volume` metadata field (`July-Sept 1968`), never in `date`, which is
   usually empty.
 
@@ -38,9 +38,11 @@
 | 20–23 | January – December 1972, one quarter each | **read in full** 2026-10-11 |
 | 24–27 | January – December 1973, one quarter each | **read in full** 2026-10-12 |
 | 28–29 | January – December 1974, one half each | **read in full** 2026-10-12 |
-| 30–39 | 1975–1980 (halves, then whole years) | unread |
+| 30 | January – June 1975 | **read in full** 2026-10-13 |
+| — | July – December 1975 | in no volume: the sequence skips 31 |
+| 32–39 | 1976–1980 (halves, then whole years; 36–37 are Jan–Mar and Jun–Nov 1978) | unread |
 | 40–58 | 1994–2005 | unread |
-| — | 1981–1993 | in no volume; 31 is missing from the sequence |
+| — | 1981–1993 | in no volume |
 | — | before July 1968 | not in this collection. The Commission dates from 1942 |
 
 - **How to get at it:** `archive.org` serves everything over plain HTTPS with
@@ -206,6 +208,25 @@
     residents, years in operation, operating organisation — in one sitting; the
     1973 and 1974 volumes hold about thirty such cases. They are a use of the
     building and are published; no resident is ever named.
+  - **1975 is the year the Board overrides the Commission.** Three of the
+    half-year's Board actions reported in the minutes reverse it — the Atherton
+    House and Goodman Building landmark designations it had refused, and a
+    Bryant Street wrecking yard it had denied — all "on Monday", undated, and
+    framed "by" the reporting meeting. They are worth publishing where the page
+    carries the Commission's refusal: the override is the new fact.
+  - **A header and its report can print numbers a thousand apart.** R75.5's
+    header reads "1050 Kearny Street, at Chestnut" and the staff report "1850
+    Kearny Street, 90 feet south of Francisco"; the printed Lot 3, Block 56
+    settled it for 1850. Put the block and lot on such findings and read the
+    report's "matches the parcel's block" line.
+  - **EAS can join a street of the wrong type.** "20 Edgar Place" joined to
+    20 EDGAR AVE, the only Edgar in EAS, with the mismatch noted in the method
+    but the finding resolved. Read every "EAS files this street as …, not …"
+    line; on a one-line mention, take it back to unresolved.
+  - **The residential care homes keep coming.** The 1975 volume has eight
+    more — Lake, La Playa, 12th Avenue, Fulton, Broderick, Randolph — and the
+    Commission's one-home-per-block-face guideline refused one of them (24
+    Randolph, across from the 24-person home at 27–45 Randolph).
 - **People:** The minutes are *full* of them: applicants, their attorneys and
   architects, objecting neighbours, improvement-club officers, the
   commissioners and the staff, all named in the narrative of every hearing.
@@ -235,9 +256,11 @@
   into `findings/sf-planning-commission-minutes/minutes-1972.json`. Nothing
   of those volumes is known to remain unread; volumes 24–27, every meeting of
   1973, 4 January to 20 December, into `minutes-1973.json`; volumes 28–29,
-  every meeting of 1974, 3 January to 19 December, into `minutes-1974.json`.
-  **Next: volumes 30–33 (1975–1976)**, two years a run (about 1,700 text
-  pages, thirteen readers of ~130 pages each from the Reader spec below);
+  every meeting of 1974, 3 January to 19 December, into `minutes-1974.json`;
+  volume 30, every meeting of January – June 1975, into `minutes-1975.json`.
+  **Next: volumes 32–33 (1976)**, about 700 text pages — one run with
+  parallel readers, or two nightly runs of one volume each by a single
+  reader, which is what a half-year volume takes in one session;
   the 1994–2005 volumes are a
   different kind of document (by then the Commission's own case reports are
   online and indexed) and are worth sampling before a run is sized on them.
@@ -317,6 +340,22 @@
   printed its "placed by point" list, an indentation bug fixed in this run.
   Five of the thirteen readers were stopped by a usage limit part-way and
   resumed from their own transcripts, losing nothing.)
+  **2026-10-13** (volume 30, January – June 1975: 350 OCR pages with text out
+  of 714 viewer pages, read in one session by a single reader with no
+  sub-agents — the nightly-run shape; 23 meetings; 102 findings — 53
+  decisions, 37 statements of what stood on a property, 7 landmark actions, 5
+  dated past facts. 63 resolved: 53 by the EAS join, 10 by name on a building
+  the site already carries. 39 unresolved, 26 of them with no street number, 4
+  condominiums waiting on #446. 61 published on 40 pages, 18 of them seeded; 2
+  declined as already on the page. One conflict stated: 361 Oak Street, 1868
+  by the owner's account against the roll's 1885. What the pass learned: the
+  July–December 1975 volume does not exist in the collection; a single reader
+  with a page filter (skip any page with fewer than 40 four-letter words — the
+  bleed-through versos) reads a half-year volume in one session; a header can
+  print a number a thousand off its report; EAS will join Edgar Place to Edgar
+  Avenue; and a publish script re-indented three one-space pages, a trap
+  LESSONS.md had recorded four times — `research/tools/pagejson.py` now does
+  the load and save so the next run cannot.)
 
 ## Reader spec
 
