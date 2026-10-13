@@ -70,6 +70,7 @@ research/
   tools/resolve_eas.py  Addresses → parcels: the EAS/parcel/roll joins, with the
                      reason for each decision
   tools/corner.py    A corner → the parcels on it, for records that give no number
+  tools/pagejson.py  load/save a page's data.json in the format it came in
   corpora/           Raw downloaded material — gitignored, never committed
 ```
 

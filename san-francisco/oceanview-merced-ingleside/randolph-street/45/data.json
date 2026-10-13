@@ -1,0 +1,90 @@
+{
+  "address": "45–47 Randolph Street, San Francisco, CA 94132",
+  "path": "/san-francisco/oceanview-merced-ingleside/randolph-street/45/",
+  "apn": "7115042",
+  "block": "7115",
+  "lot": "042",
+  "eas_baseid": "471143",
+  "coordinates": {
+    "lat": 37.714082,
+    "lng": -122.46335
+  },
+  "address_range": "45–47",
+  "street_numbers_on_parcel": [
+    "45",
+    "47"
+  ],
+  "parcel": {
+    "year_built": 1967,
+    "units": 2,
+    "rooms": 13,
+    "bathrooms": 5,
+    "lot_area_sqft": 1973,
+    "building_area_sqft": 3250,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Ingleside Heights",
+    "analysis_neighborhood": "Oceanview/Merced/Ingleside",
+    "property_location_raw": "0047 0045 RANDOLPH            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 775730,
+    "assessed_improvement_value": 517150,
+    "last_sale_date": "2007-01-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1967",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=RANDOLPH&street_type=ST&address_number=45",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7115042&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7115&lot=042",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7115042",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1975-03-06",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 6 March 1975",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/30minutesofsanfran1975sa/page/n192/mode/1up",
+      "retrieved": "2026-10-13"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1975-03-06",
+      "kind": "planning decision",
+      "description": "The City Planning Commission unanimously found, on its one-year review, that the boarding care home for 24 mentally retarded people then occupying 27, 41 and 45 Randolph Street and 178 Bright Street had had no harmful effect, and let the use continue.",
+      "source": "sf-planning-commission-minutes-1975-03-06"
+    }
+  ]
+}

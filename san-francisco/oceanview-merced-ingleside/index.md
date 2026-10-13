@@ -11,6 +11,7 @@ Merced Heights, the ridge between them, was mostly built after World War II.
 - [Alemany Boulevard](alemany-boulevard/) — 1 building, built 2002.
 - [Ashton Avenue](ashton-avenue/) — 1 building, built 1923.
 - [Beverly Street](beverly-street/) — 1 building, built 1914.
+- [Bright Street](bright-street/) — 1 building, built 1996.
 - [Broad Street](broad-street/) — 4 buildings, built 1896–1946.
 - [Capitol Avenue](capitol-avenue/) — 1 building.
 - [De Montfort Avenue](de-montfort-avenue/) — 1 building, built 1939.

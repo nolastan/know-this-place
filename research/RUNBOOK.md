@@ -434,8 +434,11 @@ one already on the page.
 **Route A — the page exists, or should and it's a handful.** Add each fact to
 `data.json` by hand, normally as a `historical_record` entry (`date`, `kind`,
 `description`, `source`), and add the source to the page's `sources` array with
-the citation label from the dossier. Then regenerate the HTML **in the same
-commit**:
+the citation label from the dossier. A script that writes pages reads and
+writes them through `research/tools/pagejson.py` (`load` / `save`), which keeps
+each file's own indent and escaping — pages are written at one space and two,
+and a fixed `indent=2` turns one added line into a 700-line diff. Then
+regenerate the HTML **in the same commit**:
 
 ```bash
 python3 scripts/seed_pages.py render <path to the page, street or area>

@@ -2117,11 +2117,13 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
 
 - **Write a page's `data.json` back in the format it came in.** Pages on disk
   are indented by one space or two, and some escape non-ASCII. A publisher
-  script that dumped every page with `indent=2` turned fifty added facts into
-  a 5,000-line diff, and sorting `historical_record` by date moved entries
-  nobody had touched. *Read the indent off the file's second line, keep
-  `ensure_ascii` as the file had it, keep its trailing newline, and append new
-  timeline entries rather than re-sorting — the renderer orders them.*
+  script that dumps every page with `indent=2` turns a one-line addition into a
+  700-line diff on every one-space page, and sorting `historical_record` moved
+  entries nobody had touched. This was paid for in at least five runs and
+  written down four times before the 1975 minutes run paid it again (three of
+  22 edited pages). *Use `research/tools/pagejson.py` — `load` returns the
+  page and its format, `save` writes it back the same way — and append new
+  timeline entries rather than re-sorting; the renderer orders them.*
 
 - **A building's name in the record places what its street number cannot.**
   Six findings in one newspaper batch resolved on `3tsw-4idn`'s `name` field
@@ -2271,13 +2273,8 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   *For a named institution, grep the pages on disk for the name or the street
   block before concluding the corner has been rebuilt*, and check the lot area
   against the record (8,903 sq ft against 93:8 1/4 by 95 settled it).
-- **`data.json` files are not all indented the same way.** Some pages are
-  written with one-space indentation, some with two; a publish script that
-  re-dumps every file with `indent=2` turned four one-line additions into
-  800-line diffs that hide the change from a reviewer. *Read the file's own
-  indentation (the second line of the HEAD version) and write it back the
-  same way.* Relatedly, a path typed by hand from the offset parcel's
-  sf-parcels range (4028) disagreed with EAS's lowest number on the parcel
+- **Take the page's number from EAS, not from the parcel map.** A path typed
+  by hand from the offset parcel's sf-parcels range (4028) disagreed with EAS's lowest number on the parcel
   (4026); the seeder followed EAS and `check.py` flagged the finding.
   *Take the page's number from EAS, not from the parcel map.*
 - **The Chronicling America bulk tarballs are not named what the dossier's
@@ -2334,16 +2331,6 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   no-crossing failure, and fix the geography before reading the batch's real
   output — a batch run against bad geography returns confident-looking
   "no parcel" lines that are indistinguishable from a genuine miss.
-- **`data.json`'s indentation has to be read off the file being edited, not
-  assumed.** A publish script that opens a page, adds one `historical_record`
-  entry and re-dumps with a fixed `indent=2` turns a one-line addition into a
-  700-line diff on every page that was written with `indent=1` — six of
-  fourteen pages in one batch. Read the original file's own indent (checked
-  with a plain `git show HEAD:<path>` diff of line lengths, not assumed) and
-  write back with that same width; `render` doesn't care either way, since it
-  derives `index.html` from the parsed data, not from the source file's
-  formatting, so re-indenting after the fact costs nothing but is easy to
-  forget doing at all.
 - **This container ships without Poppler or Tesseract, and that is not a
   blocker.** An earlier article-10-landmarks session filed "OCR setup" as a
   `needs-human` issue (#437) and stopped with 44 of 50 reports unread. `apt-get
@@ -2821,12 +2808,6 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   that already names it (`check.py --overlap` lists those "by name"); where
   they differ, the named building decides the parcel.*
   ([sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))
-- **A script that writes `data.json` must keep the file's own indent and
-  order.** Pages are written at one-space and two-space indents both; a
-  publisher that dumped every page at `indent=2` and re-sorted its
-  `historical_record` turned a 90-page append into a 13,000-line diff of
-  other sources' entries. *Read the indent off the file, append, and never
-  re-sort a timeline the renderer orders anyway.*
 - **A reader stopped by a usage limit can be resumed, not re-run.** Five of
   thirteen parallel readers on the 1973–74 minutes hit a session limit part-way;
   sending each a message to continue resumed it from its own transcript, and
