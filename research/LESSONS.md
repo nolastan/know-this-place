@@ -1815,6 +1815,26 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   and put the arithmetic in `method`. One date against two parcels is still a
   decline.*
 
+- **A "split" range can be one stray EAS row, and the roll's
+  `property_location` says so.** 316-318 Laurel Street came back "numbers on
+  different parcels" because EAS files 318 Laurel twice — on 1009028 with 316,
+  and on 1009020 beside 306, a one-unit house. The roll's location for 1009028
+  is "0318 0316 LAUREL": one two-unit building, the record's own. *Before
+  accepting a split, read the roll location of each parcel; a parcel whose
+  location spans the whole range is the building, and the other row is a
+  stray.* Resolve by hand and name the stray in `method`.
+
+- **Merged lots are found by adding up the lots the record measures.** Two
+  Sacramento Street lots of 41.25 x 62 feet had no parcel at either printed
+  number in 1976 terms; parcel 1009029, built 1977, is exactly 5,115 sq ft.
+  Two 25 x 100 Belgrave Avenue lots are one 5,000 sq ft parcel of 1981. *Where
+  a record prints dimensions and EAS has nothing at the number, sum the lots
+  and look for that area on the block — it is a match the record makes, not a
+  guess.* And write the by-hand resolution into the findings file before
+  `resolve_eas.py manifest`: the resolver's point join had put 3480
+  Sacramento on the 1965 apartment house next door, and a manifest built
+  first would have seeded that page.
+
 - **A modern document can still give a street number the city does not have,
   and the fix is to identify the building rather than repair the number.** The
   1978 San Francisco Civic Center nomination addresses the War Memorial Opera
