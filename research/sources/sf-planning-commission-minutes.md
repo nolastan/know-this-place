@@ -6,9 +6,9 @@
 >
 > - **Kind:** meeting minutes (scanned volumes) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 25 of 52 volumes read (July 1968 – June 1975): 6,550
->   pages, 2,515 findings, 1,146 resolved, 1,039 published. 27 volumes
->   remain — 1976–1980 and 1994–2005. July–December 1975 is in no volume.
+> - **Coverage:** 26 of 52 volumes read (July 1968 – June 1976): 7,069
+>   pages, 2,629 findings, 1,215 resolved, 1,104 published. 26 volumes
+>   remain — July 1976–1980 and 1994–2005. July–December 1975 is in no volume.
 > - **Local corpus:** `research/corpora/sf-planning-commission-minutes/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -40,7 +40,8 @@
 | 28–29 | January – December 1974, one half each | **read in full** 2026-10-12 |
 | 30 | January – June 1975 | **read in full** 2026-10-13 |
 | — | July – December 1975 | in no volume: the sequence skips 31 |
-| 32–39 | 1976–1980 (halves, then whole years; 36–37 are Jan–Mar and Jun–Nov 1978) | unread |
+| 32 | January – June 1976 | **read in full** 2026-10-14 |
+| 33–39 | July 1976 – 1980 (halves, then whole years; 36–37 are Jan–Mar and Jun–Nov 1978) | unread |
 | 40–58 | 1994–2005 | unread |
 | — | 1981–1993 | in no volume |
 | — | before July 1968 | not in this collection. The Commission dates from 1942 |
@@ -227,6 +228,34 @@
     more — Lake, La Playa, 12th Avenue, Fulton, Broderick, Randolph — and the
     Commission's one-home-per-block-face guideline refused one of them (24
     Randolph, across from the 24-person home at 27–45 Randolph).
+- **1976 changes the Commission and its minutes.** Mayor Moscone's new
+  Commission took office at the special meeting of 3 February 1976 (no
+  regular meetings in January after the 7th; 22 January lacked a quorum).
+  From then the minutes run long: whole hearings are verbatim testimony on
+  institutional master plans, the parapet ordinance, the tree ordinance and
+  the citywide residential rezoning, and none of it locates a building. Of
+  519 pages with text, about 300 hold no property at all. Budget the reader's
+  time by meetings, not pages.
+- **Discretionary review on commercially zoned land is new in 1976.** The
+  Commission refused the 316-318 Laurel psychiatrists' offices on C-2 land
+  and steered the two Sacramento Street corner lots into one building with
+  parking. The minutes name the lot split (recorded 8 July 1975) that started
+  it, which is the date the parcel history needs.
+- **A record's lots can be found by area after they were merged.** The two
+  Sacramento Street lots at Laurel, 41.25 x 62 feet each, have no parcel at
+  either printed number; parcel 1009029 (3490 Sacramento, built 1977) is
+  exactly 5,115 square feet — the two together. Belgrave Avenue's two 25-foot
+  lots are likewise 65 Belgrave's 5,000-square-foot lot of 1981. Where the
+  minutes print lot dimensions and EAS has nothing, add the lots up.
+- **A printed block and lot can outlive the street number.** "Lot 27, Block
+  2626, commonly known as 7 Vulcan Stairway": EAS has no 7 Vulcan, but the
+  lot survives as 60 Lower Terrace, and the minutes say it fronts Lower
+  Terrace too. Look the lot up before calling the number dead.
+- **Speakers are not staff.** 1976 hearings are dense with neighbourhood
+  testimony that dates buildings ("most of the cottages were built in 1906",
+  "a nurses' residence built in 1963 and torn down six years later"). Take
+  dates and descriptions from the staff report or the resolution; a speaker's
+  date goes in `reader_note` or is declined.
 - **People:** The minutes are *full* of them: applicants, their attorneys and
   architects, objecting neighbours, improvement-club officers, the
   commissioners and the staff, all named in the narrative of every hearing.
@@ -257,10 +286,12 @@
   of those volumes is known to remain unread; volumes 24–27, every meeting of
   1973, 4 January to 20 December, into `minutes-1973.json`; volumes 28–29,
   every meeting of 1974, 3 January to 19 December, into `minutes-1974.json`;
-  volume 30, every meeting of January – June 1975, into `minutes-1975.json`.
-  **Next: volumes 32–33 (1976)**, about 700 text pages — one run with
-  parallel readers, or two nightly runs of one volume each by a single
-  reader, which is what a half-year volume takes in one session;
+  volume 30, every meeting of January – June 1975, into `minutes-1975.json`;
+  volume 32, every meeting of January – June 1976, into
+  `minutes-1976-h1.json`. **Next: volume 33 (July – December 1976,
+  `33minutesofsanfran1976san`)** into `minutes-1976-h2.json` — one nightly
+  run by a single reader, which is what a half-year volume takes in one
+  session (volume 32's 519 text pages fitted);
   the 1994–2005 volumes are a
   different kind of document (by then the Commission's own case reports are
   online and indexed) and are worth sampling before a run is sized on them.
@@ -356,6 +387,20 @@
   Avenue; and a publish script re-indented three one-space pages, a trap
   LESSONS.md had recorded four times — `research/tools/pagejson.py` now does
   the load and save so the next run cannot.)
+  **2026-10-14** (volume 32, January – June 1976: 519 OCR pages with text out
+  of 582 viewer pages, read in one session by a single reader with no
+  sub-agents; 28 meetings; 114 findings — 57 statements of what stood on a
+  property, 47 decisions, 6 dated past facts, 4 landmark actions. 69 resolved:
+  54 by the EAS join, 15 by hand — 2 by the record's own block and lot, 3 by
+  adding up the lots the record measures, 3 past an EAS stray, 7 by name on a
+  building a page already carries. 45 unresolved, 29 with no street number, 7
+  condominiums waiting on #446, 9 at a number with no parcel. 65 published on
+  43 pages, 13 of them seeded; 4 declined. Four conflicts stated in unknowns.
+  What the pass learned: the new 1976 Commission's minutes are half testimony
+  that locates nothing; merged lots are found by area and dead numbers by the
+  printed lot; and a hand override of the resolver must be written before
+  `manifest`, or the manifest seeds the resolver's wrong parcel — here the
+  point join had put 3480 Sacramento on the 1965 apartment house next door.)
 
 ## Reader spec
 
@@ -378,6 +423,9 @@ instead, and change it here when a run learns something a reader needs.
   units, beds, floor area, use, the business or institution, a vacant lot),
   `site history` (a dated past fact about the building, at the date and
   precision the page prints), `designation` (landmark or district action).
+- **A speaker is not the staff.** Building dates and descriptions come from
+  the staff report or the resolution; a date or claim from an applicant,
+  neighbour or advocate goes in `extra.reader_note`, not in `description`.
 - **A date or number is what the page prints.** Never compute one — not from
   an age, a sequence of resolution numbers or a neighbouring entry; working
   goes in `extra.reader_note`.
