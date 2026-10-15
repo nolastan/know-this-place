@@ -1,0 +1,143 @@
+{
+  "address": "2352 Post Street, San Francisco, CA 94115",
+  "path": "/san-francisco/japantown/post-street/2352/",
+  "apn": "1076011",
+  "block": "1076",
+  "lot": "011",
+  "eas_baseid": "294470",
+  "coordinates": {
+    "lat": 37.784484,
+    "lng": -122.440626
+  },
+  "parcel": {
+    "year_built": 1904,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 3436,
+    "building_area_sqft": 3190,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Lower Pacific Heights",
+    "analysis_neighborhood": "Japantown",
+    "property_location_raw": "2354 2352 POST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 218440,
+    "assessed_improvement_value": 230284
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200002252820",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-02-25",
+      "status_date": "2000-05-15",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "interior tenant improvement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9919676",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "1999-09-18",
+      "status_date": "2000-09-07",
+      "estimated_cost": 12000,
+      "description": "install walls, windows & counters inside tenant space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9913724",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-07-07",
+      "status_date": "2000-10-11",
+      "estimated_cost": 5000,
+      "description": "remove counters, cabinets, carpets & nonbearing partitions",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9904701",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-03-11",
+      "status_date": "2001-02-01",
+      "estimated_cost": 10500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9517769",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "1995-10-23",
+      "status_date": "1995-10-23",
+      "estimated_cost": 3360,
+      "description": "rmve (e)dryrot members from rear wood,exterior stair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POST&street_type=ST&address_number=2352",
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1076011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1076&lot=011",
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1076011",
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1976-09-02",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 2 September 1976",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/33minutesofsanfran1976san/page/n232/mode/1up",
+      "retrieved": "2026-10-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1976-09-02",
+      "kind": "occupancy",
+      "description": "The 25-by-137.5-foot lot held a two-family house, two floors of flats over a vacant ground floor.",
+      "source": "sf-planning-commission-minutes-1976-09-02"
+    },
+    {
+      "date": "1976-09-02",
+      "kind": "planning decision",
+      "description": "The City Planning Commission unanimously rezoned the lot from R-3 to C-2 so that the vacant ground floor could become an allergy clinic, keeping the two flats above (Resolution 7553).",
+      "source": "sf-planning-commission-minutes-1976-09-02"
+    }
+  ]
+}

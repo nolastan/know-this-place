@@ -2834,3 +2834,21 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   all five finished their pages without re-reading. *Check the output file
   for a `_summary` line before trusting a reader is done; a file without one
   is a reader that stopped.*
+- **When EAS has no record of a number, the assessor's roll may still carry
+  it.** The roll's `property_location` keeps a parcel's range as the city once
+  filed it: the 1976 minutes' "5505 Geary Boulevard" is in no EAS row, but
+  the 2025 roll files parcel 1525001 as `5505 5501 GEARY`, and its 3,600 sq ft
+  lot is exactly the 36 x 100 ft corner the record measures. The resolver
+  calls such a number dead and offers neighbours. *Where the record gives a
+  lot size, look the street's neighbouring parcels up on the roll and read
+  `property_location`; a range that contains the dead number, on a lot of the
+  record's area, places it by hand.* The same run used the record's lot area
+  the other way, to refuse an exact EAS join: 1650 Webster joins a 16,246 sq
+  ft lot whose building the roll dates 1974, where the record measured a
+  19,011 sq ft parking lot still open in 1976.
+  ([sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))
+- **DataSF's `data.sfgov.org` now answers with an HTML redirect to
+  `data.sf.gov`.** The repo's tools follow it, but an ad hoc `curl` without
+  `-L` gets a meta-refresh page and a JSON parser fails on it, which reads
+  like an empty or broken dataset. *Use `curl -L`, or query `data.sf.gov`
+  directly.* (2026-10-15)

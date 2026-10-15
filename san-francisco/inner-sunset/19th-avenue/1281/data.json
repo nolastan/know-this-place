@@ -1,0 +1,131 @@
+{
+  "address": "1281–1283 19th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/19th-avenue/1281/",
+  "apn": "1731017",
+  "block": "1731",
+  "lot": "017",
+  "eas_baseid": "315482",
+  "coordinates": {
+    "lat": 37.763967,
+    "lng": -122.477533
+  },
+  "address_range": "1281–1283",
+  "street_numbers_on_parcel": [
+    "1281",
+    "1283"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 4,
+    "lot_area_sqft": 2247,
+    "building_area_sqft": 2794,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "1283 1281 19TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 691652,
+    "assessed_improvement_value": 567819,
+    "last_sale_date": "2004-12-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200709263831",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-09-26",
+      "status_date": "2007-10-09",
+      "estimated_cost": 9800,
+      "revised_cost": 9800,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200508180673",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-08-18",
+      "status_date": "2006-03-14",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "add spiral stair, new bathroom at g/f, additional work to 200507016645.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200507016645",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-07-01",
+      "status_date": "2006-03-14",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "repair (e) stairs and relocate kitchen . add new bath & repairs (e) foundation & siding.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=AVE&address_number=1281",
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1731017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1731&lot=017",
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1731017",
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1976-12-02",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 2 December 1976",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/33minutesofsanfran1976san/page/n525/mode/1up",
+      "retrieved": "2026-10-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1976-12-02",
+      "kind": "occupancy",
+      "description": "The 25-foot lot held a two-unit house.",
+      "source": "sf-planning-commission-minutes-1976-12-02"
+    },
+    {
+      "date": "1976-12-02",
+      "kind": "planning decision",
+      "description": "The City Planning Commission unanimously refused to rezone the lot from R-3 to C-2, which would have let its two-family house be demolished for the stockroom of a catalogue store on the Irving Street corner (Resolution 7613).",
+      "source": "sf-planning-commission-minutes-1976-12-02"
+    }
+  ]
+}

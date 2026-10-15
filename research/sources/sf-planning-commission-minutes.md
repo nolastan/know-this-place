@@ -6,9 +6,9 @@
 >
 > - **Kind:** meeting minutes (scanned volumes) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 26 of 52 volumes read (July 1968 – June 1976): 7,069
->   pages, 2,629 findings, 1,215 resolved, 1,104 published. 26 volumes
->   remain — July 1976–1980 and 1994–2005. July–December 1975 is in no volume.
+> - **Coverage:** 27 of 52 volumes read (July 1968 – December 1976): 7,594
+>   pages, 2,769 findings, 1,288 resolved, 1,173 published. 25 volumes
+>   remain — 1977–1980 and 1994–2005. July–December 1975 is in no volume.
 > - **Local corpus:** `research/corpora/sf-planning-commission-minutes/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -41,7 +41,8 @@
 | 30 | January – June 1975 | **read in full** 2026-10-13 |
 | — | July – December 1975 | in no volume: the sequence skips 31 |
 | 32 | January – June 1976 | **read in full** 2026-10-14 |
-| 33–39 | July 1976 – 1980 (halves, then whole years; 36–37 are Jan–Mar and Jun–Nov 1978) | unread |
+| 33 | July – December 1976 | **read in full** 2026-10-15 |
+| 34–39 | 1977 – 1980 (halves, then whole years; 36–37 are Jan–Mar and Jun–Nov 1978) | unread |
 | 40–58 | 1994–2005 | unread |
 | — | 1981–1993 | in no volume |
 | — | before July 1968 | not in this collection. The Commission dates from 1942 |
@@ -256,6 +257,30 @@
   "a nurses' residence built in 1963 and torn down six years later"). Take
   dates and descriptions from the staff report or the resolution; a speaker's
   date goes in `reader_note` or is declined.
+- **The second half of 1976 is the interim-zoning half-year.** The residential
+  rezoning initiated on 20 May 1976 made every building over 30 feet in a
+  proposed RH district, and every second unit on a large RH-1 lot, a matter
+  for discretionary review until the new code passed; about a third of the
+  half-year's property cases are those (Foerster, Miguel, Ashbury, Buena Vista
+  East, Laguna). They print the lot, what stands on it and the decision, and
+  they resolve well. The rest is fast-food and branch-bank guidelines (two
+  Doggie Diners, Bell Savings, Sumitomo Bank), billboard ordinances and the
+  Inner Richmond traffic barriers, which locate nothing.
+- **The Board of Permit Appeals is reported like the Board of Supervisors** —
+  "on the previous evening", no date of its own — and it overruled the
+  Commission at least twice this half-year (the 25th Avenue Doggie Diner on
+  rehearing). Frame it "by" the reporting meeting, as for the Board.
+- **Case numbers repeat within the half-year.** LM76.3 is both the Art
+  Institute and the Jessie Street Substation; DR76.12 is both 2151 Laguna and
+  370 Monterey; DR76.30 heads both 937 Union and 326 12th Avenue. Link
+  hearings by address.
+- **A dead number can live on the roll, and a record's lot size picks the
+  parcel.** 5505 Geary has no EAS row, but the roll files parcel 1525001 as
+  `5505 5501 GEARY` on exactly the 3,600 sq ft the record measures; the
+  printed Lot 1, Block 1071 put "49 Masonic" on 3 Masonic by its 55,303 sq ft;
+  and a 2,763 sq ft disagreement threw out 1650 Webster's exact EAS join.
+  Where the record prints a lot size or a block and lot, check them before
+  calling a number dead or a join good.
 - **People:** The minutes are *full* of them: applicants, their attorneys and
   architects, objecting neighbours, improvement-club officers, the
   commissioners and the staff, all named in the narrative of every hearing.
@@ -288,10 +313,12 @@
   every meeting of 1974, 3 January to 19 December, into `minutes-1974.json`;
   volume 30, every meeting of January – June 1975, into `minutes-1975.json`;
   volume 32, every meeting of January – June 1976, into
-  `minutes-1976-h1.json`. **Next: volume 33 (July – December 1976,
-  `33minutesofsanfran1976san`)** into `minutes-1976-h2.json` — one nightly
-  run by a single reader, which is what a half-year volume takes in one
-  session (volume 32's 519 text pages fitted);
+  `minutes-1976-h1.json`; volume 33, every meeting of July – December
+  1976, into `minutes-1976-h2.json`. **Next: volume 34
+  (`34minutesofsanfran1977san`, January – June 1977)** into
+  `minutes-1977-h1.json` — one nightly run by a single reader,
+  which is what a half-year volume takes in one session (volumes 32 and 33,
+  519 and 525 text pages, both fitted);
   the 1994–2005 volumes are a
   different kind of document (by then the Commission's own case reports are
   online and indexed) and are worth sampling before a run is sized on them.
@@ -401,6 +428,24 @@
   printed lot; and a hand override of the resolver must be written before
   `manifest`, or the manifest seeds the resolver's wrong parcel — here the
   point join had put 3480 Sacramento on the 1965 apartment house next door.)
+  **2026-10-15** (volume 33, July – December 1976: 525 OCR pages with text out
+  of 590 viewer pages, read in one session by a single reader with no
+  sub-agents; 30 meetings, 23 regular and 7 special; 140 findings — 71
+  decisions, 55 statements of what stood on a property, 8 dated past facts,
+  6 landmark designations. 73 resolved: 61 by the EAS join (one re-filed by hand under
+  portola), 12 by hand — 2 by the roll's own range and the record's lot area
+  (5505 Geary), 2 by the record's printed lot (49 Masonic is 3 Masonic), 8 by
+  name on a building a page already carries (Soko Hardware, Stonestown, the
+  Abner Phelps House, the Southern Pacific hospital, Pacific Medical Center).
+  67 unresolved: 30 with no street number, 14 condominiums waiting on #446,
+  15 at a number EAS no longer has (two of them "No. 9 Fisherman's Wharf",
+  which is no street in EAS), 6 where the record's range spans parcels today,
+  2 where the record's lot area refused the join. 69
+  published on 44 pages, 20 of them seeded; 4 declined as already on the
+  page. One conflict stated (1455 Market's construction date). What the pass
+  learned: the roll's `property_location` keeps numbers EAS has dropped; a
+  record's lot area can refuse an exact join as well as confirm one; and
+  `data.sfgov.org` now redirects to `data.sf.gov`.)
 
 ## Reader spec
 
@@ -429,8 +474,8 @@ instead, and change it here when a run learns something a reader needs.
 - **A date or number is what the page prints.** Never compute one — not from
   an age, a sequence of resolution numbers or a neighbouring entry; working
   goes in `extra.reader_note`.
-- **A Board of Supervisors action reported without its own date** takes the
-  reporting meeting's date and is framed "By 5 July 1973, the Board of
+- **A Board of Supervisors or Board of Permit Appeals action reported without
+  its own date** takes the reporting meeting's date and is framed "By 5 July 1973, the Board of
   Supervisors had approved…"; with its own date, use that.
 - **A decision reached at a later meeting belongs to that meeting**; link the
   hearing with `extra.case`, and put the page carrying the address header in
