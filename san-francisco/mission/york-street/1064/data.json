@@ -1,0 +1,83 @@
+{
+  "address": "1064 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/1064/",
+  "apn": "4151007",
+  "block": "4151",
+  "lot": "007",
+  "eas_baseid": "369569",
+  "coordinates": {
+    "lat": 37.754974,
+    "lng": -122.408669
+  },
+  "parcel": {
+    "lot_area_sqft": 4299,
+    "use": "Commercial Retail",
+    "property_class": "Schools",
+    "construction_type_code": "NA",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1064 YORK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1981",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=YORK&street_type=ST&address_number=1064",
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4151007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4151&lot=007",
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4151007",
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1976-08-26",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 26 August 1976",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/33minutesofsanfran1976san/page/n201/mode/1up",
+      "retrieved": "2026-10-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1976-08-26",
+      "kind": "occupancy",
+      "description": "The property was a single-family house, which the San Francisco Unified School District proposed to buy for the play yard of a rebuilt Bryant Elementary School.",
+      "source": "sf-planning-commission-minutes-1976-08-26"
+    },
+    {
+      "date": "1976-08-26",
+      "kind": "planning decision",
+      "description": "The City Planning Commission unanimously found the School District's purchase of the house, for the kindergarten and child-care play yard of a rebuilt Bryant Elementary School, in conformity with the Master Plan, provided displaced residents were offered relocation services.",
+      "source": "sf-planning-commission-minutes-1976-08-26"
+    }
+  ]
+}

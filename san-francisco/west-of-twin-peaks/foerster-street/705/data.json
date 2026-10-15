@@ -1,0 +1,124 @@
+{
+  "address": "705 Foerster Street, San Francisco, CA 94127",
+  "path": "/san-francisco/west-of-twin-peaks/foerster-street/705/",
+  "apn": "3027A027",
+  "block": "3027A",
+  "lot": "027",
+  "eas_baseid": "352166",
+  "coordinates": {
+    "lat": 37.734003,
+    "lng": -122.449181
+  },
+  "parcel": {
+    "year_built": 1998,
+    "units": 1,
+    "stories": 3,
+    "rooms": 8,
+    "bathrooms": 4,
+    "bedrooms": 3,
+    "lot_area_sqft": 2600,
+    "building_area_sqft": 3221,
+    "basement_area_sqft": 232,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Miraloma Park",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0705 FOERSTER            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 170996,
+    "assessed_improvement_value": 438951
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1998",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9624492S",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1996-12-20",
+      "status_date": "1998-06-18",
+      "estimated_cost": 200000,
+      "description": "erect a three story single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "1988123",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1989-10-22",
+      "status_date": "1990-04-06",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8713359",
+      "type": "new construction wood frame",
+      "status": "expired",
+      "filed": "1987-09-16",
+      "status_date": "1989-12-19",
+      "estimated_cost": 190000,
+      "description": "single family dwelling w/3 stories",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOERSTER&street_type=ST&address_number=705",
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3027A027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3027A&lot=027",
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3027A027",
+      "retrieved": "2026-10-15"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1976-11-04",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 4 November 1976",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/33minutesofsanfran1976san/page/n463/mode/1up",
+      "retrieved": "2026-10-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1976-11-04",
+      "kind": "occupancy",
+      "description": "The two 25-by-105-foot lots, 2,630 square feet each, were vacant apart from three small trees, before the present houses.",
+      "source": "sf-planning-commission-minutes-1976-11-04"
+    },
+    {
+      "date": "1976-11-04",
+      "kind": "planning decision",
+      "description": "The City Planning Commission unanimously approved a 35-foot single-family house on each of the two vacant lots, the builder to follow a licensed soil engineer's foundation advice (Resolution 7600).",
+      "source": "sf-planning-commission-minutes-1976-11-04"
+    }
+  ]
+}
