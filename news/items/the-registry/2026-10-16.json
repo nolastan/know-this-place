@@ -1,0 +1,106 @@
+{
+  "source_id": "the-registry",
+  "batch": "2026-10-16",
+  "read_on": "2026-10-16",
+  "notes": "Run of 2026-10-16.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 3,
+    "mentions": 3,
+    "remaining": "none",
+    "note": "Other queued Registry stories name no building or are market statistics."
+  },
+  "findings": [
+    {
+      "id": "2026-10-16-reg-0001",
+      "date": "2026-10-15",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "50 First Street",
+      "street_number": "50",
+      "street_name": "FIRST",
+      "street_type": "ST",
+      "description": "Formal plans filed for the 1.5 million sq ft Fifty at First office tower at 50 First Street. The article is cut off by the paywall after the lede, so the date, the filing and the parcel cannot be confirmed from what is readable.",
+      "citation": {
+        "label": "The Registry, “San Francisco Recovery Fund Files Formal Plans for 1.5MM SQFT Fifty at First Office Tower, Holds Hotel and Housing Tower in Reserve,” 15 October 2026",
+        "url": "https://news.theregistrysf.com/san-francisco-recovery-fund-files-formal-plans-for-1-5mm-sqft-fifty-at-first-office-tower-holds-hotel-and-housing-tower-in-reserve/"
+      },
+      "raw": {
+        "text": "Files Formal Plans for 1.5MM SQFT Fifty at First Office Tower"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Declined: paywall cuts off after the lede, so nothing can be extracted or checked. The headline also covers two addresses (50 First and 528 Mission); a later account or the planning filing can carry it."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3708055",
+        "path": "/san-francisco/east-cut/1st-street/42/",
+        "eas_address": "42 01ST ST",
+        "method": "EAS exact match on 50 01ST ST → parcel 3708055; sf-parcels has blklot 3708055 active, 42–50 01ST; the 2025 roll records it as miscellaneous/mixed-use, built 1917. EAS puts 42, 50 01ST ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 42. The record spells the street out as FIRST; EAS holds the numbered streets as zero-padded ordinals, so this is 01ST.",
+        "checked_on": "2026-10-16"
+      }
+    },
+    {
+      "id": "2026-10-16-reg-0002",
+      "date": "2026-10-15",
+      "date_precision": "day",
+      "kind": "sale",
+      "address_as_written": "1155 Market Street",
+      "street_number": "1155",
+      "street_name": "MARKET",
+      "street_type": "ST",
+      "description": "Part of 1155 Market sells at a loss to CMBS investors. The address is a commercial condominium (earlier finding 2026-08-28b-0001, pending), so no page can be seeded.",
+      "citation": {
+        "label": "The Registry, “CMBS Investors Take Total Loss on $48MM Loan as 103,000 SQFT of San Francisco’s 1155 Market Sells for $8MM,” 15 October 2026",
+        "url": "https://news.theregistrysf.com/cmbs-investors-take-total-loss-on-48mm-loan-as-103000-sqft-of-san-franciscos-1155-market-sells-for-8mm/"
+      },
+      "raw": {
+        "text": "103,000 SQFT of San Francisco’s 1155 Market Sells for $8MM"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "pending",
+        "note": "Blocked: 1155 Market is a commercial condominium on four active parcels (3702820-3702823); the directory contract defers those. Same blocker as 2026-08-28b-0001. Revisit if a page for the building appears."
+      },
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-10-16",
+        "method": "sf-eas-addresses has 1155 MARKET ST but it does not join to one parcel. 1155 MARKET ST's coordinates fall in 4 active parcels (3702821, 3702823, 3702822, 3702820), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
+        "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+      }
+    },
+    {
+      "id": "2026-10-16-reg-0003",
+      "date": "2026-10-15",
+      "date_precision": "day",
+      "kind": "lease",
+      "address_as_written": "525 Market Street",
+      "street_number": "525",
+      "street_name": "MARKET",
+      "street_type": "ST",
+      "description": "Disney Streaming lease at One Market Plaza; 525 Market appears only in the paywalled outlet's keyword list, and One Market Plaza is at 1 Market Street, not 525.",
+      "citation": {
+        "label": "The Registry, “Disney Streaming Signs 76,000 SQFT Lease at One Market Plaza, Handing Rithm and Blackstone a Win Ahead of $850MM Loan Deadline,” 15 October 2026",
+        "url": "https://news.theregistrysf.com/disney-streaming-signs-76000-sqft-lease-at-one-market-plaza-handing-rithm-and-blackstone-a-win-ahead-of-850mm-loan-deadline/"
+      },
+      "raw": {
+        "text": "Disney Streaming Signs 76,000 SQFT Lease at One Market Plaza"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Declined: the address in the text does not match the building named; paywalled; no address-level fact can be established."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3708056",
+        "path": "/san-francisco/east-cut/market-street/525/",
+        "eas_address": "525 MARKET ST",
+        "method": "EAS exact match on 525 MARKET ST → parcel 3708056; sf-parcels has blklot 3708056 active, 525–525 MARKET; the 2025 roll records it as commercial office, built 1973.",
+        "checked_on": "2026-10-16"
+      }
+    }
+  ]
+}
