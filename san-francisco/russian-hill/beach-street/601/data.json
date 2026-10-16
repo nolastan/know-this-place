@@ -1,0 +1,82 @@
+{
+  "address": "601 Beach Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/beach-street/601/",
+  "apn": "0024001",
+  "block": "0024",
+  "lot": "001",
+  "eas_baseid": "275834",
+  "coordinates": {
+    "lat": 37.806659,
+    "lng": -122.41908
+  },
+  "parcel": {
+    "year_built": 1949,
+    "units": 1,
+    "stories": 1,
+    "rooms": 2,
+    "bathrooms": 2,
+    "lot_area_sqft": 31460,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Public Use",
+    "construction_type_code": "D",
+    "zoning": "C2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "North Waterfront",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "0000 0601 BEACH               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1949",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BEACH&street_type=ST&address_number=601",
+      "retrieved": "2026-10-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0024001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0024&lot=001",
+      "retrieved": "2026-10-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0024001",
+      "retrieved": "2026-10-16"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1977-02-03",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 3 February 1977",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/34minutesofsanfran1977san/page/n133/mode/1up",
+      "retrieved": "2026-10-16"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1977-02-03",
+      "kind": "planning decision",
+      "description": "The City Planning Commission unanimously upheld the finding that a proposed office building on the site might have a significant effect on the environment and needed an environmental impact report (Resolution 7654).",
+      "source": "sf-planning-commission-minutes-1977-02-03"
+    }
+  ]
+}

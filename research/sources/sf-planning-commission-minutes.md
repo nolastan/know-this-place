@@ -6,9 +6,9 @@
 >
 > - **Kind:** meeting minutes (scanned volumes) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 27 of 52 volumes read (July 1968 – December 1976): 7,594
->   pages, 2,769 findings, 1,288 resolved, 1,173 published. 25 volumes
->   remain — 1977–1980 and 1994–2005. July–December 1975 is in no volume.
+> - **Coverage:** 28 of 52 volumes read (July 1968 – June 1977): 8,166
+>   pages, 2,974 findings, 1,413 resolved, 1,285 published. 24 volumes
+>   remain — July 1977–1980 and 1994–2005. July–December 1975 is in no volume.
 > - **Local corpus:** `research/corpora/sf-planning-commission-minutes/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -42,7 +42,8 @@
 | — | July – December 1975 | in no volume: the sequence skips 31 |
 | 32 | January – June 1976 | **read in full** 2026-10-14 |
 | 33 | July – December 1976 | **read in full** 2026-10-15 |
-| 34–39 | 1977 – 1980 (halves, then whole years; 36–37 are Jan–Mar and Jun–Nov 1978) | unread |
+| 34 | January – June 1977 | **read in full** 2026-10-16 |
+| 35–39 | July 1977 – 1980 (halves, then whole years; 36–37 are Jan–Mar and Jun–Nov 1978) | unread |
 | 40–58 | 1994–2005 | unread |
 | — | 1981–1993 | in no volume |
 | — | before July 1968 | not in this collection. The Commission dates from 1942 |
@@ -314,11 +315,12 @@
   volume 30, every meeting of January – June 1975, into `minutes-1975.json`;
   volume 32, every meeting of January – June 1976, into
   `minutes-1976-h1.json`; volume 33, every meeting of July – December
-  1976, into `minutes-1976-h2.json`. **Next: volume 34
-  (`34minutesofsanfran1977san`, January – June 1977)** into
-  `minutes-1977-h1.json` — one nightly run by a single reader,
-  which is what a half-year volume takes in one session (volumes 32 and 33,
-  519 and 525 text pages, both fitted);
+  1976, into `minutes-1976-h2.json`; volume 34, every meeting of January –
+  June 1977, into `minutes-1977-h1.json`. **Next: volume 35
+  (`35minutesofsanfran1977san` — confirm the identifier, July – December
+  1977)** into `minutes-1977-h2.json` — one nightly run by a single reader,
+  which is what a half-year volume takes in one session (volumes 32, 33 and
+  34, 519, 525 and 572 text pages, all fitted);
   the 1994–2005 volumes are a
   different kind of document (by then the Commission's own case reports are
   online and indexed) and are worth sampling before a run is sized on them.
@@ -446,6 +448,30 @@
   learned: the roll's `property_location` keeps numbers EAS has dropped; a
   record's lot area can refuse an exact join as well as confirm one; and
   `data.sfgov.org` now redirects to `data.sf.gov`.)
+  **2026-10-16** (volume 34, January – June 1977: 572 OCR pages with text out
+  of 748 viewer pages, read in one session by a single reader with no
+  sub-agents; 25 meetings, 6 January to 30 June; 205 findings — 104
+  decisions, 73 statements of what stood on a property, 15 landmark
+  designations, 13 dated past facts. 125 resolved: 107 by the EAS join, 18 by
+  hand — on a building a page already carries (the Palace of Fine Arts, the
+  Ferry Building, the City of Paris, Pacific Medical Center, the Key Monument,
+  Seward mini-park), by the record's lot (3398 22nd Street, 316 Laurel), and
+  six Grove Street findings on the Performing Arts garage parcel that
+  replaced them. 80 unresolved: 24 with no street number, 20 at a number EAS
+  does not hold, 11 where the record's range spans parcels today, 11 where
+  EAS does not join to one parcel, 7 condominiums waiting on #446, 7 by hand
+  (3733 Sacramento joins the neighbour's three flats, not the hospital
+  annex the record means; 501 Washington is merged into a 1930 building;
+  400 Jefferson is a multi-business Port parcel). 112 published on 68 pages,
+  30 of them seeded; 13 declined as already on the page or duplicated
+  within the batch. What the pass learned: the text-page filter must keep a
+  short page that carries a meeting header — six final pages holding votes
+  fell under the 40-word floor; a record's header and its resolution can
+  print different numbers for one property (38/998 Egbert, 1931/1981
+  Funston, 3393/3398 22nd Street), so read both before resolving; and
+  several buildings cleared for one later structure resolve to that one
+  parcel, so their identical findings are duplicates on the page and one
+  carries the count.)
 
 ## Reader spec
 
