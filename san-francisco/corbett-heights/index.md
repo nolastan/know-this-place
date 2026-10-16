@@ -14,6 +14,7 @@ Ord, Hattie, Danvers, Mars, Romain and Museum Way.
 
 ## Streets documented so far
 
+- [Carmel Street](carmel-street/) — 1 building, built 1965.
 - [Clayton Street](clayton-street/) — 17 buildings, built 1895–1961; 1 in the Auxiliary Water Supply System (Discontiguous).
 - [Corbett Avenue](corbett-avenue/) — 7 buildings documented — from a 1905 flat above the earthquake refugee camp to post-war infill.
 - [Crestline Drive](crestline-drive/) — 1 building, built 1964.

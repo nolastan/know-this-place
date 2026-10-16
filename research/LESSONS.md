@@ -2794,6 +2794,15 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   `addToAccessFormats=false`. *Before splitting any Internet Archive scan,
   confirm the mapping by finding one known quote on the viewer page a
   citation names.*
+- **A word-count floor for "this page has text" drops the short pages that
+  carry the votes.** Splitting volume 34 of the Planning Commission minutes,
+  a filter keeping pages with 40 or more four-letter words skipped six pages
+  that close a meeting — a resolution number, a roll call, two lines of
+  motion — so six decisions had no page to be read from. Keeping any page
+  that also prints a meeting header ("MINUTES OF THE") brought them back.
+  *Before trusting a text-page filter, list the pages it drops and read a
+  handful; a short page is often the end of something, not nothing.*
+  ([sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))
 - **A record with a block and lot and no street number is unresolved by the
   tool and placeable by hand.** `resolve_eas.py` reads
   `assessor_block_as_recorded` only to choose among parcels an address already

@@ -1,0 +1,125 @@
+{
+  "address": "150 Woodside Avenue, San Francisco, CA 94127",
+  "path": "/san-francisco/west-of-twin-peaks/woodside-avenue/150/",
+  "apn": "2890001",
+  "block": "2890",
+  "lot": "001",
+  "eas_baseid": "348537",
+  "coordinates": {
+    "lat": 37.746323,
+    "lng": -122.456108
+  },
+  "parcel": {
+    "year_built": 1952,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 3977,
+    "building_area_sqft": 2267,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Forest Hill Extension",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0150 WOODSIDE            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 339924,
+    "assessed_improvement_value": 254937,
+    "last_sale_date": "1994-06-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1952",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202306029143",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-06-02",
+      "status_date": "2023-06-02",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202006158792",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2020-06-15",
+      "status_date": "2021-03-16",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8900328",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-01-09",
+      "status_date": "1989-12-29",
+      "estimated_cost": 1600,
+      "description": "repair one shower wall unit, one fire place.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=WOODSIDE&street_type=AVE&address_number=150",
+      "retrieved": "2026-10-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2890001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2890&lot=001",
+      "retrieved": "2026-10-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2890001",
+      "retrieved": "2026-10-16"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1977-03-10",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 10 March 1977",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/34minutesofsanfran1977san/page/n266/mode/1up",
+      "retrieved": "2026-10-16"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1977-03-10",
+      "kind": "occupancy",
+      "description": "The Department of Public Works property at the corner of Balceta Avenue, about 4,000 square feet, held a one-family house and had been declared surplus.",
+      "source": "sf-planning-commission-minutes-1977-03-10"
+    },
+    {
+      "date": "1977-03-10",
+      "kind": "planning decision",
+      "description": "The City Planning Commission unanimously found the sale of the surplus city-owned house, for owner-occupied housing, in conformity with the Master Plan.",
+      "source": "sf-planning-commission-minutes-1977-03-10"
+    }
+  ]
+}

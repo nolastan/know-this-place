@@ -1,0 +1,115 @@
+{
+  "address": "476 Fair Oaks Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/fair-oaks-street/476/",
+  "apn": "6534014C",
+  "block": "6534",
+  "lot": "014C",
+  "eas_baseid": "401505",
+  "coordinates": {
+    "lat": 37.749091,
+    "lng": -122.423925
+  },
+  "parcel": {
+    "lot_area_sqft": 2.16,
+    "lot_depth_ft": 26,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Residential",
+    "construction_type_code": "NA",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0480 FAIR OAKS           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200103235079",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2001-03-23",
+      "status_date": "2001-08-02",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "install new gate replce 2x6 cap on 3' wall on the front outside patio",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9302257",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-02-10",
+      "status_date": "1993-08-10",
+      "estimated_cost": 10000,
+      "description": "repl windows. repl cabinets. insulate walls. repl paneling.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9005374",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-03-20",
+      "status_date": "1990-10-24",
+      "estimated_cost": 20000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FAIR%20OAKS&street_type=ST&address_number=476",
+      "retrieved": "2026-10-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6534014C&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6534&lot=014C",
+      "retrieved": "2026-10-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6534014C",
+      "retrieved": "2026-10-16"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1977-06-02",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 2 June 1977",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/34minutesofsanfran1977san/page/n574/mode/1up",
+      "retrieved": "2026-10-16"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1977-06-02",
+      "kind": "occupancy",
+      "description": "The house on its 8,850-square-foot lot was a convalescent home for twelve non-ambulatory patients, authorised by the City Planning Commission in 1975.",
+      "source": "sf-planning-commission-minutes-1977-06-02"
+    },
+    {
+      "date": "1977-06-02",
+      "kind": "planning decision",
+      "description": "Over a neighbourhood petition, the City Planning Commission unanimously authorised the residential care home to take fifteen aged residents instead of twelve (Resolution 7737).",
+      "source": "sf-planning-commission-minutes-1977-06-02"
+    }
+  ]
+}

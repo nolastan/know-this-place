@@ -1,0 +1,120 @@
+{
+  "address": "426 Bosworth Street, San Francisco, CA 94112",
+  "path": "/san-francisco/glen-park/bosworth-street/426/",
+  "apn": "6747017",
+  "block": "6747",
+  "lot": "017",
+  "eas_baseid": "406559",
+  "coordinates": {
+    "lat": 37.733283,
+    "lng": -122.43133
+  },
+  "parcel": {
+    "year_built": 1946,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2561,
+    "building_area_sqft": 1065,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Outer Mission",
+    "property_location_raw": "0000 0426 BOSWORTH            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 31320,
+    "assessed_improvement_value": 34754
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1946",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202309277524",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-09-27",
+      "status_date": "2023-10-27",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200007256080",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-07-25",
+      "status_date": "2000-11-25",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "dry rot and termite repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2000–2023",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BOSWORTH&street_type=ST&address_number=426",
+      "retrieved": "2026-10-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6747017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6747&lot=017",
+      "retrieved": "2026-10-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6747017",
+      "retrieved": "2026-10-16"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1977-02-03",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 3 February 1977",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/34minutesofsanfran1977san/page/n133/mode/1up",
+      "retrieved": "2026-10-16"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1977-02-03",
+      "kind": "occupancy",
+      "description": "The lot held a single-family house; so did 422 Bosworth, and the lot between them was vacant.",
+      "source": "sf-planning-commission-minutes-1977-02-03"
+    },
+    {
+      "date": "1977-02-03",
+      "kind": "planning decision",
+      "description": "The City Planning Commission unanimously rezoned the house's lot, its neighbour at 422 and the vacant lot between them from R-1 to R-2, so that a second unit could be added to the house (Resolution 7655).",
+      "source": "sf-planning-commission-minutes-1977-02-03"
+    }
+  ]
+}
