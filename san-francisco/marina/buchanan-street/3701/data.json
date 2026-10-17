@@ -1,0 +1,187 @@
+{
+  "address": "3701 Buchanan Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/buchanan-street/3701/",
+  "apn": "0445A005A",
+  "block": "0445A",
+  "lot": "005A",
+  "eas_baseid": "282534",
+  "coordinates": {
+    "lat": 37.804159,
+    "lng": -122.433846
+  },
+  "parcel": {
+    "year_built": 1932,
+    "units": 1,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 4,
+    "lot_area_sqft": 4996,
+    "building_area_sqft": 8100,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "NC-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 3701 BUCHANAN            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2637713,
+    "assessed_improvement_value": 1758474,
+    "last_sale_date": "2012-02-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1932",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Marina Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1930–1940",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202601204152",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-01-20",
+      "status_date": "2026-01-28",
+      "estimated_cost": 1,
+      "revised_cost": 6000,
+      "description": "foundation revision to 202210033598. remove brick and concrete footings at exterior wall on gridline d and 7 and extending new mat slab under walls.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202210033598",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2022-10-03",
+      "status_date": "2024-06-12",
+      "estimated_cost": 500000,
+      "revised_cost": 876520,
+      "description": "core and shell improvements and compliance with abe",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201912048623",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-12-04",
+      "status_date": "2019-12-10",
+      "estimated_cost": 90000,
+      "revised_cost": 90000,
+      "description": "demolition of non-structural partitions, ceilings, lighting, plumbing, and portion of mezzanine.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8925431",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-12-28",
+      "status_date": "1990-06-29",
+      "estimated_cost": 18620,
+      "description": "re - roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8924019",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1989-12-08",
+      "status_date": "1990-09-14",
+      "estimated_cost": 25000,
+      "description": "particale, reroofing of (e) bldg & relocate & closure(e)sylt",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "1989–2026",
+    "shown_on_page": 5,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BUCHANAN&street_type=ST&address_number=3701",
+      "retrieved": "2026-10-17"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0445A005A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-17"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0445A&lot=005A",
+      "retrieved": "2026-10-17"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0445A005A",
+      "retrieved": "2026-10-17"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43384570316044%2037.80415873822483)%27)",
+      "retrieved": "2026-10-17"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1977-09-22",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 22 September 1977",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/35minutesofsanfran1977sa/page/n242/mode/1up",
+      "retrieved": "2026-10-17"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1977-09-29",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 29 September 1977",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/35minutesofsanfran1977sa/page/n258/mode/1up",
+      "retrieved": "2026-10-17"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1977-10-27",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 27 October 1977",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/35minutesofsanfran1977sa/page/n361/mode/1up",
+      "retrieved": "2026-10-17"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1977-09-22",
+      "kind": "occupancy",
+      "description": "The commercial building, built as a food market, was to be renovated as four offices with a new second-floor level inside its shell.",
+      "source": "sf-planning-commission-minutes-1977-09-22"
+    },
+    {
+      "date": "1977-09-29",
+      "kind": "planning decision",
+      "description": "Over neighbours' objection to office doors on North Point Street, the City Planning Commission voted 4 to 2 not to take discretionary review of the conversion of the former grocery into four offices.",
+      "source": "sf-planning-commission-minutes-1977-09-29"
+    },
+    {
+      "date": "1977-10-27",
+      "kind": "planning decision",
+      "description": "By 27 October 1977, the Board of Permit Appeals had approved the conversion of the commercial building into offices with a change limiting it to a single entrance on North Point Street.",
+      "source": "sf-planning-commission-minutes-1977-10-27"
+    }
+  ]
+}
