@@ -4,9 +4,11 @@ A working-class residential district in the city's south-east, laid out in the e
 
 ## Streets documented so far
 
+- [Allison Street](allison-street/) — 1 building, built 1997.
 - [Amazon Avenue](amazon-avenue/) — A 1930 house recorded as Jerry Garcia's first home.
 - [Athens Street](athens-street/) — 1 building, built 1925.
 - [Avalon Avenue](avalon-avenue/) — 1 building, built 1910.
+- [Carter Street](carter-street/) — 1 building, built 2004.
 - [Geneva Avenue](geneva-avenue/) — 1 building, built 1922.
 - [La Grande Avenue](la-grande-avenue/) — 1 building, built 1957.
 - [Lisbon Street](lisbon-street/) — 1 building, built 1906.

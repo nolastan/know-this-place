@@ -2861,3 +2861,10 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   `-L` gets a meta-refresh page and a JSON parser fails on it, which reads
   like an empty or broken dataset. *Use `curl -L`, or query `data.sf.gov`
   directly.* (2026-10-15)
+- **A quote read from concatenated pages can cross a page break.** Reading a
+  scan in chunks of several OCR pages let twelve of 169 `raw_text` spans run
+  from one page onto the next, so they matched no single cited page. *Re-match
+  every quote to the one page it cites before writing the file — a
+  whitespace-flexible search of the page text — and trim or re-cite any that
+  straddle.* (2026-10-17,
+  [sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))
