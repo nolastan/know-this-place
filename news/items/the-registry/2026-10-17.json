@@ -1,0 +1,109 @@
+{
+  "source_id": "the-registry",
+  "batch": "2026-10-17",
+  "read_on": "2026-10-17",
+  "notes": "Run of 2026-10-17.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 5,
+    "mentions": 5,
+    "remaining": "none",
+    "note": "The Supervisors green-rules story names no building."
+  },
+  "findings": [
+    {
+      "id": "2026-10-17-reg-0001",
+      "date": "2026-10-16",
+      "date_precision": "day",
+      "kind": "sale",
+      "address_as_written": "1155 Bryant St.",
+      "street_number": "1155",
+      "street_name": "BRYANT",
+      "street_type": "ST",
+      "description": "Cannae Partners, a firm, acquires the vacant 33,000 sq ft lab building at 1155 Bryant for about $8.4M. Paywalled after the lede; headline and lede carry the building, buyer and price.",
+      "citation": {
+        "label": "The Registry, “Cannae Partners Acquires Vacant 33,000 SQFT Lab Building at 1155 Bryant in San Francisco for $8.4MM,” 16 October 2026",
+        "url": "https://news.theregistrysf.com/cannae-partners-acquires-vacant-33000-sqft-lab-building-at-1155-bryant-in-san-francisco-for-8-4mm/"
+      },
+      "raw": {
+        "text": "Cannae Partners Acquires Vacant 33,000 SQFT Lab Building at 1155 Bryant in San Francisco for $8.4MM"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "published",
+        "note": "/san-francisco/south-of-market/bryant-street/1155/: Entry on the page."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3526019B",
+        "path": "/san-francisco/south-of-market/bryant-street/1155/",
+        "eas_address": "1155 BRYANT ST",
+        "method": "EAS exact match on 1155 BRYANT ST → parcel 3526019B; sf-parcels has blklot 3526019B active, 1155–1155 BRYANT; the 2025 roll records it as industrial, built 1919.",
+        "checked_on": "2026-10-17"
+      }
+    },
+    {
+      "id": "2026-10-17-reg-0002",
+      "date": "2026-10-16",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2 Stockton Street",
+      "street_number": "2",
+      "street_name": "STOCKTON",
+      "street_type": "ST",
+      "description": "Nordstrom Rack at 2 Stockton.",
+      "citation": {
+        "label": "The Registry, “Nordstrom Rack Returns to San Francisco With 51,000 SQFT Union Square Store at 2 Stockton Street,” 16 October 2026",
+        "url": "https://news.theregistrysf.com/nordstrom-rack-returns-to-san-francisco-with-51000-sqft-union-square-store-at-2-stockton-street/"
+      },
+      "raw": {
+        "text": "Nordstrom Rack Returns to San Francisco With 51,000 SQFT Union Square Store at 2 Stockton Street"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Duplicate of the SFist entry already on the page (2026-10-16-sf-0001)."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0328002",
+        "path": "/san-francisco/chinatown/stockton-street/2/",
+        "eas_address": "2 STOCKTON ST",
+        "method": "EAS exact match on 2 STOCKTON ST → parcel 0328002; sf-parcels has blklot 0328002 active, 790–790 MARKET; the 2025 roll records it as commercial retail, built 1907. EAS puts 2, 30 STOCKTON ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2.",
+        "checked_on": "2026-10-17"
+      }
+    },
+    {
+      "id": "2026-10-17-reg-0003",
+      "date": "2026-10-16",
+      "date_precision": "day",
+      "kind": "other",
+      "address_as_written": "270 Brannan Street",
+      "street_number": "270",
+      "street_name": "BRANNAN",
+      "street_type": "ST",
+      "description": "Quarterly market roundup / lease trade listing many addresses; addresses are a paywall link list, not facts.",
+      "citation": {
+        "label": "The Registry, “Brannan Street Becomes San Francisco’s Big-Deal Hub as SOMA Leads Q3 With 484,000 SQFT Absorbed,” 16 October 2026",
+        "url": "https://news.theregistrysf.com/brannan-street-becomes-san-franciscos-big-deal-hub-as-soma-leads-q3-with-484000-sqft-absorbed/"
+      },
+      "raw": {
+        "text": "Brannan Street Becomes San Francisco’s Big-Deal Hub as SOMA Leads Q3 With 484,000 SQFT Absorbed"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Declined: market roundup; addresses appear only in a paywalled list. The Brex/Cognition lease story (270/333 Brannan) is the same: no usable fact beyond the lede."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3774026",
+        "path": "/san-francisco/east-cut/brannan-street/270/",
+        "eas_address": "270 BRANNAN ST",
+        "method": "EAS exact match on 270 BRANNAN ST → parcel 3774026; sf-parcels has blklot 3774026 active, 270–270 BRANNAN; the 2025 roll records it as commercial office, built 2017.",
+        "checked_on": "2026-10-17",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      }
+    }
+  ]
+}
