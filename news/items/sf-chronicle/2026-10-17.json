@@ -1,0 +1,82 @@
+{
+  "source_id": "sf-chronicle",
+  "batch": "2026-10-17",
+  "read_on": "2026-10-17",
+  "notes": "Run of 2026-10-17.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 3,
+    "mentions": 3,
+    "remaining": "none",
+    "note": "Third queued story names no address (a crime story)."
+  },
+  "findings": [
+    {
+      "id": "2026-10-17-sc-0001",
+      "date": "2026-10-16",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "4033 Judah St.",
+      "street_number": "4033",
+      "street_name": "JUDAH",
+      "street_type": "ST",
+      "description": "A San Francisco bakery takes over the Outer Sunset space that was Trouble Coffee, later DamnFine Coffee (closed late 2025). A business opening in a building.",
+      "citation": {
+        "label": "The San Francisco Chronicle, “S.F. bakery to bring nostalgia-fueled sweets and sandwiches to beachside neighborhood,” 16 October 2026",
+        "url": "https://www.sfchronicle.com/food/restaurants/article/black-jet-bakery-san-francisco-22470768.php"
+      },
+      "raw": {
+        "text": "S.F. bakery to bring nostalgia-fueled sweets and sandwiches to beachside neighborhood"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "published",
+        "note": "/san-francisco/sunset-parkside/judah-street/4029/: Page seeded from research/manifests/news-2026-10-17.json; entry on the page (headline names no address; SFist food roundup of 16 Oct carries the same opening and is not separately entered)."
+      },
+      "extra": {
+        "occupant": "Black Jet Baking Co. (a business)"
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "1808051",
+        "path": "/san-francisco/sunset-parkside/judah-street/4029/",
+        "eas_address": "4029 JUDAH ST",
+        "method": "EAS exact match on 4033 JUDAH ST → parcel 1808051; sf-parcels has blklot 1808051 active, 4029–4033 JUDAH; the 2025 roll records it as multi-family residential, built 1948. EAS puts 4029, 4033 JUDAH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 4029.",
+        "checked_on": "2026-10-17",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      }
+    },
+    {
+      "id": "2026-10-17-sc-0002",
+      "date": "2026-10-16",
+      "date_precision": "day",
+      "kind": "sale",
+      "address_as_written": "2670 Pierce St.",
+      "street_number": "2670",
+      "street_name": "PIERCE",
+      "street_type": "ST",
+      "description": "Sale of a Pacific Heights house associated with a late conductor.",
+      "citation": {
+        "label": "The San Francisco Chronicle, “S.F. couple buy late conductor Michael Tilson Thomas’ nearly $10 million Pacific Heights home,” 16 October 2026",
+        "url": "https://www.sfchronicle.com/entertainment/classical/article/michael-tilson-thomas-sf-home-sold-22480842.php"
+      },
+      "raw": {
+        "text": "S.F. couple buy late conductor Michael Tilson Thomas’ nearly $10 million Pacific Heights home"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Declined: the headline names an individual and is about a private home's sale and its buyers, not a fact about the building. Left for a human if a notable-past-occupant entry is wanted."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0562017",
+        "path": "/san-francisco/pacific-heights/pierce-street/2670/",
+        "eas_address": "2670 PIERCE ST",
+        "method": "EAS exact match on 2670 PIERCE ST → parcel 0562017; sf-parcels has blklot 0562017 active, 2670–2670 PIERCE; the 2025 roll records it as single family residential, built 1907.",
+        "checked_on": "2026-10-17",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      }
+    }
+  ]
+}
