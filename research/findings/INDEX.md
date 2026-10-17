@@ -215,7 +215,7 @@ sit in — the three it touched most, and how many in all.
 | `sf-planning-commission-minutes/minutes-1976-h1.json` | 114 | 212 KB | 1911–1976 | 69 | 65 | `nob-hill`, `presidio-heights`, `pacific-heights` +17 |
 | `sf-planning-commission-minutes/minutes-1976-h2.json` | 140 | 253 KB | 1899–1976 | 73 | 69 | `mission`, `inner-sunset`, `inner-richmond` +23 |
 | `sf-planning-commission-minutes/minutes-1977-h1.json` | 205 | 358 KB | 1853–1977 | 125 | 112 | `pacific-heights`, `mission`, `nob-hill` +25 |
-| `sf-planning-commission-minutes/minutes-1977-h2.json` | 169 | 306 KB | 1902–1977 | 86 | 84 | `mission`, `pacific-heights`, `inner-richmond` +26 |
+| `sf-planning-commission-minutes/minutes-1977-h2.json` | 169 | 305 KB | 1902–1977 | 86 | 84 | `mission`, `pacific-heights`, `inner-richmond` +26 |
 | `spur-popos-guide/popos-guide.json` | 56 | 86 KB | 1959–2008 | 54 | 3 | `east-cut`, `financial-district`, `south-beach` +2 |
 
 ## Manifests
