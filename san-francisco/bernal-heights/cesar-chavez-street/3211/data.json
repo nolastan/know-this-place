@@ -1,0 +1,85 @@
+{
+  "address": "3211 Cesar Chavez Street, San Francisco, CA 94110",
+  "path": "/san-francisco/bernal-heights/cesar-chavez-street/3211/",
+  "apn": "5502009",
+  "block": "5502",
+  "lot": "009",
+  "eas_baseid": "480383",
+  "coordinates": {
+    "lat": 37.747875,
+    "lng": -122.41428
+  },
+  "parcel": {
+    "year_built": 1979,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 16003,
+    "building_area_sqft": 7300,
+    "use": "Commercial Misc",
+    "property_class": "Churches,Convents,Rectories",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Bernal Heights",
+    "property_location_raw": "0000 3211 CESAR CHAVEZ        ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 105295,
+    "assessed_improvement_value": 761993
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1979",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CESAR%20CHAVEZ&street_type=ST&address_number=3211",
+      "retrieved": "2026-10-17"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5502009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-17"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5502&lot=009",
+      "retrieved": "2026-10-17"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5502009",
+      "retrieved": "2026-10-17"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1977-09-01",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 1 September 1977",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/35minutesofsanfran1977sa/page/n140/mode/1up",
+      "retrieved": "2026-10-17"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1977-09-01",
+      "kind": "occupancy",
+      "description": "The church that stood on the site had been destroyed by fire, and a replacement church with 50 parking spaces was proposed.",
+      "source": "sf-planning-commission-minutes-1977-09-01"
+    }
+  ]
+}

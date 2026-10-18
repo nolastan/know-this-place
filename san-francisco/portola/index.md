@@ -6,6 +6,7 @@ A hillside residential district in the city's south-east, between McLaren Park a
 
 - [Cambridge Street](cambridge-street/) — 1 building, built 1951.
 - [Felton Street](felton-street/) — 1 building.
+- [Gaven Street](gaven-street/) — 1 building, built 1960.
 - [Girard Street](girard-street/) — 1 building.
 - [Hamilton Street](hamilton-street/) — 1 building, built 1915.
 - [Silver Avenue](silver-avenue/) — 1 building, built 1927.

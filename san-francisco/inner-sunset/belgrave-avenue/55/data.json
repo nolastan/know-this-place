@@ -1,0 +1,145 @@
+{
+  "address": "55 Belgrave Avenue, San Francisco, CA 94117",
+  "path": "/san-francisco/inner-sunset/belgrave-avenue/55/",
+  "apn": "2688070",
+  "block": "2688",
+  "lot": "070",
+  "eas_baseid": "344170",
+  "coordinates": {
+    "lat": 37.759409,
+    "lng": -122.44914
+  },
+  "parcel": {
+    "year_built": 1982,
+    "units": 1,
+    "stories": 3,
+    "rooms": 9,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 5400,
+    "building_area_sqft": 3825,
+    "lot_depth_ft": 90,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Clarendon Heights",
+    "analysis_neighborhood": "Inner Sunset",
+    "property_location_raw": "0000 0055 BELGRAVE            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 269754,
+    "assessed_improvement_value": 531467
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1982",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202408098298",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-08-09",
+      "status_date": "2024-08-29",
+      "estimated_cost": 13800,
+      "revised_cost": 13800,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200902132152",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-02-13",
+      "status_date": "2009-02-13",
+      "estimated_cost": 1400,
+      "revised_cost": 1400,
+      "description": "master bathroom - floor and wall tile replacement.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200806205022",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-06-20",
+      "status_date": "2008-06-20",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "replace kitchen cabinets.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200610266079",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-10-26",
+      "status_date": "2006-12-28",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "install 2 small concrete retaining walls in place of existing wood retain walls which are rotted.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BELGRAVE&street_type=AVE&address_number=55",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2688070&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2688&lot=070",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2688070",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1975-05-29",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 29 May 1975",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/30minutesofsanfran1975sa/page/n538/mode/1up",
+      "retrieved": "2026-10-13"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1975-06-19",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 19 June 1975",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/30minutesofsanfran1975sa/page/n656/mode/1up",
+      "retrieved": "2026-10-13"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1975-05-29",
+      "kind": "planning decision",
+      "description": "The City Planning Commission unanimously upheld the negative declaration for two single-family houses designed to read as one building, and voted 4-2 to hold a discretionary review of their permit on 19 June.",
+      "source": "sf-planning-commission-minutes-1975-05-29"
+    },
+    {
+      "date": "1975-06-19",
+      "kind": "planning decision",
+      "description": "On discretionary review, the City Planning Commission voted 4-3 to deny permits for two attached houses on the two 25-by-100-foot lots, as covering too much of them and out of keeping with the detached, side-yarded houses of the street.",
+      "source": "sf-planning-commission-minutes-1975-06-19"
+    }
+  ]
+}

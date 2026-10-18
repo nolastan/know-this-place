@@ -1,0 +1,80 @@
+{
+  "source_id": "sfist",
+  "batch": "2026-10-16",
+  "read_on": "2026-10-16",
+  "notes": "Run of 2026-10-16.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 2,
+    "mentions": 2,
+    "remaining": "none",
+    "note": "Other queued SFist story names no address."
+  },
+  "findings": [
+    {
+      "id": "2026-10-16-sf-0001",
+      "date": "2026-10-15",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2 Stockton Street",
+      "street_number": "2",
+      "street_name": "STOCKTON",
+      "street_type": "ST",
+      "description": "Nordstrom Rack announces a 51,500 sq ft store at 2 Stockton Street, the former Forever 21 site, opening fall 2027 and returning the retailer downtown. Earns an entry; SFist's headline is the one that names the site. Chronicle and Standard accounts of the same announcement are declined as duplicates.",
+      "citation": {
+        "label": "SFist, “Nordstrom Rack to Reopen In Downtown SF at Former Forever 21 Site,” 15 October 2026",
+        "url": "https://sfist.com/2026/10/15/nordstrom-rack-to-reopen-in-downtown-sf-at-former-forever-21-site/"
+      },
+      "raw": {
+        "text": "Nordstrom Rack to Reopen In Downtown SF at Former Forever 21 Site"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "published",
+        "note": "/san-francisco/chinatown/stockton-street/2/: Entry on the page and card on the homepage grid (commit 7d87a42f1c)."
+      },
+      "extra": {
+        "occupant": "Nordstrom Rack (a business)"
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0328002",
+        "path": "/san-francisco/chinatown/stockton-street/2/",
+        "eas_address": "2 STOCKTON ST",
+        "method": "EAS exact match on 2 STOCKTON ST → parcel 0328002; sf-parcels has blklot 0328002 active, 790–790 MARKET; the 2025 roll records it as commercial retail, built 1907. EAS puts 2, 30 STOCKTON ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2.",
+        "checked_on": "2026-10-16"
+      }
+    },
+    {
+      "id": "2026-10-16-sf-0002",
+      "date": "2026-10-15",
+      "date_precision": "day",
+      "kind": "other",
+      "address_as_written": "945 Market Street",
+      "street_number": "945",
+      "street_name": "MARKET",
+      "street_type": "ST",
+      "description": "An arts-district funding story and a festival at Eighth and Market; the address is a festival backdrop, not a fact about the building.",
+      "citation": {
+        "label": "SFist, “New Mid-Market Arts District Launches With $500K Investment From SF Billionaires,” 15 October 2026",
+        "url": "https://sfist.com/2026/10/15/new-mid-market-arts-district-launches-with-500k-investment-from-sf-billionaires/"
+      },
+      "raw": {
+        "text": "New Mid-Market Arts District Launches With $500K Investment From SF Billionaires"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Declined: a district funding story; the address is incidental and the headline names no building. Fails the ten-year test."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3704240",
+        "path": "/san-francisco/south-of-market/market-street/945/",
+        "eas_address": "945 MARKET ST",
+        "method": "EAS exact match on 945 MARKET ST → parcel 3704240; sf-parcels has blklot 3704240 active, 945–945 MARKET; the 2025 roll records it as commercial retail, built 2017. EAS files the address under parcel 3704072, which sf-parcels reports retired; the active parcel its coordinates fall in is 3704240.",
+        "checked_on": "2026-10-16"
+      }
+    }
+  ]
+}

@@ -6,6 +6,7 @@ The city's Lakeshore analysis neighborhood, in the south-western corner of San F
 
 - [19th Avenue](19th-avenue/) — 1 building, built 1950; 1 in the Parkmerced Historic District.
 - [20th Avenue](20th-avenue/) — 1 building, built 1988.
+- [Brotherhood Way](brotherhood-way/) — 2 buildings, built 1963–1983; 2 in the Brotherhood Way Historic District.
 - [Buckingham Way](buckingham-way/) — 1 building, built 1988.
 - [Harding Road](harding-road/) — 1 building; 1 in the Midcentury Recreation Historic District (Discontiguous).
 - [Holloway Avenue](holloway-avenue/) — 1 building.

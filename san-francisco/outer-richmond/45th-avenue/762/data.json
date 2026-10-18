@@ -1,0 +1,142 @@
+{
+  "address": "762 45th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/45th-avenue/762/",
+  "apn": "1600027",
+  "block": "1600",
+  "lot": "027",
+  "eas_baseid": "309933",
+  "coordinates": {
+    "lat": 37.774163,
+    "lng": -122.505473
+  },
+  "parcel": {
+    "year_built": 1922,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1826,
+    "basement_area_sqft": 522,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Outer Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0762 45TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1025428,
+    "assessed_improvement_value": 439468,
+    "last_sale_date": "2013-08-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202207289438",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-07-28",
+      "status_date": "2022-08-15",
+      "estimated_cost": 17500,
+      "revised_cost": 17500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200712059660",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-12-05",
+      "status_date": "2008-06-27",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace slab & exterior walls of ground floor sunroom, & new french sliding door. replace (e) porch & stair w/ new porch & stair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200202149293",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-02-14",
+      "status_date": "2002-09-03",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "remove existing wire glass in lightwell,replace with 1 hr. wall, fire reted skylight. repair leak in",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9919229",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-09-14",
+      "status_date": "2000-03-29",
+      "estimated_cost": 700,
+      "description": "install 2 replacement windows rear",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9603257",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-02-28",
+      "status_date": "1998-05-11",
+      "estimated_cost": 2000,
+      "description": "install 2 replacement windows in front livingrm/bedrm",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=45TH&street_type=AVE&address_number=762",
+      "retrieved": "2026-10-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1600027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1600&lot=027",
+      "retrieved": "2026-10-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1600027",
+      "retrieved": "2026-10-16"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1977-03-03",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 3 March 1977",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/34minutesofsanfran1977san/page/n237/mode/1up",
+      "retrieved": "2026-10-16"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1977-03-03",
+      "kind": "occupancy",
+      "description": "The building was a residential care home for six elderly people; a request to expand it to ten was withdrawn.",
+      "source": "sf-planning-commission-minutes-1977-03-03"
+    }
+  ]
+}

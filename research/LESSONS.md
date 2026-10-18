@@ -1815,6 +1815,26 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   and put the arithmetic in `method`. One date against two parcels is still a
   decline.*
 
+- **A "split" range can be one stray EAS row, and the roll's
+  `property_location` says so.** 316-318 Laurel Street came back "numbers on
+  different parcels" because EAS files 318 Laurel twice — on 1009028 with 316,
+  and on 1009020 beside 306, a one-unit house. The roll's location for 1009028
+  is "0318 0316 LAUREL": one two-unit building, the record's own. *Before
+  accepting a split, read the roll location of each parcel; a parcel whose
+  location spans the whole range is the building, and the other row is a
+  stray.* Resolve by hand and name the stray in `method`.
+
+- **Merged lots are found by adding up the lots the record measures.** Two
+  Sacramento Street lots of 41.25 x 62 feet had no parcel at either printed
+  number in 1976 terms; parcel 1009029, built 1977, is exactly 5,115 sq ft.
+  Two 25 x 100 Belgrave Avenue lots are one 5,000 sq ft parcel of 1981. *Where
+  a record prints dimensions and EAS has nothing at the number, sum the lots
+  and look for that area on the block — it is a match the record makes, not a
+  guess.* And write the by-hand resolution into the findings file before
+  `resolve_eas.py manifest`: the resolver's point join had put 3480
+  Sacramento on the 1965 apartment house next door, and a manifest built
+  first would have seeded that page.
+
 - **A modern document can still give a street number the city does not have,
   and the fix is to identify the building rather than repair the number.** The
   1978 San Francisco Civic Center nomination addresses the War Memorial Opera
@@ -2117,11 +2137,13 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
 
 - **Write a page's `data.json` back in the format it came in.** Pages on disk
   are indented by one space or two, and some escape non-ASCII. A publisher
-  script that dumped every page with `indent=2` turned fifty added facts into
-  a 5,000-line diff, and sorting `historical_record` by date moved entries
-  nobody had touched. *Read the indent off the file's second line, keep
-  `ensure_ascii` as the file had it, keep its trailing newline, and append new
-  timeline entries rather than re-sorting — the renderer orders them.*
+  script that dumps every page with `indent=2` turns a one-line addition into a
+  700-line diff on every one-space page, and sorting `historical_record` moved
+  entries nobody had touched. This was paid for in at least five runs and
+  written down four times before the 1975 minutes run paid it again (three of
+  22 edited pages). *Use `research/tools/pagejson.py` — `load` returns the
+  page and its format, `save` writes it back the same way — and append new
+  timeline entries rather than re-sorting; the renderer orders them.*
 
 - **A building's name in the record places what its street number cannot.**
   Six findings in one newspaper batch resolved on `3tsw-4idn`'s `name` field
@@ -2271,13 +2293,8 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   *For a named institution, grep the pages on disk for the name or the street
   block before concluding the corner has been rebuilt*, and check the lot area
   against the record (8,903 sq ft against 93:8 1/4 by 95 settled it).
-- **`data.json` files are not all indented the same way.** Some pages are
-  written with one-space indentation, some with two; a publish script that
-  re-dumps every file with `indent=2` turned four one-line additions into
-  800-line diffs that hide the change from a reviewer. *Read the file's own
-  indentation (the second line of the HEAD version) and write it back the
-  same way.* Relatedly, a path typed by hand from the offset parcel's
-  sf-parcels range (4028) disagreed with EAS's lowest number on the parcel
+- **Take the page's number from EAS, not from the parcel map.** A path typed
+  by hand from the offset parcel's sf-parcels range (4028) disagreed with EAS's lowest number on the parcel
   (4026); the seeder followed EAS and `check.py` flagged the finding.
   *Take the page's number from EAS, not from the parcel map.*
 - **The Chronicling America bulk tarballs are not named what the dossier's
@@ -2334,16 +2351,6 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   no-crossing failure, and fix the geography before reading the batch's real
   output — a batch run against bad geography returns confident-looking
   "no parcel" lines that are indistinguishable from a genuine miss.
-- **`data.json`'s indentation has to be read off the file being edited, not
-  assumed.** A publish script that opens a page, adds one `historical_record`
-  entry and re-dumps with a fixed `indent=2` turns a one-line addition into a
-  700-line diff on every page that was written with `indent=1` — six of
-  fourteen pages in one batch. Read the original file's own indent (checked
-  with a plain `git show HEAD:<path>` diff of line lengths, not assumed) and
-  write back with that same width; `render` doesn't care either way, since it
-  derives `index.html` from the parsed data, not from the source file's
-  formatting, so re-indenting after the fact costs nothing but is easy to
-  forget doing at all.
 - **This container ships without Poppler or Tesseract, and that is not a
   blocker.** An earlier article-10-landmarks session filed "OCR setup" as a
   `needs-human` issue (#437) and stopped with 44 of 50 reports unread. `apt-get
@@ -2787,6 +2794,15 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   `addToAccessFormats=false`. *Before splitting any Internet Archive scan,
   confirm the mapping by finding one known quote on the viewer page a
   citation names.*
+- **A word-count floor for "this page has text" drops the short pages that
+  carry the votes.** Splitting volume 34 of the Planning Commission minutes,
+  a filter keeping pages with 40 or more four-letter words skipped six pages
+  that close a meeting — a resolution number, a roll call, two lines of
+  motion — so six decisions had no page to be read from. Keeping any page
+  that also prints a meeting header ("MINUTES OF THE") brought them back.
+  *Before trusting a text-page filter, list the pages it drops and read a
+  handful; a short page is often the end of something, not nothing.*
+  ([sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))
 - **A record with a block and lot and no street number is unresolved by the
   tool and placeable by hand.** `resolve_eas.py` reads
   `assessor_block_as_recorded` only to choose among parcels an address already
@@ -2821,15 +2837,34 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   that already names it (`check.py --overlap` lists those "by name"); where
   they differ, the named building decides the parcel.*
   ([sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))
-- **A script that writes `data.json` must keep the file's own indent and
-  order.** Pages are written at one-space and two-space indents both; a
-  publisher that dumped every page at `indent=2` and re-sorted its
-  `historical_record` turned a 90-page append into a 13,000-line diff of
-  other sources' entries. *Read the indent off the file, append, and never
-  re-sort a timeline the renderer orders anyway.*
 - **A reader stopped by a usage limit can be resumed, not re-run.** Five of
   thirteen parallel readers on the 1973–74 minutes hit a session limit part-way;
   sending each a message to continue resumed it from its own transcript, and
   all five finished their pages without re-reading. *Check the output file
   for a `_summary` line before trusting a reader is done; a file without one
   is a reader that stopped.*
+- **When EAS has no record of a number, the assessor's roll may still carry
+  it.** The roll's `property_location` keeps a parcel's range as the city once
+  filed it: the 1976 minutes' "5505 Geary Boulevard" is in no EAS row, but
+  the 2025 roll files parcel 1525001 as `5505 5501 GEARY`, and its 3,600 sq ft
+  lot is exactly the 36 x 100 ft corner the record measures. The resolver
+  calls such a number dead and offers neighbours. *Where the record gives a
+  lot size, look the street's neighbouring parcels up on the roll and read
+  `property_location`; a range that contains the dead number, on a lot of the
+  record's area, places it by hand.* The same run used the record's lot area
+  the other way, to refuse an exact EAS join: 1650 Webster joins a 16,246 sq
+  ft lot whose building the roll dates 1974, where the record measured a
+  19,011 sq ft parking lot still open in 1976.
+  ([sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))
+- **DataSF's `data.sfgov.org` now answers with an HTML redirect to
+  `data.sf.gov`.** The repo's tools follow it, but an ad hoc `curl` without
+  `-L` gets a meta-refresh page and a JSON parser fails on it, which reads
+  like an empty or broken dataset. *Use `curl -L`, or query `data.sf.gov`
+  directly.* (2026-10-15)
+- **A quote read from concatenated pages can cross a page break.** Reading a
+  scan in chunks of several OCR pages let twelve of 169 `raw_text` spans run
+  from one page onto the next, so they matched no single cited page. *Re-match
+  every quote to the one page it cites before writing the file — a
+  whitespace-flexible search of the page text — and trim or re-cite any that
+  straddle.* (2026-10-17,
+  [sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))

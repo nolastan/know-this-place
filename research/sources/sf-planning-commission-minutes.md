@@ -6,9 +6,9 @@
 >
 > - **Kind:** meeting minutes (scanned volumes) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 24 of 53 volumes read (July 1968 – December 1974): 6,200
->   pages, 2,413 findings, 1,083 resolved, 978 published. 29 volumes
->   remain — 1975–1980 and 1994–2005.
+> - **Coverage:** 29 of 52 volumes read (July 1968 – December 1977): 8,710
+>   pages, 3,143 findings, 1,499 resolved, 1,369 published. 23 volumes
+>   remain — 1978–1980 and 1994–2005. July–December 1975 is in no volume.
 > - **Local corpus:** `research/corpora/sf-planning-commission-minutes/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -23,10 +23,10 @@
   and **what the staff said was standing on the property** when it decided —
   storeys, units, beds, rooms, the use, the business or institution occupying
   it, whether it was vacant.
-- **Where:** The San Francisco Public Library contributed 53 volumes to the
+- **Where:** The San Francisco Public Library contributed 52 volumes to the
   Internet Archive, digitized under a California State Library Califa/LSTA
   grant. Identifiers are of the form `<n>minutesofsanfran<year>san[f]`, where
-  `<n>` runs 6 to 58 in date order; the volume's own span is in its
+  `<n>` runs 6 to 58 in date order, skipping 31; the volume's own span is in its
   `volume` metadata field (`July-Sept 1968`), never in `date`, which is
   usually empty.
 
@@ -38,9 +38,15 @@
 | 20–23 | January – December 1972, one quarter each | **read in full** 2026-10-11 |
 | 24–27 | January – December 1973, one quarter each | **read in full** 2026-10-12 |
 | 28–29 | January – December 1974, one half each | **read in full** 2026-10-12 |
-| 30–39 | 1975–1980 (halves, then whole years) | unread |
+| 30 | January – June 1975 | **read in full** 2026-10-13 |
+| — | July – December 1975 | in no volume: the sequence skips 31 |
+| 32 | January – June 1976 | **read in full** 2026-10-14 |
+| 33 | July – December 1976 | **read in full** 2026-10-15 |
+| 34 | January – June 1977 | **read in full** 2026-10-16 |
+| 35 | July – December 1977 (`35minutesofsanfran1977sa`, no final `n`) | **read in full** 2026-10-17; its last page breaks off inside the 22 December meeting |
+| 36–39 | 1978 – 1980 (36–37 are Jan–Mar and Jun–Nov 1978, then whole years) | unread |
 | 40–58 | 1994–2005 | unread |
-| — | 1981–1993 | in no volume; 31 is missing from the sequence |
+| — | 1981–1993 | in no volume |
 | — | before July 1968 | not in this collection. The Commission dates from 1942 |
 
 - **How to get at it:** `archive.org` serves everything over plain HTTPS with
@@ -206,6 +212,105 @@
     residents, years in operation, operating organisation — in one sitting; the
     1973 and 1974 volumes hold about thirty such cases. They are a use of the
     building and are published; no resident is ever named.
+  - **1975 is the year the Board overrides the Commission.** Three of the
+    half-year's Board actions reported in the minutes reverse it — the Atherton
+    House and Goodman Building landmark designations it had refused, and a
+    Bryant Street wrecking yard it had denied — all "on Monday", undated, and
+    framed "by" the reporting meeting. They are worth publishing where the page
+    carries the Commission's refusal: the override is the new fact.
+  - **A header and its report can print numbers a thousand apart.** R75.5's
+    header reads "1050 Kearny Street, at Chestnut" and the staff report "1850
+    Kearny Street, 90 feet south of Francisco"; the printed Lot 3, Block 56
+    settled it for 1850. Put the block and lot on such findings and read the
+    report's "matches the parcel's block" line.
+  - **EAS can join a street of the wrong type.** "20 Edgar Place" joined to
+    20 EDGAR AVE, the only Edgar in EAS, with the mismatch noted in the method
+    but the finding resolved. Read every "EAS files this street as …, not …"
+    line; on a one-line mention, take it back to unresolved.
+  - **The residential care homes keep coming.** The 1975 volume has eight
+    more — Lake, La Playa, 12th Avenue, Fulton, Broderick, Randolph — and the
+    Commission's one-home-per-block-face guideline refused one of them (24
+    Randolph, across from the 24-person home at 27–45 Randolph).
+- **1976 changes the Commission and its minutes.** Mayor Moscone's new
+  Commission took office at the special meeting of 3 February 1976 (no
+  regular meetings in January after the 7th; 22 January lacked a quorum).
+  From then the minutes run long: whole hearings are verbatim testimony on
+  institutional master plans, the parapet ordinance, the tree ordinance and
+  the citywide residential rezoning, and none of it locates a building. Of
+  519 pages with text, about 300 hold no property at all. Budget the reader's
+  time by meetings, not pages.
+- **Discretionary review on commercially zoned land is new in 1976.** The
+  Commission refused the 316-318 Laurel psychiatrists' offices on C-2 land
+  and steered the two Sacramento Street corner lots into one building with
+  parking. The minutes name the lot split (recorded 8 July 1975) that started
+  it, which is the date the parcel history needs.
+- **A record's lots can be found by area after they were merged.** The two
+  Sacramento Street lots at Laurel, 41.25 x 62 feet each, have no parcel at
+  either printed number; parcel 1009029 (3490 Sacramento, built 1977) is
+  exactly 5,115 square feet — the two together. Belgrave Avenue's two 25-foot
+  lots are likewise 65 Belgrave's 5,000-square-foot lot of 1981. Where the
+  minutes print lot dimensions and EAS has nothing, add the lots up.
+- **A printed block and lot can outlive the street number.** "Lot 27, Block
+  2626, commonly known as 7 Vulcan Stairway": EAS has no 7 Vulcan, but the
+  lot survives as 60 Lower Terrace, and the minutes say it fronts Lower
+  Terrace too. Look the lot up before calling the number dead.
+- **Speakers are not staff.** 1976 hearings are dense with neighbourhood
+  testimony that dates buildings ("most of the cottages were built in 1906",
+  "a nurses' residence built in 1963 and torn down six years later"). Take
+  dates and descriptions from the staff report or the resolution; a speaker's
+  date goes in `reader_note` or is declined.
+- **The second half of 1976 is the interim-zoning half-year.** The residential
+  rezoning initiated on 20 May 1976 made every building over 30 feet in a
+  proposed RH district, and every second unit on a large RH-1 lot, a matter
+  for discretionary review until the new code passed; about a third of the
+  half-year's property cases are those (Foerster, Miguel, Ashbury, Buena Vista
+  East, Laguna). They print the lot, what stands on it and the decision, and
+  they resolve well. The rest is fast-food and branch-bank guidelines (two
+  Doggie Diners, Bell Savings, Sumitomo Bank), billboard ordinances and the
+  Inner Richmond traffic barriers, which locate nothing.
+- **The Board of Permit Appeals is reported like the Board of Supervisors** —
+  "on the previous evening", no date of its own — and it overruled the
+  Commission at least twice this half-year (the 25th Avenue Doggie Diner on
+  rehearing). Frame it "by" the reporting meeting, as for the Board.
+- **Case numbers repeat within the half-year.** LM76.3 is both the Art
+  Institute and the Jessie Street Substation; DR76.12 is both 2151 Laguna and
+  370 Monterey; DR76.30 heads both 937 Union and 326 12th Avenue. Link
+  hearings by address.
+- **A dead number can live on the roll, and a record's lot size picks the
+  parcel.** 5505 Geary has no EAS row, but the roll files parcel 1525001 as
+  `5505 5501 GEARY` on exactly the 3,600 sq ft the record measures; the
+  printed Lot 1, Block 1071 put "49 Masonic" on 3 Masonic by its 55,303 sq ft;
+  and a 2,763 sq ft disagreement threw out 1650 Webster's exact EAS join.
+  Where the record prints a lot size or a block and lot, check them before
+  calling a number dead or a join good.
+- **The second half of 1977 is the condominium-conversion half-year.** The
+  1975 Subdivision Code amendments sent every conversion to the Commission
+  for a Master Plan finding, and from October the hearings fill whole
+  evenings: 950 Pine, 139 Commonwealth, 1990 Green (refused, then reversed by
+  the Board), Diamond Heights Village (396 units, the first over fifty, its
+  refusal voided by the City Attorney because the Commission ruled after the
+  50-day limit), Laguna O'Farrell (150 units) and five more on 22 December.
+  The buildings are condominiums today, so most of these stay unplaced
+  (#446); a record that names the rental building is still worth reading for
+  its rents and unit mix, which nothing else holds.
+- **A tie is a refusal, and the minutes say so.** "A tie vote on any matter
+  … shall be deemed to be a disapproval" — the Performing Arts garage
+  resolution and the Diamond Heights Village finding both failed 3-3. Write
+  the decision as a refusal on a tie, not as no decision.
+- **Resolution numbers repeat in the minutes.** 7834 is printed for both 333
+  Market (3 November) and Diamond Heights Village (10 November), and 7778 for
+  both 180 Montgomery and the Four Embarcadero Center resolution; keep the
+  number as printed and say so in `reader_note`.
+- **A record's own lot catches a wrong number.** The 55, 75 and 95 Holyoke
+  houses joined to 55 Holyoke on another block; the printed Lots 34, 35 and 45
+  of Block 6204 are 1455 and 1475 Holyoke today, and a commissioner at the
+  hearing had doubted the numbers. The Gartland Hotel's "3070 16th Street"
+  has no EAS row, and its printed Lot 16 of Block 3554 is 3080-3092 16th.
+- **A frontage number can join the wrong parcel of a big site.** "1850 Ocean
+  Avenue (former Homewood Terrace site)" joins 3283124, a 1985 store of
+  87,555 sq ft on the Ocean Avenue frontage; the record's 7.5-acre site
+  behind it is many lots now. Compare the record's acreage with the parcel's
+  before accepting a join on a large site.
 - **People:** The minutes are *full* of them: applicants, their attorneys and
   architects, objecting neighbours, improvement-club officers, the
   commissioners and the staff, all named in the narrative of every hearing.
@@ -235,9 +340,18 @@
   into `findings/sf-planning-commission-minutes/minutes-1972.json`. Nothing
   of those volumes is known to remain unread; volumes 24–27, every meeting of
   1973, 4 January to 20 December, into `minutes-1973.json`; volumes 28–29,
-  every meeting of 1974, 3 January to 19 December, into `minutes-1974.json`.
-  **Next: volumes 30–33 (1975–1976)**, two years a run (about 1,700 text
-  pages, thirteen readers of ~130 pages each from the Reader spec below);
+  every meeting of 1974, 3 January to 19 December, into `minutes-1974.json`;
+  volume 30, every meeting of January – June 1975, into `minutes-1975.json`;
+  volume 32, every meeting of January – June 1976, into
+  `minutes-1976-h1.json`; volume 33, every meeting of July – December
+  1976, into `minutes-1976-h2.json`; volume 34, every meeting of January –
+  June 1977, into `minutes-1977-h1.json`; volume 35, every meeting of July –
+  December 1977, into `minutes-1977-h2.json` (the scan ends inside the 22
+  December meeting). **Next: volume 36 (`36minutesofsanfran1978san`,
+  January – March 1978)** into `minutes-1978-q1.json`, and volume 37 (June –
+  November 1978) after it — a quarter volume is a short night, so a run may
+  take both; a half-year volume is one nightly run by a single reader
+  (volumes 32–35, 519 to 572 text pages, all fitted);
   the 1994–2005 volumes are a
   different kind of document (by then the Commission's own case reports are
   online and indexed) and are worth sampling before a run is sized on them.
@@ -317,6 +431,101 @@
   printed its "placed by point" list, an indentation bug fixed in this run.
   Five of the thirteen readers were stopped by a usage limit part-way and
   resumed from their own transcripts, losing nothing.)
+  **2026-10-13** (volume 30, January – June 1975: 350 OCR pages with text out
+  of 714 viewer pages, read in one session by a single reader with no
+  sub-agents — the nightly-run shape; 23 meetings; 102 findings — 53
+  decisions, 37 statements of what stood on a property, 7 landmark actions, 5
+  dated past facts. 63 resolved: 53 by the EAS join, 10 by name on a building
+  the site already carries. 39 unresolved, 26 of them with no street number, 4
+  condominiums waiting on #446. 61 published on 40 pages, 18 of them seeded; 2
+  declined as already on the page. One conflict stated: 361 Oak Street, 1868
+  by the owner's account against the roll's 1885. What the pass learned: the
+  July–December 1975 volume does not exist in the collection; a single reader
+  with a page filter (skip any page with fewer than 40 four-letter words — the
+  bleed-through versos) reads a half-year volume in one session; a header can
+  print a number a thousand off its report; EAS will join Edgar Place to Edgar
+  Avenue; and a publish script re-indented three one-space pages, a trap
+  LESSONS.md had recorded four times — `research/tools/pagejson.py` now does
+  the load and save so the next run cannot.)
+  **2026-10-14** (volume 32, January – June 1976: 519 OCR pages with text out
+  of 582 viewer pages, read in one session by a single reader with no
+  sub-agents; 28 meetings; 114 findings — 57 statements of what stood on a
+  property, 47 decisions, 6 dated past facts, 4 landmark actions. 69 resolved:
+  54 by the EAS join, 15 by hand — 2 by the record's own block and lot, 3 by
+  adding up the lots the record measures, 3 past an EAS stray, 7 by name on a
+  building a page already carries. 45 unresolved, 29 with no street number, 7
+  condominiums waiting on #446, 9 at a number with no parcel. 65 published on
+  43 pages, 13 of them seeded; 4 declined. Four conflicts stated in unknowns.
+  What the pass learned: the new 1976 Commission's minutes are half testimony
+  that locates nothing; merged lots are found by area and dead numbers by the
+  printed lot; and a hand override of the resolver must be written before
+  `manifest`, or the manifest seeds the resolver's wrong parcel — here the
+  point join had put 3480 Sacramento on the 1965 apartment house next door.)
+  **2026-10-15** (volume 33, July – December 1976: 525 OCR pages with text out
+  of 590 viewer pages, read in one session by a single reader with no
+  sub-agents; 30 meetings, 23 regular and 7 special; 140 findings — 71
+  decisions, 55 statements of what stood on a property, 8 dated past facts,
+  6 landmark designations. 73 resolved: 61 by the EAS join (one re-filed by hand under
+  portola), 12 by hand — 2 by the roll's own range and the record's lot area
+  (5505 Geary), 2 by the record's printed lot (49 Masonic is 3 Masonic), 8 by
+  name on a building a page already carries (Soko Hardware, Stonestown, the
+  Abner Phelps House, the Southern Pacific hospital, Pacific Medical Center).
+  67 unresolved: 30 with no street number, 14 condominiums waiting on #446,
+  15 at a number EAS no longer has (two of them "No. 9 Fisherman's Wharf",
+  which is no street in EAS), 6 where the record's range spans parcels today,
+  2 where the record's lot area refused the join. 69
+  published on 44 pages, 20 of them seeded; 4 declined as already on the
+  page. One conflict stated (1455 Market's construction date). What the pass
+  learned: the roll's `property_location` keeps numbers EAS has dropped; a
+  record's lot area can refuse an exact join as well as confirm one; and
+  `data.sfgov.org` now redirects to `data.sf.gov`.)
+  **2026-10-16** (volume 34, January – June 1977: 572 OCR pages with text out
+  of 748 viewer pages, read in one session by a single reader with no
+  sub-agents; 25 meetings, 6 January to 30 June; 205 findings — 104
+  decisions, 73 statements of what stood on a property, 15 landmark
+  designations, 13 dated past facts. 125 resolved: 107 by the EAS join, 18 by
+  hand — on a building a page already carries (the Palace of Fine Arts, the
+  Ferry Building, the City of Paris, Pacific Medical Center, the Key Monument,
+  Seward mini-park), by the record's lot (3398 22nd Street, 316 Laurel), and
+  six Grove Street findings on the Performing Arts garage parcel that
+  replaced them. 80 unresolved: 24 with no street number, 20 at a number EAS
+  does not hold, 11 where the record's range spans parcels today, 11 where
+  EAS does not join to one parcel, 7 condominiums waiting on #446, 7 by hand
+  (3733 Sacramento joins the neighbour's three flats, not the hospital
+  annex the record means; 501 Washington is merged into a 1930 building;
+  400 Jefferson is a multi-business Port parcel). 112 published on 68 pages,
+  30 of them seeded; 13 declined as already on the page or duplicated
+  within the batch. What the pass learned: the text-page filter must keep a
+  short page that carries a meeting header — six final pages holding votes
+  fell under the 40-word floor; a record's header and its resolution can
+  print different numbers for one property (38/998 Egbert, 1931/1981
+  Funston, 3393/3398 22nd Street), so read both before resolving; and
+  several buildings cleared for one later structure resolve to that one
+  parcel, so their identical findings are duplicates on the page and one
+  carries the count.)
+  **2026-10-17** (volume 35, July – December 1977: 544 OCR pages with text
+  out of 580 viewer pages, read in one session by a single reader with no
+  sub-agents; 26 meetings, 23 regular and 3 special (the two joint Great
+  Highway hearings, which locate nothing, and the residential-zoning
+  presentation); 169 findings — 98 decisions, 53 statements of what stood on
+  a property, 14 dated past facts, 4 landmark actions. 88 resolved: 71 by the
+  EAS join, 17 by hand — by name on a building a page already carries (the
+  Castro Theatre, Calvary Presbyterian Church by its 33,497 sq ft lot, Chinese
+  Hospital, the Jewish Community Center, the Performing Arts garage parcel)
+  and by the record's printed lot (725 and 777 Brotherhood Way, the Fitzhugh
+  Building's corner, the Gartland Hotel's site). 81 unresolved: 39 located
+  only by a corner, a block or a name, 18 condominiums today (#446), 17 at a
+  number EAS does not hold, 5 ranges now split across parcels, and 2 sites
+  whose joins the record's lots or acreage refused. 84 published on 51 pages,
+  22 of them seeded (one seeded page, 1850 Ocean, was withdrawn when the
+  join proved to be the frontage store); 2 declined as already on the page.
+  Three conflicts stated in unknowns (950 Pine's year and units, Calvary's
+  education-building dates, Mount Zion's Post and Scott building). What the
+  pass learned: reading the volume in 45,000-character chunks put twelve
+  `raw_text` quotes across a page break, so the quote has to be re-matched
+  to one page before the findings file is written — the reader spec now says
+  so; condominium conversions are the half-year's business and mostly stay
+  unplaced; and a record's printed lot or acreage overruled three joins.)
 
 ## Reader spec
 
@@ -339,11 +548,14 @@ instead, and change it here when a run learns something a reader needs.
   units, beds, floor area, use, the business or institution, a vacant lot),
   `site history` (a dated past fact about the building, at the date and
   precision the page prints), `designation` (landmark or district action).
+- **A speaker is not the staff.** Building dates and descriptions come from
+  the staff report or the resolution; a date or claim from an applicant,
+  neighbour or advocate goes in `extra.reader_note`, not in `description`.
 - **A date or number is what the page prints.** Never compute one — not from
   an age, a sequence of resolution numbers or a neighbouring entry; working
   goes in `extra.reader_note`.
-- **A Board of Supervisors action reported without its own date** takes the
-  reporting meeting's date and is framed "By 5 July 1973, the Board of
+- **A Board of Supervisors or Board of Permit Appeals action reported without
+  its own date** takes the reporting meeting's date and is framed "By 5 July 1973, the Board of
   Supervisors had approved…"; with its own date, use that.
 - **A decision reached at a later meeting belongs to that meeting**; link the
   hearing with `extra.case`, and put the page carrying the address header in
@@ -367,7 +579,9 @@ instead, and change it here when a run learns something a reader needs.
   where printed.
 - `raw_text` is the shortest verbatim span (≤ 250 characters, copied exactly
   from the page file) that justifies the fact, chosen to contain no personal
-  name. It is checked mechanically against the page.
+  name. It is checked mechanically against the page. **It must sit on one
+  page** — a reader working from concatenated pages will pick spans that run
+  across a page break, and `page` must be the page the span is on.
 - **No personal name in any field**: not applicants, owners, attorneys,
   objectors, improvement-club officers, commissioners or staff. The architect
   of a building may go in `extra.reader_note` as "architect: <name>". A

@@ -32,6 +32,7 @@ Diamond and Chenery and evaluated eight of them in detail.
 - [Laidley Street](laidley-street/) — 1 building, built 1900.
 - [Lippard Avenue](lippard-avenue/) — 1 building.
 - [Malta Drive](malta-drive/) — 1 building, built 1974.
+- [Miguel Street](miguel-street/) — 1 building, built 1978.
 - [Milton Street](milton-street/) — 2 buildings, built 1908–1925.
 - [Monterey Boulevard](monterey-boulevard/) — 1 building, built 1900.
 - [Portola Drive](portola-drive/) — 1 building.
