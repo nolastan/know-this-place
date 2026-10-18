@@ -6,9 +6,10 @@
 >
 > - **Kind:** meeting minutes (scanned volumes) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 29 of 52 volumes read (July 1968 – December 1977): 8,710
->   pages, 3,143 findings, 1,499 resolved, 1,369 published. 23 volumes
->   remain — 1978–1980 and 1994–2005. July–December 1975 is in no volume.
+> - **Coverage:** 30 of 52 volumes read (July 1968 – March 1978): 8,887
+>   pages, 3,182 findings, 1,511 resolved, 1,381 published. 22 volumes
+>   remain — June 1978 – 1980 and 1994–2005. July–December 1975 is in no
+>   volume, and nor is the regular meeting of 16 March 1978.
 > - **Local corpus:** `research/corpora/sf-planning-commission-minutes/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -44,7 +45,8 @@
 | 33 | July – December 1976 | **read in full** 2026-10-15 |
 | 34 | January – June 1977 | **read in full** 2026-10-16 |
 | 35 | July – December 1977 (`35minutesofsanfran1977sa`, no final `n`) | **read in full** 2026-10-17; its last page breaks off inside the 22 December meeting |
-| 36–39 | 1978 – 1980 (36–37 are Jan–Mar and Jun–Nov 1978, then whole years) | unread |
+| 36 | January – March 1978 | **read in full** 2026-10-18; it holds no minutes for the regular meeting of 16 March 1978 |
+| 37–39 | June – November 1978, then 1979 and 1980 whole | unread |
 | 40–58 | 1994–2005 | unread |
 | — | 1981–1993 | in no volume |
 | — | before July 1968 | not in this collection. The Commission dates from 1942 |
@@ -311,6 +313,21 @@
   87,555 sq ft on the Ocean Avenue frontage; the record's 7.5-acre site
   behind it is many lots now. Compare the record's acreage with the parcel's
   before accepting a join on a large site.
+- **January – March 1978 is the condominium-conversion quarter.** Of 19
+  meetings, 8 are special hearings on the citywide residential rezoning and
+  conversion policy, and the regular meetings fill with conversion maps:
+  1097 Green tied 3-3 (a refusal), 1101 Green (the Bellaire Tower, 65 units)
+  refused 3-4, both reversed by the Board within a month; on 23 February the
+  Commission asked the Board for a 90-day moratorium on conversion
+  applications. Every converted building is a condominium today, and two of
+  them hide it — see the next caution.
+- **A condominium's unit parcel can look like the building.** 1097 Green
+  Street's EAS row joins one parcel, 0126031, which the roll files as `1896
+  LEAVENWORTH ST0000` — the building's other frontage, unit `0000` — and 439
+  Greenwich's 0087029 is `0439 GREENWICH ST0000`. Neither names a unit, so
+  the resolver's sibling test let both through; but both have a lot area of
+  zero. The resolver now treats zero lot area on a condominium-class parcel
+  as a unit. The existing 1097 Green page sits on that unit parcel (#228).
 - **People:** The minutes are *full* of them: applicants, their attorneys and
   architects, objecting neighbours, improvement-club officers, the
   commissioners and the staff, all named in the narrative of every hearing.
@@ -347,10 +364,13 @@
   1976, into `minutes-1976-h2.json`; volume 34, every meeting of January –
   June 1977, into `minutes-1977-h1.json`; volume 35, every meeting of July –
   December 1977, into `minutes-1977-h2.json` (the scan ends inside the 22
-  December meeting). **Next: volume 36 (`36minutesofsanfran1978san`,
-  January – March 1978)** into `minutes-1978-q1.json`, and volume 37 (June –
-  November 1978) after it — a quarter volume is a short night, so a run may
-  take both; a half-year volume is one nightly run by a single reader
+  December meeting); volume 36, every meeting of January – March 1978 the
+  scan holds, into `minutes-1978-q1.json`. **Next: volume 37
+  (June – November 1978; take its identifier from the advanced-search
+  listing)** into
+  `minutes-1978-h2.json` — volume 36 took a single reader under half a
+  session (177 text pages), so a quarter volume and its successor fit one
+  run; a half-year volume is one nightly run by a single reader
   (volumes 32–35, 519 to 572 text pages, all fitted);
   the 1994–2005 volumes are a
   different kind of document (by then the Commission's own case reports are
@@ -526,6 +546,27 @@
   to one page before the findings file is written — the reader spec now says
   so; condominium conversions are the half-year's business and mostly stay
   unplaced; and a record's printed lot or acreage overruled three joins.)
+  **2026-10-18** (volume 36, January – March 1978: 177 OCR pages with text
+  out of 276 viewer pages (278 scanned leaves), read in one session by a
+  single reader with no sub-agents; 19 meetings, 11 regular and 8 special —
+  the joint open-space hearing with the Recreation and Park Commission, the
+  Davies Medical Center evening hearing, the condominium-conversion policy
+  hearing and five district hearings on the proposed residential zoning map,
+  none of which locates a building; the regular meeting of 16 March is not in
+  the scan. 39 findings — 36 decisions, 2 statements of what stood on a
+  property, 1 landmark action. 12 resolved: 8 by the EAS join, 4 by hand — by
+  name on a building a page already carries (CPMC Davies, the Western
+  Merchandise Mart, the Abner Phelps House) and by the record's own lot (3904
+  lot 2, at Bryant and Alameda). 27 unresolved: 15 condominiums today (#446),
+  6 with no street number, 3 at a number EAS does not hold, 2 lots split since,
+  and 1850 Ocean's frontage join again refused. 12 published on 12 pages, 3 of
+  them seeded; none declined. What the pass learned: the quarter is the
+  condominium-conversion quarter — 13 of the 39 findings are conversions; the
+  four of January passed unanimously, the seven of February all split, and the Board of Supervisors reversed
+  its refusals of 1097 and 1101 Green within a month; two of those joins came
+  back as clean exact matches on unit parcels the roll files under `0000`
+  with zero lot area, and `resolve_eas.py` now refuses a condominium-class
+  parcel with no lot area even where EAS holds its number on that one parcel.)
 
 ## Reader spec
 

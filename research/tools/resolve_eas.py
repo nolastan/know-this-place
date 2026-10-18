@@ -689,13 +689,20 @@ def condo_warning(city: City, parcel: str, name: str = "", stype: str = "",
     roll knew: `property_location` ends in the unit designation, `AV0105`, one flat
     of the thirty-nine. A whole parcel ends in `0000`. So the hatch closes whenever
     the roll names a unit, and the stack is deferred whether or not EAS lists it.
+
+    **And whenever the lot has no area.** 1097 Green Street and 439 Greenwich
+    Street (the 1978 minutes) are condominiums whose unit parcels the roll files
+    under `0000`, one of them under the building's other frontage, so neither
+    names a unit; but each has a lot area of zero, which an airspace unit has and
+    a whole building never does.
     """
     roll = city.roll.get(parcel) or {}
     if "condominium" not in (roll.get("property_class_code_definition") or "").lower():
         return None
     unit = (roll.get("property_location") or "")[UNIT_AT:].strip()
     names_a_unit = bool(unit) and unit.strip("0") != ""
-    if name and matched and not names_a_unit:
+    no_area = (roll.get("lot_area") or "").strip() in ("0", "0.0")
+    if name and matched and not names_a_unit and not no_area:
         siblings = set()
         for n in matched:
             for r in city.rows_for(name, stype, n):

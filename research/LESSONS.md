@@ -2868,3 +2868,16 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   whitespace-flexible search of the page text — and trim or re-cite any that
   straddle.* (2026-10-17,
   [sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))
+- **A condominium's unit parcel can pass as the building when the roll files
+  it under unit `0000`.** `resolve_eas.py` let a condominium-class parcel
+  through as a building whenever EAS held the recorded number on that one
+  parcel and the roll's `property_location` named no unit. Two 1978
+  conversions slipped through that way: 1097 Green's unit parcel is filed as
+  `1896 LEAVENWORTH ST0000`, the building's other frontage, and 439
+  Greenwich's as `0439 GREENWICH ST0000` — and the site already had a page on
+  the first. Both have a lot area of zero, which no whole building has. The
+  resolver now defers a condominium-class parcel with zero lot area whatever
+  its unit suffix. *On a batch of condominium conversions, read the roll's
+  `lot_area` and class for every join, not only the ones the tool flags.*
+  (2026-10-18,
+  [sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))
