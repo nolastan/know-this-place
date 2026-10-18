@@ -1,0 +1,98 @@
+{
+  "address": "243–245 Onondaga Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/outer-mission/onondaga-avenue/243/",
+  "apn": "6951031",
+  "block": "6951",
+  "lot": "031",
+  "eas_baseid": "409488",
+  "coordinates": {
+    "lat": 37.722728,
+    "lng": -122.442265
+  },
+  "address_range": "243–245",
+  "street_numbers_on_parcel": [
+    "243",
+    "245"
+  ],
+  "parcel": {
+    "stories": 1,
+    "rooms": 1,
+    "bathrooms": 1,
+    "lot_area_sqft": 4800,
+    "building_area_sqft": 400,
+    "use": "Industrial",
+    "property_class": "Industrial Warehouse",
+    "construction_type_code": "D",
+    "zoning": "NC-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Mission Terrace",
+    "analysis_neighborhood": "Outer Mission",
+    "property_location_raw": "0000 0243 ONONDAGA            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 527378,
+    "assessed_improvement_value": 150660,
+    "last_sale_date": "2001-06-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "8202120",
+      "type": "new construction wood frame",
+      "status": "expired",
+      "filed": "1982-03-22",
+      "status_date": "1983-08-23",
+      "estimated_cost": 446300,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ONONDAGA&street_type=AVE&address_number=243",
+      "retrieved": "2026-10-18"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6951031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-18"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6951&lot=031",
+      "retrieved": "2026-10-18"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6951031",
+      "retrieved": "2026-10-18"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1978-02-02",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 2 February 1978",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/36minutesofsanfran1978san/page/n98/mode/1up",
+      "retrieved": "2026-10-18"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1978-02-02",
+      "kind": "planning decision",
+      "description": "The City Planning Commission unanimously refused to reclassify the rear of the property from R-1 to C-2 for a contractor's office and shop with dwellings above, so that the lot could go residential under the citywide rezoning (Resolution 7886).",
+      "source": "sf-planning-commission-minutes-1978-02-02"
+    }
+  ]
+}
