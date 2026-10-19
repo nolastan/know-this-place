@@ -6,10 +6,11 @@
 >
 > - **Kind:** meeting minutes (scanned volumes) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 30 of 52 volumes read (July 1968 – March 1978): 8,887
->   pages, 3,182 findings, 1,511 resolved, 1,381 published. 22 volumes
->   remain — June 1978 – 1980 and 1994–2005. July–December 1975 is in no
->   volume, and nor is the regular meeting of 16 March 1978.
+> - **Coverage:** 31 of 52 volumes read (July 1968 – November 1978): 9,011
+>   pages, 3,221 findings, 1,538 resolved, 1,407 published. 21 volumes
+>   remain — 1979, 1980 and 1994–2005. July–December 1975 is in no
+>   volume, nor is the regular meeting of 16 March 1978, and volume 37
+>   holds only 17 of June – November 1978's meetings.
 > - **Local corpus:** `research/corpora/sf-planning-commission-minutes/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -46,7 +47,8 @@
 | 34 | January – June 1977 | **read in full** 2026-10-16 |
 | 35 | July – December 1977 (`35minutesofsanfran1977sa`, no final `n`) | **read in full** 2026-10-17; its last page breaks off inside the 22 December meeting |
 | 36 | January – March 1978 | **read in full** 2026-10-18; it holds no minutes for the regular meeting of 16 March 1978 |
-| 37–39 | June – November 1978, then 1979 and 1980 whole | unread |
+| 37 | June – November 1978 (`volume` "June-Nov 1978") | **read in full** 2026-10-19; it holds only 17 meetings — no regular meeting of June, and none of 6, 13 and 27 July, 31 August, 21 and 28 September, 12, 19 and 26 October, or 2 and 30 November |
+| 38–39 | 1979 and 1980 whole | unread |
 | 40–58 | 1994–2005 | unread |
 | — | 1981–1993 | in no volume |
 | — | before July 1968 | not in this collection. The Commission dates from 1942 |
@@ -365,13 +367,15 @@
   June 1977, into `minutes-1977-h1.json`; volume 35, every meeting of July –
   December 1977, into `minutes-1977-h2.json` (the scan ends inside the 22
   December meeting); volume 36, every meeting of January – March 1978 the
-  scan holds, into `minutes-1978-q1.json`. **Next: volume 37
-  (June – November 1978; take its identifier from the advanced-search
-  listing)** into
-  `minutes-1978-h2.json` — volume 36 took a single reader under half a
-  session (177 text pages), so a quarter volume and its successor fit one
-  run; a half-year volume is one nightly run by a single reader
-  (volumes 32–35, 519 to 572 text pages, all fitted);
+  scan holds, into `minutes-1978-q1.json`; volume 37, the 17 meetings of
+  June – November 1978 the scan holds, into `minutes-1978-h2.json`.
+  **Next: volume 38 (1979, `38minutesofsanfran1979san`)** into
+  `minutes-1979.json` — volumes 36 and 37 took a single reader under half a
+  session each (177 and 124 text pages), so a short volume and its
+  successor fit one run; a half-year volume is one nightly run by a single
+  reader (volumes 32–35, 519 to 572 text pages, all fitted). Volume 38 is a
+  whole year and may need to be split across two runs — size it by its text
+  pages first;
   the 1994–2005 volumes are a
   different kind of document (by then the Commission's own case reports are
   online and indexed) and are worth sampling before a run is sized on them.
@@ -567,6 +571,32 @@
   back as clean exact matches on unit parcels the roll files under `0000`
   with zero lot area, and `resolve_eas.py` now refuses a condominium-class
   parcel with no lot area even where EAS holds its number on that one parcel.)
+  **2026-10-19** (volume 37, June – November 1978: 124 OCR pages with text
+  out of 246 viewer pages (248 scanned leaves), read in one session by a
+  single reader with no sub-agents; 17 meetings — the four June evening
+  hearings that closed the citywide residential rezoning (adopted 27 June,
+  Resolutions 7995–7997, 47 pages that locate almost nothing), nine regular
+  meetings from 20 July to 16 November, and the Neiman-Marcus and Levi's
+  Plaza draft-EIR hearings of 14 and 21 November, which are lists of
+  speakers. 39 findings — 26 decisions, 11 statements of what stood on a
+  property, 2 dated past facts. 27 resolved: 22 by the EAS join, 5 by hand —
+  the de Young's ramp on the museum's place page by Golden Gate Park's block
+  1700, and by the record's own lot 825 Brotherhood Way (the school and
+  church site between 777 and 855), the Quality Inn at 2775 Van Ness (two
+  findings; Lot 29 is merged into Lot 30) and 1401 Judah's station, which
+  the city now files as 1401 19th Avenue. 12 unresolved: 5 condominiums
+  today (#446) — four conversions and 3239 Mission's new seven-unit
+  building — 3 with no number (Walden House, Gibraltar Savings' West Portal
+  corner, Pier 23), 1 multi-lot site (the BART lots on Santa Rosa Avenue), 2 at numbers EAS no longer holds, and
+  1373-79 47th Avenue's two lots taken back by hand. 26 published on 25
+  pages, 12 of them seeded; 1 declined (117 Broad, the owner-resident's own
+  testimony). What the pass learned: the volume's span label is not its
+  content — it skips most of July, September and October; seven
+  non-conforming service stations on 19th Avenue were heard as one package
+  on 14 September and continued, so they are occupancy facts, not
+  decisions; and a reader who copies one of a record's two lots into
+  `assessor_lot_as_recorded` hands the resolver a choice the record never
+  made — the reader spec now says to leave it empty.)
 
 ## Reader spec
 
@@ -613,7 +643,10 @@ instead, and change it here when a run learns something a reader needs.
   `extra.assessor_block_as_recorded` / `assessor_lot_as_recorded` (block 4
   digits, lot 3), a named building in `extra.building_name`, a bearing in
   `side`, `cross_street_name`, `direction`, `offset_ft`. Put the block and lot
-  on numbered findings too, where printed for that property.
+  on numbered findings too, where printed for that property. **Several
+  lots printed?** Put the block alone and the lots in
+  `extra.assessor_lots_as_recorded` (`"10A; 11"`); the resolver treats the
+  lot field as the record's choice of one parcel.
 - `extra.record_date` is always the meeting date.
 - `description` in your own words, past tense, one or two sentences; never
   refer to the source ("the minutes say", "the staff report"); include the vote

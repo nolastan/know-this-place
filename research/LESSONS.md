@@ -2881,3 +2881,15 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   `lot_area` and class for every join, not only the ones the tool flags.*
   (2026-10-18,
   [sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))
+- **A record that prints two lots has no single lot to put in the lot field.**
+  `resolve_eas.py` reads `assessor_lot_as_recorded` as the record's own choice
+  of parcel and uses it to pick one parcel out of a recorded range ("the
+  record names assessor block 1802 lot 011 itself, which is 1802011, so that
+  is the parcel taken"). A 1978 rezoning of "1373-79 47th Avenue … Lots 10A
+  and 11" came back resolved on lot 11 because the reader had copied the
+  second lot into the field — a choice the record never made, and the two
+  lots are two parcels today. *Where a record prints several lots, put only
+  the block in `assessor_block_as_recorded`, list the lots in
+  `extra.assessor_lots_as_recorded`, and leave `assessor_lot_as_recorded`
+  empty unless one lot is the building the fact is about.* (2026-10-19,
+  [sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))

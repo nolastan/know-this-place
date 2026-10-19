@@ -1,0 +1,165 @@
+{
+  "address": "2333 Vallejo Street, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/vallejo-street/2333/",
+  "apn": "0563024",
+  "block": "0563",
+  "lot": "024",
+  "eas_baseid": "285362",
+  "coordinates": {
+    "lat": 37.79488,
+    "lng": -122.435567
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 5,
+    "bedrooms": 3,
+    "lot_area_sqft": 7562,
+    "building_area_sqft": 5444,
+    "basement_area_sqft": 1094,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "0000 2333 VALLEJO             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 257585,
+    "assessed_improvement_value": 339356
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201407070611",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-07-07",
+      "status_date": "2015-04-07",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "reconstruct (e) rear stair & landing @ grade. dryrot repair ( in kind). n/a maher ordinance",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201406279875",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2014-06-27",
+      "status_date": "2023-12-27",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "replace slab at rear of building, foundation work for partial replacement of existing deteriorated foundation with new footings, new finsih slab to match existing slab on grade elevation. n/a ordinance #155-13.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201404092840",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-04-09",
+      "status_date": "2015-04-07",
+      "estimated_cost": 15000,
+      "revised_cost": 45000,
+      "description": "install 2 new bathrooms on gr floor. remodel existing workroom to a bedroom, family room to workroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201311040974",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-11-04",
+      "status_date": "2014-05-28",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "repair/replace rotten siding at rear yard.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201205049868",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-05-04",
+      "status_date": "2013-05-13",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "remove non bearing stucco column @ east wall of vestibule. relocate light switch. instal ramp & landings with rails.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201101289288",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-01-28",
+      "status_date": "2011-01-28",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to 201004059623. change plans and permit wording to existing family room. this room was never a bedroom as incorrectly labeled on prior permit. it remains family room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201004059623",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-04-05",
+      "status_date": "2011-03-01",
+      "estimated_cost": 17500,
+      "revised_cost": 17500,
+      "description": "add (n) bathroom & closets to (e) space. bathroom will have 1-shower unit, 1-vanity, 1-toilet, 1-gfi outlet, 1-extrator fan & tiled flr. add 1-steam radiator & move 1-steam radiator rm. bedrm. to (n) bathrm. from (e) radiator system. replace 3-elec. wall outlets & install 4-(n) wall outets in bedrm.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VALLEJO&street_type=ST&address_number=2333",
+      "retrieved": "2026-10-19"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0563024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-19"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0563&lot=024",
+      "retrieved": "2026-10-19"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0563024",
+      "retrieved": "2026-10-19"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1978-08-03",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 3 August 1978",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/37minutesofsanfran1978san/page/n130/mode/1up",
+      "retrieved": "2026-10-19"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1978-08-03",
+      "kind": "planning decision",
+      "description": "The City Planning Commission unanimously authorized, with conditions, the enlargement of the church on the Fillmore Street corner into the property, on condition that the Vallejo Street curb cut be removed and the garage doors kept (Resolution 8031).",
+      "source": "sf-planning-commission-minutes-1978-08-03"
+    }
+  ]
+}
