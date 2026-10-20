@@ -707,7 +707,7 @@ CEQA_LABEL = {"A": "historic resource", "A*": "historic resource in a district",
 # landmark inside a district that is only California Register-eligible, so the
 # page said its local landmark protection was none.
 INDIVIDUAL_DESIGNATION = {
-    "Article 10 Individual Landmark": ("ic-check", "City landmark (Article 10)"),
+    "Article 10 Individual Landmark": ("hgi-castle-02", "City landmark"),
     # Not a designation: the work program is the Historic Preservation
     # Commission's list of candidates. The data says so — a parcel whose only
     # local finding is the work program stays CEQA "A", never the "A*" that
