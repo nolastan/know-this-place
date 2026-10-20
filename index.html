@@ -10,7 +10,7 @@
   <link rel="icon" href="/shared/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/shared/site.webmanifest">
-  <link rel="stylesheet" href="/shared/site.css?v=1eae9536">
+  <link rel="stylesheet" href="/shared/site.css?v=5d7f20bd">
   <link rel="stylesheet" href="https://use.hugeicons.com/font/icons.css">
   <script type="module" src="/shared/site.js"></script>
   <!-- The homepage is a map, and the only page on the site that carries its
@@ -88,6 +88,12 @@
     .mapboxgl-popup-tip { display: none; }
     .mapboxgl-ctrl-group { background: var(--panel); border: 1px solid var(--rule); }
     .mapboxgl-ctrl-group button + button { border-top: 1px solid var(--rule); }
+    /* On a phone mapbox-gl folds its attribution behind an "i" in a solid
+       white disc, which read as a button asking to be pressed. Folded, it
+       goes translucent like the address page's credit; opened, it is
+       mapbox-gl's own strip. The wordmark is left exactly as Mapbox draws it. */
+    .mapboxgl-ctrl-attrib.mapboxgl-compact:not(.mapboxgl-compact-show) { background: #ffffff80; }
+    .mapboxgl-ctrl-attrib.mapboxgl-compact:not(.mapboxgl-compact-show) .mapboxgl-ctrl-attrib-button { opacity: 0.6; }
     /* The hovercard over a news dot. The plain popup is a one-line chip with an
        address in it; this one carries the story, so it drops the chip's weight
        and hangs the headline and outlet under the address in the same order the
