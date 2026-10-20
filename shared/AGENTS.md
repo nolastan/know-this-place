@@ -62,8 +62,8 @@ new CSS.
   `validate.py` fails a page carrying more than one.
 - **Never state a fact twice.** A structured fact renders in exactly one block.
   Categorical identity (building type, stories, zoning, district) belongs in
-  `.tags`; the year built is dated, so it opens the `.vtl` instead; the stat
-  band is for *measurements* not shown there. If a
+  `.tags`, and on an address page so do the parcel's measurements; the year
+  built is dated, so it opens the `.vtl` instead. If a
   number is detailed elsewhere — assessed value, which the sidebar chart owns —
   it is not also a tile.
 
@@ -76,7 +76,7 @@ Where a new fact goes. Full markup for each is in [BLOCKS.md](BLOCKS.md).
 | `address`, `coordinates`, `building.name`, `sub_area` | `.hero` `<h1>` + `.sub`, `<ktp-map>`, `<ktp-streetview>` | identity and the locator band — a known name heads the page, led by a building-type glyph, with the address as `.sub`; an unnamed page is headed by the address with the building type as `.sub`; an alternative neighborhood designation (`sub_area`, or `AREA_SUB` for a whole directory) trails either |
 | `parcel`, `historic_status` | `.tags` in the hero | categorical identity — type, stories, zoning, district (the type is the `.sub` instead when the address heads the page) |
 | `parcel.year_built` | the first `.vtl` item | the year the building went up, on the rail with everything else dated |
-| `parcel`, `assessment` | `.stats` / `.stat` tiles | measurements: building area, lot area, rooms |
+| `parcel` measurements | more `.tags` in the hero | floor area (`ft²`, unlabeled), lot area, units, rooms, bedrooms, bathrooms, construction |
 | `assessment` land/improvement split | `.stack` inside `<ktp-figure>` | one total split in two, both parts labeled |
 | `permits` | `.vtl` items, each a `.vtl-head` (date, status `.pill`, record link, `.cost` tier) over the description | the dated record of work |
 | `permit_summary` | one line *below* the `.vtl` | what the timeline left out, and why |

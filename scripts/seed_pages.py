@@ -1677,6 +1677,11 @@ def tags_html(rec: dict) -> str:
     if p.get("stories"):
         s = p["stories"]
         out.append(("hgi-stairs-01", f"{s} stor{'y' if s == 1 else 'ies'}"))
+    # The roll's measurements. They were a band of stat tiles; as tags they
+    # sit with the rest of the building's particulars at the weight of a
+    # fact, not a headline. Building area needs no label: a bare floor area
+    # beside the type and stories reads as the building's own.
+    out.extend(measurement_tags(p))
     if p.get("zoning"):
         out.append(("ic-plan", f"Zoned {p['zoning']}"))
     if rec.get("public_open_space"):
@@ -1696,36 +1701,51 @@ def tags_html(rec: dict) -> str:
     sold = (rec.get("assessment") or {}).get("last_sale_date")
     if sold:
         out.append(("hgi-sale-tag-02", f"Sold {long_date(sold)}"))
-    return "\n".join(f'        <li class="tag">{icon_html(i)}{esc(t)}</li>'
+    return "\n".join(f'        <li class="tag">{icon_html(i)}'
+                     f'{f"<span>{t}</span>" if isinstance(t, Markup) else esc(t)}</li>'
                      for i, t in out)
 
 
-def stats_html(rec: dict) -> str:
-    p = rec.get("parcel", {})
-    tiles = []
+class Markup(str):
+    """Tag text that is already HTML (an area's superscript), not to be escaped.
+    It renders inside a <span>: `.tag` is a flex row, so bare text and a <sup>
+    would be two items with the gap between them."""
+
+
+def area(sqft: int) -> Markup:
+    return Markup(f"{sqft:,} ft<sup>2</sup>")
+
+
+def lot_area(sqft: int) -> Markup:
+    return Markup(f"{area(sqft)} lot area")
+
+
+def plural(n: int, word: str) -> str:
+    return f"{n:,} {word}{'' if n == 1 else 's'}"
+
+
+def measurement_tags(p: dict) -> list:
+    out = []
     if p.get("building_area_sqft"):
-        tiles.append(("hgi-coordinate-01", f"{p['building_area_sqft']:,}<small> sq ft</small>",
-                      "Building area"))
+        out.append(("hgi-coordinate-01", area(p["building_area_sqft"])))
     if p.get("lot_area_sqft"):
-        tiles.append(("ic-lot", f"{p['lot_area_sqft']:,}<small> sq ft</small>", "Lot area"))
-    rooms, bath, bed = p.get("rooms"), p.get("bathrooms"), p.get("bedrooms")
-    if rooms:
-        if bed and bath:
-            label = f"Rooms · {bed} bed, {bath} bath"
-        elif bath:
-            label = f"Rooms · {bath} bath{'' if bath == 1 else 's'}"
-        else:
-            label = "Rooms"
-        tiles.append(("hgi-door-01", f"{rooms:,}", label))
-    elif p.get("units") and p["units"] > 1:
-        tiles.append(("ic-home", f"{p['units']:,}", "Residential units"))
-    if not tiles:
-        return ""
-    body = "\n".join(
-        f'    <div class="stat">{icon_html(i)}'
-        f'<span class="stat-val">{v}</span>'
-        f'<span class="stat-label">{esc(l)}</span></div>' for i, v, l in tiles)
-    return f'  <div class="stats">\n{body}\n  </div>\n'
+        out.append(("ic-lot", lot_area(p["lot_area_sqft"])))
+    # Only when the building type doesn't already carry the count ("12-unit
+    # apartment building", "Two-flat") — never state a fact twice.
+    units = p.get("units")
+    if units and units > 1 and not re.search(
+            r"\d|\bTwo\b|\bThree\b|\bFour\b", building_type(p.get("property_class"), units)):
+        out.append(("ic-layers", plural(units, "residential unit")))
+    if p.get("rooms"):
+        out.append(("hgi-door-01", plural(p["rooms"], "room")))
+    if p.get("bedrooms"):
+        out.append(("hgi-bed", plural(p["bedrooms"], "bedroom")))
+    if p.get("bathrooms"):
+        out.append(("hgi-toilet-01", plural(p["bathrooms"], "bathroom")))
+    ctype = CONSTRUCTION.get(p.get("construction_type_code"))
+    if ctype:
+        out.append(("hgi-crane-tower", ctype))
+    return out
 
 
 def dead_permit_phrase(dropped: dict) -> tuple[str, int]:
@@ -2345,8 +2365,7 @@ def one_survey_panel_html(s: dict, indent: str) -> str:
                       s.get("here_today_page") or prior.get("here_today")),
                      ("1976 architectural survey", dcp_1976),
                      ("Unreinforced masonry survey", s.get("umb_survey")),
-                     ("Heritage rating", s.get("heritage_rating")),
-                     ("Earlier survey", s.get("prior_survey"))):
+                     ("Heritage rating", s.get("heritage_rating"))):
         if val:
             rows.append(("ic-check", key, "Listed" if val is True else str(val)))
     # A status code is opaque on its own, so the code key the survey prints
@@ -2957,9 +2976,6 @@ def glance_panel_html(rec: dict, indent: str) -> str:
     build_cost = b.get("cost_usd")
     if build_cost:
         rows.append(("ic-value", "Cost when built", f"${int(build_cost):,}"))
-    ctype = CONSTRUCTION.get(p.get("construction_type_code"))
-    if ctype:
-        rows.append(("hgi-crane-tower", "Construction", ctype))
     if rec.get("street_numbers_on_parcel") and not numbers_in_range(rec):
         # Hand-authored pages sometimes hold these as numbers rather than
         # strings, and a bare join dies on the first int.
@@ -2985,12 +3001,8 @@ def glance_panel_html(rec: dict, indent: str) -> str:
                if x.lower() not in title.lower()]
         rows.append(("ic-pin", "Adjoining stair",
                      ", to ".join([stair["name"], *far[:1]])))
-    # Only when the building-type tag doesn't already carry the count
-    # ("12-unit apartment building", "Two-flat") — never state a fact twice.
-    units = p.get("units")
-    if units and units > 1 and not re.search(
-            r"\d|\bTwo\b|\bThree\b|\bFour\b", building_type(p.get("property_class"), units)):
-        rows.append(("ic-layers", "Residential units", f"{units:,}"))
+    # No "Construction" or "Residential units" rows: both are hero tags (see
+    # `measurement_tags`).
     if a.get("assessed_fixtures_value"):
         rows.append(("ic-value", "Assessed fixtures", f"${a['assessed_fixtures_value']:,}"))
     # Why a parcel pays no tax on the figures the chart above it prints. The
@@ -3735,7 +3747,7 @@ def render_html(rec: dict) -> str:
     </ktp-streetview>
   </section>
 
-{news_now_html(rec)}{lead_html}{stats_html(rec)}
+{news_now_html(rec)}{lead_html}
 {body}
 {nearby_html(rec, "  ")}</main>
 

@@ -98,20 +98,21 @@ because browsers and iOS fetch those two paths on their own.
 
 Not a template — the renderer reorders, drops, or repeats blocks to fit the
 building. A history-rich place might open with prose and photos; a plain one
-leans on the stat band and timeline. The default spine:
+leans on its tags and timeline. The default spine:
 
 1. `.map-shell` — the locator band bleeding to the viewport's top and side
    edges, with the brand chip and the `.map-id` chip riding on it (see
    "Media"). It sits above `<main>`, not inside it.
 2. `.hero` — `<h1>`, `.sub`, `.tags`, and the facade card that
-   rides over the band's lower-left edge.
+   rides over the band's lower-left edge. On an address page the tags carry
+   the roll's measurements too (floor area, lot area, units, rooms, bedrooms,
+   bathrooms, construction), with areas written `1,382 ft<sup>2</sup>`.
 3. `.lead` — one or two sentences, and only for what no block below can
    carry. **Dropped entirely** when the blocks already say everything.
-4. `.stats` — the numbers every building has, as tiles (not sentences).
-5. `.cols` — main narrative/timeline on the left, `.aside` panels on the right.
+4. `.cols` — main narrative/timeline on the left, `.aside` panels on the right.
    **One `.vtl` per page**, holding every dated entry, and no heading over it.
-6. Prose sections (`.section-head` + `.prose`) only where there's a real story.
-7. `.nearby` — the lateral links, written by the renderer, never by hand.
+5. Prose sections (`.section-head` + `.prose`) only where there's a real story.
+6. `.nearby` — the lateral links, written by the renderer, never by hand.
 
 ---
 
@@ -153,6 +154,8 @@ neighborhood directory, the `.sub` ends with that designation
 ```
 
 ### Stat band — `.stats` / `.stat`
+Used by hub, place and dashboard pages. Address pages no longer carry one:
+their measurements are `.tags` in the hero (tiles were too loud for them).
 The dashboard KPI row: one tile per measurement. Big value in sans, small
 label, an icon. Compact big numbers (`$2.67M`, `2,266`); put units in `<small>`.
 **Never duplicate a fact that's already a tag or lives in another block.**
