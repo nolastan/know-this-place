@@ -55,9 +55,11 @@ jobs:
         run: python3 scripts/validate.py
 
       # What gets served is the working tree minus `.git` — the same set the
-      # branch deploy served, which is what keeps this migration boring.
+      # branch deploy served, which is what keeps this migration boring. The
+      # stage step also stamps the stylesheet hash into the committed pages,
+      # which carry an unhashed link so CSS changes don't conflict.
       - name: Stage the site
-        run: rsync -a --exclude='.git/' --exclude='_site/' ./ _site/
+        run: python3 scripts/build_site.py --no-build --stage _site
 
       - uses: actions/upload-pages-artifact@v3
         with:

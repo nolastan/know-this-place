@@ -24,12 +24,20 @@ precedes it.
 
     python3 scripts/build_site.py              # build
     python3 scripts/build_site.py --serve      # build, then serve on :8517
+    python3 scripts/build_site.py --no-build --stage _site   # copy out to publish
+
+`--stage` is the deploy's last step (deploy.yml, netlify.toml): it copies the
+working tree minus `.git` into a directory and stamps the stylesheet hash into
+the committed pages on the way. Those pages are committed with an unhashed
+link (seed_pages.CSS_SOURCE_LINK) so a CSS change touches no tracked file but
+site.css itself; the published copy is the one that needs the cache-buster.
 
 8517 is not arbitrary. The Mapbox token and the Google Maps embed key are
 URL-restricted to `knowthis.place` and `http://localhost:8517`, so the maps
 render on that port and on no other (shared/AGENTS.md).
 """
 import argparse
+import shutil
 import subprocess
 import sys
 import time
@@ -88,6 +96,40 @@ def build() -> None:
     run("stats dashboard", str(SCRIPTS / "build_stats.py"))
 
 
+def stage(dest: Path) -> None:
+    """Copy the built site to `dest`, the committed pages stamped with the CSS hash."""
+    sys.path.insert(0, str(SCRIPTS))
+    from seed_pages import CSS_LINK, CSS_SOURCE_LINK
+
+    started = time.monotonic()
+    dest = dest.resolve()
+    print(f"==> stage → {dest}", flush=True)
+    if dest.exists():
+        shutil.rmtree(dest)
+    stamped = 0
+
+    def copy(src, dst):
+        nonlocal stamped
+        if src.endswith(".html"):
+            text = Path(src).read_text(encoding="utf-8")
+            if CSS_SOURCE_LINK in text:
+                Path(dst).write_text(text.replace(CSS_SOURCE_LINK, CSS_LINK),
+                                     encoding="utf-8")
+                shutil.copystat(src, dst)
+                stamped += 1
+                return dst
+        return shutil.copy2(src, dst)
+
+    def skip(directory, names):
+        here = Path(directory).resolve()
+        return [n for n in names
+                if (here == ROOT and n == ".git") or here / n == dest]
+
+    shutil.copytree(ROOT, dest, ignore=skip, copy_function=copy, symlinks=True)
+    print(f"    {stamped} committed pages stamped with the stylesheet hash, "
+          f"{time.monotonic() - started:.1f}s", flush=True)
+
+
 def serve(port: int) -> None:
     """Serve the built site the way a reader sees it."""
     import http.server
@@ -96,6 +138,12 @@ def serve(port: int) -> None:
     class Handler(http.server.SimpleHTTPRequestHandler):
         def __init__(self, *a, **kw):
             super().__init__(*a, directory=str(ROOT), **kw)
+
+        # The committed pages link site.css without a hash (`stage` adds it
+        # for the deploy), so tell the browser to recheck it on every load.
+        def end_headers(self):
+            self.send_header("Cache-Control", "no-cache")
+            super().end_headers()
 
         def log_message(self, fmt, *a):  # one line per request is enough
             sys.stderr.write(f"{self.requestline} {fmt % a}\n")
@@ -123,6 +171,9 @@ def main() -> int:
                     help=f"serve the result on localhost:{PORT} when the build finishes")
     ap.add_argument("--no-build", action="store_true",
                     help="skip the build and serve what is already on disk")
+    ap.add_argument("--stage", type=Path, metavar="DIR",
+                    help="after the build, copy the site into DIR for publishing, "
+                         "the committed pages stamped with the stylesheet hash")
     ap.add_argument("--port", type=int, default=PORT,
                     help=f"port for --serve (default {PORT}; the map keys are "
                          f"restricted to it)")
@@ -133,6 +184,8 @@ def main() -> int:
         build()
         print(f"\nbuilt in {time.monotonic() - started:.0f}s — "
               f"run `python3 scripts/validate.py` next")
+    if args.stage:
+        stage(args.stage)
     if args.serve:
         serve(args.port)
     return 0
