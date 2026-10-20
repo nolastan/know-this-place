@@ -3,12 +3,13 @@
 
 One Point feature per documented address and per place page (a park, plaza
 or place in a park — see REFERENCE.md → Place pages), carrying only what the
-homepage map needs: the label it shows on hover ("t"), the page it opens on
-click ("p"), and "r": 1 when the research module has published a finding onto
+homepage map needs: the heading its card shows ("t") and the line under it
+("s") — the page's own <h1> and .sub, less the neighborhood — the page the
+card links to ("p"), and "r": 1 when the research module has published a finding onto
 that page — the map draws those in the brick hue and the rest, pages that are
 permit history and little else, in grey. Coordinates and labels come from each
-page's data.json, or a place's place.json, which is the single source of truth;
-a place is labelled by its name, since most have no street number. "r" comes
+page's data.json, or a place's place.json, which is the single source of truth,
+through the same seed_pages functions that write the page's hero. "r" comes
 from research/findings, whose published entries each name the page they went
 onto. This file is a derived index and is never edited by hand.
 
@@ -16,13 +17,14 @@ Run from anywhere: python3 scripts/build_map_index.py
 """
 import json
 import re
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "scripts"))
+from seed_pages import hero_lines, place_sub  # noqa: E402
+
 ADDRESS_DIR = re.compile(r"^\d+[a-z]?$")  # 123, 123a — same as validate.py
-# "227 Dorland Street, San Francisco, CA 94114" → "227 Dorland Street". The
-# city is the whole map; repeating it on every dot is noise.
-LOCALITY = re.compile(r",\s*San Francisco.*$", re.I)
 
 
 def researched_paths() -> set[str]:
@@ -73,9 +75,11 @@ def main() -> None:
             continue
 
         path = data.get("path") or "/" + page_dir.relative_to(ROOT).as_posix() + "/"
-        label = (data.get("name") if is_place else
-                 LOCALITY.sub("", data.get("address") or "")).strip()
-        props = {"t": label, "p": path}
+        if is_place:
+            heading, sub = data.get("name") or "", place_sub(data)
+        else:
+            heading, sub = hero_lines(data)
+        props = {"t": heading.strip(), "s": sub, "p": path}
         # Only on the pages that have it: absent is the common case, and this
         # file is fetched whole by every homepage visit.
         if path in researched:
