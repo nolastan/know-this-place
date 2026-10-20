@@ -64,7 +64,7 @@ UPPERCASE = from this page's `data.json` / `shared/site-config.json`.
 Hub pages have no map, so they keep the old chrome — a `.site-header`
 holding the `.wordmark` link and the breadcrumb `<nav>` with its
 `aria-current` leaf. On an address page both ride on the map instead: the
-brand as a chip top-left, the crumb trail over a `.crumb-meta` line of parcel
+brand top-left, the same `.wordmark` treatment with a halo instead of a chip, the crumb trail over a `.crumb-meta` line of parcel
 identifiers (district, block/lot, ZIP) in a frosted chip bottom-right. The
 identifiers render only there — never as a hero tag, a spec row, or in the
 `.sub` — and the trail names ancestors only, since the leaf is the page
@@ -422,7 +422,8 @@ an answer.
 An address page **opens with the map**: `.map-shell` is the first element of
 `<body>`, and the `<ktp-map>` inside it bleeds to the viewport's top, right
 and left edges rather than stopping at the page frame. The page's chrome
-rides on it — the `.map-brand` chip top-left, the `.map-id` chip (crumb trail
+rides on it — the `.map-brand` logotype top-left (no chip: the same mark as
+`.wordmark`, haloed so it reads on any tile), the `.map-id` chip (crumb trail
 over parcel identifiers) bottom-right. The facade then sits in the hero's
 media slot and **rides over the band's lower-left edge** — `.media-lift`
 pulls it up and gives it a shadow, so the card reads as pinned to the map
@@ -477,7 +478,9 @@ fact that isn't already on the page, so nothing is lost when it doesn't load.
 facts shown elsewhere like the parcel number. Neither image needs an
 attribution caption: Google renders its own into the picture, and `<ktp-map>`
 draws Mapbox's as `.map-credit` in the band's top-right corner, since the
-chips cover the bottom corners where Mapbox would bake it in.)
+chips cover the bottom corners where Mapbox would bake it in. On a phone its
+links fold behind an "i" beside the wordmark, as mapbox-gl's compact
+attribution does.)
 
 **Never test or preview the Street View image.** `maps_embed_key` is
 restricted to the production domain, so it fails from localhost, from any
