@@ -123,7 +123,9 @@ customElements.define(
    .map-credit, in the band's top-right corner: the Mapbox wordmark
    (shared/mapbox-logo.svg, copied from mapbox-gl's own stylesheet) over the
    © Mapbox, © OpenStreetMap and "Improve this map" links. It goes in with the
-   image, so a page with no picture carries no credit for one.
+   image, so a page with no picture carries no credit for one. On a phone the
+   links wrapped to three lines over the picture, so there they fold behind an
+   "i" button beside the wordmark until it is tapped.
 
    The building is marked by the homepage map's resting dot, not a Mapbox pin:
    the image is centred on the coordinates, so the element draws .map-dot at
@@ -192,8 +194,18 @@ customElements.define(
         '<a href="https://www.mapbox.com/about/maps/">© Mapbox</a> ' +
         '<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap</a> ' +
         '<a href="https://www.mapbox.com/map-feedback/"><strong>Improve this map</strong></a>' +
-        "</span>";
+        "</span>" +
+        '<button class="map-credit-toggle" type="button" aria-expanded="false" aria-label="Map attribution">i</button>';
       this.append(credit);
+
+      // On a phone the links fold behind an "i", as mapbox-gl's compact
+      // attribution does on the homepage; the CSS hides the button elsewhere.
+      const toggle = credit.querySelector(".map-credit-toggle");
+      toggle.addEventListener("click", () => {
+        const open = toggle.getAttribute("aria-expanded") !== "true";
+        toggle.setAttribute("aria-expanded", String(open));
+        credit.toggleAttribute("data-open", open);
+      });
 
       dark.addEventListener("change", () => (img.src = src()));
       PHONE.addEventListener("change", () => (img.src = src()));

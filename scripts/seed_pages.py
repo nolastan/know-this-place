@@ -1636,6 +1636,12 @@ def tags_html(rec: dict) -> str:
     # After the CEQA classification, which is the general finding: a
     # designation is the specific one, and it is the building's own.
     out.extend(individual_designations(rec))
+    # The roll's last recorded sale. It was an "at a glance" row; as a tag it
+    # reads in a glance without a panel to open. A date, not a party: who
+    # bought it is never printed.
+    sold = (rec.get("assessment") or {}).get("last_sale_date")
+    if sold:
+        out.append(("hgi-sale-tag-02", f"Sold {long_date(sold)}"))
     return "\n".join(f'        <li class="tag">{icon_html(i)}{esc(t)}</li>'
                      for i, t in out)
 
@@ -1815,6 +1821,37 @@ PARTIAL_DEMOLITION = re.compile(r"interior|non-? ?structural|partition|\bshed\b|
 BUILT_EVENT = re.compile(r"\b(built|completed)\b", re.I)
 
 
+def names_builder(text: str | None, builder: str) -> bool:
+    """Whether a sentence already names the builder, read loosely.
+
+    Sources spell the same contractor "T. C. Cochrane" and "T. C. Cochran", or
+    drop the "Co. Inc.", so this asks for any distinctive word of the name
+    rather than the whole string, and drops each word's last letter.
+    """
+    text = (text or "").lower().replace("’", "'")
+    words = re.findall(r"[a-z'][a-z'&.-]{3,}", builder.lower().replace("’", "'"))
+    words = [w.strip(".") for w in words
+             if w.strip(".") not in ("company", "brothers", "construction", "inc",
+                                     "corp", "corporation", "builders", "sons",
+                                     "brickwork", "carpentry")]
+    return any(w[:-1] in text for w in words if len(w) > 3)
+
+
+def built_sentence(lead: str, builder: str | None, note: str | None) -> str:
+    """"Built." with the builder folded in, where the record names one.
+
+    The builder was an "at a glance" row of its own until it moved here: who put
+    the building up is part of the fact that it went up, so it reads with the
+    year rather than in a spec list. `builder_note` qualifies the name ("Also
+    built 100–102 Corbett Avenue.") and follows it as a sentence of its own.
+    """
+    out = f"{lead} by {str(builder).strip()}." if builder else f"{lead}."
+    if note:
+        note = str(note).strip()
+        out += " " + (note if note.endswith((".", "!", "?")) else note + ".")
+    return out
+
+
 def built_item(rec: dict, indent: str) -> list:
     """The assessor's year built, as the entry the rest of the timeline hangs off.
 
@@ -1853,9 +1890,18 @@ def built_item(rec: dict, indent: str) -> list:
     # change's PR, and the fix for them is a sentence in their `data.json`,
     # not a narrower test here, which would only stand the entry down on
     # fewer real completions.
-    if any(date_key(e.get("date"))[0] == int(year)
-           and BUILT_EVENT.search(e.get("description") or "")
-           for e in history_entries(rec)):
+    #
+    # The builder rides on this entry ("Built by Elis J. Ekstrom."), so standing
+    # down must not lose them: a completion entry that names someone else, or
+    # no one, leaves the entry standing to carry the name, and so does a
+    # `builder_note`, which no source entry says in our words.
+    b = rec.get("building") or {}
+    builder, note = b.get("builder"), b.get("builder_note")
+    finished = [e for e in history_entries(rec)
+                if date_key(e.get("date"))[0] == int(year)
+                and BUILT_EVENT.search(e.get("description") or "")]
+    if finished and not note and (not builder or any(names_builder(e.get("description"), builder)
+                                                     for e in finished)):
         return []
     replaced = any(
         date_key(p.get("filed"))[0] < int(year)
@@ -1869,7 +1915,7 @@ def built_item(rec: dict, indent: str) -> list:
              f'{indent}  <li class="vtl-item">\n'
              f'{indent}    <div class="vtl-date">{year}</div>\n'
              f'{indent}    <p class="vtl-desc">'
-             f'{"Current structure built." if replaced else "Built."}</p>\n'
+             f'{esc(built_sentence("Current structure built" if replaced else "Built", builder, note))}</p>\n'
              f'{indent}  </li>')]
 
 
@@ -2784,6 +2830,24 @@ def offer_html(sid: str, listed: list, pad: str) -> str:
             + '</p>\n')
 
 
+def numbers_in_range(rec: dict) -> bool:
+    """Whether the heading's range already says every street number the parcel has.
+
+    "609–615 Cortland Avenue" over a row reading "609, 615", or "32–36 Richland
+    Avenue" over "32, 34, 36", is the same fact twice: that was 89% of the
+    7,372 pages carrying the row. The row stays where the parcel skips numbers
+    the range would imply ("747–777 Beach Street": 747, 757, 761, 765, 777), or
+    holds one the range can't express, like a lettered unit.
+    """
+    m = re.match(r"(\d+)[–-](\d+) ", page_title(rec))
+    nums = [str(n).strip() for n in rec.get("street_numbers_on_parcel") or []]
+    if not m or not all(n.isdigit() for n in nums):
+        return False
+    nums = sorted(int(n) for n in nums)
+    return (nums[0] == int(m[1]) and nums[-1] == int(m[2])
+            and (len(nums) <= 2 or all(b - a == 2 for a, b in zip(nums, nums[1:]))))
+
+
 def glance_panel_html(rec: dict, indent: str) -> str:
     title = page_title(rec)
     p = rec.get("parcel", {})
@@ -2802,10 +2866,13 @@ def glance_panel_html(rec: dict, indent: str) -> str:
     for icon, key, val in (("ic-home", "Formerly", b.get("former_name")),
                            ("ic-ruler", "Architect",
                             with_note(b.get("architect"), b.get("architect_note"))),
-                           # A named builder with no named architect is the
-                           # normal case for a 19th-century workers' cottage —
-                           # the carpenter who put it up is who the record has.
+                           # The builder reads on the timeline's "Built"
+                           # entry, or on the source's own completion entry
+                           # that stood it down by naming them (`built_item`).
+                           # The row is the fallback for a page with no build
+                           # year, whose rail has neither.
                            ("hgi-labor", "Builder",
+                            None if p.get("year_built") else
                             with_note(b.get("builder"), b.get("builder_note"))),
                            ("ic-plan", "Developer", b.get("developer")),
                            ("ic-calendar", "Completed", completed),
@@ -2839,7 +2906,7 @@ def glance_panel_html(rec: dict, indent: str) -> str:
     ctype = CONSTRUCTION.get(p.get("construction_type_code"))
     if ctype:
         rows.append(("hgi-crane-tower", "Construction", ctype))
-    if rec.get("street_numbers_on_parcel"):
+    if rec.get("street_numbers_on_parcel") and not numbers_in_range(rec):
         # Hand-authored pages sometimes hold these as numbers rather than
         # strings, and a bare join dies on the first int.
         rows.append(("hgi-hash", "Street numbers",
@@ -2884,8 +2951,8 @@ def glance_panel_html(rec: dict, indent: str) -> str:
                      with_note(a["exemption"],
                                f"${a['exemption_value']:,} exempt"
                                if a.get("exemption_value") else None)))
-    if a.get("last_sale_date"):
-        rows.append(("hgi-sale-tag-02", "Last sale", long_date(a["last_sale_date"])))
+    # No "Last sale" row: the date is a hero tag, "Sold March 4, 2019" (see
+    # `tags_html`).
     # No historic status row: the hero tag already states it in words, and the
     # row's only addition is the raw CEQA code letter — a citation, which means
     # nothing to a reader on its own. Same reasoning as the district panel's
