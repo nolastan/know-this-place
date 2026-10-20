@@ -470,6 +470,9 @@ radius — a bleed is only a bleed if nothing frames it); `.media-lift` is the
 behaviour, left alone. The map is a
 **locator**, not a data layer: it carries no parcel outline, no label, and no
 fact that isn't already on the page, so nothing is lost when it doesn't load.
+Its one mark is `.map-dot`, drawn by `<ktp-map>` in CSS at the band's centre
+rather than as a Mapbox pin, so the building wears the homepage map's resting
+circle.
 (A `<figcaption>` is optional — use it for a real photo's credit, not to repeat
 facts shown elsewhere like the parcel number. Neither image needs an
 attribution caption: Google renders its own into the picture, and `<ktp-map>`
