@@ -471,9 +471,9 @@ link to the article. The building is what the card names first; the news is what
 it says about it. The same shape as a news entry on an address page.
 
 **The grid is also the map's data.** The script at the foot of the homepage
-reads these cards — the `location`, the label, the headline, the outlet — and
+reads these cards — the `location`, the label, the headline, the outlet and its link — and
 draws each one on the map as a pulsing dot in the cool data hue, against the
-brick of the thousands of ordinary addresses, with the story in a hovercard.
+brick of the thousands of ordinary addresses, with the story on the card a click opens.
 There is no second file: a card added is a dot added, a card dropped is a dot
 dropped, and a card with a `location` that does not parse is silently missing
 from the map. That is one more reason `location` is copied from the page's

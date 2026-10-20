@@ -698,6 +698,9 @@ ZONING = {"RH1": "RH-1", "RH2": "RH-2", "RH3": "RH-3", "RH4": "RH-4",
 
 CEQA_LABEL = {"A": "historic resource", "A*": "historic resource in a district",
               "B": "unevaluated", "C": "not a historical resource"}
+# The hero tag's wording for the same codes. B is left out: "unevaluated" says
+# nothing about the building, so a B page simply carries no tag.
+CEQA_TAG = {"A": "Historic resource", "C": "Not a historic resource"}
 
 # Planning's `ceqacodereason` is a comma-separated list of findings, and it
 # mixes two different subjects: the district a parcel sits in (which the
@@ -707,7 +710,7 @@ CEQA_LABEL = {"A": "historic resource", "A*": "historic resource in a district",
 # landmark inside a district that is only California Register-eligible, so the
 # page said its local landmark protection was none.
 INDIVIDUAL_DESIGNATION = {
-    "Article 10 Individual Landmark": ("ic-check", "City landmark (Article 10)"),
+    "Article 10 Individual Landmark": ("hgi-castle-02", "City landmark"),
     # Not a designation: the work program is the Historic Preservation
     # Commission's list of candidates. The data says so — a parcel whose only
     # local finding is the work program stays CEQA "A", never the "A*" that
@@ -1569,6 +1572,19 @@ def building_name(rec: dict) -> str | None:
     return name if name and name.lower() != page_title(rec).lower() else None
 
 
+def hero_lines(rec: dict) -> tuple[str, str]:
+    """An address page's `<h1>` and the first clause of its `.sub`: the name
+    over the address for a named building, the address over the building type
+    for the rest. The homepage map's cards show the same pair, so it is
+    computed once, here. The `.sub`'s neighborhood clause is left to
+    `render_html`, which is the only place that wants it."""
+    title, name = page_title(rec), building_name(rec)
+    if name:
+        return name, title
+    p = rec.get("parcel", {})
+    return title, building_type(p.get("property_class"), p.get("units"))
+
+
 def meta_description(rec: dict) -> str:
     p = rec.get("parcel", {})
     name = building_name(rec)
@@ -1614,9 +1630,9 @@ def tags_html(rec: dict) -> str:
         out.append(("ic-pin", "Privately owned public open space"
                     + (f" ×{n}" if n > 1 else "")))
     hs = rec.get("historic_status") or {}
-    label = CEQA_LABEL.get((hs.get("ceqa_status_code") or "").strip())
+    label = CEQA_TAG.get((hs.get("ceqa_status_code") or "").strip())
     if label:
-        out.append(("hgi-castle-02", f"Historic status: {label}"))
+        out.append(("hgi-castle-02", label))
     # After the CEQA classification, which is the general finding: a
     # designation is the specific one, and it is the building's own.
     out.extend(individual_designations(rec))
@@ -3463,9 +3479,7 @@ def render_html(rec: dict) -> str:
     # Each value is the alternative designation alone: the neighborhood itself
     # is already in the breadcrumb, so "Union Square, Tenderloin" is stored
     # as "Union Square".
-    sub_text = title if name else building_type(
-        rec.get("parcel", {}).get("property_class"),
-        rec.get("parcel", {}).get("units"))
+    sub_text = hero_lines(rec)[1]
     sub_alt = rec.get("sub_area") or AREA_SUB.get((city_slug, area_slug))
     if sub_alt:
         sub_text += f" · {sub_alt}"
@@ -3748,6 +3762,13 @@ def place_type_label(rec: dict) -> str:
     return t[0].upper() + t[1:].lower()
 
 
+def place_sub(rec: dict) -> str:
+    """A place page's `.sub`: what kind of place, and the park it sits in."""
+    part_of = rec.get("part_of") or {}
+    sub = place_type_label(rec)
+    return f"{sub} · {part_of['name']}" if part_of else sub
+
+
 def place_hook(rec: dict) -> str:
     """A place's line on its neighborhood hub — which is also, for a place
     inside a park, the park's own page, so the park is not named again."""
@@ -3849,9 +3870,7 @@ def render_place_html(rec: dict) -> str:
     city_name = " ".join(w.capitalize() for w in city_slug.split("-"))
     area_name = area_display(f"/{city_slug}/{area_slug}/")
     part_of = rec.get("part_of") or {}
-    sub_text = place_type_label(rec)
-    if part_of:
-        sub_text += f" · {part_of['name']}"
+    sub_text = place_sub(rec)
     desc = f"{name}, San Francisco: {place_hook(rec).rstrip('.')} — from the " \
            f"Recreation and Park Department's inventory, fully cited."
 
@@ -4879,7 +4898,7 @@ def write_neighborhood_hub(area_dir: Path, ctx: dict) -> int:
         # Keep the committed hub's stylesheet link in sync with the shared
         # stylesheet hash, since the <head> is not regenerated from scratch.
         text, n_link = re.subn(
-            r'\s*<link rel="stylesheet" href="/shared/site\.css[^"]*">',
+            r'[ \t]*<link rel="stylesheet" href="/shared/site\.css[^"]*">',
             CSS_LINK, text)
         if not n_link:
             raise SystemExit(f"{html_path}: no stylesheet link to update")
