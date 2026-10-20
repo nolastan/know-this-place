@@ -1569,6 +1569,19 @@ def building_name(rec: dict) -> str | None:
     return name if name and name.lower() != page_title(rec).lower() else None
 
 
+def hero_lines(rec: dict) -> tuple[str, str]:
+    """An address page's `<h1>` and the first clause of its `.sub`: the name
+    over the address for a named building, the address over the building type
+    for the rest. The homepage map's cards show the same pair, so it is
+    computed once, here. The `.sub`'s neighborhood clause is left to
+    `render_html`, which is the only place that wants it."""
+    title, name = page_title(rec), building_name(rec)
+    if name:
+        return name, title
+    p = rec.get("parcel", {})
+    return title, building_type(p.get("property_class"), p.get("units"))
+
+
 def meta_description(rec: dict) -> str:
     p = rec.get("parcel", {})
     name = building_name(rec)
@@ -3463,9 +3476,7 @@ def render_html(rec: dict) -> str:
     # Each value is the alternative designation alone: the neighborhood itself
     # is already in the breadcrumb, so "Union Square, Tenderloin" is stored
     # as "Union Square".
-    sub_text = title if name else building_type(
-        rec.get("parcel", {}).get("property_class"),
-        rec.get("parcel", {}).get("units"))
+    sub_text = hero_lines(rec)[1]
     sub_alt = rec.get("sub_area") or AREA_SUB.get((city_slug, area_slug))
     if sub_alt:
         sub_text += f" · {sub_alt}"
@@ -3748,6 +3759,13 @@ def place_type_label(rec: dict) -> str:
     return t[0].upper() + t[1:].lower()
 
 
+def place_sub(rec: dict) -> str:
+    """A place page's `.sub`: what kind of place, and the park it sits in."""
+    part_of = rec.get("part_of") or {}
+    sub = place_type_label(rec)
+    return f"{sub} · {part_of['name']}" if part_of else sub
+
+
 def place_hook(rec: dict) -> str:
     """A place's line on its neighborhood hub — which is also, for a place
     inside a park, the park's own page, so the park is not named again."""
@@ -3849,9 +3867,7 @@ def render_place_html(rec: dict) -> str:
     city_name = " ".join(w.capitalize() for w in city_slug.split("-"))
     area_name = area_display(f"/{city_slug}/{area_slug}/")
     part_of = rec.get("part_of") or {}
-    sub_text = place_type_label(rec)
-    if part_of:
-        sub_text += f" · {part_of['name']}"
+    sub_text = place_sub(rec)
     desc = f"{name}, San Francisco: {place_hook(rec).rstrip('.')} — from the " \
            f"Recreation and Park Department's inventory, fully cited."
 
