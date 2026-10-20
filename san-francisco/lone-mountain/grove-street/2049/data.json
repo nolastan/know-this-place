@@ -1,0 +1,96 @@
+{
+  "address": "2049 Grove Street, San Francisco, CA 94117",
+  "path": "/san-francisco/lone-mountain/grove-street/2049/",
+  "apn": "1194010",
+  "block": "1194",
+  "lot": "010",
+  "eas_baseid": "296888",
+  "coordinates": {
+    "lat": 37.773885,
+    "lng": -122.450267
+  },
+  "parcel": {
+    "year_built": 1900,
+    "lot_area_sqft": 54998,
+    "use": "Commercial Retail",
+    "property_class": "Schools",
+    "construction_type_code": "NA",
+    "zoning": "P",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "North Panhandle",
+    "analysis_neighborhood": "Lone Mountain/USF",
+    "property_location_raw": "0000 2049 GROVE               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201306129371",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-06-12",
+      "status_date": "2013-12-12",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "proposed new curb cut.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2004–2013",
+    "shown_on_page": 1,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GROVE&street_type=ST&address_number=2049",
+      "retrieved": "2026-10-20"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1194010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-20"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1194&lot=010",
+      "retrieved": "2026-10-20"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1194010",
+      "retrieved": "2026-10-20"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1979-05-24",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 24 May 1979",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/38minutesofsanfran1979san/page/n159/mode/1up",
+      "retrieved": "2026-10-20"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1979-05-24",
+      "kind": "planning decision",
+      "description": "The City Planning Commission unanimously found the lease of the vacant Andrew Jackson School to the Department of Social Services, for a shelter school programme for 70 students and a child protective services office, consistent with the Master Plan.",
+      "source": "sf-planning-commission-minutes-1979-05-24"
+    }
+  ]
+}

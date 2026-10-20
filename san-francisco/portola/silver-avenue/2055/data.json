@@ -1,0 +1,104 @@
+{
+  "address": "2055 Silver Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/portola/silver-avenue/2055/",
+  "apn": "5346005",
+  "block": "5346",
+  "lot": "005",
+  "eas_baseid": "465206",
+  "coordinates": {
+    "lat": 37.736407,
+    "lng": -122.398886
+  },
+  "parcel": {
+    "lot_area_sqft": 54232,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Public Use",
+    "construction_type_code": "NA",
+    "zoning": "P",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Silver Terrace",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "2069 2063 REVERE              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200209277674",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2002-09-27",
+      "status_date": "2004-03-25",
+      "estimated_cost": 65000,
+      "revised_cost": 65000,
+      "description": "fire alarm for entire school per nfpa 72",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8812666",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1988-08-26",
+      "status_date": "1989-03-09",
+      "estimated_cost": 2200,
+      "description": "install hood & duct fire suppression system",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "1988–2015",
+    "shown_on_page": 2,
+    "note": "5 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SILVER&street_type=AVE&address_number=2055",
+      "retrieved": "2026-10-20"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5346005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-20"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5346&lot=005",
+      "retrieved": "2026-10-20"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5346005",
+      "retrieved": "2026-10-20"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1979-05-24",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 24 May 1979",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/38minutesofsanfran1979san/page/n159/mode/1up",
+      "retrieved": "2026-10-20"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1979-05-24",
+      "kind": "planning decision",
+      "description": "The City Planning Commission unanimously found the lease of the vacant Fremont Elementary School to the Police Department as a training facility consistent with the Master Plan, for at most four years, 8 a.m. to 10 p.m., with no firing of guns and classrooms open to community use.",
+      "source": "sf-planning-commission-minutes-1979-05-24"
+    }
+  ]
+}

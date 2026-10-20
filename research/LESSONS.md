@@ -2893,3 +2893,22 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   `extra.assessor_lots_as_recorded`, and leave `assessor_lot_as_recorded`
   empty unless one lot is the building the fact is about.* (2026-10-19,
   [sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))
+- **The roll's commercial condominium classes say "Condo", not
+  "Condominium".** `resolve_eas.py` tested the class for the whole word, so
+  1545 Broadway (the 1979 minutes) joined cleanly to a parcel the roll
+  classes "Commercial Store Condo" — unit `0001A`, zero lot area — and the
+  manifest listed it for seeding. The test now matches "condo". *Before
+  seeding, list the manifest's parcels with the roll's class, unit suffix
+  and lot area; a zero area or a unit suffix is a unit, whatever the class
+  says.* (2026-10-20,
+  [sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))
+- **A quote of a vote is where a name slips into a findings file.** The
+  minutes print every decision as "moved by Commissioner A, seconded by
+  Commissioner B and passed …", and a reader choosing the shortest span that
+  proves the vote takes the whole sentence: 23 of the 1979 batch's 163
+  `raw_text` spans named a commissioner, and 15 more had passed unnoticed in
+  five earlier batches, against a reader spec that bars every personal name.
+  *Quote from "passed" or "carried". `check.py` now fails a minutes quote
+  that names a commissioner; for any source whose spec bars names, grep the
+  quotes, not only the descriptions, before writing the file.* (2026-10-20,
+  [sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))

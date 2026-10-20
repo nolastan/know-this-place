@@ -695,9 +695,14 @@ def condo_warning(city: City, parcel: str, name: str = "", stype: str = "",
     under `0000`, one of them under the building's other frontage, so neither
     names a unit; but each has a lot area of zero, which an airspace unit has and
     a whole building never does.
+
+    **And the class need not say "Condominium".** 1545 Broadway (the 1979
+    minutes) joined cleanly to a parcel the roll classes "Commercial Store
+    Condo", unit `0001A`, zero lot area; testing for the whole word let it
+    through. Commercial and office condominium classes end in "Condo".
     """
     roll = city.roll.get(parcel) or {}
-    if "condominium" not in (roll.get("property_class_code_definition") or "").lower():
+    if "condo" not in (roll.get("property_class_code_definition") or "").lower():
         return None
     unit = (roll.get("property_location") or "")[UNIT_AT:].strip()
     names_a_unit = bool(unit) and unit.strip("0") != ""
