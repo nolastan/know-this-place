@@ -82,6 +82,10 @@ def check_html(html_path: Path, html: str, is_address: bool) -> None:
     if html_path.parent == ROOT:
         rel_dir = "/"
 
+    # A committed hub's <head> is only patched, never rebuilt, so a merge that
+    # left its markers in one is carried forward by every build after it.
+    if re.search(r"^(?:<{7}|={7}|>{7})(?: |$)", html, re.M):
+        err(html_path, "carries unresolved merge-conflict markers")
     if seed_pages.CSS_LINK not in html:
         err(html_path, "missing the shared stylesheet link")
     for link in ICON_LINKS:
