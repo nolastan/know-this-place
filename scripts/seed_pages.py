@@ -2311,8 +2311,7 @@ def one_survey_panel_html(s: dict, indent: str) -> str:
                       s.get("here_today_page") or prior.get("here_today")),
                      ("1976 architectural survey", dcp_1976),
                      ("Unreinforced masonry survey", s.get("umb_survey")),
-                     ("Heritage rating", s.get("heritage_rating")),
-                     ("Earlier survey", s.get("prior_survey"))):
+                     ("Heritage rating", s.get("heritage_rating"))):
         if val:
             rows.append(("ic-check", key, "Listed" if val is True else str(val)))
     # A status code is opaque on its own, so the code key the survey prints
