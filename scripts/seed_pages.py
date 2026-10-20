@@ -1676,14 +1676,21 @@ def measurement_tags(p: dict) -> list:
         out.append(("hgi-coordinate-01", area(p["building_area_sqft"])))
     if p.get("lot_area_sqft"):
         out.append(("ic-lot", lot_area(p["lot_area_sqft"])))
+    # Only when the building type doesn't already carry the count ("12-unit
+    # apartment building", "Two-flat") — never state a fact twice.
+    units = p.get("units")
+    if units and units > 1 and not re.search(
+            r"\d|\bTwo\b|\bThree\b|\bFour\b", building_type(p.get("property_class"), units)):
+        out.append(("ic-layers", plural(units, "residential unit")))
     if p.get("rooms"):
         out.append(("hgi-door-01", plural(p["rooms"], "room")))
-    elif p.get("units") and p["units"] > 1:
-        out.append(("ic-home", plural(p["units"], "residential unit")))
     if p.get("bedrooms"):
         out.append(("hgi-bed", plural(p["bedrooms"], "bedroom")))
     if p.get("bathrooms"):
         out.append(("hgi-toilet-01", plural(p["bathrooms"], "bathroom")))
+    ctype = CONSTRUCTION.get(p.get("construction_type_code"))
+    if ctype:
+        out.append(("hgi-crane-tower", ctype))
     return out
 
 
@@ -2916,9 +2923,6 @@ def glance_panel_html(rec: dict, indent: str) -> str:
     build_cost = b.get("cost_usd")
     if build_cost:
         rows.append(("ic-value", "Cost when built", f"${int(build_cost):,}"))
-    ctype = CONSTRUCTION.get(p.get("construction_type_code"))
-    if ctype:
-        rows.append(("hgi-crane-tower", "Construction", ctype))
     if rec.get("street_numbers_on_parcel") and not numbers_in_range(rec):
         # Hand-authored pages sometimes hold these as numbers rather than
         # strings, and a bare join dies on the first int.
@@ -2944,12 +2948,8 @@ def glance_panel_html(rec: dict, indent: str) -> str:
                if x.lower() not in title.lower()]
         rows.append(("ic-pin", "Adjoining stair",
                      ", to ".join([stair["name"], *far[:1]])))
-    # Only when the building-type tag doesn't already carry the count
-    # ("12-unit apartment building", "Two-flat") — never state a fact twice.
-    units = p.get("units")
-    if units and units > 1 and not re.search(
-            r"\d|\bTwo\b|\bThree\b|\bFour\b", building_type(p.get("property_class"), units)):
-        rows.append(("ic-layers", "Residential units", f"{units:,}"))
+    # No "Construction" or "Residential units" rows: both are hero tags (see
+    # `measurement_tags`).
     if a.get("assessed_fixtures_value"):
         rows.append(("ic-value", "Assessed fixtures", f"${a['assessed_fixtures_value']:,}"))
     # Why a parcel pays no tax on the figures the chart above it prints. The

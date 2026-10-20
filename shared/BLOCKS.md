@@ -105,8 +105,8 @@ leans on its tags and timeline. The default spine:
    "Media"). It sits above `<main>`, not inside it.
 2. `.hero` — `<h1>`, `.sub`, `.tags`, and the facade card that
    rides over the band's lower-left edge. On an address page the tags carry
-   the roll's measurements too (floor area, lot area, rooms, bedrooms,
-   bathrooms), with areas written `1,382 ft<sup>2</sup>`.
+   the roll's measurements too (floor area, lot area, units, rooms, bedrooms,
+   bathrooms, construction), with areas written `1,382 ft<sup>2</sup>`.
 3. `.lead` — one or two sentences, and only for what no block below can
    carry. **Dropped entirely** when the blocks already say everything.
 4. `.cols` — main narrative/timeline on the left, `.aside` panels on the right.
