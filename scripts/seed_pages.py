@@ -2191,6 +2191,21 @@ def survey_panel_html(rec: dict, indent: str) -> str:
     return "".join(one_survey_panel_html(s, indent) for s in surveys if s)
 
 
+# The Central SoMa results table names the survey that covered a parcel before
+# it in a word or two — "South of Market", "Transit Center" — which on the page
+# read as a neighbourhood, not a survey. Spelled out here, not in data.json,
+# because the short form is what the table prints.
+PRIOR_SURVEY_NAMES = {
+    "South of Market": "South of Market Area Plan Survey",
+    "Transit Center": "Transit Center District Survey (2008)",
+    "Transit Center District": "Transit Center District Survey (2008)",
+}
+
+
+def prior_survey_name(val):
+    return PRIOR_SURVEY_NAMES.get(val, val) if isinstance(val, str) else val
+
+
 def one_survey_panel_html(s: dict, indent: str) -> str:
     rows = []
     for icon, key, val in (
@@ -2246,7 +2261,7 @@ def one_survey_panel_html(s: dict, indent: str) -> str:
                      ("1976 architectural survey", dcp_1976),
                      ("Unreinforced masonry survey", s.get("umb_survey")),
                      ("Heritage rating", s.get("heritage_rating")),
-                     ("Earlier survey", s.get("prior_survey"))):
+                     ("Already surveyed by", prior_survey_name(s.get("prior_survey")))):
         if val:
             rows.append(("ic-check", key, "Listed" if val is True else str(val)))
     # A status code is opaque on its own, so the code key the survey prints
