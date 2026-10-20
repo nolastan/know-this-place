@@ -211,6 +211,9 @@ a.wordmark:hover, a.map-brand:hover { opacity: 0.75; }
 .map-credit-text { padding: 0 5px; background: #ffffff80; }
 .map-credit-text a { color: #000000bf; text-decoration: none; }
 .map-credit-text a:hover { text-decoration: underline; }
+/* The phone's fold for the links (below); no use on a band wide enough to
+   hold them on one line. */
+.map-credit-toggle { display: none; }
 
 /* On a phone the 16:5 band is too short to hold the chip, which covered the
    whole map. The map takes a taller 4:3 frame of its own (site.js asks Mapbox
@@ -219,8 +222,21 @@ a.wordmark:hover, a.map-brand:hover { opacity: 0.75; }
    just over the map's bottom edge. */
 @media (max-width: 720px) {
   .map-shell { aspect-ratio: auto; border-bottom: 0; background: none; }
-  /* The credit's one line would run under .map-brand; wrap it beside it. */
-  .map-credit-text { max-width: 10rem; text-align: right; }
+  /* The credit's one line would run under .map-brand, and wrapped beside it
+     it covered a third of the picture. So the links fold behind an "i" next
+     to the wordmark, as mapbox-gl's compact attribution does on the homepage,
+     and open beneath it when tapped. The wordmark itself always shows. */
+  .map-credit { display: grid; grid-template-columns: auto auto; align-items: center; justify-items: end; }
+  .map-credit-text { display: none; grid-area: 2 / 1 / 3 / 3; max-width: 12rem; text-align: right; }
+  .map-credit[data-open] .map-credit-text { display: block; }
+  .map-credit-toggle {
+    display: block; grid-area: 1 / 2; width: 20px; height: 20px; padding: 0;
+    border: 1px solid #00000026; border-radius: 50%;
+    background: #ffffffbf; color: #000000bf;
+    font: italic 700 12px/18px Georgia, serif; text-align: center;
+    cursor: pointer;
+  }
+  .map-credit[data-open] .map-credit-toggle { background: #ffffffcc; }
   .map-id {
     position: relative;
     right: auto; bottom: auto;

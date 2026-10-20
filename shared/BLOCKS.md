@@ -475,7 +475,9 @@ fact that isn't already on the page, so nothing is lost when it doesn't load.
 facts shown elsewhere like the parcel number. Neither image needs an
 attribution caption: Google renders its own into the picture, and `<ktp-map>`
 draws Mapbox's as `.map-credit` in the band's top-right corner, since the
-chips cover the bottom corners where Mapbox would bake it in.)
+chips cover the bottom corners where Mapbox would bake it in. On a phone its
+links fold behind an "i" beside the wordmark, as mapbox-gl's compact
+attribution does.)
 
 **Never test or preview the Street View image.** `maps_embed_key` is
 restricted to the production domain, so it fails from localhost, from any
