@@ -4895,7 +4895,7 @@ def write_neighborhood_hub(area_dir: Path, ctx: dict) -> int:
         # Keep the committed hub's stylesheet link in sync with the shared
         # stylesheet hash, since the <head> is not regenerated from scratch.
         text, n_link = re.subn(
-            r'\s*<link rel="stylesheet" href="/shared/site\.css[^"]*">',
+            r'[ \t]*<link rel="stylesheet" href="/shared/site\.css[^"]*">',
             CSS_LINK, text)
         if not n_link:
             raise SystemExit(f"{html_path}: no stylesheet link to update")
