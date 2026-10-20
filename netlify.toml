@@ -1,0 +1,24 @@
+# Netlify — deploy previews only.
+#
+# Production stays on GitHub Pages (.github/workflows/deploy.yml). Netlify
+# builds every pull request, and any branch it is told to, the same way that
+# workflow does, so a change can be looked at before it is merged.
+#
+# The build mirrors deploy.yml: run the builders, check the page contract,
+# then stage the working tree minus `.git` into `_site/` and publish that.
+# `tar` rather than rsync because the build image is not promised to carry
+# rsync, and publishing `.` would ship the repository's history.
+
+[build]
+  command = """
+    python3 scripts/build_site.py \
+    && python3 scripts/validate.py \
+    && rm -rf _site && mkdir _site \
+    && tar --exclude=./.git --exclude=./_site -cf - . | tar -xf - -C _site
+  """
+  publish = "_site"
+
+  # Skip production builds: main is served by GitHub Pages, and a second
+  # production copy on *.netlify.app would only cost build minutes.
+  # Exit 0 skips the build, exit 1 runs it.
+  ignore = '[ "$CONTEXT" = "production" ] && exit 0 || exit 1'
