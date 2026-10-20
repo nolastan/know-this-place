@@ -64,7 +64,7 @@ UPPERCASE = from this page's `data.json` / `shared/site-config.json`.
 Hub pages have no map, so they keep the old chrome — a `.site-header`
 holding the `.wordmark` link and the breadcrumb `<nav>` with its
 `aria-current` leaf. On an address page both ride on the map instead: the
-brand as a chip top-left, the crumb trail over a `.crumb-meta` line of parcel
+brand top-left, the same `.wordmark` treatment with a halo instead of a chip, the crumb trail over a `.crumb-meta` line of parcel
 identifiers (district, block/lot, ZIP) in a frosted chip bottom-right. The
 identifiers render only there — never as a hero tag, a spec row, or in the
 `.sub` — and the trail names ancestors only, since the leaf is the page
@@ -419,7 +419,8 @@ an answer.
 An address page **opens with the map**: `.map-shell` is the first element of
 `<body>`, and the `<ktp-map>` inside it bleeds to the viewport's top, right
 and left edges rather than stopping at the page frame. The page's chrome
-rides on it — the `.map-brand` chip top-left, the `.map-id` chip (crumb trail
+rides on it — the `.map-brand` logotype top-left (no chip: the same mark as
+`.wordmark`, haloed so it reads on any tile), the `.map-id` chip (crumb trail
 over parcel identifiers) bottom-right. The facade then sits in the hero's
 media slot and **rides over the band's lower-left edge** — `.media-lift`
 pulls it up and gives it a shadow, so the card reads as pinned to the map

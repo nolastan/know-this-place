@@ -121,7 +121,20 @@ body {
   border-bottom: 1px solid var(--rule);
   font-family: var(--sans);
 }
-.wordmark { font-weight: 700; letter-spacing: 0.01em; text-decoration: none; color: var(--ink); }
+/* The logotype. One treatment on every page — the header of a hub or listing,
+   the address page's map band, the homepage map — so the name reads as the
+   same mark wherever a reader lands. It stands on its own, with no chip
+   behind it: brick, heavy and a step larger than the chrome around it. Over
+   a map it wears a halo of the page's own ground (.map-brand, below), which
+   on paper is invisible, so the mark looks identical in both places. */
+.wordmark, .map-brand {
+  display: inline-block; margin: 0;
+  font-family: var(--sans); font-size: 1.25rem; font-weight: 800;
+  line-height: 1.2; letter-spacing: -0.01em;
+  text-decoration: none; color: var(--accent);
+  transition: opacity 0.15s;
+}
+a.wordmark:hover, a.map-brand:hover { opacity: 0.75; }
 .breadcrumb { margin-top: 0.35rem; font-size: 0.85rem; color: var(--muted); }
 .breadcrumb a { color: var(--muted); text-decoration: none; }
 .breadcrumb a:hover { color: var(--accent); }
@@ -141,19 +154,19 @@ body {
   background: var(--note-bg);
   border-bottom: 1px solid var(--rule);
 }
+/* Over a map: where the header would have put it — the page frame's left
+   gutter, at the header's top padding — so the mark doesn't jump between a
+   map page and a listing. The halo keeps it legible on any tile. */
 .map-brand {
   position: absolute; z-index: 2;
-  top: 0; left: 0.5rem;
-  padding: 0;
-  font-family: var(--sans); font-weight: 700; letter-spacing: 0.01em;
-  text-decoration: none; color: var(--accent);
-  background: none; border: none;
-  border-radius: var(--radius); box-shadow: none;
-  transition: opacity 0.15s;
+  top: 1.25rem;
+  left: max(1.25rem, calc((100% - var(--wide)) / 2 + 1.25rem));
+  text-shadow:
+    0 0 1px var(--paper), 0 0 2px var(--paper),
+    0 0 3px var(--paper), 0 0 6px var(--paper);
 }
-.map-brand:hover { opacity: 0.75; }
 /* Where this page sits, as a map control: the crumb trail over the parcel's
-   identifiers. The same chip treatment as .map-brand — token-driven, so it
+   identifiers. The homepage popups' chip treatment — token-driven, so it
    follows the colour scheme like the rest of the page. */
 .map-id {
   position: absolute; z-index: 2;

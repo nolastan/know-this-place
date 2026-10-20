@@ -10,7 +10,7 @@
   <link rel="icon" href="/shared/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/shared/site.webmanifest">
-  <link rel="stylesheet" href="/shared/site.css?v=1eae9536">
+  <link rel="stylesheet" href="/shared/site.css?v=fba8a4dd">
   <link rel="stylesheet" href="https://use.hugeicons.com/font/icons.css">
   <script type="module" src="/shared/site.js"></script>
   <!-- The homepage is a map, and the only page on the site that carries its
@@ -51,19 +51,17 @@
       }
     }
 
-    /* Overlays. Both wear the popup's chip treatment so they stay legible on
-       either basemap. */
-    .map-brand, .map-cue {
+    /* Overlays. The logotype is site.css's .map-brand, the same mark every
+       page wears; the cue wears the popup's chip treatment so it stays
+       legible on either basemap. */
+    .map-brand {
+      pointer-events: none;   /* never eat a click meant for a dot beneath it */
+    }
+    .map-cue {
       position: absolute; z-index: 2;
       font-family: var(--sans); text-decoration: none; color: var(--ink);
       background: var(--panel); border: 1px solid var(--rule);
       border-radius: var(--radius); box-shadow: 0 2px 10px rgb(0 0 0 / 0.12);
-    }
-    .map-brand {
-      top: 1rem; left: 1rem;
-      padding: 0.5rem 0.8rem;
-      font-weight: 700; letter-spacing: 0.01em;
-      pointer-events: none;   /* never eat a click meant for a dot beneath it */
     }
     /* The wheel belongs to the map, so this is how the reader gets past it —
        on a touchscreen it is the only way. Keep it. */
