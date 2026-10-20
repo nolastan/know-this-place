@@ -196,13 +196,14 @@ body {
 /* The building's marker, drawn by <ktp-map> at the centre of the image (which
    Mapbox centres on the coordinates; object-fit: cover crops evenly, so the
    centre holds). It is the homepage map's resting dot for a researched
-   address at street level — --warm, a --paper ring, 0.95 opacity, radius 6px
-   to match the circle-radius stop at the band's zoom 16. Mapbox strokes
-   outside the radius, so the border-box is 12px plus the 1.5px ring twice. */
+   address at street level — --warm, a --paper ring, 0.95 opacity — drawn at
+   radius 8px, a step up from the homepage's zoom-16 stop (6px) so it holds its
+   own across the full-bleed band. Mapbox strokes outside the radius, so the
+   border-box is 16px plus the 1.5px ring twice. */
 .map-dot {
   position: absolute; z-index: 1;
   top: 50%; left: 50%;
-  width: 15px; height: 15px;
+  width: 19px; height: 19px;
   transform: translate(-50%, -50%);
   background: var(--warm);
   border: 1.5px solid var(--paper);
