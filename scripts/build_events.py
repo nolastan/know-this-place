@@ -122,6 +122,7 @@ def build_geojson(events: list, names: dict) -> int:
             "tm": time_range(ev),
             "s": names.get(ev.get("source"), ev.get("source") or ""),
             "p": ev["path"],
+            "u": ev.get("url") or "",
         }
         features.append({
             "type": "Feature",

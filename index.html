@@ -94,27 +94,61 @@
        mapbox-gl's own strip. The wordmark is left exactly as Mapbox draws it. */
     .mapboxgl-ctrl-attrib.mapboxgl-compact:not(.mapboxgl-compact-show) { background: #ffffff80; }
     .mapboxgl-ctrl-attrib.mapboxgl-compact:not(.mapboxgl-compact-show) .mapboxgl-ctrl-attrib-button { opacity: 0.6; }
-    /* The hovercard over a news dot. The plain popup is a one-line chip with an
-       address in it; this one carries the story, so it drops the chip's weight
-       and hangs the headline and outlet under the address in the same order the
-       card below uses. */
-    .map-newspop .mapboxgl-popup-content { padding: 0.5rem 0.7rem; font-weight: 400; }
-    .map-newscard strong { font-family: var(--sans); font-weight: 700; }
-    .map-newscard em {
-      display: block; margin-top: 0.25rem;
-      font-family: var(--serif); font-size: 0.95rem; line-height: 1.35;
+    /* The card a dot opens on click — a chip grown into a small version of the
+       page it leads to: the Street View still, then the page's own <h1> and
+       .sub, then, on a news or event dot, the story or the listing, and last
+       the links. It opens on click rather than hover so that it holds still
+       long enough to be clicked through, and so a touchscreen gets it too. */
+    /* Above the wordmark and the news cue, which the card may open under. */
+    .map-cardpop { z-index: 3; }
+    .map-cardpop .mapboxgl-popup-content { padding: 0; font-weight: 400; overflow: hidden; }
+    .map-card { width: min(17rem, 75vw); }
+    .map-card .media { margin: 0; border: 0; border-bottom: 1px solid var(--rule); border-radius: 0; }
+    .map-card .media img, .map-card .media-empty { aspect-ratio: 16 / 9; }
+    .map-card .media-empty { padding: 0; }
+    .map-card-body { padding: 0.6rem 0.75rem 0.7rem; }
+    .map-card-title {
+      margin: 0; font-family: var(--serif); font-size: 1.1rem;
+      font-weight: 650; line-height: 1.25;
     }
-    .map-newscard small { display: block; margin-top: 0.2rem; color: var(--muted); }
-
-    /* The event hovercard wears the same grammar — the listing's own title,
-       then the when and the where, then who is listing it. */
-    .map-eventpop .mapboxgl-popup-content { padding: 0.5rem 0.7rem; font-weight: 400; }
-    .map-eventcard strong { font-family: var(--sans); font-weight: 700; }
-    .map-eventcard .map-event-when {
-      display: block; margin-top: 0.25rem;
+    .map-card-sub {
+      margin: 0.15rem 0 0;
+      font-family: var(--sans); font-size: 0.8rem; color: var(--muted);
+    }
+    .map-card-story {
+      margin: 0.55rem 0 0; padding-top: 0.5rem; border-top: 1px solid var(--rule);
       font-family: var(--sans); font-size: 0.85rem;
     }
-    .map-eventcard small { display: block; margin-top: 0.2rem; color: var(--muted); }
+    .map-card-story > * { display: block; }
+    .map-card-story em { font-family: var(--serif); font-size: 0.95rem; line-height: 1.35; }
+    .map-card-story strong { font-weight: 600; }
+    .map-card-story span { margin-top: 0.15rem; }
+    .map-card-story small { margin-top: 0.2rem; color: var(--muted); font-size: 0.78rem; }
+    /* The links are the card's point, so they are buttons: the page itself
+       filled in the accent, the story or listing beside it outlined, the way
+       the occupant panel's offer button is drawn on an address page. */
+    .map-card-links {
+      display: flex; gap: 0.5rem; margin: 0.75rem 0 0;
+      font-family: var(--sans); font-size: 0.85rem; font-weight: 700;
+    }
+    .map-card-links a {
+      flex: 1 1 0; display: flex; align-items: center; justify-content: center;
+      padding: 0.5rem 0.6rem; white-space: nowrap; text-decoration: none;
+      border: 1px solid var(--accent); border-radius: var(--radius);
+      color: var(--accent);
+    }
+    .map-card-links a:hover, .map-card-links a:focus-visible { background: var(--note-bg); }
+    .map-card-links a:first-child { background: var(--accent); color: var(--paper); }
+    .map-card-links a:first-child:hover,
+    .map-card-links a:first-child:focus-visible { background: var(--accent); opacity: 0.88; }
+    .map-card-links .ic { font-size: 0.85em; }
+    /* The close button rides on the photo, so it wears the chip too. */
+    .map-cardpop .mapboxgl-popup-close-button {
+      top: 0.4rem; right: 0.4rem; width: 1.6rem; height: 1.6rem;
+      font-size: 1.1rem; line-height: 1; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--rule); border-radius: 50%;
+    }
+    .map-cardpop .mapboxgl-popup-close-button:hover { color: var(--accent); background: var(--panel); }
 
     /* The news is the page's subject now, so its heading is the page's <h1>.
        It sits in the ordinary .section-head band at h2's size: the rank is
@@ -200,7 +234,7 @@
 
        This list is also the map's data: the script at the foot of the page
        reads these cards for the coordinates, the headline and the outlet, and
-       draws each one as a pulsing dot with the story in its hovercard. There
+       draws each one as a pulsing dot with the story on its card. There
        is no second file to keep in step — edit the cards and the map follows. -->
   <ul class="place-cards news-cards">
     <li>
@@ -390,10 +424,10 @@
 
 <script type="module">
 /* The homepage map. Every documented address as one dot, click to open its
-   page. The dots come from shared/addresses.geojson, built by
+   card. The dots come from shared/addresses.geojson, built by
    scripts/build_map_index.py from the same data.json files that render the
-   pages themselves. On top of them sit two pulsing layers, each with a
-   hovercard: the news layer — the dozen addresses in the grid below, in the
+   pages themselves. On top of them sit two pulsing layers, each adding
+   its story to the card: the news layer — the dozen addresses in the grid below, in the
    cool data hue — and the events layer, the next six days of public-space
    events in the violet --event hue, read from shared/events.geojson.
 
@@ -412,6 +446,14 @@ const styleFor = (dark) =>
 const cssVar = (name) =>
   getComputedStyle(document.documentElement).getPropertyValue(name).trim();
 
+/* A dot under the pointer, or the one whose card is open, draws larger, fully
+   opaque and ringed, so the reader can see which dot a click will open. Mapbox
+   only accepts ["zoom"] at the top level of an interpolate, so the state is
+   read inside each stop rather than wrapped around the curve. */
+const LIT = ["any", ["boolean", ["feature-state", "hover"], false],
+                    ["boolean", ["feature-state", "active"], false]];
+const lit = (on, off) => ["case", LIT, on, off];
+
 const dotLayer = () => ({
   id: "addresses",
   type: "circle",
@@ -426,16 +468,18 @@ const dotLayer = () => ({
     // should read as denser than the scattered downtown parcels. Grows to a
     // comfortable click target once you're down at street level.
     "circle-radius": ["interpolate", ["linear"], ["zoom"],
-      10, 0.8, 12, 1.4, 14, 3, 16, 6, 18, 9],
+      ...[[10, 0.8], [12, 1.4], [14, 3], [16, 6], [18, 9]]
+        .flatMap(([z, r]) => [z, lit(r * 1.5 + 2.5, r)])],
     // The grey dots at a third to a half the strength: --muted is lighter than
     // the brick in dark mode, and at full opacity a district of permit-only
     // pages would outshine the researched ones it is meant to sit behind.
     "circle-opacity": ["interpolate", ["linear"], ["zoom"],
-      10, ["case", ["has", "r"], 0.45, 0.15],
-      13, ["case", ["has", "r"], 0.7, 0.22],
-      15, ["case", ["has", "r"], 0.95, 0.5]],
+      10, lit(1, ["case", ["has", "r"], 0.45, 0.15]),
+      13, lit(1, ["case", ["has", "r"], 0.7, 0.22]),
+      15, lit(1, ["case", ["has", "r"], 0.95, 0.5])],
     "circle-stroke-color": cssVar("--paper"),
-    "circle-stroke-width": ["interpolate", ["linear"], ["zoom"], 15, 0, 17, 1.5],
+    "circle-stroke-width": ["interpolate", ["linear"], ["zoom"],
+      12, lit(1.5, 0), 15, lit(2, 0), 17, lit(2.5, 1.5)],
   },
 });
 
@@ -443,7 +487,7 @@ const dotLayer = () => ({
    second data file. The cards are already the list of what the news module
    published, so taking the map's news layer from the same markup means the two
    cannot drift: a run that adds a card adds a dot, and one that drops a card
-   drops it. Everything the hovercard shows is text that is already on the page.
+   drops it. Everything the card adds is text that is already on the page.
    Coordinates come off <ktp-streetview location="LAT,LNG">, which the card
    copies verbatim from the page's own data.json. */
 const newsFeatures = () =>
@@ -459,6 +503,7 @@ const newsFeatures = () =>
         p: li.querySelector(".card-label")?.closest("a")?.getAttribute("href") ?? "",
         h: li.querySelector(".card-news em")?.textContent ?? "",
         o: li.querySelector(".card-outlet")?.textContent.trim() ?? "",
+        u: li.querySelector(".card-outlet")?.getAttribute("href") ?? "",
         // Where this dot sits in the pulse cycle, 0 → 1. Stepping by the golden
         // ratio spreads any number of dots evenly with no two neighbours in the
         // grid firing together, so the rings take turns instead of beating as one.
@@ -507,10 +552,11 @@ const pulseLayers = (prefix, color) => [
     source: prefix,
     paint: {
       "circle-color": cssVar(color),
-      "circle-radius": newsRadius(1),
-      "circle-opacity": 0.95,
+      "circle-radius": newsRadius(lit(1.4, 1)),
+      "circle-opacity": lit(1, 0.95),
       "circle-stroke-color": cssVar("--paper"),
-      "circle-stroke-width": ["interpolate", ["linear"], ["zoom"], 12, 0.6, 16, 1.5],
+      "circle-stroke-width": ["interpolate", ["linear"], ["zoom"],
+        12, lit(1.5, 0.6), 16, lit(2.5, 1.5)],
     },
   },
 ];
@@ -587,23 +633,7 @@ function pulse(map) {
   sync();
 }
 
-/* The hovercard. Built as nodes from text already in the DOM — never a string
-   of HTML — so a headline with an ampersand or a quote in it stays a headline. */
-const newsCard = ({ t, h, o }) => {
-  const card = document.createElement("div");
-  card.className = "map-newscard";
-  const address = document.createElement("strong");
-  address.textContent = t;
-  const headline = document.createElement("em");
-  headline.textContent = h;
-  const outlet = document.createElement("small");
-  outlet.textContent = o;
-  card.append(address, headline, outlet);
-  return card;
-};
-
-/* The event hovercard: the listing's own title, then when and where, then
-   the calendar that published it. The day is worked out here, off "d", in
+/* An event's day. It is worked out here, off "d", in
    San Francisco's time zone — like the six-day window, so a build a day old
    never calls yesterday "Today". The window never reaches the same weekday
    twice, so a bare weekday ("Tuesday") is never ambiguous and needs no date. */
@@ -616,18 +646,71 @@ const eventDay = (iso) => {
   if (day === sfDate(Date.now() + 86400e3)) return "Tomorrow";
   return DAY_FMT.format(new Date(iso));
 };
-const eventCard = ({ t, d, tm, v, s }) => {
-  const card = document.createElement("div");
-  card.className = "map-eventcard";
-  const title = document.createElement("strong");
-  title.textContent = t;
-  const when = document.createElement("span");
-  when.className = "map-event-when";
-  when.textContent = [`${eventDay(d)}, ${tm}`, v].filter(Boolean).join(" · ");
-  const source = document.createElement("small");
-  source.textContent = s;
-  card.append(title, when, source);
-  return card;
+const el = (tag, cls, text) => {
+  const n = document.createElement(tag);
+  if (cls) n.className = cls;
+  if (text != null) n.textContent = text;
+  return n;
+};
+const link = (href, text, external) => {
+  const a = el("a", "", text);
+  a.href = href;
+  if (external) {
+    // The same nowrap pairing the news cards use, so the icon never strands.
+    const ext = el("span", "card-ext", "\u00a0");
+    const ic = el("span", "ic ic-link");
+    ic.setAttribute("aria-hidden", "true");
+    ext.append(ic);
+    a.append(ext);
+  }
+  return a;
+};
+
+/* The card. Built as nodes from text already in the page or its index —
+   never a string of HTML — so a headline with an ampersand or a quote in it
+   stays a headline. `place` is the page's own feature from addresses.geojson:
+   its heading and .sub, and the coordinates its Street View is taken from,
+   the same ones the page's own <ktp-streetview> uses. The Street View is that
+   element too, so it arrives exactly as it does on the page — the image when
+   a key is configured, the pin placeholder when there isn't one. */
+const card = (place, story, links) => {
+  const [lng, lat] = place.geometry.coordinates;
+  const { t, s } = place.properties;
+  const root = el("article", "map-card");
+  const sv = el("ktp-streetview");
+  sv.setAttribute("location", `${lat},${lng}`);
+  sv.setAttribute("label", t);
+  const fig = el("figure", "media");
+  const empty = el("div", "media-empty");
+  empty.append(el("span", "ic ic-pin"));
+  fig.append(empty);
+  sv.append(fig);
+  const body = el("div", "map-card-body");
+  body.append(el("p", "map-card-title", t));
+  if (s) body.append(el("p", "map-card-sub", s));
+  if (story) body.append(story);
+  const row = el("p", "map-card-links");
+  row.append(...links);
+  body.append(row);
+  root.append(sv, body);
+  return root;
+};
+
+/* A news dot adds the headline and the outlet, in the order the grid's card
+   uses; an event dot adds the listing's own title, the when, and the calendar
+   that published it. The venue is named only when it is not the page itself. */
+const newsStory = ({ h, o }) => {
+  const p = el("p", "map-card-story");
+  p.append(el("em", "", h), el("small", "", o));
+  return p;
+};
+const eventStory = ({ t, d, tm, v, s }, place) => {
+  const p = el("p", "map-card-story");
+  const where = v && v !== place.properties.t ? v : "";
+  p.append(el("strong", "", t),
+           el("span", "", [`${eventDay(d)}, ${tm}`, where].filter(Boolean).join(" · ")),
+           el("small", "", s));
+  return p;
 };
 
 /* The index is fetched here rather than handed to Mapbox as a URL so we can
@@ -637,11 +720,14 @@ const eventCard = ({ t, d, tm, v, s }) => {
    map silently lags the site: newly documented addresses are simply missing,
    with nothing to indicate it. site.js reads site-config.json the same way,
    for the same reason. */
-let addresses, events;
+let addresses, events, byPath;
 async function addAddresses(map) {
   addresses ??= await (await fetch("/shared/addresses.geojson", { cache: "no-cache" })).json();
+  byPath ??= new Map(addresses.features.map((f) => [f.properties.p, f]));
+  /* generateId gives every dot an id, which is what feature state — the hover
+     and the open card — is keyed on. */
   if (!map.getSource("addresses")) {
-    map.addSource("addresses", { type: "geojson", data: addresses });
+    map.addSource("addresses", { type: "geojson", data: addresses, generateId: true });
   }
   if (!map.getLayer("addresses")) map.addLayer(dotLayer());
 
@@ -652,7 +738,7 @@ async function addAddresses(map) {
      scheme's hues. */
   if (!map.getSource("news")) {
     map.addSource("news", {
-      type: "geojson",
+      type: "geojson", generateId: true,
       data: { type: "FeatureCollection", features: newsFeatures() },
     });
   }
@@ -667,7 +753,7 @@ async function addAddresses(map) {
   } catch { /* no events layer this load */ }
   if (events && !map.getSource("events")) {
     map.addSource("events", {
-      type: "geojson",
+      type: "geojson", generateId: true,
       data: { type: "FeatureCollection", features: eventFeatures(events) },
     });
   }
@@ -738,81 +824,76 @@ async function init() {
   dark.addEventListener("change", (e) => map.setStyle(styleFor(e.matches)));
 
   const popup = new mapboxgl.Popup({
-    closeButton: false, closeOnClick: false, offset: 10,
-  });
-  const newsPopup = new mapboxgl.Popup({
-    closeButton: false, closeOnClick: false, offset: 12,
-    className: "map-newspop", maxWidth: "17rem",
-  });
-  const eventPopup = new mapboxgl.Popup({
-    closeButton: false, closeOnClick: false, offset: 12,
-    className: "map-eventpop", maxWidth: "17rem",
+    closeButton: true, closeOnClick: false, offset: 12,
+    className: "map-cardpop", maxWidth: "none",
   });
 
-  /* A news dot sits on top of the plain dot for the same address, so both
-     layers answer a hover there. The news layer wins: it says everything the
-     plain chip does and then the story. An event dot sits over both, for the
-     same reason it draws last. */
-  const overEvent = (e) =>
-    map.getLayer("events-dot") &&
-    map.queryRenderedFeatures(e.point, { layers: ["events-dot"] }).length > 0;
-  const overNews = (e) =>
-    !overEvent(e) && map.getLayer("news-dot") &&
-    map.queryRenderedFeatures(e.point, { layers: ["news-dot"] }).length > 0;
+  /* Which dot is under a point. An event dot sits over the news dot, which
+     sits over the plain dot for the same address, so the layers are asked in
+     that order and the top one answers: it says everything the one beneath
+     does and then more. A few pixels of slack make a dot at city zoom — a
+     pixel or two across — something a finger can hit. */
+  const DOTS = ["events-dot", "news-dot", "addresses"];
+  const SLACK = 4;
+  const dotAt = (pt) => {
+    const layers = DOTS.filter((id) => map.getLayer(id));
+    if (!layers.length) return null;
+    const hits = map.queryRenderedFeatures(
+      [[pt.x - SLACK, pt.y - SLACK], [pt.x + SLACK, pt.y + SLACK]], { layers });
+    for (const id of layers) {
+      const near = hits.filter((f) => f.layer.id === id);
+      if (!near.length) continue;
+      const d = (f) => map.project(f.geometry.coordinates).dist(pt);
+      return near.reduce((a, b) => (d(b) < d(a) ? b : a));
+    }
+    return null;
+  };
+  const same = (a, b) => a?.source === b?.source && a?.id === b?.id;
+  const mark = (f, state, on) =>
+    f && map.getSource(f.source) &&
+    map.setFeatureState({ source: f.source, id: f.id }, { [state]: on });
 
-  map.on("mousemove", "addresses", (e) => {
-    if (overNews(e) || overEvent(e)) return;
-    const f = e.features[0];
-    map.getCanvas().style.cursor = "pointer";
-    popup.setLngLat(f.geometry.coordinates)
-         .setText(f.properties.t)
-         .addTo(map);
-  });
-  map.on("mouseleave", "addresses", () => {
-    map.getCanvas().style.cursor = "";
+  let hovered = null, active = null;
+  const hover = (f) => {
+    if (same(f, hovered)) return;
+    mark(hovered, "hover", false);
+    hovered = f;
+    mark(hovered, "hover", true);
+    map.getCanvas().style.cursor = f ? "pointer" : "";
+  };
+  map.on("mousemove", (e) => hover(dotAt(e.point)));
+  map.on("mouseout", () => hover(null));
+  /* A style switch throws the sources away, and their feature state with them. */
+  map.on("style.load", () => { hovered = null; popup.remove(); });
+  popup.on("close", () => { mark(active, "active", false); active = null; });
+
+  /* Every card links to the page of the address or place the dot stands for;
+     a news dot also links the story, and an event dot the calendar's own
+     listing. A click off any dot closes the card, as Escape does. */
+  map.on("click", (e) => {
+    const f = dotAt(e.point);
+    if (!f) { popup.remove(); return; }
+    const props = f.properties;
+    const place = byPath.get(props.p) ?? {
+      geometry: f.geometry, properties: { t: props.t, s: "" },
+    };
+    const here = link(props.p, "See this place");
+    let content;
+    if (f.source === "news") {
+      content = card(place, newsStory(props),
+        [here, ...(props.u ? [link(props.u, "Read article", true)] : [])]);
+    } else if (f.source === "events") {
+      content = card(place, eventStory(props, place),
+        [here, ...(props.u ? [link(props.u, "See event", true)] : [])]);
+    } else {
+      content = card(place, null, [here]);
+    }
     popup.remove();
+    active = f;
+    mark(active, "active", true);
+    popup.setLngLat(f.geometry.coordinates).setDOMContent(content).addTo(map);
   });
-  map.on("click", "addresses", (e) => {
-    if (overNews(e) || overEvent(e)) return;   // the handlers below have this one
-    location.href = e.features[0].properties.p;
-  });
-
-  map.on("mousemove", "news-dot", (e) => {
-    if (overEvent(e)) return;
-    const f = e.features[0];
-    map.getCanvas().style.cursor = "pointer";
-    popup.remove();
-    newsPopup.setLngLat(f.geometry.coordinates)
-             .setDOMContent(newsCard(f.properties))
-             .addTo(map);
-  });
-  map.on("mouseleave", "news-dot", () => {
-    map.getCanvas().style.cursor = "";
-    newsPopup.remove();
-  });
-  map.on("click", "news-dot", (e) => {
-    if (overEvent(e)) return;
-    location.href = e.features[0].properties.p;
-  });
-
-  map.on("mousemove", "events-dot", (e) => {
-    const f = e.features[0];
-    map.getCanvas().style.cursor = "pointer";
-    popup.remove();
-    newsPopup.remove();
-    eventPopup.setLngLat(f.geometry.coordinates)
-              .setDOMContent(eventCard(f.properties))
-              .addTo(map);
-  });
-  map.on("mouseleave", "events-dot", () => {
-    map.getCanvas().style.cursor = "";
-    eventPopup.remove();
-  });
-  /* A dot opens the page of the place the event is at — never the calendar's
-     own listing, which the page's panel links. */
-  map.on("click", "events-dot", (e) => {
-    location.href = e.features[0].properties.p;
-  });
+  addEventListener("keydown", (e) => { if (e.key === "Escape") popup.remove(); });
 }
 
 /* mapbox-gl.js is deferred, so it may not have run yet. */
