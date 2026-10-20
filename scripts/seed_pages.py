@@ -2306,8 +2306,7 @@ def one_survey_panel_html(s: dict, indent: str) -> str:
                       s.get("here_today_page") or prior.get("here_today")),
                      ("1976 architectural survey", dcp_1976),
                      ("Unreinforced masonry survey", s.get("umb_survey")),
-                     ("Heritage rating", s.get("heritage_rating")),
-                     ("Already surveyed by", prior_survey_name(s.get("prior_survey")))):
+                     ("Heritage rating", s.get("heritage_rating"))):
         if val:
             rows.append(("ic-check", key, "Listed" if val is True else str(val)))
     # A status code is opaque on its own, so the code key the survey prints
@@ -2316,6 +2315,19 @@ def one_survey_panel_html(s: dict, indent: str) -> str:
     if meaning and not meaning.endswith("."):
         meaning += "."
     footnote = " ".join(x for x in (meaning, s.get("cr_status_note"), s.get("note")) if x)
+    # Where an earlier survey already covered the parcel, the Central SoMa
+    # table names that survey instead of evaluating the building again. As a
+    # spec row it read like a finding — "Earlier survey: South of Market" —
+    # so it is said in a sentence, and on the 385 pages where it is all the
+    # panel holds, the sentence says that this survey recorded nothing new.
+    prior_name = prior_survey_name(s.get("prior_survey"))
+    if prior_name:
+        if rows or footnote:
+            said = f"This building had already been covered by the earlier {prior_name}."
+        else:
+            said = ("This survey did not evaluate the building. It notes that the "
+                    f"earlier {prior_name} had already done so.")
+        footnote = " ".join(x for x in (said, footnote) if x)
     # Some surveys record nothing codeable about a building and still say
     # something worth keeping — that its address was numbered differently when
     # it went up, or that the report contradicts itself about which building
