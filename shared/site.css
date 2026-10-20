@@ -264,10 +264,11 @@ h1, h2, h3 { line-height: 1.2; font-weight: 650; }
 h1 { font-size: clamp(2rem, 5vw, 2.6rem); margin: 0 0 0.4rem; letter-spacing: -0.01em; }
 /* A name-headed address page leads its <h1> with the building type as a glyph,
    in place of a type tag that would repeat the name. */
-h1.named .type-icon { display: inline-flex; align-items: center; justify-content: center;
-  width: 1em; height: 1em; border: 0.05em solid currentColor; border-radius: 50%;
-  box-sizing: border-box; margin-right: 0.18em; vertical-align: -0.14em; }
-h1.named .type-icon::before { font-size: 0.58em; font-weight: normal; }
+h1.named .type-icon { display: inline-block; overflow: hidden; box-sizing: border-box;
+  width: 0.9em; height: 0.9em; border: 0.05em solid currentColor; border-radius: 50%;
+  margin-right: 0.18em; vertical-align: -0.11em; }
+h1.named .type-icon::before { display: flex; align-items: center; justify-content: center;
+  height: 100%; font-size: 0.55em; font-weight: normal; }
 h2 { font-size: 1.3rem; margin: 0; }
 h3 { font-size: 1.05rem; }
 a { color: var(--accent); }
