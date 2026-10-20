@@ -698,6 +698,9 @@ ZONING = {"RH1": "RH-1", "RH2": "RH-2", "RH3": "RH-3", "RH4": "RH-4",
 
 CEQA_LABEL = {"A": "historic resource", "A*": "historic resource in a district",
               "B": "unevaluated", "C": "not a historical resource"}
+# The hero tag's wording for the same codes. B is left out: "unevaluated" says
+# nothing about the building, so a B page simply carries no tag.
+CEQA_TAG = {"A": "Historic resource", "C": "Not a historic resource"}
 
 # Planning's `ceqacodereason` is a comma-separated list of findings, and it
 # mixes two different subjects: the district a parcel sits in (which the
@@ -707,7 +710,7 @@ CEQA_LABEL = {"A": "historic resource", "A*": "historic resource in a district",
 # landmark inside a district that is only California Register-eligible, so the
 # page said its local landmark protection was none.
 INDIVIDUAL_DESIGNATION = {
-    "Article 10 Individual Landmark": ("ic-check", "City landmark (Article 10)"),
+    "Article 10 Individual Landmark": ("hgi-castle-02", "City landmark"),
     # Not a designation: the work program is the Historic Preservation
     # Commission's list of candidates. The data says so — a parcel whose only
     # local finding is the work program stays CEQA "A", never the "A*" that
@@ -1627,9 +1630,9 @@ def tags_html(rec: dict) -> str:
         out.append(("ic-pin", "Privately owned public open space"
                     + (f" ×{n}" if n > 1 else "")))
     hs = rec.get("historic_status") or {}
-    label = CEQA_LABEL.get((hs.get("ceqa_status_code") or "").strip())
+    label = CEQA_TAG.get((hs.get("ceqa_status_code") or "").strip())
     if label:
-        out.append(("hgi-castle-02", f"Historic status: {label}"))
+        out.append(("hgi-castle-02", label))
     # After the CEQA classification, which is the general finding: a
     # designation is the specific one, and it is the building's own.
     out.extend(individual_designations(rec))
