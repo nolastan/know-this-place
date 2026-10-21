@@ -479,6 +479,25 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   against the page's own header line, and anchor the column template on whichever
   header word the scan preserves best. *Sixty per cent more yield for an hour's
   work, on any table this project will ever read.*
+- **A spreadsheet printed to PDF wraps its long cells upward.** The SoMa
+  survey's results table (exported from Excel) bottom-aligns every cell, so a
+  three-line note or district name sits on the two lines *above* its row's
+  APN and on the row line itself — and a reader that hangs wrapped text on the
+  row before attaches every note to the wrong building. Collect the lines
+  between two APNs per column and give them to the *later* row. Check it on a
+  row whose note names its own neighbour ("shares a lot with 531 Bryant").
+  Two smaller traps in the same export: `pdftotext` repeats the "Low"/"High"
+  header words into the first row of every page, and a street name too long
+  for its column runs into the type column (`COLIN P KELLYST`,
+  `COLUMBIA SQUST`) — the resolver reports both as "no EAS street", which is
+  the cue.
+- **A survey's age cutoff makes most of its rows nothing to publish.** 644 of
+  the SoMa survey's 2,140 rows are buildings under fifty years old or vacant
+  lots, carrying a boilerplate 6Z note and no ratings. Count them in
+  `coverage`, but don't write them as findings: "too young to assess" is
+  not a fact about a building. Of the rest, a 6Z or 6L finding goes on a page
+  that already exists and seeds nothing, so seed only the parcels the survey
+  found significant.
 - **A parser that requires every column throws away good rows.** The same pass
   demanded a four-digit assessor block and silently dropped 200 rows on pages
   where that one column had not survived. Accept a row that still identifies a
