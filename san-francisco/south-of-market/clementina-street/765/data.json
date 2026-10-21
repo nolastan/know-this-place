@@ -1,0 +1,154 @@
+{
+  "address": "765 Clementina Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/clementina-street/765/",
+  "apn": "3729030",
+  "block": "3729",
+  "lot": "030",
+  "eas_baseid": "365270",
+  "coordinates": {
+    "lat": 37.774534,
+    "lng": -122.411473
+  },
+  "parcel": {
+    "year_built": 1927,
+    "stories": 2,
+    "rooms": 3,
+    "bathrooms": 3,
+    "lot_area_sqft": 1875,
+    "building_area_sqft": 2275,
+    "lot_depth_ft": 75,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "D",
+    "zoning": "RED",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0765 CLEMENTINA          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1537774,
+    "assessed_improvement_value": 580292,
+    "last_sale_date": "2016-07-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Western SOMA Light Industrial and Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1936",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201612054186",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-12-05",
+      "status_date": "2017-04-10",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "replace sink only for tattoo studio use. no construction",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201603182497",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2016-03-18",
+      "status_date": "2016-07-13",
+      "estimated_cost": 75000,
+      "description": "separation of residence from business (art activity). expansion of living space on 2nd fl to accomodate residential dwelling unit. limited changes to exterior facade. interior remodel & upgrade. (n) bathroom & kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201002015682",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-02-01",
+      "status_date": "2010-09-21",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "interior remodel-update and enlarge bath/utility room; relocate and update kitchen a few feet forward; add radiant heat floors.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9703906",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-03-04",
+      "status_date": "1997-03-25",
+      "estimated_cost": 13875,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1997–2016",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLEMENTINA&street_type=ST&address_number=765",
+      "retrieved": "2026-10-21"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3729030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-21"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3729&lot=030",
+      "retrieved": "2026-10-21"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3729030",
+      "retrieved": "2026-10-21"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41147260955653%2037.77453394318138)%27)",
+      "retrieved": "2026-10-21"
+    },
+    {
+      "id": "soma-historic-resource-survey",
+      "name": "San Francisco Planning Department, assisted by Page & Turnbull, Inc., South of Market Area Historic Resource Survey (Eastern Neighborhoods SoMa Area Plan and Western SoMa Community Plan survey, 2007–2010) — List of Surveyed Properties, sorted by Street Address; findings adopted by the Historic Preservation Commission on 16 February 2011, Resolution No. 103",
+      "query": "https://default.sfplanning.org/Preservation/soma_survey/ALL_SOMA_SurveyData_by_address.pdf",
+      "listing": "https://sfgov.org/sfplanningarchive/south-market-area-historic-resource-survey",
+      "label": "South of Market Area Historic Resource Survey, 2011",
+      "retrieved": "2026-10-21"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "South of Market Historic Resource Survey (2011)",
+      "proposed_status_code": "3D",
+      "status_code_meaning": "3D — appears eligible for the National Register as a contributor to an eligible district, through survey evaluation",
+      "eligible_district": "West SOMA Light Industrial and Residential",
+      "physical_integrity": "7 of 7",
+      "note": "Architecture rated 3 of 5, where 4 and 5 mark buildings that may be individually eligible for the California or National Register and 1 the plainest or most altered.",
+      "source": "soma-historic-resource-survey"
+    }
+  ]
+}

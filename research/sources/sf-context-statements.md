@@ -22,9 +22,9 @@ document you are about to mine.
 
 | | |
 |---|---|
-| **Read in full** | 45 documents — listed under "Read into the repo so far" below, each with its own notes section. **The count is the length of that list**, checked on 2026-09-02. The biographies collection is **one entry for eight PDFs**, so finishing it — volumes S–U and V–Z on 2026-09-02 — did not change it. If you add a document, add it to the list and count the list. |
-| **Findings files** | 44: [`market-octavia-hcs`](../findings/sf-context-statements/market-octavia-hcs.json) (496 findings, 425 published, 71 declined), [`mission-dolores-hcs`](../findings/sf-context-statements/mission-dolores-hcs.json) (83 findings, 66 published), [`van-ness-auto-row`](../findings/sf-context-statements/van-ness-auto-row.json) (453 findings, 352 published, 101 declined), [`carnegie-libraries`](../findings/sf-context-statements/carnegie-libraries.json) (2 findings, 1 published, 1 declined), [`north-beach-hcs`](../findings/sf-context-statements/north-beach-hcs.json) (630 findings, 551 published on 350 pages, 2 declined, 77 unresolved), [`japantown-hcs`](../findings/sf-context-statements/japantown-hcs.json) (125 findings, 83 published on 53 pages, 39 unresolved, 3 rejected), [`russian-hill-hcs`](../findings/sf-context-statements/russian-hill-hcs.json) (109 findings, 57 published on 48 pages, 10 declined, 41 unresolved, 1 rejected), and [`parkside-hcs`](../findings/sf-context-statements/parkside-hcs.json) (160 findings, 147 published on 142 pages, 4 declined, 9 unresolved) [`oceanside-hcs`](../findings/sf-context-statements/oceanside-hcs.json) (32 findings, 20 published on 19 pages, 12 unresolved) [`transit-center-district-survey`](../findings/sf-context-statements/transit-center-district-survey.json) (316 findings, 211 published on 123 pages, 50 declined, 55 unresolved) [`showplace-square-survey`](../findings/sf-context-statements/showplace-square-survey.json) (941 findings, 576 published on 314 pages, 247 declined, 118 unresolved) [`sunset-builders-hcs`](../findings/sf-context-statements/sunset-builders-hcs.json) (158 findings, 143 published on 143 pages, 1 declined, 14 unresolved) [`ppie-marina-hcs`](../findings/sf-context-statements/ppie-marina-hcs.json) (109 findings, 86 published on 86 pages, 2 declined, 21 unresolved) and [`earthquake-shacks`](../findings/sf-context-statements/earthquake-shacks.json) (11 findings, 5 published on 5 pages, 1 declined, 5 unresolved) and [`neighborhood-commercial-hcs`](../findings/sf-context-statements/neighborhood-commercial-hcs.json) (99 findings, 76 published on 75 pages, 7 declined, 16 unresolved) and [`large-apartment-hcs`](../findings/sf-context-statements/large-apartment-hcs.json) (89 findings, 58 published on 52 pages, 14 declined, 17 unresolved) and [`flats-small-apartments-hcs`](../findings/sf-context-statements/flats-small-apartments-hcs.json) (72 findings, 52 published on 52 pages, 1 declined, 19 unresolved). and [`umb-survey`](../findings/sf-context-statements/umb-survey.json) (200 findings, 159 published on 159 pages, 8 declined, 33 unresolved) and [`umb-survey-ratings`](../findings/sf-context-statements/umb-survey-ratings.json) (1,902 findings, 1,451 published on 1,433 pages, 50 declined, 401 unresolved) and [`new-deal-hcs`](../findings/sf-context-statements/new-deal-hcs.json) (138 findings, 99 published on 76 pages, 2 declined, 37 unresolved, 3 rejected) and [`african-american-hcs`](../findings/sf-context-statements/african-american-hcs.json) (248 findings, 180 published on 174 pages, 5 declined, 64 unresolved) and [`lgbtq-hcs`](../findings/sf-context-statements/lgbtq-hcs.json) (382 findings, 289 published on 280 pages, 18 declined, 75 unresolved) and [`russian-american-hcs`](../findings/sf-context-statements/russian-american-hcs.json) (365 findings, 177 published on 162 pages, 22 declined, 166 unresolved). and [`victorian-era-styles`](../findings/sf-context-statements/victorian-era-styles.json) (45 findings, 37 published on 37 pages, 6 declined, 2 unresolved) and [`progressive-era-styles`](../findings/sf-context-statements/progressive-era-styles.json) (69 findings, 63 published on 62 pages, 1 declined, 4 unresolved, 1 rejected) and [`early-settlement-era-styles`](../findings/sf-context-statements/early-settlement-era-styles.json) (32 findings, 29 published on 28 pages, 1 declined, 1 unresolved, 1 rejected) and [`modernistic-styles`](../findings/sf-context-statements/modernistic-styles.json) (25 findings, 20 published on 20 pages, 3 declined, 2 unresolved) and [`modern-postmodern-styles`](../findings/sf-context-statements/modern-postmodern-styles.json) (224 findings, 182 published on 177 pages, 7 declined, 35 unresolved) and [`biographies-a-c`](../findings/sf-context-statements/biographies-a-c.json) (412 findings, 317 published on 312 pages, 36 declined, 59 unresolved) and [`biographies-d-f`](../findings/sf-context-statements/biographies-d-f.json) (208 findings, 137 published on 137 pages, 53 declined, 18 unresolved). and [`early-residential-development`](../findings/sf-context-statements/early-residential-development.json) (26 findings, 18 published on 18 pages, 8 declined, 0 unresolved). and [`soma-filipino-heritage`](../findings/sf-context-statements/soma-filipino-heritage.json) (120 findings, 71 published on 62 pages, 16 declined, 33 unresolved) and [`clubs-social-halls`](../findings/sf-context-statements/clubs-social-halls.json) (53 findings, 38 published on 41 pages, 7 declined, 8 unresolved) and [`modern-architecture-landscape`](../findings/sf-context-statements/modern-architecture-landscape.json) (466 findings, 273 published on 268 pages, 144 declined, 49 unresolved). and [`sexual-identity-subcultures`](../findings/sf-context-statements/sexual-identity-subcultures.json) (188 findings, 114 published on 63 pages, 34 declined, 39 unresolved, 1 rejected) and [`counterculture-hcs`](../findings/sf-context-statements/counterculture-hcs.json) (111 findings, 72 published on 71 pages, 7 declined, 12 unresolved, 20 rejected) and [`lgbtq-heritage-strategy`](../findings/sf-context-statements/lgbtq-heritage-strategy.json) (0 findings — a policy document with no address-level content). and [`biographies-g-i`](../findings/sf-context-statements/biographies-g-i.json) (176 findings, 115 published on 115 pages, 30 declined, 31 unresolved). and [`biographies-j-l`](../findings/sf-context-statements/biographies-j-l.json) (125 findings, 91 published on 90 pages, 14 declined, 20 unresolved). and [`biographies-m-o`](../findings/sf-context-statements/biographies-m-o.json) (247 findings, 158 published on 157 pages, 54 declined, 35 unresolved). and [`biographies-p-r`](../findings/sf-context-statements/biographies-p-r.json) (223 findings, 126 published on 125 pages, 61 declined, 36 unresolved). and [`biographies-s-u`](../findings/sf-context-statements/biographies-s-u.json) (152 findings, 75 published on 74 pages, 35 declined, 39 unresolved, 3 rejected). and [`biographies-v-z`](../findings/sf-context-statements/biographies-v-z.json) (96 findings, 43 published on 43 pages, 39 declined, 13 unresolved, 1 rejected). and [`south-of-market-hcs`](../findings/sf-context-statements/south-of-market-hcs.json) (155 findings, 103 published on 96 pages, 14 declined, 38 unresolved). All forty-four loops closed. **This count is itself behind**: it does not yet include `market-octavia-survey-forms`, `van-ness-auto-row-forms` (both read 2026-09-03) or [`market-octavia-district-records`](../findings/sf-context-statements/market-octavia-district-records.json) (434 findings, 370 published on 359 pages, 1 declined, 63 unresolved — the Pine Street Auto Shops potential district and the Hayes Valley Residential Historic District's two updates, read 2026-09-22; see `findings/INDEX.md` for the full current list rather than trusting this line). |
-| **Remaining** | **No adopted statement is left unacquired.** #115 asked for the Market & Octavia Historic Resources Survey (the per-property record the 2007 context statement doesn't carry); this line said "still to acquire" long after `market-octavia-survey-forms` answered it on 2026-09-03 — a stale note that cost a 2026-09-22 session a full read-and-resolve pass on the already-published `market-octavia-hcs` context statement before the duplication was caught. The three **district-level** DPR 523 records the survey-forms pass read but did not extract are now also read (`market-octavia-district-records`, above) — 429 of their 434 rows are contributor-status *designations*, not construction facts, and were published to `historic_survey` panels rather than the timeline, since `check.py --overlap` found the appendix year-built rows in the sibling `market-octavia-hcs`/`-survey-forms` batches restate what the page already shows from the assessor roll. What is genuinely left: the `construction_history_as_recorded` alterations held in 111 already-published forms, unextracted because they need re-expressing one at a time; the Hayes Valley district's original 372 contributors, identified by a 1997 Caltrans survey and never individually listed anywhere this module has found; and the South of Market Area Plan Survey's 1,128 DPR 523 forms (165 with 523B forms, 4 district 523D forms) the South of Market statement cites as "attached" but does not contain — an acquire pass the same shape as #115, and a much larger yield. Search open issues for `sf-context-statements`. |
+| **Read in full** | 46 documents — listed under "Read into the repo so far" below, each with its own notes section. **The count is the length of that list**, checked on 2026-09-02; 46 with the SoMa survey table on 2026-10-21. The biographies collection is **one entry for eight PDFs**, so finishing it — volumes S–U and V–Z on 2026-09-02 — did not change it. If you add a document, add it to the list and count the list. |
+| **Findings files** | One per document, under `findings/sf-context-statements/`. **Their counts are in [findings/INDEX.md](../findings/INDEX.md)**, which is generated from the files and cannot go stale; this cell used to list them by hand, ran to 6 KB, and said of itself that it was behind (removed 2026-10-21). |
+| **Remaining** | **No adopted statement is left unacquired.** #115 asked for the Market & Octavia Historic Resources Survey (the per-property record the 2007 context statement doesn't carry); this line said "still to acquire" long after `market-octavia-survey-forms` answered it on 2026-09-03 — a stale note that cost a 2026-09-22 session a full read-and-resolve pass on the already-published `market-octavia-hcs` context statement before the duplication was caught. The three **district-level** DPR 523 records the survey-forms pass read but did not extract are now also read (`market-octavia-district-records`, above) — 429 of their 434 rows are contributor-status *designations*, not construction facts, and were published to `historic_survey` panels rather than the timeline, since `check.py --overlap` found the appendix year-built rows in the sibling `market-octavia-hcs`/`-survey-forms` batches restate what the page already shows from the assessor roll. What is genuinely left: the `construction_history_as_recorded` alterations held in 111 already-published forms, unextracted because they need re-expressing one at a time; the Hayes Valley district's original 372 contributors, identified by a 1997 Caltrans survey and never individually listed anywhere this module has found; and the South of Market survey's six district records (South Park, South End Addition, Bluxome and Townsend, 6th Street Lodginghouse, Western SoMa Light Industrial and Residential, read for their contributor descriptions — the next batch, on disk at `corpora/sf-context-statements/soma-survey/`). The survey's per-property results table, which the statement cites as "attached", is read (`soma-survey`, 2026-10-21); its individual DPR 523A/B forms sit behind the survey's interactive map and are not fetched. Search open issues for `sf-context-statements`. |
 | **Batch unit** | one statement = one run. Most are 60–260 pages and go end to end in a session; take a second one if the first finishes early. |
 | **Reading order** | the earlier statements each taught something the next one needed. The two under "Traps that apply to every statement" below are the ones nobody should re-learn. |
 
@@ -914,7 +914,20 @@ document you are about to mine.
     523B forms) are referenced throughout as "attached" but are not in this
     PDF and were not located — a separate acquire pass, the same shape as
     issue #115 for the Market & Octavia survey, would be a much larger yield.
-    See "The South of Market statement" below.
+    See "The South of Market statement" below. **Located and read 2026-10-21**
+    — next entry.
+  - San Francisco Planning Department, assisted by Page & Turnbull, Inc.,
+    *South of Market Area Historic Resource Survey* (the Eastern
+    Neighborhoods SoMa Area Plan and Western SoMa Community Plan survey,
+    2007–2010; findings adopted by the HPC 16 February 2011, Resolution
+    No. 103), its "List of Surveyed Properties, sorted by Street Address"
+    (122 pp.), page source id `soma-historic-resource-survey`. Listed on the
+    Planning archive page
+    `https://sfgov.org/sfplanningarchive/south-market-area-historic-resource-survey`;
+    the files are plain fetches under
+    `https://default.sfplanning.org/Preservation/soma_survey/` and
+    `https://default.sfplanning.org/GIS/SouthSoMa/Docs/`. See "The South of
+    Market survey table" below.
 - **Shape of the yield.** Two very different parts, and both are worth the
   pass:
   - **Appendix A, Table 1** is a per-property inventory — 159 rows carrying an
@@ -2507,6 +2520,53 @@ other work.
   Statement, FINAL, June 30, 2009; SF Planning lists it as adopted 2011`. Page
   source id `south-of-market-hcs`; the S3 URL is both the citation and the
   fetch — a plain fetch, no vault shell.
+
+## The South of Market survey table
+
+The per-property record the 2009 South of Market statement cites as
+"attached". It was never on the current sfplanning.org site; the archived
+Planning site (`sfgov.org/sfplanningarchive`, frozen February 2019) still
+lists every survey file, and they all fetch plainly.
+
+- **What is on the page.** The results table twice (sorted by address and by
+  block-lot — the same 2,140 rows), a Key to its two ratings, the state
+  status-code sheet, a findings map, an FAQ, and six DPR 523D district
+  records: South Park (47 pp.), South End Historic District Addition (10),
+  Bluxome and Townsend (10), 6th Street Lodginghouse (2), and the Western
+  SoMa Light Industrial and Residential district (124, with its 721-property
+  list). The individual 523A/B forms are only behind the interactive map.
+- **What a row gives.** APN, a low and high street number, street, year built
+  as surveyed, a California status code, the district (only where the parcel
+  is inside one), an integrity rating 0–7, an architecture rating 1–5 (the
+  Key: 4 and 5 may be individually eligible, 30 buildings rated 5), a notes
+  column that is mostly the historic building or firm name, and the plan area.
+- **How it was published.** A `historic_survey` panel headed "South of
+  Market Historic Resource Survey (2011)": the code and its meaning, the
+  district (`eligible_district` for a contributor code, `existing_district`
+  otherwise), integrity as "N of 7", the architecture rating in `note`, the
+  name in `entries`, and `year_built_as_surveyed` where it differs from the
+  roll. Four notes credit an architect (Mario Ciampi, Frederick H. Meyer,
+  Sutton & Weeks, Weeks & Day), carried as `architect_as_surveyed`. The
+  notes column's descriptive sentences were not published — they are the
+  survey's wording, and a panel has no row for them.
+- **Cautions.**
+  - **Read it from the word boxes, and give wrapped cells to the row
+    below.** The export bottom-aligns its cells; see LESSONS.md.
+  - **Most rows are boilerplate.** 644 are under fifty years old or vacant,
+    with a 6Z note and no ratings; they are counted, not written as findings.
+  - **The survey is fifteen years old, and SoMa has rebuilt since.** 24
+    resolved rows sit on parcels the 2025 roll dates 2008 or later with a
+    different year — the rated building is very likely gone (including the
+    National Register-listed row at 260 10th Street). They are declined, not
+    published as demolitions.
+  - **A 3D row can print no district.** 726 Natoma is one; the table is
+    taken as printed.
+  - **The Central SoMa survey (2016) re-rated part of this area.** 184 of the
+    pages it reached already had the Central SoMa panel; the two panels sit
+    side by side, and their codes disagree in places (630 Brannan: 7R here,
+    3CD there). Neither is adjudicated.
+- **Citation label:** `South of Market Area Historic Resource Survey, 2011`;
+  page source id `soma-historic-resource-survey`.
 
 ## Verification log
 
@@ -5914,3 +5974,18 @@ extracted and must not be. Nothing else on the form is a private individual.
   years; the guard now reports that comparison rather than leaving the
   publisher to compute it, and `apply` now keeps a `by_hand` resolution instead
   of recomputing it away.)
+
+- **Verified:** 2026-10-21 (South of Market survey table: all 122 pages of
+  "List of Surveyed Properties, sorted by Street Address" read from
+  `pdftotext -bbox` word boxes — 2,140 rows; 644 under-fifty or vacant rows
+  counted and not written, 3 lost to the layout, 1,493 findings. 1,369
+  resolved, every printed block agreeing with its parcel (1,300 exact, 66
+  re-lotted, none on another block); 124 unresolved, 58 of them condominiums
+  today (#446). 1,091 published to 1,055 pages, 318 of them seeded; 278
+  declined — 253 ineligible (6Z/6L) rows with no page, which seed nothing,
+  24 rows on parcels the roll says were rebuilt after the survey, and one
+  vacant lot. 15 pages state in `unknowns` a survey year more than fifteen
+  years from the roll's. Coverage: the table is finished; the six district
+  records are next. Learned: the bottom-aligned export, the age cutoff's
+  644 rows, and that the archived Planning site holds survey files the
+  current site does not link — see LESSONS.md.)

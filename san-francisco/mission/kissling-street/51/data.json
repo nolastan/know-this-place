@@ -1,0 +1,171 @@
+{
+  "address": "51 Kissling Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/kissling-street/51/",
+  "apn": "3517024",
+  "block": "3517",
+  "lot": "024",
+  "eas_baseid": "357992",
+  "coordinates": {
+    "lat": 37.772996,
+    "lng": -122.414306
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 1572,
+    "building_area_sqft": 1080,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "SLR",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0051 KISSLING            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1014002,
+    "assessed_improvement_value": 676000,
+    "last_sale_date": "2019-05-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Western SOMA Light Industrial and Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1936",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202404291017",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-04-29",
+      "status_date": "2024-09-23",
+      "estimated_cost": 5000,
+      "revised_cost": 8000,
+      "description": "replace existing 16' high fence to a 10 ft height fence",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202304266530",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-04-26",
+      "status_date": "2024-10-17",
+      "estimated_cost": 85000,
+      "revised_cost": 388000,
+      "description": "1st fl add family rm, home office, 1 full bath and laundry. 2nd fl add interior stairs. add patio at rear. remove deck at deck.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202010227118",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2020-10-22",
+      "status_date": "2020-10-22",
+      "estimated_cost": 400000,
+      "description": "convert the basement & part of the garage into new 1st floor. new bathroom, bedroom, laundry room, dig down & redo the foundations & the slab and remove deck. ** maher: n/a **",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201806263018",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2018-06-26",
+      "status_date": "2019-03-12",
+      "estimated_cost": 1000,
+      "revised_cost": 2000,
+      "description": "re: complaint 201726843. remove ground floor bathroom. convert to storage. remove bath fixtures, toilet, shower, sink. capp of water waste pipes, plan to revert existing space to legal storage. maher not req",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201106168288",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-06-16",
+      "status_date": "2012-06-08",
+      "estimated_cost": 1000,
+      "revised_cost": 2500,
+      "description": "remove sections of siding that have signs of dry rot and replace with identical siding which will be repainted the same color as all existing siding. work at rear of bldg apprx 60 sq ft.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9107455",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1991-05-01",
+      "status_date": "1992-12-23",
+      "estimated_cost": 5000,
+      "description": "legalize construction on ground floor, remove kitchen",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=KISSLING&street_type=ST&address_number=51",
+      "retrieved": "2026-10-21"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3517024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-21"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3517&lot=024",
+      "retrieved": "2026-10-21"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3517024",
+      "retrieved": "2026-10-21"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41430574224151%2037.77299637189114)%27)",
+      "retrieved": "2026-10-21"
+    },
+    {
+      "id": "soma-historic-resource-survey",
+      "name": "San Francisco Planning Department, assisted by Page & Turnbull, Inc., South of Market Area Historic Resource Survey (Eastern Neighborhoods SoMa Area Plan and Western SoMa Community Plan survey, 2007–2010) — List of Surveyed Properties, sorted by Street Address; findings adopted by the Historic Preservation Commission on 16 February 2011, Resolution No. 103",
+      "query": "https://default.sfplanning.org/Preservation/soma_survey/ALL_SOMA_SurveyData_by_address.pdf",
+      "listing": "https://sfgov.org/sfplanningarchive/south-market-area-historic-resource-survey",
+      "label": "South of Market Area Historic Resource Survey, 2011",
+      "retrieved": "2026-10-21"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "South of Market Historic Resource Survey (2011)",
+      "proposed_status_code": "3D",
+      "status_code_meaning": "3D — appears eligible for the National Register as a contributor to an eligible district, through survey evaluation",
+      "eligible_district": "West SOMA Light Industrial and Residential",
+      "physical_integrity": "6 of 7",
+      "note": "Architecture rated 2 of 5, where 4 and 5 mark buildings that may be individually eligible for the California or National Register and 1 the plainest or most altered.",
+      "source": "soma-historic-resource-survey"
+    }
+  ]
+}
