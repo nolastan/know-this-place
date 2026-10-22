@@ -315,6 +315,16 @@ img, iframe { max-width: 100%; }
 /* panels stacked full width have no grid gap to separate them, so without this
    two of them meet on a shared hairline and read as one box */
 main > .panel + .panel { margin-top: 1.25rem; }
+/* A panel holding one fact: its label is the eyebrow, with the row's icon, in
+   ink rather than muted because it is the panel's subject, and the value sits
+   under it. A one-row speclist under "At a glance" stacked two headings over
+   one value. */
+.panel-fact > h3 { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.35rem; color: var(--ink); }
+.panel-fact > h3 .ic, .panel-fact > h3 i.hgi-stroke { font-size: 0.95rem; }
+.fact-v { margin: 0; font-family: var(--sans); font-size: 0.94rem; color: var(--ink); }
+/* Every address the parcel answers to, whole and one per line, in ink: the
+   street is part of each, so none is a bare number to reattach to a street. */
+.address-list { display: grid; gap: 0.3rem; margin: 0; padding: 0; list-style: none; font-family: var(--sans); font-size: 0.94rem; color: var(--ink); }
 
 /* ============================================================= hero */
 .hero { display: grid; gap: 2rem; align-items: start; margin: 1.25rem 0 0.5rem; }
@@ -577,6 +587,7 @@ main > .panel + .panel { margin-top: 1.25rem; }
   font-weight: 650;
   color: var(--ink);
 }
+.occupant-at { margin: 0.25rem 0 0; font-family: var(--sans); font-size: 0.88rem; color: var(--ink); }
 .occupant-kinds { margin: 0.25rem 0 0; font-family: var(--sans); font-size: 0.88rem; color: var(--muted); }
 .occupant > .speclist { margin: 0.8rem 0 0; }
 .occupant .spec-k, .occupant .spec-v span { white-space: nowrap; }
@@ -772,10 +783,12 @@ ktp-figure { position: relative; }
 /* The lateral links out of an address page, built from shared/nearby.json.
    Chrome rather than content: it sits between the building's own material and
    the "not yet documented" note, so it reads quieter than a hub's list — two
-   columns of bare addresses, each with the relationship on a muted pill, and
+   columns of names or bare addresses, each with the relationship on a muted pill, and
    none of the hook lines a hub carries. */
 .nearby { margin: 2rem 0; max-width: var(--wide); }
 .nearby .place-list { columns: 2; column-gap: 2.5rem; }
 .nearby .place-list li { display: flex; align-items: baseline; justify-content: space-between; gap: 0.75rem; break-inside: avoid; }
 .nearby .pill { flex: 0 0 auto; }
+/* A link to a named building carries the type glyph its own heading shows. */
+.place-list .type-icon { color: var(--accent); margin-right: 0.3em; vertical-align: -0.1em; }
 @media (max-width: 720px) { .nearby .place-list { columns: 1; } }
