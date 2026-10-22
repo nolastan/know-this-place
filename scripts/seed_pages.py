@@ -815,17 +815,6 @@ def landmark_tags(rec: dict) -> list:
     return out
 
 
-def landmark_name_shown(rec: dict) -> bool:
-    """Whether the page already prints the landmark's designated name, as its
-    heading or its survey-name tag. Spelling aside: the ordinance's "Castro
-    Theatre" is the heading's "Castro Theater"."""
-    def norm(n):
-        n = re.sub(r"\btheatre\b", "theater", (n or "").lower())
-        return re.sub(r"[^a-z0-9]", "", n)
-    name = norm((rec.get("city_landmark") or {}).get("name"))
-    return name in {norm(building_name(rec)), norm(rec.get("survey_name"))}
-
-
 def register_status(v: str = None) -> str:
     """State register status precisely — "eligible" is not "listed"."""
     return {"Listed": "Listed", "Eligible": "Eligible (not listed)"}.get(v, "Not listed")
@@ -1650,8 +1639,13 @@ def building_name(rec: dict) -> str | None:
     `<title>` — where a page's research found one. A tower marketed under its
     own address ("101 Second Street") has no name the heading adds, so it is
     headed by the address like any unnamed page.
+
+    Without one, a city landmark is headed by the name it was designated under:
+    "Garcia & Maggini Warehouse" is what the city calls 128 King Street.
     """
-    name = re.sub(r"\s+", " ", (rec.get("building") or {}).get("name") or "").strip()
+    name = ((rec.get("building") or {}).get("name")
+            or (rec.get("city_landmark") or {}).get("name") or "")
+    name = re.sub(r"\s+", " ", name).strip()
     return name if name and name.lower() != page_title(rec).lower() else None
 
 
@@ -3065,13 +3059,8 @@ def glance_panel_html(rec: dict, indent: str) -> str:
     # article number. The code stays in data.json; it just isn't printed.
     #
     # Nor a city landmark row: the hero tag carries the number ("City landmark
-    # #100", see `landmark_tags`). The designated name stays here only where
-    # the page doesn't already print it — the city's name for a landmark is
-    # often not the one the page is headed by ("Haslett Warehouse" at 680
-    # Beach Street, headed by its address).
-    cl = rec.get("city_landmark") or {}
-    if cl.get("name") and not landmark_name_shown(rec):
-        rows.append(("ic-check", "Designated as", cl["name"]))
+    # #100", see `landmark_tags`), and the designated name is the heading
+    # where the page records no other (see `building_name`).
     if not rec.get("permits"):
         rows.append(("ic-clock", "Permits on file", "None"))
     if not rows:
