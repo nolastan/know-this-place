@@ -211,6 +211,24 @@ a.wordmark:hover, a.map-brand:hover { opacity: 0.75; }
 .map-credit-text { padding: 0 5px; background: #ffffff80; }
 .map-credit-text a { color: #000000bf; text-decoration: none; }
 .map-credit-text a:hover { text-decoration: underline; }
+/* The building's marker, drawn by <ktp-map> at the centre of the image (which
+   Mapbox centres on the coordinates; object-fit: cover crops evenly, so the
+   centre holds). It is the homepage map's resting dot for a researched
+   address at street level — --warm, a --paper ring, 0.95 opacity — drawn at
+   radius 8px, a step up from the homepage's zoom-16 stop (6px) so it holds its
+   own across the full-bleed band. Mapbox strokes outside the radius, so the
+   border-box is 16px plus the 1.5px ring twice. */
+.map-dot {
+  position: absolute; z-index: 1;
+  top: 50%; left: 50%;
+  width: 19px; height: 19px;
+  transform: translate(-50%, -50%);
+  background: var(--warm);
+  border: 1.5px solid var(--paper);
+  border-radius: 50%;
+  opacity: 0.95;
+  pointer-events: none;
+}
 /* The phone's fold for the links (below); no use on a band wide enough to
    hold them on one line. */
 .map-credit-toggle { display: none; }
