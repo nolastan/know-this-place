@@ -2367,6 +2367,9 @@ def survey_panel_html(rec: dict, indent: str) -> str:
     return "".join(one_survey_panel_html(s, indent, ctype) for s in surveys_of(rec))
 
 
+PROVENANCE_ONLY = re.compile(r"From the survey's appendix table[^.]*\.")
+
+
 def one_survey_panel_html(s: dict, indent: str, ctype: str = "") -> str:
     rows = []
     for icon, key, val in (
@@ -2437,7 +2440,10 @@ def one_survey_panel_html(s: dict, indent: str, ctype: str = "") -> str:
     # something worth keeping — that its address was numbered differently when
     # it went up, or that the report contradicts itself about which building
     # this is. A note on its own is a finding; dropping the panel loses it.
-    if not (rows or footnote):
+    # Not so a note that only says where in the survey the building appears —
+    # the 1990 unreinforced-masonry survey's "From the survey's appendix
+    # table…" — which the Sources list already cites. Alone, it is no panel.
+    if not (rows or footnote) or (not rows and PROVENANCE_ONLY.fullmatch(footnote)):
         return ""
     body = "\n".join(
         f'{indent}    <div class="spec">{icon_html(i)}'
