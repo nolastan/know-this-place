@@ -2000,6 +2000,39 @@ def built_item(rec: dict, indent: str) -> list:
              f'{indent}  </li>')]
 
 
+def completed_item(rec: dict, indent: str) -> list:
+    """A published completion year that differs from the assessor's, as its
+    own entry on the rail.
+
+    It was a "Completed" row in "At a glance", which put a date outside the
+    one sequence a reader reads dates in. Where it matches the roll the
+    "Built" entry already says it, and where a dated entry from a source
+    already says the building was completed or built that year, that entry
+    says it with more; either way this stands down. The disagreement itself
+    (`completed_conflict`) closes the rail with the other dating notes.
+    """
+    b = rec.get("building") or {}
+    completed = b.get("completed")
+    if not completed or str(completed) == str((rec.get("parcel") or {}).get("year_built")):
+        return []
+    key = date_key(str(completed))
+    if any(date_key(e.get("date"))[0] == key[0]
+           and BUILT_EVENT.search(e.get("description") or "")
+           for e in history_entries(rec)):
+        return []
+    labels = {x["id"]: x.get("label") or x.get("name", x["id"])
+              for x in rec.get("sources", [])}
+    cited = [labels.get(x, x) for x in b.get("sources") or [] if x][:1]
+    return [(key,
+             f'{indent}  <li class="vtl-item">\n'
+             f'{indent}    <div class="vtl-date">{esc(str(completed))}</div>\n'
+             f'{indent}    <p class="vtl-desc">Completed.</p>\n'
+             + (f'{indent}    <div class="vtl-meta">\n'
+                f'{indent}      <span>{esc(cited[0])}</span>\n'
+                f'{indent}    </div>\n' if cited else "")
+             + f'{indent}  </li>')]
+
+
 def dating_conflicts(rec: dict) -> list:
     """Disagreements about the building's date, read off the data itself.
 
@@ -2047,7 +2080,7 @@ def timeline_html(rec: dict, indent: str) -> str:
     every one of the 480 carrying the key, and of the 921 with a derived
     conflict, has a timeline.
     """
-    built = built_item(rec, indent)
+    built = built_item(rec, indent) + completed_item(rec, indent)
     permits, disclosure = permit_items(rec, indent)
     earlier = historical_items(rec, indent)
     # `sorted` is stable and `built` leads the list, so the building's own year
@@ -2969,12 +3002,8 @@ def glance_panel_html(rec: dict, indent: str) -> str:
     # Researched identity: who designed the building, who built it. Single
     # facts, so spec rows — never a paragraph each. The name it goes by is not
     # a row: where a page records one it is the hero's heading.
-    # A published completion year that matches the assessor's is the same fact
-    # twice — the timeline's "Built" entry already carries it. Show the row only
-    # when the two disagree, and `unknowns` says so alongside.
-    completed = b.get("completed")
-    if completed and str(completed) == str(p.get("year_built")):
-        completed = None
+    # No "Completed" row: a completion year is dated, so it is on the rail,
+    # as the "Built" entry or its own (see `completed_item`).
     for icon, key, val in (("ic-home", "Formerly", b.get("former_name")),
                            ("ic-ruler", "Architect",
                             with_note(b.get("architect"), b.get("architect_note"))),
@@ -2987,7 +3016,6 @@ def glance_panel_html(rec: dict, indent: str) -> str:
                             None if p.get("year_built") else
                             with_note(b.get("builder"), b.get("builder_note"))),
                            ("ic-plan", "Developer", b.get("developer")),
-                           ("ic-calendar", "Completed", completed),
                            ("ic-calendar", "First owner", b.get("first_owner")),
                            # The style as some source other than a survey states
                            # it — a newsletter, a context statement's prose. The
