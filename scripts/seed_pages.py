@@ -1716,6 +1716,9 @@ def tags_html(rec: dict) -> str:
     # fact, not a headline. Building area needs no label: a bare floor area
     # beside the type and stories reads as the building's own.
     out.extend(measurement_tags(p))
+    ctype = construction(rec)
+    if ctype:
+        out.append(("hgi-crane-tower", ctype))
     if p.get("zoning"):
         out.append(("ic-plan", f"Zoned {p['zoning']}"))
     if rec.get("public_open_space"):
@@ -1776,10 +1779,21 @@ def measurement_tags(p: dict) -> list:
         out.append(("hgi-bed", plural(p["bedrooms"], "bedroom")))
     if p.get("bathrooms"):
         out.append(("hgi-toilet-01", plural(p["bathrooms"], "bathroom")))
-    ctype = CONSTRUCTION.get(p.get("construction_type_code"))
-    if ctype:
-        out.append(("hgi-crane-tower", ctype))
     return out
+
+
+def surveys_of(rec: dict) -> list:
+    surveys = rec.get("historic_survey") or []
+    return [surveys] if isinstance(surveys, dict) else [s for s in surveys if s]
+
+
+def construction(rec: dict) -> str:
+    """The construction hero tag: the assessor's code where the roll gives one
+    we can name, else the first survey that recorded a frame — the 1990
+    unreinforced-masonry survey's is the common case. One tag, never a row as
+    well (see `one_survey_panel_html`)."""
+    ctype = CONSTRUCTION.get(((rec.get("parcel") or {})).get("construction_type_code"))
+    return ctype or next((s["frame"] for s in surveys_of(rec) if s.get("frame")), "")
 
 
 def dead_permit_phrase(dropped: dict) -> tuple[str, int]:
@@ -2339,13 +2353,11 @@ def survey_panel_html(rec: dict, indent: str) -> str:
     looked at the building. Where a survey's own address or APN disagrees
     with the city's, both are shown and neither is adjudicated.
     """
-    surveys = rec.get("historic_survey") or []
-    if isinstance(surveys, dict):
-        surveys = [surveys]
-    return "".join(one_survey_panel_html(s, indent) for s in surveys if s)
+    ctype = construction(rec)
+    return "".join(one_survey_panel_html(s, indent, ctype) for s in surveys_of(rec))
 
 
-def one_survey_panel_html(s: dict, indent: str) -> str:
+def one_survey_panel_html(s: dict, indent: str, ctype: str = "") -> str:
     rows = []
     for icon, key, val in (
             # Not every survey assigns a status code. A CEQA-era evaluation
@@ -2380,7 +2392,10 @@ def one_survey_panel_html(s: dict, indent: str) -> str:
              s.get("architect_as_surveyed") or s.get("architect")),
             ("hgi-labor", "Builder as surveyed",
              s.get("builder") or s.get("builder_as_surveyed")),
-            ("hgi-crane-tower", "Construction", s.get("frame")),
+            # Construction is a hero tag. A survey's frame shows here only
+            # where it disagrees with that tag — never state a fact twice.
+            ("hgi-crane-tower", "Construction",
+             s.get("frame") if (s.get("frame") or "").lower() != ctype.lower() else None),
             ("ic-layers", "Integrity", s.get("physical_integrity")),
             ("ic-calendar", "Year built as surveyed", s.get("year_built_as_surveyed")),
             ("hgi-location-03", "Address as surveyed", s.get("address_as_surveyed")),
