@@ -2101,8 +2101,15 @@ def value_panel_html(rec: dict, indent: str) -> str:
     improv = a.get("assessed_improvement_value")
     if not land or not improv:
         return ""
-    total = land + improv
-    lp = round(land / total * 100, 1)
+    # Fixtures are the roll's third secured column, taxed like the other two:
+    # the built-in plant of an office floor or a warehouse, near zero on a
+    # house and close to the improvements on 128 King Street. They count in
+    # the total but stay out of the bar, which is a split in two (see
+    # shared/BLOCKS.md), so the bar is land against building and fixtures get
+    # a text line beside the total.
+    fixtures = a.get("assessed_fixtures_value") or 0
+    total = land + improv + fixtures
+    lp = round(land / (land + improv) * 100, 1)
     ip = round(100 - lp, 1)
     # No panel chrome and no heading: the legend already names land,
     # improvements and the total, and the Sources footer names the roll, so a
@@ -2124,7 +2131,10 @@ def value_panel_html(rec: dict, indent: str) -> str:
         f'{indent}      <span class="legend-item"><span class="swatch seg-warm"></span>'
         f'<span>Improvements</span>&nbsp;<b>${improv:,}</b></span>\n'
         f'{indent}    </div>\n'
-        f'{indent}    <div class="legend" style="margin-top:.5rem"><span class="legend-item">'
+        f'{indent}    <div class="legend" style="margin-top:.5rem">'
+        + (f'<span class="legend-item"><span>Fixtures</span>&nbsp;<b>${fixtures:,}</b></span>'
+           if fixtures else "")
+        + f'<span class="legend-item">'
         f'<span>Total assessed</span>&nbsp;<b>${total:,}</b></span></div>\n'
         f'{indent}  </ktp-figure>\n'
         f'{indent}</section>\n')
@@ -3010,8 +3020,8 @@ def glance_panel_html(rec: dict, indent: str) -> str:
                      ", to ".join([stair["name"], *far[:1]])))
     # No "Construction" or "Residential units" rows: both are hero tags (see
     # `measurement_tags`).
-    if a.get("assessed_fixtures_value"):
-        rows.append(("ic-value", "Assessed fixtures", f"${a['assessed_fixtures_value']:,}"))
+    # No "Assessed fixtures" row: the value figure prints fixtures beside the
+    # total they are part of (see `value_panel_html`).
     # Why a parcel pays no tax on the figures the chart above it prints. The
     # roll's exemption column is the assessor's own word for the use the
     # exemption was granted for — "Welfare" for a nonprofit's office building,
