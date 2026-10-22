@@ -4993,7 +4993,7 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
             for name, count in districts.most_common())
         aside += (f'      <section>\n'
                   f'        <div class="section-head"><i class="hgi-stroke hgi-castle-02"></i>'
-                  f'<h2>Historic districts on this street</h2></div>\n'
+                  f'<h2>Historic districts</h2></div>\n'
                   f'        <ul class="place-list place-list-districts">\n{rows}\n        </ul>\n'
                   f'      </section>\n')
     if uncovered:
