@@ -2151,8 +2151,8 @@ VALUE_PARTS = (
 # sized to match the pie's scale) show the same hatch spacing as the slices.
 PIE_DEFS = (
     '<defs>'
-    '<pattern id="pie-hatch" patternUnits="userSpaceOnUse" width=".14" height=".14" '
-    'patternTransform="rotate(45)"><rect class="pie-ink" width=".05" height=".14"/></pattern>'
+    '<pattern id="pie-hatch" patternUnits="userSpaceOnUse" width=".09" height=".09" '
+    'patternTransform="rotate(45)"><rect class="pie-ink" width=".03" height=".09"/></pattern>'
     '<pattern id="pie-dots" patternUnits="userSpaceOnUse" width=".14" height=".14">'
     '<circle class="pie-ink" cx=".07" cy=".07" r=".032"/></pattern>'
     '</defs>')

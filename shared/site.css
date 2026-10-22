@@ -460,7 +460,7 @@ main > .panel + .panel { margin-top: 1.25rem; }
    and last key rows. CSS can't size a box's width from a stretched height, so
    the pie is sized from the key's own metrics instead: every row is one
    unwrapped line, and `.pie-rows-N` says how many there are. */
-.pie-figure { --row: 1.15rem; --gap: 0.2rem; --rows: 3; display: flex; align-items: flex-start; gap: 0.9rem; margin: 1rem 0 0; }
+.pie-figure { --row: 1.15rem; --gap: 0.2rem; --rows: 3; display: flex; align-items: flex-start; gap: 0.9rem; margin: 1.6rem 0 0; }
 .pie-rows-4 { --rows: 4; }
 .pie-box { flex: 0 0 auto; --d: calc(var(--rows) * var(--row) + (var(--rows) - 1) * var(--gap)); width: var(--d); height: var(--d); }
 .pie { display: block; width: 100%; height: 100%; overflow: visible; }
@@ -473,7 +473,7 @@ main > .panel + .panel { margin-top: 1.25rem; }
 .pie-key { display: grid; grid-template-columns: auto auto auto; column-gap: 0.5rem; row-gap: var(--gap); grid-auto-rows: var(--row); align-items: center; font-family: var(--sans); font-size: 0.84rem; line-height: var(--row); white-space: nowrap; }
 .pie-row { display: contents; }
 .pie-row span { color: var(--muted); }
-.pie-row b { font-weight: 600; font-variant-numeric: tabular-nums; text-align: right; }
+.pie-row b { padding-left: 1rem; font-weight: 600; font-variant-numeric: tabular-nums; text-align: right; }
 .pie-swatch { width: 11px; height: 11px; overflow: hidden; border-radius: 2px; }
 .pie-total span { grid-column: 1 / 3; }
 
