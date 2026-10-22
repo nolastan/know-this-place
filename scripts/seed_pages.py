@@ -793,6 +793,39 @@ def individual_designations(rec: dict) -> list:
             if t in INDIVIDUAL_DESIGNATION]
 
 
+def landmark_tags(rec: dict) -> list:
+    """`individual_designations`, with the city landmark's number on its tag.
+
+    "City landmark #100" is the whole designation in one tag: the number is the
+    landmark's own identifier, so it was an "At a glance" row beside a tag that
+    already said "City landmark". `city_landmark` is read even where
+    `historic_status` doesn't carry the token — a page whose research recorded
+    the designation is a landmark whatever Planning's field says.
+    """
+    out = individual_designations(rec)
+    cl = rec.get("city_landmark") or {}
+    if not cl.get("name"):
+        return out
+    label = f"City landmark #{cl['number']}" if cl.get("number") else "City landmark"
+    i = next((n for n, (_, t) in enumerate(out) if t == "City landmark"), None)
+    if i is None:
+        out.insert(0, ("hgi-castle-02", label))
+    else:
+        out[i] = (out[i][0], label)
+    return out
+
+
+def landmark_name_shown(rec: dict) -> bool:
+    """Whether the page already prints the landmark's designated name, as its
+    heading or its survey-name tag. Spelling aside: the ordinance's "Castro
+    Theatre" is the heading's "Castro Theater"."""
+    def norm(n):
+        n = re.sub(r"\btheatre\b", "theater", (n or "").lower())
+        return re.sub(r"[^a-z0-9]", "", n)
+    name = norm((rec.get("city_landmark") or {}).get("name"))
+    return name in {norm(building_name(rec)), norm(rec.get("survey_name"))}
+
+
 def register_status(v: str = None) -> str:
     """State register status precisely — "eligible" is not "listed"."""
     return {"Listed": "Listed", "Eligible": "Eligible (not listed)"}.get(v, "Not listed")
@@ -1701,7 +1734,7 @@ def tags_html(rec: dict) -> str:
         out.append(("hgi-castle-02", label))
     # After the CEQA classification, which is the general finding: a
     # designation is the specific one, and it is the building's own.
-    out.extend(individual_designations(rec))
+    out.extend(landmark_tags(rec))
     # The roll's last recorded sale. It was an "at a glance" row; as a tag it
     # reads in a glance without a panel to open. A date, not a party: who
     # bought it is never printed.
@@ -3031,15 +3064,14 @@ def glance_panel_html(rec: dict, indent: str) -> str:
     # nothing to a reader on its own. Same reasoning as the district panel's
     # article number. The code stays in data.json; it just isn't printed.
     #
-    # `city_landmark` is the exception, and for the same reason the status row
-    # is gone: the hero tag says the building is an Article 10 landmark, and
-    # this says *which* one. The name and the ordinance number are the
-    # designation's own identifiers, and neither is anywhere else on the page.
+    # Nor a city landmark row: the hero tag carries the number ("City landmark
+    # #100", see `landmark_tags`). The designated name stays here only where
+    # the page doesn't already print it — the city's name for a landmark is
+    # often not the one the page is headed by ("Haslett Warehouse" at 680
+    # Beach Street, headed by its address).
     cl = rec.get("city_landmark") or {}
-    if cl.get("name"):
-        num = cl.get("number")
-        rows.append(("ic-check", "City landmark",
-                     f"{cl['name']} — No. {num}" if num else cl["name"]))
+    if cl.get("name") and not landmark_name_shown(rec):
+        rows.append(("ic-check", "Designated as", cl["name"]))
     if not rec.get("permits"):
         rows.append(("ic-clock", "Permits on file", "None"))
     if not rows:
