@@ -165,7 +165,7 @@ Categorical identity (building type, stories, zoning, district) belongs in the
 `.tags`, and the year built opens the timeline; the stat band is for
 *measurements* not shown there
 (building area, lot area, room count). If a number is detailed elsewhere (e.g.
-assessed value, which the sidebar chart owns), don't also make it a tile.
+assessed value, which the hero's pie owns), don't also make it a tile.
 ```html
 <div class="stats">
   <div class="stat"><span class="ic ic-plan"></span><span class="stat-val">2,266<small> sq ft</small></span><span class="stat-label">Building area</span></div>
@@ -384,6 +384,32 @@ exact value (see "Enhancement layer"):
 `seg-cool` = blue (use for the base/larger share, e.g. land), `seg-warm` =
 brick. The legend is the text-truth that survives with no JS; the `data-tip` /
 `aria-label` on each segment carries the value for pointer and keyboard.
+
+### Patterned pie — `.pie-figure` (assessed value, up to three parts)
+The address page's assessed value: a pie under the hero's tags with its key
+stacked to the right, land, improvements and (where the roll has any)
+fixtures, then the total. One muted ink; the parts are told apart by fill
+pattern (solid, diagonal hatch, dots), not by hue, so it adds no color. The
+pie is as tall as the key: `.pie-rows-N` (the key's row count, total
+included) sizes it, and every key row stays one line. `value_figure_html` in
+`seed_pages.py` writes it; don't hand-write one.
+```html
+<ktp-figure class="pie-figure pie-rows-3">
+  <div class="pie-box"><svg class="pie" viewBox="-1.02 -1.02 2.04 2.04" role="group" aria-label="Assessed value breakdown">
+    <defs>…the #pie-hatch and #pie-dots patterns…</defs>
+    <path class="pie-slice pie-solid" d="…" data-tip="Land · $331,484 · 46.4%" aria-label="Land, $331,484, 46.4 percent"/>
+    <path class="pie-slice pie-hatch" d="…" data-tip="Improvements · $383,284 · 53.6%" aria-label="…"/>
+  </svg></div>
+  <div class="pie-key">
+    <div class="pie-row"><svg class="pie-swatch" viewBox="0 0 .3 .3" aria-hidden="true"><rect class="pie-slice pie-solid" width=".3" height=".3"/></svg><span>Land</span><i class="pie-op" aria-hidden="true"></i><b>$331,484</b></div>
+    <div class="pie-row"><svg class="pie-swatch" …><rect class="pie-slice pie-hatch" …/></svg><span>Improvements</span><i class="pie-op" aria-hidden="true">+</i><b>$383,284</b></div>
+    <div class="pie-row pie-total"><span>Total assessed</span><b>$714,768</b></div>
+  </div>
+</ktp-figure>
+```
+The key reads as a column sum: a `+` (`.pie-op`) before the last part and a
+rule over the total. The key is the text-truth that survives with no JS; `data-tip` on each slice
+shows the exact value on hover and focus.
 
 ### Spec list — `.speclist`
 Secondary facts that don't merit a stat tile: icon · key · right-aligned value.

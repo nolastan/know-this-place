@@ -2188,49 +2188,80 @@ def timeline_html(rec: dict, indent: str) -> str:
             + f"\n{indent}</ol>\n" + tail)
 
 
-def value_panel_html(rec: dict, indent: str) -> str:
+# The three parts of the roll's secured value, in the order the pie draws them
+# clockwise from twelve o'clock. Each part is told apart by its fill pattern,
+# not a hue: the pie is one muted ink, so it sits under the tags at the weight
+# of a fact rather than shouting in brick and blue. `site.css` styles the
+# pattern marks (`.pie-ink`), so both themes follow.
+VALUE_PARTS = (
+    ("Land", "assessed_land_value", "pie-solid"),
+    ("Improvements", "assessed_improvement_value", "pie-hatch"),
+    ("Fixtures", "assessed_fixtures_value", "pie-dots"),
+)
+# One `<defs>` per page: an address page prints a single value figure, so the
+# ids cannot collide. userSpaceOnUse, so the key's swatches (whose viewBox is
+# sized to match the pie's scale) show the same hatch spacing as the slices.
+PIE_DEFS = (
+    '<defs>'
+    '<pattern id="pie-hatch" patternUnits="userSpaceOnUse" width=".09" height=".09" '
+    'patternTransform="rotate(45)"><rect class="pie-ink" width=".03" height=".09"/></pattern>'
+    '<pattern id="pie-dots" patternUnits="userSpaceOnUse" width=".09" height=".09">'
+    '<circle class="pie-ink" cx=".045" cy=".045" r=".022"/></pattern>'
+    '</defs>')
+
+
+def pie_slice_d(start: float, frac: float) -> str:
+    """The SVG path of one slice of a unit pie centred on 0,0, starting
+    `start` of the way round from twelve o'clock and spanning `frac`."""
+    if frac >= 0.9999:
+        return "M0,-1A1,1 0 1,1 0,1A1,1 0 1,1 0,-1Z"
+    def pt(t):
+        a = 2 * math.pi * t
+        return f"{math.sin(a):.4f},{-math.cos(a):.4f}"
+    large = 1 if frac > 0.5 else 0
+    return f"M0,0L{pt(start)}A1,1 0 {large},1 {pt(start + frac)}Z"
+
+
+def value_figure_html(rec: dict, indent: str) -> str:
+    """The assessed value as a pie under the hero's tags, its key stacked to
+    the right: land, improvements and — where the roll has any — fixtures,
+    then the total of all three. Fixtures are the roll's third secured column,
+    taxed like the other two: near zero on a house, close to the improvements
+    on an office building like 128 King Street."""
     a = rec.get("assessment", {})
-    land = a.get("assessed_land_value")
-    improv = a.get("assessed_improvement_value")
-    if not land or not improv:
+    if not a.get("assessed_land_value") or not a.get("assessed_improvement_value"):
         return ""
-    # Fixtures are the roll's third secured column, taxed like the other two:
-    # the built-in plant of an office floor or a warehouse, near zero on a
-    # house and close to the improvements on 128 King Street. They count in
-    # the total but stay out of the bar, which is a split in two (see
-    # shared/BLOCKS.md), so the bar is land against building and fixtures get
-    # a text line beside the total.
-    fixtures = a.get("assessed_fixtures_value") or 0
-    total = land + improv + fixtures
-    lp = round(land / (land + improv) * 100, 1)
-    ip = round(100 - lp, 1)
-    # No panel chrome and no heading: the legend already names land,
-    # improvements and the total, and the Sources footer names the roll, so a
-    # "Assessed value · 2025 roll" heading above them says nothing the figure
-    # doesn't. The bare section reads better than a boxed one.
+    parts = [(label, a[key], fill) for label, key, fill in VALUE_PARTS if a.get(key)]
+    total = sum(v for _, v, _ in parts)
+    # The key reads as a column sum: a plus before the last part, a rule
+    # over the total.
+    slices, rows, at = [], [], 0.0
+    for i, (label, v, fill) in enumerate(parts):
+        op = "+" if i == len(parts) - 1 else ""
+        frac = v / total
+        pct = round(frac * 100, 1)
+        slices.append(
+            f'<path class="pie-slice {fill}" d="{pie_slice_d(at, frac)}" '
+            f'data-tip="{label} · ${v:,} · {pct}%" '
+            f'aria-label="{label}, ${v:,}, {pct} percent"/>')
+        rows.append(
+            f'{indent}      <div class="pie-row"><svg class="pie-swatch" viewBox="0 0 .3 .3" '
+            f'aria-hidden="true"><rect class="pie-slice {fill}" width=".3" height=".3"/></svg>'
+            f'<span>{label}</span><i class="pie-op" aria-hidden="true">{op}</i>'
+            f'<b>${v:,}</b></div>\n')
+        at += frac
+    # No panel chrome and no heading: the key names every part and the total,
+    # and the Sources footer names the roll.
     return (
-        f'{indent}<section>\n'
-        f'{indent}  <ktp-figure>\n'
-        f'{indent}    <div class="stack" role="group" aria-label="Assessed value breakdown">\n'
-        f'{indent}      <div class="stack-seg seg-cool" style="width:{lp}%" tabindex="0" '
-        f'data-tip="Land · ${land:,} · {lp}%" aria-label="Land, ${land:,}, {lp} percent"></div>\n'
-        f'{indent}      <div class="stack-seg seg-warm" style="width:{ip}%" tabindex="0" '
-        f'data-tip="Improvements · ${improv:,} · {ip}%" '
-        f'aria-label="Improvements, ${improv:,}, {ip} percent"></div>\n'
-        f'{indent}    </div>\n'
-        f'{indent}    <div class="legend">\n'
-        f'{indent}      <span class="legend-item"><span class="swatch seg-cool"></span>'
-        f'<span>Land</span>&nbsp;<b>${land:,}</b></span>\n'
-        f'{indent}      <span class="legend-item"><span class="swatch seg-warm"></span>'
-        f'<span>Improvements</span>&nbsp;<b>${improv:,}</b></span>\n'
-        f'{indent}    </div>\n'
-        f'{indent}    <div class="legend" style="margin-top:.5rem">'
-        + (f'<span class="legend-item"><span>Fixtures</span>&nbsp;<b>${fixtures:,}</b></span>'
-           if fixtures else "")
-        + f'<span class="legend-item">'
-        f'<span>Total assessed</span>&nbsp;<b>${total:,}</b></span></div>\n'
-        f'{indent}  </ktp-figure>\n'
-        f'{indent}</section>\n')
+        f'{indent}<ktp-figure class="pie-figure pie-rows-{len(parts) + 1}">\n'
+        f'{indent}  <div class="pie-box"><svg class="pie" viewBox="-1.02 -1.02 2.04 2.04" role="group" '
+        f'aria-label="Assessed value breakdown">{PIE_DEFS}{"".join(slices)}</svg></div>\n'
+        f'{indent}  <div class="pie-key">\n'
+        + "".join(rows)
+        + f'{indent}      <div class="pie-row pie-total"><span>Total assessed</span>'
+        f'<b>${total:,}</b></div>\n'
+        f'{indent}  </div>\n'
+        f'{indent}</ktp-figure>\n')
 
 
 def narrative_html(rec: dict, indent: str) -> tuple:
@@ -3141,7 +3172,7 @@ def glance_panel_html(rec: dict, indent: str) -> str:
     # No "Construction" or "Residential units" rows: both are hero tags (see
     # `measurement_tags`).
     # No "Assessed fixtures" row: the value figure prints fixtures beside the
-    # total they are part of (see `value_panel_html`).
+    # total they are part of (see `value_figure_html`).
     # Why a parcel pays no tax on the figures the chart above it prints. The
     # roll's exemption column is the assessor's own word for the use the
     # exemption was granted for — "Welfare" for a nonprofit's office building,
@@ -3778,7 +3809,7 @@ def render_html(rec: dict) -> str:
     # page with any timeline entry, art or prose at all has something to put
     # there. Only a page that is nothing but panels stacks them full width.
     has_panels = bool(place_panel_html(rec, "")
-                      or value_panel_html(rec, "") or addresses_panel_html(rec, "")
+                      or addresses_panel_html(rec, "")
                       or glance_panel_html(rec, "")
                       or district_panel_html(rec, "") or open_space_panel_html(rec, "")
                       or survey_panel_html(rec, "") or residents_panel_html(rec, "")
@@ -3795,7 +3826,7 @@ def render_html(rec: dict) -> str:
     # What is happening there next is its nearest relation, so events follow.
     panels = (occupant_panel_html(rec, ind) + events_panel_html(rec, ind)
               + place_panel_html(rec, ind)
-              + open_space_panel_html(rec, ind) + value_panel_html(rec, ind)
+              + open_space_panel_html(rec, ind)
               + addresses_panel_html(rec, ind)
               + glance_panel_html(rec, ind) + residents_panel_html(rec, ind)
               + survey_panel_html(rec, ind) + district_panel_html(rec, ind))
@@ -3886,7 +3917,7 @@ def render_html(rec: dict) -> str:
       <ul class="tags">
 {tags_html(rec)}
       </ul>
-    </div>
+{value_figure_html(rec, "      ")}    </div>
     <ktp-streetview location="{lat},{lng}" label="{esca(heading)}">
       <figure class="media media-lift">
         <div class="media-empty">

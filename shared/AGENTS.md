@@ -124,6 +124,9 @@ fourth color without a human's say-so. So:
 - **Dollar magnitude** → the `.cost` tier ($ / $$ / $$$), never a bar. Bars
   read as progress/completion, which a cost isn't.
 - **A total split in two** → the `.stack` (warm + cool), both parts labeled.
+- **The assessed value** → the patterned `.pie-figure` in the hero (land,
+  improvements, fixtures): one muted ink, parts told apart by pattern, so
+  three parts need no third hue.
 - More than two categories, a different chart type, or a non-currency
   magnitude comparison is **not yet a supported block** — don't fake it with
   inline styles. Present the data as a stat, spec list, cost tier, or timeline
