@@ -4986,15 +4986,16 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
         f'          <span class="hook">{esc(hook)}</span></li>'
         for _n, href, title, hook, name, icon in entries)
     aside = ""
-    districts_block = ""
     if districts:
         rows = "\n".join(
-            f'        <li>{district_hub_link(ctx["city"], name, name)}<br>\n'
-            f'          <span class="hook">{count:,} building{"" if count == 1 else "s"}</span></li>'
+            f'          <li>{district_hub_link(ctx["city"], name, name)}<br>\n'
+            f'            <span class="hook">{count:,} building{"" if count == 1 else "s"}</span></li>'
             for name, count in districts.most_common())
-        districts_block = (f'  <div class="section-head"><i class="hgi-stroke hgi-castle-02"></i>'
-                           f'<h2>Historic districts on this street</h2></div>\n'
-                           f'  <ul class="place-list place-list-cols">\n{rows}\n  </ul>\n\n')
+        aside += (f'      <section>\n'
+                  f'        <div class="section-head"><i class="hgi-stroke hgi-castle-02"></i>'
+                  f'<h2>Historic districts on this street</h2></div>\n'
+                  f'        <ul class="place-list place-list-districts">\n{rows}\n        </ul>\n'
+                  f'      </section>\n')
     if uncovered:
         aside += (f'      <section class="panel">\n'
                   f'        <h3>Not yet covered</h3>\n'
@@ -5059,7 +5060,7 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
 {stat_html}
   </div>
 
-{districts_block}{cols_open}{hand_html}      <div class="section-head"><i class="hgi-stroke hgi-city-03"></i><h2>Buildings</h2></div>
+{cols_open}{hand_html}      <div class="section-head"><i class="hgi-stroke hgi-city-03"></i><h2>Buildings</h2></div>
       <ul class="place-list">
 {list_html}
       </ul>

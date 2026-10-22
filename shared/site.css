@@ -756,9 +756,9 @@ ktp-figure { position: relative; }
 .place-list { list-style: none; padding: 0; }
 .place-list li { padding: 0.5rem 0; border-bottom: 1px solid var(--rule); }
 .place-list .hook { color: var(--muted); font-size: 0.95rem; }
-.place-list-cols { columns: 2; column-gap: 2.5rem; }
-.place-list-cols li { break-inside: avoid; }
-@media (max-width: 720px) { .place-list-cols { columns: 1; } }
+/* The section-head's own rule already closes the block above; the last item
+   needs none of its own. */
+.place-list-districts li:last-child { border-bottom: 0; }
 
 /* ============================================================= nearby */
 /* The lateral links out of an address page, built from shared/nearby.json.
