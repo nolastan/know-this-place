@@ -142,7 +142,9 @@ renders fine.
   inside a district boundary whose contributing status nobody has established, a
   Category A finding that came from a project's evaluation rather than a survey.
 - **A city landmark's name and number are the top-level `city_landmark`**
-  (`{name, number, source}`), which the "City landmark" spec row reads; the
+  (`{name, number, source}`): the number goes on the hero tag ("City landmark
+  #100"), and the name is the page's heading where `building.name` is
+  absent; the
   designation itself is dated, so it is a `historical_record` entry like
   anything else dated, and the ordinance number belongs in that entry. Nothing
   about a landmark goes under `historic_status`, whose job is Planning's CEQA

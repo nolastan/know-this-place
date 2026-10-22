@@ -107,6 +107,8 @@ leans on its tags and timeline. The default spine:
    rides over the band's lower-left edge. On an address page the tags carry
    the roll's measurements too (floor area, lot area, units, rooms, bedrooms,
    bathrooms, construction), with areas written `1,382 ft<sup>2</sup>`.
+   Construction falls back to a survey's `frame` where the roll's code has
+   no name, and that survey's panel then drops its own Construction row.
 3. `.lead` — one or two sentences, and only for what no block below can
    carry. **Dropped entirely** when the blocks already say everything.
 4. `.cols` — main narrative/timeline on the left, `.aside` panels on the right.
@@ -504,6 +506,9 @@ radius — a bleed is only a bleed if nothing frames it); `.media-lift` is the
 behaviour, left alone. The map is a
 **locator**, not a data layer: it carries no parcel outline, no label, and no
 fact that isn't already on the page, so nothing is lost when it doesn't load.
+Its one mark is `.map-dot`, drawn by `<ktp-map>` in CSS at the band's centre
+rather than as a Mapbox pin, so the building wears the homepage map's resting
+circle.
 (A `<figcaption>` is optional — use it for a real photo's credit, not to repeat
 facts shown elsewhere like the parcel number. Neither image needs an
 attribution caption: Google renders its own into the picture, and `<ktp-map>`

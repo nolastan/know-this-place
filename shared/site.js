@@ -102,13 +102,6 @@ customElements.define(
   },
 );
 
-/* Read a design-system color at render time. The static map's pin is drawn by
-   Mapbox, not by CSS, so its hue has to be passed to the server as a hex
-   string — reading it from site.css keeps it the same brick the rest of the
-   site uses, in both light and dark mode, and keeps every color in one file. */
-const cssVar = (name) =>
-  getComputedStyle(document.documentElement).getPropertyValue(name).trim();
-
 /* <ktp-map location="LAT,LNG" label="123 Example St">
      <figure class="media media-map"> …placeholder or fallback… </figure>
    </ktp-map>
@@ -133,6 +126,12 @@ const cssVar = (name) =>
    image, so a page with no picture carries no credit for one. On a phone the
    links wrapped to three lines over the picture, so there they fold behind an
    "i" button beside the wordmark until it is tapped.
+
+   The building is marked by the homepage map's resting dot, not a Mapbox pin:
+   the image is centred on the coordinates, so the element draws .map-dot at
+   the band's centre in CSS — the same brick circle with a paper ring the
+   homepage draws for a researched address at street level. It goes in with
+   the image too, and follows the color scheme on its own.
 
    The basemap follows the reader's color scheme (the same two styles the
    homepage map uses) and re-renders if they switch mid-visit. */
@@ -168,9 +167,7 @@ customElements.define(
       const src = () =>
         "https://api.mapbox.com/styles/v1/mapbox/" +
         (dark.matches ? "dark-v11" : "light-v11") +
-        "/static/pin-s+" +
-        cssVar("--warm").replace("#", "") +
-        `(${lng},${lat})/${lng},${lat},${MAP_ZOOM},0/` +
+        `/static/${lng},${lat},${MAP_ZOOM},0/` +
         (PHONE.matches ? MAP_SIZE_PHONE : MAP_SIZE) +
         "?attribution=false&logo=false&access_token=" +
         encodeURIComponent(token);
@@ -184,6 +181,10 @@ customElements.define(
       img.alt = "Map showing the location of " + label;
       img.decoding = "async";
       empty.replaceWith(img);
+
+      const dot = document.createElement("span");
+      dot.className = "map-dot";
+      this.append(dot);
 
       const credit = document.createElement("div");
       credit.className = "map-credit";
@@ -206,8 +207,6 @@ customElements.define(
         credit.toggleAttribute("data-open", open);
       });
 
-      // --warm resolves to the dark-mode brick on its own, so re-reading it
-      // here is all the swap needs.
       dark.addEventListener("change", () => (img.src = src()));
       PHONE.addEventListener("change", () => (img.src = src()));
     }

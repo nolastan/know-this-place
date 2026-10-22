@@ -793,6 +793,28 @@ def individual_designations(rec: dict) -> list:
             if t in INDIVIDUAL_DESIGNATION]
 
 
+def landmark_tags(rec: dict) -> list:
+    """`individual_designations`, with the city landmark's number on its tag.
+
+    "City landmark #100" is the whole designation in one tag: the number is the
+    landmark's own identifier, so it was an "At a glance" row beside a tag that
+    already said "City landmark". `city_landmark` is read even where
+    `historic_status` doesn't carry the token — a page whose research recorded
+    the designation is a landmark whatever Planning's field says.
+    """
+    out = individual_designations(rec)
+    cl = rec.get("city_landmark") or {}
+    if not cl.get("name"):
+        return out
+    label = f"City landmark #{cl['number']}" if cl.get("number") else "City landmark"
+    i = next((n for n, (_, t) in enumerate(out) if t == "City landmark"), None)
+    if i is None:
+        out.insert(0, ("hgi-castle-02", label))
+    else:
+        out[i] = (out[i][0], label)
+    return out
+
+
 def register_status(v: str = None) -> str:
     """State register status precisely — "eligible" is not "listed"."""
     return {"Listed": "Listed", "Eligible": "Eligible (not listed)"}.get(v, "Not listed")
@@ -1617,8 +1639,13 @@ def building_name(rec: dict) -> str | None:
     `<title>` — where a page's research found one. A tower marketed under its
     own address ("101 Second Street") has no name the heading adds, so it is
     headed by the address like any unnamed page.
+
+    Without one, a city landmark is headed by the name it was designated under:
+    "Garcia & Maggini Warehouse" is what the city calls 128 King Street.
     """
-    name = re.sub(r"\s+", " ", (rec.get("building") or {}).get("name") or "").strip()
+    name = ((rec.get("building") or {}).get("name")
+            or (rec.get("city_landmark") or {}).get("name") or "")
+    name = re.sub(r"\s+", " ", name).strip()
     return name if name and name.lower() != page_title(rec).lower() else None
 
 
@@ -1689,6 +1716,9 @@ def tags_html(rec: dict) -> str:
     # fact, not a headline. Building area needs no label: a bare floor area
     # beside the type and stories reads as the building's own.
     out.extend(measurement_tags(p))
+    ctype = construction(rec)
+    if ctype:
+        out.append(("hgi-crane-tower", ctype))
     if p.get("zoning"):
         out.append(("ic-plan", f"Zoned {p['zoning']}"))
     if rec.get("public_open_space"):
@@ -1701,7 +1731,7 @@ def tags_html(rec: dict) -> str:
         out.append(("hgi-castle-02", label))
     # After the CEQA classification, which is the general finding: a
     # designation is the specific one, and it is the building's own.
-    out.extend(individual_designations(rec))
+    out.extend(landmark_tags(rec))
     # The roll's last recorded sale. It was an "at a glance" row; as a tag it
     # reads in a glance without a panel to open. A date, not a party: who
     # bought it is never printed.
@@ -1749,10 +1779,21 @@ def measurement_tags(p: dict) -> list:
         out.append(("hgi-bed", plural(p["bedrooms"], "bedroom")))
     if p.get("bathrooms"):
         out.append(("hgi-toilet-01", plural(p["bathrooms"], "bathroom")))
-    ctype = CONSTRUCTION.get(p.get("construction_type_code"))
-    if ctype:
-        out.append(("hgi-crane-tower", ctype))
     return out
+
+
+def surveys_of(rec: dict) -> list:
+    surveys = rec.get("historic_survey") or []
+    return [surveys] if isinstance(surveys, dict) else [s for s in surveys if s]
+
+
+def construction(rec: dict) -> str:
+    """The construction hero tag: the assessor's code where the roll gives one
+    we can name, else the first survey that recorded a frame — the 1990
+    unreinforced-masonry survey's is the common case. One tag, never a row as
+    well (see `one_survey_panel_html`)."""
+    ctype = CONSTRUCTION.get(((rec.get("parcel") or {})).get("construction_type_code"))
+    return ctype or next((s["frame"] for s in surveys_of(rec) if s.get("frame")), "")
 
 
 def dead_permit_phrase(dropped: dict) -> tuple[str, int]:
@@ -2134,8 +2175,15 @@ def value_panel_html(rec: dict, indent: str) -> str:
     improv = a.get("assessed_improvement_value")
     if not land or not improv:
         return ""
-    total = land + improv
-    lp = round(land / total * 100, 1)
+    # Fixtures are the roll's third secured column, taxed like the other two:
+    # the built-in plant of an office floor or a warehouse, near zero on a
+    # house and close to the improvements on 128 King Street. They count in
+    # the total but stay out of the bar, which is a split in two (see
+    # shared/BLOCKS.md), so the bar is land against building and fixtures get
+    # a text line beside the total.
+    fixtures = a.get("assessed_fixtures_value") or 0
+    total = land + improv + fixtures
+    lp = round(land / (land + improv) * 100, 1)
     ip = round(100 - lp, 1)
     # No panel chrome and no heading: the legend already names land,
     # improvements and the total, and the Sources footer names the roll, so a
@@ -2157,7 +2205,10 @@ def value_panel_html(rec: dict, indent: str) -> str:
         f'{indent}      <span class="legend-item"><span class="swatch seg-warm"></span>'
         f'<span>Improvements</span>&nbsp;<b>${improv:,}</b></span>\n'
         f'{indent}    </div>\n'
-        f'{indent}    <div class="legend" style="margin-top:.5rem"><span class="legend-item">'
+        f'{indent}    <div class="legend" style="margin-top:.5rem">'
+        + (f'<span class="legend-item"><span>Fixtures</span>&nbsp;<b>${fixtures:,}</b></span>'
+           if fixtures else "")
+        + f'<span class="legend-item">'
         f'<span>Total assessed</span>&nbsp;<b>${total:,}</b></span></div>\n'
         f'{indent}  </ktp-figure>\n'
         f'{indent}</section>\n')
@@ -2345,13 +2396,11 @@ def survey_panel_html(rec: dict, indent: str) -> str:
     looked at the building. Where a survey's own address or APN disagrees
     with the city's, both are shown and neither is adjudicated.
     """
-    surveys = rec.get("historic_survey") or []
-    if isinstance(surveys, dict):
-        surveys = [surveys]
-    return "".join(one_survey_panel_html(s, indent) for s in surveys if s)
+    ctype = construction(rec)
+    return "".join(one_survey_panel_html(s, indent, ctype) for s in surveys_of(rec))
 
 
-def one_survey_panel_html(s: dict, indent: str) -> str:
+def one_survey_panel_html(s: dict, indent: str, ctype: str = "") -> str:
     rows = []
     for icon, key, val in (
             # Not every survey assigns a status code. A CEQA-era evaluation
@@ -2386,7 +2435,10 @@ def one_survey_panel_html(s: dict, indent: str) -> str:
              s.get("architect_as_surveyed") or s.get("architect")),
             ("hgi-labor", "Builder as surveyed",
              s.get("builder") or s.get("builder_as_surveyed")),
-            ("hgi-crane-tower", "Construction", s.get("frame")),
+            # Construction is a hero tag. A survey's frame shows here only
+            # where it disagrees with that tag — never state a fact twice.
+            ("hgi-crane-tower", "Construction",
+             s.get("frame") if (s.get("frame") or "").lower() != ctype.lower() else None),
             ("ic-layers", "Integrity", s.get("physical_integrity")),
             ("ic-calendar", "Year built as surveyed", s.get("year_built_as_surveyed")),
             ("hgi-location-03", "Address as surveyed", s.get("address_as_surveyed")),
@@ -3063,8 +3115,8 @@ def glance_panel_html(rec: dict, indent: str) -> str:
                      ", to ".join([stair["name"], *far[:1]])))
     # No "Construction" or "Residential units" rows: both are hero tags (see
     # `measurement_tags`).
-    if a.get("assessed_fixtures_value"):
-        rows.append(("ic-value", "Assessed fixtures", f"${a['assessed_fixtures_value']:,}"))
+    # No "Assessed fixtures" row: the value figure prints fixtures beside the
+    # total they are part of (see `value_panel_html`).
     # Why a parcel pays no tax on the figures the chart above it prints. The
     # roll's exemption column is the assessor's own word for the use the
     # exemption was granted for — "Welfare" for a nonprofit's office building,
@@ -3084,15 +3136,9 @@ def glance_panel_html(rec: dict, indent: str) -> str:
     # nothing to a reader on its own. Same reasoning as the district panel's
     # article number. The code stays in data.json; it just isn't printed.
     #
-    # `city_landmark` is the exception, and for the same reason the status row
-    # is gone: the hero tag says the building is an Article 10 landmark, and
-    # this says *which* one. The name and the ordinance number are the
-    # designation's own identifiers, and neither is anywhere else on the page.
-    cl = rec.get("city_landmark") or {}
-    if cl.get("name"):
-        num = cl.get("number")
-        rows.append(("ic-check", "City landmark",
-                     f"{cl['name']} — No. {num}" if num else cl["name"]))
+    # Nor a city landmark row: the hero tag carries the number ("City landmark
+    # #100", see `landmark_tags`), and the designated name is the heading
+    # where the page records no other (see `building_name`).
     if not rec.get("permits"):
         rows.append(("ic-clock", "Permits on file", "None"))
     if not rows:
