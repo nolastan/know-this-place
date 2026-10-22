@@ -2819,6 +2819,11 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   that close a meeting — a resolution number, a roll call, two lines of
   motion — so six decisions had no page to be read from. Keeping any page
   that also prints a meeting header ("MINUTES OF THE") brought them back.
+  The header test is a second trap of the same kind: volume 39 (1980) heads
+  its pages "SUMMARY OF THE" and "SUMMARIES OF THE", and the OCR prints the
+  words with two spaces between them, so a literal `"MINUTES OF THE" in text`
+  kept none of the five short vote pages it was written for. Match the
+  volume's own header words with `\s+` between them.
   *Before trusting a text-page filter, list the pages it drops and read a
   handful; a short page is often the end of something, not nothing.*
   ([sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))

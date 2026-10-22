@@ -19,6 +19,7 @@ A district on the rise between the Richmond and the Panhandle, around the Univer
 - [Loraine Court](loraine-court/) — 1 building, built 1900.
 - [Masonic Avenue](masonic-avenue/) — 1 building, built 1900.
 - [Mcallister Street](mcallister-street/) — 1 building, built 1900.
+- [Shrader Street](shrader-street/) — 1 building, built 1908.
 - [Stanyan Street](stanyan-street/) — 1 building.
 - [Turk Boulevard](turk-boulevard/) — 1 building.
 - [Vega Street](vega-street/) — 1 building.

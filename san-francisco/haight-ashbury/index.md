@@ -8,6 +8,7 @@ The neighborhood at the east end of Golden Gate Park, at the centre of San Franc
 - [Ashbury Street](ashbury-street/) — Two buildings — the house guides give the Grateful Dead, and one of three Janis Joplin addresses.
 - [Ashbury Terrace](ashbury-terrace/) — 1 building, built 1912.
 - [Belvedere Street](belvedere-street/) — 2 buildings, built 1906–1908.
+- [Beulah Street](beulah-street/) — 1 building, built 1900.
 - [Broderick Street](broderick-street/) — 1 building, built 1900; 1 in the Buena Vista North Historic District.
 - [Buena Vista Avenue](buena-vista-avenue/) — 1 building, built 1931.
 - [Buena Vista Avenue West](buena-vista-avenue-west/) — The house the city names the Floyd Spreckels Mansion, tied to Jack London and Danny Glover.
@@ -17,6 +18,7 @@ The neighborhood at the east end of Golden Gate Park, at the centre of San Franc
 - [Clayton Street](clayton-street/) — 1 building, built 1900; 1 in the Panhandle Historic District.
 - [Cole Street](cole-street/) — A two-flat 1903 building linked to Charles Manson in 1967.
 - [Divisadero Street](divisadero-street/) — 1 building, built 1885.
+- [Fell Street](fell-street/) — 1 building, built 1987.
 - [Haight Street](haight-street/) — Flats over a store of 1900, inside the Counterculture Historic District.
 - [Lyon Street](lyon-street/) — Two buildings facing the Panhandle, both named for Janis Joplin by the same guide.
 - [Masonic Avenue](masonic-avenue/) — 2 buildings, built 1903–1906; 2 in the Ashbury Heights Historic District.

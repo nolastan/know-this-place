@@ -1,0 +1,143 @@
+{
+  "address": "180 Urbano Drive, San Francisco, CA 94127",
+  "path": "/san-francisco/ingleside-terraces/urbano-drive/180/",
+  "apn": "6914008",
+  "block": "6914",
+  "lot": "008",
+  "eas_baseid": "408412",
+  "coordinates": {
+    "lat": 37.725583,
+    "lng": -122.465777
+  },
+  "parcel": {
+    "lot_area_sqft": 13612,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Residential",
+    "construction_type_code": "NA",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Ingleside Terrace",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0188 URBANO              DR0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 413626,
+    "last_sale_date": "2001-08-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Ingleside Terrace Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1910–1930",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "9520288",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-11-30",
+      "status_date": "1996-03-31",
+      "estimated_cost": 1000,
+      "description": "renewal app #9420149 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9420149",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-12-07",
+      "status_date": "1995-06-07",
+      "estimated_cost": 7500,
+      "description": "repl ktch cabs-repr dry rot,lndry rm-recopper kitch & bths",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9318162",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-10-15",
+      "status_date": "1994-02-15",
+      "estimated_cost": 2500,
+      "description": "dry rot repair, remove stucco & damaged sheathing, windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9303713",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-03-08",
+      "status_date": "1993-09-08",
+      "estimated_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8921169",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "1989-11-03",
+      "status_date": "1990-05-25",
+      "description": "demolition of wooden car port",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=URBANO&street_type=DR&address_number=180",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6914008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6914&lot=008",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6914008",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.46577711034752%2037.72558262707335)%27)",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1980-05-01",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 1 May 1980",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/39minutesofsanfran1980san/page/n213/mode/1up",
+      "retrieved": "2026-10-22"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1980-05-01",
+      "kind": "planning decision",
+      "description": "The City Planning Commission refused, 6-0, a four-stall community garage in an RH-1(D) district (Resolution 8581).",
+      "source": "sf-planning-commission-minutes-1980-05-01"
+    }
+  ]
+}

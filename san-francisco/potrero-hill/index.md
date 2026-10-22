@@ -15,6 +15,7 @@ opened here in 1905.
 - [19th Street](19th-street/) — 1 building, built 1907.
 - [20th Street](20th-street/) — 2 buildings, built 1900–1950.
 - [22nd Street](22nd-street/) — 1 building, built 1915.
+- [23rd Street](23rd-street/) — 1 building, built 1999.
 - [25th Street](25th-street/) — 1 building, built 2006.
 - [3rd Street](3rd-street/) — 1 building, built 1946.
 - [Arkansas Street](arkansas-street/) — 1 building, built 1950; 1 in the Midcentury Recreation Historic District (Discontiguous).

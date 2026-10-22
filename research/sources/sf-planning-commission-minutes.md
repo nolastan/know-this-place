@@ -6,12 +6,12 @@
 >
 > - **Kind:** meeting minutes (scanned volumes) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 32 of 52 volumes read (July 1968 – December 1979): 9,320
->   pages, 3,384 findings, 1,619 resolved, 1,485 published. 20 volumes
->   remain — 1980 and 1994–2005. July–December 1975 is in no
+> - **Coverage:** 33 of 52 volumes read (July 1968 – December 1980): 9,714
+>   pages, 3,589 findings, 1,716 resolved, 1,582 published. 19 volumes
+>   remain — 1994–2005. July–December 1975 is in no
 >   volume, nor is the regular meeting of 16 March 1978; volume 37
->   holds only 17 of June – November 1978's meetings and volume 38 only
->   34 of 1979's.
+>   holds only 17 of June – November 1978's meetings, volume 38 only
+>   34 of 1979's, and volume 39 has no record of 7 February or 14 August 1980.
 > - **Local corpus:** `research/corpora/sf-planning-commission-minutes/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -50,7 +50,7 @@
 | 36 | January – March 1978 | **read in full** 2026-10-18; it holds no minutes for the regular meeting of 16 March 1978 |
 | 37 | June – November 1978 (`volume` "June-Nov 1978") | **read in full** 2026-10-19; it holds only 17 meetings — no regular meeting of June, and none of 6, 13 and 27 July, 31 August, 21 and 28 September, 12, 19 and 26 October, or 2 and 30 November |
 | 38 | 1979 whole (`volume` "1979") | **read in full** 2026-10-20; it holds 34 regular meetings, 4 January – 20 December — none of 22 and 29 March, 5 and 19 April, 10 and 31 May, 12 and 19 July, 20 and 27 September, 4 and 18 October, 1, 15 and 29 November or 6 December |
-| 39 | 1980 whole | unread |
+| 39 | 1980 whole (`volume` "1980") | **read in full** 2026-10-22; 49 meetings, 3 January – 18 December, each printed as a summary and then as minutes, one or the other missing for many; no record of 7 February or 14 August |
 | 40–58 | 1994–2005 | unread |
 | — | 1981–1993 | in no volume |
 | — | before July 1968 | not in this collection. The Commission dates from 1942 |
@@ -332,6 +332,25 @@
   the resolver's sibling test let both through; but both have a lot area of
   zero. The resolver now treats zero lot area on a condominium-class parcel
   as a unit. The existing 1097 Green page sits on that unit parcel (#228).
+- **From 1980 every meeting is printed twice.** Volume 39 binds a one-page
+  *Summary of the Regular Meeting* — each calendar item with its resolution
+  number and vote — ahead of the minutes proper, and for many meetings only
+  the summary survived the scan (or only the minutes, or, from March, a
+  combined "Summary and Minutes"). The summary is the better page to cite a
+  decision from: one line, the number and the vote, no motion. But the two
+  disagree now and then (587 7th Avenue is Resolution 8465 in the summary and
+  8466 in the minutes; 1869/1860 Washington), so read both where both exist
+  and note the difference in `reader_note`. The summaries' vote lines print
+  the dissenters as "Voting no: Commissioners …", which a quote must stop
+  short of.
+- **1980 is the second condominium-conversion year and the year of the
+  surplus schools.** 51 of 205 findings are condominium subdivisions — nearly
+  every one approved 4-3 or 4-2 over the same dissenting votes — and 54 of
+  the year's unresolved findings are condominiums today (#446). The school
+  district's surplus sites (Gough, Grant, Farragut, Portola, Marshall Annex,
+  Lucinda Weeks) were rezoned from P for housing at long evening hearings;
+  their environmental reviews print the old school buildings' storeys and
+  floor areas, which are worth taking.
 - **People:** The minutes are *full* of them: applicants, their attorneys and
   architects, objecting neighbours, improvement-club officers, the
   commissioners and the staff, all named in the narrative of every hearing.
@@ -373,8 +392,9 @@
   June – November 1978 the scan holds, into `minutes-1978-h2.json`;
   volume 38, the 34 meetings of 1979 the scan holds, into
   `minutes-1979.json`.
-  **Next: volume 39 (1980, `39minutesofsanfran1980san`)** into
+  volume 39, the 49 meetings of 1980 the scan holds, into
   `minutes-1980.json`.
+  **Next: volumes 40–58 (1994–2005)** — sample one before sizing a run.
   Size by text pages, not by the span label: volume 38 was a whole year but
   only 309 text pages (760,000 characters), one nightly run for a single
   reader; a half-year volume of 519 to 572 text pages also fits one run;
@@ -625,6 +645,27 @@
   until its test was widened; and the year's gas-station hearings on 19th
   Avenue and the Sunset all went the operators' way, 5-1, against the
   staff's housing-site recommendation.)
+  **2026-10-22** (volume 39, 1980: 394 OCR pages with text out of 440
+  viewer pages (442 scanned leaves), read in one session by a single reader
+  with no sub-agents; 49 meetings, 3 January to 18 December. 205 findings —
+  175 decisions, 16 landmark actions, 13 statements of what stood on a
+  property, 1 dated past fact. 97 resolved: 86 by the EAS join (one after
+  reading ARMY as Cesar Chavez through the record's block), 11 by hand — by
+  name on a building a page already carries (the International Hotel, the
+  Chambers Mansion, St. Joseph's Church, the Daon Building site, the Sharon
+  Building's place page) and by the record's own lot (the A. Borel & Co.
+  Building on 456 Montgomery's parcel, 202 Green as 200 Green, 1380 Fell by
+  its 6,875 sq ft). 108 unresolved: 54 condominiums today (#446), 25 with no
+  street number, 16 ranges now split across parcels, 12 at numbers EAS does
+  not hold, and 501 Cambridge, whose printed block the join contradicts. 97
+  published on 85 pages, 46 of them seeded; none declined. One conflict
+  stated (the Rothschild House's designation year). What the pass learned:
+  the text-page filter's header test has to match the volume's own header
+  words — 1980 heads its pages "SUMMARY OF THE" and the OCR doubles the
+  spaces, so a test for "MINUTES OF THE" dropped five short pages that carry
+  votes until it was widened; and `check.py`'s commissioner test missed the
+  plural "Commissioners", which hid three quotes in the 1977 and 1978 files —
+  widened and trimmed.)
 
 ## Reader spec
 
@@ -682,7 +723,9 @@ instead, and change it here when a run learns something a reader needs.
 - `raw_text` is the shortest verbatim span (≤ 250 characters, copied exactly
   from the page file) that justifies the fact, chosen to contain no personal
   name — quote the vote from "passed" or "carried", never the motion
-  ("moved by Commissioner …"), which `check.py` now rejects. It is checked
+  ("moved by Commissioner …"), which `check.py` now rejects. From 1980, a summary
+  page's line ("Approved Resolution No. 8490 Vote 6-1") is the best quote;
+  stop it before "Voting no: Commissioners …". It is checked
   mechanically against the page. **It must sit on one
   page** — a reader working from concatenated pages will pick spans that run
   across a page break, and `page` must be the page the span is on.

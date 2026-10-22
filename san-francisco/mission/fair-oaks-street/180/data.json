@@ -1,0 +1,148 @@
+{
+  "address": "180–198 Fair Oaks Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/fair-oaks-street/180/",
+  "apn": "3631014",
+  "block": "3631",
+  "lot": "014",
+  "eas_baseid": "363653",
+  "coordinates": {
+    "lat": 37.753739,
+    "lng": -122.424465
+  },
+  "address_range": "180–198",
+  "street_numbers_on_parcel": [
+    "180",
+    "198"
+  ],
+  "parcel": {
+    "year_built": 1904,
+    "units": 2,
+    "stories": 2,
+    "rooms": 15,
+    "bathrooms": 2,
+    "lot_area_sqft": 14331,
+    "use": "Commercial Misc",
+    "property_class": "Churches,Convents,Rectories",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 0198 FAIR OAKS           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 213219,
+    "assessed_improvement_value": 963665
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Fair Oaks Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1870s–1910s",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201907085287",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-07-08",
+      "status_date": "2019-09-27",
+      "estimated_cost": 80000,
+      "revised_cost": 80000,
+      "description": "barrier removal: replacement of restroom fixtures, add drinking fountain.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201008037967",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-08-03",
+      "status_date": "2011-03-04",
+      "estimated_cost": 44000,
+      "revised_cost": 44000,
+      "description": "repl wood sashes with new wood sashes, visible from the street, no structural changes, 23 windows total with matching pattern ..no egress changes",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200602215031",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-02-21",
+      "status_date": "2006-02-21",
+      "estimated_cost": 38800,
+      "revised_cost": 38800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9611455",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1996-06-26",
+      "status_date": "1997-07-17",
+      "estimated_cost": 10000,
+      "description": "stairway restructuring for dryrot repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FAIR%20OAKS&street_type=ST&address_number=180",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3631014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3631&lot=014",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3631014",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42446510998377%2037.753739303357854)%27)",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1980-06-05",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 5 June 1980",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/39minutesofsanfran1980san/page/n241/mode/1up",
+      "retrieved": "2026-10-22"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1980-06-05",
+      "kind": "planning decision",
+      "description": "The City Planning Commission refused, 7-0, a public-access television studio in an RH-3 district (Resolution 8605).",
+      "source": "sf-planning-commission-minutes-1980-06-05"
+    }
+  ]
+}

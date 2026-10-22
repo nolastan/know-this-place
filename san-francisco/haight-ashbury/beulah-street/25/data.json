@@ -1,0 +1,118 @@
+{
+  "address": "25 Beulah Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/beulah-street/25/",
+  "apn": "1261026",
+  "block": "1261",
+  "lot": "026",
+  "eas_baseid": "298860",
+  "coordinates": {
+    "lat": 37.767325,
+    "lng": -122.450894
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 3746,
+    "building_area_sqft": 3320,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Cole Valley/Parnassus Heights",
+    "analysis_neighborhood": "Haight Ashbury",
+    "property_location_raw": "0027 0025 BEULAH              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 61422,
+    "assessed_improvement_value": 30692
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201604296153",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-04-29",
+      "status_date": "2016-05-06",
+      "estimated_cost": 8000,
+      "revised_cost": 16500,
+      "description": "replace kitchen cabinets and countertops",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200203040494",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-03-04",
+      "status_date": "2002-04-23",
+      "estimated_cost": 27500,
+      "revised_cost": 27500,
+      "description": "repair dryrot as per termite report#33717 item #1b,1c,1d,3a,3b,4a,4b,6a,11d",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9808736",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-05-14",
+      "status_date": "1999-04-20",
+      "estimated_cost": 15000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BEULAH&street_type=ST&address_number=25",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1261026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1261&lot=026",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1261026",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1980-04-03",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 3 April 1980",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/39minutesofsanfran1980san/page/n173/mode/1up",
+      "retrieved": "2026-10-22"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1980-04-03",
+      "kind": "planning decision",
+      "description": "The City Planning Commission approved, 5-0 and with conditions, a residential care facility for ten people in an RH-3 district (Resolution 8549).",
+      "source": "sf-planning-commission-minutes-1980-04-03"
+    }
+  ]
+}
