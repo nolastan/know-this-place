@@ -168,8 +168,15 @@ ICON_LINKS = """  <link rel="icon" href="/favicon.ico" sizes="32x32">
 # The stylesheet link carries the file's content hash so a CSS change busts
 # the CDN cache on the next deploy. Keep the hash short; it only needs to change
 # when the file does.
+#
+# Only a page the build writes whole carries the hash. A committed page — the
+# homepage, the city index, the neighborhood hubs — carries CSS_SOURCE_LINK,
+# with no hash, and `build_site.py --stage` stamps it into the published copy.
+# A hash in a tracked file changes with every CSS edit, so any two branches
+# that touched site.css used to conflict on 46 files neither meant to change.
 _CSS_HASH = hashlib.md5((ROOT / "shared" / "site.css").read_bytes()).hexdigest()[:8]
 CSS_LINK = f'  <link rel="stylesheet" href="/shared/site.css?v={_CSS_HASH}">'
+CSS_SOURCE_LINK = '  <link rel="stylesheet" href="/shared/site.css">'
 HUGEICONS_LINK = '  <link rel="stylesheet" href="https://use.hugeicons.com/font/icons.css">'
 
 # Breadcrumb divider. Rendered as its own unlinked element so the chevron is
@@ -5028,11 +5035,11 @@ def write_neighborhood_hub(area_dir: Path, ctx: dict) -> int:
 
     if html_path.exists():
         text = html_path.read_text(encoding="utf-8")
-        # Keep the committed hub's stylesheet link in sync with the shared
-        # stylesheet hash, since the <head> is not regenerated from scratch.
+        # A committed hub carries the unhashed link (see CSS_SOURCE_LINK), and
+        # this puts back one that a hand edit or an old branch hashed.
         text, n_link = re.subn(
             r'[ \t]*<link rel="stylesheet" href="/shared/site\.css[^"]*">',
-            CSS_LINK, text)
+            CSS_SOURCE_LINK, text)
         if not n_link:
             raise SystemExit(f"{html_path}: no stylesheet link to update")
         block = "\n".join(

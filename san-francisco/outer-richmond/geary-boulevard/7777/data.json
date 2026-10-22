@@ -1,0 +1,185 @@
+{
+  "address": "7777 Geary Boulevard, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/geary-boulevard/7777/",
+  "apn": "1503061",
+  "block": "1503",
+  "lot": "061",
+  "eas_baseid": "305883",
+  "coordinates": {
+    "lat": 37.778926,
+    "lng": -122.502608
+  },
+  "parcel": {
+    "year_built": 1976,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 5,
+    "lot_area_sqft": 13750,
+    "building_area_sqft": 8050,
+    "use": "Commercial Misc",
+    "property_class": "Churches,Convents,Rectories",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Outer Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 7777 GEARY               BL0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 210448,
+    "assessed_improvement_value": 583361,
+    "assessed_fixtures_value": 22226
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1976",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200110150796",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-10-15",
+      "status_date": "2002-04-09",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9911949",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1999-06-16",
+      "status_date": "2004-08-16",
+      "estimated_cost": 410000,
+      "revised_cost": 410000,
+      "description": "handicapped elevtr/restrms/ramp/add ser rm classrms on(n)3/f level/sprnkr fire alrm undr sep permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9902203",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-02-03",
+      "status_date": "1999-06-03",
+      "estimated_cost": 1,
+      "description": "as-built plans for revisions to approved permit 9901706",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9901706",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-01-27",
+      "status_date": "1999-07-27",
+      "estimated_cost": 11000,
+      "description": "upgrading fire alarm system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9620089",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-10-18",
+      "status_date": "1997-04-18",
+      "estimated_cost": 6250,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9308576",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-05-21",
+      "status_date": "1995-04-04",
+      "estimated_cost": 20000,
+      "description": "r/r exter stucco, sole plate, conc walkwy, waterprf membrane",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8805281",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-04-22",
+      "status_date": "1988-07-05",
+      "estimated_cost": 5000,
+      "description": "install hood, duct, on roof blower, re #8708706",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8708706",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-06-23",
+      "status_date": "1988-07-14",
+      "estimated_cost": 12000,
+      "description": "interior cabinet work & partition, kitchen appliances",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8307665",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-08-05",
+      "status_date": "1983-11-02",
+      "estimated_cost": 9000,
+      "description": "install brich vineer over red wood wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GEARY&street_type=BLVD&address_number=7777",
+      "retrieved": "2026-10-20"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1503061&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-20"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1503&lot=061",
+      "retrieved": "2026-10-20"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1503061",
+      "retrieved": "2026-10-20"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1979-03-01",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 1 March 1979",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/38minutesofsanfran1979san/page/n84/mode/1up",
+      "retrieved": "2026-10-20"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1979-03-01",
+      "kind": "occupancy",
+      "description": "In March 1979 the building on the corner was a church.",
+      "source": "sf-planning-commission-minutes-1979-03-01"
+    },
+    {
+      "date": "1979-03-01",
+      "kind": "planning decision",
+      "description": "The City Planning Commission unanimously authorized a child care facility for about 35 children inside the existing church on the corner (Resolution 8185).",
+      "source": "sf-planning-commission-minutes-1979-03-01"
+    }
+  ]
+}

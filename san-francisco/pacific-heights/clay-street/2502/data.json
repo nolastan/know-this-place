@@ -1,0 +1,126 @@
+{
+  "address": "2502–2504 Clay Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/clay-street/2502/",
+  "apn": "0611005",
+  "block": "0611",
+  "lot": "005",
+  "eas_baseid": "286247",
+  "coordinates": {
+    "lat": 37.79089,
+    "lng": -122.434492
+  },
+  "address_range": "2502–2504",
+  "street_numbers_on_parcel": [
+    "2502",
+    "2504"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 3,
+    "rooms": 13,
+    "bathrooms": 3,
+    "lot_area_sqft": 2141.75,
+    "building_area_sqft": 3764,
+    "lot_depth_ft": 85.67,
+    "use": "Commercial Office",
+    "property_class": "Office",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "2504 2502 CLAY                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 671695,
+    "assessed_improvement_value": 626174
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202310128499",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-10-12",
+      "status_date": "2023-11-01",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "comply w/ abe program# 202206061291 - install power door operator information sheet ba-04/05 with (e) sloped landing at exterior side of door to remain. adjust (e) threshold, install new 10\" height min kick plate.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201511102340",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-11-10",
+      "status_date": "2015-11-10",
+      "estimated_cost": 19150,
+      "revised_cost": 19150,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2013–2023",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLAY&street_type=ST&address_number=2502",
+      "retrieved": "2026-10-20"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0611005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-20"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0611&lot=005",
+      "retrieved": "2026-10-20"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0611005",
+      "retrieved": "2026-10-20"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1979-01-25",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 25 January 1979",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/38minutesofsanfran1979san/page/n36/mode/1up",
+      "retrieved": "2026-10-20"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1979-01-25",
+      "kind": "occupancy",
+      "description": "In January 1979 the building was a commercial building standing in a residential (RH-2) district.",
+      "source": "sf-planning-commission-minutes-1979-01-25"
+    },
+    {
+      "date": "1979-01-25",
+      "kind": "planning decision",
+      "description": "The City Planning Commission unanimously refused to reclassify the commercial building's lot from RH-2 to C-2, leaving its commercial use to continue as a non-conforming use (Resolution 8159).",
+      "source": "sf-planning-commission-minutes-1979-01-25"
+    }
+  ]
+}

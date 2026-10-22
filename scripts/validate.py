@@ -86,7 +86,9 @@ def check_html(html_path: Path, html: str, is_address: bool) -> None:
     # left its markers in one is carried forward by every build after it.
     if re.search(r"^(?:<{7}|={7}|>{7})(?: |$)", html, re.M):
         err(html_path, "carries unresolved merge-conflict markers")
-    if seed_pages.CSS_LINK not in html:
+    # Hashed on a built page, unhashed on a committed one — the stage step
+    # stamps the hash into those (seed_pages.CSS_SOURCE_LINK).
+    if seed_pages.CSS_LINK not in html and seed_pages.CSS_SOURCE_LINK not in html:
         err(html_path, "missing the shared stylesheet link")
     for link in ICON_LINKS:
         if link not in html:

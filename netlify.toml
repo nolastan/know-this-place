@@ -6,15 +6,14 @@
 #
 # The build mirrors deploy.yml: run the builders, check the page contract,
 # then stage the working tree minus `.git` into `_site/` and publish that.
-# `tar` rather than rsync because the build image is not promised to carry
-# rsync, and publishing `.` would ship the repository's history.
+# Publishing `.` would ship the repository's history, and would skip the stage
+# step's stamping of the stylesheet hash into the committed pages.
 
 [build]
   command = """
     python3 scripts/build_site.py \
     && python3 scripts/validate.py \
-    && rm -rf _site && mkdir _site \
-    && tar --exclude=./.git --exclude=./_site -cf - . | tar -xf - -C _site
+    && python3 scripts/build_site.py --no-build --stage _site
   """
   publish = "_site"
 

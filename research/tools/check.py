@@ -206,6 +206,9 @@ def findings_files() -> list[Path]:
     return sorted((ROOT / "findings").glob("*/*.json"))
 
 
+_COMMISSIONER = re.compile(r"\bCommissioner\s+(?!Resolution)[A-Z][a-z]{2,}")
+
+
 def check_findings_file(path: Path, schema: dict, ids: set[str]) -> dict | None:
     rel = path.relative_to(ROOT.parent)
     try:
@@ -376,6 +379,16 @@ def check_rules(rel: Path, data: dict) -> None:
                           f"street_number up literally, so this will come back "
                           f"unresolved. Put the range there and the low number "
                           f"in street_number.")
+
+        # The minutes' reader spec bars every personal name from every field,
+        # raw.text included, and a quote of the vote is the easy place to break
+        # it: "moved by Commissioner Starbuck, seconded by ..." 23 of the 1979
+        # batch's 163 quotes named a commissioner, and 15 more had slipped
+        # through five earlier batches. Quote from "passed" or "carried".
+        if (data.get("source_id") == "sf-planning-commission-minutes"
+                and _COMMISSIONER.search((f.get("raw") or {}).get("text", ""))):
+            err(str(rel), f"{fid}: raw.text names a commissioner — quote the "
+                          f"vote from 'passed' or 'carried', not the motion")
 
         res = f.get("resolution", {}) if isinstance(f.get("resolution"), dict) else {}
         status = res.get("status")

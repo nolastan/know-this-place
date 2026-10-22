@@ -1,0 +1,133 @@
+{
+  "address": "3595 Folsom Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/folsom-street/3595/",
+  "apn": "5627023",
+  "block": "5627",
+  "lot": "023",
+  "eas_baseid": "381066",
+  "coordinates": {
+    "lat": 37.741645,
+    "lng": -122.413009
+  },
+  "parcel": {
+    "year_built": 1981,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 1746,
+    "building_area_sqft": 1600,
+    "basement_area_sqft": 450,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Bernal Heights",
+    "property_location_raw": "0000 3595 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1132691,
+    "assessed_improvement_value": 485436,
+    "last_sale_date": "2013-07-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1981",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202409130726",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-09-13",
+      "status_date": "2026-02-06",
+      "estimated_cost": 240000,
+      "revised_cost": 240000,
+      "description": "interior and exterior renovation to single family home. interior work includes new primary suite, kitchen remodel, replace e gas fireplace. exterior work includes new windows, new siding, new doors, new parapet",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209179862",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2012-09-17",
+      "status_date": "2024-11-15",
+      "estimated_cost": 35000,
+      "revised_cost": 0,
+      "description": "2nd floor: replace kitchen/living bearing wall w/new steel beam. 1st floor: change 2 bedroom into master suite. new interior non-bearing wals and new wood beams. replace roof.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201206273590",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-06-27",
+      "status_date": "2013-07-16",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "dry rot repair and window replacement(2) visible from street. updating kitchen and bathroom. remodel two bathrooms in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200211060927",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-11-06",
+      "status_date": "2002-12-02",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "repair dry rot",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=3595",
+      "retrieved": "2026-10-20"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5627023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-20"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5627&lot=023",
+      "retrieved": "2026-10-20"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5627023",
+      "retrieved": "2026-10-20"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1979-01-04",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 4 January 1979",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/38minutesofsanfran1979san/page/n10/mode/1up",
+      "retrieved": "2026-10-20"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1979-01-04",
+      "kind": "planning decision",
+      "description": "After taking discretionary review, the City Planning Commission voted 4-2 to approve the building permit for a new single-family house on the south slope of Bernal Heights, provided emergency-vehicle access was kept open during sewer work (Resolution 8148).",
+      "source": "sf-planning-commission-minutes-1979-01-04"
+    }
+  ]
+}
