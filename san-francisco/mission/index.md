@@ -79,6 +79,7 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [Jersey Street](jersey-street/) — 3 buildings, built 1900–1909.
 - [Jessie Street](jessie-street/) — 3 buildings, built 1906–1907; 3 in the Jessie-McCoppin-Stevenson Streets Reconstruction Historic District.
 - [Julian Avenue](julian-avenue/) — 17 buildings, built 1900–1951.
+- [Juniper Street](juniper-street/) — 1 building, built 1906; 1 in the Western SOMA Light Industrial and Residential Historic District.
 - [Juri Street](juri-street/) — 8 buildings, built 1898–1918; 7 in the Juri Street Historic District.
 - [Kissling Street](kissling-street/) — 3 buildings, built 1906–1923; 3 in the Western SOMA Light Industrial and Residential Historic District.
 - [Lafayette Street](lafayette-street/) — 7 buildings, built 1906–1993; 7 in the Western SOMA Light Industrial and Residential Historic District.
