@@ -6,11 +6,12 @@
 >
 > - **Kind:** meeting minutes (scanned volumes) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 31 of 52 volumes read (July 1968 – November 1978): 9,011
->   pages, 3,221 findings, 1,538 resolved, 1,407 published. 21 volumes
->   remain — 1979, 1980 and 1994–2005. July–December 1975 is in no
->   volume, nor is the regular meeting of 16 March 1978, and volume 37
->   holds only 17 of June – November 1978's meetings.
+> - **Coverage:** 32 of 52 volumes read (July 1968 – December 1979): 9,320
+>   pages, 3,384 findings, 1,619 resolved, 1,485 published. 20 volumes
+>   remain — 1980 and 1994–2005. July–December 1975 is in no
+>   volume, nor is the regular meeting of 16 March 1978; volume 37
+>   holds only 17 of June – November 1978's meetings and volume 38 only
+>   34 of 1979's.
 > - **Local corpus:** `research/corpora/sf-planning-commission-minutes/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -48,7 +49,8 @@
 | 35 | July – December 1977 (`35minutesofsanfran1977sa`, no final `n`) | **read in full** 2026-10-17; its last page breaks off inside the 22 December meeting |
 | 36 | January – March 1978 | **read in full** 2026-10-18; it holds no minutes for the regular meeting of 16 March 1978 |
 | 37 | June – November 1978 (`volume` "June-Nov 1978") | **read in full** 2026-10-19; it holds only 17 meetings — no regular meeting of June, and none of 6, 13 and 27 July, 31 August, 21 and 28 September, 12, 19 and 26 October, or 2 and 30 November |
-| 38–39 | 1979 and 1980 whole | unread |
+| 38 | 1979 whole (`volume` "1979") | **read in full** 2026-10-20; it holds 34 regular meetings, 4 January – 20 December — none of 22 and 29 March, 5 and 19 April, 10 and 31 May, 12 and 19 July, 20 and 27 September, 4 and 18 October, 1, 15 and 29 November or 6 December |
+| 39 | 1980 whole | unread |
 | 40–58 | 1994–2005 | unread |
 | — | 1981–1993 | in no volume |
 | — | before July 1968 | not in this collection. The Commission dates from 1942 |
@@ -368,14 +370,14 @@
   December 1977, into `minutes-1977-h2.json` (the scan ends inside the 22
   December meeting); volume 36, every meeting of January – March 1978 the
   scan holds, into `minutes-1978-q1.json`; volume 37, the 17 meetings of
-  June – November 1978 the scan holds, into `minutes-1978-h2.json`.
-  **Next: volume 38 (1979, `38minutesofsanfran1979san`)** into
-  `minutes-1979.json` — volumes 36 and 37 took a single reader under half a
-  session each (177 and 124 text pages), so a short volume and its
-  successor fit one run; a half-year volume is one nightly run by a single
-  reader (volumes 32–35, 519 to 572 text pages, all fitted). Volume 38 is a
-  whole year and may need to be split across two runs — size it by its text
-  pages first;
+  June – November 1978 the scan holds, into `minutes-1978-h2.json`;
+  volume 38, the 34 meetings of 1979 the scan holds, into
+  `minutes-1979.json`.
+  **Next: volume 39 (1980, `39minutesofsanfran1980san`)** into
+  `minutes-1980.json`.
+  Size by text pages, not by the span label: volume 38 was a whole year but
+  only 309 text pages (760,000 characters), one nightly run for a single
+  reader; a half-year volume of 519 to 572 text pages also fits one run;
   the 1994–2005 volumes are a
   different kind of document (by then the Commission's own case reports are
   online and indexed) and are worth sampling before a run is sized on them.
@@ -597,6 +599,32 @@
   decisions; and a reader who copies one of a record's two lots into
   `assessor_lot_as_recorded` hands the resolver a choice the record never
   made — the reader spec now says to leave it empty.)
+  **2026-10-20** (volume 38, 1979: 309 OCR pages with text out of 346
+  viewer pages (348 scanned leaves), read in one session by a single
+  reader with no sub-agents; 34 regular meetings, 4 January to 20
+  December. 163 findings — 138 decisions, 19 statements of what stood on
+  a property, 4 dated past facts, 2 landmark designations. 81 resolved: 68
+  by the EAS join, 13 by hand — by name on a building a page already
+  carries (the Cargo West restaurant's Independent Wood Company Building,
+  the City of Paris site, the International Hotel, the Crocker Galleria,
+  the Lincoln Hotel on the Federal Reserve site, the Holbrook on One
+  Sansome's lot) and by the record's own lot (1401 19th Avenue for "1401
+  Judah"; 1301 Lincoln Way, which only the roll still names; Mission
+  Housing's 500 Potrero, whose 52,500 sq ft lot is the record's to the
+  foot; 201 Mission; 301 Ellis). 82 unresolved: 42 condominiums today
+  (#446) — the year is the conversion year, and 27 subdivisions were
+  decided at the single sitting of 12 April — 17 with no street number,
+  15 at a number EAS no longer holds, 8 ranges now split across parcels.
+  78 published on 64 pages, 29 of them seeded; 3 declined as already on
+  the page. What the pass learned: the reader quoted the motion ("moved
+  by Commissioner …") in 23 of 163 `raw_text` spans, against the spec,
+  and 15 more had slipped through five earlier batches — all trimmed, and
+  `check.py` now fails a minutes quote naming a commissioner; the roll's
+  commercial condominium classes end in "Condo", not "Condominium", so
+  `resolve_eas.py` let 1545 Broadway's store unit through as a building
+  until its test was widened; and the year's gas-station hearings on 19th
+  Avenue and the Sunset all went the operators' way, 5-1, against the
+  staff's housing-site recommendation.)
 
 ## Reader spec
 
@@ -653,7 +681,9 @@ instead, and change it here when a run learns something a reader needs.
   where printed.
 - `raw_text` is the shortest verbatim span (≤ 250 characters, copied exactly
   from the page file) that justifies the fact, chosen to contain no personal
-  name. It is checked mechanically against the page. **It must sit on one
+  name — quote the vote from "passed" or "carried", never the motion
+  ("moved by Commissioner …"), which `check.py` now rejects. It is checked
+  mechanically against the page. **It must sit on one
   page** — a reader working from concatenated pages will pick spans that run
   across a page break, and `page` must be the page the span is on.
 - **No personal name in any field**: not applicants, owners, attorneys,

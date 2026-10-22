@@ -1,0 +1,98 @@
+{
+  "address": "2895 3rd Street, San Francisco, CA 94107",
+  "path": "/san-francisco/dogpatch/3rd-street/2895/",
+  "apn": "4245002",
+  "block": "4245",
+  "lot": "002",
+  "eas_baseid": "370497",
+  "coordinates": {
+    "lat": 37.753209,
+    "lng": -122.387599
+  },
+  "parcel": {
+    "year_built": 1964,
+    "units": 1,
+    "stories": 2,
+    "rooms": 16,
+    "bathrooms": 5,
+    "lot_area_sqft": 35666,
+    "building_area_sqft": 17200,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "D",
+    "zoning": "M2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Central Waterfront/Dogpatch",
+    "analysis_neighborhood": "Potrero Hill",
+    "property_location_raw": "0000 2895 03RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 3219410,
+    "assessed_improvement_value": 38623,
+    "last_sale_date": "2008-07-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1964",
+    "survey_name": "EISELE & DONDENO MARBLE MILL",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "8206984",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-08-24",
+      "status_date": "1983-04-05",
+      "estimated_cost": 1000,
+      "description": "bldg use: parts",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=03RD&street_type=ST&address_number=2895",
+      "retrieved": "2026-10-20"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4245002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-20"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4245&lot=002",
+      "retrieved": "2026-10-20"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4245002",
+      "retrieved": "2026-10-20"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1979-07-05",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 5 July 1979",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/38minutesofsanfran1979san/page/n206/mode/1up",
+      "retrieved": "2026-10-20"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1979-07-05",
+      "kind": "planning decision",
+      "description": "Over a neighbouring drayage company's objection, the City Planning Commission voted 3-2 to authorize an automobile wrecking operation on the lot (Resolution 8308).",
+      "source": "sf-planning-commission-minutes-1979-07-05"
+    }
+  ]
+}

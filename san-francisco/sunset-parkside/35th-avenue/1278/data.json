@@ -1,0 +1,119 @@
+{
+  "address": "1278 35th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/35th-avenue/1278/",
+  "apn": "1716028",
+  "block": "1716",
+  "lot": "028",
+  "eas_baseid": "314821",
+  "coordinates": {
+    "lat": 37.763239,
+    "lng": -122.493972
+  },
+  "parcel": {
+    "year_built": 1913,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 2325,
+    "basement_area_sqft": 180,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1278 35TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 37163,
+    "assessed_improvement_value": 49871
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201909131563",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-09-13",
+      "status_date": "2020-09-29",
+      "estimated_cost": 1889,
+      "revised_cost": 1889,
+      "description": "replace (1) garage door and garage opener, wood to steel.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200211010547",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-11-01",
+      "status_date": "2002-11-26",
+      "estimated_cost": 15500,
+      "revised_cost": 15500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9806226",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-04-10",
+      "status_date": "1998-05-12",
+      "estimated_cost": 200,
+      "description": "4x6 pressure treated wood to be used to support under strcs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=35TH&street_type=AVE&address_number=1278",
+      "retrieved": "2026-10-20"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1716028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-20"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1716&lot=028",
+      "retrieved": "2026-10-20"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1716028",
+      "retrieved": "2026-10-20"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1979-03-01",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 1 March 1979",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/38minutesofsanfran1979san/page/n84/mode/1up",
+      "retrieved": "2026-10-20"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1979-03-01",
+      "kind": "planning decision",
+      "description": "The City Planning Commission unanimously authorized the residential care facility in the house, until then used for six persons, to take eight (Resolution 8184).",
+      "source": "sf-planning-commission-minutes-1979-03-01"
+    }
+  ]
+}
