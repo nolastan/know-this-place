@@ -1,0 +1,186 @@
+{
+  "address": "1075 Folsom Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/folsom-street/1075/",
+  "apn": "3754039",
+  "block": "3754",
+  "lot": "039",
+  "eas_baseid": "365897",
+  "coordinates": {
+    "lat": 37.776962,
+    "lng": -122.407143
+  },
+  "parcel": {
+    "year_built": 1924,
+    "stories": 2,
+    "rooms": 2,
+    "bathrooms": 1,
+    "lot_area_sqft": 3341,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "SLR",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 1075 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2702700,
+    "last_sale_date": "2017-04-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Resource Evaluation Response, Historic Survey Result",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Western SOMA Light Industrial and Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1936",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201702149382",
+      "type": "demolitions",
+      "status": "reinstated",
+      "filed": "2017-02-14",
+      "status_date": "2020-08-10",
+      "estimated_cost": 35000,
+      "revised_cost": 200000,
+      "description": "to demolish 1 story of a industrial building. n/a for maher ordinance no. 155-13",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201702149384",
+      "type": "new construction",
+      "status": "issued",
+      "filed": "2017-02-14",
+      "status_date": "2019-12-20",
+      "estimated_cost": 4900000,
+      "revised_cost": 6900000,
+      "description": "to erect 6 stories, no basement, type i-a & iii-b, 48 residential units with retail, mix use building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201105277028",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-05-27",
+      "status_date": "2011-05-27",
+      "estimated_cost": 23500,
+      "revised_cost": 23500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200512220907",
+      "type": "demolitions",
+      "status": "withdrawn",
+      "filed": "2005-12-22",
+      "status_date": "2011-12-05",
+      "description": "to demolish 2 stories, printing press building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200512220909",
+      "type": "new construction wood frame",
+      "status": "withdrawn",
+      "filed": "2005-12-22",
+      "status_date": "2011-12-01",
+      "estimated_cost": 1000000,
+      "description": "to erect 5 stroies, 31 dwelling units of residential / commercial units.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "20000113974",
+      "type": "wall or painted sign",
+      "status": "expired",
+      "filed": "2000-01-13",
+      "status_date": "2000-05-13",
+      "estimated_cost": 360,
+      "revised_cost": 360,
+      "description": "non structural sign",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9001402",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-01-23",
+      "status_date": "1991-03-13",
+      "estimated_cost": 15000,
+      "description": "strengthen parapets per city requirements",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8812688",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-08-26",
+      "status_date": "1988-08-31",
+      "estimated_cost": 6440,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=1075",
+      "retrieved": "2026-10-21"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3754039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-21"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3754&lot=039",
+      "retrieved": "2026-10-21"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3754039",
+      "retrieved": "2026-10-21"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40714271180212%2037.77696201162964)%27)",
+      "retrieved": "2026-10-21"
+    },
+    {
+      "id": "soma-historic-resource-survey",
+      "name": "San Francisco Planning Department, assisted by Page & Turnbull, Inc., South of Market Area Historic Resource Survey (Eastern Neighborhoods SoMa Area Plan and Western SoMa Community Plan survey, 2007–2010) — List of Surveyed Properties, sorted by Street Address; findings adopted by the Historic Preservation Commission on 16 February 2011, Resolution No. 103",
+      "query": "https://default.sfplanning.org/Preservation/soma_survey/ALL_SOMA_SurveyData_by_address.pdf",
+      "listing": "https://sfgov.org/sfplanningarchive/south-market-area-historic-resource-survey",
+      "label": "South of Market Area Historic Resource Survey, 2011",
+      "retrieved": "2026-10-21"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "South of Market Historic Resource Survey (2011)",
+      "proposed_status_code": "3D",
+      "status_code_meaning": "3D — appears eligible for the National Register as a contributor to an eligible district, through survey evaluation",
+      "eligible_district": "West SOMA Light Industrial and Residential",
+      "physical_integrity": "5 of 7",
+      "note": "Architecture rated 2 of 5, where 4 and 5 mark buildings that may be individually eligible for the California or National Register and 1 the plainest or most altered.",
+      "source": "soma-historic-resource-survey"
+    }
+  ]
+}
