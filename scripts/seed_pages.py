@@ -2041,6 +2041,39 @@ def built_item(rec: dict, indent: str) -> list:
              f'{indent}  </li>')]
 
 
+def completed_item(rec: dict, indent: str) -> list:
+    """A published completion year that differs from the assessor's, as its
+    own entry on the rail.
+
+    It was a "Completed" row in "At a glance", which put a date outside the
+    one sequence a reader reads dates in. Where it matches the roll the
+    "Built" entry already says it, and where a dated entry from a source
+    already says the building was completed or built that year, that entry
+    says it with more; either way this stands down. The disagreement itself
+    (`completed_conflict`) closes the rail with the other dating notes.
+    """
+    b = rec.get("building") or {}
+    completed = b.get("completed")
+    if not completed or str(completed) == str((rec.get("parcel") or {}).get("year_built")):
+        return []
+    key = date_key(str(completed))
+    if any(date_key(e.get("date"))[0] == key[0]
+           and BUILT_EVENT.search(e.get("description") or "")
+           for e in history_entries(rec)):
+        return []
+    labels = {x["id"]: x.get("label") or x.get("name", x["id"])
+              for x in rec.get("sources", [])}
+    cited = [labels.get(x, x) for x in b.get("sources") or [] if x][:1]
+    return [(key,
+             f'{indent}  <li class="vtl-item">\n'
+             f'{indent}    <div class="vtl-date">{esc(str(completed))}</div>\n'
+             f'{indent}    <p class="vtl-desc">Completed.</p>\n'
+             + (f'{indent}    <div class="vtl-meta">\n'
+                f'{indent}      <span>{esc(cited[0])}</span>\n'
+                f'{indent}    </div>\n' if cited else "")
+             + f'{indent}  </li>')]
+
+
 def dating_conflicts(rec: dict) -> list:
     """Disagreements about the building's date, read off the data itself.
 
@@ -2088,7 +2121,7 @@ def timeline_html(rec: dict, indent: str) -> str:
     every one of the 480 carrying the key, and of the 921 with a derived
     conflict, has a timeline.
     """
-    built = built_item(rec, indent)
+    built = built_item(rec, indent) + completed_item(rec, indent)
     permits, disclosure = permit_items(rec, indent)
     earlier = historical_items(rec, indent)
     # `sorted` is stable and `built` leads the list, so the building's own year
@@ -2850,9 +2883,11 @@ def occupant_panel_html(rec: dict, indent: str) -> str:
     heads, occ_dates, offers = [], [], {}
     for o in rows:
         specs = []
+        # The merchant's own door, where it isn't the page's: a plain line in
+        # ink under the name, since it says which door to walk up to.
         listed = o.get("listed_address")
-        if listed and listed not in here:
-            specs.append(("ic-pin", "Listed at", esc(listed)))
+        if listed in here:
+            listed = None
         # A condominium building's page is the building's, so a merchant in one
         # of its units says which.
         if o.get("unit"):
@@ -2873,6 +2908,7 @@ def occupant_panel_html(rec: dict, indent: str) -> str:
         heads.append(
             f'{indent}  <div class="occupant">\n'
             f'{indent}    <h3>{esc(o["name"])}</h3>\n'
+            + (f'{indent}    <p class="occupant-at">{esc(listed)}</p>\n' if listed else "")
             + (f'{indent}    <p class="occupant-kinds">{esc(kinds)}</p>\n' if kinds else "")
             + (f'{indent}    <dl class="speclist">\n{body}{indent}    </dl>\n' if body else ""))
         src = sources.get(o.get("source")) or {}
@@ -2986,6 +3022,35 @@ def numbers_in_range(rec: dict) -> bool:
             and (len(nums) <= 2 or all(b - a == 2 for a, b in zip(nums, nums[1:]))))
 
 
+def addresses_panel_html(rec: dict, indent: str) -> str:
+    """Every address the parcel answers to, written out whole, one per line.
+
+    The street numbers the heading's range doesn't already say, and the
+    addresses on other streets (`also_addressed`), were two "At a glance" rows
+    — "3682, 3684, 3688…" beside "495 Dolores Street, 497 Dolores Street" —
+    which left the reader to put the street back on the first. Each line here
+    names its street. Where the range does say every number, the heading's
+    address opens the list so the others read as the same building's.
+    """
+    title = page_title(rec)
+    street = title.split(" ", 1)[1]
+    nums = rec.get("street_numbers_on_parcel") or []
+    # Hand-authored pages sometimes hold these as numbers rather than strings.
+    lines = ([f"{n} {street}" for n in nums] if nums and not numbers_in_range(rec)
+             else [])
+    also = [alias_display(x) for x in rec.get("also_addressed") or []]
+    if not lines and not also:
+        return ""
+    if not lines:
+        lines = [title]
+    lines = list(dict.fromkeys(lines + also))
+    items = "".join(f'{indent}    <li>{esc(x)}</li>\n' for x in lines)
+    return (f'{indent}<section class="panel panel-addresses">\n'
+            f'{indent}  <h3>Addresses</h3>\n'
+            f'{indent}  <ul class="address-list">\n{items}{indent}  </ul>\n'
+            f'{indent}</section>\n')
+
+
 def glance_panel_html(rec: dict, indent: str) -> str:
     title = page_title(rec)
     p = rec.get("parcel", {})
@@ -2995,12 +3060,8 @@ def glance_panel_html(rec: dict, indent: str) -> str:
     # Researched identity: who designed the building, who built it. Single
     # facts, so spec rows — never a paragraph each. The name it goes by is not
     # a row: where a page records one it is the hero's heading.
-    # A published completion year that matches the assessor's is the same fact
-    # twice — the timeline's "Built" entry already carries it. Show the row only
-    # when the two disagree, and `unknowns` says so alongside.
-    completed = b.get("completed")
-    if completed and str(completed) == str(p.get("year_built")):
-        completed = None
+    # No "Completed" row: a completion year is dated, so it is on the rail,
+    # as the "Built" entry or its own (see `completed_item`).
     for icon, key, val in (("ic-home", "Formerly", b.get("former_name")),
                            ("ic-ruler", "Architect",
                             with_note(b.get("architect"), b.get("architect_note"))),
@@ -3013,7 +3074,6 @@ def glance_panel_html(rec: dict, indent: str) -> str:
                             None if p.get("year_built") else
                             with_note(b.get("builder"), b.get("builder_note"))),
                            ("ic-plan", "Developer", b.get("developer")),
-                           ("ic-calendar", "Completed", completed),
                            ("ic-calendar", "First owner", b.get("first_owner")),
                            # The style as some source other than a survey states
                            # it — a newsletter, a context statement's prose. The
@@ -3041,15 +3101,8 @@ def glance_panel_html(rec: dict, indent: str) -> str:
     build_cost = b.get("cost_usd")
     if build_cost:
         rows.append(("ic-value", "Cost when built", f"${int(build_cost):,}"))
-    if rec.get("street_numbers_on_parcel") and not numbers_in_range(rec):
-        # Hand-authored pages sometimes hold these as numbers rather than
-        # strings, and a bare join dies on the first int.
-        rows.append(("hgi-hash", "Street numbers",
-                     ", ".join(str(n) for n in rec["street_numbers_on_parcel"])))
-    also = rec.get("also_addressed") or []
-    if also:
-        rows.append(("ic-pin", "Also addressed",
-                     ", ".join(alias_display(x) for x in also)))
+    # No "Street numbers" or "Also addressed" rows: the addresses panel lists
+    # every address the parcel answers to (see `addresses_panel_html`).
     # The number the building was known by before the street around it
     # changed — a renumbering, or a street the city absorbed. Not
     # `also_addressed`, which is an address the parcel still answers to, and
@@ -3096,6 +3149,16 @@ def glance_panel_html(rec: dict, indent: str) -> str:
         rows.append(("ic-clock", "Permits on file", "None"))
     if not rows:
         return ""
+    # One fact is not a list: an "At a glance" eyebrow over a single row reads
+    # as a heading and a label stacked over one value. The row's own label,
+    # with its icon, becomes the eyebrow, in ink since it is now what the
+    # panel is about, and the value prints under it.
+    if len(rows) == 1:
+        (i, k, v), = rows
+        return (f'{indent}<section class="panel panel-fact">\n'
+                f'{indent}  <h3>{icon_html(i)}{esc(k)}</h3>\n'
+                f'{indent}  <p class="fact-v">{esc(v)}</p>\n'
+                f'{indent}</section>\n')
     body = "\n".join(
         f'{indent}    <div class="spec">{icon_html(i)}'
         f'<span class="spec-k">{esc(k)}</span>'
@@ -3665,16 +3728,18 @@ def render_html(rec: dict) -> str:
     # The line under the heading is the building's other identity: a named
     # building shows its street address there ("Castro Theater" over "429–431
     # Castro Street"), a page headed by its address shows what the building is.
-    # A second clause names the smaller or better-known place the neighborhood
-    # is filed under or goes by — `sub_area` for one page ("Telegraph Hill"),
-    # `AREA_SUB` for a whole directory ("Eureka Valley" across the Castro).
-    # Each value is the alternative designation alone: the neighborhood itself
-    # is already in the breadcrumb, so "Union Square, Tenderloin" is stored
-    # as "Union Square".
+    # A second clause says where the building is: the smaller or better-known
+    # place the neighborhood is filed under or goes by where there is one —
+    # `sub_area` for one page ("Telegraph Hill"), `AREA_SUB` for a whole
+    # directory ("Eureka Valley" across the Castro) — and the neighborhood
+    # otherwise ("198-unit building · South Beach"). The breadcrumb sits on the
+    # map, out of the line of reading, so the hero says it too. Each stored
+    # value is the alternative designation alone, so "Union Square,
+    # Tenderloin" is stored as "Union Square".
     sub_text = hero_lines(rec)[1]
-    sub_alt = rec.get("sub_area") or AREA_SUB.get((city_slug, area_slug))
-    if sub_alt:
-        sub_text += f" · {sub_alt}"
+    sub_alt = (rec.get("sub_area") or AREA_SUB.get((city_slug, area_slug))
+               or area_display(f"{city_slug}/{area_slug}"))
+    sub_text += f" · {sub_alt}"
     # `address_range` comes in two shapes — the "100–102" string `build_record`
     # writes, and the {low, high, …} object a hand-edited page may carry. The
     # crumb and the JSON-LD both read it, so both go through `range_label`;
@@ -3688,7 +3753,8 @@ def render_html(rec: dict) -> str:
     # page with any timeline entry, art or prose at all has something to put
     # there. Only a page that is nothing but panels stacks them full width.
     has_panels = bool(place_panel_html(rec, "")
-                      or value_panel_html(rec, "") or glance_panel_html(rec, "")
+                      or value_panel_html(rec, "") or addresses_panel_html(rec, "")
+                      or glance_panel_html(rec, "")
                       or district_panel_html(rec, "") or open_space_panel_html(rec, "")
                       or survey_panel_html(rec, "") or residents_panel_html(rec, "")
                       or occupant_panel_html(rec, "") or events_panel_html(rec, ""))
@@ -3705,6 +3771,7 @@ def render_html(rec: dict) -> str:
     panels = (occupant_panel_html(rec, ind) + events_panel_html(rec, ind)
               + place_panel_html(rec, ind)
               + open_space_panel_html(rec, ind) + value_panel_html(rec, ind)
+              + addresses_panel_html(rec, ind)
               + glance_panel_html(rec, ind) + residents_panel_html(rec, ind)
               + survey_panel_html(rec, ind) + district_panel_html(rec, ind))
     art = public_art_html(rec, ind)
@@ -5338,6 +5405,7 @@ def district_members(pages: list) -> list:
     return rows
 
 
+@functools.cache
 def area_display(area_path: str) -> str:
     """A neighborhood's own name for itself, off the h1 of its hub.
 
