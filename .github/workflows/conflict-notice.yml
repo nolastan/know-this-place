@@ -1,0 +1,56 @@
+# Comment on every open PR that a push to main has left conflicted.
+#
+# GitHub sends no event when a PR starts conflicting with its base, so the
+# Claude session driving a PR never hears about it and someone has to ask.
+# A comment is an event, and it wakes the session watching that PR.
+#
+# One comment per conflicted head: the marker carries the PR's head SHA, so a
+# PR that stays conflicted while main keeps moving is told once, and told again
+# only after a push to it that still leaves it conflicted.
+name: conflict-notice
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  pull-requests: write
+
+concurrency:
+  group: conflict-notice
+  cancel-in-progress: true
+
+jobs:
+  notice:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Comment on conflicted PRs
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          # Mergeability is computed lazily after a push: asking starts it,
+          # and it reads UNKNOWN until it's done. Ask, wait, ask again.
+          for attempt in 1 2 3 4 5 6; do
+            prs=$(gh pr list --state open --base main --limit 100 \
+                    --json number,mergeable,headRefOid)
+            echo "$prs" | jq -e 'any(.[]; .mergeable == "UNKNOWN")' >/dev/null || break
+            sleep 20
+          done
+
+          echo "$prs" | jq -r '.[] | select(.mergeable == "CONFLICTING")
+                                  | "\(.number) \(.headRefOid)"' |
+          while read -r pr head; do
+            marker="<!-- conflict-notice head=$head -->"
+            if gh pr view "$pr" --json comments --jq '.comments[].body' \
+                 | grep -qF "$marker"; then
+              echo "#$pr: already told about $head"
+              continue
+            fi
+            echo "#$pr: conflicts with main at ${GITHUB_SHA:0:8}"
+            gh pr comment "$pr" --body "$marker
+          This PR now conflicts with \`main\` (after ${GITHUB_SHA:0:8}). Merge \`main\` in, resolve the conflicts, run \`python3 scripts/build_site.py && python3 scripts/validate.py\`, and push."
+          done
