@@ -2233,8 +2233,11 @@ def value_figure_html(rec: dict, indent: str) -> str:
         return ""
     parts = [(label, a[key], fill) for label, key, fill in VALUE_PARTS if a.get(key)]
     total = sum(v for _, v, _ in parts)
+    # The key reads as a column sum: a plus before the last part, a rule
+    # over the total.
     slices, rows, at = [], [], 0.0
-    for label, v, fill in parts:
+    for i, (label, v, fill) in enumerate(parts):
+        op = "+" if i == len(parts) - 1 else ""
         frac = v / total
         pct = round(frac * 100, 1)
         slices.append(
@@ -2244,7 +2247,8 @@ def value_figure_html(rec: dict, indent: str) -> str:
         rows.append(
             f'{indent}      <div class="pie-row"><svg class="pie-swatch" viewBox="0 0 .3 .3" '
             f'aria-hidden="true"><rect class="pie-slice {fill}" width=".3" height=".3"/></svg>'
-            f'<span>{label}</span><b>${v:,}</b></div>\n')
+            f'<span>{label}</span><i class="pie-op" aria-hidden="true">{op}</i>'
+            f'<b>${v:,}</b></div>\n')
         at += frac
     # No panel chrome and no heading: the key names every part and the total,
     # and the Sources footer names the roll.

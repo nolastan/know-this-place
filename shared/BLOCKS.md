@@ -401,13 +401,14 @@ included) sizes it, and every key row stays one line. `value_figure_html` in
     <path class="pie-slice pie-hatch" d="…" data-tip="Improvements · $383,284 · 53.6%" aria-label="…"/>
   </svg></div>
   <div class="pie-key">
-    <div class="pie-row"><svg class="pie-swatch" viewBox="0 0 .3 .3" aria-hidden="true"><rect class="pie-slice pie-solid" width=".3" height=".3"/></svg><span>Land</span><b>$331,484</b></div>
-    <div class="pie-row"><svg class="pie-swatch" …><rect class="pie-slice pie-hatch" …/></svg><span>Improvements</span><b>$383,284</b></div>
+    <div class="pie-row"><svg class="pie-swatch" viewBox="0 0 .3 .3" aria-hidden="true"><rect class="pie-slice pie-solid" width=".3" height=".3"/></svg><span>Land</span><i class="pie-op" aria-hidden="true"></i><b>$331,484</b></div>
+    <div class="pie-row"><svg class="pie-swatch" …><rect class="pie-slice pie-hatch" …/></svg><span>Improvements</span><i class="pie-op" aria-hidden="true">+</i><b>$383,284</b></div>
     <div class="pie-row pie-total"><span>Total assessed</span><b>$714,768</b></div>
   </div>
 </ktp-figure>
 ```
-The key is the text-truth that survives with no JS; `data-tip` on each slice
+The key reads as a column sum: a `+` (`.pie-op`) before the last part and a
+rule over the total. The key is the text-truth that survives with no JS; `data-tip` on each slice
 shows the exact value on hover and focus.
 
 ### Spec list — `.speclist`
