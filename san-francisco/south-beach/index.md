@@ -6,6 +6,7 @@ A former industrial and warehouse district along the bay south of Market, much o
 
 - [Brannan Street](brannan-street/) — 6 buildings, built 1909–2016; 1 in the South End Historic District.
 - [Clarence Place](clarence-place/) — 2 buildings, built 1996–2012; 2 in the South End Historic District.
+- [Colin P Kelly Jr Street](colin-p-kelly-jr-street/) — 1 building, built 1908; 1 in the South End Historic District.
 - [Folsom Street](folsom-street/) — 1 building, built 2000.
 - [Howard Street](howard-street/) — 2 buildings, built 1973–1981.
 - [King Street](king-street/) — 1 building, built 1913; 1 in the South End Historic District.

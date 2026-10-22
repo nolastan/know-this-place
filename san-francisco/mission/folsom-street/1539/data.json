@@ -1,0 +1,174 @@
+{
+  "address": "1539 Folsom Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/folsom-street/1539/",
+  "apn": "3521033",
+  "block": "3521",
+  "lot": "033",
+  "eas_baseid": "358124",
+  "coordinates": {
+    "lat": 37.771234,
+    "lng": -122.414361
+  },
+  "parcel": {
+    "year_built": 1927,
+    "stories": 3,
+    "rooms": 8,
+    "lot_area_sqft": 1598,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "SLR",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1539 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 20763,
+    "assessed_improvement_value": 75981
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Western SOMA Light Industrial and Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1936",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201911207786",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-11-20",
+      "status_date": "2020-01-17",
+      "estimated_cost": 120000,
+      "revised_cost": 120000,
+      "description": "replace all existing single pane glass windows at front and left side w/ new double pane glass windows (similar configuration, size,& material). accessibility upgrade at existing front entry door to 1st floor. to remove non-complying change in elevation/grade",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201909192157",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-09-19",
+      "status_date": "2019-10-01",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "voluntary roof anchorage and splling column reinforcement. all interior work, no exterior work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9608157",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-05-10",
+      "status_date": "1997-01-10",
+      "estimated_cost": 10000,
+      "description": "bar remodel alt to back bar permanent table/repla 3 frnt wnd",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9511898",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-07-31",
+      "status_date": "1995-08-24",
+      "estimated_cost": 900,
+      "description": "install fire system by hk fire protection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9508542",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-06-07",
+      "status_date": "1995-08-24",
+      "estimated_cost": 10000,
+      "description": "install type i hood 8' x 3.5 along with 100% make up air sys",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8903355",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-03-02",
+      "status_date": "1990-05-10",
+      "estimated_cost": 1,
+      "description": "final inspection of permit #8715782.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8715782",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-11-02",
+      "status_date": "1989-02-09",
+      "estimated_cost": 34000,
+      "description": "new partitions, add bath, tenant improvement",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=1539",
+      "retrieved": "2026-10-21"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3521033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-21"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3521&lot=033",
+      "retrieved": "2026-10-21"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3521033",
+      "retrieved": "2026-10-21"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4143610497363%2037.771233756164555)%27)",
+      "retrieved": "2026-10-21"
+    },
+    {
+      "id": "soma-historic-resource-survey",
+      "name": "San Francisco Planning Department, assisted by Page & Turnbull, Inc., South of Market Area Historic Resource Survey (Eastern Neighborhoods SoMa Area Plan and Western SoMa Community Plan survey, 2007–2010) — List of Surveyed Properties, sorted by Street Address; findings adopted by the Historic Preservation Commission on 16 February 2011, Resolution No. 103",
+      "query": "https://default.sfplanning.org/Preservation/soma_survey/ALL_SOMA_SurveyData_by_address.pdf",
+      "listing": "https://sfgov.org/sfplanningarchive/south-market-area-historic-resource-survey",
+      "label": "South of Market Area Historic Resource Survey, 2011",
+      "retrieved": "2026-10-21"
+    }
+  ],
+  "historic_survey": [
+    {
+      "survey": "South of Market Historic Resource Survey (2011)",
+      "proposed_status_code": "3D",
+      "status_code_meaning": "3D — appears eligible for the National Register as a contributor to an eligible district, through survey evaluation",
+      "eligible_district": "West SOMA Light Industrial and Residential",
+      "physical_integrity": "7 of 7",
+      "note": "Architecture rated 2 of 5, where 4 and 5 mark buildings that may be individually eligible for the California or National Register and 1 the plainest or most altered.",
+      "source": "soma-historic-resource-survey"
+    }
+  ]
+}
