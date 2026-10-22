@@ -130,8 +130,11 @@ that overlaps the band's lower-left edge — see "Media".
 The `<h1>` is the building's name where a page records one (`building.name`),
 its street address where it doesn't — and the `<title>` and JSON-LD `name`
 follow the same choice. The `.sub` under it carries the other identity: the
-street address under a name, the building type under an address — and in that
-case the type does not also get a `.tags` chip, which would state it twice.
+street address under a name, the building type under an address. The type is
+never a `.tags` chip: under an address it is the `.sub`, and on a name-headed
+page it is a HugeIcons glyph leading the `<h1>` (`h1.named .type-icon`, chosen
+by `TYPE_ICON` in `seed_pages.py`, labelled with the type for screen readers),
+since the name usually says what the building is already.
 Where the page stands in a smaller or better-known place than its
 neighborhood directory, the `.sub` ends with that designation
 (`sub_area`, or `AREA_SUB` for a whole neighborhood — the Castro's is
@@ -139,11 +142,11 @@ neighborhood directory, the `.sub` ends with that designation
 ```html
 <section class="hero">
   <div>
-    <h1>Castro Theater</h1>
+    <h1 class="named"><i class="hgi-stroke hgi-theater type-icon" role="img"
+        aria-label="Theater" title="Theater"></i>Castro Theater</h1>
     <p class="sub">429–431 Castro Street · Eureka Valley</p>
     <ul class="tags">
-      <li class="tag"><span class="ic ic-home"></span>Theater</li>
-      <li class="tag"><span class="ic ic-layers"></span>2 stories</li>
+      <li class="tag"><i class="hgi-stroke hgi-stairs-01"></i>2 stories</li>
     </ul>
   </div>
   <!-- media slot: see "Media" -->
