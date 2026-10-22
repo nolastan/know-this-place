@@ -107,6 +107,8 @@ leans on its tags and timeline. The default spine:
    rides over the band's lower-left edge. On an address page the tags carry
    the roll's measurements too (floor area, lot area, units, rooms, bedrooms,
    bathrooms, construction), with areas written `1,382 ft<sup>2</sup>`.
+   Construction falls back to a survey's `frame` where the roll's code has
+   no name, and that survey's panel then drops its own Construction row.
 3. `.lead` — one or two sentences, and only for what no block below can
    carry. **Dropped entirely** when the blocks already say everything.
 4. `.cols` — main narrative/timeline on the left, `.aside` panels on the right.

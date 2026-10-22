@@ -76,7 +76,7 @@ Where a new fact goes. Full markup for each is in [BLOCKS.md](BLOCKS.md).
 | `address`, `coordinates`, `building.name`, `sub_area` | `.hero` `<h1>` + `.sub`, `<ktp-map>`, `<ktp-streetview>` | identity and the locator band — a known name heads the page, led by a building-type glyph, with the address as `.sub`; an unnamed page is headed by the address with the building type as `.sub`; an alternative neighborhood designation (`sub_area`, or `AREA_SUB` for a whole directory) trails either |
 | `parcel`, `historic_status` | `.tags` in the hero | categorical identity — type, stories, zoning, district (the type is the `.sub` instead when the address heads the page) |
 | `parcel.year_built` | the first `.vtl` item | the year the building went up, on the rail with everything else dated |
-| `parcel` measurements | more `.tags` in the hero | floor area (`ft²`, unlabeled), lot area, units, rooms, bedrooms, bathrooms, construction |
+| `parcel` measurements | more `.tags` in the hero | floor area (`ft²`, unlabeled), lot area, units, rooms, bedrooms, bathrooms, construction (else a survey's `frame`) |
 | `assessment` land/improvement split | `.stack` inside `<ktp-figure>` | one total split in two, both parts labeled |
 | `permits` | `.vtl` items, each a `.vtl-head` (date, status `.pill`, record link, `.cost` tier) over the description | the dated record of work |
 | `permit_summary` | one line *below* the `.vtl` | what the timeline left out, and why |
