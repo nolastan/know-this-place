@@ -194,6 +194,33 @@ uppercase kicker.
 <section class="panel"><h3>Assessed value · 2025 roll</h3> … </section>
 ```
 
+**One fact is not a list.** Where "At a glance" would hold a single row, the
+row's label replaces the kicker, with the row's icon and in ink rather than
+muted, and the value prints under it on `.panel-fact`:
+```html
+<section class="panel panel-fact">
+  <h3><span class="ic ic-ruler"></span>Architect</h3>
+  <p class="fact-v">Julia Morgan</p>
+</section>
+```
+
+**Addresses** — `.panel-addresses`. Every address the parcel answers to,
+written out whole and one per line in ink: the street numbers the heading's
+range doesn't already say (`street_numbers_on_parcel`), then `also_addressed`.
+Each line names its street, so "3682" is "3682 18th Street" beside "495
+Dolores Street". Where the range covers every number, the heading's address
+opens the list. There is no "Street numbers" or "Also addressed" row in
+"At a glance".
+```html
+<section class="panel panel-addresses">
+  <h3>Addresses</h3>
+  <ul class="address-list">
+    <li>3682 18th Street</li>
+    <li>495 Dolores Street</li>
+  </ul>
+</section>
+```
+
 ### Visual timeline — `.vtl`
 A rail with dots; each item has a date, a description, and a meta row (status
 pill, a link to the record, a cost tier). Add `is-muted` to an item for a
@@ -586,8 +613,9 @@ under it, never two groups.
   <small>Referral link. It opens Bites, where you can search for this restaurant.</small></p>
 </section>
 ```
-A `Listed at` row (`ic-pin`) appears only when the merchant's door is not the
-page's lead number — 115 on the 111–117 New Montgomery page, or a corner
+The merchant's own door prints under its name, in ink and with no label or
+icon (`<p class="occupant-at">177 Townsend Street</p>`), only when it is not
+the page's lead number — 115 on the 111–117 New Montgomery page, or a corner
 building's other street. The offer is `rel="sponsored"`. Bites' row adds a line
 saying plainly that the link does not open the merchant's own menu; a row whose
 link does reach the merchant — a Momence studio's sign-up — carries none, since

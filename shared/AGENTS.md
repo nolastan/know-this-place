@@ -73,7 +73,7 @@ Where a new fact goes. Full markup for each is in [BLOCKS.md](BLOCKS.md).
 
 | `data.json` | renders as | for |
 |---|---|---|
-| `address`, `coordinates`, `building.name`, `sub_area` | `.hero` `<h1>` + `.sub`, `<ktp-map>`, `<ktp-streetview>` | identity and the locator band — a known name heads the page, led by a building-type glyph, with the address as `.sub`; an unnamed page is headed by the address with the building type as `.sub`; an alternative neighborhood designation (`sub_area`, or `AREA_SUB` for a whole directory) trails either |
+| `address`, `coordinates`, `building.name`, `sub_area` | `.hero` `<h1>` + `.sub`, `<ktp-map>`, `<ktp-streetview>` | identity and the locator band — a known name heads the page, led by a building-type glyph, with the address as `.sub`; an unnamed page is headed by the address with the building type as `.sub`; the neighborhood trails either, or the alternative designation it goes by where there is one (`sub_area`, or `AREA_SUB` for a whole directory) |
 | `parcel`, `historic_status` | `.tags` in the hero | categorical identity — type, stories, zoning, district (the type is the `.sub` instead when the address heads the page) |
 | `parcel.year_built` | the first `.vtl` item | the year the building went up, on the rail with everything else dated |
 | `parcel` measurements | more `.tags` in the hero | floor area (`ft²`, unlabeled), lot area, units, rooms, bedrooms, bathrooms, construction |
@@ -83,6 +83,7 @@ Where a new fact goes. Full markup for each is in [BLOCKS.md](BLOCKS.md).
 | `historical_record` | `.vtl` items, interleaved by date | dated facts from historical sources and from news |
 | `survey_name` | a `.tag` in the hero | the name the city's survey files the building under |
 | secondary scalars (zoning, use) | `.speclist` rows | a detail that doesn't merit a tile |
+| `street_numbers_on_parcel`, `also_addressed` | `.panel-addresses` | every address the parcel answers to, whole, one per line |
 | `notable_residents` | a `.panel` of `.speclist` rows | documented past residents the page's prose doesn't already name |
 | `occupants` | `.panel-occupant`, heading the aside | the businesses trading from the building today — name, cuisines, hours, the date the listing was read, and a referral offer where the source has one |
 | `historic_district`, `also_in_districts` | `.panel-district` + `.standing` | the district's own record, not the building's |
