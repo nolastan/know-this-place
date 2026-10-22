@@ -1,0 +1,123 @@
+{
+  "address": "60 Teddy Avenue, San Francisco, CA 94134",
+  "path": "/san-francisco/visitacion-valley/teddy-avenue/60/",
+  "apn": "6204076",
+  "block": "6204",
+  "lot": "076",
+  "eas_baseid": "476232",
+  "coordinates": {
+    "lat": 37.713663,
+    "lng": -122.403452
+  },
+  "parcel": {
+    "year_built": 2009,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 1625,
+    "building_area_sqft": 1479,
+    "lot_depth_ft": 65,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "NA",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Visitacion Valley",
+    "analysis_neighborhood": "Visitacion Valley",
+    "property_location_raw": "0000 0060 TEDDY               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 75829,
+    "assessed_improvement_value": 474144
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "2009",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200612200272",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "2006-12-20",
+      "status_date": "2009-04-24",
+      "estimated_cost": 300000,
+      "revised_cost": 361880,
+      "description": "to erect a new 2 story single family dwelling unit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8709116",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-06-30",
+      "status_date": "1988-11-23",
+      "estimated_cost": 80000,
+      "description": "new construction/2 story above garage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8505832",
+      "type": "new construction wood frame",
+      "status": "expired",
+      "filed": "1985-06-05",
+      "status_date": "1987-07-10",
+      "estimated_cost": 163830,
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1985–2009",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TEDDY&street_type=AVE&address_number=60",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6204076&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6204&lot=076",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6204076",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1980-06-05",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 5 June 1980",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/39minutesofsanfran1980san/page/n242/mode/1up",
+      "retrieved": "2026-10-22"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1980-06-05",
+      "kind": "planning decision",
+      "description": "The City Planning Commission refused, 7-0, dividing the property into three undersized lots of 2,100 to 2,200 square feet for three houses (Resolution 8606).",
+      "source": "sf-planning-commission-minutes-1980-06-05"
+    }
+  ]
+}

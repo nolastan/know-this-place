@@ -206,7 +206,9 @@ def findings_files() -> list[Path]:
     return sorted((ROOT / "findings").glob("*/*.json"))
 
 
-_COMMISSIONER = re.compile(r"\bCommissioner\s+(?!Resolution)[A-Z][a-z]{2,}")
+# "Commissioners" too: the 1980 summaries print the dissent as "Voting no:
+# Commissioners Bierman, Dearman and Starbuck", which the singular missed.
+_COMMISSIONER = re.compile(r"\bCommissioners?:?\s+(?!Resolution)[A-Z][a-z]{2,}")
 
 
 def check_findings_file(path: Path, schema: dict, ids: set[str]) -> dict | None:

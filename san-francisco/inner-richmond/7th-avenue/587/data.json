@@ -1,0 +1,111 @@
+{
+  "address": "587 7th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/7th-avenue/587/",
+  "apn": "1550021",
+  "block": "1550",
+  "lot": "021",
+  "eas_baseid": "307832",
+  "coordinates": {
+    "lat": 37.777457,
+    "lng": -122.465322
+  },
+  "parcel": {
+    "year_built": 1909,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 1437.5,
+    "building_area_sqft": 2810,
+    "basement_area_sqft": 800,
+    "lot_depth_ft": 57.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0000 0587 07TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 258872,
+    "assessed_improvement_value": 238953
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202510227898",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-10-22",
+      "status_date": "2025-11-21",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "re-roofing: remove of existing roofing materials. install aspalt composition shingle. no hot work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200301155268",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-01-15",
+      "status_date": "2003-03-07",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "fire damage: clean up, fix wall and ceiling in bedroom area, replace window in bedroom in backyard",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=07TH&street_type=AVE&address_number=587",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1550021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1550&lot=021",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1550021",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1980-01-03",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 3 January 1980",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/39minutesofsanfran1980san/page/n22/mode/1up",
+      "retrieved": "2026-10-22"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1980-01-03",
+      "kind": "planning decision",
+      "description": "The City Planning Commission unanimously approved converting the one-family house into a Buddhist temple, with conditions (Resolution 8466).",
+      "source": "sf-planning-commission-minutes-1980-01-03"
+    }
+  ]
+}

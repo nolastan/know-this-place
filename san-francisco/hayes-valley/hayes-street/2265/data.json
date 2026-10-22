@@ -1,0 +1,93 @@
+{
+  "address": "2265 Hayes Street, San Francisco, CA 94117",
+  "path": "/san-francisco/hayes-valley/hayes-street/2265/",
+  "apn": "1213011",
+  "block": "1213",
+  "lot": "011",
+  "eas_baseid": "297422",
+  "coordinates": {
+    "lat": 37.7727,
+    "lng": -122.453582
+  },
+  "parcel": {
+    "lot_area_sqft": 3437.5,
+    "lot_depth_ft": 37.5,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Residential",
+    "construction_type_code": "NA",
+    "zoning": "RH-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "North Panhandle",
+    "analysis_neighborhood": "Lone Mountain/USF",
+    "property_location_raw": "0000 2265 HAYES               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 250353
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Panhandle Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1870–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAYES&street_type=ST&address_number=2265",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1213011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1213&lot=011",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1213011",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.45358239434518%2037.772700308361706)%27)",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1980-09-04",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 4 September 1980",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/39minutesofsanfran1980san/page/n343/mode/1up",
+      "retrieved": "2026-10-22"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1980-09-04",
+      "kind": "planning decision",
+      "description": "The City Planning Commission approved, 5-0, rezoning the lot from RH-3 to RM-3 (Resolution 8705).",
+      "source": "sf-planning-commission-minutes-1980-09-04"
+    }
+  ]
+}

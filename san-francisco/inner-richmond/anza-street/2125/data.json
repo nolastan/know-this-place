@@ -1,0 +1,177 @@
+{
+  "address": "2125 Anza Street, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/anza-street/2125/",
+  "apn": "1555050",
+  "block": "1555",
+  "lot": "050",
+  "eas_baseid": "308105",
+  "coordinates": {
+    "lat": 37.778535,
+    "lng": -122.47104
+  },
+  "parcel": {
+    "year_built": 1909,
+    "units": 2,
+    "stories": 3,
+    "rooms": 13,
+    "bathrooms": 4,
+    "bedrooms": 6,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2600,
+    "use": "Multi-Family Residential",
+    "property_class": "TI Apartment",
+    "construction_type_code": "NA",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "2125 2123 ANZA                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 843274,
+    "assessed_improvement_value": 546964
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202405101931",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-05-10",
+      "status_date": "2024-05-28",
+      "estimated_cost": 19500,
+      "revised_cost": 19500,
+      "description": "replace bathtub, tile and faucet. (only bathtub) replace 6 front windows in kind 1st fl. repace 5 widows at back of building. 1st fl. in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202305198127",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-05-19",
+      "status_date": "2023-05-19",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "remodel bath remove bath tub replace with walk in shower and tile",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202201075549",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-01-07",
+      "status_date": "2022-03-18",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa# 8609787, 87073020 & 8810252. all work is completed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M220008",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-09-09",
+      "status_date": "2010-09-09",
+      "revised_cost": 1,
+      "description": "street s[ace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200508120186",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-08-12",
+      "status_date": "2005-08-12",
+      "estimated_cost": 3700,
+      "revised_cost": 3700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8810252",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-07-25",
+      "status_date": "1989-01-24",
+      "estimated_cost": 2000,
+      "description": "compelte work on #8609787",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8707320",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-05-28",
+      "status_date": "1988-02-09",
+      "estimated_cost": 1000,
+      "description": "arch minor changes only. see #8609787.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8609787",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1986-08-11",
+      "status_date": "1988-02-09",
+      "estimated_cost": 120000,
+      "description": "vertical & horizontal extension, add 2nd unit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 9,
+    "range": "1986–2024",
+    "shown_on_page": 8,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ANZA&street_type=ST&address_number=2125",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1555050&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1555&lot=050",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1555050",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1980-10-02",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 2 October 1980",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/39minutesofsanfran1980san/page/n374/mode/1up",
+      "retrieved": "2026-10-22"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1980-10-02",
+      "kind": "planning decision",
+      "description": "The City Planning Commission refused, 7-0, a religious institution in the RH-2 district (Resolution 8739).",
+      "source": "sf-planning-commission-minutes-1980-10-02"
+    }
+  ]
+}
