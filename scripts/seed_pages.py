@@ -3545,7 +3545,7 @@ def nearby_html(rec: dict, indent: str) -> str:
     if not entries:
         return ""
     out = [f'{indent}<section class="nearby">',
-           f'{indent}  <div class="section-head"><i class="hgi-stroke hgi-real-estate-01"></i>'
+           f'{indent}  <div class="section-head"><i class="hgi-stroke hgi-location-04"></i>'
            f'<h2>Nearby</h2></div>',
            f'{indent}  <ul class="place-list">']
     for href, title, icon, cls in entries:
