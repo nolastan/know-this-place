@@ -643,6 +643,49 @@ def building_type(pclass: str, units: int | None) -> str:
     return f"{u}-unit building" if u > 1 else "Building"
 
 
+# The HugeIcons glyph that stands for each building type beside a name-headed
+# page's `<h1>`, where the type would otherwise be a tag repeating the name
+# ("Castro Theater" needs no "Theater" chip). Keyed on `building_type`'s phrase
+# so the two cannot drift; the phrases that carry a unit count are matched by
+# the words around it.
+TYPE_ICON = {
+    "Single-family house": "hgi-house-03",
+    "Two dwellings on one parcel": "hgi-house-02",
+    "Town house": "hgi-house-01",
+    "Flat and apartment building on one parcel": "hgi-real-estate-01",
+    "Office building with ground-floor retail": "hgi-office",
+    "Office condominium": "hgi-office",
+    "Office building": "hgi-office",
+    "Hotel": "hgi-hotel-bell",
+    "Shopping center": "hgi-shopping-bag-02",
+    "Department store": "hgi-trolley-01",
+    "Bank building": "hgi-bank",
+    "School building": "hgi-school",
+    "Church": "hgi-church",
+    "Theater": "hgi-theater",
+    "Restaurant building": "hgi-cafe",
+    "Warehouse": "hgi-warehouse",
+    "Garage": "hgi-car-parking-01",
+    "Assessor class: parking lot": "hgi-parking-area-circle",
+    "Assessor class: vacant lot": "hgi-tree-02",
+    "Store building": "hgi-store-01",
+    "Industrial building": "hgi-factory",
+}
+
+
+def building_icon(btype: str) -> str:
+    """The `TYPE_ICON` glyph for a `building_type` phrase."""
+    if btype in TYPE_ICON:
+        return TYPE_ICON[btype]
+    if "apartment building" in btype.lower():
+        return "hgi-building-02"
+    if "ground-floor store" in btype:
+        return "hgi-apartment"
+    if "flat" in btype.lower() or "TIC" in btype:
+        return "hgi-duplex"
+    return "hgi-building-02"
+
+
 def commercial_type(c: str) -> str | None:
     """The same phrase for the non-residential classes on the assessor's roll.
 
@@ -1602,6 +1645,19 @@ def meta_description(rec: dict) -> str:
     return " ".join(bits)
 
 
+def heading_html(rec: dict, heading: str) -> str:
+    """The hero's `<h1>`. A name-headed page leads it with its building type as
+    a glyph — the name usually says what the building is, so a word would
+    repeat it — and the type stays in the glyph's label for a screen reader."""
+    if not building_name(rec):
+        return f"<h1>{esc(heading)}</h1>"
+    p = rec.get("parcel", {})
+    btype = building_type(p.get("property_class"), p.get("units"))
+    return (f'<h1 class="named"><i class="hgi-stroke {building_icon(btype)} type-icon" '
+            f'role="img" aria-label="{esca(btype)}" title="{esca(btype)}"></i>'
+            f'{esc(heading)}</h1>')
+
+
 def tags_html(rec: dict) -> str:
     p = rec.get("parcel", {})
     out = []
@@ -1615,11 +1671,9 @@ def tags_html(rec: dict) -> str:
     if named:
         out.append(("ic-pin", named))
     # No year built here: it is a dated fact, so it opens the timeline instead
-    # (see `built_item`). And no building-type tag on an address-headed page:
-    # the type is the `.sub` line under the address there, so a tag would
-    # state it twice. A page headed by the building's name keeps the tag.
-    if building_name(rec):
-        out.append(("ic-home", building_type(p.get("property_class"), p.get("units"))))
+    # (see `built_item`). And no building-type tag at all: an address-headed
+    # page states the type as the `.sub` line under the address, and a
+    # name-headed one as the icon beside its `<h1>` (see `heading_html`).
     if p.get("stories"):
         s = p["stories"]
         out.append(("hgi-stairs-01", f"{s} stor{'y' if s == 1 else 'ies'}"))
@@ -3676,7 +3730,7 @@ def render_html(rec: dict) -> str:
 <main>
   <section class="hero">
     <div>
-      <h1>{esc(heading)}</h1>
+      {heading_html(rec, heading)}
       <p class="sub">{esc(sub_text)}</p>
       <ul class="tags">
 {tags_html(rec)}

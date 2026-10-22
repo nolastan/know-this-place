@@ -12,6 +12,7 @@ The wide blocks west of Fourth Street, between Market and Harrison. Coverage her
 - [Bluxome Street](bluxome-street/) — 10 buildings, built 1916–2016; 3 in the Bluxome Townsend Historic District.
 - [Boardman Place](boardman-place/) — 1 building, built 1912.
 - [Brannan Street](brannan-street/) — 24 buildings, built 1905–1989; 3 in the Clyde and Crooks Historic District.
+- [Brush Place](brush-place/) — 1 building, built 1926; 1 in the Western SOMA Light Industrial and Residential Historic District.
 - [Bryant Street](bryant-street/) — 56 buildings, built 1905–2005; 1 in the SoMa LGBTQ Historic District.
 - [China Basin Street](china-basin-street/) — 1 building.
 - [Clara Street](clara-street/) — 29 buildings, built 1906–1991.
@@ -45,6 +46,7 @@ The wide blocks west of Fourth Street, between Market and Harrison. Coverage her
 - [Mint Street](mint-street/) — 1 building, built 1916; 1 in the Mint-Mission Conservation District.
 - [Mission Street](mission-street/) — 2 buildings, built 2015; 1 in the Mint-Mission Conservation District.
 - [Morris Street](morris-street/) — 4 buildings, built 1955–1956.
+- [Moss Street](moss-street/) — 15 buildings, built 1906–1928; 15 in the Western SOMA Light Industrial and Residential Historic District.
 - [Natoma Street](natoma-street/) — 1 building, built 2014.
 - [Oak Grove Street](oak-grove-street/) — 5 buildings, built 1926–1988.
 - [Perry Street](perry-street/) — 1 building.
