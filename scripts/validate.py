@@ -399,7 +399,9 @@ def hub_html_items(text: str) -> dict:
     """href -> hook text for each hub list <li> in index.html."""
     return {m.group(1): html.unescape(re.sub(r"\s+", " ", m.group(2))).strip()
             for m in re.finditer(
-                r'<a href="([^"]+)">[^<]*</a><br>\s*<span class="hook">(.+?)</span>',
+                # A named building's link leads with its type glyph.
+                r'<a href="([^"]+)">(?:<i [^>]*></i>)?[^<]*</a><br>\s*'
+                r'<span class="hook">(.+?)</span>',
                 text, re.S)}
 
 

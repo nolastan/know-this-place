@@ -24,15 +24,18 @@ eight nearby pages in three relationship classes.
 - **corner** — the nearest pages within 120 m that are on a different street
   *and* a different block: what you'd see turning the corner.
 
-**The index deliberately carries no `hook`.** It stores each page's path and
-title and nothing else. If it carried hooks, editing any page's `data.json`
-would change its neighbors' rendered HTML and every content edit anywhere would
-ripple through the tree; with titles only, a page's HTML changes when a page is
-added or removed nearby, and not otherwise. The relationship label the renderer
-prints supplies the context a hook would have given.
+**The index deliberately carries no `hook`.** It stores each page's path,
+title and heading glyph and nothing else. If it carried hooks, editing any
+page's `data.json` would change its neighbors' rendered HTML and every content
+edit anywhere would ripple through the tree; with titles only, a page's HTML
+changes when a page is added or removed nearby, or when a neighbor gains or
+changes its name, and not otherwise. The title is the neighbor's heading: its
+name where `building_name` finds one, else its address, with `icons[i]`
+holding the type glyph a named page's heading shows ("" for the rest). The
+relationship label the renderer prints supplies the context a hook would have given.
 
-Output is parallel arrays — paths and titles stored once, `near[i]` holding
-`[index, class]` pairs for page `i` — one page per line so a diff is readable.
+Output is parallel arrays — paths, titles and icons stored once, `near[i]`
+holding `[index, class]` pairs for page `i` — one page per line so a diff is readable.
 Note that indices are positional: inserting a page renumbers every entry after
 it, which churns this file but not, by design, anyone's HTML.
 
@@ -51,7 +54,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from seed_pages import ADDRESS_DIR, num_key, page_title  # noqa: E402
+from seed_pages import (ADDRESS_DIR, building_name, named_icon,  # noqa: E402
+                        num_key, page_title)
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -110,7 +114,11 @@ def load_pages():
 
         pages.append({
             "path": path,
-            "title": page_title(data),
+            # What the page's own heading leads with: the building's name
+            # where it has one, else the address. A named page also carries
+            # the type glyph its heading shows beside the name.
+            "title": building_name(data) or page_title(data),
+            "icon": named_icon(data),
             # The street slug, not the street directory: address numbers are
             # unique per street citywide (verified — no slug/number collides),
             # so Mission Street is one street even where it crosses four
@@ -218,6 +226,7 @@ def main() -> None:
 
     text = ('{"paths":[\n' + rows([p["path"] for p in pages])
             + '\n],\n"titles":[\n' + rows([p["title"] for p in pages])
+            + '\n],\n"icons":[\n' + rows([p["icon"] for p in pages])
             + '\n],\n"near":[\n' + rows(near) + '\n]}\n')
 
     out = ROOT / "shared" / "nearby.json"

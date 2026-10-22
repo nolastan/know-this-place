@@ -1692,6 +1692,25 @@ def heading_html(rec: dict, heading: str) -> str:
             f'{esc(heading)}</h1>')
 
 
+def named_icon(rec: dict) -> str:
+    """The glyph `heading_html` leads a named page's `<h1>` with, "" for an
+    address-headed page."""
+    if not building_name(rec):
+        return ""
+    p = rec.get("parcel", {})
+    return building_icon(building_type(p.get("property_class"), p.get("units")))
+
+
+def named_link_text(name: str | None, icon: str, address: str) -> str:
+    """A link to another building, labelled the way its page is headed: the
+    type glyph and the name where it has one, else the address."""
+    if not name:
+        return esc(address)
+    glyph = (f'<i class="hgi-stroke {icon} type-icon" aria-hidden="true"></i>'
+             if icon else "")
+    return f"{glyph}{esc(name)}"
+
+
 def tags_html(rec: dict) -> str:
     p = rec.get("parcel", {})
     out = []
@@ -3406,7 +3425,9 @@ NEARBY_LABEL = {"street": "Same street",
 
 @functools.lru_cache(maxsize=1)
 def _nearby_index() -> dict:
-    """page path -> ((href, title, relationship), ...), read once per process.
+    """page path -> ((href, title, icon, relationship), ...), read once per
+    process. `title` is the neighbor's heading — its name where it has one —
+    and `icon` the type glyph a named neighbor's heading shows, else "".
 
     A missing or unreadable index is not an error: the page renders without a
     Nearby block rather than failing. That is what lets a page seeded before
@@ -3418,7 +3439,8 @@ def _nearby_index() -> dict:
     except (OSError, json.JSONDecodeError):
         return {}
     paths, titles = raw["paths"], raw["titles"]
-    return {path: tuple((paths[j], titles[j], cls) for j, cls in near)
+    icons = raw.get("icons") or [""] * len(paths)
+    return {path: tuple((paths[j], titles[j], icons[j], cls) for j, cls in near)
             for path, near in zip(paths, raw["near"]) if near}
 
 
@@ -3592,11 +3614,14 @@ def nearby_html(rec: dict, indent: str) -> str:
     if not entries:
         return ""
     out = [f'{indent}<section class="nearby">',
-           f'{indent}  <div class="section-head"><i class="hgi-stroke hgi-real-estate-01"></i>'
+           f'{indent}  <div class="section-head"><i class="hgi-stroke hgi-location-04"></i>'
            f'<h2>Nearby</h2></div>',
            f'{indent}  <ul class="place-list">']
-    for href, title, cls in entries:
-        out.append(f'{indent}    <li><a href="{esca(href)}">{esc(title)}</a>\n'
+    for href, title, icon, cls in entries:
+        # The index's title is already the name where there is one; a glyph
+        # is what marks it as one.
+        out.append(f'{indent}    <li><a href="{esca(href)}">'
+                   f'{named_link_text(title if icon else None, icon, title)}</a>\n'
                    f'{indent}      <span class="pill pill-muted">'
                    f'{esc(NEARBY_LABEL.get(cls, cls))}</span></li>')
     out += [f'{indent}  </ul>', f'{indent}</section>']
@@ -4901,7 +4926,8 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
     for r in recs:
         addr_range = r.get("address_range")
         number = range_label(addr_range) if addr_range else r["path"].strip("/").split("/")[-1]
-        entries.append((number, r["path"].strip("/").split("/")[-1], page_title(r), hook_for(r)))
+        entries.append((number, r["path"].strip("/").split("/")[-1], page_title(r), hook_for(r),
+                        building_name(r), named_icon(r)))
 
     tiles = [("ic-home", f"{len(recs):,}", "Buildings documented")]
     if years:
@@ -4956,9 +4982,9 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
         f'    <div class="stat">{icon_html(i)}<span class="stat-val">{v}</span>'
         f'<span class="stat-label">{esc(l)}</span></div>' for i, v, l in tiles)
     list_html = "\n".join(
-        f'        <li><a href="{href}/">{esc(title)}</a><br>\n'
+        f'        <li><a href="{href}/">{named_link_text(name, icon, title)}</a><br>\n'
         f'          <span class="hook">{esc(hook)}</span></li>'
-        for _n, href, title, hook in entries)
+        for _n, href, title, hook, name, icon in entries)
     aside = ""
     if districts:
         rows = "\n".join(
@@ -5015,7 +5041,7 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
                          (disp, None)]))}
 {ld_block(collection_ld(path, disp, desc,
                         [(title, f"{path}{href}/")
-                         for _n, href, title, _hook in entries]))}
+                         for _n, href, title, *_rest in entries]))}
 </head>
 <body>
 <header class="site-header">
