@@ -5019,14 +5019,13 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
     aside = ""
     if districts:
         rows = "\n".join(
-            f'          <div class="spec"><span class="ic ic-permit"></span>'
-            f'<span class="spec-k">'
-            f'{district_hub_link(ctx["city"], name, name)}</span>'
-            f'<span class="spec-v">{count:,}</span></div>'
+            f'          <li>{district_hub_link(ctx["city"], name, name)}<br>\n'
+            f'            <span class="hook">{count:,} building{"" if count == 1 else "s"}</span></li>'
             for name, count in districts.most_common())
-        aside += (f'      <section class="panel">\n'
-                  f'        <h3>Historic districts on this street</h3>\n'
-                  f'        <dl class="speclist">\n{rows}\n        </dl>\n'
+        aside += (f'      <section>\n'
+                  f'        <div class="section-head"><i class="hgi-stroke hgi-castle-02"></i>'
+                  f'<h2>Historic districts</h2></div>\n'
+                  f'        <ul class="place-list place-list-districts">\n{rows}\n        </ul>\n'
                   f'      </section>\n')
     if uncovered:
         aside += (f'      <section class="panel">\n'
@@ -5092,7 +5091,7 @@ def write_street_hub(street_dir: Path, ctx: dict, skipped: dict = None) -> bool:
 {stat_html}
   </div>
 
-{cols_open}{hand_html}      <div class="section-head"><span class="ic ic-pin"></span><h2>Buildings</h2></div>
+{cols_open}{hand_html}      <div class="section-head"><i class="hgi-stroke hgi-city-03"></i><h2>Buildings</h2></div>
       <ul class="place-list">
 {list_html}
       </ul>
@@ -5731,7 +5730,7 @@ def write_district_hub(dist_dir: Path, name: str, members: list) -> bool:
 {place_list_html(street_items, "        ")}
       </ul>
 
-      <div class="section-head"><span class="ic ic-home"></span><h2>Buildings</h2></div>
+      <div class="section-head"><i class="hgi-stroke hgi-city-03"></i><h2>Buildings</h2></div>
       <ul class="place-list">
 {place_list_html(building_items, "        ")}
       </ul>
