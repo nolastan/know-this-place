@@ -1,0 +1,77 @@
+{
+ "source_id": "the-registry",
+ "batch": "2026-10-22",
+ "read_on": "2026-10-22",
+ "notes": "Run of 2026-10-22.",
+ "coverage": {
+  "unit": "articles",
+  "examined": 7,
+  "mentions": 2,
+  "remaining": "none",
+  "note": "Other queued stories name no building, pass an address only in passing, concern people, or are market commentary."
+ },
+ "findings": [
+  {
+   "id": "2026-10-22-rg-0001",
+   "date": "2026-10-21",
+   "date_precision": "day",
+   "kind": "development",
+   "address_as_written": "901 Market Street",
+   "street_number": "901",
+   "street_type": "ST",
+   "street_name": "MARKET",
+   "description": "City approved Hudson Pacific's office-to-housing conversion at 901 Market.",
+   "extra": {},
+   "citation": {
+    "label": "The Registry, “Hudson Pacific Wins Approval for 162,000 SQFT Housing Conversion at 901 Market Street in San Francisco,” 21 October 2026",
+    "url": "https://news.theregistrysf.com/hudson-pacific-wins-approval-for-162000-sqft-housing-conversion-at-901-market-street-in-san-francisco/"
+   },
+   "raw": {
+    "text": "Hudson Pacific Wins Approval for 162,000 SQFT Housing Conversion at 901 Market Street in San Francisco"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3704001",
+    "path": "/san-francisco/south-of-market/market-street/901/",
+    "eas_address": "901 MARKET ST",
+    "method": "EAS exact match on 901 MARKET ST → parcel 3704001; sf-parcels has blklot 3704001 active, 901–901 MARKET; the 2025 roll records it as commercial office, built 1912.",
+    "checked_on": "2026-10-22"
+   },
+   "publish": {
+    "status": "declined",
+    "note": "Duplicate: the 901 Market approval is carried by the SF YIMBY entry dated 2026-10-20 already on the page."
+   }
+  },
+  {
+   "id": "2026-10-22-rg-0002",
+   "date": "2026-10-20",
+   "date_precision": "day",
+   "kind": "development",
+   "address_as_written": "845 Market St.",
+   "street_number": "845",
+   "street_type": "ST",
+   "street_name": "MARKET",
+   "description": "AI data center permit inquiry for vacant Bloomingdale's at 845 Market.",
+   "extra": {},
+   "citation": {
+    "label": "The Registry, “AI Data Center Conversion Floated for 350,000 SQFT Former Bloomingdale’s at Shuttered San Francisco Centre,” 20 October 2026",
+    "url": "https://news.theregistrysf.com/ai-data-center-conversion-floated-for-350000-sqft-former-bloomingdales-at-shuttered-san-francisco-centre/"
+   },
+   "raw": {
+    "text": "AI Data Center Conversion Floated for 350,000 SQFT Former Bloomingdale’s at Shuttered San Francisco Centre"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-10-22",
+    "method": "sf-eas-addresses has 845 MARKET ST but it does not join to one parcel. 845 MARKET ST's coordinates fall in 5 active parcels (3705056, 3705051, 3705055, 3705052…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
+    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+   },
+   "publish": {
+    "status": "pending",
+    "note": "Blocked: 845 Market St. is a condominium today (parcels per unit), so the seeder may not make a page; the resolver could not join it to one parcel."
+   }
+  }
+ ]
+}
