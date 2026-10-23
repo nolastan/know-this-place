@@ -401,6 +401,20 @@ here is [Adding a source](#adding-a-source).
   1897–1906, not Article 10; 720 Castro St, on the even side of the same block,
   is inside no district; 19 Hartford St → Hartford Street Historic District)
 
+## sf-neighborhood-boundaries — official neighborhood polygons
+
+- **What:** the line a neighborhood hub's map is drawn on. Three datasets,
+  chosen per directory in `seed_pages.BOUNDARY_SOURCE`: Analysis
+  Neighborhoods (`j2bu-swwd`, field `nhood`, geometry `the_geom`), SF Find
+  Neighborhoods (`gfpk-269f`, `name`, `the_geom` — Planning's own caveat:
+  "not hard lines of demarcation") and Community Benefit Districts
+  (`c28a-f6gs`, `community_benefit_district`, `multipolygon`).
+- **Fetch:** `python3 scripts/seed_pages.py boundaries` — one row per
+  directory, simplified to about 3 m and stored in the hub's `hub.json`.
+- **Not used:** Realtor Neighborhoods (`2kjj-ysvr`) — it has no Union Square,
+  Financial District South or Corbett Heights either.
+- **Verified:** 2026-10-23
+
 ## historical-imagery — OpenSFHistory & Wikimedia Commons
 
 - **What:** Historical photographs. Wikimedia Commons has a proper API and
