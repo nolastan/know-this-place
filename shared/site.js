@@ -76,7 +76,11 @@ loadAnalytics();
    be a picture of someone's foyer. Where a parcel has no outdoor panorama the
    API returns the generic grey "no imagery" tile instead of an interior; that
    is the better failure, since a page showing nothing is honest and a page
-   showing the wrong room is not. */
+   showing the wrong room is not.
+
+   A page with its own committed photo (seed_pages.facade_media) writes the
+   <img> where the placeholder would be, so with no .media-empty to replace
+   the element leaves the photo alone. */
 customElements.define(
   "ktp-streetview",
   class extends HTMLElement {

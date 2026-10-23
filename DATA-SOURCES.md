@@ -423,7 +423,15 @@ here is [Adding a source](#adding-a-source).
   credit + license in the figure caption. OpenSFHistory (Western Neighborhoods
   Project) images are generally **link/cite only** — check terms per image.
 - **Endpoint:** `https://commons.wikimedia.org/w/api.php`
-- **Verified:** —
+- **On the page:** a page's `photo` (see
+  [REFERENCE.md → `photo`](REFERENCE.md#photo)) takes Street View's place
+  everywhere the building is pictured. Stored once, cut to 4:3 at 1280×960,
+  in the page's `assets/photo.jpg`.
+- **Rate limits:** the API and `upload.wikimedia.org` answer 429 to a burst
+  from a shared cloud address. Send a descriptive `User-Agent` naming the site,
+  one request every few seconds, and back off a minute at a time.
+- **Verified:** 2026-10-23 (photos of 300 named places, licenses checked
+  2026-10-22)
 
 ## streetview — Google Maps Embed API (live embed only)
 

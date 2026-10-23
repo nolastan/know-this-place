@@ -143,7 +143,9 @@ is in the light DOM exactly as if the script didn't exist; the element just
 wraps it. A page with JS disabled — or a search crawler — must see everything.
 
 - **`<ktp-streetview location="LAT,LNG" label="ADDRESS">`** — swaps in a Street
-  View still, keyed off `maps_embed_key` in `site-config.json`.
+  View still, keyed off `maps_embed_key` in `site-config.json`. Only over a
+  `.media-empty` placeholder: a page's own photo (`seed_pages.facade_media`)
+  is left alone.
 - **`<ktp-map location="LAT,LNG" label="ADDRESS">`** — the same contract for the
   locator band, keyed off `mapbox_token`: one flat image from the Mapbox Static
   Images API, in the basemap matching the reader's color scheme. A static

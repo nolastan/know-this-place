@@ -543,6 +543,14 @@ chips cover the bottom corners where Mapbox would bake it in. On a phone its
 links fold behind an "i" beside the wordmark, as mapbox-gl's compact
 attribution does.)
 
+**A page with its own photo shows it instead.** `seed_pages.facade_media` writes
+this block for every hero and card; where `data.json` has a `photo`, the
+figure holds the committed `<img>` and a `<figcaption class="photo-credit">`
+with the license credit in place of `.media-empty`, still inside
+`<ktp-streetview>` so `location` stays on the page. The element only replaces
+a `.media-empty`, so it leaves a photo alone. See
+[REFERENCE.md → `photo`](../REFERENCE.md#photo).
+
 **Never test or preview the Street View image.** `maps_embed_key` is
 restricted to the production domain, so it fails from localhost, from any
 preview host, and from `curl` — by design, not by fault. There is no local

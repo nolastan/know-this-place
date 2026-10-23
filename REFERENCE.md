@@ -254,6 +254,44 @@ ids that list the same business, each also in `sources`.
 - Where the entries come from, and how a directory is refreshed, is
   [merchants/AGENTS.md](merchants/AGENTS.md).
 
+### `photo`
+
+**An openly licensed photograph of the building, shown in Street View's
+place** — in the hero, on the homepage map's card, on the news grid and on the
+neighborhood hubs, because every one of them draws its picture through
+`seed_pages.facade_media`. On an address page's `data.json` or a place's
+`place.json`:
+
+```json
+"photo": {
+  "file": "assets/photo.jpg", "width": 1280, "height": 960,
+  "title": "Quinn House", "author": "Billiamwhatcott", "cropped": true,
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Quinn_House.jpg",
+  "retrieved": "2026-10-23"
+}
+```
+
+- **Only what the license lets us redistribute**: public domain, CC0, CC BY
+  and CC BY-SA, from Wikimedia Commons (see
+  [DATA-SOURCES.md → historical-imagery](DATA-SOURCES.md#historical-imagery--opensfhistory--wikimedia-commons)).
+  The credit the license asks for — title, author, license and source, linked
+  — renders under the hero's picture (`photo_credit_html`). A card that links
+  to the page may drop it, because the page carries it; `validate.py` fails a
+  CC BY photo with no `author`. `title` is left out of public-domain and CC0
+  photos, which owe no credit, so their often paragraph-long archival titles
+  stay off the page.
+- **One size, committed**: cut to 4:3 and scaled to 1280×960 — the hero's
+  640px-wide 4:3 card at 2x, the largest place the picture shows, and the frame
+  every place shows it in — never upscaled, re-encoded as a JPEG at quality 72
+  with its EXIF stripped. `"cropped": true` says the frame cut the original, and
+  the credit says so, as CC BY 4.0 asks. A
+  larger copy, when one is wanted, comes from `source_url`, not the repo.
+- **The building, not people**: a photo where a person can be recognised, a
+  view *from* the place, a detail too close to say which building it is, or a
+  picture of a different building of the same name is not used.
+
 ### `narrative`
 
 Where all of a page's prose lives — it replaces the old `index.md`. `lead` is

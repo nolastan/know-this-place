@@ -7,7 +7,8 @@ homepage map needs: the heading its card shows ("t") and the line under it
 ("s") — the page's own <h1> and .sub, less the neighborhood — the page the
 card links to ("p"), and "r": 1 when the research module has published a finding onto
 that page — the map draws those in the brick hue and the rest, pages that are
-permit history and little else, in grey. Coordinates and labels come from each
+permit history and little else, in grey — and "ph", the page's own photo where
+it has one, which the card shows in Street View's place. Coordinates and labels come from each
 page's data.json, or a place's place.json, which is the single source of truth,
 through the same seed_pages functions that write the page's hero. "r" comes
 from research/findings, whose published entries each name the page they went
@@ -22,7 +23,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
-from seed_pages import hero_lines, place_sub  # noqa: E402
+from seed_pages import hero_lines, page_photo, place_sub  # noqa: E402
 
 ADDRESS_DIR = re.compile(r"^\d+[a-z]?$")  # 123, 123a — same as validate.py
 
@@ -84,6 +85,9 @@ def main() -> None:
         # file is fetched whole by every homepage visit.
         if path in researched:
             props["r"] = 1
+        photo = page_photo({**data, "path": path})
+        if photo:
+            props["ph"] = path + photo["file"]
         if is_place:
             place_paths.add(path)
         features.append((path, {

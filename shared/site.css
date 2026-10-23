@@ -721,8 +721,13 @@ ktp-figure { position: relative; }
 
 /* ============================================================= media */
 .media { border: 1px solid var(--rule); border-radius: var(--radius); overflow: hidden; background: var(--panel); }
-.media iframe, .media img { display: block; width: 100%; aspect-ratio: 4 / 3; border: 0; object-fit: cover; }
+.media iframe, .media img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; border: 0; object-fit: cover; }
 .media figcaption { padding: 0.5rem 0.75rem; font-family: var(--sans); font-size: 0.8rem; color: var(--muted); }
+/* A committed photo's license credit (seed_pages.photo_credit_html): owed, so
+   always printed, but small and quiet — the picture is the point. */
+.media .photo-credit { padding: 0.4rem 0.75rem; font-size: 0.72rem; line-height: 1.4; overflow-wrap: anywhere; }
+.photo-credit a { color: inherit; }
+.photo-credit a:where(:hover, :focus-visible) { color: var(--cool-hover); }
 .media-empty { aspect-ratio: 4 / 3; display: grid; place-content: center; justify-items: center; gap: 0.4rem; text-align: center; padding: 1rem; color: var(--muted); }
 .media-empty .ic, .media-empty i.hgi-stroke { font-size: 1.6rem; color: var(--accent); }
 .media-empty small { font-size: 0.78rem; font-family: var(--sans); max-width: 16rem; }
