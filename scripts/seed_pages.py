@@ -5592,16 +5592,6 @@ def simplify_multipolygon(coords: list, tol: float = BOUNDARY_TOLERANCE) -> list
     return out
 
 
-def _in_ring(x: float, y: float, ring: list) -> bool:
-    inside = False
-    for i in range(len(ring)):
-        x1, y1 = ring[i]
-        x2, y2 = ring[i - 1]
-        if (y1 > y) != (y2 > y) and x < (x2 - x1) * (y - y1) / (y2 - y1) + x1:
-            inside = not inside
-    return inside
-
-
 def in_multipolygon(lng: float, lat: float, coords: list) -> bool:
     return any(_in_ring(lng, lat, poly[0])
                and not any(_in_ring(lng, lat, hole) for hole in poly[1:])
@@ -5743,22 +5733,7 @@ def overview_pages(city_slug: str) -> tuple:
     return tuple(out)
 
 
-def facade_media(rec: dict, label: str, cls: str = "media", indent: str = "",
-                 caption: bool = True) -> str:
-    """The facade image block for a page: Street View once a key is set."""
-    c = rec["coordinates"]
-    lat, lng = c["lat"], c["lng"]
-    return (f'{indent}<ktp-streetview location="{lat},{lng}" label="{esca(label)}">\n'
-            f'{indent}  <figure class="{cls}">\n'
-            f'{indent}    <div class="media-empty">\n'
-            f'{indent}      <span class="ic ic-pin"></span>\n'
-            f"{indent}      <span>{lat:.4f}, {'−' if lng < 0 else ''}{abs(lng):.4f}</span>\n"
-            f'{indent}    </div>\n'
-            f'{indent}  </figure>\n'
-            f'{indent}</ktp-streetview>')
-
-
-def photo_credit_html(photo: dict) -> str:
+def hub_photo_credit_html(photo: dict) -> str:
     """The credit a photo's license asks for: title, author, license, source,
     and that this copy was cropped. Pexels and Unsplash ask for none, and get
     the same line anyway."""
@@ -5818,7 +5793,7 @@ def overview_html(area_dir: Path, hub: dict, heading: str) -> str:
             f'  <figure class="hub-photo">\n'
             f'    <img src="{esca(photo["file"])}" width="{photo["width"]}" '
             f'height="{photo["height"]}" alt="{esca(photo.get("alt") or photo["title"])}">\n'
-            f'    <figcaption class="photo-credit">{photo_credit_html(photo)}</figcaption>\n'
+            f'    <figcaption class="photo-credit">{hub_photo_credit_html(photo)}</figcaption>\n'
             f'  </figure>')
 
     addresses = [p for p in inside if p[3] is not None]
