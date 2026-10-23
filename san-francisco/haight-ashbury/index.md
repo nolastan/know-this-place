@@ -47,6 +47,6 @@ The neighborhood at the east end of Golden Gate Park, at the centre of San Franc
 
 Golden Gate Park closes these blocks to the west and the Panhandle runs
 along the north. [Hayes Valley](../hayes-valley/) is east beyond Divisadero
-Street, [the Castro](../castro/) south-east across Buena Vista Park,
-[Corbett Heights](../corbett-heights/) south up Clayton and Ashbury Streets,
+Street, [the Castro](../castro/) south-east across Buena Vista Park and south up
+Clayton and Ashbury Streets into Corbett Heights,
 and [the Inner Sunset](../inner-sunset/) south-west over Mount Sutro.

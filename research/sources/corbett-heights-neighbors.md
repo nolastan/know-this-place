@@ -29,13 +29,13 @@
   paraphrase the source's sentences (facts aren't copyrightable, wording is).
   **Never name the newsletter in the page body** — it means nothing to a
   reader with no context for it; the citation lives in the Sources footer.
-  See `san-francisco/corbett-heights/AGENTS.md`.
+  See `san-francisco/castro/CORBETT-HEIGHTS.md`.
 - **Cautions:**
   - **Historical addresses.** Street numbers changed in 1909, streets were
     expunged by the Market Street extension, and buildings have been
     demolished, so an address in the newsletter may not exist today. Check
     EAS before creating a page (see
-    `san-francisco/corbett-heights/AGENTS.md` for worked examples).
+    `san-francisco/castro/CORBETT-HEIGHTS.md` for worked examples).
   - **Photograph dates contradict the assessor.** The newsletter dates
     buildings from photographs; the assessor's `year_property_built` often
     disagrees, in both directions. Record both and name the conflict in the
@@ -136,7 +136,7 @@
   - **A worked 1909 renumbering pair:** 77 Clara Avenue is today's **81 Ord
     Street** (August 2026 issue), alongside the 110 Clara → 110 Ord and
     1200 Ashbury → 1200 Clayton pairs already in
-    `san-francisco/corbett-heights/AGENTS.md`.
+    `san-francisco/castro/CORBETT-HEIGHTS.md`.
   - **An issue can disagree with itself in passing.** The August 2026 piece
     dates 99 Ord Street to 1932 twice, with a day-precise completion, and
     writes "1937" once in a sentence about the lot's dimensions. Take the

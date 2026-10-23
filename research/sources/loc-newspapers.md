@@ -755,7 +755,7 @@ another batch and is unread. What was new:
   entry gives lot dimensions, check them against the assessor's `lot_area`:
   25x125 against 3,125 sq ft is a parcel identification, not a coincidence.
 - **Mission and Eureka Valley street numbers did *not* move in 1909.** The
-  general warning in `san-francisco/corbett-heights/AGENTS.md` still holds for
+  general warning in `san-francisco/castro/CORBETT-HEIGHTS.md` still holds for
   renamed streets, but every cross-street check run here resolves to today's
   number
   (824 Valencia "bet. 19th and 20th"; 3460 16th "between Church and Sanchez";

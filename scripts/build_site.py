@@ -37,6 +37,8 @@ URL-restricted to `knowthis.place` and `http://localhost:8517`, so the maps
 render on that port and on no other (shared/AGENTS.md).
 """
 import argparse
+import html
+import json
 import shutil
 import subprocess
 import sys
@@ -130,8 +132,43 @@ def stage(dest: Path) -> None:
                 if (here == ROOT and n == ".git") or here / n == dest]
 
     shutil.copytree(ROOT, dest, ignore=skip, copy_function=copy, symlinks=True)
+    moved = write_redirects(dest)
     print(f"    {stamped} committed pages stamped with the stylesheet hash, "
+          f"{moved} moved page(s) forwarded, "
           f"{time.monotonic() - started:.1f}s", flush=True)
+
+
+REDIRECTS = CONTENT / "redirects.json"
+
+
+def write_redirects(dest: Path) -> int:
+    """A forwarding page at every URL in `redirects.json`, in the staged site.
+
+    GitHub Pages has no server-side redirects, so a page that moves keeps its
+    old URL working with a stub that sends the reader on. The stubs exist only
+    in the deploy: they are not pages of the site, so nothing in the working
+    tree (the contract, the sitemap, the link index) ever sees one.
+    """
+    if not REDIRECTS.exists():
+        return 0
+    moves = json.loads(REDIRECTS.read_text(encoding="utf-8"))
+    for old, new in moves.items():
+        stub = dest / old.strip("/") / "index.html"
+        if stub.exists():
+            continue
+        stub.parent.mkdir(parents=True, exist_ok=True)
+        url = html.escape(new)
+        stub.write_text(
+            "<!doctype html>\n<html lang=\"en\">\n<head>\n"
+            "  <meta charset=\"utf-8\">\n"
+            "  <title>Moved — Know This Place</title>\n"
+            f"  <link rel=\"canonical\" href=\"https://knowthis.place{url}\">\n"
+            "  <meta name=\"robots\" content=\"noindex\">\n"
+            f"  <meta http-equiv=\"refresh\" content=\"0; url={url}\">\n"
+            "</head>\n<body>\n"
+            f"  <p>This page has moved to <a href=\"{url}\">{url}</a>.</p>\n"
+            "</body>\n</html>\n", encoding="utf-8")
+    return len(moves)
 
 
 def serve(port: int) -> None:
