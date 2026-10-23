@@ -562,6 +562,26 @@ def check_hub_sync(dir_path: Path) -> None:
                          f"regenerate with scripts/seed_pages.py hubs")
 
 
+def check_redirects(content: Path) -> None:
+    """Every moved URL in `redirects.json` forwards to a page that exists, and
+    no longer has a page of its own.
+
+    The deploy writes a forwarding stub at each old URL (`build_site.stage`),
+    and only where nothing else is: a page put back at an old URL would win
+    silently, and a target that moves again would forward to a 404.
+    """
+    path = content / "redirects.json"
+    if not path.exists():
+        return
+    for old, new in json.loads(path.read_text(encoding="utf-8")).items():
+        if not (ROOT / new.strip("/") / "index.html").exists():
+            err(path, f"{old} forwards to {new}, which has no page — point it "
+                      f"at the page's current URL")
+        if (ROOT / old.strip("/") / "index.html").exists():
+            err(path, f"{old} is listed as moved but still has a page — drop "
+                      f"the entry or the page")
+
+
 def check_district_hubs() -> None:
     """Every district hub lists every page inside it, and no hub outlives its district.
 
@@ -840,6 +860,7 @@ def main() -> int:
             check_hub_lists_places(html_path.parent)
 
     check_district_hubs()
+    check_redirects(content)
 
     # The icon links every page carries have to resolve to something.
     for icon in ("favicon.ico", "apple-touch-icon.png", "shared/icon.svg",

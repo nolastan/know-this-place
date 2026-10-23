@@ -466,7 +466,9 @@ Its inputs:
   boundaries` refetches the boundaries; which polygon each directory uses is
   `BOUNDARY_SOURCE` — Analysis Neighborhoods where the directory is one, else
   SF Find Neighborhoods by name, else (the East Cut) its community benefit
-  district. Corbett Heights is in no city dataset, so its map has no outline.
+  district. A directory in no city dataset gets a map of its own pages with no
+  outline; none is, now that Corbett Heights is filed under `castro/` and
+  `twin-peaks/`.
 - Every `data.json` and `place.json` in the city: the map draws a dot for
   each page **inside the boundary, wherever it is filed**, and the named
   buildings are the pages inside it with a `building.name` or a
@@ -613,6 +615,7 @@ now has a build in it.
 | `san-francisco/<neighborhood>/index.html` | 42 of them. A human's prose; `hubs` patches the street list into the page rather than writing it |
 | `shared/`, `scripts/`, `research/`, `news/`, `merchants/`, `design/`, `events/` | the stylesheet, the script, the tools, the modules |
 | `corpus.jsonl` | derived, but committed on purpose — see below |
+| `san-francisco/redirects.json` | old URL → new URL for every page that has moved — see below |
 
 **Derived — gitignored, rebuilt every deploy:**
 
@@ -627,6 +630,15 @@ now has a build in it.
 | `shared/nearby.json` | the lateral links between pages |
 | `events/index.html` | the `/events` listing, written whole by `build_events.py` |
 | `stats/index.html` | the dashboard at `/stats/` |
+
+**A page that moves keeps its old URL.** GitHub Pages has no server-side
+redirects, so when a page's directory changes — Corbett Heights' 108 pages
+went to the neighborhoods the city's lines put them in, in October 2026 — add
+`"/old/path/": "/new/path/"` to `san-francisco/redirects.json`, for the page
+and for any hub that went with it, and update every reference to the old path
+in the repository. `build_site.py --stage` writes a `noindex` forwarding stub
+at each old URL in the deployed copy only, never in the working tree, and
+`validate.py` checks that each target is a page and that no old URL has one.
 
 The line between the two is not depth, it is whether a generator can write the
 file from nothing. A street hub and an address page it can. A neighborhood hub
@@ -667,7 +679,7 @@ those sections contain: bullet lists, paragraphs, links, bold and italics.
 
 So `index.md` stays the only copy of the prose and `index.html` stays a build
 artifact, which is what keeps every street hub out of the repository. Two of
-them — `corbett-heights/mars-street` and `corbett-heights/danvers-street` —
+them — `mars-street` and `danvers-street`, then under Corbett Heights —
 were committed HTML until the generator could read them, and had gone stale in
 the way a frozen page does: no stat band, no structured data, a hand-kept
 building list and a hand-kept nearby-streets list that nothing updated.
