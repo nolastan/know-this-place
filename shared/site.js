@@ -97,6 +97,9 @@ customElements.define(
         encodeURIComponent(key);
       img.alt = "Street View of " + label;
       img.decoding = "async";
+      // A hub lists a dozen facades below the fold; an address page's one is
+      // at the top, where lazy loading fetches it at once anyway.
+      img.loading = "lazy";
       empty.replaceWith(img);
     }
   },
@@ -143,6 +146,29 @@ customElements.define(
    band show the surrounding streets. On phones the band is a taller 4:3
    frame, and phones get an image of that ratio rather than a crop of the wide
    one (same breakpoint as the CSS). */
+/* The credit both map elements draw over their image, in its top-right
+   corner. On a phone the links fold behind an "i", as mapbox-gl's compact
+   attribution does on the homepage; the CSS hides the button elsewhere. */
+function mapCredit() {
+  const credit = document.createElement("div");
+  credit.className = "map-credit";
+  credit.innerHTML =
+    '<a class="map-credit-logo" href="https://www.mapbox.com/" aria-label="Mapbox"></a>' +
+    '<span class="map-credit-text">' +
+    '<a href="https://www.mapbox.com/about/maps/">© Mapbox</a> ' +
+    '<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap</a> ' +
+    '<a href="https://www.mapbox.com/map-feedback/"><strong>Improve this map</strong></a>' +
+    "</span>" +
+    '<button class="map-credit-toggle" type="button" aria-expanded="false" aria-label="Map attribution">i</button>';
+  const toggle = credit.querySelector(".map-credit-toggle");
+  toggle.addEventListener("click", () => {
+    const open = toggle.getAttribute("aria-expanded") !== "true";
+    toggle.setAttribute("aria-expanded", String(open));
+    credit.toggleAttribute("data-open", open);
+  });
+  return credit;
+}
+
 const MAP_ZOOM = 16;
 const MAP_SIZE = "1280x400@2x";
 const MAP_SIZE_PHONE = "640x480@2x";
@@ -186,26 +212,62 @@ customElements.define(
       dot.className = "map-dot";
       this.append(dot);
 
-      const credit = document.createElement("div");
-      credit.className = "map-credit";
-      credit.innerHTML =
-        '<a class="map-credit-logo" href="https://www.mapbox.com/" aria-label="Mapbox"></a>' +
-        '<span class="map-credit-text">' +
-        '<a href="https://www.mapbox.com/about/maps/">© Mapbox</a> ' +
-        '<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap</a> ' +
-        '<a href="https://www.mapbox.com/map-feedback/"><strong>Improve this map</strong></a>' +
-        "</span>" +
-        '<button class="map-credit-toggle" type="button" aria-expanded="false" aria-label="Map attribution">i</button>';
-      this.append(credit);
+      this.append(mapCredit());
 
-      // On a phone the links fold behind an "i", as mapbox-gl's compact
-      // attribution does on the homepage; the CSS hides the button elsewhere.
-      const toggle = credit.querySelector(".map-credit-toggle");
-      toggle.addEventListener("click", () => {
-        const open = toggle.getAttribute("aria-expanded") !== "true";
-        toggle.setAttribute("aria-expanded", String(open));
-        credit.toggleAttribute("data-open", open);
-      });
+      dark.addEventListener("change", () => (img.src = src()));
+      PHONE.addEventListener("change", () => (img.src = src()));
+    }
+  },
+);
+
+/* <ktp-areamap center="LNG,LAT" zoom="13.42" size="1280x800" label="Map of Marina">
+     <figure class="area-map"><div class="area-map-frame"><svg>…</svg> …</div></figure>
+   </ktp-areamap>
+
+   A neighborhood hub's map. The page already holds the whole of it as inline
+   SVG — the official boundary and a dot for every documented page inside it,
+   projected by seed_pages.py onto the frame a Mapbox static image of this
+   centre, zoom and size would cover — so this only slides that image under the
+   SVG, once `mapbox_token` is set. Nothing in the picture is content.
+
+   On a phone it asks for half the size at one zoom level less: the same
+   ground, with the basemap's labels drawn at a size that survives the
+   narrower frame. */
+customElements.define(
+  "ktp-areamap",
+  class extends HTMLElement {
+    async connectedCallback() {
+      const frame = this.querySelector(".area-map-frame");
+      const [lng, lat] = (this.getAttribute("center") || "").split(",").map(Number);
+      const zoom = Number(this.getAttribute("zoom"));
+      const [w, h] = (this.getAttribute("size") || "").split("x").map(Number);
+      if (!frame || ![lng, lat, zoom, w, h].every(Number.isFinite)) return;
+
+      const { mapbox_token: token } = await siteConfig();
+      if (!token) return; // no token yet → the SVG alone
+
+      const dark = matchMedia("(prefers-color-scheme: dark)");
+      const src = () => {
+        const half = PHONE.matches;
+        return (
+          "https://api.mapbox.com/styles/v1/mapbox/" +
+          (dark.matches ? "dark-v11" : "light-v11") +
+          `/static/${lng},${lat},${half ? zoom - 1 : zoom},0/` +
+          (half ? `${Math.round(w / 2)}x${Math.round(h / 2)}` : `${w}x${h}`) +
+          "@2x?attribution=false&logo=false&access_token=" +
+          encodeURIComponent(token)
+        );
+      };
+      const img = document.createElement("img");
+      img.alt = "";
+      img.decoding = "async";
+      img.loading = "lazy";
+      img.addEventListener("load", () => {
+        this.querySelector(".area-map")?.setAttribute("data-basemap", "");
+      }, { once: true });
+      img.src = src();
+      frame.prepend(img);
+      frame.append(mapCredit());
 
       dark.addEventListener("change", () => (img.src = src()));
       PHONE.addEventListener("change", () => (img.src = src()));
