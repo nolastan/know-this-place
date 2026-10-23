@@ -811,6 +811,16 @@ The named buildings' markers are HTML links over the SVG, placed with the
 </ktp-areamap>
 ```
 
+### City neighborhoods map — `.city-map`
+Only on the city page (`san-francisco/index.html`, otherwise hand-authored),
+under "Neighborhoods documented so far", between the `<!-- city map … -->`
+comments; written by `seed_pages.py overviews` from every hub's `hub.json`
+boundary. The same `<ktp-areamap>` frame as a hub's map, but the SVG holds
+nothing except one `<a>` per neighborhood wrapping its outline
+(`.city-area`) — no dots, no markers — largest drawn first so a smaller
+boundary inside a larger one stays clickable. A hub with no boundary is named
+in the caption instead.
+
 ### Icons — `.ic .ic-NAME`
 `<span class="ic ic-calendar"></span>`; sized in `em`, colored by surrounding
 text. Available: `ic-calendar` `ic-home` `ic-layers` `ic-plan` `ic-lot`

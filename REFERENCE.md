@@ -474,6 +474,11 @@ Its inputs:
   first twelve as numbered cards with their facade (`facade_media`), the rest
   as a list.
 
+The same command writes the city page's neighborhoods map — every hub's
+boundary, each a link to its hub — between the `<!-- city map … -->` comments
+under "Neighborhoods documented so far". The rest of that page is
+hand-authored; never edit inside those comments.
+
 A street hub that has grown its own sections beyond the lead+list template (a
 "Sources" section, a "The street itself" write-up) is left untouched entirely
 by `seed_pages.py hubs` — the command reports it as skipped rather than
