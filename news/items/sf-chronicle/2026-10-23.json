@@ -1,0 +1,79 @@
+{
+  "source_id": "sf-chronicle",
+  "batch": "2026-10-23",
+  "read_on": "2026-10-23",
+  "notes": "Bluesky route: read.py followed each bit.ly link and read the <h1> off the article.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 5,
+    "mentions": 3,
+    "remaining": "none",
+    "note": "Teen shooting names no address; Outset Coffee and Bottom of the Hill are declined below."
+  },
+  "findings": [
+    {
+      "id": "2026-10-23-sc-0001",
+      "date": "2026-10-22",
+      "date_precision": "day",
+      "kind": "sale",
+      "address_as_written": "865 Market St.",
+      "street_number": "865",
+      "street_type": "ST",
+      "street_name": "MARKET",
+      "description": "A buyer has been selected for the majority of the shuttered San Francisco Centre mall, a roughly 1.15-million-square-foot portion of the complex at 865 Market St.",
+      "citation": {
+        "label": "San Francisco Chronicle, “Exclusive: Buyer selected for shuttered downtown S.F. mall,” 22 October 2026",
+        "url": "https://www.sfchronicle.com/bayarea/article/sf-westfield-center-mall-three-finalists-sale-22489916.php"
+      },
+      "raw": {
+        "text": "the complex at 865 Market St."
+      },
+      "confidence": "high",
+      "extra": {},
+      "resolution": {
+        "status": "resolved",
+        "apn": "3705042",
+        "path": "/san-francisco/south-of-market/market-street/865/",
+        "eas_address": "865 MARKET ST",
+        "method": "EAS exact match on 865 MARKET ST → parcel 3705042; sf-parcels has blklot 3705042 active, 865–885 MARKET; the 2025 roll records it as commercial retail, built 1908. EAS puts 865, 885 MARKET ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 865.",
+        "checked_on": "2026-10-23"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Entry added to existing page 865–885 Market Street (San Francisco Centre) and card put on the homepage grid."
+      }
+    },
+    {
+      "id": "2026-10-23-sc-0002",
+      "date": "2026-10-22",
+      "date_precision": "day",
+      "kind": "sale",
+      "address_as_written": "1233 17th St.",
+      "street_number": "1233",
+      "street_type": "ST",
+      "street_name": "17TH",
+      "description": "Bottom of the Hill music club at 1233 17th St. sold to a new owner and will reopen in 2027.",
+      "citation": {
+        "label": "San Francisco Chronicle, “Bottom of the Hill sold to biotech executive, will stay open as S.F. music venue,” 22 October 2026",
+        "url": "https://www.sfchronicle.com/entertainment/article/bottom-of-the-hill-sold-new-owner-22489715.php"
+      },
+      "raw": {
+        "text": "Bottom of the Hill sold to biotech executive, will stay open as S.F. music venue"
+      },
+      "confidence": "high",
+      "extra": {},
+      "publish": {
+        "status": "declined",
+        "note": "Declined: the headline identifies the buyer as a private individual (a biotech executive), and the headline cannot be edited. Revisit if a later account carries the sale without describing the buyer."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3985028",
+        "path": "/san-francisco/mission/17th-street/1231/",
+        "eas_address": "1231 17TH ST",
+        "method": "EAS exact match on 1233 17TH ST → parcel 3985028; sf-parcels has blklot 3985028 active, 1231–1233 17TH; the 2025 roll records it as multi-family residential, built 1911. EAS puts 1231, 1233 17TH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1231.",
+        "checked_on": "2026-10-23"
+      }
+    }
+  ]
+}

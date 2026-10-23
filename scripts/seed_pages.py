@@ -2052,12 +2052,35 @@ def built_item(rec: dict, indent: str) -> list:
         # a cleared lot — the rail mutes those items for the same reason.
         and not PILL.get(p.get("status", ""), ("", "", "", False))[3]
         for p in rec.get("permits") or [])
+    # Where the page's own sources date the building otherwise, a bare
+    # "Built." under the roll's year reads as a second construction. The roll's
+    # year stays — it is what the city records — but says whose it is, and the
+    # line under the rail says what the disagreement is.
+    if disputed_year(rec):
+        desc = "Assessor’s “built” date."
+        if builder or note:
+            desc += " " + built_sentence("Built", builder, note)
+    else:
+        desc = built_sentence("Current structure built" if replaced else "Built", builder, note)
     return [((int(year), 0, 0),
              f'{indent}  <li class="vtl-item">\n'
              f'{indent}    <div class="vtl-date">{year}</div>\n'
-             f'{indent}    <p class="vtl-desc">'
-             f'{esc(built_sentence("Current structure built" if replaced else "Built", builder, note))}</p>\n'
+             f'{indent}    <p class="vtl-desc">{esc(desc)}</p>\n'
              f'{indent}  </li>')]
+
+
+def disputed_year(rec: dict) -> bool:
+    """Whether a source the page cites dates the building other than the roll:
+    a published completion year, a survey's year built, or a recorded
+    `completed_conflict`.
+    """
+    year = str((rec.get("parcel") or {}).get("year_built") or "")
+    b = rec.get("building") or {}
+    hy = (rec.get("historic_status") or {}).get("yearbuilt")
+    return bool(year) and bool(
+        (b.get("completed") and str(b["completed"]) != year)
+        or (hy and str(hy) != year)
+        or b.get("completed_conflict"))
 
 
 def completed_item(rec: dict, indent: str) -> list:
@@ -2067,8 +2090,9 @@ def completed_item(rec: dict, indent: str) -> list:
     It was a "Completed" row in "At a glance", which put a date outside the
     one sequence a reader reads dates in. Where it matches the roll the
     "Built" entry already says it, and where a dated entry from a source
-    already says the building was completed or built that year, that entry
-    says it with more; either way this stands down. The disagreement itself
+    already says the building was completed or built that year, or records
+    its construction that year, that entry says it with more; either way this
+    stands down. The disagreement itself
     (`completed_conflict`) closes the rail with the other dating notes.
     """
     b = rec.get("building") or {}
@@ -2076,8 +2100,12 @@ def completed_item(rec: dict, indent: str) -> list:
     if not completed or str(completed) == str((rec.get("parcel") or {}).get("year_built")):
         return []
     key = date_key(str(completed))
+    # An entry that year recording the construction itself ("Begun in November
+    # 1882 to the design of…") already dates the building, and a bare
+    # "Completed." beside it only repeats the year, ahead of the start it ends.
     if any(date_key(e.get("date"))[0] == key[0]
-           and BUILT_EVENT.search(e.get("description") or "")
+           and (BUILT_EVENT.search(e.get("description") or "")
+                or e.get("kind") == "construction")
            for e in history_entries(rec)):
         return []
     labels = {x["id"]: x.get("label") or x.get("name", x["id"])
@@ -2299,6 +2327,47 @@ def history_entries(rec: dict) -> list:
     return rec.get("historical_record") or []
 
 
+# What a description's opening says that the date beside it already says.
+DATE_LEAD = re.compile(
+    r"(?:In|By|On)\s+(?P<when>(?:(?P<d1>\d{1,2})\s+)?(?:(?P<mon>[A-Z][a-z]{2,8})\.?\s+)?"
+    r"(?:(?P<d2>\d{1,2}),\s+)?(?P<y>\d{4})),?\s+(?P<rest>[A-Za-z\"“'‘].*)", re.S)
+DATE_VERB = re.compile(
+    r"(?P<verb>Built|Completed|Designed|Erected|Constructed|Remodell?ed|Opened|"
+    r"Founded|Photographed|Bought|Sold|Moved|Demolished)\s+(?:in\s+)?(?P<y>[\d–-]+)"
+    r"(?=[.,;]|\s+(?:by|for|with|as|on|at|from|and)\b)")
+NOT_A_LEAD = re.compile(r"(?:and|or|to|through|until|when|-|–)\b", re.I)
+
+
+def drop_repeated_date(desc: str, when: str) -> str:
+    """A description that opens on the date its rail entry already shows,
+    without it.
+
+    "By 1900 the barn had been rebuilt" under a 1900 date says the year twice
+    in one glance, and so does "Built in 1924 with three storefronts" under
+    1924. Only the opening is read, and only where the date the reader sees
+    already says everything the phrase does: "In September 1906" stays under
+    a bare 1906, and a date woven into the sentence further on is the
+    sentence's, not a label's.
+    """
+    key = date_key(when)
+    if not desc or key[0] == 9999:
+        return desc
+    m = DATE_LEAD.match(desc)
+    if m and int(m["y"]) == key[0] and not NOT_A_LEAD.match(m["rest"]):
+        mon = MONTH_NUM.get((m["mon"] or "").lower(), 0)
+        day = int(m["d1"] or m["d2"] or 0)
+        if (m["mon"] and not mon) or (mon and mon != key[1]) or (day and day != key[2]):
+            return desc
+        rest = m["rest"]
+        return rest[0].upper() + rest[1:]
+    m = DATE_VERB.match(desc)
+    shown = when.strip() if re.fullmatch(r"\d{4}(?:[–-]\d{2,4})?", when.strip()) else str(key[0])
+    if m and m["y"] == shown:
+        # "Built in 1908, in what is now…" keeps no comma once the year goes.
+        return m["verb"] + re.sub(r"^,(?=\s)", "", desc[m.end():])
+    return desc
+
+
 def historical_items(rec: dict, indent: str) -> list:
     """`historical_record` as `(date_key, html)` items for the page's timeline.
 
@@ -2351,7 +2420,7 @@ def historical_items(rec: dict, indent: str) -> list:
             href = urls.get(cited[0]) if (photo and cited) else None
             row = (f'{indent}      <a href="{esca(href)}">{esc(meta)}</a>\n' if href
                    else f'{indent}      <span>{esc(meta)}</span>\n')
-        desc = esc(e.get("description", ""))
+        desc = esc(drop_repeated_date(e.get("description", ""), str(e.get("date", ""))))
         # What the record stated about the site beyond the fact itself — the lot
         # as the contract gave it, the corner it named. REFERENCE.md has always
         # listed these as legitimate entry keys and nothing rendered them, so a
@@ -5307,6 +5376,493 @@ def neighborhood_ld(text: str, area_dir: Path, streets: list) -> str:
 
 
 # --------------------------------------------------------------------------
+# Neighborhood overviews: photo, boundary map, named buildings
+# --------------------------------------------------------------------------
+# A neighborhood hub opens with three generated blocks between its lead and
+# its first section: the neighborhood's photo, a map of its official boundary
+# with a dot for every documented page inside it, and the named buildings and
+# city landmarks inside it, each with its facade. All three are projections of
+# other files — the photo's credit and the boundary are in the hub's own
+# `hub.json`, the dots and the names in the pages' `data.json` and
+# `place.json` — so `overviews` rewrites the region wholesale on every build,
+# between two comments that mark it, and nothing in it is ever hand-edited.
+#
+# The map is the boundary and the dots, drawn as inline SVG, so it is whole
+# with no JS: a reader without the script still sees the shape and where the
+# documented buildings sit in it. <ktp-areamap> slides a Mapbox basemap under
+# it, fetched for the exact centre and zoom the SVG was projected at.
+#
+# Membership is by the boundary, not the directory. A page is filed under the
+# neighborhood its street was seeded in, and the city's lines don't follow
+# that (a Pacific Heights house on a Marina street; Corbett Heights inside
+# Castro/Upper Market), so the map of a boundary shows what is inside it,
+# wherever the page is filed.
+
+# The official line each neighborhood directory is drawn from: the city's
+# Analysis Neighborhoods where a directory is one, else the polygon of the
+# same name in SF Find Neighborhoods, else (the East Cut) the community
+# benefit district the name belongs to. Corbett Heights has no polygon in any
+# city dataset — its map is its own pages, with no outline.
+DS_ANALYSIS_NEIGHBORHOODS = "j2bu-swwd"
+DS_FIND_NEIGHBORHOODS = "gfpk-269f"
+DS_CBDS = "c28a-f6gs"
+BOUNDARY_DATASETS = {
+    DS_ANALYSIS_NEIGHBORHOODS: ("Analysis Neighborhoods", "nhood", "the_geom"),
+    DS_FIND_NEIGHBORHOODS: ("SF Find Neighborhoods", "name", "the_geom"),
+    DS_CBDS: ("Community Benefit Districts", "community_benefit_district", "multipolygon"),
+}
+BOUNDARY_SOURCE = {
+    "bayview-hunters-point": (DS_ANALYSIS_NEIGHBORHOODS, "Bayview Hunters Point"),
+    "bernal-heights": (DS_ANALYSIS_NEIGHBORHOODS, "Bernal Heights"),
+    "castro": (DS_ANALYSIS_NEIGHBORHOODS, "Castro/Upper Market"),
+    "chinatown": (DS_ANALYSIS_NEIGHBORHOODS, "Chinatown"),
+    "dogpatch": (DS_FIND_NEIGHBORHOODS, "Dogpatch"),
+    "east-cut": (DS_CBDS, "East Cut (Greater Rincon Hill)"),
+    "excelsior": (DS_ANALYSIS_NEIGHBORHOODS, "Excelsior"),
+    "financial-district": (DS_FIND_NEIGHBORHOODS, "Financial District"),
+    "glen-park": (DS_ANALYSIS_NEIGHBORHOODS, "Glen Park"),
+    "golden-gate-park": (DS_ANALYSIS_NEIGHBORHOODS, "Golden Gate Park"),
+    "haight-ashbury": (DS_ANALYSIS_NEIGHBORHOODS, "Haight Ashbury"),
+    "hayes-valley": (DS_ANALYSIS_NEIGHBORHOODS, "Hayes Valley"),
+    "ingleside-terraces": (DS_FIND_NEIGHBORHOODS, "Ingleside Terraces"),
+    "inner-richmond": (DS_ANALYSIS_NEIGHBORHOODS, "Inner Richmond"),
+    "inner-sunset": (DS_ANALYSIS_NEIGHBORHOODS, "Inner Sunset"),
+    "japantown": (DS_ANALYSIS_NEIGHBORHOODS, "Japantown"),
+    "lakeshore": (DS_ANALYSIS_NEIGHBORHOODS, "Lakeshore"),
+    "lone-mountain": (DS_ANALYSIS_NEIGHBORHOODS, "Lone Mountain/USF"),
+    "marina": (DS_ANALYSIS_NEIGHBORHOODS, "Marina"),
+    "mission": (DS_ANALYSIS_NEIGHBORHOODS, "Mission"),
+    "mission-bay": (DS_ANALYSIS_NEIGHBORHOODS, "Mission Bay"),
+    "nob-hill": (DS_ANALYSIS_NEIGHBORHOODS, "Nob Hill"),
+    "noe-valley": (DS_ANALYSIS_NEIGHBORHOODS, "Noe Valley"),
+    "north-beach": (DS_ANALYSIS_NEIGHBORHOODS, "North Beach"),
+    "oceanview-merced-ingleside": (DS_ANALYSIS_NEIGHBORHOODS, "Oceanview/Merced/Ingleside"),
+    "outer-mission": (DS_ANALYSIS_NEIGHBORHOODS, "Outer Mission"),
+    "outer-richmond": (DS_ANALYSIS_NEIGHBORHOODS, "Outer Richmond"),
+    "pacific-heights": (DS_ANALYSIS_NEIGHBORHOODS, "Pacific Heights"),
+    "portola": (DS_ANALYSIS_NEIGHBORHOODS, "Portola"),
+    "potrero-hill": (DS_ANALYSIS_NEIGHBORHOODS, "Potrero Hill"),
+    "presidio-heights": (DS_ANALYSIS_NEIGHBORHOODS, "Presidio Heights"),
+    "russian-hill": (DS_ANALYSIS_NEIGHBORHOODS, "Russian Hill"),
+    "seacliff": (DS_ANALYSIS_NEIGHBORHOODS, "Seacliff"),
+    "south-beach": (DS_FIND_NEIGHBORHOODS, "South Beach"),
+    "south-of-market": (DS_ANALYSIS_NEIGHBORHOODS, "South of Market"),
+    "sunset-parkside": (DS_ANALYSIS_NEIGHBORHOODS, "Sunset/Parkside"),
+    "tenderloin": (DS_ANALYSIS_NEIGHBORHOODS, "Tenderloin"),
+    "treasure-island": (DS_ANALYSIS_NEIGHBORHOODS, "Treasure Island"),
+    "union-square": (DS_FIND_NEIGHBORHOODS, "Downtown / Union Square"),
+    "visitacion-valley": (DS_ANALYSIS_NEIGHBORHOODS, "Visitacion Valley"),
+    "west-of-twin-peaks": (DS_ANALYSIS_NEIGHBORHOODS, "West of Twin Peaks"),
+    "western-addition": (DS_ANALYSIS_NEIGHBORHOODS, "Western Addition"),
+}
+
+# Douglas–Peucker tolerance for a stored outline, in degrees: about 3 m, under
+# a pixel at the zoom a whole neighborhood is drawn at, and it takes the
+# city's polygons from thousands of vertices to a few hundred.
+BOUNDARY_TOLERANCE = 0.00003
+
+OVERVIEW_START = "<!-- overview: generated by seed_pages.py overviews; do not edit -->"
+OVERVIEW_END = "<!-- /overview -->"
+
+# The map's frame, in the Mapbox Static Images API's logical pixels. 1280 is
+# the API's widest; the height follows the boundary's own proportions within
+# these bounds, so a long neighborhood isn't drawn as a sliver.
+AREA_MAP_W = 1280
+AREA_MAP_H = (640, 1024)
+AREA_MAP_PAD = 0.06          # of the frame, on every side
+AREA_MAP_MAX_ZOOM = 17.0
+# Named buildings shown as cards with their facade; the rest are listed.
+SHOWCASE_CARDS = 12
+
+
+def _dp(points: list, tol: float) -> list:
+    """Douglas–Peucker on one ring, endpoints kept."""
+    if len(points) < 3:
+        return points
+    keep = [False] * len(points)
+    keep[0] = keep[-1] = True
+    stack = [(0, len(points) - 1)]
+    while stack:
+        a, b = stack.pop()
+        (x1, y1), (x2, y2) = points[a], points[b]
+        dx, dy = x2 - x1, y2 - y1
+        norm = math.hypot(dx, dy)
+        far, far_d = None, tol
+        for i in range(a + 1, b):
+            x0, y0 = points[i]
+            d = (abs(dy * x0 - dx * y0 + x2 * y1 - y2 * x1) / norm if norm
+                 else math.hypot(x0 - x1, y0 - y1))
+            if d > far_d:
+                far, far_d = i, d
+        if far is not None:
+            keep[far] = True
+            stack += [(a, far), (far, b)]
+    return [p for p, k in zip(points, keep) if k]
+
+
+def simplify_multipolygon(coords: list, tol: float = BOUNDARY_TOLERANCE) -> list:
+    out = []
+    for poly in coords:
+        rings = []
+        for ring in poly:
+            r = _dp([(round(x, 6), round(y, 6)) for x, y, *_ in ring], tol)
+            if len(r) >= 4:
+                rings.append([[round(x, 5), round(y, 5)] for x, y in r])
+        if rings:
+            out.append(rings)
+    return out
+
+
+def _in_ring(x: float, y: float, ring: list) -> bool:
+    inside = False
+    for i in range(len(ring)):
+        x1, y1 = ring[i]
+        x2, y2 = ring[i - 1]
+        if (y1 > y) != (y2 > y) and x < (x2 - x1) * (y - y1) / (y2 - y1) + x1:
+            inside = not inside
+    return inside
+
+
+def in_multipolygon(lng: float, lat: float, coords: list) -> bool:
+    return any(_in_ring(lng, lat, poly[0])
+               and not any(_in_ring(lng, lat, hole) for hole in poly[1:])
+               for poly in coords)
+
+
+def read_hub_json(area_dir: Path) -> dict:
+    path = area_dir / "hub.json"
+    return json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+
+
+def write_hub_json(area_dir: Path, data: dict) -> None:
+    (area_dir / "hub.json").write_text(
+        json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
+def cmd_boundaries(args) -> int:
+    """Fetch each neighborhood's official boundary into its `hub.json`."""
+    retrieved = args.retrieved or date.today().isoformat()
+    areas = args.area or sorted(BOUNDARY_SOURCE)
+    for area in areas:
+        if area not in BOUNDARY_SOURCE:
+            raise SystemExit(f"{area}: no official boundary named in BOUNDARY_SOURCE")
+        dataset, value = BOUNDARY_SOURCE[area]
+        label, field, geom = BOUNDARY_DATASETS[dataset]
+        rows = api_get(dataset, {"$select": geom, "$where": f"{field}='{value}'"})
+        if len(rows) != 1 or not rows[0].get(geom):
+            raise SystemExit(f"{area}: expected one {label} polygon named {value!r}, "
+                             f"got {len(rows)}")
+        g = rows[0][geom]
+        coords = simplify_multipolygon(
+            g["coordinates"] if g["type"] == "MultiPolygon" else [g["coordinates"]])
+        area_dir = ROOT / args.city / area
+        hub = read_hub_json(area_dir)
+        hub["boundary"] = {
+            "name": value,
+            "dataset": label,
+            "dataset_id": dataset,
+            "url": f"https://data.sf.gov/d/{dataset}",
+            "query": (f"https://data.sf.gov/resource/{dataset}.geojson?"
+                      + urllib.parse.urlencode({field: value})),
+            "retrieved": retrieved,
+            "coordinates": coords,
+        }
+        write_hub_json(area_dir, hub)
+        print(f"  {area}: {label} '{value}', "
+              f"{sum(len(r) for p in coords for r in p)} vertices")
+    return 0
+
+
+def _merc(lng: float, lat: float) -> tuple[float, float]:
+    """Web Mercator, as a fraction of the world's width (0–1 on both axes)."""
+    s = math.sin(math.radians(lat))
+    return (lng + 180) / 360, 0.5 - math.log((1 + s) / (1 - s)) / (4 * math.pi)
+
+
+def _unmerc(x: float, y: float) -> tuple[float, float]:
+    lat = math.degrees(math.atan(math.sinh(math.pi * (1 - 2 * y))))
+    return x * 360 - 180, lat
+
+
+def area_frame(points: list) -> dict:
+    """The centre, zoom and size of a static map that frames `points`.
+
+    Mapbox's static images are drawn on 512-pixel tiles, so at zoom z the
+    world is 512·2^z logical pixels wide; the SVG is projected on the same
+    terms, which is what lets the basemap sit exactly under it.
+    """
+    ms = [_merc(lng, lat) for lng, lat in points]
+    xs, ys = [m[0] for m in ms], [m[1] for m in ms]
+    x0, x1, y0, y1 = min(xs), max(xs), min(ys), max(ys)
+    dx, dy = max(x1 - x0, 1e-9), max(y1 - y0, 1e-9)
+    w = AREA_MAP_W
+    h = round(min(max(w * dy / dx, AREA_MAP_H[0]), AREA_MAP_H[1]) / 16) * 16
+    usable = 1 - 2 * AREA_MAP_PAD
+    zoom = math.log2(min(w * usable / (dx * 512), h * usable / (dy * 512)))
+    zoom = min(math.floor(zoom * 100) / 100, AREA_MAP_MAX_ZOOM)
+    lng, lat = _unmerc((x0 + x1) / 2, (y0 + y1) / 2)
+    lng, lat = round(lng, 6), round(lat, 6)
+    return {"lng": lng, "lat": lat, "zoom": zoom, "w": w, "h": h}
+
+
+def _projector(frame: dict):
+    cx, cy = _merc(frame["lng"], frame["lat"])
+    scale = 512 * 2 ** frame["zoom"]
+
+    def project(lng: float, lat: float) -> tuple[float, float]:
+        x, y = _merc(lng, lat)
+        return (frame["w"] / 2 + (x - cx) * scale, frame["h"] / 2 + (y - cy) * scale)
+    return project
+
+
+def _num(v: float) -> str:
+    return f"{v:.1f}".rstrip("0").rstrip(".")
+
+
+def _dots_path(points: list, project, frame: dict) -> str:
+    """Every point as a zero-length segment: a round cap draws it as a dot, so
+    a few thousand markers are one path, and a 1-unit grid folds together the
+    ones that would land on top of each other anyway."""
+    seen, out = set(), []
+    for lng, lat in points:
+        x, y = project(lng, lat)
+        key = (round(x), round(y))
+        if key in seen or not (0 <= x <= frame["w"] and 0 <= y <= frame["h"]):
+            continue
+        seen.add(key)
+        out.append(f"M{key[0]} {key[1]}h0")
+    return "".join(out)
+
+
+def _outline_path(coords: list, project) -> str:
+    parts = []
+    for poly in coords:
+        for ring in poly:
+            pts = [project(x, y) for x, y in ring]
+            parts.append("M" + "L".join(f"{_num(x)} {_num(y)}" for x, y in pts) + "Z")
+    return "".join(parts)
+
+
+@functools.lru_cache(maxsize=1)
+def overview_pages(city_slug: str) -> tuple:
+    """Every page with coordinates, read once for all the hubs: address pages
+    as (lng, lat, path, rec) and place pages as (lng, lat, path, None)."""
+    city_dir = ROOT / city_slug
+    out = []
+    for data_path in sorted(city_dir.glob("*/*/*/data.json")):
+        rec = json.loads(data_path.read_text(encoding="utf-8"))
+        c = rec.get("coordinates") or {}
+        if isinstance(c.get("lat"), (int, float)) and isinstance(c.get("lng"), (int, float)):
+            path = rec.get("path") or "/" + data_path.parent.relative_to(ROOT).as_posix() + "/"
+            out.append((c["lng"], c["lat"], path, rec))
+    for place_path in sorted(city_dir.glob("*/*/place.json")):
+        rec = json.loads(place_path.read_text(encoding="utf-8"))
+        c = rec.get("coordinates") or {}
+        if isinstance(c.get("lat"), (int, float)) and isinstance(c.get("lng"), (int, float)):
+            path = rec.get("path") or "/" + place_path.parent.relative_to(ROOT).as_posix() + "/"
+            out.append((c["lng"], c["lat"], path, None))
+    return tuple(out)
+
+
+def facade_media(rec: dict, label: str, cls: str = "media", indent: str = "",
+                 caption: bool = True) -> str:
+    """The facade image block for a page: Street View once a key is set."""
+    c = rec["coordinates"]
+    lat, lng = c["lat"], c["lng"]
+    return (f'{indent}<ktp-streetview location="{lat},{lng}" label="{esca(label)}">\n'
+            f'{indent}  <figure class="{cls}">\n'
+            f'{indent}    <div class="media-empty">\n'
+            f'{indent}      <span class="ic ic-pin"></span>\n'
+            f"{indent}      <span>{lat:.4f}, {'−' if lng < 0 else ''}{abs(lng):.4f}</span>\n"
+            f'{indent}    </div>\n'
+            f'{indent}  </figure>\n'
+            f'{indent}</ktp-streetview>')
+
+
+def photo_credit_html(photo: dict) -> str:
+    """The credit a photo's license asks for: title, author, license, source,
+    and that this copy was cropped. Pexels and Unsplash ask for none, and get
+    the same line anyway."""
+    title = re.sub(r"\.(jpe?g|png|tiff?)$", "", photo["title"], flags=re.I)
+    parts = [f'<a href="{esca(photo["source_url"])}">{esc(title)}</a>']
+    if photo.get("author"):
+        parts.append(f"by {esc(photo['author'])}")
+    lic = (f'<a href="{esca(photo["license_url"])}">{esc(photo["license"])}</a>'
+           if photo.get("license_url") else esc(photo["license"]))
+    via = f", via {esc(photo['source'])}" if photo.get("source") else ""
+    edit = f"; {esc(photo['modified'])}" if photo.get("modified") else ""
+    return f"Photo: {' '.join(parts)}, {lic}{via}{edit}."
+
+
+def showcase_entries(recs: list) -> list:
+    """The named buildings in a boundary: city landmarks first, by number,
+    then the rest oldest first."""
+    named = []
+    for lng, lat, path, rec in recs:
+        name = building_name(rec)
+        if not name:
+            continue
+        cl = rec.get("city_landmark") or {}
+        num = cl.get("number") if cl.get("name") else None
+        year = (rec.get("parcel") or {}).get("year_built")
+        year = int(year) if str(year or "").isdigit() and int(year) > 0 else None
+        named.append({"lng": lng, "lat": lat, "path": path, "rec": rec, "name": name,
+                      "landmark": num if isinstance(num, int) else (0 if cl.get("name") else None),
+                      "year": year})
+    named.sort(key=lambda e: (e["landmark"] is None, e["landmark"] or 0,
+                              e["year"] is None, e["year"] or 0, e["name"]))
+    return named
+
+
+def overview_html(area_dir: Path, hub: dict, heading: str) -> str:
+    city_slug = area_dir.parent.name
+    pages = overview_pages(city_slug)
+    boundary = hub.get("boundary")
+    prefix = f"/{city_slug}/{area_dir.name}/"
+    if boundary:
+        coords = boundary["coordinates"]
+        lo_x = min(p[0] for poly in coords for p in poly[0])
+        hi_x = max(p[0] for poly in coords for p in poly[0])
+        lo_y = min(p[1] for poly in coords for p in poly[0])
+        hi_y = max(p[1] for poly in coords for p in poly[0])
+        inside = [p for p in pages if lo_x <= p[0] <= hi_x and lo_y <= p[1] <= hi_y
+                  and in_multipolygon(p[0], p[1], coords)]
+        frame_pts = [(x, y) for poly in coords for x, y in poly[0]]
+    else:
+        inside = [p for p in pages if p[2].startswith(prefix)]
+        frame_pts = [(p[0], p[1]) for p in inside]
+    out = []
+
+    photo = hub.get("photo")
+    if photo and (area_dir / photo["file"]).exists():
+        out.append(
+            f'  <figure class="hub-photo">\n'
+            f'    <img src="{esca(photo["file"])}" width="{photo["width"]}" '
+            f'height="{photo["height"]}" alt="{esca(photo.get("alt") or photo["title"])}">\n'
+            f'    <figcaption class="photo-credit">{photo_credit_html(photo)}</figcaption>\n'
+            f'  </figure>')
+
+    addresses = [p for p in inside if p[3] is not None]
+    places = [p for p in inside if p[3] is None]
+    named = showcase_entries(addresses)
+    cards, rest = named[:SHOWCASE_CARDS], named[SHOWCASE_CARDS:]
+
+    if frame_pts:
+        frame = area_frame(frame_pts)
+        project = _projector(frame)
+        w, h = frame["w"], frame["h"]
+        svg = [f'<svg viewBox="0 0 {w} {h}" aria-hidden="true" focusable="false">']
+        if boundary:
+            outline = _outline_path(boundary["coordinates"], project)
+            svg.append(f'<path class="area-mask" fill-rule="evenodd" '
+                       f'd="M0 0H{w}V{h}H0Z{outline}"/>')
+            svg.append(f'<path class="area-shape" d="{outline}"/>')
+        for cls, group in (("area-dots", addresses), ("area-dots area-dots-place", places)):
+            d = _dots_path([(p[0], p[1]) for p in group], project, frame)
+            if d:
+                svg.append(f'<path class="{cls}" d="{d}"/>')
+        svg.append("</svg>")
+        marks = []
+        for i, e in enumerate(cards, 1):
+            x, y = project(e["lng"], e["lat"])
+            marks.append(
+                f'      <a class="area-mark" href="{esca(e["path"])}" '
+                f'style="--x:{x / w * 100:.2f};--y:{y / h * 100:.2f}" '
+                f'aria-label="{i}. {esca(e["name"])}">{i}</a>')
+        n_addr, n_place = len(addresses), len(places)
+        counts = [f'<span class="legend-item"><span class="swatch swatch-warm"></span>'
+                  f'{n_addr:,} documented {"building" if n_addr == 1 else "buildings"}</span>']
+        if n_place:
+            counts.append(f'<span class="legend-item"><span class="swatch swatch-cool"></span>'
+                          f'{n_place:,} {"park or public space" if n_place == 1 else "parks and public spaces"}</span>')
+        if boundary:
+            src = (f'Boundary: <a href="{esca(boundary["url"])}">{esc(boundary["dataset"])}</a> '
+                   f'({esc(boundary["name"])}), DataSF, retrieved {esc(boundary["retrieved"])}.')
+        else:
+            src = "No city dataset draws this neighborhood’s boundary; the dots are its documented pages."
+        label = f"Map of {heading}"
+        out.append(
+            f'  <div class="section-head"><span class="ic ic-pin"></span><h2>Map</h2></div>\n'
+            f'  <ktp-areamap center="{frame["lng"]},{frame["lat"]}" zoom="{frame["zoom"]}" '
+            f'size="{w}x{h}" label="{esca(label)}">\n'
+            f'    <figure class="area-map">\n'
+            f'      <div class="area-map-frame">\n'
+            f'      {"".join(svg)}\n'
+            + ("\n".join(marks) + "\n" if marks else "")
+            + f'      </div>\n'
+            f'      <figcaption><span class="legend">{"".join(counts)}</span>'
+            f'<span class="area-map-source">{src}</span></figcaption>\n'
+            f'    </figure>\n'
+            f'  </ktp-areamap>')
+
+    if named:
+        items = []
+        for i, e in enumerate(cards, 1):
+            rec = e["rec"]
+            bits = [page_title(rec)]
+            if e["landmark"]:
+                bits.append(f"City landmark #{e['landmark']}")
+            elif e["landmark"] == 0:
+                bits.append("City landmark")
+            items.append(
+                f'    <li>\n'
+                f'      <a href="{esca(e["path"])}">\n'
+                f'{facade_media(rec, e["name"], cls="media", indent="        ", caption=False)}\n'
+                f'        <span class="showcase-name"><span class="showcase-num">{i}</span>'
+                f'{esc(e["name"])}</span>\n'
+                f'        <span class="showcase-sub">{esc(" · ".join(bits))}</span>\n'
+                f'      </a>\n'
+                f'    </li>')
+        block = (f'  <div class="section-head"><span class="ic ic-layers"></span>'
+                 f'<h2>Named buildings and landmarks</h2></div>\n'
+                 f'  <ol class="showcase">\n' + "\n".join(items) + "\n  </ol>")
+        if rest:
+            links = ", ".join(f'<a href="{esca(e["path"])}">{esc(e["name"])}</a>' for e in rest)
+            block += f'\n  <p class="showcase-more">Also here: {links}.</p>'
+        out.append(block)
+
+    return (f"  {OVERVIEW_START}\n" + "\n\n".join(out) + f"\n  {OVERVIEW_END}") if out else ""
+
+
+def write_overview(area_dir: Path) -> bool:
+    """Put the overview region into a neighborhood hub, after its lead."""
+    html_path = area_dir / "index.html"
+    if not html_path.exists():
+        return False
+    text = html_path.read_text(encoding="utf-8")
+    m = re.search(r"<h1>(.*?)</h1>", text, re.S)
+    heading = html.unescape(m.group(1)) if m else area_dir.name
+    block = overview_html(area_dir, read_hub_json(area_dir), heading)
+    region = re.compile(rf"\n*[ \t]*{re.escape(OVERVIEW_START)}.*?{re.escape(OVERVIEW_END)}",
+                        re.S)
+    if region.search(text):
+        new = region.sub(lambda _: "\n\n" + block if block else "", text, count=1)
+    elif block:
+        for anchor in (r'<p class="lead">.*?</p>', r"<h1>.*?</h1>"):
+            new, n = re.subn(f"({anchor})", lambda m: m.group(1) + "\n\n" + block,
+                             text, count=1, flags=re.S)
+            if n:
+                break
+        else:
+            raise SystemExit(f"{html_path}: no lead or <h1> to put the overview after")
+    else:
+        return False
+    if new != text:
+        html_path.write_text(new, encoding="utf-8")
+    return True
+
+
+def cmd_overviews(args) -> int:
+    city_dir = ROOT / args.city
+    areas = args.area or sorted(d.name for d in city_dir.iterdir()
+                                if d.is_dir() and d.name != DISTRICTS_DIR
+                                and (d / "index.html").exists())
+    n = sum(1 for area in areas if write_overview(city_dir / area))
+    print(f"wrote the overview on {n} neighborhood hub(s)")
+    return 0
+
+
+# --------------------------------------------------------------------------
 # Historic-district hubs
 # --------------------------------------------------------------------------
 # The fourth page type, and the only aggregation on this site that isn't the
@@ -6579,6 +7135,23 @@ def main() -> int:
     common(p, neighborhood_required=False)
     p.add_argument("--roll-year", type=int, default=2025)
     p.set_defaults(fn=cmd_hubs)
+
+    p = sub.add_parser("boundaries",
+                       help="fetch each neighborhood's official boundary into its hub.json")
+    p.add_argument("--city", default="san-francisco")
+    p.add_argument("--area", action="append",
+                   help="limit to a neighborhood directory (repeatable)")
+    p.add_argument("--retrieved", default=None,
+                   help="retrieval date to record (default: today)")
+    p.set_defaults(fn=cmd_boundaries)
+
+    p = sub.add_parser("overviews",
+                       help="write the photo, boundary map and named buildings "
+                            "into the neighborhood hubs")
+    p.add_argument("--city", default="san-francisco")
+    p.add_argument("--area", action="append",
+                   help="limit to a neighborhood directory (repeatable)")
+    p.set_defaults(fn=cmd_overviews)
 
     p = sub.add_parser("places",
                        help="write place pages (parks, plazas, places in a park) "

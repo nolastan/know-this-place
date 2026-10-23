@@ -113,6 +113,8 @@ san-francisco/                        city
     index.md / index.html             both hand-authored and committed: the
                                       generator patches the street list into
                                       the page, it does not write the page
+    hub.json + assets/photo.jpg       the hub's photo credit and official
+                                      boundary, read by `overviews`
     castro-street/                    street  (official name, lowercased,
       index.md                         street type spelled out: "19th-street",
       4127/                            "collingwood-street")

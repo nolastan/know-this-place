@@ -10,7 +10,7 @@ the site, in Actions before a deploy and on a laptop before a look.
 It is the seven builders in the one order that works, and the order is the
 whole reason it exists:
 
-    districts → hubs → build_link_index → render → build_map_index
+    districts → hubs → overviews → build_link_index → render → build_map_index
               → build_events → build_sitemap → build_corpus_index
               → build_stats
 
@@ -83,6 +83,10 @@ def build() -> None:
     for area in neighborhoods():
         run(f"hubs — {area}", seed, "hubs", "--city", "san-francisco",
             "--area", area)
+    # Each hub's photo, boundary map and named buildings. One pass for every
+    # hub: the map of a boundary shows every page inside it, wherever that
+    # page is filed, so it reads the whole city once rather than per area.
+    run("neighborhood overviews", seed, "overviews", "--city", "san-francisco")
 
     # Before the render: an address page prints its neighbors, and this is
     # where they come from.

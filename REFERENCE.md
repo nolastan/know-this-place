@@ -414,6 +414,28 @@ by hand, in `index.md` and `index.html` both. Neither section uses the
 `<a>…</a><br><span class="hook">` pairing, which is what keeps `validate.py`'s
 `check_hub_sync` out of them — so the two files agreeing is on you.
 
+**A neighborhood hub opens with a generated overview** — its photo, a map
+of its official boundary, and its named buildings — written between the
+`<!-- overview … -->` comments after the lead by `seed_pages.py overviews`,
+which `build_site.py` runs after the hubs. Never edit inside those comments.
+Its inputs:
+
+- `hub.json` beside the hub's `index.md`: `photo` (the file under `assets/`,
+  its size, title, author, license and license URL, source page, retrieval
+  date, and what was changed — the credit line is built from these, so a
+  photo is never added without them) and `boundary` (the official polygon,
+  simplified, with its dataset and retrieval date). `seed_pages.py
+  boundaries` refetches the boundaries; which polygon each directory uses is
+  `BOUNDARY_SOURCE` — Analysis Neighborhoods where the directory is one, else
+  SF Find Neighborhoods by name, else (the East Cut) its community benefit
+  district. Corbett Heights is in no city dataset, so its map has no outline.
+- Every `data.json` and `place.json` in the city: the map draws a dot for
+  each page **inside the boundary, wherever it is filed**, and the named
+  buildings are the pages inside it with a `building.name` or a
+  `city_landmark` — city landmarks first by number, then oldest first; the
+  first twelve as numbered cards with their facade (`facade_media`), the rest
+  as a list.
+
 A street hub that has grown its own sections beyond the lead+list template (a
 "Sources" section, a "The street itself" write-up) is left untouched entirely
 by `seed_pages.py hubs` — the command reports it as skipped rather than

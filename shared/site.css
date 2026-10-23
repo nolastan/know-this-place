@@ -704,7 +704,7 @@ main > .panel + .panel { margin-top: 1.25rem; }
 /* ============================================================= enhancement layer
    Custom elements (see shared/site.js) are progressive-enhancement wrappers.
    They must render as blocks even before/without their script. */
-ktp-streetview, ktp-figure, ktp-map, ktp-copy { display: block; }
+ktp-streetview, ktp-figure, ktp-map, ktp-areamap, ktp-copy { display: block; }
 ktp-figure { position: relative; }
 
 /* chart tooltip */
@@ -744,6 +744,70 @@ ktp-figure { position: relative; }
   .media-lift { margin: 0; }
   .map-shell ktp-map { height: auto; aspect-ratio: 4 / 3; border-bottom: 1px solid var(--rule); }
 }
+
+/* ============================================================= neighborhood overview
+   The three blocks a neighborhood hub opens with (seed_pages.py overviews):
+   its photo, a map of its official boundary, and its named buildings. */
+.hub-photo { margin: 1.5rem 0 0; }
+.hub-photo img { display: block; width: 100%; height: auto; border-radius: var(--radius); }
+.photo-credit { margin-top: 0.4rem; font-family: var(--sans); font-size: 0.75rem; line-height: 1.45; color: var(--muted); }
+.photo-credit a { color: inherit; }
+
+/* The map is inline SVG — the boundary and a dot per documented page — so it
+   reads with no script; <ktp-areamap> slides a Mapbox basemap under it, drawn
+   for the same centre and zoom the SVG was projected at. Strokes don't scale
+   with the frame, so a dot is the same size on a phone as on a desktop. */
+.area-map { margin: 0; }
+.area-map-frame { position: relative; overflow: hidden; border: 1px solid var(--rule); border-radius: var(--radius); background: var(--panel); }
+.area-map-frame > img { position: absolute; inset: 0; width: 100%; height: 100%; }
+.area-map svg { position: relative; display: block; width: 100%; height: auto; }
+.area-map path { vector-effect: non-scaling-stroke; }
+.area-mask { fill: var(--paper); fill-opacity: 0; }
+.area-map[data-basemap] .area-mask { fill-opacity: 0.55; }
+.area-shape { fill: var(--warm-soft); fill-opacity: 0.45; stroke: var(--warm); stroke-width: 2px; stroke-linejoin: round; }
+.area-map[data-basemap] .area-shape { fill: none; }
+.area-dots { fill: none; stroke: var(--warm); stroke-width: 5px; stroke-linecap: round; opacity: 0.9; }
+.area-dots-place { stroke: var(--cool); stroke-width: 7px; }
+/* A phone's frame is a third the width; full-size dots would merge into one blot. */
+@media (max-width: 720px) {
+  .area-dots { stroke-width: 2.5px; }
+  .area-dots-place { stroke-width: 4px; }
+}
+/* A named building's marker, numbered as its card below is. Positioned in
+   percent of the frame (the --x/--y data hooks), so it stays on its building
+   at every width while keeping a readable size. */
+.area-mark {
+  position: absolute; z-index: 1;
+  left: calc(var(--x) * 1%); top: calc(var(--y) * 1%);
+  transform: translate(-50%, -50%);
+  display: grid; place-items: center;
+  min-width: 22px; height: 22px; padding: 0 4px;
+  border: 1.5px solid var(--paper); border-radius: 11px;
+  background: var(--ink); color: var(--paper);
+  font: 700 0.72rem/1 var(--sans); text-decoration: none;
+}
+.area-mark:hover, .area-mark:focus-visible { background: var(--accent); }
+.area-map figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.3rem 1rem; margin-top: 0.5rem; font-family: var(--sans); font-size: 0.78rem; color: var(--muted); }
+.area-map figcaption .legend { margin: 0; font-size: inherit; }
+.area-map-source a { color: inherit; }
+.swatch-warm { background: var(--warm); border-radius: 50%; }
+.swatch-cool { background: var(--cool); border-radius: 50%; }
+.area-map .map-credit { position: absolute; }
+
+.showcase { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(13.5rem, 40%), 1fr)); gap: 1.25rem 1rem; margin: 0; padding: 0; list-style: none; }
+.showcase a { display: block; color: inherit; text-decoration: none; }
+.showcase .media { margin: 0 0 0.5rem; }
+.showcase .media-empty { padding: 0.5rem; font-size: 0.8rem; }
+.showcase-name { display: flex; align-items: baseline; gap: 0.45rem; font-weight: 600; line-height: 1.3; }
+.showcase a:hover .showcase-name, .showcase a:focus-visible .showcase-name { color: var(--cool-hover); text-decoration: underline; }
+.showcase-num {
+  flex: 0 0 auto; display: inline-grid; place-items: center;
+  min-width: 1.35rem; height: 1.35rem; padding: 0 0.3rem; border-radius: 0.7rem;
+  background: var(--ink); color: var(--paper);
+  font: 700 0.72rem/1 var(--sans); transform: translateY(-0.1em);
+}
+.showcase-sub { display: block; margin-top: 0.15rem; font-family: var(--sans); font-size: 0.8rem; color: var(--muted); }
+.showcase-more { margin-top: 1.25rem; font-size: 0.95rem; }
 
 /* ============================================================= notes */
 .community-note { background: var(--note-bg); border-left: 3px solid var(--accent); padding: 0.75rem 1rem; margin: 1.5rem 0; font-size: 0.97rem; max-width: var(--measure); }
