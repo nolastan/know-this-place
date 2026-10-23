@@ -2606,8 +2606,10 @@ def survey_panel_html(rec: dict, indent: str) -> str:
     first's name. Both lose the fact.
 
     Spec rows, not prose: a status code, a rating, the earlier surveys that
-    looked at the building. Where a survey's own address or APN disagrees
-    with the city's, both are shown and neither is adjudicated.
+    looked at the building. Where a survey's own APN disagrees with the
+    city's, both are shown and neither is adjudicated. The address a survey
+    used is not a row: it is one of the building's addresses, and is listed
+    with them (see `surveyed_addresses`).
     """
     ctype = construction(rec)
     return "".join(one_survey_panel_html(s, indent, ctype) for s in surveys_of(rec))
@@ -2657,7 +2659,6 @@ def one_survey_panel_html(s: dict, indent: str, ctype: str = "") -> str:
              s.get("frame") if (s.get("frame") or "").lower() != ctype.lower() else None),
             ("ic-layers", "Integrity", s.get("physical_integrity")),
             ("ic-calendar", "Year built as surveyed", s.get("year_built_as_surveyed")),
-            ("hgi-location-03", "Address as surveyed", s.get("address_as_surveyed")),
             ("ic-pin", "Parcel as surveyed", s.get("apn_as_surveyed"))):
         if val:
             rows.append((icon, key, str(val)))
@@ -3235,6 +3236,121 @@ def numbers_in_range(rec: dict) -> bool:
             and (len(nums) <= 2 or all(b - a == 2 for a, b in zip(nums, nums[1:]))))
 
 
+SURVEY_TYPE_WORD = {**{k: v for k, v in PERMIT_TYPE_WORD.items()}, **STREET_TYPE_WORD,
+                    **{v.upper(): v for v in STREET_TYPE_WORD.values()}}
+SURVEY_ADDRESS = re.compile(r"^(\d+)[A-Za-z]?(?:\s*[-–]\s*(\d+)[A-Za-z]?)?(?:\s+(.+?))?\.?$")
+
+
+SPELLED_ORDINAL = {w: ordinal_word for ordinal_word, w in (
+    ("1ST", "FIRST"), ("2ND", "SECOND"), ("3RD", "THIRD"), ("4TH", "FOURTH"),
+    ("5TH", "FIFTH"), ("6TH", "SIXTH"), ("7TH", "SEVENTH"), ("8TH", "EIGHTH"),
+    ("9TH", "NINTH"), ("10TH", "TENTH"), ("11TH", "ELEVENTH"), ("12TH", "TWELFTH"),
+    ("13TH", "THIRTEENTH"), ("14TH", "FOURTEENTH"), ("15TH", "FIFTEENTH"),
+    ("16TH", "SIXTEENTH"), ("17TH", "SEVENTEENTH"), ("18TH", "EIGHTEENTH"),
+    ("19TH", "NINETEENTH"), ("20TH", "TWENTIETH"), ("21ST", "TWENTY-FIRST"),
+    ("22ND", "TWENTY-SECOND"), ("23RD", "TWENTY-THIRD"), ("24TH", "TWENTY-FOURTH"),
+    ("25TH", "TWENTY-FIFTH"), ("26TH", "TWENTY-SIXTH"))}
+
+
+def ordinal_of(n: str) -> str:
+    """"5" → "5TH", "22" → "22ND": EAS's spelling, for `street_display`."""
+    tens = int(n) % 100
+    suffix = "TH" if 10 <= tens <= 20 else {1: "ST", 2: "ND", 3: "RD"}.get(int(n) % 10, "TH")
+    return n + suffix
+
+
+def parse_survey_address(text: str) -> list:
+    """`(lo, hi, street key, street display)` for each address a survey wrote.
+
+    Surveys spell addresses their own way — "126-130 Laguna St", "615-29 Hayes
+    Street", "74 OTIS", "730 Polk Street/771 Ellis Street", "900 and 900–02
+    22nd Street" — so each is reduced to a number range and a street that can
+    be compared with the page's own. A part with no street ("900 and …") takes
+    the street of the part after it; one with no type ("425 Potrero") keys on
+    its name alone. Anything that is not a number and a street is dropped.
+    """
+    # "(form address 724–732 Innes Avenue)" is the survey's aside, and "1/2"
+    # is a half-address, not a second one.
+    text = re.sub(r"\([^)]*\)", "", text or "")
+    text = re.sub(r"(\d)\s+to\s+(\d)", r"\1-\2", text)
+    parts = [x.strip() for x in re.split(r"(?<!\d)/|/(?!\d)|;|\band\b|&", text) if x.strip()]
+    out, street = [], None
+    for part in reversed(parts):
+        m = SURVEY_ADDRESS.match(part)
+        if not m:
+            return []
+        lo, hi, rest = m.group(1), m.group(2), m.group(3)
+        # "615-29" is the survey's shorthand for 615–629.
+        if hi and len(hi) < len(lo):
+            hi = lo[:len(lo) - len(hi)] + hi
+        # "3157 - 17th Street" spaces the dash it leaves hanging off the number.
+        rest = re.sub(r"^[-–]\s*", "", rest or "")
+        if "," in rest or re.match(r"\d+/\d+", rest):
+            return []
+        if rest:
+            tokens = rest.rstrip(".").upper().split()
+            stype = (SURVEY_TYPE_WORD.get(tokens[-1].rstrip("."))
+                     if len(tokens) > 1 else None)
+            name = tokens[:-1] if stype else tokens
+            # "Geary Blvd. Boulevard" says its type twice.
+            if stype and len(name) > 1 and SURVEY_TYPE_WORD.get(name[-1].rstrip(".")) == stype:
+                name = name[:-1]
+            # "194-198 5 Street" leaves the ordinal's suffix off.
+            name = [ordinal_of(t) if t.isdigit() else t for t in name]
+            # "Seventeenth Street" and the parcel's "17TH ST" are one street.
+            key = " ".join(SPELLED_ORDINAL.get(t, t) for t in name)
+            key = " ".join(street_display(key, "").lower().split())
+            street = (key, stype, street_display(" ".join(name), stype or ""))
+        if not street:
+            return []
+        out.append((int(lo), int(hi or lo), *street))
+    return out[::-1]
+
+
+def surveyed_addresses(rec: dict) -> list:
+    """The addresses a survey filed the building under that the page doesn't
+    already list, written the way the page writes its own.
+
+    "Address as surveyed" was a row in each survey's panel, which made which
+    address the survey used a fact about the survey. It is a fact about the
+    building — one more address it has been known by — so it joins the
+    Addresses list, and only where the list doesn't already hold it: "1064
+    Stockton Street" on 1060–1064 Stockton Street, or "1200 Larkin Street"
+    beside the parcel's own alias, says nothing new.
+    """
+    known = []
+    for addr in [page_title(rec), *(alias_display(x) for x in rec.get("also_addressed") or [])]:
+        known += parse_survey_address(addr)
+    own = parse_survey_address(page_title(rec))
+    nums = {int(n) for n in rec.get("street_numbers_on_parcel") or [] if str(n).strip().isdigit()}
+    out = []
+    for s in surveys_of(rec):
+        for lo, hi, key, stype, display in parse_survey_address(s.get("address_as_surveyed") or ""):
+            # Listed already when both ends of the survey's range are numbers
+            # the page has on that street. The street is matched by name alone:
+            # a survey that wrote "Kearny Avenue" for the parcel's 1031 Kearny
+            # Street means the same door.
+            def known_at(n):
+                return (any(k[2] == key and k[0] <= n <= k[1] for k in known)
+                        or (own and own[0][2] == key and n in nums))
+            if known_at(lo) and known_at(hi):
+                continue
+            # A survey that names no street type is on the page's own street
+            # when the name matches it, and is written with that street's type.
+            if not stype:
+                match = next((k for k in known if k[2] == key and k[3]), None)
+                if match:
+                    display = match[4]
+            out.append((lo, hi, key, display))
+    # "224-230 and 232-238 Waller St" beside another survey's "224-238": the
+    # wider range already says the narrower one.
+    out = [a for a in out if not any(
+        b != a and b[2] == a[2] and b[0] <= a[0] and a[1] <= b[1] for b in out)]
+    return list(dict.fromkeys(
+        f"{lo}–{hi} {display}" if hi != lo else f"{lo} {display}"
+        for lo, hi, _, display in out))
+
+
 def addresses_panel_html(rec: dict, indent: str) -> str:
     """Every address the parcel answers to, written out whole, one per line.
 
@@ -3252,11 +3368,12 @@ def addresses_panel_html(rec: dict, indent: str) -> str:
     lines = ([f"{n} {street}" for n in nums] if nums and not numbers_in_range(rec)
              else [])
     also = [alias_display(x) for x in rec.get("also_addressed") or []]
-    if not lines and not also:
+    surveyed = surveyed_addresses(rec)
+    if not lines and not also and not surveyed:
         return ""
     if not lines:
         lines = [title]
-    lines = list(dict.fromkeys(lines + also))
+    lines = list(dict.fromkeys(lines + also + surveyed))
     items = "".join(f'{indent}    <li>{esc(x)}</li>\n' for x in lines)
     return (f'{indent}<section class="panel panel-addresses">\n'
             f'{indent}  <h3>Addresses</h3>\n'
