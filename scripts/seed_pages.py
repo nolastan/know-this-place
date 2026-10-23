@@ -5978,9 +5978,9 @@ def overview_html(area_dir: Path, hub: dict, heading: str) -> str:
             items.append(
                 f'    <li>\n'
                 f'      <a href="{esca(e["path"])}">\n'
+                f'        <span class="showcase-num">{i}</span>\n'
                 f'{facade_media(rec, e["name"], cls="media", indent="        ", caption=False)}\n'
-                f'        <span class="showcase-name"><span class="showcase-num">{i}</span>'
-                f'{esc(e["name"])}</span>\n'
+                f'        <span class="showcase-name">{esc(e["name"])}</span>\n'
                 f'        <span class="showcase-sub">{esc(" · ".join(bits))}</span>\n'
                 f'      </a>\n'
                 f'    </li>')
