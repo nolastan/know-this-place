@@ -208,7 +208,7 @@ def render(fetched: str, events: list, names: dict) -> str:
 <header class="site-header">
   <a class="wordmark" href="/">Know This Place</a>
   <nav class="breadcrumb" aria-label="Breadcrumb">
-    <a href="/">Home</a>
+    <a href="/">Home</a><span class="crumb-sep" aria-hidden="true">›</span>
     <span aria-current="page">Upcoming events</span>
   </nav>
 </header>

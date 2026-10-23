@@ -388,7 +388,7 @@ def render(s):
 <header class="site-header">
   <a class="wordmark" href="/">Know This Place</a>
   <nav class="breadcrumb" aria-label="Breadcrumb">
-    <a href="/">Home</a>
+    <a href="/">Home</a><span class="crumb-sep" aria-hidden="true">›</span>
     <span aria-current="page">The state of the site</span>
   </nav>
 </header>
