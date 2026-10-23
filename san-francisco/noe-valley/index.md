@@ -22,6 +22,7 @@ that study area, as an example of the Second Bay Tradition.
 - [Cesar Chavez Street](cesar-chavez-street/) — 1 building, built 1966.
 - [Church Street](church-street/) — 1 building, built 1914.
 - [Clipper Street](clipper-street/) — 3 buildings, built 1883–1916.
+- [Clipper Terrace](clipper-terrace/) — 1 building, built 1996.
 - [Day Street](day-street/) — 1 building, built 1938.
 - [Diamond Street](diamond-street/) — 2 buildings, built 1893–1900; 1 in the Diamond & Elizabeth Streets Historic District.
 - [Douglass Street](douglass-street/) — 1 building, built 1900.

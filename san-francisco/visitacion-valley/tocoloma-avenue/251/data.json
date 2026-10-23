@@ -1,0 +1,144 @@
+{
+  "address": "251 Tocoloma Avenue, San Francisco, CA 94134",
+  "path": "/san-francisco/visitacion-valley/tocoloma-avenue/251/",
+  "apn": "5072037",
+  "block": "5072",
+  "lot": "037",
+  "eas_baseid": "374229",
+  "coordinates": {
+    "lat": 37.712031,
+    "lng": -122.39768
+  },
+  "parcel": {
+    "year_built": 1936,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3100,
+    "building_area_sqft": 1325,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Little Hollywood",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 0251 TOCOLOMA            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 621031,
+    "assessed_improvement_value": 414016,
+    "last_sale_date": "2004-04-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1936",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Little Hollywood Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1928–1931",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202312041855",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-12-04",
+      "status_date": "2023-12-06",
+      "estimated_cost": 16900,
+      "revised_cost": 16900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9415990",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1994-09-30",
+      "status_date": "1995-07-07",
+      "estimated_cost": 1800,
+      "description": "addition of deck-first floor rear bedroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9413941",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-08-30",
+      "status_date": "1994-12-27",
+      "estimated_cost": 10000,
+      "description": "relocate bathroom/general update/kitchen remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9410007",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-06-22",
+      "status_date": "1994-10-14",
+      "estimated_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TOCOLOMA&street_type=AVE&address_number=251",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5072037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5072&lot=037",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5072037",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.39767973243126%2037.71203051392612)%27)",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1994-11-17",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 17 November 1994",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/40minutesofsanfran1994san/page/n207/mode/1up",
+      "retrieved": "2026-10-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1994-11-17",
+      "kind": "planning decision",
+      "description": "With no opposition filed, the City Planning Commission approved, 5-0, a new deck at the rear of the building's second floor.",
+      "source": "sf-planning-commission-minutes-1994-11-17"
+    }
+  ]
+}

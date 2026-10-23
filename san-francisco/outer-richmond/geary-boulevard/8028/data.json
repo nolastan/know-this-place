@@ -1,0 +1,101 @@
+{
+  "address": "8028 Geary Boulevard, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/geary-boulevard/8028/",
+  "apn": "1491003",
+  "block": "1491",
+  "lot": "003",
+  "eas_baseid": "459594",
+  "coordinates": {
+    "lat": 37.779401,
+    "lng": -122.505613
+  },
+  "parcel": {
+    "year_built": 1997,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 1632,
+    "building_area_sqft": 1730,
+    "basement_area_sqft": 615,
+    "lot_depth_ft": 68,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Outer Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 8028 GEARY               BL0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1092420,
+    "assessed_improvement_value": 468180,
+    "last_sale_date": "2022-12-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1997",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200708018435",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-08-01",
+      "status_date": "2007-12-12",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "remove damage deck surface and replace/repair any dry rot, water proof. surface replace sliding door water proof. tile deck area 25'x40\". repair is less than 50%",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GEARY&street_type=BLVD&address_number=8028",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1491003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1491&lot=003",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1491003",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1994-04-21",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 21 April 1994",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/40minutesofsanfran1994san/page/n96/mode/1up",
+      "retrieved": "2026-10-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1994-04-21",
+      "kind": "planning decision",
+      "description": "The City Planning Commission granted conditional-use authorization, 6-0, to divide the lot into two new lots each less than 25 feet wide (Motion 13672).",
+      "source": "sf-planning-commission-minutes-1994-04-21"
+    }
+  ]
+}

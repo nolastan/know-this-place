@@ -6,12 +6,14 @@
 >
 > - **Kind:** meeting minutes (scanned volumes) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 33 of 52 volumes read (July 1968 – December 1980): 9,714
->   pages, 3,589 findings, 1,716 resolved, 1,582 published. 19 volumes
->   remain — 1994–2005. July–December 1975 is in no
+> - **Coverage:** 34 of 52 volumes read (July 1968 – December 1980, and
+>   1994): 9,913 pages, 3,788 findings, 1,869 resolved, 1,735 published.
+>   18 volumes remain — 1995–2005. July–December 1975 is in no
 >   volume, nor is the regular meeting of 16 March 1978; volume 37
 >   holds only 17 of June – November 1978's meetings, volume 38 only
->   34 of 1979's, and volume 39 has no record of 7 February or 14 August 1980.
+>   34 of 1979's, volume 39 has no record of 7 February or 14 August 1980,
+>   and volume 40 holds no meeting of 5–26 May, June, July, 10 November or
+>   December 1994.
 > - **Local corpus:** `research/corpora/sf-planning-commission-minutes/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -51,7 +53,8 @@
 | 37 | June – November 1978 (`volume` "June-Nov 1978") | **read in full** 2026-10-19; it holds only 17 meetings — no regular meeting of June, and none of 6, 13 and 27 July, 31 August, 21 and 28 September, 12, 19 and 26 October, or 2 and 30 November |
 | 38 | 1979 whole (`volume` "1979") | **read in full** 2026-10-20; it holds 34 regular meetings, 4 January – 20 December — none of 22 and 29 March, 5 and 19 April, 10 and 31 May, 12 and 19 July, 20 and 27 September, 4 and 18 October, 1, 15 and 29 November or 6 December |
 | 39 | 1980 whole (`volume` "1980") | **read in full** 2026-10-22; 49 meetings, 3 January – 18 December, each printed as a summary and then as minutes, one or the other missing for many; no record of 7 February or 14 August |
-| 40–58 | 1994–2005 | unread |
+| 40 | 1994 (`volume` "1994") | **read in full** 2026-10-23; 30 meetings, 6 January – 17 November, action minutes only; none of 5, 19 and 26 May, June, July, 10 November or December, and 31 March, 7 April and 15 September cancelled |
+| 41–58 | 1995–2005 | unread |
 | — | 1981–1993 | in no volume |
 | — | before July 1968 | not in this collection. The Commission dates from 1942 |
 
@@ -93,6 +96,29 @@
     a number alone is ambiguous — but see the cautions: on its own it rarely
     places a parcel.
 - **Cautions:**
+  - **From 1994 the minutes are action minutes**, and the facts change with
+    them. No staff report, so far fewer statements of what stood on a
+    property (35 of 199 findings in 1994, most from the project description
+    in an environmental appeal: "would demolish a vacant warehouse"); every
+    item prints the assessor's block and lot, the action and a motion or
+    resolution number, which make the best quotes. The "Tier III" calendar
+    puts rear decks, additions and garage doors on single houses before the
+    Commission with no opposition — a decision each, on a page each.
+  - **In 1994 the action shares a line with the speakers.** "(Con): …,
+    neighbor ACTION: Approved as drafted VOTE: +6 -0 RESOLUTION No. 13621" —
+    a pre-filter that drops speaker lines to save reading drops the
+    decision too. It cost a re-check of 25 pages on the 1994 run; read the
+    pages whole.
+  - **"ITEMS TO BE CONTINUED … ACTION: Approved" approves the continuance**,
+    not the project; the decision is wherever the item is next called. A
+    "motion of intent" is not a decision either; the final motion follows a
+    week or more later.
+  - **The vote tail names people.** "VOTE: +5 -1 NOES: Boomer",
+    "Additional absence: Commissioners …", "EXCUSED: Commissioner …" follow
+    the vote on the same line; end the quote at the vote or quote the motion
+    number alone.
+  - **Some 1994 meetings are bound twice, final and draft** (28 April);
+    take the final, adopted text and cite its pages.
   - **100 Larkin Street is the Commission's own meeting room**, printed in
     every meeting's opening paragraph, and it is never a case. The same
     advertiser-address trap the trade journals have.
@@ -394,14 +420,34 @@
   `minutes-1979.json`.
   volume 39, the 49 meetings of 1980 the scan holds, into
   `minutes-1980.json`.
-  **Next: volumes 40–58 (1994–2005)** — sample one before sizing a run.
-  Size by text pages, not by the span label: volume 38 was a whole year but
-  only 309 text pages (760,000 characters), one nightly run for a single
-  reader; a half-year volume of 519 to 572 text pages also fits one run;
-  the 1994–2005 volumes are a
-  different kind of document (by then the Commission's own case reports are
-  online and indexed) and are worth sampling before a run is sized on them.
-- **Verified:** 2026-10-06 (volumes 6–11, July 1968 – December 1969: 957 OCR
+  volume 40, the 30 meetings of 1994 the scan holds, into
+  `minutes-1994.json`.
+  **Next: volumes 41–58 (1995–2005).** Volume 40 settled the question the
+  last note left open: 1994 is the same Commission in a different document —
+  action minutes, no staff report — and it is still worth reading (199
+  findings, 153 on pages). Size by text pages: volume 40 was 199 text pages
+  (486,000 characters) and one nightly run for a single reader with time to
+  spare; a later volume of up to about 400 text pages should also fit.
+- **Verified:** **2026-10-23** (volume 40, 1994: 199 OCR pages with text
+  out of 220 viewer pages (222 scanned leaves), read in one session by a
+  single reader with no sub-agents; 30 meetings, 6 January to 17 November.
+  199 findings — 161 decisions, 35 statements of what stood on or occupied
+  a property, 2 landmark actions, 1 dated past fact. 153 resolved by the EAS
+  join: 86 on the parcel the printed block and lot name, 7 on a lot
+  re-numbered since in the same block, none on another block, and 60 on
+  items that print no lot (the Tier III calendar rarely does). 46 unresolved: 26
+  condominiums today (#446), 8 at numbers EAS does not hold, 7 ranges now
+  split across parcels, 4 with no street number (the Muni block at San
+  Francisco General twice, Pier 7½, an open-space strip on 8th Avenue), and
+  338 Brazil, set back by hand because the point join landed two parcels
+  away from the record's lot. 153 published on 138 pages, 96 of them seeded;
+  none declined; 2 conflicts stated — the Hanson House's landmark number (197
+  in the minutes, 196 on its designation) and the State Building Annex's
+  year (1959 here and on the roll, 1957 in the State's documents). What the
+  pass learned: the 1994 format puts the action on the speakers' line, so
+  read pages whole rather than filtering lines out; and "Items to be
+  continued — Approved" is a continuance.)
+  2026-10-06 (volumes 6–11, July 1968 – December 1969: 957 OCR
   pages with text out of 1,856 scanned leaves, read by six readers from one
   spec. 286 cases heard, 180 of them about a property the minutes locate; 372
   findings — 198 statements of what stood on a property, 174 decisions. 163
@@ -735,6 +781,12 @@ instead, and change it here when a run learns something a reader needs.
   business trading under a person's own name goes with the person. Keep
   companies, institutions, churches, schools, hospitals, unions, government
   bodies and named buildings.
+- **From 1994, an item under "ITEMS TO BE CONTINUED" with "ACTION:
+  Approved" approved the continuance**, and a "motion of intent" is not the
+  decision; take the final motion. The action often shares a line with the
+  speaker list, so never filter speaker lines out. End a quote at the vote
+  or the motion number, before "NOES:", "ABSENT:", "EXCUSED:" or
+  "Additional absence:", which name commissioners.
 - Skip 100 Larkin Street and any other meeting venue, citywide plans, text
   amendments, district rezonings, and street vacations — unless the passage
   pins a fact to one property.

@@ -1,0 +1,118 @@
+{
+  "address": "2187 Quesada Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/quesada-avenue/2187/",
+  "apn": "5334028",
+  "block": "5334",
+  "lot": "028",
+  "eas_baseid": "375954",
+  "coordinates": {
+    "lat": 37.738298,
+    "lng": -122.400723
+  },
+  "parcel": {
+    "year_built": 1887,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2760,
+    "basement_area_sqft": 1350,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Silver Terrace",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 2187 QUESADA             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 413753,
+    "assessed_improvement_value": 177318,
+    "last_sale_date": "2007-02-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1887",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9721202S",
+      "type": "new construction wood frame",
+      "status": "cancelled",
+      "filed": "1997-10-22",
+      "status_date": "2000-10-13",
+      "estimated_cost": 600000,
+      "description": "erect a two story church",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9310729",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "1993-06-24",
+      "status_date": "1994-04-15",
+      "description": "demolish single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9310730S",
+      "type": "new construction wood frame",
+      "status": "cancelled",
+      "filed": "1993-06-24",
+      "status_date": "1995-05-08",
+      "estimated_cost": 600000,
+      "description": "erect a two story single family dwelling/church",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=QUESADA&street_type=AVE&address_number=2187",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5334028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5334&lot=028",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5334028",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1994-11-03",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 3 November 1994",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/40minutesofsanfran1994san/page/n203/mode/1up",
+      "retrieved": "2026-10-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1994-11-03",
+      "kind": "occupancy",
+      "description": "The property of the First Samoan Full Gospel Pentecostal Church held a dwelling unit and unapproved outbuildings, proposed for replacement by a two-storey church with a 198-seat sanctuary.",
+      "source": "sf-planning-commission-minutes-1994-11-03"
+    }
+  ]
+}

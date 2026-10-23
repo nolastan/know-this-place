@@ -1,0 +1,132 @@
+{
+  "address": "1845 44th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/44th-avenue/1845/",
+  "apn": "2081001H",
+  "block": "2081",
+  "lot": "001H",
+  "eas_baseid": "328166",
+  "coordinates": {
+    "lat": 37.752186,
+    "lng": -122.50353
+  },
+  "parcel": {
+    "year_built": 1941,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 1100,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1845 44TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 249177,
+    "assessed_improvement_value": 179401,
+    "last_sale_date": "1995-09-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1941",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202506269505",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-06-26",
+      "status_date": "2025-06-30",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "remove modified bitumen roof & install modified bitumen roof. hot works. remove composition shingle roof & install new composition shingle roof.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9717686",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-09-11",
+      "status_date": "1998-01-11",
+      "estimated_cost": 2450,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9319896",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1993-11-17",
+      "status_date": "1995-12-11",
+      "estimated_cost": 50000,
+      "revised_cost": 98000,
+      "description": "horizontal",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8810535",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-07-27",
+      "status_date": "1988-08-09",
+      "estimated_cost": 800,
+      "revised_cost": 0,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=44TH&street_type=AVE&address_number=1845",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2081001H&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2081&lot=001H",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2081001H",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1994-03-10",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 10 March 1994",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/40minutesofsanfran1994san/page/n68/mode/1up",
+      "retrieved": "2026-10-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1994-03-10",
+      "kind": "planning decision",
+      "description": "On discretionary review the City Planning Commission approved, 5-0 and as modified to set the third floor back, a three-storey rear addition.",
+      "source": "sf-planning-commission-minutes-1994-03-10"
+    }
+  ]
+}

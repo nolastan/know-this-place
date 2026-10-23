@@ -2827,6 +2827,16 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   *Before trusting a text-page filter, list the pages it drops and read a
   handful; a short page is often the end of something, not nothing.*
   ([sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))
+- **A line filter drops whatever shares the line.** Reading volume 40 (1994)
+  of the Planning Commission minutes with the speaker lists grepped out
+  (`^SPEAKERS`, `^(Pro`, `^(Con`) to save context, 25 pages in, the OCR had
+  run "(Con): …, neighbor ACTION: Approved as drafted VOTE: +6 -0
+  RESOLUTION No. 13621" onto one line, so the filter had removed the
+  decisions it was meant to keep in view; one item's outcome was missing
+  outright. *Strip only whole boilerplate paragraphs that never carry a fact
+  (notice of appeals, accessibility policy), and before relying on any line
+  filter grep what it drops for the words you are reading for.*
+  ([sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))
 - **A record with a block and lot and no street number is unresolved by the
   tool and placeable by hand.** `resolve_eas.py` reads
   `assessor_block_as_recorded` only to choose among parcels an address already

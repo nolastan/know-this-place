@@ -1,0 +1,139 @@
+{
+  "address": "1495 42nd Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/42nd-avenue/1495/",
+  "apn": "1811017",
+  "block": "1811",
+  "lot": "017",
+  "eas_baseid": "318669",
+  "coordinates": {
+    "lat": 37.758988,
+    "lng": -122.501703
+  },
+  "parcel": {
+    "year_built": 1948,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 3250,
+    "building_area_sqft": 2030,
+    "basement_area_sqft": 405,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1495 42ND                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1085538,
+    "assessed_improvement_value": 465230,
+    "last_sale_date": "2016-04-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1948",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202012301903",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-12-30",
+      "status_date": "2021-04-20",
+      "estimated_cost": 61220,
+      "revised_cost": 61220,
+      "description": "replacing 24 like for like retrofit windows. 20 windows street facing and 4 none street visible with wood windows material. no stud removal. same rough openings. u factor < .30",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9616896",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-09-09",
+      "status_date": "1997-08-12",
+      "estimated_cost": 9425,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9500128",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-01-04",
+      "status_date": "1995-01-17",
+      "estimated_cost": 1500,
+      "description": "termite repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9202120",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1992-02-10",
+      "status_date": "1993-05-05",
+      "estimated_cost": 100,
+      "description": "change of use",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9010064",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-05-23",
+      "status_date": "1990-09-26",
+      "estimated_cost": 1745,
+      "description": "remove plaster & flooring, repair damage & vent, replace rm",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=42ND&street_type=AVE&address_number=1495",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1811017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1811&lot=017",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1811017",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1994-05-12",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 12 May 1994",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/40minutesofsanfran1994san/page/n121/mode/1up",
+      "retrieved": "2026-10-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1994-05-12",
+      "kind": "planning decision",
+      "description": "The City Planning Commission refused, 7-0, conditional-use authorization for a worship hall in the lot's rear yard (Motion 13687).",
+      "source": "sf-planning-commission-minutes-1994-05-12"
+    }
+  ]
+}

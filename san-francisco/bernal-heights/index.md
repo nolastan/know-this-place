@@ -7,6 +7,7 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [Alabama Street](alabama-street/) — 1 building, built 1998.
 - [Anderson Street](anderson-street/) — 1 building, built 1925.
 - [Andover Street](andover-street/) — 1 building, built 1907.
+- [Bonview Street](bonview-street/) — 1 building, built 1958.
 - [Bradford Street](bradford-street/) — 1 building, built 1912.
 - [Cesar Chavez Street](cesar-chavez-street/) — 1 building, built 1991.
 - [Coleridge Street](coleridge-street/) — 1 building, built 1900.
@@ -15,6 +16,7 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [Costa Street](costa-street/) — 1 building, built 1906.
 - [Crescent Avenue](crescent-avenue/) — 1 building, built 1900.
 - [Ellsworth Street](ellsworth-street/) — 1 building, built 1956.
+- [Faith Street](faith-street/) — 1 building, built 1998.
 - [Franconia Street](franconia-street/) — 2 buildings, built 1964–1965.
 - [Genebern Way](genebern-way/) — 1 building, built 1925.
 - [Gladys Street](gladys-street/) — 1 building, built 1907.

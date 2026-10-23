@@ -1,0 +1,99 @@
+{
+  "address": "736 Brazil Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/mission/brazil-avenue/736/",
+  "apn": "6076047",
+  "block": "6076",
+  "lot": "047",
+  "eas_baseid": "390762",
+  "coordinates": {
+    "lat": 37.721593,
+    "lng": -122.428756
+  },
+  "parcel": {
+    "year_built": 1939,
+    "units": 1,
+    "stories": 1,
+    "rooms": 1,
+    "bathrooms": 1,
+    "lot_area_sqft": 1750,
+    "building_area_sqft": 1375,
+    "lot_depth_ft": 70,
+    "use": "Commercial Misc",
+    "property_class": "Churches,Convents,Rectories",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Excelsior",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0000 0736 BRAZIL              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 540031,
+    "assessed_improvement_value": 246686,
+    "last_sale_date": "1999-06-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1939",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9706016S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1997-04-02",
+      "status_date": "1999-07-16",
+      "estimated_cost": 80000,
+      "revised_cost": 110000,
+      "description": "vertical addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRAZIL&street_type=AVE&address_number=736",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6076047&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6076&lot=047",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6076047",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1994-04-21",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 21 April 1994",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/40minutesofsanfran1994san/page/n96/mode/1up",
+      "retrieved": "2026-10-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1994-04-21",
+      "kind": "planning decision",
+      "description": "The City Planning Commission refused, 7-0, to authorize the expansion of the religious institution here (Motion 13673).",
+      "source": "sf-planning-commission-minutes-1994-04-21"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "address": "49 Tingley Street, San Francisco, CA 94112",
+  "path": "/san-francisco/mission/tingley-street/49/",
+  "apn": "6799027",
+  "block": "6799",
+  "lot": "027",
+  "eas_baseid": "407992",
+  "coordinates": {
+    "lat": 37.728753,
+    "lng": -122.433358
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 960,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Mission Terrace",
+    "analysis_neighborhood": "Outer Mission",
+    "property_location_raw": "0000 0049 TINGLEY             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 313473,
+    "assessed_improvement_value": 125340
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200404050405",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-04-05",
+      "status_date": "2004-04-05",
+      "estimated_cost": 8600,
+      "revised_cost": 8600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9701258",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-01-22",
+      "status_date": "2002-03-18",
+      "estimated_cost": 1500,
+      "description": "9x penalty fee for wet bar sink,revise pa#9320609/inspector",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9518630",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-11-03",
+      "status_date": "1996-01-19",
+      "estimated_cost": 5500,
+      "description": "remove (e) wood stairs. repl w/concrete masonry stairs.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9511757",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-07-27",
+      "status_date": "1995-11-21",
+      "estimated_cost": 1500,
+      "description": "revision to 9320609,instll wet bar sink & counter on bedrm",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9505977",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1995-04-25",
+      "status_date": "1995-10-05",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to #9320609 to change flat roof to peak roof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9320609S",
+      "type": "additions alterations or repairs",
+      "status": "disapproved",
+      "filed": "1993-11-22",
+      "status_date": "1999-12-28",
+      "estimated_cost": 10000,
+      "revised_cost": 33481,
+      "description": "horizontal",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TINGLEY&street_type=ST&address_number=49",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6799027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6799&lot=027",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6799027",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1994-01-27",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 27 January 1994",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/40minutesofsanfran1994san/page/n26/mode/1up",
+      "retrieved": "2026-10-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1994-01-27",
+      "kind": "planning decision",
+      "description": "With no opposition filed, the City Planning Commission approved, 7-0, a two-storey, 6-foot-deep rear addition to the single-family house.",
+      "source": "sf-planning-commission-minutes-1994-01-27"
+    }
+  ]
+}

@@ -9,6 +9,7 @@ San Francisco's south-eastern quarter, settled from the 1860s as the industrial 
 - [Armstrong Avenue](armstrong-avenue/) — 1 building, built 1925.
 - [Bay Shore Boulevard](bay-shore-boulevard/) — 1 building, built 1927.
 - [Bishop Street](bishop-street/) — 1 building, built 1922.
+- [Bridgeview Drive](bridgeview-drive/) — 1 building, built 1942.
 - [Brussels Street](brussels-street/) — 1 building, built 1900.
 - [Carroll Avenue](carroll-avenue/) — 1 building, built 2016.
 - [Cashmere Street](cashmere-street/) — 1 building.
@@ -18,6 +19,7 @@ San Francisco's south-eastern quarter, settled from the 1860s as the industrial 
 - [Dorman Avenue](dorman-avenue/) — 1 building, built 1947.
 - [Earl Street](earl-street/) — 1 building, built 1947.
 - [Egbert Avenue](egbert-avenue/) — 2 buildings, built 1900–1910.
+- [Elmira Street](elmira-street/) — 1 building, built 1950.
 - [Evans Avenue](evans-avenue/) — 1 building, built 1978.
 - [Fitzgerald Avenue](fitzgerald-avenue/) — 1 building, built 1962.
 - [Gilman Avenue](gilman-avenue/) — 1 building, built 1925.
@@ -66,6 +68,7 @@ San Francisco's south-eastern quarter, settled from the 1860s as the industrial 
 - [Topeka Avenue](topeka-avenue/) — 1 building, built 1946.
 - [Underwood Avenue](underwood-avenue/) — 5 buildings, built 1900–1939.
 - [Venus Street](venus-street/) — 1 building, built 1941.
+- [Wallace Avenue](wallace-avenue/) — 1 building, built 1958.
 - [Whitney Young Circle](whitney-young-circle/) — 1 building.
 - [Yosemite Avenue](yosemite-avenue/) — 1 building, built 1915.
 

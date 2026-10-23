@@ -27,6 +27,7 @@ Diamond and Chenery and evaluated eight of them in detail.
 - [Digby Street](digby-street/) — 1 building.
 - [Elk Street](elk-street/) — 1 building.
 - [Everson Street](everson-street/) — 1 building, built 1963.
+- [Fairmount Street](fairmount-street/) — 1 building, built 1907.
 - [Gold Mine Drive](gold-mine-drive/) — 1 building, built 1963.
 - [Joost Avenue](joost-avenue/) — 2 buildings, built 1910–1926.
 - [Laidley Street](laidley-street/) — 1 building, built 1900.
