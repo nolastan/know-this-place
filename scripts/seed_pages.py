@@ -2052,12 +2052,35 @@ def built_item(rec: dict, indent: str) -> list:
         # a cleared lot — the rail mutes those items for the same reason.
         and not PILL.get(p.get("status", ""), ("", "", "", False))[3]
         for p in rec.get("permits") or [])
+    # Where the page's own sources date the building otherwise, a bare
+    # "Built." under the roll's year reads as a second construction. The roll's
+    # year stays — it is what the city records — but says whose it is, and the
+    # line under the rail says what the disagreement is.
+    if disputed_year(rec):
+        desc = "Assessor’s “built” date."
+        if builder or note:
+            desc += " " + built_sentence("Built", builder, note)
+    else:
+        desc = built_sentence("Current structure built" if replaced else "Built", builder, note)
     return [((int(year), 0, 0),
              f'{indent}  <li class="vtl-item">\n'
              f'{indent}    <div class="vtl-date">{year}</div>\n'
-             f'{indent}    <p class="vtl-desc">'
-             f'{esc(built_sentence("Current structure built" if replaced else "Built", builder, note))}</p>\n'
+             f'{indent}    <p class="vtl-desc">{esc(desc)}</p>\n'
              f'{indent}  </li>')]
+
+
+def disputed_year(rec: dict) -> bool:
+    """Whether a source the page cites dates the building other than the roll:
+    a published completion year, a survey's year built, or a recorded
+    `completed_conflict`.
+    """
+    year = str((rec.get("parcel") or {}).get("year_built") or "")
+    b = rec.get("building") or {}
+    hy = (rec.get("historic_status") or {}).get("yearbuilt")
+    return bool(year) and bool(
+        (b.get("completed") and str(b["completed"]) != year)
+        or (hy and str(hy) != year)
+        or b.get("completed_conflict"))
 
 
 def completed_item(rec: dict, indent: str) -> list:
@@ -2067,8 +2090,9 @@ def completed_item(rec: dict, indent: str) -> list:
     It was a "Completed" row in "At a glance", which put a date outside the
     one sequence a reader reads dates in. Where it matches the roll the
     "Built" entry already says it, and where a dated entry from a source
-    already says the building was completed or built that year, that entry
-    says it with more; either way this stands down. The disagreement itself
+    already says the building was completed or built that year, or records
+    its construction that year, that entry says it with more; either way this
+    stands down. The disagreement itself
     (`completed_conflict`) closes the rail with the other dating notes.
     """
     b = rec.get("building") or {}
@@ -2076,8 +2100,12 @@ def completed_item(rec: dict, indent: str) -> list:
     if not completed or str(completed) == str((rec.get("parcel") or {}).get("year_built")):
         return []
     key = date_key(str(completed))
+    # An entry that year recording the construction itself ("Begun in November
+    # 1882 to the design of…") already dates the building, and a bare
+    # "Completed." beside it only repeats the year, ahead of the start it ends.
     if any(date_key(e.get("date"))[0] == key[0]
-           and BUILT_EVENT.search(e.get("description") or "")
+           and (BUILT_EVENT.search(e.get("description") or "")
+                or e.get("kind") == "construction")
            for e in history_entries(rec)):
         return []
     labels = {x["id"]: x.get("label") or x.get("name", x["id"])
@@ -2299,6 +2327,47 @@ def history_entries(rec: dict) -> list:
     return rec.get("historical_record") or []
 
 
+# What a description's opening says that the date beside it already says.
+DATE_LEAD = re.compile(
+    r"(?:In|By|On)\s+(?P<when>(?:(?P<d1>\d{1,2})\s+)?(?:(?P<mon>[A-Z][a-z]{2,8})\.?\s+)?"
+    r"(?:(?P<d2>\d{1,2}),\s+)?(?P<y>\d{4})),?\s+(?P<rest>[A-Za-z\"“'‘].*)", re.S)
+DATE_VERB = re.compile(
+    r"(?P<verb>Built|Completed|Designed|Erected|Constructed|Remodell?ed|Opened|"
+    r"Founded|Photographed|Bought|Sold|Moved|Demolished)\s+(?:in\s+)?(?P<y>[\d–-]+)"
+    r"(?=[.,;]|\s+(?:by|for|with|as|on|at|from|and)\b)")
+NOT_A_LEAD = re.compile(r"(?:and|or|to|through|until|when|-|–)\b", re.I)
+
+
+def drop_repeated_date(desc: str, when: str) -> str:
+    """A description that opens on the date its rail entry already shows,
+    without it.
+
+    "By 1900 the barn had been rebuilt" under a 1900 date says the year twice
+    in one glance, and so does "Built in 1924 with three storefronts" under
+    1924. Only the opening is read, and only where the date the reader sees
+    already says everything the phrase does: "In September 1906" stays under
+    a bare 1906, and a date woven into the sentence further on is the
+    sentence's, not a label's.
+    """
+    key = date_key(when)
+    if not desc or key[0] == 9999:
+        return desc
+    m = DATE_LEAD.match(desc)
+    if m and int(m["y"]) == key[0] and not NOT_A_LEAD.match(m["rest"]):
+        mon = MONTH_NUM.get((m["mon"] or "").lower(), 0)
+        day = int(m["d1"] or m["d2"] or 0)
+        if (m["mon"] and not mon) or (mon and mon != key[1]) or (day and day != key[2]):
+            return desc
+        rest = m["rest"]
+        return rest[0].upper() + rest[1:]
+    m = DATE_VERB.match(desc)
+    shown = when.strip() if re.fullmatch(r"\d{4}(?:[–-]\d{2,4})?", when.strip()) else str(key[0])
+    if m and m["y"] == shown:
+        # "Built in 1908, in what is now…" keeps no comma once the year goes.
+        return m["verb"] + re.sub(r"^,(?=\s)", "", desc[m.end():])
+    return desc
+
+
 def historical_items(rec: dict, indent: str) -> list:
     """`historical_record` as `(date_key, html)` items for the page's timeline.
 
@@ -2351,7 +2420,7 @@ def historical_items(rec: dict, indent: str) -> list:
             href = urls.get(cited[0]) if (photo and cited) else None
             row = (f'{indent}      <a href="{esca(href)}">{esc(meta)}</a>\n' if href
                    else f'{indent}      <span>{esc(meta)}</span>\n')
-        desc = esc(e.get("description", ""))
+        desc = esc(drop_repeated_date(e.get("description", ""), str(e.get("date", ""))))
         # What the record stated about the site beyond the fact itself — the lot
         # as the contract gave it, the corner it named. REFERENCE.md has always
         # listed these as legitimate entry keys and nothing rendered them, so a
