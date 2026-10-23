@@ -104,6 +104,8 @@ ADDRESS_TOP_LEVEL_KEYS = frozenset({
     "address_note", "survey_name_note", "adjoining_public_stair",
     "building_type", "sub_area", "city_landmark", "public_art",
     "public_open_space",
+    # An openly licensed photograph, shown in Street View's place (`facade_media`).
+    "photo",
     # The `seed_pages.py render` opt-out (see `renders`).
     "rendered",
 })
@@ -1622,6 +1624,98 @@ def icon_html(icon: str) -> str:
 
 def indent_block(text: str, pad: str) -> str:
     return "\n".join(pad + line if line else line for line in text.split("\n"))
+
+
+PHOTO_KEYS = frozenset({
+    "file", "width", "height", "title", "author", "author_url", "cropped",
+    "license", "license_url", "source_url", "retrieved",
+})
+
+
+def page_photo(rec: dict) -> dict | None:
+    """The page's own photograph of the building, where it has one: `photo`
+    in data.json or place.json, an openly licensed picture committed beside
+    the page in `assets/`. None when the page has none, or when the file it
+    names is missing — the page then falls back to Street View rather than
+    print a broken image."""
+    photo = rec.get("photo")
+    if not isinstance(photo, dict) or not photo.get("file") or not rec.get("path"):
+        return None
+    if not (ROOT / rec["path"].strip("/") / photo["file"]).is_file():
+        return None
+    return photo
+
+
+def photo_credit_html(photo: dict) -> str:
+    """The attribution a Commons license asks for — title, author, license,
+    and where the file came from — in the form Commons itself suggests:
+    “Title” by Author, cropped, CC BY-SA 4.0, via Wikimedia Commons. Public domain and
+    CC0 owe no credit, and get it anyway: the reader still wants to know whose
+    picture it is."""
+    def a(href, text):
+        return f'<a href="{esca(href)}">{esc(text)}</a>' if href else esc(text)
+
+    bits = f"“{esc(photo['title'])}”" if photo.get("title") else "Photo"
+    author = photo.get("author")
+    if author:
+        bits += " by " + a(photo.get("author_url"), author)
+    # Cut to the 4:3 frame every picture of a building is shown in. CC BY 4.0
+    # asks that a change be said; the older versions are owed it too.
+    if photo.get("cropped"):
+        bits += ", cropped"
+    lic = photo.get("license") or ""
+    if lic:
+        lic_text = "public domain" if lic.lower() == "public domain" else lic
+        bits += ", " + a(photo.get("license_url"), lic_text)
+    bits += ", via " + a(photo.get("source_url"), "Wikimedia Commons")
+    return bits
+
+
+def facade_media(rec: dict, label: str, cls: str = "media", indent: str = "",
+                 caption: bool = True, note: str | None = None) -> str:
+    """The picture of the building, wherever a page or a card shows one: the
+    page's own photo when it has one (`page_photo`), and Street View when it
+    does not. Every hero and every card routes through here, so a photo added
+    to data.json replaces Street View everywhere at once.
+
+    Either way the block is a `<ktp-streetview>`, so `location` stays readable
+    by anything that reads it off the page — the homepage map takes its news
+    dots from those attributes. With a photo the figure carries the `<img>`
+    and no `.media-empty`, and site.js leaves a figure without one untouched,
+    so the photo needs no script and Street View never overwrites it.
+
+    `caption=False` drops the credit line, for a small card that links to the
+    page: the page carries the full attribution, which every license here
+    allows. `note` is the placeholder's explanatory line when there is no
+    photo."""
+    lat, lng = rec["coordinates"]["lat"], rec["coordinates"]["lng"]
+    photo = page_photo(rec)
+    if photo:
+        src = rec["path"] + photo["file"]
+        size = (f' width="{int(photo["width"])}" height="{int(photo["height"])}"'
+                if photo.get("width") and photo.get("height") else "")
+        # The hero's photo is the first thing on the page, so only a card's
+        # waits for the reader to scroll to it.
+        lazy = '' if "media-lift" in cls else ' loading="lazy"'
+        inner = (f'  <img src="{esca(src)}"{size} alt="{esca("Photo of " + label)}"'
+                 f'{lazy} decoding="async">')
+        if caption:
+            inner += f'\n  <figcaption class="photo-credit">{photo_credit_html(photo)}</figcaption>'
+    else:
+        inner = ("  <div class=\"media-empty\">\n"
+                 "    <span class=\"ic ic-pin\"></span>\n"
+                 f"    <span>{lat:.4f}, {'−' if lng < 0 else ''}{abs(lng):.4f}</span>"
+                 + (f"\n    <small>{esc(note)}</small>" if note else "")
+                 + "\n  </div>")
+    block = (f'<ktp-streetview location="{lat},{lng}" label="{esca(label)}">\n'
+             f'  <figure class="{cls}">\n'
+             f'{indent_block(inner, "  ")}\n'
+             f'  </figure>\n'
+             f'</ktp-streetview>')
+    return indent_block(block, indent)
+
+
+STREETVIEW_NOTE = "Street View appears here once a Google Maps embed key is configured."
 
 
 def feedback_url(title: str, path: str) -> str:
@@ -3918,15 +4012,7 @@ def render_html(rec: dict) -> str:
 {tags_html(rec)}
       </ul>
 {value_figure_html(rec, "      ")}    </div>
-    <ktp-streetview location="{lat},{lng}" label="{esca(heading)}">
-      <figure class="media media-lift">
-        <div class="media-empty">
-          <span class="ic ic-pin"></span>
-          <span>{lat:.4f}, {'−' if lng < 0 else ''}{abs(lng):.4f}</span>
-          <small>Street View appears here once a Google Maps embed key is configured.</small>
-        </div>
-      </figure>
-    </ktp-streetview>
+{facade_media(rec, heading, "media media-lift", "    ", note=STREETVIEW_NOTE)}
   </section>
 
 {news_now_html(rec)}{lead_html}
@@ -3975,6 +4061,7 @@ PLACE_KEYS = frozenset({
     "street_addresses", "managed_by", "complex", "rpd_name", "rpd_property_id",
     "rpd_object_ids", "part_of", "parcels", "facilities", "hook",
     "historical_record", "building", "narrative", "unknowns", "sources",
+    "photo",
 })
 
 # The Rec & Park facility types that are the park's own upkeep rather than
@@ -4280,15 +4367,7 @@ def render_place_html(rec: dict) -> str:
       <h1>{esc(name)}</h1>
       <p class="sub">{esc(sub_text)}</p>
     </div>
-    <ktp-streetview location="{lat},{lng}" label="{esca(name)}">
-      <figure class="media media-lift">
-        <div class="media-empty">
-          <span class="ic ic-pin"></span>
-          <span>{lat:.4f}, {'−' if lng < 0 else ''}{abs(lng):.4f}</span>
-          <small>Street View appears here once a Google Maps embed key is configured.</small>
-        </div>
-      </figure>
-    </ktp-streetview>
+{facade_media(rec, name, "media media-lift", "    ", note=STREETVIEW_NOTE)}
   </section>
 
 {lead_html}{stats}

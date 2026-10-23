@@ -506,6 +506,14 @@ line-break opportunity in its own right, so a bare `&nbsp;` does not stop the
 browser stranding the icon alone on a line; the nowrap wrapper, with no
 whitespace ahead of it, keeps it on the last word.
 
+**Where the page has its own photo, the card shows it.** A page with a `photo`
+in its `data.json` (see [REFERENCE.md → `photo`](../REFERENCE.md#photo)) shows
+it in Street View's place, and so does its card: keep the `<ktp-streetview>`
+element and its `location`, and put the photo's `<img>` in the figure instead
+of the `.media-empty` placeholder. `validate.py` prints the exact block when a
+card lags its page. No credit line on the card — it links to the page, which
+carries it.
+
 **The grid also decides what an address page leads with.** While a building has
 a card here, its page repeats that story under the hero (`.news-now`, see
 [shared/BLOCKS.md](../shared/BLOCKS.md#in-the-news--news-now)), found by matching

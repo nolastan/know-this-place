@@ -287,6 +287,8 @@ def check_address_dir(page_dir: Path, on_disk: str) -> None:
                 f"`historical_record`'s), or a new key the renderer needs to "
                 f"learn (add it there once it renders something)")
 
+    check_photo(data_path, data)
+
     if not data.get("address"):
         err(data_path, 'missing "address"')
     sources = data.get("sources")
@@ -303,6 +305,31 @@ def check_address_dir(page_dir: Path, on_disk: str) -> None:
 
     check_narrative(data_path, data)
     check_render_parity(page_dir, data, on_disk)
+
+
+def check_photo(src: Path, data: dict) -> None:
+    """A page's `photo`: the closed vocabulary, the file it names on disk, and
+    the attribution its license asks for. The renderer falls back to Street
+    View when the file is missing, so without this a photo deleted by mistake
+    would vanish from the page with nothing to say so."""
+    photo = data.get("photo")
+    if photo is None:
+        return
+    if not isinstance(photo, dict):
+        err(src, '"photo" must be an object')
+        return
+    unknown = sorted(set(photo) - seed_pages.PHOTO_KEYS)
+    if unknown:
+        err(src, f'unrecognised "photo" key(s): {", ".join(unknown)} — see '
+                 f"seed_pages.PHOTO_KEYS")
+    for key in ("file", "license", "source_url", "retrieved"):
+        if not photo.get(key):
+            err(src, f'photo missing "{key}" — a photo is shown only with its credit')
+    if photo.get("file") and not (src.parent / photo["file"]).is_file():
+        err(src, f'photo file {photo["file"]!r} is not beside the page')
+    lic = (photo.get("license") or "").lower()
+    if lic.startswith("cc by") and not photo.get("author"):
+        err(src, f'photo is {photo["license"]}, which requires the author be credited')
 
 
 def check_place_dir(page_dir: Path, on_disk: str) -> None:
@@ -337,6 +364,7 @@ def check_place_dir(page_dir: Path, on_disk: str) -> None:
             for key in ("id", "retrieved"):
                 if not isinstance(s_, dict) or not s_.get(key):
                     err(src, f'sources[{i}] missing "{key}"')
+    check_photo(src, data)
     check_narrative(src, data)
     try:
         expected = seed_pages.render_place_html(data)
@@ -750,11 +778,44 @@ def check_build_is_complete(content: Path) -> None:
                           "exempted in .gitignore")
 
 
+def check_news_card_photos() -> None:
+    """A homepage news card shows the building's photo where its page has one.
+
+    The news grid is hand maintained (news/PIPELINE.md), so a card is written
+    once, with whatever picture the page had that day; a photo added later
+    would otherwise leave the card on Street View while the page and the map
+    show the photo. The error prints the card's picture block to paste in."""
+    home = ROOT / "index.html"
+    if not home.exists():
+        return
+    page = home.read_text(encoding="utf-8")
+    grid = re.search(r'<ul class="[^"]*\bnews-cards\b[^"]*">(.*?)</ul>', page, re.S)
+    for li in re.findall(r"<li>(.*?)</li>", grid[1] if grid else "", re.S):
+        link = re.search(r'<a href="(/[^"]*)">', li)
+        if not link:
+            continue
+        data_path = ROOT / link[1].strip("/") / "data.json"
+        try:
+            rec = json.loads(data_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        rec.setdefault("path", link[1])
+        photo = seed_pages.page_photo(rec)
+        if photo and f'src="{rec["path"]}{photo["file"]}"' not in li:
+            label = re.search(r'<ktp-streetview [^>]*label="([^"]*)"', li)
+            block = seed_pages.facade_media(
+                rec, html.unescape(label[1]) if label else seed_pages.hero_lines(rec)[0],
+                "media", "        ", caption=False)
+            err(home, f"the news card for {link[1]} shows Street View, but the "
+                      f"page has a photo — replace its <ktp-streetview> with:\n{block}")
+
+
 def main() -> int:
     content = ROOT / "san-francisco"
     check_build_is_complete(content)
     check_room_decisions()
     check_days_label()
+    check_news_card_photos()
     html_pages = [ROOT / "index.html"] if (ROOT / "index.html").exists() else []
     html_pages += sorted(content.rglob("index.html")) if content.exists() else []
 
