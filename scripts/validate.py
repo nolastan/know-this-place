@@ -322,7 +322,10 @@ def check_photo(src: Path, data: dict) -> None:
     if unknown:
         err(src, f'unrecognised "photo" key(s): {", ".join(unknown)} — see '
                  f"seed_pages.PHOTO_KEYS")
-    for key in ("file", "license", "source_url", "retrieved"):
+    # A contributed photo was taken for this site: there is no page to link.
+    required = ("file", "license", "retrieved") if photo.get("contributed") else (
+        "file", "license", "source_url", "retrieved")
+    for key in required:
         if not photo.get(key):
             err(src, f'photo missing "{key}" — a photo is shown only with its credit')
     if photo.get("file") and not (src.parent / photo["file"]).is_file():
