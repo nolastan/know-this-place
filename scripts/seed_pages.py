@@ -5977,8 +5977,8 @@ def city_map_html(city_dir: Path) -> str:
 
 
 def write_city_map(city_dir: Path) -> bool:
-    """Put the neighborhoods map on the city page, under the heading of the
-    list it maps. The rest of that page is hand-authored."""
+    """Put the neighborhoods map on the city page, just above the list of
+    neighborhoods it maps. The rest of that page is hand-authored."""
     html_path = city_dir / "index.html"
     if not html_path.exists():
         return False
@@ -5989,11 +5989,10 @@ def write_city_map(city_dir: Path) -> bool:
     if region.search(text):
         new = region.sub(lambda _: "\n" + block if block else "", text, count=1)
     elif block:
-        new, n = re.subn(r"(<h2>Neighborhoods documented so far</h2>)",
-                         lambda m: m.group(1) + "\n" + block, text, count=1)
+        new, n = re.subn(r'\n(?=[ \t]*<ul class="place-list">)',
+                         lambda _: "\n" + block + "\n", text, count=1)
         if not n:
-            raise SystemExit(f"{html_path}: no “Neighborhoods documented so far” "
-                             "heading to put the map under")
+            raise SystemExit(f"{html_path}: no list of neighborhoods to put the map above")
     else:
         return False
     if new != text:

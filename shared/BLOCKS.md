@@ -813,7 +813,7 @@ The named buildings' markers are HTML links over the SVG, placed with the
 
 ### City neighborhoods map — `.city-map`
 Only on the city page (`san-francisco/index.html`, otherwise hand-authored),
-under "Neighborhoods documented so far", between the `<!-- city map … -->`
+above the list of neighborhoods, between the `<!-- city map … -->`
 comments; written by `seed_pages.py overviews` from every hub's `hub.json`
 boundary. The same `<ktp-areamap>` frame as a hub's map, but the SVG holds
 nothing except one `<a>` per neighborhood wrapping its outline
