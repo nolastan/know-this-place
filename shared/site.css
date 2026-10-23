@@ -27,6 +27,10 @@
   --cool: #1568a6;        /* data slot 2 — land */
   --warm-soft: #efdcd3;   /* warm track / tint */
   --cool-soft: #d8e5f2;   /* cool tint */
+  /* a link's hover: the cool hue pulled a third of the way to ink — darker on
+     paper, lighter on the dark ground — so it reads as a change of state, not
+     a new colour */
+  --cool-hover: color-mix(in srgb, var(--cool) 65%, var(--ink));
   /* data slot 3 — upcoming events (#414). Violet rather than a third earth
      tone: it stays separable from both brick and blue for readers who can't
      see hue, which a green or amber would not. Used on the homepage map only;
@@ -137,6 +141,9 @@ body {
 a.wordmark:hover, a.map-brand:hover { opacity: 0.75; }
 .breadcrumb { margin-top: 0.35rem; font-size: 0.85rem; color: var(--muted); }
 .breadcrumb a { color: var(--cool); text-decoration: none; }
+.breadcrumb a:hover, .breadcrumb a:focus-visible {
+  color: var(--cool-hover); text-decoration: underline 1px; text-underline-offset: 2px;
+}
 .breadcrumb .crumb-sep { margin: 0 0.15rem 0 0.4rem; color: var(--rule); }
 .breadcrumb [aria-current="page"] { color: var(--ink); }
 
@@ -183,10 +190,13 @@ a.wordmark:hover, a.map-brand:hover { opacity: 0.75; }
   border-radius: var(--radius); box-shadow: 0 2px 10px rgb(0 0 0 / 0.12);
 }
 .map-id .breadcrumb { margin: 0; font-size: 1rem; }
-.map-id .breadcrumb a, .map-id .breadcrumb a:hover {
+.map-id .breadcrumb a {
   color: var(--cool);
   text-decoration: underline 1px;
   text-underline-offset: 2px;
+}
+.map-id .breadcrumb a:hover, .map-id .breadcrumb a:focus-visible {
+  color: var(--cool-hover); text-decoration-thickness: 2px;
 }
 .map-id .breadcrumb .crumb-sep { color: var(--rule); }
 .map-id .crumb-meta { margin: 0.375rem 0 0; }
@@ -271,6 +281,7 @@ main { padding-top: 1.5rem; padding-bottom: 3rem; }
   font-size: 0.9rem; color: var(--muted);
 }
 .site-footer a { color: var(--cool); }
+.site-footer a:hover, .site-footer a:focus-visible { color: var(--cool-hover); text-decoration-thickness: 2px; }
 .site-footer h2 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
 .feedback-cta { font-size: 1rem; color: var(--ink); }
 .sources ul { padding-left: 1.1rem; }
@@ -287,6 +298,11 @@ h2 { font-size: 1.3rem; margin: 0; }
 h3 { font-size: 1.05rem; }
 a { color: var(--cool); }
 main a { text-decoration-thickness: 1px; text-underline-offset: 2px; }
+/* Hover deepens the hue and thickens the rule. :where() keeps this at the
+   bare element's weight, so any block that sets its own link colour (a card, a
+   chip, the wordmark) keeps it on hover too. */
+a:where(:hover, :focus-visible) { color: var(--cool-hover); }
+main a:where(:hover, :focus-visible) { text-decoration-thickness: 2px; }
 .lead { font-size: 1.15rem; max-width: var(--measure); }
 .prose { max-width: var(--measure); }
 hr { border: 0; border-top: 1px solid var(--rule); margin: 2rem 0; }
