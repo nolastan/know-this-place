@@ -724,8 +724,12 @@ ktp-figure { position: relative; }
 .media iframe, .media img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; border: 0; object-fit: cover; }
 .media figcaption { padding: 0.5rem 0.75rem; font-family: var(--sans); font-size: 0.8rem; color: var(--muted); }
 /* A committed photo's license credit (seed_pages.photo_credit_html): owed, so
-   always printed, but small and quiet — the picture is the point. */
-.media .photo-credit { padding: 0.4rem 0.75rem; font-size: 0.72rem; line-height: 1.4; overflow-wrap: anywhere; }
+   always printed, but small and quiet — the picture is the point. Inside a
+   card it sits flush under the image, padded so the text is inset the same on
+   all four sides: the vertical padding is the side padding less the line's
+   half-leading. */
+.photo-credit { font-family: var(--sans); color: var(--muted); }
+.media .photo-credit { margin: 0; padding: 0.6rem 0.75rem; font-size: 0.72rem; line-height: 1.4; overflow-wrap: anywhere; }
 .photo-credit a { color: inherit; }
 .photo-credit a:where(:hover, :focus-visible) { color: var(--cool-hover); }
 .media-empty { aspect-ratio: 4 / 3; display: grid; place-content: center; justify-items: center; gap: 0.4rem; text-align: center; padding: 1rem; color: var(--muted); }
@@ -755,8 +759,8 @@ ktp-figure { position: relative; }
    its photo, a map of its official boundary, and its named buildings. */
 .hub-photo { margin: 1.5rem 0 0; }
 .hub-photo img { display: block; width: 100%; height: auto; border-radius: var(--radius); }
-.photo-credit { margin-top: 0.4rem; font-family: var(--sans); font-size: 0.75rem; line-height: 1.45; color: var(--muted); }
-.photo-credit a { color: inherit; }
+/* A hub photo has no card, so its credit is set under the image instead. */
+.hub-photo .photo-credit { margin-top: 0.4rem; font-size: 0.75rem; line-height: 1.45; }
 
 /* The map is inline SVG — the boundary and a dot per documented page — so it
    reads with no script; <ktp-areamap> slides a Mapbox basemap under it, drawn
@@ -808,16 +812,19 @@ ktp-figure { position: relative; }
 @media (max-width: 720px) { .city-area { stroke-width: 1px; } }
 
 .showcase { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(13.5rem, 40%), 1fr)); gap: 1.25rem 1rem; margin: 0; padding: 0; list-style: none; }
-.showcase a { display: block; color: inherit; text-decoration: none; }
+.showcase a { position: relative; display: block; color: inherit; text-decoration: none; }
 .showcase .media { margin: 0 0 0.5rem; }
 .showcase .media-empty { padding: 0.5rem; font-size: 0.8rem; }
-.showcase-name { display: flex; align-items: baseline; gap: 0.45rem; font-weight: 600; line-height: 1.3; }
+.showcase-name { display: block; font-weight: 600; line-height: 1.3; }
 .showcase a:hover .showcase-name, .showcase a:focus-visible .showcase-name { color: var(--cool-hover); text-decoration: underline; }
+/* The number sits on the image's top-left corner, so the name keeps the
+   card's left edge instead of hanging off an indent. */
 .showcase-num {
-  flex: 0 0 auto; display: inline-grid; place-items: center;
-  min-width: 1.35rem; height: 1.35rem; padding: 0 0.3rem; border-radius: 0.7rem;
-  background: var(--ink); color: var(--paper);
-  font: 700 0.72rem/1 var(--sans); transform: translateY(-0.1em);
+  position: absolute; top: 0.5rem; left: 0.5rem; z-index: 1;
+  display: grid; place-items: center;
+  min-width: 1.6rem; height: 1.6rem; padding: 0 0.35rem; border-radius: 0.8rem;
+  background: var(--ink); color: var(--paper); box-shadow: 0 1px 3px rgb(0 0 0 / 0.35);
+  font: 700 0.8rem/1 var(--sans);
 }
 .showcase-sub { display: block; margin-top: 0.15rem; font-family: var(--sans); font-size: 0.8rem; color: var(--muted); }
 .showcase-more { margin-top: 1.25rem; font-size: 0.95rem; }
