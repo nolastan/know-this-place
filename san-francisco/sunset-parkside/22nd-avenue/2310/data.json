@@ -1,0 +1,145 @@
+{
+  "address": "2310–2312 22nd Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/22nd-avenue/2310/",
+  "apn": "2350037",
+  "block": "2350",
+  "lot": "037",
+  "eas_baseid": "335291",
+  "coordinates": {
+    "lat": 37.744478,
+    "lng": -122.478696
+  },
+  "address_range": "2310–2312",
+  "street_numbers_on_parcel": [
+    "2310",
+    "2312"
+  ],
+  "parcel": {
+    "year_built": 1958,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 2622,
+    "building_area_sqft": 2904,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "2312 2310 22ND                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1295000,
+    "assessed_improvement_value": 555000,
+    "last_sale_date": "2020-03-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1958",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201409186704",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-09-18",
+      "status_date": "2014-12-17",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "remodel in kind 2 bathrooms, 1 kitchen. no changes to existing floor plan; no structural; to comply with cec150(k) 3 & 5. no structural.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201401085878",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-01-08",
+      "status_date": "2014-04-04",
+      "estimated_cost": 48000,
+      "revised_cost": 48000,
+      "description": "remodel in kind - (2) bathrooms, (1) kitchen, no changes to existing floor plan, no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200402055636",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-02-05",
+      "status_date": "2004-02-05",
+      "estimated_cost": 4900,
+      "revised_cost": 4900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9405866S",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1994-04-15",
+      "status_date": "1998-09-03",
+      "estimated_cost": 40000,
+      "description": "addition to studio apartment to first floor of existing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8400308",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1984-01-09",
+      "status_date": "1984-06-14",
+      "estimated_cost": 2000,
+      "description": "change cabinets for new stove both units",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=AVE&address_number=2310",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2350037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2350&lot=037",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2350037",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1994-08-04",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 4 August 1994",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/40minutesofsanfran1994san/page/n125/mode/1up",
+      "retrieved": "2026-10-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1994-08-04",
+      "kind": "planning decision",
+      "description": "With no opposition filed, the City Planning Commission approved, 6-0, converting the two-family dwelling into a three-family dwelling with a one-storey, 12-foot rear extension.",
+      "source": "sf-planning-commission-minutes-1994-08-04"
+    }
+  ]
+}

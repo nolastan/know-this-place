@@ -117,6 +117,7 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [Spencer Street](spencer-street/) — 1 building, built 1904.
 - [Stevenson Street](stevenson-street/) — 9 buildings, built 1906–1926; 9 in the Jessie-McCoppin-Stevenson Streets Reconstruction Historic District.
 - [Sycamore Street](sycamore-street/) — 14 buildings, built 1906–1928; 11 in the Sycamore Street Reconstruction Historic District.
+- [Tiffany Avenue](tiffany-avenue/) — 1 building, built 1923.
 - [Tingley Street](tingley-street/) — 1 building, built 1907.
 - [Treat Avenue](treat-avenue/) — 105 buildings, built 1880–1982; 16 in the South Mission Avenues and Alleys Historic District.
 - [Treat Way](treat-way/) — 1 building.

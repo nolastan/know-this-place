@@ -1,0 +1,120 @@
+{
+  "address": "165 Fairmount Street, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/fairmount-street/165/",
+  "apn": "6685031",
+  "block": "6685",
+  "lot": "031",
+  "eas_baseid": "405204",
+  "coordinates": {
+    "lat": 37.738685,
+    "lng": -122.426949
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2600,
+    "building_area_sqft": 1143,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Glen Park",
+    "analysis_neighborhood": "Glen Park",
+    "property_location_raw": "0000 0165 FAIRMOUNT           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1113818,
+    "assessed_improvement_value": 477350,
+    "last_sale_date": "2020-09-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201809180634",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-09-18",
+      "status_date": "2019-02-28",
+      "estimated_cost": 15850,
+      "revised_cost": 15850,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9316491",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1993-09-24",
+      "status_date": "1994-08-18",
+      "estimated_cost": 1500,
+      "revised_cost": 3000,
+      "description": "replace outside porch with deck & door to deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9221178",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-12-07",
+      "status_date": "1993-07-20",
+      "estimated_cost": 5900,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FAIRMOUNT&street_type=ST&address_number=165",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6685031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6685&lot=031",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6685031",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1994-02-24",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 24 February 1994",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/40minutesofsanfran1994san/page/n53/mode/1up",
+      "retrieved": "2026-10-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1994-02-24",
+      "kind": "planning decision",
+      "description": "With no opposition filed, the City Planning Commission approved, 6-0, legalizing a 16-foot-square rear-yard deck.",
+      "source": "sf-planning-commission-minutes-1994-02-24"
+    }
+  ]
+}

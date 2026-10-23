@@ -1,0 +1,133 @@
+{
+  "address": "2959–2961 San Bruno Avenue, San Francisco, CA 94134",
+  "path": "/san-francisco/bayview-hunters-point/san-bruno-avenue/2959/",
+  "apn": "5458010",
+  "block": "5458",
+  "lot": "010",
+  "eas_baseid": "455342",
+  "coordinates": {
+    "lat": 37.724501,
+    "lng": -122.402023
+  },
+  "address_range": "2959–2961",
+  "street_numbers_on_parcel": [
+    "2959",
+    "2961"
+  ],
+  "parcel": {
+    "year_built": 1941,
+    "units": 2,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 2628,
+    "building_area_sqft": 1450,
+    "basement_area_sqft": 400,
+    "use": "Multi-Family Residential",
+    "property_class": "Dwellings - Apt 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "NC-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Portola",
+    "analysis_neighborhood": "Portola",
+    "property_location_raw": "2961 2959 SAN BRUNO           AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 169859,
+    "assessed_improvement_value": 208935,
+    "last_sale_date": "1993-07-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1941",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9503300",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-03-08",
+      "status_date": "1995-10-31",
+      "estimated_cost": 500,
+      "description": "add ventilator at rear of building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9503305",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-03-08",
+      "status_date": "1995-03-09",
+      "estimated_cost": 1,
+      "description": "renew 9406451",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9416247",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1994-10-05",
+      "status_date": "1995-06-07",
+      "estimated_cost": 25000,
+      "description": "horizontal",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9406451",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-04-22",
+      "status_date": "1994-11-29",
+      "estimated_cost": 20000,
+      "description": "retaining wall foundation-rear yard",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20BRUNO&street_type=AVE&address_number=2959",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5458010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5458&lot=010",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5458010",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1994-08-25",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 25 August 1994",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/40minutesofsanfran1994san/page/n147/mode/1up",
+      "retrieved": "2026-10-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1994-08-25",
+      "kind": "planning decision",
+      "description": "The City Planning Commission granted conditional-use authorization, 6-1, to give up one residential parking space for ground-floor retail use (Motion 13751).",
+      "source": "sf-planning-commission-minutes-1994-08-25"
+    }
+  ]
+}

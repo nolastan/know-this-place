@@ -1,0 +1,119 @@
+{
+  "address": "1390 Wallace Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/wallace-avenue/1390/",
+  "apn": "4827017",
+  "block": "4827",
+  "lot": "017",
+  "eas_baseid": "372853",
+  "coordinates": {
+    "lat": 37.725385,
+    "lng": -122.386887
+  },
+  "parcel": {
+    "year_built": 1958,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 3,
+    "lot_area_sqft": 14997,
+    "building_area_sqft": 10080,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "S",
+    "zoning": "M1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1390 WALLACE             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 335929,
+    "assessed_improvement_value": 335929,
+    "last_sale_date": "1995-06-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1958",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200708028576",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2007-08-02",
+      "status_date": "2010-02-23",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "repair west wall as shown, repair damaged where column as shown, installl accessible upgrade as shown.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200706224928",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2007-06-22",
+      "status_date": "2010-02-23",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "repair roll up door, main door, walls & ceilings in bathrooms, repair metal cladding, repair toilet, repair hot water heater.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9320866",
+      "type": "additions alterations or repairs",
+      "status": "filing",
+      "filed": "1993-11-30",
+      "status_date": "1993-11-30",
+      "estimated_cost": 4000,
+      "revised_cost": 5500,
+      "description": "add new roll up door",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=WALLACE&street_type=AVE&address_number=1390",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4827017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4827&lot=017",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4827017",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1994-08-04",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 4 August 1994",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/40minutesofsanfran1994san/page/n128/mode/1up",
+      "retrieved": "2026-10-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1994-08-04",
+      "kind": "occupancy",
+      "description": "The building was used for storage, and a change to processing and sorting construction debris was proposed.",
+      "source": "sf-planning-commission-minutes-1994-08-04"
+    }
+  ]
+}

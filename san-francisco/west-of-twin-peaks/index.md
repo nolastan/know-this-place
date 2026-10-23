@@ -10,6 +10,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [18th Avenue](18th-avenue/) — 1 building, built 1920.
 - [19th Avenue](19th-avenue/) — 1 building, built 1913.
 - [9th Avenue](9th-avenue/) — 1 building, built 1954; 1 in the Forest Hill Historic District.
+- [Allston Way](allston-way/) — 1 building, built 1916.
 - [Casitas Avenue](casitas-avenue/) — 1 building, built 1953.
 - [Castenada Avenue](castenada-avenue/) — 1 building, built 1929; 1 in the Forest Hill Historic District.
 - [Claremont Boulevard](claremont-boulevard/) — 1 building, built 1929.
@@ -41,6 +42,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Saint Francis Boulevard](saint-francis-boulevard/) — 1 building, built 1948; 1 in the St. Francis Wood Historic District.
 - [San Andreas Way](san-andreas-way/) — 1 building, built 1941; 1 in the St. Francis Wood Historic District.
 - [San Anselmo Avenue](san-anselmo-avenue/) — 1 building, built 1942; 1 in the St. Francis Wood Historic District.
+- [San Benito Way](san-benito-way/) — 1 building, built 2001; 1 in the St. Francis Wood Historic District.
 - [San Leandro Way](san-leandro-way/) — 1 building, built 1923; 1 in the St. Francis Wood Historic District.
 - [San Marcos Avenue](san-marcos-avenue/) — 6 buildings, built 1933–1965; 6 in the Forest Hill Historic District.
 - [San Pablo Avenue](san-pablo-avenue/) — 1 building, built 1964; 1 in the St. Francis Wood Historic District.
@@ -55,6 +57,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Teresita Boulevard](teresita-boulevard/) — 1 building, built 1951.
 - [Terrace Drive](terrace-drive/) — 1 building, built 1937; 1 in the St. Francis Wood Historic District.
 - [Ulloa Street](ulloa-street/) — 1 building, built 1938.
+- [Vasquez Avenue](vasquez-avenue/) — 1 building, built 1917.
 - [West Portal Avenue](west-portal-avenue/) — 2 buildings, built 1935–1992.
 - [Westwood Drive](westwood-drive/) — 2 buildings, built 1917–1922.
 - [Winston Drive](winston-drive/) — 1 building, built 1900.

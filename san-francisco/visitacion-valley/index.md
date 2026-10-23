@@ -10,6 +10,7 @@ The city's Visitacion Valley analysis neighborhood, in the south-eastern corner 
 - [Raymond Avenue](raymond-avenue/) — 1 building, built 1940.
 - [Schwerin Street](schwerin-street/) — 1 building, built 1939.
 - [Teddy Avenue](teddy-avenue/) — 1 building, built 2009.
+- [Tocoloma Avenue](tocoloma-avenue/) — 1 building, built 1936; 1 in the Little Hollywood Historic District.
 - [Visitacion Avenue](visitacion-avenue/) — 1 building, built 1934.
 
 ## Parks and public spaces
