@@ -1,0 +1,79 @@
+{
+ "source_id": "the-registry",
+ "batch": "2026-10-24",
+ "read_on": "2026-10-24",
+ "notes": "Run of 2026-10-24: 18 queued across feeds, read. Only Northpoint Plaza earns an entry; other stories name no address or only mention one in passing.",
+ "coverage": {
+  "unit": "articles",
+  "examined": 2,
+  "mentions": 2,
+  "remaining": "none"
+ },
+ "findings": [
+  {
+   "id": "2026-10-24-rg-0001",
+   "date": "2026-10-23",
+   "date_precision": "day",
+   "kind": "sale",
+   "address_as_written": "2552 Taylor Street",
+   "street_number": "2552",
+   "street_type": "ST",
+   "street_name": "TAYLOR",
+   "description": "Northpoint Plaza, the shuttered Fisherman's Wharf office and retail complex, sold to Tidewater Capital for $21 million, from a foreclosing investor. Address 2552 Taylor Street is the outlet's own property tag; paywall cuts off after the lede.",
+   "extra": {},
+   "citation": {
+    "label": "The Registry, “Tidewater Capital Buys Vacant 137,000 SQFT Northpoint Plaza, Birthplace of Cost Plus, for $21MM in San Francisco,” 23 October 2026",
+    "url": "https://news.theregistrysf.com/tidewater-capital-buys-vacant-137000-sqft-northpoint-plaza-birthplace-of-cost-plus-for-21mm-in-san-francisco/"
+   },
+   "raw": {
+    "text": "Tidewater Capital Buys Vacant 137,000 SQFT Northpoint Plaza, Birthplace of Cost Plus, for $21MM in San Francisco"
+   },
+   "confidence": "high",
+   "publish": {
+    "status": "pending",
+    "note": "Blocked: the story names a complex, not a building. Northpoint Plaza is a 137,000 sq ft Fisherman's Wharf complex; 2552 Taylor Street is only the outlet's property tag and resolves to parcel 0030008, a 4,194 sq ft shopping-center lot (last sale 2006) whose permits refer to 2598 Taylor St as part of the same system. The sale cannot be placed on one parcel without the complex's parcels being established. Seeded draft discarded."
+   },
+   "resolution": {
+    "status": "resolved",
+    "apn": "0030008",
+    "path": "/san-francisco/russian-hill/taylor-street/2552/",
+    "eas_address": "2552 TAYLOR ST",
+    "method": "EAS exact match on 2552 TAYLOR ST → parcel 0030008; sf-parcels has blklot 0030008 active, 2552–2552 TAYLOR; the 2025 roll records it as commercial retail.",
+    "checked_on": "2026-10-24",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   }
+  },
+  {
+   "id": "2026-10-24-rg-0002",
+   "date": "2026-10-23",
+   "date_precision": "day",
+   "kind": "sale",
+   "address_as_written": "865 Market Street",
+   "street_number": "865",
+   "street_type": "ST",
+   "street_name": "MARKET",
+   "description": "A buyer was selected for the shuttered San Francisco Centre; not a closed sale, paywalled after lede.",
+   "extra": {},
+   "citation": {
+    "label": "The Registry, “Seven Equity Group Selected to Buy Shuttered 1.5MM SQFT San Francisco Centre,” 23 October 2026",
+    "url": "https://news.theregistrysf.com/new-buyer-selected-for-shuttered-1-5mm-sqft-san-francisco-centre/"
+   },
+   "raw": {
+    "text": "Seven Equity Group Selected to Buy Shuttered 1.5MM SQFT San Francisco Centre"
+   },
+   "confidence": "high",
+   "publish": {
+    "status": "declined",
+    "note": "A buyer selected is not a sale; revisit when it closes. The mall is also a multi-parcel/condo complex (845 and 865 Market are already pending as condominiums)."
+   },
+   "resolution": {
+    "status": "resolved",
+    "apn": "3705042",
+    "path": "/san-francisco/south-of-market/market-street/865/",
+    "eas_address": "865 MARKET ST",
+    "method": "EAS exact match on 865 MARKET ST → parcel 3705042; sf-parcels has blklot 3705042 active, 865–885 MARKET; the 2025 roll records it as commercial retail, built 1908. EAS puts 865, 885 MARKET ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 865.",
+    "checked_on": "2026-10-24"
+   }
+  }
+ ]
+}
