@@ -1,0 +1,120 @@
+{
+  "address": "367 Flood Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/west-of-twin-peaks/flood-avenue/367/",
+  "apn": "3141038",
+  "block": "3141",
+  "lot": "038",
+  "eas_baseid": "354975",
+  "coordinates": {
+    "lat": 37.729634,
+    "lng": -122.448099
+  },
+  "parcel": {
+    "year_built": 1920,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 2812.5,
+    "building_area_sqft": 1222,
+    "lot_depth_ft": 12.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Sunnyside",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0367 FLOOD               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1011292,
+    "assessed_improvement_value": 433410,
+    "last_sale_date": "2019-08-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1920",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200007135039",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-07-13",
+      "status_date": "2000-11-13",
+      "estimated_cost": 1680,
+      "revised_cost": 1680,
+      "description": "re roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9516883",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-10-11",
+      "status_date": "1996-02-06",
+      "estimated_cost": 2800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9504192S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1995-03-24",
+      "status_date": "1996-01-29",
+      "estimated_cost": 37500,
+      "description": "horizontal",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FLOOD&street_type=AVE&address_number=367",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3141038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3141&lot=038",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3141038",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1995-06-08",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 8 June 1995",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/41minutesofsanfran1995san/page/n130/mode/1up",
+      "retrieved": "2026-10-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1995-06-08",
+      "kind": "planning decision",
+      "description": "With no opposition filed, the City Planning Commission approved, 5-0, a one-storey rear addition 16 feet wide by 20 feet deep.",
+      "source": "sf-planning-commission-minutes-1995-06-08"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "address": "199 Montcalm Street, San Francisco, CA 94110",
+  "path": "/san-francisco/bernal-heights/montcalm-street/199/",
+  "apn": "5536A027",
+  "block": "5536A",
+  "lot": "027",
+  "eas_baseid": "455842",
+  "coordinates": {
+    "lat": 37.745893,
+    "lng": -122.407606
+  },
+  "parcel": {
+    "year_built": 1997,
+    "units": 1,
+    "stories": 3,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 1816,
+    "building_area_sqft": 2221,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Bernal Heights",
+    "property_location_raw": "0000 0199 MONTCALM            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1254519,
+    "assessed_improvement_value": 836341,
+    "last_sale_date": "2005-04-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1997",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202009295457",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-09-29",
+      "status_date": "2020-11-13",
+      "estimated_cost": 16900,
+      "revised_cost": 16900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9701465",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-01-27",
+      "status_date": "1997-06-03",
+      "estimated_cost": 800,
+      "description": "const footbridge in lieu of pole ladder at rear,rer #9509224",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9509224S",
+      "type": "new construction wood frame",
+      "status": "expired",
+      "filed": "1995-06-16",
+      "status_date": "1997-03-18",
+      "estimated_cost": 200000,
+      "revised_cost": 200000,
+      "description": "erect a three story single family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MONTCALM&street_type=ST&address_number=199",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5536A027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5536A&lot=027",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5536A027",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1995-11-16",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 16 November 1995",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/41minutesofsanfran1995san/page/n313/mode/1up",
+      "retrieved": "2026-10-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1995-11-16",
+      "kind": "planning decision",
+      "description": "On discretionary review, the City Planning Commission approved, 4-0, a new three-storey single-family house.",
+      "source": "sf-planning-commission-minutes-1995-11-16"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "address": "2671 18th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/west-of-twin-peaks/18th-avenue/2671/",
+  "apn": "2478013E",
+  "block": "2478",
+  "lot": "013E",
+  "eas_baseid": "340644",
+  "coordinates": {
+    "lat": 37.738047,
+    "lng": -122.474611
+  },
+  "parcel": {
+    "year_built": 1940,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 2150,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Inner Parkside",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 2671 18TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 309329,
+    "assessed_improvement_value": 344109,
+    "last_sale_date": "1992-11-04"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1940",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9421433S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1994-12-30",
+      "status_date": "2000-09-11",
+      "estimated_cost": 75000,
+      "description": "vertical addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9301366",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1993-01-28",
+      "status_date": "1993-10-09",
+      "estimated_cost": 8000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9221435",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-12-11",
+      "status_date": "1993-04-29",
+      "estimated_cost": 10000,
+      "description": "new kitchen counter tops, cap & appliances new fixtures",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=AVE&address_number=2671",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2478013E&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2478&lot=013E",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2478013E",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1995-03-16",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 16 March 1995",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/41minutesofsanfran1995san/page/n66/mode/1up",
+      "retrieved": "2026-10-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1995-03-16",
+      "kind": "planning decision",
+      "description": "Under its discretionary review powers, the City Planning Commission approved, 5-0, a one-storey vertical addition to the one-storey-over-garage house, modified to set the top floor's front back at a 45-degree angle.",
+      "source": "sf-planning-commission-minutes-1995-03-16"
+    }
+  ]
+}
