@@ -1,0 +1,170 @@
+{
+  "address": "50 Quint Street, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/quint-street/50/",
+  "apn": "5201001",
+  "block": "5201",
+  "lot": "001",
+  "eas_baseid": "374453",
+  "coordinates": {
+    "lat": 37.746471,
+    "lng": -122.388991
+  },
+  "parcel": {
+    "year_built": 1954,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 3,
+    "lot_area_sqft": 76202,
+    "building_area_sqft": 12188,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Comm and Ind",
+    "construction_type_code": "C",
+    "zoning": "PDR2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 0050 QUINT               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 10240460,
+    "last_sale_date": "2018-05-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1954",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202503041523",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-03-04",
+      "status_date": "2025-04-02",
+      "estimated_cost": 1,
+      "revised_cost": 17675,
+      "description": "base building improvements to (e) warehouse. provide new split system heat pump for heating and cooling serving offices and restroom spaces only. provide new restroom exhaust.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202311070300",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2023-11-07",
+      "status_date": "2023-11-07",
+      "estimated_cost": 400000,
+      "revised_cost": 0,
+      "description": "this project consists of (20) ev charging stations with dual stall delivery serving (40) parking stalls within (e) commercial parking lot that will be restriped.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202310118420",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-10-11",
+      "status_date": "2025-05-14",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to 202309015807. scope of work: updated structural details on sheet s2 and s4 per field inspectors comments.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202309015807",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-09-01",
+      "status_date": "2025-05-14",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "revision to 202304034918. replace approved ada ramp to ada lift at main entry at (e) parking lot (not affect public row). remove non-bearing interior partition.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202306140039",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-06-14",
+      "status_date": "2025-05-14",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa# 202304034918. remove fire alarm deferred submittal list-cover sheet only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202304034918",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-04-03",
+      "status_date": "2025-05-14",
+      "estimated_cost": 250000,
+      "revised_cost": 250000,
+      "description": "to comply w/# 202294504 vandalism and tenant improvement to upgrade ada compliant entry and restrooms. no change of use.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9901480",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-01-25",
+      "status_date": "1999-07-25",
+      "estimated_cost": 20000,
+      "description": "add trailer office, prefabed, upgrade hc parking,ramp&toilet",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8615081",
+      "type": "new construction",
+      "status": "cancelled",
+      "filed": "1986-11-28",
+      "status_date": "1990-01-30",
+      "estimated_cost": 560000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=QUINT&street_type=ST&address_number=50",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5201001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5201&lot=001",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5201001",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1995-02-02",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 2 February 1995",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/41minutesofsanfran1995san/page/n32/mode/1up",
+      "retrieved": "2026-10-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1995-02-02",
+      "kind": "planning decision",
+      "description": "The City Planning Commission refused, 4-0, an automobile dismantling business on the property (Motion 13820).",
+      "source": "sf-planning-commission-minutes-1995-02-02"
+    }
+  ]
+}

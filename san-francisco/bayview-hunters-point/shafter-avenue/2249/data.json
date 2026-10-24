@@ -1,0 +1,103 @@
+{
+  "address": "2249–2251 Shafter Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/shafter-avenue/2249/",
+  "apn": "5350059",
+  "block": "5350",
+  "lot": "059",
+  "eas_baseid": "503607",
+  "coordinates": {
+    "lat": 37.737651,
+    "lng": -122.402926
+  },
+  "address_range": "2249–2251",
+  "street_numbers_on_parcel": [
+    "2249",
+    "2251"
+  ],
+  "parcel": {
+    "lot_area_sqft": 5000,
+    "lot_frontage_ft": 50,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Comm and Ind",
+    "construction_type_code": "NA",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "2251 2249 SHAFTER             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 195452
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9920546",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-09-29",
+      "status_date": "2000-01-27",
+      "estimated_cost": 18500,
+      "description": "pave vacant dirt lot,asphalt paving,add block wall,concrete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9412274S",
+      "type": "new construction",
+      "status": "expired",
+      "filed": "1994-08-03",
+      "status_date": "1999-10-22",
+      "estimated_cost": 120000,
+      "description": "erect a one story warehouse",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHAFTER&street_type=AVE&address_number=2249",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5350059&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5350&lot=059",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5350059",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1995-06-15",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 15 June 1995",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/41minutesofsanfran1995san/page/n140/mode/1up",
+      "retrieved": "2026-10-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1995-06-15",
+      "kind": "planning decision",
+      "description": "The City Planning Commission approved, 6-0, amending its earlier authorisation for the lot's reclassification from First Residential to M-1 light industrial (Motion 13896).",
+      "source": "sf-planning-commission-minutes-1995-06-15"
+    }
+  ]
+}

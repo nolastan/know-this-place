@@ -1,0 +1,120 @@
+{
+  "address": "164 Huntington Drive, San Francisco, CA 94132",
+  "path": "/san-francisco/sunset-parkside/huntington-drive/164/",
+  "apn": "7274006",
+  "block": "7274",
+  "lot": "006",
+  "eas_baseid": "419775",
+  "coordinates": {
+    "lat": 37.732392,
+    "lng": -122.495836
+  },
+  "parcel": {
+    "year_built": 1953,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3545,
+    "building_area_sqft": 2208,
+    "basement_area_sqft": 625,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Lake Shore",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 0164 HUNTINGTON          DR0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 282403,
+    "assessed_improvement_value": 345535,
+    "last_sale_date": "1989-07-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1953",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9411990",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1994-07-27",
+      "status_date": "1996-06-20",
+      "estimated_cost": 18000,
+      "revised_cost": 65533,
+      "description": "horizontal",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8918263",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-09-26",
+      "status_date": "1989-12-29",
+      "estimated_cost": 686,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8600545",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-01-15",
+      "status_date": "1986-02-18",
+      "estimated_cost": 3037,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HUNTINGTON&street_type=DR&address_number=164",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7274006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7274&lot=006",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7274006",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1995-03-09",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 9 March 1995",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/41minutesofsanfran1995san/page/n58/mode/1up",
+      "retrieved": "2026-10-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1995-03-09",
+      "kind": "planning decision",
+      "description": "With no opposition filed, the City Planning Commission approved, 6-0, a two-floor full-width rear extension of the house projecting up to 22 feet, leaving a rear yard about 27 feet deep.",
+      "source": "sf-planning-commission-minutes-1995-03-09"
+    }
+  ]
+}

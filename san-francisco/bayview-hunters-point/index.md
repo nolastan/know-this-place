@@ -16,6 +16,7 @@ San Francisco's south-eastern quarter, settled from the 1860s as the industrial 
 - [Cesar Chavez Street](cesar-chavez-street/) — 1 building, built 1900.
 - [Charter Oak Avenue](charter-oak-avenue/) — 1 building, built 1956.
 - [Davidson Avenue](davidson-avenue/) — 1 building, built 1950.
+- [Donner Avenue](donner-avenue/) — 1 building, built 1996.
 - [Dorman Avenue](dorman-avenue/) — 1 building, built 1947.
 - [Earl Street](earl-street/) — 1 building, built 1947.
 - [Egbert Avenue](egbert-avenue/) — 2 buildings, built 1900–1910.
@@ -60,6 +61,7 @@ San Francisco's south-eastern quarter, settled from the 1860s as the industrial 
 - [Rankin Street](rankin-street/) — 1 building, built 1962.
 - [Revere Avenue](revere-avenue/) — 1 building, built 1900.
 - [San Bruno Avenue](san-bruno-avenue/) — 1 building, built 1906.
+- [Scotia Avenue](scotia-avenue/) — 1 building, built 1945.
 - [Selby Street](selby-street/) — 1 building, built 1951.
 - [Shafter Avenue](shafter-avenue/) — 1 building, built 1900.
 - [Third Street](3rd-street/) — 54 buildings, built 1872–2013.
@@ -67,6 +69,7 @@ San Francisco's south-eastern quarter, settled from the 1860s as the industrial 
 - [Thornton Avenue](thornton-avenue/) — 1 building, built 1910.
 - [Topeka Avenue](topeka-avenue/) — 1 building, built 1946.
 - [Underwood Avenue](underwood-avenue/) — 5 buildings, built 1900–1939.
+- [Van Dyke Avenue](van-dyke-avenue/) — 1 building, built 1996.
 - [Venus Street](venus-street/) — 1 building, built 1941.
 - [Wallace Avenue](wallace-avenue/) — 1 building, built 1958.
 - [Whitney Young Circle](whitney-young-circle/) — 1 building.

@@ -1,0 +1,147 @@
+{
+  "address": "3701 21st Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/21st-street/3701/",
+  "apn": "3621098",
+  "block": "3621",
+  "lot": "098",
+  "eas_baseid": "464453",
+  "coordinates": {
+    "lat": 37.756086,
+    "lng": -122.430291
+  },
+  "parcel": {
+    "year_built": 1997,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 5,
+    "bedrooms": 5,
+    "lot_area_sqft": 4410,
+    "building_area_sqft": 4294,
+    "lot_depth_ft": 26,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 3701 21ST                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2907501,
+    "assessed_improvement_value": 1675778,
+    "last_sale_date": "2002-05-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Manual change by Planning staff",
+    "yearbuilt": "1997",
+    "survey_name": "MINERAL SPRINGS HILL",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9612283",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-07-09",
+      "status_date": "1997-02-06",
+      "estimated_cost": 1,
+      "description": "revision to 9504443",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9504441",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "1995-03-29",
+      "status_date": "1996-07-12",
+      "description": "demolish garage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9504442",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "1995-03-29",
+      "status_date": "1996-06-28",
+      "description": "demolish a two story single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9504443S",
+      "type": "new construction wood frame",
+      "status": "expired",
+      "filed": "1995-03-29",
+      "status_date": "1997-01-03",
+      "estimated_cost": 300000,
+      "description": "erect a three story single family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1995–2002",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=3701",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3621098&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3621&lot=098",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3621098",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1995-07-13",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 13 July 1995",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/41minutesofsanfran1995san/page/n169/mode/1up",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1995-10-19",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 19 October 1995",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/41minutesofsanfran1995san/page/n291/mode/1up",
+      "retrieved": "2026-10-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1995-07-13",
+      "kind": "occupancy",
+      "description": "A single-family house stood on the corner, which a project under environmental review proposed to demolish for four three-storey-over-garage houses.",
+      "source": "sf-planning-commission-minutes-1995-07-13"
+    },
+    {
+      "date": "1995-10-19",
+      "kind": "planning decision",
+      "description": "Under its discretionary review powers, the City Planning Commission approved, 4-2, demolishing the single-family house on the corner of Sanchez Street for four three-storey single-family houses on the four lots.",
+      "source": "sf-planning-commission-minutes-1995-10-19"
+    }
+  ]
+}
