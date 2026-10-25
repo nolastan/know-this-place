@@ -39,6 +39,7 @@ The city's Sunset/Parkside analysis neighborhood — the avenues laid out across
 - [Forest View Drive](forest-view-drive/) — 1 building, built 1940.
 - [Gellert Drive](gellert-drive/) — 1 building, built 1951.
 - [Great Highway](great-highway/) — 2 buildings, built 1908–1946.
+- [Huntington Drive](huntington-drive/) — 1 building, built 1953.
 - [Irving Street](irving-street/) — 8 buildings, built 1925–1950.
 - [Judah Street](judah-street/) — 12 buildings, built 1920–2008.
 - [Kirkham Street](kirkham-street/) — 2 buildings, built 1933–1947; 1 in the Picturesque Period Revival Tracts Historic District.

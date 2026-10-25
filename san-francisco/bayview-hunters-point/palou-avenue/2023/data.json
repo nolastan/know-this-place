@@ -1,0 +1,120 @@
+{
+  "address": "2023 Palou Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/palou-avenue/2023/",
+  "apn": "5331052",
+  "block": "5331",
+  "lot": "052",
+  "eas_baseid": "375912",
+  "coordinates": {
+    "lat": 37.738268,
+    "lng": -122.399003
+  },
+  "parcel": {
+    "year_built": 1944,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1635,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Silver Terrace",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 2023 PALOU               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 159122,
+    "assessed_improvement_value": 292020,
+    "last_sale_date": "1992-05-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1944",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200009150717",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-09-15",
+      "status_date": "2000-11-14",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renewal of application 9926180 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9926180",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-12-13",
+      "status_date": "2000-11-17",
+      "estimated_cost": 1,
+      "description": "re-new appl 9414702s for final inspection approved for add",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9414702S",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1994-09-21",
+      "status_date": "2000-11-17",
+      "estimated_cost": 35000,
+      "revised_cost": 77667,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PALOU&street_type=AVE&address_number=2023",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5331052&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5331&lot=052",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5331052",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1995-05-18",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 18 May 1995",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/41minutesofsanfran1995san/page/n120/mode/1up",
+      "retrieved": "2026-10-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1995-05-18",
+      "kind": "planning decision",
+      "description": "With no opposition filed, the City Planning Commission approved, 5-0, a two-storey rear addition, 25 by 19.5 feet, to the two-storey, 20-foot-high single-family house.",
+      "source": "sf-planning-commission-minutes-1995-05-18"
+    }
+  ]
+}

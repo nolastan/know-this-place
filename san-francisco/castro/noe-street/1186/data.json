@@ -1,0 +1,115 @@
+{
+  "address": "1186 Noe Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/noe-street/1186/",
+  "apn": "6538003",
+  "block": "6538",
+  "lot": "003",
+  "eas_baseid": "401668",
+  "coordinates": {
+    "lat": 37.750166,
+    "lng": -122.432028
+  },
+  "parcel": {
+    "year_built": 1904,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2670,
+    "building_area_sqft": 1346,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 1186 NOE                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 106699,
+    "assessed_improvement_value": 283730
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9315479",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-09-08",
+      "status_date": "1993-09-16",
+      "estimated_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8705238",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-04-22",
+      "status_date": "1988-04-04",
+      "estimated_cost": 14000,
+      "description": "horizontal extension, garage installation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8301232",
+      "type": "new construction wood frame",
+      "status": "cancelled",
+      "filed": "1983-02-11",
+      "status_date": "1983-07-06",
+      "estimated_cost": 13000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NOE&street_type=ST&address_number=1186",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6538003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6538&lot=003",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6538003",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1995-10-19",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 19 October 1995",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/41minutesofsanfran1995san/page/n289/mode/1up",
+      "retrieved": "2026-10-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1995-10-19",
+      "kind": "planning decision",
+      "description": "The City Planning Commission approved with conditions, 6-0, renting one bedroom of the house as a bed-and-breakfast inn (Motion 13985).",
+      "source": "sf-planning-commission-minutes-1995-10-19"
+    }
+  ]
+}

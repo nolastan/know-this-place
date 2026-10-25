@@ -6,14 +6,15 @@
 >
 > - **Kind:** meeting minutes (scanned volumes) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 34 of 52 volumes read (July 1968 – December 1980, and
->   1994): 9,913 pages, 3,788 findings, 1,869 resolved, 1,735 published.
->   18 volumes remain — 1995–2005. July–December 1975 is in no
+> - **Coverage:** 35 of 52 volumes read (July 1968 – December 1980, and
+>   1994–1995): 10,240 pages, 4,095 findings, 2,091 resolved, 1,951 published.
+>   17 volumes remain — 1996–2005. July–December 1975 is in no
 >   volume, nor is the regular meeting of 16 March 1978; volume 37
 >   holds only 17 of June – November 1978's meetings, volume 38 only
 >   34 of 1979's, volume 39 has no record of 7 February or 14 August 1980,
 >   and volume 40 holds no meeting of 5–26 May, June, July, 10 November or
->   December 1994.
+>   December 1994, and volume 41 none of 16 February, 23 March, 26 October
+>   or 2 November 1995.
 > - **Local corpus:** `research/corpora/sf-planning-commission-minutes/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -54,7 +55,8 @@
 | 38 | 1979 whole (`volume` "1979") | **read in full** 2026-10-20; it holds 34 regular meetings, 4 January – 20 December — none of 22 and 29 March, 5 and 19 April, 10 and 31 May, 12 and 19 July, 20 and 27 September, 4 and 18 October, 1, 15 and 29 November or 6 December |
 | 39 | 1980 whole (`volume` "1980") | **read in full** 2026-10-22; 49 meetings, 3 January – 18 December, each printed as a summary and then as minutes, one or the other missing for many; no record of 7 February or 14 August |
 | 40 | 1994 (`volume` "1994") | **read in full** 2026-10-23; 30 meetings, 6 January – 17 November, action minutes only; none of 5, 19 and 26 May, June, July, 10 November or December, and 31 March, 7 April and 15 September cancelled |
-| 41–58 | 1995–2005 | unread |
+| 41 | 1995 (`volume` "1995") | **read in full** 2026-10-24; 43 meeting days, 9 January – 14 December, action minutes; none of 16 February, 23 March, 26 October or 2 November, 17 August bound twice, and 1 June, 31 August, 23 November and 21 December cancelled |
+| 42–58 | 1996–2005 | unread |
 | — | 1981–1993 | in no volume |
 | — | before July 1968 | not in this collection. The Commission dates from 1942 |
 
@@ -66,7 +68,9 @@
   - `<id>_hocr_searchtext.txt.gz` — the OCR text
   - `<id>_hocr_pageindex.json.gz` — byte offsets into it, one span per leaf
   - `<id>_scandata.xml` — the leaf list, and which leaves are colour cards
-  **Split on the page index, not on the `_djvu.txt`.** The one-file text has no
+  **Split on the page index, not on the `_djvu.txt`** — its rows are
+  `[text_start, text_end, html_start, html_end]`; slice the search text with
+  the first two. The one-file text has no
   page separators, and a citation has to name a page. The page index carries
   **one span per scandata leaf, the two colour cards included** (leaf 0 and the
   last), so count a leaf's viewer number among the leaves `scandata.xml` does
@@ -377,6 +381,17 @@
   Lucinda Weeks) were rezoned from P for housing at long evening hearings;
   their environmental reviews print the old school buildings' storeys and
   floor areas, which are worth taking.
+- **1995 is the year approved buildings change number.** A decision on a
+  new house names the number in its permit application, and the house that
+  was built can carry another: 3008 25th Avenue is 3018, built 1995, and 177
+  Montcalm is 199, built 1997, each alone on the lot the minutes print.
+  Where EAS has no record of the number, look the printed lot up and read
+  the roll's build year before calling it dead.
+- **A conversion approved this year can already be a dropped lot.** 265
+  Union's six-unit conversion was approved on 12 January 1995; sf-parcels
+  records its printed Lot 24 dropped on 25 January 1996, and EAS joins 265
+  by point to 287-289 Union next door. Check every condominium-conversion
+  finding against its printed lot, not the join.
 - **People:** The minutes are *full* of them: applicants, their attorneys and
   architects, objecting neighbours, improvement-club officers, the
   commissioners and the staff, all named in the narrative of every hearing.
@@ -422,13 +437,43 @@
   `minutes-1980.json`.
   volume 40, the 30 meetings of 1994 the scan holds, into
   `minutes-1994.json`.
-  **Next: volumes 41–58 (1995–2005).** Volume 40 settled the question the
+  volume 41, the 43 meeting days of 1995 the scan holds, into
+  `minutes-1995.json`.
+  **Next: volumes 42–58 (1996–2005).** Volume 41 was 327 text pages
+  (892,000 characters) and filled one nightly run for a single reader; a
+  later volume much past that should be split across two runs by meeting.
+  **Earlier note, from volume 40:** Volume 40 settled the question the
   last note left open: 1994 is the same Commission in a different document —
   action minutes, no staff report — and it is still worth reading (199
   findings, 153 on pages). Size by text pages: volume 40 was 199 text pages
   (486,000 characters) and one nightly run for a single reader with time to
   spare; a later volume of up to about 400 text pages should also fit.
-- **Verified:** **2026-10-23** (volume 40, 1994: 199 OCR pages with text
+- **Verified:** **2026-10-24** (volume 41, 1995: 327 OCR pages with text
+  out of 350 viewer pages (352 scanned leaves), read in one session by a
+  single reader with no sub-agents; 43 meeting days, 9 January to 14
+  December. 307 findings — 258 decisions, 45 statements of what stood on or
+  occupied a property, 4 landmark actions. 222 resolved: 211 by the EAS join
+  (two after aliasing ARMY to CESAR CHAVEZ) and 7 placed by hand — 1568
+  Haight on the printed lot the point join had missed; the Notre Dame Girls
+  High School, El Capitan, Stonestown and Laguna Honda Hospital by name on
+  pages the site carries; 3008 25th Avenue and 177 Montcalm on their
+  printed lots, where the houses approved in 1995 were built as 3018 and
+  199 — while 3 joins were taken back by hand as condominiums (265 Union,
+  1940 Broadway twice). 85 unresolved: 56 condominiums today (#446) — the
+  year again converts dozens of six-unit buildings — 10 ranges now split
+  across parcels, 10 at numbers EAS does not hold or cannot join, 9 with no
+  street number (two open-space sites, Pier 39 twice, an illegible Rhode
+  Island number). 216 published on 192 pages, 116 of them seeded; 6
+  declined, five as already on the page and one a parcel's second address.
+  What the pass learned: the Internet Archive page index's spans are
+  `[text_start, text_end, html_start, html_end]` — splitting on the last
+  two fields gives 22 pages of text and 328 empty ones; a decision on a new
+  house numbered in its application can sit on a parcel the built house
+  took another number on, and the printed lot with the roll's build year
+  settles it; and an approved conversion's lot can drop out of sf-parcels
+  months later while EAS still joins the number by point next door, so a
+  condominium conversion is checked against its printed lot, not the join.)
+  **2026-10-23** (volume 40, 1994: 199 OCR pages with text
   out of 220 viewer pages (222 scanned leaves), read in one session by a
   single reader with no sub-agents; 30 meetings, 6 January to 17 November.
   199 findings — 161 decisions, 35 statements of what stood on or occupied

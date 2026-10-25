@@ -9,6 +9,7 @@ A working-class residential district in the city's south-east, laid out in the e
 - [Athens Street](athens-street/) — 1 building, built 1925.
 - [Avalon Avenue](avalon-avenue/) — 1 building, built 1910.
 - [Carter Street](carter-street/) — 1 building, built 2004.
+- [France Avenue](france-avenue/) — 1 building, built 1906.
 - [Geneva Avenue](geneva-avenue/) — 1 building, built 1922.
 - [La Grande Avenue](la-grande-avenue/) — 1 building, built 1957.
 - [Lisbon Street](lisbon-street/) — 1 building, built 1906.
@@ -16,6 +17,7 @@ A working-class residential district in the city's south-east, laid out in the e
 - [Madrid Street](madrid-street/) — 1 building, built 1911.
 - [Mission Street](mission-street/) — 1 building, built 1982.
 - [Moscow Street](moscow-street/) — 1 building.
+- [Munich Street](munich-street/) — 2 buildings, built 1920–1927.
 - [Naples Street](naples-street/) — 1 building, built 1910.
 - [Ney Street](ney-street/) — 2 buildings, built 1900–1965.
 - [Paris Street](paris-street/) — 1 building, built 1915.
