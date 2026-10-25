@@ -38,6 +38,7 @@ Merced Heights, the ridge between them, was mostly built after World War II.
 - [Sagamore Street](sagamore-street/) — 1 building, built 1890.
 - [Summit Street](summit-street/) — 1 building, built 1936.
 - [Thrift Street](thrift-street/) — 1 building, built 1949.
+- [Whittier Street](whittier-street/) — 1 building, built 1905.
 
 ## Parks and public spaces
 

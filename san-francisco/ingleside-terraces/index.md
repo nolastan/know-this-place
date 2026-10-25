@@ -18,6 +18,7 @@ Court.
 - [Junipero Serra Boulevard](junipero-serra-boulevard/) — 1 building, built 1936.
 - [Mercedes Way](mercedes-way/) — 4 buildings, built 1912–1914; 4 in the Ingleside Terrace Historic District.
 - [Moncada Way](moncada-way/) — 1 building, built 1912; 1 in the Ingleside Terrace Historic District.
+- [Monticello Street](monticello-street/) — 1 building, built 1925; 1 in the Ingleside Terrace Historic District.
 - [Ocean Avenue](ocean-avenue/) — 4 buildings, built 1917–1933; 1 in the Ingleside Terrace Historic District.
 - [Paloma Avenue](paloma-avenue/) — 4 buildings, built 1912–1914; 4 in the Ingleside Terrace Historic District.
 - [Ralston Street](ralston-street/) — 1 building, built 1928.

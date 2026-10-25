@@ -1,0 +1,143 @@
+{
+  "address": "33 Whittier Street, San Francisco, CA 94112",
+  "path": "/san-francisco/oceanview-merced-ingleside/whittier-street/33/",
+  "apn": "6474017",
+  "block": "6474",
+  "lot": "017",
+  "eas_baseid": "399356",
+  "coordinates": {
+    "lat": 37.709908,
+    "lng": -122.447678
+  },
+  "parcel": {
+    "year_built": 1905,
+    "units": 1,
+    "stories": 1,
+    "rooms": 11,
+    "bathrooms": 5,
+    "bedrooms": 6,
+    "lot_area_sqft": 4450,
+    "building_area_sqft": 2412,
+    "basement_area_sqft": 676,
+    "lot_depth_ft": 78,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Croker Amazon",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0000 0033 WHITTIER            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 78073,
+    "assessed_improvement_value": 319432
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1905",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200401144039",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-01-14",
+      "status_date": "2004-01-14",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew appl#200009079888 & 9902528 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200009079888",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-09-07",
+      "status_date": "2001-01-07",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "renew expired appl #9902528",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9902528",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1999-02-09",
+      "status_date": "2000-01-20",
+      "estimated_cost": 4000,
+      "revised_cost": 8000,
+      "description": "remodel groung floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9602593",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-02-15",
+      "status_date": "1996-05-07",
+      "estimated_cost": 2500,
+      "description": "correcting dimension errors",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9504350S",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1995-03-28",
+      "status_date": "1996-09-27",
+      "estimated_cost": 45000,
+      "revised_cost": 137000,
+      "description": "horizontal",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=WHITTIER&street_type=ST&address_number=33",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6474017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6474&lot=017",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6474017",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1995-06-15",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 15 June 1995",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/41minutesofsanfran1995san/page/n138/mode/1up",
+      "retrieved": "2026-10-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1995-06-15",
+      "kind": "planning decision",
+      "description": "With no opposition filed, the City Planning Commission approved, 6-0, a rear addition reaching as far into the lot as the neighbouring building to the northwest, nearly doubling the size of the building.",
+      "source": "sf-planning-commission-minutes-1995-06-15"
+    }
+  ]
+}

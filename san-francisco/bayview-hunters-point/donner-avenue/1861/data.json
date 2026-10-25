@@ -1,0 +1,100 @@
+{
+  "address": "1861 Donner Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/donner-avenue/1861/",
+  "apn": "5440A024",
+  "block": "5440A",
+  "lot": "024",
+  "eas_baseid": "378540",
+  "coordinates": {
+    "lat": 37.727952,
+    "lng": -122.400817
+  },
+  "parcel": {
+    "year_built": 1996,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2316,
+    "basement_area_sqft": 899,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Silver Terrace",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1861 DONNER              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 130264,
+    "assessed_improvement_value": 270338,
+    "last_sale_date": "1996-10-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1996",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9517218S",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1995-10-13",
+      "status_date": "1996-09-19",
+      "estimated_cost": 100000,
+      "revised_cost": 178200,
+      "description": "erect a two story single family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DONNER&street_type=AVE&address_number=1861",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5440A024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5440A&lot=024",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5440A024",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1995-12-07",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 7 December 1995",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/41minutesofsanfran1995san/page/n330/mode/1up",
+      "retrieved": "2026-10-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1995-12-07",
+      "kind": "planning decision",
+      "description": "With no opposition filed, the City Planning Commission approved, 6-0, a two-storey single-family house on the vacant lot.",
+      "source": "sf-planning-commission-minutes-1995-12-07"
+    }
+  ]
+}

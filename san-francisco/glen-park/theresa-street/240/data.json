@@ -1,0 +1,118 @@
+{
+  "address": "240 Theresa Street, San Francisco, CA 94112",
+  "path": "/san-francisco/glen-park/theresa-street/240/",
+  "apn": "6781027",
+  "block": "6781",
+  "lot": "027",
+  "eas_baseid": "407518",
+  "coordinates": {
+    "lat": 37.730151,
+    "lng": -122.435829
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1000,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Mission Terrace",
+    "analysis_neighborhood": "Outer Mission",
+    "property_location_raw": "0000 0240 THERESA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 876557,
+    "assessed_improvement_value": 375667,
+    "last_sale_date": "2021-12-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202201105665",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-01-10",
+      "status_date": "2022-03-11",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "fix water leak on stairs and front window. will caulk front stairs. repair some small stucco (patch) and caulk front window. replace dry rot damage if necessary.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9721208",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-10-22",
+      "status_date": "1998-02-22",
+      "estimated_cost": 4800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9511691S",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1995-07-26",
+      "status_date": "1996-05-10",
+      "estimated_cost": 55000,
+      "description": "add 2 bedrm in back of hse by horiz addtion & enlrg ktchn",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=THERESA&street_type=ST&address_number=240",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6781027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6781&lot=027",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6781027",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1995-11-16",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 16 November 1995",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/41minutesofsanfran1995san/page/n307/mode/1up",
+      "retrieved": "2026-10-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1995-11-16",
+      "kind": "planning decision",
+      "description": "With no opposition filed, the City Planning Commission approved, 6-0, a two-storey rear addition to the two-storey single-family house.",
+      "source": "sf-planning-commission-minutes-1995-11-16"
+    }
+  ]
+}

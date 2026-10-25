@@ -1,0 +1,120 @@
+{
+  "address": "2476 15th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/west-of-twin-peaks/15th-avenue/2476/",
+  "apn": "2411020",
+  "block": "2411",
+  "lot": "020",
+  "eas_baseid": "337989",
+  "coordinates": {
+    "lat": 37.741841,
+    "lng": -122.470907
+  },
+  "parcel": {
+    "year_built": 1930,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 3300,
+    "building_area_sqft": 2064,
+    "basement_area_sqft": 354,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "West Portal",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 2476 15TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 41324,
+    "assessed_improvement_value": 99160
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1930",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200006283944",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-06-28",
+      "status_date": "2000-08-21",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "repair stucco & sheathing at street side, approx 120 sq ft",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9803464",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-03-02",
+      "status_date": "1998-03-09",
+      "estimated_cost": 1,
+      "description": "renew appln #9513697",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9513697S",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1995-08-24",
+      "status_date": "1998-03-09",
+      "estimated_cost": 40000,
+      "description": "horizontal",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=15TH&street_type=AVE&address_number=2476",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2411020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2411&lot=020",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2411020",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1995-10-19",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 19 October 1995",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/41minutesofsanfran1995san/page/n287/mode/1up",
+      "retrieved": "2026-10-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1995-10-19",
+      "kind": "planning decision",
+      "description": "With no opposition filed, the City Planning Commission approved, 6-0, a two-storey rear addition.",
+      "source": "sf-planning-commission-minutes-1995-10-19"
+    }
+  ]
+}
