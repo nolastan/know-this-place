@@ -1,0 +1,188 @@
+{
+  "address": "101–105 8th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/8th-avenue/101/",
+  "apn": "1368001",
+  "block": "1368",
+  "lot": "001",
+  "eas_baseid": "301314",
+  "coordinates": {
+    "lat": 37.786358,
+    "lng": -122.466989
+  },
+  "address_range": "101–105",
+  "street_numbers_on_parcel": [
+    "101",
+    "103",
+    "105"
+  ],
+  "parcel": {
+    "year_built": 1921,
+    "units": 3,
+    "stories": 2,
+    "rooms": 16,
+    "bathrooms": 5,
+    "bedrooms": 8,
+    "lot_area_sqft": 2437.5,
+    "building_area_sqft": 4237,
+    "lot_depth_ft": 75,
+    "use": "Multi-Family Residential",
+    "property_class": "TIC Bldg 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0105 0101 08TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 3355336,
+    "assessed_improvement_value": 1713714,
+    "last_sale_date": "2020-08-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1921",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202603137496",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-03-13",
+      "status_date": "2026-03-13",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "2/f common area: replace around 30% dryrot on deck, back of bldg, non street facing. deck is 12' x 10'",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202212168511",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2022-12-16",
+      "status_date": "2026-01-23",
+      "estimated_cost": 60454,
+      "revised_cost": 70000,
+      "description": "interior kitchen and bath renovation of 3rd fl unit in a 3 story, 3 unit building. interior work includes new fixtures, finishes, casework in e kitchen and bath. removal and modification to interior non structural and load bearing wood framed partitons",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202212168516",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2022-12-16",
+      "status_date": "2026-01-23",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "remove window and infill opening on south elevatoin. patch with 1-hr rated assembly",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202203159999",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2022-03-15",
+      "status_date": "2024-07-23",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "remodel one unit to connect to 1st story. convert storage & garage space into 2 bedroom & 2 baths. remodel 2nd story kitchen & bath. add stair to connect to lower level.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202103126480",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-03-12",
+      "status_date": "2021-07-26",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "kitchen and bathroom remodel in kind. replace water heater & furnise.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200802074236",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-02-07",
+      "status_date": "2008-03-04",
+      "estimated_cost": 24473,
+      "revised_cost": 24473,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9613868",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-07-31",
+      "status_date": "1998-02-02",
+      "estimated_cost": 12800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8307554",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-08-04",
+      "status_date": "1986-03-04",
+      "estimated_cost": 1640,
+      "description": "to bring building into full compliance with the provisions",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=08TH&street_type=AVE&address_number=101",
+      "retrieved": "2026-10-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1368001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1368&lot=001",
+      "retrieved": "2026-10-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1368001",
+      "retrieved": "2026-10-25"
+    },
+    {
+      "id": "bluxome-townsend-hd-2009",
+      "name": "Christina Dikas (Page & Turnbull), District Record: Bluxome and Townsend Warehouse Historic District, DPR 523D, June 2009",
+      "query": "https://default.sfplanning.org/GIS/SouthSoMa/Docs/2009-06-30_Bluxome%20and%20Townsend%20Dform.pdf",
+      "listing": "https://sfgov.org/sfplanningarchive/south-market-area-historic-resource-survey",
+      "retrieved": "2026-10-25"
+    },
+    {
+      "id": "western-soma-hd-2010",
+      "name": "Christina Dikas (Page & Turnbull) and N. Moses Corrette (San Francisco Planning Department), District Record: Western SoMa Light Industrial and Residential Historic District, DPR 523D, 31 March 2009, revised 18 October 2010",
+      "query": "https://default.sfplanning.org/GIS/SouthSoMa/Docs/DPR523D-WesternSOMALightResidential.pdf",
+      "listing": "https://sfgov.org/sfplanningarchive/south-market-area-historic-resource-survey",
+      "retrieved": "2026-10-25"
+    }
+  ],
+  "building": {
+    "builder": "H.H. Larsen & Bro.",
+    "sources": [
+      "bluxome-townsend-hd-2009",
+      "western-soma-hd-2010"
+    ],
+    "architect": "Albert W. Burgren"
+  }
+}

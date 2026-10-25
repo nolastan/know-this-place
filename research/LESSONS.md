@@ -2946,3 +2946,22 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   that names a commissioner; for any source whose spec bars names, grep the
   quotes, not only the descriptions, before writing the file.* (2026-10-20,
   [sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))
+- **A survey's district records and its context statement are one document
+  twice.** The South of Market context statement reprints the architect lists
+  and biographies of the survey's DPR 523D district records almost word for
+  word, and it reached the pages first; 57 of the district records' 190
+  resolved findings were already there. What the records add is what the
+  statement compressed out — builders, developers, business occupants by
+  year, the names of lodginghouses. *Before reading a district record, peek
+  the context statement that cites it; expect its lists to be duplicates and
+  read for the rest.* (2026-10-25,
+  [sources/sf-context-statements.md](sources/sf-context-statements.md))
+- **Seeding a page for a fact about a building the roll says is gone makes a
+  page to delete.** The replacement-building scan in `check.py --overlap` read
+  the roll year off the page, so it was blind to every page a batch had yet to
+  seed, and a run seeded three pages whose only fact was a credit for the
+  building before (rolls of 1993, 1995, 2018). The scan now reads the year out
+  of the resolver's `method` for unseeded paths and marks them
+  `(not seeded yet)`. *Run `--overlap` before `manifest`, not only after
+  `seed-list`.* (2026-10-25,
+  [sources/sf-context-statements.md](sources/sf-context-statements.md))

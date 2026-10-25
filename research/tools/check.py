@@ -795,7 +795,10 @@ def overlap(path: Path) -> None:
       The 1975-1982 downtown environmental reports needed it eleven times in
       one batch, because a tower's EIR is mostly a description of what the
       tower removed. Kinds that already say it (``site history``,
-      ``demolition``) are exempt.
+      ``demolition``) are exempt. It also runs on a page the batch has not
+      seeded yet, reading the roll year out of the resolver's ``method``, so
+      run ``--overlap`` before ``manifest``: a fact about a building the roll
+      says was replaced does not earn a new page.
     * **the roll year** — a finding dated exactly the parcel's
       ``year_built`` whose fact is not the building going up. Every page
       already prints the assessor's year in its "Built NNNN" tag, so such a
@@ -862,6 +865,17 @@ def overlap(path: Path) -> None:
         page = page_file(res["path"])
         if page is None:
             missing += 1
+            # Scan five still runs on a page the batch has yet to seed: the
+            # resolver's method carries the roll year, and seeding a page for a
+            # building the roll says replaced the one the fact is about makes a
+            # page to delete (three in the SoMa district-records run).
+            m = re.search(r"\bbuilt (\d{4})\b", res.get("method", ""))
+            built, mine_year = (int(m.group(1)) if m else None), _year(finding.get("date"))
+            if (built and mine_year and built - mine_year > 4
+                    and finding.get("kind") not in _GONE_EXEMPT
+                    and not _GONE_FRAME.search(finding.get("description", ""))):
+                gone_hits.append((finding.get("id", "?"), res["path"] + " (not seeded yet)",
+                                  mine_year, built, finding.get("description", "")[:70]))
             continue
         try:
             doc = json.loads(page.read_text(encoding="utf-8"))
