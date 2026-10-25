@@ -185,7 +185,7 @@ sit in — the three it touched most, and how many in all.
 | `sf-context-statements/russian-hill-hcs.json` | 109 | 255 KB | 1857–2006 | 67 | 57 | `russian-hill`, `pacific-heights`, `nob-hill` +5 |
 | `sf-context-statements/sexual-identity-subcultures.json` | 188 | 347 KB | 1929–1993 | 148 | 114 | `south-of-market`, `mission`, `north-beach` +7 |
 | `sf-context-statements/showplace-square-survey.json` | 941 | 1.8 MB | 1867–2011 | 823 | 576 | `mission`, `mission-bay`, `south-of-market` +1 |
-| `sf-context-statements/soma-district-records.json` | 219 | 391 KB | 1896–1997 | 190 | 124 | `south-of-market`, `east-cut`, `mission` +5 |
+| `sf-context-statements/soma-district-records.json` | 219 | 397 KB | 1896–1997 | 190 | 124 | `south-of-market`, `east-cut`, `mission` +5 |
 | `sf-context-statements/soma-filipino-heritage.json` | 153 | 280 KB | 1900–2011 | 111 | 68 | `south-of-market`, `east-cut`, `chinatown` +11 |
 | `sf-context-statements/soma-survey.json` | 1,493 | 3.7 MB | 2010 | 1,369 | 1,091 | `south-of-market`, `mission`, `east-cut` +2 |
 | `sf-context-statements/south-of-market-hcs.json` | 155 | 274 KB | 1853–2008 | 117 | 103 | `south-of-market`, `east-cut`, `mission` +3 |
