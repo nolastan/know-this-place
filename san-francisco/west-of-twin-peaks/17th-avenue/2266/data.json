@@ -1,0 +1,128 @@
+{
+  "address": "2266 17th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/west-of-twin-peaks/17th-avenue/2266/",
+  "apn": "2333A027",
+  "block": "2333A",
+  "lot": "027",
+  "eas_baseid": "334632",
+  "coordinates": {
+    "lat": 37.745717,
+    "lng": -122.473409
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 4,
+    "bedrooms": 5,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 3468,
+    "basement_area_sqft": 662,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Inner Parkside",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 2266 17TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 315589,
+    "assessed_improvement_value": 295662,
+    "last_sale_date": "1994-08-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202501218708",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-01-21",
+      "status_date": "2025-03-06",
+      "estimated_cost": 32776,
+      "revised_cost": 32776,
+      "description": "full bathroom remodel. change the bathtub to walk in shower. replace vanity. lights, toilet and tiles. no removal and adding wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201509308453",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-09-30",
+      "status_date": "2015-09-30",
+      "estimated_cost": 29309,
+      "revised_cost": 29309,
+      "description": "install 21 sq. ft. hardie fiber cement of left/right/rear of house.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9415276",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1994-09-23",
+      "status_date": "1996-02-27",
+      "estimated_cost": 100000,
+      "description": "horizontal/vertical",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1994–2025",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=AVE&address_number=2266",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2333A027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2333A&lot=027",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2333A027",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1995-01-26",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 26 January 1995",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/41minutesofsanfran1995san/page/n27/mode/1up",
+      "retrieved": "2026-10-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1995-01-26",
+      "kind": "planning decision",
+      "description": "Under its discretionary review powers, the City Planning Commission approved, 5-0, a one-storey rear addition with a vertical and horizontal addition to the building.",
+      "source": "sf-planning-commission-minutes-1995-01-26"
+    }
+  ]
+}

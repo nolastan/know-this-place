@@ -288,6 +288,18 @@ neighborhood hubs, because every one of them draws its picture through
   with its EXIF stripped. `"cropped": true` says the frame cut the original, and
   the credit says so, as CC BY 4.0 asks. A
   larger copy, when one is wanted, comes from `source_url`, not the repo.
+- **Or taken for the site** — a contributed photo, sent from the
+  [Know This Photo](https://github.com/nolastan/know-this-photo) iPhone app as
+  a pull request on a `photo/<street>-<number>-<timestamp>` branch. The
+  photographer licenses it (CC BY-SA 4.0, CC BY 4.0 or CC0) and is the
+  `author`; it carries `"contributed": true` in place of a `source_url`, since
+  there is no page it came from, and `retrieved` is the day it was taken. The
+  credit then reads "Photo by Author, CC BY-SA 4.0" with no "via". The app
+  has already cropped, scaled, stripped and re-encoded the file as above and
+  blurred the faces and plate-like text it found; the review before merging is
+  the check that it found them all. The `via` name comes from
+  `seed_pages.PHOTO_SOURCES` by host, so an Unsplash or Pexels photo is
+  credited to its own site rather than to Commons.
 - **The building, not people**: a photo where a person can be recognised, a
   view *from* the place, a detail too close to say which building it is, or a
   picture of a different building of the same name is not used.

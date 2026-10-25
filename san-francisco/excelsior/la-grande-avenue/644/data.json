@@ -1,0 +1,129 @@
+{
+  "address": "644 La Grande Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/excelsior/la-grande-avenue/644/",
+  "apn": "6284014",
+  "block": "6284",
+  "lot": "014",
+  "eas_baseid": "395330",
+  "coordinates": {
+    "lat": 37.715976,
+    "lng": -122.427422
+  },
+  "parcel": {
+    "year_built": 1957,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 6934,
+    "building_area_sqft": 2085,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Excelsior",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0000 0644 LA GRANDE           AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 988801,
+    "assessed_improvement_value": 423771,
+    "last_sale_date": "2020-07-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1957",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201004261041",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2010-04-26",
+      "status_date": "2010-05-06",
+      "estimated_cost": 4600,
+      "revised_cost": 4600,
+      "description": "repair water leak and dry-rot in dining rm. south wall. remove & replace stucco @ exterior. install (n) gyp. bd. on interior.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9615161",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-08-15",
+      "status_date": "1996-10-11",
+      "estimated_cost": 1,
+      "description": "revision to application 9512758",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9512758S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1995-08-11",
+      "status_date": "1996-10-11",
+      "estimated_cost": 40000,
+      "description": "rear and rear addition-1 bedroom & 1 bath",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9503804",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-03-17",
+      "status_date": "1995-07-21",
+      "estimated_cost": 3880,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LA%20GRANDE&street_type=AVE&address_number=644",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6284014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6284&lot=014",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6284014",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1995-09-28",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 28 September 1995",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/41minutesofsanfran1995san/page/n264/mode/1up",
+      "retrieved": "2026-10-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1995-09-28",
+      "kind": "planning decision",
+      "description": "With no opposition filed, the City Planning Commission approved, 5-0, a 480-square-foot addition on the south side of the building near its rear wall.",
+      "source": "sf-planning-commission-minutes-1995-09-28"
+    }
+  ]
+}

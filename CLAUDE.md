@@ -73,5 +73,6 @@ To look at the result: `python3 scripts/build_site.py --serve` and open
 `http://localhost:8517`. That port, and no other — the map keys are restricted
 to it.
 
-Branch names are `feedback/issue-<N>`, `refresh/<YYYY-MM-DD>` or
-`seed/<area-slug>`. One concern per PR. Never push to `main`.
+Branch names are `feedback/issue-<N>`, `refresh/<YYYY-MM-DD>`,
+`seed/<area-slug>`, or `photo/<street>-<number>-<timestamp>` from the Know
+This Photo app. One concern per PR. Never push to `main`.

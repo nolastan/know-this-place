@@ -341,7 +341,8 @@ full schema, with the rules for `permits` / `permit_summary`, `hook`,
 
 ## Git and PR conventions
 
-- Branches: `feedback/issue-<N>`, `refresh/<YYYY-MM-DD>`, `seed/<area-slug>`.
+- Branches: `feedback/issue-<N>`, `refresh/<YYYY-MM-DD>`, `seed/<area-slug>`,
+  and `photo/<street>-<number>-<timestamp>` from the Know This Photo app.
 - **Sync before you start.** Run `git fetch origin` and check
   `git log --oneline HEAD..origin/main`. If the branch is behind `origin/main`,
   rebase (`git rebase origin/main`) before editing. Working on a stale branch

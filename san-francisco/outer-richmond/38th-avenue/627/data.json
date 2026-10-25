@@ -1,0 +1,161 @@
+{
+  "address": "627 38th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/38th-avenue/627/",
+  "apn": "1581004",
+  "block": "1581",
+  "lot": "004",
+  "eas_baseid": "309198",
+  "coordinates": {
+    "lat": 37.776979,
+    "lng": -122.49881
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 3129.6,
+    "building_area_sqft": 2710,
+    "basement_area_sqft": 50,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Outer Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0627 38TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 479020,
+    "assessed_improvement_value": 471038,
+    "last_sale_date": "1998-02-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9805657",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1998-04-02",
+      "status_date": "1998-08-13",
+      "estimated_cost": 5000,
+      "description": "replacement of fixtures",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9506492",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1995-05-04",
+      "status_date": "1998-12-07",
+      "estimated_cost": 10000,
+      "revised_cost": 13000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9504352",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-03-28",
+      "status_date": "1995-09-28",
+      "estimated_cost": 5300,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9504393",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1995-03-28",
+      "status_date": "1998-04-07",
+      "estimated_cost": 6835,
+      "description": "install vinyl siding",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9501313",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-02-01",
+      "status_date": "1995-03-03",
+      "estimated_cost": 3500,
+      "description": "change kitchen cabinets, replace sheetrock",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9501069",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-01-25",
+      "status_date": "1995-05-25",
+      "estimated_cost": 5000,
+      "description": "replace 26 windows-dble glaze-all more than 3ft frm prop lne",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9501000",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-01-24",
+      "status_date": "1995-03-03",
+      "estimated_cost": 2000,
+      "description": "floor (tile) (kitchen) and counter tile",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=38TH&street_type=AVE&address_number=627",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1581004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1581&lot=004",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1581004",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1995-10-05",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 5 October 1995",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/41minutesofsanfran1995san/page/n269/mode/1up",
+      "retrieved": "2026-10-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1995-10-05",
+      "kind": "planning decision",
+      "description": "With no opposition filed, the City Planning Commission approved, 5-0, legalising the existing deck, reconfiguring its stairs and removing an overhead structure.",
+      "source": "sf-planning-commission-minutes-1995-10-05"
+    }
+  ]
+}

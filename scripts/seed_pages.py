@@ -1623,8 +1623,17 @@ def indent_block(text: str, pad: str) -> str:
 
 PHOTO_KEYS = frozenset({
     "file", "width", "height", "title", "author", "author_url", "cropped",
-    "license", "license_url", "source_url", "retrieved",
+    "license", "license_url", "source_url", "contributed", "retrieved",
 })
+
+# The name the credit gives a photo's source, by host. A contributed photo,
+# taken for this site, has no source page and gets no "via".
+PHOTO_SOURCES = {
+    "commons.wikimedia.org": "Wikimedia Commons",
+    "unsplash.com": "Unsplash",
+    "www.pexels.com": "Pexels",
+    "pexels.com": "Pexels",
+}
 
 
 def page_photo(rec: dict) -> dict | None:
@@ -1662,7 +1671,10 @@ def photo_credit_html(photo: dict) -> str:
     if lic:
         lic_text = "public domain" if lic.lower() == "public domain" else lic
         bits += ", " + a(photo.get("license_url"), lic_text)
-    bits += ", via " + a(photo.get("source_url"), "Wikimedia Commons")
+    url = photo.get("source_url")
+    if url:
+        host = urllib.parse.urlsplit(url).hostname or ""
+        bits += ", via " + a(url, PHOTO_SOURCES.get(host, host))
     return bits
 
 

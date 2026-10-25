@@ -1,0 +1,134 @@
+{
+  "address": "1601 Fulton Street, San Francisco, CA 94117",
+  "path": "/san-francisco/western-addition/fulton-street/1601/",
+  "apn": "1185001",
+  "block": "1185",
+  "lot": "001",
+  "eas_baseid": "296644",
+  "coordinates": {
+    "lat": 37.776098,
+    "lng": -122.443282
+  },
+  "also_addressed": [
+    "543 LYON ST",
+    "547 LYON ST",
+    "549 LYON ST"
+  ],
+  "parcel": {
+    "year_built": 1890,
+    "units": 5,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 5,
+    "bedrooms": 5,
+    "lot_area_sqft": 3125,
+    "building_area_sqft": 5240,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 5 to 14 units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "North Panhandle",
+    "analysis_neighborhood": "Lone Mountain/USF",
+    "property_location_raw": "0000 1601 FULTON              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 105626,
+    "assessed_improvement_value": 158454
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1890",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "NOPA Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1870s–1910s",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202406053779",
+      "type": "sign - erect",
+      "status": "approved",
+      "filed": "2024-06-05",
+      "status_date": "2026-06-16",
+      "estimated_cost": 1,
+      "revised_cost": 3500,
+      "description": "prop h: to comply with awning amnesty program. legalize existing awning installed without permit. \"nopa corner market\"",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9208621",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1992-05-28",
+      "status_date": "1993-04-08",
+      "estimated_cost": 1302,
+      "description": "awning per plan",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "1992–2024",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FULTON&street_type=ST&address_number=1601",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1185001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1185&lot=001",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1185001",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44328191223116%2037.7760975204211)%27)",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1995-07-06",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 6 July 1995",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/41minutesofsanfran1995san/page/n163/mode/1up",
+      "retrieved": "2026-10-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1995-07-06",
+      "kind": "planning decision",
+      "description": "The City Planning Commission approved with conditions, 5-2, longer hours for the limited commercial non-conforming grocery store on the corner — to midnight Sunday to Wednesday and 2 a.m. Thursday to Saturday (Motion 13904).",
+      "source": "sf-planning-commission-minutes-1995-07-06"
+    }
+  ]
+}

@@ -2813,6 +2813,14 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   `addToAccessFormats=false`. *Before splitting any Internet Archive scan,
   confirm the mapping by finding one known quote on the viewer page a
   citation names.*
+  **Each span is four numbers, and the text offsets are the first two.**
+  `_hocr_pageindex.json` rows read `[text_start, text_end, html_start,
+  html_end]` — the first pair indexes `_hocr_searchtext.txt`, the second the
+  hOCR HTML. Slicing the search text with the last two gave volume 41 of the
+  Planning Commission minutes 22 pages of text and 328 empty ones, which
+  looks like a mostly blank scan rather than a wrong index. *If a split
+  leaves most leaves empty, check which pair of offsets you used before
+  believing the scan.*
 - **A word-count floor for "this page has text" drops the short pages that
   carry the votes.** Splitting volume 34 of the Planning Commission minutes,
   a filter keeping pages with 40 or more four-letter words skipped six pages

@@ -1,0 +1,127 @@
+{
+  "address": "1050 Munich Street, San Francisco, CA 94112",
+  "path": "/san-francisco/excelsior/munich-street/1050/",
+  "apn": "6443010",
+  "block": "6443",
+  "lot": "010",
+  "eas_baseid": "398330",
+  "coordinates": {
+    "lat": 37.711533,
+    "lng": -122.434374
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3558,
+    "building_area_sqft": 2261,
+    "basement_area_sqft": 340,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Croker Amazon",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0000 1050 MUNICH              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 520494,
+    "assessed_improvement_value": 223064,
+    "last_sale_date": "2011-11-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200601303314",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-01-30",
+      "status_date": "2006-09-11",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "remove existing room and closet i basement. construct new bedroom, closets, bathroom and storage area",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9715641",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-08-15",
+      "status_date": "1998-01-06",
+      "estimated_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9420074",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1994-12-07",
+      "status_date": "1996-05-20",
+      "estimated_cost": 300,
+      "revised_cost": 22860,
+      "description": "horizontal",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1994–2011",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MUNICH&street_type=ST&address_number=1050",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6443010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6443&lot=010",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6443010",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1995-03-02",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 2 March 1995",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/41minutesofsanfran1995san/page/n50/mode/1up",
+      "retrieved": "2026-10-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1995-03-02",
+      "kind": "planning decision",
+      "description": "With no opposition filed, the City Planning Commission approved, 4-0, a two-storey side and rear addition to the two-storey single-family house.",
+      "source": "sf-planning-commission-minutes-1995-03-02"
+    }
+  ]
+}

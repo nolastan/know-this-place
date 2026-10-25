@@ -18,6 +18,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Edgehill Way](edgehill-way/) — 1 building, built 1970.
 - [El Verano Way](el-verano-way/) — 1 building, built 1926.
 - [Faxon Avenue](faxon-avenue/) — 1 building, built 1918.
+- [Flood Avenue](flood-avenue/) — 1 building, built 1920.
 - [Foerster Street](foerster-street/) — 1 building, built 1900.
 - [Frida Kahlo Way](frida-kahlo-way/) — 1 building.
 - [Funston Avenue](funston-avenue/) — 1 building, built 1936.
@@ -39,6 +40,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Pacheco Street](pacheco-street/) — 1 building, built 1917; 1 in the Forest Hill Historic District.
 - [Plymouth Avenue](plymouth-avenue/) — 1 building, built 1918.
 - [Portola Drive](portola-drive/) — 1 building, built 1955.
+- [Rockdale Drive](rockdale-drive/) — 1 building, built 1930.
 - [Saint Francis Boulevard](saint-francis-boulevard/) — 1 building, built 1948; 1 in the St. Francis Wood Historic District.
 - [San Andreas Way](san-andreas-way/) — 1 building, built 1941; 1 in the St. Francis Wood Historic District.
 - [San Anselmo Avenue](san-anselmo-avenue/) — 1 building, built 1942; 1 in the St. Francis Wood Historic District.

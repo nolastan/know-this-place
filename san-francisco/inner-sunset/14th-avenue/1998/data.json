@@ -1,0 +1,147 @@
+{
+  "address": "1998 14th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/inner-sunset/14th-avenue/1998/",
+  "apn": "2121A032",
+  "block": "2121A",
+  "lot": "032",
+  "eas_baseid": "329765",
+  "coordinates": {
+    "lat": 37.751029,
+    "lng": -122.470571
+  },
+  "parcel": {
+    "year_built": 1955,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 2570,
+    "building_area_sqft": 1249,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Golden Gate Heights",
+    "analysis_neighborhood": "Inner Sunset",
+    "property_location_raw": "0000 1998 14TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 142138,
+    "assessed_improvement_value": 233262
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1955",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202605282059",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-05-28",
+      "status_date": "2026-06-04",
+      "estimated_cost": 25880,
+      "revised_cost": 25880,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9807363",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-04-27",
+      "status_date": "1998-05-15",
+      "estimated_cost": 200,
+      "description": "add 3 ft long bar counter with bar sink",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9725602",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-12-23",
+      "status_date": "1998-05-15",
+      "estimated_cost": 4000,
+      "description": "renew app # 9511533",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9511533S",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1995-07-25",
+      "status_date": "1998-05-15",
+      "estimated_cost": 25000,
+      "description": "horizontal",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9220429",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-11-23",
+      "status_date": "1993-03-23",
+      "estimated_cost": 2700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9101875",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-02-05",
+      "status_date": "1991-03-01",
+      "estimated_cost": 2695,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=14TH&street_type=AVE&address_number=1998",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2121A032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2121A&lot=032",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2121A032",
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1995-10-12",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 12 October 1995",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/41minutesofsanfran1995san/page/n275/mode/1up",
+      "retrieved": "2026-10-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1995-10-12",
+      "kind": "planning decision",
+      "description": "With no opposition filed, the City Planning Commission approved, 5-0, a horizontal addition to the single-family house.",
+      "source": "sf-planning-commission-minutes-1995-10-12"
+    }
+  ]
+}
