@@ -475,8 +475,13 @@ not exactly what the renderer produces from it. A conflict from step 3 goes in
 `unknowns` — a flat list of sentences, rendered on the line that closes the
 timeline — stated plainly and left unadjudicated.
 
-**Route B — the source names many buildings with no pages.** Generate
-`manifests/<batch>.json` with `resolve_eas.py manifest` (above), then:
+**Route B — the source names many buildings with no pages.** Run
+`check.py --overlap` first and settle what its *replacement building* scan
+lists as `(not seeded yet)`: the roll dates that parcel's building years after
+the fact. Frame it as site history if it is worth a page, or decline it — a
+page whose only fact is a credit for the building that was there before is
+not worth seeding. Then
+generate `manifests/<batch>.json` with `resolve_eas.py manifest` (above), and:
 
 ```bash
 python3 scripts/seed_pages.py seed-list --manifest research/manifests/<file>.json

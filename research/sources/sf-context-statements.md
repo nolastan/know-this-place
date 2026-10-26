@@ -22,9 +22,9 @@ document you are about to mine.
 
 | | |
 |---|---|
-| **Read in full** | 46 documents — listed under "Read into the repo so far" below, each with its own notes section. **The count is the length of that list**, checked on 2026-09-02; 46 with the SoMa survey table on 2026-10-21. The biographies collection is **one entry for eight PDFs**, so finishing it — volumes S–U and V–Z on 2026-09-02 — did not change it. If you add a document, add it to the list and count the list. |
+| **Read in full** | 47 documents — listed under "Read into the repo so far" below, each with its own notes section. **The count is the length of that list**, checked on 2026-09-02; 46 with the SoMa survey table on 2026-10-21. 47 with the survey's five district records on 2026-10-25. The biographies collection is **one entry for eight PDFs**, so finishing it — volumes S–U and V–Z on 2026-09-02 — did not change it. If you add a document, add it to the list and count the list. |
 | **Findings files** | One per document, under `findings/sf-context-statements/`. **Their counts are in [findings/INDEX.md](../findings/INDEX.md)**, which is generated from the files and cannot go stale; this cell used to list them by hand, ran to 6 KB, and said of itself that it was behind (removed 2026-10-21). |
-| **Remaining** | **No adopted statement is left unacquired.** #115 asked for the Market & Octavia Historic Resources Survey (the per-property record the 2007 context statement doesn't carry); this line said "still to acquire" long after `market-octavia-survey-forms` answered it on 2026-09-03 — a stale note that cost a 2026-09-22 session a full read-and-resolve pass on the already-published `market-octavia-hcs` context statement before the duplication was caught. The three **district-level** DPR 523 records the survey-forms pass read but did not extract are now also read (`market-octavia-district-records`, above) — 429 of their 434 rows are contributor-status *designations*, not construction facts, and were published to `historic_survey` panels rather than the timeline, since `check.py --overlap` found the appendix year-built rows in the sibling `market-octavia-hcs`/`-survey-forms` batches restate what the page already shows from the assessor roll. What is genuinely left: the `construction_history_as_recorded` alterations held in 111 already-published forms, unextracted because they need re-expressing one at a time; the Hayes Valley district's original 372 contributors, identified by a 1997 Caltrans survey and never individually listed anywhere this module has found; and the South of Market survey's six district records (South Park, South End Addition, Bluxome and Townsend, 6th Street Lodginghouse, Western SoMa Light Industrial and Residential, read for their contributor descriptions — the next batch, on disk at `corpora/sf-context-statements/soma-survey/`). The survey's per-property results table, which the statement cites as "attached", is read (`soma-survey`, 2026-10-21); its individual DPR 523A/B forms sit behind the survey's interactive map and are not fetched. Search open issues for `sf-context-statements`. |
+| **Remaining** | **No adopted statement is left unacquired.** #115 asked for the Market & Octavia Historic Resources Survey (the per-property record the 2007 context statement doesn't carry); this line said "still to acquire" long after `market-octavia-survey-forms` answered it on 2026-09-03 — a stale note that cost a 2026-09-22 session a full read-and-resolve pass on the already-published `market-octavia-hcs` context statement before the duplication was caught. The three **district-level** DPR 523 records the survey-forms pass read but did not extract are now also read (`market-octavia-district-records`, above) — 429 of their 434 rows are contributor-status *designations*, not construction facts, and were published to `historic_survey` panels rather than the timeline, since `check.py --overlap` found the appendix year-built rows in the sibling `market-octavia-hcs`/`-survey-forms` batches restate what the page already shows from the assessor roll. What is genuinely left: the `construction_history_as_recorded` alterations held in 111 already-published forms, unextracted because they need re-expressing one at a time; the Hayes Valley district's original 372 contributors, identified by a 1997 Caltrans survey and never individually listed anywhere this module has found; and, from the South of Market survey's district records (read 2026-10-25 as `soma-district-records`; there are five, not the six this line used to say), the pre-1906 South Park residents table, whose houses all burned, which could go on the South Park place page and nowhere else. The survey's per-property results table, which the statement cites as "attached", is read (`soma-survey`, 2026-10-21); its individual DPR 523A/B forms sit behind the survey's interactive map and are not fetched. Search open issues for `sf-context-statements`. |
 | **Batch unit** | one statement = one run. Most are 60–260 pages and go end to end in a session; take a second one if the first finishes early. |
 | **Reading order** | the earlier statements each taught something the next one needed. The two under "Traps that apply to every statement" below are the ones nobody should re-learn. |
 
@@ -928,6 +928,13 @@ document you are about to mine.
     `https://default.sfplanning.org/Preservation/soma_survey/` and
     `https://default.sfplanning.org/GIS/SouthSoMa/Docs/`. See "The South of
     Market survey table" below.
+  - The survey's five DPR 523D **district records**: Sixth Street
+    Lodginghouse (Anne Bloomfield, 1997, transcribed by N. Moses Corrette,
+    2010), Bluxome and Townsend Warehouse, South End Historic District
+    Addition and South Park (Christina Dikas, Page & Turnbull, 2009), and
+    Western SoMa Light Industrial and Residential (Dikas and Corrette,
+    2009–2010) — 223 pages, one findings file, a page source id each. See
+    "The South of Market survey's district records" below.
 - **Shape of the yield.** Two very different parts, and both are worth the
   pass:
   - **Appendix A, Table 1** is a per-property inventory — 159 rows carrying an
@@ -2567,6 +2574,54 @@ lists every survey file, and they all fetch plainly.
     3CD there). Neither is adjudicated.
 - **Citation label:** `South of Market Area Historic Resource Survey, 2011`;
   page source id `soma-historic-resource-survey`.
+
+## The South of Market survey's district records
+
+Five DPR 523D records on the same archived Planning page as the results table,
+plain fetches under `https://default.sfplanning.org/GIS/SouthSoMa/Docs/` (the
+dossier long said six; the page links five). Read whole on 2026-10-25 as
+`soma-district-records`, 223 PDF pages.
+
+- **What each gives.** Sixth Street Lodginghouse (5 pp.) is a contributor list
+  by block/lot with each hotel's 1914-directory name. Bluxome and Townsend (21),
+  the South End Addition (26) and South Park (47) narrate their contributors one
+  by one — designer, builder, client, first and long-running business occupants
+  — and close with architect biographies that name other works by street number
+  and year. Western SoMa (124) carries a 721-row element table, then lists of
+  hotels, flats, Romeo flats and designers by address, and biographies.
+- **Page source ids**, one per record: `sixth-street-lodginghouse-hd-1997`,
+  `bluxome-townsend-hd-2009`, `south-end-hd-addition-2009`,
+  `south-park-hd-2009`, `western-soma-hd-2010`.
+- **How it was published.** Historic names to `building.former_name`; credits to
+  `building.architect`/`builder`/`developer`; site history to
+  `building.site_before`/`former_address`; dated construction, occupancy and
+  sales to the timeline; a survey year that disagrees with the roll by more than
+  two years to `building.completed_conflict`.
+- **Cautions.**
+  - **Most of the designer lists were already on the pages.** The South of
+    Market context statement reprints these records' architect lists and
+    biographies almost word for word, and it was published first. 57 of 190
+    resolved findings were duplicates; what survived is the builders, the
+    developers, the occupants and the names the statement left out. Run
+    `--overlap` before writing a single description.
+  - **Western SoMa's element table is the results table.** Same APNs, codes,
+    ratings and notes as `soma-survey`; it was compared, not re-extracted.
+  - **The Sixth Street list's block/lot can contradict its number.** 96 Sixth
+    (Hotel Esmond) is printed on 3704/025, across the street from where 96
+    falls; it stays unresolved. The transcription also drops letters ("Hotel
+    Henr .") and adds glyphs ("Hötel"); a name one letter off the page's own
+    (Alton/Alden) was declined rather than guessed.
+  - **The designer lists outlive their buildings.** Six credits landed on
+    parcels the roll dates 1985–2023. `check.py --overlap` now flags these
+    before seeding (`(not seeded yet)`); this run seeded three such pages and
+    had to delete them.
+  - **People.** The South End and South Park records name residents from city
+    directories (1933–1982) and owners from chain-of-title research down to
+    2008. None was taken. Taken: designers and builders, developers documented
+    as historical figures (Robert McMillan, the Bothin Real Estate Co.), and
+    1914 lodginghouse names even where the name is the keeper's.
+- **Citation label:** the record's own author, title and date, as each page
+  source's `name` gives it.
 
 ## Verification log
 
@@ -5989,3 +6044,18 @@ extracted and must not be. Nothing else on the form is a private individual.
   records are next. Learned: the bottom-aligned export, the age cutoff's
   644 rows, and that the archived Planning site holds survey files the
   current site does not link — see LESSONS.md.)
+- **Verified:** 2026-10-25 (`soma-district-records`: the survey's five DPR 523D
+  district records read whole, 223 PDF pages. 219 findings, 190 resolved, 29
+  unresolved; 124 published on 106 pages, 13 of them seeded; 66 declined — 57
+  already on the page from the South of Market context statement, 6 on parcels
+  the roll says were rebuilt, 3 hotel names the page could not take. New on
+  the pages: 20 Sixth Street hotel names, builders and developers for the
+  Bluxome and Townsend and South End warehouses, the Morgan Oyster stable at
+  322 Ritch, the Austin-Western and Hercules years at 435 Brannan, Colgate's
+  1925 purchase of 630 Third, the Holy Trinity Greek Orthodox dedication at
+  335 7th, and architect credits on Richmond, Nob Hill and Pacific Heights
+  houses from the biographies. Coverage: these records are finished; the
+  South Park pre-1906 residents table is the one thing left in them. Learned:
+  the context statement had already mined the designer lists, and the
+  replacement-building scan was blind to pages not yet seeded — fixed in
+  `check.py`.)
