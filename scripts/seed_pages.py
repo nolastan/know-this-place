@@ -192,16 +192,11 @@ CRUMB_SEP = '<span class="crumb-sep" aria-hidden="true">›</span>'
 AREA_SUB = {("san-francisco", "castro"): "Eureka Valley"}
 
 # An analysis neighborhood can contain streets this site files under a
-# different neighborhood directory. Castro/Upper Market covers Corbett Heights,
-# which san-francisco/corbett-heights/AGENTS.md keeps separate on the strength
-# of local sources. Seeding those streets under castro/ would file them twice.
-AREA_EXCLUDE_STREETS = {
-    ("san-francisco", "castro"): {
-        "corbett-avenue", "ord-street", "ord-court", "hattie-street",
-        "danvers-street", "mars-street", "romain-street", "levant-street",
-        "museum-way", "clayton-street", "ashbury-street",
-    },
-}
+# different neighborhood directory; seeding those streets under the analysis
+# neighborhood would file them twice. None do now: Corbett Heights, which was
+# kept apart from Castro/Upper Market, is filed by the city's lines like
+# everything else, with `sub_area` naming it on its pages.
+AREA_EXCLUDE_STREETS: dict = {}
 
 # Datasets, per DATA-SOURCES.md.
 DS_EAS = "3mea-di5p"
@@ -4854,8 +4849,8 @@ def hub_hand_sections(hub_dir: Path, known) -> list:
     has no building page to sit on, so the hub is where it goes. Carrying it
     through a rebuild is what lets the hub stay generated: the alternative is
     the generator refusing the street and its `index.html` being committed as
-    the only copy of the prose, which is what `corbett-heights/mars-street` and
-    `corbett-heights/danvers-street` were before this read them.
+    the only copy of the prose, which is what the Mars Street and Danvers Street
+    hubs were before this read them.
     """
     md = hub_dir / "index.md"
     if not md.exists():
@@ -5602,15 +5597,14 @@ def neighborhood_ld(text: str, area_dir: Path, streets: list) -> str:
 #
 # Membership is by the boundary, not the directory. A page is filed under the
 # neighborhood its street was seeded in, and the city's lines don't follow
-# that (a Pacific Heights house on a Marina street; Corbett Heights inside
-# Castro/Upper Market), so the map of a boundary shows what is inside it,
+# that (a Pacific Heights house on a Marina street), so the map of a boundary shows what is inside it,
 # wherever the page is filed.
 
 # The official line each neighborhood directory is drawn from: the city's
 # Analysis Neighborhoods where a directory is one, else the polygon of the
 # same name in SF Find Neighborhoods, else (the East Cut) the community
-# benefit district the name belongs to. Corbett Heights has no polygon in any
-# city dataset — its map is its own pages, with no outline.
+# benefit district the name belongs to. A directory with no polygon in any
+# city dataset would get a map of its own pages, with no outline.
 DS_ANALYSIS_NEIGHBORHOODS = "j2bu-swwd"
 DS_FIND_NEIGHBORHOODS = "gfpk-269f"
 DS_CBDS = "c28a-f6gs"
@@ -5658,6 +5652,7 @@ BOUNDARY_SOURCE = {
     "sunset-parkside": (DS_ANALYSIS_NEIGHBORHOODS, "Sunset/Parkside"),
     "tenderloin": (DS_ANALYSIS_NEIGHBORHOODS, "Tenderloin"),
     "treasure-island": (DS_ANALYSIS_NEIGHBORHOODS, "Treasure Island"),
+    "twin-peaks": (DS_ANALYSIS_NEIGHBORHOODS, "Twin Peaks"),
     "union-square": (DS_FIND_NEIGHBORHOODS, "Downtown / Union Square"),
     "visitacion-valley": (DS_ANALYSIS_NEIGHBORHOODS, "Visitacion Valley"),
     "west-of-twin-peaks": (DS_ANALYSIS_NEIGHBORHOODS, "West of Twin Peaks"),

@@ -20,7 +20,9 @@ The blocks between Golden Gate Park and Mount Sutro, laid out along the Muni N-J
 - [Arguello Boulevard](arguello-boulevard/) — 1 building, built 1913.
 - [Belgrave Avenue](belgrave-avenue/) — 1 building, built 1972.
 - [Carl Street](carl-street/) — 1 building, built 1962.
+- [Carmel Street](carmel-street/) — 1 building, built 1965.
 - [Clarendon Avenue](clarendon-avenue/) — 1 building, built 1956.
+- [Clayton Street](clayton-street/) — 1 building, built 1927.
 - [Cragmont Avenue](cragmont-avenue/) — 1 building, built 1934.
 - [Edgewood Avenue](edgewood-avenue/) — 1 building, built 1986.
 - [Eighth Avenue](8th-avenue/) — 22 buildings, built 1900–1937.
@@ -43,6 +45,7 @@ The blocks between Golden Gate Park and Mount Sutro, laid out along the Muni N-J
 - [Parnassus Avenue](parnassus-avenue/) — 2 buildings, built 1912–1925.
 - [Second Avenue](2nd-avenue/) — 4 buildings, built 1908–1923.
 - [Seventh Avenue](7th-avenue/) — 13 buildings, built 1900–1925.
+- [Shrader Street](shrader-street/) — 4 buildings, built 1907–1911.
 - [Sixth Avenue](6th-avenue/) — 28 buildings, built 1900–1916.
 - [Stanyan Street](stanyan-street/) — 1 building; 1 in the San Francisco 1952 Firehouse Bond Act Thematic District (Discontiguous).
 - [Third Avenue](3rd-avenue/) — 8 buildings, built 1909–1961.
@@ -61,6 +64,7 @@ The blocks between Golden Gate Park and Mount Sutro, laid out along the Muni N-J
 - [J.P. Murphy Playground](j-p-murphy-playground/) — Neighborhood park or playground, 1.3 acres.
 - [Rocky Outcrop](rocky-outcrop/) — Neighborhood park or playground, 1.7 acres.
 - [Sunset Rec Center](sunset-rec-center/) — Neighborhood park or playground, 3.9 acres.
+- [Tank Hill](tank-hill/) — Neighborhood park or playground, 3.0 acres.
 - [White Crane Springs Community Garden](white-crane-springs-community-garden/) — Community garden, 20,038 sq ft.
 
 ## Historic districts here
@@ -74,7 +78,7 @@ The blocks between Golden Gate Park and Mount Sutro, laid out along the Muni N-J
 
 Golden Gate Park closes these blocks to the north. [Sunset /
 Parkside](../sunset-parkside/) continues west through the avenues and [West
-of Twin Peaks](../west-of-twin-peaks/) lies south beyond Laguna Honda. East
-over Mount Sutro and the Twin Peaks ridge are [Haight
-Ashbury](../haight-ashbury/), [Corbett Heights](../corbett-heights/) and
-[the Castro](../castro/).
+of Twin Peaks](../west-of-twin-peaks/) lies south beyond Laguna Honda. Over
+Mount Sutro, [Haight Ashbury](../haight-ashbury/) adjoins north-east and
+[Twin Peaks](../twin-peaks/) south-east, with [the Castro](../castro/)
+beyond them.

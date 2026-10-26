@@ -48,14 +48,16 @@ It creates pages that don't exist and touches nothing that does, so running it
 again is safe. The run skips condominium parcels (individual units with their
 own APNs, not buildings) and parcels with no assessor record.
 
-**Corbett Heights is inside this city boundary but filed separately**, as
-`san-francisco/corbett-heights/AGENTS.md` explains. Its streets — Corbett,
-Ord, Ord Court, Hattie, Danvers, Mars, Romain, Levant, Museum Way and the upper
-reaches of Clayton and Ashbury — are listed in `AREA_EXCLUDE_STREETS` in the
-script so a Castro run never files them here. Seeding them is a separate run
-with `--area corbett-heights`. Independently of that list, the seeder skips any
-parcel that already has a page anywhere on the site, so no building can end up
-with two.
+**Corbett Heights is filed here**, as the part of this city boundary on the
+hillside north-west of the Castro (its upper slopes are in `twin-peaks/`).
+Its pages carry `"sub_area": "Corbett Heights"`, and the guidance for working
+from its local history sources — renumbered streets, the assessor's dates
+against the photographs, addresses that no longer exist — is in
+[CORBETT-HEIGHTS.md](CORBETT-HEIGHTS.md). Give a new page on its streets
+(Corbett, Ord, Ord Court, Hattie, Danvers, Mars, Levant, Museum Way, the upper
+reaches of Clayton and Ashbury) the same `sub_area`. The seeder skips any
+parcel that already has a page anywhere on the site, so no building can end
+up with two.
 
 `AREA_SUB` in the script supplies this neighborhood's `.sub` designation, so
 every generated page gets the `· Eureka Valley` tail automatically. Don't
