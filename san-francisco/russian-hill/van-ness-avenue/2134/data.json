@@ -1,0 +1,96 @@
+{
+  "address": "2134 Van Ness Avenue, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/van-ness-avenue/2134/",
+  "apn": "0574016",
+  "block": "0574",
+  "lot": "016",
+  "eas_baseid": "285570",
+  "coordinates": {
+    "lat": 37.79538,
+    "lng": -122.422947
+  },
+  "parcel": {
+    "year_built": 1909,
+    "stories": 1,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 3515,
+    "building_area_sqft": 6435,
+    "use": "Commercial Office",
+    "property_class": "Office",
+    "construction_type_code": "D",
+    "zoning": "RC-4",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "0000 2134 VAN NESS            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 118936,
+    "assessed_improvement_value": 196108
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9010254",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-05-24",
+      "status_date": "1990-06-19",
+      "estimated_cost": 15000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VAN%20NESS&street_type=AVE&address_number=2134",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0574016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0574&lot=016",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0574016",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sfyimby-2026-10-26",
+      "name": "San Francisco YIMBY, “Office-to-Housing Conversion at 2134 Van Ness Avenue, San Francisco,” 26 October 2026",
+      "query": "https://sfyimby.com/2026/10/office-to-housing-conversion-at-2134-van-ness-avenue-san-francisco.html",
+      "retrieved": "2026-10-26"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2026-10-26",
+      "kind": "development",
+      "headline": "Office-to-Housing Conversion at 2134 Van Ness Avenue, San Francisco",
+      "outlet": "San Francisco YIMBY",
+      "url": "https://sfyimby.com/2026/10/office-to-housing-conversion-at-2134-van-ness-avenue-san-francisco.html",
+      "source": "sfyimby-2026-10-26"
+    }
+  ]
+}
