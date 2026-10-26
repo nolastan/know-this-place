@@ -223,7 +223,7 @@ sit in — the three it touched most, and how many in all.
 | `sf-planning-commission-minutes/minutes-1980.json` | 205 | 379 KB | 1972–1980 | 97 | 97 | `mission`, `financial-district`, `castro` +25 |
 | `sf-planning-commission-minutes/minutes-1994.json` | 199 | 353 KB | 1959–1994 | 153 | 153 | `mission`, `pacific-heights`, `bayview-hunters-point` +30 |
 | `sf-planning-commission-minutes/minutes-1995.json` | 307 | 561 KB | 1995 | 222 | 216 | `mission`, `castro`, `sunset-parkside` +34 |
-| `sf-planning-commission-minutes/minutes-1996.json` | 229 | 443 KB | 1996 | 177 | 175 | `mission`, `sunset-parkside`, `castro` +35 |
+| `sf-planning-commission-minutes/minutes-1996.json` | 229 | 445 KB | 1996 | 177 | 175 | `mission`, `sunset-parkside`, `castro` +35 |
 | `spur-popos-guide/popos-guide.json` | 56 | 86 KB | 1959–2008 | 54 | 3 | `east-cut`, `financial-district`, `south-beach` +2 |
 
 ## Manifests
