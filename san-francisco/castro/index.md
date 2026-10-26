@@ -20,9 +20,9 @@ reading the sources cited on each building's page:
 - Assessor's roll: "Eureka Valley/Dolores Heights"
 - In everyday use: "the Castro"
 
-One part of that city boundary is filed elsewhere on this site:
-[Corbett Heights](../corbett-heights/), the hillside north-west of the Castro,
-which local histories treat as its own neighborhood.
+The hillside north-west of the Castro inside that boundary is Corbett
+Heights, which local histories treat as a neighborhood of its own; its pages
+are filed here, and say "Corbett Heights" under their address.
 
 ## Streets documented so far
 
@@ -49,12 +49,15 @@ which local histories treat as its own neighborhood.
 - [Chula Lane](chula-lane/) — 8 buildings, built 1880–1912; 6 in the Chula-Abbey Early Residential District.
 - [Church Street](church-street/) — 74 buildings, built 1893–1987; 1 in the Upper Market Street Commercial Historic District.
 - [Clarendon Avenue](clarendon-avenue/) — 1 building, built 1974.
+- [Clayton Street](clayton-street/) — 18 buildings, built 1895–1961; 1 in the Auxiliary Water Supply System (Discontiguous).
 - [Clifford Terrace](clifford-terrace/) — 17 buildings, built 1906–1959.
 - [Clover Street](clover-street/) — 5 buildings, built 1905–2002.
 - [Collingwood Street](collingwood-street/) — 58 buildings, built 1878–1981.
+- [Corbett Avenue](corbett-avenue/) — 32 buildings, built 1885–1989.
 - [Corwin Street](corwin-street/) — 1 building, built 1960.
 - [Crown Terrace](crown-terrace/) — 3 buildings, built 1935–1999.
 - [Cumberland Street](cumberland-street/) — 50 buildings, built 1894–2001.
+- [Danvers Street](danvers-street/) — 5 buildings, built 1900–1961.
 - [Dehon Street](dehon-street/) — 1 building, built 1902.
 - [Deming Street](deming-street/) — 16 buildings, built 1900–2007.
 - [Diamond Street](diamond-street/) — 70 buildings, built 1888–2008.
@@ -77,17 +80,23 @@ which local histories treat as its own neighborhood.
 - [Hancock Street](hancock-street/) — 44 buildings, built 1885–1977.
 - [Harlow Street](harlow-street/) — 1 building, built 1904.
 - [Hartford Street](hartford-street/) — 71 buildings, built 1885–1987; 21 in the Hartford Street Historic District.
+- [Hattie Street](hattie-street/) — 4 buildings, built 1900–2022.
 - [Henry Street](henry-street/) — 55 buildings, built 1894–1933; 23 in the Duboce Triangle Historic District Extension.
 - [Landers Street](landers-street/) — 32 buildings, built 1900–1990; 5 in the Alert Alley Early Residential Historic District.
+- [Levant Street](levant-street/) — 1 building, built 1929.
 - [Liberty Street](liberty-street/) — 108 buildings, built 1890–1993; 30 in the Castro & Liberty Streets Historic District.
 - [Loma Vista Terrace](loma-vista-terrace/) — 5 buildings, built 1916–1951.
 - [Lower Terrace](lower-terrace/) — 25 buildings, built 1900–1999.
 - [Market Street](market-street/) — 117 buildings, built 1875–2008; 16 in the Upper Market Street Commercial Historic District.
+- [Mars Street](mars-street/) — 11 buildings, built 1890–1940.
 - [Marview Way](marview-way/) — 1 building; 1 in the Auxiliary Water Supply System (Discontiguous).
 - [Masonic Avenue](masonic-avenue/) — 1 building, built 2007.
 - [Mono Street](mono-street/) — 1 building, built 1908.
 - [Mountain Spring Avenue](mountain-spring-avenue/) — 4 buildings, built 1958–1960.
+- [Museum Way](museum-way/) — 2 buildings, built 1914–1955; 1 in the Midcentury Recreation Historic District (Discontiguous).
 - [Noe Street](noe-street/) — 144 buildings, built 1880–2014; 25 in the Duboce Triangle Historic District.
+- [Ord Court](ord-court/) — 1 building, built 1906.
+- [Ord Street](ord-street/) — 11 buildings, built 1880–1932.
 - [Palo Alto Avenue](palo-alto-avenue/) — 4 buildings, built 1951–1961; 4 in the Palo Alto Avenue Historic District.
 - [Park Hill Avenue](park-hill-avenue/) — 11 buildings, built 1900–1953.
 - [Pemberton Place](pemberton-place/) — 2 buildings, built 1926–1933.
@@ -121,6 +130,7 @@ which local histories treat as its own neighborhood.
 ## Parks and public spaces
 
 - [Buena Vista Park](buena-vista-park/) — Regional park, 38.4 acres.
+- [Corona Heights Park](corona-heights-park/) — Neighborhood park or playground, 13.2 acres.
 - [Duboce Park](duboce-park/) — Neighborhood park or playground, 4.8 acres.
 - [Eureka Valley Branch Library](eureka-valley-branch-library/) — Community garden, 18,731 sq ft.
 - [Eureka Valley Rec Center](eureka-valley-rec-center/) — Neighborhood park or playground, 2.2 acres.
@@ -131,9 +141,11 @@ which local histories treat as its own neighborhood.
 - [Mission Dolores Park](mission-dolores-park/) — Neighborhood park or playground, 16.0 acres.
 - [Mt. Olympus](mt-olympus/) — Mini park, 9,148 sq ft.
 - [Noe & Beaver Mini Park](noe-and-beaver-mini-park/) — Mini park, 4,792 sq ft.
+- [Peixotto Playground](peixotto-playground/) — Neighborhood park or playground, 35,719 sq ft.
 - [Roosevelt & Henry Stairs](roosevelt-and-henry-stairs/) — Mini park, 16,988 sq ft.
 - [Saturn Street Steps](saturn-street-steps/) — Mini park, 8,276 sq ft.
 - [Seward Mini Park](seward-mini-park/) — Mini park, 18,295 sq ft.
+- [States Street Playground](states-street-playground/) — Neighborhood park or playground, 2.9 acres.
 - [Twin Peaks](twin-peaks/) — Regional park, 32.2 acres.
 
 Every parcel the assessor's roll calls residential now has a page, built from
@@ -167,6 +179,6 @@ who lived there — and that arrives one building at a time.
 [Noe Valley](../noe-valley/) south over the ridge, and [Hayes
 Valley](../hayes-valley/) north-east where Duboce Triangle meets Market
 Street. [Haight Ashbury](../haight-ashbury/) is north across Buena Vista
-Park. West the ground climbs through [Corbett Heights](../corbett-heights/)
-— inside the same city boundary, filed separately here — to Twin Peaks, with
-[the Inner Sunset](../inner-sunset/) on the far slope.
+Park. West the ground climbs through Corbett Heights, inside the same city
+boundary, to [Twin Peaks](../twin-peaks/), with [the Inner
+Sunset](../inner-sunset/) on the far slope.

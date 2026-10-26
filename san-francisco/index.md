@@ -1,11 +1,7 @@
 # San Francisco
 
-Know This Place's coverage begins in San Francisco. Neighborhoods
-documented so far:
-
 - [Castro / Eureka Valley](castro/) — where coverage began; every residential parcel in the city's Castro/Upper Market boundary, 3,142 buildings across 73 streets
 - [Mission](mission/) — every residential parcel in the city's Mission boundary, 5,004 buildings across 100 streets; Liberty Hill, the Inner Mission alleys and Mel Blanc's childhood home
-- [Corbett Heights](corbett-heights/) — the hillside neighborhood around Corbett Avenue; 19 buildings on Corbett Avenue, Mars Street and Danvers Street
 - [Haight Ashbury](haight-ashbury/) — the counterculture district east of Golden Gate Park; six buildings tied to the Grateful Dead, Janis Joplin, Jimi Hendrix, Charles Manson and others
 - [Pacific Heights](pacific-heights/) — the ridge of mansions north of Japantown; the Spreckels Mansion, the Casebolt House and two other houses
 - [Seacliff](seacliff/) — the bluffs above the Golden Gate; a Robin Williams residence and a house tied to Ansel Adams
@@ -46,6 +42,7 @@ documented so far:
 - [Visitacion Valley](visitacion-valley/) — the south-eastern corner of the city between McLaren Park and the county line; two buildings on Bay Shore Boulevard
 - [Treasure Island](treasure-island/) — the man-made island built for the 1939 Golden Gate International Exposition, and Yerba Buena Island beside it; the first building finished in the island's redevelopment
 - [Golden Gate Park](golden-gate-park/) — the park between Stanyan Street and the Great Highway; the places the Recreation and Park Department's facility inventory names in it, from the Conservatory of Flowers to the Dutch Windmill
+- [Twin Peaks](twin-peaks/) — the summits at the centre of the city; nine buildings on the upper reaches of Corbett Avenue, Romain Street and Crestline Drive
 
 Several of these pages document addresses named in a published guide to notable
 San Francisco residences; residency claims are attributed to that guide and

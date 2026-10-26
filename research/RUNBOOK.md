@@ -373,7 +373,7 @@ page. The parcel page keeps only facts about the land as a whole.
 - **1909 renumbering.** Numbers changed across much of the city and some streets
   were renamed. A pre-1909 number is not today's number until EAS and a
   cross-street check say so. Worked examples:
-  [../san-francisco/corbett-heights/AGENTS.md](../san-francisco/corbett-heights/AGENTS.md).
+  [../san-francisco/castro/CORBETT-HEIGHTS.md](../san-francisco/castro/CORBETT-HEIGHTS.md).
 - **Mission and Eureka Valley did *not* move in 1909.** Every cross-street check
   run in this corpus resolves to today's number. Check anyway; don't extend the
   finding to other neighborhoods.
