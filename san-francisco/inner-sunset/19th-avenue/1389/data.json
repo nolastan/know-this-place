@@ -1,0 +1,108 @@
+{
+  "address": "1389 19th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/19th-avenue/1389/",
+  "apn": "1774020",
+  "block": "1774",
+  "lot": "020",
+  "eas_baseid": "316959",
+  "coordinates": {
+    "lat": 37.761962,
+    "lng": -122.477377
+  },
+  "parcel": {
+    "year_built": 1938,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2417,
+    "building_area_sqft": 1245,
+    "basement_area_sqft": 150,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1389 19TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 803171,
+    "assessed_improvement_value": 535447
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Review",
+    "yearbuilt": "1938",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202605211694",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2026-05-21",
+      "status_date": "2026-05-21",
+      "estimated_cost": 800000,
+      "revised_cost": 0,
+      "description": "interior renovation of existing rto-c district, a 3 story residential garage currently used for storage into a day care classroom on the ground floor and minor bathroom upgrade on 2nd floor. scope includes ab-010 local equivalency for approval of communicating openings between building on",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "W20021125828",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-11-25",
+      "status_date": "2002-11-25",
+      "estimated_cost": 0,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=AVE&address_number=1389",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1774020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1774&lot=020",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1774020",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1996-11-07",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 7 November 1996",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/42minutesofsanfran1996san/page/n333/mode/1up",
+      "retrieved": "2026-10-26"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1996-11-07",
+      "kind": "planning decision",
+      "description": "The City Planning Commission approved, 6-0, extending the child-care facility at Calvary Methodist Church next door into this two-storey house (Motion 14231).",
+      "source": "sf-planning-commission-minutes-1996-11-07"
+    }
+  ]
+}

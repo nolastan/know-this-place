@@ -1,0 +1,121 @@
+{
+  "address": "538 29th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/29th-avenue/538/",
+  "apn": "1516031",
+  "block": "1516",
+  "lot": "031",
+  "eas_baseid": "306409",
+  "coordinates": {
+    "lat": 37.779091,
+    "lng": -122.488627
+  },
+  "parcel": {
+    "year_built": 1922,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 1590,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0538 29TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1377992,
+    "assessed_improvement_value": 590566,
+    "last_sale_date": "2019-08-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202108035621",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-08-03",
+      "status_date": "2022-01-25",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "replace rear siding (west facade) w/lap siding, demo (2)(e) sliding door/transom window combos/partial wall-reframe, replace w/single sliding glass door; replace (2)(e) exterior lights. paint the whole house.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9712474",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-07-07",
+      "status_date": "1998-02-03",
+      "estimated_cost": 1,
+      "description": "field changes to reflect condition reef. pa#@9616130",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9616130S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-08-28",
+      "status_date": "1998-02-03",
+      "estimated_cost": 100000,
+      "revised_cost": 74000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=29TH&street_type=AVE&address_number=538",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1516031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1516&lot=031",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1516031",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1996-12-05",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 5 December 1996",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/42minutesofsanfran1996san/page/n357/mode/1up",
+      "retrieved": "2026-10-26"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1996-12-05",
+      "kind": "planning decision",
+      "description": "On discretionary review, the City Planning Commission approved, 6-0, a third storey, a two-storey rear addition, a rear deck and patio and a second dwelling unit for the house.",
+      "source": "sf-planning-commission-minutes-1996-12-05"
+    }
+  ]
+}

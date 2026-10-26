@@ -2954,3 +2954,20 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   that names a commissioner; for any source whose spec bars names, grep the
   quotes, not only the descriptions, before writing the file.* (2026-10-20,
   [sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))
+- **EAS spells some streets its own way, and one was renamed outright.** The
+  1996 minutes' FORESTER, POWHATAN and PHELAN came back "not a street in the
+  city's address register": EAS has FOERSTER ST and POWHATTAN AVE, and Phelan
+  Avenue has been Frida Kahlo Way since 2018. `--alias FORESTER=FOERSTER
+  --alias POWHATAN=POWHATTAN --alias "PHELAN=FRIDA KAHLO"` placed the first two;
+  the third still has no number EAS holds. *When `report` prints "no EAS street
+  for", try the city's spelling and the street's current name before calling
+  the finding unplaceable.* (2026-10-26,
+  [sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))
+- **`--area-from-nhood` is all or nothing, and some of its directories do not
+  exist.** On the 1996 minutes it fixed Mission Street addresses the
+  nearest-page rule had filed under `mission` (4523 is the Excelsior, 4300 and
+  5226 the Outer Mission), but in the same pass it moved twenty more onto
+  `financial-district-south-beach`, `castro-upper-market` and `twin-peaks`,
+  which the site does not use. *Run `apply` without it, diff a second run
+  with it, and carry over by hand (`by_hand`, the reason in `method`) only the
+  directories the site already files pages under.* (2026-10-26)

@@ -1,0 +1,116 @@
+{
+  "address": "101 Mangels Avenue, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/mangels-avenue/101/",
+  "apn": "6765001",
+  "block": "6765",
+  "lot": "001",
+  "eas_baseid": "456054",
+  "coordinates": {
+    "lat": 37.733,
+    "lng": -122.440028
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 737,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Sunnyside",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0315 BADEN               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 243944,
+    "assessed_improvement_value": 90062,
+    "last_sale_date": "1988-10-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9520211S",
+      "type": "new construction wood frame",
+      "status": "cancelled",
+      "filed": "1995-11-30",
+      "status_date": "1999-10-20",
+      "estimated_cost": 170000,
+      "revised_cost": 224900,
+      "description": "erect a three story single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9520212",
+      "type": "demolitions",
+      "status": "cancelled",
+      "filed": "1995-11-30",
+      "status_date": "1999-10-20",
+      "description": "demolition of garage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9520213",
+      "type": "demolitions",
+      "status": "cancelled",
+      "filed": "1995-11-30",
+      "status_date": "1999-10-20",
+      "description": "demolition of 1 family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MANGELS&street_type=AVE&address_number=101",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6765001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6765&lot=001",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6765001",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1996-09-12",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 12 September 1996",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/42minutesofsanfran1996san/page/n279/mode/1up",
+      "retrieved": "2026-10-26"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1996-09-12",
+      "kind": "planning decision",
+      "description": "On discretionary review, the City Planning Commission disapproved, 6-0, a new three-storey single-family house on the lot, after asking in August for two floors and an attic instead.",
+      "source": "sf-planning-commission-minutes-1996-09-12"
+    }
+  ]
+}

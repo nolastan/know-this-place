@@ -24,13 +24,16 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [Justin Drive](justin-drive/) — 1 building; 1 in the Midcentury Recreation Historic District (Discontiguous).
 - [Lundys Lane](lundys-lane/) — 1 building, built 1909.
 - [Manchester Street](manchester-street/) — 1 building, built 1981.
+- [Mirabel Avenue](mirabel-avenue/) — 1 building, built 1924.
 - [Mission Street](mission-street/) — 2 buildings, built 1916–1918.
 - [Montcalm Street](montcalm-street/) — 1 building, built 1900.
 - [Mullen Avenue](mullen-avenue/) — A 1,000 sq ft house of 1906, recorded as Carlos Santana's home during high school.
 - [Murray Street](murray-street/) — 2 buildings, built 1925.
 - [Nevada Street](nevada-street/) — 1 building.
 - [Peralta Avenue](peralta-avenue/) — 1 building, built 1910.
+- [Powhattan Avenue](powhattan-avenue/) — 1 building, built 1965.
 - [Precita Avenue](precita-avenue/) — Four units of 1905 at the foot of the hill, a 1974 Patty Hearst address.
+- [Prentiss Street](prentiss-street/) — 1 building, built 1999.
 - [Prospect Avenue](prospect-avenue/) — 1 building, built 1979.
 - [Richland Avenue](richland-avenue/) — 1 building, built 1907.
 - [Ripley Street](ripley-street/) — 2 buildings, built 1917–1940.

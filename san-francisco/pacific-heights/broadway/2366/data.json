@@ -1,0 +1,181 @@
+{
+  "address": "2366 Broadway, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/broadway/2366/",
+  "apn": "0563009",
+  "block": "0563",
+  "lot": "009",
+  "eas_baseid": "285350",
+  "coordinates": {
+    "lat": 37.794438,
+    "lng": -122.436047
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 3,
+    "rooms": 11,
+    "bathrooms": 5,
+    "lot_area_sqft": 3781.25,
+    "building_area_sqft": 4475,
+    "lot_depth_ft": 37.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "0000 2366 BROADWAY              0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 996760,
+    "assessed_improvement_value": 1112398,
+    "last_sale_date": "1996-05-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202306069314",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-06-06",
+      "status_date": "2023-06-06",
+      "estimated_cost": 22500,
+      "revised_cost": 22500,
+      "description": "reroofing at flat-roof only. modified bitumen roofing system. removal of existing layers w/ scaffolding.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201010012103",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-10-01",
+      "status_date": "2011-01-12",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "replace (3) 2nd story sash unit with a marvin tiltpac",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9705007",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-03-18",
+      "status_date": "1997-06-09",
+      "estimated_cost": 1500,
+      "description": "revision to 9612868",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9620928",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-10-29",
+      "status_date": "1997-06-09",
+      "estimated_cost": 3500,
+      "description": "install fire sprinkler system in ground flr",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9614285",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-08-05",
+      "status_date": "1997-06-09",
+      "estimated_cost": 1,
+      "description": "revisio to appl #9609298,revise structural foundation detail",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9612868",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-07-17",
+      "status_date": "1997-06-09",
+      "estimated_cost": 60000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9610482",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-06-12",
+      "status_date": "1997-06-09",
+      "estimated_cost": 45000,
+      "revised_cost": 65000,
+      "description": "alter garage area-add bath, remodel kitchen/breakfast area",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9609298",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-05-28",
+      "status_date": "1997-06-09",
+      "estimated_cost": 15000,
+      "description": "replace partial brick foundation at rear of bldg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9020129",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-10-03",
+      "status_date": "1991-04-25",
+      "estimated_cost": 10070,
+      "description": "install 1 cheney inclined stairway chairlift general approvl",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BROADWAY&street_type=&address_number=2366",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0563009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0563&lot=009",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0563009",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1996-10-17",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 17 October 1996",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/42minutesofsanfran1996san/page/n315/mode/1up",
+      "retrieved": "2026-10-26"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1996-10-17",
+      "kind": "planning decision",
+      "description": "On discretionary review, the City Planning Commission approved, 7-0, replacing the rear 14 feet of the gable roof of the three-storey-over-garage house with a roof deck behind the existing parapet.",
+      "source": "sf-planning-commission-minutes-1996-10-17"
+    }
+  ]
+}

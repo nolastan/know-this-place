@@ -34,6 +34,7 @@ The blocks between Golden Gate Park and Mount Sutro, laid out along the Muni N-J
 - [Kirkham Street](kirkham-street/) — 8 buildings, built 1904–1955.
 - [Lawton Street](lawton-street/) — 2 buildings, built 1914.
 - [Lincoln Way](lincoln-way/) — 7 buildings, built 1900–1928.
+- [Locksley Avenue](locksley-avenue/) — 1 building, built 1961.
 - [Moraga Street](moraga-street/) — 1 building, built 1902.
 - [Ninth Avenue](9th-avenue/) — 39 buildings, built 1900–1990.
 - [Noriega Street](noriega-street/) — 1 building, built 1911.

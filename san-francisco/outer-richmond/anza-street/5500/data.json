@@ -1,0 +1,153 @@
+{
+  "address": "5500 Anza Street, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/anza-street/5500/",
+  "apn": "1498024",
+  "block": "1498",
+  "lot": "024",
+  "eas_baseid": "305609",
+  "coordinates": {
+    "lat": 37.777272,
+    "lng": -122.507387
+  },
+  "parcel": {
+    "year_built": 1940,
+    "stories": 1,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2375,
+    "building_area_sqft": 2715,
+    "lot_depth_ft": 95,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "NA",
+    "zoning": "RH-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Outer Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 5500 ANZA                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1781430,
+    "assessed_improvement_value": 763470,
+    "last_sale_date": "2023-12-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1940",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201504022713",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-04-02",
+      "status_date": "2016-04-27",
+      "estimated_cost": 350,
+      "revised_cost": 500,
+      "description": "revision to pa # 2014 1113 1392: add sink - wet bar",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201411131392",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-11-13",
+      "status_date": "2016-04-27",
+      "estimated_cost": 103000,
+      "revised_cost": 77000,
+      "description": "reconfigure first floor per plan: relocate front, reconfigure interior stair per plan, enlarge existing bathroom, add a laundry room. second floor: enlarge kitchen counter per plan, convert bedroom to new master bathroom per plan. add new skylights at hall and bedroom #2. revision to pa #20140922698",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201409226981",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-09-22",
+      "status_date": "2016-04-27",
+      "estimated_cost": 37500,
+      "revised_cost": 60000,
+      "description": "revision to pa #201409155671, kitchen and bathroom remodelling, and master bedroon per plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201409156271",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-09-15",
+      "status_date": "2016-04-27",
+      "estimated_cost": 2000,
+      "revised_cost": 6000,
+      "description": "removal of kitchen, no change on walls, replace cabinets only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9508935S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1995-06-13",
+      "status_date": "1998-07-17",
+      "estimated_cost": 40000,
+      "revised_cost": 70000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8604506",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1986-04-17",
+      "status_date": "1986-07-30",
+      "estimated_cost": 910,
+      "description": "repair damage in left wall. front wall, masonary at base",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ANZA&street_type=ST&address_number=5500",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1498024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1498&lot=024",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1498024",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1996-01-11",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 11 January 1996",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/42minutesofsanfran1996san/page/n12/mode/1up",
+      "retrieved": "2026-10-26"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1996-01-11",
+      "kind": "planning decision",
+      "description": "With no opposition filed, the City Planning Commission approved, 7-0, a two-storey rear addition and facade alterations to the building.",
+      "source": "sf-planning-commission-minutes-1996-01-11"
+    }
+  ]
+}
