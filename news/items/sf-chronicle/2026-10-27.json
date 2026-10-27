@@ -1,0 +1,79 @@
+{
+  "source_id": "sf-chronicle",
+  "batch": "2026-10-27",
+  "read_on": "2026-10-27",
+  "notes": "Three queued, read. One earns an entry (Eliza's). The IPO feature declined; the bit.ly link is a duplicate of it.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 3,
+    "mentions": 2,
+    "remaining": "none"
+  },
+  "findings": [
+    {
+      "id": "2026-10-27-sc-0001",
+      "date": "2026-10-26",
+      "date_precision": "day",
+      "kind": "reopening",
+      "address_as_written": "2877 California St.",
+      "street_number": "2877",
+      "street_type": "ST",
+      "street_name": "CALIFORNIA",
+      "description": "Eliza's, a Chinese restaurant in the space since 1999, closed in June after a fire in the neighbouring church and plans to reopen in early November after repairs.",
+      "extra": {},
+      "citation": {
+        "label": "San Francisco Chronicle, “A fire forced this decades-old S.F. Chinese restaurant to close. Now, it’s coming back,” 26 October 2026",
+        "url": "https://www.sfchronicle.com/food/restaurants/article/elizas-reopening-san-francisco-22491198.php"
+      },
+      "raw": {
+        "text": "A fire forced this decades-old S.F. Chinese restaurant to close. Now, it’s coming back"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "published",
+        "note": "Seeded /san-francisco/pacific-heights/california-street/2877/ via research/manifests/news-2026-10-27.json; entry on the page and homepage card."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "1028022",
+        "path": "/san-francisco/pacific-heights/california-street/2877/",
+        "eas_address": "2877 CALIFORNIA ST",
+        "method": "EAS exact match on 2877 CALIFORNIA ST → parcel 1028022; sf-parcels has blklot 1028022 active, 2877–2879 CALIFORNIA; the 2025 roll records it as multi-family residential, built 1904. EAS puts 2877, 2879 CALIFORNIA ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2877.",
+        "checked_on": "2026-10-27",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      }
+    },
+    {
+      "id": "2026-10-27-sc-0002",
+      "date": "2026-10-26",
+      "date_precision": "day",
+      "kind": "lease",
+      "address_as_written": "300 Howard St.",
+      "street_number": "300",
+      "street_type": "ST",
+      "street_name": "HOWARD",
+      "description": "IPO feature; the Howard Street office lease is a passing detail.",
+      "extra": {},
+      "citation": {
+        "label": "San Francisco Chronicle, “Anthropic’s massive IPO is coming. But its impact on S.F. may already be here,” 26 October 2026",
+        "url": "https://www.sfchronicle.com/tech/article/anthropic-massive-ipo-sf-impact-already-here-22494944.php"
+      },
+      "raw": {
+        "text": "Anthropic’s massive IPO is coming. But its impact on S.F. may already be here"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Declined: a corporate IPO/economy feature, not a building story; the office lease is in passing and the headline is not about the building. Fails the ten-year test. Same decision for 500 Howard St. (comparison) and the bit.ly duplicate."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3719009",
+        "path": "/san-francisco/east-cut/fremont-street/193/",
+        "eas_address": "300 HOWARD ST",
+        "method": "EAS exact match on 300 HOWARD ST → parcel 3719009; sf-parcels has blklot 3719009 active, 193–193 FREMONT; the 2025 roll records it as miscellaneous/mixed-use. The assessor files the parcel as 193 FREMONT ST.",
+        "checked_on": "2026-10-27"
+      }
+    }
+  ]
+}
