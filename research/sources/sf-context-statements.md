@@ -24,7 +24,7 @@ document you are about to mine.
 |---|---|
 | **Read in full** | 47 documents — listed under "Read into the repo so far" below, each with its own notes section. **The count is the length of that list**, checked on 2026-09-02; 46 with the SoMa survey table on 2026-10-21. 47 with the survey's five district records on 2026-10-25. The biographies collection is **one entry for eight PDFs**, so finishing it — volumes S–U and V–Z on 2026-09-02 — did not change it. If you add a document, add it to the list and count the list. |
 | **Findings files** | One per document, under `findings/sf-context-statements/`. **Their counts are in [findings/INDEX.md](../findings/INDEX.md)**, which is generated from the files and cannot go stale; this cell used to list them by hand, ran to 6 KB, and said of itself that it was behind (removed 2026-10-21). |
-| **Remaining** | **No adopted statement is left unacquired.** #115 asked for the Market & Octavia Historic Resources Survey (the per-property record the 2007 context statement doesn't carry); this line said "still to acquire" long after `market-octavia-survey-forms` answered it on 2026-09-03 — a stale note that cost a 2026-09-22 session a full read-and-resolve pass on the already-published `market-octavia-hcs` context statement before the duplication was caught. The three **district-level** DPR 523 records the survey-forms pass read but did not extract are now also read (`market-octavia-district-records`, above) — 429 of their 434 rows are contributor-status *designations*, not construction facts, and were published to `historic_survey` panels rather than the timeline, since `check.py --overlap` found the appendix year-built rows in the sibling `market-octavia-hcs`/`-survey-forms` batches restate what the page already shows from the assessor roll. What is genuinely left: the `construction_history_as_recorded` alterations held in 111 already-published forms, unextracted because they need re-expressing one at a time; the Hayes Valley district's original 372 contributors, identified by a 1997 Caltrans survey and never individually listed anywhere this module has found; and, from the South of Market survey's district records (read 2026-10-25 as `soma-district-records`; there are five, not the six this line used to say), the pre-1906 South Park residents table, whose houses all burned, which could go on the South Park place page and nowhere else. The survey's per-property results table, which the statement cites as "attached", is read (`soma-survey`, 2026-10-21); its individual DPR 523A/B forms sit behind the survey's interactive map and are not fetched. Search open issues for `sf-context-statements`. |
+| **Remaining** | **No adopted statement is left unacquired.** #115 asked for the Market & Octavia Historic Resources Survey (the per-property record the 2007 context statement doesn't carry); this line said "still to acquire" long after `market-octavia-survey-forms` answered it on 2026-09-03 — a stale note that cost a 2026-09-22 session a full read-and-resolve pass on the already-published `market-octavia-hcs` context statement before the duplication was caught. The three **district-level** DPR 523 records the survey-forms pass read but did not extract are now also read (`market-octavia-district-records`, above) — 429 of their 434 rows are contributor-status *designations*, not construction facts, and were published to `historic_survey` panels rather than the timeline, since `check.py --overlap` found the appendix year-built rows in the sibling `market-octavia-hcs`/`-survey-forms` batches restate what the page already shows from the assessor roll. The dated alterations in the 111 forms that carry a construction history are read too (`survey-forms-alterations`, 2026-10-27). What is genuinely left: the Hayes Valley district's original 372 contributors, identified by a 1997 Caltrans survey and never individually listed anywhere this module has found; and, from the South of Market survey's district records (read 2026-10-25 as `soma-district-records`; there are five, not the six this line used to say), the pre-1906 South Park residents table, whose houses all burned, which could go on the South Park place page and nowhere else. The survey's per-property results table, which the statement cites as "attached", is read (`soma-survey`, 2026-10-21); its individual DPR 523A/B forms sit behind the survey's interactive map and are not fetched. Search open issues for `sf-context-statements`. |
 | **Batch unit** | one statement = one run. Most are 60–260 pages and go end to end in a session; take a second one if the first finishes early. |
 | **Reading order** | the earlier statements each taught something the next one needed. The two under "Traps that apply to every statement" below are the ones nobody should re-learn. |
 
@@ -6014,6 +6014,30 @@ extracted and must not be. Nothing else on the form is a private individual.
   the session lost a full read-and-resolve pass on the 136-page context
   statement's own two appendices before `check.py --peek` on a neighbouring
   batch caught the duplication. See LESSONS.md.)
+
+- **Verified:** 2026-10-27 (the `B6. Construction History` of the 111 survey
+  forms that carry one — 110 Van Ness Auto Row, 1 Market & Octavia — read out of
+  `construction_history_as_recorded` in the two survey-form batches, one finding
+  per alteration clause, as `survey-forms-alterations`. 111 histories → 102
+  alteration clauses (28 histories state only the construction date the page
+  already shows) → 46 resolved → 37 published on 29 pages, 9 declined as
+  already on the page (the construction entries from the Van Ness context
+  statement already date most two-phase buildings' additions, and 1000 Van Ness
+  carries its cinema conversion from the National Register nomination — the
+  form's "early-to-mid-1990s" against the nomination's 1998 is now in that
+  page's `unknowns`). 56 unresolved: 40 clauses the form dates only "at an
+  unknown date" or "recently", and 16 on the 14 forms whose own address never
+  resolved. Learned: **Kostura's histories are mostly bounded, not dated** —
+  "before 1975", "after 1982", "1950s or later". A one-sided bound is taken as the
+  entry's date (the renderer sorts "before 1975" ahead of 1975 and "after 1982"
+  at 1982) and the phrase is kept off the description, which would otherwise
+  say the date twice. **The Van Ness context statement's construction entries
+  already carry the second phase** of most two-phase buildings ("Dated 1917 and
+  1925 … added the second story in 1925"), so a form's addition date is a
+  decline more often than not; read the page's construction entry first. The
+  Market & Octavia form for 61–69 Gough numbers its storefronts as units; the
+  numbers were dropped from the descriptions. Nothing is left in either
+  survey-form batch.)
 
 - **Verified:** 2026-09-03 (South of Market Area statement: the 118-page read
   done on 2026-08-25 recovered from the abandoned branch of the closed PR #161
