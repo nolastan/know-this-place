@@ -2973,3 +2973,16 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   `(not seeded yet)`. *Run `--overlap` before `manifest`, not only after
   `seed-list`.* (2026-10-25,
   [sources/sf-context-statements.md](sources/sf-context-statements.md))
+- **A one-sided bound is a date; "at an unknown date" is not.** Survey
+  construction histories mostly say "before 1975", "after 1982" or "1950s or
+  later" rather than a year. Take the bound as the entry's `date` — the
+  renderer's `date_key` sorts "before 1975" ahead of 1975 and "after 1982" at
+  1982 — and keep the phrase out of the description, or the rail says the date
+  twice. A clause dated "at an unknown date" or "recently" stays `unresolved`
+  even on a resolved building. *And `--overlap` run after the pages are written
+  scores the batch's own entries as duplicates whenever the page cites a
+  per-document id that is not the register id (`van-ness-auto-row-survey-forms`
+  under `sf-context-statements`): 21 false hits in a batch of 38. Run it with
+  the page edits stashed (`git stash push -- san-francisco`) to see only what
+  was already there.* (2026-10-27,
+  [sources/sf-context-statements.md](sources/sf-context-statements.md))
