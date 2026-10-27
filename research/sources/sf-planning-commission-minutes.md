@@ -6,9 +6,9 @@
 >
 > - **Kind:** meeting minutes (scanned volumes) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 35 of 52 volumes read (July 1968 – December 1980, and
->   1994–1995): 10,240 pages, 4,095 findings, 2,091 resolved, 1,951 published.
->   17 volumes remain — 1996–2005. July–December 1975 is in no
+> - **Coverage:** 36 of 52 volumes read (July 1968 – December 1980, and
+>   1994–1996): 10,591 pages, 4,324 findings, 2,268 resolved, 2,126 published.
+>   16 volumes remain — 1997–2005. July–December 1975 is in no
 >   volume, nor is the regular meeting of 16 March 1978; volume 37
 >   holds only 17 of June – November 1978's meetings, volume 38 only
 >   34 of 1979's, volume 39 has no record of 7 February or 14 August 1980,
@@ -56,7 +56,8 @@
 | 39 | 1980 whole (`volume` "1980") | **read in full** 2026-10-22; 49 meetings, 3 January – 18 December, each printed as a summary and then as minutes, one or the other missing for many; no record of 7 February or 14 August |
 | 40 | 1994 (`volume` "1994") | **read in full** 2026-10-23; 30 meetings, 6 January – 17 November, action minutes only; none of 5, 19 and 26 May, June, July, 10 November or December, and 31 March, 7 April and 15 September cancelled |
 | 41 | 1995 (`volume` "1995") | **read in full** 2026-10-24; 43 meeting days, 9 January – 14 December, action minutes; none of 16 February, 23 March, 26 October or 2 November, 17 August bound twice, and 1 June, 31 August, 23 November and 21 December cancelled |
-| 42–58 | 1996–2005 | unread |
+| 42 | 1996 (`volume` "1996") | **read in full** 2026-10-26; 44 regular meetings, 11 January – 19 December, action minutes; fifth Thursdays cancelled from 25 January, and none minuted for 4 July, 28 November or 26 December |
+| 43–58 | 1997–2005 (43 is "Jan-June 1997") | unread |
 | — | 1981–1993 | in no volume |
 | — | before July 1968 | not in this collection. The Commission dates from 1942 |
 
@@ -439,7 +440,12 @@
   `minutes-1994.json`.
   volume 41, the 43 meeting days of 1995 the scan holds, into
   `minutes-1995.json`.
-  **Next: volumes 42–58 (1996–2005).** Volume 41 was 327 text pages
+  volume 42, the 44 meetings of 1996, into `minutes-1996.json`.
+  **Next: volumes 43–58 (1997–2005); 43 is January – June 1997.** Volume 42
+  was 351 text pages (934,000 characters) and filled one nightly run for a
+  single reader, with resolving and seeding 96 pages taking about as long as
+  the reading.
+  **Earlier note, from volume 41:** Volume 41 was 327 text pages
   (892,000 characters) and filled one nightly run for a single reader; a
   later volume much past that should be split across two runs by meeting.
   **Earlier note, from volume 40:** Volume 40 settled the question the
@@ -448,7 +454,34 @@
   findings, 153 on pages). Size by text pages: volume 40 was 199 text pages
   (486,000 characters) and one nightly run for a single reader with time to
   spare; a later volume of up to about 400 text pages should also fit.
-- **Verified:** **2026-10-24** (volume 41, 1995: 327 OCR pages with text
+- **Verified:** **2026-10-26** (volume 42, 1996: 351 OCR pages with text
+  out of 384 viewer pages (386 scanned leaves), read in one session by a
+  single reader with no sub-agents; 44 meetings, 11 January to 19 December.
+  229 findings — 215 decisions, 10 statements of what stood on or occupied a
+  property, 4 landmark actions. 177 resolved by the EAS join (two after
+  aliasing FORESTER to FOERSTER and POWHATAN to POWHATTAN, eleven filed by
+  hand under the analysis neighborhood's directory), while 3 joins were taken
+  back by hand — 1500 Mission on four condominium lots, 4400 25th Street
+  landing across the street from the record's block, and 2011 Bayshore on a
+  zero-area vacant lot. 52 unresolved: 32 condominiums today (#446) — the
+  year's six-unit conversions and its new two- and three-unit buildings,
+  mapped since — 11 at numbers EAS does not hold (the International Hotel
+  site's 898 Kearny and the Colombo Building's One Columbus among them, their
+  1996 lots since merged or renumbered), 4 ranges now split across parcels,
+  2 with no street number (the Fort Funston armory, the McLaren Park water
+  tank) and the three taken back by hand. 175 published on
+  169 pages, 96 of them seeded; 2 declined — 2505 Lombard's antennas, which
+  the Zoning Administrator reported in April had been approved for the wrong
+  property, and 246-250 Front, already on its page from the environmental
+  review. What the pass learned: from 1996 the antenna applications are the
+  source's best statements of occupancy — each says how tall the building is
+  and who uses it (a meat market under 28 flats, a synagogue, a sewage plant,
+  Pacific Bell's directory-assistance office); a decision the Commission
+  rescinded (2277 33rd Avenue, the Milo Hoadley Residence) is replaced by the
+  one it took later; a vote's motion number often sits at the top of the next
+  page, so 24 quotes were re-cited to the page that holds them; and the
+  minutes print "Lot 2058 in Assessor's Block 1" for block 2058, lot 1.)
+  **2026-10-24** (volume 41, 1995: 327 OCR pages with text
   out of 350 viewer pages (352 scanned leaves), read in one session by a
   single reader with no sub-agents; 43 meeting days, 9 January to 14
   December. 307 findings — 258 decisions, 45 statements of what stood on or

@@ -1,0 +1,142 @@
+{
+  "address": "213 4th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/4th-avenue/213/",
+  "apn": "1429003",
+  "block": "1429",
+  "lot": "003",
+  "eas_baseid": "303523",
+  "coordinates": {
+    "lat": 37.784405,
+    "lng": -122.462708
+  },
+  "parcel": {
+    "year_built": 1998,
+    "units": 1,
+    "stories": 3,
+    "rooms": 12,
+    "bathrooms": 3,
+    "bedrooms": 6,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 3728,
+    "basement_area_sqft": 870,
+    "use": "Multi-Family Residential",
+    "property_class": "Dwellings - Apt 4 units or less",
+    "construction_type_code": "NA",
+    "zoning": "RM-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0000 0213 04TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2068789,
+    "assessed_improvement_value": 886618,
+    "last_sale_date": "2008-06-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1998",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201606079307",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-06-07",
+      "status_date": "2017-01-12",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "existing 2 bathroom remodel at 3rd fl.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201406269634",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-06-26",
+      "status_date": "2014-08-05",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "relocate existing firelace in living room with new cabinet. powder room/bath refinshing fixtures.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201312103813",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-12-10",
+      "status_date": "2014-09-08",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "replacement in-kind siding at rear 350 sq. ft., at side 350 sq. ft., total of 700 sq. ft.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9517733",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "1995-10-23",
+      "status_date": "1998-01-26",
+      "description": "demolish two story family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9517734S",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1995-10-23",
+      "status_date": "1998-02-19",
+      "estimated_cost": 280000,
+      "revised_cost": 308000,
+      "description": "erect a three story two unit residential bldg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=04TH&street_type=AVE&address_number=213",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1429003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1429&lot=003",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1429003",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1996-11-07",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 7 November 1996",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/42minutesofsanfran1996san/page/n335/mode/1up",
+      "retrieved": "2026-10-26"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1996-11-07",
+      "kind": "planning decision",
+      "description": "On discretionary review, the City Planning Commission approved, 7-0, amended plans for a new four-storey, three-unit building, after finding the first design out of scale in July.",
+      "source": "sf-planning-commission-minutes-1996-11-07"
+    }
+  ]
+}

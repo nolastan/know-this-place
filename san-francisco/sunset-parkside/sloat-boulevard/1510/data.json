@@ -1,0 +1,86 @@
+{
+  "address": "1510 Sloat Boulevard, San Francisco, CA 94132",
+  "path": "/san-francisco/sunset-parkside/sloat-boulevard/1510/",
+  "apn": "2523003",
+  "block": "2523",
+  "lot": "003",
+  "eas_baseid": "341597",
+  "coordinates": {
+    "lat": 37.734409,
+    "lng": -122.489165
+  },
+  "parcel": {
+    "year_built": 1950,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 3998,
+    "building_area_sqft": 1475,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Pine Lake Park",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1510 SLOAT               BL0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 703640,
+    "assessed_improvement_value": 301555,
+    "last_sale_date": "2013-10-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1950",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SLOAT&street_type=BLVD&address_number=1510",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2523003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2523&lot=003",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2523003",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1996-01-25",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 25 January 1996",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/42minutesofsanfran1996san/page/n33/mode/1up",
+      "retrieved": "2026-10-26"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1996-01-25",
+      "kind": "planning decision",
+      "description": "The City Planning Commission approved, 6-0, a Zen Buddhist meditation center in the one-family house, unaltered, which remained the residence of three monks (Motion 14047).",
+      "source": "sf-planning-commission-minutes-1996-01-25"
+    }
+  ]
+}

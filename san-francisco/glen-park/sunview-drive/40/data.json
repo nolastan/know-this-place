@@ -1,0 +1,120 @@
+{
+  "address": "40 Sunview Drive, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/sunview-drive/40/",
+  "apn": "2853023",
+  "block": "2853",
+  "lot": "023",
+  "eas_baseid": "347887",
+  "coordinates": {
+    "lat": 37.747192,
+    "lng": -122.446775
+  },
+  "parcel": {
+    "year_built": 1957,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3489,
+    "building_area_sqft": 1271,
+    "basement_area_sqft": 215,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Midtown Terrace",
+    "analysis_neighborhood": "Twin Peaks",
+    "property_location_raw": "0000 0040 SUNVIEW             DR0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 367944,
+    "assessed_improvement_value": 193162,
+    "last_sale_date": "1989-07-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1957",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9600070",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "1996-01-02",
+      "status_date": "1996-12-11",
+      "estimated_cost": 50000,
+      "description": "horiztonal rear addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9308213",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-05-17",
+      "status_date": "1993-06-02",
+      "estimated_cost": 70,
+      "description": "renew expired permit appn. #9203857",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9203857",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1992-03-12",
+      "status_date": "1993-06-02",
+      "estimated_cost": 300,
+      "revised_cost": 2000,
+      "description": "to abate complaint 9200354, revert to single family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SUNVIEW&street_type=DR&address_number=40",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2853023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2853&lot=023",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2853023",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1996-03-14",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 14 March 1996",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/42minutesofsanfran1996san/page/n93/mode/1up",
+      "retrieved": "2026-10-26"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1996-03-14",
+      "kind": "planning decision",
+      "description": "On discretionary review, the City Planning Commission disapproved, 5-0, a two-storey addition about as large as the existing two-storey house behind it on the upsloping lot.",
+      "source": "sf-planning-commission-minutes-1996-03-14"
+    }
+  ]
+}
