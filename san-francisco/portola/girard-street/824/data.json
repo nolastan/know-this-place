@@ -1,0 +1,131 @@
+{
+  "address": "824 Girard Street, San Francisco, CA 94134",
+  "path": "/san-francisco/portola/girard-street/824/",
+  "apn": "6155002A",
+  "block": "6155",
+  "lot": "002A",
+  "eas_baseid": "392417",
+  "coordinates": {
+    "lat": 37.722125,
+    "lng": -122.402746
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 1105,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Portola",
+    "analysis_neighborhood": "Portola",
+    "property_location_raw": "0000 0824 GIRARD              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 249321,
+    "assessed_improvement_value": 107773,
+    "last_sale_date": "1992-01-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202508213591",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-08-21",
+      "status_date": "2025-08-25",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "re roofing: no hot works.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9900706",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-01-12",
+      "status_date": "1999-05-12",
+      "estimated_cost": 700,
+      "description": "to construct retaining wall/revision to app #9620313",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9725860",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-12-31",
+      "status_date": "1998-04-30",
+      "estimated_cost": 3500,
+      "description": "revision to pa 9620313 const. retaining walls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9620313",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1996-10-22",
+      "status_date": "1998-05-14",
+      "estimated_cost": 7000,
+      "revised_cost": 12000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GIRARD&street_type=ST&address_number=824",
+      "retrieved": "2026-10-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6155002A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6155&lot=002A",
+      "retrieved": "2026-10-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6155002A",
+      "retrieved": "2026-10-28"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1997-05-01",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 1 May 1997",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/43minutesofsanfran1997san/page/n266/mode/1up",
+      "retrieved": "2026-10-28"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1997-05-01",
+      "kind": "planning decision",
+      "description": "On discretionary review, the City Planning Commission approved, 5-0, about 100 square feet added to the single-family house for a larger kitchen and a new bathroom.",
+      "source": "sf-planning-commission-minutes-1997-05-01"
+    }
+  ]
+}

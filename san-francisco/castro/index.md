@@ -82,6 +82,7 @@ are filed here, and say "Corbett Heights" under their address.
 - [Hartford Street](hartford-street/) — 71 buildings, built 1885–1987; 21 in the Hartford Street Historic District.
 - [Hattie Street](hattie-street/) — 4 buildings, built 1900–2022.
 - [Henry Street](henry-street/) — 55 buildings, built 1894–1933; 23 in the Duboce Triangle Historic District Extension.
+- [La Avanzada Street](la-avanzada-street/) — 1 building, built 1974.
 - [Landers Street](landers-street/) — 32 buildings, built 1900–1990; 5 in the Alert Alley Early Residential Historic District.
 - [Levant Street](levant-street/) — 1 building, built 1929.
 - [Liberty Street](liberty-street/) — 108 buildings, built 1890–1993; 30 in the Castro & Liberty Streets Historic District.
