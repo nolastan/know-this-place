@@ -1,0 +1,148 @@
+{
+  "address": "1 Crystal Street, San Francisco, CA 94112",
+  "path": "/san-francisco/oceanview-merced-ingleside/crystal-street/1/",
+  "apn": "7155004A",
+  "block": "7155",
+  "lot": "004A",
+  "eas_baseid": "417456",
+  "coordinates": {
+    "lat": 37.709769,
+    "lng": -122.460851
+  },
+  "parcel": {
+    "year_built": 1944,
+    "units": 1,
+    "stories": 1,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 1875,
+    "building_area_sqft": 1924,
+    "basement_area_sqft": 513,
+    "lot_depth_ft": 75,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Outer Mission",
+    "analysis_neighborhood": "Outer Mission",
+    "property_location_raw": "0000 0001 CRYSTAL             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 150274,
+    "assessed_improvement_value": 167672
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1944",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9701595",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-01-28",
+      "status_date": "1997-05-28",
+      "estimated_cost": 1,
+      "description": "renew expired permit appn. 9612572",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9612572",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-07-12",
+      "status_date": "1996-11-12",
+      "estimated_cost": 4000,
+      "description": "install fire sprinkler system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9612057",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-07-05",
+      "status_date": "1997-01-05",
+      "estimated_cost": 9000,
+      "description": "install fire alarm control panel, horn/strobes/pull stations",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8803462",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-03-18",
+      "status_date": "1988-11-09",
+      "estimated_cost": 1800,
+      "description": "extension to #8607845",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8607845",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1986-07-02",
+      "status_date": "1989-01-17",
+      "estimated_cost": 65000,
+      "description": "horizontal extension, lateral extension of existing building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8505436",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1985-05-28",
+      "status_date": "1986-03-26",
+      "estimated_cost": 980,
+      "description": "install brick veneer finish across lower protion of front",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CRYSTAL&street_type=ST&address_number=1",
+      "retrieved": "2026-10-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7155004A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7155&lot=004A",
+      "retrieved": "2026-10-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7155004A",
+      "retrieved": "2026-10-28"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1997-02-06",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 6 February 1997",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/43minutesofsanfran1997san/page/n84/mode/1up",
+      "retrieved": "2026-10-28"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1997-02-06",
+      "kind": "planning decision",
+      "description": "The City Planning Commission approved with conditions, 6-0, enlarging the six-bed residential care facility in the single-family house to eleven beds (Motion 14302).",
+      "source": "sf-planning-commission-minutes-1997-02-06"
+    }
+  ]
+}

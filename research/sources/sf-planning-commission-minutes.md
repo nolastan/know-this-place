@@ -6,9 +6,9 @@
 >
 > - **Kind:** meeting minutes (scanned volumes) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 36 of 52 volumes read (July 1968 – December 1980, and
->   1994–1996): 10,591 pages, 4,324 findings, 2,268 resolved, 2,126 published.
->   16 volumes remain — 1997–2005. July–December 1975 is in no
+> - **Coverage:** 37 of 52 volumes read (July 1968 – December 1980, and
+>   1994 – June 1997): 10,792 pages, 4,452 findings, 2,363 resolved, 2,219 published.
+>   15 volumes remain — July 1997 – 2005. July–December 1975 is in no
 >   volume, nor is the regular meeting of 16 March 1978; volume 37
 >   holds only 17 of June – November 1978's meetings, volume 38 only
 >   34 of 1979's, volume 39 has no record of 7 February or 14 August 1980,
@@ -57,7 +57,8 @@
 | 40 | 1994 (`volume` "1994") | **read in full** 2026-10-23; 30 meetings, 6 January – 17 November, action minutes only; none of 5, 19 and 26 May, June, July, 10 November or December, and 31 March, 7 April and 15 September cancelled |
 | 41 | 1995 (`volume` "1995") | **read in full** 2026-10-24; 43 meeting days, 9 January – 14 December, action minutes; none of 16 February, 23 March, 26 October or 2 November, 17 August bound twice, and 1 June, 31 August, 23 November and 21 December cancelled |
 | 42 | 1996 (`volume` "1996") | **read in full** 2026-10-26; 44 regular meetings, 11 January – 19 December, action minutes; fifth Thursdays cancelled from 25 January, and none minuted for 4 July, 28 November or 26 December |
-| 43–58 | 1997–2005 (43 is "Jan-June 1997") | unread |
+| 43 | January – June 1997 (`volume` "Jan-June 1997") | **read in full** 2026-10-28; 24 regular meetings, 9 January – 26 June, action minutes, plus seven joint hearings; none minuted for 2 or 30 January or 29 May |
+| 44–58 | July 1997 – 2005 (44 is "July-Dec 1997") | unread |
 | — | 1981–1993 | in no volume |
 | — | before July 1968 | not in this collection. The Commission dates from 1942 |
 
@@ -393,6 +394,18 @@
   records its printed Lot 24 dropped on 25 January 1996, and EAS joins 265
   by point to 287-289 Union next door. Check every condominium-conversion
   finding against its printed lot, not the join.
+- **From 24 April 1997 a conditional use is decided by "RESOLUTION No."**,
+  not "MOTION No.", and the numbers are less reliable than before: 14322 is
+  printed for both a 27 February disapproval and the 6 March USF Lone
+  Mountain approval, 14375 for a text amendment and the reclassification it
+  carried, 14377 for two unrelated cases on 22 May, and 2301 Powell's motion
+  as 15315. Keep the number as printed, note the repeat in `reader_note`, and
+  leave a number out of the description where it is plainly a misprint.
+- **The 1997 live/work approvals rarely place.** The half-year's discretionary
+  reviews of live/work buildings (260 Clara, 300 and 321 Langton, 635, 681
+  and 745 Tennessee, 835 Minnesota, 394 Townsend) are condominiums today or
+  sit on numbers EAS no longer holds. Read them for the vacant lot or the use
+  they replaced, and expect them unresolved (#446).
 - **People:** The minutes are *full* of them: applicants, their attorneys and
   architects, objecting neighbours, improvement-club officers, the
   commissioners and the staff, all named in the narrative of every hearing.
@@ -441,7 +454,13 @@
   volume 41, the 43 meeting days of 1995 the scan holds, into
   `minutes-1995.json`.
   volume 42, the 44 meetings of 1996, into `minutes-1996.json`.
-  **Next: volumes 43–58 (1997–2005); 43 is January – June 1997.** Volume 42
+  volume 43, the 24 meetings of January – June 1997, into
+  `minutes-1997-h1.json`.
+  **Next: volumes 44–58 (July 1997 – 2005); 44 is July – December 1997
+  (`44minutesofsanfran1997san`).** Volume 43 was 201 text pages (494,000
+  characters): one nightly run for a single reader with time over, so a
+  half-year volume is one run and a whole-year one (42) is a full run.
+  **Earlier note, from volume 42:** Volume 42
   was 351 text pages (934,000 characters) and filled one nightly run for a
   single reader, with resolving and seeding 96 pages taking about as long as
   the reading.
@@ -454,7 +473,36 @@
   findings, 153 on pages). Size by text pages: volume 40 was 199 text pages
   (486,000 characters) and one nightly run for a single reader with time to
   spare; a later volume of up to about 400 text pages should also fit.
-- **Verified:** **2026-10-26** (volume 42, 1996: 351 OCR pages with text
+- **Verified:** **2026-10-28** (volume 43, January – June 1997: 201 OCR
+  pages with text out of 400 viewer pages (402 scanned leaves), read in one
+  session by a single reader with no sub-agents; 24 regular meetings, 9
+  January to 26 June, and seven joint hearings. 128 findings — 121
+  decisions, 6 statements of what stood on or occupied a property, 1
+  landmark-district action (the Old Main Library Annex's demolition for the
+  Asian Art Museum). 95 resolved: 90 by the EAS join and 5 placed by hand —
+  Esprit Park and Parque Niños Unidos (23rd and Treat) on their place pages
+  by the record's parcels, the Kaiser outpatient building's ten lots on 2238
+  Geary, the Sailors' Union of the Pacific on the 450 Harrison page by name,
+  and Sutro Tower's 1 La Avanzada after the resolver fix below; 2011
+  Bayshore taken back as in 1996. 33 unresolved: 13 condominiums today
+  (#446) — most of them the year's live/work buildings and six-unit
+  conversions — 8 at numbers EAS does not hold (the live/work sites at 681
+  and 745 Tennessee, 835 Minnesota, 394 Townsend and 300 Langton among
+  them), 4 ranges now split across parcels, 7 with no street number (the
+  USF Lone Mountain housing, Balboa Park BART, the Giants ballpark EIR,
+  Pier 39, the Clipper Street PUD) and the one taken back. 93 published on
+  92 pages, 37 of them seeded; 2 declined (1 Tapia's bare height on the
+  SFSU campus parcel; one of two 949 Post entries of the same meeting,
+  merged). What the pass learned: from 24 April 1997 the Commission numbers
+  its conditional-use actions as resolutions, and three numbers are printed
+  twice in the half-year (14322, 14375, 14377) and one misprinted (15315), so
+  keep the number as printed and say so; the half-year's live/work approvals
+  in the South of Market, Potrero Hill and Dogpatch mostly cannot be placed —
+  their buildings are condominiums or their numbers are gone; and EAS files
+  some numbers of a street with no street type beside typed ones (1 LA
+  AVANZADA beside 250 LA AVANZADA ST), which a typed record missed until
+  `resolve_eas.py` learned to fall back to the untyped row.)
+  **2026-10-26** (volume 42, 1996: 351 OCR pages with text
   out of 384 viewer pages (386 scanned leaves), read in one session by a
   single reader with no sub-agents; 44 meetings, 11 January to 19 December.
   229 findings — 215 decisions, 10 statements of what stood on or occupied a

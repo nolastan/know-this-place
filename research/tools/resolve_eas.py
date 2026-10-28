@@ -523,7 +523,12 @@ class City:
     def rows_for(self, name: str, stype: str | None, number: str) -> list:
         number = (number or "").upper()
         if stype:
-            return self.by_addr[(name, stype, number)]
+            # EAS files some numbers of a street with no type beside others that
+            # have one: "1 LA AVANZADA" (Sutro Tower) next to "250 LA AVANZADA ST".
+            # A typed record misses the untyped row, so fall back to it — never to
+            # a row of another type, which would cross a street and an avenue.
+            return (self.by_addr.get((name, stype, number))
+                    or self.by_addr.get((name, "", number)) or [])
         return self.by_name_num[(name, number)]
 
     def parcel_numbers(self, parcel: str, name: str, stype: str, key: str = None) -> list:

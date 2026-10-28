@@ -3003,3 +3003,13 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   the page edits stashed (`git stash push -- san-francisco`) to see only what
   was already there.* (2026-10-27,
   [sources/sf-context-statements.md](sources/sf-context-statements.md))
+- **EAS can file one number of a street with no type beside typed ones.**
+  Sutro Tower is "1 LA AVANZADA" in EAS, with no street type, while its
+  parcel's other number is "250 LA AVANZADA ST". The 1997 minutes' "1 La
+  Avanzada Street" looked the typed key up, found nothing, and came back "the
+  address does not exist today" — for a tower that has stood since 1973.
+  `resolve_eas.py` now falls back to the untyped row of the same name and
+  number (never to a row of another type). *When a landmark-sized building
+  comes back "does not exist", query EAS for the number with `address like`
+  before believing it.* (2026-10-28,
+  [sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))

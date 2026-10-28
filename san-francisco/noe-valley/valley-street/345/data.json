@@ -1,0 +1,146 @@
+{
+  "address": "345 Valley Street, San Francisco, CA 94131",
+  "path": "/san-francisco/noe-valley/valley-street/345/",
+  "apn": "6620037",
+  "block": "6620",
+  "lot": "037",
+  "eas_baseid": "404123",
+  "coordinates": {
+    "lat": 37.744055,
+    "lng": -122.43
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2850,
+    "building_area_sqft": 1002,
+    "lot_depth_ft": 14,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 0345 VALLEY              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 199125,
+    "assessed_improvement_value": 159290
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201904157964",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-04-15",
+      "status_date": "2019-05-15",
+      "estimated_cost": 24271,
+      "revised_cost": 24271,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201404042440",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-04-04",
+      "status_date": "2014-04-15",
+      "estimated_cost": 3800,
+      "revised_cost": 5000,
+      "description": "remove & replace water damaged decking at rear of residential. replace deck railing, deck is approx 8' x 13' & footprint & sub structure to remain as is.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200402206843",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-02-20",
+      "status_date": "2004-02-20",
+      "estimated_cost": 1900,
+      "revised_cost": 1900,
+      "description": "remove existing shingles install 15 felt and alca winvyl siding on east walls -not visible from stre",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9610492",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-06-12",
+      "status_date": "1997-09-26",
+      "estimated_cost": 2000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9121871",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-11-18",
+      "status_date": "1991-12-06",
+      "estimated_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "1991–2020",
+    "shown_on_page": 5,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VALLEY&street_type=ST&address_number=345",
+      "retrieved": "2026-10-28"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6620037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-28"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6620&lot=037",
+      "retrieved": "2026-10-28"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6620037",
+      "retrieved": "2026-10-28"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1997-01-23",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 23 January 1997",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/43minutesofsanfran1997san/page/n58/mode/1up",
+      "retrieved": "2026-10-28"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1997-01-23",
+      "kind": "planning decision",
+      "description": "On discretionary review, the City Planning Commission approved, 6-1, a second-floor rear deck and stair on the single-family house, shortened by four feet.",
+      "source": "sf-planning-commission-minutes-1997-01-23"
+    }
+  ]
+}
