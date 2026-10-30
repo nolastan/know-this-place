@@ -25,6 +25,7 @@ that neighborhood.
 - [Leavenworth Street](leavenworth-street/) — 1 building, built 1907.
 - [Leroy Place](leroy-place/) — 1 building, built 1988.
 - [Mason Street](mason-street/) — 1 building.
+- [Miles Street](miles-street/) — 1 building, built 1929.
 - [Pine Street](pine-street/) — 4 buildings, built 1920–1922.
 - [Pleasant Street](pleasant-street/) — 1 building, built 1984.
 - [Polk Street](polk-street/) — 1 building, built 1909.
