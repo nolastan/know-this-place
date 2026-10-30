@@ -507,8 +507,8 @@
   Front on 248 Front by the record's lot and its 12,600 sq ft site, the
   Federal Building site at Seventh and Mission on 90 7th Street by name, and
   Stonestown's cinema on 3201 20th Avenue as before. 45 unresolved: 27
-  condominiums today (#446) — the year's live/work buildings, six
-  condominium conversions approved on one evening (11 December) and
+  condominiums today (#446) — the year's live/work buildings, four of the
+  six condominium conversions approved on one evening (11 December) and
   2288 Broadway, joined to a lot with no roll row — 9 at numbers EAS does
   not hold (741 Vallejo's garage, 1438 and 938 Harrison, 233 Brannan, 2155
   Webster among them), 5 ranges split across parcels, 2 with no street number
