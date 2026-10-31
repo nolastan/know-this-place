@@ -1,0 +1,153 @@
+{
+  "address": "105 Miles Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/miles-street/105/",
+  "apn": "0243054",
+  "block": "0243",
+  "lot": "054",
+  "eas_baseid": "280503",
+  "coordinates": {
+    "lat": 37.792397,
+    "lng": -122.408783
+  },
+  "parcel": {
+    "year_built": 1929,
+    "units": 1,
+    "stories": 2,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 10870,
+    "building_area_sqft": 2556,
+    "use": "Commercial Misc",
+    "property_class": "Clubs,Lodges,Fraternal Organizations",
+    "construction_type_code": "D",
+    "zoning": "RM-4",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Chinatown",
+    "property_location_raw": "0000 0105 MILES               CT0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 520055,
+    "assessed_improvement_value": 27229,
+    "last_sale_date": "2015-11-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1929",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200207262440",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2002-07-26",
+      "status_date": "2003-10-16",
+      "estimated_cost": 80000,
+      "revised_cost": 80000,
+      "description": "2 (n) hvac units and duct work on floors 1, 2 and 3",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200207262432",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-07-26",
+      "status_date": "2003-04-28",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to exising permit 200003154374",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200203050594",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2002-03-05",
+      "status_date": "2003-10-16",
+      "estimated_cost": 41500,
+      "revised_cost": 41500,
+      "description": "install a new fire sprinkler system on entry level, lower level, and 2nd floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200111273921",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2001-11-27",
+      "status_date": "2003-10-16",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "rev#200003154373s to foundation system to allow for discovered subsurface conditions",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200109269236",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2001-09-26",
+      "status_date": "2002-06-05",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revise to 2000/03/15/4373 structural only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200003154373",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2000-03-15",
+      "status_date": "2003-10-22",
+      "estimated_cost": 1200000,
+      "revised_cost": 1200000,
+      "description": "partial demo of an (e) building",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MILES&street_type=ST&address_number=105",
+      "retrieved": "2026-10-30"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0243054&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-30"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0243&lot=054",
+      "retrieved": "2026-10-30"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0243054",
+      "retrieved": "2026-10-30"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1997-11-20",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 20 November 1997",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/44minutesofsanfran1997san/page/n262/mode/1up",
+      "retrieved": "2026-10-30"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1997-11-20",
+      "kind": "occupancy",
+      "description": "The building held a recreational facility of about 7,794 square feet; an application to add about 6,154 square feet to it was continued into 1998.",
+      "source": "sf-planning-commission-minutes-1997-11-20"
+    }
+  ]
+}

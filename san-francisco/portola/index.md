@@ -11,6 +11,7 @@ A hillside residential district in the city's south-east, between McLaren Park a
 - [Girard Street](girard-street/) — 1 building.
 - [Hamilton Street](hamilton-street/) — 1 building, built 1915.
 - [Holyoke Street](holyoke-street/) — 1 building, built 1908.
+- [Silliman Street](silliman-street/) — 1 building, built 1992.
 - [Silver Avenue](silver-avenue/) — 1 building, built 1927.
 - [University Street](university-street/) — 1 building, built 1932.
 - [Wayland Street](wayland-street/) — 1 building, built 2004.

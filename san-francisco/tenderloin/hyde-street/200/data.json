@@ -1,0 +1,103 @@
+{
+  "address": "200 Hyde Street, San Francisco, CA 94102",
+  "path": "/san-francisco/tenderloin/hyde-street/200/",
+  "apn": "0337021",
+  "block": "0337",
+  "lot": "021",
+  "eas_baseid": "281879",
+  "coordinates": {
+    "lat": 37.782837,
+    "lng": -122.415461
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "lot_area_sqft": 7656,
+    "use": "Commercial Misc",
+    "property_class": "Parking Lot",
+    "construction_type_code": "C",
+    "zoning": "RC-4",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Tenderloin",
+    "analysis_neighborhood": "Tenderloin",
+    "property_location_raw": "0000 0200 HYDE                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 412156,
+    "assessed_improvement_value": 4590
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1900",
+    "survey_name": "PARKING LOT",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Uptown Tenderloin Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1957",
+    "source": "sf-historic-districts"
+  },
+  "permits": [],
+  "permit_summary": {
+    "count_on_file": 1,
+    "range": "2007",
+    "shown_on_page": 0,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HYDE&street_type=ST&address_number=200",
+      "retrieved": "2026-10-30"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0337021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-30"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0337&lot=021",
+      "retrieved": "2026-10-30"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0337021",
+      "retrieved": "2026-10-30"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41546103158805%2037.78283692758029)%27)",
+      "retrieved": "2026-10-30"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1997-07-24",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 24 July 1997",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/44minutesofsanfran1997san/page/n42/mode/1up",
+      "retrieved": "2026-10-30"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1997-07-24",
+      "kind": "planning decision",
+      "description": "The City Planning Commission removed the corner lot from the General Plan's sites proposed for acquisition as public open space, 5-0 (Resolution 14427).",
+      "source": "sf-planning-commission-minutes-1997-07-24"
+    }
+  ]
+}
