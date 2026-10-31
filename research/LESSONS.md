@@ -3013,3 +3013,15 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   comes back "does not exist", query EAS for the number with `address like`
   before believing it.* (2026-10-28,
   [sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))
+- **A quote taken from the line that carries the action can start inside the
+  speaker list.** Action minutes run "SPEAKERS: …, <name> ACTION: Take D.R.
+  Disapproved" onto one OCR line, and a reader quoting "the line with the
+  action" carries the last speaker's name into `raw.text`. Reading volume 45
+  (1998) of the Planning Commission minutes from a view that collapsed the
+  AYES/NOES/ABSENT lists to counts, nine drafted quotes began with a speaker's
+  surname or quoted the collapsed vote line, which is not on the page at all.
+  *Quote from `ACTION:` onward, or from the request's own clause, and match
+  every span mechanically against the raw page file before writing the
+  findings file — a reading view is for reading, never for quoting.*
+  (2026-10-31,
+  [sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))

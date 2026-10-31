@@ -26,6 +26,7 @@ A low-lying district on filled ground along the northern waterfront, largely bui
 - [Laguna Street](laguna-street/) — 1 building, built 1924.
 - [Lombard Street](lombard-street/) — 1 building, built 1960.
 - [Lyon Street](lyon-street/) — 1 building, built 1900; 1 in the Presidio of San Francisco Historic District.
+- [Magnolia Street](magnolia-street/) — 1 building, built 2000.
 - [Mallorca Way](mallorca-way/) — 1 building, built 1950; 1 in the Marina Corporation Residential Historic District.
 - [Marina Boulevard](marina-boulevard/) — 1 building, built 1938.
 - [Moraga Avenue](moraga-avenue/) — 1 building; 1 in the Presidio of San Francisco Historic District.

@@ -1,0 +1,131 @@
+{
+  "address": "187 Ripley Street, San Francisco, CA 94110",
+  "path": "/san-francisco/bernal-heights/ripley-street/187/",
+  "apn": "5542030",
+  "block": "5542",
+  "lot": "030",
+  "eas_baseid": "380002",
+  "coordinates": {
+    "lat": 37.744516,
+    "lng": -122.410858
+  },
+  "parcel": {
+    "year_built": 1999,
+    "units": 1,
+    "stories": 4,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2800,
+    "building_area_sqft": 2544,
+    "basement_area_sqft": 459,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "WOO",
+    "zoning": "RH-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Bernal Heights",
+    "property_location_raw": "0000 0187 RIPLEY              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 642754,
+    "assessed_improvement_value": 428500,
+    "last_sale_date": "1999-07-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1999",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200705242181",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-05-24",
+      "status_date": "2007-08-31",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "replace existing sliding door add new window at rear .67 u factor min.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9906715",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-04-08",
+      "status_date": "1999-07-06",
+      "estimated_cost": 2500,
+      "description": "addition to application 9718984s",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9902634",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1999-02-10",
+      "status_date": "1999-07-06",
+      "estimated_cost": 2700,
+      "description": "install five sprinkler",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9718984S",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1997-09-25",
+      "status_date": "1999-07-06",
+      "estimated_cost": 180000,
+      "revised_cost": 265000,
+      "description": "erect a four story single family dwelling unit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=RIPLEY&street_type=ST&address_number=187",
+      "retrieved": "2026-10-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5542030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5542&lot=030",
+      "retrieved": "2026-10-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5542030",
+      "retrieved": "2026-10-31"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1998-02-19",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 19 February 1998",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/45minutesofsanfran1998san/page/n124/mode/1up",
+      "retrieved": "2026-10-31"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1998-02-19",
+      "kind": "planning decision",
+      "description": "On discretionary review, the City Planning Commission approved, 5-0, a new four-storey single-family house, with the last 10 feet of the building above 20 feet struck out.",
+      "source": "sf-planning-commission-minutes-1998-02-19"
+    }
+  ]
+}

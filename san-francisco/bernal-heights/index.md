@@ -9,6 +9,7 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [Andover Street](andover-street/) — 1 building, built 1907.
 - [Bonview Street](bonview-street/) — 1 building, built 1958.
 - [Bradford Street](bradford-street/) — 1 building, built 1912.
+- [Brewster Street](brewster-street/) — 1 building, built 1999.
 - [Cesar Chavez Street](cesar-chavez-street/) — 1 building, built 1991.
 - [Coleridge Street](coleridge-street/) — 1 building, built 1900.
 - [College Avenue](college-avenue/) — 1 building, built 1928.
