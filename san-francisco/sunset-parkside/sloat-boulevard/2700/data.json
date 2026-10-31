@@ -1,0 +1,114 @@
+{
+  "address": "2700 Sloat Boulevard, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/sloat-boulevard/2700/",
+  "apn": "2514008",
+  "block": "2514",
+  "lot": "008",
+  "eas_baseid": "485092",
+  "coordinates": {
+    "lat": 37.735786,
+    "lng": -122.50361
+  },
+  "parcel": {
+    "year_built": 2001,
+    "bathrooms": 2,
+    "lot_area_sqft": 30200,
+    "building_area_sqft": 6300,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "C",
+    "zoning": "NC-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2700 SLOAT               BL0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 7333477,
+    "last_sale_date": "2020-12-04"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "2001",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200002111649",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-02-11",
+      "status_date": "2001-01-04",
+      "estimated_cost": 1,
+      "revised_cost": 100,
+      "description": "omit sprinkler & alarm system which is not req., revision to appl #9903156",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9906888",
+      "type": "demolitions",
+      "status": "issued",
+      "filed": "1999-04-10",
+      "status_date": "1999-05-08",
+      "description": "demolish storage/warehouse",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9903156",
+      "type": "new construction",
+      "status": "complete",
+      "filed": "1999-02-18",
+      "status_date": "2001-01-04",
+      "estimated_cost": 1100000,
+      "revised_cost": 580000,
+      "description": "erect a one story plus storage",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SLOAT&street_type=BLVD&address_number=2700",
+      "retrieved": "2026-10-30"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2514008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-30"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2514&lot=008",
+      "retrieved": "2026-10-30"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2514008",
+      "retrieved": "2026-10-30"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1997-09-18",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 18 September 1997",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/44minutesofsanfran1997san/page/n134/mode/1up",
+      "retrieved": "2026-10-30"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1997-09-18",
+      "kind": "planning decision",
+      "description": "The City Planning Commission approved, 5-0, a conditional use and coastal zone permit for a retail building of 4,000 square feet or more on the site.",
+      "source": "sf-planning-commission-minutes-1997-09-18"
+    }
+  ]
+}

@@ -6,9 +6,9 @@
 >
 > - **Kind:** meeting minutes (scanned volumes) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 37 of 52 volumes read (July 1968 – December 1980, and
->   1994 – June 1997): 10,792 pages, 4,452 findings, 2,363 resolved, 2,219 published.
->   15 volumes remain — July 1997 – 2005. July–December 1975 is in no
+> - **Coverage:** 38 of 52 volumes read (July 1968 – December 1980, and
+>   1994 – 1997): 10,964 pages, 4,594 findings, 2,460 resolved, 2,316 published.
+>   14 volumes remain — 1998 – 2005. July–December 1975 is in no
 >   volume, nor is the regular meeting of 16 March 1978; volume 37
 >   holds only 17 of June – November 1978's meetings, volume 38 only
 >   34 of 1979's, volume 39 has no record of 7 February or 14 August 1980,
@@ -58,7 +58,8 @@
 | 41 | 1995 (`volume` "1995") | **read in full** 2026-10-24; 43 meeting days, 9 January – 14 December, action minutes; none of 16 February, 23 March, 26 October or 2 November, 17 August bound twice, and 1 June, 31 August, 23 November and 21 December cancelled |
 | 42 | 1996 (`volume` "1996") | **read in full** 2026-10-26; 44 regular meetings, 11 January – 19 December, action minutes; fifth Thursdays cancelled from 25 January, and none minuted for 4 July, 28 November or 26 December |
 | 43 | January – June 1997 (`volume` "Jan-June 1997") | **read in full** 2026-10-28; 24 regular meetings, 9 January – 26 June, action minutes, plus seven joint hearings; none minuted for 2 or 30 January or 29 May |
-| 44–58 | July 1997 – 2005 (44 is "July-Dec 1997") | unread |
+| 44 | July – December 1997 (`volume` "July-Dec 1997") | **read in full** 2026-10-30; 19 regular meetings, 10 July – 18 December, action minutes, two closed sessions and one joint hearing; none minuted for 3 or 31 July, 2 or 30 October, 27 November or 25 December, and 11 September cancelled |
+| 45–58 | 1998 – 2005 | unread |
 | — | 1981–1993 | in no volume |
 | — | before July 1968 | not in this collection. The Commission dates from 1942 |
 
@@ -406,6 +407,20 @@
   and 745 Tennessee, 835 Minnesota, 394 Townsend) are condominiums today or
   sit on numbers EAS no longer holds. Read them for the vacant lot or the use
   they replaced, and expect them unresolved (#446).
+- **The second half of 1997 is the live/work appeals half-year.** Eight
+  negative-declaration appeals and discretionary reviews of live/work
+  buildings (394 Townsend, 1438 and 2501 Harrison, 725 Florida, 1025 17th
+  Street, 599 Third, 249 Shipley, 938 and 914 Harrison) fill the evenings;
+  most were upheld 4-3 or 4-2, and their sites are condominiums today or
+  numbers EAS no longer holds. Their value is the description of the site
+  they replaced — a vacant lot used for parking, a taxi garage, a
+  single-storey masonry warehouse — which is taken as an occupancy
+  statement only where a page can hold it.
+- **Items still continued when the volume ends are read for what stood
+  there.** A December calendar carries cases heard next in 1998; the
+  calendar's description of the existing building is dated to the last
+  hearing in the volume and taken as an occupancy statement, never as a
+  decision.
 - **People:** The minutes are *full* of them: applicants, their attorneys and
   architects, objecting neighbours, improvement-club officers, the
   commissioners and the staff, all named in the narrative of every hearing.
@@ -456,8 +471,14 @@
   volume 42, the 44 meetings of 1996, into `minutes-1996.json`.
   volume 43, the 24 meetings of January – June 1997, into
   `minutes-1997-h1.json`.
-  **Next: volumes 44–58 (July 1997 – 2005); 44 is July – December 1997
-  (`44minutesofsanfran1997san`).** Volume 43 was 201 text pages (494,000
+  volume 44, the 19 meetings of July – December 1997, into
+  `minutes-1997-h2.json`.
+  **Next: volumes 45–58 (1998 – 2005); 45 is 1998 — check its `volume`
+  field for the span first.** Volume 44 was 172 text pages (326,000
+  characters after whitespace is squeezed) and left most of a nightly run
+  over for a single reader; a whole-year volume of up to about 400 text
+  pages is one run.
+  **Earlier note, from volume 43:** Volume 43 was 201 text pages (494,000
   characters): one nightly run for a single reader with time over, so a
   half-year volume is one run and a whole-year one (42) is a full run.
   **Earlier note, from volume 42:** Volume 42
@@ -473,7 +494,40 @@
   findings, 153 on pages). Size by text pages: volume 40 was 199 text pages
   (486,000 characters) and one nightly run for a single reader with time to
   spare; a later volume of up to about 400 text pages should also fit.
-- **Verified:** **2026-10-28** (volume 43, January – June 1997: 201 OCR
+- **Verified:** **2026-10-30** (volume 44, July – December 1997: 172 OCR
+  pages with text out of 342 viewer pages (346 scanned leaves), read in one
+  session by a single reader with no sub-agents; 19 regular meetings, 10
+  July to 18 December. 142 findings — 121 decisions and 21 statements of what
+  stood on or occupied a property, the latter from items withdrawn or still
+  continued into 1998. 97 resolved: 89 by the EAS join and 8 placed by hand —
+  the Beach Chalet's sign on its place page, Parque Niños Unidos by the
+  record's parcels, 200 Hyde by the record's own Lot 21 of Block 337, the
+  Scott Street Senior Housing complex's two decisions on 2180 Post (the
+  record's eight lots assembled into one 34,745 sq ft lot built 2000), 244
+  Front on 248 Front by the record's lot and its 12,600 sq ft site, the
+  Federal Building site at Seventh and Mission on 90 7th Street by name, and
+  Stonestown's cinema on 3201 20th Avenue as before. 45 unresolved: 27
+  condominiums today (#446) — the year's live/work buildings, four of the
+  six condominium conversions approved on one evening (11 December) and
+  2288 Broadway, joined to a lot with no roll row — 9 at numbers EAS does
+  not hold (741 Vallejo's garage, 1438 and 938 Harrison, 233 Brannan, 2155
+  Webster among them), 5 ranges split across parcels, 2 with no street number
+  (the Giants ballpark, Beale and Bryant), 1100 Howard unjoined, and 3579
+  Folsom, whose printed lot has been split since. 97 published on 95 pages,
+  43 of them seeded; none declined. What the pass learned: motion numbers
+  repeat within a meeting again (14456 and 14457 on 18 September, 14481 for
+  four amendments on 23 October), and 239 Valley's printed action runs on
+  into another case's restaurant conditions, so read the action against the
+  request; the calendar mistypes streets in ways the block settles ("25TH
+  AVENUE" between Sanchez and Noe is 25th Street, "CLAY SCOTT" is Scott, Block
+  "3744" for 250 Brannan is 3774); `resolve_eas.py` writes a `conflict` for a
+  printed block that is only a transposed digit, which is not a page
+  `unknowns` sentence; and items still continued when a volume ends carry the
+  half-year's best statements of what stood on a site — the Apparel Mart's
+  275,000 sq ft, a former gas station at 1100 Howard, a 16,000 sq ft
+  unreinforced masonry building at 938 Harrison — so read them to the end of
+  the volume before deciding they hold nothing.)
+  **2026-10-28** (volume 43, January – June 1997: 201 OCR
   pages with text out of 400 viewer pages (402 scanned leaves), read in one
   session by a single reader with no sub-agents; 24 regular meetings, 9
   January to 26 June, and seven joint hearings. 128 findings — 121

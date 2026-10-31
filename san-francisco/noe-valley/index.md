@@ -35,6 +35,7 @@ that study area, as an example of the Second Bay Tradition.
 - [Turquoise Way](turquoise-way/) — 1 building, built 1962; 1 in the Diamond Heights Historic District.
 - [Valley Street](valley-street/) — 1 building, built 1900.
 - [Vicksburg Street](vicksburg-street/) — 1 building, built 1900.
+- [Zircon Place](zircon-place/) — 1 building, built 1969.
 
 ## Parks and public spaces
 
