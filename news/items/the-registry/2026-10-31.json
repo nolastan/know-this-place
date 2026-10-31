@@ -1,0 +1,76 @@
+{
+ "source_id": "the-registry",
+ "batch": "2026-10-31",
+ "read_on": "2026-10-31",
+ "notes": "Run of 2026-10-31. Paywalled after the lede; listings and pipeline roundups, no usable single-building fact.",
+ "coverage": {
+  "unit": "articles",
+  "examined": 3,
+  "mentions": 2,
+  "remaining": "none"
+ },
+ "findings": [
+  {
+   "id": "2026-10-31-0001",
+   "date": "2026-10-30",
+   "date_precision": "day",
+   "kind": "listing",
+   "address_as_written": "560 Commercial Street",
+   "street_number": "560",
+   "street_type": "ST",
+   "street_name": "COMMERCIAL",
+   "description": "Office building listed for sale.",
+   "extra": {},
+   "citation": {
+    "label": "The Registry, “Old Waterfront Lists 15,000 SQFT 560 Commercial Street as Small San Francisco Office Buildings Trade Above $1,000 Per SQFT,” 30 October 2026",
+    "url": "https://news.theregistrysf.com/old-waterfront-lists-15000-sqft-560-commercial-street-as-small-san-francisco-office-buildings-trade-above-1000-per-sqft/"
+   },
+   "raw": {
+    "text": ""
+   },
+   "confidence": "high",
+   "publish": {
+    "status": "declined",
+    "note": "Paywalled after the lede; a listing, not a sale."
+   },
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-10-31",
+    "method": "No record in sf-eas-addresses for 560 COMMERCIAL ST.",
+    "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 554, 555, 556, 558, 563, 564. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+   }
+  },
+  {
+   "id": "2026-10-31-0002",
+   "date": "2026-10-30",
+   "date_precision": "day",
+   "kind": "mention",
+   "address_as_written": "221 Main Street",
+   "street_number": "221",
+   "street_type": "ST",
+   "street_name": "MAIN",
+   "description": "Sales-pipeline roundup.",
+   "extra": {},
+   "citation": {
+    "label": "The Registry, “PIMCO’s $250MM 221 Main Leads San Francisco Office Sales Pipeline as Pricing Stretches From $71 to $1,333 Per SQFT,” 30 October 2026",
+    "url": "https://news.theregistrysf.com/pimcos-250mm-221-main-leads-san-francisco-office-sales-pipeline-as-pricing-stretches-from-71-to-1333-per-sqft/"
+   },
+   "raw": {
+    "text": ""
+   },
+   "confidence": "high",
+   "publish": {
+    "status": "declined",
+    "note": "Paywalled roundup of marketed properties; no completed event."
+   },
+   "resolution": {
+    "status": "resolved",
+    "apn": "3740034",
+    "path": "/san-francisco/south-beach/main-street/221/",
+    "eas_address": "221 MAIN ST",
+    "method": "EAS exact match on 221 MAIN ST → parcel 3740034; sf-parcels has blklot 3740034 active, 221–221 MAIN; the 2025 roll records it as commercial office, built 1973.",
+    "checked_on": "2026-10-31"
+   }
+  }
+ ]
+}
