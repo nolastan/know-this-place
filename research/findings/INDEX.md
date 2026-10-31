@@ -387,6 +387,7 @@ are listed so their size is visible before anyone opens one.
 | `news-2026-10-23.json` | 1 | 1 KB | `inner-sunset` |
 | `news-2026-10-26.json` | 1 | 1 KB | `russian-hill` |
 | `news-2026-10-27.json` | 1 | 1 KB | `pacific-heights` |
+| `news-2026-10-30.json` | 3 | 1 KB | `mission`, `seacliff`, `east-cut` |
 | `news-backfill-2026-07.json` | 7 | 3 KB | `sunset-parkside`, `marina`, `noe-valley` +3 |
 | `north-beach-hcs.json` | 342 | 130 KB | `north-beach`, `chinatown`, `russian-hill` +3 |
 | `oceanside-hcs.json` | 19 | 7 KB | `sunset-parkside` |
