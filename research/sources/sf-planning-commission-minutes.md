@@ -6,9 +6,9 @@
 >
 > - **Kind:** meeting minutes (scanned volumes) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 38 of 52 volumes read (July 1968 – December 1980, and
->   1994 – 1997): 10,964 pages, 4,594 findings, 2,460 resolved, 2,316 published.
->   14 volumes remain — 1998 – 2005. July–December 1975 is in no
+> - **Coverage:** 39 of 52 volumes read (July 1968 – December 1980, and
+>   1994 – 1998): 11,378 pages, 4,840 findings, 2,625 resolved, 2,480 published.
+>   13 volumes remain — 1999 – 2005. July–December 1975 is in no
 >   volume, nor is the regular meeting of 16 March 1978; volume 37
 >   holds only 17 of June – November 1978's meetings, volume 38 only
 >   34 of 1979's, volume 39 has no record of 7 February or 14 August 1980,
@@ -59,7 +59,8 @@
 | 42 | 1996 (`volume` "1996") | **read in full** 2026-10-26; 44 regular meetings, 11 January – 19 December, action minutes; fifth Thursdays cancelled from 25 January, and none minuted for 4 July, 28 November or 26 December |
 | 43 | January – June 1997 (`volume` "Jan-June 1997") | **read in full** 2026-10-28; 24 regular meetings, 9 January – 26 June, action minutes, plus seven joint hearings; none minuted for 2 or 30 January or 29 May |
 | 44 | July – December 1997 (`volume` "July-Dec 1997") | **read in full** 2026-10-30; 19 regular meetings, 10 July – 18 December, action minutes, two closed sessions and one joint hearing; none minuted for 3 or 31 July, 2 or 30 October, 27 November or 25 December, and 11 September cancelled |
-| 45–58 | 1998 – 2005 | unread |
+| 45 | 1998 (`volume` "1998") | **read in full** 2026-10-31; 47 regular meetings, 8 January – 17 December, action minutes, plus nine joint and special hearings; regular meetings cancelled for 1 and 29 January, 30 April, 2 and 30 July, 29 October, 26 November, 24 and 31 December |
+| 46–58 | 1999 – 2005 | unread; 47 is January – April 2000 |
 | — | 1981–1993 | in no volume |
 | — | before July 1968 | not in this collection. The Commission dates from 1942 |
 
@@ -473,8 +474,14 @@
   `minutes-1997-h1.json`.
   volume 44, the 19 meetings of July – December 1997, into
   `minutes-1997-h2.json`.
-  **Next: volumes 45–58 (1998 – 2005); 45 is 1998 — check its `volume`
-  field for the span first.** Volume 44 was 172 text pages (326,000
+  volume 45, the 47 regular meetings of 1998, into `minutes-1998.json`.
+  **Next: volumes 46–58 (1999 – 2005); 46 is 1999 and 47 is January –
+  April 2000 — check each `volume` field for the span first.** Volume 45 was
+  414 text pages (862,000 characters) and filled a nightly run for a single
+  reader, with resolving and seeding 79 pages after it; a whole-year volume
+  of that size is one full run, and anything larger should be split by
+  meeting.
+  **Earlier note, from volume 44:** Volume 44 was 172 text pages (326,000
   characters after whitespace is squeezed) and left most of a nightly run
   over for a single reader; a whole-year volume of up to about 400 text
   pages is one run.
@@ -494,7 +501,42 @@
   findings, 153 on pages). Size by text pages: volume 40 was 199 text pages
   (486,000 characters) and one nightly run for a single reader with time to
   spare; a later volume of up to about 400 text pages should also fit.
-- **Verified:** **2026-10-30** (volume 44, July – December 1997: 172 OCR
+- **Verified:** **2026-10-31** (volume 45, 1998: 414 OCR pages with text
+  out of 592 viewer pages (594 scanned leaves), read in one session by a
+  single reader with no sub-agents; 47 regular meetings, 8 January to 17
+  December. 246 findings — 214 decisions (three of them Board of Supervisors
+  or Board of Permit Appeals actions the minutes report), 23 statements of
+  what stood on or occupied a property, 6 landmark actions (Engine House
+  No. 31, the Shriners Hospital, the Carmel Fallon Building, the Golden Gate
+  Bridge, Schubert Hall, the Hamm's Building sign district) and 3 dated site
+  histories. 165 resolved: 159 by the EAS join and 6 by hand — 254
+  Front on the 248 Front page by the record's Lot 18 of Block 236, 1990
+  Ocean on 1970 Ocean (the church) by its lot, the Chestnut and Leavenworth
+  bequest on the Fay Park place page by its two lots, and three join results
+  kept over a printed block that is a lost digit (154 Coleridge, 3301 Balboa)
+  or the record's second parcel (300 Gaven). 81 unresolved: 44
+  condominiums today (#446) — the year's live/work buildings above all — 23
+  numbers EAS no longer holds (914 and 938 Harrison, 1001 23rd,
+  the Shriners site's 1701 and 1651 19th Avenue, 70-82 Natoma, 723 Tehama),
+  7 ranges now split across parcels, 4 places with no number (the
+  ballpark, Golden Gate Park, the Golden Gate Bridge, the Hamm's sign
+  district), and 3 placed by hand on parcels with no roll row or no page
+  (70 Ocean, 459 Vienna) or no clear page (222 Schwerin, which EAS puts on
+  a vacant street parcel, which EAS puts on a vacant street parcel
+  while the record's lot carries 200-298 Schwerin). 164 published on 149
+  pages, 79 of them seeded; 1 declined as already on the page (the Carmel
+  Fallon landmark recommendation). What the pass learned: from 5 November
+  the minutes change format ("Meeting Minutes", with page footers) and
+  December's vote lists print in columns the OCR scrambles, so several
+  items read "Disapproved/Denied — AYES 1, NAYES 6" (a failed motion to
+  approve) and their votes are left out; motion numbers repeat or misprint
+  again (14257 for 14527, 14657 twice, 14712 twice); five motions of intent
+  to disapprove were reversed into approvals at the final vote (1901 Union,
+  600-640 Battery, 500 Divisadero, 2001 Union, 3989 24th Street), so never
+  publish an intent; "Approved as proposed" under Items to be Continued
+  still approves only the continuance; and quotes drafted from a line that
+  carries the action can begin inside the speaker list — see LESSONS.)
+  **2026-10-30** (volume 44, July – December 1997: 172 OCR
   pages with text out of 342 viewer pages (346 scanned leaves), read in one
   session by a single reader with no sub-agents; 19 regular meetings, 10
   July to 18 December. 142 findings — 121 decisions and 21 statements of what

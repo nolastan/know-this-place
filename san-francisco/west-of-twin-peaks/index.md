@@ -22,6 +22,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Foerster Street](foerster-street/) — 1 building, built 1900.
 - [Frida Kahlo Way](frida-kahlo-way/) — 1 building.
 - [Funston Avenue](funston-avenue/) — 1 building, built 1936.
+- [Granville Way](granville-way/) — 1 building, built 1923.
 - [Juanita Way](juanita-way/) — 1 building, built 1927.
 - [Junipero Serra Boulevard](junipero-serra-boulevard/) — 1 building, built 1920; 1 in the St. Francis Wood Historic District.
 - [Kensington Way](kensington-way/) — 3 buildings, built 1997–2000.
