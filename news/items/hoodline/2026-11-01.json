@@ -1,38 +1,46 @@
 {
- "source_id": "hoodline",
- "batch": "2026-11-01",
- "read_on": "2026-11-01",
- "notes": "Run of 2026-11-01. Oasis Grill declined (ambiguous address, ten-year test); turf-field and charter-school stories name no address.",
- "coverage": {
-  "unit": "articles",
-  "examined": 1,
-  "mentions": 1,
-  "remaining": "none"
- },
- "findings": [
-  {
-   "id": "2026-11-01-0001",
-   "date": "2026-10-31",
-   "date_precision": "day",
-   "kind": "eviction",
-   "address_as_written": "100 1st St.",
-   "street_number": "100",
-   "street_type": "ST",
-   "street_name": "1ST",
-   "description": "Oasis Grill lost a downtown location after the landlord leased it to another restaurant.",
-   "extra": {},
-   "citation": {
-    "label": "Hoodline, 31 October 2026",
-    "url": "https://hoodline.com/2026/10/downtown-sf-mediterranean-spot-oasis-grill-ousted-after-landlord-courts-higher-rent/"
-   },
-   "raw": {
-    "text": ""
-   },
-   "confidence": "high",
-   "publish": {
-    "status": "declined",
-    "note": "The article lists five addresses (the closed location plus the three remaining ones and another); the closed unit's building cannot be fixed from the text read, and a single restaurant's lease change fails the ten-year test."
-   }
-  }
- ]
+  "source_id": "hoodline",
+  "batch": "2026-11-01",
+  "read_on": "2026-11-01",
+  "notes": "Run of 2026-11-01. Oasis Grill declined (ambiguous address, ten-year test); turf-field and charter-school stories name no address.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 1,
+    "mentions": 1,
+    "remaining": "none"
+  },
+  "findings": [
+    {
+      "id": "2026-11-01-0001",
+      "date": "2026-10-31",
+      "date_precision": "day",
+      "kind": "eviction",
+      "address_as_written": "100 1st St.",
+      "street_number": "100",
+      "street_type": "ST",
+      "street_name": "1ST",
+      "description": "Oasis Grill lost a downtown location after the landlord leased it to another restaurant.",
+      "extra": {},
+      "citation": {
+        "label": "Hoodline, 31 October 2026",
+        "url": "https://hoodline.com/2026/10/downtown-sf-mediterranean-spot-oasis-grill-ousted-after-landlord-courts-higher-rent/"
+      },
+      "raw": {
+        "text": ""
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Duplicate: the same closure is already carried on /san-francisco/east-cut/1st-street/100/ by The San Francisco Standard (2026-10-30) and sits on the homepage grid. Also names five addresses; fails the one-event-one-entry rule."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3721001",
+        "path": "/san-francisco/east-cut/1st-street/100/",
+        "eas_address": "100 01ST ST",
+        "method": "EAS exact match on 100 01ST ST → parcel 3721001; sf-parcels has blklot 3721001 active, 100–104 01ST; the 2025 roll records it as commercial office, built 1988. EAS puts 100, 104 01ST ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 100. The record writes the street 1ST; EAS holds the numbered streets zero-padded to four characters, so this is 01ST.",
+        "checked_on": "2026-11-01"
+      }
+    }
+  ]
 }
