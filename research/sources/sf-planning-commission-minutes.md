@@ -6,9 +6,9 @@
 >
 > - **Kind:** meeting minutes (scanned volumes) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 38 of 52 volumes read (July 1968 – December 1980, and
->   1994 – 1997): 10,964 pages, 4,594 findings, 2,460 resolved, 2,316 published.
->   14 volumes remain — 1998 – 2005. July–December 1975 is in no
+> - **Coverage:** 39 of 52 volumes read (July 1968 – December 1980, and
+>   1994 – 1998): 11,376 pages, 4,819 findings, 2,617 resolved, 2,472 published.
+>   13 volumes remain — 1999 – 2005. July–December 1975 is in no
 >   volume, nor is the regular meeting of 16 March 1978; volume 37
 >   holds only 17 of June – November 1978's meetings, volume 38 only
 >   34 of 1979's, volume 39 has no record of 7 February or 14 August 1980,
@@ -501,8 +501,16 @@
   volume 44, the 19 meetings of July – December 1997, into
   `minutes-1997-h2.json`.
   volume 45, the 44 meetings of 1998, into `minutes-1998.json`.
-  **Next: volumes 45–58 (1998 – 2005); 45 is 1998 — check its `volume`
-  field for the span first.** Volume 44 was 172 text pages (326,000
+  **Next: volumes 46–58 (1999 – 2005); 46 is 1999 (`volume` "1999"), 47
+  is January – April 2000 — check each `volume` field for the span
+  first.** Volume 45 was 412 text pages (862,000 characters) and 656
+  calendar items: a whole-year volume that filled a nightly run for a
+  single reader, with seeding 78 pages taking a quarter of an hour of
+  permit downloads. Read it through a condensed list of items (header,
+  action, vote count, motion number, speaker lists dropped) and go to the
+  raw pages only for merged items and scrambled votes; that kept the read
+  to about 110,000 tokens.
+  **Earlier note, from volume 44:** Volume 44 was 172 text pages (326,000
   characters after whitespace is squeezed) and left most of a nightly run
   over for a single reader; a whole-year volume of up to about 400 text
   pages is one run.
@@ -522,7 +530,37 @@
   findings, 153 on pages). Size by text pages: volume 40 was 199 text pages
   (486,000 characters) and one nightly run for a single reader with time to
   spare; a later volume of up to about 400 text pages should also fit.
-- **Verified:** **2026-10-30** (volume 44, July – December 1997: 172 OCR
+- **Verified:** **2026-11-01** (volume 45, 1998: 412 OCR pages with text
+  out of 592 viewer pages (594 scanned leaves), read in one session by a
+  single reader with no sub-agents; 44 regular meetings, 8 January to 17
+  December, and six joint hearings. 656 calendar items gave 225 findings —
+  211 decisions, 13 statements of what stood on or occupied a property and
+  1 site history (the Holy Family Day Home's Willis Polk building at 299
+  Dolores, in child care from about 1912 to 1989). 157 resolved: 148 by the
+  EAS join and 9 by hand — the three Shriners Hospital decisions on 1601
+  19th Avenue by name (EAS no longer holds 1701), 254 Front on 248 Front and
+  "1990 Ocean" on 1970 Ocean (the El Rey Theater, then a church, whose
+  tower is the record's spire) by the record's own lot, "450 459 Vienna" on
+  459 Vienna by its printed lot, and four new pages on streets the site had
+  not settled (Rae, Rickard, Vienna, Staples) filed under the assessor's
+  analysis neighbourhood instead of the nearest page. 68 unresolved: 39
+  condominiums today (#446) — the year's six-unit conversions and most of
+  its live/work buildings — 15 at numbers EAS does not hold (938 and 914
+  Harrison, 1001 23rd Street, 70 Natoma, 250 Steuart among them), 8 ranges
+  split across parcels, 5 with no street number (Golden Gate Park's master
+  plan, the Golden Gate Bridge landmark, the Pacific Bell ballpark, the
+  Hamm's Building sign district, two Chestnut Street lots bequeathed for open
+  space) and 1100 Howard still unjoined. 156 published on 145 pages, 78 of
+  them seeded; 1 declined (the Carmel Fallon Building's landmark vote,
+  already on its page from the environmental review). What the pass learned:
+  see the four 1998 cautions above — running-header dates, the November
+  column layout, merged lettered items and two-sided vote lines; that motion
+  numbers repeat again (14657, 14556, 14544, 14690, 14712, 14716) and jump
+  from 14559 to 14600 in March; and that `resolve_eas.py` writes a
+  `conflict` for a printed block the record simply misprints (6363 for 222
+  Schwerin's 6358, 1601 for 3301 Balboa's 1610), which is not a page
+  `unknowns` sentence.)
+  **2026-10-30** (volume 44, July – December 1997: 172 OCR
   pages with text out of 342 viewer pages (346 scanned leaves), read in one
   session by a single reader with no sub-agents; 19 regular meetings, 10
   July to 18 December. 142 findings — 121 decisions and 21 statements of what

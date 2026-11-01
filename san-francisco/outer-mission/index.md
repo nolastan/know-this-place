@@ -14,6 +14,7 @@ A residential district south of the Mission proper, built up in the first decade
 - [Onondaga Avenue](onondaga-avenue/) — 1 building, built 1979.
 - [Otsego Avenue](otsego-avenue/) — 1 building, built 1912.
 - [Ottawa Avenue](ottawa-avenue/) — 1 building, built 1940.
+- [Rae Avenue](rae-avenue/) — 1 building, built 1910.
 - [Regent Street](regent-street/) — 1 building, built 2008.
 - [Rousseau Street](rousseau-street/) — 1 building.
 - [San Gabriel Avenue](san-gabriel-avenue/) — 2 buildings, built 1913.

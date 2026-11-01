@@ -8,7 +8,7 @@
 **Never read one whole.** The largest,
 `loc-newspapers/sn85066387-1908-building-contracts.json`, is 4.4 MB — about
 1.2M tokens, more than a context window holds. The directory as a whole is
-around 20.8M tokens, and an agent that opens one of these files has usually
+around 20.9M tokens, and an agent that opens one of these files has usually
 spent its session to reach three entries.
 
 This file is the cheap way in. The table says what each batch covers;
@@ -62,7 +62,7 @@ An entry, with the share of the 40,732 that carry each key:
 | `confidence` | 92% |
 | `street_type` | 85% |
 | `street_number` | 63% |
-| `publish` | 60% |
+| `publish` | 61% |
 | `note` | 15% |
 | `conflict` | 3% |
 
@@ -228,7 +228,7 @@ sit in — the three it touched most, and how many in all.
 | `sf-planning-commission-minutes/minutes-1996.json` | 229 | 445 KB | 1996 | 177 | 175 | `mission`, `sunset-parkside`, `castro` +34 |
 | `sf-planning-commission-minutes/minutes-1997-h1.json` | 128 | 245 KB | 1997 | 95 | 93 | `castro`, `mission`, `north-beach` +30 |
 | `sf-planning-commission-minutes/minutes-1997-h2.json` | 142 | 274 KB | 1997 | 97 | 97 | `castro`, `noe-valley`, `inner-sunset` +30 |
-| `sf-planning-commission-minutes/minutes-1998.json` | 225 | 434 KB | 1998 | 157 | 0 | `mission`, `north-beach`, `inner-sunset` +31 |
+| `sf-planning-commission-minutes/minutes-1998.json` | 225 | 444 KB | 1998 | 157 | 156 | `mission`, `north-beach`, `inner-sunset` +31 |
 | `spur-popos-guide/popos-guide.json` | 56 | 86 KB | 1959–2008 | 54 | 3 | `east-cut`, `financial-district`, `south-beach` +2 |
 
 ## Manifests

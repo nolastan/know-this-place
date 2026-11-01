@@ -30,6 +30,7 @@ A working-class residential district in the city's south-east, laid out in the e
 - [Russia Avenue](russia-avenue/) — 1 building, built 1915.
 - [Silver Avenue](silver-avenue/) — 1 building, built 1922.
 - [Trumbull Street](trumbull-street/) — 1 building, built 1965.
+- [Vienna Street](vienna-street/) — 1 building, built 1904.
 - [Walbridge Street](walbridge-street/) — 1 building.
 
 ## Parks and public spaces
