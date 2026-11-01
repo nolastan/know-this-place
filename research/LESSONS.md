@@ -3013,3 +3013,17 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   comes back "does not exist", query EAS for the number with `address like`
   before believing it.* (2026-10-28,
   [sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))
+- **A scan split into items by a pattern merges every item the pattern
+  misses, and nothing says so.** Volume 45 of the Planning Commission
+  minutes was split into calendar items on "N. 98.123C"; lettered items
+  (9a, 12b) and items whose number the OCR garbled ("1Z*4.", "gAB.") fell
+  into the item before them, and one February item carried fourteen
+  decisions of seven cases. A condensed read of the first item's header
+  would have lost all of them. *After splitting, count the decision lines
+  (ACTION, RESOLVED, the vote) per item, read every item with more than two
+  as raw text, and widen the pattern before trusting the split.* The same
+  pass dated pages by the first-page meeting header and put 38 items under
+  the wrong meeting, because a meeting's first page is where the OCR is
+  worst; the running page header ("… CALENDAR -4- FEBRUARY 5, 1998") is
+  the reliable date. (2026-11-01,
+  [sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))

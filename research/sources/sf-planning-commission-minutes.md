@@ -59,7 +59,8 @@
 | 42 | 1996 (`volume` "1996") | **read in full** 2026-10-26; 44 regular meetings, 11 January – 19 December, action minutes; fifth Thursdays cancelled from 25 January, and none minuted for 4 July, 28 November or 26 December |
 | 43 | January – June 1997 (`volume` "Jan-June 1997") | **read in full** 2026-10-28; 24 regular meetings, 9 January – 26 June, action minutes, plus seven joint hearings; none minuted for 2 or 30 January or 29 May |
 | 44 | July – December 1997 (`volume` "July-Dec 1997") | **read in full** 2026-10-30; 19 regular meetings, 10 July – 18 December, action minutes, two closed sessions and one joint hearing; none minuted for 3 or 31 July, 2 or 30 October, 27 November or 25 December, and 11 September cancelled |
-| 45–58 | 1998 – 2005 | unread |
+| 45 | 1998 (`volume` "1998") | **read in full** 2026-11-01; 44 regular meetings, 8 January – 17 December, action minutes, and six joint hearings; 29 January, 29 October, 26 November and 24 and 31 December cancelled (notices bound in), 2 and 30 July cancelled in January, none minuted for 30 April |
+| 46–58 | 1999 – 2005 | unread |
 | — | 1981–1993 | in no volume |
 | — | before July 1968 | not in this collection. The Commission dates from 1942 |
 
@@ -416,6 +417,32 @@
   they replaced — a vacant lot used for parking, a taxi garage, a
   single-storey masonry warehouse — which is taken as an occupancy
   statement only where a page can hold it.
+- **The meeting date is on the running header, not the first page.** The
+  OCR mangles almost every meeting's own date ("FEBRUARYS, 1998", "THURSDAY
+  APRII 1fi 1QQR", "MAR 2 6 1998" — the library's receipt stamp, printed
+  beside it), and the addenda for one meeting are bound ahead of the next
+  meeting's minutes. Every later page prints "MINUTES OF HEARING AND
+  CALENDAR -4- FEBRUARY 5, 1998"; date pages from that header, and a
+  meeting's first page from the next page's header. A first-page date regex
+  dated 38 of 656 items of volume 45 to the wrong meeting before the header
+  rule replaced it.
+- **From 5 November 1998 the minutes change layout, and the OCR scrambles
+  the vote.** The new "Meeting Minutes" form prints "SPEAKER(S)", "ACTION",
+  "AYES", "NAYES", "ABSENT" and "MOTION No." as labels in one column and
+  their values in another, so the text reads "ACTION: AYES: NAYES: ABSENT:
+  MOTION No. [the speakers' names] Approved [the ayes] None Martin 14737".
+  The action word sits after the speaker list, and in two items (524 Union,
+  4550 Mission) a speaker's name runs straight into the action; read those
+  votes name by name, and never quote the action text from those pages.
+- **Item numbers with a letter (9a, 12b) and items whose number the OCR lost
+  merge into the item before them.** Splitting volume 45 on item numbers
+  missed every lettered item until the pattern allowed a letter, and a
+  February 1998 item carried fourteen actions of seven cases. Read any item
+  that prints more than two ACTION lines as raw text.
+- **A vote line can print a commissioner on both sides.** "AYES: Chinchilla,
+  Hills, Antenore, Theoharis. Mills. Martin NOES: Mills, Martin" (3150 22nd
+  Street), and twice more in 1998. Give no tally for those; say so in
+  `reader_note`.
 - **Items still continued when the volume ends are read for what stood
   there.** A December calendar carries cases heard next in 1998; the
   calendar's description of the existing building is dated to the last
@@ -473,6 +500,7 @@
   `minutes-1997-h1.json`.
   volume 44, the 19 meetings of July – December 1997, into
   `minutes-1997-h2.json`.
+  volume 45, the 44 meetings of 1998, into `minutes-1998.json`.
   **Next: volumes 45–58 (1998 – 2005); 45 is 1998 — check its `volume`
   field for the span first.** Volume 44 was 172 text pages (326,000
   characters after whitespace is squeezed) and left most of a nightly run
