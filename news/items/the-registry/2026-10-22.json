@@ -63,14 +63,16 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-10-22",
-    "method": "sf-eas-addresses has 845 MARKET ST but it does not join to one parcel. 845 MARKET ST's coordinates fall in 5 active parcels (3705056, 3705051, 3705055, 3705052…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+    "status": "resolved",
+    "apn": "3705050",
+    "path": "/san-francisco/south-of-market/market-street/845/",
+    "eas_address": "845 MARKET ST",
+    "method": "EAS exact match on 845 MARKET ST → parcel 3705050; sf-parcels has blklot 3705050 active, 845–845 MARKET; the 2025 roll records it as commercial retail, built 2006. 845 MARKET ST's coordinates fall in 5 active parcels; 3705050 is the one with a page.",
+    "checked_on": "2026-11-02"
    },
    "publish": {
-    "status": "pending",
-    "note": "Blocked: 845 Market St. is a condominium today (parcels per unit), so the seeder may not make a page; the resolver could not join it to one parcel."
+    "status": "declined",
+    "note": "Speculative: a data-center conversion floated for the former Bloomingdale's, nothing filed or approved; the same call as 736 Mission Street (2026-10-02). Resolves to the existing page at south-of-market/market-street/845 since #446. Revisit if a permit is filed."
    }
   }
  ]

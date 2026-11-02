@@ -1,0 +1,35 @@
+{
+  "address": "16 Jessie Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/jessie-street/16/unit-101/",
+  "unit": "101",
+  "apn": "3708123",
+  "block": "3708",
+  "lot": "123",
+  "parcel": {
+    "building_area_sqft": 1085,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 461214,
+    "assessed_improvement_value": 307470,
+    "last_sale_date": "2011-04-08"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3708123&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3708&unit=101",
+      "retrieved": "2026-11-01"
+    }
+  ]
+}

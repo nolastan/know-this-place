@@ -223,7 +223,9 @@ here is [Adding a source](#adding-a-source).
   - **A point on a condominium block returns dozens of parcels**, one per unit.
     That is the signal to stop and look for the building's own parcel on the
     roll (333 Bush → 0288033, an office; 0288032 is only its garage condo), or
-    to defer the address per AGENTS.md when there isn't one.
+    to page the building per REFERENCE.md → Condominium buildings when there
+    isn't one. Units of one building share a `mapblklot`; parcels that only
+    meet at the point do not.
 - **Citation label:** "SF Parcels (active and retired) via DataSF"
 - **Verified:** 2026-08-06 (83 downtown parcels resolved; `acdm-wktn` agrees
   with the 2025 roll on all 83, where EAS's `parcel_number` did not on 22)

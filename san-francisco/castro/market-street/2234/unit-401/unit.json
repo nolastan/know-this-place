@@ -1,0 +1,47 @@
+{
+  "address": "2238 Market Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/market-street/2234/unit-401/",
+  "unit": "401",
+  "apn": "3560122",
+  "block": "3560",
+  "lot": "122",
+  "parcel": {
+    "building_area_sqft": 1191,
+    "rooms": 2,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 895784,
+    "assessed_improvement_value": 597188,
+    "last_sale_date": "2022-09-16"
+  },
+  "permits": [
+    {
+      "number": "202410253801",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-10-25",
+      "status_date": "2025-04-14",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "one unit: bathroom floor tile repair work - 13sf.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3560122&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3560&unit=401",
+      "retrieved": "2026-11-01"
+    }
+  ]
+}

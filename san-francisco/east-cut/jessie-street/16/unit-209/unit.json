@@ -1,0 +1,44 @@
+{
+  "address": "16 Jessie Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/jessie-street/16/unit-209/",
+  "unit": "209",
+  "apn": "3708143",
+  "block": "3708",
+  "lot": "143",
+  "parcel": {
+    "building_area_sqft": 896
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 573547,
+    "assessed_improvement_value": 573547,
+    "last_sale_date": "2015-08-05"
+  },
+  "permits": [
+    {
+      "number": "202603107306",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2026-07-27",
+      "status_date": "2026-10-07",
+      "estimated_cost": 768400,
+      "revised_cost": 768400,
+      "description": "exterior repair of (e) 4-story brick bldg built in 1906. performing general cleaning, pointing of deterioriated mortar joints & patching at exterior brick wall to match existing;patching of cement plaster at horizontal surface, new flashing and parapet coping at n/e elev. cleaning and coating (e)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3708143&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3708&unit=209",
+      "retrieved": "2026-11-01"
+    }
+  ]
+}

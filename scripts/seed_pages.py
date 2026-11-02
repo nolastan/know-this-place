@@ -7073,6 +7073,14 @@ def existing_pages_by_apn() -> dict:
         apn = (rec.get("apn") or "").replace("-", "")
         if apn:
             index[apn] = "/" + f.parent.relative_to(ROOT).as_posix() + "/"
+    # A condominium unit's parcel is documented on its building's page.
+    for f in sorted(ROOT.rglob(f"san-francisco/**/{UNIT_FILE}")):
+        try:
+            rec = json.loads(f.read_text())
+        except json.JSONDecodeError:
+            continue
+        if rec.get("apn"):
+            index.setdefault(rec["apn"], "/" + f.parent.parent.relative_to(ROOT).as_posix() + "/")
     return index
 
 
@@ -7449,6 +7457,17 @@ def cmd_seed_list(args) -> int:
         # unit named in a report gets a page of its own, which AGENTS.md
         # forbids.
         row["status"] = classify(row)
+        # A condominium unit is seeded as its building: the unit's page is
+        # written as usual and then made the building's, with a page per unit
+        # (`make_condo`, REFERENCE.md → Condominium buildings).
+        # `classify` tests the residential class only; an office or store
+        # condominium ("Office - Condominium", "Commercial Store Condo") is
+        # as much a unit (988 Market Street).
+        if row["status"] == "condo-unit" or (
+                row["status"] == "seedable" and _is_condo(r)
+                and not row.get("sole_parcel_for_address")):
+            row["condo"] = True
+            row["status"] = "seedable"
         if row["status"] != "seedable":
             print(f"  {row['status']} for {e['apn']} "
                   f"({e['numbers'][0]} {e['street_display']}) — skipped",
@@ -7479,6 +7498,24 @@ def cmd_seed_list(args) -> int:
         page_dir.mkdir(parents=True, exist_ok=True)
         (page_dir / "data.json").write_text(
             json.dumps(rec, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        if row.get("condo"):
+            try:
+                print("  " + make_condo(page_dir, rec["sources"][0]["retrieved"], roll_year),
+                      file=sys.stderr)
+            except SystemExit as e:
+                (page_dir / "data.json").unlink()
+                try:
+                    page_dir.rmdir()
+                except OSError:
+                    pass
+                print(f"  {e} — skipped", file=sys.stderr)
+                elsewhere += 1
+                continue
+            rec = json.loads((page_dir / "data.json").read_text(encoding="utf-8"))
+            for f in sorted(page_dir.glob(f"unit-*/{UNIT_FILE}")):
+                (f.parent / "index.html").write_text(
+                    render_unit_html(json.loads(f.read_text(encoding="utf-8"))),
+                    encoding="utf-8")
         (page_dir / "index.html").write_text(render_html(rec), encoding="utf-8")
         written += 1
 
@@ -7746,7 +7783,9 @@ CONDO_BUILDING_PARCEL_KEYS = frozenset({
 
 
 def _is_condo(r: dict) -> bool:
-    return (r.get("property_class_code_definition") or "").startswith("Condominium")
+    """Any of the roll's condominium classes: "Condominium", "Condominium BMR",
+    and the commercial ones that end in "Condo" ("Commercial Store Condo")."""
+    return "condo" in (r.get("property_class_code_definition") or "").lower()
 
 
 def _roll_street(r: dict) -> str:
@@ -7900,9 +7939,18 @@ def condo_building_record(bldg: dict, rows: list, lots: list, method: str,
     # No storey count: a unit parcel's is the unit's, and the roll gives 999
     # Green Street's thirty-two floors as two.
     p["units"] = len(lots)
-    # The class the building page names is the plain one: "Condominium BMR"
-    # is a unit's, and never printed (see the section comment above).
-    p["property_class"] = "Condominium"
+    # The class and use are the stack's, not the lead unit's: most of 16
+    # Jessie Street's are flats, its lead lot a shop. The class the building
+    # page names is the plain one: "Condominium BMR" is a unit's, and never
+    # printed (see the section comment above). A commercial condominium keeps
+    # its own ("Commercial Store Condo").
+    for key, col in (("property_class", "property_class_code_definition"),
+                     ("use", "use_definition")):
+        common = collections.Counter(r.get(col) for r in units if r.get(col)).most_common(1)
+        if common and key in p:
+            p[key] = common[0][0]
+    if (p.get("property_class") or "Condominium").startswith("Condominium"):
+        p["property_class"] = "Condominium"
     rec["parcel"] = p
     rec["condominium"] = {"lots": lots, "method": method}
     entries = sorted((permit_entry(x, rec["path"]) for x in permits),
@@ -7948,76 +7996,92 @@ def condo_building_record(bldg: dict, rows: list, lots: list, method: str,
     return rec
 
 
+def make_condo(page_dir: Path, retrieved: str, roll_year: int,
+               lots: list = None, method: str = None) -> str:
+    """Make the building page in `page_dir` a condominium building with a
+    unit page per lot; returns a one-line report.
+
+    The page's `data.json` is either one unit parcel's page, as `seed` or
+    `seed-list` writes it (the lots are then proposed from its APN), or a
+    building already converted (its recorded lots are kept and every unit is
+    refreshed). `lots` replaces either.
+    """
+    data_path = page_dir / "data.json"
+    bldg = json.loads(data_path.read_text(encoding="utf-8"))
+    block = bldg.get("block")
+    if not block:
+        raise SystemExit(f"condo: {page_dir} records no block")
+    rows = api_get(DS_ROLL, {"$where": f"block='{block}' AND closed_roll_year='{roll_year}'",
+                             "$select": ROLL_SELECT, "$limit": 5000})
+    rows = [r for r in rows if r.get("lot")]
+    if lots:
+        lots = sorted(x.strip().upper() for x in lots if x.strip())
+        method = method or (f"Lots {', '.join(lots)} on block {block}, as given by hand "
+                            f"(`seed_pages.py condo --lots`).")
+    elif bldg.get("condominium"):
+        lots = bldg["condominium"]["lots"]
+        method = bldg["condominium"].get("method")
+    else:
+        if not bldg.get("apn"):
+            raise SystemExit(f"condo: {page_dir} records no parcel to start from; pass --lots")
+        lots, method = propose_condo_lots(rows, bldg["apn"])
+    by_lot = {r["lot"]: r for r in rows}
+    missing = [lot for lot in lots if lot not in by_lot]
+    if missing:
+        raise SystemExit(f"condo: lot(s) {', '.join(missing)} not on the "
+                         f"{roll_year} roll for block {block}")
+    units = [by_lot[lot] for lot in lots]
+    # One building, one page: a unit already documented under another page
+    # means the proposal has run into a neighbouring building, or this one is
+    # already paged at another of its numbers.
+    here = "/" + page_dir.relative_to(ROOT).as_posix() + "/"
+    covered = existing_pages_by_apn()
+    clash = sorted({covered[r["parcel_number"]] for r in units
+                    if covered.get(r["parcel_number"], here) != here})
+    if clash:
+        raise SystemExit(f"condo: {here} would take in parcels already documented at "
+                         f"{', '.join(clash)} — pass --lots, or file the fact there")
+    permits = []
+    for i in range(0, len(lots), 100):
+        chunk = lots[i:i + 100]
+        permits += api_get(DS_PERMITS, {
+            "$where": f"block='{block}' AND lot in ({_quote_list(chunk)})",
+            "$select": PERMIT_SELECT, "$limit": 50000})
+    number = bldg["path"].strip("/").split("/")[-1]
+    by_permit_lot, own = assign_condo_permits(permits, units, number)
+    slugs = unit_slugs(units, number)
+    new = condo_building_record(bldg, rows, lots, method, retrieved, roll_year, own)
+    data_path.write_text(json.dumps(new, indent=2, ensure_ascii=False) + "\n",
+                         encoding="utf-8")
+    keep = set(slugs.values())
+    for old in page_dir.glob(f"unit-*/{UNIT_FILE}"):
+        if old.parent.name not in keep:
+            old.unlink()
+            (old.parent / "index.html").unlink(missing_ok=True)
+            try:
+                old.parent.rmdir()
+            except OSError:
+                pass
+    for r in units:
+        urec = build_unit_record(new, r, slugs[r["lot"]], by_permit_lot.get(r["lot"], []),
+                                 retrieved, roll_year)
+        udir = page_dir / slugs[r["lot"]]
+        udir.mkdir(exist_ok=True)
+        (udir / UNIT_FILE).write_text(json.dumps(urec, indent=2, ensure_ascii=False) + "\n",
+                                      encoding="utf-8")
+    return f"{new['path']}: {len(units)} unit page(s), {len(permits)} permit row(s)"
+
+
 def cmd_condo(args) -> int:
     """Turn a building page whose parcel is one condominium unit into the
-    building's page, with a sub-page for each of its units.
-
-    Re-runnable: on a page that is already a condominium building it keeps
-    the recorded lots (unless `--lots` replaces them) and refreshes every unit
-    page from the roll and DBI.
-    """
+    building's page, with a sub-page for each of its units (`make_condo`)."""
     retrieved = args.retrieved or datetime.now(PACIFIC).date().isoformat()
-    roll_year = args.roll_year
+    lots = args.lots.split(",") if args.lots else None
     for raw in args.path:
         page_dir = (Path.cwd() / raw).resolve()
         if page_dir.name == "data.json":
             page_dir = page_dir.parent
-        data_path = page_dir / "data.json"
-        bldg = json.loads(data_path.read_text(encoding="utf-8"))
-        block = bldg.get("block")
-        if not block:
-            raise SystemExit(f"condo: {raw} records no block")
-        rows = api_get(DS_ROLL, {"$where": f"block='{block}' AND closed_roll_year='{roll_year}'",
-                                 "$select": ROLL_SELECT, "$limit": 5000})
-        rows = [r for r in rows if r.get("lot")]
-        if args.lots:
-            lots = sorted(x.strip().upper() for x in args.lots.split(",") if x.strip())
-            method = (f"Lots {', '.join(lots)} on block {block}, as given by hand "
-                      f"(`seed_pages.py condo --lots`).")
-            if args.method:
-                method = args.method
-        elif bldg.get("condominium"):
-            lots = bldg["condominium"]["lots"]
-            method = bldg["condominium"].get("method")
-        else:
-            if not bldg.get("apn"):
-                raise SystemExit(f"condo: {raw} records no parcel to start from; pass --lots")
-            lots, method = propose_condo_lots(rows, bldg["apn"])
-        by_lot = {r["lot"]: r for r in rows}
-        missing = [lot for lot in lots if lot not in by_lot]
-        if missing:
-            raise SystemExit(f"condo: lot(s) {', '.join(missing)} not on the "
-                             f"{roll_year} roll for block {block}")
-        units = [by_lot[lot] for lot in lots]
-        permits = []
-        for i in range(0, len(lots), 100):
-            chunk = lots[i:i + 100]
-            permits += api_get(DS_PERMITS, {
-                "$where": f"block='{block}' AND lot in ({_quote_list(chunk)})",
-                "$select": PERMIT_SELECT, "$limit": 50000})
-        number = bldg["path"].strip("/").split("/")[-1]
-        by_permit_lot, own = assign_condo_permits(permits, units, number)
-        slugs = unit_slugs(units, number)
-        new = condo_building_record(bldg, rows, lots, method, retrieved, roll_year, own)
-        data_path.write_text(json.dumps(new, indent=2, ensure_ascii=False) + "\n",
-                             encoding="utf-8")
-        keep = set(slugs.values())
-        for old in page_dir.glob(f"unit-*/{UNIT_FILE}"):
-            if old.parent.name not in keep:
-                old.unlink()
-                (old.parent / "index.html").unlink(missing_ok=True)
-                try:
-                    old.parent.rmdir()
-                except OSError:
-                    pass
-        for r in units:
-            urec = build_unit_record(new, r, slugs[r["lot"]], by_permit_lot.get(r["lot"], []),
-                                     retrieved, roll_year)
-            udir = page_dir / slugs[r["lot"]]
-            udir.mkdir(exist_ok=True)
-            (udir / UNIT_FILE).write_text(json.dumps(urec, indent=2, ensure_ascii=False) + "\n",
-                                          encoding="utf-8")
-        print(f"{new['path']}: {len(units)} unit page(s), {len(permits)} permit row(s)")
+        print(make_condo(page_dir, retrieved, args.roll_year, lots, args.method))
     return 0
 
 

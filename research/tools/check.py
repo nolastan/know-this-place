@@ -270,8 +270,17 @@ def pages_by_apn() -> dict:
         except (OSError, json.JSONDecodeError):
             continue
         apn = d.get("apn")
+        path = d.get("path") or "/" + str(p.relative_to(ROOT.parent).parent) + "/"
         if apn and apn not in out:
-            out[apn] = d.get("path") or "/" + str(p.relative_to(ROOT.parent).parent) + "/"
+            out[apn] = path
+        # A condominium building's units' parcels lead to it (#228).
+        for u in p.parent.glob("unit-*/unit.json"):
+            try:
+                uapn = json.loads(u.read_text(encoding="utf-8")).get("apn")
+            except (OSError, json.JSONDecodeError):
+                continue
+            if uapn and uapn not in out:
+                out[uapn] = path
     return out
 
 

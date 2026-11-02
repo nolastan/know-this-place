@@ -513,14 +513,17 @@
       },
       "confidence": "high",
       "resolution": {
-        "status": "unresolved",
-        "checked_on": "2026-09-25",
-        "method": "sf-eas-addresses has 16 JESSIE ST but it does not join to one parcel. 16 JESSIE ST's coordinates fall in 20 active parcels (3708172, 3708147, 3708162, 3708141…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-        "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+        "status": "resolved",
+        "apn": "3708122",
+        "path": "/san-francisco/east-cut/jessie-street/16/",
+        "eas_address": "16 JESSIE ST",
+        "method": "EAS exact match on 16 JESSIE ST → parcel 3708122; sf-parcels has blklot 3708122 active, 16–16 JESSIE; the 2025 roll records it as commercial retail, built 1906. Parcel 3708122 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit C120 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 16 JESSIE ST's coordinates fall in 20 active parcels, one condominium map's units on the 2025 roll; 3708122 stands for the building.",
+        "checked_on": "2026-11-02",
+        "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
       },
       "publish": {
-        "status": "pending",
-        "note": "Blocked: the resolver will not join the address. 16 Jessie Street's coordinates fall in 20 active parcels — One Ecker Place is a residential condominium conversion, one parcel per of its 51 units, none of them the building — and the directory contract in the root AGENTS.md defers those. This is a costly one to leave pending: the article gives the 1906 building's original developer (William H. Crocker) and its 1972 office-conversion architect (Arthur Gensler), both ready to go once there is a page to put them on."
+        "status": "published",
+        "note": "Seeded /san-francisco/east-cut/jessie-street/16/ from research/manifests/news-condo-446.json as a condominium building with a page per unit (#228, #446). Headline entry, building name (One Ecker Place), developer (William H. Crocker) and the 1972 Gensler office conversion added. The current owner is not recorded (root AGENTS.md). No homepage card: a backfill entry."
       }
     },
     {

@@ -392,6 +392,7 @@ are listed so their size is visible before anyone opens one.
 | `news-2026-10-30.json` | 3 | 1 KB | `mission`, `seacliff`, `east-cut` |
 | `news-2026-10-31.json` | 3 | 1 KB | `financial-district`, `east-cut`, `north-beach` |
 | `news-backfill-2026-07.json` | 7 | 3 KB | `sunset-parkside`, `marina`, `noe-valley` +3 |
+| `news-condo-446.json` | 2 | 1 KB | `castro`, `east-cut` |
 | `north-beach-hcs.json` | 342 | 130 KB | `north-beach`, `chinatown`, `russian-hill` +3 |
 | `oceanside-hcs.json` | 19 | 7 KB | `sunset-parkside` |
 | `omi-context-statement.json` | 38 | 16 KB | `oceanview-merced-ingleside`, `ingleside-terraces`, `outer-mission` |

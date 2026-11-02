@@ -466,17 +466,47 @@ class City:
                     if (p.get("street_name") or "") == (row.get("street_name") or "")
                     and p.get("from_address_num") and p.get("to_address_num")
                     and num_key(p["from_address_num"]) <= number <= num_key(p["to_address_num"])]
+            paged = [p for p in found if p["blklot"] in self.pages]
+            if len(paged) > 1:
+                # Two pages on one point (801 Market Street and 10 Fourth
+                # Street on airspace lots of one block): the one at this
+                # address's own number and street.
+                street = (row.get("street_name") or "").lower().replace(" ", "-")
+                tail = f"{street}-"
+                paged = [p for p in paged
+                         if (self.pages[p["blklot"]].get("path") or "").rstrip("/")
+                         .endswith("/" + (row.get("address_number") or "?"))
+                         and tail in (self.pages[p["blklot"]].get("path") or "")]
             if len(same) == 1:
                 found = same
+            elif len(paged) == 1:
+                # The site has already settled which of them is the building:
+                # one has a page. 801 Market Street's four airspace lots.
+                pick = paged[0]["blklot"]
+                return pick, pick, (
+                    f" {row.get('address') or 'The address'}'s coordinates fall in "
+                    f"{len(found)} active parcels; {pick} is the one with a page.")
+            elif self.condo_stack(found):
+                # The parcels on the point are one condominium map's units —
+                # they share a `mapblklot` and the roll calls them condominiums.
+                # Since #228 the building has a page; any unit leads to it.
+                # Take the lowest condominium unit, so a re-run agrees and
+                # `place` sees a unit, and let it file the fact on the building.
+                pick = self.condo_stack(found)
+                return pick, pick, (
+                    f" {row.get('address') or 'The address'}'s coordinates fall in "
+                    f"{len(found)} active parcels, one condominium map's units on the "
+                    f"2025 roll; {pick} stands for the building.")
             else:
-                # Dozens of active parcels on one point is the condominium
-                # signal in DATA-SOURCES.md → sf-parcels. Units, not buildings.
+                # Parcels that share a point but not a condominium map — a
+                # Port overlay on a seawall lot, two lots that meet there.
+                # Picking one would be a coin toss.
                 shown = ", ".join(p["blklot"] for p in found[:4])
                 return None, None, (
                     f" {row.get('address') or 'The address'}'s coordinates fall in "
                     f"{len(found)} active parcels "
-                    f"({shown}{'…' if len(found) > 4 else ''}), which is what a condominium "
-                    f"looks like in sf-parcels: one parcel per unit, none of them the building.")
+                    f"({shown}{'…' if len(found) > 4 else ''}) that are not one "
+                    f"condominium's units, so none of them is the building by rule.")
         if len(found) == 1:
             new = found[0]["blklot"]
             if apn and new != apn:
@@ -488,6 +518,24 @@ class City:
         if apn:
             return apn, apn, ""
         return None, None, ""
+
+    def condo_stack(self, found: list) -> str:
+        """The parcel that stands for a condominium building, or "".
+
+        Several active parcels on one point are one building's units when they
+        share one `mapblklot` and most of them are condominiums on the roll (a
+        stack's retail or common lot is often classed otherwise). Parcels that
+        only meet at a point share no map lot, and stay a coin toss.
+        """
+        maps = {p.get("mapblklot") for p in found}
+        if len(maps) != 1 or None in maps or not self.roll:
+            return ""
+        condos = sorted(p["blklot"] for p in found
+                        if "condo" in ((self.roll.get(p["blklot"]) or {})
+                                       .get("property_class_code_definition") or "").lower())
+        if len(condos) * 2 <= len(found):
+            return ""
+        return condos[0]
 
     def attach(self, parcels: list, roll: list) -> None:
         """Add the parcel map and the roll, fetched only for the APNs in play."""
@@ -899,10 +947,11 @@ def place(city: City, parcel: str, name: str, stype: str, matched: list,
                          "so there is no parcel today to hang the fact on. The block has been "
                          "re-parcelized since; a later pass with the assessor's own "
                          "property_location could still place it.")}
+    # A condominium unit is not the building, but since #228 the building has
+    # a page of its own at its address, with a page per unit beneath it: the
+    # fact goes on the building's. `seed-list` writes such a page as a
+    # condominium building (`seed_pages.make_condo`).
     condo = condo_warning(city, parcel, name, stype, matched)
-    if condo:
-        return {"status": "unresolved", "checked_on": today, "method": method,
-                "note": f"Not placed: {condo}."}
     numbers_key = numbers_key or parcel
     stype = stype or next((r.get("street_type") for r in
                            city.by_parcel.get(numbers_key, []) + city.by_effective.get(parcel, [])
@@ -926,11 +975,18 @@ def place(city: City, parcel: str, name: str, stype: str, matched: list,
             method += (" No page on the site is filed under that directory yet, so the analysis "
                        "neighborhood's own name is used and the publisher should confirm it "
                        "against the directory contract before seeding.")
+    if condo:
+        method += (f" Parcel {parcel} is one unit of a condominium ({condo.split(' — ')[0]}); "
+                   f"the fact is the building's, and goes on the building's page at this "
+                   f"path, which lists its units (#228).")
     res = {"status": "resolved", "apn": parcel, "path": path,
            "eas_address": eas_label(name, stype, lead), "method": method,
            "checked_on": today}
     if why.startswith("no page yet"):
-        res["note"] = "No page at this path yet; the parcel is the publisher's to seed."
+        res["note"] = ("No page at this path yet; the publisher seeds it with seed-list, "
+                       "which writes a condominium building with a page per unit."
+                       if condo else
+                       "No page at this path yet; the parcel is the publisher's to seed.")
     return res
 
 
@@ -1355,7 +1411,8 @@ def decide(city: City, f: dict, today: str) -> dict:
             # The address is in EAS but cannot be joined to one parcel — either
             # the EAS record carries no parcel number, or its point falls in a
             # condominium's worth of them.
-            condo = any("condominium" in n for n in title["notes"])
+            condo = any("condominium" in n and "not one condominium" not in n
+                        for n in title["notes"])
             return {"status": "unresolved", "checked_on": today,
                     "method": (f"sf-eas-addresses has {', '.join(title['unparcelled'])} "
                                f"{name} {stype or ''}".rstrip() + " but it does not join to one "
@@ -1510,6 +1567,15 @@ def page_index() -> list:
                     "apn": d.get("apn"), "area": rel.parts[1], "street_dir": rel.parts[2],
                     "nhood": (d.get("parcel") or {}).get("analysis_neighborhood"),
                     "lat": coords.get("lat"), "lng": coords.get("lng")})
+        # A condominium building has no APN of its own: each unit's parcel
+        # leads to it, through the unit pages beneath it (#228).
+        for u in sorted(p.parent.glob("unit-*/unit.json")):
+            try:
+                apn = json.loads(u.read_text(encoding="utf-8")).get("apn")
+            except json.JSONDecodeError:
+                continue
+            if apn:
+                out.append({**out[-1], "apn": apn})
     return out
 
 
@@ -1686,7 +1752,10 @@ def build_manifest(city: City, data: dict) -> list:
             # here — condo_warning declines it — and must never be waved past
             # the seeder's own check either.
             unit = (roll_row.get("property_location") or "")[UNIT_AT:].strip()
-            if not unit or unit.strip("0") == "":
+            # Nor for an airspace parcel with no lot area, which is a unit
+            # filed under "0000" (condo_warning) and seeds as its building.
+            area = (roll_row.get("lot_area") or "").strip()
+            if (not unit or unit.strip("0") == "") and area not in ("0", "0.0"):
                 entry["sole_parcel_for_address"] = True
         if pick:
             if pick.get("latitude"):
@@ -1896,18 +1965,18 @@ def main() -> int:
             r = decisions[f["id"]]
             if r["status"] != "resolved":
                 continue
-            for g in re.finditer(r"coordinates fall in \d+ active parcels \(([^)]*)\), "
-                                 r"which is what a condominium", r.get("method") or ""):
+            for g in re.finditer(r"coordinates fall in \d+ active parcels \(([^)]*)\) "
+                                 r"that are not one condominium", r.get("method") or ""):
                 listed = [s.strip().rstrip("…") for s in g.group(1).split(",")]
                 if r.get("apn") in listed:
                     stacked.append((f["id"], f["address_as_written"][:34], r["apn"], g.group(1)))
                     break
         if stacked:
-            print(f"Resolved onto a parcel its own method calls a condominium unit: {len(stacked)}")
+            print(f"Resolved onto one of several parcels that share a point: {len(stacked)}")
             for fid, addr, apn, listed in stacked:
                 print(f"  {fid}  {addr:<36} → {apn}, one of {listed}")
-            print("  Read each: a unit parcel is not the building (#228) unless the parcels are "
-                  "airspace lots of one building. Mark a unit `unresolved` with `by_hand`.")
+            print("  Read each: the parcels are not one condominium's units, so the one chosen "
+                  "may not be the building. Mark a wrong one `unresolved` with `by_hand`.")
             print()
 
         # A resolution onto a parcel the secured roll has no row for. EAS still
@@ -1927,7 +1996,8 @@ def main() -> int:
                 print(f"  {fid}  {addr:<36} → {apn}")
             print("  Usually a condominium's original lot, its units now on C-series lots of the "
                   "same block; seed-list skips these. Check the roll for '<block>C…' parcels at the "
-                  "address and mark a condominium `unresolved` with `by_hand` (#446).")
+                  "address; a condominium's building page is written with `seed_pages.py condo "
+                  "<page> --lots …` (#228).")
             print()
 
         # A resolution the point made, on a parcel that says it does not carry
