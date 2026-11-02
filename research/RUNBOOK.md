@@ -67,6 +67,12 @@ nobody published is the single most expensive state this module can be left in
 6. **Fix the module.** If the structure is fighting the work, change it. See
    [AGENTS.md → This module improves itself](AGENTS.md#this-module-improves-itself).
 
+**Skip any batch the dossier marks claimed.** A `**Claimed:**` line in a
+dossier's header names material someone else is reading — an external reader
+or a person — and since when. It is not in the queue at any rung of the
+ladder: take the next thing instead, and never read, re-read or "help with"
+claimed material. Only the person who set the claim lifts it.
+
 Say which you picked and why in a line or two, then do it.
 
 ---
