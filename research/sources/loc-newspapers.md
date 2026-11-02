@@ -6,6 +6,16 @@
 >
 > - **Kind:** newspaper OCR corpus · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
+> - **Verified:** 2026-11-02 (the *Call* of Sunday 25 March 1906, the only
+  issue of January–March 1906 on the bulk route, from `curiv_jenner_ver01`
+  reel `00100480748`: 56 OCR pages scanned, 337 numbered-address mentions, no
+  Building Contracts list (it ran Monday to Saturday). The p. 54 real-estate
+  column, "Big Realty Deals Mark Busy Week", read whole: 77 items, 26
+  findings. 2 resolved and published, on 2301 Folsom (store and four flats,
+  SE corner of 19th) and 957 Hayes (an apartment house, 206 ft west of
+  Fillmore; page seeded). 24 unresolved, 15 of them pre-fire in the district
+  that burned three weeks later. Batch file
+  `findings/loc-newspapers/sn85066387-1906-03-25-real-estate.json`.)
 > - **Verified:** 2026-10-05 (the *Call*'s daily Building Contracts lists for
   16 December 1912 – 15 July 1913, from `curiv_elderwood_ver02`: 5,877 OCR
   pages scanned, 480 page-blocks on 168 days — 310 located by heading and
@@ -118,7 +128,7 @@ Issue counts per year; a year split across batches needs all of them.
 | | 1897 | `fredsplace_ver01` (152), `idyllwild_ver01` (212) |
 | | 1898 | `ahwahnee_ver01` (365) |
 | | 1899 | `carlsbad` (46), `exeter_ver01` (181), `joshuaTree` (137) |
-| | 1900–1905 | `albion_ver01` (from January 1900), `brea_ver01` (from May 1900), `carmel_ver01` (from August 1901), `darwin_ver01` (October 1901, 1903, March–November 1904), `felix_ver01` (September 1903, May, June and August 1905), `plasse_ver01` (January 1905), `quincy_ver01` (November–December 1901, December 1904), `oasis_ver01` (February–March 1905) — reel folders mapped 2026-10-05; **no batch holds January–March 1906** except a single issue, **25 March 1906**, on reel `00100480748` inside `curiv_jenner_ver01` (a 1909–1910 batch; found 2026-10-06 by sorting every batch's reel names, the reel numbered just before `hercules`'s first, `0010048075A`, 1 April 1906) |
+| | 1900–1905 | `albion_ver01` (from January 1900), `brea_ver01` (from May 1900), `carmel_ver01` (from August 1901), `darwin_ver01` (October 1901, 1903, March–November 1904), `felix_ver01` (September 1903, May, June and August 1905), `plasse_ver01` (January 1905), `quincy_ver01` (November–December 1901, December 1904), `oasis_ver01` (February–March 1905) — reel folders mapped 2026-10-05; **no batch holds January–March 1906** except a single issue, **25 March 1906**, on reel `00100480748` inside `curiv_jenner_ver01` (a 1909–1910 batch; found 2026-10-06 by sorting every batch's reel names, the reel numbered just before `hercules`'s first, `0010048075A`, 1 April 1906); **that issue read 2026-11-02** (`sn85066387-1906-03-25-real-estate.json`) |
 | | 1906–1907 | `hercules_ver01` (275 + 92), `indio_ver01` (1907: 245), `mecca_ver01` (1907: 28) — **the daily Building Contracts lists read in full** for 1907 (2026-10-04) and for 1906 as far as `hercules` holds it, 1 April–31 December (2026-10-05) |
 | | **1908** | `indio` (90), `jenner_ver01` (31), `llano_ver01` (245) — **fetched 2026-10-04**; **the daily Building Contracts lists read in full** 2026-10-04 |
 | | **1909** | `jenner` (92), `llano` (61), `mecca` (151), `needles_ver01` (61) — **all four fetched 2026-10-03**; **the daily Building Contracts lists read in full** 2026-10-03 |
@@ -704,11 +714,41 @@ reel folders say otherwise. What was new:
   refused, 23 on streets EAS does not join, 15 printing a number that resolves
   to nothing, 5 matching several parcels, 1 a condominium parcel.
 
+### The 25 March 1906 issue (`jenner`)
+
+Read 2026-11-02: the one issue of January–March 1906 any batch holds, a
+Sunday, 56 pages. What was new:
+
+- **Sunday has no Building Contracts list.** The list ran Monday to
+  Saturday; the Sunday paper's real-estate news is a single unheaded-by-section
+  column of the week's sales and leases by broker (p. 54, "Big Realty Deals
+  Mark Busy Week"), with a Richmond and Sunset lot-sales list inside it and
+  the Alameda County deeds below it. pp. 46–53 are want-ads and church
+  notices (271 of the issue's 337 mentions) and p. 16 is a children's prize
+  list of home addresses — people, never taken.
+- **Three weeks before the fire, most of the column burned.** 15 of its 26
+  findings describe property downtown, South of Market, in Chinatown and the
+  Tenderloin; under the pre-fire rule they stay unresolved whatever the
+  geometry says. What survives is west of Van Ness and in the outer Mission.
+- **A notable seller.** "Mrs. I. Magnin has sold her home" at the NW corner
+  of Page and Masonic, 57:6 by 100, for $23,500. The NW corner lot is 1099
+  Masonic (1223004, roll 1903, three storeys), but its outline measures 49.8
+  by 108.3 ft — not the record's lot — so it is unresolved with the candidate
+  named. A 1905 or 1906 directory giving the Magnins' house number would
+  settle it; the column alone does not. `corner.py PAGE MASONIC` (the
+  single-corner listing) omits that lot entirely; the `--batch` mode's wider
+  radius examines it.
+- **Where it fails:** 15 pre-fire in the burned district, 4 whose lot or
+  corner matches no parcel with a roll year of 1906 or earlier (the Fillmore
+  and O'Farrell corners went to the Western Addition redevelopment), 3 with no
+  offset or cross street, 1 the Magnin lot, 1 a Sunset grading contract on
+  whole blocks.
+
 ### The 1906 Building Contracts lists
 
 Read 2026-10-05, every page of 1906 that `hercules_ver01` holds (1 April to 31
-December: 5,188 pages), on the 1907 method. January to March 1906 is in
-another batch and is unread. What was new:
+December: 5,188 pages), on the 1907 method. January to March 1906 survives as one Sunday issue in
+`jenner`, read separately (above): it has no contracts list. What was new:
 
 - **The fire stops the list.** It runs to 17 April, is absent from 18 April
   to late June, and comes back in July. 159 blocks on 145 days. Before the
@@ -960,9 +1000,8 @@ another batch and is unread. What was new:
   `dardanelle`'s 1–15 February and `grimes`'s 16 July–8 December. Both gaps the
   last pass named were mapped on 2026-10-06: **January–March 1906 survives as
   one issue, 25 March 1906, inside `jenner`**, and **9–31 December 1913 is in
-  no batch at all** (see the table). **Next:** the 25 March 1906 issue when
-  `jenner` is next on disk (one day, pre-fire; read it on the 1906 method);
-  then the 1907 placement of 1499 Sutter re-tested with the centreline test
+  no batch at all** (see the table). **The 25 March 1906 issue is read** (2026-11-02; a Sunday,
+  so no contracts list — its real-estate column instead). **Next:** the 1907 placement of 1499 Sutter re-tested with the centreline test
   (its outline does not reach Gough); then the Union Trust building's placement checked against a
   source that names its lot; then the 1907–1913 lists'
   refused single candidates, re-read against the Sanborn sheets where a

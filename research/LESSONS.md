@@ -2514,6 +2514,15 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   from it neither confirms nor refuses one. The parcel EAS addresses on both
   streets is the corner lot. *And an alteration is to an older building:
   match it on the corner lot, never on a roll year near the record's.*
+- **On the corner lot itself, `corner.py`'s WRONG SIDE is an artefact.**
+  The crossing estimate is the midpoint of the two streets' nearest EAS
+  points, and where both belong to the corner parcel (2301 Folsom and 3187
+  19th, 1906) that midpoint sits inside it, so the quadrant test calls the
+  true SE corner lot the wrong side while the centreline test passes. And the
+  single-corner listing's 60 m radius can omit a corner lot the `--batch`
+  mode examines (1099 Masonic at Page). *Settle the quadrant from the parity
+  of the EAS points on each street's two sides; read the batch result, not
+  the listing, before saying a corner holds nothing.*
 - **EAS can name a retired parcel.** 1401 Howard Street joins in EAS to
   3517035, retired in 2018 for 3517039, the parcel St. Joseph's Church's page
   already carried; 2222 Broadway joins to 0564024, retired into the school's
