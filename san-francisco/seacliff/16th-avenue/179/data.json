@@ -1,0 +1,142 @@
+{
+  "address": "179 16th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/seacliff/16th-avenue/179/",
+  "apn": "1376062",
+  "block": "1376",
+  "lot": "062",
+  "eas_baseid": "301686",
+  "coordinates": {
+    "lat": 37.784731,
+    "lng": -122.475575
+  },
+  "parcel": {
+    "year_built": 2004,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 1793,
+    "basement_area_sqft": 394,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0179 16TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1201662,
+    "assessed_improvement_value": 801108,
+    "last_sale_date": "2022-07-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "2004",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201202244804",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-02-24",
+      "status_date": "2012-05-17",
+      "estimated_cost": 22000,
+      "revised_cost": 22000,
+      "description": "ground floor interior remodel - demolition of partitions in existing laundry room & add sink & work counter, new corridor through existing garage from existing front exterior door to existing habitable space.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M23650",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-05-12",
+      "status_date": "2003-05-12",
+      "revised_cost": 0,
+      "description": "address assignment",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200110029789",
+      "type": "demolitions",
+      "status": "expired",
+      "filed": "2001-10-02",
+      "status_date": "2004-07-22",
+      "description": "demolish a two story single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200110029787",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "2001-10-02",
+      "status_date": "2004-04-09",
+      "estimated_cost": 350000,
+      "revised_cost": 374000,
+      "description": "erect a four story two unit residential bldg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "2001–2017",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=16TH&street_type=AVE&address_number=179",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1376062&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1376&lot=062",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1376062",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2002-05-30",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 30 May 2002",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/52minutesofsanfran2002san/page/n261/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2002-05-30",
+      "kind": "planning decision",
+      "description": "The City Planning Commission did not take discretionary review and approved the demolition of a single-family dwelling.",
+      "source": "sf-planning-commission-minutes-2002-05-30"
+    },
+    {
+      "date": "2002-05-30",
+      "kind": "occupancy",
+      "description": "The property held a single-family dwelling.",
+      "source": "sf-planning-commission-minutes-2002-05-30"
+    }
+  ]
+}

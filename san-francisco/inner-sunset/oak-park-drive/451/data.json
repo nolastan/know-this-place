@@ -1,0 +1,119 @@
+{
+  "address": "451 Oak Park Drive, San Francisco, CA 94131",
+  "path": "/san-francisco/inner-sunset/oak-park-drive/451/",
+  "apn": "2677022",
+  "block": "2677",
+  "lot": "022",
+  "eas_baseid": "343935",
+  "coordinates": {
+    "lat": 37.754758,
+    "lng": -122.460688
+  },
+  "parcel": {
+    "year_built": 1962,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3763,
+    "building_area_sqft": 1468,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Forest Knolls",
+    "analysis_neighborhood": "Inner Sunset",
+    "property_location_raw": "0000 0451 OAK PARK            DR0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 821472,
+    "assessed_improvement_value": 352054,
+    "last_sale_date": "2013-05-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1962",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200607065811",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-07-06",
+      "status_date": "2006-08-18",
+      "estimated_cost": 6834,
+      "revised_cost": 6834,
+      "description": "replace 9 windows. threw-out house. aluminum to vinyl. visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200107264641",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2001-07-26",
+      "status_date": "2001-07-26",
+      "estimated_cost": 249000,
+      "description": "third story addition including master bdrm/2nd story rmdl stair kchn powder rm/1st flr rmdl strs,lnd",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8805661",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-05-02",
+      "status_date": "1988-05-20",
+      "estimated_cost": 5180,
+      "description": "vinyl siding to ront to back of bldg-wall.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=OAK%20PARK&street_type=DR&address_number=451",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2677022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2677&lot=022",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2677022",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2002-02-21",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 21 February 2002",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/52minutesofsanfran2002san/page/n50/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2002-02-21",
+      "kind": "occupancy",
+      "description": "The property held an existing two-story, single-family dwelling.",
+      "source": "sf-planning-commission-minutes-2002-02-21"
+    }
+  ]
+}

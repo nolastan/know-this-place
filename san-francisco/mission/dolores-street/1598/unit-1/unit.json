@@ -1,0 +1,58 @@
+{
+  "address": "200 Dolores Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/dolores-street/1598/unit-1/",
+  "unit": "1",
+  "apn": "6618040",
+  "block": "6618",
+  "lot": "040",
+  "parcel": {
+    "building_area_sqft": 1429,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1071604,
+    "assessed_improvement_value": 714402,
+    "last_sale_date": "2021-02-18"
+  },
+  "permits": [
+    {
+      "number": "200911050638",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2009-11-05",
+      "status_date": "2012-10-26",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "to complete work approved under pa#200806275492 & obtain final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200806275492",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2008-06-27",
+      "status_date": "2011-09-12",
+      "estimated_cost": 160000,
+      "revised_cost": 160000,
+      "description": "one unit thru 13 - plumbing repairs. hvac repairs and necessary sheetrock, paint. installation to correct nov 200799177 dated 6/9/2008.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6618040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6618&unit=1",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

@@ -6,9 +6,9 @@
 >
 > - **Kind:** meeting minutes (scanned volumes) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 43 of 52 volumes read (July 1968 – December 1980, and
->   1994 – 2000): 12,425 pages, 5,840 findings, 3,319 resolved, 3,124 published.
->   9 volumes remain — 2001 – 2005. July–December 1975 is in no
+> - **Coverage:** 47 of 52 volumes read (July 1968 – December 1980, and
+>   1994 – June 2003): 13,809 pages, 7,136 findings, 4,462 resolved, 4,265 published.
+>   5 volumes remain — July 2003 – 2005 (54–58). July–December 1975 is in no
 >   volume, nor is the regular meeting of 16 March 1978; volume 37
 >   holds only 17 of June – November 1978's meetings, volume 38 only
 >   34 of 1979's, volume 39 has no record of 7 February or 14 August 1980,
@@ -62,7 +62,10 @@
 | 45 | 1998 (`volume` "1998") | **read in full** 2026-10-31; 47 regular meetings, 8 January – 17 December, action minutes, plus nine joint and special hearings; regular meetings cancelled for 1 and 29 January, 30 April, 2 and 30 July, 29 October, 26 November, 24 and 31 December |
 | 46 | 1999 (`volume` "1999") | **read in full** 2026-11-02 by an external reader; 44 meetings, 7 January – 16 December; cancelled 8 and 29 April, 1 and 29 July, 30 September, 11 and 25 November, 23 and 30 December |
 | 47–49 | January – April, May – August, September – December 2000 | **read in full** 2026-11-02 by an external reader; 44 meeting days, 6 January – 7 December, with three joint hearings with the Redevelopment Agency Commission; volume 49 holds no minutes of 14 or 21 December |
-| 50–58 | 2001 – 2005 | unread; 50 is January – April 2001 |
+| 50–51 | January – April, May – December 2001 | **read in full** 2026-11-02 by an external reader; 40 meeting days, 11 January – 20 December; 3 May cancelled; volume 51 holds no minutes of 27 September or 1 November |
+| 52 | 2002 (`volume` "2002") | **read in full** 2026-11-02 by an external reader; 26 meeting days, 10 January – 27 June and 5 – 19 December. **The volume binds no minutes of July – November 2002**: its pages run straight from 27 June to 5 December |
+| 53 | January – June 2003 | **read in full** 2026-11-02 by an external reader; 21 meeting days, 9 January – 26 June, with the joint meeting with the Recreation and Park Commission of 26 June; 17 April cancelled |
+| 54–58 | July 2003 – 2005 | unread; 54 is July – December 2003 |
 | — | 1981–1993 | in no volume |
 | — | before July 1968 | not in this collection. The Commission dates from 1942 |
 
@@ -477,7 +480,13 @@
   volume 44, the 19 meetings of July – December 1997, into
   `minutes-1997-h2.json`.
   volume 45, the 47 regular meetings of 1998, into `minutes-1998.json`.
-  **Next: volumes 46–58 (1999 – 2005); 46 is 1999 and 47 is January –
+  volumes 46–49, 1999 and 2000, into `minutes-1999.json` and `minutes-2000.json`.
+  volumes 50–51, the 40 meeting days of 2001, into `minutes-2001.json`;
+  volume 52, the 26 meeting days of 2002 it holds, into `minutes-2002.json`;
+  volume 53, the 21 meeting days of January – June 2003, into
+  `minutes-2003-h1.json`.
+  **Next: volume 54 (July – December 2003), then 55–58 (2004 – 2005).**
+  **Earlier next-step note: volumes 46–58 (1999 – 2005); 46 is 1999 and 47 is January –
   April 2000 — check each `volume` field for the span first.** Volume 45 was
   414 text pages (862,000 characters) and filled a nightly run for a single
   reader, with resolving and seeding 79 pages after it; a whole-year volume
@@ -503,7 +512,35 @@
   findings, 153 on pages). Size by text pages: volume 40 was 199 text pages
   (486,000 characters) and one nightly run for a single reader with time to
   spare; a later volume of up to about 400 text pages should also fit.
-- **Verified:** **2026-11-02** (volumes 46–49, 1999 and 2000: 1,047 OCR
+- **Verified:** **2026-11-02** (volumes 50–53, January 2001 – June 2003:
+  1,384 OCR pages with text out of 1,674 viewer pages, read by the same
+  external reader (Meta Muse) from the same written spec until its weekly
+  usage limit, then converted, page-located, resolved and published here.
+  87 meeting days; 1,296 findings — 712 decisions, 572 statements of what
+  stood on or occupied a property, 9 landmark actions, 3 dated past facts.
+  1,143 resolved (10 by hand), 153 unresolved: numbers EAS no longer holds,
+  ranges now split across parcels, projects named without a number (the de
+  Young, Laguna Honda, the Dogpatch district), 1708 Anza Street, whose
+  header and printed lot (456 11th Avenue) name two buildings, and eight
+  parcels seed-list could not give a page (condominium units with no roll
+  row, and three paths already filed on another parcel). 1,141 published on
+  597 pages, 369 of them seeded; 3 declined (two bare-building occupancies,
+  and the 1101 O'Farrell negative-declaration appeal printed only as
+  "Approved"). Occupancies on a parcel the roll dates later are framed
+  "then" ("The property then held a warehouse"). What the pass learned:
+  **in these volumes the running page header is not a date** — the
+  secretary's template carried the previous meeting's date onto the 6
+  February 2003 pages ("January 23"), OCR turns 2001 into 2000, 1001 or 7000,
+  and a page header search that reaches past the first line picks up a
+  continuance date ("Continued to May 8"); date pages from each meeting's
+  cover page ("Meeting Minutes … Thursday, October 11, 2001") and use the
+  running header's first line only for a meeting whose cover page OCR lost.
+  Muse redated nothing of its own accord but did write four 6 December 2001
+  rows as 7 December 2000, and in 141 notes it named the commissioners who
+  voted, which ingest strips sentence by sentence. Seventeen descriptions
+  that named only the action ("approved the item", "approved the project")
+  were rewritten from the request on the cited page.)
+  **2026-11-02** (volumes 46–49, 1999 and 2000: 1,047 OCR
   pages with text out of 1,816 viewer pages, read by an external reader —
   Meta Muse, a web agent with no access to this repository — from a written
   spec, returning JSON Lines per finding plus a coverage line per volume;

@@ -1,0 +1,77 @@
+{
+  "address": "199 New Montgomery Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/new-montgomery-street/199/unit-e/",
+  "unit": "E",
+  "apn": "3722087",
+  "block": "3722",
+  "lot": "087",
+  "parcel": {
+    "building_area_sqft": 711
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 643541,
+    "assessed_improvement_value": 643541,
+    "last_sale_date": "2019-05-28"
+  },
+  "permits": [
+    {
+      "number": "201206122455",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2012-06-12",
+      "status_date": "2014-11-06",
+      "estimated_cost": 35000,
+      "revised_cost": 60000,
+      "description": "combine existing retail space to existing office space. modify bathroom. no structural changes. no exterior alterations. remove non structural partitions to clear space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200910148963",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-10-14",
+      "status_date": "2009-11-12",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "correct permit pa #200908265648 - change building type from 3 to type 1, base on inspector's correction notice on 9/18/09, no wood construction is allowed in building type 1a.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200910098775",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-10-09",
+      "status_date": "2009-11-12",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "one unit, ground floor. fire alarmsystem. add and relocate of strobes . total 10. ref# 2009.08.26.5648 for ti work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200908265648",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-08-26",
+      "status_date": "2009-11-12",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "t.i new yogurt & gelato shop w/ required rest rooms & seating for 16 (type b occupancy)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3722087&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3722&unit=E",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

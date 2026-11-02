@@ -1,0 +1,58 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-55a/",
+  "unit": "55A",
+  "apn": "3719368",
+  "block": "3719",
+  "lot": "368",
+  "parcel": {
+    "building_area_sqft": 2706,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1350000,
+    "assessed_improvement_value": 1350000,
+    "last_sale_date": "2011-11-16"
+  },
+  "permits": [
+    {
+      "number": "202503051623",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-03-05",
+      "status_date": "2026-02-11",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "open new drywall to accommodate electrical work in various locations of the unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201205110296",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-05-11",
+      "status_date": "2012-09-12",
+      "estimated_cost": 32500,
+      "revised_cost": 32500,
+      "description": "add recessed lights in living room & dining room, new tile in master & guest bathrooms, new plumbing fixtures in bathrooms, open drywall for electrical work, install new sliding doors in living room, no structural work.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719368&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=55A",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

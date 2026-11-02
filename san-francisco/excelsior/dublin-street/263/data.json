@@ -1,0 +1,128 @@
+{
+  "address": "263 Dublin Street, San Francisco, CA 94112",
+  "path": "/san-francisco/excelsior/dublin-street/263/",
+  "apn": "6284004I",
+  "block": "6284",
+  "lot": "004I",
+  "eas_baseid": "395321",
+  "coordinates": {
+    "lat": 37.715885,
+    "lng": -122.428063
+  },
+  "parcel": {
+    "year_built": 1953,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 3606,
+    "building_area_sqft": 2137,
+    "basement_area_sqft": 650,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Excelsior",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0000 0263 DUBLIN              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 310223,
+    "assessed_improvement_value": 530261,
+    "last_sale_date": "2002-04-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1953",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200312122231",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-12-12",
+      "status_date": "2003-12-24",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "as built per pa #200204113673",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200305215156",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-05-21",
+      "status_date": "2003-09-29",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "install insulation in wall & ceiling on living & dining rm on 2nd flr,electrical upgrade add more",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200204113673",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2002-04-11",
+      "status_date": "2004-01-23",
+      "estimated_cost": 100000,
+      "revised_cost": 130000,
+      "description": "2 story horizontal rear addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DUBLIN&street_type=ST&address_number=263",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6284004I&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6284&lot=004I",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6284004I",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2003-03-27",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 27 March 2003",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/53minutesofsanfran2003san/page/n181/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2003-03-27",
+      "kind": "planning decision",
+      "description": "The City Planning Commission did not take discretionary review and approved the rear addition project, with the condition that a Notice of Special Restriction be issued on the single-family status of the dwelling.",
+      "source": "sf-planning-commission-minutes-2003-03-27"
+    },
+    {
+      "date": "2003-03-27",
+      "kind": "occupancy",
+      "description": "A one-story over garage single-family dwelling stood on the lot.",
+      "source": "sf-planning-commission-minutes-2003-03-27"
+    }
+  ]
+}

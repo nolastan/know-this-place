@@ -34,6 +34,7 @@ The city's Sunset/Parkside analysis neighborhood — the avenues laid out across
 - [46th Avenue](46th-avenue/) — 7 buildings, built 1908–1950.
 - [47th Avenue](47th-avenue/) — 4 buildings, built 1907–1950.
 - [48th Avenue](48th-avenue/) — 6 buildings, built 1907–1950.
+- [Country Club Drive](country-club-drive/) — 1 building, built 1953.
 - [Crestlake Drive](crestlake-drive/) — 2 buildings, built 1936–1937.
 - [Cutler Avenue](cutler-avenue/) — 1 building, built 1927.
 - [Forest View Drive](forest-view-drive/) — 1 building, built 1940.

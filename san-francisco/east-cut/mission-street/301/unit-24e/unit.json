@@ -1,0 +1,58 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-24e/",
+  "unit": "24E",
+  "apn": "3719199",
+  "block": "3719",
+  "lot": "199",
+  "parcel": {
+    "building_area_sqft": 1136,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 504000,
+    "assessed_improvement_value": 504000,
+    "last_sale_date": "2015-06-03"
+  },
+  "permits": [
+    {
+      "number": "201512013867",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-12-01",
+      "status_date": "2016-11-09",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "24e-remodel kitchen, replace stove,replace backsplash tiles. remodel master bath, replace (e) tub with (n) shower, replce tile & vanity. remove wall seperating (e) 2nd bedroom & living area, replace with collapsible partition. retrofit (6) halagen/fluorescent lighting with (n)led lighting. n/a maher",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201508275450",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2015-08-27",
+      "status_date": "2015-10-27",
+      "estimated_cost": 58000,
+      "revised_cost": 58000,
+      "description": "resurface (e) kitchen, counter top, appliances,resurface 9e)bathrm new vanity/tile,change tub into shower, reswing 3 doors, install barn style doors, add 4 new lights wood flooring patch & painting,no structural bearing wall alterations; maher n/a",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719199&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=24E",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

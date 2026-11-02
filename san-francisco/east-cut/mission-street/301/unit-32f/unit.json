@@ -1,0 +1,57 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-32f/",
+  "unit": "32F",
+  "apn": "3719253",
+  "block": "3719",
+  "lot": "253",
+  "parcel": {
+    "building_area_sqft": 1601,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 676000,
+    "assessed_improvement_value": 676000,
+    "last_sale_date": "2013-02-21"
+  },
+  "permits": [
+    {
+      "number": "201502259254",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-02-25",
+      "status_date": "2015-06-16",
+      "estimated_cost": 22920,
+      "revised_cost": 22920,
+      "description": "add soffits and lighting to living room and master bedroom. add sconces in library, add fireplace to living rm. compliance with maher ordinance no 155-13 not required.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201305106658",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-05-10",
+      "status_date": "2013-07-09",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "add sliding door to existing opening between living room and library.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719253&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=32F",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

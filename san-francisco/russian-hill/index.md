@@ -36,6 +36,7 @@ A steep district above North Beach and the waterfront, known for its cable-car g
 - [Vallejo Street](vallejo-street/) — 2 buildings, built 1911–2004.
 - [Valparaiso Street](valparaiso-street/) — 1 building, built 1912.
 - [Van Ness Avenue](van-ness-avenue/) — 9 buildings, built 1909–1922.
+- [Wall Place](wall-place/) — 1 building, built 2005.
 - [Washington Street](washington-street/) — 1 building, built 1922.
 
 ## Parks and public spaces

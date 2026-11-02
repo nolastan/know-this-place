@@ -1,0 +1,195 @@
+{
+  "address": "4018 Moraga Street, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/moraga-street/4018/",
+  "apn": "1897025",
+  "block": "1897",
+  "lot": "025",
+  "eas_baseid": "322638",
+  "coordinates": {
+    "lat": 37.75506,
+    "lng": -122.505958
+  },
+  "parcel": {
+    "year_built": 1941,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2257,
+    "basement_area_sqft": 653,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 4018 MORAGA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 349512,
+    "assessed_improvement_value": 415812,
+    "last_sale_date": "1990-05-18"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1941",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200505021356",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-05-02",
+      "status_date": "2005-07-07",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew for final 200212123407s",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200212123407",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2002-12-12",
+      "status_date": "2003-09-25",
+      "estimated_cost": 200000,
+      "revised_cost": 200000,
+      "description": "vertical addition of 1 story to create 3 story residence plus horizontal addition @ rear yard",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9802568",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-02-17",
+      "status_date": "1999-03-17",
+      "estimated_cost": 7500,
+      "description": "kitchen remodel,replace cabinets",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9512222",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-08-03",
+      "status_date": "1995-08-16",
+      "estimated_cost": 1,
+      "description": "renew expired permit #9420306",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9420306",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-12-09",
+      "status_date": "1995-04-09",
+      "estimated_cost": 1001,
+      "description": "cosmetic repair of tile in shower & floor in bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9312931",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-07-30",
+      "status_date": "1993-08-19",
+      "estimated_cost": 897,
+      "description": "termite repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9306501",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-04-21",
+      "status_date": "1993-08-19",
+      "estimated_cost": 1690,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9306455",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-04-20",
+      "status_date": "1993-08-23",
+      "estimated_cost": 250,
+      "description": "replace existing skylight.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9211590",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "1992-07-15",
+      "status_date": "1992-08-17",
+      "estimated_cost": 1500,
+      "revised_cost": 1900,
+      "description": "replace all windows, vinyl or alum, + 2 sliding in back",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MORAGA&street_type=ST&address_number=4018",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1897025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1897&lot=025",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1897025",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2003-06-05",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 5 June 2003",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/53minutesofsanfran2003san/page/n340/mode/1up",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2003-06-19",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 19 June 2003",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/53minutesofsanfran2003san/page/n388/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2003-06-05",
+      "kind": "occupancy",
+      "description": "An existing two-story, single-family dwelling stood on the lot.",
+      "source": "sf-planning-commission-minutes-2003-06-05"
+    },
+    {
+      "date": "2003-06-19",
+      "kind": "planning decision",
+      "description": "The City Planning Commission did not take discretionary review and approved a new third-story vertical addition and two-story rear horizontal extension to an existing dwelling.",
+      "source": "sf-planning-commission-minutes-2003-06-19"
+    }
+  ]
+}

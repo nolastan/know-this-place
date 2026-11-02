@@ -1,0 +1,66 @@
+{
+  "address": "199 New Montgomery Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/new-montgomery-street/199/unit-a/",
+  "unit": "A",
+  "apn": "3722083",
+  "block": "3722",
+  "lot": "083",
+  "parcel": {
+    "building_area_sqft": 320
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 153735,
+    "assessed_improvement_value": 153735,
+    "last_sale_date": "2011-02-11"
+  },
+  "permits": [
+    {
+      "number": "201911268275",
+      "type": "sign - erect",
+      "status": "complete",
+      "filed": "2019-11-26",
+      "status_date": "2020-01-10",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "new blade sign medleno coffee",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200612159956",
+      "type": "sign - erect",
+      "status": "expired",
+      "filed": "2006-12-15",
+      "status_date": "2008-07-28",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "to erect double faced non electric sign",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200608311186",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-08-31",
+      "status_date": "2008-11-21",
+      "estimated_cost": 1850,
+      "revised_cost": 1850,
+      "description": "alteration to (e) fire sprinkler system for caffe trieste tenant on ground floor. relocate 4 ssu, relocate 4 ssp, add 1 dry pend in refrigerator walk in box.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3722083&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3722&unit=A",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

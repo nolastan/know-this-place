@@ -1,0 +1,47 @@
+{
+  "address": "77 Van Ness Avenue, San Francisco, CA 94102",
+  "path": "/san-francisco/tenderloin/van-ness-avenue/41/unit-401/",
+  "unit": "401",
+  "apn": "0834032",
+  "block": "0834",
+  "lot": "032",
+  "parcel": {
+    "building_area_sqft": 831,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 399629,
+    "assessed_improvement_value": 266420,
+    "last_sale_date": "2009-09-18"
+  },
+  "permits": [
+    {
+      "number": "201903266308",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-03-26",
+      "status_date": "2019-06-04",
+      "estimated_cost": 30000,
+      "revised_cost": 5000,
+      "description": "this project will be adding one anchor at a location specified on drawings. the anchors will be at a minimum 18' above grade and include a 1/2\" hilti kwik bolt embedded 4\" into the buildings concrete facade to hold up string lights over hickory alley.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0834032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0834&unit=401",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

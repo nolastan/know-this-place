@@ -1,0 +1,58 @@
+{
+  "address": "1 South Park, San Francisco, CA 94107",
+  "path": "/san-francisco/east-cut/south-park/1/unit-401/",
+  "unit": "401",
+  "apn": "3775206",
+  "block": "3775",
+  "lot": "206",
+  "parcel": {
+    "building_area_sqft": 1706,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1496303,
+    "assessed_improvement_value": 997535,
+    "last_sale_date": "2021-09-22"
+  },
+  "permits": [
+    {
+      "number": "202302071571",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-02-07",
+      "status_date": "2023-11-06",
+      "estimated_cost": 11500,
+      "revised_cost": 24000,
+      "description": "one unit: revision to permit 202207158612. kitchen remodeling including relocation of sink, replacement of countertop and casework.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202207158612",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-07-15",
+      "status_date": "2023-11-06",
+      "estimated_cost": 35000,
+      "revised_cost": 50000,
+      "description": "one unit: convert bedroom 2 and bedroom 3 into master bedroom, extend the bathroom 3 and add a free-standing bathrtub convert bathroom 2 to a walk-in closet convert living rom to office with neew metal window wall, change (e) stair guardrails to new glass guard rails",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3775206&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3775&unit=401",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

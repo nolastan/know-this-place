@@ -1,0 +1,35 @@
+{
+  "address": "29 19th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/19th-street/3620/unit-14/",
+  "unit": "14",
+  "apn": "3587114",
+  "block": "3587",
+  "lot": "114",
+  "parcel": {
+    "building_area_sqft": 874,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 732233,
+    "assessed_improvement_value": 488155,
+    "last_sale_date": "2022-03-31"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3587114&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3587&unit=14",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

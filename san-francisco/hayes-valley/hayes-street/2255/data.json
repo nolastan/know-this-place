@@ -1,0 +1,132 @@
+{
+  "address": "2255 Hayes Street, San Francisco, CA 94117",
+  "path": "/san-francisco/hayes-valley/hayes-street/2255/",
+  "apn": "1213011A",
+  "block": "1213",
+  "lot": "011A",
+  "eas_baseid": "297423",
+  "coordinates": {
+    "lat": 37.772731,
+    "lng": -122.453342
+  },
+  "parcel": {
+    "year_built": 1939,
+    "stories": 6,
+    "rooms": 164,
+    "bathrooms": 24,
+    "lot_area_sqft": 15947,
+    "use": "Commercial Misc",
+    "property_class": "Schools",
+    "construction_type_code": "C",
+    "zoning": "RM-2",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "North Panhandle",
+    "analysis_neighborhood": "Lone Mountain/USF",
+    "property_location_raw": "0000 2255 HAYES               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 341917,
+    "assessed_improvement_value": 1262637
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1939",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Panhandle Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1870–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200206058297",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2002-06-05",
+      "status_date": "2007-03-19",
+      "estimated_cost": 35000,
+      "description": "new antennas mounted on (e) bldg penthouse & outdoor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9715777",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-08-18",
+      "status_date": "1997-08-25",
+      "estimated_cost": 1,
+      "revised_cost": 21460,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1997–2015",
+    "shown_on_page": 2,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAYES&street_type=ST&address_number=2255",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1213011A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1213&lot=011A",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1213011A",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4533415117847%2037.77273087537106)%27)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2002-06-06",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 6 June 2002",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/52minutesofsanfran2002san/page/n273/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2002-06-06",
+      "kind": "planning decision",
+      "description": "The City Planning Commission approved conditional use to install twelve panel antennas on the exterior of the existing penthouse of St. Mary's Hospital, with related equipment at ground level.",
+      "source": "sf-planning-commission-minutes-2002-06-06"
+    },
+    {
+      "date": "2002-06-06",
+      "kind": "occupancy",
+      "description": "The property held an existing seven-story, publicly used structure known as St. Mary's Hospital.",
+      "source": "sf-planning-commission-minutes-2002-06-06"
+    }
+  ]
+}

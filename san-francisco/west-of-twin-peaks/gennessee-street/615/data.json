@@ -1,0 +1,123 @@
+{
+  "address": "615 Gennessee Street, San Francisco, CA 94127",
+  "path": "/san-francisco/west-of-twin-peaks/gennessee-street/615/",
+  "apn": "3066006",
+  "block": "3066",
+  "lot": "006",
+  "eas_baseid": "353165",
+  "coordinates": {
+    "lat": 37.733325,
+    "lng": -122.451431
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1363,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Sunnyside",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0615 GENNESSEE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 172447,
+    "assessed_improvement_value": 489885,
+    "last_sale_date": "1998-08-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200107314903",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "2001-07-31",
+      "status_date": "2003-07-22",
+      "estimated_cost": 225000,
+      "revised_cost": 300000,
+      "description": "to erect 3 story single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200107314899",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "2001-07-31",
+      "status_date": "2003-07-22",
+      "description": "demolish a two story single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9904350",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1999-03-05",
+      "status_date": "2000-01-04",
+      "estimated_cost": 8500,
+      "description": "install shoring system to allow excavation at adjacent prop.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GENNESSEE&street_type=ST&address_number=615",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3066006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3066&lot=006",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3066006",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2002-05-30",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 30 May 2002",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/52minutesofsanfran2002san/page/n258/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2002-05-30",
+      "kind": "planning decision",
+      "description": "The City Planning Commission did not take discretionary review and approved the demolition of the existing two-story over basement single-family dwelling.",
+      "source": "sf-planning-commission-minutes-2002-05-30"
+    },
+    {
+      "date": "2002-05-30",
+      "kind": "occupancy",
+      "description": "The property held an existing two-story over basement single-family dwelling.",
+      "source": "sf-planning-commission-minutes-2002-05-30"
+    }
+  ]
+}

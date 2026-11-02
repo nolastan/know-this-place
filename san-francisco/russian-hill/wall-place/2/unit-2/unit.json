@@ -1,0 +1,35 @@
+{
+  "address": "2 Wall Place, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/wall-place/2/unit-2/",
+  "unit": "2",
+  "apn": "0184040",
+  "block": "0184",
+  "lot": "040",
+  "parcel": {
+    "building_area_sqft": 1334,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1018758,
+    "assessed_improvement_value": 679172,
+    "last_sale_date": "2014-09-16"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0184040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0184&unit=2",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

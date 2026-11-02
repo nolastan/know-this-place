@@ -1,0 +1,90 @@
+{
+  "address": "61 Cook Street, San Francisco, CA 94118",
+  "path": "/san-francisco/lone-mountain/cook-street/61/",
+  "block": "1066",
+  "eas_baseid": "294226",
+  "coordinates": {
+    "lat": 37.782697,
+    "lng": -122.452628
+  },
+  "parcel": {
+    "year_built": 2004,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "D",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Jordan Park/Laurel Heights",
+    "analysis_neighborhood": "Presidio Heights",
+    "units": 2
+  },
+  "condominium": {
+    "lots": [
+      "068",
+      "069"
+    ],
+    "method": "Proposed from the 2025 roll for block 1066: every condominium parcel the roll files under 61B COOK ST, and the unbroken run of lots beside parcel 1066068 on the same street with the same year built (2004) — street numbers 61a, 61b. 2 lots, 068–069."
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "2004",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201508204863",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-20",
+      "status_date": "2016-03-03",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "add siding to sides, not visible from street.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=COOK&street_type=ST&address_number=61",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 1066)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=1066&closed_roll_year=2025",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1066",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1066068",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2002-05-30",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 30 May 2002",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/52minutesofsanfran2002san/page/n261/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2002-05-30",
+      "kind": "occupancy",
+      "description": "The property held a single-family dwelling.",
+      "source": "sf-planning-commission-minutes-2002-05-30"
+    }
+  ]
+}

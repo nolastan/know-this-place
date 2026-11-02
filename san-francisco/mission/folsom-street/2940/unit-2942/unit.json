@@ -1,0 +1,33 @@
+{
+  "address": "2942 Folsom Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/folsom-street/2940/unit-2942/",
+  "apn": "6525039",
+  "block": "6525",
+  "lot": "039",
+  "parcel": {
+    "building_area_sqft": 1155,
+    "rooms": 6,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 427049,
+    "assessed_improvement_value": 427049,
+    "last_sale_date": "2005-07-28"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6525039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6525&street_number=2942",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

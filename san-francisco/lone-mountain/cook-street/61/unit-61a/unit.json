@@ -1,0 +1,30 @@
+{
+  "address": "61A Cook Street, San Francisco, CA 94118",
+  "path": "/san-francisco/lone-mountain/cook-street/61/unit-61a/",
+  "apn": "1066069",
+  "block": "1066",
+  "lot": "069",
+  "parcel": {
+    "building_area_sqft": 1288
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 525779,
+    "assessed_improvement_value": 432177
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1066069&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1066&street_number=61a",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

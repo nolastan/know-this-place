@@ -1,0 +1,57 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-8c/",
+  "unit": "8C",
+  "apn": "3719068",
+  "block": "3719",
+  "lot": "068",
+  "parcel": {
+    "building_area_sqft": 833,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 254000,
+    "assessed_improvement_value": 254000,
+    "last_sale_date": "2012-06-04"
+  },
+  "permits": [
+    {
+      "number": "201501155790",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-01-15",
+      "status_date": "2016-01-19",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "replace closet door with sliding door and soffit over bed with recessed lighting. all work in bedroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209280906",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2012-09-28",
+      "status_date": "2014-11-26",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "#8c- install 5 recessed lights at window soffit. no structural work, lighting must comply with cec150(k)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719068&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=8C",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

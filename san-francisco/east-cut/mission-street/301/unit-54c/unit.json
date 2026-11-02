@@ -1,0 +1,57 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-54c/",
+  "unit": "54C",
+  "apn": "3719366",
+  "block": "3719",
+  "lot": "366",
+  "parcel": {
+    "building_area_sqft": 2819,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2275500,
+    "assessed_improvement_value": 2275500,
+    "last_sale_date": "2023-09-28"
+  },
+  "permits": [
+    {
+      "number": "201207134853",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-07-13",
+      "status_date": "2012-10-11",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "open up wall between kitchen n living rm to create a pass through. install new led lighting, 1 pendant light n outlet for tv in kitchen. install 4 kitchen cabinets n counter top. install new doors to library",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M335047",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-07-13",
+      "status_date": "2012-07-13",
+      "revised_cost": 159,
+      "description": "add one unit to 301 mission st, block 3719 lot 366.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719366&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=54C",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

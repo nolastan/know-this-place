@@ -1,0 +1,90 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-48e/",
+  "unit": "48E",
+  "apn": "3719342",
+  "block": "3719",
+  "lot": "342",
+  "parcel": {
+    "building_area_sqft": 1730,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 915000,
+    "assessed_improvement_value": 915000,
+    "last_sale_date": "2009-04-20"
+  },
+  "permits": [
+    {
+      "number": "202406285480",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-06-28",
+      "status_date": "2024-09-19",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "tenant improvement - modify (e) fire alarm system. (1) new smoke detector and (1) countrol relay associated with new door hold. two units. ref pa# 202303143620 and 202303143623",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202403218363",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-03-21",
+      "status_date": "2024-03-22",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "#48e: relocate 2 fire sprinkler heads . ref pa#202303143623",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202303143623",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2023-03-14",
+      "status_date": "2024-09-23",
+      "estimated_cost": 42800,
+      "revised_cost": 42800,
+      "description": "modification from planning code sec 305.1 to provide temporary door / connection between two units without hearing under sec 317. temporary door / connecting to be 45 minute rated. reconfigure (e) den / bedroom to become dining room. (non-structural interior remodel).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201101248878",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-01-24",
+      "status_date": "2011-01-31",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "48th floor-fire sprinkler upgrade to an (e) system-relocate 4 sidewalls & relocate 3 pendent heads",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201012207043",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-12-20",
+      "status_date": "2010-12-21",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "construct soffits for lighting design. install two blind shade valances. maintain one-hour fire-rated protection (5/8\" type x gyp.) in ceiling.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719342&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=48E",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

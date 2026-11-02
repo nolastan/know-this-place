@@ -40,6 +40,7 @@ that neighborhood.
 - [Vallejo Street](vallejo-street/) — 1 building, built 1957; 1 in the Russian Hill-Vallejo Street Crest Historic District.
 - [Van Ness Avenue](van-ness-avenue/) — 8 buildings, built 1911–1919.
 - [Washington Street](washington-street/) — 2 buildings, built 1915.
+- [Wetmore Street](wetmore-street/) — 1 building, built 1964.
 
 ## Parks and public spaces
 

@@ -7,10 +7,12 @@ A hillside residential district in the city's south-east, between McLaren Park a
 - [Bowdoin Street](bowdoin-street/) — 1 building, built 1926.
 - [Cambridge Street](cambridge-street/) — 1 building, built 1951.
 - [Felton Street](felton-street/) — 1 building.
+- [Gambier Street](gambier-street/) — 1 building, built 1941.
 - [Gaven Street](gaven-street/) — 1 building, built 1960.
 - [Girard Street](girard-street/) — 1 building.
 - [Hamilton Street](hamilton-street/) — 1 building, built 1915.
 - [Holyoke Street](holyoke-street/) — 1 building, built 1908.
+- [Oxford Street](oxford-street/) — 1 building, built 2003.
 - [Silliman Street](silliman-street/) — 1 building, built 1992.
 - [Silver Avenue](silver-avenue/) — 1 building, built 1927.
 - [University Street](university-street/) — 1 building, built 1932.

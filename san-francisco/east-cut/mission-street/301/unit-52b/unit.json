@@ -1,0 +1,68 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-52b/",
+  "unit": "52B",
+  "apn": "3719357",
+  "block": "3719",
+  "lot": "357",
+  "parcel": {
+    "building_area_sqft": 3315,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 976246,
+    "assessed_improvement_value": 1301317,
+    "last_sale_date": "2010-07-30"
+  },
+  "permits": [
+    {
+      "number": "201107079713",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-07-07",
+      "status_date": "2012-04-25",
+      "estimated_cost": 225000,
+      "revised_cost": 225000,
+      "description": "submit drawings for remodel work in progress under separate permit 201010042162 and add 225,000 to cost of job per insp mchugh. no change in scope. no structural. fire sprinkler separate permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201105236623",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-05-23",
+      "status_date": "2011-05-23",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "one unit - add 9 fire sprinklers & relocate 13 fire sprinklers.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201010042162",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-10-04",
+      "status_date": "2012-04-25",
+      "estimated_cost": 85000,
+      "revised_cost": 85000,
+      "description": "interior remodel of #52b only will include new floor & wall finishes, new plumbing & light fixtures, new appliances, new cabinets, no structural works, field verify sprinkler and fa system coverage.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719357&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=52B",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

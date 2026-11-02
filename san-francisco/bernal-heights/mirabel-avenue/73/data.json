@@ -1,0 +1,131 @@
+{
+  "address": "73–75 Mirabel Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/bernal-heights/mirabel-avenue/73/",
+  "apn": "5517097",
+  "block": "5517",
+  "lot": "097",
+  "eas_baseid": "465435",
+  "coordinates": {
+    "lat": 37.746862,
+    "lng": -122.41564
+  },
+  "address_range": "73–75",
+  "street_numbers_on_parcel": [
+    "73",
+    "75"
+  ],
+  "parcel": {
+    "year_built": 1965,
+    "units": 2,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2983,
+    "building_area_sqft": 2301,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Bernal Heights",
+    "property_location_raw": "0000 0073 MIRABEL             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 493052,
+    "assessed_improvement_value": 739587,
+    "last_sale_date": "2000-03-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1965",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201905150735",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-05-15",
+      "status_date": "2019-10-16",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "at both sides of building remove siding and replace w/ new james hardie colonial lap siding to match existing profile, smooth finish.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200212032636",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-12-03",
+      "status_date": "2002-12-03",
+      "estimated_cost": 8385,
+      "revised_cost": 8385,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200201287857",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2002-01-28",
+      "status_date": "2003-10-09",
+      "estimated_cost": 150000,
+      "revised_cost": 175000,
+      "description": "remodel extg 2 unit building to provide for a single family residence/rmv extg roof overhang /stair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MIRABEL&street_type=AVE&address_number=73",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5517097&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5517&lot=097",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5517097",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2002-04-11",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 11 April 2002",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/52minutesofsanfran2002san/page/n152/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2002-04-11",
+      "kind": "planning decision",
+      "description": "The City Planning Commission took discretionary review and disapproved the project to convert an existing 2-unit building into one dwelling unit.",
+      "source": "sf-planning-commission-minutes-2002-04-11"
+    },
+    {
+      "date": "2002-04-11",
+      "kind": "occupancy",
+      "description": "The property held an existing 2-unit building.",
+      "source": "sf-planning-commission-minutes-2002-04-11"
+    }
+  ]
+}

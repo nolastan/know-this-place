@@ -1,0 +1,58 @@
+{
+  "address": "1452 Bush Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/bush-street/1452/unit-20/",
+  "unit": "20",
+  "apn": "0667043",
+  "block": "0667",
+  "lot": "043",
+  "parcel": {
+    "building_area_sqft": 1970,
+    "rooms": 5,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1092600,
+    "assessed_improvement_value": 728400,
+    "last_sale_date": "2018-06-18"
+  },
+  "permits": [
+    {
+      "number": "201903074637",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-03-07",
+      "status_date": "2019-07-24",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "one unit augment (e) 13rd wet-tyoe/system add 3 and relocate 3 fire sprinkler maher na",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201809271606",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-09-27",
+      "status_date": "2019-07-22",
+      "estimated_cost": 50000,
+      "revised_cost": 70000,
+      "description": "one unit. interior remodel of 3 bed, 3.5 bath unit. remove non-bearing walls for new closet and redesigned half bath. new finishes at kitchen and bathrooms. maher n/a",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0667043&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0667&unit=20",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

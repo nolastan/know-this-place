@@ -1,0 +1,47 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-702/",
+  "unit": "702",
+  "apn": "3719412",
+  "block": "3719",
+  "lot": "412",
+  "parcel": {
+    "building_area_sqft": 1779,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 715000,
+    "assessed_improvement_value": 715000,
+    "last_sale_date": "2014-06-26"
+  },
+  "permits": [
+    {
+      "number": "201012166865",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-12-16",
+      "status_date": "2011-07-19",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "install new recessed lighting at living room and bedroom any necessary relocation of existing sprinkler heads will be done under separate permit. no structural work, no relocation of walls or doors.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719412&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=702",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

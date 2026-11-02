@@ -1,0 +1,147 @@
+{
+  "address": "4386 26th Street, San Francisco, CA 94131",
+  "path": "/san-francisco/mission/26th-street/4386/",
+  "apn": "6556018",
+  "block": "6556",
+  "lot": "018",
+  "eas_baseid": "402337",
+  "coordinates": {
+    "lat": 37.748027,
+    "lng": -122.437846
+  },
+  "parcel": {
+    "year_built": 1934,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 1855,
+    "building_area_sqft": 3005,
+    "basement_area_sqft": 808,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 4386 26TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 23297,
+    "assessed_improvement_value": 458262
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1934",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202402015078",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-02-01",
+      "status_date": "2024-07-01",
+      "estimated_cost": 18400,
+      "revised_cost": 18400,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200507288849",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-07-28",
+      "status_date": "2006-09-29",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "third story addition & remodel of (e) building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200211121134",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2002-11-12",
+      "status_date": "2006-09-29",
+      "estimated_cost": 75000,
+      "revised_cost": 140000,
+      "description": "3rd story addition & remodel of an (e) house",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8306753",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-07-15",
+      "status_date": "1983-09-12",
+      "estimated_cost": 1000,
+      "description": "replace stair with brick on reinforced concrete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8306664",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1983-07-14",
+      "status_date": "1983-12-08",
+      "estimated_cost": 950,
+      "description": "repair front stair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=26TH&street_type=ST&address_number=4386",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6556018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6556&lot=018",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6556018",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2003-06-12",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 12 June 2003",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/53minutesofsanfran2003san/page/n360/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2003-06-12",
+      "kind": "planning decision",
+      "description": "The City Planning Commission did not take discretionary review and approved a one-story vertical addition on a single-family dwelling.",
+      "source": "sf-planning-commission-minutes-2003-06-12"
+    },
+    {
+      "date": "2003-06-12",
+      "kind": "occupancy",
+      "description": "A single-family dwelling stood on the lot.",
+      "source": "sf-planning-commission-minutes-2003-06-12"
+    }
+  ]
+}

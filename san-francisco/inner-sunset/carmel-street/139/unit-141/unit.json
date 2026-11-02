@@ -1,0 +1,46 @@
+{
+  "address": "141 Carmel Street, San Francisco, CA 94117",
+  "path": "/san-francisco/inner-sunset/carmel-street/139/unit-141/",
+  "apn": "1294045",
+  "block": "1294",
+  "lot": "045",
+  "parcel": {
+    "building_area_sqft": 1578,
+    "rooms": 5,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 922456,
+    "assessed_improvement_value": 922456,
+    "last_sale_date": "2014-06-24"
+  },
+  "permits": [
+    {
+      "number": "201508124022",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-12",
+      "status_date": "2015-12-21",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1294045&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1294&street_number=141",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

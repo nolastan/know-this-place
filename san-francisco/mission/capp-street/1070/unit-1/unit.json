@@ -1,0 +1,50 @@
+{
+  "address": "1070 Capp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/capp-street/1070/unit-1/",
+  "unit": "1",
+  "apn": "6528056",
+  "block": "6528",
+  "lot": "056",
+  "parcel": {
+    "building_area_sqft": 2119
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 680608,
+    "assessed_improvement_value": 680608,
+    "last_sale_date": "2011-06-01"
+  },
+  "permits": [
+    {
+      "number": "202006309408",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-06-30",
+      "status_date": "2020-09-23",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "replace siding and trim on the south and west sides of the building in like-kind. 1'4\" trim replaced in like kind, siding is 1'8\" v groove. approx 4000 sqft total for siding. all work in kind, not visible from street.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2010–2020",
+    "shown_on_page": 1,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6528056&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6528&unit=1",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-45a/",
+  "unit": "45A",
+  "apn": "3719320",
+  "block": "3719",
+  "lot": "320",
+  "parcel": {
+    "building_area_sqft": 1649,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 840500,
+    "assessed_improvement_value": 840500,
+    "last_sale_date": "2012-09-07"
+  },
+  "permits": [
+    {
+      "number": "201404042445",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-04-04",
+      "status_date": "2014-04-18",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "administrative permit to document the legal number of dwelling units. building permit applications were issued-#2002102239696,201206082184, 201208076804, 201208076807 w/incorrect number of units documented on the permit applications. the correct number of dwelling units in the bldg currently is 416.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201301158009",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-01-15",
+      "status_date": "2013-02-26",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "two units - relocate (16) fire sprinkler heads, add (1) fire sprinkler head.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201210262916",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-10-26",
+      "status_date": "2013-07-18",
+      "estimated_cost": 425000,
+      "revised_cost": 425000,
+      "description": "revision to pa 201208076807. new work to include removal of existing shower and larger pantry, new pocket door between bedrooms, relocate non bearing partitions at master bedroom. master bathroom as per plans. no strctural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201208076807",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-08-07",
+      "status_date": "2013-07-18",
+      "estimated_cost": 85000,
+      "revised_cost": 85000,
+      "description": "combine two units. create opening between bedrooms to connect two units. no structural work. remodel of two units to include new plumbing and light fixtures, (n) kitchenete, wall and floor finishes. sprinkler work under separate permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M341150",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-08-07",
+      "status_date": "2012-08-07",
+      "revised_cost": 159,
+      "description": "add address: 301 mission st #45a",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719320&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=45A",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

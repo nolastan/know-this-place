@@ -1,0 +1,57 @@
+{
+  "address": "1919 Octavia Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/octavia-street/1919/unit-6/",
+  "unit": "6",
+  "apn": "0639051",
+  "block": "0639",
+  "lot": "051",
+  "parcel": {
+    "building_area_sqft": 1720,
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 289235,
+    "assessed_improvement_value": 461337
+  },
+  "permits": [
+    {
+      "number": "201312164299",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-12-16",
+      "status_date": "2013-12-16",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under app#200710094801. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201312164300",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-12-16",
+      "status_date": "2013-12-16",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under app#201105125902. all work is complete.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0639051&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0639&unit=6",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

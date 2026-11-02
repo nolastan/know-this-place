@@ -1,0 +1,47 @@
+{
+  "address": "1 South Park, San Francisco, CA 94107",
+  "path": "/san-francisco/east-cut/south-park/1/unit-402/",
+  "unit": "402",
+  "apn": "3775207",
+  "block": "3775",
+  "lot": "207",
+  "parcel": {
+    "building_area_sqft": 1389,
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 924600,
+    "assessed_improvement_value": 616400,
+    "last_sale_date": "2022-04-07"
+  },
+  "permits": [
+    {
+      "number": "201803012588",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-03-01",
+      "status_date": "2018-07-02",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "#402 -kitchen remodel; remove & replace cabinets, faucet, new appliances, relocate 1 gfci.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3775207&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3775&unit=402",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

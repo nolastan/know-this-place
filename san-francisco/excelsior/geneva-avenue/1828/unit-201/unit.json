@@ -1,0 +1,46 @@
+{
+  "address": "201 Geneva Avenue, San Francisco, CA 94134",
+  "path": "/san-francisco/excelsior/geneva-avenue/1828/unit-201/",
+  "apn": "6423191",
+  "block": "6423",
+  "lot": "191",
+  "parcel": {
+    "building_area_sqft": 1093,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 253425,
+    "assessed_improvement_value": 253425,
+    "last_sale_date": "2004-02-12"
+  },
+  "permits": [
+    {
+      "number": "202410294003",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-10-29",
+      "status_date": "2025-06-06",
+      "estimated_cost": 93275,
+      "revised_cost": 93275,
+      "description": "bldg 6000- tear off (e) composition shingle roof install (n) composition shingle roof. (common area)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6423191&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6423&street_number=201",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

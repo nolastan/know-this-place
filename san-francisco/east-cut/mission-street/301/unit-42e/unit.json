@@ -1,0 +1,47 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-42e/",
+  "unit": "42E",
+  "apn": "3719312",
+  "block": "3719",
+  "lot": "312",
+  "parcel": {
+    "building_area_sqft": 1714,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 861500,
+    "assessed_improvement_value": 861500,
+    "last_sale_date": "2009-10-08"
+  },
+  "permits": [
+    {
+      "number": "201402047739",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-02-04",
+      "status_date": "2014-03-19",
+      "estimated_cost": 1542,
+      "revised_cost": 1542,
+      "description": "suite #42e fire sprinkler permit - add 2 sidewalls, add 1 pendent, & detete 1 sidewall. compliance with ordiance no. 155-13 not required.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719312&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=42E",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

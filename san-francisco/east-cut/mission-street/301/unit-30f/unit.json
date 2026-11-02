@@ -1,0 +1,68 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-30f/",
+  "unit": "30F",
+  "apn": "3719241",
+  "block": "3719",
+  "lot": "241",
+  "parcel": {
+    "building_area_sqft": 1601,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 672000,
+    "assessed_improvement_value": 672000,
+    "last_sale_date": "2015-11-20"
+  },
+  "permits": [
+    {
+      "number": "201211013271",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-11-01",
+      "status_date": "2012-11-01",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "one unit - rev. pa#201209060698: interior remodel of the apartment including removing of closet wing walls, replace (2) plumbing fixtures in (e) location, alteration of wall finishes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209260698",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-09-26",
+      "status_date": "2012-10-09",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "interior remodel of the apartment including: replace of wall fixtures, changing of plumbing fixtures.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M350047",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-09-26",
+      "status_date": "2012-10-02",
+      "revised_cost": 159,
+      "description": "add one unit to address 301 mission st for block#3719 lot#241.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719241&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=30F",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

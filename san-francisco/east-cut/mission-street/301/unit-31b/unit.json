@@ -1,0 +1,90 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-31b/",
+  "unit": "31B",
+  "apn": "3719243",
+  "block": "3719",
+  "lot": "243",
+  "parcel": {
+    "building_area_sqft": 1652,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 752000,
+    "assessed_improvement_value": 752000,
+    "last_sale_date": "2012-06-29"
+  },
+  "permits": [
+    {
+      "number": "201802010189",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-02-01",
+      "status_date": "2018-02-16",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "partial compliance to nov # 201727081. repair 31st floor fire stopping at edge of slab where gaps occur. one unit-b",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201303081779",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-03-08",
+      "status_date": "2013-03-19",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "wiring for 3 rooms of audio and video distribution, speakers and tv installation, phone lines and internet connection, no penetration thru fire rated walls/partitions/ceiling and floors",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209079229",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-09-07",
+      "status_date": "2012-09-07",
+      "estimated_cost": 2300,
+      "revised_cost": 2300,
+      "description": "relocate 5 existing fire sprinkler heads to accomodate new design on one unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201207195262",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-07-19",
+      "status_date": "2012-10-22",
+      "estimated_cost": 80000,
+      "revised_cost": 50000,
+      "description": "#31b- new hardwood floor in bedrooms, built in cabinetry in guest room, new closet shelving recessed lighting in living room & guest bedroom, new pocket door in guest room. no structural work, open drywall for electrical work, relocate sprinklers by other under seperate permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M336387",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-07-19",
+      "status_date": "2012-07-19",
+      "revised_cost": 159,
+      "description": "need one unit ti address 301 mission st. block 3719 lot 243.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719243&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=31B",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-49c/",
+  "unit": "49C",
+  "apn": "3719346",
+  "block": "3719",
+  "lot": "346",
+  "parcel": {
+    "building_area_sqft": 2819,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2267500,
+    "assessed_improvement_value": 2267500,
+    "last_sale_date": "2014-04-02"
+  },
+  "permits": [
+    {
+      "number": "201608266165",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-08-26",
+      "status_date": "2017-07-28",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "0n 49th floor in one unit- master bath remodel. removal of all finishes and install new finishes. shower location and tub location to switch locations revision to 201507010395",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201510200240",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-10-20",
+      "status_date": "2015-10-30",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "49th floor: one unit :relocate 7 and add 3 fire sprinkler. maher n/a",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201507010395",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-07-01",
+      "status_date": "2016-11-01",
+      "estimated_cost": 610000,
+      "revised_cost": 610000,
+      "description": "remodel of entire unit, demo all ceiling sheetrock for new led light can through the unit. new cabinets at kitchen and bathroom vanities. remove & install hardwood flooring throughout. remodel bathroom to include removal of old tub and tub deck with new version. n/a ordinance #155-13;",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201507010498",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-07-01",
+      "status_date": "2015-07-02",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "one unit: demo & remodel of powder room (#108) back bathroom, and office #2-work to include removal toilets, vanity & all finishes & replace with new finishes;maher n/a",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201110076406",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2011-10-07",
+      "status_date": "2013-11-07",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "relocate 2 pendant j-boxes and install 7 new downlights",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719346&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=49C",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

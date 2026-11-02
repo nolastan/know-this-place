@@ -10,11 +10,13 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [18th Avenue](18th-avenue/) — 1 building, built 1920.
 - [19th Avenue](19th-avenue/) — 1 building, built 1913.
 - [9th Avenue](9th-avenue/) — 1 building, built 1954; 1 in the Forest Hill Historic District.
+- [Agua Way](agua-way/) — 1 building, built 1928.
 - [Allston Way](allston-way/) — 1 building, built 1916.
 - [Casitas Avenue](casitas-avenue/) — 1 building, built 1953.
 - [Castenada Avenue](castenada-avenue/) — 1 building, built 1929; 1 in the Forest Hill Historic District.
 - [Claremont Boulevard](claremont-boulevard/) — 1 building, built 1929.
 - [Darien Way](darien-way/) — 1 building; 1 in the Balboa Terrace Historic District.
+- [Del Vale Avenue](del-vale-avenue/) — 1 building, built 1946.
 - [Edgehill Way](edgehill-way/) — 1 building, built 1970.
 - [El Verano Way](el-verano-way/) — 1 building, built 1926.
 - [Faxon Avenue](faxon-avenue/) — 1 building, built 1918.
@@ -22,6 +24,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Foerster Street](foerster-street/) — 1 building, built 1900.
 - [Frida Kahlo Way](frida-kahlo-way/) — 1 building.
 - [Funston Avenue](funston-avenue/) — 1 building, built 1936.
+- [Gennessee Street](gennessee-street/) — 1 building, built 1915.
 - [Granville Way](granville-way/) — 1 building, built 1923.
 - [Idora Avenue](idora-avenue/) — 1 building, built 1947.
 - [Juanita Way](juanita-way/) — 1 building, built 1927.
@@ -39,6 +42,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Miramar Avenue](miramar-avenue/) — 1 building, built 1932.
 - [Molimo Drive](molimo-drive/) — 1 building, built 1949.
 - [Monterey Boulevard](monterey-boulevard/) — 1 building, built 1925; 1 in the St. Francis Wood Historic District.
+- [Myra Way](myra-way/) — 1 building, built 1950.
 - [Ocean Avenue](ocean-avenue/) — 1 building, built 1922; 1 in the Ingleside Terrace Historic District.
 - [Pacheco Street](pacheco-street/) — 1 building, built 1917; 1 in the Forest Hill Historic District.
 - [Plymouth Avenue](plymouth-avenue/) — 1 building, built 1918.
@@ -49,6 +53,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [San Andreas Way](san-andreas-way/) — 1 building, built 1941; 1 in the St. Francis Wood Historic District.
 - [San Anselmo Avenue](san-anselmo-avenue/) — 1 building, built 1942; 1 in the St. Francis Wood Historic District.
 - [San Benito Way](san-benito-way/) — 1 building, built 2001; 1 in the St. Francis Wood Historic District.
+- [San Fernando Way](san-fernando-way/) — 1 building, built 1923; 1 in the Balboa Terrace Historic District.
 - [San Leandro Way](san-leandro-way/) — 1 building, built 1923; 1 in the St. Francis Wood Historic District.
 - [San Marcos Avenue](san-marcos-avenue/) — 6 buildings, built 1933–1965; 6 in the Forest Hill Historic District.
 - [San Pablo Avenue](san-pablo-avenue/) — 1 building, built 1964; 1 in the St. Francis Wood Historic District.

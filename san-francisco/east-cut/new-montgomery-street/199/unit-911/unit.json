@@ -1,0 +1,44 @@
+{
+  "address": "199 New Montgomery Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/new-montgomery-street/199/unit-911/",
+  "unit": "911",
+  "apn": "3722179",
+  "block": "3722",
+  "lot": "179",
+  "parcel": {
+    "building_area_sqft": 412
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 247822,
+    "assessed_improvement_value": 165208,
+    "last_sale_date": "2010-02-25"
+  },
+  "permits": [
+    {
+      "number": "200902051491",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-02-05",
+      "status_date": "2009-04-03",
+      "estimated_cost": 1600,
+      "revised_cost": 1600,
+      "description": "work @ one unit only. replace 84 sq. ft. of insulation & drywall 5/8 fire rated affected by water leak. reset toilet. maintain fire & sound proofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3722179&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3722&unit=911",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

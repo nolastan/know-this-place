@@ -1,0 +1,47 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-5a/",
+  "unit": "5A",
+  "apn": "3719039",
+  "block": "3719",
+  "lot": "039",
+  "parcel": {
+    "building_area_sqft": 1479,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 425500,
+    "assessed_improvement_value": 425500,
+    "last_sale_date": "2022-04-07"
+  },
+  "permits": [
+    {
+      "number": "201803295046",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-03-29",
+      "status_date": "2018-03-29",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "one unit - ur&r gyp board at flr slab edge. to review fire resistive construction at control wall, heat pump penetrations fire rated demissing walls ferred sofits, opening to be restored to match (e) fire rated construction",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=5A",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

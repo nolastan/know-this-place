@@ -1,0 +1,64 @@
+{
+  "address": "20 Mission Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/mission-street/3294/unit-20/",
+  "apn": "6596023",
+  "block": "6596",
+  "lot": "023",
+  "parcel": {
+    "building_area_sqft": 2084,
+    "basement_area_sqft": 1161
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 502362,
+    "assessed_improvement_value": 334906,
+    "last_sale_date": "2016-04-22"
+  },
+  "permits": [
+    {
+      "number": "202306089618",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-06-08",
+      "status_date": "2024-01-22",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "based on health inspector, we advised to add undercounter dishwasher machine & handwashing sink inside drinking station in dining",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201208137186",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-08-13",
+      "status_date": "2012-11-26",
+      "estimated_cost": 8000,
+      "revised_cost": 16848,
+      "description": "create new handicap unisex toilet (restrooms) at ground floor (1st floor), commerical space (restaurant). barrier removal to provide restroom on ground floor. per rudy prada no need route to health dept.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M342328",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-08-13",
+      "status_date": "2012-08-13",
+      "description": "change address from 199 tiffany ave. to 20 29th street. block 6596, lot 023.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6596023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6596&street_number=20",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

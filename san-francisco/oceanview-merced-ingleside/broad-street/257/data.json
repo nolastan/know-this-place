@@ -1,0 +1,144 @@
+{
+  "address": "257 Broad Street, San Francisco, CA 94112",
+  "path": "/san-francisco/oceanview-merced-ingleside/broad-street/257/",
+  "apn": "7114053",
+  "block": "7114",
+  "lot": "053",
+  "eas_baseid": "416415",
+  "coordinates": {
+    "lat": 37.712879,
+    "lng": -122.461104
+  },
+  "parcel": {
+    "year_built": 2003,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 5,
+    "bedrooms": 8,
+    "lot_area_sqft": 3125,
+    "building_area_sqft": 4559,
+    "basement_area_sqft": 1589,
+    "lot_depth_ft": 25,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "NA",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Oceanview",
+    "analysis_neighborhood": "Oceanview/Merced/Ingleside",
+    "property_location_raw": "0000 0257 BROAD               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 876126,
+    "assessed_improvement_value": 831155,
+    "last_sale_date": "2017-08-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "2003",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200307078892",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-07-07",
+      "status_date": "2003-09-15",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "rev. appl#200304011168 operation matrix for door holder activate by only 2 smoke detectors",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200304232938",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-04-23",
+      "status_date": "2003-07-07",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to 200207292516-change-update type of construction from 5n to 5-1 hr",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200304011168",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-04-01",
+      "status_date": "2003-07-07",
+      "estimated_cost": 3800,
+      "revised_cost": 3800,
+      "description": "install of fira alarm system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200302107051",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2003-02-10",
+      "status_date": "2003-07-07",
+      "estimated_cost": 10000,
+      "revised_cost": 12000,
+      "description": "install fire sprinkler to new building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200207292516",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "2002-07-29",
+      "status_date": "2003-07-11",
+      "estimated_cost": 275000,
+      "revised_cost": 350000,
+      "description": "erect a three story single family dwelling with conditional use as a residential care home",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BROAD&street_type=ST&address_number=257",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7114053&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7114&lot=053",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7114053",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2002-06-06",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 6 June 2002",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/52minutesofsanfran2002san/page/n273/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2002-06-06",
+      "kind": "planning decision",
+      "description": "The City Planning Commission approved conditional use with conditions, good for three years, to construct a residential care facility for 14 elderly people.",
+      "source": "sf-planning-commission-minutes-2002-06-06"
+    }
+  ]
+}

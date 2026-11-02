@@ -1,0 +1,47 @@
+{
+  "address": "3981 Alemany Boulevard, San Francisco, CA 94132",
+  "path": "/san-francisco/oceanview-merced-ingleside/alemany-boulevard/3995/unit-302/",
+  "unit": "302",
+  "apn": "7126A057",
+  "block": "7126A",
+  "lot": "057",
+  "parcel": {
+    "building_area_sqft": 670,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 263554,
+    "assessed_improvement_value": 263554,
+    "last_sale_date": "2014-02-11"
+  },
+  "permits": [
+    {
+      "number": "200901120020",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-01-12",
+      "status_date": "2009-02-03",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "work @ one unit only. remove & replace approx 100 sq. ft. sheerwall decay. replace in kind to match existing. remove & flash bedroom window. \"front winodw\" re-install window paint exterior siding to match existing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7126A057&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7126A&unit=302",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

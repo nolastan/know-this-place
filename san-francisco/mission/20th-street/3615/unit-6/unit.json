@@ -1,0 +1,75 @@
+{
+  "address": "3615 20th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/20th-street/3615/unit-6/",
+  "unit": "6",
+  "apn": "3608099",
+  "block": "3608",
+  "lot": "099",
+  "parcel": {
+    "building_area_sqft": 1022,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1067450,
+    "assessed_improvement_value": 711633,
+    "last_sale_date": "2022-07-01"
+  },
+  "permits": [
+    {
+      "number": "201612195351",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-12-19",
+      "status_date": "2017-02-03",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "one unit - revision to 201610130260 for change to orininal scop of work - movable cabinet boxes. new small fridge & ice maker. n/a maher ordinance",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201610130260",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-10-13",
+      "status_date": "2017-02-03",
+      "estimated_cost": 7000,
+      "revised_cost": 10000,
+      "description": "at existing roof deck, upgrade (e) electrical & plumbing to meet code compliance. no new roof penetrations. no relocation of walls. no re-purposing of space.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201606200428",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-06-20",
+      "status_date": "2016-12-14",
+      "estimated_cost": 14050,
+      "revised_cost": 14050,
+      "description": "#6 -remodel kitchen & bathroom; incl. ele & plumbing. no relocatio nof walls , new finishes.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2016",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3608099&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3608&unit=6",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

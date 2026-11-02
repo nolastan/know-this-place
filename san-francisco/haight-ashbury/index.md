@@ -18,6 +18,7 @@ The neighborhood at the east end of Golden Gate Park, at the centre of San Franc
 - [Clayton Street](clayton-street/) — 1 building, built 1900; 1 in the Panhandle Historic District.
 - [Cole Street](cole-street/) — A two-flat 1903 building linked to Charles Manson in 1967.
 - [Divisadero Street](divisadero-street/) — 1 building, built 1885.
+- [Downey Street](downey-street/) — 1 building, built 1914.
 - [Fell Street](fell-street/) — 1 building, built 1987.
 - [Haight Street](haight-street/) — Flats over a store of 1900, inside the Counterculture Historic District.
 - [Lyon Street](lyon-street/) — Two buildings facing the Panhandle, both named for Janis Joplin by the same guide.

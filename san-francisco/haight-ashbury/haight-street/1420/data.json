@@ -1,0 +1,187 @@
+{
+  "address": "1420 Haight Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/haight-street/1420/",
+  "apn": "1232005",
+  "block": "1232",
+  "lot": "005",
+  "eas_baseid": "297913",
+  "coordinates": {
+    "lat": 37.770377,
+    "lng": -122.445881
+  },
+  "parcel": {
+    "year_built": 1987,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 4245,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "HAIGHT",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Haight Ashbury",
+    "analysis_neighborhood": "Haight Ashbury",
+    "property_location_raw": "0000 1420 HAIGHT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 877918,
+    "assessed_improvement_value": 877918,
+    "last_sale_date": "1999-05-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1987",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Haight Ashbury Counterculture Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1966–1975",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200604048226",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-04-04",
+      "status_date": "2019-05-29",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew application numbers 200304212757, 200312243024 & 200501072806 for final.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200501072806",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-01-07",
+      "status_date": "2019-05-29",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "for final inspection 200304212757",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200312243024",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2003-12-24",
+      "status_date": "2006-05-04",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa# 2003/04/21/2757 - due to construction error, elevator cab floor plan has been revised (reduce); to fit within structural constraints. new elevator machine room @ roof & new stairs to roof.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200304212757",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2003-04-21",
+      "status_date": "2019-05-29",
+      "estimated_cost": 185000,
+      "revised_cost": 200000,
+      "description": "convert office to retail on 2nd fl. renovate surfaces. convert (e) toilet to accessible. new electri",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9923187",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-11-02",
+      "status_date": "2000-05-02",
+      "estimated_cost": 11500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9914523",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1999-07-16",
+      "status_date": "1999-12-22",
+      "estimated_cost": 85000,
+      "revised_cost": 105000,
+      "description": "storefront remodel interior partitions & add mezzanine",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8411829",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1984-11-02",
+      "status_date": "1986-12-16",
+      "estimated_cost": 200000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 9,
+    "range": "1984–2006",
+    "shown_on_page": 7,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAIGHT&street_type=ST&address_number=1420",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1232005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1232&lot=005",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1232005",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44588062707759%2037.77037657735879)%27)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2003-06-05",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 5 June 2003",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/53minutesofsanfran2003san/page/n332/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2003-06-05",
+      "kind": "planning decision",
+      "description": "The City Planning Commission approved conditional-use authorization to expand an existing ground-floor retail use into the second-floor space and mezzanine of an existing two-story building and remodel the front facade.",
+      "source": "sf-planning-commission-minutes-2003-06-05"
+    },
+    {
+      "date": "2003-06-05",
+      "kind": "occupancy",
+      "description": "An existing two-story building with a ground-floor retail use stood on the lot.",
+      "source": "sf-planning-commission-minutes-2003-06-05"
+    }
+  ]
+}

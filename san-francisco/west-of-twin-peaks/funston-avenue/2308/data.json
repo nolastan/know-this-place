@@ -1,0 +1,177 @@
+{
+  "address": "2308 Funston Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/west-of-twin-peaks/funston-avenue/2308/",
+  "apn": "2341039",
+  "block": "2341",
+  "lot": "039",
+  "eas_baseid": "457781",
+  "coordinates": {
+    "lat": 37.74504,
+    "lng": -122.469008
+  },
+  "parcel": {
+    "year_built": 2003,
+    "units": 1,
+    "stories": 3,
+    "rooms": 13,
+    "bathrooms": 4,
+    "bedrooms": 5,
+    "lot_area_sqft": 3740.85,
+    "building_area_sqft": 4428,
+    "lot_depth_ft": 81.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Golden Gate Heights",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 2308 FUNSTON             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 176782,
+    "assessed_improvement_value": 961954,
+    "last_sale_date": "1988-07-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "2003",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201202234688",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-02-23",
+      "status_date": "2012-04-06",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "comply w/ nov 200560650. new 22 feet rear retaining wall, no more than 18\" above soil.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200710104938",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-10-10",
+      "status_date": "2007-10-17",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew pa# 2004/08/23/2234 for final inspection only. water prove retaining wall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200408232234",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-08-23",
+      "status_date": "2007-08-20",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "comply nov 200449790. retain wall installed at side approx 24' long.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200305205108",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-05-20",
+      "status_date": "2003-05-22",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to renew app#2001/11/30/4238 for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200303311104",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-03-31",
+      "status_date": "2003-05-22",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew permit app 9917053-200109279432 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200111304238",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2001-11-30",
+      "status_date": "2003-05-22",
+      "estimated_cost": 1000,
+      "revised_cost": 10500,
+      "description": "enlarge the bathroom on ground floor and create a rooftop terrace on top of the bath room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200109279432",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2001-09-27",
+      "status_date": "2003-06-03",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "new retaining wal at n. side of property, revise exist stairs & foundation plan. rvsn 9917053",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9917053",
+      "type": "new construction wood frame",
+      "status": "expired",
+      "filed": "1999-08-17",
+      "status_date": "2003-05-22",
+      "estimated_cost": 250000,
+      "revised_cost": 250000,
+      "description": "erect a three story single family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FUNSTON&street_type=AVE&address_number=2308",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2341039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2341&lot=039",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2341039",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2001-09-13",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 13 September 2001",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/51minutesofsanfran2001san/page/n264/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2001-09-13",
+      "kind": "planning decision",
+      "description": "The City Planning Commission concurred with the staff recommendation on enforcement of the tree-preservation condition of approval.",
+      "source": "sf-planning-commission-minutes-2001-09-13"
+    }
+  ]
+}

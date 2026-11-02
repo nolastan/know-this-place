@@ -1,0 +1,47 @@
+{
+  "address": "3981 Alemany Boulevard, San Francisco, CA 94132",
+  "path": "/san-francisco/oceanview-merced-ingleside/alemany-boulevard/3995/unit-107/",
+  "unit": "107",
+  "apn": "7126A024",
+  "block": "7126A",
+  "lot": "024",
+  "parcel": {
+    "building_area_sqft": 747,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 144438,
+    "assessed_improvement_value": 144438,
+    "last_sale_date": "2012-04-30"
+  },
+  "permits": [
+    {
+      "number": "201012237291",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-12-23",
+      "status_date": "2011-07-06",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "#107, 207, 307 (building #5) exterior only- remove & replace in kind approx. 1500 sq.ft. of hardi lap siding & hardi siding. locate water infrusion and reflash to water tight conditions.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7126A024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7126A&unit=107",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "address": "1250 Missouri Street, San Francisco, CA 94107",
+  "path": "/san-francisco/mission/missouri-street/1250/unit-209/",
+  "unit": "209",
+  "apn": "4287053",
+  "block": "4287",
+  "lot": "053",
+  "parcel": {
+    "building_area_sqft": 1172,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 47534,
+    "assessed_improvement_value": 198493
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4287053&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4287&unit=209",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

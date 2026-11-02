@@ -1,0 +1,124 @@
+{
+  "address": "1414 Valencia Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/valencia-street/1414/",
+  "apn": "6531004",
+  "block": "6531",
+  "lot": "004",
+  "eas_baseid": "401372",
+  "coordinates": {
+    "lat": 37.750169,
+    "lng": -122.420773
+  },
+  "parcel": {
+    "year_built": 1917,
+    "units": 1,
+    "stories": 2,
+    "bathrooms": 2,
+    "lot_area_sqft": 3598,
+    "building_area_sqft": 4430,
+    "basement_area_sqft": 3380,
+    "use": "Commercial Misc",
+    "property_class": "Churches,Convents,Rectories",
+    "construction_type_code": "NA",
+    "zoning": "VALEN",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1416 1414-VALENCIA            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 117568,
+    "assessed_improvement_value": 56801
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1917",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200903315215",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-03-31",
+      "status_date": "2009-03-31",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "install dual set of entry doors. no change to size of entry frame. install 15\" - 18\" header to accomodadte 3068 doors.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200712049549",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-12-04",
+      "status_date": "2007-12-04",
+      "estimated_cost": 23000,
+      "revised_cost": 23000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200309023574",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2003-09-02",
+      "status_date": "2005-06-29",
+      "estimated_cost": 100000,
+      "description": "construct (n) second floor & improvements in first floor",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VALENCIA&street_type=ST&address_number=1414",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6531004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6531&lot=004",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6531004",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2003-06-12",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 12 June 2003",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/53minutesofsanfran2003san/page/n358/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2003-06-12",
+      "kind": "planning decision",
+      "description": "The City Planning Commission approved conditional-use authorization to expand an existing church by approximately 1,800 square feet and establish an 'other institutions, large' use on a second floor.",
+      "source": "sf-planning-commission-minutes-2003-06-12"
+    },
+    {
+      "date": "2003-06-12",
+      "kind": "occupancy",
+      "description": "An existing church stood on the lot.",
+      "source": "sf-planning-commission-minutes-2003-06-12"
+    }
+  ]
+}

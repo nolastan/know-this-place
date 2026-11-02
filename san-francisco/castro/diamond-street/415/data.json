@@ -1,0 +1,180 @@
+{
+  "address": "415 Diamond Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/diamond-street/415/",
+  "apn": "2769029",
+  "block": "2769",
+  "lot": "029",
+  "eas_baseid": "345872",
+  "coordinates": {
+    "lat": 37.755636,
+    "lng": -122.436412
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 3497,
+    "building_area_sqft": 1926,
+    "basement_area_sqft": 783,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Eureka Valley/Dolores Heights",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 0415 DIAMOND             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 495204,
+    "assessed_improvement_value": 620996,
+    "last_sale_date": "1999-08-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200406045548",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-06-04",
+      "status_date": "2004-06-04",
+      "estimated_cost": 110000,
+      "revised_cost": 110000,
+      "description": "increase estimated cost of construction , no increase of scope of work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200311069589",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-11-06",
+      "status_date": "2006-12-06",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "dry rot repair - 100 sq ft. perimeter walls.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200205146488",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2002-05-14",
+      "status_date": "2006-12-06",
+      "estimated_cost": 142000,
+      "revised_cost": 142000,
+      "description": "add & remodel of (e) res. raise ht of house, create living space at storage level",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200103194547",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-03-19",
+      "status_date": "2001-11-19",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "revise permit n columns replaced new roof struc partial n framing w wall no change in ht garden shed",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200008168000",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-08-16",
+      "status_date": "2001-11-19",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "renovat of exist detached garden rm upgrade ex struct and ex elec to current code repl ex wind/door",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9616999",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-09-09",
+      "status_date": "1997-06-11",
+      "estimated_cost": 5400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9023416",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-11-09",
+      "status_date": "1991-01-28",
+      "estimated_cost": 2600,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8614753",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-11-20",
+      "status_date": "1987-01-02",
+      "estimated_cost": 528,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DIAMOND&street_type=ST&address_number=415",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2769029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2769&lot=029",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2769029",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2003-01-09",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 9 January 2003",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/53minutesofsanfran2003san/page/n18/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2003-01-09",
+      "kind": "planning decision",
+      "description": "The City Planning Commission did not take discretionary review and approved as submitted additions to the rear and front of an existing dwelling at 415 Diamond Street.",
+      "source": "sf-planning-commission-minutes-2003-01-09"
+    },
+    {
+      "date": "2003-01-09",
+      "kind": "occupancy",
+      "description": "The property held an existing dwelling, a single-family dwelling.",
+      "source": "sf-planning-commission-minutes-2003-01-09"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "address": "901 Bay Shore Boulevard, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/bay-shore-boulevard/901/unit-208/",
+  "unit": "208",
+  "apn": "5402080",
+  "block": "5402",
+  "lot": "080",
+  "parcel": {
+    "building_area_sqft": 524,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 107635,
+    "assessed_improvement_value": 107635,
+    "last_sale_date": "2020-03-26"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5402080&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5402&unit=208",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

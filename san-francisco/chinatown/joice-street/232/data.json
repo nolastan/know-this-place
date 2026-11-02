@@ -1,0 +1,129 @@
+{
+  "address": "232 Joice Street, San Francisco, CA 94108",
+  "path": "/san-francisco/chinatown/joice-street/232/",
+  "apn": "0224030",
+  "block": "0224",
+  "lot": "030",
+  "eas_baseid": "280296",
+  "coordinates": {
+    "lat": 37.79359,
+    "lng": -122.40842
+  },
+  "parcel": {
+    "lot_area_sqft": 2966,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Residential",
+    "construction_type_code": "NA",
+    "zoning": "RM-4",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Chinatown",
+    "property_location_raw": "0000 0232 JOICE               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 98157
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201111018078",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-11-01",
+      "status_date": "2012-05-22",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "add canopy at (e) walkway at rear of building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200708099261",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-08-09",
+      "status_date": "2007-09-27",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "construction of aluminum self-supporting out-door patio, w/roof cover, concrete slab on grade & column footings in (e) recreation area. the patio will be used as a temporary rain shelter. there is no bldg at this empty lot.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108287049",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2001-08-28",
+      "status_date": "2002-12-03",
+      "estimated_cost": 4000,
+      "description": "construct a new driveway & ramp 3 sets of plan submitted to bsm app 011e-394.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2001–2011",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JOICE&street_type=ST&address_number=232",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0224030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0224&lot=030",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0224030",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2002-04-11",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 11 April 2002",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/52minutesofsanfran2002san/page/n147/mode/1up",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2002-04-18",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 18 April 2002",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/52minutesofsanfran2002san/page/n159/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2002-04-11",
+      "kind": "occupancy",
+      "description": "The property held a vacant paved lot of approximately 3,000 square feet.",
+      "source": "sf-planning-commission-minutes-2002-04-11"
+    },
+    {
+      "date": "2002-04-18",
+      "kind": "planning decision",
+      "description": "The City Planning Commission disapproved the conditional use to convert a vacant paved lot to a non-commercial surface parking lot for adjacent buildings, final action after the April 11, 2002 intent to disapprove.",
+      "source": "sf-planning-commission-minutes-2002-04-18"
+    }
+  ]
+}

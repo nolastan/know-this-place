@@ -1,0 +1,35 @@
+{
+  "address": "330 2nd Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/2nd-avenue/330/unit-2/",
+  "unit": "2",
+  "apn": "1433063",
+  "block": "1433",
+  "lot": "063",
+  "parcel": {
+    "building_area_sqft": 1270,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 472434,
+    "assessed_improvement_value": 472434,
+    "last_sale_date": "2009-09-22"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1433063&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1433&unit=2",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

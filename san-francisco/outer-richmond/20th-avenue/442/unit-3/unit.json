@@ -1,0 +1,35 @@
+{
+  "address": "442 20th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/20th-avenue/442/unit-3/",
+  "unit": "3",
+  "apn": "1525049",
+  "block": "1525",
+  "lot": "049",
+  "parcel": {
+    "building_area_sqft": 984,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 400364,
+    "assessed_improvement_value": 400364,
+    "last_sale_date": "2010-10-28"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1525049&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1525&unit=3",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

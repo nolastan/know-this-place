@@ -1,0 +1,65 @@
+{
+  "address": "139 Randall Street, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/randall-street/139/",
+  "block": "6663",
+  "eas_baseid": "405000",
+  "coordinates": {
+    "lat": 37.739503,
+    "lng": -122.426415
+  },
+  "parcel": {
+    "year_built": 2003,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "NA",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Glen Park",
+    "analysis_neighborhood": "Glen Park",
+    "units": 4
+  },
+  "condominium": {
+    "lots": [
+      "046",
+      "047",
+      "048",
+      "049"
+    ],
+    "method": "Proposed from the 2025 roll for block 6663: every condominium parcel the roll files under 139 RANDALL ST, and the unbroken run of lots beside parcel 6663049 on the same street with the same year built (2003) — street numbers 129, 131, 137, 139. 4 lots, 046–049."
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=RANDALL&street_type=ST&address_number=139",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 6663)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=6663&closed_roll_year=2025",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6663",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2003-05-08",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 8 May 2003",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/53minutesofsanfran2003san/page/n279/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2003-05-08",
+      "kind": "planning decision",
+      "description": "The City Planning Commission took discretionary review and approved a new four-story, two-family dwelling with modifications, including a height reduction to three stories.",
+      "source": "sf-planning-commission-minutes-2003-05-08"
+    }
+  ]
+}

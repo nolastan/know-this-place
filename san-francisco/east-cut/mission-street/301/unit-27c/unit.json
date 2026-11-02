@@ -1,0 +1,47 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-27c/",
+  "unit": "27C",
+  "apn": "3719220",
+  "block": "3719",
+  "lot": "220",
+  "parcel": {
+    "building_area_sqft": 1861,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 899000,
+    "assessed_improvement_value": 899000,
+    "last_sale_date": "2013-03-05"
+  },
+  "permits": [
+    {
+      "number": "201303051517",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-03-05",
+      "status_date": "2013-05-06",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "install new recessed lighting, remove tile & tub from master bathroom, replace tile, shower pan & tub in master bath.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719220&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=27C",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

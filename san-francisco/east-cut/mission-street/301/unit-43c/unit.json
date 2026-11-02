@@ -1,0 +1,52 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-43c/",
+  "unit": "43C",
+  "apn": "3719316",
+  "block": "3719",
+  "lot": "316",
+  "parcel": {
+    "building_area_sqft": 2101,
+    "bedrooms": 2,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1083000,
+    "assessed_improvement_value": 1083000,
+    "last_sale_date": "2011-12-15"
+  },
+  "permits": [
+    {
+      "number": "201112231299",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-12-23",
+      "status_date": "2012-05-01",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "one unit-fill in pass through with new wall, new closet. relocation of (e) door. no bearing walls to be altered",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2011–2012",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719316&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=43C",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

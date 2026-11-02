@@ -1,0 +1,69 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-39b/",
+  "unit": "39B",
+  "apn": "3719291",
+  "block": "3719",
+  "lot": "291",
+  "parcel": {
+    "building_area_sqft": 1652,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 725679,
+    "assessed_improvement_value": 725679,
+    "last_sale_date": "2023-02-17"
+  },
+  "permits": [
+    {
+      "number": "202306129898",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-06-12",
+      "status_date": "2023-06-13",
+      "estimated_cost": 2500,
+      "revised_cost": 4969,
+      "description": "one unit: relocate (7) sprinkler heads, (add1) (remove 1) in one unit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202304216238",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-04-21",
+      "status_date": "2023-11-22",
+      "estimated_cost": 45000,
+      "revised_cost": 51380,
+      "description": "(1) kitchen & (2) & half bathrooms remodel in-kind. (n) wood flooring throughout. (n) led lighting throughout.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201803295047",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-03-29",
+      "status_date": "2018-03-29",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "one unit - ur&r gyp board at flr slab edge. to review fire resistive construction at control wall, heat pump penetrations fire rated demissing walls ferred sofits, opening to be restored to match (e) fire rated construction",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719291&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=39B",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "address": "1525 Ocean Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/ingleside-terraces/ocean-avenue/1525/unit-1/",
+  "unit": "1",
+  "apn": "6936019",
+  "block": "6936",
+  "lot": "019",
+  "parcel": {
+    "building_area_sqft": 1588,
+    "rooms": 7,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 87554,
+    "assessed_improvement_value": 569334
+  },
+  "permits": [
+    {
+      "number": "202508082650",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-08-08",
+      "status_date": "2025-11-04",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "revision 202504104168- to relocate vents on roof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202504104168",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-04-10",
+      "status_date": "2025-11-04",
+      "estimated_cost": 130000,
+      "revised_cost": 130000,
+      "description": "t-mobile: remove (2) (e) antennas, remove (2) (e) cabinets,; install (6)(n) antennas; install (2)(n) cabinets; install (2)(n) randomes; install (1) (n) frp screen; install (12) (n) batteries; install (n) elec breakers.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202310128487",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2023-10-12",
+      "status_date": "2025-02-03",
+      "estimated_cost": 30000,
+      "revised_cost": 0,
+      "description": "one unit: install new frp/radome for antennas, remove (2)(e) antennas/replace w/(6)new antennas; remove (1)(e) cabinet/install (2)new cabinets; remove (4)(e) radios/replace w/(3)new radios, install (3)new hybrid cables.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6936019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6936&unit=1",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

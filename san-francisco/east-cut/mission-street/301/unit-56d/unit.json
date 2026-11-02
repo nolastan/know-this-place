@@ -1,0 +1,68 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-56d/",
+  "unit": "56D",
+  "apn": "3719375",
+  "block": "3719",
+  "lot": "375",
+  "parcel": {
+    "building_area_sqft": 2230,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1304000,
+    "assessed_improvement_value": 1304000,
+    "last_sale_date": "2012-07-20"
+  },
+  "permits": [
+    {
+      "number": "201211013250",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-11-01",
+      "status_date": "2012-11-13",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "56th floor:fire sprinkler only. relocate 4 heads (lower ceiling). add one in closet area for the suite #56d. t.i. app# 201208026422",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201208026422",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2012-08-02",
+      "status_date": "2014-11-26",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "56d: interior renovation to a condo unit -demolish an existing non-bearing wall between library and living room. existing hvac vent, electrical control, and outlet will be relocated. no net increase of floor area or (e) bldg. envelope.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M339747",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-08-02",
+      "status_date": "2012-08-02",
+      "revised_cost": 159,
+      "description": "add one unit to 301 mission street, block 3719 lot 375.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719375&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=56D",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

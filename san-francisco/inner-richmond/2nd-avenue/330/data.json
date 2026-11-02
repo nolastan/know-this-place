@@ -1,0 +1,82 @@
+{
+  "address": "330 2nd Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/2nd-avenue/330/",
+  "block": "1433",
+  "eas_baseid": "303717",
+  "coordinates": {
+    "lat": 37.782528,
+    "lng": -122.459894
+  },
+  "parcel": {
+    "year_built": 2005,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "WOO",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "units": 3
+  },
+  "condominium": {
+    "lots": [
+      "062",
+      "063",
+      "064"
+    ],
+    "method": "Proposed from the 2025 roll for block 1433: every condominium parcel the roll files under 330 02ND AV, and the unbroken run of lots beside parcel 1433062 on the same street with the same year built (2005). 3 lots, 062–064."
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "2005",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=02ND&street_type=AVE&address_number=330",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 1433)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=1433&closed_roll_year=2025",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1433",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1433062",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2001-12-20",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 20 December 2001",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/51minutesofsanfran2001san/page/n440/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "unknowns": [
+    "The roll gives this building's units more than one year built: 2 of them 1907, 1 of them 2005."
+  ],
+  "historical_record": [
+    {
+      "date": "2001-12-20",
+      "kind": "occupancy",
+      "description": "The property held an existing three-story, four-unit apartment building.",
+      "source": "sf-planning-commission-minutes-2001-12-20"
+    }
+  ]
+}

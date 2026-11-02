@@ -1,0 +1,58 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-401/",
+  "unit": "401",
+  "apn": "3719393",
+  "block": "3719",
+  "lot": "393",
+  "parcel": {
+    "building_area_sqft": 1955,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 712250,
+    "assessed_improvement_value": 712250,
+    "last_sale_date": "2018-03-30"
+  },
+  "permits": [
+    {
+      "number": "201304124449",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-04-12",
+      "status_date": "2013-08-23",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "one unit - relocate existing entry door. merging of two units approved by cp-zoc under approved permit appln #201208076804",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201208076804",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-08-07",
+      "status_date": "2013-02-27",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "create opening between one unit and one unit. install pocket door. no structural work.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719393&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=401",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

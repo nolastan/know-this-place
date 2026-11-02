@@ -1,0 +1,57 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-55b/",
+  "unit": "55B",
+  "apn": "3719369",
+  "block": "3719",
+  "lot": "369",
+  "parcel": {
+    "building_area_sqft": 3315,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2440000,
+    "assessed_improvement_value": 2440000,
+    "last_sale_date": "2009-12-31"
+  },
+  "permits": [
+    {
+      "number": "201005031538",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-05-03",
+      "status_date": "2011-03-16",
+      "estimated_cost": 800,
+      "revised_cost": 800,
+      "description": "modify/re-locate 4-sprinler heads of one unit @ 55th. flr. ref. appl. 201003158214",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201003158214",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-03-15",
+      "status_date": "2011-03-16",
+      "estimated_cost": 300000,
+      "revised_cost": 300000,
+      "description": "the millenium. 55th floor. new interior doors, millwork and int. finishes. upgrade elec. and plbg fixtures. title 24 compliance, interior work only. no structural wrok.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719369&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=55B",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

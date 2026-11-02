@@ -1,0 +1,46 @@
+{
+  "address": "203 Geneva Avenue, San Francisco, CA 94134",
+  "path": "/san-francisco/excelsior/geneva-avenue/1828/unit-203/",
+  "apn": "6423195",
+  "block": "6423",
+  "lot": "195",
+  "parcel": {
+    "building_area_sqft": 1093,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 149501,
+    "assessed_improvement_value": 99659,
+    "last_sale_date": "1995-07-11"
+  },
+  "permits": [
+    {
+      "number": "202606102915",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-06-10",
+      "status_date": "2026-06-10",
+      "estimated_cost": 10504,
+      "revised_cost": 10505,
+      "description": "bldg 600- one unit- remove (e) finish and stucco on soffit, remove (e) balcony sheeting and membrane, replace structrual joist per engineer, install propsed balcony sheeting, and install cement modified polimer waterproofing. framing repairs in kind, modified finish.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6423195&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6423&street_number=203",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "address": "124–126 7th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/7th-avenue/124/",
+  "apn": "1366039",
+  "block": "1366",
+  "lot": "039",
+  "eas_baseid": "448507",
+  "coordinates": {
+    "lat": 37.786085,
+    "lng": -122.465394
+  },
+  "address_range": "124–126",
+  "street_numbers_on_parcel": [
+    "124",
+    "126"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2690,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0126 0124 07TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 955896,
+    "assessed_improvement_value": 637260,
+    "last_sale_date": "2003-02-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201107019352",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-07-01",
+      "status_date": "2011-07-29",
+      "estimated_cost": 14031,
+      "revised_cost": 14031,
+      "description": "remove and replace terrazzo on porch to repair dry rot below.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200104207373",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2001-04-20",
+      "status_date": "2002-07-25",
+      "estimated_cost": 200000,
+      "revised_cost": 200000,
+      "description": "remodel mainflr & 2nd flr flats into single 4 bedrm residence-front porch (portion) of rear staircas",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9515763",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-09-25",
+      "status_date": "1996-01-25",
+      "estimated_cost": 5000,
+      "description": "remodel kitchen. counter tops, sink, garbage disp, washer,",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8103458",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1981-04-14",
+      "status_date": "1985-04-10",
+      "estimated_cost": 8000,
+      "description": "addition of bathroom in attic",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=07TH&street_type=AVE&address_number=124",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1366039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1366&lot=039",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1366039",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2001-07-26",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 26 July 2001",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/51minutesofsanfran2001san/page/n179/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2001-07-26",
+      "kind": "planning decision",
+      "description": "The City Planning Commission did not take discretionary review and allowed the merger of the two-unit building into a single-family dwelling, conditioned on constructing a basement unit, 6-0.",
+      "source": "sf-planning-commission-minutes-2001-07-26"
+    },
+    {
+      "date": "2001-07-26",
+      "kind": "occupancy",
+      "description": "An existing two-unit building stood on the site.",
+      "source": "sf-planning-commission-minutes-2001-07-26"
+    }
+  ]
+}

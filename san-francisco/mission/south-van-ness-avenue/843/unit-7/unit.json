@@ -1,0 +1,58 @@
+{
+  "address": "843 South Van Ness Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/south-van-ness-avenue/843/unit-7/",
+  "unit": "7",
+  "apn": "3594098",
+  "block": "3594",
+  "lot": "098",
+  "parcel": {
+    "building_area_sqft": 2018,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 899452,
+    "assessed_improvement_value": 899452,
+    "last_sale_date": "2016-12-14"
+  },
+  "permits": [
+    {
+      "number": "202307242800",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-07-24",
+      "status_date": "2023-09-20",
+      "estimated_cost": 10000,
+      "revised_cost": 28192,
+      "description": "bathroom remodel. replace bathtub: demo (e) tub, valve, surround. install (n) shower pan, valve, acrylic wall. no structural work. no framing modifications.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201607192675",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-07-19",
+      "status_date": "2016-07-27",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "replace 2 sets french doors to roof deck. same size and location.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3594098&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3594&unit=7",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

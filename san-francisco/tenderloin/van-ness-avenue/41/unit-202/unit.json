@@ -1,0 +1,51 @@
+{
+  "address": "77 Van Ness Avenue, San Francisco, CA 94102",
+  "path": "/san-francisco/tenderloin/van-ness-avenue/41/unit-202/",
+  "unit": "202",
+  "apn": "0834148",
+  "block": "0834",
+  "lot": "148",
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 109767,
+    "assessed_improvement_value": 421368
+  },
+  "permits": [
+    {
+      "number": "201112200996",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-12-20",
+      "status_date": "2012-02-21",
+      "estimated_cost": 1000,
+      "revised_cost": 2000,
+      "description": "tenant improvement(vacant space):fire alarm system. extend ununciation circuit to new law office in suite #202., add 4 new horn/strobes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201112130557",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-12-13",
+      "status_date": "2012-05-03",
+      "estimated_cost": 30000,
+      "revised_cost": 80000,
+      "description": "proposed shell improvements to 2nd fl commercial use vacant tenant space of an existing 8 story bldg. improvments include new tenant non bearing partitions from common use corridor and interior office partitions",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0834148&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0834&unit=202",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}
