@@ -1,0 +1,47 @@
+{
+  "address": "16 Jessie Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/jessie-street/16/unit-203/",
+  "unit": "203",
+  "apn": "3708137",
+  "block": "3708",
+  "lot": "137",
+  "parcel": {
+    "building_area_sqft": 1234,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 953813,
+    "assessed_improvement_value": 635875,
+    "last_sale_date": "2021-09-28"
+  },
+  "permits": [
+    {
+      "number": "201502057612",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-02-05",
+      "status_date": "2015-04-23",
+      "estimated_cost": 28000,
+      "revised_cost": 28000,
+      "description": "one unit: remove kitchen cabinet, install new cabinets, counter tops, re-install appliances at same location and pot filler, add 3 light ceiling (recessed lights) & light switches.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3708137&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3708&unit=203",
+      "retrieved": "2026-11-01"
+    }
+  ]
+}

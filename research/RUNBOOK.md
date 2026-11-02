@@ -216,15 +216,18 @@ those makes the scan print re-lottings and block crossings that are artefacts.
 Noise here is worse than silence, because the scan exists so a real lost digit
 stands out.
 
-It then lists **every resolution that landed on a parcel its own method calls a
-condominium unit** — an address that joins to one active parcel while a sibling
-row ("19 A" beside "19") shares that parcel's point with a twin. Nothing
-declines these, because airspace lots of one building look the same; read each
-and mark a unit parcel `unresolved` with `by_hand`. It also lists **every
-resolution onto a parcel with no row on the secured roll** — usually a
-condominium's original lot, which EAS still carries the street number on
-while the building's units sit on `<block>C…` lots; `seed-list` skips these
-silently, so settle them before `manifest`.
+A condominium is no longer a reason to stop (#446): an address on one
+condominium map's units resolves to the building's path, and `seed-list` writes
+the building with a page per unit. It then lists **every resolution that landed
+on one of several parcels sharing a point that are *not* one condominium's
+units** — an address that joins to one active parcel while a sibling row ("19 A"
+beside "19") shares that point with a parcel of another map. Nothing declines
+these, because airspace lots of one building look the same; read each and mark
+a wrong one `unresolved` with `by_hand`. It also lists **every resolution onto a
+parcel with no row on the secured roll** — usually a condominium's original
+lot, which EAS still carries the street number on while the building's units
+sit on `<block>C…` lots; `seed-list` skips these silently, so settle them
+before `manifest` (`seed_pages.py condo <page> --lots …` writes the building).
 
 **`extra.record_date` is the year the *record* was written, and it turns off the
 renumbering guard.** The guard refuses a pre-1910 date resolved on the EAS join
@@ -363,7 +366,8 @@ page. The parcel page keeps only facts about the land as a whole.
 3. **Get the parcel, not just the address.** Join EAS → `parcel_number`, then
    confirm against `sf-parcels` / the assessor roll. Watch for a parcel spanning
    several street numbers (one page, at the lowest number, titled with the
-   range) and for condominium APNs (units, not buildings). Rules: root
+   range) and for condominium APNs (units, not buildings: the fact goes on the building,
+   which lists its units). Rules: root
    [AGENTS.md](../AGENTS.md) → "Directory contract".
 4. **Set `path`** to where the fact belongs — an existing page, or the page that
    would exist. Step 4 needs to know which.

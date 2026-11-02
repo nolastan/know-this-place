@@ -433,8 +433,13 @@ nothing else; the markup here is what to expect, not what to type:
   and fails on the pull request. Rebuild it with
   `python3 research/tools/check.py --index` alongside the other derived
   indexes.
-- **A parcel the seeder refuses is not a page to force.** It skips condominium
-  units and parcels with no row on the current roll, and prints the reason for
+- **A condominium is a building page, not a refusal (#446).** The resolver
+  files a fact on a condominium unit at the building's path, and `seed-list`
+  writes the building with a page per unit. Facts go on the building's
+  `data.json`; a unit page carries only roll and permit data.
+- **A parcel the seeder refuses is not a page to force.** It skips parcels
+  with no row on the current roll, and a condominium whose units another page
+  already documents, and prints the reason for
   each. That is the site's rule about what may be a page, and it outranks the
   story: leave the finding at `publish.status: "pending"` with the seeder's
   reason in the note, and it stays in the items file as a fact with nowhere

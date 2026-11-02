@@ -366,6 +366,14 @@ corbett-avenue/655/
   --method "…"` where the proposal is wrong — 150 Lombard Street's run takes
   in the three other buildings of its complex. Re-running `condo` on a
   building refreshes every unit from the roll and DBI and keeps the lots.
+- **Findings on a condominium resolve to the building (#446).** Where an
+  address's point falls on several parcels that share one `mapblklot` and
+  are mostly condominiums on the roll, `resolve_eas.py` takes the lowest
+  unit and files the fact at the building's path; a lone unit parcel the
+  roll names as one does the same. `manifest` lists it with
+  `status: "condo-unit"`, and `seed-list` writes the building and its units
+  as `condo` would. It refuses, and seeds nothing, where the proposed lots
+  include a unit another page already documents.
 - **The building has no `apn`, `lot` or `assessment`.** Its assessed value is
   its units' sum, read off the unit pages at render time (`condo_view`), so
   no figure is stated twice. Its `parcel` keeps only what every unit shares:
@@ -564,8 +572,8 @@ python3 scripts/validate.py
 ```
 
 `seed` joins the five datasets in [DATA-SOURCES.md](DATA-SOURCES.md), decides
-which parcels may become pages (skipping condominium units and parcels with no
-assessor record), writes `data.json` + `index.html` for each **new** one, and
+which parcels may become pages (skipping condominium units, which `condo`
+pages as one building, and parcels with no assessor record), writes `data.json` + `index.html` for each **new** one, and
 rebuilds the street hub pages beneath the neighborhood. It varies each page's
 composition from the data it actually has — a parcel with a timeline, public
 art or prose gets the two-column split, its panels in the aside; a parcel with
