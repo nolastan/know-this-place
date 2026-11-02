@@ -1,0 +1,106 @@
+{
+  "address": "2231 Noriega Street, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/noriega-street/2231/",
+  "apn": "2066028",
+  "block": "2066",
+  "lot": "028",
+  "eas_baseid": "327460",
+  "coordinates": {
+    "lat": 37.75349,
+    "lng": -122.487728
+  },
+  "parcel": {
+    "year_built": 1939,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2325,
+    "building_area_sqft": 1831,
+    "lot_depth_ft": 93,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2231 NORIEGA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 416591,
+    "assessed_improvement_value": 245226,
+    "last_sale_date": "1988-07-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1939",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9824147S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1998-11-23",
+      "status_date": "2000-01-10",
+      "estimated_cost": 30000,
+      "revised_cost": 68000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NORIEGA&street_type=ST&address_number=2231",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2066028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2066&lot=028",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2066028",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1999-03-18",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 18 March 1999",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/46minutesofsanfran1999san/page/n97/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1999-03-18",
+      "kind": "planning decision",
+      "description": "The City Planning Commission took no discretionary review of the proposal to construct a two-story horizontal addition to the rear of the dwelling, 4-0.",
+      "source": "sf-planning-commission-minutes-1999-03-18"
+    },
+    {
+      "date": "1999-03-18",
+      "kind": "occupancy",
+      "description": "An existing dwelling stood on the lot.",
+      "source": "sf-planning-commission-minutes-1999-03-18"
+    }
+  ]
+}

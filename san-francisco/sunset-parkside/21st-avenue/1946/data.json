@@ -1,0 +1,150 @@
+{
+  "address": "1946 21st Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/21st-avenue/1946/",
+  "apn": "2114032",
+  "block": "2114",
+  "lot": "032",
+  "eas_baseid": "329471",
+  "coordinates": {
+    "lat": 37.751371,
+    "lng": -122.478091
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 1,
+    "stories": 3,
+    "rooms": 16,
+    "bathrooms": 5,
+    "bedrooms": 7,
+    "lot_area_sqft": 3180,
+    "building_area_sqft": 3046,
+    "basement_area_sqft": 676,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1946 21ST                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 939684,
+    "assessed_improvement_value": 511764,
+    "last_sale_date": "2008-01-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201602179760",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-02-17",
+      "status_date": "2016-09-02",
+      "estimated_cost": 78000,
+      "revised_cost": 88000,
+      "description": "1st floor - add a family room, two bedrooms, and two full bathrooms.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200803217775",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-03-21",
+      "status_date": "2008-04-04",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "this application is to remodel the bathroom on the 2nd floor. the tiles will be changed. the bathtub will be replaced with a jacuzzi. the toilet will be changed and be moved 2\"-4\" because the jacuzzi is wider than the old bathtub by about that margin.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200112195595",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2001-12-19",
+      "status_date": "2002-04-18",
+      "estimated_cost": 8000,
+      "revised_cost": 16000,
+      "description": "firescape",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "20000121665",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2000-01-21",
+      "status_date": "2002-04-18",
+      "estimated_cost": 120000,
+      "revised_cost": 120000,
+      "description": "new 3rd story addition, 3 bedrooms, 2 baths, new stairs to 3rd story.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9414494",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-09-08",
+      "status_date": "1995-03-21",
+      "estimated_cost": 3000,
+      "description": "repl 10 alum windows in exist frame in bedrm & bathrm.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=AVE&address_number=1946",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2114032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2114&lot=032",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2114032",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2000-06-15",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 15 June 2000",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/48minutesofsanfran2000san/page/n226/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2000-06-15",
+      "kind": "planning decision",
+      "description": "The City Planning Commission approved adding a third story to the two-story house, 4-0.",
+      "source": "sf-planning-commission-minutes-2000-06-15"
+    },
+    {
+      "date": "2000-06-15",
+      "kind": "occupancy",
+      "description": "An existing two-story house stood at the site.",
+      "source": "sf-planning-commission-minutes-2000-06-15"
+    }
+  ]
+}

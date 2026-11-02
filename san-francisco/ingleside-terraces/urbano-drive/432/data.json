@@ -1,0 +1,151 @@
+{
+  "address": "432 Urbano Drive, San Francisco, CA 94127",
+  "path": "/san-francisco/ingleside-terraces/urbano-drive/432/",
+  "apn": "6916006",
+  "block": "6916",
+  "lot": "006",
+  "eas_baseid": "408469",
+  "coordinates": {
+    "lat": 37.723992,
+    "lng": -122.470127
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 2,
+    "lot_area_sqft": 6555,
+    "building_area_sqft": 1985,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Ingleside Terrace",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0432 URBANO              DR0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 382733,
+    "assessed_improvement_value": 774309,
+    "last_sale_date": "1997-04-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Ingleside Terrace Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1910–1930",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201608044202",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-08-04",
+      "status_date": "2018-10-17",
+      "estimated_cost": 1,
+      "revised_cost": 8000,
+      "description": "revision to permit 201510220467; repair and replace exterior stucco at all sides of residence. new stucco finish to be harnd-troweled, smooth finish.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201510220467",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-10-22",
+      "status_date": "2018-10-29",
+      "estimated_cost": 170000,
+      "revised_cost": 317290,
+      "description": "remodel interior of house and replace all single pane windows. new windows at front to match (e) style and material. replace furnace and w/h. remodel ground flor and create 834 sf of new habitable space remodel 2 bedrooms, 1 bathroom and family room. construct new stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200002071232",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2000-02-07",
+      "status_date": "2015-12-02",
+      "estimated_cost": 200000,
+      "revised_cost": 200000,
+      "description": "horizontal addition at the rear yard and a vertical addition over extg 1 story",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9701673",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-01-29",
+      "status_date": "1997-05-29",
+      "estimated_cost": 4500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=URBANO&street_type=DR&address_number=432",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6916006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6916&lot=006",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6916006",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.47012697362875%2037.72399167026219)%27)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2000-08-24",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 24 August 2000",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/48minutesofsanfran2000san/page/n530/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2000-08-24",
+      "kind": "planning decision",
+      "description": "The City Planning Commission did not take discretionary review and approved constructing a new second-story vertical addition and a one-story rear horizontal addition to an existing one-story single-family dwelling, 4-0.",
+      "source": "sf-planning-commission-minutes-2000-08-24"
+    },
+    {
+      "date": "2000-08-24",
+      "kind": "occupancy",
+      "description": "An existing one-story single-family dwelling stood on the site.",
+      "source": "sf-planning-commission-minutes-2000-08-24"
+    }
+  ]
+}

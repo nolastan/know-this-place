@@ -1,0 +1,135 @@
+{
+  "address": "618 16th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/outer-richmond/16th-avenue/618/",
+  "apn": "1629036",
+  "block": "1629",
+  "lot": "036",
+  "eas_baseid": "311331",
+  "coordinates": {
+    "lat": 37.776339,
+    "lng": -122.47445
+  },
+  "parcel": {
+    "year_built": 1917,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 3187.5,
+    "building_area_sqft": 2100,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0618 16TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 90576,
+    "assessed_improvement_value": 181180
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1917",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201508144301",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-14",
+      "status_date": "2015-08-20",
+      "estimated_cost": 8900,
+      "revised_cost": 8900,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200304142177",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2003-04-14",
+      "status_date": "2004-12-31",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "addition to 2nd flr bedrm of bathrm & add space over 1st flr roof deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9900828",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1999-01-13",
+      "status_date": "2001-04-14",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "rear second floor addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9314447",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-08-24",
+      "status_date": "1993-12-24",
+      "estimated_cost": 4850,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=16TH&street_type=AVE&address_number=618",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1629036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1629&lot=036",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1629036",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2000-01-20",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 20 January 2000",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/47minutesofsanfran2000san/page/n54/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2000-01-20",
+      "kind": "planning decision",
+      "description": "The City Planning Commission took discretionary review and approved a second-floor addition at the existing roof deck above the first floor at the rear of a two-story-over-garage single-family dwelling, 6-0.",
+      "source": "sf-planning-commission-minutes-2000-01-20"
+    },
+    {
+      "date": "2000-01-20",
+      "kind": "occupancy",
+      "description": "A two-story-over-garage single-family dwelling stood on the site.",
+      "source": "sf-planning-commission-minutes-2000-01-20"
+    }
+  ]
+}

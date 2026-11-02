@@ -1,0 +1,140 @@
+{
+  "address": "583 Corbett Avenue, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/corbett-avenue/583/",
+  "apn": "2717110",
+  "block": "2717",
+  "lot": "110",
+  "eas_baseid": "485167",
+  "coordinates": {
+    "lat": 37.757191,
+    "lng": -122.443556
+  },
+  "parcel": {
+    "year_built": 2002,
+    "stories": 3,
+    "rooms": 7,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2078,
+    "building_area_sqft": 3833,
+    "basement_area_sqft": 840,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Twin Peaks",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0583 CORBETT             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2447675,
+    "assessed_improvement_value": 1049003,
+    "last_sale_date": "2021-11-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "2002",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "S20260908738",
+      "status": "issued",
+      "filed": "2026-09-21",
+      "status_date": "2026-10-19",
+      "revised_cost": 500,
+      "description": "solar permit: ballasted: n, including 1 energy storage unit, of 600 vac, with 13.5 kwh each in capacity, ess units will not be closer than 3 feet | revision - s20260421572 added e-stop on the site plan to prevent inspection failures for sfpd. sheet 2,3,5,6,7,8 up",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "S20260421572",
+      "status": "issued",
+      "filed": "2026-04-21",
+      "status_date": "2026-06-23",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "solar permit: revision changes permit e202512187850 in order to pass fire inspection new ac disconnect for the existing pv system a",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200202149271",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-02-14",
+      "status_date": "2002-08-16",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision for approved app 200111163428 for change in piping, layout of sprinkler system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200111163428",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-11-16",
+      "status_date": "2002-08-16",
+      "estimated_cost": 9800,
+      "revised_cost": 9800,
+      "description": "design & install fire sprinkler system for entire bldng as per city code requirement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200005250966",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "2000-05-25",
+      "status_date": "2002-08-16",
+      "estimated_cost": 380000,
+      "revised_cost": 428000,
+      "description": "erect a four story single family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CORBETT&street_type=AVE&address_number=583",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2717110&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2717&lot=110",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2717110",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2000-12-07",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 7 December 2000",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/49minutesofsanfran2000san/page/n336/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2000-12-07",
+      "kind": "occupancy",
+      "description": "Two vacant lots stood on the property.",
+      "source": "sf-planning-commission-minutes-2000-12-07"
+    }
+  ]
+}

@@ -6,9 +6,9 @@
 >
 > - **Kind:** meeting minutes (scanned volumes) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 39 of 52 volumes read (July 1968 – December 1980, and
->   1994 – 1998): 11,378 pages, 4,840 findings, 2,625 resolved, 2,480 published.
->   13 volumes remain — 1999 – 2005. July–December 1975 is in no
+> - **Coverage:** 43 of 52 volumes read (July 1968 – December 1980, and
+>   1994 – 2000): 12,425 pages, 5,840 findings, 3,319 resolved, 3,124 published.
+>   9 volumes remain — 2001 – 2005. July–December 1975 is in no
 >   volume, nor is the regular meeting of 16 March 1978; volume 37
 >   holds only 17 of June – November 1978's meetings, volume 38 only
 >   34 of 1979's, volume 39 has no record of 7 February or 14 August 1980,
@@ -60,7 +60,9 @@
 | 43 | January – June 1997 (`volume` "Jan-June 1997") | **read in full** 2026-10-28; 24 regular meetings, 9 January – 26 June, action minutes, plus seven joint hearings; none minuted for 2 or 30 January or 29 May |
 | 44 | July – December 1997 (`volume` "July-Dec 1997") | **read in full** 2026-10-30; 19 regular meetings, 10 July – 18 December, action minutes, two closed sessions and one joint hearing; none minuted for 3 or 31 July, 2 or 30 October, 27 November or 25 December, and 11 September cancelled |
 | 45 | 1998 (`volume` "1998") | **read in full** 2026-10-31; 47 regular meetings, 8 January – 17 December, action minutes, plus nine joint and special hearings; regular meetings cancelled for 1 and 29 January, 30 April, 2 and 30 July, 29 October, 26 November, 24 and 31 December |
-| 46–58 | 1999 – 2005 | unread; 47 is January – April 2000 |
+| 46 | 1999 (`volume` "1999") | **read in full** 2026-11-02 by an external reader; 44 meetings, 7 January – 16 December; cancelled 8 and 29 April, 1 and 29 July, 30 September, 11 and 25 November, 23 and 30 December |
+| 47–49 | January – April, May – August, September – December 2000 | **read in full** 2026-11-02 by an external reader; 44 meeting days, 6 January – 7 December, with three joint hearings with the Redevelopment Agency Commission; volume 49 holds no minutes of 14 or 21 December |
+| 50–58 | 2001 – 2005 | unread; 50 is January – April 2001 |
 | — | 1981–1993 | in no volume |
 | — | before July 1968 | not in this collection. The Commission dates from 1942 |
 
@@ -501,7 +503,34 @@
   findings, 153 on pages). Size by text pages: volume 40 was 199 text pages
   (486,000 characters) and one nightly run for a single reader with time to
   spare; a later volume of up to about 400 text pages should also fit.
-- **Verified:** **2026-10-31** (volume 45, 1998: 414 OCR pages with text
+- **Verified:** **2026-11-02** (volumes 46–49, 1999 and 2000: 1,047 OCR
+  pages with text out of 1,816 viewer pages, read by an external reader —
+  Meta Muse, a web agent with no access to this repository — from a written
+  spec, returning JSON Lines per finding plus a coverage line per volume;
+  then converted, page-located, resolved and published in one session here.
+  88 meetings; 1,000 findings — 541 decisions, 446 statements of what stood
+  on or occupied a property, 10 landmark actions, 3 dated past facts. 694
+  resolved, 306 unresolved: 154 units of condominium buildings with no page
+  yet (they need `seed_pages.py condo` before they can be placed; #446
+  routes them, but seed-list skips a unit with no roll row of its own), and
+  the rest condominiums split, ranges across parcels, numbers EAS does not
+  hold, or projects named without a number. 644 published on 392 pages, 163
+  of them seeded; 50 declined — 40 occupancies that said only "an existing
+  building stood on the site", and ten repeats or ambiguities (an appeal of a
+  negative declaration printed only as "Approved"). Two by hand: 501 Tunnel
+  Avenue, whose printed block 4991 is not the parcel EAS joins (5104), and
+  650 Fourth Street, whose condominium unit is not the existing page's
+  parcel. What the pass learned: an external reader working from the
+  one-file `_djvu.txt` cannot cite a page, but its case number, meeting date
+  and verbatim quote place one mechanically in the hOCR page split — 976 of
+  1,000 quotes matched a page of the right meeting exactly; the running
+  page header ("San Francisco Planning Commission May 11, 2000") dates a
+  page when the first-page header is missing, and its OCR ("Mav", "May 1 1")
+  needs a forgiving pattern; a reader that writes "The Commission approved"
+  wants "The City Planning Commission" on the page; and Muse's bare
+  "approved the item" descriptions, written where the minutes print only
+  ACTION: Approved, need the request clause put back before publishing.)
+  **2026-10-31** (volume 45, 1998: 414 OCR pages with text
   out of 592 viewer pages (594 scanned leaves), read in one session by a
   single reader with no sub-agents; 47 regular meetings, 8 January to 17
   December. 246 findings — 214 decisions (three of them Board of Supervisors

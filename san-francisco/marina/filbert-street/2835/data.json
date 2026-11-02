@@ -1,0 +1,171 @@
+{
+  "address": "2835 Filbert Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/filbert-street/2835/",
+  "apn": "0948020",
+  "block": "0948",
+  "lot": "020",
+  "eas_baseid": "291190",
+  "coordinates": {
+    "lat": 37.796399,
+    "lng": -122.446175
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 1,
+    "stories": 3,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 3641,
+    "building_area_sqft": 2366,
+    "basement_area_sqft": 350,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "NA",
+    "zoning": "RH-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Cow Hollow",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 2835 FILBERT             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 94228,
+    "assessed_improvement_value": 316058
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Cow Hollow First Bay Tradition Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1888–1914",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200607146578",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-07-14",
+      "status_date": "2006-12-04",
+      "estimated_cost": 800,
+      "revised_cost": 800,
+      "description": "replace 5'x7' brick at top of stair due to water landing @ front of building. leakage replace in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200003285610",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-03-28",
+      "status_date": "2000-04-21",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "added fire parapet wall at adjacent house",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9916322",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-08-09",
+      "status_date": "2000-04-21",
+      "estimated_cost": 1,
+      "description": "rev to 9914782",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9914782",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-07-20",
+      "status_date": "2000-04-21",
+      "estimated_cost": 14500,
+      "description": "revise pa#9818622-replace retaining wall & footing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9818622",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1998-09-16",
+      "status_date": "2000-04-21",
+      "estimated_cost": 50000,
+      "description": "rear addition 2 bedrooms - horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9615715",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-08-23",
+      "status_date": "1996-12-23",
+      "estimated_cost": 3570,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FILBERT&street_type=ST&address_number=2835",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0948020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0948&lot=020",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0948020",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44617542834581%2037.796398529816614)%27)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1999-01-28",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 28 January 1999",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/46minutesofsanfran1999san/page/n40/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1999-01-28",
+      "kind": "planning decision",
+      "description": "The City Planning Commission took no discretionary review and approved as proposed the addition to the existing two-story single-family dwelling, 5-0.",
+      "source": "sf-planning-commission-minutes-1999-01-28"
+    },
+    {
+      "date": "1999-01-28",
+      "kind": "occupancy",
+      "description": "An existing two-story single-family dwelling stood on the lot.",
+      "source": "sf-planning-commission-minutes-1999-01-28"
+    }
+  ]
+}

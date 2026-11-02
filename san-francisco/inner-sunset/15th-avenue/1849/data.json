@@ -1,0 +1,184 @@
+{
+  "address": "1849 15th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/15th-avenue/1849/",
+  "apn": "2052A005D",
+  "block": "2052A",
+  "lot": "005D",
+  "eas_baseid": "326724",
+  "coordinates": {
+    "lat": 37.753524,
+    "lng": -122.472419
+  },
+  "parcel": {
+    "year_built": 1938,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 4203,
+    "building_area_sqft": 1826,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Golden Gate Heights",
+    "analysis_neighborhood": "Inner Sunset",
+    "property_location_raw": "0000 1849 15TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 470304,
+    "assessed_improvement_value": 441204,
+    "last_sale_date": "1998-10-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1938",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200612260513",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-12-26",
+      "status_date": "2007-04-11",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200110312168",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-10-31",
+      "status_date": "2002-02-04",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renewal:9908742s, 9902802 & 9913577 for final inpsection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200006192974",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-06-19",
+      "status_date": "2002-02-04",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renewal of application 9902802",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200006192971",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-06-19",
+      "status_date": "2002-02-04",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renewal of application 9913577",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9908742S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2000-05-18",
+      "status_date": "2002-02-01",
+      "estimated_cost": 85000,
+      "revised_cost": 85000,
+      "description": "partial vertical addition, on rear portion of sigl fam dwel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9913577",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-07-02",
+      "status_date": "2002-02-04",
+      "estimated_cost": 5000,
+      "description": "revision to pa#9902802",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9902802",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1999-02-11",
+      "status_date": "2002-02-04",
+      "estimated_cost": 50000,
+      "description": "kitchen and bathroom remodeling, garage door, switch",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9516417",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-10-04",
+      "status_date": "1996-05-17",
+      "estimated_cost": 7920,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 9,
+    "range": "1995–2015",
+    "shown_on_page": 8,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=15TH&street_type=AVE&address_number=1849",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2052A005D&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2052A&lot=005D",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2052A005D",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1999-10-28",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 28 October 1999",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/46minutesofsanfran1999san/page/n430/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1999-10-28",
+      "kind": "planning decision",
+      "description": "The City Planning Commission took no discretionary review, approving as proposed a 700-square-foot partial vertical addition to the rear of the existing dwelling, 6-0.",
+      "source": "sf-planning-commission-minutes-1999-10-28"
+    },
+    {
+      "date": "1999-10-28",
+      "kind": "occupancy",
+      "description": "An existing dwelling stood on the lot.",
+      "source": "sf-planning-commission-minutes-1999-10-28"
+    }
+  ]
+}

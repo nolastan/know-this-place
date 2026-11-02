@@ -1,0 +1,121 @@
+{
+  "address": "585 Laidley Street, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/laidley-street/585/",
+  "apn": "6727025",
+  "block": "6727",
+  "lot": "025",
+  "eas_baseid": "406020",
+  "coordinates": {
+    "lat": 37.735022,
+    "lng": -122.432162
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 1498,
+    "building_area_sqft": 983,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Glen Park",
+    "analysis_neighborhood": "Glen Park",
+    "property_location_raw": "0000 0585 LAIDLEY             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 399467,
+    "assessed_improvement_value": 466305
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200205106303",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-05-10",
+      "status_date": "2003-01-15",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "as built conditions during construction under pa#9923677s, s1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9923677S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1999-11-05",
+      "status_date": "2003-01-15",
+      "estimated_cost": 75000,
+      "revised_cost": 125000,
+      "description": "add one story of occupancy onto (e) 2 story structure enlarge bath rmd kitch rmv gar post,widen g dr",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LAIDLEY&street_type=ST&address_number=585",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6727025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6727&lot=025",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6727025",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2000-05-18",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 18 May 2000",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/48minutesofsanfran2000san/page/n106/mode/1up",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2000-08-03",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 3 August 2000",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/48minutesofsanfran2000san/page/n408/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2000-05-18",
+      "kind": "occupancy",
+      "description": "An existing two-story single-family residence stood on the site.",
+      "source": "sf-planning-commission-minutes-2000-05-18"
+    },
+    {
+      "date": "2000-08-03",
+      "kind": "planning decision",
+      "description": "The City Planning Commission took discretionary review and approved the project as revised, adding a third-story addition on an existing two-story single-family residence, 6-0.",
+      "source": "sf-planning-commission-minutes-2000-08-03"
+    }
+  ]
+}
