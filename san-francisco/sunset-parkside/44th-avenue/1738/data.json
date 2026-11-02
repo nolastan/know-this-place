@@ -1,0 +1,119 @@
+{
+  "address": "1738 44th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/44th-avenue/1738/",
+  "apn": "2006022",
+  "block": "2006",
+  "lot": "022",
+  "eas_baseid": "324766",
+  "coordinates": {
+    "lat": 37.75418,
+    "lng": -122.503012
+  },
+  "parcel": {
+    "year_built": 1939,
+    "units": 1,
+    "stories": 1,
+    "rooms": 10,
+    "bathrooms": 2,
+    "bedrooms": 6,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2054,
+    "basement_area_sqft": 178,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1738 44TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 37721,
+    "assessed_improvement_value": 217849
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Manual change by Planning staff",
+    "yearbuilt": "1939",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9801485S",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1998-01-28",
+      "status_date": "1998-09-02",
+      "estimated_cost": 32000,
+      "description": "master bdrm addition at rear w/mstr bth/to comply w/viltn",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8403629",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-04-06",
+      "status_date": "1985-07-11",
+      "estimated_cost": 2000,
+      "description": "reinforced concrete footing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8401969",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-02-23",
+      "status_date": "1985-07-11",
+      "estimated_cost": 28000,
+      "description": "construct addtion to exist. bldg. 2 story patio, two story .",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=44TH&street_type=AVE&address_number=1738",
+      "retrieved": "2026-10-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2006022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2006&lot=022",
+      "retrieved": "2026-10-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2006022",
+      "retrieved": "2026-10-31"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1998-06-11",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 11 June 1998",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/45minutesofsanfran1998san/page/n254/mode/1up",
+      "retrieved": "2026-10-31"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1998-06-11",
+      "kind": "planning decision",
+      "description": "On discretionary review, the City Planning Commission required, 5-0, staff's modifications to a permit legalizing a two-storey rear addition and extending the house for a master bedroom.",
+      "source": "sf-planning-commission-minutes-1998-06-11"
+    }
+  ]
+}
