@@ -1,0 +1,46 @@
+{
+  "address": "999 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/green-street/999/unit-2503/",
+  "unit": "2503",
+  "apn": "0127106",
+  "block": "0127",
+  "lot": "106",
+  "parcel": {
+    "building_area_sqft": 910,
+    "rooms": 3,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 306247,
+    "assessed_improvement_value": 296668,
+    "last_sale_date": "1988-03-21"
+  },
+  "permits": [
+    {
+      "number": "202102023792",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-02-02",
+      "status_date": "2021-07-28",
+      "estimated_cost": 27000,
+      "revised_cost": 27000,
+      "description": "one bathroom remodel. (e) bathtub to be replaced with showerstall. provide plumbing, waterproofing and tile for new shower. install new toilet, new led recessed lighting. maintain 1 hr separation b/t units. no structural work. no change in layout of walls and openings.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0127106&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127&unit=2503",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

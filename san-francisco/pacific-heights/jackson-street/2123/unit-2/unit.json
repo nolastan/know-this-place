@@ -1,0 +1,77 @@
+{
+  "address": "2121 Jackson Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/jackson-street/2123/unit-2/",
+  "unit": "2",
+  "apn": "0603036",
+  "block": "0603",
+  "lot": "036",
+  "parcel": {
+    "building_area_sqft": 1762,
+    "rooms": 5,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1347627,
+    "assessed_improvement_value": 898418,
+    "last_sale_date": "2020-08-13"
+  },
+  "permits": [
+    {
+      "number": "201204208848",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-04-20",
+      "status_date": "2012-10-15",
+      "estimated_cost": 27500,
+      "revised_cost": 27500,
+      "description": "remodel 2 bathrooms, one in kind with all new fixture. 2nd bath move toilet to achive 30' space and relocate lavi and relocate bath door all new tile valves and finishes on the 3rd floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200802255443",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-02-25",
+      "status_date": "2008-06-04",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "kitchen remodel, remove & replace flourecent light, new exterior door & windows, new cork floors, windows & door (back of the house) not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9122663",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-11-27",
+      "status_date": "1992-12-16",
+      "estimated_cost": 20000,
+      "description": "reface kitchen cabinets replace tile in bathrooms smoke detr",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9113947",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-08-06",
+      "status_date": "1991-08-26",
+      "estimated_cost": 2550,
+      "description": "repair bases of partition walls, etc.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0603036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0603&unit=2",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

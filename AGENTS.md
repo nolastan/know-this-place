@@ -120,6 +120,8 @@ san-francisco/                        city
       4127/                            "collingwood-street")
         data.json                     structured facts + prose + sources
         assets/                       openly licensed media only (optional)
+        unit-905/                     a condominium unit, under its building
+          unit.json                   the unit's roll facts and permits
     mission-dolores-park/             place — a park, plaza or place in a park
       place.json                      its facts + sources, as data.json is
   historic-districts/                 the one page type off the tree
@@ -133,10 +135,13 @@ site is built, not
 committed](REFERENCE.md#the-site-is-built-not-committed).
 
 - **One page per building — which means one page per parcel, not per street
-  number.** Units are documented within their building's page. A parcel
-  spanning several street numbers gets one page under its lowest number; a
-  condominium unit gets none. Both traps, and the directory naming rules, are
-  in [REFERENCE.md → One page per building](REFERENCE.md#one-page-per-building).
+  number.** A parcel spanning several street numbers gets one page under its
+  lowest number. A condominium building, which has no parcel of its own, gets
+  one page at its address that lists its units, and each unit parcel a
+  sub-page, `<number>/unit-<unit>/`, rendered from `unit.json`. Both traps,
+  and the directory naming rules, are in
+  [REFERENCE.md → One page per building](REFERENCE.md#one-page-per-building)
+  and [Condominium buildings](REFERENCE.md#condominium-buildings).
 - **Historic districts are the fourth page type**, at city level rather than
   under a neighborhood, and their hubs are generated. See
   [REFERENCE.md → Historic districts](REFERENCE.md#historic-districts).

@@ -1,0 +1,47 @@
+{
+  "address": "355 Buena Vista Avenue, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/buena-vista-avenue/355/unit-504w/",
+  "unit": "504W",
+  "apn": "2607178",
+  "block": "2607",
+  "lot": "178",
+  "parcel": {
+    "building_area_sqft": 1103,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 504011,
+    "assessed_improvement_value": 504011,
+    "last_sale_date": "2002-10-11"
+  },
+  "permits": [
+    {
+      "number": "200210280033",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-10-28",
+      "status_date": "2002-11-18",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "#504- replace lighting cans, install washing machine hook-up",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2607178&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2607&unit=504W",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

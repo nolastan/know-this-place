@@ -68,10 +68,13 @@
         "note": "Declined for the same reason as 1174 Folsom, and more firmly. The building is the backdrop of the story's photograph — the exact example news/AGENTS.md gives of a mention that gives a page nothing — and the passage about it is a profile of the residents: a named tenant, her age, her disability, her housing history. Nothing in that may reach a page, and what is left once it is removed is a headline about legislation. Neither the count of residents nor their ages is recorded above."
       },
       "resolution": {
-        "status": "unresolved",
-        "checked_on": "2026-09-04",
-        "method": "sf-eas-addresses has 42 OTIS ST but it does not join to one parcel. 42 OTIS ST's coordinates fall in 20 active parcels (3505080, 3505055, 3505075, 3505076…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-        "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+        "status": "resolved",
+        "apn": "3505055",
+        "path": "/san-francisco/mission/otis-street/42/",
+        "eas_address": "42 OTIS ST",
+        "method": "EAS exact match on 42 OTIS ST → parcel 3505055; sf-parcels has blklot 3505055 active; the 2025 roll records it as commercial retail, built 2022. Parcel 3505055 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0201 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 42 OTIS ST's coordinates fall in 20 active parcels, one condominium map's units on the 2025 roll; 3505055 stands for the building.",
+        "checked_on": "2026-11-02",
+        "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
       }
     }
   ]

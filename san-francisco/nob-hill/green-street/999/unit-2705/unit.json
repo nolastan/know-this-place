@@ -1,0 +1,45 @@
+{
+  "address": "999 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/green-street/999/unit-2705/",
+  "unit": "2705",
+  "apn": "0127118",
+  "block": "0127",
+  "lot": "118",
+  "parcel": {
+    "building_area_sqft": 1042,
+    "rooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 21684,
+    "assessed_improvement_value": 196813
+  },
+  "permits": [
+    {
+      "number": "202402125694",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-02-12",
+      "status_date": "2024-02-29",
+      "estimated_cost": 550,
+      "revised_cost": 550,
+      "description": "one unit- add wood soffit at entry hall measuring 8\" wide x 3.5\" deep x 3' long, wood soffit at bredroom hallway 4\" x 3.5\" deep x 6' long and wood soffit at bedroom 8\" wide x 3.5\" deep x 3' long.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0127118&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127&unit=2705",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

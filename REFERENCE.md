@@ -336,10 +336,66 @@ pages.
   create a separate page per number, and never treat the shared permits as
   separate events.
 - **Condominium parcels are the reverse trap**: each unit has its own APN, and
-  the assessor reports `0` lot area and `0` stories for it. Those are *units*,
-  not buildings — do not give each one a page. Documenting a condo building
-  means establishing which parcels belong to it, which the datasets here don't
-  state directly; until that's resolved, skip them and flag it for a human.
+  the assessor reports `0` lot area and `0` stories for it. A unit parcel is
+  never the building's page. The building gets one anyway, as a hub of its
+  units — see [Condominium buildings](#condominium-buildings) below. The
+  roll's `property_location` names the unit in its last field (`ST1903`); a
+  whole parcel reads `0000`.
+
+### Condominium buildings
+
+**A condominium building has no parcel of its own, and it still gets one
+page**, at its address like any building, with **a sub-page per unit** one
+level down (issue #228). The building page is a hub: its own facts, and a grid
+linking every unit.
+
+```
+corbett-avenue/655/
+  data.json            the building: name, history, residents, year built,
+                       `condominium.lots`, and permits naming no unit
+  unit-105/unit.json   one unit: floor area, rooms, assessed value, last
+                       sale, and the permits that name it
+```
+
+- **`condominium.lots` is the judgement**, with `condominium.method` saying
+  how it was made: which unit parcels on the block are this building. The
+  datasets don't state it. `python3 scripts/seed_pages.py condo <page>`
+  proposes it from the roll (every condominium parcel filed under the
+  building's number, plus the unbroken run of lots beside it on the same
+  street with the same year built). Correct it with `--lots 005,006,…
+  --method "…"` where the proposal is wrong — 150 Lombard Street's run takes
+  in the three other buildings of its complex. Re-running `condo` on a
+  building refreshes every unit from the roll and DBI and keeps the lots.
+- **Findings on a condominium resolve to the building (#446).** Where an
+  address's point falls on several parcels that share one `mapblklot` and
+  are mostly condominiums on the roll, `resolve_eas.py` takes the lowest
+  unit and files the fact at the building's path; a lone unit parcel the
+  roll names as one does the same. `manifest` lists it with
+  `status: "condo-unit"`, and `seed-list` writes the building and its units
+  as `condo` would. It refuses, and seeds nothing, where the proposed lots
+  include a unit another page already documents.
+- **The building has no `apn`, `lot` or `assessment`.** Its assessed value is
+  its units' sum, read off the unit pages at render time (`condo_view`), so
+  no figure is stated twice. Its `parcel` keeps only what every unit shares:
+  year built, use, zoning, construction, the unit count. No storey count:
+  a unit's is the unit's.
+- **A permit is the building's or one unit's, by DBI's `unit` column**, not
+  by its lot. DBI files the lobby, the roof and the street space under
+  whichever unit's lot holds the address (999 Green Street's are all on
+  unit 1903's), so the lot says nothing about whose a permit is.
+- **`unit.json` is a closed vocabulary** (`seed_pages.UNIT_KEYS`). Whatever is
+  true of the whole building, from a notable resident to a survey, goes on
+  the building. A unit page never prints the roll's class, because
+  "Condominium BMR" marks a below-market-rate unit, and that says something
+  about whoever lives there. It never prints an exemption either: a
+  homeowners' exemption says the owner lives there.
+- **A notable past resident goes on the building, never the unit**, even
+  where the source names the apartment: Nate Thurmond at 655 Corbett Avenue
+  is the building's fact, and putting him on unit 503's page would pin a name
+  to one flat somebody lives in now.
+- **It is a different file so the tree walkers stay right.** The map, the
+  stats, the corpus and the link index read `data.json` and count buildings.
+  The sitemap and `validate.py` also read `unit.json`.
 
 Directory names: lowercase, hyphens, no punctuation. Street numbers are the
 bare number (`4127`, `4127a` for lettered addresses). The canonical address
@@ -516,8 +572,8 @@ python3 scripts/validate.py
 ```
 
 `seed` joins the five datasets in [DATA-SOURCES.md](DATA-SOURCES.md), decides
-which parcels may become pages (skipping condominium units and parcels with no
-assessor record), writes `data.json` + `index.html` for each **new** one, and
+which parcels may become pages (skipping condominium units, which `condo`
+pages as one building, and parcels with no assessor record), writes `data.json` + `index.html` for each **new** one, and
 rebuilds the street hub pages beneath the neighborhood. It varies each page's
 composition from the data it actually has — a parcel with a timeline, public
 art or prose gets the two-column split, its panels in the aside; a parcel with

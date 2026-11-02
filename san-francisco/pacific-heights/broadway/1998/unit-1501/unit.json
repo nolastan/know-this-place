@@ -1,0 +1,69 @@
+{
+  "address": "1998 Broadway, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/broadway/1998/unit-1501/",
+  "unit": "1501",
+  "apn": "0567106",
+  "block": "0567",
+  "lot": "106",
+  "parcel": {
+    "building_area_sqft": 1040,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 627995,
+    "assessed_improvement_value": 465466,
+    "last_sale_date": "2013-05-24"
+  },
+  "permits": [
+    {
+      "number": "202112134302",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-12-13",
+      "status_date": "2023-04-19",
+      "estimated_cost": 100000,
+      "revised_cost": 90000,
+      "description": "#1501: interior renovation of extg bedroom, extg kitchen, and extg 2 bathrooms",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201307161905",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2013-07-16",
+      "status_date": "2015-08-06",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "take down 2 set of track lighting and install 2 chandelier instead",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201307111586",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-07-11",
+      "status_date": "2013-11-21",
+      "estimated_cost": 17000,
+      "revised_cost": 17000,
+      "description": "one unit. kitchen remodel, sheetrock, cabinets, electrical, plumbing appliances.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0567106&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0567&unit=1501",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

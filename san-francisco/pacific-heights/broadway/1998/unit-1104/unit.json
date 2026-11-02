@@ -1,0 +1,57 @@
+{
+  "address": "1998 Broadway, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/broadway/1998/unit-1104/",
+  "unit": "1104",
+  "apn": "0567088",
+  "block": "0567",
+  "lot": "088",
+  "parcel": {
+    "building_area_sqft": 980,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 264150,
+    "assessed_improvement_value": 249351
+  },
+  "permits": [
+    {
+      "number": "200307230182",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-07-23",
+      "status_date": "2003-08-05",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to renew app#2003/02/05/6732 for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200302056732",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-02-05",
+      "status_date": "2003-08-05",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "plumbing fixture replacement,tile,replace tile in bathrm,drywall-repair where needed as job needed.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0567088&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0567&unit=1104",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

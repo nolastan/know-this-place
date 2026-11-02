@@ -1,0 +1,68 @@
+{
+  "address": "999 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/green-street/999/unit-2303/",
+  "unit": "2303",
+  "apn": "0127096",
+  "block": "0127",
+  "lot": "096",
+  "parcel": {
+    "building_area_sqft": 874,
+    "rooms": 3,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 662102,
+    "assessed_improvement_value": 662102,
+    "last_sale_date": "2004-12-03"
+  },
+  "permits": [
+    {
+      "number": "201708154910",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-08-15",
+      "status_date": "2018-04-17",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "one unit: replace single-pane w/dual-pane glass in windows; fleetwood brand w/bronze mullions; (no change to unit size/extent/total no. of units); replace (8) (e) windows, u factor 0.32 max., north wall of unit, replace (e) lighting w/new led, drywall, new interior doors, wood brand bronze,",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200501112944",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-01-11",
+      "status_date": "2005-01-11",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "bath romodel +kitchen modification all interior work no exterior changes. rev#200411240103.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200411240103",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-11-24",
+      "status_date": "2004-11-24",
+      "estimated_cost": 8985,
+      "revised_cost": 8985,
+      "description": "bath & kitchen remodel, all interior work.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0127096&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127&unit=2303",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "address": "1101 Green Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/green-street/1101/unit-1701/",
+  "unit": "1701",
+  "apn": "0125081",
+  "block": "0125",
+  "lot": "081",
+  "parcel": {
+    "building_area_sqft": 920,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 771556,
+    "assessed_improvement_value": 514370,
+    "last_sale_date": "2020-11-16"
+  },
+  "permits": [
+    {
+      "number": "202303033039",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-03-03",
+      "status_date": "2023-03-06",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "replacing windows from (e) cut out (9) no modifications (street facing) existing and proposed windos will be wood with divided lites on the top sash",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202101142648",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-01-14",
+      "status_date": "2022-01-28",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "one unit: replace existing kitchen appliances & countertops - same location. refinish floors and paint throughout. replace existing surface mant light fixtures. install new closet shelves.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0125081&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0125&unit=1701",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

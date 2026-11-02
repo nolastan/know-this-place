@@ -1,0 +1,46 @@
+{
+  "address": "2701 Van Ness Avenue, San Francisco, CA 94109",
+  "path": "/san-francisco/marina/van-ness-avenue/2701/unit-510/",
+  "unit": "510",
+  "apn": "0503063",
+  "block": "0503",
+  "lot": "063",
+  "parcel": {
+    "building_area_sqft": 981,
+    "rooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 685178,
+    "assessed_improvement_value": 456784,
+    "last_sale_date": "2020-12-31"
+  },
+  "permits": [
+    {
+      "number": "202201206307",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-01-20",
+      "status_date": "2022-06-15",
+      "estimated_cost": 42500,
+      "revised_cost": 42500,
+      "description": "#510: kitchen remodel in kind. add 6 recess lights. add 2 gfci. rfplace sink & faucet same location. relocate existing subpnel.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0503063&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0503&unit=510",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

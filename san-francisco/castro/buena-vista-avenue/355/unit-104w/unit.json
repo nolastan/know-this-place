@@ -1,0 +1,58 @@
+{
+  "address": "355 Buena Vista Avenue, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/buena-vista-avenue/355/unit-104w/",
+  "unit": "104W",
+  "apn": "2607120",
+  "block": "2607",
+  "lot": "120",
+  "parcel": {
+    "building_area_sqft": 755,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 235144,
+    "assessed_improvement_value": 225740,
+    "last_sale_date": "1998-11-25"
+  },
+  "permits": [
+    {
+      "number": "202607225413",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-07-22",
+      "status_date": "2026-10-26",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "one unit w: bathroom remodel, upgrade electrical and plumbing, like for like. replace kitchen countertop and backsplash only. bathroom approximately 70sf.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201110136752",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2011-10-13",
+      "status_date": "2012-12-12",
+      "estimated_cost": 9600,
+      "revised_cost": 9600,
+      "description": "remodel of existing bathroom, new shower, vanity, tile, no structural work in this remodel, high efficacy lighting or occupancy sensor, no change to exhaust system",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2607120&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2607&unit=104W",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

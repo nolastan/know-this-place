@@ -1,0 +1,47 @@
+{
+  "address": "1998 Broadway, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/broadway/1998/unit-906/",
+  "unit": "906",
+  "apn": "0567076",
+  "block": "0567",
+  "lot": "076",
+  "parcel": {
+    "building_area_sqft": 1170,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 719500,
+    "assessed_improvement_value": 719500,
+    "last_sale_date": "2015-07-30"
+  },
+  "permits": [
+    {
+      "number": "201903215955",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-03-21",
+      "status_date": "2019-10-15",
+      "estimated_cost": 40000,
+      "revised_cost": 64783,
+      "description": "kitchen: like for like. new cabinets, sink, floor, tile; 187 sq ft. master bathroom: new floor, new sink, toilet, shower; 100 sq ft. guest bathroom: new floor, sink, toilet, tub, tile; 50 sq ft.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0567076&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0567&unit=906",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

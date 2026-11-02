@@ -1,0 +1,63 @@
+{
+  "address": "946 Stockton Street, San Francisco, CA 94108",
+  "path": "/san-francisco/chinatown/stockton-street/946/unit-12f/",
+  "unit": "12F",
+  "apn": "0210A066",
+  "block": "0210A",
+  "lot": "066",
+  "parcel": {
+    "building_area_sqft": 744,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 4590,
+    "assessed_improvement_value": 72513
+  },
+  "permits": [
+    {
+      "number": "200911201758",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-11-20",
+      "status_date": "2009-11-20",
+      "estimated_cost": 2875,
+      "revised_cost": 2875,
+      "description": "remove and replace three windows on the 12th floor not visible from street ( but visible to alley)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200807146655",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2008-07-14",
+      "status_date": "2009-12-18",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "#12f - tear out exist in kitchen cabinets, floor, and sheetrock in the apartment to include 1 bathroom. all interior finish to be placed in kind. no change to window or door or exiting.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2008–2009",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0210A066&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0210A&unit=12F",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

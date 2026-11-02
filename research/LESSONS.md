@@ -346,9 +346,10 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   Avenue is a 39-unit building of 1964 with one EAS row, and it seeded a page
   for flat 105. The roll knew all along: `property_location` ends in the unit
   designation, `AV0105`, where a whole parcel ends in `0000`. `resolve_eas.py`
-  now reads that suffix and declines. **Twenty-nine published pages are still
-  one flat rather than a building**, and whether those buildings can have a page
-  at all is a directory-contract question for a person: #228.
+  now reads that suffix and declines. Since #228 the building gets a page
+  that lists its units, and each unit its own (`seed_pages.py condo`). The
+  twenty-nine pages that were one flat are their buildings now, and 655
+  Corbett Avenue has its page.
 
 - **An archive that paginates by recency has no stable batch unit.** The
   Corbett Heights Neighbors newsletter shows ten or eleven issues to a page,
@@ -2866,8 +2867,19 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   minutes went that way, and the facts had no page to land on. `resolve_eas.py
   report` now lists every resolution onto a parcel with no roll row. *Read
   that list before `manifest`, check the roll for `<block>C…` parcels at the
-  address, and mark a condominium `unresolved` with `by_hand` (#446).*
+  address, and write the building with `seed_pages.py condo <page> --lots …`
+  (#228, #446).*
   ([sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))
+- **A condominium's units share a map lot; a coin toss does not.** Since
+  #228 a condominium building has a page, so the resolver stopped deferring
+  an address whose point falls on many unit parcels (#446). The test that
+  tells one building's units from parcels that merely meet at a point is
+  `mapblklot`: 988 Market Street's twenty parcels all carry `0342018`, and
+  nineteen are office condominiums. The roll's class alone would not do —
+  the stack's retail lot is "Office with Major Retail Units". 701 Illinois
+  Street's two parcels are a Port seawall lot and Pier 70's 21-acre lot, no
+  map in common, and stay unresolved. *Where one parcel on the point already
+  has a page, that one wins: 801 Market Street's four airspace lots.*
 - **A designation's printed number can put it on the building next door,
   and nothing in the tool will say so.** Two 1973 landmark votes resolved
   cleanly onto the wrong parcel: the Haslett Warehouse's case header prints

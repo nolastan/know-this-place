@@ -1,0 +1,58 @@
+{
+  "address": "1101 Green Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/green-street/1101/unit-701/",
+  "unit": "701",
+  "apn": "0125045",
+  "block": "0125",
+  "lot": "045",
+  "parcel": {
+    "building_area_sqft": 919,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 738600,
+    "assessed_improvement_value": 492399,
+    "last_sale_date": "2021-09-22"
+  },
+  "permits": [
+    {
+      "number": "202208080105",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2022-08-08",
+      "status_date": "2026-01-23",
+      "estimated_cost": 500,
+      "revised_cost": 0,
+      "description": "revision to permit #202204202650: per inspector- to address which fireproof material to put on the existing wood; apply firetect wt-102 on all visible wood framing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202204202650",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-04-20",
+      "status_date": "2023-01-26",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "one unit: (1) kitchen and (1) bathroom like for like, kitchen replacing all appliances plumbing & fixtures to code, bathroom replacing all plumbing fixtures, replaceing 1 tub 1 toilet and sink 1 fan, 1 vanity and 8 recessed light updating elec and plumbing mech up to code",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0125045&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0125&unit=701",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

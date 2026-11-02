@@ -1,0 +1,46 @@
+{
+  "address": "999 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/green-street/999/unit-1201/",
+  "unit": "1201",
+  "apn": "0127044",
+  "block": "0127",
+  "lot": "044",
+  "parcel": {
+    "building_area_sqft": 1300,
+    "rooms": 5,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 574827,
+    "assessed_improvement_value": 415146,
+    "last_sale_date": "1997-10-30"
+  },
+  "permits": [
+    {
+      "number": "200705312679",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2007-05-31",
+      "status_date": "2008-12-23",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "to correct illegal dwelling unit merged as one unit-1203 back to original separate one unit-1203 green st. & kitchen bath remodeling.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0127044&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127&unit=1201",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

@@ -91,14 +91,14 @@ sit in — the three it touched most, and how many in all.
 | `article-10-landmarks/batch-6-lm301-lm336.json` | 667 | 1.1 MB | 1849–2026 | 608 | 562 | `mission`, `marina`, `hayes-valley` +25 |
 | `celebrity-residence-guides/sftourismtips.json` | 31 | 47 KB | 1876–1996 | 28 | 26 | `haight-ashbury`, `pacific-heights`, `seacliff` +10 |
 | `corbett-heights-neighbors/archive-page-2.json` | 22 | 38 KB | 1885–2016 | 19 | 9 | `castro` |
-| `corbett-heights-neighbors/archive-page-3.json` | 36 | 66 KB | 1889–2025 | 32 | 31 | `castro`, `mission`, `haight-ashbury` +2 |
+| `corbett-heights-neighbors/archive-page-3.json` | 36 | 66 KB | 1889–2025 | 33 | 32 | `castro`, `mission`, `haight-ashbury` +2 |
 | `corbett-heights-neighbors/issues-2023-11-to-2024-12.json` | 49 | 85 KB | 1883–2024 | 37 | 32 | `castro`, `noe-valley` |
 | `corbett-heights-neighbors/issues-2026-02-to-2026-07.json` | 56 | 102 KB | 1875–2026 | 43 | 27 | `castro` |
 | `corbett-heights-neighbors/vol-viii-no-8.json` | 12 | 21 KB | 1864–2003 | 11 | 8 | `castro`, `mission` |
 | `corbett-heights-neighbors/vol-viii-no-9.json` | 22 | 36 KB | 1876–1982 | 9 | 8 | `castro`, `noe-valley` |
 | `digitalsf/no-citation-field.json` | 0 | 4 KB | — | 0 | 0 | — |
 | `digitalsf/sfh-3.json` | 3 | 9 KB | — | 2 | 0 | `tenderloin` |
-| `digitalsf/sfh-371.json` | 421 | 810 KB | 1873–1996 | 117 | 116 | `tenderloin`, `japantown`, `pacific-heights` +10 |
+| `digitalsf/sfh-371.json` | 421 | 811 KB | 1873–1996 | 117 | 116 | `tenderloin`, `japantown`, `pacific-heights` +10 |
 | `digitalsf/sfp-103.json` | 7 | 16 KB | 1964 | 3 | 0 | `western-addition` |
 | `digitalsf/sfp-125.json` | 36 | 79 KB | 1970–1971 | 11 | 11 | `south-of-market`, `tenderloin`, `south-beach` +1 |
 | `digitalsf/sfp-136.json` | 10 | 16 KB | 1915–1959 | 2 | 2 | `tenderloin`, `pacific-heights` |
@@ -148,13 +148,13 @@ sit in — the three it touched most, and how many in all.
 | `nrhp-nominations/uptown-tenderloin-notable-residents.json` | 9 | 18 KB | 1878–1969 | 9 | 9 | `tenderloin`, `nob-hill` |
 | `nrhp-nominations/uptown-tenderloin-section8.json` | 10 | 21 KB | 1902–1925 | 8 | 7 | `tenderloin`, `south-of-market` |
 | `sf-context-statements/african-american-hcs.json` | 248 | 512 KB | 1853–2024 | 184 | 180 | `bayview-hunters-point`, `western-addition`, `pacific-heights` +26 |
-| `sf-context-statements/biographies-a-c.json` | 412 | 836 KB | 1878–2020 | 353 | 317 | `pacific-heights`, `presidio-heights`, `financial-district` +35 |
+| `sf-context-statements/biographies-a-c.json` | 412 | 839 KB | 1878–2020 | 353 | 317 | `pacific-heights`, `presidio-heights`, `financial-district` +35 |
 | `sf-context-statements/biographies-d-f.json` | 208 | 445 KB | 1888–1990 | 190 | 137 | `pacific-heights`, `sunset-parkside`, `north-beach` +25 |
 | `sf-context-statements/biographies-g-i.json` | 176 | 364 KB | 1878–2005 | 145 | 115 | `sunset-parkside`, `pacific-heights`, `financial-district` +25 |
 | `sf-context-statements/biographies-j-l.json` | 125 | 263 KB | 1889–1990 | 105 | 91 | `pacific-heights`, `sunset-parkside`, `glen-park` +21 |
-| `sf-context-statements/biographies-m-o.json` | 247 | 486 KB | 1880–1994 | 212 | 159 | `pacific-heights`, `west-of-twin-peaks`, `nob-hill` +28 |
+| `sf-context-statements/biographies-m-o.json` | 247 | 487 KB | 1880–1994 | 212 | 159 | `pacific-heights`, `west-of-twin-peaks`, `nob-hill` +28 |
 | `sf-context-statements/biographies-p-r.json` | 223 | 434 KB | 1884–1995 | 187 | 126 | `pacific-heights`, `north-beach`, `sunset-parkside` +23 |
-| `sf-context-statements/biographies-s-u.json` | 152 | 284 KB | 1897–2020 | 110 | 75 | `sunset-parkside`, `financial-district`, `pacific-heights` +23 |
+| `sf-context-statements/biographies-s-u.json` | 152 | 285 KB | 1897–2020 | 110 | 75 | `sunset-parkside`, `financial-district`, `pacific-heights` +23 |
 | `sf-context-statements/biographies-v-z.json` | 96 | 185 KB | 1875–1982 | 82 | 43 | `pacific-heights`, `south-of-market`, `sunset-parkside` +24 |
 | `sf-context-statements/carnegie-libraries.json` | 2 | 6 KB | 1890–1908 | 1 | 1 | `mission` |
 | `sf-context-statements/clubs-social-halls.json` | 53 | 103 KB | 1877–1984 | 45 | 38 | `nob-hill`, `chinatown`, `mission` +19 |
@@ -171,8 +171,8 @@ sit in — the three it touched most, and how many in all.
 | `sf-context-statements/market-octavia-hcs.json` | 496 | 886 KB | 1875–2007 | 425 | 425 | `mission`, `south-of-market`, `castro` +4 |
 | `sf-context-statements/market-octavia-survey-forms.json` | 473 | 1.0 MB | 1870–2010 | 385 | 378 | `hayes-valley`, `mission`, `castro` +3 |
 | `sf-context-statements/mission-dolores-hcs.json` | 83 | 126 KB | 2022 | 66 | 66 | `castro`, `mission` |
-| `sf-context-statements/modern-architecture-landscape.json` | 466 | 806 KB | 1907–1979 | 417 | 273 | `pacific-heights`, `presidio-heights`, `russian-hill` +31 |
-| `sf-context-statements/modern-postmodern-styles.json` | 224 | 514 KB | 1902–2021 | 189 | 182 | `financial-district`, `south-of-market`, `east-cut` +29 |
+| `sf-context-statements/modern-architecture-landscape.json` | 466 | 807 KB | 1907–1979 | 417 | 273 | `pacific-heights`, `presidio-heights`, `russian-hill` +31 |
+| `sf-context-statements/modern-postmodern-styles.json` | 224 | 515 KB | 1902–2021 | 189 | 182 | `financial-district`, `south-of-market`, `east-cut` +29 |
 | `sf-context-statements/modernistic-styles.json` | 25 | 58 KB | 1924–1949 | 23 | 20 | `sunset-parkside`, `mission`, `east-cut` +10 |
 | `sf-context-statements/neighborhood-commercial-hcs.json` | 99 | 196 KB | 1873–2018 | 83 | 76 | `mission`, `pacific-heights`, `west-of-twin-peaks` +20 |
 | `sf-context-statements/new-deal-hcs.json` | 138 | 277 KB | 1915–2023 | 101 | 99 | `mission`, `outer-richmond`, `sunset-parkside` +27 |
@@ -396,6 +396,7 @@ are listed so their size is visible before anyone opens one.
 | `news-2026-10-30.json` | 3 | 1 KB | `mission`, `seacliff`, `east-cut` |
 | `news-2026-10-31.json` | 3 | 1 KB | `financial-district`, `east-cut`, `north-beach` |
 | `news-backfill-2026-07.json` | 7 | 3 KB | `sunset-parkside`, `marina`, `noe-valley` +3 |
+| `news-condo-446.json` | 2 | 1 KB | `castro`, `east-cut` |
 | `north-beach-hcs.json` | 342 | 130 KB | `north-beach`, `chinatown`, `russian-hill` +3 |
 | `oceanside-hcs.json` | 19 | 7 KB | `sunset-parkside` |
 | `omi-context-statement.json` | 38 | 16 KB | `oceanview-merced-ingleside`, `ingleside-terraces`, `outer-mission` |

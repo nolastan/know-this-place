@@ -1,0 +1,56 @@
+{
+  "address": "999 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/green-street/999/unit-1802/",
+  "unit": "1802",
+  "apn": "0127070",
+  "block": "0127",
+  "lot": "070",
+  "parcel": {
+    "building_area_sqft": 1709,
+    "rooms": 6,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 33007,
+    "assessed_improvement_value": 289929
+  },
+  "permits": [
+    {
+      "number": "202406144525",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-06-14",
+      "status_date": "2025-02-21",
+      "estimated_cost": 350,
+      "revised_cost": 350,
+      "description": "one unit: install a 3\"x3\"x10\" long wood soffit at the bedroom hallway. toe nail to existing mtl framing @ 16\" o.c. to wall and ceiling framing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200807227312",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-07-22",
+      "status_date": "2008-07-22",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "scrap ceiling all rooms. paint new tile at living room/ dining room, kitchen and bath. as bestos work under separate permit from dpw",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0127070&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127&unit=1802",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

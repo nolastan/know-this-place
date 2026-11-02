@@ -1,0 +1,47 @@
+{
+  "address": "355 Buena Vista Avenue, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/buena-vista-avenue/355/unit-609w/",
+  "unit": "609W",
+  "apn": "2607199",
+  "block": "2607",
+  "lot": "199",
+  "parcel": {
+    "building_area_sqft": 770,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 456171,
+    "assessed_improvement_value": 304110,
+    "last_sale_date": "2009-08-31"
+  },
+  "permits": [
+    {
+      "number": "202509175530",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-09-17",
+      "status_date": "2025-11-19",
+      "estimated_cost": 18000,
+      "revised_cost": 23036,
+      "description": "one unit- remove bath tub and tiles from 3 surrounding walls. install acrylic walls and (n) shower pan and shower valves and hand shower",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2607199&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2607&unit=609W",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

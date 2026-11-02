@@ -1,0 +1,57 @@
+{
+  "address": "999 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/green-street/999/unit-2402/",
+  "unit": "2402",
+  "apn": "0127100",
+  "block": "0127",
+  "lot": "100",
+  "parcel": {
+    "building_area_sqft": 1709,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1777497,
+    "assessed_improvement_value": 1777497,
+    "last_sale_date": "2014-05-16"
+  },
+  "permits": [
+    {
+      "number": "202404150019",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-04-15",
+      "status_date": "2024-04-25",
+      "estimated_cost": 350,
+      "revised_cost": 350,
+      "description": "one unit: install an 8 ft. long x3'' tall x3'' wide wood soffit at guest bedroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9204548",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1992-03-23",
+      "status_date": "1993-03-01",
+      "estimated_cost": 5000,
+      "description": "drywall,electrical & painting",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0127100&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127&unit=2402",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "address": "1101 Green Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/green-street/1101/unit-1902/",
+  "unit": "1902",
+  "apn": "0125087",
+  "block": "0125",
+  "lot": "087",
+  "parcel": {
+    "building_area_sqft": 1636,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1597814,
+    "assessed_improvement_value": 1215569,
+    "last_sale_date": "2019-10-22"
+  },
+  "permits": [
+    {
+      "number": "202102023850",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-02-02",
+      "status_date": "2022-01-21",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa 201911086850. revise wall layout.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201911086850",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-11-08",
+      "status_date": "2022-01-21",
+      "estimated_cost": 350000,
+      "revised_cost": 350000,
+      "description": "full remodel to include new flooring and paint, new kitchen cabinets and appliances, new bathroom cabinets and finishes, new led lgihting throughout. no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201603141972",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-03-14",
+      "status_date": "2016-06-06",
+      "estimated_cost": 10000,
+      "revised_cost": 15022,
+      "description": "one unit: remodel (e) master bathroom. new shower. no structural. no alteration of wall, windows, and door.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201403241547",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-03-24",
+      "status_date": "2014-06-20",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "partial remodel in kitchen. install new washing machine and move (e) frig. to create space. partial bathroom remodel: remove jacuzzi tub and replace with custom japanese soaking tub. all existing cabinets to remain. no walls moved, removed or added, all fixture layout to remain unchanged.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0125087&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0125&unit=1902",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}
