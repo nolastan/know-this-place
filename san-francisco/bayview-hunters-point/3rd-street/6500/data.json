@@ -1,0 +1,139 @@
+{
+  "address": "6500 3rd Street, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/3rd-street/6500/",
+  "apn": "5475001",
+  "block": "5475",
+  "lot": "001",
+  "eas_baseid": "378857",
+  "coordinates": {
+    "lat": 37.719481,
+    "lng": -122.397316
+  },
+  "parcel": {
+    "year_built": 1970,
+    "units": 2,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 2,
+    "lot_area_sqft": 2356,
+    "building_area_sqft": 1600,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview Heights",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 6500 03RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 156744,
+    "assessed_improvement_value": 156744,
+    "last_sale_date": "1998-11-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1970",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200809292852",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-09-29",
+      "status_date": "2008-10-21",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "work on two units.ti-ii siding + dryrot framing associated with window repairs. replacement of windows. revision to app#200808259954.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200808259954",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-08-25",
+      "status_date": "2008-10-21",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "work @ two units only. replacement of 9 windows. same size & same location.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200502014473",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-02-01",
+      "status_date": "2005-12-21",
+      "estimated_cost": 6650,
+      "revised_cost": 6650,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200002111759",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-02-11",
+      "status_date": "2000-04-07",
+      "revised_cost": 1,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9905578",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1999-03-24",
+      "status_date": "2000-04-07",
+      "estimated_cost": 9400,
+      "description": "erect walls to form a 3 bedrms unit inside existing vacant s",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=03RD&street_type=ST&address_number=6500",
+      "retrieved": "2026-10-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5475001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5475&lot=001",
+      "retrieved": "2026-10-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5475001",
+      "retrieved": "2026-10-31"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1998-09-24",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 24 September 1998",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/45minutesofsanfran1998san/page/n448/mode/1up",
+      "retrieved": "2026-10-31"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1998-09-24",
+      "kind": "planning decision",
+      "description": "The City Planning Commission approved, 6-0, turning the building's vacant ground-floor shop into a fourth dwelling without off-street parking (Motion 14709).",
+      "source": "sf-planning-commission-minutes-1998-09-24"
+    }
+  ]
+}
