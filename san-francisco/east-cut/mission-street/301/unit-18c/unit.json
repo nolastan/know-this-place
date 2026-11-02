@@ -1,0 +1,47 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-18c/",
+  "unit": "18C",
+  "apn": "3719146",
+  "block": "3719",
+  "lot": "146",
+  "parcel": {
+    "building_area_sqft": 833,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 340000,
+    "assessed_improvement_value": 340000,
+    "last_sale_date": "2015-09-14"
+  },
+  "permits": [
+    {
+      "number": "201201091882",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-01-09",
+      "status_date": "2012-06-04",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "#18c:remove and replace harwood, relocate aiv outlet in living and bedroom, replace extg fixtures at entry foyer, new lighting and switches in bathroom on seperate electrical permit by others.new paint for entire unit.new tile in bathroom, new vanity in bathroom, remove and replace tub in bathroom.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719146&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=18C",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

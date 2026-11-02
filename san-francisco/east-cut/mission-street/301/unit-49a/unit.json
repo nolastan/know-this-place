@@ -1,0 +1,79 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-49a/",
+  "unit": "49A",
+  "apn": "3719344",
+  "block": "3719",
+  "lot": "344",
+  "parcel": {
+    "building_area_sqft": 2706,
+    "bedrooms": 2,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1397000,
+    "assessed_improvement_value": 1397000,
+    "last_sale_date": "2012-10-15"
+  },
+  "permits": [
+    {
+      "number": "202304206157",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-04-20",
+      "status_date": "2023-11-06",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "to comply with nov# 202305476 one unit: broken window to be replaced. board up broken window panels to be replaced with plywood temp. install 2-4 window panels that have been broken due t0 severe weather conditions and is now presenting hazard to pedestrians.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201303071691",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-03-07",
+      "status_date": "2013-03-21",
+      "estimated_cost": 2000,
+      "revised_cost": 2500,
+      "description": "one unit-fire sprinkler permit-add 1 pendent & relocate sidewall sprinklers",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201303051491",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-03-05",
+      "status_date": "2013-06-10",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "add non-rated closet at entry way plans. remove door and sing-wall to kitchen.sprinkler-plans by fire protection company and work. under separate permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201301309128",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-01-30",
+      "status_date": "2013-06-10",
+      "estimated_cost": 50000,
+      "revised_cost": 30000,
+      "description": "build 200 sq.ft. of 6\" drop ceiling in living room- no rating, no structural, constructed of metal stud, no wood",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719344&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=49A",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

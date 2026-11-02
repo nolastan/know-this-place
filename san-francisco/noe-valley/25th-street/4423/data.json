@@ -1,0 +1,138 @@
+{
+  "address": "4423 25th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/noe-valley/25th-street/4423/",
+  "apn": "6544012",
+  "block": "6544",
+  "lot": "012",
+  "eas_baseid": "401858",
+  "coordinates": {
+    "lat": 37.749143,
+    "lng": -122.438761
+  },
+  "parcel": {
+    "year_built": 1951,
+    "units": 1,
+    "stories": 3,
+    "rooms": 7,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 3746,
+    "building_area_sqft": 3435,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 4423 25TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 396533,
+    "assessed_improvement_value": 1038838,
+    "last_sale_date": "2000-03-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1951",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202509246053",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-09-24",
+      "status_date": "2026-07-01",
+      "estimated_cost": 18000,
+      "revised_cost": 30000,
+      "description": "construct a (n) 5 foot 6 in retaining wall at rear of yard",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200809151606",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-09-15",
+      "status_date": "2009-10-19",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under app#200204012804.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200508110021",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2005-08-11",
+      "status_date": "2009-10-19",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "install automatic fire sprinkler system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200204012804",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2002-04-01",
+      "status_date": "2009-10-19",
+      "estimated_cost": 120000,
+      "revised_cost": 140000,
+      "description": "add additional flr & horizontal extension(sprinkler under separate permit)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=ST&address_number=4423",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6544012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6544&lot=012",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6544012",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2003-01-09",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 9 January 2003",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/53minutesofsanfran2003san/page/n17/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2003-01-09",
+      "kind": "planning decision",
+      "description": "The City Planning Commission took discretionary review and approved, with an amendment, horizontal additions and a new third story for a single-family dwelling at 4423 25th Street.",
+      "source": "sf-planning-commission-minutes-2003-01-09"
+    },
+    {
+      "date": "2003-01-09",
+      "kind": "occupancy",
+      "description": "The property held a single-family dwelling.",
+      "source": "sf-planning-commission-minutes-2003-01-09"
+    }
+  ]
+}

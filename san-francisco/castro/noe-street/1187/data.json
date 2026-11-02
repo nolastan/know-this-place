@@ -1,0 +1,195 @@
+{
+  "address": "1187 Noe Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/noe-street/1187/",
+  "apn": "6537028",
+  "block": "6537",
+  "lot": "028",
+  "eas_baseid": "401647",
+  "coordinates": {
+    "lat": 37.750293,
+    "lng": -122.431486
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 2,
+    "lot_area_sqft": 2622,
+    "building_area_sqft": 1435,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 1187 NOE                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1681058,
+    "assessed_improvement_value": 1120700,
+    "last_sale_date": "2004-10-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200306278187",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-06-27",
+      "status_date": "2003-06-27",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to renew app#2002/05/16/6799 & 2003/01/17/5409 for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200305144535",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-05-14",
+      "status_date": "2003-07-21",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew permit applic. #2002/04/09/3472 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200301175409",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-01-17",
+      "status_date": "2003-07-22",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "per inspectors request- revision to 200207050749, show replacement of existing section of roof due",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200207050749",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2002-07-05",
+      "status_date": "2002-11-25",
+      "estimated_cost": 50000,
+      "revised_cost": 159390,
+      "description": "vertical addition to existing building alteration to gr floor and 2nd floor 200204093472 & 200205166",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200205166799",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-05-16",
+      "status_date": "2003-07-22",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "interior remodeling to (e) grd flr & 2nd flr. enlarge (e) garage door.. replace (e) stucco front wal",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200204093472",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-04-09",
+      "status_date": "2002-10-09",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace (e) foundation & cap (e) north foundation per plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200007104707",
+      "type": "demolitions",
+      "status": "cancelled",
+      "filed": "2000-07-10",
+      "status_date": "2012-09-19",
+      "description": "demolish a two story two unit residential bldg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200007104705",
+      "type": "new construction wood frame",
+      "status": "cancelled",
+      "filed": "2000-07-10",
+      "status_date": "2003-06-06",
+      "estimated_cost": 335000,
+      "description": "erect a three story, two unit dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9412685",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-08-09",
+      "status_date": "1995-05-17",
+      "estimated_cost": 5075,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NOE&street_type=ST&address_number=1187",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6537028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6537&lot=028",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6537028",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2001-09-06",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 6 September 2001",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/51minutesofsanfran2001san/page/n240/mode/1up",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2001-11-08",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 8 November 2001",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/51minutesofsanfran2001san/page/n372/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2001-09-06",
+      "kind": "occupancy",
+      "description": "An existing two-family dwelling stood on the site.",
+      "source": "sf-planning-commission-minutes-2001-09-06"
+    },
+    {
+      "date": "2001-11-08",
+      "kind": "planning decision",
+      "description": "The City Planning Commission took discretionary review and approved the project with a cut-out in the side wall next to the neighbouring building.",
+      "source": "sf-planning-commission-minutes-2001-11-08"
+    }
+  ]
+}

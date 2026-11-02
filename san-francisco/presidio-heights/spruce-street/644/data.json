@@ -1,0 +1,148 @@
+{
+  "address": "644 Spruce Street, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/spruce-street/644/",
+  "apn": "1066039",
+  "block": "1066",
+  "lot": "039",
+  "eas_baseid": "294246",
+  "coordinates": {
+    "lat": 37.782916,
+    "lng": -122.453094
+  },
+  "parcel": {
+    "year_built": 2006,
+    "units": 1,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 4,
+    "bedrooms": 5,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 3409,
+    "basement_area_sqft": 600,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Jordan Park/Laurel Heights",
+    "analysis_neighborhood": "Presidio Heights",
+    "property_location_raw": "0000 0644 SPRUCE              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 576135,
+    "assessed_improvement_value": 1282190,
+    "last_sale_date": "2002-05-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "2006",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200605181955",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-05-18",
+      "status_date": "2006-08-18",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "as built revision to pa# 2002/07/26/2428.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200605161666",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-05-16",
+      "status_date": "2006-08-18",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew 200412010459 and 200207262428 for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200412010459",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-12-01",
+      "status_date": "2004-12-01",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to renew for final inspection 200207262428",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200207262428",
+      "type": "new construction wood frame",
+      "status": "expired",
+      "filed": "2002-07-26",
+      "status_date": "2006-08-18",
+      "estimated_cost": 400000,
+      "revised_cost": 430000,
+      "description": "erect 1 dwelling units for 3 stories",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200207262425",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "2002-07-26",
+      "status_date": "2004-04-16",
+      "description": "demolish a three story single family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SPRUCE&street_type=ST&address_number=644",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1066039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1066&lot=039",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1066039",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2003-03-06",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 6 March 2003",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/53minutesofsanfran2003san/page/n144/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2003-03-06",
+      "kind": "planning decision",
+      "description": "The City Planning Commission took discretionary review and disapproved the building permit application to demolish a three-story, single-family dwelling.",
+      "source": "sf-planning-commission-minutes-2003-03-06"
+    },
+    {
+      "date": "2003-03-06",
+      "kind": "occupancy",
+      "description": "The property held a three-story, single-family dwelling.",
+      "source": "sf-planning-commission-minutes-2003-03-06"
+    }
+  ]
+}

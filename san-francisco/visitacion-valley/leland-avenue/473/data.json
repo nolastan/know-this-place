@@ -1,0 +1,119 @@
+{
+  "address": "473 Leland Avenue, San Francisco, CA 94134",
+  "path": "/san-francisco/visitacion-valley/leland-avenue/473/",
+  "apn": "6258022",
+  "block": "6258",
+  "lot": "022",
+  "eas_baseid": "394728",
+  "coordinates": {
+    "lat": 37.713965,
+    "lng": -122.413267
+  },
+  "parcel": {
+    "year_built": 1903,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 2099,
+    "building_area_sqft": 980,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Visitacion Valley",
+    "analysis_neighborhood": "Visitacion Valley",
+    "property_location_raw": "0000 0473 LELAND              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 29518,
+    "assessed_improvement_value": 454170
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1903",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200201308121",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "2002-01-30",
+      "status_date": "2005-08-19",
+      "description": "demolition of a one story single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200201308120",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "2002-01-30",
+      "status_date": "2006-08-23",
+      "estimated_cost": 360000,
+      "revised_cost": 360000,
+      "description": "erect a three story single family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LELAND&street_type=AVE&address_number=473",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6258022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6258&lot=022",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6258022",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2003-06-05",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 5 June 2003",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/53minutesofsanfran2003san/page/n327/mode/1up",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2003-06-19",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 19 June 2003",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/53minutesofsanfran2003san/page/n387/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2003-06-05",
+      "kind": "occupancy",
+      "description": "An existing single-family dwelling stood on the lot.",
+      "source": "sf-planning-commission-minutes-2003-06-05"
+    },
+    {
+      "date": "2003-06-19",
+      "kind": "planning decision",
+      "description": "The City Planning Commission took discretionary review and denied the demolition permit for an existing dwelling.",
+      "source": "sf-planning-commission-minutes-2003-06-19"
+    }
+  ]
+}

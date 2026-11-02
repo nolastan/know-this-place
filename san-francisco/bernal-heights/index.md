@@ -20,6 +20,7 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [Ellsworth Street](ellsworth-street/) — 1 building, built 1956.
 - [Faith Street](faith-street/) — 1 building, built 1998.
 - [Franconia Street](franconia-street/) — 2 buildings, built 1964–1965.
+- [Gates Street](gates-street/) — 1 building.
 - [Genebern Way](genebern-way/) — 1 building, built 1925.
 - [Gladys Street](gladys-street/) — 1 building, built 1907.
 - [Highland Avenue](highland-avenue/) — 1 building, built 1915.
@@ -32,6 +33,7 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [Mullen Avenue](mullen-avenue/) — A 1,000 sq ft house of 1906, recorded as Carlos Santana's home during high school.
 - [Murray Street](murray-street/) — 2 buildings, built 1925.
 - [Nevada Street](nevada-street/) — 1 building.
+- [Ogden Avenue](ogden-avenue/) — 1 building, built 1900.
 - [Peralta Avenue](peralta-avenue/) — 1 building, built 1910.
 - [Powhattan Avenue](powhattan-avenue/) — 1 building, built 1965.
 - [Precita Avenue](precita-avenue/) — Four units of 1905 at the foot of the hill, a 1974 Patty Hearst address.

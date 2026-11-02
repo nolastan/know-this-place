@@ -1,0 +1,86 @@
+{
+  "address": "135 Carl Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/carl-street/135/unit-1/",
+  "unit": "1",
+  "apn": "1272042",
+  "block": "1272",
+  "lot": "042",
+  "parcel": {
+    "building_area_sqft": 936,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 592153,
+    "assessed_improvement_value": 394768,
+    "last_sale_date": "2021-08-25"
+  },
+  "permits": [
+    {
+      "number": "202603318590",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-03-31",
+      "status_date": "2026-04-17",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "common starirs: dry rot repair stairs at light well, less than 50%",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202212218896",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-12-21",
+      "status_date": "2024-01-30",
+      "estimated_cost": 17400,
+      "revised_cost": 17400,
+      "description": "upgrade (e) fire alarm system to comply with sffc section 1103.7.6.1 and include sprinkler monitoring.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202111092080",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-11-09",
+      "status_date": "2023-04-28",
+      "estimated_cost": 10000,
+      "revised_cost": 32000,
+      "description": "one unit: interior remodel of kitchen & bathorom. demo of non-structural partitions only. no structural work. no alteration to (e) hvac system, no exterior work. building does not have fire sprinklers.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201607051531",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-07-05",
+      "status_date": "2016-07-20",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "rebuild westside exterior wall. remove and replace exterior wall.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "2015–2026",
+    "shown_on_page": 4,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1272042&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1272&unit=1",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

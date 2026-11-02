@@ -10,6 +10,7 @@ A working-class residential district in the city's south-east, laid out in the e
 - [Avalon Avenue](avalon-avenue/) — 1 building, built 1910.
 - [Byron Court](byron-court/) — 1 building, built 1978.
 - [Carter Street](carter-street/) — 1 building, built 2004.
+- [Dublin Street](dublin-street/) — 1 building, built 1953.
 - [France Avenue](france-avenue/) — 1 building, built 1906.
 - [Geneva Avenue](geneva-avenue/) — 1 building, built 1922.
 - [La Grande Avenue](la-grande-avenue/) — 1 building, built 1957.
@@ -30,6 +31,7 @@ A working-class residential district in the city's south-east, laid out in the e
 - [Russia Avenue](russia-avenue/) — 1 building, built 1915.
 - [Silver Avenue](silver-avenue/) — 1 building, built 1922.
 - [Trumbull Street](trumbull-street/) — 1 building, built 1965.
+- [Vienna Street](vienna-street/) — 1 building, built 1950.
 - [Walbridge Street](walbridge-street/) — 1 building.
 
 ## Parks and public spaces

@@ -1,0 +1,63 @@
+{
+  "address": "3140 Clay Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/clay-street/3140/unit-2/",
+  "unit": "2",
+  "apn": "0999035",
+  "block": "0999",
+  "lot": "035",
+  "parcel": {
+    "building_area_sqft": 1062,
+    "rooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 619057,
+    "assessed_improvement_value": 619057,
+    "last_sale_date": "2014-03-13"
+  },
+  "permits": [
+    {
+      "number": "201409045401",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-09-04",
+      "status_date": "2014-12-19",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "one unit: kitchen remodel: remove existing cabinets, counters, flooring & appliances, replace with new. all walls to remain, new kitchen circuits. no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200203141475",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-03-14",
+      "status_date": "2003-01-15",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "interior remodeling, kitchen/bath",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2002–2014",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0999035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0999&unit=2",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

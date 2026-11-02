@@ -1,0 +1,33 @@
+{
+  "address": "3040 Steiner Street, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/steiner-street/3040/unit-lot-050/",
+  "apn": "0534050",
+  "block": "0534",
+  "lot": "050",
+  "parcel": {
+    "building_area_sqft": 1424,
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 135379,
+    "assessed_improvement_value": 375221
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0534050&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0534&street_number=3040",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

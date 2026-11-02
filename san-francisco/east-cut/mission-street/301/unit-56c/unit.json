@@ -1,0 +1,58 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-56c/",
+  "unit": "56C",
+  "apn": "3719374",
+  "block": "3719",
+  "lot": "374",
+  "parcel": {
+    "building_area_sqft": 2819,
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2278500,
+    "assessed_improvement_value": 2278500,
+    "last_sale_date": "2010-06-30"
+  },
+  "permits": [
+    {
+      "number": "201112050098",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-12-05",
+      "status_date": "2012-03-01",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "relocate 4 existing sprinkler heads to accomodate new design",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201108303541",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-08-30",
+      "status_date": "2013-01-16",
+      "estimated_cost": 387000,
+      "revised_cost": 387000,
+      "description": "remove walls at living room and master closet,close 1 wall at master closet with new opening.new soffits, relocate fire sprinkler heads where necessary. new recessed lighting. some cabinetry in kchn, study,master bath. baseboards,sheet rock repairs as necessary. new stone in kitchen and baths.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719374&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=56C",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

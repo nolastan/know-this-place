@@ -1,0 +1,141 @@
+{
+  "address": "282 Upper Terrace, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/upper-terrace/282/",
+  "apn": "2629A002I",
+  "block": "2629A",
+  "lot": "002I",
+  "eas_baseid": "342787",
+  "coordinates": {
+    "lat": 37.762894,
+    "lng": -122.445405
+  },
+  "parcel": {
+    "year_built": 1949,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 2356,
+    "building_area_sqft": 1365,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Haight Ashbury",
+    "property_location_raw": "0000 0282 UPPER               TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 60037,
+    "assessed_improvement_value": 219818
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1949",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200603277527",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-03-27",
+      "status_date": "2006-05-15",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "retrofit 5 windows in kind function & size white vinyl. no structural changes,visable from street, window trim detail to remain as is.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200009201100",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2000-09-20",
+      "status_date": "2002-05-13",
+      "estimated_cost": 40000,
+      "revised_cost": 78000,
+      "description": "rear addtn 2story high,new kitchen/family rm @ lwr story, laundry rm,office,deck area @ uppr story n",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9816697",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-08-24",
+      "status_date": "1999-02-24",
+      "estimated_cost": 10000,
+      "description": "remodel bathrm-toilet/tub & vanity",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9703265",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-02-24",
+      "status_date": "1998-05-29",
+      "estimated_cost": 3000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1997–2015",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=UPPER&street_type=TER&address_number=282",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2629A002I&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2629A&lot=002I",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2629A002I",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2001-02-15",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 15 February 2001",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/50minutesofsanfran2001san/page/n172/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2001-02-15",
+      "kind": "planning decision",
+      "description": "The City Planning Commission took discretionary review and approved a two-story rear addition with a second-floor roof deck and stairs, per staff recommendations on the finished side material.",
+      "source": "sf-planning-commission-minutes-2001-02-15"
+    },
+    {
+      "date": "2001-02-15",
+      "kind": "occupancy",
+      "description": "The property held an existing dwelling.",
+      "source": "sf-planning-commission-minutes-2001-02-15"
+    }
+  ]
+}

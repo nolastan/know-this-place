@@ -1,0 +1,58 @@
+{
+  "address": "1 South Park, San Francisco, CA 94107",
+  "path": "/san-francisco/east-cut/south-park/1/unit-404/",
+  "unit": "404",
+  "apn": "3775209",
+  "block": "3775",
+  "lot": "209",
+  "parcel": {
+    "building_area_sqft": 1726,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1846501,
+    "assessed_improvement_value": 1231001,
+    "last_sale_date": "2021-08-17"
+  },
+  "permits": [
+    {
+      "number": "201606210483",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2016-06-21",
+      "status_date": "2018-02-15",
+      "estimated_cost": 2500,
+      "revised_cost": 35000,
+      "description": "one unit: exterior renovations: roof deck hot tub and new platform deck installed over (e) pavers. n/a for maher ordinance no. 155-13",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201605137344",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-05-13",
+      "status_date": "2016-12-15",
+      "estimated_cost": 10000,
+      "revised_cost": 28000,
+      "description": "1 kitchen and 1 bath remodel. no structural work.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3775209&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3775&unit=404",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

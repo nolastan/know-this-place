@@ -1,0 +1,65 @@
+{
+  "address": "1071 Mississippi Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/mississippi-street/1077/unit-1071/",
+  "apn": "4224167",
+  "block": "4224",
+  "lot": "167",
+  "parcel": {
+    "building_area_sqft": 1235,
+    "bathrooms": 1,
+    "basement_area_sqft": 1235
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 441670,
+    "assessed_improvement_value": 189278,
+    "last_sale_date": "2014-08-15"
+  },
+  "permits": [
+    {
+      "number": "202008312962",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-08-31",
+      "status_date": "2020-08-31",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "bathroom - remodeling in kind. add led lights.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201906113067",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2019-06-11",
+      "status_date": "2019-06-11",
+      "estimated_cost": 15000,
+      "description": "change of use of (e) grd flr rear pdr unit to residential accessory dwelling unit w/ (1) bedroom & (2) bathrooms.**maher n/a**",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201805229781",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2018-05-22",
+      "status_date": "2019-06-07",
+      "estimated_cost": 15000,
+      "description": "change of use from retail to residential condo unit with (1) bedroom & (1) bathroom",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4224167&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4224&street_number=1071",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

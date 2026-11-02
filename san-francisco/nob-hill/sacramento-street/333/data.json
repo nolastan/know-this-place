@@ -1,0 +1,174 @@
+{
+  "address": "333 Sacramento Street, San Francisco, CA 94111",
+  "path": "/san-francisco/nob-hill/sacramento-street/333/",
+  "apn": "0237018",
+  "block": "0237",
+  "lot": "018",
+  "eas_baseid": "280447",
+  "coordinates": {
+    "lat": 37.794024,
+    "lng": -122.39948
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2291,
+    "building_area_sqft": 6550,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "C",
+    "zoning": "C3O",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Financial District North",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "property_location_raw": "0000 0333 SACRAMENTO          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2945562,
+    "assessed_improvement_value": 1586067,
+    "last_sale_date": "2008-02-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 11 Individual, Article 11 Conservation District",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Front-California Conservation District",
+    "california_register_status": "Not listed",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 11 conservation district",
+    "local_landmark_protection": true,
+    "period_of_significance": "N/A",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200009140550",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2000-09-14",
+      "status_date": "2001-04-11",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "install new fire suppression system in teh comp rm, gas suppression-inergin",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9905037",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-03-16",
+      "status_date": "2000-06-30",
+      "estimated_cost": 9900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9700399S",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1997-01-08",
+      "status_date": "1998-12-14",
+      "estimated_cost": 54000,
+      "description": "expand 3rdfloor(2new offices)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9006401",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-04-04",
+      "status_date": "1991-10-01",
+      "estimated_cost": 140000,
+      "description": "earthquake redair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8704495",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-04-07",
+      "status_date": "1988-02-19",
+      "estimated_cost": 150000,
+      "description": "vertical extension",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8210267",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-12-16",
+      "status_date": "1983-03-04",
+      "estimated_cost": 2000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "1982–2000",
+    "shown_on_page": 6,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SACRAMENTO&street_type=ST&address_number=333",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0237018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0237&lot=018",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0237018",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.39947967192879%2037.79402368605771)%27)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2002-01-10",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 10 January 2002",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/52minutesofsanfran2002san/page/n10/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2002-01-10",
+      "kind": "planning decision",
+      "description": "The City Planning Commission approved the change in designation from a Category V Building to a Category IV Building under Article 11.",
+      "source": "sf-planning-commission-minutes-2002-01-10"
+    },
+    {
+      "date": "2002-01-10",
+      "kind": "occupancy",
+      "description": "The subject building was a two-story-over-basement, early 20th Century modern reinforced concrete building with Sullivanesque detailing.",
+      "source": "sf-planning-commission-minutes-2002-01-10"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-501/",
+  "unit": "501",
+  "apn": "3719399",
+  "block": "3719",
+  "lot": "399",
+  "parcel": {
+    "building_area_sqft": 1955,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 713625,
+    "assessed_improvement_value": 713625,
+    "last_sale_date": "2015-01-02"
+  },
+  "permits": [
+    {
+      "number": "201502269464",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-02-26",
+      "status_date": "2015-03-06",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "one unit - relocate (6) six fire sprinkler heads. n/a maher ordinance",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201501266618",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-01-26",
+      "status_date": "2015-06-19",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "open sheetrock to accommodate electrical work - installing new recesed lighting living room and guest bedroom. sprnkler work by others under separate permit. replace toilets in master and guest baths. no structural work replace in-kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201411101178",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2014-11-10",
+      "status_date": "2015-01-16",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "one unit: install built in closet in existing bedroom. maher n/a.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201306058743",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-06-05",
+      "status_date": "2013-07-09",
+      "estimated_cost": 4000,
+      "revised_cost": 4100,
+      "description": "install sliding door between hall and flex room",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719399&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=501",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

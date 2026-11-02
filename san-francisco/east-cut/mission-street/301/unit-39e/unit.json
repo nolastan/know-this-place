@@ -1,0 +1,46 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-39e/",
+  "unit": "39E",
+  "apn": "3719294",
+  "block": "3719",
+  "lot": "294",
+  "parcel": {
+    "building_area_sqft": 1714,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 787000,
+    "assessed_improvement_value": 787000,
+    "last_sale_date": "2012-01-25"
+  },
+  "permits": [
+    {
+      "number": "202206216714",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2022-06-21",
+      "status_date": "2026-01-23",
+      "estimated_cost": 1,
+      "revised_cost": 0,
+      "description": "one unit: ilo: permit for use of an intermediate length occupancy within existing legally permitted use and occupancy. no work perform.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719294&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=39E",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

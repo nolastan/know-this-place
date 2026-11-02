@@ -1,0 +1,58 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-38b/",
+  "unit": "38B",
+  "apn": "3719285",
+  "block": "3719",
+  "lot": "285",
+  "parcel": {
+    "building_area_sqft": 1652,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 761500,
+    "assessed_improvement_value": 761500,
+    "last_sale_date": "2016-04-18"
+  },
+  "permits": [
+    {
+      "number": "201201242778",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-01-24",
+      "status_date": "2012-02-01",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "38th floor suite 38b- relcoate 1 pendent & 5 sidewall sprinklers. ref p/a no. 201112160834",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201112160834",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-12-16",
+      "status_date": "2012-07-25",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "one unit:add pocket door, paint, add closet shelving and relocate laundry closet.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719285&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=38B",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-33c/",
+  "unit": "33C",
+  "apn": "3719256",
+  "block": "3719",
+  "lot": "256",
+  "parcel": {
+    "building_area_sqft": 2170,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 980000,
+    "assessed_improvement_value": 980000,
+    "last_sale_date": "2023-11-30"
+  },
+  "permits": [
+    {
+      "number": "201609157755",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-09-15",
+      "status_date": "2016-10-04",
+      "estimated_cost": 1000,
+      "revised_cost": 1500,
+      "description": "suite 33c: fire sprinkler permit, relocate 3 sidewall sprinklers in ste 33c: t.i. 201605238144; maher n/a",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201605238144",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-05-23",
+      "status_date": "2017-02-21",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "install (19) new recessed lights, new ceiling soffit in living room (no change to rated ceiling assembly), move 3 sprinklers in living room seperate permit. replace master bath toilet, powder room, floor tile, install 2 switch outlets in each bedroom, plumbing, electrical & sprinkler under sep bpa",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201112090387",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-12-09",
+      "status_date": "2012-02-10",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "drywall patch and repair for new audio/visual and electrical work. drywall to be only for elec and audio visual",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719256&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=33C",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

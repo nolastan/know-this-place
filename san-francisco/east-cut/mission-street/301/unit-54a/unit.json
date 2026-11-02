@@ -1,0 +1,101 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-54a/",
+  "unit": "54A",
+  "apn": "3719364",
+  "block": "3719",
+  "lot": "364",
+  "parcel": {
+    "building_area_sqft": 2706,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1404500,
+    "assessed_improvement_value": 1404500,
+    "last_sale_date": "2022-09-15"
+  },
+  "permits": [
+    {
+      "number": "202305047054",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-05-04",
+      "status_date": "2023-09-13",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "one unit: revision to bpa#202302061414 to remove plumbing from scope",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202302282713",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-02-28",
+      "status_date": "2023-03-17",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "one unit: change (e)hsw sprinkler to concealed style vk490. relocate (4)(e)concealed vk462 sprinklers. relocate (5)(e) hsw sprinkler. add (1) concealed vk462 in new closet. delete (1)(e) concealed vk462 due to new soffit living/dining rm agl-gc 202302061414",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202302061414",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-02-06",
+      "status_date": "2023-09-13",
+      "estimated_cost": 300000,
+      "revised_cost": 300000,
+      "description": "one unit: remodel of e aprtment, including new light fixtures, new lighting control, new window shades, new flooring, new bath tub, new ceiling soffit, and new cabinetry.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201208238137",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-08-23",
+      "status_date": "2012-08-29",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "#54a - relcoate (2) existing fire sprinkler heads, add (1) to accomodate new design.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201208026374",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-08-02",
+      "status_date": "2013-01-17",
+      "estimated_cost": 42500,
+      "revised_cost": 42500,
+      "description": "open wall between living room and study for pass thru access. remove wall at dining rm and kitchen. replace countertop. add recessed lights in soffit over counter. move existing switches to adjoining walls. repaint as needed. field verify fa/sprinkler/co alarm coverage.swi 8/2/11.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M339667",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-08-02",
+      "status_date": "2012-08-02",
+      "revised_cost": 159,
+      "description": "add address 301 miision st#54a as block#3719 lot#364",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719364&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=54A",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

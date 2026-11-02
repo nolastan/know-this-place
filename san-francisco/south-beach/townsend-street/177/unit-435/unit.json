@@ -1,0 +1,35 @@
+{
+  "address": "177 Townsend Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-beach/townsend-street/177/unit-435/",
+  "unit": "435",
+  "apn": "3794122",
+  "block": "3794",
+  "lot": "122",
+  "parcel": {
+    "building_area_sqft": 927,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 523350,
+    "assessed_improvement_value": 523350,
+    "last_sale_date": "2013-04-08"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3794122&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3794&unit=435",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

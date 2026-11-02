@@ -45,6 +45,7 @@ San Francisco's south-eastern quarter, settled from the 1860s as the industrial 
 - [Lane Street](lane-street/) — 2 buildings, built 1900–1908.
 - [Latona Street](latona-street/) — 1 building, built 1900.
 - [Le Conte Avenue](le-conte-avenue/) — 1 building, built 1930.
+- [Maddux Avenue](maddux-avenue/) — 1 building, built 2012.
 - [Marin Street](marin-street/) — 1 building, built 1942.
 - [Mckinnon Avenue](mckinnon-avenue/) — 18 buildings, built 1885–1923.
 - [Mendell Street](mendell-street/) — 3 buildings, built 1908–1941.

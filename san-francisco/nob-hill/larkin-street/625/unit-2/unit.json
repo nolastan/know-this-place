@@ -1,0 +1,50 @@
+{
+  "address": "625 Larkin Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/larkin-street/625/unit-2/",
+  "unit": "2",
+  "apn": "0740027",
+  "block": "0740",
+  "lot": "027",
+  "parcel": {
+    "building_area_sqft": 465
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 277327,
+    "assessed_improvement_value": 184882,
+    "last_sale_date": "2006-11-06"
+  },
+  "permits": [
+    {
+      "number": "200612260507",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-12-26",
+      "status_date": "2008-09-25",
+      "estimated_cost": 1200,
+      "revised_cost": 1200,
+      "description": "revision to an pa# 200510075074-work includes adding fire alarm system to the approved plan.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2006–2007",
+    "shown_on_page": 1,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0740027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0740&unit=2",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-50b/",
+  "unit": "50B",
+  "apn": "3719349",
+  "block": "3719",
+  "lot": "349",
+  "parcel": {
+    "building_area_sqft": 3315,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2440000,
+    "assessed_improvement_value": 2440000,
+    "last_sale_date": "2012-01-04"
+  },
+  "permits": [
+    {
+      "number": "201203055348",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-03-05",
+      "status_date": "2012-03-20",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "one unit-add & relocate 3 fire sprinkler pendent heads. t.i pa# 2012-0118-2460. 50th floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201201182460",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-01-18",
+      "status_date": "2012-04-19",
+      "estimated_cost": 80000,
+      "revised_cost": 80000,
+      "description": "demo walls in dining room, patch flooring & paint to match extg. replace stone at window seat to match extg, remove hall closet doors and powder room. add shower stall at closet location. add sconses at library, guest bedroom, add light at kitchen and master bedroom/bath & powder room.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719349&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=50B",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "address": "1835B 19th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/19th-avenue/1835/unit-1835b/",
+  "apn": "2056052",
+  "block": "2056",
+  "lot": "052",
+  "parcel": {
+    "building_area_sqft": 2721,
+    "rooms": 10,
+    "bedrooms": 5,
+    "bathrooms": 4,
+    "basement_area_sqft": 849
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 879472,
+    "assessed_improvement_value": 879472,
+    "last_sale_date": "2021-06-02"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2056052&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2056&street_number=1835b",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

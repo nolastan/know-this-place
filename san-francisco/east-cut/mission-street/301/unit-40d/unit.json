@@ -1,0 +1,57 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-40d/",
+  "unit": "40D",
+  "apn": "3719299",
+  "block": "3719",
+  "lot": "299",
+  "parcel": {
+    "building_area_sqft": 1952,
+    "bedrooms": 2,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1128500,
+    "assessed_improvement_value": 1128500,
+    "last_sale_date": "2012-10-04"
+  },
+  "permits": [
+    {
+      "number": "201001124557",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-01-12",
+      "status_date": "2010-01-12",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "relocate 8 fire sprinklers due to interior remodel, new lower metal framed ceilings.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201001074361",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-01-07",
+      "status_date": "2010-02-25",
+      "estimated_cost": 97200,
+      "revised_cost": 97200,
+      "description": "remove non structural walls at ding to living rm and ding to foyer. hardwood flrs at mstr bdrm/closets,guest bdrm, hall closet. add pocket door @ lvg rm to office, kitchen to din rm, kitch to hallway. drop ceiling in lr,dr,mastr/guest bdrms for recessed lighting, loer 8 sprinkler heads at new drop",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719299&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=40D",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

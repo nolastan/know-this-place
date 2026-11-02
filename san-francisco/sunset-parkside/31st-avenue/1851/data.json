@@ -1,0 +1,157 @@
+{
+  "address": "1851 31st Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/31st-avenue/1851/",
+  "apn": "2068011",
+  "block": "2068",
+  "lot": "011",
+  "eas_baseid": "327525",
+  "coordinates": {
+    "lat": 37.752693,
+    "lng": -122.489584
+  },
+  "parcel": {
+    "year_built": 1943,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "bedrooms": 1,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 800,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1851 31ST                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 360731,
+    "assessed_improvement_value": 235398,
+    "last_sale_date": "1990-09-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1943",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200007135054",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2000-07-13",
+      "status_date": "2002-04-15",
+      "estimated_cost": 85000,
+      "revised_cost": 85000,
+      "description": "horizontal rear addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200002242681",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2000-02-24",
+      "status_date": "2000-11-17",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "remove illigal kchn from ground floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9919359",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-09-15",
+      "status_date": "2000-11-17",
+      "estimated_cost": 8500,
+      "description": "dry rot repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8901536",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1989-01-30",
+      "status_date": "1989-12-08",
+      "estimated_cost": 500,
+      "description": "rear patio cover",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8608748",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-07-21",
+      "status_date": "1986-09-05",
+      "estimated_cost": 1995,
+      "revised_cost": 0,
+      "description": "repair a portion of the front bay",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8500924",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-01-28",
+      "status_date": "1985-03-13",
+      "estimated_cost": 700,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=31ST&street_type=AVE&address_number=1851",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2068011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2068&lot=011",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2068011",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2001-04-19",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 19 April 2001",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/50minutesofsanfran2001san/page/n373/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2001-04-19",
+      "kind": "planning decision",
+      "description": "The City Planning Commission took discretionary review and approved with staff recommendations demolition of an 11-foot one-story rear extension and construction of a two-story rear extension, with a reduced length, increased setback, no side-facing windows, a notice of special restrictions, and a site survey, 6-0.",
+      "source": "sf-planning-commission-minutes-2001-04-19"
+    },
+    {
+      "date": "2001-04-19",
+      "kind": "occupancy",
+      "description": "An existing two-story, single-family dwelling stood on the site.",
+      "source": "sf-planning-commission-minutes-2001-04-19"
+    }
+  ]
+}

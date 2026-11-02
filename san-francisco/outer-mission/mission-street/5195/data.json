@@ -1,0 +1,162 @@
+{
+  "address": "5195–5199 Mission Street, San Francisco, CA 94112",
+  "path": "/san-francisco/outer-mission/mission-street/5195/",
+  "apn": "6463083",
+  "block": "6463",
+  "lot": "083",
+  "eas_baseid": "398909",
+  "coordinates": {
+    "lat": 37.715464,
+    "lng": -122.441538
+  },
+  "address_range": "5195–5199",
+  "street_numbers_on_parcel": [
+    "5195",
+    "5199"
+  ],
+  "parcel": {
+    "units": 37,
+    "lot_area_sqft": 14067,
+    "building_area_sqft": 31314,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "NA",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Croker Amazon",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0000 5199 MISSION             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2168883,
+    "assessed_improvement_value": 7283223,
+    "assessed_fixtures_value": 2068,
+    "last_sale_date": "2003-06-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M31755",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-03-24",
+      "status_date": "2005-03-24",
+      "revised_cost": 0,
+      "description": "street psace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200408232297",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2004-08-23",
+      "status_date": "2005-05-20",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "add exterior 1 hr. wall @ stair #1 at the request of sffd plan checker for sprinklers.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200407148782",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2004-07-14",
+      "status_date": "2005-05-19",
+      "estimated_cost": 32750,
+      "revised_cost": 32750,
+      "description": "installation of fire alarm system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200406025278",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2004-06-02",
+      "status_date": "2005-05-20",
+      "estimated_cost": 44000,
+      "revised_cost": 44000,
+      "description": "install new overhead fire sprinkler system for entire bldg.total 539 heads (all floors).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200403037621",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-03-03",
+      "status_date": "2005-05-18",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "install new 6\" underground fire main only,overhead fire sprinklers under seperate permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200310238370",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "2003-10-23",
+      "status_date": "2004-02-05",
+      "description": "to demolish a one-story vacant commercial building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200310218162",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2003-10-21",
+      "status_date": "2005-05-18",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "shoring along pope st sidewalk (temporary only) for retaining wall and foundation construction part",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200301316446",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "2003-01-31",
+      "status_date": "2005-05-11",
+      "revised_cost": 3588613,
+      "description": "erect apartments, private garage.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 11,
+    "range": "2003–2005",
+    "shown_on_page": 8,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MISSION&street_type=ST&address_number=5195",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6463083&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6463&lot=083",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6463083",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

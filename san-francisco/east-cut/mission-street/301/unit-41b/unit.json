@@ -1,0 +1,57 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-41b/",
+  "unit": "41B",
+  "apn": "3719303",
+  "block": "3719",
+  "lot": "303",
+  "parcel": {
+    "building_area_sqft": 1652,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 815000,
+    "assessed_improvement_value": 815000,
+    "last_sale_date": "2011-10-28"
+  },
+  "permits": [
+    {
+      "number": "201112140651",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-12-14",
+      "status_date": "2011-12-27",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "# 41b - 41st floor-relocate 4 (e) sprinkler heads to accomodate new design",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201111309806",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-11-30",
+      "status_date": "2012-05-01",
+      "estimated_cost": 22000,
+      "revised_cost": 25000,
+      "description": "remove and replace ceiling lighting throughout residence, remove all carpet, replace with ardwood. replace existing fans with high eff fan, drop living rm ceiling 4\" for new canlights (13) install pendant lights above kitchen island, add soffit at bedroom for ceiling lights, add switching new light",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719303&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=41B",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-606/",
+  "unit": "606",
+  "apn": "3719410",
+  "block": "3719",
+  "lot": "410",
+  "parcel": {
+    "building_area_sqft": 1633,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 576125,
+    "assessed_improvement_value": 576125,
+    "last_sale_date": "2016-03-17"
+  },
+  "permits": [
+    {
+      "number": "201306058744",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-06-05",
+      "status_date": "2014-10-17",
+      "estimated_cost": 12000,
+      "revised_cost": 20000,
+      "description": "replace floor covering, add soffit and lighting, install cabinertry. paint.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719410&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=606",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "address": "294 Townsend Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/townsend-street/296/unit-294/",
+  "apn": "3787164",
+  "block": "3787",
+  "lot": "164",
+  "parcel": {
+    "building_area_sqft": 1299,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 4369677,
+    "assessed_improvement_value": 2913117,
+    "last_sale_date": "2021-08-12"
+  },
+  "permits": [
+    {
+      "number": "201501206117",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-01-20",
+      "status_date": "2015-01-29",
+      "estimated_cost": 4600,
+      "revised_cost": 4600,
+      "description": "12 sq ft. gta - clean the old roof; install gta",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3787164&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3787&street_number=294",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

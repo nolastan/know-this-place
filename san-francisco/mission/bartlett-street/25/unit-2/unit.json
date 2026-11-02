@@ -1,0 +1,47 @@
+{
+  "address": "25 Bartlett Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bartlett-street/25/unit-2/",
+  "unit": "2",
+  "apn": "3616065",
+  "block": "3616",
+  "lot": "065",
+  "parcel": {
+    "building_area_sqft": 1266,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 561500,
+    "assessed_improvement_value": 374330,
+    "last_sale_date": "2009-12-17"
+  },
+  "permits": [
+    {
+      "number": "202105100026",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-05-10",
+      "status_date": "2021-05-10",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "replacement of garage door - same material and style. all work is non-structural.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3616065&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3616&unit=2",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "address": "128 Gambier Street, San Francisco, CA 94134",
+  "path": "/san-francisco/portola/gambier-street/128/",
+  "apn": "5907006",
+  "block": "5907",
+  "lot": "006",
+  "eas_baseid": "386541",
+  "coordinates": {
+    "lat": 37.727536,
+    "lng": -122.422463
+  },
+  "parcel": {
+    "year_built": 1941,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 862,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Portola",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0000 0128 GAMBIER             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 391039,
+    "assessed_improvement_value": 260690,
+    "last_sale_date": "2003-02-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1941",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200112034317",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2001-12-03",
+      "status_date": "2004-05-26",
+      "estimated_cost": 80000,
+      "description": "a new 2 story rear extention to be constructed and attached to extg bldg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9621273",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-11-01",
+      "status_date": "1997-02-25",
+      "estimated_cost": 850,
+      "description": "build retaining wall from patio into yard with concrete foor",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GAMBIER&street_type=ST&address_number=128",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5907006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5907&lot=006",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5907006",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2002-05-23",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 23 May 2002",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/52minutesofsanfran2002san/page/n246/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2002-05-23",
+      "kind": "planning decision",
+      "description": "The City Planning Commission took discretionary review and approved the removal of the existing lean-to extension and construction of a new two-story rear addition, as modified to eliminate the parapet.",
+      "source": "sf-planning-commission-minutes-2002-05-23"
+    }
+  ]
+}

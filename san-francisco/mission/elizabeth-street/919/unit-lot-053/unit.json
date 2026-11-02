@@ -1,0 +1,35 @@
+{
+  "address": "919 Elizabeth Street, San Francisco, CA 94114",
+  "path": "/san-francisco/mission/elizabeth-street/919/unit-lot-053/",
+  "apn": "2828053",
+  "block": "2828",
+  "lot": "053",
+  "parcel": {
+    "building_area_sqft": 1468,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "basement_area_sqft": 548
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1404540,
+    "assessed_improvement_value": 936360,
+    "last_sale_date": "2023-03-09"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2828053&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2828&street_number=919",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

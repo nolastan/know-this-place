@@ -1,0 +1,58 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-ph1d/",
+  "unit": "PH1D",
+  "apn": "3719383",
+  "block": "3719",
+  "lot": "383",
+  "parcel": {
+    "building_area_sqft": 2706,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2690469,
+    "assessed_improvement_value": 1793645,
+    "last_sale_date": "2010-12-28"
+  },
+  "permits": [
+    {
+      "number": "201112050100",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-12-05",
+      "status_date": "2012-11-08",
+      "estimated_cost": 5000,
+      "revised_cost": 9000,
+      "description": "relocate 16 existing sprinkler heads to accomodate new design on ph1d",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201104053498",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-04-05",
+      "status_date": "2011-04-06",
+      "estimated_cost": 235000,
+      "revised_cost": 235000,
+      "description": "drop ceilings 6\" in living rm,bedrms for recess lighting, new hardwood flr, new cabinets & mill work thruout. replace tile & stone in kitchen,master bath, hall bath, guest bath.add energy efficant lighting, add insulation, relocate side wall sprinkler. fire sprinkler,l.s.,el,plmg on separate permit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719383&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=PH1D",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "address": "115 Ellington Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/oceanview-merced-ingleside/ellington-avenue/115/",
+  "apn": "7043004F",
+  "block": "7043",
+  "lot": "004F",
+  "eas_baseid": "413086",
+  "coordinates": {
+    "lat": 37.714676,
+    "lng": -122.443271
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 1873,
+    "building_area_sqft": 1732,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Outer Mission",
+    "analysis_neighborhood": "Outer Mission",
+    "property_location_raw": "0000 0115 ELLINGTON           AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 567067,
+    "assessed_improvement_value": 316069,
+    "last_sale_date": "2012-11-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200906231078",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-06-23",
+      "status_date": "2014-04-28",
+      "estimated_cost": 5000,
+      "revised_cost": 62688,
+      "description": "ground floor alteration per plan - new playroon, new bathroom and new bedroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200203292629",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-03-29",
+      "status_date": "2002-07-29",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew appl#9809148 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9809148",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1998-05-20",
+      "status_date": "1999-03-17",
+      "estimated_cost": 2000,
+      "revised_cost": 8500,
+      "description": "removal of an illegal apt & repair per nov",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1998–2009",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ELLINGTON&street_type=AVE&address_number=115",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7043004F&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7043&lot=004F",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7043004F",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2002-01-17",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 17 January 2002",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/52minutesofsanfran2002san/page/n25/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2002-01-17",
+      "kind": "occupancy",
+      "description": "The property held a single-family dwelling.",
+      "source": "sf-planning-commission-minutes-2002-01-17"
+    }
+  ]
+}

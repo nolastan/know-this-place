@@ -1,0 +1,46 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-46a/",
+  "unit": "46A",
+  "apn": "3719326",
+  "block": "3719",
+  "lot": "326",
+  "parcel": {
+    "building_area_sqft": 1649,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 111008,
+    "assessed_improvement_value": 248399,
+    "last_sale_date": "2013-02-04"
+  },
+  "permits": [
+    {
+      "number": "201303202634",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-03-20",
+      "status_date": "2013-03-20",
+      "estimated_cost": 900,
+      "revised_cost": 1800,
+      "description": "build 36 linear feet of 7\"x22\" soffet on ceiling sheet rock 5/8 over steel studs. arch detail.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719326&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=46A",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

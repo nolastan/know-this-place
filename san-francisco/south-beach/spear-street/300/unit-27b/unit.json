@@ -1,0 +1,46 @@
+{
+  "address": "301 Spear Street, San Francisco, CA 94105",
+  "path": "/san-francisco/south-beach/spear-street/300/unit-27b/",
+  "unit": "27B",
+  "apn": "3745322",
+  "block": "3745",
+  "lot": "322",
+  "parcel": {
+    "building_area_sqft": 1317,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1603261,
+    "assessed_improvement_value": 1068838,
+    "last_sale_date": "2008-10-09"
+  },
+  "permits": [
+    {
+      "number": "200902051461",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-02-05",
+      "status_date": "2009-05-15",
+      "estimated_cost": 29236,
+      "revised_cost": 29236,
+      "description": "work @ one unit only. remove & replace walls & floors tiles, shower pan, replace dry walls as necessary in both bathroom, remove & replace engineer hardwood floor in living room, dinning room, entry way & bedroom guest. remove & replace counter top only. sink, faucets due to water damage in",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3745322&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3745&unit=27B",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

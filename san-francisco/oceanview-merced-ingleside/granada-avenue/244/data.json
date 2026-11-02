@@ -1,0 +1,138 @@
+{
+  "address": "244 Granada Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/oceanview-merced-ingleside/granada-avenue/244/",
+  "apn": "6942039",
+  "block": "6942",
+  "lot": "039",
+  "eas_baseid": "409256",
+  "coordinates": {
+    "lat": 37.722853,
+    "lng": -122.45685
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2809,
+    "building_area_sqft": 1362,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Ingleside",
+    "analysis_neighborhood": "Oceanview/Merced/Ingleside",
+    "property_location_raw": "0000 0244 GRANADA             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 212076,
+    "assessed_improvement_value": 141378,
+    "last_sale_date": "2000-01-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201801047859",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-01-04",
+      "status_date": "2018-01-04",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "remodel existing kitchen @ 2nd floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200701051057",
+      "type": "new construction wood frame",
+      "status": "issued",
+      "filed": "2007-01-05",
+      "status_date": "2008-10-09",
+      "estimated_cost": 280000,
+      "revised_cost": 437169,
+      "description": "to erect a new 3-story, two units dwelling with no basement building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200210280107",
+      "type": "new construction wood frame",
+      "status": "withdrawn",
+      "filed": "2002-10-28",
+      "status_date": "2007-01-05",
+      "estimated_cost": 180000,
+      "description": "erect a 3 story 2 dwelling units",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200210280113",
+      "type": "demolitions",
+      "status": "expired",
+      "filed": "2002-10-28",
+      "status_date": "2012-02-13",
+      "description": "demolish a two story, single family dwelling building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9714404",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-07-31",
+      "status_date": "1998-05-29",
+      "estimated_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GRANADA&street_type=AVE&address_number=244",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6942039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6942&lot=039",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6942039",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2003-06-19",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 19 June 2003",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/53minutesofsanfran2003san/page/n373/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2003-06-19",
+      "kind": "occupancy",
+      "description": "An existing one-family house stood on the lot.",
+      "source": "sf-planning-commission-minutes-2003-06-19"
+    }
+  ]
+}

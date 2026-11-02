@@ -1,0 +1,58 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-35c/",
+  "unit": "35C",
+  "apn": "3719268",
+  "block": "3719",
+  "lot": "268",
+  "parcel": {
+    "building_area_sqft": 2170,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 983000,
+    "assessed_improvement_value": 983000,
+    "last_sale_date": "2013-04-18"
+  },
+  "permits": [
+    {
+      "number": "201008239402",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-08-23",
+      "status_date": "2011-06-08",
+      "estimated_cost": 55000,
+      "revised_cost": 55000,
+      "description": "masterbath: repl existing vanity, sinks, lights, shower/sink fixtures, repl (3) existing pocket doors at masterbath, closet & laundry room, relocate 2 existing outlets 9\" away at living rm & office,new lighting comply with cec, no change to exhaust system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201005051817",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-05-05",
+      "status_date": "2011-06-20",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "exploratory demo for plumbing at master bathroom and hallway bathroom within the unit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719268&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=35C",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

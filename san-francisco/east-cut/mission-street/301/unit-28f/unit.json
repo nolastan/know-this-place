@@ -1,0 +1,47 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-28f/",
+  "unit": "28F",
+  "apn": "3719229",
+  "block": "3719",
+  "lot": "229",
+  "parcel": {
+    "building_area_sqft": 1601,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 670500,
+    "assessed_improvement_value": 670500,
+    "last_sale_date": "2019-09-09"
+  },
+  "permits": [
+    {
+      "number": "201109195002",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-09-19",
+      "status_date": "2011-10-20",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "install new recessed lights at bedrooms, living room & dining room, 15 total lights, install new motorized shades in all rooms, remove carpet in bedrooms & install hardwood floor, work in #28f only. no structural work. comply with cec150(k) lighting required, remove 5/8 gyp. bd. to install lighting",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719229&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=28F",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

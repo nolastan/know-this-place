@@ -1,0 +1,46 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-37b/",
+  "unit": "37B",
+  "apn": "3719279",
+  "block": "3719",
+  "lot": "279",
+  "parcel": {
+    "building_area_sqft": 1652,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 760000,
+    "assessed_improvement_value": 760000,
+    "last_sale_date": "2012-07-11"
+  },
+  "permits": [
+    {
+      "number": "201809140242",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-09-14",
+      "status_date": "2018-09-19",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "one unit: remove counter and gyp board under window sill as shown on attached drawings for inspection of curtain wall fire stop at floor. repair wall as required. no alteration to curtain wall framing, and structure. maintain (e) fire rating. investigate curtain wall comnections.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719279&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=37B",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

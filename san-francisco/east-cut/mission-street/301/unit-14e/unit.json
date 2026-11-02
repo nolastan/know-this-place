@@ -1,0 +1,57 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-14e/",
+  "unit": "14E",
+  "apn": "3719112",
+  "block": "3719",
+  "lot": "112",
+  "parcel": {
+    "building_area_sqft": 1136,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 453500,
+    "assessed_improvement_value": 453500,
+    "last_sale_date": "2012-02-27"
+  },
+  "permits": [
+    {
+      "number": "202504043740",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2025-04-04",
+      "status_date": "2025-04-04",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "14th/fl: (one unit) re-install 7'x 10\" non load bearing wall dimising wall between living room and what was previously a 2nd bedroom. using metal stud and the sheetrock per original construction.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201204067782",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-04-06",
+      "status_date": "2012-07-02",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "one unit - replace (2) bathroom exhaust fans, demo door, demo wall between living room & 2nd bedroom, install wood flooring in ofrmer 2nd bedroom, frame tv & housephone niche.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719112&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=14E",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

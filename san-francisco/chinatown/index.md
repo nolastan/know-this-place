@@ -4,6 +4,7 @@ The oldest Chinese community in North America, on the slopes above Portsmouth Sq
 
 ## Streets documented so far
 
+- [August Alley](august-alley/) — 1 building, built 1912.
 - [Battery Street](battery-street/) — 1 building, built 1989.
 - [Beckett Street](beckett-street/) — 2 buildings, built 1908–1922; 2 in the Chinatown Historic District.
 - [Broadway](broadway/) — 4 buildings, built 1907; 4 in the Jackson Square Historic District Extension.

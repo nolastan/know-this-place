@@ -1,0 +1,130 @@
+{
+  "address": "625 Larkin Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/larkin-street/625/",
+  "block": "0740",
+  "eas_baseid": "471643",
+  "coordinates": {
+    "lat": 37.783624,
+    "lng": -122.417862
+  },
+  "parcel": {
+    "year_built": 1990,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "NA",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Tenderloin",
+    "analysis_neighborhood": "Tenderloin",
+    "units": 9
+  },
+  "condominium": {
+    "lots": [
+      "026",
+      "027",
+      "028",
+      "029",
+      "030",
+      "031",
+      "032",
+      "033",
+      "034"
+    ],
+    "method": "Proposed from the 2025 roll for block 0740: every condominium parcel the roll files under 625 LARKIN ST, and the unbroken run of lots beside parcel 0740026 on the same street with the same year built (1990). 9 lots, 026–034."
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1990",
+    "survey_name": "VACANT LOT",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Uptown Tenderloin Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1957",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202507241471",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-07-24",
+      "status_date": "2026-08-17",
+      "estimated_cost": 36900,
+      "revised_cost": 36900,
+      "description": "upgrade existing fire alarm system to comply with sffc section 1103.7.6.1.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202503263113",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2025-03-26",
+      "status_date": "2026-01-09",
+      "estimated_cost": 7500,
+      "revised_cost": 45215,
+      "description": "one unit: kitchen and bathroom. replace (e) cabinets, countertops, floor, tile, toilets, and appliances at the (e) location. paint the walls, no structural changes involved.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2017–2025",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LARKIN&street_type=ST&address_number=625",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 0740)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=0740&closed_roll_year=2025",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0740",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0740026",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4178616675149%2037.783624260846594)%27)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2003-05-15",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 15 May 2003",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/53minutesofsanfran2003san/page/n283/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2003-05-15",
+      "kind": "occupancy",
+      "description": "The second floor of the building currently contained office space.",
+      "source": "sf-planning-commission-minutes-2003-05-15"
+    }
+  ]
+}

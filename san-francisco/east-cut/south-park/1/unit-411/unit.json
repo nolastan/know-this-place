@@ -1,0 +1,35 @@
+{
+  "address": "1 South Park, San Francisco, CA 94107",
+  "path": "/san-francisco/east-cut/south-park/1/unit-411/",
+  "unit": "411",
+  "apn": "3775216",
+  "block": "3775",
+  "lot": "216",
+  "parcel": {
+    "building_area_sqft": 1581,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1154843,
+    "assessed_improvement_value": 769895,
+    "last_sale_date": "2023-05-05"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3775216&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3775&unit=411",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

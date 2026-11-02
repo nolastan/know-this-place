@@ -1,0 +1,58 @@
+{
+  "address": "1919 Octavia Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/octavia-street/1919/unit-4/",
+  "unit": "4",
+  "apn": "0639049",
+  "block": "0639",
+  "lot": "049",
+  "parcel": {
+    "building_area_sqft": 1720,
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1242360,
+    "assessed_improvement_value": 828240,
+    "last_sale_date": "2024-03-21"
+  },
+  "permits": [
+    {
+      "number": "202405132013",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-05-13",
+      "status_date": "2024-09-26",
+      "estimated_cost": 24000,
+      "revised_cost": 28000,
+      "description": "one unit: demo on suite bath new deck style tub wain scott tile and the floor, toilet, sheet rock and paint. all fixtures same location.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200809030700",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-09-03",
+      "status_date": "2009-01-23",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "change out kitchen cabinets ounters.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0639049&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0639&unit=4",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

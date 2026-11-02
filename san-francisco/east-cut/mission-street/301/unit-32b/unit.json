@@ -1,0 +1,57 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-32b/",
+  "unit": "32B",
+  "apn": "3719249",
+  "block": "3719",
+  "lot": "249",
+  "parcel": {
+    "building_area_sqft": 1652,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 753000,
+    "assessed_improvement_value": 753000,
+    "last_sale_date": "2010-06-10"
+  },
+  "permits": [
+    {
+      "number": "201012176925",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-12-17",
+      "status_date": "2011-08-24",
+      "estimated_cost": 2200,
+      "revised_cost": 2200,
+      "description": "one unit-b - t.i. - fire sprinklers, 2 delected heads, 2 relocated hsw heads, 1 relocated ceiling head.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201012106518",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-12-10",
+      "status_date": "2011-06-08",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "relolcate 1 non structural wall , add wood floors, 1 pocket door, closet cabnietry, demo bath",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719249&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=32B",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

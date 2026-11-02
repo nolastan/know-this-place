@@ -1,0 +1,53 @@
+{
+  "address": "222 Valencia Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/valencia-street/222/unit-1/",
+  "unit": "1",
+  "apn": "3533127",
+  "block": "3533",
+  "lot": "127",
+  "parcel": {
+    "building_area_sqft": 1042,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 567600,
+    "assessed_improvement_value": 378400,
+    "last_sale_date": "2018-02-07"
+  },
+  "permits": [
+    {
+      "number": "202511149656",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-11-14",
+      "status_date": "2026-01-20",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "comply with sffc section 1103.7.6.1 dba sound test: 9 units. all units tested more than 75 decibles, dba passed.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2015–2025",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3533127&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3533&unit=1",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

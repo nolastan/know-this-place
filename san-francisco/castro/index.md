@@ -37,6 +37,7 @@ are filed here, and say "Corbett Heights" under their address.
 - [Abbey Street](abbey-street/) — 10 buildings, built 1900–1924; 7 in the Chula-Abbey Early Residential District.
 - [Alma Street](alma-street/) — 1 building, built 1908; 1 in the Cole Valley Historic District.
 - [Alpine Terrace](alpine-terrace/) — 35 buildings, built 1900–2007.
+- [Annapolis Terrace](annapolis-terrace/) — 1 building, built 1939.
 - [Beaver Street](beaver-street/) — 43 buildings, built 1885–1991; 22 in the Duboce Triangle Historic District Extension.
 - [Belcher Street](belcher-street/) — 11 buildings, built 1900–1974; 5 in the Duboce Triangle Historic District.
 - [Belmont Avenue](belmont-avenue/) — 1 building, built 1977.

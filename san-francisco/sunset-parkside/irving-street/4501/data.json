@@ -1,0 +1,80 @@
+{
+  "address": "4501 Irving Street, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/irving-street/4501/",
+  "block": "1801",
+  "eas_baseid": "318255",
+  "coordinates": {
+    "lat": 37.762143,
+    "lng": -122.506234
+  },
+  "parcel": {
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "NA",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "units": 8
+  },
+  "condominium": {
+    "lots": [
+      "053",
+      "054",
+      "056",
+      "057",
+      "058",
+      "059",
+      "060",
+      "061"
+    ],
+    "method": "Proposed from the 2025 roll for block 1801: every condominium parcel the roll files under 4501 IRVING ST, and the unbroken run of lots beside parcel 1801061 on the same street with the same year built (None). 8 lots, 053–061."
+  },
+  "permits": [
+    {
+      "number": "202402286719",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-02-28",
+      "status_date": "2024-09-04",
+      "estimated_cost": 90000,
+      "revised_cost": 90000,
+      "description": "tmobile: remove (1)(e) antenna; install (6)(n) antennas within (n) screening; remove (e) equipment from (e) cabinet; no change to (e) electrical panel; no change to (e) batteries.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=IRVING&street_type=ST&address_number=4501",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 1801)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=1801&closed_roll_year=2025",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1801",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2001-06-28",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 28 June 2001",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/51minutesofsanfran2001san/page/n145/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2001-06-28",
+      "kind": "planning decision",
+      "description": "The City Planning Commission approved with revisions conditional-use authorization for a new mixed-use building with ten dwelling units, including two affordable units, 6-1.",
+      "source": "sf-planning-commission-minutes-2001-06-28"
+    }
+  ]
+}

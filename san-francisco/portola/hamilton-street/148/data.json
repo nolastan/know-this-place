@@ -1,0 +1,156 @@
+{
+  "address": "148 Hamilton Street, San Francisco, CA 94134",
+  "path": "/san-francisco/portola/hamilton-street/148/",
+  "apn": "5931006",
+  "block": "5931",
+  "lot": "006",
+  "eas_baseid": "452230",
+  "coordinates": {
+    "lat": 37.728928,
+    "lng": -122.411029
+  },
+  "parcel": {
+    "year_built": 2004,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3358,
+    "building_area_sqft": 2860,
+    "basement_area_sqft": 1105,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "NA",
+    "zoning": "RH-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Portola",
+    "analysis_neighborhood": "Portola",
+    "property_location_raw": "0000 0148 HAMILTON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 756139,
+    "assessed_improvement_value": 324056,
+    "last_sale_date": "2011-11-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "2004",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200404282511",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-04-28",
+      "status_date": "2004-07-08",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew app #200304162443/200110039904s",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200304162443",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-04-16",
+      "status_date": "2004-07-08",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "rev. to pa#2001/10/03/9904 - convert gable roof to flat roof at rear, intrior rearrangement, replace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200110039904",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "2001-10-03",
+      "status_date": "2004-07-08",
+      "estimated_cost": 180000,
+      "revised_cost": 230000,
+      "description": "erect a two story single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200110039899",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "2001-10-03",
+      "status_date": "2003-06-05",
+      "description": "demolish a one story single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8912617",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-07-18",
+      "status_date": "1989-07-31",
+      "estimated_cost": 1,
+      "description": "to change address on appn #8910644 (incorrect addrss)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8910649",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-06-20",
+      "status_date": "1989-07-31",
+      "estimated_cost": 1,
+      "description": "revision to new bldg. appln. #8715588",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAMILTON&street_type=ST&address_number=148",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5931006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5931&lot=006",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5931006",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2002-05-30",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 30 May 2002",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/52minutesofsanfran2002san/page/n259/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2002-05-30",
+      "kind": "planning decision",
+      "description": "The City Planning Commission did not take discretionary review and approved the demolition of the existing one-story over garage dwelling unit.",
+      "source": "sf-planning-commission-minutes-2002-05-30"
+    },
+    {
+      "date": "2002-05-30",
+      "kind": "occupancy",
+      "description": "The property held an existing one-story over garage dwelling unit.",
+      "source": "sf-planning-commission-minutes-2002-05-30"
+    }
+  ]
+}

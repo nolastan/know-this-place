@@ -1,0 +1,35 @@
+{
+  "address": "69 Clementina Street, San Francisco, CA 94105",
+  "path": "/san-francisco/south-of-market/clementina-street/69/unit-601/",
+  "unit": "601",
+  "apn": "3736171",
+  "block": "3736",
+  "lot": "171",
+  "parcel": {
+    "building_area_sqft": 1030,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 589200,
+    "assessed_improvement_value": 392800,
+    "last_sale_date": "2019-07-03"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3736171&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3736&unit=601",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

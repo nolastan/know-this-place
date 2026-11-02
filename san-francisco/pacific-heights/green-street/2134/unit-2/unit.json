@@ -1,0 +1,47 @@
+{
+  "address": "2134 Green Street, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/green-street/2134/unit-2/",
+  "unit": "2",
+  "apn": "0540050",
+  "block": "0540",
+  "lot": "050",
+  "parcel": {
+    "building_area_sqft": 2040,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1655484,
+    "assessed_improvement_value": 1103656,
+    "last_sale_date": "2022-05-02"
+  },
+  "permits": [
+    {
+      "number": "201102099924",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-02-09",
+      "status_date": "2011-10-24",
+      "estimated_cost": 63000,
+      "revised_cost": 63000,
+      "description": "construct stair from street level one unit to lower level. improve under level unit to accomodate bedroom, bath and laundry. sprinklers required for new work, to be submitted under separate permit.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0540050&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0540&unit=2",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

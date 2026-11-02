@@ -1,0 +1,114 @@
+{
+  "address": "52 Sheridan Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/sheridan-street/52/",
+  "block": "3519",
+  "eas_baseid": "358051",
+  "coordinates": {
+    "lat": 37.772593,
+    "lng": -122.411416
+  },
+  "parcel": {
+    "year_built": 2003,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "D",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "units": 10
+  },
+  "condominium": {
+    "lots": [
+      "084",
+      "085",
+      "086",
+      "087",
+      "088",
+      "089",
+      "090",
+      "091",
+      "092",
+      "093"
+    ],
+    "method": "Proposed from the 2025 roll for block 3519: every condominium parcel the roll files under 52 SHERIDAN ST, and the unbroken run of lots beside parcel 3519088 on the same street with the same year built (2003) — street numbers 52, 56. 10 lots, 084–093."
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "2003",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Western SOMA Light Industrial and Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1936",
+    "source": "sf-historic-districts"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHERIDAN&street_type=ST&address_number=52",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 3519)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=3519&closed_roll_year=2025",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3519",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3519088",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41141623852407%2037.77259268677153)%27)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2001-08-02",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 2 August 2001",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/51minutesofsanfran2001san/page/n183/mode/1up",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2001-08-09",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 9 August 2001",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/51minutesofsanfran2001san/page/n199/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2001-08-02",
+      "kind": "occupancy",
+      "description": "An existing single-family house stood on the site.",
+      "source": "sf-planning-commission-minutes-2001-08-02"
+    },
+    {
+      "date": "2001-08-09",
+      "kind": "planning decision",
+      "description": "The City Planning Commission approved the project with conditions, including that the architect continue to work with staff to improve the appearance of the side walls, 6-1.",
+      "source": "sf-planning-commission-minutes-2001-08-09"
+    }
+  ]
+}

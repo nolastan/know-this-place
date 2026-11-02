@@ -35,6 +35,7 @@ The city's Outer Richmond analysis neighborhood, running west from Park Presidio
 - [44th Avenue](44th-avenue/) — 1 building, built 1950.
 - [45th Avenue](45th-avenue/) — 2 buildings, built 1950.
 - [46th Avenue](46th-avenue/) — 2 buildings, built 1923.
+- [47th Avenue](47th-avenue/) — 1 building, built 1929.
 - [48th Avenue](48th-avenue/) — 2 buildings, built 1950.
 - [Anza Street](anza-street/) — 2 buildings, built 1919–1924.
 - [Balboa Street](balboa-street/) — 9 buildings, built 1915–1976.

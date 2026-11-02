@@ -1,0 +1,35 @@
+{
+  "address": "131 Missouri Street, San Francisco, CA 94107",
+  "path": "/san-francisco/mission/missouri-street/131/unit-302/",
+  "unit": "302",
+  "apn": "3985046",
+  "block": "3985",
+  "lot": "046",
+  "parcel": {
+    "building_area_sqft": 1462,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 816600,
+    "assessed_improvement_value": 544400,
+    "last_sale_date": "2019-11-27"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3985046&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3985&unit=302",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

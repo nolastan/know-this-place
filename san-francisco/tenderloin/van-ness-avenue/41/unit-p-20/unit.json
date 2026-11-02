@@ -1,0 +1,29 @@
+{
+  "address": "77 Van Ness Avenue, San Francisco, CA 94102",
+  "path": "/san-francisco/tenderloin/van-ness-avenue/41/unit-p-20/",
+  "unit": "P-20",
+  "apn": "0834105",
+  "block": "0834",
+  "lot": "105",
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 31331,
+    "assessed_improvement_value": 20886,
+    "last_sale_date": "2017-06-28"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0834105&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0834&unit=P-20",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

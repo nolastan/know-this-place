@@ -1,0 +1,35 @@
+{
+  "address": "3981 Alemany Boulevard, San Francisco, CA 94132",
+  "path": "/san-francisco/oceanview-merced-ingleside/alemany-boulevard/3995/unit-215/",
+  "unit": "215",
+  "apn": "7126A051",
+  "block": "7126A",
+  "lot": "051",
+  "parcel": {
+    "building_area_sqft": 948,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 238290,
+    "assessed_improvement_value": 158857,
+    "last_sale_date": "2010-11-05"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7126A051&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7126A&unit=215",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

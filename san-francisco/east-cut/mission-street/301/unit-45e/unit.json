@@ -1,0 +1,58 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-45e/",
+  "unit": "45E",
+  "apn": "3719324",
+  "block": "3719",
+  "lot": "324",
+  "parcel": {
+    "building_area_sqft": 1680,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 852500,
+    "assessed_improvement_value": 852500,
+    "last_sale_date": "2021-04-30"
+  },
+  "permits": [
+    {
+      "number": "201207245654",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-07-24",
+      "status_date": "2013-02-05",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "one unit - relocate 15 extg sprinkler heads to accomodate new design.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201206253395",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-06-25",
+      "status_date": "2013-02-12",
+      "estimated_cost": 450000,
+      "revised_cost": 450000,
+      "description": "full remodel to include new finishes on walls and floors,new plmb fixts, new appliances, new high efficacy lighting. new sliding glass door at living room area. new cabinets at kitchen, no structural work. no changes to extg exits, relocation of sprnkllers by others under seperate permit.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719324&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=45E",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

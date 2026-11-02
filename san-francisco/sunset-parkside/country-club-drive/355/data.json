@@ -1,0 +1,123 @@
+{
+  "address": "355 Country Club Drive, San Francisco, CA 94132",
+  "path": "/san-francisco/sunset-parkside/country-club-drive/355/",
+  "apn": "7274001",
+  "block": "7274",
+  "lot": "001",
+  "eas_baseid": "419770",
+  "coordinates": {
+    "lat": 37.732696,
+    "lng": -122.495503
+  },
+  "parcel": {
+    "year_built": 1953,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 4425,
+    "building_area_sqft": 2440,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Lake Shore",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 0355 COUNTRY CLUB        DR0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 360731,
+    "assessed_improvement_value": 630666,
+    "last_sale_date": "2001-07-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1953",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200501213731",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-01-21",
+      "status_date": "2005-03-16",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew appl#200108216532 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108216532",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2001-08-21",
+      "status_date": "2005-03-16",
+      "estimated_cost": 120000,
+      "revised_cost": 200000,
+      "description": "second floor addition-vertical addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=COUNTRY%20CLUB&street_type=DR&address_number=355",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7274001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7274&lot=001",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7274001",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2002-04-25",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 25 April 2002",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/52minutesofsanfran2002san/page/n187/mode/1up",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2002-05-30",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 30 May 2002",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/52minutesofsanfran2002san/page/n256/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2002-04-25",
+      "kind": "occupancy",
+      "description": "The property held an existing one-story, single-family dwelling.",
+      "source": "sf-planning-commission-minutes-2002-04-25"
+    },
+    {
+      "date": "2002-05-30",
+      "kind": "planning decision",
+      "description": "The City Planning Commission took discretionary review and approved the second-floor vertical addition as modified, limiting it to no more than 900 square feet of floor area and requiring a single entry door, final action after the April 25, 2002 motions both failed.",
+      "source": "sf-planning-commission-minutes-2002-05-30"
+    }
+  ]
+}

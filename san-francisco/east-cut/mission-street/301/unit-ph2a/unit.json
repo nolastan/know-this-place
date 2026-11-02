@@ -1,0 +1,80 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-ph2a/",
+  "unit": "PH2A",
+  "apn": "3719384",
+  "block": "3719",
+  "lot": "384",
+  "parcel": {
+    "building_area_sqft": 5555,
+    "rooms": 11,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 6583206,
+    "assessed_improvement_value": 9621843,
+    "last_sale_date": "2009-12-31"
+  },
+  "permits": [
+    {
+      "number": "201101208645",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-01-20",
+      "status_date": "2012-03-19",
+      "estimated_cost": 3600,
+      "revised_cost": 12813,
+      "description": "fire alarm t.i.,12 speakers,12-120 vac smoke detectors.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201010132826",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2010-10-13",
+      "status_date": "2012-02-03",
+      "estimated_cost": 19500,
+      "revised_cost": 19500,
+      "description": "fire sprinkler ti. 65 sprinklers",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201005253162",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2010-05-25",
+      "status_date": "2012-04-04",
+      "estimated_cost": 2450000,
+      "revised_cost": 2450000,
+      "description": "floor #59, unit#ph2a residential condo; complete build-out from rough shell, includes framing, plumbing, elect., hvac, fire sprinkler, audio/video, tile cabinets, stonework, flooring, insulation, painting, finish carpentry, window treatment, fireplace alcoholic burner appliances.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201002236993",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-02-23",
+      "status_date": "2010-02-23",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "59th floor-new plumbing fixture connection to (e) drain & vents for future finish plumbing & future residential t.i. remove & patch sheet ceiling at floor 58, lower ceiling & add soffit in living area phic, patch & remove sheetrock phia for access to plumbing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719384&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=PH2A",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "address": "88 2nd Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-beach/2nd-street/699/unit-88-117-lot-117z/",
+  "unit": "-117",
+  "apn": "3789117Z",
+  "block": "3789",
+  "lot": "117Z",
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_improvement_value": 108161,
+    "last_sale_date": "2014-12-16"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3789117Z&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3789&unit=-117",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

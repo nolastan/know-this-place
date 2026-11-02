@@ -1,0 +1,32 @@
+{
+  "address": "199 New Montgomery Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/new-montgomery-street/199/unit-606/",
+  "unit": "606",
+  "apn": "3722141",
+  "block": "3722",
+  "lot": "141",
+  "parcel": {
+    "building_area_sqft": 787
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 369379,
+    "assessed_improvement_value": 369379,
+    "last_sale_date": "2005-03-03"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3722141&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3722&unit=606",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

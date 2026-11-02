@@ -1,0 +1,112 @@
+{
+  "address": "1 South Park, San Francisco, CA 94107",
+  "path": "/san-francisco/east-cut/south-park/1/",
+  "block": "3775",
+  "eas_baseid": "477680",
+  "coordinates": {
+    "lat": 37.782155,
+    "lng": -122.392968
+  },
+  "parcel": {
+    "year_built": 2007,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "NA",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Financial District South",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "units": 36
+  },
+  "condominium": {
+    "lots": [
+      "181",
+      "182",
+      "183",
+      "184",
+      "185",
+      "186",
+      "187",
+      "188",
+      "189",
+      "190",
+      "191",
+      "192",
+      "193",
+      "194",
+      "195",
+      "196",
+      "197",
+      "198",
+      "199",
+      "200",
+      "201",
+      "202",
+      "203",
+      "204",
+      "205",
+      "206",
+      "207",
+      "208",
+      "209",
+      "210",
+      "211",
+      "212",
+      "213",
+      "214",
+      "215",
+      "216"
+    ],
+    "method": "Proposed from the 2025 roll for block 3775: every condominium parcel the roll files under 1 SOUTH PARK, and the unbroken run of lots beside parcel 3775182 on the same street with the same year built (2007). 36 lots, 181–216."
+  },
+  "historic_district": {
+    "name": "South End Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1867–1935",
+    "source": "sf-historic-districts"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SOUTH%20PARK&street_type=&address_number=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 3775)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=3775&closed_roll_year=2025",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3775",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.39296755665961%2037.78215485722851)%27)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2001-10-11",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 11 October 2001",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/51minutesofsanfran2001san/page/n308/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2001-10-11",
+      "kind": "occupancy",
+      "description": "An existing manufacturing building stood on the site.",
+      "source": "sf-planning-commission-minutes-2001-10-11"
+    }
+  ]
+}

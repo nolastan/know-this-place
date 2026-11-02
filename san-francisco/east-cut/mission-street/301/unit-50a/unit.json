@@ -1,0 +1,79 @@
+{
+  "address": "301 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/301/unit-50a/",
+  "unit": "50A",
+  "apn": "3719348",
+  "block": "3719",
+  "lot": "348",
+  "parcel": {
+    "building_area_sqft": 2706,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1398500,
+    "assessed_improvement_value": 1398500,
+    "last_sale_date": "2012-08-16"
+  },
+  "permits": [
+    {
+      "number": "201803295048",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-03-29",
+      "status_date": "2018-03-29",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "ur&r gyp board at flr slab edge. to review fire resistive construction at control wall, heat pump penetrations fire rated demissing walls ferred sofits, opening to be restored to match (e) fire rated construction",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201210152013",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-10-15",
+      "status_date": "2012-10-23",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "fire sprinkler permit. relocate 4 sidewalls and 1 pendent sprinkler",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201208227979",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-08-22",
+      "status_date": "2012-11-19",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "50th floor, one unit: ti of (e) unit including dropped ceiling in living & study room. changes to non-structural partitions, lighting & power. no structural work. no additions or alterations to common area or bldg envelope.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M343887",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-08-22",
+      "status_date": "2012-08-22",
+      "revised_cost": 159,
+      "description": "add unit number# 50a for 301 mission street.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3719348&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3719&unit=50A",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}
