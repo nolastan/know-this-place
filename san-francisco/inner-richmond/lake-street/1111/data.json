@@ -1,0 +1,186 @@
+{
+  "address": "1111 Lake Street, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/lake-street/1111/",
+  "apn": "1372048",
+  "block": "1372",
+  "lot": "048",
+  "eas_baseid": "301555",
+  "coordinates": {
+    "lat": 37.786164,
+    "lng": -122.47139
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 1515.12,
+    "building_area_sqft": 2236,
+    "basement_area_sqft": 315,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0000 1111 LAKE                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 99899,
+    "assessed_improvement_value": 491802
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202208261361",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-08-26",
+      "status_date": "2022-10-03",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200309235561",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-09-23",
+      "status_date": "2003-11-10",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew app 200302248088 and 200003275485 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200302248088",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-02-24",
+      "status_date": "2003-11-10",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew#200003275485 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200208053132",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-08-05",
+      "status_date": "2002-08-05",
+      "estimated_cost": 8350,
+      "revised_cost": 8350,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200003275485",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2000-03-27",
+      "status_date": "2003-11-10",
+      "estimated_cost": 106000,
+      "revised_cost": 126000,
+      "description": "horizontal addition at rear",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9214750",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-09-01",
+      "status_date": "1992-11-17",
+      "estimated_cost": 3800,
+      "description": "install new steel beams at exist garage w/6x6 wooden posts",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9101039S",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1991-01-24",
+      "status_date": "1991-11-12",
+      "estimated_cost": 200000,
+      "revised_cost": 225000,
+      "description": "convert portion of (e) garage to living space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9001520",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-01-23",
+      "status_date": "1990-03-21",
+      "estimated_cost": 2500,
+      "description": "repair fireplace. replace existing with metal flue.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 9,
+    "range": "1990–2022",
+    "shown_on_page": 8,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LAKE&street_type=ST&address_number=1111",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1372048&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1372&lot=048",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1372048",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2000-09-21",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 21 September 2000",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/49minutesofsanfran2000san/page/n100/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2000-09-21",
+      "kind": "planning decision",
+      "description": "The City Planning Commission did not take discretionary review and approved constructing a five foot by fourteen foot, three-story horizontal addition at the rear and a three foot by twelve foot addition at the side of a three-story single-family house, 6-0.",
+      "source": "sf-planning-commission-minutes-2000-09-21"
+    },
+    {
+      "date": "2000-09-21",
+      "kind": "occupancy",
+      "description": "A three-story single-family house stood on the site.",
+      "source": "sf-planning-commission-minutes-2000-09-21"
+    }
+  ]
+}

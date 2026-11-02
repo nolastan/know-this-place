@@ -39,6 +39,7 @@ are filed here, and say "Corbett Heights" under their address.
 - [Alpine Terrace](alpine-terrace/) — 35 buildings, built 1900–2007.
 - [Beaver Street](beaver-street/) — 43 buildings, built 1885–1991; 22 in the Duboce Triangle Historic District Extension.
 - [Belcher Street](belcher-street/) — 11 buildings, built 1900–1974; 5 in the Duboce Triangle Historic District.
+- [Belmont Avenue](belmont-avenue/) — 1 building, built 1977.
 - [Belvedere Street](belvedere-street/) — 1 building, built 1906; 1 in the Cole Valley Historic District.
 - [Boynton Court](boynton-court/) — 3 buildings, built 1890–1900; 3 in the Duboce Triangle Historic District.
 - [Buena Vista Avenue](buena-vista-avenue/) — 18 buildings, built 1895–2010.
@@ -114,6 +115,7 @@ are filed here, and say "Corbett Heights" under their address.
 - [Sharon Street](sharon-street/) — 21 buildings, built 1900–1968.
 - [Short Street](short-street/) — 9 buildings, built 1908–1977.
 - [Shrader Street](shrader-street/) — 2 buildings, built 1910–1913.
+- [Starview Way](starview-way/) — 1 building, built 1956.
 - [States Street](states-street/) — 49 buildings, built 1890–2015; 1 in the Duboce Triangle Historic District Extension.
 - [Storrie Street](storrie-street/) — 1 building, built 1902.
 - [Temple Street](temple-street/) — 4 buildings, built 1910–1929.

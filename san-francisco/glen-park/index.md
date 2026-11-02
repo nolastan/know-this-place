@@ -14,6 +14,7 @@ Diamond and Chenery and evaluated eight of them in detail.
 - [30th Street](30th-street/) — 1 building, built 1880.
 - [Addison Street](addison-street/) — 1 building, built 1972.
 - [Amber Drive](amber-drive/) — 1 building, built 1900.
+- [Arbor Street](arbor-street/) — 1 building, built 2001.
 - [Arlington Street](arlington-street/) — 1 building, built 1938.
 - [Baden Street](baden-street/) — 1 building, built 1939.
 - [Beacon Street](beacon-street/) — 1 building, built 1963.
@@ -28,6 +29,7 @@ Diamond and Chenery and evaluated eight of them in detail.
 - [Elk Street](elk-street/) — 1 building.
 - [Everson Street](everson-street/) — 1 building, built 1963.
 - [Fairmount Street](fairmount-street/) — 1 building, built 1907.
+- [Glenview Drive](glenview-drive/) — 1 building, built 1951.
 - [Gold Mine Drive](gold-mine-drive/) — 1 building, built 1963.
 - [Joost Avenue](joost-avenue/) — 2 buildings, built 1910–1926.
 - [Laidley Street](laidley-street/) — 1 building, built 1900.

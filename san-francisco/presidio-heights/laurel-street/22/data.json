@@ -1,0 +1,111 @@
+{
+  "address": "22 Laurel Street, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/laurel-street/22/",
+  "apn": "0972011A",
+  "block": "0972",
+  "lot": "011A",
+  "eas_baseid": "291686",
+  "coordinates": {
+    "lat": 37.790895,
+    "lng": -122.450741
+  },
+  "parcel": {
+    "year_built": 1922,
+    "units": 1,
+    "stories": 3,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 960,
+    "building_area_sqft": 2558,
+    "lot_depth_ft": 40,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Presidio Heights",
+    "analysis_neighborhood": "Presidio Heights",
+    "property_location_raw": "0000 0022 LAUREL              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 229955,
+    "assessed_improvement_value": 867215,
+    "last_sale_date": "1990-05-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200310097026",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-10-09",
+      "status_date": "2003-10-09",
+      "estimated_cost": 16800,
+      "revised_cost": 16800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9927215S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1999-12-29",
+      "status_date": "2003-01-28",
+      "estimated_cost": 350000,
+      "revised_cost": 350000,
+      "description": "partial demo of (e) house/addition of (n) house",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LAUREL&street_type=ST&address_number=22",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0972011A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0972&lot=011A",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0972011A",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2000-09-14",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 14 September 2000",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/49minutesofsanfran2000san/page/n70/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2000-09-14",
+      "kind": "occupancy",
+      "description": "An existing two-story dwelling stood on the site.",
+      "source": "sf-planning-commission-minutes-2000-09-14"
+    }
+  ]
+}

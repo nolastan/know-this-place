@@ -55,6 +55,7 @@ The city's Sunset/Parkside analysis neighborhood — the avenues laid out across
 - [Rivera Street](rivera-street/) — 1 building, built 1941.
 - [Santiago Street](santiago-street/) — 2 buildings, built 1949.
 - [Sloat Boulevard](sloat-boulevard/) — 1 building, built 1947.
+- [Sylvan Drive](sylvan-drive/) — 1 building, built 1950.
 - [Taraval Street](taraval-street/) — 3 buildings, built 1924–1975.
 - [Ulloa Street](ulloa-street/) — 2 buildings, built 1917–1926.
 - [Vicente Street](vicente-street/) — 1 building, built 1950.

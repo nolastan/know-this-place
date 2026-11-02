@@ -1,0 +1,109 @@
+{
+  "address": "326 18th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/18th-avenue/326/",
+  "apn": "1449033",
+  "block": "1449",
+  "lot": "033",
+  "eas_baseid": "304288",
+  "coordinates": {
+    "lat": 37.78182,
+    "lng": -122.477008
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 1,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 2320,
+    "basement_area_sqft": 220,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0326 18TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 669018,
+    "assessed_improvement_value": 445998,
+    "last_sale_date": "2001-04-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9923203",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-11-02",
+      "status_date": "2000-03-02",
+      "estimated_cost": 3200,
+      "description": "remove and replace existing deck, (pitched portion of roof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9914207",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1999-07-13",
+      "status_date": "2002-06-01",
+      "estimated_cost": 20000,
+      "revised_cost": 29000,
+      "description": "to construct a parking garage at front & rebuild f stairs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=AVE&address_number=326",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1449033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1449&lot=033",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1449033",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2000-03-02",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 2 March 2000",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/47minutesofsanfran2000san/page/n158/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2000-03-02",
+      "kind": "planning decision",
+      "description": "The City Planning Commission took discretionary review and disapproved the project constructing a new two-car garage, 4-3.",
+      "source": "sf-planning-commission-minutes-2000-03-02"
+    }
+  ]
+}

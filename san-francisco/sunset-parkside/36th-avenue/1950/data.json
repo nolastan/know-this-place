@@ -1,0 +1,129 @@
+{
+  "address": "1950 36th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/36th-avenue/1950/",
+  "apn": "2099002D",
+  "block": "2099",
+  "lot": "002D",
+  "eas_baseid": "328849",
+  "coordinates": {
+    "lat": 37.750622,
+    "lng": -122.494166
+  },
+  "parcel": {
+    "year_built": 1957,
+    "units": 1,
+    "stories": 1,
+    "rooms": 9,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 2900,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1950 36TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 391919,
+    "assessed_improvement_value": 517521,
+    "last_sale_date": "1999-01-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1957",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200311059455",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-11-05",
+      "status_date": "2004-10-19",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "underpinning common foundation southwall in conjunction w/job at 1954 36th ave, app 200106151684si",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9911130",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-06-07",
+      "status_date": "2001-01-05",
+      "estimated_cost": 1,
+      "description": "per app #9824250 raise main wall/revise 3rd flr walls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9824250S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1998-11-24",
+      "status_date": "2001-01-05",
+      "estimated_cost": 80000,
+      "description": "alteration & vertical addition add bedrms fam rm bath rms",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9221650",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-12-16",
+      "status_date": "1993-04-02",
+      "estimated_cost": 2600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=36TH&street_type=AVE&address_number=1950",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2099002D&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2099&lot=002D",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2099002D",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1999-03-25",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 25 March 1999",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/46minutesofsanfran1999san/page/n104/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1999-03-25",
+      "kind": "occupancy",
+      "description": "An existing one-story-over-garage single-family dwelling stood on the lot.",
+      "source": "sf-planning-commission-minutes-1999-03-25"
+    }
+  ]
+}

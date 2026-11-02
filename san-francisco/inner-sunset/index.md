@@ -40,6 +40,7 @@ The blocks between Golden Gate Park and Mount Sutro, laid out along the Muni N-J
 - [Moraga Street](moraga-street/) — 1 building, built 1902.
 - [Ninth Avenue](9th-avenue/) — 39 buildings, built 1900–1990.
 - [Noriega Street](noriega-street/) — 1 building, built 1911.
+- [Olympia Way](olympia-way/) — 1 building, built 1957.
 - [Ortega Street](ortega-street/) — 1 building, built 1914.
 - [Pacheco Street](pacheco-street/) — 1 building, built 1958.
 - [Parnassus Avenue](parnassus-avenue/) — 2 buildings, built 1912–1925.
