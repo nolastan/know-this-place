@@ -1,0 +1,184 @@
+{
+  "address": "1993 14th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/inner-sunset/14th-avenue/1993/",
+  "apn": "2120B010",
+  "block": "2120B",
+  "lot": "010",
+  "eas_baseid": "329717",
+  "coordinates": {
+    "lat": 37.750896,
+    "lng": -122.471172
+  },
+  "parcel": {
+    "year_built": 2001,
+    "units": 1,
+    "stories": 3,
+    "rooms": 9,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 3942,
+    "building_area_sqft": 3363,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Golden Gate Heights",
+    "analysis_neighborhood": "Inner Sunset",
+    "property_location_raw": "0000 1993 14TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1479122,
+    "assessed_improvement_value": 986078,
+    "last_sale_date": "2006-11-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "2001",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201405014660",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-05-01",
+      "status_date": "2014-08-12",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "revision to appl #2013.1226.5081 - replace (e) railing system around rear deck.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201312265081",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-12-26",
+      "status_date": "2014-06-03",
+      "estimated_cost": 165000,
+      "revised_cost": 165000,
+      "description": "revision to permit #201308235090. remove and reinstall all windows install proper flasing. remove replace siding and trim. remove and replace deck railing. replace 3 windows on front elevation.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201308235090",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-08-23",
+      "status_date": "2014-08-12",
+      "estimated_cost": 4800,
+      "revised_cost": 4800,
+      "description": "remove & reset sliding glass door to install new pan & flashing @ back of house. remove and replace main door and install new pan & flashing. same location and same size. u factor more or less .4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200201157016",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-01-15",
+      "status_date": "2002-05-15",
+      "estimated_cost": 200,
+      "revised_cost": 200,
+      "description": "enlarge curb cut from 10-0 to 14-0 to accomodate 14' garage door",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200111052451",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-11-05",
+      "status_date": "2001-12-17",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "rev to 200005049093 & 9707015 as per as-built plans",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200005049093",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2000-05-04",
+      "status_date": "2001-12-17",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "rev. to pa#9707015-revise layout & construction plan in its entirety",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200004056505",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2000-04-05",
+      "status_date": "2001-08-22",
+      "estimated_cost": 1,
+      "description": "revisions to appln #9707015 foundation & framing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9707014",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "1997-04-18",
+      "status_date": "2001-12-17",
+      "description": "demolition of one family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9707015S",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1997-04-18",
+      "status_date": "2001-12-17",
+      "estimated_cost": 150000,
+      "revised_cost": 320000,
+      "description": "erect a three story single family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=14TH&street_type=AVE&address_number=1993",
+      "retrieved": "2026-10-31"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2120B010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-10-31"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2120B&lot=010",
+      "retrieved": "2026-10-31"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2120B010",
+      "retrieved": "2026-10-31"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1998-01-22",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 22 January 1998",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/45minutesofsanfran1998san/page/n64/mode/1up",
+      "retrieved": "2026-10-31"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1998-01-22",
+      "kind": "planning decision",
+      "description": "On discretionary review, the City Planning Commission approved, 6-0, as modified, the demolition of the single-family house and a new one in its place.",
+      "source": "sf-planning-commission-minutes-1998-01-22"
+    }
+  ]
+}

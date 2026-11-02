@@ -61,6 +61,7 @@ San Francisco's south-eastern quarter, settled from the 1860s as the industrial 
 - [Quint Street](quint-street/) — 1 building.
 - [Rankin Street](rankin-street/) — 1 building, built 1962.
 - [Revere Avenue](revere-avenue/) — 1 building, built 1900.
+- [Rickard Street](rickard-street/) — 1 building.
 - [San Bruno Avenue](san-bruno-avenue/) — 1 building, built 1906.
 - [Scotia Avenue](scotia-avenue/) — 1 building, built 1945.
 - [Selby Street](selby-street/) — 1 building, built 1951.
