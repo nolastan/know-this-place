@@ -1,0 +1,80 @@
+{
+ "source_id": "sf-standard",
+ "batch": "2026-10-30",
+ "read_on": "2026-10-30",
+ "notes": "Run of 2026-10-30. Scientology's purchase of 650 Sacramento earns an entry (this account carries it; SFist's account of the same sale is declined in sfist/2026-10-30.json). 701 Montgomery is only the church's existing HQ.",
+ "coverage": {
+  "unit": "articles",
+  "examined": 3,
+  "mentions": 2,
+  "remaining": "none"
+ },
+ "findings": [
+  {
+   "id": "2026-10-30-0001",
+   "date": "2026-10-26",
+   "date_precision": "day",
+   "kind": "sale",
+   "address_as_written": "650 Sacramento St.",
+   "street_number": "650",
+   "street_type": "ST",
+   "street_name": "SACRAMENTO",
+   "description": "650 Sacramento St., a century-old three-story office building on the edge of the Financial District, sold for about $2.1M, closed Monday 26 October 2026, previously bought out of foreclosure and marketed for years in shell condition. Buyer is an organization (church), seller names omitted. Construction year differs between outlets (1908/1909) so no building block.",
+   "extra": {
+    "price": "$2.1 million (SFist: $2.2 million)"
+   },
+   "citation": {
+    "label": "The San Francisco Standard, “Church of Scientology just bought an old building near its SF headquarters,” 29 October 2026",
+    "url": "https://sfstandard.com/2026/10/29/scientology-expansion-san-francisco-real-estate-/"
+   },
+   "raw": {
+    "text": "Church of Scientology just bought an old building near its SF headquarters"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0227013",
+    "path": "/san-francisco/nob-hill/sacramento-street/648/",
+    "eas_address": "648 SACRAMENTO ST",
+    "method": "EAS exact match on 650 SACRAMENTO ST → parcel 0227013; sf-parcels has blklot 0227013 active, 648–656 SACRAMENTO; the 2025 roll records it as commercial office, built 1909. EAS puts 648, 650, 654, 656 SACRAMENTO ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 648.",
+    "checked_on": "2026-10-30"
+   },
+   "publish": {
+    "status": "published",
+    "note": "Timeline entry and homepage card added on /san-francisco/nob-hill/sacramento-street/648/."
+   }
+  },
+  {
+   "id": "2026-10-30-0002",
+   "date": "2026-10-29",
+   "date_precision": "day",
+   "kind": "mention",
+   "address_as_written": "701 Montgomery St.",
+   "street_number": "701",
+   "street_type": "ST",
+   "street_name": "MONTGOMERY",
+   "description": "Existing church HQ named in passing as context for the 650 Sacramento purchase; not the subject.",
+   "extra": {},
+   "citation": {
+    "label": "The San Francisco Standard, “Church of Scientology just bought an old building near its SF headquarters,” 29 October 2026",
+    "url": "https://sfstandard.com/2026/10/29/scientology-expansion-san-francisco-real-estate-/"
+   },
+   "raw": {
+    "text": ""
+   },
+   "confidence": "high",
+   "publish": {
+    "status": "declined",
+    "note": "Named in passing as the church's existing headquarters; the story is about 650 Sacramento. Fails the ten-year test for this page."
+   },
+   "resolution": {
+    "status": "resolved",
+    "apn": "0195002",
+    "path": "/san-francisco/chinatown/columbus-avenue/4/",
+    "eas_address": "701 MONTGOMERY ST",
+    "method": "EAS exact match on 701 MONTGOMERY ST → parcel 0195002; sf-parcels has blklot 0195002 active, 4–36 COLUMBUS; the 2025 roll records it as commercial office, built 1911. The assessor files the parcel as 34–36 COLUMBUS AV.",
+    "checked_on": "2026-10-30"
+   }
+  }
+ ]
+}
