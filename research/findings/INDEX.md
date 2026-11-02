@@ -229,8 +229,8 @@ sit in — the three it touched most, and how many in all.
 | `sf-planning-commission-minutes/minutes-1997-h1.json` | 128 | 245 KB | 1997 | 95 | 93 | `castro`, `mission`, `north-beach` +30 |
 | `sf-planning-commission-minutes/minutes-1997-h2.json` | 142 | 274 KB | 1997 | 97 | 97 | `castro`, `noe-valley`, `inner-sunset` +30 |
 | `sf-planning-commission-minutes/minutes-1998.json` | 246 | 462 KB | 1912–1998 | 165 | 164 | `mission`, `sunset-parkside`, `marina` +31 |
-| `sf-planning-commission-minutes/minutes-1999.json` | 417 | 790 KB | 1999 | 284 | 269 | `mission`, `castro`, `pacific-heights` +32 |
-| `sf-planning-commission-minutes/minutes-2000.json` | 583 | 1.1 MB | 2000 | 402 | 368 | `mission`, `castro`, `east-cut` +35 |
+| `sf-planning-commission-minutes/minutes-1999.json` | 417 | 813 KB | 1999 | 287 | 271 | `mission`, `castro`, `pacific-heights` +32 |
+| `sf-planning-commission-minutes/minutes-2000.json` | 583 | 1.2 MB | 2000 | 407 | 373 | `mission`, `castro`, `east-cut` +35 |
 | `spur-popos-guide/popos-guide.json` | 56 | 86 KB | 1959–2008 | 54 | 3 | `east-cut`, `financial-district`, `south-beach` +2 |
 
 ## Manifests
