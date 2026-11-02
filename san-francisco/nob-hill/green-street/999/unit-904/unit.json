@@ -1,0 +1,68 @@
+{
+  "address": "999 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/green-street/999/unit-904/",
+  "unit": "904",
+  "apn": "0127032",
+  "block": "0127",
+  "lot": "032",
+  "parcel": {
+    "building_area_sqft": 1681,
+    "rooms": 5,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1271689,
+    "assessed_improvement_value": 847792,
+    "last_sale_date": "2018-08-08"
+  },
+  "permits": [
+    {
+      "number": "200701051046",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-01-05",
+      "status_date": "2008-01-03",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "kitchen finishes and fixtures upgrade. electrical and plumbing upgrade. removal of (e) non structural partition wall. no structural work to be done.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200509304460",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-09-30",
+      "status_date": "2005-10-04",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew #200307300727,#200410267714.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200410267714",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-10-26",
+      "status_date": "2005-10-04",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to renew for final 200307300727",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0127032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127&unit=904",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

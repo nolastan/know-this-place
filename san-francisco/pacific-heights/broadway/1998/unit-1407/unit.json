@@ -1,0 +1,47 @@
+{
+  "address": "1998 Broadway, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/broadway/1998/unit-1407/",
+  "unit": "1407",
+  "apn": "0567105",
+  "block": "0567",
+  "lot": "105",
+  "parcel": {
+    "building_area_sqft": 1030,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 971005,
+    "assessed_improvement_value": 647336,
+    "last_sale_date": "2022-01-11"
+  },
+  "permits": [
+    {
+      "number": "201605177682",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-05-17",
+      "status_date": "2016-05-17",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "#1407 - replace kitchen countertops (only); re-face bath bathrooms (bathroom 1 & masterbath), new tiles, tub, tub enclosure, a shower pan, plumbing in new shower and tub valves and install new elect. & plumbing fixtures (leave cabinet)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0567105&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0567&unit=1407",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

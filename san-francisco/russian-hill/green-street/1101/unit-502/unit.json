@@ -1,0 +1,58 @@
+{
+  "address": "1101 Green Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/green-street/1101/unit-502/",
+  "unit": "502",
+  "apn": "0125038",
+  "block": "0125",
+  "lot": "038",
+  "parcel": {
+    "building_area_sqft": 930,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 778050,
+    "assessed_improvement_value": 518700,
+    "last_sale_date": "2021-02-09"
+  },
+  "permits": [
+    {
+      "number": "200807257668",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-07-25",
+      "status_date": "2009-01-08",
+      "estimated_cost": 6400,
+      "revised_cost": 6400,
+      "description": "work @ one unit only. remodel bathroom. change fixtures, add shower door in bathroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200406297626",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-06-29",
+      "status_date": "2004-06-29",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "kitchen remodel.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0125038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0125&unit=502",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "address": "999 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/green-street/999/unit-3001/",
+  "unit": "3001",
+  "apn": "0127129",
+  "block": "0127",
+  "lot": "129",
+  "parcel": {
+    "building_area_sqft": 1409,
+    "rooms": 5,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2734114,
+    "assessed_improvement_value": 1415203,
+    "last_sale_date": "2019-07-16"
+  },
+  "permits": [
+    {
+      "number": "202409110552",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-09-11",
+      "status_date": "2024-09-16",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspector for work approved under 201911086870. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201911086870",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2019-11-08",
+      "status_date": "2024-09-17",
+      "estimated_cost": 35000,
+      "revised_cost": 50000,
+      "description": "relocate non-street facing north window wall to enclose balcony per za builletin 4 & za interpretation. 311 upper floor voids 1/07",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201910245497",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-10-24",
+      "status_date": "2021-12-07",
+      "estimated_cost": 47000,
+      "revised_cost": 47000,
+      "description": "demo and replacement of all interior finishes including cabinetry, counter tops, hardwood flooring, tile and plumbing fixtures and drywall and framing (no structural) as necessary in kitchen and bathroom. new led lights fixtures, replacement of windows at north and",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200404080818",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-04-08",
+      "status_date": "2004-06-16",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "#3001- skimcoat ceiling,add crown molding,paint",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0127129&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127&unit=3001",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

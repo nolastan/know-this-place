@@ -1,0 +1,46 @@
+{
+  "address": "655 Corbett Avenue, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/corbett-avenue/655/unit-407/",
+  "unit": "407",
+  "apn": "2717083",
+  "block": "2717",
+  "lot": "083",
+  "parcel": {
+    "building_area_sqft": 673,
+    "rooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 366000,
+    "assessed_improvement_value": 244000,
+    "last_sale_date": "2014-03-11"
+  },
+  "permits": [
+    {
+      "number": "201404022238",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-04-02",
+      "status_date": "2014-08-28",
+      "estimated_cost": 13240,
+      "revised_cost": 13240,
+      "description": "renovate bathroom, replace tub vanity, sin, cabinet, replace (e) exhaust fan, washer/dryer. replace light fixt, outlet, install plumb. lighting & control per cec 150(k). install recessed lighting in bdrm & living room.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2717083&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2717&unit=407",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "address": "999 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/green-street/999/unit-2601/",
+  "unit": "2601",
+  "apn": "0127109",
+  "block": "0127",
+  "lot": "109",
+  "parcel": {
+    "building_area_sqft": 1328,
+    "rooms": 5,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1673277,
+    "assessed_improvement_value": 1227068,
+    "last_sale_date": "2019-04-03"
+  },
+  "permits": [
+    {
+      "number": "202402125695",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-02-12",
+      "status_date": "2024-02-20",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "one unit-add a wood soffit @ guest bedroom measuring approx 8\" x 3\" x 3' and a wood soffit at hallway measuring approx 4\" x 3\" x 3' to conceal conduits for fire alarm.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201112120478",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-12-12",
+      "status_date": "2011-12-12",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "remove extg countertop and replace with new one in kitchen. remove lenolium in two 3'x5' baths area and install new 12\"x12\" tile only",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0127109&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127&unit=2601",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

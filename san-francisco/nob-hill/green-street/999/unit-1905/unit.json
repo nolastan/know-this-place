@@ -1,0 +1,64 @@
+{
+  "address": "999 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/green-street/999/unit-1905/",
+  "unit": "1905",
+  "apn": "0127078",
+  "block": "0127",
+  "lot": "078",
+  "parcel": {
+    "building_area_sqft": 986,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 915000,
+    "assessed_improvement_value": 610000,
+    "last_sale_date": "2019-09-30"
+  },
+  "permits": [
+    {
+      "number": "201203206437",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-03-20",
+      "status_date": "2012-09-27",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "one unit-bathroom remodel, replace (e) vanity, top, sink & fixtures in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201110247447",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-10-24",
+      "status_date": "2012-09-12",
+      "estimated_cost": 18800,
+      "revised_cost": 18800,
+      "description": "kitchen: replace existing cabinets, sink, countertop, appliances and fixtures in kind. at least 50% high efficacy wattage, cec150(k). no change to exhaust system.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 12,
+    "range": "2011–2012",
+    "shown_on_page": 2,
+    "note": "10 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0127078&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127&unit=1905",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

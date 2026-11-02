@@ -1,0 +1,57 @@
+{
+  "address": "1998 Broadway, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/broadway/1998/unit-1204/",
+  "unit": "1204",
+  "apn": "0567095",
+  "block": "0567",
+  "lot": "095",
+  "parcel": {
+    "building_area_sqft": 980,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 181403,
+    "assessed_improvement_value": 219828
+  },
+  "permits": [
+    {
+      "number": "202503142316",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-03-14",
+      "status_date": "2025-03-18",
+      "estimated_cost": 325000,
+      "revised_cost": 325000,
+      "description": "interior alteration to a single existing condominium unit on the 12th fl. of a 15- story residential building. all work interior, non structural. no change in use or occupancy. no increase in floor area. no exterior alterations. remodel existing kitchen counter, cabinets and appliances",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202411064529",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-11-06",
+      "status_date": "2025-04-18",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "one unit: investigative demo, remove seelcted finishes, partitions, cabinets & fixtures at direction of architect in preparation for a single residential condo remodel/ under separate permit. all demo non structural, no alteration/new work under this permit. no change in use/occupancy",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0567095&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0567&unit=1204",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

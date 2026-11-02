@@ -1,0 +1,68 @@
+{
+  "address": "2235 Beach Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/beach-street/2235/unit-302/",
+  "unit": "302",
+  "apn": "0918016",
+  "block": "0918",
+  "lot": "016",
+  "parcel": {
+    "building_area_sqft": 1503,
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 238114,
+    "assessed_improvement_value": 192081
+  },
+  "permits": [
+    {
+      "number": "202509084795",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-09-08",
+      "status_date": "2025-09-08",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "one unit: replacement of 4 windows (same size and location) side of building, not street visible.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202404190417",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2024-04-19",
+      "status_date": "2024-04-19",
+      "estimated_cost": 25000,
+      "revised_cost": 0,
+      "description": "one unit-ref 202212138197 & 202211015653- nov 202296163 - 100% reconstruction of residential roof deck and associated strenghening of roof trusess due to fire damamge. this permit will superseed any prior issued permits with similar scope of work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200206058285",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-06-05",
+      "status_date": "2002-11-13",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "tearout extg tile and fixture in 2 bthrm and replace/ add new steam in mstr bth at one unit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0918016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0918&unit=302",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

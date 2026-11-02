@@ -1,0 +1,91 @@
+{
+  "address": "999 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/green-street/999/unit-3104/",
+  "unit": "3104",
+  "apn": "0127137",
+  "block": "0127",
+  "lot": "137",
+  "parcel": {
+    "building_area_sqft": 1791,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2524272,
+    "assessed_improvement_value": 3026253,
+    "last_sale_date": "2017-06-14"
+  },
+  "permits": [
+    {
+      "number": "201808167497",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-08-16",
+      "status_date": "2019-06-20",
+      "estimated_cost": 118984,
+      "revised_cost": 118984,
+      "description": "one unit: install split ducted four zone hvac system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201803264618",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-03-26",
+      "status_date": "2019-06-20",
+      "estimated_cost": 760000,
+      "revised_cost": 760000,
+      "description": "replace master bth, kitchen, guest bath. new electrical lighting, hardwood flooring. new paint throughout. replace extg a/c fan coil and condensor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200302077025",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-02-07",
+      "status_date": "2003-02-07",
+      "estimated_cost": 17883,
+      "revised_cost": 17883,
+      "description": "remove extg aluminum sliding door and install new",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200207252354",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-07-25",
+      "status_date": "2003-03-25",
+      "estimated_cost": 80000,
+      "revised_cost": 80000,
+      "description": "interior renovation increase of 200 sqft utilizing covered deck space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200205317878",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-05-31",
+      "status_date": "2002-05-31",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "interior remodel only of extng bedrms,bathrms,living & dining rms to include new flooring,new plumbi",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0127137&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127&unit=3104",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "address": "999 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/green-street/999/unit-2301/",
+  "unit": "2301",
+  "apn": "0127094",
+  "block": "0127",
+  "lot": "094",
+  "parcel": {
+    "building_area_sqft": 1300,
+    "rooms": 5,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 433409,
+    "assessed_improvement_value": 502760,
+    "last_sale_date": "1993-05-14"
+  },
+  "permits": [
+    {
+      "number": "M874207",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-01-08",
+      "status_date": "2018-01-08",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201708154908",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-08-15",
+      "status_date": "2017-08-15",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "one unit: replace single-pane with dual-pane glass in windows; fleetwood brand with bronze mullions; (no change to unit size, extent, or total no. of units); replace (16) (e) windows, max u-factor 0.32, @ north & west wall of unit, tempered glass",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201704244716",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-04-24",
+      "status_date": "2018-04-17",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "repair and replace in kind, where neccessary water damaged cabinets, appliances, flooring etc. in living room, dining room and (2) bathrooms. no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200502074920",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-02-07",
+      "status_date": "2006-01-12",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "remodel kitchen, new cabinets, appliances, sink, lights. remodel bath, new shower/tub, cabinet light",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9314766",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-08-31",
+      "status_date": "1994-10-12",
+      "estimated_cost": 35000,
+      "description": "horizontal addition.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9308174",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1993-05-17",
+      "status_date": "1995-01-06",
+      "estimated_cost": 30000,
+      "description": "int remodel 23rd fl/relocat ext glass wall/new appl/cab",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 9,
+    "range": "1993–2018",
+    "shown_on_page": 6,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0127094&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127&unit=2301",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

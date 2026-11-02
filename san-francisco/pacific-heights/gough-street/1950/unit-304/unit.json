@@ -1,0 +1,46 @@
+{
+  "address": "1950 Gough Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/gough-street/1950/unit-304/",
+  "unit": "304",
+  "apn": "0624082",
+  "block": "0624",
+  "lot": "082",
+  "parcel": {
+    "building_area_sqft": 1000,
+    "rooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 726250,
+    "assessed_improvement_value": 726250,
+    "last_sale_date": "2015-11-03"
+  },
+  "permits": [
+    {
+      "number": "201011054462",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-11-05",
+      "status_date": "2011-04-28",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "remove existing kitchen cabinet, counter top, appliances, and flooring, instal new cabinets, countertop and appliances in the same configuration, install new kitchen sink and facuet, install new oak flooring, no wall surfaces removed, no lighting changed",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0624082&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0624&unit=304",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

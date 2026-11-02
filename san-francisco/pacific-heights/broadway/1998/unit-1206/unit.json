@@ -1,0 +1,64 @@
+{
+  "address": "1998 Broadway, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/broadway/1998/unit-1206/",
+  "unit": "1206",
+  "apn": "0567097",
+  "block": "0567",
+  "lot": "097",
+  "parcel": {
+    "building_area_sqft": 1170,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1245920,
+    "assessed_improvement_value": 951088,
+    "last_sale_date": "2018-03-16"
+  },
+  "permits": [
+    {
+      "number": "201808026220",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-08-02",
+      "status_date": "2019-01-03",
+      "estimated_cost": 1,
+      "revised_cost": 1000,
+      "description": "remove non-load bearing wall. (additional work ref# 201805098672)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201805098672",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-05-09",
+      "status_date": "2019-01-03",
+      "estimated_cost": 165000,
+      "revised_cost": 165000,
+      "description": "no walls moved, removed or added. all (e) layouts to remain unchanged. remove & replace tile in 2 bathrooms with 2 vanities, countertops & plumbing fixtures. no structural changes, all fixtures to remain in current location.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "2018",
+    "shown_on_page": 2,
+    "note": "4 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0567097&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0567&unit=1206",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

@@ -886,6 +886,16 @@ ktp-figure { position: relative; }
    needs none of its own. */
 .place-list-districts li:last-child { border-bottom: 0; }
 
+/* ============================================================= condo units */
+/* A condominium building's units, each a page of its own (issue #228). A tower
+   has a hundred, so they are small cells in a grid rather than a hub's rows:
+   the unit, its own address where it differs from the building's, and the
+   roll's measurements in muted sans. */
+.condo-units { margin: 2rem 0; max-width: var(--wide); }
+.unit-grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr)); gap: 0.25rem 1rem; }
+.unit-grid li { display: flex; flex-direction: column; padding: 0.4rem 0; border-bottom: 1px solid var(--rule); }
+.unit-addr, .unit-specs { font-family: var(--sans); font-size: 0.78rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+
 /* ============================================================= nearby */
 /* The lateral links out of an address page, built from shared/nearby.json.
    Chrome rather than content: it sits between the building's own material and

@@ -1,0 +1,75 @@
+{
+  "address": "999 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/green-street/999/unit-2604/",
+  "unit": "2604",
+  "apn": "0127112",
+  "block": "0127",
+  "lot": "112",
+  "parcel": {
+    "building_area_sqft": 1686,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1082000,
+    "assessed_improvement_value": 1082000,
+    "last_sale_date": "2017-09-26"
+  },
+  "permits": [
+    {
+      "number": "201712015313",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-12-01",
+      "status_date": "2019-01-24",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "replace 2 (e) pocket door at office/living room, hallway and dkitchen pantry. replace (e) outlets. no changes - in -kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201404082724",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-04-08",
+      "status_date": "2014-09-18",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "dry wall repair. tile repair, addl lighting, and painting.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200706042968",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-06-04",
+      "status_date": "2008-05-13",
+      "estimated_cost": 55000,
+      "revised_cost": 55000,
+      "description": "change out e existing closets for buildt in closets, chage lighting fixtures . install new tile on flor . inlstall new carpets, paint. new lighting in bathroom & kitchen.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2007–2018",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0127112&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127&unit=2604",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

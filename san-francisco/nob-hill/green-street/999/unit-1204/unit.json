@@ -1,0 +1,75 @@
+{
+  "address": "999 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/green-street/999/unit-1204/",
+  "unit": "1204",
+  "apn": "0127047",
+  "block": "0127",
+  "lot": "047",
+  "parcel": {
+    "building_area_sqft": 1681,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1294800,
+    "assessed_improvement_value": 863200,
+    "last_sale_date": "2018-08-31"
+  },
+  "permits": [
+    {
+      "number": "202404150020",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-04-15",
+      "status_date": "2025-02-26",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "install a 4\" wide x4\" tall x4' long wood soffit at entry hall leading to kitchen. install a 4\"wide x4 tall x6' long wood soffit at entry hallway leading to living room. install a 3\" wide x3\" tall 3' long wood soffit in front of guest bedroom door.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201903286506",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-03-28",
+      "status_date": "2020-03-02",
+      "estimated_cost": 17000,
+      "revised_cost": 30000,
+      "description": "one unit: replace (e) hardwood floor and baseboards. replace (e) master & guest vanities, vanity tops and facuets. replace (e) wall sections, drywall and paint. no structural - no electrical.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200805162257",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-05-16",
+      "status_date": "2009-03-16",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "#1204 on the 12th floor. addition of door to ex. bedroom, construction of new wall and new pocket to create a new den",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2008–2024",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0127047&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127&unit=1204",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

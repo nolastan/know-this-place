@@ -1,0 +1,57 @@
+{
+  "address": "999 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/green-street/999/unit-2801/",
+  "unit": "2801",
+  "apn": "0127119",
+  "block": "0127",
+  "lot": "119",
+  "parcel": {
+    "building_area_sqft": 1409,
+    "rooms": 5,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1946486,
+    "assessed_improvement_value": 1463808,
+    "last_sale_date": "2017-03-07"
+  },
+  "permits": [
+    {
+      "number": "201708245835",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-08-24",
+      "status_date": "2019-11-06",
+      "estimated_cost": 210000,
+      "revised_cost": 210000,
+      "description": "28th fl two units: arch renovation to include new finishes, new cabinetry, new elec. wiring & new plumbing fictures, exterior work includes replacement of windows walls, restoration of railing on north side & west side. an modification of the window wall at the norht side.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201704214544",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-04-21",
+      "status_date": "2017-05-24",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "for administrative purpose only to document the legal use and occupancy of this building as a 28 story building with 106 residential units. no work to be done on this permit.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0127119&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127&unit=2801",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "address": "1998 Broadway, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/broadway/1998/unit-807/",
+  "unit": "807",
+  "apn": "0567070",
+  "block": "0567",
+  "lot": "070",
+  "parcel": {
+    "building_area_sqft": 1030,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 792721,
+    "assessed_improvement_value": 528481,
+    "last_sale_date": "2022-04-29"
+  },
+  "permits": [
+    {
+      "number": "200005109558",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-05-10",
+      "status_date": "2000-09-10",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "replace kitchen cabients, electrical gfci, new sink in one unit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0567070&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0567&unit=807",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

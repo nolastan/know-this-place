@@ -1,0 +1,90 @@
+{
+  "address": "999 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/green-street/999/unit-1205/",
+  "unit": "1205",
+  "apn": "0127048",
+  "block": "0127",
+  "lot": "048",
+  "parcel": {
+    "building_area_sqft": 986,
+    "rooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 945726,
+    "assessed_improvement_value": 630482,
+    "last_sale_date": "2008-02-29"
+  },
+  "permits": [
+    {
+      "number": "202607305812",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-07-30",
+      "status_date": "2026-08-25",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "12th flr, one unit. moving one wall to accommodate double sink vanity. no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200808290377",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-08-29",
+      "status_date": "2009-03-16",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "work @ one unit only. new trim throughout new sheetrock. new interior doors & frames. new sockets & t.v & phone cables.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200712180782",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-12-18",
+      "status_date": "2007-12-19",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew pa# 2004/12/10/1199 & pa# 2005/12/08/9874 for final inspection only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200512089874",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-12-08",
+      "status_date": "2005-12-08",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew appl#200412101199 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200412101199",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-12-10",
+      "status_date": "2004-12-10",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "kitchen remodel- remove & replace existing cabs & appliances, bath remodel- remove & replace existin",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0127048&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127&unit=1205",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

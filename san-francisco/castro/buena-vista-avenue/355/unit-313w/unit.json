@@ -1,0 +1,69 @@
+{
+  "address": "355 Buena Vista Avenue, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/buena-vista-avenue/355/unit-313w/",
+  "unit": "313W",
+  "apn": "2607155",
+  "block": "2607",
+  "lot": "155",
+  "parcel": {
+    "building_area_sqft": 625,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 516318,
+    "assessed_improvement_value": 344212,
+    "last_sale_date": "2020-09-16"
+  },
+  "permits": [
+    {
+      "number": "201611021700",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-11-02",
+      "status_date": "2016-11-18",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved uner pa # 201502047543. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201502047543",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-02-04",
+      "status_date": "2015-02-04",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "# 313: to obtain final inspection for work approved under pa # 201210172284. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201210172284",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-10-17",
+      "status_date": "2012-10-17",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "kitchen remodel - new cabinets and counter tops - new plumbing and electrical fixtures - bath remodel - remove tub/install shower pan. new vanity and counter top - new plumbing and electrical fixtures. lighting shall comply with cec 150(k). no change to exhaust system. comply with co/alrm per",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2607155&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2607&unit=313W",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

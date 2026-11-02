@@ -346,9 +346,10 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   Avenue is a 39-unit building of 1964 with one EAS row, and it seeded a page
   for flat 105. The roll knew all along: `property_location` ends in the unit
   designation, `AV0105`, where a whole parcel ends in `0000`. `resolve_eas.py`
-  now reads that suffix and declines. **Twenty-nine published pages are still
-  one flat rather than a building**, and whether those buildings can have a page
-  at all is a directory-contract question for a person: #228.
+  now reads that suffix and declines. Since #228 the building gets a page
+  that lists its units, and each unit its own (`seed_pages.py condo`). The
+  twenty-nine pages that were one flat are their buildings now, and 655
+  Corbett Avenue has its page.
 
 - **An archive that paginates by recency has no stable batch unit.** The
   Corbett Heights Neighbors newsletter shows ten or eleven issues to a page,

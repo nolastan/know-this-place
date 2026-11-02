@@ -1,0 +1,58 @@
+{
+  "address": "999 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/green-street/999/unit-1203/",
+  "unit": "1203",
+  "apn": "0127046",
+  "block": "0127",
+  "lot": "046",
+  "parcel": {
+    "building_area_sqft": 874,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 703800,
+    "assessed_improvement_value": 469200,
+    "last_sale_date": "2020-10-07"
+  },
+  "permits": [
+    {
+      "number": "201412173965",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-12-17",
+      "status_date": "2015-10-13",
+      "estimated_cost": 60000,
+      "revised_cost": 97000,
+      "description": "renovate (e) 1 bedroom codominum unit on 12th floor of a 32 story residential tower. remodel (e) kitchen, (n) fixture, appliances & cabinetry. remodel (e) bathroom. removal of non-load bearing partitions at living room and bedroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200812098090",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-12-09",
+      "status_date": "2008-12-23",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "two units - to finalize work approved under 200705312679. all work is complete.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0127046&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127&unit=1203",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

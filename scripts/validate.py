@@ -304,6 +304,7 @@ def check_address_dir(page_dir: Path, on_disk: str) -> None:
         district_pages[name].add("/" + page_dir.relative_to(ROOT).as_posix() + "/")
 
     check_narrative(data_path, data)
+    check_condominium(page_dir, data)
     check_render_parity(page_dir, data, on_disk)
 
 
@@ -379,6 +380,109 @@ def check_place_dir(page_dir: Path, on_disk: str) -> None:
         err(page_dir / "index.html",
             "does not match what the renderer produces from place.json — put the "
             f"change in place.json and run: python3 scripts/seed_pages.py render {rel}")
+
+
+def check_condominium(page_dir: Path, data: dict) -> None:
+    """A condominium building's `condominium` block, and its unit pages.
+
+    The lots are the building's: the judgement of which unit parcels are one
+    building is recorded there with its method, and every lot has exactly one
+    unit page beneath the building, and every unit page a lot.
+    """
+    src = page_dir / "data.json"
+    condo = data.get("condominium")
+    if condo is None:
+        if any(page_dir.glob(f"unit-*/{seed_pages.UNIT_FILE}")):
+            err(src, "has unit pages beneath it but no `condominium` block")
+        return
+    if not isinstance(condo, dict):
+        err(src, '"condominium" must be an object')
+        return
+    unknown = sorted(set(condo) - seed_pages.CONDO_KEYS)
+    if unknown:
+        err(src, f'unrecognised "condominium" key(s): {", ".join(unknown)}')
+    lots = condo.get("lots")
+    if not isinstance(lots, list) or not lots:
+        err(src, '"condominium.lots" must be a non-empty list')
+        return
+    if not condo.get("method"):
+        err(src, '"condominium.method" must say how the lots were established')
+    if data.get("apn") or data.get("lot"):
+        err(src, "a condominium building has no APN or lot of its own — "
+                 "each unit's is on its unit page")
+    if data.get("assessment"):
+        err(src, "a condominium building's assessment is its units' sum, read "
+                 "off the unit pages — drop `assessment`")
+    have = {}
+    for f in sorted(page_dir.glob(f"unit-*/{seed_pages.UNIT_FILE}")):
+        try:
+            have.setdefault(json.loads(f.read_text(encoding="utf-8")).get("lot"),
+                            []).append(f.parent.name)
+        except json.JSONDecodeError:
+            pass  # check_unit_dir reports it
+    for lot in lots:
+        if lot not in have:
+            err(src, f"lot {lot} has no unit page — run: python3 "
+                     f"scripts/seed_pages.py condo {page_dir.relative_to(ROOT)}")
+        elif len(have[lot]) > 1:
+            err(src, f"lot {lot} has {len(have[lot])} unit pages: {', '.join(have[lot])}")
+    for lot in sorted(set(have) - set(lots), key=str):
+        err(src, f"unit page(s) {', '.join(have[lot])} are lot {lot}, which "
+                 f"`condominium.lots` does not list")
+
+
+def check_unit_dir(page_dir: Path, on_disk: str) -> None:
+    """A condominium unit's page, rendered from `unit.json` and its
+    building's `data.json`: a closed vocabulary, nothing that is the
+    building's, and render parity."""
+    src = page_dir / seed_pages.UNIT_FILE
+    if not src.exists():
+        err(src, "required file missing")
+        return
+    if not (page_dir.parent / "data.json").exists():
+        err(src, "a unit page sits directly beneath its building's page")
+        return
+    try:
+        data = json.loads(src.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as e:
+        err(src, f"invalid JSON: {e}")
+        return
+    unknown = sorted(set(data) - seed_pages.UNIT_KEYS)
+    if unknown:
+        err(src, f"unrecognised key(s): {', '.join(unknown)} — see "
+                 f"seed_pages.UNIT_KEYS; what is true of the whole building "
+                 f"belongs in its data.json")
+    unknown = sorted(set(data.get("parcel") or {}) - seed_pages.UNIT_PARCEL_KEYS)
+    if unknown:
+        err(src, f'unrecognised "parcel" key(s): {", ".join(unknown)} — see '
+                 f"seed_pages.UNIT_PARCEL_KEYS")
+    for key in ("address", "path", "apn", "lot"):
+        if not data.get(key):
+            err(src, f'missing "{key}"')
+    here = "/" + page_dir.relative_to(ROOT).as_posix() + "/"
+    if data.get("path") and data["path"] != here:
+        err(src, f'"path" is {data["path"]!r} but the page is at {here!r}')
+    sources = data.get("sources")
+    if not isinstance(sources, list) or not sources:
+        err(src, '"sources" must be a non-empty list — every page cites its data')
+    else:
+        for i, s_ in enumerate(sources):
+            for key in ("id", "retrieved"):
+                if not isinstance(s_, dict) or not s_.get(key):
+                    err(src, f'sources[{i}] missing "{key}"')
+    if not seed_pages.renders(data):
+        opted_out.append(page_dir.relative_to(ROOT).as_posix())
+        return
+    try:
+        expected = seed_pages.render_unit_html(data)
+    except Exception as e:
+        err(src, f"the renderer cannot produce this page ({type(e).__name__}: {e})")
+        return
+    if on_disk != expected:
+        rel = page_dir.relative_to(ROOT).as_posix()
+        err(page_dir / "index.html",
+            "does not match what the renderer produces from unit.json — put the "
+            f"change in unit.json and run: python3 scripts/seed_pages.py render {rel}")
 
 
 def check_hub_lists_places(dir_path: Path) -> None:
@@ -791,6 +895,7 @@ def check_build_is_complete(content: Path) -> None:
     owed = [f.parent for f in sorted(content.rglob("data.json"))
             if ADDRESS_DIR.match(f.parent.name)]
     owed += [f.parent for f in sorted(content.rglob(seed_pages.PLACE_FILE))]
+    owed += [f.parent for f in sorted(content.rglob(seed_pages.UNIT_FILE))]
     owed += [f.parent for f in sorted(content.rglob("index.md"))]
     for page_dir in owed:
         if not (page_dir / "index.html").exists():
@@ -849,6 +954,8 @@ def main() -> int:
         check_internal_links(html_path, text)
         if is_address:
             check_address_dir(html_path.parent, text)
+        elif seed_pages.UNIT_DIR.match(html_path.parent.name):
+            check_unit_dir(html_path.parent, text)
         elif seed_pages.is_place_dir(html_path.parent):
             check_place_dir(html_path.parent, text)
         elif html_path.parent != content:

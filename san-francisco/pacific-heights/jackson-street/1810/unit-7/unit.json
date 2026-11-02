@@ -1,0 +1,58 @@
+{
+  "address": "1810 Jackson Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/jackson-street/1810/unit-7/",
+  "unit": "7",
+  "apn": "0593040",
+  "block": "0593",
+  "lot": "040",
+  "parcel": {
+    "building_area_sqft": 3271,
+    "rooms": 9,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1803000,
+    "assessed_improvement_value": 1202000,
+    "last_sale_date": "2019-11-27"
+  },
+  "permits": [
+    {
+      "number": "200609263301",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-09-26",
+      "status_date": "2006-09-26",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to correct the unit # and lot # on app #200101240527 and app #200607318099(work received final; this permit will show the correct lot/block/unit # to conform to 3-r records in the records management division)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200103265233",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-03-26",
+      "status_date": "2001-04-11",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew expired appn. #200003013159 for final",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0593040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0593&unit=7",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

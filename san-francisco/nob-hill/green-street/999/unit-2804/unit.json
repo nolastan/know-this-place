@@ -1,0 +1,53 @@
+{
+  "address": "999 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/green-street/999/unit-2804/",
+  "unit": "2804",
+  "apn": "0127122",
+  "block": "0127",
+  "lot": "122",
+  "parcel": {
+    "building_area_sqft": 1815,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1350000,
+    "assessed_improvement_value": 1350000,
+    "last_sale_date": "2021-11-24"
+  },
+  "permits": [
+    {
+      "number": "200803126883",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-03-12",
+      "status_date": "2008-12-01",
+      "estimated_cost": 86000,
+      "revised_cost": 86000,
+      "description": "work @ one unit only. interior remodel only. no structural work. new wall and floor finishes. new plumbing fixtures. new high efficacy lighting at baths, kitchen, new cabinet and bathroom (high efficency) vanities. 2 bathrooms & kitchen remodel. r-13 wall insulation.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2008",
+    "shown_on_page": 1,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0127122&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127&unit=2804",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

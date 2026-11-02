@@ -1,0 +1,47 @@
+{
+  "address": "1101 Green Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/green-street/1101/unit-1501/",
+  "unit": "1501",
+  "apn": "0125074",
+  "block": "0125",
+  "lot": "074",
+  "parcel": {
+    "building_area_sqft": 921,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 229673,
+    "assessed_improvement_value": 244031,
+    "last_sale_date": "1987-10-01"
+  },
+  "permits": [
+    {
+      "number": "202405091786",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-05-09",
+      "status_date": "2024-05-09",
+      "estimated_cost": 85000,
+      "revised_cost": 85000,
+      "description": "one unit- kitchen and bathroom remodel to include (4) recess lights in office, relocate subpanel and add quarter shut off valve in bathroom",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0125074&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0125&unit=1501",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

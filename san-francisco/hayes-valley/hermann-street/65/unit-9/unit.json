@@ -1,0 +1,47 @@
+{
+  "address": "65 Hermann Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/hermann-street/65/unit-9/",
+  "unit": "9",
+  "apn": "0872021",
+  "block": "0872",
+  "lot": "021",
+  "parcel": {
+    "building_area_sqft": 1215,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 167051,
+    "assessed_improvement_value": 167052,
+    "last_sale_date": "2018-12-12"
+  },
+  "permits": [
+    {
+      "number": "201703161589",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-03-16",
+      "status_date": "2017-06-13",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "one unit: new kitchen counter. renovate bathroom in kind. remove no walls",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0872021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0872&unit=9",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

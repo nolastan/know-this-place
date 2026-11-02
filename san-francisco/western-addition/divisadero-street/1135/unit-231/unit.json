@@ -1,0 +1,58 @@
+{
+  "address": "1145 Divisadero Street, San Francisco, CA 94115",
+  "path": "/san-francisco/western-addition/divisadero-street/1135/unit-231/",
+  "unit": "231",
+  "apn": "1129049",
+  "block": "1129",
+  "lot": "049",
+  "parcel": {
+    "building_area_sqft": 1486,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 391844,
+    "assessed_improvement_value": 391844,
+    "last_sale_date": "2002-03-08"
+  },
+  "permits": [
+    {
+      "number": "202302061421",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-02-06",
+      "status_date": "2023-06-05",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "2 bathrooms remodels: like for like: no moving walls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200901160328",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-01-16",
+      "status_date": "2009-04-15",
+      "estimated_cost": 38000,
+      "revised_cost": 38000,
+      "description": "work @ one unit only. replace kitchen cabinets. counter tops, floor & appliances. add 9 recessed lights, under cabinet lights, soffet lights. no plumbing or walls are to be moved.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1129049&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1129&unit=231",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

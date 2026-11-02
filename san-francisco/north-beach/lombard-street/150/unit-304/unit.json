@@ -1,0 +1,90 @@
+{
+  "address": "150 Lombard Street, San Francisco, CA 94111",
+  "path": "/san-francisco/north-beach/lombard-street/150/unit-304/",
+  "unit": "304",
+  "apn": "0059022",
+  "block": "0059",
+  "lot": "022",
+  "parcel": {
+    "building_area_sqft": 709,
+    "rooms": 3,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 248619,
+    "assessed_improvement_value": 248619,
+    "last_sale_date": "2001-06-27"
+  },
+  "permits": [
+    {
+      "number": "202511189823",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-11-18",
+      "status_date": "2026-01-08",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "one unit: replace tile in bathtub area in-kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202509024350",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-09-02",
+      "status_date": "2026-02-06",
+      "estimated_cost": 28000,
+      "revised_cost": 28000,
+      "description": "common area: remove and replace in kind of the louver. 16 locations. remove and put back stucco. install new louver 16 \"w x 10\"h. new waterproofing around the louver. not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202503252999",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-03-25",
+      "status_date": "2026-03-19",
+      "estimated_cost": 2841765,
+      "revised_cost": 2841765,
+      "description": "reroofing (no hotworks) cenc exception 2 to section 140.3(a)1aia.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202412025902",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2024-12-11",
+      "status_date": "2025-04-16",
+      "estimated_cost": 134782,
+      "revised_cost": 134782,
+      "description": "bldg #1: addition to the (e) fire alarm system. new nottification appliances will be added to provide proper coverage for area of work. all new notification appliances will be connected to (e) remote power supply. these appliances will be activated on general alarm condition. 1-remote power supply",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202410233580",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-10-23",
+      "status_date": "2025-05-01",
+      "estimated_cost": 30000,
+      "revised_cost": 45000,
+      "description": "one unit: replace kitchen cabinets in kind. replace bathroom vanity in kind. replace outlets in kind.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0059022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0059&unit=304",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

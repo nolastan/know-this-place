@@ -1,0 +1,86 @@
+{
+  "address": "278 Market Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/market-street/2201/unit-3/",
+  "unit": "3",
+  "apn": "3559028",
+  "block": "3559",
+  "lot": "028",
+  "parcel": {
+    "building_area_sqft": 1482,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 842776,
+    "assessed_improvement_value": 842776,
+    "last_sale_date": "2013-10-25"
+  },
+  "permits": [
+    {
+      "number": "201703101185",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-03-10",
+      "status_date": "2017-08-28",
+      "estimated_cost": 10000,
+      "revised_cost": 12000,
+      "description": "one unit: bathroom remodel, replace plumbing fixtures & new lighting, no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201703030648",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-03-03",
+      "status_date": "2017-03-03",
+      "estimated_cost": 7000,
+      "revised_cost": 10000,
+      "description": "removal of existing tile throughout removal of vanity, new tile and repaint to match existing, new glass shower enclosure.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201601257827",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-01-25",
+      "status_date": "2016-04-05",
+      "estimated_cost": 1600,
+      "revised_cost": 1600,
+      "description": "replace (e) exterior deck with new wood decking waterproof. roof deck ar rear, repair waterproofing. replacement in-kind, less than 50%.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200808048354",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-08-04",
+      "status_date": "2008-10-20",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace existing can light fixtures with new ones throughout unit, #3, repl trim throught unit, retile bathroom, install new cabinets,new shower valve & fixtures in bathrm, all interior work only, no doors/windows/walls under this permit , life safety work under separate permits",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "2008–2017",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3559028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3559&unit=3",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

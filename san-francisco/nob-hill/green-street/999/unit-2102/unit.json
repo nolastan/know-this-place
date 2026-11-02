@@ -1,0 +1,69 @@
+{
+  "address": "999 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/green-street/999/unit-2102/",
+  "unit": "2102",
+  "apn": "0127085",
+  "block": "0127",
+  "lot": "085",
+  "parcel": {
+    "building_area_sqft": 1709,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1800000,
+    "assessed_improvement_value": 1200000,
+    "last_sale_date": "2019-09-09"
+  },
+  "permits": [
+    {
+      "number": "202107204764",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-07-20",
+      "status_date": "2021-11-05",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "add some reflective ceiling in couple of rooms. new recessed lights and light fixtures in dining over kitchen island, foyer. painting a couple of rooms. some plumbing changes, change few faucets in kitchen and bath",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201512155155",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-12-15",
+      "status_date": "2017-03-14",
+      "estimated_cost": 50000,
+      "revised_cost": 235100,
+      "description": "#2102 - remodel of (e) kitchen , (e) master bath, (e) hall bath , (e) powder room, master closet bed closets, hall closets. all workj is non-structural only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201006023696",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-06-02",
+      "status_date": "2010-06-02",
+      "estimated_cost": 39000,
+      "revised_cost": 39000,
+      "description": "replace kitchen appliances, cabinets & electrical fixtures. remove & repalce sink from bath. move closet5 in bedroom.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0127085&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127&unit=2102",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

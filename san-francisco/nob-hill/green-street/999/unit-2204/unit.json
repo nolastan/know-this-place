@@ -1,0 +1,46 @@
+{
+  "address": "999 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/green-street/999/unit-2204/",
+  "unit": "2204",
+  "apn": "0127092",
+  "block": "0127",
+  "lot": "092",
+  "parcel": {
+    "building_area_sqft": 1681,
+    "rooms": 5,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1544566,
+    "assessed_improvement_value": 1319716,
+    "last_sale_date": "1991-09-17"
+  },
+  "permits": [
+    {
+      "number": "201507201941",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-07-20",
+      "status_date": "2016-01-12",
+      "estimated_cost": 9500,
+      "revised_cost": 12000,
+      "description": "one unit: 1 (e) kichen remodeling, bathroom shower pan replacement. plumbing/electrical plus painting.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0127092&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127&unit=2204",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

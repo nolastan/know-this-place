@@ -1,0 +1,57 @@
+{
+  "address": "2201 Sacramento Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/sacramento-street/2201/unit-303/",
+  "unit": "303",
+  "apn": "0638027",
+  "block": "0638",
+  "lot": "027",
+  "parcel": {
+    "building_area_sqft": 1611,
+    "rooms": 5,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 681405,
+    "assessed_improvement_value": 681405,
+    "last_sale_date": "2011-12-09"
+  },
+  "permits": [
+    {
+      "number": "202107295400",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-07-29",
+      "status_date": "2022-06-29",
+      "estimated_cost": 3800,
+      "revised_cost": 3800,
+      "description": "remove loose plaster in living room ceiling, drywall living room ceiling. with 5/8\" type x",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200005159965",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-05-15",
+      "status_date": "2000-09-12",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "kitchen remodeling, new cabinets, upgrade electrical",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0638027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0638&unit=303",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}
