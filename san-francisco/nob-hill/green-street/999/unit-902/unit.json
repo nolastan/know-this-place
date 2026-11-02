@@ -1,0 +1,58 @@
+{
+  "address": "999 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/green-street/999/unit-902/",
+  "unit": "902",
+  "apn": "0127030",
+  "block": "0127",
+  "lot": "030",
+  "parcel": {
+    "building_area_sqft": 1709,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 494983,
+    "assessed_improvement_value": 742489,
+    "last_sale_date": "1998-05-07"
+  },
+  "permits": [
+    {
+      "number": "202403288779",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-03-28",
+      "status_date": "2024-08-29",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "fire alarm revision to pa# 202307061617: to show the relocation of lobby devices, removal of the 13th fl as it does not exist, as well as relocation of fcc room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202307061617",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2023-07-06",
+      "status_date": "2024-08-29",
+      "estimated_cost": 40000,
+      "revised_cost": 480600,
+      "description": "like for like upgrade of non-compatible devices. fire alarm system upgrade to emergency/alarm communication system. (n) speakers, capable of producing the reqd 520hz low frequency tone,shall be installed within all sleeping areas. install (n) notification. (n) automatic detection shall be installed-",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0127030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127&unit=902",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

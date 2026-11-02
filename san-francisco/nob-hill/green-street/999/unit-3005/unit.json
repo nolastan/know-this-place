@@ -1,0 +1,57 @@
+{
+  "address": "999 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/green-street/999/unit-3005/",
+  "unit": "3005",
+  "apn": "0127133",
+  "block": "0127",
+  "lot": "133",
+  "parcel": {
+    "building_area_sqft": 1244,
+    "rooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1200000,
+    "assessed_improvement_value": 1200000,
+    "last_sale_date": "2016-02-19"
+  },
+  "permits": [
+    {
+      "number": "201601116830",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-01-11",
+      "status_date": "2016-01-12",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "#3005 - revision to pa #201310109024 to include correct number of condo (106) & story count (24) in the building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201310109024",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-10-10",
+      "status_date": "2015-07-24",
+      "estimated_cost": 90000,
+      "revised_cost": 119000,
+      "description": "interior remodel of one unit, including kitchen and bathroom remodel. new front door to unit, new exterior sliding doors and glazing. capture exterior balcony space.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0127133&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127&unit=3005",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

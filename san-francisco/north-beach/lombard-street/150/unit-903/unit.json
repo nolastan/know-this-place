@@ -1,0 +1,45 @@
+{
+  "address": "150 Lombard Street, San Francisco, CA 94111",
+  "path": "/san-francisco/north-beach/lombard-street/150/unit-903/",
+  "unit": "903",
+  "apn": "0059073",
+  "block": "0059",
+  "lot": "073",
+  "parcel": {
+    "building_area_sqft": 1015,
+    "rooms": 3,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 292846,
+    "assessed_improvement_value": 195221
+  },
+  "permits": [
+    {
+      "number": "202608046062",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-08-04",
+      "status_date": "2026-08-04",
+      "estimated_cost": 50000,
+      "revised_cost": 77685,
+      "description": "one unit: kitchen remodel like for like, new cabinets, sink, counter tops, p traps, replace gfci receptacles, swicth lights under cabineys, install new flooring, new dishwasher. bathroom remodel, new vanity, sink, angle stops, p traps, vanity tops, replace 2 lights, 2 gfci switch, shower head.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0059073&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0059&unit=903",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

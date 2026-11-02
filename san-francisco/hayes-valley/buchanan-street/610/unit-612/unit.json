@@ -1,0 +1,44 @@
+{
+  "address": "612 Buchanan Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/buchanan-street/610/unit-612/",
+  "apn": "0819044",
+  "block": "0819",
+  "lot": "044",
+  "parcel": {
+    "building_area_sqft": 880,
+    "rooms": 3,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 53303,
+    "assessed_improvement_value": 106643
+  },
+  "permits": [
+    {
+      "number": "202308305575",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-08-30",
+      "status_date": "2024-10-10",
+      "estimated_cost": 78000,
+      "revised_cost": 78000,
+      "description": "repair and replace insullation, drywall from fire and water damage, in kitchen, bathroom, and bedroom. reinstalling cabinets and appliances.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0819044&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0819&street_number=612",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

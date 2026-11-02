@@ -1,0 +1,57 @@
+{
+  "address": "2701 Van Ness Avenue, San Francisco, CA 94109",
+  "path": "/san-francisco/marina/van-ness-avenue/2701/unit-509/",
+  "unit": "509",
+  "apn": "0503064",
+  "block": "0503",
+  "lot": "064",
+  "parcel": {
+    "building_area_sqft": 785,
+    "rooms": 3,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 176823,
+    "assessed_improvement_value": 282924,
+    "last_sale_date": "1992-06-19"
+  },
+  "permits": [
+    {
+      "number": "202405202427",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-05-20",
+      "status_date": "2024-09-06",
+      "estimated_cost": 13500,
+      "revised_cost": 35000,
+      "description": "one unit - remodel kitchen in kind; new cabinets, counters; update electrical to code; update plumbing to code",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202209192660",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-09-19",
+      "status_date": "2022-09-26",
+      "estimated_cost": 600,
+      "revised_cost": 600,
+      "description": "replace microwave hood iin kind- raeplce unit in kind. hoa require permit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0503064&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0503&unit=509",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

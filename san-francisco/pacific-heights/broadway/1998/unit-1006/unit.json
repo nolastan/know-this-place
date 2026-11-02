@@ -1,0 +1,64 @@
+{
+  "address": "1998 Broadway, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/broadway/1998/unit-1006/",
+  "unit": "1006",
+  "apn": "0567083",
+  "block": "0567",
+  "lot": "083",
+  "parcel": {
+    "building_area_sqft": 1170,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 474319,
+    "assessed_improvement_value": 474319,
+    "last_sale_date": "2003-04-10"
+  },
+  "permits": [
+    {
+      "number": "201207235542",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-07-23",
+      "status_date": "2013-05-29",
+      "estimated_cost": 40000,
+      "revised_cost": 27314,
+      "description": "remove & replace kitchen & 2 bathrooms, install washer & dryer.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200306247843",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-06-24",
+      "status_date": "2003-12-19",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "#1006- remove master shower tile & pan, replace with new tile, fill in doorway fm hallway into livi",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2003–2013",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0567083&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0567&unit=1006",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "address": "2701 Van Ness Avenue, San Francisco, CA 94109",
+  "path": "/san-francisco/marina/van-ness-avenue/2701/unit-710/",
+  "unit": "710",
+  "apn": "0503085",
+  "block": "0503",
+  "lot": "085",
+  "parcel": {
+    "building_area_sqft": 1811,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1346400,
+    "assessed_improvement_value": 897600,
+    "last_sale_date": "2023-10-16"
+  },
+  "permits": [
+    {
+      "number": "202302011129",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-02-01",
+      "status_date": "2023-08-24",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew 201905170976 and 202003036023",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202301311088",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-01-31",
+      "status_date": "2023-09-15",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "one unit: revision to pa# 201905170976 to exclude light cove detail 4/a8.0",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202003036023",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2020-03-03",
+      "status_date": "2023-08-24",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "one unit: revision to permit #201905170976 to reduce area of work at entry/closets.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201905170976",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2019-05-17",
+      "status_date": "2023-08-24",
+      "estimated_cost": 110000,
+      "revised_cost": 150000,
+      "description": "one unit: relocate kitchen, remodel 2 extg bathrooms, new lighting & electrical, modify interior soffits, minor modification of partition walls. n/a for maher",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200304011139",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-04-01",
+      "status_date": "2003-06-24",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "one unit- remodel kitchen to include new floor, counter top (use (e) cabinets) relocate stove/refer.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "2003–2023",
+    "shown_on_page": 5,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0503085&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0503&unit=710",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

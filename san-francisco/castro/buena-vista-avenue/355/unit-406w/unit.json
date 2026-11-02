@@ -1,0 +1,47 @@
+{
+  "address": "355 Buena Vista Avenue, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/buena-vista-avenue/355/unit-406w/",
+  "unit": "406W",
+  "apn": "2607164",
+  "block": "2607",
+  "lot": "164",
+  "parcel": {
+    "building_area_sqft": 830,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 612528,
+    "assessed_improvement_value": 408351,
+    "last_sale_date": "2021-07-29"
+  },
+  "permits": [
+    {
+      "number": "201303293351",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-03-29",
+      "status_date": "2013-05-08",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "replace kitchen cabinets, countertops, replace appliances, replace bathroom cabinet-only work in bathroom. kitchen is 7 feet x 10 feet. bathroom is 5 feet x 7 feet. one unit.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2607164&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2607&unit=406W",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

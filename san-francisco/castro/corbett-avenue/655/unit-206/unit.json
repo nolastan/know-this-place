@@ -1,0 +1,47 @@
+{
+  "address": "655 Corbett Avenue, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/corbett-avenue/655/unit-206/",
+  "unit": "206",
+  "apn": "2717064",
+  "block": "2717",
+  "lot": "064",
+  "parcel": {
+    "building_area_sqft": 986,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 516600,
+    "assessed_improvement_value": 344400,
+    "last_sale_date": "2023-05-22"
+  },
+  "permits": [
+    {
+      "number": "201505186560",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-05-18",
+      "status_date": "2015-08-28",
+      "estimated_cost": 35000,
+      "revised_cost": 50000,
+      "description": "one unit:demo kitchen cabnts, countertops & assoc items. demo 2(e) bath: tile, vanities, tub. install kitchen cabinets, extend elec circuits for countertops and fridg, connect sink & garbage disposal & dw to (e) plumb. provide & install new floor & wall tile, toilet in (e) location. vanities in ..",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2717064&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2717&unit=206",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

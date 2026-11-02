@@ -1,0 +1,68 @@
+{
+  "address": "999 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/green-street/999/unit-1601/",
+  "unit": "1601",
+  "apn": "0127059",
+  "block": "0127",
+  "lot": "059",
+  "parcel": {
+    "building_area_sqft": 1300,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1200000,
+    "assessed_improvement_value": 800000,
+    "last_sale_date": "2024-10-02"
+  },
+  "permits": [
+    {
+      "number": "202308083971",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-08-08",
+      "status_date": "2024-05-10",
+      "estimated_cost": 20000,
+      "revised_cost": 32000,
+      "description": "kitchen remodel like for like",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202304145721",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2023-04-14",
+      "status_date": "2023-07-19",
+      "estimated_cost": 25000,
+      "revised_cost": 30000,
+      "description": "1 kitchen remodel like for like: new cabinets, new appliances",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200002101606",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-02-10",
+      "status_date": "2000-07-06",
+      "revised_cost": 8000,
+      "description": "remodel existing master bathroom, new vinity & accessories",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0127059&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127&unit=1601",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

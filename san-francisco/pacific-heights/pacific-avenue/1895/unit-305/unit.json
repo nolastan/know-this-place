@@ -1,0 +1,75 @@
+{
+  "address": "1895 Pacific Avenue, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/pacific-avenue/1895/unit-305/",
+  "unit": "305",
+  "apn": "0593109",
+  "block": "0593",
+  "lot": "109",
+  "parcel": {
+    "building_area_sqft": 1115,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 636287,
+    "assessed_improvement_value": 636287,
+    "last_sale_date": "2015-07-01"
+  },
+  "permits": [
+    {
+      "number": "201512306110",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-12-30",
+      "status_date": "2016-05-19",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace kitchen cabinet and counter. new appliances. new tile backsplash. replace bathroom vanity and counter and tiles.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201401287263",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-01-28",
+      "status_date": "2014-02-27",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "removal of finish from ceiling; install new drywall and layer on r.c. chanel 5/8\" ty pg\" in bedroom and hallway",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200205035714",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-05-03",
+      "status_date": "2002-10-02",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "remodel kitchen & bath. add doors, & openings at dinning room & bedroom to liviving toom.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2002–2015",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0593109&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0593&unit=305",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

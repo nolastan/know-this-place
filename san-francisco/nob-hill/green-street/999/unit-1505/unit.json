@@ -1,0 +1,58 @@
+{
+  "address": "999 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/green-street/999/unit-1505/",
+  "unit": "1505",
+  "apn": "0127058",
+  "block": "0127",
+  "lot": "058",
+  "parcel": {
+    "building_area_sqft": 986,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1000895,
+    "assessed_improvement_value": 667258,
+    "last_sale_date": "2007-12-13"
+  },
+  "permits": [
+    {
+      "number": "200804149638",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-04-14",
+      "status_date": "2009-05-04",
+      "estimated_cost": 90000,
+      "revised_cost": 90000,
+      "description": "alterations to include kitchen and 2 baths. replace extg glazing with new insulated units. extend area of living room into balcony per plans provided",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200305084058",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-05-08",
+      "status_date": "2004-06-16",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0127058&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127&unit=1505",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

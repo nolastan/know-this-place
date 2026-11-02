@@ -1,0 +1,46 @@
+{
+  "address": "1998 Broadway, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/broadway/1998/unit-903/",
+  "unit": "903",
+  "apn": "0567073",
+  "block": "0567",
+  "lot": "073",
+  "parcel": {
+    "building_area_sqft": 725,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 113927,
+    "assessed_improvement_value": 211312
+  },
+  "permits": [
+    {
+      "number": "201501296977",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-01-29",
+      "status_date": "2015-11-05",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "#903 - bathroom bathroom: remove & replace bathtub, toilet, vanity, lighting, tile, countertop & paint.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0567073&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0567&unit=903",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

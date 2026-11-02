@@ -1,0 +1,57 @@
+{
+  "address": "999 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/green-street/999/unit-2802/",
+  "unit": "2802",
+  "apn": "0127120",
+  "block": "0127",
+  "lot": "120",
+  "parcel": {
+    "building_area_sqft": 1804,
+    "rooms": 6,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 414362,
+    "assessed_improvement_value": 486878,
+    "last_sale_date": "2010-03-12"
+  },
+  "permits": [
+    {
+      "number": "201007297769",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-07-29",
+      "status_date": "2010-12-10",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "window replacement-dual glazed replaced in-kind with (e). revision to appl.#201005041698. (it was not mention on previous permit & cost).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201005041698",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-05-04",
+      "status_date": "2010-12-10",
+      "estimated_cost": 205000,
+      "revised_cost": 205000,
+      "description": "demo (e) non-bearing walls & partitions. replace with (n) as per drawings. one for one replacement for kitchen & bath.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0127120&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127&unit=2802",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

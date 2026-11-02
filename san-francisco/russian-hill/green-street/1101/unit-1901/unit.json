@@ -1,0 +1,64 @@
+{
+  "address": "1101 Green Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/green-street/1101/unit-1901/",
+  "unit": "1901",
+  "apn": "0125086",
+  "block": "0125",
+  "lot": "086",
+  "parcel": {
+    "building_area_sqft": 1698,
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1479744,
+    "assessed_improvement_value": 1603384,
+    "last_sale_date": "2016-03-15"
+  },
+  "permits": [
+    {
+      "number": "201605268449",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-05-26",
+      "status_date": "2017-06-08",
+      "estimated_cost": 95000,
+      "revised_cost": 95000,
+      "description": "new flooring and paint thoughout, new kitchen cabinets, appliances & finishes, new bathroom fixtures and finishes, new lighting & window treatments, no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200805011110",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-05-01",
+      "status_date": "2008-08-28",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "work @ one unit only. kitchen: replace (e) cabinets, counter top, appliances & re-finish floor. min 50% of kitchen watts shall be of fluorescent. no changes. no structural.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2008–2016",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0125086&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0125&unit=1901",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

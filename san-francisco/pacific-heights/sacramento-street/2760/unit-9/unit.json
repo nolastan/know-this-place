@@ -1,0 +1,53 @@
+{
+  "address": "2760 Sacramento Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/sacramento-street/2760/unit-9/",
+  "unit": "9",
+  "apn": "0632030",
+  "block": "0632",
+  "lot": "030",
+  "parcel": {
+    "building_area_sqft": 981,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 828000,
+    "assessed_improvement_value": 552000,
+    "last_sale_date": "2024-07-18"
+  },
+  "permits": [
+    {
+      "number": "201507222147",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-07-22",
+      "status_date": "2016-02-18",
+      "estimated_cost": 35900,
+      "revised_cost": 35900,
+      "description": "one unit: upgrade kitchen, bath, floor and electric. kitchen & bath remodel.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2015",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0632030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0632&unit=9",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

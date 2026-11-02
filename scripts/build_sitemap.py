@@ -51,12 +51,14 @@ def page_dirs() -> list:
 
 
 def address_lastmods() -> dict:
-    """Newest sources[].retrieved per address or place page — the only
+    """Newest sources[].retrieved per address, place or unit page — the only
     first-hand dates."""
     dates = {}
     sources = sorted(CONTENT.rglob("data.json")) if CONTENT.exists() else []
     places = sorted(CONTENT.rglob("place.json")) if CONTENT.exists() else []
-    for data_path in sources + places:
+    # A condominium unit's page (seed_pages.UNIT_FILE) dates the same way.
+    units = sorted(CONTENT.rglob("unit.json")) if CONTENT.exists() else []
+    for data_path in sources + places + units:
         if data_path.name == "data.json" and not ADDRESS_DIR.match(data_path.parent.name):
             continue
         try:

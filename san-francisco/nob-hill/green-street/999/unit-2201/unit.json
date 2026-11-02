@@ -1,0 +1,46 @@
+{
+  "address": "999 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/green-street/999/unit-2201/",
+  "unit": "2201",
+  "apn": "0127089",
+  "block": "0127",
+  "lot": "089",
+  "parcel": {
+    "building_area_sqft": 1300,
+    "rooms": 5,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1108279,
+    "assessed_improvement_value": 738852,
+    "last_sale_date": "2012-07-17"
+  },
+  "permits": [
+    {
+      "number": "201209180028",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-09-18",
+      "status_date": "2013-06-21",
+      "estimated_cost": 24500,
+      "revised_cost": 24500,
+      "description": "#2201: replacement \"in kind\" kitchen: replace (e) counter, cabinets, sink, appliances and fixtures. master bath and hallway bath: replace (e) counter, vanity, sink and fixtures.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0127089&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127&unit=2201",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "address": "999 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/green-street/999/unit-2105/",
+  "unit": "2105",
+  "apn": "0127088",
+  "block": "0127",
+  "lot": "088",
+  "parcel": {
+    "building_area_sqft": 986,
+    "rooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1082432,
+    "assessed_improvement_value": 1082432,
+    "last_sale_date": "2021-03-31"
+  },
+  "permits": [
+    {
+      "number": "202107083961",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-07-08",
+      "status_date": "2021-07-08",
+      "estimated_cost": 28000,
+      "revised_cost": 28000,
+      "description": "replacement in-kind - no change/no structural. 1 kitchen:reface (e) cabinets, counter, fixtures & lights. 1 powder room: reface (e) cabinets,counter & fixtures. hall way: replace (e) led lights.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200708028501",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-08-02",
+      "status_date": "2008-04-28",
+      "estimated_cost": 120000,
+      "revised_cost": 120000,
+      "description": "one unit - renovation of existing 2 bedroom apartment including renovate kitchtn & bathrooms. design build repalcement of (e) windows.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2007–2021",
+    "shown_on_page": 2,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0127088&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127&unit=2105",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

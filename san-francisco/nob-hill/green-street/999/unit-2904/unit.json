@@ -1,0 +1,58 @@
+{
+  "address": "999 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/green-street/999/unit-2904/",
+  "unit": "2904",
+  "apn": "0127127",
+  "block": "0127",
+  "lot": "127",
+  "parcel": {
+    "building_area_sqft": 1791,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2325575,
+    "assessed_improvement_value": 1550382,
+    "last_sale_date": "2014-12-18"
+  },
+  "permits": [
+    {
+      "number": "200204032986",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-04-03",
+      "status_date": "2002-12-13",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "#2904- to renew app#200104187144 & 200102202515 for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200104187144",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-04-18",
+      "status_date": "2001-11-15",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "relocate (e) glass window approx 52\" from (e) location, in living room & workspace only",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0127127&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127&unit=2904",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

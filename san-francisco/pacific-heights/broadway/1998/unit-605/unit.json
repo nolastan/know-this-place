@@ -1,0 +1,58 @@
+{
+  "address": "1998 Broadway, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/broadway/1998/unit-605/",
+  "unit": "605",
+  "apn": "0567054",
+  "block": "0567",
+  "lot": "054",
+  "parcel": {
+    "building_area_sqft": 1390,
+    "rooms": 5,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 697107,
+    "assessed_improvement_value": 464733,
+    "last_sale_date": "2011-11-04"
+  },
+  "permits": [
+    {
+      "number": "200109057604",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-09-05",
+      "status_date": "2002-03-29",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "add 2' wall to receive an electrical outlet non bearing. wall removed on 2001/08/16/6242.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108166242",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-08-16",
+      "status_date": "2002-03-29",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "demolish an 8' long partition non bearing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0567054&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0567&unit=605",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}

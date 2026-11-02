@@ -1,0 +1,84 @@
+{
+  "address": "946 Stockton Street, San Francisco, CA 94108",
+  "path": "/san-francisco/chinatown/stockton-street/946/unit-6a/",
+  "unit": "6A",
+  "apn": "0210A025",
+  "block": "0210A",
+  "lot": "025",
+  "parcel": {
+    "building_area_sqft": 775,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 420000,
+    "assessed_improvement_value": 280000,
+    "last_sale_date": "2018-06-27"
+  },
+  "permits": [
+    {
+      "number": "202601234467",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-01-23",
+      "status_date": "2026-02-03",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "to comply with nov 202649042: removal of mold-impacted drywall a laundry rooms on 8/10/12 floors wall. replace like for like to match (e) fire-resistance rating. no changes to occupancy, layout, structural framing or mep systems. ~90 sqft",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202506108387",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-06-10",
+      "status_date": "2025-09-17",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "fire alarm db testing results to show all units living room and sleeping area & sounding device meet .75 dba mark during the test. complying w/ sffc 1103.7.6.1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9606327",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-04-12",
+      "status_date": "1996-12-31",
+      "estimated_cost": 7000,
+      "description": "remdl ktchn & bathrm fixtures in one unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8405889",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-06-04",
+      "status_date": "1985-09-13",
+      "estimated_cost": 5000,
+      "description": "remodel kitchen",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1984–2026",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0210A025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0210A&unit=6A",
+      "retrieved": "2026-11-02"
+    }
+  ]
+}
