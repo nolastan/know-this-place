@@ -4828,8 +4828,11 @@ def render_unit_html(rec: dict) -> str:
     """
     bldg = building_of(rec)
     bheading = building_name(bldg) or page_title(bldg)
-    heading = unit_label(rec)
-    title_full = f"{heading}, {bheading}"
+    # The street address leads the heading, the unit after it: the address is
+    # what a reader arriving from a search or a letter has in hand.
+    heading = (f"{page_title(rec)}, Unit {rec['unit']}" if rec.get("unit")
+               else page_title(rec))
+    title_full = heading if bheading == page_title(bldg) else f"{heading}, {bheading}"
     desc = unit_meta_description(rec, bldg, bheading)
     lat, lng = bldg["coordinates"]["lat"], bldg["coordinates"]["lng"]
     zip_code = bldg["address"].rsplit(" ", 1)[-1]
@@ -4839,14 +4842,14 @@ def render_unit_html(rec: dict) -> str:
     street_name = page_title(bldg).split(" ", 1)[1]
     bpath = f"/{city_slug}/{area_slug}/{street_slug_}/{number}/"
     # The line under the heading says whose unit this is: the building's name
-    # and address where it has a name, its address where it doesn't, and the
-    # unit's own address where that is a different number.
+    # where it has one, and the building's address where the unit's is
+    # another number. The heading already carries the street address.
     sub_bits = ["Condominium unit"]
     if building_name(bldg):
-        sub_bits.append(bheading)
-    sub_bits.append(page_title(rec) if rec.get("unit") or page_title(rec) != heading
-                    else page_title(bldg))
-    sub_text = " · ".join(dict.fromkeys(sub_bits))
+        sub_bits.append(f"in {bheading}")
+    elif page_title(rec) != page_title(bldg):
+        sub_bits.append(f"in {page_title(bldg)}")
+    sub_text = " ".join(sub_bits)
     crumb_name = bheading
 
     view = dict(rec, coordinates=bldg["coordinates"])
@@ -4882,7 +4885,7 @@ def render_unit_html(rec: dict) -> str:
         (area_name, f"/{city_slug}/{area_slug}/"),
         (street_name, f"/{city_slug}/{area_slug}/{street_slug_}/"),
         (crumb_name, bpath),
-        (heading, None),
+        (unit_label(rec), None),
     ])
     crumb_meta = " · ".join(x for x in (
         (f"Block {rec['block']}, Lot {rec['lot']}"

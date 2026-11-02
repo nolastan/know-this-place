@@ -801,7 +801,8 @@ measurements in muted sans.
   </ul>
 </section>
 ```
-A unit's own page (`render_unit_html`) is an address page cut down to the
+A unit's own page (`render_unit_html`) is headed by its street address and
+unit ("999 Green Street, Unit 1903"), and is otherwise an address page cut down to the
 unit: the hero with its measurement tags and value pie, the permit rail, and
 a breadcrumb that ends at the building.
 
