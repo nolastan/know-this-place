@@ -5,6 +5,11 @@
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id `sf-planning-commission-minutes`.
 >
 > - **Kind:** meeting minutes (scanned volumes) · **Tier:** primary · **Status:** open
+> - **Claimed:** volumes 54–58 (July 2003 – 2005) are **claimed by Meta Muse**,
+>   the external reader, since 2026-11-02. **A nightly or autonomous run does
+>   not read them** and does not pick this source for a reading batch; the
+>   claim lifts only when Stan says so in a PR or issue. Muse's output is
+>   converted and published by a project thread, not by a nightly run.
 > - **Search-invisibility:** high — see the register for what that rates.
 > - **Coverage:** 47 of 52 volumes read (July 1968 – December 1980, and
 >   1994 – June 2003): 13,809 pages, 7,136 findings, 4,462 resolved, 4,265 published.
@@ -65,7 +70,7 @@
 | 50–51 | January – April, May – December 2001 | **read in full** 2026-11-02 by an external reader; 40 meeting days, 11 January – 20 December; 3 May cancelled; volume 51 holds no minutes of 27 September or 1 November |
 | 52 | 2002 (`volume` "2002") | **read in full** 2026-11-02 by an external reader; 26 meeting days, 10 January – 27 June and 5 – 19 December. **The volume binds no minutes of July – November 2002**: its pages run straight from 27 June to 5 December |
 | 53 | January – June 2003 | **read in full** 2026-11-02 by an external reader; 21 meeting days, 9 January – 26 June, with the joint meeting with the Recreation and Park Commission of 26 June; 17 April cancelled |
-| 54–58 | July 2003 – 2005 | unread; 54 is July – December 2003 |
+| 54–58 | July 2003 – 2005 | unread; **claimed by Meta Muse** (external reader) since 2026-11-02 — not for a nightly run. 54 is July – December 2003 |
 | — | 1981–1993 | in no volume |
 | — | before July 1968 | not in this collection. The Commission dates from 1942 |
 
@@ -485,7 +490,8 @@
   volume 52, the 26 meeting days of 2002 it holds, into `minutes-2002.json`;
   volume 53, the 21 meeting days of January – June 2003, into
   `minutes-2003-h1.json`.
-  **Next: volume 54 (July – December 2003), then 55–58 (2004 – 2005).**
+  **Next: volume 54 (July – December 2003), then 55–58 (2004 – 2005) — all
+  claimed by Meta Muse (see the header); a nightly run skips this source.**
   **Earlier next-step note: volumes 46–58 (1999 – 2005); 46 is 1999 and 47 is January –
   April 2000 — check each `volume` field for the span first.** Volume 45 was
   414 text pages (862,000 characters) and filled a nightly run for a single
