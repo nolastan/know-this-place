@@ -2785,6 +2785,27 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   lives in `corner.py --json` as `centreline_ok`, instead of being rebuilt in
   each run's session script.
   ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **A test added mid-module does not reach what was published before it.**
+  The centreline test was written during the 1906 run; the 1907–1913
+  building-contract batches had been placed and published without it, and
+  nobody re-ran it on them. Re-run on the 1908 batch (2026-11-03), it found 25
+  published facts on the wrong lot — among them the Union Trust contract on
+  1 Montgomery, and three different "corners" of Sutter and Grant all filed on
+  block 0294, which fills only one quadrant. *When a check is added, run it
+  over every batch already published; `corner.py --retest <findings-file>`
+  does it for corner placements.*
+- **The EAS-fitted centreline is wrong in two ways the street network isn't.**
+  Centring a street between its even and odd medians fails where both
+  parities sit on one side (Lincoln Way along the park), and it passed 1450
+  Leavenworth, 1510 Shrader and 306 Fell as the "W line" and "S line" when each
+  is on the other side, which the DPW segments' left/right address ranges
+  confirm. *Test against the DPW street centrelines (`3psu-pn9h`): they give the
+  real intersection node and each block's odd and even side, with no
+  dependence on where addresses happen to be. `--retest` does; `--batch` still
+  uses the EAS fit and should move to the network next.* And a fixed reach
+  from the node misjudges very wide streets: the Claus Spreckels Building's
+  exact 75 by 70 lot is 125 ft from Market and Third's node and is the corner.
+  ([sources/loc-newspapers.md](sources/loc-newspapers.md))
 - **A bulk crawl of a walled host costs the one route that was open.** Mapping
   Chronicling America's reel folders one listing each (about 900 requests in
   a few minutes) drew a host-wide Cloudflare challenge, and the tarball

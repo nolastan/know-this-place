@@ -6,9 +6,9 @@
 159 files, 84.1 MB, 43,075 findings.
 
 **Never read one whole.** The largest,
-`loc-newspapers/sn85066387-1908-building-contracts.json`, is 4.4 MB — about
+`loc-newspapers/sn85066387-1908-building-contracts.json`, is 4.5 MB — about
 1.2M tokens, more than a context window holds. The directory as a whole is
-around 22.0M tokens, and an agent that opens one of these files has usually
+around 22.1M tokens, and an agent that opens one of these files has usually
 spent its session to reach three entries.
 
 This file is the cheap way in. The table says what each batch covers;
@@ -116,7 +116,7 @@ sit in — the three it touched most, and how many in all.
 | `loc-newspapers/sn85066387-1906-03-25-real-estate.json` | 26 | 46 KB | 1906 | 2 | 2 | `hayes-valley`, `mission` |
 | `loc-newspapers/sn85066387-1906-building-contracts.json` | 1,259 | 2.4 MB | 1906 | 191 | 145 | `financial-district`, `mission`, `chinatown` +16 |
 | `loc-newspapers/sn85066387-1907-building-contracts.json` | 1,957 | 4.1 MB | 1907 | 298 | 242 | `tenderloin`, `mission`, `financial-district` +20 |
-| `loc-newspapers/sn85066387-1908-building-contracts.json` | 2,204 | 4.4 MB | 1908 | 528 | 392 | `mission`, `financial-district`, `nob-hill` +23 |
+| `loc-newspapers/sn85066387-1908-building-contracts.json` | 2,204 | 4.5 MB | 1908 | 498 | 367 | `mission`, `financial-district`, `nob-hill` +23 |
 | `loc-newspapers/sn85066387-1909-building-contracts.json` | 1,244 | 2.5 MB | 1909 | 284 | 229 | `nob-hill`, `mission`, `south-of-market` +22 |
 | `loc-newspapers/sn85066387-1910-building-contracts.json` | 1,315 | 2.9 MB | 1910 | 216 | 168 | `nob-hill`, `mission`, `tenderloin` +23 |
 | `loc-newspapers/sn85066387-1910-h2-real-estate.json` | 450 | 797 KB | 1910 | 133 | 130 | `nob-hill`, `inner-richmond`, `financial-district` +20 |

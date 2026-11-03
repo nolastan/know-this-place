@@ -121,6 +121,7 @@ python3 research/tools/check.py --find "1377 Fulton"       # matching entries, c
 python3 research/tools/resolve_eas.py fetch|report|apply <findings-file>
 python3 research/tools/corner.py BUSH MASON --year 1912   # a record that gives a corner, not a number
 python3 research/tools/corner.py --batch corners.jsonl    # a batch of them: lot-area matches and measured frontages
+python3 research/tools/corner.py --retest <findings-file>  # re-test a batch's corner placements on the street network
 python3 scripts/validate.py                         # any run that touched a page
 python3 scripts/seed_pages.py seed-list --manifest research/manifests/<f>.json
 ```

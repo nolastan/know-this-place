@@ -17,6 +17,9 @@ street between its crossings with the other two, for a record that says "south
 side of California between Hyde and Leavenworth", or gives an offset further
 along the block than the corner radius reaches.
 
+`--retest FINDINGS` re-tests a findings file's published corner placements
+against the DPW street centrelines; see `retest()` below.
+
 `--batch FILE` does a whole findings batch's corners at once. FILE is JSON
 lines, one entry per record:
 
@@ -565,6 +568,127 @@ def batch(path: str, tol: float = 0.04, as_json: bool = False) -> int:
     return 0
 
 
+STREETS = "3psu-pn9h"  # DPW street centrelines: true geometry and intersection nodes
+
+
+def street_segments(street: str) -> list:
+    """A street's active centreline segments from the DPW network, as point lists
+    of (lat, lng) with their two node ids."""
+    name, _, kind = street.upper().rpartition(" ")
+    q = {"street": name, "st_type": kind} if name and kind in STREET_TYPES \
+        else {"street": street.upper()}
+    out = []
+    for x in r.api_get(STREETS, {**q, "active": "true", "$limit": 5000,
+                                 "$select": "f_node_cnn,t_node_cnn,line"}):
+        pts = [(c[1], c[0]) for c in (x.get("line") or {}).get("coordinates", [])]
+        if len(pts) >= 2:
+            out.append((x.get("f_node_cnn"), x.get("t_node_cnn"), pts))
+    return out
+
+
+def network_corner(A: list, B: list, near):
+    """Where two streets meet in the DPW network: the shared node nearest `near`,
+    with a unit direction (x east, y north) for each street at that node."""
+    def ends(segs):
+        e = {}
+        for f, t, pts in segs:
+            e.setdefault(f, []).append((pts[0], pts[1]))
+            e.setdefault(t, []).append((pts[-1], pts[-2]))
+        return e
+    ea, eb = ends(A), ends(B)
+    shared = [n for n in ea if n in eb and n]
+    if not shared:
+        return None
+    k = math.cos(math.radians(near[0]))
+    node = min(shared, key=lambda n: math.hypot((ea[n][0][0][1] - near[1]) * k,
+                                                ea[n][0][0][0] - near[0]))
+    p = ea[node][0][0]
+    def axis(pairs):
+        (a, b) = pairs[0]
+        dx, dy = (b[1] - a[1]) * k, b[0] - a[0]
+        n = math.hypot(dx, dy) or 1
+        return dx / n, dy / n
+    return p, axis(ea[node]), axis(eb[node])
+
+
+def retest(path: str) -> int:
+    """Re-test a findings file's corner.py placements against the street network.
+
+    Several batches were placed and published on corner.py's crossing estimate,
+    the midpoint of the two streets' nearest EAS points, before the centreline
+    test existed — and that estimate can sit a lot's width off downtown. This
+    takes every resolved entry whose `resolution.method` names corner.py and
+    re-asks the question on its own parcel against the DPW street centrelines
+    (`3psu-pn9h`), which hold the real intersection node: for a corner, is the
+    parcel's centroid in the quadrant the record names and does its outline
+    come within 100 ft of the node; for a line, is it on the side of the
+    street the record names. An EAS-fitted centreline would be wrong on a street
+    with addresses on one side only (Lincoln Way, along the park); this test
+    uses no addresses at all. It prints each `DISAGREES` with the reason, then
+    the counts, and returns 1 if any entry disagrees. A disagreement is a
+    placement to re-read, not an automatic retraction: read the page's own
+    record before taking a fact off it.
+    """
+    doc = json.load(open(path))
+    rows = [f for f in doc.get("findings", [])
+            if (f.get("resolution") or {}).get("status") == "resolved"
+            and "corner.py" in ((f.get("resolution") or {}).get("method") or "")]
+    def name(n, t):
+        return f"{n} {t}" if n and t else (n or "")
+    streets = {}
+    for f in rows:
+        x = f.get("extra") or {}
+        for st in (name(f.get("street_name"), f.get("street_type")),
+                   name(x.get("cross_street_name"), x.get("cross_street_type"))):
+            if st and st not in streets:
+                streets[st] = street_segments(st)
+    apns = sorted({f["resolution"]["apn"] for f in rows if f["resolution"].get("apn")})
+    shapes = block_shapes(sorted({a[:4] if not a[4].isalpha() else a[:5] for a in apns}))
+    def side_of(axis, p, pt, want):
+        cx, cy = COMPASS.get(want.upper(), (0, 0))
+        nx, ny = -axis[1], axis[0]
+        c = (cx * nx + cy * ny) / (math.hypot(cx, cy) or 1)
+        if abs(c) < 0.3:
+            return None  # the street runs the way the record's direction points
+        k = math.cos(math.radians(p[0]))
+        v = (pt[1] - p[1]) * k * nx + (pt[0] - p[0]) * ny
+        return (v > 0) == (c > 0)
+    bad, counts = 0, {}
+    for f in rows:
+        x, res = f.get("extra") or {}, f["resolution"]
+        a = name(f.get("street_name"), f.get("street_type"))
+        b = name(x.get("cross_street_name"), x.get("cross_street_type"))
+        apn = res.get("apn")
+        here = centroid(apn, shapes, None) if apn else None
+        verdict, why = "untested", ""
+        hit = network_corner(streets.get(a) or [], streets.get(b) or [], here) if here else None
+        if hit and x.get("corner_quad"):
+            p, da, db = hit
+            k = math.cos(math.radians(p[0]))
+            reach = min(math.hypot((q[0] - p[1]) * k, q[1] - p[0]) for q in shapes[apn][1]) * 364000
+            vs = [v for v in (side_of(da, p, here, x["corner_quad"]),
+                              side_of(db, p, here, x["corner_quad"])) if v is not None]
+            if reach > 100:
+                verdict, why = "DISAGREES", f"outline {reach:.0f} ft from the corner"
+            elif vs:
+                verdict = "ok" if all(vs) else "DISAGREES"
+                why = f"not in the {x['corner_quad']} quadrant" if not all(vs) else ""
+        elif hit and x.get("side"):
+            p, da, _ = hit
+            v = side_of(da, p, here, x["side"])
+            if v is not None:
+                verdict = "ok" if v else "DISAGREES"
+                why = f"not on the {x['side']} side of {a}"
+        counts[verdict] = counts.get(verdict, 0) + 1
+        if verdict == "DISAGREES":
+            bad += 1
+            pub = (f.get("publish") or {}).get("status", "-")
+            print(f"{f['id']}  {apn}  {res.get('path')}  [{pub}]  {why}\n"
+                  f"    {f.get('address_as_written')}")
+    print(f"{len(rows)} placements: " + ", ".join(f"{v} {k}" for k, v in sorted(counts.items())))
+    return 1 if bad else 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("street_a", nargs="?")
@@ -576,7 +700,11 @@ def main() -> int:
     ap.add_argument("--year", type=int, help="mark parcels built within two years of this")
     ap.add_argument("--json", action="store_true",
                     help="with --batch: print every entry's candidates as JSON, checks included")
+    ap.add_argument("--retest", metavar="FINDINGS",
+                    help="re-test a findings file's corner.py placements against the DPW street network")
     a = ap.parse_args()
+    if a.retest:
+        return retest(a.retest)
     if a.batch:
         return batch(a.batch, as_json=a.json)
     if not (a.street_a and a.street_b):
