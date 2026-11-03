@@ -16,6 +16,15 @@
   Fillmore; page seeded). 24 unresolved, 15 of them pre-fire in the district
   that burned three weeks later. Batch file
   `findings/loc-newspapers/sn85066387-1906-03-25-real-estate.json`.)
+> - **Verified:** 2026-11-03 (the 1908 Building Contracts batch re-tested:
+  441 corner.py placements checked with the new `corner.py --retest` against
+  the DPW street centrelines — 395 ok, 12 untested, 34 disagreeing; each
+  disagreement re-read against the parcels at the corner; 30 retracted, 25 of
+  them published, now off 25 pages; 4 kept (the Spreckels Building, 701
+  Market). Calibrated on the 1906 batch, which was placed with the centreline
+  test: 163 ok, 1 disagreeing, the Italian American Bank, placed by name.
+  Also closed the two checks this line used to name: 1499 Sutter stands, and
+  the Union Trust building is demolished, at 2–8 Montgomery's corner.)
 > - **Verified:** 2026-10-05 (the *Call*'s daily Building Contracts lists for
   16 December 1912 – 15 July 1913, from `curiv_elderwood_ver02`: 5,877 OCR
   pages scanned, 480 page-blocks on 168 days — 310 located by heading and
@@ -628,6 +637,21 @@ Read 2026-10-04, every page of 1908 the three batches hold (`indio`,
 - **Where it fails:** 550 no parcel with a roll year near 1908, 485 single
   candidates refused, 423 unmeasurable, 116 on streets EAS no longer joins, 63
   matching several parcels.
+- **Re-tested 2026-11-03, and 30 placements came off.** This batch was placed
+  before the centreline test existed. `corner.py --retest` (against the DPW
+  street centrelines, `3psu-pn9h`) found 34 of its 441 corner.py placements
+  in disagreement: 16 in the wrong quadrant or on the wrong side of the
+  street, 18 whose outline stops more than 100 ft short of the corner. Each was
+  re-read against the parcels actually at the corner. In 30 of them another lot
+  holds the corner, or the parcel sits across the street the record names.
+  Those 30 are `unresolved` again, and the 25 that were published are off
+  their pages. Examples: the Union Trust contract on 1 Montgomery (below,
+  under 1907); three different corners of Sutter and Grant all filed on block
+  0294, which fills one quadrant; 1450 Leavenworth, 1510 Shrader and 306 Fell,
+  each on the far side of its street. Four stand: the Claus Spreckels
+  Building's four entries at 701 Market, whose 75 by 70 lot matches exactly
+  and is the corner of Third and Market; Market's width puts it 125 ft from
+  the node. The batch now has 498 resolved and 367 published on 367 pages.
 
 ### The 1907 Building Contracts lists
 
@@ -660,10 +684,16 @@ Read 2026-10-04, every page of 1907 the three batches hold (`hercules_ver01`,
   "SW corner of O'Farrell and Grant" entries went first to the Kohler & Chase
   building next door, through corner-only mode. A corner record that prints
   a lot that can't be measured now needs its storeys to agree exactly.
-- **The Union Trust building is not placed.** The 1908 batch put it on 1
-  Montgomery Street, whose page records the First National Bank building on
-  the Masonic Temple's lot. Until someone checks, its four 1907 entries stay
-  unresolved.
+- **The Union Trust building is demolished, and gets no page.** Post Street
+  ends at Montgomery, so the record's "NE corner of Montgomery, Market and
+  Post" is the corner of block 0291, east of Montgomery: today 2–8 Montgomery
+  (0291007), built 1967. The 1908 batch had put it on 1 Montgomery, which is
+  block 0292, *west* of Montgomery, where the page records the First National
+  Bank's 1908 building on the Masonic Temple's lot. That fact came off the
+  page on 2026-11-03. Nor is it 744 Market: that is the Union Trust Company's
+  *new* building of 1910, at Grant Avenue, on a lot that before the fire held a
+  one-storey wooden shop. The three 1906 and four 1907 entries stay
+  unresolved, with that reason recorded.
 - **Where it fails:** 508 no parcel with a roll year near 1907, 459 single
   candidates refused, 444 unmeasurable, 156 on garbled or vanished streets,
   53 matching several parcels, 28 numbers refused or unknown, 11 re-lotted
@@ -1001,9 +1031,14 @@ December: 5,188 pages), on the 1907 method. January to March 1906 survives as on
   last pass named were mapped on 2026-10-06: **January–March 1906 survives as
   one issue, 25 March 1906, inside `jenner`**, and **9–31 December 1913 is in
   no batch at all** (see the table). **The 25 March 1906 issue is read** (2026-11-02; a Sunday,
-  so no contracts list — its real-estate column instead). **Next:** the 1907 placement of 1499 Sutter re-tested with the centreline test
-  (its outline does not reach Gough); then the Union Trust building's placement checked against a
-  source that names its lot; then the 1907–1913 lists'
+  so no contracts list — its real-estate column instead). **The 1908 lists' corner placements are re-tested**
+  (2026-11-03, `corner.py --retest`: 30 retracted, see the 1908 section); 1499 Sutter's 1907 placement
+  stands (the parcel shapes put 0689012 at block 0689's NW corner, the SE corner of Sutter and Gough,
+  and its 137:6 square lot matches exactly — the doubt came from the crossing estimate, 120 ft off);
+  the Union Trust building is placed as demolished (see the 1907 section). **Next:** the same
+  `--retest` on the 1907, 1909, 1910 (all four files), 1911, 1912 and 1913 (Feb/Jul–Dec) batches,
+  one batch a run, each disagreement re-read before anything comes off a page — 1908's rate was 25
+  of 375 published; then the 1907–1913 lists'
   refused single candidates, re-read against the Sanborn sheets where a
   parcel was re-cut. The rest of the 1911, 1912 and 1913 paper —
   the fires and the building-permit lists — was sized on 2026-10-06 against

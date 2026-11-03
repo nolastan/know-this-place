@@ -615,6 +615,15 @@ inference and anything on a street the dossier flags as renumbered.
 6. **The page still obeys the design contract** — facts in components, prose
    only where it earns its place, `python3 scripts/validate.py` clean.
 
+**Corner placements get a mechanical check too.** `python3
+research/tools/corner.py --retest <findings-file>` re-tests every resolved
+corner.py placement in a batch against the DPW street centrelines: quadrant
+and reach for a corner, side for a line. Each `DISAGREES` is a placement to
+re-read against the page's own record and the parcels at the corner, not an
+automatic retraction. One the re-read confirms comes off the page:
+`resolution.status` back to `unresolved` with the reason in its `note`, and
+`publish` to `declined` with "Removed from the page on <date>".
+
 Corrections are an ordinary site edit in the same PR.
 
 ## 6. Close the books
