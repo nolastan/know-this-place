@@ -4020,6 +4020,19 @@ def ld_block(obj, indent: str = "  ") -> str:
             + f'\n{indent}</script>')
 
 
+def data_link(path: str, filename: str) -> str:
+    """The `<link rel="alternate">` that points from a page to its own source.
+
+    Every page's `data.json` (or a place's `place.json`, a unit's `unit.json`)
+    is published beside it. Naming it in the head lets an assistant or crawler
+    that lands on the page read the facts as structured data instead of
+    scraping the markup. It is the same file the page is rendered from, so it
+    states nothing the page does not.
+    """
+    return (f'  <link rel="alternate" type="application/json" '
+            f'href="{path}{filename}">')
+
+
 def breadcrumb_ld(crumbs: list) -> dict:
     """`[(name, href or None), ...]` from the top down, current page last.
 
@@ -4156,8 +4169,13 @@ def render_html(rec: dict) -> str:
                     "addressLocality": city_name, "addressRegion": "CA",
                     "postalCode": zip_code, "addressCountry": "US"},
         "geo": {"@type": "GeoCoordinates", "latitude": lat, "longitude": lng},
+        "containedInPlace": {"@type": "Place", "name": area_name,
+                             "url": f"{SITE}/{city_slug}/{area_slug}/"},
         "description": desc,
     }
+    # A city landmark is the one designation schema.org has a type for.
+    if rec.get("city_landmark"):
+        ld["@type"] = "LandmarksOrHistoricalBuildings"
     crumbs_ld = breadcrumb_ld([
         (city_name, f"/{city_slug}/"),
         (area_name, f"/{city_slug}/{area_slug}/"),
@@ -4183,6 +4201,7 @@ def render_html(rec: dict) -> str:
   <title>{esc(heading)} — Know This Place</title>
   <meta name="description" content="{esca(desc)}">
   <link rel="canonical" href="{SITE}{rec['path']}">
+{data_link(rec['path'], 'data.json')}
 {ICON_LINKS}
 {CSS_LINK}
 {HUGEICONS_LINK}
@@ -4543,6 +4562,7 @@ def render_place_html(rec: dict) -> str:
   <title>{esc(name)} — Know This Place</title>
   <meta name="description" content="{esca(desc)}">
   <link rel="canonical" href="{SITE}{rec['path']}">
+{data_link(rec['path'], 'place.json')}
 {ICON_LINKS}
 {CSS_LINK}
 {HUGEICONS_LINK}
@@ -4900,6 +4920,7 @@ def render_unit_html(rec: dict) -> str:
   <title>{esc(title_full)} — Know This Place</title>
   <meta name="description" content="{esca(desc)}">
   <link rel="canonical" href="{SITE}{rec['path']}">
+{data_link(rec['path'], 'unit.json')}
 {ICON_LINKS}
 {CSS_LINK}
 {HUGEICONS_LINK}
