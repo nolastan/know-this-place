@@ -592,8 +592,8 @@ def network_corner(A: list, B: list, near):
     def ends(segs):
         e = {}
         for f, t, pts in segs:
-            e.setdefault(f, []).append((pts[0], pts[1]))
-            e.setdefault(t, []).append((pts[-1], pts[-2]))
+            e.setdefault(f, []).append(pts)
+            e.setdefault(t, []).append(pts[::-1])
         return e
     ea, eb = ends(A), ends(B)
     shared = [n for n in ea if n in eb and n]
@@ -603,8 +603,16 @@ def network_corner(A: list, B: list, near):
     node = min(shared, key=lambda n: math.hypot((ea[n][0][0][1] - near[1]) * k,
                                                 ea[n][0][0][0] - near[0]))
     p = ea[node][0][0]
-    def axis(pairs):
-        (a, b) = pairs[0]
+    def axis(runs):
+        # Not the first vertex past the node: DPW segments often begin with a
+        # kerb-return arc 25-60 ft long, and its first step can point anywhere
+        # (Market at 7th read 13 degrees off east, Broadway at Mason nearly
+        # north). The first vertex 100 ft out, or the segment's far end, is the
+        # street's own bearing.
+        pts = runs[0]
+        a = pts[0]
+        b = next((q for q in pts[1:] if math.hypot((q[1] - a[1]) * k, q[0] - a[0]) * 364000 >= 100),
+                 pts[-1])
         dx, dy = (b[1] - a[1]) * k, b[0] - a[0]
         n = math.hypot(dx, dy) or 1
         return dx / n, dy / n

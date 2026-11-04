@@ -16,6 +16,19 @@
   Fillmore; page seeded). 24 unresolved, 15 of them pre-fire in the district
   that burned three weeks later. Batch file
   `findings/loc-newspapers/sn85066387-1906-03-25-real-estate.json`.)
+> - **Verified:** 2026-11-04 (the 1907 Building Contracts batch re-tested:
+  274 corner.py placements checked with `corner.py --retest` — 255 ok, 1
+  untested, 18 disagreeing; each re-read against the parcels at the corner
+  (`corner.py A B --year 1907`) and the parcel centroids against the DPW node.
+  11 retracted (9 published, now off 9 pages; 2 already declined); 3 re-placed
+  on the parcel that holds the corner the record names — 1301 Leavenworth
+  (exact 57:6 by 82:6 lot) and 749 Grant, both seeded, and the Italian-American
+  Bank's fixtures contract moved from the Potter Building to 456 Montgomery,
+  where three more named bank entries now resolve as further contracts; 4 stand.
+  Three of the four were false alarms from `network_corner`'s axis, which took
+  a street's bearing from a 27–62 ft kerb-return arc (Market at 7th, Broadway at
+  Mason); fixed in `corner.py`, and the 1906 and 1908 re-tests re-run with no
+  change. The batch now has 290 resolved and 233 published on 233 pages.)
 > - **Verified:** 2026-11-03 (the 1908 Building Contracts batch re-tested:
   441 corner.py placements checked with the new `corner.py --retest` against
   the DPW street centrelines — 395 ok, 12 untested, 34 disagreeing; each
@@ -694,6 +707,28 @@ Read 2026-10-04, every page of 1907 the three batches hold (`hercules_ver01`,
   *new* building of 1910, at Grant Avenue, on a lot that before the fire held a
   one-storey wooden shop. The three 1906 and four 1907 entries stay
   unresolved, with that reason recorded.
+- **Re-tested 2026-11-04: 9 facts off their pages, 3 moved to the right
+  corner.** `corner.py --retest` found 18 of 274 placements in disagreement.
+  Re-read against the parcels at each corner: 11 are retracted — six where the
+  placed lot is two to four lots from a corner held by another building (10
+  Rondel, 270 O'Farrell beside the six-storey Hotel Gloster, 423 Gough, 775
+  Frederick, 1407 Noe, 6100 California at the 23rd Avenue end), three in the
+  wrong quadrant or on the wrong side (4212 25th is the NW corner; 562 Grant the
+  SE, twice; 570 7th Avenue the east side), and the already-declined SW-corner
+  Drumm entry on 2 California, which is the NW. **The corner lot at 401 Gough
+  (0808005) matches the 26 by 90 exactly but has no 2025 roll row**, so that
+  1907 four-storey frame goes nowhere. Three were re-placed where the right
+  parcel fits the record as well as the method asks: 1385 Clay's contract to
+  0216006 (1301 Leavenworth / 1416 Clay, 4,743.75 sq ft — 57:6 by 82:6, the
+  record's ?7:6 by 82:6), 800 Grant's to 0225001 (749 Grant, the SW corner's
+  one parcel, 1907, two storeys), and the Italian-American Bank's fixtures from
+  the Potter Building (block 0228, the NE corner) to 456 Montgomery, the bank's
+  Landmark No. 110 site, already carrying its 1906 granite contract. Four
+  stand: 1049 Market (twice) and 870 Broadway, where the test's street axis was
+  a kerb-return arc (fixed in `corner.py`), and 1377 Harrison, 103 ft out but
+  inside the record's own 100-ft corner lot on two 82:6 streets. The SW corner
+  of California and Grant is the Sing Fat Building, whose roll row has no year,
+  so its two entries stay unresolved.
 - **Where it fails:** 508 no parcel with a roll year near 1907, 459 single
   candidates refused, 444 unmeasurable, 156 on garbled or vanished streets,
   53 matching several parcels, 28 numbers refused or unknown, 11 re-lotted
@@ -1035,10 +1070,11 @@ December: 5,188 pages), on the 1907 method. January to March 1906 survives as on
   (2026-11-03, `corner.py --retest`: 30 retracted, see the 1908 section); 1499 Sutter's 1907 placement
   stands (the parcel shapes put 0689012 at block 0689's NW corner, the SE corner of Sutter and Gough,
   and its 137:6 square lot matches exactly — the doubt came from the crossing estimate, 120 ft off);
-  the Union Trust building is placed as demolished (see the 1907 section). **Next:** the same
-  `--retest` on the 1907, 1909, 1910 (all four files), 1911, 1912 and 1913 (Feb/Jul–Dec) batches,
+  the Union Trust building is placed as demolished (see the 1907 section). **The 1907 lists' corner
+  placements are re-tested** (2026-11-04: 11 retracted, 3 re-placed, see the 1907 section). **Next:** the same
+  `--retest` on the 1909, 1910 (all four files), 1911, 1912 and 1913 (Feb/Jul–Dec) batches,
   one batch a run, each disagreement re-read before anything comes off a page — 1908's rate was 25
-  of 375 published; then the 1907–1913 lists'
+  of 375 published, 1907's 9 of 242 retracted and 3 moved; then the 1907–1913 lists'
   refused single candidates, re-read against the Sanborn sheets where a
   parcel was re-cut. The rest of the 1911, 1912 and 1913 paper —
   the fires and the building-permit lists — was sized on 2026-10-06 against

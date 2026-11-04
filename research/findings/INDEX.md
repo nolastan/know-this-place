@@ -115,7 +115,7 @@ sit in — the three it touched most, and how many in all.
 | `hittell-1878/full-text.json` | 14 | 23 KB | 1837–1878 | 3 | 2 | `financial-district` |
 | `loc-newspapers/sn85066387-1906-03-25-real-estate.json` | 26 | 46 KB | 1906 | 2 | 2 | `hayes-valley`, `mission` |
 | `loc-newspapers/sn85066387-1906-building-contracts.json` | 1,259 | 2.4 MB | 1906 | 191 | 145 | `financial-district`, `mission`, `chinatown` +16 |
-| `loc-newspapers/sn85066387-1907-building-contracts.json` | 1,957 | 4.1 MB | 1907 | 298 | 242 | `tenderloin`, `mission`, `financial-district` +20 |
+| `loc-newspapers/sn85066387-1907-building-contracts.json` | 1,957 | 4.1 MB | 1907 | 290 | 233 | `tenderloin`, `mission`, `financial-district` +20 |
 | `loc-newspapers/sn85066387-1908-building-contracts.json` | 2,204 | 4.5 MB | 1908 | 498 | 367 | `mission`, `financial-district`, `nob-hill` +23 |
 | `loc-newspapers/sn85066387-1909-building-contracts.json` | 1,244 | 2.5 MB | 1909 | 284 | 229 | `nob-hill`, `mission`, `south-of-market` +22 |
 | `loc-newspapers/sn85066387-1910-building-contracts.json` | 1,315 | 2.9 MB | 1910 | 216 | 168 | `nob-hill`, `mission`, `tenderloin` +23 |
@@ -430,7 +430,7 @@ are listed so their size is visible before anyone opens one.
 | `sfp-90.json` | 5 | 2 KB | `north-beach`, `tenderloin`, `pacific-heights` +2 |
 | `showplace-square-survey.json` | 2 | 1 KB | `mission`, `mission-bay` |
 | `sn85066387-1906-building-contracts.json` | 60 | 22 KB | `nob-hill`, `north-beach`, `russian-hill` +14 |
-| `sn85066387-1907-building-contracts.json` | 118 | 44 KB | `nob-hill`, `russian-hill`, `inner-richmond` +17 |
+| `sn85066387-1907-building-contracts.json` | 120 | 45 KB | `nob-hill`, `russian-hill`, `inner-richmond` +17 |
 | `sn85066387-1908-building-contracts.json` | 239 | 89 KB | `nob-hill`, `inner-richmond`, `russian-hill` +22 |
 | `sn85066387-1909-building-contracts.json` | 124 | 46 KB | `nob-hill`, `russian-hill`, `inner-richmond` +19 |
 | `sn85066387-1910-building-contracts.json` | 82 | 30 KB | `nob-hill`, `inner-sunset`, `inner-richmond` +18 |
