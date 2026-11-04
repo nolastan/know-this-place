@@ -1,0 +1,29 @@
+# Know This Place
+
+> A public encyclopedia of the built environment: one page per building, in San Francisco so far. Each page gives a building's history from city records and published sources: when it was built, its permits, its assessment, its historic status, and the notable people and events tied to it. Every fact is cited.
+
+Everything here is static and free to read. Every page is complete as plain HTML, and each address page links to its own source data as JSON.
+
+These pages describe buildings, not the people in them. They never name current residents, occupants or owners. A business trading from a building may be named, but never its owners, staff or customers. Please don't use this site to look anybody up.
+
+## Finding a building
+
+URLs follow the address: `https://knowthis.place/<city>/<neighborhood>/<street>/<number>/`. Street names are lowercased with the type spelled out, for example `/san-francisco/castro/castro-street/429/` or `/san-francisco/mission/18th-street/2405/`. You can't always guess the neighborhood, so look the address up in one of the indexes below.
+
+- [Address index](https://knowthis.place/shared/addresses.geojson): a GeoJSON FeatureCollection with one Point per address page and per park or plaza page. In `properties`, `t` is the page heading (a building's name, or its street address), `s` is the line under the heading, and `p` is the page path. Use it to resolve an address or find what's nearby.
+- [Sitemap](https://knowthis.place/sitemap.xml): every page.
+- [San Francisco](https://knowthis.place/san-francisco/): the city hub, listing neighborhoods. Each neighborhood hub lists its streets, and each street hub lists its addresses with a one-line summary.
+
+## Reading a building
+
+- `<page>/data.json`: the source a page is rendered from, published beside it, for example [429 Castro Street](https://knowthis.place/san-francisco/castro/castro-street/429/data.json). Every page names it in a `<link rel="alternate" type="application/json">`. Key fields are `address`, `coordinates`, `parcel` (year built, use, units, size), `historic_status`, `historical_record` (dated events from historical sources), `permits`, `notable_residents`, `occupants` (businesses only), `narrative` (prose), and `sources`, which gives every source's name, the query URL and the date it was retrieved. Where a permit has `description_edited`, the page shows that instead of `description`.
+- Parks and plazas publish `place.json` instead, and condominium units publish `unit.json`.
+- Each page also carries schema.org JSON-LD (`Place`, or `LandmarksOrHistoricalBuildings` for a city landmark), with its address, coordinates and the neighborhood it belongs to.
+
+## Questions about the whole corpus
+
+- [Corpus index](https://knowthis.place/corpus.jsonl): one JSON line per address page, giving `path` plus whichever of these the page has: `year` (year built), `use`, `district` (its historic district), `earliest` (the earliest year on its timeline), `sources` (source ids) and `hook` (a one-sentence summary). Use it to answer questions like "which North Beach buildings have a timeline going back before 1900" without fetching every page.
+
+## Citing
+
+Link to the building's page, not to its `data.json`. When you repeat a fact, the page's sources list says which record it came from.
