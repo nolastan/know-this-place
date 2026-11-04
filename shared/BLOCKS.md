@@ -37,6 +37,7 @@ UPPERCASE = from this page's `data.json` / `shared/site-config.json`.
   <title>ADDRESS — Know This Place</title>
   <meta name="description" content="PAGE-SPECIFIC ONE- OR TWO-SENTENCE SUMMARY">
   <link rel="canonical" href="SITE_URL + PATH">
+  <link rel="alternate" type="application/json" href="PATH + data.json">   <!-- place.json on a place page, unit.json on a unit page -->
   <link rel="icon" href="/favicon.ico" sizes="32x32">                    <!-- verbatim, all four -->
   <link rel="icon" href="/shared/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -72,12 +73,21 @@ itself. The `BreadcrumbList` JSON-LD still carries all four items; that is
 what search reads, not the chip.
 
 Every page declares its structured data. An address page carries two blocks:
-`Place` (with `PostalAddress` + `GeoCoordinates`) and a `BreadcrumbList`
+`Place` (with `PostalAddress`, `GeoCoordinates`, and its neighborhood as
+`containedInPlace`; typed `LandmarksOrHistoricalBuildings` instead when the
+building is a city landmark) and a `BreadcrumbList`
 restating the crumbs the breadcrumb `<nav>` already shows — that is what puts
 a trail rather than a bare URL under a search result for a page four levels
 down. Hub pages carry a `BreadcrumbList` and a `CollectionPage` wrapping an
 `ItemList` of what they list. `validate.py` permits any number of
 `application/ld+json` tags and rejects every other script.
+
+Every rendered page also names the file it is rendered from — `data.json`,
+`place.json` or `unit.json`, all published beside the page — in a
+`<link rel="alternate" type="application/json">`, so an assistant or crawler
+can read the facts as data. `/llms.txt` at the site root describes those files
+and the site-wide indexes (`addresses.geojson`, `corpus.jsonl`) for AI agents;
+keep it in step if a field it names is renamed.
 
 The JSON-LD, the `<footer>`
 sources/feedback/colophon, and the **FEEDBACK_URL** are identical on every page
