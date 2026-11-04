@@ -1,0 +1,78 @@
+{
+  "address": "1545 Pine Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/pine-street/1527/unit-109/",
+  "unit": "109",
+  "apn": "0667049",
+  "block": "0667",
+  "lot": "049",
+  "parcel": {
+    "building_area_sqft": 709,
+    "rooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 164970,
+    "assessed_improvement_value": 189569,
+    "last_sale_date": "2018-05-15"
+  },
+  "permits": [
+    {
+      "number": "202110059870",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-10-05",
+      "status_date": "2021-11-10",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "one unit: install speaker and strobe lights. install pull station. connect new devices to fire control panel and power supply.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201911137226",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-11-13",
+      "status_date": "2020-07-30",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "one unit: convert 6 existing fire upright sprinkler heads to pendant new ceiling for remodel office ref 2019.0724.6798",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201911137229",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-11-13",
+      "status_date": "2019-11-14",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "one unit: relocate 1 existing horn strobe and add 1 horn at ada restroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201907246798",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-07-24",
+      "status_date": "2021-11-10",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "first time t.i.: new medical office. new ceiling, partitions, doors and hardware, millwork, flooring, lighting, power and finish.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0667049&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0667&unit=109",
+      "retrieved": "2026-11-04"
+    }
+  ]
+}

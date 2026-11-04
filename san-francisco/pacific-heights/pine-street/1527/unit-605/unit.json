@@ -1,0 +1,46 @@
+{
+  "address": "1545 Pine Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/pine-street/1527/unit-605/",
+  "unit": "605",
+  "apn": "0667101",
+  "block": "0667",
+  "lot": "101",
+  "parcel": {
+    "building_area_sqft": 637,
+    "rooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 408000,
+    "assessed_improvement_value": 272000,
+    "last_sale_date": "2024-07-16"
+  },
+  "permits": [
+    {
+      "number": "202007099865",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-07-09",
+      "status_date": "2020-10-26",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "replace bathroom fl & shower tile in-kind.new shower valves. replace (e) faucets 2 each.new interior doors, replace gas stove with induction cooktop. replace kitchen faucet.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0667101&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0667&unit=605",
+      "retrieved": "2026-11-04"
+    }
+  ]
+}

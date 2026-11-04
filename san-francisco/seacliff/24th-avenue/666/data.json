@@ -1,0 +1,140 @@
+{
+  "address": "666 24th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/seacliff/24th-avenue/666/",
+  "apn": "1566026B",
+  "block": "1566",
+  "lot": "026B",
+  "eas_baseid": "308604",
+  "coordinates": {
+    "lat": 37.776987,
+    "lng": -122.483092
+  },
+  "parcel": {
+    "year_built": 1919,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 3225,
+    "building_area_sqft": 2070,
+    "lot_depth_ft": 29,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0666 24TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1570800,
+    "assessed_improvement_value": 673200,
+    "last_sale_date": "2023-07-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1919",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200407199209",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2004-07-19",
+      "status_date": "2005-07-08",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to app 200301296271s, work under construction, reduce square footage of 3rd flr",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200301296271",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2003-01-29",
+      "status_date": "2005-07-08",
+      "estimated_cost": 203000,
+      "revised_cost": 203000,
+      "description": "third story addition to rear of exsisting 2 story building + 3 story extension. includes livingrm,",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9400575",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-01-12",
+      "status_date": "1994-05-12",
+      "estimated_cost": 3400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1994–2004",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=AVE&address_number=666",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1566026B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1566&lot=026B",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1566026B",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2003-09-25",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 25 September 2003",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/54minutesofsanfran2003san/page/n201/mode/1up",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2003-11-06",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 6 November 2003",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/54minutesofsanfran2003san/page/n285/mode/1up",
+      "retrieved": "2026-11-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2003-09-25",
+      "kind": "occupancy",
+      "description": "An existing two-story, single-family residence stood at the site.",
+      "source": "sf-planning-commission-minutes-2003-09-25"
+    },
+    {
+      "date": "2003-11-06",
+      "kind": "planning decision",
+      "description": "The City Planning Commission did not take discretionary review and approved the project as proposed for a horizontal and vertical addition at the rear of an existing two-story, single-family residence.",
+      "source": "sf-planning-commission-minutes-2003-11-06"
+    }
+  ]
+}

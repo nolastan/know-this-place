@@ -1,0 +1,141 @@
+{
+  "address": "465 Day Street, San Francisco, CA 94131",
+  "path": "/san-francisco/noe-valley/day-street/465/",
+  "apn": "6640008",
+  "block": "6640",
+  "lot": "008",
+  "eas_baseid": "404533",
+  "coordinates": {
+    "lat": 37.742307,
+    "lng": -122.432322
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2850,
+    "building_area_sqft": 2002,
+    "lot_depth_ft": 14,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 0465 DAY                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 65264,
+    "assessed_improvement_value": 483290
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200212183820",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2002-12-18",
+      "status_date": "2004-10-20",
+      "estimated_cost": 90000,
+      "revised_cost": 190725,
+      "description": "new addition new 2nd flr with 2 bedrooms and 2 baths. remodel kitchen at 1st flr add new family room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8611554",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-09-19",
+      "status_date": "1987-01-28",
+      "estimated_cost": 4500,
+      "description": "replace front stairs and small fence (3').",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8206776",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-08-17",
+      "status_date": "1983-03-04",
+      "estimated_cost": 2500,
+      "description": "bldg use: dwg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8205255",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-06-28",
+      "status_date": "1983-03-04",
+      "estimated_cost": 3500,
+      "description": "bldg use: dwg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1982–2015",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DAY&street_type=ST&address_number=465",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6640008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6640&lot=008",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6640008",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2003-08-21",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 21 August 2003",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/54minutesofsanfran2003san/page/n129/mode/1up",
+      "retrieved": "2026-11-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2003-08-21",
+      "kind": "planning decision",
+      "description": "The City Planning Commission took discretionary review and approved, with modifications, the two-story rear addition to the existing two-story one-family dwelling at 465 Day Street.",
+      "source": "sf-planning-commission-minutes-2003-08-21"
+    },
+    {
+      "date": "2003-08-21",
+      "kind": "occupancy",
+      "description": "An existing two-story, one-family dwelling stood at 465 Day Street.",
+      "source": "sf-planning-commission-minutes-2003-08-21"
+    }
+  ]
+}

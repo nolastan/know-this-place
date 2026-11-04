@@ -1,0 +1,146 @@
+{
+  "address": "510 Belvedere Street, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/belvedere-street/510/",
+  "apn": "1279063",
+  "block": "1279",
+  "lot": "063",
+  "eas_baseid": "299705",
+  "coordinates": {
+    "lat": 37.763216,
+    "lng": -122.447757
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 3488.8,
+    "building_area_sqft": 1185,
+    "lot_depth_ft": 24.6,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Cole Valley/Parnassus Heights",
+    "analysis_neighborhood": "Haight Ashbury",
+    "property_location_raw": "0000 0510 BELVEDERE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 897801,
+    "assessed_improvement_value": 1529606,
+    "last_sale_date": "2002-06-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Cole Valley Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1900–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200603096384",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-03-09",
+      "status_date": "2008-01-07",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "at request of field inspector, dennis charlin, filing bathroom plan changes at 1/f. original appl#200304031372 & 200306031370 filed as reference material",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200304031370",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "2003-04-03",
+      "status_date": "2006-03-16",
+      "estimated_cost": 715000,
+      "revised_cost": 715000,
+      "description": "erect two story single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200304031372",
+      "type": "demolitions",
+      "status": "issued",
+      "filed": "2003-04-03",
+      "status_date": "2004-03-09",
+      "description": "demolish two story single family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "2003–2018",
+    "shown_on_page": 3,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BELVEDERE&street_type=ST&address_number=510",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1279063&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1279&lot=063",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1279063",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44775720566368%2037.76321642057491)%27)",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2003-09-25",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 25 September 2003",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/54minutesofsanfran2003san/page/n211/mode/1up",
+      "retrieved": "2026-11-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2003-09-25",
+      "kind": "planning decision",
+      "description": "The City Planning Commission did not take discretionary review and approved the demolition of a two-story, single-family residence.",
+      "source": "sf-planning-commission-minutes-2003-09-25"
+    },
+    {
+      "date": "2003-09-25",
+      "kind": "occupancy",
+      "description": "A two-story, single-family residence stood at the site.",
+      "source": "sf-planning-commission-minutes-2003-09-25"
+    }
+  ]
+}

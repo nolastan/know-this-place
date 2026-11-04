@@ -13,6 +13,7 @@ A working-class residential district in the city's south-east, laid out in the e
 - [Dublin Street](dublin-street/) — 1 building, built 1953.
 - [France Avenue](france-avenue/) — 1 building, built 1906.
 - [Geneva Avenue](geneva-avenue/) — 1 building, built 1922.
+- [Italy Avenue](italy-avenue/) — 1 building, built 1926.
 - [La Grande Avenue](la-grande-avenue/) — 1 building, built 1957.
 - [Lisbon Street](lisbon-street/) — 1 building, built 1906.
 - [London Street](london-street/) — 1 building, built 1905.

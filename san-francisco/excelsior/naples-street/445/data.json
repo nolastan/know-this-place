@@ -1,0 +1,152 @@
+{
+  "address": "445 Naples Street, San Francisco, CA 94112",
+  "path": "/san-francisco/excelsior/naples-street/445/",
+  "apn": "6077029",
+  "block": "6077",
+  "lot": "029",
+  "eas_baseid": "390799",
+  "coordinates": {
+    "lat": 37.72154,
+    "lng": -122.430343
+  },
+  "parcel": {
+    "year_built": 1908,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 950,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Excelsior",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0000 0445 NAPLES              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 645000,
+    "assessed_improvement_value": 215000,
+    "last_sale_date": "2024-07-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202408219134",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-08-21",
+      "status_date": "2025-11-24",
+      "estimated_cost": 2000,
+      "revised_cost": 5000,
+      "description": "comply w/ nov # 202429303: rebuild 10' curb that was removed to allow driveway entrance",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200301306370",
+      "type": "new construction wood frame",
+      "status": "cancelled",
+      "filed": "2003-01-30",
+      "status_date": "2006-05-05",
+      "estimated_cost": 200000,
+      "description": "erect a two story single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200301306372",
+      "type": "demolitions",
+      "status": "cancelled",
+      "filed": "2003-01-30",
+      "status_date": "2007-12-10",
+      "description": "demolish single family, 1 story building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "20000111817",
+      "type": "new construction wood frame",
+      "status": "withdrawn",
+      "filed": "2000-01-11",
+      "status_date": "2002-09-05",
+      "estimated_cost": 250000,
+      "description": "erect 3 story single family dwelling unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "20000111810",
+      "type": "demolitions",
+      "status": "withdrawn",
+      "filed": "2000-01-11",
+      "status_date": "2002-09-05",
+      "description": "demolish 1 story single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8700022",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1987-01-02",
+      "status_date": "1987-06-15",
+      "estimated_cost": 4000,
+      "description": "repair roof over kitchen, bedroom, wall, paint, carpet",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NAPLES&street_type=ST&address_number=445",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6077029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6077&lot=029",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6077029",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2003-10-16",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 16 October 2003",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/54minutesofsanfran2003san/page/n257/mode/1up",
+      "retrieved": "2026-11-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2003-10-16",
+      "kind": "planning decision",
+      "description": "The City Planning Commission did not take discretionary review and approved the demolition of an existing single-family dwelling.",
+      "source": "sf-planning-commission-minutes-2003-10-16"
+    },
+    {
+      "date": "2003-10-16",
+      "kind": "occupancy",
+      "description": "An existing single-family dwelling stood at the site.",
+      "source": "sf-planning-commission-minutes-2003-10-16"
+    }
+  ]
+}

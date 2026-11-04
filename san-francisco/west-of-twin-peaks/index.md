@@ -49,6 +49,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Portola Drive](portola-drive/) — 1 building, built 1955.
 - [Rockaway Avenue](rockaway-avenue/) — 1 building, built 1941.
 - [Rockdale Drive](rockdale-drive/) — 1 building, built 1930.
+- [Rosewood Drive](rosewood-drive/) — 1 building, built 1937.
 - [Saint Francis Boulevard](saint-francis-boulevard/) — 1 building, built 1948; 1 in the St. Francis Wood Historic District.
 - [San Andreas Way](san-andreas-way/) — 1 building, built 1941; 1 in the St. Francis Wood Historic District.
 - [San Anselmo Avenue](san-anselmo-avenue/) — 1 building, built 1942; 1 in the St. Francis Wood Historic District.

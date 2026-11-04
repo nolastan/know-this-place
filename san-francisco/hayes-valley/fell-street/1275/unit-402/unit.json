@@ -1,0 +1,35 @@
+{
+  "address": "350 Fell Street, San Francisco, CA 94117",
+  "path": "/san-francisco/hayes-valley/fell-street/1275/unit-402/",
+  "unit": "402",
+  "apn": "1215075",
+  "block": "1215",
+  "lot": "075",
+  "parcel": {
+    "building_area_sqft": 672,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 483574,
+    "assessed_improvement_value": 483574,
+    "last_sale_date": "2017-09-15"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1215075&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1215&unit=402",
+      "retrieved": "2026-11-04"
+    }
+  ]
+}

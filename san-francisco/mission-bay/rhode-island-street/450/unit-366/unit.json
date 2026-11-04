@@ -1,0 +1,47 @@
+{
+  "address": "451 Rhode Island Street, San Francisco, CA 94107",
+  "path": "/san-francisco/mission-bay/rhode-island-street/450/unit-366/",
+  "unit": "366",
+  "apn": "3978035",
+  "block": "3978",
+  "lot": "035",
+  "parcel": {
+    "building_area_sqft": 932,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 226035,
+    "assessed_improvement_value": 226036,
+    "last_sale_date": "2022-09-12"
+  },
+  "permits": [
+    {
+      "number": "202411215460",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-11-21",
+      "status_date": "2025-02-14",
+      "estimated_cost": 20000,
+      "revised_cost": 30000,
+      "description": "install insulation in ceiling (approx 770sqft) install insulation on exterior walls(250sq) hand drywall- double sheet on ceiling and exyerior walls (approx 3000 sqft) paint unit, install flooe, reset kitchen cabinets and sink, reset light fixtures (closets entry, kitchen, livingroom, laundry room)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3978035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3978&unit=366",
+      "retrieved": "2026-11-04"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "address": "899 North Point Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/north-point-street/899/unit-899-2/",
+  "unit": "2",
+  "apn": "0026049",
+  "block": "0026",
+  "lot": "049",
+  "parcel": {
+    "building_area_sqft": 1176,
+    "rooms": 7,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 799027,
+    "assessed_improvement_value": 532684,
+    "last_sale_date": "2023-01-11"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0026049&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0026&unit=2",
+      "retrieved": "2026-11-04"
+    }
+  ]
+}

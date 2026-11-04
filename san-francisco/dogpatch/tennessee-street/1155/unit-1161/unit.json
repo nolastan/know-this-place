@@ -1,0 +1,46 @@
+{
+  "address": "1161 Tennessee Street, San Francisco, CA 94107",
+  "path": "/san-francisco/dogpatch/tennessee-street/1155/unit-1161/",
+  "apn": "4172081",
+  "block": "4172",
+  "lot": "081",
+  "parcel": {
+    "building_area_sqft": 1555,
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 416378,
+    "assessed_improvement_value": 476467,
+    "last_sale_date": "2014-10-20"
+  },
+  "permits": [
+    {
+      "number": "202404170167",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2024-04-17",
+      "status_date": "2024-04-17",
+      "estimated_cost": 48600,
+      "revised_cost": 48600,
+      "description": "interior renovation of kitchen in one condo. unit of a 3 unit building. minor demo of part of 1 partition wall. new cabinets, counter top, range, and exhaust hood. new lighting.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4172081&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4172&street_number=1161",
+      "retrieved": "2026-11-04"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "address": "821 Folsom Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/folsom-street/821/unit-407/",
+  "unit": "407",
+  "apn": "3752450",
+  "block": "3752",
+  "lot": "450",
+  "parcel": {
+    "building_area_sqft": 1105,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 465500,
+    "assessed_improvement_value": 465500,
+    "last_sale_date": "2014-12-04"
+  },
+  "permits": [
+    {
+      "number": "201412314790",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-12-31",
+      "status_date": "2015-03-12",
+      "estimated_cost": 16800,
+      "revised_cost": 31000,
+      "description": "renovate 2 bathrooms - no changes to windows, walls, locations of fixtures. replace (e): tub, countertops, exhaust fans, toilets, sinks, replace 8 lights in bedrooms, 1 light in each bathroom.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3752450&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3752&unit=407",
+      "retrieved": "2026-11-04"
+    }
+  ]
+}

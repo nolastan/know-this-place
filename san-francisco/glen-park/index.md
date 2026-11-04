@@ -32,6 +32,7 @@ Diamond and Chenery and evaluated eight of them in detail.
 - [Fairmount Street](fairmount-street/) — 1 building, built 1907.
 - [Glenview Drive](glenview-drive/) — 1 building, built 1951.
 - [Gold Mine Drive](gold-mine-drive/) — 1 building, built 1963.
+- [Hamerton Avenue](hamerton-avenue/) — 1 building, built 1910.
 - [Joost Avenue](joost-avenue/) — 2 buildings, built 1910–1926.
 - [Laidley Street](laidley-street/) — 1 building, built 1900.
 - [Lippard Avenue](lippard-avenue/) — 1 building.

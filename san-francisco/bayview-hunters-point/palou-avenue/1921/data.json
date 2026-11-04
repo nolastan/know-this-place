@@ -1,0 +1,120 @@
+{
+  "address": "1921 Palou Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/palou-avenue/1921/",
+  "apn": "5330042",
+  "block": "5330",
+  "lot": "042",
+  "eas_baseid": "375861",
+  "coordinates": {
+    "lat": 37.737345,
+    "lng": -122.397384
+  },
+  "parcel": {
+    "year_built": 2007,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2658,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "NA",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Silver Terrace",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1921 PALOU               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1065876,
+    "assessed_improvement_value": 456803,
+    "last_sale_date": "2019-04-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "2007",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200705090835",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-05-09",
+      "status_date": "2007-05-11",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew pa#200603207038 for final only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200603207038",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-03-20",
+      "status_date": "2006-12-12",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "relocate lightwell to south side 2 linear ft. because of the neighbor complant. revision to pa# 2001/10/04/9988.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200110049988",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "2001-10-04",
+      "status_date": "2007-05-09",
+      "estimated_cost": 200000,
+      "revised_cost": 250000,
+      "description": "erect a two story single family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PALOU&street_type=AVE&address_number=1921",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5330042&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5330&lot=042",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5330042",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2003-09-11",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 11 September 2003",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/54minutesofsanfran2003san/page/n174/mode/1up",
+      "retrieved": "2026-11-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2003-09-11",
+      "kind": "occupancy",
+      "description": "A vacant lot stood at 1921 Palou Avenue.",
+      "source": "sf-planning-commission-minutes-2003-09-11"
+    }
+  ]
+}

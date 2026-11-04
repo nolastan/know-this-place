@@ -1,0 +1,69 @@
+{
+  "address": "175 Russ Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/russ-street/175/unit-15/",
+  "unit": "15",
+  "apn": "3731216",
+  "block": "3731",
+  "lot": "216",
+  "parcel": {
+    "building_area_sqft": 1363,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 587520,
+    "assessed_improvement_value": 391680,
+    "last_sale_date": "2024-02-27"
+  },
+  "permits": [
+    {
+      "number": "202512091314",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2025-12-09",
+      "status_date": "2025-12-09",
+      "estimated_cost": 25000,
+      "revised_cost": 54809,
+      "description": "existing bathroom remodel, new finishes, and fixtures, new closet",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201501266678",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-01-26",
+      "status_date": "2015-03-13",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "replace tile in (3) bathrooms (walls & floor). no new fixtures, non structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201407282315",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-07-28",
+      "status_date": "2014-07-31",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "one unit -remove & replace deck boards & water proofing. remove & reset sliding glass door with new flashing. repair interior sheetrock affected by repairs. some work visible to the street. compliance with maher ordinance no. 155-13 not required.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3731216&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3731&unit=15",
+      "retrieved": "2026-11-04"
+    }
+  ]
+}
