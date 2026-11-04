@@ -2806,6 +2806,15 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   from the node misjudges very wide streets: the Claus Spreckels Building's
   exact 75 by 70 lot is 125 ft from Market and Third's node and is the corner.
   ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **A street network's first vertex is not the street's direction.** DPW
+  centreline segments often begin with a 25–60 ft kerb-return arc, so
+  `--retest` took Market at 7th as running 13° north of east and Broadway at
+  Mason as running north, and flagged three correct placements as on the
+  wrong side. *Take a bearing from the first vertex at least 100 ft from the
+  node, or the far end.* And a retest's disagreement names a lot, not a
+  verdict: of 1907's 18, 3 were the axis, 1 a wide-street reach, and 3 had the
+  right parcel one corner over, which earned a re-placement rather than only
+  a retraction. ([sources/loc-newspapers.md](sources/loc-newspapers.md))
 - **A bulk crawl of a walled host costs the one route that was open.** Mapping
   Chronicling America's reel folders one listing each (about 900 requests in
   a few minutes) drew a host-wide Cloudflare challenge, and the tarball
