@@ -4,6 +4,7 @@ The city's Twin Peaks analysis neighborhood: the two summits at the centre of th
 
 ## Streets documented so far
 
+- [Argent Alley](argent-alley/) — 1 building, built 1961.
 - [Corbett Avenue](corbett-avenue/) — 3 buildings, built 1900–1947.
 - [Crestline Drive](crestline-drive/) — 1 building, built 1964.
 - [Romain Street](romain-street/) — 5 buildings, built 1935–1936.

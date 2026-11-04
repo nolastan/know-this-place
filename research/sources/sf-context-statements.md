@@ -4155,7 +4155,7 @@ architectural period, so its buildings are scattered from Seacliff to Bayview.
   file and nowhere on the site. Thirty-three never reached a parcel: 15
   condominiums, 13 addresses EAS no longer holds, 4 ranges now split across
   parcels, and 815 Buena Vista West, which EAS does not hold as a street at all.
-  Coverage note: **the appendix ratings table is not read** — 45 PDF pages,
+  Coverage note (superseded: the ratings table is read, as `umb-survey-ratings`; see its own `Verified:` line — this note's queue entry was stale when a 2026-11-04 run picked it): the appendix ratings table was not read in this pass — 45 PDF pages,
   roughly 1,600 rows of street number, street, block, lot and rating codes
   across all eleven study areas, with its key on PDF pages 158–163. That is the
   next batch, and it is the larger half of the document by rows and the smaller
