@@ -22,6 +22,7 @@ Merced Heights, the ridge between them, was mostly built after World War II.
 - [Faxon Avenue](faxon-avenue/) — 1 building, built 1930.
 - [Grafton Avenue](grafton-avenue/) — 1 building, built 1915.
 - [Granada Avenue](granada-avenue/) — 1 building, built 1989.
+- [Howth Street](howth-street/) — 1 building, built 1908.
 - [Josiah Avenue](josiah-avenue/) — 1 building, built 1910.
 - [Jules Avenue](jules-avenue/) — 2 buildings, built 1926–1927.
 - [Lakeview Avenue](lakeview-avenue/) — 1 building, built 1916.

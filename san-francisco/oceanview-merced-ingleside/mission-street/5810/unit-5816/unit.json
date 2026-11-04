@@ -1,0 +1,31 @@
+{
+  "address": "5816 Mission Street, San Francisco, CA 94112",
+  "path": "/san-francisco/oceanview-merced-ingleside/mission-street/5810/unit-5816/",
+  "apn": "7143036",
+  "block": "7143",
+  "lot": "036",
+  "parcel": {
+    "building_area_sqft": 1142
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 219029,
+    "assessed_improvement_value": 146018,
+    "last_sale_date": "2022-03-30"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7143036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7143&street_number=5816",
+      "retrieved": "2026-11-04"
+    }
+  ]
+}

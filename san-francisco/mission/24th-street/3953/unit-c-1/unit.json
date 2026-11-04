@@ -1,0 +1,33 @@
+{
+  "address": "3953 24th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/mission/24th-street/3953/unit-c-1/",
+  "unit": "C-1",
+  "apn": "6508043",
+  "block": "6508",
+  "lot": "043",
+  "parcel": {
+    "building_area_sqft": 1029,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 374025,
+    "assessed_improvement_value": 249350,
+    "last_sale_date": "2019-09-06"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6508043&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6508&unit=C-1",
+      "retrieved": "2026-11-04"
+    }
+  ]
+}

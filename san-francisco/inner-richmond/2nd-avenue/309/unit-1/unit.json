@@ -1,0 +1,58 @@
+{
+  "address": "309 2nd Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/2nd-avenue/309/unit-1/",
+  "unit": "1",
+  "apn": "1434053",
+  "block": "1434",
+  "lot": "053",
+  "parcel": {
+    "building_area_sqft": 2236,
+    "rooms": 10,
+    "bedrooms": 4,
+    "bathrooms": 4
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1193400,
+    "assessed_improvement_value": 795600,
+    "last_sale_date": "2023-11-30"
+  },
+  "permits": [
+    {
+      "number": "201607152466",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-07-15",
+      "status_date": "2016-09-28",
+      "estimated_cost": 17000,
+      "revised_cost": 17000,
+      "description": "replace kitchen counter, backsplash, and cabinetry. replace light fixtures in kind in kitchen. no archtectural or structural modification. all lighting to be high efficacy.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201201303127",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-01-30",
+      "status_date": "2012-01-30",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa#200709284025 all work is complete.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1434053&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1434&unit=1",
+      "retrieved": "2026-11-04"
+    }
+  ]
+}

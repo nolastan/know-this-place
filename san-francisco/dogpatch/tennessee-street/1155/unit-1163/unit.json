@@ -1,0 +1,68 @@
+{
+  "address": "1163 Tennessee Street, San Francisco, CA 94107",
+  "path": "/san-francisco/dogpatch/tennessee-street/1155/unit-1163/",
+  "apn": "4172082",
+  "block": "4172",
+  "lot": "082",
+  "parcel": {
+    "building_area_sqft": 1704,
+    "rooms": 8,
+    "bedrooms": 3,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 506059,
+    "assessed_improvement_value": 506059,
+    "last_sale_date": "2010-09-08"
+  },
+  "permits": [
+    {
+      "number": "202103055953",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-03-05",
+      "status_date": "2021-11-17",
+      "estimated_cost": 8000,
+      "revised_cost": 14000,
+      "description": "new bathroom with soaking tub & tempered sliding door, toilet, base cabinet and paint grade wood shelves. demolition on non-loading vent shaft and remove abandoned vents from lower floors. gc to confirm existing smoke alarm & carbon monoxide alarm per crc 315 & 315.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202010287579",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-10-28",
+      "status_date": "2021-11-17",
+      "estimated_cost": 14000,
+      "revised_cost": 20000,
+      "description": "replace victorian wall mounted sink with new base cabinet with sink and replace claw and ball tub with a modern tile shower stall with tempbered glass doo and side light in bathroom. replace flooring tile with new. replce large victoria farmhouse wink and replce with new base kitchen cabinet & sink.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201008108497",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-08-10",
+      "status_date": "2010-08-10",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "repair dry rot at base of frame foundation left front corner, repair dry rot at rear foundation, repair dry rot at rear porch & stairs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4172082&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4172&street_number=1163",
+      "retrieved": "2026-11-04"
+    }
+  ]
+}

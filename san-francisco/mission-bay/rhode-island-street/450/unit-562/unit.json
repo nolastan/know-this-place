@@ -1,0 +1,47 @@
+{
+  "address": "451 Rhode Island Street, San Francisco, CA 94107",
+  "path": "/san-francisco/mission-bay/rhode-island-street/450/unit-562/",
+  "unit": "562",
+  "apn": "3978145",
+  "block": "3978",
+  "lot": "145",
+  "parcel": {
+    "building_area_sqft": 656,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 409200,
+    "assessed_improvement_value": 272800,
+    "last_sale_date": "2017-12-04"
+  },
+  "permits": [
+    {
+      "number": "202112154487",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-12-15",
+      "status_date": "2022-04-27",
+      "estimated_cost": 5000,
+      "revised_cost": 10000,
+      "description": "#562 1. full bathroom renovation: plumbing fixtures replacement, toliet/sink,bath tub, faucet and shower: demo and replace tiles and vanity cabinet and mirror: adding two recessed lights and replace existing vent and vanity light. adding track lighting with (e) switches in livingroom and bedroom.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3978145&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3978&unit=562",
+      "retrieved": "2026-11-04"
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "address": "474 Magellan Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/west-of-twin-peaks/magellan-avenue/474/",
+  "apn": "2926014",
+  "block": "2926",
+  "lot": "014",
+  "eas_baseid": "349193",
+  "coordinates": {
+    "lat": 37.744531,
+    "lng": -122.465654
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 4000,
+    "building_area_sqft": 2690,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Forest Hill",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0474 MAGELLAN            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1296336,
+    "assessed_improvement_value": 864218,
+    "last_sale_date": "2004-12-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Forest Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1912–1939",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202007310966",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-07-31",
+      "status_date": "2020-08-10",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "inkind replacement of 5 living room single pane all-wood-frame casement windows at lower bay on front of house with same sized all-wood-framed double pane casement windows. no structural work - no bedroom windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201907236704",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-07-23",
+      "status_date": "2019-07-23",
+      "estimated_cost": 17000,
+      "revised_cost": 17000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201107150290",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-07-15",
+      "status_date": "2011-07-15",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "replace 16 windows, not visable from street, no structural changes, max u factor 0.4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200212304339",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2002-12-30",
+      "status_date": "2006-05-05",
+      "estimated_cost": 750000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9808469",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-05-12",
+      "status_date": "1998-12-23",
+      "estimated_cost": 13000,
+      "description": "alterations to (e)master bathrm,new fixtures,vanity",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9723110",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-11-17",
+      "status_date": "1998-05-13",
+      "estimated_cost": 10425,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MAGELLAN&street_type=AVE&address_number=474",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2926014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2926&lot=014",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2926014",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.46565399563099%2037.74453138487133)%27)",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2003-11-20",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 20 November 2003",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/54minutesofsanfran2003san/page/n325/mode/1up",
+      "retrieved": "2026-11-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2003-11-20",
+      "kind": "planning decision",
+      "description": "The City Planning Commission did not take discretionary review and approved the project as proposed to construct a three-story rear and side addition and a new rear exterior stairway for an existing single-family dwelling.",
+      "source": "sf-planning-commission-minutes-2003-11-20"
+    },
+    {
+      "date": "2003-11-20",
+      "kind": "occupancy",
+      "description": "An existing single-family dwelling stood at the property.",
+      "source": "sf-planning-commission-minutes-2003-11-20"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "address": "451 Rhode Island Street, San Francisco, CA 94107",
+  "path": "/san-francisco/mission-bay/rhode-island-street/450/unit-526/",
+  "unit": "526",
+  "apn": "3978127",
+  "block": "3978",
+  "lot": "127",
+  "parcel": {
+    "building_area_sqft": 972,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 675000,
+    "assessed_improvement_value": 450000,
+    "last_sale_date": "2024-10-25"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3978127&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3978&unit=526",
+      "retrieved": "2026-11-04"
+    }
+  ]
+}

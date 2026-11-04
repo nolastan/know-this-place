@@ -1,0 +1,84 @@
+{
+  "address": "3243 21st Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/21st-street/3243/",
+  "block": "3616",
+  "eas_baseid": "362835",
+  "coordinates": {
+    "lat": 37.756855,
+    "lng": -122.419849
+  },
+  "parcel": {
+    "year_built": 1876,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "NA",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "units": 2
+  },
+  "condominium": {
+    "lots": [
+      "068",
+      "069"
+    ],
+    "method": "Proposed from the 2025 roll for block 3616: every condominium parcel the roll files under 3243 21ST ST, and the unbroken run of lots beside parcel 3616068 on the same street with the same year built (1876) — street numbers 3243, 3245. 2 lots, 068–069."
+  },
+  "historic_district": {
+    "name": "Liberty Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1860s–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=ST&address_number=3243",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 3616)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=3616&closed_roll_year=2025",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3616",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41984902628118%2037.75685482174139)%27)",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2003-10-16",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 16 October 2003",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/54minutesofsanfran2003san/page/n258/mode/1up",
+      "retrieved": "2026-11-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2003-10-16",
+      "kind": "planning decision",
+      "description": "The City Planning Commission did not take discretionary review and approved the merger of two units into one in an existing three-unit structure.",
+      "source": "sf-planning-commission-minutes-2003-10-16"
+    },
+    {
+      "date": "2003-10-16",
+      "kind": "occupancy",
+      "description": "An existing three-unit structure stood at the site.",
+      "source": "sf-planning-commission-minutes-2003-10-16"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "address": "3953 24th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/mission/24th-street/3953/unit-1/",
+  "unit": "1",
+  "apn": "6508045",
+  "block": "6508",
+  "lot": "045",
+  "parcel": {
+    "building_area_sqft": 732,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 474300,
+    "assessed_improvement_value": 316200,
+    "last_sale_date": "2023-10-17"
+  },
+  "permits": [
+    {
+      "number": "201501296947",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-01-29",
+      "status_date": "2016-08-05",
+      "estimated_cost": 75000,
+      "revised_cost": 32000,
+      "description": "repairs to elevated decking, rail caps, associated siding, windows and doors. repairs to light well windows, doors and siding. replace (e) stucoo at rear at first level per plan & reflash opening.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6508045&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6508&unit=1",
+      "retrieved": "2026-11-04"
+    }
+  ]
+}
