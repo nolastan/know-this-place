@@ -50,7 +50,7 @@
         "path": "/san-francisco/tenderloin/market-street/982/",
         "eas_address": "988 MARKET ST",
         "method": "EAS exact match on 988 MARKET ST → parcel 0342018; sf-parcels has blklot 0342018 active, 982–982 MARKET; the 2025 roll records it as commercial retail. 988 MARKET ST's coordinates fall in 20 active parcels; 0342018 is the one with a page.",
-        "checked_on": "2026-11-02"
+        "checked_on": "2026-11-05"
       },
       "publish": {
         "status": "published",
@@ -145,13 +145,13 @@
       "confidence": "high",
       "resolution": {
         "status": "unresolved",
-        "checked_on": "2026-09-28",
-        "method": "sf-eas-addresses has 701 ILLINOIS ST but it does not join to one parcel. 701 ILLINOIS ST's coordinates fall in 2 active parcels (3941041, 9900068), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-        "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+        "checked_on": "2026-11-05",
+        "method": "sf-eas-addresses has 701 ILLINOIS ST but it does not join to one parcel. 701 ILLINOIS ST's coordinates fall in 2 active parcels (9900068, 3941041) that are not one condominium's units, so none of them is the building by rule.",
+        "note": "The address exists but cannot be joined to a parcel, so there is no page to put it on. EAS leaves addresses unparcelled for rear units, vacated lots and addresses in flux; a later pass may find one."
       },
       "publish": {
         "status": "pending",
-        "note": "Blocked: the seeder may not make a page here. 701 Illinois Street's coordinates fall in 2 active parcels (3941041, 9900068), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building. The directory contract in the root AGENTS.md defers those. Worth retrying if the parcel map settles — note the article's owners are private individuals and are not recorded here regardless."
+        "note": "Blocked, re-checked 2026-11-05 after the condominium routing (#446): not a condominium. 701 Illinois Street's point holds two parcels on different map lots, 3941041 and Port parcel 9900068, which is an overlay rather than one building's units; picking one would be a coin toss. The article's owners are private individuals and are not recorded here regardless."
       }
     }
   ]

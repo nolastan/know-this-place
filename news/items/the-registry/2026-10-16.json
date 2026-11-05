@@ -39,7 +39,7 @@
         "path": "/san-francisco/east-cut/1st-street/42/",
         "eas_address": "42 01ST ST",
         "method": "EAS exact match on 50 01ST ST → parcel 3708055; sf-parcels has blklot 3708055 active, 42–50 01ST; the 2025 roll records it as miscellaneous/mixed-use, built 1917. EAS puts 42, 50 01ST ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 42. The record spells the street out as FIRST; EAS holds the numbered streets as zero-padded ordinals, so this is 01ST.",
-        "checked_on": "2026-10-16"
+        "checked_on": "2026-11-05"
       }
     },
     {
@@ -62,13 +62,13 @@
       "confidence": "high",
       "publish": {
         "status": "pending",
-        "note": "Blocked: 1155 Market is a commercial condominium on four active parcels (3702820-3702823); the directory contract defers those. Same blocker as 2026-08-28b-0001. Revisit if a page for the building appears."
+        "note": "Blocked, same as 2026-08-28b-0001 (re-checked 2026-11-05): 1155 Market Street is four office airspace parcels on one map lot, not condominiums on the roll, so the condo-building route (#446) does not take it."
       },
       "resolution": {
         "status": "unresolved",
-        "checked_on": "2026-10-16",
-        "method": "sf-eas-addresses has 1155 MARKET ST but it does not join to one parcel. 1155 MARKET ST's coordinates fall in 4 active parcels (3702821, 3702823, 3702822, 3702820), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-        "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+        "checked_on": "2026-11-05",
+        "method": "sf-eas-addresses has 1155 MARKET ST but it does not join to one parcel. 1155 MARKET ST's coordinates fall in 4 active parcels (3702821, 3702823, 3702822, 3702820) that are not one condominium's units, so none of them is the building by rule.",
+        "note": "The address exists but cannot be joined to a parcel, so there is no page to put it on. EAS leaves addresses unparcelled for rear units, vacated lots and addresses in flux; a later pass may find one."
       }
     },
     {
@@ -99,7 +99,7 @@
         "path": "/san-francisco/east-cut/market-street/525/",
         "eas_address": "525 MARKET ST",
         "method": "EAS exact match on 525 MARKET ST → parcel 3708056; sf-parcels has blklot 3708056 active, 525–525 MARKET; the 2025 roll records it as commercial office, built 1973.",
-        "checked_on": "2026-10-16"
+        "checked_on": "2026-11-05"
       }
     }
   ]

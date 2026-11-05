@@ -42,7 +42,7 @@
         "path": "/san-francisco/russian-hill/polk-street/2354/",
         "eas_address": "2354 POLK ST",
         "method": "EAS exact match on 2360 POLK ST → parcel 0548019; sf-parcels has blklot 0548019 active, 2354–2360 POLK; the 2025 roll records it as multi-family residential, built 1910. The assessor files the parcel as 1395 UNION ST. EAS puts 2354, 2356, 2358, 2360 POLK ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2354.",
-        "checked_on": "2026-09-25"
+        "checked_on": "2026-11-05"
       }
     },
     {
@@ -81,7 +81,7 @@
         "path": "/san-francisco/south-of-market/townsend-street/410/",
         "eas_address": "410 TOWNSEND ST",
         "method": "EAS exact match on 410 TOWNSEND ST → parcel 3785002A; sf-parcels has blklot 3785002A active, 410–410 TOWNSEND; the 2025 roll records it as commercial office, built 1912.",
-        "checked_on": "2026-09-25"
+        "checked_on": "2026-11-05"
       }
     },
     {
@@ -110,13 +110,13 @@
       "confidence": "high",
       "publish": {
         "status": "pending",
-        "note": "Blocked: the seeder may not make a page here. 232 O'Farrell Street's coordinates fall in 4 active parcels (0315029, 0315028, 0315030, 0315031), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building. The directory contract in the root AGENTS.md defers those. Worth retrying if the condominium parcels are ever consolidated for directory purposes."
+        "note": "Blocked, re-checked 2026-11-05 after the condominium routing (#446): not a condominium after all. 232 O'Farrell Street's point holds four airspace parcels on one map lot (0315028-0315031) that the 2025 roll classes 'Hotels - Other', filed under 201 Powell Street, so the condo-building route does not take it. Ready to publish if multi-parcel buildings that share a map lot get the same building page as condominiums."
       },
       "resolution": {
         "status": "unresolved",
-        "checked_on": "2026-09-25",
-        "method": "sf-eas-addresses has 232 OFARRELL ST but it does not join to one parcel. 232 OFARRELL ST's coordinates fall in 4 active parcels (0315029, 0315028, 0315030, 0315031), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building. The record spells the street O'FARRELL; EAS holds it as OFARRELL.",
-        "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+        "checked_on": "2026-11-05",
+        "method": "sf-eas-addresses has 232 OFARRELL ST but it does not join to one parcel. 232 OFARRELL ST's coordinates fall in 4 active parcels (0315028, 0315030, 0315029, 0315031) that are not one condominium's units, so none of them is the building by rule. The record spells the street O'FARRELL; EAS holds it as OFARRELL.",
+        "note": "The address exists but cannot be joined to a parcel, so there is no page to put it on. EAS leaves addresses unparcelled for rear units, vacated lots and addresses in flux; a later pass may find one."
       }
     }
   ]

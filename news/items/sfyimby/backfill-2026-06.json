@@ -44,7 +44,7 @@
         "path": "/san-francisco/mission/24th-street/3230/",
         "eas_address": "3230 24TH ST",
         "method": "EAS exact match on 3230 24TH ST → parcel 3642096; sf-parcels has blklot 3642096 active, 3230–3236 24TH; the 2025 roll records it as miscellaneous/mixed-use. EAS files the address under parcel 3642015, which sf-parcels reports retired; the active parcel its coordinates fall in is 3642096.",
-        "checked_on": "2026-09-25"
+        "checked_on": "2026-11-05"
       },
       "publish": {
         "status": "published",
@@ -80,13 +80,13 @@
       "confidence": "high",
       "resolution": {
         "status": "unresolved",
-        "checked_on": "2026-09-25",
-        "method": "sf-eas-addresses has 1123 SUTTER ST but it does not join to one parcel. 1123 SUTTER ST's coordinates fall in 20 active parcels (0692277, 0692283, 0692091, 0692058…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-        "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+        "checked_on": "2026-11-05",
+        "method": "sf-eas-addresses has 1123 SUTTER ST but it does not join to one parcel. 1123 SUTTER ST's coordinates fall in 20 active parcels (0692051, 0692223, 0692048, 0692173…) that are not one condominium's units, so none of them is the building by rule.",
+        "note": "The address exists but cannot be joined to a parcel, so there is no page to put it on. EAS leaves addresses unparcelled for rear units, vacated lots and addresses in flux; a later pass may find one."
       },
       "publish": {
         "status": "pending",
-        "note": "The address is a condominium today (20 active parcels at 1123 Sutter Street's coordinates), and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. Worth retrying if the parcel map settles once the tower is occupied and mapped."
+        "note": "Blocked, re-checked 2026-11-05 after the condominium routing (#446): 1123 Sutter Street is a new condominium tower whose ~297 unit parcels (map lot 0692030) have no rows on the 2025 secured roll yet, so neither the resolver nor the seeder can recognise or build it. Retry when the 2026 roll is published."
       }
     },
     {
@@ -120,7 +120,7 @@
         "path": "/san-francisco/castro/18th-street/3832/",
         "eas_address": "3832 18TH ST",
         "method": "EAS exact match on 3832 18TH ST → parcel 3580018; sf-parcels has blklot 3580018 active, 3832–3832 18TH; the 2025 roll records it as single family residential, built 1900.",
-        "checked_on": "2026-09-25"
+        "checked_on": "2026-11-05"
       },
       "publish": {
         "status": "published",
@@ -159,7 +159,7 @@
         "path": "/san-francisco/pacific-heights/jackson-street/2100/",
         "eas_address": "2100 JACKSON ST",
         "method": "EAS exact match on 2100 JACKSON ST → parcel 0590002; sf-parcels has blklot 0590002 active, 2100–2100 JACKSON; the 2025 roll records it as multi-family residential, built 1923.",
-        "checked_on": "2026-09-25"
+        "checked_on": "2026-11-05"
       },
       "publish": {
         "status": "published",
@@ -196,7 +196,7 @@
         "path": "/san-francisco/glen-park/bosworth-street/137/",
         "eas_address": "137 BOSWORTH ST",
         "method": "EAS exact match on 145 BOSWORTH ST → parcel 6748063; sf-parcels has blklot 6748063 active, 137–145 BOSWORTH; the 2025 roll records it as multi-family residential, built 1945. EAS puts 137, 145 BOSWORTH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 137.",
-        "checked_on": "2026-09-25"
+        "checked_on": "2026-11-05"
       },
       "publish": {
         "status": "published",
@@ -232,7 +232,7 @@
         "path": "/san-francisco/inner-richmond/clement-street/906/",
         "eas_address": "906 CLEMENT ST",
         "method": "EAS exact match on 906 CLEMENT ST → parcel 1423048; sf-parcels has blklot 1423048 active, 906–910 CLEMENT; the 2025 roll records it as commercial retail, built 1979. EAS puts 906, 908, 910, 914 CLEMENT ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 906.",
-        "checked_on": "2026-09-25"
+        "checked_on": "2026-11-05"
       },
       "publish": {
         "status": "published",
@@ -269,7 +269,7 @@
         "path": "/san-francisco/bernal-heights/franconia-street/107/",
         "eas_address": "107 FRANCONIA ST",
         "method": "EAS exact match on 107 FRANCONIA ST → parcel 5537014; sf-parcels has blklot 5537014 active, 107–107 FRANCONIA; the 2025 roll records it as single family residential, built 1906.",
-        "checked_on": "2026-09-25"
+        "checked_on": "2026-11-05"
       },
       "publish": {
         "status": "published",
@@ -307,7 +307,7 @@
         "path": "/san-francisco/presidio-heights/california-street/3301/",
         "eas_address": "3301 CALIFORNIA ST",
         "method": "EAS exact match on 3333 CALIFORNIA ST → parcel 1032003; sf-parcels has blklot 1032003 active, 3301–3395 CALIFORNIA; the 2025 roll records it as multi-family residential, built 1957. EAS puts 3301, 3305, 3315, 3325, 3333, 3335, 3345, 3355, 3365, 3375, 3385, 3395 CALIFORNIA ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 3301.",
-        "checked_on": "2026-09-25"
+        "checked_on": "2026-11-05"
       },
       "publish": {
         "status": "published",
@@ -347,7 +347,7 @@
         "path": "/san-francisco/castro/market-street/2051/",
         "eas_address": "2051 MARKET ST",
         "method": "EAS exact match on 2051 MARKET ST → parcel 3535015; sf-parcels has blklot 3535015 active, 2051–2051 MARKET; the 2025 roll records it as commercial office, built 1913.",
-        "checked_on": "2026-09-25"
+        "checked_on": "2026-11-05"
       },
       "publish": {
         "status": "published",
@@ -382,7 +382,7 @@
         "path": "/san-francisco/excelsior/royal-lane/51/",
         "eas_address": "51 ROYAL LN",
         "method": "EAS exact match on 61 ROYAL LN → parcel 6482034; sf-parcels has blklot 6482034 active, 51–61 ROYAL; the 2025 roll records it as single family residential, built 1906. EAS puts 51, 61 ROYAL LN on that parcel, so per the directory contract the fact belongs on one page at the lowest, 51.",
-        "checked_on": "2026-09-25"
+        "checked_on": "2026-11-05"
       },
       "publish": {
         "status": "published",
@@ -418,7 +418,7 @@
         "path": "/san-francisco/south-of-market/natoma-street/926/",
         "eas_address": "926 NATOMA ST",
         "method": "EAS exact match on 926 NATOMA ST → parcel 3510031; sf-parcels has blklot 3510031 active, 926–926 NATOMA; the 2025 roll records it as commercial office, built 1924.",
-        "checked_on": "2026-09-25"
+        "checked_on": "2026-11-05"
       },
       "publish": {
         "status": "published",
@@ -460,7 +460,7 @@
         "path": "/san-francisco/mission/mission-street/3350/",
         "eas_address": "3350 MISSION ST",
         "method": "EAS exact match on 3350 MISSION ST → parcel 6635055; sf-parcels has blklot 6635055 active, 3350–3378 MISSION; the 2025 roll records it as commercial retail, built 1967. EAS puts 3350, 3372, 3378 MISSION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 3350.",
-        "checked_on": "2026-09-25"
+        "checked_on": "2026-11-05"
       },
       "publish": {
         "status": "published",
@@ -493,7 +493,7 @@
         "path": "/san-francisco/financial-district/clay-street/1373/",
         "eas_address": "1373 CLAY ST",
         "method": "EAS exact match on 1373 CLAY ST → parcel 0220030; sf-parcels has blklot 0220030 active, 1373–1373 CLAY; the 2025 roll records it as multi-family residential, built 1909.",
-        "checked_on": "2026-09-25"
+        "checked_on": "2026-11-05"
       },
       "publish": {
         "status": "published",
@@ -524,7 +524,7 @@
       "confidence": "high",
       "resolution": {
         "status": "unresolved",
-        "checked_on": "2026-09-25",
+        "checked_on": "2026-11-05",
         "method": "No record in sf-eas-addresses for 100 CULEBRA TER.",
         "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 109, 117, 119, 120. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
       },
@@ -559,7 +559,7 @@
       "confidence": "high",
       "resolution": {
         "status": "unresolved",
-        "checked_on": "2026-09-25",
+        "checked_on": "2026-11-05",
         "method": "the recorded range 3275-3333 on SAN BRUNO AVE spans more than one parcel in sf-eas-addresses today: 5478003 (3333), 5478004 (3323), 5478005 (3303), 5478006 (3299), 5478007 (3285), 5478008 (3275).",
         "note": "The numbers the record gives are on different parcels now, so the record cannot be placed on one page without deciding which — which the record does not say."
       },
@@ -597,7 +597,7 @@
         "path": "/san-francisco/bayview-hunters-point/san-bruno-avenue/2785/",
         "eas_address": "2785 SAN BRUNO AVE",
         "method": "EAS exact match on 2785 SAN BRUNO AVE → parcel 5450018; sf-parcels has blklot 5450018 active, 2785–2785 SAN BRUNO; the 2025 roll records it as single family residential, built 1907.",
-        "checked_on": "2026-09-25"
+        "checked_on": "2026-11-05"
       },
       "publish": {
         "status": "published",
@@ -632,7 +632,7 @@
         "path": "/san-francisco/twin-peaks/corbett-avenue/821/",
         "eas_address": "821 CORBETT AVE",
         "method": "EAS exact match on 821 CORBETT AVE → parcel 2778022; sf-parcels has blklot 2778022 active, 821–821 CORBETT; the 2025 roll records it as single family residential, built 1900.",
-        "checked_on": "2026-09-25"
+        "checked_on": "2026-11-05"
       },
       "publish": {
         "status": "published",
@@ -661,7 +661,7 @@
       "confidence": "high",
       "resolution": {
         "status": "unresolved",
-        "checked_on": "2026-09-25",
+        "checked_on": "2026-11-05",
         "method": "No record in sf-eas-addresses for 288 PACHECO ST.",
         "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 275. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
       },
@@ -697,7 +697,7 @@
         "path": "/san-francisco/bayview-hunters-point/oakdale-avenue/1539/",
         "eas_address": "1539 OAKDALE AVE",
         "method": "EAS exact match on 1539 OAKDALE AVE → parcel 5323020A; sf-parcels has blklot 5323020A active, 1539–1539 OAKDALE; the 2025 roll records it as miscellaneous/mixed-use.",
-        "checked_on": "2026-09-25"
+        "checked_on": "2026-11-05"
       },
       "publish": {
         "status": "published",
@@ -736,7 +736,7 @@
         "path": "/san-francisco/western-addition/ofarrell-street/2130/",
         "eas_address": "2130 OFARRELL ST",
         "method": "EAS exact match on 2190 OFARRELL ST → parcel 1098050; sf-parcels has blklot 1098050 active, 2241–2241 GEARY; the 2025 roll records it as commercial misc. The assessor files the parcel as 2241 GEARY BL. EAS puts 2130, 2140, 2190, 2200 OFARRELL ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2130.",
-        "checked_on": "2026-09-25"
+        "checked_on": "2026-11-05"
       },
       "publish": {
         "status": "published",
@@ -779,7 +779,7 @@
         "path": "/san-francisco/western-addition/golden-gate-avenue/875/",
         "eas_address": "716 MCALLISTER ST",
         "method": "Recorded range 860-880 MCALLISTER ST; EAS matches 860, 862, 864, 866, 868, 870, 872, 874, 876, 878, 880 on this street → parcel 0770027; sf-parcels has blklot 0770027 active, 875–935 GOLDEN GATE; the 2025 roll records it as multi-family residential, built 1974. The assessor files the parcel as 735 GOUGH ST. EAS puts 716, 718, 720, 722, 724, 726, 728, 730, 732, 734, 736, 738, 740, 742, 744, 746, 748, 752, 754, 756, 758, 760, 762, 764, 766, 768, 770, 772, 774, 776, 778, 780, 782, 784, 786, 788, 790, 792, 794, 796, 798, 800, 802, 804, 806, 808, 810, 812, 814, 816, 842, 844, 846, 848, 850, 852, 854, 860, 862, 864, 866, 868, 870, 872, 874, 876, 878, 880, 898 MCALLISTER ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 716.",
-        "checked_on": "2026-09-25"
+        "checked_on": "2026-11-05"
       },
       "publish": {
         "status": "published",
