@@ -2815,6 +2815,17 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   verdict: of 1907's 18, 3 were the axis, 1 a wide-street reach, and 3 had the
   right parcel one corner over, which earned a re-placement rather than only
   a retraction. ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **An exact lot area is evidence of a lot only where the lots differ.** The
+  1909 batch put a "NE corner of Washington and Locust, 50 by 127:8½" contract
+  on 3560 Washington because its area matched to the square foot — but every
+  full-depth lot on that block face is 127:8½ deep and most are 50 wide, and
+  3560 is three lots from the corner. On a tract of uniform lots the area says
+  nothing about position; the corner or the offset has to. *Before taking an
+  area match, count how many lots on the block face share it.* A cheaper
+  check catches the wrong-quadrant half: **a corner parcel's own number says
+  which side of the cross street it is on** (500 Guerrero is in the block south
+  of 17th, so it cannot be the NW corner), and its parity which side of its own
+  street. ([sources/loc-newspapers.md](sources/loc-newspapers.md))
 - **A bulk crawl of a walled host costs the one route that was open.** Mapping
   Chronicling America's reel folders one listing each (about 900 requests in
   a few minutes) drew a host-wide Cloudflare challenge, and the tarball
