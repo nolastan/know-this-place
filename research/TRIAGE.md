@@ -284,3 +284,18 @@ issue contains no numbered street address at all, and the paper's subject is
 the people in the buildings. *SF Weekly archive* (451 issues, `sfweeklyarchive`)
 — the run starts in 2013 and the paper is fully indexed on the open web.
 
+**Cultural Heritage Online, rejected 2026-11-05.**
+<https://culturalheritageonline.com/place_city/san-francisco/> lists 16 San
+Francisco places, all read whole through the site's WordPress API
+(`/wp-json/wp/v2/place_card`). Every one is already a well-documented landmark:
+the Golden Gate and Bay Bridges, Coit Tower, the Opera House, Alcatraz, the
+Russ, Shell and PG&E buildings, 140 New Montgomery, 450 Sutter, Rincon Center,
+the Pacific Coast Stock Exchange, the Doelger Building, the Aquatic Park
+Bathhouse and the Treasure Island Administration Building. The text is
+editorial summary credited to Wikipedia and Wikimedia Commons, with no
+citations of its own. Where it can be checked, it is wrong. It gives the Shell
+Building as San Francisco Landmark No. 184, but the Shell Building is an Article 11
+downtown building and not an Article 10 landmark. It also lists the Shell
+Building twice, once as 28 storeys and once as 29. No fact in it is new to the
+pages, and its errors make it unsafe even as corroboration.
+

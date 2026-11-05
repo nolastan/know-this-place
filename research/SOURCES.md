@@ -116,6 +116,7 @@ line up.
 | ~~Institutional centennial histories (churches, schools, clubs, unions)~~ | ~~One building, deeply documented, usually a single scanned booklet.~~ | **Retired as a lead** — this is a category, not a source, and nothing about it can be checked until a specific booklet exists. Register individual titles as they turn up. | ~~2026-08-15~~ |
 | ~~University theses on SF neighborhoods~~ | ~~Deep research on one district, often with building-level detail.~~ | **Retired for the same reason** — a category, not a source. eScholarship and the USF repository are real and open, but a thesis becomes a lead when a specific one is found to carry numbered addresses, not before. | ~~2026-08-15~~ |
 | ~~California Register nomination forms~~ | ~~Per-building PDFs, state-level.~~ | **Folded into the National Register row** — OHP's Built Environment Resource Directory is a status index, not a document archive; the nomination text it points at is the federal one. | ~~2026-08-15~~ |
+| ~~Cultural Heritage Online~~ | ~~Editorial place cards for heritage sites, 16 in San Francisco.~~ | **Retired** — a compilation of Wikipedia, Wikidata and Commons with no new fact about any of its 16 landmarks, and wrong where it can be checked; see [TRIAGE.md](TRIAGE.md). | ~~2026-11-05~~ |
 
 When you add a lead, say what you'd expect to *get* from it, not just that it
 exists. A lead with no plausible address-level payload is noise.
