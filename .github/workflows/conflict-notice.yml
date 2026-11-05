@@ -4,9 +4,11 @@
 # Claude session driving a PR never hears about it and someone has to ask.
 # A comment is an event, and it wakes the session watching that PR.
 #
-# One comment per conflicted head: the marker carries the PR's head SHA, so a
-# PR that stays conflicted while main keeps moving is told once, and told again
-# only after a push to it that still leaves it conflicted.
+# One comment per push to main while a PR is conflicted, and at most
+# MAX_NOTICES per PR, ever. The cap is the loop guard: a session that keeps
+# pushing without fixing the conflict, or a PR left to sit while main moves,
+# hears about it a few times and then stops. The last notice says so. Every
+# notice carries a marker, so the count survives across runs.
 name: conflict-notice
 
 on:
@@ -30,6 +32,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
+          MAX_NOTICES: 5
         run: |
           set -euo pipefail
           # Mergeability is computed lazily after a push: asking starts it,
@@ -44,13 +47,23 @@ jobs:
           echo "$prs" | jq -r '.[] | select(.mergeable == "CONFLICTING")
                                   | "\(.number) \(.headRefOid)"' |
           while read -r pr head; do
-            marker="<!-- conflict-notice head=$head -->"
-            if gh pr view "$pr" --json comments --jq '.comments[].body' \
-                 | grep -qF "$marker"; then
-              echo "#$pr: already told about $head"
+            marker="<!-- conflict-notice head=$head main=$GITHUB_SHA -->"
+            bodies=$(gh pr view "$pr" --json comments --jq '.comments[].body')
+            if grep -qF "$marker" <<<"$bodies"; then
+              echo "#$pr: already told about $head at ${GITHUB_SHA:0:8}"
               continue
             fi
-            echo "#$pr: conflicts with main at ${GITHUB_SHA:0:8}"
+            sent=$(grep -cF "<!-- conflict-notice " <<<"$bodies" || true)
+            if [ "$sent" -ge "$MAX_NOTICES" ]; then
+              echo "#$pr: conflicted, but already told $sent times; staying quiet"
+              continue
+            fi
+            n=$((sent + 1))
+            last=""
+            if [ "$n" -ge "$MAX_NOTICES" ]; then
+              last=" This is notice $n of $MAX_NOTICES; no more will be posted on this PR."
+            fi
+            echo "#$pr: conflicts with main at ${GITHUB_SHA:0:8} (notice $n)"
             gh pr comment "$pr" --body "$marker
-          This PR now conflicts with \`main\` (after ${GITHUB_SHA:0:8}). Merge \`main\` in, resolve the conflicts, run \`python3 scripts/build_site.py && python3 scripts/validate.py\`, and push."
+          This PR now conflicts with \`main\` (after ${GITHUB_SHA:0:8}). Merge \`main\` in, resolve the conflicts, run \`python3 scripts/build_site.py && python3 scripts/validate.py\`, and push.$last"
           done
