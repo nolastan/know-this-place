@@ -1,0 +1,91 @@
+{
+  "address": "650 Delancey Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-beach/delancey-street/650/unit-409/",
+  "unit": "409",
+  "apn": "3789494",
+  "block": "3789",
+  "lot": "494",
+  "parcel": {
+    "building_area_sqft": 1259,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1009706,
+    "assessed_improvement_value": 760624,
+    "last_sale_date": "2017-06-28"
+  },
+  "permits": [
+    {
+      "number": "201908239673",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-08-23",
+      "status_date": "2019-11-27",
+      "estimated_cost": 49500,
+      "revised_cost": 49500,
+      "description": "one unit. remodel of finishes in a multifamily residence including kitchen and 2 bathrooms.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201711274787",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-11-27",
+      "status_date": "2017-12-21",
+      "estimated_cost": 5750,
+      "revised_cost": 5750,
+      "description": "4th floor #409 - add 1 head nfpa13 maher na",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201708033737",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2017-08-03",
+      "status_date": "2017-12-28",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "one unit: build new catwalk per plans.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200804300990",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-04-30",
+      "status_date": "2008-04-30",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew pa# 2003/02/11/7237 fpr final inspection only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200302117237",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-02-11",
+      "status_date": "2005-04-07",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "replace tile on floor and wall. replace vanity top in 2 bathroom. new whirlpool.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3789494&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3789&unit=409",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}

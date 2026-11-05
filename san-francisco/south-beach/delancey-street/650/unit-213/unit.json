@@ -1,0 +1,46 @@
+{
+  "address": "650 Delancey Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-beach/delancey-street/650/unit-213/",
+  "unit": "213",
+  "apn": "3789466",
+  "block": "3789",
+  "lot": "466",
+  "parcel": {
+    "building_area_sqft": 1298,
+    "rooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 830198,
+    "assessed_improvement_value": 553460,
+    "last_sale_date": "2011-03-08"
+  },
+  "permits": [
+    {
+      "number": "200510216263",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-10-21",
+      "status_date": "2006-02-06",
+      "estimated_cost": 5800,
+      "revised_cost": 5800,
+      "description": "redue tile in both bathrooms and cabinets - changing appliance to stainless",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3789466&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3789&unit=213",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}

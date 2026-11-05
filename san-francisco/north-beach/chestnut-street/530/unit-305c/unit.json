@@ -1,0 +1,44 @@
+{
+  "address": "530 Chestnut Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/chestnut-street/530/unit-305c/",
+  "unit": "305C",
+  "apn": "0052057",
+  "block": "0052",
+  "lot": "057",
+  "parcel": {
+    "building_area_sqft": 1208
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 716401,
+    "assessed_improvement_value": 477597,
+    "last_sale_date": "2009-08-11"
+  },
+  "permits": [
+    {
+      "number": "200909116640",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-09-11",
+      "status_date": "2009-11-02",
+      "estimated_cost": 17500,
+      "revised_cost": 17500,
+      "description": "one unit - interior bathroom remodel - new pocket door at bedroom, new cabinetry at living room, small interior partition walls. new lighting, electrical at bathroom, bedroom & living room.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0052057&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0052&unit=305C",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}

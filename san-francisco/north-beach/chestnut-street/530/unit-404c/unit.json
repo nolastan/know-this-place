@@ -1,0 +1,32 @@
+{
+  "address": "530 Chestnut Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/chestnut-street/530/unit-404c/",
+  "unit": "404C",
+  "apn": "0052068",
+  "block": "0052",
+  "lot": "068",
+  "parcel": {
+    "building_area_sqft": 1028
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 457955,
+    "assessed_improvement_value": 457955,
+    "last_sale_date": "2002-05-09"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0052068&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0052&unit=404C",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}

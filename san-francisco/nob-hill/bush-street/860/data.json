@@ -1,0 +1,163 @@
+{
+  "address": "860 Bush Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/bush-street/860/",
+  "apn": "0274009",
+  "block": "0274",
+  "lot": "009",
+  "eas_baseid": "280930",
+  "coordinates": {
+    "lat": 37.790105,
+    "lng": -122.411474
+  },
+  "parcel": {
+    "year_built": 1913,
+    "units": 39,
+    "stories": 6,
+    "rooms": 72,
+    "bathrooms": 39,
+    "lot_area_sqft": 4490.75,
+    "building_area_sqft": 16850,
+    "lot_depth_ft": 37.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "C",
+    "zoning": "RC-4",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Downtown",
+    "analysis_neighborhood": "Nob Hill",
+    "property_location_raw": "0000 0860 BUSH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2235160,
+    "assessed_improvement_value": 1545565,
+    "last_sale_date": "1996-05-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1913",
+    "survey_name": "YORKSHIRE APARTMENTS",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Lower Nob Hill Apartment Hotel Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1940",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202402206199",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-02-20",
+      "status_date": "2024-05-31",
+      "estimated_cost": 47600,
+      "revised_cost": 47600,
+      "description": "upgrade existing fire alarm system to comply with sffc section 1103.7.6.1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201801299729",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-01-29",
+      "status_date": "2018-01-29",
+      "estimated_cost": 18000,
+      "revised_cost": 27000,
+      "description": "one unit: remodel kitchen & bath, new electrical, upgrade plumbing, move gas line, new cabinets w/range hood, kitchen lights 50% high effic., bath lights 100% high effic.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201703151494",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-03-15",
+      "status_date": "2017-05-08",
+      "estimated_cost": 28710,
+      "revised_cost": 28710,
+      "description": "#406 - to comply w/complaint #201767061 - remodel kitchen /bath apartment - new electric, upgrade plumbing, new cabinets, range hood, kitchen lights 50% high efficency, bath lights high efficency. (kitchen 60 sq ft/bath 30 sq ft)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9511992",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-08-01",
+      "status_date": "1996-02-26",
+      "estimated_cost": 13500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9102399",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-02-13",
+      "status_date": "1991-06-24",
+      "estimated_cost": 12948,
+      "description": "relocate laundry facilities to west side of hallway",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "1991–2024",
+    "shown_on_page": 5,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BUSH&street_type=ST&address_number=860",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0274009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0274&lot=009",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0274009",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4114738904118%2037.79010508422874)%27)",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "noehill-nat1991000957",
+      "name": "NoeHill in San Francisco, \"National Register #91000957: Lower Nob Hill Apartment Hotel District\"",
+      "query": "https://noehill.com/sf/landmarks/nat1991000957.aspx",
+      "label": "NoeHill in San Francisco",
+      "retrieved": "2026-11-05"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1913",
+      "kind": "construction",
+      "description": "The Yorkshire Apartments.",
+      "source": "noehill-nat1991000957"
+    }
+  ]
+}

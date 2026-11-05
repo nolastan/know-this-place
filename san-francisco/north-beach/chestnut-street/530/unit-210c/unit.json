@@ -1,0 +1,55 @@
+{
+  "address": "530 Chestnut Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/chestnut-street/530/unit-210c/",
+  "unit": "210C",
+  "apn": "0052050",
+  "block": "0052",
+  "lot": "050",
+  "parcel": {
+    "building_area_sqft": 985
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 441500,
+    "assessed_improvement_value": 441500,
+    "last_sale_date": "2019-12-16"
+  },
+  "permits": [
+    {
+      "number": "201912300949",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-12-30",
+      "status_date": "2020-03-16",
+      "estimated_cost": 9375,
+      "revised_cost": 14000,
+      "description": "ref pa# 201912200207; remove bath tub in master bathroom convert to shower drain to remain in same location move 2 outlets in wall and add 2 outlets behind mirrors in bath room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201912200207",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-12-20",
+      "status_date": "2020-03-16",
+      "estimated_cost": 52374,
+      "revised_cost": 52374,
+      "description": "replace kitchen cabinets w/ exact same layout, install bathroom floor tiles, replace all (e) hardwood floors with new style of hardwood floors",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0052050&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0052&unit=210C",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}

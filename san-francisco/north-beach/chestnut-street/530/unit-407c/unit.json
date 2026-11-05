@@ -1,0 +1,57 @@
+{
+  "address": "530 Chestnut Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/chestnut-street/530/unit-407c/",
+  "unit": "407C",
+  "apn": "0052071",
+  "block": "0052",
+  "lot": "071",
+  "parcel": {
+    "building_area_sqft": 1208,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 698438,
+    "assessed_improvement_value": 698438,
+    "last_sale_date": "2015-12-10"
+  },
+  "permits": [
+    {
+      "number": "201109134492",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-09-13",
+      "status_date": "2012-03-02",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "one unit on the 4th fl. remodel 2 bathrms, change tub to showerm close closet and enlarge storage space. open up door way btn br and lr. move elec. heater, add outlet, remove full wall height in kitche and bui;d new low/counter top wall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M278648",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-09-08",
+      "status_date": "2011-09-08",
+      "revised_cost": 159,
+      "description": "assign house number 530 chestnut st#407 c to block #0052 lot#071",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0052071&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0052&unit=407C",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "address": "650 Delancey Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-beach/delancey-street/650/unit-422/",
+  "unit": "422",
+  "apn": "3789507",
+  "block": "3789",
+  "lot": "507",
+  "parcel": {
+    "building_area_sqft": 1430,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 548593,
+    "assessed_improvement_value": 548593,
+    "last_sale_date": "2010-06-03"
+  },
+  "permits": [
+    {
+      "number": "202210265191",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-10-26",
+      "status_date": "2023-11-22",
+      "estimated_cost": 285000,
+      "revised_cost": 285000,
+      "description": "remodel (2) bathrooms, (1) kitchen, new recessed lighting, painting, add pocket door, replace water heater.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202110190718",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2021-10-19",
+      "status_date": "2026-01-23",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "one unit:interior remodel of 30 sf small kitchen & 2 10sf bath. no structural work, no interior walls being moved.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201204138307",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-04-13",
+      "status_date": "2012-07-12",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "replace 2 existing posts with cosmetic damage in kind. repair in kind to post.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3789507&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3789&unit=422",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}

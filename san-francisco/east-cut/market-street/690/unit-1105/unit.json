@@ -1,0 +1,80 @@
+{
+  "address": "690 Market Street, San Francisco, CA 94104",
+  "path": "/san-francisco/east-cut/market-street/690/unit-1105/",
+  "unit": "1105",
+  "apn": "0311065",
+  "block": "0311",
+  "lot": "065",
+  "parcel": {
+    "building_area_sqft": 1847,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 966855,
+    "assessed_improvement_value": 644570,
+    "last_sale_date": "2015-02-11"
+  },
+  "permits": [
+    {
+      "number": "201608023990",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-08-02",
+      "status_date": "2016-08-17",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "as built drawing for 201606039130",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201606039130",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-06-03",
+      "status_date": "2016-08-17",
+      "estimated_cost": 1000,
+      "revised_cost": 1117,
+      "description": "11th floor #1105 fire alarm for t.i. - add (1) smoke detector in office & (1) speaker. ref #201512235810.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201605117152",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-05-11",
+      "status_date": "2016-05-11",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "one unit: plug (3), add (2) and relocate (1) fire sprinklers. ref pa 2015-1223-5810",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201512235810",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-12-23",
+      "status_date": "2016-12-07",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "interior remodel of (e) private condo unit include: full remodel of (e) bath, add partition to create new office, replace (e) stair railing, remodel closet, new flooring at lower floor throughout, mech. electrical, plumbing to be design build under seperate permit. n/a ordinance #155-13",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0311065&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0311&unit=1105",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}

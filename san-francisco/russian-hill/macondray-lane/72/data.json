@@ -1,0 +1,95 @@
+{
+  "address": "72 Macondray Lane, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/macondray-lane/72/",
+  "block": "0120",
+  "eas_baseid": "277933",
+  "coordinates": {
+    "lat": 37.799302,
+    "lng": -122.415212
+  },
+  "parcel": {
+    "year_built": 1930,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "NA",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Russian Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "units": 4
+  },
+  "condominium": {
+    "lots": [
+      "077",
+      "078",
+      "079",
+      "080"
+    ],
+    "method": "Proposed from the 2025 roll for block 0120: every condominium parcel the roll files under 72 MACONDRAY LN, and the unbroken run of lots beside parcel 0120077 on the same street with the same year built (1930). 4 lots, 077–080."
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1930",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Russian Hill-Macondray Lane Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1878–1930",
+    "source": "sf-historic-districts"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MACONDRAY&street_type=LN&address_number=72",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 0120)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=0120&closed_roll_year=2025",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0120",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0120077",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41521240785654%2037.79930241060828)%27)",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "noehill-nat1987002286",
+      "name": "NoeHill in San Francisco, \"National Register #87002286: Russian Hill Macondray Lane District\"",
+      "query": "https://noehill.com/sf/landmarks/nat1987002286.aspx",
+      "label": "NoeHill in San Francisco",
+      "retrieved": "2026-11-05"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1930",
+      "kind": "construction",
+      "description": "The Mrs. Genevieve Allen Apartments.",
+      "source": "noehill-nat1987002286"
+    }
+  ]
+}

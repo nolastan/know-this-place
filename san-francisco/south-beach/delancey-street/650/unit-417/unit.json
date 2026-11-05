@@ -1,0 +1,47 @@
+{
+  "address": "650 Delancey Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-beach/delancey-street/650/unit-417/",
+  "unit": "417",
+  "apn": "3789502",
+  "block": "3789",
+  "lot": "502",
+  "parcel": {
+    "building_area_sqft": 1372,
+    "rooms": 3,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 902746,
+    "assessed_improvement_value": 601831,
+    "last_sale_date": "2021-03-23"
+  },
+  "permits": [
+    {
+      "number": "202411014260",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-11-01",
+      "status_date": "2025-03-14",
+      "estimated_cost": 95000,
+      "revised_cost": 95000,
+      "description": "kitchen remodel like for like. bathroom remodel like for like. partial bathroom remodel like for like.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3789502&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3789&unit=417",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}

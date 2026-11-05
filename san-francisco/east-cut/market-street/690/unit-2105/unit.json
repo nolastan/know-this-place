@@ -1,0 +1,35 @@
+{
+  "address": "690 Market Street, San Francisco, CA 94104",
+  "path": "/san-francisco/east-cut/market-street/690/unit-2105/",
+  "unit": "2105",
+  "apn": "0311107",
+  "block": "0311",
+  "lot": "107",
+  "parcel": {
+    "building_area_sqft": 1426,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1288246,
+    "assessed_improvement_value": 858829,
+    "last_sale_date": "2017-05-04"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0311107&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0311&unit=2105",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}

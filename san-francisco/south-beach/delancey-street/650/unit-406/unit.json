@@ -1,0 +1,57 @@
+{
+  "address": "650 Delancey Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-beach/delancey-street/650/unit-406/",
+  "unit": "406",
+  "apn": "3789491",
+  "block": "3789",
+  "lot": "491",
+  "parcel": {
+    "building_area_sqft": 1251,
+    "rooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 867775,
+    "assessed_improvement_value": 867775,
+    "last_sale_date": "2005-11-30"
+  },
+  "permits": [
+    {
+      "number": "200304162418",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-04-16",
+      "status_date": "2005-04-06",
+      "estimated_cost": 2250,
+      "revised_cost": 2250,
+      "description": "repl one (e)pendant sprinkler w/(n) upright and add 1 (n)pendant to accommodate new const",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200302056767",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-02-05",
+      "status_date": "2003-10-24",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "remodel of (e) loft space including replacing kitchen cabinets, powder room remodel",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3789491&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3789&unit=406",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}

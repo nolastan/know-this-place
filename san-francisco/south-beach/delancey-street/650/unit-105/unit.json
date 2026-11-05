@@ -1,0 +1,58 @@
+{
+  "address": "650 Delancey Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-beach/delancey-street/650/unit-105/",
+  "unit": "105",
+  "apn": "3789448",
+  "block": "3789",
+  "lot": "448",
+  "parcel": {
+    "building_area_sqft": 1554,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1050595,
+    "assessed_improvement_value": 776897,
+    "last_sale_date": "2021-07-20"
+  },
+  "permits": [
+    {
+      "number": "202409130781",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-09-13",
+      "status_date": "2024-09-16",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "suite#: 105; revision 202108176572. replace existing furnance with new circulation fan. update flue to larger flue to fan (4\" to 5\"). mechanical burner and flue",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202108176572",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-08-17",
+      "status_date": "2022-01-04",
+      "estimated_cost": 55000,
+      "revised_cost": 55000,
+      "description": "#105: remodel kitchen. reconfigure bathrooms, relocate washer and dryer, (n) stair in (e) stair location. relocate water heater & furnace. add cooling, (n) glass guardrail at loft.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3789448&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3789&unit=105",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}

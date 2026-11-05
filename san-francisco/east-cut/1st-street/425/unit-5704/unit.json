@@ -1,0 +1,58 @@
+{
+  "address": "425 1st Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/1st-street/425/unit-5704/",
+  "unit": "5704",
+  "apn": "3765400",
+  "block": "3765",
+  "lot": "400",
+  "parcel": {
+    "building_area_sqft": 1568,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 848000,
+    "assessed_improvement_value": 848000,
+    "last_sale_date": "2020-06-09"
+  },
+  "permits": [
+    {
+      "number": "202010307894",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-10-30",
+      "status_date": "2020-12-21",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "one unit. remove (4) existing fire sprinklers. add (3) new fire sprinklers to new wall/ceiling configuration. ref ti 2020-0914-4166. flex heads must comply with sffd ab 4.27.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202009144166",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-09-14",
+      "status_date": "2021-06-14",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "#5704: remove/reframe non-structural walls. replace tile in both bathrooms. replace existing florescent recess lights with led. install new cabinetry in kitchen & bathrooms. install new plumbing fixtures in bathroom & kitchen. install/replace appliances with new. minor drywall repair & paint.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3765400&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3765&unit=5704",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}

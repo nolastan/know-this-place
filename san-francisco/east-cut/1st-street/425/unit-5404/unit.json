@@ -1,0 +1,75 @@
+{
+  "address": "425 1st Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/1st-street/425/unit-5404/",
+  "unit": "5404",
+  "apn": "3765386",
+  "block": "3765",
+  "lot": "386",
+  "parcel": {
+    "building_area_sqft": 1261,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1026889,
+    "assessed_improvement_value": 1073913,
+    "last_sale_date": "2017-07-14"
+  },
+  "permits": [
+    {
+      "number": "201901281430",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-01-28",
+      "status_date": "2019-08-26",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "ref pa# 201808086838 per district bldg insp fergal clancy, add the following language to existing permit: altered existing ceiling which raised in the follwoing locations; kitchen, entrance hall, living room, dining room, master bedroom, closets, master and guest bathrooms.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201811166070",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-11-16",
+      "status_date": "2018-11-19",
+      "estimated_cost": 5000,
+      "revised_cost": 5460,
+      "description": "54th fl - fire sprinkler ti - relocated 7, added 3. ref pa 2018-0808-6838",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201808086838",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-08-08",
+      "status_date": "2018-08-08",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "kitchen and bathroom remodel: replace (e) cabinets, counter tops, lighting(le), hardwood floors, vanity, tiles. no changes. in kind. maher n/a",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "2018–2019",
+    "shown_on_page": 3,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3765386&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3765&unit=5404",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}
