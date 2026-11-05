@@ -1,0 +1,163 @@
+{
+  "address": "925 Jones Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/jones-street/925/",
+  "apn": "0276006",
+  "block": "0276",
+  "lot": "006",
+  "eas_baseid": "280962",
+  "coordinates": {
+    "lat": 37.789903,
+    "lng": -122.414163
+  },
+  "parcel": {
+    "year_built": 1922,
+    "units": 31,
+    "stories": 5,
+    "rooms": 67,
+    "bathrooms": 31,
+    "lot_area_sqft": 5156.25,
+    "building_area_sqft": 18700,
+    "lot_depth_ft": 37.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "C",
+    "zoning": "RM-4",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Downtown",
+    "analysis_neighborhood": "Nob Hill",
+    "property_location_raw": "0000 0925 JONES               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1040193,
+    "assessed_improvement_value": 1894480,
+    "last_sale_date": "1992-07-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1922",
+    "survey_name": "LAMBERT APARTMENTS",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Lower Nob Hill Apartment Hotel Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1940",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202404049357",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-04-04",
+      "status_date": "2024-05-24",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "as built change log. ref pa# 202308104111. corrected module abbreviation. riser diagram have been updated to reflect this change. no changes to any other devices.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202308104111",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-08-10",
+      "status_date": "2024-05-24",
+      "estimated_cost": 58100,
+      "revised_cost": 71400,
+      "description": "upgrade (e) f/a system to comply w/sffc section 1103.7.6.1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202209162616",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-09-16",
+      "status_date": "2022-10-28",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8805006",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-04-19",
+      "status_date": "1988-07-11",
+      "estimated_cost": 8400,
+      "description": "parapet",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8506244",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-06-17",
+      "status_date": "1986-02-06",
+      "estimated_cost": 3600,
+      "description": "bring into compliance as required by dahi",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "1985–2024",
+    "shown_on_page": 5,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JONES&street_type=ST&address_number=925",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0276006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0276&lot=006",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0276006",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41416275963502%2037.789902537938886)%27)",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "noehill-nat1991000957",
+      "name": "NoeHill in San Francisco, \"National Register #91000957: Lower Nob Hill Apartment Hotel District\"",
+      "query": "https://noehill.com/sf/landmarks/nat1991000957.aspx",
+      "label": "NoeHill in San Francisco",
+      "retrieved": "2026-11-05"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1922",
+      "kind": "construction",
+      "description": "The Lambert Apartments.",
+      "source": "noehill-nat1991000957"
+    }
+  ]
+}

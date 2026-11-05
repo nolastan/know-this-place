@@ -1,0 +1,50 @@
+{
+  "address": "690 Market Street, San Francisco, CA 94104",
+  "path": "/san-francisco/east-cut/market-street/690/unit-103/",
+  "unit": "103",
+  "apn": "0311018",
+  "block": "0311",
+  "lot": "018",
+  "parcel": {
+    "building_area_sqft": 2340
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 602942,
+    "assessed_improvement_value": 381058,
+    "last_sale_date": "2015-01-15"
+  },
+  "permits": [
+    {
+      "number": "201203266851",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2012-03-26",
+      "status_date": "2013-08-19",
+      "estimated_cost": 190000,
+      "revised_cost": 190000,
+      "description": "suite 103 - new interior finishes (pvc wall panels, f r p wall panels tile floors, 2x4 lay in ceiling, 2x2 led lights, install trade fixtures. remodel is for ground floor retail space only. converting to be 7 eleven. sprinklers and fire alarm separate permit.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2012",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0311018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0311&unit=103",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}

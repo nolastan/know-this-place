@@ -1,0 +1,47 @@
+{
+  "address": "690 Market Street, San Francisco, CA 94104",
+  "path": "/san-francisco/east-cut/market-street/690/unit-1404/",
+  "unit": "1404",
+  "apn": "0311071",
+  "block": "0311",
+  "lot": "071",
+  "parcel": {
+    "building_area_sqft": 1900,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1443611,
+    "assessed_improvement_value": 962405,
+    "last_sale_date": "2019-08-23"
+  },
+  "permits": [
+    {
+      "number": "201409307716",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-09-30",
+      "status_date": "2015-01-23",
+      "estimated_cost": 5000,
+      "revised_cost": 10000,
+      "description": "one unit: replace countertop at kitchen and bathrooms. remove non bearing partition walls. add recess lights.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0311071&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0311&unit=1404",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}

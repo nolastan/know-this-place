@@ -1,0 +1,47 @@
+{
+  "address": "425 1st Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/1st-street/425/unit-3803/",
+  "unit": "3803",
+  "apn": "3765267",
+  "block": "3765",
+  "lot": "267",
+  "parcel": {
+    "building_area_sqft": 1278,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1041000,
+    "assessed_improvement_value": 694000,
+    "last_sale_date": "2024-07-10"
+  },
+  "permits": [
+    {
+      "number": "202512172082",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-12-17",
+      "status_date": "2025-12-22",
+      "estimated_cost": 2000,
+      "revised_cost": 13300,
+      "description": "one unit- kitchen remodel to include (n) counters and removal of 4 foot wall.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3765267&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3765&unit=3803",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}

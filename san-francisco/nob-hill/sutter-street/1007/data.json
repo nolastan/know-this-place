@@ -1,0 +1,150 @@
+{
+  "address": "1007 Sutter Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/sutter-street/1007/",
+  "apn": "0301001",
+  "block": "0301",
+  "lot": "001",
+  "eas_baseid": "281339",
+  "coordinates": {
+    "lat": 37.787975,
+    "lng": -122.417033
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 38,
+    "stories": 6,
+    "rooms": 89,
+    "bathrooms": 38,
+    "lot_area_sqft": 4556,
+    "building_area_sqft": 23674,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "C",
+    "zoning": "RC-4",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Downtown",
+    "analysis_neighborhood": "Nob Hill",
+    "property_location_raw": "0000 1007 SUTTER              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1066218,
+    "assessed_improvement_value": 1733699,
+    "last_sale_date": "1992-08-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Lower Nob Hill Apartment Hotel Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1940",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201409247226",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-09-24",
+      "status_date": "2014-12-04",
+      "estimated_cost": 15000,
+      "revised_cost": 30000,
+      "description": "one unit. remodel kitchen - cabinets/sink/floor bathroom - sink/floor paint all walls/trim",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200403087954",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-03-08",
+      "status_date": "2005-09-15",
+      "estimated_cost": 29950,
+      "revised_cost": 29950,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9400550",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-01-12",
+      "status_date": "1994-02-01",
+      "estimated_cost": 3375,
+      "description": "termite repair-bsmt dr thresh-framing-wndw sash rt rear bdrm",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8605844",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-05-19",
+      "status_date": "1986-07-22",
+      "estimated_cost": 15000,
+      "description": "roof parapet bracing in accordance with approved plans",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1986–2015",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SUTTER&street_type=ST&address_number=1007",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0301001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0301&lot=001",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0301001",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41703321035561%2037.78797502678151)%27)",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "noehill-nat1991000957",
+      "name": "NoeHill in San Francisco, \"National Register #91000957: Lower Nob Hill Apartment Hotel District\"",
+      "query": "https://noehill.com/sf/landmarks/nat1991000957.aspx",
+      "label": "NoeHill in San Francisco",
+      "retrieved": "2026-11-05"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1923",
+      "kind": "construction",
+      "description": "Apartment building, designed by Herman C. Baumann.",
+      "source": "noehill-nat1991000957"
+    }
+  ]
+}

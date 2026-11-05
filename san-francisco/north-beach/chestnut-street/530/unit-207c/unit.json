@@ -1,0 +1,44 @@
+{
+  "address": "530 Chestnut Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/chestnut-street/530/unit-207c/",
+  "unit": "207C",
+  "apn": "0052047",
+  "block": "0052",
+  "lot": "047",
+  "parcel": {
+    "building_area_sqft": 1208
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 380397,
+    "assessed_improvement_value": 380397,
+    "last_sale_date": "2002-02-22"
+  },
+  "permits": [
+    {
+      "number": "201203095725",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-03-09",
+      "status_date": "2012-06-19",
+      "estimated_cost": 19000,
+      "revised_cost": 19000,
+      "description": "one unit - remove tub & tile wains cot, install waterproofing, tile in shower pan & tile wains cot over mortar bed, new shower valve, move door way, install packet door for new closet space, new switch & outlet, fill old doorway, fill old closet door to bedroom.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0052047&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0052&unit=207C",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}

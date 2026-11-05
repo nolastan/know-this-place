@@ -1,0 +1,175 @@
+{
+  "address": "30 Blackstone Court, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/blackstone-court/30/",
+  "apn": "0504003",
+  "block": "0504",
+  "lot": "003",
+  "eas_baseid": "283647",
+  "coordinates": {
+    "lat": 37.800516,
+    "lng": -122.426965
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 7683,
+    "building_area_sqft": 1302,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Cow Hollow",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 0030 BLACKSTONE          CT0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 169931,
+    "assessed_improvement_value": 351840
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "survey_name": "ABRAHAM HOUSE",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Blackstone Court Historic District",
+    "california_register_status": "Not listed",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1849–1906",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202211035835",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2022-11-03",
+      "status_date": "2022-11-03",
+      "estimated_cost": 5000,
+      "revised_cost": 0,
+      "description": "deck rebuilt",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202210073965",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-10-07",
+      "status_date": "2022-11-10",
+      "estimated_cost": 32800,
+      "revised_cost": 32800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200303129476",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2003-03-12",
+      "status_date": "2007-05-14",
+      "estimated_cost": 100,
+      "revised_cost": 1,
+      "description": "no construction. this permit is for easement accross this lot for 1545 lombard/11 blackstone court",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9921998",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-10-18",
+      "status_date": "2000-04-18",
+      "estimated_cost": 6500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8800813",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-01-25",
+      "status_date": "1989-11-16",
+      "estimated_cost": 25000,
+      "description": "remodel exist house as per plan attached",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8800814",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "1988-01-25",
+      "status_date": "1988-09-13",
+      "estimated_cost": 40000,
+      "description": "renovate exist garage into 1 unit, new 2nd story, bathrm",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8800815",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-01-25",
+      "status_date": "1989-12-01",
+      "estimated_cost": 15000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BLACKSTONE&street_type=CT&address_number=30",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0504003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0504&lot=003",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0504003",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42696514751705%2037.80051550522505)%27)",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "noehill-sf_blackstone_court",
+      "name": "NoeHill in San Francisco, \"San Francisco Historic District: Blackstone Court\"",
+      "query": "https://noehill.com/sf/landmarks/sf_blackstone_court.asp",
+      "label": "NoeHill in San Francisco",
+      "retrieved": "2026-11-05"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1885",
+      "kind": "construction",
+      "description": "Built by Charles Abraham, founder of the Western Nursery, which worked most of this block.",
+      "source": "noehill-sf_blackstone_court"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "address": "101 The Embarcadero, San Francisco, CA 94111",
+  "path": "/san-francisco/south-beach/the-embarcadero/101/",
+  "apn": "9900278",
+  "block": "9900",
+  "lot": "278",
+  "eas_baseid": "506114",
+  "coordinates": {
+    "lat": 37.794028,
+    "lng": -122.392342
+  },
+  "parcel": {
+    "use": "Industrial",
+    "property_class": "Industrial Gov Mixed/Other Use",
+    "construction_type_code": "NA",
+    "zoning": "C2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "South Beach",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "property_location_raw": "0000 0000 THE EMBARCADERO       0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "last_sale_date": "1969-03-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Individual, National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Port of San Francisco Embarcadero Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1878–1946; 1898–1903; 1912–1938; 1934",
+    "source": "sf-historic-districts"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=THE%20EMBARCADERO&street_type=&address_number=101",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=9900278&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=9900&lot=278",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=9900278",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.39234189447066%2037.794028247143515)%27)",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "noehill-nat1978000756",
+      "name": "NoeHill in San Francisco, \"National Register #78000756: Ferry Station Post Office\"",
+      "query": "https://noehill.com/sf/landmarks/nat1978000756.asp",
+      "label": "NoeHill in San Francisco",
+      "retrieved": "2026-11-05"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1915",
+      "kind": "construction",
+      "description": "The Mediterranean-style Ferry Station Post Office, designed by A. A. Pyle of the State Department of Engineering, opened; it was the city's central post office until 1925.",
+      "source": "noehill-nat1978000756"
+    },
+    {
+      "date": "1933",
+      "kind": "occupancy",
+      "description": "The State Department of Agriculture moved into the building, which had housed transportation companies' offices since 1925.",
+      "source": "noehill-nat1978000756"
+    }
+  ]
+}
