@@ -29,7 +29,13 @@ read front to back. Start with the row that matches the task.
 | designing a module | [design/AGENTS.md](design/AGENTS.md) | `design/*` |
 
 There are skills for the five modules: `/research`, `/news`, `/events`,
-`/design`, `/ui`.
+`/design`, `/ui`. They live in `.claude/skills/<name>/SKILL.md`, and some
+surfaces (a claude.ai project chat or thread) don't load repo skills. So when
+a request starts with a module's name — "research <URL or source>", "news",
+"events", "design <module>", "ui <change>" — or types it as a slash command
+that isn't recognised, read that module's `SKILL.md` and follow it exactly as
+if the skill had been invoked with the rest of the request as its argument.
+"research <URL>" means: run the research pipeline on that source.
 
 ## The four rules you cannot get wrong
 
