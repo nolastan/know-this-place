@@ -16,6 +16,17 @@
   Fillmore; page seeded). 24 unresolved, 15 of them pre-fire in the district
   that burned three weeks later. Batch file
   `findings/loc-newspapers/sn85066387-1906-03-25-real-estate.json`.)
+> - **Verified:** 2026-11-05 (the 1909 Building Contracts batch re-tested:
+  230 corner.py placements checked with `corner.py --retest` — 218 ok, 4
+  untested, 8 disagreeing; each re-read against the parcels at the corner and
+  their quadrant against the DPW node. 7 retracted (6 published, now off 6
+  pages; 1 already declined as a further contract); 1 re-placed — George
+  Hudson's 1909 three-storey contract at the NW corner of 17th and Guerrero,
+  moved from 500 Guerrero (the SW corner) to 494 Guerrero, the NW corner's one
+  parcel, roll 1909, three storeys. None stand. The lowest rate of the three
+  batches re-tested (3% against 1908's 7% and 1907's 5%). The batch now has
+  277 resolved and 223 published on 222 pages; the re-test re-run gives 223
+  placements, 219 ok, 4 untested.)
 > - **Verified:** 2026-11-04 (the 1907 Building Contracts batch re-tested:
   274 corner.py placements checked with `corner.py --retest` — 255 ok, 1
   untested, 18 disagreeing; each re-read against the parcels at the corner
@@ -611,6 +622,24 @@ pages), on the 1910 method. What was new:
 - **Where it fails** is where 1910 failed: 374 no parcel with a roll year near
   1909, 294 single candidates refused, 191 unmeasurable, 67 on streets EAS no
   longer joins.
+- **Re-tested 2026-11-05: 6 facts off their pages, 1 moved to the right
+  corner.** `corner.py --retest` found 8 of 230 placements in disagreement,
+  and every one was confirmed on a re-read. Three in the wrong quadrant or on
+  the wrong side: 2300 Lombard is the NW corner of Pierce, not the NE (the NE
+  is 2298 Lombard, condominiums of 2007); 760 8th Avenue is the east side, the
+  evens, where the record says the W line (the west-side lots at 200 ft are of
+  1936 and 1978); and 500 Guerrero is the SW corner of 17th, so Hudson's
+  contract moved to 494 Guerrero, the NW corner, roll 1909 and three storeys.
+  Five lots two to four lots from a corner held by another lot: 222 Powell
+  (the corner lot, 200 Powell, fits the 27:4 by 77:6 but is of 1933), 1624
+  Sacramento twice (the corner lot 0621013, 1688 Sacramento, *is* the record's
+  77:8½ by 85 to the square foot, and carries a 1995 building), 746 Commercial
+  (the NW corner lot is twice the record's 41:11 by 30), and **3560
+  Washington, whose 50 by 127:8½ matches the record exactly and is still the
+  wrong lot**: every full-depth lot on that block face is 127:8½ deep and most
+  are 50 wide, and the NE corner itself, 3590 Washington, is of 1909 but
+  re-lotted as condominiums. An exact area is evidence of a lot only where the
+  lots around it differ.
 
 ### The 1908 Building Contracts lists
 
@@ -1071,10 +1100,11 @@ December: 5,188 pages), on the 1907 method. January to March 1906 survives as on
   stands (the parcel shapes put 0689012 at block 0689's NW corner, the SE corner of Sutter and Gough,
   and its 137:6 square lot matches exactly — the doubt came from the crossing estimate, 120 ft off);
   the Union Trust building is placed as demolished (see the 1907 section). **The 1907 lists' corner
-  placements are re-tested** (2026-11-04: 11 retracted, 3 re-placed, see the 1907 section). **Next:** the same
-  `--retest` on the 1909, 1910 (all four files), 1911, 1912 and 1913 (Feb/Jul–Dec) batches,
+  placements are re-tested** (2026-11-04: 11 retracted, 3 re-placed, see the 1907 section). **The 1909 lists'
+  corner placements are re-tested** (2026-11-05: 7 retracted, 1 re-placed, see the 1909 section). **Next:** the same
+  `--retest` on the 1910 (all four files), 1911, 1912 and 1913 (Feb/Jul–Dec) batches,
   one batch a run, each disagreement re-read before anything comes off a page — 1908's rate was 25
-  of 375 published, 1907's 9 of 242 retracted and 3 moved; then the 1907–1913 lists'
+  of 375 published, 1907's 9 of 242 retracted and 3 moved, 1909's 6 of 229 retracted and 1 moved; then the 1907–1913 lists'
   refused single candidates, re-read against the Sanborn sheets where a
   parcel was re-cut. The rest of the 1911, 1912 and 1913 paper —
   the fires and the building-permit lists — was sized on 2026-10-06 against
