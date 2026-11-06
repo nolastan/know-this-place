@@ -2826,6 +2826,19 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   which side of the cross street it is on** (500 Guerrero is in the block south
   of 17th, so it cannot be the NW corner), and its parity which side of its own
   street. ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **A retraction has to reach the copy another batch published.** The
+  same printing is often read twice — the daily list and the Saturday
+  section, a contracts pass and a permits re-read — and the second copy is
+  declined as "already on the page". In 1910 the re-test flagged 19th and
+  Mission's contract on 2280 Mission in the contracts batch, where it was
+  declined; the fact on the page came from `sn85066387-1910-permits-0138`,
+  which the re-test never reads. *When a flagged entry is declined as a
+  duplicate, the published twin is the one to retract.* `corner.py --retest`
+  now prints each disagreement's twins (same date, same parcel, any sibling
+  file); check them before closing. The same re-test found the lot-area trap
+  twice more — 415 O'Farrell and 2280 Mission each matched the record's area
+  within 2% and sat 75-85 ft from the corner it names.
+  ([sources/loc-newspapers.md](sources/loc-newspapers.md))
 - **A bulk crawl of a walled host costs the one route that was open.** Mapping
   Chronicling America's reel folders one listing each (about 900 requests in
   a few minutes) drew a host-wide Cloudflare challenge, and the tarball

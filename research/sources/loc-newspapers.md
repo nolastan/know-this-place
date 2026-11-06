@@ -16,6 +16,19 @@
   Fillmore; page seeded). 24 unresolved, 15 of them pre-fire in the district
   that burned three weeks later. Batch file
   `findings/loc-newspapers/sn85066387-1906-03-25-real-estate.json`.)
+> - **Verified:** 2026-11-06 (the 1910 Building Contracts batch re-tested:
+  207 corner.py placements checked with `corner.py --retest` — 187 ok, 11
+  untested, 9 disagreeing; each re-read against the parcels at the corner,
+  their quadrant against the DPW node and their outlines measured. 6
+  retracted (5 published, now off 5 pages; 1 declined, whose published twin
+  in the permits batch is retracted with it and off 2280 Mission); 2
+  re-placed — the Keystone apartments' painting contract to 1369 Hyde, the
+  building the record names, and E. C. Deiselkamp's brick dwelling to 2759
+  Broderick, the SW corner lot of Union, seeded; 1 kept (the Olympic Club,
+  placed by name on a 307 ft holding). 4% of placements, between 1909's 3%
+  and 1907's 5%. The batch now has 210 resolved and 163 published; the
+  re-test re-run gives 201 placements, 189 ok, 11 untested, 1 the kept
+  Olympic Club.)
 > - **Verified:** 2026-11-05 (the 1909 Building Contracts batch re-tested:
   230 corner.py placements checked with `corner.py --retest` — 218 ok, 4
   untested, 8 disagreeing; each re-read against the parcels at the corner and
@@ -577,6 +590,31 @@ pages). Same method as 1911–1913. What was new:
   about 40% of their shards; each had written its blocks with a marker, so
   trimming to the last marker and resuming each reader with its context lost
   nothing (see LESSONS).
+- **Re-tested 2026-11-06: 6 facts off their pages, 2 moved to the right
+  corner.** `corner.py --retest` found 9 of 207 placements in disagreement;
+  8 were confirmed on a re-read, 1 kept. Wrong quadrant or side: 479 Fulton
+  is the SE corner of Octavia, not the NE (the NE is one 1974 parcel, 450-550
+  Fulton); 1427 6th Avenue is the west side where the record says the E line
+  (the east-side lot at 150 ft, 1426, is of 1907 and four storeys); and 1401
+  Hyde is the NW corner of Washington — the SW is **1369 Hyde, which Planning
+  names KEYSTONE APARTMENTS, the building the record names**, so the
+  painting contract moved there. Lots one to five lots from the corner the
+  record names: 415 O'Farrell (the SW corner lot, 401 O'Farrell, is roll
+  1910 and six storeys like the record but 6,372 sq ft against 75 by 72, and
+  this source's own December loan record calls it 72 by 92 — not re-placed);
+  71 Parnassus (the SE corner lot, 81-97 Parnassus, is the record's 30 by 100
+  to the square foot, but roll 1907 — left with the refused single
+  candidates); 439 Union (the SW corner of Kearny is 401 Union, 1979
+  condominiums); **2727 Union, whose contract moved to the corner lot, 2759
+  Broderick** — 32:8 by 87:6 on the parcel shapes, the record's lot, roll 1910
+  (page seeded); and 2280 Mission, two lots north of 19th, whose 2,208 sq ft
+  matched the record's 24:6 by 90 while the corner lot is 41 ft wide and of
+  1906. **That one was declined here and published from the permits batch**
+  (`sn85066387-1910-permits-0138`), so the retraction reached a second file:
+  `--retest` now prints each disagreement's twins — the same date on the same
+  parcel in a sibling batch — so the next re-test sees them. Kept: the Olympic
+  Club's contract on 524 Post, placed by name, whose record lot is the club's
+  whole 307:6 holding west of Mason; the 100 ft reach is a single-lot test.
 
 ### The 1909 Building Contracts lists
 
@@ -1101,8 +1139,10 @@ December: 5,188 pages), on the 1907 method. January to March 1906 survives as on
   and its 137:6 square lot matches exactly — the doubt came from the crossing estimate, 120 ft off);
   the Union Trust building is placed as demolished (see the 1907 section). **The 1907 lists' corner
   placements are re-tested** (2026-11-04: 11 retracted, 3 re-placed, see the 1907 section). **The 1909 lists'
-  corner placements are re-tested** (2026-11-05: 7 retracted, 1 re-placed, see the 1909 section). **Next:** the same
-  `--retest` on the 1910 (all four files), 1911, 1912 and 1913 (Feb/Jul–Dec) batches,
+  corner placements are re-tested** (2026-11-05: 7 retracted, 1 re-placed, see the 1909 section). **The 1910
+  lists' corner placements are re-tested** (2026-11-06: 6 retracted, 2 re-placed, see the 1910 section). **Next:** the same
+  `--retest` on the other four 1910 files (`real-estate`, `h2-real-estate` — whose 0415, a December loan on the
+  "northeast corner" of O'Farrell and Taylor, sits on 401 O'Farrell, the SW corner — `permits`, `offsets`), 1911, 1912 and 1913 (Feb/Jul–Dec) batches,
   one batch a run, each disagreement re-read before anything comes off a page — 1908's rate was 25
   of 375 published, 1907's 9 of 242 retracted and 3 moved, 1909's 6 of 229 retracted and 1 moved; then the 1907–1913 lists'
   refused single candidates, re-read against the Sanborn sheets where a

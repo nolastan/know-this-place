@@ -619,6 +619,29 @@ def network_corner(A: list, B: list, near):
     return p, axis(ea[node]), axis(eb[node])
 
 
+def twins(path: str, f: dict) -> list:
+    """The same record placed on the same parcel by a sibling batch of this source.
+
+    One printing is often read twice — the daily Building Contracts list and the
+    Saturday section — and the second copy is declined as "already on the page"
+    while the first stays published from another file. Retracting the copy
+    --retest flags leaves the published twin standing on the wrong lot, so name
+    it. (1910's 19th & Mission contract: declined here, published from the
+    permits batch.)"""
+    apn, date = (f.get("resolution") or {}).get("apn"), f.get("date")
+    out = []
+    folder = os.path.dirname(os.path.abspath(path))
+    for name in sorted(os.listdir(folder)):
+        other = os.path.join(folder, name)
+        if not name.endswith(".json") or os.path.samefile(other, path):
+            continue
+        for g in json.load(open(other)).get("findings", []):
+            if (g.get("resolution") or {}).get("apn") == apn and g.get("date") == date:
+                st = (g.get("publish") or {}).get("status", "-")
+                out.append(f"{name} {g['id']} [{g['resolution'].get('status')}, {st}]")
+    return out
+
+
 def retest(path: str) -> int:
     """Re-test a findings file's corner.py placements against the street network.
 
@@ -693,6 +716,8 @@ def retest(path: str) -> int:
             pub = (f.get("publish") or {}).get("status", "-")
             print(f"{f['id']}  {apn}  {res.get('path')}  [{pub}]  {why}\n"
                   f"    {f.get('address_as_written')}")
+            for t in twins(path, f):
+                print(f"    twin: {t}")
     print(f"{len(rows)} placements: " + ", ".join(f"{v} {k}" for k, v in sorted(counts.items())))
     return 1 if bad else 0
 
