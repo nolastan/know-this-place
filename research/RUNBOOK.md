@@ -623,6 +623,10 @@ re-read against the page's own record and the parcels at the corner, not an
 automatic retraction. One the re-read confirms comes off the page:
 `resolution.status` back to `unresolved` with the reason in its `note`, and
 `publish` to `declined` with "Removed from the page on <date>".
+It tests only entries carrying `street_name`, `extra.cross_street_name` and
+`extra.corner_quad` or `extra.side`; anything else it counts as `no fields`.
+**Fill those from the record before reading a re-test as a pass**, and write
+them at placement time so the next re-test needs no filling.
 
 Corrections are an ordinary site edit in the same PR.
 
