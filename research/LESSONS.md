@@ -2839,6 +2839,15 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   twice more — 415 O'Farrell and 2280 Mission each matched the record's area
   within 2% and sat 75-85 ft from the corner it names.
   ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **A check that tests nothing reports nothing wrong.** `corner.py --retest`
+  on the 1910 January–June real-estate batch printed "41 placements: 41
+  untested" with exit 0: the batch's hand placements kept their corners only
+  in `address_as_written`, and the test reads structured fields. Seven more
+  published batches (the 1910 h2/permits/offsets files and the 1911–1913
+  contract lists, about 530 placements) carry none either. *Read the counts,
+  not the exit code, and make a placement's geometry machine-readable when it
+  is written* — `--retest` now names the gap as `no fields`.
+  ([sources/loc-newspapers.md](sources/loc-newspapers.md))
 - **A bulk crawl of a walled host costs the one route that was open.** Mapping
   Chronicling America's reel folders one listing each (about 900 requests in
   a few minutes) drew a host-wide Cloudflare challenge, and the tarball

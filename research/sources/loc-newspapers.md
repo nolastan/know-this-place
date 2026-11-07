@@ -6,6 +6,20 @@
 >
 > - **Kind:** newspaper OCR corpus · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
+> - **Verified:** 2026-11-07 (the 1910 January–June real-estate batch
+  re-tested with `corner.py --retest`: its 41 corner.py placements were hand
+  placements that kept the corner only in `address_as_written`, so the first
+  run printed "41 untested" — a pass on nothing. 35 were given the record's
+  `street_name`, `cross_street_name`, and `corner_quad` or `side` (plus
+  `offset_ft` and `direction` where printed) and re-tested: **35 ok, 0
+  disagreeing**; flipping every quadrant and side made all 35 disagree, so the
+  test discriminates. 6 have no quadrant to test — the Union Trust and Savings
+  Union at the Grant–Market–O'Farrell gore, the Head Building at Post and
+  Grant, the Mission Savings Bank at 16th and Valencia, the First Baptist
+  Church at the Waller–Octavia junction and the Turn Verein's "site of the old
+  one" — all placed by name or by a lot area to the square foot. No page
+  changed; the batch stays at 76 resolved and 73 published. `--retest` now
+  counts such entries as `no fields` and says so.)
 > - **Verified:** 2026-11-02 (the *Call* of Sunday 25 March 1906, the only
   issue of January–March 1906 on the bulk route, from `curiv_jenner_ver01`
   reel `00100480748`: 56 OCR pages scanned, 337 numbered-address mentions, no
@@ -340,6 +354,19 @@ Saturdays, not 52. Three things differ from 1912:
   and the resolver finds many such ranges split across parcels today; about
   half the numbered entries have no EAS record at all (Western Addition and
   downtown lots taken by later buildings).
+
+- **Re-tested 2026-11-07, and nothing moved.** The batch's 41 corner.py
+  placements were placed by hand before the structured corner fields
+  existed: no `street_name`, no `extra.cross_street_name`, no `corner_quad`
+  or `side`. `--retest` could test none of them and said only "41
+  untested". 35 now carry the fields, read from `address_as_written`, and all
+  35 pass. **The same is true of every file still in the queue**:
+  `h2-real-estate` (39 placements, 0 with fields), `permits` (42, 0),
+  `offsets` (16, 0 — their `cross_street` is free text like "HYDE (block
+  face to LEAVENWORTH)"), and the 1911 (167, 0), 1912 (199, 0) and
+  1913 Feb/Jul–Dec (65, 0) contract lists, which keep the cross street only
+  as `cross_street_as_printed`. Each re-test there begins by filling the
+  fields from the record; `--retest` now counts the gap as `no fields`.
 
 ### Cautions for the 1910 section
 
@@ -1140,8 +1167,9 @@ December: 5,188 pages), on the 1907 method. January to March 1906 survives as on
   the Union Trust building is placed as demolished (see the 1907 section). **The 1907 lists' corner
   placements are re-tested** (2026-11-04: 11 retracted, 3 re-placed, see the 1907 section). **The 1909 lists'
   corner placements are re-tested** (2026-11-05: 7 retracted, 1 re-placed, see the 1909 section). **The 1910
-  lists' corner placements are re-tested** (2026-11-06: 6 retracted, 2 re-placed, see the 1910 section). **Next:** the same
-  `--retest` on the other four 1910 files (`real-estate`, `h2-real-estate` — whose 0415, a December loan on the
+  lists' corner placements are re-tested** (2026-11-06: 6 retracted, 2 re-placed, see the 1910 section). **The 1910 January–June real-estate
+  batch's placements are re-tested** (2026-11-07: 35 ok, 6 by name, none off a page — once its fields were filled; see the 1910 section). **Next:** the same
+  `--retest` on the other three 1910 files (`h2-real-estate` — whose 0415, a December loan on the
   "northeast corner" of O'Farrell and Taylor, sits on 401 O'Farrell, the SW corner — `permits`, `offsets`), 1911, 1912 and 1913 (Feb/Jul–Dec) batches,
   one batch a run, each disagreement re-read before anything comes off a page — 1908's rate was 25
   of 375 published, 1907's 9 of 242 retracted and 3 moved, 1909's 6 of 229 retracted and 1 moved; then the 1907–1913 lists'
