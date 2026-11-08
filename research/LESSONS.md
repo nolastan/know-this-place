@@ -2839,6 +2839,21 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   twice more — 415 O'Farrell and 2280 Mission each matched the record's area
   within 2% and sat 75-85 ft from the corner it names.
   ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **A re-test that tests nothing looks exactly like a clean one.**
+  `corner.py --retest` reads `street_name`, the cross street and
+  `corner_quad` or `side` off each entry. The 1910 Saturday real-estate batch
+  was placed by hand before those fields existed, carried none of them, and
+  the re-test reported "41 placements: 41 untested" in two seconds — a line a
+  tired run reads as done. *Read the untested count before the disagreements;
+  the tool now names every entry with no street and cross street, and those
+  have to be structured from `address_as_written` before the re-test means
+  anything.* The same run added two checks: the offset (the parcel's frontage
+  along the street has to overlap the record's lot, allowing half a cross
+  street's width — 1910's offset entries began 22-39 ft past the printed
+  offset, every one) and, for "at X and Y" with no quadrant, the 100 ft reach.
+  The offset check misreads multi-street nodes on Market (Third, Kearny and
+  Geary meet in one node; Grant and O'Farrell in another), where it is a
+  re-read, not a verdict. ([sources/loc-newspapers.md](sources/loc-newspapers.md))
 - **A bulk crawl of a walled host costs the one route that was open.** Mapping
   Chronicling America's reel folders one listing each (about 900 requests in
   a few minutes) drew a host-wide Cloudflare challenge, and the tarball
