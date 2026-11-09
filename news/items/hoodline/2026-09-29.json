@@ -276,10 +276,13 @@
         "note": "Uber headquarters is named only in a photo caption; the story is about arbitration claims."
       },
       "resolution": {
-        "status": "unresolved",
-        "checked_on": "2026-09-29",
-        "method": "sf-eas-addresses has 1725 03RD ST but it does not join to one parcel. 1725 03RD ST's coordinates fall in 20 active parcels (8722087, 8722034, 8722030, 8722035…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building. The record writes the street 3RD; EAS holds the numbered streets zero-padded to four characters, so this is 03RD.",
-        "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+        "status": "resolved",
+        "apn": "8722087",
+        "path": "/san-francisco/mission-bay/3rd-street/1725/",
+        "eas_address": "1725 03RD ST",
+        "method": "EAS exact match on 1725 03RD ST → parcel 8722087; sf-parcels has blklot 8722087 active, 1725–1725 03RD; the 2025 roll records it as commercial office. EAS files the address under parcel 8722024, which sf-parcels reports retired; the active parcel its coordinates fall in is 8722087. The record writes the street 3RD; EAS holds the numbered streets zero-padded to four characters, so this is 03RD.",
+        "checked_on": "2026-11-09",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
       }
     }
   ]
