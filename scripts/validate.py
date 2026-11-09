@@ -1098,6 +1098,15 @@ def main() -> int:
             if gone:
                 err(corpus, f"{len(gone)} indexed page(s) no longer exist, "
                             f"starting {sorted(gone)[0]} — run scripts/build_corpus_index.py")
+            else:
+                # Then the lines themselves. A page's sources, year or hook can
+                # change without its path changing, and CI fails on the diff a
+                # rebuild leaves; catch it here, so a run that skipped the
+                # rebuild hears about it before it pushes.
+                import build_corpus_index
+                if build_corpus_index.corpus_body()[0] != corpus.read_text(encoding="utf-8"):
+                    err(corpus, "out of date with the pages' data.json — "
+                                "run scripts/build_corpus_index.py (or build_site.py) and commit it")
 
     # Entries in the backlog that no longer belong there. Reported as one
     # error, not one per page: the file is 1,010 lines long today and the sweep
