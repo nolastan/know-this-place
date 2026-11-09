@@ -188,6 +188,12 @@ def fetch_keyed(name: str, dataset: str, field: str, keys, select: str,
     return rows
 
 
+# How many parcels one point may return. Twenty was the first limit and it cut
+# every large condominium map short without saying so.
+OLD_POINT_LIMIT = 20
+POINT_LIMIT = 5000
+
+
 def point_key(lat, lng) -> str:
     """An EAS point, at the precision EAS states it.
 
@@ -213,18 +219,31 @@ def fetch_points(points: list, refresh: bool = False) -> dict:
     """
     path = CACHE / "points.json"
     known = {} if refresh or not path.exists() else json.loads(path.read_text())
-    todo = [p for p in points if p and p not in known]
+    # A point used to be asked for twenty parcels, and a large condominium map
+    # has hundreds on one point: 736 Mission Street's falls in 154, and the
+    # twenty that came back left out the museum's own lot (#557). An answer of
+    # exactly the old limit is a truncated one, so it is asked again.
+    # Once, for a cache written under the old limit; the marker stops a point
+    # that really has twenty parcels being asked again on every run.
+    marker = CACHE / "points.limit"
+    stale = not marker.exists() or marker.read_text().strip() != str(POINT_LIMIT)
+    todo = [p for p in points
+            if p and (p not in known or (stale and len(known[p]) == OLD_POINT_LIMIT))]
     for i, key in enumerate(todo, 1):
         lat, lng = key.split(",")
         known[key] = api_get(PARCELS, {
             "$select": "blklot,mapblklot,block_num,lot_num,active,street_name,street_type,"
                        "from_address_num,to_address_num,centroid_latitude,centroid_longitude",
-            "$where": f"active=true AND intersects(shape, 'POINT({lng} {lat})')", "$limit": 20})
+            "$where": f"active=true AND intersects(shape, 'POINT({lng} {lat})')",
+            "$order": "blklot", "$limit": POINT_LIMIT})
         if i % 10 == 0 or i == len(todo):
             path.write_text(json.dumps(known))
             print(f"  points: {i}/{len(todo)}", file=sys.stderr, flush=True)
         time.sleep(1)
     path.write_text(json.dumps(known))
+    if stale and not any(len(v) == OLD_POINT_LIMIT for k, v in known.items()
+                         if k not in todo):
+        marker.write_text(str(POINT_LIMIT))
     return known
 
 
@@ -486,13 +505,16 @@ class City:
                 return pick, pick, (
                     f" {row.get('address') or 'The address'}'s coordinates fall in "
                     f"{len(found)} active parcels; {pick} is the one with a page.")
-            elif self.condo_stack(found):
+            elif self.condo_stack(same if len(same) > 1 else found):
                 # The parcels on the point are one condominium map's units —
                 # they share a `mapblklot` and the roll calls them condominiums.
                 # Since #228 the building has a page; any unit leads to it.
                 # Take the lowest condominium unit, so a re-run agrees and
                 # `place` sees a unit, and let it file the fact on the building.
-                pick = self.condo_stack(found)
+                # One map lot can hold several buildings (block 3706's holds a
+                # museum, a tower and a garage), so where some of the parcels
+                # state this number themselves, the stack is theirs alone.
+                pick = self.condo_stack(same if len(same) > 1 else found)
                 return pick, pick, (
                     f" {row.get('address') or 'The address'}'s coordinates fall in "
                     f"{len(found)} active parcels, one condominium map's units on the "
@@ -724,6 +746,70 @@ def parcel_note(city: City, parcel: str) -> str:
 # and then the unit designation. `0000` there means the whole parcel; anything
 # else — `0105`, `1903`, `01/2` — means one unit of a stack.
 UNIT_AT = 32
+
+
+def roll_address(city: City, parcel: str) -> tuple:
+    """(street numbers, street) the roll's `property_location` files a parcel under."""
+    raw = (city.roll.get(parcel) or {}).get("property_location") or ""
+    if len(raw) < 11:
+        return [], ""
+    numbers = []
+    for i in (0, 5):
+        m = re.fullmatch(r"(\d{4})([A-Z ])", raw[i:i + 5])
+        if m and int(m.group(1)):
+            numbers.append(int(m.group(1)))
+    street = " ".join(raw[10:UNIT_AT - 2].split())
+    return sorted(set(numbers)), street
+
+
+def unit_number_mismatch(city: City, f: dict, res: dict) -> str | None:
+    """A condominium resolution whose unit the roll files at another number.
+
+    Since #446 an address on a condominium's units resolves to the building,
+    through whichever unit the join or the point reached. That is right when
+    the unit belongs to the building the record names and wrong when the point
+    only shares a map lot with it: 736 Mission Street, the Contemporary Jewish
+    Museum, came back on unit 0503 of 706 Mission Street, the tower next door
+    on the same map lot, and would have been seeded as a 736 Mission page made
+    of 706 Mission's units (#557).
+
+    Two things together say so. The roll files the chosen unit at a street
+    number other than the one recorded, and EAS lists the recorded number on
+    no parcel of that unit's map lot. Either alone is ordinary: a building of
+    several entrances has units filed under each, and EAS carries the number
+    on one of them. Returns the line to print, or None.
+    """
+    apn = res.get("apn") or ""
+    roll = city.roll.get(apn) or {}
+    if "condo" not in (roll.get("property_class_code_definition") or "").lower():
+        return None
+    name, stype, _ = city.normalize(f.get("street_name"), f.get("street_type"))
+    if not name:
+        return None
+    recorded = set()
+    rng = parse_range((f.get("extra") or {}).get("address_range_as_recorded") or "")
+    for n in ([f.get("street_number")] if f.get("street_number") else []) + \
+            (expand_range(*rng) if rng else []):
+        m = re.match(r"\d+", n or "")
+        if m:
+            recorded.add(int(m.group(0)))
+    numbers, street = roll_address(city, apn)
+    if not recorded or not numbers or not street:
+        return None
+    same_street = squash(name) == squash(street) or squash(name) in squash(street)
+    if same_street and any(numbers[0] <= n <= numbers[-1] for n in recorded):
+        return None
+    lot = (city.parcels.get(apn) or {}).get("mapblklot")
+    for n in sorted(recorded):
+        for r in city.rows_for(name, stype, str(n)):
+            held = r.get("parcel_number")
+            if held and lot and (city.parcels.get(held) or {}).get("mapblklot") == lot:
+                return None
+    filed = "–".join(str(n) for n in ([numbers[0], numbers[-1]] if len(numbers) > 1
+                                      else numbers)) + f" {street}"
+    return (f"the roll files unit parcel {apn} at {filed}, and EAS lists "
+            f"{', '.join(str(n) for n in sorted(recorded)[:4])} {name} on no parcel of "
+            f"map lot {lot or 'unknown'}")
 
 
 def condo_warning(city: City, parcel: str, name: str = "", stype: str = "",
@@ -1977,6 +2063,31 @@ def main() -> int:
                 print(f"  {fid}  {addr:<36} → {apn}, one of {listed}")
             print("  Read each: the parcels are not one condominium's units, so the one chosen "
                   "may not be the building. Mark a wrong one `unresolved` with `by_hand`.")
+            print()
+
+        # A condominium resolution whose unit the roll files at another street
+        # number, where EAS puts the recorded number nowhere on that unit's
+        # map lot: the building next door (#557). Raised, never decided.
+        nextdoor = []
+        for f in data["findings"]:
+            r = decisions[f["id"]]
+            if r["status"] != "resolved" or r.get("by_hand"):
+                continue
+            line = unit_number_mismatch(city, f, r)
+            if line:
+                nextdoor.append((f["id"], f["address_as_written"][:34], r.get("path"), line))
+        if nextdoor:
+            print(f"Resolved onto a condominium the roll files at another number: "
+                  f"{len(nextdoor)}")
+            for fid, addr, path, line in nextdoor:
+                print(f"  {fid}  {addr:<36} → {path}")
+                print(f"                  {line}")
+            print("  Read each before applying or seeding: the unit may belong to the building "
+                  "next door on the same\n  map lot, and a page seeded at this path would be "
+                  "built from that building's units. Look for a\n  parcel of the recorded "
+                  "address's own (sf-parcels `from_address_num`, the roll's "
+                  "`property_location`)\n  and resolve by hand, or mark it `unresolved` with "
+                  "`by_hand`.")
             print()
 
         # A resolution onto a parcel the secured roll has no row for. EAS still
