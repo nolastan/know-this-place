@@ -7,6 +7,7 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [Alabama Street](alabama-street/) — 1 building, built 1998.
 - [Anderson Street](anderson-street/) — 1 building, built 1925.
 - [Andover Street](andover-street/) — 1 building, built 1907.
+- [Bennington Street](bennington-street/) — 1 building, built 1904.
 - [Bonview Street](bonview-street/) — 1 building, built 1958.
 - [Bradford Street](bradford-street/) — 1 building, built 1912.
 - [Brewster Street](brewster-street/) — 1 building, built 1999.
@@ -18,6 +19,7 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [Crescent Avenue](crescent-avenue/) — 1 building, built 1900.
 - [Ellert Street](ellert-street/) — 1 building, built 1900.
 - [Ellsworth Street](ellsworth-street/) — 1 building, built 1956.
+- [Elsie Street](elsie-street/) — 1 building, built 2011.
 - [Faith Street](faith-street/) — 1 building, built 1998.
 - [Franconia Street](franconia-street/) — 2 buildings, built 1964–1965.
 - [Gates Street](gates-street/) — 1 building.
@@ -34,6 +36,7 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [Murray Street](murray-street/) — 2 buildings, built 1925.
 - [Nevada Street](nevada-street/) — 1 building.
 - [Ogden Avenue](ogden-avenue/) — 1 building, built 1900.
+- [Park Street](park-street/) — 1 building, built 1900.
 - [Peralta Avenue](peralta-avenue/) — 1 building, built 1910.
 - [Powhattan Avenue](powhattan-avenue/) — 1 building, built 1965.
 - [Precita Avenue](precita-avenue/) — Four units of 1905 at the foot of the hill, a 1974 Patty Hearst address.

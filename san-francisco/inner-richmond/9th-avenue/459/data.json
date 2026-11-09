@@ -1,0 +1,115 @@
+{
+  "address": "459–461 9th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/9th-avenue/459/",
+  "apn": "1535010B",
+  "block": "1535",
+  "lot": "010B",
+  "eas_baseid": "307208",
+  "coordinates": {
+    "lat": 37.779694,
+    "lng": -122.467738
+  },
+  "address_range": "459–461",
+  "street_numbers_on_parcel": [
+    "459",
+    "461"
+  ],
+  "parcel": {
+    "year_built": 1923,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2550,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0461 0459 09TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 544204,
+    "assessed_improvement_value": 204530,
+    "last_sale_date": "1988-08-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200409103774",
+      "type": "demolitions",
+      "status": "cancelled",
+      "filed": "2004-09-10",
+      "status_date": "2006-12-05",
+      "description": "demolish 3 story single family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2004–2010",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=09TH&street_type=AVE&address_number=459",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1535010B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1535&lot=010B",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1535010B",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2004-07-15",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 15 July 2004",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/56minutesofsanfran2004san/page/n22/mode/1up",
+      "retrieved": "2026-11-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2004-07-15",
+      "kind": "planning decision",
+      "description": "The City Planning Commission approved as amended the conditional use authorization to expand a secondary school, Zion Lutheran Church School, in a residential district.",
+      "source": "sf-planning-commission-minutes-2004-07-15"
+    },
+    {
+      "date": "2004-07-15",
+      "kind": "occupancy",
+      "description": "An existing school building, Zion Lutheran Church School, stood at the property, with a building containing two dwelling units at 459 9th Avenue.",
+      "source": "sf-planning-commission-minutes-2004-07-15"
+    }
+  ]
+}

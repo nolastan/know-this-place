@@ -1,0 +1,47 @@
+{
+  "address": "201 Sansome Street, San Francisco, CA 94104",
+  "path": "/san-francisco/financial-district/sansome-street/201/unit-1005/",
+  "unit": "1005",
+  "apn": "0260062",
+  "block": "0260",
+  "lot": "062",
+  "parcel": {
+    "building_area_sqft": 565,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 348337,
+    "assessed_improvement_value": 348337,
+    "last_sale_date": "2006-11-17"
+  },
+  "permits": [
+    {
+      "number": "202206216781",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2022-06-21",
+      "status_date": "2026-01-23",
+      "estimated_cost": 1,
+      "revised_cost": 0,
+      "description": "permit for use of an intermediate length occupancy within existing legally permitted use and occupancy.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0260062&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0260&unit=1005",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

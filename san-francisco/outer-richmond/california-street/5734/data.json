@@ -1,0 +1,131 @@
+{
+  "address": "5734–5736 California Street, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/california-street/5734/",
+  "apn": "1379019",
+  "block": "1379",
+  "lot": "019",
+  "eas_baseid": "301824",
+  "coordinates": {
+    "lat": 37.784386,
+    "lng": -122.47922
+  },
+  "address_range": "5734–5736",
+  "street_numbers_on_parcel": [
+    "5734",
+    "5736"
+  ],
+  "parcel": {
+    "year_built": 1914,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 2375,
+    "building_area_sqft": 2686,
+    "lot_depth_ft": 95,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "5736 5734 CALIFORNIA          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 217692,
+    "assessed_improvement_value": 488925
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1914",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200610104592",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-10-10",
+      "status_date": "2007-06-22",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "clarify no. of story for this building. correct number of story count from app#200203040584 s-1/r-4 from 4 stories to 3rd stories.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200203040585",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2002-03-04",
+      "status_date": "2007-06-22",
+      "estimated_cost": 200000,
+      "revised_cost": 250000,
+      "description": "horizontal addition.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9813383",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-07-15",
+      "status_date": "1998-11-15",
+      "estimated_cost": 4100,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CALIFORNIA&street_type=ST&address_number=5734",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1379019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1379&lot=019",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1379019",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2004-04-15",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 15 April 2004",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/55minutesofsanfran2004san/page/n245/mode/1up",
+      "retrieved": "2026-11-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2004-04-15",
+      "kind": "occupancy",
+      "description": "An existing three-story, two-unit building stood at the property.",
+      "source": "sf-planning-commission-minutes-2004-04-15"
+    },
+    {
+      "date": "2004-04-15",
+      "kind": "planning decision",
+      "description": "The City Planning Commission took discretionary review and approved the project to add a third dwelling unit with a horizontal addition and a new partial fourth floor to an existing three-story, two-unit building, with conditions.",
+      "source": "sf-planning-commission-minutes-2004-04-15"
+    }
+  ]
+}

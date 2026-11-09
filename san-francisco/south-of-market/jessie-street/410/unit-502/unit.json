@@ -1,0 +1,47 @@
+{
+  "address": "2 Jessie Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/jessie-street/410/unit-502/",
+  "unit": "502",
+  "apn": "3704086",
+  "block": "3704",
+  "lot": "086",
+  "parcel": {
+    "building_area_sqft": 2018,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 999314,
+    "assessed_improvement_value": 666206,
+    "last_sale_date": "2011-03-10"
+  },
+  "permits": [
+    {
+      "number": "200703227006",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-03-22",
+      "status_date": "2008-06-02",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "replace kitchen cabinets/applicances and bathroom fixtures only. no structural work. work in 2 two units. no window and no door work under this permit.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3704086&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3704&unit=502",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "address": "2745 Webster Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/webster-street/2745/",
+  "apn": "0557001A",
+  "block": "0557",
+  "lot": "001A",
+  "eas_baseid": "285165",
+  "coordinates": {
+    "lat": 37.796016,
+    "lng": -122.433893
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 12,
+    "stories": 3,
+    "rooms": 42,
+    "bathrooms": 12,
+    "lot_area_sqft": 5631.25,
+    "building_area_sqft": 12750,
+    "lot_depth_ft": 6.25,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Pacific Heights",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 2745 WEBSTER             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 914070,
+    "assessed_improvement_value": 710941
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200408121399",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2004-08-12",
+      "status_date": "2005-12-28",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "relocation of entry door in order to combine two apartment units. relocation of lighting & smoke",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200403229283",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-03-22",
+      "status_date": "2004-05-17",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "replace 7 windows, wood to paintable wood composite, size for size, not visibe from street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200311240938",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-11-24",
+      "status_date": "2004-05-17",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "#7-replace 6 windows,size for size, aluminum to wood composite,not visible from street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200303058848",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-03-05",
+      "status_date": "2003-03-28",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew 200208154041 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200208154041",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-08-15",
+      "status_date": "2003-03-28",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "remove old retaining wall . replace with new as shown on plans",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9025339",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-12-11",
+      "status_date": "1991-04-29",
+      "estimated_cost": 16500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=WEBSTER&street_type=ST&address_number=2745",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0557001A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0557&lot=001A",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0557001A",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2005-05-12",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 12 May 2005",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/57minutesofsanfran2005san/page/n299/mode/1up",
+      "retrieved": "2026-11-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2005-05-12",
+      "kind": "planning decision",
+      "description": "The City Planning Commission did not take discretionary review and approved the merger at 2745 Webster Street.",
+      "source": "sf-planning-commission-minutes-2005-05-12"
+    },
+    {
+      "date": "2005-05-12",
+      "kind": "occupancy",
+      "description": "A 12-unit building stood at the property.",
+      "source": "sf-planning-commission-minutes-2005-05-12"
+    }
+  ]
+}

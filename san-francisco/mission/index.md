@@ -101,8 +101,10 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [Orange Alley](orange-alley/) — 1 building, built 1900.
 - [Otis Street](otis-street/) — 6 buildings, built 1909–1926; 1 in the SoMa LGBTQ Historic District.
 - [Pearl Street](pearl-street/) — 17 buildings, built 1906–1926; 15 in the Elgin Park-Pearl Street Reconstruction Historic District.
+- [Peters Avenue](peters-avenue/) — 1 building, built 1914.
 - [Pink Alley](pink-alley/) — 1 building, built 1907; 1 in the Elgin Park-Pearl Street Reconstruction Historic District.
 - [Potrero Avenue](potrero-avenue/) — 118 buildings, built 1890–2016.
+- [Powers Avenue](powers-avenue/) — 1 building, built 1900.
 - [Ramona Avenue](ramona-avenue/) — 21 buildings, built 1875–1923; 21 in the Ramona Street Historic District.
 - [Rhode Island Street](rhode-island-street/) — 2 buildings, built 1912–1948; 1 in the Showplace Square Heavy Timber and Steel-frame Brick Warehouse and Factory Historic District.
 - [Ringold Street](ringold-street/) — 1 building, built 1909; 1 in the Western SOMA Light Industrial and Residential Historic District.

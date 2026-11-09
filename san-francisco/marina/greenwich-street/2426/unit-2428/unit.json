@@ -1,0 +1,45 @@
+{
+  "address": "2428 Greenwich Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/greenwich-street/2426/unit-2428/",
+  "apn": "0512043",
+  "block": "0512",
+  "lot": "043",
+  "parcel": {
+    "building_area_sqft": 1220,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1107900,
+    "assessed_improvement_value": 738600
+  },
+  "permits": [
+    {
+      "number": "202606253923",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-06-25",
+      "status_date": "2026-07-01",
+      "estimated_cost": 82366,
+      "revised_cost": 82366,
+      "description": "repair of leak at outdoor stairs leading to roof patio. stairway 38.5¿ wide by 176¿ long by 116¿ vertical. demo(e) stairfile & waterproofing. demo select areas of stucco walls. install (n) waterproofing. repair stucco from demo. apprx. 47 sq ft in-kind, not visible from street.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0512043&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0512&street_number=2428",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

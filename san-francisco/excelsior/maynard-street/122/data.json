@@ -1,0 +1,147 @@
+{
+  "address": "122 Maynard Street, San Francisco, CA 94112",
+  "path": "/san-francisco/excelsior/maynard-street/122/",
+  "apn": "5894040",
+  "block": "5894",
+  "lot": "040",
+  "eas_baseid": "465419",
+  "coordinates": {
+    "lat": 37.729094,
+    "lng": -122.42769
+  },
+  "parcel": {
+    "year_built": 2009,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 2750,
+    "building_area_sqft": 2976,
+    "lot_depth_ft": 25,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "NA",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Excelsior",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0000 0122 MAYNARD             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1364832,
+    "assessed_improvement_value": 734745,
+    "last_sale_date": "2016-11-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "2009",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201909050832",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-09-05",
+      "status_date": "2019-09-09",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa #201904238660. no four foundations on 1st fl, no steel beams on 2nd fl, relocation of steal beam on 3rd fl.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201904238660",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-04-23",
+      "status_date": "2020-01-15",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "kitchen remodel remove 2nd stair and convert to closet. new bridge connection 2nd flr bedrooms to rear yard",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200811045810",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-11-04",
+      "status_date": "2009-04-09",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "revision to application 200604259890 s-1. relocate bathrrom & create a bigger bath on 2nd fl. add a (n) bathroom & redesign kitchen @ 1st floor. relocate furnace & water heater at basement as per plan.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200604259890",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "2006-04-25",
+      "status_date": "2009-05-07",
+      "estimated_cost": 400000,
+      "revised_cost": 610000,
+      "description": "erect 2 story, type 5, 1 dwelling unit new building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200211222101",
+      "type": "new construction wood frame",
+      "status": "cancelled",
+      "filed": "2002-11-22",
+      "status_date": "2005-02-28",
+      "estimated_cost": 200000,
+      "description": "erect three story single family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "2002–2019",
+    "shown_on_page": 5,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MAYNARD&street_type=ST&address_number=122",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5894040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5894&lot=040",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5894040",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2004-05-13",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 13 May 2004",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/55minutesofsanfran2004san/page/n305/mode/1up",
+      "retrieved": "2026-11-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2004-05-13",
+      "kind": "planning decision",
+      "description": "The City Planning Commission took discretionary review and approved the construction of a new two-story over ground/garage, single-family dwelling, with modifications reducing the depth, removing the half bath, narrowing the garage door and requiring staff work on the interior layout.",
+      "source": "sf-planning-commission-minutes-2004-05-13"
+    }
+  ]
+}

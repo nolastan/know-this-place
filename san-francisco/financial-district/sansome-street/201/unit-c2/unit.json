@@ -1,0 +1,32 @@
+{
+  "address": "201 Sansome Street, San Francisco, CA 94104",
+  "path": "/san-francisco/financial-district/sansome-street/201/unit-c2/",
+  "unit": "C2",
+  "apn": "0260018",
+  "block": "0260",
+  "lot": "018",
+  "parcel": {
+    "building_area_sqft": 1118
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 669888,
+    "assessed_improvement_value": 669888,
+    "last_sale_date": "2007-01-16"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0260018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0260&unit=C2",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

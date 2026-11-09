@@ -1,0 +1,119 @@
+{
+  "address": "2070 Golden Gate Avenue, San Francisco, CA 94115",
+  "path": "/san-francisco/lone-mountain/golden-gate-avenue/2070/",
+  "block": "1150",
+  "eas_baseid": "472295",
+  "coordinates": {
+    "lat": 37.77823,
+    "lng": -122.444709
+  },
+  "parcel": {
+    "year_built": 2006,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "D",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "North Panhandle",
+    "analysis_neighborhood": "Lone Mountain/USF",
+    "units": 3
+  },
+  "condominium": {
+    "lots": [
+      "044",
+      "045",
+      "046"
+    ],
+    "method": "Proposed from the 2025 roll for block 1150: every condominium parcel the roll files under 2070 GOLDEN GATE AV, and the unbroken run of lots beside parcel 1150044 on the same street with the same year built (2006) — street numbers 2070, 2072, 2072a. 3 lots, 044–046."
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "2006",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "NOPA Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1870s–1910s",
+    "source": "sf-historic-districts"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GOLDEN%20GATE&street_type=AVE&address_number=2070",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 1150)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=1150&closed_roll_year=2025",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1150",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1150044",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44470850033487%2037.778230027153484)%27)",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2004-09-02",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 2 September 2004",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/56minutesofsanfran2004san/page/n86/mode/1up",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2004-10-14",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 14 October 2004",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/56minutesofsanfran2004san/page/n161/mode/1up",
+      "retrieved": "2026-11-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2004-09-02",
+      "kind": "occupancy",
+      "description": "A two-story two-family dwelling stood at the front of the lot.",
+      "source": "sf-planning-commission-minutes-2004-09-02"
+    },
+    {
+      "date": "2004-09-02",
+      "kind": "occupancy",
+      "description": "A one-story single-family dwelling stood at the rear of the lot.",
+      "source": "sf-planning-commission-minutes-2004-09-02"
+    },
+    {
+      "date": "2004-10-14",
+      "kind": "planning decision",
+      "description": "The City Planning Commission did not take discretionary review and approved the demolition.",
+      "source": "sf-planning-commission-minutes-2004-10-14"
+    },
+    {
+      "date": "2004-10-14",
+      "kind": "planning decision",
+      "description": "The City Planning Commission took discretionary review and approved the new construction as modified by staff to incorporate a 5-foot setback from the main facade at the second, third and fourth floor levels on the left hand side of the front facade.",
+      "source": "sf-planning-commission-minutes-2004-10-14"
+    }
+  ]
+}

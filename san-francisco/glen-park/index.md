@@ -12,6 +12,7 @@ Diamond and Chenery and evaluated eight of them in detail.
 ## Streets documented so far
 
 - [30th Street](30th-street/) — 1 building, built 1880.
+- [Acadia Street](acadia-street/) — 1 building, built 2008.
 - [Addison Street](addison-street/) — 1 building, built 1972.
 - [Amber Drive](amber-drive/) — 1 building, built 1900.
 - [Arbor Street](arbor-street/) — 1 building, built 2001.
@@ -41,10 +42,12 @@ Diamond and Chenery and evaluated eight of them in detail.
 - [Miguel Street](miguel-street/) — 1 building, built 1978.
 - [Milton Street](milton-street/) — 2 buildings, built 1908–1925.
 - [Monterey Boulevard](monterey-boulevard/) — 1 building, built 1900.
+- [Poppy Lane](poppy-lane/) — 1 building, built 2008.
 - [Portola Drive](portola-drive/) — 1 building.
 - [Randall Street](randall-street/) — 1 building, built 1903.
 - [Staples Avenue](staples-avenue/) — 1 building, built 1923.
 - [Sunview Drive](sunview-drive/) — 1 building, built 1957.
+- [Surrey Street](surrey-street/) — 1 building, built 2007.
 - [Sussex Street](sussex-street/) — 4 buildings, built 1977.
 - [Theresa Street](theresa-street/) — 1 building, built 1924.
 - [Turquoise Way](turquoise-way/) — 3 buildings, built 1962–1964; 3 in the Diamond Heights Historic District.

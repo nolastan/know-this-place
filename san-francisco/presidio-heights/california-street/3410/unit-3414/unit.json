@@ -1,0 +1,57 @@
+{
+  "address": "3414 California Street, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/california-street/3410/unit-3414/",
+  "apn": "1019071",
+  "block": "1019",
+  "lot": "071",
+  "parcel": {
+    "building_area_sqft": 1225,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 967820,
+    "assessed_improvement_value": 645214,
+    "last_sale_date": "2021-08-11"
+  },
+  "permits": [
+    {
+      "number": "201901241087",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2019-01-24",
+      "status_date": "2019-01-31",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "find leak in roof and fix. repair in-kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201704073465",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-04-07",
+      "status_date": "2017-07-13",
+      "estimated_cost": 18600,
+      "revised_cost": 18600,
+      "description": "bathroom remodel: new shower pan and tile, mixing valve, new floor and wall tile. rmeoving one of the two (e) sinks and install new bidet, paint.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1019071&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1019&street_number=3414",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

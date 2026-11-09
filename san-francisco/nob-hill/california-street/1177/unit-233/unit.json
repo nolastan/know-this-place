@@ -1,0 +1,57 @@
+{
+  "address": "1177 California Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/california-street/1177/unit-233/",
+  "unit": "233",
+  "apn": "0253A255",
+  "block": "0253A",
+  "lot": "255",
+  "parcel": {
+    "building_area_sqft": 756,
+    "rooms": 3,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 431490,
+    "assessed_improvement_value": 431490,
+    "last_sale_date": "2016-03-31"
+  },
+  "permits": [
+    {
+      "number": "200105249978",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2001-05-24",
+      "status_date": "2002-02-12",
+      "estimated_cost": 700000,
+      "revised_cost": 700000,
+      "description": "fire alarm system upgrade;interior improvements for corridors",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200102232835",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2001-02-23",
+      "status_date": "2001-02-23",
+      "estimated_cost": 54000,
+      "revised_cost": 54000,
+      "description": "barrier removal work only under this permit at elevator & telephone",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0253A255&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0253A&unit=233",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

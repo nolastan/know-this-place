@@ -1,0 +1,76 @@
+{
+  "address": "631 Folsom Street, San Francisco, CA 94107",
+  "path": "/san-francisco/east-cut/folsom-street/631/unit-a/",
+  "unit": "A",
+  "apn": "3750601",
+  "block": "3750",
+  "lot": "601",
+  "parcel": {
+    "building_area_sqft": 1473
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1214628,
+    "assessed_improvement_value": 1214628,
+    "last_sale_date": "2017-09-19"
+  },
+  "permits": [
+    {
+      "number": "202505206892",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-05-20",
+      "status_date": "2025-11-13",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "deferred mechanical permit for application# 202410012046",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202410012046",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-10-01",
+      "status_date": "2025-11-13",
+      "estimated_cost": 40000,
+      "revised_cost": 60000,
+      "description": "tenant improvement conversion of e open work area to new 298 sf conference room. work to include electrical and ada upgrades. mep deferred.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201808217932",
+      "type": "wall or painted sign",
+      "status": "withdrawn",
+      "filed": "2018-08-21",
+      "status_date": "2018-09-12",
+      "estimated_cost": 2000,
+      "description": "tape on \"groupe insearch\" sign on window",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201312093669",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-12-09",
+      "status_date": "2014-04-02",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "this permit is for a change of use in commercial condo #a & #b on the first floor only from office (b) to private club (a-2), which is a principally permitted use in the c-3-s zoning district under planning code section 221. permit for public assembly required",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3750601&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3750&unit=A",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

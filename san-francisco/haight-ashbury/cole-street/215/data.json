@@ -1,0 +1,112 @@
+{
+  "address": "215–217 Cole Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/cole-street/215/",
+  "block": "1212",
+  "eas_baseid": "477275",
+  "coordinates": {
+    "lat": 37.772951,
+    "lng": -122.451207
+  },
+  "address_range": "215–217",
+  "street_numbers_on_parcel": [
+    "215",
+    "217"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "NA",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "North Panhandle",
+    "analysis_neighborhood": "Lone Mountain/USF",
+    "units": 3
+  },
+  "condominium": {
+    "lots": [
+      "069",
+      "070",
+      "071"
+    ],
+    "method": "Proposed from the 2025 roll for block 1212: every condominium parcel the roll files under 215 COLE ST, and the unbroken run of lots beside parcel 1212069 on the same street with the same year built (1900) — street numbers 215, 217. 3 lots, 069–071."
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Resource Evaluation Response",
+    "yearbuilt": "1900",
+    "survey_name": "STRIPPED",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Panhandle Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1870–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202103176748",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-03-17",
+      "status_date": "2021-06-22",
+      "estimated_cost": 22970,
+      "revised_cost": 22970,
+      "description": "master bathroom remodel: new shower pan, new shower valve, new toilet, new vanity, new tile.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=COLE&street_type=ST&address_number=215",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 1212)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=1212&closed_roll_year=2025",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1212",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1212069",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.45120690663869%2037.77295138765141)%27)",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2004-10-28",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 28 October 2004",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/56minutesofsanfran2004san/page/n194/mode/1up",
+      "retrieved": "2026-11-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2004-10-28",
+      "kind": "occupancy",
+      "description": "An existing three-story over garage two-unit structure stood at the property.",
+      "source": "sf-planning-commission-minutes-2004-10-28"
+    }
+  ]
+}

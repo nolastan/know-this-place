@@ -1,0 +1,46 @@
+{
+  "address": "1177 California Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/california-street/1177/unit-915/",
+  "unit": "915",
+  "apn": "0253A115",
+  "block": "0253A",
+  "lot": "115",
+  "parcel": {
+    "building_area_sqft": 795,
+    "rooms": 3,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 274091,
+    "assessed_improvement_value": 182722,
+    "last_sale_date": "1995-12-04"
+  },
+  "permits": [
+    {
+      "number": "201010082654",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-10-08",
+      "status_date": "2010-10-08",
+      "estimated_cost": 19000,
+      "revised_cost": 19000,
+      "description": "bath remodel, repl existing tub with shower, new shower pan, new isolation valves, new pressure balanced, shower valve, new vanity, sink, faucet and low flow toilet, new floor finishes and wall finishes; upgrade electric with gfi, new switching, compliant lighting, no structural work",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0253A115&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0253A&unit=915",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "address": "2235 Mission Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/mission-street/2235/unit-6/",
+  "unit": "6",
+  "apn": "3590093",
+  "block": "3590",
+  "lot": "093",
+  "parcel": {
+    "building_area_sqft": 1123,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 354969,
+    "assessed_improvement_value": 354969,
+    "last_sale_date": "2009-08-24"
+  },
+  "permits": [
+    {
+      "number": "201803062995",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-03-06",
+      "status_date": "2018-06-26",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "sheetrock repair in 6 units roughly 9 patchen per unit. approx 200 sf per unit for plumbing inspection total 1200 sf. 5/8 sheetrock type x",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3590093&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3590&unit=6",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

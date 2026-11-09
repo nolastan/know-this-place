@@ -1,0 +1,58 @@
+{
+  "address": "1177 California Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/california-street/1177/unit-224/",
+  "unit": "224",
+  "apn": "0253A250",
+  "block": "0253A",
+  "lot": "250",
+  "parcel": {
+    "building_area_sqft": 1653,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1018759,
+    "assessed_improvement_value": 679173,
+    "last_sale_date": "2021-10-29"
+  },
+  "permits": [
+    {
+      "number": "202108136379",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-08-13",
+      "status_date": "2021-08-13",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "one unit: install a new electric ventless - stackable washer/dryer in (e) bedroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201812269137",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-12-26",
+      "status_date": "2019-07-15",
+      "estimated_cost": 40000,
+      "revised_cost": 45000,
+      "description": "one unit. update kitchen (new cabinets, sink, appliances) kitchen 8x10 update 2 bathroom (new vanities, fixtures, tile at tub/shower)5x11 hall bath, 5x5 =3x5 master bath.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0253A250&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0253A&unit=224",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

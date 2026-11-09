@@ -1,0 +1,35 @@
+{
+  "address": "74 New Montgomery Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/new-montgomery-street/74/unit-501/",
+  "unit": "501",
+  "apn": "3707119",
+  "block": "3707",
+  "lot": "119",
+  "parcel": {
+    "building_area_sqft": 1191,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 906299,
+    "assessed_improvement_value": 604341,
+    "last_sale_date": "2008-02-29"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3707119&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3707&unit=501",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}
