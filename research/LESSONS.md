@@ -2859,6 +2859,18 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   the cross street's line, and a flag there is a re-read, not a verdict:*
   701 Market's exact 75 ft Claus Spreckels lot puts 711 at 75 ft, as printed.
   ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **A lot area matched to the wrong piece of the record is no match.** The
+  1910 July–December batch put "south side of Market, 250 feet west of Sixth,
+  with an L 25x90 in Stevenson" on 1023 Market because the parcel is 2,250
+  sq ft — the L's size, not the Market lot's, which the record never gives —
+  and the re-test found its frontage 30-60 ft short of the printed offset.
+  *Match an area only against the lot the record dimensions, and only where
+  that lot is the building's.* And when re-testing an offset, **measure from
+  the block's first lot, not from half a street past the node**: at 7th
+  Avenue and California the block begins 74 ft from the DPW node.
+  `corner.py A B --along DIR` prints every outline's span from the node, so
+  the block line and the lot at the printed offset can be read off directly.
+  ([sources/loc-newspapers.md](sources/loc-newspapers.md))
 - **A bulk crawl of a walled host costs the one route that was open.** Mapping
   Chronicling America's reel folders one listing each (about 900 requests in
   a few minutes) drew a host-wide Cloudflare challenge, and the tarball

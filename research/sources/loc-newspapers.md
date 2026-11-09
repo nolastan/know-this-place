@@ -6,6 +6,28 @@
 >
 > - **Kind:** newspaper OCR corpus · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
+> - **Verified:** 2026-11-09 (the 1910 July–December real-estate batch
+  re-tested, and the two 1908 placements the last line named re-read. h2's 39
+  corner.py placements carried no corner fields (`--retest`: "39 no fields");
+  all 39 were given `street_name`, `extra.cross_street_name` and the
+  record's `corner_quad` or `side` (plus `offset_ft`, `direction`, `lot_ft`
+  where printed) and re-tested: **35 ok, 4 disagreeing**; flipping every
+  quadrant and side made all 34 directional entries disagree. 2 kept — the Call
+  Building (0405, 125 ft from the Market–Third–Kearny–Geary node) and the
+  Savings Union (0444, 135 ft from the Market–Grant–O'Farrell node), both
+  placed by name with Planning naming the parcel; 2 retracted — **0013** off
+  1023 Market (frontage 212–239 ft from the Sixth Street node against a lot
+  printed 250 ft out; its 2,250 sq ft "match" was the record's 25 by 90 L in
+  Stevenson Street, not the Market lot) and **0415** off 401 O'Farrell (the
+  SW corner, not the NE the loan names; the page's NRHP record dates its hotel
+  to 1909, a year before the loan). The 1908 pair, measured with the new
+  `corner.py A B --along DIR`: **1285** off 651 5th Avenue (its parcel fronts
+  70 ft past the printed lot; the lot at 230 ft is 639 5th Avenue, 5 ft off)
+  and **1540** off 243 7th Avenue (20 ft past; the lot at 232:6 is 241 7th
+  Avenue, rolled 1911) — neither re-placed. 4 published facts off 4 pages. The
+  h2 batch now has 131 resolved and 128 published; the re-test re-run gives 37
+  placements, 35 ok, 2 the kept by-name entries. 2 of 39 retracted,
+  against 0 of 41 for January–June.)
 > - **Verified:** 2026-11-08 (a second pass over the same 1910
   January–June real-estate batch, run before the 2026-11-07 pass merged;
   merged onto it. `--retest` gained an **offset check** (a line entry's
@@ -440,6 +462,13 @@ Saturdays, not 52. Three things differ from 1912:
 - **The roll files some corner parcels under the other street.** The manifest
   took Pine for 1100 Pine / 1005 Jones and McAllister for 856 Divisadero;
   both were moved to the roll's `property_location` before seeding (see LESSONS).
+- **Re-tested 2026-11-09: the July–December batch lost two.** Its 39
+  placements were filled from `address_as_written` the same way: 35 ok, 2
+  kept by name at Market's multi-street nodes, 2 retracted (0013, 1023
+  Market; 0415, 401 O'Farrell — see the Verified line). **Read the whole
+  passage before filling a cross street**: 0240's "Eecond and Xmoma" reads as
+  Tehama until the same paragraph prints "Second and Na totna"; the
+  placement was on Natoma and passes there.
 
 ### The 1910 permits re-read (#407)
 
@@ -782,6 +811,18 @@ Read 2026-10-04, every page of 1908 the three batches hold (`indio`,
   Building's four entries at 701 Market, whose 75 by 70 lot matches exactly
   and is the corner of Third and Market; Market's width puts it 125 ft from
   the node. The batch now has 498 resolved and 367 published on 367 pages.
+- **Re-read 2026-11-09: two offset placements off.** The 2026-11-08 offset
+  check flagged 651 5th Avenue (1285, "W line, 230 S of Balboa") and 243 7th
+  Avenue (1540, "W line, 232:6 S of California"). Both were placed on
+  corner.py's EAS crossing estimate, which put the printed offset on 651 and
+  243; on the parcel outlines measured from the DPW node their parcels (since
+  re-cut, the pages on the successors 1639059 and 1426061) front 70 and 20 ft
+  past the printed lot. Measured with `corner.py A B --along S`, the printed
+  lots are 639 5th Avenue (5 ft off, roll 1906) and 241 7th Avenue (4.5 ft
+  off, and rolled 1911) — both past the 4 ft the batch was placed on — so
+  both came off without a re-placement. The batch now has 496 resolved and
+  365 published. **Measure an offset from the block's first
+  lot, not the node**: California's line is 74 ft from its 7th Avenue node.
 
 ### The 1907 Building Contracts lists
 
@@ -1191,10 +1232,8 @@ December: 5,188 pages), on the 1907 method. January to March 1906 survives as on
   placements are re-tested** (2026-11-04: 11 retracted, 3 re-placed, see the 1907 section). **The 1909 lists'
   corner placements are re-tested** (2026-11-05: 7 retracted, 1 re-placed, see the 1909 section). **The 1910
   lists' corner placements are re-tested** (2026-11-06: 6 retracted, 2 re-placed, see the 1910 section). **The 1910 January–June real-estate
-  batch's placements are re-tested** (2026-11-07: 35 ok, 6 by name, none off a page — once its fields were filled; see the 1910 section; re-tested again 2026-11-08 with the new offset and reach checks: 40 ok or kept). **Next:** re-read 1908's 651 5th Avenue and 243 7th
-  Avenue (the offset check, see the 2026-11-08 Verified line); then the same
-  `--retest` on the other three 1910 files (`h2-real-estate` — whose 0415, a December loan on the
-  "northeast corner" of O'Farrell and Taylor, sits on 401 O'Farrell, the SW corner — `permits`, `offsets`), 1911, 1912 and 1913 (Feb/Jul–Dec) batches,
+  batch's placements are re-tested** (2026-11-07: 35 ok, 6 by name, none off a page — once its fields were filled; see the 1910 section; re-tested again 2026-11-08 with the new offset and reach checks: 40 ok or kept). **The 1910 July–December real-estate batch's placements are re-tested** (2026-11-09: 35 ok, 2 retracted, 2 kept by name; see the second-half 1910 cautions), and 1908's 651 5th Avenue and 243 7th Avenue are re-read and retracted. **Next:** the same
+  `--retest` on the other two 1910 files (`permits`, `offsets`), 1911, 1912 and 1913 (Feb/Jul–Dec) batches,
   one batch a run, each disagreement re-read before anything comes off a page — 1908's rate was 25
   of 375 published, 1907's 9 of 242 retracted and 3 moved, 1909's 6 of 229 retracted and 1 moved; then the 1907–1913 lists'
   refused single candidates, re-read against the Sanborn sheets where a
