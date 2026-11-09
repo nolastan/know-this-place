@@ -190,7 +190,6 @@ def fetch_keyed(name: str, dataset: str, field: str, keys, select: str,
 
 # How many parcels one point may return. Twenty was the first limit and it cut
 # every large condominium map short without saying so.
-OLD_POINT_LIMIT = 20
 POINT_LIMIT = 5000
 
 
@@ -217,18 +216,13 @@ def fetch_points(points: list, refresh: bool = False) -> dict:
     addresses in a batch of a thousand, so a query apiece is affordable. Doing it
     for every address would not be.
     """
-    path = CACHE / "points.json"
-    known = {} if refresh or not path.exists() else json.loads(path.read_text())
     # A point used to be asked for twenty parcels, and a large condominium map
     # has hundreds on one point: 736 Mission Street's falls in 154, and the
-    # twenty that came back left out the museum's own lot (#557). An answer of
-    # exactly the old limit is a truncated one, so it is asked again.
-    # Once, for a cache written under the old limit; the marker stops a point
-    # that really has twenty parcels being asked again on every run.
-    marker = CACHE / "points.limit"
-    stale = not marker.exists() or marker.read_text().strip() != str(POINT_LIMIT)
-    todo = [p for p in points
-            if p and (p not in known or (stale and len(known[p]) == OLD_POINT_LIMIT))]
+    # twenty that came back left out the museum's own lot (#557). The cache
+    # has a new name so that no answer cut short under the old limit is read.
+    path = CACHE / "points-full.json"
+    known = {} if refresh or not path.exists() else json.loads(path.read_text())
+    todo = [p for p in points if p and p not in known]
     for i, key in enumerate(todo, 1):
         lat, lng = key.split(",")
         known[key] = api_get(PARCELS, {
@@ -241,9 +235,6 @@ def fetch_points(points: list, refresh: bool = False) -> dict:
             print(f"  points: {i}/{len(todo)}", file=sys.stderr, flush=True)
         time.sleep(1)
     path.write_text(json.dumps(known))
-    if stale and not any(len(v) == OLD_POINT_LIMIT for k, v in known.items()
-                         if k not in todo):
-        marker.write_text(str(POINT_LIMIT))
     return known
 
 
@@ -799,7 +790,16 @@ def unit_number_mismatch(city: City, f: dict, res: dict) -> str | None:
     same_street = squash(name) == squash(street) or squash(name) in squash(street)
     if same_street and any(numbers[0] <= n <= numbers[-1] for n in recorded):
         return None
-    lot = (city.parcels.get(apn) or {}).get("mapblklot")
+    # sf-parcels can state the unit at the recorded number where the roll
+    # files it at the building's: 2234 Market Street's shop unit is 2234–2234
+    # Market in sf-parcels and "2238 Market, unit B" on the roll.
+    own = city.parcels.get(apn) or {}
+    if (own.get("street_name") or "") == name and own.get("from_address_num") \
+            and own.get("to_address_num"):
+        lo, hi = num_key(own["from_address_num"])[0], num_key(own["to_address_num"])[0]
+        if any(lo <= n <= hi for n in recorded):
+            return None
+    lot = own.get("mapblklot")
     for n in sorted(recorded):
         for r in city.rows_for(name, stype, str(n)):
             held = r.get("parcel_number")
