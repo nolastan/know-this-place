@@ -17,6 +17,15 @@ street between its crossings with the other two, for a record that says "south
 side of California between Hyde and Leavenworth", or gives an offset further
 along the block than the corner radius reaches.
 
+`--along DIR` measures instead of listing: every active parcel outline on the
+blocks at the corner, as feet from the DPW node along the first street in the
+record's direction, with the side of the street it fronts — for checking an
+offset ("W line, 230 S of Balboa") against the lots as they lie. The block's
+line is where its first lot starts, which is not always half a street out
+(74 ft at 7th Avenue and California); measure the offset from there.
+
+    python3 research/tools/corner.py 05TH BALBOA --along S
+
 `--retest FINDINGS` re-tests a findings file's published corner placements
 against the DPW street centrelines; see `retest()` below.
 
@@ -768,6 +777,40 @@ def retest(path: str) -> int:
     return 1 if bad else 0
 
 
+def along_report(sa: str, sb: str, want: str, ix: tuple, near: dict) -> int:
+    """Each parcel on the corner's blocks as a span of feet from the DPW node
+    along street A in direction `want`, and the side of A it lies on."""
+    A, B = street_segments(sa), street_segments(sb)  # untyped: every type; the node nearest wins
+    hit = network_corner(A, B, ix)
+    if not hit:
+        print(f"{sa} and {sb} share no node in the DPW network; give the street type")
+        return 1
+    p, da, _ = hit
+    cx, cy = COMPASS.get(want.upper(), (0, 0))
+    c = cx * da[0] + cy * da[1]
+    if abs(c) < 0.3 * (math.hypot(cx, cy) or 1):
+        print(f"{sa} does not run {want}")
+        return 1
+    s = 1 if c > 0 else -1
+    k = math.cos(math.radians(p[0]))
+    nx, ny = -da[1], da[0]
+    side = {True: "", False: ""}
+    for name, (vx, vy) in COMPASS.items():
+        if len(name) == 1 and abs(vx * nx + vy * ny) > 0.7:
+            side[(vx * nx + vy * ny) > 0] = name
+    shapes = block_shapes(sorted({a[:4] if not a[4].isalpha() else a[:5] for a in near}))
+    rows = []
+    for apn, (_, pts) in shapes.items():
+        d = [s * ((q[0] - p[1]) * k * da[0] + (q[1] - p[0]) * da[1]) * 364000 for q in pts]
+        n = sum(((q[0] - p[1]) * k * nx + (q[1] - p[0]) * ny) * 364000 for q in pts) / len(pts)
+        if max(d) > 0:
+            rows.append((min(d), max(d), n, apn))
+    print(f"{sa} from its DPW node with {sb}, {want.upper()}: feet along, side, centroid ft off the line")
+    for lo, hi, n, apn in sorted(rows):
+        print(f"  {apn:9} {lo:5.0f}-{hi:5.0f}  {side[n > 0]} side  {abs(n):4.0f}")
+    return 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("street_a", nargs="?")
@@ -779,6 +822,8 @@ def main() -> int:
     ap.add_argument("--year", type=int, help="mark parcels built within two years of this")
     ap.add_argument("--json", action="store_true",
                     help="with --batch: print every entry's candidates as JSON, checks included")
+    ap.add_argument("--along", metavar="DIR",
+                    help="measure the corner's parcels along street_a in this direction (N/S/E/W)")
     ap.add_argument("--retest", metavar="FINDINGS",
                     help="re-test a findings file's corner.py placements against the DPW street network")
     a = ap.parse_args()
@@ -814,6 +859,8 @@ def main() -> int:
                 near.setdefault(x["parcel_number"], []).append(x["address"])
         head = (f"{a.street_a} & {a.street_b}: {len(near)} parcel(s) within ~60 m of "
                 f"{ix[0]:.5f}, {ix[1]:.5f}")
+    if a.along:
+        return along_report(a.street_a, a.street_b, a.along, ix, near)
     names, pages = planning_names(sorted(near)), pages_by_apn()
     print(head)
     for apn in sorted(near):

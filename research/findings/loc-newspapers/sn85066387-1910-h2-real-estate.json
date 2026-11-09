@@ -96,7 +96,10 @@
         "storeys": 5,
         "rooms": 78,
         "material": "steel and brick",
-        "record_date": "1910-07-02"
+        "record_date": "1910-07-02",
+        "cross_street_name": "POWELL",
+        "cross_street_type": "ST",
+        "side": "S"
       },
       "citation": {
         "label": "The San Francisco Call, 2 July 1910, p. 13",
@@ -121,7 +124,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "BUSH",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0004",
@@ -231,7 +236,14 @@
         "contractor": "The Turner Company",
         "storeys": 6,
         "lot_as_recorded": "45 by 67:6",
-        "record_date": "1910-07-02"
+        "record_date": "1910-07-02",
+        "cross_street_name": "POWELL",
+        "cross_street_type": "ST",
+        "corner_quad": "SE",
+        "lot_ft": [
+          45,
+          67.5
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 2 July 1910, p. 14",
@@ -256,7 +268,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "BUSH",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0008",
@@ -336,7 +350,12 @@
         "apartments": 16,
         "lot_as_recorded": "65x137:6",
         "value_usd": 55000,
-        "record_date": "1910-07-02"
+        "record_date": "1910-07-02",
+        "cross_street_name": "FILLMORE",
+        "cross_street_type": "ST",
+        "side": "N",
+        "offset_ft": 92,
+        "direction": "W"
       },
       "citation": {
         "label": "The San Francisco Call, 2 July 1910, p. 14",
@@ -362,7 +381,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "HAYES",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0011",
@@ -442,7 +463,12 @@
         "planned_name": "Van Dyke Building",
         "lot_as_recorded": "with an L 25x90 in Stevenson",
         "record_date": "1910-07-09",
-        "reading_note": "raw re-spaced from mangled OCR"
+        "reading_note": "raw re-spaced from mangled OCR",
+        "cross_street_name": "06TH",
+        "cross_street_type": "ST",
+        "side": "S",
+        "offset_ft": 250,
+        "direction": "W"
       },
       "citation": {
         "label": "The San Francisco Call, 9 July 1910, p. 9",
@@ -456,17 +482,21 @@
       },
       "confidence": "medium",
       "resolution": {
-        "status": "resolved",
+        "status": "unresolved",
         "apn": "3703075",
         "path": "/san-francisco/south-of-market/market-street/1023/",
         "method": "South side of Market 250 feet west of Sixth, with an L to Stevenson. research/tools/corner.py MARKET 06TH: 3703075 (1023 Market, Planning name De Laveaga Building) has lot area 2,250 sq ft, roll 1907; the only parcel of that size on the block face at that offset.",
-        "checked_on": "2026-09-23",
-        "by_hand": true
+        "checked_on": "2026-11-09",
+        "by_hand": true,
+        "note": "Retracted 2026-11-09: re-tested with corner.py --retest against the DPW street centrelines (3psu-pn9h), the placement on 3703075 (1023 MARKET ST, /san-francisco/south-of-market/market-street/1023/) disagrees — its frontage runs 212-239 ft from the Market-Sixth node, where the record's lot 250 ft west of Sixth's line should begin about 270 ft out. The 2026-09-23 placement matched the parcel's 2,250 sq ft to the record's L in Stevenson Street (25 by 90), not to the Market Street lot, whose size the record never gives — the lot-area trap. The building on 3703075 is rolled 1907, three years before a sale that was to be followed by a new building. No other parcel was taken in its place: with no Market frontage printed, the 1041-1053 Market lots near 250 ft cannot be told apart."
       },
       "publish": {
-        "status": "published",
-        "pr": "406"
-      }
+        "status": "declined",
+        "pr": "406",
+        "note": "Removed from the page on 2026-11-09: the placement failed the street-network re-test (see resolution.note). Originally published as: The Home Telephone Company, which had bought the lot after the 1906 fire for an exchange and then put its main office elsewhere, sold it to M. A. Gunst & Co., cigar merchants, who were to start at once on a building to be called the Van Dyke Building."
+      },
+      "street_name": "MARKET",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0014",
@@ -922,7 +952,16 @@
         "lot_as_recorded": "40:6x60",
         "cost_usd": 25073,
         "lessee_firm": "Pringle Company",
-        "record_date": "1910-07-16"
+        "record_date": "1910-07-16",
+        "cross_street_name": "TAYLOR",
+        "cross_street_type": "ST",
+        "side": "N",
+        "offset_ft": 60,
+        "direction": "W",
+        "lot_ft": [
+          40.5,
+          60
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 16 July 1910, p. 10",
@@ -947,7 +986,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "POST",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0027",
@@ -1062,7 +1103,13 @@
         "lot_as_recorded": "68:9 by 137:6",
         "planned_storeys": 7,
         "planned_cost_usd": 125000,
-        "record_date": "1910-07-16"
+        "record_date": "1910-07-16",
+        "cross_street_name": "TAYLOR",
+        "cross_street_type": "ST",
+        "side": "N",
+        "offset_ft": 192.5,
+        "direction": "W",
+        "lot_ft": 68.75
       },
       "citation": {
         "label": "The San Francisco Call, 16 July 1910, p. 10",
@@ -1086,7 +1133,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "GOLDEN GATE",
+      "street_type": "AVE"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0031",
@@ -1574,7 +1623,14 @@
         "income_yearly_usd": 7500,
         "seller_firm": "William Wilson Company",
         "brokers": "Baldwin & Howell; Frederick D. Marsh",
-        "record_date": "1910-07-23"
+        "record_date": "1910-07-23",
+        "cross_street_name": "DIVISADERO",
+        "cross_street_type": "ST",
+        "corner_quad": "SE",
+        "lot_ft": [
+          62.5,
+          106.25
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 23 July 1910, p. 9",
@@ -1601,7 +1657,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "MCALLISTER",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0045",
@@ -2708,7 +2766,10 @@
       "extra": {
         "architect": "Houghton Sawyer",
         "notable_owner": "George H. Roos",
-        "record_date": "1910-07-30"
+        "record_date": "1910-07-30",
+        "cross_street_name": "MAPLE",
+        "cross_street_type": "ST",
+        "side": "N"
       },
       "citation": {
         "label": "The San Francisco Call, 30 July 1910, p. 9",
@@ -2732,7 +2793,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "JACKSON",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0079",
@@ -3395,7 +3458,16 @@
       "extra": {
         "price_usd": 15000,
         "lot_as_recorded": "33:4x102:5 1/2",
-        "record_date": "1910-08-06"
+        "record_date": "1910-08-06",
+        "cross_street_name": "SPRUCE",
+        "cross_street_type": "ST",
+        "side": "S",
+        "offset_ft": 70.83,
+        "direction": "E",
+        "lot_ft": [
+          33.33,
+          102.46
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 6 August 1910, p. 10",
@@ -3422,7 +3494,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "JACKSON",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0098",
@@ -4766,7 +4840,10 @@
       "extra": {
         "storeys": 2,
         "lot_as_recorded": "70x75",
-        "record_date": "1910-08-13"
+        "record_date": "1910-08-13",
+        "cross_street_name": "CLEMENT",
+        "cross_street_type": "ST",
+        "corner_quad": "SW"
       },
       "citation": {
         "label": "The San Francisco Call, 13 August 1910, p. 11",
@@ -4791,7 +4868,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "11TH",
+      "street_type": "AVE"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0137",
@@ -5611,7 +5690,14 @@
       "extra": {
         "price_usd": 10000,
         "lot_as_recorded": "37:6 on Hyde by 87:6 on Jackson",
-        "record_date": "1910-08-27"
+        "record_date": "1910-08-27",
+        "cross_street_name": "HYDE",
+        "cross_street_type": "ST",
+        "corner_quad": "SW",
+        "lot_ft": [
+          87.5,
+          37.5
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 27 August 1910, p. 8",
@@ -5637,7 +5723,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "JACKSON",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0161",
@@ -5816,7 +5904,10 @@
         "rooms": 134,
         "baths": 47,
         "cost_usd": 100000,
-        "record_date": "1910-08-27"
+        "record_date": "1910-08-27",
+        "cross_street_name": "JONES",
+        "cross_street_type": "ST",
+        "side": "N"
       },
       "citation": {
         "label": "The San Francisco Call, 27 August 1910, p. 9",
@@ -5839,7 +5930,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "SUTTER",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0167",
@@ -5978,7 +6071,12 @@
         "architect": "Charles M. and Arthur Rousseau",
         "storeys": 3,
         "flats": 3,
-        "record_date": "1910-08-27"
+        "record_date": "1910-08-27",
+        "cross_street_name": "GEARY",
+        "cross_street_type": "ST",
+        "side": "E",
+        "offset_ft": 81.5,
+        "direction": "N"
       },
       "citation": {
         "label": "The San Francisco Call, 27 August 1910, p. 9",
@@ -6003,7 +6101,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "LEAVENWORTH",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0172",
@@ -7195,7 +7295,16 @@
         "owner_firm": "Julian Investment Company",
         "loan_usd": 17500,
         "lot_as_recorded": "40x75",
-        "record_date": "1910-09-24"
+        "record_date": "1910-09-24",
+        "cross_street_name": "OFARRELL",
+        "cross_street_type": "ST",
+        "side": "E",
+        "offset_ft": 96,
+        "direction": "N",
+        "lot_ft": [
+          40,
+          75
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 24 September 1910, p. 9",
@@ -7219,7 +7328,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "HYDE",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0209",
@@ -7233,7 +7344,16 @@
         "cost_usd": 20000,
         "storeys": 3,
         "lot_as_recorded": "25x82",
-        "record_date": "1910-09-24"
+        "record_date": "1910-09-24",
+        "cross_street_name": "BUSH",
+        "cross_street_type": "ST",
+        "side": "W",
+        "offset_ft": 113,
+        "direction": "S",
+        "lot_ft": [
+          25,
+          82
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 24 September 1910, p. 9",
@@ -7257,7 +7377,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "POWELL",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0210",
@@ -7756,7 +7878,10 @@
       "description": "A house was to be built here with a Greek Doric front of large columns rising to the second storey, a living room and hall in white with mahogany, an oak dining room, a billiard room below and a library above. O'Brien & Werner, architects.",
       "extra": {
         "architect": "O'Brien & Werner",
-        "record_date": "1910-10-01"
+        "record_date": "1910-10-01",
+        "cross_street_name": "GROVE",
+        "cross_street_type": "ST",
+        "side": "W"
       },
       "citation": {
         "label": "The San Francisco Call, 1 October 1910, p. 11",
@@ -7783,7 +7908,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "SCOTT",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0225",
@@ -7794,7 +7921,9 @@
       "description": "The $500,000 Hearst Building was under construction, carried on bank loans made several months before.",
       "extra": {
         "cost_usd": 500000,
-        "record_date": "1910-10-01"
+        "record_date": "1910-10-01",
+        "cross_street_name": "03RD",
+        "cross_street_type": "ST"
       },
       "citation": {
         "label": "The San Francisco Call, 1 October 1910, p. 11",
@@ -7817,7 +7946,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "MARKET",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0226",
@@ -8057,7 +8188,14 @@
         "loan_usd": 35000,
         "storeys": 3,
         "lot_as_recorded": "55x120; contract gives N 120 by E 85",
-        "record_date": "1910-10-08"
+        "record_date": "1910-10-08",
+        "cross_street_name": "GOUGH",
+        "cross_street_type": "ST",
+        "corner_quad": "NE",
+        "lot_ft": [
+          55,
+          120
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 8 October 1910, p. 9",
@@ -8082,7 +8220,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "HAIGHT",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0234",
@@ -8294,7 +8434,14 @@
       "extra": {
         "storeys": 4,
         "lot_as_recorded": "25x75",
-        "record_date": "1910-10-08"
+        "record_date": "1910-10-08",
+        "cross_street_name": "NATOMA",
+        "cross_street_type": "ST",
+        "corner_quad": "NE",
+        "lot_ft": [
+          25,
+          75
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 8 October 1910, p. 11",
@@ -8318,7 +8465,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "02ND",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0241",
@@ -8457,7 +8606,10 @@
       "extra": {
         "price_usd": 40000,
         "lot_as_recorded": "34:4 1/2 by 112:6",
-        "record_date": "1910-10-08"
+        "record_date": "1910-10-08",
+        "cross_street_name": "HYDE",
+        "cross_street_type": "ST",
+        "corner_quad": "SE"
       },
       "citation": {
         "label": "The San Francisco Call, 8 October 1910, p. 11",
@@ -8483,7 +8635,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "CLAY",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0246",
@@ -9064,7 +9218,10 @@
         "storeys": 8,
         "class": "A",
         "lot_as_recorded": "97:6 on Sutter by 122:6 on Kearny",
-        "record_date": "1910-10-22"
+        "record_date": "1910-10-22",
+        "cross_street_name": "SUTTER",
+        "cross_street_type": "ST",
+        "corner_quad": "SE"
       },
       "citation": {
         "label": "The San Francisco Call, 22 October 1910, p. 9",
@@ -9088,7 +9245,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "KEARNY",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0264",
@@ -9167,7 +9326,9 @@
         "cost_usd": 750000,
         "height_ft": 120,
         "lot_as_recorded": "120 on Van Ness by 156 on Oak",
-        "record_date": "1910-10-22"
+        "record_date": "1910-10-22",
+        "cross_street_name": "OAK",
+        "cross_street_type": "ST"
       },
       "citation": {
         "label": "The San Francisco Call, 22 October 1910, p. 9",
@@ -9191,7 +9352,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "VAN NESS",
+      "street_type": "AVE"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0267",
@@ -9909,7 +10072,12 @@
         "cost_usd": 13207.5,
         "storeys": 4,
         "lot_as_printed": "W 59 by S 27",
-        "record_date": "1910-10-29"
+        "record_date": "1910-10-29",
+        "cross_street_name": "WASHINGTON",
+        "cross_street_type": "ST",
+        "side": "W",
+        "offset_ft": 152.96,
+        "direction": "S"
       },
       "citation": {
         "label": "The San Francisco Call, 29 October 1910, p. 11",
@@ -9933,7 +10101,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "WAVERLY",
+      "street_type": "PL"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0289",
@@ -10076,7 +10246,10 @@
         "cost_usd": 225000,
         "storeys": 4,
         "lot_as_recorded": "137:6 on Brannan and Bluxome by 250",
-        "record_date": "1910-10-29"
+        "record_date": "1910-10-29",
+        "cross_street_name": "05TH",
+        "cross_street_type": "ST",
+        "side": "S"
       },
       "citation": {
         "label": "The San Francisco Call, 29 October 1910, p. 11",
@@ -10100,7 +10273,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "BRANNAN",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0294",
@@ -10246,7 +10421,16 @@
         "cost_usd": 26000,
         "storeys": 4,
         "lot_as_recorded": "34x119",
-        "record_date": "1910-11-05"
+        "record_date": "1910-11-05",
+        "cross_street_name": "KEARNY",
+        "cross_street_type": "ST",
+        "side": "S",
+        "offset_ft": 171,
+        "direction": "E",
+        "lot_ft": [
+          34,
+          119
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 5 November 1910, p. 12",
@@ -10272,7 +10456,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "CLAY",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0299",
@@ -10486,7 +10672,12 @@
         "owner_firm": "Julian Investment Company",
         "apartments": 15,
         "cost_usd": 40000,
-        "record_date": "1910-11-12"
+        "record_date": "1910-11-12",
+        "cross_street_name": "OFARRELL",
+        "cross_street_type": "ST",
+        "side": "E",
+        "offset_ft": 97.5,
+        "direction": "N"
       },
       "citation": {
         "label": "The San Francisco Call, 12 November 1910, p. 9",
@@ -10510,7 +10701,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "HYDE",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0306",
@@ -11546,7 +11739,16 @@
         "suites": 78,
         "lot_as_recorded": "46x137:6",
         "offset_as_printed": "IS3 feet west of Powell",
-        "record_date": "1910-11-19"
+        "record_date": "1910-11-19",
+        "cross_street_name": "POWELL",
+        "cross_street_type": "ST",
+        "side": "S",
+        "offset_ft": 183,
+        "direction": "W",
+        "lot_ft": [
+          46,
+          137.5
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 19 November 1910, p. 9",
@@ -11570,7 +11772,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "BUSH",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0335",
@@ -11649,7 +11853,10 @@
         "architect": "Frederick H. Meyer",
         "owner_firm": "Schmiedell Estate Company",
         "storeys": 6,
-        "record_date": "1910-11-19"
+        "record_date": "1910-11-19",
+        "cross_street_name": "JONES",
+        "cross_street_type": "ST",
+        "corner_quad": "SW"
       },
       "citation": {
         "label": "The San Francisco Call, 19 November 1910, p. 9",
@@ -11673,7 +11880,9 @@
       "publish": {
         "status": "declined",
         "note": "Declined: the page already carries this plan and the contract for the six-storey building from the April and May 1910 issues."
-      }
+      },
+      "street_name": "POST",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0338",
@@ -11995,7 +12204,9 @@
         "cost_usd": 52253,
         "storeys": 12,
         "class": "A",
-        "record_date": "1910-11-19"
+        "record_date": "1910-11-19",
+        "cross_street_name": "KEARNY",
+        "cross_street_type": "ST"
       },
       "citation": {
         "label": "The San Francisco Call, 19 November 1910, p. 11",
@@ -12019,7 +12230,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "MARKET",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0348",
@@ -12805,7 +13018,14 @@
         "price_usd": 40000,
         "storeys": 4,
         "apartments": 6,
-        "record_date": "1910-12-03"
+        "record_date": "1910-12-03",
+        "cross_street_name": "JONES",
+        "cross_street_type": "ST",
+        "corner_quad": "NW",
+        "lot_ft": [
+          32.5,
+          85
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 3 December 1910, p. 8",
@@ -12831,7 +13051,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "PINE",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0371",
@@ -12942,7 +13164,14 @@
         "lot_as_recorded": "62:6x106:3",
         "price_usd": 65000,
         "completed": "1906-11",
-        "record_date": "1910-12-03"
+        "record_date": "1910-12-03",
+        "cross_street_name": "MCALLISTER",
+        "cross_street_type": "ST",
+        "corner_quad": "SE",
+        "lot_ft": [
+          62.5,
+          106.25
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 3 December 1910, p. 8",
@@ -12969,7 +13198,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "DIVISADERO",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0375",
@@ -12986,7 +13217,10 @@
         "expected_complete": "1911-10-01",
         "former_name": "Thurlow block",
         "record_date": "1910-12-03",
-        "reading_note": "estate spelled Davies here, Davis on 22 Oct"
+        "reading_note": "estate spelled Davies here, Davis on 22 Oct",
+        "cross_street_name": "SUTTER",
+        "cross_street_type": "ST",
+        "corner_quad": "SE"
       },
       "citation": {
         "label": "The San Francisco Call, 3 December 1910, p. 8",
@@ -13010,7 +13244,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "KEARNY",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0376",
@@ -13052,7 +13288,9 @@
       "description": "The Hibernia Savings Bank advanced Phoebe A. Hearst $200,000 on the Hearst Building then under construction, its loans on the property passing $800,000.",
       "extra": {
         "loan_usd": 200000,
-        "record_date": "1910-12-03"
+        "record_date": "1910-12-03",
+        "cross_street_name": "03RD",
+        "cross_street_type": "ST"
       },
       "citation": {
         "label": "The San Francisco Call, 3 December 1910, p. 8",
@@ -13076,7 +13314,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "MARKET",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0378",
@@ -14015,7 +14255,9 @@
       "description": "The Architect and Engineer of California featured Reid Brothers (James W. and Merritt J. Reid), designers of the Claus Spreckels or Call Building, which it called the first successful solution of a modern skyscraper.",
       "extra": {
         "architect": "Reid Brothers (James W. Reid, Merritt J. Reid)",
-        "record_date": "1910-12-10"
+        "record_date": "1910-12-10",
+        "cross_street_name": "03RD",
+        "cross_street_type": "ST"
       },
       "citation": {
         "label": "The San Francisco Call, 10 December 1910, p. 10",
@@ -14034,12 +14276,15 @@
         "path": "/san-francisco/south-of-market/market-street/701/",
         "method": "The Call (Claus Spreckels) Building: research/tools/corner.py MARKET 03RD: 3706001, 701-705 Market, Planning name Call/Claus Spreckels Building, roll 1908.",
         "checked_on": "2026-09-23",
-        "by_hand": true
+        "by_hand": true,
+        "note": "Kept on re-test 2026-11-09: corner.py --retest puts the outline 125 ft from the DPW node of Market and Third, which is the Market-Third-Kearny-Geary node and sits about 100 ft off Third's line; the record names the building (the Claus Spreckels or Call Building) and Planning names 3706001 for it."
       },
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "MARKET",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0406",
@@ -14317,7 +14562,10 @@
       "description": "An $18,000 loan was made to complete the Head Building on this corner.",
       "extra": {
         "loan_usd": 18000,
-        "record_date": "1910-12-17"
+        "record_date": "1910-12-17",
+        "cross_street_name": "POST",
+        "cross_street_type": "ST",
+        "corner_quad": "SW"
       },
       "citation": {
         "label": "The San Francisco Call, 17 December 1910, p. 9",
@@ -14342,7 +14590,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "GRANT",
+      "street_type": "AVE"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0415",
@@ -14354,7 +14604,14 @@
       "extra": {
         "loan_usd": 145000,
         "lot_as_recorded": "72x92",
-        "record_date": "1910-12-17"
+        "record_date": "1910-12-17",
+        "cross_street_name": "TAYLOR",
+        "cross_street_type": "ST",
+        "corner_quad": "NE",
+        "lot_ft": [
+          72,
+          92
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 17 December 1910, p. 9",
@@ -14369,17 +14626,21 @@
       },
       "confidence": "high",
       "resolution": {
-        "status": "resolved",
+        "status": "unresolved",
         "apn": "0324001",
         "path": "/san-francisco/tenderloin/ofarrell-street/401/",
         "method": "NE corner of O'Farrell and Taylor, 72 x 92 (6,624 sq ft), a hotel. research/tools/corner.py OFARRELL TAYLOR: 0324001 (401 O'Farrell, Planning name R. S. Brown Hotel (Columbia Hotel)), lot area 6,372 sq ft, six storeys, roll 1910.",
-        "checked_on": "2026-09-23",
-        "by_hand": true
+        "checked_on": "2026-11-09",
+        "by_hand": true,
+        "note": "Retracted 2026-11-09: re-tested with corner.py --retest against the DPW street centrelines (3psu-pn9h), the placement on 0324001 (401 O'FARRELL ST, /san-francisco/tenderloin/ofarrell-street/401/) disagrees — not in the NE quadrant; the parcel is the SW corner of O'Farrell and Taylor (flipping the quadrant passes it), its area 6,372 sq ft against the record's 72 by 92 (6,624), and the page's own NRHP record dates its Columbia Hotel to 1909, a year before this December 1910 loan to build. The NE corner is the block now under the 1964 hotel tower, with no parcel standing from 1910, so nothing was taken in its place."
       },
       "publish": {
-        "status": "published",
-        "pr": "406"
-      }
+        "status": "declined",
+        "pr": "406",
+        "note": "Removed from the page on 2026-11-09: the placement failed the street-network re-test (see resolution.note). Originally published as: A $145,000 loan was made to build a hotel on this 72 by 92 corner."
+      },
+      "street_name": "OFARRELL",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0416",
@@ -14800,7 +15061,14 @@
         "rent_total_usd": 500000,
         "lot_as_recorded": "120 on Van Ness, 246 1/2 on Post",
         "record_date": "1910-12-24",
-        "reading_note": "Post frontage OCR '2465 a'"
+        "reading_note": "Post frontage OCR '2465 a'",
+        "cross_street_name": "POST",
+        "cross_street_type": "ST",
+        "corner_quad": "NE",
+        "lot_ft": [
+          120,
+          246.5
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 24 December 1910, p. 8",
@@ -14824,7 +15092,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "VAN NESS",
+      "street_type": "AVE"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0429",
@@ -15085,7 +15355,14 @@
         "lot_as_recorded": "30x25",
         "price_usd": 110000,
         "storeys": 4,
-        "record_date": "1910-12-24"
+        "record_date": "1910-12-24",
+        "cross_street_name": "TILLMAN",
+        "cross_street_type": "PL",
+        "corner_quad": "NW",
+        "lot_ft": [
+          30,
+          25
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 24 December 1910, p. 9",
@@ -15109,7 +15386,9 @@
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "GRANT",
+      "street_type": "AVE"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0437",
@@ -15373,7 +15652,9 @@
         "sculptor": "Haig Patigian",
         "opened": "1911-01-03",
         "before_fire": "five-storey frame building, saloon on the ground floor",
-        "record_date": "1910-12-31"
+        "record_date": "1910-12-31",
+        "cross_street_name": "OFARRELL",
+        "cross_street_type": "ST"
       },
       "citation": {
         "label": "The San Francisco Call, 31 December 1910, p. 9",
@@ -15392,13 +15673,16 @@
         "path": "/san-francisco/financial-district/grant-avenue/1/",
         "method": "The Savings Union's new building at Grant, O'Farrell and Market. research/tools/corner.py GRANT OFARRELL: 0313008, 1 Grant, Planning name Savings Union Branch of Security Pacific National Bank, roll 1910.",
         "checked_on": "2026-09-23",
-        "by_hand": true
+        "by_hand": true,
+        "note": "Kept on re-test 2026-11-09: corner.py --retest puts the outline 135 ft from the one DPW node of Market, Grant and O'Farrell, the same gore node that flagged the January-June batch's 0081; the record names the building (the Savings Union's new bank) and Planning names 0313008 the Savings Union branch, roll 1910."
       },
       "note": "Published wording differs from the extracted description: the founding years are left out so the entry keeps to its own date.",
       "publish": {
         "status": "published",
         "pr": "406"
-      }
+      },
+      "street_name": "GRANT",
+      "street_type": "AVE"
     },
     {
       "id": "sn85066387-1910-h2-real-estate-0445",

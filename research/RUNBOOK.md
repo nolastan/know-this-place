@@ -621,7 +621,8 @@ corner.py placement in a batch against the DPW street centrelines: quadrant
 and reach for a corner, side and offset for a line (`offset_ft`,
 `direction`), reach alone for two streets and no quadrant. Each `DISAGREES` is a placement to
 re-read against the page's own record and the parcels at the corner, not an
-automatic retraction. One the re-read confirms comes off the page:
+automatic retraction; `corner.py A B --along DIR` measures the corner's
+lots from the node for the re-read. One the re-read confirms comes off the page:
 `resolution.status` back to `unresolved` with the reason in its `note`, and
 `publish` to `declined` with "Removed from the page on <date>".
 It tests only entries carrying `street_name` and `extra.cross_street_name`
