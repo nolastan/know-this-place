@@ -692,6 +692,13 @@ def retest(path: str) -> int:
         apn = res.get("apn")
         here = centroid(apn, shapes, None) if apn else None
         verdict, why = "untested", ""
+        if not (f.get("street_name") and b and (x.get("corner_quad") or x.get("side"))):
+            # Hand placements written before the structured fields existed keep
+            # the corner only in address_as_written; 1911-1913 keep only
+            # cross_street_as_printed. Nothing here can test them, and a bare
+            # "untested" read as a pass on 1910's real-estate batch (all 41).
+            counts["no fields"] = counts.get("no fields", 0) + 1
+            continue
         hit = network_corner(streets.get(a) or [], streets.get(b) or [], here) if here else None
         if hit and x.get("corner_quad"):
             p, da, db = hit
@@ -719,6 +726,10 @@ def retest(path: str) -> int:
             for t in twins(path, f):
                 print(f"    twin: {t}")
     print(f"{len(rows)} placements: " + ", ".join(f"{v} {k}" for k, v in sorted(counts.items())))
+    if counts.get("no fields"):
+        print(f"  {counts['no fields']} carry no street_name + extra.cross_street_name + "
+              "extra.corner_quad or extra.side, so were not tested: add those fields from "
+              "the record before reading this as a pass")
     return 1 if bad else 0
 
 
