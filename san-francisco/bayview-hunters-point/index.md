@@ -26,6 +26,7 @@ San Francisco's south-eastern quarter, settled from the 1860s as the industrial 
 - [Gilman Avenue](gilman-avenue/) — 1 building, built 1925.
 - [Goettingen Street](goettingen-street/) — 1 building, built 1907.
 - [Griffith Street](griffith-street/) — 1 building, built 1930; 1 in the India Basin Scow Schooner Boatyard Vernacular Cultural Landscape.
+- [Harkness Avenue](harkness-avenue/) — 1 building, built 2006.
 - [Hawes Street](hawes-street/) — 2 buildings, built 1942–1972.
 - [Hollister Avenue](hollister-avenue/) — 1 building, built 1905.
 - [Hudson Avenue](hudson-avenue/) — 3 buildings, built 1930–1943; 3 in the India Basin Scow Schooner Boatyard Vernacular Cultural Landscape.

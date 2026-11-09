@@ -1,0 +1,57 @@
+{
+  "address": "1177 California Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/california-street/1177/unit-1607/",
+  "unit": "1607",
+  "apn": "0253A014",
+  "block": "0253A",
+  "lot": "014",
+  "parcel": {
+    "building_area_sqft": 1059,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 503972,
+    "assessed_improvement_value": 265237
+  },
+  "permits": [
+    {
+      "number": "201508174459",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-17",
+      "status_date": "2015-10-06",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "retile 2 baths, replace granite in kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201508144342",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2015-08-14",
+      "status_date": "2026-01-09",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "#1607 -retiles only in 2 bathrooms - & replace granite countertop in kitchen.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0253A014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0253A&unit=1607",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

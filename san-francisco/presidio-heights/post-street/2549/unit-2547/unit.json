@@ -1,0 +1,44 @@
+{
+  "address": "2547 Post Street, San Francisco, CA 94115",
+  "path": "/san-francisco/presidio-heights/post-street/2549/unit-2547/",
+  "apn": "1081047",
+  "block": "1081",
+  "lot": "047",
+  "parcel": {
+    "building_area_sqft": 2400,
+    "rooms": 6,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1195296,
+    "assessed_improvement_value": 512265,
+    "last_sale_date": "2008-02-29"
+  },
+  "permits": [
+    {
+      "number": "M250309",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-03-28",
+      "status_date": "2011-03-28",
+      "revised_cost": 267,
+      "description": "change address from 2549 post street #2.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1081047&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1081&street_number=2547",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

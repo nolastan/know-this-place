@@ -1,0 +1,35 @@
+{
+  "address": "631 Folsom Street, San Francisco, CA 94107",
+  "path": "/san-francisco/east-cut/folsom-street/631/unit-18a/",
+  "unit": "18A",
+  "apn": "3750693",
+  "block": "3750",
+  "lot": "693",
+  "parcel": {
+    "building_area_sqft": 1136,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 684600,
+    "assessed_improvement_value": 456400,
+    "last_sale_date": "2019-11-08"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3750693&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3750&unit=18A",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

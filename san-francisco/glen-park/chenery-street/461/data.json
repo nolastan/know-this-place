@@ -1,0 +1,167 @@
+{
+  "address": "461 Chenery Street, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/chenery-street/461/",
+  "apn": "6718022",
+  "block": "6718",
+  "lot": "022",
+  "eas_baseid": "405768",
+  "coordinates": {
+    "lat": 37.735748,
+    "lng": -122.429544
+  },
+  "parcel": {
+    "year_built": 1904,
+    "units": 1,
+    "stories": 1,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 5,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 3393,
+    "basement_area_sqft": 1223,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Glen Park",
+    "analysis_neighborhood": "Glen Park",
+    "property_location_raw": "0000 0461 CHENERY             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1591857,
+    "assessed_improvement_value": 682221,
+    "last_sale_date": "2010-12-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201010153157",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-10-15",
+      "status_date": "2010-10-27",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revisions to pa# 2008.10.23.4915 as built. reconfigure stairs & rear decks. downsized 1st fl f great rm to create (n)deck. use horizontal wd siding at front. reconfigure approved wine cellar into (n) storage and (n) wine cellar",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200810234915",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2008-10-23",
+      "status_date": "2010-10-27",
+      "estimated_cost": 220000,
+      "revised_cost": 220000,
+      "description": "1) lift extg 1st floor 8'-6\" up to become a 2nd floor. add a 1st floor with garage at street level. 2)horizontal extend 12'-0\" at the back of bldg on ground and 1st floor, new roof deck on 2nd floor at rear.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200709072114",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2007-09-07",
+      "status_date": "2026-01-27",
+      "estimated_cost": 25000,
+      "revised_cost": 0,
+      "description": "replace existing brick foundation with new reinforeced concrete foundation. upgrade lateral at lower level (new shear wall). building shoring & sequence of (e) foundation replacement under separate permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200509223615",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2005-09-22",
+      "status_date": "2007-09-17",
+      "estimated_cost": 250000,
+      "description": "remodel (e) units - horizontal & vertical addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200304041533",
+      "type": "demolitions",
+      "status": "withdrawn",
+      "filed": "2003-04-04",
+      "status_date": "2005-08-18",
+      "description": "demo a 3 story 2 dwelling unit residential bldg.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200304041536",
+      "type": "new construction wood frame",
+      "status": "withdrawn",
+      "filed": "2003-04-04",
+      "status_date": "2005-08-18",
+      "estimated_cost": 400000,
+      "description": "erect a four story two unit residential bldg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9005357",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-03-20",
+      "status_date": "1990-11-16",
+      "estimated_cost": 300,
+      "description": "4\" x 4\"post under kitchen next to existing post",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 8,
+    "range": "1990–2010",
+    "shown_on_page": 7,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CHENERY&street_type=ST&address_number=461",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6718022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6718&lot=022",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6718022",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2004-01-08",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 8 January 2004",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/55minutesofsanfran2004san/page/n6/mode/1up",
+      "retrieved": "2026-11-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2004-01-08",
+      "kind": "occupancy",
+      "description": "An existing single-family dwelling stood at the property.",
+      "source": "sf-planning-commission-minutes-2004-01-08"
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "address": "2059 23rd Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/23rd-avenue/2059/",
+  "apn": "2143015",
+  "block": "2143",
+  "lot": "015",
+  "eas_baseid": "330634",
+  "coordinates": {
+    "lat": 37.749203,
+    "lng": -122.48075
+  },
+  "parcel": {
+    "year_built": 1943,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 1994,
+    "basement_area_sqft": 551,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2059 23RD                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 444480,
+    "assessed_improvement_value": 442530,
+    "last_sale_date": "2000-06-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1943",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202602125909",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-02-12",
+      "status_date": "2026-02-20",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200606073452",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-06-07",
+      "status_date": "2006-06-09",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew 200505273586 for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200505273586",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-05-27",
+      "status_date": "2005-05-27",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "revision to app#200403128471s. during excavation it was discovered that there was no footing under",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200412201806",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2004-12-20",
+      "status_date": "2005-03-16",
+      "estimated_cost": 75000,
+      "description": "add 2-story rear addition, include 2 bedrm, one bath.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200403128471",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2004-03-12",
+      "status_date": "2006-06-09",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "horizontal addition- addition to 2nd flr at rear, add 2 bedrms & one bath",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8700216",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-01-08",
+      "status_date": "1988-02-08",
+      "estimated_cost": 9519,
+      "description": "horizontal & vertical extension, rear addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=AVE&address_number=2059",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2143015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2143&lot=015",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2143015",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2004-09-09",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 9 September 2004",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/56minutesofsanfran2004san/page/n108/mode/1up",
+      "retrieved": "2026-11-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2004-09-09",
+      "kind": "planning decision",
+      "description": "The City Planning Commission took discretionary review and modified the project so the two-story horizontal rear addition does not exceed 13 feet from the existing rear wall.",
+      "source": "sf-planning-commission-minutes-2004-09-09"
+    }
+  ]
+}

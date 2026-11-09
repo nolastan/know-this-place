@@ -1,0 +1,64 @@
+{
+  "address": "201 Sansome Street, San Francisco, CA 94104",
+  "path": "/san-francisco/financial-district/sansome-street/201/unit-201/",
+  "unit": "201",
+  "apn": "0260019",
+  "block": "0260",
+  "lot": "019",
+  "parcel": {
+    "building_area_sqft": 658,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 386400,
+    "assessed_improvement_value": 257600,
+    "last_sale_date": "2020-03-13"
+  },
+  "permits": [
+    {
+      "number": "202312222990",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-12-22",
+      "status_date": "2025-03-28",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "fire only work to verify (e) sound levels in sleeping areas, complying with sffc section 1103.7.6.1.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201505156492",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-05-15",
+      "status_date": "2015-10-30",
+      "estimated_cost": 5000,
+      "revised_cost": 500,
+      "description": "addition of heat detector for fire pump room. fire alarm system re-acceptance test as per nfpa 72,2013 ed. 14-4-2 in basement level. n/a maher ord. #155-13",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 8,
+    "range": "2015–2023",
+    "shown_on_page": 2,
+    "note": "6 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0260019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0260&unit=201",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

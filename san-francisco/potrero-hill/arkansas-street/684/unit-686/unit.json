@@ -1,0 +1,45 @@
+{
+  "address": "686 Arkansas Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/arkansas-street/684/unit-686/",
+  "apn": "4098044",
+  "block": "4098",
+  "lot": "044",
+  "parcel": {
+    "building_area_sqft": 1742,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1160584,
+    "assessed_improvement_value": 1160584,
+    "last_sale_date": "2017-04-12"
+  },
+  "permits": [
+    {
+      "number": "201601217617",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2016-01-21",
+      "status_date": "2023-03-20",
+      "estimated_cost": 60000,
+      "description": "construct new roof deck (less than 500 sq ft), new glass guardrail at street facing side, a new steel guardrail & spiral stair for roof access. 1 unit has access only",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4098044&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4098&street_number=686",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

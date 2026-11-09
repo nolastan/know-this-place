@@ -1,0 +1,46 @@
+{
+  "address": "1177 California Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/california-street/1177/unit-222/",
+  "unit": "222",
+  "apn": "0253A248",
+  "block": "0253A",
+  "lot": "248",
+  "parcel": {
+    "building_area_sqft": 535,
+    "rooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 248352,
+    "assessed_improvement_value": 119567,
+    "last_sale_date": "1990-05-11"
+  },
+  "permits": [
+    {
+      "number": "201702270204",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-02-27",
+      "status_date": "2017-07-05",
+      "estimated_cost": 20000,
+      "revised_cost": 34000,
+      "description": "work in one unit: replace ekitchen cabinets and countertops and fixtures. replace bathroom vanity and fixtures. all fans to have same cfm and connect to (e) ducts. all new lighting to be high efficacy.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0253A248&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0253A&unit=222",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

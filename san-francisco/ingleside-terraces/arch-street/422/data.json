@@ -1,0 +1,138 @@
+{
+  "address": "422 Arch Street, San Francisco, CA 94132",
+  "path": "/san-francisco/ingleside-terraces/arch-street/422/",
+  "apn": "7006027",
+  "block": "7006",
+  "lot": "027",
+  "eas_baseid": "411620",
+  "coordinates": {
+    "lat": 37.718353,
+    "lng": -122.466865
+  },
+  "parcel": {
+    "year_built": 1946,
+    "units": 1,
+    "stories": 1,
+    "rooms": 9,
+    "bathrooms": 3,
+    "bedrooms": 5,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2042,
+    "basement_area_sqft": 517,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Merced Heights",
+    "analysis_neighborhood": "Oceanview/Merced/Ingleside",
+    "property_location_raw": "0000 0422 ARCH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 66591,
+    "assessed_improvement_value": 560181
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1946",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201002236992",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-02-23",
+      "status_date": "2010-04-30",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under app#200403269714. all work is completed",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200902041370",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-02-04",
+      "status_date": "2009-02-04",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew pa# 2008/04/10/9387 to obtain final inspection. all work has been completed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200804109387",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2008-04-10",
+      "status_date": "2009-01-23",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew pa#200403269714 for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200403269714",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2004-03-26",
+      "status_date": "2008-03-20",
+      "estimated_cost": 70000,
+      "revised_cost": 155000,
+      "description": "horizontal addition. add four bedrooms two full bath & work shop per plans",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ARCH&street_type=ST&address_number=422",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7006027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7006&lot=027",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7006027",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2005-04-21",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 21 April 2005",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/57minutesofsanfran2005san/page/n229/mode/1up",
+      "retrieved": "2026-11-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2005-04-21",
+      "kind": "planning decision",
+      "description": "The City Planning Commission did not take discretionary review and approved the project at 422 Arch Street.",
+      "source": "sf-planning-commission-minutes-2005-04-21"
+    },
+    {
+      "date": "2005-04-21",
+      "kind": "occupancy",
+      "description": "A single-family dwelling stood at the property.",
+      "source": "sf-planning-commission-minutes-2005-04-21"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "address": "654 Carolina Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/carolina-street/654/",
+  "apn": "4071009",
+  "block": "4071",
+  "lot": "009",
+  "eas_baseid": "367995",
+  "coordinates": {
+    "lat": 37.760308,
+    "lng": -122.400503
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 15,
+    "bathrooms": 5,
+    "bedrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2859,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Potrero Hill",
+    "property_location_raw": "0000 0654 CAROLINA            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 470304,
+    "assessed_improvement_value": 806399,
+    "last_sale_date": "1998-07-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201611283619",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-11-28",
+      "status_date": "2017-03-09",
+      "estimated_cost": 5000,
+      "revised_cost": 8000,
+      "description": "repair and replace retaining wall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201611082211",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-11-08",
+      "status_date": "2017-03-09",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "misc, dry rot repairs, replace rotted siding in kind , front 4sq ft. side 20 sq ft",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200304242991",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2003-04-24",
+      "status_date": "2007-03-06",
+      "estimated_cost": 302500,
+      "revised_cost": 376500,
+      "description": "vertical and horizontal addition, add decks bedrooms, bathrooms, family room, stairs, remove greenho",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9618891S",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1996-10-03",
+      "status_date": "1997-08-07",
+      "estimated_cost": 3000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1996–2016",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAROLINA&street_type=ST&address_number=654",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4071009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4071&lot=009",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4071009",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2004-01-08",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 8 January 2004",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/55minutesofsanfran2004san/page/n16/mode/1up",
+      "retrieved": "2026-11-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2004-01-08",
+      "kind": "occupancy",
+      "description": "An existing one-story over garage building stood at the property.",
+      "source": "sf-planning-commission-minutes-2004-01-08"
+    }
+  ]
+}

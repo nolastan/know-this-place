@@ -1,0 +1,47 @@
+{
+  "address": "1068 Sanchez Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/sanchez-street/1070/unit-1068/",
+  "apn": "3654065",
+  "block": "3654",
+  "lot": "065",
+  "parcel": {
+    "building_area_sqft": 1753,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "basement_area_sqft": 488
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1107577,
+    "assessed_improvement_value": 753927,
+    "last_sale_date": "2023-10-05"
+  },
+  "permits": [
+    {
+      "number": "201505085856",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-05-08",
+      "status_date": "2015-05-08",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "repair of water damage from rain in-kind. replace sheetrock in master bedroom, tile in balcony. no alteration of wall, window & door.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3654065&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3654&street_number=1068",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

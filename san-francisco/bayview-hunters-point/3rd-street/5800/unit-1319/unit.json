@@ -1,0 +1,35 @@
+{
+  "address": "5800 3rd Street, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/3rd-street/5800/unit-1319/",
+  "unit": "1319",
+  "apn": "5431B056",
+  "block": "5431B",
+  "lot": "056",
+  "parcel": {
+    "building_area_sqft": 1572,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 499192,
+    "assessed_improvement_value": 499192,
+    "last_sale_date": "2018-08-27"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5431B056&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5431B&unit=1319",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

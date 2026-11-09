@@ -1,0 +1,98 @@
+{
+  "address": "1137 Green Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/green-street/1135/unit-1137/",
+  "apn": "0125116",
+  "block": "0125",
+  "lot": "116",
+  "parcel": {
+    "building_area_sqft": 1868,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1770000,
+    "assessed_improvement_value": 1180000,
+    "last_sale_date": "2022-05-10"
+  },
+  "permits": [
+    {
+      "number": "201704264949",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-04-26",
+      "status_date": "2017-09-05",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "dryrot repair to (e) east deck guardrails, in-kind & up to code w/ 42\"height. west guardrail repair w/ cable railing of 42\"height per request of sf planning (tim frye)& utilize deck pa#2006-0913-2225 for structural strenght in addition to securing the house.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200805222679",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2008-05-22",
+      "status_date": "2011-02-28",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "replace 5 windows on west elevation aluminum with double pane wood window. replace in kind. bedrooms opening to be same or larger than original. note: windows within existing rough openings.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200609132225",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-09-13",
+      "status_date": "2007-01-09",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "in kind dry rot repairs to (e) deck not visible from street. repairs to be made in kind. no structural work. no change or repairs to (e) gaurdrails. less than 50% repair work to deck. (e) deck not to exceed 500 sq.feet on roof field verify.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9505054",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1995-04-07",
+      "status_date": "1995-05-31",
+      "estimated_cost": 500,
+      "description": "abate complaint 9400254 repair guardrail on deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8900243",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "1989-01-09",
+      "status_date": "1989-03-01",
+      "estimated_cost": 800,
+      "description": "revision to #8802516 to allow roof top stair cover structure",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8808231",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-06-17",
+      "status_date": "1988-10-14",
+      "estimated_cost": 1000,
+      "description": "revise approved appl.#8802516.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0125116&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0125&street_number=1137",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

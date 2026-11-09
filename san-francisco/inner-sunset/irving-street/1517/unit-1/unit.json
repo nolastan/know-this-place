@@ -1,0 +1,35 @@
+{
+  "address": "1517 Irving Street, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/irving-street/1517/unit-1/",
+  "unit": "1",
+  "apn": "1771061",
+  "block": "1771",
+  "lot": "061",
+  "parcel": {
+    "building_area_sqft": 1601,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 954000,
+    "assessed_improvement_value": 636000,
+    "last_sale_date": "2020-04-02"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1771061&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1771&unit=1",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

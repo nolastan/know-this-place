@@ -1,0 +1,30 @@
+{
+  "address": "3150 Geary Boulevard, San Francisco, CA 94118",
+  "path": "/san-francisco/lone-mountain/geary-boulevard/3150/unit-lot-067/",
+  "apn": "1066067",
+  "block": "1066",
+  "lot": "067",
+  "parcel": {
+    "building_area_sqft": 1814
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 220093,
+    "assessed_improvement_value": 367301
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1066067&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1066&street_number=3150",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

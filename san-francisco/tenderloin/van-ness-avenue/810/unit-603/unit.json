@@ -1,0 +1,58 @@
+{
+  "address": "818 Van Ness Avenue, San Francisco, CA 94109",
+  "path": "/san-francisco/tenderloin/van-ness-avenue/810/unit-603/",
+  "unit": "603",
+  "apn": "0739052",
+  "block": "0739",
+  "lot": "052",
+  "parcel": {
+    "building_area_sqft": 1181,
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 792339,
+    "assessed_improvement_value": 528226,
+    "last_sale_date": "2021-03-19"
+  },
+  "permits": [
+    {
+      "number": "202212218906",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-12-21",
+      "status_date": "2023-02-27",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "1-powder bathroom remodel like for like, waterproof, plumbing of shower fixture only, tile work in shower. non structural.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201011014102",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-11-01",
+      "status_date": "2011-11-02",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "one unit. remove bathtub . replace with shower . add grab bar where shown on plane.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0739052&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0739&unit=603",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

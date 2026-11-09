@@ -1,0 +1,138 @@
+{
+  "address": "3264 Lyon Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/lyon-street/3264/",
+  "apn": "0925028",
+  "block": "0925",
+  "lot": "028",
+  "eas_baseid": "290505",
+  "coordinates": {
+    "lat": 37.801231,
+    "lng": -122.447343
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 1,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 3698,
+    "building_area_sqft": 3990,
+    "basement_area_sqft": 930,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 3264 LYON                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1042793,
+    "assessed_improvement_value": 1436558,
+    "last_sale_date": "2003-05-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200402176562",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-02-17",
+      "status_date": "2005-07-25",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "reinstatement for expired permit 200305215192 to complete work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200305215192",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-05-21",
+      "status_date": "2007-02-09",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "demo of 2/fl interior partition wall covering to see if they will be bearing or not, remove cabinetr",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200305094264",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2003-05-09",
+      "status_date": "2005-07-25",
+      "estimated_cost": 160000,
+      "revised_cost": 320000,
+      "description": "vertical addition and new deck at rear yard",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8503347",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-04-03",
+      "status_date": "1985-10-10",
+      "estimated_cost": 2950,
+      "description": "install aluminum windows in existing frames.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LYON&street_type=ST&address_number=3264",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0925028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0925&lot=028",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0925028",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2004-02-12",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 12 February 2004",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/55minutesofsanfran2004san/page/n96/mode/1up",
+      "retrieved": "2026-11-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2004-02-12",
+      "kind": "planning decision",
+      "description": "The City Planning Commission took discretionary review and approved the project to construct a rear horizontal addition and deck at the second floor and a new third floor, with the modification of a trellis along the northern edge of the proposed deck.",
+      "source": "sf-planning-commission-minutes-2004-02-12"
+    },
+    {
+      "date": "2004-02-12",
+      "kind": "occupancy",
+      "description": "An existing two-story, single-family residence stood at the property.",
+      "source": "sf-planning-commission-minutes-2004-02-12"
+    }
+  ]
+}

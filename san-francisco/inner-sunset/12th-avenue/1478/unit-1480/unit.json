@@ -1,0 +1,57 @@
+{
+  "address": "1480 12th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/12th-avenue/1478/unit-1480/",
+  "apn": "1842047",
+  "block": "1842",
+  "lot": "047",
+  "parcel": {
+    "building_area_sqft": 1553,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 903000,
+    "assessed_improvement_value": 602000,
+    "last_sale_date": "2024-08-30"
+  },
+  "permits": [
+    {
+      "number": "202005298004",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-05-29",
+      "status_date": "2020-07-15",
+      "estimated_cost": 8000,
+      "revised_cost": 20000,
+      "description": "retrofit 8 windows replacement at side of house of which 4 are visible from the street. shower conversion from tub to shower due to leak at plumbing. bathroom is 5 x 12.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201812037196",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-12-03",
+      "status_date": "2019-01-22",
+      "estimated_cost": 7575,
+      "revised_cost": 7575,
+      "description": "install laundry hook-ups, install dryer hook-up, install exhaust fan, install dryer exhaust.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1842047&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1842&street_number=1480",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}
