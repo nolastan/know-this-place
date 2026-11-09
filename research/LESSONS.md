@@ -3132,3 +3132,16 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   findings file — a reading view is for reading, never for quoting.*
   (2026-10-31,
   [sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))
+- **One map lot can hold several buildings, and a point query cut short hides
+  the one you want.** 736 Mission Street, the Contemporary Jewish Museum, has
+  a parcel of its own, 3706276, which sf-parcels states as 736–736 Mission.
+  Its EAS point falls in 154 active parcels of one map lot: the museum, the
+  706 Mission tower's units and a garage. `resolve_eas.py` asked each point
+  for twenty parcels, got twenty of the tower's units, and since #446 filed
+  the museum on unit 0503 of the building next door. The point query is no
+  longer truncated, a condominium stack is narrowed to the parcels that state
+  the recorded number, and `report` lists any condominium resolution whose
+  unit the roll files at another number while EAS lists the recorded number
+  nowhere on that map lot. *Read that list before `apply` or `manifest`; a
+  parcel whose own range is the recorded address decides it.* (2026-11-09,
+  #557)
