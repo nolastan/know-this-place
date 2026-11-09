@@ -1,0 +1,109 @@
+{
+  "source_id": "the-registry",
+  "batch": "2026-11-09",
+  "read_on": "2026-11-09",
+  "notes": "San Francisco Centre redevelopment loan is the one building story.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 3,
+    "mentions": 3,
+    "remaining": "none"
+  },
+  "findings": [
+    {
+      "id": "2026-11-09-reg-0001",
+      "date": "2026-11-09",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "865 Market Street",
+      "street_number": "865",
+      "street_name": "MARKET",
+      "street_type": "ST",
+      "description": "Seven Equity Group seeks a loan to raze San Francisco Centre for office, housing and hotels (lede; paywalled after). A proposal; nothing in the building block.",
+      "extra": {},
+      "citation": {
+        "label": "The Registry, \u201cSeven Equity Group Seeks $98.7MM Loan to Raze $132.5MM San Francisco Centre for Up to 2.4MM SQFT of Office, Housing and Hotels,\u201d 9 November 2026",
+        "url": "https://news.theregistrysf.com/seven-equity-group-seeks-98-7mm-loan-to-raze-132-5mm-san-francisco-centre-for-up-to-2-4mm-sqft-of-office-housing-and-hotels/"
+      },
+      "raw": {
+        "text": "Seven Equity Group seeks loan to raze San Francisco Centre"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3705042",
+        "path": "/san-francisco/south-of-market/market-street/865/",
+        "eas_address": "865 MARKET ST",
+        "method": "EAS exact match on 865 MARKET ST \u2192 parcel 3705042; sf-parcels has blklot 3705042 active, 865\u2013885 MARKET; the 2025 roll records it as commercial retail, built 1908. EAS puts 865, 885 MARKET ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 865.",
+        "checked_on": "2026-11-09"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Entry on /san-francisco/south-of-market/market-street/865/ (existing page)."
+      }
+    },
+    {
+      "id": "2026-11-09-reg-0002",
+      "date": "2026-11-09",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "181 Fremont",
+      "street_number": "181",
+      "street_name": "FREMONT",
+      "street_type": "ST",
+      "description": "Office lease roundup.",
+      "extra": {},
+      "citation": {
+        "label": "(declined; see note)",
+        "url": "https://news.theregistrysf.com/mercor-takes-lila-sciences-upper-floors-at-181-fremont-as-san-francisco-trophy-view-vacancy-falls-to-0-5/"
+      },
+      "raw": {
+        "text": "(not published)"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Tenant lease at 181 Fremont; leasing status, not a building fact. Fails the ten-year test."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3719456",
+        "path": "/san-francisco/east-cut/fremont-street/181/",
+        "eas_address": "181 FREMONT ST",
+        "method": "EAS exact match on 181 FREMONT ST \u2192 parcel 3719456; sf-parcels has blklot 3719456 active, 181\u2013181 FREMONT; the 2025 roll records it as single family residential, built 2018. Parcel 3719456 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0054E of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 181 FREMONT ST's coordinates fall in 20 active parcels, one condominium map's units on the 2025 roll; 3719456 stands for the building.",
+        "checked_on": "2026-11-09",
+        "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+      }
+    },
+    {
+      "id": "2026-11-09-reg-0003",
+      "date": "2026-11-09",
+      "date_precision": "day",
+      "kind": "other",
+      "address_as_written": "1155 Market Street",
+      "street_number": "1155",
+      "street_name": "MARKET",
+      "street_type": "ST",
+      "description": "Mid-Market arts pilot; addresses are a related-story list.",
+      "extra": {},
+      "citation": {
+        "label": "(declined; see note)",
+        "url": "https://news.theregistrysf.com/500000-pilot-bets-arts-tenants-can-revive-mid-market-storefronts-as-submarket-vacancy-sits-at-32/"
+      },
+      "raw": {
+        "text": "(not published)"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Submarket pilot story; addresses appear only in a related list. Fails the ten-year test."
+      },
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-11-09",
+        "method": "sf-eas-addresses has 1155 MARKET ST but it does not join to one parcel. 1155 MARKET ST's coordinates fall in 4 active parcels (3702821, 3702823, 3702822, 3702820) that are not one condominium's units, so none of them is the building by rule.",
+        "note": "The address exists but cannot be joined to a parcel, so there is no page to put it on. EAS leaves addresses unparcelled for rear units, vacated lots and addresses in flux; a later pass may find one."
+      }
+    }
+  ]
+}
