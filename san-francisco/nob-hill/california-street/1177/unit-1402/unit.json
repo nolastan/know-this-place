@@ -1,0 +1,57 @@
+{
+  "address": "1177 California Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/california-street/1177/unit-1402/",
+  "unit": "1402",
+  "apn": "0253A043",
+  "block": "0253A",
+  "lot": "043",
+  "parcel": {
+    "building_area_sqft": 511,
+    "rooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 262675,
+    "assessed_improvement_value": 262675,
+    "last_sale_date": "2009-11-05"
+  },
+  "permits": [
+    {
+      "number": "201001255274",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-01-25",
+      "status_date": "2010-12-30",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "one unit on the 14th floor. remodel kitchen and closet. non structural wall removal.new cabinets, countertops, flooring and energy compliant lighting.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200805272879",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-05-27",
+      "status_date": "2009-03-10",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "work @ one unit only. kitchen & bathroom remodel. kitchen. remove & replace cabinets. all appliances & fixtures to remain in (e) location. bathroom: install pressure balance valve. remove & replace vanity same location (install shutt off valve for unit) install new tile over existing tub.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0253A043&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0253A&unit=1402",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

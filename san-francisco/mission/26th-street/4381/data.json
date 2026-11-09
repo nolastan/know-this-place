@@ -1,0 +1,137 @@
+{
+  "address": "4381 26th Street, San Francisco, CA 94131",
+  "path": "/san-francisco/mission/26th-street/4381/",
+  "apn": "6561021",
+  "block": "6561",
+  "lot": "021",
+  "eas_baseid": "402387",
+  "coordinates": {
+    "lat": 37.747614,
+    "lng": -122.437718
+  },
+  "parcel": {
+    "year_built": 2006,
+    "units": 1,
+    "stories": 3,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2988,
+    "building_area_sqft": 3112,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 4381 26TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 3010000,
+    "assessed_improvement_value": 1290000,
+    "last_sale_date": "2024-09-04"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "2006",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201312204710",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-12-20",
+      "status_date": "2013-12-20",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "remove 3' partition non bearing wall, wall location is lined up under existing steel beam. wall framed in 2x6 doug fir, pertition only on 2nd story floor, applicant is lic contractor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200405254740",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "2004-05-25",
+      "status_date": "2006-08-24",
+      "estimated_cost": 408542,
+      "revised_cost": 408542,
+      "description": "erect a three story single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200405254745",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "2004-05-25",
+      "status_date": "2006-08-24",
+      "description": "demolish a one story single family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2004–2013",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=26TH&street_type=ST&address_number=4381",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6561021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6561&lot=021",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6561021",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2005-03-03",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 3 March 2005",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/57minutesofsanfran2005san/page/n131/mode/1up",
+      "retrieved": "2026-11-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2005-03-03",
+      "kind": "planning decision",
+      "description": "The City Planning Commission did not take discretionary review and approved the demolition of an existing single-family dwelling at 4381 26th Street.",
+      "source": "sf-planning-commission-minutes-2005-03-03"
+    },
+    {
+      "date": "2005-03-03",
+      "kind": "occupancy",
+      "description": "An existing single-family dwelling stood at the property.",
+      "source": "sf-planning-commission-minutes-2005-03-03"
+    },
+    {
+      "date": "2005-03-03",
+      "kind": "planning decision",
+      "description": "The City Planning Commission did not take discretionary review and approved the new construction of a three-story, single-family house at 4381 26th Street.",
+      "source": "sf-planning-commission-minutes-2005-03-03"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "address": "1523 21st Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/21st-avenue/1523/",
+  "apn": "1867003",
+  "block": "1867",
+  "lot": "003",
+  "eas_baseid": "321218",
+  "coordinates": {
+    "lat": 37.759237,
+    "lng": -122.479299
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1561,
+    "basement_area_sqft": 521,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1523 21ST                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 319342,
+    "assessed_improvement_value": 578078,
+    "last_sale_date": "1999-07-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200909187126",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-09-18",
+      "status_date": "2009-09-23",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection, for work approved under pa #200510175704. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200510175704",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-10-17",
+      "status_date": "2005-10-17",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revised approved app #200404191671 which is under construction",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200404191671",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2004-04-19",
+      "status_date": "2006-04-03",
+      "estimated_cost": 70000,
+      "revised_cost": 90000,
+      "description": "2-story rear addition:grd fl-2bedrm,2/fl-2bedrm&2 fullbaths,legality exist rms on grd/fl not incl on",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9924214",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-11-15",
+      "status_date": "2000-03-24",
+      "estimated_cost": 16000,
+      "description": "add one playrm 2 bedrm 1 full bathrm on (e) g/f",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=AVE&address_number=1523",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1867003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1867&lot=003",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1867003",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2005-02-10",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 10 February 2005",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/57minutesofsanfran2005san/page/n77/mode/1up",
+      "retrieved": "2026-11-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2005-02-10",
+      "kind": "occupancy",
+      "description": "An existing single-family dwelling stood at the property.",
+      "source": "sf-planning-commission-minutes-2005-02-10"
+    }
+  ]
+}

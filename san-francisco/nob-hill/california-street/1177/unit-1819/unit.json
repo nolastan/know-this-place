@@ -1,0 +1,80 @@
+{
+  "address": "1177 California Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/california-street/1177/unit-1819/",
+  "unit": "1819",
+  "apn": "0253A003",
+  "block": "0253A",
+  "lot": "003",
+  "parcel": {
+    "building_area_sqft": 1113,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 849438,
+    "assessed_improvement_value": 849438,
+    "last_sale_date": "2001-12-12"
+  },
+  "permits": [
+    {
+      "number": "201811054948",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-11-05",
+      "status_date": "2018-11-05",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "work in one unit: convert existing tub with shower head to shower enclosure. new isolation valves on supply lines, new bath fixtures and trim. install low flow toilets to replace existing (2) no structural work and no wall layout changes. building was built prior to year 1991.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200311079676",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-11-07",
+      "status_date": "2003-11-07",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew#200211070985,200010179300 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200211070985",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-11-07",
+      "status_date": "2002-11-07",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "replace tub w/washer-dryer (ventless), replace vanity. move partition wall (non-structural)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200210179300",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-10-17",
+      "status_date": "2002-10-17",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "kitchen remodel gut & replace appliances & cabinets,no structural work.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0253A003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0253A&unit=1819",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

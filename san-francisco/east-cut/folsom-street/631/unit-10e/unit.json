@@ -1,0 +1,35 @@
+{
+  "address": "631 Folsom Street, San Francisco, CA 94107",
+  "path": "/san-francisco/east-cut/folsom-street/631/unit-10e/",
+  "unit": "10E",
+  "apn": "3750655",
+  "block": "3750",
+  "lot": "655",
+  "parcel": {
+    "building_area_sqft": 906,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 584351,
+    "assessed_improvement_value": 584351,
+    "last_sale_date": "2016-12-23"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3750655&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3750&unit=10E",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

@@ -37,6 +37,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Los Palmos Drive](los-palmos-drive/) — 1 building, built 1948.
 - [Magellan Avenue](magellan-avenue/) — 1 building, built 1926; 1 in the Forest Hill Historic District.
 - [Maywood Drive](maywood-drive/) — 1 building, built 1927.
+- [Mendosa Avenue](mendosa-avenue/) — 1 building, built 1956; 1 in the Forest Hill Historic District.
 - [Merced Avenue](merced-avenue/) — 1 building, built 1922; 1 in the Forest Hill Historic District.
 - [Miraloma Drive](miraloma-drive/) — 1 building, built 1957.
 - [Miramar Avenue](miramar-avenue/) — 1 building, built 1932.

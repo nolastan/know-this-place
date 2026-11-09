@@ -1,0 +1,33 @@
+{
+  "address": "2626 Balboa Street, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/balboa-street/2626/unit-lot-030/",
+  "apn": "1570030",
+  "block": "1570",
+  "lot": "030",
+  "parcel": {
+    "building_area_sqft": 1176,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 73841,
+    "assessed_improvement_value": 378461
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1570030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1570&street_number=2626",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

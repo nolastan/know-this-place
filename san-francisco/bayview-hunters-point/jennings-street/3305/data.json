@@ -1,0 +1,105 @@
+{
+  "address": "3305 Jennings Street, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/jennings-street/3305/",
+  "apn": "4993045",
+  "block": "4993",
+  "lot": "045",
+  "eas_baseid": "505588",
+  "coordinates": {
+    "lat": 37.71921,
+    "lng": -122.395478
+  },
+  "parcel": {
+    "lot_area_sqft": 1250,
+    "lot_depth_ft": 50,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Residential",
+    "construction_type_code": "NA",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview Heights",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "3305A3305 JENNINGS            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 13257
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202209263119",
+      "type": "new construction wood frame",
+      "status": "issued",
+      "filed": "2022-09-26",
+      "status_date": "2024-06-11",
+      "estimated_cost": 750000,
+      "revised_cost": 750000,
+      "description": "(parcel a) - to construct a type v, 3-story, 2 dwelling units building. 6/03/2024: per dpw lot subdivision, add new addresses 3305, 3305a jennings street to new bldg #202209263119 wf",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200407098438",
+      "type": "new construction wood frame",
+      "status": "cancelled",
+      "filed": "2004-07-09",
+      "status_date": "2007-12-04",
+      "estimated_cost": 350000,
+      "description": "erect a 3-story single family type-v residential structure",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JENNINGS&street_type=ST&address_number=3305",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4993045&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4993&lot=045",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4993045",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2005-01-13",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 13 January 2005",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/57minutesofsanfran2005san/page/n29/mode/1up",
+      "retrieved": "2026-11-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2005-01-13",
+      "kind": "occupancy",
+      "description": "A vacant lot stood at the property.",
+      "source": "sf-planning-commission-minutes-2005-01-13"
+    },
+    {
+      "date": "2005-01-13",
+      "kind": "planning decision",
+      "description": "The City Planning Commission took discretionary review and approved the proposed project requiring two eight-foot garage doors with a foot of separation rather than the proposed single 16-foot wide garage door.",
+      "source": "sf-planning-commission-minutes-2005-01-13"
+    }
+  ]
+}

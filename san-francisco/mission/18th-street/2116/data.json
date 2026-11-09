@@ -1,0 +1,179 @@
+{
+  "address": "2116 18th Street, San Francisco, CA 94107",
+  "path": "/san-francisco/mission/18th-street/2116/",
+  "apn": "4010021",
+  "block": "4010",
+  "lot": "021",
+  "eas_baseid": "367266",
+  "coordinates": {
+    "lat": 37.762372,
+    "lng": -122.403755
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 1875,
+    "building_area_sqft": 3093,
+    "basement_area_sqft": 700,
+    "lot_depth_ft": 75,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Potrero Hill",
+    "property_location_raw": "0000 2116 18TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1342849,
+    "assessed_improvement_value": 1009225,
+    "last_sale_date": "2000-11-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201706219985",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-06-21",
+      "status_date": "2017-06-21",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "replace 6 visible windows w/marvin wood 4 non-visible w/wood clad/vinyl in rear. no size change/ u-factor <.32",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200705221999",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-05-22",
+      "status_date": "2007-06-11",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "submittal of as builts to approved permit app# 200605111373-reflecting modifications to glazing and glass block at upper most story, changes to stairs and guardrail",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200605111373",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2006-05-11",
+      "status_date": "2007-06-08",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "renewal of expire pa# 2002/10/03/8088. work never started. addition of partial 3 story incluidng interior stairwell to addition, which includes an office, deck & unconditional space.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200210038088",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2002-10-03",
+      "status_date": "2007-06-08",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "addition of partial 3rd story, including sun room, bathroom, rear deck & new interior stairwell.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9110386",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-06-13",
+      "status_date": "1991-10-13",
+      "estimated_cost": 3870,
+      "description": "install stair rail system, 2 newal posts",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9003319",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-02-21",
+      "status_date": "1991-10-25",
+      "estimated_cost": 400,
+      "description": "install hand rail first floor to basement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8407998",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-07-25",
+      "status_date": "1985-07-24",
+      "estimated_cost": 1,
+      "description": "remodel interior, revision to application 8401904",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8401904",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-02-22",
+      "status_date": "1985-10-03",
+      "estimated_cost": 40000,
+      "description": "rear addition remodel up date kitchen",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=ST&address_number=2116",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4010021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4010&lot=021",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4010021",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2004-01-22",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 22 January 2004",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/55minutesofsanfran2004san/page/n59/mode/1up",
+      "retrieved": "2026-11-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2004-01-22",
+      "kind": "planning decision",
+      "description": "The City Planning Commission did not take discretionary review and approved the project to add a 300-square-foot vertical addition to the existing dwelling unit.",
+      "source": "sf-planning-commission-minutes-2004-01-22"
+    },
+    {
+      "date": "2004-01-22",
+      "kind": "occupancy",
+      "description": "An existing dwelling unit stood at the property.",
+      "source": "sf-planning-commission-minutes-2004-01-22"
+    }
+  ]
+}

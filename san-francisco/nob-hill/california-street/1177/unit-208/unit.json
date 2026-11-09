@@ -1,0 +1,75 @@
+{
+  "address": "1177 California Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/california-street/1177/unit-208/",
+  "unit": "208",
+  "apn": "0253A238",
+  "block": "0253A",
+  "lot": "238",
+  "parcel": {
+    "building_area_sqft": 794,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 326500,
+    "assessed_improvement_value": 326500,
+    "last_sale_date": "2015-09-22"
+  },
+  "permits": [
+    {
+      "number": "201604215384",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-04-21",
+      "status_date": "2016-05-10",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "to complete work and obtain final inspection for work approved under pa #2014-01-30-7422.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201511051878",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-11-05",
+      "status_date": "2016-05-10",
+      "estimated_cost": 13500,
+      "revised_cost": 13500,
+      "description": "install 36\" door in partition wall for bathroom access, remove tub and tile for stading shower, relocate outlet for gfci",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201401307422",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-01-30",
+      "status_date": "2016-05-10",
+      "estimated_cost": 6300,
+      "revised_cost": 15173,
+      "description": "work on 2nd floor one unit only. kitchen remodel, plumbing isolation valves, cabs & counter tops. no walls moved, removed or added. al layout to remain unchanged.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2014–2016",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0253A238&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0253A&unit=208",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

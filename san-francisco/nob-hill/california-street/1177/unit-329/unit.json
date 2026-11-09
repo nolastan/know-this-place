@@ -1,0 +1,75 @@
+{
+  "address": "1177 California Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/california-street/1177/unit-329/",
+  "unit": "329",
+  "apn": "0253A233",
+  "block": "0253A",
+  "lot": "233",
+  "parcel": {
+    "building_area_sqft": 1089,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 540827,
+    "assessed_improvement_value": 580538,
+    "last_sale_date": "2014-08-07"
+  },
+  "permits": [
+    {
+      "number": "201712126268",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-12-12",
+      "status_date": "2018-04-11",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "fa for one unit: remove & re-install (2) ceiling mount speaker, same locations",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201512306125",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-12-30",
+      "status_date": "2017-07-03",
+      "estimated_cost": 90000,
+      "revised_cost": 90000,
+      "description": "revision to 201505267146: new contractor and architect from previous plans. this permit is to document the as-built conditions of one unit. pa 2015-0526-7146 was issued and received a final inspection. however no permit was issued to document the changes to the layout of unit and replacement of",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201505267146",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-05-26",
+      "status_date": "2017-02-17",
+      "estimated_cost": 61880,
+      "revised_cost": 61880,
+      "description": "remodel existing 884 sq ft 2 story condo. replace flooring, remodek kitchen, baths, alter approx 30 lin ft of non structural walls, remove existing closet and fireplace",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "2015–2017",
+    "shown_on_page": 3,
+    "note": "4 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0253A233&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0253A&unit=329",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

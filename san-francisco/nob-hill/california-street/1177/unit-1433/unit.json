@@ -1,0 +1,47 @@
+{
+  "address": "1177 California Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/california-street/1177/unit-1433/",
+  "unit": "1433",
+  "apn": "0253A055",
+  "block": "0253A",
+  "lot": "055",
+  "parcel": {
+    "building_area_sqft": 756,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 374400,
+    "assessed_improvement_value": 249600,
+    "last_sale_date": "2002-06-20"
+  },
+  "permits": [
+    {
+      "number": "201210222548",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-10-22",
+      "status_date": "2013-03-05",
+      "estimated_cost": 24000,
+      "revised_cost": 24000,
+      "description": "removal of existing wall cabinets & base cabinets, install new cabinets, install 2 additional gfi outlets on backspash & sidesplash, install isolation valves for hot & cold waterline, tiling of backsplash & floor, granite counter top w/undermount sink, install garbage disposal/airgap, dishwasher,ran",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0253A055&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0253A&unit=1433",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

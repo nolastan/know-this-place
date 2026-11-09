@@ -13,6 +13,7 @@ The city's Lakeshore analysis neighborhood, in the south-western corner of San F
 - [Holloway Avenue](holloway-avenue/) — 1 building.
 - [Ocean Avenue](ocean-avenue/) — 1 building, built 1941.
 - [Skyline Boulevard](skyline-boulevard/) — 1 building, built 1920.
+- [Thomas More Way](thomas-more-way/) — 1 building, built 1954; 1 in the Brotherhood Way Historic District.
 - [Varela Avenue](varela-avenue/) — 1 building, built 2020; 1 in the Parkmerced Historic District.
 - [Winston Drive](winston-drive/) — 1 building.
 - [Zoo Road](zoo-road/) — 1 building.

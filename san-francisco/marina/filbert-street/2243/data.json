@@ -1,0 +1,151 @@
+{
+  "address": "2243–2245 Filbert Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/filbert-street/2243/",
+  "apn": "0534033",
+  "block": "0534",
+  "lot": "033",
+  "eas_baseid": "451744",
+  "coordinates": {
+    "lat": 37.797645,
+    "lng": -122.43638
+  },
+  "address_range": "2243–2245",
+  "street_numbers_on_parcel": [
+    "2243",
+    "2245"
+  ],
+  "parcel": {
+    "year_built": 1905,
+    "units": 2,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 6,
+    "lot_area_sqft": 3437.5,
+    "building_area_sqft": 4296,
+    "lot_depth_ft": 37.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Cow Hollow",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "2245 2243 FILBERT             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 287482,
+    "assessed_improvement_value": 1091270,
+    "last_sale_date": "1987-10-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1905",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200906160545",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-06-16",
+      "status_date": "2009-08-17",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew pa# 2003/05/28/5693 to obtain final inspection. all work has been completed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200305285693",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2003-05-28",
+      "status_date": "2006-11-16",
+      "estimated_cost": 300000,
+      "revised_cost": 300000,
+      "description": "rebuild back stair, remodel & additions to 3rd story & structural work associated with it",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9806400",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-04-14",
+      "status_date": "2001-12-12",
+      "estimated_cost": 6590,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8813540",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-09-09",
+      "status_date": "1988-11-10",
+      "estimated_cost": 5000,
+      "description": "renovate kitchen pantry to new bathrm @ 2nd fl",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8812641",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-08-25",
+      "status_date": "1988-11-10",
+      "estimated_cost": 3500,
+      "description": "replace kitchen cabinets, sink, faucet, windows & counter",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FILBERT&street_type=ST&address_number=2243",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0534033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0534&lot=033",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0534033",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2004-04-08",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 8 April 2004",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/55minutesofsanfran2004san/page/n218/mode/1up",
+      "retrieved": "2026-11-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2004-04-08",
+      "kind": "occupancy",
+      "description": "A two-unit building stood at the property.",
+      "source": "sf-planning-commission-minutes-2004-04-08"
+    },
+    {
+      "date": "2004-04-08",
+      "kind": "planning decision",
+      "description": "The City Planning Commission did not take discretionary review and approved the project to expand the existing third floor and demolish the existing rear stairs and construct new rear stairs with decks.",
+      "source": "sf-planning-commission-minutes-2004-04-08"
+    }
+  ]
+}

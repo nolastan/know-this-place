@@ -1,0 +1,65 @@
+{
+  "address": "2445 Clement Street, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/clement-street/2443/unit-2445/",
+  "apn": "1457051",
+  "block": "1457",
+  "lot": "051",
+  "parcel": {
+    "building_area_sqft": 2084
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 645162,
+    "assessed_improvement_value": 430107,
+    "last_sale_date": "2008-10-08"
+  },
+  "permits": [
+    {
+      "number": "202302222409",
+      "type": "sign - erect",
+      "status": "issued",
+      "filed": "2023-02-22",
+      "status_date": "2023-02-24",
+      "estimated_cost": 600,
+      "revised_cost": 600,
+      "description": "install (1) non illuminated double faced blade sign: \"seaside kids dental\" 24\" x 24\"",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202302222408",
+      "type": "sign - erect",
+      "status": "issued",
+      "filed": "2023-02-22",
+      "status_date": "2023-02-24",
+      "estimated_cost": 400,
+      "revised_cost": 400,
+      "description": "install (1) non illuminated single faced wall sign: \"seaside kids dental\" 108\" x 14.5\"",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201703272371",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2017-03-27",
+      "status_date": "2026-01-09",
+      "estimated_cost": 800,
+      "revised_cost": 0,
+      "description": "remove fire sprinkler head inside of elevator machine room (section 903.3.1.1.1 exempt #5 sfbc); remove fire alarm heat detector; modify the electrical system to eliminate the function of shunt trip power breaker",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1457051&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1457&street_number=2445",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

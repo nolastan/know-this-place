@@ -1,0 +1,34 @@
+{
+  "address": "2344 19th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/west-of-twin-peaks/19th-avenue/2350/unit-2344/",
+  "apn": "2347040",
+  "block": "2347",
+  "lot": "040",
+  "parcel": {
+    "building_area_sqft": 2197,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 794844,
+    "assessed_improvement_value": 794844,
+    "last_sale_date": "2021-07-14"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2347040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2347&street_number=2344",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "address": "261 26th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/seacliff/26th-avenue/261/unit-1/",
+  "unit": "1",
+  "apn": "1386078",
+  "block": "1386",
+  "lot": "078",
+  "parcel": {
+    "building_area_sqft": 2245,
+    "rooms": 8,
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "basement_area_sqft": 588
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 962977,
+    "assessed_improvement_value": 976810,
+    "last_sale_date": "2015-06-10"
+  },
+  "permits": [
+    {
+      "number": "201706018096",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-06-01",
+      "status_date": "2017-08-29",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "#1 -install wet bar @ ground floor",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1386078&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1386&unit=1",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

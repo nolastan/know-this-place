@@ -1,0 +1,46 @@
+{
+  "address": "1177 California Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/california-street/1177/unit-1525/",
+  "unit": "1525",
+  "apn": "0253A037",
+  "block": "0253A",
+  "lot": "037",
+  "parcel": {
+    "building_area_sqft": 653,
+    "rooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 584513,
+    "assessed_improvement_value": 389674,
+    "last_sale_date": "2021-06-01"
+  },
+  "permits": [
+    {
+      "number": "200807015769",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-07-01",
+      "status_date": "2008-07-01",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "this permit is a revision to pa#200804300937 to correct unit number. work is taking place in one unit and not one unit as incorrectly stated on pa#200804300937. no work under this permit.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0253A037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0253A&unit=1525",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

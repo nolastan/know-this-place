@@ -1,0 +1,177 @@
+{
+  "address": "425 Mason Street, San Francisco, CA 94102",
+  "path": "/san-francisco/tenderloin/mason-street/425/",
+  "apn": "0306002",
+  "block": "0306",
+  "lot": "002",
+  "eas_baseid": "281437",
+  "coordinates": {
+    "lat": 37.787503,
+    "lng": -122.410199
+  },
+  "parcel": {
+    "year_built": 1922,
+    "stories": 7,
+    "lot_area_sqft": 4647,
+    "building_area_sqft": 36720,
+    "use": "Commercial Office",
+    "property_class": "Office",
+    "construction_type_code": "NA",
+    "zoning": "C3G",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Union Square",
+    "analysis_neighborhood": "Tenderloin",
+    "property_location_raw": "0000 0425 MASON               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 12866741,
+    "assessed_improvement_value": 6928243,
+    "last_sale_date": "2019-12-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 11 Individual, Article 11 Conservation District, Historic Survey Result",
+    "yearbuilt": "1922",
+    "survey_name": "SAN FRANCISCO WATER DEPARTMENT",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Kearny-Market-Mason-Sutter Conservation District",
+    "california_register_status": "Not listed",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 11 conservation district",
+    "local_landmark_protection": true,
+    "period_of_significance": "N/A",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202008272772",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2020-08-27",
+      "status_date": "2020-08-27",
+      "estimated_cost": 2000000,
+      "revised_cost": 6000000,
+      "description": "new opening in 1st fl for natural light & circulation. (n) primary egress stair. expand (e) mezzanine area. reopen (e) openings along derby st. replace storefront windows. renovate (e) rooftop lounge area & roof deck/garden. (n) restrooms & kitchnettes. legalize roof deck a-2 occupancy.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201909131573",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2019-09-13",
+      "status_date": "2019-12-20",
+      "estimated_cost": 168000,
+      "description": "replace all (e) windows on levels 2-7 in kind within (e) opening. full bldg renovation permit is under appln #201702219754. lobby & roof windows replace uner minor permit to alter #2016005799pta",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201702219754",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2017-02-21",
+      "status_date": "2020-01-16",
+      "estimated_cost": 308000,
+      "revised_cost": 4501350,
+      "description": "change of use. convert vacant office building into a hotel with bar",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201109154661",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2011-09-15",
+      "status_date": "2026-01-09",
+      "estimated_cost": 8000,
+      "revised_cost": 0,
+      "description": "installation of pole on sidewalk for muni",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201009130764",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2010-09-13",
+      "status_date": "2026-01-09",
+      "estimated_cost": 380160,
+      "revised_cost": 0,
+      "description": "work pertains to elevator controls inside 2-elevators, \"a\" & \"b\" & in ea. lobby. this is an upgrade to a destination base control system that conforms w/ab-090 with the exceptiion of the color of the buttom per section 1.c.2.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201004301460",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2010-04-30",
+      "status_date": "2011-01-05",
+      "estimated_cost": 55000,
+      "revised_cost": 60000,
+      "description": "installation of a new fire alarm control panel ( 4,100u). the new fire alarm voice evacuation system shall consist of 12 smoke detectors, 18 pull stations, 40 speaker/strobes, 2 iam's, 2 ciam's and 2 duct detectors with indicator.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MASON&street_type=ST&address_number=425",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0306002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0306&lot=002",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0306002",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41019909720085%2037.78750286254869)%27)",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2005-06-16",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 16 June 2005",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/57minutesofsanfran2005san/page/n380/mode/1up",
+      "retrieved": "2026-11-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2005-06-16",
+      "kind": "planning decision",
+      "description": "The City Planning Commission approved the zoning map amendment reclassifying 425 Mason Street from P (Public) to C-3-G (Downtown General Commercial) zoning, with CEQA findings.",
+      "source": "sf-planning-commission-minutes-2005-06-16"
+    },
+    {
+      "date": "2005-06-16",
+      "kind": "occupancy",
+      "description": "A vacant, eight-story office building stood at the property.",
+      "source": "sf-planning-commission-minutes-2005-06-16"
+    },
+    {
+      "date": "2005-06-16",
+      "kind": "planning decision",
+      "description": "The City Planning Commission adopted findings of consistency with the General Plan for the reclassification of 425 Mason Street from P (Public) to C-3-G (Downtown General Commercial) zoning.",
+      "source": "sf-planning-commission-minutes-2005-06-16"
+    }
+  ]
+}

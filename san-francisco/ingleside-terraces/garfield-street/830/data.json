@@ -1,0 +1,154 @@
+{
+  "address": "830 Garfield Street, San Francisco, CA 94132",
+  "path": "/san-francisco/ingleside-terraces/garfield-street/830/",
+  "apn": "6997025",
+  "block": "6997",
+  "lot": "025",
+  "eas_baseid": "411243",
+  "coordinates": {
+    "lat": 37.719868,
+    "lng": -122.470435
+  },
+  "parcel": {
+    "year_built": 1939,
+    "units": 1,
+    "stories": 1,
+    "rooms": 9,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2137,
+    "basement_area_sqft": 962,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Merced Heights",
+    "analysis_neighborhood": "Oceanview/Merced/Ingleside",
+    "property_location_raw": "0000 0830 GARFIELD            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 119464,
+    "assessed_improvement_value": 295537
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1939",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201306179656",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-06-17",
+      "status_date": "2013-08-08",
+      "estimated_cost": 1,
+      "revised_cost": 2000,
+      "description": "revise app# 201304295634. change layout of bedroom & bathroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201304295634",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-04-29",
+      "status_date": "2013-08-08",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "convert playroom to office, study & storage. convert storage to laundry $ a full bath on ground fl. relocate kitchen, convert (e) kitchen to bedroom, remove stair on 2nd fl.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200509203424",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-09-20",
+      "status_date": "2005-10-28",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew 200412242155 for final inspection only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200509203427",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-09-20",
+      "status_date": "2005-10-28",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to ground floor plan of approved building permit applications 200309164881, 200412242155",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200412242155",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-12-24",
+      "status_date": "2005-10-28",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "revision to pa 200309164881, relocate inside stairs, add 1 bath to first fl.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200309164881",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2003-09-16",
+      "status_date": "2005-10-28",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "single family residence horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GARFIELD&street_type=ST&address_number=830",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6997025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6997&lot=025",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6997025",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2004-02-26",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 26 February 2004",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/55minutesofsanfran2004san/page/n125/mode/1up",
+      "retrieved": "2026-11-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2004-02-26",
+      "kind": "occupancy",
+      "description": "A single-family dwelling stood at the property.",
+      "source": "sf-planning-commission-minutes-2004-02-26"
+    }
+  ]
+}

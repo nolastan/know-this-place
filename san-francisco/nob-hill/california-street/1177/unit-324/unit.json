@@ -1,0 +1,58 @@
+{
+  "address": "1177 California Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/california-street/1177/unit-324/",
+  "unit": "324",
+  "apn": "0253A230",
+  "block": "0253A",
+  "lot": "230",
+  "parcel": {
+    "building_area_sqft": 1653,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 612000,
+    "assessed_improvement_value": 408000,
+    "last_sale_date": "2024-03-29"
+  },
+  "permits": [
+    {
+      "number": "202406285510",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-06-28",
+      "status_date": "2024-10-31",
+      "estimated_cost": 65000,
+      "revised_cost": 65000,
+      "description": "one unit- condo work to remodel (2) bathroom like for like. no wall removal . replace toilet, vanities and tiles. convert tub into walk in shower and adding laundry fixtures. no wall removal.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200701242430",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-01-24",
+      "status_date": "2007-03-21",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "remove bath tub, install a shower with new plumbing fixtures and tile. master bath only.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0253A230&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0253A&unit=324",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

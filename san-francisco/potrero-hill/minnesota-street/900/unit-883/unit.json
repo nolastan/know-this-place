@@ -1,0 +1,45 @@
+{
+  "address": "883 Minnesota Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/minnesota-street/900/unit-883/",
+  "apn": "4106033",
+  "block": "4106",
+  "lot": "033",
+  "parcel": {
+    "building_area_sqft": 1076,
+    "bedrooms": 1,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 435645,
+    "assessed_improvement_value": 435645,
+    "last_sale_date": "2009-08-31"
+  },
+  "permits": [
+    {
+      "number": "201501145736",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-01-14",
+      "status_date": "2015-02-23",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "replace (e) tub in bath 102 with new shower. new tile on floor and walls in baths 102 &103. remove (e) furred out wall adjacent to stairs. smooth trowel walls where inidicated.new recessed lighting in bathrooms; maher n/a",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4106033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4106&street_number=883",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

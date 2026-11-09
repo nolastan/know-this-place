@@ -1,0 +1,58 @@
+{
+  "address": "74 New Montgomery Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/new-montgomery-street/74/unit-701/",
+  "unit": "701",
+  "apn": "3707153",
+  "block": "3707",
+  "lot": "153",
+  "parcel": {
+    "building_area_sqft": 1203,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 873936,
+    "assessed_improvement_value": 582624,
+    "last_sale_date": "2023-04-18"
+  },
+  "permits": [
+    {
+      "number": "202312082163",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-12-08",
+      "status_date": "2024-01-16",
+      "estimated_cost": 1350,
+      "revised_cost": 1350,
+      "description": "relocate 1 ssp fire sprinker (bathroom) & walkin closet.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202307202628",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-07-20",
+      "status_date": "2024-11-22",
+      "estimated_cost": 235121,
+      "revised_cost": 235121,
+      "description": "remodel 1 unit in a 7 story residential apartment building. remodel kitchen and baths. minor alteration of some walls",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3707153&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3707&unit=701",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

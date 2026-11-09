@@ -1,0 +1,58 @@
+{
+  "address": "2145 California Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/california-street/2145/unit-5/",
+  "unit": "5",
+  "apn": "0651064",
+  "block": "0651",
+  "lot": "064",
+  "parcel": {
+    "building_area_sqft": 501,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 557134,
+    "assessed_improvement_value": 371422,
+    "last_sale_date": "2022-05-06"
+  },
+  "permits": [
+    {
+      "number": "201407020324",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-07-02",
+      "status_date": "2014-12-19",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "revision to pa 201403241476; new grade beam at rear, structural plans for work approved under pa 201403241476",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201403241476",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-03-24",
+      "status_date": "2014-04-01",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "interior remodel of a condominium dwelling one unit in a five unit ,3 story building work shall include kitchen, bathroom and living remodel, work shall also include the replacement of (e) exterior windows and doors not visible from the street.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0651064&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0651&unit=5",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

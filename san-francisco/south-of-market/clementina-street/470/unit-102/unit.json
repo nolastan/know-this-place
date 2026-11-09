@@ -1,0 +1,47 @@
+{
+  "address": "470 Clementina Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/clementina-street/470/unit-102/",
+  "unit": "102",
+  "apn": "3732221",
+  "block": "3732",
+  "lot": "221",
+  "parcel": {
+    "building_area_sqft": 560,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 393609,
+    "assessed_improvement_value": 393609,
+    "last_sale_date": "2013-09-24"
+  },
+  "permits": [
+    {
+      "number": "202601264536",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-01-26",
+      "status_date": "2026-01-26",
+      "estimated_cost": 15000,
+      "revised_cost": 20000,
+      "description": "one unit: repair ceiling drywall approx 36 sheets (5/8 gyp-x) and flooring in unit.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3732221&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3732&unit=102",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

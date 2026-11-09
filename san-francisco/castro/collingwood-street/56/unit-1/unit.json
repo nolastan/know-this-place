@@ -1,0 +1,35 @@
+{
+  "address": "58 Collingwood Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/collingwood-street/56/unit-1/",
+  "unit": "1",
+  "apn": "2648066",
+  "block": "2648",
+  "lot": "066",
+  "parcel": {
+    "building_area_sqft": 791,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 459692,
+    "assessed_improvement_value": 459692,
+    "last_sale_date": "2013-12-10"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2648066&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2648&unit=1",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

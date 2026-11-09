@@ -1,0 +1,95 @@
+{
+  "address": "1158 Haight Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/haight-street/1158/",
+  "block": "1235",
+  "eas_baseid": "298019",
+  "coordinates": {
+    "lat": 37.770885,
+    "lng": -122.441454
+  },
+  "parcel": {
+    "year_built": 1978,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "NA",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Haight Ashbury",
+    "analysis_neighborhood": "Haight Ashbury",
+    "units": 4
+  },
+  "condominium": {
+    "lots": [
+      "064",
+      "065",
+      "066",
+      "067"
+    ],
+    "method": "Proposed from the 2025 roll for block 1235: every condominium parcel the roll files under 1158 HAIGHT ST, and the unbroken run of lots beside parcel 1235064 on the same street with the same year built (1978). 4 lots, 064–067."
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1978",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Buena Vista North Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1870–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAIGHT&street_type=ST&address_number=1158",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 1235)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=1235&closed_roll_year=2025",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1235",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1235064",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44145358734198%2037.77088458239889)%27)",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2004-06-24",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 24 June 2004",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/55minutesofsanfran2004san/page/n399/mode/1up",
+      "retrieved": "2026-11-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2004-06-24",
+      "kind": "occupancy",
+      "description": "An existing three-story, four-unit building stood at the property.",
+      "source": "sf-planning-commission-minutes-2004-06-24"
+    }
+  ]
+}

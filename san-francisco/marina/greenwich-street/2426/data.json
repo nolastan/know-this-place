@@ -1,0 +1,78 @@
+{
+  "address": "2426 Greenwich Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/greenwich-street/2426/",
+  "block": "0512",
+  "eas_baseid": "283835",
+  "coordinates": {
+    "lat": 37.798693,
+    "lng": -122.439747
+  },
+  "parcel": {
+    "year_built": 2008,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "NA",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Cow Hollow",
+    "analysis_neighborhood": "Marina",
+    "units": 2
+  },
+  "condominium": {
+    "lots": [
+      "042",
+      "043"
+    ],
+    "method": "Proposed from the 2025 roll for block 0512: every condominium parcel the roll files under 2426 GREENWICH ST, and the unbroken run of lots beside parcel 0512042 on the same street with the same year built (2008) — street numbers 2426, 2428. 2 lots, 042–043."
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "2008",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GREENWICH&street_type=ST&address_number=2426",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 0512)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=0512&closed_roll_year=2025",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0512",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0512042",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2005-12-15",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 15 December 2005",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/58minutesofsanfran2005san/page/n319/mode/1up",
+      "retrieved": "2026-11-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2005-12-15",
+      "kind": "occupancy",
+      "description": "An existing two-story, single-family residence stood at the property.",
+      "source": "sf-planning-commission-minutes-2005-12-15"
+    }
+  ]
+}

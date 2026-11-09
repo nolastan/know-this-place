@@ -1,0 +1,135 @@
+{
+  "address": "252 Holyoke Street, San Francisco, CA 94134",
+  "path": "/san-francisco/portola/holyoke-street/252/",
+  "apn": "5976006",
+  "block": "5976",
+  "lot": "006",
+  "eas_baseid": "388476",
+  "coordinates": {
+    "lat": 37.728032,
+    "lng": -122.409567
+  },
+  "parcel": {
+    "year_built": 2010,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 5,
+    "bedrooms": 7,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 3105,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Portola",
+    "analysis_neighborhood": "Portola",
+    "property_location_raw": "0000 0252 HOLYOKE             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 807112,
+    "assessed_improvement_value": 345896,
+    "last_sale_date": "2010-09-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "2010",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201007307789",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-07-30",
+      "status_date": "2010-08-30",
+      "estimated_cost": 1,
+      "revised_cost": 2500,
+      "description": "revision per approved appl. 200505203045 pre reconfigure space layout per plan.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200505203042",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "2005-05-20",
+      "status_date": "2009-02-06",
+      "description": "relocate 2(existing)1906 refugee shacks (permit to move building #1808)(1 to the rear of 908 page st, 1 will be moved to out of the city) and demolish remaining additions per approved plans dated 3/6/08 bpa #2005/05/20/3045 approved by dcp (tim frye)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200505203045",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "2005-05-20",
+      "status_date": "2010-08-30",
+      "estimated_cost": 400000,
+      "revised_cost": 500000,
+      "description": "to erect two story single family dwelling.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200309195209",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2003-09-19",
+      "status_date": "2005-03-14",
+      "estimated_cost": 120000,
+      "description": "vertical & horizontal addition & infill south portion to full lot width",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "2003–2010",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HOLYOKE&street_type=ST&address_number=252",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5976006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5976&lot=006",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5976006",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2005-01-06",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 6 January 2005",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/57minutesofsanfran2005san/page/n6/mode/1up",
+      "retrieved": "2026-11-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2005-01-06",
+      "kind": "occupancy",
+      "description": "A single-family dwelling stood at the property.",
+      "source": "sf-planning-commission-minutes-2005-01-06"
+    }
+  ]
+}

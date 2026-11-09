@@ -1,0 +1,46 @@
+{
+  "address": "1177 California Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/california-street/1177/unit-1522/",
+  "unit": "1522",
+  "apn": "0253A034",
+  "block": "0253A",
+  "lot": "034",
+  "parcel": {
+    "building_area_sqft": 535,
+    "rooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 361929,
+    "assessed_improvement_value": 239311,
+    "last_sale_date": "2002-05-29"
+  },
+  "permits": [
+    {
+      "number": "200006142692",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2000-06-14",
+      "status_date": "2001-08-27",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "combine one unit w/1523/1524. #1522 shall be a mastr bedrm. remodel: foyer, walk-in closet & alcov",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0253A034&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0253A&unit=1522",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}
