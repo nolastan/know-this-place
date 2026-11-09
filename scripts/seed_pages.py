@@ -1635,7 +1635,7 @@ def indent_block(text: str, pad: str) -> str:
 
 PHOTO_KEYS = frozenset({
     "file", "width", "height", "title", "author", "author_url", "cropped",
-    "license", "license_url", "source_url", "contributed", "retrieved",
+    "license", "license_url", "source_url", "contributed", "own", "retrieved",
 })
 
 # The name the credit gives a photo's source, by host. A contributed photo,
@@ -1718,7 +1718,8 @@ def facade_media(rec: dict, label: str, cls: str = "media", indent: str = "",
         lazy = '' if "media-lift" in cls else ' loading="lazy"'
         inner = (f'  <img src="{esca(src)}"{size} alt="{esca("Photo of " + label)}"'
                  f'{lazy} decoding="async">')
-        if caption:
+        # The site's own photos (`"own": true`, Stan's) carry no credit line.
+        if caption and not photo.get("own"):
             inner += f'\n  <figcaption class="photo-credit">{photo_credit_html(photo)}</figcaption>'
     else:
         inner = ("  <div class=\"media-empty\">\n"

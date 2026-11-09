@@ -300,6 +300,10 @@ neighborhood hubs, because every one of them draws its picture through
   the check that it found them all. The `via` name comes from
   `seed_pages.PHOTO_SOURCES` by host, so an Unsplash or Pexels photo is
   credited to its own site rather than to Commons.
+- **Or the site's own** — a photo Stan took himself carries `"own": true` and
+  only `file`, `width`, `height` and `retrieved` (the day it was taken): no
+  author, no license, and no credit line under the picture. It is still cut,
+  scaled and stripped as above, with anyone recognisable cropped out.
 - **The building, not people**: a photo where a person can be recognised, a
   view *from* the place, a detail too close to say which building it is, or a
   picture of a different building of the same name is not used.
