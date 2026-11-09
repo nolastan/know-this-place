@@ -684,6 +684,18 @@ def retest(path: str) -> int:
         k = math.cos(math.radians(p[0]))
         v = (pt[1] - p[1]) * k * nx + (pt[0] - p[0]) * ny
         return (v > 0) == (c > 0)
+    def along(axis, p, outline, want):
+        # The parcel outline's span along the street, in feet from the node, in
+        # the record's direction; None where the street runs across it.
+        cx, cy = COMPASS.get((want or "").upper(), (0, 0))
+        c = (cx * axis[0] + cy * axis[1]) / (math.hypot(cx, cy) or 1)
+        if abs(c) < 0.3:
+            return None
+        s = 1 if c > 0 else -1
+        k = math.cos(math.radians(p[0]))
+        d = [s * ((q[0] - p[1]) * k * axis[0] + (q[1] - p[0]) * axis[1]) * 364000
+             for q in outline]
+        return min(d), max(d)
     bad, counts = 0, {}
     for f in rows:
         x, res = f.get("extra") or {}, f["resolution"]
@@ -692,11 +704,12 @@ def retest(path: str) -> int:
         apn = res.get("apn")
         here = centroid(apn, shapes, None) if apn else None
         verdict, why = "untested", ""
-        if not (f.get("street_name") and b and (x.get("corner_quad") or x.get("side"))):
+        if not (f.get("street_name") and b):
             # Hand placements written before the structured fields existed keep
             # the corner only in address_as_written; 1911-1913 keep only
             # cross_street_as_printed. Nothing here can test them, and a bare
             # "untested" read as a pass on 1910's real-estate batch (all 41).
+            # Two streets and no quadrant or side still get the reach test.
             counts["no fields"] = counts.get("no fields", 0) + 1
             continue
         hit = network_corner(streets.get(a) or [], streets.get(b) or [], here) if here else None
@@ -717,6 +730,28 @@ def retest(path: str) -> int:
             if v is not None:
                 verdict = "ok" if v else "DISAGREES"
                 why = f"not on the {x['side']} side of {a}"
+            span = along(da, p, shapes[apn][1], x.get("direction")) \
+                if verdict == "ok" and x.get("offset_ft") is not None else None
+            if span:
+                # The record measures from the cross street's line, the node is
+                # its centreline: allow 20-65 ft for half a street's width, and
+                # the record's own frontage (25 ft when it gives none).
+                lo, hi = span
+                off = float(x["offset_ft"])
+                lot = x.get("lot_ft")  # a number, or [frontage, depth]
+                front = float((lot[0] if isinstance(lot, list) else lot) or 25)
+                if hi < off + 20 or lo > off + 65 + front:
+                    verdict = "DISAGREES"
+                    why = (f"frontage {lo:.0f}-{hi:.0f} ft from the node, "
+                           f"record's lot {off:g} ft {x['direction']} of {b}")
+        elif hit and not x.get("side") and x.get("offset_ft") is None:
+            # "at Sixteenth and Valencia": two streets and no quadrant. All
+            # that can be asked is whether the parcel is at that corner.
+            p = hit[0]
+            k = math.cos(math.radians(p[0]))
+            reach = min(math.hypot((q[0] - p[1]) * k, q[1] - p[0]) for q in shapes[apn][1]) * 364000
+            verdict = "ok" if reach <= 100 else "DISAGREES"
+            why = f"outline {reach:.0f} ft from the corner" if reach > 100 else ""
         counts[verdict] = counts.get(verdict, 0) + 1
         if verdict == "DISAGREES":
             bad += 1
@@ -727,9 +762,9 @@ def retest(path: str) -> int:
                 print(f"    twin: {t}")
     print(f"{len(rows)} placements: " + ", ".join(f"{v} {k}" for k, v in sorted(counts.items())))
     if counts.get("no fields"):
-        print(f"  {counts['no fields']} carry no street_name + extra.cross_street_name + "
-              "extra.corner_quad or extra.side, so were not tested: add those fields from "
-              "the record before reading this as a pass")
+        print(f"  {counts['no fields']} carry no street_name + extra.cross_street_name, "
+              "so were not tested: add those fields (and extra.corner_quad or extra.side) "
+              "from the record before reading this as a pass")
     return 1 if bad else 0
 
 

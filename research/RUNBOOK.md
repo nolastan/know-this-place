@@ -618,13 +618,15 @@ inference and anything on a street the dossier flags as renumbered.
 **Corner placements get a mechanical check too.** `python3
 research/tools/corner.py --retest <findings-file>` re-tests every resolved
 corner.py placement in a batch against the DPW street centrelines: quadrant
-and reach for a corner, side for a line. Each `DISAGREES` is a placement to
+and reach for a corner, side and offset for a line (`offset_ft`,
+`direction`), reach alone for two streets and no quadrant. Each `DISAGREES` is a placement to
 re-read against the page's own record and the parcels at the corner, not an
 automatic retraction. One the re-read confirms comes off the page:
 `resolution.status` back to `unresolved` with the reason in its `note`, and
 `publish` to `declined` with "Removed from the page on <date>".
-It tests only entries carrying `street_name`, `extra.cross_street_name` and
-`extra.corner_quad` or `extra.side`; anything else it counts as `no fields`.
+It tests only entries carrying `street_name` and `extra.cross_street_name`
+(plus `extra.corner_quad` or `extra.side` for more than reach); anything else
+it counts as `no fields`.
 **Fill those from the record before reading a re-test as a pass**, and write
 them at placement time so the next re-test needs no filling.
 

@@ -8,7 +8,7 @@
   "examined": 84,
   "mentions": 393,
   "remaining": "July to December 1910 (26 Saturdays, curiv_klamath_ver01 from July, curiv_mecca_ver01 and curiv_needles_ver01) is on disk in a session that fetched it and unread. In January to June, the building-contract and permit paragraphs that name only a private owner and no architect (roughly 150 corner and offset entries) were not taken; they are the next corner.py batch. The Real Estate Transactions lists are metes-and-bounds and were not read for entries.",
-  "note": "393 numbered-address mentions on the 84 pages, merged into 268 passages, and about 150 passages naming an architect or a corner, read one by one. About a third of the numbered mentions are brokers' and advertisers' own offices, and many are Oakland, Richmond, the peninsula or the Central Valley. 172 findings: 76 at a street number, 96 located by corner, offset or building name; 76 resolved (45 by hand), 96 unresolved, most because the building has been replaced and nothing of the period survives on the corner, or the number no longer exists; 73 published on 68 pages, 28 of them seeded; 3 declined as duplicates of what the page already carried. Re-tested 2026-11-07 with corner.py --retest: 35 of the 41 corner.py placements given street_name, extra.cross_street_name and extra.corner_quad or extra.side from the record (they had none) and all 35 agree with the DPW street network; the other 6 are placed by building name and name no quadrant. Nothing came off a page."
+  "note": "393 numbered-address mentions on the 84 pages, merged into 268 passages, and about 150 passages naming an architect or a corner, read one by one. About a third of the numbered mentions are brokers' and advertisers' own offices, and many are Oakland, Richmond, the peninsula or the Central Valley. 172 findings: 76 at a street number, 96 located by corner, offset or building name; 76 resolved (45 by hand), 96 unresolved, most because the building has been replaced and nothing of the period survives on the corner, or the number no longer exists; 73 published on 68 pages, 28 of them seeded; 3 declined as duplicates of what the page already carried. Re-tested 2026-11-07 with corner.py --retest: 35 of the 41 corner.py placements given street_name, extra.cross_street_name and extra.corner_quad or extra.side from the record (they had none) and all 35 agree with the DPW street network; the other 6 are placed by building name and name no quadrant. Nothing came off a page. Re-tested again 2026-11-08 with the reach check for 'at X and Y' records: 5 of those 6 given street_name and extra.cross_street_name from the record (0090, the hall 'on the site of the old one', has no corner); 4 within 100 ft of the corner, and 0081, the San Francisco Savings Union on 1 Grant, 135 ft from the one DPW node of Market, Grant and O'Farrell, in the middle of Market - kept, since Planning names the parcel the Savings Union branch, roll 1910. The offset check passes every offset entry: frontages begin 22-39 ft past the printed offset, half a cross street's width."
  },
  "findings": [
   {
@@ -2703,7 +2703,9 @@
    "extra": {
     "architect": "Crim & Scott",
     "lot_as_recorded": "100 feet square",
-    "record_date": "1910-01-08"
+    "record_date": "1910-01-08",
+    "cross_street_name": "VALENCIA",
+    "cross_street_type": "ST"
    },
    "citation": {
     "label": "The San Francisco Call, 8 January 1910, p. 17",
@@ -2728,7 +2730,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "16TH",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0078",
@@ -2739,7 +2743,9 @@
    "description": "The Union Trust Company's banking building: Clinton Day completed the plans for the banking-room interior.",
    "extra": {
     "architect_as_recorded": "Clinton Day (interior plans)",
-    "record_date": "1910-01-08"
+    "record_date": "1910-01-08",
+    "cross_street_name": "GRANT",
+    "cross_street_type": "AVE"
    },
    "citation": {
     "label": "The San Francisco Call, 8 January 1910, p. 17",
@@ -2765,7 +2771,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "MARKET",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0079",
@@ -2862,7 +2870,9 @@
    "description": "The San Francisco Savings Union's building, under construction to plans by Bliss & Faville: granite walls trimmed with bronze, a granite dome, and frontages on four streets, Grant Avenue, Market, O'Farrell and Bagley Place.",
    "extra": {
     "architect": "Bliss & Faville",
-    "record_date": "1910-01-15"
+    "record_date": "1910-01-15",
+    "cross_street_name": "OFARRELL",
+    "cross_street_type": "ST"
    },
    "citation": {
     "label": "The San Francisco Call, 15 January 1910, p. 17",
@@ -2887,7 +2897,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "GRANT",
+   "street_type": "AVE"
   },
   {
    "id": "sn85066387-1910-real-estate-0082",
@@ -3686,7 +3698,9 @@
    "description": "The First Baptist Church's new building was nearing completion outside: about $70,000, with a dome rising 90 feet above the sidewalk and an auditorium for about 1,200.",
    "extra": {
     "institution": "First Baptist Church",
-    "record_date": "1910-04-02"
+    "record_date": "1910-04-02",
+    "cross_street_name": "OCTAVIA",
+    "cross_street_type": "ST"
    },
    "citation": {
     "label": "The San Francisco Call, 2 April 1910, p. 22",
@@ -3711,7 +3725,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "WALLER",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0102",
@@ -3889,7 +3905,9 @@
    "extra": {
     "building_name_as_recorded": "Addison Head building",
     "lessee": "Barber Asphalt Paving Company",
-    "record_date": "1910-04-23"
+    "record_date": "1910-04-23",
+    "cross_street_name": "GRANT",
+    "cross_street_type": "AVE"
    },
    "citation": {
     "label": "The San Francisco Call, 23 April 1910, p. 16",
@@ -3914,7 +3932,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "POST",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0107",

@@ -2848,6 +2848,17 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   not the exit code, and make a placement's geometry machine-readable when it
   is written* — `--retest` now names the gap as `no fields`.
   ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **A line's offset is checkable; a multi-street node is not where it is
+  measured from.** `--retest` tested a line entry for its side of the street
+  only. It now also checks that the parcel's frontage overlaps the record's
+  lot: the node is the centreline crossing, so the frontage should begin half
+  a cross street's width past the printed offset — 22-39 ft on every 1910
+  real-estate offset entry. Records with two streets and no quadrant now get
+  the 100 ft reach test. *Where several streets meet in one DPW node on
+  Market (Third–Kearny–Geary; Grant–O'Farrell) the node sits about 100 ft off
+  the cross street's line, and a flag there is a re-read, not a verdict:*
+  701 Market's exact 75 ft Claus Spreckels lot puts 711 at 75 ft, as printed.
+  ([sources/loc-newspapers.md](sources/loc-newspapers.md))
 - **A bulk crawl of a walled host costs the one route that was open.** Mapping
   Chronicling America's reel folders one listing each (about 900 requests in
   a few minutes) drew a host-wide Cloudflare challenge, and the tarball

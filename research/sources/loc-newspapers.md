@@ -6,6 +6,23 @@
 >
 > - **Kind:** newspaper OCR corpus · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
+> - **Verified:** 2026-11-08 (a second pass over the same 1910
+  January–June real-estate batch, run before the 2026-11-07 pass merged;
+  merged onto it. `--retest` gained an **offset check** (a line entry's
+  parcel frontage must overlap the printed lot, allowing half a cross
+  street's width) and a **reach check** for two-street records with no
+  quadrant. On this batch: every offset entry's frontage begins 22-39 ft past
+  the printed offset; 5 of the 6 by-name placements given their two streets,
+  4 within 100 ft, and 0081, the Savings Union on 1 Grant, 135 ft from the one
+  DPW node of Market, Grant and O'Farrell — kept, Planning names the parcel
+  the Savings Union branch, roll 1910. Nothing off a page. Swept over the
+  1907–1910 contract batches: Market "75 / 275 ft SW of Third" flags (711,
+  735) are the Market–Third–Kearny–Geary node, which sits about 100 ft off
+  Third's line — 701's exact 75 ft Claus Spreckels lot puts 711 where printed
+  — and **two 1908 placements to re-read: 651 5th Avenue ("W line, 230 S of
+  Balboa") and 243 7th Avenue ("W line, 232:6 S of California")**, frontages
+  110 and 95 ft past the printed offset, whose `resolution.apn` (1639059,
+  1426061) is not the parcel their method names (1639012, 1426009).)
 > - **Verified:** 2026-11-07 (the 1910 January–June real-estate batch
   re-tested with `corner.py --retest`: its 41 corner.py placements were hand
   placements that kept the corner only in `address_as_written`, so the first
@@ -391,6 +408,12 @@ Saturdays, not 52. Three things differ from 1912:
   already crediting the same architect (3106 16th, 317 and 245 Leavenworth,
   3541 18th, 100 New Montgomery, 414 Mason, 524 Post, 1369 Hyde), which is the
   best check a corner placement gets.
+
+- **Re-tested again 2026-11-08, with the offset and reach checks:** nothing
+  moved. 0081, the Savings Union on 1 Grant, is 135 ft from the
+  Market–Grant–O'Farrell node, which DPW draws as one point in the middle of
+  Market — kept on Planning's SAVINGS UNION BRANCH, roll 1910, like the Claus
+  Spreckels Building at Market and Third.
 
 ### Cautions for the second half of 1910
 
@@ -1168,7 +1191,8 @@ December: 5,188 pages), on the 1907 method. January to March 1906 survives as on
   placements are re-tested** (2026-11-04: 11 retracted, 3 re-placed, see the 1907 section). **The 1909 lists'
   corner placements are re-tested** (2026-11-05: 7 retracted, 1 re-placed, see the 1909 section). **The 1910
   lists' corner placements are re-tested** (2026-11-06: 6 retracted, 2 re-placed, see the 1910 section). **The 1910 January–June real-estate
-  batch's placements are re-tested** (2026-11-07: 35 ok, 6 by name, none off a page — once its fields were filled; see the 1910 section). **Next:** the same
+  batch's placements are re-tested** (2026-11-07: 35 ok, 6 by name, none off a page — once its fields were filled; see the 1910 section; re-tested again 2026-11-08 with the new offset and reach checks: 40 ok or kept). **Next:** re-read 1908's 651 5th Avenue and 243 7th
+  Avenue (the offset check, see the 2026-11-08 Verified line); then the same
   `--retest` on the other three 1910 files (`h2-real-estate` — whose 0415, a December loan on the
   "northeast corner" of O'Farrell and Taylor, sits on 401 O'Farrell, the SW corner — `permits`, `offsets`), 1911, 1912 and 1913 (Feb/Jul–Dec) batches,
   one batch a run, each disagreement re-read before anything comes off a page — 1908's rate was 25
