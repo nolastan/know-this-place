@@ -85,8 +85,8 @@ sit in — the three it touched most, and how many in all.
 | `argonaut-sfhs/vol-32-no-1.json` | 15 | 20 KB | 1847–1951 | 7 | 7 | `castro`, `financial-district` |
 | `article-10-landmarks/batch-1-lm001-lm050.json` | 161 | 308 KB | 1782–1985 | 146 | 136 | `chinatown`, `nob-hill`, `tenderloin` +13 |
 | `article-10-landmarks/batch-2-lm051-lm100.json` | 169 | 319 KB | 1853–2023 | 161 | 153 | `pacific-heights`, `mission`, `nob-hill` +20 |
-| `article-10-landmarks/batch-3-lm101-lm200.json` | 232 | 452 KB | 1856–1991 | 217 | 212 | `financial-district`, `mission`, `tenderloin` +22 |
-| `article-10-landmarks/batch-4-lm201-lm250.json` | 190 | 385 KB | 1850–2019 | 181 | 178 | `golden-gate-park`, `mission`, `castro` +19 |
+| `article-10-landmarks/batch-3-lm101-lm200.json` | 232 | 453 KB | 1856–1991 | 217 | 212 | `financial-district`, `mission`, `tenderloin` +22 |
+| `article-10-landmarks/batch-4-lm201-lm250.json` | 190 | 386 KB | 1850–2019 | 181 | 178 | `golden-gate-park`, `mission`, `castro` +19 |
 | `article-10-landmarks/batch-5-lm251-lm300.json` | 819 | 1.6 MB | 1847–2022 | 718 | 643 | `castro`, `mission`, `pacific-heights` +27 |
 | `article-10-landmarks/batch-6-lm301-lm336.json` | 667 | 1.1 MB | 1849–2026 | 612 | 565 | `mission`, `marina`, `hayes-valley` +25 |
 | `celebrity-residence-guides/sftourismtips.json` | 31 | 47 KB | 1876–1996 | 29 | 27 | `haight-ashbury`, `pacific-heights`, `seacliff` +11 |
