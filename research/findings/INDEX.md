@@ -157,7 +157,7 @@ sit in — the three it touched most, and how many in all.
 | `sf-context-statements/biographies-j-l.json` | 125 | 264 KB | 1889–1990 | 108 | 94 | `pacific-heights`, `nob-hill`, `sunset-parkside` +21 |
 | `sf-context-statements/biographies-m-o.json` | 247 | 488 KB | 1880–1994 | 215 | 162 | `pacific-heights`, `nob-hill`, `west-of-twin-peaks` +28 |
 | `sf-context-statements/biographies-p-r.json` | 223 | 435 KB | 1884–1995 | 188 | 127 | `pacific-heights`, `north-beach`, `sunset-parkside` +23 |
-| `sf-context-statements/biographies-s-u.json` | 152 | 289 KB | 1897–2020 | 120 | 85 | `sunset-parkside`, `pacific-heights`, `mission` +23 |
+| `sf-context-statements/biographies-s-u.json` | 152 | 290 KB | 1897–2020 | 120 | 85 | `sunset-parkside`, `pacific-heights`, `mission` +23 |
 | `sf-context-statements/biographies-v-z.json` | 96 | 186 KB | 1875–1982 | 83 | 44 | `pacific-heights`, `nob-hill`, `south-of-market` +24 |
 | `sf-context-statements/carnegie-libraries.json` | 2 | 6 KB | 1890–1908 | 1 | 1 | `mission` |
 | `sf-context-statements/clubs-social-halls.json` | 53 | 103 KB | 1877–1984 | 45 | 38 | `nob-hill`, `chinatown`, `mission` +19 |
@@ -165,16 +165,16 @@ sit in — the three it touched most, and how many in all.
 | `sf-context-statements/early-residential-development.json` | 26 | 57 KB | 1852–1913 | 26 | 18 | `mission`, `noe-valley`, `portola` +8 |
 | `sf-context-statements/early-settlement-era-styles.json` | 32 | 73 KB | 1850–1924 | 30 | 29 | `mission`, `north-beach`, `south-of-market` +10 |
 | `sf-context-statements/earthquake-shacks.json` | 11 | 25 KB | 1906–2021 | 6 | 5 | `bernal-heights`, `north-beach`, `outer-richmond` +2 |
-| `sf-context-statements/flats-small-apartments-hcs.json` | 72 | 157 KB | 1915–1975 | 64 | 63 | `marina`, `inner-sunset`, `russian-hill` +15 |
+| `sf-context-statements/flats-small-apartments-hcs.json` | 72 | 158 KB | 1915–1975 | 64 | 63 | `marina`, `inner-sunset`, `russian-hill` +15 |
 | `sf-context-statements/japantown-hcs.json` | 125 | 243 KB | 1852–2009 | 85 | 85 | `pacific-heights`, `japantown`, `western-addition` +1 |
 | `sf-context-statements/large-apartment-hcs.json` | 89 | 202 KB | 1905–2024 | 81 | 67 | `pacific-heights`, `russian-hill`, `nob-hill` +13 |
-| `sf-context-statements/lgbtq-hcs.json` | 382 | 620 KB | 1872–2016 | 315 | 295 | `castro`, `mission`, `tenderloin` +24 |
+| `sf-context-statements/lgbtq-hcs.json` | 382 | 621 KB | 1872–2016 | 315 | 295 | `castro`, `mission`, `tenderloin` +24 |
 | `sf-context-statements/lgbtq-heritage-strategy.json` | 0 | 2 KB | — | 0 | 0 | — |
 | `sf-context-statements/market-octavia-district-records.json` | 434 | 917 KB | 1912–2010 | 370 | 370 | `hayes-valley`, `western-addition`, `castro` |
 | `sf-context-statements/market-octavia-hcs.json` | 496 | 888 KB | 1875–2007 | 430 | 425 | `mission`, `south-of-market`, `castro` +4 |
 | `sf-context-statements/market-octavia-survey-forms.json` | 473 | 1.0 MB | 1870–2010 | 385 | 378 | `hayes-valley`, `mission`, `castro` +3 |
 | `sf-context-statements/mission-dolores-hcs.json` | 83 | 126 KB | 2022 | 66 | 66 | `castro`, `mission` |
-| `sf-context-statements/modern-architecture-landscape.json` | 466 | 817 KB | 1907–1979 | 425 | 279 | `pacific-heights`, `presidio-heights`, `russian-hill` +31 |
+| `sf-context-statements/modern-architecture-landscape.json` | 466 | 818 KB | 1907–1979 | 425 | 279 | `pacific-heights`, `presidio-heights`, `russian-hill` +31 |
 | `sf-context-statements/modern-postmodern-styles.json` | 224 | 515 KB | 1902–2021 | 189 | 182 | `financial-district`, `south-of-market`, `east-cut` +29 |
 | `sf-context-statements/modernistic-styles.json` | 25 | 58 KB | 1924–1949 | 23 | 20 | `sunset-parkside`, `mission`, `east-cut` +10 |
 | `sf-context-statements/neighborhood-commercial-hcs.json` | 99 | 196 KB | 1873–2018 | 84 | 77 | `mission`, `pacific-heights`, `west-of-twin-peaks` +21 |
@@ -182,9 +182,9 @@ sit in — the three it touched most, and how many in all.
 | `sf-context-statements/north-beach-hcs.json` | 630 | 1.4 MB | 1860–2021 | 558 | 556 | `north-beach`, `chinatown`, `russian-hill` +3 |
 | `sf-context-statements/oceanside-hcs.json` | 32 | 75 KB | 1901–2010 | 20 | 20 | `sunset-parkside` |
 | `sf-context-statements/parkside-hcs.json` | 160 | 412 KB | 1892–2008 | 151 | 147 | `sunset-parkside`, `west-of-twin-peaks` |
-| `sf-context-statements/ppie-marina-hcs.json` | 109 | 268 KB | 1893–2022 | 99 | 97 | `marina`, `tenderloin`, `nob-hill` +1 |
+| `sf-context-statements/ppie-marina-hcs.json` | 109 | 269 KB | 1893–2022 | 99 | 97 | `marina`, `tenderloin`, `nob-hill` +1 |
 | `sf-context-statements/progressive-era-styles.json` | 69 | 152 KB | 1889–1936 | 64 | 63 | `sunset-parkside`, `pacific-heights`, `marina` +18 |
-| `sf-context-statements/russian-american-hcs.json` | 365 | 561 KB | 1852–2020 | 214 | 188 | `pacific-heights`, `inner-richmond`, `outer-richmond` +21 |
+| `sf-context-statements/russian-american-hcs.json` | 365 | 562 KB | 1852–2020 | 214 | 188 | `pacific-heights`, `inner-richmond`, `outer-richmond` +21 |
 | `sf-context-statements/russian-hill-hcs.json` | 109 | 255 KB | 1857–2006 | 67 | 57 | `russian-hill`, `pacific-heights`, `nob-hill` +5 |
 | `sf-context-statements/sexual-identity-subcultures.json` | 188 | 348 KB | 1929–1993 | 151 | 116 | `south-of-market`, `mission`, `north-beach` +6 |
 | `sf-context-statements/showplace-square-survey.json` | 941 | 1.8 MB | 1867–2011 | 869 | 589 | `mission`, `mission-bay`, `south-of-market` +1 |
