@@ -1,0 +1,58 @@
+{
+  "address": "1 Florence Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/florence-street/1/unit-3/",
+  "unit": "3",
+  "apn": "0150037",
+  "block": "0150",
+  "lot": "037",
+  "parcel": {
+    "building_area_sqft": 1159,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 693332,
+    "assessed_improvement_value": 693332,
+    "last_sale_date": "2007-04-24"
+  },
+  "permits": [
+    {
+      "number": "200911100896",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-11-10",
+      "status_date": "2009-11-10",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "revision to pa# 2008.10.24.5034. move interior bearing and non bearing walls for kitchen and bathroom remodel. work on 1st floor above ground, one unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200810245034",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-10-24",
+      "status_date": "2009-11-10",
+      "estimated_cost": 70000,
+      "revised_cost": 70000,
+      "description": "remodel kitchen with new cabinetsw (upper and lower), new countertops and appliances. remodel bathroom with new tile, cabinets, and fixtures.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0150037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0150&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}
