@@ -80,7 +80,7 @@ sit in — the three it touched most, and how many in all.
 | `argonaut-sfhs/vol-29-no-2.json` | 7 | 11 KB | 1865–1906 | 5 | 5 | `chinatown`, `pacific-heights`, `marina` |
 | `argonaut-sfhs/vol-30-no-1.json` | 17 | 23 KB | 1854–1912 | 8 | 8 | `financial-district`, `tenderloin` |
 | `argonaut-sfhs/vol-30-no-2.json` | 17 | 18 KB | 1855 | 1 | 1 | `tenderloin` |
-| `argonaut-sfhs/vol-31-no-1.json` | 40 | 43 KB | 1912–2012 | 6 | 6 | `tenderloin`, `lakeshore` |
+| `argonaut-sfhs/vol-31-no-1.json` | 40 | 44 KB | 1912–2012 | 7 | 6 | `tenderloin`, `lakeshore`, `mission` |
 | `argonaut-sfhs/vol-31-no-2.json` | 22 | 27 KB | 1852–1863 | 6 | 6 | `western-addition`, `lone-mountain`, `north-beach` |
 | `argonaut-sfhs/vol-32-no-1.json` | 15 | 20 KB | 1847–1951 | 7 | 7 | `castro`, `financial-district` |
 | `article-10-landmarks/batch-1-lm001-lm050.json` | 161 | 308 KB | 1782–1985 | 146 | 136 | `chinatown`, `nob-hill`, `tenderloin` +13 |
@@ -89,7 +89,7 @@ sit in — the three it touched most, and how many in all.
 | `article-10-landmarks/batch-4-lm201-lm250.json` | 190 | 380 KB | 1850–2019 | 171 | 170 | `golden-gate-park`, `mission`, `castro` +18 |
 | `article-10-landmarks/batch-5-lm251-lm300.json` | 819 | 1.6 MB | 1847–2022 | 712 | 639 | `castro`, `mission`, `pacific-heights` +27 |
 | `article-10-landmarks/batch-6-lm301-lm336.json` | 667 | 1.1 MB | 1849–2026 | 608 | 562 | `mission`, `marina`, `hayes-valley` +25 |
-| `celebrity-residence-guides/sftourismtips.json` | 31 | 47 KB | 1876–1996 | 28 | 26 | `haight-ashbury`, `pacific-heights`, `seacliff` +10 |
+| `celebrity-residence-guides/sftourismtips.json` | 31 | 47 KB | 1876–1996 | 29 | 27 | `haight-ashbury`, `pacific-heights`, `seacliff` +11 |
 | `corbett-heights-neighbors/archive-page-2.json` | 22 | 38 KB | 1885–2016 | 19 | 9 | `castro` |
 | `corbett-heights-neighbors/archive-page-3.json` | 36 | 66 KB | 1889–2025 | 33 | 32 | `castro`, `mission`, `haight-ashbury` +2 |
 | `corbett-heights-neighbors/issues-2023-11-to-2024-12.json` | 49 | 85 KB | 1883–2024 | 37 | 32 | `castro`, `noe-valley` |
@@ -440,6 +440,7 @@ are listed so their size is visible before anyone opens one.
 | `sfp-26.json` | 6 | 2 KB | `lone-mountain`, `glen-park`, `bernal-heights` +1 |
 | `sfp-42.json` | 22 | 8 KB | `inner-richmond`, `hayes-valley`, `mission` +6 |
 | `sfp-90.json` | 5 | 2 KB | `north-beach`, `tenderloin`, `pacific-heights` +2 |
+| `sftourismtips.json` | 1 | 1 KB | `castro` |
 | `showplace-square-survey.json` | 2 | 1 KB | `mission`, `mission-bay` |
 | `sn85066387-1906-building-contracts.json` | 60 | 22 KB | `nob-hill`, `north-beach`, `russian-hill` +14 |
 | `sn85066387-1907-building-contracts.json` | 120 | 45 KB | `nob-hill`, `russian-hill`, `inner-richmond` +17 |

@@ -34,10 +34,12 @@
         "note": "Declined: duplicate of the Uniqlo opening carried by SFist (2026-10-09-sf-0001)."
       },
       "resolution": {
-        "status": "unresolved",
-        "checked_on": "2026-10-09",
-        "method": "sf-eas-addresses has 801 MARKET ST but it does not join to one parcel. 801 MARKET ST's coordinates fall in 4 active parcels (3705Z001, 3705Z002, 3705Z003, 3705Z004), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-        "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+        "status": "resolved",
+        "apn": "3705Z001",
+        "path": "/san-francisco/south-of-market/market-street/801/",
+        "eas_address": "801 MARKET ST",
+        "method": "EAS exact match on 801 MARKET ST → parcel 3705Z001; sf-parcels has blklot 3705Z001 active, 801–815 MARKET; the 2025 roll records it as commercial hotel, built 1999. The assessor files the parcel as 12 04TH ST. EAS puts 801, 815 MARKET ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 801. 801 MARKET ST's coordinates fall in 4 active parcels; 3705Z001 is the one with a page.",
+        "checked_on": "2026-11-09"
       }
     }
   ]

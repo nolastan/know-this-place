@@ -1,0 +1,66 @@
+{
+  "address": "1237 Masonic Avenue, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/masonic-avenue/1233/unit-1237/",
+  "apn": "1244044",
+  "block": "1244",
+  "lot": "044",
+  "parcel": {
+    "building_area_sqft": 2675,
+    "bedrooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1135039,
+    "assessed_improvement_value": 1135039,
+    "last_sale_date": "2018-10-12"
+  },
+  "permits": [
+    {
+      "number": "201602189904",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-02-18",
+      "status_date": "2016-02-18",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa#201510200183, enlarge existing door opening between the kitchen and dining room on 1/f one unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201512285955",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2015-12-28",
+      "status_date": "2016-05-19",
+      "estimated_cost": 1000,
+      "description": "remove basement illegal kitchen counter with wet sink, and cooking stove including all utilities lines to source; comply with sfdbi bldg record to remove illegal unit in the basement & return to legal use as one family dwelling.& remove interior stair door on upper floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201510200183",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-10-20",
+      "status_date": "2016-10-24",
+      "estimated_cost": 20000,
+      "revised_cost": 30000,
+      "description": "one unit: remodel (e) 1st floor, including kitchen and masterbath and replace in kind (e) common bathroom",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1244044&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1244&street_number=1237",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}
