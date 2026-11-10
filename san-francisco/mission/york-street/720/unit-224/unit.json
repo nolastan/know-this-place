@@ -1,0 +1,44 @@
+{
+  "address": "720 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/720/unit-224/",
+  "unit": "224",
+  "apn": "4080050",
+  "block": "4080",
+  "lot": "050",
+  "parcel": {
+    "building_area_sqft": 783
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 419912,
+    "assessed_improvement_value": 419912,
+    "last_sale_date": "2013-06-07"
+  },
+  "permits": [
+    {
+      "number": "202504285358",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-04-28",
+      "status_date": "2025-08-27",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "one unit: bathroom remodel- remove and replace bathtub and shower fixtures, new fan and light fixtures, replace old vanity and sink, new above bathtub and new tile on wall and floor, replace old toilet, upgrade electrical to code. install glass shower door. in kind",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4080050&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4080&unit=224",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

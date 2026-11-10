@@ -1,0 +1,47 @@
+{
+  "address": "875 California Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/california-street/875/unit-101/",
+  "unit": "101",
+  "apn": "0256086",
+  "block": "0256",
+  "lot": "086",
+  "parcel": {
+    "building_area_sqft": 2075,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1910174,
+    "assessed_improvement_value": 1273449,
+    "last_sale_date": "2022-02-01"
+  },
+  "permits": [
+    {
+      "number": "202604209746",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-04-20",
+      "status_date": "2026-08-26",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "one unit: patch dry wall (bottom 4'-6\" max tall of the wall) where leak occured at guest bedroom, primary bedroom, and great room. install new wood flooring and baseboard. 20 ga bent plate to frame a new soffit @ dining area aporox. 3' x 6' x 3.5\" tall at ceiling. maintain 7'-6\" min clg height.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0256086&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0256&unit=101",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

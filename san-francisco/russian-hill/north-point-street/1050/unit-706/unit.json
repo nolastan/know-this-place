@@ -1,0 +1,58 @@
+{
+  "address": "1050 North Point Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/north-point-street/1050/unit-706/",
+  "unit": "706",
+  "apn": "0451183",
+  "block": "0451",
+  "lot": "183",
+  "parcel": {
+    "building_area_sqft": 554,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 422918,
+    "assessed_improvement_value": 281941,
+    "last_sale_date": "2013-11-19"
+  },
+  "permits": [
+    {
+      "number": "201811297070",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-11-29",
+      "status_date": "2019-05-06",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "one unit. kitchen and bathroom remodel. all plumbing fixtures to remain at same location. 7ft x 7ft kitchen, 4'6' x 6ft bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201406279774",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-06-27",
+      "status_date": "2014-09-29",
+      "estimated_cost": 4180,
+      "revised_cost": 4200,
+      "description": "replace 1 single pane glass aluminium window with 1 double pane insulated glass aluminium window",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0451183&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0451&unit=706",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

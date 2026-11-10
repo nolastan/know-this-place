@@ -1,0 +1,68 @@
+{
+  "address": "1050 North Point Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/north-point-street/1050/unit-1801/",
+  "unit": "1801",
+  "apn": "0451262",
+  "block": "0451",
+  "lot": "262",
+  "parcel": {
+    "building_area_sqft": 1890,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1034103,
+    "assessed_improvement_value": 1297869
+  },
+  "permits": [
+    {
+      "number": "201001084411",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-01-08",
+      "status_date": "2012-01-20",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa# 2009.04.23.6994. relocate kitchen into space of (e) bedroom , and area previously (e) kitchen to be (n) breakfast rm. eliminate 1/2 bathrm, new lay out of full bathroom to unclude bathtub, shower and toilet and bidet. work on 18th floor. two units",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200904236994",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2009-04-23",
+      "status_date": "2012-01-20",
+      "estimated_cost": 250000,
+      "revised_cost": 250000,
+      "description": "work is in 2 units (1801-1802) owned by same owner. create opening in demising wall between them. 1801: kitchen/bath remodel changing bdrm into living rm, new elec, lighting, finish upgrades. 1802: minor cabinet renovation, new washer/dryer, replacing e wood burning insert,remodel bath connect to e",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200810224819",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-10-22",
+      "status_date": "2009-01-20",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "two units - replace 7 sliding patio doors & 2 sliding windows with dual glazed vinyl similar to existing. same size. u max =0.47. in kind.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0451262&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0451&unit=1801",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

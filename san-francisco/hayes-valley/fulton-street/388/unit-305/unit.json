@@ -1,0 +1,35 @@
+{
+  "address": "388 Fulton Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/fulton-street/388/unit-305/",
+  "unit": "305",
+  "apn": "0785084",
+  "block": "0785",
+  "lot": "084",
+  "parcel": {
+    "building_area_sqft": 720,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 477360,
+    "assessed_improvement_value": 318240,
+    "last_sale_date": "2024-01-26"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0785084&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0785&unit=305",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-# Second Street
+# 2nd Street
 
 The parcels on Second Street documented here so far, from the city's address, assessor and permit records.
 

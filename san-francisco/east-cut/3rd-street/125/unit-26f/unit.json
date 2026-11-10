@@ -1,0 +1,47 @@
+{
+  "address": "188 Minna Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/3rd-street/125/unit-26f/",
+  "unit": "26F",
+  "apn": "3722288",
+  "block": "3722",
+  "lot": "288",
+  "parcel": {
+    "building_area_sqft": 1527,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1471029,
+    "assessed_improvement_value": 1471029,
+    "last_sale_date": "2013-08-09"
+  },
+  "permits": [
+    {
+      "number": "201309116495",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-09-11",
+      "status_date": "2014-10-27",
+      "estimated_cost": 98000,
+      "revised_cost": 98000,
+      "description": "one unit-interior renovation of (e) condo unit including: kitchen- remove high seperation wall, new countertops & backsplash. paint, plaster or wall covering all locations. change several (e) doors to pocket doors. new light fixtures, ceiling fans, cover plates, switches throughout",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3722288&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3722&unit=26F",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "address": "1000 North Point Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/north-point-street/1000/unit-1802/",
+  "unit": "1802",
+  "apn": "0451131",
+  "block": "0451",
+  "lot": "131",
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1967876,
+    "assessed_improvement_value": 1311914,
+    "last_sale_date": "2006-06-20"
+  },
+  "permits": [
+    {
+      "number": "200611087230",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-11-08",
+      "status_date": "2007-08-20",
+      "estimated_cost": 85000,
+      "revised_cost": 85000,
+      "description": "remodel kitchen and 2 bathrooms in existing 2 bedroom apartment. scope of work to include fixtures and finishes only. new lighting at kitchen and bathrooms to comply with all current codes. repalce existing flooring throughout lighting to be in compliance with title 24 energy codes.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2006",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0451131&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0451&unit=1802",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

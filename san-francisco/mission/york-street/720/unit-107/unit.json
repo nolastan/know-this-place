@@ -1,0 +1,58 @@
+{
+  "address": "720 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/720/unit-107/",
+  "unit": "107",
+  "apn": "4080021",
+  "block": "4080",
+  "lot": "021",
+  "parcel": {
+    "building_area_sqft": 1358,
+    "rooms": 5,
+    "bedrooms": 1,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 795600,
+    "assessed_improvement_value": 530400,
+    "last_sale_date": "2024-05-21"
+  },
+  "permits": [
+    {
+      "number": "202408219143",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-08-21",
+      "status_date": "2025-04-24",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "#107 -kitchen and laundry remodel in e condo dwelling unit. replace kitchen fixtures and finishes in kind. move laundry from mezzannine to 1st floor. install room partitions in office (non structural)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201006225027",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2010-06-22",
+      "status_date": "2011-11-01",
+      "estimated_cost": 35000,
+      "revised_cost": 20000,
+      "description": "one unit - level 1:relocate stair to mezzanine. remodel kitchen. mezzanine:add bathroom, storage closet convert from office/commercial to dwelling condo.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4080021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4080&unit=107",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

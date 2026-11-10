@@ -1,0 +1,58 @@
+{
+  "address": "1070 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/green-street/1070/unit-301/",
+  "unit": "301",
+  "apn": "0121A007",
+  "block": "0121A",
+  "lot": "007",
+  "parcel": {
+    "building_area_sqft": 1616,
+    "rooms": 10,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 442078,
+    "assessed_improvement_value": 813340,
+    "last_sale_date": "1992-05-19"
+  },
+  "permits": [
+    {
+      "number": "201710121146",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-10-12",
+      "status_date": "2019-06-27",
+      "estimated_cost": 500000,
+      "revised_cost": 500000,
+      "description": "interior remodel of kitchen, master bath, bath 1 and bath 2. add new closet. new lighting, elec at remodeled areas",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201707283274",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-07-28",
+      "status_date": "2019-03-21",
+      "estimated_cost": 30000,
+      "revised_cost": 20000,
+      "description": "remove finishes, floor, base, cabinets, incl. soft demo exploratory. demo for sturctural observation 500 sq ft. no structural work. no wall modification.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0121A007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0121A&unit=301",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

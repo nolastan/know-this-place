@@ -1,0 +1,55 @@
+{
+  "address": "8 Octavia Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/octavia-street/8/unit-308/",
+  "unit": "308",
+  "apn": "0855055",
+  "block": "0855",
+  "lot": "055",
+  "parcel": {
+    "building_area_sqft": 1578
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 523903,
+    "assessed_improvement_value": 349267,
+    "last_sale_date": "2016-06-15"
+  },
+  "permits": [
+    {
+      "number": "201605207947",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-05-20",
+      "status_date": "2016-05-26",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "for administrative purposes only to add suite/one unit for permits 2015-0623-9674, 2016-0307-1379, 2016-0322-2675 and 2016-0107-6527",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201605208028",
+      "type": "sign - erect",
+      "status": "complete",
+      "filed": "2016-05-20",
+      "status_date": "2016-05-26",
+      "estimated_cost": 400,
+      "revised_cost": 1500,
+      "description": "erect a non-electric projecting double faced sign.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0855055&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0855&unit=308",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

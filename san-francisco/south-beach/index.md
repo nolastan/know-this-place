@@ -4,6 +4,7 @@ A former industrial and warehouse district along the bay south of Market, much o
 
 ## Streets documented so far
 
+- [2nd Street](2nd-street/) — 4 buildings, built 1925–1927; 4 in the South End Historic District.
 - [Brannan Street](brannan-street/) — 6 buildings, built 1909–2016; 1 in the South End Historic District.
 - [Clarence Place](clarence-place/) — 2 buildings, built 1996–2012; 2 in the South End Historic District.
 - [Colin P Kelly Jr Street](colin-p-kelly-jr-street/) — 1 building, built 1908; 1 in the South End Historic District.
@@ -14,7 +15,6 @@ A former industrial and warehouse district along the bay south of Market, much o
 - [Main Street](main-street/) — 3 buildings, built 1973.
 - [Market Street](market-street/) — 1 building, built 1917.
 - [Mission Street](mission-street/) — 1 building, built 1987.
-- [Second Street](2nd-street/) — 4 buildings, built 1925–1927; 4 in the South End Historic District.
 - [Spear Street](spear-street/) — 3 buildings, built 1925–1986.
 - [Steuart Street](steuart-street/) — 1 building, built 1907.
 - [The Embarcadero](the-embarcadero/) — 2 buildings, built 1896–1984; 1 in the Port of San Francisco Embarcadero Historic District.

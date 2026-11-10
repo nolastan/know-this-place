@@ -1,0 +1,47 @@
+{
+  "address": "1050 North Point Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/north-point-street/1050/unit-1602/",
+  "unit": "1602",
+  "apn": "0451249",
+  "block": "0451",
+  "lot": "249",
+  "parcel": {
+    "building_area_sqft": 1000,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 697037,
+    "assessed_improvement_value": 464688,
+    "last_sale_date": "2010-02-05"
+  },
+  "permits": [
+    {
+      "number": "201107250931",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-07-25",
+      "status_date": "2012-04-03",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "interior renovation of one unit. demolition of floors, partitions, (non load bearing) ceiling. replace windows, new fixtures, floor, walls, ceiling, motorized shades",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0451249&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0451&unit=1602",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

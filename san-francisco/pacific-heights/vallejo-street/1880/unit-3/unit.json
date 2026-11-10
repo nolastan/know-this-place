@@ -1,0 +1,85 @@
+{
+  "address": "1880 Vallejo Street, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/vallejo-street/1880/unit-3/",
+  "unit": "3",
+  "apn": "0553043",
+  "block": "0553",
+  "lot": "043",
+  "parcel": {
+    "building_area_sqft": 828,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 512500,
+    "assessed_improvement_value": 512500,
+    "last_sale_date": "2014-10-30"
+  },
+  "permits": [
+    {
+      "number": "200805212590",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-05-21",
+      "status_date": "2008-07-03",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "work in one unit: install new cabinets, appliances, sink, counter, paint (same as existing for print) new lighting",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200102051350",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-02-05",
+      "status_date": "2001-06-05",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision t0 200101220308",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M15343",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-01-22",
+      "status_date": "2001-07-22",
+      "revised_cost": 6200,
+      "description": "stree space deposit & permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200101220308",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-01-22",
+      "status_date": "2001-07-22",
+      "estimated_cost": 6200,
+      "revised_cost": 6200,
+      "description": "install new plumbing fix elec vix tile and paint existing bathroom",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "2001–2008",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0553043&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0553&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

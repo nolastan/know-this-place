@@ -1,0 +1,47 @@
+{
+  "address": "650 2nd Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-beach/2nd-street/650/unit-603/",
+  "unit": "603",
+  "apn": "3788071",
+  "block": "3788",
+  "lot": "071",
+  "parcel": {
+    "building_area_sqft": 1274,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 628034,
+    "assessed_improvement_value": 418689,
+    "last_sale_date": "2024-05-20"
+  },
+  "permits": [
+    {
+      "number": "201512074300",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-12-07",
+      "status_date": "2016-02-23",
+      "estimated_cost": 8500,
+      "revised_cost": 12000,
+      "description": "remodel bath at one unit.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3788071&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3788&unit=603",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "address": "1050 North Point Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/north-point-street/1050/unit-1407a/",
+  "unit": "1407A",
+  "apn": "0451238",
+  "block": "0451",
+  "lot": "238",
+  "parcel": {
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 400580,
+    "assessed_improvement_value": 267053,
+    "last_sale_date": "2019-05-17"
+  },
+  "permits": [
+    {
+      "number": "200503117372",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-03-11",
+      "status_date": "2005-07-20",
+      "estimated_cost": 130000,
+      "revised_cost": 130000,
+      "description": "demo of a few exist walls, fixtures in 2nd bathroom.a rew (e) heating units. const of a few .......",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0451238&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0451&unit=1407A",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

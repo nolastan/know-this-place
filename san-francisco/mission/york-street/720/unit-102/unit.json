@@ -1,0 +1,58 @@
+{
+  "address": "720 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/720/unit-102/",
+  "unit": "102",
+  "apn": "4080016",
+  "block": "4080",
+  "lot": "016",
+  "parcel": {
+    "building_area_sqft": 1454,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 764069,
+    "assessed_improvement_value": 509379,
+    "last_sale_date": "2021-07-09"
+  },
+  "permits": [
+    {
+      "number": "202202158008",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-02-15",
+      "status_date": "2022-05-26",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "one unit. bathroom remodel,everything is staying as is. non- strutural bathroom size 7x10",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201307303167",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2013-07-30",
+      "status_date": "2016-06-13",
+      "estimated_cost": 1500,
+      "revised_cost": 3000,
+      "description": "one unit. change of use. change from commercial to residential condo unit. install new ship ladder and platform to comply with rescue window requirements. remove glass door at kitchen.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4080016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4080&unit=102",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "address": "2043 Vallejo Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/vallejo-street/2041/unit-2043/",
+  "apn": "0566026",
+  "block": "0566",
+  "lot": "026",
+  "parcel": {
+    "building_area_sqft": 1612,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 459759,
+    "assessed_improvement_value": 403898,
+    "last_sale_date": "1991-09-24"
+  },
+  "permits": [
+    {
+      "number": "201008128663",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2010-08-12",
+      "status_date": "2015-01-15",
+      "estimated_cost": 900,
+      "revised_cost": 900,
+      "description": "general frame for shower pan; hang flourescent garage light",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201007126343",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-07-12",
+      "status_date": "2010-11-19",
+      "estimated_cost": 47500,
+      "revised_cost": 47500,
+      "description": "top/ 3rd floor unit. remove and replace 2nd bath vanity, sink , shower, toilet, counter top and tile, door and hardware. elec by others. no wall removal. high efficiency lighting or occupancy sensor control.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9619092",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-10-04",
+      "status_date": "1996-11-20",
+      "estimated_cost": 11000,
+      "description": "one bathrm, remodel on mid level no change in wall framing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9609948",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-06-10",
+      "status_date": "1996-07-08",
+      "estimated_cost": 8595,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9310764",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-06-25",
+      "status_date": "1993-10-01",
+      "estimated_cost": 1200,
+      "description": "replace 3 rear windows and a sliding door",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8923378",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-11-30",
+      "status_date": "1990-04-05",
+      "estimated_cost": 5700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0566026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0566&street_number=2043",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

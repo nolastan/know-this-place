@@ -1,0 +1,102 @@
+{
+  "address": "188 Minna Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/3rd-street/125/unit-36e/",
+  "unit": "36E",
+  "apn": "3722347",
+  "block": "3722",
+  "lot": "347",
+  "parcel": {
+    "building_area_sqft": 2791,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2425684,
+    "assessed_improvement_value": 2425684,
+    "last_sale_date": "2005-12-15"
+  },
+  "permits": [
+    {
+      "number": "202402216279",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-02-21",
+      "status_date": "2025-02-21",
+      "estimated_cost": 40000,
+      "revised_cost": 200000,
+      "description": "revision to 202303153740, wall changes for full apt renovation. this is an adaptable dwelling unit. all accessible/adaptable features must be maintained in compliance with 2002 cbc chapter 11a. no change to dwelling size or location. this is an adaptable dwelling unit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202308305594",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-08-30",
+      "status_date": "2024-03-07",
+      "estimated_cost": 2500,
+      "revised_cost": 16769,
+      "description": "relocate 16 f/s heads, replace 21 pendents heads, replace 6 sidewall heads in one unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202303153740",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-03-15",
+      "status_date": "2025-02-21",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "reface kitchen cabinets, (n) countertops, (n) dishwasher, new led lights in kitchen, 2 bathrooms, and one 1/2 bath. replace fan in 1/2 bathroom. new trim in 2 bathrooms and in sitting room. new window treatments.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202302282757",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2023-02-28",
+      "status_date": "2023-03-10",
+      "estimated_cost": 75000,
+      "revised_cost": 150593,
+      "description": "remodel kitchen & 3 1/2 bath in kind. new finishes throughout",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200603237389",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-03-23",
+      "status_date": "2006-11-01",
+      "estimated_cost": 3250,
+      "revised_cost": 3250,
+      "description": "modification of existing sprinkler system- 4 relocates & 3 adds & one plug",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200602073998",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-02-07",
+      "status_date": "2006-11-01",
+      "estimated_cost": 350000,
+      "revised_cost": 350000,
+      "description": "relocate minor interior partitions, remove existing kitchen, one tub, vanities, wood flr, and replace above w/new materials, shower to replace tub, new kitchen, stove & carpet floors, additional electrical, new cabinets, new paint",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3722347&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3722&unit=36E",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

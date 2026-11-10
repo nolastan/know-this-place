@@ -1,0 +1,58 @@
+{
+  "address": "1050 North Point Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/north-point-street/1050/unit-703/",
+  "unit": "703",
+  "apn": "0451180",
+  "block": "0451",
+  "lot": "180",
+  "parcel": {
+    "building_area_sqft": 696,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 580292,
+    "assessed_improvement_value": 386859,
+    "last_sale_date": "2017-07-14"
+  },
+  "permits": [
+    {
+      "number": "200708301290",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-08-30",
+      "status_date": "2008-03-13",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "replace (e) bathroom cabinet, counter top, floor tile, wall tiles, shower door in (e) locations using (e) electrical and plumbing. no windows, no doors and no lighting",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200704279945",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-04-27",
+      "status_date": "2007-08-27",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace kkitchen cabinets and appliances i exiting locations using existing elecrical and plumbing , no windows/no doors under this permit.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0451180&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0451&unit=703",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "address": "1628 Broderick Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/broderick-street/1626/unit-1628/",
+  "apn": "1052040",
+  "block": "1052",
+  "lot": "040",
+  "parcel": {
+    "building_area_sqft": 1713,
+    "rooms": 7,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 856800,
+    "assessed_improvement_value": 571200,
+    "last_sale_date": "2024-03-25"
+  },
+  "permits": [
+    {
+      "number": "202405232792",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-05-23",
+      "status_date": "2025-02-28",
+      "estimated_cost": 55000,
+      "revised_cost": 71000,
+      "description": "one kitchen remodel, remodel laundry, and (2) hallway bathrooms. replace bathroom door to pocket door - no changes to opening size. in kind remodels. fixture replacement.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202203039123",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-03-03",
+      "status_date": "2022-07-05",
+      "estimated_cost": 11933,
+      "revised_cost": 11933,
+      "description": "replace (4) windows, non-street facing. on side towards rear of home. proposed: (n) wood fiber.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201307303106",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-07-30",
+      "status_date": "2013-09-26",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "replacement of existing wooden sahses using existing weights & pulleys. no change in size or placement at the windows will be made. no tempored glass.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2007–2024",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1052040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1052&street_number=1628",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "address": "2257 Francisco Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/francisco-street/2253/unit-2257/",
+  "apn": "0929055",
+  "block": "0929",
+  "lot": "055",
+  "parcel": {
+    "building_area_sqft": 1436,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1120510,
+    "assessed_improvement_value": 747007,
+    "last_sale_date": "2023-06-30"
+  },
+  "permits": [
+    {
+      "number": "202407106150",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-07-10",
+      "status_date": "2024-07-31",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0929055&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0929&street_number=2257",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

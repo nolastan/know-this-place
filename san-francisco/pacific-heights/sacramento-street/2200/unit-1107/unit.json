@@ -1,0 +1,46 @@
+{
+  "address": "2200 Sacramento Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/sacramento-street/2200/unit-1107/",
+  "unit": "1107",
+  "apn": "0627A087",
+  "block": "0627A",
+  "lot": "087",
+  "parcel": {
+    "building_area_sqft": 1000,
+    "rooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 143538,
+    "assessed_improvement_value": 267962,
+    "last_sale_date": "1988-01-12"
+  },
+  "permits": [
+    {
+      "number": "200908124689",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-08-12",
+      "status_date": "2009-10-08",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "#1107 - remodel existing kitchen & (2) bathrooms. new fixtures, coutnertops, patch walls, tile, plumbing fixtures. (no wall relocation), electrical & plumbing under separate permit, no lighting work in kitchen.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0627A087&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0627A&unit=1107",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

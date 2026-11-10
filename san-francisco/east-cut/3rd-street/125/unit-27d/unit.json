@@ -1,0 +1,58 @@
+{
+  "address": "188 Minna Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/3rd-street/125/unit-27d/",
+  "unit": "27D",
+  "apn": "3722292",
+  "block": "3722",
+  "lot": "292",
+  "parcel": {
+    "building_area_sqft": 1792,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1777108,
+    "assessed_improvement_value": 1184736,
+    "last_sale_date": "2009-03-20"
+  },
+  "permits": [
+    {
+      "number": "200908215272",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-08-21",
+      "status_date": "2010-10-01",
+      "estimated_cost": 1200,
+      "revised_cost": 1200,
+      "description": "5 relocates, 1 adds",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200905269116",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-05-26",
+      "status_date": "2010-10-01",
+      "estimated_cost": 55120,
+      "revised_cost": 55120,
+      "description": "add cabinet at kitchen & bathrm, replace w dimmers or vacancy detelctors or motion detectors, add outlets for tv, change light fixtures locations, install perimeter track lighting in living rm & bedrms, repair sheetrock and paint, no wall removal.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3722292&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3722&unit=27D",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

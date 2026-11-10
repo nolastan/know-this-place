@@ -1,0 +1,41 @@
+{
+  "address": "460 Francisco Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/francisco-street/460/unit-103/",
+  "unit": "103",
+  "apn": "0041090",
+  "block": "0041",
+  "lot": "090",
+  "parcel": {
+    "building_area_sqft": 884,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 595337,
+    "assessed_improvement_value": 396891,
+    "last_sale_date": "2022-01-21"
+  },
+  "permits": [],
+  "permit_summary": {
+    "count_on_file": 1,
+    "range": "2009",
+    "shown_on_page": 0,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0041090&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0041&unit=103",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

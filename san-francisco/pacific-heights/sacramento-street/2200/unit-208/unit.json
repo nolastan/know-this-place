@@ -1,0 +1,68 @@
+{
+  "address": "2200 Sacramento Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/sacramento-street/2200/unit-208/",
+  "unit": "208",
+  "apn": "0627A016",
+  "block": "0627A",
+  "lot": "016",
+  "parcel": {
+    "building_area_sqft": 947,
+    "rooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 832320,
+    "assessed_improvement_value": 832320,
+    "last_sale_date": "2022-10-03"
+  },
+  "permits": [
+    {
+      "number": "201412123608",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-12-12",
+      "status_date": "2015-01-09",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "reconvert extg one bedroom condo back to a 2 bedroom by constructing a new wall to split bedroom in half. n/a for the maher",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201011124838",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-11-12",
+      "status_date": "2011-03-18",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "one unit: two (e) bathroom remodeling: demo old cabinet, floor tile. install new shower pan, tile floor and walls, install new cabinet, new sink and faucet. new ceiling light. patch and paint.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200902182330",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-02-18",
+      "status_date": "2009-06-10",
+      "estimated_cost": 18000,
+      "revised_cost": 25000,
+      "description": "kitchen renovation:new counters and cabinets. bathroom remodel:new floorings and tub/shower enclosure.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0627A016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0627A&unit=208",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "address": "2301 Harrison Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/harrison-street/2301/unit-306/",
+  "unit": "306",
+  "apn": "4083021",
+  "block": "4083",
+  "lot": "021",
+  "parcel": {
+    "building_area_sqft": 1151,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 725864,
+    "assessed_improvement_value": 483910,
+    "last_sale_date": "2022-05-27"
+  },
+  "permits": [
+    {
+      "number": "201703272451",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-03-27",
+      "status_date": "2017-05-15",
+      "estimated_cost": 11200,
+      "revised_cost": 12000,
+      "description": "kitchen remodel, new counter tops, cabinets & back splash. non-structural, no alterations.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2000–2017",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4083021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4083&unit=306",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

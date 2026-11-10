@@ -1,0 +1,58 @@
+{
+  "address": "188 Minna Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/3rd-street/125/unit-34d/",
+  "unit": "34D",
+  "apn": "3722334",
+  "block": "3722",
+  "lot": "334",
+  "parcel": {
+    "building_area_sqft": 1792,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1469072,
+    "assessed_improvement_value": 1469072,
+    "last_sale_date": "2006-05-17"
+  },
+  "permits": [
+    {
+      "number": "200808159329",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-08-15",
+      "status_date": "2009-01-13",
+      "estimated_cost": 25002,
+      "revised_cost": 25002,
+      "description": "renew pa# 2007/09/12/2497 to continue work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200709122497",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2007-09-12",
+      "status_date": "2009-01-13",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "#34d- remove non-bearing,non-rated partition in master bedroom walk-in closet, remove existing closet door & frame in master bedroom. in fill 1 existing door opening, cut opening wall in m aster bedroom & living room to install new in wall cabinet. no structural, no exterior.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3722334&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3722&unit=34D",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

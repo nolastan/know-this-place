@@ -1,0 +1,91 @@
+{
+  "address": "2151 Sacramento Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/sacramento-street/2151/unit-4/",
+  "unit": "4",
+  "apn": "0639045",
+  "block": "0639",
+  "lot": "045",
+  "parcel": {
+    "building_area_sqft": 2528,
+    "rooms": 6,
+    "bedrooms": 4,
+    "bathrooms": 4
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1857114,
+    "assessed_improvement_value": 1875841,
+    "last_sale_date": "2020-10-22"
+  },
+  "permits": [
+    {
+      "number": "202112234970",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-12-23",
+      "status_date": "2023-09-22",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "one unit: remodel (2)(e) baths @ 1st fl, add cabinetry @ kitchen island & replace toilet @ 2nd fl, replace 2nd fl rear doors @ deck. add glass guardrails @ (e) rear 2nd fl roof deck, reconfigure ground fl storage area w/ (n) wine storage space. remove fire escape @ rear from 2nd fl to 1st fl only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201808318861",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-08-31",
+      "status_date": "2018-11-29",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "one unit: replace rear sliding glass door in kind, remove interior partition, replace lighting, new lighting, new wood flooring and stone fire place surround.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201807265616",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-07-26",
+      "status_date": "2018-11-15",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "new master closet system to replace (e). no structural. no walls moved. lighting upgrades in master bedroom. all layouts to remain unchanged.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201302150360",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-02-15",
+      "status_date": "2013-08-08",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "kktchen relocation, remodel 2 baths, new cabinets, tile, plumbing & electrical. replace 5 windows (in kind), not visible from street. investigate dry rot, revision to pa# 201301077380.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201301077380",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-01-07",
+      "status_date": "2013-08-09",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "re-face one kitchen and 2 baths, new cabinets, tile, plumbing fixtures & electrical, no change on walls",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0639045&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0639&unit=4",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

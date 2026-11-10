@@ -1,0 +1,66 @@
+{
+  "address": "720 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/720/unit-201/",
+  "unit": "201",
+  "apn": "4080027",
+  "block": "4080",
+  "lot": "027",
+  "parcel": {
+    "building_area_sqft": 782
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 639248,
+    "assessed_improvement_value": 426164,
+    "last_sale_date": "2015-11-25"
+  },
+  "permits": [
+    {
+      "number": "202305087275",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-05-08",
+      "status_date": "2023-10-19",
+      "estimated_cost": 29000,
+      "revised_cost": 29000,
+      "description": "one unit: (1) 43 sq ft (main) bathroom remodel on 2nd floor in kind. no changers to walls or openings. (n) curbed shower, toilet, and vanity. all (n) fixtures and finishes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201910174698",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-10-17",
+      "status_date": "2020-06-16",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "kitchen remodel, no layout changes, replace cabinets, counters, sink",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201305207324",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-05-20",
+      "status_date": "2013-08-26",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "at kitchen, remove cabinets and install new. at bathroom, remove old and install new tile, toilet, sink, faucet, etc.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4080027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4080&unit=201",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

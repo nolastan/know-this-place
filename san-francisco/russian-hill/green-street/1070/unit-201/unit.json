@@ -1,0 +1,91 @@
+{
+  "address": "1070 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/green-street/1070/unit-201/",
+  "unit": "201",
+  "apn": "0121A004",
+  "block": "0121A",
+  "lot": "004",
+  "parcel": {
+    "building_area_sqft": 1616,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2048091,
+    "assessed_improvement_value": 1194718,
+    "last_sale_date": "2018-06-15"
+  },
+  "permits": [
+    {
+      "number": "201505196678",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-05-19",
+      "status_date": "2015-06-24",
+      "estimated_cost": 200,
+      "revised_cost": 500,
+      "description": "revision appl. #2012.0706.4274. reverse the swing of front door.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201405024789",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-05-02",
+      "status_date": "2015-06-24",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revison to 201207064274. provide a fixed picture window at one unit to be consistent with previous window modifications",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201207064274",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-07-06",
+      "status_date": "2015-06-24",
+      "estimated_cost": 200000,
+      "revised_cost": 150000,
+      "description": "full renovation of an (e) condo unit, enclose (e) balcony. replace (e) windows in kind. remodel (e) non structural partitions, ceiling finishes & floor finishes. provide new living area, kitchen, bedroom, home office & bathrooms.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201106208497",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-06-20",
+      "status_date": "2015-06-24",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "demo drywall off all ceilings and walls approx 50 sf. remove all finishes. for insesigation inside unit. no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200307280530",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2003-07-28",
+      "status_date": "2009-01-30",
+      "estimated_cost": 90000,
+      "revised_cost": 90000,
+      "description": "installation of new fire alarm control panel and new devices on the 1st floor as 1st phase",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0121A004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0121A&unit=201",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

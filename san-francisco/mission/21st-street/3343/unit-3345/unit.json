@@ -1,0 +1,68 @@
+{
+  "address": "3345 21st Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/21st-street/3343/unit-3345/",
+  "apn": "3617097",
+  "block": "3617",
+  "lot": "097",
+  "parcel": {
+    "building_area_sqft": 1604,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1536619,
+    "assessed_improvement_value": 1024412,
+    "last_sale_date": "2021-02-26"
+  },
+  "permits": [
+    {
+      "number": "200806194871",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-06-19",
+      "status_date": "2008-06-19",
+      "estimated_cost": 6400,
+      "revised_cost": 6400,
+      "description": "replace 4 windows, size for size, not visible from street u valve 0.39",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200708240772",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-08-24",
+      "status_date": "2007-10-15",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "replace 2 windows, size for size, wood to wood composite, not visable from street. u-valve 0.39",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200603066036",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-03-06",
+      "status_date": "2006-06-27",
+      "estimated_cost": 3584,
+      "revised_cost": 3584,
+      "description": "replace 4 windows,size for size,same place & location.back of house.not visible from street.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3617097&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3617&street_number=3345",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

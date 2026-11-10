@@ -1,0 +1,46 @@
+{
+  "address": "875 Vermont Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/vermont-street/875/unit-202/",
+  "unit": "202",
+  "apn": "4093086",
+  "block": "4093",
+  "lot": "086",
+  "parcel": {
+    "building_area_sqft": 318,
+    "rooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 249696,
+    "assessed_improvement_value": 166464,
+    "last_sale_date": "2022-11-16"
+  },
+  "permits": [
+    {
+      "number": "202101202949",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-01-20",
+      "status_date": "2021-03-03",
+      "estimated_cost": 10000,
+      "revised_cost": 23000,
+      "description": "one unit: kitchen and laundry remodel. upgrade. no structural work. plumbing and elec only",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4093086&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4093&unit=202",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

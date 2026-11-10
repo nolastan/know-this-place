@@ -1,0 +1,96 @@
+{
+  "address": "1880 Vallejo Street, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/vallejo-street/1880/unit-1/",
+  "unit": "1",
+  "apn": "0553041",
+  "block": "0553",
+  "lot": "041",
+  "parcel": {
+    "building_area_sqft": 828,
+    "rooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 499655,
+    "assessed_improvement_value": 333101,
+    "last_sale_date": "2010-12-21"
+  },
+  "permits": [
+    {
+      "number": "201708074114",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-08-07",
+      "status_date": "2018-02-26",
+      "estimated_cost": 6500,
+      "revised_cost": 8500,
+      "description": "dry rot repair at the front and rear facades - wood to be replaced with wood not fiber cement in this case.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9612433",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-07-11",
+      "status_date": "1996-08-07",
+      "estimated_cost": 1,
+      "description": "rev plan review on 9609721",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9609721",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-06-03",
+      "status_date": "1996-08-07",
+      "estimated_cost": 10000,
+      "description": "divide (e)bath into 1 full bath & half bath",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9419519",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-11-28",
+      "status_date": "1995-04-11",
+      "estimated_cost": 9500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9306582",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-04-22",
+      "status_date": "1993-08-06",
+      "estimated_cost": 35000,
+      "description": "renovation of kitc/bath/installation of new 1/2 bath",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8909529",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-06-05",
+      "status_date": "1990-04-02",
+      "estimated_cost": 35000,
+      "description": "remodel bath, kitchen, add skylight to porch electrical",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0553041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0553&unit=1",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

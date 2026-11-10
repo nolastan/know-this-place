@@ -1,0 +1,46 @@
+{
+  "address": "2301 Harrison Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/harrison-street/2301/unit-304/",
+  "unit": "304",
+  "apn": "4083019",
+  "block": "4083",
+  "lot": "019",
+  "parcel": {
+    "building_area_sqft": 1000,
+    "rooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 152954,
+    "assessed_improvement_value": 210745,
+    "last_sale_date": "1994-03-11"
+  },
+  "permits": [
+    {
+      "number": "200011155839",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-11-15",
+      "status_date": "2001-02-20",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "add/relocate apx 6 sprinklers to accomodate tenant renovations",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4083019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4083&unit=304",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

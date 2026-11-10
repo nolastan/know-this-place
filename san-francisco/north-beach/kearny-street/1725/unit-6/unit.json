@@ -1,0 +1,58 @@
+{
+  "address": "1725 Kearny Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/kearny-street/1725/unit-6/",
+  "unit": "6",
+  "apn": "0061045",
+  "block": "0061",
+  "lot": "045",
+  "parcel": {
+    "building_area_sqft": 1127,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1396337,
+    "assessed_improvement_value": 930890,
+    "last_sale_date": "2021-04-27"
+  },
+  "permits": [
+    {
+      "number": "202205234808",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-05-23",
+      "status_date": "2022-11-09",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "retile 2nd bathroom and replace fixtures for bath #2",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202112063784",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-12-06",
+      "status_date": "2022-11-09",
+      "estimated_cost": 20000,
+      "revised_cost": 26000,
+      "description": "one kitchan and one bath remodel: replace kitchen cabinets, countertops with like, replace kitchen flooring and appliances. retile 1 bath.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0061045&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0061&unit=6",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

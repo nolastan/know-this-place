@@ -1,0 +1,64 @@
+{
+  "address": "2200 Sacramento Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/sacramento-street/2200/unit-701/",
+  "unit": "701",
+  "apn": "0627A049",
+  "block": "0627A",
+  "lot": "049",
+  "parcel": {
+    "building_area_sqft": 952,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 416431,
+    "assessed_improvement_value": 538262,
+    "last_sale_date": "2022-03-23"
+  },
+  "permits": [
+    {
+      "number": "201310300720",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-10-30",
+      "status_date": "2014-05-09",
+      "estimated_cost": 1,
+      "revised_cost": 22000,
+      "description": "revision to pa# 2013-1009-8915-re-adjust interior walls & extend interior wall. exterior windows under separate permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201310098915",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-10-09",
+      "status_date": "2014-05-09",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "one unit:remove and replace kitchen cabinets/applinaces. remove and replace vanites/toilets/shower/tub in bath. interior wall repairs.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2013",
+    "shown_on_page": 2,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0627A049&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0627A&unit=701",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

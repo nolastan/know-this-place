@@ -1,0 +1,66 @@
+{
+  "address": "490 Post Street, San Francisco, CA 94102",
+  "path": "/san-francisco/union-square/post-street/490/unit-711/",
+  "unit": "711",
+  "apn": "0296067",
+  "block": "0296",
+  "lot": "067",
+  "parcel": {
+    "building_area_sqft": 1161
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 669309,
+    "assessed_improvement_value": 669309,
+    "last_sale_date": "2019-01-09"
+  },
+  "permits": [
+    {
+      "number": "202106212839",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-06-21",
+      "status_date": "2022-07-12",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "small change on the permitted plan 201910114270 (reduced scope). the # of offices has been changed from 5 to 4 & the size of meeting room has been smaller there for the door changed from swing dr to sliding dr.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201910114270",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-10-11",
+      "status_date": "2021-01-26",
+      "estimated_cost": 144932,
+      "revised_cost": 144932,
+      "description": "tenant improvement new office space. new non bearing partiton walls for office area, reception area and other support areas. new gyp bd ceilings, soffits proposed. elec work included",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201908128501",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-08-12",
+      "status_date": "2019-09-09",
+      "estimated_cost": 146304,
+      "revised_cost": 146400,
+      "description": "suite 711: demo permit for (e) non load bearing walls, doors, interior millwork, plm & other interior items.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0296067&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0296&unit=711",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}
